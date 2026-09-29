@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.0.0",
+  "id": "heatstroke",
+  "kind": "condition",
+  "primary_domain": "injury_toxicology",
+  "names": {
+    "zh-CN": "热射病与热衰竭",
+    "en": "Heatstroke and heat exhaustion"
+  },
+  "aliases": {
+    "zh-CN": [
+      "中暑",
+      "热衰竭",
+      "热射病"
+    ],
+    "en": [
+      "heat exhaustion",
+      "heat stroke"
+    ]
+  },
+  "symptom_terms": [
+    {
+      "zh-CN": "高热",
+      "en": "high body temperature"
+    },
+    {
+      "zh-CN": "头晕",
+      "en": "dizziness"
+    },
+    {
+      "zh-CN": "意识混乱",
+      "en": "confusion"
+    }
+  ],
+  "departments": [
+    "emergency",
+    "primary-care"
+  ],
+  "reference_urgency": "context_dependent",
+  "sections": {
+    "summary": {
+      "text": {
+        "zh-CN": "热射病是身体无法控制体温、出现脑功能异常的严重热相关疾病，属于急症。\n\n- 高温环境或剧烈活动后出现意识混乱、行为异常、抽搐或昏迷，应立即处理。\n- 热射病患者仍可能大量出汗，不能以还出汗作为安全依据。\n- 热衰竭较轻，常有头晕、口渴和乏力，但也需要及时降温。",
+        "en": "Heatstroke is severe heat illness with failed temperature control and disturbed brain function, requiring emergency care.\n\n- Confusion, abnormal behaviour, seizures or coma after heat exposure or strenuous activity needs immediate action.\n- People with heatstroke may still sweat heavily; sweating does not establish safety.\n- Heat exhaustion is milder, often with dizziness, thirst and weakness, but also needs prompt cooling."
+      },
+      "source_ids": [
+        "heatstroke-nhs",
+        "batch-b-heat-niosh"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "causes_risks": {
+      "text": {
+        "zh-CN": "身体产热超过散热能力时可能发病。\n\n- 炎热潮湿、通风差和高强度体力活动使散热更困难。\n- 大量出汗失水失盐、未适应炎热环境会增加负担。\n- 儿童、老人和有长期疾病者需要他人主动关注，不只等他们诉说口渴。",
+        "en": "Illness develops when heat production exceeds heat loss.\n\n- Hot humid conditions, poor ventilation and strenuous work impede cooling.\n- Sweat-related fluid and salt loss and poor heat acclimatisation increase burden.\n- Children, older adults and chronically ill people need active checks rather than waiting for thirst complaints."
+      },
+      "source_ids": [
+        "heatstroke-nhs",
+        "batch-b-heat-niosh"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "red_flags": {
+      "text": {
+        "zh-CN": "怀疑热射病就立即呼叫当地急救，同时开始降温。\n\n- 热暴露后意识混乱、说话不清、走路不协调、抽搐或昏迷，不能先等待30分钟。\n- 严重呼吸困难或失去反应，同样紧急处理。\n- 不要等温度计达到特定读数；测量不准确可能延误急救。",
+        "en": "Suspected heatstroke needs emergency services and immediate cooling.\n\n- Confusion, slurred speech, poor coordination, seizure or coma after heat exposure should not be observed for 30 minutes first.\n- Severe breathing difficulty or unresponsiveness also needs emergency action.\n- Do not wait for a particular thermometer reading, which may be inaccurate."
+      },
+      "source_ids": [
+        "heatstroke-nhs",
+        "batch-b-heat-niosh"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "care": {
+      "text": {
+        "zh-CN": "意识正常的轻度热衰竭可边降温边观察。\n\n- 移到凉处、脱去多余衣物，清醒能吞咽者小口饮水并持续有人陪伴。\n- NHS指出降温休息补液30分钟仍不改善应急救；职业热暴露者NIOSH建议及时医疗评估。\n- 出现神经异常随时升级急救，不继续等待。",
+        "en": "Mild heat exhaustion with normal alertness can be cooled while observed.\n\n- Move to a cool place, remove excess clothing, offer small drinks if swallowing safely and stay with the person.\n- NHS advises emergency help if not improving after 30 minutes; NIOSH advises medical evaluation for occupational heat exhaustion.\n- Escalate immediately for neurological changes at any time."
+      },
+      "source_ids": [
+        "heatstroke-nhs",
+        "batch-b-heat-niosh"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diagnosis": {
+      "text": {
+        "zh-CN": "现场识别靠热暴露经过和身体状态。\n\n- 告知运动、工作环境、持续时间及症状发生顺序。\n- 医疗人员检查体温、意识和循环，并按情况评估肾脏、肌肉和血盐。\n- 已开始降温后温度下降也不能否定此前热射病，治疗不应等待所有检查。",
+        "en": "Recognition uses exposure history and clinical condition.\n\n- Describe activity, environment, duration and symptom sequence.\n- Clinicians assess temperature, mental status and circulation and may check kidneys, muscles and electrolytes.\n- A lower temperature after cooling does not exclude prior heatstroke; treatment must not wait for every test."
+      },
+      "source_ids": [
+        "batch-b-heat-niosh"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "differentials": {
+      "text": {
+        "zh-CN": "高温后不适可属于不同热相关问题。\n\n- 热衰竭多为失水失盐，热射病出现意识或行为异常，更危险。\n- 肌肉剧痛、乏力和茶色尿可能是横纹肌溶解，即肌肉损伤产物进入血液。\n- 感染、低血糖等也可影响意识，需医疗评估，不能因此延误降温。",
+        "en": "Several heat disorders can cause illness.\n\n- Heat exhaustion mainly reflects fluid and salt loss; altered behaviour or consciousness raises concern for heatstroke.\n- Severe muscle pain, weakness and tea-coloured urine may indicate rhabdomyolysis, muscle breakdown releasing material into blood.\n- Infection or low glucose can also alter alertness, but assessment should not delay cooling."
+      },
+      "source_ids": [
+        "heatstroke-nhs",
+        "batch-b-heat-niosh"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "treatment": {
+      "text": {
+        "zh-CN": "快速降温和紧急医疗支持是核心。\n\n- 移到阴凉处、脱掉多余衣物，用冷水湿润皮肤并扇风，按急救指导持续降温。\n- 有安全条件和受训人员时可使用冷水浸泡等快速降温方法，注意气道和防溺水。\n- 意识不清者不喂水；没有正常呼吸时按调度员指导心肺复苏。",
+        "en": "Rapid cooling and emergency support are central.\n\n- Move to shade, remove excess clothing, wet the skin with cool water and fan continuously as advised.\n- Cold-water immersion may be used with safe facilities and trained supervision, protecting the airway.\n- Do not give fluids to someone with impaired consciousness; follow dispatcher CPR instructions if breathing is not normal."
+      },
+      "source_ids": [
+        "heatstroke-nhs",
+        "batch-b-heat-niosh"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "medications": {
+      "text": {
+        "zh-CN": "退热药不能替代物理降温和急救。\n\n- 热射病不是普通感染发热，不要等对乙酰氨基酚或布洛芬起效再求助。\n- 医院根据循环、抽搐或器官损伤决定补液及其他治疗。\n- 不自行服盐片或刺激性提神产品，可能增加处理风险。",
+        "en": "Fever medicines cannot replace cooling and emergency care.\n\n- Heatstroke is not routine infection-related fever; do not wait for paracetamol or ibuprofen before getting help.\n- Hospital treatment addresses circulation, seizures and organ injury as needed.\n- Do not self-use salt tablets or stimulant products."
+      },
+      "source_ids": [
+        "heatstroke-nhs",
+        "batch-b-heat-niosh"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diet": {
+      "text": {
+        "zh-CN": "先保证安全吞咽，再谈补液。\n\n- 仅清醒、能吞咽的轻症者适合小口喝水或合适补液饮品。\n- 意识异常、反复呕吐或抽搐时不要强灌水或食物。\n- 恢复期饮食均衡；不靠酒精解暑，限液或限盐者需医疗指导。",
+        "en": "Safe swallowing comes before oral fluids.\n\n- Only alert people with mild illness and safe swallowing should sip water or suitable rehydration drinks.\n- Do not force fluid or food during confusion, repeated vomiting or seizures.\n- Use balanced meals during recovery, avoid alcohol for cooling and seek guidance with salt or fluid restrictions."
+      },
+      "source_ids": [
+        "heatstroke-nhs",
+        "batch-b-heat-niosh"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "daily_care": {
+      "text": {
+        "zh-CN": "急性处理时不要让患者独处。\n\n- 连续观察反应和呼吸，记录热暴露及开始降温时间供急救人员参考。\n- 凉湿布、喷水和扇风可持续进行，不为找完美设备延误。\n- 恢复后暂停热环境劳作，按医生建议逐步返回活动。",
+        "en": "Do not leave an affected person alone.\n\n- Monitor responsiveness and breathing and report exposure and cooling times.\n- Continue wet cloths, water and fanning rather than delaying for ideal equipment.\n- Pause hot-environment work after illness and follow medical advice for returning to activity."
+      },
+      "source_ids": [
+        "heatstroke-nhs",
+        "batch-b-heat-niosh"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "special_populations": {
+      "text": {
+        "zh-CN": "易受影响者需要额外的环境支持。\n\n- 儿童和老人可能不能主动避热或表达口渴，应定时查看。\n- 心脏病、糖尿病等长期疾病者在热天需提前商定补液与用药安排。\n- 户外工作和运动者需逐渐适应热环境、安排休息及同伴观察。",
+        "en": "Vulnerable people need environmental support.\n\n- Children and older adults may not move away from heat or communicate thirst, so check regularly.\n- Heart disease, diabetes and other chronic illnesses warrant advance fluid and medicine planning for hot weather.\n- Workers and athletes need acclimatisation, breaks and buddy observation."
+      },
+      "source_ids": [
+        "heatstroke-nhs",
+        "batch-b-heat-niosh"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prognosis_followup": {
+      "text": {
+        "zh-CN": "越早降温和救治越有利，表面恢复不代表器官完全无损。\n\n- 轻度热衰竭可较快好转，疑似热射病必须医疗评估。\n- 重症后复查由器官影响决定，持续疲乏、尿少或肌肉痛应报告。\n- 返回高温运动或工作需要逐步安排，不立即重复暴露。",
+        "en": "Earlier cooling and care improve prospects; apparent recovery does not prove organs are unharmed.\n\n- Mild exhaustion may improve quickly, while suspected heatstroke always requires assessment.\n- Follow-up depends on organ effects; report ongoing fatigue, low urine or muscle pain.\n- Return to hot work or sport gradually with medical guidance."
+      },
+      "source_ids": [
+        "heatstroke-nhs",
+        "batch-b-heat-niosh"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "complications": {
+      "text": {
+        "zh-CN": "严重过热会损伤多个系统。\n\n- 脑功能受影响可出现抽搐、昏迷或持续神经问题。\n- 肌肉分解可损害肾脏，电解质变化可影响心律。\n- 延误处理可能致残或死亡，但及时降温和急救能降低风险。",
+        "en": "Severe overheating can affect several systems.\n\n- Brain involvement may cause seizures, coma or persistent neurological problems.\n- Muscle breakdown can harm kidneys, and electrolyte changes can disturb heart rhythm.\n- Delay can cause disability or death; prompt cooling and emergency care reduce risk."
+      },
+      "source_ids": [
+        "batch-b-heat-niosh"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prevention": {
+      "text": {
+        "zh-CN": "预防要降低暴露并提前安排降温机会。\n\n- 热天减少高强度活动，穿轻薄宽松衣物，安排阴凉或空调环境休息。\n- 适当补液，避免过量酒精，户外工作逐步适应而不突然满负荷。\n- 同伴出现异常行为立即停止活动并急救，不以能否坚持衡量安全。",
+        "en": "Prevention reduces exposure and plans cooling opportunities.\n\n- Reduce strenuous activity in heat, wear light loose clothing and schedule cool or air-conditioned breaks.\n- Use suitable fluids, avoid excess alcohol and build heat tolerance gradually.\n- Stop activity and get help for unusual behaviour; endurance is not a safety test."
+      },
+      "source_ids": [
+        "heatstroke-nhs",
+        "batch-b-heat-niosh"
+      ],
+      "support_status": "pending_claim_verification"
+    }
+  },
+  "source_ids": [
+    "batch-b-heat-niosh",
+    "heatstroke-nhs",
+    "heatstroke-secondary"
+  ],
+  "related_ids": [
+    "dehydration",
+    "fever",
+    "gastroenteritis"
+  ],
+  "tags": [
+    "not_classified_as_infectious",
+    "course_context_dependent"
+  ],
+  "clinical_region": "UNSPECIFIED",
+  "coding": [],
+  "review": {
+    "status": "editorial_draft",
+    "reviewers": [],
+    "medical_reviewed_at": null,
+    "editorial_updated_at": "2026-09-29",
+    "next_editorial_review_due": "2026-12-28"
+  },
+  "localizations": {
+    "zh-CN": {
+      "status": "draft",
+      "clinician_reviewed": false
+    },
+    "en": {
+      "status": "draft",
+      "clinician_reviewed": false
+    }
+  },
+  "evidence_certainty": "not_formally_graded",
+  "limitations": {
+    "zh-CN": "面向普通读者的扩充医学信息草稿，已核读所列官方资料的相关章节；逐项独立论证、地区适用性核准及医学签审尚未完成，不构成个体诊断或处方。",
+    "en": "Expanded educational draft based on inspected official patient-information sections. Independent claim verification, regional applicability review and clinical sign-off remain pending; this is not an individual diagnosis or prescription."
+  },
+  "study_ids": [],
+  "advanced_fields": {
+    "prevalence_estimate": null,
+    "incidence_estimate": null,
+    "formal_diagnostic_criteria": null,
+    "quantitative_prognosis": null,
+    "transmission_details": null,
+    "screening_intervals": null,
+    "regional_drug_approval": null,
+    "procedure_indications": null
+  },
+  "advanced_fields_status": "not_yet_curated"
+}

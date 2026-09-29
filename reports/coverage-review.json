@@ -1,0 +1,296 @@
+{
+  "reviewed_at": "2026-09-29",
+  "decision": "95_percent_target_not_passed",
+  "measured": null,
+  "target": 0.95,
+  "classification": "ICD-11 MMS",
+  "release": "2026-01",
+  "denominator": null,
+  "snapshot_status": "not_acquired",
+  "mapping_status": "not_completed",
+  "counts": {
+    "existing_topics": 72,
+    "condition_topics": 67,
+    "symptom_topics": 5,
+    "title_only_backlog": 198,
+    "topics_with_coding": 0,
+    "confirmed_category_mappings": 0,
+    "clinically_reviewed_topics": 0,
+    "verified_sections": 0
+  },
+  "scope": "审查现有正文、标题目录及已知急危重缺口；本轮不新增病种正文。",
+  "method": "逐项核对现有主题身份，列出缺少独立正文的已知病种；mentioned_in_topics 仅按所列术语检索中英 sections.text 的结果，不表示对应主题完整覆盖该病种。",
+  "known_urgent_gaps": [
+    {
+      "names": {
+        "zh-CN": "心肌梗死",
+        "en": "Myocardial infarction"
+      },
+      "priority": "P1",
+      "dedicated_topic_ids": [],
+      "backlog_ids": [
+        "planned-023"
+      ],
+      "mentioned_in_topics": [
+        {
+          "id": "chest-pain",
+          "sections": [
+            "summary",
+            "treatment",
+            "prognosis_followup",
+            "complications"
+          ]
+        },
+        {
+          "id": "coronary-heart-disease",
+          "sections": [
+            "summary",
+            "diagnosis",
+            "treatment",
+            "complications"
+          ]
+        },
+        {
+          "id": "heart-failure",
+          "sections": [
+            "causes_risks"
+          ]
+        },
+        {
+          "id": "hyperlipidemia",
+          "sections": [
+            "summary",
+            "complications"
+          ]
+        },
+        {
+          "id": "hypertension",
+          "sections": [
+            "complications"
+          ]
+        }
+      ],
+      "matching_terms": [
+        "心肌梗死",
+        "心梗",
+        "myocardial infarction",
+        "heart attack"
+      ],
+      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+    },
+    {
+      "names": {
+        "zh-CN": "肺栓塞",
+        "en": "Pulmonary embolism"
+      },
+      "priority": "P1",
+      "dedicated_topic_ids": [],
+      "backlog_ids": [
+        "planned-019"
+      ],
+      "mentioned_in_topics": [
+        {
+          "id": "chest-pain",
+          "sections": [
+            "differentials",
+            "complications"
+          ]
+        },
+        {
+          "id": "copd",
+          "sections": [
+            "differentials"
+          ]
+        },
+        {
+          "id": "coronary-heart-disease",
+          "sections": [
+            "differentials"
+          ]
+        },
+        {
+          "id": "covid-19",
+          "sections": [
+            "differentials"
+          ]
+        },
+        {
+          "id": "deep-vein-thrombosis",
+          "sections": [
+            "summary",
+            "red_flags",
+            "treatment",
+            "complications"
+          ]
+        }
+      ],
+      "matching_terms": [
+        "肺栓塞",
+        "pulmonary embolism"
+      ],
+      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+    },
+    {
+      "names": {
+        "zh-CN": "脓毒症",
+        "en": "Sepsis"
+      },
+      "priority": "P1",
+      "dedicated_topic_ids": [],
+      "backlog_ids": [],
+      "mentioned_in_topics": [
+        {
+          "id": "appendicitis",
+          "sections": [
+            "complications"
+          ]
+        },
+        {
+          "id": "kidney-stones",
+          "sections": [
+            "complications"
+          ]
+        }
+      ],
+      "matching_terms": [
+        "脓毒症",
+        "sepsis"
+      ],
+      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+    },
+    {
+      "names": {
+        "zh-CN": "脑膜炎",
+        "en": "Meningitis"
+      },
+      "priority": "P1",
+      "dedicated_topic_ids": [],
+      "backlog_ids": [
+        "planned-058"
+      ],
+      "mentioned_in_topics": [
+        {
+          "id": "tension-headache",
+          "sections": [
+            "red_flags"
+          ]
+        }
+      ],
+      "matching_terms": [
+        "脑膜炎",
+        "meningitis"
+      ],
+      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+    },
+    {
+      "names": {
+        "zh-CN": "主动脉夹层",
+        "en": "Aortic dissection"
+      },
+      "priority": "P1",
+      "dedicated_topic_ids": [],
+      "backlog_ids": [
+        "planned-031"
+      ],
+      "mentioned_in_topics": [],
+      "matching_terms": [
+        "主动脉夹层",
+        "aortic dissection"
+      ],
+      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+    },
+    {
+      "names": {
+        "zh-CN": "糖尿病酮症酸中毒",
+        "en": "Diabetic ketoacidosis"
+      },
+      "priority": "P1",
+      "dedicated_topic_ids": [],
+      "backlog_ids": [
+        "planned-074"
+      ],
+      "mentioned_in_topics": [],
+      "matching_terms": [
+        "糖尿病酮症酸中毒",
+        "diabetic ketoacidosis"
+      ],
+      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+    },
+    {
+      "names": {
+        "zh-CN": "视网膜脱离",
+        "en": "Retinal detachment"
+      },
+      "priority": "P1",
+      "dedicated_topic_ids": [],
+      "backlog_ids": [
+        "planned-119"
+      ],
+      "mentioned_in_topics": [],
+      "matching_terms": [
+        "视网膜脱离",
+        "视网膜剥离",
+        "retinal detachment"
+      ],
+      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+    },
+    {
+      "names": {
+        "zh-CN": "睾丸扭转",
+        "en": "Testicular torsion"
+      },
+      "priority": "P1",
+      "dedicated_topic_ids": [],
+      "backlog_ids": [
+        "planned-150"
+      ],
+      "mentioned_in_topics": [],
+      "matching_terms": [
+        "睾丸扭转",
+        "testicular torsion"
+      ],
+      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+    },
+    {
+      "names": {
+        "zh-CN": "产后出血",
+        "en": "Postpartum haemorrhage"
+      },
+      "priority": "P1",
+      "dedicated_topic_ids": [],
+      "backlog_ids": [
+        "planned-163"
+      ],
+      "mentioned_in_topics": [],
+      "matching_terms": [
+        "产后出血",
+        "postpartum haemorrhage",
+        "postpartum hemorrhage"
+      ],
+      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+    },
+    {
+      "names": {
+        "zh-CN": "一氧化碳中毒",
+        "en": "Carbon monoxide poisoning"
+      },
+      "priority": "P1",
+      "dedicated_topic_ids": [],
+      "backlog_ids": [
+        "planned-172"
+      ],
+      "mentioned_in_topics": [],
+      "matching_terms": [
+        "一氧化碳中毒",
+        "carbon monoxide poisoning"
+      ],
+      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+    }
+  ],
+  "remaining_list_status": "等待完整目录及纳入规则冻结后生成全量剩余类别清单；当前10项为已知优先缺口。",
+  "roadmap": "docs/coverage-audit-and-roadmap.md",
+  "sources": [
+    "https://icd.who.int/docs/icd-api/SupportedClassifications/",
+    "https://www.who.int/news/item/16-02-2026-icd-11-2026-release"
+  ]
+}

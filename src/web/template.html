@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="{{CSP}}">
+<meta name="referrer" content="no-referrer"><meta name="color-scheme" content="light">
+<meta name="description" content="开放医学指南：按科室查阅病症，探索癌症证据地图与全生命周期健康因素，支持中英阅读、本地搜索与来源追溯。">
+<title>开放医学指南 · Open Medical Guide</title>
+<style>{{STYLE}}</style>
+</head>
+<body>
+<a class="skip" href="#main">跳转正文 / Skip to content</a>
+<div class="shell">
+<aside id="sidebar" class="sidebar" aria-label="科室导航">
+<div class="sidebar-heading"><a class="brand" href="#main"><span class="brand-symbol" aria-hidden="true">＋</span><span>Medical Guide<small id="brand-subtitle">开放医学指南</small></span></a><button id="menu-close" class="icon-button" type="button" aria-label="关闭科室菜单">×</button></div>
+<p class="nav-label" id="department-heading">按科室查阅</p>
+<nav id="department-nav"></nav>
+<div class="sidebar-footer"><strong id="sidebar-local">本地阅读 · 无查询上传</strong><p id="sidebar-note">按科室组织的病症知识。</p><span>Open Medical Guide</span></div>
+</aside>
+<button id="menu-backdrop" class="menu-backdrop" type="button" tabindex="-1" aria-label="关闭科室菜单" hidden></button>
+<div class="workspace">
+<header class="topbar"><button id="menu-toggle" class="icon-button" type="button" aria-expanded="false" aria-controls="sidebar" aria-label="打开科室菜单">☰</button><div class="global-search"><label id="query-label" class="visually-hidden" for="query">本地搜索</label><span aria-hidden="true">⌕</span><input id="query" type="search" autocomplete="off" maxlength="300" spellcheck="false" dir="auto"></div><div class="locale-wrap"><label id="locale-label" class="visually-hidden" for="locale">界面语言</label><select id="locale"></select></div></header>
+<main id="main" tabindex="-1">
+<section class="hero"><div><div class="eyebrow" id="library-label">医学知识库</div><h1 id="title">开放医学指南</h1><p id="subtitle">看懂病症，了解下一步。</p><a id="content-info-link" href="#content-sources">内容与来源说明</a></div><div class="metrics" id="metrics"></div></section>
+<div class="notice fallback" id="fallback" hidden></div>
+<nav class="knowledge-modes" aria-label="知识栏目 / Knowledge collections"><button id="mode-conditions" type="button" aria-pressed="true">病症主题</button><button id="mode-cancer" type="button" aria-pressed="false">癌症地图</button><button id="mode-lifecycle" type="button" aria-pressed="false">全生命周期</button></nav>
+<section class="search-panel" aria-label="Local search">
+<div class="scope-heading"><strong id="active-scope"></strong><button id="show-all" class="text-button" type="button"></button></div>
+<div id="condition-filters" class="filters"><select id="domain" aria-label="分类 / Category"></select><select id="kind" aria-label="条目类型 / Entry type"></select><button id="reset" type="button"></button></div>
+<p class="subtle" id="scope"></p>
+<details id="context"><summary id="context-label"></summary><div class="context-fields"><label><span id="age-label"></span><input id="age" inputmode="decimal" type="number" min="0" max="2400" step="0.1"></label><label><span id="temperature-label"></span><input id="temperature" inputmode="decimal" type="number" min="30" max="45" step="0.1"></label></div><p class="subtle" id="context-note"></p></details>
+</section>
+<section class="safety"><details id="manual"><summary id="manual-label"></summary><p id="manual-text"></p></details><div id="alerts" role="alert" aria-live="assertive"></div><p id="safety-note" class="subtle"></p></section>
+<nav id="condition-tools" class="tools" aria-label="Compare and export"><div><button id="compare" type="button"></button><button id="matrix" type="button"></button><button id="download" type="button"></button></div><span id="selection-count" aria-live="polite"></span></nav>
+<section id="result-view"><div class="section-title"><h2 id="results-label"></h2><span id="result-count" aria-live="polite"></span></div><p id="not-diagnostic" class="subtle"></p><div id="cards" class="cards"></div></section>
+<section id="table-view" hidden><div class="section-title"><h2 id="table-title"></h2><button id="back" type="button"></button></div><p id="matrix-note" class="subtle"></p><div class="table-scroll" tabindex="0" aria-label="Comparison table"><table id="comparison"></table></div></section>
+<section id="knowledge-view" aria-labelledby="knowledge-title" hidden></section>
+<section id="content-sources" class="principles" tabindex="-1"><h2 id="evidence-title"></h2><div id="evidence-summary"></div><details><summary id="studies-title"></summary><div id="studies"></div></details></section>
+<footer><p id="privacy"></p><p>MIT · Original editorial content CC BY 4.0 · Third-party sources retain their own rights.<br>© Open Medical Guide contributors · No affiliation with cited institutions.</p></footer>
+</main>
+</div></div>
+<dialog id="detail" aria-labelledby="detail-title"><div class="dialog-top"><span id="reading-label"></span><div class="dialog-actions"><select id="detail-locale" aria-label="界面语言"></select><button id="close-detail" type="button"></button></div></div><article id="detail-body"></article></dialog>
+<noscript><div class="notice warning">启用 JavaScript 即可搜索和阅读。严重呼吸困难、昏倒或大出血时，立即联系当地急救。Enable JavaScript to search and read. For severe breathing difficulty, collapse or major bleeding, contact local emergency services immediately.</div></noscript>
+<script id="guide-data" type="application/json">{{PAYLOAD}}</script>
+<script>{{SCRIPT}}</script>
+</body></html>

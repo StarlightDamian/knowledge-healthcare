@@ -1,0 +1,14 @@
+{
+  "name": "open-medical-guide",
+  "version": "0.1.0-preview",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test tests/search.test.mjs tests/safety.test.mjs tests/export.test.mjs tests/reading.test.mjs tests/knowledge.test.mjs",
+    "benchmark": "node src/web/benchmark.mjs",
+    "build": "python -m src.guide build"
+  }
+}

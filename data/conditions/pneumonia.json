@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0.0",
+  "id": "pneumonia",
+  "kind": "condition",
+  "primary_domain": "respiratory",
+  "names": {
+    "zh-CN": "肺炎",
+    "en": "Pneumonia"
+  },
+  "aliases": {
+    "zh-CN": [
+      "肺部感染"
+    ],
+    "en": [
+      "lung infection",
+      "bronchopneumonia"
+    ]
+  },
+  "symptom_terms": [
+    {
+      "zh-CN": "咳嗽",
+      "en": "cough"
+    },
+    {
+      "zh-CN": "发热",
+      "en": "fever"
+    },
+    {
+      "zh-CN": "呼吸困难",
+      "en": "breathlessness"
+    },
+    {
+      "zh-CN": "胸痛",
+      "en": "chest pain"
+    },
+    {
+      "zh-CN": "咳痰",
+      "en": "sputum"
+    }
+  ],
+  "departments": [
+    "primary-care",
+    "respiratory",
+    "pediatrics"
+  ],
+  "reference_urgency": "same_day",
+  "sections": {
+    "summary": {
+      "text": {
+        "zh-CN": "肺炎是肺部发生炎症，通常由感染引起，可能影响身体获得氧气。\n\n- 肺内小气囊可出现液体或脓性分泌物，导致咳嗽、发热和气短。\n- 有时呼吸或咳嗽时胸痛，伴明显疲倦和食欲下降。\n- 婴幼儿、老年人或免疫低下者表现可能不典型，严重程度差异很大。",
+        "en": "Pneumonia is lung inflammation, usually from infection, that can affect oxygen delivery.\n\n- Fluid or pus in small air sacs can cause cough, fever and breathlessness.\n- Breathing-related chest pain, fatigue and poor appetite may occur.\n- Infants, older adults and immunocompromised people may show atypical symptoms."
+      },
+      "source_ids": [
+        "pneumonia-nhs",
+        "pneumonia-secondary"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "causes_risks": {
+      "text": {
+        "zh-CN": "病原体和个人情况共同影响风险。\n\n- 细菌、病毒和某些真菌都可能致病，感冒或流感后也可能发生。\n- 吞咽困难时食物或液体误入肺部，可引起吸入相关肺炎。\n- 吸烟、慢性心肺病、免疫功能减弱及年龄因素可增加风险。",
+        "en": "Risk depends on both the cause and the person.\n\n- Bacteria, viruses and some fungi can cause pneumonia, including after flu.\n- Food or fluid entering the lungs can cause aspiration-related pneumonia.\n- Smoking, chronic disease, reduced immunity and age affect risk."
+      },
+      "source_ids": [
+        "pneumonia-secondary"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "red_flags": {
+      "text": {
+        "zh-CN": "出现缺氧或意识变化应急救。\n\n- 喘到不能说完整句子、呼吸明显困难，需要立即帮助。\n- 嘴唇或皮肤发蓝、突然意识混乱、咳血，应紧急评估。\n- 婴儿叫不醒、身体松软或明显呼吸费力，需要立即急救。",
+        "en": "Signs of oxygen shortage or altered consciousness need emergency help.\n\n- Severe breathing difficulty or inability to speak normally is urgent.\n- Blue lips, new confusion or coughing blood requires immediate assessment.\n- An unresponsive, floppy or struggling infant needs emergency care."
+      },
+      "source_ids": [
+        "pneumonia-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "care": {
+      "text": {
+        "zh-CN": "怀疑肺炎时不要只凭退烧判断。\n\n- 咳嗽伴气短、胸痛或明显不适，应及时评估。\n- 服抗生素两三天仍无改善，或任何时候明显变重，应联系医生。\n- 幼儿、老人和有基础病者，更容易需要医院治疗。",
+        "en": "Fever improvement alone does not establish recovery.\n\n- Cough with breathlessness, chest pain or marked illness needs assessment.\n- Contact the clinician if antibiotics bring no improvement after two to three days or if worsening occurs.\n- Young, older and chronically ill people may need hospital care."
+      },
+      "source_ids": [
+        "pneumonia-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diagnosis": {
+      "text": {
+        "zh-CN": "诊断需要结合症状、查体和适当检查。\n\n- 听诊了解呼吸音，血氧检查帮助判断氧气是否充足。\n- 胸片观察肺部改变，化验可评估炎症或寻找病原体。\n- 不是每个人都做全部检查，影像也不能单独确定是哪种病菌。",
+        "en": "Diagnosis combines symptoms, examination and selected tests.\n\n- Listening to the chest and measuring oxygen help assess severity.\n- Chest imaging and laboratory tests assess lung changes and possible causes.\n- Not everyone needs every test; imaging alone does not identify every germ."
+      },
+      "source_ids": [
+        "pneumonia-secondary"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "differentials": {
+      "text": {
+        "zh-CN": "早期症状可能与其他呼吸问题重叠。\n\n- 普通感冒或流感也会咳嗽发热，但持续气短需进一步判断。\n- 哮喘或其他慢性肺病也可能引起喘鸣和呼吸困难。\n- 新发胸痛、咳血或快速加重不能在家用症状表排除危险原因。",
+        "en": "Early symptoms overlap with other respiratory problems.\n\n- Colds and flu can cause fever and cough, but breathlessness needs further assessment.\n- Asthma and chronic lung disease can also cause wheezing.\n- Chest pain, bleeding or rapid deterioration cannot be safely ruled out by symptom matching."
+      },
+      "source_ids": [
+        "pneumonia-secondary"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "treatment": {
+      "text": {
+        "zh-CN": "治疗按病原体和严重程度决定。\n\n- 细菌性肺炎通常需要抗生素。\n- 部分病毒或真菌感染有针对性药物，不能统一套用抗生素。\n- 缺氧或病情重时可能需要住院、氧疗和其他支持。",
+        "en": "Treatment depends on the cause and severity.\n\n- Bacterial pneumonia usually needs antibiotics.\n- Selected viral or fungal infections require different medicines.\n- Low oxygen or severe illness may need hospital care and supportive treatment."
+      },
+      "source_ids": [
+        "pneumonia-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "medications": {
+      "text": {
+        "zh-CN": "药物各有用途和限制。\n\n- 抗生素按处方完成，不能因稍好就停，也不借用别人的药。\n- 退热止痛药改善舒适度，不能替代感染治疗。\n- 不要自行用强力止咳药压住所有咳嗽；咳嗽有助排出分泌物，使用前询问适用性。\n- 若使用抗生素，可能出现恶心或腹泻；呼吸困难、咽喉紧或口舌肿胀可能是严重过敏，应立即求助。",
+        "en": "Medicines have different purposes.\n\n- Complete the prescribed antibiotics rather than stopping early or borrowing treatment.\n- Fever and pain medicines improve comfort without replacing infection care.\n- Do not automatically suppress every cough; it helps clear secretions.\n- When antibiotics are used, nausea or diarrhoea may occur; breathing difficulty, throat tightness or mouth or tongue swelling may signal a serious allergy and need immediate help."
+      },
+      "source_ids": [
+        "pneumonia-nhs",
+        "antibiotics-safety-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diet": {
+      "text": {
+        "zh-CN": "恢复期饮食以维持摄入为主。\n\n- 少量多次进食可以应对食欲不佳。\n- 能够吞咽时维持适当饮水，避免脱水。\n- 反复呛咳或吞咽困难要先评估进食安全，不能强行灌水。",
+        "en": "Recovery nutrition aims to maintain intake.\n\n- Smaller, more frequent meals may help poor appetite.\n- Maintain appropriate fluids when swallowing is safe.\n- Repeated choking needs swallowing assessment rather than forced drinks."
+      },
+      "source_ids": [
+        "pneumonia-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "daily_care": {
+      "text": {
+        "zh-CN": "休息与观察应同时进行。\n\n- 发热或明显不适期间休息，体力恢复后逐步活动。\n- 记录呼吸、体温、饮水和用药后变化。\n- 不吸烟，咳嗽时遮挡口鼻并洗手，减少传播。",
+        "en": "Rest and observation work together.\n\n- Rest during fever or marked illness, then return gradually to activity.\n- Track breathing, temperature, fluids and treatment response.\n- Avoid smoking and use cough and hand hygiene."
+      },
+      "source_ids": [
+        "pneumonia-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "special_populations": {
+      "text": {
+        "zh-CN": "高风险人群可能没有明显高热。\n\n- 老年人可主要表现为无力或突然意识混乱。\n- 婴儿可能喂养差、烦躁或呼吸有呻吟声。\n- 免疫低下、慢性心肺病或吞咽障碍患者需更早评估。",
+        "en": "Higher-risk groups may lack a prominent fever.\n\n- Older adults may mainly become weak or confused.\n- Infants may feed poorly or grunt while breathing.\n- Reduced immunity, heart or lung disease and swallowing difficulty warrant earlier assessment."
+      },
+      "source_ids": [
+        "pneumonia-secondary"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prognosis_followup": {
+      "text": {
+        "zh-CN": "体力恢复常慢于退热。\n\n- 许多人需数周恢复，部分人疲倦更久。\n- 按病情复诊，持续咳嗽、气短或体重变化应说明。\n- 症状好转后再恶化时，需要排查治疗失败或并发问题。",
+        "en": "Energy often returns later than fever settles.\n\n- Recovery may take weeks and fatigue can last longer.\n- Discuss persistent cough, breathlessness or weight changes at review.\n- Deterioration after improvement warrants reassessment."
+      },
+      "source_ids": [
+        "pneumonia-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "complications": {
+      "text": {
+        "zh-CN": "严重肺炎可能影响全身。\n\n- 氧气不足可导致呼吸衰竭，需要支持呼吸。\n- 感染可进入血液并造成危重全身反应。\n- 肺内脓肿或肺周积液等可能使恢复延长，需要进一步治疗。",
+        "en": "Severe pneumonia can affect the whole body.\n\n- Low oxygen can progress to respiratory failure.\n- Infection may spread to blood and cause severe systemic illness.\n- Abscesses or fluid around the lung may prolong recovery and need additional treatment."
+      },
+      "source_ids": [
+        "pneumonia-secondary"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prevention": {
+      "text": {
+        "zh-CN": "预防包括疫苗和减少暴露。\n\n- 按年龄、基础病和当地安排接种肺炎球菌、流感等相关疫苗。\n- 洗手、咳嗽礼仪和不吸烟有助减少部分风险。\n- 吞咽困难者按评估采取进食措施；疫苗不能预防所有肺炎。",
+        "en": "Prevention combines vaccination and risk reduction.\n\n- Follow local age- and risk-based vaccine recommendations.\n- Hand hygiene, cough etiquette and smoking avoidance reduce some risks.\n- Follow swallowing advice where needed; vaccines do not prevent every pneumonia."
+      },
+      "source_ids": [
+        "pneumonia-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    }
+  },
+  "source_ids": [
+    "pneumonia-nhs",
+    "pneumonia-secondary",
+    "antibiotics-safety-nhs"
+  ],
+  "related_ids": [
+    "asthma",
+    "copd"
+  ],
+  "tags": [
+    "infectious",
+    "course_context_dependent"
+  ],
+  "clinical_region": "UNSPECIFIED",
+  "coding": [],
+  "review": {
+    "status": "editorial_draft",
+    "reviewers": [],
+    "medical_reviewed_at": null,
+    "editorial_updated_at": "2026-09-29",
+    "next_editorial_review_due": "2026-12-28"
+  },
+  "localizations": {
+    "zh-CN": {
+      "status": "draft",
+      "clinician_reviewed": false
+    },
+    "en": {
+      "status": "draft",
+      "clinician_reviewed": false
+    }
+  },
+  "evidence_certainty": "not_formally_graded",
+  "limitations": {
+    "zh-CN": "原创简明医学信息草稿；所列来源是待逐项核对的参考依据，不表示完成系统综述、独立双源论证或医生审核。",
+    "en": "Original educational draft. Listed references await claim-level verification; no systematic review, independent dual-source confirmation or clinical sign-off is claimed."
+  },
+  "study_ids": [],
+  "advanced_fields": {
+    "prevalence_estimate": null,
+    "incidence_estimate": null,
+    "formal_diagnostic_criteria": null,
+    "quantitative_prognosis": null,
+    "transmission_details": null,
+    "screening_intervals": null,
+    "regional_drug_approval": null,
+    "procedure_indications": null
+  },
+  "advanced_fields_status": "not_yet_curated"
+}

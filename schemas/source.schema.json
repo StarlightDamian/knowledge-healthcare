@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "url",
+    "organization",
+    "independence_group",
+    "type",
+    "jurisdiction",
+    "publication_date",
+    "accessed_at",
+    "retrieval_status",
+    "retrieval_scope",
+    "claim_verification",
+    "copyright"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "organization": {
+      "type": "string",
+      "minLength": 1
+    },
+    "independence_group": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "jurisdiction": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publication_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "accessed_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "retrieval_status": {
+      "enum": [
+        "page_opened",
+        "search_text_retrieved",
+        "abstract_retrieved",
+        "article_retrieved",
+        "metadata_only"
+      ]
+    },
+    "retrieval_scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_verification": {
+      "enum": [
+        "pending",
+        "verified",
+        "disputed"
+      ]
+    },
+    "copyright": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

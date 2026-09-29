@@ -1,0 +1,351 @@
+{
+  "version": "0.1.0",
+  "status": "draft",
+  "language_scope": [
+    "zh-CN",
+    "en"
+  ],
+  "limitation": "Finite phrase checks, not validated triage. Negative results cannot exclude emergencies. Clinical release is blocked.",
+  "rules": [
+    {
+      "id": "severe-breathing",
+      "groups": [
+        [
+          "喘不过气",
+          "无法呼吸",
+          "呼吸困难",
+          "严重气促",
+          "severe shortness of breath",
+          "cannot breathe",
+          "can't breathe",
+          "difficulty breathing",
+          "blue lips",
+          "嘴唇发紫"
+        ]
+      ],
+      "source_ids": [
+        "asthma-nhs",
+        "asthma-secondary"
+      ],
+      "action": "emergency",
+      "label": {
+        "zh-CN": "呼吸困难或缺氧表现",
+        "en": "Breathing difficulty or possible low oxygen"
+      },
+      "status": "draft",
+      "clinical_reviewers": []
+    },
+    {
+      "id": "chest-pain-danger",
+      "groups": [
+        [
+          "胸痛",
+          "胸口痛",
+          "胸闷",
+          "chest pain",
+          "chest pressure"
+        ],
+        [
+          "冷汗",
+          "大汗",
+          "呼吸困难",
+          "晕厥",
+          "持续",
+          "sweating",
+          "shortness of breath",
+          "fainting",
+          "persistent"
+        ]
+      ],
+      "source_ids": [
+        "chest-pain-nhs",
+        "chest-pain-secondary"
+      ],
+      "action": "emergency",
+      "label": {
+        "zh-CN": "胸部症状伴危险表现",
+        "en": "Chest symptoms with warning signs"
+      },
+      "status": "draft",
+      "clinical_reviewers": []
+    },
+    {
+      "id": "stroke-pattern",
+      "groups": [
+        [
+          "突然一侧无力",
+          "一侧无力",
+          "说话不清",
+          "口角歪斜",
+          "脸歪",
+          "speech slurred",
+          "slurred speech",
+          "one-sided weakness",
+          "face drooping"
+        ]
+      ],
+      "source_ids": [
+        "stroke-nhs",
+        "stroke-secondary"
+      ],
+      "action": "emergency",
+      "label": {
+        "zh-CN": "新发卒中样表现需要紧急评估",
+        "en": "New stroke-like signs need emergency assessment"
+      },
+      "status": "draft",
+      "clinical_reviewers": []
+    },
+    {
+      "id": "allergic-airway",
+      "groups": [
+        [
+          "喉咙肿胀",
+          "舌头肿",
+          "喉头水肿",
+          "throat swelling",
+          "tongue swelling"
+        ]
+      ],
+      "source_ids": [
+        "anaphylaxis-nhs",
+        "anaphylaxis-secondary"
+      ],
+      "action": "emergency",
+      "label": {
+        "zh-CN": "可能危及气道的肿胀",
+        "en": "Potentially dangerous airway swelling"
+      },
+      "status": "draft",
+      "clinical_reviewers": []
+    },
+    {
+      "id": "sudden-headache",
+      "groups": [
+        [
+          "雷击样头痛",
+          "突然最严重头痛",
+          "突然剧烈头痛",
+          "thunderclap headache",
+          "worst headache of my life"
+        ]
+      ],
+      "source_ids": [
+        "migraine-nhs",
+        "migraine-secondary"
+      ],
+      "action": "emergency",
+      "label": {
+        "zh-CN": "突然发生的严重头痛",
+        "en": "Sudden severe headache"
+      },
+      "status": "draft",
+      "clinical_reviewers": []
+    },
+    {
+      "id": "immediate-self-harm",
+      "groups": [
+        [
+          "想自杀",
+          "想伤害自己",
+          "准备自杀",
+          "want to kill myself",
+          "want to hurt myself",
+          "suicide plan"
+        ]
+      ],
+      "source_ids": [
+        "depression-nhs",
+        "depression-secondary"
+      ],
+      "action": "emergency",
+      "label": {
+        "zh-CN": "立即寻求危机支持，远离可伤害自己的物品并联系可信任的人",
+        "en": "Seek immediate crisis support, move away from means of harm and contact a trusted person"
+      },
+      "status": "draft",
+      "clinical_reviewers": []
+    },
+    {
+      "id": "pregnancy-bleeding",
+      "groups": [
+        [
+          "怀孕",
+          "孕期",
+          "可能怀孕",
+          "pregnant",
+          "pregnancy"
+        ],
+        [
+          "出血",
+          "剧痛",
+          "晕厥",
+          "bleeding",
+          "severe pain",
+          "fainting"
+        ]
+      ],
+      "source_ids": [
+        "ectopic-pregnancy-nhs",
+        "ectopic-pregnancy-secondary"
+      ],
+      "action": "emergency",
+      "label": {
+        "zh-CN": "妊娠可能伴出血或疼痛需紧急评估",
+        "en": "Possible pregnancy with bleeding or pain needs urgent assessment"
+      },
+      "status": "draft",
+      "clinical_reviewers": []
+    },
+    {
+      "id": "back-neurologic",
+      "groups": [
+        [
+          "腰痛",
+          "背痛",
+          "back pain"
+        ],
+        [
+          "尿不出",
+          "会阴麻木",
+          "大小便失禁",
+          "urinary retention",
+          "saddle numbness",
+          "loss of bladder control"
+        ]
+      ],
+      "source_ids": [
+        "low-back-pain-nhs",
+        "low-back-pain-secondary"
+      ],
+      "action": "emergency",
+      "label": {
+        "zh-CN": "背痛伴排尿或会阴感觉异常",
+        "en": "Back pain with bladder or saddle-sensation changes"
+      },
+      "status": "draft",
+      "clinical_reviewers": []
+    },
+    {
+      "id": "heat-confusion",
+      "groups": [
+        [
+          "高温",
+          "中暑",
+          "热射病",
+          "heat",
+          "hot environment"
+        ],
+        [
+          "意识混乱",
+          "昏倒",
+          "confusion",
+          "confused",
+          "collapse"
+        ]
+      ],
+      "source_ids": [
+        "heatstroke-nhs",
+        "heatstroke-secondary"
+      ],
+      "action": "emergency",
+      "label": {
+        "zh-CN": "热暴露后意识异常",
+        "en": "Altered awareness after heat exposure"
+      },
+      "status": "draft",
+      "clinical_reviewers": []
+    },
+    {
+      "id": "major-bleeding",
+      "groups": [
+        [
+          "大量出血",
+          "大出血",
+          "吐血",
+          "heavy bleeding",
+          "vomiting blood"
+        ],
+        [
+          "晕厥",
+          "昏倒",
+          "不止",
+          "fainting",
+          "collapse",
+          "will not stop"
+        ]
+      ],
+      "source_ids": [
+        "peptic-ulcer-nhs",
+        "peptic-ulcer-secondary"
+      ],
+      "action": "emergency",
+      "label": {
+        "zh-CN": "出血伴循环危险表现",
+        "en": "Bleeding with circulatory warning signs"
+      },
+      "status": "draft",
+      "clinical_reviewers": []
+    },
+    {
+      "id": "newborn-fever-text",
+      "groups": [
+        [
+          "新生儿",
+          "2个月",
+          "1个月",
+          "newborn",
+          "2 month old",
+          "1 month old"
+        ],
+        [
+          "发热",
+          "发烧",
+          "fever"
+        ]
+      ],
+      "source_ids": [
+        "nhs-child-fever",
+        "fever-secondary"
+      ],
+      "action": "urgent_assessment",
+      "label": {
+        "zh-CN": "小婴儿发热需立即专业评估",
+        "en": "Fever in a young infant needs urgent professional assessment"
+      },
+      "status": "draft",
+      "clinical_reviewers": []
+    },
+    {
+      "id": "pregnancy-neurologic",
+      "groups": [
+        [
+          "怀孕",
+          "孕期",
+          "产后",
+          "pregnant",
+          "postpartum"
+        ],
+        [
+          "剧烈头痛",
+          "视力异常",
+          "抽搐",
+          "severe headache",
+          "vision changes",
+          "seizure"
+        ]
+      ],
+      "source_ids": [
+        "preeclampsia-nhs",
+        "preeclampsia-secondary"
+      ],
+      "action": "emergency",
+      "label": {
+        "zh-CN": "妊娠或产后神经／视觉危险表现",
+        "en": "Neurological or visual warning signs in pregnancy or postpartum"
+      },
+      "status": "draft",
+      "clinical_reviewers": []
+    }
+  ]
+}

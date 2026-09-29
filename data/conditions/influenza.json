@@ -1,0 +1,262 @@
+{
+  "schema_version": "1.0.0",
+  "id": "influenza",
+  "kind": "condition",
+  "primary_domain": "respiratory",
+  "names": {
+    "zh-CN": "流感",
+    "en": "Influenza"
+  },
+  "aliases": {
+    "zh-CN": [
+      "流行性感冒",
+      "甲流",
+      "乙流"
+    ],
+    "en": [
+      "flu",
+      "influenza A",
+      "influenza B"
+    ]
+  },
+  "symptom_terms": [
+    {
+      "zh-CN": "发热",
+      "en": "fever"
+    },
+    {
+      "zh-CN": "肌肉酸痛",
+      "en": "muscle aches"
+    },
+    {
+      "zh-CN": "咳嗽",
+      "en": "cough"
+    },
+    {
+      "zh-CN": "乏力",
+      "en": "fatigue"
+    },
+    {
+      "zh-CN": "寒战",
+      "en": "chills"
+    }
+  ],
+  "departments": [
+    "primary-care",
+    "pediatrics",
+    "respiratory"
+  ],
+  "reference_urgency": "context_dependent",
+  "sections": {
+    "summary": {
+      "text": {
+        "zh-CN": "流感是流感病毒引起的呼吸道感染，常突然发作，比普通感冒更容易出现明显全身不适。\n\n- 典型表现包括发热或发冷、肌肉酸痛、头痛、咳嗽和强烈疲倦，但并非人人发热。\n- 多数会逐渐恢复；幼儿、孕妇、老人和有某些慢性病者更容易出现严重并发症。",
+        "en": "Influenza is a respiratory infection caused by influenza viruses, often beginning suddenly with more pronounced whole-body illness than a common cold.\n\n- Fever or chills, aches, headache, cough and marked fatigue are typical, but fever is not universal.\n- Most recover gradually; young children, pregnant people, older adults and people with certain chronic conditions face greater complication risk."
+      },
+      "source_ids": [
+        "influenza-nhs",
+        "influenza-secondary"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "causes_risks": {
+      "text": {
+        "zh-CN": "流感由病毒传播，受凉本身不是确诊依据。\n\n- 感染者咳嗽、打喷嚏时可把病毒传给他人，手接触污染物后碰口鼻也可能传播。\n- 同住、照护和密切接触增加接触机会；做好手卫生与咳嗽遮挡可减少传播。\n- 哮喘、糖尿病、心脏病或免疫功能低下会增加严重疾病风险，这与是否平时身体强壮不能简单等同。\n- 症状出现前也可能传播，且儿童或免疫功能低下者传染期可能更长；只避开发热者不能消除全部风险。",
+        "en": "Flu is transmitted by a virus; feeling cold does not establish the diagnosis.\n\n- Coughing and sneezing can spread virus, and contaminated hands touching the nose or mouth may also transmit it.\n- Shared living, caregiving and close contact increase exposure opportunities. Hand hygiene and covering coughs reduce spread.\n- Asthma, diabetes, heart disease or impaired immunity increase severe-illness risk, which cannot be judged simply by how strong someone usually feels.\n- Transmission can begin before symptoms, and children or people with impaired immunity may remain contagious longer; avoiding only people with fever cannot remove all risk."
+      },
+      "source_ids": [
+        "influenza-nhs",
+        "influenza-secondary",
+        "batch-b-flu-spread"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "red_flags": {
+      "text": {
+        "zh-CN": "呼吸、意识或脱水异常比体温数字更重要。\n\n- 呼吸困难、持续胸部压痛、嘴唇发青、意识混乱或叫不醒，立即呼叫当地急救。\n- 儿童呼吸时肋骨间凹陷、不愿走路的严重肌肉痛、明显缺水或反应差，应立即就医；婴儿发热需尽快评估。\n- 发热或咳嗽先好转后又加重、成人不排尿或原慢性病明显恶化，也需马上获得医疗评估。",
+        "en": "Breathing, awareness and dehydration matter more than temperature alone.\n\n- Difficulty breathing, persistent chest pressure, blue lips, confusion or inability to wake requires emergency help.\n- A child with ribs pulling in during breathing, severe muscle pain causing refusal to walk, marked dehydration or poor responsiveness needs immediate care; fever in an infant needs prompt assessment.\n- Fever or cough that improves then worsens, absent urination in an adult or substantial worsening of chronic disease also needs immediate medical assessment."
+      },
+      "source_ids": [
+        "influenza-secondary"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "care": {
+      "text": {
+        "zh-CN": "是否尽早用抗病毒药，需要结合人群和严重程度决定。\n\n- 孕妇、老人、幼儿以及有上述慢性病者出现疑似流感，应尽快联系医生，不要先等几天看会不会好。\n- 原本健康、症状较轻、能饮水且没有危险信号者，通常可居家休息观察。\n- NHS 建议症状 7 天仍无改善应寻求就医；更早恶化或出现危险信号不能等到第 7 天。",
+        "en": "Early antiviral decisions depend on risk group and illness severity.\n\n- Pregnant people, older adults, young children and people with the listed chronic conditions should contact a clinician promptly for suspected flu rather than waiting several days.\n- Otherwise healthy people with mild symptoms, adequate drinking and no warning signs can usually rest and monitor at home.\n- NHS advice recommends seeking care if symptoms have not improved after 7 days. Earlier deterioration or warning signs must not wait for day 7."
+      },
+      "source_ids": [
+        "influenza-nhs",
+        "batch-b-flu-antiviral"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diagnosis": {
+      "text": {
+        "zh-CN": "流感症状与其他病毒重叠，检测结果也要结合病情。\n\n- 医生询问发病时间、接触史、基础病和呼吸状况，以决定是否检测或先治疗。\n- 鼻或咽部样本的快速抗原检测较快，但阴性不能完全排除；分子检测寻找病毒遗传物质，通常更敏感。\n- 并非所有轻症都需要检测；较易发生重症者不能因一次家用阴性就延误联系医生。",
+        "en": "Symptoms overlap with other viruses, and test results need clinical context.\n\n- Onset, exposure, underlying conditions and breathing status help decide whether to test or start treatment.\n- Rapid antigen tests on respiratory samples are quick but cannot rule out flu when negative. Molecular tests detect viral genetic material and are generally more sensitive.\n- Not every mild illness needs testing. People at greater risk should not delay medical contact because of one negative home test."
+      },
+      "source_ids": [
+        "batch-b-flu-tests"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "differentials": {
+      "text": {
+        "zh-CN": "起病快有提示作用，但不能可靠区分所有呼吸道感染。\n\n- 普通感冒往往以鼻塞流涕为主、起病较慢；流感更常突然酸痛和疲惫，但两者有重叠。\n- 新冠与流感可表现相似，也可同时感染，必要时检测有助于选择正确治疗。\n- 呼吸困难、胸痛或好转后再次发热，需要排查肺炎等并发症，而不是简单认作感冒拖久。",
+        "en": "Abrupt onset offers a clue but cannot reliably distinguish every respiratory infection.\n\n- Colds more often develop gradually with nasal symptoms; flu more often causes abrupt aches and exhaustion, though overlap exists.\n- COVID-19 can resemble flu and occur alongside it; testing may guide the correct treatment.\n- Breathlessness, chest pain or recurrent fever after improvement needs evaluation for pneumonia or other complications rather than being dismissed as a lingering cold."
+      },
+      "source_ids": [
+        "influenza-nhs",
+        "influenza-secondary",
+        "batch-b-flu-tests"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "treatment": {
+      "text": {
+        "zh-CN": "治疗包括支持恢复、缓解不适，以及按需抑制病毒。\n\n- 休息、饮水和适合的退热止痛药可改善舒适度，但不能直接清除流感病毒。\n- 抗病毒药越早开始通常越有利；CDC 指出最初 1–2 天效果最佳，但重症、住院或较易发生并发症者较晚开始仍可能获益。\n- 抗生素对流感病毒无效，仅在医生判断合并细菌感染时可能需要。",
+        "en": "Treatment supports recovery, relieves discomfort and, when appropriate, suppresses viral infection.\n\n- Rest, fluids and suitable fever or pain relief improve comfort but do not directly eliminate influenza virus.\n- Earlier antivirals generally offer greater benefit. CDC identifies the first 1–2 days as best, but later treatment can still help severe, hospitalised or higher-risk cases.\n- Antibiotics do not treat influenza virus; they may be needed if a clinician identifies a bacterial complication."
+      },
+      "source_ids": [
+        "influenza-nhs",
+        "batch-b-flu-antiviral"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "medications": {
+      "text": {
+        "zh-CN": "不同流感药的适用对象和风险不同。\n\n- 奥司他韦是常见处方抗病毒药，可引起恶心或呕吐；吸入扎那米韦可诱发喘鸣，不适合哮喘等呼吸问题者。\n- 玛巴洛沙韦等药的妊娠、哺乳和重症使用有限制，须按当地批准信息及医生判断选药。\n- 复方感冒药可能已含对乙酰氨基酚，避免重复服用；按 NHS 建议，16 岁以下不自行用阿司匹林。",
+        "en": "Flu medicines differ in suitability and risks.\n\n- Oseltamivir is a common prescription antiviral and can cause nausea or vomiting. Inhaled zanamivir can cause wheezing and is unsuitable for people with breathing problems such as asthma.\n- Baloxavir and other agents have pregnancy, breastfeeding or severe-illness restrictions; use local product information and clinical advice.\n- Combination cold remedies may already contain paracetamol/acetaminophen, so avoid duplication. NHS advice is not to give aspirin independently to children under 16."
+      },
+      "source_ids": [
+        "influenza-nhs",
+        "batch-b-flu-antiviral"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diet": {
+      "text": {
+        "zh-CN": "饮食照护重点是补充液体并维持能够耐受的进食。\n\n- 补充液体以避免口干、尿少和脱水，可少量多次饮用；能否正常饮水是观察重点。\n- 食欲下降时选择容易接受的日常食物，恢复进食比强迫大量进补更实际。\n- 持续呕吐、喝不进去或尿明显减少要就医；有心肾疾病限液要求者，先咨询如何调整饮水。",
+        "en": "Dietary care focuses on fluids and tolerated food intake.\n\n- Drink regularly, using small frequent amounts if needed, to prevent dry mouth, reduced urination and dehydration. Ability to drink is an important observation.\n- When appetite is low, choose tolerated ordinary foods and return to usual intake as able.\n- Persistent vomiting, inability to drink or markedly reduced urine needs assessment. People with prescribed fluid restrictions for heart or kidney disease should ask how to adjust intake."
+      },
+      "source_ids": [
+        "influenza-nhs",
+        "influenza-secondary"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "daily_care": {
+      "text": {
+        "zh-CN": "居家观察同时关注本人变化和周围人的感染风险。\n\n- 记录发病时间、饮水、排尿、呼吸变化和用药成分，便于需要时向医生说明。\n- 发热或明显不适时休息并减少接触；咳嗽打喷嚏遮挡，及时洗手，处理用过纸巾。\n- 避免只靠退烧后体温正常判断康复；呼吸困难、精神变差或好转后加重需要重新评估。",
+        "en": "Home care should track both illness progression and transmission to others.\n\n- Record onset, drinking, urination, breathing changes and medicine ingredients for medical review if needed.\n- Rest and reduce contact while feverish or substantially unwell; cover coughs, wash hands and dispose of used tissues.\n- A normal temperature after fever medicine does not prove recovery. Breathing difficulty, reduced alertness or deterioration after improvement needs reassessment."
+      },
+      "source_ids": [
+        "influenza-nhs",
+        "influenza-secondary"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "special_populations": {
+      "text": {
+        "zh-CN": "一些人应在病情还不重时就联系医生。\n\n- CDC 将 65 岁及以上、5 岁以下尤其 2 岁以下儿童、孕妇列为较容易发生严重并发症的人群。\n- 哮喘、心脏病、糖尿病和免疫功能低下者可能原病加重；早期治疗评估很重要。\n- 孕期有可用的抗病毒治疗，CDC 优先推荐口服奥司他韦；不要因怀孕自行拒绝所有药，也不要照搬成人剂量给儿童。",
+        "en": "Some groups should seek advice before illness becomes severe.\n\n- CDC identifies adults aged 65 or over, children under 5 especially under 2, and pregnant people as being at greater risk.\n- Asthma, heart disease, diabetes and impaired immunity can worsen during infection; early treatment assessment matters.\n- Antiviral treatment is available during pregnancy; CDC prefers oral oseltamivir. Do not reject all treatment because of pregnancy or apply adult doses to children."
+      },
+      "source_ids": [
+        "influenza-secondary",
+        "batch-b-flu-antiviral"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prognosis_followup": {
+      "text": {
+        "zh-CN": "恢复速度有差异，重点是症状整体向好。\n\n- CDC 资料指出多数人在数天到不足两周恢复；持续疲倦需要结合呼吸、进食及日常功能判断。\n- 轻症顺利好转通常不需要反复验病毒；有慢性病者应观察原病是否恢复到平时状态。\n- 先好转后发热咳嗽加重、持续不改善或活动明显受限，应复诊排查并发症。",
+        "en": "Recovery varies; the overall trend should be toward improvement.\n\n- CDC notes that most recover within days to under two weeks. Ongoing fatigue should be considered alongside breathing, intake and daily function.\n- Uncomplicated improvement usually does not require repeated virus tests. People with chronic disease should check whether their usual baseline is returning.\n- Recurrent fever or worse cough after improvement, lack of progress or substantial activity limitation warrants reassessment for complications."
+      },
+      "source_ids": [
+        "influenza-nhs",
+        "influenza-secondary",
+        "batch-b-flu-tests"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "complications": {
+      "text": {
+        "zh-CN": "常见继发问题与少见重症需要分开理解。\n\n- 耳部或鼻窦感染可能使耳痛、面部不适持续；新出现或加重时应咨询。\n- 肺炎可由流感本身或合并细菌引起，表现为更明显呼吸困难、胸痛或持续发热。\n- 少数会出现心肌炎、脑炎或感染引发的全身器官损伤；原有哮喘和心脏病也可能恶化，危险信号出现即行动。",
+        "en": "Separate relatively common secondary problems from uncommon severe complications.\n\n- Ear or sinus infection can prolong ear or facial discomfort; seek advice for new or worsening symptoms.\n- Pneumonia may result from influenza itself or bacterial coinfection, with worsening breathlessness, chest pain or persistent fever.\n- Uncommonly, inflammation affects the heart or brain or infection causes organ injury. Existing asthma or heart disease can worsen; act on warning signs."
+      },
+      "source_ids": [
+        "influenza-secondary"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prevention": {
+      "text": {
+        "zh-CN": "预防同时包括疫苗和减少传播。\n\n- 按当地年度建议接种流感疫苗，尤其关注老年人、孕妇和慢性病者的适用安排。\n- 生病时减少近距离接触、做好咳嗽和手卫生，可降低传给家人和同事的机会。\n- 抗病毒药不能代替疫苗；接种后仍可能患病，出现危险信号同样需要就医。\n- 改善室内通风、在合适场景佩戴贴合口罩，可进一步减少吸入或传播感染颗粒，尤其照护易发生重症者时。",
+        "en": "Prevention combines vaccination and transmission reduction.\n\n- Follow local annual vaccination advice, including arrangements for older adults, pregnancy and chronic conditions.\n- Reducing close contact while ill and practising cough and hand hygiene lowers opportunities to infect others.\n- Antivirals do not replace vaccination. Illness can still occur after vaccination, and warning signs still require care.\n- Better indoor ventilation and a well-fitting mask in appropriate settings can further reduce inhaling or spreading infectious particles, particularly while caring for people at greater risk."
+      },
+      "source_ids": [
+        "influenza-nhs",
+        "batch-b-flu-antiviral",
+        "batch-b-flu-prevention"
+      ],
+      "support_status": "pending_claim_verification"
+    }
+  },
+  "source_ids": [
+    "batch-b-flu-antiviral",
+    "batch-b-flu-tests",
+    "influenza-nhs",
+    "influenza-secondary",
+    "batch-b-flu-spread",
+    "batch-b-flu-prevention"
+  ],
+  "related_ids": [
+    "allergic-rhinitis",
+    "common-cold",
+    "covid-19",
+    "sinusitis",
+    "sore-throat"
+  ],
+  "tags": [
+    "infectious",
+    "course_context_dependent"
+  ],
+  "clinical_region": "UNSPECIFIED",
+  "coding": [],
+  "review": {
+    "status": "editorial_draft",
+    "reviewers": [],
+    "medical_reviewed_at": null,
+    "editorial_updated_at": "2026-09-29",
+    "next_editorial_review_due": "2026-12-28"
+  },
+  "localizations": {
+    "zh-CN": {
+      "status": "draft",
+      "clinician_reviewed": false
+    },
+    "en": {
+      "status": "draft",
+      "clinician_reviewed": false
+    }
+  },
+  "evidence_certainty": "not_formally_graded",
+  "limitations": {
+    "zh-CN": "面向普通读者的扩充医学信息草稿，已核读所列官方资料的相关章节；逐项独立论证、地区适用性核准及医学签审尚未完成，不构成个体诊断或处方。",
+    "en": "Expanded educational draft based on inspected official patient-information sections. Independent claim verification, regional applicability review and clinical sign-off remain pending; this is not an individual diagnosis or prescription."
+  },
+  "study_ids": [],
+  "advanced_fields": {
+    "prevalence_estimate": null,
+    "incidence_estimate": null,
+    "formal_diagnostic_criteria": null,
+    "quantitative_prognosis": null,
+    "transmission_details": null,
+    "screening_intervals": null,
+    "regional_drug_approval": null,
+    "procedure_indications": null
+  },
+  "advanced_fields_status": "not_yet_curated"
+}

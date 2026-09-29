@@ -1,0 +1,245 @@
+{
+  "schema_version": "1.0.0",
+  "id": "covid-19",
+  "kind": "condition",
+  "primary_domain": "respiratory",
+  "names": {
+    "zh-CN": "新冠病毒感染",
+    "en": "COVID-19"
+  },
+  "aliases": {
+    "zh-CN": [
+      "新冠",
+      "新型冠状病毒肺炎"
+    ],
+    "en": [
+      "covid",
+      "coronavirus",
+      "SARS-CoV-2"
+    ]
+  },
+  "symptom_terms": [
+    {
+      "zh-CN": "发热",
+      "en": "fever"
+    },
+    {
+      "zh-CN": "咳嗽",
+      "en": "cough"
+    },
+    {
+      "zh-CN": "咽痛",
+      "en": "sore throat"
+    },
+    {
+      "zh-CN": "乏力",
+      "en": "fatigue"
+    },
+    {
+      "zh-CN": "嗅觉改变",
+      "en": "altered smell"
+    }
+  ],
+  "departments": [
+    "primary-care",
+    "respiratory"
+  ],
+  "reference_urgency": "context_dependent",
+  "sections": {
+    "summary": {
+      "text": {
+        "zh-CN": "新冠是 SARS-CoV-2 病毒引起的感染，严重程度从无症状到重症不等。\n\n- 可出现发热、咳嗽、咽痛、疲乏及嗅味觉变化，也可能有腹泻。\n- 仅靠症状不能可靠区分新冠、流感和普通感冒。",
+        "en": "COVID-19 is an infection caused by SARS-CoV-2, ranging from no symptoms to severe disease.\n\n- Fever, cough, sore throat, fatigue, smell or taste changes and diarrhoea can occur.\n- Symptoms alone cannot reliably distinguish it from flu or a cold."
+      },
+      "source_ids": [
+        "covid-19-secondary"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "causes_risks": {
+      "text": {
+        "zh-CN": "病毒主要通过感染者释放到空气中的呼吸颗粒传播。\n\n- 室内拥挤、通风差或近距离接触增加机会。\n- 尚未出现症状的人也可能传播。\n- 年龄较大、免疫功能低下及某些慢性病会增加重症风险，既往感染不能保证以后不再感染。",
+        "en": "Virus spreads mainly through respiratory particles released into the air.\n\n- Crowded poorly ventilated indoor settings and close contact increase exposure.\n- People can transmit before symptoms appear.\n- Older age, immune suppression and certain chronic diseases increase severe-disease risk; previous infection does not guarantee protection from reinfection."
+      },
+      "source_ids": [
+        "a-covid-about-cdc"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "red_flags": {
+      "text": {
+        "zh-CN": "出现重症信号应立即联系当地急救。\n\n- 呼吸困难、持续胸部疼痛或压迫感，需要急评。\n- 新出现意识混乱、无法唤醒或保持清醒，应急救。\n- 嘴唇、皮肤或甲床异常苍白、灰蓝，结合肤色观察，不要只等检测结果。",
+        "en": "Seek emergency help for severe signs.\n\n- Trouble breathing or persistent chest pain or pressure needs urgent assessment.\n- New confusion or inability to wake or stay awake is an emergency.\n- Unusual pale, grey or blue lips, skin or nail beds depend on skin tone; do not wait for a test."
+      },
+      "source_ids": [
+        "covid-19-secondary"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "care": {
+      "text": {
+        "zh-CN": "就医时间取决于严重程度和是否适合早期治疗。\n\n- 有重症风险的人出现症状或检测阳性，应尽早联系医生，不必等病情严重。\n- 症状加重、喝不下水或原有疾病失控需要及时评估。\n- 轻症可在家休息观察，但须清楚升级求助的信号。",
+        "en": "Timing depends on severity and eligibility for early treatment.\n\n- People at increased risk should contact a clinician promptly after symptoms or a positive test, without waiting for severe illness.\n- Worsening symptoms, poor drinking or uncontrolled existing illness need review.\n- Mild illness may be observed at home with clear escalation signs."
+      },
+      "source_ids": [
+        "a-covid-treatment-cdc"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diagnosis": {
+      "text": {
+        "zh-CN": "检测帮助确认感染，但结果要结合时间解释。\n\n- 抗原快速检测方便，感染早期一次阴性不能完全排除。\n- 按检测产品及当地建议重复检测或采用核酸检测。\n- 医生同时评估呼吸、补水与并发症，阳性结果不能解释所有胸痛或气促。",
+        "en": "Tests support diagnosis but depend on timing.\n\n- Rapid antigen tests are convenient; an early negative result does not completely exclude infection.\n- Repeat testing or use a molecular test according to product and local guidance.\n- Clinical assessment also checks breathing, hydration and complications; a positive test does not explain every chest symptom."
+      },
+      "source_ids": [
+        "a-covid-testing-cdc"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "differentials": {
+      "text": {
+        "zh-CN": "多种疾病可表现相似。\n\n- 流感和普通感冒与新冠高度重叠。\n- 花粉过敏更常有眼鼻痒，但也可与感染同时存在。\n- 严重气促要排查肺炎、肺栓塞或心脏问题，不能只继续当感冒处理。",
+        "en": "Several illnesses overlap.\n\n- Influenza and colds share many symptoms.\n- Hay fever more often causes itchy eyes and nose but can coexist with infection.\n- Severe breathlessness warrants assessment for pneumonia, embolism or heart disease rather than continued cold care alone."
+      },
+      "source_ids": [
+        "covid-19-secondary"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "treatment": {
+      "text": {
+        "zh-CN": "治疗因风险和严重程度而不同。\n\n- 轻症主要休息、补水及缓解不适。\n- 部分重症风险人群可在规定的早期时间窗内使用抗病毒药，须及时评估资格。\n- 严重病例可能需要氧气和住院治疗；抗生素不能治疗新冠病毒本身。",
+        "en": "Treatment varies by risk and severity.\n\n- Mild illness mainly needs rest, fluids and symptom relief.\n- Eligible high-risk patients may receive antivirals within an early treatment window, requiring prompt assessment.\n- Severe illness may need oxygen and admission; antibiotics do not treat the virus itself."
+      },
+      "source_ids": [
+        "a-covid-treatment-cdc"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "medications": {
+      "text": {
+        "zh-CN": "药物选择需要检查合并用药和器官功能。\n\n- 含奈玛特韦与利托那韦的治疗会与多种处方药相互作用，必须核对完整药单。\n- 部分抗病毒药受肾功能、妊娠或其他条件限制，不能分享给家人。\n- 退热药只改善不适；不自行使用抗生素或全身激素预防加重。",
+        "en": "Drug choice requires review of other medicines and organ function.\n\n- Nirmatrelvir with ritonavir interacts with many prescriptions, so a full medication review is essential.\n- Antivirals may have kidney, pregnancy or other restrictions and must not be shared.\n- Fever medicines improve comfort; do not self-start antibiotics or systemic steroids to prevent worsening."
+      },
+      "source_ids": [
+        "a-covid-treatment-cdc"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diet": {
+      "text": {
+        "zh-CN": "饮食重点是水分与可耐受的营养。\n\n- 咽痛或恶心时少量多次饮水和进食。\n- 持续腹泻、呕吐或明显少尿需评估脱水。\n- 没有已证实可替代疫苗或抗病毒治疗的食物、维生素大剂量或排毒方案。",
+        "en": "Food supports hydration and tolerated nutrition.\n\n- Take small frequent drinks and meals during sore throat or nausea.\n- Persistent diarrhoea, vomiting or reduced urine warrants dehydration assessment.\n- No food, high-dose vitamin or detox regimen is established as a replacement for vaccines or antiviral treatment."
+      },
+      "source_ids": [
+        "a-covid-treatment-cdc"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "daily_care": {
+      "text": {
+        "zh-CN": "在家照护同时考虑自己和同住者。\n\n- 休息并观察呼吸、饮水和整体变化，必要时记录。\n- 减少与他人近距离接触，改善通风；接触别人时按当地建议使用合适口罩。\n- 恢复活动循序渐进，活动后明显恶化或持续不适应咨询。",
+        "en": "Home care protects you and others.\n\n- Rest and observe breathing, drinking and overall changes, recording them when useful.\n- Reduce close contact, improve ventilation and use an appropriate mask around others according to local guidance.\n- Resume activity gradually and seek advice for marked post-activity worsening or persistent problems."
+      },
+      "source_ids": [
+        "a-covid-about-cdc"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "special_populations": {
+      "text": {
+        "zh-CN": "部分人需要更早求助。\n\n- 老人、免疫功能低下者和有重要慢性病者应及时讨论抗病毒资格。\n- 孕产妇的重症风险与治疗选择需要产科协同。\n- 儿童精神差、进食明显减少或呼吸费力，不能只看是否高热。",
+        "en": "Some groups need earlier advice.\n\n- Older, immunocompromised and significantly chronically ill people should promptly discuss antiviral eligibility.\n- Pregnancy and postpartum care require assessment of severity risk and suitable treatment.\n- In children, poor alertness, reduced feeding or laboured breathing matters even without high fever."
+      },
+      "source_ids": [
+        "a-covid-treatment-cdc"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prognosis_followup": {
+      "text": {
+        "zh-CN": "恢复速度差异很大。\n\n- 不少轻症逐渐恢复，但疲乏或咳嗽可能持续更久。\n- 持续或新出现症状影响生活时，需要评估是否为感染后问题或其他疾病。\n- 复诊记录症状和活动影响，不把所有持续不适都自动归为长新冠。",
+        "en": "Recovery varies widely.\n\n- Many mild cases improve progressively, although cough or fatigue can persist.\n- Persistent or new symptoms affecting daily life need assessment for post-infection problems and other diseases.\n- Bring symptom and activity records rather than automatically attributing every ongoing problem to long COVID."
+      },
+      "source_ids": [
+        "a-long-covid-cdc"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "complications": {
+      "text": {
+        "zh-CN": "并发症取决于个体风险。\n\n- 重症可出现肺炎、缺氧或多器官损伤。\n- 血栓等问题可能引起突然胸痛、气促或单腿肿痛，需要及时评估。\n- 部分人感染后持续出现疲乏、认知或其他症状，影响工作和学习。",
+        "en": "Complications vary by individual risk.\n\n- Severe illness can cause pneumonia, low oxygen or organ injury.\n- Clots may cause sudden chest pain, breathlessness or one-sided leg swelling and require assessment.\n- Some people have prolonged fatigue, cognitive or other symptoms affecting work and learning."
+      },
+      "source_ids": [
+        "a-long-covid-cdc"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prevention": {
+      "text": {
+        "zh-CN": "预防结合疫苗和减少呼吸道暴露。\n\n- 按所在地当前安排接种，主要降低重症风险。\n- 改善通风、洗手并在拥挤环境或生病时采取额外措施。\n- 接种或既往感染不能完全阻止再感染，保护免疫功能低下同住者尤其重要。",
+        "en": "Prevention combines vaccination with reducing respiratory exposure.\n\n- Follow current local vaccination schedules, especially for protection from severe illness.\n- Improve ventilation, clean hands and use extra precautions when ill or in crowded settings.\n- Vaccination or previous infection does not eliminate reinfection; protect immunocompromised household members."
+      },
+      "source_ids": [
+        "a-covid-treatment-cdc"
+      ],
+      "support_status": "pending_claim_verification"
+    }
+  },
+  "source_ids": [
+    "covid-19-nhs",
+    "covid-19-secondary",
+    "a-covid-about-cdc",
+    "a-covid-treatment-cdc",
+    "a-covid-testing-cdc",
+    "a-long-covid-cdc"
+  ],
+  "related_ids": [
+    "allergic-rhinitis",
+    "common-cold",
+    "influenza",
+    "sinusitis",
+    "sore-throat"
+  ],
+  "tags": [
+    "infectious",
+    "course_context_dependent"
+  ],
+  "clinical_region": "UNSPECIFIED",
+  "coding": [],
+  "review": {
+    "status": "editorial_draft",
+    "reviewers": [],
+    "medical_reviewed_at": null,
+    "editorial_updated_at": "2026-09-29",
+    "next_editorial_review_due": "2026-12-28"
+  },
+  "localizations": {
+    "zh-CN": {
+      "status": "draft",
+      "clinician_reviewed": false
+    },
+    "en": {
+      "status": "draft",
+      "clinician_reviewed": false
+    }
+  },
+  "evidence_certainty": "not_formally_graded",
+  "limitations": {
+    "zh-CN": "原创简明医学信息草稿；所列来源是待逐项核对的参考依据，不表示完成系统综述、独立双源论证或医生审核。",
+    "en": "Original educational draft. Listed references await claim-level verification; no systematic review, independent dual-source confirmation or clinical sign-off is claimed."
+  },
+  "study_ids": [],
+  "advanced_fields": {
+    "prevalence_estimate": null,
+    "incidence_estimate": null,
+    "formal_diagnostic_criteria": null,
+    "quantitative_prognosis": null,
+    "transmission_details": null,
+    "screening_intervals": null,
+    "regional_drug_approval": null,
+    "procedure_indications": null
+  },
+  "advanced_fields_status": "not_yet_curated"
+}

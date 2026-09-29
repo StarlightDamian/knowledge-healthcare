@@ -1,0 +1,129 @@
+{
+  "version": "0.1.0-preview",
+  "executed_at": "2026-09-30",
+  "artifact_sha256": "e8a4208db9a3185c7f1f2479709603a2c1d32398760b93f39af7e9613576cb1d",
+  "javascript_unit_and_regression": {
+    "command": "node --test tests/search.test.mjs tests/safety.test.mjs tests/export.test.mjs tests/reading.test.mjs tests/knowledge.test.mjs",
+    "tests": 332,
+    "passed": 332,
+    "failed": 0,
+    "skipped": 0,
+    "log": "reports/logs/javascript-current.txt"
+  },
+  "python_unit_schema_integrity": {
+    "command": "python -m unittest discover -s tests -p \"test_*.py\"",
+    "tests": 74,
+    "passed": 74,
+    "failed": 0,
+    "skipped": 0,
+    "json_schema_dependency_present": true,
+    "log": "reports/logs/python-current.txt",
+    "synthetic_attestations": "Isolated synthetic fixtures; no genuine medical approval is created."
+  },
+  "browser_dom_and_interaction": {
+    "command": "python -m unittest discover -s tests/e2e -p \"test_browser.py\"",
+    "tests": 28,
+    "passed": 28,
+    "failed": 0,
+    "skipped": 0,
+    "transport": "Real local HTTP server navigation; includes offline file:// reopening in Chromium",
+    "log": "reports/logs/browser-current.txt",
+    "covered": [
+      "Two-level department navigation, empty specialties hidden and cross-specialty deduplication",
+      "Department/query/type intersection and independent danger alerts",
+      "12 interface locales, explicit English medical fallback and physical RTL shell positions",
+      "Locale retains query, department, selected topics, open detail, contents state and expanded comparison cells",
+      "All 14 detail sections, paragraph/list rendering, warning signs first and chapter jumps",
+      "Selected comparison and full matrix; multiline CSV round-trip with original 22 columns",
+      "390px mobile drawer, Escape/focus behavior and long-body scrolling",
+      "Query and embedded-data XSS; no query/history storage or remote requests",
+      "Standalone HTML reopens offline with working search and details",
+      "Review facts centralized in accessible content/source explanations; no repeated card/header/section badges; source-panel expansion persists across locale changes",
+      "MECE map filters intersect, collection queries remain separate and existing topic selections persist",
+      "Cancer-to-existing-condition and cancer-to-shared-factor navigation with source/locale state",
+      "Life-stage grouping, mobile layout and Arabic interface with English-body LTR contents",
+      "Knowledge modules reopen offline, retain section sources, resist embedded-data/query XSS and send no remote requests"
+    ],
+    "limitations": [
+      "Chromium on Windows only; no full browser fleet or accessibility certification.",
+      "No external clinical validation or live public deployment tested."
+    ],
+    "focused_final_rechecks": [
+      {
+        "tests": 7,
+        "passed": 7,
+        "log": "reports/logs/browser-maps-current.txt",
+        "reason": "Final text, canonical links, card labels and separate source counts"
+      },
+      {
+        "tests": 1,
+        "passed": 1,
+        "log": "reports/logs/browser-maps-rtl-current.txt",
+        "reason": "English-body contents retain LTR under Arabic interface"
+      }
+    ]
+  },
+  "clinical_release_gate": {
+    "expected_exit_code": 2,
+    "observed_exit_code": 2,
+    "result": "Correctly refused: no clinical sign-off",
+    "clinically_reviewed_topics": 0,
+    "log": "reports/logs/clinical-current.txt"
+  },
+  "content_expansion": {
+    "topics": 72,
+    "dimensions": 14,
+    "bilingual_fields": 2016,
+    "editorial_records": 72,
+    "structural_issues": 0,
+    "report": "reports/content-depth-audit.json",
+    "clinical_signoffs": 0
+  },
+  "all_condition_coverage": null,
+  "diagnostic_accuracy": null,
+  "clinical_emergency_sensitivity": null,
+  "clinical_evaluation_performed": false,
+  "runtime": {
+    "python": "3.12.0",
+    "node": "v24.2.0",
+    "chromium": "153.0.8010.12",
+    "platform": "Windows; local test virtual environment"
+  },
+  "note": "434 distinct software checks passed (332 Node, 74 Python, 28 HTTP/offline Chromium). Eight focused rechecks also passed and are not added to the distinct total. Existing 72 condition JSON files are byte-identical to the pre-import baseline. The final build and RTL map check completed on 2026-09-30; source curation began 2026-09-29.",
+  "writing_review": {
+    "reviewed_topics": 72,
+    "reviewed_bilingual_sections": 1008,
+    "changed_topics": 54,
+    "changed_sections": 89,
+    "changed_language_texts": 173,
+    "numeric_sequences_unchanged": true,
+    "danger_action_lists_unchanged": true,
+    "only_topic_section_text_changed": true,
+    "review_states_and_source_references_unchanged": true,
+    "report": "reports/anti-defensive-writing-audit.md"
+  },
+  "coverage_review": "reports/coverage-review.json",
+  "research_maps": {
+    "modules": 2,
+    "entries": 56,
+    "sections": 243,
+    "stages": 7,
+    "by_module": {
+      "cancer": {
+        "entries": 36,
+        "groups": 36,
+        "sections": 148,
+        "sources": 67,
+        "stages": 0
+      },
+      "lifecycle": {
+        "entries": 20,
+        "groups": 8,
+        "sections": 95,
+        "sources": 39,
+        "stages": 7
+      }
+    }
+  },
+  "research_mece_audit": "reports/research-mece-audit.json"
+}

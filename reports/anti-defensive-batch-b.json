@@ -1,0 +1,946 @@
+{
+  "scope": "仅审阅 dental-abscess 至 kidney-stones 共 24 篇的中英 14 节正文；仅修改 sections.*.text。",
+  "baseline": "C:\\Users\\Damian\\AppData\\Local\\Temp\\healthcare-anti-defensive-baseline-20260929-223640",
+  "reviewed_ids": [
+    "dental-abscess",
+    "depression",
+    "dizziness",
+    "dry-eye",
+    "ectopic-pregnancy",
+    "eczema",
+    "epilepsy",
+    "fatigue",
+    "fever",
+    "gallstones",
+    "gastroenteritis",
+    "gout",
+    "heart-failure",
+    "heatstroke",
+    "hemorrhoids",
+    "hyperlipidemia",
+    "hypertension",
+    "hyperthyroidism",
+    "hypothyroidism",
+    "ibs",
+    "influenza",
+    "insomnia",
+    "iron-deficiency-anemia",
+    "kidney-stones"
+  ],
+  "summary": {
+    "reviewed_conditions": 24,
+    "reviewed_bilingual_sections": 336,
+    "changed_conditions": 23,
+    "changed_bilingual_sections": 48,
+    "editorial_adjustments": 52
+  },
+  "changes": [
+    {
+      "condition_id": "dental-abscess",
+      "section": "treatment",
+      "before": {
+        "zh-CN": "关键是处理感染源，而不只是暂时止痛。\n\n- 引流把积聚的脓液排出，减轻压力。\n- 根管治疗清理牙齿内部感染组织，争取保留牙齿。\n- 无法保留的牙齿可能需要拔除；严重扩散时可能住院。",
+        "en": "Treatment addresses the infection source, not pain alone.\n\n- Drainage removes pus and reduces pressure.\n- Root-canal treatment cleans infected tissue inside the tooth to try to preserve it.\n- An unsalvageable tooth may need extraction; severe spread can require hospital care."
+      },
+      "after": {
+        "zh-CN": "治疗通过引流、根管治疗或拔牙处理感染源。\n\n- 引流把积聚的脓液排出，减轻压力。\n- 根管治疗清理牙齿内部感染组织，争取保留牙齿。\n- 无法保留的牙齿可能需要拔除；严重扩散时可能住院。",
+        "en": "Treatment addresses the infection source through drainage, root-canal treatment or extraction.\n\n- Drainage removes pus and reduces pressure.\n- Root-canal treatment cleans infected tissue inside the tooth to try to preserve it.\n- An unsalvageable tooth may need extraction; severe spread can require hospital care."
+      },
+      "reason": [
+        "直接说明治疗路径，移除已在用药节解释的止痛对比。"
+      ],
+      "preserved_medical_conditions": [
+        "保留引流、保牙、拔牙及严重扩散住院条件；用药节仍说明止痛与抗生素不能替代引流。"
+      ]
+    },
+    {
+      "condition_id": "dental-abscess",
+      "section": "prevention",
+      "before": {
+        "zh-CN": "预防重点是减少蛀牙和及时修补损伤。\n\n- 每天用含氟牙膏刷牙两次，并清洁牙缝。\n- 按牙医建议检查，蛀牙、裂牙或外伤及时处理。\n- 戒烟有利口腔健康；日常护理不能完全消除感染风险。",
+        "en": "Prevention focuses on decay and prompt repair of damage.\n\n- Brush twice daily with fluoride toothpaste and clean between teeth.\n- Attend dental checks and address decay, cracks or injury promptly.\n- Avoiding tobacco supports oral health but does not eliminate all infection risk."
+      },
+      "after": {
+        "zh-CN": "预防重点是减少蛀牙和及时修补损伤。\n\n- 每天用含氟牙膏刷牙两次，并清洁牙缝。\n- 按牙医建议检查，蛀牙、裂牙或外伤及时处理。\n- 戒烟有利口腔健康。",
+        "en": "Prevention focuses on decay and prompt repair of damage.\n\n- Brush twice daily with fluoride toothpaste and clean between teeth.\n- Attend dental checks and address decay, cracks or injury promptly.\n- Avoiding tobacco supports oral health."
+      },
+      "reason": [
+        "删除无额外行动价值的绝对保证式尾句。"
+      ],
+      "preserved_medical_conditions": [
+        "保留刷牙频次、含氟牙膏、牙缝清洁和损伤及时处理。"
+      ]
+    },
+    {
+      "condition_id": "depression",
+      "section": "causes_risks",
+      "before": {
+        "zh-CN": "抑郁通常没有一个可以归咎的单一原因。\n\n- 遗传、生物变化、生活环境及心理因素共同参与。\n- 慢性疼痛、严重疾病和生活困难可能增加负担，抑郁又会妨碍原病管理。\n- 有些药物也影响情绪，应由医生核对而非自行停药。",
+        "en": "Depression usually has no single cause or person to blame.\n\n- Genetic, biological, environmental and psychological factors interact.\n- Chronic pain, serious illness and difficult circumstances can increase burden; depression can worsen illness management.\n- Some medicines affect mood and need clinician review rather than abrupt stopping."
+      },
+      "after": {
+        "zh-CN": "抑郁通常由多种因素共同作用。\n\n- 遗传、生物变化、生活环境及心理因素共同参与。\n- 慢性疼痛、严重疾病和生活困难可能增加负担，抑郁又会妨碍原病管理。\n- 有些药物也影响情绪，应由医生核对而非自行停药。",
+        "en": "Depression usually involves several interacting factors.\n\n- Genetic, biological, environmental and psychological factors interact.\n- Chronic pain, serious illness and difficult circumstances can increase burden; depression can worsen illness management.\n- Some medicines affect mood and need clinician review rather than abrupt stopping."
+      },
+      "reason": [
+        "导读直接说明多因素病因，不引入归咎对象。"
+      ],
+      "preserved_medical_conditions": [
+        "遗传、生物、环境、心理、慢性病和药物因素均保留；勿自行停药保留。"
+      ]
+    },
+    {
+      "condition_id": "depression",
+      "section": "diet",
+      "before": {
+        "zh-CN": "规律吃饭支持体力，但没有单一食物能代替治疗。\n\n- 尽量保持规律、均衡餐食；没胃口时先安排容易准备的小份食物。\n- 避免用酒精或非处方镇静物缓解情绪，可能使判断和症状变差。\n- 维生素或草药是否有用及是否安全需要核对，不能因标注天然就自行叠加。",
+        "en": "Regular meals support energy, but no single food replaces treatment.\n\n- Aim for balanced regular meals; small easy-to-prepare portions may help when appetite is low.\n- Avoid using alcohol or non-prescribed sedatives to cope, as symptoms and judgement may worsen.\n- Check supplement benefits and safety rather than assuming natural means harmless."
+      },
+      "after": {
+        "zh-CN": "规律、均衡进食有助于维持恢复期间的体力。\n\n- 尽量保持规律、均衡餐食；没胃口时先安排容易准备的小份食物。\n- 避免用酒精或非处方镇静物缓解情绪，可能使判断和症状变差。\n- 维生素或草药是否有用及是否安全需要核对，不能因标注天然就自行叠加。",
+        "en": "Regular, balanced meals support energy during recovery.\n\n- Aim for balanced regular meals; small easy-to-prepare portions may help when appetite is low.\n- Avoid using alcohol or non-prescribed sedatives to cope, as symptoms and judgement may worsen.\n- Check supplement benefits and safety rather than assuming natural means harmless."
+      },
+      "reason": [
+        "以饮食实际作用开头，删除泛化的治疗替代免责声明。"
+      ],
+      "preserved_medical_conditions": [
+        "保留食欲差的小份进食、酒精和非处方镇静物风险、补充剂证据及相互作用核对。"
+      ]
+    },
+    {
+      "condition_id": "depression",
+      "section": "prevention",
+      "before": {
+        "zh-CN": "不能保证预防所有发作，但可以尽早识别和减少复发负担。\n\n- 了解自己的早期信号，如兴趣下降、退缩或睡眠改变，提前与团队沟通。\n- 保持支持关系和可持续作息，遇到重大压力主动寻求帮助。\n- 有既往发作史者商定持续治疗与危机应对计划，不把复发理解为个人失败。",
+        "en": "Not every episode can be prevented, but early recognition can reduce burden.\n\n- Notice personal early signs such as lost interest, withdrawal or altered sleep and contact the care team.\n- Maintain supportive relationships and sustainable routines, seeking help during major stress.\n- After previous episodes, agree ongoing care and a crisis plan; recurrence is not personal failure."
+      },
+      "after": {
+        "zh-CN": "尽早识别征兆并制定应对计划，有助于减少复发负担。\n\n- 了解自己的早期信号，如兴趣下降、退缩或睡眠改变，提前与团队沟通。\n- 保持支持关系和可持续作息，遇到重大压力主动寻求帮助。\n- 有既往发作史者商定持续治疗与危机应对计划，不把复发理解为个人失败。",
+        "en": "Early recognition and an agreed response plan can reduce the burden of relapse.\n\n- Notice personal early signs such as lost interest, withdrawal or altered sleep and contact the care team.\n- Maintain supportive relationships and sustainable routines, seeking help during major stress.\n- After previous episodes, agree ongoing care and a crisis plan; recurrence is not personal failure."
+      },
+      "reason": [
+        "预防导读说明可采取的行动及有限收益，不以保证式否定开头。"
+      ],
+      "preserved_medical_conditions": [
+        "保留早期征兆、支持关系、持续治疗与危机计划；使用有助于而非保证。"
+      ]
+    },
+    {
+      "condition_id": "dizziness",
+      "section": "prevention",
+      "before": {
+        "zh-CN": "可减少部分诱因，不能预防所有发作。\n\n- 起身动作放慢，炎热时适当补水，并管理已确诊的原发病。\n- 复核可能致晕的药物，改善居家照明与行走安全，并知道急救信号。",
+        "en": "Some triggers can be reduced, but not every episode prevented.\n\n- Rise slowly, maintain appropriate hydration and manage identified underlying disease.\n- Review contributing medicines, improve home lighting and walking safety, and know emergency signs."
+      },
+      "after": {
+        "zh-CN": "预防重点是减少已知诱因，并降低跌倒和意外风险。\n\n- 起身动作放慢，炎热时适当补水，并管理已确诊的原发病。\n- 复核可能致晕的药物，改善居家照明与行走安全，并知道急救信号。",
+        "en": "Prevention focuses on known triggers and reducing falls and accidents.\n\n- Rise slowly, maintain appropriate hydration and manage identified underlying disease.\n- Review contributing medicines, improve home lighting and walking safety, and know emergency signs."
+      },
+      "reason": [
+        "将泛化的无法保证改为本症状可操作的预防目标。"
+      ],
+      "preserved_medical_conditions": [
+        "病因依赖、缓慢起身、适当补水、用药复核、行走安全及急救信号保留。"
+      ]
+    },
+    {
+      "condition_id": "dry-eye",
+      "section": "red_flags",
+      "before": {
+        "zh-CN": "急性眼病不能当普通干眼处理。\n\n- 突然视力下降、闪光或视野异常，立即眼科急诊。\n- 红眼伴剧痛、明显怕光或严重头痛恶心需紧急评估；戴隐形眼镜出现红痛应停戴并尽快求医。",
+        "en": "Do not mistake an acute eye disorder for dryness.\n\n- Sudden vision loss, flashes or visual-field changes need emergency eye care.\n- Redness with severe pain, marked light sensitivity or headache and nausea needs urgent assessment; stop contacts and seek prompt care for painful redness."
+      },
+      "after": {
+        "zh-CN": "突然视力变化或红眼伴明显疼痛时，应及时评估。\n\n- 突然视力下降、闪光或视野异常，立即眼科急诊。\n- 红眼伴剧痛、明显怕光或严重头痛恶心需紧急评估；戴隐形眼镜出现红痛应停戴并尽快求医。",
+        "en": "Sudden visual changes or painful red eyes need prompt assessment.\n\n- Sudden vision loss, flashes or visual-field changes need emergency eye care.\n- Redness with severe pain, marked light sensitivity or headache and nausea needs urgent assessment; stop contacts and seek prompt care for painful redness."
+      },
+      "reason": [
+        "用可识别表现和行动替代反向提醒。"
+      ],
+      "preserved_medical_conditions": [
+        "下方突然视力下降立即急诊、红眼剧痛紧急评估与隐形眼镜停戴条件全部保留。"
+      ]
+    },
+    {
+      "condition_id": "dry-eye",
+      "section": "diet",
+      "before": {
+        "zh-CN": "均衡营养有帮助，但食物不替代眼表治疗。\n\n- 正常摄取含维生素A和脂肪酸的食物，无限液要求时保持适当饮水。\n- 现有页面不能证明所有干眼患者服鱼油或高剂量维生素都有效，因此不作统一补充建议。",
+        "en": "Balanced nutrition helps but does not replace eye treatment.\n\n- Include normal food sources of vitamin A and fatty acids and suitable fluids if not restricted.\n- These pages do not prove universal benefit from fish oil or high-dose vitamins, so no blanket supplementation is advised."
+      },
+      "after": {
+        "zh-CN": "均衡营养和适当饮水有助于眼部健康。\n\n- 正常摄取含维生素A和脂肪酸的食物，无限液要求时保持适当饮水。\n- 现有页面不能证明所有干眼患者服鱼油或高剂量维生素都有效，因此不作统一补充建议。",
+        "en": "Balanced nutrition and suitable hydration support eye health.\n\n- Include normal food sources of vitamin A and fatty acids and suitable fluids if not restricted.\n- These pages do not prove universal benefit from fish oil or high-dose vitamins, so no blanket supplementation is advised."
+      },
+      "reason": [
+        "饮食导读直接说明均衡营养和适当饮水；保留所核对资料的证据边界，不将页面范围推广为全面证据结论。"
+      ],
+      "preserved_medical_conditions": [
+        "有液体限制者不可照搬饮水建议；鱼油或高剂量维生素不作统一建议及其资料范围原文保留。"
+      ]
+    },
+    {
+      "condition_id": "dry-eye",
+      "section": "prevention",
+      "before": {
+        "zh-CN": "可减少诱因，但不能保证完全不发作。\n\n- 避免长时间连续盯屏幕，减少烟尘、干燥及直吹风。\n- 按规范使用隐形眼镜，并持续治疗睑缘炎或相关疾病，反复红痛则暂停佩戴就医。",
+        "en": "Triggers can be reduced without guaranteeing prevention.\n\n- Break up screen use and reduce smoke, dryness and direct wind.\n- Use contacts correctly and manage eyelid or associated disease; recurrent painful redness requires stopping lenses and seeking care."
+      },
+      "after": {
+        "zh-CN": "预防重点是减少屏幕、环境和隐形眼镜相关刺激。\n\n- 避免长时间连续盯屏幕，减少烟尘、干燥及直吹风。\n- 按规范使用隐形眼镜，并持续治疗睑缘炎或相关疾病，反复红痛则暂停佩戴就医。",
+        "en": "Prevention focuses on reducing screen, environmental and contact-lens irritation.\n\n- Break up screen use and reduce smoke, dryness and direct wind.\n- Use contacts correctly and manage eyelid or associated disease; recurrent painful redness requires stopping lenses and seeking care."
+      },
+      "reason": [
+        "用本病具体诱因替代保证式限定。"
+      ],
+      "preserved_medical_conditions": [
+        "保留持续护理、已存在眼病处理及反复红痛停戴就医。"
+      ]
+    },
+    {
+      "condition_id": "ectopic-pregnancy",
+      "section": "diet",
+      "before": {
+        "zh-CN": "食物不能改变着床位置。\n\n- 能进食时保持均衡饮食，恶心或出血时咨询补液和营养安排。\n- 甲氨蝶呤治疗期间避免酒精，并核对补充剂和其他药物；可能急诊手术时按团队要求进食饮水。",
+        "en": "Food cannot change implantation location.\n\n- Eat a balanced diet when able and ask about hydration or nutrition with nausea or bleeding.\n- Avoid alcohol during methotrexate care and have supplements and other medicines reviewed; follow the team's intake instructions if emergency surgery is possible."
+      },
+      "after": {
+        "zh-CN": "饮食与补液安排应结合进食能力和治疗阶段。\n\n- 能进食时保持均衡饮食，恶心或出血时咨询补液和营养安排。\n- 甲氨蝶呤治疗期间避免酒精，并核对补充剂和其他药物；可能急诊手术时按团队要求进食饮水。",
+        "en": "Food and fluid plans depend on ability to eat and the stage of treatment.\n\n- Eat a balanced diet when able and ask about hydration or nutrition with nausea or bleeding.\n- Avoid alcohol during methotrexate care and have supplements and other medicines reviewed; follow the team's intake instructions if emergency surgery is possible."
+      },
+      "reason": [
+        "以现有进食和治疗条件开头，删除没有读者行动价值的反事实比较。"
+      ],
+      "preserved_medical_conditions": [
+        "保留甲氨蝶呤期间禁酒、补充剂及用药核对、可能急诊手术时遵循进食饮水要求。"
+      ]
+    },
+    {
+      "condition_id": "ectopic-pregnancy",
+      "section": "prevention",
+      "before": {
+        "zh-CN": "不能保证预防所有异位妊娠。\n\n- 戒烟、按需使用安全套预防性传播感染，并及时治疗盆腔感染，可减少部分风险。\n- 高风险者的早孕检查帮助早发现，但不代表一定能防止再次发生。",
+        "en": "Not all ectopic pregnancies can be prevented.\n\n- Avoid smoking, use condoms when appropriate and treat pelvic infections to reduce some risks.\n- Early checks for higher-risk pregnancies support detection but cannot guarantee prevention."
+      },
+      "after": {
+        "zh-CN": "预防措施着重减少可改变的风险。\n\n- 戒烟、按需使用安全套预防性传播感染，并及时治疗盆腔感染，可减少部分风险。\n- 高风险者的早孕检查帮助早发现，但不代表一定能防止再次发生。",
+        "en": "Prevention measures focus on modifiable risks.\n\n- Avoid smoking, use condoms when appropriate and treat pelvic infections to reduce some risks.\n- Early checks for higher-risk pregnancies support detection but cannot guarantee prevention."
+      },
+      "reason": [
+        "导读直接说明可采取措施的范围，删除泛化保证句。"
+      ],
+      "preserved_medical_conditions": [
+        "安全套适用范围、盆腔感染治疗、部分风险降低，以及高风险者早孕检查用于发现而不能确保防止再发的边界完整保留。"
+      ]
+    },
+    {
+      "condition_id": "eczema",
+      "section": "medications",
+      "before": {
+        "zh-CN": "外用药也需注意用法和风险。\n\n- 激素药膏不是润肤霜，应按指定部位和疗程使用，尤其面部、皮肤皱褶和儿童。\n- 润肤剂沾到衣物被褥后会增加着火风险，远离香烟及明火。\n- 未经诊断不要自行加抗生素或多种复方药；感染需针对性处理。\n- 氢化可的松等外用糖皮质激素用于减轻炎症，不等同于保湿霜；长期、大片或过强使用可使皮肤变薄、出现纹路。医生会按部位和严重程度选强度，脸部和儿童尤其需要具体指导。",
+        "en": "Topical products also need careful use.\n\n- Steroid creams are not ordinary moisturisers; follow site and duration instructions, especially for the face, folds and children.\n- Emollient residue on clothing and bedding increases fire risk; keep away from cigarettes and flames.\n- Do not add antibiotics or mixed creams without assessment; infection needs targeted treatment.\n- Topical corticosteroids such as hydrocortisone reduce inflammation and differ from moisturisers. Prolonged use, large treated areas or excessive potency can thin skin and cause stretch marks. Strength depends on site and severity, with specific guidance needed for the face and children."
+      },
+      "after": {
+        "zh-CN": "外用药也需注意用法和风险。\n\n- 外用糖皮质激素如氢化可的松用于减轻炎症，应按指定强度、部位和疗程使用，尤其面部、皮肤皱褶和儿童。\n- 润肤剂沾到衣物被褥后会增加着火风险，远离香烟及明火。\n- 未经诊断不要自行加抗生素或多种复方药；感染需针对性处理。\n- 长期、大片或过强使用外用激素可使皮肤变薄、出现纹路；医生会按部位和严重程度选择强度。",
+        "en": "Topical products also need careful use.\n\n- Topical corticosteroids such as hydrocortisone reduce inflammation; follow strength, site and duration instructions, especially for the face, folds and children.\n- Emollient residue on clothing and bedding increases fire risk; keep away from cigarettes and flames.\n- Do not add antibiotics or mixed creams without assessment; infection needs targeted treatment.\n- Prolonged use, large treated areas or excessive potency can thin skin and cause stretch marks; the clinician selects strength by site and severity."
+      },
+      "reason": [
+        "合并重复的激素与保湿霜对比，先说明药物作用和具体使用条件。",
+        "同节前条已说明类别及人群，此条集中保留具体风险与选择依据。"
+      ],
+      "preserved_medical_conditions": [
+        "药物类别与代表药、面部/皱褶/儿童适用条件和疗程完整保留。",
+        "保留长期/大片/过强三个风险条件、皮肤变薄和纹路；原面部儿童条件已集中到第一条。"
+      ]
+    },
+    {
+      "condition_id": "eczema",
+      "section": "prognosis_followup",
+      "before": {
+        "zh-CN": "湿疹常有缓解和加重交替。\n\n- 很多儿童随着长大改善，但并非人人完全消失。\n- 复诊核对涂药方法、触发因素、睡眠和感染，减少频繁失控。\n- 需要长期计划不代表护理失败，也不应反复自行换强效药。",
+        "en": "Eczema often alternates between improvement and flares.\n\n- Many children improve with age, but it does not disappear for everyone.\n- Reviews check technique, triggers, sleep and infection to improve control.\n- A long-term plan is not a failure and is safer than repeatedly changing potent creams yourself."
+      },
+      "after": {
+        "zh-CN": "湿疹常有缓解和加重交替。\n\n- 很多儿童随着长大改善，但并非人人完全消失。\n- 复诊核对涂药方法、触发因素、睡眠和感染，减少频繁失控。\n- 复诊时制定长期控制计划，调整强效药前咨询医生。",
+        "en": "Eczema often alternates between improvement and flares.\n\n- Many children improve with age, but it does not disappear for everyone.\n- Reviews check technique, triggers, sleep and infection to improve control.\n- Agree on a longer-term control plan at review and consult the clinician before changing potent creams."
+      },
+      "reason": [
+        "以长期管理和改药前咨询替代失败评价。"
+      ],
+      "preserved_medical_conditions": [
+        "保留长期计划及避免自行反复换强效药的行动边界。"
+      ]
+    },
+    {
+      "condition_id": "eczema",
+      "section": "prevention",
+      "before": {
+        "zh-CN": "无法保证预防发病，但可减少部分复发。\n\n- 好转期仍保湿，避免已经明确会刺激自己的产品。\n- 及早按计划处理小范围发作，减少抓挠和感染。\n- 不因担心传染而隔离患者；湿疹本身不传染。",
+        "en": "Initial disease cannot always be prevented, but some flares can be reduced.\n\n- Continue moisturising when better and avoid individually established irritants.\n- Treat small flares according to plan and reduce scratching and infection.\n- Do not isolate someone for eczema itself: it is not contagious."
+      },
+      "after": {
+        "zh-CN": "持续保湿、避开明确诱因并及时处理发作，有助于减少复发。\n\n- 好转期仍保湿，避免已经明确会刺激自己的产品。\n- 及早按计划处理小范围发作，减少抓挠和感染。\n- 不因担心传染而隔离患者；湿疹本身不传染。",
+        "en": "Continued moisturising, avoiding established triggers and treating flares promptly can reduce recurrence.\n\n- Continue moisturising when better and avoid individually established irritants.\n- Treat small flares according to plan and reduce scratching and infection.\n- Do not isolate someone for eczema itself: it is not contagious."
+      },
+      "reason": [
+        "导读先说明可执行的复发预防措施。"
+      ],
+      "preserved_medical_conditions": [
+        "保留有限的降低复发效果，不宣称根治；湿疹不传染的事实保留。"
+      ]
+    },
+    {
+      "condition_id": "epilepsy",
+      "section": "prevention",
+      "before": {
+        "zh-CN": "不一定能预防癫痫本身，但可减少诱发和伤害。\n\n- 避免漏药、过量饮酒及已确认的个人诱因。\n- 维持睡眠，提前准备旅行用药和急救计划。\n- 家属学习正确急救，比按住患者或塞东西进嘴更能保护安全。",
+        "en": "Epilepsy itself is not always preventable, but triggers and injuries can be reduced.\n\n- Avoid missed treatment, excessive alcohol and established personal triggers.\n- Maintain sleep and plan medicines and emergency arrangements for travel.\n- Correct first aid protects better than restraining someone or putting objects in their mouth."
+      },
+      "after": {
+        "zh-CN": "坚持用药、减少已确认的诱因并做好急救准备，有助于降低发作及受伤风险。\n\n- 避免漏药、过量饮酒及已确认的个人诱因。\n- 维持睡眠，提前准备旅行用药和急救计划。\n- 家属学习正确急救，比按住患者或塞东西进嘴更能保护安全。",
+        "en": "Consistent treatment, fewer established triggers and first-aid preparation help reduce seizures and injury.\n\n- Avoid missed treatment, excessive alcohol and established personal triggers.\n- Maintain sleep and plan medicines and emergency arrangements for travel.\n- Correct first aid protects better than restraining someone or putting objects in their mouth."
+      },
+      "reason": [
+        "以诱因管理及伤害预防行动开头，去掉抽象保证式限定。"
+      ],
+      "preserved_medical_conditions": [
+        "不宣称预防或治愈癫痫；个体诱因、漏药和急救禁忌全部保留。"
+      ]
+    },
+    {
+      "condition_id": "fatigue",
+      "section": "red_flags",
+      "before": {
+        "zh-CN": "疲乏伴以下变化不能只休息等待。\n\n- 意识混乱、明显视力异常、尿量很少或突然水肿，应立即联系医疗人员。\n- 伴胸痛、严重气促或晕倒时呼叫急救。\n- 出现自伤或自杀想法需及时危机支持，无法保障安全则急诊求助。",
+        "en": "Do not manage these accompanying changes with rest alone.\n\n- Confusion, marked visual disturbance, very little urine or new swelling needs immediate medical advice.\n- Chest pain, severe breathlessness or collapse warrants emergency services.\n- Self-harm or suicide thoughts need crisis support, with emergency care if safety cannot be maintained."
+      },
+      "after": {
+        "zh-CN": "疲乏伴以下变化时，应按对应的紧急程度求医。\n\n- 意识混乱、明显视力异常、尿量很少或突然水肿，应立即联系医疗人员。\n- 伴胸痛、严重气促或晕倒时呼叫急救。\n- 出现自伤或自杀想法需及时危机支持，无法保障安全则急诊求助。",
+        "en": "Seek care at the urgency indicated for these accompanying changes.\n\n- Confusion, marked visual disturbance, very little urine or new swelling needs immediate medical advice.\n- Chest pain, severe breathlessness or collapse warrants emergency services.\n- Self-harm or suicide thoughts need crisis support, with emergency care if safety cannot be maintained."
+      },
+      "reason": [
+        "以就医行动开头，具体危险分级由下方原有条目给出。"
+      ],
+      "preserved_medical_conditions": [
+        "立即医疗联系、急救及自伤危机支持的条件和行动完全保留。"
+      ]
+    },
+    {
+      "condition_id": "fatigue",
+      "section": "diet",
+      "before": {
+        "zh-CN": "先确保足够且均衡的进食，而不是盲目买补品。\n\n- 规律餐食、适当蛋白质和饮水帮助避免营养及水分不足。\n- 铁或维生素不足需结合病史与检查确认，再讨论补充。\n- 酒精可能损害睡眠，不用酒助眠或靠大量能量饮料维持工作。",
+        "en": "Start with adequate balanced food rather than indiscriminate supplements.\n\n- Regular meals, suitable protein and fluids help avoid inadequate intake.\n- Confirm likely iron or vitamin deficiency from history and tests before replacement.\n- Alcohol can impair sleep; avoid using it for sleep or energy drinks to sustain work."
+      },
+      "after": {
+        "zh-CN": "先确保足够、均衡的进食与适当饮水。\n\n- 规律餐食、适当蛋白质和饮水帮助避免营养及水分不足。\n- 铁或维生素不足需结合病史与检查确认，再讨论补充。\n- 酒精可能损害睡眠，不用酒助眠或靠大量能量饮料维持工作。",
+        "en": "Start with adequate, balanced food and suitable fluids.\n\n- Regular meals, suitable protein and fluids help avoid inadequate intake.\n- Confirm likely iron or vitamin deficiency from history and tests before replacement.\n- Alcohol can impair sleep; avoid using it for sleep or energy drinks to sustain work."
+      },
+      "reason": [
+        "删去对未提出行为的批评，用实际饮食行动开头。"
+      ],
+      "preserved_medical_conditions": [
+        "铁和维生素不足需评估后补充、酒精与能量饮料风险继续保留。"
+      ]
+    },
+    {
+      "condition_id": "fatigue",
+      "section": "prognosis_followup",
+      "before": {
+        "zh-CN": "恢复速度取决于原因及持续时间。\n\n- 生活节律调整后逐步改善可继续观察，但未改善要复诊。\n- 感染恢复、睡眠障碍或慢病可能需要较长管理，不能承诺固定痊愈日期。\n- 随访关注能做的活动、睡眠和新症状，不只问化验正常否。",
+        "en": "Recovery depends on the cause and duration.\n\n- Gradual improvement with routine changes can be observed, but lack of progress needs review.\n- Infection recovery, sleep disorders or chronic illness may need longer care; no fixed recovery date can be promised.\n- Review functioning, sleep and new symptoms alongside test results."
+      },
+      "after": {
+        "zh-CN": "恢复速度取决于原因及持续时间。\n\n- 生活节律调整后逐步改善可继续观察，但未改善要复诊。\n- 感染恢复、睡眠障碍或慢病可能需要较长时间管理。\n- 随访关注能做的活动、睡眠和新症状，不只问化验正常否。",
+        "en": "Recovery depends on the cause and duration.\n\n- Gradual improvement with routine changes can be observed, but lack of progress needs review.\n- Infection recovery, sleep disorders or chronic illness may need longer care.\n- Review functioning, sleep and new symptoms alongside test results."
+      },
+      "reason": [
+        "保留病程差异，删除同句重复的无法承诺声明。"
+      ],
+      "preserved_medical_conditions": [
+        "可能需要较长管理的病程限定、未改善复诊和随访内容均保留。"
+      ]
+    },
+    {
+      "condition_id": "fatigue",
+      "section": "prevention",
+      "before": {
+        "zh-CN": "不能避免全部原因，但可减少部分负担。\n\n- 维持睡眠、均衡饮食和适量活动，避免长期过劳与酒精滥用。\n- 管理已知慢病并定期复核可能影响精力的药物。\n- 持续疲乏时尽早求助，不以意志力代替评估。",
+        "en": "Not every cause is preventable, but some burden can be reduced.\n\n- Maintain sleep, balanced food and suitable activity and avoid chronic overwork or alcohol misuse.\n- Manage known illnesses and review medicines affecting energy.\n- Seek help for persistent fatigue rather than trying to overcome it by willpower alone."
+      },
+      "after": {
+        "zh-CN": "维持合适作息、管理慢病和复核用药，可减少部分疲乏负担。\n\n- 维持睡眠、均衡饮食和适量活动，避免长期过劳与酒精滥用。\n- 管理已知慢病并定期复核可能影响精力的药物。\n- 持续疲乏时尽早求助，不以意志力代替评估。",
+        "en": "Suitable routines, chronic-disease care and medicine review can reduce some fatigue burden.\n\n- Maintain sleep, balanced food and suitable activity and avoid chronic overwork or alcohol misuse.\n- Manage known illnesses and review medicines affecting energy.\n- Seek help for persistent fatigue rather than trying to overcome it by willpower alone."
+      },
+      "reason": [
+        "导读聚焦正文已有的预防行动。"
+      ],
+      "preserved_medical_conditions": [
+        "保留部分负担的收益范围，不把多病因疲乏简化为保证可预防。"
+      ]
+    },
+    {
+      "condition_id": "fever",
+      "section": "prevention",
+      "before": {
+        "zh-CN": "不能预防所有发热，应预防其可避免原因。\n\n- 洗手、通风、食品卫生及按当地建议接种疫苗，可降低部分感染风险。\n- 用药按说明，发生疑似药物相关发热向医生报告。\n- 高温天气防暑，认识热射病与普通发热的处理不同。",
+        "en": "Not every fever can be prevented; reduce preventable causes.\n\n- Hand hygiene, ventilation, food safety and locally recommended vaccines reduce some infections.\n- Use medicines correctly and report suspected medicine-related fever.\n- Prevent overheating and recognise that heatstroke requires different care from routine fever."
+      },
+      "after": {
+        "zh-CN": "预防重点是减少可避免的感染、药物反应和环境过热。\n\n- 洗手、通风、食品卫生及按当地建议接种疫苗，可降低部分感染风险。\n- 用药按说明，发生疑似药物相关发热向医生报告。\n- 高温天气防暑，认识热射病与普通发热的处理不同。",
+        "en": "Prevention focuses on avoidable infections, medicine-related problems and overheating.\n\n- Hand hygiene, ventilation, food safety and locally recommended vaccines reduce some infections.\n- Use medicines correctly and report suspected medicine-related fever.\n- Prevent overheating and recognise that heatstroke requires different care from routine fever."
+      },
+      "reason": [
+        "把普遍无法预防声明改为下方已有的具体原因类别。"
+      ],
+      "preserved_medical_conditions": [
+        "所有感染防护、当地疫苗、药物相关发热报告及热射病处理区别保留。"
+      ]
+    },
+    {
+      "condition_id": "gallstones",
+      "section": "prevention",
+      "before": {
+        "zh-CN": "不能保证不长结石，可减少部分相关风险。\n\n- 保持适合自身的体重，减重采用渐进、可持续方式。\n- 均衡饮食和规律活动有助整体健康，但不能溶解已经存在的结石。\n- 已发作者重视复诊和约定治疗，避免靠短期忌口反复拖延。",
+        "en": "Stones cannot always be prevented, but some risks can be reduced.\n\n- Maintain a suitable weight and use gradual sustainable weight loss.\n- Balanced meals and activity support health but do not dissolve existing stones.\n- After attacks, follow the agreed treatment rather than repeatedly delaying care with temporary food restriction."
+      },
+      "after": {
+        "zh-CN": "管理体重、渐进减重并按计划处理有症状结石，有助于减少相关风险。\n\n- 保持适合自身的体重，减重采用渐进、可持续方式。\n- 均衡饮食和规律活动有助整体健康。\n- 已发作者重视复诊和约定治疗，避免靠短期忌口反复拖延。",
+        "en": "Weight management, gradual weight loss and planned care for symptomatic stones help reduce associated risks.\n\n- Maintain a suitable weight and use gradual sustainable weight loss.\n- Balanced meals and activity support overall health.\n- After attacks, follow the agreed treatment rather than repeatedly delaying care with temporary food restriction."
+      },
+      "reason": [
+        "以已有风险降低措施开头，删除保证式导读。",
+        "饮食不能排石及不能解除堵塞已集中在饮食和治疗节，此处删除重复尾句。"
+      ],
+      "preserved_medical_conditions": [
+        "保留可降低而非消除风险，以及有症状结石应按计划治疗的条件。",
+        "饮食节关于不能可靠排石、排石油风险及堵塞需处理的限制完全保留。"
+      ]
+    },
+    {
+      "condition_id": "gastroenteritis",
+      "section": "medications",
+      "before": {
+        "zh-CN": "止吐和止泻药有适用范围。\n\n- 口服补液盐用于纠正丢水丢盐，不是止泻药，也不要求腹泻立刻停止。\n- 洛哌丁胺等可短暂减轻部分成人腹泻；发热或血便时不要自行使用。\n- 儿童尤其婴幼儿不可照搬成人止泻药方案，严重呕吐由医生决定是否用止吐药。",
+        "en": "Symptom medicines have limits.\n\n- Oral rehydration solution replaces losses rather than immediately stopping diarrhoea.\n- Loperamide may temporarily help selected adults but should not be self-used with fever or bloody stools.\n- Children, especially infants, need separate advice; a clinician decides whether severe vomiting needs medicine."
+      },
+      "after": {
+        "zh-CN": "止吐和止泻药的选择需考虑年龄、症状及是否发热或便血。\n\n- 口服补液盐用于纠正丢水丢盐，不是止泻药，也不要求腹泻立刻停止。\n- 洛哌丁胺等可短暂减轻部分成人腹泻；发热或血便时不要自行使用。\n- 儿童尤其婴幼儿不可照搬成人止泻药方案，严重呕吐由医生决定是否用止吐药。",
+        "en": "Medicine choices depend on age, symptoms, fever and bloody stools.\n\n- Oral rehydration solution replaces losses rather than immediately stopping diarrhoea.\n- Loperamide may temporarily help selected adults but should not be self-used with fever or bloody stools.\n- Children, especially infants, need separate advice; a clinician decides whether severe vomiting needs medicine."
+      },
+      "reason": [
+        "将笼统范围声明改为正文已有的实际选择条件。"
+      ],
+      "preserved_medical_conditions": [
+        "成人洛哌丁胺范围、发热便血禁忌、婴幼儿不同方案和补液盐作用不变。"
+      ]
+    },
+    {
+      "condition_id": "gout",
+      "section": "diet",
+      "before": {
+        "zh-CN": "饮食有助控制，但不是把所有食物都禁掉。\n\n- 减少酒精和含糖饮料，避免暴饮暴食及快速减重。\n- 均衡吃饭，按医生建议识别需要限制的食物；不必用极端节食惩罚自己。\n- 无液体限制时保持足够饮水，心肾病者按团队方案。",
+        "en": "Diet supports control without banning every food.\n\n- Reduce alcohol and sugary drinks and avoid binges or crash diets.\n- Keep meals balanced and discuss relevant food limits rather than extreme restriction.\n- Maintain fluids unless restricted; heart or kidney disease needs an agreed fluid plan."
+      },
+      "after": {
+        "zh-CN": "饮食调整有助控制，重点是减少酒精、含糖饮料和暴饮暴食。\n\n- 减少酒精和含糖饮料，避免暴饮暴食及快速减重。\n- 均衡吃饭，并按医生建议确定需要限制的食物。\n- 无液体限制时保持足够饮水，心肾病者按团队方案。",
+        "en": "Diet supports control, with a focus on reducing alcohol, sugary drinks and binges.\n\n- Reduce alcohol and sugary drinks and avoid binges or crash diets.\n- Keep meals balanced and discuss which foods need limiting.\n- Maintain fluids unless restricted; heart or kidney disease needs an agreed fluid plan."
+      },
+      "reason": [
+        "直接说明本病饮食重点，删除夸张的全部禁食对比。",
+        "删除对读者行为动机的推测，保留专业建议下确定限制范围。"
+      ],
+      "preserved_medical_conditions": [
+        "保留均衡饮食、避免快速减重、适当饮水及心肾病限液条件。",
+        "上一条仍明确避免快速减重；非统一禁食清单的原则保留。"
+      ]
+    },
+    {
+      "condition_id": "heart-failure",
+      "section": "diet",
+      "before": {
+        "zh-CN": "饮食帮助控制积液并维持营养。\n\n- 减少高盐加工食品和过多调味料，盐可能加重水分潴留。\n- 饮水是否限制及限制多少由病情决定，不给所有人同一固定量。\n- 均衡蛋白质和能量，食欲差或消瘦时咨询营养师；含钾代盐和补充剂先核对药物及肾功能。",
+        "en": "Diet helps fluid control while maintaining nutrition.\n\n- Reduce salty processed foods and excess seasoning because sodium can worsen retention.\n- Fluid restriction and its amount depend on the case, not one universal allowance.\n- Maintain protein and energy and seek dietetic advice for poor intake or weight loss; check potassium salt substitutes and supplements against medicines and kidney function."
+      },
+      "after": {
+        "zh-CN": "饮食帮助控制积液并维持营养。\n\n- 减少高盐加工食品和过多调味料，盐可能加重水分潴留。\n- 饮水是否限制及限制多少由病情决定。\n- 均衡蛋白质和能量，食欲差或消瘦时咨询营养师；含钾代盐和补充剂先核对药物及肾功能。",
+        "en": "Diet helps fluid control while maintaining nutrition.\n\n- Reduce salty processed foods and excess seasoning because sodium can worsen retention.\n- Whether and how much to restrict fluids depends on your condition.\n- Maintain protein and energy and seek dietetic advice for poor intake or weight loss; check potassium salt substitutes and supplements against medicines and kidney function."
+      },
+      "reason": [
+        "保留决定因素，删去同义的统一限制否定句。"
+      ],
+      "preserved_medical_conditions": [
+        "限液须结合病情；含钾代盐、肾功能和营养条件全部保留。"
+      ]
+    },
+    {
+      "condition_id": "hemorrhoids",
+      "section": "diet",
+      "before": {
+        "zh-CN": "饮食目标是让大便柔软易排。\n\n- 逐渐增加蔬菜、水果、全谷物等纤维，并按自身情况补足水分。\n- 突然大量加纤维可能胀气，可渐进调整。\n- 不需统一禁掉所有辛辣食物；若某种食物明显刺激自己，可减少，饮食不能替代出血评估。",
+        "en": "Diet aims for soft, easily passed stools.\n\n- Increase vegetables, fruit and whole-grain fibre gradually with suitable fluids.\n- A sudden large fibre increase can cause bloating, so adjust gradually.\n- There is no universal need to ban all spicy food; reduce individual triggers without replacing bleeding assessment."
+      },
+      "after": {
+        "zh-CN": "饮食目标是让大便柔软易排。\n\n- 逐渐增加蔬菜、水果、全谷物等纤维，并按自身情况补足水分。\n- 突然大量加纤维可能胀气，可渐进调整。\n- 不需统一禁掉所有辛辣食物；若某种食物明显刺激自己，可减少。",
+        "en": "Diet aims for soft, easily passed stools.\n\n- Increase vegetables, fruit and whole-grain fibre gradually with suitable fluids.\n- A sudden large fibre increase can cause bloating, so adjust gradually.\n- There is no universal need to ban all spicy food; reduce foods that clearly trigger your symptoms."
+      },
+      "reason": [
+        "饮食条目直接说明适用措施；出血评估已在危险信号、就医和诊断节完整说明。"
+      ],
+      "preserved_medical_conditions": [
+        "纤维渐增、水分适配、个人刺激食物及无需统一禁辣均保留；出血紧急条件未动。"
+      ]
+    },
+    {
+      "condition_id": "hemorrhoids",
+      "section": "prognosis_followup",
+      "before": {
+        "zh-CN": "轻症可数日改善，也可能复发。\n\n- 护理后仍不改善或反复发作，需要确认类型和下一步处理。\n- 手术或门诊操作不能保证永不复发，排便习惯仍重要。\n- 治疗后严重痛、发热或大量出血需及时联系团队。",
+        "en": "Mild symptoms can improve in days but may recur.\n\n- Persistent or repeated problems need reassessment and a next-step plan.\n- Procedures do not guarantee permanent prevention; bowel habits remain important.\n- Severe pain, fever or heavy bleeding after treatment needs prompt contact."
+      },
+      "after": {
+        "zh-CN": "轻症可数日改善，也可能复发。\n\n- 护理后仍不改善或反复发作，需要确认类型和下一步处理。\n- 手术或门诊操作后仍可能复发，需继续保持良好的排便习惯。\n- 治疗后严重痛、发热或大量出血需及时联系团队。",
+        "en": "Mild symptoms can improve in days but may recur.\n\n- Persistent or repeated problems need reassessment and a next-step plan.\n- Piles can recur after procedures, so continue good bowel habits.\n- Severe pain, fever or heavy bleeding after treatment needs prompt contact."
+      },
+      "reason": [
+        "把不能保证改成复发可能性和持续行动。"
+      ],
+      "preserved_medical_conditions": [
+        "术后仍可能复发的实质边界保留，严重痛、发热及大量出血就医条件未动。"
+      ]
+    },
+    {
+      "condition_id": "hemorrhoids",
+      "section": "complications",
+      "before": {
+        "zh-CN": "多数痔症状不危及生命，但不能忽视异常。\n\n- 反复疼痛、瘙痒和渗液可影响生活及皮肤状态。\n- 较多或长期出血需要评估失血影响，并确认真正来源。\n- 剧痛、脓液或发热可能提示需要另行处理的问题，不继续普通自护。",
+        "en": "Most symptoms are not life-threatening, but abnormalities need attention.\n\n- Repeated pain, itching and discharge affect comfort and surrounding skin.\n- Substantial or ongoing bleeding needs assessment of blood loss and its true source.\n- Severe pain, pus or fever may indicate a problem needing separate treatment."
+      },
+      "after": {
+        "zh-CN": "多数痔症状不危及生命，持续不适或出血仍需要处理。\n\n- 反复疼痛、瘙痒和渗液可影响生活及皮肤状态。\n- 较多或长期出血需要评估失血影响，并确认真正来源。\n- 剧痛、脓液或发热可能提示需要另行处理的问题，不继续普通自护。",
+        "en": "Most symptoms are not life-threatening; persistent discomfort or bleeding still needs care.\n\n- Repeated pain, itching and discharge affect comfort and surrounding skin.\n- Substantial or ongoing bleeding needs assessment of blood loss and its true source.\n- Severe pain, pus or fever may indicate a problem needing separate treatment."
+      },
+      "reason": [
+        "将空泛提醒落实到本节已有的持续不适和出血。"
+      ],
+      "preserved_medical_conditions": [
+        "常见问题与严重异常的区别、血损评估及脓液发热升级条件保留。"
+      ]
+    },
+    {
+      "condition_id": "hemorrhoids",
+      "section": "prevention",
+      "before": {
+        "zh-CN": "改善排便习惯有助减少复发。\n\n- 保持适量纤维和水分，及时处理便秘。\n- 不长时间坐便、不屏气用力，活动和体重管理按自身能力安排。\n- 出现新便血时仍需评估，不能把预防护理当作诊断。",
+        "en": "Better bowel habits help reduce recurrence.\n\n- Maintain suitable fibre and fluids and address constipation.\n- Avoid prolonged toilet sitting and straining; use suitable activity and weight management.\n- New bleeding still needs assessment; preventive care is not a diagnosis."
+      },
+      "after": {
+        "zh-CN": "改善排便习惯有助减少复发。\n\n- 保持适量纤维和水分，及时处理便秘。\n- 不长时间坐便、不屏气用力，活动和体重管理按自身能力安排。\n- 出现新便血时仍需评估。",
+        "en": "Better bowel habits help reduce recurrence.\n\n- Maintain suitable fibre and fluids and address constipation.\n- Avoid prolonged toilet sitting and straining; use suitable activity and weight management.\n- New bleeding still needs assessment."
+      },
+      "reason": [
+        "保留行动，删除没有新增信息的自我限定。"
+      ],
+      "preserved_medical_conditions": [
+        "新便血需要评估的条件完整保留。"
+      ]
+    },
+    {
+      "condition_id": "hyperlipidemia",
+      "section": "prognosis_followup",
+      "before": {
+        "zh-CN": "血脂改善是风险管理的一部分，不等于永久治愈。\n\n- 停药后数值可能再升，因此持续时间按风险和医生方案决定。\n- 复查用于观察降脂效果、服药情况及必要的安全化验。\n- 达到目标仍应管理其他危险因素，不能保证完全不发生血管病。",
+        "en": "Improved lipids are part of risk control, not necessarily permanent cure.\n\n- Levels may rise after stopping, so duration follows risk and the agreed plan.\n- Reviews assess lipid response, adherence and indicated safety tests.\n- Manage other risk factors even at target, because vascular risk is not eliminated."
+      },
+      "after": {
+        "zh-CN": "血脂改善是风险管理的一部分，不等于永久治愈。\n\n- 停药后数值可能再升，因此持续时间按风险和医生方案决定。\n- 复查用于观察降脂效果、服药情况及必要的安全化验。\n- 达到血脂目标后仍有血管风险，需要继续管理其他危险因素。",
+        "en": "Improved lipids are part of risk control, not necessarily permanent cure.\n\n- Levels may rise after stopping, so duration follows risk and the agreed plan.\n- Reviews assess lipid response, adherence and indicated safety tests.\n- Vascular risk remains after reaching lipid targets, so continue managing other risk factors."
+      },
+      "reason": [
+        "直接说明残余风险和行动，去除保证式表述。"
+      ],
+      "preserved_medical_conditions": [
+        "达标不等于血管风险消失、随访及停药后反弹信息保留。"
+      ]
+    },
+    {
+      "condition_id": "hyperlipidemia",
+      "section": "prevention",
+      "before": {
+        "zh-CN": "预防包括健康习惯与及早识别遗传风险。\n\n- 均衡饮食、规律活动、戒烟和适合体重有助降低风险。\n- 根据年龄、家族史和疾病安排血脂检查，不等身体有感觉。\n- 家族性病变可能仍需药物，饮食控制失败不代表个人不努力。",
+        "en": "Prevention combines habits with early recognition of inherited risk.\n\n- Balanced food, activity, no smoking and suitable weight reduce risk.\n- Arrange testing based on age, family history and illness rather than symptoms.\n- Inherited disease may still require medicine; diet alone being insufficient is not a personal failure."
+      },
+      "after": {
+        "zh-CN": "预防包括健康习惯与及早识别遗传风险。\n\n- 均衡饮食、规律活动、戒烟和适合体重有助降低风险。\n- 根据年龄、家族史和疾病安排血脂检查，不等身体有感觉。\n- 家族性病变仅靠饮食可能控制不足，可能仍需药物治疗。",
+        "en": "Prevention combines habits with early recognition of inherited risk.\n\n- Balanced food, activity, no smoking and suitable weight reduce risk.\n- Arrange testing based on age, family history and illness rather than symptoms.\n- Diet alone may be insufficient for inherited disease, which may still require medicine."
+      },
+      "reason": [
+        "用遗传性病变的治疗边界替代对个人努力的评价。"
+      ],
+      "preserved_medical_conditions": [
+        "遗传性病变可能需要药物以及饮食措施的局限保留。"
+      ]
+    },
+    {
+      "condition_id": "hypertension",
+      "section": "prognosis_followup",
+      "before": {
+        "zh-CN": "高血压常需要长期管理，控制良好不等于已经消失。\n\n- 随访查看家庭读数、服药情况和不良反应，再决定是否调整方案。\n- 医生按用药和合并疾病安排相关化验；不要只盯血压忽略其他风险。\n- 通过持续控制可降低心脑肾损伤风险，但不能保证完全不发生并发症。",
+        "en": "Hypertension often needs lifelong management; control does not necessarily mean cure.\n\n- Reviews consider home readings, adherence and adverse effects before changing treatment.\n- Laboratory follow-up depends on drugs and other illnesses; do not focus only on the pressure number.\n- Sustained control lowers heart, brain and kidney risk without eliminating it completely."
+      },
+      "after": {
+        "zh-CN": "高血压常需要长期管理，控制良好不等于已经消失。\n\n- 随访查看家庭读数、服药情况和不良反应，再决定是否调整方案。\n- 医生按用药和合并疾病安排相关化验；不要只盯血压忽略其他风险。\n- 持续控制可降低心、脑、肾损伤风险。",
+        "en": "Hypertension often needs lifelong management; control does not necessarily mean cure.\n\n- Reviews consider home readings, adherence and adverse effects before changing treatment.\n- Laboratory follow-up depends on drugs and other illnesses; do not focus only on the pressure number.\n- Sustained control lowers the risk of heart, brain and kidney damage."
+      },
+      "reason": [
+        "将不能保证式重复提醒精简为风险降低这一准确效果表述。"
+      ],
+      "preserved_medical_conditions": [
+        "使用降低风险而非消除风险；本节长期管理、持续化验及并发症节完整保留。"
+      ]
+    },
+    {
+      "condition_id": "hyperthyroidism",
+      "section": "diet",
+      "before": {
+        "zh-CN": "饮食不能替代治疗，重点是避免可能加重病情的过量碘。\n\n- 海带、海藻浓缩补充剂和碘片可能含大量碘；格雷夫斯病等患者先向治疗团队确认是否需要限制。\n- 检查复合维生素及部分止咳药中的碘，不因产品写天然就忽略成分。\n- 这不等于人人需要永久无碘饮食；限制范围和放射性碘前的准备应遵循具体治疗要求。",
+        "en": "Food cannot replace treatment; avoiding iodine excess is a relevant concern.\n\n- Kelp, concentrated seaweed supplements and iodine tablets may contain large amounts. People with Graves' disease and related disorders should ask which sources need limiting.\n- Check multivitamins and some cough medicines for iodine; a natural label does not remove this concern.\n- A permanent iodine-free diet is not required for everyone. Restrictions and preparation for radioiodine should follow the actual treatment plan."
+      },
+      "after": {
+        "zh-CN": "饮食重点是避免可能加重病情的过量碘。\n\n- 海带、海藻浓缩补充剂和碘片可能含大量碘；格雷夫斯病等患者先向治疗团队确认是否需要限制。\n- 检查复合维生素及部分止咳药中的碘，不因产品写天然就忽略成分。\n- 这不等于人人需要永久无碘饮食；限制范围和放射性碘前的准备应遵循具体治疗要求。",
+        "en": "Avoiding iodine excess is an important dietary concern.\n\n- Kelp, concentrated seaweed supplements and iodine tablets may contain large amounts. People with Graves' disease and related disorders should ask which sources need limiting.\n- Check multivitamins and some cough medicines for iodine; a natural label does not remove this concern.\n- A permanent iodine-free diet is not required for everyone. Restrictions and preparation for radioiodine should follow the actual treatment plan."
+      },
+      "reason": [
+        "导读直接给出本病饮食重点。"
+      ],
+      "preserved_medical_conditions": [
+        "格雷夫斯病适用性、补充剂成分及无需永久无碘的范围限制保留。"
+      ]
+    },
+    {
+      "condition_id": "hyperthyroidism",
+      "section": "prevention",
+      "before": {
+        "zh-CN": "自身免疫和家族因素无法完全预防，能做的是减少可避免诱因及并发症。\n\n- 避免自行长期大量服碘或甲状腺激素减肥，使用含碘药物时告知甲状腺病史。\n- 规律治疗和复查有助于减少激素失控；感染或明显病情变化时及时咨询。\n- 备孕前安排评估，使激素和药物计划适合妊娠；这些措施降低风险，不能保证永不复发。",
+        "en": "Autoimmune and inherited susceptibility cannot be fully prevented; focus on avoidable triggers and complications.\n\n- Avoid unsupervised high-dose iodine or thyroid hormone for weight loss, and report thyroid history when iodine-containing medicines are considered.\n- Consistent treatment and testing reduce uncontrolled hormone levels. Seek advice during infection or a substantial clinical change.\n- Arrange pre-pregnancy assessment so hormone control and medicines suit pregnancy. These steps reduce risk without guaranteeing permanent freedom from relapse."
+      },
+      "after": {
+        "zh-CN": "自身免疫和家族因素无法完全预防，能做的是减少可避免诱因及并发症。\n\n- 避免自行长期大量服碘或甲状腺激素减肥，使用含碘药物时告知甲状腺病史。\n- 规律治疗和复查有助于减少激素失控；感染或明显病情变化时及时咨询。\n- 备孕前安排评估，使激素和药物计划适合妊娠。",
+        "en": "Autoimmune and inherited susceptibility cannot be fully prevented; focus on avoidable triggers and complications.\n\n- Avoid unsupervised high-dose iodine or thyroid hormone for weight loss, and report thyroid history when iodine-containing medicines are considered.\n- Consistent treatment and testing reduce uncontrolled hormone levels. Seek advice during infection or a substantial clinical change.\n- Arrange pre-pregnancy assessment so hormone control and medicines suit pregnancy."
+      },
+      "reason": [
+        "删去重复保证式结尾，保留明确的孕前行动；复发条件已在预后节。"
+      ],
+      "preserved_medical_conditions": [
+        "自身免疫与家族因素无法完全预防的边界保留；孕期核对与格雷夫斯病停药复发说明未动。"
+      ]
+    },
+    {
+      "condition_id": "hypothyroidism",
+      "section": "diet",
+      "before": {
+        "zh-CN": "没有一种食物能代替缺少的激素，服药方式比所谓补甲状腺食谱更重要。\n\n- 通常按药品要求空腹服左甲状腺素，早餐或咖啡前留出间隔，保持每天一致。\n- 不要自行大量吃海带或补碘；自身免疫性甲状腺病可能被过量碘加重。\n- 妊娠期碘需求不同，应结合当地饮食、复合维生素和医嘱评估，不能套用他人的限制方案。",
+        "en": "No food replaces missing hormone; administration matters more than a special thyroid diet.\n\n- Follow the product's empty-stomach instructions and allow an interval before breakfast or coffee, consistently each day.\n- Avoid unsupervised high intakes of kelp or iodine supplements; iodine excess can worsen autoimmune thyroid disease.\n- Pregnancy changes iodine needs. Assess local diet and prenatal supplements with the care team rather than copying someone else's restrictions."
+      },
+      "after": {
+        "zh-CN": "食物不能补足缺少的甲状腺激素；饮食方面要关注左甲状腺素的服用时间和碘摄入。\n\n- 通常按药品要求空腹服左甲状腺素，早餐或咖啡前留出间隔，保持每天一致。\n- 不要自行大量吃海带或补碘；自身免疫性甲状腺病可能被过量碘加重。\n- 妊娠期碘需求不同，应结合当地饮食、复合维生素和医嘱评估，不能套用他人的限制方案。",
+        "en": "Food cannot replace missing thyroid hormone; dietary care includes attention to levothyroxine timing and iodine intake.\n\n- Follow the product's empty-stomach instructions and allow an interval before breakfast or coffee, consistently each day.\n- Avoid unsupervised high intakes of kelp or iodine supplements; iodine excess can worsen autoimmune thyroid disease.\n- Pregnancy changes iodine needs. Assess local diet and prenatal supplements with the care team rather than copying someone else's restrictions."
+      },
+      "reason": [
+        "保留食物无法补足甲状腺激素这一具体生理与治疗差别，再直接引出服药时间和碘摄入；仅删除与所谓食谱比较的修辞。"
+      ],
+      "preserved_medical_conditions": [
+        "食物不能替代缺少的甲状腺激素；空腹服用、早餐咖啡间隔、过量碘风险及妊娠地区条件完整保留。"
+      ]
+    },
+    {
+      "condition_id": "hypothyroidism",
+      "section": "daily_care",
+      "before": {
+        "zh-CN": "保持稳定服法，并把生活变化纳入复诊记录。\n\n- 使用固定时间和提醒，记录漏服、新增药物及持续症状，帮助解释化验变化。\n- 复诊带上补充剂清单，尤其铁、钙和生物素；不要因是保健品而略过。\n- 继续正常生活与逐步活动；疲劳明显影响生活时提前复诊，避免自行连续加药追求立即恢复。",
+        "en": "Keep administration consistent and include lifestyle changes in your review record.\n\n- Use reminders and record missed doses, new medicines and persistent symptoms to help interpret results.\n- Bring supplements, particularly iron, calcium and biotin, to medication review; supplements still matter.\n- Continue ordinary life and gradual activity. Request earlier review if fatigue substantially impairs function instead of repeatedly increasing medicine yourself."
+      },
+      "after": {
+        "zh-CN": "保持稳定服法，并把生活变化纳入复诊记录。\n\n- 使用固定时间和提醒，记录漏服、新增药物及持续症状，帮助解释化验变化。\n- 复诊带上补充剂清单，尤其铁、钙和生物素。\n- 继续正常生活与逐步活动；疲劳明显影响生活时提前复诊，避免自行连续加药追求立即恢复。",
+        "en": "Keep administration consistent and include lifestyle changes in your review record.\n\n- Use reminders and record missed doses, new medicines and persistent symptoms to help interpret results.\n- Bring a supplement list, particularly iron, calcium and biotin, to medication review.\n- Continue ordinary life and gradual activity. Request earlier review if fatigue substantially impairs function instead of repeatedly increasing medicine yourself."
+      },
+      "reason": [
+        "保留具体清单行动，去除重复提醒。"
+      ],
+      "preserved_medical_conditions": [
+        "铁钙相互作用、生物素干扰检查的说明在药物与诊断节保留。"
+      ]
+    },
+    {
+      "condition_id": "hypothyroidism",
+      "section": "prevention",
+      "before": {
+        "zh-CN": "多数自身免疫性或治疗后的甲减无法靠生活方式完全避免。\n\n- 甲状腺手术、放射性碘或相关药物治疗后按计划检查，早发现激素不足。\n- 不自行大量补碘或购买激素减肥；饮食中碘需求应结合地区和个人情况判断。\n- 已确诊后保持服药、复查与孕前咨询，重点预防失控和并发症，而非承诺根治病因。",
+        "en": "Most autoimmune or treatment-related hypothyroidism cannot be entirely prevented by lifestyle.\n\n- Follow testing after thyroid surgery, radioiodine or relevant medicines to identify deficiency early.\n- Avoid high-dose iodine or thyroid hormone for weight loss; iodine needs depend on local and individual circumstances.\n- After diagnosis, consistent treatment, monitoring and pre-pregnancy advice help prevent poor control and complications without claiming to remove the underlying cause."
+      },
+      "after": {
+        "zh-CN": "多数自身免疫性或治疗后的甲减无法靠生活方式完全避免。\n\n- 甲状腺手术、放射性碘或相关药物治疗后按计划检查，早发现激素不足。\n- 不自行大量补碘或购买激素减肥；饮食中碘需求应结合地区和个人情况判断。\n- 已确诊后保持服药、复查与孕前咨询，重点预防失控和并发症。",
+        "en": "Most autoimmune or treatment-related hypothyroidism cannot be entirely prevented by lifestyle.\n\n- Follow testing after thyroid surgery, radioiodine or relevant medicines to identify deficiency early.\n- Avoid high-dose iodine or thyroid hormone for weight loss; iodine needs depend on local and individual circumstances.\n- After diagnosis, consistent treatment, monitoring and pre-pregnancy advice help prevent poor control and complications."
+      },
+      "reason": [
+        "删除作者承诺式自我限定，保留行动与目的。"
+      ],
+      "preserved_medical_conditions": [
+        "多数病因不能靠生活方式完全避免的实际边界及孕前咨询保留。"
+      ]
+    },
+    {
+      "condition_id": "ibs",
+      "section": "treatment",
+      "before": {
+        "zh-CN": "目标是减少腹痛和排便困扰，找到能持续执行的生活方案。\n\n- 治疗按腹泻型、便秘型或混合表现选择；解决便秘的药不能机械用于腹泻发作。\n- 饮食调整、运动、睡眠和放松可一起尝试，每次改变有限项目以便判断效果。\n- 症状持续时可讨论针对肠道的心理治疗，例如认知行为治疗，学习调整与症状相关的反应；这不表示疾病是假想的。",
+        "en": "Treatment aims to reduce pain and bowel disruption with a sustainable plan.\n\n- Choices depend on diarrhoea, constipation or a mixed pattern. A constipation treatment should not automatically be used during diarrhoea.\n- Food changes, activity, sleep and relaxation may work together; limited changes at a time make effects easier to assess.\n- Persistent symptoms may benefit from gut-focused psychological treatment, such as cognitive behavioural therapy to change symptom-related responses. This does not imply imaginary illness."
+      },
+      "after": {
+        "zh-CN": "目标是减少腹痛和排便困扰，找到能持续执行的生活方案。\n\n- 治疗按腹泻型、便秘型或混合表现选择；解决便秘的药不能机械用于腹泻发作。\n- 饮食调整、运动、睡眠和放松可一起尝试，每次改变有限项目以便判断效果。\n- 症状持续时可讨论针对肠道的心理治疗，例如认知行为治疗，学习调整与症状相关的反应。",
+        "en": "Treatment aims to reduce pain and bowel disruption with a sustainable plan.\n\n- Choices depend on diarrhoea, constipation or a mixed pattern. A constipation treatment should not automatically be used during diarrhoea.\n- Food changes, activity, sleep and relaxation may work together; limited changes at a time make effects easier to assess.\n- Persistent symptoms may benefit from gut-focused psychological treatment, such as cognitive behavioural therapy to change symptom-related responses."
+      },
+      "reason": [
+        "保留心理治疗的具体作用；真实症状的解释已在概览和诊断节，删去再次辩解。"
+      ],
+      "preserved_medical_conditions": [
+        "持续症状适用条件、分型治疗和认知行为治疗目的保留。"
+      ]
+    },
+    {
+      "condition_id": "ibs",
+      "section": "daily_care",
+      "before": {
+        "zh-CN": "用简明记录帮助发现规律，不需要把每天变成复杂实验。\n\n- 记下腹痛时间、排便次数和形态、食物及压力变化，带给复诊医生。\n- 保持规律进餐、适量运动和放松时间，避免跳餐后一次吃很多。\n- 尝试调整时观察排便和生活功能是否改善；便血、发热或体重下降时停止自行归因并就医。",
+        "en": "A simple diary can reveal patterns without turning every day into an experiment.\n\n- Record pain timing, stool frequency and consistency, meals and stress changes for follow-up.\n- Keep regular meals, suitable activity and relaxation time; avoid skipping meals and then eating large amounts.\n- Judge changes by bowel symptoms and daily function. Bleeding, fever or weight loss should end self-attribution and trigger assessment."
+      },
+      "after": {
+        "zh-CN": "用简明记录帮助发现症状规律。\n\n- 记下腹痛时间、排便次数和形态、食物及压力变化，带给复诊医生。\n- 保持规律进餐、适量运动和放松时间，避免跳餐后一次吃很多。\n- 尝试调整时观察排便和生活功能是否改善；便血、发热或体重下降时停止自行归因并就医。",
+        "en": "A simple diary can reveal symptom patterns.\n\n- Record pain timing, stool frequency and consistency, meals and stress changes for follow-up.\n- Keep regular meals, suitable activity and relaxation time; avoid skipping meals and then eating large amounts.\n- Judge changes by bowel symptoms and daily function. Bleeding, fever or weight loss should end self-attribution and trigger assessment."
+      },
+      "reason": [
+        "删除修辞对比，直接说明记录用途。"
+      ],
+      "preserved_medical_conditions": [
+        "记录项、生活措施以及便血发热消瘦就医条件保留。"
+      ]
+    },
+    {
+      "condition_id": "ibs",
+      "section": "prognosis_followup",
+      "before": {
+        "zh-CN": "IBS 常有好转和复发阶段，管理方案也可能需要调整。\n\n- 复诊关注腹痛、排便、营养和生活受影响程度，而不只是次数。\n- 一种方法无效不代表所有治疗都无效；可以结合记录调整饮食或主要症状药物。\n- 以往稳定后出现新的警示变化，应重新评估其他疾病，不因多年诊断而免除检查。",
+        "en": "IBS often fluctuates, and management may need revision.\n\n- Follow-up considers pain, bowel function, nutrition and effects on life, not frequency alone.\n- One unsuccessful intervention does not mean every treatment will fail; use records to revise diet or symptom-targeted medicines.\n- New warning features after a stable period require reassessment for other disease despite a longstanding diagnosis."
+      },
+      "after": {
+        "zh-CN": "IBS 常有好转和复发阶段，管理方案也可能需要调整。\n\n- 复诊关注腹痛、排便、营养和生活受影响程度，而不只是次数。\n- 某种方法无效时，可结合记录调整饮食或针对主要症状的药物。\n- 以往稳定后出现新的警示变化，应重新评估其他疾病，不因多年诊断而免除检查。",
+        "en": "IBS often fluctuates, and management may need revision.\n\n- Follow-up considers pain, bowel function, nutrition and effects on life, not frequency alone.\n- If an intervention does not help, use records to revise diet or symptom-targeted medicines.\n- New warning features after a stable period require reassessment for other disease despite a longstanding diagnosis."
+      },
+      "reason": [
+        "用方法无效后的具体行动替代泛化安慰。"
+      ],
+      "preserved_medical_conditions": [
+        "方案需调整的范围和新危险变化重新评估条件保留。"
+      ]
+    },
+    {
+      "condition_id": "ibs",
+      "section": "prevention",
+      "before": {
+        "zh-CN": "没有保证不患 IBS 的方法，重点是减少已知诱因和不必要的限制。\n\n- 维持规律进餐、活动和睡眠，找到对自己有效的压力处理方式。\n- 只限制反复与症状相关且经过合理试验的食物，定期尝试恢复可耐受选择。\n- 记录复发模式并提前讨论应对计划；预防发作不等于可以忽视新危险信号。",
+        "en": "There is no guaranteed prevention; focus on known triggers and avoiding unnecessary restrictions.\n\n- Maintain regular meals, activity and sleep and a workable way to manage stress.\n- Restrict foods only after a reasonable trial shows a repeated association, and periodically restore tolerated choices.\n- Track recurrence and agree a plan in advance. Flare prevention does not remove the need to act on new warning signs."
+      },
+      "after": {
+        "zh-CN": "预防发作的重点是减少已知诱因和不必要的饮食限制。\n\n- 维持规律进餐、活动和睡眠，找到对自己有效的压力处理方式。\n- 只限制反复与症状相关且经过合理试验的食物，定期尝试恢复可耐受选择。\n- 记录复发模式并提前讨论应对计划；出现新危险信号时及时就医。",
+        "en": "Flare prevention focuses on known triggers and avoiding unnecessary dietary restrictions.\n\n- Maintain regular meals, activity and sleep and a workable way to manage stress.\n- Restrict foods only after a reasonable trial shows a repeated association, and periodically restore tolerated choices.\n- Track recurrence and agree a plan in advance. Seek timely care for new warning signs."
+      },
+      "reason": [
+        "明确本节为减少发作的措施，删除无保证式开场。",
+        "把否定式重复提醒转为明确就医行动。"
+      ],
+      "preserved_medical_conditions": [
+        "未宣称可避免首次发生；诱因记录、食物逐步加回及警示变化评估保留。",
+        "新危险信号仍需医疗评估，相关紧急级别由危险信号节保持。"
+      ]
+    },
+    {
+      "condition_id": "influenza",
+      "section": "medications",
+      "before": {
+        "zh-CN": "不同流感药适用对象不同，不能把一种药的规则套给另一种。\n\n- 奥司他韦是常见处方抗病毒药，可引起恶心或呕吐；吸入扎那米韦可诱发喘鸣，不适合哮喘等呼吸问题者。\n- 玛巴洛沙韦等药的妊娠、哺乳和重症使用有限制，须按当地批准信息及医生判断选药。\n- 复方感冒药可能已含对乙酰氨基酚，避免重复服用；按 NHS 建议，16 岁以下不自行用阿司匹林。",
+        "en": "Flu medicines differ in suitability; one drug's rules do not apply to all.\n\n- Oseltamivir is a common prescription antiviral and can cause nausea or vomiting. Inhaled zanamivir can cause wheezing and is unsuitable for people with breathing problems such as asthma.\n- Baloxavir and other agents have pregnancy, breastfeeding or severe-illness restrictions; use local product information and clinical advice.\n- Combination cold remedies may already contain paracetamol/acetaminophen, so avoid duplication. NHS advice is not to give aspirin independently to children under 16."
+      },
+      "after": {
+        "zh-CN": "不同流感药的适用对象和风险不同。\n\n- 奥司他韦是常见处方抗病毒药，可引起恶心或呕吐；吸入扎那米韦可诱发喘鸣，不适合哮喘等呼吸问题者。\n- 玛巴洛沙韦等药的妊娠、哺乳和重症使用有限制，须按当地批准信息及医生判断选药。\n- 复方感冒药可能已含对乙酰氨基酚，避免重复服用；按 NHS 建议，16 岁以下不自行用阿司匹林。",
+        "en": "Flu medicines differ in suitability and risks.\n\n- Oseltamivir is a common prescription antiviral and can cause nausea or vomiting. Inhaled zanamivir can cause wheezing and is unsuitable for people with breathing problems such as asthma.\n- Baloxavir and other agents have pregnancy, breastfeeding or severe-illness restrictions; use local product information and clinical advice.\n- Combination cold remedies may already contain paracetamol/acetaminophen, so avoid duplication. NHS advice is not to give aspirin independently to children under 16."
+      },
+      "reason": [
+        "导读保留选药差异，删除同义复述。"
+      ],
+      "preserved_medical_conditions": [
+        "奥司他韦、扎那米韦、玛巴洛沙韦、16 岁以下阿司匹林及重复成分风险完整保留。"
+      ]
+    },
+    {
+      "condition_id": "influenza",
+      "section": "diet",
+      "before": {
+        "zh-CN": "没有已证实能替代疫苗或抗病毒治疗的特效食物。\n\n- 补充液体以避免口干、尿少和脱水，可少量多次饮用；能否正常饮水是观察重点。\n- 食欲下降时选择容易接受的日常食物，恢复进食比强迫大量进补更实际。\n- 持续呕吐、喝不进去或尿明显减少要就医；有心肾疾病限液要求者，先咨询如何调整饮水。",
+        "en": "No special food is established as a replacement for vaccination or antiviral treatment.\n\n- Drink regularly, using small frequent amounts if needed, to prevent dry mouth, reduced urination and dehydration. Ability to drink is an important observation.\n- When appetite is low, choose tolerated ordinary foods and return to usual intake as able.\n- Persistent vomiting, inability to drink or markedly reduced urine needs assessment. People with prescribed fluid restrictions for heart or kidney disease should ask how to adjust intake."
+      },
+      "after": {
+        "zh-CN": "饮食照护重点是补充液体并维持能够耐受的进食。\n\n- 补充液体以避免口干、尿少和脱水，可少量多次饮用；能否正常饮水是观察重点。\n- 食欲下降时选择容易接受的日常食物，恢复进食比强迫大量进补更实际。\n- 持续呕吐、喝不进去或尿明显减少要就医；有心肾疾病限液要求者，先咨询如何调整饮水。",
+        "en": "Dietary care focuses on fluids and tolerated food intake.\n\n- Drink regularly, using small frequent amounts if needed, to prevent dry mouth, reduced urination and dehydration. Ability to drink is an important observation.\n- When appetite is low, choose tolerated ordinary foods and return to usual intake as able.\n- Persistent vomiting, inability to drink or markedly reduced urine needs assessment. People with prescribed fluid restrictions for heart or kidney disease should ask how to adjust intake."
+      },
+      "reason": [
+        "用本节实际护理目标替代与治疗和预防节重复的替代性声明。"
+      ],
+      "preserved_medical_conditions": [
+        "补液、小量多次、无法进食饮水的就医条件及心肾限液边界保留。"
+      ]
+    },
+    {
+      "condition_id": "influenza",
+      "section": "prevention",
+      "before": {
+        "zh-CN": "预防同时包括疫苗和减少传播，任何一种措施都不能保证完全不感染。\n\n- 按当地年度建议接种流感疫苗，尤其关注老年人、孕妇和慢性病者的适用安排。\n- 生病时减少近距离接触、做好咳嗽和手卫生，可降低传给家人和同事的机会。\n- 抗病毒药不能代替疫苗；接种后仍可能患病，出现危险信号同样需要就医。\n- 改善室内通风、在合适场景佩戴贴合口罩，可进一步减少吸入或传播感染颗粒，尤其照护易发生重症者时。",
+        "en": "Prevention combines vaccination and transmission reduction; neither guarantees complete protection.\n\n- Follow local annual vaccination advice, including arrangements for older adults, pregnancy and chronic conditions.\n- Reducing close contact while ill and practising cough and hand hygiene lowers opportunities to infect others.\n- Antivirals do not replace vaccination. Illness can still occur after vaccination, and warning signs still require care.\n- Better indoor ventilation and a well-fitting mask in appropriate settings can further reduce inhaling or spreading infectious particles, particularly while caring for people at greater risk."
+      },
+      "after": {
+        "zh-CN": "预防同时包括疫苗和减少传播。\n\n- 按当地年度建议接种流感疫苗，尤其关注老年人、孕妇和慢性病者的适用安排。\n- 生病时减少近距离接触、做好咳嗽和手卫生，可降低传给家人和同事的机会。\n- 抗病毒药不能代替疫苗；接种后仍可能患病，出现危险信号同样需要就医。\n- 改善室内通风、在合适场景佩戴贴合口罩，可进一步减少吸入或传播感染颗粒，尤其照护易发生重症者时。",
+        "en": "Prevention combines vaccination and transmission reduction.\n\n- Follow local annual vaccination advice, including arrangements for older adults, pregnancy and chronic conditions.\n- Reducing close contact while ill and practising cough and hand hygiene lowers opportunities to infect others.\n- Antivirals do not replace vaccination. Illness can still occur after vaccination, and warning signs still require care.\n- Better indoor ventilation and a well-fitting mask in appropriate settings can further reduce inhaling or spreading infectious particles, particularly while caring for people at greater risk."
+      },
+      "reason": [
+        "删除同节重复的不能保证导读。"
+      ],
+      "preserved_medical_conditions": [
+        "第三条仍明确接种后可能患病、危险信号需就医，疫苗与抗病毒药角色区别保留。"
+      ]
+    },
+    {
+      "condition_id": "insomnia",
+      "section": "medications",
+      "before": {
+        "zh-CN": "不同助眠药作用途径不同，选择要考虑次日清醒程度、其他疾病和正在服的药。\n\n- Z 类药物如唑吡坦、苯二氮䓬类药物可帮助入睡，但可能造成次日困倦；后者还可能形成依赖，不能自行加量或与酒精混用。\n- 其他处方药可作用于睡眠节律或清醒信号。是否适合取决于具体药物；“新药”也不等于没有风险。\n- 含抗组胺成分的非处方助眠药也会使人困倦。褪黑素补充剂治疗一般失眠的证据并不充分，也可能有副作用和相互作用。\n- 开始或停用前带齐药物、保健品清单咨询医生或药师；出现危险信号节的异常睡眠行为需立即处理。",
+        "en": "Sleeping medicines work through different pathways; suitability depends on next-day alertness, other conditions and concurrent medicines.\n\n- Z-drugs such as zolpidem and benzodiazepines may help sleep but can cause next-day drowsiness. Benzodiazepines can also cause dependence; do not increase doses yourself or combine them with alcohol.\n- Other prescriptions act on sleep timing or wakefulness signals. Suitability is drug-specific; newer does not mean risk-free.\n- Nonprescription antihistamine sleep aids also cause drowsiness. Evidence for melatonin supplements in general insomnia is limited, and side effects or interactions remain possible.\n- Review medicines and supplements with a clinician or pharmacist before starting or stopping treatment; act immediately on the unusual sleep behaviors described under warning signs."
+      },
+      "after": {
+        "zh-CN": "不同助眠药作用途径不同，选择要考虑次日清醒程度、其他疾病和正在服的药。\n\n- Z 类药物如唑吡坦、苯二氮䓬类药物可帮助入睡，但可能造成次日困倦；后者还可能形成依赖，不能自行加量或与酒精混用。\n- 其他处方药可作用于睡眠节律或清醒信号。是否适合取决于具体药物。\n- 含抗组胺成分的非处方助眠药也会使人困倦。褪黑素补充剂治疗一般失眠的证据并不充分，也可能有副作用和相互作用。\n- 开始或停用前带齐药物、保健品清单咨询医生或药师；出现危险信号节的异常睡眠行为需立即处理。",
+        "en": "Sleeping medicines work through different pathways; suitability depends on next-day alertness, other conditions and concurrent medicines.\n\n- Z-drugs such as zolpidem and benzodiazepines may help sleep but can cause next-day drowsiness. Benzodiazepines can also cause dependence; do not increase doses yourself or combine them with alcohol.\n- Other prescriptions act on sleep timing or wakefulness signals. Suitability is drug-specific.\n- Nonprescription antihistamine sleep aids also cause drowsiness. Evidence for melatonin supplements in general insomnia is limited, and side effects or interactions remain possible.\n- Review medicines and supplements with a clinician or pharmacist before starting or stopping treatment; act immediately on the unusual sleep behaviors described under warning signs."
+      },
+      "reason": [
+        "删除新药不等于无风险的泛化提醒，保留具体药物风险和适用条件。"
+      ],
+      "preserved_medical_conditions": [
+        "次日困倦、依赖、酒精禁忌、褪黑素证据限制、异常睡眠行为行动全部保留。"
+      ]
+    },
+    {
+      "condition_id": "insomnia",
+      "section": "diet",
+      "before": {
+        "zh-CN": "重点是减少妨碍睡眠的饮食行为，没有一种食物能代替失眠治疗。\n\n- 留意咖啡、浓茶、能量饮料中的咖啡因，特别是接近睡前使用后是否更难入睡；可在日记中记录。\n- 酒精可能让人较快困倦，却使后半夜睡眠更浅、更易醒，不能当助眠办法。\n- 睡前避免很大的餐食；若夜间经常上厕所，可与医生讨论饮水时间，同时保持白天合理补水。不要为了睡觉自行长期限水。",
+        "en": "Focus on eating and drinking habits that interfere with sleep; no food substitutes for insomnia treatment.\n\n- Notice caffeine in coffee, strong tea and energy drinks, especially close to bedtime; record whether it delays sleep.\n- Alcohol may initially feel sedating but can make later sleep lighter and more fragmented, so it is not a sleep treatment.\n- Avoid very large meals near bedtime. For frequent night-time urination, discuss drink timing while maintaining reasonable daytime hydration; do not impose prolonged fluid restriction to sleep."
+      },
+      "after": {
+        "zh-CN": "重点是减少妨碍睡眠的饮食行为。\n\n- 留意咖啡、浓茶、能量饮料中的咖啡因，特别是接近睡前使用后是否更难入睡；可在日记中记录。\n- 酒精可能让人较快困倦，却使后半夜睡眠更浅、更易醒，不能当助眠办法。\n- 睡前避免很大的餐食；若夜间经常上厕所，可与医生讨论饮水时间，同时保持白天合理补水。不要为了睡觉自行长期限水。",
+        "en": "Focus on eating and drinking habits that interfere with sleep.\n\n- Notice caffeine in coffee, strong tea and energy drinks, especially close to bedtime; record whether it delays sleep.\n- Alcohol may initially feel sedating but can make later sleep lighter and more fragmented, so it is not a sleep treatment.\n- Avoid very large meals near bedtime. For frequent night-time urination, discuss drink timing while maintaining reasonable daytime hydration; do not impose prolonged fluid restriction to sleep."
+      },
+      "reason": [
+        "导读直接说明饮食行动重点，删除重复的替代性限定。"
+      ],
+      "preserved_medical_conditions": [
+        "咖啡因时机、酒精睡眠影响、餐量和不可自行长期限水等条件未动。"
+      ]
+    },
+    {
+      "condition_id": "iron-deficiency-anemia",
+      "section": "medications",
+      "before": {
+        "zh-CN": "铁剂提供造血原料，不是所有疲劳或所有贫血都适用。\n\n- 硫酸亚铁等口服铁常见副作用为恶心、胃不适、便秘或腹泻；难以坚持时咨询换用方式，不自行加量“补得快”。\n- 铁剂会影响部分药物吸收，也可能受钙等补充剂影响。把所有药物和保健品交给药师核对，并按具体产品安排间隔。\n- 复合维生素可能已经含铁，避免重复补充；铁剂必须放在儿童拿不到的地方。静脉补铁需在医疗安排下进行，不能用来替代查找出血原因。",
+        "en": "Iron supplies material for blood production; it is not appropriate for every cause of fatigue or anemia.\n\n- Oral preparations such as ferrous sulfate can cause nausea, stomach discomfort, constipation or diarrhea. Discuss alternative use if these prevent adherence rather than increasing the dose for faster results.\n- Iron can interfere with absorption of some medicines and can be affected by calcium supplements. Have a pharmacist review all medicines and supplements and advise product-specific spacing.\n- Multivitamins may already contain iron, so avoid duplicate supplementation and keep iron inaccessible to children. Intravenous iron requires clinical arrangements and does not replace investigation of bleeding."
+      },
+      "after": {
+        "zh-CN": "铁剂提供造血原料，不是所有疲劳或所有贫血都适用。\n\n- 硫酸亚铁等口服铁常见副作用为恶心、胃不适、便秘或腹泻；难以坚持时咨询换用方式，不自行加量“补得快”。\n- 铁剂会影响部分药物吸收，也可能受钙等补充剂影响。把所有药物和保健品交给药师核对，并按具体产品安排间隔。\n- 复合维生素可能已经含铁，避免重复补充；铁剂必须放在儿童拿不到的地方。静脉补铁需在医疗安排下进行，并继续查找出血原因。",
+        "en": "Iron supplies material for blood production; it is not appropriate for every cause of fatigue or anemia.\n\n- Oral preparations such as ferrous sulfate can cause nausea, stomach discomfort, constipation or diarrhea. Discuss alternative use if these prevent adherence rather than increasing the dose for faster results.\n- Iron can interfere with absorption of some medicines and can be affected by calcium supplements. Have a pharmacist review all medicines and supplements and advise product-specific spacing.\n- Multivitamins may already contain iron, so avoid duplicate supplementation and keep iron inaccessible to children. Intravenous iron requires clinical arrangements alongside investigation of bleeding."
+      },
+      "reason": [
+        "将不能替代转为两项并行行动，保留病因检查。"
+      ],
+      "preserved_medical_conditions": [
+        "口服铁副作用、相互作用、重复补充、儿童中毒预防、静脉治疗安排和出血调查均保留。"
+      ]
+    },
+    {
+      "condition_id": "kidney-stones",
+      "section": "prognosis_followup",
+      "before": {
+        "zh-CN": "许多小结石可以自行排出，但以后仍可能再次形成。\n\n- 排出时间取决于大小和位置，不能承诺几天一定排出；疼痛持续或反复时按原计划复诊，危险变化立即就医。\n- 复诊可能查看影像、结石分析或尿液成分。部分人需收集 24 小时尿液，以了解一天排尿量和成石物质。\n- 复发预防措施依据结果调整；长期坚持合适饮食与补水，比只在疼痛时临时处理更有意义。",
+        "en": "Many small stones pass, but new stones can form later.\n\n- Passage time depends on size and location; it cannot be guaranteed within a fixed number of days. Persistent or recurring pain needs planned review, while warning signs require immediate care.\n- Follow-up may assess imaging, stone analysis or urine composition. Some people collect urine for 24 hours to measure daily volume and stone-forming substances.\n- Prevention is adjusted to these findings; sustained suitable diet and hydration matter beyond treating each painful episode."
+      },
+      "after": {
+        "zh-CN": "许多小结石可以自行排出，但以后仍可能再次形成。\n\n- 排出时间随结石大小和位置而异；疼痛持续或反复时按原计划复诊，危险变化立即就医。\n- 复诊可能查看影像、结石分析或尿液成分。部分人需收集 24 小时尿液，以了解一天排尿量和成石物质。\n- 复发预防措施依据结果调整；长期坚持合适饮食与补水，比只在疼痛时临时处理更有意义。",
+        "en": "Many small stones pass, but new stones can form later.\n\n- Passage time varies with stone size and location. Persistent or recurring pain needs planned review, while warning signs require immediate care.\n- Follow-up may assess imaging, stone analysis or urine composition. Some people collect urine for 24 hours to measure daily volume and stone-forming substances.\n- Prevention is adjusted to these findings; sustained suitable diet and hydration matter beyond treating each painful episode."
+      },
+      "reason": [
+        "以病程差异直接表达不确定性，删除作者承诺式表述。"
+      ],
+      "preserved_medical_conditions": [
+        "大小位置决定病程、持续疼痛复诊、危险变化即就医及 24 小时尿检用途保留。"
+      ]
+    },
+    {
+      "condition_id": "kidney-stones",
+      "section": "prevention",
+      "before": {
+        "zh-CN": "减少第一次发生、减少复发及避免恶化，需要不同层面的措施。\n\n- 平时维持合适补水，减少过量盐及动物蛋白；高温或活动量变化时与自身情况一起调整。\n- 已有结石者保存成分报告，按类型制定饮食和必要的药物方案，同时处理尿路感染等可改变因素。\n- 家族或遗传倾向不能完全消除，措施也不能保证永不复发。新出现发热、排尿受阻或剧痛时及时就医，是避免严重后果的一部分。",
+        "en": "Preventing a first stone, reducing recurrence and preventing deterioration involve different measures.\n\n- Maintain suitable hydration and avoid excess salt and animal protein, adapting to heat and activity in the context of your health.\n- After a stone, retain its composition report and use type-specific dietary and, when needed, medication plans; address modifiable problems such as urinary infection.\n- Family or inherited susceptibility cannot be eliminated, and prevention cannot guarantee no recurrence. Prompt care for fever, blocked urination or severe pain helps prevent serious consequences."
+      },
+      "after": {
+        "zh-CN": "减少第一次发生、减少复发及避免恶化，需要不同层面的措施。\n\n- 平时维持合适补水，减少过量盐及动物蛋白；高温或活动量变化时与自身情况一起调整。\n- 已有结石者保存成分报告，按类型制定饮食和必要的药物方案，同时处理尿路感染等可改变因素。\n- 家族或遗传倾向仍会影响复发风险。新出现发热、排尿受阻或剧痛时及时就医，是避免严重后果的一部分。",
+        "en": "Preventing a first stone, reducing recurrence and preventing deterioration involve different measures.\n\n- Maintain suitable hydration and avoid excess salt and animal protein, adapting to heat and activity in the context of your health.\n- After a stone, retain its composition report and use type-specific dietary and, when needed, medication plans; address modifiable problems such as urinary infection.\n- Family or inherited susceptibility continues to affect recurrence risk. Prompt care for fever, blocked urination or severe pain helps prevent serious consequences."
+      },
+      "reason": [
+        "以残余风险知识替代两次保证式否定。"
+      ],
+      "preserved_medical_conditions": [
+        "家族遗传相关复发风险及发热、排尿受阻、剧痛及时就医条件完整保留。"
+      ]
+    }
+  ],
+  "unchanged_topics": [
+    {
+      "condition_id": "heatstroke",
+      "reason": "14 节中英均已阅读。现有否定表达承载热射病立即急救、不可先等 30 分钟、意识不清不得喂水、退热药不能代替降温、体温测量局限及回归热环境限制；没有需要删除的无事实价值自我限定。"
+    }
+  ],
+  "preserved_boundaries": [
+    "仅精简写法；未新增药物剂量、疾病治疗方案或数值阈值。",
+    "诊断与检查局限、证据不确定性、儿童孕期条件、禁忌和危险行动保留。",
+    "保留胃肠炎概览中的感染性疾病范围；保留干眼补充剂结论对应的已核对资料范围。",
+    "缺铁性贫血的 Small amounts of gastrointestinal bleeding 既有修正保持不变。",
+    "来源、review、limitations、适用性及其他所有非 text 数据未修改；本轮不构建、不签审、不提交。",
+    "甲减饮食保留食物无法补足缺少激素的生理治疗差别；肾结石饮食保留果汁或排石餐不能替代阻塞感染治疗的具体误区边界。"
+  ],
+  "verification": {
+    "all_24_json_parse": true,
+    "only_section_text_diff": true,
+    "metadata_matches_baseline": true,
+    "numeric_tokens_unchanged_in_edited_sections": true,
+    "list_item_counts_preserved": true,
+    "unmodified_sections_unchanged": true,
+    "bilingual_change_pairs_reviewed": true,
+    "medical_limitations": "本轮为文案精简审查，不新增医学主张，也不构成新的临床签审。"
+  },
+  "retained_sections_after_review": [
+    {
+      "condition_id": "kidney-stones",
+      "section": "diet",
+      "reason": "果汁或排石餐不能替代阻塞与感染治疗是具体医学误区边界，恢复原中英文全文；此字段不计入最终改动。",
+      "retained_text": {
+        "zh-CN": "预防饮食要先知道结石类型，不应统一停钙或把所有食物列入禁忌。\n\n- 合理补水有助于稀释尿液；需要限水的肾病患者应先确认目标，不能机械照搬别人的饮水量。\n- 减少高盐加工食品、咸酱料及过量动物蛋白，可根据结石类型进一步调整。\n- 草酸钙结石者可能需要减少菠菜、部分坚果等高草酸食物；正常食物钙可在肠道结合草酸，随意完全停钙反而不合适。\n- 尿酸结石者重点可能是减少过量肉类、内脏等。没有一种果汁或“排石餐”能替代处理阻塞与感染。",
+        "en": "Prevention diets depend on stone type; universal calcium avoidance or long food-ban lists are inappropriate.\n\n- Suitable hydration dilutes urine. People with kidney disease requiring fluid limits need an agreed target rather than copying someone else’s intake.\n- Reduce heavily salted processed foods, salty sauces and excessive animal protein, with further changes tailored to stone type.\n- Calcium-oxalate stone formers may need to reduce high-oxalate foods such as spinach or some nuts. Normal food calcium binds oxalate in the gut, so eliminating calcium is inappropriate.\n- Uric-acid stones may call for reducing excessive meat and organ meats. No juice or “stone-cleansing meal” replaces treatment of obstruction or infection."
+      }
+    }
+  ]
+}

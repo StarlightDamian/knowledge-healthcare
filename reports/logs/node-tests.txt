@@ -1,0 +1,1930 @@
+TAP version 13
+# Subtest: csv injection/=HYPERLINK("x")
+ok 1 - csv injection/=HYPERLINK("x")
+  ---
+  duration_ms: 2.129293
+  type: 'test'
+  ...
+# Subtest: csv injection/+SUM(1)
+ok 2 - csv injection/+SUM(1)
+  ---
+  duration_ms: 0.425402
+  type: 'test'
+  ...
+# Subtest: csv injection/-1+2
+ok 3 - csv injection/-1+2
+  ---
+  duration_ms: 0.203398
+  type: 'test'
+  ...
+# Subtest: csv injection/@cmd
+ok 4 - csv injection/@cmd
+  ---
+  duration_ms: 0.202716
+  type: 'test'
+  ...
+# Subtest: csv injection/\\t=SUM(1)
+ok 5 - csv injection/\\t=SUM(1)
+  ---
+  duration_ms: 0.204291
+  type: 'test'
+  ...
+# Subtest: csv injection/   =x
+ok 6 - csv injection/   =x
+  ---
+  duration_ms: 0.229456
+  type: 'test'
+  ...
+# Subtest: csv injection/＝x
+ok 7 - csv injection/＝x
+  ---
+  duration_ms: 0.280567
+  type: 'test'
+  ...
+# Subtest: csv commas quotes linebreaks
+ok 8 - csv commas quotes linebreaks
+  ---
+  duration_ms: 0.475462
+  type: 'test'
+  ...
+# Subtest: missing csv value
+ok 9 - missing csv value
+  ---
+  duration_ms: 0.662303
+  type: 'test'
+  ...
+# Subtest: unsafe-url/javascript:alert(1)
+ok 10 - unsafe-url/javascript:alert(1)
+  ---
+  duration_ms: 1.036337
+  type: 'test'
+  ...
+# Subtest: unsafe-url/http://example.com
+ok 11 - unsafe-url/http://example.com
+  ---
+  duration_ms: 0.351065
+  type: 'test'
+  ...
+# Subtest: unsafe-url/data:text/html,x
+ok 12 - unsafe-url/data:text/html,x
+  ---
+  duration_ms: 0.166023
+  type: 'test'
+  ...
+# Subtest: unsafe-url/https://user:password@example.com
+ok 13 - unsafe-url/https://user:password@example.com
+  ---
+  duration_ms: 0.222268
+  type: 'test'
+  ...
+# Subtest: unsafe-url/not a url
+ok 14 - unsafe-url/not a url
+  ---
+  duration_ms: 0.29673
+  type: 'test'
+  ...
+# Subtest: https links accepted
+ok 15 - https links accepted
+  ---
+  duration_ms: 0.235382
+  type: 'test'
+  ...
+# Subtest: export includes review state and BOM
+ok 16 - export includes review state and BOM
+  ---
+  duration_ms: 6.811713
+  type: 'test'
+  ...
+# Subtest: alert/胸痛 呼吸困难
+ok 17 - alert/胸痛 呼吸困难
+  ---
+  duration_ms: 20.882327
+  type: 'test'
+  ...
+# Subtest: alert/胸口痛 持续 冷汗
+ok 18 - alert/胸口痛 持续 冷汗
+  ---
+  duration_ms: 0.831079
+  type: 'test'
+  ...
+# Subtest: alert/persistent chest pain
+ok 19 - alert/persistent chest pain
+  ---
+  duration_ms: 1.03783
+  type: 'test'
+  ...
+# Subtest: alert/chest pain and sweating
+ok 20 - alert/chest pain and sweating
+  ---
+  duration_ms: 0.874988
+  type: 'test'
+  ...
+# Subtest: alert/喘不过气
+ok 21 - alert/喘不过气
+  ---
+  duration_ms: 1.058935
+  type: 'test'
+  ...
+# Subtest: alert/cannot breathe
+ok 22 - alert/cannot breathe
+  ---
+  duration_ms: 0.960334
+  type: 'test'
+  ...
+# Subtest: alert/blue lips
+ok 23 - alert/blue lips
+  ---
+  duration_ms: 5.468161
+  type: 'test'
+  ...
+# Subtest: alert/没有胸痛，有呼吸困难
+ok 24 - alert/没有胸痛，有呼吸困难
+  ---
+  duration_ms: 0.581005
+  type: 'test'
+  ...
+# Subtest: alert/no chest pain but severe shortness of breath
+ok 25 - alert/no chest pain but severe shortness of breath
+  ---
+  duration_ms: 1.040718
+  type: 'test'
+  ...
+# Subtest: alert/突然一侧无力，说话不清
+ok 26 - alert/突然一侧无力，说话不清
+  ---
+  duration_ms: 0.882624
+  type: 'test'
+  ...
+# Subtest: alert/slurred speech
+ok 27 - alert/slurred speech
+  ---
+  duration_ms: 0.565922
+  type: 'test'
+  ...
+# Subtest: alert/face drooping
+ok 28 - alert/face drooping
+  ---
+  duration_ms: 0.570289
+  type: 'test'
+  ...
+# Subtest: alert/不是没有胸痛，胸痛持续
+ok 29 - alert/不是没有胸痛，胸痛持续
+  ---
+  duration_ms: 0.450406
+  type: 'test'
+  ...
+# Subtest: alert/喉咙肿胀
+ok 30 - alert/喉咙肿胀
+  ---
+  duration_ms: 0.375631
+  type: 'test'
+  ...
+# Subtest: alert/tongue swelling
+ok 31 - alert/tongue swelling
+  ---
+  duration_ms: 0.349043
+  type: 'test'
+  ...
+# Subtest: alert/throat swelling
+ok 32 - alert/throat swelling
+  ---
+  duration_ms: 0.234201
+  type: 'test'
+  ...
+# Subtest: alert/突然剧烈头痛
+ok 33 - alert/突然剧烈头痛
+  ---
+  duration_ms: 0.16505
+  type: 'test'
+  ...
+# Subtest: alert/thunderclap headache
+ok 34 - alert/thunderclap headache
+  ---
+  duration_ms: 0.699335
+  type: 'test'
+  ...
+# Subtest: alert/worst headache of my life
+ok 35 - alert/worst headache of my life
+  ---
+  duration_ms: 0.855823
+  type: 'test'
+  ...
+# Subtest: alert/想伤害自己
+ok 36 - alert/想伤害自己
+  ---
+  duration_ms: 0.780865
+  type: 'test'
+  ...
+# Subtest: alert/我想自杀
+ok 37 - alert/我想自杀
+  ---
+  duration_ms: 0.786752
+  type: 'test'
+  ...
+# Subtest: alert/want to kill myself
+ok 38 - alert/want to kill myself
+  ---
+  duration_ms: 1.006595
+  type: 'test'
+  ...
+# Subtest: alert/怀孕 腹痛 出血
+ok 39 - alert/怀孕 腹痛 出血
+  ---
+  duration_ms: 3.788793
+  type: 'test'
+  ...
+# Subtest: alert/pregnant and bleeding
+ok 40 - alert/pregnant and bleeding
+  ---
+  duration_ms: 1.328782
+  type: 'test'
+  ...
+# Subtest: alert/pregnancy severe pain
+ok 41 - alert/pregnancy severe pain
+  ---
+  duration_ms: 0.920005
+  type: 'test'
+  ...
+# Subtest: alert/腰痛 会阴麻木
+ok 42 - alert/腰痛 会阴麻木
+  ---
+  duration_ms: 0.871818
+  type: 'test'
+  ...
+# Subtest: alert/back pain urinary retention
+ok 43 - alert/back pain urinary retention
+  ---
+  duration_ms: 1.101545
+  type: 'test'
+  ...
+# Subtest: alert/背痛 尿不出
+ok 44 - alert/背痛 尿不出
+  ---
+  duration_ms: 0.942765
+  type: 'test'
+  ...
+# Subtest: alert/高温 意识混乱
+ok 45 - alert/高温 意识混乱
+  ---
+  duration_ms: 2.870193
+  type: 'test'
+  ...
+# Subtest: alert/heat and confusion
+ok 46 - alert/heat and confusion
+  ---
+  duration_ms: 0.485336
+  type: 'test'
+  ...
+# Subtest: alert/hot environment collapse
+ok 47 - alert/hot environment collapse
+  ---
+  duration_ms: 0.415693
+  type: 'test'
+  ...
+# Subtest: alert/大量出血 晕厥
+ok 48 - alert/大量出血 晕厥
+  ---
+  duration_ms: 0.411718
+  type: 'test'
+  ...
+# Subtest: alert/heavy bleeding will not stop
+ok 49 - alert/heavy bleeding will not stop
+  ---
+  duration_ms: 0.454531
+  type: 'test'
+  ...
+# Subtest: alert/vomiting blood and fainting
+ok 50 - alert/vomiting blood and fainting
+  ---
+  duration_ms: 0.424407
+  type: 'test'
+  ...
+# Subtest: alert/2个月婴儿发烧
+ok 51 - alert/2个月婴儿发烧
+  ---
+  duration_ms: 0.365908
+  type: 'test'
+  ...
+# Subtest: alert/newborn fever
+ok 52 - alert/newborn fever
+  ---
+  duration_ms: 0.348062
+  type: 'test'
+  ...
+# Subtest: alert/1 month old fever
+ok 53 - alert/1 month old fever
+  ---
+  duration_ms: 0.405457
+  type: 'test'
+  ...
+# Subtest: alert/产后 剧烈头痛
+ok 54 - alert/产后 剧烈头痛
+  ---
+  duration_ms: 0.346934
+  type: 'test'
+  ...
+# Subtest: alert/pregnant severe headache
+ok 55 - alert/pregnant severe headache
+  ---
+  duration_ms: 1.019707
+  type: 'test'
+  ...
+# Subtest: alert/postpartum vision changes
+ok 56 - alert/postpartum vision changes
+  ---
+  duration_ms: 1.190156
+  type: 'test'
+  ...
+# Subtest: no-phrase-match/没有胸痛，只有咳嗽
+ok 57 - no-phrase-match/没有胸痛，只有咳嗽
+  ---
+  duration_ms: 1.23311
+  type: 'test'
+  ...
+# Subtest: no-phrase-match/no chest pain, only cough
+ok 58 - no-phrase-match/no chest pain, only cough
+  ---
+  duration_ms: 1.248276
+  type: 'test'
+  ...
+# Subtest: no-phrase-match/没有呼吸困难
+ok 59 - no-phrase-match/没有呼吸困难
+  ---
+  duration_ms: 1.105184
+  type: 'test'
+  ...
+# Subtest: no-phrase-match/no difficulty breathing
+ok 60 - no-phrase-match/no difficulty breathing
+  ---
+  duration_ms: 2.281235
+  type: 'test'
+  ...
+# Subtest: no-phrase-match/without tongue swelling
+ok 61 - no-phrase-match/without tongue swelling
+  ---
+  duration_ms: 1.055343
+  type: 'test'
+  ...
+# Subtest: no-phrase-match/否认喉咙肿胀
+ok 62 - no-phrase-match/否认喉咙肿胀
+  ---
+  duration_ms: 0.778074
+  type: 'test'
+  ...
+# Subtest: no-phrase-match/普通感冒
+ok 63 - no-phrase-match/普通感冒
+  ---
+  duration_ms: 1.091838
+  type: 'test'
+  ...
+# Subtest: no-phrase-match/轻微鼻塞
+ok 64 - no-phrase-match/轻微鼻塞
+  ---
+  duration_ms: 0.825575
+  type: 'test'
+  ...
+# Subtest: no-phrase-match/PMOS
+ok 65 - no-phrase-match/PMOS
+  ---
+  duration_ms: 0.912926
+  type: 'test'
+  ...
+# Subtest: no-phrase-match/skin itching
+ok 66 - no-phrase-match/skin itching
+  ---
+  duration_ms: 2.203466
+  type: 'test'
+  ...
+# Subtest: no-phrase-match/cheating confusion
+ok 67 - no-phrase-match/cheating confusion
+  ---
+  duration_ms: 0.36587
+  type: 'test'
+  ...
+# Subtest: no-phrase-match/no slurred speech
+ok 68 - no-phrase-match/no slurred speech
+  ---
+  duration_ms: 0.313147
+  type: 'test'
+  ...
+# Subtest: no-phrase-match/没有发烧
+ok 69 - no-phrase-match/没有发烧
+  ---
+  duration_ms: 0.254465
+  type: 'test'
+  ...
+# Subtest: no-phrase-match/no fever
+ok 70 - no-phrase-match/no fever
+  ---
+  duration_ms: 0.30199
+  type: 'test'
+  ...
+# Subtest: no-phrase-match/dry eyes
+ok 71 - no-phrase-match/dry eyes
+  ---
+  duration_ms: 0.254546
+  type: 'test'
+  ...
+# Subtest: no-phrase-match/no chest pain and no sweating
+ok 72 - no-phrase-match/no chest pain and no sweating
+  ---
+  duration_ms: 0.382038
+  type: 'test'
+  ...
+# Subtest: structured young infant 38
+ok 73 - structured young infant 38
+  ---
+  duration_ms: 0.393763
+  type: 'test'
+  ...
+# Subtest: exactly 3 months does not use under-3 threshold
+ok 74 - exactly 3 months does not use under-3 threshold
+  ---
+  duration_ms: 0.304932
+  type: 'test'
+  ...
+# Subtest: blank numeric inputs are not zero
+ok 75 - blank numeric inputs are not zero
+  ---
+  duration_ms: 0.352478
+  type: 'test'
+  ...
+# Subtest: invalid negative age
+ok 76 - invalid negative age
+  ---
+  duration_ms: 2.893125
+  type: 'test'
+  ...
+# Subtest: NaN never qualifies
+ok 77 - NaN never qualifies
+  ---
+  duration_ms: 0.332186
+  type: 'test'
+  ...
+# Subtest: normal young infant temperature does not trigger fever threshold
+ok 78 - normal young infant temperature does not trigger fever threshold
+  ---
+  duration_ms: 0.287125
+  type: 'test'
+  ...
+# Subtest: empty query is not a clinical all-clear
+ok 79 - empty query is not a clinical all-clear
+  ---
+  duration_ms: 0.415111
+  type: 'test'
+  ...
+# Subtest: rules honestly disclose draft state
+ok 80 - rules honestly disclose draft state
+  ---
+  duration_ms: 0.340583
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/acne
+ok 81 - exact-name/zh-CN/acne
+  ---
+  duration_ms: 15.195425
+  type: 'test'
+  ...
+# Subtest: exact-name/en/acne
+ok 82 - exact-name/en/acne
+  ---
+  duration_ms: 22.476633
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/allergic-rhinitis
+ok 83 - exact-name/zh-CN/allergic-rhinitis
+  ---
+  duration_ms: 3.361111
+  type: 'test'
+  ...
+# Subtest: exact-name/en/allergic-rhinitis
+ok 84 - exact-name/en/allergic-rhinitis
+  ---
+  duration_ms: 19.279252
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/anaphylaxis
+ok 85 - exact-name/zh-CN/anaphylaxis
+  ---
+  duration_ms: 24.263337
+  type: 'test'
+  ...
+# Subtest: exact-name/en/anaphylaxis
+ok 86 - exact-name/en/anaphylaxis
+  ---
+  duration_ms: 9.560399
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/animal-bite
+ok 87 - exact-name/zh-CN/animal-bite
+  ---
+  duration_ms: 4.353473
+  type: 'test'
+  ...
+# Subtest: exact-name/en/animal-bite
+ok 88 - exact-name/en/animal-bite
+  ---
+  duration_ms: 4.308212
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/ankle-sprain
+ok 89 - exact-name/zh-CN/ankle-sprain
+  ---
+  duration_ms: 10.65316
+  type: 'test'
+  ...
+# Subtest: exact-name/en/ankle-sprain
+ok 90 - exact-name/en/ankle-sprain
+  ---
+  duration_ms: 8.233705
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/anxiety
+ok 91 - exact-name/zh-CN/anxiety
+  ---
+  duration_ms: 3.354882
+  type: 'test'
+  ...
+# Subtest: exact-name/en/anxiety
+ok 92 - exact-name/en/anxiety
+  ---
+  duration_ms: 1.716868
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/appendicitis
+ok 93 - exact-name/zh-CN/appendicitis
+  ---
+  duration_ms: 1.332792
+  type: 'test'
+  ...
+# Subtest: exact-name/en/appendicitis
+ok 94 - exact-name/en/appendicitis
+  ---
+  duration_ms: 1.337102
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/asthma
+ok 95 - exact-name/zh-CN/asthma
+  ---
+  duration_ms: 1.730464
+  type: 'test'
+  ...
+# Subtest: exact-name/en/asthma
+ok 96 - exact-name/en/asthma
+  ---
+  duration_ms: 1.345048
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/athletes-foot
+ok 97 - exact-name/zh-CN/athletes-foot
+  ---
+  duration_ms: 1.278948
+  type: 'test'
+  ...
+# Subtest: exact-name/en/athletes-foot
+ok 98 - exact-name/en/athletes-foot
+  ---
+  duration_ms: 1.417183
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/atrial-fibrillation
+ok 99 - exact-name/zh-CN/atrial-fibrillation
+  ---
+  duration_ms: 1.408178
+  type: 'test'
+  ...
+# Subtest: exact-name/en/atrial-fibrillation
+ok 100 - exact-name/en/atrial-fibrillation
+  ---
+  duration_ms: 1.914939
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/breast-cancer
+ok 101 - exact-name/zh-CN/breast-cancer
+  ---
+  duration_ms: 1.387289
+  type: 'test'
+  ...
+# Subtest: exact-name/en/breast-cancer
+ok 102 - exact-name/en/breast-cancer
+  ---
+  duration_ms: 1.47574
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/burns
+ok 103 - exact-name/zh-CN/burns
+  ---
+  duration_ms: 1.315141
+  type: 'test'
+  ...
+# Subtest: exact-name/en/burns
+ok 104 - exact-name/en/burns
+  ---
+  duration_ms: 2.425656
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/chest-pain
+ok 105 - exact-name/zh-CN/chest-pain
+  ---
+  duration_ms: 1.423812
+  type: 'test'
+  ...
+# Subtest: exact-name/en/chest-pain
+ok 106 - exact-name/en/chest-pain
+  ---
+  duration_ms: 19.823355
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/chronic-kidney-disease
+ok 107 - exact-name/zh-CN/chronic-kidney-disease
+  ---
+  duration_ms: 2.028113
+  type: 'test'
+  ...
+# Subtest: exact-name/en/chronic-kidney-disease
+ok 108 - exact-name/en/chronic-kidney-disease
+  ---
+  duration_ms: 1.969101
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/colorectal-cancer
+ok 109 - exact-name/zh-CN/colorectal-cancer
+  ---
+  duration_ms: 2.726812
+  type: 'test'
+  ...
+# Subtest: exact-name/en/colorectal-cancer
+ok 110 - exact-name/en/colorectal-cancer
+  ---
+  duration_ms: 1.636348
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/common-cold
+ok 111 - exact-name/zh-CN/common-cold
+  ---
+  duration_ms: 1.582131
+  type: 'test'
+  ...
+# Subtest: exact-name/en/common-cold
+ok 112 - exact-name/en/common-cold
+  ---
+  duration_ms: 1.515442
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/conjunctivitis
+ok 113 - exact-name/zh-CN/conjunctivitis
+  ---
+  duration_ms: 2.058715
+  type: 'test'
+  ...
+# Subtest: exact-name/en/conjunctivitis
+ok 114 - exact-name/en/conjunctivitis
+  ---
+  duration_ms: 1.395167
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/constipation
+ok 115 - exact-name/zh-CN/constipation
+  ---
+  duration_ms: 1.532197
+  type: 'test'
+  ...
+# Subtest: exact-name/en/constipation
+ok 116 - exact-name/en/constipation
+  ---
+  duration_ms: 1.659876
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/copd
+ok 117 - exact-name/zh-CN/copd
+  ---
+  duration_ms: 1.57592
+  type: 'test'
+  ...
+# Subtest: exact-name/en/copd
+ok 118 - exact-name/en/copd
+  ---
+  duration_ms: 2.882879
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/coronary-heart-disease
+ok 119 - exact-name/zh-CN/coronary-heart-disease
+  ---
+  duration_ms: 1.31287
+  type: 'test'
+  ...
+# Subtest: exact-name/en/coronary-heart-disease
+ok 120 - exact-name/en/coronary-heart-disease
+  ---
+  duration_ms: 1.709849
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/covid-19
+ok 121 - exact-name/zh-CN/covid-19
+  ---
+  duration_ms: 1.378538
+  type: 'test'
+  ...
+# Subtest: exact-name/en/covid-19
+ok 122 - exact-name/en/covid-19
+  ---
+  duration_ms: 1.666076
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/cystic-fibrosis
+ok 123 - exact-name/zh-CN/cystic-fibrosis
+  ---
+  duration_ms: 1.400455
+  type: 'test'
+  ...
+# Subtest: exact-name/en/cystic-fibrosis
+ok 124 - exact-name/en/cystic-fibrosis
+  ---
+  duration_ms: 1.444296
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/deep-vein-thrombosis
+ok 125 - exact-name/zh-CN/deep-vein-thrombosis
+  ---
+  duration_ms: 2.52845
+  type: 'test'
+  ...
+# Subtest: exact-name/en/deep-vein-thrombosis
+ok 126 - exact-name/en/deep-vein-thrombosis
+  ---
+  duration_ms: 1.416207
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/dehydration
+ok 127 - exact-name/zh-CN/dehydration
+  ---
+  duration_ms: 1.799293
+  type: 'test'
+  ...
+# Subtest: exact-name/en/dehydration
+ok 128 - exact-name/en/dehydration
+  ---
+  duration_ms: 1.174848
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/dental-abscess
+ok 129 - exact-name/zh-CN/dental-abscess
+  ---
+  duration_ms: 1.270183
+  type: 'test'
+  ...
+# Subtest: exact-name/en/dental-abscess
+ok 130 - exact-name/en/dental-abscess
+  ---
+  duration_ms: 1.356968
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/depression
+ok 131 - exact-name/zh-CN/depression
+  ---
+  duration_ms: 1.225596
+  type: 'test'
+  ...
+# Subtest: exact-name/en/depression
+ok 132 - exact-name/en/depression
+  ---
+  duration_ms: 1.738362
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/dizziness
+ok 133 - exact-name/zh-CN/dizziness
+  ---
+  duration_ms: 1.391416
+  type: 'test'
+  ...
+# Subtest: exact-name/en/dizziness
+ok 134 - exact-name/en/dizziness
+  ---
+  duration_ms: 1.240917
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/dry-eye
+ok 135 - exact-name/zh-CN/dry-eye
+  ---
+  duration_ms: 1.218826
+  type: 'test'
+  ...
+# Subtest: exact-name/en/dry-eye
+ok 136 - exact-name/en/dry-eye
+  ---
+  duration_ms: 1.747001
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/ectopic-pregnancy
+ok 137 - exact-name/zh-CN/ectopic-pregnancy
+  ---
+  duration_ms: 1.254569
+  type: 'test'
+  ...
+# Subtest: exact-name/en/ectopic-pregnancy
+ok 138 - exact-name/en/ectopic-pregnancy
+  ---
+  duration_ms: 1.308593
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/eczema
+ok 139 - exact-name/zh-CN/eczema
+  ---
+  duration_ms: 1.272669
+  type: 'test'
+  ...
+# Subtest: exact-name/en/eczema
+ok 140 - exact-name/en/eczema
+  ---
+  duration_ms: 1.346595
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/epilepsy
+ok 141 - exact-name/zh-CN/epilepsy
+  ---
+  duration_ms: 1.642972
+  type: 'test'
+  ...
+# Subtest: exact-name/en/epilepsy
+ok 142 - exact-name/en/epilepsy
+  ---
+  duration_ms: 1.143304
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/fatigue
+ok 143 - exact-name/zh-CN/fatigue
+  ---
+  duration_ms: 1.252657
+  type: 'test'
+  ...
+# Subtest: exact-name/en/fatigue
+ok 144 - exact-name/en/fatigue
+  ---
+  duration_ms: 1.18897
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/fever
+ok 145 - exact-name/zh-CN/fever
+  ---
+  duration_ms: 1.21271
+  type: 'test'
+  ...
+# Subtest: exact-name/en/fever
+ok 146 - exact-name/en/fever
+  ---
+  duration_ms: 1.529666
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/gallstones
+ok 147 - exact-name/zh-CN/gallstones
+  ---
+  duration_ms: 1.243542
+  type: 'test'
+  ...
+# Subtest: exact-name/en/gallstones
+ok 148 - exact-name/en/gallstones
+  ---
+  duration_ms: 1.167192
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/gastroenteritis
+ok 149 - exact-name/zh-CN/gastroenteritis
+  ---
+  duration_ms: 1.258088
+  type: 'test'
+  ...
+# Subtest: exact-name/en/gastroenteritis
+ok 150 - exact-name/en/gastroenteritis
+  ---
+  duration_ms: 1.736197
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/gout
+ok 151 - exact-name/zh-CN/gout
+  ---
+  duration_ms: 1.205033
+  type: 'test'
+  ...
+# Subtest: exact-name/en/gout
+ok 152 - exact-name/en/gout
+  ---
+  duration_ms: 1.105694
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/heart-failure
+ok 153 - exact-name/zh-CN/heart-failure
+  ---
+  duration_ms: 1.259845
+  type: 'test'
+  ...
+# Subtest: exact-name/en/heart-failure
+ok 154 - exact-name/en/heart-failure
+  ---
+  duration_ms: 1.309072
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/heatstroke
+ok 155 - exact-name/zh-CN/heatstroke
+  ---
+  duration_ms: 2.290663
+  type: 'test'
+  ...
+# Subtest: exact-name/en/heatstroke
+ok 156 - exact-name/en/heatstroke
+  ---
+  duration_ms: 1.643633
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/hemorrhoids
+ok 157 - exact-name/zh-CN/hemorrhoids
+  ---
+  duration_ms: 1.178591
+  type: 'test'
+  ...
+# Subtest: exact-name/en/hemorrhoids
+ok 158 - exact-name/en/hemorrhoids
+  ---
+  duration_ms: 1.166081
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/hyperlipidemia
+ok 159 - exact-name/zh-CN/hyperlipidemia
+  ---
+  duration_ms: 1.297941
+  type: 'test'
+  ...
+# Subtest: exact-name/en/hyperlipidemia
+ok 160 - exact-name/en/hyperlipidemia
+  ---
+  duration_ms: 1.746309
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/hypertension
+ok 161 - exact-name/zh-CN/hypertension
+  ---
+  duration_ms: 1.260995
+  type: 'test'
+  ...
+# Subtest: exact-name/en/hypertension
+ok 162 - exact-name/en/hypertension
+  ---
+  duration_ms: 1.529306
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/hyperthyroidism
+ok 163 - exact-name/zh-CN/hyperthyroidism
+  ---
+  duration_ms: 1.432195
+  type: 'test'
+  ...
+# Subtest: exact-name/en/hyperthyroidism
+ok 164 - exact-name/en/hyperthyroidism
+  ---
+  duration_ms: 1.90437
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/hypothyroidism
+ok 165 - exact-name/zh-CN/hypothyroidism
+  ---
+  duration_ms: 1.419041
+  type: 'test'
+  ...
+# Subtest: exact-name/en/hypothyroidism
+ok 166 - exact-name/en/hypothyroidism
+  ---
+  duration_ms: 1.340413
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/ibs
+ok 167 - exact-name/zh-CN/ibs
+  ---
+  duration_ms: 1.406444
+  type: 'test'
+  ...
+# Subtest: exact-name/en/ibs
+ok 168 - exact-name/en/ibs
+  ---
+  duration_ms: 1.527215
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/influenza
+ok 169 - exact-name/zh-CN/influenza
+  ---
+  duration_ms: 1.745713
+  type: 'test'
+  ...
+# Subtest: exact-name/en/influenza
+ok 170 - exact-name/en/influenza
+  ---
+  duration_ms: 1.246721
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/insomnia
+ok 171 - exact-name/zh-CN/insomnia
+  ---
+  duration_ms: 1.296718
+  type: 'test'
+  ...
+# Subtest: exact-name/en/insomnia
+ok 172 - exact-name/en/insomnia
+  ---
+  duration_ms: 1.257096
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/iron-deficiency-anemia
+ok 173 - exact-name/zh-CN/iron-deficiency-anemia
+  ---
+  duration_ms: 1.34571
+  type: 'test'
+  ...
+# Subtest: exact-name/en/iron-deficiency-anemia
+ok 174 - exact-name/en/iron-deficiency-anemia
+  ---
+  duration_ms: 1.849934
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/kidney-stones
+ok 175 - exact-name/zh-CN/kidney-stones
+  ---
+  duration_ms: 1.652865
+  type: 'test'
+  ...
+# Subtest: exact-name/en/kidney-stones
+ok 176 - exact-name/en/kidney-stones
+  ---
+  duration_ms: 1.402614
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/low-back-pain
+ok 177 - exact-name/zh-CN/low-back-pain
+  ---
+  duration_ms: 1.473379
+  type: 'test'
+  ...
+# Subtest: exact-name/en/low-back-pain
+ok 178 - exact-name/en/low-back-pain
+  ---
+  duration_ms: 2.088066
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/lower-uti
+ok 179 - exact-name/zh-CN/lower-uti
+  ---
+  duration_ms: 1.414433
+  type: 'test'
+  ...
+# Subtest: exact-name/en/lower-uti
+ok 180 - exact-name/en/lower-uti
+  ---
+  duration_ms: 1.677232
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/migraine
+ok 181 - exact-name/zh-CN/migraine
+  ---
+  duration_ms: 1.52528
+  type: 'test'
+  ...
+# Subtest: exact-name/en/migraine
+ok 182 - exact-name/en/migraine
+  ---
+  duration_ms: 1.896022
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/obesity
+ok 183 - exact-name/zh-CN/obesity
+  ---
+  duration_ms: 1.290584
+  type: 'test'
+  ...
+# Subtest: exact-name/en/obesity
+ok 184 - exact-name/en/obesity
+  ---
+  duration_ms: 1.221881
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/osteoarthritis
+ok 185 - exact-name/zh-CN/osteoarthritis
+  ---
+  duration_ms: 1.882381
+  type: 'test'
+  ...
+# Subtest: exact-name/en/osteoarthritis
+ok 186 - exact-name/en/osteoarthritis
+  ---
+  duration_ms: 1.303103
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/otitis-media
+ok 187 - exact-name/zh-CN/otitis-media
+  ---
+  duration_ms: 1.83313
+  type: 'test'
+  ...
+# Subtest: exact-name/en/otitis-media
+ok 188 - exact-name/en/otitis-media
+  ---
+  duration_ms: 1.408467
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/pcos
+ok 189 - exact-name/zh-CN/pcos
+  ---
+  duration_ms: 1.38923
+  type: 'test'
+  ...
+# Subtest: exact-name/en/pcos
+ok 190 - exact-name/en/pcos
+  ---
+  duration_ms: 1.585506
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/peptic-ulcer
+ok 191 - exact-name/zh-CN/peptic-ulcer
+  ---
+  duration_ms: 1.33718
+  type: 'test'
+  ...
+# Subtest: exact-name/en/peptic-ulcer
+ok 192 - exact-name/en/peptic-ulcer
+  ---
+  duration_ms: 1.920681
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/period-pain
+ok 193 - exact-name/zh-CN/period-pain
+  ---
+  duration_ms: 1.257697
+  type: 'test'
+  ...
+# Subtest: exact-name/en/period-pain
+ok 194 - exact-name/en/period-pain
+  ---
+  duration_ms: 1.373126
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/peripheral-neuropathy
+ok 195 - exact-name/zh-CN/peripheral-neuropathy
+  ---
+  duration_ms: 1.409667
+  type: 'test'
+  ...
+# Subtest: exact-name/en/peripheral-neuropathy
+ok 196 - exact-name/en/peripheral-neuropathy
+  ---
+  duration_ms: 1.815664
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/pneumonia
+ok 197 - exact-name/zh-CN/pneumonia
+  ---
+  duration_ms: 1.320532
+  type: 'test'
+  ...
+# Subtest: exact-name/en/pneumonia
+ok 198 - exact-name/en/pneumonia
+  ---
+  duration_ms: 1.22596
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/preeclampsia
+ok 199 - exact-name/zh-CN/preeclampsia
+  ---
+  duration_ms: 1.304941
+  type: 'test'
+  ...
+# Subtest: exact-name/en/preeclampsia
+ok 200 - exact-name/en/preeclampsia
+  ---
+  duration_ms: 1.361648
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/pregnancy-sickness
+ok 201 - exact-name/zh-CN/pregnancy-sickness
+  ---
+  duration_ms: 1.810485
+  type: 'test'
+  ...
+# Subtest: exact-name/en/pregnancy-sickness
+ok 202 - exact-name/en/pregnancy-sickness
+  ---
+  duration_ms: 1.780319
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/prostate-enlargement
+ok 203 - exact-name/zh-CN/prostate-enlargement
+  ---
+  duration_ms: 1.45532
+  type: 'test'
+  ...
+# Subtest: exact-name/en/prostate-enlargement
+ok 204 - exact-name/en/prostate-enlargement
+  ---
+  duration_ms: 1.52513
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/reflux
+ok 205 - exact-name/zh-CN/reflux
+  ---
+  duration_ms: 1.790793
+  type: 'test'
+  ...
+# Subtest: exact-name/en/reflux
+ok 206 - exact-name/en/reflux
+  ---
+  duration_ms: 1.590741
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/rheumatoid-arthritis
+ok 207 - exact-name/zh-CN/rheumatoid-arthritis
+  ---
+  duration_ms: 1.371769
+  type: 'test'
+  ...
+# Subtest: exact-name/en/rheumatoid-arthritis
+ok 208 - exact-name/en/rheumatoid-arthritis
+  ---
+  duration_ms: 1.513186
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/shingles
+ok 209 - exact-name/zh-CN/shingles
+  ---
+  duration_ms: 1.69546
+  type: 'test'
+  ...
+# Subtest: exact-name/en/shingles
+ok 210 - exact-name/en/shingles
+  ---
+  duration_ms: 1.30763
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/sinusitis
+ok 211 - exact-name/zh-CN/sinusitis
+  ---
+  duration_ms: 1.280408
+  type: 'test'
+  ...
+# Subtest: exact-name/en/sinusitis
+ok 212 - exact-name/en/sinusitis
+  ---
+  duration_ms: 1.225786
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/sore-throat
+ok 213 - exact-name/zh-CN/sore-throat
+  ---
+  duration_ms: 1.409846
+  type: 'test'
+  ...
+# Subtest: exact-name/en/sore-throat
+ok 214 - exact-name/en/sore-throat
+  ---
+  duration_ms: 3.285882
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/stroke
+ok 215 - exact-name/zh-CN/stroke
+  ---
+  duration_ms: 1.266874
+  type: 'test'
+  ...
+# Subtest: exact-name/en/stroke
+ok 216 - exact-name/en/stroke
+  ---
+  duration_ms: 1.115266
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/tension-headache
+ok 217 - exact-name/zh-CN/tension-headache
+  ---
+  duration_ms: 1.264579
+  type: 'test'
+  ...
+# Subtest: exact-name/en/tension-headache
+ok 218 - exact-name/en/tension-headache
+  ---
+  duration_ms: 1.383999
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/type-2-diabetes
+ok 219 - exact-name/zh-CN/type-2-diabetes
+  ---
+  duration_ms: 1.855222
+  type: 'test'
+  ...
+# Subtest: exact-name/en/type-2-diabetes
+ok 220 - exact-name/en/type-2-diabetes
+  ---
+  duration_ms: 1.39738
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/urticaria
+ok 221 - exact-name/zh-CN/urticaria
+  ---
+  duration_ms: 1.22519
+  type: 'test'
+  ...
+# Subtest: exact-name/en/urticaria
+ok 222 - exact-name/en/urticaria
+  ---
+  duration_ms: 1.351613
+  type: 'test'
+  ...
+# Subtest: exact-name/zh-CN/vaginal-thrush
+ok 223 - exact-name/zh-CN/vaginal-thrush
+  ---
+  duration_ms: 1.805638
+  type: 'test'
+  ...
+# Subtest: exact-name/en/vaginal-thrush
+ok 224 - exact-name/en/vaginal-thrush
+  ---
+  duration_ms: 1.316321
+  type: 'test'
+  ...
+# Subtest: aliases/acne
+ok 225 - aliases/acne
+  ---
+  duration_ms: 5.854144
+  type: 'test'
+  ...
+# Subtest: aliases/allergic-rhinitis
+ok 226 - aliases/allergic-rhinitis
+  ---
+  duration_ms: 5.61604
+  type: 'test'
+  ...
+# Subtest: aliases/anaphylaxis
+ok 227 - aliases/anaphylaxis
+  ---
+  duration_ms: 13.090365
+  type: 'test'
+  ...
+# Subtest: aliases/animal-bite
+ok 228 - aliases/animal-bite
+  ---
+  duration_ms: 5.702205
+  type: 'test'
+  ...
+# Subtest: aliases/ankle-sprain
+ok 229 - aliases/ankle-sprain
+  ---
+  duration_ms: 5.613887
+  type: 'test'
+  ...
+# Subtest: aliases/anxiety
+ok 230 - aliases/anxiety
+  ---
+  duration_ms: 5.547503
+  type: 'test'
+  ...
+# Subtest: aliases/appendicitis
+ok 231 - aliases/appendicitis
+  ---
+  duration_ms: 2.78649
+  type: 'test'
+  ...
+# Subtest: aliases/asthma
+ok 232 - aliases/asthma
+  ---
+  duration_ms: 4.488174
+  type: 'test'
+  ...
+# Subtest: aliases/athletes-foot
+ok 233 - aliases/athletes-foot
+  ---
+  duration_ms: 5.656549
+  type: 'test'
+  ...
+# Subtest: aliases/atrial-fibrillation
+ok 234 - aliases/atrial-fibrillation
+  ---
+  duration_ms: 4.462972
+  type: 'test'
+  ...
+# Subtest: aliases/breast-cancer
+ok 235 - aliases/breast-cancer
+  ---
+  duration_ms: 5.324111
+  type: 'test'
+  ...
+# Subtest: aliases/burns
+ok 236 - aliases/burns
+  ---
+  duration_ms: 5.498075
+  type: 'test'
+  ...
+# Subtest: aliases/chest-pain
+ok 237 - aliases/chest-pain
+  ---
+  duration_ms: 5.597469
+  type: 'test'
+  ...
+# Subtest: aliases/chronic-kidney-disease
+ok 238 - aliases/chronic-kidney-disease
+  ---
+  duration_ms: 5.369825
+  type: 'test'
+  ...
+# Subtest: aliases/colorectal-cancer
+ok 239 - aliases/colorectal-cancer
+  ---
+  duration_ms: 7.894036
+  type: 'test'
+  ...
+# Subtest: aliases/common-cold
+ok 240 - aliases/common-cold
+  ---
+  duration_ms: 6.75807
+  type: 'test'
+  ...
+# Subtest: aliases/conjunctivitis
+ok 241 - aliases/conjunctivitis
+  ---
+  duration_ms: 5.652212
+  type: 'test'
+  ...
+# Subtest: aliases/constipation
+ok 242 - aliases/constipation
+  ---
+  duration_ms: 11.551081
+  type: 'test'
+  ...
+# Subtest: aliases/copd
+ok 243 - aliases/copd
+  ---
+  duration_ms: 5.938142
+  type: 'test'
+  ...
+# Subtest: aliases/coronary-heart-disease
+ok 244 - aliases/coronary-heart-disease
+  ---
+  duration_ms: 6.513025
+  type: 'test'
+  ...
+# Subtest: aliases/covid-19
+ok 245 - aliases/covid-19
+  ---
+  duration_ms: 6.703472
+  type: 'test'
+  ...
+# Subtest: aliases/cystic-fibrosis
+ok 246 - aliases/cystic-fibrosis
+  ---
+  duration_ms: 5.196096
+  type: 'test'
+  ...
+# Subtest: aliases/deep-vein-thrombosis
+ok 247 - aliases/deep-vein-thrombosis
+  ---
+  duration_ms: 5.124856
+  type: 'test'
+  ...
+# Subtest: aliases/dehydration
+ok 248 - aliases/dehydration
+  ---
+  duration_ms: 5.25601
+  type: 'test'
+  ...
+# Subtest: aliases/dental-abscess
+ok 249 - aliases/dental-abscess
+  ---
+  duration_ms: 5.604561
+  type: 'test'
+  ...
+# Subtest: aliases/depression
+ok 250 - aliases/depression
+  ---
+  duration_ms: 5.396079
+  type: 'test'
+  ...
+# Subtest: aliases/dizziness
+ok 251 - aliases/dizziness
+  ---
+  duration_ms: 5.176475
+  type: 'test'
+  ...
+# Subtest: aliases/dry-eye
+ok 252 - aliases/dry-eye
+  ---
+  duration_ms: 5.803164
+  type: 'test'
+  ...
+# Subtest: aliases/ectopic-pregnancy
+ok 253 - aliases/ectopic-pregnancy
+  ---
+  duration_ms: 3.818277
+  type: 'test'
+  ...
+# Subtest: aliases/eczema
+ok 254 - aliases/eczema
+  ---
+  duration_ms: 5.352607
+  type: 'test'
+  ...
+# Subtest: aliases/epilepsy
+ok 255 - aliases/epilepsy
+  ---
+  duration_ms: 5.851098
+  type: 'test'
+  ...
+# Subtest: aliases/fatigue
+ok 256 - aliases/fatigue
+  ---
+  duration_ms: 6.399317
+  type: 'test'
+  ...
+# Subtest: aliases/fever
+ok 257 - aliases/fever
+  ---
+  duration_ms: 5.184824
+  type: 'test'
+  ...
+# Subtest: aliases/gallstones
+ok 258 - aliases/gallstones
+  ---
+  duration_ms: 6.187967
+  type: 'test'
+  ...
+# Subtest: aliases/gastroenteritis
+ok 259 - aliases/gastroenteritis
+  ---
+  duration_ms: 6.8182
+  type: 'test'
+  ...
+# Subtest: aliases/gout
+ok 260 - aliases/gout
+  ---
+  duration_ms: 3.994373
+  type: 'test'
+  ...
+# Subtest: aliases/heart-failure
+ok 261 - aliases/heart-failure
+  ---
+  duration_ms: 5.597301
+  type: 'test'
+  ...
+# Subtest: aliases/heatstroke
+ok 262 - aliases/heatstroke
+  ---
+  duration_ms: 6.939357
+  type: 'test'
+  ...
+# Subtest: aliases/hemorrhoids
+ok 263 - aliases/hemorrhoids
+  ---
+  duration_ms: 5.070841
+  type: 'test'
+  ...
+# Subtest: aliases/hyperlipidemia
+ok 264 - aliases/hyperlipidemia
+  ---
+  duration_ms: 5.482395
+  type: 'test'
+  ...
+# Subtest: aliases/hypertension
+ok 265 - aliases/hypertension
+  ---
+  duration_ms: 3.182349
+  type: 'test'
+  ...
+# Subtest: aliases/hyperthyroidism
+ok 266 - aliases/hyperthyroidism
+  ---
+  duration_ms: 3.755673
+  type: 'test'
+  ...
+# Subtest: aliases/hypothyroidism
+ok 267 - aliases/hypothyroidism
+  ---
+  duration_ms: 3.036042
+  type: 'test'
+  ...
+# Subtest: aliases/ibs
+ok 268 - aliases/ibs
+  ---
+  duration_ms: 5.304428
+  type: 'test'
+  ...
+# Subtest: aliases/influenza
+ok 269 - aliases/influenza
+  ---
+  duration_ms: 7.921583
+  type: 'test'
+  ...
+# Subtest: aliases/insomnia
+ok 270 - aliases/insomnia
+  ---
+  duration_ms: 6.696375
+  type: 'test'
+  ...
+# Subtest: aliases/iron-deficiency-anemia
+ok 271 - aliases/iron-deficiency-anemia
+  ---
+  duration_ms: 5.171897
+  type: 'test'
+  ...
+# Subtest: aliases/kidney-stones
+ok 272 - aliases/kidney-stones
+  ---
+  duration_ms: 4.954231
+  type: 'test'
+  ...
+# Subtest: aliases/low-back-pain
+ok 273 - aliases/low-back-pain
+  ---
+  duration_ms: 5.656078
+  type: 'test'
+  ...
+# Subtest: aliases/lower-uti
+ok 274 - aliases/lower-uti
+  ---
+  duration_ms: 5.06727
+  type: 'test'
+  ...
+# Subtest: aliases/migraine
+ok 275 - aliases/migraine
+  ---
+  duration_ms: 4.629769
+  type: 'test'
+  ...
+# Subtest: aliases/obesity
+ok 276 - aliases/obesity
+  ---
+  duration_ms: 4.893009
+  type: 'test'
+  ...
+# Subtest: aliases/osteoarthritis
+ok 277 - aliases/osteoarthritis
+  ---
+  duration_ms: 5.473997
+  type: 'test'
+  ...
+# Subtest: aliases/otitis-media
+ok 278 - aliases/otitis-media
+  ---
+  duration_ms: 3.242028
+  type: 'test'
+  ...
+# Subtest: aliases/pcos
+ok 279 - aliases/pcos
+  ---
+  duration_ms: 7.889825
+  type: 'test'
+  ...
+# Subtest: aliases/peptic-ulcer
+ok 280 - aliases/peptic-ulcer
+  ---
+  duration_ms: 5.461527
+  type: 'test'
+  ...
+# Subtest: aliases/period-pain
+ok 281 - aliases/period-pain
+  ---
+  duration_ms: 5.472969
+  type: 'test'
+  ...
+# Subtest: aliases/peripheral-neuropathy
+ok 282 - aliases/peripheral-neuropathy
+  ---
+  duration_ms: 5.660564
+  type: 'test'
+  ...
+# Subtest: aliases/pneumonia
+ok 283 - aliases/pneumonia
+  ---
+  duration_ms: 3.851679
+  type: 'test'
+  ...
+# Subtest: aliases/preeclampsia
+ok 284 - aliases/preeclampsia
+  ---
+  duration_ms: 4.395236
+  type: 'test'
+  ...
+# Subtest: aliases/pregnancy-sickness
+ok 285 - aliases/pregnancy-sickness
+  ---
+  duration_ms: 5.655456
+  type: 'test'
+  ...
+# Subtest: aliases/prostate-enlargement
+ok 286 - aliases/prostate-enlargement
+  ---
+  duration_ms: 5.258111
+  type: 'test'
+  ...
+# Subtest: aliases/reflux
+ok 287 - aliases/reflux
+  ---
+  duration_ms: 8.511622
+  type: 'test'
+  ...
+# Subtest: aliases/rheumatoid-arthritis
+ok 288 - aliases/rheumatoid-arthritis
+  ---
+  duration_ms: 4.901175
+  type: 'test'
+  ...
+# Subtest: aliases/shingles
+ok 289 - aliases/shingles
+  ---
+  duration_ms: 5.203515
+  type: 'test'
+  ...
+# Subtest: aliases/sinusitis
+ok 290 - aliases/sinusitis
+  ---
+  duration_ms: 2.578052
+  type: 'test'
+  ...
+# Subtest: aliases/sore-throat
+ok 291 - aliases/sore-throat
+  ---
+  duration_ms: 5.929173
+  type: 'test'
+  ...
+# Subtest: aliases/stroke
+ok 292 - aliases/stroke
+  ---
+  duration_ms: 6.4497
+  type: 'test'
+  ...
+# Subtest: aliases/tension-headache
+ok 293 - aliases/tension-headache
+  ---
+  duration_ms: 5.499889
+  type: 'test'
+  ...
+# Subtest: aliases/type-2-diabetes
+ok 294 - aliases/type-2-diabetes
+  ---
+  duration_ms: 5.503869
+  type: 'test'
+  ...
+# Subtest: aliases/urticaria
+ok 295 - aliases/urticaria
+  ---
+  duration_ms: 5.323007
+  type: 'test'
+  ...
+# Subtest: aliases/vaginal-thrush
+ok 296 - aliases/vaginal-thrush
+  ---
+  duration_ms: 6.354519
+  type: 'test'
+  ...
+# Subtest: synthetic symptom/流鼻涕 咳嗽
+ok 297 - synthetic symptom/流鼻涕 咳嗽
+  ---
+  duration_ms: 2.089132
+  type: 'test'
+  ...
+# Subtest: synthetic symptom/鼻痒 打喷嚏
+ok 298 - synthetic symptom/鼻痒 打喷嚏
+  ---
+  duration_ms: 1.547277
+  type: 'test'
+  ...
+# Subtest: synthetic symptom/尿痛 尿频
+ok 299 - synthetic symptom/尿痛 尿频
+  ---
+  duration_ms: 1.508069
+  type: 'test'
+  ...
+# Subtest: synthetic symptom/关节红肿 大脚趾痛
+ok 300 - synthetic symptom/关节红肿 大脚趾痛
+  ---
+  duration_ms: 1.61498
+  type: 'test'
+  ...
+# Subtest: synthetic symptom/口渴 尿少
+ok 301 - synthetic symptom/口渴 尿少
+  ---
+  duration_ms: 1.909635
+  type: 'test'
+  ...
+# Subtest: synthetic symptom/heartburn
+ok 302 - synthetic symptom/heartburn
+  ---
+  duration_ms: 1.207021
+  type: 'test'
+  ...
+# Subtest: synthetic symptom/胸痛
+ok 303 - synthetic symptom/胸痛
+  ---
+  duration_ms: 1.334986
+  type: 'test'
+  ...
+# Subtest: synthetic symptom/PCOS
+ok 304 - synthetic symptom/PCOS
+  ---
+  duration_ms: 1.280048
+  type: 'test'
+  ...
+# Subtest: synthetic symptom/PMOS
+ok 305 - synthetic symptom/PMOS
+  ---
+  duration_ms: 1.227233
+  type: 'test'
+  ...
+# Subtest: unknown does not invent a candidate
+ok 306 - unknown does not invent a candidate
+  ---
+  duration_ms: 2.533617
+  type: 'test'
+  ...
+# Subtest: empty query lists all 72 records
+ok 307 - empty query lists all 72 records
+  ---
+  duration_ms: 0.240808
+  type: 'test'
+  ...
+# Subtest: filters are respected
+ok 308 - filters are respected
+  ---
+  duration_ms: 0.244201
+  type: 'test'
+  ...
+# Subtest: symptom-kind is separate
+ok 309 - symptom-kind is separate
+  ---
+  duration_ms: 0.207539
+  type: 'test'
+  ...
+# Subtest: query input object normalization
+ok 310 - query input object normalization
+  ---
+  duration_ms: 0.076944
+  type: 'test'
+  ...
+# Subtest: unicode normalization
+ok 311 - unicode normalization
+  ---
+  duration_ms: 0.291388
+  type: 'test'
+  ...
+# Subtest: Chinese bigrams
+ok 312 - Chinese bigrams
+  ---
+  duration_ms: 1.452944
+  type: 'test'
+  ...
+# Subtest: word boundary
+ok 313 - word boundary
+  ---
+  duration_ms: 0.098302
+  type: 'test'
+  ...
+# Subtest: bounded negative scope
+ok 314 - bounded negative scope
+  ---
+  duration_ms: 0.094454
+  type: 'test'
+  ...
+# Subtest: Chinese positive after comma
+ok 315 - Chinese positive after comma
+  ---
+  duration_ms: 0.170471
+  type: 'test'
+  ...
+# Subtest: double negation is not silently safe
+ok 316 - double negation is not silently safe
+  ---
+  duration_ms: 0.090154
+  type: 'test'
+  ...
+# Subtest: denial query does not rank denied-only disease
+ok 317 - denial query does not rank denied-only disease
+  ---
+  duration_ms: 0.177607
+  type: 'test'
+  ...
+# Subtest: negative limit rejected
+ok 318 - negative limit rejected
+  ---
+  duration_ms: 0.719001
+  type: 'test'
+  ...
+# Subtest: empty corpus
+ok 319 - empty corpus
+  ---
+  duration_ms: 0.147119
+  type: 'test'
+  ...
+# Subtest: no probabilities in result contract
+ok 320 - no probabilities in result contract
+  ---
+  duration_ms: 1.506214
+  type: 'test'
+  ...
+1..320
+# tests 320
+# suites 0
+# pass 320
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1340.164833

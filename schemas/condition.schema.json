@@ -1,0 +1,1055 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Health topic data",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "kind",
+    "primary_domain",
+    "names",
+    "aliases",
+    "symptom_terms",
+    "departments",
+    "reference_urgency",
+    "sections",
+    "source_ids",
+    "related_ids",
+    "tags",
+    "clinical_region",
+    "coding",
+    "review",
+    "localizations",
+    "evidence_certainty",
+    "limitations",
+    "study_ids",
+    "advanced_fields",
+    "advanced_fields_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+    },
+    "kind": {
+      "enum": [
+        "condition",
+        "symptom"
+      ]
+    },
+    "primary_domain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "names": {
+      "type": "object",
+      "required": [
+        "zh-CN",
+        "en"
+      ],
+      "properties": {
+        "zh-CN": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "aliases": {
+      "type": "object",
+      "required": [
+        "zh-CN",
+        "en"
+      ],
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "symptom_terms": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "zh-CN",
+          "en"
+        ],
+        "properties": {
+          "zh-CN": {
+            "type": "string",
+            "minLength": 1
+          },
+          "en": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "departments": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "reference_urgency": {
+      "enum": [
+        "context_dependent",
+        "self_care_possible",
+        "routine",
+        "same_day",
+        "emergency"
+      ]
+    },
+    "sections": {
+      "type": "object",
+      "required": [
+        "summary",
+        "causes_risks",
+        "red_flags",
+        "care",
+        "diagnosis",
+        "differentials",
+        "treatment",
+        "medications",
+        "diet",
+        "daily_care",
+        "special_populations",
+        "prognosis_followup",
+        "complications",
+        "prevention"
+      ],
+      "properties": {
+        "summary": {
+          "type": "object",
+          "required": [
+            "text",
+            "source_ids",
+            "support_status"
+          ],
+          "properties": {
+            "text": {
+              "type": "object",
+              "required": [
+                "zh-CN",
+                "en"
+              ],
+              "properties": {
+                "zh-CN": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            },
+            "support_status": {
+              "enum": [
+                "pending_claim_verification",
+                "verified",
+                "disputed"
+              ]
+            },
+            "verification": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "causes_risks": {
+          "type": "object",
+          "required": [
+            "text",
+            "source_ids",
+            "support_status"
+          ],
+          "properties": {
+            "text": {
+              "type": "object",
+              "required": [
+                "zh-CN",
+                "en"
+              ],
+              "properties": {
+                "zh-CN": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            },
+            "support_status": {
+              "enum": [
+                "pending_claim_verification",
+                "verified",
+                "disputed"
+              ]
+            },
+            "verification": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "red_flags": {
+          "type": "object",
+          "required": [
+            "text",
+            "source_ids",
+            "support_status"
+          ],
+          "properties": {
+            "text": {
+              "type": "object",
+              "required": [
+                "zh-CN",
+                "en"
+              ],
+              "properties": {
+                "zh-CN": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            },
+            "support_status": {
+              "enum": [
+                "pending_claim_verification",
+                "verified",
+                "disputed"
+              ]
+            },
+            "verification": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "care": {
+          "type": "object",
+          "required": [
+            "text",
+            "source_ids",
+            "support_status"
+          ],
+          "properties": {
+            "text": {
+              "type": "object",
+              "required": [
+                "zh-CN",
+                "en"
+              ],
+              "properties": {
+                "zh-CN": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            },
+            "support_status": {
+              "enum": [
+                "pending_claim_verification",
+                "verified",
+                "disputed"
+              ]
+            },
+            "verification": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "diagnosis": {
+          "type": "object",
+          "required": [
+            "text",
+            "source_ids",
+            "support_status"
+          ],
+          "properties": {
+            "text": {
+              "type": "object",
+              "required": [
+                "zh-CN",
+                "en"
+              ],
+              "properties": {
+                "zh-CN": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            },
+            "support_status": {
+              "enum": [
+                "pending_claim_verification",
+                "verified",
+                "disputed"
+              ]
+            },
+            "verification": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "differentials": {
+          "type": "object",
+          "required": [
+            "text",
+            "source_ids",
+            "support_status"
+          ],
+          "properties": {
+            "text": {
+              "type": "object",
+              "required": [
+                "zh-CN",
+                "en"
+              ],
+              "properties": {
+                "zh-CN": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            },
+            "support_status": {
+              "enum": [
+                "pending_claim_verification",
+                "verified",
+                "disputed"
+              ]
+            },
+            "verification": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "treatment": {
+          "type": "object",
+          "required": [
+            "text",
+            "source_ids",
+            "support_status"
+          ],
+          "properties": {
+            "text": {
+              "type": "object",
+              "required": [
+                "zh-CN",
+                "en"
+              ],
+              "properties": {
+                "zh-CN": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            },
+            "support_status": {
+              "enum": [
+                "pending_claim_verification",
+                "verified",
+                "disputed"
+              ]
+            },
+            "verification": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "medications": {
+          "type": "object",
+          "required": [
+            "text",
+            "source_ids",
+            "support_status"
+          ],
+          "properties": {
+            "text": {
+              "type": "object",
+              "required": [
+                "zh-CN",
+                "en"
+              ],
+              "properties": {
+                "zh-CN": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            },
+            "support_status": {
+              "enum": [
+                "pending_claim_verification",
+                "verified",
+                "disputed"
+              ]
+            },
+            "verification": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "diet": {
+          "type": "object",
+          "required": [
+            "text",
+            "source_ids",
+            "support_status"
+          ],
+          "properties": {
+            "text": {
+              "type": "object",
+              "required": [
+                "zh-CN",
+                "en"
+              ],
+              "properties": {
+                "zh-CN": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            },
+            "support_status": {
+              "enum": [
+                "pending_claim_verification",
+                "verified",
+                "disputed"
+              ]
+            },
+            "verification": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "daily_care": {
+          "type": "object",
+          "required": [
+            "text",
+            "source_ids",
+            "support_status"
+          ],
+          "properties": {
+            "text": {
+              "type": "object",
+              "required": [
+                "zh-CN",
+                "en"
+              ],
+              "properties": {
+                "zh-CN": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            },
+            "support_status": {
+              "enum": [
+                "pending_claim_verification",
+                "verified",
+                "disputed"
+              ]
+            },
+            "verification": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "special_populations": {
+          "type": "object",
+          "required": [
+            "text",
+            "source_ids",
+            "support_status"
+          ],
+          "properties": {
+            "text": {
+              "type": "object",
+              "required": [
+                "zh-CN",
+                "en"
+              ],
+              "properties": {
+                "zh-CN": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            },
+            "support_status": {
+              "enum": [
+                "pending_claim_verification",
+                "verified",
+                "disputed"
+              ]
+            },
+            "verification": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "prognosis_followup": {
+          "type": "object",
+          "required": [
+            "text",
+            "source_ids",
+            "support_status"
+          ],
+          "properties": {
+            "text": {
+              "type": "object",
+              "required": [
+                "zh-CN",
+                "en"
+              ],
+              "properties": {
+                "zh-CN": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            },
+            "support_status": {
+              "enum": [
+                "pending_claim_verification",
+                "verified",
+                "disputed"
+              ]
+            },
+            "verification": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "complications": {
+          "type": "object",
+          "required": [
+            "text",
+            "source_ids",
+            "support_status"
+          ],
+          "properties": {
+            "text": {
+              "type": "object",
+              "required": [
+                "zh-CN",
+                "en"
+              ],
+              "properties": {
+                "zh-CN": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            },
+            "support_status": {
+              "enum": [
+                "pending_claim_verification",
+                "verified",
+                "disputed"
+              ]
+            },
+            "verification": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "prevention": {
+          "type": "object",
+          "required": [
+            "text",
+            "source_ids",
+            "support_status"
+          ],
+          "properties": {
+            "text": {
+              "type": "object",
+              "required": [
+                "zh-CN",
+                "en"
+              ],
+              "properties": {
+                "zh-CN": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "uniqueItems": true,
+              "minItems": 1
+            },
+            "support_status": {
+              "enum": [
+                "pending_claim_verification",
+                "verified",
+                "disputed"
+              ]
+            },
+            "verification": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+      },
+      "uniqueItems": true,
+      "minItems": 2
+    },
+    "related_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+      },
+      "uniqueItems": true
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "clinical_region": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coding": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "status",
+        "reviewers",
+        "medical_reviewed_at",
+        "editorial_updated_at",
+        "next_editorial_review_due"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "editorial_draft",
+            "medically_reviewed",
+            "retired"
+          ]
+        },
+        "reviewers": {
+          "type": "array"
+        },
+        "medical_reviewed_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "editorial_updated_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "next_editorial_review_due": {
+          "type": "string",
+          "format": "date"
+        },
+        "approvals": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": false
+    },
+    "localizations": {
+      "type": "object"
+    },
+    "evidence_certainty": {
+      "enum": [
+        "not_formally_graded",
+        "high",
+        "moderate",
+        "low",
+        "very_low"
+      ]
+    },
+    "limitations": {
+      "type": "object",
+      "required": [
+        "zh-CN",
+        "en"
+      ],
+      "properties": {
+        "zh-CN": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "study_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+      },
+      "uniqueItems": true
+    },
+    "advanced_fields": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "object",
+          "null"
+        ]
+      }
+    },
+    "advanced_fields_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "terminology_note": {
+      "type": "object",
+      "required": [
+        "zh-CN",
+        "en"
+      ],
+      "properties": {
+        "zh-CN": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "additionalProperties": false
+}
