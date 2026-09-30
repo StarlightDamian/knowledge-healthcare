@@ -1,0 +1,525 @@
+{
+  "schema_version": 1,
+  "review_id": "batch-01-mi-review-challenge-2026-09-30",
+  "reviewer": "/root/demand_content",
+  "reviewed_at": "2026-09-30",
+  "medical_reviewed": false,
+  "target": {
+    "path": "drafts/batch-01/emergency/myocardial-infarction.json",
+    "canonical_sha256": "4a35256c21090af048581dd5877347da99039fe7b6031c663af79672304c4d09",
+    "content_sha256": "bd7d21aeaa6fc2b4c5fdc549422759701643a6a4b009caea00896c6b299e17d3",
+    "file_sha256": "39c9a50662f5e0e778dd64afdc38c2759c08a0bcc8f7ee478fdd3a3a22db072a"
+  },
+  "challenged_report": {
+    "path": "reports/batch-01-mi-independent.json",
+    "canonical_sha256": "e7e66836d7175e3ff51a331682053fa2f0ed316a4722e65ec92c1c7b38fc0cf5",
+    "file_sha256": "e9e778e524c749090f84b889b4b8afdcd9c3dfc2076263c54d4d3d5d2fb11029",
+    "reviewer": "/root",
+    "verdict": "needs_revision"
+  },
+  "scope": {
+    "finding_ids": [
+      "MI01",
+      "MI02",
+      "MI03",
+      "MI04",
+      "MI05",
+      "MI06",
+      "MI07",
+      "MI08"
+    ],
+    "mode": "一次定向挑战：重新核对八组修订建议，不重复全42条审查，不修改作者稿或证据登记。",
+    "author_files_modified": false,
+    "shared_files_modified": false,
+    "coverage_increment": 0
+  },
+  "verdict": "uphold_with_scope_corrections",
+  "summary": "未发现足以推翻原报告 needs_revision 的反例。MI07 的日期整理证据门槛应撤回；MI01 的黑色柏油样便行动不能被 prompt 降为常规预约。其余建议需要区分现有措辞歧义、正确但支持未完整绑定、内容深度不足及仅用于防止未来改稿出错的提醒。",
+  "article_release_decision": {
+    "full_article_review_repeated": false,
+    "approved_for_publication": false,
+    "reason": "本报告仅挑战八组建议，不授予完整正文交叉核验或临床签审；原稿仍有已确认的行动表达及支持范围问题。",
+    "new_medical_error_claims": 0
+  },
+  "source_reads": [
+    {
+      "id": "S01",
+      "title": "NHS — Side effects of clopidogrel",
+      "url": "https://www.nhs.uk/medicines/clopidogrel/side-effects-of-clopidogrel/",
+      "version_or_review_date": "2025-03-12",
+      "accessed_at": "2026-09-30",
+      "independence_group": "NHS",
+      "access": "full_relevant_page",
+      "locator": "Serious side effects: call111 straightaway / go to A&E now; lines46–62",
+      "support_and_limits": "黑色柏油样便立即联系111；吐血/咖啡渣样呕吐物进入立即去急诊分级；止不住鼻血的条文有10–15分钟条件，不能冒充所有出血的精确规则。"
+    },
+    {
+      "id": "S02",
+      "title": "Mayo Clinic — Heart attack: Diagnosis and treatment",
+      "url": "https://www.mayoclinic.org/diseases-conditions/heart-attack/diagnosis-treatment/drc-20373112",
+      "version_or_review_date": "2026-03-27",
+      "accessed_at": "2026-09-30",
+      "independence_group": "Mayo-Clinic",
+      "access": "full_relevant_page",
+      "locator": "Tests; Treatment; Medications; Preparing for your appointment; lines269–412",
+      "support_and_limits": "蛋白缓慢漏入血液；较早溶栓效益、ACE/β阻滞剂作用、药单与症状记录有文字支持。该页没有明确要求重复肌钙蛋白；立即给氧段落不能直接变为通用建议。"
+    },
+    {
+      "id": "S03",
+      "title": "NHLBI — Heart Attack: Diagnosis",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/diagnosis",
+      "version_or_review_date": "2022-03-24",
+      "accessed_at": "2026-09-30",
+      "independence_group": "NIH-NHLBI",
+      "access": "full_relevant_page",
+      "locator": "Initial ECG; Blood tests; lines98–113",
+      "support_and_limits": "明确血液检查经常重复，早期ECG与肌钙蛋白用于诊断；不把该段当成所有病例都重复ECG的依据。"
+    },
+    {
+      "id": "S04",
+      "title": "NHS — Heart attack",
+      "url": "https://www.nhs.uk/conditions/heart-attack/",
+      "version_or_review_date": "2026-03-31",
+      "accessed_at": "2026-09-30",
+      "independence_group": "NHS",
+      "access": "full_relevant_page",
+      "locator": "Symptoms; While waiting for medical help; Tests; Recovery; lines26–91",
+      "support_and_limits": "999与111分级、等候时阿司匹林及过敏条件、药物类别、康复和情绪帮助。其给药文字是NHS面向英国公众的建议，不能据此断言两国所有急救机构规则不同。"
+    },
+    {
+      "id": "S05",
+      "title": "NHLBI — Heart Attack: Treatment",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/treatment",
+      "version_or_review_date": "2022-03-24",
+      "accessed_at": "2026-09-30",
+      "independence_group": "NIH-NHLBI",
+      "access": "full_relevant_page",
+      "locator": "Emergency treatments; Procedures; Medicines; lines98–149",
+      "support_and_limits": "溶栓出血风险及PCI不能迅速取得时的用途直接存在；氧气以血氧低为条件；支架后的抗血小板期限有对象条件。"
+    },
+    {
+      "id": "S06",
+      "title": "Mayo Clinic — Heart attack: Symptoms and causes",
+      "url": "https://www.mayoclinic.org/diseases-conditions/heart-attack/symptoms-causes/syc-20373106",
+      "version_or_review_date": "2026-03-27",
+      "accessed_at": "2026-09-30",
+      "independence_group": "Mayo-Clinic",
+      "access": "full_relevant_page",
+      "locator": "When to see a doctor; Causes; lines299–329",
+      "support_and_limits": "先求救、按医务人员或调度建议用阿司匹林；NSTEMI部分病例仍完全堵塞，不能依阻塞比例给两型作绝对定义。"
+    },
+    {
+      "id": "S07",
+      "title": "NHLBI — Heart Attack: Women",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/women",
+      "version_or_review_date": "2022-03-24",
+      "accessed_at": "2026-09-30",
+      "independence_group": "NIH-NHLBI",
+      "access": "full_relevant_page",
+      "locator": "Pregnancy and heart attacks; lines122–129",
+      "support_and_limits": "妊娠及产后风险和立即求救有直接支持；检查保护胎儿与药物安全具体在孕期语境，未将产后女性视作仍有宫内胎儿。"
+    },
+    {
+      "id": "S08",
+      "title": "NHLBI — Heart Attack: Recovery",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/recovery",
+      "version_or_review_date": "2022-03-24",
+      "accessed_at": "2026-09-30",
+      "independence_group": "NIH-NHLBI",
+      "access": "full_relevant_page",
+      "locator": "Cardiac rehabilitation; Returning to normal activities; Medicines; Take care of your mental health; lines98–173",
+      "support_and_limits": "康复活动计划、药物作用及他汀肌肉风险、支付困难与情绪问题告知医护、怀疑再次发作立即求救。"
+    },
+    {
+      "id": "S09",
+      "title": "AHA — 2025 ACS Guideline: Top Things to Know",
+      "url": "https://professional.heart.org/en/science-news/2025-guideline-for-the-management-of-patients-with-acute-coronary-syndromes/top-things-to-know",
+      "version_or_review_date": "2025-02-27",
+      "accessed_at": "2026-09-30",
+      "independence_group": "ACC-AHA-2025-ACS-joint-guideline",
+      "access": "full_relevant_page",
+      "locator": "Items2,4,6,9; lines23–32",
+      "support_and_limits": "DAPT默认期限有非高出血风险条件；NSTE-ACS干预按风险；血脂复查4–8周从开始或调整降脂治疗计时，不是简单出院后计时。"
+    },
+    {
+      "id": "S10",
+      "title": "AHA — Key Patient Messages: 2025 ACS Guideline",
+      "url": "https://professional.heart.org/en/science-news/patient-resources/key-patient-messages-2025-acute-coronary-syndromes-guideline",
+      "version_or_review_date": "2025-02-27",
+      "accessed_at": "2026-09-30",
+      "independence_group": "ACC-AHA-2025-ACS-joint-guideline",
+      "access": "full_relevant_page",
+      "locator": "Items3,4,6,7; lines26–108",
+      "support_and_limits": "类型与时间影响治疗；图示把STEMI/非STEMI写成全堵/部分堵，确实比Mayo的例外说明简化。其药物表和康复内容不能当作同一指南的第二个独立来源。"
+    },
+    {
+      "id": "S11",
+      "title": "AHA — Aspirin and Dual Antiplatelet Therapy",
+      "url": "https://www.heart.org/en/health-topics/heart-attack/treatment-of-a-heart-attack/aspirin-and-heart-disease",
+      "version_or_review_date": "2025-02-28",
+      "accessed_at": "2026-09-30",
+      "independence_group": "AHA-patient-editorial",
+      "access": "full_relevant_page",
+      "locator": "Should you take aspirin; Know the risks; During a heart attack; DAPT; lines17–83",
+      "support_and_limits": "自行每日服阿司匹林前讨论获益风险、出血及交互作用、先呼救；DAPT期限取决于指征和风险。与其他AHA页面共享组织及上游指南，不按URL增独立数。"
+    },
+    {
+      "id": "S12",
+      "title": "FDA — Before Using Aspirin to Lower Your Risk of Heart Attack or Stroke",
+      "url": "https://www.fda.gov/drugs/safe-use-aspirin/using-aspirin-lower-your-risk-heart-attack-or-stroke-what-you-should-know",
+      "version_or_review_date": null,
+      "accessed_at": "2026-09-30",
+      "independence_group": "FDA-consumer-editorial",
+      "access": "full_relevant_page",
+      "locator": "Opening advice; Not Without Risks; lines61–78",
+      "support_and_limits": "独立机构编写的每日用药咨询及脑/胃出血风险材料，支持现稿不要因担忧自行长期用药；不把该页对健康人概述扩张为任何一级预防绝无适用者。"
+    },
+    {
+      "id": "S13",
+      "title": "NICE — CG95 Recommendations",
+      "url": "https://www.nice.org.uk/guidance/CG95/chapter/recommendations",
+      "version_or_review_date": "2016 amendments visible",
+      "accessed_at": "2026-09-30",
+      "independence_group": "NICE-CG95",
+      "access": "official_indexed_passages_only",
+      "locator": "1.2.1.11;1.2.4.2;1.2.5.3–4;1.2.6.2,7",
+      "support_and_limits": "可检测肌钙蛋白不等同心梗；临床排除夹层/肺栓塞；低风险者特定检测条件可单次排除NSTEMI，不应把复查变为人人必需。页面直连403，核读的是官方条文索引，不称全文下载。"
+    },
+    {
+      "id": "S14",
+      "title": "NICE — NG185 Recommendations",
+      "url": "https://www.nice.org.uk/guidance/ng185/chapter/Recommendations",
+      "version_or_review_date": "2020, cited recommendations 2013",
+      "accessed_at": "2026-09-30",
+      "independence_group": "NICE-NG185",
+      "access": "official_indexed_passages_only",
+      "locator": "1.1.1–6;1.1.19",
+      "support_and_limits": "溶栓置于急性STEMI、发病时间及PCI可及性条件；本次不把英国时间窗写入正文或外推全球。页面直连403。"
+    },
+    {
+      "id": "S15",
+      "title": "ACC/AHA joint 2025 ACS guideline — JACC",
+      "url": "https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009",
+      "version_or_review_date": "2025-02-27",
+      "accessed_at": "2026-09-30",
+      "independence_group": "ACC-AHA-2025-ACS-joint-guideline",
+      "access": "official_indexed_passages_only",
+      "locator": "4.1 Oxygen Therapy;5.3.1 Timing and Choice of Agent for Fibrinolytic Therapy",
+      "support_and_limits": "ACS氧气按缺氧条件；溶栓针对适合的STEMI，时间与PCI可及性相关，无ST抬高且非真正后壁STEMI者存在无获益及出血危害。直连403，实际核读官方索引的条文及说明，不宣称全文查阅。"
+    }
+  ],
+  "findings": [
+    {
+      "id": "MI01",
+      "decision": "uphold_action_ambiguity_refine_recommendation",
+      "claims": [
+        "medications-2"
+      ],
+      "existing_body_status": "有潜在行动歧义，不是已证实的药物风险错误。英文 urgent care 可被理解为一般急诊门诊，不能清楚表达吐血所需的立即处理。",
+      "root_finding_accuracy": "把吐血/重大出血与黑色柏油样便分开是合理的；但 prompt clinical advice 必须明确立即联系，不能降为常规预约。",
+      "counterexample_to_overbroad_interpretation": "S01 对黑色柏油样便要求 straightaway 联系111。原报告的 prompt 若指稍后联系会弱化其证据；这是报告行动措辞需要收窄，不是说所有黑便均必须叫救护车。",
+      "source_checks": [
+        {
+          "source": "S01",
+          "locator": "Serious side effects: call111 straightaway; go to A&E now",
+          "supports": "黑色柏油样便与吐血有不同的紧急分级；NHS止不住鼻血的特定时间条件不能直接推广为所有出血的阈值。"
+        },
+        {
+          "source": "S08",
+          "locator": "Medicines: statins",
+          "supports": "新的肌肉疼痛需告知医生，与出血危险独立成项合理；不据此声称全部肌痛为立即急救。"
+        }
+      ],
+      "minimum_report_adjustment": "将建议写成吐血/严重持续出血立即急诊处理；柏油样便立即联系适当医疗服务。后者以NHS111说明英国路径，跨地区保留同等紧急程度。",
+      "binding_gap_remaining": "已读S01给出具体分级，但本次没有为每一种出血行动补齐两家独立编写材料，不将单源改写为已交叉核验。",
+      "new_body_revision_required_beyond_original_findings": false
+    },
+    {
+      "id": "MI02",
+      "decision": "uphold_evidence_gap_do_not_invent_current_error",
+      "claims": [
+        "diagnosis-1",
+        "diagnosis-2"
+      ],
+      "existing_body_status": "“检查可能重复”及NSTEMI可严重堵塞的现有表述正确；缺少通俗解释及部分直接独立绑定。",
+      "root_finding_accuracy": "补充肌钙蛋白升高不自动等于心梗有据；将NSTEMI不得等于部分堵塞当防错边界准确，但当前稿从未说NSTEMI只会部分堵塞。",
+      "counterexample_to_overbroad_interpretation": "diagnosis-2 现文已说 latter can also involve severe obstruction，不应记录为修复错误分类。diagnosis-1 使用 may，不是所有患者必须复查；S13 还允许特定低风险及试验条件下单次检测排除，因此不得把加强解释改成一律多次检测。",
+      "source_checks": [
+        {
+          "source": "S03",
+          "locator": "Blood tests",
+          "supports": "血液检测经常重复；没有直接规定所有人重复ECG。"
+        },
+        {
+          "source": "S02",
+          "locator": "Tests: blood tests",
+          "supports": "蛋白进入血液存在时间过程；该段不是第二份明确复查要求。"
+        },
+        {
+          "source": "S13",
+          "locator": "1.2.5.3–4;1.2.6.2",
+          "supports": "早期检测解释依人群/检测条件；肌钙蛋白可检测不必然MI，其他病因需评估。"
+        },
+        {
+          "source": "S06",
+          "locator": "Causes: STEMI/NSTEMI",
+          "supports": "非ST抬高心梗仍可能完全堵塞。"
+        }
+      ],
+      "minimum_report_adjustment": "保留确切支持/局限解释的补证要求，将NSTEMI部分堵塞列作已满足的改稿边界；仅在新增句子确有必要时进一步解释。",
+      "binding_gap_remaining": "本次独立重读的NICE定位可供作者绑定，不等于已替作者登记；若写ECG重复或其他病因诊断具体行动须分句对应实际材料。",
+      "new_body_revision_required_beyond_original_findings": false
+    },
+    {
+      "id": "MI03",
+      "decision": "uphold_completeness_finding_not_existing_falsehood",
+      "claims": [
+        "differentials-0",
+        "differentials-2"
+      ],
+      "existing_body_status": "原有良性相似问题和稳定心绞痛的介绍不能据缺少危险鉴别项而称为错误；本节深度与用户要求仍有差距。",
+      "root_finding_accuracy": "医生需考虑主动脉夹层、肺栓塞等危险替代病因有直接专业依据。把鉴别线索写成家庭排除试验则不合适，原报告此边界正确。",
+      "counterexample_to_overbroad_interpretation": "没有发现现稿把某个危险病症错误归为良性；因此不应要求删除已有实用介绍或另写一份完整胸痛总览来通过本条。",
+      "source_checks": [
+        {
+          "source": "S13",
+          "locator": "1.2.4.2;1.2.6.2,7",
+          "supports": "疑似ACS评估包含非冠状动脉病因，肌钙蛋白升高也需考虑夹层/肺栓塞等。"
+        },
+        {
+          "source": "S06",
+          "locator": "Symptoms: recurrent pain not relieved by rest; When to see a doctor",
+          "supports": "反复胸痛、休息不改善及疑似发作的急救背景；不能凭相似症状自己断定某一个病因。"
+        }
+      ],
+      "minimum_report_adjustment": "将此项明确为内容完整度问题；采用少量病因区别及既有胸痛/相关病症链接，避免MECE重复。新增危险线索及行动再逐项找实际支持。",
+      "binding_gap_remaining": "本次CG95支持专业鉴别范围，不为每一种新增症状线索或救护行动提供两家材料；不能因两个疾病名字出现在指南就视为完整正文。",
+      "new_body_revision_required_beyond_original_findings": false
+    },
+    {
+      "id": "MI04",
+      "decision": "uphold_partial_support_narrow_required_expansion",
+      "claims": [
+        "treatment-2"
+      ],
+      "existing_body_status": "现有条件式概述正确；不是给所有心梗患者相同溶栓方案，也未包含剂量或可执行时间阈值。",
+      "root_finding_accuracy": "心梗类型分流和出血排除条件值得解释，且不能仅用泛材料冒充逐分句双源。原报告称复合句未全部被两页直接支持成立，但不可解读为时间/PCI可及性都没有支持。",
+      "counterexample_to_overbroad_interpretation": "S05 明确在PCI不能迅速获得时考虑溶栓，S02 明确越早治疗越有利；当前句不是无来源的创造。",
+      "source_checks": [
+        {
+          "source": "S05",
+          "locator": "Emergency treatments: thrombolytic medicines",
+          "supports": "溶栓用途、出血风险及PCI无法及时获得的场景。"
+        },
+        {
+          "source": "S02",
+          "locator": "Medications: clot busters",
+          "supports": "较早应用与心肌损伤减少的关系。"
+        },
+        {
+          "source": "S14",
+          "locator": "1.1.1–6;1.1.19",
+          "supports": "英国STEMI再灌注路径按发病时间和PCI可及性选择。"
+        },
+        {
+          "source": "S15",
+          "locator": "5.3.1",
+          "supports": "美国指南以适合的STEMI为溶栓场景，非ST抬高且非真正后壁STEMI者存在无获益和伤害。"
+        }
+      ],
+      "minimum_report_adjustment": "只要求补清治疗类型与医生评估出血风险的必要边界，以及关键分句精确支持；不将专业禁忌全表、数字时间窗或完整NSTE-ACS算法设为小白页必需。",
+      "binding_gap_remaining": "NICE/美国指南独立编写但可能共享研究基础；美国联合指南的AHA摘要/JACC镜像不能再算额外独立来源。本次未读完整禁忌表。",
+      "new_body_revision_required_beyond_original_findings": false
+    },
+    {
+      "id": "MI05",
+      "decision": "uphold_depth_and_binding_requirements",
+      "claims": [
+        "medications-0",
+        "medications-1",
+        "prevention-2"
+      ],
+      "existing_body_status": "现有抗血小板、他汀及不自行启动每日阿司匹林的表述没有发现错误；ACE/β阻滞剂解释缺少属于专业维度深度。",
+      "root_finding_accuracy": "用户要求常见药物类别、作用和风险，此补写方向合理。阿司匹林的咨询与出血风险可由FDA/AHA直接支持，当前未登记两者属于证据绑定问题。",
+      "counterexample_to_overbroad_interpretation": "现稿没有给DAPT统一疗程；“不要形成通用期限”是未来防错提醒。也不能因为要求药物知识而把所有类别写成每个MI患者必须终身服用。",
+      "source_checks": [
+        {
+          "source": "S02",
+          "locator": "Medications: beta blockers; ACE inhibitors; statins",
+          "supports": "不同常见类别作用。"
+        },
+        {
+          "source": "S08",
+          "locator": "Medicines",
+          "supports": "独立机构的类别解释、抗血小板出血和他汀肌肉风险。"
+        },
+        {
+          "source": "S11",
+          "locator": "Should you take aspirin; Know the risks; How long DAPT",
+          "supports": "讨论阿司匹林个人获益风险及DAPT疗程条件。"
+        },
+        {
+          "source": "S12",
+          "locator": "Opening advice; Not Without Risks",
+          "supports": "每日用药咨询和出血/交互风险。"
+        },
+        {
+          "source": "S09",
+          "locator": "Items2–3",
+          "supports": "2025美国ACS联合指南默认DAPT限定非高出血风险，不能无条件推广。"
+        }
+      ],
+      "minimum_report_adjustment": "分开记录可保留的正确知识、需要补写的药物角色，以及需要迁移到作者证据账的支持。不要把FDA概述改写成所有一级预防均禁用阿司匹林。",
+      "binding_gap_remaining": "FDA与AHA是独立编写机构；AHA患者页、AHA专业摘要和同一联合指南不能互作独立第三来源。新增具体禁忌仍须真正对应。",
+      "new_body_revision_required_beyond_original_findings": false
+    },
+    {
+      "id": "MI06",
+      "decision": "uphold_pregnancy_scope_clarify_diet_completeness",
+      "claims": [
+        "diet-2",
+        "special_populations-2"
+      ],
+      "existing_body_status": "孕期/产后被同一句连接而紧接胎儿需求，存在适用对象歧义。饮食句只是与团队商定糖尿病/肾病适合份量限制，没有规定所有人统一限钾/限蛋白。",
+      "root_finding_accuracy": "孕期与产后的胎儿语境需分开有效；独立妊娠材料仍不足有效。对饮食只能说条件解释不足，不应称其已施加错误限制。",
+      "counterexample_to_overbroad_interpretation": "“agree suitable portions and restrictions with the care team”是一项按病情咨询的建议，现稿没有具体肾病饮食禁令。单一直接孕期来源不代表现有立即求救建议错误。",
+      "source_checks": [
+        {
+          "source": "S07",
+          "locator": "Pregnancy and heart attacks",
+          "supports": "妊娠/产后风险、立即求救以及孕期检查和药物安全；胎儿保护仅在妊娠语境。"
+        },
+        {
+          "source": "S02",
+          "locator": "Preparing for your appointment: other conditions; restrictions; medicine list",
+          "supports": "咨询并管理其他病情的广义做法；不支持某一CKD饮食具体限制。"
+        },
+        {
+          "source": "S08",
+          "locator": "Medicines",
+          "supports": "健康生活不能替代按医嘱用药这一分句；不是肾病饮食来源。"
+        }
+      ],
+      "minimum_report_adjustment": "孕期胎儿句加明确“孕期”条件即可消除对象歧义；其他独立支持不足保留缺口。饮食的可选具体例子按已有疾病/生命周期内容承接，不扩成重复的肾病食谱。",
+      "binding_gap_remaining": "孕期用药/检查安全仍只有一组直接来源；不能以泛心梗急救网页替代妊娠专门支持。",
+      "new_body_revision_required_beyond_original_findings": false
+    },
+    {
+      "id": "MI07",
+      "decision": "partly_overdemanding_remove_administrative_double_source_gate",
+      "claims": [
+        "daily_care-1",
+        "daily_care-2",
+        "prognosis_followup-1"
+      ],
+      "existing_body_status": "整理药单和复诊日期是低风险实用安排；症状报告的时点及检查复诊内容则是需医学证据的不同问题。",
+      "root_finding_accuracy": "daily_care-1 与 prognosis_followup-1 的精确医疗支持要求合理；daily_care-2 assessment仅因复诊日期未独立绑定而整体 partial_support 过度。用户要求双源的是关键行动/阈值/疗效/风险，不是每一个生活整理动词。",
+      "counterexample_to_overbroad_interpretation": "日期整理不引入新的就医时间、治疗或监測阈值，不能因缺两份专业材料单独阻止正文通过。不得反过来弱化针对新发胸痛、气短等症状行动时机的证据要求。",
+      "source_checks": [
+        {
+          "source": "S08",
+          "locator": "Rehabilitation; Medicines; Mental health; Prevent another attack",
+          "supports": "康复计划、费用/情绪困难咨询和疑似再发立即急救。"
+        },
+        {
+          "source": "S04",
+          "locator": "Recovering; Support after heart attack; symptom action boxes",
+          "supports": "康复/情绪支持及不同症状的求救分级。"
+        },
+        {
+          "source": "S02",
+          "locator": "Preparing for your appointment",
+          "supports": "记录症状发生时间和全部药物等实用安排。"
+        },
+        {
+          "source": "S09",
+          "locator": "Item9",
+          "supports": "血脂复查4–8周的计时基准为开始或调整降脂治疗；它不是统一出院后的等待期。"
+        }
+      ],
+      "minimum_report_adjustment": "撤销“保存复诊日期需要第二份独立医学来源”的硬性缺口，把医学行动和行政整理拆开。保留复诊关注项与症状变化分句的精确医学核验；不要求为文章新增数字时间窗才能过关。",
+      "binding_gap_remaining": "活动时疼痛/气短/疲劳的就医时机需要对应实际病情，本文已有新危险症状急救句；本次不未经反例就认定所有稳定康复症状必须急救，也不判定可以等常规复诊。",
+      "new_body_revision_required_beyond_original_findings": false
+    },
+    {
+      "id": "MI08",
+      "decision": "uphold_evidence_context_as_prospective_guardrails",
+      "claims": [
+        "care-1",
+        "diagnosis-2",
+        "treatment-2"
+      ],
+      "existing_body_status": "现稿按机构说明Mayo/NHS阿司匹林建议，未推荐无条件吸氧，也未把NSTEMI绝对等同部分堵塞。",
+      "root_finding_accuracy": "来源存在简化差异，原报告事实核对成立；evidence_context 分类本身合理，不应在后续清单升级成三个现有正文错误。",
+      "counterexample_to_overbroad_interpretation": "一所美国机构与英国NHS文字不同，不足以证明所有美国和英国急救规程冲突；现稿已有US Mayo/UK NHS归属，可保留。",
+      "source_checks": [
+        {
+          "source": "S04",
+          "locator": "While waiting for medical help",
+          "supports": "英国NHS公众页的阿司匹林建议和过敏条件。"
+        },
+        {
+          "source": "S06",
+          "locator": "When to see a doctor; Causes",
+          "supports": "Mayo要求先呼叫且服阿司匹林按医务人员建议；NSTEMI可完全堵塞。"
+        },
+        {
+          "source": "S02",
+          "locator": "Treatment opening paragraph",
+          "supports": "患者页确有立即供氧的泛化表述；不据此编写普遍供氧动作。"
+        },
+        {
+          "source": "S05",
+          "locator": "Emergency treatments: oxygen therapy",
+          "supports": "NHLBI已明确血氧低的条件，独立支持收窄供氧范围。"
+        },
+        {
+          "source": "S15",
+          "locator": "4.1",
+          "supports": "美国ACS指南不推荐非缺氧患者常规氧疗；临床阈值不是家庭自疗工具。"
+        },
+        {
+          "source": "S10",
+          "locator": "Item4: STEMI / Non-STEMI illustration text",
+          "supports": "AHA患者图示确实简化为完全/部分堵塞；不能覆盖Mayo的例外。"
+        }
+      ],
+      "minimum_report_adjustment": "保留为来源差异及未来编辑边界；“地区”用具体机构、目标读者和指南范围说明，不创造国家级绝对差异。无新反例不要求作者修改这三条已经正确保留条件的正文。",
+      "binding_gap_remaining": "此项本身不新增医学错误或单独的发布阻断；其他行动的逐主张证据缺口仍按对应条目处理。",
+      "new_body_revision_required_beyond_original_findings": false
+    }
+  ],
+  "acceptance_boundary": [
+    "这是对审核建议的独立挑战，未改动作者稿、共享sources/editorial、生产数据或原审核报告。",
+    "原稿 pending 不是本次判断依据；本次依据实际文本与已读原材料，正确但单源、精确绑定不足、内容深度及事实错误分别记录。",
+    "只要求原已确认的必要措辞修订及证据补足；无新医学反例，不额外扩张正文任务。",
+    "AHA/ACC联合指南正文与其摘要共一上游；NHLBI多页共一编写机构；不同官方域名不自动独立。",
+    "本报告自行概括材料并保留链接定位，不批量复制患者教育正文，也不代表执业医生临床签审。"
+  ],
+  "access_summary": {
+    "full_relevant_pages": 12,
+    "official_indexed_passages_only": 3,
+    "failed_direct_fetches": [
+      "NICE CG95:403",
+      "NICE NG185:403",
+      "JACC guideline:403"
+    ],
+    "inference_boundary": "官方索引条文足以判断本次具体建议的方向；不把未显示的禁忌清单、妊娠方案或完整指南当作已读。"
+  },
+  "decision_counts": {
+    "reviewed_findings": 8,
+    "original_verdict_overturned": false,
+    "new_medical_error_claims": 0,
+    "explicit_overdemand_removed": [
+      "MI07: follow-up-date organization double-source gate"
+    ],
+    "recommendation_urgency_clarification": [
+      "MI01: tarry stool prompt must mean immediate advice"
+    ],
+    "prospective_guardrails_not_current_errors": [
+      "MI02: NSTEMI obstruction",
+      "MI05: universal DAPT duration",
+      "MI08: oxygen and institutional guidance differences"
+    ]
+  }
+}

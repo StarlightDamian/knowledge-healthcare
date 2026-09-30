@@ -1,0 +1,2489 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "batch01-masld-targeted-recheck-2026-09-30",
+  "reviewer": "/root/emergency_content",
+  "reviewed_at": "2026-09-30",
+  "medical_reviewed": false,
+  "verdict": "needs_revision",
+  "target": {
+    "path": "drafts/batch-01/demand/masld.json",
+    "canonical_sha256": "dff08711ecfcb62c0f0e03e8784165bddb09a9addc2d1933604472fa265ec1a4",
+    "file_sha256": "638e14dba691e56df89a124b0f6b89bad63604c38eb0aab6741769894cd73bc7"
+  },
+  "prior_review": {
+    "path": "reports/batch-01-masld-independent.json",
+    "file_sha256": "2af5defb86f502089f63cc54da378a6dca3fe522bfa22bdca47a3f9bdea6cfe3",
+    "target_canonical_sha256": "7792e270a8b96ba750bdfeb88d1e010ab18d153c2c76ca30a4183f464ee48b1c",
+    "preserved": true
+  },
+  "scope": {
+    "sections": 14,
+    "current_claims_mapped": 80,
+    "new_sources_actually_read": 10,
+    "previous_sources_targetedly_reopened": 2,
+    "new_medication_claims": 15,
+    "mode": "Only changed statements, new source bindings and earlier concrete blockers; prior unchanged supported content reused."
+  },
+  "decision_counts": {
+    "single": 25,
+    "pass": 22,
+    "partial": 29,
+    "carry_pass": 2,
+    "binding_gap": 2
+  },
+  "release_recommendation": "Not yet complete cross-checked content. No coverage or clinical-status upgrade. Correct regulatory facts are not called false solely for lacking a second independent explanation.",
+  "resolved_findings": [
+    {
+      "prior_id": "M01",
+      "status": "resolved",
+      "current_claim_ids": [
+        "diagnosis-1",
+        "diagnosis-2"
+      ],
+      "evidence": "Current bilingual wording separates body measurements; EASL formula and AASLD section2 agree."
+    },
+    {
+      "prior_id": "M04",
+      "status": "resolved",
+      "current_claim_ids": [
+        "treatment-1",
+        "diet-6"
+      ],
+      "evidence": "Magnitude/durability now equivalent; advanced fibrosis translated and explained. Evidence gaps for other clauses separately retained."
+    },
+    {
+      "prior_id": "M02",
+      "status": "content_depth_improved_evidence_partly_open",
+      "current_claim_ids": [
+        "medications-0",
+        "medications-1",
+        "medications-2",
+        "medications-3",
+        "medications-4",
+        "medications-5",
+        "medications-6",
+        "medications-7",
+        "medications-8",
+        "medications-9",
+        "medications-10",
+        "medications-11",
+        "medications-12",
+        "medications-13",
+        "medications-14"
+      ],
+      "evidence": "Named mechanisms, representative adverse effects, emergency contact, adult F2-F3 and regional scope added; not blanket source-count acceptance."
+    },
+    {
+      "prior_id": "M03",
+      "status": "GI_bleeding_and_population_fixed_other_actions_open",
+      "current_claim_ids": [
+        "red_flags-1",
+        "red_flags-2",
+        "red_flags-3"
+      ],
+      "evidence": "New GI materials support the general-population bleeding action; cirrhosis conditions now explicit."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "masld-niddk-facts",
+      "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash/definition-facts",
+      "source_metadata_sha256": "2546964366672e9ae85e9694d5446a932fe584ec05f57c789ebc0004ab5c2411",
+      "declared_independence_group": "US-NIH",
+      "access_status": "prior_actual_read_reused_without_redundant_fetch",
+      "read_in_this_recheck": false,
+      "prior_read_report": "reports/batch-01-masld-independent.json",
+      "prior_source_metadata_sha256": "2546964366672e9ae85e9694d5446a932fe584ec05f57c789ebc0004ab5c2411",
+      "metadata_unchanged": true
+    },
+    {
+      "source_id": "masld-niddk-causes",
+      "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash/symptoms-causes",
+      "source_metadata_sha256": "c215fb64144265a28f2440006db2478f4c0d00c6f136777299398a3923791b2b",
+      "declared_independence_group": "US-NIH",
+      "access_status": "prior_actual_read_reused_without_redundant_fetch",
+      "read_in_this_recheck": false,
+      "prior_read_report": "reports/batch-01-masld-independent.json",
+      "prior_source_metadata_sha256": "c215fb64144265a28f2440006db2478f4c0d00c6f136777299398a3923791b2b",
+      "metadata_unchanged": true
+    },
+    {
+      "source_id": "masld-niddk-diagnosis",
+      "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash/diagnosis",
+      "source_metadata_sha256": "fda37e186c3d64f6e680632a60b38420d9ff2ae95a4c7fba58cee7d8c1e00178",
+      "declared_independence_group": "US-NIH",
+      "access_status": "prior_actual_read_reused_without_redundant_fetch",
+      "read_in_this_recheck": false,
+      "prior_read_report": "reports/batch-01-masld-independent.json",
+      "prior_source_metadata_sha256": "fda37e186c3d64f6e680632a60b38420d9ff2ae95a4c7fba58cee7d8c1e00178",
+      "metadata_unchanged": true
+    },
+    {
+      "source_id": "masld-niddk-treatment",
+      "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash/treatment",
+      "source_metadata_sha256": "543d53bdd0180d15e6d2dab124da6ab90ecbcb95b9394d2592f3a3f6b9bf9af6",
+      "declared_independence_group": "US-NIH",
+      "access_status": "prior_actual_read_reused_without_redundant_fetch",
+      "read_in_this_recheck": false,
+      "prior_read_report": "reports/batch-01-masld-independent.json",
+      "prior_source_metadata_sha256": "543d53bdd0180d15e6d2dab124da6ab90ecbcb95b9394d2592f3a3f6b9bf9af6",
+      "metadata_unchanged": true
+    },
+    {
+      "source_id": "masld-niddk-diet",
+      "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash/eating-diet-nutrition",
+      "source_metadata_sha256": "236d4536bd004463aef6662bbc91528766030f519ce6e8c11d645d6d5f2d8b58",
+      "declared_independence_group": "US-NIH",
+      "access_status": "prior_actual_read_reused_without_redundant_fetch",
+      "read_in_this_recheck": false,
+      "prior_read_report": "reports/batch-01-masld-independent.json",
+      "prior_source_metadata_sha256": "236d4536bd004463aef6662bbc91528766030f519ce6e8c11d645d6d5f2d8b58",
+      "metadata_unchanged": true
+    },
+    {
+      "source_id": "masld-easl-2024",
+      "url": "https://easlcampus.eu/sites/default/files/2024-06/EASL_CPGs_on_MASLD.pdf",
+      "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131",
+      "declared_independence_group": "EU-EASL-EASD-EASO",
+      "access_status": "original_material_reopened_for_changed_claims",
+      "read_in_this_recheck": true,
+      "locations_read": "Printedp23 resmetirom; p32 decompensated cirrhosis surgery recommendation",
+      "accessed_at": "2026-09-30",
+      "prior_read_report": "reports/batch-01-masld-independent.json"
+    },
+    {
+      "source_id": "masld-fda-resmetirom",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-patients-liver-scarring-due-fatty-liver-disease",
+      "source_metadata_sha256": "931da76b34c43231ed3cdcbcb56a18df3996d9f5069e4bf139518c2d554594e9",
+      "declared_independence_group": "US-FDA",
+      "access_status": "prior_actual_read_reused_without_redundant_fetch",
+      "read_in_this_recheck": false,
+      "prior_read_report": "reports/batch-01-masld-independent.json",
+      "prior_source_metadata_sha256": "931da76b34c43231ed3cdcbcb56a18df3996d9f5069e4bf139518c2d554594e9",
+      "metadata_unchanged": true
+    },
+    {
+      "source_id": "masld-fda-accelerated",
+      "url": "https://www.fda.gov/drugs/accelerated-approval-program/ongoing-non-malignant-hematological-neurological-and-other-disorder-indications-accelerated",
+      "source_metadata_sha256": "b50bdfbd4abffe6a6782bd3b4ba03a4585bb6fd38bb7e2801775d1f8be820ff9",
+      "declared_independence_group": "US-FDA",
+      "access_status": "prior_actual_read_reused_without_redundant_fetch",
+      "read_in_this_recheck": false,
+      "prior_read_report": "reports/batch-01-masld-independent.json",
+      "prior_source_metadata_sha256": "b50bdfbd4abffe6a6782bd3b4ba03a4585bb6fd38bb7e2801775d1f8be820ff9",
+      "metadata_unchanged": true
+    },
+    {
+      "source_id": "masld-niddk-cirrhosis",
+      "url": "https://www.niddk.nih.gov/health-information/liver-disease/cirrhosis/treatment",
+      "source_metadata_sha256": "3eef12e68d30a77974eb9a44dabd8943f4cb659564b490663461672b5655497f",
+      "declared_independence_group": "US-NIH",
+      "access_status": "prior_actual_read_reused_without_redundant_fetch",
+      "read_in_this_recheck": false,
+      "prior_read_report": "reports/batch-01-masld-independent.json",
+      "prior_source_metadata_sha256": "3eef12e68d30a77974eb9a44dabd8943f4cb659564b490663461672b5655497f",
+      "metadata_unchanged": true
+    },
+    {
+      "source_id": "masld-nhs-cirrhosis",
+      "url": "https://www.nhs.uk/conditions/cirrhosis/",
+      "source_metadata_sha256": "2c68679d5f657797a88cb9515ed6590ec3ad81f3fdb764694fb3ea1be0753d4d",
+      "declared_independence_group": "UK-NHS",
+      "access_status": "prior_actual_read_reused_without_redundant_fetch",
+      "read_in_this_recheck": false,
+      "prior_read_report": "reports/batch-01-masld-independent.json",
+      "prior_source_metadata_sha256": "2c68679d5f657797a88cb9515ed6590ec3ad81f3fdb764694fb3ea1be0753d4d",
+      "metadata_unchanged": true
+    },
+    {
+      "source_id": "masld-fda-wegovy",
+      "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-treatment-serious-liver-disease-known-mash",
+      "source_metadata_sha256": "671cf8c0a8a29c16c9176267a6a9f85535f79aa759d6ec189a68720fd6772366",
+      "declared_independence_group": "US-FDA",
+      "access_status": "original_material_reopened_for_changed_claims",
+      "read_in_this_recheck": true,
+      "locations_read": "Action; Disease or condition; Data supporting Wegovy; Safety",
+      "accessed_at": "2026-09-30",
+      "prior_read_report": "reports/batch-01-masld-independent.json"
+    },
+    {
+      "source_id": "masld-niddk-children-treatment",
+      "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash-children/treatment",
+      "source_metadata_sha256": "7c27d8f322c78bf9452ad99d4764f285e4e03b2cc057fef20dab42d72603c394",
+      "declared_independence_group": "US-NIH",
+      "access_status": "prior_actual_read_reused_without_redundant_fetch",
+      "read_in_this_recheck": false,
+      "prior_read_report": "reports/batch-01-masld-independent.json",
+      "prior_source_metadata_sha256": "7c27d8f322c78bf9452ad99d4764f285e4e03b2cc057fef20dab42d72603c394",
+      "metadata_unchanged": true
+    },
+    {
+      "source_id": "masld-aasld-fib4",
+      "url": "https://www.aasld.org/liver-fellow-network/core-series/clinical-pearls/spare-me-jab-noninvasive-assessment-patients-masld",
+      "source_metadata_sha256": "521c2722ea17d1ca0bf91b362d949dcc2e54d36766dd97d0c614bc6c3c6f5713",
+      "declared_independence_group": "US-AASLD",
+      "access_status": "original_material_opened_and_relevant_sections_read",
+      "read_in_this_recheck": true,
+      "observed_version": "2023-12-17; author Sofi Damjanovska GI Fellow",
+      "locations_read": "Sections2,3,4 and Take Home Points; cites AASLD2023 guidance and McPherson age study",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "masld-ashp-resmetirom",
+      "url": "https://medlineplus.gov/druginfo/meds/a624021.html",
+      "source_metadata_sha256": "5d173cf07714e4c173435f68630c07aa8f9b90ca778c5a7669e6680176a23b4e",
+      "declared_independence_group": "US-ASHP",
+      "access_status": "original_material_opened_and_relevant_sections_read",
+      "read_in_this_recheck": true,
+      "observed_version": "Last revised2025-09-15; AHFS/ASHP copyright",
+      "locations_read": "Why prescribed; Precautions; Serious effects; Follow-up",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "masld-ashp-semaglutide",
+      "url": "https://medlineplus.gov/druginfo/meds/a618008.html",
+      "source_metadata_sha256": "ff90eff927a192d4fa097da79076b9eee9ca48cf73fcea28b377f8ede8c33b29",
+      "declared_independence_group": "US-ASHP",
+      "access_status": "original_material_opened_and_relevant_sections_read",
+      "read_in_this_recheck": true,
+      "observed_version": "Last revised2026-05-15; AHFS/ASHP copyright",
+      "locations_read": "Important Warning; Uses; Precautions incl pregnancy; Common/Serious effects",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "masld-fda-wegovy-label-2025",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215256s024lbl.pdf",
+      "source_metadata_sha256": "ad873864e914824e2be654b839f4d6c9f2dd88b2a374eb762a46437242e904f6",
+      "declared_independence_group": "US-FDA",
+      "access_status": "original_material_opened_and_relevant_sections_read",
+      "read_in_this_recheck": true,
+      "observed_version": "Revised08/2025; reference5644137",
+      "locations_read": "§1,§4,§5.1–5.7,§8.1,§8.3; printedpp3,5–6,14–15",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "masld-ema-resmetirom",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/rezdiffra",
+      "source_metadata_sha256": "14f301628c9040df7b33a312741a2666610b66abf836cbc31e3ea246a28d0ed3",
+      "declared_independence_group": "EU-EMA",
+      "access_status": "original_material_opened_and_relevant_sections_read",
+      "read_in_this_recheck": true,
+      "observed_version": "EPAR page updated2026-05-27; authorisation2025-08-18",
+      "locations_read": "Overview; mechanism; benefits; risks; Why authorised; Therapeutic indication; authorisation details",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "masld-ema-resmetirom-label",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/rezdiffra-epar-product-information_en.pdf",
+      "source_metadata_sha256": "903b79403062b45512c70634b9e777ce9150263c3281c572f9e3d33fef512b5e",
+      "declared_independence_group": "EU-EMA",
+      "access_status": "original_material_opened_and_relevant_sections_read",
+      "read_in_this_recheck": true,
+      "observed_version": "Product information updated2026-05-27",
+      "locations_read": "SmPC§4.6; leaflet1,2,4 printedpp31–34",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "masld-resmetirom-us-label-2026",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e67ea09f-a840-439c-86c8-f98585f978b2",
+      "source_metadata_sha256": "8e13d2411b1d54035d61c50616d7b91ba10fab3ec9159c6779e52a21704cffdf",
+      "declared_independence_group": "US-FDA",
+      "access_status": "original_material_opened_and_relevant_sections_read",
+      "read_in_this_recheck": true,
+      "observed_version": "DailyMed updated2026-07-29; label revised7/2026; Madrigal",
+      "locations_read": "§1,§5.1–5.3,§17 and Patient information",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "masld-mayo-gi-bleeding",
+      "url": "https://www.mayoclinic.org/diseases-conditions/gastrointestinal-bleeding/symptoms-causes/syc-20372729",
+      "source_metadata_sha256": "4013e09e7891625b6757649b99d6fa2f271bd6bf981c577cf8d4b2568c7e63b1",
+      "declared_independence_group": "US-MAYO",
+      "access_status": "original_material_opened_and_relevant_sections_read",
+      "read_in_this_recheck": true,
+      "observed_version": "Official patient page retrieved2026-09-30",
+      "locations_read": "Symptoms of shock; When to see a doctor",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "masld-niddk-gi-bleeding",
+      "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/gastrointestinal-bleeding/symptoms-causes",
+      "source_metadata_sha256": "20856f73e5b228bd0059880552f1afb6ff0b730f6d383dfdc0f88c4b5c2dccc3",
+      "declared_independence_group": "US-NIH",
+      "access_status": "original_material_opened_and_relevant_sections_read",
+      "read_in_this_recheck": true,
+      "observed_version": "Last reviewedJuly2024",
+      "locations_read": "Acute GI bleeding; Shock; review footer",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "masld-niddk-insulin-definition",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes",
+      "source_metadata_sha256": "2411c3de88459a2430e5d604a21813c2eb85c28d900c233b3ad17d600ebf8693",
+      "declared_independence_group": "US-NIH",
+      "access_status": "original_material_opened_and_relevant_sections_read",
+      "read_in_this_recheck": true,
+      "observed_version": "Official page retrieved2026-09-30",
+      "locations_read": "What causes type2 diabetes? insulin resistance definition",
+      "accessed_at": "2026-09-30"
+    }
+  ],
+  "independence_and_shared_basis": {
+    "ASHP": "Both drug monographs explicitly AHFS/ASHP authorship. MedlinePlus hosting does not make them NIDDK/NIH-written; the two monographs are one ASHP group.",
+    "regulatory_labels": "DailyMed Rezdiffra US label and EMA Rezdiffra product information name the same Madrigal sponsor. Separate regulatory jurisdictions do not prove independent underlying authorship. Agency EPAR overview is separately written explanation; legal approval remains a jurisdiction-specific primary fact.",
+    "EASL": "EASL/EASD/EASO remains one joint guideline group.",
+    "AASLD": "New Clinical Pearls article is authored society education, cites AASLD2023 guidance and McPherson age study; it is not itself a new independently designed diagnostic study. EASL/AASLD share underlying validation literature.",
+    "resmetirom_trials": "EASL, FDA and EMA discuss MAESTRO-NASH/related programme; distinct written assessments, shared pivotal evidence, not three replications.",
+    "semaglutide_trials": "FDA announcement/table/label refer to the same ongoing MASH confirmatory programme. ASHP does not provide independent outcome-trial replication."
+  },
+  "pregnancy_specific_recheck": {
+    "current_claim_id": "medications-11",
+    "fda_read": "2025 Wegovy §8.1 printedp14 and §8.3 printedp15; MASH benefit-versus-fetal-risk condition differs from CV/weight-loss instructions.",
+    "ashp_read": "Semaglutide Precautions gives a general planned-pregnancy stop instruction without the MASH exception. Supports contacting prescriber, not the exact exception.",
+    "resmetirom_eu_read": "EMA leaflet2 and SmPC4.6 separately address resmetirom pregnancy/lactation; not evidence for Wegovy MASH exception.",
+    "decision": "Current text accurately preserves the FDA-specific exception; not independently cross-checked in the attached second-source set.",
+    "clinical_advice_boundary": "No individual prescription, new dosing recommendation or pregnancy treatment recommendation created."
+  },
+  "bilingual_review": {
+    "result": "prior_specific_mismatches_resolved",
+    "checked_changes": "All current paired claims read/mapped; emphasis FIB-4 inputs, weight-loss magnitude, advanced fibrosis, adult F2-F3, US/EU dates, symptoms/actions and pregnancy exception.",
+    "remaining_issue": "Evidence scope/independence rather than a newly found material Chinese-English threshold mismatch."
+  },
+  "mece_review": {
+    "coding": [],
+    "numerator_change": 0,
+    "unchanged_boundary": "Parent MASLD, mentioned MASH and cirrhosis do not automatically cover independent ICD leaves."
+  },
+  "section_reviews": [
+    {
+      "section": "summary",
+      "content_sha256": "3bb37a30c5494a39e4361a031c79a2817e304ef816ae4c7164a8d5d3e8694203",
+      "author_record_sha256": "dc08e814480aa729b2d8131529f71da5d3ab7284af99dd0c03301731f2272db7",
+      "claim_reviews": [
+        {
+          "id": "summary-0",
+          "text_sha256": "2f2424f2495ad1cccff9f338ba2f08f22aefb2c4c38c4d8be3ce20436690ab22",
+          "author_claim_sha256": "0d5d1d42671ea7763dfaff32756571a6a9b2f50b2188ea5bda0c2af7668ebe12",
+          "kind": "explanation",
+          "prior_same_text_claim_id": "summary-0",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "single",
+          "assessment": "旧范围错配已去掉，当前诚实单源；定义第二来源仍缺。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp1-4; Fig.1; Table3-4",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "summary-1",
+          "text_sha256": "3928634bcf84d5508f0290d3a2fe1f4832fd261a2fc88d6cbf2f833c65b2e922",
+          "author_claim_sha256": "fd8ff76d3b1f9328dd29feb214c599fd77389f8b223e28128c4bec6e4000f846",
+          "kind": "explanation",
+          "prior_same_text_claim_id": "summary-1",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "single",
+          "assessment": "正文未变，保留原单源结果，不重读原页。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-causes",
+              "locator": "Symptoms; Health conditions and diseases; Genes",
+              "source_metadata_sha256": "c215fb64144265a28f2440006db2478f4c0d00c6f136777299398a3923791b2b"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "summary-2",
+          "text_sha256": "36239c9785185a15e9d3e535e8c6c4d065364065c312b50c58a195633e239f90",
+          "author_claim_sha256": "bffb2246becc32b49b90c14fe04324fcaf799e39ee05da76f7bd0fd49cb77457",
+          "kind": "explanation",
+          "prior_same_text_claim_id": "summary-2",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "pass",
+          "assessment": "新增EASL定义段与原NIDDK病理解释相符。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-facts",
+              "locator": "What is NAFLD? NAFL/NASH; Who is more likely?",
+              "source_metadata_sha256": "2546964366672e9ae85e9694d5446a932fe584ec05f57c789ebc0004ab5c2411"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp1-4; Fig.1; Table3-4",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "summary-3",
+          "text_sha256": "b821011b7ee21858e0cbe4397f6446670d752fd0cb99b804ac3ba6a3230bf11d",
+          "author_claim_sha256": "300e6d2975696a22d60a328a72107110401264002118bd7309a8d1dc55f4bc86",
+          "kind": "explanation",
+          "prior_same_text_claim_id": "summary-3",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "single",
+          "assessment": "正文未变，保留原单源结果。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp1-4; Fig.1; Table3-4",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        }
+      ]
+    },
+    {
+      "section": "causes_risks",
+      "content_sha256": "e257d4f85ab4f4176559442a0fb1820a6dddd3f0eaa54d8c8c6d3265d4b45a34",
+      "author_record_sha256": "926a6ad8fbc5a25a9381a5e9512aca18f82017c9f4791a51ecf93923d30f4b11",
+      "claim_reviews": [
+        {
+          "id": "causes_risks-0",
+          "text_sha256": "5491248ab9864e49092b2236bb14bd898f187aa49053a71f351da1d9286786a7",
+          "author_claim_sha256": "7faa8a0a4eb39c2a5ef9715f6cd0461a7a0fefca00c71959a552f78d6870b7ec",
+          "kind": "explanation",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "删除单顿食物断言是修正；EASL当前pp1-4定位尚未完整支持多因素中的普通遗传/环境范围。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-causes",
+              "locator": "Symptoms; Health conditions and diseases; Genes",
+              "source_metadata_sha256": "c215fb64144265a28f2440006db2478f4c0d00c6f136777299398a3923791b2b"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp1-4; Fig.1; Table3-4",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "causes_risks-1",
+          "text_sha256": "e83dc47da9a7fdeed573840aa8ef73e04b29173f88b137acd945534b531ed646",
+          "author_claim_sha256": "f699ae3843b148c2c78ef8584fad7b8f5869449880ccd787553dc1fe5217ebaf",
+          "kind": "explanation",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "新增NIDDK糖尿病定义已实际读，术语支持补齐；两NIH页仍一组。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-insulin-definition",
+              "locator": "What causes type2 diabetes?",
+              "source_metadata_sha256": "2411c3de88459a2430e5d604a21813c2eb85c28d900c233b3ad17d600ebf8693"
+            },
+            {
+              "source_id": "masld-niddk-causes",
+              "locator": "Symptoms; Health conditions and diseases; Genes",
+              "source_metadata_sha256": "c215fb64144265a28f2440006db2478f4c0d00c6f136777299398a3923791b2b"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "causes_risks-2",
+          "text_sha256": "d3332453a8e8f5d872c9c900ee4060fb555fd4c911af8748c049c91b4c67894e",
+          "author_claim_sha256": "866f15e7abb72411da0b0896d7fed5d76531548403a3d22532e4d9d89a1df1e7",
+          "kind": "risk",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "NIDDK代谢风险与EASL Table3对应，已拆开原复合风险。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-causes",
+              "locator": "Symptoms; Health conditions and diseases; Genes",
+              "source_metadata_sha256": "c215fb64144265a28f2440006db2478f4c0d00c6f136777299398a3923791b2b"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp1-4; Fig.1; Table3-4",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "causes_risks-3",
+          "text_sha256": "bb6f4319c0b5709f6fd123ff128e71f768d1fd61fd9520484501987238ddf7c2",
+          "author_claim_sha256": "eba924c8066ffafb0c1a6513e0614a66c840f667e03551e7419047ccba2d59a7",
+          "kind": "risk",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "年龄已改绑facts，支持范围修正；两NIH页一组。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-causes",
+              "locator": "Symptoms; Health conditions and diseases; Genes",
+              "source_metadata_sha256": "c215fb64144265a28f2440006db2478f4c0d00c6f136777299398a3923791b2b"
+            },
+            {
+              "source_id": "masld-niddk-facts",
+              "locator": "What is NAFLD? NAFL/NASH; Who is more likely?",
+              "source_metadata_sha256": "2546964366672e9ae85e9694d5446a932fe584ec05f57c789ebc0004ab5c2411"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "causes_risks-4",
+          "text_sha256": "d7313e2975322df203e720a30d940ee49ce5dd952073fafc4bcda8aa34a595ea",
+          "author_claim_sha256": "48c9051aee3e6466899cf5d76d22725fa01b10cb56f002bd9d2b69e54c64dceb",
+          "kind": "explanation",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "已独立成条，当前两定位均EASL。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp20 Fig.3 normal-weight branch; p28 nutrition",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp1-4; Fig.1; Table3-4",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "causes_risks-5",
+          "text_sha256": "2695015eaebe33d17a33e5858d4339d4c06d801e189a12d95a07ce10d06fbfdf",
+          "author_claim_sha256": "46edacba1c1da94d90098b2131691d470321fd7334838064b03d663b5870047f",
+          "kind": "risk",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "酒精与代谢叠加风险仍单源。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp7 Alcohol recommendations",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "causes_risks-6",
+          "text_sha256": "cf925b0a619e1ba2be8b24361171e059ef46d9cbded23a81f61a2cd4534535a9",
+          "author_claim_sha256": "75396016582d7dc2823988c3b9d0a7f0cfccd36b2f58e5c301fca76da85c2677",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "记录饮酒行动从风险中拆出；NIDDK Medical history与EASL Alcohol分别支持。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp7 Alcohol recommendations",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-niddk-diagnosis",
+              "locator": "Medical history; Physical exam",
+              "source_metadata_sha256": "fda37e186c3d64f6e680632a60b38420d9ff2ae95a4c7fba58cee7d8c1e00178"
+            }
+          ],
+          "needs_second_independent_source": false
+        }
+      ]
+    },
+    {
+      "section": "red_flags",
+      "content_sha256": "45122e395d9d906b2f4cffcfbda5fe815fb924e13ad20f03ea7096a09bb7692a",
+      "author_record_sha256": "f7230f3e864a7841c5ce9a224dba92aef2c8611063c34e493c1dbdd89de9aab2",
+      "claim_reviews": [
+        {
+          "id": "red_flags-0",
+          "text_sha256": "d8a5235f7076a92fdd988539bd088e89734c7f9d3348fd2305314e75596dcead",
+          "author_claim_sha256": "e243e173572658b8af48af3c8d76495b9d13931689f0016b87fb02287d046add",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "新导读仍泛指突然意识变化；GI资料只支持伴出血/休克的意识变化，NHS适用肝硬化。导读需随分条限定或补泛人群来源。",
+          "supports": [
+            {
+              "source_id": "masld-mayo-gi-bleeding",
+              "locator": "Symptoms of shock; When to see a doctor",
+              "source_metadata_sha256": "4013e09e7891625b6757649b99d6fa2f271bd6bf981c577cf8d4b2568c7e63b1"
+            },
+            {
+              "source_id": "masld-niddk-gi-bleeding",
+              "locator": "Acute GI bleeding; Shock",
+              "source_metadata_sha256": "20856f73e5b228bd0059880552f1afb6ff0b730f6d383dfdc0f88c4b5c2dccc3"
+            },
+            {
+              "source_id": "masld-nhs-cirrhosis",
+              "locator": "Immediate action required",
+              "source_metadata_sha256": "2c68679d5f657797a88cb9515ed6590ec3ad81f3fdb764694fb3ea1be0753d4d"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "red_flags-1",
+          "text_sha256": "b5e643d75388bbce69476979370bbb3c1690d7c2175ef1a121602320d59f7d11",
+          "author_claim_sha256": "e7a256db3676a1f6db9a700146fc52896a1ea3dbef1cd546d2c0fe9255f2df9c",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "新增Mayo Symptoms of shock/When to see a doctor与NIDDK Acute GI bleeding/Shock完整支持一般人群行动，已纠正原人群泛化。",
+          "supports": [
+            {
+              "source_id": "masld-mayo-gi-bleeding",
+              "locator": "Symptoms of shock; When to see a doctor",
+              "source_metadata_sha256": "4013e09e7891625b6757649b99d6fa2f271bd6bf981c577cf8d4b2568c7e63b1"
+            },
+            {
+              "source_id": "masld-niddk-gi-bleeding",
+              "locator": "Acute GI bleeding; Shock",
+              "source_metadata_sha256": "20856f73e5b228bd0059880552f1afb6ff0b730f6d383dfdc0f88c4b5c2dccc3"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "red_flags-2",
+          "text_sha256": "2df1e2a753e2021b0f25f32ffe5f8b1bde7b11a9cdfc422cccf61aa9348f6cba",
+          "author_claim_sha256": "460b428001b9c3cb1f5fa1db23944fc710208e3cfb2feca11d837643abb0987d",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "已明确肝硬化人群，范围修正；神经急救仍仅NHS。",
+          "supports": [
+            {
+              "source_id": "masld-nhs-cirrhosis",
+              "locator": "Immediate action required",
+              "source_metadata_sha256": "2c68679d5f657797a88cb9515ed6590ec3ad81f3fdb764694fb3ea1be0753d4d"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "red_flags-3",
+          "text_sha256": "497999197bb987202090fb20485c34d96e71eea1ff7760a6eeb20b313a34c3d0",
+          "author_claim_sha256": "d3ed1c32c54e8502bdf2872ad7bd14eba44e0eaf19d7a6e80b96bc93a4fe01dd",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "已明确肝硬化人群，范围修正；及时就医仍仅NHS。",
+          "supports": [
+            {
+              "source_id": "masld-nhs-cirrhosis",
+              "locator": "Urgent advice",
+              "source_metadata_sha256": "2c68679d5f657797a88cb9515ed6590ec3ad81f3fdb764694fb3ea1be0753d4d"
+            }
+          ],
+          "needs_second_independent_source": true
+        }
+      ]
+    },
+    {
+      "section": "care",
+      "content_sha256": "671c94509919ef8478679014d3b14dc875894ef7503b4f63a9a496477c1fc962",
+      "author_record_sha256": "37cddbc2da28edb7ae89edd987ca45736f4e6813ed0d2420abd0d5cac770afa6",
+      "claim_reviews": [
+        {
+          "id": "care-0",
+          "text_sha256": "e749a5e9b347d22f9db13f7c9cbcc53e443795e13646d55d6feb0bf2998cbd6b",
+          "author_claim_sha256": "d8e89e8084d8d13bace9b6f243836ac82dd59c1c17aa6770447f08bf18393d33",
+          "kind": "explanation",
+          "prior_same_text_claim_id": "care-0",
+          "review_mode": "carry_forward_supported_content",
+          "decision": "carry_pass",
+          "assessment": "正文与原通过项相同，新定位未改变支持范围；继承原结论，无重新搜索。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp9-11; p10 FIB-4 formula; Fig.2",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-niddk-diagnosis",
+              "locator": "Medical history; Physical exam",
+              "source_metadata_sha256": "fda37e186c3d64f6e680632a60b38420d9ff2ae95a4c7fba58cee7d8c1e00178"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "care-1",
+          "text_sha256": "973146adc7b6d7ee6e7af728dd3b7a495f069d3fb25229a1a53e081534e6fa83",
+          "author_claim_sha256": "1efad4ae0366a168846f319089f4aae2085c21d5bcb3fedc4b8a42aee86c5276",
+          "kind": "action",
+          "prior_same_text_claim_id": "care-1",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "partial",
+          "assessment": "原复合清单与轻度影像风险主张未改，现仅NIH；原缺口仍在。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-diagnosis",
+              "locator": "Medical history; Physical exam",
+              "source_metadata_sha256": "fda37e186c3d64f6e680632a60b38420d9ff2ae95a4c7fba58cee7d8c1e00178"
+            },
+            {
+              "source_id": "masld-niddk-diagnosis",
+              "locator": "Blood tests; Imaging tests",
+              "source_metadata_sha256": "fda37e186c3d64f6e680632a60b38420d9ff2ae95a4c7fba58cee7d8c1e00178"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "care-2",
+          "text_sha256": "18391f2ceab7972920cb6879d6aacacaddb549994a0dde044f17746228b15630",
+          "author_claim_sha256": "bdd320091bab6ad648751e3458876d27abf86356e2c67109892a2d73c690e9bc",
+          "kind": "action",
+          "prior_same_text_claim_id": "care-2",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "partial",
+          "assessment": "新增AASLD支持T2D/多代谢风险和分层；持续肝酶异常及转诊应把AASLD第4节/Take Home Points绑定进来，而非仅第2节。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp9-11; p10 FIB-4 formula; Fig.2",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-aasld-fib4",
+              "locator": "2 Primary risk assessment",
+              "source_metadata_sha256": "521c2722ea17d1ca0bf91b362d949dcc2e54d36766dd97d0c614bc6c3c6f5713"
+            }
+          ],
+          "needs_second_independent_source": true
+        }
+      ]
+    },
+    {
+      "section": "diagnosis",
+      "content_sha256": "1c6a36e6a2410ab81e72bdacdca809b870d80ee64dba69524560e827c1c3de0b",
+      "author_record_sha256": "11dfecf84a2d09c4e3fb0e61dd70928ff5aee0ad95f851cdcc11a82589048dab",
+      "claim_reviews": [
+        {
+          "id": "diagnosis-0",
+          "text_sha256": "2f23c7d348ffc8d9c0c435156f0a33704fb12d88adea203364bd781e3c621ca1",
+          "author_claim_sha256": "3b3a8472f146e42532ed47b0e7e55f19f7ab2e90edaaf79e27a27bed929b4e0e",
+          "kind": "explanation",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "拆分明确；EASL pp1-4不是完整纤维化检测路径，精确定位应包含pp9-12。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-diagnosis",
+              "locator": "Blood tests; Imaging tests",
+              "source_metadata_sha256": "fda37e186c3d64f6e680632a60b38420d9ff2ae95a4c7fba58cee7d8c1e00178"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp1-4; Fig.1; Table3-4",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "diagnosis-1",
+          "text_sha256": "d142266aafc83e044d7dd5e3bf231cb33031dfbf42c1db02ee58e61a565bda23",
+          "author_claim_sha256": "3816fb3dc32a4a20fdf91be1ce5f31dc74dee21e2eab5b264ea393c5f8bac284",
+          "kind": "explanation",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "原FIB-4输入错误已修正，两语把体型测量分开；NIDDK评估与EASL/AASLD公式分别支持。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-diagnosis",
+              "locator": "Medical history; Physical exam",
+              "source_metadata_sha256": "fda37e186c3d64f6e680632a60b38420d9ff2ae95a4c7fba58cee7d8c1e00178"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp1-4; Fig.1; Table3-4",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp9-11; p10 FIB-4 formula; Fig.2",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-aasld-fib4",
+              "locator": "2 Primary risk assessment",
+              "source_metadata_sha256": "521c2722ea17d1ca0bf91b362d949dcc2e54d36766dd97d0c614bc6c3c6f5713"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "diagnosis-2",
+          "text_sha256": "050da9e9c198ea43acc9a33388e5c06c0e330421020d29d64b8b48c378fe91c1",
+          "author_claim_sha256": "b1e73d1b0a4119a743f504aa1d07513f3d963f595816eb70e78774fe2c4d8f81",
+          "kind": "explanation",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "FIB-4输入、分层意义与局限在EASL p10及AASLD第2节一致；未新增自算处方。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp9-11; p10 FIB-4 formula; Fig.2",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-aasld-fib4",
+              "locator": "2 Primary risk assessment",
+              "source_metadata_sha256": "521c2722ea17d1ca0bf91b362d949dcc2e54d36766dd97d0c614bc6c3c6f5713"
+            },
+            {
+              "source_id": "masld-niddk-diagnosis",
+              "locator": "Blood tests; Imaging tests",
+              "source_metadata_sha256": "fda37e186c3d64f6e680632a60b38420d9ff2ae95a4c7fba58cee7d8c1e00178"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "diagnosis-3",
+          "text_sha256": "786ee4d687994f0d58078f8931d62722cf7258af83d4f11b351240b9d4b886e6",
+          "author_claim_sha256": "746ba25fabb8a5eaaf9a596164040971ffade078c488702094fc6cd4f18b2b7e",
+          "kind": "risk",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "EASL/AASLD均明确年龄局限，两语一致且未套统一阈值。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp9-11; p10 FIB-4 formula; Fig.2",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-aasld-fib4",
+              "locator": "2 Primary risk assessment",
+              "source_metadata_sha256": "521c2722ea17d1ca0bf91b362d949dcc2e54d36766dd97d0c614bc6c3c6f5713"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "diagnosis-4",
+          "text_sha256": "c0ceaee60a97dfd4efb29869c92a25f54ea7e4c7a36a3b5c97e3113929fee622",
+          "author_claim_sha256": "c6dfea149a90eca368594cf757a4b43689445432d625c22e7d7b0520f07a3269",
+          "kind": "risk",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "当前仅NIDDK绑定；可补上一轮已经实际读过的EASL p12非侵入局限，不能自动算已绑定。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-diagnosis",
+              "locator": "Blood tests; Imaging tests",
+              "source_metadata_sha256": "fda37e186c3d64f6e680632a60b38420d9ff2ae95a4c7fba58cee7d8c1e00178"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "diagnosis-5",
+          "text_sha256": "2c35d13fd25eff9062f568ef8581595e56761eca81171a65bb61f8a77fc11c44",
+          "author_claim_sha256": "9b3a59b018b3e00298c13af11d0410f8bbcf414484b1985c8559fa6052bf9a8c",
+          "kind": "explanation",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "删去未定位的炎症干扰硬度子句；NIDDK Imaging与EASL pp10-11支持现有检查解释。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-diagnosis",
+              "locator": "Blood tests; Imaging tests",
+              "source_metadata_sha256": "fda37e186c3d64f6e680632a60b38420d9ff2ae95a4c7fba58cee7d8c1e00178"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp9-11; p10 FIB-4 formula; Fig.2",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "diagnosis-6",
+          "text_sha256": "a8d26dfe3ef25a3e4ea6eee14a960168020fce400b6f667b5737c65ca64b6d50",
+          "author_claim_sha256": "820a3c891877b3efd44ea8cb2f1244b019fd4ccfe2fec4ca22205e7949287027",
+          "kind": "risk",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "正常肝酶不能排除进展期纤维化仍只有EASL p5。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp5 Normal aminotransferase paragraph",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "diagnosis-7",
+          "text_sha256": "f631fb555754ff0db06714234b7779481155f6d4b21d61ba146fe3560af34ab5",
+          "author_claim_sha256": "4922fda42a6d0402786e51af7f2eeae0d18020833cef73412923d2da53a4d977",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "新增AASLD第4节补足不明确/其他病因活检条件，与NIDDK Liver biopsy相容。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-diagnosis",
+              "locator": "Liver biopsy",
+              "source_metadata_sha256": "fda37e186c3d64f6e680632a60b38420d9ff2ae95a4c7fba58cee7d8c1e00178"
+            },
+            {
+              "source_id": "masld-aasld-fib4",
+              "locator": "4 When to consider liver biopsy",
+              "source_metadata_sha256": "521c2722ea17d1ca0bf91b362d949dcc2e54d36766dd97d0c614bc6c3c6f5713"
+            }
+          ],
+          "needs_second_independent_source": false
+        }
+      ]
+    },
+    {
+      "section": "differentials",
+      "content_sha256": "871c2debb6e27637fec7a645c71d581afb48e32b0e1a1cb6d1ddb226056a4d40",
+      "author_record_sha256": "e45871d9210f854ab546741c31fa8d5393c3aa324e0a2ec5b9ac810a12d48543",
+      "claim_reviews": [
+        {
+          "id": "differentials-0",
+          "text_sha256": "2e9460155a07ae3259a9a2eb6d7143ef155e90b500da8ce9ae12313617c37bd1",
+          "author_claim_sha256": "8172e8b45fd8982e288956cac5fec03369da0d772a46f5ca911426b145fcc6c1",
+          "kind": "explanation",
+          "prior_same_text_claim_id": "differentials-0",
+          "review_mode": "carry_forward_supported_content",
+          "decision": "carry_pass",
+          "assessment": "正文不变，继续原通过结论；仅定位格式变化。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp1-4; Fig.1; Table3-4",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-niddk-diagnosis",
+              "locator": "Medical history; Physical exam",
+              "source_metadata_sha256": "fda37e186c3d64f6e680632a60b38420d9ff2ae95a4c7fba58cee7d8c1e00178"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "differentials-1",
+          "text_sha256": "17d44d0c9885a628b36fd54bdbc0be0298972fea96d84ff224088b029ff4350d",
+          "author_claim_sha256": "9153d002303c2e37edc04bae892291360442b71c5be4d7ca1412a73a5b27754f",
+          "kind": "explanation",
+          "prior_same_text_claim_id": "differentials-1",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "binding_gap",
+          "assessment": "正文原已通过，但新NIDDK定位删掉Other causes，现Symptoms/Health conditions/Genes不覆盖药物/病毒鉴别；恢复准确定位即可，无须重写正确正文。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp1-4; Fig.1; Table3-4",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-niddk-causes",
+              "locator": "Symptoms; Health conditions and diseases; Genes",
+              "source_metadata_sha256": "c215fb64144265a28f2440006db2478f4c0d00c6f136777299398a3923791b2b"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "differentials-2",
+          "text_sha256": "dd6ffb54149b249e824cc3c4e9902df9db1feb68b67d05885ab9e4ba55392c85",
+          "author_claim_sha256": "00f5fca2e4732f77b619944899fa106b7fbe4a0fbe9be414d34a3299c791f61b",
+          "kind": "action",
+          "prior_same_text_claim_id": "differentials-2",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "single",
+          "assessment": "已改action，避免以explanation绕门槛；第二编写来源仍缺。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp1-4; Fig.1; Table3-4",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        }
+      ]
+    },
+    {
+      "section": "treatment",
+      "content_sha256": "e4f8b7a196cd81363b11a4d02329e3726c92850b14a0eee60b37ebaec2969b90",
+      "author_record_sha256": "00ed0911377ae318b3ff7b3be4b038cc6556b17117ee807a64a0ef77696e9720",
+      "claim_reviews": [
+        {
+          "id": "treatment-0",
+          "text_sha256": "39156af08de3c3fa018872e6097929f4288395a556e02e3aee0b792333af096a",
+          "author_claim_sha256": "5135e6c9d7baa457441b7613bc41397d248f887e6a19652c3cbe3ae448f0398a",
+          "kind": "explanation",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "多学科定位已修复；NIH How do doctors treat主要生活干预，并未完整支持按合并病安排全部治疗。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp19 Multidisciplinary care recommendation",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-niddk-treatment",
+              "locator": "How do doctors treat NAFLD?",
+              "source_metadata_sha256": "543d53bdd0180d15e6d2dab124da6ab90ecbcb95b9394d2592f3a3f6b9bf9af6"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "treatment-1",
+          "text_sha256": "ad70724da2194fb50ea2d60900a4a28035a9b663edf726b5ebdc25290dfac518",
+          "author_claim_sha256": "a8ce87ac0c40668e2c24edf623672137d84aab35f01557c16f50e7a28655b6d7",
+          "kind": "benefit",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "中英较大且维持的减重幅度条件已统一；EASL p20与NIDDK How do doctors treat支持。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp20 weight-loss recommendation and dose-response discussion",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-niddk-treatment",
+              "locator": "How do doctors treat NAFLD?",
+              "source_metadata_sha256": "543d53bdd0180d15e6d2dab124da6ab90ecbcb95b9394d2592f3a3f6b9bf9af6"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "treatment-2",
+          "text_sha256": "d300c36325f9d6274fc12caa267a7cd8209eface34429dcded56e74bdc8af58e",
+          "author_claim_sha256": "e0ef7f3c9046a7721982ea25396bfaa02926817d4723b397d7f74e6de1f3a7dc",
+          "kind": "risk",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "快速减重风险已独立成条；当前仅NIDDK。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-treatment",
+              "locator": "How do doctors treat NAFLD?",
+              "source_metadata_sha256": "543d53bdd0180d15e6d2dab124da6ab90ecbcb95b9394d2592f3a3f6b9bf9af6"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "treatment-3",
+          "text_sha256": "c0a62f28f1ef440975be1df2338a18437e7336cc5f4aad64ffd980d9700a5940",
+          "author_claim_sha256": "86e41f8c1535b1ed645b050e83bf4d5ea6885fa3cb1e5dea6f087830a3658074",
+          "kind": "benefit",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "活动收益已拆分并修正EASL页码，与NIDDK相符。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp21-22 Physical activity recommendation",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-niddk-treatment",
+              "locator": "How do doctors treat NAFLD?",
+              "source_metadata_sha256": "543d53bdd0180d15e6d2dab124da6ab90ecbcb95b9394d2592f3a3f6b9bf9af6"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "treatment-4",
+          "text_sha256": "ff1af2970c5fe351fb3bae1a7628db81566e987a4a9d46b9dbcfed5ca6135c44",
+          "author_claim_sha256": "c9c2fbaed7f95522a6aec23129854d93b2f9aa03b66d61f450f794987ce3507c",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "代谢合并病治疗独立成条，仍仅EASL。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp19 Multidisciplinary care recommendation",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "treatment-5",
+          "text_sha256": "7fa0b8334c961c92a9411e7f2cb04b48b4175c0eb9a9e6732b0ef95d2644b35c",
+          "author_claim_sha256": "2859ef4298bb69d20f3f20284e94e610a95dbdff95dc52a28febbd6d0e7eff75",
+          "kind": "explanation",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "删除与减重手术混绑；NIDDK/NHS均支持肝硬化并发症及严重肝衰竭移植评估。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-cirrhosis",
+              "locator": "Complications: varices, toxins, fluid, cancer; transplant",
+              "source_metadata_sha256": "3eef12e68d30a77974eb9a44dabd8943f4cb659564b490663461672b5655497f"
+            },
+            {
+              "source_id": "masld-nhs-cirrhosis",
+              "locator": "Risks of cirrhosis; Treatment",
+              "source_metadata_sha256": "2c68679d5f657797a88cb9515ed6590ec3ad81f3fdb764694fb3ea1be0753d4d"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "treatment-6",
+          "text_sha256": "7f297240ef3ef1c66091701daa415e8942f96ce0ea4dcd917330e1d965767899",
+          "author_claim_sha256": "1329981d8873bbf77b3f8459d5b929c10bfa5ed31cae023fe24f43351065a6b7",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "新读EASL p32确认失代偿条件与移植讨论准确，但整条仍一个指南编写组。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp27 Bariatric recommendations; p32 decompensated cirrhosis recommendation",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        }
+      ]
+    },
+    {
+      "section": "medications",
+      "content_sha256": "5cb24102a1084e630f0e8967cfaabb64ab500cacecfcb8825954a05f97a035f1",
+      "author_record_sha256": "c6bc9e1a5c4a642076e8e38cac4abcc61a8a2957c326154de970c3d0d9fa10cc",
+      "claim_reviews": [
+        {
+          "id": "medications-0",
+          "text_sha256": "2abb52834bf8c0a8e83abe5d326537456c0416fa4716cbf40a2ca5c9c92d8640",
+          "author_claim_sha256": "e0f740bcea25da9e76cbe6035da97bb510d6c819e9e1c0da4b2f135e3d97b9ae",
+          "kind": "explanation",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "美国与欧盟范围及实际核读日期已明确；不再暗示已核对中国/英国批准。",
+          "supports": [
+            {
+              "source_id": "masld-fda-resmetirom",
+              "locator": "Approval indication; mechanism; safety paragraphs",
+              "source_metadata_sha256": "931da76b34c43231ed3cdcbcb56a18df3996d9f5069e4bf139518c2d554594e9"
+            },
+            {
+              "source_id": "masld-fda-accelerated",
+              "locator": "Wegovy15Aug2025; Rezdiffra14Mar2024 rows",
+              "source_metadata_sha256": "b50bdfbd4abffe6a6782bd3b4ba03a4585bb6fd38bb7e2801775d1f8be820ff9"
+            },
+            {
+              "source_id": "masld-ema-resmetirom",
+              "locator": "Overview; How it works; Risks; Why authorised; Therapeutic indication",
+              "source_metadata_sha256": "14f301628c9040df7b33a312741a2666610b66abf836cbc31e3ea246a28d0ed3"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "medications-1",
+          "text_sha256": "e44ea62714b71163657bd5083530bfb5687af0e33fdf36fc560fd20045455f78",
+          "author_claim_sha256": "2c6c50047a09a096abb83f51479bb3d721334f291e2a9a2a382636b6e423c4da",
+          "kind": "threshold",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "现行美国标签§1与EASL p23独立医学解释支持成人非肝硬化F2-F3范围；共享MAESTRO试验另记，不称独立试验复制。",
+          "supports": [
+            {
+              "source_id": "masld-resmetirom-us-label-2026",
+              "locator": "1 Indications; 5.1-5.3 Warnings; 7 Interactions",
+              "source_metadata_sha256": "8e13d2411b1d54035d61c50616d7b91ba10fab3ec9159c6779e52a21704cffdf"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp23 Liver-directed THR agonists",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "medications-2",
+          "text_sha256": "cabaeb62cd84affeeb5ebdbc0f3d808978d2803cfc29badd7b8bb548f90197df",
+          "author_claim_sha256": "2f4f033a0a8ca8f512efd2d680f6dc312cafda99138e8c75f909fe5e0f0c8057",
+          "kind": "explanation",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "FDA/EASL/EMA分别说明机制与组织获益，ASHP支持药物类别；没有把单药作为所有脂肪肝治疗。",
+          "supports": [
+            {
+              "source_id": "masld-fda-resmetirom",
+              "locator": "Approval indication; mechanism; safety paragraphs",
+              "source_metadata_sha256": "931da76b34c43231ed3cdcbcb56a18df3996d9f5069e4bf139518c2d554594e9"
+            },
+            {
+              "source_id": "masld-ashp-resmetirom",
+              "locator": "Why prescribed; Precautions; Side effects",
+              "source_metadata_sha256": "5d173cf07714e4c173435f68630c07aa8f9b90ca778c5a7669e6680176a23b4e"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp23 Liver-directed THR agonists",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-ema-resmetirom",
+              "locator": "Overview; How it works; Risks; Why authorised; Therapeutic indication",
+              "source_metadata_sha256": "14f301628c9040df7b33a312741a2666610b66abf836cbc31e3ea246a28d0ed3"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "medications-3",
+          "text_sha256": "3d6766fd65d719b12889ce7a528805edc0747b2827e1318d2a5324cb150582a4",
+          "author_claim_sha256": "5c2a33956fdfe60f12e7ab72a82c36276aae25b8acae35b9fb7356bf12ae35f0",
+          "kind": "risk",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "常见胃肠道及胆囊风险有FDA、ASHP/EMA支持；肝毒性的明确命名主要是美国标签/公告和同一申办方欧盟标签，ASHP只有症状列表。需记录标签共同来源，补真正独立写作的明确肝损伤风险支持。",
+          "supports": [
+            {
+              "source_id": "masld-fda-resmetirom",
+              "locator": "Approval indication; mechanism; safety paragraphs",
+              "source_metadata_sha256": "931da76b34c43231ed3cdcbcb56a18df3996d9f5069e4bf139518c2d554594e9"
+            },
+            {
+              "source_id": "masld-resmetirom-us-label-2026",
+              "locator": "1 Indications; 5.1-5.3 Warnings; 7 Interactions",
+              "source_metadata_sha256": "8e13d2411b1d54035d61c50616d7b91ba10fab3ec9159c6779e52a21704cffdf"
+            },
+            {
+              "source_id": "masld-ashp-resmetirom",
+              "locator": "Why prescribed; Precautions; Side effects",
+              "source_metadata_sha256": "5d173cf07714e4c173435f68630c07aa8f9b90ca778c5a7669e6680176a23b4e"
+            },
+            {
+              "source_id": "masld-ema-resmetirom",
+              "locator": "Overview; How it works; Risks; Why authorised; Therapeutic indication",
+              "source_metadata_sha256": "14f301628c9040df7b33a312741a2666610b66abf836cbc31e3ea246a28d0ed3"
+            },
+            {
+              "source_id": "masld-ema-resmetirom-label",
+              "locator": "Package leaflet2 and4, printedpp32-34",
+              "source_metadata_sha256": "903b79403062b45512c70634b9e777ce9150263c3281c572f9e3d33fef512b5e"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "medications-4",
+          "text_sha256": "a85badc99da940d92abcf37f4a4816e60dae2695edde3d3c31d76a65ee678d2f",
+          "author_claim_sha256": "d20b5fd3ab71e9c0b9b6038721b73508e7e29d0d660faf8f9ce8e2a2af59c50a",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "患者立即联系的症状由美国Patient information/§17与ASHP Serious effects双源支持；后半暂停/停药决定仅美国§5.1明确，拆原子主张或补独立来源。",
+          "supports": [
+            {
+              "source_id": "masld-resmetirom-us-label-2026",
+              "locator": "5.1 Hepatotoxicity; Patient information",
+              "source_metadata_sha256": "8e13d2411b1d54035d61c50616d7b91ba10fab3ec9159c6779e52a21704cffdf"
+            },
+            {
+              "source_id": "masld-ashp-resmetirom",
+              "locator": "Why prescribed; Precautions; Side effects",
+              "source_metadata_sha256": "5d173cf07714e4c173435f68630c07aa8f9b90ca778c5a7669e6680176a23b4e"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "medications-5",
+          "text_sha256": "03b4edcf9f10f18199a56ee8bd34e2c621fbdf6d342ad3bca0194547dced87f3",
+          "author_claim_sha256": "8ef246a53e6a4f0dbdec748cff1480933c173b5a0f8e8ebfe2d9235e9b7c2a57",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "FDA公告与美国标签和欧盟标签支持具体他汀，但标签共有Madrigal底层编写；ASHP只泛称药物相互作用。需独立写作材料明确statin，而非凭两个监管域名计数。",
+          "supports": [
+            {
+              "source_id": "masld-fda-resmetirom",
+              "locator": "Approval indication; mechanism; safety paragraphs",
+              "source_metadata_sha256": "931da76b34c43231ed3cdcbcb56a18df3996d9f5069e4bf139518c2d554594e9"
+            },
+            {
+              "source_id": "masld-resmetirom-us-label-2026",
+              "locator": "1 Indications; 5.1-5.3 Warnings; 7 Interactions",
+              "source_metadata_sha256": "8e13d2411b1d54035d61c50616d7b91ba10fab3ec9159c6779e52a21704cffdf"
+            },
+            {
+              "source_id": "masld-ema-resmetirom-label",
+              "locator": "Package leaflet2 and4, printedpp32-34",
+              "source_metadata_sha256": "903b79403062b45512c70634b9e777ce9150263c3281c572f9e3d33fef512b5e"
+            },
+            {
+              "source_id": "masld-ashp-resmetirom",
+              "locator": "Why prescribed; Precautions; Side effects",
+              "source_metadata_sha256": "5d173cf07714e4c173435f68630c07aa8f9b90ca778c5a7669e6680176a23b4e"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "medications-6",
+          "text_sha256": "a9ddd9090cbc78082e9affce5ed74c9b9810363cdd1c8fdcc6cd1ecd3970ca42",
+          "author_claim_sha256": "6f22688d2e58fcb322fd8799f6100805c36b1bea36b10e56522204c39ff85acc",
+          "kind": "threshold",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "EMA实际确认2025-08-18及适用范围；两个EMA文件仍一组，且当前leaflet2/4页码不含完整适应证（应§4.1或leaflet1）。日期准确但未双源。",
+          "supports": [
+            {
+              "source_id": "masld-ema-resmetirom",
+              "locator": "Overview; How it works; Risks; Why authorised; Therapeutic indication",
+              "source_metadata_sha256": "14f301628c9040df7b33a312741a2666610b66abf836cbc31e3ea246a28d0ed3"
+            },
+            {
+              "source_id": "masld-ema-resmetirom-label",
+              "locator": "Package leaflet2 and4, printedpp32-34",
+              "source_metadata_sha256": "903b79403062b45512c70634b9e777ce9150263c3281c572f9e3d33fef512b5e"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "medications-7",
+          "text_sha256": "0232cbf562b89ed10fd02b7b7fa1240fc81cc4bebacf8ba12e55f8d3e3e85cb4",
+          "author_claim_sha256": "c384eeb11eeabd2f222ce21a2d0af5f92e7d5ee3b86cbe8d6fc74c0f1312addc",
+          "kind": "threshold",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "FDA当前表和2025标签精确支持日期/F2-F3；ASHP仅非肝硬化MASH用途，未给品牌日期及F2-F3。精确阈值仍只有FDA。",
+          "supports": [
+            {
+              "source_id": "masld-fda-accelerated",
+              "locator": "Wegovy15Aug2025; Rezdiffra14Mar2024 rows",
+              "source_metadata_sha256": "b50bdfbd4abffe6a6782bd3b4ba03a4585bb6fd38bb7e2801775d1f8be820ff9"
+            },
+            {
+              "source_id": "masld-fda-wegovy-label-2025",
+              "locator": "1 Indications; 4 Contraindications; 5.1-5.4",
+              "source_metadata_sha256": "ad873864e914824e2be654b839f4d6c9f2dd88b2a374eb762a46437242e904f6"
+            },
+            {
+              "source_id": "masld-ashp-semaglutide",
+              "locator": "Why prescribed; Important Warning; Side effects",
+              "source_metadata_sha256": "ff90eff927a192d4fa097da79076b9eee9ca48cf73fcea28b377f8ede8c33b29"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "medications-8",
+          "text_sha256": "289b3cafa6334459a855499f70e9e21a0d60bcfe92b9bd3ecb7618cdf048d9c6",
+          "author_claim_sha256": "5e7a15d98967cf5f51e8362911ca1a84774c92cf31cc588bb36c418a88d2cc19",
+          "kind": "explanation",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "机制解释已改善；FDA公告支持减重/其他机制，食欲子句仅ASHP明确。可补FDA标签§12.2精确位置后再评价完整绑定。",
+          "supports": [
+            {
+              "source_id": "masld-ashp-semaglutide",
+              "locator": "Why prescribed; Important Warning; Side effects",
+              "source_metadata_sha256": "ff90eff927a192d4fa097da79076b9eee9ca48cf73fcea28b377f8ede8c33b29"
+            },
+            {
+              "source_id": "masld-fda-wegovy",
+              "locator": "Action; Disease or condition; Safety",
+              "source_metadata_sha256": "671cf8c0a8a29c16c9176267a6a9f85535f79aa759d6ec189a68720fd6772366"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "medications-9",
+          "text_sha256": "54a787da9a3b255ab05fbd45a36e60ac20865badbc646a85e4ed354fea9b2c94",
+          "author_claim_sha256": "34a8b5fe09f4e4003848e9be2157a8ce16a07c839638b1d0ee8595a01b9ad450",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "FDA§5.2与ASHP Serious effects均支持持续腹痛/放射背部的即时行动，常见胃肠不适也一致；只说可能胰腺问题，没有当作确诊。",
+          "supports": [
+            {
+              "source_id": "masld-fda-wegovy",
+              "locator": "Action; Disease or condition; Safety",
+              "source_metadata_sha256": "671cf8c0a8a29c16c9176267a6a9f85535f79aa759d6ec189a68720fd6772366"
+            },
+            {
+              "source_id": "masld-fda-wegovy-label-2025",
+              "locator": "1 Indications; 4 Contraindications; 5.1-5.4",
+              "source_metadata_sha256": "ad873864e914824e2be654b839f4d6c9f2dd88b2a374eb762a46437242e904f6"
+            },
+            {
+              "source_id": "masld-ashp-semaglutide",
+              "locator": "Special precautions; Serious side effects",
+              "source_metadata_sha256": "ff90eff927a192d4fa097da79076b9eee9ca48cf73fcea28b377f8ede8c33b29"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "medications-10",
+          "text_sha256": "0f4f6f7e1eec852a4d620c89e194c3a8690f639406637453d74e2b3c17ddeed0",
+          "author_claim_sha256": "0a9fda0cc9ceaeaa8f60d9debff90576ced04d582cc472b482afecb40628b316",
+          "kind": "risk",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "美国精确MTC/MEN2/严重过敏禁忌与动物不等同人类风险核实；ASHP甲状腺表述更宽且未独立明确MTC精确标准。动物/人类边界双源支持，精确禁忌子句仍需第二独立支持。",
+          "supports": [
+            {
+              "source_id": "masld-fda-wegovy",
+              "locator": "Action; Disease or condition; Safety",
+              "source_metadata_sha256": "671cf8c0a8a29c16c9176267a6a9f85535f79aa759d6ec189a68720fd6772366"
+            },
+            {
+              "source_id": "masld-fda-wegovy-label-2025",
+              "locator": "1 Indications; 4 Contraindications; 5.1-5.4",
+              "source_metadata_sha256": "ad873864e914824e2be654b839f4d6c9f2dd88b2a374eb762a46437242e904f6"
+            },
+            {
+              "source_id": "masld-ashp-semaglutide",
+              "locator": "Why prescribed; Important Warning; Side effects",
+              "source_metadata_sha256": "ff90eff927a192d4fa097da79076b9eee9ca48cf73fcea28b377f8ede8c33b29"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "medications-11",
+          "text_sha256": "8ab94004775d42f0dbeb16ffe36395c5fcf672d5f6b1d096fc8c5fb28ad252f9",
+          "author_claim_sha256": "e35b7bc7d0922e08f0264fccb45415d6a9fa5765dbdb24456fd57e7b11f1067e",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "FDA§8.1/8.3确认MASH特定孕期条件，当前两语准确且没有套减重停药规则；ASHP通用页未给此例外，并笼统称备孕提前停药。该具体MASH条件不能算已交叉一致。",
+          "supports": [
+            {
+              "source_id": "masld-fda-wegovy-label-2025",
+              "locator": "8.1 Pregnancy; patient counselling",
+              "source_metadata_sha256": "ad873864e914824e2be654b839f4d6c9f2dd88b2a374eb762a46437242e904f6"
+            },
+            {
+              "source_id": "masld-ashp-semaglutide",
+              "locator": "Special precautions; Serious side effects",
+              "source_metadata_sha256": "ff90eff927a192d4fa097da79076b9eee9ca48cf73fcea28b377f8ede8c33b29"
+            },
+            {
+              "source_id": "masld-ashp-resmetirom",
+              "locator": "Why prescribed; Precautions; Side effects",
+              "source_metadata_sha256": "5d173cf07714e4c173435f68630c07aa8f9b90ca778c5a7669e6680176a23b4e"
+            },
+            {
+              "source_id": "masld-ema-resmetirom-label",
+              "locator": "Package leaflet2 and4, printedpp32-34",
+              "source_metadata_sha256": "903b79403062b45512c70634b9e777ce9150263c3281c572f9e3d33fef512b5e"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "medications-12",
+          "text_sha256": "ce923b1bde9d8dc0bf5eb10e0a2986244a70e3c97098ca3819147d480e5c9f40",
+          "author_claim_sha256": "3c15b9275bff73aa6203871a54fa2297ee80adefecabc7bff563367864da4d5f",
+          "kind": "risk",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "resmetirom长期结局边界有FDA、EASL、EMA；Wegovy相关临床结局待确认仅FDA资料，两个药不能合并当全部双源。",
+          "supports": [
+            {
+              "source_id": "masld-fda-accelerated",
+              "locator": "Wegovy15Aug2025; Rezdiffra14Mar2024 rows",
+              "source_metadata_sha256": "b50bdfbd4abffe6a6782bd3b4ba03a4585bb6fd38bb7e2801775d1f8be820ff9"
+            },
+            {
+              "source_id": "masld-fda-resmetirom",
+              "locator": "Approval indication; mechanism; safety paragraphs",
+              "source_metadata_sha256": "931da76b34c43231ed3cdcbcb56a18df3996d9f5069e4bf139518c2d554594e9"
+            },
+            {
+              "source_id": "masld-fda-wegovy",
+              "locator": "Action; Disease or condition; Safety",
+              "source_metadata_sha256": "671cf8c0a8a29c16c9176267a6a9f85535f79aa759d6ec189a68720fd6772366"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp23 Liver-directed THR agonists",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-ema-resmetirom",
+              "locator": "Overview; How it works; Risks; Why authorised; Therapeutic indication",
+              "source_metadata_sha256": "14f301628c9040df7b33a312741a2666610b66abf836cbc31e3ea246a28d0ed3"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "medications-13",
+          "text_sha256": "358bb2825e528f5e87af3f7f3faef16aa52673f12e0534683377a55898bb7368",
+          "author_claim_sha256": "a95f42a9170254db263d61a939f7f7b9bf37fb5d4cff4657a853042914b5a356",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "取消高剂量维生素一概伤肝是修正；草药伤肝目前仍NIH明确，NHS仅肝硬化用药咨询，EASL营养补充剂证据不足不等于特定肝毒性支持。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-treatment",
+              "locator": "Medicines — supplement/herbal caution only",
+              "source_metadata_sha256": "543d53bdd0180d15e6d2dab124da6ab90ecbcb95b9394d2592f3a3f6b9bf9af6"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp22 Nutraceutical recommendation",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-nhs-cirrhosis",
+              "locator": "Treatment; Things you can do",
+              "source_metadata_sha256": "2c68679d5f657797a88cb9515ed6590ec3ad81f3fdb764694fb3ea1be0753d4d"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "medications-14",
+          "text_sha256": "eb76833a55052951d77e903b2ab9587377858cb6cf546939d2ebee3f02721c25",
+          "author_claim_sha256": "641130431bcd89670836df7ed0d98014624fbc4ab7524864062b1e120dd6851a",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "准确限定本轮仅美欧资料、成人适应证不外推其他地区/所有人群；未以旧儿童页面证明当前成人批准状态。",
+          "supports": [
+            {
+              "source_id": "masld-fda-resmetirom",
+              "locator": "Approval indication; mechanism; safety paragraphs",
+              "source_metadata_sha256": "931da76b34c43231ed3cdcbcb56a18df3996d9f5069e4bf139518c2d554594e9"
+            },
+            {
+              "source_id": "masld-fda-accelerated",
+              "locator": "Wegovy15Aug2025; Rezdiffra14Mar2024 rows",
+              "source_metadata_sha256": "b50bdfbd4abffe6a6782bd3b4ba03a4585bb6fd38bb7e2801775d1f8be820ff9"
+            },
+            {
+              "source_id": "masld-ema-resmetirom",
+              "locator": "Overview; How it works; Risks; Why authorised; Therapeutic indication",
+              "source_metadata_sha256": "14f301628c9040df7b33a312741a2666610b66abf836cbc31e3ea246a28d0ed3"
+            },
+            {
+              "source_id": "masld-niddk-children-treatment",
+              "locator": "How do doctors treat children?",
+              "source_metadata_sha256": "7c27d8f322c78bf9452ad99d4764f285e4e03b2cc057fef20dab42d72603c394"
+            }
+          ],
+          "needs_second_independent_source": false
+        }
+      ]
+    },
+    {
+      "section": "diet",
+      "content_sha256": "8675542aa56bc5a3b794b3d1c675d0650faa513ff06981f06a444a3f87cc6fd0",
+      "author_record_sha256": "9d8bed385a04328e2d06f3101635bc4c53663e053f504d846416a79d7c6ba37a",
+      "claim_reviews": [
+        {
+          "id": "diet-0",
+          "text_sha256": "469342894fc9f8074f9d53de49d20f2e3944c0a0058a1678f9ee99b92548db25",
+          "author_claim_sha256": "679f6dae80ff4b13f6dbedac8acc3842b2f4fd40967eca9d910554ad28f20ee7",
+          "kind": "explanation",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "已删单食物绝对无效断言；不同体重与病期营养的完整范围仍两来源各支一部分。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-diet",
+              "locator": "How can my diet help?",
+              "source_metadata_sha256": "236d4536bd004463aef6662bbc91528766030f519ce6e8c11d645d6d5f2d8b58"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp28 nutrition/lifestyle recommendations",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "diet-1",
+          "text_sha256": "597dca52c98a1446eb1439ab8e7233f2cc19a0e82e91aaa653fc63cfaef15981",
+          "author_claim_sha256": "451a7dbced777d5f2b447c1740c88effd73c1dbb2b8cb412c23d717624b81c22",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "清单收窄为NIDDK与EASL共同支持的食物/脂肪/含糖饮料建议。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-diet",
+              "locator": "How can my diet help?",
+              "source_metadata_sha256": "236d4536bd004463aef6662bbc91528766030f519ce6e8c11d645d6d5f2d8b58"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp20-21 Fig.3 and Diet quality",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "diet-2",
+          "text_sha256": "efd2f16331d6134ba01328b16e7aee7eff9ed9ae2c2fa96c28587df64e7b52c0",
+          "author_claim_sha256": "22023092bee857686a3df2df35ba615bfcbae67c0f99c3d09dd048d9c9923a4f",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "拆出的地中海具体食物模式当前EASL单源。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp20-21 Fig.3 and Diet quality",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "diet-3",
+          "text_sha256": "dda7bf038495c400c8090ec37cfba253f323c3f1f72128f5bb6e3ea2713c3f10",
+          "author_claim_sha256": "63c418e70ed6e48f57046c192c3e09bb13f7e55c4645c41d1445443f220fb847",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "正常体重目标与快速减重风险已更清楚，但前者EASL、后者NIH，各子句未完整双源。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-treatment",
+              "locator": "How do doctors treat NAFLD?",
+              "source_metadata_sha256": "543d53bdd0180d15e6d2dab124da6ab90ecbcb95b9394d2592f3a3f6b9bf9af6"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp20 Fig.3 normal-weight branch; p28 nutrition",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "diet-4",
+          "text_sha256": "375caaf283da62b093c04c3766c3458f078b025a49752e0ddfebb4e47802c254",
+          "author_claim_sha256": "024d5d56ce2834b95b5a2b607a4348d15337695587bde8d1f63b3578f7e3a242",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "肌少症/肝硬化营养保护当前EASL单源。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp28 nutrition/lifestyle recommendations",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "diet-5",
+          "text_sha256": "3591776309bbdac88c1238921425ad9f59ee913fc4f623337307e6640ef85fce",
+          "author_claim_sha256": "bde40d3004cd6483c90e79b1bf23602720546640f357dddd14ae6d1ec13f8d8d",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "肝硬化禁酒独立成条，EASL、NIDDK与NHS一致。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp7 Alcohol recommendations",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-niddk-cirrhosis",
+              "locator": "What can I do to keep cirrhosis from getting worse?",
+              "source_metadata_sha256": "3eef12e68d30a77974eb9a44dabd8943f4cb659564b490663461672b5655497f"
+            },
+            {
+              "source_id": "masld-nhs-cirrhosis",
+              "locator": "Treatment; Things you can do",
+              "source_metadata_sha256": "2c68679d5f657797a88cb9515ed6590ec3ad81f3fdb764694fb3ea1be0753d4d"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "diet-6",
+          "text_sha256": "bf395cf9c1826973fb8b8b015b4c2fa35aa7f71fe9da73ebb35829da6b939ea3",
+          "author_claim_sha256": "08dbb6ca3df29d31da62ddd931f1074147595d2debbebb9bcf98b7ebccab8563",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "advanced已准确译进展期并解释，原中英问题解决；该纤维化人群完全禁酒仅EASL，NIH泛少饮酒不能代替。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp7 Alcohol recommendations",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-niddk-diet",
+              "locator": "How can my diet help?",
+              "source_metadata_sha256": "236d4536bd004463aef6662bbc91528766030f519ce6e8c11d645d6d5f2d8b58"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "diet-7",
+          "text_sha256": "5d8d4829f0ead28dc9383860488243fead5b1557593cc8f0ee6140ad9752977f",
+          "author_claim_sha256": "41b70e38f55f4b3f10ca4c4c29314297dcc91729acb132846af1265446895128",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "长期结局边界及随访行动当前EASL单源。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp20-21 long-term outcome statements",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        }
+      ]
+    },
+    {
+      "section": "daily_care",
+      "content_sha256": "3e6addb1c24a7bc113b0b059ec6462ed14797e95b10ab07d1f2ef962d0b0574e",
+      "author_record_sha256": "44d9a3a6e95016cb01862e18d9b3d12663c531bc1965765a7cc7048442aa8de4",
+      "claim_reviews": [
+        {
+          "id": "daily_care-0",
+          "text_sha256": "c34a5aa7375a4455a5e82718a44312e9905cd1ba669c2ccce67c81f3bf09d820",
+          "author_claim_sha256": "e9db6be1e3609379420bf6925645d18c290c332a643c3de8029427dcddd81115",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "已去掉未证明的比较级并改可执行记录；两EASL定位仍一组。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp20-21 Fig.3 and Diet quality",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp20 weight-loss recommendation and dose-response discussion",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "daily_care-1",
+          "text_sha256": "d712b8a917b0bd3a09d6ec9d955df91f416ad47433571c9745a266d685935101",
+          "author_claim_sha256": "e3c543453337e8dc745a5289c3beeee107984eeaa7e09cb49a003720e0716b18",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "去掉未定位的心脏症状条件是合理收窄；减久坐及具体运动选择仅EASL，NIH只一般活动。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp21-22 Physical activity recommendation",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-niddk-treatment",
+              "locator": "How do doctors treat NAFLD?",
+              "source_metadata_sha256": "543d53bdd0180d15e6d2dab124da6ab90ecbcb95b9394d2592f3a3f6b9bf9af6"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "daily_care-2",
+          "text_sha256": "961892ae1b025b6ee5cf91a486956b880ac3eeff29837be002fe39f09ac82dcd",
+          "author_claim_sha256": "b1ab96fca3aaaaff784fbb7b5c332c5e4514bb4d44a2279dbbc51fb53c23bd56",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "饮酒记录两源，完整用药/草药清单当前仅NIH支持，不能用EASL Alcohol覆盖全部。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp7 Alcohol recommendations",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-niddk-diagnosis",
+              "locator": "Medical history; Physical exam",
+              "source_metadata_sha256": "fda37e186c3d64f6e680632a60b38420d9ff2ae95a4c7fba58cee7d8c1e00178"
+            },
+            {
+              "source_id": "masld-niddk-treatment",
+              "locator": "Medicines — supplement/herbal caution only",
+              "source_metadata_sha256": "543d53bdd0180d15e6d2dab124da6ab90ecbcb95b9394d2592f3a3f6b9bf9af6"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "daily_care-3",
+          "text_sha256": "8d9d537e85480099184590ea79346f5905d6b3070eb585c025d92181f66ad839",
+          "author_claim_sha256": "d97ace04a8190fc09f7ce4179b667c563977f9b3b73855734e3bef339d0923d9",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "EASL与新AASLD风险评估路径相符，NIH无症状特征支持适用情景。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp9-11; p10 FIB-4 formula; Fig.2",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-aasld-fib4",
+              "locator": "2 Primary risk assessment",
+              "source_metadata_sha256": "521c2722ea17d1ca0bf91b362d949dcc2e54d36766dd97d0c614bc6c3c6f5713"
+            },
+            {
+              "source_id": "masld-niddk-causes",
+              "locator": "Symptoms; Health conditions and diseases; Genes",
+              "source_metadata_sha256": "c215fb64144265a28f2440006db2478f4c0d00c6f136777299398a3923791b2b"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "daily_care-4",
+          "text_sha256": "fa6f1de5ea70841c86d2b421990829ff7f52f0c15c31d94e080a1d7c5e0e3573",
+          "author_claim_sha256": "9c7f0039c44d8e48b0388d12e455e5cc9dc0ef59819d608a872ebafe0ff49749",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "引用上方行动不能清除red_flags-2/3仍单源的问题。",
+          "supports": [
+            {
+              "source_id": "masld-mayo-gi-bleeding",
+              "locator": "Symptoms of shock; When to see a doctor",
+              "source_metadata_sha256": "4013e09e7891625b6757649b99d6fa2f271bd6bf981c577cf8d4b2568c7e63b1"
+            },
+            {
+              "source_id": "masld-niddk-gi-bleeding",
+              "locator": "Acute GI bleeding; Shock",
+              "source_metadata_sha256": "20856f73e5b228bd0059880552f1afb6ff0b730f6d383dfdc0f88c4b5c2dccc3"
+            },
+            {
+              "source_id": "masld-nhs-cirrhosis",
+              "locator": "Immediate action required",
+              "source_metadata_sha256": "2c68679d5f657797a88cb9515ed6590ec3ad81f3fdb764694fb3ea1be0753d4d"
+            },
+            {
+              "source_id": "masld-nhs-cirrhosis",
+              "locator": "Urgent advice",
+              "source_metadata_sha256": "2c68679d5f657797a88cb9515ed6590ec3ad81f3fdb764694fb3ea1be0753d4d"
+            }
+          ],
+          "needs_second_independent_source": true
+        }
+      ]
+    },
+    {
+      "section": "special_populations",
+      "content_sha256": "1f68c2931d6211f7124b73d4e3fad2560892cdcc2f84499e2232f84329390eb2",
+      "author_record_sha256": "1592951b40d8e3d301d339c4b7b35bb01408e62f188000d9e600e7d223d6b89e",
+      "claim_reviews": [
+        {
+          "id": "special_populations-0",
+          "text_sha256": "1ada520a5a1d9009cef00bc109c6f9a36dcde14e65a0c82d46120e3592c46a74",
+          "author_claim_sha256": "a1a452215acb09c30dad917353aa98c90129220dec49403be0a8c4b1b1d27331",
+          "kind": "explanation",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "导读合理，儿童/体型/合并病不同部分仍各有单一主要支持，未全部双源。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp9-11; p10 FIB-4 formula; Fig.2",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp20 Fig.3 normal-weight branch; p28 nutrition",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-niddk-children-treatment",
+              "locator": "How do doctors treat children?",
+              "source_metadata_sha256": "7c27d8f322c78bf9452ad99d4764f285e4e03b2cc057fef20dab42d72603c394"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "special_populations-1",
+          "text_sha256": "7d1dce82eafd9a417c4dd6eef618895efe1a02f4c7b74b6ab41b7879a758dfa4",
+          "author_claim_sha256": "20842a08739111dee1bd9d52b15df0a7d6de96981196ed2cedb61368594845a1",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "partial",
+          "assessment": "糖尿病纤维化评估已有EASL/AASLD支持；合并病协同照护精确行动仅EASL p19。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp9-11; p10 FIB-4 formula; Fig.2",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-aasld-fib4",
+              "locator": "2 Primary risk assessment",
+              "source_metadata_sha256": "521c2722ea17d1ca0bf91b362d949dcc2e54d36766dd97d0c614bc6c3c6f5713"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp19 Multidisciplinary care recommendation",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "special_populations-2",
+          "text_sha256": "ecfeb17308d9342f359183d1d0c8199c57be07313645b3cf7930743fed413958",
+          "author_claim_sha256": "33762d7aac339ea1453bbf187c1fa6d4f83cc8885a3901e8c2a829e381f196d7",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "儿童生长条件已更具体并避免成人外推；当前NIDDK单源。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-children-treatment",
+              "locator": "How do doctors treat children?",
+              "source_metadata_sha256": "7c27d8f322c78bf9452ad99d4764f285e4e03b2cc057fef20dab42d72603c394"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "special_populations-3",
+          "text_sha256": "d9347e65dc13c53dd9fca6db9acc200a4faa246fd607b29db1921692efb1d0f7",
+          "author_claim_sha256": "165bc3942874336b3c22195b902484e8ac65e1fd7a3bc7135f55a36beee891ff",
+          "kind": "explanation",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "正常体重不自动等于营养不良的错误暗示已修复；当前EASL单源解释。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp20 Fig.3 normal-weight branch; p28 nutrition",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "special_populations-4",
+          "text_sha256": "95943fd053edbcc3398be5b772bca9d624811bac569b40f58080644afa88fda3",
+          "author_claim_sha256": "32022126faae2514c4042a168d91b4409ad5cf0877af0818da3e48e85bd4e6d4",
+          "kind": "action",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "single",
+          "assessment": "肌肉营养计划当前EASL单源。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp28 nutrition/lifestyle recommendations",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "special_populations-5",
+          "text_sha256": "1ecaca65ce1f510388ed568c1488533359c1c809db366039254a20aaae8b5731",
+          "author_claim_sha256": "834c0f22da233396d76d83564e02d4e1e8b0b83da43e0c08371cffc158724936",
+          "kind": "risk",
+          "prior_same_text_claim_id": null,
+          "review_mode": "changed_or_new_claim_recheck",
+          "decision": "pass",
+          "assessment": "年龄局限已拆分并新增AASLD，与EASL相符。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp9-11; p10 FIB-4 formula; Fig.2",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-aasld-fib4",
+              "locator": "2 Primary risk assessment",
+              "source_metadata_sha256": "521c2722ea17d1ca0bf91b362d949dcc2e54d36766dd97d0c614bc6c3c6f5713"
+            }
+          ],
+          "needs_second_independent_source": false
+        }
+      ]
+    },
+    {
+      "section": "prognosis_followup",
+      "content_sha256": "189ad57cb627bc39ed79a263a421ca0b7b41c5edc1d67e5fae7cb3785f73b898",
+      "author_record_sha256": "9fcd81546c83d7fbf264bb4bab44b4f4ac428187586475f4b078afacf0423dd2",
+      "claim_reviews": [
+        {
+          "id": "prognosis_followup-0",
+          "text_sha256": "9755bac222f4a744c3af586d984f8f762dd2a198d1330714ba5ce00e974e8b86",
+          "author_claim_sha256": "272a9b205c80c7e4d7a8e107262c8e6abacd90aec108522843d1b1832739f489",
+          "kind": "explanation",
+          "prior_same_text_claim_id": "prognosis_followup-0",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "single",
+          "assessment": "正文未变，继承原单源结果，无重复研究。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "PDF pp.4–7: natural history and cardiometabolic risk",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "prognosis_followup-1",
+          "text_sha256": "f7b3f3a02b8693472907638086ae8e5da3f8c171d947d94b8405b9ba3de9a96e",
+          "author_claim_sha256": "7a49003ccfab3d2c80d08013d1a79ff51b71007d0d0b46b861a52d9401ac2fa1",
+          "kind": "action",
+          "prior_same_text_claim_id": "prognosis_followup-1",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "partial",
+          "assessment": "正文及支持范围未实质变，继承原复合风险支持缺口。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-facts",
+              "locator": "What are NAFLD and NASH? / Complications",
+              "source_metadata_sha256": "2546964366672e9ae85e9694d5446a932fe584ec05f57c789ebc0004ab5c2411"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "PDF pp.4–7: natural history and cardiometabolic risk",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "PDF pp.7–8: alcohol; p.20 Fig.4",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "prognosis_followup-2",
+          "text_sha256": "f45466b5ec4f012eafd729f88cb63e78efe4faee1295fcbefa718e98fe4520b2",
+          "author_claim_sha256": "183135ee5b2ccc94929d23509a4690e0e501f43403ac9023204197c573d07a56",
+          "kind": "action",
+          "prior_same_text_claim_id": "prognosis_followup-2",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "single",
+          "assessment": "正文未变，仍仅EASL不同定位。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "PDF pp.9–12: Fig.2 and recommended strategy; limitations of scores",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "PDF pp.4–7: natural history and cardiometabolic risk",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "prognosis_followup-3",
+          "text_sha256": "f02df774cf23c57f40cfae4999249f36a3d5f923eb3b846a0eee48ea19871442",
+          "author_claim_sha256": "9b1619b23c4e2b6ed5e2c4785b3038c701c129c94e955b14730285a1336cc611",
+          "kind": "action",
+          "prior_same_text_claim_id": "prognosis_followup-3",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "partial",
+          "assessment": "正文未变，肝癌/门脉监测与新症状行动仍未各自双源。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-cirrhosis",
+              "locator": "Portal hypertension / Varices / Toxin buildup / Liver cancer",
+              "source_metadata_sha256": "3eef12e68d30a77974eb9a44dabd8943f4cb659564b490663461672b5655497f"
+            },
+            {
+              "source_id": "masld-nhs-cirrhosis",
+              "locator": "Immediate action required / Urgent advice",
+              "source_metadata_sha256": "2c68679d5f657797a88cb9515ed6590ec3ad81f3fdb764694fb3ea1be0753d4d"
+            }
+          ],
+          "needs_second_independent_source": true
+        }
+      ]
+    },
+    {
+      "section": "complications",
+      "content_sha256": "65840aa404ff22b13bf61ea6a689b1e768a76be71e14f51b826f2e8ee2d9f709",
+      "author_record_sha256": "9836dc4594a85ae77e7a4df758340ba94d1b08ef69524974452ffea51c1c6784",
+      "claim_reviews": [
+        {
+          "id": "complications-0",
+          "text_sha256": "2e79d1c432926922a1f7309a96a1ae0fe5efd9025651873b0a1088ae69d810a9",
+          "author_claim_sha256": "0d4f252c3b46d33f6cb0cc5062079f8dedcb9265f9b53cc1bf87d13747e2d3f2",
+          "kind": "explanation",
+          "prior_same_text_claim_id": "complications-0",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "binding_gap",
+          "assessment": "正文原通过，新定位换成定义pp1-4和NIH What is/Who，丢失原Complications/自然史pp4-7；恢复准确绑定即可。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-facts",
+              "locator": "What is NAFLD? NAFL/NASH; Who is more likely?",
+              "source_metadata_sha256": "2546964366672e9ae85e9694d5446a932fe584ec05f57c789ebc0004ab5c2411"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp1-4; Fig.1; Table3-4",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "complications-1",
+          "text_sha256": "69ccdb6fe0146287049031efe11999dc2f2286b39328923caab4e80f83d2890a",
+          "author_claim_sha256": "dccec06e09e242c1e7bea85c13c38159efa0b151f8d8bdaf8c418f9fc6beb0f6",
+          "kind": "risk",
+          "prior_same_text_claim_id": "complications-1",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "pass",
+          "assessment": "新增NHS Risks of cirrhosis补第二独立风险来源；与已读NIH并发症一致。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-cirrhosis",
+              "locator": "Complications: varices, toxins, fluid, cancer; transplant",
+              "source_metadata_sha256": "3eef12e68d30a77974eb9a44dabd8943f4cb659564b490663461672b5655497f"
+            },
+            {
+              "source_id": "masld-nhs-cirrhosis",
+              "locator": "Risks of cirrhosis; Treatment",
+              "source_metadata_sha256": "2c68679d5f657797a88cb9515ed6590ec3ad81f3fdb764694fb3ea1be0753d4d"
+            }
+          ],
+          "needs_second_independent_source": false
+        },
+        {
+          "id": "complications-2",
+          "text_sha256": "3cdc57eeaec1a32243464c85098bd9b51dee4092a0e9eda1b251cd0f124921b3",
+          "author_claim_sha256": "9c732a9d5ff3243e858642902b7ae5a65f8422bcd471e3caeee3e072a6a099ad",
+          "kind": "risk",
+          "prior_same_text_claim_id": "complications-2",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "partial",
+          "assessment": "新增EASL合并病照护有用，但NIH causes并不完整支持心血管疾病并存，宜补facts Other health problems实际定位。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-causes",
+              "locator": "Symptoms; Health conditions and diseases; Genes",
+              "source_metadata_sha256": "c215fb64144265a28f2440006db2478f4c0d00c6f136777299398a3923791b2b"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp19 Multidisciplinary care recommendation",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        }
+      ]
+    },
+    {
+      "section": "prevention",
+      "content_sha256": "2d8f7cf7fb8b0f2b3580d00e0f95e8dd687943d25eaa1b24163c53f3408fa28f",
+      "author_record_sha256": "4d98206a913d3246048c3438bd802962afa4ab8383c075229ad5b634f885c276",
+      "claim_reviews": [
+        {
+          "id": "prevention-0",
+          "text_sha256": "136cd9487b8891e4dd36d77b3e4751d344d8c83d3a98ef033d6266b14271a9e9",
+          "author_claim_sha256": "633ee49f541138a1e2acc5c812590ed81b58257073267268c3624bed98cb9340",
+          "kind": "explanation",
+          "prior_same_text_claim_id": "prevention-0",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "partial",
+          "assessment": "新定位更接近干预，首次发生预防应绑定NIDDK Prevention而非仅How treat；不能把改善指标当全部长期预防证明。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-treatment",
+              "locator": "How do doctors treat NAFLD?",
+              "source_metadata_sha256": "543d53bdd0180d15e6d2dab124da6ab90ecbcb95b9394d2592f3a3f6b9bf9af6"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedpp20-21 Fig.3 and Diet quality",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "prevention-1",
+          "text_sha256": "91554d2315d3915c7332e3d62f42b88c8c44774ebd653e8e0dbaa12974152e36",
+          "author_claim_sha256": "994b6afbdd205858a1b39f912500719ffd42ec51c9d4dd22f4f4903c34e5e721",
+          "kind": "action",
+          "prior_same_text_claim_id": "prevention-1",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "partial",
+          "assessment": "原复合主张仍有糖尿病/血脂治疗第二来源缺口。",
+          "supports": [
+            {
+              "source_id": "masld-niddk-diet",
+              "locator": "How can my diet help?",
+              "source_metadata_sha256": "236d4536bd004463aef6662bbc91528766030f519ce6e8c11d645d6d5f2d8b58"
+            },
+            {
+              "source_id": "masld-niddk-treatment",
+              "locator": "How do doctors treat NAFLD?",
+              "source_metadata_sha256": "543d53bdd0180d15e6d2dab124da6ab90ecbcb95b9394d2592f3a3f6b9bf9af6"
+            },
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp19 Multidisciplinary care recommendation",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            }
+          ],
+          "needs_second_independent_source": true
+        },
+        {
+          "id": "prevention-2",
+          "text_sha256": "aa71234442b8db4e79349014dfe8576bf4b98fdac77ae42ee823f8457755ad45",
+          "author_claim_sha256": "929d8ce1f18f89f757916b0d8978e507b52ec87e694cac19326282f2490ac022",
+          "kind": "action",
+          "prior_same_text_claim_id": "prevention-2",
+          "review_mode": "targeted_binding_or_prior_gap_recheck",
+          "decision": "partial",
+          "assessment": "原复合主张各行动/遗传边界仍未逐项双源。",
+          "supports": [
+            {
+              "source_id": "masld-easl-2024",
+              "locator": "Printedp7 Alcohol recommendations",
+              "source_metadata_sha256": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131"
+            },
+            {
+              "source_id": "masld-niddk-treatment",
+              "locator": "Medicines — supplement/herbal caution only",
+              "source_metadata_sha256": "543d53bdd0180d15e6d2dab124da6ab90ecbcb95b9394d2592f3a3f6b9bf9af6"
+            },
+            {
+              "source_id": "masld-niddk-causes",
+              "locator": "Symptoms; Health conditions and diseases; Genes",
+              "source_metadata_sha256": "c215fb64144265a28f2440006db2478f4c0d00c6f136777299398a3923791b2b"
+            }
+          ],
+          "needs_second_independent_source": true
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "MR01",
+      "priority": "P1",
+      "status": "partly_resolved",
+      "prior_findings": [
+        "M03"
+      ],
+      "claim_ids": [
+        "red_flags-0",
+        "red_flags-2",
+        "red_flags-3",
+        "daily_care-4"
+      ],
+      "issue": "GI bleeding now cross-supported and cirrhosis population fixed, but neurologic/urgent cirrhosis actions remain single-source; introductory sudden mental-status action still broader.",
+      "resolution": "Keep actions; add precise independent general-neurologic/cirrhosis care source or narrow intro to the actual scoped bullets."
+    },
+    {
+      "id": "MR02",
+      "priority": "P1",
+      "status": "evidence_gap",
+      "prior_findings": [
+        "M02",
+        "M06",
+        "M08"
+      ],
+      "claim_ids": [
+        "medications-3",
+        "medications-4",
+        "medications-5",
+        "medications-6",
+        "medications-7",
+        "medications-10",
+        "medications-11",
+        "medications-12"
+      ],
+      "issue": "Drug information is now materially richer and no new gross factual contradiction found, but precise subclaims are not all independently cross-supported. Shared sponsor labels are not two independent authors merely because FDA/EMA host them.",
+      "resolution": "Use per-claim notes: split verified portions; obtain independent authored support for the remaining exact risk/indication/pregnancy conditions. Do not flatten FDA MASH pregnancy exception to ASHP general pregnancy wording."
+    },
+    {
+      "id": "MR03",
+      "priority": "P2",
+      "status": "binding_regression",
+      "prior_findings": [],
+      "claim_ids": [
+        "differentials-1",
+        "complications-0"
+      ],
+      "issue": "Previously supported unchanged prose lost the exact source sections during rebinding.",
+      "resolution": "Restore NIDDK Other causes for differential; restore NIDDK Complications and EASL natural-history pp4-7 for complications overview. No redundant medical rewrite required."
+    },
+    {
+      "id": "MR04",
+      "priority": "P2",
+      "status": "remaining_original_gaps",
+      "prior_findings": [
+        "M05",
+        "M06",
+        "M07"
+      ],
+      "claim_ids": [
+        "summary-0",
+        "summary-1",
+        "summary-3",
+        "causes_risks-0",
+        "causes_risks-1",
+        "causes_risks-3",
+        "causes_risks-4",
+        "causes_risks-5",
+        "care-1",
+        "care-2",
+        "diagnosis-0",
+        "diagnosis-4",
+        "diagnosis-6",
+        "differentials-2",
+        "treatment-0",
+        "treatment-2",
+        "treatment-4",
+        "treatment-6",
+        "diet-0",
+        "diet-2",
+        "diet-3",
+        "diet-4",
+        "diet-6",
+        "diet-7",
+        "daily_care-0",
+        "daily_care-1",
+        "daily_care-2",
+        "special_populations-0",
+        "special_populations-1",
+        "special_populations-2",
+        "special_populations-3",
+        "special_populations-4",
+        "prognosis_followup-0",
+        "prognosis_followup-1",
+        "prognosis_followup-2",
+        "prognosis_followup-3",
+        "complications-2",
+        "prevention-0",
+        "prevention-1",
+        "prevention-2"
+      ],
+      "issue": "Several lifestyle, pediatric, nutrition, monitoring and multi-clause items remain single-author-group or partly supported; splitting improved honesty but does not fill evidence.",
+      "resolution": "Follow individual notes; preserve accurate single-source explanations as such. Key actions/risks/thresholds/benefits must meet release evidence threshold."
+    },
+    {
+      "id": "MR05",
+      "priority": "P2",
+      "status": "remaining_drug_scope_binding",
+      "prior_findings": [
+        "M02",
+        "M07"
+      ],
+      "claim_ids": [
+        "medications-8",
+        "medications-13"
+      ],
+      "issue": "New explanations/cautions have source-scope gaps despite broadly plausible wording.",
+      "resolution": "Use exact additional locator or independent authored support identified per claim; no blanket removal of useful cautions."
+    }
+  ],
+  "next_step": "Author repairs explicit evidence/binding gaps; targeted recheck of changed items only. No broad re-audit of unchanged supported statements."
+}

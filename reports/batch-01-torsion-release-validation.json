@@ -1,0 +1,62 @@
+{
+  "checked_at": "2026-09-30",
+  "topic": "testicular-torsion",
+  "content_sha256": "5f2b018be6230757e44febade498119e390d4eda0b44dd701e85a6426c8b416a",
+  "candidate_topic_count": 74,
+  "candidate_populated_specialties": 33,
+  "candidate_source_count": 353,
+  "editorial": {
+    "sections": 14,
+    "claims": 56,
+    "clinician_signoff": false,
+    "qualified_categories": 2,
+    "denominator": 13155,
+    "independent_review": "reports/batch-01-torsion-recheck.json"
+  },
+  "checks": {
+    "model": {
+      "passed": 45
+    },
+    "other_affected_python": {
+      "passed": 36,
+      "command": "python -m unittest tests.test_editorial tests.test_icd tests.test_content_audit tests.test_clinical_gate",
+      "execution": "36 passed in first combined run;three stale model count assertions updated and45 model tests passed in the targeted rerun."
+    },
+    "node": {
+      "passed": 351,
+      "command": "node --test tests/*.test.mjs"
+    },
+    "content_and_coverage": {
+      "issues": 0,
+      "covered_categories": 2,
+      "remaining_categories": 13153
+    },
+    "server_postgresql_http_browser": {
+      "passed": true,
+      "candidate_root": "/home/user/.local/state/knowledge-healthcare/healthcare-torsion-ead2a864",
+      "old_release_id": "rel-9bfe3a1e040f1dbcc0fd6221af609efd253e4a907ae6cb03a426916ca163f0ec",
+      "release_id": "rel-0e0049a879f33401ba77ad92ed0a25d5c46f6eead51789abc51d94482c2fe04b",
+      "old_topics": 73,
+      "new_topics": 74,
+      "data_sha256": "e7a179a9f2fbf766a7091971862fdcb1844d7daf86a539bb6b6171bc3881114e",
+      "checks": [
+        "73→74 paired-root import, unpublished hidden and duplicate import",
+        "full old/new snapshot hashes and14→28 evidence records",
+        "publish, rollback and reactivate isolated test database",
+        "actual HTTP pinned73/74 catalogs and new21-source detail",
+        "CN/EN74-row22-column CSV all14 new sections exact",
+        "3 affected browser tests plus mobile torsion/independent alert/negation/EN/AR flow"
+      ],
+      "browser_suite_passed": 3,
+      "production_changed": false,
+      "test_git_commit_is_synthetic": true,
+      "execution": "Paired database/HTTP and3 browser tests passed on the first run. Extra mobile flow resumed after correcting the test-runner Chromium path and matching its assertion to the actual Chinese wording. Existing bundled Playwright Chromium used; no product change. Database/HTTP and3 successful suite tests were not repeated."
+    }
+  },
+  "remaining_checks": [
+    "GitHub CI",
+    "publication backup and public HTTPS acceptance"
+  ],
+  "overall_status": "validated_local_and_server_candidate_not_yet_live",
+  "remaining_batch_topics": 18
+}

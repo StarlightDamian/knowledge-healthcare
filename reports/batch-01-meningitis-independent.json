@@ -1,0 +1,1555 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "batch01-meningitis-independent-2026-09-30",
+  "reviewer": "/root/acute_symptom_content",
+  "author": "/root/emergency_content",
+  "reviewed_at": "2026-09-30",
+  "review_type": "independent_original_source_editorial_adversarial_review",
+  "medical_reviewed": false,
+  "target": {
+    "path": "drafts/batch-01/emergency/meningitis.json",
+    "id": "meningitis",
+    "canonical_sha256": "bcb97732c808e6c4dd3a137bbc6736135b73a65421eaba82cfae567a465d9d0a",
+    "file_sha256": "4c223c23444ae949f712678fd680adf988db13f5ce2421ea1fca77799db94e03"
+  },
+  "verdict": "needs_revision",
+  "release_recommendation": "do_not_count_as_cross_checked_complete_content",
+  "scope": {
+    "sections": 14,
+    "paragraph_claims": 42,
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "author_files_modified": false,
+    "global_files_modified": false
+  },
+  "summary": "脑膜炎病因分流及不延误急性细菌抗感染的主干成立；需补主动听力评估、修正急救条件表达，完善食安和逐项证据。42段不是42个单一医学事实，支持不完整处保留缺口。",
+  "independence_assessment": {
+    "reviewer_did_not_author_target": true,
+    "source_groups": [
+      "WHO",
+      "UK-NHS",
+      "US-CDC",
+      "US-MAYO",
+      "UK-NICE"
+    ],
+    "same_group_pages_not_double_counted": true,
+    "shared_underlying_evidence": "Mayo参考文献明确引用WHO、CDC疫苗、真菌及李斯特菌资料；机构独立编写不等于研究独立。WHO与其NCBI镜像合为一组。NICE独立专业委员会建议与NHS公众资料可比较，但不算独立试验复现。",
+    "original_sources_reopened": 11,
+    "additional_official_indexed_source_sets_read": 2,
+    "full_guideline_documents_not_claimed_read": [
+      "NICE NG240 PDF: 403; direct recommendations page: Internal Error",
+      "WHO 2025 PDF: Internal Error; NCBI direct pages: captcha; relevant official indexed sections actually read"
+    ]
+  },
+  "original_source_reads": [
+    {
+      "source_id": "meningitis-who",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/meningitis",
+      "source_metadata_sha256": "e95cef913c5d38d0cb65f58f60ee8c4dea9ea5848d0aab5806dc1b59374f2ce1",
+      "independence_group": "WHO",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2026-09-29",
+      "locations_read": [
+        "Who is at risk",
+        "Transmission",
+        "Signs and symptoms",
+        "Complications and sequelae",
+        "Prevention",
+        "Diagnosis",
+        "Treatment"
+      ],
+      "assessment": "现行事实页，不等同2025指南全文；非流行期激素等限制保留。"
+    },
+    {
+      "source_id": "meningitis-nhs",
+      "url": "https://www.nhs.uk/conditions/meningitis/",
+      "source_metadata_sha256": "2372a8f7c5027ac878d055c87a4c6ef59c0e9088f7d5f4aad632a18b2d1eb2cf",
+      "independence_group": "UK-NHS",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2026-06-12; review due 2029-06-12",
+      "locations_read": [
+        "Symptoms",
+        "When and where to get help",
+        "Treatment",
+        "Recovering",
+        "How to reduce risk"
+      ],
+      "assessment": "英国路径。999/111和临时MenB安排不可直接全球化。"
+    },
+    {
+      "source_id": "meningitis-cdc-index",
+      "url": "https://www.cdc.gov/meningitis/about/index.html",
+      "source_metadata_sha256": "e935491411456bb04575337b0e198105aa91255b8d84d2f4cea4e568e2381a43",
+      "independence_group": "US-CDC",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2025-09-09",
+      "locations_read": [
+        "What it is",
+        "Causes",
+        "Symptoms",
+        "Testing and diagnosis",
+        "Myths and misconceptions",
+        "Prevention"
+      ],
+      "assessment": "CDC页面之间是同一机构组。"
+    },
+    {
+      "source_id": "meningitis-cdc-bacterial-meningitis",
+      "url": "https://www.cdc.gov/meningitis/about/bacterial-meningitis.html",
+      "source_metadata_sha256": "4c2b4e88a9cfba28cfabaf075b23f548bab2fb5bc0ef015fcd75d9fc6921046d",
+      "independence_group": "US-CDC",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2025-09-09",
+      "locations_read": [
+        "Symptoms",
+        "Complications",
+        "Risk factors",
+        "Prevention",
+        "Preventive antibiotics",
+        "Treatment"
+      ],
+      "assessment": "列李斯特菌风险但食物细节需实际点入食安页。"
+    },
+    {
+      "source_id": "meningitis-cdc-viral-meningitis",
+      "url": "https://www.cdc.gov/meningitis/about/viral-meningitis.html",
+      "source_metadata_sha256": "e0d41d0086b67ffe6ca8f028b5e029c74b62b98a09b1c1a847aa564c543486ca",
+      "independence_group": "US-CDC",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2025-09-09",
+      "locations_read": [
+        "Risk factors",
+        "How it spreads",
+        "Testing and diagnosis",
+        "Treatment and recovery"
+      ],
+      "assessment": "轻症自然恢复不等于患者自行确认病毒病因。"
+    },
+    {
+      "source_id": "meningitis-cdc-fungal-meningitis",
+      "url": "https://www.cdc.gov/meningitis/about/fungal-meningitis.html",
+      "source_metadata_sha256": "7275509cf62e2006421d90ef3211bf6c5b59a30161267ed27d3c8f1b3b875e1d",
+      "independence_group": "US-CDC",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2025-09-09",
+      "locations_read": [
+        "Risk factors",
+        "How it spreads",
+        "How it does not spread",
+        "Treatment and recovery"
+      ],
+      "assessment": "真菌与免疫状态相关，不能拿其疗程代替结核。"
+    },
+    {
+      "source_id": "meningitis-mayo-causes",
+      "url": "https://www.mayoclinic.org/diseases-conditions/meningitis/symptoms-causes/syc-20350508",
+      "source_metadata_sha256": "c68ca54f9a869f72cf0264f41e112fe57e1dd3ea9ff5aeef301df95e528e73d5",
+      "independence_group": "US-MAYO",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2024-10-17; references list medical expert review 2024-08-12",
+      "locations_read": [
+        "Overview",
+        "Symptoms",
+        "When to see a doctor",
+        "Causes",
+        "Risk factors",
+        "Complications",
+        "Prevention",
+        "References"
+      ],
+      "assessment": "CDC与WHO有共同上游；Mayo独立患者文编写不等于独立临床研究。"
+    },
+    {
+      "source_id": "meningitis-mayo-treatment",
+      "url": "https://www.mayoclinic.org/diseases-conditions/meningitis/diagnosis-treatment/drc-20350514",
+      "source_metadata_sha256": "888bbfcb62074e6c0d24b8640a0ef3353b62bccee318e750fa92b90a7183a379",
+      "independence_group": "US-MAYO",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2024-10-17; references list medical expert review 2024-08-12",
+      "locations_read": [
+        "Diagnosis",
+        "Treatment: Bacterial; Viral; Other types",
+        "Preparing for your appointment",
+        "References"
+      ],
+      "assessment": "Other types里等待辨因的语境不可外推到急性疑似细菌病例；正文未作此错误外推。"
+    },
+    {
+      "source_id": "meningitis-nice-ng240-independent",
+      "url": "https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+      "independence_group": "UK-NICE",
+      "accessed_at": "2026-09-30",
+      "access_status": "official_indexed_recommendation_sections_read; direct_page_Internal_Error; direct_PDF_403",
+      "observed_version": "NG240 published 2024; PDF copyright 2026 is not evidence of a new guideline edition",
+      "locations_read": [
+        "1.4.6–1.4.12",
+        "1.6.7–1.6.8",
+        "1.12.1–1.12.15",
+        "1.13.1–1.13.4"
+      ],
+      "assessment": "实际读到官方检索呈现的完整相关建议段，不宣称整部PDF实读。NICE专业委员会与NHS公众页面不视作两个独立试验。"
+    },
+    {
+      "source_id": "meningitis-who-guideline-independent",
+      "url": "https://www.who.int/publications/i/item/9789240108042",
+      "independence_group": "WHO",
+      "accessed_at": "2026-09-30",
+      "access_status": "official_publication_metadata_and_WHO_authored_indexed_chapters_read; WHO_PDF_Internal_Error; NCBI_direct_pages_captcha",
+      "observed_version": "2025-04-10; 124 pages",
+      "locations_read": [
+        "Introduction 1.4; 1.7",
+        "Recommendations C.4 Hearing loss",
+        "Executive summary hearing assessment recommendations"
+      ],
+      "read_locations": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK614833/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK614844/?report=classic",
+        "https://www.ncbi.nlm.nih.gov/books/NBK614846/"
+      ],
+      "assessment": "NCBI为WHO原文镜像，不是第二独立机构。对象为1月龄以上急性社区获得性脑膜炎；不含新生儿、院内、结核/隐球菌等慢性亚急性和非感染类型。听力建议强、证据确定性很低，不能称随机试验已证明。"
+    },
+    {
+      "source_id": "meningitis-cdc-listeria-independent",
+      "url": "https://www.cdc.gov/listeria/prevention/index.html",
+      "independence_group": "US-CDC",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2025-01-31",
+      "locations_read": [
+        "Who is at risk",
+        "Choose safer foods table"
+      ],
+      "assessment": "实际核对乳制品与熟食肉表；特定鲜软奶酪即使巴氏消毒也有未加热风险。Mayo引用CDC李斯特菌资料，记录共同依据。"
+    },
+    {
+      "source_id": "meningitis-cdc-clinical-independent",
+      "url": "https://www.cdc.gov/meningococcal/hcp/clinical-guidance/index.html",
+      "independence_group": "US-CDC",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2026-06-04",
+      "locations_read": [
+        "Clinical features"
+      ],
+      "assessment": "用于脑膜炎球菌病和血流感染区分；本页没有提供已接种接触者预防那句，不能误引。"
+    },
+    {
+      "source_id": "meningitis-cdc-surveillance-independent",
+      "url": "https://www.cdc.gov/surv-manual/php/table-of-contents/chapter-8-meningococcal-disease.html",
+      "independence_group": "US-CDC",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2024-10-30",
+      "locations_read": [
+        "Natural history",
+        "Clinical characteristics",
+        "Chemoprophylaxis"
+      ],
+      "assessment": "提供无脑膜炎的菌血症，以及接种状态不取消密切接触预防的直接定位。与CDC其他页仍是同一机构组。"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "summary-0",
+      "section": "summary",
+      "section_content_sha256": "103b4f0d2505d7e2360b6c611f7e653af03d74334f2e1c9b92f9eef32b8d83e2",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "脑膜炎是覆盖脑和脊髓的保护膜发生炎症，常由感染引起。",
+        "en": "Meningitis is inflammation of the protective membranes around the brain and spinal cord, commonly caused by infection."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-index",
+          "locator": "What it is; Causes"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Overview; Causes"
+        }
+      ],
+      "assessment": "CDC定义与Mayo概述分别支持；保护膜的白话表达中英一致。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "summary-1",
+      "section": "summary",
+      "section_content_sha256": "103b4f0d2505d7e2360b6c611f7e653af03d74334f2e1c9b92f9eef32b8d83e2",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "常见表现是发热、头痛、颈部僵硬，可能伴呕吐、怕光或意识变化；婴儿表现可能很不典型。",
+        "en": "Typical features are fever, headache and neck stiffness, sometimes with vomiting, light sensitivity or altered awareness; infants may present differently."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-index",
+          "locator": "Symptoms: babies; other ages"
+        },
+        {
+          "source_id": "meningitis-who",
+          "locator": "Signs and symptoms"
+        }
+      ],
+      "assessment": "典型症状和婴儿差异有两机构直接支持，没有把典型症状写成人人必有。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "summary-2",
+      "section": "summary",
+      "section_content_sha256": "103b4f0d2505d7e2360b6c611f7e653af03d74334f2e1c9b92f9eef32b8d83e2",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "本页是病因分流概览：细菌、病毒、真菌和结核等类型的治疗与病程不同，不能凭症状轻重自行确定是哪种。",
+        "en": "This page is an overview for cause-based assessment: bacterial, viral, fungal and tuberculous forms differ in treatment and course, and symptom severity alone cannot establish the type."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-index",
+          "locator": "Causes; Testing and diagnosis; Myths and misconceptions"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Treatment: Bacterial; Viral; Other types"
+        }
+      ],
+      "assessment": "病因分流与不能自行按严重度分类成立；结核病程和专门治疗主要由Mayo支持，不能把WHO急性指南当结核第二证据。",
+      "finding_ids": [
+        "M06"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "causes_risks-0",
+      "section": "causes_risks",
+      "section_content_sha256": "38163b940de1f3b9320205865d9037825ca40123512b230766fe65bfde9e049c",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "不同病原体的进入途径和易感人群不同，也存在非感染性脑膜炎。",
+        "en": "Different pathogens have different routes of entry and susceptible groups, and noninfectious meningitis also exists."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-index",
+          "locator": "Causes; Risk factors"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Causes; Risk factors"
+        }
+      ],
+      "assessment": "感染与非感染、多种病原体和风险差别有对应支持。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "causes_risks-1",
+      "section": "causes_risks",
+      "section_content_sha256": "38163b940de1f3b9320205865d9037825ca40123512b230766fe65bfde9e049c",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "部分细菌可通过近距离呼吸道分泌物或唾液接触传播；携带者可能没有症状。病毒接触者可感染病毒，但不一定发展为脑膜炎。",
+        "en": "Some bacteria spread through close contact with respiratory secretions or saliva, including from symptom-free carriers. Contacts may acquire a causative virus without developing meningitis."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Transmission"
+        },
+        {
+          "source_id": "meningitis-cdc-viral-meningitis",
+          "locator": "How it spreads"
+        },
+        {
+          "source_id": "meningitis-cdc-surveillance-independent",
+          "locator": "Natural history"
+        }
+      ],
+      "assessment": "WHO及CDC监测手册支持细菌分泌物/无症状携带；病毒接触不等于脑膜炎直接见CDC病毒页。原NHS引用的症状段不支持传播，需另给病毒这半句的独立支持。",
+      "finding_ids": [
+        "M01"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "causes_risks-2",
+      "section": "causes_risks",
+      "section_content_sha256": "38163b940de1f3b9320205865d9037825ca40123512b230766fe65bfde9e049c",
+      "kind": "risk",
+      "text": {
+        "zh-CN": "新生儿、免疫受抑制者、无脾者及某些集体居住人群有特定风险。真菌性脑膜炎通常不是人与人传播，不能把所有类型当作同一种传染病。",
+        "en": "Newborns, immunosuppressed people, people without a spleen and some group-living populations have particular risks. Fungal meningitis generally does not spread between people; types are not interchangeable infections."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-bacterial-meningitis",
+          "locator": "Risk factors"
+        },
+        {
+          "source_id": "meningitis-cdc-fungal-meningitis",
+          "locator": "How it does not spread"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Risk factors; Fungal meningitis"
+        }
+      ],
+      "assessment": "各风险群由CDC细菌页和Mayo风险段对应；真菌非人际传播由CDC真菌页和Mayo真菌原因段对应。同一CDC多页只算一个组。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "red_flags-0",
+      "section": "red_flags",
+      "section_content_sha256": "73bfdc88537e147efc9533ac05dff68b56ff8d7ed6e7af3eff57e0e8b4a0ed86",
+      "kind": "action",
+      "text": {
+        "zh-CN": "疑似脑膜炎需要立即医疗评估，不等出疹或所有症状齐全。",
+        "en": "Suspected meningitis needs immediate assessment; do not wait for a rash or every symptom."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Symptoms; When and where to get help"
+        },
+        {
+          "source_id": "meningitis-who",
+          "locator": "Signs and symptoms"
+        }
+      ],
+      "assessment": "即时评估、不要等皮疹或全部症状，NHS与WHO均支持。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "red_flags-1",
+      "section": "red_flags",
+      "section_content_sha256": "73bfdc88537e147efc9533ac05dff68b56ff8d7ed6e7af3eff57e0e8b4a0ed86",
+      "kind": "action",
+      "text": {
+        "zh-CN": "发热伴严重加重的头痛、颈部僵硬、怕光、意识混乱、抽搐或难以唤醒时，立即急救。按压不褪色的皮疹也是危险信号，但没有皮疹不能排除。",
+        "en": "Fever with severe worsening headache, stiff neck, light sensitivity, confusion, seizure or difficulty waking requires emergency care. A non-blanching rash is another warning sign, but its absence does not exclude disease."
+      },
+      "status": "needs_revision",
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Symptoms; When and where to get help"
+        },
+        {
+          "source_id": "meningitis-who",
+          "locator": "Signs and symptoms"
+        }
+      ],
+      "assessment": "急救方向正确，但“发热伴/Fever with”可能被读成所有后列急症都需先有发热。首段已有不用等齐，仍应将抽搐、难唤醒等单独写成立即急救条件；NHS也列体温过低。两语均需同修。",
+      "finding_ids": [
+        "M02"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "red_flags-2",
+      "section": "red_flags",
+      "section_content_sha256": "73bfdc88537e147efc9533ac05dff68b56ff8d7ed6e7af3eff57e0e8b4a0ed86",
+      "kind": "action",
+      "text": {
+        "zh-CN": "婴儿异常哭声、不吃奶、松软无力、反应差或头顶软处鼓起，要立即就医，不强行弯颈自测。",
+        "en": "An unusual cry, poor feeding, floppiness, poor response or bulging soft spot in an infant warrants immediate care; do not force the neck to test it at home."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Symptoms in babies and children under 5"
+        },
+        {
+          "source_id": "meningitis-who",
+          "locator": "Signs and symptoms: babies"
+        },
+        {
+          "source_id": "meningitis-cdc-index",
+          "locator": "Symptoms: babies"
+        }
+      ],
+      "assessment": "婴儿表现及立即就医有两源；末句不要强行弯颈未在所列原文找到，保留为待定位的家庭操作条件，不假报已双源。",
+      "finding_ids": [
+        "M03"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "care-0",
+      "section": "care",
+      "section_content_sha256": "23ab60decb086a1997991e46f92b604dae79516f1bdefb995c372ada5b1e0108",
+      "kind": "action",
+      "text": {
+        "zh-CN": "未确定病因前，脑膜炎样症状不属于普通头痛的自行观察范围。",
+        "en": "Before the cause is established, meningitis-like symptoms should not be observed at home as an ordinary headache."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "When and where to get help"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "When to see a doctor"
+        }
+      ],
+      "assessment": "疑似疾病需要即时评估，不能自行当普通头痛观察；不将所有头痛等同脑膜炎。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "care-1",
+      "section": "care",
+      "section_content_sha256": "23ab60decb086a1997991e46f92b604dae79516f1bdefb995c372ada5b1e0108",
+      "kind": "action",
+      "text": {
+        "zh-CN": "就医时说明症状起始、接触病人、旅行、疫苗、免疫抑制和最近用药；请能描述病情的人陪同。",
+        "en": "Report symptom timing, sick contacts, travel, vaccines, immunosuppression and recent medicines; bring someone able to describe the illness."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Preparing for your appointment: What you can do; What to expect"
+        }
+      ],
+      "assessment": "实际完整的准备清单在Mayo Preparing for your appointment。WHO危险因素清单不等于同等就诊准备行动；作者自己也注明此处单源，需保留缺口。",
+      "finding_ids": [
+        "M04"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "care-2",
+      "section": "care",
+      "section_content_sha256": "23ab60decb086a1997991e46f92b604dae79516f1bdefb995c372ada5b1e0108",
+      "kind": "action",
+      "text": {
+        "zh-CN": "医生确认轻症病毒性脑膜炎后才可能安排居家恢复；出现意识改变、抽搐、反复呕吐或整体恶化，应重新急诊评估。",
+        "en": "Home recovery may be appropriate only after clinicians identify mild viral disease; altered awareness, seizure, repeated vomiting or deterioration requires renewed emergency assessment."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Treatment; When and where to get help"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Viral meningitis"
+        },
+        {
+          "source_id": "meningitis-cdc-viral-meningitis",
+          "locator": "Treatment and recovery"
+        }
+      ],
+      "assessment": "轻症病毒经评估居家和神经危险信号复诊成立；反复呕吐作为这类出院患者单独急诊触发，所列资料未给完整直接双源支持。",
+      "finding_ids": [
+        "M09"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "diagnosis-0",
+      "section": "diagnosis",
+      "section_content_sha256": "51e130bf8d3edb9c38a7afcc7ec31768639db9465b1d52d8ddffcc7f163f2510",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "检查要确认脑膜炎，并尽可能找出病原体来选择治疗。",
+        "en": "Testing establishes meningitis and seeks the cause to guide treatment."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-index",
+          "locator": "Testing and diagnosis"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Diagnosis"
+        }
+      ],
+      "assessment": "找出病因指导治疗为CDC和Mayo共同说明。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "diagnosis-1",
+      "section": "diagnosis",
+      "section_content_sha256": "51e130bf8d3edb9c38a7afcc7ec31768639db9465b1d52d8ddffcc7f163f2510",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "腰椎穿刺从腰背部取少量脑脊液，即环绕脑脊髓的液体，检查细胞、糖、蛋白及病原体。血培养和核酸检测可提供补充信息。",
+        "en": "Lumbar puncture takes a small sample of cerebrospinal fluid from the lower back for cells, glucose, protein and pathogens. Blood cultures and molecular tests provide additional information."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Diagnosis"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Diagnosis: Blood cultures; Spinal tap"
+        }
+      ],
+      "assessment": "腰穿/血培养主要由WHO与Mayo交叉支持，完整细胞/糖/蛋白/核酸枚举主要来自Mayo；应补完整精确第二定位。英文漏中文对脑脊液的白话解释，知识等同但小白可读性不同。",
+      "finding_ids": [
+        "M05"
+      ],
+      "bilingual_assessment": "中文解释脑脊液是环绕脑脊髓的液体，英文未包含这层白话解释；其余数字、动作一致。"
+    },
+    {
+      "claim_id": "diagnosis-2",
+      "section": "diagnosis",
+      "section_content_sha256": "51e130bf8d3edb9c38a7afcc7ec31768639db9465b1d52d8ddffcc7f163f2510",
+      "kind": "action",
+      "text": {
+        "zh-CN": "部分人需要影像或先评估穿刺安全性；怀疑细菌性脑膜炎时，等待穿刺或检验结果不应延误抗生素。",
+        "en": "Some people need imaging or assessment before puncture; suspected bacterial meningitis must not have antibiotics delayed while waiting for puncture or results."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Diagnosis"
+        },
+        {
+          "source_id": "meningitis-nice-ng240-independent",
+          "locator": "1.4.6–1.4.12 (official indexed text read)"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Diagnosis: Imaging; Bacterial meningitis"
+        }
+      ],
+      "assessment": "WHO直接说明腰穿不应延误抗生素；NICE已实读官方索引的1.4.6–1.4.12，支持影像不是常规、特定人先处理安全及不可造成显著延误。Mayo说明影像用途。NICE整页/PDF未取到，未宣称全文通读。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "differentials-0",
+      "section": "differentials",
+      "section_content_sha256": "c0974fd94a32d7b9071181a77e85f4f2e9b99f42653071e37540f0aaba8b2318",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "早期可像流感、胃肠炎或其他头痛，但神经系统变化会改变紧急程度。",
+        "en": "Early symptoms may resemble flu, gastroenteritis or other headaches, but neurological changes alter urgency."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Symptoms"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Symptoms; When and where to get help"
+        }
+      ],
+      "assessment": "像流感由Mayo直接说明；NHS症状列表本身不等于“像胃肠炎”的鉴别证据。需补胃肠炎与神经警报差异的对应材料。",
+      "finding_ids": [
+        "M07"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "differentials-1",
+      "section": "differentials",
+      "section_content_sha256": "c0974fd94a32d7b9071181a77e85f4f2e9b99f42653071e37540f0aaba8b2318",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "偏头痛也可怕光、恶心；伴发热、颈强直、意识异常或第一次抽搐时，医生需要排除感染等危险原因。",
+        "en": "Migraine can also cause light sensitivity and nausea; fever, stiff neck, altered awareness or a first seizure prompts assessment for infection and other dangerous causes."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Signs and symptoms"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Symptoms; When and where to get help"
+        }
+      ],
+      "assessment": "脑膜炎的神经危险信号有支持，但偏头痛怕光/恶心及首次抽搐的完整鉴别行动不在给定定位。应引已有偏头痛主题对应资料，避免两篇脑膜炎概述替代真正的鉴别支持。",
+      "finding_ids": [
+        "M07"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "differentials-2",
+      "section": "differentials",
+      "section_content_sha256": "c0974fd94a32d7b9071181a77e85f4f2e9b99f42653071e37540f0aaba8b2318",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "脑膜炎并不等同于脑膜炎球菌病：其他病原体也可引起脑膜炎，而脑膜炎球菌可造成血流感染而没有脑膜炎。",
+        "en": "Meningitis is not synonymous with meningococcal disease: other pathogens cause meningitis, while meningococcus can cause bloodstream infection without meningitis."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-index",
+          "locator": "Myths and misconceptions"
+        },
+        {
+          "source_id": "meningitis-cdc-surveillance-independent",
+          "locator": "Clinical characteristics"
+        },
+        {
+          "source_id": "meningitis-cdc-clinical-independent",
+          "locator": "Clinical features"
+        },
+        {
+          "source_id": "meningitis-who",
+          "locator": "Transmission; Complications and sequelae"
+        }
+      ],
+      "assessment": "CDC概述澄清二者不同，CDC监测手册及临床页明确无脑膜炎的菌血症；WHO分别叙述侵袭性感染/病原体，可作独立概念支持。三篇CDC不计三个独立编写机构。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "treatment-0",
+      "section": "treatment",
+      "section_content_sha256": "78ec62a482b4bc900074cd182972ba0907544103f35bbe3cac11315c2a087c80",
+      "kind": "action",
+      "text": {
+        "zh-CN": "治疗按病因分支，首要是不能漏掉需要立即治疗的细菌感染。",
+        "en": "Treatment branches by cause, with urgent bacterial infection a priority not to miss."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Diagnosis; Treatment"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Treatment"
+        }
+      ],
+      "assessment": "急性细菌治疗紧迫性及按病因治疗由WHO/Mayo/NHS支持。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "treatment-1",
+      "section": "treatment",
+      "section_content_sha256": "78ec62a482b4bc900074cd182972ba0907544103f35bbe3cac11315c2a087c80",
+      "kind": "benefit",
+      "text": {
+        "zh-CN": "细菌性脑膜炎需要静脉抗生素，部分人同时接受糖皮质激素以减少炎症和神经并发症；医生还会处理抽搐、低氧或休克。",
+        "en": "Bacterial disease needs IV antibiotics; some patients also receive corticosteroids to reduce inflammation and neurological complications, alongside care for seizures, low oxygen or shock."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Bacterial meningitis; Viral meningitis"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Treatment"
+        }
+      ],
+      "assessment": "IV抗生素与部分病例辅助激素由WHO/Mayo支持，NHS有氧疗。整条包含抽搐和休克处理，原定位未分别提供两个直接来源；不能用并发症列表替代处理证据。保留“部分人”，不把WHO非流行期建议泛化全部类型。",
+      "finding_ids": [
+        "M08"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "treatment-2",
+      "section": "treatment",
+      "section_content_sha256": "78ec62a482b4bc900074cd182972ba0907544103f35bbe3cac11315c2a087c80",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "轻症病毒性病例多以休息、补液和症状治疗为主，某些病毒有抗病毒治疗。真菌与结核性病例需各自专门方案，不能套用普通抗生素疗程。",
+        "en": "Mild viral cases often need rest, fluids and symptom relief, while certain viruses have antiviral treatment. Fungal and tuberculous disease need their own regimens, not a routine antibiotic course."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-viral-meningitis",
+          "locator": "Treatment and recovery"
+        },
+        {
+          "source_id": "meningitis-cdc-fungal-meningitis",
+          "locator": "Treatment and recovery"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Viral meningitis; Other types"
+        }
+      ],
+      "assessment": "病毒的支持治疗/特定抗病毒及真菌分支可核对。结核专门疗程主要Mayo；2025 WHO急性指南明确排除结核，不能补作其第二来源。",
+      "finding_ids": [
+        "M06"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "medications-0",
+      "section": "medications",
+      "section_content_sha256": "5ffd829f86bb5d7c346b044cafd66af2fa21a7dcec6d0b605166f9973d202bff",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "药物选择取决于病原体、年龄、免疫情况和当地耐药性。",
+        "en": "Drug selection depends on the pathogen, age, immune status and local resistance."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Bacterial meningitis"
+        }
+      ],
+      "assessment": "WHO治疗段明确年龄、免疫状态、耐药等选择条件；Mayo仅部分病原体选择，整句尚缺第二独立的全部条件支持。",
+      "finding_ids": [
+        "M08"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "medications-1",
+      "section": "medications",
+      "section_content_sha256": "5ffd829f86bb5d7c346b044cafd66af2fa21a7dcec6d0b605166f9973d202bff",
+      "kind": "action",
+      "text": {
+        "zh-CN": "抗生素治疗细菌性脑膜炎，不能治好病毒性脑膜炎；部分疱疹病毒病例可用抗病毒药。不要因为听说病毒性常自愈就自行停掉未明确病因时的治疗。",
+        "en": "Antibiotics treat bacterial but not viral meningitis; selected herpesvirus cases may receive antivirals. Do not stop treatment for an undetermined cause because some viral cases resolve spontaneously."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Bacterial meningitis; Viral meningitis"
+        },
+        {
+          "source_id": "meningitis-cdc-viral-meningitis",
+          "locator": "Treatment and recovery"
+        },
+        {
+          "source_id": "meningitis-nice-ng240-independent",
+          "locator": "1.6.7–1.6.8 (official indexed text read)"
+        }
+      ],
+      "assessment": "抗生素不治病毒及特定疱疹抗病毒由CDC/Mayo支持；不因自行推测停初始治疗，补NICE1.6.8的病因明确前继续治疗。NICE1.6.7限制常规阿昔洛韦，不与正文“部分”冲突。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "medications-2",
+      "section": "medications",
+      "section_content_sha256": "5ffd829f86bb5d7c346b044cafd66af2fa21a7dcec6d0b605166f9973d202bff",
+      "kind": "risk",
+      "text": {
+        "zh-CN": "抗真菌和抗结核药可能需较长疗程，并监测不良反应；糖皮质激素也不是所有脑膜炎统一使用的居家药。",
+        "en": "Antifungal and tuberculosis regimens may be prolonged and require adverse-effect monitoring; corticosteroids are not a universal home medicine for all meningitis."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-fungal-meningitis",
+          "locator": "Treatment and recovery"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Other types; Bacterial meningitis"
+        },
+        {
+          "source_id": "meningitis-who",
+          "locator": "Treatment"
+        }
+      ],
+      "assessment": "真菌较长疗程和药物严重副作用有CDC/Mayo部分支持；结核监测及统一“监测不良反应”缺具体资料与例子，不能算完整药物风险教育。激素应按病因/情境限定。",
+      "finding_ids": [
+        "M06",
+        "M08"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "diet-0",
+      "section": "diet",
+      "section_content_sha256": "34e86c2a4eff4c205fc1797410bc8590f273658d8fdbb1558c37b0d5bae381f0",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "饮食不能清除脑膜感染，重点是安全进食和恢复摄入。",
+        "en": "Food cannot clear a meningeal infection; the priorities are safe intake and nutritional recovery."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Viral meningitis; Other types"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Treatment"
+        }
+      ],
+      "assessment": "食物不是病原治疗的证据边界与按病因的治疗一致；不需要强造病种特异食谱。营养恢复为支持护理概括，不称已验证某种食品疗效。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "diet-1",
+      "section": "diet",
+      "section_content_sha256": "34e86c2a4eff4c205fc1797410bc8590f273658d8fdbb1558c37b0d5bae381f0",
+      "kind": "action",
+      "text": {
+        "zh-CN": "经医生确认可居家恢复的轻症病毒性病例，按能耐受的方式喝水和进食；持续呕吐、无法喝水或嗜睡加重时重新就医。",
+        "en": "For mild viral disease cleared for home care, drink and eat as tolerated; persistent vomiting, inability to drink or increasing drowsiness needs reassessment."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Viral meningitis"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Treatment; When and where to get help"
+        }
+      ],
+      "assessment": "饮水和轻症居家有Mayo/NHS；按耐受进食及无法喝水的具体复诊条件没有完整直接双源，不能仅引CDC的病原治疗。嗜睡变重应与急救节行动保持一致。",
+      "finding_ids": [
+        "M09"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "diet-2",
+      "section": "diet",
+      "section_content_sha256": "34e86c2a4eff4c205fc1797410bc8590f273658d8fdbb1558c37b0d5bae381f0",
+      "kind": "action",
+      "text": {
+        "zh-CN": "孕妇和免疫功能低下者需要关注李斯特菌等食源性感染：选择巴氏消毒乳制品并充分加热相应高风险肉类。这是预防感染，不是已经发生脑膜炎的治疗。",
+        "en": "Pregnant and immunocompromised people should consider foodborne infection such as Listeria: choose pasteurized dairy and thoroughly heat relevant high-risk meats. This prevents infection rather than treating established meningitis."
+      },
+      "status": "needs_revision",
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Prevention: If pregnant take care with food"
+        },
+        {
+          "source_id": "meningitis-cdc-listeria-independent",
+          "locator": "Who is at risk; Choose safer foods table"
+        }
+      ],
+      "assessment": "李斯特菌人群和基本食安方向成立，已补实际CDC食安表；但“相应高风险肉类”不够可执行，应给熟食肉/热狗等例子，并避免把巴氏消毒等同所有软奶酪可直接冷食，CDC有特定鲜软奶酪例外。此为食安细化，不把食物当治疗。",
+      "finding_ids": [
+        "M10"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "daily_care-0",
+      "section": "daily_care",
+      "section_content_sha256": "3ca32946c8e7895b78ff759b07539d06fd4f0ea892b36d590012ef50cfbe4bbe",
+      "kind": "action",
+      "text": {
+        "zh-CN": "护理方式由病因与病情决定，居家护理只适用于已评估适合出院的人。",
+        "en": "Care depends on cause and severity; home care applies only after assessment for discharge."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Viral meningitis; Bacterial meningitis"
+        }
+      ],
+      "assessment": "评估后的轻症居家与重症住院的区别有Mayo/NHS支持。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "daily_care-1",
+      "section": "daily_care",
+      "section_content_sha256": "3ca32946c8e7895b78ff759b07539d06fd4f0ea892b36d590012ef50cfbe4bbe",
+      "kind": "action",
+      "text": {
+        "zh-CN": "恢复时保证休息，按出院说明使用缓解症状的药，并记录头痛、进食、精神状态与新变化；难唤醒、抽搐或明显加重立即急救。",
+        "en": "Rest, use symptom medicines as instructed and record headache, intake, alertness and new changes; difficulty waking, seizures or marked worsening requires emergency help."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Viral meningitis"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Treatment; When and where to get help"
+        }
+      ],
+      "assessment": "休息/症状药及难醒抽搐恶化的行动可对应Mayo/NHS；记录四项是合理编辑型自我管理安排，不是原文已核验的四项医学监测方案，宜区分而非整体宣称双源原句。",
+      "finding_ids": [
+        "M09"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "daily_care-2",
+      "section": "daily_care",
+      "section_content_sha256": "3ca32946c8e7895b78ff759b07539d06fd4f0ea892b36d590012ef50cfbe4bbe",
+      "kind": "action",
+      "text": {
+        "zh-CN": "勤洗手，不共用杯子、餐具或牙刷。接触者是否需要预防药由医护或公卫部门按病原体与接触程度判断，不能把同住者全部自行用药。",
+        "en": "Wash hands and avoid shared cups, utensils or toothbrushes. Clinicians or public-health teams determine preventive medicine for contacts based on pathogen and exposure; do not medicate all household members yourself."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Prevention"
+        },
+        {
+          "source_id": "meningitis-who",
+          "locator": "Prevention: Chemoprophylaxis; Other preventive measures"
+        },
+        {
+          "source_id": "meningitis-cdc-bacterial-meningitis",
+          "locator": "Preventive antibiotics"
+        }
+      ],
+      "assessment": "卫生、避免共享器具有WHO/Mayo；按病原与接触判断预防药由WHO/CDC支持。没有把所有同住者等同所有病原均需抗生素。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "special_populations-0",
+      "section": "special_populations",
+      "section_content_sha256": "ece65696416d793558ad0ecfc7445db6bdb545aa665558fc1ab1e70e46749804",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "年龄和免疫情况会改变可能的病原体，也会改变病程。",
+        "en": "Age and immune status change both likely pathogens and the course of disease."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Who is at risk; Transmission; Treatment"
+        },
+        {
+          "source_id": "meningitis-cdc-bacterial-meningitis",
+          "locator": "Risk factors"
+        },
+        {
+          "source_id": "meningitis-cdc-fungal-meningitis",
+          "locator": "Risk factors; Treatment and recovery"
+        }
+      ],
+      "assessment": "年龄/免疫状态改变病原及病程有WHO和CDC类型页面对应支持。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "special_populations-1",
+      "section": "special_populations",
+      "section_content_sha256": "ece65696416d793558ad0ecfc7445db6bdb545aa665558fc1ab1e70e46749804",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "新生儿常见病原体与青少年不同，而且可能没有典型颈强直；婴儿反应、喂养和囟门变化比要求孩子描述头痛更实用。",
+        "en": "Newborn pathogens differ from those in adolescents, and classic neck stiffness may be absent; response, feeding and the soft spot are more useful observations than asking an infant about headache."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Transmission; Signs and symptoms"
+        },
+        {
+          "source_id": "meningitis-cdc-index",
+          "locator": "Symptoms: babies"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Symptoms: newborns and babies"
+        },
+        {
+          "source_id": "meningitis-cdc-surveillance-independent",
+          "locator": "Clinical characteristics"
+        }
+      ],
+      "assessment": "WHO列年龄相关细菌差异；CDC/Mayo婴儿体征支持颈强直可缺如。观察婴儿喂养/反应是对这些表现的可执行解释，不把成人头痛自述用于婴儿。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "special_populations-2",
+      "section": "special_populations",
+      "section_content_sha256": "ece65696416d793558ad0ecfc7445db6bdb545aa665558fc1ab1e70e46749804",
+      "kind": "action",
+      "text": {
+        "zh-CN": "免疫受抑制者有真菌等特殊风险；孕妇更易发生李斯特菌感染。就诊时说明化疗、移植用药、HIV和妊娠情况，帮助选择检查与治疗。",
+        "en": "Immunosuppression raises risks such as fungal disease, while pregnancy increases Listeria risk. Report chemotherapy, transplant medicines, HIV and pregnancy to guide testing and treatment."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-fungal-meningitis",
+          "locator": "Risk factors"
+        },
+        {
+          "source_id": "meningitis-cdc-bacterial-meningitis",
+          "locator": "Risk factors"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Risk factors"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Preparing for your appointment"
+        }
+      ],
+      "assessment": "免疫抑制与真菌、妊娠与李斯特菌分别有CDC/Mayo风险段。用药和病史告知是就诊准备，补Mayo对应定位；不把WHO急性指南说成覆盖所有免疫相关真菌方案。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "prognosis_followup-0",
+      "section": "prognosis_followup",
+      "section_content_sha256": "735d82dfb8b2fdffb5855d06869603e161ceebd89199fd99d377d8979a50419f",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "预后取决于病因、治疗时机及是否出现神经并发症。",
+        "en": "Outcome depends on cause, treatment timing and neurological complications."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Complications and sequelae; Treatment"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Complications"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Treatment"
+        }
+      ],
+      "assessment": "按病因/及时治疗与并发症不同的预后可交叉支持。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "prognosis_followup-1",
+      "section": "prognosis_followup",
+      "section_content_sha256": "735d82dfb8b2fdffb5855d06869603e161ceebd89199fd99d377d8979a50419f",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "多数轻症病毒性病例可逐渐恢复；细菌性、结核性或真菌性不能沿用这一时间表，免疫功能低下者可能需更长治疗。",
+        "en": "Most mild viral cases recover gradually; bacterial, tuberculous or fungal disease cannot use the same timeline, and immunocompromised people may need longer treatment."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-viral-meningitis",
+          "locator": "Treatment and recovery"
+        },
+        {
+          "source_id": "meningitis-cdc-fungal-meningitis",
+          "locator": "Treatment and recovery"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Viral meningitis; Other types"
+        }
+      ],
+      "assessment": "轻症病毒一般恢复、真菌免疫低下需更长疗程分别支持；整条结核病程仍主要Mayo，不能以排除结核的WHO急性指南补齐。没有强套一个恢复日数，这是正确边界。",
+      "finding_ids": [
+        "M06"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "prognosis_followup-2",
+      "section": "prognosis_followup",
+      "section_content_sha256": "735d82dfb8b2fdffb5855d06869603e161ceebd89199fd99d377d8979a50419f",
+      "kind": "action",
+      "text": {
+        "zh-CN": "复诊应关注听力、视力、学习记忆和运动能力，出现改变时安排相应检查与康复。再次发热头痛或意识变化要提前评估。",
+        "en": "Follow-up should review hearing, vision, learning/memory and movement, arranging assessment and rehabilitation for changes. Recurrent fever with headache or altered awareness needs earlier evaluation."
+      },
+      "status": "needs_revision",
+      "evidence": [
+        {
+          "source_id": "meningitis-who-guideline-independent",
+          "locator": "Recommendations C.4 Hearing loss (indexed WHO-authored text read)"
+        },
+        {
+          "source_id": "meningitis-nice-ng240-independent",
+          "locator": "1.12.7; 1.13.1–1.13.2 (official indexed text read)"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Recovering; When and where to get help"
+        }
+      ],
+      "assessment": "随访不能仅在患者察觉变化后才安排听力检查。WHO2025与NICE主动正式听力评估建议应补入，尤其细菌性病例；两者时间锚点有差别，不能合并为全球单一时间。复发发热头痛/意识改变的行动也应指回急诊条件。",
+      "finding_ids": [
+        "M11"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "complications-0",
+      "section": "complications",
+      "section_content_sha256": "7c8b06f909b0e89630e88c10631e4a243b369c7c3744d35a939ca1828e1891ec",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "并发症既可能发生在急性期，也可能在感染控制后才显现。",
+        "en": "Complications can occur during the acute illness or become apparent after infection is controlled."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Complications and sequelae"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Complications"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Recovering"
+        }
+      ],
+      "assessment": "急性问题与后遗症分开，WHO/Mayo/NHS支持此时间和功能区分。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "complications-1",
+      "section": "complications",
+      "section_content_sha256": "7c8b06f909b0e89630e88c10631e4a243b369c7c3744d35a939ca1828e1891ec",
+      "kind": "risk",
+      "text": {
+        "zh-CN": "急性期可出现抽搐、脑功能受损、脓毒症或休克，严重时危及生命；及时治疗有助降低风险。",
+        "en": "Acute seizures, brain dysfunction, sepsis or shock can be life-threatening; prompt treatment helps reduce risk."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-bacterial-meningitis",
+          "locator": "Complications; Treatment"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Complications"
+        },
+        {
+          "source_id": "meningitis-who",
+          "locator": "Complications and sequelae; Treatment"
+        }
+      ],
+      "assessment": "抽搐/脑功能/脓毒症休克/生命风险由CDC/Mayo/WHO对应，及时治疗重要。作者CDC locator应精确改为Complications，不以Risk factors占位。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "complications-2",
+      "section": "complications",
+      "section_content_sha256": "7c8b06f909b0e89630e88c10631e4a243b369c7c3744d35a939ca1828e1891ec",
+      "kind": "risk",
+      "text": {
+        "zh-CN": "部分患者留有听力或视力下降、记忆学习困难、肢体无力等后遗症；并非所有患者都会发生，实际变化决定需要哪些支持。",
+        "en": "Some survivors have hearing or vision loss, memory/learning difficulties or limb weakness; these do not affect everyone, and actual changes determine support needs."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Complications and sequelae"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Recovering"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Complications"
+        }
+      ],
+      "assessment": "功能后遗症有WHO/NHS/Mayo直接支持；没有把少数风险写成必然。实际支持需求合理，但不应据此取消主动听力筛查。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "prevention-0",
+      "section": "prevention",
+      "section_content_sha256": "2dcf9697fe67996a5a8fc40858171922f1fa1bccab643eb4fae12ade6cffa825",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "预防按病原体进行，没有一种疫苗能覆盖全部脑膜炎。",
+        "en": "Prevention is pathogen-specific; no single vaccine covers every form of meningitis."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Prevention: Vaccination"
+        },
+        {
+          "source_id": "meningitis-cdc-index",
+          "locator": "Prevention"
+        }
+      ],
+      "assessment": "WHO明确没有统一疫苗，CDC不同病因支持范围；不会将预防细菌等同全类型预防。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "prevention-1",
+      "section": "prevention",
+      "section_content_sha256": "2dcf9697fe67996a5a8fc40858171922f1fa1bccab643eb4fae12ade6cffa825",
+      "kind": "action",
+      "text": {
+        "zh-CN": "脑膜炎球菌、肺炎球菌和Hib疫苗可预防部分细菌性病例。中国、英国和美国的免疫程序、产品和适用年龄不同，按所在地及旅行目的地核对接种记录。",
+        "en": "Meningococcal, pneumococcal and Hib vaccines prevent some bacterial cases. Schedules, products and eligible ages differ by country, including China, the UK and US; check local and travel-destination requirements against your records."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Prevention: Vaccination"
+        },
+        {
+          "source_id": "meningitis-cdc-bacterial-meningitis",
+          "locator": "Prevention: Vaccination"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "How to reduce risk"
+        }
+      ],
+      "assessment": "三类疫苗预防范围有WHO/CDC/NHS，英国临时MenB措施未被全球化。中国程序/产品/年龄虽只是差异概括，尚无实际中国资料，不能声称已经完成国际并列核对。",
+      "finding_ids": [
+        "M12"
+      ],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    },
+    {
+      "claim_id": "prevention-2",
+      "section": "prevention",
+      "section_content_sha256": "2dcf9697fe67996a5a8fc40858171922f1fa1bccab643eb4fae12ade6cffa825",
+      "kind": "action",
+      "text": {
+        "zh-CN": "脑膜炎球菌病的密切接触者可能需预防抗生素，即使接种过也要接受接触评估；病毒或真菌性病例不能照搬这一措施。",
+        "en": "Close contacts of meningococcal disease may need preventive antibiotics and exposure assessment even if vaccinated; this measure should not be copied to viral or fungal cases."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-surveillance-independent",
+          "locator": "Chemoprophylaxis: first paragraph"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Causes: Bacterial meningitis: Neisseria meningitidis"
+        },
+        {
+          "source_id": "meningitis-who",
+          "locator": "Prevention: Chemoprophylaxis"
+        }
+      ],
+      "assessment": "新读CDC监测手册Chemoprophylaxis明确已接种仍需接触预防，与Mayo的Causes/Bacterial/Neisseria段交叉。WHO提供一般接触预防。作者Mayo locator写Prevention不准确，应改精确所在段。",
+      "finding_ids": [],
+      "bilingual_assessment": "中英医学含义和行动一致；所列证据/措辞问题同时适用两语。"
+    }
+  ],
+  "claim_status_counts": {
+    "verified": 23,
+    "partial_support": 16,
+    "needs_revision": 3
+  },
+  "findings": [
+    {
+      "id": "M01",
+      "priority": "P2",
+      "claims": [
+        "causes_risks-1"
+      ],
+      "required_action": "拆分细菌携带传播与病毒接触结果的证据；NHS症状段不是传播定位，补病毒分句的独立编写支持。"
+    },
+    {
+      "id": "M02",
+      "priority": "P1",
+      "claims": [
+        "red_flags-1"
+      ],
+      "required_action": "将抽搐、难唤醒、意识混乱等紧急行动从发热前提中独立写出，保持不要等全套症状。"
+    },
+    {
+      "id": "M03",
+      "priority": "P2",
+      "claims": [
+        "red_flags-2"
+      ],
+      "required_action": "不要强行弯颈的家庭操作要求未找到对应原文；补真实直接资料，不能把婴儿症状表充作支持。"
+    },
+    {
+      "id": "M04",
+      "priority": "P2",
+      "claims": [
+        "care-1"
+      ],
+      "required_action": "就诊准备完整清单目前单一Mayo来源；实用安排可明确是编辑提示，但医疗告知条件不能整体标已双源。"
+    },
+    {
+      "id": "M05",
+      "priority": "P2",
+      "claims": [
+        "diagnosis-1"
+      ],
+      "required_action": "补全诊断检查枚举的第二定位，并在英文就地解释脑脊液。腰穿不延误抗生素已由WHO和实际读到的NICE官方段支持。"
+    },
+    {
+      "id": "M06",
+      "priority": "P2",
+      "claims": [
+        "summary-2",
+        "treatment-2",
+        "medications-2",
+        "prognosis_followup-1"
+      ],
+      "required_action": "为结核专门疗程/病程及药物监测补合格独立资料；WHO2025急性指南明确排除结核和隐球菌慢性/亚急性病例。"
+    },
+    {
+      "id": "M07",
+      "priority": "P2",
+      "claims": [
+        "differentials-0",
+        "differentials-1"
+      ],
+      "required_action": "实际补胃肠炎/偏头痛和首次抽搐分流材料，复用已有主题规范入口；不能用脑膜炎症状列表替代其他疾病知识。"
+    },
+    {
+      "id": "M08",
+      "priority": "P2",
+      "claims": [
+        "treatment-1",
+        "medications-0",
+        "medications-2"
+      ],
+      "required_action": "按病因拆分抗感染、激素和并发症支持治疗；完整药物选择条件、具体风险/监测及休克处理尚缺逐项双源。"
+    },
+    {
+      "id": "M09",
+      "priority": "P2",
+      "claims": [
+        "care-2",
+        "diet-1",
+        "daily_care-1"
+      ],
+      "required_action": "补居家无法饮水/反复呕吐等停止自行处理条件的直接证据；记录症状属于编辑型自我管理，不冒充已验证医学监测方案。"
+    },
+    {
+      "id": "M10",
+      "priority": "P2",
+      "claims": [
+        "diet-2"
+      ],
+      "required_action": "给李斯特菌相关食物行为的具体例子，说明巴氏消毒不是所有鲜软奶酪可直接食用的保证；新读CDC食安表可支持修订。"
+    },
+    {
+      "id": "M11",
+      "priority": "P1",
+      "claims": [
+        "prognosis_followup-2"
+      ],
+      "required_action": "主动安排正式听力评估，不仅等到察觉下降；并列说明WHO出院后与NICE能够测试后的不同时间锚点、适用对象和地区。"
+    },
+    {
+      "id": "M12",
+      "priority": "P2",
+      "claims": [
+        "prevention-1"
+      ],
+      "required_action": "国际并列尚未实读中国免疫资料；只保留已核实范围，不把英国临时疫苗安排或美国年龄推广至其他地区。"
+    }
+  ],
+  "version_and_population_findings": [
+    {
+      "id": "MV01",
+      "assessment": "WHO事实页实际为2026-09-29，2025指南为2025-04-10，两者不得混称。NHS复核2026-06-12；四篇CDC概述2025-09-09；两篇Mayo2024-10-17且列2024-08-12专家审阅，原source publication_date可补准确日期。"
+    },
+    {
+      "id": "MV02",
+      "assessment": "WHO2025指南对象为1月龄以上急性社区获得性病；不覆盖新生儿0–28日、院内感染、结核/隐球菌等亚急性慢性及非感染病因。事实页介绍这些病因不等于指南全覆盖。SCCM成人脓毒症复苏建议也不能用作儿童脑膜炎用药方案。"
+    },
+    {
+      "id": "MV03",
+      "assessment": "听力随访：WHO建议出院前，无法完成则出院后4周内；NICE1.12.7以能够接受测试后4周内为锚点、最好出院前。WHO该强建议的证据确定性很低；不能误述为两个高确定性研究或全球同一强制时点。"
+    },
+    {
+      "id": "MV04",
+      "assessment": "原编辑supports人口描述机械包含“Adult SSC recommendations are not pediatric dosing protocols”，与脑膜炎来源不直接对应。按实际来源对象重写，不能只粘贴全人群描述。"
+    },
+    {
+      "id": "MV05",
+      "assessment": "Mayo已接种接触者预防句位于Causes/Bacterial/Neisseria而非作者标记的Prevention；CDC并发症位于Complications，疫苗位于Prevention。WHO/NICE索引访问条件保留，不填写虚假的全文阅读成功。"
+    }
+  ],
+  "mece_and_coverage": {
+    "role": "按病因分流的脑膜炎父级概览；具体病原体诊疗由独立病种承接",
+    "automatic_leaf_coverage": false,
+    "reason": "细菌病原体、结核、隐球菌及新生儿等独立ICD叶类需要各自映射和特异完整正文；此概览、提及和十四节数目不自动增加这些叶类覆盖。食安预防可复用生命周期共用模块并保留疾病特异条件。",
+    "clinical_signoff_granted": false
+  },
+  "validation": {
+    "all_14_sections_reviewed": true,
+    "all_42_bilingual_paragraphs_mapped": true,
+    "numbers": "正文无具体药物剂量或恢复天数，双语无数字阈值差异。拟补WHO/NICE时点仍需逐一同语同步，勿混锚点。",
+    "article_unchanged_during_review": true
+  }
+}

@@ -1,0 +1,1507 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "batch01-sepsis-independent-2026-09-30",
+  "reviewer": "/root/acute_symptom_content",
+  "author": "/root/emergency_content",
+  "reviewed_at": "2026-09-30",
+  "review_type": "independent_original_source_editorial_adversarial_review",
+  "medical_reviewed": false,
+  "target": {
+    "path": "drafts/batch-01/emergency/sepsis.json",
+    "id": "sepsis",
+    "canonical_sha256": "4cd390f0308951a1c87b9559bc412e883f495c152eef70893420db8bf1417e14",
+    "file_sha256": "0d250549ddd40fea888a0452342e4b832cb9b1f0698a468f62f4071061dc15b8"
+  },
+  "verdict": "needs_revision",
+  "release_recommendation": "do_not_count_as_cross_checked_complete_content",
+  "scope": {
+    "sections": 14,
+    "paragraph_claims": 42,
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "author_files_modified": false,
+    "global_files_modified": false
+  },
+  "summary": "急救主体有支持；报告区分整条双源、部分分句支持和需要改写的行动，不能以42个段落等同42个完全核验主张。",
+  "independence_assessment": {
+    "reviewer_did_not_author_target": true,
+    "source_groups": [
+      "WHO",
+      "US-CDC",
+      "UK-NHS",
+      "US-MAYO",
+      "SSC-SCCM-ESICM"
+    ],
+    "same_group_pages_not_double_counted": true,
+    "shared_underlying_evidence": "SCCM与ESICM同一联合指南；WHO引用Sepsis-3等共识；Mayo引用CDC预防资料。独立机构编写不等于底层研究相互独立。",
+    "original_sources_reopened": 10,
+    "additional_official_search_bodies_read": 1,
+    "blocked_full_manuscript_links": [
+      {
+        "url": "https://journals.lww.com/",
+        "context": "2026 SCCM page full guideline link",
+        "result": "Internal Error; exact linked manuscript body not read"
+      }
+    ]
+  },
+  "original_source_reads": [
+    {
+      "source_id": "sepsis-who",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/sepsis",
+      "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d",
+      "independence_group": "WHO",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2024-05-03",
+      "locations_read": [
+        "Overview",
+        "Who is at risk?",
+        "Signs and symptoms",
+        "Prevention",
+        "Treatment"
+      ],
+      "assessment": "全球概览；不是专门的新生儿或产科治疗方案。"
+    },
+    {
+      "source_id": "sepsis-cdc",
+      "url": "https://www.cdc.gov/sepsis/about/index.html",
+      "source_metadata_sha256": "4f0df89b5186d66be1dbc56fd39abca05399e65460222690de1403203922c1eb",
+      "independence_group": "US-CDC",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2026-08-17; page says reviewed by subject-matter experts",
+      "locations_read": [
+        "What is sepsis?",
+        "Signs and symptoms",
+        "Causes",
+        "Diagnosis",
+        "Treatment",
+        "What to know about antibiotics"
+      ],
+      "assessment": "CDC多页同属一个编写组。"
+    },
+    {
+      "source_id": "sepsis-cdc-recovery",
+      "url": "https://www.cdc.gov/sepsis/living-with/index.html",
+      "source_metadata_sha256": "7aacca46b9075eb933fd8592791643d871137c4bb4cbbc34333807f8096ae3d5",
+      "independence_group": "US-CDC",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2025-09-25",
+      "locations_read": [
+        "First steps",
+        "After you get home",
+        "Home recovery tips",
+        "Long-term effects",
+        "Managing the effects",
+        "Getting sepsis again"
+      ],
+      "assessment": "有患者恢复行动，不能代替肾病专门饮食出处。"
+    },
+    {
+      "source_id": "sepsis-cdc-prevention",
+      "url": "https://www.cdc.gov/sepsis/prevention/index.html",
+      "source_metadata_sha256": "1b2018770d8c157d130bd503cf5ff49022fcb974e35806472dfc32131dbd3ddd",
+      "independence_group": "US-CDC",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2025-08-19",
+      "locations_read": [
+        "Prevention strategies",
+        "People with cancer"
+      ],
+      "assessment": "有一般预防及癌症人群；未给孕期专用就诊阈值。"
+    },
+    {
+      "source_id": "sepsis-cdc-facts",
+      "url": "https://www.cdc.gov/sepsis/media/pdfs/Consumer-fact-sheet-protect-yourself-and-your-family-P.pdf",
+      "source_metadata_sha256": "e9c21c454fcf0722a635edef37434f1cc1f2bab49300f30624bf678449e2d946",
+      "independence_group": "US-CDC",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "undated PDF; Pub ID 300701; CS356068-B",
+      "locations_read": [
+        "PDF p1 What causes sepsis?/Is sepsis contagious?/Who is at risk?",
+        "p2 How can I get ahead of sepsis?"
+      ],
+      "assessment": "与CDC网页不构成第二独立来源。"
+    },
+    {
+      "source_id": "sepsis-nhs",
+      "url": "https://www.nhs.uk/conditions/sepsis/",
+      "source_metadata_sha256": "3752030d62ff76f857e7dd360aed843eb2890695777c7e8aad0cf4a62266acc5",
+      "independence_group": "UK-NHS",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "reviewed 2026-05-14; due 2029-05-14",
+      "locations_read": [
+        "Symptoms",
+        "When and where to get medical help",
+        "Treatment",
+        "Recovering",
+        "Complications",
+        "Causes",
+        "Who is at risk"
+      ],
+      "assessment": "原登记日期为null，可补实际页面日期。英国999/111有适用地区；不强加美国65岁和英国75岁风险界限为共同阈值。"
+    },
+    {
+      "source_id": "sepsis-mayo-causes",
+      "url": "https://www.mayoclinic.org/diseases-conditions/sepsis/symptoms-causes/syc-20351214",
+      "source_metadata_sha256": "7402cf19d2586cad0f26b37e35365f2103ea582642c76c479185756254baaee9",
+      "independence_group": "US-MAYO",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2023-02-10",
+      "locations_read": [
+        "Overview",
+        "Symptoms",
+        "When to see a doctor",
+        "Causes",
+        "Risk factors",
+        "Complications"
+      ],
+      "assessment": "Mayo两篇一组；参考表含CDC预防资料，预防不能因此算完全独立底层证据。"
+    },
+    {
+      "source_id": "sepsis-mayo-treatment",
+      "url": "https://www.mayoclinic.org/diseases-conditions/sepsis/diagnosis-treatment/drc-20351219",
+      "source_metadata_sha256": "470ac99e30eec1ec634e3391fb371418d2b4252ec597b60912b03afb95e24e0d",
+      "independence_group": "US-MAYO",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2023-02-10",
+      "locations_read": [
+        "Diagnosis / Blood tests / Other lab tests / Imaging tests",
+        "Medications",
+        "Supportive care",
+        "Surgery"
+      ],
+      "assessment": "检查列表和器官支持有实文；不存在患者就诊准备/营养方案章节。"
+    },
+    {
+      "source_id": "sepsis-ssc-2026",
+      "url": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+      "source_metadata_sha256": "de99638edd5ba1f1919baac490647de8b34417e048a74066741e7bb3b5e7f9b1",
+      "independence_group": "SSC-SCCM-ESICM",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_relevant_original_sections_reopened",
+      "observed_version": "2026 edition confirmed; exact 2026-03-23 date not shown on summary page",
+      "locations_read": [
+        "Scope",
+        "Biomarkers",
+        "Blood culture",
+        "Fluid resuscitation",
+        "Antibiotic initiation",
+        "Source control",
+        "Antimicrobial therapy",
+        "Mechanical ventilation",
+        "Renal replacement therapy",
+        "Medication reconciliation",
+        "Hospital discharge",
+        "Post-hospital evaluation",
+        "Mental health services"
+      ],
+      "assessment": "SCCM与ESICM共同编写同一组；适用成人院前、院内及出院后。实读官方建议汇总；LWW全文链接本次Internal Error，未冒充读过全文。"
+    },
+    {
+      "source_id": "review-nhs-antibiotics-side-effects",
+      "url": "https://www.nhs.uk/medicines/antibiotics/side-effects/",
+      "independence_group": "UK-NHS",
+      "accessed_at": "2026-09-30",
+      "access_status": "full_page_reopened",
+      "observed_version": "reviewed 2022-11-11; review due 2025-11-11",
+      "locations_read": [
+        "Side effects",
+        "Antibiotic allergic reactions / Call 999 or go to A&E now"
+      ],
+      "assessment": "第二机构支持过敏及腹泻；呼吸困难需立即急救。已过页面复核日，不能据此称无效，也不据此单独批准新增风险。"
+    },
+    {
+      "source_id": "review-cdc-chemo-fever",
+      "url": "https://www.cdc.gov/cancer-preventing-infections/patients/fever.html",
+      "independence_group": "US-CDC",
+      "accessed_at": "2026-09-30",
+      "access_status": "official_search_full_body_read",
+      "observed_version": "reviewed 2024-11-14",
+      "locations_read": [
+        "What to know",
+        "Steps to take"
+      ],
+      "assessment": "化疗感染行动应写立即联系，发热可能为唯一征象；如后续新增具体体温阈值仍需第二独立资料及人群标注。"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "summary-0",
+      "section": "summary",
+      "section_content_sha256": "b50c6d4660a1afcbff1239cc2d8024dd7a55c827da6bf4f218303d9774b972b7",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "脓毒症是感染引发身体反应失调，并损伤器官功能的危急情况。",
+        "en": "Sepsis is a dangerous, dysregulated response to infection that injures organ function."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Overview"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Overview"
+        }
+      ],
+      "assessment": "器官损伤定义一致。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "summary-1",
+      "section": "summary",
+      "section_content_sha256": "b50c6d4660a1afcbff1239cc2d8024dd7a55c827da6bf4f218303d9774b972b7",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "肺、尿路、皮肤或腹部感染都可能成为起点。它不只是“发烧很高”，还可能影响意识、呼吸、血压和尿量。",
+        "en": "Lung, urinary, skin or abdominal infection may be the starting point. It is more than a high fever and can affect awareness, breathing, pressure and urine output."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "What is sepsis?"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Causes; Symptoms"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Signs and symptoms"
+        }
+      ],
+      "assessment": "感染起点及表现有交叉支持；没有把发热等同确诊。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "summary-2",
+      "section": "summary",
+      "section_content_sha256": "b50c6d4660a1afcbff1239cc2d8024dd7a55c827da6bf4f218303d9774b972b7",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "脓毒性休克是更严重的循环问题，低血压和供血不足会进一步威胁器官；并不是所有脓毒症起初就有休克。",
+        "en": "Septic shock is a more severe circulatory problem where low pressure and inadequate blood flow further endanger organs; not all sepsis initially includes shock."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Overview"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Overview; Symptoms of septic shock"
+        }
+      ],
+      "assessment": "严重循环问题与可能进展的措辞有支持，未把休克写成必有。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "causes_risks-0",
+      "section": "causes_risks",
+      "section_content_sha256": "1ce0359d599ed8cae896433a089f38500c818ed1fb80a888ceee2bbba5379852",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "感染是起点，器官受损来自病原体与身体异常反应共同作用。",
+        "en": "Infection starts the process, while pathogens and a disordered host response contribute to organ injury."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Overview"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Overview"
+        }
+      ],
+      "assessment": "宿主异常反应导致器官损伤有支持。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "causes_risks-1",
+      "section": "causes_risks",
+      "section_content_sha256": "1ce0359d599ed8cae896433a089f38500c818ed1fb80a888ceee2bbba5379852",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "细菌是常见原因，病毒或真菌也可能引发。脓毒症本身不会在人之间传染，但某些原发感染会传播。",
+        "en": "Bacteria are common causes, but viruses and fungi can also trigger sepsis. Sepsis itself is not passed between people, although some underlying infections can spread."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Causes"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Overview"
+        },
+        {
+          "source_id": "sepsis-cdc-facts",
+          "locator": "PDF p1 Is sepsis contagious?"
+        }
+      ],
+      "assessment": "病原体类型双源；不传染与原发感染可传染的精确区分只有CDC，同机构两网址不能双计。",
+      "finding_ids": [
+        "S01"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "causes_risks-2",
+      "section": "causes_risks",
+      "section_content_sha256": "1ce0359d599ed8cae896433a089f38500c818ed1fb80a888ceee2bbba5379852",
+      "kind": "risk",
+      "text": {
+        "zh-CN": "婴儿、老人、孕产妇、免疫受抑制者及肾病等慢病患者更容易出现严重感染；导管、近期住院或手术也应在就诊时说明。",
+        "en": "Infants, older adults, pregnant or postpartum people, those with immunosuppression and chronic illness such as kidney disease are more vulnerable; report catheters, recent admission or surgery."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Who is at risk?"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Who's at risk of getting sepsis"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Risk factors"
+        },
+        {
+          "source_id": "sepsis-cdc-facts",
+          "locator": "PDF p1 Who is at risk?"
+        }
+      ],
+      "assessment": "大多数易感人群交叉支持；近期手术只在CDC PDF直接列出。向医生说明背景为编辑提示，不应冒充诊断材料中的原文要求。",
+      "finding_ids": [
+        "S02"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "red_flags-0",
+      "section": "red_flags",
+      "section_content_sha256": "a6a26b35e7d65f4d79575ba7d9338e0ab436e2ab8f4783f3b31989f532569b9b",
+      "kind": "action",
+      "text": {
+        "zh-CN": "感染期间突然明显变差，要警惕脓毒症，不必等所有症状齐全。",
+        "en": "Sudden marked deterioration with infection raises concern for sepsis; do not wait for every sign to appear."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Important: Trust your instincts; When and where to get medical help"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Signs and symptoms"
+        }
+      ],
+      "assessment": "不用等齐全症状、立即评估的行动一致。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "red_flags-1",
+      "section": "red_flags",
+      "section_content_sha256": "a6a26b35e7d65f4d79575ba7d9338e0ab436e2ab8f4783f3b31989f532569b9b",
+      "kind": "action",
+      "text": {
+        "zh-CN": "意识混乱、说话含糊、呼吸很快或费力、皮肤苍白发灰或花斑、难以唤醒，应立即呼叫当地急救。",
+        "en": "Confusion, slurred speech, very fast or laboured breathing, pale/grey/mottled skin or difficulty waking requires immediate emergency help."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms; Immediate action required"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Signs and symptoms"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "When to see a doctor; Symptoms of septic shock"
+        }
+      ],
+      "assessment": "混乱/呼吸困难/难唤醒急救有交叉支持；成人灰白花斑和说话含糊的完整枚举主要来自NHS，WHO相应苍白描述在儿童范围。",
+      "finding_ids": [
+        "S03"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "red_flags-2",
+      "section": "red_flags",
+      "section_content_sha256": "a6a26b35e7d65f4d79575ba7d9338e0ab436e2ab8f4783f3b31989f532569b9b",
+      "kind": "action",
+      "text": {
+        "zh-CN": "婴幼儿不肯吃奶、反复呕吐、明显少尿、异常嗜睡或抽搐，也应立即评估；没有高烧不能排除严重感染。",
+        "en": "Poor feeding, repeated vomiting, markedly reduced urine, unusual drowsiness or seizures in a young child also require immediate assessment; absence of high fever does not exclude serious infection."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Signs and symptoms: children / under 5"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms in babies and children; Immediate action required"
+        }
+      ],
+      "assessment": "两源儿童症状与立即评估一致；未以高热为必需条件。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "care-0",
+      "section": "care",
+      "section_content_sha256": "6490d28bed559df3b5a152ad8afe4e13ffeb71d0a73422688b7ae8cfc0a7489f",
+      "kind": "action",
+      "text": {
+        "zh-CN": "疑似脓毒症应立即去急诊，不能只在家退烧后继续观察。",
+        "en": "Suspected sepsis needs immediate emergency assessment rather than continued home observation after fever treatment."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "When and where to get medical help"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Signs and symptoms"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Fluid resuscitation: medical emergency"
+        }
+      ],
+      "assessment": "急诊优先有支持；家庭退烧不改变疑似脓毒症紧急性是此行动的直接解释。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "care-1",
+      "section": "care",
+      "section_content_sha256": "6490d28bed559df3b5a152ad8afe4e13ffeb71d0a73422688b7ae8cfc0a7489f",
+      "kind": "action",
+      "text": {
+        "zh-CN": "告诉医护“有感染且整体情况变差”，描述意识、呼吸、排尿的变化及发生时间，并提供药单、过敏史、近期治疗和免疫抑制情况。",
+        "en": "Tell clinicians there is infection with overall deterioration; describe changes in awareness, breathing and urination with timing, and provide medicines, allergies, recent treatment and immunosuppression history."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Diagnosis"
+        },
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Diagnosis"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "When and where to get medical help: Bring any medicines"
+        }
+      ],
+      "assessment": "原两段诊断定位没有支持整套患者报告清单，尤其过敏史、时间和近期治疗；药单另有NHS直接支持。",
+      "finding_ids": [
+        "S02"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "care-2",
+      "section": "care",
+      "section_content_sha256": "6490d28bed559df3b5a152ad8afe4e13ffeb71d0a73422688b7ae8cfc0a7489f",
+      "kind": "action",
+      "text": {
+        "zh-CN": "恢复后若又出现感染且加重，应立即联系医疗服务；若再次意识异常或呼吸困难，直接急救，不等常规复诊。",
+        "en": "After recovery, obtain immediate advice for a new worsening infection; recurrent altered awareness or breathing difficulty needs emergency care rather than a routine appointment."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Getting sepsis again"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Repeat infections; Immediate action required"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "When to see a doctor"
+        }
+      ],
+      "assessment": "再感染及时求助与再次呼吸/意识异常急救支持成立；英国近12个月111是更具体地区规则，未推广为全球界限。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "diagnosis-0",
+      "section": "diagnosis",
+      "section_content_sha256": "9bceb177444ac23ae1fe3f095aa38e11c10653e53442110da5845b1a3464195e",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "诊断同时寻找感染来源及器官是否受损。",
+        "en": "Assessment seeks both the infection source and evidence of organ injury."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Diagnosis"
+        },
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Diagnosis"
+        }
+      ],
+      "assessment": "临床评估、感染来源及器官功能相互支持。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "diagnosis-1",
+      "section": "diagnosis",
+      "section_content_sha256": "9bceb177444ac23ae1fe3f095aa38e11c10653e53442110da5845b1a3464195e",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "医生会观察意识、血压、呼吸和排尿，查血液、肾肝功能、凝血及血氧，并按线索检查尿液、伤口或胸腹部影像。",
+        "en": "Clinicians assess awareness, pressure, breathing and urine output, check blood, kidney/liver function, clotting and oxygen, and use urine, wound tests or chest/abdominal imaging as indicated."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Diagnosis"
+        },
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Blood tests; Other lab tests; Imaging tests"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Blood culture; Hypoxemia monitoring"
+        }
+      ],
+      "assessment": "详细肝肾/凝血与影像用途只有Mayo逐项列出；CDC概括感染和器官检查不能证明完整枚举双源。",
+      "finding_ids": [
+        "S04"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "diagnosis-2",
+      "section": "diagnosis",
+      "section_content_sha256": "9bceb177444ac23ae1fe3f095aa38e11c10653e53442110da5845b1a3464195e",
+      "kind": "action",
+      "text": {
+        "zh-CN": "血培养用来寻找病原体；单项指标不能确认或排除脓毒症。2026国际成人指南强调边评估边处理，不能把等待某一结果当作延误理由。",
+        "en": "Blood cultures look for the pathogen; no single marker confirms or excludes sepsis. The 2026 international adult guideline emphasizes assessment alongside treatment rather than delaying for one result."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Biomarkers; Blood culture; Fluid resuscitation"
+        },
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Diagnosis; Treatment"
+        }
+      ],
+      "assessment": "成人指南确有单指标不能诊断和边评估边治疗；血培养/及时处理交叉成立，但精确单项不能确认或排除仅SCCM直接，登记CDC Treatment不能替代。",
+      "finding_ids": [
+        "S04"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "differentials-0",
+      "section": "differentials",
+      "section_content_sha256": "dcd534fc21d143cf0af95e646ce9778063429814583fce891100ed17577bde60",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "发热和心跳快有多种原因，重点是是否有感染和器官功能变化。",
+        "en": "Fever and fast pulse have several causes; assessment focuses on infection and changing organ function."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Diagnosis"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Symptoms"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Antibiotic initiation: infectious vs noninfectious assessment"
+        }
+      ],
+      "assessment": "基本方向成立，原两源未给具体危险相似病；本节目前仍是诊断原则，未满足介绍易混问题及区分线索的内容标准。",
+      "finding_ids": [
+        "S05"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "differentials-1",
+      "section": "differentials",
+      "section_content_sha256": "dcd534fc21d143cf0af95e646ce9778063429814583fce891100ed17577bde60",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "普通局部感染可以没有器官损伤；相反，脓毒症也可能没有明显高烧，老人尤其如此。仅看体温不能确定轻重。",
+        "en": "A localized infection may cause no organ injury, while sepsis may lack a prominent fever, especially in older adults. Temperature alone cannot establish severity."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Overview; Signs and symptoms"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms in adults"
+        }
+      ],
+      "assessment": "感染和器官损伤界限有定义支持；老人高热少见仅NHS直接，不能拿WHO定义当该年龄结论第二证据。",
+      "finding_ids": [
+        "S05"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "differentials-2",
+      "section": "differentials",
+      "section_content_sha256": "dcd534fc21d143cf0af95e646ce9778063429814583fce891100ed17577bde60",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "若检查提示其他原因，医生会反复修正诊断并调整抗感染药；“疑似脓毒症”是需要迅速处理的临床判断，不是所有检测都已确定。",
+        "en": "If another cause becomes apparent, clinicians revise the diagnosis and antimicrobial treatment. Suspected sepsis is an urgent clinical assessment, not a claim that every test is already conclusive."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Antimicrobial therapy: continuously reevaluate; Antibiotic initiation"
+        }
+      ],
+      "assessment": "临床复评和撤除不必要经验抗菌药有实际支持，但只有一独立指南组，且适用于成人。",
+      "finding_ids": [
+        "S05"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "treatment-0",
+      "section": "treatment",
+      "section_content_sha256": "ace91abc033f5852ded8575cc6508a3a73b44d98bf0157abc721243db8d06cab",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "治疗同时控制感染、维持器官供血并支持受损器官。",
+        "en": "Care controls infection, maintains organ blood flow and supports failing organs."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Supportive care"
+        }
+      ],
+      "assessment": "感染控制、循环和器官支持相互支持。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "treatment-1",
+      "section": "treatment",
+      "section_content_sha256": "ace91abc033f5852ded8575cc6508a3a73b44d98bf0157abc721243db8d06cab",
+      "kind": "action",
+      "text": {
+        "zh-CN": "需要及时给予合适的抗感染药；脓肿、坏死组织或受污染装置等感染来源可能还需要引流、手术或其他处理。",
+        "en": "Appropriate antimicrobials are given promptly; sources such as pus collections, dead tissue or infected devices may also require drainage, surgery or other source control."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Surgery"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Source control"
+        }
+      ],
+      "assessment": "及时抗菌、脓肿/坏死组织处理有支持；污染装置具体处置在已读建议摘要中没有直接列明，需精确全文定位或另源。",
+      "finding_ids": [
+        "S06"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "treatment-2",
+      "section": "treatment",
+      "section_content_sha256": "ace91abc033f5852ded8575cc6508a3a73b44d98bf0157abc721243db8d06cab",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "静脉补液帮助恢复循环，仍低血压时可能用升压药。严重呼吸或肾功能问题可能需要呼吸机或透析，治疗强度由器官受损程度决定。",
+        "en": "IV fluids support circulation and vasopressors may be needed for persistent low pressure. Severe respiratory or kidney dysfunction may require ventilation or dialysis, according to organ impairment."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Medications; Supportive care"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Mechanical ventilation; Renal replacement therapy; Fluid resuscitation"
+        }
+      ],
+      "assessment": "液体/升压药、按器官损害可能呼吸机或透析有交叉；不含剂量，不把无指征AKI写成必透析。成人指南不能独自作儿科方案。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "medications-0",
+      "section": "medications",
+      "section_content_sha256": "3d2a894d5acbc2b0ef6f7dd7b4c3b1c5bf126b37ba6d3a98e45954c5fcfbd1d5",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "抗感染药针对病原体，补液和升压药则帮助循环，作用不同。",
+        "en": "Antimicrobials target pathogens, while fluids and vasopressors support circulation; their roles differ."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Medications"
+        }
+      ],
+      "assessment": "抗感染与循环药物角色区分有支持。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "medications-1",
+      "section": "medications",
+      "section_content_sha256": "3d2a894d5acbc2b0ef6f7dd7b4c3b1c5bf126b37ba6d3a98e45954c5fcfbd1d5",
+      "kind": "action",
+      "text": {
+        "zh-CN": "起初可能使用覆盖多种细菌的抗生素，确认病原体后缩小范围。病毒、真菌和耐药病原体需要不同选择，不自行服剩余抗生素。",
+        "en": "Initial antibiotics may cover several bacteria and are narrowed once the cause is known. Viruses, fungi and resistant pathogens need different choices; do not self-treat with leftover antibiotics."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Treatment for sepsis"
+        },
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Medications"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Antimicrobial therapy; Antifungal coverage"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Treatment"
+        }
+      ],
+      "assessment": "经验覆盖及随后缩小范围成立；剩余抗生素禁用未在所列精确段找到。病毒/真菌需病原体特异决策，不能暗示所有病毒必有可用药或统一经验抗真菌。",
+      "finding_ids": [
+        "S07"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "medications-2",
+      "section": "medications",
+      "section_content_sha256": "3d2a894d5acbc2b0ef6f7dd7b4c3b1c5bf126b37ba6d3a98e45954c5fcfbd1d5",
+      "kind": "risk",
+      "text": {
+        "zh-CN": "抗生素可引起过敏或腹泻等不良反应，但真正需要时及时治疗的获益很重要。出现新皮疹、呼吸不适或严重腹泻应报告团队，由团队兼顾感染控制与药物风险。",
+        "en": "Antibiotics can cause allergy or diarrhoea, but timely treatment matters when needed. Report new rash, breathing problems or severe diarrhoea so the team can balance infection control and drug harms."
+      },
+      "status": "needs_revision",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "What to know about antibiotics / Side effects"
+        },
+        {
+          "source_id": "review-nhs-antibiotics-side-effects",
+          "locator": "Side effects; Antibiotic allergic reactions / emergency action"
+        }
+      ],
+      "assessment": "风险可补第二机构，但“呼吸不适应报告团队”未说明立即性及院外急救。建议明确住院立即叫医护，院外呼吸困难/喉肿等立即急救；严重腹泻另列联系行动。",
+      "finding_ids": [
+        "S07"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "diet-0",
+      "section": "diet",
+      "section_content_sha256": "d8df57ffa06e69b3e63107658bebf35a8a065febe3858350f0becfeb96c8177b",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "急性脓毒症靠医院治疗控制，饮食主要支持恢复和营养摄入。",
+        "en": "Acute sepsis requires hospital treatment; food mainly supports recovery and adequate nutrition."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Treatment for sepsis; Recovering from sepsis"
+        },
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Home recovery tips"
+        }
+      ],
+      "assessment": "急性医院治疗和恢复营养角色分开。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "diet-1",
+      "section": "diet",
+      "section_content_sha256": "d8df57ffa06e69b3e63107658bebf35a8a065febe3858350f0becfeb96c8177b",
+      "kind": "action",
+      "text": {
+        "zh-CN": "出院后尝试均衡饮食，胃口差时少量多餐；持续吃不下或体重下降应在复诊提出，寻找可以执行的营养方案。",
+        "en": "After discharge, aim for balanced meals and smaller frequent portions when appetite is poor. Discuss persistent poor intake or weight loss at follow-up to develop a workable nutrition plan."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Recovering from sepsis"
+        },
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "After you get home; Home recovery tips; Managing the effects"
+        }
+      ],
+      "assessment": "均衡饮食及持续吃不下求助有支持；少量多餐精确行动只有NHS，不能说CDC逐条支持。",
+      "finding_ids": [
+        "S08"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "diet-2",
+      "section": "diet",
+      "section_content_sha256": "d8df57ffa06e69b3e63107658bebf35a8a065febe3858350f0becfeb96c8177b",
+      "kind": "action",
+      "text": {
+        "zh-CN": "饮食不能替代针对感染或器官损伤的治疗。合并肾脏等器官问题时，把饮水、营养和药物要求一起向治疗团队核对。",
+        "en": "Eating cannot replace treatment of infection or organ injury. With problems such as kidney impairment, review fluid, nutrition and medication needs together with the treating team."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Supportive care"
+        },
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Long-term effects; Managing the effects"
+        }
+      ],
+      "assessment": "两段只有肾功能受损及一般求助，没有肾功能相关饮水/营养/药物共同核对的直接来源。无需添加固定限水，须补与实际建议对应资料。",
+      "finding_ids": [
+        "S08"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "daily_care-0",
+      "section": "daily_care",
+      "section_content_sha256": "04901eda49111c7fa47da493ad747e9dfef37cd398e69091e547bef7643c03fa",
+      "kind": "action",
+      "text": {
+        "zh-CN": "出院后的目标是逐步恢复生活能力，不是立即达到生病前的活动量。",
+        "en": "After discharge, rebuild daily functioning gradually rather than immediately returning to pre-illness activity levels."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "First steps"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Recovering from sepsis"
+        }
+      ],
+      "assessment": "循序恢复且不赶进度相互支持。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "daily_care-1",
+      "section": "daily_care",
+      "section_content_sha256": "04901eda49111c7fa47da493ad747e9dfef37cd398e69091e547bef7643c03fa",
+      "kind": "action",
+      "text": {
+        "zh-CN": "从坐起、短距离走动、洗漱等小任务开始，与康复团队确认合适强度，疲劳时休息。记录睡眠、活动和症状，帮助比较进步。",
+        "en": "Start with small tasks such as sitting up, short walks and washing, agree intensity with rehabilitation staff, and rest when tired. Track sleep, activity and symptoms to make progress visible."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "First steps; Home recovery tips"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Recovering from sepsis"
+        }
+      ],
+      "assessment": "小任务、缓慢增加与记录进展均有原始资料；坐起洗漱例子来自CDC，记录睡眠活动来自NHS，属低风险操作举例，未伪称每个例子双源逐字出现。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "daily_care-2",
+      "section": "daily_care",
+      "section_content_sha256": "04901eda49111c7fa47da493ad747e9dfef37cd398e69091e547bef7643c03fa",
+      "kind": "action",
+      "text": {
+        "zh-CN": "请家人协助药物和预约；有记忆空白、噩梦、焦虑或低落时主动谈论，恢复计划也包括心理和认知支持。",
+        "en": "Ask family to help with medicines and appointments; discuss memory gaps, nightmares, anxiety or low mood, because recovery also includes psychological and cognitive support."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "After you get home; Home recovery tips; Long-term effects"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Recovering; Post-sepsis syndrome"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Medication reconciliation; Hospital discharge; Mental health services"
+        }
+      ],
+      "assessment": "心理/认知支持跨机构一致；家属协助药物和预约是合理编辑建议，但所列两患者页无直接说明，新增SCCM也不能等同强制家属职责。",
+      "finding_ids": [
+        "S09"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "special_populations-0",
+      "section": "special_populations",
+      "section_content_sha256": "9651b5c71702b9aa6fa9f447919c706709e97baabdc14ab64494bf52f1ea76d1",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "婴幼儿、孕产妇和免疫功能低下者需要结合特定背景识别感染。",
+        "en": "Infants, pregnant or postpartum people and those with weakened immunity need assessment that accounts for their circumstances."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Who is at risk?"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Who's at risk of getting sepsis"
+        }
+      ],
+      "assessment": "相关人群一致，未挪用成人具体复苏参数。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "special_populations-1",
+      "section": "special_populations",
+      "section_content_sha256": "9651b5c71702b9aa6fa9f447919c706709e97baabdc14ab64494bf52f1ea76d1",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "婴幼儿可能主要表现为喂养变差或难唤醒；老人可能没有高烧，痴呆或沟通困难者的“和平时不同”需要家属说明。",
+        "en": "Young children may mainly feed poorly or be hard to wake; older people may lack fever. Families should explain changes from baseline in those with dementia or communication difficulties."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Signs and symptoms: children"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms; Noticing sepsis symptoms"
+        }
+      ],
+      "assessment": "婴儿表现两源；老人不高热、痴呆/交流障碍的基线判断细节主要NHS单源。",
+      "finding_ids": [
+        "S03"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "special_populations-2",
+      "section": "special_populations",
+      "section_content_sha256": "9651b5c71702b9aa6fa9f447919c706709e97baabdc14ab64494bf52f1ea76d1",
+      "kind": "action",
+      "text": {
+        "zh-CN": "孕期、分娩后及化疗或免疫抑制治疗期间出现感染症状，应尽快联系自己的医疗团队；危险信号出现时直接急救。",
+        "en": "Contact the treating team promptly for infection symptoms during pregnancy, after delivery or during chemotherapy/immunosuppression; use emergency services for warning signs."
+      },
+      "status": "needs_revision",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Who is at risk?"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Immediate action required; Who is at risk"
+        },
+        {
+          "source_id": "sepsis-cdc-prevention",
+          "locator": "People with cancer"
+        },
+        {
+          "source_id": "review-cdc-chemo-fever",
+          "locator": "What to know; Steps to take"
+        }
+      ],
+      "assessment": "把孕产妇与化疗者统称“尽快联系”不够具体。化疗期间感染/发热需立即联系值班团队，不应让人等额外危险信号；孕产妇需补产科特定资料，不用风险名单替代行动阈值。",
+      "finding_ids": [
+        "S10"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "prognosis_followup-0",
+      "section": "prognosis_followup",
+      "section_content_sha256": "5aaf26859519cf6743f555b6658f0559209591663e3fbdd892aebbdca6bdcf73",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "恢复可持续数周或数月，有些人需要更长期帮助，不能只用出院与否衡量恢复。",
+        "en": "Recovery can take weeks or months, and some need longer-term help; discharge alone does not mean full recovery."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Recovering; Post-sepsis syndrome"
+        },
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Long-term effects; Managing the effects"
+        }
+      ],
+      "assessment": "周月至更久的恢复差异有支持，未承诺固定痊愈期。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "prognosis_followup-1",
+      "section": "prognosis_followup",
+      "section_content_sha256": "5aaf26859519cf6743f555b6658f0559209591663e3fbdd892aebbdca6bdcf73",
+      "kind": "action",
+      "text": {
+        "zh-CN": "复诊要说明乏力、气短、体重变化、睡眠、记忆和情绪问题，让团队判断是否需要康复、器官复查或心理服务。",
+        "en": "Report fatigue, breathlessness, weight change, sleep, memory and mood at review so the team can decide on rehabilitation, organ reassessment or mental-health support."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "After you get home; Managing the effects"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Post-sepsis syndrome"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Post-hospital evaluation; Mental health services"
+        }
+      ],
+      "assessment": "症状报告及按需要康复、功能与心理评估相互支持；不规定无依据固定复查间隔。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "prognosis_followup-2",
+      "section": "prognosis_followup",
+      "section_content_sha256": "5aaf26859519cf6743f555b6658f0559209591663e3fbdd892aebbdca6bdcf73",
+      "kind": "action",
+      "text": {
+        "zh-CN": "脓毒症幸存者再次感染和脓毒症风险更高。新的感染持续加重时及时就医，不把所有不适都当作恢复期疲劳。",
+        "en": "Survivors have increased risk of future infections and sepsis. Seek care promptly for a worsening new infection rather than attributing every symptom to recovery fatigue."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Getting sepsis again"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Repeat infections"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Complications; When to see a doctor"
+        }
+      ],
+      "assessment": "再发与新感染风险、及时求助成立。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "complications-0",
+      "section": "complications",
+      "section_content_sha256": "8c5e2d324ab7df1c89bc4b08738662ebb8aceff1a038e4ac069ba626498f1c25",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "严重感染和异常循环会同时伤害多个器官，但后果因严重程度而异。",
+        "en": "Severe infection and abnormal circulation can injure several organs, with consequences varying by severity."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Overview"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Complications"
+        }
+      ],
+      "assessment": "多器官影响与严重程度差异成立。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "complications-1",
+      "section": "complications",
+      "section_content_sha256": "8c5e2d324ab7df1c89bc4b08738662ebb8aceff1a038e4ac069ba626498f1c25",
+      "kind": "risk",
+      "text": {
+        "zh-CN": "肺、肾、心脏或脑功能受损可能需要支持治疗；严重凝血异常可损伤组织，部分患者留有长期功能障碍。",
+        "en": "Lung, kidney, heart or brain injury may need supportive treatment; severe clotting abnormalities can damage tissues and leave lasting impairment in some patients."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Complications"
+        },
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Long-term effects"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Post-sepsis syndrome"
+        }
+      ],
+      "assessment": "器官及长期功能后果有交叉，凝血损害组织这部分仅Mayo直接。",
+      "finding_ids": [
+        "S11"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "complications-2",
+      "section": "complications",
+      "section_content_sha256": "8c5e2d324ab7df1c89bc4b08738662ebb8aceff1a038e4ac069ba626498f1c25",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "脓毒症后综合征指持续乏力、睡眠、记忆或情绪等问题，不是再次脓毒症的同义词。症状需要按实际原因继续处理。",
+        "en": "Post-sepsis syndrome describes persistent problems such as fatigue, disturbed sleep, memory or mood; it is not another name for recurrent sepsis. Symptoms need assessment and treatment on their own merits."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Post-sepsis syndrome; Repeat infections"
+        },
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Long-term effects; Getting sepsis again"
+        }
+      ],
+      "assessment": "长期症状和再感染两种状态有清楚分栏，正文区别属直接解释。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "prevention-0",
+      "section": "prevention",
+      "section_content_sha256": "3fe422b034c1c59f0f3cd5e731c143bf8e36e60430bcbd488a306054da696be4",
+      "kind": "explanation",
+      "text": {
+        "zh-CN": "预防重点是减少感染、及时处理感染，以及避免恢复后再次恶化。",
+        "en": "Prevention focuses on reducing infection, treating it promptly and avoiding deterioration after recovery."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Prevention"
+        },
+        {
+          "source_id": "sepsis-cdc-prevention",
+          "locator": "Prevention strategies"
+        },
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Getting sepsis again"
+        }
+      ],
+      "assessment": "预防首次及复发目的有支持。",
+      "finding_ids": [],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "prevention-1",
+      "section": "prevention",
+      "section_content_sha256": "3fe422b034c1c59f0f3cd5e731c143bf8e36e60430bcbd488a306054da696be4",
+      "kind": "action",
+      "text": {
+        "zh-CN": "按当地年龄和疾病条件接种疫苗，勤洗手，保持伤口清洁覆盖，并管理糖尿病等慢病。疫苗和卫生措施降低风险，但不能覆盖所有病原体。",
+        "en": "Follow locally recommended vaccines for age and health conditions, wash hands, keep wounds clean and covered, and manage illnesses such as diabetes. These reduce risk without covering every pathogen."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Prevention"
+        },
+        {
+          "source_id": "sepsis-cdc-prevention",
+          "locator": "Prevent infections; Practice good hygiene"
+        }
+      ],
+      "assessment": "疫苗和卫生方向交叉；伤口清洁覆盖、管理糖尿病在CDC明确，WHO本页不逐项支持，完整行动需补第二材料。",
+      "finding_ids": [
+        "S12"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    },
+    {
+      "claim_id": "prevention-2",
+      "section": "prevention",
+      "section_content_sha256": "3fe422b034c1c59f0f3cd5e731c143bf8e36e60430bcbd488a306054da696be4",
+      "kind": "action",
+      "text": {
+        "zh-CN": "有导管或伤口时按团队要求护理，感染症状加重时提前求助；把危险信号告诉照护者，有助于更早识别变化。",
+        "en": "Follow care instructions for catheters or wounds and seek help when infection worsens; share warning signs with caregivers to aid earlier recognition."
+      },
+      "status": "partial_support",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-prevention",
+          "locator": "Act fast; Know sepsis signs"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms; Who is at risk"
+        }
+      ],
+      "assessment": "加重求助有支持；导管护理行动不能由“导管是危险因素”推出具体护理支持，需要导管患者教育资料。",
+      "finding_ids": [
+        "S12"
+      ],
+      "bilingual_assessment": "两种语言的主要条件和行动一致；相同不足同时存在于两种语言。"
+    }
+  ],
+  "claim_status_counts": {
+    "verified": 22,
+    "partial_support": 18,
+    "needs_revision": 2
+  },
+  "findings": [
+    {
+      "id": "S01",
+      "priority": "P2",
+      "claims": [
+        "causes_risks-1"
+      ],
+      "required_action": "拆开病原体与传染性主张；CDC网页和PDF不能算两个机构。"
+    },
+    {
+      "id": "S02",
+      "priority": "P2",
+      "claims": [
+        "causes_risks-2",
+        "care-1"
+      ],
+      "required_action": "就诊准备清单与近期手术的完整范围未被所列诊断段双源支持。"
+    },
+    {
+      "id": "S03",
+      "priority": "P2",
+      "claims": [
+        "red_flags-1",
+        "special_populations-1"
+      ],
+      "required_action": "儿童/成人及老人或沟通障碍者的具体描述须按人群定位，不能把WHO儿童列表直接外推。"
+    },
+    {
+      "id": "S04",
+      "priority": "P2",
+      "claims": [
+        "diagnosis-1",
+        "diagnosis-2"
+      ],
+      "required_action": "完整检查枚举和单指标不能排除需第二直接支持；2026成人指南适用范围现已明确。"
+    },
+    {
+      "id": "S05",
+      "priority": "P2",
+      "claims": [
+        "differentials-0",
+        "differentials-1",
+        "differentials-2"
+      ],
+      "required_action": "补实际相似危险问题与区分线索；旧人群/复评主张不能由通用定义充当第二来源。"
+    },
+    {
+      "id": "S06",
+      "priority": "P2",
+      "claims": [
+        "treatment-1"
+      ],
+      "required_action": "污染装置处理需精确原始出处；来源控制摘要只有一般原则。"
+    },
+    {
+      "id": "S07",
+      "priority": "P1",
+      "claims": [
+        "medications-1",
+        "medications-2"
+      ],
+      "required_action": "药物段补病原体特异边界、剩余药出处及过敏呼吸困难的立即行动，避免只写普通报告。"
+    },
+    {
+      "id": "S08",
+      "priority": "P2",
+      "claims": [
+        "diet-1",
+        "diet-2"
+      ],
+      "required_action": "少量多餐和合并肾功能问题的饮食行动缺完整双源，不能引用器官并发症代替营养建议。"
+    },
+    {
+      "id": "S09",
+      "priority": "P2",
+      "claims": [
+        "daily_care-2"
+      ],
+      "required_action": "家属药物/预约帮助应标明为实用编辑安排，或补对应出院指导；心理恢复已有独立资料。"
+    },
+    {
+      "id": "S10",
+      "priority": "P1",
+      "claims": [
+        "special_populations-2"
+      ],
+      "required_action": "化疗感染需立即联系；孕产妇行动补专用材料。不新增未经第二来源校核的统一体温阈值。"
+    },
+    {
+      "id": "S11",
+      "priority": "P2",
+      "claims": [
+        "complications-1"
+      ],
+      "required_action": "凝血造成组织损伤的精确风险仅Mayo直接，需第二独立编写资料。"
+    },
+    {
+      "id": "S12",
+      "priority": "P2",
+      "claims": [
+        "prevention-1",
+        "prevention-2"
+      ],
+      "required_action": "分别补伤口/慢病及导管护理材料，不把CDC两个网址或危险因素列表当护理证据。"
+    }
+  ],
+  "version_and_population_findings": [
+    {
+      "id": "SV01",
+      "assessment": "WHO脓毒症页为2024-05-03；NHS为2026-05-14；CDC About为2026-08-17。保留不同资料版本，不笼统写全为2026指南。"
+    },
+    {
+      "id": "SV02",
+      "assessment": "SCCM官方页确为2026成人版，适用于成人医院、近期院前/出院后。页面未显示作者登记的2026-03-23日期；全文链接失败，日期须再以正式出版元数据定位。不得外推成人1h/3h、复苏液体或升压目标为儿童方案。"
+    },
+    {
+      "id": "SV03",
+      "assessment": "正文未抄写成人剂量或统一复苏阈值，保留这一边界。全球路径需使用当地急救号，NHS999/111及近12个月复发路径仅英国。"
+    }
+  ],
+  "mece_and_coverage": {
+    "role": "跨病原体脓毒症综合征入口；关联肺炎/尿路感染合理",
+    "automatic_leaf_coverage": false,
+    "reason": "感染部位、病原体和特殊人群相关ICD类别各自需确认映射及完整特异正文；本父级概览不自动覆盖细菌/真菌/新生儿/产科的所有独立叶类。",
+    "clinical_signoff_granted": false
+  },
+  "validation": {
+    "all_14_sections_reviewed": true,
+    "all_42_bilingual_paragraphs_mapped": true,
+    "numbers": "正文仅2026年，无剂量计算或自行用药阈值；两语言一致。",
+    "article_unchanged_during_review": true
+  }
+}

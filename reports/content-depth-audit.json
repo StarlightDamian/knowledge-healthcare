@@ -2,26 +2,26 @@
   "purpose": "Existing-topic content expansion and source-locator screening; not a medical validation or coverage estimate.",
   "classification_target": {
     "target": 0.95,
-    "measured": null,
-    "denominator": null,
+    "measured": 0.0,
+    "denominator": 13155,
     "classification": "ICD-11 MMS",
     "release": "2026-01",
     "unit": "Independent eligible condition category",
-    "content_requirement": "Complete bilingual beginner-readable content in all 14 dimensions, supported by inspected sources and a confirmed category mapping.",
-    "snapshot_status": "not_acquired",
-    "mapping_status": "not_completed"
+    "content_requirement": "Confirmed category mapping, complete bilingual beginner-readable content, claim-level authoritative cross-checks and independent editorial review. Clinical sign-off is tracked separately.",
+    "snapshot_status": "frozen",
+    "mapping_status": "in_progress"
   },
-  "topics": 72,
+  "topics": 74,
   "dimensions_per_topic": 14,
-  "bilingual_fields": 2016,
-  "editorial_records": 72,
+  "bilingual_fields": 2072,
+  "editorial_records": 74,
   "clinically_reviewed": 0,
   "icd_mapped_topics": 0,
   "all_condition_coverage": null,
   "limitations": [
     "Lists, lengths and source locators do not prove comprehension or claim-level support.",
     "Editorial source inspection is not independent medical or translation sign-off.",
-    "The full ICD-11 denominator and confirmed mappings have not been established."
+    "ICD category coverage is computed separately by coverage-icd from the frozen catalog, semantic mappings and editorial records."
   ],
   "issues": [],
   "records": [
@@ -598,6 +598,17 @@
       "english_words": 614
     },
     {
+      "id": "obstructive-sleep-apnea",
+      "kind": "condition",
+      "review_status": "editorial_draft",
+      "content_sha256": "18b33d26cb7b9a0e1755dfe94ce5ff2dfdd8fe6fce52ab09f8f93d8c3cc6d575",
+      "sources_sha256": "3d43f34a83406e3761449b53c6f6747bdddb908dd947768b2fe57966a4bb293b",
+      "editorial_record_sha256": "6af4252f5eb7aa7ac2df7c80b15a1e7d5b5638f08dbfe630bc635cef58c4ddbf",
+      "bilingual_fields_with_lists": 28,
+      "chinese_characters": 2886,
+      "english_words": 1279
+    },
+    {
       "id": "osteoarthritis",
       "kind": "condition",
       "review_status": "editorial_draft",
@@ -783,6 +794,17 @@
       "bilingual_fields_with_lists": 28,
       "chinese_characters": 1441,
       "english_words": 695
+    },
+    {
+      "id": "testicular-torsion",
+      "kind": "condition",
+      "review_status": "editorial_draft",
+      "content_sha256": "5f2b018be6230757e44febade498119e390d4eda0b44dd701e85a6426c8b416a",
+      "sources_sha256": "dae17730a0d7d43cc5ad5f7c1fa1bec6a45f759150bac432f65a533638976f8f",
+      "editorial_record_sha256": "c6e830ce86428bbdef328380a184c0337cd97e9489e6b215f50fc755b2eaf385",
+      "bilingual_fields_with_lists": 28,
+      "chinese_characters": 2412,
+      "english_words": 1168
     },
     {
       "id": "type-2-diabetes",

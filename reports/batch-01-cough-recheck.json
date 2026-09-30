@@ -1,0 +1,2058 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "batch01-cough-recheck-2026-09-30",
+  "reviewer": "/root/emergency_content",
+  "author": "/root/acute_symptom_content",
+  "reviewed_at": "2026-09-30",
+  "medical_reviewed": false,
+  "verdict": "targeted_corrections_mostly_supported_one_bilingual_condition_and_remaining_cross_check_gaps",
+  "publishable_as_complete_cross_checked_content": false,
+  "target": {
+    "path": "drafts/batch-01/acute-symptom/cough.json",
+    "canonical_sha256": "40be0e71c42ed9c727158e2b2919ee38b217cb6fbe60954fb0063e6fd386ea45",
+    "file_sha256": "6f27aa3bca8a4f8082c867476d3d519dc52ebf4ded74fdbce58d27261bf3327c"
+  },
+  "prior_review": {
+    "path": "reports/batch-01-cough-independent.json",
+    "file_sha256": "26362f274b65afdc90e380a59e8fa103ceab247a5cb85c6234ae37b18eef69ac",
+    "canonical_sha256": "590b6a838fa43c93430dee429382da5f68ceaf6e0c7384b75fbbd844a7e53901",
+    "target_canonical_sha256": "f643c3d0e0dfac4910ec0259f9ed2860988e41ae8de67261ba246ee1512ed50b",
+    "preserved_unmodified": true
+  },
+  "current_snapshots": {
+    "cough_editorial_records_sha256": "31623547ef4cffffbde444b9b3b208dfbac6aa097959962dd804925ec5b77e6d",
+    "referenced_sources_sha256": "ec99c4e9e3a942348907992db2e87c3ade2fd61c858848ce67505c788342a7e7",
+    "author_research_path": "reports/batch-01-acute-symptom-research.md",
+    "author_research_sha256_at_review": "3a33a4f267949779997f4e91ebfebe8c8b41be835ced6cff8277b8360aa8aabf"
+  },
+  "scope": {
+    "sections": 14,
+    "claims": 45,
+    "new_or_reworded_claims": 8,
+    "targeted_claim_or_binding_rechecks": 28,
+    "inherited_unchanged_claim_decisions": 17,
+    "sources_reopened_relevant_text": 23,
+    "sources_current_official_index_only": 1,
+    "source_access_inherited_not_reopened": 1,
+    "restriction": "One targeted review against C01-C07 and author revision log. Correct single-source details, source completeness and actual clinical/language error are distinct. Low-risk history organization is not subjected to a two-source clinical-efficacy requirement."
+  },
+  "findings": [
+    {
+      "id": "CR01",
+      "priority": "P2",
+      "type": "bilingual_condition",
+      "claim_ids": [
+        "prevention-2"
+      ],
+      "status": "needs_narrow_text_correction",
+      "issue": "The English grammar can attach prevents usual activities to fever as well as illness, while Chinese and NHS retain fever alone as one branch.",
+      "source_ids": [
+        "b1-acute-cough-nhs"
+      ],
+      "exact_location": "Self-care line24",
+      "required_change": "Make English conditions explicitly disjunctive, e.g. Reduce contact with others when you have a fever or feel too unwell to do your usual activities. Preserve the equivalent Chinese condition.",
+      "clinical_triage_error": false
+    },
+    {
+      "id": "CR02",
+      "priority": "P2",
+      "type": "source_support_completeness",
+      "claim_ids": [
+        "causes_risks-2",
+        "causes_risks-4",
+        "red_flags-3",
+        "red_flags-4",
+        "care-2",
+        "care-3",
+        "differentials-3",
+        "treatment-3",
+        "medications-4",
+        "diet-2",
+        "daily_care-3",
+        "special_populations-2",
+        "special_populations-3",
+        "complications-2"
+      ],
+      "status": "remains_not_full_cross_checked",
+      "issue": "Specific single-source or partial-scope details remain as enumerated per claim. They are not declared medically false and do not justify erasing useful warnings.",
+      "required_change": "For the promised fully cross-checked designation, obtain independent matching support for key action/risk/threshold subclauses or retain an explicit unresolved status. Explanation-only and diary-format details require adequate support/provenance, not automatic dual sources."
+    }
+  ],
+  "old_findings_disposition": [
+    {
+      "id": "C01",
+      "result": "Clinical omission fixed in red_flags-3 and daily_care-3; specific NHS-only details remain a completeness issue, not recurrence of the dangerous omission."
+    },
+    {
+      "id": "C02",
+      "result": "Fixed: overall severe illness wording now matches in both languages."
+    },
+    {
+      "id": "C03",
+      "result": "Major binding repairs verified. Mechanism/precision gaps listed per claim; practical diary and appointment organization accepted without rigid dual-source requirement."
+    },
+    {
+      "id": "C04",
+      "result": "Several actions now independently supported. Exact single-source thresholds/scopes retained transparently; article cannot yet be labeled fully cross-checked."
+    },
+    {
+      "id": "C05",
+      "result": "Antibiotic risks and duplicate-ingredient/pregnancy advice materially repaired. Literal adult-product restriction scope remains attributed rather than fabricated as identical wording."
+    },
+    {
+      "id": "C06",
+      "result": "benefit/risk classifications corrected; chronic-impact list independently supported except explicit muscle-soreness detail."
+    },
+    {
+      "id": "C07",
+      "result": "Adult reflux restriction and infant-fever route correct; distinct duration purposes preserved. Minor age/population support gaps remain explicit."
+    }
+  ],
+  "source_independence": {
+    "NHS": "National NHS pages are one authoring group; CUH dietitian material is locally authored, but is not combined with NHS to fake two-source support here.",
+    "Healthdirect": "Own writing with NHS/RCH/BMJ/NSW and other upstream references disclosed; different prose is not independent trial replication.",
+    "Mayo_ALA": "Each institution’s multiple pages count once.",
+    "NIH": "NHLBI and NIDDK are separate topic teams under NIH; no claim uses their pair alone to manufacture independent evidence.",
+    "NICE": "Guideline and evidence summary count once. Direct403 and official indexed access distinguished.",
+    "ADAM": "Physician-reviewed A.D.A.M. encyclopedia hosted by MedlinePlus is not NIH-authored public-domain content."
+  },
+  "bilingual_review": {
+    "reviewed_scope": "All reworded paragraphs and repaired key-action bindings; unchanged accepted text linked by hash.",
+    "numeric_conditions": "Under3months/38C; over3weeks; natural3-4weeks; honey age1 agree. English younger babies in diet-2 refers back to age1; repeated digits need not have identical frequency.",
+    "specific_new_problem": "CR01 only; no new dangerous blood/infant fever branch mistranslation identified."
+  },
+  "mece_review": {
+    "kind": "symptom",
+    "coding": [],
+    "result": "Symptom overview distinguishes causes and refers treatment to identified causes. Parent examples or listed differentials do not count as complete disease coverage."
+  },
+  "sources": [
+    {
+      "source_id": "b1-acute-breathless-nhs",
+      "url": "https://www.nhs.uk/symptoms/shortness-of-breath/",
+      "source_metadata_sha256": "ef37124126ad957e429f2feeb7dbd23f155ea106d61a8832546469530107a3f4",
+      "declared_independence_group": "UK-NHS-NATIONAL",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Immediate action; child section, lines16-33",
+      "observed_version": "2024-01-30",
+      "scope_and_limit": "Speech-limiting dyspnea, cyanosis and confusion emergency; separate adult/child conditions.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-nhs",
+      "url": "https://www.nhs.uk/symptoms/cough/",
+      "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6",
+      "declared_independence_group": "UK-NHS-NATIONAL",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Self-care; medicine caution; GP/urgent advice; appointment, lines15-96",
+      "observed_version": "2023-12-08",
+      "scope_and_limit": "Three-week review differs from usual course; fever OR illness limiting activity is the contact-reduction condition.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-cdc",
+      "url": "https://www.cdc.gov/acute-bronchitis/about/index.html",
+      "source_metadata_sha256": "1efb58462fd0d6fe681049499aab20569b9e7d118cf1f7a1321ee3be28c0768c",
+      "declared_independence_group": "US-CDC",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Audience; care triggers; Treatment; supportive care; OTC, lines28-117",
+      "observed_version": "2025-07-02",
+      "scope_and_limit": "Otherwise healthy bronchitis audience; infant fever criterion; C. difficile link not treated as direct text for every diarrhea mechanism.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-ala",
+      "url": "https://www.lung.org/lung-health-diseases/warning-signs-of-lung-disease/cough",
+      "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb",
+      "declared_independence_group": "US-ALA",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Reflex/transcript; Causes, lines62-93",
+      "observed_version": "2026-02-19 per unchanged prior record",
+      "scope_and_limit": "Specific cause clues read. Prior diagnostic/ordinary explanatory assessments inherited where unchanged; inconsistent acute-duration wording not imported.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-medline",
+      "url": "https://medlineplus.gov/ency/article/003072.htm",
+      "source_metadata_sha256": "375a445a26dda8c13ac96189f292afbfce07485ca74e2e940ef5b4a64eaaee7e",
+      "declared_independence_group": "ADAM-MEDLINE-ENCYCLOPEDIA",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Causes; Home Care; clinician contact, lines57-110",
+      "observed_version": "2025-04-01 per unchanged prior record",
+      "scope_and_limit": "A.D.A.M. authorship, not NIH authorship. Earlier contact duration and infant cough advice remain distinct from fever threshold.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-nice",
+      "url": "https://www.nice.org.uk/guidance/ng120/chapter/Recommendations",
+      "source_metadata_sha256": "38c3aaaadd5b57b9098ba2736db96d621c0c28679a57670dcc9d6fda86546080",
+      "declared_independence_group": "UK-NICE",
+      "access_status": "official_indexed_current_recommendations_read_direct_page_403",
+      "locations_read": "NG120 1.1.1-1.1.19 and 1.2.1-1.2.2",
+      "observed_version": "2019-02-07; indexed current recommendations",
+      "scope_and_limit": "Direct page failed with 403; current numbered recommendation excerpts read from official index. Draft consultation documents not used. Guideline and evidence summary are one author.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-nice-evidence",
+      "url": "https://www.nice.org.uk/guidance/ng120/chapter/Summary-of-the-evidence",
+      "source_metadata_sha256": "bfee99a03590389cd31e5d9e36bb00b6903ebfd262b1e851311bc1b2e913c002",
+      "declared_independence_group": "UK-NICE",
+      "access_status": "inherited_prior_official_indexed_read_not_reopened",
+      "locations_read": "Previous report source entry; author unchanged honey evidence locator",
+      "observed_version": "2019-02-07 per prior record",
+      "scope_and_limit": "No new full-page retrieval claimed. Current honey judgement also uses actually reopened RCH/NHS/CDC; older indexed honey evidence not upgraded.",
+      "accessed_at": null
+    },
+    {
+      "source_id": "b1-acute-cough-fda-child",
+      "url": "https://www.fda.gov/consumers/consumer-updates/should-you-give-kids-medicine-coughs-and-colds",
+      "source_metadata_sha256": "f808bb4f1a239b29c44ed1c780e755c111d8e88de0a1a203023a57d4a1d18efb",
+      "declared_independence_group": "US-FDA",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Giving Children Cough and Cold Medicines; clinician contact, lines93-128",
+      "observed_version": "No page revision date visible",
+      "scope_and_limit": "Product duplication, adult formulation risk and age differences; FDA 2-month wording is not substituted for CDC/NHS under-three-month rule.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-ala-chronic",
+      "url": "https://www.lung.org/lung-health-diseases/lung-disease-lookup/chronic-cough/treating-and-managing",
+      "source_metadata_sha256": "3a262950931a6938bc89ce68c719e1f3c90ed491fd6b377353aa3ff2a5fc8c05",
+      "declared_independence_group": "US-ALA",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "What to Expect; Treatment; Lifestyle, lines67-86",
+      "observed_version": "No revision date newly established",
+      "scope_and_limit": "Muscle pain explicitly present; unchanged claims of absent drug approvals elsewhere on source not adopted.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-reflux-diet-niddk",
+      "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/acid-reflux-ger-gerd-adults/eating-diet-nutrition",
+      "source_metadata_sha256": "f29d97543f79527d3ea5a3fa19bd20a6b40b8ac5eae0ffb08664f5b76c3e0788",
+      "declared_independence_group": "US-NIH-NIDDK",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Eating habits and individual food triggers, lines119-149",
+      "observed_version": "Reviewed July 2020",
+      "scope_and_limit": "Direct page available in this review, though author correctly records its earlier indexed access. Adult GERD scope; referenced Badillo/Francis2014 review.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-nhs-hemoptysis",
+      "url": "https://www.nhs.uk/symptoms/coughing-up-blood/",
+      "source_metadata_sha256": "651626b005e9597fdde7debc909cdd16db584e0bb4a94bf8469b4bbfdd3c7cbf",
+      "declared_independence_group": "UK-NHS-NATIONAL",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Urgent/Immediate action, lines26-43",
+      "observed_version": "2024-06-13",
+      "scope_and_limit": "Exact amount/upper-back/heartbeat criteria are NHS-specific; small amounts require urgent review.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-mayo-hemoptysis",
+      "url": "https://www.mayoclinic.org/symptoms/coughing-up-blood/basics/causes/sym-20050934",
+      "source_metadata_sha256": "816fd0f7e89cbcfa6a1414654f3eef06fc8a570e9deebe626aafa8eff8069cca",
+      "declared_independence_group": "US-MAYO",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Definition and clinician advice, lines263-300",
+      "observed_version": "2024-11-01",
+      "scope_and_limit": "Large/repeated or continuing blood warrants emergency; not a second source for every NHS fine criterion. UpToDate/Ferri cited.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-healthdirect-breathless",
+      "url": "https://www.healthdirect.gov.au/shortness-of-breath",
+      "source_metadata_sha256": "b8d148bd3737f82564610d3927e3649aced14f501f6bd1307b928f9b81e310fe",
+      "declared_independence_group": "AU-HEALTHDIRECT",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Ambulance; prompt doctor/ED; causes, lines85-124",
+      "observed_version": "Reviewed June2025 per author record",
+      "scope_and_limit": "Speech, blue lips and confusion with breathlessness; direct cause list does not supply every pneumothorax detail.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-healthdirect-hemoptysis",
+      "url": "https://www.healthdirect.gov.au/haemoptysis-coughing-up-blood",
+      "source_metadata_sha256": "b543054e87adf9d11d23ab1ff0958786549bdb5bb4e65742ead01ff680e1ba98",
+      "declared_independence_group": "AU-HEALTHDIRECT",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Emergency overview and doctor advice, lines51,80-83,137-146",
+      "observed_version": "Reviewed October2023",
+      "scope_and_limit": "Large volume or blood with chest pain/breathing problems emergency; small blood as soon as possible. NSW ECI and BMJ listed, distinct from NHS prose.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-nhs-child-fever",
+      "url": "https://www.nhs.uk/symptoms/fever-in-children/",
+      "source_metadata_sha256": "f8c062d9e8ea20e02309b8865caa44ff661579ae2251c95153cf583e40002f82",
+      "declared_independence_group": "UK-NHS-NATIONAL",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Urgent/Immediate action, lines70-87; footer100-101",
+      "observed_version": "2024-01-03; due2027-01-03",
+      "scope_and_limit": "Page review date is visible, separate from video2025 date. Under-three-month fever requires111, emergency for dangerous associated features.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-mayo-chronic",
+      "url": "https://www.mayoclinic.org/diseases-conditions/chronic-cough/symptoms-causes/syc-20351575?p=1",
+      "source_metadata_sha256": "75af555e7bc74538ff51039a82928c16b64e7fafdf0261a748d55bc31332ef14",
+      "declared_independence_group": "US-MAYO",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Overview; clinician advice; causes; complications, lines7-60",
+      "observed_version": "Print page without revision date",
+      "scope_and_limit": "Weeks-long functional impact, ACE medicines, reflux/nasal drainage, fatigue, sleep, vomiting/incontinence; does not literally supply dry modifier for drug cough or muscle soreness.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-mayo-chronic-treatment",
+      "url": "https://www.mayoclinic.org/diseases-conditions/chronic-cough/diagnosis-treatment/drc-20351580?p=1",
+      "source_metadata_sha256": "e5860655b7380a9bc9b6df471e281886f9d51dc6f7453a2e67ebd3e435fa2b70",
+      "declared_independence_group": "US-MAYO",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Diagnosis; Treatment; Lifestyle; Preparing, lines5-80",
+      "observed_version": "Print page without revision date",
+      "scope_and_limit": "Cause-directed inhaled roles, medication review and practical history. Adult/child chronic investigation distinctions preserved; no empirical regimen copied.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-nhlbi-asthma-causes",
+      "url": "https://www.nhlbi.nih.gov/health/asthma/causes",
+      "source_metadata_sha256": "70bd2028cfe6961aeeb091dad364c334dcfad29e1d1193eaa7c1833dfa157312",
+      "declared_independence_group": "US-NIH-NHLBI",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "How asthma affects lungs; triggers, lines126-153",
+      "observed_version": "2024-04-17",
+      "scope_and_limit": "Sensitivity mechanism directly supported; an explanatory mechanism does not require two studies or become diagnosis by cough alone.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-nhlbi-asthma-treatment",
+      "url": "https://www.nhlbi.nih.gov/health/asthma/treatment-action-plan",
+      "source_metadata_sha256": "551a93cb2326bb74a0149fba8636199e4f97fbd34aebfe485480f75f663b0f48",
+      "declared_independence_group": "US-NIH-NHLBI",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Quick-relief/long-term medicines; exercise/night symptoms, lines99-128,167-186",
+      "observed_version": "2024-04-17 per author metadata",
+      "scope_and_limit": "Independent support for airway-opening versus anti-inflammatory roles in diagnosed asthma; not general cough prescriptions.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-healthdirect",
+      "url": "https://www.healthdirect.gov.au/cough",
+      "source_metadata_sha256": "44086b42681cf64128dcd8bcded17da7c43360c5e9dcf57e82aef1ba180531a5",
+      "declared_independence_group": "AU-HEALTHDIRECT",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Cause; doctor/urgent advice; treatment; prevention; complications and references, lines109-300",
+      "observed_version": "Reviewed November2025 per author record",
+      "scope_and_limit": "References NHS/RCH and others: own editorial synthesis, shared upstream disclosed; no claim of independent clinical trials.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-cuh-reflux-diet",
+      "url": "https://www.cuh.nhs.uk/patient-information/dietary-lifestyle-advice-for-adults-with-gastro-oesophageal-reflux-disease-gord/",
+      "source_metadata_sha256": "7874ffbc399eab3184f72465710cdae77d8335bd225418fc00447fc10a632398",
+      "declared_independence_group": "UK-CUH",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Adult title; Self-help; Food triggers; document footer, lines287-375",
+      "observed_version": "101159 v3 approved2024-07-25",
+      "scope_and_limit": "CUH Nutrition/Dietetics adult food and evening-timing advice. No literal reflux-cough cure or pediatric extrapolation.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-nhs-antibiotic-risk",
+      "url": "https://www.nhs.uk/medicines/antibiotics/side-effects/",
+      "source_metadata_sha256": "5f4e02e7e5183d4868abf710179c760723ec10de27016221604304e6a5486270",
+      "declared_independence_group": "UK-NHS-NATIONAL",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Adverse effects/allergy, lines15-43; footer74-75",
+      "observed_version": "2022-11-11; review due2025-11-11 passed",
+      "scope_and_limit": "Diarrhea, rash and rare severe allergy; expired scheduled review date recorded, not assumed invalid solely because of age.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-rch-clinical",
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/cough/",
+      "source_metadata_sha256": "4dd2e8e5f4d77f9e2c7e5969235d8ea4d5adbc25465580aba3f4d4986490514f",
+      "declared_independence_group": "AU-RCH",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Key points; History; Examination; Management, lines59-156",
+      "observed_version": "Updated March2025 per author metadata",
+      "scope_and_limit": "Pediatric nonspecific versus chronic/specific cough; empirical steroid restriction is not a full adult NICE rule.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-womens-pregnancy",
+      "url": "https://www.thewomens.org.au/images/uploads/fact-sheets/Medicines_and_pregnancy_240816.pdf",
+      "source_metadata_sha256": "e66633a90e671172ba8c38d84ee5b5d4c8b3a1d36c866d2cd0dca1a5e7da63f8",
+      "declared_independence_group": "AU-ROYAL-WOMENS",
+      "access_status": "official_pdf_relevant_text_read",
+      "locations_read": "May2024 PDF pages1-2; OTC consultation and cold/flu",
+      "observed_version": "May2024",
+      "scope_and_limit": "Pregnancy consultation scope only. No dosing, drug selection or lactation advice transferred.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "b1-acute-cough-hsa-child",
+      "url": "https://www.hsa.gov.sg/announcements/cough-and-cold-medicines-for-children/",
+      "source_metadata_sha256": "d42cd68892692e6c5fc8fb54842a84290df2fedadd7a1d4e9ddaaad83870c581",
+      "declared_independence_group": "SG-HSA",
+      "access_status": "direct_page_relevant_text_read",
+      "locations_read": "Using medicines safely, lines35-51",
+      "observed_version": "2026-04-09 displayed with migration notice",
+      "scope_and_limit": "Child-suitable strength/formulation and duplicate ingredients; site migration is not a new clinical review.",
+      "accessed_at": "2026-09-30"
+    }
+  ],
+  "claim_reviews": [
+    {
+      "id": "summary-1",
+      "section": "summary",
+      "current_claim_text_sha256": "80a657fbcc24bc6cf1e8a9d7c90e493367cf015d8b137192dd57de1ca3bed5a6",
+      "current_author_claim_sha256": "2e9dcaf6f66f9bda4260a5da90cb2677c49a6008df50740093e286569d5e4bd6",
+      "current_section_content_sha256": "0f8a9f8b35708846ec9ba44bb7354f6f03c14ecd3fab5bb9736c4223bbf4a094",
+      "current_author_record_sha256": "df232e3af0fbe7d2def50e0dfc88a2cb64c44f00b1f1eb26f18df14032bba807",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "80a657fbcc24bc6cf1e8a9d7c90e493367cf015d8b137192dd57de1ca3bed5a6",
+      "prior_decision": "supported",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Why Do We Cough?",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        },
+        {
+          "source_id": "b1-acute-cough-medline",
+          "locator": "Definition",
+          "source_metadata_sha256": "375a445a26dda8c13ac96189f292afbfce07485ca74e2e940ef5b4a64eaaee7e"
+        }
+      ],
+      "decision": "inherited_supported",
+      "assessment": "Unchanged bilingual medical text and referenced source metadata hashes match the prior independent finding. Generic author assessment wording changed; no new medical scope inferred.",
+      "actual_source_locations": "ALA Why Do We Cough; ADAM opening",
+      "complete_independent_support_for_all_key_medical_subclaims": true,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "summary-2",
+      "section": "summary",
+      "current_claim_text_sha256": "a4ed55487fa33b971411db332d05a1c722416a9051719bd3c35535025dde2ebc",
+      "current_author_claim_sha256": "a248f720cccae767bd95eba0ad89bd6f9a4910cd0c83f00830a9d4ad71253e33",
+      "current_section_content_sha256": "0f8a9f8b35708846ec9ba44bb7354f6f03c14ecd3fab5bb9736c4223bbf4a094",
+      "current_author_record_sha256": "df232e3af0fbe7d2def50e0dfc88a2cb64c44f00b1f1eb26f18df14032bba807",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "a4ed55487fa33b971411db332d05a1c722416a9051719bd3c35535025dde2ebc",
+      "prior_decision": "supported_explanation",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Reflex; Types",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        },
+        {
+          "source_id": "b1-acute-cough-medline",
+          "locator": "Considerations",
+          "source_metadata_sha256": "375a445a26dda8c13ac96189f292afbfce07485ca74e2e940ef5b4a64eaaee7e"
+        }
+      ],
+      "decision": "inherited_supported_explanation",
+      "assessment": "Unchanged bilingual medical text and referenced source metadata hashes match the prior independent finding. Generic author assessment wording changed; no new medical scope inferred.",
+      "actual_source_locations": "ALA Transcript/Types; ADAM Considerations",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "summary-3",
+      "section": "summary",
+      "current_claim_text_sha256": "795d097529d7ae76ea7bbcc4be56d7aed7d78c1864248c9865c871886f534199",
+      "current_author_claim_sha256": "ad7993b242fa2c426d13481dbf8ff4eeeecf976c699995d113169804bcd25bc4",
+      "current_section_content_sha256": "0f8a9f8b35708846ec9ba44bb7354f6f03c14ecd3fab5bb9736c4223bbf4a094",
+      "current_author_record_sha256": "df232e3af0fbe7d2def50e0dfc88a2cb64c44f00b1f1eb26f18df14032bba807",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "795d097529d7ae76ea7bbcc4be56d7aed7d78c1864248c9865c871886f534199",
+      "prior_decision": "supported_explanation",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Causes; Treatment",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        },
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Causes",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        }
+      ],
+      "decision": "inherited_supported_explanation",
+      "assessment": "Unchanged bilingual medical text and referenced source metadata hashes match the prior independent finding. Generic author assessment wording changed; no new medical scope inferred.",
+      "actual_source_locations": "ALA Treating Cough; NHS Causes",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "causes_risks-1",
+      "section": "causes_risks",
+      "current_claim_text_sha256": "2e7cf103aa29e41218aa17ed45293b6d856d0ec991bf03de70ced31b8e894dac",
+      "current_author_claim_sha256": "970229b047a99613d55a65fd7f15a648b1b955dc14900a09c1ac061dae6a36fe",
+      "current_section_content_sha256": "a8347dfbce558825c569884947df5e176ba2811ab5a8111c6c574c81673d7d65",
+      "current_author_record_sha256": "c52f60cdc380ff0169c9383e5d26fcc9195dfaa02d1116f549b15681c92e8776",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "2e7cf103aa29e41218aa17ed45293b6d856d0ec991bf03de70ced31b8e894dac",
+      "prior_decision": "supported_explanation",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-medline",
+          "locator": "Causes",
+          "source_metadata_sha256": "375a445a26dda8c13ac96189f292afbfce07485ca74e2e940ef5b4a64eaaee7e"
+        },
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Causes",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        }
+      ],
+      "decision": "inherited_supported_explanation",
+      "assessment": "Unchanged bilingual medical text and referenced source metadata hashes match the prior independent finding. Generic author assessment wording changed; no new medical scope inferred.",
+      "actual_source_locations": "ADAM Causes; ALA Causes",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "causes_risks-2",
+      "section": "causes_risks",
+      "current_claim_text_sha256": "56e30a1d8a938233be9c34a684fc2aab554f2a8de6d1dd531c1e4894e7f6ac9d",
+      "current_author_claim_sha256": "d9ced3c0c74d2ff866cc4806166603b2008aa78d2af1dbe26df2bf7bcefdc420",
+      "current_section_content_sha256": "a8347dfbce558825c569884947df5e176ba2811ab5a8111c6c574c81673d7d65",
+      "current_author_record_sha256": "c52f60cdc380ff0169c9383e5d26fcc9195dfaa02d1116f549b15681c92e8776",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "56e30a1d8a938233be9c34a684fc2aab554f2a8de6d1dd531c1e4894e7f6ac9d",
+      "prior_decision": "partial",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-cdc",
+          "locator": "Causes; Prevention",
+          "source_metadata_sha256": "1efb58462fd0d6fe681049499aab20569b9e7d118cf1f7a1321ee3be28c0768c"
+        },
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Cough Causes: URTI",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        },
+        {
+          "source_id": "b1-acute-cough-healthdirect",
+          "locator": "Acute cough; Prevention",
+          "source_metadata_sha256": "44086b42681cf64128dcd8bcded17da7c43360c5e9dcf57e82aef1ba180531a5"
+        }
+      ],
+      "decision": "support_binding_incomplete_explanation",
+      "assessment": "感染与非感染机制框架正确。分泌物携带病原体这句没有绑定明确对应段落；这是解释性定位缺口，不应机械要求两源或称事实错误。",
+      "actual_source_locations": "CDC Causes/Prevention; Healthdirect Acute cough/Prevention; ALA URTI",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": true
+    },
+    {
+      "id": "causes_risks-3",
+      "section": "causes_risks",
+      "current_claim_text_sha256": "52dec6b7f353ae5a315faeb790c3fdefc6a61b9d918df3823c9e6d0eb5bf3cea",
+      "current_author_claim_sha256": "734de3ccd4715c8ed8963021eba63502004fe91260c5c65775f77d5c6c67b9fc",
+      "current_section_content_sha256": "a8347dfbce558825c569884947df5e176ba2811ab5a8111c6c574c81673d7d65",
+      "current_author_record_sha256": "c52f60cdc380ff0169c9383e5d26fcc9195dfaa02d1116f549b15681c92e8776",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "52dec6b7f353ae5a315faeb790c3fdefc6a61b9d918df3823c9e6d0eb5bf3cea",
+      "prior_decision": "partial",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nhlbi-asthma-causes",
+          "locator": "How asthma affects the lungs",
+          "source_metadata_sha256": "70bd2028cfe6961aeeb091dad364c334dcfad29e1d1193eaa7c1833dfa157312"
+        },
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Transcript; Post-nasal drip; GERD",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        },
+        {
+          "source_id": "b1-acute-cough-medline",
+          "locator": "Causes",
+          "source_metadata_sha256": "375a445a26dda8c13ac96189f292afbfce07485ca74e2e940ef5b4a64eaaee7e"
+        }
+      ],
+      "decision": "supported_explanation_binding_repaired",
+      "assessment": "新增NHLBI直接支持气道敏感机制；其余病因线索已有来源。本句不作疗效或诊断阈值，不要求每个解释分句双源。",
+      "actual_source_locations": "NHLBI Causes lines126-130; ALA Causes92-93; ADAM Causes",
+      "complete_independent_support_for_all_key_medical_subclaims": true,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "causes_risks-4",
+      "section": "causes_risks",
+      "current_claim_text_sha256": "a4b54b40e4681c05cc985d9b7cc2f248e5c961d1db35317e4f943a5297ad0703",
+      "current_author_claim_sha256": "9b016195ad433bef970f91a810cf8c6367ec79834ced033583cd8abd6a5403c8",
+      "current_section_content_sha256": "a8347dfbce558825c569884947df5e176ba2811ab5a8111c6c574c81673d7d65",
+      "current_author_record_sha256": "c52f60cdc380ff0169c9383e5d26fcc9195dfaa02d1116f549b15681c92e8776",
+      "text_unchanged_from_prior": false,
+      "prior_claim_text_sha256": "6ec9d35476c006423ec4d7cbf1b3a1ddd1ae55243584df6e86897df4d07b3b22",
+      "prior_decision": "partial",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-medline",
+          "locator": "Other causes: ACE inhibitors",
+          "source_metadata_sha256": "375a445a26dda8c13ac96189f292afbfce07485ca74e2e940ef5b4a64eaaee7e"
+        },
+        {
+          "source_id": "b1-acute-cough-mayo-chronic",
+          "locator": "Causes: blood pressure drugs",
+          "source_metadata_sha256": "75af555e7bc74538ff51039a82928c16b64e7fafdf0261a748d55bc31332ef14"
+        },
+        {
+          "source_id": "b1-acute-cough-mayo-chronic-treatment",
+          "locator": "Preparing for appointment",
+          "source_metadata_sha256": "e5860655b7380a9bc9b6df471e281886f9d51dc6f7453a2e67ebd3e435fa2b70"
+        }
+      ],
+      "decision": "supported_association_with_minor_precision_gap",
+      "assessment": "ACE类别及降压/心脏用途已有ADAM和Mayo两机构支持；带药名/时间是低风险历史整理。绑定原段写cough/chronic cough，未单独确认dry这个修饰词的双来源；不据此指控医学错误。",
+      "actual_source_locations": "ADAM69; Mayo chronic36; Mayo Preparing57-75",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": true
+    },
+    {
+      "id": "red_flags-1",
+      "section": "red_flags",
+      "current_claim_text_sha256": "281186b6bed1e43320f1c92c4a7f9b2198b04fbf50cde9d3ddd0324f99ffab8d",
+      "current_author_claim_sha256": "82473393c3aa6b619b476f84ad2f45858395adfedcd83856cd73756cfde598ab",
+      "current_section_content_sha256": "dd1caedef416655d3117afd5522e2f66840b35abc8b667bbfdf74e56732034bb",
+      "current_author_record_sha256": "70eaecbe0580fa284fb44abfeac3454534ff645f3ac724e0a04fc1d89b5d5a27",
+      "text_unchanged_from_prior": false,
+      "prior_claim_text_sha256": "6a89ecf47c1a6c5983f955592f61cbadb4b6245296ebc66474fa43849bef5ec4",
+      "prior_decision": "single_origin",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-breathless-nhs",
+          "locator": "Immediate action",
+          "source_metadata_sha256": "ef37124126ad957e429f2feeb7dbd23f155ea106d61a8832546469530107a3f4"
+        },
+        {
+          "source_id": "b1-acute-cough-healthdirect-breathless",
+          "locator": "Ambulance criteria",
+          "source_metadata_sha256": "b8d148bd3737f82564610d3927e3649aced14f501f6bd1307b928f9b81e310fe"
+        },
+        {
+          "source_id": "b1-acute-cough-nhs-hemoptysis",
+          "locator": "Immediate action",
+          "source_metadata_sha256": "651626b005e9597fdde7debc909cdd16db584e0bb4a94bf8469b4bbfdd3c7cbf"
+        },
+        {
+          "source_id": "b1-acute-cough-healthdirect-hemoptysis",
+          "locator": "When should I see my doctor",
+          "source_metadata_sha256": "b543054e87adf9d11d23ab1ff0958786549bdb5bb4e65742ead01ff680e1ba98"
+        }
+      ],
+      "decision": "supported_framework",
+      "assessment": "新概述与两地危险行动一致。",
+      "actual_source_locations": "NHS dyspnea16-33; Healthdirect dyspnea85-101; NHS/Healthdirect haemoptysis",
+      "complete_independent_support_for_all_key_medical_subclaims": true,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "red_flags-2",
+      "section": "red_flags",
+      "current_claim_text_sha256": "741a9a7d06533a4ded9760bb6caf04033f8eff57f87c8808945e1b455a560442",
+      "current_author_claim_sha256": "eaeb4c6e034c8b8e5a31d2589737665f2199499474408e9bd35b557490fa387e",
+      "current_section_content_sha256": "dd1caedef416655d3117afd5522e2f66840b35abc8b667bbfdf74e56732034bb",
+      "current_author_record_sha256": "70eaecbe0580fa284fb44abfeac3454534ff645f3ac724e0a04fc1d89b5d5a27",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "741a9a7d06533a4ded9760bb6caf04033f8eff57f87c8808945e1b455a560442",
+      "prior_decision": "partial",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-breathless-nhs",
+          "locator": "Immediate action: speech, lips, confusion",
+          "source_metadata_sha256": "ef37124126ad957e429f2feeb7dbd23f155ea106d61a8832546469530107a3f4"
+        },
+        {
+          "source_id": "b1-acute-cough-healthdirect-breathless",
+          "locator": "Ambulance: speech limitation, blue lips, confusion",
+          "source_metadata_sha256": "b8d148bd3737f82564610d3927e3649aced14f501f6bd1307b928f9b81e310fe"
+        },
+        {
+          "source_id": "b1-acute-cough-healthdirect",
+          "locator": "When to seek urgent care",
+          "source_metadata_sha256": "44086b42681cf64128dcd8bcded17da7c43360c5e9dcf57e82aef1ba180531a5"
+        }
+      ],
+      "decision": "supported_key_actions",
+      "assessment": "呼吸受限不能说话、嘴唇蓝灰和混乱的急救行动有独立原段；Healthdirect气短与咳嗽两页仅计同一机构。",
+      "actual_source_locations": "NHS dyspnea16-22; Healthdirect dyspnea87-93; Healthdirect cough175-183",
+      "complete_independent_support_for_all_key_medical_subclaims": true,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "red_flags-3",
+      "section": "red_flags",
+      "current_claim_text_sha256": "579c9486195d1ab11ecb7b5ee84e5cf47cc8d1dc482013aac755f2a0fe1e7b48",
+      "current_author_claim_sha256": "f26a894977bffe6569d9758ed0dae185bd457c56747338e5e90626eda1603af5",
+      "current_section_content_sha256": "dd1caedef416655d3117afd5522e2f66840b35abc8b667bbfdf74e56732034bb",
+      "current_author_record_sha256": "70eaecbe0580fa284fb44abfeac3454534ff645f3ac724e0a04fc1d89b5d5a27",
+      "text_unchanged_from_prior": false,
+      "prior_claim_text_sha256": "6dd26d1798dd412361253f060a6b5b6401f7f6fe5ded2d2f0e34805a5f8feb6d",
+      "prior_decision": "needs_triage_correction",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nhs-hemoptysis",
+          "locator": "Immediate action: two bullets",
+          "source_metadata_sha256": "651626b005e9597fdde7debc909cdd16db584e0bb4a94bf8469b4bbfdd3c7cbf"
+        },
+        {
+          "source_id": "b1-acute-cough-mayo-hemoptysis",
+          "locator": "Definition; When to see a doctor",
+          "source_metadata_sha256": "816fd0f7e89cbcfa6a1414654f3eef06fc8a570e9deebe626aafa8eff8069cca"
+        },
+        {
+          "source_id": "b1-acute-cough-healthdirect-hemoptysis",
+          "locator": "What is haemoptysis; Doctor advice",
+          "source_metadata_sha256": "b543054e87adf9d11d23ab1ff0958786549bdb5bb4e65742ead01ff680e1ba98"
+        }
+      ],
+      "decision": "clinical_triage_corrected_specific_single_source_details",
+      "assessment": "C01危险遗漏已修正。较多/持续出血及伴气短胸痛有独立材料支持；超过几处血点、单独上背痛或很快心跳仍是NHS精确条件。这些是有权威来源的正确细分条件，不应删除来假装全双源。",
+      "actual_source_locations": "NHS haemoptysis32-37; Mayo267,298-300; Healthdirect139-141",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": true
+    },
+    {
+      "id": "red_flags-4",
+      "section": "red_flags",
+      "current_claim_text_sha256": "d92ed1f213d27eba08ece3a5641c7766ad965f337e97fff66701f084bf8c5555",
+      "current_author_claim_sha256": "cfe171ae2ce96e2632caf4f639a3decdf31201a41668e77db837d3b44e12bc3b",
+      "current_section_content_sha256": "dd1caedef416655d3117afd5522e2f66840b35abc8b667bbfdf74e56732034bb",
+      "current_author_record_sha256": "70eaecbe0580fa284fb44abfeac3454534ff645f3ac724e0a04fc1d89b5d5a27",
+      "text_unchanged_from_prior": false,
+      "prior_claim_text_sha256": null,
+      "prior_decision": null,
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nhs-hemoptysis",
+          "locator": "Urgent advice",
+          "source_metadata_sha256": "651626b005e9597fdde7debc909cdd16db584e0bb4a94bf8469b4bbfdd3c7cbf"
+        },
+        {
+          "source_id": "b1-acute-cough-healthdirect-hemoptysis",
+          "locator": "When should I see my doctor",
+          "source_metadata_sha256": "b543054e87adf9d11d23ab1ff0958786549bdb5bb4e65742ead01ff680e1ba98"
+        },
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Urgent advice",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        },
+        {
+          "source_id": "b1-acute-cough-nice",
+          "locator": "1.1.5; 1.1.19",
+          "source_metadata_sha256": "38c3aaaadd5b57b9098ba2736db96d621c0c28679a57670dcc9d6fda86546080"
+        }
+      ],
+      "decision": "triage_correct_bilingual_fixed_timing_is_operational",
+      "assessment": "少量血丝及时评估与NHS、Healthdirect一致；同日是把urgent/as soon as possible变为可执行安排，原文并未分别定义24小时阈值。very unwell已译为整体病得重。新胸痛/气短及时求医及更重转急救不相冲突。",
+      "actual_source_locations": "NHS haemoptysis26-31; Healthdirect139-141; NHS cough65-72; NICE1.1.5/1.1.19",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": true
+    },
+    {
+      "id": "care-1",
+      "section": "care",
+      "current_claim_text_sha256": "cbbb34ff87f2e8afe8b3f1698e50e8874482421f4993f52cec33e29ccde05f77",
+      "current_author_claim_sha256": "69d00d22d1c00c05ee92df72bae23a99b565d4f36a7cef724472d895b3a6818d",
+      "current_section_content_sha256": "70271aad75003b89daefd3e6bd16c58a69688caa001dbd722e7c24a45e6ae96a",
+      "current_author_record_sha256": "23caec2fcaa73b777d4c159c8c971a61d0e5b28465e7890370a2ab245da4e02f",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "cbbb34ff87f2e8afe8b3f1698e50e8874482421f4993f52cec33e29ccde05f77",
+      "prior_decision": "supported_explanation",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Self-care; advice",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        },
+        {
+          "source_id": "b1-acute-cough-nice",
+          "locator": "1.1.5",
+          "source_metadata_sha256": "38c3aaaadd5b57b9098ba2736db96d621c0c28679a57670dcc9d6fda86546080"
+        }
+      ],
+      "decision": "inherited_supported_explanation",
+      "assessment": "Unchanged bilingual medical text and referenced source metadata hashes match the prior independent finding. Generic author assessment wording changed; no new medical scope inferred.",
+      "actual_source_locations": "NHS Self-care/Advice; NICE1.1.5",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "care-2",
+      "section": "care",
+      "current_claim_text_sha256": "d7628ad7b6d6010e993dd096047b2dcca67964fb94507822d4fcd272379b927d",
+      "current_author_claim_sha256": "5320b370e6b87c399f231b1a415e6872f927604cca6ae49e61482f919000cbff",
+      "current_section_content_sha256": "70271aad75003b89daefd3e6bd16c58a69688caa001dbd722e7c24a45e6ae96a",
+      "current_author_record_sha256": "23caec2fcaa73b777d4c159c8c971a61d0e5b28465e7890370a2ab245da4e02f",
+      "text_unchanged_from_prior": false,
+      "prior_claim_text_sha256": "852559c318c5e139e4a2dbc16f6360317240c0ed14e31e3e58e2695052b1aeed",
+      "prior_decision": "partial",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Self-care; Urgent advice",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        },
+        {
+          "source_id": "b1-acute-cough-cdc",
+          "locator": "How to feel better; When to seek care",
+          "source_metadata_sha256": "1efb58462fd0d6fe681049499aab20569b9e7d118cf1f7a1321ee3be28c0768c"
+        },
+        {
+          "source_id": "b1-acute-cough-mayo-chronic",
+          "locator": "When to see a doctor",
+          "source_metadata_sha256": "75af555e7bc74538ff51039a82928c16b64e7fafdf0261a748d55bc31332ef14"
+        },
+        {
+          "source_id": "b1-acute-cough-healthdirect",
+          "locator": "When should I see my doctor",
+          "source_metadata_sha256": "44086b42681cf64128dcd8bcded17da7c43360c5e9dcf57e82aef1ba180531a5"
+        }
+      ],
+      "decision": "supported_with_limited_functional_component",
+      "assessment": "轻症休息补水与危险信号有多源；持续影响睡眠有Mayo/Healthdirect。上学/工作两个具体影响直接来自Mayo，非通用短期活动限制阈值；原不当NHS留家绑定已修。",
+      "actual_source_locations": "NHS cough20-24,65-72; CDC65-98; Mayo chronic23; Healthdirect cough166-173",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": true
+    },
+    {
+      "id": "care-3",
+      "section": "care",
+      "current_claim_text_sha256": "3322a0f634dd003f5ae2f09dd3739f30124e576207306218d4535937e7070d6e",
+      "current_author_claim_sha256": "4620bb1bc3849f34f4c9528af9118cae70cb07ccf0d449b51babaf5dd9bd9db2",
+      "current_section_content_sha256": "70271aad75003b89daefd3e6bd16c58a69688caa001dbd722e7c24a45e6ae96a",
+      "current_author_record_sha256": "23caec2fcaa73b777d4c159c8c971a61d0e5b28465e7890370a2ab245da4e02f",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "3322a0f634dd003f5ae2f09dd3739f30124e576207306218d4535937e7070d6e",
+      "prior_decision": "partial",
+      "author_kind": "threshold",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "See a GP",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        },
+        {
+          "source_id": "b1-acute-cough-cdc",
+          "locator": "Key points; When to seek care",
+          "source_metadata_sha256": "1efb58462fd0d6fe681049499aab20569b9e7d118cf1f7a1321ee3be28c0768c"
+        },
+        {
+          "source_id": "b1-acute-cough-nice",
+          "locator": "1.1.15",
+          "source_metadata_sha256": "38c3aaaadd5b57b9098ba2736db96d621c0c28679a57670dcc9d6fda86546080"
+        },
+        {
+          "source_id": "b1-acute-cough-healthdirect",
+          "locator": "Doctor advice",
+          "source_metadata_sha256": "44086b42681cf64128dcd8bcded17da7c43360c5e9dcf57e82aef1ba180531a5"
+        }
+      ],
+      "decision": "correct_attributed_threshold_with_scope_gap",
+      "assessment": "NHS及健康者CDC三周评估相符，和3–4周病程有区别。反复发作第二源针对反复支气管炎；免疫受损更早联系主要NHS、NICE负责风险分层，不能把范围差异当作完整同句双源。",
+      "actual_source_locations": "NHS cough60-64; CDC28,67-78; NICE1.1.15; Healthdirect166-173",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": true
+    },
+    {
+      "id": "diagnosis-1",
+      "section": "diagnosis",
+      "current_claim_text_sha256": "9824a7e68ec6b59dc28270fde87a205d2d97a24557405f0eafe17717b58333ed",
+      "current_author_claim_sha256": "25974a277d0153c26e0b350c352439951ea86b2473e534a136b0f1db69044bb8",
+      "current_section_content_sha256": "1bdfb5630367b35d139043d7a7ece4ee7493deb13286d14ab3f4941e563ece12",
+      "current_author_record_sha256": "ee8668b44e11a7bc2fecfd149ef4ea38fd40ad2ef350ff9f4e48ae6b13379347",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "9824a7e68ec6b59dc28270fde87a205d2d97a24557405f0eafe17717b58333ed",
+      "prior_decision": "supported_explanation",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Appointment",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        },
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Diagnosis",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        }
+      ],
+      "decision": "inherited_supported_explanation",
+      "assessment": "Unchanged bilingual medical text and referenced source metadata hashes match the prior independent finding. Generic author assessment wording changed; no new medical scope inferred.",
+      "actual_source_locations": "NHS Appointment; ALA Diagnosis",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "diagnosis-2",
+      "section": "diagnosis",
+      "current_claim_text_sha256": "808e1526fa46de6de5e20d9d5fdb78acce4d4c00a51323f59cafaa8c79e5dfbc",
+      "current_author_claim_sha256": "8e577326e849c9fad4b56b38ac661df89df2c48335dc63d53e515b4365b4464b",
+      "current_section_content_sha256": "1bdfb5630367b35d139043d7a7ece4ee7493deb13286d14ab3f4941e563ece12",
+      "current_author_record_sha256": "ee8668b44e11a7bc2fecfd149ef4ea38fd40ad2ef350ff9f4e48ae6b13379347",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "808e1526fa46de6de5e20d9d5fdb78acce4d4c00a51323f59cafaa8c79e5dfbc",
+      "prior_decision": "partial",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "How Cough Is Diagnosed: questions",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        },
+        {
+          "source_id": "b1-acute-cough-medline",
+          "locator": "Office visit",
+          "source_metadata_sha256": "375a445a26dda8c13ac96189f292afbfce07485ca74e2e940ef5b4a64eaaee7e"
+        },
+        {
+          "source_id": "b1-acute-cough-mayo-chronic-treatment",
+          "locator": "Preparing; What to expect",
+          "source_metadata_sha256": "e5860655b7380a9bc9b6df471e281886f9d51dc6f7453a2e67ebd3e435fa2b70"
+        },
+        {
+          "source_id": "b1-acute-cough-rch-clinical",
+          "locator": "History: timing, triggers, underlying conditions",
+          "source_metadata_sha256": "4dd2e8e5f4d77f9e2c7e5969235d8ea4d5adbc25465580aba3f4d4986490514f"
+        },
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Appointment",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        }
+      ],
+      "decision": "supported_explanation_binding_repaired",
+      "assessment": "Mayo和RCH新增具体病史定位承接药物、夜间/活动、既往病与暴露；这是一组医生可能询问的内容，非诊断规则。",
+      "actual_source_locations": "Mayo treatment5-20,57-80; RCH History106-125; NHS cough77-82",
+      "complete_independent_support_for_all_key_medical_subclaims": true,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "diagnosis-3",
+      "section": "diagnosis",
+      "current_claim_text_sha256": "f33d1a21808aee2ff4bda92d6f60042720ba833c5e01ce3c8643d20d7ed1378a",
+      "current_author_claim_sha256": "cb0dae195964d319042a97f5514e69f0576f21b80253e6f750ac590e3bcae2f7",
+      "current_section_content_sha256": "1bdfb5630367b35d139043d7a7ece4ee7493deb13286d14ab3f4941e563ece12",
+      "current_author_record_sha256": "ee8668b44e11a7bc2fecfd149ef4ea38fd40ad2ef350ff9f4e48ae6b13379347",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "f33d1a21808aee2ff4bda92d6f60042720ba833c5e01ce3c8643d20d7ed1378a",
+      "prior_decision": "supported_explanation",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Appointment",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        },
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Types; Diagnosis",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        }
+      ],
+      "decision": "inherited_supported_explanation",
+      "assessment": "Unchanged bilingual medical text and referenced source metadata hashes match the prior independent finding. Generic author assessment wording changed; no new medical scope inferred.",
+      "actual_source_locations": "NHS Appointment; ALA Types/Diagnosis",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "differentials-1",
+      "section": "differentials",
+      "current_claim_text_sha256": "673f17153bd80c2a8416b33ef1e1652b5a2431b25c31b1f23d926d18daef4936",
+      "current_author_claim_sha256": "d61b3e1b3c68c5a6126b440852d4dc65fa9dacfe9cd857306bb5fbf631f919c7",
+      "current_section_content_sha256": "57484148b55ca8cbecc6dc05c476bca839e90deccdd91e614b884d05c86f29e0",
+      "current_author_record_sha256": "6b9146e5f4693567f2135a4cbcd5936b28bf50abec41b4aa2e8a1d8833b85cd3",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "673f17153bd80c2a8416b33ef1e1652b5a2431b25c31b1f23d926d18daef4936",
+      "prior_decision": "supported_explanation",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Causes",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        },
+        {
+          "source_id": "b1-acute-cough-medline",
+          "locator": "Causes",
+          "source_metadata_sha256": "375a445a26dda8c13ac96189f292afbfce07485ca74e2e940ef5b4a64eaaee7e"
+        }
+      ],
+      "decision": "inherited_supported_explanation",
+      "assessment": "Unchanged bilingual medical text and referenced source metadata hashes match the prior independent finding. Generic author assessment wording changed; no new medical scope inferred.",
+      "actual_source_locations": "ALA Causes; ADAM Causes",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "differentials-2",
+      "section": "differentials",
+      "current_claim_text_sha256": "13faedb292e5ac4e815fca080a703838c1e7c0dad6c37651f3ba22a618ef3b6a",
+      "current_author_claim_sha256": "2dca3db8d2b816facd428249b307d7a6472ad9fea29a0ce20169f3717e87e64f",
+      "current_section_content_sha256": "57484148b55ca8cbecc6dc05c476bca839e90deccdd91e614b884d05c86f29e0",
+      "current_author_record_sha256": "6b9146e5f4693567f2135a4cbcd5936b28bf50abec41b4aa2e8a1d8833b85cd3",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "13faedb292e5ac4e815fca080a703838c1e7c0dad6c37651f3ba22a618ef3b6a",
+      "prior_decision": "partial",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "URTI; Hay fever",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        },
+        {
+          "source_id": "b1-acute-cough-rch-clinical",
+          "locator": "History: triggers/timing/type",
+          "source_metadata_sha256": "4dd2e8e5f4d77f9e2c7e5969235d8ea4d5adbc25465580aba3f4d4986490514f"
+        },
+        {
+          "source_id": "b1-acute-cough-nhlbi-asthma-treatment",
+          "locator": "Exercise-induced / Nocturnal asthma",
+          "source_metadata_sha256": "551a93cb2326bb74a0149fba8636199e4f97fbd34aebfe485480f75f663b0f48"
+        }
+      ],
+      "decision": "supported_explanation_binding_repaired",
+      "assessment": "感染/过敏/喘鸣活动线索对应原段，措辞仍是可能和需结合病程，没有把咳嗽直接确诊哮喘。",
+      "actual_source_locations": "ALA85-90; RCH111-117; NHLBI exercise170-175",
+      "complete_independent_support_for_all_key_medical_subclaims": true,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "differentials-3",
+      "section": "differentials",
+      "current_claim_text_sha256": "fc81ce609fc2cc3da29343d5f37d4f24fd887ccc85144a79702c44a68f94d37c",
+      "current_author_claim_sha256": "3bc58e72c16b97cc3a9cb2c8a53668dff247b310162a878484a5f3ccef52bbd9",
+      "current_section_content_sha256": "57484148b55ca8cbecc6dc05c476bca839e90deccdd91e614b884d05c86f29e0",
+      "current_author_record_sha256": "6b9146e5f4693567f2135a4cbcd5936b28bf50abec41b4aa2e8a1d8833b85cd3",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "fc81ce609fc2cc3da29343d5f37d4f24fd887ccc85144a79702c44a68f94d37c",
+      "prior_decision": "partial",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Pulmonary embolism; Pneumothorax; Lower respiratory infection",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        },
+        {
+          "source_id": "b1-acute-cough-nice",
+          "locator": "1.1.4",
+          "source_metadata_sha256": "38c3aaaadd5b57b9098ba2736db96d621c0c28679a57670dcc9d6fda86546080"
+        },
+        {
+          "source_id": "b1-acute-cough-healthdirect-breathless",
+          "locator": "Ambulance criteria; Causes",
+          "source_metadata_sha256": "b8d148bd3737f82564610d3927e3649aced14f501f6bd1307b928f9b81e310fe"
+        },
+        {
+          "source_id": "b1-acute-cough-mayo-chronic",
+          "locator": "Causes: reflux/postnasal drip",
+          "source_metadata_sha256": "75af555e7bc74538ff51039a82928c16b64e7fafdf0261a748d55bc31332ef14"
+        }
+      ],
+      "decision": "correct_differential_with_specific_pair_gap",
+      "assessment": "反流/鼻后滴漏与持续咳嗽成立；气胸突然胸痛气短有ALA，另一新源只覆盖其他严重病因/急救框架，没有复制该完整组合。属于完整核验缺口，未发现错误合并病症。",
+      "actual_source_locations": "ALA88-93; Mayo chronic29-31; Healthdirect dyspnea87-124; NICE1.1.4",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": true
+    },
+    {
+      "id": "treatment-1",
+      "section": "treatment",
+      "current_claim_text_sha256": "f3e18a8f7b0f20feef4af1f5488b25eeb1a274aa0984ba599d7346e03f80bfbc",
+      "current_author_claim_sha256": "3fe1c2376dafaabf31e594d81c490bf9ad5c036199ec0aabca25ecccf8aad95b",
+      "current_section_content_sha256": "58ca66834c26352f125643abc5081d3d5f854435f81303c87d203159c5f6c46d",
+      "current_author_record_sha256": "2fcd82030e21c9d577d73ef6bbba65bdf8890ba39a758bf247c8c9dc5fcc6ed5",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "f3e18a8f7b0f20feef4af1f5488b25eeb1a274aa0984ba599d7346e03f80bfbc",
+      "prior_decision": "supported_explanation",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Treating Cough",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        },
+        {
+          "source_id": "b1-acute-cough-cdc",
+          "locator": "Treatment; OTC",
+          "source_metadata_sha256": "1efb58462fd0d6fe681049499aab20569b9e7d118cf1f7a1321ee3be28c0768c"
+        }
+      ],
+      "decision": "inherited_supported_explanation",
+      "assessment": "Unchanged bilingual medical text and referenced source metadata hashes match the prior independent finding. Generic author assessment wording changed; no new medical scope inferred.",
+      "actual_source_locations": "ALA Treating Cough; CDC Treatment/OTC",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "treatment-2",
+      "section": "treatment",
+      "current_claim_text_sha256": "bcb548203e4a5b69e9efa56a487f09520085293c9ae7c9877fce2290418ee2f8",
+      "current_author_claim_sha256": "30cdd7d0cf39869264cef50cddeacfd2e4ea7c88d7c6a5afcb70a81eee666011",
+      "current_section_content_sha256": "58ca66834c26352f125643abc5081d3d5f854435f81303c87d203159c5f6c46d",
+      "current_author_record_sha256": "2fcd82030e21c9d577d73ef6bbba65bdf8890ba39a758bf247c8c9dc5fcc6ed5",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "bcb548203e4a5b69e9efa56a487f09520085293c9ae7c9877fce2290418ee2f8",
+      "prior_decision": "partial",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Self-care",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        },
+        {
+          "source_id": "b1-acute-cough-cdc",
+          "locator": "How to feel better",
+          "source_metadata_sha256": "1efb58462fd0d6fe681049499aab20569b9e7d118cf1f7a1321ee3be28c0768c"
+        },
+        {
+          "source_id": "b1-acute-cough-mayo-chronic-treatment",
+          "locator": "Treatment: inhaled asthma medicines; ACE inhibitors; acid blockers; allergy",
+          "source_metadata_sha256": "e5860655b7380a9bc9b6df471e281886f9d51dc6f7453a2e67ebd3e435fa2b70"
+        },
+        {
+          "source_id": "b1-acute-cough-nhlbi-asthma-treatment",
+          "locator": "Quick-relief; Long-term control",
+          "source_metadata_sha256": "551a93cb2326bb74a0149fba8636199e4f97fbd34aebfe485480f75f663b0f48"
+        },
+        {
+          "source_id": "b1-acute-cough-healthdirect",
+          "locator": "Treatment; Medicines",
+          "source_metadata_sha256": "44086b42681cf64128dcd8bcded17da7c43360c5e9dcf57e82aef1ba180531a5"
+        }
+      ],
+      "decision": "supported_cause_directed_management",
+      "assessment": "补水休息与已确诊哮喘的吸入抗炎/扩张作用各有独立材料；反流、鼻过敏、药物咳嗽按原因处理，未给所有咳嗽统一方案或自行换药。",
+      "actual_source_locations": "NHS Self-care; CDC88-98; Mayo treatment29-38; NHLBI107-128; Healthdirect187-191,264-268",
+      "complete_independent_support_for_all_key_medical_subclaims": true,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "treatment-3",
+      "section": "treatment",
+      "current_claim_text_sha256": "05dfc5efff4ae2e8777f48f327d92978c8d764e57cb2ff03a818c7ca856f2cec",
+      "current_author_claim_sha256": "0bf3a88cb518ded3c67e7a825345f34c50f634aaa689095f2f86f10fdcb1b90e",
+      "current_section_content_sha256": "58ca66834c26352f125643abc5081d3d5f854435f81303c87d203159c5f6c46d",
+      "current_author_record_sha256": "2fcd82030e21c9d577d73ef6bbba65bdf8890ba39a758bf247c8c9dc5fcc6ed5",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "05dfc5efff4ae2e8777f48f327d92978c8d764e57cb2ff03a818c7ca856f2cec",
+      "prior_decision": "single_origin",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nice",
+          "locator": "1.1.6",
+          "source_metadata_sha256": "38c3aaaadd5b57b9098ba2736db96d621c0c28679a57670dcc9d6fda86546080"
+        },
+        {
+          "source_id": "b1-acute-cough-rch-clinical",
+          "locator": "Management",
+          "source_metadata_sha256": "4dd2e8e5f4d77f9e2c7e5969235d8ea4d5adbc25465580aba3f4d4986490514f"
+        },
+        {
+          "source_id": "b1-acute-cough-cdc",
+          "locator": "Treatment",
+          "source_metadata_sha256": "1efb58462fd0d6fe681049499aab20569b9e7d118cf1f7a1321ee3be28c0768c"
+        }
+      ],
+      "decision": "correct_single_origin_guideline_rule",
+      "assessment": "NICE明确支持此急性URTI/支气管炎、无基础气道病时的限制；RCH只对应儿童经验性激素，不是成人扩张药规则第二源。正文准确署明NICE；完整交叉核验仍欠独立同范围材料。",
+      "actual_source_locations": "Official indexed NICE1.1.6; RCH143-146; CDC87",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": true
+    },
+    {
+      "id": "medications-1",
+      "section": "medications",
+      "current_claim_text_sha256": "8c16696522039eebdf668beee73dcfde48bb842d756a40b5b0f70bbd82ab374e",
+      "current_author_claim_sha256": "0ff55c2262d1b44eef8d4b37d1a43d69216e41e5e6f310cc84daaa24c90857c5",
+      "current_section_content_sha256": "7a4d9d873173fc77c5322c31aca3d765acadc58bca2f789666528dc47ab1f409",
+      "current_author_record_sha256": "a2012a4fa25724de2f5cffad6c6d0d4cefd6c06f9ca4fa69f3466053f59267d6",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "8c16696522039eebdf668beee73dcfde48bb842d756a40b5b0f70bbd82ab374e",
+      "prior_decision": "supported_explanation",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Pharmacist; Antibiotics",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        },
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Treatment",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        }
+      ],
+      "decision": "inherited_supported_explanation",
+      "assessment": "Unchanged bilingual medical text and referenced source metadata hashes match the prior independent finding. Generic author assessment wording changed; no new medical scope inferred.",
+      "actual_source_locations": "NHS Pharmacist/Antibiotics; ALA Treating Cough",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "medications-2",
+      "section": "medications",
+      "current_claim_text_sha256": "cb178e45100ec35987fc724ff39786c5433b55ac023b0e24309c5b946589b852",
+      "current_author_claim_sha256": "a52bef24019e6669838b7984815625afd07fc82e48561c6aaaaca7af8ecc54d8",
+      "current_section_content_sha256": "7a4d9d873173fc77c5322c31aca3d765acadc58bca2f789666528dc47ab1f409",
+      "current_author_record_sha256": "a2012a4fa25724de2f5cffad6c6d0d4cefd6c06f9ca4fa69f3466053f59267d6",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "cb178e45100ec35987fc724ff39786c5433b55ac023b0e24309c5b946589b852",
+      "prior_decision": "partial",
+      "author_kind": "risk",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-cdc",
+          "locator": "Treatment; Reminder",
+          "source_metadata_sha256": "1efb58462fd0d6fe681049499aab20569b9e7d118cf1f7a1321ee3be28c0768c"
+        },
+        {
+          "source_id": "b1-acute-cough-nice",
+          "locator": "1.1.8–1.1.10; 1.1.13",
+          "source_metadata_sha256": "38c3aaaadd5b57b9098ba2736db96d621c0c28679a57670dcc9d6fda86546080"
+        },
+        {
+          "source_id": "b1-acute-cough-nhs-antibiotic-risk",
+          "locator": "Side effects; Allergic reactions",
+          "source_metadata_sha256": "5f4e02e7e5183d4868abf710179c760723ec10de27016221604304e6a5486270"
+        }
+      ],
+      "decision": "supported_key_risks_and_boundary",
+      "assessment": "无并发症病毒性支气管炎抗生素边界、皮疹/严重过敏及腹泻已有CDC/NICE/NHS逐风险组合。没有把两份各支持不同半句强行当整句支持。",
+      "actual_source_locations": "CDC80-87; NICE1.1.8-1.1.13; NHS antibiotic15-43",
+      "complete_independent_support_for_all_key_medical_subclaims": true,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "medications-3",
+      "section": "medications",
+      "current_claim_text_sha256": "e13673d5f0f80be31a3935a46994971155acc8e68c32731f045da29889c20d25",
+      "current_author_claim_sha256": "ef7e594ef4fc0c53c94e8f2cf698b85611f0ca4b9f96dda410e8d28ebd5f411f",
+      "current_section_content_sha256": "7a4d9d873173fc77c5322c31aca3d765acadc58bca2f789666528dc47ab1f409",
+      "current_author_record_sha256": "a2012a4fa25724de2f5cffad6c6d0d4cefd6c06f9ca4fa69f3466053f59267d6",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "e13673d5f0f80be31a3935a46994971155acc8e68c32731f045da29889c20d25",
+      "prior_decision": "supported",
+      "author_kind": "benefit",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Pharmacist advice",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        },
+        {
+          "source_id": "b1-acute-cough-nice",
+          "locator": "1.2.2",
+          "source_metadata_sha256": "38c3aaaadd5b57b9098ba2736db96d621c0c28679a57670dcc9d6fda86546080"
+        },
+        {
+          "source_id": "b1-acute-cough-cdc",
+          "locator": "Over-the-counter medicines",
+          "source_metadata_sha256": "1efb58462fd0d6fe681049499aab20569b9e7d118cf1f7a1321ee3be28c0768c"
+        }
+      ],
+      "decision": "supported_inherited_text_classification_fixed",
+      "assessment": "同文药效范围已有旧核验；benefit类型修正合理，CDC新增temporary relief和不治病因定位已读。NHS与NICE为不同编写主体，未宣称独立实验。",
+      "actual_source_locations": "NHS cough47-57; NICE1.2.2; CDC99-108",
+      "complete_independent_support_for_all_key_medical_subclaims": true,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "medications-4",
+      "section": "medications",
+      "current_claim_text_sha256": "cbf8ca1d1dea7811ba3f9da4d06dfee03d10aedd6271361a4e38e287ed38f215",
+      "current_author_claim_sha256": "811838563a1f84fcdf67b382fdd07fc2602733e46cb47feef2caffaa91c237fc",
+      "current_section_content_sha256": "7a4d9d873173fc77c5322c31aca3d765acadc58bca2f789666528dc47ab1f409",
+      "current_author_record_sha256": "a2012a4fa25724de2f5cffad6c6d0d4cefd6c06f9ca4fa69f3466053f59267d6",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "cbf8ca1d1dea7811ba3f9da4d06dfee03d10aedd6271361a4e38e287ed38f215",
+      "prior_decision": "partial",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-fda-child",
+          "locator": "Giving Children Cough and Cold Medicines",
+          "source_metadata_sha256": "f808bb4f1a239b29c44ed1c780e755c111d8e88de0a1a203023a57d4a1d18efb"
+        },
+        {
+          "source_id": "b1-acute-cough-hsa-child",
+          "locator": "Using safely: ages 2–12",
+          "source_metadata_sha256": "d42cd68892692e6c5fc8fb54842a84290df2fedadd7a1d4e9ddaaad83870c581"
+        },
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Medicine caution",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        },
+        {
+          "source_id": "b1-acute-cough-womens-pregnancy",
+          "locator": "PDF p1: OTC; p2: cold/flu",
+          "source_metadata_sha256": "e66633a90e671172ba8c38d84ee5b5d4c8b3a1d36c866d2cd0dca1a5e7da63f8"
+        }
+      ],
+      "decision": "supported_safety_components_some_literal_scope_single_source",
+      "assessment": "重复活性成分风险FDA/HSA相符；孕期咨询NHS/Royal Women’s相符。成人制剂禁用FDA更明确，HSA要求适龄强度，不能记录为逐字同禁令，但不构成临床错误。年龄和孕期边界保留。",
+      "actual_source_locations": "FDA93-103; HSA37-45; NHS cough40; Royal Women’s PDFp1",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": true
+    },
+    {
+      "id": "diet-1",
+      "section": "diet",
+      "current_claim_text_sha256": "98551166cf17730f24c27c8abba6f2eb7d3b13567d5f7e2ffe94eadfe0db6d25",
+      "current_author_claim_sha256": "86f6a34dde86fe5ff98cd18ded8f7b1cbdb8572b012b435528622124764c2de8",
+      "current_section_content_sha256": "afd9bd7681589424c5306365a64597cd3087b903cf4c146315a30fe444502e67",
+      "current_author_record_sha256": "d36cf12f2f72114d9cc5b603e979ab3801f1ab6a93060d2d6d3739a2073939fb",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "98551166cf17730f24c27c8abba6f2eb7d3b13567d5f7e2ffe94eadfe0db6d25",
+      "prior_decision": "supported_explanation",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Self-care",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        },
+        {
+          "source_id": "b1-acute-reflux-diet-niddk",
+          "locator": "Eating habits; triggers",
+          "source_metadata_sha256": "f29d97543f79527d3ea5a3fa19bd20a6b40b8ac5eae0ffb08664f5b76c3e0788"
+        }
+      ],
+      "decision": "inherited_supported_explanation",
+      "assessment": "Unchanged bilingual medical text and referenced source metadata hashes match the prior independent finding. Generic author assessment wording changed; no new medical scope inferred.",
+      "actual_source_locations": "NHS Self-care; NIDDK GERD Eating habits",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "diet-2",
+      "section": "diet",
+      "current_claim_text_sha256": "5fb73e82c9aca5066834a720bd50a69273d28bbad1b493f80a9643e9a364bf64",
+      "current_author_claim_sha256": "fe3e91b1c171e3c31752ad2b61f86d498dcf394d9ddf87c1201df62425c68389",
+      "current_section_content_sha256": "afd9bd7681589424c5306365a64597cd3087b903cf4c146315a30fe444502e67",
+      "current_author_record_sha256": "d36cf12f2f72114d9cc5b603e979ab3801f1ab6a93060d2d6d3739a2073939fb",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "5fb73e82c9aca5066834a720bd50a69273d28bbad1b493f80a9643e9a364bf64",
+      "prior_decision": "partial",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Honey; hot drinks",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        },
+        {
+          "source_id": "b1-acute-cough-cdc",
+          "locator": "How to feel better",
+          "source_metadata_sha256": "1efb58462fd0d6fe681049499aab20569b9e7d118cf1f7a1321ee3be28c0768c"
+        },
+        {
+          "source_id": "b1-acute-cough-nice-evidence",
+          "locator": "Honey; committee discussion",
+          "source_metadata_sha256": "bfee99a03590389cd31e5d9e36bb00b6903ebfd262b1e851311bc1b2e913c002"
+        },
+        {
+          "source_id": "b1-acute-cough-rch-clinical",
+          "locator": "Management: honey",
+          "source_metadata_sha256": "4dd2e8e5f4d77f9e2c7e5969235d8ea4d5adbc25465580aba3f4d4986490514f"
+        }
+      ],
+      "decision": "supported_honey_boundary_minor_single_source_safety_detail",
+      "assessment": "蜂蜜年龄、补水和有限症状证据在NHS/CDC/RCH有支持；未称缩短病程。幼儿不喝烫饮为正确的NHS单源安全提示，不能因缺第二源把正确禁忌删除。",
+      "actual_source_locations": "NHS cough28-36; CDC88-98; RCH146; prior NICE evidence unchanged",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": true
+    },
+    {
+      "id": "diet-3",
+      "section": "diet",
+      "current_claim_text_sha256": "e278aab4c210596114f2dd991dacb58ad23d7f0a69ebb843861ac69455ace371",
+      "current_author_claim_sha256": "3827002faa9b58a3a43ae9f1b5bd651392ec3d50776747e7e07809e5c7efaf8f",
+      "current_section_content_sha256": "afd9bd7681589424c5306365a64597cd3087b903cf4c146315a30fe444502e67",
+      "current_author_record_sha256": "d36cf12f2f72114d9cc5b603e979ab3801f1ab6a93060d2d6d3739a2073939fb",
+      "text_unchanged_from_prior": false,
+      "prior_claim_text_sha256": "65534c129010f879d32b5d9391757a3ab0f30dfe926595a3492e8b735f47f15a",
+      "prior_decision": "single_origin",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-reflux-diet-niddk",
+          "locator": "Eating habits; foods to avoid",
+          "source_metadata_sha256": "f29d97543f79527d3ea5a3fa19bd20a6b40b8ac5eae0ffb08664f5b76c3e0788"
+        },
+        {
+          "source_id": "b1-acute-cough-cuh-reflux-diet",
+          "locator": "Self-help measures; Food triggers",
+          "source_metadata_sha256": "7874ffbc399eab3184f72465710cdae77d8335bd225418fc00447fc10a632398"
+        }
+      ],
+      "decision": "supported_adult_reflux_scope",
+      "assessment": "成人评估后按自己的诱因调整食物和晚餐有NIDDK与CUH独立编写支持；不移用儿童、不禁统一清单、不声称治愈所有咳嗽。",
+      "actual_source_locations": "NIDDK119-149; CUH adult title287 and313-343",
+      "complete_independent_support_for_all_key_medical_subclaims": true,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "daily_care-1",
+      "section": "daily_care",
+      "current_claim_text_sha256": "640d04ed160858bea9b80cecdfed3f4fff9fca9cbf1c6a48470314c987730d5b",
+      "current_author_claim_sha256": "1a2c15eae6a3d24171565146fa2002b8cb15058a5ecee2eda9a98ac8b432de31",
+      "current_section_content_sha256": "61c14f3c33c2414663fdc16cb7ed295fead4c11da35b4875ba7fb11195b9a5dc",
+      "current_author_record_sha256": "2855facd708b4f92d95b2959fc1b87ec085eef9e9f6cc35d795c4af494670b28",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "640d04ed160858bea9b80cecdfed3f4fff9fca9cbf1c6a48470314c987730d5b",
+      "prior_decision": "supported_explanation",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Preparing for diagnosis",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        },
+        {
+          "source_id": "b1-acute-cough-medline",
+          "locator": "Office questions",
+          "source_metadata_sha256": "375a445a26dda8c13ac96189f292afbfce07485ca74e2e940ef5b4a64eaaee7e"
+        }
+      ],
+      "decision": "inherited_supported_explanation",
+      "assessment": "Unchanged bilingual medical text and referenced source metadata hashes match the prior independent finding. Generic author assessment wording changed; no new medical scope inferred.",
+      "actual_source_locations": "ALA Diagnosis preparation; ADAM Office questions",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "daily_care-2",
+      "section": "daily_care",
+      "current_claim_text_sha256": "62a38296633624e17c4b099727b5db361bee345e0949a93869688e8e4858701d",
+      "current_author_claim_sha256": "195269c17f6c6e69d3cfbf0cacf4fe15b21319402494960452fdadc78e443bbe",
+      "current_section_content_sha256": "61c14f3c33c2414663fdc16cb7ed295fead4c11da35b4875ba7fb11195b9a5dc",
+      "current_author_record_sha256": "2855facd708b4f92d95b2959fc1b87ec085eef9e9f6cc35d795c4af494670b28",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "62a38296633624e17c4b099727b5db361bee345e0949a93869688e8e4858701d",
+      "prior_decision": "partial",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Diagnostic preparation",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        },
+        {
+          "source_id": "b1-acute-cough-mayo-chronic-treatment",
+          "locator": "Preparing for appointment",
+          "source_metadata_sha256": "e5860655b7380a9bc9b6df471e281886f9d51dc6f7453a2e67ebd3e435fa2b70"
+        },
+        {
+          "source_id": "b1-acute-cough-mayo-chronic",
+          "locator": "Doctor advice",
+          "source_metadata_sha256": "75af555e7bc74538ff51039a82928c16b64e7fafdf0261a748d55bc31332ef14"
+        },
+        {
+          "source_id": "b1-acute-cough-rch-clinical",
+          "locator": "History",
+          "source_metadata_sha256": "4dd2e8e5f4d77f9e2c7e5969235d8ea4d5adbc25465580aba3f4d4986490514f"
+        }
+      ],
+      "decision": "supported_low_risk_editorial_organization",
+      "assessment": "记录日期、药物、暴露和影响是整理已支持就诊问题的方式，不是新诊断工具或医疗效果主张，不另要求两篇研究证明写日记有效。",
+      "actual_source_locations": "Mayo Preparing57-80; RCH History106-117; previous ALA diagnostic context",
+      "complete_independent_support_for_all_key_medical_subclaims": true,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "daily_care-3",
+      "section": "daily_care",
+      "current_claim_text_sha256": "43c82e2cc0b353f2ea8b128e98603b989dd5b0043e3b78e146870cc004aedaa9",
+      "current_author_claim_sha256": "24d3028f0be238d38682a5d02b651067a3fdeea1281d95e91597fdab2efb121a",
+      "current_section_content_sha256": "61c14f3c33c2414663fdc16cb7ed295fead4c11da35b4875ba7fb11195b9a5dc",
+      "current_author_record_sha256": "2855facd708b4f92d95b2959fc1b87ec085eef9e9f6cc35d795c4af494670b28",
+      "text_unchanged_from_prior": false,
+      "prior_claim_text_sha256": "fc4f3b93d7f2272113fb24dc0663f597167ed99935e55e83bd9f39aba5c981d5",
+      "prior_decision": "binding_gap",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-cdc",
+          "locator": "How to feel better",
+          "source_metadata_sha256": "1efb58462fd0d6fe681049499aab20569b9e7d118cf1f7a1321ee3be28c0768c"
+        },
+        {
+          "source_id": "b1-acute-cough-medline",
+          "locator": "Home care",
+          "source_metadata_sha256": "375a445a26dda8c13ac96189f292afbfce07485ca74e2e940ef5b4a64eaaee7e"
+        },
+        {
+          "source_id": "b1-acute-cough-ala-chronic",
+          "locator": "Lifestyle changes",
+          "source_metadata_sha256": "3a262950931a6938bc89ce68c719e1f3c90ed491fd6b377353aa3ff2a5fc8c05"
+        },
+        {
+          "source_id": "b1-acute-cough-nhs-hemoptysis",
+          "locator": "Immediate action",
+          "source_metadata_sha256": "651626b005e9597fdde7debc909cdd16db584e0bb4a94bf8469b4bbfdd3c7cbf"
+        },
+        {
+          "source_id": "b1-acute-cough-mayo-hemoptysis",
+          "locator": "Doctor advice",
+          "source_metadata_sha256": "816fd0f7e89cbcfa6a1414654f3eef06fc8a570e9deebe626aafa8eff8069cca"
+        },
+        {
+          "source_id": "b1-acute-cough-healthdirect-hemoptysis",
+          "locator": "Doctor advice",
+          "source_metadata_sha256": "b543054e87adf9d11d23ab1ff0958786549bdb5bb4e65742ead01ff680e1ba98"
+        }
+      ],
+      "decision": "care_binding_repaired_triage_fixed_specific_single_source_details",
+      "assessment": "清洁加湿器已绑定CDC/ADAM/ALA，核心居家边界正确。C01同步修复；更细出血量和上背痛仍受red_flags-3的单源边界约束。",
+      "actual_source_locations": "CDC89-91; ADAM74-82; ALA chronic77-86; NHS/Mayo/Healthdirect haemoptysis",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": true
+    },
+    {
+      "id": "special_populations-1",
+      "section": "special_populations",
+      "current_claim_text_sha256": "6c68df188338178449902bbf9b24a820e6913279dcbc18bfc449ed9be11a30ab",
+      "current_author_claim_sha256": "c7825c812f1841864d497e4bd36e3633d392475815feb4618c0e27a4696c2315",
+      "current_section_content_sha256": "775f62b2b8949f68124eee4fd20ce1eec6ab1c9190fc873fcea5cba79dfe1a31",
+      "current_author_record_sha256": "3ad164488e1f22874ccfe1dcf055091fec71e0585083c7c0090191aa3050f0ff",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "6c68df188338178449902bbf9b24a820e6913279dcbc18bfc449ed9be11a30ab",
+      "prior_decision": "binding_gap",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nice",
+          "locator": "1.1.15",
+          "source_metadata_sha256": "38c3aaaadd5b57b9098ba2736db96d621c0c28679a57670dcc9d6fda86546080"
+        },
+        {
+          "source_id": "b1-acute-cough-fda-child",
+          "locator": "Giving children medicines",
+          "source_metadata_sha256": "f808bb4f1a239b29c44ed1c780e755c111d8e88de0a1a203023a57d4a1d18efb"
+        },
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Medicine caution",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        },
+        {
+          "source_id": "b1-acute-cough-womens-pregnancy",
+          "locator": "PDF p1 OTC advice",
+          "source_metadata_sha256": "e66633a90e671172ba8c38d84ee5b5d4c8b3a1d36c866d2cd0dca1a5e7da63f8"
+        }
+      ],
+      "decision": "supported_population_scope_explanation",
+      "assessment": "孕期来源已经补上；说明不同人群不能一律处理，不含独立处方/风险数值。",
+      "actual_source_locations": "NICE1.1.15; FDA93-103; NHS cough40; Royal Women’s PDFp1",
+      "complete_independent_support_for_all_key_medical_subclaims": true,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "special_populations-2",
+      "section": "special_populations",
+      "current_claim_text_sha256": "7191bee55cb3e072cb99fe45c39c4bf8ac29727e07ea744a871b42d6d729a51a",
+      "current_author_claim_sha256": "c0634de32c36f7c864c3f86f69d02a2a16899b6d530f508cebdcdea562758f80",
+      "current_section_content_sha256": "775f62b2b8949f68124eee4fd20ce1eec6ab1c9190fc873fcea5cba79dfe1a31",
+      "current_author_record_sha256": "3ad164488e1f22874ccfe1dcf055091fec71e0585083c7c0090191aa3050f0ff",
+      "text_unchanged_from_prior": false,
+      "prior_claim_text_sha256": "a90784c09656cbefb265a0c5c3710b65aa3e7661199089772011c90e899bff1f",
+      "prior_decision": "binding_gap",
+      "author_kind": "threshold",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-medline",
+          "locator": "Contact professional",
+          "source_metadata_sha256": "375a445a26dda8c13ac96189f292afbfce07485ca74e2e940ef5b4a64eaaee7e"
+        },
+        {
+          "source_id": "b1-acute-cough-cdc",
+          "locator": "Talk to provider right away",
+          "source_metadata_sha256": "1efb58462fd0d6fe681049499aab20569b9e7d118cf1f7a1321ee3be28c0768c"
+        },
+        {
+          "source_id": "b1-acute-cough-nhs-child-fever",
+          "locator": "Urgent advice; Immediate action",
+          "source_metadata_sha256": "f8c062d9e8ea20e02309b8865caa44ff661579ae2251c95153cf583e40002f82"
+        },
+        {
+          "source_id": "b1-acute-cough-fda-child",
+          "locator": "Giving children medicines; When to call",
+          "source_metadata_sha256": "f808bb4f1a239b29c44ed1c780e755c111d8e88de0a1a203023a57d4a1d18efb"
+        },
+        {
+          "source_id": "b1-acute-cough-hsa-child",
+          "locator": "Using safely",
+          "source_metadata_sha256": "d42cd68892692e6c5fc8fb54842a84290df2fedadd7a1d4e9ddaaad83870c581"
+        }
+      ],
+      "decision": "fever_threshold_cross_supported_infant_cough_single_origin",
+      "assessment": "不足3个月且至少38℃的CDC立即联系与NHS紧急咨询对应；伴危险表现再急救。无发热的小婴儿咳嗽较早联系为ADAM单源，和发热条件明确分开。中文达到含以上与英文>=语义一致。",
+      "actual_source_locations": "CDC76-78; NHS child fever70-87; ADAM103-107; FDA93-103; HSA37-45",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": true
+    },
+    {
+      "id": "special_populations-3",
+      "section": "special_populations",
+      "current_claim_text_sha256": "fdca03eecea9f26a1a344f2f0ad0cc9145f51e04aa7ba48f580c1f5b9728d078",
+      "current_author_claim_sha256": "004ad5212fc8170f8cb246d9700262f13181433034cae91f5904e1ccee4de221",
+      "current_section_content_sha256": "775f62b2b8949f68124eee4fd20ce1eec6ab1c9190fc873fcea5cba79dfe1a31",
+      "current_author_record_sha256": "3ad164488e1f22874ccfe1dcf055091fec71e0585083c7c0090191aa3050f0ff",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "fdca03eecea9f26a1a344f2f0ad0cc9145f51e04aa7ba48f580c1f5b9728d078",
+      "prior_decision": "partial",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nice",
+          "locator": "1.1.15",
+          "source_metadata_sha256": "38c3aaaadd5b57b9098ba2736db96d621c0c28679a57670dcc9d6fda86546080"
+        },
+        {
+          "source_id": "b1-acute-cough-cdc",
+          "locator": "Audience restriction",
+          "source_metadata_sha256": "1efb58462fd0d6fe681049499aab20569b9e7d118cf1f7a1321ee3be28c0768c"
+        },
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "See GP; medicine caution",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        },
+        {
+          "source_id": "b1-acute-cough-womens-pregnancy",
+          "locator": "PDF p1 OTC medicines",
+          "source_metadata_sha256": "e66633a90e671172ba8c38d84ee5b5d4c8b3a1d36c866d2cd0dca1a5e7da63f8"
+        }
+      ],
+      "decision": "population_boundary_correct_specific_renal_component_single_origin",
+      "assessment": "健康者居家资料不泛化到重要合并病和免疫抑制者；孕期咨询双源。肾病具体急性咳嗽风险为NICE，CDC只列心肺/免疫，没有被当作肾病第二证据。",
+      "actual_source_locations": "NICE1.1.15; CDC28; NHS cough40,64; Royal Women’s PDFp1",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": true
+    },
+    {
+      "id": "prognosis_followup-1",
+      "section": "prognosis_followup",
+      "current_claim_text_sha256": "9c11ea601cb8d85ba165b179b6da40f67dc49106c02a7866cf7c46c3a8b789eb",
+      "current_author_claim_sha256": "277eb59418e7c1322e62359e027a653f62ffe95f3e903ce58bb7faec232b723c",
+      "current_section_content_sha256": "900d0a7879e001d99bf5642eec843725a114dd3c79b431b5bac778c44d28408c",
+      "current_author_record_sha256": "4efe5055cef65365bf9e73ef6b451af7d5bbc540d319a6d0dc392d8135c9dd35",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "9c11ea601cb8d85ba165b179b6da40f67dc49106c02a7866cf7c46c3a8b789eb",
+      "prior_decision": "supported_explanation",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Course",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        },
+        {
+          "source_id": "b1-acute-cough-ala-chronic",
+          "locator": "Quality of life; management",
+          "source_metadata_sha256": "3a262950931a6938bc89ce68c719e1f3c90ed491fd6b377353aa3ff2a5fc8c05"
+        }
+      ],
+      "decision": "inherited_supported_explanation",
+      "assessment": "Unchanged bilingual medical text and referenced source metadata hashes match the prior independent finding. Generic author assessment wording changed; no new medical scope inferred.",
+      "actual_source_locations": "NHS Course; ALA Chronic What to Expect",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "prognosis_followup-2",
+      "section": "prognosis_followup",
+      "current_claim_text_sha256": "994b9074959df6e35042e9c18d7eaf00bb6c7dc6897f29d73bc91e7e23d5c05e",
+      "current_author_claim_sha256": "349285b985f30dd94e249ad2b56e81c356800f922acdf9e702624d5a2ea6e930",
+      "current_section_content_sha256": "900d0a7879e001d99bf5642eec843725a114dd3c79b431b5bac778c44d28408c",
+      "current_author_record_sha256": "4efe5055cef65365bf9e73ef6b451af7d5bbc540d319a6d0dc392d8135c9dd35",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "994b9074959df6e35042e9c18d7eaf00bb6c7dc6897f29d73bc91e7e23d5c05e",
+      "prior_decision": "binding_gap",
+      "author_kind": "threshold",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Opening; See GP",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        },
+        {
+          "source_id": "b1-acute-cough-nice",
+          "locator": "1.1.1; 1.1.5",
+          "source_metadata_sha256": "38c3aaaadd5b57b9098ba2736db96d621c0c28679a57670dcc9d6fda86546080"
+        },
+        {
+          "source_id": "b1-acute-cough-cdc",
+          "locator": "When to seek care",
+          "source_metadata_sha256": "1efb58462fd0d6fe681049499aab20569b9e7d118cf1f7a1321ee3be28c0768c"
+        }
+      ],
+      "decision": "supported_time_purposes_binding_repaired",
+      "assessment": "已补CDC三周联系定位，NHS/NICE3–4周是自然病程；危险变化优先。NHS一般咳嗽与CDC健康支气管炎对象在care已明确。",
+      "actual_source_locations": "NHS15,60-72; NICE1.1.1/1.1.5; CDC65-78",
+      "complete_independent_support_for_all_key_medical_subclaims": true,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "prognosis_followup-3",
+      "section": "prognosis_followup",
+      "current_claim_text_sha256": "1841588314372f8854b33a722f8ca200d55cc1ed7baf073326b631feb688a3c5",
+      "current_author_claim_sha256": "05f1bda2290589fe43ae9a57993aaa09d11ef195d77ac0cf46548bfbfbb23e8b",
+      "current_section_content_sha256": "900d0a7879e001d99bf5642eec843725a114dd3c79b431b5bac778c44d28408c",
+      "current_author_record_sha256": "4efe5055cef65365bf9e73ef6b451af7d5bbc540d319a6d0dc392d8135c9dd35",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "1841588314372f8854b33a722f8ca200d55cc1ed7baf073326b631feb688a3c5",
+      "prior_decision": "partial",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-ala-chronic",
+          "locator": "Treatment options; Managing",
+          "source_metadata_sha256": "3a262950931a6938bc89ce68c719e1f3c90ed491fd6b377353aa3ff2a5fc8c05"
+        },
+        {
+          "source_id": "b1-acute-cough-mayo-chronic-treatment",
+          "locator": "Diagnosis; Preparing; Referral",
+          "source_metadata_sha256": "e5860655b7380a9bc9b6df471e281886f9d51dc6f7453a2e67ebd3e435fa2b70"
+        },
+        {
+          "source_id": "b1-acute-cough-mayo-chronic",
+          "locator": "Doctor advice",
+          "source_metadata_sha256": "75af555e7bc74538ff51039a82928c16b64e7fafdf0261a748d55bc31332ef14"
+        },
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Appointment",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        }
+      ],
+      "decision": "supported_reassessment_with_editorial_transition",
+      "assessment": "新增Mayo承接原因、用药、暴露和可能专科；ALA承接持续负担。反复无效时转复核而不循环感冒药是已有按病因处理原则的低风险总结，无新停药/处方规则，不另硬套双源。",
+      "actual_source_locations": "Mayo treatment5-9,31-43,54-80; Mayo chronic23; ALA chronic69-86; NHS appointment77-82",
+      "complete_independent_support_for_all_key_medical_subclaims": true,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "complications-1",
+      "section": "complications",
+      "current_claim_text_sha256": "8bf703874a05635995ee416be614d7a223764cdc0a1f456ecffffccb5d65578c",
+      "current_author_claim_sha256": "e4e8a6a332146799276adc6f2ff7eec9965f7656dd153c4d46a839fadbee0691",
+      "current_section_content_sha256": "ca715ef8284e25f2e4cb1bf5054da4bda1f4eee0e0c61cb2e193b69c732c40f2",
+      "current_author_record_sha256": "14656972300ddc76f1281b85190896dceff4504838ea8d8445b62e541a4dd4b0",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "8bf703874a05635995ee416be614d7a223764cdc0a1f456ecffffccb5d65578c",
+      "prior_decision": "supported_explanation_single_origin",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-ala-chronic",
+          "locator": "Effects of chronic cough",
+          "source_metadata_sha256": "3a262950931a6938bc89ce68c719e1f3c90ed491fd6b377353aa3ff2a5fc8c05"
+        },
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Serious causes",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        }
+      ],
+      "decision": "inherited_supported_explanation_single_origin",
+      "assessment": "Unchanged bilingual medical text and referenced source metadata hashes match the prior independent finding. Generic author assessment wording changed; no new medical scope inferred.",
+      "actual_source_locations": "ALA Chronic What to Expect; ALA Causes",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "complications-2",
+      "section": "complications",
+      "current_claim_text_sha256": "769289142dbbfcc99517b9d3765661cc1b0def12307f7fa8773eb39cdb0f6221",
+      "current_author_claim_sha256": "dc71808a4d7706da198626f2c4c18d613c8071bd304d8157f549081fa3181ee3",
+      "current_section_content_sha256": "ca715ef8284e25f2e4cb1bf5054da4bda1f4eee0e0c61cb2e193b69c732c40f2",
+      "current_author_record_sha256": "14656972300ddc76f1281b85190896dceff4504838ea8d8445b62e541a4dd4b0",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "769289142dbbfcc99517b9d3765661cc1b0def12307f7fa8773eb39cdb0f6221",
+      "prior_decision": "single_origin",
+      "author_kind": "risk",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-ala-chronic",
+          "locator": "What to Expect",
+          "source_metadata_sha256": "3a262950931a6938bc89ce68c719e1f3c90ed491fd6b377353aa3ff2a5fc8c05"
+        },
+        {
+          "source_id": "b1-acute-cough-mayo-chronic",
+          "locator": "Overview; Complications; Doctor advice",
+          "source_metadata_sha256": "75af555e7bc74538ff51039a82928c16b64e7fafdf0261a748d55bc31332ef14"
+        },
+        {
+          "source_id": "b1-acute-cough-healthdirect",
+          "locator": "Complications",
+          "source_metadata_sha256": "44086b42681cf64128dcd8bcded17da7c43360c5e9dcf57e82aef1ba180531a5"
+        }
+      ],
+      "decision": "risk_classification_fixed_one_component_single_source",
+      "assessment": "risk标记修正。睡眠、疲劳、漏尿、呕吐已有ALA/Mayo；肌肉酸痛ALA直接，Healthdirect胸背痛不能精确替代肌肉机制。正确单源细节待补完整核验，提到复诊无需疗效试验。",
+      "actual_source_locations": "ALA chronic70; Mayo chronic7,49-60; Healthdirect277-284",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": true
+    },
+    {
+      "id": "complications-3",
+      "section": "complications",
+      "current_claim_text_sha256": "ce9cab11ef17a90dfb3f52ecdf8519f42db02a2742021509aa81346622d22391",
+      "current_author_claim_sha256": "24c03c280ff38aeeff54618c42f36d6f12711ee91a0f0832908513ea959067e0",
+      "current_section_content_sha256": "ca715ef8284e25f2e4cb1bf5054da4bda1f4eee0e0c61cb2e193b69c732c40f2",
+      "current_author_record_sha256": "14656972300ddc76f1281b85190896dceff4504838ea8d8445b62e541a4dd4b0",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "ce9cab11ef17a90dfb3f52ecdf8519f42db02a2742021509aa81346622d22391",
+      "prior_decision": "supported",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Causes; diagnosis",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        },
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Urgent advice",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        }
+      ],
+      "decision": "inherited_supported",
+      "assessment": "Unchanged bilingual medical text and referenced source metadata hashes match the prior independent finding. Generic author assessment wording changed; no new medical scope inferred.",
+      "actual_source_locations": "ALA Causes/Diagnosis; NHS Urgent advice",
+      "complete_independent_support_for_all_key_medical_subclaims": true,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "prevention-1",
+      "section": "prevention",
+      "current_claim_text_sha256": "d49fc2ef9debcbde7146f2ac3159f804ce61f2b5b097fd003c8c11c48acbc1d0",
+      "current_author_claim_sha256": "38dff66026be11cc09e87897b378a34f1913e22def414e5244c89238427c911b",
+      "current_section_content_sha256": "a036cbdd6771d8d6e5727fd28760b6fe50f619ddc44a87e2dff4e6d0e00e3374",
+      "current_author_record_sha256": "21b02f3a3f70b79a76f6b002678015258875d0d4f7c258fa05a1f55e3e68c330",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "d49fc2ef9debcbde7146f2ac3159f804ce61f2b5b097fd003c8c11c48acbc1d0",
+      "prior_decision": "supported_explanation",
+      "author_kind": "explanation",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-cdc",
+          "locator": "Prevention",
+          "source_metadata_sha256": "1efb58462fd0d6fe681049499aab20569b9e7d118cf1f7a1321ee3be28c0768c"
+        },
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Treatment",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        }
+      ],
+      "decision": "inherited_supported_explanation",
+      "assessment": "Unchanged bilingual medical text and referenced source metadata hashes match the prior independent finding. Generic author assessment wording changed; no new medical scope inferred.",
+      "actual_source_locations": "CDC Prevention; ALA Treating Cough",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": false
+    },
+    {
+      "id": "prevention-2",
+      "section": "prevention",
+      "current_claim_text_sha256": "3501b7c7cf84a2c5fd392301853251b11cacac5d0c39a0cb9260932ad13f5338",
+      "current_author_claim_sha256": "acf8ebfc95a1e7bf47850093be23b38f5f9a87a5fb56c1e2563cf8726e787724",
+      "current_section_content_sha256": "a036cbdd6771d8d6e5727fd28760b6fe50f619ddc44a87e2dff4e6d0e00e3374",
+      "current_author_record_sha256": "21b02f3a3f70b79a76f6b002678015258875d0d4f7c258fa05a1f55e3e68c330",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "3501b7c7cf84a2c5fd392301853251b11cacac5d0c39a0cb9260932ad13f5338",
+      "prior_decision": "partial",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-cdc",
+          "locator": "Prevention",
+          "source_metadata_sha256": "1efb58462fd0d6fe681049499aab20569b9e7d118cf1f7a1321ee3be28c0768c"
+        },
+        {
+          "source_id": "b1-acute-cough-healthdirect",
+          "locator": "Prevention: Self-care; Vaccination",
+          "source_metadata_sha256": "44086b42681cf64128dcd8bcded17da7c43360c5e9dcf57e82aef1ba180531a5"
+        },
+        {
+          "source_id": "b1-acute-cough-nhs",
+          "locator": "Self-care",
+          "source_metadata_sha256": "97a34218bec7f006679db042b5c14b1527bf8cca7afc9634c7a300a3411072b6"
+        }
+      ],
+      "decision": "bilingual_condition_needs_correction",
+      "assessment": "新预防来源覆盖卫生/通风/疫苗。中文将发热列为独立减少接触条件，英文when fever or illness prevents usual activities可能把影响活动同时加在发热上；与NHS两个并列条件不等，应明确 fever OR too unwell for usual activities。其余措施有独立编写但Healthdirect引用NHS背景。",
+      "actual_source_locations": "CDC51-62; Healthdirect237-263; NHS cough24",
+      "complete_independent_support_for_all_key_medical_subclaims": false,
+      "remaining_full_cross_check_gap": true
+    },
+    {
+      "id": "prevention-3",
+      "section": "prevention",
+      "current_claim_text_sha256": "5bf7c8bbe3a19c37d29860abc627570be55029018ba836e88d86f55cfd56f58a",
+      "current_author_claim_sha256": "6154e155ba7841962b2f6e20abb4dc4382f641e0cd78376495f6089cb027f1cf",
+      "current_section_content_sha256": "a036cbdd6771d8d6e5727fd28760b6fe50f619ddc44a87e2dff4e6d0e00e3374",
+      "current_author_record_sha256": "21b02f3a3f70b79a76f6b002678015258875d0d4f7c258fa05a1f55e3e68c330",
+      "text_unchanged_from_prior": true,
+      "prior_claim_text_sha256": "5bf7c8bbe3a19c37d29860abc627570be55029018ba836e88d86f55cfd56f58a",
+      "prior_decision": "supported",
+      "author_kind": "action",
+      "bound_source_refs": [
+        {
+          "source_id": "b1-acute-cough-ala",
+          "locator": "Treatment",
+          "source_metadata_sha256": "88d8e86aae7e0bc8e51cec11e68b9b3a7faa76c7ed8453dd91053fcf58519acb"
+        },
+        {
+          "source_id": "b1-acute-cough-medline",
+          "locator": "Home care; causes",
+          "source_metadata_sha256": "375a445a26dda8c13ac96189f292afbfce07485ca74e2e940ef5b4a64eaaee7e"
+        },
+        {
+          "source_id": "b1-acute-cough-ala-chronic",
+          "locator": "Cause-specific treatment",
+          "source_metadata_sha256": "3a262950931a6938bc89ce68c719e1f3c90ed491fd6b377353aa3ff2a5fc8c05"
+        }
+      ],
+      "decision": "inherited_supported",
+      "assessment": "Unchanged bilingual medical text and referenced source metadata hashes match the prior independent finding. Generic author assessment wording changed; no new medical scope inferred.",
+      "actual_source_locations": "ALA Treating Cough/Chronic Lifestyle; ADAM Home care/Underlying cause",
+      "complete_independent_support_for_all_key_medical_subclaims": true,
+      "remaining_full_cross_check_gap": false
+    }
+  ],
+  "author_unresolved_questions_snapshot": [
+    {
+      "section": "causes_risks",
+      "questions": [
+        "causes_risks-2: exact secretion-carried-pathogen mechanism still lacks two located independent passages; bound CDC/Healthdirect support spread prevention rather than this wording."
+      ]
+    },
+    {
+      "section": "red_flags",
+      "questions": [
+        "red_flags-3: exact more-than-few-spots, isolated upper-back pain and rapid-heartbeat criteria are NHS-specific; Mayo/Healthdirect directly support larger/persistent bleeding and chest pain/breathlessness.",
+        "red_flags-4: urgent consultation is explicit NHS; NICE supports significant/systemic worsening but not identical same-day timing for each symptom."
+      ]
+    },
+    {
+      "section": "care",
+      "questions": [
+        "care-3: NHS directly supports weak-immunity contact; NICE risk stratification does not set identical contact timing. Recurrent episodes are direct CDC bronchitis advice, not all causes."
+      ]
+    },
+    {
+      "section": "differentials",
+      "questions": [
+        "differentials-3: exact pneumothorax sudden-pain/breathlessness pair is ALA direct; second sources cover serious-cause assessment, not every named pair."
+      ]
+    },
+    {
+      "section": "treatment",
+      "questions": [
+        "treatment-3: NICE full acute bronchodilator/steroid exception rule lacks fully matching independent adult support; RCH is pediatric empirical-steroid guidance only."
+      ]
+    },
+    {
+      "section": "medications",
+      "questions": [
+        "medications-4: FDA explicitly prohibits adult-packaged medicines for children; HSA requires appropriate child formulation/strength but not the identical blanket prohibition."
+      ]
+    },
+    {
+      "section": "diet",
+      "questions": [
+        "diet-2: small-child hot-drink avoidance is directly NHS only in bound material. Honey evidence is short-term symptom relief, not proven shortened illness; NICE/RCH evidence and wording differ."
+      ]
+    },
+    {
+      "section": "special_populations",
+      "questions": [
+        "special_populations-2: infant under-3-month cough without fever is direct ADAM alone; fever at 38C has CDC/NHS. Keep criteria distinct.",
+        "special_populations-3: renal-disease-specific acute-cough risk is direct NICE; CDC explicitly covers heart/lung/immune restriction, not renal disease."
+      ]
+    },
+    {
+      "section": "complications",
+      "questions": [
+        "complications-2: sleep/fatigue/vomiting/leakage independently supported; exact muscle-soreness description is ALA, Healthdirect instead names chest/back pain."
+      ]
+    },
+    {
+      "section": "prevention",
+      "questions": [
+        "prevention-2: hygiene/air/vaccines and staying home have independent writing; exact fever/usual-activity threshold remains NHS-specific. Healthdirect cites NHS/RCH background."
+      ]
+    }
+  ],
+  "decision_counts": {
+    "inherited_supported": 3,
+    "inherited_supported_explanation": 13,
+    "support_binding_incomplete_explanation": 1,
+    "supported_explanation_binding_repaired": 3,
+    "supported_association_with_minor_precision_gap": 1,
+    "supported_framework": 1,
+    "supported_key_actions": 1,
+    "clinical_triage_corrected_specific_single_source_details": 1,
+    "triage_correct_bilingual_fixed_timing_is_operational": 1,
+    "supported_with_limited_functional_component": 1,
+    "correct_attributed_threshold_with_scope_gap": 1,
+    "correct_differential_with_specific_pair_gap": 1,
+    "supported_cause_directed_management": 1,
+    "correct_single_origin_guideline_rule": 1,
+    "supported_key_risks_and_boundary": 1,
+    "supported_inherited_text_classification_fixed": 1,
+    "supported_safety_components_some_literal_scope_single_source": 1,
+    "supported_honey_boundary_minor_single_source_safety_detail": 1,
+    "supported_adult_reflux_scope": 1,
+    "supported_low_risk_editorial_organization": 1,
+    "care_binding_repaired_triage_fixed_specific_single_source_details": 1,
+    "supported_population_scope_explanation": 1,
+    "fever_threshold_cross_supported_infant_cough_single_origin": 1,
+    "population_boundary_correct_specific_renal_component_single_origin": 1,
+    "supported_time_purposes_binding_repaired": 1,
+    "supported_reassessment_with_editorial_transition": 1,
+    "inherited_supported_explanation_single_origin": 1,
+    "risk_classification_fixed_one_component_single_source": 1,
+    "bilingual_condition_needs_correction": 1
+  },
+  "release_recommendation": "Apply CR01 as a narrow bilingual fix and retain unresolved support status for the promised complete cross-check standard. No clinical signoff or ICD coverage upgrade. Do not repeat unchanged accepted review or delete correct single-source safety conditions merely to remove gaps.",
+  "verification": {
+    "all_45_current_claims_mapped": true,
+    "all_14_current_section_hashes_match": true,
+    "all_current_source_metadata_hashes_match": true,
+    "current_condition_hash_matches_frozen_target": true,
+    "all_author_records_remain_pending": true,
+    "only_report_written": true
+  },
+  "license_handling": "Stores hashes, short locators and original review judgements; no full source text, tables or images redistributed."
+}

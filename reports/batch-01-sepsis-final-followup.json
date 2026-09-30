@@ -1,0 +1,2363 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "batch01-sepsis-final-followup-2026-09-30",
+  "reviewer": "/root/emergency_content",
+  "author": "/root/emergency_content",
+  "review_type": "targeted_author_followup_of_independent_findings",
+  "independent_reviewer": false,
+  "role_limitation": "The current checker authored the revisions. This document records scoped source rereading and hash continuity only; it is not an independent adversarial acceptance or clinician signoff.",
+  "reviewed_at": "2026-09-30",
+  "medical_reviewed": false,
+  "publishable_as_complete_cross_checked_content": false,
+  "target": {
+    "path": "drafts/batch-01/emergency/sepsis.json",
+    "canonical_sha256": "ee64d13c2307fe15cf0811dad402443048c30f0fd161fa7e8ecb8877a2729722",
+    "file_sha256": "0a02c3373bb9899670176ccd9ed5e85fbe7d3e27617873b0ea054be2627f2499",
+    "sections_in_scope": [
+      "red_flags",
+      "special_populations"
+    ],
+    "total_sections": 14,
+    "total_current_claims": 62
+  },
+  "prior_report": {
+    "path": "reports/batch-01-sepsis-recheck.json",
+    "file_sha256": "5b3dcf177b039ff39067f52678227df63c45d2ff7d81c8b5e73cf2512cb62084",
+    "canonical_sha256": "53bc9671d7f0604893f36140f6603e7c034ebcc09a6e2c47bb843dd3d8c9c145",
+    "old_condition_canonical_sha256": "ca9bc84d1eb6d6f21104e91ea50920deed3087d7de3042aef42bc14e3917bbb4",
+    "old_claim_count": 61
+  },
+  "current_snapshots": {
+    "sepsis_editorial_records_sha256": "034e4cbbaa3b8ee5a51a45c427c01535fd9879cda640e0a196110191c55fd8cd",
+    "referenced_sources_sha256": "ffce7ee0d97b7aad3a726205fffd60913ac8a20e91d2a5e8a202dc0d0d8c7131"
+  },
+  "scope": {
+    "targeted_changed_or_new_claims": 4,
+    "unchanged_claim_conclusions_inherited": 58,
+    "source_read_count": 5,
+    "direct_pages_read": 4,
+    "official_indexed_only": 1,
+    "not_reviewed_again": "Other12sections and unchanged claims within the two scoped sections. Prior findings remain linked, not upgraded. No new full article review."
+  },
+  "verdict": "requested_age_and_drug_scope_corrections_supported_by_author_reread_pending_independent_review",
+  "findings": [
+    {
+      "id": "SF01",
+      "prior_finding": "S03",
+      "status": "specific_infant_feeding_error_corrected_in_current_text",
+      "claims": [
+        "red_flags-3",
+        "red_flags-4",
+        "special_populations-1"
+      ],
+      "resolution": "Current age-separated escalation matches the reread RCH/NHS passages; complete refusal no longer required. This conclusion is an author followup, not independent acceptance.",
+      "remaining": "Exact age-specific dual-source completeness and the unchanged older-adult subclaims in S03 remain unresolved as previously recorded."
+    },
+    {
+      "id": "SF02",
+      "prior_finding": "S10",
+      "status": "nonchemotherapy_scope_narrowed_in_current_text",
+      "claims": [
+        "special_populations-4"
+      ],
+      "resolution": "Named azathioprine rule and rheumatology symptom conditions replace broad all-immunosuppression claim; no universal stopping advice introduced.",
+      "remaining": "One NHS editorial family and indexed-only CHT access; pregnancy/other unchanged S10 matters inherit old unresolved status."
+    }
+  ],
+  "bilingual_assessment": {
+    "scoped_result": "No new material discrepancy in the requested ages, feeding/response triggers, medication population or emergency actions.",
+    "specific_checks": [
+      "6月龄以下 equals under6months; feeding poorly is not restricted to complete refusal.",
+      "NHS5岁以下/under5 route is separate from RCH infant route.",
+      "硫唑嘌呤/azathioprine infection requires urgent consultation in both languages.",
+      "Rheumatology fever/flu/local infection and persistent/worsening mild cold/cough have corresponding actions."
+    ],
+    "management_record_policy": "Keeping medicine names, following a team plan and organizing observations are care coordination, not newly claimed medical efficacy; no automatic two-source requirement is imposed for the record format."
+  },
+  "source_independence": "RCH is independent of NHS. NHS national pages and CHT remain conservatively one NHS authoring group here; two URLs are not two independent writers for the medication-specific rule. Different age rules cannot be merged into shared support.",
+  "original_source_reads": [
+    {
+      "source_id": "sepsis-rch-child",
+      "url": "https://www.rch.org.au/kidsinfo/fact_sheets/Sepsis/",
+      "source_metadata_sha256": "9b190845aa0e7e3da423073ef03cf85da2e871728583e9afd4609fc5bea02aae",
+      "access_status": "direct_page_relevant_text_read",
+      "actual_locator": "Signs74-81; When to get help134-156",
+      "observed_version": "Reviewed August2026; Updated July2025 footer",
+      "scope_limit": "Under6-month poor feeding/not waking: hospital. Severe respiratory/responsiveness signs: ambulance. Dates conflict in granularity as already recorded.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "sepsis-nhs",
+      "url": "https://www.nhs.uk/conditions/sepsis/",
+      "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f",
+      "access_status": "direct_page_relevant_text_read",
+      "actual_locator": "Child symptoms23-33; help63-85",
+      "observed_version": "Reviewed2026-05-14",
+      "scope_limit": "Under5 not feeding/not normal response/sleepiness emergency. Not used as identical <6-month hospital-rule support.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "sepsis-nhs-azathioprine",
+      "url": "https://www.nhs.uk/medicines/azathioprine/about-azathioprine/",
+      "source_metadata_sha256": "2054d4b713f26ac6d14bbc7a2958bc6f493a618ff4a008ccb0d386ab296b4598",
+      "access_status": "direct_page_relevant_text_read",
+      "actual_locator": "About and Key facts14-32; footer38-39",
+      "observed_version": "Reviewed2023-03-09; scheduled2026-03-09 review passed",
+      "scope_limit": "Urgent doctor advice for infection while taking this drug. No generalization to every immunosuppressive medicine.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "sepsis-nhs-rheumatology-faq",
+      "url": "https://www.cht.nhs.uk/services/clinical-services/rheumatology/frequently-asked-questions",
+      "source_metadata_sha256": "aa10165a17b6e81db2b06be193bb046dd123d7ecf3fbd4424f83595d9123100d",
+      "access_status": "official_indexed_relevant_body_read_direct_timeout",
+      "actual_locator": "Illness/infection FAQ / three symptom-specific bullets",
+      "observed_version": "No revision date established",
+      "scope_limit": "Official index provides the three relevant conditions. Direct400 timeout means full-page retrieval remains unconfirmed. Broad stop/restart language not imported.",
+      "accessed_at": "2026-09-30"
+    },
+    {
+      "source_id": "sepsis-nhs-dehydration",
+      "url": "https://www.nhs.uk/conditions/dehydration/",
+      "source_metadata_sha256": "0f63941c6b5a86afc4f467aa42c16177557f082ef0145f55fadb1c18bbb67f32",
+      "access_status": "direct_page_relevant_text_read",
+      "actual_locator": "Symptoms20-38; hydration51-62; urgent65-74; emergency75-85",
+      "observed_version": "Reviewed2026-05-01",
+      "scope_limit": "Reduced urine/wet nappies and severe signs differentiated. Vomiting context is hydration, not specific sepsis diagnosis.",
+      "accessed_at": "2026-09-30"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "summary-0",
+      "section": "summary",
+      "current_claim_text_sha256": "ba227d836636ce44e238c5979a42e78e4b10e75224035ef1813e084c81e2c828",
+      "current_author_claim_sha256": "b0edefc6d3247a972eb8487e43d18278bef46d70a93de86cffb2192b38b5b1d1",
+      "current_section_content_sha256": "b50c6d4660a1afcbff1239cc2d8024dd7a55c827da6bf4f218303d9774b972b7",
+      "current_author_record_sha256": "6885a5718335b4f9850182b3b0e822d2077a7310d7e04335fb24dfbcc2624374",
+      "prior_claim_text_sha256": "ba227d836636ce44e238c5979a42e78e4b10e75224035ef1813e084c81e2c828",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Overview",
+          "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d"
+        },
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "What is sepsis?; Causes",
+          "source_metadata_sha256": "4f0df89b5186d66be1dbc56fd39abca05399e65460222690de1403203922c1eb"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "summary-1",
+      "section": "summary",
+      "current_claim_text_sha256": "d5ac26c56d20e078ffc3ca4c6d4770ffe7094f2c8e38490fad58a05412304d49",
+      "current_author_claim_sha256": "e214bda9eab85178078bb34f20aeb1f3dab2c640f15fbe2ccf375809e3840094",
+      "current_section_content_sha256": "b50c6d4660a1afcbff1239cc2d8024dd7a55c827da6bf4f218303d9774b972b7",
+      "current_author_record_sha256": "6885a5718335b4f9850182b3b0e822d2077a7310d7e04335fb24dfbcc2624374",
+      "prior_claim_text_sha256": "d5ac26c56d20e078ffc3ca4c6d4770ffe7094f2c8e38490fad58a05412304d49",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "What is sepsis?; Causes",
+          "source_metadata_sha256": "4f0df89b5186d66be1dbc56fd39abca05399e65460222690de1403203922c1eb"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Signs and symptoms",
+          "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "summary-2",
+      "section": "summary",
+      "current_claim_text_sha256": "94bffb8a6b4152fd807d638b61d4dd45e441e7dddd3e2a8ca2047d300870d75f",
+      "current_author_claim_sha256": "9935a4787c7d743bdaeedf5a78b6bb10fbb41c2ceead8e161e088dbca60837ce",
+      "current_section_content_sha256": "b50c6d4660a1afcbff1239cc2d8024dd7a55c827da6bf4f218303d9774b972b7",
+      "current_author_record_sha256": "6885a5718335b4f9850182b3b0e822d2077a7310d7e04335fb24dfbcc2624374",
+      "prior_claim_text_sha256": "94bffb8a6b4152fd807d638b61d4dd45e441e7dddd3e2a8ca2047d300870d75f",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Overview",
+          "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Symptoms; Causes; Complications",
+          "source_metadata_sha256": "7402cf19d2586cad0f26b37e35365f2103ea582642c76c479185756254baaee9"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "causes_risks-0",
+      "section": "causes_risks",
+      "current_claim_text_sha256": "e046e21fe08396e0919b81f05a71b9d08260b87626735fbaaa556ba8225095f5",
+      "current_author_claim_sha256": "6d1ed1d6d70e532a1c00af00792c256ba96b4b883316bdb8aa3dc3d9e4b892b1",
+      "current_section_content_sha256": "0e5d9e408de3ffc18ebc4403023201ef1a09a738ed85b366fb8aa97e883f22c8",
+      "current_author_record_sha256": "3773451a08ca35e876f303a8ca008b4906871d4524620e5b7ec0932c6ab81e0f",
+      "prior_claim_text_sha256": "e046e21fe08396e0919b81f05a71b9d08260b87626735fbaaa556ba8225095f5",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Overview",
+          "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Symptoms; Causes; Complications",
+          "source_metadata_sha256": "7402cf19d2586cad0f26b37e35365f2103ea582642c76c479185756254baaee9"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "causes_risks-1",
+      "section": "causes_risks",
+      "current_claim_text_sha256": "a0bf87310d7297b0e0584a9b7b69843ad228dd6b1082c8020d3c28520ff2e774",
+      "current_author_claim_sha256": "dafcf3304e167b3413996a43391e194e189cac30ec138aae01a38a26f0fe5265",
+      "current_section_content_sha256": "0e5d9e408de3ffc18ebc4403023201ef1a09a738ed85b366fb8aa97e883f22c8",
+      "current_author_record_sha256": "3773451a08ca35e876f303a8ca008b4906871d4524620e5b7ec0932c6ab81e0f",
+      "prior_claim_text_sha256": "a0bf87310d7297b0e0584a9b7b69843ad228dd6b1082c8020d3c28520ff2e774",
+      "prior_status": "verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Causes",
+          "source_metadata_sha256": "4f0df89b5186d66be1dbc56fd39abca05399e65460222690de1403203922c1eb"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Overview",
+          "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "CDC Causes and WHO Overview support bacterial, viral and fungal causes.",
+      "prior_finding_ids": [
+        "S01"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "causes_risks-2",
+      "section": "causes_risks",
+      "current_claim_text_sha256": "5de9f3ae9fc0837935ab41405be346806406bb06244aa71f79a65340982b6265",
+      "current_author_claim_sha256": "aee60abb2a7e73779310ec546fd2c9048f44dbe784a97045e3ed1fb575312b98",
+      "current_section_content_sha256": "0e5d9e408de3ffc18ebc4403023201ef1a09a738ed85b366fb8aa97e883f22c8",
+      "current_author_record_sha256": "3773451a08ca35e876f303a8ca008b4906871d4524620e5b7ec0932c6ab81e0f",
+      "prior_claim_text_sha256": "5de9f3ae9fc0837935ab41405be346806406bb06244aa71f79a65340982b6265",
+      "prior_status": "verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc-facts",
+          "locator": "PDF p1: Is sepsis contagious?",
+          "source_metadata_sha256": "e9c21c454fcf0722a635edef37434f1cc1f2bab49300f30624bf678449e2d946"
+        },
+        {
+          "source_id": "sepsis-rch-child",
+          "locator": "Common questions / Is sepsis contagious?",
+          "source_metadata_sha256": "9b190845aa0e7e3da423073ef03cf85da2e871728583e9afd4609fc5bea02aae"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Contagion separated from pathogen list; CDC PDFp1 and RCH FAQ support distinction.",
+      "prior_finding_ids": [
+        "S01"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "causes_risks-3",
+      "section": "causes_risks",
+      "current_claim_text_sha256": "14d4b2957767d1cd394e8f085a56d67d3f6918fbfbc7f9ac9f542527bcb6767f",
+      "current_author_claim_sha256": "6458c8ef843504b02f2795af96240665c0965ad5034d3437f2bca5e18bde1434",
+      "current_section_content_sha256": "0e5d9e408de3ffc18ebc4403023201ef1a09a738ed85b366fb8aa97e883f22c8",
+      "current_author_record_sha256": "3773451a08ca35e876f303a8ca008b4906871d4524620e5b7ec0932c6ab81e0f",
+      "prior_claim_text_sha256": "14d4b2957767d1cd394e8f085a56d67d3f6918fbfbc7f9ac9f542527bcb6767f",
+      "prior_status": "verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "risk",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Who is at risk?",
+          "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Who’s at risk of getting sepsis",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Risk factors",
+          "source_metadata_sha256": "7402cf19d2586cad0f26b37e35365f2103ea582642c76c479185756254baaee9"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Risk groups supported by WHO/NHS; kidney disease specifically WHO/Mayo. No universal65/75 cutoff.",
+      "prior_finding_ids": [
+        "S03"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "causes_risks-4",
+      "section": "causes_risks",
+      "current_claim_text_sha256": "42e0a21505e5cf1b383a17e498450cc14579f8c39f6e997df8ce5f47c96d6453",
+      "current_author_claim_sha256": "d7c73bdbe2df8aed42b08dda34daae307e16af5fbce8920e8c02c1786268e744",
+      "current_section_content_sha256": "0e5d9e408de3ffc18ebc4403023201ef1a09a738ed85b366fb8aa97e883f22c8",
+      "current_author_record_sha256": "3773451a08ca35e876f303a8ca008b4906871d4524620e5b7ec0932c6ab81e0f",
+      "prior_claim_text_sha256": "42e0a21505e5cf1b383a17e498450cc14579f8c39f6e997df8ce5f47c96d6453",
+      "prior_status": "supported_binding_correction",
+      "text_unchanged_from_prior": true,
+      "current_kind": "risk",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc-facts",
+          "locator": "PDF p1: Who is at risk?",
+          "source_metadata_sha256": "e9c21c454fcf0722a635edef37434f1cc1f2bab49300f30624bf678449e2d946"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Risk factors",
+          "source_metadata_sha256": "7402cf19d2586cad0f26b37e35365f2103ea582642c76c479185756254baaee9"
+        },
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Etiology of Sepsis and Septic Shock / recent surgery and postoperative infection; Risk factors / invasive devices and recent hospitalization",
+          "source_metadata_sha256": "113f4534cf15e497ff0e25c480c45f815ca4fc4a932f00b0a7e29ff95bdf8acb"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Recent-surgery clinical background has CDC PDF and MSD Etiology53 support, not only currently cited Symptoms. Correct locator; no quantitative risk claimed.",
+      "prior_finding_ids": [
+        "S02"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "red_flags-0",
+      "section": "red_flags",
+      "current_claim_text_sha256": "3a0d5e0d4681dcd201d02484e9ad7560e5317ce78eac8d0d82eaa68190583914",
+      "current_author_claim_sha256": "9054328072db8b2f7d39b94d726391cde0b14bae0f99e2d7a6d12845ef33a78b",
+      "current_section_content_sha256": "3bc873302dc7cdccad6db0bba4e889a223c459b276fefe1302a4313e9f9811d3",
+      "current_author_record_sha256": "56e17cc2d9ac9b783c17cdc4245755cae6b61df5014260fc4fef41dc7f48ce52",
+      "prior_claim_text_sha256": "3a0d5e0d4681dcd201d02484e9ad7560e5317ce78eac8d0d82eaa68190583914",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms; When and where to get medical help",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Signs and symptoms",
+          "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "red_flags-1",
+      "section": "red_flags",
+      "current_claim_text_sha256": "4ee96b3086aab88213e067a9d13c44643b80c374a8f24bd39ee5ababbcdd03f6",
+      "current_author_claim_sha256": "eddf46e44c42d6f965fe2aeafb8cfe560be643fbcce80f4c90120d8478bb8660",
+      "current_section_content_sha256": "3bc873302dc7cdccad6db0bba4e889a223c459b276fefe1302a4313e9f9811d3",
+      "current_author_record_sha256": "56e17cc2d9ac9b783c17cdc4245755cae6b61df5014260fc4fef41dc7f48ce52",
+      "prior_claim_text_sha256": "4ee96b3086aab88213e067a9d13c44643b80c374a8f24bd39ee5ababbcdd03f6",
+      "prior_status": "verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms in adults; When and where to get medical help",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Signs and symptoms; Treatment",
+          "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Symptoms of septic shock; When to see a doctor",
+          "source_metadata_sha256": "7402cf19d2586cad0f26b37e35365f2103ea582642c76c479185756254baaee9"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Adult confusion/breathing urgent action in NHS/Mayo; Mayo severe sleepiness and NHS suspected-sepsis emergency pathway support hard-waking presentation. WHO child list not used as adult proof.",
+      "prior_finding_ids": [
+        "S03"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "red_flags-2",
+      "section": "red_flags",
+      "current_claim_text_sha256": "c4bf64cd7e37c7ed44e76598dd85d5e3b8c86c77f8c04fd5cdf40af3d7cb85b1",
+      "current_author_claim_sha256": "a77bbc58e9eedb78e8bd128bc4290487dd165b257a855b7e58e908c1ff1e3f60",
+      "current_section_content_sha256": "3bc873302dc7cdccad6db0bba4e889a223c459b276fefe1302a4313e9f9811d3",
+      "current_author_record_sha256": "56e17cc2d9ac9b783c17cdc4245755cae6b61df5014260fc4fef41dc7f48ce52",
+      "prior_claim_text_sha256": "c4bf64cd7e37c7ed44e76598dd85d5e3b8c86c77f8c04fd5cdf40af3d7cb85b1",
+      "prior_status": "verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms in children; Immediate action / child under 5",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        },
+        {
+          "source_id": "sepsis-rch-child",
+          "locator": "When to get help / Call an ambulance; Signs and symptoms",
+          "source_metadata_sha256": "9b190845aa0e7e3da423073ef03cf85da2e871728583e9afd4609fc5bea02aae"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "RCH ambulance list and NHS child signs/emergency pathway support actions; baby no-high-fever scope appropriate.",
+      "prior_finding_ids": [
+        "S03"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "red_flags-3",
+      "section": "red_flags",
+      "current_claim_text_sha256": "8ed1b8cd603bc68ab117dc22709f6ecbc05a1366f0385ed1abb294362ed13296",
+      "current_author_claim_sha256": "27c745d3228537ff6be334aa77c4714d557c2a5f7540ace46cd2adebba32888f",
+      "current_section_content_sha256": "3bc873302dc7cdccad6db0bba4e889a223c459b276fefe1302a4313e9f9811d3",
+      "current_author_record_sha256": "56e17cc2d9ac9b783c17cdc4245755cae6b61df5014260fc4fef41dc7f48ce52",
+      "prior_claim_text_sha256": "9c0194a6576971875aa141ebc4abaf7fbc42b302b27ed509fdfb8566877af285",
+      "prior_status": "needs_revision",
+      "text_unchanged_from_prior": false,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-rch-child",
+          "locator": "When to get help / Go to a hospital: baby under six months, not feeding properly or waking for feeds",
+          "source_metadata_sha256": "9b190845aa0e7e3da423073ef03cf85da2e871728583e9afd4609fc5bea02aae"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "When and where to get medical help / Immediate action required: baby or child under 5",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        }
+      ],
+      "finding_ids": [
+        "S03"
+      ],
+      "status": "author_followup_supports_scoped_correction_not_independent_acceptance",
+      "resolved": "RCH <6月喂养不正常/不醒来吃奶的医院评估已经直接列出，不再等待完全拒食。NHS <5岁不正常反应、不吃奶、嗜睡或难唤醒另列急救/急诊；没有把两种年龄规则合成一个共同阈值。",
+      "source_scope": "RCH help142-149; NHS help67-77。每份材料直接支持本机构的人群及路径；不声称都支持对方的精确年龄。",
+      "bilingual": "中英均为under6months和under5years，分别医院立即评估和急救/急诊；无需发热或完全拒食。feeding poorly对应吃奶不正常，not responding normally对应不能正常回应。",
+      "remaining": "精确年龄条款尚无同范围第二独立编写来源。此次作者自查不能满足独立审核门禁。",
+      "source_ids": [
+        "sepsis-rch-child",
+        "sepsis-nhs"
+      ],
+      "evidence_reopened_this_followup": true
+    },
+    {
+      "claim_id": "red_flags-4",
+      "section": "red_flags",
+      "current_claim_text_sha256": "72238639f9fc83998611e2faf1c25ddbb278ed9e13d379e0de3516fad70bb0f0",
+      "current_author_claim_sha256": "4b738edf86419353a3f895bcabe3f3cd426635fb0ad06b1d22a41305778d83ef",
+      "current_section_content_sha256": "3bc873302dc7cdccad6db0bba4e889a223c459b276fefe1302a4313e9f9811d3",
+      "current_author_record_sha256": "56e17cc2d9ac9b783c17cdc4245755cae6b61df5014260fc4fef41dc7f48ce52",
+      "prior_claim_text_sha256": null,
+      "prior_status": null,
+      "text_unchanged_from_prior": false,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-rch-child",
+          "locator": "When to get help / See a doctor or health professional; Go to a hospital",
+          "source_metadata_sha256": "9b190845aa0e7e3da423073ef03cf85da2e871728583e9afd4609fc5bea02aae"
+        },
+        {
+          "source_id": "sepsis-nhs-dehydration",
+          "locator": "Urgent advice; Immediate action required",
+          "source_metadata_sha256": "0f63941c6b5a86afc4f467aa42c16177557f082ef0145f55fadb1c18bbb67f32"
+        }
+      ],
+      "finding_ids": [
+        "S03"
+      ],
+      "status": "author_followup_confirms_separate_lower_severity_branch",
+      "resolved": "分支明确排除前述婴儿及急救情形。其余摄入/尿量减少走紧急咨询；明显萎靡或迅速变差升到医院，不把轻微变化一律写救护车。",
+      "source_scope": "RCH help142-152; NHS Dehydration urgent65-74/emergency75-85。呕吐后液体补充困难是脱水知识的实际组织，不是脓毒症诊断阈值。",
+      "bilingual": "中文立即联系和英文prompt pediatric or local urgent advice都要求及时紧急咨询；医院升级两种语言一致，没有把英语写成常规复诊。",
+      "remaining": "呕吐/补液完整分句的独立双源支持仍不升级；没有新证据关闭旧完整度问题。",
+      "source_ids": [
+        "sepsis-rch-child",
+        "sepsis-nhs-dehydration"
+      ],
+      "evidence_reopened_this_followup": true
+    },
+    {
+      "claim_id": "care-0",
+      "section": "care",
+      "current_claim_text_sha256": "a0ab89fbbdbb25c11a2d46a69f36ea68db9fb2b5379af8c0930e0ef691c0306a",
+      "current_author_claim_sha256": "3dd6e175478025419c190b61ed5e9f33c03f58d782b2acf8749c4c707d4984db",
+      "current_section_content_sha256": "4a132a75f41c0a2975fce99af0c54bc3fea2d0055bb0bda57a19c54021dab5ea",
+      "current_author_record_sha256": "cf2f51cc32508bed65798c041408af40e7798df1abfa98ad964e88afa3cebd01",
+      "prior_claim_text_sha256": "a0ab89fbbdbb25c11a2d46a69f36ea68db9fb2b5379af8c0930e0ef691c0306a",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms; When and where to get medical help",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Signs and symptoms",
+          "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "care-1",
+      "section": "care",
+      "current_claim_text_sha256": "857dcfe300462318b535e69156f557ff980e9e293fe60f2d2ce889fe03ff6c6f",
+      "current_author_claim_sha256": "0d7468cbadd94e71a0ef1fcfd44a482be97185e7ce81c8b896844a506f57690b",
+      "current_section_content_sha256": "4a132a75f41c0a2975fce99af0c54bc3fea2d0055bb0bda57a19c54021dab5ea",
+      "current_author_record_sha256": "cf2f51cc32508bed65798c041408af40e7798df1abfa98ad964e88afa3cebd01",
+      "prior_claim_text_sha256": "857dcfe300462318b535e69156f557ff980e9e293fe60f2d2ce889fe03ff6c6f",
+      "prior_status": "partial_support",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc-prevention",
+          "locator": "Act fast; Know sepsis signs",
+          "source_metadata_sha256": "1b2018770d8c157d130bd503cf5ff49022fcb974e35806472dfc32131dbd3ddd"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms; When and where to get medical help",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        },
+        {
+          "source_id": "sepsis-mayo-anaphylaxis",
+          "locator": "Prevention",
+          "source_metadata_sha256": "ca8478ca38bbdd04601481609c345698cc27bb3df2349360ef3b4f55983c7e88"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Worsening-infection report supported. Bring medicines NHS only; prior-allergy communication Mayo only. Sensible practical checklist, not complete dual-source verification; split supporting clauses.",
+      "prior_finding_ids": [
+        "S02"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "care-2",
+      "section": "care",
+      "current_claim_text_sha256": "1f75ca3e49a1e9c3f5fe66c419422bfbc13c8d522faf3299d855b99e2e46f58d",
+      "current_author_claim_sha256": "cdab216c5e9ac4f1607a02b43a768b6ee54170e9fcc86c5d2f5967e56ae58b90",
+      "current_section_content_sha256": "4a132a75f41c0a2975fce99af0c54bc3fea2d0055bb0bda57a19c54021dab5ea",
+      "current_author_record_sha256": "cf2f51cc32508bed65798c041408af40e7798df1abfa98ad964e88afa3cebd01",
+      "prior_claim_text_sha256": "1f75ca3e49a1e9c3f5fe66c419422bfbc13c8d522faf3299d855b99e2e46f58d",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Getting sepsis again",
+          "source_metadata_sha256": "7aacca46b9075eb933fd8592791643d871137c4bb4cbbc34333807f8096ae3d5"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Complications; Repeat infections",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms; When and where to get medical help",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "diagnosis-0",
+      "section": "diagnosis",
+      "current_claim_text_sha256": "8e8407800a4c6d70e23011053effc92f3972e8268c516b91f5e3f240d6a62e63",
+      "current_author_claim_sha256": "d6e1d86995cd3958c1b08436477b7aeb9a5e556ce65757b322aadc8e125e365c",
+      "current_section_content_sha256": "84358f69b0077ba5c6ff771185c607f07f80b482fedc3fc0e59f85939397f6aa",
+      "current_author_record_sha256": "366683b70426ee45c5dc7cb633809de0a0a9401b1fac0dfc72215ce61c38a219",
+      "prior_claim_text_sha256": "8e8407800a4c6d70e23011053effc92f3972e8268c516b91f5e3f240d6a62e63",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Diagnosis",
+          "source_metadata_sha256": "4f0df89b5186d66be1dbc56fd39abca05399e65460222690de1403203922c1eb"
+        },
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Diagnosis",
+          "source_metadata_sha256": "470ac99e30eec1ec634e3391fb371418d2b4252ec597b60912b03afb95e24e0d"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "diagnosis-1",
+      "section": "diagnosis",
+      "current_claim_text_sha256": "f2babbcf91c91d46086764af879f7402fe50e90bc96931567196ad6f214f5892",
+      "current_author_claim_sha256": "03a516010b7cf9eea7581819d0c60e932ba58022d49abadb4dbb76c2c885da0a",
+      "current_section_content_sha256": "84358f69b0077ba5c6ff771185c607f07f80b482fedc3fc0e59f85939397f6aa",
+      "current_author_record_sha256": "366683b70426ee45c5dc7cb633809de0a0a9401b1fac0dfc72215ce61c38a219",
+      "prior_claim_text_sha256": "f2babbcf91c91d46086764af879f7402fe50e90bc96931567196ad6f214f5892",
+      "prior_status": "single_origin_supported",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Symptoms and Signs; Diagnosis",
+          "source_metadata_sha256": "113f4534cf15e497ff0e25c480c45f815ca4fc4a932f00b0a7e29ff95bdf8acb"
+        },
+        {
+          "source_id": "sepsis-msd-shock",
+          "locator": "Evaluation / Initial evaluation and diagnosis",
+          "source_metadata_sha256": "d632e8a27af4f4011efbeba1861e0f671a9b4766c0707828fb11966a7b2c7217"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Serial observations and early-normal limitation directly supported by two MSD chapters, one editorial origin. RCH covers repeat child assessment, not full adult-monitoring list.",
+      "prior_finding_ids": [
+        "S04"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "diagnosis-2",
+      "section": "diagnosis",
+      "current_claim_text_sha256": "b9e638bbf05bd5281e521592114a4b16820367fe6938b5e5e4f681d5c322a659",
+      "current_author_claim_sha256": "c6e0cf26201304581ba05d3da80297dcebe7dfbc76395dd0b37b9359c5a0cb0f",
+      "current_section_content_sha256": "84358f69b0077ba5c6ff771185c607f07f80b482fedc3fc0e59f85939397f6aa",
+      "current_author_record_sha256": "366683b70426ee45c5dc7cb633809de0a0a9401b1fac0dfc72215ce61c38a219",
+      "prior_claim_text_sha256": "b9e638bbf05bd5281e521592114a4b16820367fe6938b5e5e4f681d5c322a659",
+      "prior_status": "verified_shared_upstream",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Diagnosis / Blood tests; Other lab tests; Imaging tests",
+          "source_metadata_sha256": "470ac99e30eec1ec634e3391fb371418d2b4252ec597b60912b03afb95e24e0d"
+        },
+        {
+          "source_id": "sepsis-msd-shock",
+          "locator": "Initial evaluation / Initial laboratory tests",
+          "source_metadata_sha256": "d632e8a27af4f4011efbeba1861e0f671a9b4766c0707828fb11966a7b2c7217"
+        },
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Diagnosis",
+          "source_metadata_sha256": "113f4534cf15e497ff0e25c480c45f815ca4fc4a932f00b0a7e29ff95bdf8acb"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Mayo diagnosis/MSD evaluation support test list and selection by suspected source. Independent compositions with shared Merck/clinical literature, not independent research replication.",
+      "prior_finding_ids": [
+        "S04"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "diagnosis-3",
+      "section": "diagnosis",
+      "current_claim_text_sha256": "fb929112808497813b8b162f86e3e8ec8ff3aeaee29b35df93274ae7e932e5bc",
+      "current_author_claim_sha256": "cafa310043761637e0c56aa140d9efc228eece0f592da0605da36d974687e06a",
+      "current_section_content_sha256": "84358f69b0077ba5c6ff771185c607f07f80b482fedc3fc0e59f85939397f6aa",
+      "current_author_record_sha256": "366683b70426ee45c5dc7cb633809de0a0a9401b1fac0dfc72215ce61c38a219",
+      "prior_claim_text_sha256": "fb929112808497813b8b162f86e3e8ec8ff3aeaee29b35df93274ae7e932e5bc",
+      "prior_status": "partial_support",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Biomarkers; Blood culture",
+          "source_metadata_sha256": "141b1821d01aeec24aecc6ed5e3caa4094cb989b8bbef390df8800f374528255"
+        },
+        {
+          "source_id": "sepsis-rch-child",
+          "locator": "Common questions / How do doctors diagnose sepsis?",
+          "source_metadata_sha256": "9b190845aa0e7e3da423073ef03cf85da2e871728583e9afd4609fc5bea02aae"
+        },
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Diagnosis",
+          "source_metadata_sha256": "4f0df89b5186d66be1dbc56fd39abca05399e65460222690de1403203922c1eb"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "No-single-test supported by SSC adult Biomarkers and RCH child FAQ; MSD106–110 adds adult non-specific markers. Bound CDC/SSC do not explicitly describe growing pathogens in culture. Add precise test-definition source; split definition/diagnostic limit.",
+      "prior_finding_ids": [
+        "S04"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "diagnosis-4",
+      "section": "diagnosis",
+      "current_claim_text_sha256": "76628a7895afd1edd0469fb82c695e0283c5cff50d0f60fc030217007bb6954b",
+      "current_author_claim_sha256": "f0c0be821694f8c1a76da3584fd2dadfbc73245b1cdee22c990d0eba218a9edc",
+      "current_section_content_sha256": "84358f69b0077ba5c6ff771185c607f07f80b482fedc3fc0e59f85939397f6aa",
+      "current_author_record_sha256": "366683b70426ee45c5dc7cb633809de0a0a9401b1fac0dfc72215ce61c38a219",
+      "prior_claim_text_sha256": "76628a7895afd1edd0469fb82c695e0283c5cff50d0f60fc030217007bb6954b",
+      "prior_status": "verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Fluid resuscitation / Good practice statement",
+          "source_metadata_sha256": "141b1821d01aeec24aecc6ed5e3caa4094cb989b8bbef390df8800f374528255"
+        },
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Diagnosis; Treatment",
+          "source_metadata_sha256": "4f0df89b5186d66be1dbc56fd39abca05399e65460222690de1403203922c1eb"
+        },
+        {
+          "source_id": "sepsis-rch-child",
+          "locator": "How to care for sepsis",
+          "source_metadata_sha256": "9b190845aa0e7e3da423073ef03cf85da2e871728583e9afd4609fc5bea02aae"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "SSC/CDC immediate care; RCH pediatric hospital fluids/medicines. Adult attribution present; no adult dose extrapolated.",
+      "prior_finding_ids": [
+        "S04"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "differentials-0",
+      "section": "differentials",
+      "current_claim_text_sha256": "7a56e1163a3c9957894c82de75a469c2fe24cc28a15bf6fb75ec3cb821836e44",
+      "current_author_claim_sha256": "15dfc06a55be438f6fbb47fbf8b30f369d055288a1572c208f9b8cdf0c69a760",
+      "current_section_content_sha256": "6edefec1207f651cd01bd9a8310450d41ba5999e0a89a0984683661dbfafe7af",
+      "current_author_record_sha256": "dde6a39f9b6d59233d465a7611a2b2dcb0ead50ac3b0442c4d479eea83243290",
+      "prior_claim_text_sha256": "7a56e1163a3c9957894c82de75a469c2fe24cc28a15bf6fb75ec3cb821836e44",
+      "prior_status": "verified_shared_upstream",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Antimicrobial therapy / unconfirmed infection",
+          "source_metadata_sha256": "141b1821d01aeec24aecc6ed5e3caa4094cb989b8bbef390df8800f374528255"
+        },
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Symptoms; Diagnosis",
+          "source_metadata_sha256": "113f4534cf15e497ff0e25c480c45f815ca4fc4a932f00b0a7e29ff95bdf8acb"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "SSC alternative-cause review and MSD clinical differential support; shared Sepsis3/SSC literature acknowledged.",
+      "prior_finding_ids": [
+        "S05"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "differentials-1",
+      "section": "differentials",
+      "current_claim_text_sha256": "6cc6166ee30b24a75fb8881e3bdc3ffcf334d224fe6b0720d35d84c290344464",
+      "current_author_claim_sha256": "0677436ab73fcea427ad1b3ede7e7e84214f1ee91e2d15eaef3f8c1e133b654a",
+      "current_section_content_sha256": "6edefec1207f651cd01bd9a8310450d41ba5999e0a89a0984683661dbfafe7af",
+      "current_author_record_sha256": "dde6a39f9b6d59233d465a7611a2b2dcb0ead50ac3b0442c4d479eea83243290",
+      "prior_claim_text_sha256": "6cc6166ee30b24a75fb8881e3bdc3ffcf334d224fe6b0720d35d84c290344464",
+      "prior_status": "verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "risk",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-nhs-dehydration",
+          "locator": "Symptoms; Causes; Urgent advice; Immediate action",
+          "source_metadata_sha256": "0f63941c6b5a86afc4f467aa42c16177557f082ef0145f55fadb1c18bbb67f32"
+        },
+        {
+          "source_id": "sepsis-msd-shock",
+          "locator": "Hypovolemic shock; Body Fluid Loss table; Evaluation",
+          "source_metadata_sha256": "d632e8a27af4f4011efbeba1861e0f671a9b4766c0707828fb11966a7b2c7217"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "NHS dehydration plus MSD hypovolemia/history support clues; text offers no home diagnosis rule.",
+      "prior_finding_ids": [
+        "S05"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "differentials-2",
+      "section": "differentials",
+      "current_claim_text_sha256": "e527f829d9fbbbb8cad120884ce47ac829f0c20d6e54b52d2b9e11fb4bf24844",
+      "current_author_claim_sha256": "6c045bb6bf5e442da6bc749ed76c6b8340ac47b2338573a927cc2c7268ae1e85",
+      "current_section_content_sha256": "6edefec1207f651cd01bd9a8310450d41ba5999e0a89a0984683661dbfafe7af",
+      "current_author_record_sha256": "dde6a39f9b6d59233d465a7611a2b2dcb0ead50ac3b0442c4d479eea83243290",
+      "prior_claim_text_sha256": "e527f829d9fbbbb8cad120884ce47ac829f0c20d6e54b52d2b9e11fb4bf24844",
+      "prior_status": "supported_reviewer_binding_needed",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-mayo-anaphylaxis",
+          "locator": "Overview; Symptoms; When to see a doctor; Causes",
+          "source_metadata_sha256": "ca8478ca38bbdd04601481609c345698cc27bb3df2349360ef3b4f55983c7e88"
+        },
+        {
+          "source_id": "sepsis-msd-shock",
+          "locator": "Distributive shock",
+          "source_metadata_sha256": "d632e8a27af4f4011efbeba1861e0f671a9b4766c0707828fb11966a7b2c7217"
+        },
+        {
+          "source_id": "sepsis-nhs-anaphylaxis",
+          "locator": "Symptoms; Immediate action required; What to do if you have anaphylaxis; Causes",
+          "source_metadata_sha256": "f62df3e59c04810937aaad067e8019d1fdddd0b15c1e719401f2591eacbe86b8"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Mayo covers full allergy list. NHS antibiotics omits fainting and is antibiotic-specific. Reviewer-read NHS Anaphylaxis supplies medicine/allergen, fainting and immediate help; bind it rather than claiming antibiotic page covers entire paragraph.",
+      "prior_finding_ids": [
+        "S05",
+        "S07"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "differentials-3",
+      "section": "differentials",
+      "current_claim_text_sha256": "9fe5f2f6ca5888700426cc62a3cd768df50ea22c4451de396a32c66a1ccaf861",
+      "current_author_claim_sha256": "f1de46d3bf904f8d17f9bd43542fb2fe52f4d60878aab8f6ebc8b8e43178f4ef",
+      "current_section_content_sha256": "6edefec1207f651cd01bd9a8310450d41ba5999e0a89a0984683661dbfafe7af",
+      "current_author_record_sha256": "dde6a39f9b6d59233d465a7611a2b2dcb0ead50ac3b0442c4d479eea83243290",
+      "prior_claim_text_sha256": "9fe5f2f6ca5888700426cc62a3cd768df50ea22c4451de396a32c66a1ccaf861",
+      "prior_status": "single_origin_supported",
+      "text_unchanged_from_prior": true,
+      "current_kind": "risk",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Diagnosis / Other causes of shock",
+          "source_metadata_sha256": "113f4534cf15e497ff0e25c480c45f815ca4fc4a932f00b0a7e29ff95bdf8acb"
+        },
+        {
+          "source_id": "sepsis-msd-shock",
+          "locator": "Cardiogenic shock; Evaluation",
+          "source_metadata_sha256": "d632e8a27af4f4011efbeba1861e0f671a9b4766c0707828fb11966a7b2c7217"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Cardiac mimics, ECG/markers and sepsis-related abnormalities supported by MSD, but both pages one origin. No self-diagnostic instruction.",
+      "prior_finding_ids": [
+        "S05"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "differentials-4",
+      "section": "differentials",
+      "current_claim_text_sha256": "46adf660139ca18f89c00ff13d69fa3d0c4eff45e7ebd3f230e725f188047e28",
+      "current_author_claim_sha256": "c74405cd398084ed4aa87e83a5d21b4f50b29859bb7f9a750e4deb5d62502cb2",
+      "current_section_content_sha256": "6edefec1207f651cd01bd9a8310450d41ba5999e0a89a0984683661dbfafe7af",
+      "current_author_record_sha256": "dde6a39f9b6d59233d465a7611a2b2dcb0ead50ac3b0442c4d479eea83243290",
+      "prior_claim_text_sha256": "46adf660139ca18f89c00ff13d69fa3d0c4eff45e7ebd3f230e725f188047e28",
+      "prior_status": "single_origin_supported",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Antimicrobial therapy / unconfirmed infection",
+          "source_metadata_sha256": "141b1821d01aeec24aecc6ed5e3caa4094cb989b8bbef390df8800f374528255"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "SSC318 directly supports reevaluation/discontinuation with alternative cause. Correct but only one guideline bound.",
+      "prior_finding_ids": [
+        "S05"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "treatment-0",
+      "section": "treatment",
+      "current_claim_text_sha256": "b82a296fd54abab8130b275362ab151df8699e500920b9821672e6a2fe9ac347",
+      "current_author_claim_sha256": "47a94c4ba1ff8f6907657fa1dcd6e4880ca56f326a2832a2294b06f855da1549",
+      "current_section_content_sha256": "b75197d2a579b876985bc177195c65de7192272ee8395ae4ec4a9dd07d04f581",
+      "current_author_record_sha256": "de0e4f0e256cf30223643ee406d9a1f323c90102938824215044291f2071adcd",
+      "prior_claim_text_sha256": "b82a296fd54abab8130b275362ab151df8699e500920b9821672e6a2fe9ac347",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Treatment",
+          "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d"
+        },
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Treatment",
+          "source_metadata_sha256": "4f0df89b5186d66be1dbc56fd39abca05399e65460222690de1403203922c1eb"
+        },
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Medications; Supportive care; Surgery",
+          "source_metadata_sha256": "470ac99e30eec1ec634e3391fb371418d2b4252ec597b60912b03afb95e24e0d"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "treatment-1",
+      "section": "treatment",
+      "current_claim_text_sha256": "404507c84c30155589b893bee14ca690cf141cc16106262e2db553b3dc60ca99",
+      "current_author_claim_sha256": "15accc06439d48e7e0418ae48c74fa9e64287b74e37c3a9468982f32f83de6fe",
+      "current_section_content_sha256": "b75197d2a579b876985bc177195c65de7192272ee8395ae4ec4a9dd07d04f581",
+      "current_author_record_sha256": "de0e4f0e256cf30223643ee406d9a1f323c90102938824215044291f2071adcd",
+      "prior_claim_text_sha256": "404507c84c30155589b893bee14ca690cf141cc16106262e2db553b3dc60ca99",
+      "prior_status": "verified_shared_upstream",
+      "text_unchanged_from_prior": true,
+      "current_kind": "benefit",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Medications; Surgery",
+          "source_metadata_sha256": "470ac99e30eec1ec634e3391fb371418d2b4252ec597b60912b03afb95e24e0d"
+        },
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Infection source control",
+          "source_metadata_sha256": "113f4534cf15e497ff0e25c480c45f815ca4fc4a932f00b0a7e29ff95bdf8acb"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Source control",
+          "source_metadata_sha256": "141b1821d01aeec24aecc6ed5e3caa4094cb989b8bbef390df8800f374528255"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Mayo surgery/MSD source control support abscess/dead tissue; SSC supports principle. MSD cites SSC2021; shared upstream disclosed.",
+      "prior_finding_ids": [
+        "S06"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "treatment-2",
+      "section": "treatment",
+      "current_claim_text_sha256": "0e3c9f7e250911972385dc8b4c8544cea340cc3a103c8e7a3a06fb2e553c6ccf",
+      "current_author_claim_sha256": "e9c10cd514d43c6deaf896f6e6fbabe34021660b339fb2cec7f9498ce4f184d2",
+      "current_section_content_sha256": "b75197d2a579b876985bc177195c65de7192272ee8395ae4ec4a9dd07d04f581",
+      "current_author_record_sha256": "de0e4f0e256cf30223643ee406d9a1f323c90102938824215044291f2071adcd",
+      "prior_claim_text_sha256": "0e3c9f7e250911972385dc8b4c8544cea340cc3a103c8e7a3a06fb2e553c6ccf",
+      "prior_status": "verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc-catheter",
+          "locator": "Treatment and recovery; Reducing risk / Patients",
+          "source_metadata_sha256": "75a95c1fe6ca4d028d169739cd600d3760867a5ffb4569dd567fc53068b8bb53"
+        },
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Infection source control",
+          "source_metadata_sha256": "113f4534cf15e497ff0e25c480c45f815ca4fc4a932f00b0a7e29ff95bdf8acb"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "CDC CAUTI clinician-directed removal/change and MSD urinary-catheter source control explicitly support new specific scope.",
+      "prior_finding_ids": [
+        "S06"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "treatment-3",
+      "section": "treatment",
+      "current_claim_text_sha256": "3792c17173d01608473349dba99919d34a39c7ad9fd5ccefb0fd73c219e1db5e",
+      "current_author_claim_sha256": "6b9d1097002ad7e74781efc321b00c9ff8a867d31d919933d8d2ca91452323f3",
+      "current_section_content_sha256": "b75197d2a579b876985bc177195c65de7192272ee8395ae4ec4a9dd07d04f581",
+      "current_author_record_sha256": "de0e4f0e256cf30223643ee406d9a1f323c90102938824215044291f2071adcd",
+      "prior_claim_text_sha256": "3792c17173d01608473349dba99919d34a39c7ad9fd5ccefb0fd73c219e1db5e",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "benefit",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Medications; Supportive care",
+          "source_metadata_sha256": "470ac99e30eec1ec634e3391fb371418d2b4252ec597b60912b03afb95e24e0d"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Treatment",
+          "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Fluid resuscitation; Vasopressors; Mechanical ventilation; Renal replacement therapy",
+          "source_metadata_sha256": "141b1821d01aeec24aecc6ed5e3caa4094cb989b8bbef390df8800f374528255"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "medications-0",
+      "section": "medications",
+      "current_claim_text_sha256": "8c12d26cd9a8e6c9e45ddebf2fe99a36ce36ca2f4ed04a1eae2eb454e032dbf0",
+      "current_author_claim_sha256": "6be82de48f41a8600fa7a8aff2ef05d3eca233b30571a0558dc8ad9421d1d0b3",
+      "current_section_content_sha256": "a5b11e262a6f1d34c23e3e36295c1b0b509e61e0920b43827501f86591c0724f",
+      "current_author_record_sha256": "3b1b37a9df3457c975fc576cff6a87a766111473cdc8167e4dd99167b5705b47",
+      "prior_claim_text_sha256": "8c12d26cd9a8e6c9e45ddebf2fe99a36ce36ca2f4ed04a1eae2eb454e032dbf0",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Treatment",
+          "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d"
+        },
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Medications; Supportive care; Surgery",
+          "source_metadata_sha256": "470ac99e30eec1ec634e3391fb371418d2b4252ec597b60912b03afb95e24e0d"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "medications-1",
+      "section": "medications",
+      "current_claim_text_sha256": "6be832e0e508a0664b7ed6038df27f4b07c90d4501d1585f6b8f35176f21f501",
+      "current_author_claim_sha256": "09fbc7cd6eb798defaef4bcd3c242fa4646e2a56cd3b2a2d0f2a4d57d63422c7",
+      "current_section_content_sha256": "a5b11e262a6f1d34c23e3e36295c1b0b509e61e0920b43827501f86591c0724f",
+      "current_author_record_sha256": "3b1b37a9df3457c975fc576cff6a87a766111473cdc8167e4dd99167b5705b47",
+      "prior_claim_text_sha256": "6be832e0e508a0664b7ed6038df27f4b07c90d4501d1585f6b8f35176f21f501",
+      "prior_status": "verified_shared_upstream",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Treatment for sepsis",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Antimicrobial de-escalation",
+          "source_metadata_sha256": "141b1821d01aeec24aecc6ed5e3caa4094cb989b8bbef390df8800f374528255"
+        },
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Antibiotics",
+          "source_metadata_sha256": "113f4534cf15e497ff0e25c480c45f815ca4fc4a932f00b0a7e29ff95bdf8acb"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "NHS general-to-specific treatment, SSC/MSD culture-susceptibility narrowing support. MSD cites SSC2021; not three independent evidence bases.",
+      "prior_finding_ids": [
+        "S07"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "medications-2",
+      "section": "medications",
+      "current_claim_text_sha256": "41b2e0400bb3ac96e0e252761e425a1dc870d93092f1ef9a19311a55cb7a817d",
+      "current_author_claim_sha256": "c5730a3b38c3428a30ee721d12728734196789fd5ade97156efec00d83b6d0f3",
+      "current_section_content_sha256": "a5b11e262a6f1d34c23e3e36295c1b0b509e61e0920b43827501f86591c0724f",
+      "current_author_record_sha256": "3b1b37a9df3457c975fc576cff6a87a766111473cdc8167e4dd99167b5705b47",
+      "prior_claim_text_sha256": "41b2e0400bb3ac96e0e252761e425a1dc870d93092f1ef9a19311a55cb7a817d",
+      "prior_status": "partial_support",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc-antibiotics",
+          "locator": "Take antibiotics ONLY when needed / viruses",
+          "source_metadata_sha256": "d3897469b108d8c40b23b1f112e7c32de798866eb7ebdf78a0df342e61dee1f6"
+        },
+        {
+          "source_id": "sepsis-acs-infections",
+          "locator": "Treating infections in people with cancer",
+          "source_metadata_sha256": "3b32f359b60be15d16b6444e808c5279f6dcf80c20772ee2aebe89304edd586e"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Antifungal coverage",
+          "source_metadata_sha256": "141b1821d01aeec24aecc6ed5e3caa4094cb989b8bbef390df8800f374528255"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Antibiotics do not treat viruses supported. ACS drug classes are cancer-specific; WHO Treatment gives general support but is not bound to this claim. SSC272–276 adult conditional/low-certainty recommendation is against routine empirical antifungals, with selected-risk exceptions; only one independent guideline. Keep attribution, explain empirical/selected-risk scope; do not force MSD254 into false agreement.",
+      "prior_finding_ids": [
+        "S07"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "medications-3",
+      "section": "medications",
+      "current_claim_text_sha256": "7c1b7fe4b11b5faa424e0fb026dd165ca614313aa4747af97537d3ce88a70780",
+      "current_author_claim_sha256": "744c871cca1d72b90540a350a32409664f9d73c1f57d697a6dbb3a16dda2781d",
+      "current_section_content_sha256": "a5b11e262a6f1d34c23e3e36295c1b0b509e61e0920b43827501f86591c0724f",
+      "current_author_record_sha256": "3b1b37a9df3457c975fc576cff6a87a766111473cdc8167e4dd99167b5705b47",
+      "prior_claim_text_sha256": "7c1b7fe4b11b5faa424e0fb026dd165ca614313aa4747af97537d3ce88a70780",
+      "prior_status": "verified_shared_upstream",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc-antibiotics",
+          "locator": "Take antibiotics exactly as prescribed",
+          "source_metadata_sha256": "d3897469b108d8c40b23b1f112e7c32de798866eb7ebdf78a0df342e61dee1f6"
+        },
+        {
+          "source_id": "sepsis-mayo-antibiotics",
+          "locator": "Antibiotic stewardship bullets",
+          "source_metadata_sha256": "e1709fd31131ade26411ffd065af79d272e3fa47a8cda0bd5754dd67ecfbd817"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "CDC and Mayo authored patient instructions support prescribed use/no leftover/other-person antibiotics. Mayo cites CDC do/dont; shared upstream retained, not independent trials.",
+      "prior_finding_ids": [
+        "S07"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "medications-4",
+      "section": "medications",
+      "current_claim_text_sha256": "e483ff839523d51d95f781e0ddeb1820b6f9d8839a2c6ce159c0d28e59a1ef44",
+      "current_author_claim_sha256": "12f5e05af4ac977596871aa16ceb24b7073752013c26fd1ae7288399a66116a0",
+      "current_section_content_sha256": "a5b11e262a6f1d34c23e3e36295c1b0b509e61e0920b43827501f86591c0724f",
+      "current_author_record_sha256": "3b1b37a9df3457c975fc576cff6a87a766111473cdc8167e4dd99167b5705b47",
+      "prior_claim_text_sha256": "e483ff839523d51d95f781e0ddeb1820b6f9d8839a2c6ce159c0d28e59a1ef44",
+      "prior_status": "partial_support",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc-antibiotics",
+          "locator": "Talk to provider about side effects",
+          "source_metadata_sha256": "d3897469b108d8c40b23b1f112e7c32de798866eb7ebdf78a0df342e61dee1f6"
+        },
+        {
+          "source_id": "sepsis-nhs-antibiotics-effects",
+          "locator": "Side effects",
+          "source_metadata_sha256": "fd7b9eba7171b10c687a3ba9a168e95c9dee3da39ff3236b18cc534d49f7551a"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Ordinary side effects/contact have CDC/NHS support. Antibiotic-associated bowel infection/severe diarrhoea explanation only CDC; NHS antibiotic-effects is not a second C.diff source.",
+      "prior_finding_ids": [
+        "S07"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "medications-5",
+      "section": "medications",
+      "current_claim_text_sha256": "3b9db64421afdd4542aede405d71240e30d58c37ce1fb3151af45bebc5d32c2c",
+      "current_author_claim_sha256": "525bc2499cc9ce205ebddf6079cfc39f982a63b0de721f48b3b3737dcecfebdc",
+      "current_section_content_sha256": "a5b11e262a6f1d34c23e3e36295c1b0b509e61e0920b43827501f86591c0724f",
+      "current_author_record_sha256": "3b1b37a9df3457c975fc576cff6a87a766111473cdc8167e4dd99167b5705b47",
+      "prior_claim_text_sha256": "3b9db64421afdd4542aede405d71240e30d58c37ce1fb3151af45bebc5d32c2c",
+      "prior_status": "supported_reviewer_binding_needed",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-mayo-anaphylaxis",
+          "locator": "Symptoms; When to see a doctor; Causes",
+          "source_metadata_sha256": "ca8478ca38bbdd04601481609c345698cc27bb3df2349360ef3b4f55983c7e88"
+        },
+        {
+          "source_id": "sepsis-nhs-anaphylaxis",
+          "locator": "Symptoms; Immediate action required; What to do if you have anaphylaxis; Causes",
+          "source_metadata_sha256": "f62df3e59c04810937aaad067e8019d1fdddd0b15c1e719401f2591eacbe86b8"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Immediate emergency action fixes prior waiting/reporting ambiguity. NHS antibiotic page and Mayo support airway signs; full fainting/medicine scope now supported by reviewer NHS Anaphylaxis, awaiting author binding. Alerting hospital staff is a practical immediate-help translation.",
+      "prior_finding_ids": [
+        "S07"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "diet-0",
+      "section": "diet",
+      "current_claim_text_sha256": "921d2190e7794f3cb865c6cbfefdedbf2176a8d852f4a2369f07bdeeeafb7354",
+      "current_author_claim_sha256": "f029279153af04eb652121b54f90e23dbde52efe354eb8fd9d72f7f32122c67f",
+      "current_section_content_sha256": "e18c5665400809bf485ce27a4dc85128fcef9c1c2ac6c4463459d5a0b6acbeb8",
+      "current_author_record_sha256": "60e2c56b817c0c57cc958ed653a59913a80f957228796cfd951cf8873c6e259e",
+      "prior_claim_text_sha256": "921d2190e7794f3cb865c6cbfefdedbf2176a8d852f4a2369f07bdeeeafb7354",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Treatment for sepsis",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Recovering from sepsis",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        },
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "First steps; Home recovery tips",
+          "source_metadata_sha256": "7aacca46b9075eb933fd8592791643d871137c4bb4cbbc34333807f8096ae3d5"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "diet-1",
+      "section": "diet",
+      "current_claim_text_sha256": "7d3206681f4801554482791013cf9e5b3d64646f0832a5a74d7ce46bcc0498ca",
+      "current_author_claim_sha256": "f42292bc6949d4ba38b30daa8608afa3d1900e7cd78aa4ce9a480ae73da54abb",
+      "current_section_content_sha256": "e18c5665400809bf485ce27a4dc85128fcef9c1c2ac6c4463459d5a0b6acbeb8",
+      "current_author_record_sha256": "60e2c56b817c0c57cc958ed653a59913a80f957228796cfd951cf8873c6e259e",
+      "prior_claim_text_sha256": "7d3206681f4801554482791013cf9e5b3d64646f0832a5a74d7ce46bcc0498ca",
+      "prior_status": "partial_support",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Recovering from sepsis",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        },
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "After you get home; Home recovery tips; Managing the effects",
+          "source_metadata_sha256": "7aacca46b9075eb933fd8592791643d871137c4bb4cbbc34333807f8096ae3d5"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Patient support; Post-hospital evaluation",
+          "source_metadata_sha256": "141b1821d01aeec24aecc6ed5e3caa4094cb989b8bbef390df8800f374528255"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Balanced eating/report symptoms supported. Small frequent meals NHS alone; SSC nutrition support is not another exact meal-frequency recommendation.",
+      "prior_finding_ids": [
+        "S08"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "diet-2",
+      "section": "diet",
+      "current_claim_text_sha256": "e64e6fb045dbcb20e44501525ef3d2a2bad998532038716a50f3384c6e084b5f",
+      "current_author_claim_sha256": "42e39df2b720f55765379eb44a033ed7621f2b4bc18105a25504ff53f8419a62",
+      "current_section_content_sha256": "e18c5665400809bf485ce27a4dc85128fcef9c1c2ac6c4463459d5a0b6acbeb8",
+      "current_author_record_sha256": "60e2c56b817c0c57cc958ed653a59913a80f957228796cfd951cf8873c6e259e",
+      "prior_claim_text_sha256": "e64e6fb045dbcb20e44501525ef3d2a2bad998532038716a50f3384c6e084b5f",
+      "prior_status": "verified_population_qualified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-niddk-ckd-diet",
+          "locator": "Liquids; Protein; How can I eat healthy with CKD?",
+          "source_metadata_sha256": "980e4c14d60b9edbb80b1b4c37448859779bc933e1eb73b4b0716fdbc646826c"
+        },
+        {
+          "source_id": "sepsis-nkf-ckd-diet",
+          "locator": "Nutrients to manage; Protein; Fluids",
+          "source_metadata_sha256": "326b7c78b63078bcf1a7d8357f0480b3693afd9a8b378dbc85a435f2c58f456c"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "NIDDK/NKF support individualized fluids/protein, no blanket restriction/high protein in adult CKD recovery; NKF excludes dialysis. No dose asserted. Make adult recovery context explicit so this is not read as acute sepsis/child/dialysis prescription.",
+      "prior_finding_ids": [
+        "S08"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "diet-3",
+      "section": "diet",
+      "current_claim_text_sha256": "162a950b212bcb3a15b0ded860ebb89a6383099749eed0c6b31fb42988e99f1f",
+      "current_author_claim_sha256": "07c25544102b97bc8ffe7eef1e2d1146bb3517c856e3f408d62d83a9b45807cc",
+      "current_section_content_sha256": "e18c5665400809bf485ce27a4dc85128fcef9c1c2ac6c4463459d5a0b6acbeb8",
+      "current_author_record_sha256": "60e2c56b817c0c57cc958ed653a59913a80f957228796cfd951cf8873c6e259e",
+      "prior_claim_text_sha256": "162a950b212bcb3a15b0ded860ebb89a6383099749eed0c6b31fb42988e99f1f",
+      "prior_status": "partial_support",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Medications; Supportive care",
+          "source_metadata_sha256": "470ac99e30eec1ec634e3391fb371418d2b4252ec597b60912b03afb95e24e0d"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Enteral nutrition",
+          "source_metadata_sha256": "141b1821d01aeec24aecc6ed5e3caa4094cb989b8bbef390df8800f374528255"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Food supportive, not replacing treatment, is valid synthesis. Acute enteral-route planning supported only by adult SSC; Mayo treatment lacks nutrition route evidence. Separate that treatment component and adult scope.",
+      "prior_finding_ids": [
+        "S08"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "daily_care-0",
+      "section": "daily_care",
+      "current_claim_text_sha256": "8699af1694a368e3941280b2b9424e38c065cd0a6b4d4ce239e1e47387c7d2ca",
+      "current_author_claim_sha256": "4b80ec52c16500850a4699542bc0f3e91a273951a4f8ee60056c711be22cf6e2",
+      "current_section_content_sha256": "e51a082e3bafc216bfcd9d190dd8eecd8fa91203342590479cb08f67af897918",
+      "current_author_record_sha256": "7a6eb2cb27c671b933f87e2c61aa035e8e7c57340dd8a20535c25ee54da7dae9",
+      "prior_claim_text_sha256": "8699af1694a368e3941280b2b9424e38c065cd0a6b4d4ce239e1e47387c7d2ca",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "First steps; Home recovery tips",
+          "source_metadata_sha256": "7aacca46b9075eb933fd8592791643d871137c4bb4cbbc34333807f8096ae3d5"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Recovering from sepsis",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "daily_care-1",
+      "section": "daily_care",
+      "current_claim_text_sha256": "efad30ca0976070f9f8c84e712ddd043c92337ac870220ea9f1dd248587e0120",
+      "current_author_claim_sha256": "a0bd3eb43d36ef7aa251cecd244a530b281bdefc94c115b93847940f9957d125",
+      "current_section_content_sha256": "e51a082e3bafc216bfcd9d190dd8eecd8fa91203342590479cb08f67af897918",
+      "current_author_record_sha256": "7a6eb2cb27c671b933f87e2c61aa035e8e7c57340dd8a20535c25ee54da7dae9",
+      "prior_claim_text_sha256": "efad30ca0976070f9f8c84e712ddd043c92337ac870220ea9f1dd248587e0120",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "First steps; Home recovery tips",
+          "source_metadata_sha256": "7aacca46b9075eb933fd8592791643d871137c4bb4cbbc34333807f8096ae3d5"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Recovering from sepsis",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "daily_care-2",
+      "section": "daily_care",
+      "current_claim_text_sha256": "4b97ba848644acb2c06ad9745714c484248b765d1158f2b5fdb55462b876e84c",
+      "current_author_claim_sha256": "ca9b2817e0be15a873e060bade24c774aa2fa890804c202811784d8f691c6b29",
+      "current_section_content_sha256": "e51a082e3bafc216bfcd9d190dd8eecd8fa91203342590479cb08f67af897918",
+      "current_author_record_sha256": "7a6eb2cb27c671b933f87e2c61aa035e8e7c57340dd8a20535c25ee54da7dae9",
+      "prior_claim_text_sha256": "4b97ba848644acb2c06ad9745714c484248b765d1158f2b5fdb55462b876e84c",
+      "prior_status": "single_origin_supported",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Medication reconciliation; Hospital discharge",
+          "source_metadata_sha256": "141b1821d01aeec24aecc6ed5e3caa4094cb989b8bbef390df8800f374528255"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Family list/appointment aid explicitly practical now. Medical reconciliation/follow-up planning supported by SSC only in current binding; practical wording does not upgrade clinical plan to dual support.",
+      "prior_finding_ids": [
+        "S09"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "daily_care-3",
+      "section": "daily_care",
+      "current_claim_text_sha256": "9299004db3651fc96f0edb1ce9d34a8a7b02413832fcafbad7cd06944ffcc854",
+      "current_author_claim_sha256": "ef023e78aae77b39710c4c16408194163720b71434c32924d6784a32898597a8",
+      "current_section_content_sha256": "e51a082e3bafc216bfcd9d190dd8eecd8fa91203342590479cb08f67af897918",
+      "current_author_record_sha256": "7a6eb2cb27c671b933f87e2c61aa035e8e7c57340dd8a20535c25ee54da7dae9",
+      "prior_claim_text_sha256": "9299004db3651fc96f0edb1ce9d34a8a7b02413832fcafbad7cd06944ffcc854",
+      "prior_status": "partial_support",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "After you get home; Managing the effects",
+          "source_metadata_sha256": "7aacca46b9075eb933fd8592791643d871137c4bb4cbbc34333807f8096ae3d5"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Post-sepsis syndrome; Recovering",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Both main sources support cognitive/psychological recovery and help-seeking. Nightmares specifically CDC and pediatric RCH, not current NHS text. RCH is not adult nightmare advice; split or obtain matching adult source.",
+      "prior_finding_ids": [
+        "S09"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "special_populations-0",
+      "section": "special_populations",
+      "current_claim_text_sha256": "44585d86090ab681b579629e99d6bd990ce2d3a52450a28ea16ce5f638f875a7",
+      "current_author_claim_sha256": "160601738f0b6e370a4398b04af8322a1e78f41f642624635194027c7cfde143",
+      "current_section_content_sha256": "d179b555d970df674d3685e7748ca2f9cfddbf2cfe666e789e838300f78e1b55",
+      "current_author_record_sha256": "179f27ffbbabc31224259634682dbf3bdaae2c0c63c1d582c0177e9c38865f13",
+      "prior_claim_text_sha256": "44585d86090ab681b579629e99d6bd990ce2d3a52450a28ea16ce5f638f875a7",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Who is at risk?",
+          "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Who is at risk?",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "special_populations-1",
+      "section": "special_populations",
+      "current_claim_text_sha256": "9716771f1911c05eb0b41c79fcac9c15d4f66bad22255647e1df571928968ac4",
+      "current_author_claim_sha256": "22b6dd3feaa76f6937f78fa7c219f792a4620766ce80c8d5b71ff113271ed3ab",
+      "current_section_content_sha256": "d179b555d970df674d3685e7748ca2f9cfddbf2cfe666e789e838300f78e1b55",
+      "current_author_record_sha256": "179f27ffbbabc31224259634682dbf3bdaae2c0c63c1d582c0177e9c38865f13",
+      "prior_claim_text_sha256": "cdb8000fbdd9a12507772c6db8f5ee3db5d2459b912ed0be7b93681d1c9e2a34",
+      "prior_status": "needs_revision",
+      "text_unchanged_from_prior": false,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-rch-child",
+          "locator": "Signs and symptoms; When to get help / Go to a hospital: baby under six months",
+          "source_metadata_sha256": "9b190845aa0e7e3da423073ef03cf85da2e871728583e9afd4609fc5bea02aae"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms in children; Immediate action required / child under 5",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        }
+      ],
+      "finding_ids": [
+        "S03"
+      ],
+      "status": "author_followup_confirms_age_specific_cross_reference_fixed",
+      "resolved": "特殊人群正文现在直接写出<6月喂养不正常/不醒来吃奶即去医院，前向引用不再继承旧的完全拒食限制。",
+      "source_scope": "RCH signs74-81/help148-149；NHS child symptoms23-33及help67-77支持儿童反应/喂养危险，但不是同一<6月规则第二源。",
+      "bilingual": "两种语言年龄、喂养触发、医院路径一致；action分类正确。",
+      "remaining": "无第二份独立同年龄路径，保留来源完整度限制和pending。",
+      "source_ids": [
+        "sepsis-rch-child",
+        "sepsis-nhs"
+      ],
+      "evidence_reopened_this_followup": true
+    },
+    {
+      "claim_id": "special_populations-2",
+      "section": "special_populations",
+      "current_claim_text_sha256": "dede522e7c1f659ce3861f2191ad2fad4c7e62e59dddb3083419c5192f39b10e",
+      "current_author_claim_sha256": "822e97ac01e62081be3ba5503fcdd4587bbacf10c3d71c99b073dc12f3b1bf9d",
+      "current_section_content_sha256": "d179b555d970df674d3685e7748ca2f9cfddbf2cfe666e789e838300f78e1b55",
+      "current_author_record_sha256": "179f27ffbbabc31224259634682dbf3bdaae2c0c63c1d582c0177e9c38865f13",
+      "prior_claim_text_sha256": "dede522e7c1f659ce3861f2191ad2fad4c7e62e59dddb3083419c5192f39b10e",
+      "prior_status": "partial_support",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms in adults; Noticing sepsis symptoms",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        },
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Symptoms and Signs",
+          "source_metadata_sha256": "113f4534cf15e497ff0e25c480c45f815ca4fc4a932f00b0a7e29ff95bdf8acb"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Older less-fever has NHS/MSD inflammatory-response context. Communication difficulty NHS only; companion baseline list is sensible editorial aid, not two sourced clinical instructions.",
+      "prior_finding_ids": [
+        "S03"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "special_populations-3",
+      "section": "special_populations",
+      "current_claim_text_sha256": "06a3e0b0ab97a49c99bdc0119eca3d73d64494c64a95c29c1e5c10f8a99a3230",
+      "current_author_claim_sha256": "ac651478d663ce43c149bcc37547fdb1c053d748cfab3a78b63a6ea63f6ff885",
+      "current_section_content_sha256": "d179b555d970df674d3685e7748ca2f9cfddbf2cfe666e789e838300f78e1b55",
+      "current_author_record_sha256": "179f27ffbbabc31224259634682dbf3bdaae2c0c63c1d582c0177e9c38865f13",
+      "prior_claim_text_sha256": "06a3e0b0ab97a49c99bdc0119eca3d73d64494c64a95c29c1e5c10f8a99a3230",
+      "prior_status": "verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc-chemo-infection",
+          "locator": "What to know; Signs and symptoms",
+          "source_metadata_sha256": "018b09ba0e4cb88e35d59e2ead676db896135fb9b938bde41fb1ae737200a7cb"
+        },
+        {
+          "source_id": "sepsis-acs-infections",
+          "locator": "Signs and symptoms; When to get help",
+          "source_metadata_sha256": "3b32f359b60be15d16b6444e808c5279f6dcf80c20772ee2aebe89304edd586e"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "CDC chemotherapy and ACS/ASCO independently require immediate contact for stated infection signs in cancer-treatment/low-white-count context. No new temperature cutoff; ACS shock definition excluded.",
+      "prior_finding_ids": [
+        "S10"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "special_populations-4",
+      "section": "special_populations",
+      "current_claim_text_sha256": "57e97060bcc3b38fa06f799a6271b7f73ec9aa275c21d95bf429907714360973",
+      "current_author_claim_sha256": "319afbc82cc8bc86c9a53a396639a45a4d256e66c3a77a4f43cca65a79fd9008",
+      "current_section_content_sha256": "d179b555d970df674d3685e7748ca2f9cfddbf2cfe666e789e838300f78e1b55",
+      "current_author_record_sha256": "179f27ffbbabc31224259634682dbf3bdaae2c0c63c1d582c0177e9c38865f13",
+      "prior_claim_text_sha256": "83fb559d17f1543a70a5d58c4b15187e78615fe3b7235147f06b077c84828969",
+      "prior_status": "needs_scope_revision",
+      "text_unchanged_from_prior": false,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-nhs-azathioprine",
+          "locator": "About azathioprine / Key facts: urgent advice if you get an infection",
+          "source_metadata_sha256": "2054d4b713f26ac6d14bbc7a2958bc6f493a618ff4a008ccb0d386ab296b4598"
+        },
+        {
+          "source_id": "sepsis-nhs-rheumatology-faq",
+          "locator": "Official indexed FAQ / What should I do if I become ill or have an infection while on my rheumatology medication? / Mild cold or cough; Fever or flu-like symptoms; Signs of infection",
+          "source_metadata_sha256": "aa10165a17b6e81db2b06be193bb046dd123d7ecf3fbd4424f83595d9123100d"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "When and where to get medical help / Immediate action required",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        }
+      ],
+      "finding_ids": [
+        "S10"
+      ],
+      "status": "author_followup_supports_drug_and_symptom_scope_correction",
+      "resolved": "从所有其他免疫抑制者一概立即联系，改为按具体药物/团队计划，并单列硫唑嘌呤感染的紧急咨询。风湿资料区分发热/流感样或局部感染征象立即求医，与轻微感冒咳嗽持续/加重才联系。危险呼吸/意识表现仍直接急救。",
+      "source_scope": "NHS Azathioprine Key facts32直接支持该药感染紧急建议。CHT FAQ官方索引的Mild cold/cough、Fever/flu-like、Signs of infection三个项目已重新读到；全文直连超时。NHS Sepsis help67-85支持一般危险急救。",
+      "bilingual": "azathioprine/硫唑嘌呤、感染紧急咨询、风湿疾病背景、三种症状条件及急救动作对应。未加入一律停免疫抑制药的指令。",
+      "remaining": "CHT和NHS药物页仍是同NHS编写组，不能称完整两源；CHT全文获取未确认。药物特异建议和治疗团队计划有优先适用范围，不外推成所有移植/免疫治疗统一路径。",
+      "source_ids": [
+        "sepsis-nhs-azathioprine",
+        "sepsis-nhs-rheumatology-faq",
+        "sepsis-nhs"
+      ],
+      "evidence_reopened_this_followup": true
+    },
+    {
+      "claim_id": "special_populations-5",
+      "section": "special_populations",
+      "current_claim_text_sha256": "032933f5ba1c4e3727fc0fae8fd8552ade0b25d448d73734de90625d06872ef7",
+      "current_author_claim_sha256": "1b347d67db180063e9d36b9d821ec2a07faaabd7810f88833e94da338fc0e2c7",
+      "current_section_content_sha256": "d179b555d970df674d3685e7748ca2f9cfddbf2cfe666e789e838300f78e1b55",
+      "current_author_record_sha256": "179f27ffbbabc31224259634682dbf3bdaae2c0c63c1d582c0177e9c38865f13",
+      "prior_claim_text_sha256": "032933f5ba1c4e3727fc0fae8fd8552ade0b25d448d73734de90625d06872ef7",
+      "prior_status": "partial_support",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-acog-postpartum",
+          "locator": "Postpartum Endometritis / Signs to watch for; Listen to your body",
+          "source_metadata_sha256": "ef48f35a496f6961bb7a8e625730ca4a1a8d39390da86111b56414cf49720137"
+        },
+        {
+          "source_id": "sepsis-cdc-maternal",
+          "locator": "Key points; Severe belly pain; Trouble breathing; Vaginal discharge",
+          "source_metadata_sha256": "0dc654b1f9605b6d24e9f531855f070fda2b6c8b63463532c9714c16a3f12d71"
+        },
+        {
+          "source_id": "sepsis-rcog-maternal",
+          "locator": "Summary",
+          "source_metadata_sha256": "f9699fd560e33dfd59c16bcbb24d6a48bc8fd72a6a9196cf74d7d968ae4a2c60"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Postpartum signs/contact supported by ACOG expert/AIM-CDC with shared maternal-safety context. Unreachable-team fallback ACOG only; pregnancy list principally AIM-CDC. RCOG summary supports vigilance, not exact list. Split pregnancy/postpartum subclaims.",
+      "prior_finding_ids": [
+        "S10"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "prognosis_followup-0",
+      "section": "prognosis_followup",
+      "current_claim_text_sha256": "2db971ee9002471b5b08d934969c4193d4deec680ead72cf9b717472cd0e1d0d",
+      "current_author_claim_sha256": "e27733452ed45a06c77bec55b156f969a12dd74387b3a62f30c36e42a56e3f61",
+      "current_section_content_sha256": "5aaf26859519cf6743f555b6658f0559209591663e3fbdd892aebbdca6bdcf73",
+      "current_author_record_sha256": "45716acbd3f16b2b064268b9eab19135e36a24ce450f18addc86fcd08b47f0ce",
+      "prior_claim_text_sha256": "2db971ee9002471b5b08d934969c4193d4deec680ead72cf9b717472cd0e1d0d",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Recovering from sepsis",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        },
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Long-term effects; Managing effects",
+          "source_metadata_sha256": "7aacca46b9075eb933fd8592791643d871137c4bb4cbbc34333807f8096ae3d5"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "prognosis_followup-1",
+      "section": "prognosis_followup",
+      "current_claim_text_sha256": "7edf6209d419ffdf19470f9aa27e94b8e9764d3768fb8e72c7050a8f697d8096",
+      "current_author_claim_sha256": "b4e1264431be4e68248a4e2db698c527a337c7713811c511bf514241261659e6",
+      "current_section_content_sha256": "5aaf26859519cf6743f555b6658f0559209591663e3fbdd892aebbdca6bdcf73",
+      "current_author_record_sha256": "45716acbd3f16b2b064268b9eab19135e36a24ce450f18addc86fcd08b47f0ce",
+      "prior_claim_text_sha256": "7edf6209d419ffdf19470f9aa27e94b8e9764d3768fb8e72c7050a8f697d8096",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Long-term effects; Managing effects",
+          "source_metadata_sha256": "7aacca46b9075eb933fd8592791643d871137c4bb4cbbc34333807f8096ae3d5"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Complications; Repeat infections",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "prognosis_followup-2",
+      "section": "prognosis_followup",
+      "current_claim_text_sha256": "b6532dae53a83730708dbc08e2541874ccffb41d0d7277849ccac828e85c4e39",
+      "current_author_claim_sha256": "4e3337adacbe0e52b3f8937655f8d1141c266d8c1c04fd96bb1d79bf228e0239",
+      "current_section_content_sha256": "5aaf26859519cf6743f555b6658f0559209591663e3fbdd892aebbdca6bdcf73",
+      "current_author_record_sha256": "45716acbd3f16b2b064268b9eab19135e36a24ce450f18addc86fcd08b47f0ce",
+      "prior_claim_text_sha256": "b6532dae53a83730708dbc08e2541874ccffb41d0d7277849ccac828e85c4e39",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Getting sepsis again",
+          "source_metadata_sha256": "7aacca46b9075eb933fd8592791643d871137c4bb4cbbc34333807f8096ae3d5"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Complications; Repeat infections",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "complications-0",
+      "section": "complications",
+      "current_claim_text_sha256": "05d86ceca54fc024273b27d855efd655049de1b72ee8e18ba80f19acbfc5c4f3",
+      "current_author_claim_sha256": "eb9464424e8aa69b7658d1075eb1d34245c30b3f04cb2b239ec2a1ff809db79f",
+      "current_section_content_sha256": "b695f7980f3f9e4651ec383d527f33a9f0edc78afd0f56a46cb2c55dcae14592",
+      "current_author_record_sha256": "32c855455acc3e4fa1ac58db5c17fd1b6e8e3215438f552794da8ba6a545668e",
+      "prior_claim_text_sha256": "05d86ceca54fc024273b27d855efd655049de1b72ee8e18ba80f19acbfc5c4f3",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Overview",
+          "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Symptoms; Causes; Complications",
+          "source_metadata_sha256": "7402cf19d2586cad0f26b37e35365f2103ea582642c76c479185756254baaee9"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "complications-1",
+      "section": "complications",
+      "current_claim_text_sha256": "f5ec91b37fdaadcf3b82ae49afa32def6efe74cb8f293797dfb36b7680a3938c",
+      "current_author_claim_sha256": "385dd95afcff932ca89eff977f7a1ca812b42187d7a04a2a41d2995e2b23f4ed",
+      "current_section_content_sha256": "b695f7980f3f9e4651ec383d527f33a9f0edc78afd0f56a46cb2c55dcae14592",
+      "current_author_record_sha256": "32c855455acc3e4fa1ac58db5c17fd1b6e8e3215438f552794da8ba6a545668e",
+      "prior_claim_text_sha256": "f5ec91b37fdaadcf3b82ae49afa32def6efe74cb8f293797dfb36b7680a3938c",
+      "prior_status": "verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "risk",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Supportive care",
+          "source_metadata_sha256": "470ac99e30eec1ec634e3391fb371418d2b4252ec597b60912b03afb95e24e0d"
+        },
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Long-term effects",
+          "source_metadata_sha256": "7aacca46b9075eb933fd8592791643d871137c4bb4cbbc34333807f8096ae3d5"
+        },
+        {
+          "source_id": "sepsis-rch-child",
+          "locator": "What is sepsis?; Follow up",
+          "source_metadata_sha256": "9b190845aa0e7e3da423073ef03cf85da2e871728583e9afd4609fc5bea02aae"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Mayo oxygen/dialysis, RCH organs/supportive care, CDC/RCH long-term problems support simplified paragraph; pediatric and general populations recorded separately.",
+      "prior_finding_ids": [
+        "S11"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "complications-2",
+      "section": "complications",
+      "current_claim_text_sha256": "37f2d6cffa045a6a5b677074a2f68aab03c0a33130211283d653d870d007c247",
+      "current_author_claim_sha256": "895f0933ca6b6fd8d9d5d58f5808910656461b9c9869091066a18b610de2e16f",
+      "current_section_content_sha256": "b695f7980f3f9e4651ec383d527f33a9f0edc78afd0f56a46cb2c55dcae14592",
+      "current_author_record_sha256": "32c855455acc3e4fa1ac58db5c17fd1b6e8e3215438f552794da8ba6a545668e",
+      "prior_claim_text_sha256": "37f2d6cffa045a6a5b677074a2f68aab03c0a33130211283d653d870d007c247",
+      "prior_status": "verified_shared_upstream",
+      "text_unchanged_from_prior": true,
+      "current_kind": "risk",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Complications",
+          "source_metadata_sha256": "7402cf19d2586cad0f26b37e35365f2103ea582642c76c479185756254baaee9"
+        },
+        {
+          "source_id": "sepsis-msd-shock",
+          "locator": "Distributive shock / septic shock microvascular obstruction",
+          "source_metadata_sha256": "d632e8a27af4f4011efbeba1861e0f671a9b4766c0707828fb11966a7b2c7217"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Mayo Complications/MSD shock microvascular section support clotting/tissue damage. Mayo cites MSD sepsis upstream; no incidence or independent-trial claim.",
+      "prior_finding_ids": [
+        "S11"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "complications-3",
+      "section": "complications",
+      "current_claim_text_sha256": "4ecb501dc438887bd735aa199d340eefea57c2d5180ef5031bcdcaf190745cff",
+      "current_author_claim_sha256": "c9cdde3ea1ce43d97f1b16b1a02672e6175df6cd026fdf52ffd87da80031b2bf",
+      "current_section_content_sha256": "b695f7980f3f9e4651ec383d527f33a9f0edc78afd0f56a46cb2c55dcae14592",
+      "current_author_record_sha256": "32c855455acc3e4fa1ac58db5c17fd1b6e8e3215438f552794da8ba6a545668e",
+      "prior_claim_text_sha256": "4ecb501dc438887bd735aa199d340eefea57c2d5180ef5031bcdcaf190745cff",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Post-sepsis syndrome; Repeat infections",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        },
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Long-term effects; Getting sepsis again",
+          "source_metadata_sha256": "7aacca46b9075eb933fd8592791643d871137c4bb4cbbc34333807f8096ae3d5"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "prevention-0",
+      "section": "prevention",
+      "current_claim_text_sha256": "8762ede3dc9dbf71598af8919cd1817ef0e78adb14a5820f6f761b773a199996",
+      "current_author_claim_sha256": "d86d1e3e31d647ff4d408bcde73636bee5f11b94c2f0d0385535dac1623b1e4c",
+      "current_section_content_sha256": "577c1915589ae0897c081027cbadad21bc184cbe05cf31256b2d8413d117cb3d",
+      "current_author_record_sha256": "31abe9a6c7a8e8e81e388e325eaff254db682df0995fc1af1a9ac9758eaeddfa",
+      "prior_claim_text_sha256": "8762ede3dc9dbf71598af8919cd1817ef0e78adb14a5820f6f761b773a199996",
+      "prior_status": "inherited_verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "explanation",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Prevention",
+          "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d"
+        },
+        {
+          "source_id": "sepsis-cdc-prevention",
+          "locator": "Prevention strategies; People with cancer",
+          "source_metadata_sha256": "1b2018770d8c157d130bd503cf5ff49022fcb974e35806472dfc32131dbd3ddd"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status.",
+      "prior_finding_ids": [],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "prevention-1",
+      "section": "prevention",
+      "current_claim_text_sha256": "306c6a4013bdcd007bfa36a8ce2e8ee051fd27f03f454e0c9dc9af8f7959604a",
+      "current_author_claim_sha256": "b3abf72820bc8a296e2b66c4e74eb11b887f76e65a92763e2889b6ae3d3c468b",
+      "current_section_content_sha256": "577c1915589ae0897c081027cbadad21bc184cbe05cf31256b2d8413d117cb3d",
+      "current_author_record_sha256": "31abe9a6c7a8e8e81e388e325eaff254db682df0995fc1af1a9ac9758eaeddfa",
+      "prior_claim_text_sha256": "306c6a4013bdcd007bfa36a8ce2e8ee051fd27f03f454e0c9dc9af8f7959604a",
+      "prior_status": "verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Prevention",
+          "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d"
+        },
+        {
+          "source_id": "sepsis-cdc-prevention",
+          "locator": "Prevent infections; Practice good hygiene",
+          "source_metadata_sha256": "1b2018770d8c157d130bd503cf5ff49022fcb974e35806472dfc32131dbd3ddd"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "WHO local vaccination/CDC reduction of some infections support appropriate limit; no universal protection claimed.",
+      "prior_finding_ids": [
+        "S12"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "prevention-2",
+      "section": "prevention",
+      "current_claim_text_sha256": "27effc41aabeb42cea9c6a5049d460f06c48450c40e56a11e294700c9b2a098a",
+      "current_author_claim_sha256": "2dfcc6eedeef511dd69dc8a0d8ef161d26fed2a84484661fa475a09388d82be2",
+      "current_section_content_sha256": "577c1915589ae0897c081027cbadad21bc184cbe05cf31256b2d8413d117cb3d",
+      "current_author_record_sha256": "31abe9a6c7a8e8e81e388e325eaff254db682df0995fc1af1a9ac9758eaeddfa",
+      "prior_claim_text_sha256": "27effc41aabeb42cea9c6a5049d460f06c48450c40e56a11e294700c9b2a098a",
+      "prior_status": "partial_support",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc-prevention",
+          "locator": "Prevent infections; Practice good hygiene",
+          "source_metadata_sha256": "1b2018770d8c157d130bd503cf5ff49022fcb974e35806472dfc32131dbd3ddd"
+        },
+        {
+          "source_id": "sepsis-nhs-cuts",
+          "locator": "How to treat; How to clean and dress a cut or graze",
+          "source_metadata_sha256": "39b7a9fdfbe52126161d78fc6848906ce72338b2c014b620345f289e3aed51a3"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Minor-wound clean/cover supported by CDC/NHS. Chronic-condition management explicit CDC only; RCH advice pediatric, not bound. NHS cuts does not support chronic diabetes/kidney care.",
+      "prior_finding_ids": [
+        "S12"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "prevention-3",
+      "section": "prevention",
+      "current_claim_text_sha256": "7f313254cfe42362b4234ac80be0020c3d0b43edad69f48ffc67a85844fca4ec",
+      "current_author_claim_sha256": "26cb5b5d3f92546e217fad996102bb3cf4a1f059796483c39b81358671f29a7e",
+      "current_section_content_sha256": "577c1915589ae0897c081027cbadad21bc184cbe05cf31256b2d8413d117cb3d",
+      "current_author_record_sha256": "31abe9a6c7a8e8e81e388e325eaff254db682df0995fc1af1a9ac9758eaeddfa",
+      "prior_claim_text_sha256": "7f313254cfe42362b4234ac80be0020c3d0b43edad69f48ffc67a85844fca4ec",
+      "prior_status": "partial_support",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-nhs-catheter",
+          "locator": "Opening; Preventing infections; When to get medical advice",
+          "source_metadata_sha256": "a8135d6d51e8f8f65130e5f28c45d2236f44b8b170491c7be7c326d3005bddec"
+        },
+        {
+          "source_id": "sepsis-cdc-catheter",
+          "locator": "Reducing risk / Patients",
+          "source_metadata_sha256": "75a95c1fe6ca4d028d169739cd600d3760867a5ffb4569dd567fc53068b8bb53"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "Hands/bag level/no kinks dual NHS/CDC. Prompt infection/obstruction contact NHS only; CDC treatment not a home escalation deadline.",
+      "prior_finding_ids": [
+        "S12"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    },
+    {
+      "claim_id": "prevention-4",
+      "section": "prevention",
+      "current_claim_text_sha256": "2fd0cdbb3bb4188784dc5699bf55cf83461b5bdbf49831d92552876efd18ee80",
+      "current_author_claim_sha256": "3ca0545135597c111e86d01ae90e19ed96b685f1ceb2c0d0fee67233b3e9dd57",
+      "current_section_content_sha256": "577c1915589ae0897c081027cbadad21bc184cbe05cf31256b2d8413d117cb3d",
+      "current_author_record_sha256": "31abe9a6c7a8e8e81e388e325eaff254db682df0995fc1af1a9ac9758eaeddfa",
+      "prior_claim_text_sha256": "2fd0cdbb3bb4188784dc5699bf55cf83461b5bdbf49831d92552876efd18ee80",
+      "prior_status": "verified",
+      "text_unchanged_from_prior": true,
+      "current_kind": "action",
+      "current_bound_source_refs": [
+        {
+          "source_id": "sepsis-cdc-prevention",
+          "locator": "Know sepsis signs; Act fast",
+          "source_metadata_sha256": "1b2018770d8c157d130bd503cf5ff49022fcb974e35806472dfc32131dbd3ddd"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms; When and where to get medical help",
+          "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f"
+        }
+      ],
+      "status": "inherited_prior_conclusion_no_new_review",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_assessment": "CDC immediate help for worsening/non-improving infection and NHS awareness/breathing emergency path support action. Caregiver awareness is practical use.",
+      "prior_finding_ids": [
+        "S12"
+      ],
+      "evidence_reopened_this_followup": false,
+      "inheritance_limit": "Only unchanged bilingual medical text is inherited. Current metadata/bindings are recorded, but their changes outside the two-section task do not close any prior unresolved finding. No fresh judgement or status upgrade."
+    }
+  ],
+  "unchanged_old_findings": [
+    {
+      "id": "S01",
+      "status": "resolved",
+      "assessment": "病原体与传染性已拆开，RCH成为传染性主张的独立支持。",
+      "inheritance": "Prior result retained only; no fresh rereview or automatic closure from author metadata edits."
+    },
+    {
+      "id": "S02",
+      "status": "partially_resolved",
+      "assessment": "近期手术背景可由MSD病因段补正定位；就诊准备清单各子步骤仍有单源，不能把整段标完整双源。",
+      "inheritance": "Prior result retained only; no fresh rereview or automatic closure from author metadata edits."
+    },
+    {
+      "id": "S04",
+      "status": "partially_resolved",
+      "assessment": "检查选择及同步救治已获支持。详细连续观察仍一个MSD编写体系；血培养的培养过程定义须精确来源；不能用儿童FAQ独自支持全部成人诊断条件。",
+      "inheritance": "Prior result retained only; no fresh rereview or automatic closure from author metadata edits."
+    },
+    {
+      "id": "S05",
+      "status": "partially_resolved",
+      "assessment": "已增加实际相似问题与线索，脱水解释通过；心脏鉴别和重新评估抗感染药仍单源。复核新读NHS严重过敏页支持晕厥和非抗生素药物，需补到作者绑定。",
+      "inheritance": "Prior result retained only; no fresh rereview or automatic closure from author metadata edits."
+    },
+    {
+      "id": "S06",
+      "status": "resolved",
+      "assessment": "导尿管感染源处理有CDC与MSD具体材料；脓肿/坏死组织处理有对应支持，共同研究依据另记。",
+      "inheritance": "Prior result retained only; no fresh rereview or automatic closure from author metadata edits."
+    },
+    {
+      "id": "S07",
+      "status": "partially_resolved",
+      "assessment": "药后气道问题立即急救已修；完整晕厥/一般药物范围需加入审核实际阅读的NHS严重过敏页。成人经验性抗真菌建议和抗生素相关肠道感染解释仍有单源子句；不能让较旧MSD经验性抗真菌宽泛句冒充同意SSC2026。",
+      "inheritance": "Prior result retained only; no fresh rereview or automatic closure from author metadata edits."
+    },
+    {
+      "id": "S08",
+      "status": "partially_resolved",
+      "assessment": "成人慢性肾病恢复期饮食已有NIDDK/NKF对应支持，须显明对象；少量多餐及急性期营养途径仍各有单源子句。",
+      "inheritance": "Prior result retained only; no fresh rereview or automatic closure from author metadata edits."
+    },
+    {
+      "id": "S09",
+      "status": "partially_resolved",
+      "assessment": "家属药单/预约协助明确为实用安排，修复原呈现问题；医疗出院规划只有SSC，成人噩梦报告建议未被现有NHS逐项支持。",
+      "inheritance": "Prior result retained only; no fresh rereview or automatic closure from author metadata edits."
+    },
+    {
+      "id": "S11",
+      "status": "resolved_with_shared_upstream",
+      "assessment": "器官支持与凝血损伤已有对应材料；Mayo引用MSD相关文献，属于独立编写交叉核对但并非两组独立研究。",
+      "inheritance": "Prior result retained only; no fresh rereview or automatic closure from author metadata edits."
+    },
+    {
+      "id": "S12",
+      "status": "partially_resolved",
+      "assessment": "疫苗、伤口、基础导尿管护理获支持；慢病一般管理和居家感染/引流异常联系动作仍有单源子句。",
+      "inheritance": "Prior result retained only; no fresh rereview or automatic closure from author metadata edits."
+    }
+  ],
+  "current_unresolved_questions_snapshot": [
+    {
+      "section": "summary",
+      "questions": [
+        "Independent reviewer must reopen these original sources and check the full bilingual scope of each claim; author reading is not independent cross-verification."
+      ]
+    },
+    {
+      "section": "causes_risks",
+      "questions": [
+        "Independent reviewer must recheck revised bilingual claims and original sources; author revision is not cross-verification or medical signoff.",
+        "S02 binding corrected to MSD Etiology (postoperative infection) and risk-factor paragraphs, read directly; independent reviewer must decide complete support for the unchanged clinical-background statement. No quantified surgical risk added."
+      ]
+    },
+    {
+      "section": "red_flags",
+      "questions": [
+        "Independent reviewer must recheck revised bilingual claims and original sources; author revision is not cross-verification or medical signoff.",
+        "S03 targeted revision: RCH under-six-month hospital advice and NHS under-five emergency advice are stated separately. The exact age thresholds are not independently duplicated; red_flags-4 vomiting/hydration wording is a practical synthesis, not a sepsis diagnostic threshold. Independent acceptance remains pending."
+      ]
+    },
+    {
+      "section": "care",
+      "questions": [
+        "Independent reviewer must recheck revised bilingual claims and original sources; author revision is not cross-verification or medical signoff.",
+        "S02 care-1: bringing medicines/allergy history each has a precise source but not two independent sources for the whole checklist."
+      ]
+    },
+    {
+      "section": "diagnosis",
+      "questions": [
+        "Independent reviewer must recheck revised bilingual claims and original sources; author revision is not cross-verification or medical signoff."
+      ]
+    },
+    {
+      "section": "differentials",
+      "questions": [
+        "Independent reviewer must recheck revised bilingual claims and original sources; author revision is not cross-verification or medical signoff.",
+        "S05 differentials-3: two MSD pages are one group; MI/ECG/cardiac marker distinction needs another independently authored source.",
+        "S05 differentials-4: alternative-cause antimicrobial re-evaluation has one direct guideline support.",
+        "S05 differentials-2: NHS Anaphylaxis full page is now bound for medicine/allergen exposure, fainting and emergency action alongside Mayo; independent acceptance of the new binding is pending."
+      ]
+    },
+    {
+      "section": "treatment",
+      "questions": [
+        "Independent reviewer must recheck revised bilingual claims and original sources; author revision is not cross-verification or medical signoff."
+      ]
+    },
+    {
+      "section": "medications",
+      "questions": [
+        "Independent reviewer must recheck revised bilingual claims and original sources; author revision is not cross-verification or medical signoff.",
+        "S07 medications-2: selective empirical antifungals are adult SSC2026; no second directly matching material yet, MSD broader language not used as corroboration.",
+        "S07 medications-4: severe-diarrhoea intestinal-infection implication directly CDC only.",
+        "S07 medications-5: NHS Anaphylaxis full page is now bound alongside Mayo for the unchanged emergency action; hospital notification is operational wording. Independent acceptance is pending."
+      ]
+    },
+    {
+      "section": "diet",
+      "questions": [
+        "Independent reviewer must recheck revised bilingual claims and original sources; author revision is not cross-verification or medical signoff.",
+        "S08 diet-1: smaller frequent meals remains direct NHS single-group advice; CDC does not support meal frequency.",
+        "S08 diet-3: nutrition-route detail supported by SSC adult guideline only; no pediatric extrapolation intended."
+      ]
+    },
+    {
+      "section": "daily_care",
+      "questions": [
+        "Independent reviewer must recheck revised bilingual claims and original sources; author revision is not cross-verification or medical signoff.",
+        "S09 daily_care-2: family record keeping explicitly practical editorial suggestion; shared discharge planning has one SSC source, no claimed medical efficacy."
+      ]
+    },
+    {
+      "section": "special_populations",
+      "questions": [
+        "Independent reviewer must recheck revised bilingual claims and original sources; author revision is not cross-verification or medical signoff.",
+        "S03 special_populations-2: older absent fever and complete dementia/baseline-care instruction lack two complete supports.",
+        "S10 special_populations-4: generalized immunosuppression advice narrowed to named azathioprine and rheumatology symptom-specific rules. These remain one NHS editorial group; FAQ evidence is official indexed text, not confirmed full-page retrieval. A second independent regimen-appropriate source is still missing.",
+        "S10 special_populations-5: ACOG direct page failed, official indexed body read. Full pregnancy-specific dual support remains incomplete; AIM/ACOG maternal safety context overlaps.",
+        "S03 special_populations-1: the corrected under-six-month hospital action is RCH-specific, with NHS supporting pediatric danger signs but not the identical age threshold."
+      ]
+    },
+    {
+      "section": "prognosis_followup",
+      "questions": [
+        "Independent reviewer must reopen these original sources and check the full bilingual scope of each claim; author reading is not independent cross-verification."
+      ]
+    },
+    {
+      "section": "complications",
+      "questions": [
+        "Independent reviewer must recheck revised bilingual claims and original sources; author revision is not cross-verification or medical signoff."
+      ]
+    },
+    {
+      "section": "prevention",
+      "questions": [
+        "Independent reviewer must recheck revised bilingual claims and original sources; author revision is not cross-verification or medical signoff.",
+        "S12 prevention-2: chronic-condition prevention action directly CDC only; risk-factor list not second prevention source.",
+        "S12 prevention-3: catheter contact triggers directly NHS; CDC supports hygiene/bag/kink rather than all triggers."
+      ]
+    }
+  ],
+  "mece_and_coverage": {
+    "coding": [],
+    "upgrade": false,
+    "note": "Parent sepsis description does not establish complete pathogen or subtype coverage."
+  },
+  "validation": {
+    "expected_current_hash_matched_before_review": true,
+    "all_current_claims_mapped": true,
+    "all_section_hashes_bound": true,
+    "all_source_metadata_hashes_bound": true,
+    "all_author_records_pending": true,
+    "only_new_report_written": true,
+    "old_report_preserved": true
+  },
+  "release_recommendation": "Maintain pending status and prior unresolved gaps. The two scoped corrections are supported in this author followup; independent medical-content acceptance still requires a separate eligible reviewer.",
+  "license_handling": "Short locators and original judgements only; no full source text or media stored."
+}

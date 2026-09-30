@@ -1,24 +1,24 @@
 {
-  "reviewed_at": "2026-09-29",
+  "reviewed_at": "2026-09-30",
   "decision": "95_percent_target_not_passed",
-  "measured": null,
+  "measured": 0.00015203344735841885,
   "target": 0.95,
   "classification": "ICD-11 MMS",
   "release": "2026-01",
-  "denominator": null,
-  "snapshot_status": "not_acquired",
-  "mapping_status": "not_completed",
+  "denominator": 13155,
+  "snapshot_status": "frozen_verified_official_bytes",
+  "mapping_status": "2_confirmed_47_pending",
   "counts": {
-    "existing_topics": 72,
-    "condition_topics": 67,
+    "existing_topics": 74,
+    "condition_topics": 69,
     "symptom_topics": 5,
-    "title_only_backlog": 198,
+    "title_only_backlog": 196,
     "topics_with_coding": 0,
-    "confirmed_category_mappings": 0,
+    "confirmed_category_mappings": 2,
     "clinically_reviewed_topics": 0,
-    "verified_sections": 0
+    "verified_sections": 28
   },
-  "scope": "审查现有正文、标题目录及已知急危重缺口；本轮不新增病种正文。",
+  "scope": "当前74篇正文、196标题与56地图单元；仅已完成语义映射及逐项证据核验的病症进入分子。",
   "method": "逐项核对现有主题身份，列出缺少独立正文的已知病种；mentioned_in_topics 仅按所列术语检索中英 sections.text 的结果，不表示对应主题完整覆盖该病种。",
   "known_urgent_gaps": [
     {
@@ -76,7 +76,7 @@
         "myocardial infarction",
         "heart attack"
       ],
-      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+      "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
     },
     {
       "names": {
@@ -128,7 +128,7 @@
         "肺栓塞",
         "pulmonary embolism"
       ],
-      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+      "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
     },
     {
       "names": {
@@ -156,7 +156,7 @@
         "脓毒症",
         "sepsis"
       ],
-      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+      "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
     },
     {
       "names": {
@@ -180,7 +180,7 @@
         "脑膜炎",
         "meningitis"
       ],
-      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+      "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
     },
     {
       "names": {
@@ -197,7 +197,7 @@
         "主动脉夹层",
         "aortic dissection"
       ],
-      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+      "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
     },
     {
       "names": {
@@ -214,7 +214,7 @@
         "糖尿病酮症酸中毒",
         "diabetic ketoacidosis"
       ],
-      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+      "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
     },
     {
       "names": {
@@ -232,7 +232,7 @@
         "视网膜剥离",
         "retinal detachment"
       ],
-      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+      "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
     },
     {
       "names": {
@@ -240,16 +240,16 @@
         "en": "Testicular torsion"
       },
       "priority": "P1",
-      "dedicated_topic_ids": [],
-      "backlog_ids": [
-        "planned-150"
+      "dedicated_topic_ids": [
+        "testicular-torsion"
       ],
+      "backlog_ids": [],
       "mentioned_in_topics": [],
       "matching_terms": [
         "睾丸扭转",
         "testicular torsion"
       ],
-      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+      "conclusion": "独立正文已通过逐项编辑核验，仅GB01.0计完整覆盖；无执业医生签审。"
     },
     {
       "names": {
@@ -267,7 +267,7 @@
         "postpartum haemorrhage",
         "postpartum hemorrhage"
       ],
-      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+      "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
     },
     {
       "names": {
@@ -284,10 +284,10 @@
         "一氧化碳中毒",
         "carbon monoxide poisoning"
       ],
-      "conclusion": "缺少独立正文；其他主题中的提及不计为完整病种覆盖。"
+      "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
     }
   ],
-  "remaining_list_status": "等待完整目录及纳入规则冻结后生成全量剩余类别清单；当前10项为已知优先缺口。",
+  "remaining_list_status": "全量剩余13,153类别已保存于reports/icd-remaining-gaps.json.gz；九项已知急危重缺口仍未发布。",
   "roadmap": "docs/coverage-audit-and-roadmap.md",
   "sources": [
     "https://icd.who.int/docs/icd-api/SupportedClassifications/",

@@ -239,3 +239,80 @@
 本次新增21条实际阅读来源记录，共28条来源链接到当前视网膜正文；不同网页可同属一家编写机构，不能相加为独立研究。读取受限时明确记录官方索引文本，未写成全文直连成功。网页未给具体日期时保持null；Mayo诊疗页显示2024-09-27已实际复核，CUH为2965版本8（2026-04-21），Leeds术后页为2026-01-27，MSD只给2026年6月。
 
 当前正文canonical哈希：`8ec0d2376c5377d40ca7d749b47d5fae293c7f58929e0395b2ab45725a2325a8`。14节、65条双语主张、11条明确待补问题、0条空支持映射；全部作者记录pending，medical_reviewed=false。新增/修订文本通过结构、引用ID、精确双语摘录、来源元数据哈希与正文哈希检查。空支持已补齐不等于每条已满足双源条件。
+
+## 睾丸扭转定向补源与作者修订（2026-09-30，待独立复核）
+
+本检查点替代上文“作者不再修改”的旧交接状态，仅按根角色新授权修改睾丸扭转及其作者记录。其他5篇正文、其他主题来源/编辑记录和独立审查报告均未修改。
+
+- 旧独立报告绑定 `66e5bee4…8707`；修订前正文已经包含T05三项修复，哈希 `bcfe2892cc1235cd8d41ec1fefe68b7a471e6334771c14241c0af46b59544cd7`。56个 `section-N` 主张按当前段落逐字核对，保留原ID，无顺序移位。改变文字的10条为：`red_flags-3`, `red_flags-4`, `care-3`, `medications-2`, `medications-3`, `diet-2`, `diet-3`, `special_populations-2`, `prevention-2`, `prevention-4`。
+- T01/T03间歇性扭转：新增Nemours专业审订患教，直接支持自行缓解也需联系/评估及固定讨论。AUA课程p5官方索引直接支持典型病史而查体/超声正常时可考虑择期双侧固定。紧急初诊与评估后的择期安排分开；EAU手法解扭后仍手术不再拿来冒充自行缓解证据。AUA原PDF403，真实记录索引阅读，版本日期不猜。
+- T03双侧结构/T04超声：AUA p2直接有单侧或双侧结构倾向，与Mayo对应；AUA p5与EAU§8.2对应间歇性正常影像，未加入双侧频率。T04迟到仍评估保持RCH+EAU§8.3.3正确定位。
+- T02术前最后进食/麻醉告知：RCoA第7版（2026年6月）和GOSH 1025PAT0030（2025-10-13）实际阅读具体清单。GOSH是青少年心导管麻醉，只用于共同麻醉安全告知，不外推心脏病补液、禁食小时数或择期程序。急诊仍用RCH/Nemours路径，不等在家禁食够小时才就医。
+- T02儿童药物：RCH Emergency+Pharmacy 2025年10月患教与FDA对乙酰氨基酚药物安全段，具体到本品儿童年龄/体重标签与不猜剂量，配APSA术后本人的出院处方。未增加剂量计算、用药间隔或观察48小时规则。照抄他人处方的禁止仍标为个体药签要求的实用安全解释，待独立裁定。
+- T03术后饮食：APSA精确原文是持续恶心或无法吃喝；已补入恶心。RCH日间手术资料直接支持持续呕吐联系，适用含儿童固定术；直连失败，实际读取官方索引并记录2025年5月复核/待例行复核。MercyOne与Whittington实际读到一般术后不能留住液体/不能饮水联系，不能伪称第二份儿童扭转专门资料。儿童无法饮水的严格第二直接支持仍保留。
+- T03/T04隐私与陪检：Nemours和NHS Essex医师署名资料分别支持难为情导致延误及告诉可信任成人；CUH Chaperoning与GMC§7–12、16–22支持解释检查/受训陪检。GMC是英国专业规则，不表述成全球法律权利；正文采用询问医院安排。
+- T03单睾丸护具：CUH扭转术后材料和COG当前v6 Health Link p3明确仅余一侧时的护杯/运动支撑防撞。COG为癌症幸存者，2023版权，2026/05只是网页文件路径；仅迁移共同机械防护，不迁移化放疗生育结论。护具不保证防自发扭转属于机制/证据范围解释，不声称防扭转试验效果。
+- T05之前已修三处中英对象歧义保留；T06各院洗浴/活动差异及不同萎缩概率不合并为统一阈值。中国/WHO病种专门路径未补齐，不将国际并列字段宣称成所有地区已核验。
+
+本次新增13条来源（含AUA/RCH实际官方索引读取）；Nemours转载不另计来源，RCH多页一个编写组，RCoA联合署名一个产品。阅读过但未用于正文的资料不加进来源计数。正文当前canonical哈希：`40e27690a23c16c138973bb336febac8e32c8dd760ef78cb5c4346480e8ac117`。14节、56条双语段落主张仍全部pending，medical_reviewed=false；剩余5条范围/证据问题写在red_flags、medications、diet、prevention作者记录，未自行关闭独立审核。
+
+验证：正文1篇与20条引用来源均通过JSON Schema；将草稿仅在内存合并到现有库，`validate(mode="preview")`通过（74篇、352来源、无warnings；其中既有14个verified_sections来自已发布内容，并非本篇升级）。本篇14节哈希、56组中英主张与正文、83项来源元数据哈希全部一致。86条既有来源和其他70条主题编辑记录与HEAD逐字结构一致；仅追加13条新来源。默认diff空白检查将CRLF识别为尾随空白；核实HEAD原本为CRLF且text属性unset后，保留原行尾避免全文件格式变化，使用临时`core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol`执行本次4文件diff检查，通过。未修改Git配置，正文canonical哈希不变。
+
+## 2026-09-30 咳嗽作者定向修订（待独立复核）
+
+睾丸扭转正文及20条来源/14条作者记录保持根角色冻结版本。本轮只修改咳嗽：独立报告C01–C07对应44条旧主张，red_flags-3拆成新red_flags-3（急救出血）与red_flags-4（少量血丝/其他紧急咨询），其余编号不移位，现45条。
+
+- C01/C02：实际重读NHS和Mayo咯血、补读Healthdirect咯血/气短。超过少量血丝、持续出血或伴气短胸背痛的急救分支独立展示；少量血丝仍及时评估。very unwell对应整体感觉病得很重。few-spots、单独上背痛/心跳条件仍保留NHS精确单源问题，未把泛急救材料当同句支持。
+- C03/C07：就诊准备按ALA、Mayo及RCH的history逐项定位，记录清单是编辑组织，不是已验证诊断工具。正常活动受限不再错误地引用NHS留家建议作为短期咳嗽医疗阈值，保留Mayo持续咳嗽妨碍睡眠/上学/工作的就诊条件。3周就诊与3–4周自然病程分清；ADAM更早10–14日、Healthdirect4周的建议分别记录，不写成一致规则。
+- C03/C04：Mayo补ACE抑制剂、因病治疗/慢性咳嗽；NHLBI补哮喘敏感机制与吸入药抗炎/扩张角色。NICE急性URTI/支气管炎限制不套慢性咳嗽；RCH仅支持儿童经验性激素边界，未冒充完整成人规则的第二材料。
+- C04/C05：CDC+NHS不足3个月且38℃的立即联系/紧急咨询条件对应；有呼吸/反应危险再升级急救，不仅凭体温就呼叫救护车。FDA+新加坡HSA按成分/剂型分别核对，年龄门槛不合并。NHS+Royal Women’s Hospital 2024年5月PDF支持孕期用药前咨询，不移植具体用药/剂量或未读哺乳期建议。
+- C05/C06：NHS抗生素风险专页补皮疹/罕见严重过敏/腹泻；药效主张改benefit、并发影响改risk。Mayo补睡眠、疲劳、漏尿和呕吐；肌肉酸痛与Healthdirect胸背痛不是同词，细节仍待裁定。
+- C04/C07：CUH Nutrition and Dietetics 101159 v3（2024-07-25）与NIDDK成人反流资料定位食物和晚餐建议；正文限定成人、自身诱因，不用于所有咳嗽或儿童统一食谱。NICE蜂蜜证据主要短期症状获益，RCH强调证据有限，不声称缩短病程；幼儿烫饮禁止仍保留NHS单源。
+- 护理清洁加湿器绑CDC、ADAM和ALA实际原段。Healthdirect分别支持卫生/空气/疫苗与患病留家，其引用NHS/RCH的共同上游已说明。机构不同不等于独立实验。
+
+追加15条实际阅读来源。NICE现行编号推荐/证据通过官方索引实读，章节与PDF直连403，未假称下载成功。Mayo打印页无日期、NHS儿童发热视频日期不代表正文、HSA迁移日期不等于新临床复核，记录真实边界。没有保存受限来源全文、表格或媒体；正文独立改写。
+
+稳定正文canonical SHA256：`40be0e71c42ed9c727158e2b2919ee38b217cb6fbe60954fb0063e6fd386ea45`。14节全部pending、medical_reviewed=false，12条细分证据/适用范围问题保留，等待独立复核；不改变范围覆盖或签审状态。
+
+咳嗽验证：正文1篇/关联25来源通过JSON Schema；14节哈希、45组双语正文绑定、92项来源元数据哈希一致；内存合并验证通过（74篇/356来源，无warnings）。首次数值检查发现diet-2中文重复1岁而英文第二次用younger babies指代，语义条件一致；改用数值集合核查并显式核对该唯一指代，45条数值条件通过，没有为通过检查改写正文。四文件保持原CRLF，CRLF-aware diff检查通过；其他4篇与56条非咳嗽/扭转编辑记录等于HEAD，睾丸扭转冻结正文哈希保持。
+
+## 2026-09-30 睾丸扭转限定补正与稳定交接
+
+按根角色定向复核追加授权，仅更改medications-3/4的中英正文、diet-3支持记录、两份Mayo日期和对应绑定。修订前canonical为40e27690a23c16c138973bb336febac8e32c8dd760ef78cb5c4346480e8ac117；旧独立报告仍属于旧快照，不自动覆盖新正文。咳嗽保持40be0e71…ea45。
+
+- medications-3：重新实读[FDA](https://www.fda.gov/consumers/consumer-updates/dont-overuse-acetaminophen)开头安全段、Acetaminophen Is in Many Products、Rely on Health Care Experts，及[RCH儿童止痛药](https://www.rch.org.au/kidsinfo/fact_sheets/Pain_relief_for_children_-_Paracetamol_and_Ibuprofen/)的How much to give、Medicine safety。新增对乙酰氨基酚过量和重复含药产品可使总量超标、损伤肝脏；没有引入成人最大量、儿童剂量或观察48小时规则。
+- medications-4：重新实读[EAU §8.3.1–8.3.2](https://uroweb.org/guidelines/paediatric-urology/chapter/acute-scrotum)与[RCH Investigations/Treatment](https://www.rch.org.au/clinicalguide/guideline_index/Acute_scrotal_pain_or_swelling/)。改为医生结合检查和病情判断细菌感染时考虑抗生素，非细菌病因另有处理，止痛不能推迟疑似扭转急诊。EAU明确青春期前患儿多为非细菌/自限；RCH治疗表面向疑似附睾睾丸炎并按病情分层。记录这种范围差异，正文不要求等培养阳性才治疗，也不把所有炎症写成抗感染用药；独立裁定仍pending。
+- diet-3：实际打开[CUH Tonsillectomy](https://www.cuh.nhs.uk/patient-information/tonsillectomy/)4011 v11，批准2026-06-24。定位After the operation的清醒/团队同意饮水，以及联系方式末第4项儿童未饮任何液体应联系病房/GP。与APSA扭转专页配对，仅迁移共同儿童术后饮水/联系原则，不迁移扁桃体食谱、吞咽规则、饮料颜色、出血量、禁食小时或本院联系窗口。CUH两页仍算同一UK-CUH编写组。旧“缺第二儿童联系材料”的问题已有具体资料和范围解释，改为独立复核的scope inference，未自授通过。diet-3的主张类型由explanation纠正为action，文字未变。
+- 重新打开Mayo症状/病因和诊断/治疗页，页面署名末均明确2022-02-24。仅更正该2源publication_date及本篇相关support版本/元数据哈希；其余原来源对象保持原值，新增CUH来源1条，现21源。70条其他主题作者记录逐对象相等，咳嗽正文及记录不变。
+
+验证实际通过：1篇正文及21来源JSON Schema；14节正文哈希、56组双语及数字值、84项来源元数据哈希一致；编辑审计14条均pending、无结构问题。仅内存合并模型验证74篇/353来源，warnings为空。仍有4条编辑推论/范围问题待独立裁定：不在家手法解扭、不用他人处方推算、补品不替代随访、COG护具共同机械保护范围。未更改临床签审或覆盖数；模型内既有14节核验属于已发布OSA。
+
+稳定正文canonical SHA256：839049d9c130074400ec644fa4c7af8efd66dcc0ed654e7b3b37268f4115fa5e。
+文件SHA256（保留CRLF）：d042936cb407500e6c0ac7c385bf8cb402439999edccc7964ccd049f60e52dc1。
+本轮四文件CRLF-aware diff检查通过；无Git提交、推送或部署。作者从此停止修改，交根角色对这三处及日期定向独立复核。
+
+## 2026-09-30 咳嗽 CR01 最小英文条件修复
+
+实际读取 reports/batch-01-cough-recheck.json 的 CR01 与 prevention-2 定位，并重开 NHS Cough 的 How you can treat a cough yourself 第3项（https://www.nhs.uk/symptoms/cough/，所读行24）。原文将发热、身体不适到无法正常活动列为两个并列条件。仅将英文改为：Reduce contact with others when you have a fever or feel too unwell to do your usual activities. 中文及45条主张数量保留；匹配 claim.text.en 和章节哈希同步，其他正文、来源、支持记录、审核状态及12条证据问题不变。无重复全量医学审阅。
+
+结构校验和内存模型预览通过，warnings为空；逐对象断言确认仅该一句及其绑定变化。睾丸扭转和整个作者来源文件修订前后字节完全相等。验证摘要：
+
+```json
+{
+  "canonical_sha256": "8dfb06274423db8d7eea1d5b8964dc4180f83285221bd9004989533b247a320a",
+  "file_sha256": "f78413b3b8a6bd88d46b7a029a1b1cf4e2c5005362624e809390dc918c08177b",
+  "prevention_section_sha256": "4fb17a7db8bd6688ef401417e1b27f311f6ebb4d126110f604b14ddc35a08782",
+  "merged_preview_model_sha256": "7e43fbf1ea78b57e9a7f9b0f4f535c442d9eb32f511f9992f492b3efc41020a7",
+  "cough_editorial_records_sha256": "58b4525c4d8567bf3635d2a50e278c20b3e19718b02ba71a2f5dd5c75ce80d5f",
+  "torsion_file_sha256_before_and_after": "d042936cb407500e6c0ac7c385bf8cb402439999edccc7964ccd049f60e52dc1",
+  "sources_file_sha256_unchanged": "a4140ceb6309d8d7d66f9305d05bcd1726f5fa62a092542bc95bc2031c026bd1",
+  "claims": 45,
+  "status": "14 pending; medical_reviewed false",
+  "preview_conditions": 75,
+  "preview_sources": 377,
+  "warnings": [],
+  "changes": "one English sentence, matching claim.text.en and prevention section hash only"
+}
+```
+
+模型哈希指将当前已发布数据与咳嗽草稿及其引用来源仅在内存合并后的 canonical_hash；不表示落库或发布。未调用Git或部署。停止改写，交独立角色确认CR01。

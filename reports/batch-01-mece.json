@@ -3,7 +3,7 @@
   "checked_at": "2026-09-30",
   "base_commit": "cc3e88b1414c1ede8737c9d78d40c3ca53b64f25",
   "icd_release": "2026-01",
-  "decision_scope": "规范主题与既有正文的关系裁定；睡眠呼吸暂停7A41已完成语义审核与逐项编辑核验，其余ICD类别为待裁定候选。",
+  "decision_scope": "20规范主题关系裁定；7A41睡眠呼吸暂停和GB01.0睾丸扭转完成逐项编辑核验与独立语义审核，其余候选保持待裁定。",
   "topics": [
     {
       "canonical_id": "myocardial-infarction",
@@ -38,7 +38,11 @@
         }
       ],
       "publication_status": "not_published",
-      "qualified_coverage": false
+      "qualified_coverage": false,
+      "editorial_reviews": [
+        "reports/batch-01-mi-independent.json",
+        "reports/batch-01-mi-review-challenge.json"
+      ]
     },
     {
       "canonical_id": "pulmonary-embolism",
@@ -114,7 +118,13 @@
         }
       ],
       "publication_status": "not_published",
-      "qualified_coverage": false
+      "qualified_coverage": false,
+      "editorial_reviews": [
+        "reports/batch-01-sepsis-independent.json",
+        "reports/batch-01-sepsis-recheck.json",
+        "reports/batch-01-sepsis-final-followup.json"
+      ],
+      "latest_followup_scope": "Author-only four-claim correction check; independent qualification remains unresolved."
     },
     {
       "canonical_id": "meningitis",
@@ -149,7 +159,11 @@
         }
       ],
       "publication_status": "not_published",
-      "qualified_coverage": false
+      "qualified_coverage": false,
+      "editorial_reviews": [
+        "reports/batch-01-meningitis-independent.json",
+        "reports/batch-01-meningitis-recheck.json"
+      ]
     },
     {
       "canonical_id": "aortic-dissection",
@@ -243,11 +257,13 @@
           "title": "- - - Torsion of testis",
           "uri": "http://id.who.int/icd/release/11/mms/2141360941",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "confirmed_semantic_scope_review"
         }
       ],
-      "publication_status": "not_published",
-      "qualified_coverage": false
+      "publication_status": "validated_candidate_not_yet_live",
+      "qualified_coverage": true,
+      "editorial_review": "reports/batch-01-torsion-recheck.json",
+      "content_sha256": "5f2b018be6230757e44febade498119e390d4eda0b44dd701e85a6426c8b416a"
     },
     {
       "canonical_id": "postpartum-hemorrhage",
@@ -400,7 +416,11 @@
         }
       ],
       "publication_status": "not_published",
-      "qualified_coverage": false
+      "qualified_coverage": false,
+      "editorial_reviews": [
+        "reports/batch-01-masld-recheck.json",
+        "reports/batch-01-masld-binding-followup.json"
+      ]
     },
     {
       "canonical_id": "endometriosis",
@@ -538,7 +558,22 @@
         }
       ],
       "publication_status": "not_published",
-      "qualified_coverage": false
+      "qualified_coverage": false,
+      "editorial_reviews": [
+        "reports/batch-01-cough-independent.json",
+        "reports/batch-01-cough-recheck.json"
+      ],
+      "post_review_fix": {
+        "finding": "CR01",
+        "author_canonical_sha256": "8dfb06274423db8d7eea1d5b8964dc4180f83285221bd9004989533b247a320a",
+        "review_report": "reports/batch-01-cough-recheck.json",
+        "review_report_sha256": "99df57d5dd18fd30abddac27390beaee1167dc5b787d213b119b8b54b9e858a8",
+        "claim": "prevention-2",
+        "status": "wording_corrected_evidence_gaps_remain",
+        "independent_targeted_check": "Root reread NHS Cough self-care line24: fever OR unable normal activities. Current English and Chinese preserve the two independent conditions.",
+        "source_url": "https://www.nhs.uk/symptoms/cough/",
+        "claim_sha256": "3542b2a8be642f183be846cc2bc527e608b1a7cad5789f98a1b2fc7336431b4b"
+      }
     },
     {
       "canonical_id": "abdominal-pain",
@@ -589,9 +624,10 @@
           "mapping_status": "confirmed_semantic_scope_review"
         }
       ],
-      "publication_status": "validated_candidate_not_yet_live",
+      "publication_status": "published_and_publicly_verified",
       "qualified_coverage": true,
-      "editorial_review": "reports/batch-01-osa-independent.json"
+      "editorial_review": "reports/batch-01-osa-independent.json",
+      "publication_evidence": "reports/batch-01-osa-release-validation.json"
     }
   ],
   "topic_count": 20,

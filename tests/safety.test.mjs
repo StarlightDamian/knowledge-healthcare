@@ -13,7 +13,8 @@ const positives=[
  ['高温 意识混乱','heat-confusion'],['heat and confusion','heat-confusion'],['hot environment collapse','heat-confusion'],
  ['大量出血 晕厥','major-bleeding'],['heavy bleeding will not stop','major-bleeding'],['vomiting blood and fainting','major-bleeding'],
  ['2个月婴儿发烧','newborn-fever-text'],['newborn fever','newborn-fever-text'],['1 month old fever','newborn-fever-text'],
- ['产后 剧烈头痛','pregnancy-neurologic'],['pregnant severe headache','pregnancy-neurologic'],['postpartum vision changes','pregnancy-neurologic']];
+ ['产后 剧烈头痛','pregnancy-neurologic'],['pregnant severe headache','pregnancy-neurologic'],['postpartum vision changes','pregnancy-neurologic'],
+ ['突然睾丸疼痛','acute-scrotal-pain'],['阴囊剧烈疼痛','acute-scrotal-pain'],['sudden testicle pain','acute-scrotal-pain'],['severe scrotal pain','acute-scrotal-pain']];
 const negatives=['没有胸痛，只有咳嗽','no chest pain, only cough','没有呼吸困难','no difficulty breathing','without tongue swelling','否认喉咙肿胀','普通感冒','轻微鼻塞','PMOS','skin itching','cheating confusion','no slurred speech','没有发烧','no fever','dry eyes','no chest pain and no sweating'];
 for(const [q,id] of positives)test('alert/'+q,()=>assert.ok(evaluateSafety(q,rules).alerts.some(r=>r.id===id)));
 for(const q of negatives)test('no-phrase-match/'+q,()=>{const r=evaluateSafety(q,rules);assert.equal(r.alerts.length,0);assert.equal(r.assurance,false);});
@@ -25,3 +26,5 @@ test('NaN never qualifies',()=>assert.equal(evaluateSafety('',rules,{ageMonths:N
 test('normal young infant temperature does not trigger fever threshold',()=>assert.equal(evaluateSafety('',rules,{ageMonths:2,temperatureC:37}).alerts.length,0));
 test('empty query is not a clinical all-clear',()=>assert.equal(evaluateSafety('',rules).assurance,false));
 test('rules honestly disclose draft state',()=>assert.equal(evaluateSafety('',rules).clinicalValidation,'draft'));
+for(const q of ['没有睾丸疼痛，突然头晕','no testicular pain but sudden dizziness','sudden shoulder pain','mild testicle pain'])
+  test('scrotal alert requires non-negated organ and severity/'+q,()=>assert.ok(!evaluateSafety(q,rules).alerts.some(r=>r.id==='acute-scrotal-pain')));

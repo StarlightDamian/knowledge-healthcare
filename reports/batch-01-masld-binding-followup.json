@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "batch01-masld-binding-followup-2026-09-30",
+  "reviewer": "/root",
+  "reviewed_at": "2026-09-30",
+  "medical_reviewed": false,
+  "target": {
+    "path": "drafts/batch-01/demand/masld.json",
+    "canonical_sha256": "dff08711ecfcb62c0f0e03e8784165bddb09a9addc2d1933604472fa265ec1a4",
+    "content_sha256": "c45460da87698d0c8cf0338899ee5719d892d624dcda32dd5855bc8d94379884"
+  },
+  "prior_review": "reports/batch-01-masld-recheck.json",
+  "scope": "Only two restored bindings and common label authorship; no repeat full-body review.",
+  "verdict": "needs_revision",
+  "complete_cross_checked_body": false,
+  "coverage_increment": 0,
+  "source_reads": [
+    {
+      "source_id": "masld-niddk-causes",
+      "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash/symptoms-causes",
+      "access_status": "original_page_opened",
+      "locator": "Alcohol-associated liver disease; Other causes (lines149-162)",
+      "support": "Alcohol and medicines supported; current page does not list hepatitis C."
+    },
+    {
+      "source_id": "masld-niddk-facts",
+      "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash/definition-facts",
+      "access_status": "original_page_opened",
+      "locator": "What are the complications of NAFLD? (lines147-162)",
+      "support": "Variable liver outcomes and extrahepatic risks."
+    },
+    {
+      "source_id": "masld-easl-2024",
+      "url": "https://easlcampus.eu/sites/default/files/2024-06/EASL_CPGs_on_MASLD.pdf",
+      "access_status": "original_pdf_opened",
+      "locator": "Table4 printedp4; natural history and cardiometabolic outcomes printedpp4-7",
+      "support": "HCV genotype3 is separately classified; progression differs and extrahepatic risks require attention."
+    },
+    {
+      "source_id": "masld-ema-resmetirom-label",
+      "url": "https://www.ema.europa.eu/en/documents/product-information/rezdiffra-epar-product-information_en.pdf",
+      "access_status": "original_pdf_opened",
+      "locator": "SmPC section7 printedp15; patient leaflet",
+      "support": "Madrigal EU holder. Same sponsor origin as US label; not an independent clinical replication."
+    },
+    {
+      "source_id": "masld-resmetirom-us-label-2026",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e67ea09f-a840-439c-86c8-f98585f978b2",
+      "access_status": "original_page_opened",
+      "locator": "Manufactured for and distributed by; copyright2026",
+      "support": "Madrigal US sponsor. DailyMed hosting does not change authorship."
+    }
+  ],
+  "findings": [
+    {
+      "id": "MR01-differentials-binding",
+      "status": "binding_restored_partial_scope",
+      "claim_id": "differentials-1",
+      "assessment": "Restored locator is valid for alcohol/medicine clauses, but viral-hepatitis wording is not independently covered by current NIDDK page. Root corrected inaccurate claim-support assessment; bilingual body unchanged. Specific gap remains."
+    },
+    {
+      "id": "MR01-complications-binding",
+      "status": "resolved",
+      "claim_id": "complications-0",
+      "assessment": "Both restored locators directly support this introductory statement; no full-section status upgrade."
+    },
+    {
+      "id": "MR02-label-authorship",
+      "status": "resolved",
+      "source_ids": [
+        "masld-ema-resmetirom-label",
+        "masld-resmetirom-us-label-2026"
+      ],
+      "assessment": "Metadata and record supports now use one Madrigal group. FDA/EMA-authored summaries remain distinct writers with shared sponsor trials disclosed."
+    }
+  ],
+  "preserved_conditions": [
+    "All14 author records pending; no clinical signoff.",
+    "Single-origin Wegovy MASH pregnancy and other unresolved medication/action clauses remain.",
+    "Other MASLD recheck findings are unchanged; no exact new pass total inferred from three targeted checks."
+  ],
+  "source_metadata_sha256": {
+    "masld-niddk-causes": "c215fb64144265a28f2440006db2478f4c0d00c6f136777299398a3923791b2b",
+    "masld-niddk-facts": "2546964366672e9ae85e9694d5446a932fe584ec05f57c789ebc0004ab5c2411",
+    "masld-easl-2024": "ad7f26375ffdb330bf66fe93068fed8058524aec8571a72afc38304937cbf131",
+    "masld-ema-resmetirom-label": "ac2cf3f47c8075e9a3674f22b9aa89679d1d3eca7b472efee42f226e03561550",
+    "masld-resmetirom-us-label-2026": "9a0395581767cc10e1162b403ffb31bf8448f61fecca0ca5d70e942a5120b9e4"
+  },
+  "record_snapshot_sha256": "0863e64bacb3d9eb2ec92156624c4fe847aca52e409bf31a9e656e3840142762",
+  "license": "Original editorial paraphrase and short locators only; no source full text redistributed."
+}

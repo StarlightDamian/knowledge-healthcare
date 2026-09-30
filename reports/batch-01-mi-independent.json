@@ -1,0 +1,1153 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "batch01-mi-independent-2026-09-30",
+  "reviewer": "/root",
+  "author": "/root/emergency_content",
+  "reviewed_at": "2026-09-30",
+  "medical_reviewed": false,
+  "target": {
+    "path": "drafts/batch-01/emergency/myocardial-infarction.json",
+    "canonical_sha256": "4a35256c21090af048581dd5877347da99039fe7b6031c663af79672304c4d09",
+    "content_sha256": "bd7d21aeaa6fc2b4c5fdc549422759701643a6a4b009caea00896c6b299e17d3"
+  },
+  "verdict": "needs_revision",
+  "scope": {
+    "sections": 14,
+    "bilingual_paragraph_claims": 42,
+    "author_files_modified": false
+  },
+  "decision_counts": {
+    "verified": 25,
+    "partial_support": 17
+  },
+  "original_sources_read": [
+    {
+      "source_id": "mi-mayo-causes",
+      "url": "https://www.mayoclinic.org/diseases-conditions/heart-attack/symptoms-causes/syc-20373106",
+      "source_metadata_sha256": "a84db049c24b946ef3295fccc3f19c01f97984f71203db437ba53fc53b1d8a6d",
+      "independence_group": "US-MAYO",
+      "access_status": "original_relevant_sections_read",
+      "method": "web original-page open and targeted heading reads",
+      "observed_version": "2026-03-27",
+      "locator": "Actual matching heading(s) in author supports; no full references/paywalled source read claimed."
+    },
+    {
+      "source_id": "mi-mayo-treatment",
+      "url": "https://www.mayoclinic.org/diseases-conditions/heart-attack/diagnosis-treatment/drc-20373112",
+      "source_metadata_sha256": "4ff64462121fc8083ebd8125abd3c14529bdc9b17cc84479eba4266f649a0104",
+      "independence_group": "US-MAYO",
+      "access_status": "original_relevant_sections_read",
+      "method": "web original-page open and targeted heading reads",
+      "observed_version": "2026-03-27",
+      "locator": "Actual matching heading(s) in author supports; no full references/paywalled source read claimed."
+    },
+    {
+      "source_id": "mi-nhlbi-causes",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/causes",
+      "source_metadata_sha256": "56f2af4885d3831614b9fd190a4040b3961f6c69b190c58e1020c8b3a613c6a0",
+      "independence_group": "US-NIH",
+      "access_status": "original_relevant_sections_read",
+      "method": "web original-page open and targeted heading reads",
+      "observed_version": "2022-03-24",
+      "locator": "Actual matching heading(s) in author supports; no full references/paywalled source read claimed."
+    },
+    {
+      "source_id": "mi-nhlbi-diagnosis",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/diagnosis",
+      "source_metadata_sha256": "dcaa95ebd85e9ccd29a07da659de3f75ba05d2346a95c84d31f14993aedbb218",
+      "independence_group": "US-NIH",
+      "access_status": "original_relevant_sections_read",
+      "method": "web original-page open and targeted heading reads",
+      "observed_version": "2022-03-24",
+      "locator": "Actual matching heading(s) in author supports; no full references/paywalled source read claimed."
+    },
+    {
+      "source_id": "mi-nhlbi-food",
+      "url": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods",
+      "source_metadata_sha256": "9affc9c47ebdea67303a365dd1f6951e6fe7febec210a691eb7a60858b7715ae",
+      "independence_group": "US-NIH",
+      "access_status": "original_relevant_sections_read",
+      "method": "web original-page open and targeted heading reads; additionally direct HTTP with standard-library HTML text parser",
+      "observed_version": "2025-12-10",
+      "locator": "Actual matching heading(s) in author supports; no full references/paywalled source read claimed."
+    },
+    {
+      "source_id": "mi-nhlbi-overview",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack",
+      "source_metadata_sha256": "24e859633401d452c1706521c85a0cf19aa9ee96846ccaff9b2afc612120a510",
+      "independence_group": "US-NIH",
+      "access_status": "original_relevant_sections_read",
+      "method": "web original-page open and targeted heading reads",
+      "observed_version": "2022-03-24",
+      "locator": "Actual matching heading(s) in author supports; no full references/paywalled source read claimed."
+    },
+    {
+      "source_id": "mi-nhlbi-recovery",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/recovery",
+      "source_metadata_sha256": "8ea461c39ce5e54c9993e38df22148bce0075a6a5ac74b5cf6185f1bda5d9328",
+      "independence_group": "US-NIH",
+      "access_status": "original_relevant_sections_read",
+      "method": "web original-page open and targeted heading reads",
+      "observed_version": "2022-03-24",
+      "locator": "Actual matching heading(s) in author supports; no full references/paywalled source read claimed."
+    },
+    {
+      "source_id": "mi-nhlbi-symptoms",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/symptoms",
+      "source_metadata_sha256": "32c83f98e06abcffd5352f0c23e076353ecfcb7020ce8e5618ee449a23e6a472",
+      "independence_group": "US-NIH",
+      "access_status": "original_relevant_sections_read",
+      "method": "web original-page open and targeted heading reads",
+      "observed_version": "2022-03-24",
+      "locator": "Actual matching heading(s) in author supports; no full references/paywalled source read claimed."
+    },
+    {
+      "source_id": "mi-nhlbi-treatment",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/treatment",
+      "source_metadata_sha256": "b5b20a2b502102054072f7be349262c530f3bd716d5704a4d4e4d452210a7990",
+      "independence_group": "US-NIH",
+      "access_status": "original_relevant_sections_read",
+      "method": "web original-page open and targeted heading reads",
+      "observed_version": "2022-03-24",
+      "locator": "Actual matching heading(s) in author supports; no full references/paywalled source read claimed."
+    },
+    {
+      "source_id": "mi-nhlbi-women",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/women",
+      "source_metadata_sha256": "d61eefa2408e4f3b85448216bac86cf8f0ab04a75856e42ad9173c3497aa7f49",
+      "independence_group": "US-NIH",
+      "access_status": "original_relevant_sections_read",
+      "method": "web original-page open and targeted heading reads",
+      "observed_version": "2022-03-24",
+      "locator": "Actual matching heading(s) in author supports; no full references/paywalled source read claimed."
+    },
+    {
+      "source_id": "mi-nhs",
+      "url": "https://www.nhs.uk/conditions/heart-attack/",
+      "source_metadata_sha256": "f2fc20110ddc3f50946197bc6822eec853bb6d8a5f269cccea134308875afa68",
+      "independence_group": "UK-NHS",
+      "access_status": "original_relevant_sections_read",
+      "method": "web original-page open and targeted heading reads; additionally direct HTTP with standard-library HTML text parser",
+      "observed_version": "2026-03-31",
+      "locator": "Actual matching heading(s) in author supports; no full references/paywalled source read claimed."
+    },
+    {
+      "source_id": "mi-nhs-chest",
+      "url": "https://www.nhs.uk/symptoms/chest-pain/",
+      "source_metadata_sha256": "e2b1e440ee8cb3cf59ffc89e32a719a2a93b0c43ae1bc5f053b9eace5ae019c3",
+      "independence_group": "UK-NHS",
+      "access_status": "original_relevant_sections_read",
+      "method": "web original-page open and targeted heading reads; additionally direct HTTP with standard-library HTML text parser",
+      "observed_version": "2023-08-08; review due2026-08-08",
+      "locator": "Actual matching heading(s) in author supports; no full references/paywalled source read claimed."
+    },
+    {
+      "source_id": "mi-nhs-clopidogrel",
+      "url": "https://www.nhs.uk/medicines/clopidogrel/side-effects-of-clopidogrel/",
+      "source_metadata_sha256": "bf2a7129073332824e596e17a62412c1b765aaaa1d67486c3fcc1854400df85d",
+      "independence_group": "UK-NHS",
+      "access_status": "original_relevant_sections_read",
+      "method": "web original-page open and targeted heading reads; additionally direct HTTP with standard-library HTML text parser",
+      "observed_version": "2025-03-12",
+      "locator": "Actual matching heading(s) in author supports; no full references/paywalled source read claimed."
+    }
+  ],
+  "additional_reads": [
+    {
+      "url": "https://professional.heart.org/en/science-news/2025-guideline-for-the-management-of-patients-with-acute-coronary-syndromes/top-things-to-know",
+      "access_status": "official_page_opened",
+      "version": "2025-02-27",
+      "locator": "items1-4,6,9",
+      "scope": "ACS antiplatelets/lipids/revascularization and follow-up; not independent of joint guideline."
+    },
+    {
+      "url": "https://professional.heart.org/en/science-news/patient-resources/key-patient-messages-2025-acute-coronary-syndromes-guideline",
+      "access_status": "official_page_opened",
+      "version": "2025-02-27",
+      "locator": "items3,4,6,7,10",
+      "scope": "Patient context/medication roles/rehab. STEMI-total and NSTEMI-partial graphic is simplified; not accepted as universal anatomical equivalence."
+    },
+    {
+      "url": "https://www.heart.org/en/health-topics/heart-attack/treatment-of-a-heart-attack/aspirin-and-heart-disease",
+      "access_status": "official_search_index_body_read",
+      "version": "2025-02-28",
+      "locator": "Should you take aspirin; Know the risks; Should I take aspirin during a heart attack",
+      "scope": "AHA independent written advice; not a second AHA group."
+    },
+    {
+      "url": "https://www.fda.gov/drugs/safe-use-aspirin/using-aspirin-lower-your-risk-heart-attack-or-stroke-what-you-should-know",
+      "access_status": "official_search_index_body_read",
+      "version": null,
+      "locator": "Introduction; Not without risks",
+      "scope": "FDA daily-aspirin discussion/bleeding and interactions; not a second current clinical guideline."
+    }
+  ],
+  "access_limits": [
+    "Direct Mayo HTTP returned403; web relevant original headings were accessible.",
+    "JACC2025 direct open403; indexed section4.1 oxygen recommendation was readable, not the full guideline."
+  ],
+  "sections": [
+    {
+      "id": "summary",
+      "section_sha256": "1fb9d77067c1cbe98c3aa1d145606ddb8299ee48ac495eb2cc5e309dfbe96364",
+      "claims": [
+        {
+          "id": "summary-0",
+          "bilingual_claim_sha256": "dac53c3335d396598f10251dc1c5ac52a44cc1fb05bea50859ba228ccc3b220c",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-overview",
+              "locator": "What is a heart attack?",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Myocardial infarction is injury and death of heart muscle from inadequate blood flow and needs immediate hospital treatment."
+            },
+            {
+              "source_id": "mi-nhs",
+              "locator": "Introduction; Heart attack is different to cardiac arrest",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Myocardial infarction is injury and death of heart muscle from inadequate blood flow and needs immediate hospital treatment."
+            }
+          ]
+        },
+        {
+          "id": "summary-1",
+          "bilingual_claim_sha256": "369da8a4ebea912cd20e3196189e35050b2f13b64d716508924ac72e0fea023c",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-overview",
+              "locator": "What is a heart attack?",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: The coronary arteries feed the heart itself. Interrupted flow can impair pumping and cause chest pressure, breathlessness, nausea or cold sweat."
+            },
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Symptoms; When to see a doctor",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: The coronary arteries feed the heart itself. Interrupted flow can impair pumping and cause chest pressure, breathlessness, nausea or cold sweat."
+            }
+          ]
+        },
+        {
+          "id": "summary-2",
+          "bilingual_claim_sha256": "fa1bef1be91c603d6dc95dbf532c4a6c41f056549bb819f7247d95b47038e362",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-overview",
+              "locator": "What is a heart attack?",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: An infarction differs from cardiac arrest: one damages the blood supply, while the other causes sudden collapse and loss of response. Infarction can trigger arrest."
+            },
+            {
+              "source_id": "mi-nhs",
+              "locator": "Introduction; Heart attack is different to cardiac arrest",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: An infarction differs from cardiac arrest: one damages the blood supply, while the other causes sudden collapse and loss of response. Infarction can trigger arrest."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "causes_risks",
+      "section_sha256": "4a309319615b9076e96332b581df7b1800ded804f004c946911045522f21c941",
+      "claims": [
+        {
+          "id": "causes_risks-0",
+          "bilingual_claim_sha256": "bd90d09bf8fb375d6c02d153b41be1b63da1c11a2cea313168386a35f0e7dcab",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-causes",
+              "locator": "What causes a heart attack?; Other causes",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: A common mechanism is rupture of a coronary plaque, triggering clot formation that obstructs blood flow."
+            },
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Causes; Risk factors",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: A common mechanism is rupture of a coronary plaque, triggering clot formation that obstructs blood flow."
+            }
+          ]
+        },
+        {
+          "id": "causes_risks-1",
+          "bilingual_claim_sha256": "8421fd8a8e30c61ecfddf40184d165ce7c84aefc58c525aa76b8cf2d6f3b30ba",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-causes",
+              "locator": "Risk factors you can control; cannot control",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Smoking, hypertension, abnormal cholesterol and diabetes are modifiable risks; age and a close family history of early heart disease are unchangeable background risks."
+            },
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Causes; Risk factors",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Smoking, hypertension, abnormal cholesterol and diabetes are modifiable risks; age and a close family history of early heart disease are unchangeable background risks."
+            }
+          ]
+        },
+        {
+          "id": "causes_risks-2",
+          "bilingual_claim_sha256": "660ac1bba304c18a8ada7401605c2193bc02a77321f6ae5974e4f5afc5580c9f",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-causes",
+              "locator": "What causes a heart attack?; Other causes",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Less common mechanisms include severe coronary spasm or a tear in the artery wall. An attack can occur without traditional risks, including in younger people."
+            },
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Causes; Risk factors",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Less common mechanisms include severe coronary spasm or a tear in the artery wall. An attack can occur without traditional risks, including in younger people."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "red_flags",
+      "section_sha256": "2806232fa97f4038264efcca3ad6a9e9c450d47542b5b24f298a7cb74aff98f1",
+      "claims": [
+        {
+          "id": "red_flags-0",
+          "bilingual_claim_sha256": "7a0e48a9856d9f4e519ff08d593b0e161ebf507a84568196f3fe5e4dd444041d",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-symptoms",
+              "locator": "Symptoms; When to call 9-1-1",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Call local emergency services immediately for suspected infarction; do not wait until the next day."
+            },
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Symptoms; When to see a doctor",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Call local emergency services immediately for suspected infarction; do not wait until the next day."
+            }
+          ]
+        },
+        {
+          "id": "red_flags-1",
+          "bilingual_claim_sha256": "2dc4fc4908912be8ca192274cdb2634843bce2e516e8522b80247a4a6e79c543",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-symptoms",
+              "locator": "Symptoms; When to call 9-1-1",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: New chest pressure, especially with breathlessness, cold sweat, fainting or pain spreading to the arm, back, neck or jaw, needs emergency care. Report mild or fluctuating symptoms too."
+            },
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Symptoms; When to see a doctor",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: New chest pressure, especially with breathlessness, cold sweat, fainting or pain spreading to the arm, back, neck or jaw, needs emergency care. Report mild or fluctuating symptoms too."
+            }
+          ]
+        },
+        {
+          "id": "red_flags-2",
+          "bilingual_claim_sha256": "17b0b82bf0e97ff81ce6ed15a2e80aa7e16160bd10a2046d7e9815ed72580f4a",
+          "decision": "partial_support",
+          "assessment": "Sit/rest and ambulance supported; exact abnormal-breathing CPR trigger needs current BLS locator, not lay pulse checking.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhs",
+              "locator": "While waiting for medical help",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Sit and rest while awaiting an ambulance; do not drive yourself. If the person is unresponsive and not breathing normally, follow emergency-dispatch instructions for CPR."
+            },
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Symptoms; When to see a doctor",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Sit and rest while awaiting an ambulance; do not drive yourself. If the person is unresponsive and not breathing normally, follow emergency-dispatch instructions for CPR."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "care",
+      "section_sha256": "efb760839292318e51266c5b4e160884bc12cce48770f9f0810c79c562ede40a",
+      "claims": [
+        {
+          "id": "care-0",
+          "bilingual_claim_sha256": "fc665116b096169523449830b21700a9440c82d4ebe94da8ccb79e376ef453eb",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhs",
+              "locator": "Introduction; Heart attack is different to cardiac arrest",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Suspected acute infarction needs emergency assessment; recovery visits plan safe activity and long-term treatment."
+            },
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Cardiac rehabilitation; Returning to normal activities",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Suspected acute infarction needs emergency assessment; recovery visits plan safe activity and long-term treatment."
+            }
+          ]
+        },
+        {
+          "id": "care-1",
+          "bilingual_claim_sha256": "3d977de141025b13fa602df121e4aa07c21f37929547b70cbc97ab3cd484033b",
+          "decision": "partial_support",
+          "assessment": "Regional aspirin contrast is accurate; allergy/bleeding/current-drug subclauses need additional source binding.",
+          "author_supports": [
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Symptoms; When to see a doctor",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Call first, then address medicines. US Mayo guidance places aspirin use under emergency advice; UK NHS guidance includes aspirin while awaiting help. Report allergy, bleeding and current medicines; never delay the call to find a drug."
+            },
+            {
+              "source_id": "mi-nhs",
+              "locator": "While waiting for medical help",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Call first, then address medicines. US Mayo guidance places aspirin use under emergency advice; UK NHS guidance includes aspirin while awaiting help. Report allergy, bleeding and current medicines; never delay the call to find a drug."
+            }
+          ]
+        },
+        {
+          "id": "care-2",
+          "bilingual_claim_sha256": "e3336da284c5e42a78ff435249bc53a4c57670d20d0c347d44ac4e95d2c37b82",
+          "decision": "partial_support",
+          "assessment": "Recurrent symptoms and individualized return supported; heart-function/driving compound needs precise scope.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Take steps to prevent another heart attack",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Treat recurrent attack-like symptoms after discharge as an emergency. Confirm return to work, exercise and driving using symptoms, heart function and local rules rather than another person’s timeline."
+            },
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Cardiac rehabilitation; Returning to normal activities",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Treat recurrent attack-like symptoms after discharge as an emergency. Confirm return to work, exercise and driving using symptoms, heart function and local rules rather than another person’s timeline."
+            },
+            {
+              "source_id": "mi-nhs",
+              "locator": "Recovering; Support after a heart attack",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Treat recurrent attack-like symptoms after discharge as an emergency. Confirm return to work, exercise and driving using symptoms, heart function and local rules rather than another person’s timeline."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diagnosis",
+      "section_sha256": "48e5fab09fa2571208d81436baa9c3bfa5b96869d2d06a9ee71ebaf0ddba9c38",
+      "claims": [
+        {
+          "id": "diagnosis-0",
+          "bilingual_claim_sha256": "b31b90abb4df589caa3da56f3615d0c060ebbb6145564a302f4278f808979b97",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-diagnosis",
+              "locator": "Blood tests; Initial ECG",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Clinicians combine symptom history, ECG and blood tests to assess myocardial injury."
+            },
+            {
+              "source_id": "mi-mayo-treatment",
+              "locator": "Diagnosis: Tests",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Clinicians combine symptom history, ECG and blood tests to assess myocardial injury."
+            }
+          ]
+        },
+        {
+          "id": "diagnosis-1",
+          "bilingual_claim_sha256": "de7281f0b5dc09e3bf27c755caa53e49a852b5cfd3ceab8f1e1c21fdb86c7b35",
+          "decision": "partial_support",
+          "assessment": "Repeat tests directly NHLBI; Mayo describes slow protein leakage but not a separate direct repeat-testing recommendation here.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-diagnosis",
+              "locator": "Blood tests; Initial ECG",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: An ECG records electrical activity; troponin enters blood after heart muscle injury. Tests may be repeated to examine change over time instead of relying on one early result."
+            },
+            {
+              "source_id": "mi-mayo-treatment",
+              "locator": "Diagnosis: Tests",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: An ECG records electrical activity; troponin enters blood after heart muscle injury. Tests may be repeated to examine change over time instead of relying on one early result."
+            }
+          ]
+        },
+        {
+          "id": "diagnosis-2",
+          "bilingual_claim_sha256": "47ea5ad82cb2c455dfd23abd46c3b6162ca3a4f155eaf68af8516cc5b23542b4",
+          "decision": "partial_support",
+          "assessment": "Echo/angiography supported; NSTEMI severe/total blockage directly Mayo, not two copies of generic ECG advice.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhs",
+              "locator": "How a heart attack is diagnosed",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Echocardiography assesses pumping and damage; coronary angiography locates blockages. ST-elevation and non-ST-elevation infarctions are distinguished using ECG and other findings; the latter can also involve severe obstruction."
+            },
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Causes; Risk factors",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Echocardiography assesses pumping and damage; coronary angiography locates blockages. ST-elevation and non-ST-elevation infarctions are distinguished using ECG and other findings; the latter can also involve severe obstruction."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "differentials",
+      "section_sha256": "404a8cf02fb039f21c50a50303ebebfc50c4debd1e062f750b1402d11a58d55e",
+      "claims": [
+        {
+          "id": "differentials-0",
+          "bilingual_claim_sha256": "cbe35e621bfdad5f98caf4017ea373d0a319c04bf6f8a2fe55bef06d8c78f5dd",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhs-chest",
+              "locator": "Common causes of chest pain",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Chest pain is a symptom and infarction is one specific cause; clinicians assess the following distinctions."
+            }
+          ]
+        },
+        {
+          "id": "differentials-1",
+          "bilingual_claim_sha256": "98dfebcfa40c18739ef3ebc1b3e9c11a6953faf4865823f4aa57dc812f7148b0",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhs-chest",
+              "locator": "Common causes of chest pain",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Reflux often causes burning after meals and chest-wall strain may relate to movement; infarction can also feel like indigestion, so that sensation does not establish a stomach cause."
+            },
+            {
+              "source_id": "mi-nhs",
+              "locator": "Symptoms; Immediate action required",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Reflux often causes burning after meals and chest-wall strain may relate to movement; infarction can also feel like indigestion, so that sensation does not establish a stomach cause."
+            }
+          ]
+        },
+        {
+          "id": "differentials-2",
+          "bilingual_claim_sha256": "f7e1ad49378bd1599334d7fa34e0d99a1582c7eaaffed908577c6d4b30b3b030",
+          "decision": "partial_support",
+          "assessment": "Stable exertional angina and emergency uncertainty supported; resting/new/worsening pain needs dedicated unstable-angina locator.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-symptoms",
+              "locator": "Symptoms; When to call 9-1-1",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Stable angina is usually triggered by exertion and improves with rest or prescribed medication. New, worsening or resting pain needs reassessment; seek emergency care when uncertain whether it is infarction."
+            },
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Symptoms; When to see a doctor",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Stable angina is usually triggered by exertion and improves with rest or prescribed medication. New, worsening or resting pain needs reassessment; seek emergency care when uncertain whether it is infarction."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treatment",
+      "section_sha256": "ea52bf9750240c823687863aeeefc036aae1ac8e07560195d4e55b586f6d7db9",
+      "claims": [
+        {
+          "id": "treatment-0",
+          "bilingual_claim_sha256": "e725f64dfa9a7e410d1ff643dd7da68998194b56af24df9725a13d80ccd12046",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-treatment",
+              "locator": "Emergency treatment; Procedures",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Acute care restores blood flow promptly to limit further muscle death; subsequent care reduces recurrence risk."
+            },
+            {
+              "source_id": "mi-nhs",
+              "locator": "Treatments; Medicines after heart attack",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Acute care restores blood flow promptly to limit further muscle death; subsequent care reduces recurrence risk."
+            }
+          ]
+        },
+        {
+          "id": "treatment-1",
+          "bilingual_claim_sha256": "ab550489560df353378f929032f784e128b25a152c8d95f8c4a1fdff823be1b6",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-treatment",
+              "locator": "Emergency treatment; Procedures",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Percutaneous coronary intervention uses a catheter and balloon to open a blockage, often with a stent to maintain the opening. Some patients need bypass surgery to route blood around an obstruction."
+            },
+            {
+              "source_id": "mi-nhs",
+              "locator": "Treatments; Medicines after heart attack",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Percutaneous coronary intervention uses a catheter and balloon to open a blockage, often with a stent to maintain the opening. Some patients need bypass surgery to route blood around an obstruction."
+            }
+          ]
+        },
+        {
+          "id": "treatment-2",
+          "bilingual_claim_sha256": "d0d4c134e3fb9ccad87877b6b228fbfbcc40e01b5338d7468fe1f0e422622651",
+          "decision": "partial_support",
+          "assessment": "Clot dissolution/bleeding supported; exact infarction-type eligibility and timing need current guideline detail.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-treatment",
+              "locator": "Emergency treatment; Procedures",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Thrombolytics dissolve clots but can cause bleeding. Their use depends on infarction type, timing and timely availability of intervention; acute medicines are not identical for all infarctions."
+            },
+            {
+              "source_id": "mi-mayo-treatment",
+              "locator": "Treatment: Medicines; Procedures",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Thrombolytics dissolve clots but can cause bleeding. Their use depends on infarction type, timing and timely availability of intervention; acute medicines are not identical for all infarctions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "medications",
+      "section_sha256": "4be66d95029b4bd22872e604a182b65f30f51fd1ef8bd4a7a68e1a8608f1baa5",
+      "claims": [
+        {
+          "id": "medications-0",
+          "bilingual_claim_sha256": "35a0ce735caeb808aae2136d029d80ae5e23c6b011ef69bf691741ed44d8cbc3",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhs",
+              "locator": "Treatments; Medicines after heart attack",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Medicines address clotting, cholesterol and cardiac workload; one drug cannot meet every treatment goal."
+            },
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Medicines",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Medicines address clotting, cholesterol and cardiac workload; one drug cannot meet every treatment goal."
+            }
+          ]
+        },
+        {
+          "id": "medications-1",
+          "bilingual_claim_sha256": "700f77c8f619e3a573496c20077e459f4e3385ea3802da1abb24f24c5bb70d97",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-treatment",
+              "locator": "Stenting",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Antiplatelets reduce platelet sticking; adherence is especially important after a stent. They increase bleeding risk and should not be stopped simply because symptoms disappear."
+            },
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Medicines",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Antiplatelets reduce platelet sticking; adherence is especially important after a stent. They increase bleeding risk and should not be stopped simply because symptoms disappear."
+            },
+            {
+              "source_id": "mi-nhs",
+              "locator": "Treatments; Medicines after heart attack",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Antiplatelets reduce platelet sticking; adherence is especially important after a stent. They increase bleeding risk and should not be stopped simply because symptoms disappear."
+            }
+          ]
+        },
+        {
+          "id": "medications-2",
+          "bilingual_claim_sha256": "24b248b7d74524879e5312ed600e763998a7c9e3052a392578f952223652aa43",
+          "decision": "partial_support",
+          "assessment": "Clopidogrel bleeding action and statin muscle symptoms do not each have two direct independent supports; urgency distinction lost.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhs-clopidogrel",
+              "locator": "Serious side effects",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Black stools, vomiting blood or uncontrolled bleeding while taking clopidogrel need urgent care. Statins lower cholesterol; new muscle pain should be assessed. Include non-prescription medicines and supplements in the medication list."
+            },
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Medicines",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Black stools, vomiting blood or uncontrolled bleeding while taking clopidogrel need urgent care. Statins lower cholesterol; new muscle pain should be assessed. Include non-prescription medicines and supplements in the medication list."
+            },
+            {
+              "source_id": "mi-mayo-treatment",
+              "locator": "Preparing for your appointment",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Black stools, vomiting blood or uncontrolled bleeding while taking clopidogrel need urgent care. Statins lower cholesterol; new muscle pain should be assessed. Include non-prescription medicines and supplements in the medication list."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diet",
+      "section_sha256": "bdd407016c8a42a36fca327d031702cdd974d0a0826fc96d88b727988bbfe4dc",
+      "claims": [
+        {
+          "id": "diet-0",
+          "bilingual_claim_sha256": "cb05f06c7639a4a8799666e4f5b213429386bc87d38271c64983c67b03336569",
+          "decision": "partial_support",
+          "assessment": "Long-term pattern supported; acute food cannot open obstruction is reasonable explanation but not two explicit disease materials.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-food",
+              "locator": "Heart-healthy food groups; sodium and saturated fat",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: After recovery, diet addresses blood pressure, cholesterol and long-term risk; food cannot open an acutely obstructed coronary artery."
+            },
+            {
+              "source_id": "mi-nhlbi-treatment",
+              "locator": "Emergency treatment; Procedures",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: After recovery, diet addresses blood pressure, cholesterol and long-term risk; food cannot open an acutely obstructed coronary artery."
+            }
+          ]
+        },
+        {
+          "id": "diet-1",
+          "bilingual_claim_sha256": "d0386c52b5abe35d0d1c6cc33191e4723cbdca2302e592ef6080b0163d30f82f",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-food",
+              "locator": "Heart-healthy food groups; sodium and saturated fat",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Use vegetables, fruit, whole grains and beans regularly, while reducing salt and saturated fat, for example from salty processed or fatty meats. The emphasis is a sustained eating pattern."
+            },
+            {
+              "source_id": "mi-nhs",
+              "locator": "Reducing your risk",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Use vegetables, fruit, whole grains and beans regularly, while reducing salt and saturated fat, for example from salty processed or fatty meats. The emphasis is a sustained eating pattern."
+            }
+          ]
+        },
+        {
+          "id": "diet-2",
+          "bilingual_claim_sha256": "0ab2152faa75dfb3661773426ac181f33144a68b7b9e4e467d27d8679c232742",
+          "decision": "partial_support",
+          "assessment": "Diabetes/kidney dietary portions/restrictions require condition-specific materials; generic follow-prescription is insufficient.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-food",
+              "locator": "Heart-healthy food groups; sodium and saturated fat",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: With diabetes or kidney disease, agree suitable portions and restrictions with the care team; healthy eating is not a reason to stop infarction medicines."
+            },
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Medicines",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: With diabetes or kidney disease, agree suitable portions and restrictions with the care team; healthy eating is not a reason to stop infarction medicines."
+            },
+            {
+              "source_id": "mi-mayo-treatment",
+              "locator": "Preparing for your appointment",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: With diabetes or kidney disease, agree suitable portions and restrictions with the care team; healthy eating is not a reason to stop infarction medicines."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daily_care",
+      "section_sha256": "e68648309d902cf0f02bdebd59108fdeca02e9b94efc2f2af28524d595b51fe9",
+      "claims": [
+        {
+          "id": "daily_care-0",
+          "bilingual_claim_sha256": "8495680b7c377126a6e3f387eab01a9ca79feba34d9ddcbbc8f252dd63d05b00",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Cardiac rehabilitation; Returning to normal activities",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Cardiac rehabilitation combines safe exercise, education and emotional support in a recovery plan."
+            },
+            {
+              "source_id": "mi-nhs",
+              "locator": "Recovering; Support after a heart attack",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Cardiac rehabilitation combines safe exercise, education and emotional support in a recovery plan."
+            }
+          ]
+        },
+        {
+          "id": "daily_care-1",
+          "bilingual_claim_sha256": "edde0497a87266188aafb4b3b67c104540bf706250352e4ef90dbfa9401ea1ae",
+          "decision": "partial_support",
+          "assessment": "Gradual rehab and emergency recurrence supported; precise exertional fatigue/breathlessness reporting needs discharge material.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Cardiac rehabilitation; Returning to normal activities",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Increase activity according to rehabilitation advice and report exertional pain, breathlessness or fatigue at follow-up. Stop and seek emergency help for new warning symptoms."
+            },
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Take steps to prevent another heart attack",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Increase activity according to rehabilitation advice and report exertional pain, breathlessness or fatigue at follow-up. Stop and seek emergency help for new warning symptoms."
+            },
+            {
+              "source_id": "mi-nhs",
+              "locator": "Symptoms; Immediate action required",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Increase activity according to rehabilitation advice and report exertional pain, breathlessness or fatigue at follow-up. Stop and seek emergency help for new warning symptoms."
+            }
+          ]
+        },
+        {
+          "id": "daily_care-2",
+          "bilingual_claim_sha256": "5007d0f367d329159cd7301a2fd2d9eea2a62e4325d861a02693a0f0ed897c3d",
+          "decision": "partial_support",
+          "assessment": "Mood, access and medicine list supported across sources; follow-up-date organization not independently bound.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Medicines",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Keep the discharge medicine list and follow-up dates organized. Tell the team about fear of activity, low mood or difficulty obtaining medicine so the plan remains workable."
+            },
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Take care of your mental health",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Keep the discharge medicine list and follow-up dates organized. Tell the team about fear of activity, low mood or difficulty obtaining medicine so the plan remains workable."
+            },
+            {
+              "source_id": "mi-nhs",
+              "locator": "Recovering; Support after a heart attack",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Keep the discharge medicine list and follow-up dates organized. Tell the team about fear of activity, low mood or difficulty obtaining medicine so the plan remains workable."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "special_populations",
+      "section_sha256": "ae7aaa86c1192d5feca782326361fac9fc748b40a391d844992ce76d578a4fe3",
+      "claims": [
+        {
+          "id": "special_populations-0",
+          "bilingual_claim_sha256": "c327ee0ccb84d86864f2f13cc5d4eff6fbd0c19332d471a7b1616534505e4533",
+          "decision": "partial_support",
+          "assessment": "Presentation differences supported; treatment adaptations remain broad until concrete examples.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-women",
+              "locator": "Symptoms in women; Pregnancy and heart attacks",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Age, pregnancy and existing disease can change presentation and care."
+            },
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Symptoms; When to see a doctor",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Age, pregnancy and existing disease can change presentation and care."
+            }
+          ]
+        },
+        {
+          "id": "special_populations-1",
+          "bilingual_claim_sha256": "b08363362c483b0f87d76f889f83dc15789d89b84829773d6c01f9e879a7c4fa",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-symptoms",
+              "locator": "Symptoms; When to call 9-1-1",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Chest pain remains common in women, but nausea, unusual fatigue, back pain or breathlessness may predominate; older adults and people with diabetes may have little pain. Do not wait for severe pain before seeking help."
+            },
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Symptoms; When to see a doctor",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Chest pain remains common in women, but nausea, unusual fatigue, back pain or breathlessness may predominate; older adults and people with diabetes may have little pain. Do not wait for severe pain before seeking help."
+            }
+          ]
+        },
+        {
+          "id": "special_populations-2",
+          "bilingual_claim_sha256": "307a7b0ebc8dd728992a3240be502efc1a4635124b24e40d7e52e0bec2024968",
+          "decision": "partial_support",
+          "assessment": "Pregnancy/postpartum and protected testing/treatment directly NHLBI women only; no second direct pregnancy source.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-women",
+              "locator": "Symptoms in women; Pregnancy and heart attacks",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Infarction can occur during pregnancy or after birth. Call emergency services and report pregnancy stage or delivery timing; care considers fetal needs, medicines and tests without postponing assessment because of pregnancy."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prognosis_followup",
+      "section_sha256": "f2880144841e04463679b12a6cbf30c5f2dfdba0217abfb3dfd2a92872374e1d",
+      "claims": [
+        {
+          "id": "prognosis_followup-0",
+          "bilingual_claim_sha256": "cfd1e2d701a9528459228bee3c4e5bea550afa7fd87c100598419866c172b766",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhs",
+              "locator": "Recovering; Support after a heart attack",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Recovery varies with muscle damage, treatment timing and prior health; some improve within weeks while others need longer."
+            },
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Cardiac rehabilitation; Returning to normal activities",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Recovery varies with muscle damage, treatment timing and prior health; some improve within weeks while others need longer."
+            }
+          ]
+        },
+        {
+          "id": "prognosis_followup-1",
+          "bilingual_claim_sha256": "4bd2149e4ae90f96cc6c5c6704a55b3248904d42c4c7790a1cc2f516db166da6",
+          "decision": "partial_support",
+          "assessment": "BP/lipids checks supported; heart-function/symptom/adverse-effect follow-up composite requires precise independent locators.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Medicines",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Reviews assess activity tolerance, pressure and cholesterol, symptoms and adverse effects, with heart-function testing as needed to guide rehabilitation and prevention."
+            },
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Cardiac rehabilitation; Returning to normal activities",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Reviews assess activity tolerance, pressure and cholesterol, symptoms and adverse effects, with heart-function testing as needed to guide rehabilitation and prevention."
+            },
+            {
+              "source_id": "mi-mayo-treatment",
+              "locator": "Preparing for your appointment",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Reviews assess activity tolerance, pressure and cholesterol, symptoms and adverse effects, with heart-function testing as needed to guide rehabilitation and prevention."
+            }
+          ]
+        },
+        {
+          "id": "prognosis_followup-2",
+          "bilingual_claim_sha256": "1c9070c423af56be6f8e5c4bda1b59ae6f7262bf41ecf0c9d973dd7748b9a1ab",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Take steps to prevent another heart attack",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Previous infarction increases recurrence risk, and another episode may feel different. Do not wait for a booked appointment when warning signs occur."
+            },
+            {
+              "source_id": "mi-nhs",
+              "locator": "Symptoms; Immediate action required",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Previous infarction increases recurrence risk, and another episode may feel different. Do not wait for a booked appointment when warning signs occur."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "complications",
+      "section_sha256": "154996e423b03b149cee17fbfed2ddad11dae2807fb3f5eb0e08353e1299a3fb",
+      "claims": [
+        {
+          "id": "complications-0",
+          "bilingual_claim_sha256": "1dc6384a047eadbac5120b12b71f3fd79429236281d174b48fc16d9c2dbdc658",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "What kind of health problems can a heart attack cause?",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Complications mainly arise from impaired pumping or electrical activity after muscle injury; they do not occur in everyone."
+            },
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Complications",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Complications mainly arise from impaired pumping or electrical activity after muscle injury; they do not occur in everyone."
+            }
+          ]
+        },
+        {
+          "id": "complications-1",
+          "bilingual_claim_sha256": "7da473b106a573e0f61117bbae46a07e95e5c10bc915169974a32384058fa8d9",
+          "decision": "partial_support",
+          "assessment": "Pump failure/shock mechanism directly Mayo; NIH recovery is list of complications rather than explanation.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "What kind of health problems can a heart attack cause?",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Heart failure means the heart cannot meet the body’s pumping needs; severe pump failure can cause cardiogenic shock. Symptoms and tests help clinicians assess these problems."
+            },
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Complications",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Heart failure means the heart cannot meet the body’s pumping needs; severe pump failure can cause cardiogenic shock. Symptoms and tests help clinicians assess these problems."
+            }
+          ]
+        },
+        {
+          "id": "complications-2",
+          "bilingual_claim_sha256": "3fbb82e0a9b3e79b3d117c482b4cccdf229c09334907b1a5156ffc6c3d089009",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Complications",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Arrhythmias are abnormal rhythms, some of which can cause cardiac arrest. New collapse, loss of response or severe breathing difficulty requires immediate emergency care."
+            },
+            {
+              "source_id": "mi-nhs",
+              "locator": "Symptoms; Immediate action required",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Arrhythmias are abnormal rhythms, some of which can cause cardiac arrest. New collapse, loss of response or severe breathing difficulty requires immediate emergency care."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prevention",
+      "section_sha256": "8909438997cfd1f21fab4f6422f5b36165ea966d1442bdfdbf8b1dae77d5ea3c",
+      "claims": [
+        {
+          "id": "prevention-0",
+          "bilingual_claim_sha256": "6c37f3cce7c54a0e6fe1e2e1082b9fefa3c94de6aadb9f56269db4804e102965",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Prevention",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Prevention addresses both a first attack and long-term recurrence after infarction."
+            },
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Take steps to prevent another heart attack",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Prevention addresses both a first attack and long-term recurrence after infarction."
+            }
+          ]
+        },
+        {
+          "id": "prevention-1",
+          "bilingual_claim_sha256": "4bc45bc5005fbc4ffc10bb5558bc7d41015657a8e3cb783fc793644380dc83af",
+          "decision": "verified",
+          "assessment": "Direct support for the bounded statement in independently written patient materials; no clinical attestation.",
+          "author_supports": [
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Prevention",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Stopping smoking, treating hypertension and diabetes, managing cholesterol and suitable activity reduce risk without guaranteeing an attack will never happen."
+            },
+            {
+              "source_id": "mi-nhs",
+              "locator": "Reducing your risk",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: Stopping smoking, treating hypertension and diabetes, managing cholesterol and suitable activity reduce risk without guaranteeing an attack will never happen."
+            }
+          ]
+        },
+        {
+          "id": "prevention-2",
+          "bilingual_claim_sha256": "6c67b23f141f7532bb422237352ae7adba01c5c4e4292f07d63afac6fe2e08ca",
+          "decision": "partial_support",
+          "assessment": "Adherence supported. AHA and FDA separately support primary-prevention aspirin risk, but are not yet bound in author record.",
+          "author_supports": [
+            {
+              "source_id": "mi-nhlbi-recovery",
+              "locator": "Medicines",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: After infarction, maintain prescribed medicines and rehabilitation. Without established disease, do not start long-term aspirin simply from worry; discuss benefit and bleeding risk first."
+            },
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Prevention",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: After infarction, maintain prescribed medicines and rehabilitation. Without established disease, do not start long-term aspirin simply from worry; discuss benefit and bleeding risk first."
+            },
+            {
+              "source_id": "mi-mayo-causes",
+              "locator": "Symptoms; When to see a doctor",
+              "assessment": "Author candidate: verify the complete statement against this exact locator during independent review. Statement: After infarction, maintain prescribed medicines and rehabilitation. Without established disease, do not start long-term aspirin simply from worry; discuss benefit and bleeding risk first."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "MI01",
+      "priority": "P1",
+      "claims": [
+        "medications-2"
+      ],
+      "issue": "Urgent care leaves action timing/facility unclear for vomiting blood or unstoppable bleeding, particularly in English.",
+      "action": "Separate immediate emergency assessment for vomiting blood/major bleeding from prompt clinical advice for tarry stool; bind each action independently. Keep statin muscle symptoms as a separate item."
+    },
+    {
+      "id": "MI02",
+      "priority": "P2",
+      "claims": [
+        "diagnosis-1",
+        "diagnosis-2"
+      ],
+      "issue": "Single-source direct limits and incomplete explanation of myocardial injury versus infarction.",
+      "action": "Add an independently written serial-troponin/ECG limitation source; explain why injury marker alone is not cause diagnosis. NSTEMI must not mean only partial obstruction; current Mayo explicitly notes some total blockages."
+    },
+    {
+      "id": "MI03",
+      "priority": "P2",
+      "claims": [
+        "differentials-0",
+        "differentials-2"
+      ],
+      "issue": "Only benign mimics and stable angina described; urgent noncoronary causes and unstable angina are not developed.",
+      "action": "Explain dangerous alternatives such as aortic dissection and pulmonary embolism with actual source-supported clues and emergency action; symptom differences are not home exclusion tests."
+    },
+    {
+      "id": "MI04",
+      "priority": "P2",
+      "claims": [
+        "treatment-2"
+      ],
+      "issue": "Type/timing/availability compound not fully supported by the two cited generic pages.",
+      "action": "Read current ACS guideline sections and distinguish STEMI fibrinolysis context, bleeding exclusions and NSTE-ACS management without creating dosing or a universal pathway."
+    },
+    {
+      "id": "MI05",
+      "priority": "P2",
+      "claims": [
+        "medications-0",
+        "medications-1",
+        "prevention-2"
+      ],
+      "issue": "Medication goals are named but ACE/beta-blocker roles and relevant conditions are not explained; primary-prevention aspirin support was unbound.",
+      "action": "Separate major categories/representative names, benefit, limitations and consultation risks. Bind FDA/AHA aspirin risk material, disclosing common AHA group. Do not turn differing DAPT duration guidance into one universal duration."
+    },
+    {
+      "id": "MI06",
+      "priority": "P2",
+      "claims": [
+        "diet-2",
+        "special_populations-2"
+      ],
+      "issue": "Kidney dietary restrictions and pregnancy-specific care have limited direct independent support. Postpartum patients no longer have an in-utero fetus.",
+      "action": "Give condition-specific examples and population bounds, and independently verify pregnancy testing/treatment context; retain rapid emergency assessment."
+    },
+    {
+      "id": "MI07",
+      "priority": "P2",
+      "claims": [
+        "daily_care-1",
+        "daily_care-2",
+        "prognosis_followup-1"
+      ],
+      "issue": "Routine follow-up organization and symptom reporting attached to whole pages rather than every action.",
+      "action": "Bind actual discharge/follow-up materials and explain what to record. AHA2025 item9 supports region-specific lipid reassessment; do not copy thresholds without scope or counterpart."
+    },
+    {
+      "id": "MI08",
+      "priority": "evidence_context",
+      "claims": [
+        "care-1",
+        "diagnosis-2",
+        "treatment-2"
+      ],
+      "issue": "Professional and patient summaries vary in detail; some simplifications conflict with more precise recommendations.",
+      "action": "Keep NHS/Mayo aspirin differences explicitly regional. Do not import unconditional oxygen from Mayo treatment paragraph; indexed JACC2025 section4.1 is hypoxia-conditioned. AHA patient STEMI/NSTEMI diagram must not override Mayo total-obstruction exception."
+    }
+  ],
+  "acceptance_boundary": {
+    "complete_cross_checked_body": false,
+    "clinical_signoff": false,
+    "coverage_increment": 0
+  },
+  "independence": "All NHLBI pages one NIH writer group; all Mayo pages one group; NHS medicines/chest/MI one national writer group. Current AHA/ACC joint document and its summaries count once. Patient prose may rely on overlapping underlying guidelines; no independent-trial replication inferred.",
+  "mece": "Parent MI entry must not count each STEMI/NSTEMI/site-specific or recurrent ICD leaf without explicit semantic adjudication. Chest-pain symptom entry remains linked rather than duplicated.",
+  "license": "Original editorial assessments and URL/heading locators; no full source text redistributed.",
+  "bilingual_assessment": "All42 Chinese/English paragraphs read side by side. No differing numeric thresholds in current body. Urgent-care English and postpartum fetal scope require clarification; no mechanical removal of negative limits."
+}
