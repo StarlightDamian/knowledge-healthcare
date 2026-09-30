@@ -78,10 +78,12 @@ def main():
     current = runtime/'current'
     previous_runtime = str(current.resolve()) if current.is_symlink() else None
     units = Path.home()/'.config/systemd/user'
-    homepage_unit = units/'home-page.service'
-    original_homepage = homepage_unit.read_text()
-    if not (receipt_dir/'home-page.service.before').exists():
-        private_write(receipt_dir/'home-page.service.before', original_homepage)
+    route_override = units/'home-page.service.d/zz-healthcare-route.conf'
+    original_override = route_override.read_text() if route_override.exists() else None
+    private_write(receipt_dir/'home-page-effective.before.txt',
+                  run(['systemctl','--user','cat','home-page.service']).stdout)
+    if original_override is not None:
+        private_write(receipt_dir/'healthcare-route.before.conf', original_override)
     python = runtime/'venv312/bin/python'
     reader_env = private_root/'reader.env'
     private_write(reader_env, 'HEALTHCARE_READ_DSN='+config['HEALTHCARE_READ_DSN']+'\n')
@@ -111,12 +113,13 @@ WantedBy=default.target
         run(['systemctl','--user','enable','knowledge-healthcare-api.service'])
         run(['systemctl','--user','restart','knowledge-healthcare-api.service'])
         wait_health(11004, candidate['release_id'])
-        # Changing only ExecStart keeps the shared service's existing policy and static root.
+        # Earlier drop-ins already override the base unit; use our own reversible override.
         command = f'ExecStart={python} {current}/src/ops/serve_gateway.py 11003 --bind 127.0.0.1 --directory {Path.home()}/.local/share/home-page/releases/current'
-        updated, count = re.subn(r'^ExecStart=.*$', command, original_homepage, flags=re.MULTILINE)
-        if count != 1: raise RuntimeError('Unexpected shared service layout')
-        private_write(homepage_unit, updated); mounted = True
+        private_write(route_override, '[Service]\nExecStart=\n'+command+'\n'); mounted = True
         run(['systemctl','--user','daemon-reload'])
+        effective = run(['systemctl','--user','show','home-page.service','-p','ExecStart','--value']).stdout
+        if str(current)+'/src/ops/serve_gateway.py' not in effective:
+            raise RuntimeError('Another service override prevents healthcare routing')
         run(['systemctl','--user','restart','home-page.service'])
         wait_health(11003, candidate['release_id'])
         for path in ('/home/', '/fitness/'):
@@ -129,7 +132,9 @@ WantedBy=default.target
         private_write(receipt_dir/'receipt.json', json.dumps(receipt,indent=2)+'\n')
         print(json.dumps(receipt))
     except Exception:
-        if mounted: private_write(homepage_unit, original_homepage)
+        if mounted:
+            if original_override is None: route_override.unlink()
+            else: private_write(route_override, original_override)
         if previous_runtime: switch(current, previous_runtime)
         if previous_release and store.active_release() != previous_release:
             activate_release(config['HEALTHCARE_IMPORT_DSN'], previous_release, expected_current=candidate['release_id'])

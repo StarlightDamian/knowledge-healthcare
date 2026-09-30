@@ -17,7 +17,8 @@ class GatewayHandler(SimpleHTTPRequestHandler):
         super().__init__(*args, **kwargs)
 
     def end_headers(self):
-        if self.path.split('?', 1)[0].startswith('/fitness/'):
+        path = self.path.split('?', 1)[0]
+        if path == '/fitness' or path.startswith('/fitness/'):
             self.send_header('Cache-Control', 'public, no-cache, no-transform')
         super().end_headers()
 
