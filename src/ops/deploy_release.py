@@ -125,7 +125,7 @@ WantedBy=default.target
         for path in ('/home/', '/fitness/'):
             with urlopen('http://127.0.0.1:11003'+path, timeout=10) as response:
                 if response.status != 200: raise RuntimeError('Shared site regression')
-        receipt = {**candidate, 'git_commit':args.git_commit, 'previous_release_id':previous_release,
+        receipt = {**candidate, 'published':True, 'git_commit':args.git_commit, 'previous_release_id':previous_release,
                    'previous_runtime':previous_runtime, 'runtime':str(source), 'backup':str(backup),
                    'public_url':'https://www.zengyuwei.cn/healthcare/', 'local_http_verified':True,
                    'public_verified':False}

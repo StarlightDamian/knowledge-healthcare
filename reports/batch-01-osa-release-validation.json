@@ -55,11 +55,53 @@
       "production_changed": false,
       "test_git_commit_is_synthetic": true,
       "initial_attempt": "A baseline import paired old72 content with the new OSA mapping definition; corrected the fixture to use the old runtime root. No product files changed."
+    },
+    "github_ci": {
+      "run_id": 36705052884,
+      "head_sha": "37a8b7b4f21129a2ceafe69f2543083782c84389",
+      "conclusion": "success",
+      "url": "https://github.com/StarlightDamian/knowledge-healthcare/actions/runs/36705052884"
+    },
+    "public_https": {
+      "url": "https://www.zengyuwei.cn/healthcare/",
+      "release_id": "rel-9bfe3a1e040f1dbcc0fd6221af609efd253e4a907ae6cb03a426916ca163f0ec",
+      "runtime_commit": "37a8b7b4f21129a2ceafe69f2543083782c84389",
+      "passed": 8,
+      "checks": [
+        "Pinned public PostgreSQL release:73 topics;new article and all29 source references match Git",
+        "Full Chinese and English CSV:73 rows/22 columns;all14 new article fields and line breaks exact",
+        "Compact startup and first50 cards;33 populated specialties including one sleep medicine submenu",
+        "OSA long bilingual detail:14 chapters;danger first;chapter jump;pregnancy/contraception/cancer conditions retained",
+        "Source links and concentrated editorial panel:14/14 verification;no invented clinician sign-off",
+        "Selected comparison expands complete medication cell;browser CSV retains complete22-column content",
+        "English and Arabic switch preserves selected OSA/query/detail;Arabic RTL with explicit English body",
+        "Mobile two-level drawer;danger remains independent of filters;query/age/temperature stay outside requests"
+      ],
+      "engine": "Existing local Chromium 1243 on Windows",
+      "execution": "Five checks passed in the first attempt. Three remaining checks resumed after selecting the required two topics for comparison; successful checks were not otherwise repeated. The duplicate compact-startup setup assertion is not counted twice.",
+      "continuation_seconds": 15.953,
+      "screenshots": [
+        "docs/screenshots/public-osa-desktop-en.png",
+        "docs/screenshots/public-osa-mobile-ar.png"
+      ],
+      "screenshots_visually_inspected": true,
+      "access_difference": "An initial server-origin Python request returned403. Workstation HTTPS and Chromium requests returned200; cause of the access difference was not determined."
     }
   },
-  "remaining_checks": [
-    "GitHub CI",
-    "Public HTTPS new-article acceptance"
-  ],
-  "overall_status": "ready_for_github_ci"
+  "remaining_checks": [],
+  "overall_status": "published_and_publicly_verified",
+  "publication": {
+    "published": true,
+    "published_at": "2026-09-30T18:57:31.98812+08:00",
+    "release_id": "rel-9bfe3a1e040f1dbcc0fd6221af609efd253e4a907ae6cb03a426916ca163f0ec",
+    "runtime_commit": "37a8b7b4f21129a2ceafe69f2543083782c84389",
+    "new_topics": 1,
+    "previous_release_id": "rel-1a403d58fc55afdc1643ac92b7265530e77505ba0cb1e662300c20a81b5cc2d3",
+    "rollback_backup": "~/.local/state/knowledge-healthcare/publication-37a8b7b4f21129a2ceafe69f2543083782c84389/before.dump",
+    "note": "The original import-time receipt is retained as receipt.before-public-verification.json. The final private receipt now records published=true and public_verified=true after SELECT-only production snapshot verification; public healthz supplies the actual published_at. Deployment tooling is corrected to report the final publication flag on future runs.",
+    "shared_static_files_unchanged": 17,
+    "services": "PostgreSQL, API and gateway active",
+    "final_reader_snapshot_sha256": "ffc573591ae1cf758263248a1af3bdb9a6133739121dc309a45513d433f8eb7b"
+  },
+  "remaining_batch_topics": 19
 }
