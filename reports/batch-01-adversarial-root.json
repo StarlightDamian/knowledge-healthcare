@@ -1,0 +1,88 @@
+{
+  "batch": "01",
+  "reviewer": "root independent AI-assisted editorial reviewer",
+  "medical_reviewed": false,
+  "started_at": "2026-09-30",
+  "status": "in_progress",
+  "findings": [
+    {
+      "id": "adhd-diagnosis-001",
+      "topic": "adhd",
+      "section": "diagnosis",
+      "status": "resolved",
+      "finding": "年龄对应的症状条数被含糊表述为age-appropriate criteria，面向小白不足；需要明确儿童与17岁及以上条件。",
+      "sources_reopened": [
+        "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+        "https://www.psychiatry.org/patients-families/adhd/what-is-adhd"
+      ],
+      "locator": "How is ADHD diagnosed?",
+      "required_fix": "在两份独立权威材料支持下补清症状计数、持续时间、跨场景和功能影响，不写成自诊量表。",
+      "resolution": "已重读修改后的中英诊断段及APA Symptoms and Diagnosis；计数、年龄、6个月、12岁前、多场景及功能影响清楚。阈值使用NIMH/APA共同DSM依据，CDC不作为数值的直接支持；整篇尚待其他章节核验。"
+    },
+    {
+      "id": "adhd-diagnosis-002",
+      "topic": "adhd",
+      "section": "diagnosis",
+      "status": "resolved",
+      "finding": "当前CDC diagnosis与signs-symptoms原页均未列出草稿的6/5个、6个月阈值，不能用这些URL作为该数值的第二直接支持。",
+      "sources_reopened": [
+        "https://www.cdc.gov/adhd/diagnosis/index.html",
+        "https://www.cdc.gov/adhd/signs-symptoms/index.html",
+        "https://www.psychiatry.org/patients-families/adhd/what-is-adhd"
+      ],
+      "locator": "CDC pages reviewed July 30, 2026; full rendered text",
+      "required_fix": "替换为明确支持该阈值的独立来源并记录共同DSM依据；NIMH另一页面仍属同一编写体系。",
+      "resolution": "已重读修改后的中英诊断段及APA Symptoms and Diagnosis；计数、年龄、6个月、12岁前、多场景及功能影响清楚。阈值使用NIMH/APA共同DSM依据，CDC不作为数值的直接支持；整篇尚待其他章节核验。"
+    },
+    {
+      "id": "thyroid-evidence-001",
+      "topic": "thyroid-nodules",
+      "section": "diagnosis/diet/medications/prevention",
+      "status": "open_author_notified",
+      "finding": "作者记录将节级来源组合复制给每条主张，部分定位并不支持该条完整知识；药物风险与饮食准备的第二独立证据仍不完整。",
+      "required_fix": "逐主张删除不支持的引用并补精确支持；缺少合格第二来源的关键主张保持未通过。",
+      "sources_reopened": [
+        "https://www.thyroid.org/thyroid-nodules/",
+        "https://www.nice.org.uk/guidance/ng145/chapter/recommendations",
+        "https://www.nice.org.uk/guidance/ng145/chapter/rationale-and-impact"
+      ],
+      "retrieval_note": "ATA正文已打开；NICE直接403，官方索引段落可读，按search_text_retrieved记录。"
+    },
+    {
+      "id": "retina-gas-001",
+      "topic": "retinal-detachment",
+      "section": "daily_care",
+      "status": "open_author_notified",
+      "finding": "眼内气泡仅提示告知麻醉医生，未解释笑气/一氧化二氮止痛或麻醉的具体危险，小白可能忽略牙科、产程或急诊使用。",
+      "required_fix": "用两家独立材料核对并补充气体名称、适用情形和告知行动，不能用同医院PDF镜像当第二来源。",
+      "sources_reopened": [
+        "https://www.moorfields.nhs.uk/eye-conditions/retinal-detachment/diagnosis-and-treatment"
+      ],
+      "retrieval_note": "Moorfields原文已重读；Imperial PDF直接403，搜索可见相关段落，尚待独立来源审核。"
+    },
+    {
+      "id": "adhd-stimulant-001",
+      "topic": "adhd",
+      "section": "red_flags",
+      "status": "open_author_notified",
+      "finding": "抽搐/胸痛/意识混乱和兴奋剂过量的急救主张在FDA明确，但原NIMH/NHS疾病概览不能自动作为所有危险表现的第二支持。",
+      "required_fix": "补实际药物患者资料并按具体人群、药类区分支持，保留不足项。",
+      "sources_reopened": [
+        "https://www.fda.gov/drugs/drug-safety-communications/fda-updating-warnings-improve-safe-use-prescription-stimulants-used-treat-adhd-and-other-conditions",
+        "https://www.nhs.uk/medicines/methylphenidate-adults/side-effects-of-methylphenidate-for-adults/"
+      ],
+      "retrieval_note": "FDA全文和NHS官方索引已核读；全节未通过。"
+    }
+  ],
+  "other_sources_reopened": [
+    "https://www.nhs.uk/conditions/adhd-adults/",
+    "https://www.nhs.uk/conditions/adhd-children-teenagers/",
+    "https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know",
+    "https://www.cdc.gov/adhd/treatment/index.html",
+    "https://www.nice.org.uk/guidance/ng87/chapter/recommendations",
+    "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/retinal-detachment",
+    "https://www.nhs.uk/conditions/detached-retina-retinal-detachment/",
+    "https://www.mayoclinic.org/diseases-conditions/testicular-torsion/symptoms-causes/syc-20378270"
+  ],
+  "not_yet_reviewed": "上述为实际已完成的指定发现核对；其余主张和首批全部主题仍需逐节独立核验，本记录不构成整篇通过。"
+}

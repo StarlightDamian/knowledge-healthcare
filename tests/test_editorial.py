@@ -97,6 +97,13 @@ class EditorialTests(unittest.TestCase):
         records[0]['adversarial_review']['reviewer'] = 'Author role'
         self.assertEqual(self.audit(data, records)['qualified_condition_ids'], [])
 
+    def test_open_source_questions_prevent_complete_verification(self):
+        data, records = fixture()
+        records[0]['unresolved_questions'] = ['The second source does not support this action.']
+        result = self.audit(data, records)
+        self.assertEqual(result['qualified_condition_ids'], [])
+        self.assertIn('unresolved_source_questions', [i['issue'] for i in result['issues']])
+
     def test_unresolved_or_unread_source_does_not_qualify(self):
         data, records = fixture()
         records[0]['dispute']['status'] = 'unresolved'

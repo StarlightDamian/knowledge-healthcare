@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-09-30",
+  "url": "https://www.zengyuwei.cn/healthcare/",
+  "runtime_commit": "cd37601d245b2a8986302321d353a34948e8a0fb",
+  "content_origin_commit": "6f622ab91df13f9d60b144a7d07e9aafe3140ffb",
+  "release_id": "rel-1a403d58fc55afdc1643ac92b7265530e77505ba0cb1e662300c20a81b5cc2d3",
+  "github_ci": {
+    "run_id": 36691860250,
+    "conclusion": "success"
+  },
+  "public_healthz": "ok",
+  "public_bootstrap": {
+    "conditions": 72,
+    "knowledge_modules": 2,
+    "knowledge_entries": 56,
+    "ui_locales": 12,
+    "clinically_reviewed": 0
+  },
+  "page_bytes": 162762,
+  "shared_static_files_unchanged": 17,
+  "browser": {
+    "engine": "Chromium",
+    "environment": "real public HTTPS with production PostgreSQL",
+    "passed": 8,
+    "seconds": 82.769,
+    "assertion_timeout_seconds": 30,
+    "checks": [
+      "compact startup and paginated catalog",
+      "search and full condition detail",
+      "comparison matrix and 22-column full-text CSV",
+      "12 interface locales and explicit English fallback",
+      "mobile layout without page overflow",
+      "two-level department navigation and deduplication",
+      "danger actions independent of department filters",
+      "query injection and browser-input privacy"
+    ],
+    "initial_attempt": "The comparison assertion timed out at 5 seconds. A network trace then showed HTTP 200 and 50 rendered rows; the public checks passed with a 30-second assertion window."
+  },
+  "new_medical_articles_published": 0,
+  "coverage_target_met": false,
+  "notes": [
+    "The immutable content manifest was unchanged, so import reused the original content release and provenance.",
+    "Drafts are excluded from publication and verified coverage until source checks and independent editorial review pass.",
+    "Functional acceptance does not establish public-network latency or medical certification."
+  ]
+}

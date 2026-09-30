@@ -90,6 +90,8 @@ def _record_problems(record: dict, entry: dict, today: date) -> list[str]:
         problems.append('invalid_scope')
     if record.get('status') != 'cross_checked':
         return problems
+    if record.get('unresolved_questions'):
+        problems.append('unresolved_source_questions')
     if not valid_date(record.get('checked_at')) or date.fromisoformat(record['checked_at']) > today:
         problems.append('invalid_check_date')
     if not isinstance(record.get('checker'), str) or not record['checker'].strip():
