@@ -82,7 +82,7 @@ def write_project(root, knowledge):
         target.write_text(json.dumps(value, ensure_ascii=False), encoding='utf-8')
     web = root / 'src/web'
     web.mkdir(parents=True)
-    for name in ['search', 'safety', 'export', 'text', 'navigation', 'knowledge', 'app']:
+    for name in ['search', 'safety', 'export', 'text', 'navigation', 'knowledge', 'api', 'app']:
         (web / f'{name}.mjs').write_text(f'// module:{name}\nexport function fixture_{name}() {{}}\n', encoding='utf-8')
     (web / 'style.css').write_text('body { color: black; }', encoding='utf-8')
     (web / 'template.html').write_text(
@@ -234,7 +234,7 @@ class KnowledgeIntegrationTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValidationError, 'Knowledge modules lack clinical sign-off'):
                     validate(data, mode='clinical', today=TODAY)
 
-    def test_offline_build_embeds_modules_safely_in_order_without_catalog_inflation(self):
+    def test_online_shell_excludes_bodies_without_catalog_inflation(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary); fixture = knowledge_fixture()
             fixture['cancer']['intro']['en'] = '</script><script>bad()</script>'
@@ -245,7 +245,11 @@ class KnowledgeIntegrationTests(unittest.TestCase):
             html = first.read_text(encoding='utf-8')
             self.assertNotIn('<script>bad()', html)
             payload = json.loads(re.search(r'<script id="payload" type="application/json">(.*?)</script>', html).group(1))
-            self.assertEqual(payload['knowledge'], fixture)
+            self.assertEqual(payload['conditions'], [])
+            self.assertEqual(set(payload['knowledge']), {'cancer', 'lifecycle'})
+            self.assertTrue(all('entries' not in value and 'sections' not in value for value in payload['knowledge'].values()))
+            self.assertIn("connect-src 'self'", html)
+            self.assertIn("form-action 'self'", html)
             script = bundle(root)
             self.assertLess(script.index('// module:text'), script.index('// module:knowledge'))
             self.assertLess(script.index('// module:knowledge'), script.index('// module:app'))

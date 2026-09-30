@@ -56,5 +56,5 @@ def content_audit(root: Path=ROOT) -> dict:
             'all_condition_coverage':None,
             'limitations':['Lists, lengths and source locators do not prove comprehension or claim-level support.',
                            'Editorial source inspection is not independent medical or translation sign-off.',
-                           'The full ICD-11 denominator and confirmed mappings have not been established.'],
+                           'ICD category coverage is computed separately by coverage-icd from the frozen catalog, semantic mappings and editorial records.'],
             'issues':issues,'records':topics}

@@ -270,6 +270,10 @@ body:has(dialog[open]) { overflow:hidden; }
   .detail-warning { padding:18px; }
   .detail-section li,.detail-section p { font-size:15px; }
 }
+.pagination { display:flex; justify-content:center; align-items:center; gap:16px; margin:24px 0; direction:ltr; }
+.pagination[hidden] { display:none; }
+#catalog-status { border-inline-start:3px solid var(--teal); padding-inline:16px; margin:18px 0; }
+#catalog-status[hidden] { display:none; }
 @media(prefers-reduced-motion:reduce) { * { scroll-behavior:auto!important; transition:none!important; } }
 @media print {
   .sidebar,.topbar,.menu-backdrop,.search-panel,.tools,.safety,.card-bottom,.dialog-top,.detail-toc,.skip { display:none!important; }

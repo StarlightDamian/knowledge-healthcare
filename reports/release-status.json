@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0-preview",
+  "version": "0.2.0-online",
   "purpose": "Health knowledge navigation, cancer evidence map and life-course factors",
   "clinical_reviewed_topics": 0,
   "daily_need_coverage": null,
@@ -17,24 +17,24 @@
   "editorial_narrow_claim_spot_checks": 5,
   "medical_section_signoffs": 0,
   "tests_passed": {
-    "javascript": 332,
-    "python": 74,
-    "browser_http_and_offline_file": 28
+    "javascript": 337,
+    "python_real_database": 112,
+    "browser_real_database_http": 35,
+    "capacity_and_restore": 1
   },
-  "browser_http_or_file_delivery_verified": true,
   "github_pages_deployment_performed": false,
   "server_deployment_performed": true,
   "live_url": "https://www.zengyuwei.cn/healthcare/",
   "repository_url": "https://github.com/StarlightDamian/knowledge-healthcare",
   "server_deployment_record": "reports/deployment-20260930.md",
   "signature": "not_signed; SHA256 integrity manifest only",
-  "all_condition_coverage": null,
+  "all_condition_coverage": 0.0,
   "classification_target": "ICD-11 MMS 2026-01",
-  "icd_denominator_status": "not_acquired",
-  "icd_mapping_status": "not_completed",
+  "icd_denominator_status": "frozen",
+  "icd_mapping_status": "pending_semantic_review",
   "expanded_bilingual_topics": 72,
   "editorial_section_records": 1008,
-  "artifact_sha256": "e8a4208db9a3185c7f1f2479709603a2c1d32398760b93f39af7e9613576cb1d",
+  "artifact_sha256": "27de449a41003c837ca32c8272a193c66ae2b43815e5eed9354b238139312135",
   "writing_reviewed_topics": 72,
   "confirmed_icd_category_mappings": 0,
   "coverage_target_review": "not_passed",
@@ -62,5 +62,11 @@
     }
   },
   "research_mece_audit": "reports/research-mece-audit.json",
-  "local_update_completed_at": "2026-09-30"
+  "local_update_completed_at": "2026-09-30",
+  "icd_denominator": 13155,
+  "postgres_migration_status": "validated_candidate_not_yet_deployed",
+  "browser_http_delivery_verified": true,
+  "offline_full_reading": false,
+  "current_public_deployment_record": "reports/deployment-20260930.md",
+  "candidate_validation_record": "reports/implementation-postgres-icd.md"
 }

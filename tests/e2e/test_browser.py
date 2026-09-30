@@ -1,30 +1,15 @@
-"""Browser integration tests; run explicitly after building index.html.
-Requires optional Playwright; supports system Chromium or installed Playwright browser.
-BROWSER_TRANSPORT=html renders HTML in-memory when navigation is restricted.
-That mode validates DOM/interaction, NOT file/HTTP loading or origin storage behavior.
-GUIDE_URL targets an existing deployment; public navigation allows 120 seconds.
+"""Real HTTP + PostgreSQL browser checks. Initialize the dedicated test database first.
+HEALTHCARE_TEST_READ_DSN selects it; GUIDE_URL instead targets a deployed service.
 """
 from pathlib import Path
 import json
 import os
 import shutil
-import tempfile
 import unittest
 import threading
-from contextlib import contextmanager
-from functools import partial
-from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
-
-@contextmanager
-def serve(directory):
- class QuietHandler(SimpleHTTPRequestHandler):
-  def log_message(self, *args): pass
- server = ThreadingHTTPServer(("127.0.0.1", 0), partial(QuietHandler, directory=str(directory)))
- thread = threading.Thread(target=server.serve_forever, daemon=True)
- thread.start()
- try: yield f"http://127.0.0.1:{server.server_port}"
- finally: server.shutdown(); server.server_close(); thread.join(timeout=3)
-from playwright.sync_api import sync_playwright
+import socket
+import time
+from playwright.sync_api import sync_playwright, expect
 from src.guide.model import ROOT
 from src.guide.build import build
 
@@ -34,45 +19,64 @@ class BrowserTests(unittest.TestCase):
   cls.conditions={p.stem:json.loads(p.read_text(encoding='utf-8')) for p in (ROOT/'data/conditions').glob('*.json')}
   cls.topic_count=len(cls.conditions)
   cls.knowledge={p.stem:json.loads(p.read_text(encoding='utf-8')) for p in (ROOT/'data/knowledge').glob('*.json')}
-  cls.server_context=serve(ROOT);local_origin=cls.server_context.__enter__()
-  cls.origin=os.environ.get('GUIDE_URL',local_origin).rstrip('/')
+  cls.server=None
+  if os.environ.get('GUIDE_URL'):
+   cls.origin=os.environ['GUIDE_URL'].rstrip('/')
+  else:
+   import uvicorn
+   from src.guide.api import create_app
+   dsn=os.environ.get('HEALTHCARE_TEST_READ_DSN')
+   if not dsn:raise RuntimeError('Set HEALTHCARE_TEST_READ_DSN to the initialized dedicated test database')
+   build(ROOT)
+   cls.socket=socket.socket();cls.socket.bind(('127.0.0.1',0))
+   cls.origin=f'http://127.0.0.1:{cls.socket.getsockname()[1]}/healthcare'
+   cls.server=uvicorn.Server(uvicorn.Config(create_app(dsn,root=ROOT),log_level='error'))
+   cls.thread=threading.Thread(target=cls.server.run,kwargs={'sockets':[cls.socket]},daemon=True);cls.thread.start()
+   deadline=time.monotonic()+15
+   while not cls.server.started and cls.thread.is_alive() and time.monotonic()<deadline:time.sleep(.05)
+   if not cls.server.started:raise RuntimeError('HTTP service did not start')
   cls.pw=sync_playwright().start()
   executable=os.environ.get('CHROMIUM_EXECUTABLE') or shutil.which('chromium')
   cls.browser=cls.pw.chromium.launch(headless=True,executable_path=executable,args=['--no-sandbox'])
  @classmethod
- def tearDownClass(cls):cls.browser.close();cls.pw.stop();cls.server_context.__exit__(None,None,None)
+ def tearDownClass(cls):
+  cls.browser.close();cls.pw.stop()
+  if cls.server:cls.server.should_exit=True;cls.thread.join(timeout=10);cls.socket.close()
  def setUp(self):
   self.context=self.browser.new_context(viewport={'width':1440,'height':1000},accept_downloads=True)
   self.page=self.context.new_page();self.errors=[];self.http=[]
   if os.environ.get('GUIDE_URL'):self.page.set_default_navigation_timeout(120000)
   self.page.on('pageerror',lambda e:self.errors.append(str(e)))
+  self.requests=[]
+  self.page.on('request',lambda req:self.requests.append({'url':req.url,'body':req.post_data or ''}))
   self.page.on('request',lambda req:self.http.append(req.url) if req.url.startswith(('https:','http:')) else None)
-  self.load_page(ROOT/'index.html', self.origin);self.page.wait_for_selector('.card')
+  self.load_page(ROOT/'index.html', self.origin);self.page.wait_for_selector('#result-view[data-catalog-status="ready"]')
  def load_page(self, path, origin):
-  if os.environ.get('BROWSER_TRANSPORT') == 'html':
-   self.page.set_content(path.read_text(encoding='utf-8'), wait_until='load')
-  else:
-   self.page.goto(origin+'/index.html')
+  self.page.goto(origin+'/')
  def tearDown(self):
   self.assertEqual(self.errors,[],'Browser script errors');self.context.close()
- def test_offline_no_remote_requests(self):
-  self.assertEqual(self.page.locator('.card').count(),self.topic_count);self.assertTrue(all(url.startswith(self.origin+'/') for url in self.http))
+ def test_online_shell_uses_only_same_origin_and_paged_catalog(self):
+  self.assertEqual(self.page.locator('.card').count(),min(50,self.topic_count));self.assertTrue(all(url.startswith(self.origin+'/') for url in self.http))
+  shell=self.page.locator('#guide-data').text_content();self.assertEqual(json.loads(shell)['conditions'],[])
+  self.assertNotIn('diagnosis',json.dumps(json.loads(shell)['knowledge']))
+  self.assertFalse(any('/conditions/' in url for url in self.http))
   self.assertEqual(self.page.locator('#warning,.card .badge').count(),0)
-  self.assertEqual(self.page.locator('#metrics strong').all_text_contents(),['72','32','2'])
+  specialties=len({d for c in self.conditions.values() for d in c['departments']})
+  self.assertEqual(self.page.locator('#metrics strong').all_text_contents(),[str(self.topic_count),str(specialties),'2'])
   self.page.click('#content-info-link')
   self.assertTrue(self.page.locator('#evidence-summary').is_visible())
   self.assertIn('0 个主题完成临床签审',self.page.locator('#evidence-summary').inner_text())
- def test_file_can_reopen_without_network(self):
-  if os.environ.get('BROWSER_TRANSPORT')=='html':self.skipTest('In-memory mode cannot verify offline file access')
-  self.context.set_offline(True);self.page.goto((ROOT/'index.html').as_uri())
-  self.assertEqual(self.page.locator('.card').count(),self.topic_count)
-  self.page.fill('#query','普通感冒');self.page.locator('.card[data-id="common-cold"] button').click()
-  self.assertEqual(self.page.locator('.detail-section').count(),14)
-  self.assertGreater(self.page.locator('#detail-care li').count(),0)
+ def test_database_failure_shows_error_and_keeps_emergency_rules(self):
+  self.page.route('**/api/v1/**',lambda route:route.fulfill(status=503,json={'error':'unavailable'}))
+  self.page.reload();self.page.wait_for_selector('#result-view[data-catalog-status="error"]')
+  self.assertIn('无法加载',self.page.locator('#catalog-status').inner_text())
+  self.assertNotIn('未找到匹配',self.page.locator('#cards').inner_text())
+  self.page.fill('#query','胸痛 呼吸困难');expect(self.page.locator('[data-rule="chest-pain-danger"]')).to_be_visible()
+  self.assertTrue(self.page.locator('#download').is_disabled())
  def test_short_search_and_detail(self):
   self.page.fill('#query','普通感冒');self.assertEqual(self.page.locator('.card').first.get_attribute('data-id'),'common-cold')
   self.page.locator('.card').first.locator('button').click();self.assertTrue(self.page.locator('#detail').is_visible())
-  self.assertEqual(self.page.locator('.detail-section').count(),14)
+  expect(self.page.locator('.detail-section')).to_have_count(14)
   self.page.keyboard.press('Escape');self.assertFalse(self.page.locator('#detail').is_visible())
  def test_safety_independent_of_filter(self):
   self.page.select_option('#domain','ophthalmic');self.page.fill('#query','胸痛 呼吸困难')
@@ -89,10 +93,10 @@ class BrowserTests(unittest.TestCase):
   for loc in ['en','zh-CN','es','fr','pt-BR','ar','ja','ko','de','ru','hi','id']:
    self.page.select_option('#locale',loc);self.assertEqual(self.page.locator('html').get_attribute('lang'),loc)
    self.assertEqual(self.page.locator('#fallback').is_visible(),loc not in ('zh-CN','en'))
-   self.assertEqual(self.page.locator('.card').count(),self.topic_count)
+   self.assertEqual(self.page.locator('.card').count(),min(50,self.topic_count))
    self.assertEqual(self.page.locator('html').get_attribute('dir'),'rtl' if loc=='ar' else 'ltr')
  def test_all_topic_comparison_and_csv(self):
-  self.page.click('#matrix');self.assertEqual(self.page.locator('#comparison tbody tr').count(),self.topic_count)
+  self.page.click('#matrix');expect(self.page.locator('#comparison tbody tr')).to_have_count(min(50,self.topic_count))
   self.assertEqual(self.page.locator('#comparison thead th').count(),16)
   with self.page.expect_download() as info:self.page.click('#download')
   download=info.value;data=Path(download.path()).read_text(encoding='utf-8-sig')
@@ -101,50 +105,43 @@ class BrowserTests(unittest.TestCase):
   self.assertIn('editorial_draft',data);self.assertEqual(len(rows[0]),22)
  def test_all_matrix_ignores_search_filter(self):
   self.page.fill('#query','普通感冒');self.assertLess(self.page.locator('.card').count(),self.topic_count)
-  self.page.click('#matrix');self.assertEqual(self.page.locator('#comparison tbody tr').count(),self.topic_count)
+  self.page.click('#matrix');expect(self.page.locator('#comparison tbody tr')).to_have_count(min(50,self.topic_count))
  def test_selected_comparison(self):
   self.page.locator('.card input[type=checkbox]').nth(0).check();self.page.locator('.card input[type=checkbox]').nth(1).check();self.page.click('#compare')
-  self.assertEqual(self.page.locator('#comparison tbody tr').count(),2)
+  expect(self.page.locator('#comparison tbody tr')).to_have_count(2)
  def test_query_xss_and_no_history(self):
   self.page.fill('#query','<img src=x onerror=alert(1)>')
   self.assertEqual(self.page.locator('#cards img').count(),0)
   self.assertNotIn('onerror',self.page.url)
-  if os.environ.get('BROWSER_TRANSPORT') != 'html':
-   self.assertEqual(self.page.evaluate('localStorage.length'),0)
-   self.assertEqual(self.page.evaluate('sessionStorage.length'),0)
-  else:
-   code=(ROOT/'src/web/app.mjs').read_text()
-   self.assertNotIn('localStorage',code);self.assertNotIn('sessionStorage',code)
+  self.assertEqual(self.page.evaluate('localStorage.length'),0)
+  self.assertEqual(self.page.evaluate('sessionStorage.length'),0)
  def test_mobile_layout_no_body_overflow(self):
   self.page.set_viewport_size({'width':390,'height':844})
   self.assertLessEqual(self.page.evaluate('document.documentElement.scrollWidth'),390)
   self.page.click('#matrix')
   self.assertLessEqual(self.page.evaluate('document.documentElement.scrollWidth'),390)
  def test_data_xss_does_not_escape_json_script(self):
-  with tempfile.TemporaryDirectory() as t:
-   r=Path(t);shutil.copytree(ROOT/'src',r/'src');shutil.copytree(ROOT/'data',r/'data')
-   p=r/'data/conditions/acne.json';c=json.loads(p.read_text(encoding='utf-8'));c['names']['zh-CN']='</script><img src=x onerror="window.BAD=1">'
-   c['sections']['summary']['text']['zh-CN']='Plain overview.\n\n- <img src=x onerror="window.BAD=1">';p.write_text(json.dumps(c,ensure_ascii=False),encoding='utf-8')
-   kp=r/'data/knowledge/lifecycle.json';knowledge=json.loads(kp.read_text(encoding='utf-8'));entry=knowledge['entries'][0]
-   entry['title']['zh-CN']='</script><img src=x onerror="window.BAD=1">'
-   entry['sections'][0]['text']['zh-CN']='Explanation.\n\n- <img src=x onerror="window.BAD=1">';kp.write_text(json.dumps(knowledge,ensure_ascii=False),encoding='utf-8')
-   build(r)
-   with serve(r) as origin:
-    self.load_page(r/'index.html',origin);self.page.wait_for_selector('.card')
-   self.assertIsNone(self.page.evaluate('window.BAD'));self.assertEqual(self.page.locator('.card img').count(),0)
-   self.assertIn('</script>',self.page.locator('.card[data-id="acne"] h3').inner_text())
-   self.page.locator('.card[data-id="acne"] button').click()
-   self.assertEqual(self.page.locator('#detail-summary img').count(),0)
-   self.assertIn('<img',self.page.locator('#detail-summary li').inner_text())
-   self.assertIsNone(self.page.evaluate('window.BAD'))
-   self.page.click('#close-detail');self.page.click('#mode-lifecycle')
-   self.assertIn('</script>',self.page.locator('.knowledge-card h3').first.inner_text())
-   self.page.locator('.knowledge-card button').first.click()
-   self.assertIn('<img',self.page.locator('.knowledge-section li').first.inner_text())
-   self.assertEqual(self.page.locator('#knowledge-view img').count(),0)
-   self.assertIsNone(self.page.evaluate('window.BAD'))
+  marker='</script><img src=x onerror="window.BAD=1">'
+  def modify(route):
+   response=route.fetch();data=response.json()
+   if '/catalog?' in route.request.url:
+    next(c for c in data['items'] if c['id']=='acne')['names']['zh-CN']=marker
+   elif '/conditions/acne?' in route.request.url:
+    data['condition']['sections']['summary']['text']['zh-CN']='Plain overview.\n\n- '+marker
+   elif '/knowledge/lifecycle?' in route.request.url:
+    entry=data['module']['entries'][0];entry['title']['zh-CN']=marker;entry['sections'][0]['text']['zh-CN']='Explanation.\n\n- '+marker
+   route.fulfill(response=response,json=data)
+  self.page.route('**/api/v1/**',modify);self.page.reload();self.page.wait_for_selector('#result-view[data-catalog-status="ready"]')
+  self.assertIsNone(self.page.evaluate('window.BAD'));self.assertEqual(self.page.locator('.card img').count(),0)
+  self.assertIn('</script>',self.page.locator('.card[data-id="acne"] h3').inner_text())
+  self.page.locator('.card[data-id="acne"] button').click();expect(self.page.locator('.detail-section')).to_have_count(14)
+  self.assertEqual(self.page.locator('#detail-summary img').count(),0);self.assertIn('<img',self.page.locator('#detail-summary li').inner_text())
+  self.page.click('#close-detail');self.page.click('#mode-lifecycle');expect(self.page.locator('.knowledge-card')).to_have_count(len(self.knowledge['lifecycle']['entries']))
+  self.assertIn('</script>',self.page.locator('.knowledge-card h3').first.inner_text())
+  self.page.locator('.knowledge-card button').first.click();self.assertIn('<img',self.page.locator('.knowledge-section li').first.inner_text())
+  self.assertEqual(self.page.locator('#knowledge-view img').count(),0);self.assertIsNone(self.page.evaluate('window.BAD'))
  def test_source_links_are_safe_external(self):
-  self.page.locator('.card').first.locator('button').click();links=self.page.locator('#detail-body a[target="_blank"]')
+  self.page.locator('.card').first.locator('button').click();expect(self.page.locator('.detail-section')).to_have_count(14);links=self.page.locator('#detail-body a[target="_blank"]')
   self.assertGreater(links.count(),1)
   for a in links.all():self.assertTrue(a.get_attribute('href').startswith('https://'));self.assertIn('noopener',a.get_attribute('rel'))
  def select_skin_department(self):
@@ -159,11 +156,11 @@ class BrowserTests(unittest.TestCase):
   actual=self.page.locator('.card').evaluate_all('(nodes)=>nodes.map(n=>n.dataset.id).sort()')
   self.assertEqual(actual,expected)
   self.assertEqual(self.page.locator('[data-department="dermatology"]').get_attribute('aria-current'),'page')
-  self.page.click('#show-all');self.assertEqual(self.page.locator('.card').count(),self.topic_count)
+  self.page.click('#show-all');self.assertEqual(self.page.locator('.card').count(),min(50,self.topic_count))
  def test_group_count_is_union_and_filters_intersect(self):
   self.page.locator('.department-group[data-group="general-emergency"]>summary').click()
   expected=sum(bool({'primary-care','emergency'}&set(c['departments'])) for c in self.conditions.values())
-  self.assertEqual(self.page.locator('.card').count(),expected)
+  self.assertEqual(self.page.locator('.card').count(),min(50,expected))
   self.page.select_option('#kind','symptom')
   expected_ids=sorted(c['id'] for c in self.conditions.values() if c['kind']=='symptom' and {'primary-care','emergency'}&set(c['departments']))
   self.assertEqual(self.page.locator('.card').evaluate_all('(ns)=>ns.map(n=>n.dataset.id).sort()'),expected_ids)
@@ -189,6 +186,7 @@ class BrowserTests(unittest.TestCase):
   self.page.click('#close-detail');self.assertTrue(self.page.locator('.card[data-id="acne"] input').is_checked())
  def test_full_body_lists_toc_and_danger_first(self):
   self.page.fill('#query','common cold');self.page.locator('.card[data-id="common-cold"] button').click()
+  expect(self.page.locator('.detail-section')).to_have_count(14)
   self.assertEqual(self.page.locator('.detail-section').first.get_attribute('id'),'detail-red_flags')
   self.assertEqual(self.page.locator('.detail-toc a').count(),14)
   expected=sum(s['text']['zh-CN'].count('\n- ') for s in self.conditions['common-cold']['sections'].values())
@@ -263,7 +261,7 @@ class BrowserTests(unittest.TestCase):
  def test_cancer_entry_reuses_disease_and_shared_factor_with_locale_state(self):
   entry=next(e for e in self.knowledge['cancer']['entries'] if 'breast-cancer' in e['condition_ids'] and e['factor_ids'])
   self.page.click('#mode-cancer')
-  self.assertEqual(self.page.locator('.knowledge-card').count(),len(self.knowledge['cancer']['entries']))
+  expect(self.page.locator('.knowledge-card')).to_have_count(len(self.knowledge['cancer']['entries']))
   self.page.locator(f'.knowledge-card[data-entry="{entry["id"]}"] button').click()
   self.page.locator('.knowledge-toc a').last.click()
   self.assertEqual(self.page.evaluate('document.activeElement.id'),'entry-'+entry['id']+'-'+entry['sections'][-1]['id'])
@@ -274,13 +272,13 @@ class BrowserTests(unittest.TestCase):
   self.page.get_by_role('button',name=self.conditions['breast-cancer']['names']['en'],exact=True).click()
   self.assertEqual(self.page.locator('#detail-title').inner_text(),self.conditions['breast-cancer']['names']['en'])
   self.page.select_option('#detail-locale','ar');self.page.click('#close-detail')
-  self.assertEqual(self.page.evaluate('document.activeElement.id'),'knowledge-entry-title')
+  expect(self.page.locator('#knowledge-entry-title')).to_be_focused()
   self.assertEqual(self.page.locator('.knowledge-article').get_attribute('data-entry'),entry['id'])
   factor=next(e for e in self.knowledge['lifecycle']['entries'] if e['id']==entry['factor_ids'][0])
   self.page.get_by_role('button',name=factor['title']['en'],exact=True).click()
   self.assertEqual(self.page.locator('#mode-lifecycle').get_attribute('aria-pressed'),'true')
-  self.assertEqual(self.page.locator('.knowledge-article').get_attribute('data-entry'),factor['id'])
-  self.assertEqual(self.page.evaluate('document.activeElement.id'),'knowledge-entry-title')
+  expect(self.page.locator('.knowledge-article')).to_have_attribute('data-entry',factor['id'])
+  expect(self.page.locator('#knowledge-entry-title')).to_be_focused()
  def test_lifecycle_stage_group_intersection_and_mobile_fallback(self):
   self.page.set_viewport_size({'width':390,'height':844});self.page.click('#mode-lifecycle')
   module=self.knowledge['lifecycle'];stage=next(s for s in module['stages'] if s['kind']=='age')
@@ -308,12 +306,84 @@ class BrowserTests(unittest.TestCase):
   self.assertTrue(all(url.startswith(self.origin+'/') for url in self.http))
   self.assertEqual(self.page.evaluate('localStorage.length'),0)
   self.assertEqual(self.page.evaluate('sessionStorage.length'),0)
- def test_knowledge_offline_reopen_and_section_references(self):
-  if os.environ.get('BROWSER_TRANSPORT')=='html':self.skipTest('In-memory mode cannot verify offline file access')
-  self.context.set_offline(True);self.page.goto((ROOT/'index.html').as_uri());self.page.click('#mode-lifecycle')
-  self.assertEqual(self.page.locator('.knowledge-card').count(),len(self.knowledge['lifecycle']['entries']))
+ def test_knowledge_lazy_request_and_section_references(self):
+  self.assertFalse(any('/knowledge/' in url for url in self.http))
+  self.page.click('#mode-lifecycle')
+  expect(self.page.locator('.knowledge-card')).to_have_count(len(self.knowledge['lifecycle']['entries']))
+  self.assertTrue(any('/knowledge/lifecycle?' in url for url in self.http))
   self.page.locator('.knowledge-card button').first.click()
   for section in self.page.locator('.knowledge-article .knowledge-section').all():
    links=section.locator('.source-list a');self.assertGreater(links.count(),0)
    for a in links.all():self.assertTrue(a.get_attribute('href').startswith('https://'));self.assertIn('noopener',a.get_attribute('rel'))
+ def test_selection_persists_across_pages_and_export_includes_both(self):
+  first=self.page.locator('.card').first.get_attribute('data-id');self.page.locator('.card input').first.check()
+  self.page.locator('#cards-pages button').last.click();second=self.page.locator('.card').first.get_attribute('data-id')
+  self.page.locator('.card input').first.check();self.page.locator('#cards-pages button').first.click()
+  self.assertTrue(self.page.locator(f'.card[data-id="{first}"] input').is_checked())
+  self.page.click('#compare');expect(self.page.locator('#comparison tbody tr')).to_have_count(2)
+  self.assertEqual(set(self.page.locator('#comparison tbody tr').evaluate_all('(ns)=>ns.map(n=>n.dataset.id)')),{first,second})
+  with self.page.expect_download() as info:self.page.click('#download')
+  import csv,io
+  records=list(csv.DictReader(io.StringIO(Path(info.value.path()).read_text(encoding='utf-8-sig'))))
+  self.assertEqual({r['id'] for r in records},{first,second})
+ def test_failed_csv_preserves_reading_and_explains_failure(self):
+  self.page.route('**/exports/conditions.csv',lambda route:route.fulfill(status=503,json={'detail':'unavailable'}))
+  self.page.click('#download');expect(self.page.locator('#export-status')).to_be_visible()
+  self.assertEqual(self.page.locator('.card').count(),50);self.assertTrue(self.page.url.endswith('/healthcare/'))
+ def test_search_and_safety_inputs_do_not_make_requests(self):
+  before=len(self.requests);probe='private-local-probe-920174'
+  self.page.fill('#query',probe);self.page.locator('#context summary').click()
+  self.page.fill('#age','2.5');self.page.fill('#temperature','38.6');self.page.wait_for_timeout(100)
+  self.assertEqual(len(self.requests),before)
+  self.assertNotIn(probe,json.dumps(self.requests));self.assertEqual(self.page.evaluate('localStorage.length+sessionStorage.length'),0)
+ def test_all_content_requests_use_the_bootstrap_release(self):
+  release=self.page.locator('html').get_attribute('data-release-id')
+  self.page.locator('.card').first.locator('button').click();expect(self.page.locator('.detail-section')).to_have_count(14)
+  self.page.click('#close-detail');self.page.click('#matrix');expect(self.page.locator('#comparison tbody tr')).to_have_count(50)
+  from urllib.parse import urlparse,parse_qs
+  for request in self.requests:
+   if '/api/v1/' not in request['url'] or request['url'].endswith('/bootstrap'):continue
+   actual=json.loads(request['body'])['release_id'] if request['body'] else parse_qs(urlparse(request['url']).query)['release_id'][0]
+   self.assertEqual(actual,release)
+ def test_late_detail_response_cannot_replace_new_selection(self):
+  pending=[]
+  def delay(route):pending.append((route,route.fetch()))
+  self.page.route('**/conditions/acne?*',delay)
+  self.page.locator('.card[data-id="acne"] button').click();self.page.wait_for_timeout(100)
+  self.assertTrue(pending);self.page.click('#close-detail')
+  other=next(c for c in self.conditions.values() if c['id']=='allergic-rhinitis')
+  self.page.locator('.card[data-id="allergic-rhinitis"] button').click();expect(self.page.locator('.detail-section')).to_have_count(14)
+  route,response=pending[0];route.fulfill(response=response);self.page.wait_for_timeout(100)
+  self.assertEqual(self.page.locator('#detail-title').inner_text(),other['names']['zh-CN'])
+ def test_catalog_incomplete_state_does_not_claim_full_search(self):
+  pending=[];catalog=[]
+  def split(route):
+   if 'offset=0&' in route.request.url:
+    data=route.fetch().json();catalog.extend(data['items']);data['items']=catalog[:36];route.fulfill(json=data)
+   else:pending.append(route)
+  self.page.route('**/catalog?*',split);self.page.reload()
+  self.page.wait_for_selector('.card');expect(self.page.locator('#catalog-status')).to_contain_text('目录仍在加载')
+  self.assertTrue(self.page.locator('#download').is_disabled());self.assertEqual(self.page.locator('.card').count(),36)
+  self.assertTrue(pending);release=self.page.locator('html').get_attribute('data-release-id')
+  pending[0].fulfill(json={'release_id':release,'offset':36,'total':len(catalog),'items':catalog[36:]})
+  self.page.wait_for_selector('#result-view[data-catalog-status="ready"]');self.assertFalse(self.page.locator('#download').is_disabled())
+ def test_synthetic_catalog_scale_keeps_dom_bounded_and_search_local(self):
+  # Rendering capacity fixture only; these synthetic IDs are never medical coverage.
+  import copy
+  from urllib.parse import urlparse,parse_qs
+  count=13155;source=None
+  def large_catalog(route):
+   nonlocal source
+   offset=int(parse_qs(urlparse(route.request.url).query)['offset'][0])
+   if source is None:source=route.fetch().json()['items'][0]
+   items=[]
+   for i in range(offset,min(offset+1000,count)):
+    item=copy.deepcopy(source);item['id']=f'synthetic-{i}';item['names']={'zh-CN':f'容量样本 {i}', 'en':f'Capacity sample {i}'}
+    item['aliases']={'zh-CN':[], 'en':[f'unique-token-{i}']};items.append(item)
+   route.fulfill(json={'release_id':self.page.locator('html').get_attribute('data-release-id'),'offset':offset,'total':count,'items':items})
+  self.page.route('**/catalog?*',large_catalog);self.page.reload()
+  self.page.wait_for_selector('#result-view[data-catalog-status="ready"]',timeout=60000)
+  self.assertEqual(self.page.locator('.card').count(),50);self.assertIn(str(count),self.page.locator('#result-count').inner_text())
+  self.page.fill('#query','unique-token-13154');self.assertEqual(self.page.locator('.card').first.get_attribute('data-id'),'synthetic-13154')
+  self.assertFalse(any('unique-token' in request['url'] or 'unique-token' in request['body'] for request in self.requests))
 if __name__=='__main__':unittest.main()

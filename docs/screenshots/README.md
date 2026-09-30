@@ -28,3 +28,7 @@
 `public-healthcare.png` 来自内置浏览器实际访问 `https://www.zengyuwei.cn/healthcare/`，展示线上栏目与72/32/2统计。公网下载的完整页面SHA-256与本地构建一致。
 
 `public-home-entry.png` 来自正式个人主页，展示新增医学入口及保留的原有项目。
+
+## PostgreSQL在线版本（2026-09-30）
+
+新增postgres-desktop-zh.png和postgres-mobile-ar-detail.png来自真实PostgreSQL、Uvicorn HTTP与Chromium。35项浏览器检查通过；本版本不承诺离线正文，旧离线截图和记录仅说明历史版本。

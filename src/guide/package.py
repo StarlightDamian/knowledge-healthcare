@@ -6,7 +6,7 @@ from pathlib import Path
 from .model import dump_json
 EXCLUDED={'__pycache__','.git','.pytest_cache','node_modules','.venv','test-results'}
 def files(root:Path):
-    return sorted(p for p in root.rglob('*') if p.is_file() and not (set(p.relative_to(root).parts)&EXCLUDED) and p.suffix not in ('.pyc','.zip') and p.name!='MANIFEST.sha256.json')
+    return sorted(p for p in root.rglob('*') if p.is_file() and not (set(p.relative_to(root).parts)&EXCLUDED) and p.suffix != '.pyc' and (p.suffix != '.zip' or p.relative_to(root).as_posix() == 'data/icd/SimpleTabulation-ICD-11-MMS-en-2026-01.zip') and p.name!='MANIFEST.sha256.json')
 def manifest(root:Path):
     m={p.relative_to(root).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in files(root)}
     dump_json(root/'MANIFEST.sha256.json',m);return m

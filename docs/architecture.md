@@ -2,7 +2,7 @@
 
 ## 运行时
 
-浏览器读取单个预构建 HTML，解析内嵌 JSON，构建词法索引。全部计算在当前页面完成，不依赖后端、模型或第三方搜索。页面加载不读取单个 JSON 接口，因此离线使用不受 `file://` 的 fetch 跨源规则影响；浏览器自身仍可能禁止打开文件。
+Git保存唯一编辑源，经校验导入PostgreSQL不可变发布版本。FastAPI使用只读角色提供同源接口；网页固定启动时的release_id，目录分页载入，病症正文与知识模块按需读取。搜索和婴儿月龄/体温规则始终在浏览器中计算。
 
 ```mermaid
 flowchart LR
@@ -13,7 +13,7 @@ flowchart LR
  S --> A[固定危险提示区域; 不输出安全保证]
  F --> C[相关健康主题卡]
  C --> D[14维度详情与来源/审核状态]
- C --> M[任意多选/全72主题比较]
+ C --> M[跨页多选/每页50主题比较]
  M --> E[22列CSV; 保留审核状态和来源]
 ```
 
@@ -21,11 +21,11 @@ flowchart LR
 
 ## 构建时
 
-`data/*.json / data/conditions/*.json / data/knowledge/*.json → load → validate → CSS/JS/JSON 内嵌 → CSP 内容哈希 → index.html`。同一数据和构建日期环境的输出可重复。构建同时更新病症轻量索引与统计审计；数据变更后不应手改生成物。
+`data → load → validate → 小型安全规则/界面资源 + CSS/JS → CSP内容哈希 → index.html`。同一数据和构建日期环境的输出可重复。构建同时更新病症轻量索引与统计审计；数据变更后不应手改生成物。
 
-Python 核心运行时只有标准库。可选 JSON Schema 测试依赖 `jsonschema`。JS 是 ES 模块，构建器只拼接显式列出的运行时模块并移除其模块声明，不是通用 JS bundler；增加复杂导入或多行导入时必须调整构建与回归测试。
+API运行时使用FastAPI、Uvicorn和psycopg；内容校验主要使用标准库。可选 JSON Schema 测试依赖 `jsonschema`。JS 是 ES 模块，构建器只拼接显式列出的运行时模块并移除其模块声明，不是通用 JS bundler；增加复杂导入或多行导入时必须调整构建与回归测试。
 
-`knowledge.py` 加载并验证 `cancer` 与 `lifecycle` 两个独立知识模块，`model.load()` 将它们放在 `data.knowledge` 中。构建器将整个对象嵌入现有 JSON payload；`knowledge.mjs` 位于 `text.mjs` 之后、`app.mjs` 之前，复用安全文本渲染。运行时仍只需一个 HTML，不读取 Desktop 研报或额外 JSON 文件。
+`knowledge.py` 加载并验证 `cancer` 与 `lifecycle` 两个独立知识模块，`model.load()` 将它们放在 `data.knowledge` 中。API按模块读取固定版本的JSON；`knowledge.mjs` 位于 `text.mjs` 之后、`app.mjs` 之前，复用安全文本渲染。运行时需要同源API和数据库，不读取Desktop研报。
 
 ## 数据契约
 
@@ -67,7 +67,7 @@ Unicode NFKC、英文小写、中文二元切词和词法 BM25。名称、别名
 
 ## 渐进式读取
 
-Agent 先读取 `data/catalog/index.json` 的标题、分类和路径，再选读 `data/conditions/{id}.json`，最后按 `source_ids` 读取证据登记。全库比较可以读 JSON 或 CSV，不必让模型一次吞下所有段落。没有虚构的 OpenAPI 服务端；这些是静态数据文件。
+Agent 先读取 `data/catalog/index.json` 的标题、分类和路径，再选读 `data/conditions/{id}.json`，最后按 `source_ids` 读取证据登记。全库比较可以读 JSON 或 CSV，不必让模型一次吞下所有段落。Git数据仍可渐进读取；线上提供真实的 `/healthcare/api/v1` API。
 
 研报知识另读 `data/knowledge/cancer.json` 或 `data/knowledge/lifecycle.json`，按条目或阶段引用找到相关正文；来源登记保留在各模块内。原始 Markdown 只用于研究追溯，不是另一份运行时正文。
 
@@ -86,3 +86,9 @@ Agent 先读取 `data/catalog/index.json` 的标题、分类和路径，再选�
 用户输入和数据使用 `textContent`；JSON 脚本转义 `<>&` 和分隔符；CSP 以哈希限制可执行脚本/样式；没有远程连接；外部来源仅 HTTPS；CSV 对公式注入做转义。SHA256 清单检出意外改动，**不是数字签名**。无密码、API Key、患者病历或管理员后门。
 
 医学发布记录至少需要一名医生，不能仅由两名药师登记满足整篇疾病主题的发布门槛；这仍不替代真实资质核验。
+
+## 不可变发布存储
+
+`content_revisions`保存JSON和内容哈希，`releases`保存清单与Git来源，`release_items`关联内容修订，`publication_state`保存当前指针。唯一约束、外键和触发器防止篡改已发布内容。导入角色和只读角色分离；参数化SQL处理请求参数，未知版本不会回退到新版本。
+
+初始迁移逐字保留72篇正文、来源及两个知识模块，并保留数组顺序和既有审核状态。新增或修改的医学主张需要当前哈希绑定的独立来源支持与对抗审核记录。WHO完整快照、纳入规则和逐类别处置保存在 `data/icd` 和 `reports/icd-*`；知识地图及别名不提升完整病症覆盖。

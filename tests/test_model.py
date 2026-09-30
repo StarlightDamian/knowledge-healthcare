@@ -63,8 +63,8 @@ class ModelTests(unittest.TestCase):
   d=self.altered();del d['locales']['fr']['strings']['sourceInfo'];self.assertRaises(ValidationError,validate,d)
  def test_script_json_escaping(self):
   x={'x':'</script><script>alert(1)</script>&\u2028'};s=script_json(x);self.assertNotIn('<',s);self.assertEqual(json.loads(s),x)
- def test_bundle_is_offline(self):
-  s=bundle(ROOT);self.assertNotIn('fetch(',s);self.assertNotIn('localStorage',s);self.assertNotIn('import ',s)
+ def test_bundle_uses_api_without_persisting_inputs(self):
+  s=bundle(ROOT);self.assertIn('class GuideAPI',s);self.assertNotIn('localStorage',s);self.assertNotIn('import ',s)
  def test_source_impact(self):
   r=impact(self.data,'common-cold-nhs');self.assertEqual(r[0]['id'],'common-cold')
   expected={key for key,sec in next(c for c in self.data['conditions'] if c['id']=='common-cold')['sections'].items() if 'common-cold-nhs' in sec['source_ids']}

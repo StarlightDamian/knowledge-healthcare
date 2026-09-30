@@ -1,0 +1,41 @@
+2026-09-30 — PostgreSQL / HTTP / Chromium acceptance
+
+Exact command executed:
+ssh -o BatchMode=yes st45v-34464p '/home/user/.local/share/knowledge-healthcare/venv312/bin/python /home/user/.local/state/knowledge-healthcare/postgres-migration-20260930/browser-runner.py'
+
+Runner selects HEALTHCARE_TEST_READ_DSN from the private server client-env.json,
+changes cwd to the staged candidate, and runs:
+python -m unittest tests.e2e.test_browser -v
+
+Actual final result:
+----------------------------------------------------------------------
+Ran 35 tests in 18.013s
+
+OK
+
+Environment: PostgreSQL 18.6; Python 3.12; FastAPI/Uvicorn over real HTTP;
+Playwright 1.57.0 Chromium 143.0.7499.4 build 1200.
+Published test release: rel-1ea33550d2e8b7c74c9949242dd0ab1a7d4525c53f96e2621462a5e6512a2ee8
+Built shell: 161950 bytes. Initial embedded conditions: zero.
+
+Verified: 12 locales, desktop/mobile, Arabic physical layout and English body
+fallback; two-level navigation; local BM25 search; no search/age/temperature
+requests or browser storage; independent emergency rules under API failure;
+detail/table/source/knowledge loading; stale-detail-response rejection; pinned
+release IDs; 50-item card/matrix pagination; cross-page selection; complete
+22-column streaming CSV with multiline text; failed export stays on reading
+page; plaintext XSS handling; centralized editorial status.
+
+Synthetic capacity fixture: 13155 compact catalog entries, complete background
+loading, 50 DOM cards, successful last-entry search with no query sent upstream.
+Synthetic entries are rendering fixtures and are never counted as medical coverage.
+The separate backend capacity check covers actual database import and streaming.
+
+Earlier real-browser failures corrected: Origin:null on no-referrer native form
+downloads requires browser Sec-Fetch-Site:same-origin; hidden export form remains
+connected through submission; asynchronous dialog close focus is awaited.
+
+Screenshots from the same real HTTP service:
+test-results/postgres-desktop-zh.png
+test-results/postgres-mobile-ar.png
+test-results/postgres-mobile-ar-detail.png

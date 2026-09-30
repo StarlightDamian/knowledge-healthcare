@@ -1,6 +1,6 @@
 # 开放医学指南 · Open Medical Guide
 
-**v0.1.0-preview · 支持本地检索、科室导航和横向比较的医学知识库。**
+**v0.2.0-online · 支持本地检索、科室导航和横向比较的医学知识库。**
 
 **在线访问：[https://www.zengyuwei.cn/healthcare/](https://www.zengyuwei.cn/healthcare/)**
 
@@ -14,7 +14,7 @@
 
 新增“癌症地图”和“全生命周期”入口。癌症地图按34个统计癌症分组及两个补充分组组织，分别解释病理、分期、治疗路径、证据和负担口径；全生命周期将健康影响拆为20个共用因素，按6个互不重叠的年龄段查阅，孕产作为附加情境。乳腺癌、结直肠癌等复用已有病症正文，癌症风险和年龄行动引用同一份健康因素。三个入口分别保留查询；点击科室可返回病症主题。详见 [MECE 内容映射](docs/research-mece-map.md)。
 
-`index.html` 自包含全部数据、CSS 和 JavaScript；浏览不需要安装依赖。托管网页的基础访问日志和手动打开外部参考文献不在“无查询上传”的保证内。若浏览器限制本地 HTML，请使用本地 HTTP 或 GitHub Pages。页面适配手机，有语义标签、键盘操作和 RTL 布局；**未取得 WCAG 合规认证**。
+网页通过同源 API 读取 PostgreSQL 中的不可变发布版本。搜索词、月龄和体温留在浏览器；主题访问可能进入服务器日志。正文需要联网，全文可导出为 CSV。
 
 ## 内容与来源状态
 
@@ -29,42 +29,38 @@
 | 国际化 | 12 种界面语言；仅中英有医学正文，其余明确回退英语，未完成地区医学本地化 |
 | 检索 | 本地词法/BM25、名称及别名加权、中文二元切词、有限否定处理 |
 | 危险提示 | 12 条模式规则 + 小月龄婴儿发热结构化规则 |
-| 横向比较 | 全部 72 个主题矩阵；任意多选；22 列 CSV；保留来源和状态 |
+| 横向比较 | 每页50个主题；跨页多选；22列全文CSV；保留来源和状态 |
 | 癌症地图 | 36 个中英知识单元；癌症统计分组与病理、分期、分子标志物分开解释 |
 | 全生命周期 | 8 组、20 个中英健康因素；6 个年龄段与孕产附加情境引用共用因素 |
 | 扩充清单 | **198** 个仅标题待办，与完整正文分开统计 |
 | 医学签审 / 全字段证据签审 | **0 / 0** |
-| 95% 全病种覆盖 | ICD-11 MMS 2026-01 独立病症类别目标；审核未通过；完整目录及映射待建立，精确覆盖率为 `null` |
+| 95% 全病种覆盖 | ICD-11 MMS 2026-01：冻结13,155个合格类别；完整证据核验覆盖0%，未达95%；47条名称候选映射尚待语义裁定 |
 
 独立医学审阅、译文审核与危险提示规则的临床验证待完成。网页通过“内容与来源说明”和详情末尾的“来源与编辑信息”集中展示状态，每节保留参考链接。高级专业数据（如患病率、定量预后和地区药品批准）待整理，标为 `null / not_yet_curated`。
 
-已保存 [文案审查记录](reports/anti-defensive-writing-audit.md) 和 [覆盖审查数据](reports/coverage-review.json)。新增病种按冻结目录、急危重症、常见病症、其余类别和95%复核的顺序推进。
+已保存 [文案审查记录](reports/anti-defensive-writing-audit.md) 和 [冻结目录覆盖数据](reports/icd-coverage.json)。新增病种按冻结目录、急危重症、常见病症、其余类别和95%复核的顺序推进。
 
 两份研究报告的整理与重新核对见 [癌症导入记录](reports/research-cancer-import.md) 和 [生命周期导入记录](reports/research-lifecycle-import.md)。新增地图单元单独统计，不作为新增完整病症或ICD映射计入95%覆盖率。来源逐节定位，统计数值保留年份、地区和适用范围。
 
-## 30 秒使用
+## 使用
 
-解压后打开 `index.html`。受限环境也可以在本目录运行：
-
-```bash
-python -m http.server 8000
-# 浏览器打开 http://localhost:8000
-```
-
-正式站点挂载在现有服务器的 `/healthcare/`，个人主页已提供入口。GitHub 保存源码、构建网页和审查记录；推送触发检查，服务器更新采用验证后原子发布。操作与回滚见 [部署文档](docs/deployment.md)。也保留可选的手动 GitHub Pages 工作流。
+打开 [在线医学站](https://www.zengyuwei.cn/healthcare/)。GitHub 保存唯一编辑源；服务器按发布清单导入数据库，网页在一次会话内固定版本。部署和回滚见 [部署文档](docs/deployment.md)。本地静态服务器及 GitHub Pages 不提供正文 API。
 
 ## 开发、更新与验证
 
-运行环境：Python 3.10+（核心运行时仅标准库）；Node.js 22+（JavaScript 测试）；可选 JSON Schema / Playwright 测试依赖单独安装。
+运行环境：Python 3.10+、PostgreSQL 18.6、FastAPI/Uvicorn/psycopg；Node.js 22+（JavaScript 测试）；测试使用 JSON Schema 与 Playwright。
 
 ```bash
+python -m pip install -r requirements-runtime.txt -r requirements-dev.txt
 python -m src.guide validate
+python -m src.guide editorial-audit
+python -m src.guide coverage-icd
 npm test
 python -m unittest discover -s tests -p "test_*.py"
 python -m src.guide content-audit
 python -m src.guide build
 
-# 可选：完整 Schema 与浏览器集成测试
+# 浏览器检查需已初始化的独立测试库，见部署文档
 python -m pip install -r requirements-dev.txt
 python -m playwright install chromium
 python -m unittest discover -s tests/e2e -p "test_browser.py"
@@ -100,7 +96,7 @@ templates/                新主题模板
 docs/                     架构、钢人论证、证据、覆盖率、本地化、贡献和部署
 reports/                  当前检查结果和审查记录
 reports/content-expansion/逐篇来源定位、适用边界与编辑核对记录
-index.html                已构建的自包含静态网页
+index.html                已构建的在线静态网页
 ```
 
 ## 许可和责任

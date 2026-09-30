@@ -1,4 +1,4 @@
-"""Reproducible offline build. No source/network retrieval occurs during a build."""
+"""Reproducible online shell. Article bodies are read from the pinned API release."""
 from __future__ import annotations
 import base64
 import hashlib
@@ -17,7 +17,7 @@ def sha_csp(text: str) -> str:
 def bundle(root: Path) -> str:
     chunks=[]
     # Bundled modules have no imports or top-level side effects except app.mjs.
-    for filename in ('search.mjs','safety.mjs','export.mjs','text.mjs','navigation.mjs','knowledge.mjs','app.mjs'):
+    for filename in ('search.mjs','safety.mjs','export.mjs','text.mjs','navigation.mjs','knowledge.mjs','api.mjs','app.mjs'):
         s=(root/'src/web'/filename).read_text(encoding='utf-8')
         s='\n'.join(l for l in s.splitlines() if not l.startswith('import '))
         s=s.replace('export function ','function ').replace('export const ','const ').replace('export class ','class ')
@@ -27,11 +27,14 @@ def bundle(root: Path) -> str:
 
 def build(root: Path=ROOT,mode: str='preview',out: Path|None=None) -> dict:
     root=Path(root);data=load(root);stats=validate(data,mode)
-    payload={k:v for k,v in data.items() if k not in ('reviewers','backlog')}
-    payload['stats']=stats
+    safety_sources={sid for rule in data['rules']['rules'] for sid in rule['source_ids']}
+    payload={k:data[k] for k in ('locales','rules','taxonomy','departments','department_groups','fields','project')}
+    payload.update(api_base='/healthcare/api/v1/', conditions=[], studies=[], stats=stats,
+                   sources=[s for s in data['sources'] if s['id'] in safety_sources],
+                   knowledge={mid:{'id':mid,'title':module['title']} for mid,module in data['knowledge'].items()})
     css=(root/'src/web/style.css').read_text(encoding='utf-8')
     js=bundle(root); serialized=script_json(payload)
-    csp="default-src 'none'; script-src "+sha_csp(js)+' '+sha_csp(serialized)+"; style-src "+sha_csp(css)+"; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'"
+    csp="default-src 'none'; script-src "+sha_csp(js)+' '+sha_csp(serialized)+"; style-src "+sha_csp(css)+"; img-src data:; connect-src 'self'; frame-src 'self'; base-uri 'none'; form-action 'self'; object-src 'none'"
     html=(root/'src/web/template.html').read_text(encoding='utf-8')
     for name,val in {'CSP':csp,'STYLE':css,'PAYLOAD':serialized,'SCRIPT':js}.items():
         html=html.replace('{{'+name+'}}',val)

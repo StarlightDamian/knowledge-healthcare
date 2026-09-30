@@ -1,6 +1,6 @@
 # Open Medical Guide
 
-**0.1.0-preview — a self-contained health knowledge library with local search, department navigation and comparison.**
+**0.2.0-online — an online health knowledge library with local search, department navigation and comparison.**
 
 **Live site: [https://www.zengyuwei.cn/healthcare/](https://www.zengyuwei.cn/healthcare/)**
 
@@ -14,12 +14,15 @@ Two additional collections organize the supplied research reports: a cancer map 
 
 Content and sources: 72 topics (67 conditions or health concerns and five symptom entries), 1,008 bilingual sections and 303 source records. Independent medical review, translation review and clinical validation of alert rules are pending. There are zero clinician-approved topics and zero sections with completed independent claim verification. The page explains these facts in “Content and sources”; each topic provides an expandable “Sources and editorial information” panel and section-level references. [Editorial records](reports/content-expansion/) identify inspected sources and relevant sections. Three trial cards contain abstract-level summaries; a fourth contains bibliographic metadata.
 
-The 95% coverage review has not passed; exact coverage remains `null`. The denominator is eligible independent condition categories in ICD-11 MMS 2026-01. The full snapshot and category mappings are pending. The 198 title-only tasks and 56 knowledge-map units are counted separately from complete condition articles and do not raise the coverage numerator. Ten known urgent gaps and the order of work are saved in the [coverage roadmap](docs/coverage-audit-and-roadmap.md) and [coverage review data](reports/coverage-review.json). See also the [writing audit](reports/anti-defensive-writing-audit.md).
+The frozen ICD-11 MMS 2026-01 denominator contains 13,155 eligible independent categories. Fully evidence-qualified category coverage is currently 0%; reaching 95% requires 12,498 qualified categories. This measures completion of the new evidence and mapping standard, not the usefulness of existing articles or the percentage of real patients covered. The 198 title-only tasks and 56 map units remain separate. See the [coverage report](reports/icd-coverage.json) and [roadmap](docs/coverage-audit-and-roadmap.md).
 
-Open `index.html`, or run `python -m http.server 8000` from the repository root. No external CSS, fonts, JS, inference API or query analytics are required. The source records are embedded. Manually following a reference visits a third-party website; hosting providers may keep normal access logs.
+Read the [online site](https://www.zengyuwei.cn/healthcare/). Git content is validated and imported into immutable PostgreSQL releases; the same-origin API pins one release for the entire browser session. Search terms, age and temperature stay in the browser. Topic access may appear in server logs. Full CSV export remains available; full offline reading is no longer supported.
 
 ```bash
+python -m pip install -r requirements-runtime.txt -r requirements-dev.txt
 python -m src.guide validate
+python -m src.guide editorial-audit
+python -m src.guide coverage-icd
 npm test
 python -m unittest discover -s tests -p "test_*.py"
 python -m src.guide content-audit
@@ -28,9 +31,9 @@ python -m src.guide build
 python -m src.guide validate --mode clinical
 ```
 
-For optional full-schema and browser tests, install `requirements-dev.txt`, run `python -m playwright install chromium`, then `python -m unittest discover -s tests/e2e -p "test_browser.py"`. The packaged test report explicitly distinguishes in-memory DOM rendering from HTTP/file navigation verification.
+For full-schema and real PostgreSQL/HTTP browser tests, install `requirements-dev.txt`, run `python -m playwright install chromium`, then `python -m unittest discover -s tests/e2e -p "test_browser.py"`. The packaged test report explicitly distinguishes in-memory DOM rendering from HTTP/file navigation verification.
 
-The live site is mounted at `/healthcare/` on the existing server and linked from the personal homepage. GitHub stores the source, built page and audit records. Pushes run CI; server updates use a validated candidate and an atomic release switch. See the [deployment guide](docs/deployment.md) for updates and rollback. The manual GitHub Pages workflow remains an optional alternative.
+The live site is mounted at `/healthcare/` on the existing server and linked from the personal homepage. GitHub stores the source, built page and audit records. Pushes run CI; server updates use a validated candidate and an atomic release switch. See the [deployment guide](docs/deployment.md) for updates and rollback. The static GitHub Pages workflow was removed because it cannot host the required API.
 
 Implementation code is in `/src`; tests in `/tests`. Add content through the validated JSON template, not by editing the generated HTML. The clinical release gate checks recorded attestations, source/text hashes, localization and validation records; it cannot authenticate a clinician or certify regulatory status on its own. Independent governance is required.
 

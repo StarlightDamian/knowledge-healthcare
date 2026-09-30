@@ -102,14 +102,14 @@ export function createKnowledgeView({root,modules,t,txt,medicalLang,conditions,o
     if(entry.condition_ids.length){
       const related=make('section',undefined,'knowledge-related');related.append(make('h3',t('mapDiseases')));
       const buttons=make('div',undefined,'filters');
-      for(const cid of entry.condition_ids){const condition=conditions.get(cid);buttons.append(action(txt(condition.names),()=>openCondition(cid)));}
+      for(const cid of entry.condition_ids){const condition=conditions.get(cid);buttons.append(action(condition?txt(condition.names):cid,()=>openCondition(cid)));}
       related.append(buttons);article.append(related);
     }
     if(entry.factor_ids.length){
       const related=make('section',undefined,'knowledge-related');related.append(make('h3',t('mapFactors')));
       const buttons=make('div',undefined,'filters');
-      for(const id of entry.factor_ids){const factor=modules.lifecycle.entries.find(e=>e.id===id);
-        buttons.append(action(txt(factor.title),()=>openModule('lifecycle',{entryId:id})));}
+      for(const id of entry.factor_ids){const factor=(modules.lifecycle.entries||modules.lifecycle.entry_index||[]).find(e=>e.id===id);
+        buttons.append(action(factor?txt(factor.title):id,()=>openModule('lifecycle',{entryId:id})));}
       related.append(buttons);article.append(related);
     }
     const evidence=make('details',undefined,'knowledge-evidence');const key='sources:'+entry.id;evidence.dataset.memory=key;remember(evidence,key,record);

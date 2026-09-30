@@ -1,0 +1,42 @@
+2026-09-30 actual server validation; source base cc3e88b1414c1ede8737c9d78d40c3ca53b64f25 plus working-tree implementation.
+Runtime: PostgreSQL 18.6, dedicated knowledge_healthcare_test, Python 3.12, actual Uvicorn HTTP.
+No production database writes. Credentials loaded into process environment from private server file; omitted from this log.
+Commands, run in the isolated server candidate:
+  python -m unittest tests.test_store_publication tests.test_api_http -v
+  HEALTHCARE_RUN_CAPACITY=1 HEALTHCARE_PG_BIN=/mnt/raid1/03_software_engineering/01_database/postgres/18.6/bin python -m unittest tests.test_store_capacity -v
+All three HEALTHCARE_TEST_*_DSN variables are required for database tests. The capacity test requires a database name ending _test.
+
+Final integration output (after fixing source-array ordering and same-origin no-referrer form handling):
+test_catalog_projection_and_parameterized_ids ... ok
+test_exact_migration_and_idempotent_import ... ok
+test_failed_import_keeps_current_and_does_not_leave_rows ... ok
+test_immutable_content_manifest_and_release ... ok
+test_pending_candidate_hidden_then_publish_and_rollback ... ok
+test_reader_has_no_write_permissions ... ok
+test_stale_publication_does_not_replace_current ... ok
+test_formula_guards_quotes_and_embedded_lines ... ok
+test_batch_limits_ids_and_explicit_missing_items ... ok
+test_bootstrap_has_small_metadata_not_full_articles ... ok
+test_catalog_and_detail_are_fixed_to_requested_release ... ok
+test_full_csv_22_columns_multiline_and_english_fallback ... ok
+test_health_and_database_failure_not_empty_catalog ... ok
+test_knowledge_exact_and_no_static_json_fallback ... ok
+test_post_same_origin_enforcement ... ok
+Ran 15 tests in 30.046s
+OK
+
+Capacity / restore output:
+test_large_catalog_streaming_export_and_backup_restore ... ok
+Ran 1 test in 54.189s
+OK
+Synthetic conditions: 16000. These fixtures are NOT medical articles or coverage evidence.
+Import / readback / publish: 27.508s.
+Sixteen catalog pages: 10016657 bytes, 14.410s.
+Full CSV: 16000 rows, 22 columns, streaming, 5.113s.
+pg_dump custom archive: 2384761 bytes.
+Backup SHA256: cfa5406534b8e8fe555f1e38553e084bcc6a43443a7c74cb8b7196f594693a1e.
+Actual pg_restore restored original release ID and exact canonical data hash.
+Restored release: rel-1ea33550d2e8b7c74c9949242dd0ab1a7d4525c53f96e2621462a5e6512a2ee8.
+Input/restored data SHA256: 6e91caff9742add540b6a3972e8174a8e23bd6ee22c5fa86903a1e14391bcbf0.
+Restored content: 72 conditions, 56 knowledge entries.
+Source-file hashes and numeric results: reports/postgres-capacity.json.

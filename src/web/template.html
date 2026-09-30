@@ -15,7 +15,7 @@
 <div class="sidebar-heading"><a class="brand" href="#main"><span class="brand-symbol" aria-hidden="true">＋</span><span>Medical Guide<small id="brand-subtitle">开放医学指南</small></span></a><button id="menu-close" class="icon-button" type="button" aria-label="关闭科室菜单">×</button></div>
 <p class="nav-label" id="department-heading">按科室查阅</p>
 <nav id="department-nav"></nav>
-<div class="sidebar-footer"><strong id="sidebar-local">本地阅读 · 无查询上传</strong><p id="sidebar-note">按科室组织的病症知识。</p><span>Open Medical Guide</span></div>
+<div class="sidebar-footer"><strong id="sidebar-local">在线阅读 · 搜索词不上传</strong><p id="sidebar-note">按科室组织的病症知识。</p><span>Open Medical Guide</span></div>
 </aside>
 <button id="menu-backdrop" class="menu-backdrop" type="button" tabindex="-1" aria-label="关闭科室菜单" hidden></button>
 <div class="workspace">
@@ -32,8 +32,9 @@
 </section>
 <section class="safety"><details id="manual"><summary id="manual-label"></summary><p id="manual-text"></p></details><div id="alerts" role="alert" aria-live="assertive"></div><p id="safety-note" class="subtle"></p></section>
 <nav id="condition-tools" class="tools" aria-label="Compare and export"><div><button id="compare" type="button"></button><button id="matrix" type="button"></button><button id="download" type="button"></button></div><span id="selection-count" aria-live="polite"></span></nav>
-<section id="result-view"><div class="section-title"><h2 id="results-label"></h2><span id="result-count" aria-live="polite"></span></div><p id="not-diagnostic" class="subtle"></p><div id="cards" class="cards"></div></section>
-<section id="table-view" hidden><div class="section-title"><h2 id="table-title"></h2><button id="back" type="button"></button></div><p id="matrix-note" class="subtle"></p><div class="table-scroll" tabindex="0" aria-label="Comparison table"><table id="comparison"></table></div></section>
+<div id="catalog-status" role="status" aria-live="polite"></div>
+<section id="result-view"><div class="section-title"><h2 id="results-label"></h2><span id="result-count" aria-live="polite"></span></div><p id="not-diagnostic" class="subtle"></p><div id="cards" class="cards"></div><nav id="cards-pages" class="pagination" aria-label="分页 / Pagination" hidden></nav></section>
+<section id="table-view" hidden><div class="section-title"><h2 id="table-title"></h2><button id="back" type="button"></button></div><p id="matrix-note" class="subtle"></p><div id="table-status" role="status"></div><div class="table-scroll" tabindex="0" aria-label="Comparison table"><table id="comparison"></table></div><nav id="table-pages" class="pagination" aria-label="分页 / Pagination" hidden></nav></section>
 <section id="knowledge-view" aria-labelledby="knowledge-title" hidden></section>
 <section id="content-sources" class="principles" tabindex="-1"><h2 id="evidence-title"></h2><div id="evidence-summary"></div><details><summary id="studies-title"></summary><div id="studies"></div></details></section>
 <footer><p id="privacy"></p><p>MIT · Original editorial content CC BY 4.0 · Third-party sources retain their own rights.<br>© Open Medical Guide contributors · No affiliation with cited institutions.</p></footer>

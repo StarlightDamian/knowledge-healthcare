@@ -1,0 +1,31 @@
+{
+  "tested_at": "2026-09-30",
+  "git_base_commit": "cc3e88b1414c1ede8737c9d78d40c3ca53b64f25",
+  "working_tree_changes_included": true,
+  "environment": "Dedicated PostgreSQL 18.6 knowledge_healthcare_test, server Python 3.12, real Uvicorn HTTP",
+  "synthetic": true,
+  "counted_as_medical_coverage": false,
+  "conditions": 16000,
+  "test_seconds": 54.189,
+  "import_and_readback_seconds": 27.508,
+  "catalog_bytes": 10016657,
+  "catalog_seconds": 14.410,
+  "export_rows": 16000,
+  "export_columns": 22,
+  "export_seconds": 5.113,
+  "backup_bytes": 2384761,
+  "backup_sha256": "cfa5406534b8e8fe555f1e38553e084bcc6a43443a7c74cb8b7196f594693a1e",
+  "restore_exact_snapshot": true,
+  "restored_release_id": "rel-1ea33550d2e8b7c74c9949242dd0ab1a7d4525c53f96e2621462a5e6512a2ee8",
+  "input_data_sha256": "6e91caff9742add540b6a3972e8174a8e23bd6ee22c5fa86903a1e14391bcbf0",
+  "restored_condition_count": 72,
+  "restored_knowledge_entries": 56,
+  "source_files": {
+    "src/guide/api.py": "fd203c08f8df9b7c60f0e188a7b8f25d0e20d06d0a878a4f4b3e7f8e281b6dd0",
+    "src/guide/store.py": "3c958b1f1abade2dba9754a47e4e825ffcd9a89d161e90bc0d067534ae0fcad6",
+    "migrations/001_publication.sql": "faf95170bb0c10d8d2bb5d40e5f21a12fa1ff2bb10be0c2038f5e274a94860ad",
+    "tests/test_store_publication.py": "1b05952c66f3e7eaabb64fdb609dd1338945a00816b3679ae62e01239e2da9e6",
+    "tests/test_api_http.py": "4ea77776197f359e219462c9c84f545089c864bad1e6debc9e48b1bb21d0e919",
+    "tests/test_store_capacity.py": "a466fcc0d94b6c81606024879b04ea0701b05197e037118eac699cab50fd0042"
+  }
+}

@@ -1,4 +1,4 @@
-name: Validate and test preview
+name: Validate content and PostgreSQL website
 on:
   push:
   pull_request:
@@ -8,6 +8,21 @@ permissions:
 jobs:
   tests:
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:18.6
+        env:
+          POSTGRES_PASSWORD: isolated-ci-only
+          POSTGRES_DB: knowledge_healthcare_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d knowledge_healthcare_test"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      HEALTHCARE_TEST_ADMIN_DSN: postgresql://postgres:isolated-ci-only@127.0.0.1:5432/knowledge_healthcare_test
+      HEALTHCARE_TEST_IMPORT_DSN: postgresql://healthcare_importer:isolated-writer-only@127.0.0.1:5432/knowledge_healthcare_test
+      HEALTHCARE_TEST_READ_DSN: postgresql://healthcare_reader:isolated-reader-only@127.0.0.1:5432/knowledge_healthcare_test
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v5
@@ -16,13 +31,24 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m pip install -r requirements-dev.txt -r requirements-runtime.txt
+      - name: Create isolated database roles
+        run: |
+          python - <<'PY'
+          import os, psycopg
+          with psycopg.connect(os.environ['HEALTHCARE_TEST_ADMIN_DSN']) as conn:
+              conn.execute("CREATE ROLE healthcare_reader LOGIN PASSWORD 'isolated-reader-only'")
+              conn.execute("CREATE ROLE healthcare_importer LOGIN PASSWORD 'isolated-writer-only'")
+          PY
       - run: python -m src.guide validate
       - run: python -m src.guide content-audit
+      - run: python -m src.guide editorial-audit > /tmp/editorial-audit.json
+      - run: python -m src.guide coverage-icd > /tmp/coverage-icd.json
       - run: npm test
       - run: python -m unittest discover -s tests -p 'test_*.py'
       - run: python -m src.guide build
       - run: node src/web/benchmark.mjs
       - run: python -m playwright install --with-deps chromium
+      - run: python -c "from tests.test_store_publication import database_fixture; database_fixture()"
       - run: python -m unittest discover -s tests/e2e -p 'test_browser.py'
       # Clinical sign-off is intentionally not implied by this successful job.
