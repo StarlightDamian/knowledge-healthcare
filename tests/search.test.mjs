@@ -13,7 +13,7 @@ for(const c of conditions)test('aliases/'+c.id,()=>{
 const queries=[['流鼻涕 咳嗽','common-cold'],['鼻痒 打喷嚏','allergic-rhinitis'],['尿痛 尿频','lower-uti'],['关节红肿 大脚趾痛','gout'],['口渴 尿少','dehydration'],['heartburn','reflux'],['胸痛','chest-pain'],['PCOS','pcos'],['PMOS','pcos']];
 for(const [q,id] of queries)test('synthetic symptom/'+q,()=>assert.ok(engine.search(q,{limit:10}).some(r=>r.condition.id===id)));
 test('unknown does not invent a candidate',()=>assert.equal(engine.search('qzxvjkpt').length,0));
-test('empty query lists all 72 records',()=>assert.equal(engine.search('').length,72));
+test('empty query lists all 73 records',()=>assert.equal(engine.search('').length,73));
 test('filters are respected',()=>assert.ok(engine.search('',{domain:'ophthalmic'}).every(r=>r.condition.primary_domain==='ophthalmic')));
 test('symptom-kind is separate',()=>assert.ok(engine.search('',{kind:'symptom'}).every(r=>r.condition.kind==='symptom')));
 test('query input object normalization',()=>assert.equal(normalize(null),''));

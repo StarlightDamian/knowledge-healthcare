@@ -1,0 +1,273 @@
+{
+  "schema_version": "1.0.0",
+  "id": "pulmonary-embolism",
+  "kind": "condition",
+  "primary_domain": "respiratory",
+  "names": {
+    "zh-CN": "肺栓塞（肺血栓栓塞）",
+    "en": "Pulmonary embolism"
+  },
+  "aliases": {
+    "zh-CN": [
+      "肺血栓",
+      "肺动脉血栓栓塞"
+    ],
+    "en": [
+      "PE",
+      "pulmonary thromboembolism"
+    ]
+  },
+  "symptom_terms": [
+    {
+      "zh-CN": "突然气短",
+      "en": "sudden breathlessness"
+    },
+    {
+      "zh-CN": "吸气时胸痛",
+      "en": "pain on breathing in"
+    },
+    {
+      "zh-CN": "咯血",
+      "en": "coughing blood"
+    }
+  ],
+  "departments": [
+    "emergency",
+    "respiratory",
+    "cardiology"
+  ],
+  "reference_urgency": "emergency",
+  "sections": {
+    "summary": {
+      "text": {
+        "zh-CN": "肺栓塞是血块堵住肺部血管，影响血液通过肺脏取氧。\n\n- 血块多从腿部或盆腔深静脉脱落，随血流到肺；腿里的血块称深静脉血栓，两者有关联但不是同一个部位的病变。\n- 可能突然气短、吸气胸痛或咯血，也可能逐渐加重。没有腿痛或腿肿不能排除肺栓塞。",
+        "en": "Pulmonary embolism is a clot blocking a lung blood vessel and disrupting blood flow through the lungs for oxygenation.\n\n- Clots often detach from deep leg or pelvic veins and travel to the lungs. The original clot is a deep vein thrombosis; the conditions are related but occur at different sites.\n- Symptoms may include sudden breathlessness, pain on inhalation or coughing blood, but can develop gradually. Absence of leg pain or swelling does not exclude it."
+      },
+      "source_ids": [
+        "pe-nhlbi",
+        "pe-cdc"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "causes_risks": {
+      "text": {
+        "zh-CN": "血流慢、血管受损和血液容易凝固，会增加血块形成机会。\n\n- 手术、住院卧床、长时间不活动、癌症及其治疗会增加风险；既往血栓、年龄增长和遗传性凝血问题也重要。\n- 妊娠、产后及部分含雌激素的避孕或激素治疗会提高风险。是否调整药物要结合个人病史讨论，不把所有激素药视为相同。",
+        "en": "Slow flow, vein injury and increased clotting tendency make clot formation more likely.\n\n- Surgery, hospital bed rest, prolonged immobility, cancer and its treatment increase risk; previous clots, age and inherited clotting disorders also matter.\n- Pregnancy, the postpartum period and some estrogen-containing contraceptives or hormone treatments increase risk. Medication decisions depend on history; hormone products do not all have identical risk."
+      },
+      "source_ids": [
+        "pe-nhlbi-causes",
+        "pe-cdc",
+        "pe-nhlbi-women"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "red_flags": {
+      "text": {
+        "zh-CN": "突然明显气短、胸痛、咯血或晕厥，需要立即医疗评估。\n\n- 呼吸困难严重、心跳很快、胸背痛或失去反应时，呼叫当地急救，不要自己开车。说明近期手术、卧床、妊娠或既往血栓。\n- 即使正在吃抗凝药，新发胸痛气短也要立即就医，不能用“已经有药保护”解释过去。",
+        "en": "Sudden significant breathlessness, chest pain, coughing blood or fainting requires immediate medical assessment.\n\n- Call local emergency services for severe breathing difficulty, very fast heartbeat, chest or upper-back pain, or loss of response; do not drive yourself. Report recent surgery, immobility, pregnancy or previous clots.\n- New chest pain or breathlessness still needs immediate care while taking anticoagulants; taking treatment does not justify dismissing new symptoms."
+      },
+      "source_ids": [
+        "pe-nhs",
+        "pe-cdc",
+        "pe-nhlbi-diagnosis",
+        "pe-nhlbi-recovery"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "care": {
+      "text": {
+        "zh-CN": "疑似肺栓塞需要当天紧急评估，是否住院由病情、出血风险和家庭照护条件决定。\n\n- 单侧腿新出现肿胀、疼痛、发热或颜色改变，要尽快检查深静脉血栓；若同时胸痛或气短，按肺栓塞危险信号处理。\n- 治疗后轻度疲劳可逐步恢复，但持续活动后气短、晕厥或腿肿需提前联系团队；抗凝期间严重或止不住的出血则要紧急就医。",
+        "en": "Suspected embolism needs urgent same-day assessment; admission depends on clinical severity, bleeding risk and ability to manage care at home.\n\n- New one-sided leg swelling, pain, warmth or discoloration needs prompt evaluation for DVT; accompanying chest pain or breathlessness requires the embolism emergency pathway.\n- Mild fatigue may improve during recovery, but persistent exertional breathlessness, fainting or leg swelling needs earlier review; severe or uncontrolled bleeding during anticoagulation needs urgent care."
+      },
+      "source_ids": [
+        "pe-nhs",
+        "pe-nhlbi",
+        "pe-cdc",
+        "pe-nhlbi-recovery",
+        "pe-nhs-side-effects"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diagnosis": {
+      "text": {
+        "zh-CN": "医生先问症状、手术卧床、激素药及血栓史，再选择检查，不能靠一个症状确诊。\n\n- D-二聚体是血块分解相关物质，升高也可能有其他原因。它与临床风险一起解读，不是“阳性就有肺栓塞”。\n- 肺动脉CT造影寻找肺血管内血块；部分人采用通气灌注扫描，比较气流与血流。胸片可查其他原因，但正常胸片不能排除肺栓塞。",
+        "en": "Clinicians ask about symptoms, surgery or immobility, hormones and prior clots before choosing tests; no single symptom confirms embolism.\n\n- D-dimer reflects clot breakdown but may rise for other reasons. It is interpreted with clinical probability rather than treating a positive result as proof.\n- CT pulmonary angiography looks for clots; some people have ventilation-perfusion scanning to compare airflow and blood flow. Chest X-ray can assess other causes, but a normal film does not exclude embolism."
+      },
+      "source_ids": [
+        "pe-nhlbi-diagnosis",
+        "pe-mayo"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "differentials": {
+      "text": {
+        "zh-CN": "气短和胸痛可来自不同心肺问题，医生会先排除危及生命的原因。\n\n- 肺炎、心脏疾病或其他肺病可有类似表现；已有慢性心肺病时，新变化不能自动归于旧病。\n- 深静脉血栓主要表现于腿或手臂，肺栓塞主要影响呼吸和循环；两者可能同时存在，也可能只有肺部症状。",
+        "en": "Breathlessness and chest pain can arise from different heart or lung problems; clinicians first assess dangerous causes.\n\n- Pneumonia, cardiac disease and other lung conditions may resemble embolism; new changes with chronic heart or lung disease should not automatically be attributed to the old diagnosis.\n- DVT mainly affects a leg or arm while embolism affects breathing and circulation. They may coexist, or only lung symptoms may be apparent."
+      },
+      "source_ids": [
+        "pe-mayo",
+        "pe-nhs",
+        "pe-cdc",
+        "pe-nhlbi"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "treatment": {
+      "text": {
+        "zh-CN": "治疗既要避免血块扩大和再形成，也要处理低氧及循环不稳。\n\n- 多数患者使用抗凝药，让身体逐渐处理已有血块；部分病情稳定者评估后可在家治疗，严重者需住院监护。\n- 危及生命时可能使用溶栓、导管取栓或手术。溶栓会增加严重出血，不能因影像看到血块就一律采用。",
+        "en": "Treatment prevents clot growth and new clots while addressing low oxygen and unstable circulation.\n\n- Most patients receive anticoagulants while the body gradually deals with existing clots; selected stable patients can be treated at home after assessment, while severe cases need hospital monitoring.\n- Life-threatening cases may need thrombolysis, catheter clot removal or surgery. Thrombolysis increases major bleeding risk and is not automatically used for every clot on imaging."
+      },
+      "source_ids": [
+        "pe-nhlbi-treatment",
+        "pe-mayo",
+        "pe-nhlbi"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "medications": {
+      "text": {
+        "zh-CN": "抗凝药减慢凝血，不是立即把血块冲走，也不是让血液变稀如水。\n\n- 肝素类可注射，华法林和直接口服抗凝药可口服。方案的起始方式不同，不是人人都必须先注射同样天数；疗程由是否有持续诱因、复发和出血风险决定。\n- 出血是主要风险；不要自行合用阿司匹林、布洛芬或草药。手术、拔牙、妊娠及新开药前告诉医生或药师正在抗凝，不自行停药或加量。",
+        "en": "Anticoagulants slow clotting; they neither instantly wash away a clot nor make blood watery.\n\n- Heparins are injectable, while warfarin and direct oral anticoagulants are oral. Starting regimens differ; not everyone requires the same injection lead-in. Duration depends on ongoing triggers, recurrence and bleeding risk.\n- Bleeding is a major risk. Do not add aspirin, ibuprofen or herbal remedies without advice. Inform clinicians or pharmacists before surgery, dental extraction, pregnancy planning or new medicines; do not stop or increase treatment yourself."
+      },
+      "source_ids": [
+        "pe-nhlbi-treatment",
+        "pe-mayo",
+        "pe-nhs-considerations"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diet": {
+      "text": {
+        "zh-CN": "肺栓塞没有能替代抗凝药的“化栓食物”，饮食最需要注意的是与药物的相互作用。\n\n- 服华法林时，绿叶菜等含维生素K食物保持相对稳定的摄入量，不必一概禁食。突然大量增减会改变药效，应先咨询抗凝门诊。\n- 华法林的维生素K限制不能照搬给所有直接口服抗凝药。饮酒和补充剂也可能影响安全，按自己药物的说明核对。",
+        "en": "There is no clot-clearing food that replaces anticoagulation; medication interactions are the main disease-specific dietary issue.\n\n- With warfarin, keep vitamin-K-rich foods such as leafy vegetables reasonably consistent rather than banning them. Large sudden changes can alter effect; consult the anticoagulation clinic first.\n- Warfarin’s vitamin K considerations do not automatically apply to direct oral anticoagulants. Alcohol and supplements may also affect safety; check advice for the actual medicine."
+      },
+      "source_ids": [
+        "pe-nhlbi-treatment",
+        "pe-nhlbi-recovery",
+        "pe-nhs-considerations"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "daily_care": {
+      "text": {
+        "zh-CN": "恢复期兼顾逐步活动、按时服药和观察出血。\n\n- 与团队确认可进行的活动量，避免长时间一动不动；记录气短是否随恢复改善，以及腿肿、胸痛或新出血。\n- 携带抗凝用药信息，处理外伤和就诊时告知医护。明显撞击头部、严重事故或止不住出血时立即就医，即使外表伤口不大。",
+        "en": "Recovery combines gradual activity, reliable medicine use and awareness of bleeding.\n\n- Agree a suitable activity level with the team and avoid prolonged immobility. Track whether breathlessness improves, and record leg swelling, chest pain or new bleeding.\n- Carry anticoagulant information and tell clinicians after injury or at appointments. Seek immediate care after a significant head impact, major accident or uncontrolled bleeding even if the visible wound seems small."
+      },
+      "source_ids": [
+        "pe-nhlbi-recovery",
+        "pe-nhs-considerations",
+        "pe-cdc",
+        "pe-nhs-side-effects"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "special_populations": {
+      "text": {
+        "zh-CN": "孕产期、癌症、肾功能下降及既往出血会影响风险与药物选择。\n\n- 孕期不能照搬非孕期口服方案；华法林和部分直接口服抗凝药通常不适用，医生可能选择肝素类。发现怀孕或计划怀孕时尽快联系处方团队。\n- 癌症或持续活动受限者可能仍有促血栓因素；老人和肾病患者还需评估出血及药物耐受，不能只凭年龄决定停药。",
+        "en": "Pregnancy or postpartum status, cancer, reduced kidney function and previous bleeding affect risk and drug choice.\n\n- Pregnancy requires a different medication assessment: warfarin and several direct oral anticoagulants are generally unsuitable, and heparin may be chosen. Contact the prescribing team promptly when pregnant or planning pregnancy.\n- Cancer or persistent immobility can maintain clotting risk; older adults and people with kidney disease also need bleeding and drug-tolerance assessment rather than stopping treatment on age alone."
+      },
+      "source_ids": [
+        "pe-nhlbi-causes",
+        "pe-nhlbi-women",
+        "pe-mayo",
+        "pe-nhs-considerations",
+        "pe-nhlbi-recovery",
+        "pe-nhlbi-treatment"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prognosis_followup": {
+      "text": {
+        "zh-CN": "及早识别和治疗有助恢复，但症状改善速度及抗凝疗程因人而异。\n\n- 抗凝常持续至少3个月，是否延长取决于诱因是否消失、既往复发及出血风险；不能按症状好转自行结束。\n- 华法林需定期查凝血指标，其他药物可能需查肾肝功能。持续气短、运动耐力下降或晕厥应提前复诊，评估残余肺血管问题。",
+        "en": "Early recognition and treatment aid recovery, but symptom resolution and anticoagulation duration vary.\n\n- Anticoagulation commonly continues for at least three months; extension depends on whether provoking factors persist, prior recurrence and bleeding risk. Symptom improvement alone does not determine stopping.\n- Warfarin needs clotting tests, and other regimens may need kidney or liver checks. Persistent breathlessness, reduced exercise tolerance or fainting warrants earlier review for residual pulmonary vascular disease."
+      },
+      "source_ids": [
+        "pe-nhs",
+        "pe-mayo",
+        "pe-nhlbi-recovery"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "complications": {
+      "text": {
+        "zh-CN": "大的或严重肺栓塞可使肺部血流受阻，心脏承受额外压力。\n\n- 严重病例可能出现休克，即器官得不到足够血液，甚至死亡；及时治疗是降低这种风险的关键。\n- 少数人形成慢性血栓栓塞性肺动脉高压，即残余堵塞等使肺血管压力长期升高。持续活动后气短需要评估，不应只当作体力差。",
+        "en": "A large or severe embolism obstructs lung circulation and places additional strain on the heart.\n\n- Severe cases can cause shock, where organs receive inadequate blood flow, and death; prompt treatment is central to reducing this risk.\n- Some develop chronic thromboembolic pulmonary hypertension, where residual obstruction and related changes cause persistently high pressure in lung vessels. Persistent exertional breathlessness needs assessment rather than being dismissed as poor fitness."
+      },
+      "source_ids": [
+        "pe-nhlbi",
+        "pe-nhlbi-recovery",
+        "pe-mayo",
+        "pe-cdc"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prevention": {
+      "text": {
+        "zh-CN": "预防主要针对腿部深静脉血栓及再次发作，无法完全消除风险。\n\n- 住院或手术前说明既往血栓及用药，讨论是否需要预防性抗凝或合适的机械措施；不要自行借用他人的抗凝药。\n- 长途旅行和久坐时定期起身活动或做踝泵动作；已有血栓史、近期手术等风险者出行前咨询。袜子或药物的选择需结合风险，而非人人同一方案。",
+        "en": "Prevention mainly targets deep-vein clots and recurrence; risk cannot be eliminated completely.\n\n- Before hospital care or surgery, report prior clots and medicines and discuss preventive anticoagulation or suitable mechanical measures; do not use someone else’s anticoagulants.\n- During long journeys or prolonged sitting, move periodically or exercise the ankles. Discuss travel beforehand with prior clots or recent surgery; stockings or medicines depend on risk rather than one plan for everyone."
+      },
+      "source_ids": [
+        "pe-cdc",
+        "pe-nhlbi-recovery",
+        "pe-nhlbi-treatment",
+        "pe-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    }
+  },
+  "source_ids": [
+    "pe-nhlbi",
+    "pe-cdc",
+    "pe-nhlbi-causes",
+    "pe-nhlbi-women",
+    "pe-nhs",
+    "pe-nhlbi-diagnosis",
+    "pe-nhlbi-recovery",
+    "pe-nhs-side-effects",
+    "pe-mayo",
+    "pe-nhlbi-treatment",
+    "pe-nhs-considerations"
+  ],
+  "related_ids": [
+    "chest-pain"
+  ],
+  "tags": [
+    "not_classified_as_infectious"
+  ],
+  "clinical_region": "MULTI_REGION",
+  "coding": [],
+  "review": {
+    "status": "editorial_draft",
+    "reviewers": [],
+    "medical_reviewed_at": null,
+    "editorial_updated_at": "2026-09-30",
+    "next_editorial_review_due": "2026-12-29"
+  },
+  "localizations": {
+    "zh-CN": {
+      "status": "draft",
+      "clinician_reviewed": false
+    },
+    "en": {
+      "status": "draft",
+      "clinician_reviewed": false
+    }
+  },
+  "evidence_certainty": "not_formally_graded",
+  "limitations": {
+    "zh-CN": "各节保留来源定位和地区条件；编辑证据记录中的未完成项见来源与编辑信息。",
+    "en": "Section sources and regional conditions are retained; unfinished evidence checks are recorded in editorial information."
+  },
+  "study_ids": [],
+  "advanced_fields": {
+    "prevalence_estimate": null,
+    "incidence_estimate": null,
+    "formal_diagnostic_criteria": null,
+    "quantitative_prognosis": null,
+    "transmission_details": null,
+    "screening_intervals": null,
+    "regional_drug_approval": null,
+    "procedure_indications": null
+  },
+  "advanced_fields_status": "not_yet_curated"
+}

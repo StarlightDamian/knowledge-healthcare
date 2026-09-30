@@ -1388,5 +1388,732 @@
       "NIDDK pages were last reviewed in 2017; basic explanations were compared with the NHS page reviewed in September 2026. Legacy drug-table suggestions without current support were not copied.",
       "NIDDK hub is retained as an original candidate reference; actual section support cites the inspected subpages."
     ]
+  },
+  {
+    "condition_id": "obstructive-sleep-apnea",
+    "canonical_claim_records": "data/evidence/editorial-checks/batch-01-osa.json",
+    "checked_at": "2026-09-30",
+    "medical_reviewed": false,
+    "inspected_sources": [
+      {
+        "source_id": "b1-acute-breathless-nhs",
+        "url": "https://www.nhs.uk/symptoms/shortness-of-breath/",
+        "locators": [
+          "Immediate action required"
+        ],
+        "retrieval_scope": "Actually opened: severe breathing difficulty, blue/grey pallor and sudden confusion require emergency action."
+      },
+      {
+        "source_id": "b1-acute-osa-aasm-diagnosis",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5337595/",
+        "locators": [
+          "Page 1 recommendation 3; recommendation 4"
+        ],
+        "retrieval_scope": "Root read the original Kapur et al. 2017 guideline in PMC: recommendations 2-4, negative/inconclusive HSAT followed by PSG and complex illness requiring PSG. The AASM PDF endpoint failed; this is the same article, not a second source."
+      },
+      {
+        "source_id": "b1-acute-osa-aasm-oral",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26094920/",
+        "locators": [
+          "Abstract recommendations 4 and 6"
+        ],
+        "retrieval_scope": "Actual full abstract read, recommendations 2-6: custom devices, dental side effects/occlusal changes, follow-up testing, periodic dentist/sleep clinician review."
+      },
+      {
+        "source_id": "b1-acute-osa-aasm-pap",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30736887/",
+        "locators": [
+          "Abstract good-practice statement 2",
+          "Abstract good-practice statement 2; troubleshooting recommendation 8"
+        ],
+        "retrieval_scope": "Actual abstract read: good-practice statement 2 requires troubleshooting and objective efficacy/usage follow-up; recommendations on PAP and patient education. Full PMC page was captcha, not read."
+      },
+      {
+        "source_id": "b1-acute-osa-aasm-tirzepatide",
+        "url": "https://aasm.org/zepbound-approval-sleep-apnea-american-academy-sleep-medicine-statement/",
+        "locators": [
+          "Expert selection of treatment; AASM statement on approved adult population",
+          "Other treatment options"
+        ],
+        "retrieval_scope": "Official indexed statement read: adult moderate-severe OSA with obesity, expert selection and alternative options. Direct opening failed. Shares FDA approval and trials, not independent efficacy replication."
+      },
+      {
+        "source_id": "b1-acute-osa-aasm-weight",
+        "url": "https://aasm.org/clinical-resources/obesity-management/",
+        "locators": [
+          "AASM Practice Standards, dietary weight loss and longitudinal testing",
+          "AASM Practice Standards, longitudinal management bullet"
+        ],
+        "retrieval_scope": "Actually opened AASM Practice Standards: summarizes its 2021 longitudinal guidance for testing after significant weight gain/loss; dietary loss accompanies primary therapy. Not a second independent guideline origin."
+      },
+      {
+        "source_id": "b1-acute-osa-asa-anesthesia",
+        "url": "https://madeforthismoment.asahq.org/preparing-for-surgery/risks/sleep-apnea/",
+        "locators": [
+          "Actually opened How does sleep apnea affect anesthesia and What can you do to reduce your risk: breathing sensitivity, discuss OSA, monitoring before/during/after surgery.",
+          "How apnea affects anesthesia; reducing risk"
+        ],
+        "retrieval_scope": "Actually opened How does sleep apnea affect anesthesia and What can you do to reduce your risk: breathing sensitivity, discuss OSA, monitoring before/during/after surgery."
+      },
+      {
+        "source_id": "b1-acute-osa-asa-glp1",
+        "url": "https://madeforthismoment.asahq.org/preparing-for-surgery/risks/drugs-diabetes-weight-loss/",
+        "locators": [
+          "Why discuss medicines with anesthesiologist; How could GLP-1 drugs affect anesthesia; Do I need to stop"
+        ],
+        "retrieval_scope": "Official indexed patient page read: medically reviewed by Girish P. Joshi, MBBS, MD, FASA, October 22 2025; tell team GLP-1/GIP drugs; slowed gastric emptying and aspiration; tailored medication plan. No universal drug-holding interval imported."
+      },
+      {
+        "source_id": "b1-acute-osa-causes-nhlbi",
+        "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/causes",
+        "locators": [
+          "Lifestyle risks",
+          "Modifiable and nonmodifiable risks; Healthy lifestyle lowers risk",
+          "What causes sleep apnea?; What raises risk; Obesity; Large tonsils, neck or tongue; Age; Family history; endocrine changes"
+        ],
+        "retrieval_scope": "Actually opened mechanism, obesity, anatomy, age, family, endocrine, modifiable versus unmodifiable risks."
+      },
+      {
+        "source_id": "b1-acute-osa-children-nhlbi",
+        "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/children",
+        "locators": [
+          "Children; Causes, symptoms and treatment"
+        ],
+        "retrieval_scope": "Full current page opened and read: symptoms, diagnosis, causes, treatment and health effects; last updated February 12, 2025."
+      },
+      {
+        "source_id": "b1-acute-osa-dailymed-label",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b",
+        "locators": [
+          "Prescribing information 8.1 Pregnancy,8.2 Lactation,8.3 Females and Males of Reproductive Potential"
+        ],
+        "retrieval_scope": "Actually read revised August2026 label sections8.1 Pregnancy,8.2 Lactation,8.3 Females and Males of Reproductive Potential; pregnancy discontinuation, single-dose11-person milk study and missing infant outcomes, oral hormonal contraception4-week precautions. DailyMed hosting is not independent NIH authorship."
+      },
+      {
+        "source_id": "b1-acute-osa-diagnosis-nhlbi",
+        "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/diagnosis",
+        "locators": [
+          "Additional tests and sleep study; Opioids and other medical conditions; Tests to look for other medical conditions; diary",
+          "History; Sleep study",
+          "Sleep study",
+          "Symptoms; sleep specialist; Sleep diary; medicines"
+        ],
+        "retrieval_scope": "Actually opened symptoms/family history, sleep study, diary, other conditions and medicines."
+      },
+      {
+        "source_id": "b1-acute-osa-fda",
+        "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-medication-obstructive-sleep-apnea",
+        "locators": [
+          "Approved population; Approval and weight-related improvement; Adverse effects, contraindications and warnings",
+          "OSA can affect anyone; more common with overweight or obesity",
+          "Primary efficacy measure defines AHI",
+          "Reduced-calorie diet with obesity treatment; Reduced-calorie diet and increased physical activity"
+        ],
+        "retrieval_scope": "Actually opened approval population, reduced-calorie diet/activity, weight-mediated effect, gastrointestinal adverse effects and medullary-thyroid/MEN2 contraindications. This dated release is not the current full label."
+      },
+      {
+        "source_id": "b1-acute-osa-fda-clean",
+        "url": "https://www.fda.gov/consumers/consumer-updates/do-you-need-device-claims-clean-cpap-machine",
+        "locators": [
+          "How should I clean my CPAP equipment?"
+        ],
+        "retrieval_scope": "Official indexed full text actually read: use manufacturer cleaning schedule, mild soap/water for detachable parts, no immersion electrical unit, replace filters. No cleaner-product endorsement."
+      },
+      {
+        "source_id": "b1-acute-osa-hospital-pharmacy",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10192986/",
+        "locators": [
+          "Contraindications, Warnings and Precautions; Table 2"
+        ],
+        "retrieval_scope": "Root actually retrieved indexed original Contraindications, Warnings and Precautions and Table 2; direct PMC currently CAPTCHA. SAGE original metadata confirms named WSU pharmacy authors, online 2022-09-29, issue June 2023. Exact personal/family MTC and MEN2 restrictions plus pancreatic/renal/glucose risks read. Same FDA/Lilly label underlies restrictions; independently written review, not an independent safety experiment. No 2024 OSA indication attributed to this older review."
+      },
+      {
+        "source_id": "b1-acute-osa-living-nhlbi",
+        "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/living-with",
+        "locators": [
+          "Checkups; treatment effectiveness; Using and caring for oral device; PAP follow-up; Regular checkups and repeat study after weight change",
+          "Device use and review",
+          "How sleep apnea affects health; Untreated sleep; driving accidents; Cardiovascular and metabolic health risks; Persistent difficulties; follow-up",
+          "Information to help you stay safe",
+          "Information to help you stay safe: anesthesia and pain medicines",
+          "Information to help you stay safe; Do not drive if tired or sleepy",
+          "Problems with PAP; follow-up",
+          "Use PAP for all sleep including naps; Follow-up; repeat sleep study after weight change",
+          "Using and maintaining PAP; PAP fit; problems; care; All sleep including naps; travel"
+        ],
+        "retrieval_scope": "Actually opened follow-up, PAP use during naps, fitting and cleaning, dental follow-up, perioperative and driving precautions."
+      },
+      {
+        "source_id": "b1-acute-osa-mayo-osa",
+        "url": "https://www.mayoclinic.org/diseases-conditions/obstructive-sleep-apnea/diagnosis-treatment/drc-20352095",
+        "locators": [
+          "Preparing for your appointment / What you can do; PAP therapy and Self care"
+        ],
+        "retrieval_scope": "Root opened original page: evaluation, PAP/alternatives, follow-up, diary/bed-partner/medicine preparation and alcohol/side-position/driving advice. References include NHLBI, ATS and clinical textbooks; independently composed with shared evidence, not an independent trial."
+      },
+      {
+        "source_id": "b1-acute-osa-mhra-glp1",
+        "url": "https://www.gov.uk/government/publications/glp-1-medicines-for-weight-loss-and-diabetes-what-you-need-to-know/glp-1-medicines-for-weight-loss-and-diabetes-what-you-need-to-know",
+        "locators": [
+          "GLP-1 medicines, contraception and pregnancy; GLP-1 medicines and breastfeeding"
+        ],
+        "retrieval_scope": "Actually read contraception and pregnancy, breastfeeding, and surgery headings; page updated5February2026. Tirzepatide oral-pill precautions, pregnancy planning and no use during breastfeeding. Distinct UK advice, not evidence of UK OSA indication."
+      },
+      {
+        "source_id": "b1-acute-osa-nhlbi",
+        "url": "https://www.nhlbi.nih.gov/health/sleep-apnea",
+        "locators": [
+          "Central versus obstructive",
+          "Two types",
+          "What Is Sleep Apnea? obstructive versus central; Overview: symptoms and health impact"
+        ],
+        "retrieval_scope": "Actually read overview distinguishing obstructive from central sleep apnea and health impact."
+      },
+      {
+        "source_id": "b1-acute-osa-nhs",
+        "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+        "locators": [
+          "CPAP comfort advice; Tell doctor if uncomfortable; Good sleep habits; side sleeping",
+          "CPAP discomfort review; Getting tested; severity",
+          "Causes: enlarged tonsils/adenoids",
+          "Causes; Things you can do; CPAP effectiveness and comfort",
+          "Do not take sleeping pills unless recommended",
+          "Driving and sleep apnoea",
+          "Getting tested; Understanding AHI",
+          "Lose weight if overweight; Things you can do",
+          "See a GP if; Bring someone who witnessed symptoms; Tell your doctor if CPAP uncomfortable or hard to use",
+          "Sleep apnoea can cause other problems; Other problems: accidents, concentration; Other problems; Mood and partner impact; CPAP review",
+          "Symptoms; Getting tested; Treatments",
+          "Things you can do; Causes",
+          "Treatments; CPAP every night; Other treatments; Lifestyle and CPAP"
+        ],
+        "retrieval_scope": "Actually opened complete 2026 page: symptoms, tests, CPAP and alternatives, lifestyle, complications, driving; UK licensing rules are regional."
+      },
+      {
+        "source_id": "b1-acute-osa-nice",
+        "url": "https://www.nice.org.uk/guidance/NG202/chapter/1-obstructive-sleep-apnoeahypopnoea-syndrome",
+        "locators": [
+          "1.3.1-1.3.4; 1.1 assessment; 1.3.6; 1.3.2, 1.3.3, 1.3.5",
+          "Definition",
+          "Guideline scope: over 16s; 1.1.2 pregnancy and PCOS risk",
+          "Opening definition of OSAHS"
+        ],
+        "retrieval_scope": "Official indexed recommendations 1.1.1-1.1.2 and 1.3.1-1.3.6 read; direct opening failed. Negative oximetry/polygraphy with persistent symptoms warrants further testing. Applies over 16s."
+      },
+      {
+        "source_id": "b1-acute-osa-nice-rationale",
+        "url": "https://www.nice.org.uk/guidance/ng202/chapter/rationale-and-impact",
+        "locators": [
+          "Diagnostic tests for OSAHS rationale",
+          "Diagnostic tests: other sleep disorders; Diagnostic tests: alternative and additional disorders",
+          "Lifestyle advice rationale",
+          "Lifestyle rationale: airway tone and caffeine"
+        ],
+        "retrieval_scope": "Official indexed Diagnostic tests and Lifestyle advice rationale read. Explains alternative sleep disorders, smoking/alcohol mechanisms and individualized lifestyle; same editorial origin as recommendations."
+      },
+      {
+        "source_id": "b1-acute-osa-symptoms-nhlbi",
+        "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/symptoms",
+        "locators": [
+          "Nighttime/daytime symptoms and unrecognized symptoms"
+        ],
+        "retrieval_scope": "Root read witnessed pauses, snoring, gasping, unrecognized symptoms, daytime learning/attention effects, women/child presentations and assessment advice. Counts as the same NIH/NHLBI origin as other pages."
+      },
+      {
+        "source_id": "b1-acute-osa-tirzepatide-mayo",
+        "url": "https://www.mayoclinic.org/drugs-supplements/tirzepatide-subcutaneous-route/description/drg-20534045",
+        "locators": [
+          "Other Medical Problems; Precautions; Side effects"
+        ],
+        "retrieval_scope": "Official indexed monograph read: OSA role, gastrointestinal effects, MEN2/thyroid cautions and medicine interactions. No dose instructions imported."
+      },
+      {
+        "source_id": "b1-acute-osa-treatment-nhlbi",
+        "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/treatment",
+        "locators": [
+          "Healthy lifestyle changes",
+          "Healthy lifestyle changes; PAP and treatment options",
+          "Healthy lifestyle changes; PAP mechanism; Healthy lifestyle changes; Limit alcohol and caffeine",
+          "Lifelong healthy lifestyle changes",
+          "Medicines",
+          "PAP side effects; Side sleeping and sleep habits",
+          "PAP; oral devices; surgery; Positive airway pressure; Oral devices; Surgical procedures; Lifestyle plus PAP"
+        ],
+        "retrieval_scope": "Actually opened lifestyle, PAP types and side effects, medicines, oral devices and surgery. Drug paragraph cites FDA approval and shares that evidence base."
+      },
+      {
+        "source_id": "b1-acute-osa-uhnm-cpap",
+        "url": "https://www.uhnm.nhs.uk/hospitals-and-services/sleep-service/adult-sleep-service/advice-for-current-cpap-patients/",
+        "locators": [
+          "Heated Humidifier; Routine Care; Troubleshooting; Will I ever be able to stop CPAP?"
+        ],
+        "retrieval_scope": "Root read mask fit, dryness/humidifier, maintenance and troubleshooting, and repeat investigation before stopping CPAP. Only general care adopted; model-specific intervals and accessories were not generalized."
+      },
+      {
+        "source_id": "b1-acute-osa-uhs-cpap",
+        "url": "https://www.uhs.nhs.uk/Media/UHS-website-2019/Patientinformation/Respiratory/Long-term-continuous-positive-airway-pressure-CPAP-treatment-3385-PIL.pdf",
+        "locators": [
+          "Printed p11 (PDF page 6), naps/travel; pp5-9 mask care and follow-up"
+        ],
+        "retrieval_scope": "Root read PDF pp3-11: mechanism, mask fit, care, follow-up, travel and all sleep including naps. Publication printed January 2024 (no exact day); review January 2027. Local service intervals and absolute no-risk statements were not adopted. Independent hospital patient leaflet."
+      },
+      {
+        "source_id": "b1-acute-osa-women-nhlbi",
+        "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/women",
+        "locators": [
+          "Pregnancy; Menopause",
+          "Pregnancy; Symptoms; Pregnancy; Menopause; Pregnancy: cesarean or other surgery disclosure"
+        ],
+        "retrieval_scope": "Actual official text read: pregnancy/menopause risk, less typical symptoms, perioperative disclosure and CPAP adjustment."
+      },
+      {
+        "source_id": "b1-acute-respiratory-failure-nhlbi",
+        "url": "https://www.nhlbi.nih.gov/health/respiratory-failure/symptoms",
+        "locators": [
+          "Acute respiratory failure; low oxygen and high carbon dioxide symptoms"
+        ],
+        "retrieval_scope": "Actually opened: acute respiratory failure life-threatening; air hunger, bluish lips, confusion, loss of consciousness and prompt treatment."
+      }
+    ],
+    "sections": {
+      "summary": {
+        "source_ids": [
+          "b1-acute-osa-nhlbi",
+          "b1-acute-osa-nice",
+          "b1-acute-osa-nhs",
+          "b1-acute-osa-diagnosis-nhlbi",
+          "b1-acute-osa-symptoms-nhlbi"
+        ],
+        "locators": {
+          "b1-acute-osa-nhlbi": [
+            "What Is Sleep Apnea? obstructive versus central; Overview: symptoms and health impact"
+          ],
+          "b1-acute-osa-nice": [
+            "Opening definition of OSAHS"
+          ],
+          "b1-acute-osa-nhs": [
+            "Symptoms; Getting tested; Treatments"
+          ],
+          "b1-acute-osa-diagnosis-nhlbi": [
+            "Sleep study"
+          ],
+          "b1-acute-osa-symptoms-nhlbi": [
+            "Nighttime/daytime symptoms and unrecognized symptoms"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, applicable populations, source independence and regional conflicts are recorded in data/evidence/editorial-checks/batch-01-osa.json; this source-locator index is for the existing content-audit reader. Editorial verification is separate from clinician sign-off."
+      },
+      "causes_risks": {
+        "source_ids": [
+          "b1-acute-osa-causes-nhlbi",
+          "b1-acute-osa-nice",
+          "b1-acute-osa-fda",
+          "b1-acute-osa-women-nhlbi",
+          "b1-acute-osa-nhs",
+          "b1-acute-osa-treatment-nhlbi",
+          "b1-acute-osa-nice-rationale"
+        ],
+        "locators": {
+          "b1-acute-osa-causes-nhlbi": [
+            "What causes sleep apnea?; What raises risk; Obesity; Large tonsils, neck or tongue; Age; Family history; endocrine changes"
+          ],
+          "b1-acute-osa-nice": [
+            "Definition"
+          ],
+          "b1-acute-osa-fda": [
+            "OSA can affect anyone; more common with overweight or obesity"
+          ],
+          "b1-acute-osa-women-nhlbi": [
+            "Pregnancy; Menopause"
+          ],
+          "b1-acute-osa-nhs": [
+            "Things you can do; Causes"
+          ],
+          "b1-acute-osa-treatment-nhlbi": [
+            "Healthy lifestyle changes"
+          ],
+          "b1-acute-osa-nice-rationale": [
+            "Lifestyle advice rationale"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, applicable populations, source independence and regional conflicts are recorded in data/evidence/editorial-checks/batch-01-osa.json; this source-locator index is for the existing content-audit reader. Editorial verification is separate from clinician sign-off."
+      },
+      "red_flags": {
+        "source_ids": [
+          "b1-acute-osa-living-nhlbi",
+          "b1-acute-osa-nhs",
+          "b1-acute-breathless-nhs",
+          "b1-acute-respiratory-failure-nhlbi"
+        ],
+        "locators": {
+          "b1-acute-osa-living-nhlbi": [
+            "Information to help you stay safe; Do not drive if tired or sleepy"
+          ],
+          "b1-acute-osa-nhs": [
+            "Driving and sleep apnoea"
+          ],
+          "b1-acute-breathless-nhs": [
+            "Immediate action required"
+          ],
+          "b1-acute-respiratory-failure-nhlbi": [
+            "Acute respiratory failure; low oxygen and high carbon dioxide symptoms"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, applicable populations, source independence and regional conflicts are recorded in data/evidence/editorial-checks/batch-01-osa.json; this source-locator index is for the existing content-audit reader. Editorial verification is separate from clinician sign-off."
+      },
+      "care": {
+        "source_ids": [
+          "b1-acute-osa-nhs",
+          "b1-acute-osa-diagnosis-nhlbi",
+          "b1-acute-osa-causes-nhlbi",
+          "b1-acute-osa-living-nhlbi",
+          "b1-acute-osa-aasm-pap",
+          "b1-acute-osa-mayo-osa"
+        ],
+        "locators": {
+          "b1-acute-osa-nhs": [
+            "See a GP if; Bring someone who witnessed symptoms; Tell your doctor if CPAP uncomfortable or hard to use"
+          ],
+          "b1-acute-osa-diagnosis-nhlbi": [
+            "Symptoms; sleep specialist; Sleep diary; medicines"
+          ],
+          "b1-acute-osa-causes-nhlbi": [
+            "Lifestyle risks"
+          ],
+          "b1-acute-osa-living-nhlbi": [
+            "Problems with PAP; follow-up"
+          ],
+          "b1-acute-osa-aasm-pap": [
+            "Abstract good-practice statement 2; troubleshooting recommendation 8"
+          ],
+          "b1-acute-osa-mayo-osa": [
+            "Preparing for your appointment / What you can do; PAP therapy and Self care"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, applicable populations, source independence and regional conflicts are recorded in data/evidence/editorial-checks/batch-01-osa.json; this source-locator index is for the existing content-audit reader. Editorial verification is separate from clinician sign-off."
+      },
+      "diagnosis": {
+        "source_ids": [
+          "b1-acute-osa-diagnosis-nhlbi",
+          "b1-acute-osa-nhlbi",
+          "b1-acute-osa-nhs",
+          "b1-acute-osa-nice",
+          "b1-acute-osa-fda",
+          "b1-acute-osa-nice-rationale",
+          "b1-acute-osa-aasm-diagnosis"
+        ],
+        "locators": {
+          "b1-acute-osa-diagnosis-nhlbi": [
+            "History; Sleep study"
+          ],
+          "b1-acute-osa-nhlbi": [
+            "Two types"
+          ],
+          "b1-acute-osa-nhs": [
+            "Getting tested; Understanding AHI"
+          ],
+          "b1-acute-osa-nice": [
+            "1.3.1-1.3.4; 1.1 assessment; 1.3.6; 1.3.2, 1.3.3, 1.3.5"
+          ],
+          "b1-acute-osa-fda": [
+            "Primary efficacy measure defines AHI"
+          ],
+          "b1-acute-osa-nice-rationale": [
+            "Diagnostic tests for OSAHS rationale"
+          ],
+          "b1-acute-osa-aasm-diagnosis": [
+            "Page 1 recommendation 3; recommendation 4"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, applicable populations, source independence and regional conflicts are recorded in data/evidence/editorial-checks/batch-01-osa.json; this source-locator index is for the existing content-audit reader. Editorial verification is separate from clinician sign-off."
+      },
+      "differentials": {
+        "source_ids": [
+          "b1-acute-osa-diagnosis-nhlbi",
+          "b1-acute-osa-nice-rationale",
+          "b1-acute-osa-nhlbi"
+        ],
+        "locators": {
+          "b1-acute-osa-diagnosis-nhlbi": [
+            "Additional tests and sleep study; Opioids and other medical conditions; Tests to look for other medical conditions; diary"
+          ],
+          "b1-acute-osa-nice-rationale": [
+            "Diagnostic tests: other sleep disorders; Diagnostic tests: alternative and additional disorders"
+          ],
+          "b1-acute-osa-nhlbi": [
+            "Central versus obstructive"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, applicable populations, source independence and regional conflicts are recorded in data/evidence/editorial-checks/batch-01-osa.json; this source-locator index is for the existing content-audit reader. Editorial verification is separate from clinician sign-off."
+      },
+      "treatment": {
+        "source_ids": [
+          "b1-acute-osa-treatment-nhlbi",
+          "b1-acute-osa-nhs",
+          "b1-acute-osa-living-nhlbi",
+          "b1-acute-osa-aasm-tirzepatide",
+          "b1-acute-osa-aasm-weight",
+          "b1-acute-osa-mayo-osa",
+          "b1-acute-osa-uhs-cpap"
+        ],
+        "locators": {
+          "b1-acute-osa-treatment-nhlbi": [
+            "PAP; oral devices; surgery; Positive airway pressure; Oral devices; Surgical procedures; Lifestyle plus PAP"
+          ],
+          "b1-acute-osa-nhs": [
+            "Treatments; CPAP every night; Other treatments; Lifestyle and CPAP"
+          ],
+          "b1-acute-osa-living-nhlbi": [
+            "Use PAP for all sleep including naps; Follow-up; repeat sleep study after weight change"
+          ],
+          "b1-acute-osa-aasm-tirzepatide": [
+            "Other treatment options"
+          ],
+          "b1-acute-osa-aasm-weight": [
+            "AASM Practice Standards, dietary weight loss and longitudinal testing"
+          ],
+          "b1-acute-osa-mayo-osa": [
+            "Preparing for your appointment / What you can do; PAP therapy and Self care"
+          ],
+          "b1-acute-osa-uhs-cpap": [
+            "Printed p11 (PDF page 6), naps/travel; pp5-9 mask care and follow-up"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, applicable populations, source independence and regional conflicts are recorded in data/evidence/editorial-checks/batch-01-osa.json; this source-locator index is for the existing content-audit reader. Editorial verification is separate from clinician sign-off."
+      },
+      "medications": {
+        "source_ids": [
+          "b1-acute-osa-fda",
+          "b1-acute-osa-aasm-tirzepatide",
+          "b1-acute-osa-treatment-nhlbi",
+          "b1-acute-osa-tirzepatide-mayo",
+          "b1-acute-osa-nhs",
+          "b1-acute-osa-living-nhlbi",
+          "b1-acute-osa-asa-glp1",
+          "b1-acute-osa-dailymed-label",
+          "b1-acute-osa-mhra-glp1",
+          "b1-acute-osa-asa-anesthesia",
+          "b1-acute-osa-hospital-pharmacy",
+          "b1-acute-osa-mayo-osa"
+        ],
+        "locators": {
+          "b1-acute-osa-fda": [
+            "Approved population; Approval and weight-related improvement; Adverse effects, contraindications and warnings"
+          ],
+          "b1-acute-osa-aasm-tirzepatide": [
+            "Expert selection of treatment; AASM statement on approved adult population"
+          ],
+          "b1-acute-osa-treatment-nhlbi": [
+            "Medicines"
+          ],
+          "b1-acute-osa-tirzepatide-mayo": [
+            "Other Medical Problems; Precautions; Side effects"
+          ],
+          "b1-acute-osa-nhs": [
+            "Do not take sleeping pills unless recommended"
+          ],
+          "b1-acute-osa-living-nhlbi": [
+            "Information to help you stay safe: anesthesia and pain medicines"
+          ],
+          "b1-acute-osa-asa-glp1": [
+            "Why discuss medicines with anesthesiologist; How could GLP-1 drugs affect anesthesia; Do I need to stop"
+          ],
+          "b1-acute-osa-dailymed-label": [
+            "Prescribing information 8.1 Pregnancy,8.2 Lactation,8.3 Females and Males of Reproductive Potential"
+          ],
+          "b1-acute-osa-mhra-glp1": [
+            "GLP-1 medicines, contraception and pregnancy; GLP-1 medicines and breastfeeding"
+          ],
+          "b1-acute-osa-asa-anesthesia": [
+            "Actually opened How does sleep apnea affect anesthesia and What can you do to reduce your risk: breathing sensitivity, discuss OSA, monitoring before/during/after surgery."
+          ],
+          "b1-acute-osa-hospital-pharmacy": [
+            "Contraindications, Warnings and Precautions; Table 2"
+          ],
+          "b1-acute-osa-mayo-osa": [
+            "Preparing for your appointment / What you can do; PAP therapy and Self care"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, applicable populations, source independence and regional conflicts are recorded in data/evidence/editorial-checks/batch-01-osa.json; this source-locator index is for the existing content-audit reader. Editorial verification is separate from clinician sign-off."
+      },
+      "diet": {
+        "source_ids": [
+          "b1-acute-osa-treatment-nhlbi",
+          "b1-acute-osa-fda",
+          "b1-acute-osa-nhs",
+          "b1-acute-osa-nice-rationale"
+        ],
+        "locators": {
+          "b1-acute-osa-treatment-nhlbi": [
+            "Healthy lifestyle changes; PAP mechanism; Healthy lifestyle changes; Limit alcohol and caffeine"
+          ],
+          "b1-acute-osa-fda": [
+            "Reduced-calorie diet with obesity treatment; Reduced-calorie diet and increased physical activity"
+          ],
+          "b1-acute-osa-nhs": [
+            "Lose weight if overweight; Things you can do"
+          ],
+          "b1-acute-osa-nice-rationale": [
+            "Lifestyle rationale: airway tone and caffeine"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, applicable populations, source independence and regional conflicts are recorded in data/evidence/editorial-checks/batch-01-osa.json; this source-locator index is for the existing content-audit reader. Editorial verification is separate from clinician sign-off."
+      },
+      "daily_care": {
+        "source_ids": [
+          "b1-acute-osa-nhs",
+          "b1-acute-osa-living-nhlbi",
+          "b1-acute-osa-treatment-nhlbi",
+          "b1-acute-osa-fda-clean",
+          "b1-acute-osa-mayo-osa",
+          "b1-acute-osa-uhnm-cpap",
+          "b1-acute-osa-uhs-cpap"
+        ],
+        "locators": {
+          "b1-acute-osa-nhs": [
+            "CPAP comfort advice; Tell doctor if uncomfortable; Good sleep habits; side sleeping"
+          ],
+          "b1-acute-osa-living-nhlbi": [
+            "Using and maintaining PAP; PAP fit; problems; care; All sleep including naps; travel"
+          ],
+          "b1-acute-osa-treatment-nhlbi": [
+            "PAP side effects; Side sleeping and sleep habits"
+          ],
+          "b1-acute-osa-fda-clean": [
+            "How should I clean my CPAP equipment?"
+          ],
+          "b1-acute-osa-mayo-osa": [
+            "Preparing for your appointment / What you can do; PAP therapy and Self care"
+          ],
+          "b1-acute-osa-uhnm-cpap": [
+            "Heated Humidifier; Routine Care; Troubleshooting; Will I ever be able to stop CPAP?"
+          ],
+          "b1-acute-osa-uhs-cpap": [
+            "Printed p11 (PDF page 6), naps/travel; pp5-9 mask care and follow-up"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, applicable populations, source independence and regional conflicts are recorded in data/evidence/editorial-checks/batch-01-osa.json; this source-locator index is for the existing content-audit reader. Editorial verification is separate from clinician sign-off."
+      },
+      "special_populations": {
+        "source_ids": [
+          "b1-acute-osa-children-nhlbi",
+          "b1-acute-osa-women-nhlbi",
+          "b1-acute-osa-living-nhlbi",
+          "b1-acute-osa-nhs",
+          "b1-acute-osa-nice",
+          "b1-acute-osa-asa-anesthesia"
+        ],
+        "locators": {
+          "b1-acute-osa-children-nhlbi": [
+            "Children; Causes, symptoms and treatment"
+          ],
+          "b1-acute-osa-women-nhlbi": [
+            "Pregnancy; Symptoms; Pregnancy; Menopause; Pregnancy: cesarean or other surgery disclosure"
+          ],
+          "b1-acute-osa-living-nhlbi": [
+            "Information to help you stay safe"
+          ],
+          "b1-acute-osa-nhs": [
+            "Causes: enlarged tonsils/adenoids"
+          ],
+          "b1-acute-osa-nice": [
+            "Guideline scope: over 16s; 1.1.2 pregnancy and PCOS risk"
+          ],
+          "b1-acute-osa-asa-anesthesia": [
+            "How apnea affects anesthesia; reducing risk"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, applicable populations, source independence and regional conflicts are recorded in data/evidence/editorial-checks/batch-01-osa.json; this source-locator index is for the existing content-audit reader. Editorial verification is separate from clinician sign-off."
+      },
+      "prognosis_followup": {
+        "source_ids": [
+          "b1-acute-osa-treatment-nhlbi",
+          "b1-acute-osa-living-nhlbi",
+          "b1-acute-osa-nhs",
+          "b1-acute-osa-aasm-pap",
+          "b1-acute-osa-aasm-oral",
+          "b1-acute-osa-aasm-weight",
+          "b1-acute-osa-mayo-osa",
+          "b1-acute-osa-uhnm-cpap",
+          "b1-acute-osa-uhs-cpap"
+        ],
+        "locators": {
+          "b1-acute-osa-treatment-nhlbi": [
+            "Lifelong healthy lifestyle changes"
+          ],
+          "b1-acute-osa-living-nhlbi": [
+            "Checkups; treatment effectiveness; Using and caring for oral device; PAP follow-up; Regular checkups and repeat study after weight change"
+          ],
+          "b1-acute-osa-nhs": [
+            "CPAP discomfort review; Getting tested; severity"
+          ],
+          "b1-acute-osa-aasm-pap": [
+            "Abstract good-practice statement 2"
+          ],
+          "b1-acute-osa-aasm-oral": [
+            "Abstract recommendations 4 and 6"
+          ],
+          "b1-acute-osa-aasm-weight": [
+            "AASM Practice Standards, longitudinal management bullet"
+          ],
+          "b1-acute-osa-mayo-osa": [
+            "Preparing for your appointment / What you can do; PAP therapy and Self care"
+          ],
+          "b1-acute-osa-uhnm-cpap": [
+            "Heated Humidifier; Routine Care; Troubleshooting; Will I ever be able to stop CPAP?"
+          ],
+          "b1-acute-osa-uhs-cpap": [
+            "Printed p11 (PDF page 6), naps/travel; pp5-9 mask care and follow-up"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, applicable populations, source independence and regional conflicts are recorded in data/evidence/editorial-checks/batch-01-osa.json; this source-locator index is for the existing content-audit reader. Editorial verification is separate from clinician sign-off."
+      },
+      "complications": {
+        "source_ids": [
+          "b1-acute-osa-living-nhlbi",
+          "b1-acute-osa-nhs"
+        ],
+        "locators": {
+          "b1-acute-osa-living-nhlbi": [
+            "How sleep apnea affects health; Untreated sleep; driving accidents; Cardiovascular and metabolic health risks; Persistent difficulties; follow-up"
+          ],
+          "b1-acute-osa-nhs": [
+            "Sleep apnoea can cause other problems; Other problems: accidents, concentration; Other problems; Mood and partner impact; CPAP review"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, applicable populations, source independence and regional conflicts are recorded in data/evidence/editorial-checks/batch-01-osa.json; this source-locator index is for the existing content-audit reader. Editorial verification is separate from clinician sign-off."
+      },
+      "prevention": {
+        "source_ids": [
+          "b1-acute-osa-causes-nhlbi",
+          "b1-acute-osa-nhs",
+          "b1-acute-osa-treatment-nhlbi",
+          "b1-acute-osa-living-nhlbi",
+          "b1-acute-osa-mayo-osa",
+          "b1-acute-osa-uhnm-cpap"
+        ],
+        "locators": {
+          "b1-acute-osa-causes-nhlbi": [
+            "Modifiable and nonmodifiable risks; Healthy lifestyle lowers risk"
+          ],
+          "b1-acute-osa-nhs": [
+            "Causes; Things you can do; CPAP effectiveness and comfort"
+          ],
+          "b1-acute-osa-treatment-nhlbi": [
+            "Healthy lifestyle changes; PAP and treatment options"
+          ],
+          "b1-acute-osa-living-nhlbi": [
+            "Device use and review"
+          ],
+          "b1-acute-osa-mayo-osa": [
+            "Preparing for your appointment / What you can do; PAP therapy and Self care"
+          ],
+          "b1-acute-osa-uhnm-cpap": [
+            "Heated Humidifier; Routine Care; Troubleshooting; Will I ever be able to stop CPAP?"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, applicable populations, source independence and regional conflicts are recorded in data/evidence/editorial-checks/batch-01-osa.json; this source-locator index is for the existing content-audit reader. Editorial verification is separate from clinician sign-off."
+      }
+    }
   }
 ]

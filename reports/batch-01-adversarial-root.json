@@ -72,6 +72,80 @@
         "https://www.nhs.uk/medicines/methylphenidate-adults/side-effects-of-methylphenidate-for-adults/"
       ],
       "retrieval_note": "FDA全文和NHS官方索引已核读；全节未通过。"
+    },
+    {
+      "id": "torsion-antibiotic-001",
+      "topic": "testicular-torsion",
+      "section": "medications",
+      "status": "open_author_notified",
+      "finding": "抗生素只用于感染的绝对限定没有包括围术期预防的可能性；感染处理与解扭手术应分清。",
+      "required_fix": "明确附睾/睾丸感染另作抗感染处理，不把药物写成疑似扭转手术评估的替代。",
+      "sources_reopened": [
+        "https://uroweb.org/guidelines/paediatric-urology/chapter/acute-scrotum",
+        "https://www.rch.org.au/clinicalguide/guideline_index/Acute_scrotal_pain_or_swelling/"
+      ],
+      "locator": "EAU 8.3.1/8.3.2; RCH Treatment"
+    },
+    {
+      "id": "torsion-source-001",
+      "topic": "testicular-torsion",
+      "section": "daily_care/prognosis_followup/complications",
+      "status": "open_author_notified",
+      "finding": "日常护理只有一个医院来源；萎缩等正文没有关联实际明确支持的GST/EAU章节。",
+      "required_fix": "按主张补真实来源和定位，院间恢复间隔不同，不合成统一时限。",
+      "sources_reopened": [
+        "https://www.guysandstthomas.nhs.uk/health-information/testicular-torsion-surgery",
+        "https://www.cuh.nhs.uk/patient-information/testicular-torsion-information-for-teenagers/",
+        "https://uroweb.org/guidelines/paediatric-urology/chapter/acute-scrotum"
+      ],
+      "locator": "GST Risks/After you leave hospital/Stitches; CUH home/ongoing care/follow up; EAU 8.3.3/8.4"
+    },
+    {
+      "id": "osa-metadata-001",
+      "topic": "obstructive-sleep-apnea",
+      "section": "special_populations",
+      "status": "resolved",
+      "finding": "NHLBI儿童页面日期记录为2025-03-24，当前实际正文为2025-02-12。",
+      "required_fix": "修正已读版本和支持记录的来源元数据哈希。",
+      "sources_reopened": [
+        "https://www.nhlbi.nih.gov/health/sleep-apnea/children"
+      ],
+      "locator": "Last updated on February 12, 2025",
+      "resolution": "已重读NHLBI儿童页面并纠正为2025-02-12；通过记录绑定当前来源元数据哈希。",
+      "accepted_content_sha256": "18b33d26cb7b9a0e1755dfe94ce5ff2dfdd8fe6fce52ab09f8f93d8c3cc6d575",
+      "verification_record": "reports/batch-01-osa-independent.json"
+    },
+    {
+      "id": "osa-medication-001",
+      "topic": "obstructive-sleep-apnea",
+      "section": "medications",
+      "status": "resolved",
+      "finding": "特定甲状腺肿瘤和MEN2没有说明病名与个人/家族条件；术前告知遗漏替尔泊肽本身。",
+      "required_fix": "白话解释髓样甲状腺癌个人或家族病史与MEN2禁忌；使用替尔泊肽者告知手术/深镇静团队，说明胃内容物吸入肺的风险，不自行添加停药时限。",
+      "sources_reopened": [
+        "https://www.fda.gov/news-events/press-announcements/fda-approves-first-medication-obstructive-sleep-apnea"
+      ],
+      "locator": "2024-12-20 release: thyroid contraindications, pulmonary aspiration and planned surgery",
+      "resolution": "已在中英说明个人/家族髓样甲状腺癌与MEN2含义；替尔泊肽术前告知和胃排空/吸入风险核对FDA、ASA及现行标签；另补孕期、4周避孕与美英哺乳边界。",
+      "accepted_content_sha256": "18b33d26cb7b9a0e1755dfe94ce5ff2dfdd8fe6fce52ab09f8f93d8c3cc6d575",
+      "verification_record": "reports/batch-01-osa-independent.json"
+    },
+    {
+      "id": "osa-independent-001",
+      "topic": "obstructive-sleep-apnea",
+      "section": "diagnosis/prognosis_followup/special_populations/red_flags",
+      "status": "resolved",
+      "finding": "NICE建议/理由是一个编写来源，多个NHLBI页面也是一个；阴性检查后复查、部分围术期行动和随访细项需独立支持。操作机器是驾驶资料的延伸。",
+      "required_fix": "补AASM或其他独立指南的具体定位；驾驶扩展到机器需补证或收窄；说明NG202适用年龄。",
+      "sources_reopened": [
+        "https://www.nhlbi.nih.gov/health/sleep-apnea/diagnosis",
+        "https://www.nhlbi.nih.gov/health/sleep-apnea/living-with",
+        "https://www.nhs.uk/conditions/sleep-apnoea/"
+      ],
+      "locator": "NHLBI sleep study/checkups/PAP/Information to help you stay safe; NHS Driving and sleep apnoea",
+      "resolution": "已按真实编写来源拆分NICE/NIH；AASM、ASA、UHS、Mayo等实际资料补足阴性检查、随访、护理及围术期细项。驾驶行动收窄，NG202明确16岁以上；全部14節52项接受核验，独立报告说明共享研究与获取局限。",
+      "accepted_content_sha256": "18b33d26cb7b9a0e1755dfe94ce5ff2dfdd8fe6fce52ab09f8f93d8c3cc6d575",
+      "verification_record": "reports/batch-01-osa-independent.json"
     }
   ],
   "other_sources_reopened": [
@@ -82,7 +156,34 @@
     "https://www.nice.org.uk/guidance/ng87/chapter/recommendations",
     "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/retinal-detachment",
     "https://www.nhs.uk/conditions/detached-retina-retinal-detachment/",
-    "https://www.mayoclinic.org/diseases-conditions/testicular-torsion/symptoms-causes/syc-20378270"
+    "https://www.mayoclinic.org/diseases-conditions/testicular-torsion/symptoms-causes/syc-20378270",
+    "https://www.mayoclinic.org/diseases-conditions/testicular-torsion/diagnosis-treatment/drc-20378274",
+    "https://www.guysandstthomas.nhs.uk/health-information/testicular-torsion-surgery",
+    "https://www.cuh.nhs.uk/patient-information/testicular-torsion-information-for-teenagers/",
+    "https://www.rch.org.au/clinicalguide/guideline_index/Acute_scrotal_pain_or_swelling/",
+    "https://uroweb.org/guidelines/paediatric-urology/chapter/acute-scrotum",
+    "https://uroweb.org/guidelines/paediatric-urology/chapter/perioperative-management",
+    "https://www.nhs.uk/conditions/sleep-apnoea/",
+    "https://www.nhlbi.nih.gov/health/sleep-apnea",
+    "https://www.nhlbi.nih.gov/health/sleep-apnea/causes",
+    "https://www.nhlbi.nih.gov/health/sleep-apnea/diagnosis",
+    "https://www.nhlbi.nih.gov/health/sleep-apnea/treatment",
+    "https://www.nhlbi.nih.gov/health/sleep-apnea/living-with",
+    "https://www.nhlbi.nih.gov/health/sleep-apnea/children",
+    "https://www.nhlbi.nih.gov/health/sleep-apnea/women",
+    "https://www.fda.gov/news-events/press-announcements/fda-approves-first-medication-obstructive-sleep-apnea"
   ],
-  "not_yet_reviewed": "上述为实际已完成的指定发现核对；其余主张和首批全部主题仍需逐节独立核验，本记录不构成整篇通过。"
+  "not_yet_reviewed": "睡眠呼吸暂停已完成逐项独立编辑核验；首批其他19个主题尚未获得整篇通过，本批仍在进行。",
+  "reviewed_text_snapshots": [
+    {
+      "topic": "testicular-torsion",
+      "body_sha256": "05523185b50d3b5e3e5f92f0ba18fcc908d076acfffaa92636a6f1349dacd9a9",
+      "scope": "All 14 Chinese and English sections read; actual source comparison remains pending corrections and claim-level acceptance."
+    },
+    {
+      "topic": "obstructive-sleep-apnea",
+      "body_sha256": "18b33d26cb7b9a0e1755dfe94ce5ff2dfdd8fe6fce52ab09f8f93d8c3cc6d575",
+      "scope": "All 14 bilingual sections and 52 claims independently reviewed and accepted editorially; not a clinician sign-off."
+    }
+  ]
 }

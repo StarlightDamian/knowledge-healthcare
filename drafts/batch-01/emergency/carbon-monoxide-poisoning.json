@@ -1,0 +1,288 @@
+{
+  "schema_version": "1.0.0",
+  "id": "carbon-monoxide-poisoning",
+  "kind": "condition",
+  "primary_domain": "injury_toxicology",
+  "names": {
+    "zh-CN": "一氧化碳中毒",
+    "en": "Carbon monoxide poisoning"
+  },
+  "aliases": {
+    "zh-CN": [
+      "CO中毒",
+      "煤气中毒（常用俗称）"
+    ],
+    "en": [
+      "CO poisoning"
+    ]
+  },
+  "symptom_terms": [
+    {
+      "zh-CN": "头痛和头晕",
+      "en": "Headache and dizziness"
+    },
+    {
+      "zh-CN": "恶心呕吐",
+      "en": "Nausea and vomiting"
+    },
+    {
+      "zh-CN": "胸痛",
+      "en": "Chest pain"
+    },
+    {
+      "zh-CN": "意识模糊",
+      "en": "Confusion"
+    }
+  ],
+  "departments": [
+    "emergency"
+  ],
+  "reference_urgency": "emergency",
+  "sections": {
+    "summary": {
+      "text": {
+        "zh-CN": "一氧化碳，简称CO，是燃料燃烧时可能产生的无色、无味气体。吸入后它会妨碍血液携带和释放氧，也影响细胞利用氧，使脑和心脏等器官受损。\n\n- 常见表现是头痛、头晕、恶心、乏力；严重时会胸痛、呼吸困难、意识混乱或昏倒。症状像感冒，不代表原因一定是感染。\n- 同一房间多人同时不舒服，或离开室内就改善，是环境暴露的线索。怀疑中毒时先到室外新鲜空气处，再立即求助。\n- 俗称“煤气中毒”常指这一问题，但燃气事故还可能涉及缺氧、火灾等其他危险；医生会按实际暴露判断。",
+        "en": "Carbon monoxide, or CO, is a colorless, odorless gas that can be produced by burning fuel. It interferes with blood carrying and releasing oxygen and with cells using oxygen, damaging organs such as the brain and heart.\n\n- Common features include headache, dizziness, nausea and weakness. Severe exposure can cause chest pain, breathlessness, confusion or collapse. Flu-like symptoms do not necessarily mean an infection.\n- Several people becoming unwell in one room, or symptoms improving outdoors, are clues to environmental exposure. If poisoning is suspected, first move outside into fresh air and seek help promptly.\n- The colloquial term “gas poisoning” may refer to CO, but fuel-gas incidents can also involve oxygen deprivation, fire or other hazards. Assessment depends on the actual exposure."
+      },
+      "source_ids": [
+        "co-cdc-basics",
+        "co-cdc-clinical",
+        "co-merck-professional",
+        "co-nhs",
+        "co-merck-consumer",
+        "co-cpsc"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "causes_risks": {
+      "text": {
+        "zh-CN": "直接原因是吸入含一氧化碳的空气，风险由气体产生、通风不足和暴露时间共同决定。\n\n- 室内炭火或烧烤、帐篷内露营炉、故障或排气不良的燃气热水器与取暖器，都可能形成危险积聚；没有闻到异味不能说明安全。\n- 在车库或封闭空间运行汽车、发电机和燃油工具也有风险。开着门窗并不能让室内使用便携式发电机变得安全。\n- 睡着、醉酒或受使人嗜睡的物质影响时，可能无法及时察觉和离开环境；婴儿、老人及有心肺疾病的人也更容易受影响。",
+        "en": "The direct cause is inhaling air containing CO. Risk depends on production of the gas, inadequate ventilation and duration of exposure.\n\n- Indoor charcoal fires or grills, camping stoves in tents, and faulty or poorly vented fuel heaters and water heaters can cause dangerous buildup. Absence of a smell does not establish safety.\n- Running engines, generators or fuel-powered tools in garages or enclosed spaces is hazardous. Open doors and windows do not make indoor portable-generator use safe.\n- Sleeping, intoxication or sedating substances can prevent timely recognition and escape. Infants, older adults and people with heart or lung disease are also more vulnerable."
+      },
+      "source_ids": [
+        "co-nhs",
+        "co-mayo-symptoms",
+        "co-cdc-basics",
+        "co-cpsc",
+        "co-cdc-clinical"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "red_flags": {
+      "text": {
+        "zh-CN": "怀疑CO暴露且出现呼吸困难、胸痛、突然混乱、不能正常回应或昏倒，应在安全地点立即呼叫急救。\n\n- CO报警器响起时立即离开建筑，到室外后联络当地消防或急救。不要以“闻不到味道”或“目前没有症状”为由忽略报警。\n- 同住者先后出现头痛、恶心或困倦时，要想到共同暴露并尽快离开；不要只让最不舒服的一人离开，其他人继续待在可能有污染的房间。\n- 离开后不要返回可疑环境取物或寻找漏点；等待专业人员确认并处理危险源。",
+        "en": "With possible CO exposure, call emergency services from a safe place for breathlessness, chest pain, sudden confusion, inability to respond normally or collapse.\n\n- Leave the building when a CO alarm sounds and contact local emergency or fire services from outside. Do not ignore it because there is no smell or no current symptom.\n- If household members develop headache, nausea or drowsiness together, consider a shared exposure and leave promptly. Do not send out only the sickest person while others remain in the potentially contaminated room.\n- Do not return to the suspected environment to retrieve belongings or locate a leak. Wait for professionals to assess and address the source."
+      },
+      "source_ids": [
+        "co-nhs",
+        "co-mayo-symptoms",
+        "co-mayo-treatment",
+        "co-cpsc",
+        "co-merck-consumer"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "care": {
+      "text": {
+        "zh-CN": "疑似中毒先脱离暴露，再接受及时医疗评估；环境是否已经安全与人体是否已受损是两个问题。\n\n- 严重呼吸、胸部或意识症状需要急救；较轻头痛、头晕或恶心但有可疑暴露，也应立即获取医疗指导，而不是继续留在原处观察。\n- 英国NHS将疑似轻症的咨询指向111，严重表现指向999或急诊；美国资料使用911。其他地区应使用当地急救和中毒咨询服务。\n- 离开后感觉好转仍应告知医护暴露经过。儿童、孕妇、老人或有心肺病者需要特别说明这些背景，以便安排合适评估。\n- 治疗后如出现新的记忆、情绪、走路或协调问题，应尽快复诊；新的胸痛、呼吸困难或意识变化则立即急诊。",
+        "en": "With suspected poisoning, stop exposure and obtain timely medical assessment. Environmental safety and injury to the person are separate questions.\n\n- Severe breathing, chest or awareness symptoms need emergency services. Even milder headache, dizziness or nausea with suspected exposure requires prompt medical advice, not observation in the same location.\n- The UK NHS directs suspected milder symptoms to 111 and severe features to 999 or emergency care; US materials use 911. Elsewhere, use local emergency and poison-information services.\n- Even if symptoms improve outdoors, tell clinicians about the exposure. Explicitly mention childhood, pregnancy, older age or heart or lung disease so assessment can reflect these factors.\n- After treatment, seek prompt review for new memory, mood, walking or coordination problems. New chest pain, breathing difficulty or awareness changes require emergency care."
+      },
+      "source_ids": [
+        "co-nhs",
+        "co-mayo-treatment",
+        "co-mayo-symptoms",
+        "co-cdc-clinical"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diagnosis": {
+      "text": {
+        "zh-CN": "医生结合暴露史、症状和血液检查判断，不能仅凭头痛或一次家用仪器读数下结论。\n\n- 说明使用过什么炉具或发动机、在哪里、持续多久、是否多人不适、何时离开及是否已吸氧。这些信息会影响检查结果的解释。\n- 血中的碳氧血红蛋白，简称COHb，指一氧化碳与血红蛋白结合的部分；医院使用专门设备测量。离开现场或吸氧后数值会下降，较低结果不能单独排除先前明显暴露。\n- 普通指夹血氧仪可能显示看似正常的氧饱和度，却分辨不了这一问题。不能用它的正常读数来决定继续待在可疑房间或不就医。\n- 胸痛或严重中毒时可能做心电图和心肌损伤检查；神经表现可能需要进一步检查。COHb读数还要结合症状、暴露时间及器官损伤判断严重程度。",
+        "en": "Clinicians combine exposure history, symptoms and blood testing. Headache alone or one home-device reading cannot establish the diagnosis.\n\n- Describe the appliance or engine, location, duration, whether others were ill, when you left and any oxygen already given. These details affect interpretation of tests.\n- Carboxyhemoglobin, or COHb, is hemoglobin bound to CO and is measured with dedicated equipment. Levels fall after leaving the source or receiving oxygen, so a lower result alone cannot exclude significant earlier exposure.\n- A standard fingertip oximeter may display apparently normal oxygen saturation while failing to identify CO poisoning. Its reading must not be used to justify staying in the room or avoiding care.\n- Chest pain or severe poisoning may prompt ECG and cardiac-injury testing; neurological findings may require further investigation. Severity is assessed using symptoms, exposure duration and organ injury alongside COHb."
+      },
+      "source_ids": [
+        "co-cdc-clinical",
+        "co-merck-professional",
+        "co-mayo-treatment"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "differentials": {
+      "text": {
+        "zh-CN": "CO中毒的早期表现很普通，环境线索尤其重要，但也要检查同时存在的其他问题。\n\n- 流感或其他病毒感染也会头痛、乏力和恶心。同一住所多人同时发病、室内加重而室外好转，更提示需要查找共同暴露，而不是直接认定传染。\n- 低血糖、酒精或药物影响也可造成意识异常；医生按情况检测血糖并询问相关使用史。这些情况还可能与中毒同时存在。\n- 火灾受害者不仅可能吸入CO，还可能有烟雾造成的气道损伤或其他毒物暴露；即使测到CO，也不能把所有呼吸问题都归于它。\n- 胸痛或晕倒需要评估心脏和其他急症；CO本身也可能损伤心肌，不能只因为发现中毒就停止进一步评估。",
+        "en": "Early symptoms are nonspecific, making environmental clues important while also checking for coexisting problems.\n\n- Flu and other viral illnesses also cause headache, fatigue and nausea. Several occupants becoming ill together and improvement outside increase concern for a common exposure rather than proving infection.\n- Low glucose, alcohol or medicines can also alter awareness. Clinicians may check glucose and ask about substances, which can coexist with CO exposure.\n- Fire victims may have airway injury from smoke or exposure to other toxins as well as CO. A positive CO test does not explain every breathing problem.\n- Chest pain or collapse calls for assessment of cardiac and other emergencies. CO can itself injure heart muscle, so identifying poisoning does not end the assessment."
+      },
+      "source_ids": [
+        "co-cdc-clinical",
+        "co-merck-consumer",
+        "co-nhs",
+        "co-merck-professional"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "treatment": {
+      "text": {
+        "zh-CN": "治疗先停止继续吸入CO，再用氧气和支持治疗恢复组织供氧、保护器官。\n\n- 医院通常通过面罩给予高浓度氧气，加快CO离开血液；不能自主呼吸者可能需要呼吸支持。医护会反复检查意识和其他症状。\n- 高压氧是在加压舱内吸氧，可能用于严重神经、心脏表现或妊娠等情形。是否使用要考虑症状、暴露经过、可及性及转运时间。\n- 高压氧对所有患者的长期神经结局是否都更好，证据并不一致。ACEP 2025成人政策支持为选定有症状患者考虑，而不是承诺人人获益。",
+        "en": "Treatment first stops further CO inhalation, then uses oxygen and supportive care to restore tissue oxygen delivery and protect organs.\n\n- Hospitals commonly give high-concentration oxygen through a mask to speed CO removal. People unable to breathe independently may need ventilatory support. Staff reassess awareness and other symptoms.\n- Hyperbaric oxygen means breathing oxygen in a pressurized chamber. It may be considered with serious neurological or cardiac features or pregnancy, taking account of symptoms, exposure, availability and transfer time.\n- Evidence does not consistently show better long-term neurological outcomes for every patient with hyperbaric oxygen. The 2025 ACEP adult policy supports considering it for selected symptomatic patients, without promising benefit for everyone."
+      },
+      "source_ids": [
+        "co-cdc-clinical",
+        "co-merck-professional",
+        "co-mayo-treatment",
+        "co-acep-policy-summary",
+        "co-merck-consumer"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "medications": {
+      "text": {
+        "zh-CN": "一氧化碳中毒的主要针对性处理是医用氧气，而不是一种在家服用的“解毒片”。\n\n- 高浓度氧气帮助CO更快从血液中清除；给氧方式和持续时间由症状及医疗评估决定，不是根据家用血氧仪自行调节。\n- 出现心脏、呼吸或神经并发症时，医生会处理相应问题。止痛药即使缓解头痛，也没有完成脱离暴露和清除CO这两个治疗目标。\n- 高压氧需要专业设施和评估，可能带来耳等部位的压力损伤，转运本身也有代价；治疗团队会权衡这些因素与可能获益。",
+        "en": "The main targeted treatment is medical oxygen, not an at-home “detox pill.”\n\n- High-concentration oxygen speeds CO clearance. Its delivery and duration are determined by symptoms and medical assessment, not self-adjusted from a home oximeter.\n- Clinicians treat cardiac, respiratory or neurological complications when present. Relief of headache with pain medicine does not accomplish removal from exposure or clearance of CO.\n- Hyperbaric oxygen requires specialist facilities and assessment. It can cause pressure injury, including to the ears, and transfer has its own costs and risks; teams weigh these against potential benefit."
+      },
+      "source_ids": [
+        "co-cdc-clinical",
+        "co-mayo-treatment",
+        "co-merck-professional",
+        "co-acep-policy-summary"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diet": {
+      "text": {
+        "zh-CN": "没有特定食物能替代脱离污染环境和医疗给氧，饮食不是CO中毒的解毒方法。\n\n- 问题发生在吸入气体后血液和组织的供氧过程，不是胃里残留了某种食物；通过吃喝“冲淡毒气”的想法不符合这一机制。\n- 已阅读的官方治疗资料以氧气、支持治疗和并发症评估为重点，没有提出疾病特异的食谱。恢复期的进食安排按本人是否恶心、能否正常进食及合并疾病处理。",
+        "en": "No specific food replaces leaving the contaminated environment and medical oxygen. Diet is not an antidote for CO poisoning.\n\n- The problem is oxygen transport and use after inhaling a gas, not food remaining in the stomach. Eating or drinking to “dilute the gas” does not address this mechanism.\n- The treatment guidance reviewed focuses on oxygen, supportive care and assessment of complications, without a disease-specific diet. Recovery meals depend on nausea, ability to eat and other medical conditions."
+      },
+      "source_ids": [
+        "co-cdc-clinical",
+        "co-mayo-treatment",
+        "co-merck-consumer",
+        "co-merck-professional",
+        "co-cdc-basics"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "daily_care": {
+      "text": {
+        "zh-CN": "发生中毒后的家庭处理重点是确认环境安全，并观察恢复后的脑和心脏相关变化。\n\n- 专业人员查明并修好污染源、确认可以返回前，不要再次住进原来的环境；仅打开窗户不等于已经完成维修。\n- 保留就诊记录、可能的暴露时间和设备信息，让后续医生知道这是CO暴露后的恢复。与同住者一起留意记忆、性格或走路协调是否出现新的变化。\n- 新的混乱、晕倒、胸痛或呼吸困难按急症处理；较缓慢出现的记忆和行动问题也要及时复诊，不能只归咎于“还没休息好”。\n- 检查家中CO报警器、电源或电池以及设备维护安排，让家人都知道响铃后先撤离。",
+        "en": "Home care after poisoning focuses on ensuring a safe environment and noticing brain- or heart-related changes during recovery.\n\n- Do not resume staying in the affected place until professionals identify and repair the source and advise that return is safe. Opening a window is not the same as fixing the problem.\n- Keep medical records and information on exposure time and equipment so follow-up clinicians know the context. Ask household members to help notice new memory, personality or walking-coordination changes.\n- Treat new confusion, collapse, chest pain or breathlessness as emergencies. Gradually developing memory or movement problems also need prompt review rather than being dismissed as inadequate rest.\n- Check CO alarms, power or batteries and appliance maintenance arrangements, and ensure everyone knows to evacuate when an alarm sounds."
+      },
+      "source_ids": [
+        "co-mayo-symptoms",
+        "co-cdc-clinical",
+        "co-nhs",
+        "co-mayo-treatment",
+        "co-cdc-basics",
+        "co-cpsc"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "special_populations": {
+      "text": {
+        "zh-CN": "同样暴露并不意味着每个人受影响一样；胎儿、婴儿和已有供氧相关疾病的人尤其需要关注。\n\n- 怀孕时CO可影响胎儿，即使孕妇自己的症状不重也应及时评估并主动告知孕期。医生可能更积极讨论高压氧。\n- 婴幼儿和老人更容易受伤害；儿童可能不能准确描述头痛或头晕，不能依赖主动抱怨来决定是否需要评估共同暴露。\n- 慢性心脏病、贫血或呼吸疾病可减少应对供氧受阻的余地；接诊时应告知这些病史。\n- 睡眠、醉酒或明显镇静状态会使人难以察觉危险和逃离；发现旁人反应异常时，要在安全处呼叫专业急救。",
+        "en": "The same exposure does not affect everyone equally. Fetuses, infants and people with conditions affecting oxygen delivery warrant particular attention.\n\n- CO can affect the fetus during pregnancy. Seek timely assessment and mention pregnancy even if maternal symptoms seem mild; clinicians may consider hyperbaric oxygen more readily.\n- Infants, young children and older adults are more vulnerable. Young children may not describe headache or dizziness clearly, so reported symptoms alone should not determine assessment after a shared exposure.\n- Chronic heart disease, anemia or respiratory illness can reduce reserve when oxygen delivery is impaired. Tell the treating team about these conditions.\n- Sleep, intoxication or marked sedation can impair recognition and escape. If someone is responding abnormally, call professional emergency help from safety."
+      },
+      "source_ids": [
+        "co-cdc-clinical",
+        "co-mayo-symptoms",
+        "co-mayo-treatment",
+        "co-cdc-basics",
+        "co-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prognosis_followup": {
+      "text": {
+        "zh-CN": "恢复取决于吸入量、持续时间、是否昏迷和器官损伤，不能从一次COHb数值预测全部结局。\n\n- 轻症离开环境后可能较快改善，但较重中毒可有持续的心脏或脑损伤。感觉好转后仍要完成医生安排的检查和复诊。\n- 少数人在看似恢复后数天至数周才出现记忆、情绪或动作问题，称为迟发性神经精神后遗症。出现这些变化应告知医生此前的CO暴露。\n- 美国CDC建议出院后进行再次的医学和神经评估；具体预约由治疗团队安排。如果症状出现或加重，应提前求助，不等待常规复查。",
+        "en": "Recovery depends on the amount and duration of exposure, loss of consciousness and organ injury. One COHb value cannot predict the entire outcome.\n\n- Milder symptoms may improve quickly after leaving the source, while more severe poisoning can leave persistent cardiac or brain injury. Complete planned assessments and follow-up even after feeling better.\n- Some people develop memory, mood or movement problems days to weeks after apparent recovery, called delayed neuropsychiatric effects. Tell clinicians about the earlier CO exposure if these changes develop.\n- US CDC guidance recommends repeat medical and neurological assessment after discharge; the treating team should arrange it. Seek help earlier if symptoms appear or worsen rather than waiting for routine review."
+      },
+      "source_ids": [
+        "co-cdc-clinical",
+        "co-mayo-symptoms",
+        "co-merck-consumer",
+        "co-merck-professional"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "complications": {
+      "text": {
+        "zh-CN": "CO可同时损害供氧和细胞利用氧的过程，因此并发症不局限于呼吸系统。\n\n- 心脏可能出现心肌损伤或心律失常，表现为胸痛、心悸、晕厥等；严重中毒时医护会评估心脏。\n- 脑部损伤可表现为急性的混乱、抽搐、昏迷，也可留下记忆或动作问题。迟发症状不是每个人都会发生，但应知道如何识别。\n- 严重暴露可死亡；火灾中还可能同时有烟雾气道损伤，使呼吸问题更复杂。抢救时需处理整个暴露事件，而不只一个血液指标。",
+        "en": "CO impairs both oxygen delivery and cellular oxygen use, so complications are not limited to the lungs.\n\n- The heart may develop muscle injury or rhythm disturbances, potentially causing chest pain, palpitations or fainting. Cardiac assessment is part of severe-poisoning care.\n- Brain injury can cause acute confusion, seizures or coma and can leave memory or movement problems. Delayed effects do not occur in everyone, but knowing their signs matters.\n- Severe exposure can be fatal. Fire-related exposure may also cause smoke airway injury, complicating breathing problems. Emergency treatment addresses the whole event, not just one blood marker."
+      },
+      "source_ids": [
+        "co-cdc-clinical",
+        "co-merck-professional",
+        "co-mayo-symptoms",
+        "co-cdc-basics"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prevention": {
+      "text": {
+        "zh-CN": "预防同时依靠减少气体产生和积聚、早期报警以及出事后排除危险源。\n\n- 安装可靠CO报警器并按说明检查、更换。美国CDC/CPSC强调睡眠区域附近及住宅各层的保护；英国NHS强调有燃料燃烧设备的房间。具体布置结合当地要求和产品说明。\n- 让合格人员安装和定期维护燃气、燃油或燃煤设备，保持烟道及通风口畅通；不要用燃气灶或烤箱给房间取暖。\n- 不要在室内或帐篷内使用炭火烧烤和露营炉，也不要在封闭车库让发动机运转。开门窗不能取消这些限制。\n- 美国CDC和CPSC要求便携发电机只在室外远离住宅和开口处运行，建议距离超过20英尺，约6米，并让废气朝远离房屋的方向排出；仍须遵循设备和当地安全要求。\n- 曾发生中毒的场所应先查明和修复源头再使用；单有报警器不能替代正确安装、维护和室外使用规则。",
+        "en": "Prevention combines limiting gas production and buildup, early alarms and fixing the source after an incident.\n\n- Install reliable CO alarms and check and replace them as instructed. US CDC/CPSC guidance emphasizes protection near sleeping areas and on home levels; UK NHS guidance emphasizes rooms with fuel-burning appliances. Follow local requirements and product instructions for placement.\n- Have qualified personnel install and maintain fuel-burning equipment, keep flues and vents clear, and never use a gas stove or oven to heat a room.\n- Do not use charcoal grills or camping stoves indoors or in tents, or leave engines running in enclosed garages. Opening doors or windows does not remove these restrictions.\n- US CDC and CPSC guidance keeps portable generators outdoors well away from homes and openings: more than 20 feet, about 6 meters, with exhaust directed away from the home. Equipment and local safety requirements still apply.\n- Identify and repair the source before reusing a location where poisoning occurred. An alarm does not replace correct installation, maintenance or outdoor-use rules."
+      },
+      "source_ids": [
+        "co-cdc-basics",
+        "co-nhs",
+        "co-mayo-symptoms",
+        "co-cpsc",
+        "co-merck-professional"
+      ],
+      "support_status": "pending_claim_verification"
+    }
+  },
+  "source_ids": [
+    "co-cdc-basics",
+    "co-cdc-clinical",
+    "co-merck-professional",
+    "co-nhs",
+    "co-merck-consumer",
+    "co-cpsc",
+    "co-mayo-symptoms",
+    "co-mayo-treatment",
+    "co-acep-policy-summary"
+  ],
+  "related_ids": [
+    "dizziness",
+    "chest-pain"
+  ],
+  "tags": [
+    "not_classified_as_infectious"
+  ],
+  "clinical_region": "MULTI_REGION",
+  "coding": [],
+  "review": {
+    "status": "editorial_draft",
+    "reviewers": [],
+    "medical_reviewed_at": null,
+    "editorial_updated_at": "2026-09-30",
+    "next_editorial_review_due": "2026-12-29"
+  },
+  "localizations": {
+    "zh-CN": {
+      "status": "draft",
+      "clinician_reviewed": false
+    },
+    "en": {
+      "status": "draft",
+      "clinician_reviewed": false
+    }
+  },
+  "evidence_certainty": "not_formally_graded",
+  "limitations": {
+    "zh-CN": "各节保留来源定位和地区条件；编辑证据记录中的未完成项见来源与编辑信息。",
+    "en": "Section sources and regional conditions are retained; unfinished evidence checks are recorded in editorial information."
+  },
+  "study_ids": [],
+  "advanced_fields": {
+    "prevalence_estimate": null,
+    "incidence_estimate": null,
+    "formal_diagnostic_criteria": null,
+    "quantitative_prognosis": null,
+    "transmission_details": null,
+    "screening_intervals": null,
+    "regional_drug_approval": null,
+    "procedure_indications": null
+  },
+  "advanced_fields_status": "not_yet_curated"
+}

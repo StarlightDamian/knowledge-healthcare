@@ -1,0 +1,65 @@
+{
+  "checked_at": "2026-09-30",
+  "topic": "obstructive-sleep-apnea",
+  "content_sha256": "18b33d26cb7b9a0e1755dfe94ce5ff2dfdd8fe6fce52ab09f8f93d8c3cc6d575",
+  "candidate_topic_count": 73,
+  "candidate_populated_specialties": 33,
+  "candidate_source_count": 332,
+  "editorial": {
+    "sections": 14,
+    "claims": 52,
+    "clinician_signoff": false,
+    "qualified_categories": 1,
+    "denominator": 13155
+  },
+  "checks": {
+    "model": {
+      "passed": 45
+    },
+    "node": {
+      "passed": 340,
+      "command": "node --test tests/*.test.mjs"
+    },
+    "python_local": {
+      "discovered": 114,
+      "passed": 99,
+      "skipped": 15,
+      "failed": 0,
+      "skip_reason": "Real PostgreSQL DSNs unavailable on Windows; server PostgreSQL/API checks executed separately; capacity drill opt-in."
+    },
+    "server_postgresql_http": {
+      "passed": 15,
+      "skipped": 0,
+      "database": "dedicated _test",
+      "snapshot_readback_and_publication_contract": true
+    },
+    "server_browser": {
+      "discovered": 35,
+      "passed": 35,
+      "skipped": 0,
+      "engine": "Chromium",
+      "environment": "real HTTP and PostgreSQL on the existing server",
+      "execution": "34 passed in the full run, then the sole stale sleep-specialty assertion was corrected and its one test passed on a separate copy. No unrelated checks repeated.",
+      "product_failures": 0,
+      "initial_attempt": "Temporary runner omitted /healthcare in GUIDE_URL; stopped and corrected the runner, without changing product code."
+    },
+    "real_increment": {
+      "passed": true,
+      "old_topic_count": 72,
+      "new_topic_count": 73,
+      "baseline_definition": "paired with unchanged production runtime 45692cd1d805b2b9d25aa8a1c1330dbdee6d450a",
+      "isolated_candidate_release": "rel-9bfe3a1e040f1dbcc0fd6221af609efd253e4a907ae6cb03a426916ca163f0ec",
+      "candidate_data_sha256": "ffc573591ae1cf758263248a1af3bdb9a6133739121dc309a45513d433f8eb7b",
+      "fixed_versions_readable": true,
+      "rollback_and_reactivation": true,
+      "production_changed": false,
+      "test_git_commit_is_synthetic": true,
+      "initial_attempt": "A baseline import paired old72 content with the new OSA mapping definition; corrected the fixture to use the old runtime root. No product files changed."
+    }
+  },
+  "remaining_checks": [
+    "GitHub CI",
+    "Public HTTPS new-article acceptance"
+  ],
+  "overall_status": "ready_for_github_ci"
+}

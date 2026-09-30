@@ -1,0 +1,602 @@
+{
+  "batch": "01",
+  "checked_at": "2026-09-30",
+  "base_commit": "cc3e88b1414c1ede8737c9d78d40c3ca53b64f25",
+  "icd_release": "2026-01",
+  "decision_scope": "规范主题与既有正文的关系裁定；睡眠呼吸暂停7A41已完成语义审核与逐项编辑核验，其余ICD类别为待裁定候选。",
+  "topics": [
+    {
+      "canonical_id": "myocardial-infarction",
+      "backlog_id": "planned-023",
+      "decision": "independent_disease",
+      "related_existing_ids": [
+        "coronary-heart-disease",
+        "chest-pain"
+      ],
+      "rationale": "冠心病是背景病；急性梗死承接急救、诊断和再灌注。旧梗死、再次梗死及特定并发症另行审核。",
+      "icd_candidates": [
+        {
+          "code": "BA41.0",
+          "title": "- - - - Acute ST elevation myocardial infarction",
+          "uri": "http://id.who.int/icd/release/11/mms/391388807",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "BA41.1",
+          "title": "- - - - Acute non-ST elevation myocardial infarction",
+          "uri": "http://id.who.int/icd/release/11/mms/680129526",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "BA41.Z",
+          "title": "- - - - Acute myocardial infarction, unspecified",
+          "uri": "http://id.who.int/icd/release/11/mms/1334938734/unspecified",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "pulmonary-embolism",
+      "backlog_id": "planned-019",
+      "decision": "independent_disease",
+      "related_existing_ids": [
+        "deep-vein-thrombosis",
+        "chest-pain"
+      ],
+      "rationale": "肺栓塞与深静脉血栓有关但不是同义词；慢性血栓和肺高压须另核正文范围。",
+      "icd_candidates": [
+        {
+          "code": "BB00.0",
+          "title": "- - - Acute pulmonary thromboembolism",
+          "uri": "http://id.who.int/icd/release/11/mms/74279006",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "BB00.1",
+          "title": "- - - Chronic pulmonary thromboembolism",
+          "uri": "http://id.who.int/icd/release/11/mms/653179449",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "BB00.Z",
+          "title": "- - - Pulmonary thromboembolism, unspecified",
+          "uri": "http://id.who.int/icd/release/11/mms/1014964218/unspecified",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "sepsis",
+      "backlog_id": null,
+      "decision": "independent_disease",
+      "related_existing_ids": [
+        "fever"
+      ],
+      "rationale": "感染与脓毒症不能合并；休克、产褥和新生儿类别需分别判断。",
+      "icd_candidates": [
+        {
+          "code": "1G40",
+          "title": "- - Sepsis without septic shock",
+          "uri": "http://id.who.int/icd/release/11/mms/622600769",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "1G41",
+          "title": "- - Sepsis with septic shock",
+          "uri": "http://id.who.int/icd/release/11/mms/1683090852",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "JB40.0",
+          "title": "- - - Puerperal sepsis",
+          "uri": "http://id.who.int/icd/release/11/mms/325070079",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "KA60",
+          "title": "- - Sepsis of fetus or newborn",
+          "uri": "http://id.who.int/icd/release/11/mms/381388700",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "meningitis",
+      "backlog_id": "planned-058",
+      "decision": "parent_overview",
+      "related_existing_ids": [
+        "fever",
+        "tension-headache"
+      ],
+      "rationale": "按病因分流；泛脑膜炎文章不能因提及病原体而自动覆盖具体感染。",
+      "icd_candidates": [
+        {
+          "code": "1D01.0Z",
+          "title": "- - - - Bacterial meningitis, unspecified",
+          "uri": "http://id.who.int/icd/release/11/mms/684930313/unspecified",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "1C8E.Z",
+          "title": "- - - Viral meningitis, unspecified",
+          "uri": "http://id.who.int/icd/release/11/mms/1358604969/unspecified",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "1C1C.0",
+          "title": "- - - Meningococcal meningitis",
+          "uri": "http://id.who.int/icd/release/11/mms/516585689",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "aortic-dissection",
+      "backlog_id": "planned-031",
+      "decision": "independent_disease",
+      "related_existing_ids": [
+        "chest-pain"
+      ],
+      "rationale": "夹层、动脉瘤与心肌梗死分别处理；部位和破裂条件不能忽略。",
+      "icd_candidates": [
+        {
+          "code": "BD50.00",
+          "title": "- - - - Thoracic aortic dissection, ascending aorta dissection and propagation beyond arch with perforation",
+          "uri": "http://id.who.int/icd/release/11/mms/2021533373",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "BD50.01",
+          "title": "- - - - Thoracic aortic dissection, ascending aorta dissection and propagation beyond arch with rupture",
+          "uri": "http://id.who.int/icd/release/11/mms/1756675851",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "BD50.0Z",
+          "title": "- - - - Thoracic aortic dissection, ascending aorta dissection and propagation beyond arch, without mention of perforation or rupture",
+          "uri": "http://id.who.int/icd/release/11/mms/1938903985/unspecified",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "diabetic-ketoacidosis",
+      "backlog_id": "planned-074",
+      "decision": "independent_complication",
+      "related_existing_ids": [
+        "type-2-diabetes",
+        "dehydration"
+      ],
+      "rationale": "糖尿病日常管理与急性酮症救治分别承接；不能只挂在2型糖尿病中计数。",
+      "icd_candidates": [
+        {
+          "code": "5A22.0",
+          "title": "- - - - - Diabetic ketoacidosis without coma",
+          "uri": "http://id.who.int/icd/release/11/mms/540530695",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "5A22.3",
+          "title": "- - - - - Diabetic ketoacidosis with coma",
+          "uri": "http://id.who.int/icd/release/11/mms/939674472",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "retinal-detachment",
+      "backlog_id": "planned-119",
+      "decision": "parent_overview",
+      "related_existing_ids": [],
+      "rationale": "脱离、裂孔和玻璃体后脱离区分；各种脱离类型按范围审核。",
+      "icd_candidates": [
+        {
+          "code": "9B73.0",
+          "title": "- - - - Retinal detachment with retinal break",
+          "uri": "http://id.who.int/icd/release/11/mms/2059145710",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "testicular-torsion",
+      "backlog_id": "planned-150",
+      "decision": "independent_disease",
+      "related_existing_ids": [],
+      "rationale": "睾丸本身扭转与附睾/附件扭转不同，后者不能作为同义词。",
+      "icd_candidates": [
+        {
+          "code": "GB01.0",
+          "title": "- - - Torsion of testis",
+          "uri": "http://id.who.int/icd/release/11/mms/2141360941",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "postpartum-hemorrhage",
+      "backlog_id": null,
+      "decision": "independent_complication",
+      "related_existing_ids": [
+        "preeclampsia"
+      ],
+      "rationale": "产后失血与正常恶露、产后感染区分；按病因解释治疗。",
+      "icd_candidates": [
+        {
+          "code": "JA43.Y",
+          "title": "- - - Other specified postpartum haemorrhage",
+          "uri": "http://id.who.int/icd/release/11/mms/820245648/other",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "JA43.Z",
+          "title": "- - - Postpartum haemorrhage, unspecified",
+          "uri": "http://id.who.int/icd/release/11/mms/820245648/unspecified",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "carbon-monoxide-poisoning",
+      "backlog_id": "planned-172",
+      "decision": "independent_poisoning",
+      "related_existing_ids": [
+        "dizziness"
+      ],
+      "rationale": "此主题有独立临床价值；官方目录所见一氧化碳外因/物质扩展码不进入本分母。未完成后组配或通用损伤类别映射，不能冒充覆盖。",
+      "icd_candidates": [],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "adhd",
+      "backlog_id": "planned-065",
+      "decision": "parent_overview",
+      "related_existing_ids": [
+        "anxiety",
+        "depression",
+        "insomnia"
+      ],
+      "rationale": "ADHD与焦虑、睡眠不足、学习障碍分别评估；各表现型逐一核正文范围。",
+      "icd_candidates": [
+        {
+          "code": "6A05.0",
+          "title": "- - - Attention deficit hyperactivity disorder, predominantly inattentive presentation",
+          "uri": "http://id.who.int/icd/release/11/mms/294762853",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "6A05.1",
+          "title": "- - - Attention deficit hyperactivity disorder, predominantly hyperactive-impulsive presentation",
+          "uri": "http://id.who.int/icd/release/11/mms/209556851",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "6A05.2",
+          "title": "- - - Attention deficit hyperactivity disorder, combined presentation",
+          "uri": "http://id.who.int/icd/release/11/mms/542202013",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "6A05.Y",
+          "title": "- - - Attention deficit hyperactivity disorder, other specified presentation",
+          "uri": "http://id.who.int/icd/release/11/mms/821852937/other",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "6A05.Z",
+          "title": "- - - Attention deficit hyperactivity disorder, presentation unspecified",
+          "uri": "http://id.who.int/icd/release/11/mms/821852937/unspecified",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "thyroid-nodules",
+      "backlog_id": "planned-077",
+      "decision": "structural_condition",
+      "related_existing_ids": [
+        "hypothyroidism",
+        "hyperthyroidism"
+      ],
+      "rationale": "结构结节、激素功能与癌风险是不同轴，不能合并为甲亢或甲减。",
+      "icd_candidates": [
+        {
+          "code": "5A01.1",
+          "title": "- - - - Nontoxic single thyroid nodule",
+          "uri": "http://id.who.int/icd/release/11/mms/1405941300",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "5A02.1",
+          "title": "- - - - Thyrotoxicosis with toxic single thyroid nodule",
+          "uri": "http://id.who.int/icd/release/11/mms/1328823989",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "masld",
+      "backlog_id": "planned-044",
+      "decision": "independent_disease",
+      "related_existing_ids": [
+        "obesity",
+        "type-2-diabetes",
+        "hyperlipidemia"
+      ],
+      "rationale": "旧NAFLD/NASH与新MASLD/MASH高度重叠但非无条件等价；酒精性、药物性脂肪肝保持独立。",
+      "icd_candidates": [
+        {
+          "code": "DB92.0",
+          "title": "- - - Non-alcoholic fatty liver disease without non-alcoholic steatohepatitis",
+          "uri": "http://id.who.int/icd/release/11/mms/327718790",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "DB92.Y",
+          "title": "- - - Other specified non-alcoholic fatty liver disease",
+          "uri": "http://id.who.int/icd/release/11/mms/1912806631/other",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "DB92.Z",
+          "title": "- - - Non-alcoholic fatty liver disease, unspecified",
+          "uri": "http://id.who.int/icd/release/11/mms/1912806631/unspecified",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "endometriosis",
+      "backlog_id": "planned-145",
+      "decision": "parent_overview",
+      "related_existing_ids": [
+        "period-pain"
+      ],
+      "rationale": "痛经为表现而内异症为病因；子宫腺肌病并非同义词，不以泛文覆盖全部器官叶类。",
+      "icd_candidates": [
+        {
+          "code": "GA10.Z",
+          "title": "- - - Endometriosis of unspecified site",
+          "uri": "http://id.who.int/icd/release/11/mms/1838213761/unspecified",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "menopausal-transition",
+      "backlog_id": "planned-148",
+      "decision": "life_stage_condition",
+      "related_existing_ids": [
+        "insomnia"
+      ],
+      "rationale": "围绝经期与绝经后出血等独立病症区分；原更年期标题范围较广，发布时需判断剩余范围。",
+      "icd_candidates": [
+        {
+          "code": "GA30.01",
+          "title": "- - - - Menopausal transition",
+          "uri": "http://id.who.int/icd/release/11/mms/2021036069",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "MF32",
+          "title": "- - - Menopausal symptom or complaint",
+          "uri": "http://id.who.int/icd/release/11/mms/1224852602",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "rosacea",
+      "backlog_id": "planned-107",
+      "decision": "parent_overview",
+      "related_existing_ids": [
+        "acne",
+        "eczema"
+      ],
+      "rationale": "玫瑰痤疮与痤疮不合并；不同表现和眼部问题逐一核对。",
+      "icd_candidates": [
+        {
+          "code": "ED90.00",
+          "title": "- - - - - - Erythematotelangiectatic rosacea",
+          "uri": "http://id.who.int/icd/release/11/mms/1249702839",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "ED90.01",
+          "title": "- - - - - - Papulopustular rosacea",
+          "uri": "http://id.who.int/icd/release/11/mms/1180512715",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "ED90.02",
+          "title": "- - - - - - Phymatous rosacea",
+          "uri": "http://id.who.int/icd/release/11/mms/518541897",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "ED90.0Y",
+          "title": "- - - - - - Other specified rosacea",
+          "uri": "http://id.who.int/icd/release/11/mms/134161404/other",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "ED90.0Z",
+          "title": "- - - - - - Rosacea, unspecified",
+          "uri": "http://id.who.int/icd/release/11/mms/134161404/unspecified",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "hair-loss",
+      "backlog_id": "planned-113",
+      "decision": "symptom_overview",
+      "related_existing_ids": [],
+      "rationale": "按脱发病因导航；斑秃、瘢痕脱发等不作为普通脱发的同义词或自动完整覆盖。",
+      "icd_candidates": [
+        {
+          "code": "ED70.Z",
+          "title": "- - - - - Alopecia, unspecified",
+          "uri": "http://id.who.int/icd/release/11/mms/1313926062/unspecified",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "cough",
+      "backlog_id": "planned-001",
+      "decision": "symptom_entry",
+      "related_existing_ids": [
+        "common-cold",
+        "asthma",
+        "copd",
+        "pneumonia",
+        "reflux"
+      ],
+      "rationale": "症状入口分流到已有病因正文，药物与饮食依据病因。",
+      "icd_candidates": [
+        {
+          "code": "MD12",
+          "title": "- - - Cough",
+          "uri": "http://id.who.int/icd/release/11/mms/2027526159",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "abdominal-pain",
+      "backlog_id": "planned-002",
+      "decision": "symptom_entry",
+      "related_existing_ids": [
+        "appendicitis",
+        "gallstones",
+        "kidney-stones",
+        "ibs",
+        "ectopic-pregnancy"
+      ],
+      "rationale": "腹痛导航与阑尾炎等确诊病种分别承接，危险原因优先排除。",
+      "icd_candidates": [
+        {
+          "code": "MD81.2",
+          "title": "- - - - Generalised abdominal pain",
+          "uri": "http://id.who.int/icd/release/11/mms/330423944",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        },
+        {
+          "code": "MD81.4",
+          "title": "- - - - Other and unspecified abdominal pain",
+          "uri": "http://id.who.int/icd/release/11/mms/166022696",
+          "denominator_eligible": true,
+          "mapping_status": "pending_semantic_scope_review"
+        }
+      ],
+      "publication_status": "not_published",
+      "qualified_coverage": false
+    },
+    {
+      "canonical_id": "obstructive-sleep-apnea",
+      "backlog_id": "planned-021",
+      "decision": "independent_disease",
+      "related_existing_ids": [
+        "insomnia",
+        "obesity"
+      ],
+      "rationale": "气道阻塞与失眠、单纯打鼾及中枢性暂停区分，避免共用一个治疗方案。",
+      "icd_candidates": [
+        {
+          "code": "7A41",
+          "title": "- - Obstructive sleep apnoea",
+          "uri": "http://id.who.int/icd/release/11/mms/1919233290",
+          "denominator_eligible": true,
+          "mapping_status": "confirmed_semantic_scope_review"
+        }
+      ],
+      "publication_status": "validated_candidate_not_yet_live",
+      "qualified_coverage": true,
+      "editorial_review": "reports/batch-01-osa-independent.json"
+    }
+  ],
+  "topic_count": 20,
+  "existing_titles_to_reconcile": 18,
+  "new_topics_published": 0,
+  "shared_factor_rule": "共用饮食、活动和暴露知识引用生命周期因素；疾病正文仅保留疾病相关条件。癌症总览按地图导航，不重复复制诊療正文。",
+  "remaining_rule": "未通过来源交叉核验和独立审核的主题继续保存草稿与缺口；完整剩余ICD清单见icd-remaining-gaps.json.gz。"
+}

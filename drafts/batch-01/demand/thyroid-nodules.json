@@ -1,0 +1,253 @@
+{
+  "schema_version": "1.0.0",
+  "id": "thyroid-nodules",
+  "kind": "condition",
+  "primary_domain": "endocrine_metabolic",
+  "names": {
+    "zh-CN": "甲状腺结节",
+    "en": "Thyroid nodules"
+  },
+  "aliases": {
+    "zh-CN": [
+      "甲状腺肿块"
+    ],
+    "en": [
+      "thyroid lump"
+    ]
+  },
+  "symptom_terms": [
+    {
+      "zh-CN": "颈前肿块",
+      "en": "front-of-neck lump"
+    },
+    {
+      "zh-CN": "吞咽不适",
+      "en": "swallowing discomfort"
+    }
+  ],
+  "departments": [
+    "endocrinology",
+    "primary-care",
+    "general-surgery"
+  ],
+  "reference_urgency": "routine",
+  "sections": {
+    "summary": {
+      "text": {
+        "zh-CN": "甲状腺结节是颈前甲状腺内部形成的局部肿块，可以是实性、囊性或两者混合。\n\n- 多数结节是良性的，常在体检或其他影像检查时偶然发现，没有疼痛也很常见。\n- 结节是否分泌过多激素和是否有癌变风险，是两个不同问题，需要分别评估。\n- 正常甲状腺抽血结果不能排除结节中的癌；发现结节也不等于已经患癌。",
+        "en": "A thyroid nodule is a localized lump in the thyroid at the front of the neck; it may be solid, fluid-filled or mixed.\n\n- Most nodules are benign and are found incidentally on examination or imaging; lack of pain is common.\n- Excess hormone production and cancer risk are different questions that need separate assessment.\n- Normal thyroid blood tests do not exclude cancer in a nodule, while finding a nodule does not mean cancer is present."
+      },
+      "source_ids": [
+        "thyroid-nodules-ata"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "causes_risks": {
+      "text": {
+        "zh-CN": "许多结节无法找到单一原因，年龄、甲状腺背景疾病和暴露史都有意义。\n\n- 良性细胞增生、囊肿或甲状腺炎都可形成结节样改变；桥本甲状腺炎也可与结节并存。\n- 碘缺乏可参与结节形成，但有结节的人并不都缺碘，额外大量补碘并非通用处理。\n- 儿童期头颈部放射治疗史或甲状腺癌家族史需要主动告知医生，它们会影响风险评估。",
+        "en": "Many nodules have no single identifiable cause; age, underlying thyroid disease and exposure history matter.\n\n- Benign cell growth, cysts or thyroiditis may produce nodular changes; Hashimoto thyroiditis can coexist with nodules.\n- Iodine deficiency can contribute, but a nodule does not show that someone lacks iodine; large extra iodine doses are not a universal treatment.\n- Tell clinicians about childhood head or neck radiotherapy or a family history of thyroid cancer because these affect risk assessment."
+      },
+      "source_ids": [
+        "thyroid-nodules-ata",
+        "thyroid-nodules-nih-iodine",
+        "thyroid-nodules-ata-children"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "red_flags": {
+      "text": {
+        "zh-CN": "结节通常可以按门诊流程评估，呼吸受影响时例外。\n\n- 颈部肿胀伴明显呼吸困难或呼吸有异常响声，应立即急救，不等常规超声预约。\n- 肿块快速变大、新出现持续声音嘶哑或吞咽困难，应尽快就诊；这些变化需要查明原因。\n- 已做穿刺或治疗后若颈部突然肿胀并影响呼吸，同样按急症处理。",
+        "en": "Nodules can usually be assessed through outpatient care, except when breathing is affected.\n\n- Neck swelling with marked breathing difficulty or noisy breathing requires emergency care rather than waiting for routine ultrasound.\n- Rapid enlargement, new persistent hoarseness or swallowing difficulty warrants prompt assessment to establish the cause.\n- Sudden neck swelling affecting breathing after biopsy or treatment also needs emergency assessment."
+      },
+      "source_ids": [
+        "thyroid-nodules-nhs",
+        "thyroid-nodules-nice",
+        "thyroid-nodules-ata-fna"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "care": {
+      "text": {
+        "zh-CN": "新发现结节时，先安排一次有目标的评估，再决定是否需要进一步检查。\n\n- 带上完整超声报告、既往影像和药物清单；记录肿块是否变化，有无心悸、怕热、体重下降或颈部压迫。\n- 小而无症状不等于必须立即手术；医生会结合超声特征、病史和甲状腺功能决定检查顺序。\n- 多发结节并不表示每一个都要穿刺，也不能只关注最大的一个而忽略其他可疑特征。",
+        "en": "After a nodule is found, arrange a focused assessment before deciding on further tests.\n\n- Bring full ultrasound reports, previous images and a medicine list; note growth, palpitations, heat intolerance, weight loss or neck pressure.\n- A small symptom-free nodule does not automatically require immediate surgery; ultrasound features, history and thyroid function guide the sequence of tests.\n- Multiple nodules do not mean every one needs biopsy; assessment should consider suspicious features rather than only which is largest."
+      },
+      "source_ids": [
+        "thyroid-nodules-ata",
+        "thyroid-nodules-nice"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diagnosis": {
+      "text": {
+        "zh-CN": "检查分别回答甲状腺功能、结节形态和细胞性质。\n\n- TSH等血液检查了解激素调节；超声看实性或囊性、边界、形状及颈部淋巴结，帮助选择是否穿刺。\n- 细针穿刺抽取细胞检查。结果可为良性、恶性、性质不确定或样本不足；后两者并不等于确诊癌症。\n- 不同地区使用不同超声分级体系，不能把某个数字等级直接跨体系比较；穿刺阈值结合体系、大小和临床风险。",
+        "en": "Tests address thyroid function, nodule appearance and cellular features separately.\n\n- Blood tests such as TSH assess hormone regulation; ultrasound examines composition, margins, shape and neck lymph nodes to guide biopsy decisions.\n- Fine-needle aspiration samples cells. Results can be benign, malignant, indeterminate or insufficient; the latter two do not establish cancer.\n- Regions use different ultrasound grading systems; numbers are not interchangeable across systems. Biopsy thresholds depend on the system, size and clinical risk."
+      },
+      "source_ids": [
+        "thyroid-nodules-ata",
+        "thyroid-nodules-ata-fna",
+        "thyroid-nodules-nice"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "differentials": {
+      "text": {
+        "zh-CN": "颈前包块和甲状腺功能异常都不只有一种解释。\n\n- 弥漫性甲状腺肿是整个腺体增大；囊肿主要含液体；甲状腺炎可造成不均匀改变，需要检查区分。\n- 有些结节会自主产生激素，造成甲亢；更多结节的激素水平仍正常。\n- 风险评估的关键是识别少数恶性结节，不能只凭摸起来软硬、疼不疼或网络图片判断。",
+        "en": "A neck lump or abnormal thyroid function has several possible explanations.\n\n- Diffuse goitre enlarges the whole gland, cysts mainly contain fluid, and thyroiditis can create uneven changes; examination helps distinguish them.\n- Some nodules produce hormone autonomously and cause hyperthyroidism; many others occur with normal hormone levels.\n- Risk assessment aims to identify the minority that are malignant; texture, pain or comparison with online images is insufficient."
+      },
+      "source_ids": [
+        "thyroid-nodules-nhs",
+        "thyroid-nodules-ata",
+        "thyroid-nodules-nice"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "treatment": {
+      "text": {
+        "zh-CN": "治疗针对癌风险、激素过多或压迫影响，而非单纯消除报告上的字样。\n\n- 良性、无明显症状且功能正常的结节，常可观察和随访。\n- 可疑或确诊恶性结节需要专科讨论治疗；明显压迫呼吸或吞咽的良性结节，也可能需要手术或其他处理。\n- 英国NICE对部分有压迫症状的良性囊性结节考虑抽吸，对部分实性结节考虑手术、放射性碘或消融；适应证不同，不能互相替代。",
+        "en": "Treatment targets cancer risk, excess hormone or compression rather than simply removing a finding from a report.\n\n- Benign nodules with normal function and little or no symptoms can often be observed.\n- Suspicious or malignant nodules need specialist treatment discussion; benign nodules causing significant breathing or swallowing compression may also need intervention.\n- UK NICE considers aspiration for selected compressive cystic nodules and surgery, radioiodine or ablation for selected solid disease; eligibility differs between approaches."
+      },
+      "source_ids": [
+        "thyroid-nodules-nice",
+        "thyroid-nodules-ata"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "medications": {
+      "text": {
+        "zh-CN": "结节并没有人人适用的“消结节药”，用药要对应功能或明确病因。\n\n- 甲状腺激素替代用于激素不足；抗甲状腺药用于某些激素过多情况，二者不能凭结节大小自行选用。\n- 不要自行服用高剂量甲状腺激素来缩小结节；激素过多会影响心脏和骨骼。\n- 穿刺前告知抗凝或抗血小板用药，由操作团队说明是否调整，避免自行停药造成其他风险。",
+        "en": "There is no universal medicine to remove nodules; medication should address thyroid function or a defined cause.\n\n- Thyroid hormone replacement treats deficiency, while antithyroid medicines treat selected excess-hormone conditions; nodule size alone cannot determine either.\n- Do not take high doses of thyroid hormone yourself to shrink a nodule; excess hormone can affect the heart and bones.\n- Before biopsy, report anticoagulant or antiplatelet medicines; the procedural team should decide whether adjustment is needed rather than unsupervised stopping."
+      },
+      "source_ids": [
+        "thyroid-nodules-nice-rationale",
+        "thyroid-nodules-nice",
+        "thyroid-nodules-ata-hormone",
+        "thyroid-nodules-ata-fna"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diet": {
+      "text": {
+        "zh-CN": "饮食关注适量碘，而不是用某种食物“化掉”结节。\n\n- 正常均衡饮食中的碘参与甲状腺激素合成；是否需要补充要结合当地碘营养、妊娠情况及具体甲状腺疾病。\n- 海带或碘补充剂并非越多越好，过量碘也可扰乱甲状腺功能。\n- 低碘饮食是某些放射性碘治疗前的特定准备，不是所有结节患者都要长期采用的饮食。",
+        "en": "Dietary attention centres on appropriate iodine intake, rather than using a food to dissolve a nodule.\n\n- Dietary iodine supports thyroid hormone production; supplementation depends on local iodine nutrition, pregnancy and the thyroid disorder involved.\n- More kelp or iodine supplement is not necessarily better; excessive iodine can also disturb thyroid function.\n- A low-iodine diet is specific preparation for some radioiodine treatments, not a lifelong diet for everyone with a nodule."
+      },
+      "source_ids": [
+        "thyroid-nodules-nih-iodine",
+        "thyroid-nodules-ata",
+        "thyroid-nodules-ata-low-iodine",
+        "thyroid-nodules-msk-low-iodine"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "daily_care": {
+      "text": {
+        "zh-CN": "日常护理主要是保留可比较的信息和观察压迫症状。\n\n- 保存超声日期、尺寸和分级体系，复诊携带原报告，避免只记“几级结节”。\n- 记录新出现的声音改变、吞咽或呼吸困难，出现危险信号就提前就诊。\n- 穿刺前后按操作团队的说明处理药物和局部不适；有疑问直接联系该团队，不自行套用网上停药方案。",
+        "en": "Daily care focuses on keeping comparable information and watching for compression symptoms.\n\n- Keep ultrasound dates, measurements and the grading system, and bring original reports rather than remembering only a grade number.\n- Record new voice, swallowing or breathing changes and seek earlier assessment for warning signs.\n- Follow the procedural team's medication and aftercare instructions around biopsy; contact them about uncertainty rather than using an online stopping schedule."
+      },
+      "source_ids": [
+        "thyroid-nodules-nice",
+        "thyroid-nodules-ata-fna"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "special_populations": {
+      "text": {
+        "zh-CN": "儿童、孕妇和有特殊病史者需要不同的检查与治疗安排。\n\n- 儿童结节较少见，但恶性比例与成人不同，需由熟悉儿童甲状腺的团队评估，不能套成人大小标准。\n- 怀孕或备孕时提前告知医生，因为功能判断、药物和放射相关检查的选择会变化。\n- 有头颈部放疗史、甲状腺癌家族史或明显心脏病者，评估时需把这些信息放在结节报告旁一起考虑。",
+        "en": "Children, pregnant people and those with relevant medical histories need different assessment arrangements.\n\n- Childhood nodules are less common and have a different malignancy profile; a paediatric thyroid team should assess them rather than applying adult size rules automatically.\n- Disclose pregnancy or pregnancy plans because interpretation, medication and radiation-related investigation choices change.\n- Head or neck radiotherapy, a family history of thyroid cancer or significant heart disease should be considered alongside the nodule report."
+      },
+      "source_ids": [
+        "thyroid-nodules-ata-children",
+        "thyroid-nodules-ata-hyper-pregnancy",
+        "thyroid-nodules-nice"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prognosis_followup": {
+      "text": {
+        "zh-CN": "多数良性结节可以长期稳定，复查的目的是发现真正改变处理的变化。\n\n- 复查关注尺寸和超声特征变化、压迫症状及必要时的TSH，不只比较某一次尺寸差。\n- ATA患者资料列出超声随访；英国NICE对已确认非恶性的无治疗结节，强调疑似恶性、压迫或新症状时复评。间隔由风险和当地方案决定。\n- 穿刺结果良性并不取消观察；新嘶哑或快速增大时不应等到原定复诊日。",
+        "en": "Many benign nodules remain stable; follow-up looks for changes that would alter management.\n\n- Review considers size and ultrasound features, compression symptoms and TSH when appropriate, rather than a single measurement difference.\n- ATA patient information describes ultrasound surveillance; UK NICE emphasizes reassessment for suspected malignancy, compression or new symptoms in untreated non-malignant enlargement. Timing depends on risk and local practice.\n- A benign biopsy does not remove the need to observe changes; new hoarseness or rapid growth should not wait for the original appointment."
+      },
+      "source_ids": [
+        "thyroid-nodules-ata",
+        "thyroid-nodules-nice"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "complications": {
+      "text": {
+        "zh-CN": "大多数结节不会造成严重问题，需要识别的是少数特定情况。\n\n- 大结节可压迫气管或食管，出现呼吸和吞咽困难；功能性结节可产生过多激素。\n- 恶性风险需要检查判断，不能把所有良性结节描述为必然癌变。\n- 治疗本身也有取舍，例如手术范围可能影响之后是否需要激素替代；就诊时讨论预期获益和具体风险。",
+        "en": "Most nodules do not cause serious problems; attention focuses on a few specific possibilities.\n\n- Large nodules may compress the airway or oesophagus, affecting breathing or swallowing; functioning nodules may produce excess hormone.\n- Malignancy risk needs assessment; benign nodules should not be described as inevitably turning into cancer.\n- Treatment also involves trade-offs, such as whether the extent of surgery will require later hormone replacement; discuss expected benefit and specific risks."
+      },
+      "source_ids": [
+        "thyroid-nodules-ata",
+        "thyroid-nodules-nice"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prevention": {
+      "text": {
+        "zh-CN": "无法保证不长结节，能够做到的是避免不必要干预和延误。\n\n- 不要因发现结节就自行大量补碘或服用甲状腺药物，先确定功能与风险。\n- 遵循有明确用途的检查与复诊安排；反复追求更多影像并不总能改善结果，也可能增加无必要检查。\n- 保存既往记录并留意新症状，有助于把需要处理的变化及时交给医生判断。",
+        "en": "Nodules cannot always be prevented; practical priorities are avoiding unnecessary intervention and delayed assessment.\n\n- Do not start large iodine doses or thyroid medicines just because a nodule is found; first assess function and risk.\n- Follow investigations and reviews with a clear purpose; repeatedly seeking more imaging does not always improve outcomes and can lead to unnecessary tests.\n- Keeping previous records and noticing new symptoms helps clinicians evaluate meaningful changes promptly."
+      },
+      "source_ids": [
+        "thyroid-nodules-ata",
+        "thyroid-nodules-nice",
+        "thyroid-nodules-nih-iodine",
+        "thyroid-nodules-ata-hormone"
+      ],
+      "support_status": "pending_claim_verification"
+    }
+  },
+  "source_ids": [
+    "thyroid-nodules-ata",
+    "thyroid-nodules-nih-iodine",
+    "thyroid-nodules-ata-children",
+    "thyroid-nodules-nhs",
+    "thyroid-nodules-nice",
+    "thyroid-nodules-ata-fna",
+    "thyroid-nodules-nice-rationale",
+    "thyroid-nodules-ata-hormone",
+    "thyroid-nodules-ata-low-iodine",
+    "thyroid-nodules-msk-low-iodine",
+    "thyroid-nodules-ata-hyper-pregnancy"
+  ],
+  "related_ids": [],
+  "tags": [
+    "not_classified_as_infectious"
+  ],
+  "clinical_region": "MULTI_REGION",
+  "coding": [],
+  "review": {
+    "status": "editorial_draft",
+    "reviewers": [],
+    "medical_reviewed_at": null,
+    "editorial_updated_at": "2026-09-30",
+    "next_editorial_review_due": "2026-12-29"
+  },
+  "localizations": {
+    "zh-CN": {
+      "status": "draft",
+      "clinician_reviewed": false
+    },
+    "en": {
+      "status": "draft",
+      "clinician_reviewed": false
+    }
+  },
+  "evidence_certainty": "not_formally_graded",
+  "limitations": {
+    "zh-CN": "各节保留来源定位和地区条件；编辑证据记录中的未完成项见来源与编辑信息。",
+    "en": "Section sources and regional conditions are retained; unfinished evidence checks are recorded in editorial information."
+  },
+  "study_ids": [],
+  "advanced_fields": {
+    "prevalence_estimate": null,
+    "incidence_estimate": null,
+    "formal_diagnostic_criteria": null,
+    "quantitative_prognosis": null,
+    "transmission_details": null,
+    "screening_intervals": null,
+    "regional_drug_approval": null,
+    "procedure_indications": null
+  },
+  "advanced_fields_status": "not_yet_curated"
+}

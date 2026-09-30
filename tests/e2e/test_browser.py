@@ -150,7 +150,8 @@ class BrowserTests(unittest.TestCase):
  def test_two_level_navigation_and_unique_membership(self):
   self.assertEqual(self.page.locator('#department-nav>.department-group').count(),11)
   self.assertEqual(self.page.locator('.department-group .department-group').count(),0)
-  self.assertEqual(self.page.locator('[data-department="sleep-medicine"]').count(),0)
+  sleep_present=any('sleep-medicine' in c['departments'] for c in self.conditions.values())
+  self.assertEqual(self.page.locator('[data-department="sleep-medicine"]').count(),int(sleep_present))
   self.select_skin_department()
   expected=sorted(c['id'] for c in self.conditions.values() if 'dermatology' in c['departments'])
   actual=self.page.locator('.card').evaluate_all('(nodes)=>nodes.map(n=>n.dataset.id).sort()')

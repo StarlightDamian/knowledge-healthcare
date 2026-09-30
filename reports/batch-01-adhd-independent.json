@@ -1,0 +1,1622 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "batch01-adhd-independent-2026-09-30",
+  "reviewer": "/root/emergency_content",
+  "author": "/root/evidence",
+  "reviewed_at": "2026-09-30",
+  "medical_reviewed": false,
+  "verdict": "needs_revision",
+  "target": {
+    "path": "drafts/batch-01/demand/adhd.json",
+    "canonical_sha256": "c42b451922c41634845de292d6b9babe85c04d37c012e8e1a4575259e44e19cb",
+    "file_sha256": "52e0d4f1d1e36d0294183ff2f21e3ee0d9a2cedcc5e710f87a1240737be744e5"
+  },
+  "scope": {
+    "sections": 14,
+    "claims": 57,
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "source_documents": 10,
+    "author_files_modified": false
+  },
+  "decision_counts": {
+    "single": 17,
+    "pass": 17,
+    "partial": 23
+  },
+  "release_recommendation": "not_complete_cross_checked_content; no coverage or clinical-status upgrade",
+  "original_source_reads": [
+    {
+      "source_id": "adhd-nimh-overview",
+      "url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+      "source_metadata_sha256": "9a837233fcfc3e8133b589f2983802e6cc804f4e45c762cb2ea64659c3594a74",
+      "independence_group": "US-NIH",
+      "observed_version": "2024; NIH 24-MH-8300",
+      "locations_read": [
+        "What is ADHD?",
+        "Symptoms",
+        "Causes",
+        "Diagnosis",
+        "Does ADHD look the same?",
+        "Treatment: medication/psychotherapy/parent/school",
+        "Complementary approaches",
+        "Self-help and child support; crisis paragraph"
+      ],
+      "access_status": "original_page_reopened_relevant_full_sections_read",
+      "accessed_at": "2026-09-30",
+      "retrieval_note": null,
+      "retrieved_html_sha256": null
+    },
+    {
+      "source_id": "adhd-nimh-adults",
+      "url": "https://www.nimh.nih.gov/health/publications/adhd-what-you-need-to-know",
+      "source_metadata_sha256": "1cf87eff5652a917877350b7f6fbeb741432db803d2da97b0ddf72cf660cf502",
+      "independence_group": "US-NIH",
+      "observed_version": "2024; NIH 24-MH-3573",
+      "locations_read": [
+        "1 Adults can have ADHD",
+        "2 Daily life",
+        "3 Diagnosis and childhood reports",
+        "Why not diagnosed earlier",
+        "4 Treatment"
+      ],
+      "access_status": "original_page_reopened_relevant_full_sections_read",
+      "accessed_at": "2026-09-30",
+      "retrieval_note": null,
+      "retrieved_html_sha256": null
+    },
+    {
+      "source_id": "adhd-nhs-children",
+      "url": "https://www.nhs.uk/conditions/adhd-children-teenagers/",
+      "source_metadata_sha256": "ecf0036df2087288433923954ae388da38acac5a719e65b0ba93dcc4cd1f0ed4",
+      "independence_group": "UK-NHS",
+      "observed_version": "2025-03-19",
+      "locations_read": [
+        "Symptoms",
+        "Getting help; assessment",
+        "Lifestyle",
+        "Support at school and home",
+        "Medicine",
+        "Mental health",
+        "Causes"
+      ],
+      "access_status": "original_page_reopened_relevant_full_sections_read",
+      "accessed_at": "2026-09-30",
+      "retrieval_note": null,
+      "retrieved_html_sha256": null
+    },
+    {
+      "source_id": "adhd-nhs-adults",
+      "url": "https://www.nhs.uk/conditions/adhd-adults/",
+      "source_metadata_sha256": "beab8a5264fafefb55d74cbcc678232877781c929247eb05722d2c63e201532a",
+      "independence_group": "UK-NHS",
+      "observed_version": "2025-03-19",
+      "locations_read": [
+        "Symptoms",
+        "Getting help; assessment",
+        "Lifestyle",
+        "Work/college",
+        "Medicines",
+        "Mental health",
+        "Causes"
+      ],
+      "access_status": "original_page_reopened_relevant_full_sections_read",
+      "accessed_at": "2026-09-30",
+      "retrieval_note": null,
+      "retrieved_html_sha256": null
+    },
+    {
+      "source_id": "adhd-cdc-diagnosis",
+      "url": "https://www.cdc.gov/adhd/diagnosis/index.html",
+      "source_metadata_sha256": "decbceea412d6fe0762a6dc744b37180d3481c61e1b36bba0a1b289e5908d9f8",
+      "independence_group": "US-CDC",
+      "observed_version": "reviewed 2026-07-30",
+      "locations_read": [
+        "How is ADHD diagnosed?",
+        "Children: medical exam and AAP multi-observer recommendations",
+        "Sources and Page Info"
+      ],
+      "access_status": "original_page_reopened_relevant_full_sections_read",
+      "accessed_at": "2026-09-30",
+      "retrieval_note": null,
+      "retrieved_html_sha256": null
+    },
+    {
+      "source_id": "adhd-cdc-treatment",
+      "url": "https://www.cdc.gov/adhd/treatment/index.html",
+      "source_metadata_sha256": "ef02cb8b9de0774fe53cf4d38c4b3f64ad762a5abbaa6504affc3507239a404c",
+      "independence_group": "US-CDC",
+      "observed_version": "reviewed 2026-07-30",
+      "locations_read": [
+        "Treatment recommendations by age",
+        "Medications",
+        "Parent training",
+        "Behavior management tips",
+        "Sources and Page Info"
+      ],
+      "access_status": "original_page_reopened_relevant_full_sections_read",
+      "accessed_at": "2026-09-30",
+      "retrieval_note": null,
+      "retrieved_html_sha256": null
+    },
+    {
+      "source_id": "adhd-fda-stimulants",
+      "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-updating-warnings-improve-safe-use-prescription-stimulants-used-treat-adhd-and-other-conditions",
+      "source_metadata_sha256": "ac0eaf071c404ba99fb912ec7a953f3db826627f6d22b2c00c830e575a054a93",
+      "independence_group": "US-FDA",
+      "observed_version": "2023-05-11",
+      "locations_read": [
+        "What should patients/caregivers do?",
+        "Facts about stimulants",
+        "Additional information for patients",
+        "Overdose symptoms",
+        "References"
+      ],
+      "access_status": "original_page_reopened_relevant_full_sections_read",
+      "accessed_at": "2026-09-30",
+      "retrieval_note": null,
+      "retrieved_html_sha256": null
+    },
+    {
+      "source_id": "adhd-nhs-methylphenidate",
+      "url": "https://www.nhs.uk/medicines/methylphenidate-adults/side-effects-of-methylphenidate-for-adults/",
+      "source_metadata_sha256": "bddc575f96d2c5bab0af5ad9ce1ecf0884b3ef83a299f7683886c0353066ba8a",
+      "independence_group": "UK-NHS",
+      "observed_version": "2025-03-25",
+      "locations_read": [
+        "Common side effects",
+        "Serious side effects",
+        "Immediate action",
+        "Serious allergy"
+      ],
+      "access_status": "original_page_reopened_relevant_full_sections_read",
+      "accessed_at": "2026-09-30",
+      "retrieval_note": null,
+      "retrieved_html_sha256": null
+    },
+    {
+      "source_id": "adhd-apa",
+      "url": "https://www.psychiatry.org/patients-families/adhd/what-is-adhd",
+      "source_metadata_sha256": "77b17adcc12e06b33cca4c97c64f602af3913c88048775c6ef05f11bcf132579",
+      "independence_group": "US-APA",
+      "observed_version": "physician review October 2025; Josepha Immanuel MD and James Burden MD",
+      "locations_read": [
+        "Symptoms and Diagnosis",
+        "Inattentive and hyperactive/impulsive types",
+        "Combined type",
+        "Causes",
+        "Treatment",
+        "School-aged children",
+        "Adults",
+        "References and Physician Review"
+      ],
+      "access_status": "original_page_reopened_relevant_full_sections_read",
+      "accessed_at": "2026-09-30",
+      "retrieval_note": null,
+      "retrieved_html_sha256": null
+    },
+    {
+      "source_id": "adhd-nice-ng87",
+      "url": "https://www.nice.org.uk/guidance/ng87/chapter/recommendations",
+      "source_metadata_sha256": "b4cc5df44bc7eccf53c25fd55654b9d78d4894deb6939b7cbd95ad925c098aee",
+      "independence_group": "UK-NICE",
+      "observed_version": "NG87 live official HTML read 2026-09-30; numbered recommendations include 2008/2018/2019/2024 amendments",
+      "locations_read": [
+        "1.1.4-1.1.6",
+        "1.3.1-1.3.6",
+        "1.5.7-1.5.9",
+        "1.6.1-1.6.5",
+        "1.7.4-1.7.5",
+        "1.7.7-1.7.14",
+        "1.8.1-1.8.19"
+      ],
+      "access_status": "full_original_html_read_via_urllib_HTTP_200",
+      "accessed_at": "2026-09-30",
+      "retrieval_note": "web.open与官方PDF工具读取失败；直接官方HTTPS成功，使用标准库HTML解析，未用镜像。",
+      "retrieved_html_sha256": "e9f4e293126f410337c028511773d60b62c9757e9a65e8320c0126dfd58656a8"
+    }
+  ],
+  "independence": {
+    "NIMH": "Two pages, one US-NIH authorship group.",
+    "NHS": "Children, adult, medicine pages one UK-NHS group.",
+    "DSM": "APA and NIMH are separately authored explanations of the same DSM framework, not independent diagnostic standards.",
+    "CDC": "Diagnosis cites NIMH adult publication and AAP2019. Treatment tips cite NIMH overview and CHADD; recommendations reproduce AAP guidance. Shared upstream basis must be disclosed even when the education is separately written.",
+    "NICE": "Distinct UK guideline development; under-5 treatment pathway differs in age from US under-6 AAP. Do not treat as literal US-age confirmation."
+  },
+  "bilingual_review": {
+    "result": "no_material_numeric_or_action_mismatch_found",
+    "thresholds_checked": [
+      "through age 16: 6 symptoms in either group",
+      "age 17+: 5",
+      "at least 6 months",
+      "at least 2 settings",
+      "some symptoms before 12"
+    ],
+    "qualification": "中文诊断-3表达略绕但与英文的其他原因不能更好解释一致；主要缺陷为双语共同的证据范围。"
+  },
+  "mece_review": {
+    "coding": [],
+    "numerator_change": 0,
+    "finding": "泛ADHD不能因提及表现类型就自动覆盖各ICD叶类；别名ADD可作旧名检索，注意力缺陷是宽症状不能反向等同确诊。"
+  },
+  "section_reviews": [
+    {
+      "section": "summary",
+      "content_sha256": "de971be9620ab29715dcf167aa3d52a81d6955426c0b42bc48895b70e88608aa",
+      "author_record_sha256": "5c70e0dbab053f506fd1107c6c628043a559147196075be6b8f070a4b20d476b",
+      "verdict": "needs_revision",
+      "claim_reviews": [
+        {
+          "id": "summary-0",
+          "claim_text_sha256": "1d4d2026c89e986a6ce72d034d5586d364e0de7ce6c65321fa3d87d3f9e2c93b",
+          "author_kind": "explanation",
+          "decision": "not_cross_checked_single_group_or_missing_support",
+          "assessment": "NIMH overview What is ADHD 与 Adults 1 同编写组，概念支持但不算双源。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "What is ADHD? / What are the symptoms?",
+              "assessment": "Childhood-onset developmental disorder; persistent inattention, hyperactivity or impulsivity; examples and functional effects."
+            },
+            {
+              "source_id": "adhd-nimh-adults",
+              "locator": "1. Adults can have ADHD / 2. Symptoms can cause problems in daily life",
+              "assessment": "Adult functional effects, persistent multi-setting symptoms, sleep and mental-health comorbidity, age-related symptom change."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "summary-1",
+          "claim_text_sha256": "cacf13d25ab8f932560087c342afd231fba450efa934e98272af7316e0cd6dbc",
+          "author_kind": "explanation",
+          "decision": "not_cross_checked_single_group_or_missing_support",
+          "assessment": "NIMH overview Symptoms 各例和表现类型有实文；当前单源。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "What is ADHD? / What are the symptoms?",
+              "assessment": "Childhood-onset developmental disorder; persistent inattention, hyperactivity or impulsivity; examples and functional effects."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "summary-2",
+          "claim_text_sha256": "3459e2316d5ceb32253c2fae1bcf4cd7f69be9bf0dcd780b831bc25cbdf1f1e9",
+          "author_kind": "explanation",
+          "decision": "not_cross_checked_single_group_or_missing_support",
+          "assessment": "NIMH overview Diagnosis 与 Adults 2 支持持续、跨场合及相似症状，仍同组。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How is ADHD diagnosed?",
+              "assessment": "Before age 12, 6 months, multiple settings, impairment, age-specific symptom counts and comprehensive differential evaluation."
+            },
+            {
+              "source_id": "adhd-nimh-adults",
+              "locator": "1. Adults can have ADHD / 2. Symptoms can cause problems in daily life",
+              "assessment": "Adult functional effects, persistent multi-setting symptoms, sleep and mental-health comorbidity, age-related symptom change."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "summary-3",
+          "claim_text_sha256": "a1cc1b986749a8c999354f5b80284fd2da0be6edb44fd54e84f0ee39746e9981",
+          "author_kind": "explanation",
+          "decision": "not_cross_checked_single_group_or_missing_support",
+          "assessment": "NIMH Adults 1-2 功能影响、overview Psychotherapy 自信/支持；同组。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-adults",
+              "locator": "1. Adults can have ADHD / 2. Symptoms can cause problems in daily life",
+              "assessment": "Adult functional effects, persistent multi-setting symptoms, sleep and mental-health comorbidity, age-related symptom change."
+            },
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How is ADHD treated? / Psychotherapy and behavioral interventions",
+              "assessment": "Medication and psychological/behavioural interventions can reduce symptoms and improve functioning; combined support and task organization."
+            }
+          ],
+          "finding_ids": []
+        }
+      ]
+    },
+    {
+      "section": "causes_risks",
+      "content_sha256": "c48625832a433a8d7336fd9b04033c8a321637bd94023aac731def16ae280460",
+      "author_record_sha256": "93eb1d43a60b716c3dc2fd167387cafa4c20668ed6b81d81fef72f97a03e5a66",
+      "verdict": "needs_revision",
+      "claim_reviews": [
+        {
+          "id": "causes_risks-0",
+          "claim_text_sha256": "3386c39b6a0acc3394386b8f5d768cf739e1fe3ee393cc12a1ff7615d3cfc8dc",
+          "author_kind": "explanation",
+          "decision": "supported_two_authored_sources",
+          "assessment": "NIMH Causes 支持遗传和脑发育研究；NHS children Causes 支持遗传并非单一已知原因。未声称确定病因。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "What causes ADHD?",
+              "assessment": "Genes play a large role; multifactorial explanation and research into brain development and injury."
+            },
+            {
+              "source_id": "adhd-nhs-children",
+              "locator": "What causes ADHD?",
+              "assessment": "Family/genetic association, prematurity and brain injury are linked risks, not individual proof of causation."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "causes_risks-1",
+          "claim_text_sha256": "64f30e780ac83ff1830fa4a86d4c765551b789cca7fe6073217918c388d08cb1",
+          "author_kind": "explanation",
+          "decision": "supported_two_authored_sources",
+          "assessment": "NHS children Causes 的家族聚集与NIMH Causes的多因素框架一致；未作遗传必然推断。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nhs-children",
+              "locator": "What causes ADHD?",
+              "assessment": "Family/genetic association, prematurity and brain injury are linked risks, not individual proof of causation."
+            },
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "What causes ADHD?",
+              "assessment": "Genes play a large role; multifactorial explanation and research into brain development and injury."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "causes_risks-2",
+          "claim_text_sha256": "4ea8382388621cc6740dd314d7aff57195634d02c1ceb776df5edf99e1b7a264",
+          "author_kind": "explanation",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "脑损伤见NIMH/NHS；早产仅NHS在当前绑定明确。APA Causes另支持早产，可补准确绑定。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nhs-children",
+              "locator": "What causes ADHD?",
+              "assessment": "Family/genetic association, prematurity and brain injury are linked risks, not individual proof of causation."
+            },
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "What causes ADHD?",
+              "assessment": "Genes play a large role; multifactorial explanation and research into brain development and injury."
+            }
+          ],
+          "finding_ids": [
+            "A07"
+          ]
+        },
+        {
+          "id": "causes_risks-3",
+          "claim_text_sha256": "9197a6d989d2cd2293e35f750005793b2bd5133deed62f2cec37ccc58e0ec559",
+          "author_kind": "explanation",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "NIMH Diagnosis描述压力/睡眠为相似表现，非直接加重ADHD结论；NHS lifestyle支持干预。NHS adults Lifestyle的焦虑抑郁加重可补，责骂不能治愈是编辑推论。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How is ADHD diagnosed?",
+              "assessment": "Before age 12, 6 months, multiple settings, impairment, age-specific symptom counts and comprehensive differential evaluation."
+            },
+            {
+              "source_id": "adhd-nhs-children",
+              "locator": "How to manage ADHD / Lifestyle",
+              "assessment": "Exercise, sleep and practical home/school support."
+            },
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How can I help myself? / How can I help my child?",
+              "assessment": "Regular meals/sleep, predictable routines, task lists, smaller steps, breaks, simple instructions and positive reinforcement."
+            }
+          ],
+          "finding_ids": [
+            "A07"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "red_flags",
+      "content_sha256": "26922978fb791eef4ee4708385f2c86b592d3501c3202ef8edf278f9c741a360",
+      "author_record_sha256": "c40ec45a2419e83212c54b94983055e101f3da4fffafc57c9db5870a0900bd3f",
+      "verdict": "needs_revision",
+      "claim_reviews": [
+        {
+          "id": "red_flags-0",
+          "claim_text_sha256": "0f2c5451506797f211efe8d1618cb11f23e3f921e54e564e628d91531acf0657",
+          "author_kind": "explanation",
+          "decision": "supported_two_authored_sources",
+          "assessment": "FDA patients overdose 与NHS adult methylphenidate Immediate action支持危险改变另走急救路径；引导句未代替具体条目。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-fda-stimulants",
+              "locator": "Emergency overdose symptom list",
+              "assessment": "Emergency care for seizures, confusion, heart attack/stroke and other stimulant-overdose symptoms."
+            },
+            {
+              "source_id": "adhd-nhs-methylphenidate",
+              "locator": "Common / Serious side effects; Immediate action required",
+              "assessment": "Adult methylphenidate: insomnia, appetite/weight and mood changes; emergency chest pain, seizures and self-harm thoughts. Does not independently support all stimulant overdose presentations."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "red_flags-1",
+          "claim_text_sha256": "e10825459daaef69cdd324708a8f2b126ced6712258cc4a9f6216d5f5b1a92a9",
+          "author_kind": "action",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "NIMH危机段支持求助；NHS成人哌甲酯仅服药人群自伤思维急救。不足一般全龄具体计划/不能保证安全/可信者陪伴的完整双源。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How can I help my child? closing crisis paragraph",
+              "assessment": "Suicidal crisis resources and emergency help in life-threatening situations; local service substitution is geographic adaptation."
+            },
+            {
+              "source_id": "adhd-nhs-methylphenidate",
+              "locator": "Common / Serious side effects; Immediate action required",
+              "assessment": "Adult methylphenidate: insomnia, appetite/weight and mood changes; emergency chest pain, seizures and self-harm thoughts. Does not independently support all stimulant overdose presentations."
+            }
+          ],
+          "finding_ids": [
+            "A01"
+          ]
+        },
+        {
+          "id": "red_flags-2",
+          "claim_text_sha256": "3b64daf0e21d4fbee132c353128841a02c2ed7f293bdf7e76f50b618d623f133",
+          "author_kind": "action",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "FDA overdose支持抽搐/混乱；NHS adult methylphenidate支持胸痛/抽搐。混乱与疑似过量全龄适用及告知服用经过未双源核实。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-fda-stimulants",
+              "locator": "Emergency overdose symptom list",
+              "assessment": "Emergency care for seizures, confusion, heart attack/stroke and other stimulant-overdose symptoms."
+            },
+            {
+              "source_id": "adhd-nhs-methylphenidate",
+              "locator": "Common / Serious side effects; Immediate action required",
+              "assessment": "Adult methylphenidate: insomnia, appetite/weight and mood changes; emergency chest pain, seizures and self-harm thoughts. Does not independently support all stimulant overdose presentations."
+            }
+          ],
+          "finding_ids": [
+            "A01"
+          ]
+        },
+        {
+          "id": "red_flags-3",
+          "claim_text_sha256": "586b6e8e3ef0836a2610380fb00e11df06a6223254ed537fb14412ad2d9dccfb",
+          "author_kind": "action",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "NHS成人药页支持持续副作用与情绪变化联系医生；FDA明确勿自行增量。两来源各支持子句，非整句各自交叉。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nhs-methylphenidate",
+              "locator": "Common / Serious side effects; Immediate action required",
+              "assessment": "Adult methylphenidate: insomnia, appetite/weight and mood changes; emergency chest pain, seizures and self-harm thoughts. Does not independently support all stimulant overdose presentations."
+            },
+            {
+              "source_id": "adhd-fda-stimulants",
+              "locator": "What should patients/caregivers do? / Additional Information for Patients",
+              "assessment": "Take exactly as prescribed; never share; secure storage; misuse/addiction/overdose may occur and require help."
+            }
+          ],
+          "finding_ids": [
+            "A05"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "care",
+      "content_sha256": "7f314276fa82028e2d8a7908fe0f9ac5ca67b654906110f3306b8708676ce97b",
+      "author_record_sha256": "f4bcbb3e7472aac39679beb07c6c45fe3ddab3ce49dc40e04b8b797e87c0deaf",
+      "verdict": "needs_revision",
+      "claim_reviews": [
+        {
+          "id": "care-0",
+          "claim_text_sha256": "4b6ac974f17572ce7674a197ee1c33e1fd83c738278deb4802b8b4c52434b634",
+          "author_kind": "explanation",
+          "decision": "supported_two_authored_sources",
+          "assessment": "NHS adults Getting help 与NIMH overview How can I find help?支持功能受损预约；后者已在主题来源但未绑定此句，应补记录。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nhs-adults",
+              "locator": "Getting help / Getting an assessment",
+              "assessment": "Adult GP referral and specialist assessment in UK; work/life impact drives assessment."
+            },
+            {
+              "source_id": "adhd-nhs-children",
+              "locator": "Symptoms / Getting help / What happens at an assessment",
+              "assessment": "Young-child developmental variation, school support, GP/specialist referral and developmental assessment."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "care-1",
+          "claim_text_sha256": "caed149e5b4e1638d4e5058681372370db70f8357242e44b99dcd92de485d9d8",
+          "author_kind": "action",
+          "decision": "supported_two_authored_sources",
+          "assessment": "NIMH Adults 3 与NHS children Assessment支持时间、环境、功能经过。准备实例是这些询问的可执行转述。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-adults",
+              "locator": "3. ADHD is diagnosed differently / Why was I not diagnosed earlier?",
+              "assessment": "Past records, informant history, clinical interviews, alternative diagnoses and delayed recognition, particularly in women."
+            },
+            {
+              "source_id": "adhd-nhs-children",
+              "locator": "Symptoms / Getting help / What happens at an assessment",
+              "assessment": "Young-child developmental variation, school support, GP/specialist referral and developmental assessment."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "care-2",
+          "claim_text_sha256": "5a2dd3af94fb12ad59907bd995180c5ebb382324f5373c0d75f13e4ac6efa716",
+          "author_kind": "action",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "儿童教师支持见NHS；成人童年学校记录见NIMH。分人群子句各只有一个明确来源；NHS adults Assessment可补成人知情者但不学校记录。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-adults",
+              "locator": "3. ADHD is diagnosed differently / Why was I not diagnosed earlier?",
+              "assessment": "Past records, informant history, clinical interviews, alternative diagnoses and delayed recognition, particularly in women."
+            },
+            {
+              "source_id": "adhd-nhs-children",
+              "locator": "Symptoms / Getting help / What happens at an assessment",
+              "assessment": "Young-child developmental variation, school support, GP/specialist referral and developmental assessment."
+            }
+          ],
+          "finding_ids": [
+            "A05"
+          ]
+        },
+        {
+          "id": "care-3",
+          "claim_text_sha256": "3b4fd2cdafe47b6c8068bc14244417dda5bc800e44a9de02149e6d0530d174fe",
+          "author_kind": "action",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "美初级/专科由NIMH支持、英GP专科由NHS支持；应分别作为当地路径权威陈述，若依现行双源发布规则仍各需第二材料。CDC Diagnosis可补美国，NICE 1.3.1可补英国。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How is ADHD diagnosed?",
+              "assessment": "Before age 12, 6 months, multiple settings, impairment, age-specific symptom counts and comprehensive differential evaluation."
+            },
+            {
+              "source_id": "adhd-nhs-adults",
+              "locator": "Getting help / Getting an assessment",
+              "assessment": "Adult GP referral and specialist assessment in UK; work/life impact drives assessment."
+            },
+            {
+              "source_id": "adhd-nhs-children",
+              "locator": "Symptoms / Getting help / What happens at an assessment",
+              "assessment": "Young-child developmental variation, school support, GP/specialist referral and developmental assessment."
+            }
+          ],
+          "finding_ids": [
+            "A05"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "diagnosis",
+      "content_sha256": "17736f52975b5e637ded6b515d6f08d77877e959733054ac04cd1155798d944c",
+      "author_record_sha256": "e4dff5bfd575841d291d73166209837850f5a33f353490b95868419d58e7c819",
+      "verdict": "needs_revision",
+      "claim_reviews": [
+        {
+          "id": "diagnosis-0",
+          "claim_text_sha256": "561c21f1167e7b9a768b55469b4f1f78e380ae9dfc68417ef42441b55f153206",
+          "author_kind": "explanation",
+          "decision": "supported_two_authored_sources",
+          "assessment": "CDC How is ADHD diagnosed? 与NICE 1.3.1-1.3.2支持综合判断/无单一测试。NICE原网页工具失败，经直接官方HTTPS成功读取。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-cdc-diagnosis",
+              "locator": "Diagnosis process / Other conditions",
+              "assessment": "No single diagnostic test; differential assessment for sleep, mood and learning problems."
+            },
+            {
+              "source_id": "adhd-nice-ng87",
+              "locator": "1.3.1–1.3.3 Diagnosis",
+              "assessment": "Specialist full clinical/psychosocial/developmental evaluation; rating scales alone do not establish diagnosis."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "diagnosis-1",
+          "claim_text_sha256": "cfd52fec60b169123481e42ddbaa52082abe6e8d69bc224b2a4063b46a1cfe7c",
+          "author_kind": "threshold",
+          "decision": "supported_two_authored_sources",
+          "assessment": "NIMH Diagnosis 与APA Inattentive/Hyperactive type核对16及以下6项、17及以上5项；同一DSM依据、两个机构自行编写，并非两套独立诊断标准。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How is ADHD diagnosed?",
+              "assessment": "Before age 12, 6 months, multiple settings, impairment, age-specific symptom counts and comprehensive differential evaluation."
+            },
+            {
+              "source_id": "adhd-apa",
+              "locator": "Symptoms and Diagnosis: inattention, hyperactivity/impulsivity; criteria paragraphs",
+              "assessment": "DSM symptom groups assessed separately; at least 6 symptoms through age 16 or 5 from age 17, 6 months, before age 12, impairment and more than one setting."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "diagnosis-2",
+          "claim_text_sha256": "5d4b71802f118a38cfdfa8e2cdcf5a4863e8b0547b67717ccad3c2f1e216693b",
+          "author_kind": "threshold",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "6个月、两个场合、12岁前、功能损害在NIMH与APA一致；明确超过发展水平仅APA所绑段写出。NICE 1.3.5另提供年龄发展考虑，需拆分并绑定。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How is ADHD diagnosed?",
+              "assessment": "Before age 12, 6 months, multiple settings, impairment, age-specific symptom counts and comprehensive differential evaluation."
+            },
+            {
+              "source_id": "adhd-apa",
+              "locator": "Symptoms and Diagnosis: inattention, hyperactivity/impulsivity; criteria paragraphs",
+              "assessment": "DSM symptom groups assessed separately; at least 6 symptoms through age 16 or 5 from age 17, 6 months, before age 12, impairment and more than one setting."
+            }
+          ],
+          "finding_ids": [
+            "A02"
+          ]
+        },
+        {
+          "id": "diagnosis-3",
+          "claim_text_sha256": "beaef7141d7c61579ba8bcfbcae093c6ee104cca0169a28349dd64e3db00e241",
+          "author_kind": "explanation",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "CDC/NIMH支持鉴别及共病；药物原因在APA Combined type诊断段更直接，当前绑定未涵盖该例。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-cdc-diagnosis",
+              "locator": "Diagnosis process / Other conditions",
+              "assessment": "No single diagnostic test; differential assessment for sleep, mood and learning problems."
+            },
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How is ADHD diagnosed?",
+              "assessment": "Before age 12, 6 months, multiple settings, impairment, age-specific symptom counts and comprehensive differential evaluation."
+            }
+          ],
+          "finding_ids": [
+            "A02"
+          ]
+        },
+        {
+          "id": "diagnosis-4",
+          "claim_text_sha256": "6a9558747c8d8e9d8570b06b350e8d68a33d6fb910c436457e5adbe93118e780",
+          "author_kind": "explanation",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "NICE 1.3.1-1.3.2和NIMH Adults 3支持多方信息、不仅量表；网上测验起点是合理解读但当前非双源直接表述。不要删去量表局限。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nice-ng87",
+              "locator": "1.3.1–1.3.3 Diagnosis",
+              "assessment": "Specialist full clinical/psychosocial/developmental evaluation; rating scales alone do not establish diagnosis."
+            },
+            {
+              "source_id": "adhd-nimh-adults",
+              "locator": "3. ADHD is diagnosed differently / Why was I not diagnosed earlier?",
+              "assessment": "Past records, informant history, clinical interviews, alternative diagnoses and delayed recognition, particularly in women."
+            }
+          ],
+          "finding_ids": [
+            "A02"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "differentials",
+      "content_sha256": "8f1f95f7ec58a66fcf36d04b2346c377e557edae1166fa744717b6c188502798",
+      "author_record_sha256": "e4301dc0320a1e9e17b0b9ba4e3976f2f25c8c1d774c561ceb5e846efc5d2eb8",
+      "verdict": "needs_revision",
+      "claim_reviews": [
+        {
+          "id": "differentials-0",
+          "claim_text_sha256": "509b162f169a43c66dbfd904f93abdb812e98b57c7bd9be1880d8ba5c73ba7cb",
+          "author_kind": "explanation",
+          "decision": "supported_two_authored_sources",
+          "assessment": "CDC How is ADHD diagnosed? 与NIMH Diagnosis均明确相似症状的其他原因。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-cdc-diagnosis",
+              "locator": "Diagnosis process / Other conditions",
+              "assessment": "No single diagnostic test; differential assessment for sleep, mood and learning problems."
+            },
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How is ADHD diagnosed?",
+              "assessment": "Before age 12, 6 months, multiple settings, impairment, age-specific symptom counts and comprehensive differential evaluation."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "differentials-1",
+          "claim_text_sha256": "1330593511655a2d24cc6e98e25f1a2493b4885b58af8de8bf4c79d376f29ac5",
+          "author_kind": "explanation",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "NIMH只列睡眠/焦虑/抑郁，不支持白天疲倦、担忧占注意、兴趣低落等各病具体线索；需要各病原文而非列表推导。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How is ADHD diagnosed?",
+              "assessment": "Before age 12, 6 months, multiple settings, impairment, age-specific symptom counts and comprehensive differential evaluation."
+            }
+          ],
+          "finding_ids": [
+            "A02"
+          ]
+        },
+        {
+          "id": "differentials-2",
+          "claim_text_sha256": "c529ea705f2aa9284d817ddacf7acc6728c954bb8142fc72a0ab636960f7c1bd",
+          "author_kind": "explanation",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "学习障碍与自闭症见NHS children Getting help及CDC鉴别；具体阅读表现/分别支持完整范围须细化；NHS把自闭症列鉴别，未该段明确共存。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nhs-children",
+              "locator": "Getting help / ADHD and mental health",
+              "assessment": "Learning difficulty, autism, anxiety/depression and addiction may require separate recognition/support."
+            },
+            {
+              "source_id": "adhd-cdc-diagnosis",
+              "locator": "Diagnosis process / Other conditions",
+              "assessment": "No single diagnostic test; differential assessment for sleep, mood and learning problems."
+            }
+          ],
+          "finding_ids": [
+            "A02"
+          ]
+        },
+        {
+          "id": "differentials-3",
+          "claim_text_sha256": "02e0c6432a108ea322cd9e8ebeaa0219789bd728cad3279ac6627a3a63872e79",
+          "author_kind": "explanation",
+          "decision": "not_cross_checked_single_group_or_missing_support",
+          "assessment": "NIMH两页均同组；突然成人认知变化需查近期疾病/药物的行动超出两页所写的一般鉴别定位。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-adults",
+              "locator": "3. ADHD is diagnosed differently / Why was I not diagnosed earlier?",
+              "assessment": "Past records, informant history, clinical interviews, alternative diagnoses and delayed recognition, particularly in women."
+            },
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How is ADHD diagnosed?",
+              "assessment": "Before age 12, 6 months, multiple settings, impairment, age-specific symptom counts and comprehensive differential evaluation."
+            }
+          ],
+          "finding_ids": [
+            "A06"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "treatment",
+      "content_sha256": "18fcae1ca335e78c054d1e6f00d5b0b4ddd9dec6cb91f9aaeeee385cee8d3c05",
+      "author_record_sha256": "5dfadcd361e8ad53bdf479edb2565f92318772d285111dd88feeaeda3db476ab",
+      "verdict": "needs_revision",
+      "claim_reviews": [
+        {
+          "id": "treatment-0",
+          "claim_text_sha256": "97d7be82d3ffd604c10862289c9efa9619a6ea03e1616aec6273189a74823fa6",
+          "author_kind": "explanation",
+          "decision": "supported_two_authored_sources",
+          "assessment": "NIMH Treatment与CDC Treatment recommendations均以症状和功能获益为目标。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How is ADHD treated? / Psychotherapy and behavioral interventions",
+              "assessment": "Medication and psychological/behavioural interventions can reduce symptoms and improve functioning; combined support and task organization."
+            },
+            {
+              "source_id": "adhd-cdc-treatment",
+              "locator": "Behavior therapy / Treatment recommendations",
+              "assessment": "AAP child age-dependent treatment, parent training and school support; younger children start with behavioural parent training."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "treatment-1",
+          "claim_text_sha256": "879d796313703b09f889e22cd8d1c73f2fa32b6fb7ea3db2d41075b1f2047dbe",
+          "author_kind": "benefit",
+          "decision": "supported_two_authored_sources",
+          "assessment": "CDC行为训练/家校支持和行为管理tips、NIMH治疗及助孩子段支持拆步骤、清楚反馈。CDC明列NIMH为tips来源，共享依据须记录。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-cdc-treatment",
+              "locator": "Behavior therapy / Treatment recommendations",
+              "assessment": "AAP child age-dependent treatment, parent training and school support; younger children start with behavioural parent training."
+            },
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How can I help myself? / How can I help my child?",
+              "assessment": "Regular meals/sleep, predictable routines, task lists, smaller steps, breaks, simple instructions and positive reinforcement."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "treatment-2",
+          "claim_text_sha256": "4fe425b300651a4ad2f39c612c11f7ebcb8f21403e3cbf19797dafd2b73d4bc4",
+          "author_kind": "benefit",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "NIMH支持心理技能与药物结合；CDC Medications只支持儿童药物部分，未该定位支持成人心理治疗技能。CDC行为训练段可补儿童，成人需独立材料。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How is ADHD treated? / Psychotherapy and behavioral interventions",
+              "assessment": "Medication and psychological/behavioural interventions can reduce symptoms and improve functioning; combined support and task organization."
+            },
+            {
+              "source_id": "adhd-cdc-treatment",
+              "locator": "Medications",
+              "assessment": "Stimulant and nonstimulant options; monitor response and adverse effects."
+            }
+          ],
+          "finding_ids": [
+            "A05"
+          ]
+        },
+        {
+          "id": "treatment-3",
+          "claim_text_sha256": "9b5ce0da52b8a554ae72ac13fc4d7921eae3ba4670968b0df4d7137794f54777",
+          "author_kind": "benefit",
+          "decision": "not_cross_checked_single_group_or_missing_support",
+          "assessment": "现绑定仅CDC引用AAP。另读APA Treatment独立教育文支持幼儿家长训练但引用同AAP；NICE 1.5.7是英国小于5岁，不可偷换美国小于6岁。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-cdc-treatment",
+              "locator": "Behavior therapy / Treatment recommendations",
+              "assessment": "AAP child age-dependent treatment, parent training and school support; younger children start with behavioural parent training."
+            }
+          ],
+          "finding_ids": [
+            "A03"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "medications",
+      "content_sha256": "dcdf20ac2af483a0e1401eeebc8004c556be3ffe5e65d835e9c0f9a3ea11ccc3",
+      "author_record_sha256": "ea217290ee858935dd40c674adb8093dd7f1ece81071365fd4bb39ef740e132b",
+      "verdict": "needs_revision",
+      "claim_reviews": [
+        {
+          "id": "medications-0",
+          "claim_text_sha256": "e67716da81beeefc793f4d5391eabfeefea5fa880f97a9a565ed09e3f086b24e",
+          "author_kind": "explanation",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "NIMH Medication支持脑内信号，CDC只介绍药物类别与效应，机制不是双源。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How is ADHD treated? / Psychotherapy and behavioral interventions",
+              "assessment": "Medication and psychological/behavioural interventions can reduce symptoms and improve functioning; combined support and task organization."
+            },
+            {
+              "source_id": "adhd-cdc-treatment",
+              "locator": "Medications",
+              "assessment": "Stimulant and nonstimulant options; monitor response and adverse effects."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "medications-1",
+          "claim_text_sha256": "e996ee77650417dd8ea22f3b2f18a92ee3b6541235940d970f659d5677c5195d",
+          "author_kind": "risk",
+          "decision": "supported_two_authored_sources",
+          "assessment": "CDC Medications与NICE 1.7.7-1.7.15可共同核对兴奋剂/非兴奋剂及地区许可差异；NICE明确部分制剂/年龄为超说明书，稿未误写统一获批。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-cdc-treatment",
+              "locator": "Medications",
+              "assessment": "Stimulant and nonstimulant options; monitor response and adverse effects."
+            },
+            {
+              "source_id": "adhd-nice-ng87",
+              "locator": "1.7 Baseline assessment and medication choices; 1.8.5–1.8.9",
+              "assessment": "Medicine selection is population-specific; baseline comorbidities and heart assessment; growth, weight, heart rate and blood pressure monitoring."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "medications-2",
+          "claim_text_sha256": "a91da67181e6fad42e0c2c7456d88107677d5c7350545ca20a1c1fe06fd531e2",
+          "author_kind": "risk",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "NICE 1.7.4-1.7.5/1.8.5/1.8.9支持儿童生长、心病和合并用药；NHS成人药页支持食欲/睡眠/心率血压，无儿童生长或精神药物相互作用。完整条目仍不双源。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nice-ng87",
+              "locator": "1.7 Baseline assessment and medication choices; 1.8.5–1.8.9",
+              "assessment": "Medicine selection is population-specific; baseline comorbidities and heart assessment; growth, weight, heart rate and blood pressure monitoring."
+            },
+            {
+              "source_id": "adhd-nhs-methylphenidate",
+              "locator": "Common / Serious side effects; Immediate action required",
+              "assessment": "Adult methylphenidate: insomnia, appetite/weight and mood changes; emergency chest pain, seizures and self-harm thoughts. Does not independently support all stimulant overdose presentations."
+            }
+          ],
+          "finding_ids": [
+            "A01"
+          ]
+        },
+        {
+          "id": "medications-3",
+          "claim_text_sha256": "91d89b27a63029e58b3d0a440e9c6a75042b4ed423d80f9816bad5e9a55be6ed",
+          "author_kind": "risk",
+          "decision": "not_cross_checked_single_group_or_missing_support",
+          "assessment": "FDA patients 明确不分享/不自行增量；现唯一源。NIMH不服他人药仅支持子句，仍需完整独立安全材料。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-fda-stimulants",
+              "locator": "What should patients/caregivers do? / Additional Information for Patients",
+              "assessment": "Take exactly as prescribed; never share; secure storage; misuse/addiction/overdose may occur and require help."
+            }
+          ],
+          "finding_ids": [
+            "A03"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "diet",
+      "content_sha256": "dded8c1f7f303e3b4c5e66881008a234bb820e2b282fb1391872044c7c41edc1",
+      "author_record_sha256": "58349dbac5d42b26e2e06c5b5960c051fbd5b5dd8f9761aea44308f236d5a52f",
+      "verdict": "needs_revision",
+      "claim_reviews": [
+        {
+          "id": "diet-0",
+          "claim_text_sha256": "d5e25dd2c3c5a70278b47d6d7dabe94ce9b73a69e13ec1728ee194aecfcb525b",
+          "author_kind": "explanation",
+          "decision": "supported_two_authored_sources",
+          "assessment": "NIMH self-help regular meals及NICE 1.6.1/1.8.6支持规律营养和食欲/体重应对。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nice-ng87",
+              "locator": "1.6.1–1.6.4 Dietary advice; 1.8.6 weight loss strategies",
+              "assessment": "Balanced nutrition; no universal elimination diet; food/behaviour diary and dietitian-supervised restriction; no fatty-acid supplements as child ADHD treatment."
+            },
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How can I help myself? / How can I help my child?",
+              "assessment": "Regular meals/sleep, predictable routines, task lists, smaller steps, breaks, simple instructions and positive reinforcement."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "diet-1",
+          "claim_text_sha256": "e4a169eef099a7e466b24e1b9743245c05caa169888bfef33b778ef678192122",
+          "author_kind": "explanation",
+          "decision": "not_cross_checked_single_group_or_missing_support",
+          "assessment": "NIMH仅规律健康吃饭；提醒、易准备餐点、防忘食具体动作未经两源支持，且kind应含action。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How can I help myself? / How can I help my child?",
+              "assessment": "Regular meals/sleep, predictable routines, task lists, smaller steps, breaks, simple instructions and positive reinforcement."
+            }
+          ],
+          "finding_ids": [
+            "A04",
+            "A06"
+          ]
+        },
+        {
+          "id": "diet-2",
+          "claim_text_sha256": "4bceb2e9b1a655ec2a7fc5f65b69d5d129e5ead67f73ecfefecd29e0feb2df9b",
+          "author_kind": "explanation",
+          "decision": "not_cross_checked_single_group_or_missing_support",
+          "assessment": "NICE 1.6.3限儿童/年轻人，稿件无年龄限定；NHS children Lifestyle支持日记，未专科共同排除食物。需保留专业评估边界并补双源。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nice-ng87",
+              "locator": "1.6.1–1.6.4 Dietary advice; 1.8.6 weight loss strategies",
+              "assessment": "Balanced nutrition; no universal elimination diet; food/behaviour diary and dietitian-supervised restriction; no fatty-acid supplements as child ADHD treatment."
+            }
+          ],
+          "finding_ids": [
+            "A04",
+            "A06"
+          ]
+        },
+        {
+          "id": "diet-3",
+          "claim_text_sha256": "863772a58b4d8e139c0cbb8faeb2192335a8d71065a30b18625a04b92e980d1f",
+          "author_kind": "explanation",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "NIMH Complementary与NICE 1.6.2-1.6.5支持证据局限；NICE范围儿童，且原绑定漏1.6.5。限制饮食与生长子句需直接依据；不能称所有饮食措施毫无效果。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "Complementary health approaches",
+              "assessment": "Supplements and dietary complementary approaches lack established effectiveness comparable with standard therapy."
+            },
+            {
+              "source_id": "adhd-nice-ng87",
+              "locator": "1.6.1–1.6.4 Dietary advice; 1.8.6 weight loss strategies",
+              "assessment": "Balanced nutrition; no universal elimination diet; food/behaviour diary and dietitian-supervised restriction; no fatty-acid supplements as child ADHD treatment."
+            }
+          ],
+          "finding_ids": [
+            "A06"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "daily_care",
+      "content_sha256": "aff8179e675c97d646730834d6051f7ae928e0771a29c4087984250eb08985fa",
+      "author_record_sha256": "9c0f5ec5d44c7fe0be23a2c9a50aaf292931d734251c83503c492797e9473ef2",
+      "verdict": "needs_revision",
+      "claim_reviews": [
+        {
+          "id": "daily_care-0",
+          "claim_text_sha256": "3338c7b31b029573e048c04a22eb88ca04293fa7e7fa91f92c8f525a32632e86",
+          "author_kind": "explanation",
+          "decision": "not_cross_checked_single_group_or_missing_support",
+          "assessment": "NIMH建议可视化安排，但比较级比单靠提醒更实用无比较证据；可改成动作说明而非效应比较。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How can I help myself? / How can I help my child?",
+              "assessment": "Regular meals/sleep, predictable routines, task lists, smaller steps, breaks, simple instructions and positive reinforcement."
+            }
+          ],
+          "finding_ids": [
+            "A04"
+          ]
+        },
+        {
+          "id": "daily_care-1",
+          "claim_text_sha256": "02af2a157a2ca8cf6a7a34de0722bc2d0d0c096dcee62069394021c42729ddf6",
+          "author_kind": "action",
+          "decision": "not_cross_checked_single_group_or_missing_support",
+          "assessment": "重复绑定NIMH不同段仍一组。NHS children Support at school明确任务分步/清单/休息，可作为新增绑定，仅儿童范围。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How can I help myself? / How can I help my child?",
+              "assessment": "Regular meals/sleep, predictable routines, task lists, smaller steps, breaks, simple instructions and positive reinforcement."
+            },
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How is ADHD treated? / Psychotherapy and behavioral interventions",
+              "assessment": "Medication and psychological/behavioural interventions can reduce symptoms and improve functioning; combined support and task organization."
+            }
+          ],
+          "finding_ids": [
+            "A03"
+          ]
+        },
+        {
+          "id": "daily_care-2",
+          "claim_text_sha256": "bf01b40e93dd85f1c82923e75185c6b7f3b9d6a314cc2ff593d32d66da9753ce",
+          "author_kind": "action",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "NIMH支持清楚指令/肯定，不支持钥匙及药物固定放置完整句。CDC tips对物品整理、NHS孩子支持指令明确，但药物必须兼容安全储存。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How can I help myself? / How can I help my child?",
+              "assessment": "Regular meals/sleep, predictable routines, task lists, smaller steps, breaks, simple instructions and positive reinforcement."
+            }
+          ],
+          "finding_ids": [
+            "A04"
+          ]
+        },
+        {
+          "id": "daily_care-3",
+          "claim_text_sha256": "dffe6dfe4da22709eaeee84b680baf572209fd753e30d493552a8c987a2903e9",
+          "author_kind": "action",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "NICE 1.8.1-1.8.4是总体监测，睡眠日记实际1.8.17；NHS药页没有任务完成记录。勿将一般副作用页当完整功能记录的第二源。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nice-ng87",
+              "locator": "1.8.1–1.8.4 Maintenance and monitoring",
+              "assessment": "Document effectiveness and adverse effects and follow-up according to severity, whether or not on medicines."
+            },
+            {
+              "source_id": "adhd-nhs-methylphenidate",
+              "locator": "Common / Serious side effects; Immediate action required",
+              "assessment": "Adult methylphenidate: insomnia, appetite/weight and mood changes; emergency chest pain, seizures and self-harm thoughts. Does not independently support all stimulant overdose presentations."
+            }
+          ],
+          "finding_ids": [
+            "A04"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "special_populations",
+      "content_sha256": "cb7174f4bf1bdee4289a6e549fdfb2bae186a9a02d782eb3b7b554be9a18857d",
+      "author_record_sha256": "f5e89a5f6e08966ca332f5c3dac53cbad4cf8a9c78d207e01c57e0dcb4bc5672",
+      "verdict": "needs_revision",
+      "claim_reviews": [
+        {
+          "id": "special_populations-0",
+          "claim_text_sha256": "b5b10a33a335360d9353e1d1261b3294d7a1aa398c8db915bccf749c4a6af87d",
+          "author_kind": "explanation",
+          "decision": "supported_two_authored_sources",
+          "assessment": "NIMH年龄变化及NHS儿童评估可支持一般导读，无具体治疗决定。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "Does ADHD look the same in everyone?",
+              "assessment": "Sex-related recognition and changing life demands; symptoms vary with age."
+            },
+            {
+              "source_id": "adhd-nhs-children",
+              "locator": "Symptoms / Getting help / What happens at an assessment",
+              "assessment": "Young-child developmental variation, school support, GP/specialist referral and developmental assessment."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "special_populations-1",
+          "claim_text_sha256": "ab56678038154a67dfc47cebcd865cfc6d87a9b0414d6e958d89fcb5603ab275",
+          "author_kind": "risk",
+          "decision": "not_cross_checked_single_group_or_missing_support",
+          "assessment": "NHS明确5岁以下常见好动不等于ADHD；APA Symptoms也有年龄发展标准，可补独立绑定，但现只有一源。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nhs-children",
+              "locator": "Symptoms / Getting help / What happens at an assessment",
+              "assessment": "Young-child developmental variation, school support, GP/specialist referral and developmental assessment."
+            }
+          ],
+          "finding_ids": [
+            "A03"
+          ]
+        },
+        {
+          "id": "special_populations-2",
+          "claim_text_sha256": "175a45694af927011d65e2713498f29cb534edbd454729826210b47f958d033a",
+          "author_kind": "risk",
+          "decision": "not_cross_checked_single_group_or_missing_support",
+          "assessment": "两NIMH页面同组。NHS children/adults独立支持女性易漏识别，成人工作要求触发识别目前仅NIMH。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "Does ADHD look the same in everyone?",
+              "assessment": "Sex-related recognition and changing life demands; symptoms vary with age."
+            },
+            {
+              "source_id": "adhd-nimh-adults",
+              "locator": "3. ADHD is diagnosed differently / Why was I not diagnosed earlier?",
+              "assessment": "Past records, informant history, clinical interviews, alternative diagnoses and delayed recognition, particularly in women."
+            }
+          ],
+          "finding_ids": [
+            "A03"
+          ]
+        },
+        {
+          "id": "special_populations-3",
+          "claim_text_sha256": "f8e66628cc9bd4748984837511a8747f47b9d4840dbe6ab48d742f9cdedbf82c",
+          "author_kind": "risk",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "NHS children Getting help列共存问题，NIMH Therapy支持共病治疗；NHS没有完整分别治疗决策，不能整段自动双源。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nhs-children",
+              "locator": "Getting help / ADHD and mental health",
+              "assessment": "Learning difficulty, autism, anxiety/depression and addiction may require separate recognition/support."
+            },
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How is ADHD treated? / Psychotherapy and behavioral interventions",
+              "assessment": "Medication and psychological/behavioural interventions can reduce symptoms and improve functioning; combined support and task organization."
+            }
+          ],
+          "finding_ids": [
+            "A07"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "prognosis_followup",
+      "content_sha256": "2c994ed09edaaff326cb490e6324c148fd0dabb9c96e2bc7292fb0dd88721b26",
+      "author_record_sha256": "72c8fc4c24066e6e7eebee160681182268b04ad34c2453e64eec1c8b5082869b",
+      "verdict": "needs_revision",
+      "claim_reviews": [
+        {
+          "id": "prognosis_followup-0",
+          "claim_text_sha256": "00c8ef5cf58f2aa1b089d82f1058782358410ba938361d6a638f8c994f1f6738",
+          "author_kind": "explanation",
+          "decision": "supported_two_authored_sources",
+          "assessment": "NIMH Adults年龄生活影响+NICE 1.8.1-1.8.4监测支持导读。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-adults",
+              "locator": "1. Adults can have ADHD / 2. Symptoms can cause problems in daily life",
+              "assessment": "Adult functional effects, persistent multi-setting symptoms, sleep and mental-health comorbidity, age-related symptom change."
+            },
+            {
+              "source_id": "adhd-nice-ng87",
+              "locator": "1.8.1–1.8.4 Maintenance and monitoring",
+              "assessment": "Document effectiveness and adverse effects and follow-up according to severity, whether or not on medicines."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "prognosis_followup-1",
+          "claim_text_sha256": "a647aa124b915048ff052e8907bd58cb6df891e390f848314bc4fa5ef8bf36f9",
+          "author_kind": "explanation",
+          "decision": "not_cross_checked_single_group_or_missing_support",
+          "assessment": "NIMH两页同组；APA Adults另明确多动减轻/注意延续，可补证。年龄本身不停止支持是行动，应按真实kind审查。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-adults",
+              "locator": "1. Adults can have ADHD / 2. Symptoms can cause problems in daily life",
+              "assessment": "Adult functional effects, persistent multi-setting symptoms, sleep and mental-health comorbidity, age-related symptom change."
+            },
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "Does ADHD look the same in everyone?",
+              "assessment": "Sex-related recognition and changing life demands; symptoms vary with age."
+            }
+          ],
+          "finding_ids": [
+            "A03",
+            "A06"
+          ]
+        },
+        {
+          "id": "prognosis_followup-2",
+          "claim_text_sha256": "cfc8ccb4d43e9f1f47816d20db3fa83bd4435ee13c2469b7bf62a6d2a9955769",
+          "author_kind": "explanation",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "NHS成人药页可支持副作用联系，NICE当前绑1.8.1-4不含具体睡眠/行为变化，需1.8.17-18并补第二源的功能范围。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nice-ng87",
+              "locator": "1.8.1–1.8.4 Maintenance and monitoring",
+              "assessment": "Document effectiveness and adverse effects and follow-up according to severity, whether or not on medicines."
+            },
+            {
+              "source_id": "adhd-nhs-methylphenidate",
+              "locator": "Common / Serious side effects; Immediate action required",
+              "assessment": "Adult methylphenidate: insomnia, appetite/weight and mood changes; emergency chest pain, seizures and self-harm thoughts. Does not independently support all stimulant overdose presentations."
+            }
+          ],
+          "finding_ids": [
+            "A05",
+            "A06"
+          ]
+        },
+        {
+          "id": "prognosis_followup-3",
+          "claim_text_sha256": "eaabe6adbfe4c1076d1877f8171197dd1deaa52a5466ef2440cf354b078582b9",
+          "author_kind": "explanation",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "NICE 1.1.4-1.1.5是儿童转成人服务，NIMH Adults 3是诊断回顾，不是升学/换工作照护交接；后两个场景无直接双源。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nice-ng87",
+              "locator": "1.1.4–1.1.5 Service organization",
+              "assessment": "Reassess at school-leaving age and organize transition with anticipated treatment/service information."
+            },
+            {
+              "source_id": "adhd-nimh-adults",
+              "locator": "3. ADHD is diagnosed differently / Why was I not diagnosed earlier?",
+              "assessment": "Past records, informant history, clinical interviews, alternative diagnoses and delayed recognition, particularly in women."
+            }
+          ],
+          "finding_ids": [
+            "A05",
+            "A06"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "complications",
+      "content_sha256": "84857c803b8aa71f1489eb3201e254297834ba24b6c8c465c599669dca40f204",
+      "author_record_sha256": "24a313476830fa4931b211fa2f64c91b85ee22a86517480c93d383f6b3a44222",
+      "verdict": "needs_revision",
+      "claim_reviews": [
+        {
+          "id": "complications-0",
+          "claim_text_sha256": "21fa8ed925c5234f80d304e82e913b7ba0c91474fa13572df6fbaaea1373b87e",
+          "author_kind": "explanation",
+          "decision": "supported_two_authored_sources",
+          "assessment": "NIMH Adults 1-2与NHS children Getting help支持功能影响与共病。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-adults",
+              "locator": "1. Adults can have ADHD / 2. Symptoms can cause problems in daily life",
+              "assessment": "Adult functional effects, persistent multi-setting symptoms, sleep and mental-health comorbidity, age-related symptom change."
+            },
+            {
+              "source_id": "adhd-nhs-children",
+              "locator": "Getting help / ADHD and mental health",
+              "assessment": "Learning difficulty, autism, anxiety/depression and addiction may require separate recognition/support."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "complications-1",
+          "claim_text_sha256": "68ea93b7dc5daedf9adb6bf4e8fa3d1f08dfd570ec3b64af91ff95ff89e43536",
+          "author_kind": "risk",
+          "decision": "not_cross_checked_single_group_or_missing_support",
+          "assessment": "NIMH Adults 1-2支持功能影响/风险行为但单源；APA开篇功能影响可补，安全子句需具体范围。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-adults",
+              "locator": "1. Adults can have ADHD / 2. Symptoms can cause problems in daily life",
+              "assessment": "Adult functional effects, persistent multi-setting symptoms, sleep and mental-health comorbidity, age-related symptom change."
+            }
+          ],
+          "finding_ids": [
+            "A03"
+          ]
+        },
+        {
+          "id": "complications-2",
+          "claim_text_sha256": "79bd67a28def430a77e187ea4a57b37246dbc3ad7161db14bbfefe411d5b81e4",
+          "author_kind": "risk",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "NIMH Adults支持其他精神障碍及睡眠，NHS children明确焦虑抑郁，未该段明确睡眠共病，整句仅部分双源。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-adults",
+              "locator": "1. Adults can have ADHD / 2. Symptoms can cause problems in daily life",
+              "assessment": "Adult functional effects, persistent multi-setting symptoms, sleep and mental-health comorbidity, age-related symptom change."
+            },
+            {
+              "source_id": "adhd-nhs-children",
+              "locator": "Getting help / ADHD and mental health",
+              "assessment": "Learning difficulty, autism, anxiety/depression and addiction may require separate recognition/support."
+            }
+          ],
+          "finding_ids": [
+            "A07"
+          ]
+        },
+        {
+          "id": "complications-3",
+          "claim_text_sha256": "c47189d1c9bc877e11c1496cb1de31bf566fb8ad9e44d3e9fe4a68bb89b9acff",
+          "author_kind": "risk",
+          "decision": "not_cross_checked_single_group_or_missing_support",
+          "assessment": "FDA patients关于滥用后求助明确，但当前单源。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-fda-stimulants",
+              "locator": "What should patients/caregivers do? / Additional Information for Patients",
+              "assessment": "Take exactly as prescribed; never share; secure storage; misuse/addiction/overdose may occur and require help."
+            }
+          ],
+          "finding_ids": [
+            "A03"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "prevention",
+      "content_sha256": "430ff5c9a2d0a7f3d8eb1eefaffcb2446d23abf865c8c58fd73f6f0936b8dfb6",
+      "author_record_sha256": "ee34a2e1885154c4a00e269c36cf1a5ad3a289580729ac74cbee67d3b988775e",
+      "verdict": "needs_revision",
+      "claim_reviews": [
+        {
+          "id": "prevention-0",
+          "claim_text_sha256": "9b141d493fb6bb11089c01302ed5ccf9ea1578fe7e002f9de650253817c1cb1e",
+          "author_kind": "explanation",
+          "decision": "not_cross_checked_single_group_or_missing_support",
+          "assessment": "NIMH多因素病因不能单独充当无保证预防的证据综述；保留谨慎边界但不登记已双源通过。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "What causes ADHD?",
+              "assessment": "Genes play a large role; multifactorial explanation and research into brain development and injury."
+            }
+          ],
+          "finding_ids": [
+            "A07"
+          ]
+        },
+        {
+          "id": "prevention-1",
+          "claim_text_sha256": "84398d2f2b5743b1ce63255d37ed21d7c00317c6d2470859536cd9f119c054a8",
+          "author_kind": "action",
+          "decision": "supported_two_authored_sources",
+          "assessment": "NIMH self-help与NHS children Lifestyle/Support at school支持睡眠规律环境；未声称能预防ADHD发生。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How can I help myself? / How can I help my child?",
+              "assessment": "Regular meals/sleep, predictable routines, task lists, smaller steps, breaks, simple instructions and positive reinforcement."
+            },
+            {
+              "source_id": "adhd-nhs-children",
+              "locator": "How to manage ADHD / Lifestyle",
+              "assessment": "Exercise, sleep and practical home/school support."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "prevention-2",
+          "claim_text_sha256": "204a25246e6714acf519126fdd51f8639a186ccf05f540a3ae93805c5d522ee2",
+          "author_kind": "action",
+          "decision": "supported_two_authored_sources",
+          "assessment": "CDC What to consider/parent tips与NIMH Parent education/child support共同支持家校协调、目标与正向反馈；CDC部分引用NIMH，共享依据需显式记录。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-cdc-treatment",
+              "locator": "Behavior therapy / Treatment recommendations",
+              "assessment": "AAP child age-dependent treatment, parent training and school support; younger children start with behavioural parent training."
+            },
+            {
+              "source_id": "adhd-nimh-overview",
+              "locator": "How can I help myself? / How can I help my child?",
+              "assessment": "Regular meals/sleep, predictable routines, task lists, smaller steps, breaks, simple instructions and positive reinforcement."
+            }
+          ],
+          "finding_ids": []
+        },
+        {
+          "id": "prevention-3",
+          "claim_text_sha256": "448de580fb55767b715b1344c8f333387f7a1efdaa3081a2e0ed89b056f69b22",
+          "author_kind": "action",
+          "decision": "partial_scope_or_binding_gap",
+          "assessment": "FDA支持安全保存/不分享；NICE1.8.1-4仅获益副作用监测，两资料分别覆盖子句而非各自完整支持。",
+          "supports_audited": [
+            {
+              "source_id": "adhd-fda-stimulants",
+              "locator": "What should patients/caregivers do? / Additional Information for Patients",
+              "assessment": "Take exactly as prescribed; never share; secure storage; misuse/addiction/overdose may occur and require help."
+            },
+            {
+              "source_id": "adhd-nice-ng87",
+              "locator": "1.8.1–1.8.4 Maintenance and monitoring",
+              "assessment": "Document effectiveness and adverse effects and follow-up according to severity, whether or not on medicines."
+            }
+          ],
+          "finding_ids": [
+            "A05"
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "A01",
+      "priority": "P1",
+      "claim_ids": [
+        "red_flags-1",
+        "red_flags-2",
+        "medications-2"
+      ],
+      "issue": "儿童/全药物页面用了成人哌甲酯的急救与风险证据，且复合警示各子句未两份独立材料支持。",
+      "resolution": "保留具体急救行动，增加适用全龄及相应药物范围的权威材料；明确不能用成人药页为所有人群风险背书。"
+    },
+    {
+      "id": "A02",
+      "priority": "P2",
+      "claim_ids": [
+        "diagnosis-2",
+        "diagnosis-3",
+        "diagnosis-4",
+        "differentials-1",
+        "differentials-2"
+      ],
+      "issue": "基本DSM阈值正确，个别发展、药物鉴别、各共病线索超出当前精确定位。",
+      "resolution": "拆分并补APA/NICE精确条文或对应疾病原文；保留单测验不能确诊的真实局限。"
+    },
+    {
+      "id": "A03",
+      "priority": "P2",
+      "claim_ids": [
+        "treatment-3",
+        "medications-3",
+        "daily_care-1",
+        "special_populations-1",
+        "special_populations-2",
+        "prognosis_followup-1",
+        "complications-1",
+        "complications-3"
+      ],
+      "issue": "当前仅一个独立编写组，不够发布门槛。",
+      "resolution": "按逐主张结果提供的现成原文位置补第二来源；CDC/AAP和APA共同AAP底层依据需记录，NICE幼儿年龄界限不能替代美国。"
+    },
+    {
+      "id": "A04",
+      "priority": "P2",
+      "claim_ids": [
+        "diet-1",
+        "diet-2",
+        "daily_care-0",
+        "daily_care-2",
+        "daily_care-3"
+      ],
+      "issue": "可执行护理建议混入未来源支持的具体做法/比较级，食物排除建议丢失儿童适用范围。",
+      "resolution": "用直接支持的具体动作替换比较效益判断；食物日记及营养师路径注明人群；药物放置同时满足安全存储。"
+    },
+    {
+      "id": "A05",
+      "priority": "P2",
+      "claim_ids": [
+        "care-2",
+        "care-3",
+        "red_flags-3",
+        "treatment-2",
+        "prognosis_followup-2",
+        "prognosis_followup-3",
+        "prevention-3"
+      ],
+      "issue": "两个来源各支持不同子句，不能把来源总数当每条完整交叉核验。",
+      "resolution": "拆成可以独立核对的主张，补全每个关键行动的第二来源；英美就医路径分别记录本地区依据。"
+    },
+    {
+      "id": "A06",
+      "priority": "P2",
+      "claim_ids": [
+        "diet-1",
+        "diet-2",
+        "diet-3",
+        "differentials-3",
+        "prognosis_followup-1",
+        "prognosis_followup-2",
+        "prognosis_followup-3"
+      ],
+      "issue": "登记为explanation的部分实际上包含行动、风险或证据疗效边界。",
+      "resolution": "按真实语义拆分kind，不能降低为解释绕过双源要求；正文合理的否定条件应保留。"
+    },
+    {
+      "id": "A07",
+      "priority": "P2",
+      "claim_ids": [
+        "causes_risks-2",
+        "causes_risks-3",
+        "special_populations-3",
+        "complications-2",
+        "prevention-0"
+      ],
+      "issue": "部分风险关联、症状加重及预防边界超出所绑定段落或仅覆盖部分范围。",
+      "resolution": "依逐条说明补精确来源或收窄；缺证不等于结论为假。"
+    }
+  ],
+  "next_step": "作者修正指定主张或证据绑定后定向复核；已核实数字无需无依据反复重审。"
+}

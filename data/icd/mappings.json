@@ -374,5 +374,24 @@
     "status": "pending",
     "method": "normalized_exact_name",
     "rationale": "Name similarity only; clinical scope and leaf coverage remain unverified."
+  },
+  {
+    "condition_id": "obstructive-sleep-apnea",
+    "code": "7A41",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "18b33d26cb7b9a0e1755dfe94ce5ff2dfdd8fe6fce52ab09f8f93d8c3cc6d575",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "root editorial classification reviewer",
+      "checked_at": "2026-09-30",
+      "scope": "entire_leaf_category",
+      "rationale": "The frozen WHO 7A41 leaf is obstructive sleep apnoea, a recurrent sleep-related upper-airway obstruction. This article describes that mechanism, adult and child presentations, assessment/testing limits, airway/weight treatments, medicine population limits and follow-up across all 14 bilingual dimensions; it is not limited to a symptom or obesity-only presentation. Adult UK testing and US drug rules are explicitly scoped, not applied to children.",
+      "exclusions_considered": [
+        "Central sleep apnoea 7A40 has a different signaling mechanism and is a differential, not counted.",
+        "Sleep-related hypoventilation, isolated snoring, insomnia and obesity remain separate; links and mentions do not count as independent coverage.",
+        "No claim to cover entire chapter 07 or every sleep-disordered-breathing manifestation."
+      ]
+    }
   }
 ]
