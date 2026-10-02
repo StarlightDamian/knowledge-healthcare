@@ -44,14 +44,16 @@
   "sections": {
     "summary": {
       "text": {
-        "zh-CN": "脑卒中是脑部血管堵塞或破裂，导致脑组织迅速受损的急症。\n\n- 可能突然出现口角歪斜、一侧手臂无力或说话不清。\n- 也可能突然视力改变、走不稳或剧烈头痛。\n- 症状自行消失仍需紧急评估，不能据此排除危险。",
-        "en": "Stroke is an emergency in which a blocked or ruptured brain blood vessel rapidly injures brain tissue.\n\n- Sudden facial droop, weakness of one arm or slurred speech may occur.\n- Sudden vision changes, unsteadiness or severe headache are other possible signs.\n- Symptoms that disappear still need urgent assessment and do not rule out danger."
+        "zh-CN": "脑卒中是脑部血流阻断或血管破裂引起脑损伤的急症。本页帮助识别危险和了解分型流程；尚未分清缺血或出血时，不能自行套用某一种卒中的治疗。\n\n- 可能突然出现口角歪斜、一侧手臂无力或说话不清。\n\n- 也可能突然视力改变、走不稳或剧烈头痛。\n\n- 症状自行消失仍需紧急评估，不能据此排除危险。",
+        "en": "Stroke is an emergency caused by interrupted brain blood flow or a ruptured vessel. This entry explains recognition and classification; while the type is uncertain, treatment for one subtype cannot be applied automatically.\n\n- Sudden facial droop, weakness of one arm or slurred speech may occur.\n\n- Sudden vision changes, unsteadiness or severe headache are other possible signs.\n\n- Symptoms that disappear still need urgent assessment and do not rule out danger."
       },
       "source_ids": [
+        "neuro-mayo-stroke-treatment",
         "stroke-diagnosis-nhs",
+        "stroke-secondary",
         "stroke-symptoms-nhs"
       ],
-      "support_status": "pending_claim_verification"
+      "support_status": "verified"
     },
     "causes_risks": {
       "text": {
@@ -59,9 +61,11 @@
         "en": "Stroke types have different immediate causes.\n\n- Ischaemic stroke involves blocked blood flow, often by a clot; haemorrhagic stroke involves a ruptured vessel.\n- High blood pressure, diabetes, abnormal blood fats and smoking increase risk.\n- Atrial fibrillation is an irregular heart rhythm linked to clots; previous TIA or stroke also signals higher risk."
       },
       "source_ids": [
-        "stroke-causes-nhs"
+        "neuro-mayo-stroke-causes",
+        "stroke-causes-nhs",
+        "stroke-diagnosis-nhs"
       ],
-      "support_status": "pending_claim_verification"
+      "support_status": "verified"
     },
     "red_flags": {
       "text": {
@@ -69,9 +73,10 @@
         "en": "Suspected stroke requires immediate local emergency help.\n\n- Ask the person to smile, raise both arms and say a sentence; new asymmetry, weakness or speech change is concerning.\n- Sudden vision loss, loss of balance or unexplained severe headache also warrants emergency help.\n- Do not wait for every sign or cancel care because symptoms improve."
       },
       "source_ids": [
+        "stroke-secondary",
         "stroke-symptoms-nhs"
       ],
-      "support_status": "pending_claim_verification"
+      "support_status": "verified"
     },
     "care": {
       "text": {
@@ -79,9 +84,12 @@
         "en": "Rapid emergency care affects the treatments available.\n\n- Call an ambulance and do not let the person drive.\n- Record when symptoms began and tell responders if the timing is uncertain.\n- Provide medical history and medicines, especially anticoagulants, and follow dispatcher instructions."
       },
       "source_ids": [
-        "stroke-secondary"
+        "neuro-ischemic-e",
+        "neuro-mayo-stroke-treatment",
+        "stroke-secondary",
+        "stroke-symptoms-nhs"
       ],
-      "support_status": "pending_claim_verification"
+      "support_status": "verified"
     },
     "diagnosis": {
       "text": {
@@ -89,9 +97,11 @@
         "en": "Tests must rapidly distinguish a blockage from bleeding.\n\n- Brain CT or MRI helps identify type, location and extent.\n- Blood tests, an ECG and selected vessel ultrasound help investigate causes.\n- Facial appearance or symptom duration alone cannot reliably determine treatment."
       },
       "source_ids": [
+        "neuro-ischemic-e",
+        "neuro-mayo-stroke-treatment",
         "stroke-diagnosis-nhs"
       ],
-      "support_status": "pending_claim_verification"
+      "support_status": "verified"
     },
     "differentials": {
       "text": {
@@ -99,9 +109,12 @@
         "en": "Brief recovery does not exclude a vascular problem.\n\n- A transient ischaemic attack, or TIA, may resolve quickly but is a serious warning.\n- Ischaemic and haemorrhagic strokes can look similar and need imaging.\n- Other conditions can mimic stroke, but emergency clinicians should distinguish them rather than waiting at home."
       },
       "source_ids": [
+        "neuro-ischemic-e",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
         "stroke-diagnosis-nhs"
       ],
-      "support_status": "pending_claim_verification"
+      "support_status": "verified"
     },
     "treatment": {
       "text": {
@@ -109,30 +122,40 @@
         "en": "Acute treatment and rehabilitation have different jobs.\n\n- Selected blockages may receive clot-dissolving medicine or clot-removal procedures, depending on timing, imaging and risk.\n- Bleeding strokes may need stabilisation or surgery and cannot use the same medicine plan automatically.\n- Once stable, rehabilitation supports movement, speech and daily activities."
       },
       "source_ids": [
+        "neuro-cdc-stroke-treatment",
+        "neuro-mayo-stroke-treatment",
+        "stroke-recovery-nhs",
         "stroke-treatment-nhs"
       ],
-      "support_status": "pending_claim_verification"
+      "support_status": "verified"
     },
     "medications": {
       "text": {
-        "zh-CN": "药物必须匹配卒中类型和出血风险。\n\n- 不要自行用家中抗凝药或其他药物处理疑似新卒中，先急救评估。\n- 长期可能需要降压、降脂或针对特定病因的抗凝治疗，由团队选择。\n- 抗凝药可导致严重出血；黑便、呕血、无法止血或服药期间头部严重撞击，应立即求助。",
-        "en": "Medicines must match the stroke type and bleeding risk.\n\n- Do not self-treat suspected new stroke with stored anticoagulants or other medicines; seek emergency assessment.\n- Long-term care may include blood-pressure, cholesterol or cause-specific anticoagulant treatment chosen by the team.\n- Anticoagulants can cause serious bleeding; black stools, vomiting blood, bleeding that will not stop or a major head injury while taking them needs immediate help."
+        "zh-CN": "药物必须匹配卒中类型和出血风险。\n\n- 疑似新发卒中时，不要自行加服阿司匹林、库存抗凝药或所谓通血管药，应立即急救。阿司匹林可能加重出血性卒中；已开具的长期方案由急诊团队复核。\n\n- 长期可能需要降压、降脂或针对特定病因的抗凝治疗，由团队选择。\n\n- 抗凝药可导致严重出血；黑便、呕血、无法止血或服药期间头部严重撞击，应立即求助。",
+        "en": "Medicines must match the stroke type and bleeding risk.\n\n- For suspected new stroke, seek emergency care instead of adding aspirin, stored anticoagulants or purported circulation remedies. Aspirin can worsen a bleeding stroke; the emergency team reviews existing prescribed treatment.\n\n- Long-term care may include blood-pressure, cholesterol or cause-specific anticoagulant treatment chosen by the team.\n\n- Anticoagulants can cause serious bleeding; black stools, vomiting blood, bleeding that will not stop or a major head injury while taking them needs immediate help."
       },
       "source_ids": [
-        "stroke-treatment-nhs",
-        "anticoagulants-safety-nhs"
+        "anticoagulants-safety-nhs",
+        "neuro-asa-aspirin",
+        "neuro-cc-anticoagulants",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-sah-s",
+        "stroke-treatment-nhs"
       ],
-      "support_status": "pending_claim_verification"
+      "support_status": "verified"
     },
     "diet": {
       "text": {
-        "zh-CN": "饮食首先要保证吞咽安全。\n\n- 卒中后可能吞咽困难，出现吃喝时呛咳、进食困难应告诉团队。\n- 按吞咽评估建议选择食物和饮料质地；必要时需管饲，不能只靠强行喂水补充营养。\n- 恢复期兼顾足够营养和血管健康，具体方案由吞咽及营养状况决定。",
-        "en": "Safe swallowing comes first in nutrition.\n\n- Stroke can cause swallowing difficulty; report coughing or difficulty with food and drinks.\n- Use the food and drink textures advised after swallowing assessment; tube feeding may be needed instead of forcing fluids.\n- Recovery nutrition must balance adequate intake and vascular health, tailored to swallowing and nutritional status."
+        "zh-CN": "急性期先由受训人员评估吞咽安全，再决定能否经口进食、喝水或服药；不能用喂水来测试。\n\n- 卒中后可能吞咽困难，出现吃喝时呛咳、进食困难应告诉团队。\n\n- 按吞咽评估建议选择食物和饮料质地；必要时需管饲，不能只靠强行喂水补充营养。\n\n- 恢复期需检查营养与水分是否足够，并依吞咽能力调整食物；可向营养师咨询，不要因怕呛而长期吃喝不足。",
+        "en": "In the acute phase, trained staff assess swallowing before oral food, drink or medicines; do not test swallowing by giving water.\n\n- Stroke can cause swallowing difficulty; report coughing or difficulty with food and drinks.\n\n- Use the food and drink textures advised after swallowing assessment; tube feeding may be needed instead of forcing fluids.\n\n- Recovery care checks adequate nutrition and hydration and adjusts food to swallowing ability. Seek dietetic advice instead of remaining undernourished or dehydrated through fear of choking."
       },
       "source_ids": [
+        "neuro-canada-stroke-swallowing",
+        "neuro-sah-s",
         "stroke-eating-nhs"
       ],
-      "support_status": "pending_claim_verification"
+      "support_status": "verified"
     },
     "daily_care": {
       "text": {
@@ -140,9 +163,11 @@
         "en": "Rehabilitation should use achievable everyday tasks.\n\n- Practise movement, dressing and daily activities with goals adjusted by the team.\n- Speech, thinking, mood and fatigue deserve support alongside limb exercises.\n- Plan home aids, care support and return to work according to function."
       },
       "source_ids": [
+        "neuro-cdc-stroke-treatment",
+        "neuro-mayo-stroke-treatment",
         "stroke-recovery-nhs"
       ],
-      "support_status": "pending_claim_verification"
+      "support_status": "verified"
     },
     "special_populations": {
       "text": {
@@ -150,10 +175,14 @@
         "en": "Stroke can occur at any age.\n\n- Young age does not make sudden neurological symptoms safe to ignore.\n- Pregnancy-related hypertension, pre-eclampsia or the postpartum period also warrant urgent attention to stroke signs.\n- Rehabilitation for older people or those with disability should fit prior function, goals and available care."
       },
       "source_ids": [
+        "neuro-aha-pregnancy",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
         "stroke-causes-nhs",
-        "stroke-recovery-nhs"
+        "stroke-recovery-nhs",
+        "stroke-symptoms-nhs"
       ],
-      "support_status": "pending_claim_verification"
+      "support_status": "verified"
     },
     "prognosis_followup": {
       "text": {
@@ -161,9 +190,11 @@
         "en": "Recovery rates vary greatly.\n\n- Some improve over days or weeks; others need months or years of support.\n- Follow-up reviews blood pressure, medicines, recurrence risks and rehabilitation goals.\n- Swallowing, mood, cognition and care needs also need reassessment; persistent difficulties still deserve help."
       },
       "source_ids": [
+        "neuro-cdc-stroke-treatment",
+        "neuro-mayo-stroke-treatment",
         "stroke-recovery-nhs"
       ],
-      "support_status": "pending_claim_verification"
+      "support_status": "verified"
     },
     "complications": {
       "text": {
@@ -171,9 +202,13 @@
         "en": "Effects depend on the brain area and severity.\n\n- Weakness, walking difficulty and speech or understanding problems may persist.\n- Swallowing, memory, vision and bladder or bowel control can also be affected.\n- Low mood and fatigue may continue and need targeted rehabilitation and support."
       },
       "source_ids": [
+        "neuro-cdc-stroke-treatment",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-merck-ischemic",
         "stroke-recovery-nhs"
       ],
-      "support_status": "pending_claim_verification"
+      "support_status": "verified"
     },
     "prevention": {
       "text": {
@@ -181,27 +216,41 @@
         "en": "Prevention addresses vascular risks and another stroke.\n\n- Follow the plan for blood pressure, diabetes, blood fats and atrial fibrillation.\n- Stop smoking, build regular activity and use a suitable balanced diet.\n- Continue reviews and prescribed prevention medicines; new symptoms still require emergency help."
       },
       "source_ids": [
-        "stroke-causes-nhs"
+        "neuro-cdc-stroke-treatment",
+        "neuro-mayo-stroke-causes",
+        "stroke-causes-nhs",
+        "stroke-secondary"
       ],
-      "support_status": "pending_claim_verification"
+      "support_status": "verified"
     }
   },
   "source_ids": [
-    "stroke-nhs",
+    "anticoagulants-safety-nhs",
+    "neuro-aha-pregnancy",
+    "neuro-asa-aspirin",
+    "neuro-canada-stroke-swallowing",
+    "neuro-cc-anticoagulants",
+    "neuro-cdc-stroke-treatment",
+    "neuro-ischemic-e",
+    "neuro-mayo-stroke-causes",
+    "neuro-mayo-stroke-treatment",
+    "neuro-merck-ischemic",
+    "neuro-sah-s",
+    "stroke-causes-nhs",
+    "stroke-diagnosis-nhs",
+    "stroke-eating-nhs",
+    "stroke-recovery-nhs",
     "stroke-secondary",
     "stroke-symptoms-nhs",
-    "stroke-diagnosis-nhs",
-    "stroke-treatment-nhs",
-    "stroke-recovery-nhs",
-    "stroke-causes-nhs",
-    "anticoagulants-safety-nhs",
-    "stroke-eating-nhs"
+    "stroke-treatment-nhs"
   ],
   "related_ids": [
     "atrial-fibrillation",
     "dizziness",
     "heart-failure",
     "hypertension",
+    "intracerebral-hemorrhage",
+    "ischemic-stroke",
     "migraine"
   ],
   "tags": [
@@ -214,7 +263,7 @@
     "status": "editorial_draft",
     "reviewers": [],
     "medical_reviewed_at": null,
-    "editorial_updated_at": "2026-09-29",
+    "editorial_updated_at": "2026-10-03",
     "next_editorial_review_due": "2026-12-28"
   },
   "localizations": {
@@ -229,8 +278,8 @@
   },
   "evidence_certainty": "not_formally_graded",
   "limitations": {
-    "zh-CN": "原创简明医学信息草稿；所列来源是待逐项核对的参考依据，不表示完成系统综述、独立双源论证或医生审核。",
-    "en": "Original educational draft. Listed references await claim-level verification; no systematic review, independent dual-source confirmation or clinical sign-off is claimed."
+    "zh-CN": "用于卒中识别与分型导航的双语候选；逐项作者核对已记录，独立审核及医生签审未完成。不能以未分型名称决定用药。",
+    "en": "Bilingual recognition and subtype-navigation candidate with author claim checks recorded; independent review and clinician sign-off remain pending. The unclassified label does not determine medication."
   },
   "study_ids": [],
   "advanced_fields": {

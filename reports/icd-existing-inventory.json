@@ -1,6 +1,6 @@
 {
   "snapshot_sha256": "f1356588f40953a83e3af2b662deab47c5e269f944d1ea4ed0cfeb2007c7cd39",
-  "matching_method": "P0-03 adds 11 canonical articles and expands 8; independent content-bound leaf adjudications are separate from pending name proposals and title-only discovery. planned-126 merged into sudden-hearing-loss; unrelated causes do not inherit coverage.",
+  "matching_method": "P0-04 adds 5 canonical topics and expands 2 existing IDs; 0 exact title-only backlog matches merged. Only accepted content-bound leaf adjudications establish coverage; SAH is held. P0-03 batch history is retained unchanged.",
   "items": [
     {
       "kind": "condition",
@@ -185,6 +185,21 @@
         "BC81.3"
       ],
       "counts_as_qualified_coverage": false
+    },
+    {
+      "kind": "condition",
+      "id": "birth-asphyxia",
+      "names": {
+        "zh-CN": "出生窒息",
+        "en": "Birth asphyxia"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "KB21.0",
+        "KB21.1",
+        "KB21.Z"
+      ],
+      "counts_as_qualified_coverage": true
     },
     {
       "kind": "condition",
@@ -476,12 +491,16 @@
         "zh-CN": "异位妊娠",
         "en": "Ectopic pregnancy"
       },
-      "state": "full_article_evidence_and_mapping_incomplete",
+      "state": "qualified_article_with_confirmed_leaf_scope",
       "candidate_codes": [
         "JA01",
-        "JA01.1"
+        "JA01.0",
+        "JA01.1",
+        "JA01.2",
+        "JA01.Y",
+        "JA01.Z"
       ],
-      "counts_as_qualified_coverage": false
+      "counts_as_qualified_coverage": true
     },
     {
       "kind": "condition",
@@ -739,6 +758,34 @@
     },
     {
       "kind": "condition",
+      "id": "ischemic-stroke",
+      "names": {
+        "zh-CN": "缺血性脑卒中",
+        "en": "Ischemic stroke"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "8B11.0",
+        "8B11.1",
+        "8B11.20",
+        "8B11.21",
+        "8B11.22",
+        "8B11.2Y",
+        "8B11.2Z",
+        "8B11.3",
+        "8B11.40",
+        "8B11.41",
+        "8B11.42",
+        "8B11.43",
+        "8B11.44",
+        "8B11.50",
+        "8B11.51",
+        "8B11.5Z"
+      ],
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
       "id": "kidney-stones",
       "names": {
         "zh-CN": "肾与输尿管结石",
@@ -829,6 +876,19 @@
         "BA42.0",
         "BA42.1",
         "BA42.Z"
+      ],
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
+      "id": "neonatal-sepsis",
+      "names": {
+        "zh-CN": "胎儿及新生儿脓毒症",
+        "en": "Fetal and neonatal sepsis"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "KA60"
       ],
       "counts_as_qualified_coverage": true
     },
@@ -999,6 +1059,19 @@
     },
     {
       "kind": "condition",
+      "id": "puerperal-sepsis",
+      "names": {
+        "zh-CN": "产褥期脓毒症",
+        "en": "Puerperal sepsis"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "JB40.0"
+      ],
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
       "id": "pulmonary-embolism",
       "names": {
         "zh-CN": "肺栓塞（肺血栓栓塞）",
@@ -1137,14 +1210,34 @@
     },
     {
       "kind": "condition",
+      "id": "status-epilepticus",
+      "names": {
+        "zh-CN": "癫痫持续状态",
+        "en": "Status epilepticus"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "8A66.0",
+        "8A66.10",
+        "8A66.1Y",
+        "8A66.1Z",
+        "8A66.Y",
+        "8A66.Z"
+      ],
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
       "id": "stroke",
       "names": {
         "zh-CN": "脑卒中",
         "en": "Stroke"
       },
-      "state": "full_article_evidence_and_mapping_incomplete",
-      "candidate_codes": [],
-      "counts_as_qualified_coverage": false
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "8B20"
+      ],
+      "counts_as_qualified_coverage": true
     },
     {
       "kind": "condition",

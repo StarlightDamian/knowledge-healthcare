@@ -1,0 +1,955 @@
+{
+  "status": "authored_pending_independent_review",
+  "author": "/root/astra_neuro_finish",
+  "model": "gpt-6-astra",
+  "checked_at": "2026-10-03",
+  "medical_reviewed": false,
+  "baseline_commit": "f2c5cd8",
+  "topic_id": "ischemic-stroke",
+  "coverage_credit": 0,
+  "production_modified": false,
+  "mece": "Sixteen 8B11 leaves retain residual and unspecified branches without invented uniform treatment. 8B20 assigned to separate stroke navigation.",
+  "target": {
+    "body_canonical_sha256": "cb6d551c75627058a222d5702b716c7045e259b0cbcec09880f5c6af041cb873",
+    "records_canonical_sha256": "4e500f91720a5db32b468ba83b19a406a3f854414e3f6a45342ecdbf69c3a2d2",
+    "sources_canonical_sha256": "3deea5a684fc3f6075723e07bf7b5f9eb3307b3acc07bc044f1150685d32ae44"
+  },
+  "actual_source_reads": [
+    {
+      "source_id": "neuro-aha-disability",
+      "url": "https://professional.heart.org/en/science-news/endovascular-treatment-and-thrombolysis-for-ais-in-patients-with-premorbid-disability-or-dementia/Commentary",
+      "locator": "Shared benefit-risk decisions and evidence limitations",
+      "version": "2022",
+      "accessed_at": "2026-10-03",
+      "method": "Official commentary opened and indexed decision paragraph read; not full statement",
+      "independence": "Distinct authorship, overlapping upstream research possible. AHA/Mayo pages each one group; reviews are author synthesis, not NIH guidance."
+    },
+    {
+      "source_id": "neuro-aha-pregnancy",
+      "url": "https://newsroom.heart.org/news/stroke-prevention-and-treatment-during-and-after-pregnancy-are-key-to-womens-health",
+      "locator": "Official summary: immediate response and coordinated maternal stroke care",
+      "version": "2026-01-28",
+      "accessed_at": "2026-10-03",
+      "method": "Original official HTML opened and read",
+      "independence": "Distinct authorship, overlapping upstream research possible. AHA/Mayo pages each one group; reviews are author synthesis, not NIH guidance."
+    },
+    {
+      "source_id": "neuro-aha-secondary-full",
+      "url": "https://doi.org/10.1161/STR.0000000000000375",
+      "locator": "Aortic arch atheroma knowledge gaps; hypercoagulable states supportive text; fibromuscular dysplasia recommendations",
+      "version": "2021",
+      "accessed_at": "2026-10-03",
+      "method": "Original publisher indexed passages read; direct full-page retrieval failed",
+      "independence": "Distinct authorship, overlapping upstream research possible. AHA/Mayo pages each one group; reviews are author synthesis, not NIH guidance."
+    },
+    {
+      "source_id": "neuro-aps-nhs",
+      "url": "https://www.nhs.uk/conditions/antiphospholipid-syndrome/",
+      "locator": "Cause; stroke; diagnosis repeat antibodies; warfarin; additional monitoring",
+      "version": "2026-03-06",
+      "scope": "Disease-specific education; no individual drug dose or universal intervention threshold.",
+      "accessed_at": "2026-10-03",
+      "method": "Original institutional HTML or original PDF actually read in web tool; no full-text download saved.",
+      "independence": "Distinct author groups, not distinct underlying trials. All Mayo pages one group, all NHS national one group; Royal Berkshire local haematology authorship. ESO/AHA/Canadian overlap trials and consensus."
+    },
+    {
+      "source_id": "neuro-aps-rbft",
+      "url": "https://www.royalberkshire.nhs.uk/media/zzcfhoti/antiphospholipid-syndrome-aps-_oct25.pdf",
+      "locator": "pp1–2 definition; thrombosis/persistent antibodies; arterial/triple-positive warfarin preference",
+      "version": "2025-10 Haematology patient leaflet",
+      "scope": "Disease-specific education; no individual drug dose or universal intervention threshold.",
+      "accessed_at": "2026-10-03",
+      "method": "Original institutional HTML or original PDF actually read in web tool; no full-text download saved.",
+      "independence": "Distinct author groups, not distinct underlying trials. All Mayo pages one group, all NHS national one group; Royal Berkshire local haematology authorship. ESO/AHA/Canadian overlap trials and consensus."
+    },
+    {
+      "source_id": "neuro-bsh-thrombophilia",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9542828/",
+      "locator": "Ischaemic stroke except CVST; recommendations and testing limitations; acquired arterial thrombosis",
+      "version": "2022",
+      "accessed_at": "2026-10-03",
+      "method": "Original guideline indexed passages read; direct PMC browser-check prevented full-page reading",
+      "independence": "Distinct authorship, overlapping upstream research possible. AHA/Mayo pages each one group; reviews are author synthesis, not NIH guidance."
+    },
+    {
+      "source_id": "neuro-canada-stroke-swallowing",
+      "url": "https://www.strokebestpractices.ca/recommendations/stroke-rehabilitation-delivery/6-swallowing-nutrition-and-oral-care",
+      "locator": "6.1 swallowing and feeding; 6.2 nutrition; 6.3 oral health; rationale and evidence limitations",
+      "version": "2025 rehabilitation update",
+      "accessed_at": "2026-10-03",
+      "method": "Previously actually read official source in this author task; shared section reused, not independently accepted",
+      "independence": [
+        "Independent Canadian guideline authors; overlapping dysphagia systematic reviews with NICE/AHA."
+      ]
+    },
+    {
+      "source_id": "neuro-cc-fat",
+      "url": "https://my.clevelandclinic.org/health/diseases/23995-fat-embolism-syndrome",
+      "locator": "Causes; supportive care; oxygen/ventilation; fracture stabilization; limitations",
+      "version": "2022-07-31",
+      "accessed_at": "2026-10-03",
+      "method": "Original official HTML opened and read",
+      "independence": "Distinct authorship, overlapping upstream research possible. AHA/Mayo pages each one group; reviews are author synthesis, not NIH guidance."
+    },
+    {
+      "source_id": "neuro-cc-vasculitis",
+      "url": "https://my.clevelandclinic.org/health/diseases/cns-vasculitis",
+      "locator": "Causes; stroke; tests; immune treatment; follow-up and relapse",
+      "version": "2025-03-19",
+      "accessed_at": "2026-10-03",
+      "method": "Original official HTML opened and read",
+      "independence": "Distinct authorship, overlapping upstream research possible. AHA/Mayo pages each one group; reviews are author synthesis, not NIH guidance."
+    },
+    {
+      "source_id": "neuro-cdc-stroke-treatment",
+      "url": "https://www.cdc.gov/stroke/treatment/index.html",
+      "locator": "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation",
+      "source_version": "2024-05-15",
+      "population": "Patients with suspected or established stroke; source context retained.",
+      "region": "US",
+      "independence_group": "US-CDC",
+      "upstream_evidence": [
+        "Independent institutional authorship; shared research is possible, not independent trial evidence."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original HTML clinical paragraphs read"
+    },
+    {
+      "source_id": "neuro-embolic-mayo-causes",
+      "url": "https://www.mayoclinic.org/diseases-conditions/embolic-stroke/symptoms-causes/syc-20601259",
+      "locator": "Causes: cardiac/aortic sources, PFO, fat/air; prevention",
+      "version": "Current2026 page; references accessed April2026",
+      "scope": "Disease-specific education; no individual drug dose or universal intervention threshold.",
+      "accessed_at": "2026-10-03",
+      "method": "Original institutional HTML or original PDF actually read in web tool; no full-text download saved.",
+      "independence": "Distinct author groups, not distinct underlying trials. All Mayo pages one group, all NHS national one group; Royal Berkshire local haematology authorship. ESO/AHA/Canadian overlap trials and consensus."
+    },
+    {
+      "source_id": "neuro-embolic-mayo-treatment",
+      "url": "https://www.mayoclinic.org/diseases-conditions/embolic-stroke/diagnosis-treatment/drc-20601260",
+      "locator": "Brain/vessel/heart tests; PFO selection; fat supportive care; air oxygen/HBOT; rehabilitation",
+      "version": "Current2026 page; references accessed April2026",
+      "scope": "Disease-specific education; no individual drug dose or universal intervention threshold.",
+      "accessed_at": "2026-10-03",
+      "method": "Original institutional HTML or original PDF actually read in web tool; no full-text download saved.",
+      "independence": "Distinct author groups, not distinct underlying trials. All Mayo pages one group, all NHS national one group; Royal Berkshire local haematology authorship. ESO/AHA/Canadian overlap trials and consensus."
+    },
+    {
+      "source_id": "neuro-eso-lacunar-2024",
+      "url": "https://www.pure.ed.ac.uk/ws/portalfiles/portal/414331329/wardlaw-et-al-2024-european-stroke-organisation-_eso_-guideline-on-cerebral-small-vessel-disease-part-2-lacunar.pdf",
+      "locator": "PDF pp2–4 abstract, definition, clinical syndromes and diagnostic advice; no entire journal claimed read",
+      "version": "2024 DOI10.1177/23969873231219416; publisher version in author university repository",
+      "scope": "Disease-specific education; no individual drug dose or universal intervention threshold.",
+      "accessed_at": "2026-10-03",
+      "method": "Original institutional HTML or original PDF actually read in web tool; no full-text download saved.",
+      "independence": "Distinct author groups, not distinct underlying trials. All Mayo pages one group, all NHS national one group; Royal Berkshire local haematology authorship. ESO/AHA/Canadian overlap trials and consensus."
+    },
+    {
+      "source_id": "neuro-hopkins-vasculitis",
+      "url": "https://www.hopkinsvasculitis.org/vasculitis-treatments/",
+      "locator": "General principles: induction, maintenance, relapse and risks",
+      "version": "Undated live page",
+      "accessed_at": "2026-10-03",
+      "method": "Original official HTML opened and read",
+      "independence": "Distinct authorship, overlapping upstream research possible. AHA/Mayo pages each one group; reviews are author synthesis, not NIH guidance."
+    },
+    {
+      "source_id": "neuro-ischemic-a",
+      "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
+      "locator": "Items 1-10; official summary only, full guideline access unsuccessful",
+      "version": "2026-01-26",
+      "scope": "Adults and selected pediatric cases as explicitly stated",
+      "accessed_at": "2026-10-03",
+      "method": "Original official web page opened and clinical sections actually read",
+      "independence": "Distinct editorial authorship, overlapping trials and consensus. All Canadian pages one group; all AHA/ASA pages one group. Canadian/AHA share reperfusion trials and secondary prevention evidence. Cleveland cites ASA and clinical reviews; UHS is independently written hospital education. No assertion of independent primary trials."
+    },
+    {
+      "source_id": "neuro-ischemic-c",
+      "url": "https://www.strokebestpractices.ca/recommendations/secondary-prevention-of-stroke/cancer-associated-ischemic-stroke",
+      "locator": "11.1 standard workup; cancer mechanisms; clinical considerations",
+      "version": "2020 seventh edition",
+      "scope": "Active cancer with arterial ischemic stroke; not every hypercoagulable disorder",
+      "accessed_at": "2026-10-03",
+      "method": "Original official web page opened and clinical sections actually read",
+      "independence": "Distinct editorial authorship, overlapping trials and consensus. All Canadian pages one group; all AHA/ASA pages one group. Canadian/AHA share reperfusion trials and secondary prevention evidence. Cleveland cites ASA and clinical reviews; UHS is independently written hospital education. No assertion of independent primary trials."
+    },
+    {
+      "source_id": "neuro-ischemic-d",
+      "url": "https://professional.heart.org/en/science-news/treatment-and-outcomes-of-cervical-artery-dissection-in-adults/top-things-to-know",
+      "locator": "Items 2-5 mechanisms/symptoms/tests; 8-10 treatment and follow-up",
+      "version": "2024-02-01",
+      "scope": "Adults with cervical artery dissection; not intracranial dissection guideline",
+      "accessed_at": "2026-10-03",
+      "method": "Original official web page opened and clinical sections actually read",
+      "independence": "Distinct editorial authorship, overlapping trials and consensus. All Canadian pages one group; all AHA/ASA pages one group. Canadian/AHA share reperfusion trials and secondary prevention evidence. Cleveland cites ASA and clinical reviews; UHS is independently written hospital education. No assertion of independent primary trials."
+    },
+    {
+      "source_id": "neuro-ischemic-e",
+      "url": "https://www.strokebestpractices.ca/recommendations/acute-stroke-management/emergency-department-evaluation-and-management",
+      "locator": "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing",
+      "version": "2022 seventh edition",
+      "scope": "Adults with ischemic stroke; precise exceptions noted in claims",
+      "accessed_at": "2026-10-03",
+      "method": "Original official web page opened and clinical sections actually read",
+      "independence": "Distinct editorial authorship, overlapping trials and consensus. All Canadian pages one group; all AHA/ASA pages one group. Canadian/AHA share reperfusion trials and secondary prevention evidence. Cleveland cites ASA and clinical reviews; UHS is independently written hospital education. No assertion of independent primary trials."
+    },
+    {
+      "source_id": "neuro-ischemic-g",
+      "url": "https://www.stroke.org/en/about-stroke/types-of-stroke/ischemic-stroke-clots",
+      "locator": "Definition; cerebral thrombosis and embolism",
+      "version": "Undated current page",
+      "scope": "Adults with ischemic stroke; precise exceptions noted in claims",
+      "accessed_at": "2026-10-03",
+      "method": "Original official web page opened and clinical sections actually read",
+      "independence": "Distinct editorial authorship, overlapping trials and consensus. All Canadian pages one group; all AHA/ASA pages one group. Canadian/AHA share reperfusion trials and secondary prevention evidence. Cleveland cites ASA and clinical reviews; UHS is independently written hospital education. No assertion of independent primary trials."
+    },
+    {
+      "source_id": "neuro-ischemic-k",
+      "url": "https://www.strokebestpractices.ca/recommendations/secondary-prevention-of-stroke/cardiac-issues-in-individuals-with-stroke",
+      "locator": "10.1 PFO; 10.2 aortic arch; 10.3 cardiac thrombus and low EF; rationale",
+      "version": "2020 seventh edition",
+      "scope": "Adults with ischemic stroke; precise exceptions noted in claims",
+      "accessed_at": "2026-10-03",
+      "method": "Original official web page opened and clinical sections actually read",
+      "independence": "Distinct editorial authorship, overlapping trials and consensus. All Canadian pages one group; all AHA/ASA pages one group. Canadian/AHA share reperfusion trials and secondary prevention evidence. Cleveland cites ASA and clinical reviews; UHS is independently written hospital education. No assertion of independent primary trials."
+    },
+    {
+      "source_id": "neuro-ischemic-l",
+      "url": "https://my.clevelandclinic.org/health/diseases/lacunar-stroke",
+      "locator": "Definition; functional impact; rehabilitation; recovery; prevention",
+      "version": "2024-11-25",
+      "scope": "Small deep infarcts; inaccurate generalized symptom/drug suggestions and old four-hour cutoff not copied",
+      "accessed_at": "2026-10-03",
+      "method": "Original official web page opened and clinical sections actually read",
+      "independence": "Distinct editorial authorship, overlapping trials and consensus. All Canadian pages one group; all AHA/ASA pages one group. Canadian/AHA share reperfusion trials and secondary prevention evidence. Cleveland cites ASA and clinical reviews; UHS is independently written hospital education. No assertion of independent primary trials."
+    },
+    {
+      "source_id": "neuro-ischemic-p",
+      "url": "https://professional.heart.org/en/science-news/2021-guideline-for-the-prevention-of-stroke-in-patients-with-stroke-and-transient-ischemic-attack/top-things-to-know",
+      "locator": "Items 1-10; etiology, risk factors, medicines, AF, carotid, intracranial, PFO and ESUS",
+      "version": "2021-05-24",
+      "scope": "Adults with ischemic stroke; precise exceptions noted in claims",
+      "accessed_at": "2026-10-03",
+      "method": "Original official web page opened and clinical sections actually read",
+      "independence": "Distinct editorial authorship, overlapping trials and consensus. All Canadian pages one group; all AHA/ASA pages one group. Canadian/AHA share reperfusion trials and secondary prevention evidence. Cleveland cites ASA and clinical reviews; UHS is independently written hospital education. No assertion of independent primary trials."
+    },
+    {
+      "source_id": "neuro-ischemic-t",
+      "url": "https://www.strokebestpractices.ca/recommendations/acute-stroke-management/acute-ischemic-stroke-treatment",
+      "locator": "5.1 selection; 5.2 thrombolysis; 5.4 2025 EVT; clinical considerations including pregnancy, disability and anticoagulants",
+      "version": "2022 plus 2025 EVT update",
+      "scope": "Adults with ischemic stroke; precise exceptions noted in claims",
+      "accessed_at": "2026-10-03",
+      "method": "Original official web page opened and clinical sections actually read",
+      "independence": "Distinct editorial authorship, overlapping trials and consensus. All Canadian pages one group; all AHA/ASA pages one group. Canadian/AHA share reperfusion trials and secondary prevention evidence. Cleveland cites ASA and clinical reviews; UHS is independently written hospital education. No assertion of independent primary trials."
+    },
+    {
+      "source_id": "neuro-ischemic-u",
+      "url": "https://www.uhs.nhs.uk/departments/brain-spine-and-nerves/wessex-neurological-centre/neurology/stroke-services/definitions-symptoms-and-causes-of-stroke-and-tia",
+      "locator": "Causes; AF mechanism and rhythm monitoring ONLY",
+      "version": "Undated current page",
+      "scope": "Cause education; older time-based TIA definition and delayed triage NOT used",
+      "accessed_at": "2026-10-03",
+      "method": "Original official web page opened and clinical sections actually read",
+      "independence": "Distinct editorial authorship, overlapping trials and consensus. All Canadian pages one group; all AHA/ASA pages one group. Canadian/AHA share reperfusion trials and secondary prevention evidence. Cleveland cites ASA and clinical reviews; UHS is independently written hospital education. No assertion of independent primary trials."
+    },
+    {
+      "source_id": "neuro-ischemic-v",
+      "url": "https://www.strokebestpractices.ca/recommendations/secondary-prevention-of-stroke/management-of-extracranial-carotid-disease-and-intracranial-atherosclerosis",
+      "locator": "9.1 carotid; 9.3 vertebral; 9.4 intracranial stenosis; 9.5 dissection; CADISS/SAMMPRIS evidence",
+      "version": "2020 seventh edition",
+      "scope": "Adults with ischemic stroke; precise exceptions noted in claims",
+      "accessed_at": "2026-10-03",
+      "method": "Original official web page opened and clinical sections actually read",
+      "independence": "Distinct editorial authorship, overlapping trials and consensus. All Canadian pages one group; all AHA/ASA pages one group. Canadian/AHA share reperfusion trials and secondary prevention evidence. Cleveland cites ASA and clinical reviews; UHS is independently written hospital education. No assertion of independent primary trials."
+    },
+    {
+      "source_id": "neuro-mayo-fmd",
+      "url": "https://www.mayoclinic.org/diseases-conditions/fibromuscular-dysplasia/diagnosis-treatment/drc-20352150",
+      "locator": "Imaging; conditional BP and aspirin treatment; repeat imaging",
+      "version": "2023-07-28",
+      "accessed_at": "2026-10-03",
+      "method": "Original official indexed clinical page text read",
+      "independence": "Distinct authorship, overlapping upstream research possible. AHA/Mayo pages each one group; reviews are author synthesis, not NIH guidance."
+    },
+    {
+      "source_id": "neuro-mayo-stroke-causes",
+      "url": "https://www.mayoclinic.org/diseases-conditions/stroke/symptoms-causes/syc-20350113",
+      "locator": "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy",
+      "version": "Live page read 2026-10-03",
+      "accessed_at": "2026-10-03",
+      "method": "Previously actually read official source in this author task; shared section reused, not independently accepted",
+      "independence": [
+        "Independent editorial authorship; standard stroke evidence may overlap."
+      ]
+    },
+    {
+      "source_id": "neuro-mayo-stroke-treatment",
+      "url": "https://www.mayoclinic.org/diseases-conditions/stroke/diagnosis-treatment/drc-20350119",
+      "locator": "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+      "version": "Live page read 2026-10-03; exact review date not established",
+      "scope": "General stroke patient education; subtype conditions retained",
+      "accessed_at": "2026-10-03",
+      "method": "Original official web page opened and clinical sections actually read",
+      "independence": "Distinct editorial authorship, overlapping trials and consensus. All Canadian pages one group; all AHA/ASA pages one group. Canadian/AHA share reperfusion trials and secondary prevention evidence. Cleveland cites ASA and clinical reviews; UHS is independently written hospital education. No assertion of independent primary trials."
+    },
+    {
+      "source_id": "neuro-merck-gas",
+      "url": "https://www.merckmanuals.com/professional/injuries-poisoning/injury-during-diving-or-work-in-compressed-air/arterial-gas-embolism",
+      "locator": "Treatment: oxygen and urgent recompression; diving-specific scope retained",
+      "version": "Current page, references include 2025",
+      "accessed_at": "2026-10-03",
+      "method": "Original official HTML opened and read",
+      "independence": "Distinct authorship, overlapping upstream research possible. AHA/Mayo pages each one group; reviews are author synthesis, not NIH guidance."
+    },
+    {
+      "source_id": "neuro-merck-ischemic",
+      "url": "https://www.merckmanuals.com/professional/neurologic-disorders/stroke/ischemic-stroke",
+      "locator": "Etiology: cardiac/paradoxical/fat/air, lacunar, low perfusion, other causes; Diagnosis and mimics; Symptoms and Signs table 183-187 independently reread 2026-10-03 for vision",
+      "version": "2026-01 update; Alexandrov/Krishnaiah, peer reviewer Levin",
+      "scope": "Disease-specific education; no individual drug dose or universal intervention threshold.",
+      "accessed_at": "2026-10-03",
+      "method": "Original institutional HTML or original PDF actually read in web tool; no full-text download saved.",
+      "independence": "Distinct author groups, not distinct underlying trials. All Mayo pages one group, all NHS national one group; Royal Berkshire local haematology authorship. ESO/AHA/Canadian overlap trials and consensus."
+    },
+    {
+      "source_id": "neuro-moyamoya-hopkins",
+      "url": "https://www.hopkinsmedicine.org/health/conditions-and-diseases/moyamoya-disease",
+      "locator": "Definition; symptoms; diagnosis; medicine and revascularization; recovery",
+      "version": "Undated current page",
+      "scope": "Disease-specific education; no individual drug dose or universal intervention threshold.",
+      "accessed_at": "2026-10-03",
+      "method": "Original institutional HTML or original PDF actually read in web tool; no full-text download saved.",
+      "independence": "Distinct author groups, not distinct underlying trials. All Mayo pages one group, all NHS national one group; Royal Berkshire local haematology authorship. ESO/AHA/Canadian overlap trials and consensus."
+    },
+    {
+      "source_id": "neuro-moyamoya-mayo",
+      "url": "https://www.mayoclinic.org/diseases-conditions/moyamoya-disease/diagnosis-treatment/drc-20355591?lang=en&p=1",
+      "locator": "MRI/MRA perfusion/angiography; medicines; direct/indirect revascularization; rehabilitation",
+      "version": "Current page, printed version",
+      "scope": "Disease-specific education; no individual drug dose or universal intervention threshold.",
+      "accessed_at": "2026-10-03",
+      "method": "Original institutional HTML or original PDF actually read in web tool; no full-text download saved.",
+      "independence": "Distinct author groups, not distinct underlying trials. All Mayo pages one group, all NHS national one group; Royal Berkshire local haematology authorship. ESO/AHA/Canadian overlap trials and consensus."
+    },
+    {
+      "source_id": "neuro-sah-a",
+      "url": "https://professional.heart.org/en/science-news/2023-guideline-for-the-management-of-patients-with-aneurysmal-subarachnoid-hemorrhage/top-things-to-know",
+      "version": "2023-05-22",
+      "locator": "Items 1-10; official summary, not full guideline",
+      "accessed_at": "2026-10-03",
+      "method": "Original official page read through web; NICE original HTML through urllib after web access failed. ICH guideline original PDF previously read in memory.",
+      "scope": "Aneurysmal SAH",
+      "independence": "Separate editorial bodies, not independent trial replications. AHA/NICE overlap in clinical literature. Mayo cites AHA 2012, textbooks and UpToDate. OUH links NHS; CUH cites Flaherty 2005. UK trusts are distinct authors, with related NHS service context."
+    },
+    {
+      "source_id": "neuro-sah-n",
+      "url": "https://www.nice.org.uk/guidance/ng228/chapter/Recommendations",
+      "version": "2022 NG228",
+      "locator": "1.1 diagnosis; 1.2 treatment; 1.3 complications; 1.4 follow-up; 1.5 information",
+      "accessed_at": "2026-10-03",
+      "method": "Original official page read through web; NICE original HTML through urllib after web access failed. ICH guideline original PDF previously read in memory.",
+      "scope": "Age 16 and over; suspected SAH, then aneurysmal treatment",
+      "independence": "Separate editorial bodies, not independent trial replications. AHA/NICE overlap in clinical literature. Mayo cites AHA 2012, textbooks and UpToDate. OUH links NHS; CUH cites Flaherty 2005. UK trusts are distinct authors, with related NHS service context."
+    },
+    {
+      "source_id": "neuro-sah-s",
+      "url": "https://www.nice.org.uk/guidance/ng128/chapter/recommendations",
+      "locator": "1.6.1-1.6.11 swallowing/nutrition; 1.8.1 aspiration avoidance; NG128 1.4.9 and 1.4.12 actually read via official indexed text 2026-10-03",
+      "version": "NG128; swallowing recommendations 2008, amended 2019",
+      "accessed_at": "2026-10-03",
+      "method": "Previously actually read official source in this author task; shared section reused, not independently accepted",
+      "independence": [
+        "Separate editorial bodies, not independent trial replications. AHA/NICE overlap in clinical literature. Mayo cites AHA 2012, textbooks and UpToDate. OUH links NHS; CUH cites Flaherty 2005. UK trusts are distinct authors, with related NHS service context."
+      ]
+    },
+    {
+      "source_id": "neuro-watershed-review",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10478671/",
+      "locator": "Abstract; pathophysiology; clinical aspects; management; older treatment-window numbers not reused",
+      "version": "2023",
+      "accessed_at": "2026-10-03",
+      "method": "Original author article indexed passages read; direct PMC browser-check prevented full-page reading",
+      "independence": "Distinct authorship, overlapping upstream research possible. AHA/Mayo pages each one group; reviews are author synthesis, not NIH guidance."
+    },
+    {
+      "source_id": "stroke-recovery-nhs",
+      "url": "https://www.nhs.uk/conditions/stroke/recovery/",
+      "locator": "Movement, cognition, speech, swallowing, mood, bladder/bowel, discharge support and reviews",
+      "version": "2024-09-12",
+      "accessed_at": "2026-10-03",
+      "method": "Previously actually read official source in this author task; shared section reused, not independently accepted",
+      "independence": [
+        "Independent editorial authorship; standard stroke evidence may overlap."
+      ]
+    },
+    {
+      "source_id": "stroke-symptoms-nhs",
+      "url": "https://www.nhs.uk/conditions/stroke/symptoms/",
+      "locator": "Symptoms; immediate emergency action; no driving",
+      "version": "2024-09-12",
+      "scope": "General stroke patient education; subtype conditions retained",
+      "accessed_at": "2026-10-03",
+      "method": "Original official web page opened and clinical sections actually read",
+      "independence": "Distinct editorial authorship, overlapping trials and consensus. All Canadian pages one group; all AHA/ASA pages one group. Canadian/AHA share reperfusion trials and secondary prevention evidence. Cleveland cites ASA and clinical reviews; UHS is independently written hospital education. No assertion of independent primary trials."
+    }
+  ],
+  "category_decisions": [
+    {
+      "code": "8B11.0",
+      "title": "'- - - - Cerebral ischaemic stroke due to extracranial large artery atherosclerosis",
+      "status": "candidate_pending_review",
+      "difference": "Extracranial plaque; selected CEA/stent evaluation",
+      "section_applicability": {
+        "summary": "Extracranial plaque; selected CEA/stent evaluation",
+        "causes_risks": "Extracranial plaque; selected CEA/stent evaluation",
+        "care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diagnosis": "Extracranial plaque; selected CEA/stent evaluation",
+        "differentials": "Extracranial plaque; selected CEA/stent evaluation",
+        "treatment": "Extracranial plaque; selected CEA/stent evaluation",
+        "medications": "Extracranial plaque; selected CEA/stent evaluation",
+        "special_populations": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prevention": "Extracranial plaque; selected CEA/stent evaluation",
+        "red_flags": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "daily_care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prognosis_followup": "Extracranial plaque; selected CEA/stent evaluation",
+        "complications": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diet": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized."
+      },
+      "exclusions_considered": [
+        "TIA without infarction",
+        "hemorrhagic stroke",
+        "venous thrombosis",
+        "traumatic brain injury"
+      ],
+      "remaining": [
+        "Independent bilingual claim and leaf review."
+      ]
+    },
+    {
+      "code": "8B11.1",
+      "title": "'- - - - Cerebral ischaemic stroke due to intracranial large artery atherosclerosis",
+      "status": "candidate_pending_review",
+      "difference": "Intracranial plaque; medical-first prevention",
+      "section_applicability": {
+        "summary": "Intracranial plaque; medical-first prevention",
+        "causes_risks": "Intracranial plaque; medical-first prevention",
+        "care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diagnosis": "Intracranial plaque; medical-first prevention",
+        "differentials": "Intracranial plaque; medical-first prevention",
+        "treatment": "Intracranial plaque; medical-first prevention",
+        "medications": "Intracranial plaque; medical-first prevention",
+        "special_populations": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prevention": "Intracranial plaque; medical-first prevention",
+        "red_flags": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "daily_care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prognosis_followup": "Intracranial plaque; medical-first prevention",
+        "complications": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diet": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized."
+      },
+      "exclusions_considered": [
+        "TIA without infarction",
+        "hemorrhagic stroke",
+        "venous thrombosis",
+        "traumatic brain injury"
+      ],
+      "remaining": [
+        "Independent bilingual claim and leaf review."
+      ]
+    },
+    {
+      "code": "8B11.20",
+      "title": "'- - - - - Cerebral ischaemic stroke due to cardiac embolism",
+      "status": "candidate_pending_review",
+      "difference": "Cardiac embolism/AF; rhythm and echo; cause-specific anticoagulation",
+      "section_applicability": {
+        "summary": "Cardiac embolism/AF; rhythm and echo; cause-specific anticoagulation",
+        "causes_risks": "Cardiac embolism/AF; rhythm and echo; cause-specific anticoagulation",
+        "care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diagnosis": "Cardiac embolism/AF; rhythm and echo; cause-specific anticoagulation",
+        "differentials": "Cardiac embolism/AF; rhythm and echo; cause-specific anticoagulation",
+        "treatment": "Cardiac embolism/AF; rhythm and echo; cause-specific anticoagulation",
+        "medications": "Cardiac embolism/AF; rhythm and echo; cause-specific anticoagulation",
+        "special_populations": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prevention": "Cardiac embolism/AF; rhythm and echo; cause-specific anticoagulation",
+        "red_flags": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "daily_care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prognosis_followup": "Cardiac embolism/AF; rhythm and echo; cause-specific anticoagulation",
+        "complications": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diet": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized."
+      },
+      "exclusions_considered": [
+        "TIA without infarction",
+        "hemorrhagic stroke",
+        "venous thrombosis",
+        "traumatic brain injury"
+      ],
+      "remaining": [
+        "Independent bilingual claim and leaf review."
+      ]
+    },
+    {
+      "code": "8B11.21",
+      "title": "'- - - - - Cerebral ischaemic stroke due to aortic arch embolism",
+      "status": "candidate_pending_review",
+      "difference": "Arch plaque mechanism and individualized prevention; no automatic AF anticoagulation.",
+      "section_applicability": {
+        "summary": "Arch plaque mechanism and individualized prevention; no automatic AF anticoagulation.",
+        "causes_risks": "Arch plaque mechanism and individualized prevention; no automatic AF anticoagulation.",
+        "care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diagnosis": "Arch plaque mechanism and individualized prevention; no automatic AF anticoagulation.",
+        "differentials": "Arch plaque mechanism and individualized prevention; no automatic AF anticoagulation.",
+        "treatment": "Arch plaque mechanism and individualized prevention; no automatic AF anticoagulation.",
+        "medications": "Arch plaque mechanism and individualized prevention; no automatic AF anticoagulation.",
+        "special_populations": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prevention": "Arch plaque mechanism and individualized prevention; no automatic AF anticoagulation.",
+        "red_flags": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "daily_care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prognosis_followup": "Arch plaque mechanism and individualized prevention; no automatic AF anticoagulation.",
+        "complications": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diet": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized."
+      },
+      "exclusions_considered": [
+        "TIA without infarction",
+        "hemorrhagic stroke",
+        "venous thrombosis",
+        "traumatic brain injury"
+      ],
+      "remaining": [
+        "Independent bilingual claim and leaf review."
+      ]
+    },
+    {
+      "code": "8B11.22",
+      "title": "'- - - - - Cerebral ischaemic stroke due to paradoxical embolism",
+      "status": "candidate_pending_review",
+      "difference": "Venous-to-arterial crossing; PFO attribution and selected closure.",
+      "section_applicability": {
+        "summary": "Venous-to-arterial crossing; PFO attribution and selected closure.",
+        "causes_risks": "Venous-to-arterial crossing; PFO attribution and selected closure.",
+        "care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diagnosis": "Venous-to-arterial crossing; PFO attribution and selected closure.",
+        "differentials": "Venous-to-arterial crossing; PFO attribution and selected closure.",
+        "treatment": "Venous-to-arterial crossing; PFO attribution and selected closure.",
+        "medications": "Venous-to-arterial crossing; PFO attribution and selected closure.",
+        "special_populations": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prevention": "Venous-to-arterial crossing; PFO attribution and selected closure.",
+        "red_flags": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "daily_care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prognosis_followup": "Venous-to-arterial crossing; PFO attribution and selected closure.",
+        "complications": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diet": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized."
+      },
+      "exclusions_considered": [
+        "TIA without infarction",
+        "hemorrhagic stroke",
+        "venous thrombosis",
+        "traumatic brain injury"
+      ],
+      "remaining": [
+        "Independent bilingual claim and leaf review."
+      ]
+    },
+    {
+      "code": "8B11.2Y",
+      "title": "'- - - - - Cerebral ischaemic stroke due to other specified embolic occlusion",
+      "status": "candidate_pending_review",
+      "difference": "Specified fat/air emboli, procedural/injury history, supportive versus oxygen/recompression treatment; not ESUS.",
+      "section_applicability": {
+        "summary": "Specified fat/air emboli, procedural/injury history, supportive versus oxygen/recompression treatment; not ESUS.",
+        "causes_risks": "Specified fat/air emboli, procedural/injury history, supportive versus oxygen/recompression treatment; not ESUS.",
+        "care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diagnosis": "Specified fat/air emboli, procedural/injury history, supportive versus oxygen/recompression treatment; not ESUS.",
+        "differentials": "Specified fat/air emboli, procedural/injury history, supportive versus oxygen/recompression treatment; not ESUS.",
+        "treatment": "Specified fat/air emboli, procedural/injury history, supportive versus oxygen/recompression treatment; not ESUS.",
+        "medications": "Specified fat/air emboli, procedural/injury history, supportive versus oxygen/recompression treatment; not ESUS.",
+        "special_populations": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prevention": "Specified fat/air emboli, procedural/injury history, supportive versus oxygen/recompression treatment; not ESUS.",
+        "red_flags": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "daily_care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prognosis_followup": "Specified fat/air emboli, procedural/injury history, supportive versus oxygen/recompression treatment; not ESUS.",
+        "complications": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diet": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized."
+      },
+      "exclusions_considered": [
+        "TIA without infarction",
+        "hemorrhagic stroke",
+        "venous thrombosis",
+        "traumatic brain injury"
+      ],
+      "remaining": [
+        "Independent bilingual claim and leaf review."
+      ]
+    },
+    {
+      "code": "8B11.2Z",
+      "title": "'- - - - - Cerebral ischaemic stroke due to embolic occlusion, unspecified",
+      "status": "candidate_pending_review",
+      "difference": "Embolic mechanism but unspecified source; ongoing work-up, no automatic empiric anticoagulation.",
+      "section_applicability": {
+        "summary": "Embolic mechanism but unspecified source; ongoing work-up, no automatic empiric anticoagulation.",
+        "causes_risks": "Embolic mechanism but unspecified source; ongoing work-up, no automatic empiric anticoagulation.",
+        "care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diagnosis": "Embolic mechanism but unspecified source; ongoing work-up, no automatic empiric anticoagulation.",
+        "differentials": "Embolic mechanism but unspecified source; ongoing work-up, no automatic empiric anticoagulation.",
+        "treatment": "Embolic mechanism but unspecified source; ongoing work-up, no automatic empiric anticoagulation.",
+        "medications": "Embolic mechanism but unspecified source; ongoing work-up, no automatic empiric anticoagulation.",
+        "special_populations": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prevention": "Embolic mechanism but unspecified source; ongoing work-up, no automatic empiric anticoagulation.",
+        "red_flags": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "daily_care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prognosis_followup": "Embolic mechanism but unspecified source; ongoing work-up, no automatic empiric anticoagulation.",
+        "complications": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diet": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized."
+      },
+      "exclusions_considered": [
+        "TIA without infarction",
+        "hemorrhagic stroke",
+        "venous thrombosis",
+        "traumatic brain injury"
+      ],
+      "remaining": [
+        "Independent bilingual claim and leaf review."
+      ]
+    },
+    {
+      "code": "8B11.3",
+      "title": "'- - - - Cerebral ischaemic stroke due to small artery occlusion",
+      "status": "candidate_pending_review",
+      "difference": "Small-vessel deep patterns/MRI; acute eligibility and antiplatelet/risk management prevention.",
+      "section_applicability": {
+        "summary": "Small-vessel deep patterns/MRI; acute eligibility and antiplatelet/risk management prevention.",
+        "causes_risks": "Small-vessel deep patterns/MRI; acute eligibility and antiplatelet/risk management prevention.",
+        "care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diagnosis": "Small-vessel deep patterns/MRI; acute eligibility and antiplatelet/risk management prevention.",
+        "differentials": "Small-vessel deep patterns/MRI; acute eligibility and antiplatelet/risk management prevention.",
+        "treatment": "Small-vessel deep patterns/MRI; acute eligibility and antiplatelet/risk management prevention.",
+        "medications": "Small-vessel deep patterns/MRI; acute eligibility and antiplatelet/risk management prevention.",
+        "special_populations": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prevention": "Small-vessel deep patterns/MRI; acute eligibility and antiplatelet/risk management prevention.",
+        "red_flags": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "daily_care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prognosis_followup": "Small-vessel deep patterns/MRI; acute eligibility and antiplatelet/risk management prevention.",
+        "complications": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diet": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized."
+      },
+      "exclusions_considered": [
+        "TIA without infarction",
+        "hemorrhagic stroke",
+        "venous thrombosis",
+        "traumatic brain injury"
+      ],
+      "remaining": [
+        "Independent bilingual claim and leaf review."
+      ]
+    },
+    {
+      "code": "8B11.40",
+      "title": "'- - - - - Cerebral ischaemic stroke due to global hypoperfusion with watershed infarct",
+      "status": "candidate_pending_review",
+      "difference": "Global low flow/watershed injury; circulation and vascular assessment, cautious acute BP handling.",
+      "section_applicability": {
+        "summary": "Global low flow/watershed injury; circulation and vascular assessment, cautious acute BP handling.",
+        "causes_risks": "Global low flow/watershed injury; circulation and vascular assessment, cautious acute BP handling.",
+        "care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diagnosis": "Global low flow/watershed injury; circulation and vascular assessment, cautious acute BP handling.",
+        "differentials": "Global low flow/watershed injury; circulation and vascular assessment, cautious acute BP handling.",
+        "treatment": "Global low flow/watershed injury; circulation and vascular assessment, cautious acute BP handling.",
+        "medications": "Global low flow/watershed injury; circulation and vascular assessment, cautious acute BP handling.",
+        "special_populations": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prevention": "Global low flow/watershed injury; circulation and vascular assessment, cautious acute BP handling.",
+        "red_flags": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "daily_care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prognosis_followup": "Global low flow/watershed injury; circulation and vascular assessment, cautious acute BP handling.",
+        "complications": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diet": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized."
+      },
+      "exclusions_considered": [
+        "TIA without infarction",
+        "hemorrhagic stroke",
+        "venous thrombosis",
+        "traumatic brain injury"
+      ],
+      "remaining": [
+        "Independent bilingual claim and leaf review."
+      ]
+    },
+    {
+      "code": "8B11.41",
+      "title": "'- - - - - Cerebral ischaemic stroke due to other non-atherosclerotic arteriopathy",
+      "status": "candidate_pending_review",
+      "difference": "Non-atherosclerotic mechanisms: moyamoya revascularization, immune vasculitis treatment, FMD conditional prevention. Separately classified dissection kept distinct.",
+      "section_applicability": {
+        "summary": "Non-atherosclerotic mechanisms: moyamoya revascularization, immune vasculitis treatment, FMD conditional prevention. Separately classified dissection kept distinct.",
+        "causes_risks": "Non-atherosclerotic mechanisms: moyamoya revascularization, immune vasculitis treatment, FMD conditional prevention. Separately classified dissection kept distinct.",
+        "care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diagnosis": "Non-atherosclerotic mechanisms: moyamoya revascularization, immune vasculitis treatment, FMD conditional prevention. Separately classified dissection kept distinct.",
+        "differentials": "Non-atherosclerotic mechanisms: moyamoya revascularization, immune vasculitis treatment, FMD conditional prevention. Separately classified dissection kept distinct.",
+        "treatment": "Non-atherosclerotic mechanisms: moyamoya revascularization, immune vasculitis treatment, FMD conditional prevention. Separately classified dissection kept distinct.",
+        "medications": "Non-atherosclerotic mechanisms: moyamoya revascularization, immune vasculitis treatment, FMD conditional prevention. Separately classified dissection kept distinct.",
+        "special_populations": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prevention": "Non-atherosclerotic mechanisms: moyamoya revascularization, immune vasculitis treatment, FMD conditional prevention. Separately classified dissection kept distinct.",
+        "red_flags": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "daily_care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prognosis_followup": "Non-atherosclerotic mechanisms: moyamoya revascularization, immune vasculitis treatment, FMD conditional prevention. Separately classified dissection kept distinct.",
+        "complications": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diet": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized."
+      },
+      "exclusions_considered": [
+        "TIA without infarction",
+        "hemorrhagic stroke",
+        "venous thrombosis",
+        "traumatic brain injury"
+      ],
+      "remaining": [
+        "Independent bilingual claim and leaf review."
+      ]
+    },
+    {
+      "code": "8B11.42",
+      "title": "'- - - - - Cerebral ischaemic stroke due to hypercoagulable state",
+      "status": "candidate_pending_review",
+      "difference": "Acquired/inherited breadth; targeted workup, uncertain inherited causality, APS/cancer/VTE distinctions.",
+      "section_applicability": {
+        "summary": "Acquired/inherited breadth; targeted workup, uncertain inherited causality, APS/cancer/VTE distinctions.",
+        "causes_risks": "Acquired/inherited breadth; targeted workup, uncertain inherited causality, APS/cancer/VTE distinctions.",
+        "care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diagnosis": "Acquired/inherited breadth; targeted workup, uncertain inherited causality, APS/cancer/VTE distinctions.",
+        "differentials": "Acquired/inherited breadth; targeted workup, uncertain inherited causality, APS/cancer/VTE distinctions.",
+        "treatment": "Acquired/inherited breadth; targeted workup, uncertain inherited causality, APS/cancer/VTE distinctions.",
+        "medications": "Acquired/inherited breadth; targeted workup, uncertain inherited causality, APS/cancer/VTE distinctions.",
+        "special_populations": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prevention": "Acquired/inherited breadth; targeted workup, uncertain inherited causality, APS/cancer/VTE distinctions.",
+        "red_flags": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "daily_care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prognosis_followup": "Acquired/inherited breadth; targeted workup, uncertain inherited causality, APS/cancer/VTE distinctions.",
+        "complications": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diet": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized."
+      },
+      "exclusions_considered": [
+        "TIA without infarction",
+        "hemorrhagic stroke",
+        "venous thrombosis",
+        "traumatic brain injury"
+      ],
+      "remaining": [
+        "Independent bilingual claim and leaf review."
+      ]
+    },
+    {
+      "code": "8B11.43",
+      "title": "'- - - - - Cerebral ischaemic stroke in association with subarachnoid haemorrhage",
+      "status": "candidate_pending_review",
+      "difference": "SAH-associated ischemia must use SAH neurocritical pathway; do not automatically thrombolyse",
+      "section_applicability": {
+        "summary": "SAH-associated ischemia must use SAH neurocritical pathway; do not automatically thrombolyse",
+        "causes_risks": "SAH-associated ischemia must use SAH neurocritical pathway; do not automatically thrombolyse",
+        "care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diagnosis": "SAH-associated ischemia must use SAH neurocritical pathway; do not automatically thrombolyse",
+        "differentials": "SAH-associated ischemia must use SAH neurocritical pathway; do not automatically thrombolyse",
+        "treatment": "SAH-associated ischemia must use SAH neurocritical pathway; do not automatically thrombolyse",
+        "medications": "SAH-associated ischemia must use SAH neurocritical pathway; do not automatically thrombolyse",
+        "special_populations": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prevention": "SAH-associated ischemia must use SAH neurocritical pathway; do not automatically thrombolyse",
+        "red_flags": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "daily_care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prognosis_followup": "SAH-associated ischemia must use SAH neurocritical pathway; do not automatically thrombolyse",
+        "complications": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diet": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized."
+      },
+      "exclusions_considered": [
+        "TIA without infarction",
+        "hemorrhagic stroke",
+        "venous thrombosis",
+        "traumatic brain injury"
+      ],
+      "remaining": [
+        "Independent bilingual claim and leaf review."
+      ]
+    },
+    {
+      "code": "8B11.44",
+      "title": "'- - - - - Cerebral ischemic stroke from dissection",
+      "status": "candidate_pending_review",
+      "difference": "Dissection; vascular imaging, acute reperfusion and individualized prevention",
+      "section_applicability": {
+        "summary": "Dissection; vascular imaging, acute reperfusion and individualized prevention",
+        "causes_risks": "Dissection; vascular imaging, acute reperfusion and individualized prevention",
+        "care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diagnosis": "Dissection; vascular imaging, acute reperfusion and individualized prevention",
+        "differentials": "Dissection; vascular imaging, acute reperfusion and individualized prevention",
+        "treatment": "Dissection; vascular imaging, acute reperfusion and individualized prevention",
+        "medications": "Dissection; vascular imaging, acute reperfusion and individualized prevention",
+        "special_populations": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prevention": "Dissection; vascular imaging, acute reperfusion and individualized prevention",
+        "red_flags": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "daily_care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prognosis_followup": "Dissection; vascular imaging, acute reperfusion and individualized prevention",
+        "complications": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diet": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized."
+      },
+      "exclusions_considered": [
+        "TIA without infarction",
+        "hemorrhagic stroke",
+        "venous thrombosis",
+        "traumatic brain injury"
+      ],
+      "remaining": [
+        "Independent bilingual claim and leaf review."
+      ]
+    },
+    {
+      "code": "8B11.50",
+      "title": "'- - - - - Cerebral ischaemic stroke due to unspecified occlusion or stenosis of extracranial large artery",
+      "status": "candidate_pending_review",
+      "difference": "Cause unknown, artery specified: anatomy does not establish mechanism; ongoing rhythm/vascular work-up.",
+      "section_applicability": {
+        "summary": "Cause unknown, artery specified: anatomy does not establish mechanism; ongoing rhythm/vascular work-up.",
+        "causes_risks": "Cause unknown, artery specified: anatomy does not establish mechanism; ongoing rhythm/vascular work-up.",
+        "care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diagnosis": "Cause unknown, artery specified: anatomy does not establish mechanism; ongoing rhythm/vascular work-up.",
+        "differentials": "Cause unknown, artery specified: anatomy does not establish mechanism; ongoing rhythm/vascular work-up.",
+        "treatment": "Cause unknown, artery specified: anatomy does not establish mechanism; ongoing rhythm/vascular work-up.",
+        "medications": "Cause unknown, artery specified: anatomy does not establish mechanism; ongoing rhythm/vascular work-up.",
+        "special_populations": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prevention": "Cause unknown, artery specified: anatomy does not establish mechanism; ongoing rhythm/vascular work-up.",
+        "red_flags": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "daily_care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prognosis_followup": "Cause unknown, artery specified: anatomy does not establish mechanism; ongoing rhythm/vascular work-up.",
+        "complications": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diet": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized."
+      },
+      "exclusions_considered": [
+        "TIA without infarction",
+        "hemorrhagic stroke",
+        "venous thrombosis",
+        "traumatic brain injury"
+      ],
+      "remaining": [
+        "Independent bilingual claim and leaf review."
+      ]
+    },
+    {
+      "code": "8B11.51",
+      "title": "'- - - - - Cerebral ischaemic stroke due to unspecified occlusion or stenosis of intracranial large artery",
+      "status": "candidate_pending_review",
+      "difference": "Cause unknown, cerebral region specified: location does not establish cause; common work-up.",
+      "section_applicability": {
+        "summary": "Cause unknown, cerebral region specified: location does not establish cause; common work-up.",
+        "causes_risks": "Cause unknown, cerebral region specified: location does not establish cause; common work-up.",
+        "care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diagnosis": "Cause unknown, cerebral region specified: location does not establish cause; common work-up.",
+        "differentials": "Cause unknown, cerebral region specified: location does not establish cause; common work-up.",
+        "treatment": "Cause unknown, cerebral region specified: location does not establish cause; common work-up.",
+        "medications": "Cause unknown, cerebral region specified: location does not establish cause; common work-up.",
+        "special_populations": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prevention": "Cause unknown, cerebral region specified: location does not establish cause; common work-up.",
+        "red_flags": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "daily_care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prognosis_followup": "Cause unknown, cerebral region specified: location does not establish cause; common work-up.",
+        "complications": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diet": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized."
+      },
+      "exclusions_considered": [
+        "TIA without infarction",
+        "hemorrhagic stroke",
+        "venous thrombosis",
+        "traumatic brain injury"
+      ],
+      "remaining": [
+        "Independent bilingual claim and leaf review."
+      ]
+    },
+    {
+      "code": "8B11.5Z",
+      "title": "'- - - - - Cerebral ischaemic stroke, unspecified",
+      "status": "candidate_pending_review",
+      "difference": "Cause and artery unspecified: confirmed ischemia, ongoing investigation without invented cause-specific treatment.",
+      "section_applicability": {
+        "summary": "Cause and artery unspecified: confirmed ischemia, ongoing investigation without invented cause-specific treatment.",
+        "causes_risks": "Cause and artery unspecified: confirmed ischemia, ongoing investigation without invented cause-specific treatment.",
+        "care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diagnosis": "Cause and artery unspecified: confirmed ischemia, ongoing investigation without invented cause-specific treatment.",
+        "differentials": "Cause and artery unspecified: confirmed ischemia, ongoing investigation without invented cause-specific treatment.",
+        "treatment": "Cause and artery unspecified: confirmed ischemia, ongoing investigation without invented cause-specific treatment.",
+        "medications": "Cause and artery unspecified: confirmed ischemia, ongoing investigation without invented cause-specific treatment.",
+        "special_populations": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prevention": "Cause and artery unspecified: confirmed ischemia, ongoing investigation without invented cause-specific treatment.",
+        "red_flags": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "daily_care": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "prognosis_followup": "Cause and artery unspecified: confirmed ischemia, ongoing investigation without invented cause-specific treatment.",
+        "complications": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized.",
+        "diet": "Shared emergency safety, function-based recovery and nutrition apply; additional causal-disease care is individualized."
+      },
+      "exclusions_considered": [
+        "TIA without infarction",
+        "hemorrhagic stroke",
+        "venous thrombosis",
+        "traumatic brain injury"
+      ],
+      "remaining": [
+        "Independent bilingual claim and leaf review."
+      ]
+    },
+    {
+      "code": "8B20",
+      "title": "'- - Stroke not known if ischaemic or haemorrhagic",
+      "status": "navigation_only",
+      "difference": "Separate stroke navigation, not ischemic-stroke coverage.",
+      "section_applicability": {
+        "summary": "Shared ischemic education with named cause-specific conditions; known gaps above apply and prevent automatic confirmation.",
+        "causes_risks": "Shared ischemic education with named cause-specific conditions; known gaps above apply and prevent automatic confirmation.",
+        "care": "Shared ischemic education with named cause-specific conditions; known gaps above apply and prevent automatic confirmation.",
+        "diagnosis": "Shared ischemic education with named cause-specific conditions; known gaps above apply and prevent automatic confirmation.",
+        "differentials": "Shared ischemic education with named cause-specific conditions; known gaps above apply and prevent automatic confirmation.",
+        "treatment": "Shared ischemic education with named cause-specific conditions; known gaps above apply and prevent automatic confirmation.",
+        "medications": "Shared ischemic education with named cause-specific conditions; known gaps above apply and prevent automatic confirmation.",
+        "special_populations": "Shared ischemic education with named cause-specific conditions; known gaps above apply and prevent automatic confirmation.",
+        "prevention": "Shared ischemic education with named cause-specific conditions; known gaps above apply and prevent automatic confirmation.",
+        "red_flags": "Shared ischemic education with named cause-specific conditions; known gaps above apply and prevent automatic confirmation.",
+        "daily_care": "Shared ischemic education with named cause-specific conditions; known gaps above apply and prevent automatic confirmation.",
+        "prognosis_followup": "Shared ischemic education with named cause-specific conditions; known gaps above apply and prevent automatic confirmation.",
+        "complications": "Shared ischemic education with named cause-specific conditions; known gaps above apply and prevent automatic confirmation.",
+        "diet": "Shared ischemic education with named cause-specific conditions; known gaps above apply and prevent automatic confirmation."
+      },
+      "exclusions_considered": [
+        "TIA without infarction",
+        "hemorrhagic stroke",
+        "venous thrombosis",
+        "traumatic brain injury"
+      ],
+      "remaining": [
+        "Review separate stroke navigation draft."
+      ]
+    }
+  ],
+  "inherited_sections": [],
+  "changed_sections": [
+    "summary",
+    "causes_risks",
+    "care",
+    "diagnosis",
+    "differentials",
+    "treatment",
+    "medications",
+    "special_populations",
+    "prevention",
+    "red_flags",
+    "daily_care",
+    "prognosis_followup",
+    "complications",
+    "diet"
+  ],
+  "reused_text": "Shared recognition/recovery from stroke-derived ICH draft; all records remain pending, no inherited independent sign-off.",
+  "unresolved_questions": [
+    "Independent reviewer must assess all new exact supports and leaf scope; no coverage credit before acceptance."
+  ],
+  "structural_fix": "Added bilingual search terms from existing clinical text; sections and claims unchanged.",
+  "structural_resolutions": [
+    {
+      "by": "/root/astra_neuro_finish",
+      "date": "2026-10-03",
+      "resolution": "No clinical text change. Mapped actual indexed retrieval enum to schema search_text_retrieved; synchronized source metadata hashes."
+    }
+  ]
+}

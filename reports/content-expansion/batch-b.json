@@ -1325,225 +1325,539 @@
     "condition_id": "ectopic-pregnancy",
     "inspected_sources": [
       {
-        "source_id": "ectopic-pregnancy-nhs",
-        "url": "https://www.nhs.uk/conditions/ectopic-pregnancy/",
-        "inspected_locators": [
-          "Symptoms",
-          "Emergency help",
-          "Treatment",
-          "Risk factors",
-          "Future pregnancy"
-        ]
-      },
-      {
         "source_id": "batch-b-ectopic-treatment",
         "url": "https://www.nhs.uk/conditions/ectopic-pregnancy/treatment/",
-        "inspected_locators": [
-          "Expectant management",
-          "Medicine",
-          "Surgery"
-        ]
+        "locators": [
+          "Expectant/Medicine severe symptoms",
+          "Medicine | Medicine contraception",
+          "Medicine alcohol"
+        ],
+        "retrieval_scope": "Relevant patient-information sections inspected during expanded drafting; see batch-b.json for section locators."
+      },
+      {
+        "source_id": "ectopic-pregnancy-nhs",
+        "url": "https://www.nhs.uk/conditions/ectopic-pregnancy/",
+        "locators": [
+          "What can cause",
+          "When to get emergency help",
+          "When to get medical advice",
+          "Help and support",
+          "Overview treatment paragraph updated ≥12 weeks",
+          "Trying for another baby",
+          "Help and support",
+          "Trying for another baby | What can cause final paragraph"
+        ],
+        "retrieval_scope": "Topic page or hub opened via browsing. Linked subpages/full claim support not comprehensively audited."
+      },
+      {
+        "source_id": "p003-ectopic-abdominal",
+        "url": "https://www.isuog.org/clinical-resources/patient-information-series/patient-information-pregnancy-conditions/early-pregnancy/abdominal-ectopic-pregnancy.html",
+        "locators": [
+          "symptoms/rupture",
+          "How is it diagnosed | diagnosis",
+          "Treatment",
+          "Future pregnancy",
+          "Symptoms/rupture",
+          "Future pregnancy | Prevention"
+        ],
+        "retrieval_scope": "2022-07；Web实际原站HTML What is/diagnosis/treatment/future pregnancy；腹腔着床、TVUS/腹部超声/MRI、按阶段治疗、随访。"
+      },
+      {
+        "source_id": "p003-ectopic-cervical",
+        "url": "https://www.isuog.org/clinical-resources/patient-information-series/patient-information-pregnancy-conditions/early-pregnancy/cervical-ectopic-pregnancy.html",
+        "locators": [
+          "How is it diagnosed",
+          "Treatment"
+        ],
+        "retrieval_scope": "2022-06；实际原站HTML定义/症状/诊断/治疗/下次妊娠；宫颈内口下方、无痛出血可严重、专科决定药物或手术。"
+      },
+      {
+        "source_id": "p003-ectopic-heterotopic",
+        "url": "https://www.isuog.org/clinical-resources/patient-information-series/patient-information-pregnancy-conditions/early-pregnancy/heterotopic-pregnancy.html",
+        "locators": [
+          "What is/causes/diagnosis",
+          "Diagnosis/Treatment"
+        ],
+        "retrieval_scope": "2022-06；实际原站HTML定义、风险、诊断、治疗、再孕；宫内孕不能排除同时宫外孕，hCG解释受宫内孕影响。"
+      },
+      {
+        "source_id": "p003-ectopic-interstitial",
+        "url": "https://www.isuog.org/clinical-resources/patient-information-series/patient-information-pregnancy-conditions/early-pregnancy/interstitial-ectopic-pregnancy.html",
+        "locators": [
+          "Definition/Diagnosis/Things to watch/Treatment",
+          "Definition/Diagnosis/Things to watch/Treatment"
+        ],
+        "retrieval_scope": "2022-06；2026-10-03实际Web原页全部医学段。定义为输卵管子宫壁内段；影像需与偏心宫内孕区分；治疗按稳定性/位置，未搬入单hCG阈值或固定16/20周消退承诺。"
+      },
+      {
+        "source_id": "p003-ectopic-nhs-recovery",
+        "url": "https://www.nhs.uk/tests-and-treatments/laparoscopy/",
+        "locators": [
+          "Recovering/Urgent advice"
+        ],
+        "retrieval_scope": "2023-12-20；实际HTML preparing/after operation/recovering/urgent advice；不搬入该页ibuprofen至MTX路径。"
+      },
+      {
+        "source_id": "p003-ectopic-nice",
+        "url": "https://www.nice.org.uk/guidance/ng126/chapter/management-of-tubal-ectopic-pregnancy",
+        "locators": [
+          "1.15.1–4 | 1.14.1–4 expectant management | 1.17.1–3 salpingectomy/salpingotomy",
+          "1.18.1–5 2026"
+        ],
+        "retrieval_scope": "Web403后urllib读取官方HTML 1.15–1.17及另页anti-d-immunoglobulin-prophylaxis 1.18.1–5/2026 rationale；旧编号已变。只把输卵管治疗外推至该部位。"
+      },
+      {
+        "source_id": "p003-ectopic-ovarian",
+        "url": "https://www.isuog.org/education/visuog/obstetrics/early-pregnancy/ectopic-pregnancy/uterine-ectopic-pregnancy/ovarian-ectopic-pregnancy.html",
+        "locators": [
+          "clinical presentation",
+          "Diagnosis",
+          "Differential diagnosis",
+          "Management",
+          "Clinical/Management"
+        ],
+        "retrieval_scope": "2022-01，Linh K Phan/Nguyen T Ha，review Karen Fung Kee Fung；Web实际Definition/Diagnosis/Management/References；影像局限/黄体鉴别、手术止血保留卵巢、药物证据有限。"
+      },
+      {
+        "source_id": "p003-ectopic-patient",
+        "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/ectopic-pregnancy/",
+        "locators": [
+          "Am I at increased risk",
+          "symptoms/emergency",
+          "When should I seek medical advice/diagnosis",
+          "How is it diagnosed | PUL",
+          "PUL",
+          "Follow-up",
+          "Expectant/follow-up | How will I feel",
+          "Future pregnancies",
+          "Surgery/follow-up/emotions",
+          "Future pregnancies"
+        ],
+        "retrieval_scope": "2017-11，2024链接更新版；实际读原站HTML定义、PUL、风险、诊断、三治疗、非输卵管、随访及心理支持；与GT21同源不充第二独立源。"
+      },
+      {
+        "source_id": "p003-ectopic-qld",
+        "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0033/139947/g-epl.pdf",
+        "locators": [
+          "p19 Table13",
+          "p19 Table14 | pp18–19",
+          "p5/p19 rupture presentation",
+          "pp19–22 Tables13/15/17",
+          "p17 Table10 | pp3/17",
+          "pp17–18 Tables10/12",
+          "p18 Table12 | p5 surgical/p22 Table18 | pp20–21",
+          "p21 Table16 | p22 Table17; p5 flowchart differs4months | pp21–22 Tables16/17",
+          "p22 Table17",
+          "p5 general care/pp20–22 | p5 psychological needs",
+          "p21 coexistent viable IUP contraindication",
+          "pp20–22",
+          "p5/p19 | pp5/21–22"
+        ],
+        "retrieval_scope": "MN22.29-V8-R27，2022-10发布/2025-08修订；Web实际PDF pp3–5,17–22：PUL、瘢痕、异位部位/风险、观察/药物/手术/随访。与RCOG及NICE有共同引用，不算独立试验。"
+      },
+      {
+        "source_id": "p003-ectopic-rcog",
+        "url": "https://obgyn.onlinelibrary.wiley.com/doi/pdf/10.1111/1471-0528.14189",
+        "locators": [
+          "p5 heterotopic | pp2–4/9 scope",
+          "p3 scar/p9 risks",
+          "pp4/6 ovarian/abdominal",
+          "pp2/4/11–12 diagnosis",
+          "p5 surgical | p6 cervical/scar | pp6–7 ovarian/abdominal",
+          "pp5–7 medical/heterotopic",
+          "pp5/7 heterotopic",
+          "pp5–8 management/follow-up",
+          "pp5–8"
+        ],
+        "retrieval_scope": "2016-11; Web实际读取PDF physical pp2–12：执行摘要诊断/各部位治疗/随访及scope; 不包括PUL，证据检索截至2015。旧版正在更新。"
+      },
+      {
+        "source_id": "p003-ectopic-recovery",
+        "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/laparoscopy-recovering-well/",
+        "locators": [
+          "Starting to eat/healthy diet/seek advice"
+        ],
+        "retrieval_scope": "2015-10-22；实际HTML applicability、Starting to eat and drink、balanced diet、seek advice、getting back to normal；仅腹腔镜术后，不把一般活动/性交建议用于未消退异位妊娠。"
+      },
+      {
+        "source_id": "p003-ectopic-smfm",
+        "url": "https://publications.smfm.org/publications/448-society-for-maternal-fetal-medicine-consult-series-63/",
+        "locators": [
+          "summary/recommendations1–4"
+        ],
+        "retrieval_scope": "2022，reaffirmed2024；实际原站摘要 recommendations1–6；未声称全文已读。ACOG/SFP/ASRM支持同文件不算独立来源。反对期待治疗及单用全身MTX，与旧RCOG宽泛列表不混写。"
+      },
+      {
+        "source_id": "p003-ectopic-ggc",
+        "url": "https://www.rightdecisions.scot.nhs.uk/ggc-clinical-guidelines/maternity/early-pregnancy-assessment-service/ectopic-pregnancy-medical-management-116/",
+        "locators": [
+          "Contra-indications to medical management; Pre-treatment investigations"
+        ],
+        "retrieval_scope": "Actual original HTML via urllib: Patient selection, Contra-indications to medical management, Pre-treatment investigations and Editorial information. Gynaecology Clinical Governance Group approved version4; review due2026-09-30 passed. Only stable blood-count/liver/kidney/lactation assessment used, no numerical thresholds/dose/efficacy imported. References RCOG2016/NICE2019; distinct from QLD compilation, shared clinical evidence."
       }
     ],
     "sections": {
       "summary": {
         "source_ids": [
-          "ectopic-pregnancy-nhs"
+          "p003-ectopic-heterotopic",
+          "p003-ectopic-qld",
+          "p003-ectopic-rcog"
         ],
         "locators": {
-          "ectopic-pregnancy-nhs": [
-            "Definition and Symptoms"
+          "p003-ectopic-heterotopic": [
+            "What is/causes/diagnosis"
+          ],
+          "p003-ectopic-qld": [
+            "p19 Table13"
+          ],
+          "p003-ectopic-rcog": [
+            "p5 heterotopic | pp2–4/9 scope"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "causes_risks": {
         "source_ids": [
-          "ectopic-pregnancy-nhs"
+          "ectopic-pregnancy-nhs",
+          "p003-ectopic-patient",
+          "p003-ectopic-qld",
+          "p003-ectopic-rcog"
         ],
         "locators": {
           "ectopic-pregnancy-nhs": [
-            "What can cause an ectopic pregnancy"
+            "What can cause"
+          ],
+          "p003-ectopic-patient": [
+            "Am I at increased risk"
+          ],
+          "p003-ectopic-qld": [
+            "p19 Table14 | pp18–19"
+          ],
+          "p003-ectopic-rcog": [
+            "p3 scar/p9 risks"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "red_flags": {
         "source_ids": [
-          "ectopic-pregnancy-nhs"
+          "ectopic-pregnancy-nhs",
+          "p003-ectopic-abdominal",
+          "p003-ectopic-ovarian",
+          "p003-ectopic-patient",
+          "p003-ectopic-qld"
         ],
         "locators": {
           "ectopic-pregnancy-nhs": [
-            "Symptoms and Emergency help"
+            "When to get emergency help"
+          ],
+          "p003-ectopic-abdominal": [
+            "symptoms/rupture"
+          ],
+          "p003-ectopic-ovarian": [
+            "clinical presentation"
+          ],
+          "p003-ectopic-patient": [
+            "symptoms/emergency"
+          ],
+          "p003-ectopic-qld": [
+            "p5/p19 rupture presentation"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending.",
-        "applicability_override": "Triage advice applies to the symptoms and age groups stated in the body; emergency or rapid deterioration overrides routine observation intervals."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "care": {
         "source_ids": [
+          "batch-b-ectopic-treatment",
           "ectopic-pregnancy-nhs",
-          "batch-b-ectopic-treatment"
+          "p003-ectopic-patient",
+          "p003-ectopic-qld"
         ],
         "locators": {
-          "ectopic-pregnancy-nhs": [
-            "Advice"
-          ],
           "batch-b-ectopic-treatment": [
-            "Monitoring and rupture"
+            "Expectant/Medicine severe symptoms"
+          ],
+          "ectopic-pregnancy-nhs": [
+            "When to get medical advice"
+          ],
+          "p003-ectopic-patient": [
+            "When should I seek medical advice/diagnosis"
+          ],
+          "p003-ectopic-qld": [
+            "pp19–22 Tables13/15/17"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending.",
-        "applicability_override": "Triage advice applies to the symptoms and age groups stated in the body; emergency or rapid deterioration overrides routine observation intervals."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "diagnosis": {
         "source_ids": [
-          "ectopic-pregnancy-nhs",
-          "batch-b-ectopic-treatment"
+          "p003-ectopic-abdominal",
+          "p003-ectopic-interstitial",
+          "p003-ectopic-ovarian",
+          "p003-ectopic-patient",
+          "p003-ectopic-qld",
+          "p003-ectopic-rcog"
         ],
         "locators": {
-          "ectopic-pregnancy-nhs": [
-            "Tests overview"
+          "p003-ectopic-abdominal": [
+            "How is it diagnosed | diagnosis"
           ],
-          "batch-b-ectopic-treatment": [
-            "hCG monitoring"
+          "p003-ectopic-interstitial": [
+            "Definition/Diagnosis/Things to watch/Treatment"
+          ],
+          "p003-ectopic-ovarian": [
+            "Diagnosis"
+          ],
+          "p003-ectopic-patient": [
+            "How is it diagnosed | PUL"
+          ],
+          "p003-ectopic-qld": [
+            "p17 Table10 | pp3/17"
+          ],
+          "p003-ectopic-rcog": [
+            "pp4/6 ovarian/abdominal"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "differentials": {
         "source_ids": [
-          "ectopic-pregnancy-nhs"
+          "p003-ectopic-cervical",
+          "p003-ectopic-ovarian",
+          "p003-ectopic-patient",
+          "p003-ectopic-qld",
+          "p003-ectopic-rcog"
         ],
         "locators": {
-          "ectopic-pregnancy-nhs": [
-            "Symptoms",
-            "Emergency help"
+          "p003-ectopic-cervical": [
+            "How is it diagnosed"
+          ],
+          "p003-ectopic-ovarian": [
+            "Differential diagnosis"
+          ],
+          "p003-ectopic-patient": [
+            "PUL"
+          ],
+          "p003-ectopic-qld": [
+            "pp17–18 Tables10/12"
+          ],
+          "p003-ectopic-rcog": [
+            "pp2/4/11–12 diagnosis"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "treatment": {
         "source_ids": [
-          "batch-b-ectopic-treatment"
+          "p003-ectopic-abdominal",
+          "p003-ectopic-cervical",
+          "p003-ectopic-interstitial",
+          "p003-ectopic-nice",
+          "p003-ectopic-ovarian",
+          "p003-ectopic-qld",
+          "p003-ectopic-rcog",
+          "p003-ectopic-smfm"
         ],
         "locators": {
-          "batch-b-ectopic-treatment": [
-            "Expectant management",
-            "Medicine",
-            "Surgery"
+          "p003-ectopic-abdominal": [
+            "Treatment"
+          ],
+          "p003-ectopic-cervical": [
+            "Treatment"
+          ],
+          "p003-ectopic-interstitial": [
+            "Definition/Diagnosis/Things to watch/Treatment"
+          ],
+          "p003-ectopic-nice": [
+            "1.15.1–4 | 1.14.1–4 expectant management | 1.17.1–3 salpingectomy/salpingotomy"
+          ],
+          "p003-ectopic-ovarian": [
+            "Management"
+          ],
+          "p003-ectopic-qld": [
+            "p18 Table12 | p5 surgical/p22 Table18 | pp20–21"
+          ],
+          "p003-ectopic-rcog": [
+            "p5 surgical | p6 cervical/scar | pp6–7 ovarian/abdominal"
+          ],
+          "p003-ectopic-smfm": [
+            "summary/recommendations1–4"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "medications": {
         "source_ids": [
-          "batch-b-ectopic-treatment"
+          "batch-b-ectopic-treatment",
+          "p003-ectopic-patient",
+          "p003-ectopic-qld",
+          "p003-ectopic-rcog",
+          "p003-ectopic-ggc"
         ],
         "locators": {
           "batch-b-ectopic-treatment": [
-            "Medicine"
+            "Medicine | Medicine contraception"
+          ],
+          "p003-ectopic-patient": [
+            "Follow-up"
+          ],
+          "p003-ectopic-qld": [
+            "p21 Table16 | p22 Table17; p5 flowchart differs4months | pp21–22 Tables16/17"
+          ],
+          "p003-ectopic-rcog": [
+            "pp5–7 medical/heterotopic"
+          ],
+          "p003-ectopic-ggc": [
+            "Contra-indications to medical management; Pre-treatment investigations"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending.",
-        "applicability_override": "Medicine roles and key risks only. Named drugs are examples, not individual prescribing; ages, formulations, pregnancy rules and availability follow local product information."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "diet": {
         "source_ids": [
-          "ectopic-pregnancy-nhs",
-          "batch-b-ectopic-treatment"
+          "batch-b-ectopic-treatment",
+          "p003-ectopic-nhs-recovery",
+          "p003-ectopic-qld",
+          "p003-ectopic-recovery"
         ],
         "locators": {
-          "ectopic-pregnancy-nhs": [
-            "Treatment pathways",
-            "Medicine alcohol caution",
-            "no dietary cure established"
-          ],
           "batch-b-ectopic-treatment": [
-            "Medicine: alcohol and methotrexate precautions"
+            "Medicine alcohol"
+          ],
+          "p003-ectopic-nhs-recovery": [
+            "Recovering/Urgent advice"
+          ],
+          "p003-ectopic-qld": [
+            "p22 Table17"
+          ],
+          "p003-ectopic-recovery": [
+            "Starting to eat/healthy diet/seek advice"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending.",
-        "applicability_override": "Applies to the condition and restrictions described; individualized fluid or nutrition restrictions from existing care take priority. No food or supplement is presented as a replacement for necessary treatment."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "daily_care": {
         "source_ids": [
           "ectopic-pregnancy-nhs",
-          "batch-b-ectopic-treatment"
+          "p003-ectopic-patient",
+          "p003-ectopic-qld"
         ],
         "locators": {
           "ectopic-pregnancy-nhs": [
-            "Support"
+            "Help and support"
           ],
-          "batch-b-ectopic-treatment": [
-            "Expectant management"
+          "p003-ectopic-patient": [
+            "Expectant/follow-up | How will I feel"
+          ],
+          "p003-ectopic-qld": [
+            "p5 general care/pp20–22 | p5 psychological needs"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "special_populations": {
         "source_ids": [
           "ectopic-pregnancy-nhs",
-          "batch-b-ectopic-treatment"
+          "p003-ectopic-heterotopic",
+          "p003-ectopic-nice",
+          "p003-ectopic-qld",
+          "p003-ectopic-rcog"
         ],
         "locators": {
           "ectopic-pregnancy-nhs": [
-            "Risk factors",
-            "Anti-D wording differs between overview and older treatment page"
+            "Overview treatment paragraph updated ≥12 weeks"
           ],
-          "batch-b-ectopic-treatment": [
-            "Surgery: anti-D wording; see explicit date discrepancy limitation"
+          "p003-ectopic-heterotopic": [
+            "Diagnosis/Treatment"
+          ],
+          "p003-ectopic-nice": [
+            "1.18.1–5 2026"
+          ],
+          "p003-ectopic-qld": [
+            "p21 coexistent viable IUP contraindication"
+          ],
+          "p003-ectopic-rcog": [
+            "pp5/7 heterotopic"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending.",
-        "applicability_override": "Only the populations explicitly described in this section; no paediatric, pregnancy or comorbidity dose algorithm is supplied."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "prognosis_followup": {
         "source_ids": [
           "ectopic-pregnancy-nhs",
-          "batch-b-ectopic-treatment"
+          "p003-ectopic-abdominal",
+          "p003-ectopic-patient",
+          "p003-ectopic-qld",
+          "p003-ectopic-rcog"
         ],
         "locators": {
           "ectopic-pregnancy-nhs": [
-            "Trying for another baby",
-            "Monitoring"
+            "Trying for another baby"
           ],
-          "batch-b-ectopic-treatment": [
-            "Expectant management: serial hCG",
-            "Medicine: follow-up tests",
-            "Surgery: further testing"
+          "p003-ectopic-abdominal": [
+            "Future pregnancy"
+          ],
+          "p003-ectopic-patient": [
+            "Future pregnancies"
+          ],
+          "p003-ectopic-qld": [
+            "pp20–22"
+          ],
+          "p003-ectopic-rcog": [
+            "pp5–8 management/follow-up"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "complications": {
         "source_ids": [
           "ectopic-pregnancy-nhs",
-          "batch-b-ectopic-treatment"
+          "p003-ectopic-abdominal",
+          "p003-ectopic-ovarian",
+          "p003-ectopic-patient",
+          "p003-ectopic-qld",
+          "p003-ectopic-rcog"
         ],
         "locators": {
           "ectopic-pregnancy-nhs": [
-            "Emergency help",
-            "Surgery",
-            "Support"
+            "Help and support"
           ],
-          "batch-b-ectopic-treatment": [
-            "Surgery: rupture and emergency treatment"
+          "p003-ectopic-abdominal": [
+            "Symptoms/rupture"
+          ],
+          "p003-ectopic-ovarian": [
+            "Clinical/Management"
+          ],
+          "p003-ectopic-patient": [
+            "Surgery/follow-up/emotions"
+          ],
+          "p003-ectopic-qld": [
+            "p5/p19 | pp5/21–22"
+          ],
+          "p003-ectopic-rcog": [
+            "pp5–8"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "prevention": {
         "source_ids": [
-          "ectopic-pregnancy-nhs"
+          "ectopic-pregnancy-nhs",
+          "p003-ectopic-abdominal",
+          "p003-ectopic-patient"
         ],
         "locators": {
           "ectopic-pregnancy-nhs": [
-            "Causes and prevention",
-            "Future pregnancy"
+            "Trying for another baby | What can cause final paragraph"
+          ],
+          "p003-ectopic-abdominal": [
+            "Future pregnancy | Prevention"
+          ],
+          "p003-ectopic-patient": [
+            "Future pregnancies"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       }
     },
     "editorial_status": "expanded_editorial_draft",
@@ -1559,7 +1873,9 @@
     "remaining_checks": [
       "Independent bilingual claim verification remains pending.",
       "Qualified clinical review and country-specific care pathway confirmation remain pending."
-    ]
+    ],
+    "checked_at": "2026-10-03",
+    "independent_review": "reports/p0-03-ectopic-pregnancy-independent.json"
   },
   {
     "condition_id": "eczema",

@@ -267,9 +267,17 @@
     "condition_id": "ectopic-pregnancy",
     "code": "JA01.1",
     "release": "2026-01",
-    "status": "pending",
-    "method": "normalized_exact_name",
-    "rationale": "Name similarity only; clinical scope and leaf coverage remain unverified."
+    "status": "confirmed",
+    "content_sha256": "ecc120da86779ad37409277012640c94bec04f48e298c8daaa1d49cc388eb94c",
+    "review_report": "reports/p0-03-ectopic-pregnancy-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_immunology_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Tubal including interstitial subtype; stable-selection, rupture and continued monitoring explicit.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "preeclampsia",
@@ -2066,6 +2074,663 @@
         "Sequelae8B25.1",
         "Fetus/newborn KA82.4/.6",
         "SAH distinct; secondary hemorrhagic transformation is included in8B00, not an exclusion"
+      ]
+    }
+  },
+  {
+    "condition_id": "birth-asphyxia",
+    "code": "KB21.0",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "5d45b7f03a210db32c70fc6a1a88e1707a045b6a8ca52d8375ec18b820e22e6e",
+    "review_report": "reports/p0-03-birth-asphyxia-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_neuro_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Severe birth compromise: emergency support then conditional advanced resuscitation and organ monitoring; HIE assessment and treatment remain a separate eligible branch.",
+      "exclusions_considered": [
+        "KB20 intrauterine hypoxia/asphyxia excluded",
+        "Isolated low Apgar without asphyxia or respiratory problem insufficient",
+        "KB21 severity does not equal Sarnat HIE grade"
+      ]
+    }
+  },
+  {
+    "condition_id": "birth-asphyxia",
+    "code": "KB21.1",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "5d45b7f03a210db32c70fc6a1a88e1707a045b6a8ca52d8375ec18b820e22e6e",
+    "review_report": "reports/p0-03-birth-asphyxia-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_neuro_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Mild/moderate birth respiratory compromise retains short support and observation; evolving encephalopathy is reassessed, with no automatic HIE diagnosis or cooling.",
+      "exclusions_considered": [
+        "KB20 intrauterine hypoxia/asphyxia excluded",
+        "Isolated low Apgar without asphyxia or respiratory problem insufficient",
+        "KB21 severity does not equal Sarnat HIE grade"
+      ]
+    }
+  },
+  {
+    "condition_id": "birth-asphyxia",
+    "code": "KB21.Z",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "5d45b7f03a210db32c70fc6a1a88e1707a045b6a8ca52d8375ec18b820e22e6e",
+    "review_report": "reports/p0-03-birth-asphyxia-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_neuro_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Established birth asphyxia with unspecified severity uses observed clinical needs; absence of recorded severity does not create a uniform treatment or permit diagnosis from low Apgar alone.",
+      "exclusions_considered": [
+        "KB20 intrauterine hypoxia/asphyxia excluded",
+        "Isolated low Apgar without asphyxia or respiratory problem insufficient",
+        "KB21 severity does not equal Sarnat HIE grade"
+      ]
+    }
+  },
+  {
+    "condition_id": "ectopic-pregnancy",
+    "code": "JA01.0",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "ecc120da86779ad37409277012640c94bec04f48e298c8daaa1d49cc388eb94c",
+    "review_report": "reports/p0-03-ectopic-pregnancy-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_immunology_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Abdominal diagnosis, stage-specific treatment and follow-up covered; viable abdominal exceptions not claimed.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "ectopic-pregnancy",
+    "code": "JA01.2",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "ecc120da86779ad37409277012640c94bec04f48e298c8daaa1d49cc388eb94c",
+    "review_report": "reports/p0-03-ectopic-pregnancy-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_immunology_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Ovarian diagnosis limitations, surgical haemostasis and ovary preservation explicit.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "ectopic-pregnancy",
+    "code": "JA01.Y",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "ecc120da86779ad37409277012640c94bec04f48e298c8daaa1d49cc388eb94c",
+    "review_report": "reports/p0-03-ectopic-pregnancy-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_immunology_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Cervical/scar specialist pathways and heterotopic coexistence described; no transfer of routine tubal observation.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "ectopic-pregnancy",
+    "code": "JA01.Z",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "ecc120da86779ad37409277012640c94bec04f48e298c8daaa1d49cc388eb94c",
+    "review_report": "reports/p0-03-ectopic-pregnancy-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_immunology_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Confirmed ectopic without specified site distinct from PUL; urgent localization and follow-up addressed.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "neonatal-sepsis",
+    "code": "KA60",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "8415835412e41d21b6de4133aeffff35827d8f61337e60235c6aaff0fc82958f",
+    "review_report": "reports/p0-03-neonatal-sepsis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_neuro_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Fourteen dimensions cover perinatal acquisition, neonatal early and late presentations, urgent clinical workup, conditional antimicrobial and supportive care, feeding and follow-up. Maternal infection is a risk signal, not a fetal sepsis diagnosis; no adult regimen is imported.",
+      "exclusions_considered": [
+        "1G40 and1G41 excluded in frozen WHO",
+        "KA61.Y coded-elsewhere staphylococcal/streptococcal infection retained; local infection is not automatically KA60",
+        "No invented pathogen-specific KA60 child codes"
+      ]
+    }
+  },
+  {
+    "condition_id": "puerperal-sepsis",
+    "code": "JB40.0",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "3fc204049def0433d1f29d704d190cf5e40858e757f840de3e83a94077f5b977",
+    "review_report": "reports/p0-03-puerperal-sepsis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_immunology_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Modern infection-associated organ dysfunction explicitly distinct from postpartum local infections, with source diagnosis/control, pathogen branches and14-dimensional care.",
+      "exclusions_considered": [
+        "JB0D.Y intrapartum sepsis",
+        "JB42.3 obstetric septic embolism",
+        "JB40.1/.2/.3 isolated infections",
+        "JB40.4 unexplained postpartum fever"
+      ]
+    }
+  },
+  {
+    "condition_id": "ischemic-stroke",
+    "code": "8B11.0",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+    "review_report": "reports/p0-03-ischemic-stroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Extracranial atherosclerotic plaque/selected carotid intervention distinct.",
+      "exclusions_considered": [
+        "8B20undeterminedstroke type",
+        "silent infarct8B21.0",
+        "sequelae8B25.0",
+        "retinal infarction",
+        "CVT/neonatal dedicatedcodes"
+      ]
+    }
+  },
+  {
+    "condition_id": "ischemic-stroke",
+    "code": "8B11.1",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+    "review_report": "reports/p0-03-ischemic-stroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Intracranial atherosclerosis medical-first distinction.",
+      "exclusions_considered": [
+        "8B20undeterminedstroke type",
+        "silent infarct8B21.0",
+        "sequelae8B25.0",
+        "retinal infarction",
+        "CVT/neonatal dedicatedcodes"
+      ]
+    }
+  },
+  {
+    "condition_id": "ischemic-stroke",
+    "code": "8B11.20",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+    "review_report": "reports/p0-03-ischemic-stroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Cardiac source/AF rhythm and cause-specific antithrombotic treatment.",
+      "exclusions_considered": [
+        "8B20undeterminedstroke type",
+        "silent infarct8B21.0",
+        "sequelae8B25.0",
+        "retinal infarction",
+        "CVT/neonatal dedicatedcodes"
+      ]
+    }
+  },
+  {
+    "condition_id": "ischemic-stroke",
+    "code": "8B11.21",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+    "review_report": "reports/p0-03-ischemic-stroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Aortic arch plaque riskfactor/antithrombotic choice with anticoagulation uncertainty.",
+      "exclusions_considered": [
+        "8B20undeterminedstroke type",
+        "silent infarct8B21.0",
+        "sequelae8B25.0",
+        "retinal infarction",
+        "CVT/neonatal dedicatedcodes"
+      ]
+    }
+  },
+  {
+    "condition_id": "ischemic-stroke",
+    "code": "8B11.22",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+    "review_report": "reports/p0-03-ischemic-stroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Venous-to-arterial/PFO mechanism and selected closure after alternativecause workup.",
+      "exclusions_considered": [
+        "8B20undeterminedstroke type",
+        "silent infarct8B21.0",
+        "sequelae8B25.0",
+        "retinal infarction",
+        "CVT/neonatal dedicatedcodes"
+      ]
+    }
+  },
+  {
+    "condition_id": "ischemic-stroke",
+    "code": "8B11.2Y",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+    "review_report": "reports/p0-03-ischemic-stroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Other specified embolic mechanisms explicitly include fat/air with supportive/oxygen specialty paths.",
+      "exclusions_considered": [
+        "8B20undeterminedstroke type",
+        "silent infarct8B21.0",
+        "sequelae8B25.0",
+        "retinal infarction",
+        "CVT/neonatal dedicatedcodes"
+      ]
+    }
+  },
+  {
+    "condition_id": "ischemic-stroke",
+    "code": "8B11.2Z",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+    "review_report": "reports/p0-03-ischemic-stroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Embolism established but origin unspecified keeps source investigation and treatmentselection conditional.",
+      "exclusions_considered": [
+        "8B20undeterminedstroke type",
+        "silent infarct8B21.0",
+        "sequelae8B25.0",
+        "retinal infarction",
+        "CVT/neonatal dedicatedcodes"
+      ]
+    }
+  },
+  {
+    "condition_id": "ischemic-stroke",
+    "code": "8B11.3",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+    "review_report": "reports/p0-03-ischemic-stroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Smallartery phenotype/CTlimitations/MRI,differentiation from other smalllesions,prevention;not everylacune cardioembolic.",
+      "exclusions_considered": [
+        "8B20undeterminedstroke type",
+        "silent infarct8B21.0",
+        "sequelae8B25.0",
+        "retinal infarction",
+        "CVT/neonatal dedicatedcodes"
+      ]
+    }
+  },
+  {
+    "condition_id": "ischemic-stroke",
+    "code": "8B11.40",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+    "review_report": "reports/p0-03-ischemic-stroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Globalhypoperfusion watershed mechanism/circulatory investigation and BP/reperfusion caveats.",
+      "exclusions_considered": [
+        "8B20undeterminedstroke type",
+        "silent infarct8B21.0",
+        "sequelae8B25.0",
+        "retinal infarction",
+        "CVT/neonatal dedicatedcodes"
+      ]
+    }
+  },
+  {
+    "condition_id": "ischemic-stroke",
+    "code": "8B11.41",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+    "review_report": "reports/p0-03-ischemic-stroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Nonatherosclerotic residual scope includes moyamoya,immune/secondaryvasculitis,FMD;no universal steroid/stent plan.",
+      "exclusions_considered": [
+        "8B20undeterminedstroke type",
+        "silent infarct8B21.0",
+        "sequelae8B25.0",
+        "retinal infarction",
+        "CVT/neonatal dedicatedcodes"
+      ]
+    }
+  },
+  {
+    "condition_id": "ischemic-stroke",
+    "code": "8B11.42",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+    "review_report": "reports/p0-03-ischemic-stroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Acquired and inherited hypercoagulability differentiated;APS/cancer and trait-testing uncertainty;no universal anticoagulation.",
+      "exclusions_considered": [
+        "8B20undeterminedstroke type",
+        "silent infarct8B21.0",
+        "sequelae8B25.0",
+        "retinal infarction",
+        "CVT/neonatal dedicatedcodes"
+      ]
+    }
+  },
+  {
+    "condition_id": "ischemic-stroke",
+    "code": "8B11.43",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+    "review_report": "reports/p0-03-ischemic-stroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "SAHassociated ischemia/DCI monitored in neurocritical setting,not ordinary clot pathway.",
+      "exclusions_considered": [
+        "8B20undeterminedstroke type",
+        "silent infarct8B21.0",
+        "sequelae8B25.0",
+        "retinal infarction",
+        "CVT/neonatal dedicatedcodes"
+      ]
+    }
+  },
+  {
+    "condition_id": "ischemic-stroke",
+    "code": "8B11.44",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+    "review_report": "reports/p0-03-ischemic-stroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Dissection dedicated arterywall/CTA-MRA/individualantithrombotic branch.",
+      "exclusions_considered": [
+        "8B20undeterminedstroke type",
+        "silent infarct8B21.0",
+        "sequelae8B25.0",
+        "retinal infarction",
+        "CVT/neonatal dedicatedcodes"
+      ]
+    }
+  },
+  {
+    "condition_id": "ischemic-stroke",
+    "code": "8B11.50",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+    "review_report": "reports/p0-03-ischemic-stroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Extracranial occlusion/stenosis with unknown cause stays unspecified;not inferred plaque.",
+      "exclusions_considered": [
+        "8B20undeterminedstroke type",
+        "silent infarct8B21.0",
+        "sequelae8B25.0",
+        "retinal infarction",
+        "CVT/neonatal dedicatedcodes"
+      ]
+    }
+  },
+  {
+    "condition_id": "ischemic-stroke",
+    "code": "8B11.51",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+    "review_report": "reports/p0-03-ischemic-stroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Intracranial occlusion/stenosis unknowncause stays unspecified;not inferred plaque.",
+      "exclusions_considered": [
+        "8B20undeterminedstroke type",
+        "silent infarct8B21.0",
+        "sequelae8B25.0",
+        "retinal infarction",
+        "CVT/neonatal dedicatedcodes"
+      ]
+    }
+  },
+  {
+    "condition_id": "ischemic-stroke",
+    "code": "8B11.5Z",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+    "review_report": "reports/p0-03-ischemic-stroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Unspecified ischemic event/cryptogenic andESUS clarification;no empiricESUSanticoagulation.",
+      "exclusions_considered": [
+        "8B20undeterminedstroke type",
+        "silent infarct8B21.0",
+        "sequelae8B25.0",
+        "retinal infarction",
+        "CVT/neonatal dedicatedcodes"
+      ]
+    }
+  },
+  {
+    "condition_id": "status-epilepticus",
+    "code": "8A66.0",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "d1c23b9ebe61d4b8a86731e0d247616053054b2898b6ff3fd3e35706f157d692",
+    "review_report": "reports/p0-03-status-epilepticus-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Convulsive emergency recognition5min and escalation/risks covered.",
+      "exclusions_considered": [
+        "8A67 repeated seizures with recovery",
+        "neonatal dosing not extrapolated",
+        "PNES not epileptic status"
+      ]
+    }
+  },
+  {
+    "condition_id": "status-epilepticus",
+    "code": "8A66.10",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "d1c23b9ebe61d4b8a86731e0d247616053054b2898b6ff3fd3e35706f157d692",
+    "review_report": "reports/p0-03-status-epilepticus-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Absence sustained impaired awareness,EEG,distinct escalation;does not require convulsion.",
+      "exclusions_considered": [
+        "8A67 repeated seizures with recovery",
+        "neonatal dosing not extrapolated",
+        "PNES not epileptic status"
+      ]
+    }
+  },
+  {
+    "condition_id": "status-epilepticus",
+    "code": "8A66.1Y",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "d1c23b9ebe61d4b8a86731e0d247616053054b2898b6ff3fd3e35706f157d692",
+    "review_report": "reports/p0-03-status-epilepticus-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Other specified NCSE with coma versus altered behavior distinguished.",
+      "exclusions_considered": [
+        "8A67 repeated seizures with recovery",
+        "neonatal dosing not extrapolated",
+        "PNES not epileptic status"
+      ]
+    }
+  },
+  {
+    "condition_id": "status-epilepticus",
+    "code": "8A66.1Z",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "d1c23b9ebe61d4b8a86731e0d247616053054b2898b6ff3fd3e35706f157d692",
+    "review_report": "reports/p0-03-status-epilepticus-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Unspecified NCSE preserves investigation/classification uncertainty.",
+      "exclusions_considered": [
+        "8A67 repeated seizures with recovery",
+        "neonatal dosing not extrapolated",
+        "PNES not epileptic status"
+      ]
+    }
+  },
+  {
+    "condition_id": "status-epilepticus",
+    "code": "8A66.Y",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "d1c23b9ebe61d4b8a86731e0d247616053054b2898b6ff3fd3e35706f157d692",
+    "review_report": "reports/p0-03-status-epilepticus-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Other specified status includes lay EPC motor/awareness branch,underlying focal causes and individualized care;EPC not restricted to Rasmussen.",
+      "exclusions_considered": [
+        "8A67 repeated seizures with recovery",
+        "neonatal dosing not extrapolated",
+        "PNES not epileptic status"
+      ]
+    }
+  },
+  {
+    "condition_id": "status-epilepticus",
+    "code": "8A66.Z",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "d1c23b9ebe61d4b8a86731e0d247616053054b2898b6ff3fd3e35706f157d692",
+    "review_report": "reports/p0-03-status-epilepticus-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Unspecified status acute safety and etiologic/subtype clarification covered.",
+      "exclusions_considered": [
+        "8A67 repeated seizures with recovery",
+        "neonatal dosing not extrapolated",
+        "PNES not epileptic status"
+      ]
+    }
+  },
+  {
+    "condition_id": "stroke",
+    "code": "8B20",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "d7123771faa67b4d0b7d5511f8d0c4ae01fbd0808635b15aee3a5e7da732c36b",
+    "review_report": "reports/p0-03-stroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Broad recognition and classificationnavigation explicitly preserves undeterminedtype;confirmation cannot be inferred fromsymptoms and no waiting24h.14shared dimensions provide appropriate care whiletype investigated.",
+      "exclusions_considered": [
+        "8B25.4sequelae",
+        "suspectedstroke alone notconfirmedcoding",
+        "TIA and knownischemic/hemorrhagic dedicatedentries"
       ]
     }
   }

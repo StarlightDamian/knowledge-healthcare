@@ -1,0 +1,217 @@
+{
+  "topic": "birth-asphyxia",
+  "author": "/root/astra_p0_maternal",
+  "reviewer": "/root/astra_neuro_finish",
+  "checked_at": "2026-10-03",
+  "status": "accepted",
+  "verdict": "accepted",
+  "medical_reviewed": false,
+  "target": {
+    "body_canonical_sha256": "225018a0f7e06681323ac54e63d65132f601aa651b9b225fe17768ce2ad9a060",
+    "records_canonical_sha256": "dc167db4d758ad806b045bd1454516c2f61830d03e121e6d9a659c283b15c345",
+    "sources_canonical_sha256": "22531c44388a57c53ff9344692a41d1723a055ea2762cbecbab792ce69b63f17"
+  },
+  "changed_sections": [
+    "summary",
+    "causes_risks",
+    "red_flags",
+    "care",
+    "diagnosis",
+    "differentials",
+    "treatment",
+    "medications",
+    "diet",
+    "daily_care",
+    "special_populations",
+    "prognosis_followup",
+    "complications",
+    "prevention"
+  ],
+  "inherited_sections": [],
+  "claims_reviewed": 30,
+  "accepted_source_ids": [
+    "p003-asphyxia-aha",
+    "p003-asphyxia-qcg",
+    "p003-asphyxia-cps",
+    "p003-asphyxia-who",
+    "p003-neonatal-sepsis-recognition",
+    "p003-asphyxia-qcg-resuscitation"
+  ],
+  "actual_source_reads": [
+    {
+      "source_id": "p003-asphyxia-aha",
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/neonatal-resuscitation",
+      "locator": "2025 AHA/AAP: Abstract, Top10, newborn chain, preparation/initial support; sections15-17 epinephrine, volume expansion, monitoring and HIE cooling; section18 Apgar limits. Actual HTML clinical passages, especially lines41-110 and542-615.",
+      "method": "Independent reviewer opened and read original official clinical HTML/PDF passages; no reliance on author read attestation.",
+      "independence": "US-AHA-AAP"
+    },
+    {
+      "source_id": "p003-asphyxia-qcg",
+      "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0014/140162/g-hie.pdf",
+      "locator": "2021 amendedJuly2024: original PDF3.1-3.6 assessment/differentials/staging/support/transfer;4.3 organ care,4.4 cooling/drug handling/feeding,5.1-5.5 prognosis/imaging/follow-up, pages11-26 and flowcharts.",
+      "method": "Independent reviewer opened and read original official clinical HTML/PDF passages; no reliance on author read attestation.",
+      "independence": "AU-QCG"
+    },
+    {
+      "source_id": "p003-asphyxia-cps",
+      "url": "https://cps.ca/en/documents/position/hypothermia-for-newborns",
+      "locator": "2018 statement reaffirmed2024: background, eligibility/exclusions, passive cooling, adjuncts, imaging, follow-up and recommendations; actual HTML95-213.",
+      "method": "Independent reviewer opened and read original official clinical HTML/PDF passages; no reliance on author read attestation.",
+      "independence": "CA-CPS"
+    },
+    {
+      "source_id": "p003-asphyxia-who",
+      "url": "https://www.who.int/teams/maternal-newborn-child-adolescent-health-and-ageing/newborn-health/perinatal-asphyxia",
+      "locator": "Original WHO Perinatal asphyxia page clinical82-96 and quality/training132-165; no completion of newer guideline inferred.",
+      "method": "Independent reviewer opened and read original official clinical HTML/PDF passages; no reliance on author read attestation.",
+      "independence": "WHO"
+    },
+    {
+      "source_id": "p003-neonatal-sepsis-recognition",
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Recognition_of_the_seriously_unwell_neonate_and_young_infant/",
+      "locator": "RCH May2025: actual complete clinical HTML59-218, history/examination, differential diagnosis, investigations, management/transfer.",
+      "method": "Independent reviewer opened and read original official clinical HTML/PDF passages; no reliance on author read attestation.",
+      "independence": "AU-RCH"
+    },
+    {
+      "source_id": "p003-asphyxia-qcg-resuscitation",
+      "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0011/140600/g-resus.pdf",
+      "locator": "Original38-pagePDF: preparation/documentation7-8, ventilation before compressions24, epinephrine26, indicated volume/blood27, postresuscitation31-32. Only these relevant pages read.",
+      "method": "Independent reviewer opened and read original official clinical HTML/PDF passages; no reliance on author read attestation.",
+      "independence": "AU-QCG"
+    }
+  ],
+  "independence": "AHA/AAP, CPS, QCG, WHO and RCH are distinct authoring bodies, with overlapping resuscitation and cooling trials. QCG HIE and QCG resuscitation count as one group. AHA and ANZCOR/QCG share ILCOR upstream; not independent replications. No clinician sign-off.",
+  "clinical_review": "Both languages and all14 dimensions reviewed against located passages. Recognition and transfer remain immediate; hospital interventions and drug risks retain conditions; birth respiratory severity is separated from evolving HIE; diet and follow-up avoid blanket protocols.",
+  "classification_evidence": {
+    "release": "WHO ICD-11 MMS2026-01",
+    "file": "C:/Users/Damian/AppData/Local/Temp/healthcare-private/p0-icd-2026-01-official.txt",
+    "locator": "Actual frozen text lines62204-62219, printed1252",
+    "method": "Independent rg read of terminal codes, definitions and exclusions; old classification wording not used as a modern resuscitation algorithm."
+  },
+  "category_decisions": [
+    {
+      "code": "KB21.0",
+      "status": "confirmed",
+      "recommendation": "confirmed",
+      "rationale": "Severe birth compromise: emergency support then conditional advanced resuscitation and organ monitoring; HIE assessment and treatment remain a separate eligible branch.",
+      "exclusions_considered": [
+        "KB20 intrauterine hypoxia/asphyxia excluded",
+        "Isolated low Apgar without asphyxia or respiratory problem insufficient",
+        "KB21 severity does not equal Sarnat HIE grade"
+      ],
+      "remaining": []
+    },
+    {
+      "code": "KB21.1",
+      "status": "confirmed",
+      "recommendation": "confirmed",
+      "rationale": "Mild/moderate birth respiratory compromise retains short support and observation; evolving encephalopathy is reassessed, with no automatic HIE diagnosis or cooling.",
+      "exclusions_considered": [
+        "KB20 intrauterine hypoxia/asphyxia excluded",
+        "Isolated low Apgar without asphyxia or respiratory problem insufficient",
+        "KB21 severity does not equal Sarnat HIE grade"
+      ],
+      "remaining": []
+    },
+    {
+      "code": "KB21.Z",
+      "status": "confirmed",
+      "recommendation": "confirmed",
+      "rationale": "Established birth asphyxia with unspecified severity uses observed clinical needs; absence of recorded severity does not create a uniform treatment or permit diagnosis from low Apgar alone.",
+      "exclusions_considered": [
+        "KB20 intrauterine hypoxia/asphyxia excluded",
+        "Isolated low Apgar without asphyxia or respiratory problem insufficient",
+        "KB21 severity does not equal Sarnat HIE grade"
+      ],
+      "remaining": []
+    }
+  ],
+  "scope_decisions": [
+    {
+      "code": "KB21.0",
+      "status": "confirmed",
+      "recommendation": "confirmed",
+      "rationale": "Severe birth compromise: emergency support then conditional advanced resuscitation and organ monitoring; HIE assessment and treatment remain a separate eligible branch.",
+      "exclusions_considered": [
+        "KB20 intrauterine hypoxia/asphyxia excluded",
+        "Isolated low Apgar without asphyxia or respiratory problem insufficient",
+        "KB21 severity does not equal Sarnat HIE grade"
+      ],
+      "remaining": []
+    },
+    {
+      "code": "KB21.1",
+      "status": "confirmed",
+      "recommendation": "confirmed",
+      "rationale": "Mild/moderate birth respiratory compromise retains short support and observation; evolving encephalopathy is reassessed, with no automatic HIE diagnosis or cooling.",
+      "exclusions_considered": [
+        "KB20 intrauterine hypoxia/asphyxia excluded",
+        "Isolated low Apgar without asphyxia or respiratory problem insufficient",
+        "KB21 severity does not equal Sarnat HIE grade"
+      ],
+      "remaining": []
+    },
+    {
+      "code": "KB21.Z",
+      "status": "confirmed",
+      "recommendation": "confirmed",
+      "rationale": "Established birth asphyxia with unspecified severity uses observed clinical needs; absence of recorded severity does not create a uniform treatment or permit diagnosis from low Apgar alone.",
+      "exclusions_considered": [
+        "KB20 intrauterine hypoxia/asphyxia excluded",
+        "Isolated low Apgar without asphyxia or respiratory problem insufficient",
+        "KB21 severity does not equal Sarnat HIE grade"
+      ],
+      "remaining": []
+    }
+  ],
+  "findings": [
+    {
+      "id": "birth-kind",
+      "status": "resolved",
+      "resolution": "Conditional medication claim changed to action; acute and long-term complication claims to risk. Medical prose unchanged."
+    },
+    {
+      "id": "birth-epinephrine-two-source",
+      "status": "resolved",
+      "resolution": "QCG resuscitation original sections5/6.2/6.3 added for the specific ventilation/compression prerequisite and volume-loss context; both new bindings independently reread."
+    },
+    {
+      "id": "birth-upstream-formal-field",
+      "status": "resolved",
+      "resolution": "Structural-only addition of already-reviewed upstream_evidence; corrected RCH identity, retained ILCOR/shared cooling-trial dependency. Body and source metadata unchanged; new records hash independently checked."
+    }
+  ],
+  "dispute_adjudication": {
+    "status": "regional_difference",
+    "resolution": "Current AHA2025 preterm cooling evidence controls the caution; older CPS/QCG35-week suggestions are not generalized. QCG withholds feeds during cooling while CPS permits minimal feeds; public text leaves choice to condition and local specialist protocol.",
+    "issues": [
+      {
+        "issue": "Cooling gestational boundary",
+        "sources": [
+          "p003-asphyxia-aha",
+          "p003-asphyxia-cps",
+          "p003-asphyxia-qcg"
+        ],
+        "resolution": "AHA2025 section17 says under36 weeks no demonstrated benefit and possible harm; older suggestions are historical/conditional. No blanket early-preterm cooling recommendation."
+      },
+      {
+        "issue": "Enteral feeding during cooling",
+        "sources": [
+          "p003-asphyxia-cps",
+          "p003-asphyxia-qcg"
+        ],
+        "resolution": "Genuine protocol difference; individual specialist decision retained, without universal fasting or feeding instruction."
+      }
+    ]
+  },
+  "validation": {
+    "section_hashes": "14/14 current matches",
+    "claims_have_two_authoring_groups": true,
+    "scope": "Mechanical grouping is not the evidence review; claim substance was read separately.",
+    "clinical_signoff": false
+  },
+  "unresolved_questions": [],
+  "remaining_issues": [],
+  "resolution": "Accept exact hashes for educational editorial integration and terminal-leaf scope; not a medical credential or clinical certification."
+}

@@ -1,0 +1,588 @@
+{
+  "status": "authored_pending_independent_review",
+  "author": "/root/astra_p0_neurology",
+  "model": "gpt-6-astra",
+  "checked_at": "2026-10-03",
+  "medical_reviewed": false,
+  "baseline_commit": "f2c5cd8",
+  "topic_id": "status-epilepticus",
+  "mece": "New acute-syndrome article related to existing epilepsy; chronic epilepsy article retained unchanged. Six assigned leaves individually assessed.",
+  "production_modified": false,
+  "coverage_credit": 0,
+  "target": {
+    "body_canonical_sha256": "75a21a26c8571e3c6f9bc86b6ac6fe9d3f027055a8561b33c98ef97cf86d8ac2",
+    "records_canonical_sha256": "ae4356fd8962b6d93703415fc30edd8e85af0b05fd3f3d716f33aecf47b28206",
+    "sources_canonical_sha256": "2bf23ddaed6a380450bbfb18e8dcf2a9b9baeb6d38ef4f93397c3482a4e49464"
+  },
+  "actual_source_reads": [
+    {
+      "source_id": "batch-b-seizure-first-aid",
+      "url": "https://www.nhs.uk/symptoms/what-to-do-if-someone-has-a-seizure-fit/",
+      "locator": "First aid; When to call; Information to note",
+      "source_version": "2023-12-19",
+      "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+      "region": "GB",
+      "independence_group": "UK-NHS",
+      "upstream_evidence": [
+        "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "web open original HTML"
+    },
+    {
+      "source_id": "epilepsy-nhs",
+      "url": "https://www.nhs.uk/conditions/epilepsy/",
+      "locator": "Diagnosis; treatment; self-care; pregnancy; risks",
+      "source_version": "2025-03-06",
+      "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+      "region": "GB",
+      "independence_group": "UK-NHS",
+      "upstream_evidence": [
+        "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "web open original HTML"
+    },
+    {
+      "source_id": "neuro-action-memory",
+      "url": "https://www.epilepsy.org.uk/living/epilepsy-and-wellbeing/memory-problems-and-epilepsy",
+      "locator": "Cognitive problems; seizure/medicine effects; What should I do; Managing memory problems",
+      "source_version": "Live page accessed 2026-10-03; exact review date not established",
+      "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+      "region": "GB",
+      "independence_group": "UK-Epilepsy-Action",
+      "upstream_evidence": [
+        "Independently authored Epilepsy Action patient information; not the Epilepsy Society; shared neuroscience evidence possible. No SE-specific effect estimate inferred."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "web open original HTML"
+    },
+    {
+      "source_id": "neuro-cdc-seizure-first-aid",
+      "url": "https://www.cdc.gov/epilepsy/first-aid-for-seizures/index.html",
+      "locator": "Keeping safe; When to call; What to avoid",
+      "source_version": "2024-05-15",
+      "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+      "region": "US",
+      "independence_group": "CDC",
+      "upstream_evidence": [
+        "CDC links Epilepsy Foundation training; use NHS as independent first-aid counterpart."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "web open original HTML"
+    },
+    {
+      "source_id": "neuro-cleveland-status",
+      "url": "https://my.clevelandclinic.org/health/diseases/24729-status-epilepticus",
+      "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+      "source_version": "2023-02-13",
+      "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+      "region": "US",
+      "independence_group": "US-Cleveland-Clinic",
+      "upstream_evidence": [
+        "Independently edited hospital patient education; cited neurology textbooks, Hantus 2016, Neligan 2019 and StatPearls; not an independent trial."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "web open original HTML"
+    },
+    {
+      "source_id": "neuro-dgn-status-2021",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8484257/",
+      "locator": "English/German abstracts; definitions/Table 1; 3.1–3.4 diagnosis; recommendations stages 1–4; ethical considerations",
+      "source_version": "2021-03-22; accepted 2020-11-17",
+      "population": "Adults with status epilepticus; German/Austrian adult consensus.",
+      "region": "DE-AT",
+      "independence_group": "DGN-OGN",
+      "upstream_evidence": [
+        "Separate DGN/ÖGN consensus; shares ILAE 2015, AES 2016, Salzburg EEG criteria, ESETT with UK guidance. Adult recommendations; regional drug approvals in 2021 not generalized."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original PMC journal HTML via urllib; public CC-BY 4.0 article, relevant German sections read"
+    },
+    {
+      "source_id": "neuro-foundation-imitators",
+      "url": "https://www.epilepsy.com/diagnosis/imitators-epilepsy",
+      "locator": "Overview table; Vasovagal syncope; Cardiac syncope",
+      "source_version": "2019-10-13; review 2021-07-22",
+      "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+      "region": "US",
+      "independence_group": "US-Epilepsy-Foundation",
+      "upstream_evidence": [
+        "Same Epilepsy Foundation group as status page; independent of NICE and DGN."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "web open original HTML"
+    },
+    {
+      "source_id": "neuro-foundation-normal-eeg",
+      "url": "https://www.epilepsy.com/diagnosis/eeg/what-if-its-normal",
+      "locator": "I have seizures but EEG normal; other diagnostic information",
+      "source_version": "2013-08-22",
+      "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+      "region": "US",
+      "independence_group": "US-Epilepsy-Foundation",
+      "upstream_evidence": [
+        "Same Foundation authorship group; old general diagnostic explanation corroborated with NICE 2022; no old medication-withdrawal advice used."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "web open original HTML"
+    },
+    {
+      "source_id": "neuro-foundation-status",
+      "url": "https://www.epilepsy.com/complications-risks/emergencies/status-epilepticus",
+      "locator": "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies",
+      "source_version": "2023-05-12 physician authored/reviewed",
+      "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+      "region": "US",
+      "independence_group": "EPILEPSY-FOUNDATION",
+      "upstream_evidence": [
+        "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "web open original HTML"
+    },
+    {
+      "source_id": "neuro-ics-status-2025",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12062632/",
+      "locator": "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+      "source_version": "2025-05-08",
+      "population": "Hospital patients over 16 years; obstetric population explicitly excluded.",
+      "region": "GB",
+      "independence_group": "UK-ICS",
+      "upstream_evidence": [
+        "Independent multispecialty consensus authors; expressly aligns with NICE, AES, EFNS and Neurocritical Care Society; shares ILAE definitions, ESETT and other trials. Do not count citation agreement as independent trials."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "web open original HTML"
+    },
+    {
+      "source_id": "neuro-nice-eclampsia",
+      "url": "https://www.nice.org.uk/guidance/ng133/chapter/Recommendations",
+      "locator": "1.8.1–1.8.5",
+      "source_version": "1.8 recommendations 2010 amended 2019; live chapter",
+      "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+      "region": "GB",
+      "independence_group": "UK-NICE",
+      "upstream_evidence": [
+        "NICE same group as NG217; eclampsia pathway refers Collaborative Eclampsia Trial."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original NICE HTML via urllib after web 403"
+    },
+    {
+      "source_id": "neuro-nice-epilepsy-diagnosis",
+      "url": "https://www.nice.org.uk/guidance/ng217/chapter/1-Diagnosis-and-assessment-of-epilepsy",
+      "locator": "1.2.1–1.2.10 and rationale",
+      "source_version": "Recommendations 2022; current online chapter",
+      "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+      "region": "GB",
+      "independence_group": "UK-NICE",
+      "upstream_evidence": [
+        "Same NICE group as NG217 status; not counted twice. First suspected seizure/epilepsy assessment supports test explanations, not waiting times during status."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original NICE HTML read via urllib after web 403"
+    },
+    {
+      "source_id": "neuro-nice-status",
+      "url": "https://www.nice.org.uk/guidance/ng217/chapter/7-Treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures",
+      "locator": "7.1.1–7.1.12; 7.2; 7.3 and rationale",
+      "source_version": "2022 recommendations; current rationale mentions January 2025 valproate update",
+      "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+      "region": "GB",
+      "independence_group": "NICE",
+      "upstream_evidence": [
+        "Epilepsy Society explicitly cites this NICE guideline; not independent of NICE for repeated quoted recommendations."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original URL urllib HTTP read after web403, HTML tags removed in memory"
+    },
+    {
+      "source_id": "neuro-rcog-preeclampsia",
+      "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/pre-eclampsia/",
+      "locator": "What is pre-eclampsia; severe pre-eclampsia; after birth",
+      "source_version": "Live patient information accessed 2026-10-03",
+      "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+      "region": "GB",
+      "independence_group": "UK-RCOG",
+      "upstream_evidence": [
+        "Separate RCOG authorship, overlapping UK obstetric guideline evidence including magnesium trials; not independent trial confirmation."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "web open original HTML"
+    },
+    {
+      "source_id": "neuro-rcog-pregnancy",
+      "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/epilepsy-in-pregnancy/",
+      "locator": "Key points; unplanned pregnancy; medicine risks; after birth",
+      "source_version": "Live patient information accessed 2026-10-03",
+      "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+      "region": "GB",
+      "independence_group": "UK-RCOG",
+      "upstream_evidence": [
+        "RCOG independent specialty authoring, overlaps UK guideline evidence. No folate dose or outdated valproate regulatory wording reproduced."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "web open original HTML"
+    },
+    {
+      "source_id": "neuro-society-emergency",
+      "url": "https://epilepsysociety.org.uk/understanding-epilepsy/emergency-medication",
+      "locator": "Non-convulsive status; emergency medications; protocols; training",
+      "source_version": "Header updated 2026-09-07; body says September2025, review September2027",
+      "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+      "region": "GB",
+      "independence_group": "EPILEPSY-SOCIETY",
+      "upstream_evidence": [
+        "Explicit NICE2022 upstream for treatment; separate patient explanation but not second independent evidence for the same NICE recommendation."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "web open original HTML"
+    },
+    {
+      "source_id": "neuro-society-memory",
+      "url": "https://epilepsysociety.org.uk/living-epilepsy/memory-and-epilepsy",
+      "locator": "How epilepsy affects memory; After a seizure; medication; memory aids",
+      "source_version": "October 2024 information; live page accessed 2026-10-03",
+      "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+      "region": "GB",
+      "independence_group": "UK-Epilepsy-Society",
+      "upstream_evidence": [
+        "Separate UK charity clinical review; same group as emergency-medication page. Applies to people with epilepsy, not an SE-specific outcome cohort."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "web open original HTML"
+    },
+    {
+      "source_id": "neuro-merck-seizures",
+      "locator": "Focal seizures/EPC; Status epilepticus; Diagnosis/EEG; Treatment",
+      "source_version": "2026-03; Bola Adamolekun, reviewed Michael Levin",
+      "population": "EPC and focal status; ILAE page is specifically Rasmussen syndrome, not every EPC cause.",
+      "region": "US",
+      "independence_group": "MERCK",
+      "upstream_evidence": [
+        "Merck2026 cites ILAE2025 seizure classification and ILAE2015 status definition. ILAE pages count as one group; distinct clinical authoring, not independent upstream nomenclature."
+      ],
+      "accessed_at": "2026-10-03",
+      "url": "https://www.merckmanuals.com/professional/neurologic-disorders/seizure-disorders/seizure-disorders",
+      "method": "Original HTML actually read; no restricted video or full text downloaded."
+    },
+    {
+      "source_id": "neuro-ilae-rasmussen-seizures",
+      "locator": "Seizures: EPC recurrent focal motor, typically hand/face, variable awareness; textual page only, restricted video not accessed",
+      "source_version": "2024-06-30 current syndrome page",
+      "population": "EPC and focal status; ILAE page is specifically Rasmussen syndrome, not every EPC cause.",
+      "region": "international",
+      "independence_group": "ILAE",
+      "upstream_evidence": [
+        "Merck2026 cites ILAE2025 seizure classification and ILAE2015 status definition. ILAE pages count as one group; distinct clinical authoring, not independent upstream nomenclature."
+      ],
+      "accessed_at": "2026-10-03",
+      "url": "https://www.epilepsydiagnosis.org/syndrome/rasmussen-videos.html",
+      "method": "Original HTML actually read; no restricted video or full text downloaded."
+    },
+    {
+      "source_id": "neuro-ilae-rasmussen-eeg",
+      "locator": "Ictal EEG: EPC may lack scalp EEG change; syndrome-specific context",
+      "source_version": "2024-06-30 current syndrome page",
+      "population": "EPC and focal status; ILAE page is specifically Rasmussen syndrome, not every EPC cause.",
+      "region": "international",
+      "independence_group": "ILAE",
+      "upstream_evidence": [
+        "Merck2026 cites ILAE2025 seizure classification and ILAE2015 status definition. ILAE pages count as one group; distinct clinical authoring, not independent upstream nomenclature."
+      ],
+      "accessed_at": "2026-10-03",
+      "url": "https://www.epilepsydiagnosis.org/syndrome/rasmussen-eeg.html",
+      "method": "Original HTML actually read; no restricted video or full text downloaded."
+    },
+    {
+      "source_id": "neuro-ilae-rasmussen-overview",
+      "locator": "Unilateral inflammatory brain disease; progressive focal seizures and neurological dysfunction",
+      "source_version": "2024-06-30 current syndrome page",
+      "population": "EPC and focal status; ILAE page is specifically Rasmussen syndrome, not every EPC cause.",
+      "region": "international",
+      "independence_group": "ILAE",
+      "upstream_evidence": [
+        "Merck2026 cites ILAE2025 seizure classification and ILAE2015 status definition. ILAE pages count as one group; distinct clinical authoring, not independent upstream nomenclature."
+      ],
+      "accessed_at": "2026-10-03",
+      "url": "https://www.epilepsydiagnosis.org/syndrome/rasmussen-overview.html",
+      "method": "Original HTML actually read; no restricted video or full text downloaded."
+    },
+    {
+      "source_id": "neuro-msd-eclampsia",
+      "url": "https://www.msdmanuals.com/professional/gynecology-and-obstetrics/antenatal-complications/preeclampsia-and-eclampsia",
+      "locator": "Diagnosis differential; Treatment; Magnesium sulfate; Postpartum preeclampsia",
+      "source_version": "Reviewed2024-03; modified2025-11",
+      "population": "Population described in located source; educational synthesis only.",
+      "region": "US",
+      "independence_group": "MERCK-MSD",
+      "upstream_evidence": [
+        "Independent physician-authored synthesis cites ACOG2020; not RCOG adaptation of NICE. Shared magnesium trials possible."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original HTML read"
+    },
+    {
+      "source_id": "neuro-foundation-pnes",
+      "url": "https://www.epilepsy.com/diagnosis/imitators-epilepsy/psychogenic-nonepileptic-seizures",
+      "locator": "What Is PNES; How Is PNES Diagnosed",
+      "source_version": "Live page accessed2026-10-03",
+      "population": "Population described in located source; educational synthesis only.",
+      "region": "US",
+      "independence_group": "EPILEPSY-FOUNDATION",
+      "upstream_evidence": [
+        "Same Foundation group as other epilepsy.com pages; video EEG explanation independent of DGN/ICS authoring."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original HTML clinical paragraphs read; no videos accessed"
+    },
+    {
+      "source_id": "neuro-mayo-status-age",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3083989/",
+      "locator": "Abstract and age-related causes paragraph",
+      "source_version": "2011-03-29",
+      "population": "Population described in located source; educational synthesis only.",
+      "region": "US",
+      "independence_group": "MAYO-MAURICIO-FREEMAN",
+      "upstream_evidence": [
+        "Independent review authors. Used solely stable age-related etiologies, not historical treatment regimens or numerical incidence."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original-author indexed text; direct PMC returned browser challenge"
+    }
+  ],
+  "category_decisions": [
+    {
+      "code": "8A66.0",
+      "status": "candidate_pending_review",
+      "difference": "Convulsive-specific five-minute action and escalation are explicit; no individual doses.",
+      "section_applicability": {
+        "summary": "Convulsive-specific five-minute action and escalation are explicit; no individual doses.",
+        "causes_risks": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "red_flags": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "care": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "diagnosis": "Convulsive-specific five-minute action and escalation are explicit; no individual doses.",
+        "differentials": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "treatment": "Convulsive-specific five-minute action and escalation are explicit; no individual doses.",
+        "medications": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "diet": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "daily_care": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "special_populations": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "prognosis_followup": "Convulsive-specific five-minute action and escalation are explicit; no individual doses.",
+        "complications": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "prevention": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up."
+      },
+      "remaining": [],
+      "exclusions_considered": [
+        "WHO 2026-01 inherited exclusions: syncope MG45; chapters 19 perinatal, 18 maternal, 05 endocrine/metabolic and 22 injury/poisoning. Syndrome education does not complete underlying cause categories.",
+        "Related maternal JB64.3 combination and neonatal KB06 remain separate; acute repetitive seizures with recovery (8A67) are not automatically status."
+      ]
+    },
+    {
+      "code": "8A66.10",
+      "status": "candidate_pending_review",
+      "difference": "Absence is explicitly distinguished within nonconvulsive status, with EEG and individualized therapy; no lay waiting threshold.",
+      "section_applicability": {
+        "summary": "Absence is explicitly distinguished within nonconvulsive status, with EEG and individualized therapy; no lay waiting threshold.",
+        "causes_risks": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "red_flags": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "care": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "diagnosis": "Absence is explicitly distinguished within nonconvulsive status, with EEG and individualized therapy; no lay waiting threshold.",
+        "differentials": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "treatment": "Absence is explicitly distinguished within nonconvulsive status, with EEG and individualized therapy; no lay waiting threshold.",
+        "medications": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "diet": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "daily_care": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "special_populations": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "prognosis_followup": "Absence is explicitly distinguished within nonconvulsive status, with EEG and individualized therapy; no lay waiting threshold.",
+        "complications": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "prevention": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up."
+      },
+      "remaining": [],
+      "exclusions_considered": [
+        "WHO 2026-01 inherited exclusions: syncope MG45; chapters 19 perinatal, 18 maternal, 05 endocrine/metabolic and 22 injury/poisoning. Syndrome education does not complete underlying cause categories.",
+        "Related maternal JB64.3 combination and neonatal KB06 remain separate; acute repetitive seizures with recovery (8A67) are not automatically status."
+      ]
+    },
+    {
+      "code": "8A66.1Y",
+      "status": "candidate_pending_review",
+      "difference": "WHO index expressly includes focal seizures with altered awareness. Diagnostic EEG and coma-versus-behavioural NCSE escalation branches apply; follow-up and prevention remain cause-specific rather than absence-only.",
+      "section_applicability": {
+        "summary": "WHO index expressly includes focal seizures with altered awareness. Diagnostic EEG and coma-versus-behavioural NCSE escalation branches apply; follow-up and prevention remain cause-specific rather than absence-only.",
+        "causes_risks": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "red_flags": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "care": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "diagnosis": "WHO index expressly includes focal seizures with altered awareness. Diagnostic EEG and coma-versus-behavioural NCSE escalation branches apply; follow-up and prevention remain cause-specific rather than absence-only.",
+        "differentials": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "treatment": "WHO index expressly includes focal seizures with altered awareness. Diagnostic EEG and coma-versus-behavioural NCSE escalation branches apply; follow-up and prevention remain cause-specific rather than absence-only.",
+        "medications": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "diet": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "daily_care": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "special_populations": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "prognosis_followup": "WHO index expressly includes focal seizures with altered awareness. Diagnostic EEG and coma-versus-behavioural NCSE escalation branches apply; follow-up and prevention remain cause-specific rather than absence-only.",
+        "complications": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "prevention": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up."
+      },
+      "remaining": [],
+      "exclusions_considered": [
+        "WHO 2026-01 inherited exclusions: syncope MG45; chapters 19 perinatal, 18 maternal, 05 endocrine/metabolic and 22 injury/poisoning. Syndrome education does not complete underlying cause categories.",
+        "Related maternal JB64.3 combination and neonatal KB06 remain separate; acute repetitive seizures with recovery (8A67) are not automatically status."
+      ]
+    },
+    {
+      "code": "8A66.1Z",
+      "status": "candidate_pending_review",
+      "difference": "Unspecified nonconvulsive form requires EEG and etiologic clarification; absence-only treatment is not assumed.",
+      "section_applicability": {
+        "summary": "Unspecified nonconvulsive form requires EEG and etiologic clarification; absence-only treatment is not assumed.",
+        "causes_risks": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "red_flags": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "care": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "diagnosis": "Unspecified nonconvulsive form requires EEG and etiologic clarification; absence-only treatment is not assumed.",
+        "differentials": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "treatment": "Unspecified nonconvulsive form requires EEG and etiologic clarification; absence-only treatment is not assumed.",
+        "medications": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "diet": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "daily_care": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "special_populations": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "prognosis_followup": "Unspecified nonconvulsive form requires EEG and etiologic clarification; absence-only treatment is not assumed.",
+        "complications": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "prevention": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up."
+      },
+      "remaining": [],
+      "exclusions_considered": [
+        "WHO 2026-01 inherited exclusions: syncope MG45; chapters 19 perinatal, 18 maternal, 05 endocrine/metabolic and 22 injury/poisoning. Syndrome education does not complete underlying cause categories.",
+        "Related maternal JB64.3 combination and neonatal KB06 remain separate; acute repetitive seizures with recovery (8A67) are not automatically status."
+      ]
+    },
+    {
+      "code": "8A66.Y",
+      "status": "candidate_pending_review",
+      "difference": "WHO8A66.Y includes EPC/Kozhevnikov syndrome. Added preserved-awareness focal motor presentation, structural/inflammatory causes, scalp EEG limits and individualized focal-status escalation; shared care, medicines, diet, safety, follow-up and functional rehabilitation apply subject to awareness and cause. No claim to complete every underlying rare disease.",
+      "section_applicability": {
+        "summary": "WHO index expressly includes epilepsia partialis continua and Kozhevnikov syndrome. This is a specific focal motor clinical pathway, not an unlimited rare-case completeness demand.",
+        "causes_risks": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "red_flags": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "care": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "diagnosis": "WHO index expressly includes epilepsia partialis continua and Kozhevnikov syndrome. This is a specific focal motor clinical pathway, not an unlimited rare-case completeness demand.",
+        "differentials": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "treatment": "WHO index expressly includes epilepsia partialis continua and Kozhevnikov syndrome. This is a specific focal motor clinical pathway, not an unlimited rare-case completeness demand.",
+        "medications": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "diet": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "daily_care": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "special_populations": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "prognosis_followup": "WHO index expressly includes epilepsia partialis continua and Kozhevnikov syndrome. This is a specific focal motor clinical pathway, not an unlimited rare-case completeness demand.",
+        "complications": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "prevention": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up."
+      },
+      "remaining": [
+        "Reviewer must confirm EPC clinical-core branch and precise scoped source bindings; do not infer coverage from the residual code title alone."
+      ],
+      "exclusions_considered": [
+        "WHO 2026-01 inherited exclusions: syncope MG45; chapters 19 perinatal, 18 maternal, 05 endocrine/metabolic and 22 injury/poisoning. Syndrome education does not complete underlying cause categories.",
+        "Related maternal JB64.3 combination and neonatal KB06 remain separate; acute repetitive seizures with recovery (8A67) are not automatically status."
+      ]
+    },
+    {
+      "code": "8A66.Z",
+      "status": "candidate_pending_review",
+      "difference": "Unspecified type uses emergency stabilization and testing, followed by type-specific care; no automatic epilepsy diagnosis.",
+      "section_applicability": {
+        "summary": "Unspecified type uses emergency stabilization and testing, followed by type-specific care; no automatic epilepsy diagnosis.",
+        "causes_risks": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "red_flags": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "care": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "diagnosis": "Unspecified type uses emergency stabilization and testing, followed by type-specific care; no automatic epilepsy diagnosis.",
+        "differentials": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "treatment": "Unspecified type uses emergency stabilization and testing, followed by type-specific care; no automatic epilepsy diagnosis.",
+        "medications": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "diet": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "daily_care": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "special_populations": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "prognosis_followup": "Unspecified type uses emergency stabilization and testing, followed by type-specific care; no automatic epilepsy diagnosis.",
+        "complications": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up.",
+        "prevention": "Shared syndrome education applies; subtype diagnostic/treatment differences are explicit in summary, diagnosis, treatment and follow-up."
+      },
+      "remaining": [],
+      "exclusions_considered": [
+        "WHO 2026-01 inherited exclusions: syncope MG45; chapters 19 perinatal, 18 maternal, 05 endocrine/metabolic and 22 injury/poisoning. Syndrome education does not complete underlying cause categories.",
+        "Related maternal JB64.3 combination and neonatal KB06 remain separate; acute repetitive seizures with recovery (8A67) are not automatically status."
+      ]
+    }
+  ],
+  "unresolved_questions": [
+    "Independent clinical-core and bilingual evidence review remains required; no coverage credit before acceptance.",
+    "EPC treatment statement is cause-directed focal-status guidance, not a condition-specific randomized regimen or mandatory anesthetic protocol."
+  ],
+  "inherited_sections": [],
+  "changed_sections": [
+    "summary",
+    "causes_risks",
+    "red_flags",
+    "care",
+    "diagnosis",
+    "differentials",
+    "treatment",
+    "medications",
+    "diet",
+    "daily_care",
+    "special_populations",
+    "prognosis_followup",
+    "complications",
+    "prevention"
+  ],
+  "depth_revision": {
+    "previous_body_canonical_sha256": "644d50485f6285281791a2be43bff033c2326d8076cafb1d7eed2404b71ca2d7",
+    "reason": "Parent withheld shallow initial draft; added substantive diagnostic purposes/limits, causes, differential explanations, escalation, actual medicine classes, obstetric/age conditions, respiratory and cognitive recovery.",
+    "review_status": "Not independently reviewed. WHO residual-code definition and cauda/stroke drafts remain in progress."
+  },
+  "classification_actual_reads": [
+    {
+      "url": "https://icd.who.int/browse/2026-01/mms/en#906174792",
+      "locator": "8A66 description",
+      "method": "Edge visible DOM",
+      "accessed_at": "2026-10-03",
+      "observation": "WHO definition: five minutes continuous clinical/electrographic or recurrent without baseline recovery."
+    },
+    {
+      "url": "https://icd.who.int/browse/2026-01/mms/en#36262213%2Fother",
+      "locator": "8A66.1Y expanded All Index Terms and inherited exclusions",
+      "method": "Edge visible DOM",
+      "accessed_at": "2026-10-03",
+      "observation": "Index: status epilepticus due to focal seizures with altered awareness. Exclusions recorded per code."
+    },
+    {
+      "url": "https://icd.who.int/browse/2026-01/mms/en#906174792%2Fother",
+      "locator": "8A66.Y expanded All Index Terms and inherited exclusions",
+      "method": "Edge visible DOM",
+      "accessed_at": "2026-10-03",
+      "observation": "Index: epilepsia partialis continua; Kozhevnikov syndrome."
+    },
+    {
+      "url": "https://www.epilepsydiagnosis.org/syndrome/rasmussen-videos.html",
+      "locator": "Seizures paragraph, updated June 30 2024; no videos read",
+      "method": "Original ILAE HTML",
+      "accessed_at": "2026-10-03",
+      "observation": "EPC definition recurrent localized motor seizures, frequently hand/face over prolonged periods."
+    },
+    {
+      "url": "https://www.epilepsydiagnosis.org/syndrome/rasmussen-eeg.html",
+      "locator": "Ictal paragraph, updated June 30 2024",
+      "method": "Original ILAE HTML",
+      "accessed_at": "2026-10-03",
+      "observation": "EPC may not have surface EEG change; not added as fully dual-supported public claim."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38740401/",
+      "locator": "Author abstract and affiliations; full text not accessed",
+      "method": "Original author abstract on PubMed",
+      "accessed_at": "2026-10-03",
+      "observation": "Muthaffar/Alyazidi 2024 KAU expert review discusses EPC focal motor features, etiology, work-up and management; not an NIH recommendation or formal guideline. Publisher/PMC fulltext attempt failed."
+    }
+  ],
+  "epc_revision": "Expanded WHO-listed EPC distinct core; ILAE and Merck independently authored pages share upstream ILAE terminology. DGN/ICS provide conditional focal-status escalation. Earlier shallow draft replaced with substantive56+4claims.",
+  "structural_fix": "Added bilingual search terms from existing clinical text; sections and claims unchanged.",
+  "independent_review_fix": "Kind corrections; independent MSD eclampsia; accessible Cleveland action/risk supports; Mayo age-related causes; precise Foundation PNES child added. No medical signoff."
+}

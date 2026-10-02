@@ -1,32 +1,39 @@
 {
   "purpose": "Validate recorded editorial evidence and content binding, not actual medical support.",
-  "conditions": 93,
+  "conditions": 98,
   "knowledge_entries": 56,
-  "required_sections": 1610,
-  "recorded_checks": 336,
-  "qualified_sections": 336,
+  "required_sections": 1680,
+  "recorded_checks": 434,
+  "qualified_sections": 434,
   "qualified_condition_ids": [
     "anaphylaxis",
     "aortic-dissection",
     "appendicitis",
     "ards",
     "asphyxiation",
+    "birth-asphyxia",
     "cardiac-arrest",
     "cauda-equina-syndrome",
     "diabetic-ketoacidosis",
     "eclampsia",
+    "ectopic-pregnancy",
     "epiglottitis",
     "heatstroke",
     "intracerebral-hemorrhage",
+    "ischemic-stroke",
     "meningitis",
     "myocardial-infarction",
+    "neonatal-sepsis",
     "obstructive-sleep-apnea",
     "postpartum-hemorrhage",
+    "puerperal-sepsis",
     "pulmonary-embolism",
     "retinal-detachment",
     "sepsis",
     "severe-dengue",
     "sjs-ten",
+    "status-epilepticus",
+    "stroke",
     "sudden-hearing-loss",
     "suicidal-ideation",
     "testicular-torsion"
@@ -39,7 +46,7 @@
     "content_binding": "not_recorded_in_legacy_format"
   },
   "states": {
-    "qualified_record": 336
+    "qualified_record": 434
   },
   "issues": [],
   "targets": [
@@ -429,6 +436,45 @@
       ],
       "qualified_sections": [],
       "qualified": false
+    },
+    {
+      "target": {
+        "kind": "condition",
+        "id": "birth-asphyxia"
+      },
+      "required_sections": [
+        "summary",
+        "causes_risks",
+        "red_flags",
+        "care",
+        "diagnosis",
+        "differentials",
+        "treatment",
+        "medications",
+        "diet",
+        "daily_care",
+        "special_populations",
+        "prognosis_followup",
+        "complications",
+        "prevention"
+      ],
+      "qualified_sections": [
+        "summary",
+        "causes_risks",
+        "red_flags",
+        "care",
+        "diagnosis",
+        "differentials",
+        "treatment",
+        "medications",
+        "diet",
+        "daily_care",
+        "special_populations",
+        "prognosis_followup",
+        "complications",
+        "prevention"
+      ],
+      "qualified": true
     },
     {
       "target": {
@@ -1039,8 +1085,23 @@
         "complications",
         "prevention"
       ],
-      "qualified_sections": [],
-      "qualified": false
+      "qualified_sections": [
+        "summary",
+        "causes_risks",
+        "red_flags",
+        "care",
+        "diagnosis",
+        "differentials",
+        "treatment",
+        "medications",
+        "diet",
+        "daily_care",
+        "special_populations",
+        "prognosis_followup",
+        "complications",
+        "prevention"
+      ],
+      "qualified": true
     },
     {
       "target": {
@@ -1570,6 +1631,45 @@
     {
       "target": {
         "kind": "condition",
+        "id": "ischemic-stroke"
+      },
+      "required_sections": [
+        "summary",
+        "causes_risks",
+        "care",
+        "diagnosis",
+        "differentials",
+        "treatment",
+        "medications",
+        "special_populations",
+        "prevention",
+        "red_flags",
+        "daily_care",
+        "prognosis_followup",
+        "complications",
+        "diet"
+      ],
+      "qualified_sections": [
+        "summary",
+        "causes_risks",
+        "care",
+        "diagnosis",
+        "differentials",
+        "treatment",
+        "medications",
+        "special_populations",
+        "prevention",
+        "red_flags",
+        "daily_care",
+        "prognosis_followup",
+        "complications",
+        "diet"
+      ],
+      "qualified": true
+    },
+    {
+      "target": {
+        "kind": "condition",
         "id": "kidney-stones"
       },
       "required_sections": [
@@ -1706,6 +1806,45 @@
       "target": {
         "kind": "condition",
         "id": "myocardial-infarction"
+      },
+      "required_sections": [
+        "summary",
+        "causes_risks",
+        "red_flags",
+        "care",
+        "diagnosis",
+        "differentials",
+        "treatment",
+        "medications",
+        "diet",
+        "daily_care",
+        "special_populations",
+        "prognosis_followup",
+        "complications",
+        "prevention"
+      ],
+      "qualified_sections": [
+        "summary",
+        "causes_risks",
+        "red_flags",
+        "care",
+        "diagnosis",
+        "differentials",
+        "treatment",
+        "medications",
+        "diet",
+        "daily_care",
+        "special_populations",
+        "prognosis_followup",
+        "complications",
+        "prevention"
+      ],
+      "qualified": true
+    },
+    {
+      "target": {
+        "kind": "condition",
+        "id": "neonatal-sepsis"
       },
       "required_sections": [
         "summary",
@@ -2086,6 +2225,45 @@
     {
       "target": {
         "kind": "condition",
+        "id": "puerperal-sepsis"
+      },
+      "required_sections": [
+        "summary",
+        "causes_risks",
+        "red_flags",
+        "care",
+        "diagnosis",
+        "differentials",
+        "treatment",
+        "medications",
+        "diet",
+        "daily_care",
+        "special_populations",
+        "prognosis_followup",
+        "complications",
+        "prevention"
+      ],
+      "qualified_sections": [
+        "summary",
+        "causes_risks",
+        "red_flags",
+        "care",
+        "diagnosis",
+        "differentials",
+        "treatment",
+        "medications",
+        "diet",
+        "daily_care",
+        "special_populations",
+        "prognosis_followup",
+        "complications",
+        "prevention"
+      ],
+      "qualified": true
+    },
+    {
+      "target": {
+        "kind": "condition",
         "id": "pulmonary-embolism"
       },
       "required_sections": [
@@ -2401,6 +2579,45 @@
     {
       "target": {
         "kind": "condition",
+        "id": "status-epilepticus"
+      },
+      "required_sections": [
+        "summary",
+        "causes_risks",
+        "red_flags",
+        "care",
+        "diagnosis",
+        "differentials",
+        "treatment",
+        "medications",
+        "diet",
+        "daily_care",
+        "special_populations",
+        "prognosis_followup",
+        "complications",
+        "prevention"
+      ],
+      "qualified_sections": [
+        "summary",
+        "causes_risks",
+        "red_flags",
+        "care",
+        "diagnosis",
+        "differentials",
+        "treatment",
+        "medications",
+        "diet",
+        "daily_care",
+        "special_populations",
+        "prognosis_followup",
+        "complications",
+        "prevention"
+      ],
+      "qualified": true
+    },
+    {
+      "target": {
+        "kind": "condition",
         "id": "stroke"
       },
       "required_sections": [
@@ -2419,8 +2636,23 @@
         "complications",
         "prevention"
       ],
-      "qualified_sections": [],
-      "qualified": false
+      "qualified_sections": [
+        "summary",
+        "causes_risks",
+        "red_flags",
+        "care",
+        "diagnosis",
+        "differentials",
+        "treatment",
+        "medications",
+        "diet",
+        "daily_care",
+        "special_populations",
+        "prognosis_followup",
+        "complications",
+        "prevention"
+      ],
+      "qualified": true
     },
     {
       "target": {
@@ -5059,6 +5291,146 @@
       "issues": []
     },
     {
+      "id": "p003-birth-asphyxia-summary",
+      "target": {
+        "kind": "condition",
+        "id": "birth-asphyxia",
+        "section": "summary"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-birth-asphyxia-causes-risks",
+      "target": {
+        "kind": "condition",
+        "id": "birth-asphyxia",
+        "section": "causes_risks"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-birth-asphyxia-red-flags",
+      "target": {
+        "kind": "condition",
+        "id": "birth-asphyxia",
+        "section": "red_flags"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-birth-asphyxia-care",
+      "target": {
+        "kind": "condition",
+        "id": "birth-asphyxia",
+        "section": "care"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-birth-asphyxia-diagnosis",
+      "target": {
+        "kind": "condition",
+        "id": "birth-asphyxia",
+        "section": "diagnosis"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-birth-asphyxia-differentials",
+      "target": {
+        "kind": "condition",
+        "id": "birth-asphyxia",
+        "section": "differentials"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-birth-asphyxia-treatment",
+      "target": {
+        "kind": "condition",
+        "id": "birth-asphyxia",
+        "section": "treatment"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-birth-asphyxia-medications",
+      "target": {
+        "kind": "condition",
+        "id": "birth-asphyxia",
+        "section": "medications"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-birth-asphyxia-diet",
+      "target": {
+        "kind": "condition",
+        "id": "birth-asphyxia",
+        "section": "diet"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-birth-asphyxia-daily-care",
+      "target": {
+        "kind": "condition",
+        "id": "birth-asphyxia",
+        "section": "daily_care"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-birth-asphyxia-special-populations",
+      "target": {
+        "kind": "condition",
+        "id": "birth-asphyxia",
+        "section": "special_populations"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-birth-asphyxia-prognosis-followup",
+      "target": {
+        "kind": "condition",
+        "id": "birth-asphyxia",
+        "section": "prognosis_followup"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-birth-asphyxia-complications",
+      "target": {
+        "kind": "condition",
+        "id": "birth-asphyxia",
+        "section": "complications"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-birth-asphyxia-prevention",
+      "target": {
+        "kind": "condition",
+        "id": "birth-asphyxia",
+        "section": "prevention"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
       "id": "p003-cardiac-arrest-summary",
       "target": {
         "kind": "condition",
@@ -5619,6 +5991,146 @@
       "issues": []
     },
     {
+      "id": "p003-ectopic-summary",
+      "target": {
+        "kind": "condition",
+        "id": "ectopic-pregnancy",
+        "section": "summary"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-ectopic-causes-risks",
+      "target": {
+        "kind": "condition",
+        "id": "ectopic-pregnancy",
+        "section": "causes_risks"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-ectopic-red-flags",
+      "target": {
+        "kind": "condition",
+        "id": "ectopic-pregnancy",
+        "section": "red_flags"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-ectopic-care",
+      "target": {
+        "kind": "condition",
+        "id": "ectopic-pregnancy",
+        "section": "care"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-ectopic-diagnosis",
+      "target": {
+        "kind": "condition",
+        "id": "ectopic-pregnancy",
+        "section": "diagnosis"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-ectopic-differentials",
+      "target": {
+        "kind": "condition",
+        "id": "ectopic-pregnancy",
+        "section": "differentials"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-ectopic-treatment",
+      "target": {
+        "kind": "condition",
+        "id": "ectopic-pregnancy",
+        "section": "treatment"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-ectopic-medications",
+      "target": {
+        "kind": "condition",
+        "id": "ectopic-pregnancy",
+        "section": "medications"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-ectopic-diet",
+      "target": {
+        "kind": "condition",
+        "id": "ectopic-pregnancy",
+        "section": "diet"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-ectopic-daily-care",
+      "target": {
+        "kind": "condition",
+        "id": "ectopic-pregnancy",
+        "section": "daily_care"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-ectopic-special-populations",
+      "target": {
+        "kind": "condition",
+        "id": "ectopic-pregnancy",
+        "section": "special_populations"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-ectopic-prognosis-followup",
+      "target": {
+        "kind": "condition",
+        "id": "ectopic-pregnancy",
+        "section": "prognosis_followup"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-ectopic-complications",
+      "target": {
+        "kind": "condition",
+        "id": "ectopic-pregnancy",
+        "section": "complications"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-ectopic-prevention",
+      "target": {
+        "kind": "condition",
+        "id": "ectopic-pregnancy",
+        "section": "prevention"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
       "id": "p0-03-epiglottitis-summary",
       "target": {
         "kind": "condition",
@@ -6039,6 +6551,146 @@
       "issues": []
     },
     {
+      "id": "p0-03-ischemic-summary",
+      "target": {
+        "kind": "condition",
+        "id": "ischemic-stroke",
+        "section": "summary"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-ischemic-causes_risks",
+      "target": {
+        "kind": "condition",
+        "id": "ischemic-stroke",
+        "section": "causes_risks"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-ischemic-care",
+      "target": {
+        "kind": "condition",
+        "id": "ischemic-stroke",
+        "section": "care"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-ischemic-diagnosis",
+      "target": {
+        "kind": "condition",
+        "id": "ischemic-stroke",
+        "section": "diagnosis"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-ischemic-differentials",
+      "target": {
+        "kind": "condition",
+        "id": "ischemic-stroke",
+        "section": "differentials"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-ischemic-treatment",
+      "target": {
+        "kind": "condition",
+        "id": "ischemic-stroke",
+        "section": "treatment"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-ischemic-medications",
+      "target": {
+        "kind": "condition",
+        "id": "ischemic-stroke",
+        "section": "medications"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-ischemic-special_populations",
+      "target": {
+        "kind": "condition",
+        "id": "ischemic-stroke",
+        "section": "special_populations"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-ischemic-prevention",
+      "target": {
+        "kind": "condition",
+        "id": "ischemic-stroke",
+        "section": "prevention"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-ischemic-red_flags",
+      "target": {
+        "kind": "condition",
+        "id": "ischemic-stroke",
+        "section": "red_flags"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-ischemic-daily_care",
+      "target": {
+        "kind": "condition",
+        "id": "ischemic-stroke",
+        "section": "daily_care"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-ischemic-prognosis_followup",
+      "target": {
+        "kind": "condition",
+        "id": "ischemic-stroke",
+        "section": "prognosis_followup"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-ischemic-complications",
+      "target": {
+        "kind": "condition",
+        "id": "ischemic-stroke",
+        "section": "complications"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-ischemic-diet",
+      "target": {
+        "kind": "condition",
+        "id": "ischemic-stroke",
+        "section": "diet"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
       "id": "p0-01-meningitis-summary",
       "target": {
         "kind": "condition",
@@ -6179,6 +6831,146 @@
       "issues": []
     },
     {
+      "id": "p003-neonatal-sepsis-summary",
+      "target": {
+        "kind": "condition",
+        "id": "neonatal-sepsis",
+        "section": "summary"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-neonatal-sepsis-causes-risks",
+      "target": {
+        "kind": "condition",
+        "id": "neonatal-sepsis",
+        "section": "causes_risks"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-neonatal-sepsis-red-flags",
+      "target": {
+        "kind": "condition",
+        "id": "neonatal-sepsis",
+        "section": "red_flags"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-neonatal-sepsis-care",
+      "target": {
+        "kind": "condition",
+        "id": "neonatal-sepsis",
+        "section": "care"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-neonatal-sepsis-diagnosis",
+      "target": {
+        "kind": "condition",
+        "id": "neonatal-sepsis",
+        "section": "diagnosis"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-neonatal-sepsis-differentials",
+      "target": {
+        "kind": "condition",
+        "id": "neonatal-sepsis",
+        "section": "differentials"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-neonatal-sepsis-treatment",
+      "target": {
+        "kind": "condition",
+        "id": "neonatal-sepsis",
+        "section": "treatment"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-neonatal-sepsis-medications",
+      "target": {
+        "kind": "condition",
+        "id": "neonatal-sepsis",
+        "section": "medications"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-neonatal-sepsis-diet",
+      "target": {
+        "kind": "condition",
+        "id": "neonatal-sepsis",
+        "section": "diet"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-neonatal-sepsis-daily-care",
+      "target": {
+        "kind": "condition",
+        "id": "neonatal-sepsis",
+        "section": "daily_care"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-neonatal-sepsis-special-populations",
+      "target": {
+        "kind": "condition",
+        "id": "neonatal-sepsis",
+        "section": "special_populations"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-neonatal-sepsis-prognosis-followup",
+      "target": {
+        "kind": "condition",
+        "id": "neonatal-sepsis",
+        "section": "prognosis_followup"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-neonatal-sepsis-complications",
+      "target": {
+        "kind": "condition",
+        "id": "neonatal-sepsis",
+        "section": "complications"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-neonatal-sepsis-prevention",
+      "target": {
+        "kind": "condition",
+        "id": "neonatal-sepsis",
+        "section": "prevention"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
       "id": "p001-postpartum-hemorrhage-summary",
       "target": {
         "kind": "condition",
@@ -6313,6 +7105,146 @@
       "target": {
         "kind": "condition",
         "id": "postpartum-hemorrhage",
+        "section": "prevention"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-puerperal-sepsis-summary",
+      "target": {
+        "kind": "condition",
+        "id": "puerperal-sepsis",
+        "section": "summary"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-puerperal-sepsis-causes-risks",
+      "target": {
+        "kind": "condition",
+        "id": "puerperal-sepsis",
+        "section": "causes_risks"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-puerperal-sepsis-red-flags",
+      "target": {
+        "kind": "condition",
+        "id": "puerperal-sepsis",
+        "section": "red_flags"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-puerperal-sepsis-care",
+      "target": {
+        "kind": "condition",
+        "id": "puerperal-sepsis",
+        "section": "care"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-puerperal-sepsis-diagnosis",
+      "target": {
+        "kind": "condition",
+        "id": "puerperal-sepsis",
+        "section": "diagnosis"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-puerperal-sepsis-differentials",
+      "target": {
+        "kind": "condition",
+        "id": "puerperal-sepsis",
+        "section": "differentials"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-puerperal-sepsis-treatment",
+      "target": {
+        "kind": "condition",
+        "id": "puerperal-sepsis",
+        "section": "treatment"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-puerperal-sepsis-medications",
+      "target": {
+        "kind": "condition",
+        "id": "puerperal-sepsis",
+        "section": "medications"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-puerperal-sepsis-diet",
+      "target": {
+        "kind": "condition",
+        "id": "puerperal-sepsis",
+        "section": "diet"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-puerperal-sepsis-daily-care",
+      "target": {
+        "kind": "condition",
+        "id": "puerperal-sepsis",
+        "section": "daily_care"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-puerperal-sepsis-special-populations",
+      "target": {
+        "kind": "condition",
+        "id": "puerperal-sepsis",
+        "section": "special_populations"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-puerperal-sepsis-prognosis-followup",
+      "target": {
+        "kind": "condition",
+        "id": "puerperal-sepsis",
+        "section": "prognosis_followup"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-puerperal-sepsis-complications",
+      "target": {
+        "kind": "condition",
+        "id": "puerperal-sepsis",
+        "section": "complications"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p003-puerperal-sepsis-prevention",
+      "target": {
+        "kind": "condition",
+        "id": "puerperal-sepsis",
         "section": "prevention"
       },
       "state": "qualified_record",
@@ -6733,6 +7665,286 @@
       "target": {
         "kind": "condition",
         "id": "sjs-ten",
+        "section": "prevention"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-status-epilepticus-summary",
+      "target": {
+        "kind": "condition",
+        "id": "status-epilepticus",
+        "section": "summary"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-status-epilepticus-causes_risks",
+      "target": {
+        "kind": "condition",
+        "id": "status-epilepticus",
+        "section": "causes_risks"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-status-epilepticus-red_flags",
+      "target": {
+        "kind": "condition",
+        "id": "status-epilepticus",
+        "section": "red_flags"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-status-epilepticus-care",
+      "target": {
+        "kind": "condition",
+        "id": "status-epilepticus",
+        "section": "care"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-status-epilepticus-diagnosis",
+      "target": {
+        "kind": "condition",
+        "id": "status-epilepticus",
+        "section": "diagnosis"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-status-epilepticus-differentials",
+      "target": {
+        "kind": "condition",
+        "id": "status-epilepticus",
+        "section": "differentials"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-status-epilepticus-treatment",
+      "target": {
+        "kind": "condition",
+        "id": "status-epilepticus",
+        "section": "treatment"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-status-epilepticus-medications",
+      "target": {
+        "kind": "condition",
+        "id": "status-epilepticus",
+        "section": "medications"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-status-epilepticus-diet",
+      "target": {
+        "kind": "condition",
+        "id": "status-epilepticus",
+        "section": "diet"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-status-epilepticus-daily_care",
+      "target": {
+        "kind": "condition",
+        "id": "status-epilepticus",
+        "section": "daily_care"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-status-epilepticus-special_populations",
+      "target": {
+        "kind": "condition",
+        "id": "status-epilepticus",
+        "section": "special_populations"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-status-epilepticus-prognosis_followup",
+      "target": {
+        "kind": "condition",
+        "id": "status-epilepticus",
+        "section": "prognosis_followup"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-status-epilepticus-complications",
+      "target": {
+        "kind": "condition",
+        "id": "status-epilepticus",
+        "section": "complications"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-status-epilepticus-prevention",
+      "target": {
+        "kind": "condition",
+        "id": "status-epilepticus",
+        "section": "prevention"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-stroke-summary",
+      "target": {
+        "kind": "condition",
+        "id": "stroke",
+        "section": "summary"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-stroke-causes_risks",
+      "target": {
+        "kind": "condition",
+        "id": "stroke",
+        "section": "causes_risks"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-stroke-red_flags",
+      "target": {
+        "kind": "condition",
+        "id": "stroke",
+        "section": "red_flags"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-stroke-care",
+      "target": {
+        "kind": "condition",
+        "id": "stroke",
+        "section": "care"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-stroke-diagnosis",
+      "target": {
+        "kind": "condition",
+        "id": "stroke",
+        "section": "diagnosis"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-stroke-differentials",
+      "target": {
+        "kind": "condition",
+        "id": "stroke",
+        "section": "differentials"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-stroke-treatment",
+      "target": {
+        "kind": "condition",
+        "id": "stroke",
+        "section": "treatment"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-stroke-medications",
+      "target": {
+        "kind": "condition",
+        "id": "stroke",
+        "section": "medications"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-stroke-diet",
+      "target": {
+        "kind": "condition",
+        "id": "stroke",
+        "section": "diet"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-stroke-daily_care",
+      "target": {
+        "kind": "condition",
+        "id": "stroke",
+        "section": "daily_care"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-stroke-special_populations",
+      "target": {
+        "kind": "condition",
+        "id": "stroke",
+        "section": "special_populations"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-stroke-prognosis_followup",
+      "target": {
+        "kind": "condition",
+        "id": "stroke",
+        "section": "prognosis_followup"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-stroke-complications",
+      "target": {
+        "kind": "condition",
+        "id": "stroke",
+        "section": "complications"
+      },
+      "state": "qualified_record",
+      "issues": []
+    },
+    {
+      "id": "p0-03-stroke-prevention",
+      "target": {
+        "kind": "condition",
+        "id": "stroke",
         "section": "prevention"
       },
       "state": "qualified_record",

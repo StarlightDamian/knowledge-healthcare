@@ -1,0 +1,2730 @@
+[
+  {
+    "condition_id": "birth-asphyxia",
+    "checked_at": "2026-10-03",
+    "independent_review": "reports/p0-03-birth-asphyxia-independent.json",
+    "inspected_sources": [
+      {
+        "source_id": "p003-asphyxia-aha",
+        "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/neonatal-resuscitation",
+        "locators": [
+          "Abstract/17",
+          "Abstract/Respiratory support",
+          "Initial steps/ventilation",
+          "Preparation/17",
+          "17 | Ventilation/Compressions",
+          "Epinephrine/Volume expansion",
+          "17",
+          "Initial steps/Temperature/Ventilation | Preparation"
+        ],
+        "retrieval_scope": "2025 guideline; actual official HTML abstract, preparation, temperature, ventilation, chest compressions, medications and section17 post-resuscitation. Shared ILCOR evidence, AAP reprint not an independent source. 2025 recommendation does not support routine cooling below36weeks."
+      },
+      {
+        "source_id": "p003-asphyxia-cps",
+        "url": "https://cps.ca/en/documents/position/hypothermia-for-newborns",
+        "locators": [
+          "Background",
+          "Eligibility B",
+          "Where should hypothermia be provided",
+          "Adjuncts/Side effects | Eligibility A/B/C | Eligibility/MRI/Follow-up",
+          "Eligibility/Where",
+          "Adjunct therapies",
+          "Adjunct therapies enteral feeds | Follow-up multidisciplinary",
+          "Follow-up | Where/Follow-up",
+          "Eligibility/Exclusions",
+          "Follow-up",
+          "Follow-up | Side effects/Adjuncts"
+        ],
+        "retrieval_scope": "2018-06-12 reaffirmed2024-01-11. Actual official HTML and urllib text: background, eligibility, exclusion, adverse effects, adjuncts including feeding, MRI and multidisciplinary follow-up. Shares cooling trials with QCG/AHA; older35week suggestion not generalized."
+      },
+      {
+        "source_id": "p003-asphyxia-qcg",
+        "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0014/140162/g-hie.pdf",
+        "locators": [
+          "3.1/3.4",
+          "Background/clinical assessment",
+          "3.1/3.5",
+          "3.5-3.6 | 3.6",
+          "3.1/5.1 | 3.2/4.3 | 5.2-5.3",
+          "3.1 Differential diagnosis | 3.1/5.2",
+          "3.5",
+          "3.5/4.3 | 4.3/4.4.2",
+          "4.3 Gastrointestinal/4.4.2 | 4.3.4/5.1/5.5",
+          "4.3.4/5.5 | 5.5",
+          "3.3-3.5 | 4.4",
+          "5.1-5.4 | 5.4-5.5",
+          "4.3 | 5.4"
+        ],
+        "retrieval_scope": "MN21.11-V12-R26 December2021 amendedJuly2024. Actual official PDF p3-4 pathways, p11-15 diagnosis/staging/initialcare, p20-22 organ support/nutrition/sedation/cooling, p24-26 imaging/outcomes/discharge. Web PDF succeeded; urllib403. Historical35week cooling threshold not adopted against newer2025AHA evidence."
+      },
+      {
+        "source_id": "p003-asphyxia-who",
+        "url": "https://www.who.int/teams/maternal-newborn-child-adolescent-health-and-ageing/newborn-health/perinatal-asphyxia",
+        "locators": [
+          "Overview",
+          "Overview",
+          "Overview",
+          "Overview | Quality of care"
+        ],
+        "retrieval_scope": "Actual entire official overview: failure to establish breathing, delivery complications, drying/warming/stimulation and assisted ventilation, systems/training/followup. 2012 guideline is historical; WHO June2026 update-development announcement is not a new completed guideline."
+      },
+      {
+        "source_id": "p003-neonatal-sepsis-recognition",
+        "url": "https://www.rch.org.au/clinicalguide/guideline_index/Recognition_of_the_seriously_unwell_neonate_and_young_infant/",
+        "locators": [
+          "Differential diagnosis",
+          "Assessment/Management",
+          "Differential diagnosis | Differential diagnosis/Investigations"
+        ],
+        "retrieval_scope": "May2025; actual full HTML history/exam, differentials, investigations, management and transfer. Same RCH family, not independent of RCH neonatal antimicrobials."
+      },
+      {
+        "source_id": "p003-asphyxia-qcg-resuscitation",
+        "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0011/140600/g-resus.pdf",
+        "locators": [
+          "Section5/Table23 p24;6.2/Table25 p26",
+          "Section5/Table23 p24;6.2/Table25 p26;6.3/Table26 p27"
+        ],
+        "retrieval_scope": "MN22.5-V6-R27 October2022; review October2027. Actual original PDF page24 section5/Table23 ventilation before compressions; page26 section6.2/Table25 epinephrine; page27 section6.3/Table26 indicated fluids or blood. Root read indexed original passages; same QCG group as HIE, shares ANZCOR/ILCOR upstream with AHA. No dose or numeric threshold added."
+      }
+    ],
+    "sections": {
+      "summary": {
+        "source_ids": [
+          "p003-asphyxia-aha",
+          "p003-asphyxia-cps",
+          "p003-asphyxia-qcg",
+          "p003-asphyxia-who"
+        ],
+        "locators": {
+          "p003-asphyxia-aha": [
+            "Abstract/17"
+          ],
+          "p003-asphyxia-cps": [
+            "Background"
+          ],
+          "p003-asphyxia-qcg": [
+            "3.1/3.4"
+          ],
+          "p003-asphyxia-who": [
+            "Overview"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "causes_risks": {
+        "source_ids": [
+          "p003-asphyxia-aha",
+          "p003-asphyxia-cps",
+          "p003-asphyxia-qcg",
+          "p003-neonatal-sepsis-recognition"
+        ],
+        "locators": {
+          "p003-asphyxia-aha": [
+            "Abstract/Respiratory support"
+          ],
+          "p003-asphyxia-cps": [
+            "Eligibility B"
+          ],
+          "p003-asphyxia-qcg": [
+            "Background/clinical assessment"
+          ],
+          "p003-neonatal-sepsis-recognition": [
+            "Differential diagnosis"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "red_flags": {
+        "source_ids": [
+          "p003-asphyxia-aha",
+          "p003-asphyxia-qcg",
+          "p003-asphyxia-who",
+          "p003-neonatal-sepsis-recognition"
+        ],
+        "locators": {
+          "p003-asphyxia-aha": [
+            "Initial steps/ventilation"
+          ],
+          "p003-asphyxia-qcg": [
+            "3.1/3.5"
+          ],
+          "p003-asphyxia-who": [
+            "Overview"
+          ],
+          "p003-neonatal-sepsis-recognition": [
+            "Assessment/Management"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "care": {
+        "source_ids": [
+          "p003-asphyxia-aha",
+          "p003-asphyxia-cps",
+          "p003-asphyxia-qcg"
+        ],
+        "locators": {
+          "p003-asphyxia-aha": [
+            "Preparation/17"
+          ],
+          "p003-asphyxia-cps": [
+            "Where should hypothermia be provided"
+          ],
+          "p003-asphyxia-qcg": [
+            "3.5-3.6 | 3.6"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "diagnosis": {
+        "source_ids": [
+          "p003-asphyxia-cps",
+          "p003-asphyxia-qcg"
+        ],
+        "locators": {
+          "p003-asphyxia-cps": [
+            "Adjuncts/Side effects | Eligibility A/B/C | Eligibility/MRI/Follow-up"
+          ],
+          "p003-asphyxia-qcg": [
+            "3.1/5.1 | 3.2/4.3 | 5.2-5.3"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "differentials": {
+        "source_ids": [
+          "p003-asphyxia-qcg",
+          "p003-neonatal-sepsis-recognition"
+        ],
+        "locators": {
+          "p003-asphyxia-qcg": [
+            "3.1 Differential diagnosis | 3.1/5.2"
+          ],
+          "p003-neonatal-sepsis-recognition": [
+            "Differential diagnosis | Differential diagnosis/Investigations"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "treatment": {
+        "source_ids": [
+          "p003-asphyxia-aha",
+          "p003-asphyxia-cps",
+          "p003-asphyxia-qcg",
+          "p003-asphyxia-who",
+          "p003-asphyxia-qcg-resuscitation"
+        ],
+        "locators": {
+          "p003-asphyxia-aha": [
+            "17 | Ventilation/Compressions"
+          ],
+          "p003-asphyxia-cps": [
+            "Eligibility/Where"
+          ],
+          "p003-asphyxia-qcg": [
+            "3.5"
+          ],
+          "p003-asphyxia-who": [
+            "Overview"
+          ],
+          "p003-asphyxia-qcg-resuscitation": [
+            "Section5/Table23 p24;6.2/Table25 p26"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "medications": {
+        "source_ids": [
+          "p003-asphyxia-aha",
+          "p003-asphyxia-cps",
+          "p003-asphyxia-qcg",
+          "p003-asphyxia-qcg-resuscitation"
+        ],
+        "locators": {
+          "p003-asphyxia-aha": [
+            "Epinephrine/Volume expansion"
+          ],
+          "p003-asphyxia-cps": [
+            "Adjunct therapies"
+          ],
+          "p003-asphyxia-qcg": [
+            "3.5/4.3 | 4.3/4.4.2"
+          ],
+          "p003-asphyxia-qcg-resuscitation": [
+            "Section5/Table23 p24;6.2/Table25 p26;6.3/Table26 p27"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "diet": {
+        "source_ids": [
+          "p003-asphyxia-cps",
+          "p003-asphyxia-qcg"
+        ],
+        "locators": {
+          "p003-asphyxia-cps": [
+            "Adjunct therapies enteral feeds | Follow-up multidisciplinary"
+          ],
+          "p003-asphyxia-qcg": [
+            "4.3 Gastrointestinal/4.4.2 | 4.3.4/5.1/5.5"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "daily_care": {
+        "source_ids": [
+          "p003-asphyxia-cps",
+          "p003-asphyxia-qcg"
+        ],
+        "locators": {
+          "p003-asphyxia-cps": [
+            "Follow-up | Where/Follow-up"
+          ],
+          "p003-asphyxia-qcg": [
+            "4.3.4/5.5 | 5.5"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "special_populations": {
+        "source_ids": [
+          "p003-asphyxia-aha",
+          "p003-asphyxia-cps",
+          "p003-asphyxia-qcg"
+        ],
+        "locators": {
+          "p003-asphyxia-aha": [
+            "17"
+          ],
+          "p003-asphyxia-cps": [
+            "Eligibility/Exclusions"
+          ],
+          "p003-asphyxia-qcg": [
+            "3.3-3.5 | 4.4"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "prognosis_followup": {
+        "source_ids": [
+          "p003-asphyxia-cps",
+          "p003-asphyxia-qcg"
+        ],
+        "locators": {
+          "p003-asphyxia-cps": [
+            "Follow-up"
+          ],
+          "p003-asphyxia-qcg": [
+            "5.1-5.4 | 5.4-5.5"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "complications": {
+        "source_ids": [
+          "p003-asphyxia-cps",
+          "p003-asphyxia-qcg"
+        ],
+        "locators": {
+          "p003-asphyxia-cps": [
+            "Follow-up | Side effects/Adjuncts"
+          ],
+          "p003-asphyxia-qcg": [
+            "4.3 | 5.4"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "prevention": {
+        "source_ids": [
+          "p003-asphyxia-aha",
+          "p003-asphyxia-who"
+        ],
+        "locators": {
+          "p003-asphyxia-aha": [
+            "Initial steps/Temperature/Ventilation | Preparation"
+          ],
+          "p003-asphyxia-who": [
+            "Overview | Quality of care"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      }
+    }
+  },
+  {
+    "condition_id": "neonatal-sepsis",
+    "checked_at": "2026-10-03",
+    "independent_review": "reports/p0-03-neonatal-sepsis-independent.json",
+    "inspected_sources": [
+      {
+        "source_id": "p003-neonatal-sepsis-cdc",
+        "url": "https://www.cdc.gov/group-b-strep/prevention/index.html",
+        "locators": [
+          "Prevention | Screening/Antibiotics during labor"
+        ],
+        "retrieval_scope": "May1,2025; actual full official prevention page: maternal screening and intrapartum IV antibiotics reduce first-week disease. US universal screening differs from NICE risk-based approach."
+      },
+      {
+        "source_id": "p003-neonatal-sepsis-gentamicin",
+        "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0023/945320/nmq-gentamicin.pdf",
+        "locators": [
+          "pages1-3 Monitoring/Adverse reactions",
+          "pages1-3 dosing/renal monitoring"
+        ],
+        "retrieval_scope": "NMedQ25.038-V4-R30 effective2025-10-21; actual PDF all4pages: indication, dose individualisation, renal function/HIE, monitoring and nephro/ototoxicity. Trough timing differs from NICE; no universal schedule copied."
+      },
+      {
+        "source_id": "p003-neonatal-sepsis-nice",
+        "url": "https://www.nice.org.uk/guidance/ng195",
+        "locators": [
+          "1.9-1.12",
+          "1.12 | 1.9-1.11",
+          "1.4/1.12 | 1.4/1.9-1.12",
+          "1.1/1.9-1.12",
+          "1.13-1.14 | 1.13/1.15",
+          "1.13-1.14 | 1.9-1.14",
+          "1.15-1.16",
+          "1.35-1.36",
+          "1.1.5 | 1.4/1.12",
+          "1.37-1.38 | 1.4-1.5",
+          "1.6-1.11",
+          "1.2.3/1.38 | 1.4/1.38",
+          "1.2.3/1.13-1.14 | 1.9-1.12",
+          "1.6-1.8 | 1.9-1.11/1.15"
+        ],
+        "retrieval_scope": "2026 split official chapters, read with urllib: Information/support 1.1-1.5; Prevention 1.6-1.8; early indicators 1.9-1.11; late indicators 1.12; investigations 1.13-1.14; antibiotic principles 1.15-1.16; gentamicin 1.35-1.36; discharge 1.37-1.38. Web403; official urllib HTML succeeded. Diagnostic CRP restriction updated2026."
+      },
+      {
+        "source_id": "p003-neonatal-sepsis-rch",
+        "url": "https://www.rch.org.au/clinicalguide/guideline_index/Neonatal_antimicrobial_guidelines/",
+        "locators": [
+          "Background/EOS/LOS",
+          "Background/EOS | Background/LOS",
+          "Investigations | Investigations/Management",
+          "Investigations/Management",
+          "Management | Management/duration",
+          "Antimicrobial recommendations | Antimicrobial stewardship",
+          "Background | Background/EOS",
+          "Management"
+        ],
+        "retrieval_scope": "January2025; actual full official HTML: background, EOS/LOS organisms, investigation, management, empirical choices, duration and references. RCH draws on ASID and NICE; distinct editorial body but shared studies."
+      },
+      {
+        "source_id": "p003-neonatal-sepsis-recognition",
+        "url": "https://www.rch.org.au/clinicalguide/guideline_index/Recognition_of_the_seriously_unwell_neonate_and_young_infant/",
+        "locators": [
+          "Background/Assessment",
+          "History/Examination",
+          "History | Management/Transfer",
+          "Differential diagnosis/Investigations",
+          "Management",
+          "History/Management",
+          "History/Examination",
+          "History/Examination",
+          "Examination/Management"
+        ],
+        "retrieval_scope": "May2025; actual full HTML history/exam, differentials, investigations, management and transfer. Same RCH family, not independent of RCH neonatal antimicrobials."
+      },
+      {
+        "source_id": "p003-neonatal-sepsis-who",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK610598/",
+        "locators": [
+          "B.2/C",
+          "A.1-A.3",
+          "A.2-A.3/C",
+          "B.2 | C",
+          "B.2 | C antimicrobial resistance",
+          "C supportive care",
+          "A.2-A.3/C",
+          "Executive introduction long-term disability",
+          "Executive introduction"
+        ],
+        "retrieval_scope": "2024-12-08; actual WHO original hosted by NCBI, chapter3 A.1-A.3, B.2, C clinical judgement/referral/support/AMR and executive introduction long-term disability. NCBI is a host, not independent NIH endorsement. WHO IRIS PDF failed; /sites/books HTML succeeded."
+      },
+      {
+        "source_id": "p003-neonatal-sepsis-who-summary",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK610594/",
+        "locators": [
+          "Executive summary: Background37–49",
+          "Executive summary: Background37–49"
+        ],
+        "retrieval_scope": "Same WHO2024 book, original Executive summary Background37–49: long-term disability after serious bacterial infection, organ dysfunction, diagnostic and evidence limits. Original WHO text: root read HTML; independent reviewer read official-source indexed Executive summary Background; NCBI is hosting WHO, not independent NIH authorship."
+      },
+      {
+        "source_id": "p003-neonatal-sepsis-nice-surveillance",
+        "url": "https://www.nice.org.uk/guidance/ng195/resources/2022-exceptional-surveillance-of-neonatal-infection-antibiotics-for-prevention-and-treatment-nice-guideline-ng195-11201548285/chapter/Surveillance-decision?tab=evidence",
+        "locators": [
+          "Reasons for the decision; Topic expert feedback; Information considered when developing guideline"
+        ],
+        "retrieval_scope": "2022 exceptional surveillance original NICE HTML via urllib; Reasons for the decision, Topic expert feedback, Information considered when developing guideline. Actual read: ototoxicity/nephrotoxicity assessment balanced against urgent neonatal infection treatment; no routine delay to obtain initial drug levels. Same NICE editorial group as2026 NG195."
+      }
+    ],
+    "sections": {
+      "summary": {
+        "source_ids": [
+          "p003-neonatal-sepsis-nice",
+          "p003-neonatal-sepsis-rch",
+          "p003-neonatal-sepsis-recognition",
+          "p003-neonatal-sepsis-who"
+        ],
+        "locators": {
+          "p003-neonatal-sepsis-nice": [
+            "1.9-1.12"
+          ],
+          "p003-neonatal-sepsis-rch": [
+            "Background/EOS/LOS"
+          ],
+          "p003-neonatal-sepsis-recognition": [
+            "Background/Assessment"
+          ],
+          "p003-neonatal-sepsis-who": [
+            "B.2/C"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "causes_risks": {
+        "source_ids": [
+          "p003-neonatal-sepsis-nice",
+          "p003-neonatal-sepsis-rch"
+        ],
+        "locators": {
+          "p003-neonatal-sepsis-nice": [
+            "1.12 | 1.9-1.11"
+          ],
+          "p003-neonatal-sepsis-rch": [
+            "Background/EOS | Background/LOS"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "red_flags": {
+        "source_ids": [
+          "p003-neonatal-sepsis-nice",
+          "p003-neonatal-sepsis-recognition",
+          "p003-neonatal-sepsis-who"
+        ],
+        "locators": {
+          "p003-neonatal-sepsis-nice": [
+            "1.4/1.12 | 1.4/1.9-1.12"
+          ],
+          "p003-neonatal-sepsis-recognition": [
+            "History/Examination"
+          ],
+          "p003-neonatal-sepsis-who": [
+            "A.1-A.3"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "care": {
+        "source_ids": [
+          "p003-neonatal-sepsis-nice",
+          "p003-neonatal-sepsis-recognition",
+          "p003-neonatal-sepsis-who"
+        ],
+        "locators": {
+          "p003-neonatal-sepsis-nice": [
+            "1.1/1.9-1.12"
+          ],
+          "p003-neonatal-sepsis-recognition": [
+            "History | Management/Transfer"
+          ],
+          "p003-neonatal-sepsis-who": [
+            "A.2-A.3/C"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "diagnosis": {
+        "source_ids": [
+          "p003-neonatal-sepsis-nice",
+          "p003-neonatal-sepsis-rch"
+        ],
+        "locators": {
+          "p003-neonatal-sepsis-nice": [
+            "1.13-1.14 | 1.13/1.15"
+          ],
+          "p003-neonatal-sepsis-rch": [
+            "Investigations | Investigations/Management"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "differentials": {
+        "source_ids": [
+          "p003-neonatal-sepsis-nice",
+          "p003-neonatal-sepsis-rch",
+          "p003-neonatal-sepsis-recognition"
+        ],
+        "locators": {
+          "p003-neonatal-sepsis-nice": [
+            "1.13-1.14 | 1.9-1.14"
+          ],
+          "p003-neonatal-sepsis-rch": [
+            "Investigations/Management"
+          ],
+          "p003-neonatal-sepsis-recognition": [
+            "Differential diagnosis/Investigations"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "treatment": {
+        "source_ids": [
+          "p003-neonatal-sepsis-nice",
+          "p003-neonatal-sepsis-rch",
+          "p003-neonatal-sepsis-recognition",
+          "p003-neonatal-sepsis-who"
+        ],
+        "locators": {
+          "p003-neonatal-sepsis-nice": [
+            "1.15-1.16"
+          ],
+          "p003-neonatal-sepsis-rch": [
+            "Management | Management/duration"
+          ],
+          "p003-neonatal-sepsis-recognition": [
+            "Management"
+          ],
+          "p003-neonatal-sepsis-who": [
+            "B.2 | C"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "medications": {
+        "source_ids": [
+          "p003-neonatal-sepsis-gentamicin",
+          "p003-neonatal-sepsis-nice",
+          "p003-neonatal-sepsis-rch",
+          "p003-neonatal-sepsis-who",
+          "p003-neonatal-sepsis-nice-surveillance"
+        ],
+        "locators": {
+          "p003-neonatal-sepsis-gentamicin": [
+            "pages1-3 Monitoring/Adverse reactions"
+          ],
+          "p003-neonatal-sepsis-nice": [
+            "1.35-1.36"
+          ],
+          "p003-neonatal-sepsis-rch": [
+            "Antimicrobial recommendations | Antimicrobial stewardship"
+          ],
+          "p003-neonatal-sepsis-who": [
+            "B.2 | C antimicrobial resistance"
+          ],
+          "p003-neonatal-sepsis-nice-surveillance": [
+            "Reasons for the decision; Topic expert feedback; Information considered when developing guideline"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "diet": {
+        "source_ids": [
+          "p003-neonatal-sepsis-nice",
+          "p003-neonatal-sepsis-recognition",
+          "p003-neonatal-sepsis-who"
+        ],
+        "locators": {
+          "p003-neonatal-sepsis-nice": [
+            "1.1.5 | 1.4/1.12"
+          ],
+          "p003-neonatal-sepsis-recognition": [
+            "History/Management"
+          ],
+          "p003-neonatal-sepsis-who": [
+            "C supportive care"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "daily_care": {
+        "source_ids": [
+          "p003-neonatal-sepsis-nice",
+          "p003-neonatal-sepsis-recognition",
+          "p003-neonatal-sepsis-who"
+        ],
+        "locators": {
+          "p003-neonatal-sepsis-nice": [
+            "1.37-1.38 | 1.4-1.5"
+          ],
+          "p003-neonatal-sepsis-recognition": [
+            "History/Examination"
+          ],
+          "p003-neonatal-sepsis-who": [
+            "A.2-A.3/C"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "special_populations": {
+        "source_ids": [
+          "p003-neonatal-sepsis-gentamicin",
+          "p003-neonatal-sepsis-nice",
+          "p003-neonatal-sepsis-rch"
+        ],
+        "locators": {
+          "p003-neonatal-sepsis-gentamicin": [
+            "pages1-3 dosing/renal monitoring"
+          ],
+          "p003-neonatal-sepsis-nice": [
+            "1.6-1.11"
+          ],
+          "p003-neonatal-sepsis-rch": [
+            "Background | Background/EOS"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "prognosis_followup": {
+        "source_ids": [
+          "p003-neonatal-sepsis-nice",
+          "p003-neonatal-sepsis-recognition",
+          "p003-neonatal-sepsis-who",
+          "p003-neonatal-sepsis-who-summary"
+        ],
+        "locators": {
+          "p003-neonatal-sepsis-nice": [
+            "1.2.3/1.38 | 1.4/1.38"
+          ],
+          "p003-neonatal-sepsis-recognition": [
+            "History/Examination"
+          ],
+          "p003-neonatal-sepsis-who": [
+            "Executive introduction long-term disability"
+          ],
+          "p003-neonatal-sepsis-who-summary": [
+            "Executive summary: Background37–49"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "complications": {
+        "source_ids": [
+          "p003-neonatal-sepsis-nice",
+          "p003-neonatal-sepsis-recognition",
+          "p003-neonatal-sepsis-who",
+          "p003-neonatal-sepsis-who-summary"
+        ],
+        "locators": {
+          "p003-neonatal-sepsis-nice": [
+            "1.2.3/1.13-1.14 | 1.9-1.12"
+          ],
+          "p003-neonatal-sepsis-recognition": [
+            "Examination/Management"
+          ],
+          "p003-neonatal-sepsis-who": [
+            "Executive introduction"
+          ],
+          "p003-neonatal-sepsis-who-summary": [
+            "Executive summary: Background37–49"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "prevention": {
+        "source_ids": [
+          "p003-neonatal-sepsis-cdc",
+          "p003-neonatal-sepsis-nice",
+          "p003-neonatal-sepsis-rch"
+        ],
+        "locators": {
+          "p003-neonatal-sepsis-cdc": [
+            "Prevention | Screening/Antibiotics during labor"
+          ],
+          "p003-neonatal-sepsis-nice": [
+            "1.6-1.8 | 1.9-1.11/1.15"
+          ],
+          "p003-neonatal-sepsis-rch": [
+            "Management"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      }
+    }
+  },
+  {
+    "condition_id": "puerperal-sepsis",
+    "checked_at": "2026-10-03",
+    "independent_review": "reports/p0-03-puerperal-sepsis-independent.json",
+    "inspected_sources": [
+      {
+        "source_id": "p003-puerperal-cdc-lactation",
+        "url": "https://www.cdc.gov/breastfeeding-special-circumstances/hcp/vaccine-medication-drugs/prescriptions.html",
+        "locators": [
+          "Prescription medications"
+        ],
+        "retrieval_scope": "2025-09-23; actual official indexed full page: individualized maternal need, milk transfer/infant absorption; discuss medicines with both providers. AAP2013 underlying report; independent institution from NHS, shared pharmacology data."
+      },
+      {
+        "source_id": "p003-puerperal-msf",
+        "url": "https://medicalguidelines.msf.org/en/viewport/ONC/english/11-4-postpartum-complications-51418102.html",
+        "locators": [
+          "11.4.2 malaria note",
+          "11.4.2",
+          "11.4.2",
+          "11.4.2-3",
+          "11.4.2",
+          "11.4.2 | 11.4.2 malaria",
+          "11.4.2"
+        ],
+        "retrieval_scope": "Actual official HTML 11.4.1-2 retained tissue, endometritis/salpingitis, pelvic abscess/peritonitis, instability source control;11.4.4 urine leakage. MSF cites WHO2017. Fever48h wording not used as waiting advice; septic/unstable person immediate care."
+      },
+      {
+        "source_id": "p003-puerperal-msf-care",
+        "url": "https://medicalguidelines.msf.org/en/viewport/ONC/english/11-2-postpartum-care-for-the-mother-51418082.html",
+        "locators": [
+          "11.2.1-2"
+        ],
+        "retrieval_scope": "Actual urllib official HTML 11.2.1-2: monitoring, personal hygiene, maternal danger signs, discharge/followup. Same MSF family as complications; not an independent pair."
+      },
+      {
+        "source_id": "p003-puerperal-nhs-lactation",
+        "url": "https://www.nhs.uk/baby/breastfeeding-and-bottle-feeding/breastfeeding-and-lifestyle/medicines/",
+        "locators": [
+          "Opening guidance"
+        ],
+        "retrieval_scope": "Reviewed2026-05-07; actual full official HTML: tell team breastfeeding and infant prematurity/jaundice; drug-specific advice, do not independently stop prescriptions."
+      },
+      {
+        "source_id": "p003-puerperal-nice",
+        "url": "https://www.nice.org.uk/guidance/ng255/resources/suspected-sepsis-in-pregnant-or-recently-pregnant-people-recognition-diagnosis-and-early-management-pdf-66144018745285",
+        "locators": [
+          "1.1/1.4 | 1.3/1.7",
+          "1.2/1.11",
+          "1.2/1.5/1.6 | 1.3/1.5/1.6",
+          "1.2/1.3/1.11 | 1.3.6/1.6-1.7",
+          "1.11 | 1.3-1.5 | 1.7",
+          "1.7.2 alternative diagnoses",
+          "1.11 | 1.7-1.8 | 1.7/1.9",
+          "1.8",
+          "1.15-1.16",
+          "1.1.4/1.12 | 1.2/1.8-1.9",
+          "1.16",
+          "1.2/1.15-1.16"
+        ],
+        "retrieval_scope": "Published2025-11-19 amended2026-01; actual official PDF via urllib+pdftotext pp6-34, 1.1-1.16: recognition, pregnancy risks, assessment, triage, sampling, fluids, source control, family information/discharge. HTML403; PDFread succeeded. SSC evidence overlap with SMFM disclosed."
+      },
+      {
+        "source_id": "p003-puerperal-nutrition",
+        "url": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations",
+        "locators": [
+          "1.4.1/1.7.1/1.8.1"
+        ],
+        "retrieval_scope": "2006 updated2017; actual official urllib HTML1.4.1,1.7.1-3,1.8.1-4 adult intake safety, enteral/parenteral indications and trained assessment; only supportive principles, not fixed dose extrapolation."
+      },
+      {
+        "source_id": "p003-puerperal-smfm",
+        "url": "https://assets.noviams.com/novi-file-uploads/smfm/Publications_and_Guidelines/Consults/Consult_Series__67_Maternal_Sepsis.pdf",
+        "locators": [
+          "p2-3 definition | p2-3/Table4",
+          "p2/Table4",
+          "Recommendations2/9 | p5-6 evaluation",
+          "p3-6 screening/evaluation | p6 laboratory evaluation | p6/p9",
+          "definition/Table4 | p3/p6 mimics",
+          "Recommendations6-9 | p10-11 fluids/vasopressors | p9 source control",
+          "p8-9/Table4",
+          "Figure2 early enteral feeding",
+          "p13 comprehensive support | p9 stewardship/p13 discharge",
+          "p13-15 social support/bias | p2/p9-10",
+          "p13 discharge | p13 morbidity/follow-up",
+          "p2 definition/pathophysiology | p9/p13",
+          "p13 support"
+        ],
+        "retrieval_scope": "September2023 reaffirmed2025; official PDF actual pdftotext p1-9 core definitions/risk/diagnosis/mimics/antibiotics/source control and p11-14 organ support/outcomes/follow-up. ACOG endorsement is not independent authorship; largely SSC2021/nonpregnant trials with maternal evidence where available."
+      },
+      {
+        "source_id": "p003-puerperal-who-peripartum",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK327075/",
+        "locators": [
+          "Recommendation20",
+          "General principles | Recommendation20",
+          "General principles maternal conditions",
+          "General principles"
+        ],
+        "retrieval_scope": "2015; actual WHO original chapter3 general principles and recommendation20 postpartum endometritis, remarks/evidence. NCBI hosts WHO original, not NIH independent guidance. Prevention updates2021 not replaced by old rules; no old operative prophylaxis doses used."
+      },
+      {
+        "source_id": "sepsis-cdc",
+        "url": "https://www.cdc.gov/sepsis/about/index.html",
+        "locators": [
+          "Causes",
+          "Antibiotics side effects/stewardship | Causes/Diagnosis",
+          "Reducing risk/stewardship"
+        ],
+        "retrieval_scope": "Updated and reviewed by subject-matter experts 17 August 2026; diagnosis, treatment and antibiotic risks."
+      },
+      {
+        "source_id": "sepsis-cdc-recovery",
+        "url": "https://www.cdc.gov/sepsis/living-with/index.html",
+        "locators": [
+          "Home recovery/After home",
+          "First steps/Home tips",
+          "Long-term effects"
+        ],
+        "retrieval_scope": "First steps, home recovery, long-term effects and recurrence."
+      },
+      {
+        "source_id": "sepsis-nhs",
+        "url": "https://www.nhs.uk/conditions/sepsis/",
+        "locators": [
+          "Recovering from sepsis"
+        ],
+        "retrieval_scope": "Reviewed 14 May 2026. Child/adult symptoms and emergency boxes, recovery, PSS, repeat infections and risk groups read. UK999/111 localized, not global numbers."
+      },
+      {
+        "source_id": "sepsis-who",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/sepsis",
+        "locators": [
+          "Overview/Treatment",
+          "Signs",
+          "Treatment",
+          "Overview"
+        ],
+        "retrieval_scope": "Overview, risk, signs in adults and children, prevention and treatment."
+      },
+      {
+        "source_id": "sepsis-nhs-antibiotics-effects",
+        "url": "https://www.nhs.uk/medicines/antibiotics/side-effects/",
+        "locators": [
+          "Side effects15–19; allergy20–43"
+        ],
+        "retrieval_scope": "Side effects; Antibiotic allergic reactions / immediate emergency box. Review due 2025-11-11 passed. Airway symptoms follow emergency box, not preceding mild-to-moderate paragraph."
+      },
+      {
+        "source_id": "p003-puerperal-nhs-hysterectomy",
+        "url": "https://www.nhs.uk/tests-and-treatments/hysterectomy/",
+        "locators": [
+          "Overview15; Things to consider33–42; Recovery66–70"
+        ],
+        "retrieval_scope": "Actual original HTML overview line15, Things to consider33–42 and Recovery66–70. Review due2025-10-11 passed: only stable anatomic fertility consequence and procedure-specific discussion used. Elective less-invasive-first sequence is not transferred to emergency sepsis source control."
+      }
+    ],
+    "sections": {
+      "summary": {
+        "source_ids": [
+          "p003-puerperal-nice",
+          "p003-puerperal-smfm",
+          "p003-puerperal-who-peripartum"
+        ],
+        "locators": {
+          "p003-puerperal-nice": [
+            "1.1/1.4 | 1.3/1.7"
+          ],
+          "p003-puerperal-smfm": [
+            "p2-3 definition | p2-3/Table4"
+          ],
+          "p003-puerperal-who-peripartum": [
+            "Recommendation20"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "causes_risks": {
+        "source_ids": [
+          "p003-puerperal-msf",
+          "p003-puerperal-nice",
+          "p003-puerperal-smfm",
+          "sepsis-cdc",
+          "sepsis-who"
+        ],
+        "locators": {
+          "p003-puerperal-msf": [
+            "11.4.2 malaria note"
+          ],
+          "p003-puerperal-nice": [
+            "1.2/1.11"
+          ],
+          "p003-puerperal-smfm": [
+            "p2/Table4"
+          ],
+          "sepsis-cdc": [
+            "Causes"
+          ],
+          "sepsis-who": [
+            "Overview/Treatment"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "red_flags": {
+        "source_ids": [
+          "p003-puerperal-msf",
+          "p003-puerperal-nice",
+          "sepsis-who"
+        ],
+        "locators": {
+          "p003-puerperal-msf": [
+            "11.4.2"
+          ],
+          "p003-puerperal-nice": [
+            "1.2/1.5/1.6 | 1.3/1.5/1.6"
+          ],
+          "sepsis-who": [
+            "Signs"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "care": {
+        "source_ids": [
+          "p003-puerperal-msf",
+          "p003-puerperal-nice",
+          "p003-puerperal-smfm"
+        ],
+        "locators": {
+          "p003-puerperal-msf": [
+            "11.4.2"
+          ],
+          "p003-puerperal-nice": [
+            "1.2/1.3/1.11 | 1.3.6/1.6-1.7"
+          ],
+          "p003-puerperal-smfm": [
+            "Recommendations2/9 | p5-6 evaluation"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "diagnosis": {
+        "source_ids": [
+          "p003-puerperal-nice",
+          "p003-puerperal-smfm"
+        ],
+        "locators": {
+          "p003-puerperal-nice": [
+            "1.11 | 1.3-1.5 | 1.7"
+          ],
+          "p003-puerperal-smfm": [
+            "p3-6 screening/evaluation | p6 laboratory evaluation | p6/p9"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "differentials": {
+        "source_ids": [
+          "p003-puerperal-msf",
+          "p003-puerperal-nice",
+          "p003-puerperal-smfm"
+        ],
+        "locators": {
+          "p003-puerperal-msf": [
+            "11.4.2-3"
+          ],
+          "p003-puerperal-nice": [
+            "1.7.2 alternative diagnoses"
+          ],
+          "p003-puerperal-smfm": [
+            "definition/Table4 | p3/p6 mimics"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "treatment": {
+        "source_ids": [
+          "p003-puerperal-msf",
+          "p003-puerperal-nice",
+          "p003-puerperal-smfm"
+        ],
+        "locators": {
+          "p003-puerperal-msf": [
+            "11.4.2"
+          ],
+          "p003-puerperal-nice": [
+            "1.11 | 1.7-1.8 | 1.7/1.9"
+          ],
+          "p003-puerperal-smfm": [
+            "Recommendations6-9 | p10-11 fluids/vasopressors | p9 source control"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "medications": {
+        "source_ids": [
+          "p003-puerperal-msf",
+          "p003-puerperal-nice",
+          "p003-puerperal-smfm",
+          "p003-puerperal-who-peripartum",
+          "sepsis-cdc",
+          "sepsis-who",
+          "sepsis-nhs-antibiotics-effects"
+        ],
+        "locators": {
+          "p003-puerperal-msf": [
+            "11.4.2 | 11.4.2 malaria"
+          ],
+          "p003-puerperal-nice": [
+            "1.8"
+          ],
+          "p003-puerperal-smfm": [
+            "p8-9/Table4"
+          ],
+          "p003-puerperal-who-peripartum": [
+            "General principles | Recommendation20"
+          ],
+          "sepsis-cdc": [
+            "Antibiotics side effects/stewardship | Causes/Diagnosis"
+          ],
+          "sepsis-who": [
+            "Treatment"
+          ],
+          "sepsis-nhs-antibiotics-effects": [
+            "Side effects15–19; allergy20–43"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "diet": {
+        "source_ids": [
+          "p003-puerperal-nutrition",
+          "p003-puerperal-smfm",
+          "sepsis-cdc-recovery",
+          "sepsis-nhs"
+        ],
+        "locators": {
+          "p003-puerperal-nutrition": [
+            "1.4.1/1.7.1/1.8.1"
+          ],
+          "p003-puerperal-smfm": [
+            "Figure2 early enteral feeding"
+          ],
+          "sepsis-cdc-recovery": [
+            "Home recovery/After home"
+          ],
+          "sepsis-nhs": [
+            "Recovering from sepsis"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "daily_care": {
+        "source_ids": [
+          "p003-puerperal-nice",
+          "p003-puerperal-smfm",
+          "sepsis-cdc-recovery"
+        ],
+        "locators": {
+          "p003-puerperal-nice": [
+            "1.15-1.16"
+          ],
+          "p003-puerperal-smfm": [
+            "p13 comprehensive support | p9 stewardship/p13 discharge"
+          ],
+          "sepsis-cdc-recovery": [
+            "First steps/Home tips"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "special_populations": {
+        "source_ids": [
+          "p003-puerperal-cdc-lactation",
+          "p003-puerperal-nhs-lactation",
+          "p003-puerperal-nice",
+          "p003-puerperal-smfm",
+          "p003-puerperal-who-peripartum"
+        ],
+        "locators": {
+          "p003-puerperal-cdc-lactation": [
+            "Prescription medications"
+          ],
+          "p003-puerperal-nhs-lactation": [
+            "Opening guidance"
+          ],
+          "p003-puerperal-nice": [
+            "1.1.4/1.12 | 1.2/1.8-1.9"
+          ],
+          "p003-puerperal-smfm": [
+            "p13-15 social support/bias | p2/p9-10"
+          ],
+          "p003-puerperal-who-peripartum": [
+            "General principles maternal conditions"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "prognosis_followup": {
+        "source_ids": [
+          "p003-puerperal-nice",
+          "p003-puerperal-smfm",
+          "sepsis-cdc-recovery",
+          "p003-puerperal-nhs-hysterectomy"
+        ],
+        "locators": {
+          "p003-puerperal-nice": [
+            "1.16"
+          ],
+          "p003-puerperal-smfm": [
+            "p13 discharge | p13 morbidity/follow-up"
+          ],
+          "sepsis-cdc-recovery": [
+            "Long-term effects"
+          ],
+          "p003-puerperal-nhs-hysterectomy": [
+            "Overview15; Things to consider33–42; Recovery66–70"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "complications": {
+        "source_ids": [
+          "p003-puerperal-msf",
+          "p003-puerperal-smfm",
+          "sepsis-who"
+        ],
+        "locators": {
+          "p003-puerperal-msf": [
+            "11.4.2"
+          ],
+          "p003-puerperal-smfm": [
+            "p2 definition/pathophysiology | p9/p13"
+          ],
+          "sepsis-who": [
+            "Overview"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "prevention": {
+        "source_ids": [
+          "p003-puerperal-msf-care",
+          "p003-puerperal-nice",
+          "p003-puerperal-smfm",
+          "p003-puerperal-who-peripartum",
+          "sepsis-cdc"
+        ],
+        "locators": {
+          "p003-puerperal-msf-care": [
+            "11.2.1-2"
+          ],
+          "p003-puerperal-nice": [
+            "1.2/1.15-1.16"
+          ],
+          "p003-puerperal-smfm": [
+            "p13 support"
+          ],
+          "p003-puerperal-who-peripartum": [
+            "General principles"
+          ],
+          "sepsis-cdc": [
+            "Reducing risk/stewardship"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      }
+    }
+  },
+  {
+    "condition_id": "ischemic-stroke",
+    "checked_at": "2026-10-03",
+    "independent_review": "reports/p0-03-ischemic-stroke-independent.json",
+    "inspected_sources": [
+      {
+        "source_id": "neuro-aha-disability",
+        "url": "https://professional.heart.org/en/science-news/endovascular-treatment-and-thrombolysis-for-ais-in-patients-with-premorbid-disability-or-dementia/Commentary",
+        "locators": [
+          "Shared benefit-risk decisions and evidence limitations"
+        ],
+        "retrieval_scope": "Shared benefit-risk decisions and evidence limitations"
+      },
+      {
+        "source_id": "neuro-aha-pregnancy",
+        "url": "https://newsroom.heart.org/news/stroke-prevention-and-treatment-during-and-after-pregnancy-are-key-to-womens-health",
+        "locators": [
+          "Official summary: immediate response and coordinated maternal stroke care"
+        ],
+        "retrieval_scope": "Official summary: immediate response and coordinated maternal stroke care"
+      },
+      {
+        "source_id": "neuro-aha-secondary-full",
+        "url": "https://doi.org/10.1161/STR.0000000000000375",
+        "locators": [
+          "Aortic arch atheroma knowledge gaps; hypercoagulable states supportive text; fibromuscular dysplasia recommendations",
+          "Aortic arch atheroma knowledge gaps; hypercoagulable states supportive text; fibromuscular dysplasia recommendations",
+          "Aortic arch atheroma knowledge gaps; hypercoagulable states supportive text; fibromuscular dysplasia recommendations"
+        ],
+        "retrieval_scope": "Aortic arch atheroma knowledge gaps; hypercoagulable states supportive text; fibromuscular dysplasia recommendations"
+      },
+      {
+        "source_id": "neuro-aps-nhs",
+        "url": "https://www.nhs.uk/conditions/antiphospholipid-syndrome/",
+        "locators": [
+          "Cause; stroke; diagnosis repeat antibodies; warfarin; additional monitoring",
+          "Cause; stroke; diagnosis repeat antibodies; warfarin; additional monitoring",
+          "Cause; stroke; diagnosis repeat antibodies; warfarin; additional monitoring"
+        ],
+        "retrieval_scope": "Cause; stroke; diagnosis repeat antibodies; warfarin; additional monitoring"
+      },
+      {
+        "source_id": "neuro-aps-rbft",
+        "url": "https://www.royalberkshire.nhs.uk/media/zzcfhoti/antiphospholipid-syndrome-aps-_oct25.pdf",
+        "locators": [
+          "pp1–2 definition; thrombosis/persistent antibodies; arterial/triple-positive warfarin preference",
+          "pp1–2 definition; thrombosis/persistent antibodies; arterial/triple-positive warfarin preference",
+          "pp1–2 definition; thrombosis/persistent antibodies; arterial/triple-positive warfarin preference"
+        ],
+        "retrieval_scope": "pp1–2 definition; thrombosis/persistent antibodies; arterial/triple-positive warfarin preference"
+      },
+      {
+        "source_id": "neuro-bsh-thrombophilia",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9542828/",
+        "locators": [
+          "Ischaemic stroke except CVST; recommendations and testing limitations; acquired arterial thrombosis",
+          "Ischaemic stroke except CVST; recommendations and testing limitations; acquired arterial thrombosis"
+        ],
+        "retrieval_scope": "Ischaemic stroke except CVST; recommendations and testing limitations; acquired arterial thrombosis"
+      },
+      {
+        "source_id": "neuro-canada-stroke-swallowing",
+        "url": "https://www.strokebestpractices.ca/recommendations/stroke-rehabilitation-delivery/6-swallowing-nutrition-and-oral-care",
+        "locators": [
+          "6.1 swallowing and feeding; 6.2 nutrition; 6.3 oral health; rationale and evidence limitations"
+        ],
+        "retrieval_scope": "6.1 swallowing and feeding; 6.2 nutrition; 6.3 oral health; rationale and evidence limitations"
+      },
+      {
+        "source_id": "neuro-cc-fat",
+        "url": "https://my.clevelandclinic.org/health/diseases/23995-fat-embolism-syndrome",
+        "locators": [
+          "Causes; supportive care; oxygen/ventilation; fracture stabilization; limitations",
+          "Causes; supportive care; oxygen/ventilation; fracture stabilization; limitations"
+        ],
+        "retrieval_scope": "Causes; supportive care; oxygen/ventilation; fracture stabilization; limitations"
+      },
+      {
+        "source_id": "neuro-cc-vasculitis",
+        "url": "https://my.clevelandclinic.org/health/diseases/cns-vasculitis",
+        "locators": [
+          "Causes; stroke; tests; immune treatment; follow-up and relapse",
+          "Causes; stroke; tests; immune treatment; follow-up and relapse"
+        ],
+        "retrieval_scope": "Causes; stroke; tests; immune treatment; follow-up and relapse"
+      },
+      {
+        "source_id": "neuro-cdc-stroke-treatment",
+        "url": "https://www.cdc.gov/stroke/treatment/index.html",
+        "locators": [
+          "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation",
+          "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation"
+        ],
+        "retrieval_scope": "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation; original HTML read"
+      },
+      {
+        "source_id": "neuro-embolic-mayo-causes",
+        "url": "https://www.mayoclinic.org/diseases-conditions/embolic-stroke/symptoms-causes/syc-20601259",
+        "locators": [
+          "Causes: cardiac/aortic sources, PFO, fat/air; prevention"
+        ],
+        "retrieval_scope": "Causes: cardiac/aortic sources, PFO, fat/air; prevention"
+      },
+      {
+        "source_id": "neuro-embolic-mayo-treatment",
+        "url": "https://www.mayoclinic.org/diseases-conditions/embolic-stroke/diagnosis-treatment/drc-20601260",
+        "locators": [
+          "Brain/vessel/heart tests; PFO selection; fat supportive care; air oxygen/HBOT; rehabilitation"
+        ],
+        "retrieval_scope": "Brain/vessel/heart tests; PFO selection; fat supportive care; air oxygen/HBOT; rehabilitation"
+      },
+      {
+        "source_id": "neuro-eso-lacunar-2024",
+        "url": "https://www.pure.ed.ac.uk/ws/portalfiles/portal/414331329/wardlaw-et-al-2024-european-stroke-organisation-_eso_-guideline-on-cerebral-small-vessel-disease-part-2-lacunar.pdf",
+        "locators": [
+          "PDF pp2–4 abstract, definition, clinical syndromes and diagnostic advice; no entire journal claimed read",
+          "PDF pp2–4 abstract, definition, clinical syndromes and diagnostic advice; no entire journal claimed read"
+        ],
+        "retrieval_scope": "PDF pp2–4 abstract, definition, clinical syndromes and diagnostic advice; no entire journal claimed read"
+      },
+      {
+        "source_id": "neuro-hopkins-vasculitis",
+        "url": "https://www.hopkinsvasculitis.org/vasculitis-treatments/",
+        "locators": [
+          "General principles: induction, maintenance, relapse and risks"
+        ],
+        "retrieval_scope": "General principles: induction, maintenance, relapse and risks"
+      },
+      {
+        "source_id": "neuro-ischemic-a",
+        "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know",
+        "locators": [
+          "Items 1-10; official summary only, full guideline access unsuccessful",
+          "Items 1-10; official summary only, full guideline access unsuccessful",
+          "Items 1-10; official summary only, full guideline access unsuccessful",
+          "Items 1-10; official summary only, full guideline access unsuccessful"
+        ],
+        "retrieval_scope": "Items 1-10; official summary only, full guideline access unsuccessful"
+      },
+      {
+        "source_id": "neuro-ischemic-c",
+        "url": "https://www.strokebestpractices.ca/recommendations/secondary-prevention-of-stroke/cancer-associated-ischemic-stroke",
+        "locators": [
+          "11.1 standard workup; cancer mechanisms; clinical considerations"
+        ],
+        "retrieval_scope": "11.1 standard workup; cancer mechanisms; clinical considerations"
+      },
+      {
+        "source_id": "neuro-ischemic-d",
+        "url": "https://professional.heart.org/en/science-news/treatment-and-outcomes-of-cervical-artery-dissection-in-adults/top-things-to-know",
+        "locators": [
+          "Items 2-5 mechanisms/symptoms/tests; 8-10 treatment and follow-up",
+          "Items 2-5 mechanisms/symptoms/tests; 8-10 treatment and follow-up",
+          "Items 2-5 mechanisms/symptoms/tests; 8-10 treatment and follow-up"
+        ],
+        "retrieval_scope": "Items 2-5 mechanisms/symptoms/tests; 8-10 treatment and follow-up"
+      },
+      {
+        "source_id": "neuro-ischemic-e",
+        "url": "https://www.strokebestpractices.ca/recommendations/acute-stroke-management/emergency-department-evaluation-and-management",
+        "locators": [
+          "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing",
+          "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing",
+          "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing",
+          "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing",
+          "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing",
+          "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing"
+        ],
+        "retrieval_scope": "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing"
+      },
+      {
+        "source_id": "neuro-ischemic-g",
+        "url": "https://www.stroke.org/en/about-stroke/types-of-stroke/ischemic-stroke-clots",
+        "locators": [
+          "Definition; cerebral thrombosis and embolism",
+          "Definition; cerebral thrombosis and embolism"
+        ],
+        "retrieval_scope": "Definition; cerebral thrombosis and embolism"
+      },
+      {
+        "source_id": "neuro-ischemic-k",
+        "url": "https://www.strokebestpractices.ca/recommendations/secondary-prevention-of-stroke/cardiac-issues-in-individuals-with-stroke",
+        "locators": [
+          "10.1 PFO; 10.2 aortic arch; 10.3 cardiac thrombus and low EF; rationale",
+          "10.1 PFO; 10.2 aortic arch; 10.3 cardiac thrombus and low EF; rationale",
+          "10.1 PFO; 10.2 aortic arch; 10.3 cardiac thrombus and low EF; rationale"
+        ],
+        "retrieval_scope": "10.1 PFO; 10.2 aortic arch; 10.3 cardiac thrombus and low EF; rationale"
+      },
+      {
+        "source_id": "neuro-ischemic-l",
+        "url": "https://my.clevelandclinic.org/health/diseases/lacunar-stroke",
+        "locators": [
+          "Definition; functional impact; rehabilitation; recovery; prevention",
+          "Definition; functional impact; rehabilitation; recovery; prevention",
+          "Definition; functional impact; rehabilitation; recovery; prevention"
+        ],
+        "retrieval_scope": "Definition; functional impact; rehabilitation; recovery; prevention"
+      },
+      {
+        "source_id": "neuro-ischemic-p",
+        "url": "https://professional.heart.org/en/science-news/2021-guideline-for-the-prevention-of-stroke-in-patients-with-stroke-and-transient-ischemic-attack/top-things-to-know",
+        "locators": [
+          "Items 1-10; etiology, risk factors, medicines, AF, carotid, intracranial, PFO and ESUS",
+          "Items 1-10; etiology, risk factors, medicines, AF, carotid, intracranial, PFO and ESUS",
+          "Items 1-10; etiology, risk factors, medicines, AF, carotid, intracranial, PFO and ESUS",
+          "Items 1-10; etiology, risk factors, medicines, AF, carotid, intracranial, PFO and ESUS"
+        ],
+        "retrieval_scope": "Items 1-10; etiology, risk factors, medicines, AF, carotid, intracranial, PFO and ESUS"
+      },
+      {
+        "source_id": "neuro-ischemic-t",
+        "url": "https://www.strokebestpractices.ca/recommendations/acute-stroke-management/acute-ischemic-stroke-treatment",
+        "locators": [
+          "5.1 selection; 5.2 thrombolysis; 5.4 2025 EVT; clinical considerations including pregnancy, disability and anticoagulants",
+          "5.1 selection; 5.2 thrombolysis; 5.4 2025 EVT; clinical considerations including pregnancy, disability and anticoagulants",
+          "5.1 selection; 5.2 thrombolysis; 5.4 2025 EVT; clinical considerations including pregnancy, disability and anticoagulants",
+          "5.1 selection; 5.2 thrombolysis; 5.4 2025 EVT; clinical considerations including pregnancy, disability and anticoagulants"
+        ],
+        "retrieval_scope": "5.1 selection; 5.2 thrombolysis; 5.4 2025 EVT; clinical considerations including pregnancy, disability and anticoagulants"
+      },
+      {
+        "source_id": "neuro-ischemic-u",
+        "url": "https://www.uhs.nhs.uk/departments/brain-spine-and-nerves/wessex-neurological-centre/neurology/stroke-services/definitions-symptoms-and-causes-of-stroke-and-tia",
+        "locators": [
+          "Causes; AF mechanism and rhythm monitoring ONLY",
+          "Causes; AF mechanism and rhythm monitoring ONLY"
+        ],
+        "retrieval_scope": "Causes; AF mechanism and rhythm monitoring ONLY"
+      },
+      {
+        "source_id": "neuro-ischemic-v",
+        "url": "https://www.strokebestpractices.ca/recommendations/secondary-prevention-of-stroke/management-of-extracranial-carotid-disease-and-intracranial-atherosclerosis",
+        "locators": [
+          "9.1 carotid; 9.3 vertebral; 9.4 intracranial stenosis; 9.5 dissection; CADISS/SAMMPRIS evidence",
+          "9.1 carotid; 9.3 vertebral; 9.4 intracranial stenosis; 9.5 dissection; CADISS/SAMMPRIS evidence",
+          "9.1 carotid; 9.3 vertebral; 9.4 intracranial stenosis; 9.5 dissection; CADISS/SAMMPRIS evidence",
+          "9.1 carotid; 9.3 vertebral; 9.4 intracranial stenosis; 9.5 dissection; CADISS/SAMMPRIS evidence",
+          "9.1 carotid; 9.3 vertebral; 9.4 intracranial stenosis; 9.5 dissection; CADISS/SAMMPRIS evidence",
+          "9.1 carotid; 9.3 vertebral; 9.4 intracranial stenosis; 9.5 dissection; CADISS/SAMMPRIS evidence"
+        ],
+        "retrieval_scope": "9.1 carotid; 9.3 vertebral; 9.4 intracranial stenosis; 9.5 dissection; CADISS/SAMMPRIS evidence"
+      },
+      {
+        "source_id": "neuro-mayo-fmd",
+        "url": "https://www.mayoclinic.org/diseases-conditions/fibromuscular-dysplasia/diagnosis-treatment/drc-20352150",
+        "locators": [
+          "Imaging; conditional BP and aspirin treatment; repeat imaging"
+        ],
+        "retrieval_scope": "Imaging; conditional BP and aspirin treatment; repeat imaging"
+      },
+      {
+        "source_id": "neuro-mayo-stroke-causes",
+        "url": "https://www.mayoclinic.org/diseases-conditions/stroke/symptoms-causes/syc-20350113",
+        "locators": [
+          "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy",
+          "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy"
+        ],
+        "retrieval_scope": "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy"
+      },
+      {
+        "source_id": "neuro-mayo-stroke-treatment",
+        "url": "https://www.mayoclinic.org/diseases-conditions/stroke/diagnosis-treatment/drc-20350119",
+        "locators": [
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+        ],
+        "retrieval_scope": "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+      },
+      {
+        "source_id": "neuro-merck-gas",
+        "url": "https://www.merckmanuals.com/professional/injuries-poisoning/injury-during-diving-or-work-in-compressed-air/arterial-gas-embolism",
+        "locators": [
+          "Treatment: oxygen and urgent recompression; diving-specific scope retained",
+          "Treatment: oxygen and urgent recompression; diving-specific scope retained"
+        ],
+        "retrieval_scope": "Treatment: oxygen and urgent recompression; diving-specific scope retained"
+      },
+      {
+        "source_id": "neuro-merck-ischemic",
+        "url": "https://www.merckmanuals.com/professional/neurologic-disorders/stroke/ischemic-stroke",
+        "locators": [
+          "Etiology: cardiac/paradoxical/fat/air, lacunar, low perfusion, other causes; Diagnosis and mimics",
+          "Etiology: cardiac/paradoxical/fat/air, lacunar, low perfusion, other causes; Diagnosis and mimics",
+          "Etiology: cardiac/paradoxical/fat/air, lacunar, low perfusion, other causes; Diagnosis and mimics",
+          "Etiology: cardiac/paradoxical/fat/air, lacunar, low perfusion, other causes; Diagnosis and mimics",
+          "Etiology: cardiac/paradoxical/fat/air, lacunar, low perfusion, other causes; Diagnosis and mimics"
+        ],
+        "retrieval_scope": "Etiology: cardiac/paradoxical/fat/air, lacunar, low perfusion, other causes; Diagnosis and mimics"
+      },
+      {
+        "source_id": "neuro-moyamoya-hopkins",
+        "url": "https://www.hopkinsmedicine.org/health/conditions-and-diseases/moyamoya-disease",
+        "locators": [
+          "Definition; symptoms; diagnosis; medicine and revascularization; recovery",
+          "Definition; symptoms; diagnosis; medicine and revascularization; recovery",
+          "Definition; symptoms; diagnosis; medicine and revascularization; recovery"
+        ],
+        "retrieval_scope": "Definition; symptoms; diagnosis; medicine and revascularization; recovery"
+      },
+      {
+        "source_id": "neuro-moyamoya-mayo",
+        "url": "https://www.mayoclinic.org/diseases-conditions/moyamoya-disease/diagnosis-treatment/drc-20355591?lang=en&p=1",
+        "locators": [
+          "MRI/MRA perfusion/angiography; medicines; direct/indirect revascularization; rehabilitation",
+          "MRI/MRA perfusion/angiography; medicines; direct/indirect revascularization; rehabilitation",
+          "MRI/MRA perfusion/angiography; medicines; direct/indirect revascularization; rehabilitation"
+        ],
+        "retrieval_scope": "MRI/MRA perfusion/angiography; medicines; direct/indirect revascularization; rehabilitation"
+      },
+      {
+        "source_id": "neuro-sah-a",
+        "url": "https://professional.heart.org/en/science-news/2023-guideline-for-the-management-of-patients-with-aneurysmal-subarachnoid-hemorrhage/top-things-to-know",
+        "locators": [
+          "Items 1-10; official summary, not full guideline",
+          "Items 1-10; official summary, not full guideline"
+        ],
+        "retrieval_scope": "Items 1-10; official summary, not full guideline"
+      },
+      {
+        "source_id": "neuro-sah-n",
+        "url": "https://www.nice.org.uk/guidance/ng228/chapter/Recommendations",
+        "locators": [
+          "1.1 diagnosis; 1.2 treatment; 1.3 complications; 1.4 follow-up; 1.5 information",
+          "1.1 diagnosis; 1.2 treatment; 1.3 complications; 1.4 follow-up; 1.5 information"
+        ],
+        "retrieval_scope": "1.1 diagnosis; 1.2 treatment; 1.3 complications; 1.4 follow-up; 1.5 information"
+      },
+      {
+        "source_id": "neuro-sah-s",
+        "url": "https://www.nice.org.uk/guidance/ng128/chapter/recommendations",
+        "locators": [
+          "1.6.1-1.6.11 swallowing/nutrition; 1.8.1 aspiration avoidance"
+        ],
+        "retrieval_scope": "1.6.1-1.6.11 swallowing/nutrition; 1.8.1 aspiration avoidance"
+      },
+      {
+        "source_id": "neuro-watershed-review",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10478671/",
+        "locators": [
+          "Abstract; pathophysiology; clinical aspects; management; older treatment-window numbers not reused",
+          "Abstract; pathophysiology; clinical aspects; management; older treatment-window numbers not reused"
+        ],
+        "retrieval_scope": "Abstract; pathophysiology; clinical aspects; management; older treatment-window numbers not reused"
+      },
+      {
+        "source_id": "stroke-recovery-nhs",
+        "url": "https://www.nhs.uk/conditions/stroke/recovery/",
+        "locators": [
+          "Movement, cognition, speech, swallowing, mood, bladder/bowel, discharge support and reviews",
+          "Movement, cognition, speech, swallowing, mood, bladder/bowel, discharge support and reviews",
+          "Movement, cognition, speech, swallowing, mood, bladder/bowel, discharge support and reviews"
+        ],
+        "retrieval_scope": "Inspected the condition-specific recovery page and its relevant headings."
+      },
+      {
+        "source_id": "stroke-symptoms-nhs",
+        "url": "https://www.nhs.uk/conditions/stroke/symptoms/",
+        "locators": [
+          "Symptoms; immediate emergency action; no driving",
+          "Symptoms; immediate emergency action; no driving",
+          "Symptoms; immediate emergency action; no driving"
+        ],
+        "retrieval_scope": "Inspected the condition-specific symptoms page and its relevant headings."
+      }
+    ],
+    "sections": {
+      "summary": {
+        "source_ids": [
+          "neuro-ischemic-e",
+          "neuro-ischemic-g",
+          "neuro-ischemic-v",
+          "neuro-mayo-stroke-treatment"
+        ],
+        "locators": {
+          "neuro-ischemic-e": [
+            "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing"
+          ],
+          "neuro-ischemic-g": [
+            "Definition; cerebral thrombosis and embolism"
+          ],
+          "neuro-ischemic-v": [
+            "9.1 carotid; 9.3 vertebral; 9.4 intracranial stenosis; 9.5 dissection; CADISS/SAMMPRIS evidence"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "causes_risks": {
+        "source_ids": [
+          "neuro-aps-nhs",
+          "neuro-aps-rbft",
+          "neuro-cc-fat",
+          "neuro-cc-vasculitis",
+          "neuro-embolic-mayo-causes",
+          "neuro-ischemic-c",
+          "neuro-ischemic-d",
+          "neuro-ischemic-g",
+          "neuro-ischemic-k",
+          "neuro-ischemic-l",
+          "neuro-ischemic-p",
+          "neuro-ischemic-u",
+          "neuro-ischemic-v",
+          "neuro-mayo-stroke-treatment",
+          "neuro-merck-gas",
+          "neuro-merck-ischemic",
+          "neuro-moyamoya-hopkins",
+          "neuro-moyamoya-mayo",
+          "neuro-watershed-review"
+        ],
+        "locators": {
+          "neuro-aps-nhs": [
+            "Cause; stroke; diagnosis repeat antibodies; warfarin; additional monitoring"
+          ],
+          "neuro-aps-rbft": [
+            "pp1–2 definition; thrombosis/persistent antibodies; arterial/triple-positive warfarin preference"
+          ],
+          "neuro-cc-fat": [
+            "Causes; supportive care; oxygen/ventilation; fracture stabilization; limitations"
+          ],
+          "neuro-cc-vasculitis": [
+            "Causes; stroke; tests; immune treatment; follow-up and relapse"
+          ],
+          "neuro-embolic-mayo-causes": [
+            "Causes: cardiac/aortic sources, PFO, fat/air; prevention"
+          ],
+          "neuro-ischemic-c": [
+            "11.1 standard workup; cancer mechanisms; clinical considerations"
+          ],
+          "neuro-ischemic-d": [
+            "Items 2-5 mechanisms/symptoms/tests; 8-10 treatment and follow-up"
+          ],
+          "neuro-ischemic-g": [
+            "Definition; cerebral thrombosis and embolism"
+          ],
+          "neuro-ischemic-k": [
+            "10.1 PFO; 10.2 aortic arch; 10.3 cardiac thrombus and low EF; rationale"
+          ],
+          "neuro-ischemic-l": [
+            "Definition; functional impact; rehabilitation; recovery; prevention"
+          ],
+          "neuro-ischemic-p": [
+            "Items 1-10; etiology, risk factors, medicines, AF, carotid, intracranial, PFO and ESUS"
+          ],
+          "neuro-ischemic-u": [
+            "Causes; AF mechanism and rhythm monitoring ONLY"
+          ],
+          "neuro-ischemic-v": [
+            "9.1 carotid; 9.3 vertebral; 9.4 intracranial stenosis; 9.5 dissection; CADISS/SAMMPRIS evidence"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
+          "neuro-merck-gas": [
+            "Treatment: oxygen and urgent recompression; diving-specific scope retained"
+          ],
+          "neuro-merck-ischemic": [
+            "Etiology: cardiac/paradoxical/fat/air, lacunar, low perfusion, other causes; Diagnosis and mimics"
+          ],
+          "neuro-moyamoya-hopkins": [
+            "Definition; symptoms; diagnosis; medicine and revascularization; recovery"
+          ],
+          "neuro-moyamoya-mayo": [
+            "MRI/MRA perfusion/angiography; medicines; direct/indirect revascularization; rehabilitation"
+          ],
+          "neuro-watershed-review": [
+            "Abstract; pathophysiology; clinical aspects; management; older treatment-window numbers not reused"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "care": {
+        "source_ids": [
+          "neuro-ischemic-a",
+          "neuro-ischemic-e",
+          "neuro-ischemic-t",
+          "neuro-mayo-stroke-treatment",
+          "stroke-symptoms-nhs"
+        ],
+        "locators": {
+          "neuro-ischemic-a": [
+            "Items 1-10; official summary only, full guideline access unsuccessful"
+          ],
+          "neuro-ischemic-e": [
+            "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing"
+          ],
+          "neuro-ischemic-t": [
+            "5.1 selection; 5.2 thrombolysis; 5.4 2025 EVT; clinical considerations including pregnancy, disability and anticoagulants"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
+          "stroke-symptoms-nhs": [
+            "Symptoms; immediate emergency action; no driving"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "diagnosis": {
+        "source_ids": [
+          "neuro-aha-secondary-full",
+          "neuro-aps-nhs",
+          "neuro-aps-rbft",
+          "neuro-bsh-thrombophilia",
+          "neuro-eso-lacunar-2024",
+          "neuro-ischemic-d",
+          "neuro-ischemic-e",
+          "neuro-ischemic-u",
+          "neuro-ischemic-v",
+          "neuro-mayo-stroke-treatment",
+          "neuro-merck-ischemic",
+          "neuro-moyamoya-hopkins",
+          "neuro-moyamoya-mayo"
+        ],
+        "locators": {
+          "neuro-aha-secondary-full": [
+            "Aortic arch atheroma knowledge gaps; hypercoagulable states supportive text; fibromuscular dysplasia recommendations"
+          ],
+          "neuro-aps-nhs": [
+            "Cause; stroke; diagnosis repeat antibodies; warfarin; additional monitoring"
+          ],
+          "neuro-aps-rbft": [
+            "pp1–2 definition; thrombosis/persistent antibodies; arterial/triple-positive warfarin preference"
+          ],
+          "neuro-bsh-thrombophilia": [
+            "Ischaemic stroke except CVST; recommendations and testing limitations; acquired arterial thrombosis"
+          ],
+          "neuro-eso-lacunar-2024": [
+            "PDF pp2–4 abstract, definition, clinical syndromes and diagnostic advice; no entire journal claimed read"
+          ],
+          "neuro-ischemic-d": [
+            "Items 2-5 mechanisms/symptoms/tests; 8-10 treatment and follow-up"
+          ],
+          "neuro-ischemic-e": [
+            "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing"
+          ],
+          "neuro-ischemic-u": [
+            "Causes; AF mechanism and rhythm monitoring ONLY"
+          ],
+          "neuro-ischemic-v": [
+            "9.1 carotid; 9.3 vertebral; 9.4 intracranial stenosis; 9.5 dissection; CADISS/SAMMPRIS evidence"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
+          "neuro-merck-ischemic": [
+            "Etiology: cardiac/paradoxical/fat/air, lacunar, low perfusion, other causes; Diagnosis and mimics"
+          ],
+          "neuro-moyamoya-hopkins": [
+            "Definition; symptoms; diagnosis; medicine and revascularization; recovery"
+          ],
+          "neuro-moyamoya-mayo": [
+            "MRI/MRA perfusion/angiography; medicines; direct/indirect revascularization; rehabilitation"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "differentials": {
+        "source_ids": [
+          "neuro-ischemic-e",
+          "neuro-ischemic-l",
+          "neuro-mayo-stroke-treatment",
+          "neuro-merck-ischemic",
+          "stroke-symptoms-nhs"
+        ],
+        "locators": {
+          "neuro-ischemic-e": [
+            "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing"
+          ],
+          "neuro-ischemic-l": [
+            "Definition; functional impact; rehabilitation; recovery; prevention"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
+          "neuro-merck-ischemic": [
+            "Etiology: cardiac/paradoxical/fat/air, lacunar, low perfusion, other causes; Diagnosis and mimics"
+          ],
+          "stroke-symptoms-nhs": [
+            "Symptoms; immediate emergency action; no driving"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "treatment": {
+        "source_ids": [
+          "neuro-aha-secondary-full",
+          "neuro-cc-fat",
+          "neuro-cc-vasculitis",
+          "neuro-embolic-mayo-treatment",
+          "neuro-eso-lacunar-2024",
+          "neuro-hopkins-vasculitis",
+          "neuro-ischemic-a",
+          "neuro-ischemic-d",
+          "neuro-ischemic-e",
+          "neuro-ischemic-k",
+          "neuro-ischemic-p",
+          "neuro-ischemic-t",
+          "neuro-ischemic-v",
+          "neuro-mayo-fmd",
+          "neuro-mayo-stroke-treatment",
+          "neuro-merck-gas",
+          "neuro-moyamoya-hopkins",
+          "neuro-moyamoya-mayo",
+          "neuro-sah-a",
+          "neuro-sah-n",
+          "neuro-watershed-review"
+        ],
+        "locators": {
+          "neuro-aha-secondary-full": [
+            "Aortic arch atheroma knowledge gaps; hypercoagulable states supportive text; fibromuscular dysplasia recommendations"
+          ],
+          "neuro-cc-fat": [
+            "Causes; supportive care; oxygen/ventilation; fracture stabilization; limitations"
+          ],
+          "neuro-cc-vasculitis": [
+            "Causes; stroke; tests; immune treatment; follow-up and relapse"
+          ],
+          "neuro-embolic-mayo-treatment": [
+            "Brain/vessel/heart tests; PFO selection; fat supportive care; air oxygen/HBOT; rehabilitation"
+          ],
+          "neuro-eso-lacunar-2024": [
+            "PDF pp2–4 abstract, definition, clinical syndromes and diagnostic advice; no entire journal claimed read"
+          ],
+          "neuro-hopkins-vasculitis": [
+            "General principles: induction, maintenance, relapse and risks"
+          ],
+          "neuro-ischemic-a": [
+            "Items 1-10; official summary only, full guideline access unsuccessful"
+          ],
+          "neuro-ischemic-d": [
+            "Items 2-5 mechanisms/symptoms/tests; 8-10 treatment and follow-up"
+          ],
+          "neuro-ischemic-e": [
+            "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing"
+          ],
+          "neuro-ischemic-k": [
+            "10.1 PFO; 10.2 aortic arch; 10.3 cardiac thrombus and low EF; rationale"
+          ],
+          "neuro-ischemic-p": [
+            "Items 1-10; etiology, risk factors, medicines, AF, carotid, intracranial, PFO and ESUS"
+          ],
+          "neuro-ischemic-t": [
+            "5.1 selection; 5.2 thrombolysis; 5.4 2025 EVT; clinical considerations including pregnancy, disability and anticoagulants"
+          ],
+          "neuro-ischemic-v": [
+            "9.1 carotid; 9.3 vertebral; 9.4 intracranial stenosis; 9.5 dissection; CADISS/SAMMPRIS evidence"
+          ],
+          "neuro-mayo-fmd": [
+            "Imaging; conditional BP and aspirin treatment; repeat imaging"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
+          "neuro-merck-gas": [
+            "Treatment: oxygen and urgent recompression; diving-specific scope retained"
+          ],
+          "neuro-moyamoya-hopkins": [
+            "Definition; symptoms; diagnosis; medicine and revascularization; recovery"
+          ],
+          "neuro-moyamoya-mayo": [
+            "MRI/MRA perfusion/angiography; medicines; direct/indirect revascularization; rehabilitation"
+          ],
+          "neuro-sah-a": [
+            "Items 1-10; official summary, not full guideline"
+          ],
+          "neuro-sah-n": [
+            "1.1 diagnosis; 1.2 treatment; 1.3 complications; 1.4 follow-up; 1.5 information"
+          ],
+          "neuro-watershed-review": [
+            "Abstract; pathophysiology; clinical aspects; management; older treatment-window numbers not reused"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "medications": {
+        "source_ids": [
+          "neuro-aha-secondary-full",
+          "neuro-aps-nhs",
+          "neuro-aps-rbft",
+          "neuro-bsh-thrombophilia",
+          "neuro-ischemic-a",
+          "neuro-ischemic-e",
+          "neuro-ischemic-p",
+          "neuro-ischemic-t",
+          "neuro-ischemic-v",
+          "neuro-mayo-stroke-causes"
+        ],
+        "locators": {
+          "neuro-aha-secondary-full": [
+            "Aortic arch atheroma knowledge gaps; hypercoagulable states supportive text; fibromuscular dysplasia recommendations"
+          ],
+          "neuro-aps-nhs": [
+            "Cause; stroke; diagnosis repeat antibodies; warfarin; additional monitoring"
+          ],
+          "neuro-aps-rbft": [
+            "pp1–2 definition; thrombosis/persistent antibodies; arterial/triple-positive warfarin preference"
+          ],
+          "neuro-bsh-thrombophilia": [
+            "Ischaemic stroke except CVST; recommendations and testing limitations; acquired arterial thrombosis"
+          ],
+          "neuro-ischemic-a": [
+            "Items 1-10; official summary only, full guideline access unsuccessful"
+          ],
+          "neuro-ischemic-e": [
+            "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing"
+          ],
+          "neuro-ischemic-p": [
+            "Items 1-10; etiology, risk factors, medicines, AF, carotid, intracranial, PFO and ESUS"
+          ],
+          "neuro-ischemic-t": [
+            "5.1 selection; 5.2 thrombolysis; 5.4 2025 EVT; clinical considerations including pregnancy, disability and anticoagulants"
+          ],
+          "neuro-ischemic-v": [
+            "9.1 carotid; 9.3 vertebral; 9.4 intracranial stenosis; 9.5 dissection; CADISS/SAMMPRIS evidence"
+          ],
+          "neuro-mayo-stroke-causes": [
+            "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "special_populations": {
+        "source_ids": [
+          "neuro-aha-disability",
+          "neuro-aha-pregnancy",
+          "neuro-ischemic-a",
+          "neuro-ischemic-t",
+          "neuro-merck-ischemic"
+        ],
+        "locators": {
+          "neuro-aha-disability": [
+            "Shared benefit-risk decisions and evidence limitations"
+          ],
+          "neuro-aha-pregnancy": [
+            "Official summary: immediate response and coordinated maternal stroke care"
+          ],
+          "neuro-ischemic-a": [
+            "Items 1-10; official summary only, full guideline access unsuccessful"
+          ],
+          "neuro-ischemic-t": [
+            "5.1 selection; 5.2 thrombolysis; 5.4 2025 EVT; clinical considerations including pregnancy, disability and anticoagulants"
+          ],
+          "neuro-merck-ischemic": [
+            "Etiology: cardiac/paradoxical/fat/air, lacunar, low perfusion, other causes; Diagnosis and mimics"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "prevention": {
+        "source_ids": [
+          "neuro-ischemic-k",
+          "neuro-ischemic-l",
+          "neuro-ischemic-p",
+          "neuro-ischemic-v",
+          "neuro-mayo-stroke-treatment"
+        ],
+        "locators": {
+          "neuro-ischemic-k": [
+            "10.1 PFO; 10.2 aortic arch; 10.3 cardiac thrombus and low EF; rationale"
+          ],
+          "neuro-ischemic-l": [
+            "Definition; functional impact; rehabilitation; recovery; prevention"
+          ],
+          "neuro-ischemic-p": [
+            "Items 1-10; etiology, risk factors, medicines, AF, carotid, intracranial, PFO and ESUS"
+          ],
+          "neuro-ischemic-v": [
+            "9.1 carotid; 9.3 vertebral; 9.4 intracranial stenosis; 9.5 dissection; CADISS/SAMMPRIS evidence"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "red_flags": {
+        "source_ids": [
+          "neuro-mayo-stroke-causes",
+          "stroke-symptoms-nhs"
+        ],
+        "locators": {
+          "neuro-mayo-stroke-causes": [
+            "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy"
+          ],
+          "stroke-symptoms-nhs": [
+            "Symptoms; immediate emergency action; no driving"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "daily_care": {
+        "source_ids": [
+          "neuro-mayo-stroke-treatment",
+          "stroke-recovery-nhs"
+        ],
+        "locators": {
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
+          "stroke-recovery-nhs": [
+            "Movement, cognition, speech, swallowing, mood, bladder/bowel, discharge support and reviews"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "prognosis_followup": {
+        "source_ids": [
+          "neuro-cdc-stroke-treatment",
+          "neuro-mayo-stroke-treatment",
+          "stroke-recovery-nhs"
+        ],
+        "locators": {
+          "neuro-cdc-stroke-treatment": [
+            "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
+          "stroke-recovery-nhs": [
+            "Movement, cognition, speech, swallowing, mood, bladder/bowel, discharge support and reviews"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "complications": {
+        "source_ids": [
+          "neuro-cdc-stroke-treatment",
+          "neuro-mayo-stroke-treatment",
+          "neuro-merck-ischemic",
+          "neuro-sah-a",
+          "neuro-sah-n",
+          "stroke-recovery-nhs"
+        ],
+        "locators": {
+          "neuro-cdc-stroke-treatment": [
+            "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
+          "neuro-merck-ischemic": [
+            "Etiology: cardiac/paradoxical/fat/air, lacunar, low perfusion, other causes; Diagnosis and mimics"
+          ],
+          "neuro-sah-a": [
+            "Items 1-10; official summary, not full guideline"
+          ],
+          "neuro-sah-n": [
+            "1.1 diagnosis; 1.2 treatment; 1.3 complications; 1.4 follow-up; 1.5 information"
+          ],
+          "stroke-recovery-nhs": [
+            "Movement, cognition, speech, swallowing, mood, bladder/bowel, discharge support and reviews"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "diet": {
+        "source_ids": [
+          "neuro-canada-stroke-swallowing",
+          "neuro-sah-s"
+        ],
+        "locators": {
+          "neuro-canada-stroke-swallowing": [
+            "6.1 swallowing and feeding; 6.2 nutrition; 6.3 oral health; rationale and evidence limitations"
+          ],
+          "neuro-sah-s": [
+            "1.6.1-1.6.11 swallowing/nutrition; 1.8.1 aspiration avoidance"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      }
+    }
+  },
+  {
+    "condition_id": "status-epilepticus",
+    "checked_at": "2026-10-03",
+    "independent_review": "reports/p0-03-status-epilepticus-independent.json",
+    "inspected_sources": [
+      {
+        "source_id": "batch-b-seizure-first-aid",
+        "url": "https://www.nhs.uk/symptoms/what-to-do-if-someone-has-a-seizure-fit/",
+        "locators": [
+          "First aid; When to call; Information to note",
+          "First aid; When to call; Information to note",
+          "First aid; When to call; Information to note",
+          "First aid; When to call; Information to note",
+          "First aid; When to call; Information to note",
+          "First aid; When to call; Information to note"
+        ],
+        "retrieval_scope": "Relevant patient-information sections inspected during expanded drafting; see batch-b.json for section locators."
+      },
+      {
+        "source_id": "epilepsy-nhs",
+        "url": "https://www.nhs.uk/conditions/epilepsy/",
+        "locators": [
+          "Diagnosis; treatment; self-care; pregnancy; risks",
+          "Diagnosis; treatment; self-care; pregnancy; risks",
+          "Diagnosis; treatment; self-care; pregnancy; risks",
+          "Diagnosis; treatment; self-care; pregnancy; risks"
+        ],
+        "retrieval_scope": "Topic page or hub opened via browsing. Linked subpages/full claim support not comprehensively audited."
+      },
+      {
+        "source_id": "neuro-action-memory",
+        "url": "https://www.epilepsy.org.uk/living/epilepsy-and-wellbeing/memory-problems-and-epilepsy",
+        "locators": [
+          "Cognitive problems; seizure/medicine effects; What should I do; Managing memory problems",
+          "Cognitive problems; seizure/medicine effects; What should I do; Managing memory problems"
+        ],
+        "retrieval_scope": "Cognitive problems; seizure/medicine effects; What should I do; Managing memory problems; web open original HTML"
+      },
+      {
+        "source_id": "neuro-cdc-seizure-first-aid",
+        "url": "https://www.cdc.gov/epilepsy/first-aid-for-seizures/index.html",
+        "locators": [
+          "Keeping safe; When to call; What to avoid",
+          "Keeping safe; When to call; What to avoid",
+          "Keeping safe; When to call; What to avoid"
+        ],
+        "retrieval_scope": "Keeping safe; When to call; What to avoid; web open original HTML"
+      },
+      {
+        "source_id": "neuro-cleveland-status",
+        "url": "https://my.clevelandclinic.org/health/diseases/24729-status-epilepticus",
+        "locators": [
+          "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+          "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+          "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+          "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+          "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+          "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+          "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+          "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+          "Overview; Causes; Diagnosis; Treatment; Recovery; body effects"
+        ],
+        "retrieval_scope": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects; web open original HTML"
+      },
+      {
+        "source_id": "neuro-dgn-status-2021",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8484257/",
+        "locators": [
+          "English/German abstracts; definitions/Table 1; 3.1–3.4 diagnosis; recommendations stages 1–4; ethical considerations",
+          "English/German abstracts; definitions/Table 1; 3.1–3.4 diagnosis; recommendations stages 1–4; ethical considerations",
+          "English/German abstracts; definitions/Table 1; 3.1–3.4 diagnosis; recommendations stages 1–4; ethical considerations",
+          "English/German abstracts; definitions/Table 1; 3.1–3.4 diagnosis; recommendations stages 1–4; ethical considerations"
+        ],
+        "retrieval_scope": "English/German abstracts; definitions/Table 1; 3.1–3.4 diagnosis; recommendations stages 1–4; ethical considerations; Original PMC journal HTML via urllib; public CC-BY 4.0 article, relevant German sections read"
+      },
+      {
+        "source_id": "neuro-foundation-imitators",
+        "url": "https://www.epilepsy.com/diagnosis/imitators-epilepsy",
+        "locators": [
+          "Overview table; Vasovagal syncope; Cardiac syncope"
+        ],
+        "retrieval_scope": "Overview table; Vasovagal syncope; Cardiac syncope; web open original HTML"
+      },
+      {
+        "source_id": "neuro-foundation-normal-eeg",
+        "url": "https://www.epilepsy.com/diagnosis/eeg/what-if-its-normal",
+        "locators": [
+          "I have seizures but EEG normal; other diagnostic information"
+        ],
+        "retrieval_scope": "I have seizures but EEG normal; other diagnostic information; web open original HTML"
+      },
+      {
+        "source_id": "neuro-foundation-pnes",
+        "url": "https://www.epilepsy.com/diagnosis/imitators-epilepsy/psychogenic-nonepileptic-seizures",
+        "locators": [
+          "What Is PNES; How Is PNES Diagnosed"
+        ],
+        "retrieval_scope": "What Is PNES; How Is PNES Diagnosed; Original HTML clinical paragraphs read; no videos accessed"
+      },
+      {
+        "source_id": "neuro-foundation-status",
+        "url": "https://www.epilepsy.com/complications-risks/emergencies/status-epilepticus",
+        "locators": [
+          "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies",
+          "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies",
+          "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies",
+          "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies",
+          "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies",
+          "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies",
+          "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies",
+          "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies"
+        ],
+        "retrieval_scope": "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies; web open original HTML"
+      },
+      {
+        "source_id": "neuro-ics-status-2025",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12062632/",
+        "locators": [
+          "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+          "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+          "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+          "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+          "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+          "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+          "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure"
+        ],
+        "retrieval_scope": "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure; web open original HTML"
+      },
+      {
+        "source_id": "neuro-ilae-rasmussen-eeg",
+        "url": "https://www.epilepsydiagnosis.org/syndrome/rasmussen-eeg.html",
+        "locators": [
+          "Ictal EEG: EPC may lack scalp EEG change; syndrome-specific context"
+        ],
+        "retrieval_scope": "Ictal EEG: EPC may lack scalp EEG change; syndrome-specific context"
+      },
+      {
+        "source_id": "neuro-ilae-rasmussen-overview",
+        "url": "https://www.epilepsydiagnosis.org/syndrome/rasmussen-overview.html",
+        "locators": [
+          "Unilateral inflammatory brain disease; progressive focal seizures and neurological dysfunction"
+        ],
+        "retrieval_scope": "Unilateral inflammatory brain disease; progressive focal seizures and neurological dysfunction"
+      },
+      {
+        "source_id": "neuro-ilae-rasmussen-seizures",
+        "url": "https://www.epilepsydiagnosis.org/syndrome/rasmussen-videos.html",
+        "locators": [
+          "Seizures: EPC recurrent focal motor, typically hand/face, variable awareness; textual page only, restricted video not accessed"
+        ],
+        "retrieval_scope": "Seizures: EPC recurrent focal motor, typically hand/face, variable awareness; textual page only, restricted video not accessed"
+      },
+      {
+        "source_id": "neuro-mayo-status-age",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3083989/",
+        "locators": [
+          "Abstract and age-related causes paragraph"
+        ],
+        "retrieval_scope": "Abstract and age-related causes paragraph; Original-author indexed text; direct PMC returned browser challenge"
+      },
+      {
+        "source_id": "neuro-merck-seizures",
+        "url": "https://www.merckmanuals.com/professional/neurologic-disorders/seizure-disorders/seizure-disorders",
+        "locators": [
+          "Focal seizures/EPC; Status epilepticus; Diagnosis/EEG; Treatment",
+          "Focal seizures/EPC; Status epilepticus; Diagnosis/EEG; Treatment",
+          "Focal seizures/EPC; Status epilepticus; Diagnosis/EEG; Treatment",
+          "Focal seizures/EPC; Status epilepticus; Diagnosis/EEG; Treatment"
+        ],
+        "retrieval_scope": "Focal seizures/EPC; Status epilepticus; Diagnosis/EEG; Treatment"
+      },
+      {
+        "source_id": "neuro-msd-eclampsia",
+        "url": "https://www.msdmanuals.com/professional/gynecology-and-obstetrics/antenatal-complications/preeclampsia-and-eclampsia",
+        "locators": [
+          "Diagnosis differential; Treatment; Magnesium sulfate; Postpartum preeclampsia"
+        ],
+        "retrieval_scope": "Diagnosis differential; Treatment; Magnesium sulfate; Postpartum preeclampsia; Original HTML read"
+      },
+      {
+        "source_id": "neuro-nice-eclampsia",
+        "url": "https://www.nice.org.uk/guidance/ng133/chapter/Recommendations",
+        "locators": [
+          "1.8.1–1.8.5"
+        ],
+        "retrieval_scope": "1.8.1–1.8.5; Original NICE HTML via urllib after web 403"
+      },
+      {
+        "source_id": "neuro-nice-epilepsy-diagnosis",
+        "url": "https://www.nice.org.uk/guidance/ng217/chapter/1-Diagnosis-and-assessment-of-epilepsy",
+        "locators": [
+          "1.2.1–1.2.10 and rationale",
+          "1.2.1–1.2.10 and rationale"
+        ],
+        "retrieval_scope": "1.2.1–1.2.10 and rationale; Original NICE HTML read via urllib after web 403"
+      },
+      {
+        "source_id": "neuro-nice-status",
+        "url": "https://www.nice.org.uk/guidance/ng217/chapter/7-Treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures",
+        "locators": [
+          "7.1.1–7.1.12; 7.2; 7.3 and rationale",
+          "7.1.1–7.1.12; 7.2; 7.3 and rationale",
+          "7.1.1–7.1.12; 7.2; 7.3 and rationale",
+          "7.1.1–7.1.12; 7.2; 7.3 and rationale",
+          "7.1.1–7.1.12; 7.2; 7.3 and rationale",
+          "7.1.1–7.1.12; 7.2; 7.3 and rationale"
+        ],
+        "retrieval_scope": "7.1.1–7.1.12; 7.2; 7.3 and rationale; Original URL urllib HTTP read after web403, HTML tags removed in memory"
+      },
+      {
+        "source_id": "neuro-rcog-pregnancy",
+        "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/epilepsy-in-pregnancy/",
+        "locators": [
+          "Key points; unplanned pregnancy; medicine risks; after birth"
+        ],
+        "retrieval_scope": "Key points; unplanned pregnancy; medicine risks; after birth; web open original HTML"
+      },
+      {
+        "source_id": "neuro-society-emergency",
+        "url": "https://epilepsysociety.org.uk/understanding-epilepsy/emergency-medication",
+        "locators": [
+          "Non-convulsive status; emergency medications; protocols; training",
+          "Non-convulsive status; emergency medications; protocols; training",
+          "Non-convulsive status; emergency medications; protocols; training",
+          "Non-convulsive status; emergency medications; protocols; training",
+          "Non-convulsive status; emergency medications; protocols; training"
+        ],
+        "retrieval_scope": "Non-convulsive status; emergency medications; protocols; training; web open original HTML"
+      },
+      {
+        "source_id": "neuro-society-memory",
+        "url": "https://epilepsysociety.org.uk/living-epilepsy/memory-and-epilepsy",
+        "locators": [
+          "How epilepsy affects memory; After a seizure; medication; memory aids",
+          "How epilepsy affects memory; After a seizure; medication; memory aids"
+        ],
+        "retrieval_scope": "How epilepsy affects memory; After a seizure; medication; memory aids; web open original HTML"
+      }
+    ],
+    "sections": {
+      "summary": {
+        "source_ids": [
+          "neuro-cleveland-status",
+          "neuro-foundation-status",
+          "neuro-ilae-rasmussen-seizures",
+          "neuro-merck-seizures",
+          "neuro-society-emergency"
+        ],
+        "locators": {
+          "neuro-cleveland-status": [
+            "Overview; Causes; Diagnosis; Treatment; Recovery; body effects"
+          ],
+          "neuro-foundation-status": [
+            "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies"
+          ],
+          "neuro-ilae-rasmussen-seizures": [
+            "Seizures: EPC recurrent focal motor, typically hand/face, variable awareness; textual page only, restricted video not accessed"
+          ],
+          "neuro-merck-seizures": [
+            "Focal seizures/EPC; Status epilepticus; Diagnosis/EEG; Treatment"
+          ],
+          "neuro-society-emergency": [
+            "Non-convulsive status; emergency medications; protocols; training"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "causes_risks": {
+        "source_ids": [
+          "neuro-cleveland-status",
+          "neuro-ics-status-2025",
+          "neuro-ilae-rasmussen-overview",
+          "neuro-merck-seizures",
+          "neuro-nice-status"
+        ],
+        "locators": {
+          "neuro-cleveland-status": [
+            "Overview; Causes; Diagnosis; Treatment; Recovery; body effects"
+          ],
+          "neuro-ics-status-2025": [
+            "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure"
+          ],
+          "neuro-ilae-rasmussen-overview": [
+            "Unilateral inflammatory brain disease; progressive focal seizures and neurological dysfunction"
+          ],
+          "neuro-merck-seizures": [
+            "Focal seizures/EPC; Status epilepticus; Diagnosis/EEG; Treatment"
+          ],
+          "neuro-nice-status": [
+            "7.1.1–7.1.12; 7.2; 7.3 and rationale"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "red_flags": {
+        "source_ids": [
+          "batch-b-seizure-first-aid",
+          "neuro-cdc-seizure-first-aid",
+          "neuro-cleveland-status",
+          "neuro-foundation-status",
+          "neuro-nice-status"
+        ],
+        "locators": {
+          "batch-b-seizure-first-aid": [
+            "First aid; When to call; Information to note"
+          ],
+          "neuro-cdc-seizure-first-aid": [
+            "Keeping safe; When to call; What to avoid"
+          ],
+          "neuro-cleveland-status": [
+            "Overview; Causes; Diagnosis; Treatment; Recovery; body effects"
+          ],
+          "neuro-foundation-status": [
+            "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies"
+          ],
+          "neuro-nice-status": [
+            "7.1.1–7.1.12; 7.2; 7.3 and rationale"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "care": {
+        "source_ids": [
+          "batch-b-seizure-first-aid",
+          "neuro-cdc-seizure-first-aid"
+        ],
+        "locators": {
+          "batch-b-seizure-first-aid": [
+            "First aid; When to call; Information to note"
+          ],
+          "neuro-cdc-seizure-first-aid": [
+            "Keeping safe; When to call; What to avoid"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "diagnosis": {
+        "source_ids": [
+          "neuro-cleveland-status",
+          "neuro-dgn-status-2021",
+          "neuro-foundation-normal-eeg",
+          "neuro-foundation-status",
+          "neuro-ics-status-2025",
+          "neuro-ilae-rasmussen-eeg",
+          "neuro-merck-seizures",
+          "neuro-nice-epilepsy-diagnosis"
+        ],
+        "locators": {
+          "neuro-cleveland-status": [
+            "Overview; Causes; Diagnosis; Treatment; Recovery; body effects"
+          ],
+          "neuro-dgn-status-2021": [
+            "English/German abstracts; definitions/Table 1; 3.1–3.4 diagnosis; recommendations stages 1–4; ethical considerations"
+          ],
+          "neuro-foundation-normal-eeg": [
+            "I have seizures but EEG normal; other diagnostic information"
+          ],
+          "neuro-foundation-status": [
+            "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies"
+          ],
+          "neuro-ics-status-2025": [
+            "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure"
+          ],
+          "neuro-ilae-rasmussen-eeg": [
+            "Ictal EEG: EPC may lack scalp EEG change; syndrome-specific context"
+          ],
+          "neuro-merck-seizures": [
+            "Focal seizures/EPC; Status epilepticus; Diagnosis/EEG; Treatment"
+          ],
+          "neuro-nice-epilepsy-diagnosis": [
+            "1.2.1–1.2.10 and rationale"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "differentials": {
+        "source_ids": [
+          "neuro-cleveland-status",
+          "neuro-dgn-status-2021",
+          "neuro-foundation-imitators",
+          "neuro-foundation-pnes",
+          "neuro-foundation-status",
+          "neuro-ics-status-2025",
+          "neuro-nice-epilepsy-diagnosis",
+          "neuro-nice-status"
+        ],
+        "locators": {
+          "neuro-cleveland-status": [
+            "Overview; Causes; Diagnosis; Treatment; Recovery; body effects"
+          ],
+          "neuro-dgn-status-2021": [
+            "English/German abstracts; definitions/Table 1; 3.1–3.4 diagnosis; recommendations stages 1–4; ethical considerations"
+          ],
+          "neuro-foundation-imitators": [
+            "Overview table; Vasovagal syncope; Cardiac syncope"
+          ],
+          "neuro-foundation-pnes": [
+            "What Is PNES; How Is PNES Diagnosed"
+          ],
+          "neuro-foundation-status": [
+            "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies"
+          ],
+          "neuro-ics-status-2025": [
+            "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure"
+          ],
+          "neuro-nice-epilepsy-diagnosis": [
+            "1.2.1–1.2.10 and rationale"
+          ],
+          "neuro-nice-status": [
+            "7.1.1–7.1.12; 7.2; 7.3 and rationale"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "treatment": {
+        "source_ids": [
+          "neuro-dgn-status-2021",
+          "neuro-foundation-status",
+          "neuro-ics-status-2025",
+          "neuro-merck-seizures",
+          "neuro-nice-status"
+        ],
+        "locators": {
+          "neuro-dgn-status-2021": [
+            "English/German abstracts; definitions/Table 1; 3.1–3.4 diagnosis; recommendations stages 1–4; ethical considerations"
+          ],
+          "neuro-foundation-status": [
+            "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies"
+          ],
+          "neuro-ics-status-2025": [
+            "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure"
+          ],
+          "neuro-merck-seizures": [
+            "Focal seizures/EPC; Status epilepticus; Diagnosis/EEG; Treatment"
+          ],
+          "neuro-nice-status": [
+            "7.1.1–7.1.12; 7.2; 7.3 and rationale"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "medications": {
+        "source_ids": [
+          "batch-b-seizure-first-aid",
+          "epilepsy-nhs",
+          "neuro-dgn-status-2021",
+          "neuro-ics-status-2025",
+          "neuro-nice-status",
+          "neuro-society-emergency"
+        ],
+        "locators": {
+          "batch-b-seizure-first-aid": [
+            "First aid; When to call; Information to note"
+          ],
+          "epilepsy-nhs": [
+            "Diagnosis; treatment; self-care; pregnancy; risks"
+          ],
+          "neuro-dgn-status-2021": [
+            "English/German abstracts; definitions/Table 1; 3.1–3.4 diagnosis; recommendations stages 1–4; ethical considerations"
+          ],
+          "neuro-ics-status-2025": [
+            "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure"
+          ],
+          "neuro-nice-status": [
+            "7.1.1–7.1.12; 7.2; 7.3 and rationale"
+          ],
+          "neuro-society-emergency": [
+            "Non-convulsive status; emergency medications; protocols; training"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "diet": {
+        "source_ids": [
+          "batch-b-seizure-first-aid",
+          "neuro-cdc-seizure-first-aid"
+        ],
+        "locators": {
+          "batch-b-seizure-first-aid": [
+            "First aid; When to call; Information to note"
+          ],
+          "neuro-cdc-seizure-first-aid": [
+            "Keeping safe; When to call; What to avoid"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "daily_care": {
+        "source_ids": [
+          "batch-b-seizure-first-aid",
+          "epilepsy-nhs",
+          "neuro-action-memory",
+          "neuro-society-emergency",
+          "neuro-society-memory"
+        ],
+        "locators": {
+          "batch-b-seizure-first-aid": [
+            "First aid; When to call; Information to note"
+          ],
+          "epilepsy-nhs": [
+            "Diagnosis; treatment; self-care; pregnancy; risks"
+          ],
+          "neuro-action-memory": [
+            "Cognitive problems; seizure/medicine effects; What should I do; Managing memory problems"
+          ],
+          "neuro-society-emergency": [
+            "Non-convulsive status; emergency medications; protocols; training"
+          ],
+          "neuro-society-memory": [
+            "How epilepsy affects memory; After a seizure; medication; memory aids"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "special_populations": {
+        "source_ids": [
+          "batch-b-seizure-first-aid",
+          "epilepsy-nhs",
+          "neuro-cleveland-status",
+          "neuro-mayo-status-age",
+          "neuro-msd-eclampsia",
+          "neuro-nice-eclampsia",
+          "neuro-nice-status",
+          "neuro-rcog-pregnancy",
+          "neuro-society-emergency"
+        ],
+        "locators": {
+          "batch-b-seizure-first-aid": [
+            "First aid; When to call; Information to note"
+          ],
+          "epilepsy-nhs": [
+            "Diagnosis; treatment; self-care; pregnancy; risks"
+          ],
+          "neuro-cleveland-status": [
+            "Overview; Causes; Diagnosis; Treatment; Recovery; body effects"
+          ],
+          "neuro-mayo-status-age": [
+            "Abstract and age-related causes paragraph"
+          ],
+          "neuro-msd-eclampsia": [
+            "Diagnosis differential; Treatment; Magnesium sulfate; Postpartum preeclampsia"
+          ],
+          "neuro-nice-eclampsia": [
+            "1.8.1–1.8.5"
+          ],
+          "neuro-nice-status": [
+            "7.1.1–7.1.12; 7.2; 7.3 and rationale"
+          ],
+          "neuro-rcog-pregnancy": [
+            "Key points; unplanned pregnancy; medicine risks; after birth"
+          ],
+          "neuro-society-emergency": [
+            "Non-convulsive status; emergency medications; protocols; training"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "prognosis_followup": {
+        "source_ids": [
+          "neuro-action-memory",
+          "neuro-cleveland-status",
+          "neuro-foundation-status",
+          "neuro-ics-status-2025",
+          "neuro-society-emergency",
+          "neuro-society-memory"
+        ],
+        "locators": {
+          "neuro-action-memory": [
+            "Cognitive problems; seizure/medicine effects; What should I do; Managing memory problems"
+          ],
+          "neuro-cleveland-status": [
+            "Overview; Causes; Diagnosis; Treatment; Recovery; body effects"
+          ],
+          "neuro-foundation-status": [
+            "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies"
+          ],
+          "neuro-ics-status-2025": [
+            "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure"
+          ],
+          "neuro-society-emergency": [
+            "Non-convulsive status; emergency medications; protocols; training"
+          ],
+          "neuro-society-memory": [
+            "How epilepsy affects memory; After a seizure; medication; memory aids"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "complications": {
+        "source_ids": [
+          "neuro-cleveland-status",
+          "neuro-foundation-status",
+          "neuro-ics-status-2025"
+        ],
+        "locators": {
+          "neuro-cleveland-status": [
+            "Overview; Causes; Diagnosis; Treatment; Recovery; body effects"
+          ],
+          "neuro-foundation-status": [
+            "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies"
+          ],
+          "neuro-ics-status-2025": [
+            "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      },
+      "prevention": {
+        "source_ids": [
+          "epilepsy-nhs",
+          "neuro-cleveland-status",
+          "neuro-foundation-status"
+        ],
+        "locators": {
+          "epilepsy-nhs": [
+            "Diagnosis; treatment; self-care; pregnancy; risks"
+          ],
+          "neuro-cleveland-status": [
+            "Overview; Causes; Diagnosis; Treatment; Recovery; body effects"
+          ],
+          "neuro-foundation-status": [
+            "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies"
+          ]
+        },
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
+      }
+    }
+  }
+]

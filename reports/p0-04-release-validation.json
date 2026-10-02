@@ -1,0 +1,116 @@
+{
+  "checked_at": "2026-10-03",
+  "publication_status": "local_candidate_not_yet_live",
+  "acceptance_record": "reports/p0-04-acceptance.json",
+  "clinician_signoff": false,
+  "checks": {
+    "build": {
+      "status": "passed"
+    },
+    "python": {
+      "status": "passed",
+      "run": 127,
+      "passed": 112,
+      "skipped": 15,
+      "scope": "Local Python suite; 15 isolated PostgreSQL tests run in CI separately."
+    },
+    "node": {
+      "status": "passed",
+      "tests": 431
+    },
+    "clinical_gate": {
+      "status": "passed",
+      "expected_result": "clinical mode rejected for missing clinician sign-off; preserved by unit test"
+    },
+    "database": {
+      "passed": true,
+      "release_id": "rel-b31bceca0f479aeb9f469c132a2a9be6e9865eed3755625b494f69565df42ce7",
+      "old_release_id": "rel-ec3691fcf5fafc36a6b278cdd413244d8853218925a291c3f9c41774cfb3bf2b",
+      "data_sha256": "fd318524861343bbddc5a26228a37fc290b0286669fd49d582730a3ca63b4766",
+      "topics": 98,
+      "source_count": 929,
+      "editorial_records": 434,
+      "qualified_topics": 31,
+      "covered_categories": 131,
+      "new_topics": [
+        "birth-asphyxia",
+        "ischemic-stroke",
+        "neonatal-sepsis",
+        "puerperal-sepsis",
+        "status-epilepticus"
+      ],
+      "expanded_topics": [
+        "ectopic-pregnancy",
+        "stroke"
+      ],
+      "unchanged_topics": 91,
+      "production_changed": false,
+      "production_before": "rel-ec3691fcf5fafc36a6b278cdd413244d8853218925a291c3f9c41774cfb3bf2b",
+      "production_after": "rel-ec3691fcf5fafc36a6b278cdd413244d8853218925a291c3f9c41774cfb3bf2b",
+      "git_commit": "20213df6dc5dd02cbfe4a3b8b7b42064b02c9388",
+      "test_backup": "/home/user/.local/state/knowledge-healthcare/p0-04-test-before-20261002T214626150583Z.dump",
+      "test_backup_bytes": 16053995,
+      "isolated_http_origin": "http://127.0.0.1:35463/healthcare",
+      "checks": [
+        "existing isolated database preserved; no schema reset or migration",
+        "backup custom dump verified by pg_restore list",
+        "91 untouched article objects unchanged;5 new and2 existing topics revised",
+        "candidate hidden from DB reader and HTTP; duplicate import idempotent",
+        "old/new full snapshots include all sources and evidence records",
+        "test publish, rollback and reactivate; HTTP follows pointers",
+        "HTTP pinned old93/new98 catalogs and original/full expanded objects",
+        "434 qualified sections;31 qualified topics;131 covered categories;clinical signoff0",
+        "CN/EN98-row22-column CSV every section exact",
+        "production pointer unchanged"
+      ],
+      "checked_at": "2026-10-02T21:46:37.602208+00:00"
+    },
+    "browser_http": {
+      "status": "pending"
+    },
+    "github_ci": {
+      "status": "pending"
+    },
+    "public_https": {
+      "status": "pending"
+    },
+    "search": {
+      "status": "passed",
+      "exact_name_queries": 196,
+      "recall_at_10": 1,
+      "mrr_at_10": 1,
+      "developer_symptom_examples": 9,
+      "scope": "Synthetic regression checks, not diagnostic validation."
+    },
+    "priorities": {
+      "status": "passed",
+      "scope": "Frozen catalog and generated priority artifacts match current content and evidence."
+    }
+  },
+  "summary": {
+    "topics": 98,
+    "backlog": 188,
+    "qualified_articles": 31,
+    "qualified_sections": 434,
+    "claims": 1677,
+    "sources": 929,
+    "covered": 131,
+    "remaining": 13024,
+    "mapping_states": {
+      "pending": 44,
+      "confirmed": 131,
+      "partial": 2
+    },
+    "p0": {
+      "total": 133,
+      "complete": 130,
+      "remaining": 3
+    },
+    "department_groups": 11,
+    "active_specialties": 34,
+    "clinical_signoffs": 0
+  },
+  "data_sha256": "fd318524861343bbddc5a26228a37fc290b0286669fd49d582730a3ca63b4766",
+  "current_public_record": "reports/p0-03-release-validation.json",
+  "release_id": "rel-b31bceca0f479aeb9f469c132a2a9be6e9865eed3755625b494f69565df42ce7"
+}

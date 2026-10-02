@@ -4168,254 +4168,505 @@
     "condition_id": "stroke",
     "inspected_sources": [
       {
-        "source_id": "stroke-diagnosis-nhs",
-        "url": "https://www.nhs.uk/conditions/stroke/diagnosis/",
+        "source_id": "anticoagulants-safety-nhs",
+        "url": "https://www.nhs.uk/medicines/anticoagulants/side-effects/",
         "locators": [
-          "Types of stroke",
-          "Tests for a stroke"
+          "Excessive bleeding; significant head injury"
         ],
-        "retrieval_scope": "Relevant sections read; page-level inspection only, not complete claim verification."
+        "retrieval_scope": "Read Excessive bleeding and Other side effects."
       },
       {
-        "source_id": "stroke-symptoms-nhs",
-        "url": "https://www.nhs.uk/conditions/stroke/symptoms/",
+        "source_id": "neuro-aha-pregnancy",
+        "url": "https://newsroom.heart.org/news/stroke-prevention-and-treatment-during-and-after-pregnancy-are-key-to-womens-health",
         "locators": [
-          "Symptoms of a stroke",
-          "Immediate action required"
+          "Official summary: immediate response and coordinated maternal stroke care"
         ],
-        "retrieval_scope": "Relevant sections read; page-level inspection only, not complete claim verification."
+        "retrieval_scope": "Official summary: immediate response and coordinated maternal stroke care"
+      },
+      {
+        "source_id": "neuro-asa-aspirin",
+        "url": "https://www.stroke.org/en/life-after-stroke/preventing-another-stroke/aspirin-and-stroke",
+        "locators": [
+          "Should I take aspirin during a stroke?"
+        ],
+        "retrieval_scope": "Should I take aspirin during a stroke?; original HTML read"
+      },
+      {
+        "source_id": "neuro-canada-stroke-swallowing",
+        "url": "https://www.strokebestpractices.ca/recommendations/stroke-rehabilitation-delivery/6-swallowing-nutrition-and-oral-care",
+        "locators": [
+          "6.1 swallowing and feeding; 6.2 nutrition; 6.3 oral health; rationale and evidence limitations"
+        ],
+        "retrieval_scope": "6.1 swallowing and feeding; 6.2 nutrition; 6.3 oral health; rationale and evidence limitations"
+      },
+      {
+        "source_id": "neuro-cc-anticoagulants",
+        "url": "https://my.clevelandclinic.org/health/treatments/22288-anticoagulants",
+        "locators": [
+          "Risks; When should I see my healthcare provider?"
+        ],
+        "retrieval_scope": "Risks; When should I see my healthcare provider?; original HTML read"
+      },
+      {
+        "source_id": "neuro-cdc-stroke-treatment",
+        "url": "https://www.cdc.gov/stroke/treatment/index.html",
+        "locators": [
+          "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation",
+          "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation",
+          "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation",
+          "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation",
+          "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation"
+        ],
+        "retrieval_scope": "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation; original HTML read"
+      },
+      {
+        "source_id": "neuro-ischemic-e",
+        "url": "https://www.strokebestpractices.ca/recommendations/acute-stroke-management/emergency-department-evaluation-and-management",
+        "locators": [
+          "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing",
+          "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing",
+          "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing"
+        ],
+        "retrieval_scope": "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing"
+      },
+      {
+        "source_id": "neuro-mayo-stroke-causes",
+        "url": "https://www.mayoclinic.org/diseases-conditions/stroke/symptoms-causes/syc-20350113",
+        "locators": [
+          "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy",
+          "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy",
+          "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy",
+          "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy",
+          "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy",
+          "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy"
+        ],
+        "retrieval_scope": "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy"
+      },
+      {
+        "source_id": "neuro-mayo-stroke-treatment",
+        "url": "https://www.mayoclinic.org/diseases-conditions/stroke/diagnosis-treatment/drc-20350119",
+        "locators": [
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+          "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+        ],
+        "retrieval_scope": "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+      },
+      {
+        "source_id": "neuro-merck-ischemic",
+        "url": "https://www.merckmanuals.com/professional/neurologic-disorders/stroke/ischemic-stroke",
+        "locators": [
+          "Etiology: cardiac/paradoxical/fat/air, lacunar, low perfusion, other causes; Diagnosis and mimics"
+        ],
+        "retrieval_scope": "Etiology: cardiac/paradoxical/fat/air, lacunar, low perfusion, other causes; Diagnosis and mimics"
+      },
+      {
+        "source_id": "neuro-sah-s",
+        "url": "https://www.nice.org.uk/guidance/ng128/chapter/recommendations",
+        "locators": [
+          "1.6.1-1.6.11 swallowing/nutrition; 1.8.1 aspiration avoidance",
+          "1.6.1-1.6.11 swallowing/nutrition; 1.8.1 aspiration avoidance"
+        ],
+        "retrieval_scope": "1.6.1-1.6.11 swallowing/nutrition; 1.8.1 aspiration avoidance"
       },
       {
         "source_id": "stroke-causes-nhs",
         "url": "https://www.nhs.uk/conditions/stroke/causes/",
         "locators": [
-          "Causes of a stroke",
-          "Who is more likely to have a stroke",
-          "How to lower your risk of a stroke"
+          "What causes; Reducing risk",
+          "What causes; Reducing risk",
+          "What causes; Reducing risk"
         ],
-        "retrieval_scope": "Relevant sections read; page-level inspection only, not complete claim verification."
+        "retrieval_scope": "Inspected the condition-specific causes page and its relevant headings."
       },
       {
-        "source_id": "stroke-secondary",
-        "url": "https://www.cdc.gov/stroke/signs-symptoms/index.html",
+        "source_id": "stroke-diagnosis-nhs",
+        "url": "https://www.nhs.uk/conditions/stroke/diagnosis/",
         "locators": [
-          "When to seek emergency help",
-          "B.E. F.A.S.T to identify stroke"
+          "How a stroke is diagnosed; stroke types; urgent TIA",
+          "How a stroke is diagnosed; stroke types; urgent TIA",
+          "How a stroke is diagnosed; stroke types; urgent TIA",
+          "How a stroke is diagnosed; stroke types; urgent TIA"
         ],
-        "retrieval_scope": "Relevant sections read; page-level inspection only, not complete claim verification."
-      },
-      {
-        "source_id": "stroke-treatment-nhs",
-        "url": "https://www.nhs.uk/conditions/stroke/treatment/",
-        "locators": [
-          "Emergency treatment",
-          "Recovering from a stroke",
-          "Medicines"
-        ],
-        "retrieval_scope": "Relevant sections read; page-level inspection only, not complete claim verification."
-      },
-      {
-        "source_id": "anticoagulants-safety-nhs",
-        "url": "https://www.nhs.uk/medicines/anticoagulants/side-effects/",
-        "locators": [
-          "Excessive bleeding"
-        ],
-        "retrieval_scope": "Relevant sections read; page-level inspection only, not complete claim verification."
+        "retrieval_scope": "Inspected the condition-specific diagnosis page and its relevant headings."
       },
       {
         "source_id": "stroke-eating-nhs",
         "url": "https://www.newcastle-hospitals.nhs.uk/services/stroke-unit/life-after-stroke/eating-and-drinking-difficulties-dysphagia/",
         "locators": [
-          "Signs and symptoms of dysphagia",
-          "How to help with dysphagia",
-          "Nutrition and hydration"
+          "Risks; Signs and symptoms; How to help; Nutrition; Malnutrition"
         ],
-        "retrieval_scope": "Relevant sections read; page-level inspection only, not complete claim verification."
+        "retrieval_scope": "Read What are the risks; Signs and symptoms; How to help; Nutrition and hydration; Malnutrition. Replaces a candidate hospital page whose direct open returned 403."
       },
       {
         "source_id": "stroke-recovery-nhs",
         "url": "https://www.nhs.uk/conditions/stroke/recovery/",
         "locators": [
-          "Help with recovery after a stroke",
-          "Recovering from a stroke"
+          "Effects on life; Home recovery plan; Support for carers",
+          "Effects on life; Home recovery plan; Support for carers",
+          "Effects on life; Home recovery plan; Support for carers",
+          "Effects on life; Home recovery plan; Support for carers",
+          "Effects on life; Home recovery plan; Support for carers"
         ],
-        "retrieval_scope": "Relevant sections read; page-level inspection only, not complete claim verification."
+        "retrieval_scope": "Inspected the condition-specific recovery page and its relevant headings."
+      },
+      {
+        "source_id": "stroke-secondary",
+        "url": "https://www.cdc.gov/stroke/signs-symptoms/index.html",
+        "locators": [
+          "Signs; BE FAST; time onset; ambulance; TIA",
+          "Signs; BE FAST; time onset; ambulance; TIA",
+          "Signs; BE FAST; time onset; ambulance; TIA",
+          "Signs; BE FAST; time onset; ambulance; TIA"
+        ],
+        "retrieval_scope": "Topic page or hub opened via browsing. Linked subpages/full claim support not comprehensively audited."
+      },
+      {
+        "source_id": "stroke-symptoms-nhs",
+        "url": "https://www.nhs.uk/conditions/stroke/symptoms/",
+        "locators": [
+          "Check for signs; Other symptoms; Immediate action",
+          "Check for signs; Other symptoms; Immediate action",
+          "Check for signs; Other symptoms; Immediate action",
+          "Check for signs; Other symptoms; Immediate action"
+        ],
+        "retrieval_scope": "Inspected the condition-specific symptoms page and its relevant headings."
+      },
+      {
+        "source_id": "stroke-treatment-nhs",
+        "url": "https://www.nhs.uk/conditions/stroke/treatment/",
+        "locators": [
+          "Getting treatment; Medicines for a stroke",
+          "Getting treatment; Medicines for a stroke"
+        ],
+        "retrieval_scope": "Inspected the condition-specific treatment page and its relevant headings."
       }
     ],
     "sections": {
       "summary": {
         "source_ids": [
+          "neuro-mayo-stroke-treatment",
           "stroke-diagnosis-nhs",
+          "stroke-secondary",
           "stroke-symptoms-nhs"
         ],
         "locators": {
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
           "stroke-diagnosis-nhs": [
-            "Types of stroke"
+            "How a stroke is diagnosed; stroke types; urgent TIA"
+          ],
+          "stroke-secondary": [
+            "Signs; BE FAST; time onset; ambulance; TIA"
           ],
           "stroke-symptoms-nhs": [
-            "Symptoms of a stroke"
+            "Check for signs; Other symptoms; Immediate action"
           ]
         },
-        "uncertainty_boundary": "Source sections were inspected for relevant patient information. Editorial explanations and safety synthesis are not sentence-by-sentence verified; all claims remain pending clinical and claim review."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "causes_risks": {
         "source_ids": [
-          "stroke-causes-nhs"
+          "neuro-mayo-stroke-causes",
+          "stroke-causes-nhs",
+          "stroke-diagnosis-nhs"
         ],
         "locators": {
+          "neuro-mayo-stroke-causes": [
+            "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy"
+          ],
           "stroke-causes-nhs": [
-            "Causes of a stroke"
+            "What causes; Reducing risk"
+          ],
+          "stroke-diagnosis-nhs": [
+            "How a stroke is diagnosed; stroke types; urgent TIA"
           ]
         },
-        "uncertainty_boundary": "Source sections were inspected for relevant patient information. Editorial explanations and safety synthesis are not sentence-by-sentence verified; all claims remain pending clinical and claim review."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "red_flags": {
         "source_ids": [
+          "stroke-secondary",
           "stroke-symptoms-nhs"
         ],
         "locators": {
+          "stroke-secondary": [
+            "Signs; BE FAST; time onset; ambulance; TIA"
+          ],
           "stroke-symptoms-nhs": [
-            "Symptoms of a stroke",
-            "Immediate action required"
+            "Check for signs; Other symptoms; Immediate action"
           ]
         },
-        "uncertainty_boundary": "Source sections were inspected for relevant patient information. Editorial explanations and safety synthesis are not sentence-by-sentence verified; all claims remain pending clinical and claim review. Differential and emergency lists are selective, not exhaustive diagnostic rules; some general safety wording extends beyond the condition page."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "care": {
         "source_ids": [
-          "stroke-secondary"
+          "neuro-ischemic-e",
+          "neuro-mayo-stroke-treatment",
+          "stroke-secondary",
+          "stroke-symptoms-nhs"
         ],
         "locators": {
+          "neuro-ischemic-e": [
+            "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
           "stroke-secondary": [
-            "When to seek emergency help",
-            "B.E. F.A.S.T to identify stroke"
+            "Signs; BE FAST; time onset; ambulance; TIA"
+          ],
+          "stroke-symptoms-nhs": [
+            "Check for signs; Other symptoms; Immediate action"
           ]
         },
-        "uncertainty_boundary": "Source sections were inspected for relevant patient information. Editorial explanations and safety synthesis are not sentence-by-sentence verified; all claims remain pending clinical and claim review."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "diagnosis": {
         "source_ids": [
+          "neuro-ischemic-e",
+          "neuro-mayo-stroke-treatment",
           "stroke-diagnosis-nhs"
         ],
         "locators": {
+          "neuro-ischemic-e": [
+            "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
           "stroke-diagnosis-nhs": [
-            "Tests for a stroke"
+            "How a stroke is diagnosed; stroke types; urgent TIA"
           ]
         },
-        "uncertainty_boundary": "Source sections were inspected for relevant patient information. Editorial explanations and safety synthesis are not sentence-by-sentence verified; all claims remain pending clinical and claim review."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "differentials": {
         "source_ids": [
+          "neuro-ischemic-e",
+          "neuro-mayo-stroke-causes",
+          "neuro-mayo-stroke-treatment",
           "stroke-diagnosis-nhs"
         ],
         "locators": {
+          "neuro-ischemic-e": [
+            "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing"
+          ],
+          "neuro-mayo-stroke-causes": [
+            "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
           "stroke-diagnosis-nhs": [
-            "Types of stroke"
+            "How a stroke is diagnosed; stroke types; urgent TIA"
           ]
         },
-        "uncertainty_boundary": "Source sections were inspected for relevant patient information. Editorial explanations and safety synthesis are not sentence-by-sentence verified; all claims remain pending clinical and claim review. Differential and emergency lists are selective, not exhaustive diagnostic rules; some general safety wording extends beyond the condition page."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "treatment": {
         "source_ids": [
+          "neuro-cdc-stroke-treatment",
+          "neuro-mayo-stroke-treatment",
+          "stroke-recovery-nhs",
           "stroke-treatment-nhs"
         ],
         "locators": {
+          "neuro-cdc-stroke-treatment": [
+            "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
+          "stroke-recovery-nhs": [
+            "Effects on life; Home recovery plan; Support for carers"
+          ],
           "stroke-treatment-nhs": [
-            "Emergency treatment",
-            "Recovering from a stroke"
+            "Getting treatment; Medicines for a stroke"
           ]
         },
-        "uncertainty_boundary": "Source sections were inspected for relevant patient information. Editorial explanations and safety synthesis are not sentence-by-sentence verified; all claims remain pending clinical and claim review."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "medications": {
         "source_ids": [
-          "stroke-treatment-nhs",
-          "anticoagulants-safety-nhs"
+          "anticoagulants-safety-nhs",
+          "neuro-asa-aspirin",
+          "neuro-cc-anticoagulants",
+          "neuro-mayo-stroke-causes",
+          "neuro-mayo-stroke-treatment",
+          "neuro-sah-s",
+          "stroke-treatment-nhs"
         ],
         "locators": {
-          "stroke-treatment-nhs": [
-            "Medicines"
-          ],
           "anticoagulants-safety-nhs": [
-            "Excessive bleeding"
+            "Excessive bleeding; significant head injury"
+          ],
+          "neuro-asa-aspirin": [
+            "Should I take aspirin during a stroke?"
+          ],
+          "neuro-cc-anticoagulants": [
+            "Risks; When should I see my healthcare provider?"
+          ],
+          "neuro-mayo-stroke-causes": [
+            "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
+          "neuro-sah-s": [
+            "1.6.1-1.6.11 swallowing/nutrition; 1.8.1 aspiration avoidance"
+          ],
+          "stroke-treatment-nhs": [
+            "Getting treatment; Medicines for a stroke"
           ]
         },
-        "uncertainty_boundary": "Source sections were inspected for relevant patient information. Editorial explanations and safety synthesis are not sentence-by-sentence verified; all claims remain pending clinical and claim review.",
-        "applicability": "Examples of roles and selected important risks only; not a complete product label or a dosing recommendation."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "diet": {
         "source_ids": [
+          "neuro-canada-stroke-swallowing",
+          "neuro-sah-s",
           "stroke-eating-nhs"
         ],
         "locators": {
+          "neuro-canada-stroke-swallowing": [
+            "6.1 swallowing and feeding; 6.2 nutrition; 6.3 oral health; rationale and evidence limitations"
+          ],
+          "neuro-sah-s": [
+            "1.6.1-1.6.11 swallowing/nutrition; 1.8.1 aspiration avoidance"
+          ],
           "stroke-eating-nhs": [
-            "Signs and symptoms of dysphagia",
-            "How to help with dysphagia",
-            "Nutrition and hydration"
+            "Risks; Signs and symptoms; How to help; Nutrition; Malnutrition"
           ]
         },
-        "uncertainty_boundary": "Source sections were inspected for relevant patient information. Editorial explanations and safety synthesis are not sentence-by-sentence verified; all claims remain pending clinical and claim review. Dietary advice is supportive unless explicitly stated otherwise; absence of a food cure in these pages is not a systematic evidence review."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "daily_care": {
         "source_ids": [
+          "neuro-cdc-stroke-treatment",
+          "neuro-mayo-stroke-treatment",
           "stroke-recovery-nhs"
         ],
         "locators": {
+          "neuro-cdc-stroke-treatment": [
+            "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
           "stroke-recovery-nhs": [
-            "Help with recovery after a stroke"
+            "Effects on life; Home recovery plan; Support for carers"
           ]
         },
-        "uncertainty_boundary": "Source sections were inspected for relevant patient information. Editorial explanations and safety synthesis are not sentence-by-sentence verified; all claims remain pending clinical and claim review."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "special_populations": {
         "source_ids": [
+          "neuro-aha-pregnancy",
+          "neuro-mayo-stroke-causes",
+          "neuro-mayo-stroke-treatment",
           "stroke-causes-nhs",
-          "stroke-recovery-nhs"
+          "stroke-recovery-nhs",
+          "stroke-symptoms-nhs"
         ],
         "locators": {
+          "neuro-aha-pregnancy": [
+            "Official summary: immediate response and coordinated maternal stroke care"
+          ],
+          "neuro-mayo-stroke-causes": [
+            "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
           "stroke-causes-nhs": [
-            "Who is more likely to have a stroke"
+            "What causes; Reducing risk"
           ],
           "stroke-recovery-nhs": [
-            "Help with recovery after a stroke"
+            "Effects on life; Home recovery plan; Support for carers"
+          ],
+          "stroke-symptoms-nhs": [
+            "Check for signs; Other symptoms; Immediate action"
           ]
         },
-        "uncertainty_boundary": "Source sections were inspected for relevant patient information. Editorial explanations and safety synthesis are not sentence-by-sentence verified; all claims remain pending clinical and claim review.",
-        "applicability": "Applies only to the listed groups; specific formulation, age approval and pregnancy advice require individual and local checks."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "prognosis_followup": {
         "source_ids": [
+          "neuro-cdc-stroke-treatment",
+          "neuro-mayo-stroke-treatment",
           "stroke-recovery-nhs"
         ],
         "locators": {
+          "neuro-cdc-stroke-treatment": [
+            "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
           "stroke-recovery-nhs": [
-            "Recovering from a stroke",
-            "Help with recovery after a stroke"
+            "Effects on life; Home recovery plan; Support for carers"
           ]
         },
-        "uncertainty_boundary": "Source sections were inspected for relevant patient information. Editorial explanations and safety synthesis are not sentence-by-sentence verified; all claims remain pending clinical and claim review."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "complications": {
         "source_ids": [
+          "neuro-cdc-stroke-treatment",
+          "neuro-mayo-stroke-causes",
+          "neuro-mayo-stroke-treatment",
+          "neuro-merck-ischemic",
           "stroke-recovery-nhs"
         ],
         "locators": {
+          "neuro-cdc-stroke-treatment": [
+            "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation"
+          ],
+          "neuro-mayo-stroke-causes": [
+            "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy"
+          ],
+          "neuro-mayo-stroke-treatment": [
+            "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support"
+          ],
+          "neuro-merck-ischemic": [
+            "Etiology: cardiac/paradoxical/fat/air, lacunar, low perfusion, other causes; Diagnosis and mimics"
+          ],
           "stroke-recovery-nhs": [
-            "Help with recovery after a stroke"
+            "Effects on life; Home recovery plan; Support for carers"
           ]
         },
-        "uncertainty_boundary": "Source sections were inspected for relevant patient information. Editorial explanations and safety synthesis are not sentence-by-sentence verified; all claims remain pending clinical and claim review."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "prevention": {
         "source_ids": [
-          "stroke-causes-nhs"
+          "neuro-cdc-stroke-treatment",
+          "neuro-mayo-stroke-causes",
+          "stroke-causes-nhs",
+          "stroke-secondary"
         ],
         "locators": {
+          "neuro-cdc-stroke-treatment": [
+            "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation"
+          ],
+          "neuro-mayo-stroke-causes": [
+            "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy"
+          ],
           "stroke-causes-nhs": [
-            "How to lower your risk of a stroke"
+            "What causes; Reducing risk"
+          ],
+          "stroke-secondary": [
+            "Signs; BE FAST; time onset; ambulance; TIA"
           ]
         },
-        "uncertainty_boundary": "Source sections were inspected for relevant patient information. Editorial explanations and safety synthesis are not sentence-by-sentence verified; all claims remain pending clinical and claim review."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       }
     },
     "editorial_status": "expanded_editorial_draft_pending_claim_verification",
@@ -4430,7 +4681,9 @@
       "audience": "Beginner public education; adults unless the section explicitly identifies children, pregnancy or other groups.",
       "jurisdiction": "UK NHS and, where mapped, WHO or US public-health material; emergency contact, access pathways, medicine licensing and follow-up intervals require local adaptation.",
       "clinical_boundary": "Not an individual diagnosis, dose schedule or prescribing plan. Existing candidate sources retained at article level are not all claimed to be inspected."
-    }
+    },
+    "checked_at": "2026-10-03",
+    "independent_review": "reports/p0-03-stroke-independent.json"
   },
   {
     "condition_id": "tension-headache",

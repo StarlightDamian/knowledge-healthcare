@@ -16,7 +16,7 @@ class ModelTests(unittest.TestCase):
  def setUpClass(cls):cls.data=load()
  def altered(self):return copy.deepcopy(self.data)
  def test_actual_counts(self):
-  r=validate(self.data,today=date(2026,10,3));self.assertEqual((r['conditions'],r['clinically_reviewed'],r['verified_sections']),(93,0,336));self.assertIsNone(r['daily_need_coverage'])
+  r=validate(self.data,today=date(2026,10,3));self.assertEqual((r['conditions'],r['clinically_reviewed'],r['verified_sections']),(98,0,434));self.assertIsNone(r['daily_need_coverage'])
  def test_clinical_build_blocked(self):
   with self.assertRaisesRegex(ValidationError,'clinical sign-off'):validate(self.data,'clinical')
  def test_duplicate_topic(self):
@@ -58,7 +58,7 @@ class ModelTests(unittest.TestCase):
  def test_rename_status_is_not_signoff(self):
   d=self.altered();c=d['conditions'][0];c['review']['status']='medically_reviewed';c['review']['medical_reviewed_at']='2026-09-29';c['clinical_region']='CN';self.assertRaises(ValidationError,validate,d)
  def test_overdue_drafts_warn(self):
-  r=validate(self.data,today=date(2027,1,3));self.assertEqual(len(r['warnings']),93)
+  r=validate(self.data,today=date(2027,1,4));self.assertEqual(len(r['warnings']),98)
  def test_missing_locale_key(self):
   d=self.altered();del d['locales']['fr']['strings']['sourceInfo'];self.assertRaises(ValidationError,validate,d)
  def test_script_json_escaping(self):

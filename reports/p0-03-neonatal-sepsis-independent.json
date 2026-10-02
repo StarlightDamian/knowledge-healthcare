@@ -1,0 +1,206 @@
+{
+  "topic": "neonatal-sepsis",
+  "author": "/root/astra_p0_maternal",
+  "reviewer": "/root/astra_neuro_finish",
+  "checked_at": "2026-10-03",
+  "status": "accepted",
+  "verdict": "accepted",
+  "medical_reviewed": false,
+  "target": {
+    "body_canonical_sha256": "1dff55eb20940da3a1efa54a261c5ab3546485afe3df0d55e289fc65e2a7dc07",
+    "records_canonical_sha256": "bdf73e40f177ac8ad635987dced19b788d0acfa60782c3e44a92b26492558933",
+    "sources_canonical_sha256": "18ff7ef7707189e613c494f6e7ba647b4dd07d139e68013aeacbe21d55501181"
+  },
+  "changed_sections": [
+    "summary",
+    "causes_risks",
+    "red_flags",
+    "care",
+    "diagnosis",
+    "differentials",
+    "treatment",
+    "medications",
+    "diet",
+    "daily_care",
+    "special_populations",
+    "prognosis_followup",
+    "complications",
+    "prevention"
+  ],
+  "inherited_sections": [],
+  "claims_reviewed": 31,
+  "accepted_source_ids": [
+    "p003-neonatal-sepsis-nice",
+    "p003-neonatal-sepsis-rch",
+    "p003-neonatal-sepsis-recognition",
+    "p003-neonatal-sepsis-who",
+    "p003-neonatal-sepsis-cdc",
+    "p003-neonatal-sepsis-gentamicin",
+    "p003-neonatal-sepsis-who-summary",
+    "p003-neonatal-sepsis-nice-surveillance"
+  ],
+  "actual_source_reads": [
+    {
+      "source_id": "p003-neonatal-sepsis-nice",
+      "url": "https://www.nice.org.uk/guidance/ng195",
+      "locator": "NG1952026 split chapters1.1-1.16 and1.35-1.38: family information, prevention, early/late signs, investigations/LP, antibiotic principles including2026CRP-alone restriction, gentamicin monitoring, discharge.",
+      "method": "Original official HTML independently retrieved with urllib after web403; clinical paragraphs read; gentamicin1.35-1.36 reread complete.",
+      "independence": "UK-NICE"
+    },
+    {
+      "source_id": "p003-neonatal-sepsis-rch",
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Neonatal_antimicrobial_guidelines/",
+      "locator": "January2025 official antimicrobial guideline clinical45-197 including EOS/LOS, organism patterns, investigations, empiric drugs/duration and stewardship.",
+      "method": "Original official HTML clinical content read.",
+      "independence": "AU-RCH"
+    },
+    {
+      "source_id": "p003-neonatal-sepsis-recognition",
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Recognition_of_the_seriously_unwell_neonate_and_young_infant/",
+      "locator": "May2025 official unwell neonate guideline clinical59-218: history/examination, differential diagnosis, investigations, monitoring/fluids and transfer.",
+      "method": "Original official HTML clinical content read.",
+      "independence": "AU-RCH"
+    },
+    {
+      "source_id": "p003-neonatal-sepsis-who",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK610598/",
+      "locator": "WHO2024 chapter3: actual A.1 identification, A.2 referral, B.2 hospital antibiotic recommendation/remarks, C clinical management/referral/AMR. Companion introduction independently located but final long-term binding uses separate Executive summary source.",
+      "method": "Direct chapter access intermittently returned CAPTCHA/internal error and urllib403. Independently read official-source indexed original clinical passages, not the full book. Search records1827search1,1835search0/1,1837search0 identify actual passages.",
+      "independence": "WHO"
+    },
+    {
+      "source_id": "p003-neonatal-sepsis-cdc",
+      "url": "https://www.cdc.gov/group-b-strep/prevention/index.html",
+      "locator": "May1 2025 CDC Prevention of GBS disease clinical31-75: screening, intrapartum antibiotics, allergy and limitations.",
+      "method": "Original official HTML clinical content read.",
+      "independence": "US-CDC"
+    },
+    {
+      "source_id": "p003-neonatal-sepsis-gentamicin",
+      "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0023/945320/nmq-gentamicin.pdf",
+      "locator": "NMedQ25.038-V4-R30 effective2025-10-21; actual original PDF pages1-3 dose-interval determinants, monitoring and adverse effects.",
+      "method": "Original official PDF text pages1-3 read, not entire reference bibliography.",
+      "independence": "AU-QCG"
+    },
+    {
+      "source_id": "p003-neonatal-sepsis-who-summary",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK610594/",
+      "locator": "WHO2024 Executive summary Background: severe bacterial infections and long-term disability; this is the same WHO book, not independently authored NIH content.",
+      "method": "Official-source indexed original Executive summary Background independently read (1837search4); direct HTML access not claimed.",
+      "independence": "WHO"
+    },
+    {
+      "source_id": "p003-neonatal-sepsis-nice-surveillance",
+      "url": "https://www.nice.org.uk/guidance/ng195/resources/2022-exceptional-surveillance-of-neonatal-infection-antibiotics-for-prevention-and-treatment-nice-guideline-ng195-11201548285/chapter/Surveillance-decision?tab=evidence",
+      "locator": "NICE2022 exceptional surveillance: Reasons for decision, Topic expert feedback, Information considered when developing guideline. Kidney/hearing toxicity versus urgent treatment and limits of available evidence.",
+      "method": "Official-source indexed original complete surveillance text independently read (1842search0); root separately used urllib. No claim that reviewer direct HTML retrieval succeeded.",
+      "independence": "UK-NICE"
+    }
+  ],
+  "independence": "NICE, RCH, WHO, CDC and Queensland are distinct authoring bodies; shared neonatal studies are not independent replications. RCH cites NICE and ASID, with its own clinician-authored diagnostic and antimicrobial guidance. Both RCH pages count once; WHO chapter and summary count once; NICE guidance and surveillance count once. NCBI is only WHO host.",
+  "clinical_review": "All31 claims and both languages of14 dimensions actually reviewed. Emergency warning signs, no fever exclusion, cultures without treatment delay, safe LP prerequisites, clinical/CRP reassessment, conditional drug selection, toxicity monitoring, feeding and supported discharge retain neonatal scope. No numeric fluid or drug self-treatment protocol.",
+  "classification_evidence": {
+    "release": "WHO ICD-11 MMS2026-01",
+    "file": "C:/Users/Damian/AppData/Local/Temp/healthcare-private/p0-icd-2026-01-official.txt",
+    "locator": "Actual frozen lines61469-61475, printed1238; exclusions and coded-elsewhere notes reread using rg."
+  },
+  "category_decisions": [
+    {
+      "code": "KA60",
+      "status": "confirmed",
+      "recommendation": "confirmed",
+      "rationale": "Fourteen dimensions cover perinatal acquisition, neonatal early and late presentations, urgent clinical workup, conditional antimicrobial and supportive care, feeding and follow-up. Maternal infection is a risk signal, not a fetal sepsis diagnosis; no adult regimen is imported.",
+      "exclusions_considered": [
+        "1G40 and1G41 excluded in frozen WHO",
+        "KA61.Y coded-elsewhere staphylococcal/streptococcal infection retained; local infection is not automatically KA60",
+        "No invented pathogen-specific KA60 child codes"
+      ],
+      "remaining": []
+    }
+  ],
+  "scope_decisions": [
+    {
+      "code": "KA60",
+      "status": "confirmed",
+      "recommendation": "confirmed",
+      "rationale": "Fourteen dimensions cover perinatal acquisition, neonatal early and late presentations, urgent clinical workup, conditional antimicrobial and supportive care, feeding and follow-up. Maternal infection is a risk signal, not a fetal sepsis diagnosis; no adult regimen is imported.",
+      "exclusions_considered": [
+        "1G40 and1G41 excluded in frozen WHO",
+        "KA61.Y coded-elsewhere staphylococcal/streptococcal infection retained; local infection is not automatically KA60",
+        "No invented pathogen-specific KA60 child codes"
+      ],
+      "remaining": []
+    }
+  ],
+  "findings": [
+    {
+      "id": "neonatal-kind",
+      "status": "resolved",
+      "resolution": "Empirical medication action and complication risk kinds corrected, preserving the two-author requirement."
+    },
+    {
+      "id": "neonatal-exact-locators",
+      "status": "resolved",
+      "resolution": "Long-term risk now binds the actual WHO Executive summary; gentamicin kidney/hearing risk adds the actual NICE surveillance page. Authoring groups unchanged."
+    },
+    {
+      "id": "neonatal-read-method",
+      "status": "resolved",
+      "resolution": "WHO/NICE indexed reading distinguished from direct HTML; current source wording and report explicitly preserve this boundary."
+    },
+    {
+      "id": "neonatal-upstream-formal-field",
+      "status": "resolved",
+      "resolution": "Added formal upstream_evidence from existing institutional grouping and shared-trial disclosure. Actual RCH references to NICE remain disclosed; no new independent group counted. Body and sources unchanged."
+    }
+  ],
+  "dispute_adjudication": {
+    "status": "regional_difference",
+    "resolution": "Early-onset definitions, GBS screening and gentamicin sampling are protocol-dependent; final text preserves local specialist assessment and no universal cutoffs or courses.",
+    "issues": [
+      {
+        "issue": "Early-onset definition",
+        "sources": [
+          "p003-neonatal-sepsis-rch",
+          "p003-neonatal-sepsis-nice"
+        ],
+        "resolution": "RCH uses48h and NICE72h. Public entry does not turn either threshold into a universal diagnostic rule."
+      },
+      {
+        "issue": "GBS screening",
+        "sources": [
+          "p003-neonatal-sepsis-cdc",
+          "p003-neonatal-sepsis-nice"
+        ],
+        "resolution": "US universal pregnancy screening and UK risk-based prevention are explicitly separated."
+      },
+      {
+        "issue": "Gentamicin sampling",
+        "sources": [
+          "p003-neonatal-sepsis-nice",
+          "p003-neonatal-sepsis-gentamicin"
+        ],
+        "resolution": "NICE samples before second dose for third-dose decisions; QCG samples before third and withholds pending level in its protocol. Public text uses local monitoring, without delaying urgent initial infection treatment."
+      },
+      {
+        "issue": "Antibiotic duration and nonhospital pathways",
+        "sources": [
+          "p003-neonatal-sepsis-who",
+          "p003-neonatal-sepsis-rch",
+          "p003-neonatal-sepsis-nice"
+        ],
+        "resolution": "WHO hospital courses/referral-impossible alternatives are not universal home prescriptions. Local response, culture, infection focus and professional support govern the public explanation."
+      }
+    ]
+  },
+  "validation": {
+    "section_hashes": "14/14 current matches",
+    "source_metadata_hashes": "all current matches",
+    "claims_have_two_authoring_groups": true,
+    "scope": "Mechanical grouping and hashes supplement actual reading, not proof of medical truth.",
+    "clinical_signoff": false
+  },
+  "unresolved_questions": [],
+  "remaining_issues": [],
+  "resolution": "Accept exact hashes for educational editorial integration and KA60 scope. This is an independent source review, not clinician sign-off."
+}

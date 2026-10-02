@@ -1,0 +1,270 @@
+{
+  "status": "authored_pending_independent_review",
+  "author": "/root/astra_neuro_finish",
+  "model": "gpt-6-astra",
+  "checked_at": "2026-10-03",
+  "medical_reviewed": false,
+  "topic_id": "stroke",
+  "production_modified": false,
+  "coverage_credit": 0,
+  "baseline": "Existing stroke ID, aliases and symptom entry retained; 14 dimensions and exact claim evidence enriched.",
+  "target": {
+    "body_canonical_sha256": "300b941b0b19c519e62363615573e8bc09dae4dc3937944223255658e39d1a56",
+    "records_canonical_sha256": "2d006fc96a49d9e5947d0d6f840bd4f5fa75836fa1f56396fc0938280a910fd0",
+    "sources_canonical_sha256": "687cb08bdc34a5df5aede8121f90e03b5c4671105a168aad2ecaba034efa51d8"
+  },
+  "actual_source_reads": [
+    {
+      "source_id": "anticoagulants-safety-nhs",
+      "url": "https://www.nhs.uk/medicines/anticoagulants/side-effects/",
+      "locator": "Excessive bleeding; significant head injury",
+      "source_version": "Live page accessed2026-10-03; CDC2026-05-19; Newcastle2024-11-15; anticoagulants2024-09-09 as applicable",
+      "population": "Stroke patients, suspected stroke, or anticoagulant users as specified in located section.",
+      "region": "GB",
+      "independence_group": "UK-NHS",
+      "upstream_evidence": [
+        "Independent institutional authoring. NHS pages grouped together; not counted as separate independent groups."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original HTML clinical paragraphs read"
+    },
+    {
+      "source_id": "neuro-aha-pregnancy",
+      "url": "https://newsroom.heart.org/news/stroke-prevention-and-treatment-during-and-after-pregnancy-are-key-to-womens-health",
+      "locator": "Official summary: immediate response and coordinated maternal stroke care",
+      "version": "2026-01-28",
+      "accessed_at": "2026-10-03",
+      "method": "Original official HTML opened and read",
+      "independence": "Distinct authorship, overlapping upstream research possible. AHA/Mayo pages each one group; reviews are author synthesis, not NIH guidance."
+    },
+    {
+      "source_id": "neuro-asa-aspirin",
+      "url": "https://www.stroke.org/en/life-after-stroke/preventing-another-stroke/aspirin-and-stroke",
+      "locator": "Should I take aspirin during a stroke?",
+      "source_version": "2024-04-15",
+      "population": "Patients with suspected or established stroke; source context retained.",
+      "region": "US",
+      "independence_group": "US-AHA-ASA",
+      "upstream_evidence": [
+        "Independent institutional authorship; shared research is possible, not independent trial evidence."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original-author indexed clinical text; not video"
+    },
+    {
+      "source_id": "neuro-canada-stroke-swallowing",
+      "url": "https://www.strokebestpractices.ca/recommendations/stroke-rehabilitation-delivery/6-swallowing-nutrition-and-oral-care",
+      "locator": "6.1 swallowing and feeding; 6.2 nutrition; 6.3 oral health; rationale and evidence limitations",
+      "version": "2025 rehabilitation update",
+      "accessed_at": "2026-10-03",
+      "method": "Previously actually read official source in this author task; shared section reused, not independently accepted",
+      "independence": [
+        "Independent Canadian guideline authors; overlapping dysphagia systematic reviews with NICE/AHA."
+      ]
+    },
+    {
+      "source_id": "neuro-cc-anticoagulants",
+      "url": "https://my.clevelandclinic.org/health/treatments/22288-anticoagulants",
+      "locator": "Risks; When should I see my healthcare provider?",
+      "source_version": "2022-01-10",
+      "population": "Patients with suspected or established stroke; source context retained.",
+      "region": "US",
+      "independence_group": "US-Cleveland-Clinic",
+      "upstream_evidence": [
+        "Independent institutional authorship; shared research is possible, not independent trial evidence."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original HTML clinical paragraphs read"
+    },
+    {
+      "source_id": "neuro-cdc-stroke-treatment",
+      "url": "https://www.cdc.gov/stroke/treatment/index.html",
+      "locator": "Treatment by subtype; Prevention; Recovery; What to expect; Rehabilitation",
+      "source_version": "2024-05-15",
+      "population": "Patients with suspected or established stroke; source context retained.",
+      "region": "US",
+      "independence_group": "US-CDC",
+      "upstream_evidence": [
+        "Independent institutional authorship; shared research is possible, not independent trial evidence."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original HTML clinical paragraphs read"
+    },
+    {
+      "source_id": "neuro-ischemic-e",
+      "url": "https://www.strokebestpractices.ca/recommendations/acute-stroke-management/emergency-department-evaluation-and-management",
+      "locator": "4.1 assessment; 4.2 brain/vessel imaging; 4.4 ECG; 4.5 glucose; 4.6 swallowing",
+      "version": "2022 seventh edition",
+      "scope": "Adults with ischemic stroke; precise exceptions noted in claims",
+      "accessed_at": "2026-10-03",
+      "method": "Original official web page opened and clinical sections actually read",
+      "independence": "Distinct editorial authorship, overlapping trials and consensus. All Canadian pages one group; all AHA/ASA pages one group. Canadian/AHA share reperfusion trials and secondary prevention evidence. Cleveland cites ASA and clinical reviews; UHS is independently written hospital education. No assertion of independent primary trials."
+    },
+    {
+      "source_id": "neuro-mayo-stroke-causes",
+      "url": "https://www.mayoclinic.org/diseases-conditions/stroke/symptoms-causes/syc-20350113",
+      "locator": "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy",
+      "version": "Live page read 2026-10-03",
+      "accessed_at": "2026-10-03",
+      "method": "Previously actually read official source in this author task; shared section reused, not independently accepted",
+      "independence": [
+        "Independent editorial authorship; standard stroke evidence may overlap."
+      ]
+    },
+    {
+      "source_id": "neuro-mayo-stroke-treatment",
+      "url": "https://www.mayoclinic.org/diseases-conditions/stroke/diagnosis-treatment/drc-20350119",
+      "locator": "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+      "version": "Live page read 2026-10-03; exact review date not established",
+      "scope": "General stroke patient education; subtype conditions retained",
+      "accessed_at": "2026-10-03",
+      "method": "Original official web page opened and clinical sections actually read",
+      "independence": "Distinct editorial authorship, overlapping trials and consensus. All Canadian pages one group; all AHA/ASA pages one group. Canadian/AHA share reperfusion trials and secondary prevention evidence. Cleveland cites ASA and clinical reviews; UHS is independently written hospital education. No assertion of independent primary trials."
+    },
+    {
+      "source_id": "neuro-merck-ischemic",
+      "url": "https://www.merckmanuals.com/professional/neurologic-disorders/stroke/ischemic-stroke",
+      "locator": "Etiology: cardiac/paradoxical/fat/air, lacunar, low perfusion, other causes; Diagnosis and mimics; Symptoms and Signs table 183-187 independently reread 2026-10-03 for vision",
+      "version": "2026-01 update; Alexandrov/Krishnaiah, peer reviewer Levin",
+      "scope": "Disease-specific education; no individual drug dose or universal intervention threshold.",
+      "accessed_at": "2026-10-03",
+      "method": "Original institutional HTML or original PDF actually read in web tool; no full-text download saved.",
+      "independence": "Distinct author groups, not distinct underlying trials. All Mayo pages one group, all NHS national one group; Royal Berkshire local haematology authorship. ESO/AHA/Canadian overlap trials and consensus."
+    },
+    {
+      "source_id": "neuro-sah-s",
+      "url": "https://www.nice.org.uk/guidance/ng128/chapter/recommendations",
+      "locator": "1.6.1-1.6.11 swallowing/nutrition; 1.8.1 aspiration avoidance; NG128 1.4.9 and 1.4.12 actually read via official indexed text 2026-10-03",
+      "version": "NG128; swallowing recommendations 2008, amended 2019",
+      "accessed_at": "2026-10-03",
+      "method": "Previously actually read official source in this author task; shared section reused, not independently accepted",
+      "independence": [
+        "Separate editorial bodies, not independent trial replications. AHA/NICE overlap in clinical literature. Mayo cites AHA 2012, textbooks and UpToDate. OUH links NHS; CUH cites Flaherty 2005. UK trusts are distinct authors, with related NHS service context."
+      ]
+    },
+    {
+      "source_id": "stroke-causes-nhs",
+      "url": "https://www.nhs.uk/conditions/stroke/causes/",
+      "locator": "What causes; Reducing risk",
+      "source_version": "NHS2024-09-12",
+      "population": "Stroke patients, suspected stroke, or anticoagulant users as specified in located section.",
+      "region": "GB",
+      "independence_group": "UK-NHS",
+      "upstream_evidence": [
+        "Independent institutional authoring. NHS pages grouped together; not counted as separate independent groups."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original HTML clinical paragraphs read"
+    },
+    {
+      "source_id": "stroke-diagnosis-nhs",
+      "url": "https://www.nhs.uk/conditions/stroke/diagnosis/",
+      "locator": "How a stroke is diagnosed; stroke types; urgent TIA",
+      "source_version": "NHS2024-09-12",
+      "population": "Stroke patients, suspected stroke, or anticoagulant users as specified in located section.",
+      "region": "GB",
+      "independence_group": "UK-NHS",
+      "upstream_evidence": [
+        "Independent institutional authoring. NHS pages grouped together; not counted as separate independent groups."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original HTML clinical paragraphs read"
+    },
+    {
+      "source_id": "stroke-eating-nhs",
+      "url": "https://www.newcastle-hospitals.nhs.uk/services/stroke-unit/life-after-stroke/eating-and-drinking-difficulties-dysphagia/",
+      "locator": "Risks; Signs and symptoms; How to help; Nutrition; Malnutrition",
+      "source_version": "NHS2024-09-12",
+      "population": "Stroke patients, suspected stroke, or anticoagulant users as specified in located section.",
+      "region": "GB",
+      "independence_group": "UK-NHS",
+      "upstream_evidence": [
+        "Independent institutional authoring. NHS pages grouped together; not counted as separate independent groups."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original HTML clinical paragraphs read"
+    },
+    {
+      "source_id": "stroke-recovery-nhs",
+      "url": "https://www.nhs.uk/conditions/stroke/recovery/",
+      "locator": "Effects on life; Home recovery plan; Support for carers",
+      "source_version": "NHS2024-09-12",
+      "population": "Stroke patients, suspected stroke, or anticoagulant users as specified in located section.",
+      "region": "GB",
+      "independence_group": "UK-NHS",
+      "upstream_evidence": [
+        "Independent institutional authoring. NHS pages grouped together; not counted as separate independent groups."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original HTML clinical paragraphs read"
+    },
+    {
+      "source_id": "stroke-secondary",
+      "url": "https://www.cdc.gov/stroke/signs-symptoms/index.html",
+      "locator": "Signs; BE FAST; time onset; ambulance; TIA",
+      "source_version": "Live page accessed2026-10-03; CDC2026-05-19; Newcastle2024-11-15; anticoagulants2024-09-09 as applicable",
+      "population": "Stroke patients, suspected stroke, or anticoagulant users as specified in located section.",
+      "region": "US",
+      "independence_group": "US-CDC",
+      "upstream_evidence": [
+        "Independent institutional authoring. NHS pages grouped together; not counted as separate independent groups."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original HTML clinical paragraphs read"
+    },
+    {
+      "source_id": "stroke-symptoms-nhs",
+      "url": "https://www.nhs.uk/conditions/stroke/symptoms/",
+      "locator": "Check for signs; Other symptoms; Immediate action",
+      "source_version": "NHS2024-09-12",
+      "population": "Stroke patients, suspected stroke, or anticoagulant users as specified in located section.",
+      "region": "GB",
+      "independence_group": "UK-NHS",
+      "upstream_evidence": [
+        "Independent institutional authoring. NHS pages grouped together; not counted as separate independent groups."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original HTML clinical paragraphs read"
+    },
+    {
+      "source_id": "stroke-treatment-nhs",
+      "url": "https://www.nhs.uk/conditions/stroke/treatment/",
+      "locator": "Getting treatment; Medicines for a stroke",
+      "source_version": "NHS2024-09-12",
+      "population": "Stroke patients, suspected stroke, or anticoagulant users as specified in located section.",
+      "region": "GB",
+      "independence_group": "UK-NHS",
+      "upstream_evidence": [
+        "Independent institutional authoring. NHS pages grouped together; not counted as separate independent groups."
+      ],
+      "accessed_at": "2026-10-03",
+      "method": "Original HTML clinical paragraphs read"
+    }
+  ],
+  "scope_decisions": [
+    {
+      "code": "8B20",
+      "decision": "candidate_pending_review",
+      "official_title": "Stroke not known if ischaemic or haemorrhagic",
+      "source": "Frozen official WHO ICD11 MMS2026-01 text, exact code paragraph read",
+      "scope": "Established acute stroke meeting WHO criteria whose ischemic/hemorrhagic subtype remains undetermined. Broad symptom navigation does not itself establish this diagnosis. Not ischemic stroke or chronic sequelae.",
+      "body_evidence": [
+        "summary",
+        "diagnosis",
+        "differentials",
+        "treatment",
+        "medications"
+      ],
+      "limitation": "WHO duration criterion is a coding definition, never advice to delay emergency treatment; definitive subtype routes to dedicated article."
+    }
+  ],
+  "mece": "Symptom entry and undetermined-type navigation preserved; 8B20 excluded from ischemic article leaf scope. Known hemorrhagic and ischemic subtypes each retain separate owned articles.",
+  "dispute_adjudication": "No self-administered aspirin/anticoagulation while subtype unknown. Acute treatment selection deliberately has no generic home time cutoff. Rehabilitation support has no guarantee of full recovery.",
+  "structural_resolutions": [
+    {
+      "by": "/root/astra_neuro_finish",
+      "date": "2026-10-03",
+      "resolution": "No clinical text change. Removed unpublished SAH related link; mapped existing actual read version/population/independence metadata to formal support fields."
+    }
+  ]
+}

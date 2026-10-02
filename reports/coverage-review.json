@@ -1,24 +1,24 @@
 {
   "reviewed_at": "2026-10-03",
   "decision": "complete_coverage_target_not_passed",
-  "measured": 0.0074496389205625235,
+  "measured": 0.009958190801976435,
   "target": 1.0,
   "classification": "ICD-11 MMS",
   "release": "2026-01",
   "denominator": 13155,
   "snapshot_status": "frozen_verified_official_bytes",
-  "mapping_status": "45_pending_98_confirmed_2_partial",
+  "mapping_status": "44_pending_131_confirmed_2_partial",
   "counts": {
-    "existing_topics": 93,
-    "condition_topics": 87,
+    "existing_topics": 98,
+    "condition_topics": 92,
     "symptom_topics": 6,
     "title_only_backlog": 188,
     "topics_with_coding": 0,
-    "confirmed_category_mappings": 98,
+    "confirmed_category_mappings": 131,
     "clinically_reviewed_topics": 0,
-    "verified_sections": 336
+    "verified_sections": 434
   },
-  "scope": "当前93篇正文、188标题与56地图单元；正文、证据核验与ICD类别完整覆盖分别统计。",
+  "scope": "当前98篇正文、188标题与56地图单元；正文、编辑核验与ICD类别覆盖分别统计。",
   "method": "逐项核对现有主题身份，列出缺少独立正文的已知病种；mentioned_in_topics 仅按所列术语检索中英 sections.text 的结果，不表示对应主题完整覆盖该病种。",
   "known_urgent_gaps": [
     {
@@ -202,6 +202,24 @@
             "differentials",
             "complications"
           ]
+        },
+        {
+          "id": "neonatal-sepsis",
+          "sections": [
+            "summary",
+            "differentials",
+            "special_populations"
+          ]
+        },
+        {
+          "id": "puerperal-sepsis",
+          "sections": [
+            "summary",
+            "causes_risks",
+            "diagnosis",
+            "differentials",
+            "treatment"
+          ]
         }
       ],
       "matching_terms": [
@@ -220,6 +238,23 @@
       ],
       "backlog_ids": [],
       "mentioned_in_topics": [
+        {
+          "id": "birth-asphyxia",
+          "sections": [
+            "differentials"
+          ]
+        },
+        {
+          "id": "neonatal-sepsis",
+          "sections": [
+            "diagnosis",
+            "differentials",
+            "treatment",
+            "medications",
+            "prognosis_followup",
+            "complications"
+          ]
+        },
         {
           "id": "tension-headache",
           "sections": [
@@ -314,7 +349,14 @@
         "postpartum-hemorrhage"
       ],
       "backlog_ids": [],
-      "mentioned_in_topics": [],
+      "mentioned_in_topics": [
+        {
+          "id": "puerperal-sepsis",
+          "sections": [
+            "differentials"
+          ]
+        }
+      ],
       "matching_terms": [
         "产后出血",
         "postpartum haemorrhage",
@@ -346,7 +388,7 @@
       "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
     }
   ],
-  "remaining_list_status": "13,057个未完整类别保存于reports/icd-remaining-gaps.json.gz；P0-03新增11篇、扩写8篇、合并1个标题待办。",
+  "remaining_list_status": "13,024个未完整类别见reports/icd-remaining-gaps.json.gz；P0-04新增5篇、扩写2篇、合并0个标题待办。P0仍有SAH三个类别被阻断。",
   "roadmap": "docs/coverage-audit-and-roadmap.md",
   "sources": [
     "https://icd.who.int/docs/icd-api/SupportedClassifications/",

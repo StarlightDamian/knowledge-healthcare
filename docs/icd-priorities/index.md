@@ -2,7 +2,7 @@
 
 为全部合格独立ICD类别生成可追溯的知识编写顺序，最终完整覆盖；P0–P3是项目编辑等级，不是WHO排名、临床分诊或执业医师逐病签审。
 
-冻结版本 2026-01：13,155 个合格叶类别全部列出；已完成 98 类，待办 13,057 类，目标100%。
+冻结版本 2026-01：13,155 个合格叶类别全部列出；已完成 131 类，待办 13,024 类，目标100%。
 
 这是规则驱动的编辑排程，不是患者分诊或逐病种医学精确排名。未评估类别默认P2；未知保留null，不能解释为低危。已完成类别仍保留优先级，但待办顺序与工作包为空。
 
@@ -41,7 +41,7 @@ CSV对可能被Excel解释为公式的文本加单引号；WHO标题的逐字原
 | [05](chapter-05.md) | 内分泌、营养与代谢<br>Endocrine, nutritional or metabolic diseases | 539 | 2 | 537 | 2 | 98 | 439 | 0 |
 | [06](chapter-06.md) | 精神、行为与神经发育<br>Mental, behavioural or neurodevelopmental disorders | 720 | 0 | 720 | 0 | 463 | 257 | 0 |
 | [07](chapter-07.md) | 睡眠觉醒<br>Sleep-wake disorders | 73 | 1 | 72 | 0 | 0 | 73 | 0 |
-| [08](chapter-08.md) | 神经系统<br>Diseases of the nervous system | 717 | 8 | 709 | 34 | 68 | 615 | 0 |
+| [08](chapter-08.md) | 神经系统<br>Diseases of the nervous system | 717 | 31 | 686 | 34 | 68 | 615 | 0 |
 | [09](chapter-09.md) | 视觉系统<br>Diseases of the visual system | 608 | 5 | 603 | 5 | 85 | 518 | 0 |
 | [10](chapter-10.md) | 耳与乳突<br>Diseases of the ear or mastoid process | 136 | 1 | 135 | 1 | 13 | 122 | 0 |
 | [11](chapter-11.md) | 循环系统<br>Diseases of the circulatory system | 489 | 17 | 472 | 17 | 44 | 428 | 0 |
@@ -51,8 +51,8 @@ CSV对可能被Excel解释为公式的文本加单引号；WHO标题的逐字原
 | [15](chapter-15.md) | 肌肉骨骼与结缔组织<br>Diseases of the musculoskeletal system or connective tissue | 361 | 0 | 361 | 0 | 29 | 332 | 0 |
 | [16](chapter-16.md) | 泌尿生殖系统<br>Diseases of the genitourinary system | 461 | 1 | 460 | 1 | 12 | 448 | 0 |
 | [17](chapter-17.md) | 性健康相关<br>Conditions related to sexual health | 57 | 0 | 57 | 0 | 0 | 57 | 0 |
-| [18](chapter-18.md) | 妊娠、分娩及产褥<br>Pregnancy, childbirth or the puerperium | 451 | 12 | 439 | 18 | 433 | 0 | 0 |
-| [19](chapter-19.md) | 围产期相关<br>Certain conditions originating in the perinatal period | 536 | 0 | 536 | 4 | 529 | 3 | 0 |
+| [18](chapter-18.md) | 妊娠、分娩及产褥<br>Pregnancy, childbirth or the puerperium | 451 | 18 | 433 | 18 | 433 | 0 | 0 |
+| [19](chapter-19.md) | 围产期相关<br>Certain conditions originating in the perinatal period | 536 | 4 | 532 | 4 | 529 | 3 | 0 |
 | [20](chapter-20.md) | 发育异常<br>Developmental anomalies | 1129 | 0 | 1129 | 0 | 1129 | 0 | 0 |
 | [21](chapter-21.md) | 症状、体征和临床发现<br>Symptoms, signs or clinical findings, not elsewhere classified | 1086 | 7 | 1079 | 7 | 3 | 1076 | 0 |
 | [22](chapter-22.md) | 损伤、中毒及外因后果<br>Injury, poisoning or certain other consequences of external causes | 1677 | 3 | 1674 | 3 | 3 | 1671 | 0 |
@@ -62,26 +62,26 @@ CSV对可能被Excel解释为公式的文本加单引号；WHO标题的逐字原
 
 | 代码 | WHO官方中英名称 | 编辑归口 | 优先级 | 规则 | 覆盖与候选 | 顺序 / 工作包 |
 |---|---|---|---|---|---|---|
-| [8A66.0](http://id.who.int/icd/release/11/mms/338178896) | 惊厥性癫痫持续状态<br>Convulsive status epilepticus | 神经内科 | P0 | [p0-status-epilepticus](chapter-08.md#rule-p0-status-epilepticus) | missing | 1<br>WP-0001 |
-| [JA01.0](http://id.who.int/icd/release/11/mms/1396448570) | 腹腔妊娠<br>Abdominal pregnancy | 产科 | P0 | [p0-ectopic-pregnancy](chapter-18.md#rule-p0-ectopic-pregnancy) | missing | 2<br>WP-0001 |
-| [KA60](http://id.who.int/icd/release/11/mms/381388700) | 胎儿或新生儿脓毒症<br>Sepsis of fetus or newborn | 儿科 | P0 | [p0-neonatal-sepsis-asphyxia](chapter-19.md#rule-p0-neonatal-sepsis-asphyxia) | missing | 3<br>WP-0001 |
-| [8A66.10](http://id.who.int/icd/release/11/mms/854964357) | 失神癫痫持续状态<br>Absence status epilepticus | 神经内科 | P0 | [p0-status-epilepticus](chapter-08.md#rule-p0-status-epilepticus) | missing | 4<br>WP-0001 |
-| [JA01.1](http://id.who.int/icd/release/11/mms/913821868) | 输卵管妊娠<br>Tubal pregnancy | 产科 | P0 | [p0-ectopic-pregnancy](chapter-18.md#rule-p0-ectopic-pregnancy) | missing<br>ectopic-pregnancy: pending | 5<br>WP-0001 |
-| [KB21.0](http://id.who.int/icd/release/11/mms/1968732603) | 重度出生窒息<br>Severe birth asphyxia | 儿科 | P0 | [p0-neonatal-sepsis-asphyxia](chapter-19.md#rule-p0-neonatal-sepsis-asphyxia) | missing | 6<br>WP-0001 |
-| [8A66.1Y](http://id.who.int/icd/release/11/mms/36262213/other) | 其他特指的非惊厥性癫痫持续状态<br>Other specified non-convulsive status epilepticus | 神经内科 | P0 | [p0-status-epilepticus](chapter-08.md#rule-p0-status-epilepticus) | missing | 7<br>WP-0001 |
-| [JA01.2](http://id.who.int/icd/release/11/mms/1121615955) | 卵巢妊娠<br>Ovarian pregnancy | 产科 | P0 | [p0-ectopic-pregnancy](chapter-18.md#rule-p0-ectopic-pregnancy) | missing | 8<br>WP-0001 |
-| [KB21.1](http://id.who.int/icd/release/11/mms/1875062819) | 轻度和中度出生窒息<br>Mild and moderate birth asphyxia | 儿科 | P0 | [p0-neonatal-sepsis-asphyxia](chapter-19.md#rule-p0-neonatal-sepsis-asphyxia) | missing | 9<br>WP-0001 |
-| [8A66.1Z](http://id.who.int/icd/release/11/mms/36262213/unspecified) | 未特指的非惊厥性癫痫持续状态<br>Non-convulsive status epilepticus, unspecified | 神经内科 | P0 | [p0-status-epilepticus](chapter-08.md#rule-p0-status-epilepticus) | missing | 10<br>WP-0001 |
-| [JA01.Y](http://id.who.int/icd/release/11/mms/1563334645/other) | 其他特指的异位妊娠<br>Other specified ectopic pregnancy | 产科 | P0 | [p0-ectopic-pregnancy](chapter-18.md#rule-p0-ectopic-pregnancy) | missing | 11<br>WP-0001 |
-| [KB21.Z](http://id.who.int/icd/release/11/mms/848321559/unspecified) | 未特指的出生窒息<br>Birth asphyxia, unspecified | 儿科 | P0 | [p0-neonatal-sepsis-asphyxia](chapter-19.md#rule-p0-neonatal-sepsis-asphyxia) | missing | 12<br>WP-0001 |
-| [8A66.Y](http://id.who.int/icd/release/11/mms/906174792/other) | 其他特指的癫痫持续状态<br>Other specified status epilepticus | 神经内科 | P0 | [p0-status-epilepticus](chapter-08.md#rule-p0-status-epilepticus) | missing | 13<br>WP-0001 |
-| [JA01.Z](http://id.who.int/icd/release/11/mms/1563334645/unspecified) | 未特指的异位妊娠<br>Ectopic pregnancy, unspecified | 产科 | P0 | [p0-ectopic-pregnancy](chapter-18.md#rule-p0-ectopic-pregnancy) | missing | 14<br>WP-0001 |
-| [8A66.Z](http://id.who.int/icd/release/11/mms/906174792/unspecified) | 未特指的癫痫持续状态<br>Status epilepticus, unspecified | 神经内科 | P0 | [p0-status-epilepticus](chapter-08.md#rule-p0-status-epilepticus) | missing | 15<br>WP-0001 |
-| [JB40.0](http://id.who.int/icd/release/11/mms/325070079) | 产褥期脓毒症<br>Puerperal sepsis | 产科 | P0 | [p0-puerperal-sepsis](chapter-18.md#rule-p0-puerperal-sepsis) | missing | 16<br>WP-0001 |
-| [8B01.0](http://id.who.int/icd/release/11/mms/958976948) | 动脉瘤性蛛网膜下腔出血<br>Aneurysmal subarachnoid haemorrhage | 神经内科 | P0 | [p0-acute-stroke](chapter-08.md#rule-p0-acute-stroke) | missing | 17<br>WP-0001 |
-| [8B01.1](http://id.who.int/icd/release/11/mms/247198410) | 非动脉瘤性蛛网膜下腔出血<br>Non-aneurysmal subarachnoid haemorrhage | 神经内科 | P0 | [p0-acute-stroke](chapter-08.md#rule-p0-acute-stroke) | missing | 18<br>WP-0001 |
-| [8B01.2](http://id.who.int/icd/release/11/mms/133091217) | 未知动脉瘤或非动脉瘤性蛛网膜下腔出血<br>Subarachnoid haemorrhage not known if aneurysmal or non-aneurysmal | 神经内科 | P0 | [p0-acute-stroke](chapter-08.md#rule-p0-acute-stroke) | missing | 19<br>WP-0001 |
-| [8B11.0](http://id.who.int/icd/release/11/mms/1070137396) | 颅外大动脉粥样硬化引起的缺血性脑卒中<br>Cerebral ischaemic stroke due to extracranial large artery atherosclerosis | 神经内科 | P0 | [p0-acute-stroke](chapter-08.md#rule-p0-acute-stroke) | missing | 20<br>WP-0001 |
+| [8B01.0](http://id.who.int/icd/release/11/mms/958976948) | 动脉瘤性蛛网膜下腔出血<br>Aneurysmal subarachnoid haemorrhage | 神经内科 | P0 | [p0-acute-stroke](chapter-08.md#rule-p0-acute-stroke) | missing | 1<br>WP-0001 |
+| [8B01.1](http://id.who.int/icd/release/11/mms/247198410) | 非动脉瘤性蛛网膜下腔出血<br>Non-aneurysmal subarachnoid haemorrhage | 神经内科 | P0 | [p0-acute-stroke](chapter-08.md#rule-p0-acute-stroke) | missing | 2<br>WP-0001 |
+| [8B01.2](http://id.who.int/icd/release/11/mms/133091217) | 未知动脉瘤或非动脉瘤性蛛网膜下腔出血<br>Subarachnoid haemorrhage not known if aneurysmal or non-aneurysmal | 神经内科 | P0 | [p0-acute-stroke](chapter-08.md#rule-p0-acute-stroke) | missing | 3<br>WP-0001 |
+| [1A60.0](http://id.who.int/icd/release/11/mms/395565060) | 早期先天性梅毒，有症状<br>Early congenital syphilis, symptomatic | 感染科／暴露后预防门诊 | P1 | [p1-hiv-hepatitis-sti](chapter-01.md#rule-p1-hiv-hepatitis-sti) | missing | 4<br>WP-0001 |
+| [2A00.00](http://id.who.int/icd/release/11/mms/650534447) | 脑胶质母细胞瘤<br>Glioblastoma of brain | 肿瘤科 | P1 | [p1-cns-neoplasms](chapter-02.md#rule-p1-cns-neoplasms) | missing | 5<br>WP-0001 |
+| [5A10](http://id.who.int/icd/release/11/mms/1651053999) | 1型糖尿病<br>Type 1 diabetes mellitus | 内分泌科 | P1 | [p1-diabetes](chapter-05.md#rule-p1-diabetes) | missing | 6<br>WP-0001 |
+| [6A20.00](http://id.who.int/icd/release/11/mms/692993572) | 精神分裂症，首次发作，目前为症状性<br>Schizophrenia, first episode, currently symptomatic | 精神心理科 | P1 | [p1-mental-health](chapter-06.md#rule-p1-mental-health) | missing | 7<br>WP-0001 |
+| [8A60.00](http://id.who.int/icd/release/11/mms/179860715) | 产前或围产期血管病所致癫痫<br>Epilepsy due to prenatal or perinatal vascular insults | 神经内科 | P1 | [p1-epilepsy](chapter-08.md#rule-p1-epilepsy) | missing | 8<br>WP-0001 |
+| [9B10.00](http://id.who.int/icd/release/11/mms/987757045) | 花冠状年龄相关性白内障<br>Coronary age-related cataract | 眼科 | P1 | [p1-vision](chapter-09.md#rule-p1-vision) | missing | 9<br>WP-0001 |
+| [AB50.0](http://id.who.int/icd/release/11/mms/240285431) | 先天性传导性听力损失<br>Congenital conductive hearing loss | 耳鼻喉科 | P1 | [p1-hearing](chapter-10.md#rule-p1-hearing) | missing | 10<br>WP-0001 |
+| [BA00.0](http://id.who.int/icd/release/11/mms/1917449952) | 舒张期高血压合并收缩期高血压<br>Combined diastolic and systolic hypertension | 心血管内科 | P1 | [p1-hypertension](chapter-11.md#rule-p1-hypertension) | missing | 11<br>WP-0001 |
+| [CA22.0](http://id.who.int/icd/release/11/mms/1665365733) | 慢性阻塞性肺疾病伴急性加重，未特指<br>Chronic obstructive pulmonary disease with acute exacerbation, unspecified | 呼吸内科 | P1 | [p1-chronic-respiratory](chapter-12.md#rule-p1-chronic-respiratory) | missing | 12<br>WP-0001 |
+| [DA08.0](http://id.who.int/icd/release/11/mms/1983306720) | 龋病<br>Dental caries | 口腔科／牙科 | P1 | [p1-oral-health](chapter-13.md#rule-p1-oral-health) | missing<br>planned-131: title_only_scope_candidate | 13<br>WP-0001 |
+| [FA00.0](http://id.who.int/icd/release/11/mms/296043888) | 原发性髋关节骨关节炎<br>Primary osteoarthritis of hip | 骨科 | P1 | [p1-musculoskeletal](chapter-15.md#rule-p1-musculoskeletal) | missing | 14<br>WP-0001 |
+| [GB60.0](http://id.who.int/icd/release/11/mms/574502222) | 急性肾衰竭1期<br>Acute kidney failure, stage 1 | 肾内科 | P1 | [p1-kidney-disease](chapter-16.md#rule-p1-kidney-disease) | missing | 15<br>WP-0001 |
+| [JA00.00](http://id.who.int/icd/release/11/mms/1388035334) | 不完全性自然流产，并发生殖道或盆腔感染<br>Spontaneous abortion, incomplete, complicated by genital tract or pelvic infection | 产科 | P1 | [p1-maternity](chapter-18.md#rule-p1-maternity) | missing | 16<br>WP-0001 |
+| [KA00.0](http://id.who.int/icd/release/11/mms/691510326) | 受母体高血压疾患影响的胎儿或新生儿<br>Fetus or newborn affected by maternal hypertensive disorders | 儿科 | P1 | [p1-perinatal](chapter-19.md#rule-p1-perinatal) | missing | 17<br>WP-0001 |
+| [LA00.00](http://id.who.int/icd/release/11/mms/675690362) | 颅脊柱裂<br>Craniorachischisis | 医学遗传科 | P1 | [p1-developmental](chapter-20.md#rule-p1-developmental) | missing | 18<br>WP-0001 |
+| [ME84.20](http://id.who.int/icd/release/11/mms/158896786) | 腰痛，伴坐骨神经痛<br>Lumbago with sciatica | 康复医学科 | P1 | [p1-low-back-pain](chapter-21.md#rule-p1-low-back-pain) | missing | 19<br>WP-0001 |
+| [NE60](http://id.who.int/icd/release/11/mms/1868408442) | 药物、药剂或生物制品的有害效应，不可归类在他处者<br>Harmful effects of drugs, medicaments or biological substances, not elsewhere classified | 急诊／急救 | P1 | [p1-harmful-substances](chapter-22.md#rule-p1-harmful-substances) | missing | 20<br>WP-0001 |
 
 ## 来源与定位
 

@@ -1,0 +1,296 @@
+{
+  "schema_version": "1.0.0",
+  "id": "stroke",
+  "kind": "condition",
+  "primary_domain": "neurologic",
+  "names": {
+    "zh-CN": "脑卒中",
+    "en": "Stroke"
+  },
+  "aliases": {
+    "zh-CN": [
+      "中风",
+      "脑梗",
+      "脑出血"
+    ],
+    "en": [
+      "brain attack",
+      "cerebrovascular accident"
+    ]
+  },
+  "symptom_terms": [
+    {
+      "zh-CN": "一侧无力",
+      "en": "one-sided weakness"
+    },
+    {
+      "zh-CN": "说话不清",
+      "en": "slurred speech"
+    },
+    {
+      "zh-CN": "口角歪斜",
+      "en": "facial droop"
+    },
+    {
+      "zh-CN": "突然视力异常",
+      "en": "sudden vision changes"
+    }
+  ],
+  "departments": [
+    "emergency",
+    "neurology"
+  ],
+  "reference_urgency": "emergency",
+  "sections": {
+    "summary": {
+      "text": {
+        "zh-CN": "脑卒中是脑部血流阻断或血管破裂引起脑损伤的急症。本页帮助识别危险和了解分型流程；尚未分清缺血或出血时，不能自行套用某一种卒中的治疗。\n\n- 可能突然出现口角歪斜、一侧手臂无力或说话不清。\n\n- 也可能突然视力改变、走不稳或剧烈头痛。\n\n- 症状自行消失仍需紧急评估，不能据此排除危险。",
+        "en": "Stroke is an emergency caused by interrupted brain blood flow or a ruptured vessel. This entry explains recognition and classification; while the type is uncertain, treatment for one subtype cannot be applied automatically.\n\n- Sudden facial droop, weakness of one arm or slurred speech may occur.\n\n- Sudden vision changes, unsteadiness or severe headache are other possible signs.\n\n- Symptoms that disappear still need urgent assessment and do not rule out danger."
+      },
+      "source_ids": [
+        "neuro-mayo-stroke-treatment",
+        "stroke-diagnosis-nhs",
+        "stroke-secondary",
+        "stroke-symptoms-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "causes_risks": {
+      "text": {
+        "zh-CN": "不同类型脑卒中的直接原因不同。\n\n- 缺血性卒中是血流被血栓等阻断；出血性卒中是血管破裂出血。\n- 高血压、糖尿病、血脂异常和吸烟会增加风险。\n- 房颤是心跳不规则的一种，可与血栓有关；既往短暂性脑缺血发作或卒中也提示风险较高。",
+        "en": "Stroke types have different immediate causes.\n\n- Ischaemic stroke involves blocked blood flow, often by a clot; haemorrhagic stroke involves a ruptured vessel.\n- High blood pressure, diabetes, abnormal blood fats and smoking increase risk.\n- Atrial fibrillation is an irregular heart rhythm linked to clots; previous TIA or stroke also signals higher risk."
+      },
+      "source_ids": [
+        "neuro-mayo-stroke-causes",
+        "stroke-causes-nhs",
+        "stroke-diagnosis-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "red_flags": {
+      "text": {
+        "zh-CN": "怀疑脑卒中就应立即联系当地急救服务。\n\n- 让患者微笑、抬起双臂并说一句话，任何新发不对称、无力或言语异常都应警惕。\n- 突然视力丧失、失去平衡或不明原因剧烈头痛，同样需要急救。\n- 不要等待所有表现出现，也不要因为症状缓解而取消就医。",
+        "en": "Suspected stroke requires immediate local emergency help.\n\n- Ask the person to smile, raise both arms and say a sentence; new asymmetry, weakness or speech change is concerning.\n- Sudden vision loss, loss of balance or unexplained severe headache also warrants emergency help.\n- Do not wait for every sign or cancel care because symptoms improve."
+      },
+      "source_ids": [
+        "stroke-secondary",
+        "stroke-symptoms-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "care": {
+      "text": {
+        "zh-CN": "尽快进入急救流程会影响可选治疗。\n\n- 呼叫救护车，不让患者自行开车。\n- 记录症状最早出现的时间；若不清楚，如实告诉急救人员。\n- 准备既往病史和用药信息，尤其抗凝药，并遵循急救调度指引。",
+        "en": "Rapid emergency care affects the treatments available.\n\n- Call an ambulance and do not let the person drive.\n- Record when symptoms began and tell responders if the timing is uncertain.\n- Provide medical history and medicines, especially anticoagulants, and follow dispatcher instructions."
+      },
+      "source_ids": [
+        "neuro-ischemic-e",
+        "neuro-mayo-stroke-treatment",
+        "stroke-secondary",
+        "stroke-symptoms-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diagnosis": {
+      "text": {
+        "zh-CN": "检查需要迅速区分堵塞和出血。\n\n- CT或MRI脑部影像帮助确定卒中类型、部位和范围。\n- 血液检查、心电图及必要的血管超声等帮助寻找原因。\n- 只靠面部表情或症状持续时间，无法可靠决定应使用哪种治疗。",
+        "en": "Tests must rapidly distinguish a blockage from bleeding.\n\n- Brain CT or MRI helps identify type, location and extent.\n- Blood tests, an ECG and selected vessel ultrasound help investigate causes.\n- Facial appearance or symptom duration alone cannot reliably determine treatment."
+      },
+      "source_ids": [
+        "neuro-ischemic-e",
+        "neuro-mayo-stroke-treatment",
+        "stroke-diagnosis-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "differentials": {
+      "text": {
+        "zh-CN": "短暂恢复不代表没有脑血管问题。\n\n- 短暂性脑缺血发作简称TIA，症状可较快消失，却是重要警报。\n- 缺血和出血可能表现相似，需影像区分。\n- 其他问题也能出现类似表现，但应由急救团队排查，不在家通过等待来鉴别。",
+        "en": "Brief recovery does not exclude a vascular problem.\n\n- A transient ischaemic attack, or TIA, may resolve quickly but is a serious warning.\n- Ischaemic and haemorrhagic strokes can look similar and need imaging.\n- Other conditions can mimic stroke, but emergency clinicians should distinguish them rather than waiting at home."
+      },
+      "source_ids": [
+        "neuro-ischemic-e",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "stroke-diagnosis-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "treatment": {
+      "text": {
+        "zh-CN": "急性治疗与后期康复承担不同任务。\n\n- 部分血管堵塞可用溶栓药或取栓手术恢复血流，是否适用取决于时间、影像及风险。\n- 出血性卒中可能需要控制病情或手术处理，不能照搬堵塞的用药。\n- 病情稳定后，康复团队帮助恢复活动、言语及日常生活能力。",
+        "en": "Acute treatment and rehabilitation have different jobs.\n\n- Selected blockages may receive clot-dissolving medicine or clot-removal procedures, depending on timing, imaging and risk.\n- Bleeding strokes may need stabilisation or surgery and cannot use the same medicine plan automatically.\n- Once stable, rehabilitation supports movement, speech and daily activities."
+      },
+      "source_ids": [
+        "neuro-cdc-stroke-treatment",
+        "neuro-mayo-stroke-treatment",
+        "stroke-recovery-nhs",
+        "stroke-treatment-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "medications": {
+      "text": {
+        "zh-CN": "药物必须匹配卒中类型和出血风险。\n\n- 疑似新发卒中时，不要自行加服阿司匹林、库存抗凝药或所谓通血管药，应立即急救。阿司匹林可能加重出血性卒中；已开具的长期方案由急诊团队复核。\n\n- 长期可能需要降压、降脂或针对特定病因的抗凝治疗，由团队选择。\n\n- 抗凝药可导致严重出血；黑便、呕血、无法止血或服药期间头部严重撞击，应立即求助。",
+        "en": "Medicines must match the stroke type and bleeding risk.\n\n- For suspected new stroke, seek emergency care instead of adding aspirin, stored anticoagulants or purported circulation remedies. Aspirin can worsen a bleeding stroke; the emergency team reviews existing prescribed treatment.\n\n- Long-term care may include blood-pressure, cholesterol or cause-specific anticoagulant treatment chosen by the team.\n\n- Anticoagulants can cause serious bleeding; black stools, vomiting blood, bleeding that will not stop or a major head injury while taking them needs immediate help."
+      },
+      "source_ids": [
+        "anticoagulants-safety-nhs",
+        "neuro-asa-aspirin",
+        "neuro-cc-anticoagulants",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-sah-s",
+        "stroke-treatment-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diet": {
+      "text": {
+        "zh-CN": "急性期先由受训人员评估吞咽安全，再决定能否经口进食、喝水或服药；不能用喂水来测试。\n\n- 卒中后可能吞咽困难，出现吃喝时呛咳、进食困难应告诉团队。\n\n- 按吞咽评估建议选择食物和饮料质地；必要时需管饲，不能只靠强行喂水补充营养。\n\n- 恢复期需检查营养与水分是否足够，并依吞咽能力调整食物；可向营养师咨询，不要因怕呛而长期吃喝不足。",
+        "en": "In the acute phase, trained staff assess swallowing before oral food, drink or medicines; do not test swallowing by giving water.\n\n- Stroke can cause swallowing difficulty; report coughing or difficulty with food and drinks.\n\n- Use the food and drink textures advised after swallowing assessment; tube feeding may be needed instead of forcing fluids.\n\n- Recovery care checks adequate nutrition and hydration and adjusts food to swallowing ability. Seek dietetic advice instead of remaining undernourished or dehydrated through fear of choking."
+      },
+      "source_ids": [
+        "neuro-canada-stroke-swallowing",
+        "neuro-sah-s",
+        "stroke-eating-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "daily_care": {
+      "text": {
+        "zh-CN": "康复应围绕可做到的具体任务。\n\n- 按团队安排练习移动、穿衣和日常活动，逐步调整目标。\n- 言语、认知、情绪和疲劳问题也需要支持，并非只有肢体训练。\n- 根据功能安排家居辅助设备、照护和复工计划，避免独自承担全部困难。",
+        "en": "Rehabilitation should use achievable everyday tasks.\n\n- Practise movement, dressing and daily activities with goals adjusted by the team.\n- Speech, thinking, mood and fatigue deserve support alongside limb exercises.\n- Plan home aids, care support and return to work according to function."
+      },
+      "source_ids": [
+        "neuro-cdc-stroke-treatment",
+        "neuro-mayo-stroke-treatment",
+        "stroke-recovery-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "special_populations": {
+      "text": {
+        "zh-CN": "脑卒中可以发生在任何年龄。\n\n- 不要因患者年轻而忽略突然的神经症状。\n- 妊娠相关高血压、子痫前期或产后人群出现相关症状也应紧急处理。\n- 已有残疾或高龄者的康复方案需要适配原有功能、目标及照护条件。",
+        "en": "Stroke can occur at any age.\n\n- Young age does not make sudden neurological symptoms safe to ignore.\n- Pregnancy-related hypertension, pre-eclampsia or the postpartum period also warrant urgent attention to stroke signs.\n- Rehabilitation for older people or those with disability should fit prior function, goals and available care."
+      },
+      "source_ids": [
+        "neuro-aha-pregnancy",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "stroke-causes-nhs",
+        "stroke-recovery-nhs",
+        "stroke-symptoms-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prognosis_followup": {
+      "text": {
+        "zh-CN": "恢复速度存在很大差异。\n\n- 有人在数天或数周明显改善，也有人需要数月或数年支持。\n- 复诊检查血压、用药、复发风险和康复目标是否合适。\n- 同时评估吞咽、情绪、认知和照护需求，持续困难仍可继续寻求帮助。",
+        "en": "Recovery rates vary greatly.\n\n- Some improve over days or weeks; others need months or years of support.\n- Follow-up reviews blood pressure, medicines, recurrence risks and rehabilitation goals.\n- Swallowing, mood, cognition and care needs also need reassessment; persistent difficulties still deserve help."
+      },
+      "source_ids": [
+        "neuro-cdc-stroke-treatment",
+        "neuro-mayo-stroke-treatment",
+        "stroke-recovery-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "complications": {
+      "text": {
+        "zh-CN": "后果取决于受损脑区和严重程度。\n\n- 可能遗留无力、步行困难、言语或理解障碍。\n- 吞咽、记忆、视力及大小便控制也可能受影响。\n- 情绪低落和疲劳可能持续；这些问题需要针对性康复和支持。",
+        "en": "Effects depend on the brain area and severity.\n\n- Weakness, walking difficulty and speech or understanding problems may persist.\n- Swallowing, memory, vision and bladder or bowel control can also be affected.\n- Low mood and fatigue may continue and need targeted rehabilitation and support."
+      },
+      "source_ids": [
+        "neuro-cdc-stroke-treatment",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-merck-ischemic",
+        "stroke-recovery-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prevention": {
+      "text": {
+        "zh-CN": "预防包括处理血管风险和防止再次发作。\n\n- 按计划管理高血压、糖尿病、血脂及房颤等已知问题。\n- 戒烟，逐步规律活动，并采用适合自己的均衡饮食。\n- 坚持复诊和已开具的预防药；新发症状仍需立即急救。",
+        "en": "Prevention addresses vascular risks and another stroke.\n\n- Follow the plan for blood pressure, diabetes, blood fats and atrial fibrillation.\n- Stop smoking, build regular activity and use a suitable balanced diet.\n- Continue reviews and prescribed prevention medicines; new symptoms still require emergency help."
+      },
+      "source_ids": [
+        "neuro-cdc-stroke-treatment",
+        "neuro-mayo-stroke-causes",
+        "stroke-causes-nhs",
+        "stroke-secondary"
+      ],
+      "support_status": "pending_claim_verification"
+    }
+  },
+  "source_ids": [
+    "anticoagulants-safety-nhs",
+    "neuro-aha-pregnancy",
+    "neuro-asa-aspirin",
+    "neuro-canada-stroke-swallowing",
+    "neuro-cc-anticoagulants",
+    "neuro-cdc-stroke-treatment",
+    "neuro-ischemic-e",
+    "neuro-mayo-stroke-causes",
+    "neuro-mayo-stroke-treatment",
+    "neuro-merck-ischemic",
+    "neuro-sah-s",
+    "stroke-causes-nhs",
+    "stroke-diagnosis-nhs",
+    "stroke-eating-nhs",
+    "stroke-recovery-nhs",
+    "stroke-secondary",
+    "stroke-symptoms-nhs",
+    "stroke-treatment-nhs"
+  ],
+  "related_ids": [
+    "atrial-fibrillation",
+    "dizziness",
+    "heart-failure",
+    "hypertension",
+    "intracerebral-hemorrhage",
+    "ischemic-stroke",
+    "migraine"
+  ],
+  "tags": [
+    "not_classified_as_infectious",
+    "course_context_dependent"
+  ],
+  "clinical_region": "UNSPECIFIED",
+  "coding": [],
+  "review": {
+    "status": "editorial_draft",
+    "reviewers": [],
+    "medical_reviewed_at": null,
+    "editorial_updated_at": "2026-10-03",
+    "next_editorial_review_due": "2026-12-28"
+  },
+  "localizations": {
+    "zh-CN": {
+      "status": "draft",
+      "clinician_reviewed": false
+    },
+    "en": {
+      "status": "draft",
+      "clinician_reviewed": false
+    }
+  },
+  "evidence_certainty": "not_formally_graded",
+  "limitations": {
+    "zh-CN": "用于卒中识别与分型导航的双语候选；逐项作者核对已记录，独立审核及医生签审未完成。不能以未分型名称决定用药。",
+    "en": "Bilingual recognition and subtype-navigation candidate with author claim checks recorded; independent review and clinician sign-off remain pending. The unclassified label does not determine medication."
+  },
+  "study_ids": [],
+  "advanced_fields": {
+    "prevalence_estimate": null,
+    "incidence_estimate": null,
+    "formal_diagnostic_criteria": null,
+    "quantitative_prognosis": null,
+    "transmission_details": null,
+    "screening_intervals": null,
+    "regional_drug_approval": null,
+    "procedure_indications": null
+  },
+  "advanced_fields_status": "not_yet_curated"
+}

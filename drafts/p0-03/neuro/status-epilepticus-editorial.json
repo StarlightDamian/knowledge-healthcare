@@ -1,0 +1,2829 @@
+[
+  {
+    "id": "p0-03-status-epilepticus-summary",
+    "target": {
+      "kind": "condition",
+      "id": "status-epilepticus",
+      "section": "summary"
+    },
+    "content_sha256": "00bc9a8f506d0e49e59088228833d28f74872ab448403df50791017fde1badcd",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-cleveland-status",
+        "source_metadata_sha256": "a56b044930487566793c3d1d9048d71390dc240fd2063096c8c7c98299e869a1",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+        "source_version": "2023-02-13",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "US-Cleveland-Clinic",
+        "upstream_evidence": [
+          "Independently edited hospital patient education; cited neurology textbooks, Hantus 2016, Neligan 2019 and StatPearls; not an independent trial."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-foundation-status",
+        "source_metadata_sha256": "e00760f033d72823cad0e4dd22f553f6ad9a5f88dfeab12a6a2bbe289aeb479c",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies",
+        "source_version": "2023-05-12 physician authored/reviewed",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "EPILEPSY-FOUNDATION",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-ilae-rasmussen-seizures",
+        "locator": "Seizures: EPC recurrent focal motor, typically hand/face, variable awareness; textual page only, restricted video not accessed",
+        "source_version": "2024-06-30 current syndrome page",
+        "population": "EPC and focal status; ILAE page is specifically Rasmussen syndrome, not every EPC cause.",
+        "region": "international",
+        "independence_group": "ILAE",
+        "upstream_evidence": [
+          "Merck2026 cites ILAE2025 seizure classification and ILAE2015 status definition. ILAE pages count as one group; distinct clinical authoring, not independent upstream nomenclature."
+        ],
+        "accessed_at": "2026-10-03",
+        "source_metadata_sha256": "df9365b4fad2dd6964a3297b392b1fee774e537a29ceb96f9919212152088a61",
+        "relation": "supports",
+        "assessment": "Scoped author proposition pending independent review."
+      },
+      {
+        "source_id": "neuro-merck-seizures",
+        "locator": "Focal seizures/EPC; Status epilepticus; Diagnosis/EEG; Treatment",
+        "source_version": "2026-03; Bola Adamolekun, reviewed Michael Levin",
+        "population": "EPC and focal status; ILAE page is specifically Rasmussen syndrome, not every EPC cause.",
+        "region": "US",
+        "independence_group": "MERCK",
+        "upstream_evidence": [
+          "Merck2026 cites ILAE2025 seizure classification and ILAE2015 status definition. ILAE pages count as one group; distinct clinical authoring, not independent upstream nomenclature."
+        ],
+        "accessed_at": "2026-10-03",
+        "source_metadata_sha256": "75ad108aef9a4708e1836bfe4c222e7c85f1c190fafb468908d215e16fcfdd65",
+        "relation": "supports",
+        "assessment": "Scoped author proposition pending independent review."
+      },
+      {
+        "source_id": "neuro-society-emergency",
+        "source_metadata_sha256": "1cfbe155cae81d09792daa6b61ea5a60bcb2bc1223937d7a6d3a947ff13feb03",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Non-convulsive status; emergency medications; protocols; training",
+        "source_version": "Header updated 2026-09-07; body says September2025, review September2027",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "EPILEPSY-SOCIETY",
+        "upstream_evidence": [
+          "Explicit NICE2022 upstream for treatment; separate patient explanation but not second independent evidence for the same NICE recommendation."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-status-epilepticus-summary-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "癫痫持续状态是发作持续或反复而未正常恢复的急症，不等于所有癫痫。",
+          "en": "Status epilepticus is prolonged or recurrent seizure activity without normal recovery, distinct from epilepsy as a whole."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-foundation-status",
+            "locator": "What Is Status Epilepticus",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+            "assessment": "Accessible independently authored clinical source supports the claim in context; replaces inaccessible reviewer copy of Hopkins."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-summary-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "惊厥型有持续强直、抽动；非惊厥型可表现为持续发呆、混乱或不能正常回应。",
+          "en": "Convulsive forms involve stiffening and jerking; nonconvulsive forms may cause sustained staring, confusion or impaired response."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-foundation-status",
+            "locator": "Convulsive / Nonconvulsive",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+            "assessment": "Accessible independently authored clinical source supports the claim in context; replaces inaccessible reviewer copy of Hopkins."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-summary-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "失神持续状态属于非惊厥型；其他或未特指类型仍需医生结合表现和脑电图区分。",
+          "en": "Absence status is nonconvulsive; other or unspecified forms still need clinical and EEG assessment."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-foundation-status",
+            "locator": "Nonconvulsive; EEG confirmation",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-society-emergency",
+            "locator": "Non-convulsive status",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-summary-4",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "还存在持续性局灶运动发作，例如持续性部分性癫痫（EPC）：一只手、手臂或一侧面部反复抽动，患者可能仍清醒。这与全身强直阵挛或单纯发呆的表现不同，不能因能回答就排除发作。",
+          "en": "Persistent focal motor seizures include epilepsia partialis continua (EPC): repeated jerking of a hand, arm or one side of the face, sometimes with preserved awareness. This differs from generalized convulsions or staring alone; being able to respond does not exclude seizures."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-merck-seizures",
+            "locator": "Focal seizures: EPC preserved consciousness",
+            "assessment": "Actually read source supports scoped proposition; pending review."
+          },
+          {
+            "source_id": "neuro-ilae-rasmussen-seizures",
+            "locator": "Recurrent focal motor EPC; awareness may vary",
+            "assessment": "Actually read source supports scoped proposition; pending review."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_neurology",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent reviewer."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authorship groups recorded per support; mirrors and institutional pages are not counted twice.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidelines inform professional care; public text omits individual doses and applies local emergency services."
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p0-03-status-epilepticus-causes_risks",
+    "target": {
+      "kind": "condition",
+      "id": "status-epilepticus",
+      "section": "causes_risks"
+    },
+    "content_sha256": "eb6bc2fa30641f16d9c77471da84bac237809df0d024808e764c5aa208e7e8d8",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-cleveland-status",
+        "source_metadata_sha256": "a56b044930487566793c3d1d9048d71390dc240fd2063096c8c7c98299e869a1",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+        "source_version": "2023-02-13",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "US-Cleveland-Clinic",
+        "upstream_evidence": [
+          "Independently edited hospital patient education; cited neurology textbooks, Hantus 2016, Neligan 2019 and StatPearls; not an independent trial."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-ics-status-2025",
+        "source_metadata_sha256": "ac82b398d6272bf5242836defac164f46965ddbe99f505974e322a0b5e9feba0",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+        "source_version": "2025-05-08",
+        "population": "Hospital patients over 16 years; obstetric population explicitly excluded. Applied only to adult neurological care.",
+        "region": "GB",
+        "independence_group": "UK-ICS",
+        "upstream_evidence": [
+          "Independent multispecialty consensus authors; expressly aligns with NICE, AES, EFNS and Neurocritical Care Society; shares ILAE definitions, ESETT and other trials. Do not count citation agreement as independent trials."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-ilae-rasmussen-overview",
+        "locator": "Unilateral inflammatory brain disease; progressive focal seizures and neurological dysfunction",
+        "source_version": "2024-06-30 current syndrome page",
+        "population": "EPC and focal status; ILAE page is specifically Rasmussen syndrome, not every EPC cause.",
+        "region": "international",
+        "independence_group": "ILAE",
+        "upstream_evidence": [
+          "Merck2026 cites ILAE2025 seizure classification and ILAE2015 status definition. ILAE pages count as one group; distinct clinical authoring, not independent upstream nomenclature."
+        ],
+        "accessed_at": "2026-10-03",
+        "source_metadata_sha256": "a356804348c2840effbffb6ac70ac09132b1abdee9389d676b5500ae7793c279",
+        "relation": "supports",
+        "assessment": "Scoped author proposition pending independent review."
+      },
+      {
+        "source_id": "neuro-merck-seizures",
+        "locator": "Focal seizures/EPC; Status epilepticus; Diagnosis/EEG; Treatment",
+        "source_version": "2026-03; Bola Adamolekun, reviewed Michael Levin",
+        "population": "EPC and focal status; ILAE page is specifically Rasmussen syndrome, not every EPC cause.",
+        "region": "US",
+        "independence_group": "MERCK",
+        "upstream_evidence": [
+          "Merck2026 cites ILAE2025 seizure classification and ILAE2015 status definition. ILAE pages count as one group; distinct clinical authoring, not independent upstream nomenclature."
+        ],
+        "accessed_at": "2026-10-03",
+        "source_metadata_sha256": "75ad108aef9a4708e1836bfe4c222e7c85f1c190fafb468908d215e16fcfdd65",
+        "relation": "supports",
+        "assessment": "Scoped author proposition pending independent review."
+      },
+      {
+        "source_id": "neuro-nice-status",
+        "source_metadata_sha256": "77c950cb2a7f72d16e9f2dde830c28609b2c2bc835d2c3306ecc3b4dd661dae1",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "7.1.1–7.1.12; 7.2; 7.3 and rationale",
+        "source_version": "2022 recommendations; current rationale mentions January 2025 valproate update",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "NICE",
+        "upstream_evidence": [
+          "Epilepsy Society explicitly cites this NICE guideline; not independent of NICE for repeated quoted recommendations."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-status-epilepticus-causes_risks-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "急救同时要寻找使发作持续的原因。",
+          "en": "Emergency care also investigates why seizures persist."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+            "assessment": "Accessible independently authored clinical source supports the claim in context; replaces inaccessible reviewer copy of Hopkins."
+          },
+          {
+            "source_id": "neuro-nice-status",
+            "locator": "7.1.4–7.1.5",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-causes_risks-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "脑部急性疾病：卒中、外伤或脑炎会损伤或干扰脑组织，可能触发持续异常电活动；以前没有癫痫也可能发生。",
+          "en": "Acute brain illness: stroke, injury or encephalitis can disrupt brain tissue and trigger continuing abnormal electrical activity, even without previous epilepsy."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-ics-status-2025",
+            "locator": "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+            "assessment": "Accessible independently authored clinical source supports the claim in context; replaces inaccessible reviewer copy of Hopkins."
+          },
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Provoked seizures; specific causes",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-causes_risks-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "用药中断：抗发作药原本用来压制发作，突然停用或漏服可能使控制失效。接诊时应说明最近漏药、减药及急救药使用情况。",
+          "en": "Interrupted treatment: antiseizure medicines suppress seizures; missed or abruptly stopped treatment can undermine control. Tell the team about recent missed or reduced treatment and rescue doses."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-nice-status",
+            "locator": "7.1.5 non-adherence",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-ics-status-2025",
+            "locator": "General recommendations 3–4",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-causes_risks-4",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "代谢与物质因素：血糖或钠等电解质异常、酒精戒断都可能诱发发作。这类情况还要纠正诱因，单靠止住抽搐并不等于病因已解决。",
+          "en": "Metabolic and substance-related causes: abnormal glucose or electrolytes such as sodium, and alcohol withdrawal, can provoke seizures. The disturbance also needs treatment; stopping jerking does not resolve its cause."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-ics-status-2025",
+            "locator": "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+            "assessment": "Accessible independently authored clinical source supports the claim in context; replaces inaccessible reviewer copy of Hopkins."
+          },
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Specific causes; Treating underlying causes",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-causes_risks-5",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "EPC 的病因也需查明，成人可与卒中或肿瘤等局部脑病变有关；儿童中 Rasmussen 脑炎是一个特殊例子，会累及一侧大脑并伴进行性的局灶发作和功能变化。EPC 不是 Rasmussen 脑炎的同义词。",
+          "en": "The cause of EPC must also be identified. In adults, focal brain lesions such as stroke or tumour may be involved; Rasmussen encephalitis is a particular childhood example affecting one hemisphere with progressive focal seizures and functional change. EPC is not synonymous with Rasmussen encephalitis."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-merck-seizures",
+            "locator": "EPC causes: adults structural lesions; children cortical inflammation",
+            "assessment": "Actually read source supports scoped proposition; pending review."
+          },
+          {
+            "source_id": "neuro-ilae-rasmussen-overview",
+            "locator": "Clinical overview: unilateral inflammatory disease",
+            "assessment": "Actually read source supports scoped proposition; pending review."
+          },
+          {
+            "source_id": "neuro-ics-status-2025",
+            "locator": "Etiological evaluation of focal status and structural causes",
+            "assessment": "Actually read source supports scoped proposition; pending review."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_neurology",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent reviewer."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authorship groups recorded per support; mirrors and institutional pages are not counted twice.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidelines inform professional care; public text omits individual doses and applies local emergency services."
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p0-03-status-epilepticus-red_flags",
+    "target": {
+      "kind": "condition",
+      "id": "status-epilepticus",
+      "section": "red_flags"
+    },
+    "content_sha256": "b333f774ecc714f1f63f96a216b0fa6a20eac02b5e552844d2c54e86681eaeaf",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "batch-b-seizure-first-aid",
+        "source_metadata_sha256": "2fa7f71f4a29ba9d08ba9e21436763f9b81e2c218eb319c5feadaa18f403abc6",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "First aid; When to call; Information to note",
+        "source_version": "2023-12-19",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-cdc-seizure-first-aid",
+        "source_metadata_sha256": "b344b7b4c0097ce67691e5ee07bccdd23ef9c57a59c622aabbae97a876df26cb",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Keeping safe; When to call; What to avoid",
+        "source_version": "2024-05-15",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "CDC",
+        "upstream_evidence": [
+          "CDC links Epilepsy Foundation training; use NHS as independent first-aid counterpart."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-cleveland-status",
+        "source_metadata_sha256": "a56b044930487566793c3d1d9048d71390dc240fd2063096c8c7c98299e869a1",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+        "source_version": "2023-02-13",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "US-Cleveland-Clinic",
+        "upstream_evidence": [
+          "Independently edited hospital patient education; cited neurology textbooks, Hantus 2016, Neligan 2019 and StatPearls; not an independent trial."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-foundation-status",
+        "source_metadata_sha256": "e00760f033d72823cad0e4dd22f553f6ad9a5f88dfeab12a6a2bbe289aeb479c",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies",
+        "source_version": "2023-05-12 physician authored/reviewed",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "EPILEPSY-FOUNDATION",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-nice-status",
+        "source_metadata_sha256": "77c950cb2a7f72d16e9f2dde830c28609b2c2bc835d2c3306ecc3b4dd661dae1",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "7.1.1–7.1.12; 7.2; 7.3 and rationale",
+        "source_version": "2022 recommendations; current rationale mentions January 2025 valproate update",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "NICE",
+        "upstream_evidence": [
+          "Epilepsy Society explicitly cites this NICE guideline; not independent of NICE for repeated quoted recommendations."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-status-epilepticus-red_flags-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "疑似持续状态应立即寻求急救，不要等到发作自行结束。",
+          "en": "Seek emergency help for suspected status rather than waiting for it to stop."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-foundation-status",
+            "locator": "Convulsive and Nonconvulsive emergency care",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Overview; complications; Prevention; Living With; when to call provider",
+            "assessment": "Located clinical text supports this claim; substituted accessible independent author evidence."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-red_flags-2",
+        "kind": "threshold",
+        "text": {
+          "zh-CN": "抽搐达到5分钟，或反复发作间未恢复，立即呼叫当地急救；已有个人计划的更早行动要求也要遵守。",
+          "en": "Call local emergency services at five minutes of convulsions or repeated seizures without recovery; follow any earlier action in an existing personal plan."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-nice-status",
+            "locator": "7.1.1–7.1.2",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-foundation-status",
+            "locator": "Convulsive; Rescue Therapies",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-red_flags-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "抽搐停了仍不能正常醒来，或呼吸困难，也要急救；不要把没有抽动当作安全。",
+          "en": "Persistent difficulty waking or breathing after shaking stops also needs emergency help; absence of jerking does not establish safety."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-cdc-seizure-first-aid",
+            "locator": "When to call for help",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "batch-b-seizure-first-aid",
+            "locator": "When to call an ambulance",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_neurology",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent reviewer."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authorship groups recorded per support; mirrors and institutional pages are not counted twice.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidelines inform professional care; public text omits individual doses and applies local emergency services."
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p0-03-status-epilepticus-care",
+    "target": {
+      "kind": "condition",
+      "id": "status-epilepticus",
+      "section": "care"
+    },
+    "content_sha256": "7e5214dcb7b6a56e4c598e5014e03689360b141ad46ee9ef60b4f90307da5228",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "batch-b-seizure-first-aid",
+        "source_metadata_sha256": "2fa7f71f4a29ba9d08ba9e21436763f9b81e2c218eb319c5feadaa18f403abc6",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "First aid; When to call; Information to note",
+        "source_version": "2023-12-19",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-cdc-seizure-first-aid",
+        "source_metadata_sha256": "b344b7b4c0097ce67691e5ee07bccdd23ef9c57a59c622aabbae97a876df26cb",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Keeping safe; When to call; What to avoid",
+        "source_version": "2024-05-15",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "CDC",
+        "upstream_evidence": [
+          "CDC links Epilepsy Foundation training; use NHS as independent first-aid counterpart."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-status-epilepticus-care-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "在等待帮助时保护患者并计时。",
+          "en": "Protect the person and time the event while help is coming."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-cdc-seizure-first-aid",
+            "locator": "Keeping safe",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "batch-b-seizure-first-aid",
+            "locator": "First aid",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-care-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "移开危险物、垫护头部，不按住肢体、不往口中塞东西；抽搐停止后侧卧并观察呼吸。",
+          "en": "Clear hazards, cushion the head, avoid restraint or objects in the mouth; after convulsions stop, position on the side and watch breathing."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-cdc-seizure-first-aid",
+            "locator": "Extra steps; What to avoid",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "batch-b-seizure-first-aid",
+            "locator": "First aid and ambulance criteria",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_neurology",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent reviewer."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authorship groups recorded per support; mirrors and institutional pages are not counted twice.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidelines inform professional care; public text omits individual doses and applies local emergency services."
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p0-03-status-epilepticus-diagnosis",
+    "target": {
+      "kind": "condition",
+      "id": "status-epilepticus",
+      "section": "diagnosis"
+    },
+    "content_sha256": "4c7a4dba4b32906d8eaa8b12c7e5200251640677ffb1d5b4bf1ae62bd17ae90a",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-cleveland-status",
+        "source_metadata_sha256": "a56b044930487566793c3d1d9048d71390dc240fd2063096c8c7c98299e869a1",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+        "source_version": "2023-02-13",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "US-Cleveland-Clinic",
+        "upstream_evidence": [
+          "Independently edited hospital patient education; cited neurology textbooks, Hantus 2016, Neligan 2019 and StatPearls; not an independent trial."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-dgn-status-2021",
+        "source_metadata_sha256": "6087b91a954fc48e59a5259ae736b1bdcf4876c115d5d54e24d7af02a506b222",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "English/German abstracts; definitions/Table 1; 3.1–3.4 diagnosis; recommendations stages 1–4; ethical considerations",
+        "source_version": "2021-03-22; accepted 2020-11-17",
+        "population": "Adults with status epilepticus; DGN/OGN adult consensus, not pediatric or obstetric protocol.",
+        "region": "DE-AT",
+        "independence_group": "DGN-OGN",
+        "upstream_evidence": [
+          "Separate DGN/ÖGN consensus; shares ILAE 2015, AES 2016, Salzburg EEG criteria, ESETT with UK guidance. Adult recommendations; regional drug approvals in 2021 not generalized."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-foundation-normal-eeg",
+        "source_metadata_sha256": "5f3e5a23e43325368a9f44e3445903af1fbc9c0ef0431a395726f36534c4f9a2",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "I have seizures but EEG normal; other diagnostic information",
+        "source_version": "2013-08-22",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "US-Epilepsy-Foundation",
+        "upstream_evidence": [
+          "Same Foundation authorship group; old general diagnostic explanation corroborated with NICE 2022; no old medication-withdrawal advice used."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-foundation-status",
+        "source_metadata_sha256": "e00760f033d72823cad0e4dd22f553f6ad9a5f88dfeab12a6a2bbe289aeb479c",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies",
+        "source_version": "2023-05-12 physician authored/reviewed",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "EPILEPSY-FOUNDATION",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-ics-status-2025",
+        "source_metadata_sha256": "ac82b398d6272bf5242836defac164f46965ddbe99f505974e322a0b5e9feba0",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+        "source_version": "2025-05-08",
+        "population": "Hospital patients over 16 years; obstetric population explicitly excluded. Applied only to adult neurological care.",
+        "region": "GB",
+        "independence_group": "UK-ICS",
+        "upstream_evidence": [
+          "Independent multispecialty consensus authors; expressly aligns with NICE, AES, EFNS and Neurocritical Care Society; shares ILAE definitions, ESETT and other trials. Do not count citation agreement as independent trials."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-ilae-rasmussen-eeg",
+        "locator": "Ictal EEG: EPC may lack scalp EEG change; syndrome-specific context",
+        "source_version": "2024-06-30 current syndrome page",
+        "population": "EPC and focal status; ILAE page is specifically Rasmussen syndrome, not every EPC cause.",
+        "region": "international",
+        "independence_group": "ILAE",
+        "upstream_evidence": [
+          "Merck2026 cites ILAE2025 seizure classification and ILAE2015 status definition. ILAE pages count as one group; distinct clinical authoring, not independent upstream nomenclature."
+        ],
+        "accessed_at": "2026-10-03",
+        "source_metadata_sha256": "746c22354b2c338dbfac75e13ea52a59d864db432ec3e849890d547a07d5e896",
+        "relation": "supports",
+        "assessment": "Scoped author proposition pending independent review."
+      },
+      {
+        "source_id": "neuro-merck-seizures",
+        "locator": "Focal seizures/EPC; Status epilepticus; Diagnosis/EEG; Treatment",
+        "source_version": "2026-03; Bola Adamolekun, reviewed Michael Levin",
+        "population": "EPC and focal status; ILAE page is specifically Rasmussen syndrome, not every EPC cause.",
+        "region": "US",
+        "independence_group": "MERCK",
+        "upstream_evidence": [
+          "Merck2026 cites ILAE2025 seizure classification and ILAE2015 status definition. ILAE pages count as one group; distinct clinical authoring, not independent upstream nomenclature."
+        ],
+        "accessed_at": "2026-10-03",
+        "source_metadata_sha256": "75ad108aef9a4708e1836bfe4c222e7c85f1c190fafb468908d215e16fcfdd65",
+        "relation": "supports",
+        "assessment": "Scoped author proposition pending independent review."
+      },
+      {
+        "source_id": "neuro-nice-epilepsy-diagnosis",
+        "source_metadata_sha256": "4dd152395468d816cf38c0358911f3832a5ac242261b85d07805a6a789d159f6",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "1.2.1–1.2.10 and rationale",
+        "source_version": "Recommendations 2022; current online chapter",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "Same NICE group as NG217 status; not counted twice. First suspected seizure/epilepsy assessment supports test explanations, not waiting times during status."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-status-epilepticus-diagnosis-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "诊断同时看发作经过和脑内电活动。",
+          "en": "Diagnosis uses the event history and brain electrical activity."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-foundation-status",
+            "locator": "Nonconvulsive; Treatment",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+            "assessment": "Accessible independently authored clinical source supports the claim in context; replaces inaccessible reviewer copy of Hopkins."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-diagnosis-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "经过与查体：医生会询问开始时间、抽动或发呆表现、发作间有没有恢复，以及原有疾病和用药。目击者的记录很有帮助，但不能单靠视频确诊。",
+          "en": "History and examination: clinicians ask about timing, movements or staring, recovery between events, illnesses and medicines. Witness records help, but video alone does not establish the diagnosis."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-nice-epilepsy-diagnosis",
+            "locator": "1.2.1 and rationale: witness accounts not independently diagnostic",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-foundation-normal-eeg",
+            "locator": "What other information is used to diagnose seizures?",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-diagnosis-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "脑电图（EEG）用头皮电极记录脑电活动，帮助区分失神、局灶发作及非惊厥持续状态；没有明显抽动时尤其重要。",
+          "en": "EEG records brain electrical activity through scalp electrodes and helps distinguish absence, focal seizures and nonconvulsive status, especially when obvious jerking is absent."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+            "assessment": "Accessible independently authored clinical source supports the claim in context; replaces inaccessible reviewer copy of Hopkins."
+          },
+          {
+            "source_id": "neuro-foundation-status",
+            "locator": "Nonconvulsive status requires EEG confirmation",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-diagnosis-4",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "检查局限：发作间期的一次常规脑电图正常，不能排除曾经发生癫痫发作。疑似持续状态且仍未清醒时，可能需要更长或重复记录，以免漏掉不明显的电发作。",
+          "en": "Test limitations: a normal routine EEG between events does not exclude an earlier seizure. Suspected status with persistent impaired awareness may require longer or repeated recording to detect subtle electrical seizures."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-foundation-normal-eeg",
+            "locator": "Normal EEG reflects only test period",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-dgn-status-2021",
+            "locator": "3.2 EEG diagnosis: recording duration, repeated recordings",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-diagnosis-5",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "血液检查：血糖和电解质检查寻找可纠正的诱因；其他化验根据情况查看感染、肝肾功能和药物水平，同时帮助监测治疗安全。",
+          "en": "Blood tests: glucose and electrolytes identify correctable triggers. Other tests, selected for the situation, assess infection, liver and kidney function and medicine levels, and help monitor treatment safety."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-dgn-status-2021",
+            "locator": "3.3 Laboratory diagnosis",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-ics-status-2025",
+            "locator": "Other general investigations; medication levels",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-diagnosis-6",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "影像与脑脊液：CT或MRI寻找出血、卒中或其他结构性病变；怀疑脑部感染时，医生评估安全性后可能做腰椎穿刺。影像检查与记录电活动的脑电图用途不同。",
+          "en": "Imaging and spinal fluid: CT or MRI looks for bleeding, stroke or other structural disease; suspected brain infection may require a lumbar puncture after a safety assessment. Imaging serves a different purpose from electrical recording by EEG."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-ics-status-2025",
+            "locator": "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+            "assessment": "Accessible independently authored clinical source supports the claim in context; replaces inaccessible reviewer copy of Hopkins."
+          },
+          {
+            "source_id": "neuro-dgn-status-2021",
+            "locator": "3.1 clinical diagnosis; 3.3 laboratory diagnosis; initial imaging recommendation",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-diagnosis-7",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "持续局部抽动时，脑电图记录仍要与症状和影像一起解释；头皮脑电图未显示异常不能单独排除局灶发作，Rasmussen 相关 EPC 就可能没有清晰的同步头皮脑电变化。",
+          "en": "During persistent local jerking, EEG still needs interpretation alongside symptoms and imaging. A scalp recording without an abnormality does not alone exclude focal seizures; Rasmussen-associated EPC may lack a clear accompanying scalp EEG change."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-ilae-rasmussen-eeg",
+            "locator": "Ictal EPC may not show scalp change",
+            "assessment": "Actually read source supports scoped proposition; pending review."
+          },
+          {
+            "source_id": "neuro-merck-seizures",
+            "locator": "Testing: normal results not exclude; EEG may initially not detect focal abnormalities",
+            "assessment": "Actually read source supports scoped proposition; pending review."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_neurology",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent reviewer."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authorship groups recorded per support; mirrors and institutional pages are not counted twice.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidelines inform professional care; public text omits individual doses and applies local emergency services."
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p0-03-status-epilepticus-differentials",
+    "target": {
+      "kind": "condition",
+      "id": "status-epilepticus",
+      "section": "differentials"
+    },
+    "content_sha256": "eec5bebd3b502ad95fcd905b11f92d53d75e06c2a4c5c15df89d2a798915a8bc",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-cleveland-status",
+        "source_metadata_sha256": "a56b044930487566793c3d1d9048d71390dc240fd2063096c8c7c98299e869a1",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+        "source_version": "2023-02-13",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "US-Cleveland-Clinic",
+        "upstream_evidence": [
+          "Independently edited hospital patient education; cited neurology textbooks, Hantus 2016, Neligan 2019 and StatPearls; not an independent trial."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-dgn-status-2021",
+        "source_metadata_sha256": "6087b91a954fc48e59a5259ae736b1bdcf4876c115d5d54e24d7af02a506b222",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "English/German abstracts; definitions/Table 1; 3.1–3.4 diagnosis; recommendations stages 1–4; ethical considerations",
+        "source_version": "2021-03-22; accepted 2020-11-17",
+        "population": "Adults with status epilepticus; DGN/OGN adult consensus, not pediatric or obstetric protocol.",
+        "region": "DE-AT",
+        "independence_group": "DGN-OGN",
+        "upstream_evidence": [
+          "Separate DGN/ÖGN consensus; shares ILAE 2015, AES 2016, Salzburg EEG criteria, ESETT with UK guidance. Adult recommendations; regional drug approvals in 2021 not generalized."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-foundation-imitators",
+        "source_metadata_sha256": "e345e43a477fb4277e8428a85302a70d9f2c35dcb8619c307f38e231efb9757b",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Overview table; Vasovagal syncope; Cardiac syncope",
+        "source_version": "2019-10-13; review 2021-07-22",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "US-Epilepsy-Foundation",
+        "upstream_evidence": [
+          "Same Epilepsy Foundation group as status page; independent of NICE and DGN."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-foundation-pnes",
+        "locator": "What Is PNES; How Is PNES Diagnosed",
+        "source_version": "Live page accessed2026-10-03",
+        "population": "Population described in located source; educational synthesis only.",
+        "region": "US",
+        "independence_group": "EPILEPSY-FOUNDATION",
+        "upstream_evidence": [
+          "Same Foundation group as other epilepsy.com pages; video EEG explanation independent of DGN/ICS authoring."
+        ],
+        "accessed_at": "2026-10-03",
+        "source_metadata_sha256": "f092e1258290816838cbe2fec883ce62053897213828507866ee17070b008aa5",
+        "relation": "supports",
+        "assessment": "Located author evidence pending independent review."
+      },
+      {
+        "source_id": "neuro-foundation-status",
+        "source_metadata_sha256": "e00760f033d72823cad0e4dd22f553f6ad9a5f88dfeab12a6a2bbe289aeb479c",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies",
+        "source_version": "2023-05-12 physician authored/reviewed",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "EPILEPSY-FOUNDATION",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-ics-status-2025",
+        "source_metadata_sha256": "ac82b398d6272bf5242836defac164f46965ddbe99f505974e322a0b5e9feba0",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+        "source_version": "2025-05-08",
+        "population": "Hospital patients over 16 years; obstetric population explicitly excluded. Applied only to adult neurological care.",
+        "region": "GB",
+        "independence_group": "UK-ICS",
+        "upstream_evidence": [
+          "Independent multispecialty consensus authors; expressly aligns with NICE, AES, EFNS and Neurocritical Care Society; shares ILAE definitions, ESETT and other trials. Do not count citation agreement as independent trials."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-nice-epilepsy-diagnosis",
+        "source_metadata_sha256": "4dd152395468d816cf38c0358911f3832a5ac242261b85d07805a6a789d159f6",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "1.2.1–1.2.10 and rationale",
+        "source_version": "Recommendations 2022; current online chapter",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "Same NICE group as NG217 status; not counted twice. First suspected seizure/epilepsy assessment supports test explanations, not waiting times during status."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-nice-status",
+        "source_metadata_sha256": "77c950cb2a7f72d16e9f2dde830c28609b2c2bc835d2c3306ecc3b4dd661dae1",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "7.1.1–7.1.12; 7.2; 7.3 and rationale",
+        "source_version": "2022 recommendations; current rationale mentions January 2025 valproate update",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "NICE",
+        "upstream_evidence": [
+          "Epilepsy Society explicitly cites this NICE guideline; not independent of NICE for repeated quoted recommendations."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-status-epilepticus-differentials-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "外观相似并不能证明都是持续发作。",
+          "en": "Similar appearances do not prove ongoing seizure activity."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-nice-status",
+            "locator": "7.1.6",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+            "assessment": "Accessible independently authored clinical source supports the claim in context; replaces inaccessible reviewer copy of Hopkins."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-differentials-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "发作后困倦与非惊厥型持续状态可能难以区分，需要医生评估，必要时脑电图。",
+          "en": "Post-seizure drowsiness can be difficult to distinguish from nonconvulsive status; clinical assessment and sometimes EEG are needed."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-foundation-status",
+            "locator": "Convulsive post-ictal discussion; Nonconvulsive",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+            "assessment": "Accessible independently authored clinical source supports the claim in context; replaces inaccessible reviewer copy of Hopkins."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-differentials-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "晕厥：心脏或血压问题造成的短暂意识丧失，有时也伴抽动。病史和心电图用于寻找心源性原因，不能看到抖动就认定是癫痫。",
+          "en": "Fainting: transient loss of consciousness from heart or blood-pressure problems may include jerking. History and an ECG help identify cardiac causes; shaking alone does not prove epilepsy."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-foundation-imitators",
+            "locator": "Vasovagal syncope; cardiac syncope",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-nice-epilepsy-diagnosis",
+            "locator": "1.2.2 ECG; rationale cardiac mimics",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-differentials-4",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "低血糖：既可能引起看起来像发作的异常表现，也可能真正诱发癫痫发作，所以需要测血糖。不能把病因与发作当成互斥选项。",
+          "en": "Low glucose can produce seizure-like events or actually provoke seizures, so glucose is checked. A cause and a seizure are not mutually exclusive explanations."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-foundation-imitators",
+            "locator": "Overview imitators table: hypoglycemia",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-nice-epilepsy-diagnosis",
+            "locator": "1.2.3 metabolic disturbance including hypoglycemia",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-differentials-5",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "非癫痫性发作：有些真实、非故意的发作外观相似，却不是由癫痫性脑电活动造成。需要专业评估，常结合发作时视频脑电图；家属不应凭外观贴标签。",
+          "en": "Nonepileptic events can be real and involuntary yet resemble seizures without epileptic electrical activity. Specialist assessment, often with video EEG during events, is needed; appearance alone is not a basis for labelling someone."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-ics-status-2025",
+            "locator": "NEAD definition; obsolete pseudoseizure label",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-dgn-status-2021",
+            "locator": "3.1 clinical differential; 3.2 EEG differentiates psychogenic attacks",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-foundation-pnes",
+            "locator": "What Is PNES; How Is PNES Diagnosed",
+            "assessment": "Supports non-epileptic appearance and video EEG; real/involuntary specifically supported by existing ICS and DGN."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_neurology",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent reviewer."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authorship groups recorded per support; mirrors and institutional pages are not counted twice.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidelines inform professional care; public text omits individual doses and applies local emergency services."
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p0-03-status-epilepticus-treatment",
+    "target": {
+      "kind": "condition",
+      "id": "status-epilepticus",
+      "section": "treatment"
+    },
+    "content_sha256": "38dc6e005064df625c83f8f681d80e69c9934e0def8444d488604b6d7b8729fc",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-dgn-status-2021",
+        "source_metadata_sha256": "6087b91a954fc48e59a5259ae736b1bdcf4876c115d5d54e24d7af02a506b222",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "English/German abstracts; definitions/Table 1; 3.1–3.4 diagnosis; recommendations stages 1–4; ethical considerations",
+        "source_version": "2021-03-22; accepted 2020-11-17",
+        "population": "Adults with status epilepticus; DGN/OGN adult consensus, not pediatric or obstetric protocol.",
+        "region": "DE-AT",
+        "independence_group": "DGN-OGN",
+        "upstream_evidence": [
+          "Separate DGN/ÖGN consensus; shares ILAE 2015, AES 2016, Salzburg EEG criteria, ESETT with UK guidance. Adult recommendations; regional drug approvals in 2021 not generalized."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-foundation-status",
+        "source_metadata_sha256": "e00760f033d72823cad0e4dd22f553f6ad9a5f88dfeab12a6a2bbe289aeb479c",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies",
+        "source_version": "2023-05-12 physician authored/reviewed",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "EPILEPSY-FOUNDATION",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-ics-status-2025",
+        "source_metadata_sha256": "ac82b398d6272bf5242836defac164f46965ddbe99f505974e322a0b5e9feba0",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+        "source_version": "2025-05-08",
+        "population": "Hospital patients over 16 years; obstetric population explicitly excluded. Applied only to adult neurological care.",
+        "region": "GB",
+        "independence_group": "UK-ICS",
+        "upstream_evidence": [
+          "Independent multispecialty consensus authors; expressly aligns with NICE, AES, EFNS and Neurocritical Care Society; shares ILAE definitions, ESETT and other trials. Do not count citation agreement as independent trials."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-merck-seizures",
+        "locator": "Focal seizures/EPC; Status epilepticus; Diagnosis/EEG; Treatment",
+        "source_version": "2026-03; Bola Adamolekun, reviewed Michael Levin",
+        "population": "EPC and focal status; ILAE page is specifically Rasmussen syndrome, not every EPC cause.",
+        "region": "US",
+        "independence_group": "MERCK",
+        "upstream_evidence": [
+          "Merck2026 cites ILAE2025 seizure classification and ILAE2015 status definition. ILAE pages count as one group; distinct clinical authoring, not independent upstream nomenclature."
+        ],
+        "accessed_at": "2026-10-03",
+        "source_metadata_sha256": "75ad108aef9a4708e1836bfe4c222e7c85f1c190fafb468908d215e16fcfdd65",
+        "relation": "supports",
+        "assessment": "Scoped author proposition pending independent review."
+      },
+      {
+        "source_id": "neuro-nice-status",
+        "source_metadata_sha256": "77c950cb2a7f72d16e9f2dde830c28609b2c2bc835d2c3306ecc3b4dd661dae1",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "7.1.1–7.1.12; 7.2; 7.3 and rationale",
+        "source_version": "2022 recommendations; current rationale mentions January 2025 valproate update",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "NICE",
+        "upstream_evidence": [
+          "Epilepsy Society explicitly cites this NICE guideline; not independent of NICE for repeated quoted recommendations."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-status-epilepticus-treatment-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "医院一边终止发作，一边支持呼吸和治疗病因。",
+          "en": "Hospital care stops seizures while supporting breathing and treating the cause."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-ics-status-2025",
+            "locator": "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+            "assessment": "Accessible independently authored clinical source supports the claim in context; replaces inaccessible reviewer copy of Hopkins."
+          },
+          {
+            "source_id": "neuro-foundation-status",
+            "locator": "Treatment",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-treatment-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "惊厥型通常先用快速急救药；持续不止时升级静脉用药，难治时可能需麻醉及重症监护。",
+          "en": "Convulsive status usually starts with rapid rescue treatment, escalating to intravenous drugs and sometimes anaesthesia and intensive care if resistant."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-nice-status",
+            "locator": "7.1.3; 7.1.9–7.1.11",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-foundation-status",
+            "locator": "Treatment",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-treatment-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "非惊厥型的升级看意识状态：抽搐后持续昏迷等重症，需积极治疗和脑电监测；仅有混乱或行为改变的部分患者，不一定需要麻醉昏迷，但仍需尽早由神经科处理。",
+          "en": "Escalation in nonconvulsive status depends on consciousness: coma after convulsions requires active treatment and EEG monitoring. Some patients with confusion or behavioural change do not require anaesthetic coma, but still need early neurological treatment."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-ics-status-2025",
+            "locator": "Definitions NCSE; continuous EEG",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-dgn-status-2021",
+            "locator": "3.1 coma predictor; focal nonconvulsive refractory status anaesthesia not mandatory",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-treatment-4",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "失神与局灶型不能仅凭“没有抽搐”合并处理：脑电图和病因帮助分型，医生据此选择药物；发作是否停止也可能要靠脑电图核实。",
+          "en": "Absence and focal forms cannot be treated as identical simply because neither convulses. EEG and the cause guide classification and medicine choice, and EEG may be needed to verify seizure control."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-foundation-status",
+            "locator": "Nonconvulsive status: absence and focal impaired awareness; EEG",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-dgn-status-2021",
+            "locator": "3.2 EEG diagnosis and monitoring; stage 2 subtype-specific recommendations",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-treatment-5",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "难治病例的麻醉会压制发作，但同时需要呼吸和重症监护支持；团队会持续权衡发作损害与深镇静风险，并继续治疗原发病。",
+          "en": "Anaesthesia can suppress resistant seizures but requires respiratory and intensive-care support. Teams balance ongoing seizure injury against deep-sedation risks while treating the underlying disease."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-ics-status-2025",
+            "locator": "Critical care admission; cEEG specialist management and harm from prolonged sedation",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-dgn-status-2021",
+            "locator": "Stages 3–4; ethical considerations",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-treatment-6",
+        "kind": "action",
+        "text": {
+          "zh-CN": "持续局灶发作的处理不仅是止住抽动，还包括寻找可治疗的脑病变或代谢、炎症病因，并选择合适的抗发作药。局灶发作是否需要麻醉与重症治疗，要结合意识、全身状态及反应决定，不能一律套用昏迷型持续状态的升级方案。",
+          "en": "Managing persistent focal seizures includes identifying treatable structural, metabolic or inflammatory causes as well as choosing antiseizure medicines. Whether anesthesia and intensive care are needed depends on consciousness, systemic condition and response; the escalation pathway for comatose status does not apply automatically."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-merck-seizures",
+            "locator": "Etiology, testing and treatment: eliminate cause; antiseizure choice",
+            "assessment": "Actually read source supports scoped proposition; pending review."
+          },
+          {
+            "source_id": "neuro-dgn-status-2021",
+            "locator": "Refractory focal nonconvulsive SE: therapeutic coma not mandatory; etiology-directed management",
+            "assessment": "Actually read source supports scoped proposition; pending review."
+          },
+          {
+            "source_id": "neuro-ics-status-2025",
+            "locator": "Focal/NCSE risk dependent on consciousness; underlying cause",
+            "assessment": "Actually read source supports scoped proposition; pending review."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_neurology",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent reviewer."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authorship groups recorded per support; mirrors and institutional pages are not counted twice.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidelines inform professional care; public text omits individual doses and applies local emergency services."
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p0-03-status-epilepticus-medications",
+    "target": {
+      "kind": "condition",
+      "id": "status-epilepticus",
+      "section": "medications"
+    },
+    "content_sha256": "4aa83033c45340189a7ba1e09a85615f759c7d63afbb2878a72144146113b736",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "batch-b-seizure-first-aid",
+        "source_metadata_sha256": "2fa7f71f4a29ba9d08ba9e21436763f9b81e2c218eb319c5feadaa18f403abc6",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "First aid; When to call; Information to note",
+        "source_version": "2023-12-19",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "epilepsy-nhs",
+        "source_metadata_sha256": "19bcaa600d25e00fbc62a583d0523b8673b7e398f075dbf0e33acbba629d6631",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Diagnosis; treatment; self-care; pregnancy; risks",
+        "source_version": "2025-03-06",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-dgn-status-2021",
+        "source_metadata_sha256": "6087b91a954fc48e59a5259ae736b1bdcf4876c115d5d54e24d7af02a506b222",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "English/German abstracts; definitions/Table 1; 3.1–3.4 diagnosis; recommendations stages 1–4; ethical considerations",
+        "source_version": "2021-03-22; accepted 2020-11-17",
+        "population": "Adults with status epilepticus; DGN/OGN adult consensus, not pediatric or obstetric protocol.",
+        "region": "DE-AT",
+        "independence_group": "DGN-OGN",
+        "upstream_evidence": [
+          "Separate DGN/ÖGN consensus; shares ILAE 2015, AES 2016, Salzburg EEG criteria, ESETT with UK guidance. Adult recommendations; regional drug approvals in 2021 not generalized."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-ics-status-2025",
+        "source_metadata_sha256": "ac82b398d6272bf5242836defac164f46965ddbe99f505974e322a0b5e9feba0",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+        "source_version": "2025-05-08",
+        "population": "Hospital patients over 16 years; obstetric population explicitly excluded. Applied only to adult neurological care.",
+        "region": "GB",
+        "independence_group": "UK-ICS",
+        "upstream_evidence": [
+          "Independent multispecialty consensus authors; expressly aligns with NICE, AES, EFNS and Neurocritical Care Society; shares ILAE definitions, ESETT and other trials. Do not count citation agreement as independent trials."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-nice-status",
+        "source_metadata_sha256": "77c950cb2a7f72d16e9f2dde830c28609b2c2bc835d2c3306ecc3b4dd661dae1",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "7.1.1–7.1.12; 7.2; 7.3 and rationale",
+        "source_version": "2022 recommendations; current rationale mentions January 2025 valproate update",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "NICE",
+        "upstream_evidence": [
+          "Epilepsy Society explicitly cites this NICE guideline; not independent of NICE for repeated quoted recommendations."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-society-emergency",
+        "source_metadata_sha256": "1cfbe155cae81d09792daa6b61ea5a60bcb2bc1223937d7a6d3a947ff13feb03",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Non-convulsive status; emergency medications; protocols; training",
+        "source_version": "Header updated 2026-09-07; body says September2025, review September2027",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "EPILEPSY-SOCIETY",
+        "upstream_evidence": [
+          "Explicit NICE2022 upstream for treatment; separate patient explanation but not second independent evidence for the same NICE recommendation."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-status-epilepticus-medications-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "急救药与每天预防发作的药物用途不同。",
+          "en": "Rescue medicines and daily preventive medicines have different roles."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-society-emergency",
+            "locator": "What is emergency medication",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "epilepsy-nhs",
+            "locator": "Medicines for epilepsy",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-medications-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "家属只按已开具的个人计划和培训给急救药，不能临时借药或自行重复给药。",
+          "en": "Carers should give prescribed rescue treatment only according to the personal plan and training, not improvise borrowed or repeated doses."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-society-emergency",
+            "locator": "Protocols; Training",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "batch-b-seizure-first-aid",
+            "locator": "Care plan",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-medications-3",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "苯二氮䓬类急救药可引起镇静并影响呼吸，给药后仍需观察恢复情况。",
+          "en": "Benzodiazepine rescue medicines can sedate and affect breathing; recovery still needs observation afterward."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-society-emergency",
+            "locator": "Emergency medication respiratory effects",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-nice-status",
+            "locator": "7.1 rationale respiratory depression and sedation",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-medications-4",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "快速急救药常属于苯二氮䓬类，如咪达唑仑、地西泮或劳拉西泮。给药途径取决于处方、现场条件和人员培训，并不是都靠口服吞药。",
+          "en": "Rapid rescue medicines commonly are benzodiazepines such as midazolam, diazepam or lorazepam. The route depends on prescription, setting and training; treatment does not always mean swallowing a tablet."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-nice-status",
+            "locator": "7.1.3",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-dgn-status-2021",
+            "locator": "Stage 1 benzodiazepines",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-medications-5",
+        "kind": "action",
+        "text": {
+          "zh-CN": "惊厥仍持续时，医院可用静脉抗发作药，如左乙拉西坦、苯妥英类或丙戊酸；选择要考虑禁忌、其他用药及生育相关风险，不能按药名自行购买试用。",
+          "en": "If convulsions continue, hospital intravenous options include levetiracetam, phenytoin-type medicines or valproate. Choice accounts for contraindications, other medicines and reproductive risks; these names are not a self-treatment list."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-nice-status",
+            "locator": "7.1.9; valproate MHRA warning",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-dgn-status-2021",
+            "locator": "Stage 2; drug interactions and valproate restrictions",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-medications-6",
+        "kind": "action",
+        "text": {
+          "zh-CN": "急救药不能替代原来的维持治疗。住院及出院时由团队核对每天服用的药和急救计划，不能因为停止抽搐就自行停药。",
+          "en": "Rescue treatment does not replace maintenance therapy. The team reconciles daily medicines and the rescue plan during admission and discharge; stopping convulsions is not a reason to stop treatment yourself."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-ics-status-2025",
+            "locator": "General recommendations 3; Further management; treatment failure",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-society-emergency",
+            "locator": "Rescue medicines versus regular ASM; protocols",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_neurology",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent reviewer."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authorship groups recorded per support; mirrors and institutional pages are not counted twice.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidelines inform professional care; public text omits individual doses and applies local emergency services."
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p0-03-status-epilepticus-diet",
+    "target": {
+      "kind": "condition",
+      "id": "status-epilepticus",
+      "section": "diet"
+    },
+    "content_sha256": "c2c875c272535b13e8a80b8cb2342ce201847b215daff12e11a6bfc9225cef22",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "batch-b-seizure-first-aid",
+        "source_metadata_sha256": "2fa7f71f4a29ba9d08ba9e21436763f9b81e2c218eb319c5feadaa18f403abc6",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "First aid; When to call; Information to note",
+        "source_version": "2023-12-19",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-cdc-seizure-first-aid",
+        "source_metadata_sha256": "b344b7b4c0097ce67691e5ee07bccdd23ef9c57a59c622aabbae97a876df26cb",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Keeping safe; When to call; What to avoid",
+        "source_version": "2024-05-15",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "CDC",
+        "upstream_evidence": [
+          "CDC links Epilepsy Foundation training; use NHS as independent first-aid counterpart."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-status-epilepticus-diet-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "发作中及尚未完全清醒时，不喂食或饮水。",
+          "en": "Do not give food or drink during a seizure or before full alertness returns."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-cdc-seizure-first-aid",
+            "locator": "What to avoid",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "batch-b-seizure-first-aid",
+            "locator": "First aid",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-diet-2",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "此时吞咽不安全，吃喝可能呛入气道；饮食不能代替急救流程。",
+          "en": "Swallowing is unsafe then and food or fluid may cause choking; feeding is not a substitute for emergency care."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-cdc-seizure-first-aid",
+            "locator": "What to avoid; When to call",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "batch-b-seizure-first-aid",
+            "locator": "First aid; When to call",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_neurology",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent reviewer."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authorship groups recorded per support; mirrors and institutional pages are not counted twice.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidelines inform professional care; public text omits individual doses and applies local emergency services."
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p0-03-status-epilepticus-daily_care",
+    "target": {
+      "kind": "condition",
+      "id": "status-epilepticus",
+      "section": "daily_care"
+    },
+    "content_sha256": "489563da8a62706ab93b1de846964aa4c7f570c8762c7ae0ec044b4747867b6f",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "batch-b-seizure-first-aid",
+        "source_metadata_sha256": "2fa7f71f4a29ba9d08ba9e21436763f9b81e2c218eb319c5feadaa18f403abc6",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "First aid; When to call; Information to note",
+        "source_version": "2023-12-19",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "epilepsy-nhs",
+        "source_metadata_sha256": "19bcaa600d25e00fbc62a583d0523b8673b7e398f075dbf0e33acbba629d6631",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Diagnosis; treatment; self-care; pregnancy; risks",
+        "source_version": "2025-03-06",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-action-memory",
+        "source_metadata_sha256": "0fefcbe2975ec0fc824ec7a2d8b1fa56ab4a0ac9ab91e654d8f92327e951bfea",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Cognitive problems; seizure/medicine effects; What should I do; Managing memory problems",
+        "source_version": "Live page accessed 2026-10-03; exact review date not established",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-Epilepsy-Action",
+        "upstream_evidence": [
+          "Independently authored Epilepsy Action patient information; not the Epilepsy Society; shared neuroscience evidence possible. No SE-specific effect estimate inferred."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-society-emergency",
+        "source_metadata_sha256": "1cfbe155cae81d09792daa6b61ea5a60bcb2bc1223937d7a6d3a947ff13feb03",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Non-convulsive status; emergency medications; protocols; training",
+        "source_version": "Header updated 2026-09-07; body says September2025, review September2027",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "EPILEPSY-SOCIETY",
+        "upstream_evidence": [
+          "Explicit NICE2022 upstream for treatment; separate patient explanation but not second independent evidence for the same NICE recommendation."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-society-memory",
+        "source_metadata_sha256": "67eff472f10d7f9d0d088938c3738bd32e83664563613232dd3324329ad3809b",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "How epilepsy affects memory; After a seizure; medication; memory aids",
+        "source_version": "October 2024 information; live page accessed 2026-10-03",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-Epilepsy-Society",
+        "upstream_evidence": [
+          "Separate UK charity clinical review; same group as emergency-medication page. Applies to people with epilepsy, not an SE-specific outcome cohort."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-status-epilepticus-daily_care-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "照护者应熟悉个人发作表现和书面应对计划。",
+          "en": "Carers should know the usual seizure pattern and written response plan."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-society-emergency",
+            "locator": "Protocols",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "epilepsy-nhs",
+            "locator": "Care plan",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-daily_care-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "记录发作起止、是否恢复及已用急救药，把信息交给接诊团队。",
+          "en": "Record timing, recovery and rescue treatment already given, and pass this information to the treating team."
+        },
+        "supports": [
+          {
+            "source_id": "batch-b-seizure-first-aid",
+            "locator": "Information to note",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-society-emergency",
+            "locator": "Protocol contents and monitoring",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-daily_care-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "计划要写清平时的发作样子、何时求助、谁受过培训及已处方急救药如何使用；让经常陪伴者能找到计划。",
+          "en": "The plan should describe usual events, when to seek help, who is trained and how prescribed rescue treatment is used. Regular carers need access to it."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-society-emergency",
+            "locator": "Emergency medication protocols",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "batch-b-seizure-first-aid",
+            "locator": "People with epilepsy; care plan",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-daily_care-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "若本来患有癫痫并出现记忆困难，固定作息、日历和服药提醒可帮助执行照护；家属可协助记录而不是凭记忆重复给药。",
+          "en": "For someone with epilepsy and memory difficulties, routines, calendars and medicine reminders can support care; carers can help keep records rather than rely on memory when giving treatment."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-society-memory",
+            "locator": "Memory aids; drug wallets; alarms",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-action-memory",
+            "locator": "Managing memory problems; family support",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_neurology",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent reviewer."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authorship groups recorded per support; mirrors and institutional pages are not counted twice.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidelines inform professional care; public text omits individual doses and applies local emergency services."
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p0-03-status-epilepticus-special_populations",
+    "target": {
+      "kind": "condition",
+      "id": "status-epilepticus",
+      "section": "special_populations"
+    },
+    "content_sha256": "b2e7b31e438b06cce89f61534a7a4e63f54c5d57414b2870b3841c1bb7c12d52",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "batch-b-seizure-first-aid",
+        "source_metadata_sha256": "2fa7f71f4a29ba9d08ba9e21436763f9b81e2c218eb319c5feadaa18f403abc6",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "First aid; When to call; Information to note",
+        "source_version": "2023-12-19",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "epilepsy-nhs",
+        "source_metadata_sha256": "19bcaa600d25e00fbc62a583d0523b8673b7e398f075dbf0e33acbba629d6631",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Diagnosis; treatment; self-care; pregnancy; risks",
+        "source_version": "2025-03-06",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-cleveland-status",
+        "source_metadata_sha256": "a56b044930487566793c3d1d9048d71390dc240fd2063096c8c7c98299e869a1",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+        "source_version": "2023-02-13",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "US-Cleveland-Clinic",
+        "upstream_evidence": [
+          "Independently edited hospital patient education; cited neurology textbooks, Hantus 2016, Neligan 2019 and StatPearls; not an independent trial."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-mayo-status-age",
+        "locator": "Abstract and age-related causes paragraph",
+        "source_version": "2011-03-29",
+        "population": "Population described in located source; educational synthesis only.",
+        "region": "US",
+        "independence_group": "MAYO-MAURICIO-FREEMAN",
+        "upstream_evidence": [
+          "Independent review authors. Used solely stable age-related etiologies, not historical treatment regimens or numerical incidence."
+        ],
+        "accessed_at": "2026-10-03",
+        "source_metadata_sha256": "f36bfc19080552945e03ed0e8df8310c286089f2ddefc44e0719cdfcd0947700",
+        "relation": "supports",
+        "assessment": "Located author evidence pending independent review."
+      },
+      {
+        "source_id": "neuro-msd-eclampsia",
+        "locator": "Diagnosis differential; Treatment; Magnesium sulfate; Postpartum preeclampsia",
+        "source_version": "Reviewed2024-03; modified2025-11",
+        "population": "Population described in located source; educational synthesis only.",
+        "region": "US",
+        "independence_group": "MERCK-MSD",
+        "upstream_evidence": [
+          "Independent physician-authored synthesis cites ACOG2020; not RCOG adaptation of NICE. Shared magnesium trials possible."
+        ],
+        "accessed_at": "2026-10-03",
+        "source_metadata_sha256": "dc63c07aed3d1b3c6b2be95f6177d1f60ed322b060691c2dd0266c20b75ab76e",
+        "relation": "supports",
+        "assessment": "Located author evidence pending independent review."
+      },
+      {
+        "source_id": "neuro-nice-eclampsia",
+        "source_metadata_sha256": "67c66c239f1dfcecf4d44212aa37eec2c765d587cb7863c152dfedb8487fdfe4",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "1.8.1–1.8.5",
+        "source_version": "1.8 recommendations 2010 amended 2019; live chapter",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "NICE same group as NG217; eclampsia pathway refers Collaborative Eclampsia Trial."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-nice-status",
+        "source_metadata_sha256": "77c950cb2a7f72d16e9f2dde830c28609b2c2bc835d2c3306ecc3b4dd661dae1",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "7.1.1–7.1.12; 7.2; 7.3 and rationale",
+        "source_version": "2022 recommendations; current rationale mentions January 2025 valproate update",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "NICE",
+        "upstream_evidence": [
+          "Epilepsy Society explicitly cites this NICE guideline; not independent of NICE for repeated quoted recommendations."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-rcog-pregnancy",
+        "source_metadata_sha256": "273710b5bf8b4a7ea1b04e1afb10a93c8dcf9eb8462faf1646a6bc2b36c69730",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Key points; unplanned pregnancy; medicine risks; after birth",
+        "source_version": "Live patient information accessed 2026-10-03",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-RCOG",
+        "upstream_evidence": [
+          "RCOG independent specialty authoring, overlaps UK guideline evidence. No folate dose or outdated valproate regulatory wording reproduced."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-society-emergency",
+        "source_metadata_sha256": "1cfbe155cae81d09792daa6b61ea5a60bcb2bc1223937d7a6d3a947ff13feb03",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Non-convulsive status; emergency medications; protocols; training",
+        "source_version": "Header updated 2026-09-07; body says September2025, review September2027",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "EPILEPSY-SOCIETY",
+        "upstream_evidence": [
+          "Explicit NICE2022 upstream for treatment; separate patient explanation but not second independent evidence for the same NICE recommendation."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-status-epilepticus-special_populations-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "儿童和需要照护的成人也需要适合本人的计划。",
+          "en": "Children and adults needing care also require individualized plans."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-society-emergency",
+            "locator": "Protocols special considerations",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "epilepsy-nhs",
+            "locator": "Treatment age and individual conditions",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-special_populations-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "学校、家庭或照护机构须让受训人员知道何时给药和呼叫急救，不能套用别人的处方。",
+          "en": "Trained staff at school, home or care settings need clear medicine and emergency-call instructions; another person’s prescription must not be copied."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-society-emergency",
+            "locator": "Protocols; Training",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "batch-b-seizure-first-aid",
+            "locator": "Individual care plan",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-special_populations-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "儿童、成人都可能发生持续状态；年轻或已有癫痫病史不能排除急症。",
+          "en": "Status can affect children and adults; youth or known epilepsy does not rule out an emergency."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-nice-status",
+            "locator": "7.1.1",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+            "assessment": "Accessible independently authored clinical source supports the claim in context; replaces inaccessible reviewer copy of Hopkins."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-special_populations-4",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "儿童和老人需要特别关注，病因有所不同：儿童发热或感染、老人脑卒中等都需调查。年龄本身不能决定一次发作的严重程度。",
+          "en": "Children and older adults require particular attention, with different causes: fever or infection in children and stroke in older adults need investigation. Age alone does not establish the severity of an episode."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-mayo-status-age",
+            "locator": "Age-related causes paragraph",
+            "assessment": "Located clinical text supports this claim; substituted accessible independent author evidence."
+          },
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Who affected; specific age-related causes",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-special_populations-5",
+        "kind": "action",
+        "text": {
+          "zh-CN": "妊娠或产后发生发作，需紧急评估子痫等产科原因。子痫有硫酸镁等专门治疗路径，不能把已有癫痫或一般止抽药当作已经排除子痫。",
+          "en": "A seizure during pregnancy or after birth needs urgent assessment for obstetric causes including eclampsia. Eclampsia has a specific pathway including magnesium sulfate; known epilepsy or ordinary seizure medicines do not exclude it."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-nice-eclampsia",
+            "locator": "1.8.1–1.8.5",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-msd-eclampsia",
+            "locator": "Diagnosis differential; Treatment; Magnesium sulfate; Postpartum preeclampsia",
+            "assessment": "Independent MSD physician synthesis supports obstetric assessment and magnesium pathway."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-special_populations-6",
+        "kind": "action",
+        "text": {
+          "zh-CN": "已服抗发作药而准备妊娠或发现怀孕时，应尽快让专科复核母婴风险，尤其涉及丙戊酸；不要为担心胎儿而自行突然停药。",
+          "en": "If taking antiseizure medicines and planning or discovering pregnancy, arrange prompt specialist review of maternal and fetal risks, particularly with valproate. Do not abruptly stop treatment because of fetal concerns."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-rcog-pregnancy",
+            "locator": "Unplanned pregnancy; sodium valproate",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "epilepsy-nhs",
+            "locator": "Pregnancy and epilepsy",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_neurology",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent reviewer."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authorship groups recorded per support; mirrors and institutional pages are not counted twice.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidelines inform professional care; public text omits individual doses and applies local emergency services."
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p0-03-status-epilepticus-prognosis_followup",
+    "target": {
+      "kind": "condition",
+      "id": "status-epilepticus",
+      "section": "prognosis_followup"
+    },
+    "content_sha256": "bb88765cd257fad6ed9623434f228db4c1e98dc927ade0285a4bf9d2a5e9eee6",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-action-memory",
+        "source_metadata_sha256": "0fefcbe2975ec0fc824ec7a2d8b1fa56ab4a0ac9ab91e654d8f92327e951bfea",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Cognitive problems; seizure/medicine effects; What should I do; Managing memory problems",
+        "source_version": "Live page accessed 2026-10-03; exact review date not established",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-Epilepsy-Action",
+        "upstream_evidence": [
+          "Independently authored Epilepsy Action patient information; not the Epilepsy Society; shared neuroscience evidence possible. No SE-specific effect estimate inferred."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-cleveland-status",
+        "source_metadata_sha256": "a56b044930487566793c3d1d9048d71390dc240fd2063096c8c7c98299e869a1",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+        "source_version": "2023-02-13",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "US-Cleveland-Clinic",
+        "upstream_evidence": [
+          "Independently edited hospital patient education; cited neurology textbooks, Hantus 2016, Neligan 2019 and StatPearls; not an independent trial."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-foundation-status",
+        "source_metadata_sha256": "e00760f033d72823cad0e4dd22f553f6ad9a5f88dfeab12a6a2bbe289aeb479c",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies",
+        "source_version": "2023-05-12 physician authored/reviewed",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "EPILEPSY-FOUNDATION",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-ics-status-2025",
+        "source_metadata_sha256": "ac82b398d6272bf5242836defac164f46965ddbe99f505974e322a0b5e9feba0",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+        "source_version": "2025-05-08",
+        "population": "Hospital patients over 16 years; obstetric population explicitly excluded. Applied only to adult neurological care.",
+        "region": "GB",
+        "independence_group": "UK-ICS",
+        "upstream_evidence": [
+          "Independent multispecialty consensus authors; expressly aligns with NICE, AES, EFNS and Neurocritical Care Society; shares ILAE definitions, ESETT and other trials. Do not count citation agreement as independent trials."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-society-emergency",
+        "source_metadata_sha256": "1cfbe155cae81d09792daa6b61ea5a60bcb2bc1223937d7a6d3a947ff13feb03",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Non-convulsive status; emergency medications; protocols; training",
+        "source_version": "Header updated 2026-09-07; body says September2025, review September2027",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "EPILEPSY-SOCIETY",
+        "upstream_evidence": [
+          "Explicit NICE2022 upstream for treatment; separate patient explanation but not second independent evidence for the same NICE recommendation."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-society-memory",
+        "source_metadata_sha256": "67eff472f10d7f9d0d088938c3738bd32e83664563613232dd3324329ad3809b",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "How epilepsy affects memory; After a seizure; medication; memory aids",
+        "source_version": "October 2024 information; live page accessed 2026-10-03",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-Epilepsy-Society",
+        "upstream_evidence": [
+          "Separate UK charity clinical review; same group as emergency-medication page. Applies to people with epilepsy, not an SE-specific outcome cohort."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-status-epilepticus-prognosis_followup-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "恢复取决于病因及并发症，不能只看有没有停止抽搐。",
+          "en": "Recovery depends on cause and complications, not just whether jerking stopped."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-foundation-status",
+            "locator": "Convulsive prognosis; Treatment",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+            "assessment": "Accessible independently authored clinical source supports the claim in context; replaces inaccessible reviewer copy of Hopkins."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-prognosis_followup-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "出院后复核用药和急救计划；发作频率、时长或表现改变时提前联系团队。",
+          "en": "Review medicines and the rescue plan after discharge; contact the team earlier when frequency, duration or features change."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Overview; complications; Prevention; Living With; when to call provider",
+            "assessment": "Located clinical text supports this claim; substituted accessible independent author evidence."
+          },
+          {
+            "source_id": "neuro-society-emergency",
+            "locator": "Protocol review",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-prognosis_followup-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "恢复可能受原发脑病、发作持续时间和治疗影响，各人的速度不同；停止发作后仍需观察和制定后续用药方案。",
+          "en": "Recovery varies with underlying brain disease, seizure duration and treatment. Observation and an ongoing medicine plan remain necessary after seizures stop."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Recovery time",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-ics-status-2025",
+            "locator": "Further management of seizures",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-prognosis_followup-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "对有癫痫的人，持续记忆或注意力困难应带到复诊讨论，团队会考虑发作本身、药物、睡眠和情绪等因素；这不自动意味着永久脑损伤。",
+          "en": "For people with epilepsy, persistent memory or concentration problems should be discussed at follow-up. The team considers seizures, medicines, sleep and mood; such symptoms do not automatically establish permanent brain injury."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-society-memory",
+            "locator": "Memory and medication; mood/sleep; consult doctor",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-action-memory",
+            "locator": "Cognitive problems; What should I do",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_neurology",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent reviewer."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authorship groups recorded per support; mirrors and institutional pages are not counted twice.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidelines inform professional care; public text omits individual doses and applies local emergency services."
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p0-03-status-epilepticus-complications",
+    "target": {
+      "kind": "condition",
+      "id": "status-epilepticus",
+      "section": "complications"
+    },
+    "content_sha256": "e6cb659da5ab79471bb8838d2fa264d39b06cc39a7533c2dcda6243e1b4ab4ba",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-cleveland-status",
+        "source_metadata_sha256": "a56b044930487566793c3d1d9048d71390dc240fd2063096c8c7c98299e869a1",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+        "source_version": "2023-02-13",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "US-Cleveland-Clinic",
+        "upstream_evidence": [
+          "Independently edited hospital patient education; cited neurology textbooks, Hantus 2016, Neligan 2019 and StatPearls; not an independent trial."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-foundation-status",
+        "source_metadata_sha256": "e00760f033d72823cad0e4dd22f553f6ad9a5f88dfeab12a6a2bbe289aeb479c",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies",
+        "source_version": "2023-05-12 physician authored/reviewed",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "EPILEPSY-FOUNDATION",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-ics-status-2025",
+        "source_metadata_sha256": "ac82b398d6272bf5242836defac164f46965ddbe99f505974e322a0b5e9feba0",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Purpose/scope; Definitions; General recommendations; Critical care investigations; Continuous EEG; Common causes of failure",
+        "source_version": "2025-05-08",
+        "population": "Hospital patients over 16 years; obstetric population explicitly excluded. Applied only to adult neurological care.",
+        "region": "GB",
+        "independence_group": "UK-ICS",
+        "upstream_evidence": [
+          "Independent multispecialty consensus authors; expressly aligns with NICE, AES, EFNS and Neurocritical Care Society; shares ILAE definitions, ESETT and other trials. Do not count citation agreement as independent trials."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-status-epilepticus-complications-1",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "长时间惊厥型持续状态可造成脑损害并危及生命。",
+          "en": "Prolonged convulsive status can injure the brain and threaten life."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-foundation-status",
+            "locator": "What Is; Convulsive",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Overview; complications; Prevention; Living With; when to call provider",
+            "assessment": "Located clinical text supports this claim; substituted accessible independent author evidence."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-complications-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "非惊厥型并非只有失神一种，结局也受基础脑部病变影响；不能给所有类型同一个风险数字。",
+          "en": "Nonconvulsive status is not limited to absence status, and underlying brain illness affects outcome; one risk figure does not fit every form."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-foundation-status",
+            "locator": "Nonconvulsive; Treatment cause prognosis",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+            "assessment": "Accessible independently authored clinical source supports the claim in context; replaces inaccessible reviewer copy of Hopkins."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-complications-3",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "呼吸方面可能出现缺氧或胃内容物进入肺部的误吸，继而发生肺部感染；急救药的深镇静也可能影响呼吸，所以停止抽搐后仍要监测。",
+          "en": "Respiratory complications include low oxygen and aspiration of stomach contents, which can lead to lung infection. Deep sedation from rescue treatment can also impair breathing, so monitoring continues after jerking stops."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Effects on body: breathing/aspiration",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "neuro-ics-status-2025",
+            "locator": "Critical care admission respiratory depression; chest X-ray aspiration",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_neurology",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent reviewer."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authorship groups recorded per support; mirrors and institutional pages are not counted twice.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidelines inform professional care; public text omits individual doses and applies local emergency services."
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p0-03-status-epilepticus-prevention",
+    "target": {
+      "kind": "condition",
+      "id": "status-epilepticus",
+      "section": "prevention"
+    },
+    "content_sha256": "b001005e1cf046f5c5bf977dd21a917aa82205f5f925918ce4d800ef79541f87",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "epilepsy-nhs",
+        "source_metadata_sha256": "19bcaa600d25e00fbc62a583d0523b8673b7e398f075dbf0e33acbba629d6631",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Diagnosis; treatment; self-care; pregnancy; risks",
+        "source_version": "2025-03-06",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-cleveland-status",
+        "source_metadata_sha256": "a56b044930487566793c3d1d9048d71390dc240fd2063096c8c7c98299e869a1",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "Overview; Causes; Diagnosis; Treatment; Recovery; body effects",
+        "source_version": "2023-02-13",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "US-Cleveland-Clinic",
+        "upstream_evidence": [
+          "Independently edited hospital patient education; cited neurology textbooks, Hantus 2016, Neligan 2019 and StatPearls; not an independent trial."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-foundation-status",
+        "source_metadata_sha256": "e00760f033d72823cad0e4dd22f553f6ad9a5f88dfeab12a6a2bbe289aeb479c",
+        "relation": "supports",
+        "assessment": "Supports only the precisely located claims below; author assessment pending independent review.",
+        "locator": "What Is; Convulsive; Nonconvulsive; Treatment; Ways to Reduce; Rescue Therapies",
+        "source_version": "2023-05-12 physician authored/reviewed",
+        "population": "Population specified in cited recommendations; lay education, not individual prescribing.",
+        "region": "US",
+        "independence_group": "EPILEPSY-FOUNDATION",
+        "upstream_evidence": [
+          "Independently authored clinical synthesis; shared standard literature possible, underlying trials not asserted independent."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-status-epilepticus-prevention-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "坚持已制定的治疗，减少已知诱因并预先准备急救计划。",
+          "en": "Follow agreed treatment, address established triggers and prepare a rescue plan."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Overview; complications; Prevention; Living With; when to call provider",
+            "assessment": "Located clinical text supports this claim; substituted accessible independent author evidence."
+          },
+          {
+            "source_id": "neuro-foundation-status",
+            "locator": "Ways to Reduce; Rescue",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-prevention-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "不要自行停抗发作药；有副作用或漏药困难时联系医生调整方案。",
+          "en": "Do not stop antiseizure medicines on your own; discuss adverse effects or difficulty taking them with the clinician."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-cleveland-status",
+            "locator": "Overview; complications; Prevention; Living With; when to call provider",
+            "assessment": "Located clinical text supports this claim; substituted accessible independent author evidence."
+          },
+          {
+            "source_id": "epilepsy-nhs",
+            "locator": "Medicines; do not change treatment",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-status-epilepticus-prevention-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "记录自己的诱因并保持服药安排；疲劳、睡眠不足或饮酒等是否相关应结合个人记录与团队讨论。急救计划也应在发作情况变化后复核。",
+          "en": "Record personal triggers and maintain the medicine schedule. Discuss whether tiredness, sleep loss or alcohol are relevant using the person’s history, and review the rescue plan when seizure patterns change."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-foundation-status",
+            "locator": "Can status be prevented?",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          },
+          {
+            "source_id": "epilepsy-nhs",
+            "locator": "Living with epilepsy; triggers and care plan",
+            "assessment": "Supports the stated bilingual proposition within the cited population and clinical context."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_neurology",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent reviewer."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authorship groups recorded per support; mirrors and institutional pages are not counted twice.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidelines inform professional care; public text omits individual doses and applies local emergency services."
+    },
+    "unresolved_questions": []
+  }
+]

@@ -1,0 +1,2747 @@
+[
+  {
+    "id": "p003-puerperal-sepsis-summary",
+    "target": {
+      "kind": "condition",
+      "id": "puerperal-sepsis",
+      "section": "summary"
+    },
+    "content_sha256": "05a7e8022cc05d2f71a63a50b219828b91e5a021bd77301cc76dbfcad7c4e040",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_immunology_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-puerperal-nice",
+        "source_metadata_sha256": "94c9f94316a734cc8846859fbfae264d90c99af39e3d181805166a86805c2292",
+        "locator": "1.1/1.4 | 1.3/1.7",
+        "source_version": "Published2025-11-19 amended2026-01; actual official PDF via urllib+pdftotext pp6-34, 1.1-1.16: recognition, pregnancy risks, assessment, triage, sampling, fluids, source control, family information/discharge. HTML403; PDFread succeeded. SSC evidence overlap with SMFM disclosed.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-smfm",
+        "source_metadata_sha256": "b8ce4e22c478d36044f3ea6fb9ebe0eca1da990cab74d24d93016258a48544f5",
+        "locator": "p2-3 definition | p2-3/Table4",
+        "source_version": "September2023 reaffirmed2025; official PDF actual pdftotext p1-9 core definitions/risk/diagnosis/mimics/antibiotics/source control and p11-14 organ support/outcomes/follow-up. ACOG endorsement is not independent authorship; largely SSC2021/nonpregnant trials with maternal evidence where available.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-SMFM",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-who-peripartum",
+        "source_metadata_sha256": "0b8a3deb7acfa8286daafc7a49d9f166980f223c2480c2373a7fd087254a1247",
+        "locator": "Recommendation20",
+        "source_version": "2015; actual WHO original chapter3 general principles and recommendation20 postpartum endometritis, remarks/evidence. NCBI hosts WHO original, not NIH independent guidance. Prevention updates2021 not replaced by old rules; no old operative prophylaxis doses used.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "MSF references WHO guidance; WHO original remains WHO even when NCBI hosted. No separate trial replication implied."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "summary-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "它不是单纯“发烧”或感染名称：感染反应失控可损伤肺、肾、循环或意识功能，即使没有高热也可能发生。",
+          "en": "It is more than fever or the name of an infection: a dysregulated response can impair lungs, kidneys, circulation or mental status, even without a high fever."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p2-3 definition",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.1/1.4",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      },
+      {
+        "id": "summary-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "产后子宫内膜炎、伤口或尿路感染可成为感染源，但局部感染不自动等于脓毒症；需要同时判断全身和器官状态。",
+          "en": "Postpartum endometritis, wound or urinary infection may be a source, but a local infection does not automatically establish sepsis; systemic and organ function must also be assessed."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p2-3/Table4",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-who-peripartum",
+            "locator": "Recommendation20",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.3/1.7",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "SMFM/NICE/WHO/MSF独立编写，但共享SSC及WHO上游；CDC与NHS恢复科普跨机构。MSF两页同组，WHO托管页面不计NIH第二源。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "SMFM modern maternal sepsis and WHO2015 peripartum infection scopes are kept distinct. Local antimicrobial/fluid protocols vary; no universal regimen or dose. MSF48h fever diagnostic wording is not a delay instruction; emergency deterioration acts immediately."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_immunology_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "p003-puerperal-cdc-lactation",
+        "p003-puerperal-msf",
+        "p003-puerperal-msf-care",
+        "p003-puerperal-nhs-hysterectomy",
+        "p003-puerperal-nhs-lactation",
+        "p003-puerperal-nice",
+        "p003-puerperal-nutrition",
+        "p003-puerperal-smfm",
+        "p003-puerperal-who-peripartum",
+        "sepsis-cdc",
+        "sepsis-cdc-recovery",
+        "sepsis-nhs",
+        "sepsis-nhs-antibiotics-effects",
+        "sepsis-who"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "PUER-medication-risk-pair",
+          "status": "resolved",
+          "section": "medications",
+          "claim": "medications-2",
+          "finding": "CDC directly supports named gastrointestinal/rash/severe-allergy risks; WHO Guiding principles and NICE1.8 provide general prescribing/stewardship without all these specific adverse effects.",
+          "requested_change": "Add independent authoritative antibiotic adverse-effect source and actual locator, retaining current patient-safe wording.",
+          "resolution": "NHS antibiotic side-effects original15–43 independently read; stable GI/rash/severe-allergy corroboration of CDC; expired2025 review due date explicitly retained."
+        },
+        {
+          "id": "PUER-nutrition-route-pair",
+          "status": "resolved",
+          "section": "diet",
+          "claim": "diet-1",
+          "finding": "NICECG32 directly supports oral/tube/parenteral route selection; SMFMFigure2 supports early enteral nutrition only.",
+          "requested_change": "Narrow to individually assessed nutrition and conditional early enteral support, or add independent route-selection guidance.",
+          "resolution": "Revised bilingual text limits route discussion to suitability-assessed early enteral nutrition; SMFMFigure2 and NICECG32 support."
+        },
+        {
+          "id": "PUER-fertility-counselling-pair",
+          "status": "resolved",
+          "section": "prognosis_followup",
+          "claim": "prognosis-followup-2",
+          "finding": "SMFM PDF12/B13 supports fertility implications of pelvic infection/hysterectomy, but current other references only generic follow-up.",
+          "requested_change": "Add separately authored reproductive counselling source, or narrow to confirming procedure-specific follow-up.",
+          "resolution": "Revised bilingual claim specifically addresses hysterectomy and inability to carry a further pregnancy; originalNHS15/33–42 and maternalSMFM12–13 directly support. No elective treatment sequence imported."
+        },
+        {
+          "id": "PUER-key-kinds",
+          "status": "resolved",
+          "finding": "complications-1/2 include major harms but are explanation; medications-1 is a conditional clinical selection statement.",
+          "requested_change": "Use risk for complications1/2 and action for medications1; existing principal medical evidence can be retained.",
+          "resolution": "medications1 nowaction and complications1/2 nowrisk; substantive content unchanged."
+        }
+      ],
+      "resolution": "Accepted after one full independent review and one targeted four-finding recheck. Source reads and current artifact hashes bound; medical_reviewed remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-puerperal-sepsis-independent.json"
+  },
+  {
+    "id": "p003-puerperal-sepsis-causes-risks",
+    "target": {
+      "kind": "condition",
+      "id": "puerperal-sepsis",
+      "section": "causes_risks"
+    },
+    "content_sha256": "b389459f830eeac4fa36edb0a56c9476f338c6f2be8aa643eec7d6b89ee4564a",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_immunology_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-puerperal-msf",
+        "source_metadata_sha256": "98e7e33b6ca416bf3003a4ead9159346d4073e82c4a6811eba90790e857cb9a5",
+        "locator": "11.4.2 malaria note",
+        "source_version": "Actual official HTML 11.4.1-2 retained tissue, endometritis/salpingitis, pelvic abscess/peritonitis, instability source control;11.4.4 urine leakage. MSF cites WHO2017. Fever48h wording not used as waiting advice; septic/unstable person immediate care.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GLOBAL",
+        "independence_group": "MSF",
+        "upstream_evidence": [
+          "MSF references WHO guidance; WHO original remains WHO even when NCBI hosted. No separate trial replication implied."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-nice",
+        "source_metadata_sha256": "94c9f94316a734cc8846859fbfae264d90c99af39e3d181805166a86805c2292",
+        "locator": "1.2/1.11",
+        "source_version": "Published2025-11-19 amended2026-01; actual official PDF via urllib+pdftotext pp6-34, 1.1-1.16: recognition, pregnancy risks, assessment, triage, sampling, fluids, source control, family information/discharge. HTML403; PDFread succeeded. SSC evidence overlap with SMFM disclosed.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-smfm",
+        "source_metadata_sha256": "b8ce4e22c478d36044f3ea6fb9ebe0eca1da990cab74d24d93016258a48544f5",
+        "locator": "p2/Table4",
+        "source_version": "September2023 reaffirmed2025; official PDF actual pdftotext p1-9 core definitions/risk/diagnosis/mimics/antibiotics/source control and p11-14 organ support/outcomes/follow-up. ACOG endorsement is not independent authorship; largely SSC2021/nonpregnant trials with maternal evidence where available.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-SMFM",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "sepsis-cdc",
+        "source_metadata_sha256": "4f0df89b5186d66be1dbc56fd39abca05399e65460222690de1403203922c1eb",
+        "locator": "Causes",
+        "source_version": "Updated and reviewed by subject-matter experts 17 August 2026; diagnosis, treatment and antibiotic risks.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "Institutional patient education; supporting material is not counted as an independent original trial."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "sepsis-who",
+        "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d",
+        "locator": "Overview/Treatment",
+        "source_version": "Overview, risk, signs in adults and children, prevention and treatment.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "MSF references WHO guidance; WHO original remains WHO even when NCBI hosted. No separate trial replication implied."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "causes-risks-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "子宫或盆腔感染、感染的残留组织、手术伤口、泌尿或呼吸道感染都可能是起点。剖宫产、侵入性操作、长时间破水以及糖尿病或免疫功能受抑会影响风险。",
+          "en": "Uterine or pelvic infection, infected retained tissue, surgical wounds, urinary or respiratory infection may be the source. Caesarean birth, invasive procedures, prolonged membrane rupture, diabetes or immunosuppression affect risk."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p2/Table4",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.2/1.11",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      },
+      {
+        "id": "causes-risks-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "多数脓毒症由细菌引起，也可由病毒、真菌等引起；流行地区的寄生虫感染如疟疾也要按暴露史评估，不能所有人只走同一种抗生素路径。",
+          "en": "Most sepsis is bacterial, but viruses or fungi can also cause it; exposure in endemic areas may require assessment for parasitic infection such as malaria, rather than a single antibiotic pathway for everyone."
+        },
+        "supports": [
+          {
+            "source_id": "sepsis-who",
+            "locator": "Overview/Treatment",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "sepsis-cdc",
+            "locator": "Causes",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-msf",
+            "locator": "11.4.2 malaria note",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "SMFM/NICE/WHO/MSF独立编写，但共享SSC及WHO上游；CDC与NHS恢复科普跨机构。MSF两页同组，WHO托管页面不计NIH第二源。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "SMFM modern maternal sepsis and WHO2015 peripartum infection scopes are kept distinct. Local antimicrobial/fluid protocols vary; no universal regimen or dose. MSF48h fever diagnostic wording is not a delay instruction; emergency deterioration acts immediately."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_immunology_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "p003-puerperal-cdc-lactation",
+        "p003-puerperal-msf",
+        "p003-puerperal-msf-care",
+        "p003-puerperal-nhs-hysterectomy",
+        "p003-puerperal-nhs-lactation",
+        "p003-puerperal-nice",
+        "p003-puerperal-nutrition",
+        "p003-puerperal-smfm",
+        "p003-puerperal-who-peripartum",
+        "sepsis-cdc",
+        "sepsis-cdc-recovery",
+        "sepsis-nhs",
+        "sepsis-nhs-antibiotics-effects",
+        "sepsis-who"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "PUER-medication-risk-pair",
+          "status": "resolved",
+          "section": "medications",
+          "claim": "medications-2",
+          "finding": "CDC directly supports named gastrointestinal/rash/severe-allergy risks; WHO Guiding principles and NICE1.8 provide general prescribing/stewardship without all these specific adverse effects.",
+          "requested_change": "Add independent authoritative antibiotic adverse-effect source and actual locator, retaining current patient-safe wording.",
+          "resolution": "NHS antibiotic side-effects original15–43 independently read; stable GI/rash/severe-allergy corroboration of CDC; expired2025 review due date explicitly retained."
+        },
+        {
+          "id": "PUER-nutrition-route-pair",
+          "status": "resolved",
+          "section": "diet",
+          "claim": "diet-1",
+          "finding": "NICECG32 directly supports oral/tube/parenteral route selection; SMFMFigure2 supports early enteral nutrition only.",
+          "requested_change": "Narrow to individually assessed nutrition and conditional early enteral support, or add independent route-selection guidance.",
+          "resolution": "Revised bilingual text limits route discussion to suitability-assessed early enteral nutrition; SMFMFigure2 and NICECG32 support."
+        },
+        {
+          "id": "PUER-fertility-counselling-pair",
+          "status": "resolved",
+          "section": "prognosis_followup",
+          "claim": "prognosis-followup-2",
+          "finding": "SMFM PDF12/B13 supports fertility implications of pelvic infection/hysterectomy, but current other references only generic follow-up.",
+          "requested_change": "Add separately authored reproductive counselling source, or narrow to confirming procedure-specific follow-up.",
+          "resolution": "Revised bilingual claim specifically addresses hysterectomy and inability to carry a further pregnancy; originalNHS15/33–42 and maternalSMFM12–13 directly support. No elective treatment sequence imported."
+        },
+        {
+          "id": "PUER-key-kinds",
+          "status": "resolved",
+          "finding": "complications-1/2 include major harms but are explanation; medications-1 is a conditional clinical selection statement.",
+          "requested_change": "Use risk for complications1/2 and action for medications1; existing principal medical evidence can be retained.",
+          "resolution": "medications1 nowaction and complications1/2 nowrisk; substantive content unchanged."
+        }
+      ],
+      "resolution": "Accepted after one full independent review and one targeted four-finding recheck. Source reads and current artifact hashes bound; medical_reviewed remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-puerperal-sepsis-independent.json"
+  },
+  {
+    "id": "p003-puerperal-sepsis-red-flags",
+    "target": {
+      "kind": "condition",
+      "id": "puerperal-sepsis",
+      "section": "red_flags"
+    },
+    "content_sha256": "681292d4746177e1d8d3b58e749c5c2ed25a174b6521badbef041fcbd432b8f4",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_immunology_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-puerperal-msf",
+        "source_metadata_sha256": "98e7e33b6ca416bf3003a4ead9159346d4073e82c4a6811eba90790e857cb9a5",
+        "locator": "11.4.2",
+        "source_version": "Actual official HTML 11.4.1-2 retained tissue, endometritis/salpingitis, pelvic abscess/peritonitis, instability source control;11.4.4 urine leakage. MSF cites WHO2017. Fever48h wording not used as waiting advice; septic/unstable person immediate care.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GLOBAL",
+        "independence_group": "MSF",
+        "upstream_evidence": [
+          "MSF references WHO guidance; WHO original remains WHO even when NCBI hosted. No separate trial replication implied."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-nice",
+        "source_metadata_sha256": "94c9f94316a734cc8846859fbfae264d90c99af39e3d181805166a86805c2292",
+        "locator": "1.2/1.5/1.6 | 1.3/1.5/1.6",
+        "source_version": "Published2025-11-19 amended2026-01; actual official PDF via urllib+pdftotext pp6-34, 1.1-1.16: recognition, pregnancy risks, assessment, triage, sampling, fluids, source control, family information/discharge. HTML403; PDFread succeeded. SSC evidence overlap with SMFM disclosed.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "sepsis-who",
+        "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d",
+        "locator": "Signs",
+        "source_version": "Overview, risk, signs in adults and children, prevention and treatment.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "MSF references WHO guidance; WHO original remains WHO even when NCBI hosted. No separate trial replication implied."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "red-flags-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "新发意识混乱、呼吸困难、晕厥、皮肤灰白或花斑、尿量明显减少或迅速恶化，应立即呼叫当地急救，并说明近期分娩。",
+          "en": "New confusion, breathing difficulty, collapse, grey or mottled skin, markedly reduced urine or rapid deterioration require emergency help; tell responders about the recent birth."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.3/1.5/1.6",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "sepsis-who",
+            "locator": "Signs",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      },
+      {
+        "id": "red-flags-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "发热或寒战伴明显下腹痛、恶臭或脓性恶露，或伤口红肿、渗液、疼痛加重，应尽快联系产科当天评估；同时有上述全身危险表现时直接急救，不等发热满两天。",
+          "en": "Fever or rigors with marked lower abdominal pain, offensive or purulent discharge, or a wound becoming red, draining or more painful needs prompt same-day maternity assessment; systemic danger signs require emergency care, without waiting two days of fever."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-msf",
+            "locator": "11.4.2",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.2/1.5/1.6",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "SMFM/NICE/WHO/MSF独立编写，但共享SSC及WHO上游；CDC与NHS恢复科普跨机构。MSF两页同组，WHO托管页面不计NIH第二源。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "SMFM modern maternal sepsis and WHO2015 peripartum infection scopes are kept distinct. Local antimicrobial/fluid protocols vary; no universal regimen or dose. MSF48h fever diagnostic wording is not a delay instruction; emergency deterioration acts immediately."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_immunology_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "p003-puerperal-cdc-lactation",
+        "p003-puerperal-msf",
+        "p003-puerperal-msf-care",
+        "p003-puerperal-nhs-hysterectomy",
+        "p003-puerperal-nhs-lactation",
+        "p003-puerperal-nice",
+        "p003-puerperal-nutrition",
+        "p003-puerperal-smfm",
+        "p003-puerperal-who-peripartum",
+        "sepsis-cdc",
+        "sepsis-cdc-recovery",
+        "sepsis-nhs",
+        "sepsis-nhs-antibiotics-effects",
+        "sepsis-who"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "PUER-medication-risk-pair",
+          "status": "resolved",
+          "section": "medications",
+          "claim": "medications-2",
+          "finding": "CDC directly supports named gastrointestinal/rash/severe-allergy risks; WHO Guiding principles and NICE1.8 provide general prescribing/stewardship without all these specific adverse effects.",
+          "requested_change": "Add independent authoritative antibiotic adverse-effect source and actual locator, retaining current patient-safe wording.",
+          "resolution": "NHS antibiotic side-effects original15–43 independently read; stable GI/rash/severe-allergy corroboration of CDC; expired2025 review due date explicitly retained."
+        },
+        {
+          "id": "PUER-nutrition-route-pair",
+          "status": "resolved",
+          "section": "diet",
+          "claim": "diet-1",
+          "finding": "NICECG32 directly supports oral/tube/parenteral route selection; SMFMFigure2 supports early enteral nutrition only.",
+          "requested_change": "Narrow to individually assessed nutrition and conditional early enteral support, or add independent route-selection guidance.",
+          "resolution": "Revised bilingual text limits route discussion to suitability-assessed early enteral nutrition; SMFMFigure2 and NICECG32 support."
+        },
+        {
+          "id": "PUER-fertility-counselling-pair",
+          "status": "resolved",
+          "section": "prognosis_followup",
+          "claim": "prognosis-followup-2",
+          "finding": "SMFM PDF12/B13 supports fertility implications of pelvic infection/hysterectomy, but current other references only generic follow-up.",
+          "requested_change": "Add separately authored reproductive counselling source, or narrow to confirming procedure-specific follow-up.",
+          "resolution": "Revised bilingual claim specifically addresses hysterectomy and inability to carry a further pregnancy; originalNHS15/33–42 and maternalSMFM12–13 directly support. No elective treatment sequence imported."
+        },
+        {
+          "id": "PUER-key-kinds",
+          "status": "resolved",
+          "finding": "complications-1/2 include major harms but are explanation; medications-1 is a conditional clinical selection statement.",
+          "requested_change": "Use risk for complications1/2 and action for medications1; existing principal medical evidence can be retained.",
+          "resolution": "medications1 nowaction and complications1/2 nowrisk; substantive content unchanged."
+        }
+      ],
+      "resolution": "Accepted after one full independent review and one targeted four-finding recheck. Source reads and current artifact hashes bound; medical_reviewed remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-puerperal-sepsis-independent.json"
+  },
+  {
+    "id": "p003-puerperal-sepsis-care",
+    "target": {
+      "kind": "condition",
+      "id": "puerperal-sepsis",
+      "section": "care"
+    },
+    "content_sha256": "1453fe30fc510fec05ecabfa4d1fc9b993c952e1a75624a2afffbf5e1518ebd8",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_immunology_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-puerperal-msf",
+        "source_metadata_sha256": "98e7e33b6ca416bf3003a4ead9159346d4073e82c4a6811eba90790e857cb9a5",
+        "locator": "11.4.2",
+        "source_version": "Actual official HTML 11.4.1-2 retained tissue, endometritis/salpingitis, pelvic abscess/peritonitis, instability source control;11.4.4 urine leakage. MSF cites WHO2017. Fever48h wording not used as waiting advice; septic/unstable person immediate care.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GLOBAL",
+        "independence_group": "MSF",
+        "upstream_evidence": [
+          "MSF references WHO guidance; WHO original remains WHO even when NCBI hosted. No separate trial replication implied."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-nice",
+        "source_metadata_sha256": "94c9f94316a734cc8846859fbfae264d90c99af39e3d181805166a86805c2292",
+        "locator": "1.2/1.3/1.11 | 1.3.6/1.6-1.7",
+        "source_version": "Published2025-11-19 amended2026-01; actual official PDF via urllib+pdftotext pp6-34, 1.1-1.16: recognition, pregnancy risks, assessment, triage, sampling, fluids, source control, family information/discharge. HTML403; PDFread succeeded. SSC evidence overlap with SMFM disclosed.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-smfm",
+        "source_metadata_sha256": "b8ce4e22c478d36044f3ea6fb9ebe0eca1da990cab74d24d93016258a48544f5",
+        "locator": "Recommendations2/9 | p5-6 evaluation",
+        "source_version": "September2023 reaffirmed2025; official PDF actual pdftotext p1-9 core definitions/risk/diagnosis/mimics/antibiotics/source control and p11-14 organ support/outcomes/follow-up. ACOG endorsement is not independent authorship; largely SSC2021/nonpregnant trials with maternal evidence where available.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-SMFM",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "care-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "提供分娩日期和方式、手术或胎盘处理、出血、破水、药物与过敏史；也说明泌尿、呼吸或乳房症状和近期旅行或感染接触。",
+          "en": "Provide the date and mode of birth, surgery or placental procedures, bleeding, ruptured membranes, medicines and allergies; include urinary, respiratory or breast symptoms and relevant travel or infectious exposure."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.2/1.3/1.11",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p5-6 evaluation",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-msf",
+            "locator": "11.4.2",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      },
+      {
+        "id": "care-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "高风险者需要医院急诊与产科、感染及重症团队合作；如症状继续恶化，即使刚就诊或已开始抗生素，也需再次及时评估。",
+          "en": "High-risk patients need emergency hospital care with maternity, infection and critical-care input; worsening symptoms require timely reassessment even after a recent visit or starting antibiotics."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.3.6/1.6-1.7",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "Recommendations2/9",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "SMFM/NICE/WHO/MSF独立编写，但共享SSC及WHO上游；CDC与NHS恢复科普跨机构。MSF两页同组，WHO托管页面不计NIH第二源。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "SMFM modern maternal sepsis and WHO2015 peripartum infection scopes are kept distinct. Local antimicrobial/fluid protocols vary; no universal regimen or dose. MSF48h fever diagnostic wording is not a delay instruction; emergency deterioration acts immediately."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_immunology_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "p003-puerperal-cdc-lactation",
+        "p003-puerperal-msf",
+        "p003-puerperal-msf-care",
+        "p003-puerperal-nhs-hysterectomy",
+        "p003-puerperal-nhs-lactation",
+        "p003-puerperal-nice",
+        "p003-puerperal-nutrition",
+        "p003-puerperal-smfm",
+        "p003-puerperal-who-peripartum",
+        "sepsis-cdc",
+        "sepsis-cdc-recovery",
+        "sepsis-nhs",
+        "sepsis-nhs-antibiotics-effects",
+        "sepsis-who"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "PUER-medication-risk-pair",
+          "status": "resolved",
+          "section": "medications",
+          "claim": "medications-2",
+          "finding": "CDC directly supports named gastrointestinal/rash/severe-allergy risks; WHO Guiding principles and NICE1.8 provide general prescribing/stewardship without all these specific adverse effects.",
+          "requested_change": "Add independent authoritative antibiotic adverse-effect source and actual locator, retaining current patient-safe wording.",
+          "resolution": "NHS antibiotic side-effects original15–43 independently read; stable GI/rash/severe-allergy corroboration of CDC; expired2025 review due date explicitly retained."
+        },
+        {
+          "id": "PUER-nutrition-route-pair",
+          "status": "resolved",
+          "section": "diet",
+          "claim": "diet-1",
+          "finding": "NICECG32 directly supports oral/tube/parenteral route selection; SMFMFigure2 supports early enteral nutrition only.",
+          "requested_change": "Narrow to individually assessed nutrition and conditional early enteral support, or add independent route-selection guidance.",
+          "resolution": "Revised bilingual text limits route discussion to suitability-assessed early enteral nutrition; SMFMFigure2 and NICECG32 support."
+        },
+        {
+          "id": "PUER-fertility-counselling-pair",
+          "status": "resolved",
+          "section": "prognosis_followup",
+          "claim": "prognosis-followup-2",
+          "finding": "SMFM PDF12/B13 supports fertility implications of pelvic infection/hysterectomy, but current other references only generic follow-up.",
+          "requested_change": "Add separately authored reproductive counselling source, or narrow to confirming procedure-specific follow-up.",
+          "resolution": "Revised bilingual claim specifically addresses hysterectomy and inability to carry a further pregnancy; originalNHS15/33–42 and maternalSMFM12–13 directly support. No elective treatment sequence imported."
+        },
+        {
+          "id": "PUER-key-kinds",
+          "status": "resolved",
+          "finding": "complications-1/2 include major harms but are explanation; medications-1 is a conditional clinical selection statement.",
+          "requested_change": "Use risk for complications1/2 and action for medications1; existing principal medical evidence can be retained.",
+          "resolution": "medications1 nowaction and complications1/2 nowrisk; substantive content unchanged."
+        }
+      ],
+      "resolution": "Accepted after one full independent review and one targeted four-finding recheck. Source reads and current artifact hashes bound; medical_reviewed remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-puerperal-sepsis-independent.json"
+  },
+  {
+    "id": "p003-puerperal-sepsis-diagnosis",
+    "target": {
+      "kind": "condition",
+      "id": "puerperal-sepsis",
+      "section": "diagnosis"
+    },
+    "content_sha256": "e509dbf3cd0adb3d23f9d6f3599e1d67d30e8d7f8781f3c3e3d632af27e1e6fd",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_immunology_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-puerperal-nice",
+        "source_metadata_sha256": "94c9f94316a734cc8846859fbfae264d90c99af39e3d181805166a86805c2292",
+        "locator": "1.11 | 1.3-1.5 | 1.7",
+        "source_version": "Published2025-11-19 amended2026-01; actual official PDF via urllib+pdftotext pp6-34, 1.1-1.16: recognition, pregnancy risks, assessment, triage, sampling, fluids, source control, family information/discharge. HTML403; PDFread succeeded. SSC evidence overlap with SMFM disclosed.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-smfm",
+        "source_metadata_sha256": "b8ce4e22c478d36044f3ea6fb9ebe0eca1da990cab74d24d93016258a48544f5",
+        "locator": "p3-6 screening/evaluation | p6 laboratory evaluation | p6/p9",
+        "source_version": "September2023 reaffirmed2025; official PDF actual pdftotext p1-9 core definitions/risk/diagnosis/mimics/antibiotics/source control and p11-14 organ support/outcomes/follow-up. ACOG endorsement is not independent authorship; largely SSC2021/nonpregnant trials with maternal evidence where available.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-SMFM",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "diagnosis-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "测量呼吸、心率、血压、血氧、体温、意识和尿量，并查看子宫、恶露和伤口等；不能仅靠体温或一个评分排除脓毒症。",
+          "en": "Assess breathing, pulse, blood pressure, oxygen saturation, temperature, mental status and urine, and examine likely sites such as uterus, discharge or wounds; temperature or a single score cannot rule sepsis out."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.3-1.5",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p3-6 screening/evaluation",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      },
+      {
+        "id": "diagnosis-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "通常查血细胞、乳酸、肾肝功能、凝血及培养；尽可能在抗生素前取样，但不能因此延误紧急治疗。乳酸等也受分娩生理影响，要结合病情解释。",
+          "en": "Tests commonly include blood counts, lactate, kidney and liver function, clotting and cultures. Obtain samples before antibiotics when feasible without delaying urgent treatment; labour physiology can affect markers such as lactate, which require context."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.7",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p6 laboratory evaluation",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      },
+      {
+        "id": "diagnosis-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "根据线索做尿液、胸部或盆腔检查，必要时影像寻找脓肿或残留组织。血培养阴性或暂时找不到病灶不能单独排除脓毒症。",
+          "en": "Urinary, chest or pelvic investigations follow clinical clues, with imaging when needed for abscess or retained tissue. Negative blood cultures or an initially unclear source do not alone exclude sepsis."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.11",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p6/p9",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "SMFM/NICE/WHO/MSF独立编写，但共享SSC及WHO上游；CDC与NHS恢复科普跨机构。MSF两页同组，WHO托管页面不计NIH第二源。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "SMFM modern maternal sepsis and WHO2015 peripartum infection scopes are kept distinct. Local antimicrobial/fluid protocols vary; no universal regimen or dose. MSF48h fever diagnostic wording is not a delay instruction; emergency deterioration acts immediately."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_immunology_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "p003-puerperal-cdc-lactation",
+        "p003-puerperal-msf",
+        "p003-puerperal-msf-care",
+        "p003-puerperal-nhs-hysterectomy",
+        "p003-puerperal-nhs-lactation",
+        "p003-puerperal-nice",
+        "p003-puerperal-nutrition",
+        "p003-puerperal-smfm",
+        "p003-puerperal-who-peripartum",
+        "sepsis-cdc",
+        "sepsis-cdc-recovery",
+        "sepsis-nhs",
+        "sepsis-nhs-antibiotics-effects",
+        "sepsis-who"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "PUER-medication-risk-pair",
+          "status": "resolved",
+          "section": "medications",
+          "claim": "medications-2",
+          "finding": "CDC directly supports named gastrointestinal/rash/severe-allergy risks; WHO Guiding principles and NICE1.8 provide general prescribing/stewardship without all these specific adverse effects.",
+          "requested_change": "Add independent authoritative antibiotic adverse-effect source and actual locator, retaining current patient-safe wording.",
+          "resolution": "NHS antibiotic side-effects original15–43 independently read; stable GI/rash/severe-allergy corroboration of CDC; expired2025 review due date explicitly retained."
+        },
+        {
+          "id": "PUER-nutrition-route-pair",
+          "status": "resolved",
+          "section": "diet",
+          "claim": "diet-1",
+          "finding": "NICECG32 directly supports oral/tube/parenteral route selection; SMFMFigure2 supports early enteral nutrition only.",
+          "requested_change": "Narrow to individually assessed nutrition and conditional early enteral support, or add independent route-selection guidance.",
+          "resolution": "Revised bilingual text limits route discussion to suitability-assessed early enteral nutrition; SMFMFigure2 and NICECG32 support."
+        },
+        {
+          "id": "PUER-fertility-counselling-pair",
+          "status": "resolved",
+          "section": "prognosis_followup",
+          "claim": "prognosis-followup-2",
+          "finding": "SMFM PDF12/B13 supports fertility implications of pelvic infection/hysterectomy, but current other references only generic follow-up.",
+          "requested_change": "Add separately authored reproductive counselling source, or narrow to confirming procedure-specific follow-up.",
+          "resolution": "Revised bilingual claim specifically addresses hysterectomy and inability to carry a further pregnancy; originalNHS15/33–42 and maternalSMFM12–13 directly support. No elective treatment sequence imported."
+        },
+        {
+          "id": "PUER-key-kinds",
+          "status": "resolved",
+          "finding": "complications-1/2 include major harms but are explanation; medications-1 is a conditional clinical selection statement.",
+          "requested_change": "Use risk for complications1/2 and action for medications1; existing principal medical evidence can be retained.",
+          "resolution": "medications1 nowaction and complications1/2 nowrisk; substantive content unchanged."
+        }
+      ],
+      "resolution": "Accepted after one full independent review and one targeted four-finding recheck. Source reads and current artifact hashes bound; medical_reviewed remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-puerperal-sepsis-independent.json"
+  },
+  {
+    "id": "p003-puerperal-sepsis-differentials",
+    "target": {
+      "kind": "condition",
+      "id": "puerperal-sepsis",
+      "section": "differentials"
+    },
+    "content_sha256": "145da90f48e603b3b8210fd6e6dcf41ee8e8cd52dc0a83b9cf1b9a697ab34dca",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_immunology_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-puerperal-msf",
+        "source_metadata_sha256": "98e7e33b6ca416bf3003a4ead9159346d4073e82c4a6811eba90790e857cb9a5",
+        "locator": "11.4.2-3",
+        "source_version": "Actual official HTML 11.4.1-2 retained tissue, endometritis/salpingitis, pelvic abscess/peritonitis, instability source control;11.4.4 urine leakage. MSF cites WHO2017. Fever48h wording not used as waiting advice; septic/unstable person immediate care.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GLOBAL",
+        "independence_group": "MSF",
+        "upstream_evidence": [
+          "MSF references WHO guidance; WHO original remains WHO even when NCBI hosted. No separate trial replication implied."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-nice",
+        "source_metadata_sha256": "94c9f94316a734cc8846859fbfae264d90c99af39e3d181805166a86805c2292",
+        "locator": "1.7.2 alternative diagnoses",
+        "source_version": "Published2025-11-19 amended2026-01; actual official PDF via urllib+pdftotext pp6-34, 1.1-1.16: recognition, pregnancy risks, assessment, triage, sampling, fluids, source control, family information/discharge. HTML403; PDFread succeeded. SSC evidence overlap with SMFM disclosed.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-smfm",
+        "source_metadata_sha256": "b8ce4e22c478d36044f3ea6fb9ebe0eca1da990cab74d24d93016258a48544f5",
+        "locator": "definition/Table4 | p3/p6 mimics",
+        "source_version": "September2023 reaffirmed2025; official PDF actual pdftotext p1-9 core definitions/risk/diagnosis/mimics/antibiotics/source control and p11-14 organ support/outcomes/follow-up. ACOG endorsement is not independent authorship; largely SSC2021/nonpregnant trials with maternal evidence where available.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-SMFM",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "differentials-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "产后出血、心脏问题或代谢异常也可造成心率快、低血压或呼吸异常；团队结合出血量、心肺检查和血液检查区分，不能仅因刚生产就默认感染。",
+          "en": "Postpartum bleeding, cardiac disease or metabolic problems can also cause tachycardia, low pressure or abnormal breathing; bleeding assessment, cardiopulmonary examination and blood tests help distinguish them."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p3/p6 mimics",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.7.2 alternative diagnoses",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      },
+      {
+        "id": "differentials-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "发热来源可能是子宫、伤口、尿路或乳房等局部感染；是否已进展到脓毒症取决于全身状态和器官受累，需要分别处理感染源。",
+          "en": "Fever may arise from local uterine, wound, urinary or breast infection; progression to sepsis depends on systemic and organ findings, while each source needs its own treatment."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-msf",
+            "locator": "11.4.2-3",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "definition/Table4",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "SMFM/NICE/WHO/MSF独立编写，但共享SSC及WHO上游；CDC与NHS恢复科普跨机构。MSF两页同组，WHO托管页面不计NIH第二源。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "SMFM modern maternal sepsis and WHO2015 peripartum infection scopes are kept distinct. Local antimicrobial/fluid protocols vary; no universal regimen or dose. MSF48h fever diagnostic wording is not a delay instruction; emergency deterioration acts immediately."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_immunology_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "p003-puerperal-cdc-lactation",
+        "p003-puerperal-msf",
+        "p003-puerperal-msf-care",
+        "p003-puerperal-nhs-hysterectomy",
+        "p003-puerperal-nhs-lactation",
+        "p003-puerperal-nice",
+        "p003-puerperal-nutrition",
+        "p003-puerperal-smfm",
+        "p003-puerperal-who-peripartum",
+        "sepsis-cdc",
+        "sepsis-cdc-recovery",
+        "sepsis-nhs",
+        "sepsis-nhs-antibiotics-effects",
+        "sepsis-who"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "PUER-medication-risk-pair",
+          "status": "resolved",
+          "section": "medications",
+          "claim": "medications-2",
+          "finding": "CDC directly supports named gastrointestinal/rash/severe-allergy risks; WHO Guiding principles and NICE1.8 provide general prescribing/stewardship without all these specific adverse effects.",
+          "requested_change": "Add independent authoritative antibiotic adverse-effect source and actual locator, retaining current patient-safe wording.",
+          "resolution": "NHS antibiotic side-effects original15–43 independently read; stable GI/rash/severe-allergy corroboration of CDC; expired2025 review due date explicitly retained."
+        },
+        {
+          "id": "PUER-nutrition-route-pair",
+          "status": "resolved",
+          "section": "diet",
+          "claim": "diet-1",
+          "finding": "NICECG32 directly supports oral/tube/parenteral route selection; SMFMFigure2 supports early enteral nutrition only.",
+          "requested_change": "Narrow to individually assessed nutrition and conditional early enteral support, or add independent route-selection guidance.",
+          "resolution": "Revised bilingual text limits route discussion to suitability-assessed early enteral nutrition; SMFMFigure2 and NICECG32 support."
+        },
+        {
+          "id": "PUER-fertility-counselling-pair",
+          "status": "resolved",
+          "section": "prognosis_followup",
+          "claim": "prognosis-followup-2",
+          "finding": "SMFM PDF12/B13 supports fertility implications of pelvic infection/hysterectomy, but current other references only generic follow-up.",
+          "requested_change": "Add separately authored reproductive counselling source, or narrow to confirming procedure-specific follow-up.",
+          "resolution": "Revised bilingual claim specifically addresses hysterectomy and inability to carry a further pregnancy; originalNHS15/33–42 and maternalSMFM12–13 directly support. No elective treatment sequence imported."
+        },
+        {
+          "id": "PUER-key-kinds",
+          "status": "resolved",
+          "finding": "complications-1/2 include major harms but are explanation; medications-1 is a conditional clinical selection statement.",
+          "requested_change": "Use risk for complications1/2 and action for medications1; existing principal medical evidence can be retained.",
+          "resolution": "medications1 nowaction and complications1/2 nowrisk; substantive content unchanged."
+        }
+      ],
+      "resolution": "Accepted after one full independent review and one targeted four-finding recheck. Source reads and current artifact hashes bound; medical_reviewed remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-puerperal-sepsis-independent.json"
+  },
+  {
+    "id": "p003-puerperal-sepsis-treatment",
+    "target": {
+      "kind": "condition",
+      "id": "puerperal-sepsis",
+      "section": "treatment"
+    },
+    "content_sha256": "f6d1911c6ba6e9f17c7b53cabbe095af4a3c4cb05fa3a7f646054bb98e5c3c2f",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_immunology_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-puerperal-msf",
+        "source_metadata_sha256": "98e7e33b6ca416bf3003a4ead9159346d4073e82c4a6811eba90790e857cb9a5",
+        "locator": "11.4.2",
+        "source_version": "Actual official HTML 11.4.1-2 retained tissue, endometritis/salpingitis, pelvic abscess/peritonitis, instability source control;11.4.4 urine leakage. MSF cites WHO2017. Fever48h wording not used as waiting advice; septic/unstable person immediate care.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GLOBAL",
+        "independence_group": "MSF",
+        "upstream_evidence": [
+          "MSF references WHO guidance; WHO original remains WHO even when NCBI hosted. No separate trial replication implied."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-nice",
+        "source_metadata_sha256": "94c9f94316a734cc8846859fbfae264d90c99af39e3d181805166a86805c2292",
+        "locator": "1.11 | 1.7-1.8 | 1.7/1.9",
+        "source_version": "Published2025-11-19 amended2026-01; actual official PDF via urllib+pdftotext pp6-34, 1.1-1.16: recognition, pregnancy risks, assessment, triage, sampling, fluids, source control, family information/discharge. HTML403; PDFread succeeded. SSC evidence overlap with SMFM disclosed.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-smfm",
+        "source_metadata_sha256": "b8ce4e22c478d36044f3ea6fb9ebe0eca1da990cab74d24d93016258a48544f5",
+        "locator": "Recommendations6-9 | p10-11 fluids/vasopressors | p9 source control",
+        "source_version": "September2023 reaffirmed2025; official PDF actual pdftotext p1-9 core definitions/risk/diagnosis/mimics/antibiotics/source control and p11-14 organ support/outcomes/follow-up. ACOG endorsement is not independent authorship; largely SSC2021/nonpregnant trials with maternal evidence where available.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-SMFM",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "treatment-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "高疑似脓毒症或休克时尽快给予静脉广谱抗感染治疗，随后按病原、部位和耐药结果调整；不是先等培养阳性再开始。",
+          "en": "High-likelihood sepsis or shock requires prompt intravenous broad-spectrum treatment, then adjustment to organism, site and resistance; treatment does not wait for positive cultures."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "Recommendations6-9",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.7-1.8",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      },
+      {
+        "id": "treatment-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "存在感染残留组织、脓肿或坏死组织时，可能需清除、引流或手术。病情不稳定时不能只反复更换抗生素而不处理感染源；手术范围由团队按病灶和风险决定。",
+          "en": "Infected retained tissue, an abscess or dead tissue may require evacuation, drainage or surgery. An unstable patient needs source control rather than repeated antibiotic changes alone; the team determines the procedure from the source and risks."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p9 source control",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-msf",
+            "locator": "11.4.2",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.11",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      },
+      {
+        "id": "treatment-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "循环灌注不足者可能需要静脉补液、升压药和器官支持。补液须反复评估反应，心肾问题或肺水肿风险会影响方案。",
+          "en": "Poor perfusion may require intravenous fluids, vasopressors and organ support. Fluid response is repeatedly reassessed, with cardiac or kidney disease and pulmonary-oedema risk affecting the plan."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p10-11 fluids/vasopressors",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.7/1.9",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "SMFM/NICE/WHO/MSF独立编写，但共享SSC及WHO上游；CDC与NHS恢复科普跨机构。MSF两页同组，WHO托管页面不计NIH第二源。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "SMFM modern maternal sepsis and WHO2015 peripartum infection scopes are kept distinct. Local antimicrobial/fluid protocols vary; no universal regimen or dose. MSF48h fever diagnostic wording is not a delay instruction; emergency deterioration acts immediately."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_immunology_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "p003-puerperal-cdc-lactation",
+        "p003-puerperal-msf",
+        "p003-puerperal-msf-care",
+        "p003-puerperal-nhs-hysterectomy",
+        "p003-puerperal-nhs-lactation",
+        "p003-puerperal-nice",
+        "p003-puerperal-nutrition",
+        "p003-puerperal-smfm",
+        "p003-puerperal-who-peripartum",
+        "sepsis-cdc",
+        "sepsis-cdc-recovery",
+        "sepsis-nhs",
+        "sepsis-nhs-antibiotics-effects",
+        "sepsis-who"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "PUER-medication-risk-pair",
+          "status": "resolved",
+          "section": "medications",
+          "claim": "medications-2",
+          "finding": "CDC directly supports named gastrointestinal/rash/severe-allergy risks; WHO Guiding principles and NICE1.8 provide general prescribing/stewardship without all these specific adverse effects.",
+          "requested_change": "Add independent authoritative antibiotic adverse-effect source and actual locator, retaining current patient-safe wording.",
+          "resolution": "NHS antibiotic side-effects original15–43 independently read; stable GI/rash/severe-allergy corroboration of CDC; expired2025 review due date explicitly retained."
+        },
+        {
+          "id": "PUER-nutrition-route-pair",
+          "status": "resolved",
+          "section": "diet",
+          "claim": "diet-1",
+          "finding": "NICECG32 directly supports oral/tube/parenteral route selection; SMFMFigure2 supports early enteral nutrition only.",
+          "requested_change": "Narrow to individually assessed nutrition and conditional early enteral support, or add independent route-selection guidance.",
+          "resolution": "Revised bilingual text limits route discussion to suitability-assessed early enteral nutrition; SMFMFigure2 and NICECG32 support."
+        },
+        {
+          "id": "PUER-fertility-counselling-pair",
+          "status": "resolved",
+          "section": "prognosis_followup",
+          "claim": "prognosis-followup-2",
+          "finding": "SMFM PDF12/B13 supports fertility implications of pelvic infection/hysterectomy, but current other references only generic follow-up.",
+          "requested_change": "Add separately authored reproductive counselling source, or narrow to confirming procedure-specific follow-up.",
+          "resolution": "Revised bilingual claim specifically addresses hysterectomy and inability to carry a further pregnancy; originalNHS15/33–42 and maternalSMFM12–13 directly support. No elective treatment sequence imported."
+        },
+        {
+          "id": "PUER-key-kinds",
+          "status": "resolved",
+          "finding": "complications-1/2 include major harms but are explanation; medications-1 is a conditional clinical selection statement.",
+          "requested_change": "Use risk for complications1/2 and action for medications1; existing principal medical evidence can be retained.",
+          "resolution": "medications1 nowaction and complications1/2 nowrisk; substantive content unchanged."
+        }
+      ],
+      "resolution": "Accepted after one full independent review and one targeted four-finding recheck. Source reads and current artifact hashes bound; medical_reviewed remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-puerperal-sepsis-independent.json"
+  },
+  {
+    "id": "p003-puerperal-sepsis-medications",
+    "target": {
+      "kind": "condition",
+      "id": "puerperal-sepsis",
+      "section": "medications"
+    },
+    "content_sha256": "77f698dcfcfc287affe1a5223734e550adb9fa079aaecd97a7e01b8d81c49094",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_immunology_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-puerperal-msf",
+        "source_metadata_sha256": "98e7e33b6ca416bf3003a4ead9159346d4073e82c4a6811eba90790e857cb9a5",
+        "locator": "11.4.2 | 11.4.2 malaria",
+        "source_version": "Actual official HTML 11.4.1-2 retained tissue, endometritis/salpingitis, pelvic abscess/peritonitis, instability source control;11.4.4 urine leakage. MSF cites WHO2017. Fever48h wording not used as waiting advice; septic/unstable person immediate care.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GLOBAL",
+        "independence_group": "MSF",
+        "upstream_evidence": [
+          "MSF references WHO guidance; WHO original remains WHO even when NCBI hosted. No separate trial replication implied."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-nice",
+        "source_metadata_sha256": "94c9f94316a734cc8846859fbfae264d90c99af39e3d181805166a86805c2292",
+        "locator": "1.8",
+        "source_version": "Published2025-11-19 amended2026-01; actual official PDF via urllib+pdftotext pp6-34, 1.1-1.16: recognition, pregnancy risks, assessment, triage, sampling, fluids, source control, family information/discharge. HTML403; PDFread succeeded. SSC evidence overlap with SMFM disclosed.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-smfm",
+        "source_metadata_sha256": "b8ce4e22c478d36044f3ea6fb9ebe0eca1da990cab74d24d93016258a48544f5",
+        "locator": "p8-9/Table4",
+        "source_version": "September2023 reaffirmed2025; official PDF actual pdftotext p1-9 core definitions/risk/diagnosis/mimics/antibiotics/source control and p11-14 organ support/outcomes/follow-up. ACOG endorsement is not independent authorship; largely SSC2021/nonpregnant trials with maternal evidence where available.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-SMFM",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-who-peripartum",
+        "source_metadata_sha256": "0b8a3deb7acfa8286daafc7a49d9f166980f223c2480c2373a7fd087254a1247",
+        "locator": "General principles | Recommendation20",
+        "source_version": "2015; actual WHO original chapter3 general principles and recommendation20 postpartum endometritis, remarks/evidence. NCBI hosts WHO original, not NIH independent guidance. Prevention updates2021 not replaced by old rules; no old operative prophylaxis doses used.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "MSF references WHO guidance; WHO original remains WHO even when NCBI hosted. No separate trial replication implied."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "sepsis-cdc",
+        "source_metadata_sha256": "4f0df89b5186d66be1dbc56fd39abca05399e65460222690de1403203922c1eb",
+        "locator": "Antibiotics side effects/stewardship | Causes/Diagnosis",
+        "source_version": "Updated and reviewed by subject-matter experts 17 August 2026; diagnosis, treatment and antibiotic risks.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "Institutional patient education; supporting material is not counted as an independent original trial."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "sepsis-who",
+        "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d",
+        "locator": "Treatment",
+        "source_version": "Overview, risk, signs in adults and children, prevention and treatment.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "MSF references WHO guidance; WHO original remains WHO even when NCBI hosted. No separate trial replication implied."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "sepsis-nhs-antibiotics-effects",
+        "source_metadata_sha256": "fd7b9eba7171b10c687a3ba9a168e95c9dee3da39ff3236b18cc534d49f7551a",
+        "locator": "Side effects15–19; allergy20–43",
+        "source_version": "Side effects; Antibiotic allergic reactions / immediate emergency box. Review due 2025-11-11 passed. Airway symptoms follow emergency box, not preceding mild-to-moderate paragraph.",
+        "accessed_at": "2026-10-03",
+        "population": "产后脓毒症患者；仅支持此条标明的药物风险或子宫切除后的生育影响。",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Institutional patient education; supporting material is not counted as an independent original trial."
+        ],
+        "relation": "supports",
+        "assessment": "NHS independently supports gastrointestinal effects, rash and severe allergy alongside CDC. Past review due date disclosed; no new dose or broad drug safety claim."
+      }
+    ],
+    "claims": [
+      {
+        "id": "medications-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "产后子宫感染常需同时覆盖需氧和厌氧细菌，可采用β内酰胺类及其他药物组合；克林霉素、甲硝唑或庆大霉素等是否加入取决于病情和本地方案，不是每人固定同一组合。",
+          "en": "Postpartum uterine infection often requires aerobic and anaerobic coverage, using beta-lactams and other combinations; whether clindamycin, metronidazole or gentamicin is used depends on illness and local protocols, rather than one fixed regimen for everyone."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p8-9/Table4",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-who-peripartum",
+            "locator": "Recommendation20",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-msf",
+            "locator": "11.4.2",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      },
+      {
+        "id": "medications-2",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "抗生素可引起胃肠不适、皮疹或严重过敏，也会选择耐药菌；既往过敏、肾功能和检查结果影响选择。团队会复查是否可以缩小范围和结束疗程，患者不要自行换药或延长。",
+          "en": "Antibiotics can cause gastrointestinal symptoms, rash or serious allergy and select resistant organisms; allergies, kidney function and results influence selection. The team reviews narrowing and stopping treatment; do not independently switch or extend it."
+        },
+        "supports": [
+          {
+            "source_id": "sepsis-cdc",
+            "locator": "Antibiotics side effects/stewardship",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-who-peripartum",
+            "locator": "General principles",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.8",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "sepsis-nhs-antibiotics-effects",
+            "locator": "Side effects15–19; allergy20–43",
+            "assessment": "NHS independently supports gastrointestinal effects, rash and severe allergy alongside CDC. Past review due date disclosed; no new dose or broad drug safety claim."
+          }
+        ]
+      },
+      {
+        "id": "medications-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "若证据指向病毒、真菌或寄生虫，需按病原选择相应抗感染治疗并请相关专科参与；普通抗菌药不能替代这些病原的针对性处理。",
+          "en": "Evidence of viral, fungal or parasitic infection requires pathogen-specific treatment and relevant specialist input; ordinary antibacterial treatment does not replace treatment directed at those organisms."
+        },
+        "supports": [
+          {
+            "source_id": "sepsis-who",
+            "locator": "Treatment",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "sepsis-cdc",
+            "locator": "Causes/Diagnosis",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-msf",
+            "locator": "11.4.2 malaria",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "SMFM/NICE/WHO/MSF独立编写，但共享SSC及WHO上游；CDC与NHS恢复科普跨机构。MSF两页同组，WHO托管页面不计NIH第二源。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "SMFM modern maternal sepsis and WHO2015 peripartum infection scopes are kept distinct. Local antimicrobial/fluid protocols vary; no universal regimen or dose. MSF48h fever diagnostic wording is not a delay instruction; emergency deterioration acts immediately."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_immunology_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "p003-puerperal-cdc-lactation",
+        "p003-puerperal-msf",
+        "p003-puerperal-msf-care",
+        "p003-puerperal-nhs-hysterectomy",
+        "p003-puerperal-nhs-lactation",
+        "p003-puerperal-nice",
+        "p003-puerperal-nutrition",
+        "p003-puerperal-smfm",
+        "p003-puerperal-who-peripartum",
+        "sepsis-cdc",
+        "sepsis-cdc-recovery",
+        "sepsis-nhs",
+        "sepsis-nhs-antibiotics-effects",
+        "sepsis-who"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "PUER-medication-risk-pair",
+          "status": "resolved",
+          "section": "medications",
+          "claim": "medications-2",
+          "finding": "CDC directly supports named gastrointestinal/rash/severe-allergy risks; WHO Guiding principles and NICE1.8 provide general prescribing/stewardship without all these specific adverse effects.",
+          "requested_change": "Add independent authoritative antibiotic adverse-effect source and actual locator, retaining current patient-safe wording.",
+          "resolution": "NHS antibiotic side-effects original15–43 independently read; stable GI/rash/severe-allergy corroboration of CDC; expired2025 review due date explicitly retained."
+        },
+        {
+          "id": "PUER-nutrition-route-pair",
+          "status": "resolved",
+          "section": "diet",
+          "claim": "diet-1",
+          "finding": "NICECG32 directly supports oral/tube/parenteral route selection; SMFMFigure2 supports early enteral nutrition only.",
+          "requested_change": "Narrow to individually assessed nutrition and conditional early enteral support, or add independent route-selection guidance.",
+          "resolution": "Revised bilingual text limits route discussion to suitability-assessed early enteral nutrition; SMFMFigure2 and NICECG32 support."
+        },
+        {
+          "id": "PUER-fertility-counselling-pair",
+          "status": "resolved",
+          "section": "prognosis_followup",
+          "claim": "prognosis-followup-2",
+          "finding": "SMFM PDF12/B13 supports fertility implications of pelvic infection/hysterectomy, but current other references only generic follow-up.",
+          "requested_change": "Add separately authored reproductive counselling source, or narrow to confirming procedure-specific follow-up.",
+          "resolution": "Revised bilingual claim specifically addresses hysterectomy and inability to carry a further pregnancy; originalNHS15/33–42 and maternalSMFM12–13 directly support. No elective treatment sequence imported."
+        },
+        {
+          "id": "PUER-key-kinds",
+          "status": "resolved",
+          "finding": "complications-1/2 include major harms but are explanation; medications-1 is a conditional clinical selection statement.",
+          "requested_change": "Use risk for complications1/2 and action for medications1; existing principal medical evidence can be retained.",
+          "resolution": "medications1 nowaction and complications1/2 nowrisk; substantive content unchanged."
+        }
+      ],
+      "resolution": "Accepted after one full independent review and one targeted four-finding recheck. Source reads and current artifact hashes bound; medical_reviewed remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-puerperal-sepsis-independent.json"
+  },
+  {
+    "id": "p003-puerperal-sepsis-diet",
+    "target": {
+      "kind": "condition",
+      "id": "puerperal-sepsis",
+      "section": "diet"
+    },
+    "content_sha256": "2c0c2fba3ac51b4eb031bc5aff668d447b8e2bf54a68cffe003b4f705fe67047",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_immunology_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-puerperal-nutrition",
+        "source_metadata_sha256": "d25aaa3d3ef82a881cddfbd70f1e7c6cce2431175a5ec0f1e0712f37484dcc8f",
+        "locator": "1.4.1/1.7.1/1.8.1",
+        "source_version": "2006 updated2017; actual official urllib HTML1.4.1,1.7.1-3,1.8.1-4 adult intake safety, enteral/parenteral indications and trained assessment; only supportive principles, not fixed dose extrapolation.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "Institutional patient education; supporting material is not counted as an independent original trial."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-smfm",
+        "source_metadata_sha256": "b8ce4e22c478d36044f3ea6fb9ebe0eca1da990cab74d24d93016258a48544f5",
+        "locator": "Figure2 early enteral feeding",
+        "source_version": "September2023 reaffirmed2025; official PDF actual pdftotext p1-9 core definitions/risk/diagnosis/mimics/antibiotics/source control and p11-14 organ support/outcomes/follow-up. ACOG endorsement is not independent authorship; largely SSC2021/nonpregnant trials with maternal evidence where available.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-SMFM",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "sepsis-cdc-recovery",
+        "source_metadata_sha256": "7aacca46b9075eb933fd8592791643d871137c4bb4cbbc34333807f8096ae3d5",
+        "locator": "Home recovery/After home",
+        "source_version": "First steps, home recovery, long-term effects and recurrence.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "Institutional patient education; supporting material is not counted as an independent original trial."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "sepsis-nhs",
+        "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f",
+        "locator": "Recovering from sepsis",
+        "source_version": "Reviewed 14 May 2026. Child/adult symptoms and emergency boxes, recovery, PSS, repeat infections and risk groups read. UK999/111 localized, not global numbers.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Institutional patient education; supporting material is not counted as an independent original trial."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "diet-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "急性重症时由团队评估能否安全进食，并按需要提供营养支持；适合时可考虑早期肠内营养，也就是通过胃肠道给予营养。恢复期饮食建议要等病情稳定后再采用。",
+          "en": "During critical illness, the team assesses safe intake and nutritional support needs; early enteral nutrition, meaning feeding through the gastrointestinal tract, may be considered when suitable. Recovery diet advice applies once the illness is stable."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "Figure2 early enteral feeding",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-nutrition",
+            "locator": "1.4.1/1.7.1/1.8.1",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      },
+      {
+        "id": "diet-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "稳定后按个体恢复计划吃均衡饮食，并向团队报告持续食欲差、体重下降或进食困难；需要时请营养或康复专业人员帮助，不靠单一补品代替正常食物。",
+          "en": "Once stable, follow an individual recovery plan with a balanced diet and report persistent poor appetite, weight loss or difficulty eating; seek nutritional or rehabilitation support when needed rather than relying on a single supplement."
+        },
+        "supports": [
+          {
+            "source_id": "sepsis-cdc-recovery",
+            "locator": "Home recovery/After home",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "sepsis-nhs",
+            "locator": "Recovering from sepsis",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "SMFM/NICE/WHO/MSF独立编写，但共享SSC及WHO上游；CDC与NHS恢复科普跨机构。MSF两页同组，WHO托管页面不计NIH第二源。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "SMFM modern maternal sepsis and WHO2015 peripartum infection scopes are kept distinct. Local antimicrobial/fluid protocols vary; no universal regimen or dose. MSF48h fever diagnostic wording is not a delay instruction; emergency deterioration acts immediately."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_immunology_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "p003-puerperal-cdc-lactation",
+        "p003-puerperal-msf",
+        "p003-puerperal-msf-care",
+        "p003-puerperal-nhs-hysterectomy",
+        "p003-puerperal-nhs-lactation",
+        "p003-puerperal-nice",
+        "p003-puerperal-nutrition",
+        "p003-puerperal-smfm",
+        "p003-puerperal-who-peripartum",
+        "sepsis-cdc",
+        "sepsis-cdc-recovery",
+        "sepsis-nhs",
+        "sepsis-nhs-antibiotics-effects",
+        "sepsis-who"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "PUER-medication-risk-pair",
+          "status": "resolved",
+          "section": "medications",
+          "claim": "medications-2",
+          "finding": "CDC directly supports named gastrointestinal/rash/severe-allergy risks; WHO Guiding principles and NICE1.8 provide general prescribing/stewardship without all these specific adverse effects.",
+          "requested_change": "Add independent authoritative antibiotic adverse-effect source and actual locator, retaining current patient-safe wording.",
+          "resolution": "NHS antibiotic side-effects original15–43 independently read; stable GI/rash/severe-allergy corroboration of CDC; expired2025 review due date explicitly retained."
+        },
+        {
+          "id": "PUER-nutrition-route-pair",
+          "status": "resolved",
+          "section": "diet",
+          "claim": "diet-1",
+          "finding": "NICECG32 directly supports oral/tube/parenteral route selection; SMFMFigure2 supports early enteral nutrition only.",
+          "requested_change": "Narrow to individually assessed nutrition and conditional early enteral support, or add independent route-selection guidance.",
+          "resolution": "Revised bilingual text limits route discussion to suitability-assessed early enteral nutrition; SMFMFigure2 and NICECG32 support."
+        },
+        {
+          "id": "PUER-fertility-counselling-pair",
+          "status": "resolved",
+          "section": "prognosis_followup",
+          "claim": "prognosis-followup-2",
+          "finding": "SMFM PDF12/B13 supports fertility implications of pelvic infection/hysterectomy, but current other references only generic follow-up.",
+          "requested_change": "Add separately authored reproductive counselling source, or narrow to confirming procedure-specific follow-up.",
+          "resolution": "Revised bilingual claim specifically addresses hysterectomy and inability to carry a further pregnancy; originalNHS15/33–42 and maternalSMFM12–13 directly support. No elective treatment sequence imported."
+        },
+        {
+          "id": "PUER-key-kinds",
+          "status": "resolved",
+          "finding": "complications-1/2 include major harms but are explanation; medications-1 is a conditional clinical selection statement.",
+          "requested_change": "Use risk for complications1/2 and action for medications1; existing principal medical evidence can be retained.",
+          "resolution": "medications1 nowaction and complications1/2 nowrisk; substantive content unchanged."
+        }
+      ],
+      "resolution": "Accepted after one full independent review and one targeted four-finding recheck. Source reads and current artifact hashes bound; medical_reviewed remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-puerperal-sepsis-independent.json"
+  },
+  {
+    "id": "p003-puerperal-sepsis-daily-care",
+    "target": {
+      "kind": "condition",
+      "id": "puerperal-sepsis",
+      "section": "daily_care"
+    },
+    "content_sha256": "4ac1865862eb528ffa2c2f5a4b24db1f1f972735314b498017ddf8fb2fda2eb0",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_immunology_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-puerperal-nice",
+        "source_metadata_sha256": "94c9f94316a734cc8846859fbfae264d90c99af39e3d181805166a86805c2292",
+        "locator": "1.15-1.16",
+        "source_version": "Published2025-11-19 amended2026-01; actual official PDF via urllib+pdftotext pp6-34, 1.1-1.16: recognition, pregnancy risks, assessment, triage, sampling, fluids, source control, family information/discharge. HTML403; PDFread succeeded. SSC evidence overlap with SMFM disclosed.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-smfm",
+        "source_metadata_sha256": "b8ce4e22c478d36044f3ea6fb9ebe0eca1da990cab74d24d93016258a48544f5",
+        "locator": "p13 comprehensive support | p9 stewardship/p13 discharge",
+        "source_version": "September2023 reaffirmed2025; official PDF actual pdftotext p1-9 core definitions/risk/diagnosis/mimics/antibiotics/source control and p11-14 organ support/outcomes/follow-up. ACOG endorsement is not independent authorship; largely SSC2021/nonpregnant trials with maternal evidence where available.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-SMFM",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "sepsis-cdc-recovery",
+        "source_metadata_sha256": "7aacca46b9075eb933fd8592791643d871137c4bb4cbbc34333807f8096ae3d5",
+        "locator": "First steps/Home tips",
+        "source_version": "First steps, home recovery, long-term effects and recurrence.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "Institutional patient education; supporting material is not counted as an independent original trial."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "daily-care-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "按出院说明照护伤口或仍留置的管路，了解哪些红肿、渗液或全身变化需要联系团队；不要因退热就自行停止已安排的治疗。",
+          "en": "Follow discharge instructions for wounds or remaining lines, including which redness, drainage or systemic changes require contact; resolution of fever is not a reason to independently stop prescribed treatment."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.15-1.16",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p9 stewardship/p13 discharge",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      },
+      {
+        "id": "daily-care-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "与团队商定安全的活动量，从能完成的小目标开始，疲倦时休息，并请家人分担照顾宝宝等工作；长期乏力或情绪困扰也应报告。",
+          "en": "Agree safe activity with the team, start with achievable goals, rest when tired and ask family to help with baby care; report persistent exhaustion or emotional distress."
+        },
+        "supports": [
+          {
+            "source_id": "sepsis-cdc-recovery",
+            "locator": "First steps/Home tips",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p13 comprehensive support",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "SMFM/NICE/WHO/MSF独立编写，但共享SSC及WHO上游；CDC与NHS恢复科普跨机构。MSF两页同组，WHO托管页面不计NIH第二源。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "SMFM modern maternal sepsis and WHO2015 peripartum infection scopes are kept distinct. Local antimicrobial/fluid protocols vary; no universal regimen or dose. MSF48h fever diagnostic wording is not a delay instruction; emergency deterioration acts immediately."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_immunology_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "p003-puerperal-cdc-lactation",
+        "p003-puerperal-msf",
+        "p003-puerperal-msf-care",
+        "p003-puerperal-nhs-hysterectomy",
+        "p003-puerperal-nhs-lactation",
+        "p003-puerperal-nice",
+        "p003-puerperal-nutrition",
+        "p003-puerperal-smfm",
+        "p003-puerperal-who-peripartum",
+        "sepsis-cdc",
+        "sepsis-cdc-recovery",
+        "sepsis-nhs",
+        "sepsis-nhs-antibiotics-effects",
+        "sepsis-who"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "PUER-medication-risk-pair",
+          "status": "resolved",
+          "section": "medications",
+          "claim": "medications-2",
+          "finding": "CDC directly supports named gastrointestinal/rash/severe-allergy risks; WHO Guiding principles and NICE1.8 provide general prescribing/stewardship without all these specific adverse effects.",
+          "requested_change": "Add independent authoritative antibiotic adverse-effect source and actual locator, retaining current patient-safe wording.",
+          "resolution": "NHS antibiotic side-effects original15–43 independently read; stable GI/rash/severe-allergy corroboration of CDC; expired2025 review due date explicitly retained."
+        },
+        {
+          "id": "PUER-nutrition-route-pair",
+          "status": "resolved",
+          "section": "diet",
+          "claim": "diet-1",
+          "finding": "NICECG32 directly supports oral/tube/parenteral route selection; SMFMFigure2 supports early enteral nutrition only.",
+          "requested_change": "Narrow to individually assessed nutrition and conditional early enteral support, or add independent route-selection guidance.",
+          "resolution": "Revised bilingual text limits route discussion to suitability-assessed early enteral nutrition; SMFMFigure2 and NICECG32 support."
+        },
+        {
+          "id": "PUER-fertility-counselling-pair",
+          "status": "resolved",
+          "section": "prognosis_followup",
+          "claim": "prognosis-followup-2",
+          "finding": "SMFM PDF12/B13 supports fertility implications of pelvic infection/hysterectomy, but current other references only generic follow-up.",
+          "requested_change": "Add separately authored reproductive counselling source, or narrow to confirming procedure-specific follow-up.",
+          "resolution": "Revised bilingual claim specifically addresses hysterectomy and inability to carry a further pregnancy; originalNHS15/33–42 and maternalSMFM12–13 directly support. No elective treatment sequence imported."
+        },
+        {
+          "id": "PUER-key-kinds",
+          "status": "resolved",
+          "finding": "complications-1/2 include major harms but are explanation; medications-1 is a conditional clinical selection statement.",
+          "requested_change": "Use risk for complications1/2 and action for medications1; existing principal medical evidence can be retained.",
+          "resolution": "medications1 nowaction and complications1/2 nowrisk; substantive content unchanged."
+        }
+      ],
+      "resolution": "Accepted after one full independent review and one targeted four-finding recheck. Source reads and current artifact hashes bound; medical_reviewed remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-puerperal-sepsis-independent.json"
+  },
+  {
+    "id": "p003-puerperal-sepsis-special-populations",
+    "target": {
+      "kind": "condition",
+      "id": "puerperal-sepsis",
+      "section": "special_populations"
+    },
+    "content_sha256": "01ab4d7fe030f31f7b55e9cb9881b698c5019027a3b4ac0c71540016f33ec666",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_immunology_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-puerperal-cdc-lactation",
+        "source_metadata_sha256": "0f9900609b79d917169d4bde2aab6adb626a4ecb4579d813a92d2a125ee9785e",
+        "locator": "Prescription medications",
+        "source_version": "2025-09-23; actual official indexed full page: individualized maternal need, milk transfer/infant absorption; discuss medicines with both providers. AAP2013 underlying report; independent institution from NHS, shared pharmacology data.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "Institutional patient education; supporting material is not counted as an independent original trial."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-nhs-lactation",
+        "source_metadata_sha256": "9523528b6c51a8e8da786ebbe00676417360a26cbd78effd4593bfcfd0bdb34d",
+        "locator": "Opening guidance",
+        "source_version": "Reviewed2026-05-07; actual full official HTML: tell team breastfeeding and infant prematurity/jaundice; drug-specific advice, do not independently stop prescriptions.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Institutional patient education; supporting material is not counted as an independent original trial."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-nice",
+        "source_metadata_sha256": "94c9f94316a734cc8846859fbfae264d90c99af39e3d181805166a86805c2292",
+        "locator": "1.1.4/1.12 | 1.2/1.8-1.9",
+        "source_version": "Published2025-11-19 amended2026-01; actual official PDF via urllib+pdftotext pp6-34, 1.1-1.16: recognition, pregnancy risks, assessment, triage, sampling, fluids, source control, family information/discharge. HTML403; PDFread succeeded. SSC evidence overlap with SMFM disclosed.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-smfm",
+        "source_metadata_sha256": "b8ce4e22c478d36044f3ea6fb9ebe0eca1da990cab74d24d93016258a48544f5",
+        "locator": "p13-15 social support/bias | p2/p9-10",
+        "source_version": "September2023 reaffirmed2025; official PDF actual pdftotext p1-9 core definitions/risk/diagnosis/mimics/antibiotics/source control and p11-14 organ support/outcomes/follow-up. ACOG endorsement is not independent authorship; largely SSC2021/nonpregnant trials with maternal evidence where available.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-SMFM",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-who-peripartum",
+        "source_metadata_sha256": "0b8a3deb7acfa8286daafc7a49d9f166980f223c2480c2373a7fd087254a1247",
+        "locator": "General principles maternal conditions",
+        "source_version": "2015; actual WHO original chapter3 general principles and recommendation20 postpartum endometritis, remarks/evidence. NCBI hosts WHO original, not NIH independent guidance. Prevention updates2021 not replaced by old rules; no old operative prophylaxis doses used.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "MSF references WHO guidance; WHO original remains WHO even when NCBI hosted. No separate trial replication implied."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "special-populations-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "糖尿病、免疫抑制、肾病或心脏病者需告诉团队；这些情况影响感染风险、用药和补液。哺乳状态也应在用药核对时主动说明，由团队确认具体药物的适用性。",
+          "en": "Tell the team about diabetes, immunosuppression, kidney or heart disease, which affect infection risk, medicines and fluids. Also state breastfeeding status during medication review so suitability of each drug can be checked."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.2/1.8-1.9",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p2/p9-10",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-who-peripartum",
+            "locator": "General principles maternal conditions",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-nhs-lactation",
+            "locator": "Opening guidance",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-cdc-lactation",
+            "locator": "Prescription medications",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      },
+      {
+        "id": "special-populations-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "语言、听力、认知或沟通困难时，应提供翻译和适合的说明，让家属协助描述和平时不同的表现；不能因不典型表达而忽视恶化。",
+          "en": "Language, hearing, cognitive or communication difficulties require interpreters and accessible explanations; family can help describe changes from baseline, so atypical communication does not obscure deterioration."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.1.4/1.12",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p13-15 social support/bias",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "SMFM/NICE/WHO/MSF独立编写，但共享SSC及WHO上游；CDC与NHS恢复科普跨机构。MSF两页同组，WHO托管页面不计NIH第二源。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "SMFM modern maternal sepsis and WHO2015 peripartum infection scopes are kept distinct. Local antimicrobial/fluid protocols vary; no universal regimen or dose. MSF48h fever diagnostic wording is not a delay instruction; emergency deterioration acts immediately."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_immunology_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "p003-puerperal-cdc-lactation",
+        "p003-puerperal-msf",
+        "p003-puerperal-msf-care",
+        "p003-puerperal-nhs-hysterectomy",
+        "p003-puerperal-nhs-lactation",
+        "p003-puerperal-nice",
+        "p003-puerperal-nutrition",
+        "p003-puerperal-smfm",
+        "p003-puerperal-who-peripartum",
+        "sepsis-cdc",
+        "sepsis-cdc-recovery",
+        "sepsis-nhs",
+        "sepsis-nhs-antibiotics-effects",
+        "sepsis-who"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "PUER-medication-risk-pair",
+          "status": "resolved",
+          "section": "medications",
+          "claim": "medications-2",
+          "finding": "CDC directly supports named gastrointestinal/rash/severe-allergy risks; WHO Guiding principles and NICE1.8 provide general prescribing/stewardship without all these specific adverse effects.",
+          "requested_change": "Add independent authoritative antibiotic adverse-effect source and actual locator, retaining current patient-safe wording.",
+          "resolution": "NHS antibiotic side-effects original15–43 independently read; stable GI/rash/severe-allergy corroboration of CDC; expired2025 review due date explicitly retained."
+        },
+        {
+          "id": "PUER-nutrition-route-pair",
+          "status": "resolved",
+          "section": "diet",
+          "claim": "diet-1",
+          "finding": "NICECG32 directly supports oral/tube/parenteral route selection; SMFMFigure2 supports early enteral nutrition only.",
+          "requested_change": "Narrow to individually assessed nutrition and conditional early enteral support, or add independent route-selection guidance.",
+          "resolution": "Revised bilingual text limits route discussion to suitability-assessed early enteral nutrition; SMFMFigure2 and NICECG32 support."
+        },
+        {
+          "id": "PUER-fertility-counselling-pair",
+          "status": "resolved",
+          "section": "prognosis_followup",
+          "claim": "prognosis-followup-2",
+          "finding": "SMFM PDF12/B13 supports fertility implications of pelvic infection/hysterectomy, but current other references only generic follow-up.",
+          "requested_change": "Add separately authored reproductive counselling source, or narrow to confirming procedure-specific follow-up.",
+          "resolution": "Revised bilingual claim specifically addresses hysterectomy and inability to carry a further pregnancy; originalNHS15/33–42 and maternalSMFM12–13 directly support. No elective treatment sequence imported."
+        },
+        {
+          "id": "PUER-key-kinds",
+          "status": "resolved",
+          "finding": "complications-1/2 include major harms but are explanation; medications-1 is a conditional clinical selection statement.",
+          "requested_change": "Use risk for complications1/2 and action for medications1; existing principal medical evidence can be retained.",
+          "resolution": "medications1 nowaction and complications1/2 nowrisk; substantive content unchanged."
+        }
+      ],
+      "resolution": "Accepted after one full independent review and one targeted four-finding recheck. Source reads and current artifact hashes bound; medical_reviewed remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-puerperal-sepsis-independent.json"
+  },
+  {
+    "id": "p003-puerperal-sepsis-prognosis-followup",
+    "target": {
+      "kind": "condition",
+      "id": "puerperal-sepsis",
+      "section": "prognosis_followup"
+    },
+    "content_sha256": "dd5095d9c5582204c386ee5b0c4e3d6ce79401a1a35b97362c0d188cc33e16db",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_immunology_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-puerperal-nice",
+        "source_metadata_sha256": "94c9f94316a734cc8846859fbfae264d90c99af39e3d181805166a86805c2292",
+        "locator": "1.16",
+        "source_version": "Published2025-11-19 amended2026-01; actual official PDF via urllib+pdftotext pp6-34, 1.1-1.16: recognition, pregnancy risks, assessment, triage, sampling, fluids, source control, family information/discharge. HTML403; PDFread succeeded. SSC evidence overlap with SMFM disclosed.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-smfm",
+        "source_metadata_sha256": "b8ce4e22c478d36044f3ea6fb9ebe0eca1da990cab74d24d93016258a48544f5",
+        "locator": "p13 discharge | p13 morbidity/follow-up",
+        "source_version": "September2023 reaffirmed2025; official PDF actual pdftotext p1-9 core definitions/risk/diagnosis/mimics/antibiotics/source control and p11-14 organ support/outcomes/follow-up. ACOG endorsement is not independent authorship; largely SSC2021/nonpregnant trials with maternal evidence where available.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-SMFM",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "sepsis-cdc-recovery",
+        "source_metadata_sha256": "7aacca46b9075eb933fd8592791643d871137c4bb4cbbc34333807f8096ae3d5",
+        "locator": "Long-term effects",
+        "source_version": "First steps, home recovery, long-term effects and recurrence.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "Institutional patient education; supporting material is not counted as an independent original trial."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-nhs-hysterectomy",
+        "source_metadata_sha256": "351ac5bc5d77fad645c7513c98a5d4fa8101876048a49b5cb935a9cfd7088f74",
+        "locator": "Overview15; Things to consider33–42; Recovery66–70",
+        "source_version": "Actual original HTML overview line15, Things to consider33–42 and Recovery66–70. Review due2025-10-11 passed: only stable anatomic fertility consequence and procedure-specific discussion used. Elective less-invasive-first sequence is not transferred to emergency sepsis source control.",
+        "accessed_at": "2026-10-03",
+        "population": "产后脓毒症患者；仅支持此条标明的药物风险或子宫切除后的生育影响。",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Institutional patient education; supporting material is not counted as an independent original trial."
+        ],
+        "relation": "supports",
+        "assessment": "Independently supports inability to become pregnant after uterine removal and procedure-specific discussion. SMFM supplies maternal sepsis/hysterectomy context; no elective treatment sequence extrapolated."
+      }
+    ],
+    "claims": [
+      {
+        "id": "prognosis-followup-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "出院时确认感染源、尚待回报的结果、剩余药物、伤口或管路照护、复诊和急救联系人；再次恶化时及时就医。",
+          "en": "At discharge confirm the source, outstanding results, remaining medicines, wound or line care, follow-up and emergency contacts; seek care promptly for deterioration."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.16",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p13 discharge",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      },
+      {
+        "id": "prognosis-followup-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "重症后可能出现体力、睡眠、记忆或情绪问题，应随访评估并按需要转康复或心理支持；如手术切除了子宫，今后不能再怀孕，应请专科解释对生育和恢复的影响。",
+          "en": "Severe illness can leave physical, sleep, memory or emotional difficulties requiring follow-up and rehabilitation or psychological support. If surgery removed the uterus, future pregnancy is no longer possible; ask the specialist to explain the effects on fertility and recovery."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p13 morbidity/follow-up",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "sepsis-cdc-recovery",
+            "locator": "Long-term effects",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.16",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-nhs-hysterectomy",
+            "locator": "Overview15; Things to consider33–42; Recovery66–70",
+            "assessment": "Independently supports inability to become pregnant after uterine removal and procedure-specific discussion. SMFM supplies maternal sepsis/hysterectomy context; no elective treatment sequence extrapolated."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "SMFM/NICE/WHO/MSF独立编写，但共享SSC及WHO上游；CDC与NHS恢复科普跨机构。MSF两页同组，WHO托管页面不计NIH第二源。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "SMFM modern maternal sepsis and WHO2015 peripartum infection scopes are kept distinct. Local antimicrobial/fluid protocols vary; no universal regimen or dose. MSF48h fever diagnostic wording is not a delay instruction; emergency deterioration acts immediately."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_immunology_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "p003-puerperal-cdc-lactation",
+        "p003-puerperal-msf",
+        "p003-puerperal-msf-care",
+        "p003-puerperal-nhs-hysterectomy",
+        "p003-puerperal-nhs-lactation",
+        "p003-puerperal-nice",
+        "p003-puerperal-nutrition",
+        "p003-puerperal-smfm",
+        "p003-puerperal-who-peripartum",
+        "sepsis-cdc",
+        "sepsis-cdc-recovery",
+        "sepsis-nhs",
+        "sepsis-nhs-antibiotics-effects",
+        "sepsis-who"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "PUER-medication-risk-pair",
+          "status": "resolved",
+          "section": "medications",
+          "claim": "medications-2",
+          "finding": "CDC directly supports named gastrointestinal/rash/severe-allergy risks; WHO Guiding principles and NICE1.8 provide general prescribing/stewardship without all these specific adverse effects.",
+          "requested_change": "Add independent authoritative antibiotic adverse-effect source and actual locator, retaining current patient-safe wording.",
+          "resolution": "NHS antibiotic side-effects original15–43 independently read; stable GI/rash/severe-allergy corroboration of CDC; expired2025 review due date explicitly retained."
+        },
+        {
+          "id": "PUER-nutrition-route-pair",
+          "status": "resolved",
+          "section": "diet",
+          "claim": "diet-1",
+          "finding": "NICECG32 directly supports oral/tube/parenteral route selection; SMFMFigure2 supports early enteral nutrition only.",
+          "requested_change": "Narrow to individually assessed nutrition and conditional early enteral support, or add independent route-selection guidance.",
+          "resolution": "Revised bilingual text limits route discussion to suitability-assessed early enteral nutrition; SMFMFigure2 and NICECG32 support."
+        },
+        {
+          "id": "PUER-fertility-counselling-pair",
+          "status": "resolved",
+          "section": "prognosis_followup",
+          "claim": "prognosis-followup-2",
+          "finding": "SMFM PDF12/B13 supports fertility implications of pelvic infection/hysterectomy, but current other references only generic follow-up.",
+          "requested_change": "Add separately authored reproductive counselling source, or narrow to confirming procedure-specific follow-up.",
+          "resolution": "Revised bilingual claim specifically addresses hysterectomy and inability to carry a further pregnancy; originalNHS15/33–42 and maternalSMFM12–13 directly support. No elective treatment sequence imported."
+        },
+        {
+          "id": "PUER-key-kinds",
+          "status": "resolved",
+          "finding": "complications-1/2 include major harms but are explanation; medications-1 is a conditional clinical selection statement.",
+          "requested_change": "Use risk for complications1/2 and action for medications1; existing principal medical evidence can be retained.",
+          "resolution": "medications1 nowaction and complications1/2 nowrisk; substantive content unchanged."
+        }
+      ],
+      "resolution": "Accepted after one full independent review and one targeted four-finding recheck. Source reads and current artifact hashes bound; medical_reviewed remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-puerperal-sepsis-independent.json"
+  },
+  {
+    "id": "p003-puerperal-sepsis-complications",
+    "target": {
+      "kind": "condition",
+      "id": "puerperal-sepsis",
+      "section": "complications"
+    },
+    "content_sha256": "ea8459bdc722e8f1d2db39e713baf87ce978ed9eb58e044a43a2ba7032901274",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_immunology_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-puerperal-msf",
+        "source_metadata_sha256": "98e7e33b6ca416bf3003a4ead9159346d4073e82c4a6811eba90790e857cb9a5",
+        "locator": "11.4.2",
+        "source_version": "Actual official HTML 11.4.1-2 retained tissue, endometritis/salpingitis, pelvic abscess/peritonitis, instability source control;11.4.4 urine leakage. MSF cites WHO2017. Fever48h wording not used as waiting advice; septic/unstable person immediate care.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GLOBAL",
+        "independence_group": "MSF",
+        "upstream_evidence": [
+          "MSF references WHO guidance; WHO original remains WHO even when NCBI hosted. No separate trial replication implied."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-smfm",
+        "source_metadata_sha256": "b8ce4e22c478d36044f3ea6fb9ebe0eca1da990cab74d24d93016258a48544f5",
+        "locator": "p2 definition/pathophysiology | p9/p13",
+        "source_version": "September2023 reaffirmed2025; official PDF actual pdftotext p1-9 core definitions/risk/diagnosis/mimics/antibiotics/source control and p11-14 organ support/outcomes/follow-up. ACOG endorsement is not independent authorship; largely SSC2021/nonpregnant trials with maternal evidence where available.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-SMFM",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "sepsis-who",
+        "source_metadata_sha256": "f29e6cb6925c12103f7b4091866e4f6bb2cefa3c85000ca6cf78317c53f8d36d",
+        "locator": "Overview",
+        "source_version": "Overview, risk, signs in adults and children, prevention and treatment.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "MSF references WHO guidance; WHO original remains WHO even when NCBI hosted. No separate trial replication implied."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "complications-1",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "脓毒性休克是感染造成严重循环障碍的状态，可伴肾、肺、凝血或其他器官受损；可能需要重症监护，并有死亡风险。",
+          "en": "Septic shock is severe infection-related circulatory failure, potentially with kidney, lung, clotting or other organ dysfunction; intensive care may be needed and death is possible."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p2 definition/pathophysiology",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "sepsis-who",
+            "locator": "Overview",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      },
+      {
+        "id": "complications-2",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "盆腔感染可形成脓肿或腹膜炎；严重坏死可能需要切除感染组织。部分患者会有较长恢复期，具体后果取决于感染部位和手术范围。",
+          "en": "Pelvic infection may cause an abscess or peritonitis; severe tissue death may require removal of infected tissue. Recovery can be prolonged and consequences depend on the source and extent of surgery."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-msf",
+            "locator": "11.4.2",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p9/p13",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "SMFM/NICE/WHO/MSF独立编写，但共享SSC及WHO上游；CDC与NHS恢复科普跨机构。MSF两页同组，WHO托管页面不计NIH第二源。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "SMFM modern maternal sepsis and WHO2015 peripartum infection scopes are kept distinct. Local antimicrobial/fluid protocols vary; no universal regimen or dose. MSF48h fever diagnostic wording is not a delay instruction; emergency deterioration acts immediately."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_immunology_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "p003-puerperal-cdc-lactation",
+        "p003-puerperal-msf",
+        "p003-puerperal-msf-care",
+        "p003-puerperal-nhs-hysterectomy",
+        "p003-puerperal-nhs-lactation",
+        "p003-puerperal-nice",
+        "p003-puerperal-nutrition",
+        "p003-puerperal-smfm",
+        "p003-puerperal-who-peripartum",
+        "sepsis-cdc",
+        "sepsis-cdc-recovery",
+        "sepsis-nhs",
+        "sepsis-nhs-antibiotics-effects",
+        "sepsis-who"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "PUER-medication-risk-pair",
+          "status": "resolved",
+          "section": "medications",
+          "claim": "medications-2",
+          "finding": "CDC directly supports named gastrointestinal/rash/severe-allergy risks; WHO Guiding principles and NICE1.8 provide general prescribing/stewardship without all these specific adverse effects.",
+          "requested_change": "Add independent authoritative antibiotic adverse-effect source and actual locator, retaining current patient-safe wording.",
+          "resolution": "NHS antibiotic side-effects original15–43 independently read; stable GI/rash/severe-allergy corroboration of CDC; expired2025 review due date explicitly retained."
+        },
+        {
+          "id": "PUER-nutrition-route-pair",
+          "status": "resolved",
+          "section": "diet",
+          "claim": "diet-1",
+          "finding": "NICECG32 directly supports oral/tube/parenteral route selection; SMFMFigure2 supports early enteral nutrition only.",
+          "requested_change": "Narrow to individually assessed nutrition and conditional early enteral support, or add independent route-selection guidance.",
+          "resolution": "Revised bilingual text limits route discussion to suitability-assessed early enteral nutrition; SMFMFigure2 and NICECG32 support."
+        },
+        {
+          "id": "PUER-fertility-counselling-pair",
+          "status": "resolved",
+          "section": "prognosis_followup",
+          "claim": "prognosis-followup-2",
+          "finding": "SMFM PDF12/B13 supports fertility implications of pelvic infection/hysterectomy, but current other references only generic follow-up.",
+          "requested_change": "Add separately authored reproductive counselling source, or narrow to confirming procedure-specific follow-up.",
+          "resolution": "Revised bilingual claim specifically addresses hysterectomy and inability to carry a further pregnancy; originalNHS15/33–42 and maternalSMFM12–13 directly support. No elective treatment sequence imported."
+        },
+        {
+          "id": "PUER-key-kinds",
+          "status": "resolved",
+          "finding": "complications-1/2 include major harms but are explanation; medications-1 is a conditional clinical selection statement.",
+          "requested_change": "Use risk for complications1/2 and action for medications1; existing principal medical evidence can be retained.",
+          "resolution": "medications1 nowaction and complications1/2 nowrisk; substantive content unchanged."
+        }
+      ],
+      "resolution": "Accepted after one full independent review and one targeted four-finding recheck. Source reads and current artifact hashes bound; medical_reviewed remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-puerperal-sepsis-independent.json"
+  },
+  {
+    "id": "p003-puerperal-sepsis-prevention",
+    "target": {
+      "kind": "condition",
+      "id": "puerperal-sepsis",
+      "section": "prevention"
+    },
+    "content_sha256": "55d205595a9d7945261479b0c9ce346a663b8a505ee7a7f458251062861b68dc",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_immunology_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-puerperal-msf-care",
+        "source_metadata_sha256": "0bc6d724bb40851b9eb096b41ee7402b88a17adb7f9b6479f73b55e184a50e64",
+        "locator": "11.2.1-2",
+        "source_version": "Actual urllib official HTML 11.2.1-2: monitoring, personal hygiene, maternal danger signs, discharge/followup. Same MSF family as complications; not an independent pair.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GLOBAL",
+        "independence_group": "MSF",
+        "upstream_evidence": [
+          "MSF references WHO guidance; WHO original remains WHO even when NCBI hosted. No separate trial replication implied."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-nice",
+        "source_metadata_sha256": "94c9f94316a734cc8846859fbfae264d90c99af39e3d181805166a86805c2292",
+        "locator": "1.2/1.15-1.16",
+        "source_version": "Published2025-11-19 amended2026-01; actual official PDF via urllib+pdftotext pp6-34, 1.1-1.16: recognition, pregnancy risks, assessment, triage, sampling, fluids, source control, family information/discharge. HTML403; PDFread succeeded. SSC evidence overlap with SMFM disclosed.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-smfm",
+        "source_metadata_sha256": "b8ce4e22c478d36044f3ea6fb9ebe0eca1da990cab74d24d93016258a48544f5",
+        "locator": "p13 support",
+        "source_version": "September2023 reaffirmed2025; official PDF actual pdftotext p1-9 core definitions/risk/diagnosis/mimics/antibiotics/source control and p11-14 organ support/outcomes/follow-up. ACOG endorsement is not independent authorship; largely SSC2021/nonpregnant trials with maternal evidence where available.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-SMFM",
+        "upstream_evidence": [
+          "SMFM maternal guidance draws heavily on SSC2021/general adult sepsis evidence; NICE shares sepsis research. Separate guideline writing is not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "p003-puerperal-who-peripartum",
+        "source_metadata_sha256": "0b8a3deb7acfa8286daafc7a49d9f166980f223c2480c2373a7fd087254a1247",
+        "locator": "General principles",
+        "source_version": "2015; actual WHO original chapter3 general principles and recommendation20 postpartum endometritis, remarks/evidence. NCBI hosts WHO original, not NIH independent guidance. Prevention updates2021 not replaced by old rules; no old operative prophylaxis doses used.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "MSF references WHO guidance; WHO original remains WHO even when NCBI hosted. No separate trial replication implied."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      },
+      {
+        "source_id": "sepsis-cdc",
+        "source_metadata_sha256": "4f0df89b5186d66be1dbc56fd39abca05399e65460222690de1403203922c1eb",
+        "locator": "Reducing risk/stewardship",
+        "source_version": "Updated and reviewed by subject-matter experts 17 August 2026; diagnosis, treatment and antibiotic risks.",
+        "accessed_at": "2026-10-03",
+        "population": "产后疑似/确诊脓毒症；局部感染为病灶或鉴别；营养康复一般成人原则只用于稳定恢复者。",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "Institutional patient education; supporting material is not counted as an independent original trial."
+        ],
+        "relation": "supports",
+        "assessment": "逐条见claims；SMFM大量依据SSC成人研究，明确妊娠/产后应用限制。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "prevention-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "遵循手卫生和清洁伤口照护，医疗机构按规范使用无菌操作和有指征的预防性抗生素；不要自行长期吃抗生素防感染。",
+          "en": "Follow hand hygiene and clean wound care; facilities use aseptic procedures and indicated antibiotic prophylaxis. Do not take prolonged antibiotics independently to prevent infection."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-who-peripartum",
+            "locator": "General principles",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "sepsis-cdc",
+            "locator": "Reducing risk/stewardship",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      },
+      {
+        "id": "prevention-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "产后拿到清楚的危险信号和联系方式，恶露异味、伤口恶化或全身不适及时评估；既往感染和慢性病在后续孕前或产科就诊时一并告知。",
+          "en": "Obtain clear postpartum warning signs and contact details; offensive discharge, worsening wounds or systemic illness need timely assessment. Discuss previous infection and chronic conditions at future preconception or maternity visits."
+        },
+        "supports": [
+          {
+            "source_id": "p003-puerperal-msf-care",
+            "locator": "11.2.1-2",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-nice",
+            "locator": "1.2/1.15-1.16",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          },
+          {
+            "source_id": "p003-puerperal-smfm",
+            "locator": "p13 support",
+            "assessment": "实际读取对应原文；局部感染与器官功能障碍脓毒症分开，恢复期指导只在稳定后适用。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "SMFM/NICE/WHO/MSF独立编写，但共享SSC及WHO上游；CDC与NHS恢复科普跨机构。MSF两页同组，WHO托管页面不计NIH第二源。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "SMFM modern maternal sepsis and WHO2015 peripartum infection scopes are kept distinct. Local antimicrobial/fluid protocols vary; no universal regimen or dose. MSF48h fever diagnostic wording is not a delay instruction; emergency deterioration acts immediately."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_immunology_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "p003-puerperal-cdc-lactation",
+        "p003-puerperal-msf",
+        "p003-puerperal-msf-care",
+        "p003-puerperal-nhs-hysterectomy",
+        "p003-puerperal-nhs-lactation",
+        "p003-puerperal-nice",
+        "p003-puerperal-nutrition",
+        "p003-puerperal-smfm",
+        "p003-puerperal-who-peripartum",
+        "sepsis-cdc",
+        "sepsis-cdc-recovery",
+        "sepsis-nhs",
+        "sepsis-nhs-antibiotics-effects",
+        "sepsis-who"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "PUER-medication-risk-pair",
+          "status": "resolved",
+          "section": "medications",
+          "claim": "medications-2",
+          "finding": "CDC directly supports named gastrointestinal/rash/severe-allergy risks; WHO Guiding principles and NICE1.8 provide general prescribing/stewardship without all these specific adverse effects.",
+          "requested_change": "Add independent authoritative antibiotic adverse-effect source and actual locator, retaining current patient-safe wording.",
+          "resolution": "NHS antibiotic side-effects original15–43 independently read; stable GI/rash/severe-allergy corroboration of CDC; expired2025 review due date explicitly retained."
+        },
+        {
+          "id": "PUER-nutrition-route-pair",
+          "status": "resolved",
+          "section": "diet",
+          "claim": "diet-1",
+          "finding": "NICECG32 directly supports oral/tube/parenteral route selection; SMFMFigure2 supports early enteral nutrition only.",
+          "requested_change": "Narrow to individually assessed nutrition and conditional early enteral support, or add independent route-selection guidance.",
+          "resolution": "Revised bilingual text limits route discussion to suitability-assessed early enteral nutrition; SMFMFigure2 and NICECG32 support."
+        },
+        {
+          "id": "PUER-fertility-counselling-pair",
+          "status": "resolved",
+          "section": "prognosis_followup",
+          "claim": "prognosis-followup-2",
+          "finding": "SMFM PDF12/B13 supports fertility implications of pelvic infection/hysterectomy, but current other references only generic follow-up.",
+          "requested_change": "Add separately authored reproductive counselling source, or narrow to confirming procedure-specific follow-up.",
+          "resolution": "Revised bilingual claim specifically addresses hysterectomy and inability to carry a further pregnancy; originalNHS15/33–42 and maternalSMFM12–13 directly support. No elective treatment sequence imported."
+        },
+        {
+          "id": "PUER-key-kinds",
+          "status": "resolved",
+          "finding": "complications-1/2 include major harms but are explanation; medications-1 is a conditional clinical selection statement.",
+          "requested_change": "Use risk for complications1/2 and action for medications1; existing principal medical evidence can be retained.",
+          "resolution": "medications1 nowaction and complications1/2 nowrisk; substantive content unchanged."
+        }
+      ],
+      "resolution": "Accepted after one full independent review and one targeted four-finding recheck. Source reads and current artifact hashes bound; medical_reviewed remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-puerperal-sepsis-independent.json"
+  }
+]

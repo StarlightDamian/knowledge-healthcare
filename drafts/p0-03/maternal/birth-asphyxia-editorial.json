@@ -1,0 +1,1764 @@
+[
+  {
+    "id": "p003-birth-asphyxia-summary",
+    "target": {
+      "kind": "condition",
+      "id": "birth-asphyxia",
+      "section": "summary"
+    },
+    "content_sha256": "03922dcef29afb0a1386b94c227bb34dbb894bdec027a0cfe78011c53cf802f2",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-asphyxia-aha",
+        "source_metadata_sha256": "34de7e6db8656fb6a11e127a0d9530fb89e938099b5302b39d957265268913de",
+        "locator": "Abstract/17",
+        "source_version": "2025 guideline; actual official HTML abstract, preparation, temperature, ventilation, chest compressions, medications and section17 post-resuscitation. Shared ILCOR evidence, AAP reprint not an independent source. 2025 recommendation does not support routine cooling below36weeks.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "US",
+        "independence_group": "US-AHA-AAP",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-cps",
+        "source_metadata_sha256": "cab2f3ce0b7ceb23cd18619589fbaf7cb02ea30420e6a0d4d229ea93209408e5",
+        "locator": "Background",
+        "source_version": "2018-06-12 reaffirmed2024-01-11. Actual official HTML and urllib text: background, eligibility, exclusion, adverse effects, adjuncts including feeding, MRI and multidisciplinary follow-up. Shares cooling trials with QCG/AHA; older35week suggestion not generalized.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "CA",
+        "independence_group": "CA-CPS",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-qcg",
+        "source_metadata_sha256": "2efb49e15dfde0df8cef66a5f435d0f62f00a0fdda00324c029ae013e06231e9",
+        "locator": "3.1/3.4",
+        "source_version": "MN21.11-V12-R26 December2021 amendedJuly2024. Actual official PDF p3-4 pathways, p11-15 diagnosis/staging/initialcare, p20-22 organ support/nutrition/sedation/cooling, p24-26 imaging/outcomes/discharge. Web PDF succeeded; urllib403. Historical35week cooling threshold not adopted against newer2025AHA evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "AU",
+        "independence_group": "AU-QCG",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-who",
+        "source_metadata_sha256": "ad1797c783efd02a6feae6079c49b5096cbfeb2779529acb7b83e673103325db",
+        "locator": "Overview",
+        "source_version": "Actual entire official overview: failure to establish breathing, delivery complications, drying/warming/stimulation and assisted ventilation, systems/training/followup. 2012 guideline is historical; WHO June2026 update-development announcement is not a new completed guideline.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "WHO original resuscitation guidance; shared underlying neonatal evidence, not an independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "summary-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "有些宝宝只需短暂帮助，有些需要持续复苏和重症监护；不能仅凭哭声或一个评分判断后果。",
+          "en": "Some babies need brief assistance, while others need prolonged resuscitation and intensive care; crying or a single score cannot determine the outcome."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-who",
+            "locator": "Overview",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-aha",
+            "locator": "Abstract/17",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      },
+      {
+        "id": "summary-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "缺氧缺血性脑病（HIE）是缺氧和供血不足影响脑功能后的情况，可能出现反应、肌张力、吃奶或抽搐异常；出生窒息与HIE不是同义词。",
+          "en": "Hypoxic-ischaemic encephalopathy (HIE) is disturbed brain function after inadequate oxygen and blood supply, affecting responsiveness, tone, feeding or causing seizures; it is not synonymous with birth asphyxia."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-cps",
+            "locator": "Background",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "3.1/3.4",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "AHA/AAP共同指南计一个机构组；CPS/QCG独立编写但共享低温RCT及ILCOR，WHO独立公共卫生指导。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "2025AHA不支持<36周常规降温，旧CPS/QCG35周建议不推广；QCG降温期禁食而CPS允许微量肠内喂养，正文保留个体/本地方案，不以任一普遍化。"
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_maternal",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "待独立复核"
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p003-birth-asphyxia-causes-risks",
+    "target": {
+      "kind": "condition",
+      "id": "birth-asphyxia",
+      "section": "causes_risks"
+    },
+    "content_sha256": "ef4d19ba8314033b18a546c100053093cfe87f1eee7f1d4bec68b3f35a296ebc",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-asphyxia-aha",
+        "source_metadata_sha256": "34de7e6db8656fb6a11e127a0d9530fb89e938099b5302b39d957265268913de",
+        "locator": "Abstract/Respiratory support",
+        "source_version": "2025 guideline; actual official HTML abstract, preparation, temperature, ventilation, chest compressions, medications and section17 post-resuscitation. Shared ILCOR evidence, AAP reprint not an independent source. 2025 recommendation does not support routine cooling below36weeks.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "US",
+        "independence_group": "US-AHA-AAP",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-cps",
+        "source_metadata_sha256": "cab2f3ce0b7ceb23cd18619589fbaf7cb02ea30420e6a0d4d229ea93209408e5",
+        "locator": "Eligibility B",
+        "source_version": "2018-06-12 reaffirmed2024-01-11. Actual official HTML and urllib text: background, eligibility, exclusion, adverse effects, adjuncts including feeding, MRI and multidisciplinary follow-up. Shares cooling trials with QCG/AHA; older35week suggestion not generalized.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "CA",
+        "independence_group": "CA-CPS",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-qcg",
+        "source_metadata_sha256": "2efb49e15dfde0df8cef66a5f435d0f62f00a0fdda00324c029ae013e06231e9",
+        "locator": "Background/clinical assessment",
+        "source_version": "MN21.11-V12-R26 December2021 amendedJuly2024. Actual official PDF p3-4 pathways, p11-15 diagnosis/staging/initialcare, p20-22 organ support/nutrition/sedation/cooling, p24-26 imaging/outcomes/discharge. Web PDF succeeded; urllib403. Historical35week cooling threshold not adopted against newer2025AHA evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "AU",
+        "independence_group": "AU-QCG",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-neonatal-sepsis-recognition",
+        "source_metadata_sha256": "76c73336f52fd5552c87207a2ee3b3622131e4d1941672ab8f4d61cec479fb60",
+        "locator": "Differential diagnosis",
+        "source_version": "May2025; actual full HTML history/exam, differentials, investigations, management and transfer. Same RCH family, not independent of RCH neonatal antimicrobials.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "AU",
+        "independence_group": "AU-RCH",
+        "upstream_evidence": [
+          "RCH institutional guideline on unwell neonates; shared neonatal evidence and referral guidance; same RCH group counted once."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "causes-risks-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "胎盘早剥、脐带脱垂或子宫破裂等突发事件可中断氧和血流供应；缺氧发生时点和持续程度会影响后续评估。",
+          "en": "Acute placental abruption, cord prolapse or uterine rupture can interrupt oxygen and blood flow; timing and extent inform subsequent assessment."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-cps",
+            "locator": "Eligibility B",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "Background/clinical assessment",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      },
+      {
+        "id": "causes-risks-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "早产儿还可能因肺和呼吸调节未成熟而需要帮助，并非每次出生后呼吸困难都能归为缺氧脑损伤。",
+          "en": "Preterm babies may also need support because lungs and breathing control are immature; not every breathing problem after birth represents hypoxic brain injury."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-aha",
+            "locator": "Abstract/Respiratory support",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-neonatal-sepsis-recognition",
+            "locator": "Differential diagnosis",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "AHA/AAP共同指南计一个机构组；CPS/QCG独立编写但共享低温RCT及ILCOR，WHO独立公共卫生指导。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "2025AHA不支持<36周常规降温，旧CPS/QCG35周建议不推广；QCG降温期禁食而CPS允许微量肠内喂养，正文保留个体/本地方案，不以任一普遍化。"
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_maternal",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "待独立复核"
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p003-birth-asphyxia-red-flags",
+    "target": {
+      "kind": "condition",
+      "id": "birth-asphyxia",
+      "section": "red_flags"
+    },
+    "content_sha256": "2a51f1b854e5b14f24471c6cc0ed3cb2584225f3773f5cd6e630ae3581ea5a37",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-asphyxia-aha",
+        "source_metadata_sha256": "34de7e6db8656fb6a11e127a0d9530fb89e938099b5302b39d957265268913de",
+        "locator": "Initial steps/ventilation",
+        "source_version": "2025 guideline; actual official HTML abstract, preparation, temperature, ventilation, chest compressions, medications and section17 post-resuscitation. Shared ILCOR evidence, AAP reprint not an independent source. 2025 recommendation does not support routine cooling below36weeks.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "US",
+        "independence_group": "US-AHA-AAP",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-qcg",
+        "source_metadata_sha256": "2efb49e15dfde0df8cef66a5f435d0f62f00a0fdda00324c029ae013e06231e9",
+        "locator": "3.1/3.5",
+        "source_version": "MN21.11-V12-R26 December2021 amendedJuly2024. Actual official PDF p3-4 pathways, p11-15 diagnosis/staging/initialcare, p20-22 organ support/nutrition/sedation/cooling, p24-26 imaging/outcomes/discharge. Web PDF succeeded; urllib403. Historical35week cooling threshold not adopted against newer2025AHA evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "AU",
+        "independence_group": "AU-QCG",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-who",
+        "source_metadata_sha256": "ad1797c783efd02a6feae6079c49b5096cbfeb2779529acb7b83e673103325db",
+        "locator": "Overview",
+        "source_version": "Actual entire official overview: failure to establish breathing, delivery complications, drying/warming/stimulation and assisted ventilation, systems/training/followup. 2012 guideline is historical; WHO June2026 update-development announcement is not a new completed guideline.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "WHO original resuscitation guidance; shared underlying neonatal evidence, not an independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-neonatal-sepsis-recognition",
+        "source_metadata_sha256": "76c73336f52fd5552c87207a2ee3b3622131e4d1941672ab8f4d61cec479fb60",
+        "locator": "Assessment/Management",
+        "source_version": "May2025; actual full HTML history/exam, differentials, investigations, management and transfer. Same RCH family, not independent of RCH neonatal antimicrobials.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "AU",
+        "independence_group": "AU-RCH",
+        "upstream_evidence": [
+          "RCH institutional guideline on unwell neonates; shared neonatal evidence and referral guidance; same RCH group counted once."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "red-flags-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "宝宝出生后不呼吸、仅喘息、松软或肤色异常，立即叫助产或新生儿团队；院外立即呼叫急救并按调度员指示行动。",
+          "en": "For no breathing, gasping, floppiness or abnormal colour at birth, summon maternity or neonatal staff immediately; outside hospital call emergency services and follow dispatcher instructions."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-aha",
+            "locator": "Initial steps/ventilation",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-who",
+            "locator": "Overview",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      },
+      {
+        "id": "red-flags-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "复苏后出现呼吸暂停、抽搐、叫不醒或吃奶明显变差，立即通知医护或寻求急诊，不能因已恢复过呼吸而放心。",
+          "en": "Apnoea, seizures, inability to wake or markedly poor feeding after resuscitation require immediate clinical help; earlier recovery of breathing is not sufficient reassurance."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "3.1/3.5",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-neonatal-sepsis-recognition",
+            "locator": "Assessment/Management",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "AHA/AAP共同指南计一个机构组；CPS/QCG独立编写但共享低温RCT及ILCOR，WHO独立公共卫生指导。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "2025AHA不支持<36周常规降温，旧CPS/QCG35周建议不推广；QCG降温期禁食而CPS允许微量肠内喂养，正文保留个体/本地方案，不以任一普遍化。"
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_maternal",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "待独立复核"
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p003-birth-asphyxia-care",
+    "target": {
+      "kind": "condition",
+      "id": "birth-asphyxia",
+      "section": "care"
+    },
+    "content_sha256": "debb0aa53aa4a9ff901de4a0695dd39aa5384b64f38b25ae2e4536869761b0ec",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-asphyxia-aha",
+        "source_metadata_sha256": "34de7e6db8656fb6a11e127a0d9530fb89e938099b5302b39d957265268913de",
+        "locator": "Preparation/17",
+        "source_version": "2025 guideline; actual official HTML abstract, preparation, temperature, ventilation, chest compressions, medications and section17 post-resuscitation. Shared ILCOR evidence, AAP reprint not an independent source. 2025 recommendation does not support routine cooling below36weeks.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "US",
+        "independence_group": "US-AHA-AAP",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-cps",
+        "source_metadata_sha256": "cab2f3ce0b7ceb23cd18619589fbaf7cb02ea30420e6a0d4d229ea93209408e5",
+        "locator": "Where should hypothermia be provided",
+        "source_version": "2018-06-12 reaffirmed2024-01-11. Actual official HTML and urllib text: background, eligibility, exclusion, adverse effects, adjuncts including feeding, MRI and multidisciplinary follow-up. Shares cooling trials with QCG/AHA; older35week suggestion not generalized.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "CA",
+        "independence_group": "CA-CPS",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-qcg",
+        "source_metadata_sha256": "2efb49e15dfde0df8cef66a5f435d0f62f00a0fdda00324c029ae013e06231e9",
+        "locator": "3.5-3.6 | 3.6",
+        "source_version": "MN21.11-V12-R26 December2021 amendedJuly2024. Actual official PDF p3-4 pathways, p11-15 diagnosis/staging/initialcare, p20-22 organ support/nutrition/sedation/cooling, p24-26 imaging/outcomes/discharge. Web PDF succeeded; urllib403. Historical35week cooling threshold not adopted against newer2025AHA evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "AU",
+        "independence_group": "AU-QCG",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "care-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "医护先评估呼吸和心率并提供所需支持，同时记录分娩事件、复苏措施和用药；转到上级单位时一并交接。",
+          "en": "Clinicians first assess breathing and heart rate and provide support, while recording birth events, resuscitation and medicines for handover if transfer is required."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-aha",
+            "locator": "Preparation/17",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "3.5-3.6",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      },
+      {
+        "id": "care-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "怀疑HIE且当地无法提供相应重症照护时，应尽早与专科中心联系。是否启动降温由团队决定，家属不要用冰袋或自行降温。",
+          "en": "Suspected HIE requires early specialist contact when local intensive care is insufficient. The team determines cooling eligibility; families must not use ice packs or cool the baby independently."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-cps",
+            "locator": "Where should hypothermia be provided",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "3.6",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "AHA/AAP共同指南计一个机构组；CPS/QCG独立编写但共享低温RCT及ILCOR，WHO独立公共卫生指导。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "2025AHA不支持<36周常规降温，旧CPS/QCG35周建议不推广；QCG降温期禁食而CPS允许微量肠内喂养，正文保留个体/本地方案，不以任一普遍化。"
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_maternal",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "待独立复核"
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p003-birth-asphyxia-diagnosis",
+    "target": {
+      "kind": "condition",
+      "id": "birth-asphyxia",
+      "section": "diagnosis"
+    },
+    "content_sha256": "3468cb7bc5f68ccc41bd4f191ef7ad2c400df5b0375134ae66605457a2497af5",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-asphyxia-cps",
+        "source_metadata_sha256": "cab2f3ce0b7ceb23cd18619589fbaf7cb02ea30420e6a0d4d229ea93209408e5",
+        "locator": "Adjuncts/Side effects | Eligibility A/B/C | Eligibility/MRI/Follow-up",
+        "source_version": "2018-06-12 reaffirmed2024-01-11. Actual official HTML and urllib text: background, eligibility, exclusion, adverse effects, adjuncts including feeding, MRI and multidisciplinary follow-up. Shares cooling trials with QCG/AHA; older35week suggestion not generalized.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "CA",
+        "independence_group": "CA-CPS",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-qcg",
+        "source_metadata_sha256": "2efb49e15dfde0df8cef66a5f435d0f62f00a0fdda00324c029ae013e06231e9",
+        "locator": "3.1/5.1 | 3.2/4.3 | 5.2-5.3",
+        "source_version": "MN21.11-V12-R26 December2021 amendedJuly2024. Actual official PDF p3-4 pathways, p11-15 diagnosis/staging/initialcare, p20-22 organ support/nutrition/sedation/cooling, p24-26 imaging/outcomes/discharge. Web PDF succeeded; urllib403. Historical35week cooling threshold not adopted against newer2025AHA evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "AU",
+        "independence_group": "AU-QCG",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "diagnosis-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "Apgar记录出生后的心率、呼吸、肌张力等状态，不能单独证明窒息的原因或预测永久损伤；团队还看血气、分娩经过和复苏反应。",
+          "en": "Apgar records heart rate, breathing, tone and other findings after birth; it alone does not establish the cause of asphyxia or predict permanent injury. Blood gases, birth events and response to resuscitation also matter."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-cps",
+            "locator": "Eligibility A/B/C",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "3.1/5.1",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      },
+      {
+        "id": "diagnosis-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "脑电图或简化脑电图可发现肉眼不明显的癫痫样放电；MRI帮助判断脑损伤范围。检查时点和临床表现影响解释，一次结果不能代替随访。",
+          "en": "EEG or amplitude-integrated EEG can detect seizures not obvious externally; MRI helps assess the extent of brain injury. Timing and clinical findings affect interpretation, and one result does not replace follow-up."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-cps",
+            "locator": "Eligibility/MRI/Follow-up",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "5.2-5.3",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      },
+      {
+        "id": "diagnosis-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "团队还会检查血糖、电解质、肾肝功能和凝血等，了解脑以外的器官是否受影响。",
+          "en": "The team also checks glucose, electrolytes, kidney and liver function and clotting to assess organs beyond the brain."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-cps",
+            "locator": "Adjuncts/Side effects",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "3.2/4.3",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "AHA/AAP共同指南计一个机构组；CPS/QCG独立编写但共享低温RCT及ILCOR，WHO独立公共卫生指导。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "2025AHA不支持<36周常规降温，旧CPS/QCG35周建议不推广；QCG降温期禁食而CPS允许微量肠内喂养，正文保留个体/本地方案，不以任一普遍化。"
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_maternal",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "待独立复核"
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p003-birth-asphyxia-differentials",
+    "target": {
+      "kind": "condition",
+      "id": "birth-asphyxia",
+      "section": "differentials"
+    },
+    "content_sha256": "045cb09654dd51f7b1e95cd16a778c36cc931b22497f377821552d84f076d0df",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-asphyxia-qcg",
+        "source_metadata_sha256": "2efb49e15dfde0df8cef66a5f435d0f62f00a0fdda00324c029ae013e06231e9",
+        "locator": "3.1 Differential diagnosis | 3.1/5.2",
+        "source_version": "MN21.11-V12-R26 December2021 amendedJuly2024. Actual official PDF p3-4 pathways, p11-15 diagnosis/staging/initialcare, p20-22 organ support/nutrition/sedation/cooling, p24-26 imaging/outcomes/discharge. Web PDF succeeded; urllib403. Historical35week cooling threshold not adopted against newer2025AHA evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "AU",
+        "independence_group": "AU-QCG",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-neonatal-sepsis-recognition",
+        "source_metadata_sha256": "76c73336f52fd5552c87207a2ee3b3622131e4d1941672ab8f4d61cec479fb60",
+        "locator": "Differential diagnosis | Differential diagnosis/Investigations",
+        "source_version": "May2025; actual full HTML history/exam, differentials, investigations, management and transfer. Same RCH family, not independent of RCH neonatal antimicrobials.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "AU",
+        "independence_group": "AU-RCH",
+        "upstream_evidence": [
+          "RCH institutional guideline on unwell neonates; shared neonatal evidence and referral guidance; same RCH group counted once."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "differentials-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "感染或脑膜炎、低血糖和其他代谢异常也会使宝宝反应差或抽搐；病史、血糖和按需要的培养、脑脊液检查用于区分。",
+          "en": "Infection or meningitis, low glucose and other metabolic disorders can also cause reduced responsiveness or seizures; history, glucose and indicated cultures or cerebrospinal fluid tests help distinguish them."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "3.1 Differential diagnosis",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-neonatal-sepsis-recognition",
+            "locator": "Differential diagnosis/Investigations",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      },
+      {
+        "id": "differentials-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "脑出血、脑结构异常或遗传疾病等也可能引起脑病，持续或不典型的表现需进一步专科检查，不能只贴“窒息”标签。",
+          "en": "Brain haemorrhage, structural abnormalities or genetic disease may also cause encephalopathy; persistent or atypical findings need specialist investigation rather than an asphyxia label alone."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "3.1/5.2",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-neonatal-sepsis-recognition",
+            "locator": "Differential diagnosis",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "AHA/AAP共同指南计一个机构组；CPS/QCG独立编写但共享低温RCT及ILCOR，WHO独立公共卫生指导。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "2025AHA不支持<36周常规降温，旧CPS/QCG35周建议不推广；QCG降温期禁食而CPS允许微量肠内喂养，正文保留个体/本地方案，不以任一普遍化。"
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_maternal",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "待独立复核"
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p003-birth-asphyxia-treatment",
+    "target": {
+      "kind": "condition",
+      "id": "birth-asphyxia",
+      "section": "treatment"
+    },
+    "content_sha256": "5069c00c5399d01787b90cc78d462eb4956c67f65b42aa8954b5457c3bf6e1ba",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-asphyxia-aha",
+        "source_metadata_sha256": "34de7e6db8656fb6a11e127a0d9530fb89e938099b5302b39d957265268913de",
+        "locator": "17 | Ventilation/Compressions",
+        "source_version": "2025 guideline; actual official HTML abstract, preparation, temperature, ventilation, chest compressions, medications and section17 post-resuscitation. Shared ILCOR evidence, AAP reprint not an independent source. 2025 recommendation does not support routine cooling below36weeks.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "US",
+        "independence_group": "US-AHA-AAP",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-cps",
+        "source_metadata_sha256": "cab2f3ce0b7ceb23cd18619589fbaf7cb02ea30420e6a0d4d229ea93209408e5",
+        "locator": "Eligibility/Where",
+        "source_version": "2018-06-12 reaffirmed2024-01-11. Actual official HTML and urllib text: background, eligibility, exclusion, adverse effects, adjuncts including feeding, MRI and multidisciplinary follow-up. Shares cooling trials with QCG/AHA; older35week suggestion not generalized.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "CA",
+        "independence_group": "CA-CPS",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-qcg",
+        "source_metadata_sha256": "2efb49e15dfde0df8cef66a5f435d0f62f00a0fdda00324c029ae013e06231e9",
+        "locator": "3.5",
+        "source_version": "MN21.11-V12-R26 December2021 amendedJuly2024. Actual official PDF p3-4 pathways, p11-15 diagnosis/staging/initialcare, p20-22 organ support/nutrition/sedation/cooling, p24-26 imaging/outcomes/discharge. Web PDF succeeded; urllib403. Historical35week cooling threshold not adopted against newer2025AHA evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "AU",
+        "independence_group": "AU-QCG",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-who",
+        "source_metadata_sha256": "ad1797c783efd02a6feae6079c49b5096cbfeb2779529acb7b83e673103325db",
+        "locator": "Overview",
+        "source_version": "Actual entire official overview: failure to establish breathing, delivery complications, drying/warming/stimulation and assisted ventilation, systems/training/followup. 2012 guideline is historical; WHO June2026 update-development announcement is not a new completed guideline.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "WHO original resuscitation guidance; shared underlying neonatal evidence, not an independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-qcg-resuscitation",
+        "source_metadata_sha256": "8e7f28c88cc73a20974d7bf95c64cab89fadeec3e70d27e95387bc19a68737bd",
+        "locator": "Section5/Table23 p24;6.2/Table25 p26",
+        "source_version": "MN22.5-V6-R27 October2022; review October2027. Actual original PDF page24 section5/Table23 ventilation before compressions; page26 section6.2/Table25 epinephrine; page27 section6.3/Table26 indicated fluids or blood. Root read indexed original passages; same QCG group as HIE, shares ANZCOR/ILCOR upstream with AHA. No dose or numeric threshold added.",
+        "accessed_at": "2026-10-03",
+        "population": "按本条正文的围产期、新生儿或宫外孕情境；非家庭操作指导。",
+        "region": "AU",
+        "independence_group": "AU-QCG",
+        "upstream_evidence": [
+          "Shared guideline/ILCOR evidence acknowledged; separate institutional synthesis, not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "Ventilation first, compressions and medicines according to response; no new numeric protocol. Same QCG group counted once."
+      }
+    ],
+    "claims": [
+      {
+        "id": "treatment-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "复苏核心是让空气有效进入肺；团队按呼吸和心率反应调整面罩通气、气道等措施，需要时再加胸外按压和药物。",
+          "en": "Effective lung ventilation is central; the team adjusts mask ventilation and airway measures to breathing and heart-rate responses, adding compressions and medicines when indicated."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-aha",
+            "locator": "Ventilation/Compressions",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-who",
+            "locator": "Overview",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg-resuscitation",
+            "locator": "Section5/Table23 p24;6.2/Table25 p26",
+            "assessment": "Ventilation first, compressions and medicines according to response; no new numeric protocol. Same QCG group counted once."
+          }
+        ]
+      },
+      {
+        "id": "treatment-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "治疗性低温可改善符合条件的较成熟新生儿中重度HIE结局，但有严格时窗和监护要求。常用方案在出生后最初6小时内评估启动，不能在家执行或为等待转运而耽误复苏。",
+          "en": "Therapeutic hypothermia improves outcomes in eligible more mature newborns with moderate-to-severe HIE, but requires strict timing and monitoring. Protocols generally assess initiation within the first six hours; this is not a home treatment and must not delay resuscitation."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-aha",
+            "locator": "17",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-cps",
+            "locator": "Eligibility/Where",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      },
+      {
+        "id": "treatment-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "短暂呼吸支持后恢复的宝宝仍需按病情观察；需要长时间通气或高级复苏者应密切监测呼吸、循环、血糖和神经状态，不能仅以开始哭泣作为出院依据。",
+          "en": "Babies recovering after brief respiratory support still need appropriate observation; prolonged ventilation or advanced resuscitation requires close respiratory, circulatory, glucose and neurological monitoring, rather than discharge based only on crying."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-aha",
+            "locator": "17",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "3.5",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "AHA/AAP共同指南计一个机构组；CPS/QCG独立编写但共享低温RCT及ILCOR，WHO独立公共卫生指导。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "2025AHA不支持<36周常规降温，旧CPS/QCG35周建议不推广；QCG降温期禁食而CPS允许微量肠内喂养，正文保留个体/本地方案，不以任一普遍化。"
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_maternal",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "待独立复核"
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p003-birth-asphyxia-medications",
+    "target": {
+      "kind": "condition",
+      "id": "birth-asphyxia",
+      "section": "medications"
+    },
+    "content_sha256": "01e218003517fc974e27702c51f8ae1d294b78ea57a1c2ec679ebd96816ef10e",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-asphyxia-aha",
+        "source_metadata_sha256": "34de7e6db8656fb6a11e127a0d9530fb89e938099b5302b39d957265268913de",
+        "locator": "Epinephrine/Volume expansion",
+        "source_version": "2025 guideline; actual official HTML abstract, preparation, temperature, ventilation, chest compressions, medications and section17 post-resuscitation. Shared ILCOR evidence, AAP reprint not an independent source. 2025 recommendation does not support routine cooling below36weeks.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "US",
+        "independence_group": "US-AHA-AAP",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-cps",
+        "source_metadata_sha256": "cab2f3ce0b7ceb23cd18619589fbaf7cb02ea30420e6a0d4d229ea93209408e5",
+        "locator": "Adjunct therapies",
+        "source_version": "2018-06-12 reaffirmed2024-01-11. Actual official HTML and urllib text: background, eligibility, exclusion, adverse effects, adjuncts including feeding, MRI and multidisciplinary follow-up. Shares cooling trials with QCG/AHA; older35week suggestion not generalized.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "CA",
+        "independence_group": "CA-CPS",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-qcg",
+        "source_metadata_sha256": "2efb49e15dfde0df8cef66a5f435d0f62f00a0fdda00324c029ae013e06231e9",
+        "locator": "3.5/4.3 | 4.3/4.4.2",
+        "source_version": "MN21.11-V12-R26 December2021 amendedJuly2024. Actual official PDF p3-4 pathways, p11-15 diagnosis/staging/initialcare, p20-22 organ support/nutrition/sedation/cooling, p24-26 imaging/outcomes/discharge. Web PDF succeeded; urllib403. Historical35week cooling threshold not adopted against newer2025AHA evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "AU",
+        "independence_group": "AU-QCG",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-qcg-resuscitation",
+        "source_metadata_sha256": "8e7f28c88cc73a20974d7bf95c64cab89fadeec3e70d27e95387bc19a68737bd",
+        "locator": "Section5/Table23 p24;6.2/Table25 p26;6.3/Table26 p27",
+        "source_version": "MN22.5-V6-R27 October2022; review October2027. Actual original PDF page24 section5/Table23 ventilation before compressions; page26 section6.2/Table25 epinephrine; page27 section6.3/Table26 indicated fluids or blood. Root read indexed original passages; same QCG group as HIE, shares ANZCOR/ILCOR upstream with AHA. No dose or numeric threshold added.",
+        "accessed_at": "2026-10-03",
+        "population": "按本条正文的围产期、新生儿或宫外孕情境；非家庭操作指导。",
+        "region": "AU",
+        "independence_group": "AU-QCG",
+        "upstream_evidence": [
+          "Shared guideline/ILCOR evidence acknowledged; separate institutional synthesis, not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "Explicit adequate ventilation/compression and severe bradycardia condition for epinephrine; volume loss context for fluids or blood. QCG and AHA share ILCOR research; not trial replication."
+      }
+    ],
+    "claims": [
+      {
+        "id": "medications-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "肾上腺素用于充分通气和按压后仍严重心率过慢的复苏情境；补液或输血取决于血容量和失血线索，由团队决定。",
+          "en": "Epinephrine is used for persistently severe bradycardia despite adequate ventilation and compressions; fluid or blood administration depends on suspected volume loss and clinical assessment."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-aha",
+            "locator": "Epinephrine/Volume expansion",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "3.5/4.3",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg-resuscitation",
+            "locator": "Section5/Table23 p24;6.2/Table25 p26;6.3/Table26 p27",
+            "assessment": "Explicit adequate ventilation/compression and severe bradycardia condition for epinephrine; volume loss context for fluids or blood. QCG and AHA share ILCOR research; not trial replication."
+          }
+        ]
+      },
+      {
+        "id": "medications-2",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "确认临床或脑电发作时可用抗发作药；降温期间也可能需要镇痛。缺氧、肝肾受累和低温会改变药物处理，须监测疗效、镇静程度及必要的药物浓度。",
+          "en": "Antiseizure medicines treat clinical or electrographic seizures, and analgesia may be needed during cooling. Hypoxia, liver or kidney dysfunction and cooling alter drug handling, requiring monitoring of effect, sedation and indicated drug levels."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-cps",
+            "locator": "Adjunct therapies",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "4.3/4.4.2",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "AHA/AAP共同指南计一个机构组；CPS/QCG独立编写但共享低温RCT及ILCOR，WHO独立公共卫生指导。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "2025AHA不支持<36周常规降温，旧CPS/QCG35周建议不推广；QCG降温期禁食而CPS允许微量肠内喂养，正文保留个体/本地方案，不以任一普遍化。"
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_maternal",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "待独立复核"
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p003-birth-asphyxia-diet",
+    "target": {
+      "kind": "condition",
+      "id": "birth-asphyxia",
+      "section": "diet"
+    },
+    "content_sha256": "6e45b05fc88e6abe79cdc84dd62ca61e24e904feb5e92626420d8ab5e034680c",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-asphyxia-cps",
+        "source_metadata_sha256": "cab2f3ce0b7ceb23cd18619589fbaf7cb02ea30420e6a0d4d229ea93209408e5",
+        "locator": "Adjunct therapies enteral feeds | Follow-up multidisciplinary",
+        "source_version": "2018-06-12 reaffirmed2024-01-11. Actual official HTML and urllib text: background, eligibility, exclusion, adverse effects, adjuncts including feeding, MRI and multidisciplinary follow-up. Shares cooling trials with QCG/AHA; older35week suggestion not generalized.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "CA",
+        "independence_group": "CA-CPS",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-qcg",
+        "source_metadata_sha256": "2efb49e15dfde0df8cef66a5f435d0f62f00a0fdda00324c029ae013e06231e9",
+        "locator": "4.3 Gastrointestinal/4.4.2 | 4.3.4/5.1/5.5",
+        "source_version": "MN21.11-V12-R26 December2021 amendedJuly2024. Actual official PDF p3-4 pathways, p11-15 diagnosis/staging/initialcare, p20-22 organ support/nutrition/sedation/cooling, p24-26 imaging/outcomes/discharge. Web PDF succeeded; urllib403. Historical35week cooling threshold not adopted against newer2025AHA evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "AU",
+        "independence_group": "AU-QCG",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "diet-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "急性重症或降温期间由团队决定暂停喂养、少量肠内喂养或静脉营养，不能自行强喂。不同指南在降温期喂养上有差异，应按宝宝状态和当地流程安排。",
+          "en": "During critical illness or cooling, the team determines whether to withhold feeds, use small enteral feeds or provide intravenous nutrition; do not force feeds. Cooling-period feeding differs between guidelines and must follow the baby’s condition and local protocol."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "4.3 Gastrointestinal/4.4.2",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-cps",
+            "locator": "Adjunct therapies enteral feeds",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      },
+      {
+        "id": "diet-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "恢复喂养后观察吸吮、吞咽、呛咳和耐受情况；吞咽或运动问题需喂养及康复团队评估，营养途径可按需要调整。",
+          "en": "After feeds resume, observe sucking, swallowing, choking and tolerance; swallowing or motor difficulties need feeding and rehabilitation assessment, with the feeding route adjusted as necessary."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "4.3.4/5.1/5.5",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-cps",
+            "locator": "Follow-up multidisciplinary",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "AHA/AAP共同指南计一个机构组；CPS/QCG独立编写但共享低温RCT及ILCOR，WHO独立公共卫生指导。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "2025AHA不支持<36周常规降温，旧CPS/QCG35周建议不推广；QCG降温期禁食而CPS允许微量肠内喂养，正文保留个体/本地方案，不以任一普遍化。"
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_maternal",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "待独立复核"
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p003-birth-asphyxia-daily-care",
+    "target": {
+      "kind": "condition",
+      "id": "birth-asphyxia",
+      "section": "daily_care"
+    },
+    "content_sha256": "bfdf974aeadd7f51d65c67b25631cd0b875555cc3cb96fb31c15ced23115c66f",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-asphyxia-cps",
+        "source_metadata_sha256": "cab2f3ce0b7ceb23cd18619589fbaf7cb02ea30420e6a0d4d229ea93209408e5",
+        "locator": "Follow-up | Where/Follow-up",
+        "source_version": "2018-06-12 reaffirmed2024-01-11. Actual official HTML and urllib text: background, eligibility, exclusion, adverse effects, adjuncts including feeding, MRI and multidisciplinary follow-up. Shares cooling trials with QCG/AHA; older35week suggestion not generalized.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "CA",
+        "independence_group": "CA-CPS",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-qcg",
+        "source_metadata_sha256": "2efb49e15dfde0df8cef66a5f435d0f62f00a0fdda00324c029ae013e06231e9",
+        "locator": "4.3.4/5.5 | 5.5",
+        "source_version": "MN21.11-V12-R26 December2021 amendedJuly2024. Actual official PDF p3-4 pathways, p11-15 diagnosis/staging/initialcare, p20-22 organ support/nutrition/sedation/cooling, p24-26 imaging/outcomes/discharge. Web PDF succeeded; urllib403. Historical35week cooling threshold not adopted against newer2025AHA evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "AU",
+        "independence_group": "AU-QCG",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "daily-care-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "离院前和团队确认喂养方式、药物、复诊、异常表现和联系方法；家长不需要自行实施降温或反复用评分判断脑损伤。",
+          "en": "Before discharge confirm feeding, medicines, appointments, warning signs and contacts; parents do not need to perform cooling or repeatedly score the baby to assess brain injury."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "5.5",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-cps",
+            "locator": "Where/Follow-up",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      },
+      {
+        "id": "daily-care-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "若运动、吃奶、听觉或视觉反应与预期不符，记录变化并及时联系随访团队；需要时接受物理、作业或喂养支持。",
+          "en": "Record and report concerns about movement, feeding, hearing or visual responses to the follow-up team; physiotherapy, occupational or feeding support may be indicated."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "4.3.4/5.5",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-cps",
+            "locator": "Follow-up",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "AHA/AAP共同指南计一个机构组；CPS/QCG独立编写但共享低温RCT及ILCOR，WHO独立公共卫生指导。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "2025AHA不支持<36周常规降温，旧CPS/QCG35周建议不推广；QCG降温期禁食而CPS允许微量肠内喂养，正文保留个体/本地方案，不以任一普遍化。"
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_maternal",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "待独立复核"
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p003-birth-asphyxia-special-populations",
+    "target": {
+      "kind": "condition",
+      "id": "birth-asphyxia",
+      "section": "special_populations"
+    },
+    "content_sha256": "f23d722cd278ab6fbb58e8c95868a3dd0759e13f64f45d616877d0f281b7013c",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-asphyxia-aha",
+        "source_metadata_sha256": "34de7e6db8656fb6a11e127a0d9530fb89e938099b5302b39d957265268913de",
+        "locator": "17",
+        "source_version": "2025 guideline; actual official HTML abstract, preparation, temperature, ventilation, chest compressions, medications and section17 post-resuscitation. Shared ILCOR evidence, AAP reprint not an independent source. 2025 recommendation does not support routine cooling below36weeks.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "US",
+        "independence_group": "US-AHA-AAP",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-cps",
+        "source_metadata_sha256": "cab2f3ce0b7ceb23cd18619589fbaf7cb02ea30420e6a0d4d229ea93209408e5",
+        "locator": "Eligibility/Exclusions",
+        "source_version": "2018-06-12 reaffirmed2024-01-11. Actual official HTML and urllib text: background, eligibility, exclusion, adverse effects, adjuncts including feeding, MRI and multidisciplinary follow-up. Shares cooling trials with QCG/AHA; older35week suggestion not generalized.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "CA",
+        "independence_group": "CA-CPS",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-qcg",
+        "source_metadata_sha256": "2efb49e15dfde0df8cef66a5f435d0f62f00a0fdda00324c029ae013e06231e9",
+        "locator": "3.3-3.5 | 4.4",
+        "source_version": "MN21.11-V12-R26 December2021 amendedJuly2024. Actual official PDF p3-4 pathways, p11-15 diagnosis/staging/initialcare, p20-22 organ support/nutrition/sedation/cooling, p24-26 imaging/outcomes/discharge. Web PDF succeeded; urllib403. Historical35week cooling threshold not adopted against newer2025AHA evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "AU",
+        "independence_group": "AU-QCG",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "special-populations-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "轻度或中度的出生呼吸问题不必然成为HIE；反之，恢复呼吸后仍可出现脑病，需要连续检查，而不是按最初表现一次定论。",
+          "en": "Mild or moderate breathing problems at birth do not necessarily become HIE; encephalopathy can evolve after breathing recovers, requiring repeated assessment rather than a conclusion from the initial appearance."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-aha",
+            "locator": "17",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "3.3-3.5",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      },
+      {
+        "id": "special-populations-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "较早产、轻度HIE、严重出血或重大先天异常者，降温的获益和风险不能从标准中重度HIE研究直接照搬。团队应依据最新证据和具体情况讨论，不能认为越冷越好。",
+          "en": "For more preterm babies, mild HIE, major bleeding or major congenital abnormalities, cooling benefits and risks cannot simply be extrapolated from standard moderate-to-severe HIE trials. The team uses current evidence and individual circumstances; colder is not better."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-aha",
+            "locator": "17",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-cps",
+            "locator": "Eligibility/Exclusions",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "4.4",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "AHA/AAP共同指南计一个机构组；CPS/QCG独立编写但共享低温RCT及ILCOR，WHO独立公共卫生指导。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "2025AHA不支持<36周常规降温，旧CPS/QCG35周建议不推广；QCG降温期禁食而CPS允许微量肠内喂养，正文保留个体/本地方案，不以任一普遍化。"
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_maternal",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "待独立复核"
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p003-birth-asphyxia-prognosis-followup",
+    "target": {
+      "kind": "condition",
+      "id": "birth-asphyxia",
+      "section": "prognosis_followup"
+    },
+    "content_sha256": "424e2a76e12d3cc63f2d284b6218116d7d9d83dd2a75e8969c483028cdf7a91a",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-asphyxia-cps",
+        "source_metadata_sha256": "cab2f3ce0b7ceb23cd18619589fbaf7cb02ea30420e6a0d4d229ea93209408e5",
+        "locator": "Follow-up",
+        "source_version": "2018-06-12 reaffirmed2024-01-11. Actual official HTML and urllib text: background, eligibility, exclusion, adverse effects, adjuncts including feeding, MRI and multidisciplinary follow-up. Shares cooling trials with QCG/AHA; older35week suggestion not generalized.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "CA",
+        "independence_group": "CA-CPS",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-qcg",
+        "source_metadata_sha256": "2efb49e15dfde0df8cef66a5f435d0f62f00a0fdda00324c029ae013e06231e9",
+        "locator": "5.1-5.4 | 5.4-5.5",
+        "source_version": "MN21.11-V12-R26 December2021 amendedJuly2024. Actual official PDF p3-4 pathways, p11-15 diagnosis/staging/initialcare, p20-22 organ support/nutrition/sedation/cooling, p24-26 imaging/outcomes/discharge. Web PDF succeeded; urllib403. Historical35week cooling threshold not adopted against newer2025AHA evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "AU",
+        "independence_group": "AU-QCG",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "prognosis-followup-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "严重程度、连续神经检查、脑电和影像共同帮助判断；有些孩子恢复良好，也有孩子后续才显现学习、运动或感觉问题。",
+          "en": "Severity, repeated examinations, EEG and imaging inform prognosis; some children recover well while others develop later learning, motor or sensory difficulties."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-cps",
+            "locator": "Follow-up",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "5.1-5.4",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      },
+      {
+        "id": "prognosis-followup-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "中重度HIE或接受降温者需多学科发育随访，通常至少覆盖婴幼儿期，并按需要延伸至学龄。即使轻度HIE也应讨论发育评估；出生时轻度窒息但没有HIE者按临床情况安排。",
+          "en": "Moderate-to-severe HIE or cooling requires multidisciplinary developmental follow-up through at least early childhood and longer when indicated. Discuss developmental review even for mild HIE; mild birth asphyxia without HIE follows an individual clinical plan."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-cps",
+            "locator": "Follow-up",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "5.4-5.5",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "AHA/AAP共同指南计一个机构组；CPS/QCG独立编写但共享低温RCT及ILCOR，WHO独立公共卫生指导。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "2025AHA不支持<36周常规降温，旧CPS/QCG35周建议不推广；QCG降温期禁食而CPS允许微量肠内喂养，正文保留个体/本地方案，不以任一普遍化。"
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_maternal",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "待独立复核"
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p003-birth-asphyxia-complications",
+    "target": {
+      "kind": "condition",
+      "id": "birth-asphyxia",
+      "section": "complications"
+    },
+    "content_sha256": "63e05997b392419793d78e593ebf4a64d1d421e3f261f57e626fcfc6b0bc0a2c",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-asphyxia-cps",
+        "source_metadata_sha256": "cab2f3ce0b7ceb23cd18619589fbaf7cb02ea30420e6a0d4d229ea93209408e5",
+        "locator": "Follow-up | Side effects/Adjuncts",
+        "source_version": "2018-06-12 reaffirmed2024-01-11. Actual official HTML and urllib text: background, eligibility, exclusion, adverse effects, adjuncts including feeding, MRI and multidisciplinary follow-up. Shares cooling trials with QCG/AHA; older35week suggestion not generalized.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "CA",
+        "independence_group": "CA-CPS",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-qcg",
+        "source_metadata_sha256": "2efb49e15dfde0df8cef66a5f435d0f62f00a0fdda00324c029ae013e06231e9",
+        "locator": "4.3 | 5.4",
+        "source_version": "MN21.11-V12-R26 December2021 amendedJuly2024. Actual official PDF p3-4 pathways, p11-15 diagnosis/staging/initialcare, p20-22 organ support/nutrition/sedation/cooling, p24-26 imaging/outcomes/discharge. Web PDF succeeded; urllib403. Historical35week cooling threshold not adopted against newer2025AHA evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "AU",
+        "independence_group": "AU-QCG",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "complications-1",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "急性期可有抽搐、呼吸或循环不稳定、肾功能和凝血异常，需要相应监护和治疗。",
+          "en": "Acute problems include seizures, unstable breathing or circulation, kidney dysfunction and clotting abnormalities, requiring targeted monitoring and treatment."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-cps",
+            "locator": "Side effects/Adjuncts",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "4.3",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      },
+      {
+        "id": "complications-2",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "严重HIE可能留下脑瘫、癫痫、听视力或认知问题；脑瘫指影响运动和姿势的长期障碍，不能从“出生窒息”四个字推断一定发生。",
+          "en": "Severe HIE can leave cerebral palsy, epilepsy, hearing, vision or cognitive problems. Cerebral palsy involves lasting difficulties with movement and posture; a birth-asphyxia diagnosis does not mean it is inevitable."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-cps",
+            "locator": "Follow-up",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-qcg",
+            "locator": "5.4",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "AHA/AAP共同指南计一个机构组；CPS/QCG独立编写但共享低温RCT及ILCOR，WHO独立公共卫生指导。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "2025AHA不支持<36周常规降温，旧CPS/QCG35周建议不推广；QCG降温期禁食而CPS允许微量肠内喂养，正文保留个体/本地方案，不以任一普遍化。"
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_maternal",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "待独立复核"
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p003-birth-asphyxia-prevention",
+    "target": {
+      "kind": "condition",
+      "id": "birth-asphyxia",
+      "section": "prevention"
+    },
+    "content_sha256": "7c8a64b1867509e32b5e2869d841051b7d080886a2a9643fb1d867aa2b72ca96",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-asphyxia-aha",
+        "source_metadata_sha256": "34de7e6db8656fb6a11e127a0d9530fb89e938099b5302b39d957265268913de",
+        "locator": "Initial steps/Temperature/Ventilation | Preparation",
+        "source_version": "2025 guideline; actual official HTML abstract, preparation, temperature, ventilation, chest compressions, medications and section17 post-resuscitation. Shared ILCOR evidence, AAP reprint not an independent source. 2025 recommendation does not support routine cooling below36weeks.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "US",
+        "independence_group": "US-AHA-AAP",
+        "upstream_evidence": [
+          "AHA and QCG draw on ILCOR/ANZCOR neonatal resuscitation evidence; CPS/QCG/AHA cooling guidance shares neonatal cooling trials. Separate institutional synthesis does not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      },
+      {
+        "source_id": "p003-asphyxia-who",
+        "source_metadata_sha256": "ad1797c783efd02a6feae6079c49b5096cbfeb2779529acb7b83e673103325db",
+        "locator": "Overview | Quality of care",
+        "source_version": "Actual entire official overview: failure to establish breathing, delivery complications, drying/warming/stimulation and assisted ventilation, systems/training/followup. 2012 guideline is historical; WHO June2026 update-development announcement is not a new completed guideline.",
+        "accessed_at": "2026-10-03",
+        "population": "出生时窒息及恢复期；HIE干预仅有脑病并满足相应条件者；不把低Apgar单独诊断窒息。",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "WHO original resuscitation guidance; shared underlying neonatal evidence, not an independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "逐条原文定位见claims。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "prevention-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "分娩团队应提前识别风险、准备设备并安排会复苏的人员；突发情况即使产前未预料也要及时处理。",
+          "en": "Birth teams should assess risks, prepare equipment and ensure resuscitation-trained staff are available, including for unexpected emergencies."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-aha",
+            "locator": "Preparation",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-who",
+            "locator": "Quality of care",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      },
+      {
+        "id": "prevention-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "稳定宝宝要维持适宜体温并监测呼吸；需要复苏时优先保证有效通气和及时升级照护，不能用保暖或等待自行恢复替代支持呼吸。",
+          "en": "Stable babies need appropriate temperature and breathing observation; when resuscitation is required, effective ventilation and timely escalation take priority over warming alone or waiting for spontaneous recovery."
+        },
+        "supports": [
+          {
+            "source_id": "p003-asphyxia-aha",
+            "locator": "Initial steps/Temperature/Ventilation",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          },
+          {
+            "source_id": "p003-asphyxia-who",
+            "locator": "Overview",
+            "assessment": "实际读取原文对应范围；出生呼吸问题与HIE不等同，HIE治疗仅对应分支。"
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "AHA/AAP共同指南计一个机构组；CPS/QCG独立编写但共享低温RCT及ILCOR，WHO独立公共卫生指导。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "2025AHA不支持<36周常规降温，旧CPS/QCG35周建议不推广；QCG降温期禁食而CPS允许微量肠内喂养，正文保留个体/本地方案，不以任一普遍化。"
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "reviewer": null,
+      "author": "/root/astra_p0_maternal",
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "待独立复核"
+    },
+    "unresolved_questions": []
+  }
+]

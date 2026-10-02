@@ -10,292 +10,292 @@ WHO官方英文章名：Diseases of the respiratory system
 |---|---|---|---|---|---|---|
 | [CA06.1](http://id.who.int/icd/release/11/mms/1070805666) | 急性会厌炎<br>Acute epiglottitis | 耳鼻喉科 | P0 | [p0-epiglottitis](#rule-p0-epiglottitis) | complete<br>epiglottitis: confirmed | — |
 | [CB00](http://id.who.int/icd/release/11/mms/1189702844) | 急性呼吸窘迫综合征<br>Acute respiratory distress syndrome | 呼吸内科 | P0 | [p0-ards](#rule-p0-ards) | complete<br>ards: confirmed | — |
-| [CA22.0](http://id.who.int/icd/release/11/mms/1665365733) | 慢性阻塞性肺疾病伴急性加重，未特指<br>Chronic obstructive pulmonary disease with acute exacerbation, unspecified | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 45<br>WP-0003 |
-| [CA22.1](http://id.who.int/icd/release/11/mms/143605159) | 某些特指的慢性阻塞性肺疾病<br>Certain specified chronic obstructive pulmonary disease | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 63<br>WP-0004 |
-| [CA22.Z](http://id.who.int/icd/release/11/mms/133207228/unspecified) | 未特指的慢性阻塞性肺疾病<br>Chronic obstructive pulmonary disease, unspecified | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 81<br>WP-0005 |
-| [CA23.00](http://id.who.int/icd/release/11/mms/474902557) | 变应性哮喘伴加重<br>Allergic asthma with exacerbation | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 98<br>WP-0005 |
-| [CA23.01](http://id.who.int/icd/release/11/mms/1600219939) | 变应性哮喘伴哮喘持续状态<br>Allergic asthma with status asthmaticus | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 113<br>WP-0006 |
-| [CA23.02](http://id.who.int/icd/release/11/mms/1779929269) | 变应性哮喘，单纯性<br>Allergic asthma, uncomplicated | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 128<br>WP-0007 |
-| [CA23.10](http://id.who.int/icd/release/11/mms/364410074) | 非变应性哮喘伴加重<br>Non-allergic asthma with exacerbation | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 143<br>WP-0008 |
-| [CA23.11](http://id.who.int/icd/release/11/mms/1596138435) | 非变应性哮喘伴哮喘持续状态<br>Non-allergic asthma with status asthmaticus | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 158<br>WP-0008 |
-| [CA23.12](http://id.who.int/icd/release/11/mms/438028710) | 非变应性哮喘，单纯性<br>Non-allergic asthma, uncomplicated | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 173<br>WP-0009 |
-| [CA23.20](http://id.who.int/icd/release/11/mms/1030818265) | 阿司匹林性哮喘<br>Aspirin-induced asthma | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 188<br>WP-0010 |
-| [CA23.21](http://id.who.int/icd/release/11/mms/841017462) | 运动性支气管痉挛<br>Exercise-induced bronchospasm | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 203<br>WP-0011 |
-| [CA23.22](http://id.who.int/icd/release/11/mms/1466639844) | 咳嗽变异性哮喘<br>Cough variant asthma | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 218<br>WP-0011 |
-| [CA23.30](http://id.who.int/icd/release/11/mms/753457166) | 未特指的哮喘伴加重<br>Unspecified asthma with exacerbation | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 233<br>WP-0012 |
-| [CA23.31](http://id.who.int/icd/release/11/mms/1480952049) | 未特指的哮喘伴哮喘持续状态<br>Unspecified asthma with status asthmaticus | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 245<br>WP-0013 |
-| [CA23.32](http://id.who.int/icd/release/11/mms/577724120) | 未特指的哮喘，单纯性<br>Unspecified asthma, uncomplicated | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 257<br>WP-0013 |
-| [CA40.00](http://id.who.int/icd/release/11/mms/1258650683) | 肺炎衣原体引起的肺炎<br>Pneumonia due to Chlamydophila pneumoniae | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 269<br>WP-0014 |
-| [CA40.01](http://id.who.int/icd/release/11/mms/680186620) | 大肠埃希菌引起的肺炎<br>Pneumonia due to Escherichia coli | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 281<br>WP-0015 |
-| [CA40.02](http://id.who.int/icd/release/11/mms/732824952) | 流感嗜血杆菌引起的肺炎<br>Pneumonia due to Haemophilus influenzae | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 293<br>WP-0015 |
-| [CA40.03](http://id.who.int/icd/release/11/mms/1250089989) | 肺炎克雷伯菌引起的肺炎<br>Pneumonia due to Klebsiella pneumoniae | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 305<br>WP-0016 |
-| [CA40.04](http://id.who.int/icd/release/11/mms/963399569) | 肺炎支原体引起的肺炎<br>Pneumonia due to Mycoplasma pneumoniae | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 317<br>WP-0016 |
-| [CA40.05](http://id.who.int/icd/release/11/mms/801706385) | 铜绿假单胞菌引起的肺炎<br>Pneumonia due to Pseudomonas aeruginosa | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 329<br>WP-0017 |
-| [CA40.06](http://id.who.int/icd/release/11/mms/1533297008) | 葡萄球菌引起的肺炎<br>Pneumonia due to Staphylococcus | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 341<br>WP-0018 |
-| [CA40.07](http://id.who.int/icd/release/11/mms/1480627948) | 肺炎链球菌引起的肺炎<br>Pneumonia due to Streptococcus pneumoniae | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 353<br>WP-0018 |
-| [CA40.08](http://id.who.int/icd/release/11/mms/1043303674) | β-溶血性链球菌引起的肺炎<br>Pneumonia due to beta-haemolytic Streptococcus | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 365<br>WP-0019 |
-| [CA40.0Y](http://id.who.int/icd/release/11/mms/1323682030/other) | 其他特指的细菌性肺炎<br>Pneumonia due to other specified bacteria | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 377<br>WP-0019 |
-| [CA40.0Z](http://id.who.int/icd/release/11/mms/1323682030/unspecified) | 细菌性肺炎，未特指<br>Bacterial pneumonia, unspecified | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 389<br>WP-0020 |
-| [CA40.10](http://id.who.int/icd/release/11/mms/1912319301) | 腺病毒引起的肺炎<br>Pneumonia due to Adenovirus | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 401<br>WP-0021 |
-| [CA40.11](http://id.who.int/icd/release/11/mms/347103441) | 呼吸道合胞病毒引起的肺炎<br>Pneumonia due to Respiratory syncytial virus | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 413<br>WP-0021 |
-| [CA40.12](http://id.who.int/icd/release/11/mms/1612525614) | 副流感病毒引起的肺炎<br>Pneumonia due to parainfluenza virus | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 425<br>WP-0022 |
-| [CA40.13](http://id.who.int/icd/release/11/mms/89587132) | 人类偏肺病毒引起的肺炎<br>Pneumonia due to Human metapneumovirus | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 437<br>WP-0022 |
-| [CA40.1Y](http://id.who.int/icd/release/11/mms/1024154490/other) | 其他特指的病毒性肺炎<br>Pneumonia due to other specified virus | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 448<br>WP-0023 |
-| [CA40.1Z](http://id.who.int/icd/release/11/mms/1024154490/unspecified) | 未特指的病毒性肺炎<br>Viral pneumonia, unspecified | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 459<br>WP-0023 |
-| [CA40.20](http://id.who.int/icd/release/11/mms/1229452918) | 肺孢子菌引起的肺炎<br>Pneumonia due to pneumocystis | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 470<br>WP-0024 |
-| [CA40.2Y](http://id.who.int/icd/release/11/mms/1176185297/other) | 其他特指的真菌性肺炎<br>Other specified fungal pneumonia | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 481<br>WP-0025 |
-| [CA40.2Z](http://id.who.int/icd/release/11/mms/1176185297/unspecified) | 未特指的真菌性肺炎<br>Fungal pneumonia, unspecified | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 492<br>WP-0025 |
-| [CA40.Y](http://id.who.int/icd/release/11/mms/142052508/other) | 其他特指的肺炎<br>Other specified pneumonia | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 503<br>WP-0026 |
-| [CA40.Z](http://id.who.int/icd/release/11/mms/142052508/unspecified) | 肺炎，病原体未特指<br>Pneumonia, organism unspecified | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 514<br>WP-0026 |
-| [CA00](http://id.who.int/icd/release/11/mms/2066255370) | 急性鼻咽炎<br>Acute nasopharyngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing<br>common-cold: pending | 3853<br>WP-0193 |
-| [CA01](http://id.who.int/icd/release/11/mms/509821856) | 急性鼻窦炎<br>Acute sinusitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 3874<br>WP-0194 |
-| [CA02.0](http://id.who.int/icd/release/11/mms/1868957860) | 急性细菌性咽炎<br>Acute bacterial pharyngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 3895<br>WP-0195 |
-| [CA02.10](http://id.who.int/icd/release/11/mms/1956341906) | 腺病毒引起的咽炎<br>Pharyngitis due to Adenovirus | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 3916<br>WP-0196 |
-| [CA02.1Y](http://id.who.int/icd/release/11/mms/1758486982/other) | 其他特指的急性病毒性咽炎<br>Other specified acute viral pharyngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 3935<br>WP-0197 |
-| [CA02.1Z](http://id.who.int/icd/release/11/mms/1758486982/unspecified) | 未特指的急性病毒性咽炎<br>Acute viral pharyngitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 3954<br>WP-0198 |
-| [CA02.Y](http://id.who.int/icd/release/11/mms/1791890273/other) | 其他特指的急性咽炎<br>Other specified acute pharyngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 3973<br>WP-0199 |
-| [CA02.Z](http://id.who.int/icd/release/11/mms/1791890273/unspecified) | 未特指的急性咽炎<br>Acute pharyngitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 3992<br>WP-0200 |
-| [CA03.0](http://id.who.int/icd/release/11/mms/2098808565) | 链球菌性扁桃体炎<br>Streptococcal tonsillitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4011<br>WP-0201 |
-| [CA03.Y](http://id.who.int/icd/release/11/mms/260431605/other) | 其他特指的急性扁桃体炎<br>Other specified acute tonsillitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4030<br>WP-0202 |
-| [CA03.Z](http://id.who.int/icd/release/11/mms/260431605/unspecified) | 未特指的急性扁桃体炎<br>Acute tonsillitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4049<br>WP-0203 |
-| [CA04](http://id.who.int/icd/release/11/mms/1528782604) | 急性咽喉炎<br>Acute laryngopharyngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4068<br>WP-0204 |
-| [CA05.0](http://id.who.int/icd/release/11/mms/1180710837) | 急性喉炎<br>Acute laryngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4087<br>WP-0205 |
-| [CA05.1](http://id.who.int/icd/release/11/mms/590084641) | 急性气管炎<br>Acute tracheitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4106<br>WP-0206 |
-| [CA05.2](http://id.who.int/icd/release/11/mms/1468443358) | 急性喉气管炎<br>Acute laryngotracheitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4125<br>WP-0207 |
-| [CA06.0](http://id.who.int/icd/release/11/mms/1519976244) | 急性梗阻性喉炎<br>Acute obstructive laryngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4144<br>WP-0208 |
-| [CA06.Z](http://id.who.int/icd/release/11/mms/421560565/unspecified) | 未特指的急性梗阻性喉炎或会厌炎<br>Acute obstructive laryngitis or epiglottitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4163<br>WP-0209 |
-| [CA07.0](http://id.who.int/icd/release/11/mms/819139656) | 急性上呼吸道感染， 部位未特指<br>Acute upper respiratory infection, site unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4182<br>WP-0210 |
-| [CA07.1](http://id.who.int/icd/release/11/mms/2123003017) | 多部位的急性上呼吸道感染<br>Acute upper respiratory infections of multiple sites | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4201<br>WP-0211 |
-| [CA08.00](http://id.who.int/icd/release/11/mms/704335372) | 花粉引起的变应性鼻炎<br>Allergic rhinitis due to pollen | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4220<br>WP-0211 |
-| [CA08.01](http://id.who.int/icd/release/11/mms/1565925107) | 其他季节性变应原引起的变应性鼻炎<br>Allergic rhinitis due to other seasonal allergens | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4239<br>WP-0212 |
-| [CA08.02](http://id.who.int/icd/release/11/mms/14936621) | 屋尘螨引起的变应性鼻炎<br>Allergic rhinitis due to house dust mite | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4258<br>WP-0213 |
-| [CA08.03](http://id.who.int/icd/release/11/mms/941478759) | 其他变应性鼻炎<br>Other allergic rhinitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4277<br>WP-0214 |
-| [CA08.0Z](http://id.who.int/icd/release/11/mms/1711769234/unspecified) | 未特指的变应性鼻炎<br>Allergic rhinitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4296<br>WP-0215 |
-| [CA08.10](http://id.who.int/icd/release/11/mms/1523867406) | 伴嗜酸细胞非变应性鼻炎<br>Non-allergic rhinitis with eosinophils | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4315<br>WP-0216 |
-| [CA08.1Y](http://id.who.int/icd/release/11/mms/1650452542/other) | 其他特指的非变应性鼻炎<br>Other specified non-allergic rhinitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4334<br>WP-0217 |
-| [CA08.1Z](http://id.who.int/icd/release/11/mms/1650452542/unspecified) | 未特指的非变应性鼻炎<br>Non-allergic rhinitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4353<br>WP-0218 |
-| [CA08.2](http://id.who.int/icd/release/11/mms/1953896048) | 混合性鼻炎<br>Mixed rhinitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4372<br>WP-0219 |
-| [CA08.3](http://id.who.int/icd/release/11/mms/1286636442) | 血管舒缩性鼻炎<br>Vasomotor rhinitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4391<br>WP-0220 |
-| [CA09.0](http://id.who.int/icd/release/11/mms/1346915097) | 慢性鼻炎<br>Chronic rhinitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4410<br>WP-0221 |
-| [CA09.1](http://id.who.int/icd/release/11/mms/889423501) | 慢性鼻咽炎<br>Chronic nasopharyngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4429<br>WP-0222 |
-| [CA09.2](http://id.who.int/icd/release/11/mms/1101977204) | 慢性咽炎<br>Chronic pharyngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4448<br>WP-0223 |
-| [CA0A.0](http://id.who.int/icd/release/11/mms/330367715) | Samter综合征<br>Samter syndrome | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4467<br>WP-0224 |
-| [CA0A.Y](http://id.who.int/icd/release/11/mms/1836987572/other) | 其他特指的慢性鼻窦炎<br>Other specified chronic rhinosinusitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4486<br>WP-0225 |
-| [CA0A.Z](http://id.who.int/icd/release/11/mms/1836987572/unspecified) | 未特指的慢性鼻窦炎<br>Chronic rhinosinusitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4505<br>WP-0226 |
-| [CA0B](http://id.who.int/icd/release/11/mms/1204931989) | 隐匿性鼻窦综合征<br>Silent sinus syndrome | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4524<br>WP-0227 |
-| [CA0C](http://id.who.int/icd/release/11/mms/319135602) | 鼻或鼻窦囊肿或黏液囊肿<br>Cyst or mucocele of nose or nasal sinus | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4543<br>WP-0228 |
-| [CA0D](http://id.who.int/icd/release/11/mms/1739116429) | 鼻中隔偏曲<br>Deviated nasal septum | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4562<br>WP-0229 |
-| [CA0E](http://id.who.int/icd/release/11/mms/48431641) | 鼻甲肥大<br>Hypertrophy of nasal turbinates | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4581<br>WP-0230 |
-| [CA0F.0](http://id.who.int/icd/release/11/mms/268261363) | 扁桃体肥大<br>Hypertrophy of tonsils | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4600<br>WP-0230 |
-| [CA0F.1](http://id.who.int/icd/release/11/mms/2068842254) | 腺样体肥大<br>Hypertrophy of adenoids | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4619<br>WP-0231 |
-| [CA0F.3](http://id.who.int/icd/release/11/mms/505137816) | 扁桃体肥大伴腺样体肥大<br>Hypertrophy of tonsils with hypertrophy of adenoids | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4638<br>WP-0232 |
-| [CA0F.Y](http://id.who.int/icd/release/11/mms/512796448/other) | 其他特指的慢性扁桃体或腺样体疾病<br>Other specified chronic diseases of tonsils or adenoids | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4657<br>WP-0233 |
-| [CA0F.Z](http://id.who.int/icd/release/11/mms/512796448/unspecified) | 未特指的慢性扁桃体或腺样体疾病<br>Chronic diseases of tonsils or adenoids, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4676<br>WP-0234 |
-| [CA0G](http://id.who.int/icd/release/11/mms/259406411) | 慢性喉炎或喉气管炎<br>Chronic laryngitis or laryngotracheitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4695<br>WP-0235 |
-| [CA0H.0](http://id.who.int/icd/release/11/mms/961356134) | 声带或喉麻痹<br>Paralysis of vocal cords or larynx | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4714<br>WP-0236 |
-| [CA0H.1](http://id.who.int/icd/release/11/mms/1543957744) | 声带或喉息肉<br>Polyp of vocal cord or larynx | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4733<br>WP-0237 |
-| [CA0H.2](http://id.who.int/icd/release/11/mms/682343439) | 声带结节<br>Nodules of vocal cords | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4752<br>WP-0238 |
-| [CA0H.3](http://id.who.int/icd/release/11/mms/1041162767) | 喉水肿<br>Oedema of larynx | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4771<br>WP-0239 |
-| [CA0H.4](http://id.who.int/icd/release/11/mms/1531260827) | 喉痉挛<br>Laryngeal spasm | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4790<br>WP-0240 |
-| [CA0H.5](http://id.who.int/icd/release/11/mms/803766116) | 喉狭窄<br>Stenosis of larynx | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4809<br>WP-0241 |
-| [CA0H.Y](http://id.who.int/icd/release/11/mms/1914646281/other) | 其他特指的声带或喉疾病，不可归类在他处者<br>Other specified diseases of vocal cords or larynx, not elsewhere classified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4828<br>WP-0242 |
-| [CA0H.Z](http://id.who.int/icd/release/11/mms/1914646281/unspecified) | 未特指的声带或喉疾病，不可归类在他处者<br>Diseases of vocal cords or larynx, not elsewhere classified, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4847<br>WP-0243 |
-| [CA0J.0](http://id.who.int/icd/release/11/mms/679276084) | 息肉样鼻窦退行性变<br>Polypoid sinus degeneration | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4866<br>WP-0244 |
-| [CA0J.Y](http://id.who.int/icd/release/11/mms/137754914/other) | 其他特指的鼻息肉<br>Other specified nasal polyp | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4885<br>WP-0245 |
-| [CA0J.Z](http://id.who.int/icd/release/11/mms/137754914/unspecified) | 未特指的鼻息肉<br>Nasal polyp, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4904<br>WP-0246 |
-| [CA0K.0](http://id.who.int/icd/release/11/mms/632678885) | 咽后或咽旁脓肿<br>Retropharyngeal or parapharyngeal abscess | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4923<br>WP-0247 |
-| [CA0K.1](http://id.who.int/icd/release/11/mms/1782446047) | 扁桃体周围脓肿<br>Peritonsillar abscess | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4942<br>WP-0248 |
-| [CA0K.Y](http://id.who.int/icd/release/11/mms/767797954/other) | 其他特指的上呼吸道脓肿<br>Other specified abscess of upper respiratory tract | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4960<br>WP-0248 |
-| [CA0K.Z](http://id.who.int/icd/release/11/mms/767797954/unspecified) | 未特指的上呼吸道脓肿<br>Abscess of upper respiratory tract, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4978<br>WP-0249 |
-| [CA0Y](http://id.who.int/icd/release/11/mms/1971756453/other) | 其他特指的上呼吸道疾患<br>Other specified upper respiratory tract disorders | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4996<br>WP-0250 |
-| [CA0Z](http://id.who.int/icd/release/11/mms/1971756453/unspecified) | 未特指的上呼吸道疾患<br>Upper respiratory tract disorders, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5014<br>WP-0251 |
-| [CA20.0](http://id.who.int/icd/release/11/mms/209542282) | 急性非感染性支气管炎<br>Acute noninfectious bronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5032<br>WP-0252 |
-| [CA20.10](http://id.who.int/icd/release/11/mms/537830030) | 单纯性慢性支气管炎<br>Simple chronic bronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5050<br>WP-0253 |
-| [CA20.11](http://id.who.int/icd/release/11/mms/1162178332) | 黏液脓性慢性支气管炎<br>Mucopurulent chronic bronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5068<br>WP-0254 |
-| [CA20.12](http://id.who.int/icd/release/11/mms/780739672) | 混合的单纯性和黏液脓性慢性支气管炎<br>Mixed simple and mucopurulent chronic bronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5086<br>WP-0255 |
-| [CA20.13](http://id.who.int/icd/release/11/mms/1708025148) | 迁延性细菌性支气管炎<br>Protracted bacterial bronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5104<br>WP-0256 |
-| [CA20.1Y](http://id.who.int/icd/release/11/mms/290835130/other) | 其他特指的慢性支气管炎<br>Other specified chronic bronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5122<br>WP-0257 |
-| [CA20.1Z](http://id.who.int/icd/release/11/mms/290835130/unspecified) | 未特指的慢性支气管炎<br>Chronic bronchitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5140<br>WP-0257 |
-| [CA20.Y](http://id.who.int/icd/release/11/mms/11753425/other) | 其他特指的支气管炎<br>Other specified bronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5158<br>WP-0258 |
-| [CA20.Z](http://id.who.int/icd/release/11/mms/11753425/unspecified) | 未特指的支气管炎<br>Bronchitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5176<br>WP-0259 |
-| [CA21.0](http://id.who.int/icd/release/11/mms/1030867505) | MacLeod综合征<br>MacLeod syndrome | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5194<br>WP-0260 |
-| [CA21.1](http://id.who.int/icd/release/11/mms/1480198053) | 全小叶型肺气肿<br>Panlobular emphysema | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5211<br>WP-0261 |
-| [CA21.2](http://id.who.int/icd/release/11/mms/748115804) | 小叶中心型肺气肿<br>Centrilobular emphysema | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5228<br>WP-0262 |
-| [CA21.Y](http://id.who.int/icd/release/11/mms/1948124976/other) | 其他特指的肺气肿<br>Other specified emphysema | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5245<br>WP-0263 |
-| [CA21.Z](http://id.who.int/icd/release/11/mms/1948124976/unspecified) | 未特指的肺气肿<br>Emphysema, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5262<br>WP-0264 |
-| [CA24](http://id.who.int/icd/release/11/mms/1935524933) | 支气管扩张<br>Bronchiectasis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing<br>planned-018: title_only_scope_candidate | 5279<br>WP-0264 |
-| [CA25.0](http://id.who.int/icd/release/11/mms/290257878) | 典型性囊性纤维化<br>Classical cystic fibrosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5296<br>WP-0265 |
-| [CA25.1](http://id.who.int/icd/release/11/mms/955958081) | 非典型囊性纤维化<br>Atypical cystic fibrosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5313<br>WP-0266 |
-| [CA25.2](http://id.who.int/icd/release/11/mms/1323966141) | 亚临床囊性纤维化<br>Subclinical cystic fibrosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5330<br>WP-0267 |
-| [CA25.Z](http://id.who.int/icd/release/11/mms/514403112/unspecified) | 未特指的囊性纤维化<br>Cystic fibrosis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5347<br>WP-0268 |
-| [CA26.0](http://id.who.int/icd/release/11/mms/592711730) | 慢性闭塞性细支气管炎<br>Chronic obliterative bronchiolitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5364<br>WP-0269 |
-| [CA26.1](http://id.who.int/icd/release/11/mms/291357751) | 弥漫性泛细支气管炎<br>Diffuse panbronchiolitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5381<br>WP-0270 |
-| [CA26.Y](http://id.who.int/icd/release/11/mms/1067593741/other) | 其他特指的慢性细支气管炎<br>Other specified chronic bronchiolitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5398<br>WP-0270 |
-| [CA26.Z](http://id.who.int/icd/release/11/mms/1067593741/unspecified) | 未特指的慢性细支气管炎<br>Chronic bronchiolitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5415<br>WP-0271 |
-| [CA27.0](http://id.who.int/icd/release/11/mms/1797446244) | 气管支气管骨化病<br>Tracheobronchopathia osteochondroplastica | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5432<br>WP-0272 |
-| [CA27.1](http://id.who.int/icd/release/11/mms/2120724910) | 气管支气管肥大症<br>Tracheobronchomegaly | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5449<br>WP-0273 |
-| [CA27.Y](http://id.who.int/icd/release/11/mms/1889351414/other) | 其他特指的气管支气管炎<br>Other specified tracheobronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5466<br>WP-0274 |
-| [CA27.Z](http://id.who.int/icd/release/11/mms/1889351414/unspecified) | 未特指的气管支气管炎<br>Tracheobronchitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5483<br>WP-0275 |
-| [CA2Y](http://id.who.int/icd/release/11/mms/1582386590/other) | 其他特指的下呼吸道疾病<br>Other specified lower respiratory tract disease | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5500<br>WP-0275 |
-| [CA2Z](http://id.who.int/icd/release/11/mms/1582386590/unspecified) | 未特指的下呼吸道疾病<br>Lower respiratory tract disease, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5517<br>WP-0276 |
-| [CA41.0](http://id.who.int/icd/release/11/mms/1079142440) | 呼吸道合胞病毒引起的急性细支气管炎<br>Acute bronchiolitis due to respiratory syncytial virus | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5534<br>WP-0277 |
-| [CA41.Y](http://id.who.int/icd/release/11/mms/1310075986/other) | 其他特指的急性细支气管炎<br>Other specified acute bronchiolitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5551<br>WP-0278 |
-| [CA41.Z](http://id.who.int/icd/release/11/mms/1310075986/unspecified) | 未特指的急性细支气管炎<br>Acute bronchiolitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5568<br>WP-0279 |
-| [CA42.0](http://id.who.int/icd/release/11/mms/1296842178) | 链球菌引起的急性支气管炎<br>Acute bronchitis due to Streptococcus | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5585<br>WP-0280 |
-| [CA42.1](http://id.who.int/icd/release/11/mms/1242562217) | 鼻病毒引起的急性支气管炎<br>Acute bronchitis due to Rhinovirus | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5602<br>WP-0281 |
-| [CA42.2](http://id.who.int/icd/release/11/mms/1050848854) | 呼吸道合胞病毒引起的急性支气管炎<br>Acute bronchitis due to Respiratory syncytial virus | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5619<br>WP-0281 |
-| [CA42.3](http://id.who.int/icd/release/11/mms/1542022084) | 副流感病毒引起的急性支气管炎<br>Acute bronchitis due to Parainfluenza virus | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5636<br>WP-0282 |
-| [CA42.4](http://id.who.int/icd/release/11/mms/971074877) | 流感嗜血杆菌引起的急性支气管炎<br>Acute bronchitis due to Haemophilus influenzae | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5653<br>WP-0283 |
-| [CA42.5](http://id.who.int/icd/release/11/mms/671608920) | 柯萨奇病毒引起的急性支气管炎<br>Acute bronchitis due to Coxsackievirus | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5670<br>WP-0284 |
-| [CA42.Y](http://id.who.int/icd/release/11/mms/727572936/other) | 其他特指的急性支气管炎<br>Other specified acute bronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5687<br>WP-0285 |
-| [CA42.Z](http://id.who.int/icd/release/11/mms/727572936/unspecified) | 未特指的急性支气管炎<br>Acute bronchitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5704<br>WP-0286 |
-| [CA43.0](http://id.who.int/icd/release/11/mms/632691012) | 肺坏疽或坏死<br>Gangrene or necrosis of lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5721<br>WP-0287 |
-| [CA43.1](http://id.who.int/icd/release/11/mms/1090376918) | 肺脓肿伴肺炎<br>Abscess of lung with pneumonia | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5738<br>WP-0287 |
-| [CA43.2](http://id.who.int/icd/release/11/mms/877691945) | 肺脓肿不伴肺炎<br>Abscess of lung without pneumonia | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5755<br>WP-0288 |
-| [CA43.3](http://id.who.int/icd/release/11/mms/1360742845) | 纵隔脓肿<br>Abscess of mediastinum | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5772<br>WP-0289 |
-| [CA43.Y](http://id.who.int/icd/release/11/mms/895890688/other) | 其他特指的肺或纵隔脓肿<br>Other specified abscess of lung or mediastinum | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5789<br>WP-0290 |
-| [CA43.Z](http://id.who.int/icd/release/11/mms/895890688/unspecified) | 未特指的肺或纵隔脓肿<br>Abscess of lung or mediastinum, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5806<br>WP-0291 |
-| [CA44](http://id.who.int/icd/release/11/mms/1103848959) | 脓胸<br>Pyothorax | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5823<br>WP-0292 |
-| [CA45](http://id.who.int/icd/release/11/mms/413668698) | 呼吸道感染，不可归类在他处者<br>Respiratory infections, not elsewhere classified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5840<br>WP-0292 |
-| [CA4Y](http://id.who.int/icd/release/11/mms/915779102/other) | 其他特指的肺部感染<br>Other specified lung infections | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5857<br>WP-0293 |
-| [CA4Z](http://id.who.int/icd/release/11/mms/915779102/unspecified) | 未特指的肺部感染<br>Lung infections, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5874<br>WP-0294 |
-| [CA60.00](http://id.who.int/icd/release/11/mms/29181140) | 滑石尘肺<br>Pneumoconiosis due to talc dust | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5891<br>WP-0295 |
-| [CA60.0Y](http://id.who.int/icd/release/11/mms/1092658552/other) | 其他特指的含硅[矽]粉尘引起的尘肺<br>Other specified pneumoconiosis due to dust containing silica | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5908<br>WP-0296 |
-| [CA60.0Z](http://id.who.int/icd/release/11/mms/1092658552/unspecified) | 含硅[矽]粉尘引起的尘肺，未特指<br>Pneumoconiosis due to dust containing silica, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5925<br>WP-0297 |
-| [CA60.1](http://id.who.int/icd/release/11/mms/1355167773) | 煤工尘肺<br>Coal worker pneumoconiosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5942<br>WP-0298 |
-| [CA60.2](http://id.who.int/icd/release/11/mms/898495881) | 矿物纤维（包括石棉）引起的尘肺<br>Pneumoconiosis due to mineral fibres including asbestos | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5959<br>WP-0298 |
-| [CA60.3](http://id.who.int/icd/release/11/mms/852375268) | 与结核有关的尘肺<br>Pneumoconiosis associated with tuberculosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5976<br>WP-0299 |
-| [CA60.4](http://id.who.int/icd/release/11/mms/491097171) | 矾土肺<br>Aluminosis of lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5993<br>WP-0300 |
-| [CA60.5](http://id.who.int/icd/release/11/mms/2014200263) | 肺铁矾土纤维化<br>Bauxite fibrosis of lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6010<br>WP-0301 |
-| [CA60.6](http://id.who.int/icd/release/11/mms/212013370) | 铍中毒<br>Berylliosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6027<br>WP-0302 |
-| [CA60.7](http://id.who.int/icd/release/11/mms/1776868524) | 肺石墨纤维化<br>Graphite fibrosis of lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6044<br>WP-0303 |
-| [CA60.8](http://id.who.int/icd/release/11/mms/436621112) | 铁尘肺<br>Siderosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6060<br>WP-0303 |
-| [CA60.9](http://id.who.int/icd/release/11/mms/2135786158) | 锡尘肺<br>Stannosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6076<br>WP-0304 |
-| [CA60.Y](http://id.who.int/icd/release/11/mms/611962875/other) | 其他特指的尘肺<br>Other specified pneumoconiosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6092<br>WP-0305 |
-| [CA60.Z](http://id.who.int/icd/release/11/mms/611962875/unspecified) | 尘肺，未特指<br>Pneumoconiosis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6108<br>WP-0306 |
-| [CA70.0](http://id.who.int/icd/release/11/mms/666590509) | 农民肺<br>Farmer lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6124<br>WP-0307 |
-| [CA70.1](http://id.who.int/icd/release/11/mms/1123061945) | 蔗尘肺<br>Bagassosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6140<br>WP-0307 |
-| [CA70.2](http://id.who.int/icd/release/11/mms/912113736) | 好鸟者肺<br>Bird fancier lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6156<br>WP-0308 |
-| [CA70.3](http://id.who.int/icd/release/11/mms/1393954258) | 软木尘肺<br>Suberosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6172<br>WP-0309 |
-| [CA70.4](http://id.who.int/icd/release/11/mms/553164358) | 麦芽工尘肺<br>Malt worker lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6188<br>WP-0310 |
-| [CA70.5](http://id.who.int/icd/release/11/mms/1169380308) | 蕈工肺<br>Mushroom worker lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6204<br>WP-0311 |
-| [CA70.6](http://id.who.int/icd/release/11/mms/824050477) | 枫树皮工尘肺<br>Maple bark stripper lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6220<br>WP-0311 |
-| [CA70.7](http://id.who.int/icd/release/11/mms/1414909625) | 空调或加湿器相关肺疾病<br>Air conditioner or humidifier lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6236<br>WP-0312 |
-| [CA70.Y](http://id.who.int/icd/release/11/mms/589867913/other) | 其他特指的有机粉尘引起的过敏性肺炎<br>Other specified hypersensitivity pneumonitis due to organic dust | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6252<br>WP-0313 |
-| [CA70.Z](http://id.who.int/icd/release/11/mms/589867913/unspecified) | 未特指的有机粉尘引起的过敏性肺炎<br>Hypersensitivity pneumonitis due to organic dust, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6268<br>WP-0314 |
-| [CA71.0](http://id.who.int/icd/release/11/mms/1975993872) | 吸入食物或呕吐物引起的肺炎<br>Pneumonitis due to inhalation of food or vomit | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6284<br>WP-0315 |
-| [CA71.1](http://id.who.int/icd/release/11/mms/277646214) | 油或香精引起的肺炎<br>Pneumonitis due to oils or essences | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6300<br>WP-0315 |
-| [CA71.2](http://id.who.int/icd/release/11/mms/1358554843) | 吸入血液引起的肺炎<br>Pneumonitis due to aspiration of blood | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6316<br>WP-0316 |
-| [CA71.3](http://id.who.int/icd/release/11/mms/1525086490) | 类脂性肺炎<br>Lipoid pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6332<br>WP-0317 |
-| [CA71.Y](http://id.who.int/icd/release/11/mms/990540639/other) | 其他特指的固体和液体引起的肺炎<br>Other specified pneumonitis due to solids or liquids | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6348<br>WP-0318 |
-| [CA71.Z](http://id.who.int/icd/release/11/mms/990540639/unspecified) | 未特指的固体和液体引起的肺炎<br>Pneumonitis due to solids or liquids, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6364<br>WP-0319 |
-| [CA72](http://id.who.int/icd/release/11/mms/854587674) | Mendelson综合征<br>Mendelson syndrome | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6380<br>WP-0319 |
-| [CA7Y](http://id.who.int/icd/release/11/mms/1324545867/other) | 其他特指的肺部炎症<br>Other specified pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6396<br>WP-0320 |
-| [CA7Z](http://id.who.int/icd/release/11/mms/1324545867/unspecified) | 未特指的肺部炎症<br>Pneumonitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6412<br>WP-0321 |
-| [CA80.0](http://id.who.int/icd/release/11/mms/994284974) | 接触棉花引起的棉尘肺<br>Byssinosis due to exposure to cotton | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6428<br>WP-0322 |
-| [CA80.1](http://id.who.int/icd/release/11/mms/1577605176) | 接触亚麻引起的棉尘病<br>Byssinosis due to exposure to flax | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6444<br>WP-0323 |
-| [CA80.2](http://id.who.int/icd/release/11/mms/715458759) | 接触大麻引起的棉尘肺<br>Byssinosis due to exposure to cannabis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6460<br>WP-0323 |
-| [CA80.Y](http://id.who.int/icd/release/11/mms/1180919325/other) | 特定有机粉尘引起的其他特指的气道疾病<br>Other specified airway disease due to specific organic dust | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6476<br>WP-0324 |
-| [CA80.Z](http://id.who.int/icd/release/11/mms/1180919325/unspecified) | 特定有机粉尘引起的未特指的气道疾病<br>Airway disease due to specific organic dust, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6492<br>WP-0325 |
-| [CA81.0](http://id.who.int/icd/release/11/mms/1765772945) | 化学制剂、气体、烟雾或蒸气引起的支气管炎或肺炎<br>Bronchitis or pneumonitis due to chemicals, gases, fumes or vapours | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6508<br>WP-0326 |
-| [CA81.1](http://id.who.int/icd/release/11/mms/208945925) | 化学制剂、气体、烟雾或蒸气引起的肺水肿<br>Pulmonary oedema due to chemicals, gases, fumes or vapours | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6524<br>WP-0327 |
-| [CA81.2](http://id.who.int/icd/release/11/mms/2027492346) | 化学制剂、气体、烟雾或蒸气引起的上呼吸道炎症，不可归类在他处者<br>Upper respiratory inflammation due to chemicals, gases, fumes or vapours, not elsewhere classified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6540<br>WP-0327 |
-| [CA81.Y](http://id.who.int/icd/release/11/mms/1581366987/other) | 其他特指的吸入化学制剂、气体、烟雾或蒸气引起的呼吸系统情况<br>Other specified respiratory conditions due to inhalation of chemicals, gases, fumes or vapours | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6556<br>WP-0328 |
-| [CA81.Z](http://id.who.int/icd/release/11/mms/1581366987/unspecified) | 未特指的吸入化学制剂、气体、烟雾或蒸气引起的呼吸系统情况<br>Respiratory conditions due to inhalation of chemicals, gases, fumes or vapours, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6572<br>WP-0329 |
-| [CA82.0](http://id.who.int/icd/release/11/mms/215486302) | 辐射引起的急性肺部表现<br>Acute pulmonary manifestations due to radiation | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6588<br>WP-0330 |
-| [CA82.1](http://id.who.int/icd/release/11/mms/1771291336) | 辐射引起的慢性或其他肺部表现<br>Chronic or other pulmonary manifestations due to radiation | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6604<br>WP-0331 |
-| [CA82.2](http://id.who.int/icd/release/11/mms/490639927) | 急性药物性间质性肺疾患<br>Acute drug-induced interstitial lung disorders | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6620<br>WP-0331 |
-| [CA82.3](http://id.who.int/icd/release/11/mms/2020958115) | 慢性药物性间质性肺疾患<br>Chronic drug-induced interstitial lung disorders | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6636<br>WP-0332 |
-| [CA82.4](http://id.who.int/icd/release/11/mms/1826470791) | 曲霉菌所致变应性或过敏性情况<br>Aspergillus-induced allergic or hypersensitivity conditions | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6652<br>WP-0333 |
-| [CA82.Y](http://id.who.int/icd/release/11/mms/117665796/other) | 其他外部物质引起的其他特指的呼吸系统情况<br>Other specified respiratory conditions due to other external agents | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6668<br>WP-0334 |
-| [CA82.Z](http://id.who.int/icd/release/11/mms/117665796/unspecified) | 其他外部物质引起的未特指的呼吸系统情况<br>Respiratory conditions due to other external agents, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6684<br>WP-0335 |
-| [CA8Y](http://id.who.int/icd/release/11/mms/1332995100/other) | 其他特指的外部物质引起的肺部疾病<br>Other specified lung diseases due to external agents | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6700<br>WP-0335 |
-| [CA8Z](http://id.who.int/icd/release/11/mms/1332995100/unspecified) | 未特指的外部物质引起的肺部疾病<br>Lung diseases due to external agents, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6716<br>WP-0336 |
-| [CB01](http://id.who.int/icd/release/11/mms/841348715) | 肺水肿<br>Pulmonary oedema | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6732<br>WP-0337 |
-| [CB02.0](http://id.who.int/icd/release/11/mms/1074315068) | 哮喘相关肺嗜酸性粒细胞增多症<br>Asthmatic pulmonary eosinophilia | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6748<br>WP-0338 |
-| [CB02.10](http://id.who.int/icd/release/11/mms/1455309767) | 特发性急性嗜酸性粒细胞性肺炎<br>Idiopathic acute eosinophilic pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6764<br>WP-0339 |
-| [CB02.11](http://id.who.int/icd/release/11/mms/958353326) | 特发性慢性嗜酸性粒细胞性肺炎<br>Idiopathic chronic eosinophilic pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6780<br>WP-0339 |
-| [CB02.1Y](http://id.who.int/icd/release/11/mms/2097276976/other) | 其他特指的特发性嗜酸性粒细胞性肺炎<br>Other specified idiopathic eosinophilic pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6796<br>WP-0340 |
-| [CB02.1Z](http://id.who.int/icd/release/11/mms/2097276976/unspecified) | 未特指的特发性嗜酸性粒细胞性肺炎<br>Idiopathic eosinophilic pneumonitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6812<br>WP-0341 |
-| [CB02.2](http://id.who.int/icd/release/11/mms/694910970) | 热带性肺嗜酸粒细胞增多症<br>Tropical pulmonary eosinophilia | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6828<br>WP-0342 |
-| [CB02.Y](http://id.who.int/icd/release/11/mms/544479555/other) | 其他特指的肺嗜酸性粒细胞增多症<br>Other specified pulmonary eosinophilia | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6844<br>WP-0343 |
-| [CB02.Z](http://id.who.int/icd/release/11/mms/544479555/unspecified) | 未特指的肺嗜酸性粒细胞增多症<br>Pulmonary eosinophilia, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6860<br>WP-0343 |
-| [CB03.0](http://id.who.int/icd/release/11/mms/2116884221) | 急性间质性肺炎<br>Acute interstitial pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6876<br>WP-0344 |
-| [CB03.1](http://id.who.int/icd/release/11/mms/1361267223) | 肺纤维化合并肺气肿综合征<br>Combined pulmonary fibrosis and emphysema syndrome | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6892<br>WP-0345 |
-| [CB03.2](http://id.who.int/icd/release/11/mms/1937662238) | 隐源性机化性肺炎<br>Cryptogenic organizing pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6908<br>WP-0346 |
-| [CB03.3](http://id.who.int/icd/release/11/mms/1620001155) | 脱屑性间质性肺炎<br>Desquamative interstitial pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6924<br>WP-0347 |
-| [CB03.4](http://id.who.int/icd/release/11/mms/1074069640) | 特发性肺纤维化<br>Idiopathic pulmonary fibrosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6940<br>WP-0347 |
-| [CB03.5](http://id.who.int/icd/release/11/mms/1140418798) | 淋巴细胞性间质性肺炎<br>Lymphoid interstitial pneumonia | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6956<br>WP-0348 |
-| [CB03.6](http://id.who.int/icd/release/11/mms/822500243) | 呼吸性细支气管炎-间质性肺病<br>Respiratory bronchiolitis - interstitial lung disease | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6972<br>WP-0349 |
-| [CB03.Y](http://id.who.int/icd/release/11/mms/1297512293/other) | 其他特指的特发性间质性肺炎<br>Other specified idiopathic interstitial pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6988<br>WP-0350 |
-| [CB03.Z](http://id.who.int/icd/release/11/mms/1297512293/unspecified) | 未特指的特发性间质性肺炎<br>Idiopathic interstitial pneumonitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7004<br>WP-0351 |
-| [CB04.0](http://id.who.int/icd/release/11/mms/1194991864) | 弥漫性肺发育性疾患<br>Diffuse pulmonary developmental disorders | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7020<br>WP-0351 |
-| [CB04.1](http://id.who.int/icd/release/11/mms/2105358588) | 肺淋巴管发育不良综合征<br>Pulmonary lymphatic dysplasia syndromes | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7036<br>WP-0352 |
-| [CB04.2](http://id.who.int/icd/release/11/mms/1387730200) | 表面活性剂代谢疾患<br>Disorders of surfactant metabolism | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7052<br>WP-0353 |
-| [CB04.30](http://id.who.int/icd/release/11/mms/1542272036) | 特发性肺含铁血黄素沉着病<br>Idiopathic pulmonary haemosiderosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7068<br>WP-0354 |
-| [CB04.31](http://id.who.int/icd/release/11/mms/1869739196) | 肺泡蛋白沉着症<br>Pulmonary alveolar proteinosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7084<br>WP-0355 |
-| [CB04.3Y](http://id.who.int/icd/release/11/mms/1086222649/other) | 其他特指的肺泡或肺泡周围情况<br>Other specified alveolar or peri-alveolar conditions | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7100<br>WP-0355 |
-| [CB04.3Z](http://id.who.int/icd/release/11/mms/1086222649/unspecified) | 未特指的肺泡或肺泡周围情况<br>Alveolar or peri-alveolar conditions, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7116<br>WP-0356 |
-| [CB04.4](http://id.who.int/icd/release/11/mms/1610022220) | 肺毛细血管炎<br>Pulmonary capillaritis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7132<br>WP-0357 |
-| [CB04.5](http://id.who.int/icd/release/11/mms/809856670) | 脑-肺-甲状腺综合征<br>Brain-lung-thyroid syndrome | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7148<br>WP-0358 |
-| [CB04.6](http://id.who.int/icd/release/11/mms/1821220054) | 婴儿慢性肺炎<br>Chronic pneumonitis of infancy | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7164<br>WP-0359 |
-| [CB04.7](http://id.who.int/icd/release/11/mms/1641999159) | 婴儿神经内分泌细胞增生<br>Neuroendocrine cell hyperplasia of infancy | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7180<br>WP-0359 |
-| [CB04.Y](http://id.who.int/icd/release/11/mms/1408868257/other) | 其他特指的特发于婴儿或儿童期原发性间质性肺病<br>Other specified primary interstitial lung diseases specific to infancy or childhood | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7196<br>WP-0360 |
-| [CB04.Z](http://id.who.int/icd/release/11/mms/1408868257/unspecified) | 未特指的特发于婴儿或儿童期原发性间质性肺病<br>Primary interstitial lung diseases specific to infancy or childhood, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7212<br>WP-0361 |
-| [CB05.0](http://id.who.int/icd/release/11/mms/1270246788) | 弥漫性肺泡损伤<br>Diffuse alveolar damage | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7228<br>WP-0362 |
-| [CB05.1](http://id.who.int/icd/release/11/mms/1294786485) | 结缔组织疾病相关性间质性肺疾病<br>Interstitial lung diseases associated with connective tissue diseases | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7244<br>WP-0363 |
-| [CB05.2](http://id.who.int/icd/release/11/mms/1452487461) | 肉芽肿疾病相关性间质性肺疾病<br>Interstitial lung diseases associated with granulomatous diseases | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7260<br>WP-0363 |
-| [CB05.3](http://id.who.int/icd/release/11/mms/1766776408) | 代谢疾病相关性间质性肺疾病<br>Interstitial lung diseases associated with metabolic diseases | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7276<br>WP-0364 |
-| [CB05.40](http://id.who.int/icd/release/11/mms/1084657645) | Churg-Strauss综合征引起的呼吸性疾患<br>Respiratory disorders in Churg-Strauss syndrome | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7292<br>WP-0365 |
-| [CB05.41](http://id.who.int/icd/release/11/mms/1528390525) | 显微镜下多血管炎相关呼吸疾患<br>Respiratory disorders in microscopic polyangiitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7308<br>WP-0366 |
-| [CB05.4Y](http://id.who.int/icd/release/11/mms/1687873314/other) | 其他特指的系统性血管炎相关性间质性肺疾病<br>Other specified interstitial lung diseases associated with systemic vasculitides | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7324<br>WP-0367 |
-| [CB05.4Z](http://id.who.int/icd/release/11/mms/1687873314/unspecified) | 未特指的系统性血管炎相关性间质性肺疾病<br>Interstitial lung diseases associated with systemic vasculitides, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7339<br>WP-0367 |
-| [CB05.5](http://id.who.int/icd/release/11/mms/878618614) | 继发性肺含铁血黄素沉着症<br>Secondary pulmonary haemosiderosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7354<br>WP-0368 |
-| [CB05.Y](http://id.who.int/icd/release/11/mms/1854675041/other) | 其他特指的系统性疾病相关的间质性肺疾病<br>Other specified interstitial lung diseases associated with systemic diseases | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7369<br>WP-0369 |
-| [CB05.Z](http://id.who.int/icd/release/11/mms/1854675041/unspecified) | 未特指的系统性疾病相关的间质性肺疾病<br>Interstitial lung diseases associated with systemic diseases, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7384<br>WP-0370 |
-| [CB06](http://id.who.int/icd/release/11/mms/1220010076) | 肺泡微石症<br>Pulmonary alveolar microlithiasis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7399<br>WP-0370 |
-| [CB07.0](http://id.who.int/icd/release/11/mms/1746892004) | 结节性硬化症相关性淋巴管平滑肌瘤病<br>Lymphangioleiomyomatosis associated with tuberous sclerosis complex | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7414<br>WP-0371 |
-| [CB07.1](http://id.who.int/icd/release/11/mms/1251780231) | 散发性淋巴管平滑肌瘤病<br>Sporadic lymphangioleiomyomatosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7429<br>WP-0372 |
-| [CB07.Y](http://id.who.int/icd/release/11/mms/902628446/other) | 其他特指的淋巴管平滑肌瘤病<br>Other specified lymphangioleiomyomatosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7444<br>WP-0373 |
-| [CB07.Z](http://id.who.int/icd/release/11/mms/902628446/unspecified) | 未特指的淋巴管平滑肌瘤病<br>Lymphangioleiomyomatosis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7459<br>WP-0373 |
-| [CB0Y](http://id.who.int/icd/release/11/mms/111658096/other) | 其他特指的主要影响肺间质的呼吸系统疾病<br>Other specified respiratory diseases principally affecting the lung interstitium | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7474<br>WP-0374 |
-| [CB0Z](http://id.who.int/icd/release/11/mms/111658096/unspecified) | 未特指的主要影响肺间质的呼吸系统疾病<br>Respiratory diseases principally affecting the lung interstitium, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7489<br>WP-0375 |
-| [CB20](http://id.who.int/icd/release/11/mms/290320013) | 胸膜斑<br>Pleural plaque | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7504<br>WP-0376 |
-| [CB21.0](http://id.who.int/icd/release/11/mms/304972724) | 自发性张力性气胸<br>Spontaneous tension pneumothorax | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7519<br>WP-0376 |
-| [CB21.1](http://id.who.int/icd/release/11/mms/2003193382) | 其他自发性气胸<br>Other spontaneous pneumothorax | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7534<br>WP-0377 |
-| [CB21.Y](http://id.who.int/icd/release/11/mms/1946559257/other) | 其他特指的气胸<br>Other specified pneumothorax | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7549<br>WP-0378 |
-| [CB21.Z](http://id.who.int/icd/release/11/mms/1946559257/unspecified) | 未特指的气胸<br>Pneumothorax, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7564<br>WP-0379 |
-| [CB22.0](http://id.who.int/icd/release/11/mms/123840075) | 纤维素性纵隔炎<br>Fibrosing mediastinitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7579<br>WP-0379 |
-| [CB22.Y](http://id.who.int/icd/release/11/mms/73371535/other) | 其他特指的纵隔疾病，不可归类在他处者<br>Other specified diseases of mediastinum, not elsewhere classified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7594<br>WP-0380 |
-| [CB22.Z](http://id.who.int/icd/release/11/mms/73371535/unspecified) | 纵隔疾病，未特指<br>Disease of mediastinum, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7608<br>WP-0381 |
-| [CB23](http://id.who.int/icd/release/11/mms/1894965106) | 膈疾患<br>Disorders of diaphragm | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7622<br>WP-0382 |
-| [CB24](http://id.who.int/icd/release/11/mms/693433074) | 乳糜性积液<br>Chylous effusion | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7636<br>WP-0382 |
-| [CB25](http://id.who.int/icd/release/11/mms/1277116264) | 胸膜纤维化<br>Fibrothorax | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7650<br>WP-0383 |
-| [CB26](http://id.who.int/icd/release/11/mms/951218073) | 血胸<br>Haemothorax | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7664<br>WP-0384 |
-| [CB27](http://id.who.int/icd/release/11/mms/11236328) | 胸腔积液<br>Pleural effusion | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7678<br>WP-0384 |
-| [CB2Y](http://id.who.int/icd/release/11/mms/390439470/other) | 其他特指的胸膜、膈或纵隔疾患<br>Other specified pleural, diaphragm or mediastinal disorders | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7692<br>WP-0385 |
-| [CB2Z](http://id.who.int/icd/release/11/mms/390439470/unspecified) | 未特指的胸膜、膈或纵隔疾患<br>Pleural, diaphragm or mediastinal disorders, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7706<br>WP-0386 |
-| [CB40.0](http://id.who.int/icd/release/11/mms/955573234) | 纤毛不动综合征<br>Ciliary dyskinesia | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7720<br>WP-0386 |
-| [CB40.1](http://id.who.int/icd/release/11/mms/1628320490) | Young综合征<br>Young syndrome | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7734<br>WP-0387 |
-| [CB40.2](http://id.who.int/icd/release/11/mms/52186342) | 肺萎陷<br>Pulmonary collapse | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7748<br>WP-0388 |
-| [CB40.3](http://id.who.int/icd/release/11/mms/2008095771) | 间质性肺气肿<br>Interstitial emphysema | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7762<br>WP-0389 |
-| [CB40.4](http://id.who.int/icd/release/11/mms/318427535) | 代偿性肺气肿<br>Compensatory emphysema | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7776<br>WP-0389 |
-| [CB40.Y](http://id.who.int/icd/release/11/mms/850824593/other) | 其他特指的呼吸系统疾病<br>Other specified diseases of the respiratory system | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7790<br>WP-0390 |
-| [CB41.00](http://id.who.int/icd/release/11/mms/2024199586) | 急性呼吸衰竭，I型<br>Acute respiratory failure, Type I | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7804<br>WP-0391 |
-| [CB41.01](http://id.who.int/icd/release/11/mms/1765820617) | 急性呼吸衰竭，II型<br>Acute respiratory failure, Type II | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7818<br>WP-0391 |
-| [CB41.0Z](http://id.who.int/icd/release/11/mms/875272781/unspecified) | 未特指的急性呼吸衰竭<br>Acute respiratory failure, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7832<br>WP-0392 |
-| [CB41.10](http://id.who.int/icd/release/11/mms/189285942) | 慢性呼吸衰竭，I型<br>Chronic respiratory failure, Type I | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7846<br>WP-0393 |
-| [CB41.11](http://id.who.int/icd/release/11/mms/795057595) | 慢性呼吸衰竭，II型<br>Chronic respiratory failure, Type II | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7860<br>WP-0393 |
-| [CB41.1Z](http://id.who.int/icd/release/11/mms/1365268441/unspecified) | 未特指的慢性呼吸衰竭<br>Chronic respiratory failure, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7874<br>WP-0394 |
-| [CB41.20](http://id.who.int/icd/release/11/mms/1298895686) | 呼吸衰竭，未特指，I型<br>Respiratory failure, unspecified, Type I | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7888<br>WP-0395 |
-| [CB41.21](http://id.who.int/icd/release/11/mms/1552748079) | 呼吸衰竭，未特指，II型<br>Respiratory failure, unspecified, Type II | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7902<br>WP-0396 |
-| [CB41.2Z](http://id.who.int/icd/release/11/mms/1609027855/unspecified) | 呼吸衰竭，未特指<br>Respiratory failure, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7916<br>WP-0396 |
-| [CB60](http://id.who.int/icd/release/11/mms/900479603) | 气管造口术功能不全<br>Tracheostomy malfunction | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7930<br>WP-0397 |
-| [CB61](http://id.who.int/icd/release/11/mms/1090611854) | 手术后慢性肺功能不全<br>Chronic pulmonary insufficiency following surgery | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7944<br>WP-0398 |
-| [CB62](http://id.who.int/icd/release/11/mms/1470379148) | 操作后的声门下狭窄<br>Postprocedural subglottic stenosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7958<br>WP-0398 |
-| [CB63](http://id.who.int/icd/release/11/mms/587818099) | 操作后气管狭窄<br>Postprocedural stenosis of the trachea | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7972<br>WP-0399 |
-| [CB64](http://id.who.int/icd/release/11/mms/1525860764) | 输血相关急性肺损伤<br>Transfusion related acute lung injury | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7986<br>WP-0400 |
-| [CB7Z](http://id.who.int/icd/release/11/mms/197934298/unspecified) | 未特指的呼吸系统疾病<br>Diseases of the respiratory system, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 8000<br>WP-0400 |
+| [CA22.0](http://id.who.int/icd/release/11/mms/1665365733) | 慢性阻塞性肺疾病伴急性加重，未特指<br>Chronic obstructive pulmonary disease with acute exacerbation, unspecified | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 12<br>WP-0001 |
+| [CA22.1](http://id.who.int/icd/release/11/mms/143605159) | 某些特指的慢性阻塞性肺疾病<br>Certain specified chronic obstructive pulmonary disease | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 30<br>WP-0002 |
+| [CA22.Z](http://id.who.int/icd/release/11/mms/133207228/unspecified) | 未特指的慢性阻塞性肺疾病<br>Chronic obstructive pulmonary disease, unspecified | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 48<br>WP-0003 |
+| [CA23.00](http://id.who.int/icd/release/11/mms/474902557) | 变应性哮喘伴加重<br>Allergic asthma with exacerbation | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 65<br>WP-0004 |
+| [CA23.01](http://id.who.int/icd/release/11/mms/1600219939) | 变应性哮喘伴哮喘持续状态<br>Allergic asthma with status asthmaticus | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 80<br>WP-0004 |
+| [CA23.02](http://id.who.int/icd/release/11/mms/1779929269) | 变应性哮喘，单纯性<br>Allergic asthma, uncomplicated | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 95<br>WP-0005 |
+| [CA23.10](http://id.who.int/icd/release/11/mms/364410074) | 非变应性哮喘伴加重<br>Non-allergic asthma with exacerbation | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 110<br>WP-0006 |
+| [CA23.11](http://id.who.int/icd/release/11/mms/1596138435) | 非变应性哮喘伴哮喘持续状态<br>Non-allergic asthma with status asthmaticus | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 125<br>WP-0007 |
+| [CA23.12](http://id.who.int/icd/release/11/mms/438028710) | 非变应性哮喘，单纯性<br>Non-allergic asthma, uncomplicated | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 140<br>WP-0007 |
+| [CA23.20](http://id.who.int/icd/release/11/mms/1030818265) | 阿司匹林性哮喘<br>Aspirin-induced asthma | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 155<br>WP-0008 |
+| [CA23.21](http://id.who.int/icd/release/11/mms/841017462) | 运动性支气管痉挛<br>Exercise-induced bronchospasm | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 170<br>WP-0009 |
+| [CA23.22](http://id.who.int/icd/release/11/mms/1466639844) | 咳嗽变异性哮喘<br>Cough variant asthma | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 185<br>WP-0010 |
+| [CA23.30](http://id.who.int/icd/release/11/mms/753457166) | 未特指的哮喘伴加重<br>Unspecified asthma with exacerbation | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 200<br>WP-0010 |
+| [CA23.31](http://id.who.int/icd/release/11/mms/1480952049) | 未特指的哮喘伴哮喘持续状态<br>Unspecified asthma with status asthmaticus | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 212<br>WP-0011 |
+| [CA23.32](http://id.who.int/icd/release/11/mms/577724120) | 未特指的哮喘，单纯性<br>Unspecified asthma, uncomplicated | 呼吸内科 | P1 | [p1-chronic-respiratory](#rule-p1-chronic-respiratory) | missing | 224<br>WP-0012 |
+| [CA40.00](http://id.who.int/icd/release/11/mms/1258650683) | 肺炎衣原体引起的肺炎<br>Pneumonia due to Chlamydophila pneumoniae | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 236<br>WP-0012 |
+| [CA40.01](http://id.who.int/icd/release/11/mms/680186620) | 大肠埃希菌引起的肺炎<br>Pneumonia due to Escherichia coli | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 248<br>WP-0013 |
+| [CA40.02](http://id.who.int/icd/release/11/mms/732824952) | 流感嗜血杆菌引起的肺炎<br>Pneumonia due to Haemophilus influenzae | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 260<br>WP-0013 |
+| [CA40.03](http://id.who.int/icd/release/11/mms/1250089989) | 肺炎克雷伯菌引起的肺炎<br>Pneumonia due to Klebsiella pneumoniae | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 272<br>WP-0014 |
+| [CA40.04](http://id.who.int/icd/release/11/mms/963399569) | 肺炎支原体引起的肺炎<br>Pneumonia due to Mycoplasma pneumoniae | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 284<br>WP-0015 |
+| [CA40.05](http://id.who.int/icd/release/11/mms/801706385) | 铜绿假单胞菌引起的肺炎<br>Pneumonia due to Pseudomonas aeruginosa | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 296<br>WP-0015 |
+| [CA40.06](http://id.who.int/icd/release/11/mms/1533297008) | 葡萄球菌引起的肺炎<br>Pneumonia due to Staphylococcus | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 308<br>WP-0016 |
+| [CA40.07](http://id.who.int/icd/release/11/mms/1480627948) | 肺炎链球菌引起的肺炎<br>Pneumonia due to Streptococcus pneumoniae | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 320<br>WP-0016 |
+| [CA40.08](http://id.who.int/icd/release/11/mms/1043303674) | β-溶血性链球菌引起的肺炎<br>Pneumonia due to beta-haemolytic Streptococcus | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 332<br>WP-0017 |
+| [CA40.0Y](http://id.who.int/icd/release/11/mms/1323682030/other) | 其他特指的细菌性肺炎<br>Pneumonia due to other specified bacteria | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 344<br>WP-0018 |
+| [CA40.0Z](http://id.who.int/icd/release/11/mms/1323682030/unspecified) | 细菌性肺炎，未特指<br>Bacterial pneumonia, unspecified | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 356<br>WP-0018 |
+| [CA40.10](http://id.who.int/icd/release/11/mms/1912319301) | 腺病毒引起的肺炎<br>Pneumonia due to Adenovirus | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 368<br>WP-0019 |
+| [CA40.11](http://id.who.int/icd/release/11/mms/347103441) | 呼吸道合胞病毒引起的肺炎<br>Pneumonia due to Respiratory syncytial virus | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 380<br>WP-0019 |
+| [CA40.12](http://id.who.int/icd/release/11/mms/1612525614) | 副流感病毒引起的肺炎<br>Pneumonia due to parainfluenza virus | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 392<br>WP-0020 |
+| [CA40.13](http://id.who.int/icd/release/11/mms/89587132) | 人类偏肺病毒引起的肺炎<br>Pneumonia due to Human metapneumovirus | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 404<br>WP-0021 |
+| [CA40.1Y](http://id.who.int/icd/release/11/mms/1024154490/other) | 其他特指的病毒性肺炎<br>Pneumonia due to other specified virus | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 415<br>WP-0021 |
+| [CA40.1Z](http://id.who.int/icd/release/11/mms/1024154490/unspecified) | 未特指的病毒性肺炎<br>Viral pneumonia, unspecified | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 426<br>WP-0022 |
+| [CA40.20](http://id.who.int/icd/release/11/mms/1229452918) | 肺孢子菌引起的肺炎<br>Pneumonia due to pneumocystis | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 437<br>WP-0022 |
+| [CA40.2Y](http://id.who.int/icd/release/11/mms/1176185297/other) | 其他特指的真菌性肺炎<br>Other specified fungal pneumonia | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 448<br>WP-0023 |
+| [CA40.2Z](http://id.who.int/icd/release/11/mms/1176185297/unspecified) | 未特指的真菌性肺炎<br>Fungal pneumonia, unspecified | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 459<br>WP-0023 |
+| [CA40.Y](http://id.who.int/icd/release/11/mms/142052508/other) | 其他特指的肺炎<br>Other specified pneumonia | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 470<br>WP-0024 |
+| [CA40.Z](http://id.who.int/icd/release/11/mms/142052508/unspecified) | 肺炎，病原体未特指<br>Pneumonia, organism unspecified | 呼吸内科 | P1 | [p1-pneumonia](#rule-p1-pneumonia) | missing | 481<br>WP-0025 |
+| [CA00](http://id.who.int/icd/release/11/mms/2066255370) | 急性鼻咽炎<br>Acute nasopharyngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing<br>common-cold: pending | 3820<br>WP-0191 |
+| [CA01](http://id.who.int/icd/release/11/mms/509821856) | 急性鼻窦炎<br>Acute sinusitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 3841<br>WP-0193 |
+| [CA02.0](http://id.who.int/icd/release/11/mms/1868957860) | 急性细菌性咽炎<br>Acute bacterial pharyngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 3862<br>WP-0194 |
+| [CA02.10](http://id.who.int/icd/release/11/mms/1956341906) | 腺病毒引起的咽炎<br>Pharyngitis due to Adenovirus | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 3883<br>WP-0195 |
+| [CA02.1Y](http://id.who.int/icd/release/11/mms/1758486982/other) | 其他特指的急性病毒性咽炎<br>Other specified acute viral pharyngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 3902<br>WP-0196 |
+| [CA02.1Z](http://id.who.int/icd/release/11/mms/1758486982/unspecified) | 未特指的急性病毒性咽炎<br>Acute viral pharyngitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 3921<br>WP-0197 |
+| [CA02.Y](http://id.who.int/icd/release/11/mms/1791890273/other) | 其他特指的急性咽炎<br>Other specified acute pharyngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 3940<br>WP-0197 |
+| [CA02.Z](http://id.who.int/icd/release/11/mms/1791890273/unspecified) | 未特指的急性咽炎<br>Acute pharyngitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 3959<br>WP-0198 |
+| [CA03.0](http://id.who.int/icd/release/11/mms/2098808565) | 链球菌性扁桃体炎<br>Streptococcal tonsillitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 3978<br>WP-0199 |
+| [CA03.Y](http://id.who.int/icd/release/11/mms/260431605/other) | 其他特指的急性扁桃体炎<br>Other specified acute tonsillitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 3997<br>WP-0200 |
+| [CA03.Z](http://id.who.int/icd/release/11/mms/260431605/unspecified) | 未特指的急性扁桃体炎<br>Acute tonsillitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4016<br>WP-0201 |
+| [CA04](http://id.who.int/icd/release/11/mms/1528782604) | 急性咽喉炎<br>Acute laryngopharyngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4035<br>WP-0202 |
+| [CA05.0](http://id.who.int/icd/release/11/mms/1180710837) | 急性喉炎<br>Acute laryngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4054<br>WP-0203 |
+| [CA05.1](http://id.who.int/icd/release/11/mms/590084641) | 急性气管炎<br>Acute tracheitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4073<br>WP-0204 |
+| [CA05.2](http://id.who.int/icd/release/11/mms/1468443358) | 急性喉气管炎<br>Acute laryngotracheitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4092<br>WP-0205 |
+| [CA06.0](http://id.who.int/icd/release/11/mms/1519976244) | 急性梗阻性喉炎<br>Acute obstructive laryngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4111<br>WP-0206 |
+| [CA06.Z](http://id.who.int/icd/release/11/mms/421560565/unspecified) | 未特指的急性梗阻性喉炎或会厌炎<br>Acute obstructive laryngitis or epiglottitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4130<br>WP-0207 |
+| [CA07.0](http://id.who.int/icd/release/11/mms/819139656) | 急性上呼吸道感染， 部位未特指<br>Acute upper respiratory infection, site unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4149<br>WP-0208 |
+| [CA07.1](http://id.who.int/icd/release/11/mms/2123003017) | 多部位的急性上呼吸道感染<br>Acute upper respiratory infections of multiple sites | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4168<br>WP-0209 |
+| [CA08.00](http://id.who.int/icd/release/11/mms/704335372) | 花粉引起的变应性鼻炎<br>Allergic rhinitis due to pollen | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4187<br>WP-0210 |
+| [CA08.01](http://id.who.int/icd/release/11/mms/1565925107) | 其他季节性变应原引起的变应性鼻炎<br>Allergic rhinitis due to other seasonal allergens | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4206<br>WP-0211 |
+| [CA08.02](http://id.who.int/icd/release/11/mms/14936621) | 屋尘螨引起的变应性鼻炎<br>Allergic rhinitis due to house dust mite | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4225<br>WP-0212 |
+| [CA08.03](http://id.who.int/icd/release/11/mms/941478759) | 其他变应性鼻炎<br>Other allergic rhinitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4244<br>WP-0213 |
+| [CA08.0Z](http://id.who.int/icd/release/11/mms/1711769234/unspecified) | 未特指的变应性鼻炎<br>Allergic rhinitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4263<br>WP-0214 |
+| [CA08.10](http://id.who.int/icd/release/11/mms/1523867406) | 伴嗜酸细胞非变应性鼻炎<br>Non-allergic rhinitis with eosinophils | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4282<br>WP-0215 |
+| [CA08.1Y](http://id.who.int/icd/release/11/mms/1650452542/other) | 其他特指的非变应性鼻炎<br>Other specified non-allergic rhinitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4301<br>WP-0216 |
+| [CA08.1Z](http://id.who.int/icd/release/11/mms/1650452542/unspecified) | 未特指的非变应性鼻炎<br>Non-allergic rhinitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4320<br>WP-0216 |
+| [CA08.2](http://id.who.int/icd/release/11/mms/1953896048) | 混合性鼻炎<br>Mixed rhinitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4339<br>WP-0217 |
+| [CA08.3](http://id.who.int/icd/release/11/mms/1286636442) | 血管舒缩性鼻炎<br>Vasomotor rhinitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4358<br>WP-0218 |
+| [CA09.0](http://id.who.int/icd/release/11/mms/1346915097) | 慢性鼻炎<br>Chronic rhinitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4377<br>WP-0219 |
+| [CA09.1](http://id.who.int/icd/release/11/mms/889423501) | 慢性鼻咽炎<br>Chronic nasopharyngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4396<br>WP-0220 |
+| [CA09.2](http://id.who.int/icd/release/11/mms/1101977204) | 慢性咽炎<br>Chronic pharyngitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4415<br>WP-0221 |
+| [CA0A.0](http://id.who.int/icd/release/11/mms/330367715) | Samter综合征<br>Samter syndrome | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4434<br>WP-0222 |
+| [CA0A.Y](http://id.who.int/icd/release/11/mms/1836987572/other) | 其他特指的慢性鼻窦炎<br>Other specified chronic rhinosinusitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4453<br>WP-0223 |
+| [CA0A.Z](http://id.who.int/icd/release/11/mms/1836987572/unspecified) | 未特指的慢性鼻窦炎<br>Chronic rhinosinusitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4472<br>WP-0224 |
+| [CA0B](http://id.who.int/icd/release/11/mms/1204931989) | 隐匿性鼻窦综合征<br>Silent sinus syndrome | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4491<br>WP-0225 |
+| [CA0C](http://id.who.int/icd/release/11/mms/319135602) | 鼻或鼻窦囊肿或黏液囊肿<br>Cyst or mucocele of nose or nasal sinus | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4510<br>WP-0226 |
+| [CA0D](http://id.who.int/icd/release/11/mms/1739116429) | 鼻中隔偏曲<br>Deviated nasal septum | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4529<br>WP-0227 |
+| [CA0E](http://id.who.int/icd/release/11/mms/48431641) | 鼻甲肥大<br>Hypertrophy of nasal turbinates | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4548<br>WP-0228 |
+| [CA0F.0](http://id.who.int/icd/release/11/mms/268261363) | 扁桃体肥大<br>Hypertrophy of tonsils | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4567<br>WP-0229 |
+| [CA0F.1](http://id.who.int/icd/release/11/mms/2068842254) | 腺样体肥大<br>Hypertrophy of adenoids | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4586<br>WP-0230 |
+| [CA0F.3](http://id.who.int/icd/release/11/mms/505137816) | 扁桃体肥大伴腺样体肥大<br>Hypertrophy of tonsils with hypertrophy of adenoids | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4605<br>WP-0231 |
+| [CA0F.Y](http://id.who.int/icd/release/11/mms/512796448/other) | 其他特指的慢性扁桃体或腺样体疾病<br>Other specified chronic diseases of tonsils or adenoids | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4624<br>WP-0232 |
+| [CA0F.Z](http://id.who.int/icd/release/11/mms/512796448/unspecified) | 未特指的慢性扁桃体或腺样体疾病<br>Chronic diseases of tonsils or adenoids, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4643<br>WP-0233 |
+| [CA0G](http://id.who.int/icd/release/11/mms/259406411) | 慢性喉炎或喉气管炎<br>Chronic laryngitis or laryngotracheitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4662<br>WP-0234 |
+| [CA0H.0](http://id.who.int/icd/release/11/mms/961356134) | 声带或喉麻痹<br>Paralysis of vocal cords or larynx | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4681<br>WP-0235 |
+| [CA0H.1](http://id.who.int/icd/release/11/mms/1543957744) | 声带或喉息肉<br>Polyp of vocal cord or larynx | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4700<br>WP-0235 |
+| [CA0H.2](http://id.who.int/icd/release/11/mms/682343439) | 声带结节<br>Nodules of vocal cords | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4719<br>WP-0236 |
+| [CA0H.3](http://id.who.int/icd/release/11/mms/1041162767) | 喉水肿<br>Oedema of larynx | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4738<br>WP-0237 |
+| [CA0H.4](http://id.who.int/icd/release/11/mms/1531260827) | 喉痉挛<br>Laryngeal spasm | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4757<br>WP-0238 |
+| [CA0H.5](http://id.who.int/icd/release/11/mms/803766116) | 喉狭窄<br>Stenosis of larynx | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4776<br>WP-0239 |
+| [CA0H.Y](http://id.who.int/icd/release/11/mms/1914646281/other) | 其他特指的声带或喉疾病，不可归类在他处者<br>Other specified diseases of vocal cords or larynx, not elsewhere classified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4795<br>WP-0240 |
+| [CA0H.Z](http://id.who.int/icd/release/11/mms/1914646281/unspecified) | 未特指的声带或喉疾病，不可归类在他处者<br>Diseases of vocal cords or larynx, not elsewhere classified, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4814<br>WP-0241 |
+| [CA0J.0](http://id.who.int/icd/release/11/mms/679276084) | 息肉样鼻窦退行性变<br>Polypoid sinus degeneration | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4833<br>WP-0242 |
+| [CA0J.Y](http://id.who.int/icd/release/11/mms/137754914/other) | 其他特指的鼻息肉<br>Other specified nasal polyp | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4852<br>WP-0243 |
+| [CA0J.Z](http://id.who.int/icd/release/11/mms/137754914/unspecified) | 未特指的鼻息肉<br>Nasal polyp, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4871<br>WP-0244 |
+| [CA0K.0](http://id.who.int/icd/release/11/mms/632678885) | 咽后或咽旁脓肿<br>Retropharyngeal or parapharyngeal abscess | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4890<br>WP-0245 |
+| [CA0K.1](http://id.who.int/icd/release/11/mms/1782446047) | 扁桃体周围脓肿<br>Peritonsillar abscess | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4909<br>WP-0246 |
+| [CA0K.Y](http://id.who.int/icd/release/11/mms/767797954/other) | 其他特指的上呼吸道脓肿<br>Other specified abscess of upper respiratory tract | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4927<br>WP-0247 |
+| [CA0K.Z](http://id.who.int/icd/release/11/mms/767797954/unspecified) | 未特指的上呼吸道脓肿<br>Abscess of upper respiratory tract, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4945<br>WP-0248 |
+| [CA0Y](http://id.who.int/icd/release/11/mms/1971756453/other) | 其他特指的上呼吸道疾患<br>Other specified upper respiratory tract disorders | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4963<br>WP-0249 |
+| [CA0Z](http://id.who.int/icd/release/11/mms/1971756453/unspecified) | 未特指的上呼吸道疾患<br>Upper respiratory tract disorders, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4981<br>WP-0250 |
+| [CA20.0](http://id.who.int/icd/release/11/mms/209542282) | 急性非感染性支气管炎<br>Acute noninfectious bronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 4999<br>WP-0250 |
+| [CA20.10](http://id.who.int/icd/release/11/mms/537830030) | 单纯性慢性支气管炎<br>Simple chronic bronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5017<br>WP-0251 |
+| [CA20.11](http://id.who.int/icd/release/11/mms/1162178332) | 黏液脓性慢性支气管炎<br>Mucopurulent chronic bronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5035<br>WP-0252 |
+| [CA20.12](http://id.who.int/icd/release/11/mms/780739672) | 混合的单纯性和黏液脓性慢性支气管炎<br>Mixed simple and mucopurulent chronic bronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5053<br>WP-0253 |
+| [CA20.13](http://id.who.int/icd/release/11/mms/1708025148) | 迁延性细菌性支气管炎<br>Protracted bacterial bronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5071<br>WP-0254 |
+| [CA20.1Y](http://id.who.int/icd/release/11/mms/290835130/other) | 其他特指的慢性支气管炎<br>Other specified chronic bronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5089<br>WP-0255 |
+| [CA20.1Z](http://id.who.int/icd/release/11/mms/290835130/unspecified) | 未特指的慢性支气管炎<br>Chronic bronchitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5107<br>WP-0256 |
+| [CA20.Y](http://id.who.int/icd/release/11/mms/11753425/other) | 其他特指的支气管炎<br>Other specified bronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5125<br>WP-0257 |
+| [CA20.Z](http://id.who.int/icd/release/11/mms/11753425/unspecified) | 未特指的支气管炎<br>Bronchitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5143<br>WP-0258 |
+| [CA21.0](http://id.who.int/icd/release/11/mms/1030867505) | MacLeod综合征<br>MacLeod syndrome | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5161<br>WP-0259 |
+| [CA21.1](http://id.who.int/icd/release/11/mms/1480198053) | 全小叶型肺气肿<br>Panlobular emphysema | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5178<br>WP-0259 |
+| [CA21.2](http://id.who.int/icd/release/11/mms/748115804) | 小叶中心型肺气肿<br>Centrilobular emphysema | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5195<br>WP-0260 |
+| [CA21.Y](http://id.who.int/icd/release/11/mms/1948124976/other) | 其他特指的肺气肿<br>Other specified emphysema | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5212<br>WP-0261 |
+| [CA21.Z](http://id.who.int/icd/release/11/mms/1948124976/unspecified) | 未特指的肺气肿<br>Emphysema, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5229<br>WP-0262 |
+| [CA24](http://id.who.int/icd/release/11/mms/1935524933) | 支气管扩张<br>Bronchiectasis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing<br>planned-018: title_only_scope_candidate | 5246<br>WP-0263 |
+| [CA25.0](http://id.who.int/icd/release/11/mms/290257878) | 典型性囊性纤维化<br>Classical cystic fibrosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5263<br>WP-0264 |
+| [CA25.1](http://id.who.int/icd/release/11/mms/955958081) | 非典型囊性纤维化<br>Atypical cystic fibrosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5280<br>WP-0264 |
+| [CA25.2](http://id.who.int/icd/release/11/mms/1323966141) | 亚临床囊性纤维化<br>Subclinical cystic fibrosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5297<br>WP-0265 |
+| [CA25.Z](http://id.who.int/icd/release/11/mms/514403112/unspecified) | 未特指的囊性纤维化<br>Cystic fibrosis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5314<br>WP-0266 |
+| [CA26.0](http://id.who.int/icd/release/11/mms/592711730) | 慢性闭塞性细支气管炎<br>Chronic obliterative bronchiolitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5331<br>WP-0267 |
+| [CA26.1](http://id.who.int/icd/release/11/mms/291357751) | 弥漫性泛细支气管炎<br>Diffuse panbronchiolitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5348<br>WP-0268 |
+| [CA26.Y](http://id.who.int/icd/release/11/mms/1067593741/other) | 其他特指的慢性细支气管炎<br>Other specified chronic bronchiolitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5365<br>WP-0269 |
+| [CA26.Z](http://id.who.int/icd/release/11/mms/1067593741/unspecified) | 未特指的慢性细支气管炎<br>Chronic bronchiolitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5382<br>WP-0270 |
+| [CA27.0](http://id.who.int/icd/release/11/mms/1797446244) | 气管支气管骨化病<br>Tracheobronchopathia osteochondroplastica | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5399<br>WP-0270 |
+| [CA27.1](http://id.who.int/icd/release/11/mms/2120724910) | 气管支气管肥大症<br>Tracheobronchomegaly | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5416<br>WP-0271 |
+| [CA27.Y](http://id.who.int/icd/release/11/mms/1889351414/other) | 其他特指的气管支气管炎<br>Other specified tracheobronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5433<br>WP-0272 |
+| [CA27.Z](http://id.who.int/icd/release/11/mms/1889351414/unspecified) | 未特指的气管支气管炎<br>Tracheobronchitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5450<br>WP-0273 |
+| [CA2Y](http://id.who.int/icd/release/11/mms/1582386590/other) | 其他特指的下呼吸道疾病<br>Other specified lower respiratory tract disease | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5467<br>WP-0274 |
+| [CA2Z](http://id.who.int/icd/release/11/mms/1582386590/unspecified) | 未特指的下呼吸道疾病<br>Lower respiratory tract disease, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5484<br>WP-0275 |
+| [CA41.0](http://id.who.int/icd/release/11/mms/1079142440) | 呼吸道合胞病毒引起的急性细支气管炎<br>Acute bronchiolitis due to respiratory syncytial virus | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5501<br>WP-0276 |
+| [CA41.Y](http://id.who.int/icd/release/11/mms/1310075986/other) | 其他特指的急性细支气管炎<br>Other specified acute bronchiolitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5518<br>WP-0276 |
+| [CA41.Z](http://id.who.int/icd/release/11/mms/1310075986/unspecified) | 未特指的急性细支气管炎<br>Acute bronchiolitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5535<br>WP-0277 |
+| [CA42.0](http://id.who.int/icd/release/11/mms/1296842178) | 链球菌引起的急性支气管炎<br>Acute bronchitis due to Streptococcus | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5552<br>WP-0278 |
+| [CA42.1](http://id.who.int/icd/release/11/mms/1242562217) | 鼻病毒引起的急性支气管炎<br>Acute bronchitis due to Rhinovirus | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5569<br>WP-0279 |
+| [CA42.2](http://id.who.int/icd/release/11/mms/1050848854) | 呼吸道合胞病毒引起的急性支气管炎<br>Acute bronchitis due to Respiratory syncytial virus | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5586<br>WP-0280 |
+| [CA42.3](http://id.who.int/icd/release/11/mms/1542022084) | 副流感病毒引起的急性支气管炎<br>Acute bronchitis due to Parainfluenza virus | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5603<br>WP-0281 |
+| [CA42.4](http://id.who.int/icd/release/11/mms/971074877) | 流感嗜血杆菌引起的急性支气管炎<br>Acute bronchitis due to Haemophilus influenzae | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5620<br>WP-0281 |
+| [CA42.5](http://id.who.int/icd/release/11/mms/671608920) | 柯萨奇病毒引起的急性支气管炎<br>Acute bronchitis due to Coxsackievirus | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5637<br>WP-0282 |
+| [CA42.Y](http://id.who.int/icd/release/11/mms/727572936/other) | 其他特指的急性支气管炎<br>Other specified acute bronchitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5654<br>WP-0283 |
+| [CA42.Z](http://id.who.int/icd/release/11/mms/727572936/unspecified) | 未特指的急性支气管炎<br>Acute bronchitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5671<br>WP-0284 |
+| [CA43.0](http://id.who.int/icd/release/11/mms/632691012) | 肺坏疽或坏死<br>Gangrene or necrosis of lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5688<br>WP-0285 |
+| [CA43.1](http://id.who.int/icd/release/11/mms/1090376918) | 肺脓肿伴肺炎<br>Abscess of lung with pneumonia | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5705<br>WP-0286 |
+| [CA43.2](http://id.who.int/icd/release/11/mms/877691945) | 肺脓肿不伴肺炎<br>Abscess of lung without pneumonia | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5722<br>WP-0287 |
+| [CA43.3](http://id.who.int/icd/release/11/mms/1360742845) | 纵隔脓肿<br>Abscess of mediastinum | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5739<br>WP-0287 |
+| [CA43.Y](http://id.who.int/icd/release/11/mms/895890688/other) | 其他特指的肺或纵隔脓肿<br>Other specified abscess of lung or mediastinum | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5756<br>WP-0288 |
+| [CA43.Z](http://id.who.int/icd/release/11/mms/895890688/unspecified) | 未特指的肺或纵隔脓肿<br>Abscess of lung or mediastinum, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5773<br>WP-0289 |
+| [CA44](http://id.who.int/icd/release/11/mms/1103848959) | 脓胸<br>Pyothorax | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5790<br>WP-0290 |
+| [CA45](http://id.who.int/icd/release/11/mms/413668698) | 呼吸道感染，不可归类在他处者<br>Respiratory infections, not elsewhere classified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5807<br>WP-0291 |
+| [CA4Y](http://id.who.int/icd/release/11/mms/915779102/other) | 其他特指的肺部感染<br>Other specified lung infections | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5824<br>WP-0292 |
+| [CA4Z](http://id.who.int/icd/release/11/mms/915779102/unspecified) | 未特指的肺部感染<br>Lung infections, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5841<br>WP-0293 |
+| [CA60.00](http://id.who.int/icd/release/11/mms/29181140) | 滑石尘肺<br>Pneumoconiosis due to talc dust | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5858<br>WP-0293 |
+| [CA60.0Y](http://id.who.int/icd/release/11/mms/1092658552/other) | 其他特指的含硅[矽]粉尘引起的尘肺<br>Other specified pneumoconiosis due to dust containing silica | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5875<br>WP-0294 |
+| [CA60.0Z](http://id.who.int/icd/release/11/mms/1092658552/unspecified) | 含硅[矽]粉尘引起的尘肺，未特指<br>Pneumoconiosis due to dust containing silica, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5892<br>WP-0295 |
+| [CA60.1](http://id.who.int/icd/release/11/mms/1355167773) | 煤工尘肺<br>Coal worker pneumoconiosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5909<br>WP-0296 |
+| [CA60.2](http://id.who.int/icd/release/11/mms/898495881) | 矿物纤维（包括石棉）引起的尘肺<br>Pneumoconiosis due to mineral fibres including asbestos | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5926<br>WP-0297 |
+| [CA60.3](http://id.who.int/icd/release/11/mms/852375268) | 与结核有关的尘肺<br>Pneumoconiosis associated with tuberculosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5943<br>WP-0298 |
+| [CA60.4](http://id.who.int/icd/release/11/mms/491097171) | 矾土肺<br>Aluminosis of lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5960<br>WP-0298 |
+| [CA60.5](http://id.who.int/icd/release/11/mms/2014200263) | 肺铁矾土纤维化<br>Bauxite fibrosis of lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5977<br>WP-0299 |
+| [CA60.6](http://id.who.int/icd/release/11/mms/212013370) | 铍中毒<br>Berylliosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 5994<br>WP-0300 |
+| [CA60.7](http://id.who.int/icd/release/11/mms/1776868524) | 肺石墨纤维化<br>Graphite fibrosis of lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6011<br>WP-0301 |
+| [CA60.8](http://id.who.int/icd/release/11/mms/436621112) | 铁尘肺<br>Siderosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6027<br>WP-0302 |
+| [CA60.9](http://id.who.int/icd/release/11/mms/2135786158) | 锡尘肺<br>Stannosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6043<br>WP-0303 |
+| [CA60.Y](http://id.who.int/icd/release/11/mms/611962875/other) | 其他特指的尘肺<br>Other specified pneumoconiosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6059<br>WP-0303 |
+| [CA60.Z](http://id.who.int/icd/release/11/mms/611962875/unspecified) | 尘肺，未特指<br>Pneumoconiosis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6075<br>WP-0304 |
+| [CA70.0](http://id.who.int/icd/release/11/mms/666590509) | 农民肺<br>Farmer lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6091<br>WP-0305 |
+| [CA70.1](http://id.who.int/icd/release/11/mms/1123061945) | 蔗尘肺<br>Bagassosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6107<br>WP-0306 |
+| [CA70.2](http://id.who.int/icd/release/11/mms/912113736) | 好鸟者肺<br>Bird fancier lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6123<br>WP-0307 |
+| [CA70.3](http://id.who.int/icd/release/11/mms/1393954258) | 软木尘肺<br>Suberosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6139<br>WP-0307 |
+| [CA70.4](http://id.who.int/icd/release/11/mms/553164358) | 麦芽工尘肺<br>Malt worker lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6155<br>WP-0308 |
+| [CA70.5](http://id.who.int/icd/release/11/mms/1169380308) | 蕈工肺<br>Mushroom worker lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6171<br>WP-0309 |
+| [CA70.6](http://id.who.int/icd/release/11/mms/824050477) | 枫树皮工尘肺<br>Maple bark stripper lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6187<br>WP-0310 |
+| [CA70.7](http://id.who.int/icd/release/11/mms/1414909625) | 空调或加湿器相关肺疾病<br>Air conditioner or humidifier lung | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6203<br>WP-0311 |
+| [CA70.Y](http://id.who.int/icd/release/11/mms/589867913/other) | 其他特指的有机粉尘引起的过敏性肺炎<br>Other specified hypersensitivity pneumonitis due to organic dust | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6219<br>WP-0311 |
+| [CA70.Z](http://id.who.int/icd/release/11/mms/589867913/unspecified) | 未特指的有机粉尘引起的过敏性肺炎<br>Hypersensitivity pneumonitis due to organic dust, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6235<br>WP-0312 |
+| [CA71.0](http://id.who.int/icd/release/11/mms/1975993872) | 吸入食物或呕吐物引起的肺炎<br>Pneumonitis due to inhalation of food or vomit | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6251<br>WP-0313 |
+| [CA71.1](http://id.who.int/icd/release/11/mms/277646214) | 油或香精引起的肺炎<br>Pneumonitis due to oils or essences | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6267<br>WP-0314 |
+| [CA71.2](http://id.who.int/icd/release/11/mms/1358554843) | 吸入血液引起的肺炎<br>Pneumonitis due to aspiration of blood | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6283<br>WP-0315 |
+| [CA71.3](http://id.who.int/icd/release/11/mms/1525086490) | 类脂性肺炎<br>Lipoid pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6299<br>WP-0315 |
+| [CA71.Y](http://id.who.int/icd/release/11/mms/990540639/other) | 其他特指的固体和液体引起的肺炎<br>Other specified pneumonitis due to solids or liquids | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6315<br>WP-0316 |
+| [CA71.Z](http://id.who.int/icd/release/11/mms/990540639/unspecified) | 未特指的固体和液体引起的肺炎<br>Pneumonitis due to solids or liquids, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6331<br>WP-0317 |
+| [CA72](http://id.who.int/icd/release/11/mms/854587674) | Mendelson综合征<br>Mendelson syndrome | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6347<br>WP-0318 |
+| [CA7Y](http://id.who.int/icd/release/11/mms/1324545867/other) | 其他特指的肺部炎症<br>Other specified pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6363<br>WP-0319 |
+| [CA7Z](http://id.who.int/icd/release/11/mms/1324545867/unspecified) | 未特指的肺部炎症<br>Pneumonitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6379<br>WP-0319 |
+| [CA80.0](http://id.who.int/icd/release/11/mms/994284974) | 接触棉花引起的棉尘肺<br>Byssinosis due to exposure to cotton | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6395<br>WP-0320 |
+| [CA80.1](http://id.who.int/icd/release/11/mms/1577605176) | 接触亚麻引起的棉尘病<br>Byssinosis due to exposure to flax | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6411<br>WP-0321 |
+| [CA80.2](http://id.who.int/icd/release/11/mms/715458759) | 接触大麻引起的棉尘肺<br>Byssinosis due to exposure to cannabis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6427<br>WP-0322 |
+| [CA80.Y](http://id.who.int/icd/release/11/mms/1180919325/other) | 特定有机粉尘引起的其他特指的气道疾病<br>Other specified airway disease due to specific organic dust | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6443<br>WP-0323 |
+| [CA80.Z](http://id.who.int/icd/release/11/mms/1180919325/unspecified) | 特定有机粉尘引起的未特指的气道疾病<br>Airway disease due to specific organic dust, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6459<br>WP-0323 |
+| [CA81.0](http://id.who.int/icd/release/11/mms/1765772945) | 化学制剂、气体、烟雾或蒸气引起的支气管炎或肺炎<br>Bronchitis or pneumonitis due to chemicals, gases, fumes or vapours | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6475<br>WP-0324 |
+| [CA81.1](http://id.who.int/icd/release/11/mms/208945925) | 化学制剂、气体、烟雾或蒸气引起的肺水肿<br>Pulmonary oedema due to chemicals, gases, fumes or vapours | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6491<br>WP-0325 |
+| [CA81.2](http://id.who.int/icd/release/11/mms/2027492346) | 化学制剂、气体、烟雾或蒸气引起的上呼吸道炎症，不可归类在他处者<br>Upper respiratory inflammation due to chemicals, gases, fumes or vapours, not elsewhere classified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6507<br>WP-0326 |
+| [CA81.Y](http://id.who.int/icd/release/11/mms/1581366987/other) | 其他特指的吸入化学制剂、气体、烟雾或蒸气引起的呼吸系统情况<br>Other specified respiratory conditions due to inhalation of chemicals, gases, fumes or vapours | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6523<br>WP-0327 |
+| [CA81.Z](http://id.who.int/icd/release/11/mms/1581366987/unspecified) | 未特指的吸入化学制剂、气体、烟雾或蒸气引起的呼吸系统情况<br>Respiratory conditions due to inhalation of chemicals, gases, fumes or vapours, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6539<br>WP-0327 |
+| [CA82.0](http://id.who.int/icd/release/11/mms/215486302) | 辐射引起的急性肺部表现<br>Acute pulmonary manifestations due to radiation | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6555<br>WP-0328 |
+| [CA82.1](http://id.who.int/icd/release/11/mms/1771291336) | 辐射引起的慢性或其他肺部表现<br>Chronic or other pulmonary manifestations due to radiation | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6571<br>WP-0329 |
+| [CA82.2](http://id.who.int/icd/release/11/mms/490639927) | 急性药物性间质性肺疾患<br>Acute drug-induced interstitial lung disorders | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6587<br>WP-0330 |
+| [CA82.3](http://id.who.int/icd/release/11/mms/2020958115) | 慢性药物性间质性肺疾患<br>Chronic drug-induced interstitial lung disorders | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6603<br>WP-0331 |
+| [CA82.4](http://id.who.int/icd/release/11/mms/1826470791) | 曲霉菌所致变应性或过敏性情况<br>Aspergillus-induced allergic or hypersensitivity conditions | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6619<br>WP-0331 |
+| [CA82.Y](http://id.who.int/icd/release/11/mms/117665796/other) | 其他外部物质引起的其他特指的呼吸系统情况<br>Other specified respiratory conditions due to other external agents | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6635<br>WP-0332 |
+| [CA82.Z](http://id.who.int/icd/release/11/mms/117665796/unspecified) | 其他外部物质引起的未特指的呼吸系统情况<br>Respiratory conditions due to other external agents, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6651<br>WP-0333 |
+| [CA8Y](http://id.who.int/icd/release/11/mms/1332995100/other) | 其他特指的外部物质引起的肺部疾病<br>Other specified lung diseases due to external agents | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6667<br>WP-0334 |
+| [CA8Z](http://id.who.int/icd/release/11/mms/1332995100/unspecified) | 未特指的外部物质引起的肺部疾病<br>Lung diseases due to external agents, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6683<br>WP-0335 |
+| [CB01](http://id.who.int/icd/release/11/mms/841348715) | 肺水肿<br>Pulmonary oedema | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6699<br>WP-0335 |
+| [CB02.0](http://id.who.int/icd/release/11/mms/1074315068) | 哮喘相关肺嗜酸性粒细胞增多症<br>Asthmatic pulmonary eosinophilia | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6715<br>WP-0336 |
+| [CB02.10](http://id.who.int/icd/release/11/mms/1455309767) | 特发性急性嗜酸性粒细胞性肺炎<br>Idiopathic acute eosinophilic pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6731<br>WP-0337 |
+| [CB02.11](http://id.who.int/icd/release/11/mms/958353326) | 特发性慢性嗜酸性粒细胞性肺炎<br>Idiopathic chronic eosinophilic pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6747<br>WP-0338 |
+| [CB02.1Y](http://id.who.int/icd/release/11/mms/2097276976/other) | 其他特指的特发性嗜酸性粒细胞性肺炎<br>Other specified idiopathic eosinophilic pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6763<br>WP-0339 |
+| [CB02.1Z](http://id.who.int/icd/release/11/mms/2097276976/unspecified) | 未特指的特发性嗜酸性粒细胞性肺炎<br>Idiopathic eosinophilic pneumonitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6779<br>WP-0339 |
+| [CB02.2](http://id.who.int/icd/release/11/mms/694910970) | 热带性肺嗜酸粒细胞增多症<br>Tropical pulmonary eosinophilia | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6795<br>WP-0340 |
+| [CB02.Y](http://id.who.int/icd/release/11/mms/544479555/other) | 其他特指的肺嗜酸性粒细胞增多症<br>Other specified pulmonary eosinophilia | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6811<br>WP-0341 |
+| [CB02.Z](http://id.who.int/icd/release/11/mms/544479555/unspecified) | 未特指的肺嗜酸性粒细胞增多症<br>Pulmonary eosinophilia, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6827<br>WP-0342 |
+| [CB03.0](http://id.who.int/icd/release/11/mms/2116884221) | 急性间质性肺炎<br>Acute interstitial pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6843<br>WP-0343 |
+| [CB03.1](http://id.who.int/icd/release/11/mms/1361267223) | 肺纤维化合并肺气肿综合征<br>Combined pulmonary fibrosis and emphysema syndrome | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6859<br>WP-0343 |
+| [CB03.2](http://id.who.int/icd/release/11/mms/1937662238) | 隐源性机化性肺炎<br>Cryptogenic organizing pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6875<br>WP-0344 |
+| [CB03.3](http://id.who.int/icd/release/11/mms/1620001155) | 脱屑性间质性肺炎<br>Desquamative interstitial pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6891<br>WP-0345 |
+| [CB03.4](http://id.who.int/icd/release/11/mms/1074069640) | 特发性肺纤维化<br>Idiopathic pulmonary fibrosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6907<br>WP-0346 |
+| [CB03.5](http://id.who.int/icd/release/11/mms/1140418798) | 淋巴细胞性间质性肺炎<br>Lymphoid interstitial pneumonia | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6923<br>WP-0347 |
+| [CB03.6](http://id.who.int/icd/release/11/mms/822500243) | 呼吸性细支气管炎-间质性肺病<br>Respiratory bronchiolitis - interstitial lung disease | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6939<br>WP-0347 |
+| [CB03.Y](http://id.who.int/icd/release/11/mms/1297512293/other) | 其他特指的特发性间质性肺炎<br>Other specified idiopathic interstitial pneumonitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6955<br>WP-0348 |
+| [CB03.Z](http://id.who.int/icd/release/11/mms/1297512293/unspecified) | 未特指的特发性间质性肺炎<br>Idiopathic interstitial pneumonitis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6971<br>WP-0349 |
+| [CB04.0](http://id.who.int/icd/release/11/mms/1194991864) | 弥漫性肺发育性疾患<br>Diffuse pulmonary developmental disorders | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 6987<br>WP-0350 |
+| [CB04.1](http://id.who.int/icd/release/11/mms/2105358588) | 肺淋巴管发育不良综合征<br>Pulmonary lymphatic dysplasia syndromes | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7003<br>WP-0351 |
+| [CB04.2](http://id.who.int/icd/release/11/mms/1387730200) | 表面活性剂代谢疾患<br>Disorders of surfactant metabolism | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7019<br>WP-0351 |
+| [CB04.30](http://id.who.int/icd/release/11/mms/1542272036) | 特发性肺含铁血黄素沉着病<br>Idiopathic pulmonary haemosiderosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7035<br>WP-0352 |
+| [CB04.31](http://id.who.int/icd/release/11/mms/1869739196) | 肺泡蛋白沉着症<br>Pulmonary alveolar proteinosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7051<br>WP-0353 |
+| [CB04.3Y](http://id.who.int/icd/release/11/mms/1086222649/other) | 其他特指的肺泡或肺泡周围情况<br>Other specified alveolar or peri-alveolar conditions | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7067<br>WP-0354 |
+| [CB04.3Z](http://id.who.int/icd/release/11/mms/1086222649/unspecified) | 未特指的肺泡或肺泡周围情况<br>Alveolar or peri-alveolar conditions, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7083<br>WP-0355 |
+| [CB04.4](http://id.who.int/icd/release/11/mms/1610022220) | 肺毛细血管炎<br>Pulmonary capillaritis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7099<br>WP-0355 |
+| [CB04.5](http://id.who.int/icd/release/11/mms/809856670) | 脑-肺-甲状腺综合征<br>Brain-lung-thyroid syndrome | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7115<br>WP-0356 |
+| [CB04.6](http://id.who.int/icd/release/11/mms/1821220054) | 婴儿慢性肺炎<br>Chronic pneumonitis of infancy | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7131<br>WP-0357 |
+| [CB04.7](http://id.who.int/icd/release/11/mms/1641999159) | 婴儿神经内分泌细胞增生<br>Neuroendocrine cell hyperplasia of infancy | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7147<br>WP-0358 |
+| [CB04.Y](http://id.who.int/icd/release/11/mms/1408868257/other) | 其他特指的特发于婴儿或儿童期原发性间质性肺病<br>Other specified primary interstitial lung diseases specific to infancy or childhood | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7163<br>WP-0359 |
+| [CB04.Z](http://id.who.int/icd/release/11/mms/1408868257/unspecified) | 未特指的特发于婴儿或儿童期原发性间质性肺病<br>Primary interstitial lung diseases specific to infancy or childhood, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7179<br>WP-0359 |
+| [CB05.0](http://id.who.int/icd/release/11/mms/1270246788) | 弥漫性肺泡损伤<br>Diffuse alveolar damage | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7195<br>WP-0360 |
+| [CB05.1](http://id.who.int/icd/release/11/mms/1294786485) | 结缔组织疾病相关性间质性肺疾病<br>Interstitial lung diseases associated with connective tissue diseases | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7211<br>WP-0361 |
+| [CB05.2](http://id.who.int/icd/release/11/mms/1452487461) | 肉芽肿疾病相关性间质性肺疾病<br>Interstitial lung diseases associated with granulomatous diseases | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7227<br>WP-0362 |
+| [CB05.3](http://id.who.int/icd/release/11/mms/1766776408) | 代谢疾病相关性间质性肺疾病<br>Interstitial lung diseases associated with metabolic diseases | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7243<br>WP-0363 |
+| [CB05.40](http://id.who.int/icd/release/11/mms/1084657645) | Churg-Strauss综合征引起的呼吸性疾患<br>Respiratory disorders in Churg-Strauss syndrome | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7259<br>WP-0363 |
+| [CB05.41](http://id.who.int/icd/release/11/mms/1528390525) | 显微镜下多血管炎相关呼吸疾患<br>Respiratory disorders in microscopic polyangiitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7275<br>WP-0364 |
+| [CB05.4Y](http://id.who.int/icd/release/11/mms/1687873314/other) | 其他特指的系统性血管炎相关性间质性肺疾病<br>Other specified interstitial lung diseases associated with systemic vasculitides | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7291<br>WP-0365 |
+| [CB05.4Z](http://id.who.int/icd/release/11/mms/1687873314/unspecified) | 未特指的系统性血管炎相关性间质性肺疾病<br>Interstitial lung diseases associated with systemic vasculitides, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7306<br>WP-0366 |
+| [CB05.5](http://id.who.int/icd/release/11/mms/878618614) | 继发性肺含铁血黄素沉着症<br>Secondary pulmonary haemosiderosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7321<br>WP-0367 |
+| [CB05.Y](http://id.who.int/icd/release/11/mms/1854675041/other) | 其他特指的系统性疾病相关的间质性肺疾病<br>Other specified interstitial lung diseases associated with systemic diseases | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7336<br>WP-0367 |
+| [CB05.Z](http://id.who.int/icd/release/11/mms/1854675041/unspecified) | 未特指的系统性疾病相关的间质性肺疾病<br>Interstitial lung diseases associated with systemic diseases, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7351<br>WP-0368 |
+| [CB06](http://id.who.int/icd/release/11/mms/1220010076) | 肺泡微石症<br>Pulmonary alveolar microlithiasis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7366<br>WP-0369 |
+| [CB07.0](http://id.who.int/icd/release/11/mms/1746892004) | 结节性硬化症相关性淋巴管平滑肌瘤病<br>Lymphangioleiomyomatosis associated with tuberous sclerosis complex | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7381<br>WP-0370 |
+| [CB07.1](http://id.who.int/icd/release/11/mms/1251780231) | 散发性淋巴管平滑肌瘤病<br>Sporadic lymphangioleiomyomatosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7396<br>WP-0370 |
+| [CB07.Y](http://id.who.int/icd/release/11/mms/902628446/other) | 其他特指的淋巴管平滑肌瘤病<br>Other specified lymphangioleiomyomatosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7411<br>WP-0371 |
+| [CB07.Z](http://id.who.int/icd/release/11/mms/902628446/unspecified) | 未特指的淋巴管平滑肌瘤病<br>Lymphangioleiomyomatosis, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7426<br>WP-0372 |
+| [CB0Y](http://id.who.int/icd/release/11/mms/111658096/other) | 其他特指的主要影响肺间质的呼吸系统疾病<br>Other specified respiratory diseases principally affecting the lung interstitium | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7441<br>WP-0373 |
+| [CB0Z](http://id.who.int/icd/release/11/mms/111658096/unspecified) | 未特指的主要影响肺间质的呼吸系统疾病<br>Respiratory diseases principally affecting the lung interstitium, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7456<br>WP-0373 |
+| [CB20](http://id.who.int/icd/release/11/mms/290320013) | 胸膜斑<br>Pleural plaque | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7471<br>WP-0374 |
+| [CB21.0](http://id.who.int/icd/release/11/mms/304972724) | 自发性张力性气胸<br>Spontaneous tension pneumothorax | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7486<br>WP-0375 |
+| [CB21.1](http://id.who.int/icd/release/11/mms/2003193382) | 其他自发性气胸<br>Other spontaneous pneumothorax | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7501<br>WP-0376 |
+| [CB21.Y](http://id.who.int/icd/release/11/mms/1946559257/other) | 其他特指的气胸<br>Other specified pneumothorax | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7516<br>WP-0376 |
+| [CB21.Z](http://id.who.int/icd/release/11/mms/1946559257/unspecified) | 未特指的气胸<br>Pneumothorax, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7531<br>WP-0377 |
+| [CB22.0](http://id.who.int/icd/release/11/mms/123840075) | 纤维素性纵隔炎<br>Fibrosing mediastinitis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7546<br>WP-0378 |
+| [CB22.Y](http://id.who.int/icd/release/11/mms/73371535/other) | 其他特指的纵隔疾病，不可归类在他处者<br>Other specified diseases of mediastinum, not elsewhere classified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7561<br>WP-0379 |
+| [CB22.Z](http://id.who.int/icd/release/11/mms/73371535/unspecified) | 纵隔疾病，未特指<br>Disease of mediastinum, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7575<br>WP-0379 |
+| [CB23](http://id.who.int/icd/release/11/mms/1894965106) | 膈疾患<br>Disorders of diaphragm | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7589<br>WP-0380 |
+| [CB24](http://id.who.int/icd/release/11/mms/693433074) | 乳糜性积液<br>Chylous effusion | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7603<br>WP-0381 |
+| [CB25](http://id.who.int/icd/release/11/mms/1277116264) | 胸膜纤维化<br>Fibrothorax | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7617<br>WP-0381 |
+| [CB26](http://id.who.int/icd/release/11/mms/951218073) | 血胸<br>Haemothorax | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7631<br>WP-0382 |
+| [CB27](http://id.who.int/icd/release/11/mms/11236328) | 胸腔积液<br>Pleural effusion | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7645<br>WP-0383 |
+| [CB2Y](http://id.who.int/icd/release/11/mms/390439470/other) | 其他特指的胸膜、膈或纵隔疾患<br>Other specified pleural, diaphragm or mediastinal disorders | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7659<br>WP-0383 |
+| [CB2Z](http://id.who.int/icd/release/11/mms/390439470/unspecified) | 未特指的胸膜、膈或纵隔疾患<br>Pleural, diaphragm or mediastinal disorders, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7673<br>WP-0384 |
+| [CB40.0](http://id.who.int/icd/release/11/mms/955573234) | 纤毛不动综合征<br>Ciliary dyskinesia | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7687<br>WP-0385 |
+| [CB40.1](http://id.who.int/icd/release/11/mms/1628320490) | Young综合征<br>Young syndrome | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7701<br>WP-0386 |
+| [CB40.2](http://id.who.int/icd/release/11/mms/52186342) | 肺萎陷<br>Pulmonary collapse | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7715<br>WP-0386 |
+| [CB40.3](http://id.who.int/icd/release/11/mms/2008095771) | 间质性肺气肿<br>Interstitial emphysema | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7729<br>WP-0387 |
+| [CB40.4](http://id.who.int/icd/release/11/mms/318427535) | 代偿性肺气肿<br>Compensatory emphysema | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7743<br>WP-0388 |
+| [CB40.Y](http://id.who.int/icd/release/11/mms/850824593/other) | 其他特指的呼吸系统疾病<br>Other specified diseases of the respiratory system | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7757<br>WP-0388 |
+| [CB41.00](http://id.who.int/icd/release/11/mms/2024199586) | 急性呼吸衰竭，I型<br>Acute respiratory failure, Type I | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7771<br>WP-0389 |
+| [CB41.01](http://id.who.int/icd/release/11/mms/1765820617) | 急性呼吸衰竭，II型<br>Acute respiratory failure, Type II | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7785<br>WP-0390 |
+| [CB41.0Z](http://id.who.int/icd/release/11/mms/875272781/unspecified) | 未特指的急性呼吸衰竭<br>Acute respiratory failure, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7799<br>WP-0390 |
+| [CB41.10](http://id.who.int/icd/release/11/mms/189285942) | 慢性呼吸衰竭，I型<br>Chronic respiratory failure, Type I | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7813<br>WP-0391 |
+| [CB41.11](http://id.who.int/icd/release/11/mms/795057595) | 慢性呼吸衰竭，II型<br>Chronic respiratory failure, Type II | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7827<br>WP-0392 |
+| [CB41.1Z](http://id.who.int/icd/release/11/mms/1365268441/unspecified) | 未特指的慢性呼吸衰竭<br>Chronic respiratory failure, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7841<br>WP-0393 |
+| [CB41.20](http://id.who.int/icd/release/11/mms/1298895686) | 呼吸衰竭，未特指，I型<br>Respiratory failure, unspecified, Type I | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7855<br>WP-0393 |
+| [CB41.21](http://id.who.int/icd/release/11/mms/1552748079) | 呼吸衰竭，未特指，II型<br>Respiratory failure, unspecified, Type II | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7869<br>WP-0394 |
+| [CB41.2Z](http://id.who.int/icd/release/11/mms/1609027855/unspecified) | 呼吸衰竭，未特指<br>Respiratory failure, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7883<br>WP-0395 |
+| [CB60](http://id.who.int/icd/release/11/mms/900479603) | 气管造口术功能不全<br>Tracheostomy malfunction | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7897<br>WP-0395 |
+| [CB61](http://id.who.int/icd/release/11/mms/1090611854) | 手术后慢性肺功能不全<br>Chronic pulmonary insufficiency following surgery | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7911<br>WP-0396 |
+| [CB62](http://id.who.int/icd/release/11/mms/1470379148) | 操作后的声门下狭窄<br>Postprocedural subglottic stenosis | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7925<br>WP-0397 |
+| [CB63](http://id.who.int/icd/release/11/mms/587818099) | 操作后气管狭窄<br>Postprocedural stenosis of the trachea | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7939<br>WP-0397 |
+| [CB64](http://id.who.int/icd/release/11/mms/1525860764) | 输血相关急性肺损伤<br>Transfusion related acute lung injury | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7953<br>WP-0398 |
+| [CB7Z](http://id.who.int/icd/release/11/mms/197934298/unspecified) | 未特指的呼吸系统疾病<br>Diseases of the respiratory system, unspecified | 呼吸内科 | P2 | [chapter:12](#rule-chapter%3A12) | missing | 7967<br>WP-0399 |
 
 ## 本章规则说明
 
