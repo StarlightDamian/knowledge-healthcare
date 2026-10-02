@@ -1,0 +1,2283 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-03",
+  "medical_reviewed": false,
+  "scope": "Three existing articles; explicit independent per-leaf decisions plus unchanged prior scopes rebound to accepted content. No inferred category upgrades.",
+  "articles": [
+    {
+      "id": "meningitis",
+      "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+      "independent_review": "reports/p0-02-meningitis-independent.json",
+      "independent_report_sha256": "458dc1d6819e092e8e2703fb6370ee71822754fd23b6943bbde7fa99cc450c4f"
+    },
+    {
+      "id": "anaphylaxis",
+      "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+      "independent_review": "reports/p0-02-anaphylaxis-independent.json",
+      "independent_report_sha256": "9a1421c5820a17504d2715324b370ea79da05fa1b9443a68f5d9ffb510de45e4"
+    },
+    {
+      "id": "postpartum-hemorrhage",
+      "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+      "independent_review": "reports/p0-02-postpartum-hemorrhage-independent.json",
+      "independent_report_sha256": "a674dba5b77825436079fe1910c4685ba089008b6fa786f8f8bff20097788a3f"
+    }
+  ],
+  "official_sources_actually_read": [
+    {
+      "url": "https://icdcdn.who.int/static/releasefiles/2026-01/print-ICD-11-MMS-en.zip",
+      "member_sha256": "4baccc13c794dca36d8a79fe80a673e854fc51f13114db3ce76196f0a1eb6cab",
+      "local_extracted_text": "C:\\Users\\Damian\\AppData\\Local\\Temp\\healthcare-private\\p0-icd-2026-01-official.txt",
+      "reader": "/root",
+      "evidence_boundary": "Root reviewer reported actual reading of frozen official PDF/text; this engineering helper does not claim a new medical or classification reading."
+    }
+  ],
+  "category_reviews": [
+    {
+      "condition_id": "meningitis",
+      "code": "1B53",
+      "status": "partial",
+      "official_row": {
+        "row": 229,
+        "code": "1B53",
+        "title": "- - Meningitis due to Streptococcus",
+        "class_kind": "category",
+        "chapter": "01",
+        "foundation_uri": "http://id.who.int/icd/entity/705971711",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/705971711",
+        "parent_uri": "http://id.who.int/icd/entity/1539889147",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "meningitis",
+        "code": "1B53",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Streptococcal genus-wide pathogen, age and targeted-management allocation remains incomplete; pneumococcal vaccine mention is insufficient.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "current_mapping": {
+        "condition_id": "meningitis",
+        "code": "1B53",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Streptococcal genus-wide pathogen, age and targeted-management allocation remains incomplete; pneumococcal vaccine mention is insufficient.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "independent_review": "reports/p0-02-meningitis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1B54",
+      "status": "partial",
+      "official_row": {
+        "row": 230,
+        "code": "1B54",
+        "title": "- - Meningitis due to Staphylococcus",
+        "class_kind": "category",
+        "chapter": "01",
+        "foundation_uri": "http://id.who.int/icd/entity/1331660907",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1331660907",
+        "parent_uri": "http://id.who.int/icd/entity/1539889147",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "meningitis",
+        "code": "1B54",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Staphylococcal and procedure/device-associated routes and targeted treatment are not explained.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "current_mapping": {
+        "condition_id": "meningitis",
+        "code": "1B54",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Staphylococcal and procedure/device-associated routes and targeted treatment are not explained.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "independent_review": "reports/p0-02-meningitis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1C1C.0",
+      "status": "confirmed",
+      "official_row": {
+        "row": 354,
+        "code": "1C1C.0",
+        "title": "- - - Meningococcal meningitis",
+        "class_kind": "category",
+        "chapter": "01",
+        "foundation_uri": "http://id.who.int/icd/entity/516585689",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/516585689",
+        "parent_uri": "http://id.who.int/icd/entity/1664016479",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "meningitis",
+        "code": "1C1C.0",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Meningococcal meningitis uses the bacterial hospital pathway and explicitly differentiated meningococcal disease, close-contact prophylaxis and pathogen-specific vaccination. Bloodstream meningococcal disease without meningitis is not merged.",
+          "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+        }
+      },
+      "current_mapping": {
+        "condition_id": "meningitis",
+        "code": "1C1C.0",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Meningococcal meningitis uses the bacterial hospital pathway and explicitly differentiated meningococcal disease, close-contact prophylaxis and pathogen-specific vaccination. Bloodstream meningococcal disease without meningitis is not merged.",
+          "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+        }
+      },
+      "independent_review": "reports/p0-02-meningitis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1C8E.1",
+      "status": "confirmed",
+      "official_row": {
+        "row": 481,
+        "code": "1C8E.1",
+        "title": "- - - Enteroviral meningitis",
+        "class_kind": "category",
+        "chapter": "01",
+        "foundation_uri": "http://id.who.int/icd/entity/62316737",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/62316737",
+        "parent_uri": "http://id.who.int/icd/entity/1358604969",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "current_independent_report",
+      "prior_mapping": {
+        "condition_id": "meningitis",
+        "code": "1C8E.1",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Enteroviral-specific transmission, populations and course have not been allocated to a complete named-virus scope.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "current_mapping": {
+        "condition_id": "meningitis",
+        "code": "1C8E.1",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "/root/astra_p0_maternal",
+          "checked_at": "2026-10-03",
+          "scope": "entire_leaf_category",
+          "rationale": "命名肠道病毒支路补齐传播/感染非脑膜炎、CSF病原检查、支持治疗及幼龄重症和卫生，14维共同急症/居家条件/恢复内容正向适用；不以泛称viral自动覆盖其他指定病毒。",
+          "exclusions_considered": "不纳入仅肠道病毒感染无脑膜炎、单纯脑炎/脑脊髓炎或另列新生儿感染；无全球疫苗可及性或统一疗程声明。"
+        }
+      },
+      "independent_review": "reports/p0-02-meningitis-independent.json",
+      "decision": {
+        "code": "1C8E.1",
+        "status": "confirmed",
+        "rationale": "命名肠道病毒支路补齐传播/感染非脑膜炎、CSF病原检查、支持治疗及幼龄重症和卫生，14维共同急症/居家条件/恢复内容正向适用；不以泛称viral自动覆盖其他指定病毒。",
+        "exclusions_considered": "不纳入仅肠道病毒感染无脑膜炎、单纯脑炎/脑脊髓炎或另列新生儿感染；无全球疫苗可及性或统一疗程声明。",
+        "remaining": []
+      }
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1C8E.2",
+      "status": "partial",
+      "official_row": {
+        "row": 482,
+        "code": "1C8E.2",
+        "title": "- - - Meningitis due to adenovirus",
+        "class_kind": "category",
+        "chapter": "01",
+        "foundation_uri": "http://id.who.int/icd/entity/1727868245",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1727868245",
+        "parent_uri": "http://id.who.int/icd/entity/1358604969",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "meningitis",
+        "code": "1C8E.2",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Adenoviral-specific disease scope and follow-up are not developed.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "current_mapping": {
+        "condition_id": "meningitis",
+        "code": "1C8E.2",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Adenoviral-specific disease scope and follow-up are not developed.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "independent_review": "reports/p0-02-meningitis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1C8E.Y",
+      "status": "partial",
+      "official_row": {
+        "row": 483,
+        "code": "1C8E.Y",
+        "title": "- - - Other specified viral meningitis, not elsewhere classified",
+        "class_kind": "category",
+        "chapter": "01",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1358604969/other",
+        "parent_uri": "http://id.who.int/icd/entity/1358604969",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "meningitis",
+        "code": "1C8E.Y",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Other specified viral causes require a positive residual allocation; generic viral care does not establish it.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "current_mapping": {
+        "condition_id": "meningitis",
+        "code": "1C8E.Y",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Other specified viral causes require a positive residual allocation; generic viral care does not establish it.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "independent_review": "reports/p0-02-meningitis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1C8E.Z",
+      "status": "confirmed",
+      "official_row": {
+        "row": 484,
+        "code": "1C8E.Z",
+        "title": "- - - Viral meningitis, unspecified",
+        "class_kind": "category",
+        "chapter": "01",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1358604969/unspecified",
+        "parent_uri": "http://id.who.int/icd/entity/1358604969",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "meningitis",
+        "code": "1C8E.Z",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Viral meningitis of unspecified viral cause is explained with conditional mild supportive care, severe/immune-compromised hospital assessment, selected antiviral treatment and transmission distinction. An unidentified viral cause is not a claim to cover every named virus.",
+          "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+        }
+      },
+      "current_mapping": {
+        "condition_id": "meningitis",
+        "code": "1C8E.Z",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Viral meningitis of unspecified viral cause is explained with conditional mild supportive care, severe/immune-compromised hospital assessment, selected antiviral treatment and transmission distinction. An unidentified viral cause is not a claim to cover every named virus.",
+          "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+        }
+      },
+      "independent_review": "reports/p0-02-meningitis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1D01.00",
+      "status": "confirmed",
+      "official_row": {
+        "row": 503,
+        "code": "1D01.00",
+        "title": "- - - - Meningitis due to Haemophilus influenzae",
+        "class_kind": "category",
+        "chapter": "01",
+        "foundation_uri": "http://id.who.int/icd/entity/1005770900",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1005770900",
+        "parent_uri": "http://id.who.int/icd/entity/684930313",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "current_independent_report",
+      "prior_mapping": {
+        "condition_id": "meningitis",
+        "code": "1D01.00",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Hib vaccination is explained, but complete H. influenzae-specific contact assessment and pathogen scope remain unallocated.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "current_mapping": {
+        "condition_id": "meningitis",
+        "code": "1D01.00",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "/root/astra_p0_maternal",
+          "checked_at": "2026-10-03",
+          "scope": "entire_leaf_category",
+          "rationale": "全文明确H.influenzae菌种与Hib子型区别，所有菌型适用细菌脑膜炎诊疗及听力/神经随访支路；Hib疫苗和接触者策略限定b型，不将non-b当作不传播。共同14维无与此菌种冲突的空白支路；无需重复14维全文或新增个人用药剂量才成立。",
+          "exclusions_considered": "无脑膜炎的H.influenzae呼吸/血流感染不计；不延伸到其他菌种脑膜炎或另列新生儿感染；UK家庭接触与US易感家庭条件不合并成普世规则。"
+        }
+      },
+      "independent_review": "reports/p0-02-meningitis-independent.json",
+      "decision": {
+        "code": "1D01.00",
+        "status": "confirmed",
+        "rationale": "全文明确H.influenzae菌种与Hib子型区别，所有菌型适用细菌脑膜炎诊疗及听力/神经随访支路；Hib疫苗和接触者策略限定b型，不将non-b当作不传播。共同14维无与此菌种冲突的空白支路；无需重复14维全文或新增个人用药剂量才成立。",
+        "exclusions_considered": "无脑膜炎的H.influenzae呼吸/血流感染不计；不延伸到其他菌种脑膜炎或另列新生儿感染；UK家庭接触与US易感家庭条件不合并成普世规则。",
+        "remaining": []
+      }
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1D01.0Y",
+      "status": "partial",
+      "official_row": {
+        "row": 504,
+        "code": "1D01.0Y",
+        "title": "- - - - Other specified bacterial meningitis",
+        "class_kind": "category",
+        "chapter": "01",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/684930313/other",
+        "parent_uri": "http://id.who.int/icd/entity/684930313",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "meningitis",
+        "code": "1D01.0Y",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Other specified bacterial causes require positive pathogen/residual scope review.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "current_mapping": {
+        "condition_id": "meningitis",
+        "code": "1D01.0Y",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Other specified bacterial causes require positive pathogen/residual scope review.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "independent_review": "reports/p0-02-meningitis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1D01.0Z",
+      "status": "confirmed",
+      "official_row": {
+        "row": 505,
+        "code": "1D01.0Z",
+        "title": "- - - - Bacterial meningitis, unspecified",
+        "class_kind": "category",
+        "chapter": "01",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/684930313/unspecified",
+        "parent_uri": "http://id.who.int/icd/entity/684930313",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "meningitis",
+        "code": "1D01.0Z",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Bacterial meningitis of unspecified bacterial cause is addressed through urgent empiric IV treatment followed by culture/PCR-directed adjustment, LP safety, age/immune conditions, medicine risk, hearing follow-up and prevention. This does not claim each named bacterium separately.",
+          "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+        }
+      },
+      "current_mapping": {
+        "condition_id": "meningitis",
+        "code": "1D01.0Z",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Bacterial meningitis of unspecified bacterial cause is addressed through urgent empiric IV treatment followed by culture/PCR-directed adjustment, LP safety, age/immune conditions, medicine risk, hearing follow-up and prevention. This does not claim each named bacterium separately.",
+          "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+        }
+      },
+      "independent_review": "reports/p0-02-meningitis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1D01.1",
+      "status": "partial",
+      "official_row": {
+        "row": 506,
+        "code": "1D01.1",
+        "title": "- - - Fungal meningitis",
+        "class_kind": "category",
+        "chapter": "01",
+        "foundation_uri": "http://id.who.int/icd/entity/1137081791",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1137081791",
+        "parent_uri": "http://id.who.int/icd/entity/121670633",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "meningitis",
+        "code": "1D01.1",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Fungal treatment and immune risk are introduced; diverse fungal courses and organism-specific management, including coded-elsewhere boundaries, remain incomplete.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "current_mapping": {
+        "condition_id": "meningitis",
+        "code": "1D01.1",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Fungal treatment and immune risk are introduced; diverse fungal courses and organism-specific management, including coded-elsewhere boundaries, remain incomplete.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "independent_review": "reports/p0-02-meningitis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1D01.2",
+      "status": "partial",
+      "official_row": {
+        "row": 507,
+        "code": "1D01.2",
+        "title": "- - - Parasitic or protozoal meningitis",
+        "class_kind": "category",
+        "chapter": "01",
+        "foundation_uri": "http://id.who.int/icd/entity/181304776",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/181304776",
+        "parent_uri": "http://id.who.int/icd/entity/121670633",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "meningitis",
+        "code": "1D01.2",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Parasitic/protozoal causes, exposure routes and materially different treatment are not developed.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "current_mapping": {
+        "condition_id": "meningitis",
+        "code": "1D01.2",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Parasitic/protozoal causes, exposure routes and materially different treatment are not developed.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "independent_review": "reports/p0-02-meningitis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1D01.3",
+      "status": "partial",
+      "official_row": {
+        "row": 508,
+        "code": "1D01.3",
+        "title": "- - - Benign recurrent meningitis",
+        "class_kind": "category",
+        "chapter": "01",
+        "foundation_uri": "http://id.who.int/icd/entity/731112897",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/731112897",
+        "parent_uri": "http://id.who.int/icd/entity/121670633",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "meningitis",
+        "code": "1D01.3",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Benign recurrent meningitis needs its recurrent pattern, exclusion and management pathway.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "current_mapping": {
+        "condition_id": "meningitis",
+        "code": "1D01.3",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Benign recurrent meningitis needs its recurrent pattern, exclusion and management pathway.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "independent_review": "reports/p0-02-meningitis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1D01.Y",
+      "status": "partial",
+      "official_row": {
+        "row": 509,
+        "code": "1D01.Y",
+        "title": "- - - Other specified infectious meningitis, not elsewhere classified",
+        "class_kind": "category",
+        "chapter": "01",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/121670633/other",
+        "parent_uri": "http://id.who.int/icd/entity/121670633",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "meningitis",
+        "code": "1D01.Y",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Other specified infectious meningitis needs positive residual scope allocation.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "current_mapping": {
+        "condition_id": "meningitis",
+        "code": "1D01.Y",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Other specified infectious meningitis needs positive residual scope allocation.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      },
+      "independent_review": "reports/p0-02-meningitis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1D01.Z",
+      "status": "confirmed",
+      "official_row": {
+        "row": 510,
+        "code": "1D01.Z",
+        "title": "- - - Infectious meningitis, unspecified",
+        "class_kind": "category",
+        "chapter": "01",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/121670633/unspecified",
+        "parent_uri": "http://id.who.int/icd/entity/121670633",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "meningitis",
+        "code": "1D01.Z",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Infectious meningitis with unspecified organism has the assessment-to-cause pathway: urgent recognition, CSF and blood investigation, bacterial/viral/fungal/TB treatment branches, conditional recovery and prevention. NOS represents missing organism detail, not a parent aggregate.",
+          "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+        }
+      },
+      "current_mapping": {
+        "condition_id": "meningitis",
+        "code": "1D01.Z",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Infectious meningitis with unspecified organism has the assessment-to-cause pathway: urgent recognition, CSF and blood investigation, bacterial/viral/fungal/TB treatment branches, conditional recovery and prevention. NOS represents missing organism detail, not a parent aggregate.",
+          "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+        }
+      },
+      "independent_review": "reports/p0-02-meningitis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "postpartum-hemorrhage",
+      "code": "JA43.0",
+      "status": "confirmed",
+      "official_row": {
+        "row": 10379,
+        "code": "JA43.0",
+        "title": "- - - Third-stage haemorrhage",
+        "class_kind": "category",
+        "chapter": "18",
+        "foundation_uri": "http://id.who.int/icd/entity/1040555026",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1040555026",
+        "parent_uri": "http://id.who.int/icd/entity/820245648",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "current_independent_report",
+      "prior_mapping": {
+        "condition_id": "postpartum-hemorrhage",
+        "code": "JA43.0",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "13298c6a96d60437d2d358b18fa5ebdc0f675caff57ff156897dd4e24a096ba5",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "The article does not separately explain the third stage of vaginal labour and bleeding before completion of placental delivery; that timed pathway needs explicit scope allocation.",
+        "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+      },
+      "current_mapping": {
+        "condition_id": "postpartum-hemorrhage",
+        "code": "JA43.0",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "/root/astra_p0_neurology",
+          "checked_at": "2026-10-03",
+          "scope": "entire_leaf_category",
+          "rationale": "Third-stage interval explicitly tied to vaginal birth; four causes remain possible. Added immediate action before placenta delivery, professional removal/analgesia and placental-versus-clotting pathways close the prior third-stage gap. General red flags, nutrition, daily care, psychological recovery, anaemia follow-up and next-pregnancy preparation apply after the acute event; this timing-defined leaf does not require a duplicate aftercare article.",
+          "exclusions_considered": "Not all JA43 siblings; not retained placenta alone; do not assign caesarean-only haemorrhage to vaginal third-stage category; abnormal adherence decisions remain professional and conditional."
+        }
+      },
+      "independent_review": "reports/p0-02-postpartum-hemorrhage-independent.json",
+      "decision": {
+        "code": "JA43.0",
+        "status": "confirmed",
+        "rationale": "Third-stage interval explicitly tied to vaginal birth; four causes remain possible. Added immediate action before placenta delivery, professional removal/analgesia and placental-versus-clotting pathways close the prior third-stage gap. General red flags, nutrition, daily care, psychological recovery, anaemia follow-up and next-pregnancy preparation apply after the acute event; this timing-defined leaf does not require a duplicate aftercare article.",
+        "exclusions_considered": "Not all JA43 siblings; not retained placenta alone; do not assign caesarean-only haemorrhage to vaginal third-stage category; abnormal adherence decisions remain professional and conditional.",
+        "remaining": []
+      }
+    },
+    {
+      "condition_id": "postpartum-hemorrhage",
+      "code": "JA43.1",
+      "status": "confirmed",
+      "official_row": {
+        "row": 10380,
+        "code": "JA43.1",
+        "title": "- - - Other immediate postpartum haemorrhage",
+        "class_kind": "category",
+        "chapter": "18",
+        "foundation_uri": "http://id.who.int/icd/entity/1531859332",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1531859332",
+        "parent_uri": "http://id.who.int/icd/entity/820245648",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "postpartum-hemorrhage",
+        "code": "JA43.1",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "13298c6a96d60437d2d358b18fa5ebdc0f675caff57ff156897dd4e24a096ba5",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "The first-24-hour postpartum pathway covers atony, trauma, retained tissue and coagulation assessment; early team recognition/treatment, cause-directed procedures, drug contraindications, anemia recovery and future pregnancy planning. Frozen classification volumes and modern early treatment triggers are kept distinct.",
+          "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+        }
+      },
+      "current_mapping": {
+        "condition_id": "postpartum-hemorrhage",
+        "code": "JA43.1",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "The first-24-hour postpartum pathway covers atony, trauma, retained tissue and coagulation assessment; early team recognition/treatment, cause-directed procedures, drug contraindications, anemia recovery and future pregnancy planning. Frozen classification volumes and modern early treatment triggers are kept distinct.",
+          "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+        }
+      },
+      "independent_review": "reports/p0-02-postpartum-hemorrhage-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "postpartum-hemorrhage",
+      "code": "JA43.2",
+      "status": "confirmed",
+      "official_row": {
+        "row": 10381,
+        "code": "JA43.2",
+        "title": "- - - Delayed or secondary postpartum haemorrhage",
+        "class_kind": "category",
+        "chapter": "18",
+        "foundation_uri": "http://id.who.int/icd/entity/803406203",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/803406203",
+        "parent_uri": "http://id.who.int/icd/entity/820245648",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "postpartum-hemorrhage",
+        "code": "JA43.2",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "13298c6a96d60437d2d358b18fa5ebdc0f675caff57ff156897dd4e24a096ba5",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "The article explicitly defines delayed bleeding as 24 hours to 12 weeks, explains infection/retained tissue assessment and treatment, return-home warning actions, follow-up and anemia recovery. Birth-within-three-hours TXA treatment is explicitly not transferred to delayed bleeding.",
+          "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+        }
+      },
+      "current_mapping": {
+        "condition_id": "postpartum-hemorrhage",
+        "code": "JA43.2",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "The article explicitly defines delayed bleeding as 24 hours to 12 weeks, explains infection/retained tissue assessment and treatment, return-home warning actions, follow-up and anemia recovery. Birth-within-three-hours TXA treatment is explicitly not transferred to delayed bleeding.",
+          "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+        }
+      },
+      "independent_review": "reports/p0-02-postpartum-hemorrhage-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "postpartum-hemorrhage",
+      "code": "JA43.3",
+      "status": "partial",
+      "official_row": {
+        "row": 10382,
+        "code": "JA43.3",
+        "title": "- - - Postpartum coagulation defects",
+        "class_kind": "category",
+        "chapter": "18",
+        "foundation_uri": "http://id.who.int/icd/entity/1252576495",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1252576495",
+        "parent_uri": "http://id.who.int/icd/entity/820245648",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "current_independent_report",
+      "prior_mapping": {
+        "condition_id": "postpartum-hemorrhage",
+        "code": "JA43.3",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "13298c6a96d60437d2d358b18fa5ebdc0f675caff57ff156897dd4e24a096ba5",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Coagulation disorders are mentioned as causes/risks, but their specific evaluation, products and follow-up are not complete.",
+        "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+      },
+      "current_mapping": {
+        "condition_id": "postpartum-hemorrhage",
+        "code": "JA43.3",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "The draft correctly includes pre-existing and acquired clotting defects and does not reduce the leaf to DIC. Acute laboratory assessment and targeted components are adequately explained. However, inherited aftercare focuses on anaemia and future pregnancy without explicitly allocating postpartum haematology planning for a persistent/pre-existing clotting disorder. NATA recommendation10 calls for specific multidisciplinary care complementary to standard PPH management; source presence alone does not put this education in the article.",
+        "exclusions_considered": "Covers relevant vaginal and caesarean PPH with clotting defects; not only DIC, not every isolated coagulation disorder without PPH, not every JA43 sibling."
+      },
+      "independent_review": "reports/p0-02-postpartum-hemorrhage-independent.json",
+      "decision": {
+        "code": "JA43.3",
+        "status": "partial",
+        "rationale": "The draft correctly includes pre-existing and acquired clotting defects and does not reduce the leaf to DIC. Acute laboratory assessment and targeted components are adequately explained. However, inherited aftercare focuses on anaemia and future pregnancy without explicitly allocating postpartum haematology planning for a persistent/pre-existing clotting disorder. NATA recommendation10 calls for specific multidisciplinary care complementary to standard PPH management; source presence alone does not put this education in the article.",
+        "exclusions_considered": "Covers relevant vaginal and caesarean PPH with clotting defects; not only DIC, not every isolated coagulation disorder without PPH, not every JA43 sibling.",
+        "remaining": [
+          "Add a short bilingual, independently supported conditional follow-up branch for known or persistent clotting disorder and individual specialist plan; no need for exhaustive rare-disease dosing or a fabricated universal test interval."
+        ]
+      }
+    },
+    {
+      "condition_id": "postpartum-hemorrhage",
+      "code": "JA43.4",
+      "status": "partial",
+      "official_row": {
+        "row": 10383,
+        "code": "JA43.4",
+        "title": "- - - Postpartum haemorrhage following obstructed labour with uterine rupture",
+        "class_kind": "category",
+        "chapter": "18",
+        "foundation_uri": "http://id.who.int/icd/entity/1388318842",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1388318842",
+        "parent_uri": "http://id.who.int/icd/entity/820245648",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "postpartum-hemorrhage",
+        "code": "JA43.4",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "13298c6a96d60437d2d358b18fa5ebdc0f675caff57ff156897dd4e24a096ba5",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Obstructed labour with uterine rupture has a distinct cause/surgical pathway not developed here.",
+        "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+      },
+      "current_mapping": {
+        "condition_id": "postpartum-hemorrhage",
+        "code": "JA43.4",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Obstructed labour with uterine rupture has a distinct cause/surgical pathway not developed here.",
+        "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+      },
+      "independent_review": "reports/p0-02-postpartum-hemorrhage-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "postpartum-hemorrhage",
+      "code": "JA43.5",
+      "status": "partial",
+      "official_row": {
+        "row": 10384,
+        "code": "JA43.5",
+        "title": "- - - Postpartum haemorrhage following obstructed labour without mention of uterine rupture",
+        "class_kind": "category",
+        "chapter": "18",
+        "foundation_uri": "http://id.who.int/icd/entity/1811689101",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1811689101",
+        "parent_uri": "http://id.who.int/icd/entity/820245648",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "postpartum-hemorrhage",
+        "code": "JA43.5",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "13298c6a96d60437d2d358b18fa5ebdc0f675caff57ff156897dd4e24a096ba5",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Obstructed labour without mention of rupture is not specifically addressed; undocumented rupture does not mean ruled out.",
+        "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+      },
+      "current_mapping": {
+        "condition_id": "postpartum-hemorrhage",
+        "code": "JA43.5",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Obstructed labour without mention of rupture is not specifically addressed; undocumented rupture does not mean ruled out.",
+        "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+      },
+      "independent_review": "reports/p0-02-postpartum-hemorrhage-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "postpartum-hemorrhage",
+      "code": "JA43.Y",
+      "status": "partial",
+      "official_row": {
+        "row": 10385,
+        "code": "JA43.Y",
+        "title": "- - - Other specified postpartum haemorrhage",
+        "class_kind": "category",
+        "chapter": "18",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/820245648/other",
+        "parent_uri": "http://id.who.int/icd/entity/820245648",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "postpartum-hemorrhage",
+        "code": "JA43.Y",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "13298c6a96d60437d2d358b18fa5ebdc0f675caff57ff156897dd4e24a096ba5",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Other specified postpartum haemorrhage needs positive residual allocation.",
+        "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+      },
+      "current_mapping": {
+        "condition_id": "postpartum-hemorrhage",
+        "code": "JA43.Y",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Other specified postpartum haemorrhage needs positive residual allocation.",
+        "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+      },
+      "independent_review": "reports/p0-02-postpartum-hemorrhage-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "postpartum-hemorrhage",
+      "code": "JA43.Z",
+      "status": "confirmed",
+      "official_row": {
+        "row": 10386,
+        "code": "JA43.Z",
+        "title": "- - - Postpartum haemorrhage, unspecified",
+        "class_kind": "category",
+        "chapter": "18",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/820245648/unspecified",
+        "parent_uri": "http://id.who.int/icd/entity/820245648",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "postpartum-hemorrhage",
+        "code": "JA43.Z",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "13298c6a96d60437d2d358b18fa5ebdc0f675caff57ff156897dd4e24a096ba5",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "When timing/cause is unspecified, the article explains immediate recognition and escalation followed by timing/cause assessment, distinct early/late treatment branches, recovery and prevention. NOS is missing detail, not automatic coverage of every specified obstetric cause.",
+          "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+        }
+      },
+      "current_mapping": {
+        "condition_id": "postpartum-hemorrhage",
+        "code": "JA43.Z",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "When timing/cause is unspecified, the article explains immediate recognition and escalation followed by timing/cause assessment, distinct early/late treatment branches, recovery and prevention. NOS is missing detail, not automatic coverage of every specified obstetric cause.",
+          "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+        }
+      },
+      "independent_review": "reports/p0-02-postpartum-hemorrhage-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.0",
+      "status": "confirmed",
+      "official_row": {
+        "row": 2805,
+        "code": "4A84.0",
+        "title": "- - - Anaphylaxis due to allergic reaction to food",
+        "class_kind": "category",
+        "chapter": "04",
+        "foundation_uri": "http://id.who.int/icd/entity/1729383028",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1729383028",
+        "parent_uri": "http://id.who.int/icd/entity/1868068711",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.0",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "83a253c6243803a1958a4c7618685d9bcd96d63ca45c35fb3dde71bba7557a52",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Food-specific trigger confirmation, intolerance/aspiration distinction, ingredient and cross-contact precautions, supervised testing, nutrition substitution and rescue pathway accompany all shared dimensions.",
+          "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+        }
+      },
+      "current_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.0",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Food-specific trigger confirmation, intolerance/aspiration distinction, ingredient and cross-contact precautions, supervised testing, nutrition substitution and rescue pathway accompany all shared dimensions.",
+          "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+        }
+      },
+      "independent_review": "reports/p0-02-anaphylaxis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.1",
+      "status": "confirmed",
+      "official_row": {
+        "row": 2806,
+        "code": "4A84.1",
+        "title": "- - - Drug-induced anaphylaxis",
+        "class_kind": "category",
+        "chapter": "04",
+        "foundation_uri": "http://id.who.int/icd/entity/1200133657",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1200133657",
+        "parent_uri": "http://id.who.int/icd/entity/1868068711",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.1",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "83a253c6243803a1958a4c7618685d9bcd96d63ca45c35fb3dde71bba7557a52",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Drug-specific exposure history, immediate rescue, safer alternative evaluation, supervised challenge/desensitisation and medical-record communication accompany the shared systemic reaction pathway.",
+          "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+        }
+      },
+      "current_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.1",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Drug-specific exposure history, immediate rescue, safer alternative evaluation, supervised challenge/desensitisation and medical-record communication accompany the shared systemic reaction pathway.",
+          "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+        }
+      },
+      "independent_review": "reports/p0-02-anaphylaxis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.2",
+      "status": "confirmed",
+      "official_row": {
+        "row": 2807,
+        "code": "4A84.2",
+        "title": "- - - Anaphylaxis due to insect venom",
+        "class_kind": "category",
+        "chapter": "04",
+        "foundation_uri": "http://id.who.int/icd/entity/1095261642",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1095261642",
+        "parent_uri": "http://id.who.int/icd/entity/1868068711",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.2",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "83a253c6243803a1958a4c7618685d9bcd96d63ca45c35fb3dde71bba7557a52",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Insect-venom systemic reactions are distinguished from local reactions; trigger avoidance, specialist venom immunotherapy, rescue and recurrence planning accompany all shared dimensions. Direct venom toxicity remains outside this allocation.",
+          "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+        }
+      },
+      "current_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.2",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Insect-venom systemic reactions are distinguished from local reactions; trigger avoidance, specialist venom immunotherapy, rescue and recurrence planning accompany all shared dimensions. Direct venom toxicity remains outside this allocation.",
+          "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+        }
+      },
+      "independent_review": "reports/p0-02-anaphylaxis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.30",
+      "status": "confirmed",
+      "official_row": {
+        "row": 2809,
+        "code": "4A84.30",
+        "title": "- - - - Exercise-induced anaphylaxis",
+        "class_kind": "category",
+        "chapter": "04",
+        "foundation_uri": "http://id.who.int/icd/entity/1069179856",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1069179856",
+        "parent_uri": "http://id.who.int/icd/entity/2025061243",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.30",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "83a253c6243803a1958a4c7618685d9bcd96d63ca45c35fb3dde71bba7557a52",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Exercise and food-dependent exercise reactions are explicitly explained, including cofactors, stopping activity, specialist combination/interval planning, rescue supplies and accompanied return to activity.",
+          "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+        }
+      },
+      "current_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.30",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Exercise and food-dependent exercise reactions are explicitly explained, including cofactors, stopping activity, specialist combination/interval planning, rescue supplies and accompanied return to activity.",
+          "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+        }
+      },
+      "independent_review": "reports/p0-02-anaphylaxis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.31",
+      "status": "confirmed",
+      "official_row": {
+        "row": 2810,
+        "code": "4A84.31",
+        "title": "- - - - Cold-induced anaphylaxis",
+        "class_kind": "category",
+        "chapter": "04",
+        "foundation_uri": "http://id.who.int/icd/entity/416451504",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/416451504",
+        "parent_uri": "http://id.who.int/icd/entity/2025061243",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "current_independent_report",
+      "prior_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.31",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "83a253c6243803a1958a4c7618685d9bcd96d63ca45c35fb3dde71bba7557a52",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Cold exposure and cold-water immersion-specific risk/prevention are not developed.",
+        "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+      },
+      "current_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.31",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "/root",
+          "checked_at": "2026-10-03",
+          "scope": "entire_leaf_category",
+          "rationale": "Cold-triggered anaphylaxis is explicitly distinguished from local cold urticaria. Trigger/history/testing limits, urgent response, exposure/diet-temperature clues, specialist planning and perioperative warming supplement the existing 14 complete anaphylaxis sections; no contradictory diagnostic assumption.",
+          "exclusions_considered": [
+            "Cold urticaria without respiratory/circulatory compromise is not counted as this leaf.",
+            "Hypothermia/cold injury and food-ingredient allergy are different categories."
+          ]
+        }
+      },
+      "independent_review": "reports/p0-02-anaphylaxis-independent.json",
+      "decision": {
+        "code": "4A84.31",
+        "status": "confirmed",
+        "rationale": "Cold-triggered anaphylaxis is explicitly distinguished from local cold urticaria. Trigger/history/testing limits, urgent response, exposure/diet-temperature clues, specialist planning and perioperative warming supplement the existing 14 complete anaphylaxis sections; no contradictory diagnostic assumption.",
+        "exclusions_considered": [
+          "Cold urticaria without respiratory/circulatory compromise is not counted as this leaf.",
+          "Hypothermia/cold injury and food-ingredient allergy are different categories."
+        ],
+        "remaining": []
+      }
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.3Y",
+      "status": "partial",
+      "official_row": {
+        "row": 2811,
+        "code": "4A84.3Y",
+        "title": "- - - - Anaphylaxis provoked by other specified physical factors",
+        "class_kind": "category",
+        "chapter": "04",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/2025061243/other",
+        "parent_uri": "http://id.who.int/icd/entity/2025061243",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.3Y",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "83a253c6243803a1958a4c7618685d9bcd96d63ca45c35fb3dde71bba7557a52",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Other specified physical triggers have no complete positive allocation.",
+        "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+      },
+      "current_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.3Y",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Other specified physical triggers have no complete positive allocation.",
+        "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+      },
+      "independent_review": "reports/p0-02-anaphylaxis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.3Z",
+      "status": "partial",
+      "official_row": {
+        "row": 2812,
+        "code": "4A84.3Z",
+        "title": "- - - - Anaphylaxis provoked by unspecified physical factors",
+        "class_kind": "category",
+        "chapter": "04",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/2025061243/unspecified",
+        "parent_uri": "http://id.who.int/icd/entity/2025061243",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.3Z",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "83a253c6243803a1958a4c7618685d9bcd96d63ca45c35fb3dde71bba7557a52",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Unspecified physical-factor anaphylaxis needs a broader physical-trigger assessment beyond the exercise branch.",
+        "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+      },
+      "current_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.3Z",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Unspecified physical-factor anaphylaxis needs a broader physical-trigger assessment beyond the exercise branch.",
+        "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+      },
+      "independent_review": "reports/p0-02-anaphylaxis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.4",
+      "status": "partial",
+      "official_row": {
+        "row": 2813,
+        "code": "4A84.4",
+        "title": "- - - Anaphylaxis due to inhaled allergens",
+        "class_kind": "category",
+        "chapter": "04",
+        "foundation_uri": "http://id.who.int/icd/entity/2018903019",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/2018903019",
+        "parent_uri": "http://id.who.int/icd/entity/1868068711",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.4",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "83a253c6243803a1958a4c7618685d9bcd96d63ca45c35fb3dde71bba7557a52",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Allergic asthma is distinguished, but inhaled-allergen systemic exposure/avoidance is not developed.",
+        "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+      },
+      "current_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.4",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Allergic asthma is distinguished, but inhaled-allergen systemic exposure/avoidance is not developed.",
+        "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+      },
+      "independent_review": "reports/p0-02-anaphylaxis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.5",
+      "status": "partial",
+      "official_row": {
+        "row": 2814,
+        "code": "4A84.5",
+        "title": "- - - Anaphylaxis due to contact with allergens",
+        "class_kind": "category",
+        "chapter": "04",
+        "foundation_uri": "http://id.who.int/icd/entity/404632018",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/404632018",
+        "parent_uri": "http://id.who.int/icd/entity/1868068711",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.5",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "83a253c6243803a1958a4c7618685d9bcd96d63ca45c35fb3dde71bba7557a52",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Skin/mucosal contact-specific systemic exposure routes and prevention are not developed; latex mention alone is insufficient.",
+        "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+      },
+      "current_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.5",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Skin/mucosal contact-specific systemic exposure routes and prevention are not developed; latex mention alone is insufficient.",
+        "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+      },
+      "independent_review": "reports/p0-02-anaphylaxis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.6",
+      "status": "partial",
+      "official_row": {
+        "row": 2815,
+        "code": "4A84.6",
+        "title": "- - - Anaphylaxis secondary to mast cell disorder",
+        "class_kind": "category",
+        "chapter": "04",
+        "foundation_uri": "http://id.who.int/icd/entity/2023405973",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/2023405973",
+        "parent_uri": "http://id.who.int/icd/entity/1868068711",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "current_independent_report",
+      "prior_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.6",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "83a253c6243803a1958a4c7618685d9bcd96d63ca45c35fb3dde71bba7557a52",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Mast-cell disorders are explained as a risk and an investigation route, but the known-disease secondary-anaphylaxis scenario, possible absent skin lesions, venom/perioperative exposures and specific prevention preparation are not sufficiently developed.",
+        "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+      },
+      "current_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.6",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Known systemic mastocytosis context now has trigger/skin-negative danger and perioperative/VIT guidance. The full category also needs appropriate diagnosed non-systemic-mastocytosis activation disorders and paediatric care linkage, not a synonym expansion.",
+        "exclusions_considered": [
+          "Idiopathic anaphylaxis without established mast-cell disorder remains separate.",
+          "Mastocytosis and MCAS diagnoses are not themselves equivalent to each anaphylaxis episode."
+        ]
+      },
+      "independent_review": "reports/p0-02-anaphylaxis-independent.json",
+      "decision": {
+        "code": "4A84.6",
+        "status": "partial",
+        "rationale": "Known systemic mastocytosis context now has trigger/skin-negative danger and perioperative/VIT guidance. The full category also needs appropriate diagnosed non-systemic-mastocytosis activation disorders and paediatric care linkage, not a synonym expansion.",
+        "exclusions_considered": [
+          "Idiopathic anaphylaxis without established mast-cell disorder remains separate.",
+          "Mastocytosis and MCAS diagnoses are not themselves equivalent to each anaphylaxis episode."
+        ],
+        "remaining": [
+          "Evidence-backed paediatric existing-disease care coordination.",
+          "Relapse/follow-up management for established relevant mast-cell activation disorders beyond systemic mastocytosis."
+        ]
+      }
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.Y",
+      "status": "partial",
+      "official_row": {
+        "row": 2816,
+        "code": "4A84.Y",
+        "title": "- - - Other specified anaphylaxis",
+        "class_kind": "category",
+        "chapter": "04",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1868068711/other",
+        "parent_uri": "http://id.who.int/icd/entity/1868068711",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.Y",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "83a253c6243803a1958a4c7618685d9bcd96d63ca45c35fb3dde71bba7557a52",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Other specified triggers require positive residual allocation.",
+        "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+      },
+      "current_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.Y",
+        "release": "2026-01",
+        "status": "partial",
+        "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "method": "semantic_scope_review",
+        "rationale": "Other specified triggers require positive residual allocation.",
+        "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+      },
+      "independent_review": "reports/p0-02-anaphylaxis-independent.json",
+      "decision": null
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.Z",
+      "status": "confirmed",
+      "official_row": {
+        "row": 2817,
+        "code": "4A84.Z",
+        "title": "- - - Anaphylaxis, unspecified",
+        "class_kind": "category",
+        "chapter": "04",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1868068711/unspecified",
+        "parent_uri": "http://id.who.int/icd/entity/1868068711",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "decision_origin": "inherited_scope_current_content_rebinding",
+      "prior_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.Z",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "83a253c6243803a1958a4c7618685d9bcd96d63ca45c35fb3dde71bba7557a52",
+        "review_report": "reports/p0-batch-01-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Unspecified-trigger systemic anaphylaxis has a complete recognition/rescue, trigger investigation, medicine/device, observation and recurrence pathway. Lack of an identified trigger is explicitly distinguished from lack of reaction; unspecified does not aggregate all named causes.",
+          "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+        }
+      },
+      "current_mapping": {
+        "condition_id": "anaphylaxis",
+        "code": "4A84.Z",
+        "release": "2026-01",
+        "status": "confirmed",
+        "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+        "review_report": "reports/p0-02-icd-scope-review.json",
+        "adjudication": {
+          "method": "semantic_scope_review",
+          "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+          "checked_at": "2026-10-02",
+          "scope": "entire_leaf_category",
+          "rationale": "Unspecified-trigger systemic anaphylaxis has a complete recognition/rescue, trigger investigation, medicine/device, observation and recurrence pathway. Lack of an identified trigger is explicitly distinguished from lack of reaction; unspecified does not aggregate all named causes.",
+          "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+        }
+      },
+      "independent_review": "reports/p0-02-anaphylaxis-independent.json",
+      "decision": null
+    }
+  ],
+  "mapping_proposals": [
+    {
+      "condition_id": "meningitis",
+      "code": "1B53",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Streptococcal genus-wide pathogen, age and targeted-management allocation remains incomplete; pneumococcal vaccine mention is insufficient.",
+      "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1B54",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Staphylococcal and procedure/device-associated routes and targeted treatment are not explained.",
+      "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1C1C.0",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "Meningococcal meningitis uses the bacterial hospital pathway and explicitly differentiated meningococcal disease, close-contact prophylaxis and pathogen-specific vaccination. Bloodstream meningococcal disease without meningitis is not merged.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      }
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1C8E.1",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "/root/astra_p0_maternal",
+        "checked_at": "2026-10-03",
+        "scope": "entire_leaf_category",
+        "rationale": "命名肠道病毒支路补齐传播/感染非脑膜炎、CSF病原检查、支持治疗及幼龄重症和卫生，14维共同急症/居家条件/恢复内容正向适用；不以泛称viral自动覆盖其他指定病毒。",
+        "exclusions_considered": "不纳入仅肠道病毒感染无脑膜炎、单纯脑炎/脑脊髓炎或另列新生儿感染；无全球疫苗可及性或统一疗程声明。"
+      }
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1C8E.2",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Adenoviral-specific disease scope and follow-up are not developed.",
+      "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1C8E.Y",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Other specified viral causes require a positive residual allocation; generic viral care does not establish it.",
+      "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1C8E.Z",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "Viral meningitis of unspecified viral cause is explained with conditional mild supportive care, severe/immune-compromised hospital assessment, selected antiviral treatment and transmission distinction. An unidentified viral cause is not a claim to cover every named virus.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      }
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1D01.00",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "/root/astra_p0_maternal",
+        "checked_at": "2026-10-03",
+        "scope": "entire_leaf_category",
+        "rationale": "全文明确H.influenzae菌种与Hib子型区别，所有菌型适用细菌脑膜炎诊疗及听力/神经随访支路；Hib疫苗和接触者策略限定b型，不将non-b当作不传播。共同14维无与此菌种冲突的空白支路；无需重复14维全文或新增个人用药剂量才成立。",
+        "exclusions_considered": "无脑膜炎的H.influenzae呼吸/血流感染不计；不延伸到其他菌种脑膜炎或另列新生儿感染；UK家庭接触与US易感家庭条件不合并成普世规则。"
+      }
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1D01.0Y",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Other specified bacterial causes require positive pathogen/residual scope review.",
+      "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1D01.0Z",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "Bacterial meningitis of unspecified bacterial cause is addressed through urgent empiric IV treatment followed by culture/PCR-directed adjustment, LP safety, age/immune conditions, medicine risk, hearing follow-up and prevention. This does not claim each named bacterium separately.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      }
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1D01.1",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Fungal treatment and immune risk are introduced; diverse fungal courses and organism-specific management, including coded-elsewhere boundaries, remain incomplete.",
+      "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1D01.2",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Parasitic/protozoal causes, exposure routes and materially different treatment are not developed.",
+      "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1D01.3",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Benign recurrent meningitis needs its recurrent pattern, exclusion and management pathway.",
+      "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1D01.Y",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Other specified infectious meningitis needs positive residual scope allocation.",
+      "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    },
+    {
+      "condition_id": "meningitis",
+      "code": "1D01.Z",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "Infectious meningitis with unspecified organism has the assessment-to-cause pathway: urgent recognition, CSF and blood investigation, bacterial/viral/fungal/TB treatment branches, conditional recovery and prevention. NOS represents missing organism detail, not a parent aggregate.",
+        "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+      }
+    },
+    {
+      "condition_id": "postpartum-hemorrhage",
+      "code": "JA43.0",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "/root/astra_p0_neurology",
+        "checked_at": "2026-10-03",
+        "scope": "entire_leaf_category",
+        "rationale": "Third-stage interval explicitly tied to vaginal birth; four causes remain possible. Added immediate action before placenta delivery, professional removal/analgesia and placental-versus-clotting pathways close the prior third-stage gap. General red flags, nutrition, daily care, psychological recovery, anaemia follow-up and next-pregnancy preparation apply after the acute event; this timing-defined leaf does not require a duplicate aftercare article.",
+        "exclusions_considered": "Not all JA43 siblings; not retained placenta alone; do not assign caesarean-only haemorrhage to vaginal third-stage category; abnormal adherence decisions remain professional and conditional."
+      }
+    },
+    {
+      "condition_id": "postpartum-hemorrhage",
+      "code": "JA43.1",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "The first-24-hour postpartum pathway covers atony, trauma, retained tissue and coagulation assessment; early team recognition/treatment, cause-directed procedures, drug contraindications, anemia recovery and future pregnancy planning. Frozen classification volumes and modern early treatment triggers are kept distinct.",
+        "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+      }
+    },
+    {
+      "condition_id": "postpartum-hemorrhage",
+      "code": "JA43.2",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "The article explicitly defines delayed bleeding as 24 hours to 12 weeks, explains infection/retained tissue assessment and treatment, return-home warning actions, follow-up and anemia recovery. Birth-within-three-hours TXA treatment is explicitly not transferred to delayed bleeding.",
+        "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+      }
+    },
+    {
+      "condition_id": "postpartum-hemorrhage",
+      "code": "JA43.3",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "The draft correctly includes pre-existing and acquired clotting defects and does not reduce the leaf to DIC. Acute laboratory assessment and targeted components are adequately explained. However, inherited aftercare focuses on anaemia and future pregnancy without explicitly allocating postpartum haematology planning for a persistent/pre-existing clotting disorder. NATA recommendation10 calls for specific multidisciplinary care complementary to standard PPH management; source presence alone does not put this education in the article.",
+      "exclusions_considered": "Covers relevant vaginal and caesarean PPH with clotting defects; not only DIC, not every isolated coagulation disorder without PPH, not every JA43 sibling."
+    },
+    {
+      "condition_id": "postpartum-hemorrhage",
+      "code": "JA43.4",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Obstructed labour with uterine rupture has a distinct cause/surgical pathway not developed here.",
+      "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+    },
+    {
+      "condition_id": "postpartum-hemorrhage",
+      "code": "JA43.5",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Obstructed labour without mention of rupture is not specifically addressed; undocumented rupture does not mean ruled out.",
+      "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+    },
+    {
+      "condition_id": "postpartum-hemorrhage",
+      "code": "JA43.Y",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Other specified postpartum haemorrhage needs positive residual allocation.",
+      "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+    },
+    {
+      "condition_id": "postpartum-hemorrhage",
+      "code": "JA43.Z",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "When timing/cause is unspecified, the article explains immediate recognition and escalation followed by timing/cause assessment, distinct early/late treatment branches, recovery and prevention. NOS is missing detail, not automatic coverage of every specified obstetric cause.",
+        "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+      }
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.0",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "Food-specific trigger confirmation, intolerance/aspiration distinction, ingredient and cross-contact precautions, supervised testing, nutrition substitution and rescue pathway accompany all shared dimensions.",
+        "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+      }
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.1",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "Drug-specific exposure history, immediate rescue, safer alternative evaluation, supervised challenge/desensitisation and medical-record communication accompany the shared systemic reaction pathway.",
+        "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+      }
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.2",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "Insect-venom systemic reactions are distinguished from local reactions; trigger avoidance, specialist venom immunotherapy, rescue and recurrence planning accompany all shared dimensions. Direct venom toxicity remains outside this allocation.",
+        "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+      }
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.30",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "Exercise and food-dependent exercise reactions are explicitly explained, including cofactors, stopping activity, specialist combination/interval planning, rescue supplies and accompanied return to activity.",
+        "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+      }
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.31",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "/root",
+        "checked_at": "2026-10-03",
+        "scope": "entire_leaf_category",
+        "rationale": "Cold-triggered anaphylaxis is explicitly distinguished from local cold urticaria. Trigger/history/testing limits, urgent response, exposure/diet-temperature clues, specialist planning and perioperative warming supplement the existing 14 complete anaphylaxis sections; no contradictory diagnostic assumption.",
+        "exclusions_considered": [
+          "Cold urticaria without respiratory/circulatory compromise is not counted as this leaf.",
+          "Hypothermia/cold injury and food-ingredient allergy are different categories."
+        ]
+      }
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.3Y",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Other specified physical triggers have no complete positive allocation.",
+      "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.3Z",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Unspecified physical-factor anaphylaxis needs a broader physical-trigger assessment beyond the exercise branch.",
+      "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.4",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Allergic asthma is distinguished, but inhaled-allergen systemic exposure/avoidance is not developed.",
+      "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.5",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Skin/mucosal contact-specific systemic exposure routes and prevention are not developed; latex mention alone is insufficient.",
+      "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.6",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Known systemic mastocytosis context now has trigger/skin-negative danger and perioperative/VIT guidance. The full category also needs appropriate diagnosed non-systemic-mastocytosis activation disorders and paediatric care linkage, not a synonym expansion.",
+      "exclusions_considered": [
+        "Idiopathic anaphylaxis without established mast-cell disorder remains separate.",
+        "Mastocytosis and MCAS diagnoses are not themselves equivalent to each anaphylaxis episode."
+      ]
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.Y",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "method": "semantic_scope_review",
+      "rationale": "Other specified triggers require positive residual allocation.",
+      "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+    },
+    {
+      "condition_id": "anaphylaxis",
+      "code": "4A84.Z",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+      "review_report": "reports/p0-02-icd-scope-review.json",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "Unspecified-trigger systemic anaphylaxis has a complete recognition/rescue, trigger investigation, medicine/device, observation and recurrence pathway. Lack of an identified trigger is explicitly distinguished from lack of reaction; unspecified does not aggregate all named causes.",
+        "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+      }
+    }
+  ],
+  "counts": {
+    "confirmed": 16,
+    "partial": 19,
+    "pending": 0
+  }
+}

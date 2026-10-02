@@ -1,0 +1,131 @@
+{
+  "batch": "p0-02",
+  "started_at": "2026-10-02",
+  "base_commit": "fd5fd28bf1860f63908a33ccf2f486c6bfb3f175",
+  "icd_release": "2026-01",
+  "scope": "Extend three existing canonical articles for six specifically selected P0 leaf gaps; shared general knowledge is retained and scope is adjudicated per leaf. No duplicate articles.",
+  "baseline": {
+    "topics": 82,
+    "covered_categories": 30,
+    "denominator": 13155,
+    "p0_categories": 133,
+    "p0_complete": 29,
+    "p0_pending": 104
+  },
+  "topics": [
+    {
+      "canonical_id": "meningitis",
+      "operation": "extend_existing",
+      "candidate_codes": [
+        "1C8E.1",
+        "1D01.00"
+      ],
+      "author": "/root/astra_p0_neurology",
+      "draft_path": "drafts/p0-02/meningitis.json",
+      "editorial_status": "cross_checked",
+      "publication_status": "validated_local_candidate",
+      "independent_review": "reports/p0-02-meningitis-independent.json",
+      "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+      "category_decisions": [
+        {
+          "code": "1C8E.1",
+          "status": "confirmed",
+          "rationale": "命名肠道病毒支路补齐传播/感染非脑膜炎、CSF病原检查、支持治疗及幼龄重症和卫生，14维共同急症/居家条件/恢复内容正向适用；不以泛称viral自动覆盖其他指定病毒。",
+          "exclusions_considered": "不纳入仅肠道病毒感染无脑膜炎、单纯脑炎/脑脊髓炎或另列新生儿感染；无全球疫苗可及性或统一疗程声明。",
+          "remaining": []
+        },
+        {
+          "code": "1D01.00",
+          "status": "confirmed",
+          "rationale": "全文明确H.influenzae菌种与Hib子型区别，所有菌型适用细菌脑膜炎诊疗及听力/神经随访支路；Hib疫苗和接触者策略限定b型，不将non-b当作不传播。共同14维无与此菌种冲突的空白支路；无需重复14维全文或新增个人用药剂量才成立。",
+          "exclusions_considered": "无脑膜炎的H.influenzae呼吸/血流感染不计；不延伸到其他菌种脑膜炎或另列新生儿感染；UK家庭接触与US易感家庭条件不合并成普世规则。",
+          "remaining": []
+        }
+      ]
+    },
+    {
+      "canonical_id": "anaphylaxis",
+      "operation": "extend_existing",
+      "candidate_codes": [
+        "4A84.31",
+        "4A84.6"
+      ],
+      "author": "/root/astra_p0_allergy",
+      "draft_path": "drafts/p0-02/anaphylaxis.json",
+      "editorial_status": "cross_checked",
+      "publication_status": "validated_local_candidate",
+      "independent_review": "reports/p0-02-anaphylaxis-independent.json",
+      "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+      "category_decisions": [
+        {
+          "code": "4A84.31",
+          "status": "confirmed",
+          "rationale": "Cold-triggered anaphylaxis is explicitly distinguished from local cold urticaria. Trigger/history/testing limits, urgent response, exposure/diet-temperature clues, specialist planning and perioperative warming supplement the existing 14 complete anaphylaxis sections; no contradictory diagnostic assumption.",
+          "exclusions_considered": [
+            "Cold urticaria without respiratory/circulatory compromise is not counted as this leaf.",
+            "Hypothermia/cold injury and food-ingredient allergy are different categories."
+          ],
+          "remaining": []
+        },
+        {
+          "code": "4A84.6",
+          "status": "partial",
+          "rationale": "Known systemic mastocytosis context now has trigger/skin-negative danger and perioperative/VIT guidance. The full category also needs appropriate diagnosed non-systemic-mastocytosis activation disorders and paediatric care linkage, not a synonym expansion.",
+          "exclusions_considered": [
+            "Idiopathic anaphylaxis without established mast-cell disorder remains separate.",
+            "Mastocytosis and MCAS diagnoses are not themselves equivalent to each anaphylaxis episode."
+          ],
+          "remaining": [
+            "Evidence-backed paediatric existing-disease care coordination.",
+            "Relapse/follow-up management for established relevant mast-cell activation disorders beyond systemic mastocytosis."
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_id": "postpartum-hemorrhage",
+      "operation": "extend_existing",
+      "candidate_codes": [
+        "JA43.0",
+        "JA43.3"
+      ],
+      "author": "/root/astra_p0_maternal",
+      "draft_path": "drafts/p0-02/postpartum-hemorrhage.json",
+      "editorial_status": "cross_checked",
+      "publication_status": "validated_local_candidate",
+      "independent_review": "reports/p0-02-postpartum-hemorrhage-independent.json",
+      "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
+      "category_decisions": [
+        {
+          "code": "JA43.0",
+          "status": "confirmed",
+          "rationale": "Third-stage interval explicitly tied to vaginal birth; four causes remain possible. Added immediate action before placenta delivery, professional removal/analgesia and placental-versus-clotting pathways close the prior third-stage gap. General red flags, nutrition, daily care, psychological recovery, anaemia follow-up and next-pregnancy preparation apply after the acute event; this timing-defined leaf does not require a duplicate aftercare article.",
+          "exclusions_considered": "Not all JA43 siblings; not retained placenta alone; do not assign caesarean-only haemorrhage to vaginal third-stage category; abnormal adherence decisions remain professional and conditional.",
+          "remaining": []
+        },
+        {
+          "code": "JA43.3",
+          "status": "partial",
+          "rationale": "The draft correctly includes pre-existing and acquired clotting defects and does not reduce the leaf to DIC. Acute laboratory assessment and targeted components are adequately explained. However, inherited aftercare focuses on anaemia and future pregnancy without explicitly allocating postpartum haematology planning for a persistent/pre-existing clotting disorder. NATA recommendation10 calls for specific multidisciplinary care complementary to standard PPH management; source presence alone does not put this education in the article.",
+          "exclusions_considered": "Covers relevant vaginal and caesarean PPH with clotting defects; not only DIC, not every isolated coagulation disorder without PPH, not every JA43 sibling.",
+          "remaining": [
+            "Add a short bilingual, independently supported conditional follow-up branch for known or persistent clotting disorder and individual specialist plan; no need for exhaustive rare-disease dosing or a fabricated universal test interval."
+          ]
+        }
+      ]
+    }
+  ],
+  "coverage_changes": 4,
+  "medical_reviewed": false,
+  "publication_status": "validated_local_candidate",
+  "local_completed_at": "2026-10-03",
+  "new_claims": 25,
+  "changed_sections": 21,
+  "unchanged_articles": 79,
+  "coverage_after": {
+    "covered": 34,
+    "denominator": 13155,
+    "remaining": 13121
+  },
+  "validation": "reports/p0-02-release-validation.json"
+}

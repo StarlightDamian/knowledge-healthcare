@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-02",
+  "status": "author_complete_pending_independent_review",
+  "author": "/root/astra_p0_maternal",
+  "medical_reviewed": false,
+  "condition_id": "postpartum-hemorrhage",
+  "baseline_file_sha256": "965235354e6af8b1b116e00c0ff7956dcebecb1baec049db792dc13a2c69c9ef",
+  "old_content_sha256": "13298c6a96d60437d2d358b18fa5ebdc0f675caff57ff156897dd4e24a096ba5",
+  "new_content_sha256": "a230ca8f3ec71f41c07d5754c5d1745961474fc5be6620e478fad809ae3983d7",
+  "changed_sections": [
+    {
+      "section": "summary",
+      "old_section_sha256": "f25acf3f0c7e9f86a9e46bd31c41b77c37d93be33f55554e27e7b6d50e0319b2",
+      "new_section_sha256": "295f67ccdb3e0ba32601fc91a151a47497e3f511c83511618b5c0f8365c7c67e",
+      "new_claim_ids": [
+        "p002-summary-1"
+      ],
+      "preserved_old_claim_count": 4,
+      "status": "pending"
+    },
+    {
+      "section": "causes_risks",
+      "old_section_sha256": "a466aa1cb12bf7710d8631306b334eb1e8712a74f38933011892e85412a04608",
+      "new_section_sha256": "18d10f8b474c4c4f046883ba15a034a1dd286c4f1b25b7fcd92be2d39a692932",
+      "new_claim_ids": [
+        "p002-causes_risks-1"
+      ],
+      "preserved_old_claim_count": 4,
+      "status": "pending"
+    },
+    {
+      "section": "care",
+      "old_section_sha256": "db286d85fc310be0a7b230e36a868d4a27827f2e2a67be26182389108f8236b4",
+      "new_section_sha256": "30c9eaaaf7a1303837c6b38c80cf40f9a830ebe5b0622eb151adaa5185aa461f",
+      "new_claim_ids": [
+        "p002-care-1"
+      ],
+      "preserved_old_claim_count": 4,
+      "status": "pending"
+    },
+    {
+      "section": "diagnosis",
+      "old_section_sha256": "ade88d147b3ce0eaef9f04676f19a5580eade027b74b7ec2934f3fa30f8d96bf",
+      "new_section_sha256": "0371ced3cfbf2b2f37c5a85b335a5b94589e9ad2ada096340a0bdb4170b6ba8f",
+      "new_claim_ids": [
+        "p002-diagnosis-1"
+      ],
+      "preserved_old_claim_count": 5,
+      "status": "pending"
+    },
+    {
+      "section": "treatment",
+      "old_section_sha256": "ad42d824099cdadcea133c119fbd4185e84d7aa4e8f97afed8e264e97f19cfe1",
+      "new_section_sha256": "19f667f9929e58f704c191b5c9ec72bb25592189ed4d80c16a91215b5069a367",
+      "new_claim_ids": [
+        "p002-treatment-1"
+      ],
+      "preserved_old_claim_count": 4,
+      "status": "pending"
+    },
+    {
+      "section": "medications",
+      "old_section_sha256": "21d7ae7ff137708f21456a61109c96462ed1d49b15317863f3fda3983d280ae4",
+      "new_section_sha256": "804b07e585b96c770f92464783f22086cb1cbdf727b1aab47b6bbbca7aea2dff",
+      "new_claim_ids": [
+        "p002-medications-1"
+      ],
+      "preserved_old_claim_count": 5,
+      "status": "pending"
+    }
+  ],
+  "sources_added": [],
+  "source_policy": "三个URL已有来源ID，全量metadata不改；新增实际读取记录在supports/本报告，sources新增集为空。",
+  "source_reads": [
+    {
+      "source_id": "pph-cma-2023",
+      "url": "https://cspm.cma.org.cn/index/news?id=3474",
+      "locator": "处理一(二)(四)网页100–108；处理二(三)胎盘因素147–155；处理二(四)凝血功能障碍157–167",
+      "version": "CMA2023，2023-07-10官网；58(6):401–409",
+      "population": "产后出血；胎盘未娩出伴活动性出血或凝血功能异常；中国指南",
+      "assessment": "本次通过学会官方HTML实际阅读，图表未读；四种病因可互为因果、动态监测与病因治疗、胎盘和凝血成分处理。"
+    },
+    {
+      "source_id": "b1-acute-pph-nice-intrapartum",
+      "url": "https://www.nice.org.uk/guidance/ng235/chapter/Recommendations",
+      "locator": "NG235 1.10.2、1.10.20–28、1.10.36–37",
+      "version": "NG235官网2026-06-09更新；所引第三产程条款2014/2023",
+      "population": "英国分娩照护，胎盘尚未娩出及持续产后出血",
+      "assessment": "本次PowerShell从NICE官网获取并实际阅读这些段落；定义第三产程，出血与无出血胎盘滞留的不同处理、专业转诊/麻醉和持续出血处理。"
+    },
+    {
+      "source_id": "pph-nata-thromboprophylaxis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6476742/",
+      "locator": "Pre-delivery management of inherited bleeding disorders；recommendations35–36、40–41、50；recommendation42（血小板针对性输注）",
+      "version": "NATA/FIGO/EBCOG/ESA联合共识2019-02-06，DOI10.2450/2019.0245-18",
+      "population": "严重持续产后出血；遗传出血病妊娠/产后；国际多学科共识",
+      "assessment": "本次通过PowerShell成功读取PMC原论文HTML；此前source metadata仅记录搜索段落，本次新增读源事实在本支持及作者报告保存，不改共享metadata。"
+    }
+  ],
+  "classification_recommendations": [
+    {
+      "code": "JA43.0",
+      "current": "partial",
+      "suggested": "candidate_for_confirmed_after_independent_scope_review",
+      "reason": "新增第三产程、胎盘滞留/残留、立即行动、专业取胎盘及药物条件，其他14维恢复/风险分支复用。不可自动覆盖整个JA43父级。 经主线程提供冻结WHO范围核对，明确阴道分娩第三产程仍可含宫缩、创伤、胎盘和凝血原因，不等同胎盘滞留。"
+    },
+    {
+      "code": "JA43.3",
+      "current": "partial",
+      "suggested": "remain_partial_until_followup_scope_review",
+      "reason": "新增机制、动态凝血检查和成分治疗；常见急性凝血缺陷主体可读，但特异凝血病的出院随访未获得本批双源支持，未捏造固定检验日程或全部遗传病覆盖。 此类适用阴道/剖宫产，不仅DIC；目前不把原有凝血病的一个例子当整叶证据。"
+    }
+  ],
+  "limitations": [
+    "不增个人剂量、手术教程、输血配比；保持中外阈值和TXA从出生计时原文不变。",
+    "未增正文的病因特异凝血复诊；原有prognosis_followup及special_populations未改。",
+    "本次原文取读是PowerShell系统TLS读取指定段落；图表未读取，不以挂URL替代阅读。"
+  ],
+  "output_hashes": {
+    "drafts/p0-02/postpartum-hemorrhage.json": {
+      "sha256": "15baf8fdc3b0414c2e2d5182416b94b9028ad708f52dff937b336199da99194d",
+      "canonical_sha256": "44bd7407c88c1ca8b2f8295add9bef29f34b4cf1f5be81df20492104316c32c9"
+    },
+    "drafts/p0-02/postpartum-hemorrhage-sources.json": {
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "canonical_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "drafts/p0-02/postpartum-hemorrhage-editorial.json": {
+      "sha256": "71ef105d30df44c5a6ff692c520dbb3bb74d50fd600b14d261f90b0071b9c4b6",
+      "canonical_sha256": "c074002fff4cecda47411571a25c5845d43e7655fa5d990fbceeea8c40d0c3d6"
+    }
+  },
+  "verification": {
+    "json_parsed": true,
+    "sections": 14,
+    "pending_modified_sections": 6,
+    "inherited_unchanged_cross_checked_sections": 8,
+    "all_original_claim_objects_preserved": true,
+    "claim_binding_source_hash_and_independence_structure_issues": [],
+    "method": "调用项目_record_problems对临时内存结构进行检查，仅临时模拟审核字段使检查覆盖claims；没有持久化任何接受/签审状态。这是软件结构校验，不是独立医学或编辑审核。",
+    "diff_scope": "正文只追加6段双语要点，未改原有段落；现有sources metadata未改，新增集为空。"
+  },
+  "targeted_revision": {
+    "reviewer": "/root/astra_p0_neurology",
+    "changes": [
+      "p002-treatment-1、p002-medications-1改为action，接受独立双源门禁。",
+      "删除仅NICE支持的胎盘滞留常规IV促宫缩药不推荐句；保留CMA/NATA支持的处理与药物分工。"
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "checked_at": "2026-10-03",
+  "publication_status": "local_candidate_not_yet_live",
+  "summary": {
+    "topics": 82,
+    "backlog": 189,
+    "qualified_articles": 11,
+    "qualified_sections": 154,
+    "claims": 716,
+    "sources": 621,
+    "covered": 34,
+    "remaining": 13121,
+    "mapping_states": {
+      "pending": 46,
+      "confirmed": 34,
+      "partial": 28
+    },
+    "explicit_category_decisions": 6
+  },
+  "content_sha256": {
+    "meningitis": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+    "anaphylaxis": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+    "postpartum-hemorrhage": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2"
+  },
+  "independent_reviews": [
+    "reports/p0-02-meningitis-independent.json",
+    "reports/p0-02-anaphylaxis-independent.json",
+    "reports/p0-02-postpartum-hemorrhage-independent.json"
+  ],
+  "classification_review": "reports/p0-02-icd-scope-review.json",
+  "clinician_signoff": false,
+  "checks": {
+    "content_and_coverage": {
+      "issues": 0
+    },
+    "build": {
+      "status": "passed"
+    },
+    "affected_python": {
+      "status": "passed",
+      "unique_passed": 108,
+      "command": "python -m unittest tests.test_model tests.test_editorial tests.test_icd tests.test_priorities tests.test_content_audit tests.test_knowledge tests.test_clinical_gate"
+    },
+    "browser_http": {
+      "status": "pending_public_browser_after_deployment"
+    },
+    "github_ci": {
+      "status": "pending"
+    },
+    "public_https": {
+      "status": "pending"
+    },
+    "node": {
+      "status": "passed",
+      "passed": 383,
+      "command": "npm test"
+    },
+    "postgres_http": {
+      "passed": true,
+      "release_id": "rel-cc0d196d0b6c9b33ceac6d04b6aa0b208aaf0d07ad50f421b2774c17e77b958a",
+      "old_release_id": "rel-3b466e9824bb2d8f731fc623b3d12d189418437629611f9009b3c0f61eb7348d",
+      "data_sha256": "632de95b11f84ae2661426d8c1b8afa775e53d58a6c8ba5eac4a853f441c649f",
+      "topics": 82,
+      "source_count": 621,
+      "editorial_records": 154,
+      "production_changed": false,
+      "git_commit": "ffffffffffffffffffffffffffffffffffffffff",
+      "test_backup": "/home/user/.local/state/knowledge-healthcare/p0-02-test-before-20261002T165759088334Z.dump",
+      "qualified_topics": 11,
+      "checks": [
+        "existing isolated database preserved; no schema reset",
+        "79 untouched article objects unchanged; three existing topics revised",
+        "candidate hidden; duplicate import idempotent",
+        "old/new full snapshots with all sources and evidence records",
+        "publish, rollback and reactivate",
+        "HTTP pinned old82/new82 catalog and154 verified sections",
+        "CN/EN82-row22-column CSV every section exact"
+      ],
+      "test_git_commit_is_synthetic": true
+    },
+    "environment_adjustments": [
+      "Used Python zipfile after the system unzip misdecoded an existing Chinese filename; fresh candidate manifest passed.",
+      "Verified separate test database and separate reader/importer roles; role names are intentionally shared across databases.",
+      "pg_dump connection passed through individual PG environment variables, matching existing deployment backup implementation."
+    ]
+  },
+  "release_id": "rel-cc0d196d0b6c9b33ceac6d04b6aa0b208aaf0d07ad50f421b2774c17e77b958a"
+}

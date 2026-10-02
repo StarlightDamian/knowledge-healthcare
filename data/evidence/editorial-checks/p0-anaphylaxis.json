@@ -224,8 +224,8 @@
     },
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/mi_icd_scope",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "claims": [
@@ -333,6 +333,51 @@
           }
         ],
         "id": "causes_risks-4"
+      },
+      {
+        "id": "p0-02-causes_risks-1",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "寒冷也可成为触发因素：寒冷性荨麻疹者接触冷空气、冷水或冷食后可能起风团，严重发作可影响呼吸或血压。这不表示所有受冷不适都是严重过敏。",
+          "en": "Cold can also be a trigger: people with cold urticaria may develop hives after cold air, water or food, and severe episodes can affect breathing or blood pressure. Not every illness after cold exposure is anaphylaxis."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-02-cold-aad",
+            "locator": "Opening; How is cold urticaria diagnosed/treated (lines184-243)",
+            "assessment": "Cold-triggered skin symptoms and severe throat/faintness/breathing symptoms."
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-cold-bad",
+            "locator": "Other urticarias > Cold urticaria (line64)",
+            "assessment": "Cold urticaria paragraph supports cold water-associated faintness and avoiding such swimming; also specifically asks patients to inform surgical teams for warming."
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-cold-diagnosis",
+            "locator": "Triggering situations / Ice cube test / Non-recommended tests (lines46-68)",
+            "assessment": "Triggering situations names cold air/water/ingestion; local medical challenge discussed; this source alone is not an acute rescue algorithm."
+          }
+        ]
+      },
+      {
+        "id": "p0-02-causes_risks-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "已确诊肥大细胞疾病的人也可能发生严重过敏，系统性肥大细胞增多症是其中一种背景；有些发作有明确触发物，有些没有。这种背景不等于每次不适都是严重过敏。",
+          "en": "Anaphylaxis can occur in someone with a diagnosed mast cell disorder, including systemic mastocytosis. Some episodes have a known trigger and others do not. This background does not make every symptom anaphylaxis."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-02-mast-ascia",
+            "locator": "PDF Q1-Q3 and Q5-Q7",
+            "assessment": "Q1-Q3 distinguish mast cell activation and disease forms; Q5-Q7 describe recurrent episodes and specialist follow-up, not every symptom as anaphylaxis."
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-mast-jtf2023",
+            "locator": "Printed pp36-39: Mast Cell Disorders and Anaphylaxis; Clinical Presentation; recommendation42; MCAS",
+            "assessment": "Mast Cell Disorders and Anaphylaxis and MCAS sections distinguish underlying disorders, unprovoked episodes and attacks not meeting anaphylaxis definition."
+          }
+        ]
       }
     ],
     "supports": [
@@ -455,24 +500,109 @@
         ],
         "relation": "supports",
         "assessment": "Defines mast cells. | Objective evaluation, not symptom-only diagnosis."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-cold-aad",
+        "source_metadata_sha256": "4defc8e73f6b49b0c6c1d209b5780dd66374d70279b4385fa2b73ad385b9706b",
+        "locator": "Opening; How is cold urticaria diagnosed/treated (lines184-243)",
+        "source_version": "Last updated 2024-12-18; 实际读取正文 How is cold urticaria diagnosed/treated、Does cold urticaria go away 及文末版本和参考文献；网页行 184–248、267–292。",
+        "accessed_at": "2026-10-02",
+        "population": "美国公众资料；寒冷性荨麻疹患者，含儿童例子，不是全部寒冷暴露者。",
+        "region": "US",
+        "independence_group": "US-AAD",
+        "upstream_evidence": [
+          "AAD 自行署名编写和审核；不是 BAD 或 SFD 转载。引用既有病例、队列和综述，不能视作独立临床试验。"
+        ],
+        "relation": "supports",
+        "assessment": "Cold-triggered skin symptoms and severe throat/faintness/breathing symptoms."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-cold-bad",
+        "source_metadata_sha256": "373f20ee32080e2300afb294d527dffc862da6ecff8691a0d526029b5f562ef4",
+        "locator": "Other urticarias > Cold urticaria (line64)",
+        "source_version": "关联官方 PDF 标示 June 2020；在线页本次未见更明确修订日期，不用爬取日期冒充版本。; 实际读取 Other urticarias > Cold urticaria，网页行 59–69；同时读取前文以识别适用边界。",
+        "accessed_at": "2026-10-02",
+        "population": "英国公众；各型荨麻疹，寒冷小节适用于寒冷性荨麻疹。",
+        "region": "GB",
+        "independence_group": "UK-BAD",
+        "upstream_evidence": [
+          "BAD 原始公众页，与 AAD/SFD 分属不同编写机构；未证明底层研究完全独立。官方 PDF 与此页属同源，不计双源。"
+        ],
+        "relation": "supports",
+        "assessment": "Cold urticaria paragraph supports cold water-associated faintness and avoiding such swimming; also specifically asks patients to inform surgical teams for warming."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-cold-diagnosis",
+        "source_metadata_sha256": "bb0317e979a95c80f2e8caa0f35bb9a5c4fa6c951692bcb2510553d17aa9c136",
+        "locator": "Triggering situations / Ice cube test / Non-recommended tests (lines46-68)",
+        "source_version": "Sep2024 guideline; page 2026-01-19; actual read: Triggering situations; Ice cube test; Non-recommended tests, lines46-68",
+        "accessed_at": "2026-10-02",
+        "population": "Suspected cold urticaria",
+        "region": "FR",
+        "independence_group": "FR-SFD",
+        "upstream_evidence": [
+          "Same SFD source family as algorithm and associated measures, not independent."
+        ],
+        "relation": "supports",
+        "assessment": "Triggering situations names cold air/water/ingestion; local medical challenge discussed; this source alone is not an acute rescue algorithm."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-mast-ascia",
+        "source_metadata_sha256": "dca5b697f1067869168f21f13b2bf325afa55455f273718cef6e008e6db590ab",
+        "locator": "PDF Q1-Q3 and Q5-Q7",
+        "source_version": "Content updated September 2025; 实际读完 2 页 Q1–Q7；重点 p1 Q1–3 与 p2 Q4–7，网页提取行 7–70。",
+        "accessed_at": "2026-10-02",
+        "population": "澳大利亚/新西兰患者与照护者；肥大细胞疾病，儿童皮肤型和成人系统型分别说明。",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "ASCIA 原始 FAQ，与美国 JTF 独立编辑；无逐条书目，底层证据可能重叠，不能声称完全独立研究。"
+        ],
+        "relation": "supports",
+        "assessment": "Q1-Q3 distinguish mast cell activation and disease forms; Q5-Q7 describe recurrent episodes and specialist follow-up, not every symptom as anaphylaxis."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-mast-jtf2023",
+        "source_metadata_sha256": "04e3fbc7ff688a3a6c8586f03cc8100bf34bd0b922bff923959a452dd30d0173",
+        "locator": "Printed pp36-39: Mast Cell Disorders and Anaphylaxis; Clinical Presentation; recommendation42; MCAS",
+        "source_version": "2023; 学会托管 53 页 ARTICLE IN PRESS 版本; 实际读取印刷页 36–39（PDF 索引 35–38）Mast Cell Disorders and Anaphylaxis、建议 38–42、Clinical Presentation、MCAS 和特殊治疗；提取行 3042–3347。",
+        "accessed_at": "2026-10-02",
+        "population": "美国实践参数；系统性肥大细胞增多症、严重虫蜇及反复原因不明反应，部分依据来自欧洲人群。",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "AAAAI 与 ACAAI 联合文件算一个来源；托管 PDF 不是另一份独立资料。表 25 沿用 Valent 2021 共识；具体虫毒建议使用既有队列/指南，不是新试验。"
+        ],
+        "relation": "supports",
+        "assessment": "Mast Cell Disorders and Anaphylaxis and MCAS sections distinguish underlying disorders, unprovoked episodes and attacks not meeting anaphylaxis definition."
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "rationale": "独立编写机构及同机构和共同上游关系见每条support；本作者绑定待独立审核，不表示独立临床试验。",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "regional_difference",
-      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+      "resolution": "Retain existing regional differences in rescue devices, observation and referral. Added US conditional indefinite-VIT guidance and German/Austrian prolonged/permanent option are stated separately. Cold exposure and perioperative advice is population-specific, with no universal dose or prophylaxis prescription."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/priority_medical_rules",
-      "reviewer": "/root/mi_icd_scope",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_allergy",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "anaphylaxis-nhs",
+        "anaphylaxis-p0-02-cold-aad",
+        "anaphylaxis-p0-02-cold-bad",
+        "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
+        "anaphylaxis-p0-02-mast-ascia",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
+        "anaphylaxis-p0-02-mast-jtf2023",
+        "anaphylaxis-p0-02-mast-orphan",
         "anaphylaxis-p0-aaaai",
         "anaphylaxis-p0-acaai-test",
         "anaphylaxis-p0-adam",
@@ -485,36 +615,42 @@
         "anaphylaxis-p0-foodtest",
         "anaphylaxis-p0-intolerance",
         "anaphylaxis-p0-mcas",
-        "anaphylaxis-p0-ontario-bls",
         "anaphylaxis-p0-pregnancy",
         "anaphylaxis-p0-rcuk",
         "anaphylaxis-p0-venom",
-        "anaphylaxis-p0-wao",
-        "anaphylaxis-p0-wms"
+        "anaphylaxis-p0-wao"
       ],
       "findings": [
         {
-          "id": "P0-ANA-NO-VOMITING",
+          "id": "diet-action",
           "status": "resolved",
-          "claim_ids": [
-            "treatment-3"
-          ],
-          "resolution": "Added independently written WMS official summary corroborating RCUK no-induced-vomiting clause. WAO is retained only for trigger removal and immediate rescue; no false clause attribution."
+          "finding": "Temperature diary instruction was classified as explanation.",
+          "resolution": "Author changed to action; AAD and SFD independently establish the temperature/history clue. Diary wording is a low-risk practical implementation of history taking, not a tested treatment outcome."
         },
         {
-          "id": "P0-ANA-ORAL-SAFETY",
+          "id": "sfd-specific-url",
           "status": "resolved",
-          "claim_ids": [
-            "medications-2"
-          ],
-          "resolution": "Added Ontario professional Patient Management item9 as scoped corroboration of ADAM public breathing-difficulty instruction. Its BLS/ALS exceptions remain explicit; no universal oral ban is inferred."
+          "finding": "SFD link did not point directly to the perioperative advice.",
+          "resolution": "Exact associated-measures URL and metadata bindings corrected; In Case of Surgery independently reread."
+        },
+        {
+          "id": "unreadable-original-routes",
+          "status": "resolved",
+          "finding": "Dustri/SciELO and initial Orphan routes intermittently inaccessible during independent review.",
+          "resolution": "Same original DGAKI/SBA-ASBAI articles identified by DOI and reread through Europe PMC XML; Orphan original PDF retrieved from its official alternate route and relevant pages extracted. Mirrors do not count as new sources."
+        },
+        {
+          "id": "dispute-enum",
+          "status": "resolved",
+          "finding": "Author used resolved as dispute status, outside the data contract.",
+          "resolution": "Independent reviewer adjudicates regional_difference using the retained international conditions and explicitly differing VIT recommendations. Apply this review decision when accepting the records; do not alter medical text or weaken the validator."
         }
       ],
-      "resolution": "All64 bilingual claims have adequate claim-specific support for a lay encyclopedia. The two precise safety-action bindings were completed then reviewed; the medical wording remained unchanged. No remaining substantive evidence or bilingual issue. ICD semantic mapping and clinical sign-off are outside this review."
+      "resolution": "All 11 added claims retain appropriate population, trigger and action scope in both languages. Added text does not change existing numeric rescue/observation/product thresholds. Shared upstream guidance is disclosed; independent editorial corroboration is not independent trial replication. Cold local hives are not anaphylaxis; anaphylaxis in an established mast-cell disorder is not all MCAS or all symptoms. No unsupported home testing, dosing or perioperative premedication added."
     },
     "unresolved_questions": [],
-    "content_sha256": "e2109d5f056506d75987c2c8162d6c0a8a1f5802050d072d5d22dc5ea31625cd",
-    "review_report": "reports/p0-anaphylaxis-independent.json"
+    "content_sha256": "b62dc4bd389a8d90cec008779d72be8eba9c7cdc2e700799a2357d72a865171c",
+    "review_report": "reports/p0-02-anaphylaxis-independent.json"
   },
   {
     "id": "p0-01-anaphylaxis-red_flags",
@@ -525,8 +661,8 @@
     },
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/mi_icd_scope",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "claims": [
@@ -644,6 +780,31 @@
           }
         ],
         "id": "red_flags-4"
+      },
+      {
+        "id": "p0-02-red_flags-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "这些呼吸、喉咙或晕厥危险信号也适用于寒冷暴露后，以及已经确诊肥大细胞疾病的人；出现时按上述急救计划行动，不要等找到过敏原才处理。",
+          "en": "These breathing, throat or collapse danger signs also apply after cold exposure and in people with a diagnosed mast cell disorder. Follow the emergency steps above rather than waiting to identify an allergen."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-02-cold-aad",
+            "locator": "Opening; How is cold urticaria diagnosed/treated (lines184-243)",
+            "assessment": "Serious cold reaction, fainting/throat swelling and epinephrine rescue advice."
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-mast-orphan",
+            "locator": "PDF p1 Definition; pp2-3 Triggers/Treatment; pp6-7 Type of anaesthesia/Anamnesis",
+            "assessment": "PDF p2 spontaneous activation and p3 acute treatment per anaphylaxis guidance; supports emergency response in known systemic disease."
+          },
+          {
+            "source_id": "anaphylaxis-p0-aaaai",
+            "locator": "Symptoms; Important Reminder",
+            "assessment": "General urgent anaphylaxis recognition/rescue, not proof of subtype-specific epidemiology."
+          }
+        ]
       }
     ],
     "supports": [
@@ -736,24 +897,64 @@
         ],
         "relation": "supports",
         "assessment": "Airway/breathing/circulation and rescue breathing/CPR."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-cold-aad",
+        "source_metadata_sha256": "4defc8e73f6b49b0c6c1d209b5780dd66374d70279b4385fa2b73ad385b9706b",
+        "locator": "Opening; How is cold urticaria diagnosed/treated (lines184-243)",
+        "source_version": "Last updated 2024-12-18; 实际读取正文 How is cold urticaria diagnosed/treated、Does cold urticaria go away 及文末版本和参考文献；网页行 184–248、267–292。",
+        "accessed_at": "2026-10-02",
+        "population": "美国公众资料；寒冷性荨麻疹患者，含儿童例子，不是全部寒冷暴露者。",
+        "region": "US",
+        "independence_group": "US-AAD",
+        "upstream_evidence": [
+          "AAD 自行署名编写和审核；不是 BAD 或 SFD 转载。引用既有病例、队列和综述，不能视作独立临床试验。"
+        ],
+        "relation": "supports",
+        "assessment": "Serious cold reaction, fainting/throat swelling and epinephrine rescue advice."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-mast-orphan",
+        "source_metadata_sha256": "8f6121bff276d128fb08ccee3a62d1660976378478e31cc3643d23069ab635c8",
+        "locator": "PDF p1 Definition; pp2-3 Triggers/Treatment; pp6-7 Type of anaesthesia/Anamnesis",
+        "source_version": "English file listed 2022-08-08; DOI10.19224/ai2021.s266; actual read: PDF p1 Definition; pp2-3 Triggers/Treatment; pp6-7 Type of anaesthesia/Anamnesis",
+        "accessed_at": "2026-10-02",
+        "population": "Systemic mastocytosis during anaesthesia",
+        "region": "DE",
+        "independence_group": "DE-OrphanAnesthesia",
+        "upstream_evidence": [
+          "Independent clinical recommendation; shares ENDA/EAACI2015 and perioperative case-series evidence; not independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "PDF p2 spontaneous activation and p3 acute treatment per anaphylaxis guidance; supports emergency response in known systemic disease."
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "rationale": "独立编写机构及同机构和共同上游关系见每条support；本作者绑定待独立审核，不表示独立临床试验。",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "regional_difference",
-      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+      "resolution": "Retain existing regional differences in rescue devices, observation and referral. Added US conditional indefinite-VIT guidance and German/Austrian prolonged/permanent option are stated separately. Cold exposure and perioperative advice is population-specific, with no universal dose or prophylaxis prescription."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/priority_medical_rules",
-      "reviewer": "/root/mi_icd_scope",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_allergy",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "anaphylaxis-nhs",
+        "anaphylaxis-p0-02-cold-aad",
+        "anaphylaxis-p0-02-cold-bad",
+        "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
+        "anaphylaxis-p0-02-mast-ascia",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
+        "anaphylaxis-p0-02-mast-jtf2023",
+        "anaphylaxis-p0-02-mast-orphan",
         "anaphylaxis-p0-aaaai",
         "anaphylaxis-p0-acaai-test",
         "anaphylaxis-p0-adam",
@@ -766,36 +967,42 @@
         "anaphylaxis-p0-foodtest",
         "anaphylaxis-p0-intolerance",
         "anaphylaxis-p0-mcas",
-        "anaphylaxis-p0-ontario-bls",
         "anaphylaxis-p0-pregnancy",
         "anaphylaxis-p0-rcuk",
         "anaphylaxis-p0-venom",
-        "anaphylaxis-p0-wao",
-        "anaphylaxis-p0-wms"
+        "anaphylaxis-p0-wao"
       ],
       "findings": [
         {
-          "id": "P0-ANA-NO-VOMITING",
+          "id": "diet-action",
           "status": "resolved",
-          "claim_ids": [
-            "treatment-3"
-          ],
-          "resolution": "Added independently written WMS official summary corroborating RCUK no-induced-vomiting clause. WAO is retained only for trigger removal and immediate rescue; no false clause attribution."
+          "finding": "Temperature diary instruction was classified as explanation.",
+          "resolution": "Author changed to action; AAD and SFD independently establish the temperature/history clue. Diary wording is a low-risk practical implementation of history taking, not a tested treatment outcome."
         },
         {
-          "id": "P0-ANA-ORAL-SAFETY",
+          "id": "sfd-specific-url",
           "status": "resolved",
-          "claim_ids": [
-            "medications-2"
-          ],
-          "resolution": "Added Ontario professional Patient Management item9 as scoped corroboration of ADAM public breathing-difficulty instruction. Its BLS/ALS exceptions remain explicit; no universal oral ban is inferred."
+          "finding": "SFD link did not point directly to the perioperative advice.",
+          "resolution": "Exact associated-measures URL and metadata bindings corrected; In Case of Surgery independently reread."
+        },
+        {
+          "id": "unreadable-original-routes",
+          "status": "resolved",
+          "finding": "Dustri/SciELO and initial Orphan routes intermittently inaccessible during independent review.",
+          "resolution": "Same original DGAKI/SBA-ASBAI articles identified by DOI and reread through Europe PMC XML; Orphan original PDF retrieved from its official alternate route and relevant pages extracted. Mirrors do not count as new sources."
+        },
+        {
+          "id": "dispute-enum",
+          "status": "resolved",
+          "finding": "Author used resolved as dispute status, outside the data contract.",
+          "resolution": "Independent reviewer adjudicates regional_difference using the retained international conditions and explicitly differing VIT recommendations. Apply this review decision when accepting the records; do not alter medical text or weaken the validator."
         }
       ],
-      "resolution": "All64 bilingual claims have adequate claim-specific support for a lay encyclopedia. The two precise safety-action bindings were completed then reviewed; the medical wording remained unchanged. No remaining substantive evidence or bilingual issue. ICD semantic mapping and clinical sign-off are outside this review."
+      "resolution": "All 11 added claims retain appropriate population, trigger and action scope in both languages. Added text does not change existing numeric rescue/observation/product thresholds. Shared upstream guidance is disclosed; independent editorial corroboration is not independent trial replication. Cold local hives are not anaphylaxis; anaphylaxis in an established mast-cell disorder is not all MCAS or all symptoms. No unsupported home testing, dosing or perioperative premedication added."
     },
     "unresolved_questions": [],
-    "content_sha256": "c6f7499afb50fdf0219013b99ccf7de98648dcd767d5386abfb7d61edc1dcb24",
-    "review_report": "reports/p0-anaphylaxis-independent.json"
+    "content_sha256": "74f3627dca94ed467dbb9f1732ed4ef52cd45a1538e123d5152e851f98d71a0c",
+    "review_report": "reports/p0-02-anaphylaxis-independent.json"
   },
   {
     "id": "p0-01-anaphylaxis-care",
@@ -1067,8 +1274,8 @@
     },
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/mi_icd_scope",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "claims": [
@@ -1181,6 +1388,26 @@
           }
         ],
         "id": "diagnosis-4"
+      },
+      {
+        "id": "p0-02-diagnosis-4",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "怀疑寒冷相关反应时，医生会核对受冷与症状的顺序，必要时安排局部寒冷激发试验；一次局部试验阴性仍不能完全排除寒冷性荨麻疹。",
+          "en": "For a suspected cold-related reaction, the clinician reviews the sequence of cold exposure and symptoms and may arrange a local cold-stimulation test. A negative local test does not completely exclude cold urticaria."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-02-cold-aad",
+            "locator": "Opening; How is cold urticaria diagnosed/treated (lines184-243)",
+            "assessment": "Clinician history and local challenge; explicitly notes negative local test may not exclude disease."
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-cold-diagnosis",
+            "locator": "Triggering situations / Ice cube test / Non-recommended tests (lines46-68)",
+            "assessment": "Triggering situations names cold air/water/ingestion; local medical challenge discussed; this source alone is not an acute rescue algorithm."
+          }
+        ]
       }
     ],
     "supports": [
@@ -1273,24 +1500,64 @@
         ],
         "relation": "supports",
         "assessment": "False positives and need for clinical history; cites ACAAI among its background sources. | Supervised challenge and emergency treatment."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-cold-aad",
+        "source_metadata_sha256": "4defc8e73f6b49b0c6c1d209b5780dd66374d70279b4385fa2b73ad385b9706b",
+        "locator": "Opening; How is cold urticaria diagnosed/treated (lines184-243)",
+        "source_version": "Last updated 2024-12-18; 实际读取正文 How is cold urticaria diagnosed/treated、Does cold urticaria go away 及文末版本和参考文献；网页行 184–248、267–292。",
+        "accessed_at": "2026-10-02",
+        "population": "美国公众资料；寒冷性荨麻疹患者，含儿童例子，不是全部寒冷暴露者。",
+        "region": "US",
+        "independence_group": "US-AAD",
+        "upstream_evidence": [
+          "AAD 自行署名编写和审核；不是 BAD 或 SFD 转载。引用既有病例、队列和综述，不能视作独立临床试验。"
+        ],
+        "relation": "supports",
+        "assessment": "Clinician history and local challenge; explicitly notes negative local test may not exclude disease."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-cold-diagnosis",
+        "source_metadata_sha256": "bb0317e979a95c80f2e8caa0f35bb9a5c4fa6c951692bcb2510553d17aa9c136",
+        "locator": "Triggering situations / Ice cube test / Non-recommended tests (lines46-68)",
+        "source_version": "Sep2024 guideline; page 2026-01-19; actual read: Triggering situations; Ice cube test; Non-recommended tests, lines46-68",
+        "accessed_at": "2026-10-02",
+        "population": "Suspected cold urticaria",
+        "region": "FR",
+        "independence_group": "FR-SFD",
+        "upstream_evidence": [
+          "Same SFD source family as algorithm and associated measures, not independent."
+        ],
+        "relation": "supports",
+        "assessment": "Triggering situations names cold air/water/ingestion; local medical challenge discussed; this source alone is not an acute rescue algorithm."
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "rationale": "独立编写机构及同机构和共同上游关系见每条support；本作者绑定待独立审核，不表示独立临床试验。",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "regional_difference",
-      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+      "resolution": "Retain existing regional differences in rescue devices, observation and referral. Added US conditional indefinite-VIT guidance and German/Austrian prolonged/permanent option are stated separately. Cold exposure and perioperative advice is population-specific, with no universal dose or prophylaxis prescription."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/priority_medical_rules",
-      "reviewer": "/root/mi_icd_scope",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_allergy",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "anaphylaxis-nhs",
+        "anaphylaxis-p0-02-cold-aad",
+        "anaphylaxis-p0-02-cold-bad",
+        "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
+        "anaphylaxis-p0-02-mast-ascia",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
+        "anaphylaxis-p0-02-mast-jtf2023",
+        "anaphylaxis-p0-02-mast-orphan",
         "anaphylaxis-p0-aaaai",
         "anaphylaxis-p0-acaai-test",
         "anaphylaxis-p0-adam",
@@ -1303,36 +1570,42 @@
         "anaphylaxis-p0-foodtest",
         "anaphylaxis-p0-intolerance",
         "anaphylaxis-p0-mcas",
-        "anaphylaxis-p0-ontario-bls",
         "anaphylaxis-p0-pregnancy",
         "anaphylaxis-p0-rcuk",
         "anaphylaxis-p0-venom",
-        "anaphylaxis-p0-wao",
-        "anaphylaxis-p0-wms"
+        "anaphylaxis-p0-wao"
       ],
       "findings": [
         {
-          "id": "P0-ANA-NO-VOMITING",
+          "id": "diet-action",
           "status": "resolved",
-          "claim_ids": [
-            "treatment-3"
-          ],
-          "resolution": "Added independently written WMS official summary corroborating RCUK no-induced-vomiting clause. WAO is retained only for trigger removal and immediate rescue; no false clause attribution."
+          "finding": "Temperature diary instruction was classified as explanation.",
+          "resolution": "Author changed to action; AAD and SFD independently establish the temperature/history clue. Diary wording is a low-risk practical implementation of history taking, not a tested treatment outcome."
         },
         {
-          "id": "P0-ANA-ORAL-SAFETY",
+          "id": "sfd-specific-url",
           "status": "resolved",
-          "claim_ids": [
-            "medications-2"
-          ],
-          "resolution": "Added Ontario professional Patient Management item9 as scoped corroboration of ADAM public breathing-difficulty instruction. Its BLS/ALS exceptions remain explicit; no universal oral ban is inferred."
+          "finding": "SFD link did not point directly to the perioperative advice.",
+          "resolution": "Exact associated-measures URL and metadata bindings corrected; In Case of Surgery independently reread."
+        },
+        {
+          "id": "unreadable-original-routes",
+          "status": "resolved",
+          "finding": "Dustri/SciELO and initial Orphan routes intermittently inaccessible during independent review.",
+          "resolution": "Same original DGAKI/SBA-ASBAI articles identified by DOI and reread through Europe PMC XML; Orphan original PDF retrieved from its official alternate route and relevant pages extracted. Mirrors do not count as new sources."
+        },
+        {
+          "id": "dispute-enum",
+          "status": "resolved",
+          "finding": "Author used resolved as dispute status, outside the data contract.",
+          "resolution": "Independent reviewer adjudicates regional_difference using the retained international conditions and explicitly differing VIT recommendations. Apply this review decision when accepting the records; do not alter medical text or weaken the validator."
         }
       ],
-      "resolution": "All64 bilingual claims have adequate claim-specific support for a lay encyclopedia. The two precise safety-action bindings were completed then reviewed; the medical wording remained unchanged. No remaining substantive evidence or bilingual issue. ICD semantic mapping and clinical sign-off are outside this review."
+      "resolution": "All 11 added claims retain appropriate population, trigger and action scope in both languages. Added text does not change existing numeric rescue/observation/product thresholds. Shared upstream guidance is disclosed; independent editorial corroboration is not independent trial replication. Cold local hives are not anaphylaxis; anaphylaxis in an established mast-cell disorder is not all MCAS or all symptoms. No unsupported home testing, dosing or perioperative premedication added."
     },
     "unresolved_questions": [],
-    "content_sha256": "821980852cf43c3e092cf8d577aaf0d624581a838c61e527167e6b139c3daeff",
-    "review_report": "reports/p0-anaphylaxis-independent.json"
+    "content_sha256": "35afec39d6333c2b69762c84e6433ba2f63dc9692b4b7b1ddef0f9dcd55dd088",
+    "review_report": "reports/p0-02-anaphylaxis-independent.json"
   },
   {
     "id": "p0-01-anaphylaxis-differentials",
@@ -1343,8 +1616,8 @@
     },
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/mi_icd_scope",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "claims": [
@@ -1452,6 +1725,31 @@
           }
         ],
         "id": "differentials-4"
+      },
+      {
+        "id": "p0-02-differentials-5",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "只在受冷部位出现风团，与伴呼吸或循环受损的寒冷诱发严重过敏不同。肥大细胞增多症、肥大细胞激活综合征和特发性严重过敏也不是可互换的标签；医生需分别判断原有疾病和本次发作。",
+          "en": "Hives confined to cold-exposed skin differ from cold-triggered anaphylaxis with breathing or circulation compromise. Mastocytosis, mast cell activation syndrome and idiopathic anaphylaxis are not interchangeable labels; clinicians assess the underlying disorder and the current episode separately."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-02-cold-aad",
+            "locator": "Opening; How is cold urticaria diagnosed/treated (lines184-243)",
+            "assessment": "Distinguishes hives from serious cold-associated breathing/faintness."
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-mast-ascia",
+            "locator": "PDF Q1-Q3 and Q5-Q7",
+            "assessment": "Q1-Q3 distinguish mast cell activation and disease forms; Q5-Q7 describe recurrent episodes and specialist follow-up, not every symptom as anaphylaxis."
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-mast-jtf2023",
+            "locator": "Printed pp36-39: Mast Cell Disorders and Anaphylaxis; Clinical Presentation; recommendation42; MCAS",
+            "assessment": "Mast Cell Disorders and Anaphylaxis and MCAS sections distinguish underlying disorders, unprovoked episodes and attacks not meeting anaphylaxis definition."
+          }
+        ]
       }
     ],
     "supports": [
@@ -1559,24 +1857,79 @@
         ],
         "relation": "supports",
         "assessment": "Inhaled allergens rarely cause anaphylaxis."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-cold-aad",
+        "source_metadata_sha256": "4defc8e73f6b49b0c6c1d209b5780dd66374d70279b4385fa2b73ad385b9706b",
+        "locator": "Opening; How is cold urticaria diagnosed/treated (lines184-243)",
+        "source_version": "Last updated 2024-12-18; 实际读取正文 How is cold urticaria diagnosed/treated、Does cold urticaria go away 及文末版本和参考文献；网页行 184–248、267–292。",
+        "accessed_at": "2026-10-02",
+        "population": "美国公众资料；寒冷性荨麻疹患者，含儿童例子，不是全部寒冷暴露者。",
+        "region": "US",
+        "independence_group": "US-AAD",
+        "upstream_evidence": [
+          "AAD 自行署名编写和审核；不是 BAD 或 SFD 转载。引用既有病例、队列和综述，不能视作独立临床试验。"
+        ],
+        "relation": "supports",
+        "assessment": "Distinguishes hives from serious cold-associated breathing/faintness."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-mast-ascia",
+        "source_metadata_sha256": "dca5b697f1067869168f21f13b2bf325afa55455f273718cef6e008e6db590ab",
+        "locator": "PDF Q1-Q3 and Q5-Q7",
+        "source_version": "Content updated September 2025; 实际读完 2 页 Q1–Q7；重点 p1 Q1–3 与 p2 Q4–7，网页提取行 7–70。",
+        "accessed_at": "2026-10-02",
+        "population": "澳大利亚/新西兰患者与照护者；肥大细胞疾病，儿童皮肤型和成人系统型分别说明。",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "ASCIA 原始 FAQ，与美国 JTF 独立编辑；无逐条书目，底层证据可能重叠，不能声称完全独立研究。"
+        ],
+        "relation": "supports",
+        "assessment": "Q1-Q3 distinguish mast cell activation and disease forms; Q5-Q7 describe recurrent episodes and specialist follow-up, not every symptom as anaphylaxis."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-mast-jtf2023",
+        "source_metadata_sha256": "04e3fbc7ff688a3a6c8586f03cc8100bf34bd0b922bff923959a452dd30d0173",
+        "locator": "Printed pp36-39: Mast Cell Disorders and Anaphylaxis; Clinical Presentation; recommendation42; MCAS",
+        "source_version": "2023; 学会托管 53 页 ARTICLE IN PRESS 版本; 实际读取印刷页 36–39（PDF 索引 35–38）Mast Cell Disorders and Anaphylaxis、建议 38–42、Clinical Presentation、MCAS 和特殊治疗；提取行 3042–3347。",
+        "accessed_at": "2026-10-02",
+        "population": "美国实践参数；系统性肥大细胞增多症、严重虫蜇及反复原因不明反应，部分依据来自欧洲人群。",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "AAAAI 与 ACAAI 联合文件算一个来源；托管 PDF 不是另一份独立资料。表 25 沿用 Valent 2021 共识；具体虫毒建议使用既有队列/指南，不是新试验。"
+        ],
+        "relation": "supports",
+        "assessment": "Mast Cell Disorders and Anaphylaxis and MCAS sections distinguish underlying disorders, unprovoked episodes and attacks not meeting anaphylaxis definition."
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "rationale": "独立编写机构及同机构和共同上游关系见每条support；本作者绑定待独立审核，不表示独立临床试验。",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "regional_difference",
-      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+      "resolution": "Retain existing regional differences in rescue devices, observation and referral. Added US conditional indefinite-VIT guidance and German/Austrian prolonged/permanent option are stated separately. Cold exposure and perioperative advice is population-specific, with no universal dose or prophylaxis prescription."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/priority_medical_rules",
-      "reviewer": "/root/mi_icd_scope",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_allergy",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "anaphylaxis-nhs",
+        "anaphylaxis-p0-02-cold-aad",
+        "anaphylaxis-p0-02-cold-bad",
+        "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
+        "anaphylaxis-p0-02-mast-ascia",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
+        "anaphylaxis-p0-02-mast-jtf2023",
+        "anaphylaxis-p0-02-mast-orphan",
         "anaphylaxis-p0-aaaai",
         "anaphylaxis-p0-acaai-test",
         "anaphylaxis-p0-adam",
@@ -1589,36 +1942,42 @@
         "anaphylaxis-p0-foodtest",
         "anaphylaxis-p0-intolerance",
         "anaphylaxis-p0-mcas",
-        "anaphylaxis-p0-ontario-bls",
         "anaphylaxis-p0-pregnancy",
         "anaphylaxis-p0-rcuk",
         "anaphylaxis-p0-venom",
-        "anaphylaxis-p0-wao",
-        "anaphylaxis-p0-wms"
+        "anaphylaxis-p0-wao"
       ],
       "findings": [
         {
-          "id": "P0-ANA-NO-VOMITING",
+          "id": "diet-action",
           "status": "resolved",
-          "claim_ids": [
-            "treatment-3"
-          ],
-          "resolution": "Added independently written WMS official summary corroborating RCUK no-induced-vomiting clause. WAO is retained only for trigger removal and immediate rescue; no false clause attribution."
+          "finding": "Temperature diary instruction was classified as explanation.",
+          "resolution": "Author changed to action; AAD and SFD independently establish the temperature/history clue. Diary wording is a low-risk practical implementation of history taking, not a tested treatment outcome."
         },
         {
-          "id": "P0-ANA-ORAL-SAFETY",
+          "id": "sfd-specific-url",
           "status": "resolved",
-          "claim_ids": [
-            "medications-2"
-          ],
-          "resolution": "Added Ontario professional Patient Management item9 as scoped corroboration of ADAM public breathing-difficulty instruction. Its BLS/ALS exceptions remain explicit; no universal oral ban is inferred."
+          "finding": "SFD link did not point directly to the perioperative advice.",
+          "resolution": "Exact associated-measures URL and metadata bindings corrected; In Case of Surgery independently reread."
+        },
+        {
+          "id": "unreadable-original-routes",
+          "status": "resolved",
+          "finding": "Dustri/SciELO and initial Orphan routes intermittently inaccessible during independent review.",
+          "resolution": "Same original DGAKI/SBA-ASBAI articles identified by DOI and reread through Europe PMC XML; Orphan original PDF retrieved from its official alternate route and relevant pages extracted. Mirrors do not count as new sources."
+        },
+        {
+          "id": "dispute-enum",
+          "status": "resolved",
+          "finding": "Author used resolved as dispute status, outside the data contract.",
+          "resolution": "Independent reviewer adjudicates regional_difference using the retained international conditions and explicitly differing VIT recommendations. Apply this review decision when accepting the records; do not alter medical text or weaken the validator."
         }
       ],
-      "resolution": "All64 bilingual claims have adequate claim-specific support for a lay encyclopedia. The two precise safety-action bindings were completed then reviewed; the medical wording remained unchanged. No remaining substantive evidence or bilingual issue. ICD semantic mapping and clinical sign-off are outside this review."
+      "resolution": "All 11 added claims retain appropriate population, trigger and action scope in both languages. Added text does not change existing numeric rescue/observation/product thresholds. Shared upstream guidance is disclosed; independent editorial corroboration is not independent trial replication. Cold local hives are not anaphylaxis; anaphylaxis in an established mast-cell disorder is not all MCAS or all symptoms. No unsupported home testing, dosing or perioperative premedication added."
     },
     "unresolved_questions": [],
-    "content_sha256": "fb3687bb8a148541d72473841e7aa0a9831422725040e73e3f4fd89b6f503fa1",
-    "review_report": "reports/p0-anaphylaxis-independent.json"
+    "content_sha256": "f9881d8b4a32b88ecf7eeb6b40547b39b22d4dacc2f731f80a10b5626c24e84a",
+    "review_report": "reports/p0-02-anaphylaxis-independent.json"
   },
   {
     "id": "p0-01-anaphylaxis-treatment",
@@ -2206,8 +2565,8 @@
     },
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/mi_icd_scope",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "claims": [
@@ -2320,6 +2679,26 @@
           }
         ],
         "id": "diet-4"
+      },
+      {
+        "id": "p0-02-diet-6",
+        "kind": "action",
+        "text": {
+          "zh-CN": "对寒冷相关反应，饮食记录还要注明温度，例如是否仅在吃冰冷食品后出现嘴唇或喉咙症状；这与食物成分过敏是不同的调查线索。",
+          "en": "For cold-related reactions, also record temperature, such as whether lip or throat symptoms occur only with frozen foods. This is a different investigative clue from allergy to a food ingredient."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-02-cold-aad",
+            "locator": "Opening; How is cold urticaria diagnosed/treated (lines184-243)",
+            "assessment": "Opening and treatment sections identify frozen food-related lip/throat symptoms, distinct temperature exposure."
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-cold-diagnosis",
+            "locator": "Triggering situations / Ice cube test / Non-recommended tests (lines46-68)",
+            "assessment": "Triggering situations names cold air/water/ingestion; local medical challenge discussed; this source alone is not an acute rescue algorithm."
+          }
+        ]
       }
     ],
     "supports": [
@@ -2427,24 +2806,64 @@
         ],
         "relation": "supports",
         "assessment": "Emergency drug and avoidance remain necessary."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-cold-aad",
+        "source_metadata_sha256": "4defc8e73f6b49b0c6c1d209b5780dd66374d70279b4385fa2b73ad385b9706b",
+        "locator": "Opening; How is cold urticaria diagnosed/treated (lines184-243)",
+        "source_version": "Last updated 2024-12-18; 实际读取正文 How is cold urticaria diagnosed/treated、Does cold urticaria go away 及文末版本和参考文献；网页行 184–248、267–292。",
+        "accessed_at": "2026-10-02",
+        "population": "美国公众资料；寒冷性荨麻疹患者，含儿童例子，不是全部寒冷暴露者。",
+        "region": "US",
+        "independence_group": "US-AAD",
+        "upstream_evidence": [
+          "AAD 自行署名编写和审核；不是 BAD 或 SFD 转载。引用既有病例、队列和综述，不能视作独立临床试验。"
+        ],
+        "relation": "supports",
+        "assessment": "Opening and treatment sections identify frozen food-related lip/throat symptoms, distinct temperature exposure."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-cold-diagnosis",
+        "source_metadata_sha256": "bb0317e979a95c80f2e8caa0f35bb9a5c4fa6c951692bcb2510553d17aa9c136",
+        "locator": "Triggering situations / Ice cube test / Non-recommended tests (lines46-68)",
+        "source_version": "Sep2024 guideline; page 2026-01-19; actual read: Triggering situations; Ice cube test; Non-recommended tests, lines46-68",
+        "accessed_at": "2026-10-02",
+        "population": "Suspected cold urticaria",
+        "region": "FR",
+        "independence_group": "FR-SFD",
+        "upstream_evidence": [
+          "Same SFD source family as algorithm and associated measures, not independent."
+        ],
+        "relation": "supports",
+        "assessment": "Triggering situations names cold air/water/ingestion; local medical challenge discussed; this source alone is not an acute rescue algorithm."
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "rationale": "独立编写机构及同机构和共同上游关系见每条support；本作者绑定待独立审核，不表示独立临床试验。",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "regional_difference",
-      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+      "resolution": "Retain existing regional differences in rescue devices, observation and referral. Added US conditional indefinite-VIT guidance and German/Austrian prolonged/permanent option are stated separately. Cold exposure and perioperative advice is population-specific, with no universal dose or prophylaxis prescription."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/priority_medical_rules",
-      "reviewer": "/root/mi_icd_scope",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_allergy",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "anaphylaxis-nhs",
+        "anaphylaxis-p0-02-cold-aad",
+        "anaphylaxis-p0-02-cold-bad",
+        "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
+        "anaphylaxis-p0-02-mast-ascia",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
+        "anaphylaxis-p0-02-mast-jtf2023",
+        "anaphylaxis-p0-02-mast-orphan",
         "anaphylaxis-p0-aaaai",
         "anaphylaxis-p0-acaai-test",
         "anaphylaxis-p0-adam",
@@ -2457,36 +2876,42 @@
         "anaphylaxis-p0-foodtest",
         "anaphylaxis-p0-intolerance",
         "anaphylaxis-p0-mcas",
-        "anaphylaxis-p0-ontario-bls",
         "anaphylaxis-p0-pregnancy",
         "anaphylaxis-p0-rcuk",
         "anaphylaxis-p0-venom",
-        "anaphylaxis-p0-wao",
-        "anaphylaxis-p0-wms"
+        "anaphylaxis-p0-wao"
       ],
       "findings": [
         {
-          "id": "P0-ANA-NO-VOMITING",
+          "id": "diet-action",
           "status": "resolved",
-          "claim_ids": [
-            "treatment-3"
-          ],
-          "resolution": "Added independently written WMS official summary corroborating RCUK no-induced-vomiting clause. WAO is retained only for trigger removal and immediate rescue; no false clause attribution."
+          "finding": "Temperature diary instruction was classified as explanation.",
+          "resolution": "Author changed to action; AAD and SFD independently establish the temperature/history clue. Diary wording is a low-risk practical implementation of history taking, not a tested treatment outcome."
         },
         {
-          "id": "P0-ANA-ORAL-SAFETY",
+          "id": "sfd-specific-url",
           "status": "resolved",
-          "claim_ids": [
-            "medications-2"
-          ],
-          "resolution": "Added Ontario professional Patient Management item9 as scoped corroboration of ADAM public breathing-difficulty instruction. Its BLS/ALS exceptions remain explicit; no universal oral ban is inferred."
+          "finding": "SFD link did not point directly to the perioperative advice.",
+          "resolution": "Exact associated-measures URL and metadata bindings corrected; In Case of Surgery independently reread."
+        },
+        {
+          "id": "unreadable-original-routes",
+          "status": "resolved",
+          "finding": "Dustri/SciELO and initial Orphan routes intermittently inaccessible during independent review.",
+          "resolution": "Same original DGAKI/SBA-ASBAI articles identified by DOI and reread through Europe PMC XML; Orphan original PDF retrieved from its official alternate route and relevant pages extracted. Mirrors do not count as new sources."
+        },
+        {
+          "id": "dispute-enum",
+          "status": "resolved",
+          "finding": "Author used resolved as dispute status, outside the data contract.",
+          "resolution": "Independent reviewer adjudicates regional_difference using the retained international conditions and explicitly differing VIT recommendations. Apply this review decision when accepting the records; do not alter medical text or weaken the validator."
         }
       ],
-      "resolution": "All64 bilingual claims have adequate claim-specific support for a lay encyclopedia. The two precise safety-action bindings were completed then reviewed; the medical wording remained unchanged. No remaining substantive evidence or bilingual issue. ICD semantic mapping and clinical sign-off are outside this review."
+      "resolution": "All 11 added claims retain appropriate population, trigger and action scope in both languages. Added text does not change existing numeric rescue/observation/product thresholds. Shared upstream guidance is disclosed; independent editorial corroboration is not independent trial replication. Cold local hives are not anaphylaxis; anaphylaxis in an established mast-cell disorder is not all MCAS or all symptoms. No unsupported home testing, dosing or perioperative premedication added."
     },
     "unresolved_questions": [],
-    "content_sha256": "f045c3ec22ab25933a2af5e0f599e65a6e2212b2e2c2fdb51913e41c893f7339",
-    "review_report": "reports/p0-anaphylaxis-independent.json"
+    "content_sha256": "b367aab21ba26b39114935d2f61a2dd27365d597293974f2852304d0eb8a0ce9",
+    "review_report": "reports/p0-02-anaphylaxis-independent.json"
   },
   {
     "id": "p0-01-anaphylaxis-daily_care",
@@ -2497,8 +2922,8 @@
     },
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/mi_icd_scope",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "claims": [
@@ -2611,6 +3036,31 @@
           }
         ],
         "id": "daily_care-4"
+      },
+      {
+        "id": "p0-02-daily_care-7",
+        "kind": "action",
+        "text": {
+          "zh-CN": "已因寒冷出现过严重反应者，先与专科确认冷暴露安排；避免会引发症状的冷水活动，不能把抗组胺药能压住风团理解为可以安全游泳。",
+          "en": "After a serious cold-triggered reaction, agree cold-exposure plans with the specialist. Avoid cold-water activities that trigger symptoms; controlling hives with an antihistamine does not establish that swimming is safe."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-02-cold-aad",
+            "locator": "Opening; How is cold urticaria diagnosed/treated (lines184-243)",
+            "assessment": "Avoid cold water that causes hives; serious previous reaction prompts rescue-medication assessment; antihistamine discussed for hives only."
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-cold-bad",
+            "locator": "Other urticarias > Cold urticaria (line64)",
+            "assessment": "Cold urticaria paragraph supports cold water-associated faintness and avoiding such swimming; also specifically asks patients to inform surgical teams for warming."
+          },
+          {
+            "source_id": "anaphylaxis-p0-aaaai",
+            "locator": "Symptoms; Important Reminder",
+            "assessment": "General urgent anaphylaxis recognition/rescue, not proof of subtype-specific epidemiology."
+          }
+        ]
       }
     ],
     "supports": [
@@ -2733,24 +3183,64 @@
         ],
         "relation": "supports",
         "assessment": "Specialist plan, device, consider not alone."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-cold-aad",
+        "source_metadata_sha256": "4defc8e73f6b49b0c6c1d209b5780dd66374d70279b4385fa2b73ad385b9706b",
+        "locator": "Opening; How is cold urticaria diagnosed/treated (lines184-243)",
+        "source_version": "Last updated 2024-12-18; 实际读取正文 How is cold urticaria diagnosed/treated、Does cold urticaria go away 及文末版本和参考文献；网页行 184–248、267–292。",
+        "accessed_at": "2026-10-02",
+        "population": "美国公众资料；寒冷性荨麻疹患者，含儿童例子，不是全部寒冷暴露者。",
+        "region": "US",
+        "independence_group": "US-AAD",
+        "upstream_evidence": [
+          "AAD 自行署名编写和审核；不是 BAD 或 SFD 转载。引用既有病例、队列和综述，不能视作独立临床试验。"
+        ],
+        "relation": "supports",
+        "assessment": "Avoid cold water that causes hives; serious previous reaction prompts rescue-medication assessment; antihistamine discussed for hives only."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-cold-bad",
+        "source_metadata_sha256": "373f20ee32080e2300afb294d527dffc862da6ecff8691a0d526029b5f562ef4",
+        "locator": "Other urticarias > Cold urticaria (line64)",
+        "source_version": "关联官方 PDF 标示 June 2020；在线页本次未见更明确修订日期，不用爬取日期冒充版本。; 实际读取 Other urticarias > Cold urticaria，网页行 59–69；同时读取前文以识别适用边界。",
+        "accessed_at": "2026-10-02",
+        "population": "英国公众；各型荨麻疹，寒冷小节适用于寒冷性荨麻疹。",
+        "region": "GB",
+        "independence_group": "UK-BAD",
+        "upstream_evidence": [
+          "BAD 原始公众页，与 AAD/SFD 分属不同编写机构；未证明底层研究完全独立。官方 PDF 与此页属同源，不计双源。"
+        ],
+        "relation": "supports",
+        "assessment": "Cold urticaria paragraph supports cold water-associated faintness and avoiding such swimming; also specifically asks patients to inform surgical teams for warming."
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "rationale": "独立编写机构及同机构和共同上游关系见每条support；本作者绑定待独立审核，不表示独立临床试验。",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "regional_difference",
-      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+      "resolution": "Retain existing regional differences in rescue devices, observation and referral. Added US conditional indefinite-VIT guidance and German/Austrian prolonged/permanent option are stated separately. Cold exposure and perioperative advice is population-specific, with no universal dose or prophylaxis prescription."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/priority_medical_rules",
-      "reviewer": "/root/mi_icd_scope",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_allergy",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "anaphylaxis-nhs",
+        "anaphylaxis-p0-02-cold-aad",
+        "anaphylaxis-p0-02-cold-bad",
+        "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
+        "anaphylaxis-p0-02-mast-ascia",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
+        "anaphylaxis-p0-02-mast-jtf2023",
+        "anaphylaxis-p0-02-mast-orphan",
         "anaphylaxis-p0-aaaai",
         "anaphylaxis-p0-acaai-test",
         "anaphylaxis-p0-adam",
@@ -2763,36 +3253,42 @@
         "anaphylaxis-p0-foodtest",
         "anaphylaxis-p0-intolerance",
         "anaphylaxis-p0-mcas",
-        "anaphylaxis-p0-ontario-bls",
         "anaphylaxis-p0-pregnancy",
         "anaphylaxis-p0-rcuk",
         "anaphylaxis-p0-venom",
-        "anaphylaxis-p0-wao",
-        "anaphylaxis-p0-wms"
+        "anaphylaxis-p0-wao"
       ],
       "findings": [
         {
-          "id": "P0-ANA-NO-VOMITING",
+          "id": "diet-action",
           "status": "resolved",
-          "claim_ids": [
-            "treatment-3"
-          ],
-          "resolution": "Added independently written WMS official summary corroborating RCUK no-induced-vomiting clause. WAO is retained only for trigger removal and immediate rescue; no false clause attribution."
+          "finding": "Temperature diary instruction was classified as explanation.",
+          "resolution": "Author changed to action; AAD and SFD independently establish the temperature/history clue. Diary wording is a low-risk practical implementation of history taking, not a tested treatment outcome."
         },
         {
-          "id": "P0-ANA-ORAL-SAFETY",
+          "id": "sfd-specific-url",
           "status": "resolved",
-          "claim_ids": [
-            "medications-2"
-          ],
-          "resolution": "Added Ontario professional Patient Management item9 as scoped corroboration of ADAM public breathing-difficulty instruction. Its BLS/ALS exceptions remain explicit; no universal oral ban is inferred."
+          "finding": "SFD link did not point directly to the perioperative advice.",
+          "resolution": "Exact associated-measures URL and metadata bindings corrected; In Case of Surgery independently reread."
+        },
+        {
+          "id": "unreadable-original-routes",
+          "status": "resolved",
+          "finding": "Dustri/SciELO and initial Orphan routes intermittently inaccessible during independent review.",
+          "resolution": "Same original DGAKI/SBA-ASBAI articles identified by DOI and reread through Europe PMC XML; Orphan original PDF retrieved from its official alternate route and relevant pages extracted. Mirrors do not count as new sources."
+        },
+        {
+          "id": "dispute-enum",
+          "status": "resolved",
+          "finding": "Author used resolved as dispute status, outside the data contract.",
+          "resolution": "Independent reviewer adjudicates regional_difference using the retained international conditions and explicitly differing VIT recommendations. Apply this review decision when accepting the records; do not alter medical text or weaken the validator."
         }
       ],
-      "resolution": "All64 bilingual claims have adequate claim-specific support for a lay encyclopedia. The two precise safety-action bindings were completed then reviewed; the medical wording remained unchanged. No remaining substantive evidence or bilingual issue. ICD semantic mapping and clinical sign-off are outside this review."
+      "resolution": "All 11 added claims retain appropriate population, trigger and action scope in both languages. Added text does not change existing numeric rescue/observation/product thresholds. Shared upstream guidance is disclosed; independent editorial corroboration is not independent trial replication. Cold local hives are not anaphylaxis; anaphylaxis in an established mast-cell disorder is not all MCAS or all symptoms. No unsupported home testing, dosing or perioperative premedication added."
     },
     "unresolved_questions": [],
-    "content_sha256": "5366108e452027778d175d673eb1018f67c1fb7459b36f00667464fbc6d1c622",
-    "review_report": "reports/p0-anaphylaxis-independent.json"
+    "content_sha256": "43b4bd4bba71bd8043a06ce780fad1977bcba6e6327917181479e9871529df7e",
+    "review_report": "reports/p0-02-anaphylaxis-independent.json"
   },
   {
     "id": "p0-01-anaphylaxis-special_populations",
@@ -2803,8 +3299,8 @@
     },
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/mi_icd_scope",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "claims": [
@@ -2917,6 +3413,36 @@
           }
         ],
         "id": "special_populations-4"
+      },
+      {
+        "id": "p0-02-special_populations-8",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "系统性肥大细胞增多症可以没有典型皮肤病变；这类患者发生严重反应时也可能以血压下降或晕厥为主，而没有明显风团。不能靠皮肤看起来正常来排除危险。",
+          "en": "Systemic mastocytosis can occur without typical skin lesions. Anaphylaxis in these patients may chiefly cause low blood pressure or collapse without obvious hives. Normal-looking skin does not exclude danger."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-02-mast-jtf2023",
+            "locator": "Clinical Presentation, printed pp38-39 / PDF indices37-38",
+            "assessment": "Hypotension/syncope predominate, urticaria less frequent, absence of characteristic skin lesions does not rule out mastocytosis."
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-mast-orphan",
+            "locator": "PDF p1 Definition: with or without skin involvement",
+            "assessment": "Supports absence of chronic skin lesions in systemic disease; does not independently support all acute symptom-frequency claims."
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-mast-algorithm",
+            "locator": "Main text line172",
+            "assessment": "Explicitly describes hypotension often without skin involvement during surgery; perioperative corroboration only, not incidence outside surgery."
+          },
+          {
+            "source_id": "anaphylaxis-p0-aaaai",
+            "locator": "Symptoms; Important Reminder",
+            "assessment": "General urgent anaphylaxis recognition/rescue, not proof of subtype-specific epidemiology."
+          }
+        ]
       }
     ],
     "supports": [
@@ -3039,24 +3565,94 @@
         ],
         "relation": "supports",
         "assessment": "Multiple diagnostic criteria and objective mediator changes."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-mast-jtf2023",
+        "source_metadata_sha256": "04e3fbc7ff688a3a6c8586f03cc8100bf34bd0b922bff923959a452dd30d0173",
+        "locator": "Clinical Presentation, printed pp38-39 / PDF indices37-38",
+        "source_version": "2023; 学会托管 53 页 ARTICLE IN PRESS 版本; 实际读取印刷页 36–39（PDF 索引 35–38）Mast Cell Disorders and Anaphylaxis、建议 38–42、Clinical Presentation、MCAS 和特殊治疗；提取行 3042–3347。",
+        "accessed_at": "2026-10-02",
+        "population": "美国实践参数；系统性肥大细胞增多症、严重虫蜇及反复原因不明反应，部分依据来自欧洲人群。",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "AAAAI 与 ACAAI 联合文件算一个来源；托管 PDF 不是另一份独立资料。表 25 沿用 Valent 2021 共识；具体虫毒建议使用既有队列/指南，不是新试验。"
+        ],
+        "relation": "supports",
+        "assessment": "Hypotension/syncope predominate, urticaria less frequent, absence of characteristic skin lesions does not rule out mastocytosis."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-mast-orphan",
+        "source_metadata_sha256": "8f6121bff276d128fb08ccee3a62d1660976378478e31cc3643d23069ab635c8",
+        "locator": "PDF p1 Definition: with or without skin involvement",
+        "source_version": "English file listed 2022-08-08; DOI10.19224/ai2021.s266; actual read: PDF p1 Definition; pp2-3 Triggers/Treatment; pp6-7 Type of anaesthesia/Anamnesis",
+        "accessed_at": "2026-10-02",
+        "population": "Systemic mastocytosis during anaesthesia",
+        "region": "DE",
+        "independence_group": "DE-OrphanAnesthesia",
+        "upstream_evidence": [
+          "Independent clinical recommendation; shares ENDA/EAACI2015 and perioperative case-series evidence; not independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Supports absence of chronic skin lesions in systemic disease; does not independently support all acute symptom-frequency claims."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-mast-algorithm",
+        "source_metadata_sha256": "b4173da4ad84dffaf644460c1ae7f5732053cf143413088424c9e15e45666ae8",
+        "locator": "Main text line172",
+        "source_version": "2021-05-05; Allergy76:3233-3235; actual read: Text lines152-175; individual plan165; hypotension without skin172",
+        "accessed_at": "2026-10-02",
+        "population": "Perioperative mastocytosis, not HAT alone",
+        "region": "NL",
+        "independence_group": "NL-UMCG",
+        "upstream_evidence": [
+          "Original clinical algorithm explicitly based on AAAAI2019, ENDA/EAACI2015, Dewachter2014 and REMA2015; independent writing, shared upstream."
+        ],
+        "relation": "supports",
+        "assessment": "Explicitly describes hypotension often without skin involvement during surgery; perioperative corroboration only, not incidence outside surgery."
+      },
+      {
+        "source_id": "anaphylaxis-p0-aaaai",
+        "source_metadata_sha256": "9c56777ec46db0d8646d6c494ed98403a194439f61e80a6354318d688cdc9806",
+        "locator": "Management",
+        "source_version": "Updated 2026-08-13; Overview; Symptoms and diagnosis; Treatment and management",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "School/work/camp contacts and training."
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "rationale": "独立编写机构及同机构和共同上游关系见每条support；本作者绑定待独立审核，不表示独立临床试验。",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "regional_difference",
-      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+      "resolution": "Retain existing regional differences in rescue devices, observation and referral. Added US conditional indefinite-VIT guidance and German/Austrian prolonged/permanent option are stated separately. Cold exposure and perioperative advice is population-specific, with no universal dose or prophylaxis prescription."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/priority_medical_rules",
-      "reviewer": "/root/mi_icd_scope",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_allergy",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "anaphylaxis-nhs",
+        "anaphylaxis-p0-02-cold-aad",
+        "anaphylaxis-p0-02-cold-bad",
+        "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
+        "anaphylaxis-p0-02-mast-ascia",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
+        "anaphylaxis-p0-02-mast-jtf2023",
+        "anaphylaxis-p0-02-mast-orphan",
         "anaphylaxis-p0-aaaai",
         "anaphylaxis-p0-acaai-test",
         "anaphylaxis-p0-adam",
@@ -3069,36 +3665,42 @@
         "anaphylaxis-p0-foodtest",
         "anaphylaxis-p0-intolerance",
         "anaphylaxis-p0-mcas",
-        "anaphylaxis-p0-ontario-bls",
         "anaphylaxis-p0-pregnancy",
         "anaphylaxis-p0-rcuk",
         "anaphylaxis-p0-venom",
-        "anaphylaxis-p0-wao",
-        "anaphylaxis-p0-wms"
+        "anaphylaxis-p0-wao"
       ],
       "findings": [
         {
-          "id": "P0-ANA-NO-VOMITING",
+          "id": "diet-action",
           "status": "resolved",
-          "claim_ids": [
-            "treatment-3"
-          ],
-          "resolution": "Added independently written WMS official summary corroborating RCUK no-induced-vomiting clause. WAO is retained only for trigger removal and immediate rescue; no false clause attribution."
+          "finding": "Temperature diary instruction was classified as explanation.",
+          "resolution": "Author changed to action; AAD and SFD independently establish the temperature/history clue. Diary wording is a low-risk practical implementation of history taking, not a tested treatment outcome."
         },
         {
-          "id": "P0-ANA-ORAL-SAFETY",
+          "id": "sfd-specific-url",
           "status": "resolved",
-          "claim_ids": [
-            "medications-2"
-          ],
-          "resolution": "Added Ontario professional Patient Management item9 as scoped corroboration of ADAM public breathing-difficulty instruction. Its BLS/ALS exceptions remain explicit; no universal oral ban is inferred."
+          "finding": "SFD link did not point directly to the perioperative advice.",
+          "resolution": "Exact associated-measures URL and metadata bindings corrected; In Case of Surgery independently reread."
+        },
+        {
+          "id": "unreadable-original-routes",
+          "status": "resolved",
+          "finding": "Dustri/SciELO and initial Orphan routes intermittently inaccessible during independent review.",
+          "resolution": "Same original DGAKI/SBA-ASBAI articles identified by DOI and reread through Europe PMC XML; Orphan original PDF retrieved from its official alternate route and relevant pages extracted. Mirrors do not count as new sources."
+        },
+        {
+          "id": "dispute-enum",
+          "status": "resolved",
+          "finding": "Author used resolved as dispute status, outside the data contract.",
+          "resolution": "Independent reviewer adjudicates regional_difference using the retained international conditions and explicitly differing VIT recommendations. Apply this review decision when accepting the records; do not alter medical text or weaken the validator."
         }
       ],
-      "resolution": "All64 bilingual claims have adequate claim-specific support for a lay encyclopedia. The two precise safety-action bindings were completed then reviewed; the medical wording remained unchanged. No remaining substantive evidence or bilingual issue. ICD semantic mapping and clinical sign-off are outside this review."
+      "resolution": "All 11 added claims retain appropriate population, trigger and action scope in both languages. Added text does not change existing numeric rescue/observation/product thresholds. Shared upstream guidance is disclosed; independent editorial corroboration is not independent trial replication. Cold local hives are not anaphylaxis; anaphylaxis in an established mast-cell disorder is not all MCAS or all symptoms. No unsupported home testing, dosing or perioperative premedication added."
     },
     "unresolved_questions": [],
-    "content_sha256": "d1809a6a8f8794ecb2eb43903b678826c0153e0fdcf4ecd300852adee240a94f",
-    "review_report": "reports/p0-anaphylaxis-independent.json"
+    "content_sha256": "4dc4bdf5ae8f5b451df3452cb9299f18a7f006174d242411c2a70b4378835bdb",
+    "review_report": "reports/p0-02-anaphylaxis-independent.json"
   },
   {
     "id": "p0-01-anaphylaxis-prognosis_followup",
@@ -3109,8 +3711,8 @@
     },
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/mi_icd_scope",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "claims": [
@@ -3203,6 +3805,26 @@
           }
         ],
         "id": "prognosis_followup-3"
+      },
+      {
+        "id": "p0-02-prognosis_followup-9",
+        "kind": "action",
+        "text": {
+          "zh-CN": "肥大细胞增多症合并虫蜇严重过敏者，应与专科讨论虫毒免疫治疗的长期安排。美国指南建议持续治疗，德国/奥地利指南允许考虑长期或永久治疗；是否继续由专科个体评估，不能照搬普通疗程自行结束。",
+          "en": "People with mastocytosis and insect-sting anaphylaxis should discuss long-term venom immunotherapy with the specialist. US guidance suggests continuing indefinitely, while German/Austrian guidance allows prolonged or permanent treatment. Continued treatment needs individual specialist review rather than automatically stopping at a usual course length."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-02-mast-jtf2023",
+            "locator": "Recommendation42, printed p38 / PDF index37; strength conditional, certainty low",
+            "assessment": "Indefinite VIT specifically for mastocytosis with insect-sting anaphylaxis; candidate retains regional conditional advice."
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-mast-dgaki",
+            "locator": "Publisher abstract line140: prolonged/permanent VIT",
+            "assessment": "Publisher abstract explicitly allows prolonged/permanent VIT in mastocytosis; original guideline search text Box21 recommendation48 agrees. Not a universal duration."
+          }
+        ]
       }
     ],
     "supports": [
@@ -3310,24 +3932,64 @@
         ],
         "relation": "supports",
         "assessment": "Reassessment/outgrowing and no home challenge."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-mast-jtf2023",
+        "source_metadata_sha256": "04e3fbc7ff688a3a6c8586f03cc8100bf34bd0b922bff923959a452dd30d0173",
+        "locator": "Recommendation42, printed p38 / PDF index37; strength conditional, certainty low",
+        "source_version": "2023; 学会托管 53 页 ARTICLE IN PRESS 版本; 实际读取印刷页 36–39（PDF 索引 35–38）Mast Cell Disorders and Anaphylaxis、建议 38–42、Clinical Presentation、MCAS 和特殊治疗；提取行 3042–3347。",
+        "accessed_at": "2026-10-02",
+        "population": "美国实践参数；系统性肥大细胞增多症、严重虫蜇及反复原因不明反应，部分依据来自欧洲人群。",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "AAAAI 与 ACAAI 联合文件算一个来源；托管 PDF 不是另一份独立资料。表 25 沿用 Valent 2021 共识；具体虫毒建议使用既有队列/指南，不是新试验。"
+        ],
+        "relation": "supports",
+        "assessment": "Indefinite VIT specifically for mastocytosis with insect-sting anaphylaxis; candidate retains regional conditional advice."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-mast-dgaki",
+        "source_metadata_sha256": "2e3c75ee665e9c559600265e0905889ad61b7a762d26f02776399b40995169fb",
+        "locator": "Publisher abstract line140: prolonged/permanent VIT",
+        "source_version": "Allergol Select2023;7:154-190; 2023-10-02; actual read: Publisher abstract lines128-140, particularly prolonged/permanent VIT; PMC section5.7/Box21 search text also retrieved",
+        "accessed_at": "2026-10-02",
+        "population": "Venom allergy plus mastocytosis, not isolated sensitization",
+        "region": "DE-AT",
+        "independence_group": "DE-DGAKI",
+        "upstream_evidence": [
+          "Joint guideline one work; independent from US JTF but shared EAACI recommendations and observational studies. Direct PMC full-text open challenged; only publisher abstract claimed read."
+        ],
+        "relation": "supports",
+        "assessment": "Publisher abstract explicitly allows prolonged/permanent VIT in mastocytosis; original guideline search text Box21 recommendation48 agrees. Not a universal duration."
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "rationale": "独立编写机构及同机构和共同上游关系见每条support；本作者绑定待独立审核，不表示独立临床试验。",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "regional_difference",
-      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+      "resolution": "Retain existing regional differences in rescue devices, observation and referral. Added US conditional indefinite-VIT guidance and German/Austrian prolonged/permanent option are stated separately. Cold exposure and perioperative advice is population-specific, with no universal dose or prophylaxis prescription."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/priority_medical_rules",
-      "reviewer": "/root/mi_icd_scope",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_allergy",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "anaphylaxis-nhs",
+        "anaphylaxis-p0-02-cold-aad",
+        "anaphylaxis-p0-02-cold-bad",
+        "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
+        "anaphylaxis-p0-02-mast-ascia",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
+        "anaphylaxis-p0-02-mast-jtf2023",
+        "anaphylaxis-p0-02-mast-orphan",
         "anaphylaxis-p0-aaaai",
         "anaphylaxis-p0-acaai-test",
         "anaphylaxis-p0-adam",
@@ -3340,36 +4002,42 @@
         "anaphylaxis-p0-foodtest",
         "anaphylaxis-p0-intolerance",
         "anaphylaxis-p0-mcas",
-        "anaphylaxis-p0-ontario-bls",
         "anaphylaxis-p0-pregnancy",
         "anaphylaxis-p0-rcuk",
         "anaphylaxis-p0-venom",
-        "anaphylaxis-p0-wao",
-        "anaphylaxis-p0-wms"
+        "anaphylaxis-p0-wao"
       ],
       "findings": [
         {
-          "id": "P0-ANA-NO-VOMITING",
+          "id": "diet-action",
           "status": "resolved",
-          "claim_ids": [
-            "treatment-3"
-          ],
-          "resolution": "Added independently written WMS official summary corroborating RCUK no-induced-vomiting clause. WAO is retained only for trigger removal and immediate rescue; no false clause attribution."
+          "finding": "Temperature diary instruction was classified as explanation.",
+          "resolution": "Author changed to action; AAD and SFD independently establish the temperature/history clue. Diary wording is a low-risk practical implementation of history taking, not a tested treatment outcome."
         },
         {
-          "id": "P0-ANA-ORAL-SAFETY",
+          "id": "sfd-specific-url",
           "status": "resolved",
-          "claim_ids": [
-            "medications-2"
-          ],
-          "resolution": "Added Ontario professional Patient Management item9 as scoped corroboration of ADAM public breathing-difficulty instruction. Its BLS/ALS exceptions remain explicit; no universal oral ban is inferred."
+          "finding": "SFD link did not point directly to the perioperative advice.",
+          "resolution": "Exact associated-measures URL and metadata bindings corrected; In Case of Surgery independently reread."
+        },
+        {
+          "id": "unreadable-original-routes",
+          "status": "resolved",
+          "finding": "Dustri/SciELO and initial Orphan routes intermittently inaccessible during independent review.",
+          "resolution": "Same original DGAKI/SBA-ASBAI articles identified by DOI and reread through Europe PMC XML; Orphan original PDF retrieved from its official alternate route and relevant pages extracted. Mirrors do not count as new sources."
+        },
+        {
+          "id": "dispute-enum",
+          "status": "resolved",
+          "finding": "Author used resolved as dispute status, outside the data contract.",
+          "resolution": "Independent reviewer adjudicates regional_difference using the retained international conditions and explicitly differing VIT recommendations. Apply this review decision when accepting the records; do not alter medical text or weaken the validator."
         }
       ],
-      "resolution": "All64 bilingual claims have adequate claim-specific support for a lay encyclopedia. The two precise safety-action bindings were completed then reviewed; the medical wording remained unchanged. No remaining substantive evidence or bilingual issue. ICD semantic mapping and clinical sign-off are outside this review."
+      "resolution": "All 11 added claims retain appropriate population, trigger and action scope in both languages. Added text does not change existing numeric rescue/observation/product thresholds. Shared upstream guidance is disclosed; independent editorial corroboration is not independent trial replication. Cold local hives are not anaphylaxis; anaphylaxis in an established mast-cell disorder is not all MCAS or all symptoms. No unsupported home testing, dosing or perioperative premedication added."
     },
     "unresolved_questions": [],
-    "content_sha256": "276ffcc9950d77bdccdbbe58eb3222e6f37e75c232773be29ecf99a57356f362",
-    "review_report": "reports/p0-anaphylaxis-independent.json"
+    "content_sha256": "742583caf96b6b65f2180f260e408914f452de8dccaf7a3d8e0b5b61abb35703",
+    "review_report": "reports/p0-02-anaphylaxis-independent.json"
   },
   {
     "id": "p0-01-anaphylaxis-complications",
@@ -3621,8 +4289,8 @@
     },
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/mi_icd_scope",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "claims": [
@@ -3715,6 +4383,51 @@
           }
         ],
         "id": "prevention-3"
+      },
+      {
+        "id": "p0-02-prevention-10",
+        "kind": "action",
+        "text": {
+          "zh-CN": "寒冷性荨麻疹者，手术前告诉团队受冷反应史，以便安排保温措施。",
+          "en": "If you have cold urticaria, tell the surgical team about cold reactions so that warming precautions can be arranged."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-02-cold-bad",
+            "locator": "Other urticarias > Cold urticaria (line64)",
+            "assessment": "Cold urticaria paragraph supports cold water-associated faintness and avoiding such swimming; also specifically asks patients to inform surgical teams for warming."
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-cold-sfd",
+            "locator": "https://reco.sfdermato.org/en/guidelines-cold-ulticaria/associated-measures > In Case of Surgery, line60",
+            "assessment": "Inform anaesthetist and plan temperature management in cold urticaria."
+          }
+        ]
+      },
+      {
+        "id": "p0-02-prevention-11",
+        "kind": "action",
+        "text": {
+          "zh-CN": "已知有系统性肥大细胞增多症，接受麻醉或手术前应告知团队既往反应和已知诱因；团队会据此安排药物、温度及其他刺激的个体方案。术前用药方案不宜自行照搬。",
+          "en": "With known systemic mastocytosis, tell the team about previous reactions and known triggers before anaesthesia or surgery. The team can plan medicines, temperature and other exposures individually; do not copy a premedication regimen on your own."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-02-mast-orphan",
+            "locator": "PDF pp6-7 Type of anaesthesia; Anamnesis",
+            "assessment": "Individual multidisciplinary planning and documentation of earlier triggers/reactions."
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-mast-brazil",
+            "locator": "Preoperative assessment lines360-369; Mastocytosis lines383-390",
+            "assessment": "Pre-existing mastocytosis assessment; temperature/pressure/anxiety considerations, not a universal premedication recipe."
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-mast-algorithm",
+            "locator": "Main text line165",
+            "assessment": "Individual plan considering previous events, medicines and perioperative care."
+          }
+        ]
       }
     ],
     "supports": [
@@ -3837,24 +4550,109 @@
         ],
         "relation": "supports",
         "assessment": "School/work/camp contacts and training."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-cold-bad",
+        "source_metadata_sha256": "373f20ee32080e2300afb294d527dffc862da6ecff8691a0d526029b5f562ef4",
+        "locator": "Other urticarias > Cold urticaria (line64)",
+        "source_version": "关联官方 PDF 标示 June 2020；在线页本次未见更明确修订日期，不用爬取日期冒充版本。; 实际读取 Other urticarias > Cold urticaria，网页行 59–69；同时读取前文以识别适用边界。",
+        "accessed_at": "2026-10-02",
+        "population": "英国公众；各型荨麻疹，寒冷小节适用于寒冷性荨麻疹。",
+        "region": "GB",
+        "independence_group": "UK-BAD",
+        "upstream_evidence": [
+          "BAD 原始公众页，与 AAD/SFD 分属不同编写机构；未证明底层研究完全独立。官方 PDF 与此页属同源，不计双源。"
+        ],
+        "relation": "supports",
+        "assessment": "Cold urticaria paragraph supports cold water-associated faintness and avoiding such swimming; also specifically asks patients to inform surgical teams for warming."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-cold-sfd",
+        "source_metadata_sha256": "18f83a5ea3030e9a20444c2436021cd1457bf213ec6ca5689608ebed099fd112",
+        "locator": "https://reco.sfdermato.org/en/guidelines-cold-ulticaria/associated-measures > In Case of Surgery, line60",
+        "source_version": "Guideline updated September 2024; page last updated 2026-01-19. Actual read on 2026-10-02: Associated Measures > Cold Desensitization, Therapeutic Education, In Case of Surgery (line60), Professional Context; lines42-63. Algorithm is same-source context, not a second independent source.",
+        "accessed_at": "2026-10-02",
+        "population": "法国医疗体系；疑似或确诊寒冷性荨麻疹；急救装置分支限定既往严重反应或口咽/喉症状。",
+        "region": "FR",
+        "independence_group": "FR-SFD",
+        "upstream_evidence": [
+          "法国学会工作组指导，与 AAD/BAD 独立编辑；算法、附加措施和 2024 BJD 推荐是一个来源家族，不能计三份独立证据。打开的 bjd.pdf 只有文献书目信息，并未读到论文全文，不能用作已读正文证据。"
+        ],
+        "relation": "supports",
+        "assessment": "Inform anaesthetist and plan temperature management in cold urticaria."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-mast-orphan",
+        "source_metadata_sha256": "8f6121bff276d128fb08ccee3a62d1660976378478e31cc3643d23069ab635c8",
+        "locator": "PDF pp6-7 Type of anaesthesia; Anamnesis",
+        "source_version": "English file listed 2022-08-08; DOI10.19224/ai2021.s266; actual read: PDF p1 Definition; pp2-3 Triggers/Treatment; pp6-7 Type of anaesthesia/Anamnesis",
+        "accessed_at": "2026-10-02",
+        "population": "Systemic mastocytosis during anaesthesia",
+        "region": "DE",
+        "independence_group": "DE-OrphanAnesthesia",
+        "upstream_evidence": [
+          "Independent clinical recommendation; shares ENDA/EAACI2015 and perioperative case-series evidence; not independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Individual multidisciplinary planning and documentation of earlier triggers/reactions."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-mast-brazil",
+        "source_metadata_sha256": "31766e89e6c30faec08624e5dffefedd3e38cc933f10232b3c0fcecb0dfdf374",
+        "locator": "Preoperative assessment lines360-369; Mastocytosis lines383-390",
+        "source_version": "Joint2020 document; journal2021; actual read: Preoperative assessment lines360-369; Mastocytosis lines383-390",
+        "accessed_at": "2026-10-02",
+        "population": "Mastocytosis in perioperative care",
+        "region": "BR",
+        "independence_group": "BR-SBA-ASBAI",
+        "upstream_evidence": [
+          "Co-publications one document; shares ENDA/EAACI2015 and expert literature with OrphanAnesthesia, separately written advice."
+        ],
+        "relation": "supports",
+        "assessment": "Pre-existing mastocytosis assessment; temperature/pressure/anxiety considerations, not a universal premedication recipe."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-mast-algorithm",
+        "source_metadata_sha256": "b4173da4ad84dffaf644460c1ae7f5732053cf143413088424c9e15e45666ae8",
+        "locator": "Main text line165",
+        "source_version": "2021-05-05; Allergy76:3233-3235; actual read: Text lines152-175; individual plan165; hypotension without skin172",
+        "accessed_at": "2026-10-02",
+        "population": "Perioperative mastocytosis, not HAT alone",
+        "region": "NL",
+        "independence_group": "NL-UMCG",
+        "upstream_evidence": [
+          "Original clinical algorithm explicitly based on AAAAI2019, ENDA/EAACI2015, Dewachter2014 and REMA2015; independent writing, shared upstream."
+        ],
+        "relation": "supports",
+        "assessment": "Individual plan considering previous events, medicines and perioperative care."
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "rationale": "独立编写机构及同机构和共同上游关系见每条support；本作者绑定待独立审核，不表示独立临床试验。",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "regional_difference",
-      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+      "resolution": "Retain existing regional differences in rescue devices, observation and referral. Added US conditional indefinite-VIT guidance and German/Austrian prolonged/permanent option are stated separately. Cold exposure and perioperative advice is population-specific, with no universal dose or prophylaxis prescription."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/priority_medical_rules",
-      "reviewer": "/root/mi_icd_scope",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_allergy",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "anaphylaxis-nhs",
+        "anaphylaxis-p0-02-cold-aad",
+        "anaphylaxis-p0-02-cold-bad",
+        "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
+        "anaphylaxis-p0-02-mast-ascia",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
+        "anaphylaxis-p0-02-mast-jtf2023",
+        "anaphylaxis-p0-02-mast-orphan",
         "anaphylaxis-p0-aaaai",
         "anaphylaxis-p0-acaai-test",
         "anaphylaxis-p0-adam",
@@ -3867,35 +4665,41 @@
         "anaphylaxis-p0-foodtest",
         "anaphylaxis-p0-intolerance",
         "anaphylaxis-p0-mcas",
-        "anaphylaxis-p0-ontario-bls",
         "anaphylaxis-p0-pregnancy",
         "anaphylaxis-p0-rcuk",
         "anaphylaxis-p0-venom",
-        "anaphylaxis-p0-wao",
-        "anaphylaxis-p0-wms"
+        "anaphylaxis-p0-wao"
       ],
       "findings": [
         {
-          "id": "P0-ANA-NO-VOMITING",
+          "id": "diet-action",
           "status": "resolved",
-          "claim_ids": [
-            "treatment-3"
-          ],
-          "resolution": "Added independently written WMS official summary corroborating RCUK no-induced-vomiting clause. WAO is retained only for trigger removal and immediate rescue; no false clause attribution."
+          "finding": "Temperature diary instruction was classified as explanation.",
+          "resolution": "Author changed to action; AAD and SFD independently establish the temperature/history clue. Diary wording is a low-risk practical implementation of history taking, not a tested treatment outcome."
         },
         {
-          "id": "P0-ANA-ORAL-SAFETY",
+          "id": "sfd-specific-url",
           "status": "resolved",
-          "claim_ids": [
-            "medications-2"
-          ],
-          "resolution": "Added Ontario professional Patient Management item9 as scoped corroboration of ADAM public breathing-difficulty instruction. Its BLS/ALS exceptions remain explicit; no universal oral ban is inferred."
+          "finding": "SFD link did not point directly to the perioperative advice.",
+          "resolution": "Exact associated-measures URL and metadata bindings corrected; In Case of Surgery independently reread."
+        },
+        {
+          "id": "unreadable-original-routes",
+          "status": "resolved",
+          "finding": "Dustri/SciELO and initial Orphan routes intermittently inaccessible during independent review.",
+          "resolution": "Same original DGAKI/SBA-ASBAI articles identified by DOI and reread through Europe PMC XML; Orphan original PDF retrieved from its official alternate route and relevant pages extracted. Mirrors do not count as new sources."
+        },
+        {
+          "id": "dispute-enum",
+          "status": "resolved",
+          "finding": "Author used resolved as dispute status, outside the data contract.",
+          "resolution": "Independent reviewer adjudicates regional_difference using the retained international conditions and explicitly differing VIT recommendations. Apply this review decision when accepting the records; do not alter medical text or weaken the validator."
         }
       ],
-      "resolution": "All64 bilingual claims have adequate claim-specific support for a lay encyclopedia. The two precise safety-action bindings were completed then reviewed; the medical wording remained unchanged. No remaining substantive evidence or bilingual issue. ICD semantic mapping and clinical sign-off are outside this review."
+      "resolution": "All 11 added claims retain appropriate population, trigger and action scope in both languages. Added text does not change existing numeric rescue/observation/product thresholds. Shared upstream guidance is disclosed; independent editorial corroboration is not independent trial replication. Cold local hives are not anaphylaxis; anaphylaxis in an established mast-cell disorder is not all MCAS or all symptoms. No unsupported home testing, dosing or perioperative premedication added."
     },
     "unresolved_questions": [],
-    "content_sha256": "2cf28a72d6d7922fd363ad50d97984115f8c99509398443ebbb0d40708b012b1",
-    "review_report": "reports/p0-anaphylaxis-independent.json"
+    "content_sha256": "c96464a19a285ec2c9c32c2ece407e7b9dcd6420fdf3e2fa2dbcc5e9e49e5627",
+    "review_report": "reports/p0-02-anaphylaxis-independent.json"
   }
 ]

@@ -6,11 +6,11 @@
       "id": "meningitis",
       "section": "summary"
     },
-    "content_sha256": "20541354a8fb8f1d8c46f08305ccbc8a64327b8ab2dd6585989beed0ce1f1ca4",
+    "content_sha256": "bc75ec9284a63deba1bb78522f29273b25e559613097403f5377601815d8babc",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/retinal_targeted",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_maternal",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -115,6 +115,38 @@
         ],
         "relation": "supports",
         "assessment": "summary-1: Symptoms and infant differences."
+      },
+      {
+        "source_id": "meningitis-cdc-viral-meningitis",
+        "source_metadata_sha256": "da71693d6be7bd34297de6af0c9e3d902525c65f30b0bbcf9b0abb4554f2aee6",
+        "locator": "Risk factors: Close contacts are not likely to develop meningitis",
+        "source_version": "2025-09-09",
+        "accessed_at": "2026-09-30",
+        "population": "General patient education; exact age, cause and risk scope is recorded per claim.",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "WHO facts/guideline/mirrors are one group; NIH hosts do not make WHO independent. CDC pages are one group, MSD editions one group, Mayo pages one group. Independent editorial authorship is not independent trial replication.",
+          "NIH cryptococcosis panel includes CDC/IDSA representation and cites WHO/trials; label HIV cryptococcosis scope and shared upstream evidence. MSD TB cites ATS/CDC/IDSA; FDA/CDC food safety share upstream evidence. RCH uses published pediatric guidance.",
+          "LPT policy is locally authored/ratified IPC guidance, not a second CDC URL; its review date has passed but expiry has not. Only its viral-contact distinction is used and checked against current CDC."
+        ],
+        "relation": "supports",
+        "assessment": "causes_risks-2: Direct official CDC distinction corroborated by locally authored LPT policy p9; contacts may acquire the virus without usually developing meningitis. No zero-risk claim."
+      },
+      {
+        "source_id": "meningitis-cdc-haemophilus",
+        "source_metadata_sha256": "e33ab41a1df965389c6a587c6aa202734f4c4c236ae7b38ad0ad1e4aee322c38",
+        "locator": "Cause; Types; Prevention / Chemoprophylaxis and Vaccination; Diagnosis (lines 31-111)",
+        "source_version": "2025-09-22",
+        "accessed_at": "2026-10-02",
+        "population": "Scope conditional on named pathogen; general public unless specified per claim.",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "All CDC pages count as one editorial group; 2025 overview cites Oliver et al. MMWR 2023 and Blain et al. 2014. Non-b secondary transmission possible; old ACIP claim of no documented transmission not used."
+        ],
+        "relation": "supports",
+        "assessment": "Supports only the named additions identified in the claim inventory, not every statement in this section."
       }
     ],
     "claims": [
@@ -182,155 +214,97 @@
             "assessment": "Symptoms alone cannot reliably distinguish bacterial and viral disease."
           }
         ]
+      },
+      {
+        "id": "p0-02-summary-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "这里也包括肠道病毒性脑膜炎和流感嗜血杆菌性脑膜炎。流感嗜血杆菌是细菌，有不同类型；Hib只是其中的b型，不能用Hib代表全部流感嗜血杆菌感染。",
+          "en": "This page also covers enteroviral meningitis and meningitis caused by Haemophilus influenzae. H. influenzae is a bacterium with several types; Hib is only type b and does not represent every H. influenzae infection."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-cdc-viral-meningitis",
+            "locator": "What it is; Risk factors; Prevention; Treatment and recovery (lines 32-124)",
+            "assessment": "Named virus and bacterial species scope; CDC distinguishes a-f and nontypeable strains. Explanation only, not a diagnosis or treatment claim."
+          },
+          {
+            "source_id": "meningitis-cdc-haemophilus",
+            "locator": "Cause; Types; Prevention / Chemoprophylaxis and Vaccination; Diagnosis (lines 31-111)",
+            "assessment": "Named virus and bacterial species scope; CDC distinguishes a-f and nontypeable strains. Explanation only, not a diagnosis or treatment claim."
+          }
+        ]
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Actual writing groups and claim-specific scope are recorded. Practical communication and ordinary explanatory clauses may use one direct source; emergency actions, treatment safety and thresholds retain independent support. Attributed WHO/NICE timing differences are not manufactured into identical thresholds.",
+      "rationale": "Baseline author groups preserved. Added NSW Health, CDC and UKHSA are distinct authors. All CDC pages one group; Healthdirect enterovirus not used because it cites NSW and CDC. UKHSA/CDC may share historical US contact studies.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "none",
-      "resolution": "Jurisdiction and guideline population retained; hearing timing anchors differ. Author candidate synthesis, pending independent review."
+      "resolution": "No new contradictory recommendation asserted; diagnosis and treatment remain pathogen-conditional."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/mi_icd_scope",
-      "reviewer": "/root/retinal_targeted",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_p0_maternal",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
-        "meningitis-adam-tb",
         "meningitis-cdc-bacterial-meningitis",
-        "meningitis-cdc-food-cold",
         "meningitis-cdc-fungal-meningitis",
+        "meningitis-cdc-haemophilus",
         "meningitis-cdc-index",
         "meningitis-cdc-listeria",
         "meningitis-cdc-listeria-symptoms",
         "meningitis-cdc-surveillance",
-        "meningitis-cdc-tb-adverse",
         "meningitis-cdc-viral-meningitis",
         "meningitis-fda-listeria",
         "meningitis-healthdirect",
-        "meningitis-healthdirect-vomiting",
         "meningitis-lpt-viral-policy",
-        "meningitis-mayo-anaphylaxis",
         "meningitis-mayo-causes",
-        "meningitis-mayo-infant-feeding",
-        "meningitis-mayo-migraine",
         "meningitis-mayo-treatment",
         "meningitis-msd-acute",
         "meningitis-msd-tb",
         "meningitis-msd-viral",
         "meningitis-nhs",
-        "meningitis-nhs-antibiotics",
-        "meningitis-nhs-migraine",
-        "meningitis-nhs-sah",
-        "meningitis-nhs-vomiting",
         "meningitis-nice-ng240",
         "meningitis-nice-tb",
         "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
         "meningitis-nsw-meningococcal",
         "meningitis-rch-clinical",
-        "meningitis-rch-dehydration",
         "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
         "meningitis-who",
         "meningitis-who-guideline"
       ],
       "findings": [
         {
-          "id": "M01",
+          "id": "MEN-P002-01",
           "status": "resolved",
-          "resolution": "CDC and independently written LPT p9 corroborate virus acquisition versus meningitis; stale single-source assessment corrected."
+          "claim_id": "p0-02-treatment-haemophilus",
+          "finding": "原先应按急性细菌路径处理并按检测调整是行动，却标explanation且仅CDC菌种说明。",
+          "resolution": "作者删除行动部分，仅保留H.influenzae脑膜炎属于细菌性脑膜炎的分类解释；实际核对最终中英正文及claim均已删除，未通过降级标签绕过双源。既有细菌治疗主张及支持保持。"
         },
         {
-          "id": "M02",
+          "id": "MEN-P002-02",
           "status": "resolved",
-          "resolution": "Inherited emergency conclusions unchanged; neither rash nor complete symptom set required."
+          "claim_id": "p0-02-prevention-6",
+          "finding": "新增Hib疫苗保护范围句按explanation单源支持，存在疗效边界分类不足。",
+          "resolution": "作者删除该新增句及claim；保留原已审核疫苗预防部分和菌种/b型范围解释，未宣称全种疫苗保护。最终正文与claims确认不存在该新增句。"
         },
         {
-          "id": "M03",
+          "id": "MEN-P002-03",
           "status": "resolved",
-          "resolution": "Inherited removal of unsupported forced-neck maneuver remains intact."
-        },
-        {
-          "id": "M04",
-          "status": "resolved",
-          "resolution": "Practical communication checklist is not a validated diagnostic score; no mechanical second-source requirement."
-        },
-        {
-          "id": "M05",
-          "status": "resolved",
-          "resolution": "WHO A.3 negative blood-marker limit; A.1.1/A.4 stabilization and selective imaging corroborate NICE. No delay to antibiotics preserved."
-        },
-        {
-          "id": "M06",
-          "status": "resolved",
-          "resolution": "MSD TB independently corroborates distinct multidrug meningeal treatment; NIH HIV-specific cryptococcosis confirms immune-dependent duration. NICE specialist routing is bounded service guidance, not an unsupported efficacy threshold."
-        },
-        {
-          "id": "M07",
-          "status": "resolved",
-          "resolution": "NHS ordinary flu/gastroenteritis resemblance needs no duplicated wording. NHS SAH supports bleed example; NSW independently confirms meningitis and/or septicemia. Emergency actions remain corroborated."
-        },
-        {
-          "id": "M08",
-          "status": "resolved",
-          "resolution": "MSD/RCH/WHO give component-specific empiric selection and support-care evidence. NHS hospital fluids/oxygen and pediatric RCH seizure management read. CDC directly describes immune-risk viral hospital care; MSD offers complementary severe-illness/immune context, not fake exact second rule. Conditional hospital review is accepted within strongly corroborated emergency pathway."
-        },
-        {
-          "id": "M09",
-          "status": "resolved",
-          "resolution": "Revised infant-feeding wording checked against Mayo infant warning and NHS/RCH age-relevant illness assessment; adult Healthdirect limitation retained. Recordkeeping is practical support."
-        },
-        {
-          "id": "M10",
-          "status": "resolved",
-          "resolution": "CDC technical P8 supplies exact cold-growth mechanism, with FDA coauthorship/shared upstream disclosed. Distinct technical and patient writings are not represented as independent experiments."
-        },
-        {
-          "id": "M11",
-          "status": "resolved",
-          "resolution": "Chinese over-one-month boundary now matches English and WHO scope. WHO and NICE hearing clocks and strength remain explicitly attributed differences; no invented identical global deadline."
-        },
-        {
-          "id": "M12",
-          "status": "resolved",
-          "resolution": "Regional vaccination/prophylaxis scope stays bounded; UKHSA contact passage corroborates existing meningococcal contact action without exporting temporary Kent outbreak schedules."
-        },
-        {
-          "id": "P0-M13",
-          "status": "resolved",
-          "claims": [
-            "causes_risks-3"
-          ],
-          "resolution": "NSW functional spleen and NICE1.1.8/1.1.14 added precisely."
-        },
-        {
-          "id": "P0-M14",
-          "status": "resolved",
-          "claims": [
-            "special_populations-2"
-          ],
-          "resolution": "NHS chemotherapy and CDC post-transplant medicines explicitly bound, with Mayo mechanism complementary."
-        },
-        {
-          "id": "P0-M15",
-          "status": "resolved",
-          "claims": [
-            "special_populations-3"
-          ],
-          "resolution": "New actual-read CDC maternal symptoms passage supplies precise second writing alongside FDA; common upstream acknowledged."
-        },
-        {
-          "id": "P0-M16",
-          "status": "resolved",
-          "resolution": "Added the already reviewed CDC Listeria symptoms source to condition.source_ids; citation-list closure only. Section text and ledger/source hashes unchanged."
+          "finding": "集成前完整model.validate发现article.source_ids遗漏3个section新来源。前次section-level审查未覆盖此article linkage不变量。",
+          "resolution": "作者仅以所有section来源排序并集重建article.source_ids；排除此字段后的canonical hash完全相同，records/sources哈希不变；隔离内存替换候选并加入新来源后model.validate通过。"
         }
       ],
-      "resolution": "Accepted for the described bilingual overview and14 sections; earlier partial evidence gaps resolved with actual component-specific reads or accepted bounded ordinary/practical statements. No claim is downgraded to evade a dangerous-action requirement."
+      "resolution": "一轮独立复读发现两项主张分类/证据问题，作者已缩窄并删除相应新增内容，随后只对两项修正和最终绑定做定向复查。最终可接受为AI独立编辑核验；真实医师签审仍false。两末级类别的确认建议绑定本报告最终canonical哈希，由主线程按冻结分类核对后落映射；此报告本身不修改覆盖或部署。"
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-meningitis-independent.json"
+    "review_report": "reports/p0-02-meningitis-independent.json"
   },
   {
     "id": "p0-01-meningitis-causes_risks",
@@ -339,11 +313,11 @@
       "id": "meningitis",
       "section": "causes_risks"
     },
-    "content_sha256": "c486967ecbc99134215d1422bee1ab5a367abd760dc62fd0e0a0b8941632a46f",
+    "content_sha256": "48e8e52d14bc02681c723b32149660ad8ee7bae27f65bd5b5b38c9cb67072d0c",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/retinal_targeted",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_maternal",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -533,6 +507,38 @@
         ],
         "relation": "supports",
         "assessment": "causes_risks-1: Respiratory secretions and asymptomatic carriage."
+      },
+      {
+        "source_id": "meningitis-nsw-enterovirus",
+        "source_metadata_sha256": "9dd3c8cb63bdff5de34133b83416b95deec8370f8824d16a5e8f473a0ffa4ead",
+        "locator": "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)",
+        "source_version": "2018-05-23",
+        "accessed_at": "2026-10-02",
+        "population": "Scope conditional on named pathogen; general public unless specified per claim.",
+        "region": "AU",
+        "independence_group": "AU-NSW-HEALTH",
+        "upstream_evidence": [
+          "Independent NSW Health authored factsheet; old 2018 version used only for stable biology and general supportive care. NSW and CDC are explicit upstream sources of Healthdirect enterovirus content, so Healthdirect is not counted again."
+        ],
+        "relation": "supports",
+        "assessment": "Supports only the named additions identified in the claim inventory, not every statement in this section."
+      },
+      {
+        "source_id": "meningitis-msd-viral",
+        "source_metadata_sha256": "23c20299f6d05145646aa68f5d7207ae29f17812770c8b37bea6e568740d0234",
+        "locator": "Treatment, lines119–134",
+        "source_version": "No exact displayed update date",
+        "accessed_at": "2026-10-02",
+        "population": "Full review/update September 2026. Read Symptoms, Diagnosis, Treatment and Prognosis: immediate treatment if very ill, antiviral exceptions, recovery in people with normal immunity. No claim it independently gives CDC’s full immune-risk hospitalization rule.",
+        "region": "US",
+        "independence_group": "MSD-MERCK",
+        "relation": "supports",
+        "assessment": "treatment-3: Supports immediate clinician treatment of very ill patients, antiviral exceptions, symptom care and spontaneous recovery with normal immunity. CDC is the direct source for the immune-risk admission clause; this source is not misrepresented as that exact hospital-admission rule.",
+        "upstream_evidence": [
+          "WHO facts/guideline/mirrors are one group; NIH hosts do not make WHO independent. CDC pages are one group, MSD editions one group, Mayo pages one group. Independent editorial authorship is not independent trial replication.",
+          "NIH cryptococcosis panel includes CDC/IDSA representation and cites WHO/trials; label HIV cryptococcosis scope and shared upstream evidence. MSD TB cites ATS/CDC/IDSA; FDA/CDC food safety share upstream evidence. RCH uses published pediatric guidance.",
+          "LPT policy is locally authored/ratified IPC guidance, not a second CDC URL; its review date has passed but expiry has not. Only its viral-contact distinction is used and checked against current CDC."
+        ]
       }
     ],
     "claims": [
@@ -650,155 +656,102 @@
             "assessment": "Fungal disease, immune risk and noncontagiousness."
           }
         ]
+      },
+      {
+        "id": "p0-02-causes_risks-5",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "肠道病毒是一组病毒，可通过感染者的粪便、唾液或呼吸道分泌物，以及被污染的手和物品传播。感染肠道病毒不等于一定患脑膜炎。",
+          "en": "Enteroviruses are a group of viruses spread through infected stool, saliva or respiratory secretions, and contaminated hands or objects. Having an enterovirus infection does not mean that meningitis will necessarily develop."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-nsw-enterovirus",
+            "locator": "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)",
+            "assessment": "NSW specifies transmission and mostly mild/asymptomatic infection; CDC distinguishes infection of contacts from meningitis; MSD independently describes enterovirus stool transmission."
+          },
+          {
+            "source_id": "meningitis-cdc-viral-meningitis",
+            "locator": "What it is; Risk factors; Prevention; Treatment and recovery (lines 32-124)",
+            "assessment": "NSW specifies transmission and mostly mild/asymptomatic infection; CDC distinguishes infection of contacts from meningitis; MSD independently describes enterovirus stool transmission."
+          },
+          {
+            "source_id": "meningitis-msd-viral",
+            "locator": "Causes / Transmission; Diagnosis; Treatment (September 2026, lines 59-134)",
+            "assessment": "NSW specifies transmission and mostly mild/asymptomatic infection; CDC distinguishes infection of contacts from meningitis; MSD independently describes enterovirus stool transmission."
+          }
+        ]
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Actual writing groups and claim-specific scope are recorded. Practical communication and ordinary explanatory clauses may use one direct source; emergency actions, treatment safety and thresholds retain independent support. Attributed WHO/NICE timing differences are not manufactured into identical thresholds.",
+      "rationale": "Baseline author groups preserved. Added NSW Health, CDC and UKHSA are distinct authors. All CDC pages one group; Healthdirect enterovirus not used because it cites NSW and CDC. UKHSA/CDC may share historical US contact studies.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "none",
-      "resolution": "Jurisdiction and guideline population retained; hearing timing anchors differ. Author candidate synthesis, pending independent review."
+      "resolution": "No new contradictory recommendation asserted; diagnosis and treatment remain pathogen-conditional."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/mi_icd_scope",
-      "reviewer": "/root/retinal_targeted",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_p0_maternal",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
-        "meningitis-adam-tb",
         "meningitis-cdc-bacterial-meningitis",
-        "meningitis-cdc-food-cold",
         "meningitis-cdc-fungal-meningitis",
+        "meningitis-cdc-haemophilus",
         "meningitis-cdc-index",
         "meningitis-cdc-listeria",
         "meningitis-cdc-listeria-symptoms",
         "meningitis-cdc-surveillance",
-        "meningitis-cdc-tb-adverse",
         "meningitis-cdc-viral-meningitis",
         "meningitis-fda-listeria",
         "meningitis-healthdirect",
-        "meningitis-healthdirect-vomiting",
         "meningitis-lpt-viral-policy",
-        "meningitis-mayo-anaphylaxis",
         "meningitis-mayo-causes",
-        "meningitis-mayo-infant-feeding",
-        "meningitis-mayo-migraine",
         "meningitis-mayo-treatment",
         "meningitis-msd-acute",
         "meningitis-msd-tb",
         "meningitis-msd-viral",
         "meningitis-nhs",
-        "meningitis-nhs-antibiotics",
-        "meningitis-nhs-migraine",
-        "meningitis-nhs-sah",
-        "meningitis-nhs-vomiting",
         "meningitis-nice-ng240",
         "meningitis-nice-tb",
         "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
         "meningitis-nsw-meningococcal",
         "meningitis-rch-clinical",
-        "meningitis-rch-dehydration",
         "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
         "meningitis-who",
         "meningitis-who-guideline"
       ],
       "findings": [
         {
-          "id": "M01",
+          "id": "MEN-P002-01",
           "status": "resolved",
-          "resolution": "CDC and independently written LPT p9 corroborate virus acquisition versus meningitis; stale single-source assessment corrected."
+          "claim_id": "p0-02-treatment-haemophilus",
+          "finding": "原先应按急性细菌路径处理并按检测调整是行动，却标explanation且仅CDC菌种说明。",
+          "resolution": "作者删除行动部分，仅保留H.influenzae脑膜炎属于细菌性脑膜炎的分类解释；实际核对最终中英正文及claim均已删除，未通过降级标签绕过双源。既有细菌治疗主张及支持保持。"
         },
         {
-          "id": "M02",
+          "id": "MEN-P002-02",
           "status": "resolved",
-          "resolution": "Inherited emergency conclusions unchanged; neither rash nor complete symptom set required."
+          "claim_id": "p0-02-prevention-6",
+          "finding": "新增Hib疫苗保护范围句按explanation单源支持，存在疗效边界分类不足。",
+          "resolution": "作者删除该新增句及claim；保留原已审核疫苗预防部分和菌种/b型范围解释，未宣称全种疫苗保护。最终正文与claims确认不存在该新增句。"
         },
         {
-          "id": "M03",
+          "id": "MEN-P002-03",
           "status": "resolved",
-          "resolution": "Inherited removal of unsupported forced-neck maneuver remains intact."
-        },
-        {
-          "id": "M04",
-          "status": "resolved",
-          "resolution": "Practical communication checklist is not a validated diagnostic score; no mechanical second-source requirement."
-        },
-        {
-          "id": "M05",
-          "status": "resolved",
-          "resolution": "WHO A.3 negative blood-marker limit; A.1.1/A.4 stabilization and selective imaging corroborate NICE. No delay to antibiotics preserved."
-        },
-        {
-          "id": "M06",
-          "status": "resolved",
-          "resolution": "MSD TB independently corroborates distinct multidrug meningeal treatment; NIH HIV-specific cryptococcosis confirms immune-dependent duration. NICE specialist routing is bounded service guidance, not an unsupported efficacy threshold."
-        },
-        {
-          "id": "M07",
-          "status": "resolved",
-          "resolution": "NHS ordinary flu/gastroenteritis resemblance needs no duplicated wording. NHS SAH supports bleed example; NSW independently confirms meningitis and/or septicemia. Emergency actions remain corroborated."
-        },
-        {
-          "id": "M08",
-          "status": "resolved",
-          "resolution": "MSD/RCH/WHO give component-specific empiric selection and support-care evidence. NHS hospital fluids/oxygen and pediatric RCH seizure management read. CDC directly describes immune-risk viral hospital care; MSD offers complementary severe-illness/immune context, not fake exact second rule. Conditional hospital review is accepted within strongly corroborated emergency pathway."
-        },
-        {
-          "id": "M09",
-          "status": "resolved",
-          "resolution": "Revised infant-feeding wording checked against Mayo infant warning and NHS/RCH age-relevant illness assessment; adult Healthdirect limitation retained. Recordkeeping is practical support."
-        },
-        {
-          "id": "M10",
-          "status": "resolved",
-          "resolution": "CDC technical P8 supplies exact cold-growth mechanism, with FDA coauthorship/shared upstream disclosed. Distinct technical and patient writings are not represented as independent experiments."
-        },
-        {
-          "id": "M11",
-          "status": "resolved",
-          "resolution": "Chinese over-one-month boundary now matches English and WHO scope. WHO and NICE hearing clocks and strength remain explicitly attributed differences; no invented identical global deadline."
-        },
-        {
-          "id": "M12",
-          "status": "resolved",
-          "resolution": "Regional vaccination/prophylaxis scope stays bounded; UKHSA contact passage corroborates existing meningococcal contact action without exporting temporary Kent outbreak schedules."
-        },
-        {
-          "id": "P0-M13",
-          "status": "resolved",
-          "claims": [
-            "causes_risks-3"
-          ],
-          "resolution": "NSW functional spleen and NICE1.1.8/1.1.14 added precisely."
-        },
-        {
-          "id": "P0-M14",
-          "status": "resolved",
-          "claims": [
-            "special_populations-2"
-          ],
-          "resolution": "NHS chemotherapy and CDC post-transplant medicines explicitly bound, with Mayo mechanism complementary."
-        },
-        {
-          "id": "P0-M15",
-          "status": "resolved",
-          "claims": [
-            "special_populations-3"
-          ],
-          "resolution": "New actual-read CDC maternal symptoms passage supplies precise second writing alongside FDA; common upstream acknowledged."
-        },
-        {
-          "id": "P0-M16",
-          "status": "resolved",
-          "resolution": "Added the already reviewed CDC Listeria symptoms source to condition.source_ids; citation-list closure only. Section text and ledger/source hashes unchanged."
+          "finding": "集成前完整model.validate发现article.source_ids遗漏3个section新来源。前次section-level审查未覆盖此article linkage不变量。",
+          "resolution": "作者仅以所有section来源排序并集重建article.source_ids；排除此字段后的canonical hash完全相同，records/sources哈希不变；隔离内存替换候选并加入新来源后model.validate通过。"
         }
       ],
-      "resolution": "Accepted for the described bilingual overview and14 sections; earlier partial evidence gaps resolved with actual component-specific reads or accepted bounded ordinary/practical statements. No claim is downgraded to evade a dangerous-action requirement."
+      "resolution": "一轮独立复读发现两项主张分类/证据问题，作者已缩窄并删除相应新增内容，随后只对两项修正和最终绑定做定向复查。最终可接受为AI独立编辑核验；真实医师签审仍false。两末级类别的确认建议绑定本报告最终canonical哈希，由主线程按冻结分类核对后落映射；此报告本身不修改覆盖或部署。"
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-meningitis-independent.json"
+    "review_report": "reports/p0-02-meningitis-independent.json"
   },
   {
     "id": "p0-01-meningitis-red_flags",
@@ -1499,11 +1452,11 @@
       "id": "meningitis",
       "section": "diagnosis"
     },
-    "content_sha256": "57145b1be87ba60b57e5dff815c28ca5baa186c218a2413ef9371c7eba251aa3",
+    "content_sha256": "a2a664e67d362dc4dfef0eae1b69497cec724edd0291dcb64cddae57f848db99",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/retinal_targeted",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_maternal",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -1608,6 +1561,53 @@
         ],
         "relation": "supports",
         "assessment": "diagnosis-2: Newly read WHO-authored indexed recommendation directly supports the negative blood-marker limitation independently of NICE. Mayo supports culture/PCR purposes only; WHO and NICE support the limitation. WHO scope is children over one month/adults with acute community-acquired disease. diagnosis-3: New WHO text explicitly requires stabilization for hemodynamic/respiratory compromise and selective imaging for low consciousness/focal findings; treatment must not wait. No bedside cutoff or full contraindication checklist is exported to readers."
+      },
+      {
+        "source_id": "meningitis-msd-viral",
+        "source_metadata_sha256": "23c20299f6d05145646aa68f5d7207ae29f17812770c8b37bea6e568740d0234",
+        "locator": "Treatment, lines119–134",
+        "source_version": "No exact displayed update date",
+        "accessed_at": "2026-10-02",
+        "population": "Full review/update September 2026. Read Symptoms, Diagnosis, Treatment and Prognosis: immediate treatment if very ill, antiviral exceptions, recovery in people with normal immunity. No claim it independently gives CDC’s full immune-risk hospitalization rule.",
+        "region": "US",
+        "independence_group": "MSD-MERCK",
+        "relation": "supports",
+        "assessment": "treatment-3: Supports immediate clinician treatment of very ill patients, antiviral exceptions, symptom care and spontaneous recovery with normal immunity. CDC is the direct source for the immune-risk admission clause; this source is not misrepresented as that exact hospital-admission rule.",
+        "upstream_evidence": [
+          "WHO facts/guideline/mirrors are one group; NIH hosts do not make WHO independent. CDC pages are one group, MSD editions one group, Mayo pages one group. Independent editorial authorship is not independent trial replication.",
+          "NIH cryptococcosis panel includes CDC/IDSA representation and cites WHO/trials; label HIV cryptococcosis scope and shared upstream evidence. MSD TB cites ATS/CDC/IDSA; FDA/CDC food safety share upstream evidence. RCH uses published pediatric guidance.",
+          "LPT policy is locally authored/ratified IPC guidance, not a second CDC URL; its review date has passed but expiry has not. Only its viral-contact distinction is used and checked against current CDC."
+        ]
+      },
+      {
+        "source_id": "meningitis-nsw-enterovirus",
+        "source_metadata_sha256": "9dd3c8cb63bdff5de34133b83416b95deec8370f8824d16a5e8f473a0ffa4ead",
+        "locator": "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)",
+        "source_version": "2018-05-23",
+        "accessed_at": "2026-10-02",
+        "population": "Scope conditional on named pathogen; general public unless specified per claim.",
+        "region": "AU",
+        "independence_group": "AU-NSW-HEALTH",
+        "upstream_evidence": [
+          "Independent NSW Health authored factsheet; old 2018 version used only for stable biology and general supportive care. NSW and CDC are explicit upstream sources of Healthdirect enterovirus content, so Healthdirect is not counted again."
+        ],
+        "relation": "supports",
+        "assessment": "Supports only the named additions identified in the claim inventory, not every statement in this section."
+      },
+      {
+        "source_id": "meningitis-cdc-haemophilus",
+        "source_metadata_sha256": "e33ab41a1df965389c6a587c6aa202734f4c4c236ae7b38ad0ad1e4aee322c38",
+        "locator": "Cause; Types; Prevention / Chemoprophylaxis and Vaccination; Diagnosis (lines 31-111)",
+        "source_version": "2025-09-22",
+        "accessed_at": "2026-10-02",
+        "population": "Scope conditional on named pathogen; general public unless specified per claim.",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "All CDC pages count as one editorial group; 2025 overview cites Oliver et al. MMWR 2023 and Blain et al. 2014. Non-b secondary transmission possible; old ACIP claim of no documented transmission not used."
+        ],
+        "relation": "supports",
+        "assessment": "Supports only the named additions identified in the claim inventory, not every statement in this section."
       }
     ],
     "claims": [
@@ -1710,155 +1710,102 @@
             "assessment": "Independent current specialist text supports assessing raised-pressure/mass risk, imaging when indicated, and antibiotics before deferred LP/imaging. Does not independently supply every NICE respiratory-stabilization clause."
           }
         ]
+      },
+      {
+        "id": "p0-02-diagnosis-4",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "怀疑肠道病毒性脑膜炎时，医生可对脑脊液做PCR等检查来寻找病毒。流感嗜血杆菌感染可用培养或PCR等检测确认；进一步分清是否为Hib，有助公共卫生团队决定接触者措施。",
+          "en": "When enteroviral meningitis is suspected, clinicians may use PCR and other tests on cerebrospinal fluid to look for the virus. Culture or PCR can identify H. influenzae infection; determining whether it is Hib helps public-health teams decide contact measures."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-msd-viral",
+            "locator": "Causes / Transmission; Diagnosis; Treatment (September 2026, lines 59-134)",
+            "assessment": "MSD explicitly identifies enterovirus PCR in CSF work-up; NSW lists CSF testing; CDC explains culture/PCR and public-health role of serotype."
+          },
+          {
+            "source_id": "meningitis-nsw-enterovirus",
+            "locator": "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)",
+            "assessment": "MSD explicitly identifies enterovirus PCR in CSF work-up; NSW lists CSF testing; CDC explains culture/PCR and public-health role of serotype."
+          },
+          {
+            "source_id": "meningitis-cdc-haemophilus",
+            "locator": "Cause; Types; Prevention / Chemoprophylaxis and Vaccination; Diagnosis (lines 31-111)",
+            "assessment": "MSD explicitly identifies enterovirus PCR in CSF work-up; NSW lists CSF testing; CDC explains culture/PCR and public-health role of serotype."
+          }
+        ]
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Actual writing groups and claim-specific scope are recorded. Practical communication and ordinary explanatory clauses may use one direct source; emergency actions, treatment safety and thresholds retain independent support. Attributed WHO/NICE timing differences are not manufactured into identical thresholds.",
+      "rationale": "Baseline author groups preserved. Added NSW Health, CDC and UKHSA are distinct authors. All CDC pages one group; Healthdirect enterovirus not used because it cites NSW and CDC. UKHSA/CDC may share historical US contact studies.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "none",
-      "resolution": "Jurisdiction and guideline population retained; hearing timing anchors differ. Author candidate synthesis, pending independent review."
+      "resolution": "No new contradictory recommendation asserted; diagnosis and treatment remain pathogen-conditional."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/mi_icd_scope",
-      "reviewer": "/root/retinal_targeted",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_p0_maternal",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
-        "meningitis-adam-tb",
         "meningitis-cdc-bacterial-meningitis",
-        "meningitis-cdc-food-cold",
         "meningitis-cdc-fungal-meningitis",
+        "meningitis-cdc-haemophilus",
         "meningitis-cdc-index",
         "meningitis-cdc-listeria",
         "meningitis-cdc-listeria-symptoms",
         "meningitis-cdc-surveillance",
-        "meningitis-cdc-tb-adverse",
         "meningitis-cdc-viral-meningitis",
         "meningitis-fda-listeria",
         "meningitis-healthdirect",
-        "meningitis-healthdirect-vomiting",
         "meningitis-lpt-viral-policy",
-        "meningitis-mayo-anaphylaxis",
         "meningitis-mayo-causes",
-        "meningitis-mayo-infant-feeding",
-        "meningitis-mayo-migraine",
         "meningitis-mayo-treatment",
         "meningitis-msd-acute",
         "meningitis-msd-tb",
         "meningitis-msd-viral",
         "meningitis-nhs",
-        "meningitis-nhs-antibiotics",
-        "meningitis-nhs-migraine",
-        "meningitis-nhs-sah",
-        "meningitis-nhs-vomiting",
         "meningitis-nice-ng240",
         "meningitis-nice-tb",
         "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
         "meningitis-nsw-meningococcal",
         "meningitis-rch-clinical",
-        "meningitis-rch-dehydration",
         "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
         "meningitis-who",
         "meningitis-who-guideline"
       ],
       "findings": [
         {
-          "id": "M01",
+          "id": "MEN-P002-01",
           "status": "resolved",
-          "resolution": "CDC and independently written LPT p9 corroborate virus acquisition versus meningitis; stale single-source assessment corrected."
+          "claim_id": "p0-02-treatment-haemophilus",
+          "finding": "原先应按急性细菌路径处理并按检测调整是行动，却标explanation且仅CDC菌种说明。",
+          "resolution": "作者删除行动部分，仅保留H.influenzae脑膜炎属于细菌性脑膜炎的分类解释；实际核对最终中英正文及claim均已删除，未通过降级标签绕过双源。既有细菌治疗主张及支持保持。"
         },
         {
-          "id": "M02",
+          "id": "MEN-P002-02",
           "status": "resolved",
-          "resolution": "Inherited emergency conclusions unchanged; neither rash nor complete symptom set required."
+          "claim_id": "p0-02-prevention-6",
+          "finding": "新增Hib疫苗保护范围句按explanation单源支持，存在疗效边界分类不足。",
+          "resolution": "作者删除该新增句及claim；保留原已审核疫苗预防部分和菌种/b型范围解释，未宣称全种疫苗保护。最终正文与claims确认不存在该新增句。"
         },
         {
-          "id": "M03",
+          "id": "MEN-P002-03",
           "status": "resolved",
-          "resolution": "Inherited removal of unsupported forced-neck maneuver remains intact."
-        },
-        {
-          "id": "M04",
-          "status": "resolved",
-          "resolution": "Practical communication checklist is not a validated diagnostic score; no mechanical second-source requirement."
-        },
-        {
-          "id": "M05",
-          "status": "resolved",
-          "resolution": "WHO A.3 negative blood-marker limit; A.1.1/A.4 stabilization and selective imaging corroborate NICE. No delay to antibiotics preserved."
-        },
-        {
-          "id": "M06",
-          "status": "resolved",
-          "resolution": "MSD TB independently corroborates distinct multidrug meningeal treatment; NIH HIV-specific cryptococcosis confirms immune-dependent duration. NICE specialist routing is bounded service guidance, not an unsupported efficacy threshold."
-        },
-        {
-          "id": "M07",
-          "status": "resolved",
-          "resolution": "NHS ordinary flu/gastroenteritis resemblance needs no duplicated wording. NHS SAH supports bleed example; NSW independently confirms meningitis and/or septicemia. Emergency actions remain corroborated."
-        },
-        {
-          "id": "M08",
-          "status": "resolved",
-          "resolution": "MSD/RCH/WHO give component-specific empiric selection and support-care evidence. NHS hospital fluids/oxygen and pediatric RCH seizure management read. CDC directly describes immune-risk viral hospital care; MSD offers complementary severe-illness/immune context, not fake exact second rule. Conditional hospital review is accepted within strongly corroborated emergency pathway."
-        },
-        {
-          "id": "M09",
-          "status": "resolved",
-          "resolution": "Revised infant-feeding wording checked against Mayo infant warning and NHS/RCH age-relevant illness assessment; adult Healthdirect limitation retained. Recordkeeping is practical support."
-        },
-        {
-          "id": "M10",
-          "status": "resolved",
-          "resolution": "CDC technical P8 supplies exact cold-growth mechanism, with FDA coauthorship/shared upstream disclosed. Distinct technical and patient writings are not represented as independent experiments."
-        },
-        {
-          "id": "M11",
-          "status": "resolved",
-          "resolution": "Chinese over-one-month boundary now matches English and WHO scope. WHO and NICE hearing clocks and strength remain explicitly attributed differences; no invented identical global deadline."
-        },
-        {
-          "id": "M12",
-          "status": "resolved",
-          "resolution": "Regional vaccination/prophylaxis scope stays bounded; UKHSA contact passage corroborates existing meningococcal contact action without exporting temporary Kent outbreak schedules."
-        },
-        {
-          "id": "P0-M13",
-          "status": "resolved",
-          "claims": [
-            "causes_risks-3"
-          ],
-          "resolution": "NSW functional spleen and NICE1.1.8/1.1.14 added precisely."
-        },
-        {
-          "id": "P0-M14",
-          "status": "resolved",
-          "claims": [
-            "special_populations-2"
-          ],
-          "resolution": "NHS chemotherapy and CDC post-transplant medicines explicitly bound, with Mayo mechanism complementary."
-        },
-        {
-          "id": "P0-M15",
-          "status": "resolved",
-          "claims": [
-            "special_populations-3"
-          ],
-          "resolution": "New actual-read CDC maternal symptoms passage supplies precise second writing alongside FDA; common upstream acknowledged."
-        },
-        {
-          "id": "P0-M16",
-          "status": "resolved",
-          "resolution": "Added the already reviewed CDC Listeria symptoms source to condition.source_ids; citation-list closure only. Section text and ledger/source hashes unchanged."
+          "finding": "集成前完整model.validate发现article.source_ids遗漏3个section新来源。前次section-level审查未覆盖此article linkage不变量。",
+          "resolution": "作者仅以所有section来源排序并集重建article.source_ids；排除此字段后的canonical hash完全相同，records/sources哈希不变；隔离内存替换候选并加入新来源后model.validate通过。"
         }
       ],
-      "resolution": "Accepted for the described bilingual overview and14 sections; earlier partial evidence gaps resolved with actual component-specific reads or accepted bounded ordinary/practical statements. No claim is downgraded to evade a dangerous-action requirement."
+      "resolution": "一轮独立复读发现两项主张分类/证据问题，作者已缩窄并删除相应新增内容，随后只对两项修正和最终绑定做定向复查。最终可接受为AI独立编辑核验；真实医师签审仍false。两末级类别的确认建议绑定本报告最终canonical哈希，由主线程按冻结分类核对后落映射；此报告本身不修改覆盖或部署。"
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-meningitis-independent.json"
+    "review_report": "reports/p0-02-meningitis-independent.json"
   },
   {
     "id": "p0-01-meningitis-differentials",
@@ -2264,11 +2211,11 @@
       "id": "meningitis",
       "section": "treatment"
     },
-    "content_sha256": "7d0bffe2e1e5461abcee9eeaf4bc08dd6661bde89f5aaf5edaac9081882723bb",
+    "content_sha256": "37d7a02b8c192dbf72d2b0a4e71818d893654339e2a31568d96d39eaa7b17412",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/retinal_targeted",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_maternal",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -2492,6 +2439,70 @@
         ],
         "relation": "supports",
         "assessment": "treatment-2: Actual indexed WHO text supports oxygen for hypoxaemia/respiratory failure, hemodynamic support for shock, and IV fluids when enteral administration is not feasible. Support is conditional, not routine oxygen/bolus for everyone; seizure support is separately covered by Mayo/RCH. treatment-5: Explicit exclusion of TB and cryptococcal subacute/chronic meningitis; not evidence for their treatment."
+      },
+      {
+        "source_id": "meningitis-nsw-enterovirus",
+        "source_metadata_sha256": "9dd3c8cb63bdff5de34133b83416b95deec8370f8824d16a5e8f473a0ffa4ead",
+        "locator": "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)",
+        "source_version": "2018-05-23",
+        "accessed_at": "2026-10-02",
+        "population": "Scope conditional on named pathogen; general public unless specified per claim.",
+        "region": "AU",
+        "independence_group": "AU-NSW-HEALTH",
+        "upstream_evidence": [
+          "Independent NSW Health authored factsheet; old 2018 version used only for stable biology and general supportive care. NSW and CDC are explicit upstream sources of Healthdirect enterovirus content, so Healthdirect is not counted again."
+        ],
+        "relation": "supports",
+        "assessment": "Supports only the named additions identified in the claim inventory, not every statement in this section."
+      },
+      {
+        "source_id": "meningitis-cdc-haemophilus",
+        "source_metadata_sha256": "e33ab41a1df965389c6a587c6aa202734f4c4c236ae7b38ad0ad1e4aee322c38",
+        "locator": "Cause; Types; Prevention / Chemoprophylaxis and Vaccination; Diagnosis (lines 31-111)",
+        "source_version": "2025-09-22",
+        "accessed_at": "2026-10-02",
+        "population": "Scope conditional on named pathogen; general public unless specified per claim.",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "All CDC pages count as one editorial group; 2025 overview cites Oliver et al. MMWR 2023 and Blain et al. 2014. Non-b secondary transmission possible; old ACIP claim of no documented transmission not used."
+        ],
+        "relation": "supports",
+        "assessment": "Supports only the named additions identified in the claim inventory, not every statement in this section."
+      },
+      {
+        "source_id": "meningitis-cdc-bacterial-meningitis",
+        "source_metadata_sha256": "4c2b4e88a9cfba28cfabaf075b23f548bab2fb5bc0ef015fcd75d9fc6921046d",
+        "locator": "Risk factors",
+        "source_version": "2025-09-09",
+        "accessed_at": "2026-09-30",
+        "population": "General patient education; exact age, cause and risk scope is recorded per claim.",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "WHO facts/guideline/mirrors are one group; NIH hosts do not make WHO independent. CDC pages are one group, MSD editions one group, Mayo pages one group. Independent editorial authorship is not independent trial replication.",
+          "NIH cryptococcosis panel includes CDC/IDSA representation and cites WHO/trials; label HIV cryptococcosis scope and shared upstream evidence. MSD TB cites ATS/CDC/IDSA; FDA/CDC food safety share upstream evidence. RCH uses published pediatric guidance.",
+          "LPT policy is locally authored/ratified IPC guidance, not a second CDC URL; its review date has passed but expiry has not. Only its viral-contact distinction is used and checked against current CDC."
+        ],
+        "relation": "supports",
+        "assessment": "causes_risks-3: Age, medical conditions and group settings."
+      },
+      {
+        "source_id": "meningitis-who",
+        "source_metadata_sha256": "e95cef913c5d38d0cb65f58f60ee8c4dea9ea5848d0aab5806dc1b59374f2ce1",
+        "locator": "Signs and symptoms",
+        "source_version": "2026-09-29",
+        "accessed_at": "2026-09-30",
+        "population": "General patient education; exact age, cause and risk scope is recorded per claim.",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "WHO facts/guideline/mirrors are one group; NIH hosts do not make WHO independent. CDC pages are one group, MSD editions one group, Mayo pages one group. Independent editorial authorship is not independent trial replication.",
+          "NIH cryptococcosis panel includes CDC/IDSA representation and cites WHO/trials; label HIV cryptococcosis scope and shared upstream evidence. MSD TB cites ATS/CDC/IDSA; FDA/CDC food safety share upstream evidence. RCH uses published pediatric guidance.",
+          "LPT policy is locally authored/ratified IPC guidance, not a second CDC URL; its review date has passed but expiry has not. Only its viral-contact distinction is used and checked against current CDC."
+        ],
+        "relation": "supports",
+        "assessment": "summary-1: Symptoms and infant differences."
       }
     ],
     "claims": [
@@ -2669,155 +2680,112 @@
             "assessment": "Independent current text supports multiple-drug treatment and a distinct meningeal duration. No exact month count imported. NICE remains the direct source for referral to a TB specialist; WHO’s exclusion is attributed to its own scope, not a second TB guideline."
           }
         ]
+      },
+      {
+        "id": "p0-02-treatment-6",
+        "kind": "action",
+        "text": {
+          "zh-CN": "对已经查明的肠道病毒性脑膜炎，治疗通常以缓解症状和支持恢复为主，没有常规用于清除肠道病毒的特效药；这不表示尚未检查的人可以在家等待。",
+          "en": "For established enteroviral meningitis, treatment is usually supportive and relieves symptoms; there is no routine medicine that specifically clears enteroviruses. This does not mean that someone who has not been assessed should wait at home."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-nsw-enterovirus",
+            "locator": "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)",
+            "assessment": "NSW supportive-only enterovirus treatment and MSD non-herpes viral management; bacterial identity from CDC H. influenzae. General acute bacterial pathway inherited from accepted treatment claims."
+          },
+          {
+            "source_id": "meningitis-msd-viral",
+            "locator": "Causes / Transmission; Diagnosis; Treatment (September 2026, lines 59-134)",
+            "assessment": "NSW supportive-only enterovirus treatment and MSD non-herpes viral management; bacterial identity from CDC H. influenzae. General acute bacterial pathway inherited from accepted treatment claims."
+          }
+        ]
+      },
+      {
+        "id": "p0-02-treatment-haemophilus",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "流感嗜血杆菌性脑膜炎属于细菌性脑膜炎。",
+          "en": "H. influenzae meningitis is a form of bacterial meningitis."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-cdc-haemophilus",
+            "locator": "Cause; Types (lines 31-60)",
+            "assessment": "Bacterial identity and meningitis manifestation; unchanged general bacterial treatment pathway is supported by baseline treatment claims, not a new H. influenzae prescription."
+          }
+        ]
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Actual writing groups and claim-specific scope are recorded. Practical communication and ordinary explanatory clauses may use one direct source; emergency actions, treatment safety and thresholds retain independent support. Attributed WHO/NICE timing differences are not manufactured into identical thresholds.",
+      "rationale": "Baseline author groups preserved. Added NSW Health, CDC and UKHSA are distinct authors. All CDC pages one group; Healthdirect enterovirus not used because it cites NSW and CDC. UKHSA/CDC may share historical US contact studies.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "none",
-      "resolution": "Jurisdiction and guideline population retained; hearing timing anchors differ. Author candidate synthesis, pending independent review."
+      "resolution": "No new contradictory recommendation asserted; diagnosis and treatment remain pathogen-conditional."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/mi_icd_scope",
-      "reviewer": "/root/retinal_targeted",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_p0_maternal",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
-        "meningitis-adam-tb",
         "meningitis-cdc-bacterial-meningitis",
-        "meningitis-cdc-food-cold",
         "meningitis-cdc-fungal-meningitis",
+        "meningitis-cdc-haemophilus",
         "meningitis-cdc-index",
         "meningitis-cdc-listeria",
         "meningitis-cdc-listeria-symptoms",
         "meningitis-cdc-surveillance",
-        "meningitis-cdc-tb-adverse",
         "meningitis-cdc-viral-meningitis",
         "meningitis-fda-listeria",
         "meningitis-healthdirect",
-        "meningitis-healthdirect-vomiting",
         "meningitis-lpt-viral-policy",
-        "meningitis-mayo-anaphylaxis",
         "meningitis-mayo-causes",
-        "meningitis-mayo-infant-feeding",
-        "meningitis-mayo-migraine",
         "meningitis-mayo-treatment",
         "meningitis-msd-acute",
         "meningitis-msd-tb",
         "meningitis-msd-viral",
         "meningitis-nhs",
-        "meningitis-nhs-antibiotics",
-        "meningitis-nhs-migraine",
-        "meningitis-nhs-sah",
-        "meningitis-nhs-vomiting",
         "meningitis-nice-ng240",
         "meningitis-nice-tb",
         "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
         "meningitis-nsw-meningococcal",
         "meningitis-rch-clinical",
-        "meningitis-rch-dehydration",
         "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
         "meningitis-who",
         "meningitis-who-guideline"
       ],
       "findings": [
         {
-          "id": "M01",
+          "id": "MEN-P002-01",
           "status": "resolved",
-          "resolution": "CDC and independently written LPT p9 corroborate virus acquisition versus meningitis; stale single-source assessment corrected."
+          "claim_id": "p0-02-treatment-haemophilus",
+          "finding": "原先应按急性细菌路径处理并按检测调整是行动，却标explanation且仅CDC菌种说明。",
+          "resolution": "作者删除行动部分，仅保留H.influenzae脑膜炎属于细菌性脑膜炎的分类解释；实际核对最终中英正文及claim均已删除，未通过降级标签绕过双源。既有细菌治疗主张及支持保持。"
         },
         {
-          "id": "M02",
+          "id": "MEN-P002-02",
           "status": "resolved",
-          "resolution": "Inherited emergency conclusions unchanged; neither rash nor complete symptom set required."
+          "claim_id": "p0-02-prevention-6",
+          "finding": "新增Hib疫苗保护范围句按explanation单源支持，存在疗效边界分类不足。",
+          "resolution": "作者删除该新增句及claim；保留原已审核疫苗预防部分和菌种/b型范围解释，未宣称全种疫苗保护。最终正文与claims确认不存在该新增句。"
         },
         {
-          "id": "M03",
+          "id": "MEN-P002-03",
           "status": "resolved",
-          "resolution": "Inherited removal of unsupported forced-neck maneuver remains intact."
-        },
-        {
-          "id": "M04",
-          "status": "resolved",
-          "resolution": "Practical communication checklist is not a validated diagnostic score; no mechanical second-source requirement."
-        },
-        {
-          "id": "M05",
-          "status": "resolved",
-          "resolution": "WHO A.3 negative blood-marker limit; A.1.1/A.4 stabilization and selective imaging corroborate NICE. No delay to antibiotics preserved."
-        },
-        {
-          "id": "M06",
-          "status": "resolved",
-          "resolution": "MSD TB independently corroborates distinct multidrug meningeal treatment; NIH HIV-specific cryptococcosis confirms immune-dependent duration. NICE specialist routing is bounded service guidance, not an unsupported efficacy threshold."
-        },
-        {
-          "id": "M07",
-          "status": "resolved",
-          "resolution": "NHS ordinary flu/gastroenteritis resemblance needs no duplicated wording. NHS SAH supports bleed example; NSW independently confirms meningitis and/or septicemia. Emergency actions remain corroborated."
-        },
-        {
-          "id": "M08",
-          "status": "resolved",
-          "resolution": "MSD/RCH/WHO give component-specific empiric selection and support-care evidence. NHS hospital fluids/oxygen and pediatric RCH seizure management read. CDC directly describes immune-risk viral hospital care; MSD offers complementary severe-illness/immune context, not fake exact second rule. Conditional hospital review is accepted within strongly corroborated emergency pathway."
-        },
-        {
-          "id": "M09",
-          "status": "resolved",
-          "resolution": "Revised infant-feeding wording checked against Mayo infant warning and NHS/RCH age-relevant illness assessment; adult Healthdirect limitation retained. Recordkeeping is practical support."
-        },
-        {
-          "id": "M10",
-          "status": "resolved",
-          "resolution": "CDC technical P8 supplies exact cold-growth mechanism, with FDA coauthorship/shared upstream disclosed. Distinct technical and patient writings are not represented as independent experiments."
-        },
-        {
-          "id": "M11",
-          "status": "resolved",
-          "resolution": "Chinese over-one-month boundary now matches English and WHO scope. WHO and NICE hearing clocks and strength remain explicitly attributed differences; no invented identical global deadline."
-        },
-        {
-          "id": "M12",
-          "status": "resolved",
-          "resolution": "Regional vaccination/prophylaxis scope stays bounded; UKHSA contact passage corroborates existing meningococcal contact action without exporting temporary Kent outbreak schedules."
-        },
-        {
-          "id": "P0-M13",
-          "status": "resolved",
-          "claims": [
-            "causes_risks-3"
-          ],
-          "resolution": "NSW functional spleen and NICE1.1.8/1.1.14 added precisely."
-        },
-        {
-          "id": "P0-M14",
-          "status": "resolved",
-          "claims": [
-            "special_populations-2"
-          ],
-          "resolution": "NHS chemotherapy and CDC post-transplant medicines explicitly bound, with Mayo mechanism complementary."
-        },
-        {
-          "id": "P0-M15",
-          "status": "resolved",
-          "claims": [
-            "special_populations-3"
-          ],
-          "resolution": "New actual-read CDC maternal symptoms passage supplies precise second writing alongside FDA; common upstream acknowledged."
-        },
-        {
-          "id": "P0-M16",
-          "status": "resolved",
-          "resolution": "Added the already reviewed CDC Listeria symptoms source to condition.source_ids; citation-list closure only. Section text and ledger/source hashes unchanged."
+          "finding": "集成前完整model.validate发现article.source_ids遗漏3个section新来源。前次section-level审查未覆盖此article linkage不变量。",
+          "resolution": "作者仅以所有section来源排序并集重建article.source_ids；排除此字段后的canonical hash完全相同，records/sources哈希不变；隔离内存替换候选并加入新来源后model.validate通过。"
         }
       ],
-      "resolution": "Accepted for the described bilingual overview and14 sections; earlier partial evidence gaps resolved with actual component-specific reads or accepted bounded ordinary/practical statements. No claim is downgraded to evade a dangerous-action requirement."
+      "resolution": "一轮独立复读发现两项主张分类/证据问题，作者已缩窄并删除相应新增内容，随后只对两项修正和最终绑定做定向复查。最终可接受为AI独立编辑核验；真实医师签审仍false。两末级类别的确认建议绑定本报告最终canonical哈希，由主线程按冻结分类核对后落映射；此报告本身不修改覆盖或部署。"
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-meningitis-independent.json"
+    "review_report": "reports/p0-02-meningitis-independent.json"
   },
   {
     "id": "p0-01-meningitis-medications",
@@ -4030,11 +3998,11 @@
       "id": "meningitis",
       "section": "special_populations"
     },
-    "content_sha256": "ae52be2f1076ff26a35657bcbdf30fda7a366091756e6926201ce4d31047b807",
+    "content_sha256": "c341126101c668cbfdcc93dea8933606e77b5978201d4347a4fa31f1b3f4997f",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/retinal_targeted",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_maternal",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -4241,6 +4209,38 @@
         ],
         "relation": "supports",
         "assessment": "special_populations-1: Neonates excluded from acute guideline; neonatal pathway statement is a scope boundary, not a neonatal treatment protocol."
+      },
+      {
+        "source_id": "meningitis-nsw-enterovirus",
+        "source_metadata_sha256": "9dd3c8cb63bdff5de34133b83416b95deec8370f8824d16a5e8f473a0ffa4ead",
+        "locator": "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)",
+        "source_version": "2018-05-23",
+        "accessed_at": "2026-10-02",
+        "population": "Scope conditional on named pathogen; general public unless specified per claim.",
+        "region": "AU",
+        "independence_group": "AU-NSW-HEALTH",
+        "upstream_evidence": [
+          "Independent NSW Health authored factsheet; old 2018 version used only for stable biology and general supportive care. NSW and CDC are explicit upstream sources of Healthdirect enterovirus content, so Healthdirect is not counted again."
+        ],
+        "relation": "supports",
+        "assessment": "Supports only the named additions identified in the claim inventory, not every statement in this section."
+      },
+      {
+        "source_id": "meningitis-cdc-viral-meningitis",
+        "source_metadata_sha256": "da71693d6be7bd34297de6af0c9e3d902525c65f30b0bbcf9b0abb4554f2aee6",
+        "locator": "Risk factors: Close contacts are not likely to develop meningitis",
+        "source_version": "2025-09-09",
+        "accessed_at": "2026-09-30",
+        "population": "General patient education; exact age, cause and risk scope is recorded per claim.",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "WHO facts/guideline/mirrors are one group; NIH hosts do not make WHO independent. CDC pages are one group, MSD editions one group, Mayo pages one group. Independent editorial authorship is not independent trial replication.",
+          "NIH cryptococcosis panel includes CDC/IDSA representation and cites WHO/trials; label HIV cryptococcosis scope and shared upstream evidence. MSD TB cites ATS/CDC/IDSA; FDA/CDC food safety share upstream evidence. RCH uses published pediatric guidance.",
+          "LPT policy is locally authored/ratified IPC guidance, not a second CDC URL; its review date has passed but expiry has not. Only its viral-contact distinction is used and checked against current CDC."
+        ],
+        "relation": "supports",
+        "assessment": "causes_risks-2: Direct official CDC distinction corroborated by locally authored LPT policy p9; contacts may acquire the virus without usually developing meningitis. No zero-risk claim."
       }
     ],
     "claims": [
@@ -4353,155 +4353,97 @@
             "assessment": "Maternal illness is often mild or absent while fetal/newborn harms can be serious. Separately written from FDA education; common epidemiology is not independent trial replication."
           }
         ]
+      },
+      {
+        "id": "p0-02-special_populations-4",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "肠道病毒感染在婴幼儿和儿童中较常见，月龄很小的婴儿更容易出现严重病情。",
+          "en": "Enterovirus infection is common in infants and children, and very young babies are more vulnerable to severe illness."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-nsw-enterovirus",
+            "locator": "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)",
+            "assessment": "NSW identifies infants/children and very young babies; CDC identifies young children and babies below one month as severe viral-meningitis risk. Existing emergency-sign guidance remains applicable."
+          },
+          {
+            "source_id": "meningitis-cdc-viral-meningitis",
+            "locator": "What it is; Risk factors; Prevention; Treatment and recovery (lines 32-124)",
+            "assessment": "NSW identifies infants/children and very young babies; CDC identifies young children and babies below one month as severe viral-meningitis risk. Existing emergency-sign guidance remains applicable."
+          }
+        ]
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Actual writing groups and claim-specific scope are recorded. Practical communication and ordinary explanatory clauses may use one direct source; emergency actions, treatment safety and thresholds retain independent support. Attributed WHO/NICE timing differences are not manufactured into identical thresholds.",
+      "rationale": "Baseline author groups preserved. Added NSW Health, CDC and UKHSA are distinct authors. All CDC pages one group; Healthdirect enterovirus not used because it cites NSW and CDC. UKHSA/CDC may share historical US contact studies.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "none",
-      "resolution": "Jurisdiction and guideline population retained; hearing timing anchors differ. Author candidate synthesis, pending independent review."
+      "resolution": "No new contradictory recommendation asserted; diagnosis and treatment remain pathogen-conditional."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/mi_icd_scope",
-      "reviewer": "/root/retinal_targeted",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_p0_maternal",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
-        "meningitis-adam-tb",
         "meningitis-cdc-bacterial-meningitis",
-        "meningitis-cdc-food-cold",
         "meningitis-cdc-fungal-meningitis",
+        "meningitis-cdc-haemophilus",
         "meningitis-cdc-index",
         "meningitis-cdc-listeria",
         "meningitis-cdc-listeria-symptoms",
         "meningitis-cdc-surveillance",
-        "meningitis-cdc-tb-adverse",
         "meningitis-cdc-viral-meningitis",
         "meningitis-fda-listeria",
         "meningitis-healthdirect",
-        "meningitis-healthdirect-vomiting",
         "meningitis-lpt-viral-policy",
-        "meningitis-mayo-anaphylaxis",
         "meningitis-mayo-causes",
-        "meningitis-mayo-infant-feeding",
-        "meningitis-mayo-migraine",
         "meningitis-mayo-treatment",
         "meningitis-msd-acute",
         "meningitis-msd-tb",
         "meningitis-msd-viral",
         "meningitis-nhs",
-        "meningitis-nhs-antibiotics",
-        "meningitis-nhs-migraine",
-        "meningitis-nhs-sah",
-        "meningitis-nhs-vomiting",
         "meningitis-nice-ng240",
         "meningitis-nice-tb",
         "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
         "meningitis-nsw-meningococcal",
         "meningitis-rch-clinical",
-        "meningitis-rch-dehydration",
         "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
         "meningitis-who",
         "meningitis-who-guideline"
       ],
       "findings": [
         {
-          "id": "M01",
+          "id": "MEN-P002-01",
           "status": "resolved",
-          "resolution": "CDC and independently written LPT p9 corroborate virus acquisition versus meningitis; stale single-source assessment corrected."
+          "claim_id": "p0-02-treatment-haemophilus",
+          "finding": "原先应按急性细菌路径处理并按检测调整是行动，却标explanation且仅CDC菌种说明。",
+          "resolution": "作者删除行动部分，仅保留H.influenzae脑膜炎属于细菌性脑膜炎的分类解释；实际核对最终中英正文及claim均已删除，未通过降级标签绕过双源。既有细菌治疗主张及支持保持。"
         },
         {
-          "id": "M02",
+          "id": "MEN-P002-02",
           "status": "resolved",
-          "resolution": "Inherited emergency conclusions unchanged; neither rash nor complete symptom set required."
+          "claim_id": "p0-02-prevention-6",
+          "finding": "新增Hib疫苗保护范围句按explanation单源支持，存在疗效边界分类不足。",
+          "resolution": "作者删除该新增句及claim；保留原已审核疫苗预防部分和菌种/b型范围解释，未宣称全种疫苗保护。最终正文与claims确认不存在该新增句。"
         },
         {
-          "id": "M03",
+          "id": "MEN-P002-03",
           "status": "resolved",
-          "resolution": "Inherited removal of unsupported forced-neck maneuver remains intact."
-        },
-        {
-          "id": "M04",
-          "status": "resolved",
-          "resolution": "Practical communication checklist is not a validated diagnostic score; no mechanical second-source requirement."
-        },
-        {
-          "id": "M05",
-          "status": "resolved",
-          "resolution": "WHO A.3 negative blood-marker limit; A.1.1/A.4 stabilization and selective imaging corroborate NICE. No delay to antibiotics preserved."
-        },
-        {
-          "id": "M06",
-          "status": "resolved",
-          "resolution": "MSD TB independently corroborates distinct multidrug meningeal treatment; NIH HIV-specific cryptococcosis confirms immune-dependent duration. NICE specialist routing is bounded service guidance, not an unsupported efficacy threshold."
-        },
-        {
-          "id": "M07",
-          "status": "resolved",
-          "resolution": "NHS ordinary flu/gastroenteritis resemblance needs no duplicated wording. NHS SAH supports bleed example; NSW independently confirms meningitis and/or septicemia. Emergency actions remain corroborated."
-        },
-        {
-          "id": "M08",
-          "status": "resolved",
-          "resolution": "MSD/RCH/WHO give component-specific empiric selection and support-care evidence. NHS hospital fluids/oxygen and pediatric RCH seizure management read. CDC directly describes immune-risk viral hospital care; MSD offers complementary severe-illness/immune context, not fake exact second rule. Conditional hospital review is accepted within strongly corroborated emergency pathway."
-        },
-        {
-          "id": "M09",
-          "status": "resolved",
-          "resolution": "Revised infant-feeding wording checked against Mayo infant warning and NHS/RCH age-relevant illness assessment; adult Healthdirect limitation retained. Recordkeeping is practical support."
-        },
-        {
-          "id": "M10",
-          "status": "resolved",
-          "resolution": "CDC technical P8 supplies exact cold-growth mechanism, with FDA coauthorship/shared upstream disclosed. Distinct technical and patient writings are not represented as independent experiments."
-        },
-        {
-          "id": "M11",
-          "status": "resolved",
-          "resolution": "Chinese over-one-month boundary now matches English and WHO scope. WHO and NICE hearing clocks and strength remain explicitly attributed differences; no invented identical global deadline."
-        },
-        {
-          "id": "M12",
-          "status": "resolved",
-          "resolution": "Regional vaccination/prophylaxis scope stays bounded; UKHSA contact passage corroborates existing meningococcal contact action without exporting temporary Kent outbreak schedules."
-        },
-        {
-          "id": "P0-M13",
-          "status": "resolved",
-          "claims": [
-            "causes_risks-3"
-          ],
-          "resolution": "NSW functional spleen and NICE1.1.8/1.1.14 added precisely."
-        },
-        {
-          "id": "P0-M14",
-          "status": "resolved",
-          "claims": [
-            "special_populations-2"
-          ],
-          "resolution": "NHS chemotherapy and CDC post-transplant medicines explicitly bound, with Mayo mechanism complementary."
-        },
-        {
-          "id": "P0-M15",
-          "status": "resolved",
-          "claims": [
-            "special_populations-3"
-          ],
-          "resolution": "New actual-read CDC maternal symptoms passage supplies precise second writing alongside FDA; common upstream acknowledged."
-        },
-        {
-          "id": "P0-M16",
-          "status": "resolved",
-          "resolution": "Added the already reviewed CDC Listeria symptoms source to condition.source_ids; citation-list closure only. Section text and ledger/source hashes unchanged."
+          "finding": "集成前完整model.validate发现article.source_ids遗漏3个section新来源。前次section-level审查未覆盖此article linkage不变量。",
+          "resolution": "作者仅以所有section来源排序并集重建article.source_ids；排除此字段后的canonical hash完全相同，records/sources哈希不变；隔离内存替换候选并加入新来源后model.validate通过。"
         }
       ],
-      "resolution": "Accepted for the described bilingual overview and14 sections; earlier partial evidence gaps resolved with actual component-specific reads or accepted bounded ordinary/practical statements. No claim is downgraded to evade a dangerous-action requirement."
+      "resolution": "一轮独立复读发现两项主张分类/证据问题，作者已缩窄并删除相应新增内容，随后只对两项修正和最终绑定做定向复查。最终可接受为AI独立编辑核验；真实医师签审仍false。两末级类别的确认建议绑定本报告最终canonical哈希，由主线程按冻结分类核对后落映射；此报告本身不修改覆盖或部署。"
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-meningitis-independent.json"
+    "review_report": "reports/p0-02-meningitis-independent.json"
   },
   {
     "id": "p0-01-meningitis-prognosis_followup",
@@ -5307,11 +5249,11 @@
       "id": "meningitis",
       "section": "prevention"
     },
-    "content_sha256": "0cb1b2bc921587c36e45bb1eab22848bfb16e32d51fe6fd77deee22bebdf3939",
+    "content_sha256": "cc8937f80f9276cead0ed552f16c0a727a216cde9591bf840f3114ae0f657acc",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/retinal_targeted",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_maternal",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -5484,6 +5426,51 @@
         ],
         "relation": "supports",
         "assessment": "prevention-0: No universal vaccine. prevention-1: Bacterial causative organisms and vaccines. prevention-2: WHO broad vaccine recommendation scope. prevention-3: Meningococcal post-exposure prophylaxis."
+      },
+      {
+        "source_id": "meningitis-nsw-enterovirus",
+        "source_metadata_sha256": "9dd3c8cb63bdff5de34133b83416b95deec8370f8824d16a5e8f473a0ffa4ead",
+        "locator": "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)",
+        "source_version": "2018-05-23",
+        "accessed_at": "2026-10-02",
+        "population": "Scope conditional on named pathogen; general public unless specified per claim.",
+        "region": "AU",
+        "independence_group": "AU-NSW-HEALTH",
+        "upstream_evidence": [
+          "Independent NSW Health authored factsheet; old 2018 version used only for stable biology and general supportive care. NSW and CDC are explicit upstream sources of Healthdirect enterovirus content, so Healthdirect is not counted again."
+        ],
+        "relation": "supports",
+        "assessment": "Supports only the named additions identified in the claim inventory, not every statement in this section."
+      },
+      {
+        "source_id": "meningitis-cdc-haemophilus",
+        "source_metadata_sha256": "e33ab41a1df965389c6a587c6aa202734f4c4c236ae7b38ad0ad1e4aee322c38",
+        "locator": "Cause; Types; Prevention / Chemoprophylaxis and Vaccination; Diagnosis (lines 31-111)",
+        "source_version": "2025-09-22",
+        "accessed_at": "2026-10-02",
+        "population": "Scope conditional on named pathogen; general public unless specified per claim.",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "All CDC pages count as one editorial group; 2025 overview cites Oliver et al. MMWR 2023 and Blain et al. 2014. Non-b secondary transmission possible; old ACIP claim of no documented transmission not used."
+        ],
+        "relation": "supports",
+        "assessment": "Supports only the named additions identified in the claim inventory, not every statement in this section."
+      },
+      {
+        "source_id": "meningitis-ukhsa-hib",
+        "source_metadata_sha256": "513171453591de0c2d4bf5d2dced5078f817fef301785568eab7b67e60974834",
+        "locator": "Summary of changes to revised recommendations (lines 81-86); Introduction (87-98); Risk of secondary cases (123-131)",
+        "source_version": "2024-09-04",
+        "accessed_at": "2026-10-02",
+        "population": "Scope conditional on named pathogen; general public unless specified per claim.",
+        "region": "GB",
+        "independence_group": "UK-UKHSA",
+        "upstream_evidence": [
+          "Independent UKHSA guidance informed partly by pre-vaccine US contact studies, potentially shared with CDC/ACIP. UK 2024 eligibility differs from US policy; only conditional specialist contact assessment used. First open succeeded; later reopens timed out."
+        ],
+        "relation": "supports",
+        "assessment": "Supports only the named additions identified in the claim inventory, not every statement in this section."
       }
     ],
     "claims": [
@@ -5606,154 +5593,116 @@
             "assessment": "Contact antibiotics specifically for meningococcal exposure."
           }
         ]
+      },
+      {
+        "id": "p0-02-prevention-5",
+        "kind": "action",
+        "text": {
+          "zh-CN": "针对肠道病毒，换尿布或如厕后认真用肥皂和水洗手，清洁经常接触的物品表面，可帮助减少传播。",
+          "en": "For enteroviruses, washing hands carefully with soap and water after changing nappies or using the toilet, and cleaning frequently touched surfaces, can help reduce spread."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-nsw-enterovirus",
+            "locator": "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)",
+            "assessment": "Both independently authored authorities recommend handwashing after toileting/diaper care and surface cleaning."
+          },
+          {
+            "source_id": "meningitis-cdc-viral-meningitis",
+            "locator": "What it is; Risk factors; Prevention; Treatment and recovery (lines 32-124)",
+            "assessment": "Both independently authored authorities recommend handwashing after toileting/diaper care and surface cleaning."
+          }
+        ]
+      },
+      {
+        "id": "p0-02-prevention-7",
+        "kind": "action",
+        "text": {
+          "zh-CN": "确诊Hib侵袭性感染后，家人等接触者也可能需要预防抗生素，应由治疗团队或当地公共卫生人员评估。英国和美国的具体适用条件不同；不能把这一措施套用于所有流感嗜血杆菌类型，也不要自行给全家用药。",
+          "en": "After confirmed invasive Hib disease, family members and other contacts may also need preventive antibiotics, as assessed by the treating team or local public-health service. UK and US eligibility rules differ; this measure must not be applied to every H. influenzae type, and families should not self-medicate."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-cdc-haemophilus",
+            "locator": "Cause; Types; Prevention / Chemoprophylaxis and Vaccination; Diagnosis (lines 31-111)",
+            "assessment": "CDC limits its recommendation to Hib contacts and refers to eligibility guidance; UKHSA 2024 summary recommends confirmed invasive Hib cases and household contacts. No universal contact threshold, regimen or non-b exclusion is prescribed."
+          },
+          {
+            "source_id": "meningitis-ukhsa-hib",
+            "locator": "Summary of changes to revised recommendations (lines 81-86); Introduction (87-98); Risk of secondary cases (123-131)",
+            "assessment": "CDC limits its recommendation to Hib contacts and refers to eligibility guidance; UKHSA 2024 summary recommends confirmed invasive Hib cases and household contacts. No universal contact threshold, regimen or non-b exclusion is prescribed."
+          }
+        ]
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Actual writing groups and claim-specific scope are recorded. Practical communication and ordinary explanatory clauses may use one direct source; emergency actions, treatment safety and thresholds retain independent support. Attributed WHO/NICE timing differences are not manufactured into identical thresholds.",
+      "rationale": "Baseline author groups preserved. Added NSW Health, CDC and UKHSA are distinct authors. All CDC pages one group; Healthdirect enterovirus not used because it cites NSW and CDC. UKHSA/CDC may share historical US contact studies.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "regional_difference",
-      "resolution": "Jurisdiction and guideline population retained; hearing timing anchors differ. Author candidate synthesis, pending independent review."
+      "resolution": "Hib eligibility varies between UKHSA and CDC; only conditional local-team assessment is stated, no global regimen or contact threshold."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/mi_icd_scope",
-      "reviewer": "/root/retinal_targeted",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_p0_maternal",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
-        "meningitis-adam-tb",
         "meningitis-cdc-bacterial-meningitis",
-        "meningitis-cdc-food-cold",
         "meningitis-cdc-fungal-meningitis",
+        "meningitis-cdc-haemophilus",
         "meningitis-cdc-index",
         "meningitis-cdc-listeria",
         "meningitis-cdc-listeria-symptoms",
         "meningitis-cdc-surveillance",
-        "meningitis-cdc-tb-adverse",
         "meningitis-cdc-viral-meningitis",
         "meningitis-fda-listeria",
         "meningitis-healthdirect",
-        "meningitis-healthdirect-vomiting",
         "meningitis-lpt-viral-policy",
-        "meningitis-mayo-anaphylaxis",
         "meningitis-mayo-causes",
-        "meningitis-mayo-infant-feeding",
-        "meningitis-mayo-migraine",
         "meningitis-mayo-treatment",
         "meningitis-msd-acute",
         "meningitis-msd-tb",
         "meningitis-msd-viral",
         "meningitis-nhs",
-        "meningitis-nhs-antibiotics",
-        "meningitis-nhs-migraine",
-        "meningitis-nhs-sah",
-        "meningitis-nhs-vomiting",
         "meningitis-nice-ng240",
         "meningitis-nice-tb",
         "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
         "meningitis-nsw-meningococcal",
         "meningitis-rch-clinical",
-        "meningitis-rch-dehydration",
         "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
         "meningitis-who",
         "meningitis-who-guideline"
       ],
       "findings": [
         {
-          "id": "M01",
+          "id": "MEN-P002-01",
           "status": "resolved",
-          "resolution": "CDC and independently written LPT p9 corroborate virus acquisition versus meningitis; stale single-source assessment corrected."
+          "claim_id": "p0-02-treatment-haemophilus",
+          "finding": "原先应按急性细菌路径处理并按检测调整是行动，却标explanation且仅CDC菌种说明。",
+          "resolution": "作者删除行动部分，仅保留H.influenzae脑膜炎属于细菌性脑膜炎的分类解释；实际核对最终中英正文及claim均已删除，未通过降级标签绕过双源。既有细菌治疗主张及支持保持。"
         },
         {
-          "id": "M02",
+          "id": "MEN-P002-02",
           "status": "resolved",
-          "resolution": "Inherited emergency conclusions unchanged; neither rash nor complete symptom set required."
+          "claim_id": "p0-02-prevention-6",
+          "finding": "新增Hib疫苗保护范围句按explanation单源支持，存在疗效边界分类不足。",
+          "resolution": "作者删除该新增句及claim；保留原已审核疫苗预防部分和菌种/b型范围解释，未宣称全种疫苗保护。最终正文与claims确认不存在该新增句。"
         },
         {
-          "id": "M03",
+          "id": "MEN-P002-03",
           "status": "resolved",
-          "resolution": "Inherited removal of unsupported forced-neck maneuver remains intact."
-        },
-        {
-          "id": "M04",
-          "status": "resolved",
-          "resolution": "Practical communication checklist is not a validated diagnostic score; no mechanical second-source requirement."
-        },
-        {
-          "id": "M05",
-          "status": "resolved",
-          "resolution": "WHO A.3 negative blood-marker limit; A.1.1/A.4 stabilization and selective imaging corroborate NICE. No delay to antibiotics preserved."
-        },
-        {
-          "id": "M06",
-          "status": "resolved",
-          "resolution": "MSD TB independently corroborates distinct multidrug meningeal treatment; NIH HIV-specific cryptococcosis confirms immune-dependent duration. NICE specialist routing is bounded service guidance, not an unsupported efficacy threshold."
-        },
-        {
-          "id": "M07",
-          "status": "resolved",
-          "resolution": "NHS ordinary flu/gastroenteritis resemblance needs no duplicated wording. NHS SAH supports bleed example; NSW independently confirms meningitis and/or septicemia. Emergency actions remain corroborated."
-        },
-        {
-          "id": "M08",
-          "status": "resolved",
-          "resolution": "MSD/RCH/WHO give component-specific empiric selection and support-care evidence. NHS hospital fluids/oxygen and pediatric RCH seizure management read. CDC directly describes immune-risk viral hospital care; MSD offers complementary severe-illness/immune context, not fake exact second rule. Conditional hospital review is accepted within strongly corroborated emergency pathway."
-        },
-        {
-          "id": "M09",
-          "status": "resolved",
-          "resolution": "Revised infant-feeding wording checked against Mayo infant warning and NHS/RCH age-relevant illness assessment; adult Healthdirect limitation retained. Recordkeeping is practical support."
-        },
-        {
-          "id": "M10",
-          "status": "resolved",
-          "resolution": "CDC technical P8 supplies exact cold-growth mechanism, with FDA coauthorship/shared upstream disclosed. Distinct technical and patient writings are not represented as independent experiments."
-        },
-        {
-          "id": "M11",
-          "status": "resolved",
-          "resolution": "Chinese over-one-month boundary now matches English and WHO scope. WHO and NICE hearing clocks and strength remain explicitly attributed differences; no invented identical global deadline."
-        },
-        {
-          "id": "M12",
-          "status": "resolved",
-          "resolution": "Regional vaccination/prophylaxis scope stays bounded; UKHSA contact passage corroborates existing meningococcal contact action without exporting temporary Kent outbreak schedules."
-        },
-        {
-          "id": "P0-M13",
-          "status": "resolved",
-          "claims": [
-            "causes_risks-3"
-          ],
-          "resolution": "NSW functional spleen and NICE1.1.8/1.1.14 added precisely."
-        },
-        {
-          "id": "P0-M14",
-          "status": "resolved",
-          "claims": [
-            "special_populations-2"
-          ],
-          "resolution": "NHS chemotherapy and CDC post-transplant medicines explicitly bound, with Mayo mechanism complementary."
-        },
-        {
-          "id": "P0-M15",
-          "status": "resolved",
-          "claims": [
-            "special_populations-3"
-          ],
-          "resolution": "New actual-read CDC maternal symptoms passage supplies precise second writing alongside FDA; common upstream acknowledged."
-        },
-        {
-          "id": "P0-M16",
-          "status": "resolved",
-          "resolution": "Added the already reviewed CDC Listeria symptoms source to condition.source_ids; citation-list closure only. Section text and ledger/source hashes unchanged."
+          "finding": "集成前完整model.validate发现article.source_ids遗漏3个section新来源。前次section-level审查未覆盖此article linkage不变量。",
+          "resolution": "作者仅以所有section来源排序并集重建article.source_ids；排除此字段后的canonical hash完全相同，records/sources哈希不变；隔离内存替换候选并加入新来源后model.validate通过。"
         }
       ],
-      "resolution": "Accepted for the described bilingual overview and14 sections; earlier partial evidence gaps resolved with actual component-specific reads or accepted bounded ordinary/practical statements. No claim is downgraded to evade a dangerous-action requirement."
+      "resolution": "一轮独立复读发现两项主张分类/证据问题，作者已缩窄并删除相应新增内容，随后只对两项修正和最终绑定做定向复查。最终可接受为AI独立编辑核验；真实医师签审仍false。两末级类别的确认建议绑定本报告最终canonical哈希，由主线程按冻结分类核对后落映射；此报告本身不修改覆盖或部署。"
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-meningitis-independent.json"
+    "review_report": "reports/p0-02-meningitis-independent.json"
   }
 ]

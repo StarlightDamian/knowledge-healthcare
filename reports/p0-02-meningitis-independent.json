@@ -1,0 +1,459 @@
+{
+  "schema_version": 1,
+  "verdict": "accepted",
+  "author": "/root/astra_p0_neurology",
+  "reviewer": "/root/astra_p0_maternal",
+  "medical_reviewed": false,
+  "checked_at": "2026-10-03",
+  "target": {
+    "body_canonical_sha256": "b8323f3e40827d4c856c1bef373f6eed829e01f6a1ebdada2feb35501a518fdd",
+    "records_canonical_sha256": "0d3e5abf08b2ce17bd166b5267334be01981d2772e0dce8c676452e6c2de835a",
+    "sources_canonical_sha256": "ba28dfb24eca3f30277c122f31bce301d620836f860d59babec3f1375fdb1250"
+  },
+  "changed_sections": [
+    "summary",
+    "causes_risks",
+    "diagnosis",
+    "treatment",
+    "special_populations",
+    "prevention"
+  ],
+  "scope": "本批全部新增claims与6改节的双语及其27个支持来源指定定位重读；全文14维适用性审核。不是各指南全文/所有引文再验证；8节未改的旧独立核验继承。",
+  "accepted_source_ids": [
+    "meningitis-cdc-bacterial-meningitis",
+    "meningitis-cdc-fungal-meningitis",
+    "meningitis-cdc-haemophilus",
+    "meningitis-cdc-index",
+    "meningitis-cdc-listeria",
+    "meningitis-cdc-listeria-symptoms",
+    "meningitis-cdc-surveillance",
+    "meningitis-cdc-viral-meningitis",
+    "meningitis-fda-listeria",
+    "meningitis-healthdirect",
+    "meningitis-lpt-viral-policy",
+    "meningitis-mayo-causes",
+    "meningitis-mayo-treatment",
+    "meningitis-msd-acute",
+    "meningitis-msd-tb",
+    "meningitis-msd-viral",
+    "meningitis-nhs",
+    "meningitis-nice-ng240",
+    "meningitis-nice-tb",
+    "meningitis-nih-cryptococcosis",
+    "meningitis-nsw-enterovirus",
+    "meningitis-nsw-meningococcal",
+    "meningitis-rch-clinical",
+    "meningitis-ukhsa-contacts",
+    "meningitis-ukhsa-hib",
+    "meningitis-who",
+    "meningitis-who-guideline"
+  ],
+  "inherited_sections": [
+    {
+      "section": "red_flags",
+      "content_sha256": "6a16ec53e69055e556abf324bf876dc7325821eb91a98a177920bb9a7bc52062",
+      "evidence": "data/evidence/editorial-checks/p0-meningitis.json; reports/p0-meningitis-independent.json",
+      "comparison": "record及正文section与发布基线canonical对象相等"
+    },
+    {
+      "section": "care",
+      "content_sha256": "1b3462c211e56dc09bddbf52c9a1c21e9645848c9d23d3fff2e8bc2c1a07845f",
+      "evidence": "data/evidence/editorial-checks/p0-meningitis.json; reports/p0-meningitis-independent.json",
+      "comparison": "record及正文section与发布基线canonical对象相等"
+    },
+    {
+      "section": "differentials",
+      "content_sha256": "0ea1bb178fa550c1b3a913a1b98723beca8191ee3964940d6a2a8e1be65c6396",
+      "evidence": "data/evidence/editorial-checks/p0-meningitis.json; reports/p0-meningitis-independent.json",
+      "comparison": "record及正文section与发布基线canonical对象相等"
+    },
+    {
+      "section": "medications",
+      "content_sha256": "90aafc1550a3624288fa0a8add1a77efe9f0ba411bd3821f79bfb5dd3eb50c5a",
+      "evidence": "data/evidence/editorial-checks/p0-meningitis.json; reports/p0-meningitis-independent.json",
+      "comparison": "record及正文section与发布基线canonical对象相等"
+    },
+    {
+      "section": "diet",
+      "content_sha256": "ad080606e93fa5f01eac590ab29ecca256c3c86f1ba933a146b262bcc4fce6ae",
+      "evidence": "data/evidence/editorial-checks/p0-meningitis.json; reports/p0-meningitis-independent.json",
+      "comparison": "record及正文section与发布基线canonical对象相等"
+    },
+    {
+      "section": "daily_care",
+      "content_sha256": "a83fb0e6ecae458274544c9d23ae2d32561f4cf94e90854b81d1187cb27bc55d",
+      "evidence": "data/evidence/editorial-checks/p0-meningitis.json; reports/p0-meningitis-independent.json",
+      "comparison": "record及正文section与发布基线canonical对象相等"
+    },
+    {
+      "section": "prognosis_followup",
+      "content_sha256": "ca8f959d667a1f66122ccfaeaf25d7f0e8270633f884d3c0db52ebf8028240e9",
+      "evidence": "data/evidence/editorial-checks/p0-meningitis.json; reports/p0-meningitis-independent.json",
+      "comparison": "record及正文section与发布基线canonical对象相等"
+    },
+    {
+      "section": "complications",
+      "content_sha256": "7c8b06f909b0e89630e88c10631e4a243b369c7c3744d35a939ca1828e1891ec",
+      "evidence": "data/evidence/editorial-checks/p0-meningitis.json; reports/p0-meningitis-independent.json",
+      "comparison": "record及正文section与发布基线canonical对象相等"
+    }
+  ],
+  "actual_source_reads": [
+    {
+      "source_id": "meningitis-cdc-bacterial-meningitis",
+      "url": "https://www.cdc.gov/meningitis/about/bacterial-meningitis.html",
+      "locator": "What it is 35–45；risk groups59–113；prevention128–148；treatment153–155",
+      "method": "web open/find 原始页面指定段落",
+      "read_at": "2026-10-02",
+      "version": "2025-09-09",
+      "independence_group": "US-CDC",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-cdc-fungal-meningitis",
+      "url": "https://www.cdc.gov/meningitis/about/fungal-meningitis.html",
+      "locator": "Risk factors67–83；transmission86–109；treatment135–139",
+      "method": "web open/find 原始页面指定段落",
+      "read_at": "2026-10-02",
+      "version": "2025-09-09",
+      "independence_group": "US-CDC",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-cdc-haemophilus",
+      "url": "https://www.cdc.gov/hi-disease/hcp/clinicians/index.html",
+      "locator": "Cause/Types31–60；Prevention88–104；Diagnosis106–111；references141–143",
+      "method": "web open/find 原始页面指定段落",
+      "read_at": "2026-10-02",
+      "version": "2025-09-22",
+      "independence_group": "US-CDC",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-cdc-index",
+      "url": "https://www.cdc.gov/meningitis/about/index.html",
+      "locator": "What it is33–35；Symptoms46–72；Causes74–87；Testing88–90",
+      "method": "web open/find 原始页面指定段落",
+      "read_at": "2026-10-02",
+      "version": "2025-09-09",
+      "independence_group": "US-CDC",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-cdc-listeria",
+      "url": "https://www.cdc.gov/listeria/prevention/index.html",
+      "locator": "Who is at risk34–42；safer-food table43–90",
+      "method": "web open/find 原始页面指定段落",
+      "read_at": "2026-10-02",
+      "version": "2025-01-31",
+      "independence_group": "US-CDC",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-cdc-listeria-symptoms",
+      "url": "https://www.cdc.gov/listeria/signs-symptoms/index.html",
+      "locator": "Pregnancy symptoms41–46；severity59–67",
+      "method": "web open/find 原始页面指定段落",
+      "read_at": "2026-10-02",
+      "version": "2025-02-03",
+      "independence_group": "US-CDC",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-cdc-surveillance",
+      "url": "https://www.cdc.gov/surv-manual/php/table-of-contents/chapter-8-meningococcal-disease.html",
+      "locator": "Chemoprophylaxis64–71；case definition103–120",
+      "method": "web open/find 原始页面指定段落",
+      "read_at": "2026-10-02",
+      "version": "2024-10-30",
+      "independence_group": "US-CDC",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-cdc-viral-meningitis",
+      "url": "https://www.cdc.gov/meningitis/about/viral-meningitis.html",
+      "locator": "What it is32–46；risk55–69；prevention85–93；treatment117–124",
+      "method": "web open/find 原始页面指定段落",
+      "read_at": "2026-10-02",
+      "version": "2025-09-09",
+      "independence_group": "US-CDC",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-fda-listeria",
+      "url": "https://www.fda.gov/food/health-educators/listeria-food-safety-moms-be",
+      "locator": "How could listeriosis affect me/my baby79–89；To Eat or Not to Eat107–112",
+      "method": "web open/find 原始页面指定段落",
+      "read_at": "2026-10-02",
+      "version": "FAQ How could I get listeriosis / affect me; To Eat or Not to Eat read. Independently written FDA education; CDC epidemiology explicitly referenced and common outbreak/food-safety basis recorded. Pasteurized queso fresco exception retained. No exact update date displayed.",
+      "independence_group": "US-FDA",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-healthdirect",
+      "url": "https://www.healthdirect.gov.au/meningitis",
+      "locator": "What is meningitis；What causes meningitis；How is meningitis diagnosed；How is meningitis treated；Can meningitis be prevented",
+      "method": "只读HTTP（PowerShell Invoke-WebRequest或Python urllib）成功读取官网HTML，剥离标签后阅读指定段落",
+      "read_at": "2026-10-03",
+      "version": "Reviewed May 2025. Symptoms, When should I see my doctor, diagnosis, cause-specific treatment, hygiene and prevention read. Underlying BMJ/Therapeutic Guidelines overlap with other clinical evidence; no independent trial claim. Overbroad wording equating all meningococcal disease with meningitis is not adopted.",
+      "independence_group": "AU-HEALTHDIRECT",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-lpt-viral-policy",
+      "url": "https://www.leicspart.nhs.uk/wp-content/uploads/2023/12/The-management-of-meningitis-policy-V10-Exp-Nov-26.pdf",
+      "locator": "PDF printed page9，3.0、3.1及3.2；仅3.2病毒接触者不易得脑膜炎作为旧主张支持，未采用其泛化无后遗症措辞",
+      "method": "Python urllib下载至内存，现有pdftotext经stdin/stdout提取第9页文字；无落盘全文或图表读取",
+      "read_at": "2026-10-03",
+      "version": "2023-12-05",
+      "independence_group": "UK-NHS-LPT",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-mayo-causes",
+      "url": "https://www.mayoclinic.org/diseases-conditions/meningitis/symptoms-causes/syc-20350508",
+      "locator": "Risk factors401–408；Complications409–422；bacterial causes H.influenzae379",
+      "method": "web open/find 原始页面指定段落",
+      "read_at": "2026-10-02",
+      "version": "2024-10-17",
+      "independence_group": "US-MAYO",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-mayo-treatment",
+      "url": "https://www.mayoclinic.org/diseases-conditions/meningitis/diagnosis-treatment/drc-20350514",
+      "locator": "Treatment288–311；acute bacterial293–296，viral297–303；未将慢性病因等待段306用于急症",
+      "method": "web open/find 原始页面指定段落",
+      "read_at": "2026-10-02",
+      "version": "2024-10-17",
+      "independence_group": "US-MAYO",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-msd-acute",
+      "url": "https://www.msdmanuals.com/professional/neurologic-disorders/meningitis/acute-bacterial-meningitis",
+      "locator": "Treatment of Acute Bacterial Meningitis/Antibiotics；empiric age/immune status and immediate treatment before delayed LP/imaging",
+      "method": "只读HTTP（PowerShell Invoke-WebRequest或Python urllib）成功读取官网HTML，剥离标签后阅读指定段落",
+      "read_at": "2026-10-02",
+      "version": "Full review/update September 2026. Read Diagnosis: lumbar puncture; Treatment: antibiotics, including age/immune status, culture/sensitivity adjustment and resistance. No day invented.",
+      "independence_group": "MSD-MERCK",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-msd-tb",
+      "url": "https://www.msdmanuals.com/professional/infectious-diseases/mycobacteria/extrapulmonary-tuberculosis-tb",
+      "locator": "Treatment of Extrapulmonary TB；meningeal duration differs and specialist multidrug care",
+      "method": "只读HTTP（PowerShell Invoke-WebRequest或Python urllib）成功读取官网HTML，剥离标签后阅读指定段落",
+      "read_at": "2026-10-02",
+      "version": "Full review/update February 2026. Read overview and Treatment of Extrapulmonary TB: combination therapy and longer meningeal treatment than most other sites. No day or universal regimen invented.",
+      "independence_group": "MSD-MERCK",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-msd-viral",
+      "url": "https://www.msdmanuals.com/home/brain-spinal-cord-and-nerve-disorders/meningitis/viral-meningitis",
+      "locator": "Causes59–65；Transmission84–99；Diagnosis107–118；Treatment119–134；Prognosis135–137",
+      "method": "web open/find 原始页面指定段落",
+      "read_at": "2026-10-02",
+      "version": "Full review/update September 2026. Read Symptoms, Diagnosis, Treatment and Prognosis: immediate treatment if very ill, antiviral exceptions, recovery in people with normal immunity. No claim it independently gives CDC’s full immune-risk hospitalization rule.",
+      "independence_group": "MSD-MERCK",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-nhs",
+      "url": "https://www.nhs.uk/conditions/meningitis/",
+      "locator": "Treatment for meningitis；Recovering from meningitis；医院检测区分后居家/住院条件",
+      "method": "只读HTTP（PowerShell Invoke-WebRequest或Python urllib）成功读取官网HTML，剥离标签后阅读指定段落",
+      "read_at": "2026-10-02",
+      "version": "2026-06-12",
+      "independence_group": "UK-NHS",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-nice-ng240",
+      "url": "https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+      "locator": "1.4.1–1.4.2：先评估、抽血/腰穿仅在安全且不延迟抗生素时；clinical+CSF诊断",
+      "method": "只读HTTP（PowerShell Invoke-WebRequest或Python urllib）成功读取官网HTML，剥离标签后阅读指定段落",
+      "read_at": "2026-10-02",
+      "version": "2024-03-19",
+      "independence_group": "UK-NICE",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-nice-tb",
+      "url": "https://www.nice.org.uk/guidance/ng33/chapter/Recommendations",
+      "locator": "1.3.7.1–1.3.7.4：专科、CNS与非CNS疗程、按药敏调整",
+      "method": "只读HTTP（PowerShell Invoke-WebRequest或Python urllib）成功读取官网HTML，剥离标签后阅读指定段落",
+      "read_at": "2026-10-02",
+      "version": "Final official indexed NG33 recommendations 1.3.5.7–1.3.5.8; 1.3.7.1–1.3.7.3; 1.3.7.17–1.3.7.19; 1.4.2.2 actually read. These recommendations retain their 2016 labels; direct page returned 403. Used for specialist multi-drug CNS TB care, not a universal personal regimen or current comparative efficacy claim.",
+      "independence_group": "UK-NICE",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-nih-cryptococcosis",
+      "url": "https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-opportunistic-infections/cryptococcosis",
+      "locator": "Treating CNS/disseminated disease；Induction/Consolidation/Maintenance；stopping criteria；仅HIV成人/青少年",
+      "method": "直接页面403/CAPTCHA后读取官方页面搜索索引的完整相关段落，不把挑战页计为读取",
+      "read_at": "2026-10-02",
+      "version": "2024-10-29",
+      "independence_group": "US-NIH-OI",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-nsw-enterovirus",
+      "url": "https://www.health.nsw.gov.au/Infectious/factsheets/Pages/enteroviruses.aspx",
+      "locator": "How is it spread；Who is at risk；How is it prevented；How is it diagnosed；How is it treated；Signs of a serious infection",
+      "method": "只读HTTP（PowerShell Invoke-WebRequest或Python urllib）成功读取官网HTML，剥离标签后阅读指定段落",
+      "read_at": "2026-10-02",
+      "version": "2018-05-23",
+      "independence_group": "AU-NSW-HEALTH",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-nsw-meningococcal",
+      "url": "https://www.health.nsw.gov.au/Infectious/factsheets/Pages/meningococcal_disease.aspx",
+      "locator": "Who is at risk；How is it prevented，脾功能和疫苗不覆盖全部菌群",
+      "method": "只读HTTP（PowerShell Invoke-WebRequest或Python urllib）成功读取官网HTML，剥离标签后阅读指定段落",
+      "read_at": "2026-10-02",
+      "version": "2026-07-02",
+      "independence_group": "AU-NSW-HEALTH",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-rch-clinical",
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Meningitis_encephalitis/",
+      "locator": "Investigations/Urgent LP、Blood、Neuroimaging；儿童CSF/PCR、LP安全与不延迟抗感染",
+      "method": "只读HTTP（PowerShell Invoke-WebRequest或Python urllib）成功读取官网HTML，剥离标签后阅读指定段落",
+      "read_at": "2026-10-02",
+      "version": "Read Investigations: urgent LP, blood, neuroimaging; Treatment, antibiotic table and ongoing management. Children only; no fluid doses or routine restriction copied into the lay overview. Relevant paragraphs actually opened.",
+      "independence_group": "AU-RCH",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-ukhsa-contacts",
+      "url": "https://www.gov.uk/guidance/outbreak-of-invasive-meningococcal-disease-south-east-england",
+      "locator": "Providing antibiotic chemoprophylaxis；regardless vaccination；暴发扩圈条款未泛化",
+      "method": "只读HTTP（PowerShell Invoke-WebRequest或Python urllib）成功读取官网HTML，剥离标签后阅读指定段落",
+      "read_at": "2026-10-02",
+      "version": "2026-03-18",
+      "independence_group": "UK-UKHSA",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-ukhsa-hib",
+      "url": "https://www.gov.uk/government/publications/haemophilus-influenzae-type-b-hib-revised-recommendations-for-the-prevention-of-secondary-cases/revised-recommendations-for-the-prevention-of-secondary-haemophilus-influenzae-type-b-hib-disease",
+      "locator": "Summary of changes to revised recommendations：所有确诊侵袭性Hib病例及家庭接触者；非整份处方方案复核",
+      "method": "只读HTTP（PowerShell Invoke-WebRequest或Python urllib）成功读取官网HTML，剥离标签后阅读指定段落",
+      "read_at": "2026-10-02",
+      "version": "2024-09-04",
+      "independence_group": "UK-UKHSA",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-who",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/meningitis",
+      "locator": "Diagnosis；Treatment：CSF/血液与病原识别，不延误抗生素，年龄免疫及当地耐药",
+      "method": "只读HTTP（PowerShell Invoke-WebRequest或Python urllib）成功读取官网HTML，剥离标签后阅读指定段落",
+      "read_at": "2026-10-02",
+      "version": "2026-09-29",
+      "independence_group": "WHO",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": "meningitis-who-guideline",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK614844/?report=classic",
+      "locator": "WHO2025 A.3.1–A.3.2：血培养及外周血标志物不能单独确认/排除；官方索引原文，未声称本次完整指南读取",
+      "method": "直接页面403/CAPTCHA后读取官方页面搜索索引的完整相关段落，不把挑战页计为读取",
+      "read_at": "2026-10-02",
+      "version": "2025-04-10",
+      "independence_group": "WHO",
+      "independence_relation": "不同CDC页面只计US-CDC一组；WHO索引是原指南同一源；NIH索引不是另一源；LPT/NICE/NHS分别署名但英国实践有共同基础；Mayo/MSD/Healthdirect亦共享指南和研究，未声称独立试验复制。"
+    },
+    {
+      "source_id": null,
+      "url": "https://www.cdc.gov/mmwr/volumes/72/wr/mm7215a2.htm",
+      "locator": "2023-04-14 MMWR正文non-b secondary transmission及脚注*（家庭成员<4岁未全程免疫或<18岁免疫低下；托幼暴发规则）",
+      "method": "CDC原始研究/政策脚注的官方搜索索引文本实际读取；作为复核地区差异的补充证据，不计成新增source ID或独立CDC来源",
+      "read_at": "2026-10-03",
+      "independence_relation": "与CDC overview同组织且该overview引用本研究；不能双重计源"
+    }
+  ],
+  "findings": [
+    {
+      "id": "MEN-P002-01",
+      "status": "resolved",
+      "claim_id": "p0-02-treatment-haemophilus",
+      "finding": "原先应按急性细菌路径处理并按检测调整是行动，却标explanation且仅CDC菌种说明。",
+      "resolution": "作者删除行动部分，仅保留H.influenzae脑膜炎属于细菌性脑膜炎的分类解释；实际核对最终中英正文及claim均已删除，未通过降级标签绕过双源。既有细菌治疗主张及支持保持。"
+    },
+    {
+      "id": "MEN-P002-02",
+      "status": "resolved",
+      "claim_id": "p0-02-prevention-6",
+      "finding": "新增Hib疫苗保护范围句按explanation单源支持，存在疗效边界分类不足。",
+      "resolution": "作者删除该新增句及claim；保留原已审核疫苗预防部分和菌种/b型范围解释，未宣称全种疫苗保护。最终正文与claims确认不存在该新增句。"
+    },
+    {
+      "id": "MEN-P002-03",
+      "status": "resolved",
+      "finding": "集成前完整model.validate发现article.source_ids遗漏3个section新来源。前次section-level审查未覆盖此article linkage不变量。",
+      "resolution": "作者仅以所有section来源排序并集重建article.source_ids；排除此字段后的canonical hash完全相同，records/sources哈希不变；隔离内存替换候选并加入新来源后model.validate通过。"
+    }
+  ],
+  "unresolved_questions": [],
+  "checks": {
+    "mechanical_claim_bindings_and_hashes": "passed",
+    "independent_groups_for_action_risk_threshold_benefit": "passed",
+    "unchanged_eight_records_and_sections_equal_baseline": true,
+    "new_claim_count_final": 8,
+    "bilingual_scope": "suspected/established、may/usually、very young infant、confirmed invasive Hib及UK/US限定一致",
+    "non_cns_samples": "新增正文只将CSF PCR用于疑似肠道病毒脑膜炎，没有把鼻咽/粪便阳性直接确诊脑膜炎；H.influenzae检测在整体综合诊断前提下解释",
+    "source_read_completeness": "所有27个改节supports ID均有实际定位读取，失败页未计数；替代索引/内存PDF方法逐项披露"
+  },
+  "dimension_allocation": {
+    "summary": "明确肠道病毒与H.influenzae为本文命名支路；Hib仅b型，病原分类不同。",
+    "causes_risks": "肠道病毒分泌物/粪口/污染物传递且感染不等于脑膜炎；H.influenzae适用细菌呼吸分泌物接触及年龄/免疫宿主支路，不把所有菌种风险等同。",
+    "red_flags": "两叶共同急性脑膜刺激/意识/婴儿危险信号，先求助，不按病毒名称自行排除急症。",
+    "care": "两叶共同先评估，已评估轻症病毒才可居家，恶化重新就医；细菌住院支路。",
+    "diagnosis": "肠道病毒明确CSF/PCR；H.influenzae培养/PCR及分型用于公共卫生。整体先确认脑膜炎再病原，不把鼻咽或粪便检出直接等同CNS感染。",
+    "differentials": "与其他发热、头痛和脑部急症鉴别；脑膜炎不等于脑膜炎球菌病。",
+    "treatment": "肠道病毒明确支持治疗且不许可未检查者等待；H.influenzae明确属于细菌性，适用先经验后检测调整的细菌路径；已删除单源新行动。",
+    "medications": "抗生素/抗病毒/辅助激素分工，年龄、免疫、菌种与地方条件保持；无个人处方。",
+    "diet": "两叶支持恢复且食物不替代病因治疗；Listeria食品建议有明确人群，不泛指防两叶。",
+    "daily_care": "仅出院获准者居家观察、卫生与复诊联系；两叶均有恶化行动。",
+    "special_populations": "肠道病毒婴幼儿/很小婴儿重症风险；H.influenzae适用婴儿/免疫异常共同支路，新生儿另行评估，未把新生儿专门分类计入。",
+    "prognosis_followup": "轻症病毒与细菌恢复不同；细菌后听力/神经复评，WHO/NICE起算差别明确。",
+    "complications": "共同急性神经症状与后遗症按病程和严重度条件解释，不保证无后遗症。",
+    "prevention": "肠道病毒卫生；Hib限定条件公共卫生接触评估；UK/US差异、不适用所有H.influenzae类型及不自行全家用药。没有声称non-b不传播或永不需评估。"
+  },
+  "category_decisions": [
+    {
+      "code": "1C8E.1",
+      "status": "confirmed",
+      "rationale": "命名肠道病毒支路补齐传播/感染非脑膜炎、CSF病原检查、支持治疗及幼龄重症和卫生，14维共同急症/居家条件/恢复内容正向适用；不以泛称viral自动覆盖其他指定病毒。",
+      "exclusions_considered": "不纳入仅肠道病毒感染无脑膜炎、单纯脑炎/脑脊髓炎或另列新生儿感染；无全球疫苗可及性或统一疗程声明。",
+      "remaining": []
+    },
+    {
+      "code": "1D01.00",
+      "status": "confirmed",
+      "rationale": "全文明确H.influenzae菌种与Hib子型区别，所有菌型适用细菌脑膜炎诊疗及听力/神经随访支路；Hib疫苗和接触者策略限定b型，不将non-b当作不传播。共同14维无与此菌种冲突的空白支路；无需重复14维全文或新增个人用药剂量才成立。",
+      "exclusions_considered": "无脑膜炎的H.influenzae呼吸/血流感染不计；不延伸到其他菌种脑膜炎或另列新生儿感染；UK家庭接触与US易感家庭条件不合并成普世规则。",
+      "remaining": []
+    }
+  ],
+  "resolution": "一轮独立复读发现两项主张分类/证据问题，作者已缩窄并删除相应新增内容，随后只对两项修正和最终绑定做定向复查。最终可接受为AI独立编辑核验；真实医师签审仍false。两末级类别的确认建议绑定本报告最终canonical哈希，由主线程按冻结分类核对后落映射；此报告本身不修改覆盖或部署。",
+  "structural_revalidation": {
+    "checked_at": "2026-10-03",
+    "old_body_canonical_sha256": "64811b4a0075209f2f8aa16c9de75401a17638a8579c01a1dc1bef7c56688b10",
+    "new_body_canonical_sha256": "b8323f3e40827d4c856c1bef373f6eed829e01f6a1ebdada2feb35501a518fdd",
+    "non_source_ids_body_sha256": "60e432ba9d79a0ab0d8869ced3b5faa4cea393611b462cefb870bd830cd11f18",
+    "medical_sections_unchanged": true,
+    "records_sources_unchanged": true,
+    "method": "src.guide.model.load -> memory-only candidate/source overlay -> validate(data,today=2026-10-03); no production writes",
+    "result": "passed",
+    "conditions": 82,
+    "sources": 611,
+    "mode": "preview"
+  }
+}

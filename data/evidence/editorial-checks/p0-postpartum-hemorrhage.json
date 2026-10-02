@@ -6,11 +6,11 @@
       "id": "postpartum-hemorrhage",
       "section": "summary"
     },
-    "content_sha256": "f25acf3f0c7e9f86a9e46bd31c41b77c37d93be33f55554e27e7b6d50e0319b2",
+    "content_sha256": "295f67ccdb3e0ba32601fc91a151a47497e3f511c83511618b5c0f8365c7c67e",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/priority_medical_rules",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_neurology",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -49,8 +49,8 @@
       {
         "source_id": "pph-cma-2023",
         "source_metadata_sha256": "65b48cc32974042b4e0a1ff594f2f5b94bd64dd2b0a0c379650f1255069a71d5",
-        "locator": "Assessment95–108; shock175 | Four causes/risk41; diagnosis47",
-        "source_version": "2023-07-10",
+        "locator": "Assessment95–108; shock175 | Four causes/risk41; diagnosis47 | 预防二/73–87；处理二(三)150 | 病因41",
+        "source_version": "2023-07-10 | 本批增读：CMA2023，2023-07-10官网；58(6):401–409",
         "accessed_at": "2026-10-02",
         "population": "Postpartum people; source-specific acute within24hours/within3hours of birth, secondary24hours–12weeks, vaginal/caesarean, asthma and severe-PPH restrictions are retained in claims and source scope.",
         "region": "CN",
@@ -60,7 +60,23 @@
           "Independent writing is not independent research replication. WHO/FIGO/ICM one joint group; EBCOG commentary/FIGO office overlap and Cochrane WHO funding/common trials disclosed. East Kent adapts Ontario Midwives and cites RCOG; CDC warning material is AIM."
         ],
         "relation": "supports",
-        "assessment": "summary-3: Rapid control/resuscitation avoids poor perfusion. summary-4: Both routes, many without identifiable risk."
+        "assessment": "summary-3: Rapid control/resuscitation avoids poor perfusion. summary-4: Both routes, many without identifiable risk. p002-summary-1: 第三产程监测和胎盘未出伴活动性出血。 本批第三产程仍评估四种可能原因。"
+      },
+      {
+        "source_id": "b1-acute-pph-nice-intrapartum",
+        "source_metadata_sha256": "d2d555b2437c76621851a8205d2bd60a0e17d6adf91ed733a0c6a416e0372c1e",
+        "locator": "1.10.2；1.10.24",
+        "source_version": "NG235官网2026-06-09更新；所引第三产程条款2014/2023",
+        "accessed_at": "2026-10-02",
+        "population": "英国分娩照护，胎盘尚未娩出及持续产后出血",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "分别制定的指南/共识，不是互相转载；WHO/FIGO等指南和研究可能共同引用，NATA四组织仅计一个来源。",
+          "本次PowerShell从NICE官网获取并实际阅读这些段落；定义第三产程，出血与无出血胎盘滞留的不同处理、专业转诊/麻醉和持续出血处理。"
+        ],
+        "relation": "supports",
+        "assessment": "第三产程定义及胎盘未出伴过度出血。"
       }
     ],
     "claims": [
@@ -143,6 +159,26 @@
             "assessment": "Both routes, many without identifiable risk."
           }
         ]
+      },
+      {
+        "id": "p002-summary-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "阴道分娩时，从婴儿出生到胎盘和胎膜娩出的这段时间叫第三产程；这时发生的出血也需要识别，原因仍可能是宫缩不足、产道损伤、胎盘问题或凝血障碍，并不只有胎盘滞留。",
+          "en": "During vaginal birth, the third stage is the interval from the baby’s birth to delivery of the placenta and membranes; bleeding during this stage also needs recognition. Causes may include poor uterine contraction, injury, placental problems or a clotting disorder, rather than retained placenta alone."
+        },
+        "supports": [
+          {
+            "source_id": "b1-acute-pph-nice-intrapartum",
+            "locator": "1.10.2；1.10.24",
+            "assessment": "第三产程定义及胎盘未出伴过度出血。"
+          },
+          {
+            "source_id": "pph-cma-2023",
+            "locator": "病因41；预防二/73–87；处理二(三)150",
+            "assessment": "四大原因可共存；第三产程监测和胎盘未出伴活动性出血，不将第三产程出血等同胎盘滞留。"
+          }
+        ]
       }
     ],
     "independence": {
@@ -155,6 +191,45 @@
       "resolution": "WHO2025 therapeutic early-response threshold differs in purpose from CN2023/olderUK classification. Evidence predominantly vaginal; caesarean evidence less certain. UKNICE carboprost-asthma avoid recommendation and manufacturer caution retain different wording. Local clinicians individualize; none is a home dosing/waiting rule."
     },
     "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_p0_neurology",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "b1-acute-pph-east-kent",
+        "b1-acute-pph-nice-intrapartum",
+        "b1-acute-pph-rcog",
+        "pph-carboprost-smpc",
+        "pph-cdc-maternal-warning-signs",
+        "pph-cleveland",
+        "pph-cma-2023",
+        "pph-cochrane-txa-caesarean",
+        "pph-cochrane-txa-vaginal",
+        "pph-ebcog-2025",
+        "pph-nata-thromboprophylaxis",
+        "pph-nice-asthma-guideline",
+        "pph-norfolk-postnatal-emergency",
+        "pph-who-2025-guideline"
+      ],
+      "findings": [
+        {
+          "id": "PPH-ACTION-LABEL",
+          "status": "resolved",
+          "finding": "New treatment and medication paragraphs expressed treatment actions but were initially labelled explanation.",
+          "resolution": "Author relabelled p002-treatment-1 and p002-medications-1 as action. Retained placental management has CMA/NICE; component selection and medicine roles have CMA/NATA."
+        },
+        {
+          "id": "PPH-SINGLE-SOURCE-RECOMMENDATION",
+          "status": "resolved",
+          "finding": "NICE-only recommendation against routine IV uterotonics solely for retained placenta lacked independent support for that exact prescribing restriction.",
+          "resolution": "Author removed that clause; retained causal management and TXA-versus-component explanation supported by CMA/NATA. Targeted final text reread in both languages."
+        }
+      ],
+      "resolution": "Accepted as an editorial content candidate after targeted revisions, not clinician sign-off and not blanket ICD completion. Six changed sections read in Chinese and English; shared action conditions match. Existing blood-loss thresholds are attributed and not home waiting targets; new third-stage advice explicitly prohibits waiting for a minute threshold. No new dose, transfusion ratio or fixed follow-up schedule. All fourteen records and source hashes checked, including eight unchanged records."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-02-postpartum-hemorrhage-independent.json",
+    "prior_accepted_review": {
       "status": "accepted",
       "author": "/root/retinal_targeted",
       "reviewer": "/root/priority_medical_rules",
@@ -197,9 +272,7 @@
         }
       ],
       "resolution": "Accepted after one independent full claim/source pass and a targeted recheck of two minimal corrections. This is source-based editorial verification by a separate agent, not clinician certification. Clinical review remains false; ICD semantic mapping and release integration remain separate."
-    },
-    "unresolved_questions": [],
-    "review_report": "reports/p0-postpartum-hemorrhage-independent.json"
+    }
   },
   {
     "id": "p001-postpartum-hemorrhage-causes_risks",
@@ -208,19 +281,19 @@
       "id": "postpartum-hemorrhage",
       "section": "causes_risks"
     },
-    "content_sha256": "a466aa1cb12bf7710d8631306b334eb1e8712a74f38933011892e85412a04608",
+    "content_sha256": "18d10f8b474c4c4f046883ba15a034a1dd286c4f1b25b7fcd92be2d39a692932",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/priority_medical_rules",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_neurology",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
       {
         "source_id": "pph-cma-2023",
         "source_metadata_sha256": "65b48cc32974042b4e0a1ff594f2f5b94bd64dd2b0a0c379650f1255069a71d5",
-        "locator": "Four causes41; cause-specific care104 | Causes41; atony115–119; tissue146–155 | Causes41; injury138–145; placenta146–155 | Risk41; preparation71",
-        "source_version": "2023-07-10",
+        "locator": "Four causes41; cause-specific care104 | Causes41; atony115–119; tissue146–155 | Causes41; injury138–145; placenta146–155 | Risk41; preparation71 | 处理二(三)150–152；处理一(四)108；病因41",
+        "source_version": "2023-07-10 | 本批增读：CMA2023，2023-07-10官网；58(6):401–409",
         "accessed_at": "2026-10-02",
         "population": "Postpartum people; source-specific acute within24hours/within3hours of birth, secondary24hours–12weeks, vaginal/caesarean, asthma and severe-PPH restrictions are retained in claims and source scope.",
         "region": "CN",
@@ -230,7 +303,7 @@
           "Independent writing is not independent research replication. WHO/FIGO/ICM one joint group; EBCOG commentary/FIGO office overlap and Cochrane WHO funding/common trials disclosed. East Kent adapts Ontario Midwives and cites RCOG; CDC warning material is AIM."
         ],
         "relation": "supports",
-        "assessment": "causes_risks-1: Mechanism guides care and causes may combine. causes_risks-2: Uterine contraction and retained tissue. causes_risks-3: Cause-specific injury/placenta/coagulation. causes_risks-4: Anaemia reduces tolerance and risk assessment/birth setting."
+        "assessment": "causes_risks-1: Mechanism guides care and causes may combine. causes_risks-2: Uterine contraction and retained tissue. causes_risks-3: Cause-specific injury/placenta/coagulation. causes_risks-4: Anaemia reduces tolerance and risk assessment/birth setting. p002-causes_risks-1: 胎盘滞留/残留分别处理；出血丢失凝血成分和病因互相影响。"
       },
       {
         "source_id": "pph-cleveland",
@@ -263,6 +336,22 @@
         ],
         "relation": "supports",
         "assessment": "causes_risks-3: Injury/placenta/clotting and delayed infection. causes_risks-4: Specified risk factors and antenatal preparation."
+      },
+      {
+        "source_id": "pph-nata-thromboprophylaxis",
+        "source_metadata_sha256": "bc5650db82f7a65c471573dfa5dbdae2f0aec4c743f1c1d4e0c5667264c52e48",
+        "locator": "Inherited bleeding disorders；Assessment of haemostatic competence；Fibrinogen replacement therapy",
+        "source_version": "NATA/FIGO/EBCOG/ESA联合共识2019-02-06，DOI10.2450/2019.0245-18",
+        "accessed_at": "2026-10-02",
+        "population": "严重持续产后出血；遗传出血病妊娠/产后；国际多学科共识",
+        "region": "MULTI_REGION",
+        "independence_group": "NATA-2019-CONSENSUS",
+        "upstream_evidence": [
+          "分别制定的指南/共识，不是互相转载；WHO/FIGO等指南和研究可能共同引用，NATA四组织仅计一个来源。",
+          "本次通过PowerShell成功读取PMC原论文HTML；此前source metadata仅记录搜索段落，本次新增读源事实在本支持及作者报告保存，不改共享metadata。"
+        ],
+        "relation": "supports",
+        "assessment": "原有凝血病和严重出血导致凝血成分不足。"
       }
     ],
     "claims": [
@@ -345,6 +434,26 @@
             "assessment": "Anaemia reduces tolerance and risk assessment/birth setting."
           }
         ]
+      },
+      {
+        "id": "p002-causes_risks-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "胎盘迟迟未娩出时称为胎盘滞留；胎盘已经娩出但有部分组织留在子宫内则是胎盘残留，两者需要医生分别判断。凝血缺陷是血液形成稳定血块的能力受损：它可以是原有的问题，也可能在严重失血过程中出现或加重，使出血更难停止。",
+          "en": "A retained placenta has failed to deliver; retained placental tissue means some tissue remains in the uterus after placental delivery. Clinicians assess these separately. A clotting defect impairs the blood’s ability to form stable clots: it may predate birth or develop or worsen during severe blood loss, making bleeding harder to stop."
+        },
+        "supports": [
+          {
+            "source_id": "pph-cma-2023",
+            "locator": "处理二(三)150–152；处理一(四)108；病因41",
+            "assessment": "胎盘滞留/残留分别处理；出血丢失凝血成分和病因互相影响。"
+          },
+          {
+            "source_id": "pph-nata-thromboprophylaxis",
+            "locator": "Inherited bleeding disorders；Assessment of haemostatic competence；Fibrinogen replacement therapy",
+            "assessment": "原有凝血病和严重出血导致凝血成分不足。"
+          }
+        ]
       }
     ],
     "independence": {
@@ -357,6 +466,45 @@
       "resolution": "WHO2025 therapeutic early-response threshold differs in purpose from CN2023/olderUK classification. Evidence predominantly vaginal; caesarean evidence less certain. UKNICE carboprost-asthma avoid recommendation and manufacturer caution retain different wording. Local clinicians individualize; none is a home dosing/waiting rule."
     },
     "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_p0_neurology",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "b1-acute-pph-east-kent",
+        "b1-acute-pph-nice-intrapartum",
+        "b1-acute-pph-rcog",
+        "pph-carboprost-smpc",
+        "pph-cdc-maternal-warning-signs",
+        "pph-cleveland",
+        "pph-cma-2023",
+        "pph-cochrane-txa-caesarean",
+        "pph-cochrane-txa-vaginal",
+        "pph-ebcog-2025",
+        "pph-nata-thromboprophylaxis",
+        "pph-nice-asthma-guideline",
+        "pph-norfolk-postnatal-emergency",
+        "pph-who-2025-guideline"
+      ],
+      "findings": [
+        {
+          "id": "PPH-ACTION-LABEL",
+          "status": "resolved",
+          "finding": "New treatment and medication paragraphs expressed treatment actions but were initially labelled explanation.",
+          "resolution": "Author relabelled p002-treatment-1 and p002-medications-1 as action. Retained placental management has CMA/NICE; component selection and medicine roles have CMA/NATA."
+        },
+        {
+          "id": "PPH-SINGLE-SOURCE-RECOMMENDATION",
+          "status": "resolved",
+          "finding": "NICE-only recommendation against routine IV uterotonics solely for retained placenta lacked independent support for that exact prescribing restriction.",
+          "resolution": "Author removed that clause; retained causal management and TXA-versus-component explanation supported by CMA/NATA. Targeted final text reread in both languages."
+        }
+      ],
+      "resolution": "Accepted as an editorial content candidate after targeted revisions, not clinician sign-off and not blanket ICD completion. Six changed sections read in Chinese and English; shared action conditions match. Existing blood-loss thresholds are attributed and not home waiting targets; new third-stage advice explicitly prohibits waiting for a minute threshold. No new dose, transfusion ratio or fixed follow-up schedule. All fourteen records and source hashes checked, including eight unchanged records."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-02-postpartum-hemorrhage-independent.json",
+    "prior_accepted_review": {
       "status": "accepted",
       "author": "/root/retinal_targeted",
       "reviewer": "/root/priority_medical_rules",
@@ -399,9 +547,7 @@
         }
       ],
       "resolution": "Accepted after one independent full claim/source pass and a targeted recheck of two minimal corrections. This is source-based editorial verification by a separate agent, not clinician certification. Clinical review remains false; ICD semantic mapping and release integration remain separate."
-    },
-    "unresolved_questions": [],
-    "review_report": "reports/p0-postpartum-hemorrhage-independent.json"
+    }
   },
   {
     "id": "p001-postpartum-hemorrhage-red_flags",
@@ -643,11 +789,11 @@
       "id": "postpartum-hemorrhage",
       "section": "care"
     },
-    "content_sha256": "db286d85fc310be0a7b230e36a868d4a27827f2e2a67be26182389108f8236b4",
+    "content_sha256": "30c9eaaaf7a1303837c6b38c80cf40f9a830ebe5b0622eb151adaa5185aa461f",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/priority_medical_rules",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_neurology",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -730,6 +876,38 @@
         ],
         "relation": "supports",
         "assessment": "care-4: Increasinganemiasymptoms promptcontact ratherthanroutinewait."
+      },
+      {
+        "source_id": "pph-cma-2023",
+        "source_metadata_sha256": "65b48cc32974042b4e0a1ff594f2f5b94bd64dd2b0a0c379650f1255069a71d5",
+        "locator": "处理一93–108；处理二(三)150",
+        "source_version": "CMA2023，2023-07-10官网；58(6):401–409",
+        "accessed_at": "2026-10-02",
+        "population": "产后出血；胎盘未娩出伴活动性出血或凝血功能异常；中国指南",
+        "region": "CN",
+        "independence_group": "CN-CMA",
+        "upstream_evidence": [
+          "分别制定的指南/共识，不是互相转载；WHO/FIGO等指南和研究可能共同引用，NATA四组织仅计一个来源。",
+          "本次通过学会官方HTML实际阅读，图表未读；四种病因可互为因果、动态监测与病因治疗、胎盘和凝血成分处理。"
+        ],
+        "relation": "supports",
+        "assessment": "早呼救、复苏和胎盘未出伴活动性出血立即处理。"
+      },
+      {
+        "source_id": "b1-acute-pph-nice-intrapartum",
+        "source_metadata_sha256": "d2d555b2437c76621851a8205d2bd60a0e17d6adf91ed733a0c6a416e0372c1e",
+        "locator": "1.10.24–28；1.10.33",
+        "source_version": "NG235官网2026-06-09更新；所引第三产程条款2014/2023",
+        "accessed_at": "2026-10-02",
+        "population": "英国分娩照护，胎盘尚未娩出及持续产后出血",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "分别制定的指南/共识，不是互相转载；WHO/FIGO等指南和研究可能共同引用，NATA四组织仅计一个来源。",
+          "本次PowerShell从NICE官网获取并实际阅读这些段落；定义第三产程，出血与无出血胎盘滞留的不同处理、专业转诊/麻醉和持续出血处理。"
+        ],
+        "relation": "supports",
+        "assessment": "过度出血处置、胎盘滞留转产科；30/60分钟不是出血等待许可。"
       }
     ],
     "claims": [
@@ -822,6 +1000,26 @@
             "assessment": "Emergency branch explicit."
           }
         ]
+      },
+      {
+        "id": "p002-care-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "胎盘尚未娩出时已经大量出血，要立即叫医护人员；不能等待胎盘自然娩出或等满某个分钟数。团队会同时处理出血和循环问题，并评估是否需要在具备产科救治条件的场所处理胎盘。",
+          "en": "If heavy bleeding begins before the placenta has delivered, summon clinical staff immediately; do not wait for spontaneous placental delivery or for a set number of minutes. The team treats bleeding and circulatory problems together and assesses whether placental care is needed in a setting with obstetric emergency facilities."
+        },
+        "supports": [
+          {
+            "source_id": "pph-cma-2023",
+            "locator": "处理一93–108；处理二(三)150",
+            "assessment": "早呼救、复苏和胎盘未出伴活动性出血立即处理。"
+          },
+          {
+            "source_id": "b1-acute-pph-nice-intrapartum",
+            "locator": "1.10.24–28；1.10.33",
+            "assessment": "过度出血处置、胎盘滞留转产科；30/60分钟不是出血等待许可。"
+          }
+        ]
       }
     ],
     "independence": {
@@ -834,6 +1032,45 @@
       "resolution": "WHO2025 therapeutic early-response threshold differs in purpose from CN2023/olderUK classification. Evidence predominantly vaginal; caesarean evidence less certain. UKNICE carboprost-asthma avoid recommendation and manufacturer caution retain different wording. Local clinicians individualize; none is a home dosing/waiting rule."
     },
     "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_p0_neurology",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "b1-acute-pph-east-kent",
+        "b1-acute-pph-nice-intrapartum",
+        "b1-acute-pph-rcog",
+        "pph-carboprost-smpc",
+        "pph-cdc-maternal-warning-signs",
+        "pph-cleveland",
+        "pph-cma-2023",
+        "pph-cochrane-txa-caesarean",
+        "pph-cochrane-txa-vaginal",
+        "pph-ebcog-2025",
+        "pph-nata-thromboprophylaxis",
+        "pph-nice-asthma-guideline",
+        "pph-norfolk-postnatal-emergency",
+        "pph-who-2025-guideline"
+      ],
+      "findings": [
+        {
+          "id": "PPH-ACTION-LABEL",
+          "status": "resolved",
+          "finding": "New treatment and medication paragraphs expressed treatment actions but were initially labelled explanation.",
+          "resolution": "Author relabelled p002-treatment-1 and p002-medications-1 as action. Retained placental management has CMA/NICE; component selection and medicine roles have CMA/NATA."
+        },
+        {
+          "id": "PPH-SINGLE-SOURCE-RECOMMENDATION",
+          "status": "resolved",
+          "finding": "NICE-only recommendation against routine IV uterotonics solely for retained placenta lacked independent support for that exact prescribing restriction.",
+          "resolution": "Author removed that clause; retained causal management and TXA-versus-component explanation supported by CMA/NATA. Targeted final text reread in both languages."
+        }
+      ],
+      "resolution": "Accepted as an editorial content candidate after targeted revisions, not clinician sign-off and not blanket ICD completion. Six changed sections read in Chinese and English; shared action conditions match. Existing blood-loss thresholds are attributed and not home waiting targets; new third-stage advice explicitly prohibits waiting for a minute threshold. No new dose, transfusion ratio or fixed follow-up schedule. All fourteen records and source hashes checked, including eight unchanged records."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-02-postpartum-hemorrhage-independent.json",
+    "prior_accepted_review": {
       "status": "accepted",
       "author": "/root/retinal_targeted",
       "reviewer": "/root/priority_medical_rules",
@@ -876,9 +1113,7 @@
         }
       ],
       "resolution": "Accepted after one independent full claim/source pass and a targeted recheck of two minimal corrections. This is source-based editorial verification by a separate agent, not clinician certification. Clinical review remains false; ICD semantic mapping and release integration remain separate."
-    },
-    "unresolved_questions": [],
-    "review_report": "reports/p0-postpartum-hemorrhage-independent.json"
+    }
   },
   {
     "id": "p001-postpartum-hemorrhage-diagnosis",
@@ -887,19 +1122,19 @@
       "id": "postpartum-hemorrhage",
       "section": "diagnosis"
     },
-    "content_sha256": "ade88d147b3ce0eaef9f04676f19a5580eade027b74b7ec2934f3fa30f8d96bf",
+    "content_sha256": "0371ced3cfbf2b2f37c5a85b335a5b94589e9ad2ada096340a0bdb4170b6ba8f",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/priority_medical_rules",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_neurology",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
       {
         "source_id": "pph-cma-2023",
         "source_metadata_sha256": "65b48cc32974042b4e0a1ff594f2f5b94bd64dd2b0a0c379650f1255069a71d5",
-        "locator": "95–104 | 50–63;95–104 | Definition47; quantitativeassessment50–63",
-        "source_version": "2023-07-10",
+        "locator": "95–104 | 50–63;95–104 | Definition47; quantitativeassessment50–63 | 100–111；157–167",
+        "source_version": "2023-07-10 | 本批增读：CMA2023，2023-07-10官网；58(6):401–409",
         "accessed_at": "2026-10-02",
         "population": "Postpartum people; source-specific acute within24hours/within3hours of birth, secondary24hours–12weeks, vaginal/caesarean, asthma and severe-PPH restrictions are retained in claims and source scope.",
         "region": "CN",
@@ -909,7 +1144,7 @@
           "Independent writing is not independent research replication. WHO/FIGO/ICM one joint group; EBCOG commentary/FIGO office overlap and Cochrane WHO funding/common trials disclosed. East Kent adapts Ontario Midwives and cites RCOG; CDC warning material is AIM."
         ],
         "relation": "supports",
-        "assessment": "diagnosis-1: Clinicalassessment and firstresponse concurrently. diagnosis-2: Measurement/vitals/uterus/placenta/injury/CBC/coagulation/bloodpreparation. diagnosis-4: ExactCNvaginal500/CS1000 orhypovolemia; visualmeasurementunreliable."
+        "assessment": "diagnosis-1: Clinicalassessment and firstresponse concurrently. diagnosis-2: Measurement/vitals/uterus/placenta/injury/CBC/coagulation/bloodpreparation. diagnosis-4: ExactCNvaginal500/CS1000 orhypovolemia; visualmeasurementunreliable. p002-diagnosis-1: 动态凝血评估、四大原因同步检查。"
       },
       {
         "source_id": "b1-acute-pph-nice-intrapartum",
@@ -990,6 +1225,22 @@
         ],
         "relation": "supports",
         "assessment": "diagnosis-4: Homewarningaction independentofmeasuringmilliliters."
+      },
+      {
+        "source_id": "pph-nata-thromboprophylaxis",
+        "source_metadata_sha256": "bc5650db82f7a65c471573dfa5dbdae2f0aec4c743f1c1d4e0c5667264c52e48",
+        "locator": "Recommendation35及前文Assessment of haemostatic competence；Obstetric aspects/4Ts",
+        "source_version": "NATA/FIGO/EBCOG/ESA联合共识2019-02-06，DOI10.2450/2019.0245-18",
+        "accessed_at": "2026-10-02",
+        "population": "严重持续产后出血；遗传出血病妊娠/产后；国际多学科共识",
+        "region": "MULTI_REGION",
+        "independence_group": "NATA-2019-CONSENSUS",
+        "upstream_evidence": [
+          "分别制定的指南/共识，不是互相转载；WHO/FIGO等指南和研究可能共同引用，NATA四组织仅计一个来源。",
+          "本次通过PowerShell成功读取PMC原论文HTML；此前source metadata仅记录搜索段落，本次新增读源事实在本支持及作者报告保存，不改共享metadata。"
+        ],
+        "relation": "supports",
+        "assessment": "常规或粘弹性检查指导成分治疗；病因评估。"
       }
     ],
     "claims": [
@@ -1102,6 +1353,26 @@
             "assessment": "Predominantlyvaginaldata/onebigCSstudy; thresholdnotabsolutesurgerycriterion."
           }
         ]
+      },
+      {
+        "id": "p002-diagnosis-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "严重持续出血时，凝血检查不只看是否贫血，还会反复评估血小板、凝血时间和纤维蛋白原（帮助形成血块的蛋白质）；有条件时可使用更快反映凝血过程的床旁检查。结果帮助选择治疗，仍需同时寻找胎盘、产道损伤或宫缩等原因。",
+          "en": "With severe ongoing bleeding, tests assess more than anemia: platelets, clotting times and fibrinogen, a protein that helps form clots, are repeatedly checked. Where available, bedside tests can provide faster information about clot formation. Results guide treatment while the team also looks for placental problems, injuries or poor uterine contraction."
+        },
+        "supports": [
+          {
+            "source_id": "pph-cma-2023",
+            "locator": "100–111；157–167",
+            "assessment": "动态凝血评估、四大原因同步检查。"
+          },
+          {
+            "source_id": "pph-nata-thromboprophylaxis",
+            "locator": "Recommendation35及前文Assessment of haemostatic competence；Obstetric aspects/4Ts",
+            "assessment": "常规或粘弹性检查指导成分治疗；病因评估。"
+          }
+        ]
       }
     ],
     "independence": {
@@ -1114,6 +1385,45 @@
       "resolution": "WHO2025 therapeutic early-response threshold differs in purpose from CN2023/olderUK classification. Evidence predominantly vaginal; caesarean evidence less certain. UKNICE carboprost-asthma avoid recommendation and manufacturer caution retain different wording. Local clinicians individualize; none is a home dosing/waiting rule."
     },
     "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_p0_neurology",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "b1-acute-pph-east-kent",
+        "b1-acute-pph-nice-intrapartum",
+        "b1-acute-pph-rcog",
+        "pph-carboprost-smpc",
+        "pph-cdc-maternal-warning-signs",
+        "pph-cleveland",
+        "pph-cma-2023",
+        "pph-cochrane-txa-caesarean",
+        "pph-cochrane-txa-vaginal",
+        "pph-ebcog-2025",
+        "pph-nata-thromboprophylaxis",
+        "pph-nice-asthma-guideline",
+        "pph-norfolk-postnatal-emergency",
+        "pph-who-2025-guideline"
+      ],
+      "findings": [
+        {
+          "id": "PPH-ACTION-LABEL",
+          "status": "resolved",
+          "finding": "New treatment and medication paragraphs expressed treatment actions but were initially labelled explanation.",
+          "resolution": "Author relabelled p002-treatment-1 and p002-medications-1 as action. Retained placental management has CMA/NICE; component selection and medicine roles have CMA/NATA."
+        },
+        {
+          "id": "PPH-SINGLE-SOURCE-RECOMMENDATION",
+          "status": "resolved",
+          "finding": "NICE-only recommendation against routine IV uterotonics solely for retained placenta lacked independent support for that exact prescribing restriction.",
+          "resolution": "Author removed that clause; retained causal management and TXA-versus-component explanation supported by CMA/NATA. Targeted final text reread in both languages."
+        }
+      ],
+      "resolution": "Accepted as an editorial content candidate after targeted revisions, not clinician sign-off and not blanket ICD completion. Six changed sections read in Chinese and English; shared action conditions match. Existing blood-loss thresholds are attributed and not home waiting targets; new third-stage advice explicitly prohibits waiting for a minute threshold. No new dose, transfusion ratio or fixed follow-up schedule. All fourteen records and source hashes checked, including eight unchanged records."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-02-postpartum-hemorrhage-independent.json",
+    "prior_accepted_review": {
       "status": "accepted",
       "author": "/root/retinal_targeted",
       "reviewer": "/root/priority_medical_rules",
@@ -1156,9 +1466,7 @@
         }
       ],
       "resolution": "Accepted after one independent full claim/source pass and a targeted recheck of two minimal corrections. This is source-based editorial verification by a separate agent, not clinician certification. Clinical review remains false; ICD semantic mapping and release integration remain separate."
-    },
-    "unresolved_questions": [],
-    "review_report": "reports/p0-postpartum-hemorrhage-independent.json"
+    }
   },
   {
     "id": "p001-postpartum-hemorrhage-differentials",
@@ -1422,19 +1730,19 @@
       "id": "postpartum-hemorrhage",
       "section": "treatment"
     },
-    "content_sha256": "ad42d824099cdadcea133c119fbd4185e84d7aa4e8f97afed8e264e97f19cfe1",
+    "content_sha256": "19f667f9929e58f704c191b5c9ec72bb25592189ed4d80c16a91215b5069a367",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/priority_medical_rules",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_neurology",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
       {
         "source_id": "pph-cma-2023",
         "source_metadata_sha256": "65b48cc32974042b4e0a1ff594f2f5b94bd64dd2b0a0c379650f1255069a71d5",
-        "locator": "95–108;175 | 95–126 | 124–155 | 108;126–136",
-        "source_version": "2023-07-10",
+        "locator": "95–108;175 | 95–126 | 124–155 | 108;126–136 | 处理二(三)150；处理一(四)108；处理二(四)159–167",
+        "source_version": "2023-07-10 | 本批增读：CMA2023，2023-07-10官网；58(6):401–409",
         "accessed_at": "2026-10-02",
         "population": "Postpartum people; source-specific acute within24hours/within3hours of birth, secondary24hours–12weeks, vaginal/caesarean, asthma and severe-PPH restrictions are retained in claims and source scope.",
         "region": "CN",
@@ -1444,7 +1752,7 @@
           "Independent writing is not independent research replication. WHO/FIGO/ICM one joint group; EBCOG commentary/FIGO office overlap and Cochrane WHO funding/common trials disclosed. East Kent adapts Ontario Midwives and cites RCOG; CDC warning material is AIM."
         ],
         "relation": "supports",
-        "assessment": "treatment-1: Controlsource andmaintainperfusion. treatment-2: SeparatelywrittenCNmulticomponentapproach. treatment-3: Repair/remove/tamponade/embolization/surgery individualized. treatment-4: Transfusionandhysterectomyforfailedconservativecontrol."
+        "assessment": "treatment-1: Controlsource andmaintainperfusion. treatment-2: SeparatelywrittenCNmulticomponentapproach. treatment-3: Repair/remove/tamponade/embolization/surgery individualized. treatment-4: Transfusionandhysterectomyforfailedconservativecontrol. p002-treatment-1: 专业取胎盘及针对缺失成分处理。"
       },
       {
         "source_id": "pph-cleveland",
@@ -1481,8 +1789,8 @@
       {
         "source_id": "b1-acute-pph-nice-intrapartum",
         "source_metadata_sha256": "d2d555b2437c76621851a8205d2bd60a0e17d6adf91ed733a0c6a416e0372c1e",
-        "locator": "1.10.33/35",
-        "source_version": "Original recommendation HTML fetched with system TLS and actual text read:1.10.9 uterotonic adverse effects/ergometrine contraindications;1.10.11/13 prevention;1.10.29–32 PPH risks and care planning;1.10.33 urgent response; table12 treatment options;1.10.35 TXA;1.10.36 explanation/support;1.10.37 persistent bleeding assessment/repair/balloon/surgery. Recommendation years2023 and table2024 retained; exact latest page date not extracted. National intrapartum guidance, not a home dosing protocol. Same NICE group as NG121.",
+        "locator": "1.10.33/35 | 1.10.25–28；1.10.37",
+        "source_version": "Original recommendation HTML fetched with system TLS and actual text read:1.10.9 uterotonic adverse effects/ergometrine contraindications;1.10.11/13 prevention;1.10.29–32 PPH risks and care planning;1.10.33 urgent response; table12 treatment options;1.10.35 TXA;1.10.36 explanation/support;1.10.37 persistent bleeding assessment/repair/balloon/surgery. Recommendation years2023 and table2024 retained; exact latest page date not extracted. National intrapartum guidance, not a home dosing protocol. Same NICE group as NG121. | 本批增读：NG235官网2026-06-09更新；所引第三产程条款2014/2023",
         "accessed_at": "2026-10-02",
         "population": "Postpartum people; source-specific acute within24hours/within3hours of birth, secondary24hours–12weeks, vaginal/caesarean, asthma and severe-PPH restrictions are retained in claims and source scope.",
         "region": "GB",
@@ -1492,7 +1800,7 @@
           "Independent writing is not independent research replication. WHO/FIGO/ICM one joint group; EBCOG commentary/FIGO office overlap and Cochrane WHO funding/common trials disclosed. East Kent adapts Ontario Midwives and cites RCOG; CDC warning material is AIM."
         ],
         "relation": "supports",
-        "assessment": "treatment-2: Immediateuterotonic/massage/fluidsplusTXA."
+        "assessment": "treatment-2: Immediateuterotonic/massage/fluidsplusTXA. p002-treatment-1: 评估、麻醉取胎盘和持续出血成分治疗。"
       },
       {
         "source_id": "b1-acute-pph-rcog",
@@ -1509,6 +1817,22 @@
         ],
         "relation": "supports",
         "assessment": "treatment-4: Transfusion/rarehysterectomy/escalationresources."
+      },
+      {
+        "source_id": "pph-nata-thromboprophylaxis",
+        "source_metadata_sha256": "bc5650db82f7a65c471573dfa5dbdae2f0aec4c743f1c1d4e0c5667264c52e48",
+        "locator": "recommendations35–36、40–42",
+        "source_version": "NATA/FIGO/EBCOG/ESA联合共识2019-02-06，DOI10.2450/2019.0245-18",
+        "accessed_at": "2026-10-02",
+        "population": "严重持续产后出血；遗传出血病妊娠/产后；国际多学科共识",
+        "region": "MULTI_REGION",
+        "independence_group": "NATA-2019-CONSENSUS",
+        "upstream_evidence": [
+          "分别制定的指南/共识，不是互相转载；WHO/FIGO等指南和研究可能共同引用，NATA四组织仅计一个来源。",
+          "本次通过PowerShell成功读取PMC原论文HTML；此前source metadata仅记录搜索段落，本次新增读源事实在本支持及作者报告保存，不改共享metadata。"
+        ],
+        "relation": "supports",
+        "assessment": "按检查/临床情况选择血液成分，非全套例行给药。"
       }
     ],
     "claims": [
@@ -1596,6 +1920,31 @@
             "assessment": "Transfusionandhysterectomyforfailedconservativecontrol."
           }
         ]
+      },
+      {
+        "id": "p002-treatment-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "胎盘未娩出并伴出血时，可能需要由专业人员取出胎盘，并按情况安排麻醉和镇痛。凝血异常时，止住出血源和补充缺少的血液成分常要同时进行：红细胞主要帮助运送氧气，血浆、血小板或补充纤维蛋白原则承担不同的止血任务，并不是所有人都需要全部使用。",
+          "en": "If the placenta has not delivered and bleeding occurs, professionals may need to remove it with appropriate anesthesia and pain relief. With a clotting abnormality, controlling the bleeding source and replacing missing blood components often proceed together: red cells mainly carry oxygen, while plasma, platelets or fibrinogen replacement have different roles in clotting. Not everyone needs every component."
+        },
+        "supports": [
+          {
+            "source_id": "pph-cma-2023",
+            "locator": "处理二(三)150；处理一(四)108；处理二(四)159–167",
+            "assessment": "专业取胎盘及针对缺失成分处理。"
+          },
+          {
+            "source_id": "b1-acute-pph-nice-intrapartum",
+            "locator": "1.10.25–28；1.10.37",
+            "assessment": "评估、麻醉取胎盘和持续出血成分治疗。"
+          },
+          {
+            "source_id": "pph-nata-thromboprophylaxis",
+            "locator": "recommendations35–36、40–42",
+            "assessment": "按检查/临床情况选择血液成分，非全套例行给药。"
+          }
+        ]
       }
     ],
     "independence": {
@@ -1608,6 +1957,45 @@
       "resolution": "WHO2025 therapeutic early-response threshold differs in purpose from CN2023/olderUK classification. Evidence predominantly vaginal; caesarean evidence less certain. UKNICE carboprost-asthma avoid recommendation and manufacturer caution retain different wording. Local clinicians individualize; none is a home dosing/waiting rule."
     },
     "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_p0_neurology",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "b1-acute-pph-east-kent",
+        "b1-acute-pph-nice-intrapartum",
+        "b1-acute-pph-rcog",
+        "pph-carboprost-smpc",
+        "pph-cdc-maternal-warning-signs",
+        "pph-cleveland",
+        "pph-cma-2023",
+        "pph-cochrane-txa-caesarean",
+        "pph-cochrane-txa-vaginal",
+        "pph-ebcog-2025",
+        "pph-nata-thromboprophylaxis",
+        "pph-nice-asthma-guideline",
+        "pph-norfolk-postnatal-emergency",
+        "pph-who-2025-guideline"
+      ],
+      "findings": [
+        {
+          "id": "PPH-ACTION-LABEL",
+          "status": "resolved",
+          "finding": "New treatment and medication paragraphs expressed treatment actions but were initially labelled explanation.",
+          "resolution": "Author relabelled p002-treatment-1 and p002-medications-1 as action. Retained placental management has CMA/NICE; component selection and medicine roles have CMA/NATA."
+        },
+        {
+          "id": "PPH-SINGLE-SOURCE-RECOMMENDATION",
+          "status": "resolved",
+          "finding": "NICE-only recommendation against routine IV uterotonics solely for retained placenta lacked independent support for that exact prescribing restriction.",
+          "resolution": "Author removed that clause; retained causal management and TXA-versus-component explanation supported by CMA/NATA. Targeted final text reread in both languages."
+        }
+      ],
+      "resolution": "Accepted as an editorial content candidate after targeted revisions, not clinician sign-off and not blanket ICD completion. Six changed sections read in Chinese and English; shared action conditions match. Existing blood-loss thresholds are attributed and not home waiting targets; new third-stage advice explicitly prohibits waiting for a minute threshold. No new dose, transfusion ratio or fixed follow-up schedule. All fourteen records and source hashes checked, including eight unchanged records."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-02-postpartum-hemorrhage-independent.json",
+    "prior_accepted_review": {
       "status": "accepted",
       "author": "/root/retinal_targeted",
       "reviewer": "/root/priority_medical_rules",
@@ -1650,9 +2038,7 @@
         }
       ],
       "resolution": "Accepted after one independent full claim/source pass and a targeted recheck of two minimal corrections. This is source-based editorial verification by a separate agent, not clinician certification. Clinical review remains false; ICD semantic mapping and release integration remain separate."
-    },
-    "unresolved_questions": [],
-    "review_report": "reports/p0-postpartum-hemorrhage-independent.json"
+    }
   },
   {
     "id": "p001-postpartum-hemorrhage-medications",
@@ -1661,19 +2047,19 @@
       "id": "postpartum-hemorrhage",
       "section": "medications"
     },
-    "content_sha256": "21d7ae7ff137708f21456a61109c96462ed1d49b15317863f3fda3983d280ae4",
+    "content_sha256": "804b07e585b96c770f92464783f22086cb1cbdf727b1aab47b6bbbca7aea2dff",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/priority_medical_rules",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_neurology",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
       {
         "source_id": "pph-cma-2023",
         "source_metadata_sha256": "65b48cc32974042b4e0a1ff594f2f5b94bd64dd2b0a0c379650f1255069a71d5",
-        "locator": "115–123 | Prevention80; treatment119 | TXA121–123",
-        "source_version": "2023-07-10",
+        "locator": "115–123 | Prevention80; treatment119 | TXA121–123 | 121–123；150；159–167",
+        "source_version": "2023-07-10 | 本批增读：CMA2023，2023-07-10官网；58(6):401–409",
         "accessed_at": "2026-10-02",
         "population": "Postpartum people; source-specific acute within24hours/within3hours of birth, secondary24hours–12weeks, vaginal/caesarean, asthma and severe-PPH restrictions are retained in claims and source scope.",
         "region": "CN",
@@ -1683,7 +2069,7 @@
           "Independent writing is not independent research replication. WHO/FIGO/ICM one joint group; EBCOG commentary/FIGO office overlap and Cochrane WHO funding/common trials disclosed. East Kent adapts Ontario Midwives and cites RCOG; CDC warning material is AIM."
         ],
         "relation": "supports",
-        "assessment": "medications-1: Differentdrugmechanismsandselection. medications-2: Uterotonicsversusantifibrinolytic. medications-4: Ergot contraindicated in hypertension; condition-sensitiveprofessionaluse. medications-txa-time: Within3hbirth recommendationindependentlywritten; notlatePPHregimen."
+        "assessment": "medications-1: Differentdrugmechanismsandselection. medications-2: Uterotonicsversusantifibrinolytic. medications-4: Ergot contraindicated in hypertension; condition-sensitiveprofessionaluse. medications-txa-time: Within3hbirth recommendationindependentlywritten; notlatePPHregimen. p002-medications-1: TXA抗纤溶与补充凝血成分不同，胎盘因素需处理。"
       },
       {
         "source_id": "pph-who-2025-guideline",
@@ -1736,8 +2122,8 @@
       {
         "source_id": "b1-acute-pph-nice-intrapartum",
         "source_metadata_sha256": "d2d555b2437c76621851a8205d2bd60a0e17d6adf91ed733a0c6a416e0372c1e",
-        "locator": "1.10.9 and table12",
-        "source_version": "Original recommendation HTML fetched with system TLS and actual text read:1.10.9 uterotonic adverse effects/ergometrine contraindications;1.10.11/13 prevention;1.10.29–32 PPH risks and care planning;1.10.33 urgent response; table12 treatment options;1.10.35 TXA;1.10.36 explanation/support;1.10.37 persistent bleeding assessment/repair/balloon/surgery. Recommendation years2023 and table2024 retained; exact latest page date not extracted. National intrapartum guidance, not a home dosing protocol. Same NICE group as NG121.",
+        "locator": "1.10.9 and table12 | 1.10.23–24",
+        "source_version": "Original recommendation HTML fetched with system TLS and actual text read:1.10.9 uterotonic adverse effects/ergometrine contraindications;1.10.11/13 prevention;1.10.29–32 PPH risks and care planning;1.10.33 urgent response; table12 treatment options;1.10.35 TXA;1.10.36 explanation/support;1.10.37 persistent bleeding assessment/repair/balloon/surgery. Recommendation years2023 and table2024 retained; exact latest page date not extracted. National intrapartum guidance, not a home dosing protocol. Same NICE group as NG121. | 本批增读：NG235官网2026-06-09更新；所引第三产程条款2014/2023",
         "accessed_at": "2026-10-02",
         "population": "Postpartum people; source-specific acute within24hours/within3hours of birth, secondary24hours–12weeks, vaginal/caesarean, asthma and severe-PPH restrictions are retained in claims and source scope.",
         "region": "GB",
@@ -1747,7 +2133,7 @@
           "Independent writing is not independent research replication. WHO/FIGO/ICM one joint group; EBCOG commentary/FIGO office overlap and Cochrane WHO funding/common trials disclosed. East Kent adapts Ontario Midwives and cites RCOG; CDC warning material is AIM."
         ],
         "relation": "supports",
-        "assessment": "medications-4: Ergometrinecontraindications especiallysevereHTN/preeclampsia."
+        "assessment": "medications-4: Ergometrinecontraindications especiallysevereHTN/preeclampsia. p002-medications-1: 明确英国无出血与过度出血不同，不跨地区强行合并。"
       },
       {
         "source_id": "pph-nice-asthma-guideline",
@@ -1796,6 +2182,22 @@
         ],
         "relation": "supports",
         "assessment": "medications-4: Clotting/anticoagulanthistory relevant."
+      },
+      {
+        "source_id": "pph-nata-thromboprophylaxis",
+        "source_metadata_sha256": "bc5650db82f7a65c471573dfa5dbdae2f0aec4c743f1c1d4e0c5667264c52e48",
+        "locator": "recommendation35–36、40–42",
+        "source_version": "NATA/FIGO/EBCOG/ESA联合共识2019-02-06，DOI10.2450/2019.0245-18",
+        "accessed_at": "2026-10-02",
+        "population": "严重持续产后出血；遗传出血病妊娠/产后；国际多学科共识",
+        "region": "MULTI_REGION",
+        "independence_group": "NATA-2019-CONSENSUS",
+        "upstream_evidence": [
+          "分别制定的指南/共识，不是互相转载；WHO/FIGO等指南和研究可能共同引用，NATA四组织仅计一个来源。",
+          "本次通过PowerShell成功读取PMC原论文HTML；此前source metadata仅记录搜索段落，本次新增读源事实在本支持及作者报告保存，不改共享metadata。"
+        ],
+        "relation": "supports",
+        "assessment": "成分治疗按临床/检验选择。"
       }
     ],
     "claims": [
@@ -1913,6 +2315,26 @@
             "assessment": "Within3hbirth recommendationindependentlywritten; notlatePPHregimen."
           }
         ]
+      },
+      {
+        "id": "p002-medications-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "促宫缩药不能替代胎盘问题的处理。氨甲环酸也不能补回已经缺少的血小板或凝血因子；是否补充血液成分由团队结合持续出血和检查结果决定。",
+          "en": "Uterotonics do not replace management of a placental problem. Tranexamic acid does not replace missing platelets or clotting factors; the team decides on blood components using ongoing bleeding and test results."
+        },
+        "supports": [
+          {
+            "source_id": "pph-cma-2023",
+            "locator": "121–123；150；159–167",
+            "assessment": "TXA抗纤溶与补充凝血成分不同，胎盘因素需处理。"
+          },
+          {
+            "source_id": "pph-nata-thromboprophylaxis",
+            "locator": "recommendation35–36、40–42",
+            "assessment": "成分治疗按临床/检验选择。"
+          }
+        ]
       }
     ],
     "independence": {
@@ -1925,6 +2347,45 @@
       "resolution": "WHO2025 therapeutic early-response threshold differs in purpose from CN2023/olderUK classification. Evidence predominantly vaginal; caesarean evidence less certain. UKNICE carboprost-asthma avoid recommendation and manufacturer caution retain different wording. Local clinicians individualize; none is a home dosing/waiting rule."
     },
     "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root/astra_p0_neurology",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "b1-acute-pph-east-kent",
+        "b1-acute-pph-nice-intrapartum",
+        "b1-acute-pph-rcog",
+        "pph-carboprost-smpc",
+        "pph-cdc-maternal-warning-signs",
+        "pph-cleveland",
+        "pph-cma-2023",
+        "pph-cochrane-txa-caesarean",
+        "pph-cochrane-txa-vaginal",
+        "pph-ebcog-2025",
+        "pph-nata-thromboprophylaxis",
+        "pph-nice-asthma-guideline",
+        "pph-norfolk-postnatal-emergency",
+        "pph-who-2025-guideline"
+      ],
+      "findings": [
+        {
+          "id": "PPH-ACTION-LABEL",
+          "status": "resolved",
+          "finding": "New treatment and medication paragraphs expressed treatment actions but were initially labelled explanation.",
+          "resolution": "Author relabelled p002-treatment-1 and p002-medications-1 as action. Retained placental management has CMA/NICE; component selection and medicine roles have CMA/NATA."
+        },
+        {
+          "id": "PPH-SINGLE-SOURCE-RECOMMENDATION",
+          "status": "resolved",
+          "finding": "NICE-only recommendation against routine IV uterotonics solely for retained placenta lacked independent support for that exact prescribing restriction.",
+          "resolution": "Author removed that clause; retained causal management and TXA-versus-component explanation supported by CMA/NATA. Targeted final text reread in both languages."
+        }
+      ],
+      "resolution": "Accepted as an editorial content candidate after targeted revisions, not clinician sign-off and not blanket ICD completion. Six changed sections read in Chinese and English; shared action conditions match. Existing blood-loss thresholds are attributed and not home waiting targets; new third-stage advice explicitly prohibits waiting for a minute threshold. No new dose, transfusion ratio or fixed follow-up schedule. All fourteen records and source hashes checked, including eight unchanged records."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-02-postpartum-hemorrhage-independent.json",
+    "prior_accepted_review": {
       "status": "accepted",
       "author": "/root/retinal_targeted",
       "reviewer": "/root/priority_medical_rules",
@@ -1967,9 +2428,7 @@
         }
       ],
       "resolution": "Accepted after one independent full claim/source pass and a targeted recheck of two minimal corrections. This is source-based editorial verification by a separate agent, not clinician certification. Clinical review remains false; ICD semantic mapping and release integration remain separate."
-    },
-    "unresolved_questions": [],
-    "review_report": "reports/p0-postpartum-hemorrhage-independent.json"
+    }
   },
   {
     "id": "p001-postpartum-hemorrhage-diet",

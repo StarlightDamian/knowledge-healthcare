@@ -5210,9 +5210,9 @@
   {
     "condition_id": "meningitis",
     "canonical_claim_records": "data/evidence/editorial-checks/p0-meningitis.json",
-    "checked_at": "2026-10-02",
+    "checked_at": "2026-10-03",
     "medical_reviewed": false,
-    "independent_review": "reports/p0-meningitis-independent.json",
+    "independent_review": "reports/p0-02-meningitis-independent.json",
     "inspected_sources": [
       {
         "source_id": "meningitis-adam-tb",
@@ -5226,6 +5226,7 @@
         "source_id": "meningitis-cdc-bacterial-meningitis",
         "url": "https://www.cdc.gov/meningitis/about/bacterial-meningitis.html",
         "locators": [
+          "Risk factors",
           "Risk factors",
           "Risk factors",
           "Complications; Treatment",
@@ -5252,6 +5253,17 @@
           "How it does not spread"
         ],
         "retrieval_scope": "Version 9 September 2025; fungal-meningitis; symptoms, risk groups, transmission, prevention and treatment where present. On 2026-10-02 read Risk factors: advanced HIV, cancer and medicines after organ transplantation explicitly named."
+      },
+      {
+        "source_id": "meningitis-cdc-haemophilus",
+        "url": "https://www.cdc.gov/hi-disease/hcp/clinicians/index.html",
+        "locators": [
+          "Cause; Types; Prevention / Chemoprophylaxis and Vaccination; Diagnosis (lines 31-111)",
+          "Cause; Types; Prevention / Chemoprophylaxis and Vaccination; Diagnosis (lines 31-111)",
+          "Cause; Types; Prevention / Chemoprophylaxis and Vaccination; Diagnosis (lines 31-111)",
+          "Cause; Types; Prevention / Chemoprophylaxis and Vaccination; Diagnosis (lines 31-111)"
+        ],
+        "retrieval_scope": "Cause; Types; Risk factors; Prevention; Diagnosis; Complications (lines 31-124); references (141-143). opened; clinical overview text and references read. Acute treatment is delegated to AAP Red Book, which was not opened. Therefore no antimicrobial regimen or dose is validated here."
       },
       {
         "source_id": "meningitis-cdc-index",
@@ -5303,9 +5315,11 @@
         "url": "https://www.cdc.gov/meningitis/about/viral-meningitis.html",
         "locators": [
           "Risk factors: Close contacts are not likely to develop meningitis",
+          "Risk factors: Close contacts are not likely to develop meningitis",
           "When to seek emergency care; Treatment and recovery",
           "Risk factors; Treatment and recovery",
           "Treatment and recovery: Antiviral medicines",
+          "Risk factors: Close contacts are not likely to develop meningitis",
           "Treatment and recovery",
           "Risk factors: Close contacts; Prevention"
         ],
@@ -5430,6 +5444,8 @@
         "source_id": "meningitis-msd-viral",
         "url": "https://www.msdmanuals.com/home/brain-spinal-cord-and-nerve-disorders/meningitis/viral-meningitis",
         "locators": [
+          "Treatment, lines119–134",
+          "Treatment, lines119–134",
           "Treatment, lines119–134"
         ],
         "retrieval_scope": "Full review/update September 2026. Read Symptoms, Diagnosis, Treatment and Prognosis: immediate treatment if very ill, antiviral exceptions, recovery in people with normal immunity. No claim it independently gives CDC’s full immune-risk hospitalization rule."
@@ -5518,6 +5534,18 @@
         "retrieval_scope": "Updated 29 Oct 2024; reviewed 16 Mar 2026. Read Clinical manifestations and Treating CNS/disseminated disease, maintenance stopping/restarting criteria. Adults/adolescents with HIV and cryptococcosis only; immune recovery example, not a regimen for every fungus."
       },
       {
+        "source_id": "meningitis-nsw-enterovirus",
+        "url": "https://www.health.nsw.gov.au/Infectious/factsheets/Pages/enteroviruses.aspx",
+        "locators": [
+          "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)",
+          "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)",
+          "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)",
+          "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)",
+          "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)"
+        ],
+        "retrieval_scope": "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; Signs of a serious infection; Outbreaks (lines 27-96). opened; full clinical factsheet text read. Old factsheet: vaccine availability and notification rules are local and time-sensitive. Do not export them worldwide. General enterovirus infection does not establish CNS infection."
+      },
+      {
         "source_id": "meningitis-nsw-meningococcal",
         "url": "https://www.health.nsw.gov.au/Infectious/factsheets/Pages/meningococcal_disease.aspx",
         "locators": [
@@ -5552,12 +5580,21 @@
         "retrieval_scope": "Read Management of contacts / Providing antibiotic chemoprophylaxis: identified close contacts of confirmed/probable cases need prophylaxis regardless of vaccination. Used only to corroborate contact assessment after vaccination; outbreak-specific population and timing are not globalized."
       },
       {
+        "source_id": "meningitis-ukhsa-hib",
+        "url": "https://www.gov.uk/government/publications/haemophilus-influenzae-type-b-hib-revised-recommendations-for-the-prevention-of-secondary-cases/revised-recommendations-for-the-prevention-of-secondary-haemophilus-influenzae-type-b-hib-disease",
+        "locators": [
+          "Summary of changes to revised recommendations (lines 81-86); Introduction (87-98); Risk of secondary cases (123-131)"
+        ],
+        "retrieval_scope": "Summary of changes (81-86); Introduction (87-98); Risk of secondary cases (123-131); Eradication of carriage (132-141). initial HTML open successful; summary, introduction and evidence sections through line 141 read; subsequent offset opens timed out. Detailed downstream regimen sections were not successfully read; do not infer drug dose, timing or exceptions from this package. UK policy is not a universal contact rule."
+      },
+      {
         "source_id": "meningitis-who",
         "url": "https://www.who.int/news-room/fact-sheets/detail/meningitis",
         "locators": [
           "Signs and symptoms",
           "Transmission",
           "Diagnosis; Treatment",
+          "Signs and symptoms",
           "Treatment",
           "Prevention: close contact advice",
           "Who is at risk; Signs and symptoms; Treatment",
@@ -5589,7 +5626,9 @@
           "meningitis-mayo-causes",
           "meningitis-mayo-treatment",
           "meningitis-nice-tb",
-          "meningitis-who"
+          "meningitis-who",
+          "meningitis-cdc-viral-meningitis",
+          "meningitis-cdc-haemophilus"
         ],
         "locators": {
           "meningitis-cdc-index": [
@@ -5609,9 +5648,15 @@
           ],
           "meningitis-who": [
             "Signs and symptoms"
+          ],
+          "meningitis-cdc-viral-meningitis": [
+            "Risk factors: Close contacts are not likely to develop meningitis"
+          ],
+          "meningitis-cdc-haemophilus": [
+            "Cause; Types; Prevention / Chemoprophylaxis and Vaccination; Diagnosis (lines 31-111)"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "causes_risks": {
         "source_ids": [
@@ -5625,7 +5670,9 @@
           "meningitis-nhs",
           "meningitis-nice-ng240",
           "meningitis-nsw-meningococcal",
-          "meningitis-who"
+          "meningitis-who",
+          "meningitis-nsw-enterovirus",
+          "meningitis-msd-viral"
         ],
         "locators": {
           "meningitis-cdc-bacterial-meningitis": [
@@ -5660,9 +5707,15 @@
           ],
           "meningitis-who": [
             "Transmission"
+          ],
+          "meningitis-nsw-enterovirus": [
+            "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)"
+          ],
+          "meningitis-msd-viral": [
+            "Treatment, lines119–134"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "red_flags": {
         "source_ids": [
@@ -5677,7 +5730,7 @@
             "When and where to get help; You may not have all symptoms; When and where to get help: emergency symptom bullets; When and where to get help; Rash; Symptoms in babies/under 5; emergency advice for under 5"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "care": {
         "source_ids": [
@@ -5716,7 +5769,7 @@
             "Key points; When to get help"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "diagnosis": {
         "source_ids": [
@@ -5725,7 +5778,10 @@
           "meningitis-msd-acute",
           "meningitis-nice-ng240",
           "meningitis-who",
-          "meningitis-who-guideline"
+          "meningitis-who-guideline",
+          "meningitis-msd-viral",
+          "meningitis-nsw-enterovirus",
+          "meningitis-cdc-haemophilus"
         ],
         "locators": {
           "meningitis-healthdirect": [
@@ -5745,9 +5801,18 @@
           ],
           "meningitis-who-guideline": [
             "A.3 Blood investigations / blood markers: peripheral tests cannot confirm or exclude bacterial meningitis; A.1 contraindications/reasons for deferral; A.4 Cranial imaging; executive summary p xiii / recommendations p28"
+          ],
+          "meningitis-msd-viral": [
+            "Treatment, lines119–134"
+          ],
+          "meningitis-nsw-enterovirus": [
+            "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)"
+          ],
+          "meningitis-cdc-haemophilus": [
+            "Cause; Types; Prevention / Chemoprophylaxis and Vaccination; Diagnosis (lines 31-111)"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "differentials": {
         "source_ids": [
@@ -5786,7 +5851,7 @@
             "What is meningococcal disease? first bullet, lines33–37"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "treatment": {
         "source_ids": [
@@ -5802,7 +5867,11 @@
           "meningitis-nice-tb",
           "meningitis-nih-cryptococcosis",
           "meningitis-rch-clinical",
-          "meningitis-who-guideline"
+          "meningitis-who-guideline",
+          "meningitis-nsw-enterovirus",
+          "meningitis-cdc-haemophilus",
+          "meningitis-cdc-bacterial-meningitis",
+          "meningitis-who"
         ],
         "locators": {
           "meningitis-cdc-fungal-meningitis": [
@@ -5843,9 +5912,21 @@
           ],
           "meningitis-who-guideline": [
             "B.1 General management; B.5 Fluid management / executive-summary Fluid management remarks; Introduction 1.7 at https://www.ncbi.nlm.nih.gov/books/NBK614833/"
+          ],
+          "meningitis-nsw-enterovirus": [
+            "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)"
+          ],
+          "meningitis-cdc-haemophilus": [
+            "Cause; Types; Prevention / Chemoprophylaxis and Vaccination; Diagnosis (lines 31-111)"
+          ],
+          "meningitis-cdc-bacterial-meningitis": [
+            "Risk factors"
+          ],
+          "meningitis-who": [
+            "Signs and symptoms"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "medications": {
         "source_ids": [
@@ -5896,7 +5977,7 @@
             "B.2 Empiric antimicrobial therapy: risk factors, local pneumococcal resistance and beta-lactam allergy remarks"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "diet": {
         "source_ids": [
@@ -5927,7 +6008,7 @@
             "How to treat vomiting; Call 111 now"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "daily_care": {
         "source_ids": [
@@ -5958,7 +6039,7 @@
             "C.4 Hearing loss: Implementation considerations"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "special_populations": {
         "source_ids": [
@@ -5973,7 +6054,9 @@
           "meningitis-nhs",
           "meningitis-nice-ng240",
           "meningitis-who",
-          "meningitis-who-guideline"
+          "meningitis-who-guideline",
+          "meningitis-nsw-enterovirus",
+          "meningitis-cdc-viral-meningitis"
         ],
         "locators": {
           "meningitis-cdc-bacterial-meningitis": [
@@ -6011,9 +6094,15 @@
           ],
           "meningitis-who-guideline": [
             "Introduction 1.7: scope"
+          ],
+          "meningitis-nsw-enterovirus": [
+            "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)"
+          ],
+          "meningitis-cdc-viral-meningitis": [
+            "Risk factors: Close contacts are not likely to develop meningitis"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "prognosis_followup": {
         "source_ids": [
@@ -6064,7 +6153,7 @@
             "C.4 Hearing loss: recommendation and implementation; Introduction 1.7; C.4 Hearing loss; C.4 Hearing loss: Strong recommendation; Justification"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "complications": {
         "source_ids": [
@@ -6087,7 +6176,7 @@
             "Complications and sequelae; Complications and sequelae; Treatment"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "prevention": {
         "source_ids": [
@@ -6100,7 +6189,10 @@
           "meningitis-mayo-causes",
           "meningitis-nhs",
           "meningitis-ukhsa-contacts",
-          "meningitis-who"
+          "meningitis-who",
+          "meningitis-nsw-enterovirus",
+          "meningitis-cdc-haemophilus",
+          "meningitis-ukhsa-hib"
         ],
         "locators": {
           "meningitis-cdc-bacterial-meningitis": [
@@ -6132,9 +6224,18 @@
           ],
           "meningitis-who": [
             "Prevention: Vaccination; Causes; Prevention: Vaccination; Prevention: Chemoprophylaxis"
+          ],
+          "meningitis-nsw-enterovirus": [
+            "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)"
+          ],
+          "meningitis-cdc-haemophilus": [
+            "Cause; Types; Prevention / Chemoprophylaxis and Vaccination; Diagnosis (lines 31-111)"
+          ],
+          "meningitis-ukhsa-hib": [
+            "Summary of changes to revised recommendations (lines 81-86); Introduction (87-98); Risk of secondary cases (123-131)"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       }
     }
   },
@@ -8294,9 +8395,9 @@
   {
     "condition_id": "postpartum-hemorrhage",
     "canonical_claim_records": "data/evidence/editorial-checks/p0-postpartum-hemorrhage.json",
-    "checked_at": "2026-10-02",
+    "checked_at": "2026-10-03",
     "medical_reviewed": false,
-    "independent_review": "reports/p0-postpartum-hemorrhage-independent.json",
+    "independent_review": "reports/p0-02-postpartum-hemorrhage-independent.json",
     "inspected_sources": [
       {
         "source_id": "b1-acute-pph-rcog",
@@ -8339,12 +8440,13 @@
         "source_id": "pph-cma-2023",
         "url": "https://cspm.cma.org.cn/index/news?id=3474",
         "locators": [
-          "Assessment95–108; shock175 | Four causes/risk41; diagnosis47",
-          "Four causes41; cause-specific care104 | Causes41; atony115–119; tissue146–155 | Causes41; injury138–145; placenta146–155 | Risk41; preparation71",
-          "95–104 | 50–63;95–104 | Definition47; quantitativeassessment50–63",
+          "Assessment95–108; shock175 | Four causes/risk41; diagnosis47 | 预防二/73–87；处理二(三)150 | 病因41",
+          "Four causes41; cause-specific care104 | Causes41; atony115–119; tissue146–155 | Causes41; injury138–145; placenta146–155 | Risk41; preparation71 | 处理二(三)150–152；处理一(四)108；病因41",
+          "处理一93–108；处理二(三)150",
+          "95–104 | 50–63;95–104 | Definition47; quantitativeassessment50–63 | 100–111；157–167",
           "Retained tissue146–155",
-          "95–108;175 | 95–126 | 124–155 | 108;126–136",
-          "115–123 | Prevention80; treatment119 | TXA121–123",
+          "95–108;175 | 95–126 | 124–155 | 108;126–136 | 处理二(三)150；处理一(四)108；处理二(四)159–167",
+          "115–123 | Prevention80; treatment119 | TXA121–123 | 121–123；150；159–167",
           "41;71 | 41 | 41;71;146–155 | 80;119",
           "41;95–108;175 | 175",
           "41;71;75–87;95–104 | 41;71 | 50–63;75–87;95–104"
@@ -8399,9 +8501,11 @@
         "source_id": "b1-acute-pph-nice-intrapartum",
         "url": "https://www.nice.org.uk/guidance/ng235/chapter/Recommendations",
         "locators": [
+          "1.10.2；1.10.24",
+          "1.10.24–28；1.10.33",
           "1.10.33 | 1.10.33 and1.10.37",
-          "1.10.33/35",
-          "1.10.9 and table12",
+          "1.10.33/35 | 1.10.25–28；1.10.37",
+          "1.10.9 and table12 | 1.10.23–24",
           "1.10.9",
           "1.10.11/13;1.10.33/37"
         ],
@@ -8469,6 +8573,10 @@
         "source_id": "pph-nata-thromboprophylaxis",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6476742/",
         "locators": [
+          "Inherited bleeding disorders；Assessment of haemostatic competence；Fibrinogen replacement therapy",
+          "Recommendation35及前文Assessment of haemostatic competence；Obstetric aspects/4Ts",
+          "recommendations35–36、40–42",
+          "recommendation35–36、40–42",
           "Thromboprophylaxis section; recommendation50"
         ],
         "retrieval_scope": "Original article’s indexed Thromboprophylaxis section and recommendation50 actually read, DOI10.2450/2019.0245-18: PPH/transfusion increase postpartum VTE risk; severe/massive PPH requires individualized prophylaxis after bleeding controlled and coagulopathy corrected. Author/methods abstract also read; full direct PMC page returned recaptcha, not attested as full article. Cites observational studies151–152 and other guidelines; joint institutional overlap with later WHO/EBCOG acknowledged. Independent NATA writing corroborates RCOG; not separate trial replication."
@@ -8479,7 +8587,8 @@
         "source_ids": [
           "b1-acute-pph-rcog",
           "pph-cleveland",
-          "pph-cma-2023"
+          "pph-cma-2023",
+          "b1-acute-pph-nice-intrapartum"
         ],
         "locators": {
           "b1-acute-pph-rcog": [
@@ -8489,29 +8598,36 @@
             "Overview44–65 | Types61–65 | Overview44–65; symptoms70–80; treatment164–177"
           ],
           "pph-cma-2023": [
-            "Assessment95–108; shock175 | Four causes/risk41; diagnosis47"
+            "Assessment95–108; shock175 | Four causes/risk41; diagnosis47 | 预防二/73–87；处理二(三)150 | 病因41"
+          ],
+          "b1-acute-pph-nice-intrapartum": [
+            "1.10.2；1.10.24"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "causes_risks": {
         "source_ids": [
           "pph-cma-2023",
           "pph-cleveland",
-          "b1-acute-pph-rcog"
+          "b1-acute-pph-rcog",
+          "pph-nata-thromboprophylaxis"
         ],
         "locators": {
           "pph-cma-2023": [
-            "Four causes41; cause-specific care104 | Causes41; atony115–119; tissue146–155 | Causes41; injury138–145; placenta146–155 | Risk41; preparation71"
+            "Four causes41; cause-specific care104 | Causes41; atony115–119; tissue146–155 | Causes41; injury138–145; placenta146–155 | Risk41; preparation71 | 处理二(三)150–152；处理一(四)108；病因41"
           ],
           "pph-cleveland": [
             "Causes84–94"
           ],
           "b1-acute-pph-rcog": [
             "Risk table163–177; Secondary PPH237–239 | Risks163–187"
+          ],
+          "pph-nata-thromboprophylaxis": [
+            "Inherited bleeding disorders；Assessment of haemostatic competence；Fibrinogen replacement therapy"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "red_flags": {
         "source_ids": [
@@ -8534,7 +8650,7 @@
             "Vaginal bleeding285–289; urgent OB contact364–368"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "care": {
         "source_ids": [
@@ -8542,7 +8658,9 @@
           "pph-cdc-maternal-warning-signs",
           "pph-norfolk-postnatal-emergency",
           "pph-cleveland",
-          "b1-acute-pph-east-kent"
+          "b1-acute-pph-east-kent",
+          "pph-cma-2023",
+          "b1-acute-pph-nice-intrapartum"
         ],
         "locators": {
           "b1-acute-pph-rcog": [
@@ -8559,9 +8677,15 @@
           ],
           "b1-acute-pph-east-kent": [
             "Physical recovery102–124; follow-up188–199"
+          ],
+          "pph-cma-2023": [
+            "处理一93–108；处理二(三)150"
+          ],
+          "b1-acute-pph-nice-intrapartum": [
+            "1.10.24–28；1.10.33"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "diagnosis": {
         "source_ids": [
@@ -8570,11 +8694,12 @@
           "pph-who-2025-guideline",
           "pph-ebcog-2025",
           "b1-acute-pph-rcog",
-          "pph-cdc-maternal-warning-signs"
+          "pph-cdc-maternal-warning-signs",
+          "pph-nata-thromboprophylaxis"
         ],
         "locators": {
           "pph-cma-2023": [
-            "95–104 | 50–63;95–104 | Definition47; quantitativeassessment50–63"
+            "95–104 | 50–63;95–104 | Definition47; quantitativeassessment50–63 | 100–111；157–167"
           ],
           "b1-acute-pph-nice-intrapartum": [
             "1.10.33 | 1.10.33 and1.10.37"
@@ -8590,9 +8715,12 @@
           ],
           "pph-cdc-maternal-warning-signs": [
             "24–26;129–133"
+          ],
+          "pph-nata-thromboprophylaxis": [
+            "Recommendation35及前文Assessment of haemostatic competence；Obstetric aspects/4Ts"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "differentials": {
         "source_ids": [
@@ -8623,7 +8751,7 @@
             "Symptoms70–80; Living With214"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "treatment": {
         "source_ids": [
@@ -8631,11 +8759,12 @@
           "pph-cleveland",
           "pph-who-2025-guideline",
           "b1-acute-pph-nice-intrapartum",
-          "b1-acute-pph-rcog"
+          "b1-acute-pph-rcog",
+          "pph-nata-thromboprophylaxis"
         ],
         "locators": {
           "pph-cma-2023": [
-            "95–108;175 | 95–126 | 124–155 | 108;126–136"
+            "95–108;175 | 95–126 | 124–155 | 108;126–136 | 处理二(三)150；处理一(四)108；处理二(四)159–167"
           ],
           "pph-cleveland": [
             "164–177"
@@ -8644,13 +8773,16 @@
             "PDF62–65/printed44–47 rec26–29"
           ],
           "b1-acute-pph-nice-intrapartum": [
-            "1.10.33/35"
+            "1.10.33/35 | 1.10.25–28；1.10.37"
           ],
           "b1-acute-pph-rcog": [
             "212–220"
+          ],
+          "pph-nata-thromboprophylaxis": [
+            "recommendations35–36、40–42"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "medications": {
         "source_ids": [
@@ -8661,11 +8793,12 @@
           "b1-acute-pph-nice-intrapartum",
           "pph-nice-asthma-guideline",
           "pph-carboprost-smpc",
-          "b1-acute-pph-rcog"
+          "b1-acute-pph-rcog",
+          "pph-nata-thromboprophylaxis"
         ],
         "locators": {
           "pph-cma-2023": [
-            "115–123 | Prevention80; treatment119 | TXA121–123"
+            "115–123 | Prevention80; treatment119 | TXA121–123 | 121–123；150；159–167"
           ],
           "pph-who-2025-guideline": [
             "PDF60–64/printed42–46 rec24–29 | PDF50–52/printed32–34 rec14–15;62–63/44–45 rec27 | PDF62–63/printed44–45 rec27"
@@ -8677,7 +8810,7 @@
             "Keymessages/Authorsconclusions"
           ],
           "b1-acute-pph-nice-intrapartum": [
-            "1.10.9 and table12"
+            "1.10.9 and table12 | 1.10.23–24"
           ],
           "pph-nice-asthma-guideline": [
             "1.4.2"
@@ -8687,9 +8820,12 @@
           ],
           "b1-acute-pph-rcog": [
             "Risk table163–177"
+          ],
+          "pph-nata-thromboprophylaxis": [
+            "recommendation35–36、40–42"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "diet": {
         "source_ids": [
@@ -8712,7 +8848,7 @@
             "197–220"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "daily_care": {
         "source_ids": [
@@ -8735,7 +8871,7 @@
             "225–231;241"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "special_populations": {
         "source_ids": [
@@ -8766,7 +8902,7 @@
             "4.4"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "prognosis_followup": {
         "source_ids": [
@@ -8789,7 +8925,7 @@
             "Outlook192; Prevention197"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "complications": {
         "source_ids": [
@@ -8820,7 +8956,7 @@
             "250–256"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       },
       "prevention": {
         "source_ids": [
@@ -8851,7 +8987,7 @@
             "PDF76/printed58 supportivecare"
           ]
         },
-        "uncertainty_boundary": "Actual claim-specific source scope, population, region and independence are recorded in the independent review and claim ledger."
+        "uncertainty_boundary": "Claim-specific scope and inherited unchanged sections are identified in the current ledger and independent delta review."
       }
     }
   }

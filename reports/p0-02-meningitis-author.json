@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "status": "author_candidate_pending_independent_review",
+  "medical_reviewed": false,
+  "author": "/root/astra_p0_neurology",
+  "prepared_at": "2026-10-02",
+  "baseline": {
+    "article_sha256": "09e800db673eb77df2d3d487dd0e8305460416cf3210db6f1e3e11095425602f",
+    "editorial_sha256": "344bf4fc5a5c8700460bb2bb5d110319e947d0c2844738e0ef42aa45e2d15617"
+  },
+  "changes": [
+    {
+      "section": "summary",
+      "old_content_sha256": "20541354a8fb8f1d8c46f08305ccbc8a64327b8ab2dd6585989beed0ce1f1ca4",
+      "new_content_sha256": "bc75ec9284a63deba1bb78522f29273b25e559613097403f5377601815d8babc",
+      "added_claim_ids": [
+        "p0-02-summary-3"
+      ],
+      "preserved_baseline_claims": true,
+      "status": "pending"
+    },
+    {
+      "section": "causes_risks",
+      "old_content_sha256": "c486967ecbc99134215d1422bee1ab5a367abd760dc62fd0e0a0b8941632a46f",
+      "new_content_sha256": "48e8e52d14bc02681c723b32149660ad8ee7bae27f65bd5b5b38c9cb67072d0c",
+      "added_claim_ids": [
+        "p0-02-causes_risks-5"
+      ],
+      "preserved_baseline_claims": true,
+      "status": "pending"
+    },
+    {
+      "section": "diagnosis",
+      "old_content_sha256": "57145b1be87ba60b57e5dff815c28ca5baa186c218a2413ef9371c7eba251aa3",
+      "new_content_sha256": "a2a664e67d362dc4dfef0eae1b69497cec724edd0291dcb64cddae57f848db99",
+      "added_claim_ids": [
+        "p0-02-diagnosis-4"
+      ],
+      "preserved_baseline_claims": true,
+      "status": "pending"
+    },
+    {
+      "section": "treatment",
+      "old_content_sha256": "7d0bffe2e1e5461abcee9eeaf4bc08dd6661bde89f5aaf5edaac9081882723bb",
+      "new_content_sha256": "37d7a02b8c192dbf72d2b0a4e71818d893654339e2a31568d96d39eaa7b17412",
+      "added_claim_ids": [
+        "p0-02-treatment-6",
+        "p0-02-treatment-haemophilus"
+      ],
+      "preserved_baseline_claims": true,
+      "status": "pending"
+    },
+    {
+      "section": "special_populations",
+      "old_content_sha256": "ae52be2f1076ff26a35657bcbdf30fda7a366091756e6926201ce4d31047b807",
+      "new_content_sha256": "c341126101c668cbfdcc93dea8933606e77b5978201d4347a4fa31f1b3f4997f",
+      "added_claim_ids": [
+        "p0-02-special_populations-4"
+      ],
+      "preserved_baseline_claims": true,
+      "status": "pending"
+    },
+    {
+      "section": "prevention",
+      "old_content_sha256": "0cb1b2bc921587c36e45bb1eab22848bfb16e32d51fe6fd77deee22bebdf3939",
+      "new_content_sha256": "cc8937f80f9276cead0ed552f16c0a727a216cde9591bf840f3114ae0f657acc",
+      "added_claim_ids": [
+        "p0-02-prevention-5",
+        "p0-02-prevention-7"
+      ],
+      "preserved_baseline_claims": true,
+      "status": "pending"
+    }
+  ],
+  "actual_read": [
+    {
+      "source_id": "meningitis-cdc-viral-meningitis",
+      "url": "https://www.cdc.gov/meningitis/about/viral-meningitis.html",
+      "locator": "What it is; Risk factors; Prevention; Treatment and recovery (lines 32-124)",
+      "read_at": "2026-10-02",
+      "access_status": "Relevant page text opened and read this task",
+      "upstream": "All CDC pages one author group. Reopened and read 2026-10-02; existing source metadata deliberately unchanged."
+    },
+    {
+      "source_id": "meningitis-cdc-haemophilus",
+      "url": "https://www.cdc.gov/hi-disease/hcp/clinicians/index.html",
+      "locator": "Cause; Types; Prevention / Chemoprophylaxis and Vaccination; Diagnosis (lines 31-111)",
+      "read_at": "2026-10-02",
+      "access_status": "Relevant page text opened and read this task",
+      "upstream": "All CDC pages count as one editorial group; 2025 overview cites Oliver et al. MMWR 2023 and Blain et al. 2014. Non-b secondary transmission possible; old ACIP claim of no documented transmission not used."
+    },
+    {
+      "source_id": "meningitis-nsw-enterovirus",
+      "url": "https://www.health.nsw.gov.au/Infectious/factsheets/Pages/enteroviruses.aspx",
+      "locator": "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; How is it prevented? (lines 27-76)",
+      "read_at": "2026-10-02",
+      "access_status": "Relevant page text opened and read this task",
+      "upstream": "Independent NSW Health authored factsheet; old 2018 version used only for stable biology and general supportive care. NSW and CDC are explicit upstream sources of Healthdirect enterovirus content, so Healthdirect is not counted again."
+    },
+    {
+      "source_id": "meningitis-msd-viral",
+      "url": "https://www.msdmanuals.com/home/brain-spinal-cord-and-nerve-disorders/meningitis/viral-meningitis",
+      "locator": "Causes / Transmission; Diagnosis; Treatment (September 2026, lines 59-134)",
+      "read_at": "2026-10-02",
+      "access_status": "Relevant page text opened and read this task",
+      "upstream": "Independent MSD author Robyn S. Klein; reopened September 2026 revision on 2026-10-02. No independent trial replication asserted."
+    },
+    {
+      "source_id": "meningitis-ukhsa-hib",
+      "url": "https://www.gov.uk/government/publications/haemophilus-influenzae-type-b-hib-revised-recommendations-for-the-prevention-of-secondary-cases/revised-recommendations-for-the-prevention-of-secondary-haemophilus-influenzae-type-b-hib-disease",
+      "locator": "Summary of changes to revised recommendations (lines 81-86); Introduction (87-98); Risk of secondary cases (123-131)",
+      "read_at": "2026-10-02",
+      "access_status": "Initial preparation open succeeded; later retries timed out; only already-read summary/evidence used",
+      "upstream": "Independent UKHSA guidance informed partly by pre-vaccine US contact studies, potentially shared with CDC/ACIP. UK 2024 eligibility differs from US policy; only conditional specialist contact assessment used. First open succeeded; later reopens timed out."
+    }
+  ],
+  "mapping_proposals": [
+    {
+      "code": "1C8E.1",
+      "target": "meningitis",
+      "recommendation": "candidate_for_complete_after_independent_claim_and_full_scope_review",
+      "scope": "Named enterovirus branch plus inherited general syndrome, emergency, aftercare and follow-up sections; exclude separately coded neonatal disease, encephalitis and generic enterovirus infection."
+    },
+    {
+      "code": "1D01.00",
+      "target": "meningitis",
+      "recommendation": "candidate_for_complete_after_independent_claim_and_full_scope_review",
+      "scope": "All H. influenzae types covered by bacterial syndrome pathway; Hib-only vaccine/contact branch explicitly limited. Non-b treatment not separately prescribed. Independent reviewer must judge whether this allocation meets full leaf scope."
+    }
+  ],
+  "unresolved_questions": [
+    "All six changed sections pending independent review; author does not attest cross_checked.",
+    "No exact antimicrobial dose/duration, contact time window or global vaccine availability claim added.",
+    "UKHSA detailed regimen section was not read; only first successful summary/evidence extraction supports conditional contact assessment.",
+    "Independent review must confirm whether inherited general sections plus named branches close each exact leaf; mapping stays unchanged until then."
+  ],
+  "unchanged_sections": [
+    "red_flags",
+    "care",
+    "differentials",
+    "medications",
+    "diet",
+    "daily_care",
+    "prognosis_followup",
+    "complications"
+  ],
+  "output_hashes": {
+    "drafts/p0-02/meningitis.json": "b8bf095a7a81938d182a8ad4a4ba0789a1da1895d499622840eba2e07c34348e",
+    "drafts/p0-02/meningitis-sources.json": "308987afede9916d7167b10a90506ec0333b8ac6d08ae8aacddc9d320a3e6a25",
+    "drafts/p0-02/meningitis-editorial.json": "b07b8f2a5393f4f1f32e8618987849c592ab136611a2dd8d220e33fbee9c1c69"
+  },
+  "validation": {
+    "method": "Node structural and canonical-hash checks matching src/guide/editorial.py; independent medical review pending",
+    "checks": [
+      "14 records; all content hashes match",
+      "All claim excerpts bound in both languages",
+      "All source metadata hashes match immutable existing plus three new sources",
+      "Eight untouched sections and records byte-equivalent as canonical objects",
+      "Six changed sections pending; no author cross-check attestation"
+    ]
+  },
+  "targeted_revision": {
+    "requested_by": "/root/astra_p0_maternal",
+    "changes": [
+      "Treatment H. influenzae statement reduced to taxonomy only; no action disguised as explanation.",
+      "Removed redundant Hib vaccine protection-boundary addition rather than leaving a benefit claim with one independent source; original reviewed vaccine text and species/subtype distinction remain."
+    ]
+  },
+  "structural_revision": {
+    "checked_at": "2026-10-03",
+    "change": "Rebuilt article.source_ids as sorted union of section source_ids; no medical text, section object, record or source metadata changed.",
+    "body_canonical_sha256": "b8323f3e40827d4c856c1bef373f6eed829e01f6a1ebdada2feb35501a518fdd"
+  }
+}

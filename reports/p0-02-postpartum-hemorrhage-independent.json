@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "verdict": "accepted",
+  "author": "/root/astra_p0_maternal",
+  "reviewer": "/root/astra_p0_neurology",
+  "medical_reviewed": false,
+  "checked_at": "2026-10-03",
+  "target": {
+    "body_canonical_sha256": "44bd7407c88c1ca8b2f8295add9bef29f34b4cf1f5be81df20492104316c32c9",
+    "records_canonical_sha256": "c074002fff4cecda47411571a25c5845d43e7655fa5d990fbceeea8c40d0c3d6",
+    "sources_canonical_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "changed_sections": [
+    "summary",
+    "causes_risks",
+    "care",
+    "diagnosis",
+    "treatment",
+    "medications"
+  ],
+  "accepted_source_ids": [
+    "b1-acute-pph-east-kent",
+    "b1-acute-pph-nice-intrapartum",
+    "b1-acute-pph-rcog",
+    "pph-carboprost-smpc",
+    "pph-cdc-maternal-warning-signs",
+    "pph-cleveland",
+    "pph-cma-2023",
+    "pph-cochrane-txa-caesarean",
+    "pph-cochrane-txa-vaginal",
+    "pph-ebcog-2025",
+    "pph-nata-thromboprophylaxis",
+    "pph-nice-asthma-guideline",
+    "pph-norfolk-postnatal-emergency",
+    "pph-who-2025-guideline"
+  ],
+  "inherited_sections": {
+    "sections": [
+      "red_flags",
+      "differentials",
+      "diet",
+      "daily_care",
+      "special_populations",
+      "prognosis_followup",
+      "complications",
+      "prevention"
+    ],
+    "basis": "Unchanged section and editorial-record objects match currently published baseline; inherit prior independent claim review rather than relabel as fresh review.",
+    "prior_report": "reports/p0-postpartum-hemorrhage-independent.json",
+    "baseline_records_canonical_sha256": "0e2b02eabefc93262b80ad9c2b2857cc3b7ac54c65531a6c764ffd289717c9d2"
+  },
+  "actual_source_reads": [
+    {
+      "source_id": "b1-acute-pph-east-kent",
+      "url": "https://leaflets.ekhuft.nhs.uk/life-after-postpartum-haemorrhage-pph/html/",
+      "locator": "What causes a PPH?; Contact maternity triage; What happens during a PPH?",
+      "method": "Original HTML via urllib in memory after web 502",
+      "independence": "Local NHS trust patient authorship; related RCOG/UK clinical evidence, not independent trial replication.",
+      "accessed_at": "2026-10-02"
+    },
+    {
+      "source_id": "b1-acute-pph-nice-intrapartum",
+      "url": "https://www.nice.org.uk/guidance/ng235/chapter/Recommendations",
+      "locator": "NG235 1.10.2-4; 1.10.20-28; 1.10.29-34",
+      "method": "Original HTML via urllib in memory after web Internal Error",
+      "independence": "NICE committee separate from CMA; historic 2014 recommendations amended 2023 retained in live guideline.",
+      "accessed_at": "2026-10-02"
+    },
+    {
+      "source_id": "b1-acute-pph-rcog",
+      "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/heavy-bleeding-after-birth-postpartum-haemorrhage/",
+      "locator": "What is PPH?; risk factors; primary/secondary PPH; continuing bleeding; recovery (HTML lines 139-239)",
+      "method": "web original HTML open/find",
+      "independence": "RCOG Patient Information Committee based on its Green-top guideline; published December 2016, update pending.",
+      "accessed_at": "2026-10-02"
+    },
+    {
+      "source_id": "pph-carboprost-smpc",
+      "url": "https://www.medicines.org.uk/emc/product/1084/smpc",
+      "locator": "SmPC 4.3-4.4, lines 249-269; 5.1",
+      "method": "web original HTML open",
+      "independence": "Pfizer product information, May 2022 revision; separately authored from NICE, not a second clinical trial.",
+      "accessed_at": "2026-10-02"
+    },
+    {
+      "source_id": "pph-cdc-maternal-warning-signs",
+      "url": "https://www.cdc.gov/hearher/maternal-warning-signs/index.html",
+      "locator": "Key points; fainting, breathing/chest symptoms; vaginal bleeding/discharge after pregnancy, lines 24-26,51-93,129-153",
+      "method": "web original HTML open",
+      "independence": "CDC publishes AIM-developed warning list; do not count AIM as an independent second author.",
+      "accessed_at": "2026-10-02"
+    },
+    {
+      "source_id": "pph-cleveland",
+      "url": "https://my.clevelandclinic.org/health/diseases/22228-postpartum-hemorrhage",
+      "locator": "Overview; primary versus secondary types; symptoms; causes, lines 43-84",
+      "method": "web original HTML open",
+      "independence": "Cleveland Clinic patient editorial group, November 2024; distinct from RCOG.",
+      "accessed_at": "2026-10-02"
+    },
+    {
+      "source_id": "pph-cma-2023",
+      "url": "https://cspm.cma.org.cn/index/news?id=3474",
+      "locator": "Causes/definition 40-63; third-stage prevention 73-87; treatment principles 91-111; TXA121-123; placenta147-155; coagulation157-167",
+      "method": "web official society HTML open",
+      "independence": "CMA multidisciplinary 2023 guideline references WHO, FIGO and national guidelines; separate synthesis, overlapping upstream evidence. Figures not read or used.",
+      "accessed_at": "2026-10-02"
+    },
+    {
+      "source_id": "pph-cochrane-txa-caesarean",
+      "url": "https://www.cochrane.org/evidence/CD016278_what-are-benefits-and-risks-tranexamic-acid-preventing-heavy-bleeding-after-caesarean-births",
+      "locator": "Key messages; main findings; limitations, lines 39-70",
+      "method": "web original review summary open",
+      "independence": "Cochrane author group; trials overlap WHO evidence, not independent trial replication.",
+      "accessed_at": "2026-10-02"
+    },
+    {
+      "source_id": "pph-cochrane-txa-vaginal",
+      "url": "https://www.cochrane.org/evidence/CD007872_what-are-benefits-and-risks-tranexamic-acid-preventing-heavy-bleeding-after-vaginal-birth",
+      "locator": "Key messages; findings; limitations, lines43-78; search through September2024",
+      "method": "web original review summary open",
+      "independence": "Same Cochrane editorial family as caesarean review; distinct population but not two groups.",
+      "accessed_at": "2026-10-02"
+    },
+    {
+      "source_id": "pph-ebcog-2025",
+      "url": "https://ebcog.eu/wp-content/uploads/2025/11/WHO-Guidelines-on-PPH-and-EBCOG-Commentary-2025.pdf",
+      "locator": "PDF page1 Comment: 300mL with abnormal vital signs as intervention trigger",
+      "method": "Original PDF streamed into memory with urllib and pypdf after web failure",
+      "independence": "EBCOG independently authored commentary explicitly endorses WHO; shared WHO/E-MOTIVE upstream evidence.",
+      "accessed_at": "2026-10-03"
+    },
+    {
+      "source_id": "pph-nata-thromboprophylaxis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6476742/",
+      "locator": "Inherited bleeding disorders/recommendation10, lines301-306; coagulation monitoring/recommendation35; fibrinogen36; components40-42; thromboprophylaxis50",
+      "method": "web original PMC full article open/find",
+      "independence": "NATA/FIGO/EBCOG/ESA authors, 2019; PMC is host. References RCOG and common clinical trials; older expert consensus, no independent trial replication.",
+      "accessed_at": "2026-10-02"
+    },
+    {
+      "source_id": "pph-nice-asthma-guideline",
+      "url": "https://www.nice.org.uk/guidance/NG121/chapter/recommendations",
+      "locator": "NG121 1.4.2-4 asthma/carbo­prost; adjacent bleeding-disorders section1.6",
+      "method": "Original HTML via urllib in memory after web failure",
+      "independence": "Same NICE author group as NG235; product label supplies separate regulatory source.",
+      "accessed_at": "2026-10-02"
+    },
+    {
+      "source_id": "pph-norfolk-postnatal-emergency",
+      "url": "https://www.justonenorfolk.nhs.uk/pregnancy-early-days/new-baby/early-days/",
+      "locator": "Vaginal bleeding and emergency help, lines231-256",
+      "method": "web original HTML open",
+      "independence": "Local NHS Norfolk/Cambridgeshire patient guidance; national UK evidence overlap disclosed.",
+      "accessed_at": "2026-10-02"
+    },
+    {
+      "source_id": "pph-who-2025-guideline",
+      "url": "https://iris.who.int/server/api/core/bitstreams/88bf11a5-93b6-4d6b-bdaa-856b46c8ed3c/content",
+      "locator": "PDF pages13,50-51: prophylactic TXA recommendations14-15; pages14,57: recommendation22; pages62-64: TXA27 and bundle29; page74: transfusion support",
+      "method": "Original PDF streamed into memory using urllib/pypdf after web failure",
+      "independence": "WHO GDG 2025; WOMAN and shared trial datasets with CMA, Cochrane and EBCOG. EBCOG endorsement not new trial evidence.",
+      "accessed_at": "2026-10-03"
+    }
+  ],
+  "findings": [
+    {
+      "id": "PPH-ACTION-LABEL",
+      "status": "resolved",
+      "finding": "New treatment and medication paragraphs expressed treatment actions but were initially labelled explanation.",
+      "resolution": "Author relabelled p002-treatment-1 and p002-medications-1 as action. Retained placental management has CMA/NICE; component selection and medicine roles have CMA/NATA."
+    },
+    {
+      "id": "PPH-SINGLE-SOURCE-RECOMMENDATION",
+      "status": "resolved",
+      "finding": "NICE-only recommendation against routine IV uterotonics solely for retained placenta lacked independent support for that exact prescribing restriction.",
+      "resolution": "Author removed that clause; retained causal management and TXA-versus-component explanation supported by CMA/NATA. Targeted final text reread in both languages."
+    }
+  ],
+  "unresolved_questions": [],
+  "resolution": "Accepted as an editorial content candidate after targeted revisions, not clinician sign-off and not blanket ICD completion. Six changed sections read in Chinese and English; shared action conditions match. Existing blood-loss thresholds are attributed and not home waiting targets; new third-stage advice explicitly prohibits waiting for a minute threshold. No new dose, transfusion ratio or fixed follow-up schedule. All fourteen records and source hashes checked, including eight unchanged records.",
+  "category_decisions": [
+    {
+      "code": "JA43.0",
+      "status": "confirmed",
+      "rationale": "Third-stage interval explicitly tied to vaginal birth; four causes remain possible. Added immediate action before placenta delivery, professional removal/analgesia and placental-versus-clotting pathways close the prior third-stage gap. General red flags, nutrition, daily care, psychological recovery, anaemia follow-up and next-pregnancy preparation apply after the acute event; this timing-defined leaf does not require a duplicate aftercare article.",
+      "exclusions_considered": "Not all JA43 siblings; not retained placenta alone; do not assign caesarean-only haemorrhage to vaginal third-stage category; abnormal adherence decisions remain professional and conditional.",
+      "remaining": []
+    },
+    {
+      "code": "JA43.3",
+      "status": "partial",
+      "rationale": "The draft correctly includes pre-existing and acquired clotting defects and does not reduce the leaf to DIC. Acute laboratory assessment and targeted components are adequately explained. However, inherited aftercare focuses on anaemia and future pregnancy without explicitly allocating postpartum haematology planning for a persistent/pre-existing clotting disorder. NATA recommendation10 calls for specific multidisciplinary care complementary to standard PPH management; source presence alone does not put this education in the article.",
+      "exclusions_considered": "Covers relevant vaginal and caesarean PPH with clotting defects; not only DIC, not every isolated coagulation disorder without PPH, not every JA43 sibling.",
+      "remaining": [
+        "Add a short bilingual, independently supported conditional follow-up branch for known or persistent clotting disorder and individual specialist plan; no need for exhaustive rare-disease dosing or a fabricated universal test interval."
+      ]
+    }
+  ],
+  "verification": {
+    "json_and_hash_checks": "passed",
+    "bilingual_claim_binding": "passed",
+    "unchanged_record_inheritance": "8 sections identical",
+    "limits": "Software checks validate binding; clinical truth assessed by source reading. No clinician review attested."
+  }
+}

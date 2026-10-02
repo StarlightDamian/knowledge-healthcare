@@ -2,7 +2,7 @@
 
 为全部合格独立ICD类别生成可追溯的知识编写顺序，最终完整覆盖；P0–P3是项目编辑等级，不是WHO排名、临床分诊或执业医师逐病签审。
 
-冻结版本 2026-01：13,155 个合格叶类别全部列出；已完成 30 类，待办 13,125 类，目标100%。
+冻结版本 2026-01：13,155 个合格叶类别全部列出；已完成 34 类，待办 13,121 类，目标100%。
 
 这是规则驱动的编辑排程，不是患者分诊或逐病种医学精确排名。未评估类别默认P2；未知保留null，不能解释为低危。已完成类别仍保留优先级，但待办顺序与工作包为空。
 
@@ -34,10 +34,10 @@ CSV对可能被Excel解释为公式的文本加单引号；WHO标题的逐字原
 
 | 章 | 中文编辑标签 / WHO官方英文章名 | 全部 | 已完成 | 待办 | P0 | P1 | P2 | P3 |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| [01](chapter-01.md) | 感染与寄生虫病<br>Certain infectious or parasitic diseases | 876 | 6 | 870 | 18 | 176 | 682 | 0 |
+| [01](chapter-01.md) | 感染与寄生虫病<br>Certain infectious or parasitic diseases | 876 | 8 | 868 | 18 | 176 | 682 | 0 |
 | [02](chapter-02.md) | 肿瘤<br>Neoplasms | 1043 | 0 | 1043 | 0 | 669 | 374 | 0 |
 | [03](chapter-03.md) | 血液及造血器官<br>Diseases of the blood or blood-forming organs | 220 | 0 | 220 | 0 | 0 | 220 | 0 |
-| [04](chapter-04.md) | 免疫系统<br>Diseases of the immune system | 214 | 5 | 209 | 12 | 0 | 202 | 0 |
+| [04](chapter-04.md) | 免疫系统<br>Diseases of the immune system | 214 | 6 | 208 | 12 | 0 | 202 | 0 |
 | [05](chapter-05.md) | 内分泌、营养与代谢<br>Endocrine, nutritional or metabolic diseases | 539 | 2 | 537 | 2 | 98 | 439 | 0 |
 | [06](chapter-06.md) | 精神、行为与神经发育<br>Mental, behavioural or neurodevelopmental disorders | 720 | 0 | 720 | 0 | 463 | 257 | 0 |
 | [07](chapter-07.md) | 睡眠觉醒<br>Sleep-wake disorders | 73 | 1 | 72 | 0 | 0 | 73 | 0 |
@@ -51,7 +51,7 @@ CSV对可能被Excel解释为公式的文本加单引号；WHO标题的逐字原
 | [15](chapter-15.md) | 肌肉骨骼与结缔组织<br>Diseases of the musculoskeletal system or connective tissue | 361 | 0 | 361 | 0 | 29 | 332 | 0 |
 | [16](chapter-16.md) | 泌尿生殖系统<br>Diseases of the genitourinary system | 461 | 1 | 460 | 1 | 12 | 448 | 0 |
 | [17](chapter-17.md) | 性健康相关<br>Conditions related to sexual health | 57 | 0 | 57 | 0 | 0 | 57 | 0 |
-| [18](chapter-18.md) | 妊娠、分娩及产褥<br>Pregnancy, childbirth or the puerperium | 451 | 3 | 448 | 18 | 433 | 0 | 0 |
+| [18](chapter-18.md) | 妊娠、分娩及产褥<br>Pregnancy, childbirth or the puerperium | 451 | 4 | 447 | 18 | 433 | 0 | 0 |
 | [19](chapter-19.md) | 围产期相关<br>Certain conditions originating in the perinatal period | 536 | 0 | 536 | 4 | 529 | 3 | 0 |
 | [20](chapter-20.md) | 发育异常<br>Developmental anomalies | 1129 | 0 | 1129 | 0 | 1129 | 0 | 0 |
 | [21](chapter-21.md) | 症状、体征和临床发现<br>Symptoms, signs or clinical findings, not elsewhere classified | 1086 | 0 | 1086 | 7 | 3 | 1076 | 0 |
@@ -63,7 +63,7 @@ CSV对可能被Excel解释为公式的文本加单引号；WHO标题的逐字原
 | 代码 | WHO官方中英名称 | 编辑归口 | 优先级 | 规则 | 覆盖与候选 | 顺序 / 工作包 |
 |---|---|---|---|---|---|---|
 | [1B53](http://id.who.int/icd/release/11/mms/705971711) | 链球菌性脑膜炎<br>Meningitis due to Streptococcus | 感染科／暴露后预防门诊 | P0 | [p0-meningitis](chapter-01.md#rule-p0-meningitis) | partial<br>meningitis: partial | 1<br>WP-0001 |
-| [4A84.31](http://id.who.int/icd/release/11/mms/416451504) | 寒冷诱发的全身过敏反应<br>Cold-induced anaphylaxis | 变态反应／过敏科 | P0 | [p0-anaphylaxis](chapter-04.md#rule-p0-anaphylaxis) | partial<br>anaphylaxis: partial | 2<br>WP-0001 |
+| [4A84.3Y](http://id.who.int/icd/release/11/mms/2025061243/other) | 其他特指的物理因素诱发的全身过敏反应<br>Anaphylaxis provoked by other specified physical factors | 变态反应／过敏科 | P0 | [p0-anaphylaxis](chapter-04.md#rule-p0-anaphylaxis) | partial<br>anaphylaxis: partial | 2<br>WP-0001 |
 | [8A66.0](http://id.who.int/icd/release/11/mms/338178896) | 惊厥性癫痫持续状态<br>Convulsive status epilepticus | 神经内科 | P0 | [p0-status-epilepticus](chapter-08.md#rule-p0-status-epilepticus) | missing | 3<br>WP-0001 |
 | [9B73.4](http://id.who.int/icd/release/11/mms/236011795) | 视网膜裂孔不伴脱离<br>Retinal breaks without detachment | 眼科 | P0 | [p0-retinal-detachment](chapter-09.md#rule-p0-retinal-detachment) | partial<br>retinal-detachment: partial | 4<br>WP-0001 |
 | [AB55](http://id.who.int/icd/release/11/mms/692012078) | 突发特发性听觉损失<br>Sudden idiopathic hearing loss | 耳鼻喉科 | P0 | [p0-sudden-hearing](chapter-10.md#rule-p0-sudden-hearing) | missing | 5<br>WP-0001 |
@@ -76,7 +76,7 @@ CSV对可能被Excel解释为公式的文本加单引号；WHO标题的逐字原
 | [MB26.A](http://id.who.int/icd/release/11/mms/778734771) | 自杀观念<br>Suicidal ideation | 精神心理科 | P0 | [p0-suicidal-ideation](chapter-21.md#rule-p0-suicidal-ideation) | missing | 12<br>WP-0001 |
 | [NF01.0](http://id.who.int/icd/release/11/mms/965393145) | 中暑<br>Heat stroke | 急诊／急救 | P0 | [p0-heatstroke](chapter-22.md#rule-p0-heatstroke) | missing<br>heatstroke: pending | 13<br>WP-0001 |
 | [1B54](http://id.who.int/icd/release/11/mms/1331660907) | 葡萄球菌性脑膜炎<br>Meningitis due to Staphylococcus | 感染科／暴露后预防门诊 | P0 | [p0-meningitis](chapter-01.md#rule-p0-meningitis) | partial<br>meningitis: partial | 14<br>WP-0001 |
-| [4A84.3Y](http://id.who.int/icd/release/11/mms/2025061243/other) | 其他特指的物理因素诱发的全身过敏反应<br>Anaphylaxis provoked by other specified physical factors | 变态反应／过敏科 | P0 | [p0-anaphylaxis](chapter-04.md#rule-p0-anaphylaxis) | partial<br>anaphylaxis: partial | 15<br>WP-0001 |
+| [4A84.3Z](http://id.who.int/icd/release/11/mms/2025061243/unspecified) | 未特指的物理因素诱发的全身过敏反应<br>Anaphylaxis provoked by unspecified physical factors | 变态反应／过敏科 | P0 | [p0-anaphylaxis](chapter-04.md#rule-p0-anaphylaxis) | partial<br>anaphylaxis: partial | 15<br>WP-0001 |
 | [8A66.10](http://id.who.int/icd/release/11/mms/854964357) | 失神癫痫持续状态<br>Absence status epilepticus | 神经内科 | P0 | [p0-status-epilepticus](chapter-08.md#rule-p0-status-epilepticus) | missing | 16<br>WP-0001 |
 | [9B73.Y](http://id.who.int/icd/release/11/mms/357208479/other) | 其他特指的视网膜脱离或裂孔<br>Other specified retinal detachments or breaks | 眼科 | P0 | [p0-retinal-detachment](chapter-09.md#rule-p0-retinal-detachment) | partial<br>retinal-detachment: partial | 17<br>WP-0001 |
 | [BA42.1](http://id.who.int/icd/release/11/mms/2070501946) | 随后性心肌梗死，非ST段抬高心肌梗死<br>Subsequent myocardial infarction, non-ST elevation myocardial infarction | 心血管内科 | P0 | [p0-acute-myocardial-infarction](chapter-11.md#rule-p0-acute-myocardial-infarction) | missing | 18<br>WP-0001 |
