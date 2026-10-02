@@ -6,11 +6,11 @@
       "id": "retinal-detachment",
       "section": "summary"
     },
-    "content_sha256": "a2c7eb4ceff14e3fa41174f7c564a98fb65221c6d244bbdb173f598b81d3da88",
+    "content_sha256": "5a04d428542302ea5dbf515e3717aa458ccc1848933352318dcbdc27da750804",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "Independent original and targeted reviewers; hash-bound integration in batch-01-retinal-acceptance.json",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
     "medical_reviewed": false,
     "supports": [
       {
@@ -57,6 +57,36 @@
         ],
         "relation": "supports",
         "assessment": "summary-1: Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers. Component boundary: Author located the specific statement in Overview. Source supports the matched component; unresolved compound-claim details remain listed below and require independent review. summary-2: Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers. Component boundary: Author located the specific statement in Urgent symptoms. Source supports the matched component; unresolved compound-claim details remain listed below and require independent review. summary-4: Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers. Component boundary: Supports only the specific matched component at this locator; independent re-review remains pending."
+      },
+      {
+        "source_id": "p003-retina-asrs-tears",
+        "source_metadata_sha256": "a432f0160a21395b01e0a0d97fcbd5342070acebc7e3a87b07fd61a67b5b9451",
+        "locator": "Definition; Treatment and prognosis",
+        "source_version": "Original page read: symptoms, causes, retinal tears versus holes, diagnosis, treatment and prognosis. No absolute prevention estimate adopted.",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "ASRS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Breaks can precede detachment; selected low-risk breaks observed."
+      },
+      {
+        "source_id": "p003-retina-atrophic",
+        "source_metadata_sha256": "3c5fab66149842831fe09a96eed89affa3f7b40b0f279a091fdcb71a3c2443b9",
+        "locator": "Disease; General treatment",
+        "source_version": "Page last edited21July2026",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "AAO-EYEWIKI",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Full-thickness hole, most without mandatory therapy; risk features guide treatment."
       }
     ],
     "claims": [
@@ -139,24 +169,44 @@
             "assessment": "Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers. Component boundary: Supports only the specific matched component at this locator; independent re-review remains pending."
           }
         ]
+      },
+      {
+        "id": "p0-03-retinal-detachment-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "有裂孔而尚未脱离时，视网膜出现破口，但组织仍在原位。它与已经脱离的阶段不同，处理重点是判断破口是否容易继续发展，并选择封闭或复查。",
+          "en": "A retinal break without detachment is an opening while the retina remains in place. It is a different stage from established detachment; care assesses the risk of progression and selects sealing treatment or monitoring."
+        },
+        "supports": [
+          {
+            "source_id": "p003-retina-asrs-tears",
+            "locator": "Definition; Treatment and prognosis",
+            "assessment": "Breaks can precede detachment; selected low-risk breaks observed."
+          },
+          {
+            "source_id": "p003-retina-atrophic",
+            "locator": "Disease; General treatment",
+            "assessment": "Full-thickness hole, most without mandatory therapy; risk features guide treatment."
+          }
+        ]
       }
     ],
     "claim_inventory": "all_medical_claims_in_section",
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Institutional sources are separately authored; same-author pages count once. Local hospitals are not automatically national-NHS republications. Shared upstream clinical evidence and older AOA scope are disclosed in independent reports.",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "regional_difference",
-      "resolution": "No fixed surgery/posture/review interval or local transport service is generalized. AOA2004 supports only the regular risk-related dilated-exam principle, concordant with current NEI/RANZCO; source ages remain visible."
+      "status": "none",
+      "resolution": "ASRS and EyeWiki have overlapping specialist authors and guideline references; counted as independent editorial syntheses, not independent trials. Moorfields treatment page broadly describes referred tears as high risk; the article preserves ASRS/EyeWiki distinction for asymptomatic low-risk atrophic holes and does not generalize the high-risk sentence to every hole. EyeWiki update-pending status and historical PPP citations retained."
     },
     "unresolved_questions": [],
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/acute_symptom_content; revision /root/retinal_finish",
-      "reviewer": "/root/retinal_finish (unchanged claims); /root/retinal_targeted (changed claims and transport)",
-      "checked_at": "2026-10-02",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "b1-acute-retina-aoa-retinal-guideline",
         "b1-acute-retina-asrs",
@@ -193,18 +243,63 @@
         "b1-acute-retina-statpearls-exudative",
         "b1-acute-retina-surgery-nei",
         "b1-acute-retina-types-nei",
+        "b1-acute-retina-vitrectomy-nei",
+        "p003-retina-asrs-tears",
+        "p003-retina-atrophic",
+        "p003-retina-moorfields-tears"
+      ],
+      "inherited_source_ids": [
+        "b1-acute-retina-aoa-retinal-guideline",
+        "b1-acute-retina-asrs",
+        "b1-acute-retina-asrs-complex",
+        "b1-acute-retina-asrs-diabetes-guideline",
+        "b1-acute-retina-asrs-imaging",
+        "b1-acute-retina-asrs-sports",
+        "b1-acute-retina-cleveland",
+        "b1-acute-retina-cuh-repair",
+        "b1-acute-retina-diabetes-surgery-sussex",
+        "b1-acute-retina-glos-drops",
+        "b1-acute-retina-kgh-emergency-transport",
+        "b1-acute-retina-leeds-anaesthetic",
+        "b1-acute-retina-leeds-drops",
+        "b1-acute-retina-leeds-postop",
+        "b1-acute-retina-mayo-treatment",
+        "b1-acute-retina-moorfields",
+        "b1-acute-retina-moorfields-floaters",
+        "b1-acute-retina-moorfields-macular-gas",
+        "b1-acute-retina-moorfields-steroid-infection",
+        "b1-acute-retina-msd",
+        "b1-acute-retina-nei",
+        "b1-acute-retina-nei-diabetes",
+        "b1-acute-retina-nhs",
+        "b1-acute-retina-nhs-dex-common",
+        "b1-acute-retina-nhs-dex-risks",
+        "b1-acute-retina-nhs-dex-use",
+        "b1-acute-retina-nhs-floaters",
+        "b1-acute-retina-nhs-vision",
+        "b1-acute-retina-puradex-smpc",
+        "b1-acute-retina-ranzco-choosing-wisely",
+        "b1-acute-retina-rcophth-gas",
+        "b1-acute-retina-statpearls-exudative",
+        "b1-acute-retina-surgery-nei",
+        "b1-acute-retina-types-nei",
         "b1-acute-retina-vitrectomy-nei"
       ],
       "findings": [
         {
-          "id": "RR01-RR04",
-          "status": "resolved",
-          "resolution": "Sixteen scoped changes independently accepted; Kettering corroborates transport action and two unread redundant links removed without changing bilingual medical text."
+          "finding": "Follow-up and postoperative drop advice had explanation kind despite actions.",
+          "resolution": "Claims5/7 now action with two separately authored supports.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Asymptomatic atrophic holes must not inherit blanket urgent laser or intraocular-gas restrictions.",
+          "resolution": "Body explicitly separates examination-based observation from treated traction tears and makes surgical/gas instructions conditional.",
+          "status": "resolved"
         }
       ],
-      "resolution": "52 unchanged claim objects inherit frozen independent review;16 changes and the preserved transport action received fresh targeted review. Exact metadata patches applied with hash/substring verification; no physician sign-off."
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
-    "review_report": "reports/batch-01-retinal-acceptance.json"
+    "review_report": "reports/p0-03-retinal-detachment-independent.json"
   },
   {
     "id": "batch01-acute-retinal-detachment-causes_risks",
@@ -213,11 +308,11 @@
       "id": "retinal-detachment",
       "section": "causes_risks"
     },
-    "content_sha256": "0e96adf7742b375e78711689673b8b22d2fac8f48d1d3613382163be858e5fd0",
+    "content_sha256": "7217c5358d0398fbdad93133052d3207bb8b0f2f08002f94080d13c681392301",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "Independent original and targeted reviewers; hash-bound integration in batch-01-retinal-acceptance.json",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
     "medical_reviewed": false,
     "supports": [
       {
@@ -279,6 +374,36 @@
         ],
         "relation": "supports",
         "assessment": "causes_risks-1: Direct primary support for an ordinary explanation; no numeric diagnostic threshold, treatment recommendation or claimed test performance needs a second writer. Diagnosis history and diabetic bleeding are no longer treated as unsupported solely because one source states the detail. Component boundary: Supports only the specific matched component at this locator; independent re-review remains pending. causes_risks-2: Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers. Component boundary: Supports only the specific matched component at this locator; independent re-review remains pending. causes_risks-3: Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers. Component boundary: Supports only the specific matched component at this locator; independent re-review remains pending."
+      },
+      {
+        "source_id": "p003-retina-asrs-tears",
+        "source_metadata_sha256": "a432f0160a21395b01e0a0d97fcbd5342070acebc7e3a87b07fd61a67b5b9451",
+        "locator": "Causes: tears versus holes",
+        "source_version": "Original page read: symptoms, causes, retinal tears versus holes, diagnosis, treatment and prognosis. No absolute prevention estimate adopted.",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "ASRS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Traction tears and thinning holes; some holes require tear-like treatment."
+      },
+      {
+        "source_id": "p003-retina-atrophic",
+        "source_metadata_sha256": "3c5fab66149842831fe09a96eed89affa3f7b40b0f279a091fdcb71a3c2443b9",
+        "locator": "Etiology; History; General treatment",
+        "source_version": "Page last edited21July2026",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "AAO-EYEWIKI",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Incidental asymptomatic atrophic holes; examination and risk-based management."
       }
     ],
     "claims": [
@@ -361,24 +486,44 @@
             "assessment": "Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers. Component boundary: Supports only the specific matched component at this locator; independent re-review remains pending."
           }
         ]
+      },
+      {
+        "id": "p0-03-retinal-detachment-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "破口可以来自玻璃体牵拉形成的撕裂，也可以来自视网膜逐渐变薄形成的小圆孔。没有症状的小孔可能在散瞳检查中偶然发现，不能仅按名字或大小判断需不需要治疗。",
+          "en": "A break may be a tear caused by vitreous pulling or a small round hole in thinned retina. An asymptomatic hole may be found during a dilated examination; its name or size alone does not settle the need for treatment."
+        },
+        "supports": [
+          {
+            "source_id": "p003-retina-asrs-tears",
+            "locator": "Causes: tears versus holes",
+            "assessment": "Traction tears and thinning holes; some holes require tear-like treatment."
+          },
+          {
+            "source_id": "p003-retina-atrophic",
+            "locator": "Etiology; History; General treatment",
+            "assessment": "Incidental asymptomatic atrophic holes; examination and risk-based management."
+          }
+        ]
       }
     ],
     "claim_inventory": "all_medical_claims_in_section",
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Institutional sources are separately authored; same-author pages count once. Local hospitals are not automatically national-NHS republications. Shared upstream clinical evidence and older AOA scope are disclosed in independent reports.",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "regional_difference",
-      "resolution": "No fixed surgery/posture/review interval or local transport service is generalized. AOA2004 supports only the regular risk-related dilated-exam principle, concordant with current NEI/RANZCO; source ages remain visible."
+      "status": "none",
+      "resolution": "ASRS and EyeWiki have overlapping specialist authors and guideline references; counted as independent editorial syntheses, not independent trials. Moorfields treatment page broadly describes referred tears as high risk; the article preserves ASRS/EyeWiki distinction for asymptomatic low-risk atrophic holes and does not generalize the high-risk sentence to every hole. EyeWiki update-pending status and historical PPP citations retained."
     },
     "unresolved_questions": [],
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/acute_symptom_content; revision /root/retinal_finish",
-      "reviewer": "/root/retinal_finish (unchanged claims); /root/retinal_targeted (changed claims and transport)",
-      "checked_at": "2026-10-02",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "b1-acute-retina-aoa-retinal-guideline",
         "b1-acute-retina-asrs",
@@ -415,18 +560,63 @@
         "b1-acute-retina-statpearls-exudative",
         "b1-acute-retina-surgery-nei",
         "b1-acute-retina-types-nei",
+        "b1-acute-retina-vitrectomy-nei",
+        "p003-retina-asrs-tears",
+        "p003-retina-atrophic",
+        "p003-retina-moorfields-tears"
+      ],
+      "inherited_source_ids": [
+        "b1-acute-retina-aoa-retinal-guideline",
+        "b1-acute-retina-asrs",
+        "b1-acute-retina-asrs-complex",
+        "b1-acute-retina-asrs-diabetes-guideline",
+        "b1-acute-retina-asrs-imaging",
+        "b1-acute-retina-asrs-sports",
+        "b1-acute-retina-cleveland",
+        "b1-acute-retina-cuh-repair",
+        "b1-acute-retina-diabetes-surgery-sussex",
+        "b1-acute-retina-glos-drops",
+        "b1-acute-retina-kgh-emergency-transport",
+        "b1-acute-retina-leeds-anaesthetic",
+        "b1-acute-retina-leeds-drops",
+        "b1-acute-retina-leeds-postop",
+        "b1-acute-retina-mayo-treatment",
+        "b1-acute-retina-moorfields",
+        "b1-acute-retina-moorfields-floaters",
+        "b1-acute-retina-moorfields-macular-gas",
+        "b1-acute-retina-moorfields-steroid-infection",
+        "b1-acute-retina-msd",
+        "b1-acute-retina-nei",
+        "b1-acute-retina-nei-diabetes",
+        "b1-acute-retina-nhs",
+        "b1-acute-retina-nhs-dex-common",
+        "b1-acute-retina-nhs-dex-risks",
+        "b1-acute-retina-nhs-dex-use",
+        "b1-acute-retina-nhs-floaters",
+        "b1-acute-retina-nhs-vision",
+        "b1-acute-retina-puradex-smpc",
+        "b1-acute-retina-ranzco-choosing-wisely",
+        "b1-acute-retina-rcophth-gas",
+        "b1-acute-retina-statpearls-exudative",
+        "b1-acute-retina-surgery-nei",
+        "b1-acute-retina-types-nei",
         "b1-acute-retina-vitrectomy-nei"
       ],
       "findings": [
         {
-          "id": "RR01-RR04",
-          "status": "resolved",
-          "resolution": "Sixteen scoped changes independently accepted; Kettering corroborates transport action and two unread redundant links removed without changing bilingual medical text."
+          "finding": "Follow-up and postoperative drop advice had explanation kind despite actions.",
+          "resolution": "Claims5/7 now action with two separately authored supports.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Asymptomatic atrophic holes must not inherit blanket urgent laser or intraocular-gas restrictions.",
+          "resolution": "Body explicitly separates examination-based observation from treated traction tears and makes surgical/gas instructions conditional.",
+          "status": "resolved"
         }
       ],
-      "resolution": "52 unchanged claim objects inherit frozen independent review;16 changes and the preserved transport action received fresh targeted review. Exact metadata patches applied with hash/substring verification; no physician sign-off."
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
-    "review_report": "reports/batch-01-retinal-acceptance.json"
+    "review_report": "reports/p0-03-retinal-detachment-independent.json"
   },
   {
     "id": "batch01-acute-retinal-detachment-red_flags",
@@ -672,11 +862,11 @@
       "id": "retinal-detachment",
       "section": "care"
     },
-    "content_sha256": "12ca9699e2c11ff51ecb419a6aacb008d9f000964a9c9cd772bb488dcf25f6b3",
+    "content_sha256": "27f02c5e95760ecfafa970b1142fb53bd412ec0d8690cd3554827f8a3e9e7546",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "Independent original and targeted reviewers; hash-bound integration in batch-01-retinal-acceptance.json",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
     "medical_reviewed": false,
     "supports": [
       {
@@ -768,6 +958,51 @@
         ],
         "relation": "supports",
         "assessment": "care-3: Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers. Component boundary: Supports only the specific matched component at this locator; independent re-review remains pending."
+      },
+      {
+        "source_id": "p003-retina-asrs-tears",
+        "source_metadata_sha256": "a432f0160a21395b01e0a0d97fcbd5342070acebc7e3a87b07fd61a67b5b9451",
+        "locator": "Treatment and prognosis: observation",
+        "source_version": "Original page read: symptoms, causes, retinal tears versus holes, diagnosis, treatment and prognosis. No absolute prevention estimate adopted.",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "ASRS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "No-symptom low-risk tears can be observed after examination."
+      },
+      {
+        "source_id": "p003-retina-atrophic",
+        "source_metadata_sha256": "3c5fab66149842831fe09a96eed89affa3f7b40b0f279a091fdcb71a3c2443b9",
+        "locator": "General treatment; medical follow-up",
+        "source_version": "Page last edited21July2026",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "AAO-EYEWIKI",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Observation and return precautions."
+      },
+      {
+        "source_id": "p003-retina-moorfields-tears",
+        "source_metadata_sha256": "fcbd2ba55ceedc83d53b50e0bc8ce2bd8d73a7dfeff272f8b223132379f3452b",
+        "locator": "Can the retina detach after laser retinopexy",
+        "source_version": "Original hospital page read: laser retinopexy, local anaesthesia, incomplete seal, driving, follow-up and new symptoms. Private-service fees and absolute no-infection wording not adopted.",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "GB",
+        "independence_group": "NHS-MOORFIELDS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Immediate help for new warning symptoms."
       }
     ],
     "claims": [
@@ -855,24 +1090,49 @@
             "assessment": "Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers. Component boundary: Author located the specific statement in Recovery. Source supports the matched component; unresolved compound-claim details remain listed below and require independent review."
           }
         ]
+      },
+      {
+        "id": "p0-03-retinal-detachment-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "只有在眼科已检查并确认属于低风险、没有相关症状的破口时，才可能选择预约复查。自行感觉“不痛”不能作为观察依据；新增闪光、飞蚊或遮挡仍按前述危险信号立即求助。",
+          "en": "Observation is an option only after an eye specialist has identified a low-risk break without relevant symptoms. Feeling no pain is not enough to choose observation; new flashes, floaters or a curtain still require immediate assessment as above."
+        },
+        "supports": [
+          {
+            "source_id": "p003-retina-asrs-tears",
+            "locator": "Treatment and prognosis: observation",
+            "assessment": "No-symptom low-risk tears can be observed after examination."
+          },
+          {
+            "source_id": "p003-retina-atrophic",
+            "locator": "General treatment; medical follow-up",
+            "assessment": "Observation and return precautions."
+          },
+          {
+            "source_id": "p003-retina-moorfields-tears",
+            "locator": "Can the retina detach after laser retinopexy",
+            "assessment": "Immediate help for new warning symptoms."
+          }
+        ]
       }
     ],
     "claim_inventory": "all_medical_claims_in_section",
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Institutional sources are separately authored; same-author pages count once. Local hospitals are not automatically national-NHS republications. Shared upstream clinical evidence and older AOA scope are disclosed in independent reports.",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "regional_difference",
-      "resolution": "No fixed surgery/posture/review interval or local transport service is generalized. AOA2004 supports only the regular risk-related dilated-exam principle, concordant with current NEI/RANZCO; source ages remain visible."
+      "status": "none",
+      "resolution": "ASRS and EyeWiki have overlapping specialist authors and guideline references; counted as independent editorial syntheses, not independent trials. Moorfields treatment page broadly describes referred tears as high risk; the article preserves ASRS/EyeWiki distinction for asymptomatic low-risk atrophic holes and does not generalize the high-risk sentence to every hole. EyeWiki update-pending status and historical PPP citations retained."
     },
     "unresolved_questions": [],
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/acute_symptom_content; revision /root/retinal_finish",
-      "reviewer": "/root/retinal_finish (unchanged claims); /root/retinal_targeted (changed claims and transport)",
-      "checked_at": "2026-10-02",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "b1-acute-retina-aoa-retinal-guideline",
         "b1-acute-retina-asrs",
@@ -909,18 +1169,63 @@
         "b1-acute-retina-statpearls-exudative",
         "b1-acute-retina-surgery-nei",
         "b1-acute-retina-types-nei",
+        "b1-acute-retina-vitrectomy-nei",
+        "p003-retina-asrs-tears",
+        "p003-retina-atrophic",
+        "p003-retina-moorfields-tears"
+      ],
+      "inherited_source_ids": [
+        "b1-acute-retina-aoa-retinal-guideline",
+        "b1-acute-retina-asrs",
+        "b1-acute-retina-asrs-complex",
+        "b1-acute-retina-asrs-diabetes-guideline",
+        "b1-acute-retina-asrs-imaging",
+        "b1-acute-retina-asrs-sports",
+        "b1-acute-retina-cleveland",
+        "b1-acute-retina-cuh-repair",
+        "b1-acute-retina-diabetes-surgery-sussex",
+        "b1-acute-retina-glos-drops",
+        "b1-acute-retina-kgh-emergency-transport",
+        "b1-acute-retina-leeds-anaesthetic",
+        "b1-acute-retina-leeds-drops",
+        "b1-acute-retina-leeds-postop",
+        "b1-acute-retina-mayo-treatment",
+        "b1-acute-retina-moorfields",
+        "b1-acute-retina-moorfields-floaters",
+        "b1-acute-retina-moorfields-macular-gas",
+        "b1-acute-retina-moorfields-steroid-infection",
+        "b1-acute-retina-msd",
+        "b1-acute-retina-nei",
+        "b1-acute-retina-nei-diabetes",
+        "b1-acute-retina-nhs",
+        "b1-acute-retina-nhs-dex-common",
+        "b1-acute-retina-nhs-dex-risks",
+        "b1-acute-retina-nhs-dex-use",
+        "b1-acute-retina-nhs-floaters",
+        "b1-acute-retina-nhs-vision",
+        "b1-acute-retina-puradex-smpc",
+        "b1-acute-retina-ranzco-choosing-wisely",
+        "b1-acute-retina-rcophth-gas",
+        "b1-acute-retina-statpearls-exudative",
+        "b1-acute-retina-surgery-nei",
+        "b1-acute-retina-types-nei",
         "b1-acute-retina-vitrectomy-nei"
       ],
       "findings": [
         {
-          "id": "RR01-RR04",
-          "status": "resolved",
-          "resolution": "Sixteen scoped changes independently accepted; Kettering corroborates transport action and two unread redundant links removed without changing bilingual medical text."
+          "finding": "Follow-up and postoperative drop advice had explanation kind despite actions.",
+          "resolution": "Claims5/7 now action with two separately authored supports.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Asymptomatic atrophic holes must not inherit blanket urgent laser or intraocular-gas restrictions.",
+          "resolution": "Body explicitly separates examination-based observation from treated traction tears and makes surgical/gas instructions conditional.",
+          "status": "resolved"
         }
       ],
-      "resolution": "52 unchanged claim objects inherit frozen independent review;16 changes and the preserved transport action received fresh targeted review. Exact metadata patches applied with hash/substring verification; no physician sign-off."
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
-    "review_report": "reports/batch-01-retinal-acceptance.json"
+    "review_report": "reports/p0-03-retinal-detachment-independent.json"
   },
   {
     "id": "batch01-acute-retinal-detachment-diagnosis",
@@ -929,11 +1234,11 @@
       "id": "retinal-detachment",
       "section": "diagnosis"
     },
-    "content_sha256": "2c0dd8aa91f9377ff156168dd1e32b2757f5d89f18c4b83635a12f4bb84abdcb",
+    "content_sha256": "a9c52d9690a3b963f0c43e28c9e113272137c7a4d2587858d2bef2b4e855f354",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "Independent original and targeted reviewers; hash-bound integration in batch-01-retinal-acceptance.json",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
     "medical_reviewed": false,
     "supports": [
       {
@@ -1040,6 +1345,36 @@
         ],
         "relation": "supports",
         "assessment": "diagnosis-3: Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added. Component boundary: Supports only the specific matched component at this locator; independent re-review remains pending."
+      },
+      {
+        "source_id": "p003-retina-asrs-tears",
+        "source_metadata_sha256": "a432f0160a21395b01e0a0d97fcbd5342070acebc7e3a87b07fd61a67b5b9451",
+        "locator": "Diagnostic testing; causes",
+        "source_version": "Original page read: symptoms, causes, retinal tears versus holes, diagnosis, treatment and prognosis. No absolute prevention estimate adopted.",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "ASRS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Peripheral scleral depression/three-mirror examination; cause distinction."
+      },
+      {
+        "source_id": "p003-retina-atrophic",
+        "source_metadata_sha256": "3c5fab66149842831fe09a96eed89affa3f7b40b0f279a091fdcb71a3c2443b9",
+        "locator": "Physical examination; diagnosis; differential",
+        "source_version": "Page last edited21July2026",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "AAO-EYEWIKI",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Peripheral examination, traction versus atrophic hole and surrounding subretinal fluid."
       }
     ],
     "claims": [
@@ -1137,24 +1472,44 @@
             "assessment": "Direct primary support for an ordinary explanation; no numeric diagnostic threshold, treatment recommendation or claimed test performance needs a second writer. Diagnosis history and diabetic bleeding are no longer treated as unsupported solely because one source states the detail. Component boundary: Same ASRS origin; OCT-specific purpose still lacks a second independent source in this record."
           }
         ]
+      },
+      {
+        "id": "p0-03-retinal-detachment-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "裂孔检查特别关注周边视网膜，医生可能轻压眼球外壁或使用特殊镜片看清边缘。报告尚未写清类型时，还需明确有无牵拉、周围积液和真正脱离，不能把所有破口都当成同一种手术问题。",
+          "en": "Break assessment includes the peripheral retina; gentle external pressure or a special lens may help reveal its edges. If the type is not established, the team clarifies traction, surrounding fluid and actual detachment rather than treating every break as the same surgical problem."
+        },
+        "supports": [
+          {
+            "source_id": "p003-retina-asrs-tears",
+            "locator": "Diagnostic testing; causes",
+            "assessment": "Peripheral scleral depression/three-mirror examination; cause distinction."
+          },
+          {
+            "source_id": "p003-retina-atrophic",
+            "locator": "Physical examination; diagnosis; differential",
+            "assessment": "Peripheral examination, traction versus atrophic hole and surrounding subretinal fluid."
+          }
+        ]
       }
     ],
     "claim_inventory": "all_medical_claims_in_section",
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Institutional sources are separately authored; same-author pages count once. Local hospitals are not automatically national-NHS republications. Shared upstream clinical evidence and older AOA scope are disclosed in independent reports.",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "regional_difference",
-      "resolution": "No fixed surgery/posture/review interval or local transport service is generalized. AOA2004 supports only the regular risk-related dilated-exam principle, concordant with current NEI/RANZCO; source ages remain visible."
+      "status": "none",
+      "resolution": "ASRS and EyeWiki have overlapping specialist authors and guideline references; counted as independent editorial syntheses, not independent trials. Moorfields treatment page broadly describes referred tears as high risk; the article preserves ASRS/EyeWiki distinction for asymptomatic low-risk atrophic holes and does not generalize the high-risk sentence to every hole. EyeWiki update-pending status and historical PPP citations retained."
     },
     "unresolved_questions": [],
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/acute_symptom_content; revision /root/retinal_finish",
-      "reviewer": "/root/retinal_finish (unchanged claims); /root/retinal_targeted (changed claims and transport)",
-      "checked_at": "2026-10-02",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "b1-acute-retina-aoa-retinal-guideline",
         "b1-acute-retina-asrs",
@@ -1191,18 +1546,63 @@
         "b1-acute-retina-statpearls-exudative",
         "b1-acute-retina-surgery-nei",
         "b1-acute-retina-types-nei",
+        "b1-acute-retina-vitrectomy-nei",
+        "p003-retina-asrs-tears",
+        "p003-retina-atrophic",
+        "p003-retina-moorfields-tears"
+      ],
+      "inherited_source_ids": [
+        "b1-acute-retina-aoa-retinal-guideline",
+        "b1-acute-retina-asrs",
+        "b1-acute-retina-asrs-complex",
+        "b1-acute-retina-asrs-diabetes-guideline",
+        "b1-acute-retina-asrs-imaging",
+        "b1-acute-retina-asrs-sports",
+        "b1-acute-retina-cleveland",
+        "b1-acute-retina-cuh-repair",
+        "b1-acute-retina-diabetes-surgery-sussex",
+        "b1-acute-retina-glos-drops",
+        "b1-acute-retina-kgh-emergency-transport",
+        "b1-acute-retina-leeds-anaesthetic",
+        "b1-acute-retina-leeds-drops",
+        "b1-acute-retina-leeds-postop",
+        "b1-acute-retina-mayo-treatment",
+        "b1-acute-retina-moorfields",
+        "b1-acute-retina-moorfields-floaters",
+        "b1-acute-retina-moorfields-macular-gas",
+        "b1-acute-retina-moorfields-steroid-infection",
+        "b1-acute-retina-msd",
+        "b1-acute-retina-nei",
+        "b1-acute-retina-nei-diabetes",
+        "b1-acute-retina-nhs",
+        "b1-acute-retina-nhs-dex-common",
+        "b1-acute-retina-nhs-dex-risks",
+        "b1-acute-retina-nhs-dex-use",
+        "b1-acute-retina-nhs-floaters",
+        "b1-acute-retina-nhs-vision",
+        "b1-acute-retina-puradex-smpc",
+        "b1-acute-retina-ranzco-choosing-wisely",
+        "b1-acute-retina-rcophth-gas",
+        "b1-acute-retina-statpearls-exudative",
+        "b1-acute-retina-surgery-nei",
+        "b1-acute-retina-types-nei",
         "b1-acute-retina-vitrectomy-nei"
       ],
       "findings": [
         {
-          "id": "RR01-RR04",
-          "status": "resolved",
-          "resolution": "Sixteen scoped changes independently accepted; Kettering corroborates transport action and two unread redundant links removed without changing bilingual medical text."
+          "finding": "Follow-up and postoperative drop advice had explanation kind despite actions.",
+          "resolution": "Claims5/7 now action with two separately authored supports.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Asymptomatic atrophic holes must not inherit blanket urgent laser or intraocular-gas restrictions.",
+          "resolution": "Body explicitly separates examination-based observation from treated traction tears and makes surgical/gas instructions conditional.",
+          "status": "resolved"
         }
       ],
-      "resolution": "52 unchanged claim objects inherit frozen independent review;16 changes and the preserved transport action received fresh targeted review. Exact metadata patches applied with hash/substring verification; no physician sign-off."
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
-    "review_report": "reports/batch-01-retinal-acceptance.json"
+    "review_report": "reports/p0-03-retinal-detachment-independent.json"
   },
   {
     "id": "batch01-acute-retinal-detachment-differentials",
@@ -1518,11 +1918,11 @@
       "id": "retinal-detachment",
       "section": "treatment"
     },
-    "content_sha256": "274617e2116787212c64ff907136b9ca786df602540c5255944ce0ee681ab4f0",
+    "content_sha256": "2953f4f86e312c31098c64d9e75e6e99177fef141f10219355b60d49714953ba",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "Independent original and targeted reviewers; hash-bound integration in batch-01-retinal-acceptance.json",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
     "medical_reviewed": false,
     "supports": [
       {
@@ -1659,6 +2059,36 @@
         ],
         "relation": "supports",
         "assessment": "treatment-3: NEI surgery/ASRS support external buckle and selected gas repair; NEI vitrectomy/CUH explicitly support vitreous removal and gas/silicone-oil support. No universal procedure choice. Component boundary: Explicit gel removal and gas/air/oil substitution. CUH Internal splint independently supports gas/silicone-oil component."
+      },
+      {
+        "source_id": "p003-retina-asrs-tears",
+        "source_metadata_sha256": "a432f0160a21395b01e0a0d97fcbd5342070acebc7e3a87b07fd61a67b5b9451",
+        "locator": "Treatment and prognosis",
+        "source_version": "Original page read: symptoms, causes, retinal tears versus holes, diagnosis, treatment and prognosis. No absolute prevention estimate adopted.",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "ASRS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Laser/freezing versus selected observation."
+      },
+      {
+        "source_id": "p003-retina-atrophic",
+        "source_metadata_sha256": "3c5fab66149842831fe09a96eed89affa3f7b40b0f279a091fdcb71a3c2443b9",
+        "locator": "General treatment; Surgery",
+        "source_version": "Page last edited21July2026",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "AAO-EYEWIKI",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Usually no mandatory atrophic-hole treatment; symptoms, fluid and fellow-eye detachment guide consideration."
       }
     ],
     "claims": [
@@ -1781,24 +2211,44 @@
             "assessment": "MSD and NEI treatment support tractional vitrectomy and underlying diabetic care. MSD and independent StatPearls support exudative cause-specific inflammation, vascular and tumor management. No prohibition of all surgery or transfer of dosing. Component boundary: Independent exudative therapy by cause: inflammation, abnormal vessels and tumors; not tractional treatment. MSD and NEI diabetic-retinopathy treatment cover tractional component."
           }
         ]
+      },
+      {
+        "id": "p0-03-retinal-detachment-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "急性有症状的撕裂常用激光或冷冻在破口周围形成黏连，减少液体继续进入；部分低风险、无症状的萎缩性小孔可观察。决定依据包括症状、牵拉、积液及另一眼病史，而不是给每个孔都做预防性激光。",
+          "en": "Acute symptomatic tears are often sealed with laser or freezing to create an adhesion that limits fluid entry. Some low-risk asymptomatic atrophic holes can be observed. Symptoms, traction, surrounding fluid and the other eye’s history inform the decision; preventive laser is not required for every hole."
+        },
+        "supports": [
+          {
+            "source_id": "p003-retina-asrs-tears",
+            "locator": "Treatment and prognosis",
+            "assessment": "Laser/freezing versus selected observation."
+          },
+          {
+            "source_id": "p003-retina-atrophic",
+            "locator": "General treatment; Surgery",
+            "assessment": "Usually no mandatory atrophic-hole treatment; symptoms, fluid and fellow-eye detachment guide consideration."
+          }
+        ]
       }
     ],
     "claim_inventory": "all_medical_claims_in_section",
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Institutional sources are separately authored; same-author pages count once. Local hospitals are not automatically national-NHS republications. Shared upstream clinical evidence and older AOA scope are disclosed in independent reports.",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "regional_difference",
-      "resolution": "No fixed surgery/posture/review interval or local transport service is generalized. AOA2004 supports only the regular risk-related dilated-exam principle, concordant with current NEI/RANZCO; source ages remain visible."
+      "status": "none",
+      "resolution": "ASRS and EyeWiki have overlapping specialist authors and guideline references; counted as independent editorial syntheses, not independent trials. Moorfields treatment page broadly describes referred tears as high risk; the article preserves ASRS/EyeWiki distinction for asymptomatic low-risk atrophic holes and does not generalize the high-risk sentence to every hole. EyeWiki update-pending status and historical PPP citations retained."
     },
     "unresolved_questions": [],
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/acute_symptom_content; revision /root/retinal_finish",
-      "reviewer": "/root/retinal_finish (unchanged claims); /root/retinal_targeted (changed claims and transport)",
-      "checked_at": "2026-10-02",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "b1-acute-retina-aoa-retinal-guideline",
         "b1-acute-retina-asrs",
@@ -1835,18 +2285,63 @@
         "b1-acute-retina-statpearls-exudative",
         "b1-acute-retina-surgery-nei",
         "b1-acute-retina-types-nei",
+        "b1-acute-retina-vitrectomy-nei",
+        "p003-retina-asrs-tears",
+        "p003-retina-atrophic",
+        "p003-retina-moorfields-tears"
+      ],
+      "inherited_source_ids": [
+        "b1-acute-retina-aoa-retinal-guideline",
+        "b1-acute-retina-asrs",
+        "b1-acute-retina-asrs-complex",
+        "b1-acute-retina-asrs-diabetes-guideline",
+        "b1-acute-retina-asrs-imaging",
+        "b1-acute-retina-asrs-sports",
+        "b1-acute-retina-cleveland",
+        "b1-acute-retina-cuh-repair",
+        "b1-acute-retina-diabetes-surgery-sussex",
+        "b1-acute-retina-glos-drops",
+        "b1-acute-retina-kgh-emergency-transport",
+        "b1-acute-retina-leeds-anaesthetic",
+        "b1-acute-retina-leeds-drops",
+        "b1-acute-retina-leeds-postop",
+        "b1-acute-retina-mayo-treatment",
+        "b1-acute-retina-moorfields",
+        "b1-acute-retina-moorfields-floaters",
+        "b1-acute-retina-moorfields-macular-gas",
+        "b1-acute-retina-moorfields-steroid-infection",
+        "b1-acute-retina-msd",
+        "b1-acute-retina-nei",
+        "b1-acute-retina-nei-diabetes",
+        "b1-acute-retina-nhs",
+        "b1-acute-retina-nhs-dex-common",
+        "b1-acute-retina-nhs-dex-risks",
+        "b1-acute-retina-nhs-dex-use",
+        "b1-acute-retina-nhs-floaters",
+        "b1-acute-retina-nhs-vision",
+        "b1-acute-retina-puradex-smpc",
+        "b1-acute-retina-ranzco-choosing-wisely",
+        "b1-acute-retina-rcophth-gas",
+        "b1-acute-retina-statpearls-exudative",
+        "b1-acute-retina-surgery-nei",
+        "b1-acute-retina-types-nei",
         "b1-acute-retina-vitrectomy-nei"
       ],
       "findings": [
         {
-          "id": "RR01-RR04",
-          "status": "resolved",
-          "resolution": "Sixteen scoped changes independently accepted; Kettering corroborates transport action and two unread redundant links removed without changing bilingual medical text."
+          "finding": "Follow-up and postoperative drop advice had explanation kind despite actions.",
+          "resolution": "Claims5/7 now action with two separately authored supports.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Asymptomatic atrophic holes must not inherit blanket urgent laser or intraocular-gas restrictions.",
+          "resolution": "Body explicitly separates examination-based observation from treated traction tears and makes surgical/gas instructions conditional.",
+          "status": "resolved"
         }
       ],
-      "resolution": "52 unchanged claim objects inherit frozen independent review;16 changes and the preserved transport action received fresh targeted review. Exact metadata patches applied with hash/substring verification; no physician sign-off."
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
-    "review_report": "reports/batch-01-retinal-acceptance.json"
+    "review_report": "reports/p0-03-retinal-detachment-independent.json"
   },
   {
     "id": "batch01-acute-retinal-detachment-medications",
@@ -1855,11 +2350,11 @@
       "id": "retinal-detachment",
       "section": "medications"
     },
-    "content_sha256": "43f0bd1637b92657a0c60002d8d9787f249f8227f7be4c806e5c6589e7d2dd8f",
+    "content_sha256": "5dbaef5777d8db7ff51724b9cbca018e6262d05f776e82440a53d2481f1e9368",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "Independent original and targeted reviewers; hash-bound integration in batch-01-retinal-acceptance.json",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
     "medical_reviewed": false,
     "supports": [
       {
@@ -2101,6 +2596,36 @@
         ],
         "relation": "supports",
         "assessment": "medications-1: The explanatory boundary is consistent with actual sources; it does not establish an individual treatment plan. Component boundary: Supports only the specific matched component at this locator; independent re-review remains pending."
+      },
+      {
+        "source_id": "p003-retina-moorfields-tears",
+        "source_metadata_sha256": "fcbd2ba55ceedc83d53b50e0bc8ce2bd8d73a7dfeff272f8b223132379f3452b",
+        "locator": "How is it done",
+        "source_version": "Original hospital page read: laser retinopexy, local anaesthesia, incomplete seal, driving, follow-up and new symptoms. Private-service fees and absolute no-infection wording not adopted.",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "GB",
+        "independence_group": "NHS-MOORFIELDS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Dilation/local anaesthetic alongside laser; scar seal by laser."
+      },
+      {
+        "source_id": "p003-retina-asrs-tears",
+        "source_metadata_sha256": "a432f0160a21395b01e0a0d97fcbd5342070acebc7e3a87b07fd61a67b5b9451",
+        "locator": "Treatment and prognosis",
+        "source_version": "Original page read: symptoms, causes, retinal tears versus holes, diagnosis, treatment and prognosis. No absolute prevention estimate adopted.",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "ASRS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Local/topical anaesthesia with laser or freezing, including observation without intervention."
       }
     ],
     "claims": [
@@ -2308,24 +2833,44 @@
             "assessment": "MSD uveitic detachment and StatPearls VKH/posterior-scleritis management support the noninfectious-inflammatory scope. Immune-suppression rationale is explicit. No self-start instruction or regimen. Component boundary: Independent treatment and immune-response rationale. Narrowed to some noninfectious inflammation; infection-related cases require separate cause-specific care, not steroid self-treatment."
           }
         ]
+      },
+      {
+        "id": "p0-03-retinal-detachment-5",
+        "kind": "action",
+        "text": {
+          "zh-CN": "单纯裂孔激光常使用散瞳和局部麻醉滴眼液，帮助看清并减轻治疗时的不适；它们不是把破口封住的药。没有做脱离手术的人，也不应照搬脱离术后的整套眼药。",
+          "en": "Laser treatment for a break commonly uses dilating and local anaesthetic drops to improve the view and comfort; these drops do not seal the break. A person who has not had detachment surgery should not copy that operation’s full postoperative drop regimen."
+        },
+        "supports": [
+          {
+            "source_id": "p003-retina-moorfields-tears",
+            "locator": "How is it done",
+            "assessment": "Dilation/local anaesthetic alongside laser; scar seal by laser."
+          },
+          {
+            "source_id": "p003-retina-asrs-tears",
+            "locator": "Treatment and prognosis",
+            "assessment": "Local/topical anaesthesia with laser or freezing, including observation without intervention."
+          }
+        ]
       }
     ],
     "claim_inventory": "all_medical_claims_in_section",
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Institutional sources are separately authored; same-author pages count once. Local hospitals are not automatically national-NHS republications. Shared upstream clinical evidence and older AOA scope are disclosed in independent reports.",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "regional_difference",
-      "resolution": "No fixed surgery/posture/review interval or local transport service is generalized. AOA2004 supports only the regular risk-related dilated-exam principle, concordant with current NEI/RANZCO; source ages remain visible."
+      "status": "none",
+      "resolution": "ASRS and EyeWiki have overlapping specialist authors and guideline references; counted as independent editorial syntheses, not independent trials. Moorfields treatment page broadly describes referred tears as high risk; the article preserves ASRS/EyeWiki distinction for asymptomatic low-risk atrophic holes and does not generalize the high-risk sentence to every hole. EyeWiki update-pending status and historical PPP citations retained."
     },
     "unresolved_questions": [],
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/acute_symptom_content; revision /root/retinal_finish",
-      "reviewer": "/root/retinal_finish (unchanged claims); /root/retinal_targeted (changed claims and transport)",
-      "checked_at": "2026-10-02",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "b1-acute-retina-aoa-retinal-guideline",
         "b1-acute-retina-asrs",
@@ -2362,18 +2907,63 @@
         "b1-acute-retina-statpearls-exudative",
         "b1-acute-retina-surgery-nei",
         "b1-acute-retina-types-nei",
+        "b1-acute-retina-vitrectomy-nei",
+        "p003-retina-asrs-tears",
+        "p003-retina-atrophic",
+        "p003-retina-moorfields-tears"
+      ],
+      "inherited_source_ids": [
+        "b1-acute-retina-aoa-retinal-guideline",
+        "b1-acute-retina-asrs",
+        "b1-acute-retina-asrs-complex",
+        "b1-acute-retina-asrs-diabetes-guideline",
+        "b1-acute-retina-asrs-imaging",
+        "b1-acute-retina-asrs-sports",
+        "b1-acute-retina-cleveland",
+        "b1-acute-retina-cuh-repair",
+        "b1-acute-retina-diabetes-surgery-sussex",
+        "b1-acute-retina-glos-drops",
+        "b1-acute-retina-kgh-emergency-transport",
+        "b1-acute-retina-leeds-anaesthetic",
+        "b1-acute-retina-leeds-drops",
+        "b1-acute-retina-leeds-postop",
+        "b1-acute-retina-mayo-treatment",
+        "b1-acute-retina-moorfields",
+        "b1-acute-retina-moorfields-floaters",
+        "b1-acute-retina-moorfields-macular-gas",
+        "b1-acute-retina-moorfields-steroid-infection",
+        "b1-acute-retina-msd",
+        "b1-acute-retina-nei",
+        "b1-acute-retina-nei-diabetes",
+        "b1-acute-retina-nhs",
+        "b1-acute-retina-nhs-dex-common",
+        "b1-acute-retina-nhs-dex-risks",
+        "b1-acute-retina-nhs-dex-use",
+        "b1-acute-retina-nhs-floaters",
+        "b1-acute-retina-nhs-vision",
+        "b1-acute-retina-puradex-smpc",
+        "b1-acute-retina-ranzco-choosing-wisely",
+        "b1-acute-retina-rcophth-gas",
+        "b1-acute-retina-statpearls-exudative",
+        "b1-acute-retina-surgery-nei",
+        "b1-acute-retina-types-nei",
         "b1-acute-retina-vitrectomy-nei"
       ],
       "findings": [
         {
-          "id": "RR01-RR04",
-          "status": "resolved",
-          "resolution": "Sixteen scoped changes independently accepted; Kettering corroborates transport action and two unread redundant links removed without changing bilingual medical text."
+          "finding": "Follow-up and postoperative drop advice had explanation kind despite actions.",
+          "resolution": "Claims5/7 now action with two separately authored supports.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Asymptomatic atrophic holes must not inherit blanket urgent laser or intraocular-gas restrictions.",
+          "resolution": "Body explicitly separates examination-based observation from treated traction tears and makes surgical/gas instructions conditional.",
+          "status": "resolved"
         }
       ],
-      "resolution": "52 unchanged claim objects inherit frozen independent review;16 changes and the preserved transport action received fresh targeted review. Exact metadata patches applied with hash/substring verification; no physician sign-off."
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
-    "review_report": "reports/batch-01-retinal-acceptance.json"
+    "review_report": "reports/p0-03-retinal-detachment-independent.json"
   },
   {
     "id": "batch01-acute-retinal-detachment-diet",
@@ -2629,11 +3219,11 @@
       "id": "retinal-detachment",
       "section": "daily_care"
     },
-    "content_sha256": "54b8fb06c12698725e2be0ec197aae5e999ddbed7abb8449ba76a1350624b555",
+    "content_sha256": "06ea74df460a34ee0f2bda9033b489fe0018821b7e145ef09a8750f0a785174b",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "Independent original and targeted reviewers; hash-bound integration in batch-01-retinal-acceptance.json",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
     "medical_reviewed": false,
     "supports": [
       {
@@ -2740,6 +3330,51 @@
         ],
         "relation": "supports",
         "assessment": "daily_care-1: Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added. Component boundary: Author located the specific statement in Recovery. Source supports the matched component; unresolved compound-claim details remain listed below and require independent review. daily_care-2: Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added. Component boundary: Independent support for postoperative eye covering; no fixed duration imported. Leeds covers dressing/shield. daily_care-3: Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added. Component boundary: Author located the specific statement in Face positioning. Source supports the matched component; unresolved compound-claim details remain listed below and require independent review. daily_care-4: Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added. Component boundary: Supports only the specific matched component at this locator; independent re-review remains pending."
+      },
+      {
+        "source_id": "p003-retina-moorfields-tears",
+        "source_metadata_sha256": "fcbd2ba55ceedc83d53b50e0bc8ce2bd8d73a7dfeff272f8b223132379f3452b",
+        "locator": "Recovery",
+        "source_version": "Original hospital page read: laser retinopexy, local anaesthesia, incomplete seal, driving, follow-up and new symptoms. Private-service fees and absolute no-infection wording not adopted.",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "GB",
+        "independence_group": "NHS-MOORFIELDS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "No driving laser day due to dazzling/misty vision; procedure is focal laser."
+      },
+      {
+        "source_id": "p003-retina-asrs-tears",
+        "source_metadata_sha256": "a432f0160a21395b01e0a0d97fcbd5342070acebc7e3a87b07fd61a67b5b9451",
+        "locator": "Treatment and prognosis",
+        "source_version": "Original page read: symptoms, causes, retinal tears versus holes, diagnosis, treatment and prognosis. No absolute prevention estimate adopted.",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "ASRS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Office laser/freezing under topical/local anaesthesia; not a detachment-repair gas procedure."
+      },
+      {
+        "source_id": "b1-acute-retina-nei-dilation",
+        "source_metadata_sha256": "6cca6504c41cc96b5ba19bb41af2c79fe2ad0e53981a18dbd389b235bb50d5d5",
+        "locator": "After a dilated eye exam",
+        "source_version": "2025-11-26",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "US-NIH-NEI",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Independent NIH source for blurred vision and arrange another driver; existing metadata unchanged."
       }
     ],
     "claims": [
@@ -2917,24 +3552,49 @@
             "assessment": "Previously independently accepted bounded application in batch-01-retinal-recheck: RCOphth establishes the gas contraindication and disclosure to treating staff; Moorfields explicitly supplies the dental setting. The same contraindication applies to dental sedation. RCOphth is not claimed to contain a separate verbatim dental instruction."
           }
         ]
+      },
+      {
+        "id": "p0-03-retinal-detachment-6",
+        "kind": "action",
+        "text": {
+          "zh-CN": "单纯裂孔激光后是否限制运动，按本次眼科安排；并非每次激光都会在眼内放气泡或要求特殊头位。当天可能因散瞳和强光而模糊，不应自己开车离院。",
+          "en": "After laser alone, follow the eye team’s activity advice; treatment does not routinely involve an intraocular gas bubble or a special head position. Dilating drops and bright light can blur vision, so do not drive yourself home on the treatment day."
+        },
+        "supports": [
+          {
+            "source_id": "p003-retina-moorfields-tears",
+            "locator": "Recovery",
+            "assessment": "No driving laser day due to dazzling/misty vision; procedure is focal laser."
+          },
+          {
+            "source_id": "p003-retina-asrs-tears",
+            "locator": "Treatment and prognosis",
+            "assessment": "Office laser/freezing under topical/local anaesthesia; not a detachment-repair gas procedure."
+          },
+          {
+            "source_id": "b1-acute-retina-nei-dilation",
+            "locator": "After a dilated eye exam",
+            "assessment": "Independent NIH source for blurred vision and arrange another driver; existing metadata unchanged."
+          }
+        ]
       }
     ],
     "claim_inventory": "all_medical_claims_in_section",
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Institutional sources are separately authored; same-author pages count once. Local hospitals are not automatically national-NHS republications. Shared upstream clinical evidence and older AOA scope are disclosed in independent reports.",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "regional_difference",
-      "resolution": "No fixed surgery/posture/review interval or local transport service is generalized. AOA2004 supports only the regular risk-related dilated-exam principle, concordant with current NEI/RANZCO; source ages remain visible."
+      "status": "none",
+      "resolution": "ASRS and EyeWiki have overlapping specialist authors and guideline references; counted as independent editorial syntheses, not independent trials. Moorfields treatment page broadly describes referred tears as high risk; the article preserves ASRS/EyeWiki distinction for asymptomatic low-risk atrophic holes and does not generalize the high-risk sentence to every hole. EyeWiki update-pending status and historical PPP citations retained."
     },
     "unresolved_questions": [],
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/acute_symptom_content; revision /root/retinal_finish",
-      "reviewer": "/root/retinal_finish (unchanged claims); /root/retinal_targeted (changed claims and transport)",
-      "checked_at": "2026-10-02",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "b1-acute-retina-aoa-retinal-guideline",
         "b1-acute-retina-asrs",
@@ -2971,18 +3631,63 @@
         "b1-acute-retina-statpearls-exudative",
         "b1-acute-retina-surgery-nei",
         "b1-acute-retina-types-nei",
+        "b1-acute-retina-vitrectomy-nei",
+        "p003-retina-asrs-tears",
+        "p003-retina-atrophic",
+        "p003-retina-moorfields-tears"
+      ],
+      "inherited_source_ids": [
+        "b1-acute-retina-aoa-retinal-guideline",
+        "b1-acute-retina-asrs",
+        "b1-acute-retina-asrs-complex",
+        "b1-acute-retina-asrs-diabetes-guideline",
+        "b1-acute-retina-asrs-imaging",
+        "b1-acute-retina-asrs-sports",
+        "b1-acute-retina-cleveland",
+        "b1-acute-retina-cuh-repair",
+        "b1-acute-retina-diabetes-surgery-sussex",
+        "b1-acute-retina-glos-drops",
+        "b1-acute-retina-kgh-emergency-transport",
+        "b1-acute-retina-leeds-anaesthetic",
+        "b1-acute-retina-leeds-drops",
+        "b1-acute-retina-leeds-postop",
+        "b1-acute-retina-mayo-treatment",
+        "b1-acute-retina-moorfields",
+        "b1-acute-retina-moorfields-floaters",
+        "b1-acute-retina-moorfields-macular-gas",
+        "b1-acute-retina-moorfields-steroid-infection",
+        "b1-acute-retina-msd",
+        "b1-acute-retina-nei",
+        "b1-acute-retina-nei-diabetes",
+        "b1-acute-retina-nhs",
+        "b1-acute-retina-nhs-dex-common",
+        "b1-acute-retina-nhs-dex-risks",
+        "b1-acute-retina-nhs-dex-use",
+        "b1-acute-retina-nhs-floaters",
+        "b1-acute-retina-nhs-vision",
+        "b1-acute-retina-puradex-smpc",
+        "b1-acute-retina-ranzco-choosing-wisely",
+        "b1-acute-retina-rcophth-gas",
+        "b1-acute-retina-statpearls-exudative",
+        "b1-acute-retina-surgery-nei",
+        "b1-acute-retina-types-nei",
         "b1-acute-retina-vitrectomy-nei"
       ],
       "findings": [
         {
-          "id": "RR01-RR04",
-          "status": "resolved",
-          "resolution": "Sixteen scoped changes independently accepted; Kettering corroborates transport action and two unread redundant links removed without changing bilingual medical text."
+          "finding": "Follow-up and postoperative drop advice had explanation kind despite actions.",
+          "resolution": "Claims5/7 now action with two separately authored supports.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Asymptomatic atrophic holes must not inherit blanket urgent laser or intraocular-gas restrictions.",
+          "resolution": "Body explicitly separates examination-based observation from treated traction tears and makes surgical/gas instructions conditional.",
+          "status": "resolved"
         }
       ],
-      "resolution": "52 unchanged claim objects inherit frozen independent review;16 changes and the preserved transport action received fresh targeted review. Exact metadata patches applied with hash/substring verification; no physician sign-off."
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
-    "review_report": "reports/batch-01-retinal-acceptance.json"
+    "review_report": "reports/p0-03-retinal-detachment-independent.json"
   },
   {
     "id": "batch01-acute-retinal-detachment-special_populations",
@@ -3283,11 +3988,11 @@
       "id": "retinal-detachment",
       "section": "prognosis_followup"
     },
-    "content_sha256": "832231bc9366ddd3d0f2dd23d686861d27a400be01b96b4e29a12612598cafd1",
+    "content_sha256": "1af4a41cad274c37fe199703d275b8956c2e1887d09bc0b5fd80594c81f94320",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "Independent original and targeted reviewers; hash-bound integration in batch-01-retinal-acceptance.json",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
     "medical_reviewed": false,
     "supports": [
       {
@@ -3424,6 +4129,36 @@
         ],
         "relation": "supports",
         "assessment": "prognosis_followup-2: The explanatory boundary is consistent with actual sources; it does not establish an individual treatment plan. Component boundary: Author located the specific statement in After vitrectomy. Source supports the matched component; unresolved compound-claim details remain listed below and require independent review. prognosis_followup-4: NEI recovery/CUH Eye drops support scheduled sight/healing and drop review; NHS/Moorfields shared postoperative warnings support immediate contact for worsening vision/pain/redness. Component boundary: Supports only the specific matched component at this locator; independent re-review remains pending."
+      },
+      {
+        "source_id": "p003-retina-moorfields-tears",
+        "source_metadata_sha256": "fcbd2ba55ceedc83d53b50e0bc8ce2bd8d73a7dfeff272f8b223132379f3452b",
+        "locator": "Recovery; follow-up; risk of detachment",
+        "source_version": "Original hospital page read: laser retinopexy, local anaesthesia, incomplete seal, driving, follow-up and new symptoms. Private-service fees and absolute no-infection wording not adopted.",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "GB",
+        "independence_group": "NHS-MOORFIELDS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Existing floaters remain; seal may incomplete; follow-up and warning signs."
+      },
+      {
+        "source_id": "p003-retina-asrs-tears",
+        "source_metadata_sha256": "a432f0160a21395b01e0a0d97fcbd5342070acebc7e3a87b07fd61a67b5b9451",
+        "locator": "Treatment and prognosis",
+        "source_version": "Original page read: symptoms, causes, retinal tears versus holes, diagnosis, treatment and prognosis. No absolute prevention estimate adopted.",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Retinal detachment; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "ASRS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Continued risk of additional separate tears and need for monitoring."
       }
     ],
     "claims": [
@@ -3531,24 +4266,44 @@
             "assessment": "NEI recovery/CUH Eye drops support scheduled sight/healing and drop review; NHS/Moorfields shared postoperative warnings support immediate contact for worsening vision/pain/redness. Component boundary: Shared postoperative vitrectomy warning context only. No macular-hole treatment efficacy, recovery duration or posture transferred."
           }
         ]
+      },
+      {
+        "id": "p0-03-retinal-detachment-7",
+        "kind": "action",
+        "text": {
+          "zh-CN": "激光封孔的目标是降低脱离风险，原来的飞蚊不一定消失。复查检查封闭是否充分，也要寻找新的独立裂孔；即使这次封闭成功，将来仍可能出现新破口。",
+          "en": "Sealing a break aims to reduce detachment risk, not necessarily remove existing floaters. Follow-up checks the seal and looks for separate new tears; successful treatment of this break does not prevent every future break."
+        },
+        "supports": [
+          {
+            "source_id": "p003-retina-moorfields-tears",
+            "locator": "Recovery; follow-up; risk of detachment",
+            "assessment": "Existing floaters remain; seal may incomplete; follow-up and warning signs."
+          },
+          {
+            "source_id": "p003-retina-asrs-tears",
+            "locator": "Treatment and prognosis",
+            "assessment": "Continued risk of additional separate tears and need for monitoring."
+          }
+        ]
       }
     ],
     "claim_inventory": "all_medical_claims_in_section",
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Institutional sources are separately authored; same-author pages count once. Local hospitals are not automatically national-NHS republications. Shared upstream clinical evidence and older AOA scope are disclosed in independent reports.",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "regional_difference",
-      "resolution": "No fixed surgery/posture/review interval or local transport service is generalized. AOA2004 supports only the regular risk-related dilated-exam principle, concordant with current NEI/RANZCO; source ages remain visible."
+      "status": "none",
+      "resolution": "ASRS and EyeWiki have overlapping specialist authors and guideline references; counted as independent editorial syntheses, not independent trials. Moorfields treatment page broadly describes referred tears as high risk; the article preserves ASRS/EyeWiki distinction for asymptomatic low-risk atrophic holes and does not generalize the high-risk sentence to every hole. EyeWiki update-pending status and historical PPP citations retained."
     },
     "unresolved_questions": [],
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/acute_symptom_content; revision /root/retinal_finish",
-      "reviewer": "/root/retinal_finish (unchanged claims); /root/retinal_targeted (changed claims and transport)",
-      "checked_at": "2026-10-02",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "b1-acute-retina-aoa-retinal-guideline",
         "b1-acute-retina-asrs",
@@ -3585,18 +4340,63 @@
         "b1-acute-retina-statpearls-exudative",
         "b1-acute-retina-surgery-nei",
         "b1-acute-retina-types-nei",
+        "b1-acute-retina-vitrectomy-nei",
+        "p003-retina-asrs-tears",
+        "p003-retina-atrophic",
+        "p003-retina-moorfields-tears"
+      ],
+      "inherited_source_ids": [
+        "b1-acute-retina-aoa-retinal-guideline",
+        "b1-acute-retina-asrs",
+        "b1-acute-retina-asrs-complex",
+        "b1-acute-retina-asrs-diabetes-guideline",
+        "b1-acute-retina-asrs-imaging",
+        "b1-acute-retina-asrs-sports",
+        "b1-acute-retina-cleveland",
+        "b1-acute-retina-cuh-repair",
+        "b1-acute-retina-diabetes-surgery-sussex",
+        "b1-acute-retina-glos-drops",
+        "b1-acute-retina-kgh-emergency-transport",
+        "b1-acute-retina-leeds-anaesthetic",
+        "b1-acute-retina-leeds-drops",
+        "b1-acute-retina-leeds-postop",
+        "b1-acute-retina-mayo-treatment",
+        "b1-acute-retina-moorfields",
+        "b1-acute-retina-moorfields-floaters",
+        "b1-acute-retina-moorfields-macular-gas",
+        "b1-acute-retina-moorfields-steroid-infection",
+        "b1-acute-retina-msd",
+        "b1-acute-retina-nei",
+        "b1-acute-retina-nei-diabetes",
+        "b1-acute-retina-nhs",
+        "b1-acute-retina-nhs-dex-common",
+        "b1-acute-retina-nhs-dex-risks",
+        "b1-acute-retina-nhs-dex-use",
+        "b1-acute-retina-nhs-floaters",
+        "b1-acute-retina-nhs-vision",
+        "b1-acute-retina-puradex-smpc",
+        "b1-acute-retina-ranzco-choosing-wisely",
+        "b1-acute-retina-rcophth-gas",
+        "b1-acute-retina-statpearls-exudative",
+        "b1-acute-retina-surgery-nei",
+        "b1-acute-retina-types-nei",
         "b1-acute-retina-vitrectomy-nei"
       ],
       "findings": [
         {
-          "id": "RR01-RR04",
-          "status": "resolved",
-          "resolution": "Sixteen scoped changes independently accepted; Kettering corroborates transport action and two unread redundant links removed without changing bilingual medical text."
+          "finding": "Follow-up and postoperative drop advice had explanation kind despite actions.",
+          "resolution": "Claims5/7 now action with two separately authored supports.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Asymptomatic atrophic holes must not inherit blanket urgent laser or intraocular-gas restrictions.",
+          "resolution": "Body explicitly separates examination-based observation from treated traction tears and makes surgical/gas instructions conditional.",
+          "status": "resolved"
         }
       ],
-      "resolution": "52 unchanged claim objects inherit frozen independent review;16 changes and the preserved transport action received fresh targeted review. Exact metadata patches applied with hash/substring verification; no physician sign-off."
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
-    "review_report": "reports/batch-01-retinal-acceptance.json"
+    "review_report": "reports/p0-03-retinal-detachment-independent.json"
   },
   {
     "id": "batch01-acute-retinal-detachment-complications",

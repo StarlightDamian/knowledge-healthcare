@@ -1,0 +1,304 @@
+{
+  "schema_version": "1.0.0",
+  "id": "cardiac-arrest",
+  "kind": "condition",
+  "primary_domain": "general",
+  "names": {
+    "zh-CN": "心脏骤停",
+    "en": "Cardiac arrest"
+  },
+  "aliases": {
+    "zh-CN": [
+      "心搏骤停",
+      "心肺骤停"
+    ],
+    "en": [
+      "cardiopulmonary arrest"
+    ]
+  },
+  "symptom_terms": [
+    {
+      "zh-CN": "突然倒地叫不醒",
+      "en": "sudden unresponsive collapse"
+    },
+    {
+      "zh-CN": "没有正常呼吸或只剩喘息",
+      "en": "absent normal breathing or only gasping"
+    }
+  ],
+  "departments": [
+    "emergency",
+    "cardiology"
+  ],
+  "reference_urgency": "emergency",
+  "sections": {
+    "summary": {
+      "text": {
+        "zh-CN": "心脏骤停是心脏突然不能有效把血送往大脑和全身。人会倒下、失去反应，停止正常呼吸；心电图有电活动也不一定还有有效供血。\n\n- 心肺骤停描述循环和正常呼吸都已停止。它是多种心脏病、缺氧或其他急症的严重结果；存活后可能还需要心脏、体力和记忆等方面的康复。",
+        "en": "Cardiac arrest is a sudden loss of effective blood flow from the heart to the brain and body. The person collapses, becomes unresponsive and stops breathing normally; electrical activity alone does not prove that blood is circulating.\n\n- Cardiopulmonary arrest describes loss of circulation and normal breathing. Heart disease, lack of oxygen and other emergencies can lead to it; survivors may need cardiac, physical and cognitive rehabilitation."
+      },
+      "source_ids": [
+        "p003-ca-aha-recovery",
+        "p003-ca-msd-ca",
+        "p003-ca-nih-overview"
+      ],
+      "support_status": "verified"
+    },
+    "causes_risks": {
+      "text": {
+        "zh-CN": "可按原有基础和这次触发因素来理解病因。\n\n- 冠状动脉疾病和心梗会影响心肌供血或留下瘢痕，心肌病会改变心脏结构。这些问题可使控制心跳的电信号失序，产生无法有效泵血的心律。\n- 窒息、溺水、药物中毒可先使呼吸和氧气供应出问题；大出血、肺栓塞或钾等电解质异常也可使循环崩溃。抢救时必须同时寻找这些可处理的原因。\n- 家族早年不明原因猝死、遗传性心律或心肌疾病值得告诉医生。遗传背景无法改变，但吸烟、部分药物或毒品暴露和未控制的心血管危险因素可处理。",
+        "en": "Separate the underlying condition from the immediate trigger.\n\n- Coronary disease or an infarction can interrupt heart-muscle blood supply or leave scars; cardiomyopathy alters heart structure. These changes can disrupt electrical signals and produce a rhythm that cannot pump effectively.\n- Choking, drowning or poisoning may first impair breathing and oxygen supply. Major blood loss, pulmonary embolism or electrolyte disturbances such as abnormal potassium can also cause circulatory collapse; resuscitation includes finding these treatable causes.\n- Tell the clinician about unexplained early sudden deaths in relatives or inherited rhythm or heart-muscle disease. Inheritance cannot be changed, but smoking, some drug exposures and uncontrolled cardiovascular risk factors can be addressed."
+      },
+      "source_ids": [
+        "p003-ca-aha-causes",
+        "p003-ca-msd-ca",
+        "p003-ca-nih-causes",
+        "p003-ca-rcuk-special"
+      ],
+      "support_status": "verified"
+    },
+    "red_flags": {
+      "text": {
+        "zh-CN": "现场判断以能否唤醒和呼吸是否正常为要点。\n\n- 发现人没有反应，立即呼叫当地急救，开手机免提并检查呼吸。叫不醒且不正常呼吸，或只剩偶尔抽气、喘息，应立即开始心肺复苏；普通目击者不必先摸到脉搏才行动。\n- 短暂抽动或看起来像癫痫发作也可能出现在骤停开始时；抽动结束后仍叫不醒、呼吸异常，就按骤停处理。不要等脸色改变或完全不动才求助。\n- 尚清醒时出现胸部压迫感、严重呼吸困难或突然晕倒，也应立即求助；这些可能是心梗或危险心律的警报。清醒且正常呼吸的人不按骤停做胸外按压。",
+        "en": "At the scene, focus on responsiveness and normal breathing.\n\n- If a person is unresponsive, call local emergency services immediately, use speakerphone and assess breathing. Start CPR when they are unresponsive and not breathing normally, including occasional gasps; a bystander does not need to find a pulse before acting.\n- Brief jerking can occur at the start of an arrest and resemble a seizure. If the person remains unresponsive with abnormal breathing after the jerking, treat it as cardiac arrest rather than waiting for a colour change or complete stillness.\n- Chest pressure, severe breathlessness or sudden fainting while previously awake also warrant immediate help: an infarction or dangerous rhythm may be developing. Chest compressions are for suspected arrest, not a person who is awake and breathing normally."
+      },
+      "source_ids": [
+        "p003-ca-aha-bls",
+        "p003-ca-msd-ca",
+        "p003-ca-nih-symptoms",
+        "p003-ca-rcuk-bls"
+      ],
+      "support_status": "verified"
+    },
+    "care": {
+      "text": {
+        "zh-CN": "眼前抢救和出院后就医有不同的安排。\n\n- 请旁人取来AED（会自动分析心律的除颤器），自己继续按急救调度员指导复苏。AED到达后打开并照语音操作；等待设备不能替代已经可以开始的胸外按压。\n- 恢复反应或呼吸后仍需急救团队评估，医院要查明原因并监护再次恶化。出院后的常规复诊会检查病因治疗、用药、心脏功能及植入设备，而不是只看有没有再倒下。\n- 出院后如设备短时间多次放电或放电时人不舒服，立即寻求急救；即使单次放电后感觉正常，也应联系设备随访团队说明情况。新出现或加重的症状应提前联系医生。",
+        "en": "Immediate resuscitation and later follow-up have different needs.\n\n- Ask another person to fetch an AED, a device that analyses the heart rhythm, while you continue dispatcher-guided CPR. Turn it on and follow its prompts when it arrives; do not postpone available chest compressions while waiting for the device.\n- Return of responsiveness or breathing still requires emergency-team assessment; hospital care investigates the cause and watches for deterioration. Later appointments review treatment, medicines, heart function and any implanted device, rather than only whether another collapse occurred.\n- Seek emergency help for repeated device shocks close together or a shock accompanied by feeling unwell. Even if well after a single shock, contact the device follow-up team; new or worsening symptoms should prompt earlier clinical review."
+      },
+      "source_ids": [
+        "p003-ca-aha-post",
+        "p003-ca-nhs-device",
+        "p003-ca-nih-device",
+        "p003-ca-nih-life",
+        "p003-ca-nih-treatment",
+        "p003-ca-rcuk-bls"
+      ],
+      "support_status": "verified"
+    },
+    "diagnosis": {
+      "text": {
+        "zh-CN": "抢救时先识别骤停，随后再查机制和原因。\n\n- 监护仪会区分室颤／无脉性室速（电信号太乱或太快而不能泵血）、心静止（没有有效心室电活动）以及无脉性电活动（有电信号却无有效循环）。外观不能分清这些类型。\n- 医生会询问倒下前的胸痛、气短、用药或中毒线索以及家族病史。恢复循环后，心电图查心律和缺血线索，抽血查电解质等，超声看泵血和结构；怀疑冠脉堵塞或肺栓塞时才选择相应血管检查。\n- “未特指”可能表示记录中没有捕捉到最初心律，不代表原因轻微或已经查清。一次恢复正常的心电图不能重现全部经过；部分人需要进一步心律检查或按家族线索做遗传评估。",
+        "en": "First recognise arrest; then establish the rhythm and cause.\n\n- Monitoring distinguishes ventricular fibrillation or pulseless ventricular tachycardia—chaotic or rapid signals without useful pumping—from asystole, with no effective ventricular electrical activity, and pulseless electrical activity, with electrical signals but no effective circulation. Appearance alone cannot distinguish them.\n- The team asks about preceding chest pain, breathlessness, medicines, possible poisoning and family history. After circulation returns, ECG assesses rhythm and ischaemic clues, blood tests assess electrolytes and other abnormalities, and ultrasound examines pumping and structure. Coronary or pulmonary-vessel investigations depend on the suspected cause.\n- An unspecified arrest may mean that the initial rhythm was not recorded; it does not imply a mild or established cause. A later normal ECG cannot reconstruct the whole event. Some people need further rhythm assessment or genetics guided by the family history."
+      },
+      "source_ids": [
+        "p003-ca-aha-als",
+        "p003-ca-aha-post",
+        "p003-ca-msd-ca",
+        "p003-ca-nih-diagnosis",
+        "p003-ca-rcuk-als"
+      ],
+      "support_status": "verified"
+    },
+    "differentials": {
+      "text": {
+        "zh-CN": "几个容易混用的名称，其处理并不相同。\n\n- 心肌梗死是供应心肌的血流受阻，患者当时可能仍清醒、心脏仍在跳；它可以触发骤停，却不等于已经骤停。呼吸骤停则可能先有脉搏，医护人员会优先通气并持续看循环。\n- 晕厥、低血糖或癫痫也会让人失去反应。先判断呼吸并呼叫急救；持续没有反应、呼吸异常时，不能为了先确定是哪一种病而延误复苏。\n- 慢心率有时是正常生理状态，有时会造成供血不足；“心动过缓性骤停”指已经发生循环危机，不能仅凭手表上数字偏低判断。成人仍有脉搏的严重慢心率与无脉搏骤停使用不同急救流程。",
+        "en": "Several easily confused terms require different responses.\n\n- An infarction is interrupted blood supply to heart muscle; the person may still be awake with a beating heart. It can trigger arrest but is not itself proof of arrest. Respiratory arrest may initially occur with a pulse, so professionals provide ventilation while reassessing circulation.\n- Fainting, low glucose or a seizure can also cause unresponsiveness. Assess breathing and call for help; if unresponsiveness and abnormal breathing persist, do not delay CPR while trying to assign a diagnosis.\n- A slow rate can be physiological or can impair blood flow. Bradycardic arrest means circulatory collapse, not simply a low watch reading. Severe adult bradycardia with a pulse and pulseless arrest use different emergency pathways."
+      },
+      "source_ids": [
+        "p003-ca-aha-als",
+        "p003-ca-aha-bls",
+        "p003-ca-aha-special",
+        "p003-ca-msd-ca",
+        "p003-ca-nih-symptoms",
+        "p003-ca-rcuk-als",
+        "p003-ca-rcuk-bls"
+      ],
+      "support_status": "verified"
+    },
+    "treatment": {
+      "text": {
+        "zh-CN": "处理依次解决血流、心律和造成骤停的病因。\n\n- 成人胸外按压时，双手重叠置于胸骨下半部、胸部中央，直臂按压，每分钟100–120次，深约5–6厘米，每次让胸廓回弹，尽量减少中断。这是2025年美国及英国成人指南的范围；婴幼儿手法和深度不同。\n- 受过训练且能人工呼吸的成人施救者，可按30次按压接2次呼吸进行；不会或不能做时先持续按压并听调度指导。AED分析和放电时任何人不要接触患者，提示可继续时立即恢复按压，包括提示“不建议电击”时。\n- 电击适用于室颤和无脉性室速；心静止、无脉性电活动需要持续复苏、医院药物及纠正病因，不能用电击把所有“停跳”重新启动。医护人员会不断复查心律，必要时更换路径。\n- 恢复循环后还要支持呼吸和血压、处理堵塞血管或缺氧等原因，并防止大脑进一步受伤。仍不能按指令回应的成人会接受有计划的体温控制和防发热；不意味着每个人都必须降到同一个低温。",
+        "en": "Treatment addresses blood flow, rhythm and the underlying cause.\n\n- For an adult, stack the hands over the lower half of the breastbone at the centre of the chest, keep arms straight and compress 100–120 times/minute to about5–6cm, allowing full recoil and minimising pauses. These are2025 US and UK adult guideline ranges; infant and child technique and depth differ.\n- A trained rescuer able to give adult rescue breaths can use30 compressions followed by2 breaths; otherwise start continuous compressions with dispatcher guidance. Keep everyone clear during AED analysis and shock, then resume compressions when instructed, including after a no-shock prompt.\n- Defibrillation treats ventricular fibrillation and pulseless ventricular tachycardia. Asystole and pulseless electrical activity need CPR, professional drug treatment and correction of causes; a shock cannot restart every form of arrest. The team reassesses the rhythm and changes pathways when needed.\n- After circulation returns, care supports breathing and blood pressure, treats causes such as blocked vessels or hypoxia and limits further brain injury. Adults who still cannot follow commands receive planned temperature control and fever prevention, not an identical low-temperature target for everyone."
+      },
+      "source_ids": [
+        "p003-ca-aha-als",
+        "p003-ca-aha-bls",
+        "p003-ca-aha-post",
+        "p003-ca-rcuk-als",
+        "p003-ca-rcuk-bls",
+        "p003-ca-rcuk-post"
+      ],
+      "support_status": "verified"
+    },
+    "medications": {
+      "text": {
+        "zh-CN": "药物是专业抢救和病因治疗的一部分。\n\n- 肾上腺素用于抢救时支持循环；胺碘酮或利多卡因可用于多次电击后仍持续的室颤／无脉性室速。恢复脉搏的概率改善不等于能保证长期存活或大脑完全恢复，药物不能取代按压和适用的电击。\n- 静脉抗心律失常药可能影响血压或产生新的心律问题，给药过程中需要监护。出院后的药物则根据查明的病因选择；把他人的心脏药加到自己的方案里可能改变心率或产生相互作用。\n- 钙剂、碳酸氢钠等不是每次骤停都常规使用的“强心针”，主要在相应电解质异常或某些中毒等特定情形考虑。请向急救团队提供药品名称和可能摄入的物质；公众现场应把时间用于呼救、复苏和AED。",
+        "en": "Medicines support professional resuscitation and treatment of the cause.\n\n- Epinephrine supports circulation during resuscitation; amiodarone or lidocaine may treat ventricular fibrillation or pulseless ventricular tachycardia persisting despite shocks. Improved restoration of a pulse does not guarantee long-term survival or complete brain recovery, and drugs do not replace compressions and indicated shocks.\n- Intravenous antiarrhythmics can affect blood pressure or provoke further rhythm problems, so they require monitoring. Long-term medicines depend on the identified cause; adding another person’s cardiac medicine may alter heart rate or cause interactions.\n- Calcium and sodium bicarbonate are not routine boosters for every arrest; they are considered for particular electrolyte problems or poisonings. Give the emergency team the names of medicines or substances involved while keeping public first aid focused on calling, CPR and the AED."
+      },
+      "source_ids": [
+        "p003-ca-aha-als",
+        "p003-ca-amiodarone-label",
+        "p003-ca-msd-cpr",
+        "p003-ca-nih-causes",
+        "p003-ca-rcuk-als",
+        "p003-ca-rcuk-special"
+      ],
+      "support_status": "verified"
+    },
+    "diet": {
+      "text": {
+        "zh-CN": "饮食重点放在恢复期和已查明的基础病。\n\n- 恢复口服饮食后，如有冠心病或血压等危险因素，可多选蔬果、全谷物、豆类和鱼等蛋白质来源，用不饱和植物油替换部分黄油及肥肉。这帮助管理心血管风险，不是让发生骤停的人靠吃东西恢复循环。\n- 买包装食品时比较同份量的钠、添加糖和饱和脂肪；少用高盐加工肉和重口味酱料。不要为了“护心”开始喝酒。",
+        "en": "Dietary choices concern recovery and the identified underlying disease.\n\n- Once oral eating resumes, people with coronary disease or cardiovascular risk factors can emphasise vegetables, fruit, whole grains, beans and fish, replacing some butter and fatty meat with unsaturated plant oils. This supports cardiovascular risk management; food does not restore circulation during an arrest.\n- Compare sodium, added sugars and saturated fat per equivalent serving on labels; reduce salty processed meats and sauces. Do not start drinking alcohol for heart protection."
+      },
+      "source_ids": [
+        "mi-nhlbi-food",
+        "p003-ca-aha-food",
+        "p003-ca-nih-treatment"
+      ],
+      "support_status": "verified"
+    },
+    "daily_care": {
+      "text": {
+        "zh-CN": "出院安排要具体到活动、用药和可求助的人。\n\n- 按出院计划逐步恢复活动和参加康复，先问清能做哪些运动、何时复工和是否可以驾驶；不要把普通健康成人的运动目标直接套在刚抢救后的身体上。\n- 记录疲劳、记忆或注意力困难、睡眠和情绪变化，以及发作时正在做什么。复诊时带上记录和药物清单，让家人一起听取安排；这些问题可能影响购物、做饭和工作，需要相应康复支持。\n- 有植入式除颤器时，按安排检查设备并向其他就诊医生说明；器械能处理某些危险心律，但没有治好原来的心脏病。把急救联系人、病史和药品清单放在家人能找到的位置。",
+        "en": "Make the home plan specific about activity, medicines and support.\n\n- Resume activity and rehabilitation according to the discharge plan; clarify permitted exercise, return to work and driving. General exercise targets for healthy adults should not be applied immediately after resuscitation.\n- Record fatigue, memory or attention difficulty, sleep and mood changes, including what was happening when symptoms occurred. Bring the record and medicine list to follow-up, with a relative if helpful; these difficulties can affect shopping, cooking and work and merit appropriate rehabilitation support.\n- With an implanted defibrillator, attend device checks and tell other treating clinicians about it. It can treat certain dangerous rhythms but does not cure the original heart disease. Keep emergency contacts, medical history and the medicine list accessible to family."
+      },
+      "source_ids": [
+        "p003-ca-aha-post",
+        "p003-ca-aha-recovery",
+        "p003-ca-nih-life",
+        "p003-ca-nih-treatment",
+        "p003-ca-rcuk-post"
+      ],
+      "support_status": "verified"
+    },
+    "special_populations": {
+      "text": {
+        "zh-CN": "年龄、孕期和基础病会改变专业处理。\n\n- 婴幼儿骤停较常从呼吸衰竭或休克逐步发展，人工呼吸尤其重要。2025年美国和英国儿童流程的起始顺序有差别，现场按当地调度和已接受的儿童急救培训行动；不会吹气时也应先开始能做的按压。\n- 孕期骤停仍需立即复苏。增大的子宫会压迫回心血流，专业团队需在按压时减轻这种压迫、优先处理气道，并同时寻找出血、子痫或栓塞等原因；这需要产科与复苏团队协作。\n- 年轻人和有家族猝死史的人可能需要遗传性心脏病评估；肾病或使用会影响电解质、心律的药物者，需要核对抽血结果和药品组合。不能仅按年龄把骤停都解释成冠心病。",
+        "en": "Age, pregnancy and underlying disease affect professional care.\n\n- Infant and child arrest often develops from respiratory failure or shock, making rescue breaths particularly important. The2025 US and UK paediatric sequences start differently; follow local dispatch and paediatric training. If unable to give breaths, begin the compressions you can provide.\n- Pregnancy does not change the need for immediate resuscitation. The enlarged uterus can obstruct blood returning to the heart; professionals relieve this during compressions, prioritise the airway and investigate haemorrhage, eclampsia or embolism with obstetric support.\n- Young people or those with a family history of sudden death may need assessment for inherited heart disease. Kidney disease or medicines affecting electrolytes or rhythm warrant review of blood results and drug combinations; age alone does not establish coronary disease as the cause."
+      },
+      "source_ids": [
+        "p003-ca-aha-causes",
+        "p003-ca-aha-paeds",
+        "p003-ca-aha-special",
+        "p003-ca-nih-causes",
+        "p003-ca-rcuk-paeds",
+        "p003-ca-rcuk-special"
+      ],
+      "support_status": "verified"
+    },
+    "prognosis_followup": {
+      "text": {
+        "zh-CN": "恢复要同时看身体功能、脑功能和病因控制。\n\n- 结果取决于病因、多久恢复有效供血以及抢救前后的身体情况。恢复脉搏是关键一步，之后仍可能需要重症监护和较长康复；不能用某一个统一存活率预测个人。\n- 昏迷时，镇静药和体温等会影响检查。团队结合多次神经查体、脑电图和影像等判断恢复可能性，不根据早期一次反应差就下结论；家属可询问哪些干扰因素尚未消除。\n- 出院前确认复诊、设备检查及康复联系人。英国RCUK2025建议出院后3个月内做系统随访，检查体力、认知、情绪和疲劳；其他地区按当地安排，症状加重则提前就诊，不必等固定日期。",
+        "en": "Recovery includes physical and brain function as well as cause control.\n\n- Outcome depends on the cause, time to effective circulation and the person’s condition before and after resuscitation. Restoring a pulse is a key step, but intensive care and prolonged rehabilitation may still be needed; one overall survival rate cannot predict an individual outcome.\n- Sedation and temperature can alter examinations during coma. Prognosis uses repeated neurological assessment, EEG and imaging rather than one poor early response; families can ask which confounding factors remain.\n- Before discharge, confirm follow-up, device checks and rehabilitation contacts. UK RCUK2025 recommends structured follow-up within3months after discharge for physical, cognitive, emotional and fatigue problems. Other regions use local pathways; worsening symptoms warrant earlier review."
+      },
+      "source_ids": [
+        "p003-ca-aha-post",
+        "p003-ca-aha-recovery",
+        "p003-ca-msd-ca",
+        "p003-ca-nih-life",
+        "p003-ca-rcuk-post"
+      ],
+      "support_status": "verified"
+    },
+    "complications": {
+      "text": {
+        "zh-CN": "并发症既可能来自短时间缺血，也可能来自原有病因。\n\n- 缺氧缺血可损伤大脑，造成昏迷、记忆或注意力障碍；心脏一时泵血无力和全身循环问题也可持续。医院监护呼吸、血压和器官功能，是为了发现并处理恢复循环后的损伤。\n- 胸外按压可能造成肋骨疼痛或骨折，呕吐物吸入肺部也可导致肺损伤。它们需要治疗，但不能因此在疑似骤停时拖延复苏；恢复后突然气短或胸痛加重应立即告诉医疗团队。\n- 再次危险心律、焦虑、抑郁和害怕再次倒下会影响日常生活。复诊既要处理心脏风险，也要评估情绪和照护者压力；得到心脏治疗后仍可能需要心理与认知康复。",
+        "en": "Complications can follow interrupted blood flow or the underlying cause.\n\n- Interrupted oxygen delivery can injure the brain, causing coma or problems with memory and attention. Temporary heart-pump weakness and systemic circulatory problems can persist; monitoring breathing, blood pressure and organ function helps identify injury after circulation returns.\n- Compressions can cause rib pain or fractures, and inhaled vomit can injure the lungs. These need treatment but should not delay CPR for suspected arrest; sudden breathlessness or worsening chest pain during recovery should be reported immediately.\n- Further dangerous rhythms, anxiety, depression and fear of another collapse can disrupt daily life. Follow-up addresses cardiac risk, emotional health and caregiver strain; psychological or cognitive rehabilitation may still be needed after cardiac treatment."
+      },
+      "source_ids": [
+        "p003-ca-aha-bls",
+        "p003-ca-aha-post",
+        "p003-ca-aha-recovery",
+        "p003-ca-msd-ca",
+        "p003-ca-msd-cpr",
+        "p003-ca-nih-life"
+      ],
+      "support_status": "verified"
+    },
+    "prevention": {
+      "text": {
+        "zh-CN": "预防分为降低发病风险、减少复发和做好急救准备。\n\n- 有冠心病、高血压或糖尿病时落实相应治疗，停止吸烟，核对可能影响心律的药物；有不明原因晕厥或家族年轻猝死史时主动评估。这些措施针对可改变的风险，无法消除全部遗传或突发原因。\n- 部分幸存者会建议植入除颤器，用来识别并处理将来的危险心律；是否需要取决于病因、可逆因素和心脏评估。装了设备仍要继续病因治疗、复诊和康复。\n- 让家人和同事学习心肺复苏，知道附近AED的位置及如何呼叫当地急救。预先分工能减少发现倒地后的迟疑；急救培训和可取用的设备有助于提高及时救治的机会。",
+        "en": "Prevention means reducing risk, preventing recurrence and preparing to respond.\n\n- Treat coronary disease, high blood pressure or diabetes, stop smoking and review medicines that affect rhythm. Seek assessment for unexplained fainting or early sudden deaths in relatives. These measures target modifiable risks but cannot remove every inherited or sudden cause.\n- Some survivors are advised to have an implanted defibrillator to detect and treat future dangerous rhythms. Need depends on the cause, reversible factors and cardiac assessment; the device does not replace ongoing treatment, follow-up and rehabilitation.\n- Encourage relatives and colleagues to learn CPR and locate nearby AEDs and local emergency contacts. Planning roles reduces hesitation after a collapse; training and accessible equipment support prompt treatment."
+      },
+      "source_ids": [
+        "p003-ca-aha-causes",
+        "p003-ca-aha-recovery",
+        "p003-ca-nih-causes",
+        "p003-ca-nih-life",
+        "p003-ca-nih-treatment",
+        "p003-ca-rcuk-bls"
+      ],
+      "support_status": "verified"
+    }
+  },
+  "source_ids": [
+    "mi-nhlbi-food",
+    "p003-ca-aha-als",
+    "p003-ca-aha-bls",
+    "p003-ca-aha-causes",
+    "p003-ca-aha-food",
+    "p003-ca-aha-paeds",
+    "p003-ca-aha-post",
+    "p003-ca-aha-recovery",
+    "p003-ca-aha-special",
+    "p003-ca-amiodarone-label",
+    "p003-ca-msd-ca",
+    "p003-ca-msd-cpr",
+    "p003-ca-nhs-device",
+    "p003-ca-nih-causes",
+    "p003-ca-nih-device",
+    "p003-ca-nih-diagnosis",
+    "p003-ca-nih-life",
+    "p003-ca-nih-overview",
+    "p003-ca-nih-symptoms",
+    "p003-ca-nih-treatment",
+    "p003-ca-rcuk-als",
+    "p003-ca-rcuk-bls",
+    "p003-ca-rcuk-paeds",
+    "p003-ca-rcuk-post",
+    "p003-ca-rcuk-special"
+  ],
+  "related_ids": [
+    "myocardial-infarction",
+    "pulmonary-embolism"
+  ],
+  "tags": [
+    "course_context_dependent"
+  ],
+  "clinical_region": "MULTI_REGION",
+  "coding": [],
+  "review": {
+    "status": "editorial_draft",
+    "reviewers": [],
+    "medical_reviewed_at": null,
+    "editorial_updated_at": "2026-10-03",
+    "next_editorial_review_due": "2027-01-01"
+  },
+  "localizations": {
+    "zh-CN": {
+      "status": "draft",
+      "clinician_reviewed": false
+    },
+    "en": {
+      "status": "draft",
+      "clinician_reviewed": false
+    }
+  },
+  "evidence_certainty": "not_formally_graded",
+  "limitations": {
+    "zh-CN": "急救号码和医疗系统因地区而异；本文说明现场识别、医院处理与康复，儿童和孕期差异另列。",
+    "en": "Emergency numbers and services vary by region. This article covers recognition, hospital care and recovery, with separate child and pregnancy considerations."
+  },
+  "study_ids": [],
+  "advanced_fields": {
+    "prevalence_estimate": null,
+    "incidence_estimate": null,
+    "formal_diagnostic_criteria": null,
+    "quantitative_prognosis": null,
+    "transmission_details": null,
+    "screening_intervals": null,
+    "regional_drug_approval": null,
+    "procedure_indications": null
+  },
+  "advanced_fields_status": "not_yet_curated"
+}

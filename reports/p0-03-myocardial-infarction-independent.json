@@ -1,0 +1,97 @@
+{
+  "topic": "myocardial-infarction",
+  "author": "/root",
+  "reviewer": "/root/astra_p0_allergy",
+  "checked_at": "2026-10-03",
+  "status": "accepted",
+  "medical_reviewed": false,
+  "target": {
+    "body_canonical_sha256": "fbd6fea07dafabfc26e5cc87ce1a80c3023b267d2f490c6fd37e3f949b50641d",
+    "records_canonical_sha256": "41db1caf3147361df45c251e402dc607e88aeec611aa05590a018684858375a0",
+    "sources_canonical_sha256": "295afea6cd652392a5a79f1493b70081f6f0b88014736f2d8cf654818849208c"
+  },
+  "changed_sections": [
+    "diagnosis",
+    "summary"
+  ],
+  "claims_reviewed": 3,
+  "inherited_sections": [
+    "causes_risks",
+    "red_flags",
+    "care",
+    "differentials",
+    "treatment",
+    "medications",
+    "diet",
+    "daily_care",
+    "special_populations",
+    "prognosis_followup",
+    "complications",
+    "prevention"
+  ],
+  "inherited_record_file": "data/evidence/editorial-checks/batch-01-mi.json",
+  "inheritance_verification": "All12 unchanged section objects and complete evidence records compare equal to current accepted production baseline. Changed2 section hashes recalculated. Remaining inherited paragraphs read for applicability.",
+  "original_sources_reopened": [
+    "mi-udmi-2026",
+    "mi-nhlbi-recovery",
+    "mi-msd-acute-2026"
+  ],
+  "source_reads": [
+    {
+      "source_id": "mi-udmi-2026",
+      "url": "https://academic.oup.com/eurheartj/advance-article/doi/10.1093/eurheartj/ehag101/8766309?login=false",
+      "locator": "16.1 Recurrent myocardial infarction",
+      "read_method": "Independent reopening of original page and relevant passages via web; no claim to read cited trials.",
+      "actual_scope": "Original publisher section16.1 lines1672-1676 and14.1.3 lines1546-1549 actually read; first direct find failed, publisher searchresult version successfully exposed paragraphs."
+    },
+    {
+      "source_id": "mi-nhlbi-recovery",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/recovery",
+      "locator": "Take steps to prevent another heart attack; What kind of health problems",
+      "read_method": "Independent reopening of original page and relevant passages via web; no claim to read cited trials.",
+      "actual_scope": "Recovery: prevention of another attack, symptoms may differ, complications; lines120-155."
+    },
+    {
+      "source_id": "mi-msd-acute-2026",
+      "url": "https://www.msdmanuals.com/professional/cardiovascular-disorders/coronary-artery-disease/acute-myocardial-infarction-mi",
+      "locator": "Diagnosis of Acute MI / ECG",
+      "read_method": "Independent reopening of original page and relevant passages via web; no claim to read cited trials.",
+      "actual_scope": "Diagnosis: serial ECG/troponin and angiography by current episode risk; lines139-225."
+    }
+  ],
+  "findings": [
+    {
+      "finding": "New recurrent-MI descriptions must not turn a residual troponin elevation or previous ECG label into an automatic new diagnosis.",
+      "resolution": "Three added bilingual claims explicitly require reassessment, serial changes and current episode ECG/stability. Both UDMI and independent MSD editorial synthesis support this path; NHLBI independently supports new symptoms and alternative complications."
+    },
+    {
+      "finding": "August2026 UDMI mechanism-based nomenclature differs from frozen January2026 classification.",
+      "resolution": "Mapping remains explicitly frozen to WHO2026-01; no public28-day treatment cutoff or outdated diagnostic instruction added."
+    }
+  ],
+  "scope_decisions": [
+    {
+      "code": "BA42.0",
+      "recommendation": "confirmed",
+      "rationale": "FrozenWHO2026-01 BA42: subsequent infarction within28days, with STEMI/NSTEMI/unspecified subdivisions. Recurrent diagnostic branch plus inherited acute treatment and secondary prevention covers the clinical scope; chronicBA50 remains excluded."
+    },
+    {
+      "code": "BA42.1",
+      "recommendation": "confirmed",
+      "rationale": "FrozenWHO2026-01 BA42: subsequent infarction within28days, with STEMI/NSTEMI/unspecified subdivisions. Recurrent diagnostic branch plus inherited acute treatment and secondary prevention covers the clinical scope; chronicBA50 remains excluded."
+    },
+    {
+      "code": "BA42.Z",
+      "recommendation": "confirmed",
+      "rationale": "FrozenWHO2026-01 BA42: subsequent infarction within28days, with STEMI/NSTEMI/unspecified subdivisions. Recurrent diagnostic branch plus inherited acute treatment and secondary prevention covers the clinical scope; chronicBA50 remains excluded."
+    }
+  ],
+  "who_scope_read": {
+    "path": "C:/Users/Damian/AppData/Local/Temp/healthcare-private/p0-icd-2026-01-official.txt",
+    "locator": "lines38091-38118; printedpages770-771",
+    "official_pdf_sha256": "4baccc13c794dca36d8a79fe80a673e854fc51f13114db3ce76196f0a1eb6cab"
+  },
+  "independence": "UDMI is one jointESC/ACC/AHA/WHF consensus, not four sources. MSD separately authored synthesis cites shared cardiovascular guidance; NHLBI independently written public education. No independent-trial claim.",
+  "remaining_issues": [],
+  "resolution": "Accept exact candidate hashes for source-driven editorial and scope integration; not clinician sign-off."
+}

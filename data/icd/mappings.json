@@ -339,9 +339,17 @@
     "condition_id": "heatstroke",
     "code": "NF01.0",
     "release": "2026-01",
-    "status": "pending",
-    "method": "normalized_exact_name",
-    "rationale": "Name similarity only; clinical scope and leaf coverage remain unverified."
+    "status": "confirmed",
+    "content_sha256": "f6742ac76cc1229c1757bdc29dc4c9c6ac312509b74113dab6dfd076a46a6761",
+    "review_report": "reports/p0-03-heatstroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Explicit classic/environmental versus exertional branches with shared14dimensions and distinctpopulations/activityfollowup; no newborn or heat-exhaustion leaf automatically counted.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "covid-19",
@@ -411,48 +419,51 @@
     "code": "BA41.0",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "c25a6ae7a5cfed47a1416f6645124a332272134cd1d12f2899bda3fcd883054f",
+    "content_sha256": "3567f5c22e50e41b6e3edd0bd22d25fcfda5789b654560cfc6ca5a96b7dfd30e",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Current bilingual article explicitly explains ST-elevation versus non-ST-elevation diagnosis and eligible STEMI reperfusion/thrombolysis, and the adjudicated shared sections supply all 14 public-education dimensions. Common causes are not asserted as exclusive and treatment remains conditional. The entire frozen acute-STEMI leaf can be served by this combined article; no duplicate article or specialist ECG/dose protocol is required by the content standard.",
+      "rationale": "Current bilingual article explicitly explains ST-elevation versus non-ST-elevation diagnosis and eligible STEMI reperfusion/thrombolysis, and the adjudicated shared sections supply all 14 public-education dimensions. Common causes are not asserted as exclusive and treatment remains conditional. The entire frozen acute-STEMI leaf can be served by this combined article; no duplicate article or specialist ECG/dose protocol is required by the content standard. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "WHO 2026-01 BA41 excludes BA42 subsequent MI, BA50 old MI, BA60 current post-MI complications and BA60.0 post-MI syndrome. Chapter 11 exclusions/coded-elsewhere notes include perinatal, infectious, pregnancy/puerperal (including JB64.4), developmental, endocrine/metabolic, injury and other separately classified conditions. Article recurrence warnings, long-term prevention, complication discussion and pregnancy context do not claim those categories. STEMI/NSTEMI comparisons do not make either subtype the other; BA41.Z means insufficient type documentation, not unconfirmed MI. No parent, sibling, exclusion, extension code or future-release subdivision is counted."
     },
-    "review_report": "reports/batch-01-mi-icd-scope-review.json"
+    "review_report": "reports/p0-03-myocardial-infarction-independent.json",
+    "previous_review_report": "reports/batch-01-mi-icd-scope-review.json"
   },
   {
     "condition_id": "myocardial-infarction",
     "code": "BA41.1",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "c25a6ae7a5cfed47a1416f6645124a332272134cd1d12f2899bda3fcd883054f",
+    "content_sha256": "3567f5c22e50e41b6e3edd0bd22d25fcfda5789b654560cfc6ca5a96b7dfd30e",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Current bilingual article explicitly explains non-ST-elevation MI, rejects the false inference that it is mild, and provides antithrombotic/risk-guided angiography or intervention while withholding blanket thrombolysis. Shared sections supply the remaining public-education dimensions across the entire frozen acute-NSTEMI leaf.",
+      "rationale": "Current bilingual article explicitly explains non-ST-elevation MI, rejects the false inference that it is mild, and provides antithrombotic/risk-guided angiography or intervention while withholding blanket thrombolysis. Shared sections supply the remaining public-education dimensions across the entire frozen acute-NSTEMI leaf. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "WHO 2026-01 BA41 excludes BA42 subsequent MI, BA50 old MI, BA60 current post-MI complications and BA60.0 post-MI syndrome. Chapter 11 exclusions/coded-elsewhere notes include perinatal, infectious, pregnancy/puerperal (including JB64.4), developmental, endocrine/metabolic, injury and other separately classified conditions. Article recurrence warnings, long-term prevention, complication discussion and pregnancy context do not claim those categories. STEMI/NSTEMI comparisons do not make either subtype the other; BA41.Z means insufficient type documentation, not unconfirmed MI. No parent, sibling, exclusion, extension code or future-release subdivision is counted."
     },
-    "review_report": "reports/batch-01-mi-icd-scope-review.json"
+    "review_report": "reports/p0-03-myocardial-infarction-independent.json",
+    "previous_review_report": "reports/batch-01-mi-icd-scope-review.json"
   },
   {
     "condition_id": "myocardial-infarction",
     "code": "BA41.Z",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "c25a6ae7a5cfed47a1416f6645124a332272134cd1d12f2899bda3fcd883054f",
+    "content_sha256": "3567f5c22e50e41b6e3edd0bd22d25fcfda5789b654560cfc6ca5a96b7dfd30e",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "The reviewed residual scope is established acute MI without sufficient documented ST-subtype detail, as distinguished from unconfirmed disease. All common MI education remains applicable without assuming a subtype; diagnosis-5 explains the distinction and treatment-2b/2c/3 remain conditional comparisons instead of a universal regimen. This is an explicit claim-level residual-scope adjudication, not an inference from the umbrella title. Under the existing public-education standard no separate code-definition paragraph or duplicate article is required to make the educational content applicable.",
+      "rationale": "The reviewed residual scope is established acute MI without sufficient documented ST-subtype detail, as distinguished from unconfirmed disease. All common MI education remains applicable without assuming a subtype; diagnosis-5 explains the distinction and treatment-2b/2c/3 remain conditional comparisons instead of a universal regimen. This is an explicit claim-level residual-scope adjudication, not an inference from the umbrella title. Under the existing public-education standard no separate code-definition paragraph or duplicate article is required to make the educational content applicable. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "WHO 2026-01 BA41 excludes BA42 subsequent MI, BA50 old MI, BA60 current post-MI complications and BA60.0 post-MI syndrome. Chapter 11 exclusions/coded-elsewhere notes include perinatal, infectious, pregnancy/puerperal (including JB64.4), developmental, endocrine/metabolic, injury and other separately classified conditions. Article recurrence warnings, long-term prevention, complication discussion and pregnancy context do not claim those categories. STEMI/NSTEMI comparisons do not make either subtype the other; BA41.Z means insufficient type documentation, not unconfirmed MI. No parent, sibling, exclusion, extension code or future-release subdivision is counted."
     },
-    "review_report": "reports/batch-01-mi-icd-scope-review.json"
+    "review_report": "reports/p0-03-myocardial-infarction-independent.json",
+    "previous_review_report": "reports/batch-01-mi-icd-scope-review.json"
   },
   {
     "condition_id": "pulmonary-embolism",
@@ -475,32 +486,34 @@
     "code": "9B73.0",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
+    "content_sha256": "6489f7270f50605ec9d7aeb979b1144520923ffa5a0632d8967c521c4544761d",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "The article explicitly explains the tear-fluid mechanism and supplies targeted break-sealing and detachment-repair education, while all other dimensions address the affected retina and the actual conditional care process. Shared warnings, examination, medication safety, recovery and prevention apply across the frozen leaf; non-tear mechanisms are comparative context, not merged into this code. The causing-condition coding note and parent exclusions were considered.",
+      "rationale": "The article explicitly explains the tear-fluid mechanism and supplies targeted break-sealing and detachment-repair education, while all other dimensions address the affected retina and the actual conditional care process. Shared warnings, examination, medication safety, recovery and prevention apply across the frozen leaf; non-tear mechanisms are comparative context, not merged into this code. The causing-condition coding note and parent exclusions were considered. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "WHO 9B73 excludes retinal pigment epithelium detachment (9B78.6), and Chapter 09 exclusions/coded-elsewhere entries remain. 9B73.0 is detachment with a retinal break, not isolated breaks (9B73.4), retinoschisis, cysts or all parent descendants. 9B73.3 is serous detachment without a retinal hole/tear/break and excludes central serous chorioretinopathy (9B75.2). Both 9B73.0 and 9B73.3 say code also the causing condition; an educational article mapping is not patient coding and does not count the causing condition as covered. Traumatic, infectious, neoplastic, metabolic and other causal contexts are not silently converted into covered independent diseases."
     },
-    "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+    "review_report": "reports/p0-03-retinal-detachment-independent.json",
+    "previous_review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
   },
   {
     "condition_id": "retinal-detachment",
     "code": "9B73.3",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
+    "content_sha256": "6489f7270f50605ec9d7aeb979b1144520923ffa5a0632d8967c521c4544761d",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "The article independently explains exudative fluid accumulation without a break, cause-directed treatment for inflammatory/vascular/tumour mechanisms, and the conditional noninfectious-inflammatory medication branch. The other dimensions provide applicable visual-risk, retinal-assessment, monitoring, follow-up and care education. Tear-sealing, postoperative care and gas restrictions retain explicit conditions and are not assumed for every serous detachment. The public standard does not require separate full oncology, uveitis or vascular-treatment guidelines. Central serous chorioretinopathy and pigment-epithelium detachment are excluded from this leaf assessment.",
+      "rationale": "The article independently explains exudative fluid accumulation without a break, cause-directed treatment for inflammatory/vascular/tumour mechanisms, and the conditional noninfectious-inflammatory medication branch. The other dimensions provide applicable visual-risk, retinal-assessment, monitoring, follow-up and care education. Tear-sealing, postoperative care and gas restrictions retain explicit conditions and are not assumed for every serous detachment. The public standard does not require separate full oncology, uveitis or vascular-treatment guidelines. Central serous chorioretinopathy and pigment-epithelium detachment are excluded from this leaf assessment. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "WHO 9B73 excludes retinal pigment epithelium detachment (9B78.6), and Chapter 09 exclusions/coded-elsewhere entries remain. 9B73.0 is detachment with a retinal break, not isolated breaks (9B73.4), retinoschisis, cysts or all parent descendants. 9B73.3 is serous detachment without a retinal hole/tear/break and excludes central serous chorioretinopathy (9B75.2). Both 9B73.0 and 9B73.3 say code also the causing condition; an educational article mapping is not patient coding and does not count the causing condition as covered. Traumatic, infectious, neoplastic, metabolic and other causal contexts are not silently converted into covered independent diseases."
     },
-    "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+    "review_report": "reports/p0-03-retinal-detachment-independent.json",
+    "previous_review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
   },
   {
     "condition_id": "pulmonary-embolism",
@@ -526,226 +539,295 @@
     "condition_id": "retinal-detachment",
     "code": "9B73.4",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
-    "method": "semantic_scope_review",
-    "rationale": "A break without detachment is explained as a precursor and a suitable laser/freezing target, but the principal course/repair discussion is established detachment. This is substantive partial coverage of the separate isolated-break category, not a complete direct assignment. Completion: Add a short supported isolated-break care/monitoring and treatment-selection explanation with its own follow-up/progression boundary. Most diagnostic, symptom and prevention material can remain shared. This does not require duplicated postoperative gas instructions or a laser protocol.",
-    "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+    "status": "confirmed",
+    "content_sha256": "6489f7270f50605ec9d7aeb979b1144520923ffa5a0632d8967c521c4544761d",
+    "review_report": "reports/p0-03-retinal-detachment-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "FrozenWHO2026-01 parent groups detachments and breaks.9B73.4 is explicitly a break without detachment, so an added branch distinguishes traction tears/atrophic holes, low-risk observation, focal treatment and follow-up.9B73.Y/.Z retain the same condition family with mechanism assessment rather than inventing a specific cause. Existing general source-verified sections remain relevant; surgery/anaesthesia/gas instructions stay conditional on receiving that procedure. No mapping to macular hole, central serous chorioretinopathy, postoperative scar or peripheral degeneration without a break.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "retinal-detachment",
     "code": "9B73.Y",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
-    "method": "semantic_scope_review",
-    "rationale": "Tractional detachment and PVR are materially explained, but neither is automatically the entire other-specified residual. The official print explicitly redirects PVR with detachment from 9B78.2 to 9B73.Y; it does not enumerate the full residual membership or independently place every tractional variant. Completion: Read the official release-matched index/coding-tool membership for 9B73.Y, explicitly resolve traction/PVR and any additional distinct retained forms against the named siblings/exclusions, then assign the already-written mechanism-specific and shared material. Add only knowledge revealed to be missing by that concrete scope. Do not infer full residual coverage from one PVR mention.",
-    "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+    "status": "confirmed",
+    "content_sha256": "6489f7270f50605ec9d7aeb979b1144520923ffa5a0632d8967c521c4544761d",
+    "review_report": "reports/p0-03-retinal-detachment-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "FrozenWHO2026-01 parent groups detachments and breaks.9B73.4 is explicitly a break without detachment, so an added branch distinguishes traction tears/atrophic holes, low-risk observation, focal treatment and follow-up.9B73.Y/.Z retain the same condition family with mechanism assessment rather than inventing a specific cause. Existing general source-verified sections remain relevant; surgery/anaesthesia/gas instructions stay conditional on receiving that procedure. No mapping to macular hole, central serous chorioretinopathy, postoperative scar or peripheral degeneration without a break.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "retinal-detachment",
     "code": "9B73.Z",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
-    "method": "semantic_scope_review",
-    "rationale": "The residual explicitly includes unspecified retinal detachments or breaks, not only a detachment whose mechanism is missing. The article supplies broad detachment education and tear comparison, but the isolated-break pathway remains partial; a general retinal-detachment title is not enough to close this broader residual. Completion: Resolve the isolated-break care/course gap described for 9B73.4, retain the existing mechanism-selected detachment branches, and then explicitly assign the residual without inventing undocumented detachment or subtype. Do not broaden it to every 9B73 descendant.",
-    "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+    "status": "confirmed",
+    "content_sha256": "6489f7270f50605ec9d7aeb979b1144520923ffa5a0632d8967c521c4544761d",
+    "review_report": "reports/p0-03-retinal-detachment-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "FrozenWHO2026-01 parent groups detachments and breaks.9B73.4 is explicitly a break without detachment, so an added branch distinguishes traction tears/atrophic holes, low-risk observation, focal treatment and follow-up.9B73.Y/.Z retain the same condition family with mechanism assessment rather than inventing a specific cause. Existing general source-verified sections remain relevant; surgery/anaesthesia/gas instructions stay conditional on receiving that procedure. No mapping to macular hole, central serous chorioretinopathy, postoperative scar or peripheral degeneration without a break.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "meningitis",
     "code": "1B53",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Streptococcal genus-wide pathogen, age and targeted-management allocation remains incomplete; pneumococcal vaccine mention is insufficient.",
-    "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    "status": "confirmed",
+    "content_sha256": "a5d528d460cf5f0e6fa32aad8b87f27a1ae4687237dea9a37c0b3a79ebed2541",
+    "review_report": "reports/p0-03-meningitis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "复用14维急救/支持/生活/随访，正文增加对应病因差异。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "meningitis",
     "code": "1B54",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Staphylococcal and procedure/device-associated routes and targeted treatment are not explained.",
-    "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    "status": "confirmed",
+    "content_sha256": "a5d528d460cf5f0e6fa32aad8b87f27a1ae4687237dea9a37c0b3a79ebed2541",
+    "review_report": "reports/p0-03-meningitis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "复用14维急救/支持/生活/随访，正文增加对应病因差异。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "meningitis",
     "code": "1C1C.0",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
-    "review_report": "reports/p0-02-icd-scope-review.json",
+    "content_sha256": "a5d528d460cf5f0e6fa32aad8b87f27a1ae4687237dea9a37c0b3a79ebed2541",
+    "review_report": "reports/p0-03-meningitis-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Meningococcal meningitis uses the bacterial hospital pathway and explicitly differentiated meningococcal disease, close-contact prophylaxis and pathogen-specific vaccination. Bloodstream meningococcal disease without meningitis is not merged.",
+      "rationale": "Meningococcal meningitis uses the bacterial hospital pathway and explicitly differentiated meningococcal disease, close-contact prophylaxis and pathogen-specific vaccination. Bloodstream meningococcal disease without meningitis is not merged. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
-    }
+    },
+    "previous_review_report": "reports/p0-02-icd-scope-review.json"
   },
   {
     "condition_id": "meningitis",
     "code": "1C8E.1",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
-    "review_report": "reports/p0-02-icd-scope-review.json",
+    "content_sha256": "a5d528d460cf5f0e6fa32aad8b87f27a1ae4687237dea9a37c0b3a79ebed2541",
+    "review_report": "reports/p0-03-meningitis-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "/root/astra_p0_maternal",
       "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "命名肠道病毒支路补齐传播/感染非脑膜炎、CSF病原检查、支持治疗及幼龄重症和卫生，14维共同急症/居家条件/恢复内容正向适用；不以泛称viral自动覆盖其他指定病毒。",
+      "rationale": "命名肠道病毒支路补齐传播/感染非脑膜炎、CSF病原检查、支持治疗及幼龄重症和卫生，14维共同急症/居家条件/恢复内容正向适用；不以泛称viral自动覆盖其他指定病毒。 Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "不纳入仅肠道病毒感染无脑膜炎、单纯脑炎/脑脊髓炎或另列新生儿感染；无全球疫苗可及性或统一疗程声明。"
-    }
+    },
+    "previous_review_report": "reports/p0-02-icd-scope-review.json"
   },
   {
     "condition_id": "meningitis",
     "code": "1C8E.2",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Adenoviral-specific disease scope and follow-up are not developed.",
-    "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    "status": "confirmed",
+    "content_sha256": "a5d528d460cf5f0e6fa32aad8b87f27a1ae4687237dea9a37c0b3a79ebed2541",
+    "review_report": "reports/p0-03-meningitis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "复用14维急救/支持/生活/随访，正文增加对应病因差异。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "meningitis",
     "code": "1C8E.Y",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Other specified viral causes require a positive residual allocation; generic viral care does not establish it.",
-    "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    "status": "confirmed",
+    "content_sha256": "a5d528d460cf5f0e6fa32aad8b87f27a1ae4687237dea9a37c0b3a79ebed2541",
+    "review_report": "reports/p0-03-meningitis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "已明示其他特指≠病因未知；14维共同急救、检查、按病原治疗、生活与随访正向适用，增加HSV/其他病毒、梅毒螺旋体、术后葡萄球菌/革兰阴性菌及注射相关霉菌路径。真菌不以另处编码隐球菌等为唯一依据。最终由独立审核核范围，不要求穷尽所有罕见病原。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "meningitis",
     "code": "1C8E.Z",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
-    "review_report": "reports/p0-02-icd-scope-review.json",
+    "content_sha256": "a5d528d460cf5f0e6fa32aad8b87f27a1ae4687237dea9a37c0b3a79ebed2541",
+    "review_report": "reports/p0-03-meningitis-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Viral meningitis of unspecified viral cause is explained with conditional mild supportive care, severe/immune-compromised hospital assessment, selected antiviral treatment and transmission distinction. An unidentified viral cause is not a claim to cover every named virus.",
+      "rationale": "Viral meningitis of unspecified viral cause is explained with conditional mild supportive care, severe/immune-compromised hospital assessment, selected antiviral treatment and transmission distinction. An unidentified viral cause is not a claim to cover every named virus. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
-    }
+    },
+    "previous_review_report": "reports/p0-02-icd-scope-review.json"
   },
   {
     "condition_id": "meningitis",
     "code": "1D01.00",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
-    "review_report": "reports/p0-02-icd-scope-review.json",
+    "content_sha256": "a5d528d460cf5f0e6fa32aad8b87f27a1ae4687237dea9a37c0b3a79ebed2541",
+    "review_report": "reports/p0-03-meningitis-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "/root/astra_p0_maternal",
       "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "全文明确H.influenzae菌种与Hib子型区别，所有菌型适用细菌脑膜炎诊疗及听力/神经随访支路；Hib疫苗和接触者策略限定b型，不将non-b当作不传播。共同14维无与此菌种冲突的空白支路；无需重复14维全文或新增个人用药剂量才成立。",
+      "rationale": "全文明确H.influenzae菌种与Hib子型区别，所有菌型适用细菌脑膜炎诊疗及听力/神经随访支路；Hib疫苗和接触者策略限定b型，不将non-b当作不传播。共同14维无与此菌种冲突的空白支路；无需重复14维全文或新增个人用药剂量才成立。 Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "无脑膜炎的H.influenzae呼吸/血流感染不计；不延伸到其他菌种脑膜炎或另列新生儿感染；UK家庭接触与US易感家庭条件不合并成普世规则。"
-    }
+    },
+    "previous_review_report": "reports/p0-02-icd-scope-review.json"
   },
   {
     "condition_id": "meningitis",
     "code": "1D01.0Y",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Other specified bacterial causes require positive pathogen/residual scope review.",
-    "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    "status": "confirmed",
+    "content_sha256": "a5d528d460cf5f0e6fa32aad8b87f27a1ae4687237dea9a37c0b3a79ebed2541",
+    "review_report": "reports/p0-03-meningitis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "已明示其他特指≠病因未知；14维共同急救、检查、按病原治疗、生活与随访正向适用，增加HSV/其他病毒、梅毒螺旋体、术后葡萄球菌/革兰阴性菌及注射相关霉菌路径。真菌不以另处编码隐球菌等为唯一依据。最终由独立审核核范围，不要求穷尽所有罕见病原。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "meningitis",
     "code": "1D01.0Z",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
-    "review_report": "reports/p0-02-icd-scope-review.json",
+    "content_sha256": "a5d528d460cf5f0e6fa32aad8b87f27a1ae4687237dea9a37c0b3a79ebed2541",
+    "review_report": "reports/p0-03-meningitis-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Bacterial meningitis of unspecified bacterial cause is addressed through urgent empiric IV treatment followed by culture/PCR-directed adjustment, LP safety, age/immune conditions, medicine risk, hearing follow-up and prevention. This does not claim each named bacterium separately.",
+      "rationale": "Bacterial meningitis of unspecified bacterial cause is addressed through urgent empiric IV treatment followed by culture/PCR-directed adjustment, LP safety, age/immune conditions, medicine risk, hearing follow-up and prevention. This does not claim each named bacterium separately. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
-    }
+    },
+    "previous_review_report": "reports/p0-02-icd-scope-review.json"
   },
   {
     "condition_id": "meningitis",
     "code": "1D01.1",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Fungal treatment and immune risk are introduced; diverse fungal courses and organism-specific management, including coded-elsewhere boundaries, remain incomplete.",
-    "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    "status": "confirmed",
+    "content_sha256": "a5d528d460cf5f0e6fa32aad8b87f27a1ae4687237dea9a37c0b3a79ebed2541",
+    "review_report": "reports/p0-03-meningitis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "已明示其他特指≠病因未知；14维共同急救、检查、按病原治疗、生活与随访正向适用，增加HSV/其他病毒、梅毒螺旋体、术后葡萄球菌/革兰阴性菌及注射相关霉菌路径。真菌不以另处编码隐球菌等为唯一依据。最终由独立审核核范围，不要求穷尽所有罕见病原。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "meningitis",
     "code": "1D01.2",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Parasitic/protozoal causes, exposure routes and materially different treatment are not developed.",
-    "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    "status": "confirmed",
+    "content_sha256": "a5d528d460cf5f0e6fa32aad8b87f27a1ae4687237dea9a37c0b3a79ebed2541",
+    "review_report": "reports/p0-03-meningitis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "已补食物/动物粪便途径、旅行和影像/脑脊液局限、神经损伤/出血、驱虫与激素非通用及颚口线虫CNS真实治疗不确定性、食安及复发随访；不以另处编码鼠肺虫/囊虫代替。神经颚口线虫独立作者EID综述与CDC专业页共同支持限定不确定性，已披露共享小样本上游及2011旧文边界。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "meningitis",
     "code": "1D01.3",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Benign recurrent meningitis needs its recurrent pattern, exclusion and management pathway.",
-    "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    "status": "confirmed",
+    "content_sha256": "a5d528d460cf5f0e6fa32aad8b87f27a1ae4687237dea9a37c0b3a79ebed2541",
+    "review_report": "reports/p0-03-meningitis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "复用14维急救/支持/生活/随访，正文增加对应病因差异。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "meningitis",
     "code": "1D01.Y",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Other specified infectious meningitis needs positive residual scope allocation.",
-    "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
+    "status": "confirmed",
+    "content_sha256": "a5d528d460cf5f0e6fa32aad8b87f27a1ae4687237dea9a37c0b3a79ebed2541",
+    "review_report": "reports/p0-03-meningitis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "已明示其他特指≠病因未知；14维共同急救、检查、按病原治疗、生活与随访正向适用，增加HSV/其他病毒、梅毒螺旋体、术后葡萄球菌/革兰阴性菌及注射相关霉菌路径。真菌不以另处编码隐球菌等为唯一依据。最终由独立审核核范围，不要求穷尽所有罕见病原。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "meningitis",
     "code": "1D01.Z",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
-    "review_report": "reports/p0-02-icd-scope-review.json",
+    "content_sha256": "a5d528d460cf5f0e6fa32aad8b87f27a1ae4687237dea9a37c0b3a79ebed2541",
+    "review_report": "reports/p0-03-meningitis-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Infectious meningitis with unspecified organism has the assessment-to-cause pathway: urgent recognition, CSF and blood investigation, bacterial/viral/fungal/TB treatment branches, conditional recovery and prevention. NOS represents missing organism detail, not a parent aggregate.",
+      "rationale": "Infectious meningitis with unspecified organism has the assessment-to-cause pathway: urgent recognition, CSF and blood investigation, bacterial/viral/fungal/TB treatment branches, conditional recovery and prevention. NOS represents missing organism detail, not a parent aggregate. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "Chapter 01 infectious categories only. Noninfectious meningitis, meningoencephalitis, meningomyelitis and neonatal separately classified disease are not counted. Named fungal/parasitic infections coded elsewhere stay separate. Meningococcemia alone is not meningococcal meningitis."
-    }
+    },
+    "previous_review_report": "reports/p0-02-icd-scope-review.json"
   },
   {
     "condition_id": "sepsis",
@@ -815,416 +897,1176 @@
     "condition_id": "aortic-dissection",
     "code": "BD50.00",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "92920fe1fe517ebc2108b9568291be16372277371e7227cf0f9993f26a4bd06a",
-    "review_report": "reports/p0-batch-01-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Perforation is separately named in the frozen classification; the article does not allocate perforation-specific presentations and assessment distinctly from its rupture discussion.",
-    "exclusions_considered": "BD50 is a mixed aneurysm/dissection parent and not counted. Aneurysm-only BD50.3/.4/.5, mixed unspecified BD50.Z, non-aortic dissections, postprocedural aneurysm BE13 and congenital aneurysm LA8Y remain separate. Without mention of perforation/rupture means undocumented, not demonstrated absence; the article retains rupture escalation. Surgical technique detail is not required by the public-education standard."
+    "status": "confirmed",
+    "content_sha256": "ce8f18616058724c910644fe86163135b06a99bcdce546b792025baaf13a2547",
+    "review_report": "reports/p0-03-aortic-dissection-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Explicit rupture and extent branches cover ascending disease with/without arch extension and descending disease with rupture; the residual described descending pattern receives an anatomy/complication-based decision branch. Existing14 sections provide applicable emergency actions, recovery, medication, diet, surveillance and prevention, without implying all anatomies have identical procedures. Source-defined intramural haematoma/penetrating ulcer remain distinct; not used to expand unrelated ICD categories.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "aortic-dissection",
     "code": "BD50.01",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "92920fe1fe517ebc2108b9568291be16372277371e7227cf0f9993f26a4bd06a",
-    "review_report": "reports/p0-batch-01-icd-scope-review.json",
+    "content_sha256": "ce8f18616058724c910644fe86163135b06a99bcdce546b792025baaf13a2547",
+    "review_report": "reports/p0-03-aortic-dissection-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Ascending/beyond-arch dissection with rupture is explicitly addressed by the rupture/major haemorrhage/tamponade explanations, emergency response, urgent A-type surgery, organ consequences and conditional postoperative recovery.",
+      "rationale": "Ascending/beyond-arch dissection with rupture is explicitly addressed by the rupture/major haemorrhage/tamponade explanations, emergency response, urgent A-type surgery, organ consequences and conditional postoperative recovery. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "BD50 is a mixed aneurysm/dissection parent and not counted. Aneurysm-only BD50.3/.4/.5, mixed unspecified BD50.Z, non-aortic dissections, postprocedural aneurysm BE13 and congenital aneurysm LA8Y remain separate. Without mention of perforation/rupture means undocumented, not demonstrated absence; the article retains rupture escalation. Surgical technique detail is not required by the public-education standard."
-    }
+    },
+    "previous_review_report": "reports/p0-batch-01-icd-scope-review.json"
   },
   {
     "condition_id": "aortic-dissection",
     "code": "BD50.0Z",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "92920fe1fe517ebc2108b9568291be16372277371e7227cf0f9993f26a4bd06a",
-    "review_report": "reports/p0-batch-01-icd-scope-review.json",
+    "content_sha256": "ce8f18616058724c910644fe86163135b06a99bcdce546b792025baaf13a2547",
+    "review_report": "reports/p0-03-aortic-dissection-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Ascending dissection extending beyond the arch is within the explicit A-type pathway. CT defines extent/branches, emergency graft/possible valve surgery addresses the injured segment and lifelong imaging addresses remaining aorta. No additional public-education treatment branch depends solely on passing the arch.",
+      "rationale": "Ascending dissection extending beyond the arch is within the explicit A-type pathway. CT defines extent/branches, emergency graft/possible valve surgery addresses the injured segment and lifelong imaging addresses remaining aorta. No additional public-education treatment branch depends solely on passing the arch. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "BD50 is a mixed aneurysm/dissection parent and not counted. Aneurysm-only BD50.3/.4/.5, mixed unspecified BD50.Z, non-aortic dissections, postprocedural aneurysm BE13 and congenital aneurysm LA8Y remain separate. Without mention of perforation/rupture means undocumented, not demonstrated absence; the article retains rupture escalation. Surgical technique detail is not required by the public-education standard."
-    }
+    },
+    "previous_review_report": "reports/p0-batch-01-icd-scope-review.json"
   },
   {
     "condition_id": "aortic-dissection",
     "code": "BD50.10",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "92920fe1fe517ebc2108b9568291be16372277371e7227cf0f9993f26a4bd06a",
-    "review_report": "reports/p0-batch-01-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Perforation-specific scope remains unallocated; a general rupture mention is not sufficient to claim this separate leaf.",
-    "exclusions_considered": "BD50 is a mixed aneurysm/dissection parent and not counted. Aneurysm-only BD50.3/.4/.5, mixed unspecified BD50.Z, non-aortic dissections, postprocedural aneurysm BE13 and congenital aneurysm LA8Y remain separate. Without mention of perforation/rupture means undocumented, not demonstrated absence; the article retains rupture escalation. Surgical technique detail is not required by the public-education standard."
+    "status": "confirmed",
+    "content_sha256": "ce8f18616058724c910644fe86163135b06a99bcdce546b792025baaf13a2547",
+    "review_report": "reports/p0-03-aortic-dissection-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Explicit rupture and extent branches cover ascending disease with/without arch extension and descending disease with rupture; the residual described descending pattern receives an anatomy/complication-based decision branch. Existing14 sections provide applicable emergency actions, recovery, medication, diet, surveillance and prevention, without implying all anatomies have identical procedures. Source-defined intramural haematoma/penetrating ulcer remain distinct; not used to expand unrelated ICD categories.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "aortic-dissection",
     "code": "BD50.11",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "92920fe1fe517ebc2108b9568291be16372277371e7227cf0f9993f26a4bd06a",
-    "review_report": "reports/p0-batch-01-icd-scope-review.json",
+    "content_sha256": "ce8f18616058724c910644fe86163135b06a99bcdce546b792025baaf13a2547",
+    "review_report": "reports/p0-03-aortic-dissection-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Ascending/not-beyond-arch dissection with rupture shares the explicitly explained rupture emergency and A-type surgical pathway; extent is identified by imaging and considered in repair, not used for a false home-treatment distinction.",
+      "rationale": "Ascending/not-beyond-arch dissection with rupture shares the explicitly explained rupture emergency and A-type surgical pathway; extent is identified by imaging and considered in repair, not used for a false home-treatment distinction. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "BD50 is a mixed aneurysm/dissection parent and not counted. Aneurysm-only BD50.3/.4/.5, mixed unspecified BD50.Z, non-aortic dissections, postprocedural aneurysm BE13 and congenital aneurysm LA8Y remain separate. Without mention of perforation/rupture means undocumented, not demonstrated absence; the article retains rupture escalation. Surgical technique detail is not required by the public-education standard."
-    }
+    },
+    "previous_review_report": "reports/p0-batch-01-icd-scope-review.json"
   },
   {
     "condition_id": "aortic-dissection",
     "code": "BD50.1Z",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "92920fe1fe517ebc2108b9568291be16372277371e7227cf0f9993f26a4bd06a",
-    "review_report": "reports/p0-batch-01-icd-scope-review.json",
+    "content_sha256": "ce8f18616058724c910644fe86163135b06a99bcdce546b792025baaf13a2547",
+    "review_report": "reports/p0-03-aortic-dissection-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Ascending dissection not extending beyond the arch is within the explicit A-type pathway, with urgent surgery, valve involvement, medicine monitoring and lifelong remaining-aorta follow-up.",
+      "rationale": "Ascending dissection not extending beyond the arch is within the explicit A-type pathway, with urgent surgery, valve involvement, medicine monitoring and lifelong remaining-aorta follow-up. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "BD50 is a mixed aneurysm/dissection parent and not counted. Aneurysm-only BD50.3/.4/.5, mixed unspecified BD50.Z, non-aortic dissections, postprocedural aneurysm BE13 and congenital aneurysm LA8Y remain separate. Without mention of perforation/rupture means undocumented, not demonstrated absence; the article retains rupture escalation. Surgical technique detail is not required by the public-education standard."
-    }
+    },
+    "previous_review_report": "reports/p0-batch-01-icd-scope-review.json"
   },
   {
     "condition_id": "aortic-dissection",
     "code": "BD50.20",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "92920fe1fe517ebc2108b9568291be16372277371e7227cf0f9993f26a4bd06a",
-    "review_report": "reports/p0-batch-01-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Descending perforation-specific scope remains unallocated; follow-up must establish actual presentations and interventions applicable to this leaf.",
-    "exclusions_considered": "BD50 is a mixed aneurysm/dissection parent and not counted. Aneurysm-only BD50.3/.4/.5, mixed unspecified BD50.Z, non-aortic dissections, postprocedural aneurysm BE13 and congenital aneurysm LA8Y remain separate. Without mention of perforation/rupture means undocumented, not demonstrated absence; the article retains rupture escalation. Surgical technique detail is not required by the public-education standard."
+    "status": "confirmed",
+    "content_sha256": "ce8f18616058724c910644fe86163135b06a99bcdce546b792025baaf13a2547",
+    "review_report": "reports/p0-03-aortic-dissection-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Explicit rupture and extent branches cover ascending disease with/without arch extension and descending disease with rupture; the residual described descending pattern receives an anatomy/complication-based decision branch. Existing14 sections provide applicable emergency actions, recovery, medication, diet, surveillance and prevention, without implying all anatomies have identical procedures. Source-defined intramural haematoma/penetrating ulcer remain distinct; not used to expand unrelated ICD categories.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "aortic-dissection",
     "code": "BD50.21",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "92920fe1fe517ebc2108b9568291be16372277371e7227cf0f9993f26a4bd06a",
-    "review_report": "reports/p0-batch-01-icd-scope-review.json",
+    "content_sha256": "ce8f18616058724c910644fe86163135b06a99bcdce546b792025baaf13a2547",
+    "review_report": "reports/p0-03-aortic-dissection-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Descending dissection with rupture is explicitly a complicated B-type condition requiring urgent endovascular or surgical evaluation, with hemorrhage/organ risk and later monitored recovery.",
+      "rationale": "Descending dissection with rupture is explicitly a complicated B-type condition requiring urgent endovascular or surgical evaluation, with hemorrhage/organ risk and later monitored recovery. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "BD50 is a mixed aneurysm/dissection parent and not counted. Aneurysm-only BD50.3/.4/.5, mixed unspecified BD50.Z, non-aortic dissections, postprocedural aneurysm BE13 and congenital aneurysm LA8Y remain separate. Without mention of perforation/rupture means undocumented, not demonstrated absence; the article retains rupture escalation. Surgical technique detail is not required by the public-education standard."
-    }
+    },
+    "previous_review_report": "reports/p0-batch-01-icd-scope-review.json"
   },
   {
     "condition_id": "aortic-dissection",
     "code": "BD50.2Y",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "92920fe1fe517ebc2108b9568291be16372277371e7227cf0f9993f26a4bd06a",
-    "review_report": "reports/p0-batch-01-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Other specified descending dissection needs positive residual scope allocation; do not infer it from all B-type wording.",
-    "exclusions_considered": "BD50 is a mixed aneurysm/dissection parent and not counted. Aneurysm-only BD50.3/.4/.5, mixed unspecified BD50.Z, non-aortic dissections, postprocedural aneurysm BE13 and congenital aneurysm LA8Y remain separate. Without mention of perforation/rupture means undocumented, not demonstrated absence; the article retains rupture escalation. Surgical technique detail is not required by the public-education standard."
+    "status": "confirmed",
+    "content_sha256": "ce8f18616058724c910644fe86163135b06a99bcdce546b792025baaf13a2547",
+    "review_report": "reports/p0-03-aortic-dissection-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Explicit rupture and extent branches cover ascending disease with/without arch extension and descending disease with rupture; the residual described descending pattern receives an anatomy/complication-based decision branch. Existing14 sections provide applicable emergency actions, recovery, medication, diet, surveillance and prevention, without implying all anatomies have identical procedures. Source-defined intramural haematoma/penetrating ulcer remain distinct; not used to expand unrelated ICD categories.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "aortic-dissection",
     "code": "BD50.2Z",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "92920fe1fe517ebc2108b9568291be16372277371e7227cf0f9993f26a4bd06a",
-    "review_report": "reports/p0-batch-01-icd-scope-review.json",
+    "content_sha256": "ce8f18616058724c910644fe86163135b06a99bcdce546b792025baaf13a2547",
+    "review_report": "reports/p0-03-aortic-dissection-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Descending/distal dissection is covered by the explicit B-type branch: monitored medical treatment when uncomplicated, intervention for rupture, malperfusion, persistent pain or uncontrolled pressure, and long-term whole-aorta follow-up.",
+      "rationale": "Descending/distal dissection is covered by the explicit B-type branch: monitored medical treatment when uncomplicated, intervention for rupture, malperfusion, persistent pain or uncontrolled pressure, and long-term whole-aorta follow-up. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "BD50 is a mixed aneurysm/dissection parent and not counted. Aneurysm-only BD50.3/.4/.5, mixed unspecified BD50.Z, non-aortic dissections, postprocedural aneurysm BE13 and congenital aneurysm LA8Y remain separate. Without mention of perforation/rupture means undocumented, not demonstrated absence; the article retains rupture escalation. Surgical technique detail is not required by the public-education standard."
-    }
+    },
+    "previous_review_report": "reports/p0-batch-01-icd-scope-review.json"
   },
   {
     "condition_id": "postpartum-hemorrhage",
     "code": "JA43.0",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
-    "review_report": "reports/p0-02-icd-scope-review.json",
+    "content_sha256": "741cc647516dc9d2c46ca13e59e46b33c6650c3cb854ec113ac5716da50a1def",
+    "review_report": "reports/p0-03-postpartum-hemorrhage-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "/root/astra_p0_neurology",
       "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Third-stage interval explicitly tied to vaginal birth; four causes remain possible. Added immediate action before placenta delivery, professional removal/analgesia and placental-versus-clotting pathways close the prior third-stage gap. General red flags, nutrition, daily care, psychological recovery, anaemia follow-up and next-pregnancy preparation apply after the acute event; this timing-defined leaf does not require a duplicate aftercare article.",
+      "rationale": "Third-stage interval explicitly tied to vaginal birth; four causes remain possible. Added immediate action before placenta delivery, professional removal/analgesia and placental-versus-clotting pathways close the prior third-stage gap. General red flags, nutrition, daily care, psychological recovery, anaemia follow-up and next-pregnancy preparation apply after the acute event; this timing-defined leaf does not require a duplicate aftercare article. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "Not all JA43 siblings; not retained placenta alone; do not assign caesarean-only haemorrhage to vaginal third-stage category; abnormal adherence decisions remain professional and conditional."
-    }
+    },
+    "previous_review_report": "reports/p0-02-icd-scope-review.json"
   },
   {
     "condition_id": "postpartum-hemorrhage",
     "code": "JA43.1",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
-    "review_report": "reports/p0-02-icd-scope-review.json",
+    "content_sha256": "741cc647516dc9d2c46ca13e59e46b33c6650c3cb854ec113ac5716da50a1def",
+    "review_report": "reports/p0-03-postpartum-hemorrhage-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "The first-24-hour postpartum pathway covers atony, trauma, retained tissue and coagulation assessment; early team recognition/treatment, cause-directed procedures, drug contraindications, anemia recovery and future pregnancy planning. Frozen classification volumes and modern early treatment triggers are kept distinct.",
+      "rationale": "The first-24-hour postpartum pathway covers atony, trauma, retained tissue and coagulation assessment; early team recognition/treatment, cause-directed procedures, drug contraindications, anemia recovery and future pregnancy planning. Frozen classification volumes and modern early treatment triggers are kept distinct. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
-    }
+    },
+    "previous_review_report": "reports/p0-02-icd-scope-review.json"
   },
   {
     "condition_id": "postpartum-hemorrhage",
     "code": "JA43.2",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
-    "review_report": "reports/p0-02-icd-scope-review.json",
+    "content_sha256": "741cc647516dc9d2c46ca13e59e46b33c6650c3cb854ec113ac5716da50a1def",
+    "review_report": "reports/p0-03-postpartum-hemorrhage-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "The article explicitly defines delayed bleeding as 24 hours to 12 weeks, explains infection/retained tissue assessment and treatment, return-home warning actions, follow-up and anemia recovery. Birth-within-three-hours TXA treatment is explicitly not transferred to delayed bleeding.",
+      "rationale": "The article explicitly defines delayed bleeding as 24 hours to 12 weeks, explains infection/retained tissue assessment and treatment, return-home warning actions, follow-up and anemia recovery. Birth-within-three-hours TXA treatment is explicitly not transferred to delayed bleeding. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
-    }
+    },
+    "previous_review_report": "reports/p0-02-icd-scope-review.json"
   },
   {
     "condition_id": "postpartum-hemorrhage",
     "code": "JA43.3",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "The draft correctly includes pre-existing and acquired clotting defects and does not reduce the leaf to DIC. Acute laboratory assessment and targeted components are adequately explained. However, inherited aftercare focuses on anaemia and future pregnancy without explicitly allocating postpartum haematology planning for a persistent/pre-existing clotting disorder. NATA recommendation10 calls for specific multidisciplinary care complementary to standard PPH management; source presence alone does not put this education in the article.",
-    "exclusions_considered": "Covers relevant vaginal and caesarean PPH with clotting defects; not only DIC, not every isolated coagulation disorder without PPH, not every JA43 sibling."
+    "status": "confirmed",
+    "content_sha256": "741cc647516dc9d2c46ca13e59e46b33c6650c3cb854ec113ac5716da50a1def",
+    "review_report": "reports/p0-03-postpartum-hemorrhage-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "既有/获得性凝血缺陷均在范围：病因检查、凝血成分支持和原发病联合处理；AHA及遗传病具体专科随访分流，不等同仅DIC，也不在本篇复制所有原发病诊疗。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "postpartum-hemorrhage",
     "code": "JA43.4",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Obstructed labour with uterine rupture has a distinct cause/surgical pathway not developed here.",
-    "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+    "status": "confirmed",
+    "content_sha256": "741cc647516dc9d2c46ca13e59e46b33c6650c3cb854ec113ac5716da50a1def",
+    "review_report": "reports/p0-03-postpartum-hemorrhage-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "梗阻相关伴子宫破裂：腹内隐匿失血、紧急手术修补/切除、失血复苏、瘘与感染恢复、修补后未来妊娠风险完整分流。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "postpartum-hemorrhage",
     "code": "JA43.5",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Obstructed labour without mention of rupture is not specifically addressed; undocumented rupture does not mean ruled out.",
-    "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+    "status": "confirmed",
+    "content_sha256": "741cc647516dc9d2c46ca13e59e46b33c6650c3cb854ec113ac5716da50a1def",
+    "review_report": "reports/p0-03-postpartum-hemorrhage-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "梗阻后出血且未提子宫破裂：机械梗阻与宫缩乏力、相应止血，膀胱/直肠损伤及感染随访；未提破裂不推断已经排除破裂，出现警示仍急救。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "postpartum-hemorrhage",
     "code": "JA43.Y",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Other specified postpartum haemorrhage needs positive residual allocation.",
-    "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
+    "status": "confirmed",
+    "content_sha256": "741cc647516dc9d2c46ca13e59e46b33c6650c3cb854ec113ac5716da50a1def",
+    "review_report": "reports/p0-03-postpartum-hemorrhage-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "其他已特指产后出血：WHO残余类别没有额外定义；按已明确病因进入宫缩乏力/产道损伤/残留组织/凝血缺陷等因果处理，不将原因未明确的.Z或产前出血强行归入。本篇急救、病因辨别和恢复路径正向适用。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "postpartum-hemorrhage",
     "code": "JA43.Z",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2",
-    "review_report": "reports/p0-02-icd-scope-review.json",
+    "content_sha256": "741cc647516dc9d2c46ca13e59e46b33c6650c3cb854ec113ac5716da50a1def",
+    "review_report": "reports/p0-03-postpartum-hemorrhage-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "When timing/cause is unspecified, the article explains immediate recognition and escalation followed by timing/cause assessment, distinct early/late treatment branches, recovery and prevention. NOS is missing detail, not automatic coverage of every specified obstetric cause.",
+      "rationale": "When timing/cause is unspecified, the article explains immediate recognition and escalation followed by timing/cause assessment, distinct early/late treatment branches, recovery and prevention. NOS is missing detail, not automatic coverage of every specified obstetric cause. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "JA43 definitions and code-also causes are classification scope, not home waiting thresholds. WHO 2025 earlier facility treatment triggers and Chinese 2023/RCOG definitions retain their regions and evidence populations. Antepartum bleeding, broader JA4Z and independent causing disorders are not covered by this mapping."
-    }
+    },
+    "previous_review_report": "reports/p0-02-icd-scope-review.json"
   },
   {
     "condition_id": "anaphylaxis",
     "code": "4A84.0",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
-    "review_report": "reports/p0-02-icd-scope-review.json",
+    "content_sha256": "2f69c4d53575c10489b3044e86eec6b0cf5b3f42ada2ffc8f3f023750397c426",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Food-specific trigger confirmation, intolerance/aspiration distinction, ingredient and cross-contact precautions, supervised testing, nutrition substitution and rescue pathway accompany all shared dimensions.",
+      "rationale": "Food-specific trigger confirmation, intolerance/aspiration distinction, ingredient and cross-contact precautions, supervised testing, nutrition substitution and rescue pathway accompany all shared dimensions. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
-    }
+    },
+    "previous_review_report": "reports/p0-02-icd-scope-review.json"
   },
   {
     "condition_id": "anaphylaxis",
     "code": "4A84.1",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
-    "review_report": "reports/p0-02-icd-scope-review.json",
+    "content_sha256": "2f69c4d53575c10489b3044e86eec6b0cf5b3f42ada2ffc8f3f023750397c426",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Drug-specific exposure history, immediate rescue, safer alternative evaluation, supervised challenge/desensitisation and medical-record communication accompany the shared systemic reaction pathway.",
+      "rationale": "Drug-specific exposure history, immediate rescue, safer alternative evaluation, supervised challenge/desensitisation and medical-record communication accompany the shared systemic reaction pathway. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
-    }
+    },
+    "previous_review_report": "reports/p0-02-icd-scope-review.json"
   },
   {
     "condition_id": "anaphylaxis",
     "code": "4A84.2",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
-    "review_report": "reports/p0-02-icd-scope-review.json",
+    "content_sha256": "2f69c4d53575c10489b3044e86eec6b0cf5b3f42ada2ffc8f3f023750397c426",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Insect-venom systemic reactions are distinguished from local reactions; trigger avoidance, specialist venom immunotherapy, rescue and recurrence planning accompany all shared dimensions. Direct venom toxicity remains outside this allocation.",
+      "rationale": "Insect-venom systemic reactions are distinguished from local reactions; trigger avoidance, specialist venom immunotherapy, rescue and recurrence planning accompany all shared dimensions. Direct venom toxicity remains outside this allocation. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
-    }
+    },
+    "previous_review_report": "reports/p0-02-icd-scope-review.json"
   },
   {
     "condition_id": "anaphylaxis",
     "code": "4A84.30",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
-    "review_report": "reports/p0-02-icd-scope-review.json",
+    "content_sha256": "2f69c4d53575c10489b3044e86eec6b0cf5b3f42ada2ffc8f3f023750397c426",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Exercise and food-dependent exercise reactions are explicitly explained, including cofactors, stopping activity, specialist combination/interval planning, rescue supplies and accompanied return to activity.",
+      "rationale": "Exercise and food-dependent exercise reactions are explicitly explained, including cofactors, stopping activity, specialist combination/interval planning, rescue supplies and accompanied return to activity. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
-    }
+    },
+    "previous_review_report": "reports/p0-02-icd-scope-review.json"
   },
   {
     "condition_id": "anaphylaxis",
     "code": "4A84.31",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
-    "review_report": "reports/p0-02-icd-scope-review.json",
+    "content_sha256": "2f69c4d53575c10489b3044e86eec6b0cf5b3f42ada2ffc8f3f023750397c426",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "/root",
       "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Cold-triggered anaphylaxis is explicitly distinguished from local cold urticaria. Trigger/history/testing limits, urgent response, exposure/diet-temperature clues, specialist planning and perioperative warming supplement the existing 14 complete anaphylaxis sections; no contradictory diagnostic assumption.",
+      "rationale": "Cold-triggered anaphylaxis is explicitly distinguished from local cold urticaria. Trigger/history/testing limits, urgent response, exposure/diet-temperature clues, specialist planning and perioperative warming supplement the existing 14 complete anaphylaxis sections; no contradictory diagnostic assumption. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": [
         "Cold urticaria without respiratory/circulatory compromise is not counted as this leaf.",
         "Hypothermia/cold injury and food-ingredient allergy are different categories."
       ]
-    }
+    },
+    "previous_review_report": "reports/p0-02-icd-scope-review.json"
   },
   {
     "condition_id": "anaphylaxis",
     "code": "4A84.3Y",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Other specified physical triggers have no complete positive allocation.",
-    "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+    "status": "confirmed",
+    "content_sha256": "2f69c4d53575c10489b3044e86eec6b0cf5b3f42ada2ffc8f3f023750397c426",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "已明确物理刺激与局部风团区别、综合时间线查因、个体回避和相同严重程度急救/长期计划正向适用；未指定因素不等于特发性或没有风险。不要求穷尽全部物理刺激，不宣称每种刺激有独立特效方案。BAD支撑物理诱发局部鉴别，WAO支撑全触发物通用急救和个体计划；共同上游已披露。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "anaphylaxis",
     "code": "4A84.3Z",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Unspecified physical-factor anaphylaxis needs a broader physical-trigger assessment beyond the exercise branch.",
-    "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+    "status": "confirmed",
+    "content_sha256": "2f69c4d53575c10489b3044e86eec6b0cf5b3f42ada2ffc8f3f023750397c426",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "已明确物理刺激与局部风团区别、综合时间线查因、个体回避和相同严重程度急救/长期计划正向适用；未指定因素不等于特发性或没有风险。不要求穷尽全部物理刺激，不宣称每种刺激有独立特效方案。BAD支撑物理诱发局部鉴别，WAO支撑全触发物通用急救和个体计划；共同上游已披露。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "anaphylaxis",
     "code": "4A84.4",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Allergic asthma is distinguished, but inhaled-allergen systemic exposure/avoidance is not developed.",
-    "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+    "status": "confirmed",
+    "content_sha256": "2f69c4d53575c10489b3044e86eec6b0cf5b3f42ada2ffc8f3f023750397c426",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "机制和途径、局部哮喘区别、专业评估、空气暴露控制明确；共同急救及长期管理正向适用，不要求穷尽全部过敏原。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "anaphylaxis",
     "code": "4A84.5",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Skin/mucosal contact-specific systemic exposure routes and prevention are not developed; latex mention alone is insufficient.",
-    "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+    "status": "confirmed",
+    "content_sha256": "2f69c4d53575c10489b3044e86eec6b0cf5b3f42ada2ffc8f3f023750397c426",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "皮肤/黏膜途径与局部皮炎区别、乳胶及氯己定回避、评估和共同急救路径明确。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "anaphylaxis",
     "code": "4A84.6",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Known systemic mastocytosis context now has trigger/skin-negative danger and perioperative/VIT guidance. The full category also needs appropriate diagnosed non-systemic-mastocytosis activation disorders and paediatric care linkage, not a synonym expansion.",
-    "exclusions_considered": [
-      "Idiopathic anaphylaxis without established mast-cell disorder remains separate.",
-      "Mastocytosis and MCAS diagnoses are not themselves equivalent to each anaphylaxis episode."
-    ]
+    "status": "confirmed",
+    "content_sha256": "2f69c4d53575c10489b3044e86eec6b0cf5b3f42ada2ffc8f3f023750397c426",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "成人无皮损、虫毒/围术期旧内容保留；本次补儿童个体化急救衔接及已确诊MCAS长期管理；不把所有MCAS强制映射，不要求写完原发病全部诊疗。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "anaphylaxis",
     "code": "4A84.Y",
     "release": "2026-01",
-    "status": "partial",
-    "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
-    "review_report": "reports/p0-02-icd-scope-review.json",
-    "method": "semantic_scope_review",
-    "rationale": "Other specified triggers require positive residual allocation.",
-    "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+    "status": "confirmed",
+    "content_sha256": "2f69c4d53575c10489b3044e86eec6b0cf5b3f42ada2ffc8f3f023750397c426",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "实际核WHO冻结目录NE80血清病分支coded elsewhere为serum anaphylactic shock(4A84.Y)，已加抗血清急性反应与迟发血清病区别、医院急救/续用风险收益和出院随访。其余特指按病因专科分流，不自动纳入已另编码者。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
   },
   {
     "condition_id": "anaphylaxis",
     "code": "4A84.Z",
     "release": "2026-01",
     "status": "confirmed",
-    "content_sha256": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
-    "review_report": "reports/p0-02-icd-scope-review.json",
+    "content_sha256": "2f69c4d53575c10489b3044e86eec6b0cf5b3f42ada2ffc8f3f023750397c426",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json",
     "adjudication": {
       "method": "semantic_scope_review",
       "reviewer": "Codex AI-assisted classification reviewer /root; not clinician sign-off",
-      "checked_at": "2026-10-02",
+      "checked_at": "2026-10-03",
       "scope": "entire_leaf_category",
-      "rationale": "Unspecified-trigger systemic anaphylaxis has a complete recognition/rescue, trigger investigation, medicine/device, observation and recurrence pathway. Lack of an identified trigger is explicitly distinguished from lack of reaction; unspecified does not aggregate all named causes.",
+      "rationale": "Unspecified-trigger systemic anaphylaxis has a complete recognition/rescue, trigger investigation, medicine/device, observation and recurrence pathway. Lack of an identified trigger is explicitly distinguished from lack of reaction; unspecified does not aggregate all named causes. Existing scope retained: unchanged claim evidence is preserved in the bound expansion review.",
       "exclusions_considered": "Food intolerance DA96.02, aspiration ND72, direct venom toxicity NE61, radiocontrast EL80 and allergic asthma CA23.00 are separate. Mast-cell diseases themselves and parent 4A84/4A84.3 are not automatically counted. Frozen tryptase wording is classification information, not a new diagnostic cutoff or a replacement for source-verified current clinical interpretation."
+    },
+    "previous_review_report": "reports/p0-02-icd-scope-review.json"
+  },
+  {
+    "condition_id": "appendicitis",
+    "code": "DB10.00",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "17802ec1309a95b9209b2118bfd62884fa74666e34625ed6beba02b56a89eb50",
+    "review_report": "reports/p0-03-appendicitis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Fourteen dimensions apply to acute appendicitis; summary/treatment/follow-up distinguish generalized, contained/localized and no-peritonitis pathways.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "appendicitis",
+    "code": "DB10.01",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "17802ec1309a95b9209b2118bfd62884fa74666e34625ed6beba02b56a89eb50",
+    "review_report": "reports/p0-03-appendicitis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Fourteen dimensions apply to acute appendicitis; summary/treatment/follow-up distinguish generalized, contained/localized and no-peritonitis pathways.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "appendicitis",
+    "code": "DB10.02",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "17802ec1309a95b9209b2118bfd62884fa74666e34625ed6beba02b56a89eb50",
+    "review_report": "reports/p0-03-appendicitis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Fourteen dimensions apply to acute appendicitis; summary/treatment/follow-up distinguish generalized, contained/localized and no-peritonitis pathways.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "cardiac-arrest",
+    "code": "MC82.0",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "aacc73b7e0b43e6a8044e6f58ceee581c32af23312f7e7cff2a8a534f894fff2",
+    "review_report": "reports/p0-03-cardiac-arrest-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "One canonical arrest article distinguishes shockable VF/pulseless VT, bradycardic collapse, asystole, PEA, combined respiratory/circulatory arrest and an unrecorded initial rhythm. Shared14-dimensional care applies; underlying disease articles remain separate.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "cardiac-arrest",
+    "code": "MC82.1",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "aacc73b7e0b43e6a8044e6f58ceee581c32af23312f7e7cff2a8a534f894fff2",
+    "review_report": "reports/p0-03-cardiac-arrest-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "One canonical arrest article distinguishes shockable VF/pulseless VT, bradycardic collapse, asystole, PEA, combined respiratory/circulatory arrest and an unrecorded initial rhythm. Shared14-dimensional care applies; underlying disease articles remain separate.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "cardiac-arrest",
+    "code": "MC82.2",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "aacc73b7e0b43e6a8044e6f58ceee581c32af23312f7e7cff2a8a534f894fff2",
+    "review_report": "reports/p0-03-cardiac-arrest-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "One canonical arrest article distinguishes shockable VF/pulseless VT, bradycardic collapse, asystole, PEA, combined respiratory/circulatory arrest and an unrecorded initial rhythm. Shared14-dimensional care applies; underlying disease articles remain separate.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "cardiac-arrest",
+    "code": "MC82.3",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "aacc73b7e0b43e6a8044e6f58ceee581c32af23312f7e7cff2a8a534f894fff2",
+    "review_report": "reports/p0-03-cardiac-arrest-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "One canonical arrest article distinguishes shockable VF/pulseless VT, bradycardic collapse, asystole, PEA, combined respiratory/circulatory arrest and an unrecorded initial rhythm. Shared14-dimensional care applies; underlying disease articles remain separate.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "cardiac-arrest",
+    "code": "MC82.4",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "aacc73b7e0b43e6a8044e6f58ceee581c32af23312f7e7cff2a8a534f894fff2",
+    "review_report": "reports/p0-03-cardiac-arrest-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "One canonical arrest article distinguishes shockable VF/pulseless VT, bradycardic collapse, asystole, PEA, combined respiratory/circulatory arrest and an unrecorded initial rhythm. Shared14-dimensional care applies; underlying disease articles remain separate.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "cardiac-arrest",
+    "code": "MC82.Z",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "aacc73b7e0b43e6a8044e6f58ceee581c32af23312f7e7cff2a8a534f894fff2",
+    "review_report": "reports/p0-03-cardiac-arrest-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "One canonical arrest article distinguishes shockable VF/pulseless VT, bradycardic collapse, asystole, PEA, combined respiratory/circulatory arrest and an unrecorded initial rhythm. Shared14-dimensional care applies; underlying disease articles remain separate.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "heatstroke",
+    "code": "NF06.0",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "f6742ac76cc1229c1757bdc29dc4c9c6ac312509b74113dab6dfd076a46a6761",
+    "review_report": "reports/p0-03-heatstroke-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Explicit classic/environmental versus exertional branches with shared14dimensions and distinctpopulations/activityfollowup; no newborn or heat-exhaustion leaf automatically counted.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "myocardial-infarction",
+    "code": "BA42.0",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "3567f5c22e50e41b6e3edd0bd22d25fcfda5789b654560cfc6ca5a96b7dfd30e",
+    "review_report": "reports/p0-03-myocardial-infarction-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "FrozenWHO2026-01 BA42: subsequent infarction within28days, with STEMI/NSTEMI/unspecified subdivisions. Recurrent diagnostic branch plus inherited acute treatment and secondary prevention covers the clinical scope; chronicBA50 remains excluded.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "myocardial-infarction",
+    "code": "BA42.1",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "3567f5c22e50e41b6e3edd0bd22d25fcfda5789b654560cfc6ca5a96b7dfd30e",
+    "review_report": "reports/p0-03-myocardial-infarction-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "FrozenWHO2026-01 BA42: subsequent infarction within28days, with STEMI/NSTEMI/unspecified subdivisions. Recurrent diagnostic branch plus inherited acute treatment and secondary prevention covers the clinical scope; chronicBA50 remains excluded.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "myocardial-infarction",
+    "code": "BA42.Z",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "3567f5c22e50e41b6e3edd0bd22d25fcfda5789b654560cfc6ca5a96b7dfd30e",
+    "review_report": "reports/p0-03-myocardial-infarction-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_allergy AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "FrozenWHO2026-01 BA42: subsequent infarction within28days, with STEMI/NSTEMI/unspecified subdivisions. Recurrent diagnostic branch plus inherited acute treatment and secondary prevention covers the clinical scope; chronicBA50 remains excluded.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "suicidal-ideation",
+    "code": "MB26.A",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "b9853946b35e96b9879ee2141029b32eff13eb99404deb062d354f1715367fc2",
+    "review_report": "reports/p0-03-suicidal-ideation-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_immunology_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Symptom entry covers passive wishes through plans, immediate danger, assessment, differential diagnoses, conditional care, medicine risks, ordinary nutrition, daily support, special populations, recovery and prevention across14 dimensions.",
+      "exclusions_considered": [
+        "MB23.R actual suicide attempt",
+        "QC4B personal history of self-harm",
+        "Underlying depression/bipolar/perinatal illness is not automatically diagnosed by ideation"
+      ]
+    }
+  },
+  {
+    "condition_id": "ards",
+    "code": "CB00",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "6521c1142e65badc3c1e9f6355ea1e4914e0f17765a145c536d086af30257267",
+    "review_report": "reports/p0-03-ards-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Acute inflammatory hypoxaemic respiratory failure, adult and paediatric routes, trigger-specific care and ICU recovery are covered. Neonatal surfactant deficiency KB23.0 remains distinct, not inflated into this leaf.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "asphyxiation",
+    "code": "NF05",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "014c21df1cd14d0eb3a9e4020697908f083b4098213baf7b26927ae6b11e9ca6",
+    "review_report": "reports/p0-03-asphyxiation-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "机械性/环境性窒息：口鼻覆盖、勒颈、胸部受压及环境缺氧；按WHO2026-01排除NE61、ND72、CB00、KB23，相关病仅鉴别或分流。",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "epiglottitis",
+    "code": "CA06.1",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "0ab052a192a1408b2b30354fc5db876f17fc0e6d2f3425ffd3340c2153d591af",
+    "review_report": "reports/p0-03-epiglottitis-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_maternal AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "CA06.1 acute epiglottitis core covered across14 dimensions: adult/child presentation, causes, airway-first evaluation, conditional treatment and medicine risks, safe feeding, recovery/prevention. Frozen classification first reading retained.",
+      "exclusions_considered": [
+        "CA06.0croup",
+        "CA06.Zunspecified",
+        "General acute upper-airway recommendations not indiscriminately copied as epiglottitis treatment"
+      ]
+    }
+  },
+  {
+    "condition_id": "severe-dengue",
+    "code": "1D22",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "9f99f769260596015211a3f622c49191f0458a76956967c0dc141beb31b92202",
+    "review_report": "reports/p0-03-severe-dengue-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Shared14 dimensions cover severe leak/shock,bleeding and organinjury; warning phase distinguished; emergency/supportive management with risk and followup.",
+      "exclusions_considered": [
+        "1D20 without warning",
+        "1D21 warning signs without established severe criteria"
+      ]
+    }
+  },
+  {
+    "condition_id": "sjs-ten",
+    "code": "EB13.0",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "896ead57b75756e82764f479e5fe9a44e3dad19d318bf4e758eef8e6386286a3",
+    "review_report": "reports/p0-03-sjs-ten-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "SJS limited skin loss within shared14-dimension spectrum; drug-related classification distinguished; RIME/mimics require specialist differentiation.",
+      "exclusions_considered": [
+        "RIME not automatically SJS",
+        "erythema multiforme",
+        "SSSS",
+        "other severe drug eruptions"
+      ]
+    }
+  },
+  {
+    "condition_id": "sjs-ten",
+    "code": "EB13.1",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "896ead57b75756e82764f479e5fe9a44e3dad19d318bf4e758eef8e6386286a3",
+    "review_report": "reports/p0-03-sjs-ten-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "TEN extensive skin loss within shared14-dimension spectrum; drug-related classification distinguished; RIME/mimics require specialist differentiation.",
+      "exclusions_considered": [
+        "RIME not automatically SJS",
+        "erythema multiforme",
+        "SSSS",
+        "other severe drug eruptions"
+      ]
+    }
+  },
+  {
+    "condition_id": "sjs-ten",
+    "code": "EB13.2",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "896ead57b75756e82764f479e5fe9a44e3dad19d318bf4e758eef8e6386286a3",
+    "review_report": "reports/p0-03-sjs-ten-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "10-30% overlap within shared14-dimension spectrum; drug-related classification distinguished; RIME/mimics require specialist differentiation.",
+      "exclusions_considered": [
+        "RIME not automatically SJS",
+        "erythema multiforme",
+        "SSSS",
+        "other severe drug eruptions"
+      ]
+    }
+  },
+  {
+    "condition_id": "sjs-ten",
+    "code": "EH63.0",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "896ead57b75756e82764f479e5fe9a44e3dad19d318bf4e758eef8e6386286a3",
+    "review_report": "reports/p0-03-sjs-ten-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "SJS limited skin loss within shared14-dimension spectrum; explicit culprit assessment, immediate withdrawal and future avoidance supply drug-induced branch.",
+      "exclusions_considered": [
+        "RIME not automatically SJS",
+        "erythema multiforme",
+        "SSSS",
+        "other severe drug eruptions"
+      ]
+    }
+  },
+  {
+    "condition_id": "sjs-ten",
+    "code": "EH63.1",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "896ead57b75756e82764f479e5fe9a44e3dad19d318bf4e758eef8e6386286a3",
+    "review_report": "reports/p0-03-sjs-ten-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "TEN extensive skin loss within shared14-dimension spectrum; explicit culprit assessment, immediate withdrawal and future avoidance supply drug-induced branch.",
+      "exclusions_considered": [
+        "RIME not automatically SJS",
+        "erythema multiforme",
+        "SSSS",
+        "other severe drug eruptions"
+      ]
+    }
+  },
+  {
+    "condition_id": "sjs-ten",
+    "code": "EH63.2",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "896ead57b75756e82764f479e5fe9a44e3dad19d318bf4e758eef8e6386286a3",
+    "review_report": "reports/p0-03-sjs-ten-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "10-30% overlap within shared14-dimension spectrum; explicit culprit assessment, immediate withdrawal and future avoidance supply drug-induced branch.",
+      "exclusions_considered": [
+        "RIME not automatically SJS",
+        "erythema multiforme",
+        "SSSS",
+        "other severe drug eruptions"
+      ]
+    }
+  },
+  {
+    "condition_id": "sudden-hearing-loss",
+    "code": "AB55",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "e9bc740b9423a591a4314690a7df4419fe99b837e3a9d68aa735bff5d024b4e9",
+    "review_report": "reports/p0-03-sudden-hearing-loss-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Original scope assessment retained; all four editorial gaps resolved.",
+      "exclusions_considered": [
+        "AB51 acquired hearing impairment",
+        "AB53 ototoxic hearing loss",
+        "AB37 noise effects",
+        "Known causes and stroke are entry differentials, not automatically AB55"
+      ]
+    }
+  },
+  {
+    "condition_id": "eclampsia",
+    "code": "JA25.0",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "e0b9b2d04173c2ce55977c348d25699355c1a92f83740b443e33b06e2b3e1f96",
+    "review_report": "reports/p0-03-eclampsia-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "All14 sections address eclampsia before birth, during labour and after birth; unknown timing is not a separate treatment. No seizure is diagnosed from timing alone; epilepsy/metabolic/intracranial alternatives retained.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "eclampsia",
+    "code": "JA25.1",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "e0b9b2d04173c2ce55977c348d25699355c1a92f83740b443e33b06e2b3e1f96",
+    "review_report": "reports/p0-03-eclampsia-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "All14 sections address eclampsia before birth, during labour and after birth; unknown timing is not a separate treatment. No seizure is diagnosed from timing alone; epilepsy/metabolic/intracranial alternatives retained.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "eclampsia",
+    "code": "JA25.2",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "e0b9b2d04173c2ce55977c348d25699355c1a92f83740b443e33b06e2b3e1f96",
+    "review_report": "reports/p0-03-eclampsia-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "All14 sections address eclampsia before birth, during labour and after birth; unknown timing is not a separate treatment. No seizure is diagnosed from timing alone; epilepsy/metabolic/intracranial alternatives retained.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "eclampsia",
+    "code": "JA25.3",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "e0b9b2d04173c2ce55977c348d25699355c1a92f83740b443e33b06e2b3e1f96",
+    "review_report": "reports/p0-03-eclampsia-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "All14 sections address eclampsia before birth, during labour and after birth; unknown timing is not a separate treatment. No seizure is diagnosed from timing alone; epilepsy/metabolic/intracranial alternatives retained.",
+      "exclusions_considered": "Frozen WHO2026-01 leaf scope, related independent topics, parent categories and explicitly excluded mechanisms checked in the bound independent review."
+    }
+  },
+  {
+    "condition_id": "cauda-equina-syndrome",
+    "code": "8B40",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "4af029a8beb12bece892617550acd33b56a6092e301836a496888554b5c5ef1b",
+    "review_report": "reports/p0-03-cauda-equina-syndrome-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_p0_maternal AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "多腰骶神经根综合征的识别、MRI/膀胱检查、压迫性急诊减压、病因区分及残留疼痛/排便排尿/活动心理随访贯通14维；新增药物饮食解释补齐。",
+      "exclusions_considered": [
+        "不把普通腰痛/单根病/神经丛病直接作CES",
+        "8B40所在非创伤脊髓疾病组；创伤病因需对应损伤分类，不由本页替代",
+        "扫描无手术压迫仍需处理症状和新发警示；不建立48小时等待窗"
+      ]
+    }
+  },
+  {
+    "condition_id": "intracerebral-hemorrhage",
+    "code": "8B00.0",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "c24459c19e7bf9569e153b5ed85da0391a263800ef6f7215b26ce4905589fd15",
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Original site-specific assessment plus corrected secondary scope, shared drug/nutrition core and explicit brainstem/ventricular/multiple-site branches cover this leaf at lay educational depth.",
+      "exclusions_considered": [
+        "Trauma NA07.1",
+        "Sequelae8B25.1",
+        "Fetus/newborn KA82.4/.6",
+        "SAH distinct; secondary hemorrhagic transformation is included in8B00, not an exclusion"
+      ]
+    }
+  },
+  {
+    "condition_id": "intracerebral-hemorrhage",
+    "code": "8B00.1",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "c24459c19e7bf9569e153b5ed85da0391a263800ef6f7215b26ce4905589fd15",
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Original site-specific assessment plus corrected secondary scope, shared drug/nutrition core and explicit brainstem/ventricular/multiple-site branches cover this leaf at lay educational depth.",
+      "exclusions_considered": [
+        "Trauma NA07.1",
+        "Sequelae8B25.1",
+        "Fetus/newborn KA82.4/.6",
+        "SAH distinct; secondary hemorrhagic transformation is included in8B00, not an exclusion"
+      ]
+    }
+  },
+  {
+    "condition_id": "intracerebral-hemorrhage",
+    "code": "8B00.2",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "c24459c19e7bf9569e153b5ed85da0391a263800ef6f7215b26ce4905589fd15",
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Original site-specific assessment plus corrected secondary scope, shared drug/nutrition core and explicit brainstem/ventricular/multiple-site branches cover this leaf at lay educational depth.",
+      "exclusions_considered": [
+        "Trauma NA07.1",
+        "Sequelae8B25.1",
+        "Fetus/newborn KA82.4/.6",
+        "SAH distinct; secondary hemorrhagic transformation is included in8B00, not an exclusion"
+      ]
+    }
+  },
+  {
+    "condition_id": "intracerebral-hemorrhage",
+    "code": "8B00.3",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "c24459c19e7bf9569e153b5ed85da0391a263800ef6f7215b26ce4905589fd15",
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Original site-specific assessment plus corrected secondary scope, shared drug/nutrition core and explicit brainstem/ventricular/multiple-site branches cover this leaf at lay educational depth.",
+      "exclusions_considered": [
+        "Trauma NA07.1",
+        "Sequelae8B25.1",
+        "Fetus/newborn KA82.4/.6",
+        "SAH distinct; secondary hemorrhagic transformation is included in8B00, not an exclusion"
+      ]
+    }
+  },
+  {
+    "condition_id": "intracerebral-hemorrhage",
+    "code": "8B00.4",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "c24459c19e7bf9569e153b5ed85da0391a263800ef6f7215b26ce4905589fd15",
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Original site-specific assessment plus corrected secondary scope, shared drug/nutrition core and explicit brainstem/ventricular/multiple-site branches cover this leaf at lay educational depth.",
+      "exclusions_considered": [
+        "Trauma NA07.1",
+        "Sequelae8B25.1",
+        "Fetus/newborn KA82.4/.6",
+        "SAH distinct; secondary hemorrhagic transformation is included in8B00, not an exclusion"
+      ]
+    }
+  },
+  {
+    "condition_id": "intracerebral-hemorrhage",
+    "code": "8B00.5",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "c24459c19e7bf9569e153b5ed85da0391a263800ef6f7215b26ce4905589fd15",
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Original site-specific assessment plus corrected secondary scope, shared drug/nutrition core and explicit brainstem/ventricular/multiple-site branches cover this leaf at lay educational depth.",
+      "exclusions_considered": [
+        "Trauma NA07.1",
+        "Sequelae8B25.1",
+        "Fetus/newborn KA82.4/.6",
+        "SAH distinct; secondary hemorrhagic transformation is included in8B00, not an exclusion"
+      ]
+    }
+  },
+  {
+    "condition_id": "intracerebral-hemorrhage",
+    "code": "8B00.Z",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "c24459c19e7bf9569e153b5ed85da0391a263800ef6f7215b26ce4905589fd15",
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "/root/astra_independent_finish AI-assisted classification review; not clinician sign-off",
+      "checked_at": "2026-10-03",
+      "scope": "entire_leaf_category",
+      "rationale": "Original site-specific assessment plus corrected secondary scope, shared drug/nutrition core and explicit brainstem/ventricular/multiple-site branches cover this leaf at lay educational depth.",
+      "exclusions_considered": [
+        "Trauma NA07.1",
+        "Sequelae8B25.1",
+        "Fetus/newborn KA82.4/.6",
+        "SAH distinct; secondary hemorrhagic transformation is included in8B00, not an exclusion"
+      ]
     }
   }
 ]

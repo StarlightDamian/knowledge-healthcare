@@ -6,11 +6,11 @@
       "id": "aortic-dissection",
       "section": "summary"
     },
-    "content_sha256": "4bfb59365f0060307ab177618b93dbde79902164d91e590ba0bed78aaa0fdc35",
+    "content_sha256": "dd061af040f2e20e32c5326b30709f39c05777d73338f6dbfc45aeccf0c065de",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -61,6 +61,21 @@
         ],
         "relation": "supports",
         "assessment": "summary-2: Type-specific urgent operative versus medical management."
+      },
+      {
+        "source_id": "ad-msd-professional",
+        "source_metadata_sha256": "5b5ed7ba1ab950637edc94a5cbdf988db6465e6d85d343bb312ceb611ed704e5",
+        "locator": "Classification of aortic dissection; Surgical repair",
+        "source_version": "December2024 review",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Aortic dissection; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "MSD-MANUALS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "DeBakeyI/II/III location/extent and repair depends on anatomical nature."
       }
     ],
     "claims": [
@@ -138,28 +153,65 @@
             "assessment": "Defines aneurysm/dissection/rupture and need for assessment beyond pain."
           }
         ]
+      },
+      {
+        "id": "p0-03-aortic-dissection-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "医生还会记录夹层是局限于升主动脉，还是越过主动脉弓向下延伸；从降主动脉起始的夹层也可能继续延伸到腹部。影像上的具体范围决定修复需要覆盖哪些部位。",
+          "en": "Clinicians also record whether a dissection stays within the ascending aorta or extends across the arch, and whether one beginning in the descending aorta continues into the abdomen. The actual extent on imaging determines which areas need repair."
+        },
+        "supports": [
+          {
+            "source_id": "ad-msd-professional",
+            "locator": "Classification of aortic dissection; Surgical repair",
+            "assessment": "DeBakeyI/II/III location/extent and repair depends on anatomical nature."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Surgery and endovascular treatment",
+            "assessment": "Graft extent, arch/branch involvement and hybrid repair according to extent."
+          }
+        ]
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Critical actions, thresholds, benefits and risks have source-specific references from at least two distinct writing groups; ordinary explanations/information organization may use one. Same-institution or joint-guideline variants are not independent.",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "none",
-      "resolution": "US ACC/AHA and South England acute protocols differ in numeric treatment targets; none is turned into a home target or dose. Pregnancy recommendations retain US2022/ESC2025 provenance. Current local teams determine individual care."
+      "resolution": "Guidelines and MSD share registry/upstream evidence. Independent editorial source groups are not independent clinical trials. No universal survival percentage, outpatient observation for rupture, or single repair technique is asserted; concrete anatomy and stability conditions retained."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/retinal_targeted",
-      "reviewer": "/root",
-      "checked_at": "2026-10-02",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "ad-acc-activity",
         "ad-acc-family",
         "ad-acc-guideline",
         "ad-acc-medical-extract",
         "ad-cleveland",
+        "ad-esc-2024",
+        "ad-esc-pregnancy-2025",
+        "ad-gstt-recovery",
+        "ad-mayo-beta",
+        "ad-mayo-symptoms",
+        "ad-mayo-treatment",
+        "ad-msd-professional",
+        "ad-nhlbi-food",
+        "ad-nhlbi-living",
+        "ad-nhs-beta",
+        "ad-niddk-ckd-food",
+        "ad-south-england-sop",
+        "ad-south-tees-beta"
+      ],
+      "inherited_source_ids": [
+        "ad-acc-activity",
+        "ad-acc-family",
         "ad-esc-pregnancy-2025",
         "ad-gstt-recovery",
         "ad-mayo-beta",
@@ -174,25 +226,20 @@
       ],
       "findings": [
         {
-          "id": "AD-shared-source-metadata",
-          "status": "resolved",
-          "resolution": "Renamed the new NHLBI read to ad-nhlbi-food; original mi-nhlbi-food and its existing medical evidence remain byte-equivalent."
+          "finding": "Author reading log mislabelled Table27 evidence as beta-blocker section7.3.1.",
+          "resolution": "Root corrected author read_scope to Table27; independently read original publisher-indexed table. No historical source metadata rewritten.",
+          "status": "resolved"
         },
         {
-          "id": "AD-abrupt-withdrawal",
-          "status": "resolved",
-          "resolution": "Added directly read South Tees pharmacy instruction, independently corroborating the precise Mayo abrupt-beta-blocker-withdrawal caution; general NIH adherence text is no longer the only second component."
-        },
-        {
-          "id": "AD-medication-suitability",
-          "status": "resolved",
-          "resolution": "Added bilingual asthma/respiratory/slow-rate/conduction selection conditions, with NHS, Mayo and the precise ACC/AHA original indexed extract. Asthma is not labelled a blanket absolute prohibition."
+          "finding": "Perforation must not mean only an intimal entry tear; contained rupture is not safe.",
+          "resolution": "Bilingual complication text describes wall leakage and dangerous contained leak, distinct from inner-layer tear.",
+          "status": "resolved"
         }
       ],
-      "resolution": "One independent full read of the initial58 claims and original material, followed by targeted acceptance of one added medication-condition claim and precise withdrawal/source-ID fixes. All14 sections are supported within their explicit populations and scopes. No clinician signature is implied."
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-aortic-dissection-independent.json"
+    "review_report": "reports/p0-03-aortic-dissection-independent.json"
   },
   {
     "id": "p001-aortic-dissection-causes_risks",
@@ -818,11 +865,11 @@
       "id": "aortic-dissection",
       "section": "diagnosis"
     },
-    "content_sha256": "d6476b201a2e3c823ccdc42148b94be63067e624354e8ca69f762e71414d4c3e",
+    "content_sha256": "1ea19c420522a51f0a3e480dead0647044d4eef27464fd9aa5b7024e715d6ab1",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -873,6 +920,36 @@
         ],
         "relation": "supports",
         "assessment": "diagnosis-2: Rapid CT; TEE probe and MRI descriptions. diagnosis-3: Imaging choice, MRI duration and need for aortic tests."
+      },
+      {
+        "source_id": "ad-esc-2024",
+        "source_metadata_sha256": "163f784238408baa4c47980d83eef4127db5e5667bf29b119d4b50c752da2e3a",
+        "locator": "9.3.1 classification; DISSECT discussion",
+        "source_version": "2024-08-30",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Aortic dissection; subtype conditions are in the claim.",
+        "region": "EU",
+        "independence_group": "ESC-GUIDELINES",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Duration, entry, size, segmental extent, clinical complications and false-lumen features guide decisions."
+      },
+      {
+        "source_id": "ad-msd-professional",
+        "source_metadata_sha256": "5b5ed7ba1ab950637edc94a5cbdf988db6465e6d85d343bb312ceb611ed704e5",
+        "locator": "Classification; Diagnosis; Surgical repair",
+        "source_version": "December2024 review",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Aortic dissection; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "MSD-MANUALS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Anatomy, extension, aortic regurgitation and major branch involvement inform repair."
       }
     ],
     "claims": [
@@ -955,28 +1032,65 @@
             "assessment": "Chest-film abnormality is a clue while definitive dedicated tests are listed."
           }
         ]
+      },
+      {
+        "id": "p0-03-aortic-dissection-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "报告中的“其他特指”说明形态已有描述，不能据此判断轻重。医生仍需逐一核对起始部位、延伸范围、有无血液外漏及分支供血受阻，才能选择治疗路径。",
+          "en": "An other-specified label indicates a described pattern, not its severity. The team still assesses the entry site, extent, leakage and blood flow to branch vessels to select the treatment pathway."
+        },
+        "supports": [
+          {
+            "source_id": "ad-esc-2024",
+            "locator": "9.3.1 classification; DISSECT discussion",
+            "assessment": "Duration, entry, size, segmental extent, clinical complications and false-lumen features guide decisions."
+          },
+          {
+            "source_id": "ad-msd-professional",
+            "locator": "Classification; Diagnosis; Surgical repair",
+            "assessment": "Anatomy, extension, aortic regurgitation and major branch involvement inform repair."
+          }
+        ]
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Critical actions, thresholds, benefits and risks have source-specific references from at least two distinct writing groups; ordinary explanations/information organization may use one. Same-institution or joint-guideline variants are not independent.",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "none",
-      "resolution": "US ACC/AHA and South England acute protocols differ in numeric treatment targets; none is turned into a home target or dose. Pregnancy recommendations retain US2022/ESC2025 provenance. Current local teams determine individual care."
+      "resolution": "Guidelines and MSD share registry/upstream evidence. Independent editorial source groups are not independent clinical trials. No universal survival percentage, outpatient observation for rupture, or single repair technique is asserted; concrete anatomy and stability conditions retained."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/retinal_targeted",
-      "reviewer": "/root",
-      "checked_at": "2026-10-02",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "ad-acc-activity",
         "ad-acc-family",
         "ad-acc-guideline",
         "ad-acc-medical-extract",
         "ad-cleveland",
+        "ad-esc-2024",
+        "ad-esc-pregnancy-2025",
+        "ad-gstt-recovery",
+        "ad-mayo-beta",
+        "ad-mayo-symptoms",
+        "ad-mayo-treatment",
+        "ad-msd-professional",
+        "ad-nhlbi-food",
+        "ad-nhlbi-living",
+        "ad-nhs-beta",
+        "ad-niddk-ckd-food",
+        "ad-south-england-sop",
+        "ad-south-tees-beta"
+      ],
+      "inherited_source_ids": [
+        "ad-acc-activity",
+        "ad-acc-family",
         "ad-esc-pregnancy-2025",
         "ad-gstt-recovery",
         "ad-mayo-beta",
@@ -991,25 +1105,20 @@
       ],
       "findings": [
         {
-          "id": "AD-shared-source-metadata",
-          "status": "resolved",
-          "resolution": "Renamed the new NHLBI read to ad-nhlbi-food; original mi-nhlbi-food and its existing medical evidence remain byte-equivalent."
+          "finding": "Author reading log mislabelled Table27 evidence as beta-blocker section7.3.1.",
+          "resolution": "Root corrected author read_scope to Table27; independently read original publisher-indexed table. No historical source metadata rewritten.",
+          "status": "resolved"
         },
         {
-          "id": "AD-abrupt-withdrawal",
-          "status": "resolved",
-          "resolution": "Added directly read South Tees pharmacy instruction, independently corroborating the precise Mayo abrupt-beta-blocker-withdrawal caution; general NIH adherence text is no longer the only second component."
-        },
-        {
-          "id": "AD-medication-suitability",
-          "status": "resolved",
-          "resolution": "Added bilingual asthma/respiratory/slow-rate/conduction selection conditions, with NHS, Mayo and the precise ACC/AHA original indexed extract. Asthma is not labelled a blanket absolute prohibition."
+          "finding": "Perforation must not mean only an intimal entry tear; contained rupture is not safe.",
+          "resolution": "Bilingual complication text describes wall leakage and dangerous contained leak, distinct from inner-layer tear.",
+          "status": "resolved"
         }
       ],
-      "resolution": "One independent full read of the initial58 claims and original material, followed by targeted acceptance of one added medication-condition claim and precise withdrawal/source-ID fixes. All14 sections are supported within their explicit populations and scopes. No clinician signature is implied."
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-aortic-dissection-independent.json"
+    "review_report": "reports/p0-03-aortic-dissection-independent.json"
   },
   {
     "id": "p001-aortic-dissection-differentials",
@@ -1229,11 +1338,11 @@
       "id": "aortic-dissection",
       "section": "treatment"
     },
-    "content_sha256": "05ab7bf259cd3874f3e19fdcd92973afe8d785f1a80bc54af6bf70c3a6a48bec",
+    "content_sha256": "62f7452bdabe7101abd82c7dacd6e79fa41eb32f5f9b9ac12b9d8418385b811e",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -1300,6 +1409,21 @@
         ],
         "relation": "supports",
         "assessment": "treatment-1: Immediate A surgery with graft/valve decisions. treatment-2: Medical B versus urgent complicated B intervention. treatment-3: Endovascular repair and residual disease surveillance."
+      },
+      {
+        "source_id": "ad-esc-2024",
+        "source_metadata_sha256": "163f784238408baa4c47980d83eef4127db5e5667bf29b119d4b50c752da2e3a",
+        "locator": "9.3.1.4 Acute typeB interventional treatment",
+        "source_version": "2024-08-30",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Aortic dissection; subtype conditions are in the claim.",
+        "region": "EU",
+        "independence_group": "ESC-GUIDELINES",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Complicated rupture requires repair; selection by anatomy and procedural context."
       }
     ],
     "claims": [
@@ -1387,28 +1511,65 @@
             "assessment": "Anatomical suitability and remaining aortic disease after repair."
           }
         ]
+      },
+      {
+        "id": "p0-03-aortic-dissection-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "伴破裂的降主动脉夹层属于有并发症的B型，需要紧急处理；美国和欧洲指南均支持及时修复。血管形态合适时常选腔内支架移植物，形态不合适或其他病情复杂时由主动脉团队选择开放或联合手术。",
+          "en": "A descending dissection with rupture is complicated typeB disease requiring emergency management; US and European guidelines support prompt repair. A stent graft is often preferred when anatomy permits; an aortic team selects open or combined repair when anatomy or other complexities require it."
+        },
+        "supports": [
+          {
+            "source_id": "ad-acc-guideline",
+            "locator": "TypeB acute aortic dissection",
+            "assessment": "Intervention for rupture; endovascular preferred over open in suitable anatomy."
+          },
+          {
+            "source_id": "ad-esc-2024",
+            "locator": "9.3.1.4 Acute typeB interventional treatment",
+            "assessment": "Complicated rupture requires repair; selection by anatomy and procedural context."
+          }
+        ]
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Critical actions, thresholds, benefits and risks have source-specific references from at least two distinct writing groups; ordinary explanations/information organization may use one. Same-institution or joint-guideline variants are not independent.",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "regional_difference",
-      "resolution": "US ACC/AHA and South England acute protocols differ in numeric treatment targets; none is turned into a home target or dose. Pregnancy recommendations retain US2022/ESC2025 provenance. Current local teams determine individual care."
+      "status": "none",
+      "resolution": "Guidelines and MSD share registry/upstream evidence. Independent editorial source groups are not independent clinical trials. No universal survival percentage, outpatient observation for rupture, or single repair technique is asserted; concrete anatomy and stability conditions retained."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/retinal_targeted",
-      "reviewer": "/root",
-      "checked_at": "2026-10-02",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "ad-acc-activity",
         "ad-acc-family",
         "ad-acc-guideline",
         "ad-acc-medical-extract",
         "ad-cleveland",
+        "ad-esc-2024",
+        "ad-esc-pregnancy-2025",
+        "ad-gstt-recovery",
+        "ad-mayo-beta",
+        "ad-mayo-symptoms",
+        "ad-mayo-treatment",
+        "ad-msd-professional",
+        "ad-nhlbi-food",
+        "ad-nhlbi-living",
+        "ad-nhs-beta",
+        "ad-niddk-ckd-food",
+        "ad-south-england-sop",
+        "ad-south-tees-beta"
+      ],
+      "inherited_source_ids": [
+        "ad-acc-activity",
+        "ad-acc-family",
         "ad-esc-pregnancy-2025",
         "ad-gstt-recovery",
         "ad-mayo-beta",
@@ -1423,25 +1584,20 @@
       ],
       "findings": [
         {
-          "id": "AD-shared-source-metadata",
-          "status": "resolved",
-          "resolution": "Renamed the new NHLBI read to ad-nhlbi-food; original mi-nhlbi-food and its existing medical evidence remain byte-equivalent."
+          "finding": "Author reading log mislabelled Table27 evidence as beta-blocker section7.3.1.",
+          "resolution": "Root corrected author read_scope to Table27; independently read original publisher-indexed table. No historical source metadata rewritten.",
+          "status": "resolved"
         },
         {
-          "id": "AD-abrupt-withdrawal",
-          "status": "resolved",
-          "resolution": "Added directly read South Tees pharmacy instruction, independently corroborating the precise Mayo abrupt-beta-blocker-withdrawal caution; general NIH adherence text is no longer the only second component."
-        },
-        {
-          "id": "AD-medication-suitability",
-          "status": "resolved",
-          "resolution": "Added bilingual asthma/respiratory/slow-rate/conduction selection conditions, with NHS, Mayo and the precise ACC/AHA original indexed extract. Asthma is not labelled a blanket absolute prohibition."
+          "finding": "Perforation must not mean only an intimal entry tear; contained rupture is not safe.",
+          "resolution": "Bilingual complication text describes wall leakage and dangerous contained leak, distinct from inner-layer tear.",
+          "status": "resolved"
         }
       ],
-      "resolution": "One independent full read of the initial58 claims and original material, followed by targeted acceptance of one added medication-condition claim and precise withdrawal/source-ID fixes. All14 sections are supported within their explicit populations and scopes. No clinician signature is implied."
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-aortic-dissection-independent.json"
+    "review_report": "reports/p0-03-aortic-dissection-independent.json"
   },
   {
     "id": "p001-aortic-dissection-medications",
@@ -2733,11 +2889,11 @@
       "id": "aortic-dissection",
       "section": "complications"
     },
-    "content_sha256": "1b9c4f35b2e152e06a72d7cd817b5deac52f6953b49c7f672403b51c7380a4b3",
+    "content_sha256": "2f573714e9bfddd80b6402429318f8864d1c5dc88dfcd6e2fa7377894af2cdd7",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -2804,6 +2960,36 @@
         ],
         "relation": "supports",
         "assessment": "complications-3: Residual disease imaging after acute phase."
+      },
+      {
+        "source_id": "ad-acc-medical-extract",
+        "source_metadata_sha256": "310b1a31835b1bf272fc5d91f2bfda5308ca4e3672e2b1524b8a80d0ac61326d",
+        "locator": "7.4.2 Table27: Aortic rupture",
+        "source_version": "2022-11-02",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Aortic dissection; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "US-ACC-AHA",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Free or contained rupture including periaortic/mediastinal hematoma and hemothorax; prompt response."
+      },
+      {
+        "source_id": "ad-msd-professional",
+        "source_metadata_sha256": "5b5ed7ba1ab950637edc94a5cbdf988db6465e6d85d343bb312ceb611ed704e5",
+        "locator": "Pathophysiology: fatal rupture through adventitia",
+        "source_version": "December2024 review",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Aortic dissection; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "MSD-MANUALS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Wall rupture into pericardium or pleural space; source distinguishes intramural dissection from external rupture."
       }
     ],
     "claims": [
@@ -2891,28 +3077,65 @@
             "assessment": "Residual disease imaging after acute phase."
           }
         ]
+      },
+      {
+        "id": "p0-03-aortic-dissection-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "“穿孔或破裂”是血管壁被突破、血液漏到血管外；有时血液暂被周围组织包住，并不等于出血已经安全停止。它与只有内层撕开、血液在壁内走的夹层不同。",
+          "en": "Perforation or rupture means that blood escapes through the vessel wall. Surrounding tissue may temporarily contain the leak without making it safe. This differs from a tear that allows blood to travel within the wall without escaping outside it."
+        },
+        "supports": [
+          {
+            "source_id": "ad-acc-medical-extract",
+            "locator": "7.4.2 Table27: Aortic rupture",
+            "assessment": "Free or contained rupture including periaortic/mediastinal hematoma and hemothorax; prompt response."
+          },
+          {
+            "source_id": "ad-msd-professional",
+            "locator": "Pathophysiology: fatal rupture through adventitia",
+            "assessment": "Wall rupture into pericardium or pleural space; source distinguishes intramural dissection from external rupture."
+          }
+        ]
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Critical actions, thresholds, benefits and risks have source-specific references from at least two distinct writing groups; ordinary explanations/information organization may use one. Same-institution or joint-guideline variants are not independent.",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "none",
-      "resolution": "US ACC/AHA and South England acute protocols differ in numeric treatment targets; none is turned into a home target or dose. Pregnancy recommendations retain US2022/ESC2025 provenance. Current local teams determine individual care."
+      "resolution": "Guidelines and MSD share registry/upstream evidence. Independent editorial source groups are not independent clinical trials. No universal survival percentage, outpatient observation for rupture, or single repair technique is asserted; concrete anatomy and stability conditions retained."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/retinal_targeted",
-      "reviewer": "/root",
-      "checked_at": "2026-10-02",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "ad-acc-activity",
         "ad-acc-family",
         "ad-acc-guideline",
         "ad-acc-medical-extract",
         "ad-cleveland",
+        "ad-esc-2024",
+        "ad-esc-pregnancy-2025",
+        "ad-gstt-recovery",
+        "ad-mayo-beta",
+        "ad-mayo-symptoms",
+        "ad-mayo-treatment",
+        "ad-msd-professional",
+        "ad-nhlbi-food",
+        "ad-nhlbi-living",
+        "ad-nhs-beta",
+        "ad-niddk-ckd-food",
+        "ad-south-england-sop",
+        "ad-south-tees-beta"
+      ],
+      "inherited_source_ids": [
+        "ad-acc-activity",
+        "ad-acc-family",
         "ad-esc-pregnancy-2025",
         "ad-gstt-recovery",
         "ad-mayo-beta",
@@ -2927,25 +3150,20 @@
       ],
       "findings": [
         {
-          "id": "AD-shared-source-metadata",
-          "status": "resolved",
-          "resolution": "Renamed the new NHLBI read to ad-nhlbi-food; original mi-nhlbi-food and its existing medical evidence remain byte-equivalent."
+          "finding": "Author reading log mislabelled Table27 evidence as beta-blocker section7.3.1.",
+          "resolution": "Root corrected author read_scope to Table27; independently read original publisher-indexed table. No historical source metadata rewritten.",
+          "status": "resolved"
         },
         {
-          "id": "AD-abrupt-withdrawal",
-          "status": "resolved",
-          "resolution": "Added directly read South Tees pharmacy instruction, independently corroborating the precise Mayo abrupt-beta-blocker-withdrawal caution; general NIH adherence text is no longer the only second component."
-        },
-        {
-          "id": "AD-medication-suitability",
-          "status": "resolved",
-          "resolution": "Added bilingual asthma/respiratory/slow-rate/conduction selection conditions, with NHS, Mayo and the precise ACC/AHA original indexed extract. Asthma is not labelled a blanket absolute prohibition."
+          "finding": "Perforation must not mean only an intimal entry tear; contained rupture is not safe.",
+          "resolution": "Bilingual complication text describes wall leakage and dangerous contained leak, distinct from inner-layer tear.",
+          "status": "resolved"
         }
       ],
-      "resolution": "One independent full read of the initial58 claims and original material, followed by targeted acceptance of one added medication-condition claim and precise withdrawal/source-ID fixes. All14 sections are supported within their explicit populations and scopes. No clinician signature is implied."
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-aortic-dissection-independent.json"
+    "review_report": "reports/p0-03-aortic-dissection-independent.json"
   },
   {
     "id": "p001-aortic-dissection-prevention",

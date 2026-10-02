@@ -281,11 +281,11 @@
       "id": "postpartum-hemorrhage",
       "section": "causes_risks"
     },
-    "content_sha256": "18d10f8b474c4c4f046883ba15a034a1dd286c4f1b25b7fcd92be2d39a692932",
+    "content_sha256": "e7a1cb82d80919f94cbc9114d2e16b62e56ea065e1805333c3bd8d3302ee5a30",
     "status": "cross_checked",
     "scope": "full_section",
     "checked_at": "2026-10-03",
-    "checker": "/root/astra_p0_neurology",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -352,6 +352,66 @@
         ],
         "relation": "supports",
         "assessment": "原有凝血病和严重出血导致凝血成分不足。"
+      },
+      {
+        "source_id": "p003-msf-obstructed-labour",
+        "source_metadata_sha256": "532c79685a1fafe6047e96361e29f284594873ea7eb567771d27a7842a4b430d",
+        "locator": "7.2 definition, complications and management",
+        "source_version": "Official HTML actually read by urllib:7.2 definition;7.2.2 causes;7.2.3 complications;7.2.4 atony-related PPH;7.2.5 fistula. Shares WHO fistula guidance; counted with MSF3.3 as one origin. Does not import >24h definition as a waiting rule, fluid targets or procedures.",
+        "accessed_at": "2026-10-03",
+        "population": "梗阻性分娩后出血；不把所有产程缓慢称梗阻，不用小时阈值让人等待。",
+        "region": "MULTI_REGION",
+        "independence_group": "MSF",
+        "upstream_evidence": [
+          "Official HTML actually read by urllib:7.2 definition;7.2.2 causes;7.2.3 complications;7.2.4 atony-related PPH;7.2.5 fistula. Shares WHO fistula guidance; counted with MSF3.3 as one origin. Does not import >24h definition as a waiting rule, fluid targets or procedures."
+        ],
+        "relation": "supports",
+        "assessment": "p003-causes_risks-1: 梗阻性分娩后出血；不把所有产程缓慢称梗阻，不用小时阈值让人等待。"
+      },
+      {
+        "source_id": "p003-who-obstructed-labour",
+        "source_metadata_sha256": "98edc9ad9141edb67c0b572b595bb527fc11ad23b61a88db99f39a77f93e0cda",
+        "locator": "physical pages33,201,204",
+        "source_version": "Original WHO PDF web text actually read:physical pages33(rupture/haemorrhage),59(recognition),201(definition mechanical obstruction),204(PPH atony/trauma glossary); edition2 confirmed on physical page3. Historical education used only for mechanisms, not old partograph timings or PPH numerical thresholds. urllib403; web PDF succeeds. MSF/WHO share obstetric evidence; separate editorial origins, no independent-trial assertion.",
+        "accessed_at": "2026-10-03",
+        "population": "梗阻性分娩后出血；不把所有产程缓慢称梗阻，不用小时阈值让人等待。",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "Original WHO PDF web text actually read:physical pages33(rupture/haemorrhage),59(recognition),201(definition mechanical obstruction),204(PPH atony/trauma glossary); edition2 confirmed on physical page3. Historical education used only for mechanisms, not old partograph timings or PPH numerical thresholds. urllib403; web PDF succeeds. MSF/WHO share obstetric evidence; separate editorial origins, no independent-trial assertion."
+        ],
+        "relation": "supports",
+        "assessment": "p003-causes_risks-1: 梗阻性分娩后出血；不把所有产程缓慢称梗阻，不用小时阈值让人等待。"
+      },
+      {
+        "source_id": "p003-aha-international-2020",
+        "source_metadata_sha256": "14f91cc4820f895823aa794605991cc3e4c6901ce6b80f97f1b2a6581c9de4ab",
+        "locator": "Introduction58–63;Diagnosis82–93",
+        "source_version": "2020; accepted2020-04-07. Original full relevant HTML read:Introduction58–63;Diagnosis82–105;Hemostatic treatment109–126;Follow-up216–219;Pregnancy-associated AHA220–223;disclosures229. Consensus with EACH2/GTH registry evidence, editorial support funded by Novo Nordisk. Not independent trial replication.",
+        "accessed_at": "2026-10-03",
+        "population": "妊娠相关获得性血友病A举例；不是将所有产后凝血缺陷等同AHA。",
+        "region": "MULTI_REGION",
+        "independence_group": "AHA-INTERNATIONAL-2020",
+        "upstream_evidence": [
+          "2020; accepted2020-04-07. Original full relevant HTML read:Introduction58–63;Diagnosis82–105;Hemostatic treatment109–126;Follow-up216–219;Pregnancy-associated AHA220–223;disclosures229. Consensus with EACH2/GTH registry evidence, editorial support funded by Novo Nordisk. Not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "p003-causes_risks-5: 妊娠相关获得性血友病A举例；不是将所有产后凝血缺陷等同AHA。"
+      },
+      {
+        "source_id": "p003-nhc-rare-aha-2025",
+        "source_metadata_sha256": "c57b8b8bbd51d547a130117e877dd16524cfae6cea945d496d813a4528f96398",
+        "locator": "physical page9 overview and clinical presentation",
+        "source_version": "2025 release, precise issue day not confirmed. Official PDF downloaded in memory, pdftotext physical pages9 and11–14 actually read:chapter2 overview/diagnostics;therapy;pregnancy/lactation;complication monitoring;references. Printed pages5,7–10. Independently formulated China guidance cites international2020, EACH2 and Chinese CARE/local studies, so underlying evidence overlaps. Treatment availability and pregnancy/lactation regimens differ; do not combine drug prescriptions.",
+        "accessed_at": "2026-10-03",
+        "population": "妊娠相关获得性血友病A举例；不是将所有产后凝血缺陷等同AHA。",
+        "region": "CN",
+        "independence_group": "CN-RARE-DISEASE-GUIDELINE",
+        "upstream_evidence": [
+          "2025 release, precise issue day not confirmed. Official PDF downloaded in memory, pdftotext physical pages9 and11–14 actually read:chapter2 overview/diagnostics;therapy;pregnancy/lactation;complication monitoring;references. Printed pages5,7–10. Independently formulated China guidance cites international2020, EACH2 and Chinese CARE/local studies, so underlying evidence overlaps. Treatment availability and pregnancy/lactation regimens differ; do not combine drug prescriptions."
+        ],
+        "relation": "supports",
+        "assessment": "p003-causes_risks-5: 妊娠相关获得性血友病A举例；不是将所有产后凝血缺陷等同AHA。"
       }
     ],
     "claims": [
@@ -454,6 +514,66 @@
             "assessment": "原有凝血病和严重出血导致凝血成分不足。"
           }
         ]
+      },
+      {
+        "id": "p003-causes_risks-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "梗阻性分娩是胎儿受到阻挡、不能继续通过产道的情况。其后出血可能来自宫缩乏力，也可能伴子宫壁撕裂，即子宫破裂；二者需要分别查找。",
+          "en": "In obstructed labour, a barrier prevents the baby from progressing through the birth canal. Subsequent bleeding may involve poor uterine contraction or a tear in the uterine wall, called uterine rupture; these need separate assessment."
+        },
+        "supports": [
+          {
+            "source_id": "p003-msf-obstructed-labour",
+            "locator": "7.2 definition, complications and management",
+            "assessment": "梗阻性分娩后出血；不把所有产程缓慢称梗阻，不用小时阈值让人等待。"
+          },
+          {
+            "source_id": "p003-who-obstructed-labour",
+            "locator": "physical pages33,201,204",
+            "assessment": "梗阻性分娩后出血；不把所有产程缓慢称梗阻，不用小时阈值让人等待。"
+          }
+        ]
+      },
+      {
+        "id": "p003-causes_risks-5",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "少见的获得性血友病A也可能在妊娠或产后出现：身体产生的抗体妨碍凝血因子Ⅷ工作，即使以前没有个人或家族出血史也可能发病。它与遗传性血友病不同。",
+          "en": "Rare acquired hemophilia A can arise during pregnancy or after birth: antibodies interfere with clotting factor VIII, even without a personal or family bleeding history. It differs from inherited hemophilia."
+        },
+        "supports": [
+          {
+            "source_id": "p003-aha-international-2020",
+            "locator": "Introduction58–63;Diagnosis82–93",
+            "assessment": "妊娠相关获得性血友病A举例；不是将所有产后凝血缺陷等同AHA。"
+          },
+          {
+            "source_id": "p003-nhc-rare-aha-2025",
+            "locator": "physical page9 overview and clinical presentation",
+            "assessment": "妊娠相关获得性血友病A举例；不是将所有产后凝血缺陷等同AHA。"
+          }
+        ]
+      },
+      {
+        "id": "p003-obstruction-infection",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "梗阻性分娩除了造成出血，还可能损伤膀胱或直肠，并增加感染问题；所以止血后仍需关注漏尿、发热、腹痛或恶臭分泌物等变化。",
+          "en": "Obstructed labour can cause bladder or rectal injury and infection as well as bleeding. After bleeding is controlled, continue to watch for urine leakage, fever, abdominal pain or foul-smelling discharge."
+        },
+        "supports": [
+          {
+            "source_id": "p003-msf-obstructed-labour",
+            "locator": "7.2.3 complications;7.2.4 infection and tissue necrosis;7.2.5 fistula",
+            "assessment": "Obstructed-labour subgroup; no fixed catheter, fluid or waiting prescription."
+          },
+          {
+            "source_id": "p003-who-obstructed-labour",
+            "locator": "Physical99–100 infection prevention after obstruction;physical195/printed189 fistula; general postpartum warning signs inherited from red_flags",
+            "assessment": "Obstructed-labour subgroup; no fixed catheter, fluid or waiting prescription."
+          }
+        ]
       }
     ],
     "independence": {
@@ -462,18 +582,27 @@
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "none",
-      "resolution": "WHO2025 therapeutic early-response threshold differs in purpose from CN2023/olderUK classification. Evidence predominantly vaginal; caesarean evidence less certain. UKNICE carboprost-asthma avoid recommendation and manufacturer caution retain different wording. Local clinicians individualize; none is a home dosing/waiting rule."
+      "status": "regional_difference",
+      "resolution": "Age, cause, pregnancy and local professional protocols retain their stated scope. Shared evidence and older sources are identified; no incompatible regional numeric treatment protocols combined."
     },
     "adversarial_review": {
       "status": "accepted",
       "author": "/root/astra_p0_maternal",
-      "reviewer": "/root/astra_p0_neurology",
+      "reviewer": "/root",
       "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "b1-acute-pph-east-kent",
         "b1-acute-pph-nice-intrapartum",
         "b1-acute-pph-rcog",
+        "p003-aha-international-2020",
+        "p003-masac-265",
+        "p003-msf-obstructed-labour",
+        "p003-msf-uterine-rupture",
+        "p003-nhc-rare-aha-2025",
+        "p003-rcog-birth-after-caesarean",
+        "p003-rcog-inherited-bleeding-71",
+        "p003-who-obstetric-fistula",
+        "p003-who-obstructed-labour",
         "pph-carboprost-smpc",
         "pph-cdc-maternal-warning-signs",
         "pph-cleveland",
@@ -484,26 +613,30 @@
         "pph-nata-thromboprophylaxis",
         "pph-nice-asthma-guideline",
         "pph-norfolk-postnatal-emergency",
+        "pph-north-memorial",
         "pph-who-2025-guideline"
       ],
-      "findings": [
-        {
-          "id": "PPH-ACTION-LABEL",
-          "status": "resolved",
-          "finding": "New treatment and medication paragraphs expressed treatment actions but were initially labelled explanation.",
-          "resolution": "Author relabelled p002-treatment-1 and p002-medications-1 as action. Retained placental management has CMA/NICE; component selection and medicine roles have CMA/NATA."
-        },
-        {
-          "id": "PPH-SINGLE-SOURCE-RECOMMENDATION",
-          "status": "resolved",
-          "finding": "NICE-only recommendation against routine IV uterotonics solely for retained placenta lacked independent support for that exact prescribing restriction.",
-          "resolution": "Author removed that clause; retained causal management and TXA-versus-component explanation supported by CMA/NATA. Targeted final text reread in both languages."
-        }
+      "inherited_source_ids": [
+        "b1-acute-pph-east-kent",
+        "b1-acute-pph-nice-intrapartum",
+        "b1-acute-pph-rcog",
+        "pph-carboprost-smpc",
+        "pph-cdc-maternal-warning-signs",
+        "pph-cleveland",
+        "pph-cochrane-txa-caesarean",
+        "pph-cochrane-txa-vaginal",
+        "pph-ebcog-2025",
+        "pph-nata-thromboprophylaxis",
+        "pph-nice-asthma-guideline",
+        "pph-norfolk-postnatal-emergency",
+        "pph-north-memorial",
+        "pph-who-2025-guideline"
       ],
-      "resolution": "Accepted as an editorial content candidate after targeted revisions, not clinician sign-off and not blanket ICD completion. Six changed sections read in Chinese and English; shared action conditions match. Existing blood-loss thresholds are attributed and not home waiting targets; new third-stage advice explicitly prohibits waiting for a minute threshold. No new dose, transfusion ratio or fixed follow-up schedule. All fourteen records and source hashes checked, including eight unchanged records."
+      "findings": [],
+      "resolution": "Accept exact candidate for editorial cross-check and scoped ICD integration; no clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-02-postpartum-hemorrhage-independent.json",
+    "review_report": "reports/p0-03-postpartum-hemorrhage-independent.json",
     "prior_accepted_review": {
       "status": "accepted",
       "author": "/root/retinal_targeted",
@@ -556,11 +689,11 @@
       "id": "postpartum-hemorrhage",
       "section": "red_flags"
     },
-    "content_sha256": "bdb650a0d96888274d61478a51871c84309ded236dd4a8f4155fe410fc2dba25",
+    "content_sha256": "e1af71035ea5f83062c2c0b999c6d1d7b5c2a709c97c69c799655115bc737391",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/priority_medical_rules",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -627,6 +760,36 @@
         ],
         "relation": "supports",
         "assessment": "red_flags-3: Exactpad/hour and egg-size-clot corroboration; tissue specifically CDC."
+      },
+      {
+        "source_id": "p003-msf-uterine-rupture",
+        "source_metadata_sha256": "d0108f9167e1ecd777b6fb81dc080acb3347b1825f7423d3b66dc01a3dba8aac",
+        "locator": "3.3.2 haemoperitoneum, shock;3.3.3 emergency care",
+        "source_version": "2026-10-03 urllib official HTML actually read:3.3.1 risk/obstruction;3.3.2 intrapartum and postpartum recognition;3.3.3 surgery, resuscitation, future rupture. Web tool405 bypassed using official direct request; no figure interpretation. Figure adapted Primary Surgery; not a separate independent source.",
+        "accessed_at": "2026-10-03",
+        "population": "子宫破裂相关急症；属于新急救行动，保留双源，不等待可见失血数字。",
+        "region": "MULTI_REGION",
+        "independence_group": "MSF",
+        "upstream_evidence": [
+          "2026-10-03 urllib official HTML actually read:3.3.1 risk/obstruction;3.3.2 intrapartum and postpartum recognition;3.3.3 surgery, resuscitation, future rupture. Web tool405 bypassed using official direct request; no figure interpretation. Figure adapted Primary Surgery; not a separate independent source."
+        ],
+        "relation": "supports",
+        "assessment": "p003-red_flags-2: 子宫破裂相关急症；属于新急救行动，保留双源，不等待可见失血数字。"
+      },
+      {
+        "source_id": "p003-who-obstructed-labour",
+        "source_metadata_sha256": "98edc9ad9141edb67c0b572b595bb527fc11ad23b61a88db99f39a77f93e0cda",
+        "locator": "physical pages33 and59 rupture/shock/abdominal free fluid",
+        "source_version": "Original WHO PDF web text actually read:physical pages33(rupture/haemorrhage),59(recognition),201(definition mechanical obstruction),204(PPH atony/trauma glossary); edition2 confirmed on physical page3. Historical education used only for mechanisms, not old partograph timings or PPH numerical thresholds. urllib403; web PDF succeeds. MSF/WHO share obstetric evidence; separate editorial origins, no independent-trial assertion.",
+        "accessed_at": "2026-10-03",
+        "population": "子宫破裂相关急症；属于新急救行动，保留双源，不等待可见失血数字。",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "Original WHO PDF web text actually read:physical pages33(rupture/haemorrhage),59(recognition),201(definition mechanical obstruction),204(PPH atony/trauma glossary); edition2 confirmed on physical page3. Historical education used only for mechanisms, not old partograph timings or PPH numerical thresholds. urllib403; web PDF succeeds. MSF/WHO share obstetric evidence; separate editorial origins, no independent-trial assertion."
+        ],
+        "relation": "supports",
+        "assessment": "p003-red_flags-2: 子宫破裂相关急症；属于新急救行动，保留双源，不等待可见失血数字。"
       }
     ],
     "claims": [
@@ -724,6 +887,26 @@
             "assessment": "Fever/pain/odor/heavy bleeding escalation and emergency assistance."
           }
         ]
+      },
+      {
+        "id": "p003-red_flags-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "子宫破裂时，血可流入腹腔，外面看到的阴道出血未必反映全部失血。分娩中或产后出现持续剧烈腹痛、明显虚弱或晕厥，应立即叫医护或当地急救。",
+          "en": "With uterine rupture, blood may collect inside the abdomen, so visible vaginal bleeding may not reflect all blood loss. Persistent severe abdominal pain, marked weakness or fainting during or after birth requires immediate staff attention or emergency help."
+        },
+        "supports": [
+          {
+            "source_id": "p003-msf-uterine-rupture",
+            "locator": "3.3.2 haemoperitoneum, shock;3.3.3 emergency care",
+            "assessment": "子宫破裂相关急症；属于新急救行动，保留双源，不等待可见失血数字。"
+          },
+          {
+            "source_id": "p003-who-obstructed-labour",
+            "locator": "physical pages33 and59 rupture/shock/abdominal free fluid",
+            "assessment": "子宫破裂相关急症；属于新急救行动，保留双源，不等待可见失血数字。"
+          }
+        ]
       }
     ],
     "independence": {
@@ -732,18 +915,27 @@
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "none",
-      "resolution": "WHO2025 therapeutic early-response threshold differs in purpose from CN2023/olderUK classification. Evidence predominantly vaginal; caesarean evidence less certain. UKNICE carboprost-asthma avoid recommendation and manufacturer caution retain different wording. Local clinicians individualize; none is a home dosing/waiting rule."
+      "status": "regional_difference",
+      "resolution": "Age, cause, pregnancy and local professional protocols retain their stated scope. Shared evidence and older sources are identified; no incompatible regional numeric treatment protocols combined."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/retinal_targeted",
-      "reviewer": "/root/priority_medical_rules",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "b1-acute-pph-east-kent",
         "b1-acute-pph-nice-intrapartum",
         "b1-acute-pph-rcog",
+        "p003-aha-international-2020",
+        "p003-masac-265",
+        "p003-msf-obstructed-labour",
+        "p003-msf-uterine-rupture",
+        "p003-nhc-rare-aha-2025",
+        "p003-rcog-birth-after-caesarean",
+        "p003-rcog-inherited-bleeding-71",
+        "p003-who-obstetric-fistula",
+        "p003-who-obstructed-labour",
         "pph-carboprost-smpc",
         "pph-cdc-maternal-warning-signs",
         "pph-cleveland",
@@ -757,30 +949,27 @@
         "pph-north-memorial",
         "pph-who-2025-guideline"
       ],
-      "findings": [
-        {
-          "id": "PPH-01",
-          "status": "resolved",
-          "claim_ids": [
-            "diagnosis-4"
-          ],
-          "finding": "CMA hypovolemia criterion was rendered as symptoms AND signs in both languages; original uses OR.",
-          "resolution": "Both languages now say symptoms OR signs, preserving the independent alternative to volume criteria. Confirmed against CMA definition47 and the claim/body binding."
-        },
-        {
-          "id": "PPH-02",
-          "status": "resolved",
-          "claim_ids": [
-            "diet-2"
-          ],
-          "finding": "The assigned East Kent Eating for iron passage did not list eggs despite the support assessment.",
-          "resolution": "Removed only eggs from both language examples and corresponding claim/section assessments. Meat, pulses and leafy vegetables remain supported; no unnecessary new source added."
-        }
+      "inherited_source_ids": [
+        "b1-acute-pph-east-kent",
+        "b1-acute-pph-nice-intrapartum",
+        "b1-acute-pph-rcog",
+        "pph-carboprost-smpc",
+        "pph-cdc-maternal-warning-signs",
+        "pph-cleveland",
+        "pph-cochrane-txa-caesarean",
+        "pph-cochrane-txa-vaginal",
+        "pph-ebcog-2025",
+        "pph-nata-thromboprophylaxis",
+        "pph-nice-asthma-guideline",
+        "pph-norfolk-postnatal-emergency",
+        "pph-north-memorial",
+        "pph-who-2025-guideline"
       ],
-      "resolution": "Accepted after one independent full claim/source pass and a targeted recheck of two minimal corrections. This is source-based editorial verification by a separate agent, not clinician certification. Clinical review remains false; ICD semantic mapping and release integration remain separate."
+      "findings": [],
+      "resolution": "Accept exact candidate for editorial cross-check and scoped ICD integration; no clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-postpartum-hemorrhage-independent.json"
+    "review_report": "reports/p0-03-postpartum-hemorrhage-independent.json"
   },
   {
     "id": "p001-postpartum-hemorrhage-care",
@@ -1122,11 +1311,11 @@
       "id": "postpartum-hemorrhage",
       "section": "diagnosis"
     },
-    "content_sha256": "0371ced3cfbf2b2f37c5a85b335a5b94589e9ad2ada096340a0bdb4170b6ba8f",
+    "content_sha256": "d1b607ede8d3312db0045780fcc4ae0c2b9d54d975b8f139e4c4a4276a5d5d54",
     "status": "cross_checked",
     "scope": "full_section",
     "checked_at": "2026-10-03",
-    "checker": "/root/astra_p0_neurology",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -1241,6 +1430,36 @@
         ],
         "relation": "supports",
         "assessment": "常规或粘弹性检查指导成分治疗；病因评估。"
+      },
+      {
+        "source_id": "p003-aha-international-2020",
+        "source_metadata_sha256": "14f91cc4820f895823aa794605991cc3e4c6901ce6b80f97f1b2a6581c9de4ab",
+        "locator": "Diagnosis84–105;expert centre advice109",
+        "source_version": "2020; accepted2020-04-07. Original full relevant HTML read:Introduction58–63;Diagnosis82–105;Hemostatic treatment109–126;Follow-up216–219;Pregnancy-associated AHA220–223;disclosures229. Consensus with EACH2/GTH registry evidence, editorial support funded by Novo Nordisk. Not independent trial replication.",
+        "accessed_at": "2026-10-03",
+        "population": "不明凝血异常/疑似AHA，由专科鉴别，不向所有产后人群普筛。",
+        "region": "MULTI_REGION",
+        "independence_group": "AHA-INTERNATIONAL-2020",
+        "upstream_evidence": [
+          "2020; accepted2020-04-07. Original full relevant HTML read:Introduction58–63;Diagnosis82–105;Hemostatic treatment109–126;Follow-up216–219;Pregnancy-associated AHA220–223;disclosures229. Consensus with EACH2/GTH registry evidence, editorial support funded by Novo Nordisk. Not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "p003-diagnosis-6: 不明凝血异常/疑似AHA，由专科鉴别，不向所有产后人群普筛。"
+      },
+      {
+        "source_id": "p003-nhc-rare-aha-2025",
+        "source_metadata_sha256": "c57b8b8bbd51d547a130117e877dd16524cfae6cea945d496d813a4528f96398",
+        "locator": "physical page9 auxiliary tests;physical page11 specialist-guided treatment",
+        "source_version": "2025 release, precise issue day not confirmed. Official PDF downloaded in memory, pdftotext physical pages9 and11–14 actually read:chapter2 overview/diagnostics;therapy;pregnancy/lactation;complication monitoring;references. Printed pages5,7–10. Independently formulated China guidance cites international2020, EACH2 and Chinese CARE/local studies, so underlying evidence overlaps. Treatment availability and pregnancy/lactation regimens differ; do not combine drug prescriptions.",
+        "accessed_at": "2026-10-03",
+        "population": "不明凝血异常/疑似AHA，由专科鉴别，不向所有产后人群普筛。",
+        "region": "CN",
+        "independence_group": "CN-RARE-DISEASE-GUIDELINE",
+        "upstream_evidence": [
+          "2025 release, precise issue day not confirmed. Official PDF downloaded in memory, pdftotext physical pages9 and11–14 actually read:chapter2 overview/diagnostics;therapy;pregnancy/lactation;complication monitoring;references. Printed pages5,7–10. Independently formulated China guidance cites international2020, EACH2 and Chinese CARE/local studies, so underlying evidence overlaps. Treatment availability and pregnancy/lactation regimens differ; do not combine drug prescriptions."
+        ],
+        "relation": "supports",
+        "assessment": "p003-diagnosis-6: 不明凝血异常/疑似AHA，由专科鉴别，不向所有产后人群普筛。"
       }
     ],
     "claims": [
@@ -1373,6 +1592,26 @@
             "assessment": "常规或粘弹性检查指导成分治疗；病因评估。"
           }
         ]
+      },
+      {
+        "id": "p003-diagnosis-6",
+        "kind": "action",
+        "text": {
+          "zh-CN": "出血同时存在原因不明的凝血异常时，团队可能请血液科进一步检查。怀疑获得性血友病A时，需要专门测定凝血因子Ⅷ活性及相关抗体；单凭一般凝血时间延长不能确定该病。",
+          "en": "Unexplained clotting abnormalities accompanying bleeding may require hematology assessment. Suspected acquired hemophilia A needs specific factor VIII activity and inhibitor testing; a prolonged routine clotting time alone does not establish the diagnosis."
+        },
+        "supports": [
+          {
+            "source_id": "p003-aha-international-2020",
+            "locator": "Diagnosis84–105;expert centre advice109",
+            "assessment": "不明凝血异常/疑似AHA，由专科鉴别，不向所有产后人群普筛。"
+          },
+          {
+            "source_id": "p003-nhc-rare-aha-2025",
+            "locator": "physical page9 auxiliary tests;physical page11 specialist-guided treatment",
+            "assessment": "不明凝血异常/疑似AHA，由专科鉴别，不向所有产后人群普筛。"
+          }
+        ]
       }
     ],
     "independence": {
@@ -1382,17 +1621,26 @@
     },
     "dispute": {
       "status": "regional_difference",
-      "resolution": "WHO2025 therapeutic early-response threshold differs in purpose from CN2023/olderUK classification. Evidence predominantly vaginal; caesarean evidence less certain. UKNICE carboprost-asthma avoid recommendation and manufacturer caution retain different wording. Local clinicians individualize; none is a home dosing/waiting rule."
+      "resolution": "Age, cause, pregnancy and local professional protocols retain their stated scope. Shared evidence and older sources are identified; no incompatible regional numeric treatment protocols combined."
     },
     "adversarial_review": {
       "status": "accepted",
       "author": "/root/astra_p0_maternal",
-      "reviewer": "/root/astra_p0_neurology",
+      "reviewer": "/root",
       "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "b1-acute-pph-east-kent",
         "b1-acute-pph-nice-intrapartum",
         "b1-acute-pph-rcog",
+        "p003-aha-international-2020",
+        "p003-masac-265",
+        "p003-msf-obstructed-labour",
+        "p003-msf-uterine-rupture",
+        "p003-nhc-rare-aha-2025",
+        "p003-rcog-birth-after-caesarean",
+        "p003-rcog-inherited-bleeding-71",
+        "p003-who-obstetric-fistula",
+        "p003-who-obstructed-labour",
         "pph-carboprost-smpc",
         "pph-cdc-maternal-warning-signs",
         "pph-cleveland",
@@ -1403,26 +1651,30 @@
         "pph-nata-thromboprophylaxis",
         "pph-nice-asthma-guideline",
         "pph-norfolk-postnatal-emergency",
+        "pph-north-memorial",
         "pph-who-2025-guideline"
       ],
-      "findings": [
-        {
-          "id": "PPH-ACTION-LABEL",
-          "status": "resolved",
-          "finding": "New treatment and medication paragraphs expressed treatment actions but were initially labelled explanation.",
-          "resolution": "Author relabelled p002-treatment-1 and p002-medications-1 as action. Retained placental management has CMA/NICE; component selection and medicine roles have CMA/NATA."
-        },
-        {
-          "id": "PPH-SINGLE-SOURCE-RECOMMENDATION",
-          "status": "resolved",
-          "finding": "NICE-only recommendation against routine IV uterotonics solely for retained placenta lacked independent support for that exact prescribing restriction.",
-          "resolution": "Author removed that clause; retained causal management and TXA-versus-component explanation supported by CMA/NATA. Targeted final text reread in both languages."
-        }
+      "inherited_source_ids": [
+        "b1-acute-pph-east-kent",
+        "b1-acute-pph-nice-intrapartum",
+        "b1-acute-pph-rcog",
+        "pph-carboprost-smpc",
+        "pph-cdc-maternal-warning-signs",
+        "pph-cleveland",
+        "pph-cochrane-txa-caesarean",
+        "pph-cochrane-txa-vaginal",
+        "pph-ebcog-2025",
+        "pph-nata-thromboprophylaxis",
+        "pph-nice-asthma-guideline",
+        "pph-norfolk-postnatal-emergency",
+        "pph-north-memorial",
+        "pph-who-2025-guideline"
       ],
-      "resolution": "Accepted as an editorial content candidate after targeted revisions, not clinician sign-off and not blanket ICD completion. Six changed sections read in Chinese and English; shared action conditions match. Existing blood-loss thresholds are attributed and not home waiting targets; new third-stage advice explicitly prohibits waiting for a minute threshold. No new dose, transfusion ratio or fixed follow-up schedule. All fourteen records and source hashes checked, including eight unchanged records."
+      "findings": [],
+      "resolution": "Accept exact candidate for editorial cross-check and scoped ICD integration; no clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-02-postpartum-hemorrhage-independent.json",
+    "review_report": "reports/p0-03-postpartum-hemorrhage-independent.json",
     "prior_accepted_review": {
       "status": "accepted",
       "author": "/root/retinal_targeted",
@@ -1730,18 +1982,18 @@
       "id": "postpartum-hemorrhage",
       "section": "treatment"
     },
-    "content_sha256": "19f667f9929e58f704c191b5c9ec72bb25592189ed4d80c16a91215b5069a367",
+    "content_sha256": "c6c0ebd01084384588c4fd2cb6eaf272acc572cffefd9a7e1fa552030baa8a9c",
     "status": "cross_checked",
     "scope": "full_section",
     "checked_at": "2026-10-03",
-    "checker": "/root/astra_p0_neurology",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
       {
         "source_id": "pph-cma-2023",
         "source_metadata_sha256": "65b48cc32974042b4e0a1ff594f2f5b94bd64dd2b0a0c379650f1255069a71d5",
-        "locator": "95–108;175 | 95–126 | 124–155 | 108;126–136 | 处理二(三)150；处理一(四)108；处理二(四)159–167",
+        "locator": "95–108;175 | 95–126 | 124–155 | 108;126–136 | 处理二(三)150；处理一(四)108；处理二(四)159–167 | 处理二(二)4 子宫破裂",
         "source_version": "2023-07-10 | 本批增读：CMA2023，2023-07-10官网；58(6):401–409",
         "accessed_at": "2026-10-02",
         "population": "Postpartum people; source-specific acute within24hours/within3hours of birth, secondary24hours–12weeks, vaginal/caesarean, asthma and severe-PPH restrictions are retained in claims and source scope.",
@@ -1752,7 +2004,7 @@
           "Independent writing is not independent research replication. WHO/FIGO/ICM one joint group; EBCOG commentary/FIGO office overlap and Cochrane WHO funding/common trials disclosed. East Kent adapts Ontario Midwives and cites RCOG; CDC warning material is AIM."
         ],
         "relation": "supports",
-        "assessment": "treatment-1: Controlsource andmaintainperfusion. treatment-2: SeparatelywrittenCNmulticomponentapproach. treatment-3: Repair/remove/tamponade/embolization/surgery individualized. treatment-4: Transfusionandhysterectomyforfailedconservativecontrol. p002-treatment-1: 专业取胎盘及针对缺失成分处理。"
+        "assessment": "treatment-1: Controlsource andmaintainperfusion. treatment-2: SeparatelywrittenCNmulticomponentapproach. treatment-3: Repair/remove/tamponade/embolization/surgery individualized. treatment-4: Transfusionandhysterectomyforfailedconservativecontrol. p002-treatment-1: 专业取胎盘及针对缺失成分处理。 | p003-treatment-3: 确诊/高度疑似子宫破裂，由专业团队手术救治；不把一般PPH都指向切除子宫。"
       },
       {
         "source_id": "pph-cleveland",
@@ -1833,6 +2085,21 @@
         ],
         "relation": "supports",
         "assessment": "按检查/临床情况选择血液成分，非全套例行给药。"
+      },
+      {
+        "source_id": "p003-msf-uterine-rupture",
+        "source_metadata_sha256": "d0108f9167e1ecd777b6fb81dc080acb3347b1825f7423d3b66dc01a3dba8aac",
+        "locator": "3.3.3 emergency laparotomy/repair/hysterectomy/resuscitation",
+        "source_version": "2026-10-03 urllib official HTML actually read:3.3.1 risk/obstruction;3.3.2 intrapartum and postpartum recognition;3.3.3 surgery, resuscitation, future rupture. Web tool405 bypassed using official direct request; no figure interpretation. Figure adapted Primary Surgery; not a separate independent source.",
+        "accessed_at": "2026-10-03",
+        "population": "确诊/高度疑似子宫破裂，由专业团队手术救治；不把一般PPH都指向切除子宫。",
+        "region": "MULTI_REGION",
+        "independence_group": "MSF",
+        "upstream_evidence": [
+          "2026-10-03 urllib official HTML actually read:3.3.1 risk/obstruction;3.3.2 intrapartum and postpartum recognition;3.3.3 surgery, resuscitation, future rupture. Web tool405 bypassed using official direct request; no figure interpretation. Figure adapted Primary Surgery; not a separate independent source."
+        ],
+        "relation": "supports",
+        "assessment": "p003-treatment-3: 确诊/高度疑似子宫破裂，由专业团队手术救治；不把一般PPH都指向切除子宫。"
       }
     ],
     "claims": [
@@ -1945,6 +2212,26 @@
             "assessment": "按检查/临床情况选择血液成分，非全套例行给药。"
           }
         ]
+      },
+      {
+        "id": "p003-treatment-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "如果出血来自子宫破裂，需要紧急手术修补；损伤过重、无法修补时可能需切除子宫，同时支持循环并按需要输血。促宫缩药不能修复裂口。",
+          "en": "Bleeding from uterine rupture requires emergency surgical repair; hysterectomy may be necessary when damage prevents repair. Circulatory support and transfusion as needed proceed alongside surgery. Uterotonics cannot repair the tear."
+        },
+        "supports": [
+          {
+            "source_id": "p003-msf-uterine-rupture",
+            "locator": "3.3.3 emergency laparotomy/repair/hysterectomy/resuscitation",
+            "assessment": "确诊/高度疑似子宫破裂，由专业团队手术救治；不把一般PPH都指向切除子宫。"
+          },
+          {
+            "source_id": "pph-cma-2023",
+            "locator": "处理二(二)4 子宫破裂",
+            "assessment": "确诊/高度疑似子宫破裂，由专业团队手术救治；不把一般PPH都指向切除子宫。"
+          }
+        ]
       }
     ],
     "independence": {
@@ -1953,18 +2240,27 @@
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "none",
-      "resolution": "WHO2025 therapeutic early-response threshold differs in purpose from CN2023/olderUK classification. Evidence predominantly vaginal; caesarean evidence less certain. UKNICE carboprost-asthma avoid recommendation and manufacturer caution retain different wording. Local clinicians individualize; none is a home dosing/waiting rule."
+      "status": "regional_difference",
+      "resolution": "Age, cause, pregnancy and local professional protocols retain their stated scope. Shared evidence and older sources are identified; no incompatible regional numeric treatment protocols combined."
     },
     "adversarial_review": {
       "status": "accepted",
       "author": "/root/astra_p0_maternal",
-      "reviewer": "/root/astra_p0_neurology",
+      "reviewer": "/root",
       "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "b1-acute-pph-east-kent",
         "b1-acute-pph-nice-intrapartum",
         "b1-acute-pph-rcog",
+        "p003-aha-international-2020",
+        "p003-masac-265",
+        "p003-msf-obstructed-labour",
+        "p003-msf-uterine-rupture",
+        "p003-nhc-rare-aha-2025",
+        "p003-rcog-birth-after-caesarean",
+        "p003-rcog-inherited-bleeding-71",
+        "p003-who-obstetric-fistula",
+        "p003-who-obstructed-labour",
         "pph-carboprost-smpc",
         "pph-cdc-maternal-warning-signs",
         "pph-cleveland",
@@ -1975,26 +2271,30 @@
         "pph-nata-thromboprophylaxis",
         "pph-nice-asthma-guideline",
         "pph-norfolk-postnatal-emergency",
+        "pph-north-memorial",
         "pph-who-2025-guideline"
       ],
-      "findings": [
-        {
-          "id": "PPH-ACTION-LABEL",
-          "status": "resolved",
-          "finding": "New treatment and medication paragraphs expressed treatment actions but were initially labelled explanation.",
-          "resolution": "Author relabelled p002-treatment-1 and p002-medications-1 as action. Retained placental management has CMA/NICE; component selection and medicine roles have CMA/NATA."
-        },
-        {
-          "id": "PPH-SINGLE-SOURCE-RECOMMENDATION",
-          "status": "resolved",
-          "finding": "NICE-only recommendation against routine IV uterotonics solely for retained placenta lacked independent support for that exact prescribing restriction.",
-          "resolution": "Author removed that clause; retained causal management and TXA-versus-component explanation supported by CMA/NATA. Targeted final text reread in both languages."
-        }
+      "inherited_source_ids": [
+        "b1-acute-pph-east-kent",
+        "b1-acute-pph-nice-intrapartum",
+        "b1-acute-pph-rcog",
+        "pph-carboprost-smpc",
+        "pph-cdc-maternal-warning-signs",
+        "pph-cleveland",
+        "pph-cochrane-txa-caesarean",
+        "pph-cochrane-txa-vaginal",
+        "pph-ebcog-2025",
+        "pph-nata-thromboprophylaxis",
+        "pph-nice-asthma-guideline",
+        "pph-norfolk-postnatal-emergency",
+        "pph-north-memorial",
+        "pph-who-2025-guideline"
       ],
-      "resolution": "Accepted as an editorial content candidate after targeted revisions, not clinician sign-off and not blanket ICD completion. Six changed sections read in Chinese and English; shared action conditions match. Existing blood-loss thresholds are attributed and not home waiting targets; new third-stage advice explicitly prohibits waiting for a minute threshold. No new dose, transfusion ratio or fixed follow-up schedule. All fourteen records and source hashes checked, including eight unchanged records."
+      "findings": [],
+      "resolution": "Accept exact candidate for editorial cross-check and scoped ICD integration; no clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-02-postpartum-hemorrhage-independent.json",
+    "review_report": "reports/p0-03-postpartum-hemorrhage-independent.json",
     "prior_accepted_review": {
       "status": "accepted",
       "author": "/root/retinal_targeted",
@@ -2863,11 +3163,11 @@
       "id": "postpartum-hemorrhage",
       "section": "special_populations"
     },
-    "content_sha256": "2be7ae5b75566631e5a622590472baf00a0f17baef936122283a931c257cf18e",
+    "content_sha256": "fd8049b56719cfe836fa8b02e1e18d8871551cf991485bebfba5238fa9a66832",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/priority_medical_rules",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -2966,6 +3266,36 @@
         ],
         "relation": "supports",
         "assessment": "special_populations-4: Asthmacaution independently."
+      },
+      {
+        "source_id": "p003-masac-265",
+        "source_metadata_sha256": "065d76951655ef28c3ea38382b7c15969fff6dc7d7b6df38b8c3a20c2ffe082b",
+        "locator": "Preconception;Pregnancy Management;Postpartum Management",
+        "source_version": "2021-03-04",
+        "accessed_at": "2026-10-03",
+        "population": "前半适用已知遗传病专科协作；后半严格限血友病A/B携带者，不假称已查证全部VWD细节。",
+        "region": "US",
+        "independence_group": "NHF-MASAC",
+        "upstream_evidence": [
+          "实际阅读官方HTML对应章节；urllib获取官方PDF并以pdftotext读取首面核日期; Preconception Diagnosis and Genetic Counseling, HTML lines 238–245; Pregnancy Management, lines 248–254; Labor and Delivery Management, lines 257–264; Postpartum Management to Prevent Bleeding, lines 289–292; References, lines 304–322; Approved2021-02-20; adopted2021-03-04. Original material was read in this agent session, not using preparation as a medical source."
+        ],
+        "relation": "supports",
+        "assessment": "p003-special_populations-8: 前半适用已知遗传病专科协作；后半严格限血友病A/B携带者，不假称已查证全部VWD细节。"
+      },
+      {
+        "source_id": "p003-rcog-inherited-bleeding-71",
+        "source_metadata_sha256": "b7ca32320519f8838621d81c109925d7eb6093ac785e1af4a6bb2404c43b0d37",
+        "locator": "landing Description;PDF pages3–4 prepregnancy and antenatal;page6 postdischarge",
+        "source_version": "实际阅读RCOG官方落地页及其Wiley PDF链接返回的文字定位；只读下列范围，未声称通读71页。后续页获取超时、urllib 403，故未把未读VWD细节作为已核实证据。; RCOG landing Summary/Version history/Description, lines 120–127; PDF physical page 1: title and date; PDF physical page 3/e195: haemophilia prepregnancy management and genetic counselling; PDF physical page 4/e196: multidisciplinary antenatal care and factor monitoring; PDF physical page 6/e198: postpartum management, assay-guided management and post-discharge haemophilia-centre contact; April2017. UKHCDO prior guidance shared with MASAC; no independent study replication claimed.",
+        "accessed_at": "2026-10-03",
+        "population": "前半适用已知遗传病专科协作；后半严格限血友病A/B携带者，不假称已查证全部VWD细节。",
+        "region": "GB",
+        "independence_group": "UK-RCOG",
+        "upstream_evidence": [
+          "实际阅读RCOG官方落地页及其Wiley PDF链接返回的文字定位；只读下列范围，未声称通读71页。后续页获取超时、urllib 403，故未把未读VWD细节作为已核实证据。; RCOG landing Summary/Version history/Description, lines 120–127; PDF physical page 1: title and date; PDF physical page 3/e195: haemophilia prepregnancy management and genetic counselling; PDF physical page 4/e196: multidisciplinary antenatal care and factor monitoring; PDF physical page 6/e198: postpartum management, assay-guided management and post-discharge haemophilia-centre contact; April2017. UKHCDO prior guidance shared with MASAC; no independent study replication claimed."
+        ],
+        "relation": "supports",
+        "assessment": "p003-special_populations-8: 前半适用已知遗传病专科协作；后半严格限血友病A/B携带者，不假称已查证全部VWD细节。"
       }
     ],
     "claims": [
@@ -3073,6 +3403,26 @@
             "assessment": "Asthmacaution independently."
           }
         ]
+      },
+      {
+        "id": "p003-special_populations-8",
+        "kind": "action",
+        "text": {
+          "zh-CN": "已知遗传性出血病者，计划再次怀孕时应与血液科和产科共同讨论照护；如果是血友病A或B携带者，产后出院后也应保持专科联系，由团队结合凝血因子检测安排后续处理。",
+          "en": "With a known inherited bleeding disorder, discuss care jointly with hematology and obstetrics when planning another pregnancy. If you carry hemophilia A or B, remain in specialist contact after postpartum discharge, with continuing care guided by clotting-factor tests."
+        },
+        "supports": [
+          {
+            "source_id": "p003-masac-265",
+            "locator": "Preconception;Pregnancy Management;Postpartum Management",
+            "assessment": "前半适用已知遗传病专科协作；后半严格限血友病A/B携带者，不假称已查证全部VWD细节。"
+          },
+          {
+            "source_id": "p003-rcog-inherited-bleeding-71",
+            "locator": "landing Description;PDF pages3–4 prepregnancy and antenatal;page6 postdischarge",
+            "assessment": "前半适用已知遗传病专科协作；后半严格限血友病A/B携带者，不假称已查证全部VWD细节。"
+          }
+        ]
       }
     ],
     "independence": {
@@ -3082,17 +3432,26 @@
     },
     "dispute": {
       "status": "regional_difference",
-      "resolution": "WHO2025 therapeutic early-response threshold differs in purpose from CN2023/olderUK classification. Evidence predominantly vaginal; caesarean evidence less certain. UKNICE carboprost-asthma avoid recommendation and manufacturer caution retain different wording. Local clinicians individualize; none is a home dosing/waiting rule."
+      "resolution": "Age, cause, pregnancy and local professional protocols retain their stated scope. Shared evidence and older sources are identified; no incompatible regional numeric treatment protocols combined."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/retinal_targeted",
-      "reviewer": "/root/priority_medical_rules",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "b1-acute-pph-east-kent",
         "b1-acute-pph-nice-intrapartum",
         "b1-acute-pph-rcog",
+        "p003-aha-international-2020",
+        "p003-masac-265",
+        "p003-msf-obstructed-labour",
+        "p003-msf-uterine-rupture",
+        "p003-nhc-rare-aha-2025",
+        "p003-rcog-birth-after-caesarean",
+        "p003-rcog-inherited-bleeding-71",
+        "p003-who-obstetric-fistula",
+        "p003-who-obstructed-labour",
         "pph-carboprost-smpc",
         "pph-cdc-maternal-warning-signs",
         "pph-cleveland",
@@ -3106,30 +3465,27 @@
         "pph-north-memorial",
         "pph-who-2025-guideline"
       ],
-      "findings": [
-        {
-          "id": "PPH-01",
-          "status": "resolved",
-          "claim_ids": [
-            "diagnosis-4"
-          ],
-          "finding": "CMA hypovolemia criterion was rendered as symptoms AND signs in both languages; original uses OR.",
-          "resolution": "Both languages now say symptoms OR signs, preserving the independent alternative to volume criteria. Confirmed against CMA definition47 and the claim/body binding."
-        },
-        {
-          "id": "PPH-02",
-          "status": "resolved",
-          "claim_ids": [
-            "diet-2"
-          ],
-          "finding": "The assigned East Kent Eating for iron passage did not list eggs despite the support assessment.",
-          "resolution": "Removed only eggs from both language examples and corresponding claim/section assessments. Meat, pulses and leafy vegetables remain supported; no unnecessary new source added."
-        }
+      "inherited_source_ids": [
+        "b1-acute-pph-east-kent",
+        "b1-acute-pph-nice-intrapartum",
+        "b1-acute-pph-rcog",
+        "pph-carboprost-smpc",
+        "pph-cdc-maternal-warning-signs",
+        "pph-cleveland",
+        "pph-cochrane-txa-caesarean",
+        "pph-cochrane-txa-vaginal",
+        "pph-ebcog-2025",
+        "pph-nata-thromboprophylaxis",
+        "pph-nice-asthma-guideline",
+        "pph-norfolk-postnatal-emergency",
+        "pph-north-memorial",
+        "pph-who-2025-guideline"
       ],
-      "resolution": "Accepted after one independent full claim/source pass and a targeted recheck of two minimal corrections. This is source-based editorial verification by a separate agent, not clinician certification. Clinical review remains false; ICD semantic mapping and release integration remain separate."
+      "findings": [],
+      "resolution": "Accept exact candidate for editorial cross-check and scoped ICD integration; no clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-postpartum-hemorrhage-independent.json"
+    "review_report": "reports/p0-03-postpartum-hemorrhage-independent.json"
   },
   {
     "id": "p001-postpartum-hemorrhage-prognosis_followup",
@@ -3138,11 +3494,11 @@
       "id": "postpartum-hemorrhage",
       "section": "prognosis_followup"
     },
-    "content_sha256": "ab8d3fc6eb9fb6ff14c3322ebc164bd33cb1cd23b1ff51f69a6fa3ae8daa8ad7",
+    "content_sha256": "ee785215a7f9d133bd988b23087d9ed01764286da9207c5ffbdebbbb553ed8b5",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/priority_medical_rules",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -3209,6 +3565,96 @@
         ],
         "relation": "supports",
         "assessment": "prognosis_followup-4: Higherrecurrencerisknotinevitableandproviderplanning."
+      },
+      {
+        "source_id": "p003-msf-uterine-rupture",
+        "source_metadata_sha256": "d0108f9167e1ecd777b6fb81dc080acb3347b1825f7423d3b66dc01a3dba8aac",
+        "locator": "3.3.3 subsequent pregnancy risk and counselling",
+        "source_version": "2026-10-03 urllib official HTML actually read:3.3.1 risk/obstruction;3.3.2 intrapartum and postpartum recognition;3.3.3 surgery, resuscitation, future rupture. Web tool405 bypassed using official direct request; no figure interpretation. Figure adapted Primary Surgery; not a separate independent source.",
+        "accessed_at": "2026-10-03",
+        "population": "子宫破裂修补后保留子宫的人群；不套用普通既往剖宫产的顺产成功率。",
+        "region": "MULTI_REGION",
+        "independence_group": "MSF",
+        "upstream_evidence": [
+          "2026-10-03 urllib official HTML actually read:3.3.1 risk/obstruction;3.3.2 intrapartum and postpartum recognition;3.3.3 surgery, resuscitation, future rupture. Web tool405 bypassed using official direct request; no figure interpretation. Figure adapted Primary Surgery; not a separate independent source."
+        ],
+        "relation": "supports",
+        "assessment": "p003-prognosis_followup-4: 子宫破裂修补后保留子宫的人群；不套用普通既往剖宫产的顺产成功率。"
+      },
+      {
+        "source_id": "p003-rcog-birth-after-caesarean",
+        "source_metadata_sha256": "fcb49d8b142c623dd48c6eee7eaa922762ee64f5c1ef94067d0db5f3df7e1c4a",
+        "locator": "PDF page2 previous uterine rupture; complex scar assessment with prior operation details",
+        "source_version": "October2015 edition2 (exact day unavailable), original PDF physical pages1–5 actually read. Page2 contraindication of planned VBAC with previous rupture and case-by-case senior assessment of complex scars. Historical guidance supports specialist future-birth discussion only; no timing or numeric recurrence estimate imported.",
+        "accessed_at": "2026-10-03",
+        "population": "子宫破裂修补后保留子宫的人群；不套用普通既往剖宫产的顺产成功率。",
+        "region": "GB",
+        "independence_group": "UK-RCOG",
+        "upstream_evidence": [
+          "October2015 edition2 (exact day unavailable), original PDF physical pages1–5 actually read. Page2 contraindication of planned VBAC with previous rupture and case-by-case senior assessment of complex scars. Historical guidance supports specialist future-birth discussion only; no timing or numeric recurrence estimate imported."
+        ],
+        "relation": "supports",
+        "assessment": "p003-prognosis_followup-4: 子宫破裂修补后保留子宫的人群；不套用普通既往剖宫产的顺产成功率。"
+      },
+      {
+        "source_id": "p003-aha-international-2020",
+        "source_metadata_sha256": "14f91cc4820f895823aa794605991cc3e4c6901ce6b80f97f1b2a6581c9de4ab",
+        "locator": "Follow-up216–219",
+        "source_version": "2020; accepted2020-04-07. Original full relevant HTML read:Introduction58–63;Diagnosis82–105;Hemostatic treatment109–126;Follow-up216–219;Pregnancy-associated AHA220–223;disclosures229. Consensus with EACH2/GTH registry evidence, editorial support funded by Novo Nordisk. Not independent trial replication.",
+        "accessed_at": "2026-10-03",
+        "population": "确诊AHA的缓解期/治疗期随访；不推广AHA检测间隔到所有凝血病。",
+        "region": "MULTI_REGION",
+        "independence_group": "AHA-INTERNATIONAL-2020",
+        "upstream_evidence": [
+          "2020; accepted2020-04-07. Original full relevant HTML read:Introduction58–63;Diagnosis82–105;Hemostatic treatment109–126;Follow-up216–219;Pregnancy-associated AHA220–223;disclosures229. Consensus with EACH2/GTH registry evidence, editorial support funded by Novo Nordisk. Not independent trial replication."
+        ],
+        "relation": "supports",
+        "assessment": "p003-prognosis_followup-7: 确诊AHA的缓解期/治疗期随访；不推广AHA检测间隔到所有凝血病。"
+      },
+      {
+        "source_id": "p003-nhc-rare-aha-2025",
+        "source_metadata_sha256": "c57b8b8bbd51d547a130117e877dd16524cfae6cea945d496d813a4528f96398",
+        "locator": "physical page13/printed9 并发症监测",
+        "source_version": "2025 release, precise issue day not confirmed. Official PDF downloaded in memory, pdftotext physical pages9 and11–14 actually read:chapter2 overview/diagnostics;therapy;pregnancy/lactation;complication monitoring;references. Printed pages5,7–10. Independently formulated China guidance cites international2020, EACH2 and Chinese CARE/local studies, so underlying evidence overlaps. Treatment availability and pregnancy/lactation regimens differ; do not combine drug prescriptions.",
+        "accessed_at": "2026-10-03",
+        "population": "确诊AHA的缓解期/治疗期随访；不推广AHA检测间隔到所有凝血病。",
+        "region": "CN",
+        "independence_group": "CN-RARE-DISEASE-GUIDELINE",
+        "upstream_evidence": [
+          "2025 release, precise issue day not confirmed. Official PDF downloaded in memory, pdftotext physical pages9 and11–14 actually read:chapter2 overview/diagnostics;therapy;pregnancy/lactation;complication monitoring;references. Printed pages5,7–10. Independently formulated China guidance cites international2020, EACH2 and Chinese CARE/local studies, so underlying evidence overlaps. Treatment availability and pregnancy/lactation regimens differ; do not combine drug prescriptions."
+        ],
+        "relation": "supports",
+        "assessment": "p003-prognosis_followup-7: 确诊AHA的缓解期/治疗期随访；不推广AHA检测间隔到所有凝血病。"
+      },
+      {
+        "source_id": "p003-msf-obstructed-labour",
+        "source_metadata_sha256": "532c79685a1fafe6047e96361e29f284594873ea7eb567771d27a7842a4b430d",
+        "locator": "7.2.3 compression injuries;7.2.5 fistula assessment and referral for surgical treatment",
+        "source_version": "Official HTML actually read by urllib:7.2 definition;7.2.2 causes;7.2.3 complications;7.2.4 atony-related PPH;7.2.5 fistula. Shares WHO fistula guidance; counted with MSF3.3 as one origin. Does not import >24h definition as a waiting rule, fluid targets or procedures.",
+        "accessed_at": "2026-10-03",
+        "population": "Postpartum people after obstructed labour, with suspected fistula or infection.",
+        "region": "MULTI_REGION",
+        "independence_group": "MSF",
+        "upstream_evidence": [
+          "MSF cites WHO2006 fistula management; independently written sources are not independent primary trials."
+        ],
+        "relation": "supports",
+        "assessment": "p003-prognosis-followup-fistula: subgroup-specific injury and continued care."
+      },
+      {
+        "source_id": "p003-who-obstetric-fistula",
+        "source_metadata_sha256": "b0538d240f5da601a8a2d1d79cacbd72d4397dc5ba96f1e7201e595cff83ba13",
+        "locator": "Introduction83–84; suffering119–121; treatment access140–149; surgical repair155–157",
+        "source_version": "2018-02-19",
+        "accessed_at": "2026-10-03",
+        "population": "Postpartum people after obstructed labour, with suspected fistula or infection.",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "MSF cites WHO2006 fistula management; independently written sources are not independent primary trials."
+        ],
+        "relation": "supports",
+        "assessment": "p003-prognosis-followup-fistula: subgroup-specific injury and continued care."
       }
     ],
     "claims": [
@@ -3286,6 +3732,66 @@
             "assessment": "Higherrecurrencerisknotinevitableandproviderplanning."
           }
         ]
+      },
+      {
+        "id": "p003-prognosis_followup-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "曾发生子宫破裂而保留子宫者，今后妊娠存在再次破裂风险；计划再次怀孕时，应带上手术记录，与产科讨论后续妊娠及分娩方案。",
+          "en": "If the uterus was preserved after rupture, a future pregnancy carries a risk of another rupture. When planning pregnancy, take the operative records to an obstetric consultation to discuss pregnancy and birth planning."
+        },
+        "supports": [
+          {
+            "source_id": "p003-msf-uterine-rupture",
+            "locator": "3.3.3 subsequent pregnancy risk and counselling",
+            "assessment": "子宫破裂修补后保留子宫的人群；不套用普通既往剖宫产的顺产成功率。"
+          },
+          {
+            "source_id": "p003-rcog-birth-after-caesarean",
+            "locator": "PDF page2 previous uterine rupture; complex scar assessment with prior operation details",
+            "assessment": "子宫破裂修补后保留子宫的人群；不套用普通既往剖宫产的顺产成功率。"
+          }
+        ]
+      },
+      {
+        "id": "p003-prognosis_followup-7",
+        "kind": "action",
+        "text": {
+          "zh-CN": "已确诊获得性血友病A者，即使出血停止或病情缓解，也需按血液科方案继续复查凝血因子，并监测治疗不良反应。复查安排随病种和治疗阶段而定，不能用普通产后复诊代替。",
+          "en": "With confirmed acquired hemophilia A, bleeding control or remission does not end hematology follow-up: continue the planned factor tests and monitoring for treatment adverse effects. Review depends on the disorder and treatment stage; routine postnatal review does not replace it."
+        },
+        "supports": [
+          {
+            "source_id": "p003-aha-international-2020",
+            "locator": "Follow-up216–219",
+            "assessment": "确诊AHA的缓解期/治疗期随访；不推广AHA检测间隔到所有凝血病。"
+          },
+          {
+            "source_id": "p003-nhc-rare-aha-2025",
+            "locator": "physical page13/printed9 并发症监测",
+            "assessment": "确诊AHA的缓解期/治疗期随访；不推广AHA检测间隔到所有凝血病。"
+          }
+        ]
+      },
+      {
+        "id": "p003-prognosis-followup-fistula",
+        "kind": "action",
+        "text": {
+          "zh-CN": "梗阻性分娩后，若持续漏尿或出现阴道漏出尿液、粪便，应联系产科进一步检查：可能是膀胱或直肠与阴道之间形成了异常通道，称为产科瘘。需要由有经验的团队评估和安排治疗，部分情况需要手术修补。",
+          "en": "After obstructed labour, contact the maternity team for assessment of persistent urine leakage or urine or stool passing through the vagina. An abnormal connection between the bladder or rectum and the vagina, called an obstetric fistula, may be responsible. An experienced team should assess and arrange treatment; some cases need surgical repair."
+        },
+        "supports": [
+          {
+            "source_id": "p003-msf-obstructed-labour",
+            "locator": "7.2.3 compression injuries;7.2.5 fistula assessment and referral for surgical treatment",
+            "assessment": "Obstructed-labour subgroup; no fixed catheter, fluid or waiting prescription."
+          },
+          {
+            "source_id": "p003-who-obstetric-fistula",
+            "locator": "Introduction83–84; suffering119–121; treatment access140–149; surgical repair155–157",
+            "assessment": "Obstructed-labour subgroup; no fixed catheter, fluid or waiting prescription."
+          }
+        ]
       }
     ],
     "independence": {
@@ -3294,18 +3800,27 @@
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "none",
-      "resolution": "WHO2025 therapeutic early-response threshold differs in purpose from CN2023/olderUK classification. Evidence predominantly vaginal; caesarean evidence less certain. UKNICE carboprost-asthma avoid recommendation and manufacturer caution retain different wording. Local clinicians individualize; none is a home dosing/waiting rule."
+      "status": "regional_difference",
+      "resolution": "Age, cause, pregnancy and local professional protocols retain their stated scope. Shared evidence and older sources are identified; no incompatible regional numeric treatment protocols combined."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/retinal_targeted",
-      "reviewer": "/root/priority_medical_rules",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_maternal",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "b1-acute-pph-east-kent",
         "b1-acute-pph-nice-intrapartum",
         "b1-acute-pph-rcog",
+        "p003-aha-international-2020",
+        "p003-masac-265",
+        "p003-msf-obstructed-labour",
+        "p003-msf-uterine-rupture",
+        "p003-nhc-rare-aha-2025",
+        "p003-rcog-birth-after-caesarean",
+        "p003-rcog-inherited-bleeding-71",
+        "p003-who-obstetric-fistula",
+        "p003-who-obstructed-labour",
         "pph-carboprost-smpc",
         "pph-cdc-maternal-warning-signs",
         "pph-cleveland",
@@ -3319,30 +3834,27 @@
         "pph-north-memorial",
         "pph-who-2025-guideline"
       ],
-      "findings": [
-        {
-          "id": "PPH-01",
-          "status": "resolved",
-          "claim_ids": [
-            "diagnosis-4"
-          ],
-          "finding": "CMA hypovolemia criterion was rendered as symptoms AND signs in both languages; original uses OR.",
-          "resolution": "Both languages now say symptoms OR signs, preserving the independent alternative to volume criteria. Confirmed against CMA definition47 and the claim/body binding."
-        },
-        {
-          "id": "PPH-02",
-          "status": "resolved",
-          "claim_ids": [
-            "diet-2"
-          ],
-          "finding": "The assigned East Kent Eating for iron passage did not list eggs despite the support assessment.",
-          "resolution": "Removed only eggs from both language examples and corresponding claim/section assessments. Meat, pulses and leafy vegetables remain supported; no unnecessary new source added."
-        }
+      "inherited_source_ids": [
+        "b1-acute-pph-east-kent",
+        "b1-acute-pph-nice-intrapartum",
+        "b1-acute-pph-rcog",
+        "pph-carboprost-smpc",
+        "pph-cdc-maternal-warning-signs",
+        "pph-cleveland",
+        "pph-cochrane-txa-caesarean",
+        "pph-cochrane-txa-vaginal",
+        "pph-ebcog-2025",
+        "pph-nata-thromboprophylaxis",
+        "pph-nice-asthma-guideline",
+        "pph-norfolk-postnatal-emergency",
+        "pph-north-memorial",
+        "pph-who-2025-guideline"
       ],
-      "resolution": "Accepted after one independent full claim/source pass and a targeted recheck of two minimal corrections. This is source-based editorial verification by a separate agent, not clinician certification. Clinical review remains false; ICD semantic mapping and release integration remain separate."
+      "findings": [],
+      "resolution": "Accept exact candidate for editorial cross-check and scoped ICD integration; no clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-postpartum-hemorrhage-independent.json"
+    "review_report": "reports/p0-03-postpartum-hemorrhage-independent.json"
   },
   {
     "id": "p001-postpartum-hemorrhage-complications",

@@ -41,35 +41,45 @@
       },
       "primary_domain": "hematologic_immune",
       "source_ids": [
-        "anaphylaxis-p0-aaaai",
-        "anaphylaxis-p0-ascia",
-        "anaphylaxis-p0-adam",
-        "anaphylaxis-p0-rcuk",
-        "anaphylaxis-p0-foodtest",
         "anaphylaxis-nhs",
-        "anaphylaxis-p0-drug",
-        "anaphylaxis-p0-exercise",
-        "anaphylaxis-p0-wao",
-        "anaphylaxis-p0-mcas",
-        "anaphylaxis-p0-acaai-test",
-        "anaphylaxis-p0-fda-neffy",
-        "anaphylaxis-p0-intolerance",
-        "anaphylaxis-p0-food",
-        "anaphylaxis-p0-venom",
-        "anaphylaxis-p0-exercise-acaai",
-        "anaphylaxis-p0-pregnancy",
-        "anaphylaxis-p0-wms",
-        "anaphylaxis-p0-ontario-bls",
         "anaphylaxis-p0-02-cold-aad",
         "anaphylaxis-p0-02-cold-bad",
         "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
         "anaphylaxis-p0-02-mast-ascia",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
         "anaphylaxis-p0-02-mast-jtf2023",
         "anaphylaxis-p0-02-mast-orphan",
-        "anaphylaxis-p0-02-mast-algorithm",
-        "anaphylaxis-p0-02-mast-dgaki",
-        "anaphylaxis-p0-02-cold-sfd",
-        "anaphylaxis-p0-02-mast-brazil"
+        "anaphylaxis-p0-03-ascia-mast-cell-disorders-2025",
+        "anaphylaxis-p0-03-bad-urticaria-pigmentosa-2020",
+        "anaphylaxis-p0-03-chlorhexidine-ascia",
+        "anaphylaxis-p0-03-chlorhexidine-mhra",
+        "anaphylaxis-p0-03-hives-ascia",
+        "anaphylaxis-p0-03-latex-aaaai",
+        "anaphylaxis-p0-03-latex-ascia",
+        "anaphylaxis-p0-03-serum-rch",
+        "anaphylaxis-p0-03-serum-who",
+        "anaphylaxis-p0-03-spd-mastocytosis-2018",
+        "anaphylaxis-p0-aaaai",
+        "anaphylaxis-p0-acaai-test",
+        "anaphylaxis-p0-adam",
+        "anaphylaxis-p0-ascia",
+        "anaphylaxis-p0-drug",
+        "anaphylaxis-p0-exercise",
+        "anaphylaxis-p0-exercise-acaai",
+        "anaphylaxis-p0-fda-neffy",
+        "anaphylaxis-p0-food",
+        "anaphylaxis-p0-foodtest",
+        "anaphylaxis-p0-intolerance",
+        "anaphylaxis-p0-mcas",
+        "anaphylaxis-p0-ontario-bls",
+        "anaphylaxis-p0-pregnancy",
+        "anaphylaxis-p0-rcuk",
+        "anaphylaxis-p0-venom",
+        "anaphylaxis-p0-wao",
+        "anaphylaxis-p0-wms"
       ],
       "path": "data/conditions/anaphylaxis.json",
       "status": "editorial_draft"
@@ -129,22 +139,24 @@
       },
       "primary_domain": "cardiovascular",
       "source_ids": [
-        "ad-mayo-symptoms",
-        "ad-cleveland",
-        "ad-mayo-treatment",
-        "ad-south-england-sop",
+        "ad-acc-activity",
         "ad-acc-family",
-        "ad-nhs-beta",
-        "ad-nhlbi-living",
         "ad-acc-guideline",
-        "ad-mayo-beta",
-        "ad-south-tees-beta",
-        "ad-esc-pregnancy-2025",
         "ad-acc-medical-extract",
-        "ad-nhlbi-food",
-        "ad-niddk-ckd-food",
+        "ad-cleveland",
+        "ad-esc-2024",
+        "ad-esc-pregnancy-2025",
         "ad-gstt-recovery",
-        "ad-acc-activity"
+        "ad-mayo-beta",
+        "ad-mayo-symptoms",
+        "ad-mayo-treatment",
+        "ad-msd-professional",
+        "ad-nhlbi-food",
+        "ad-nhlbi-living",
+        "ad-nhs-beta",
+        "ad-niddk-ckd-food",
+        "ad-south-england-sop",
+        "ad-south-tees-beta"
       ],
       "path": "data/conditions/aortic-dissection.json",
       "status": "editorial_draft"
@@ -159,12 +171,87 @@
       "primary_domain": "gastrointestinal",
       "source_ids": [
         "appendicitis-nhs",
-        "appendicitis-secondary",
-        "a-uti-nhs",
-        "a-stones-nhs",
-        "a-ectopic-nhs"
+        "p003-app-acs",
+        "p003-app-antibiotic-nhs",
+        "p003-app-antibiotic-rf",
+        "p003-app-causes",
+        "p003-app-children",
+        "p003-app-codeine",
+        "p003-app-diagnosis",
+        "p003-app-facts",
+        "p003-app-mayo-causes",
+        "p003-app-mayo-treatment",
+        "p003-app-old-diet",
+        "p003-app-sages",
+        "p003-app-treatment",
+        "p003-app-wses"
       ],
       "path": "data/conditions/appendicitis.json",
+      "status": "editorial_draft"
+    },
+    {
+      "id": "ards",
+      "kind": "condition",
+      "names": {
+        "zh-CN": "急性呼吸窘迫综合征（ARDS）",
+        "en": "Acute respiratory distress syndrome (ARDS)"
+      },
+      "primary_domain": "respiratory",
+      "source_ids": [
+        "ards-p0-03-ashp-prednisone",
+        "ards-p0-03-ats-2017",
+        "ards-p0-03-ats-2024",
+        "ards-p0-03-ats-nutrition",
+        "ards-p0-03-ats-patient",
+        "ards-p0-03-esicm-2023",
+        "ards-p0-03-espen-nutrition",
+        "ards-p0-03-mayo-causes",
+        "ards-p0-03-mayo-treatment",
+        "ards-p0-03-nhlbi-causes",
+        "ards-p0-03-nhlbi-diagnosis",
+        "ards-p0-03-nhlbi-newborn",
+        "ards-p0-03-nhlbi-recovery",
+        "ards-p0-03-nhlbi-symptoms",
+        "ards-p0-03-nhlbi-treatment",
+        "ards-p0-03-nhs",
+        "ards-p0-03-nhs-pregnancy",
+        "ards-p0-03-nhs-steroids",
+        "ards-p0-03-palicc-2",
+        "ards-p0-03-sccm-steroids",
+        "ards-p0-03-uktis-steroids"
+      ],
+      "path": "data/conditions/ards.json",
+      "status": "editorial_draft"
+    },
+    {
+      "id": "asphyxiation",
+      "kind": "condition",
+      "names": {
+        "zh-CN": "窒息（机械性与环境性）",
+        "en": "Asphyxiation (mechanical and environmental)"
+      },
+      "primary_domain": "injury_toxicology",
+      "source_ids": [
+        "asphyxiation-p0-03-aap-sleep",
+        "asphyxiation-p0-03-anzcor-airway",
+        "asphyxiation-p0-03-arc-respiratory",
+        "asphyxiation-p0-03-arc-unresponsive",
+        "asphyxiation-p0-03-cleveland",
+        "asphyxiation-p0-03-east-pregnancy",
+        "asphyxiation-p0-03-glos-neck",
+        "asphyxiation-p0-03-hampshire",
+        "asphyxiation-p0-03-hse-confined",
+        "asphyxiation-p0-03-nichd-reduce",
+        "asphyxiation-p0-03-nichd-sleep",
+        "asphyxiation-p0-03-niosh-confined",
+        "asphyxiation-p0-03-nsw-strangulation",
+        "asphyxiation-p0-03-racgp-strangulation",
+        "asphyxiation-p0-03-rcuk-abcde",
+        "asphyxiation-p0-03-rcuk-bls",
+        "asphyxiation-p0-03-vic-pregnancy",
+        "mi-aha-bls-2025"
+      ],
+      "path": "data/conditions/asphyxiation.json",
       "status": "editorial_draft"
     },
     {
@@ -253,6 +340,69 @@
         "burns-secondary"
       ],
       "path": "data/conditions/burns.json",
+      "status": "editorial_draft"
+    },
+    {
+      "id": "cardiac-arrest",
+      "kind": "condition",
+      "names": {
+        "zh-CN": "心脏骤停",
+        "en": "Cardiac arrest"
+      },
+      "primary_domain": "general",
+      "source_ids": [
+        "mi-nhlbi-food",
+        "p003-ca-aha-als",
+        "p003-ca-aha-bls",
+        "p003-ca-aha-causes",
+        "p003-ca-aha-food",
+        "p003-ca-aha-paeds",
+        "p003-ca-aha-post",
+        "p003-ca-aha-recovery",
+        "p003-ca-aha-special",
+        "p003-ca-amiodarone-label",
+        "p003-ca-msd-ca",
+        "p003-ca-msd-cpr",
+        "p003-ca-nhs-device",
+        "p003-ca-nih-causes",
+        "p003-ca-nih-device",
+        "p003-ca-nih-diagnosis",
+        "p003-ca-nih-life",
+        "p003-ca-nih-overview",
+        "p003-ca-nih-symptoms",
+        "p003-ca-nih-treatment",
+        "p003-ca-rcuk-als",
+        "p003-ca-rcuk-bls",
+        "p003-ca-rcuk-paeds",
+        "p003-ca-rcuk-post",
+        "p003-ca-rcuk-special"
+      ],
+      "path": "data/conditions/cardiac-arrest.json",
+      "status": "editorial_draft"
+    },
+    {
+      "id": "cauda-equina-syndrome",
+      "kind": "condition",
+      "names": {
+        "zh-CN": "马尾综合征",
+        "en": "Cauda equina syndrome"
+      },
+      "primary_domain": "neurologic",
+      "source_ids": [
+        "neuro-aans-cauda",
+        "neuro-aaos-cauda",
+        "neuro-mayo-neurogenic-bowel",
+        "neuro-merck-plexus",
+        "neuro-msktc-bowel",
+        "neuro-nbt-cauda",
+        "neuro-nhs-digestion",
+        "neuro-nhs-gabapentin-about",
+        "neuro-nhs-gabapentin-effects",
+        "neuro-nhs-laxatives",
+        "neuro-royalfree-cauda",
+        "neuro-uclh-nerve-medicines"
+      ],
+      "path": "data/conditions/cauda-equina-syndrome.json",
       "status": "editorial_draft"
     },
     {
@@ -576,6 +726,33 @@
       "status": "editorial_draft"
     },
     {
+      "id": "eclampsia",
+      "kind": "condition",
+      "names": {
+        "zh-CN": "子痫",
+        "en": "Eclampsia"
+      },
+      "primary_domain": "pregnancy_puerperium",
+      "source_ids": [
+        "p003-eclampsia-cdc-first-aid",
+        "p003-eclampsia-cma",
+        "p003-eclampsia-msf",
+        "p003-eclampsia-nhs",
+        "p003-eclampsia-nhs-diet",
+        "p003-eclampsia-nhs-first-aid",
+        "p003-eclampsia-nice",
+        "p003-eclampsia-nice-seizure",
+        "p003-eclampsia-nichd",
+        "p003-eclampsia-rcog-differential",
+        "p003-eclampsia-rcog-patient",
+        "p003-eclampsia-salisbury",
+        "p003-eclampsia-who",
+        "p003-eclampsia-who-diet"
+      ],
+      "path": "data/conditions/eclampsia.json",
+      "status": "editorial_draft"
+    },
+    {
       "id": "ectopic-pregnancy",
       "kind": "condition",
       "names": {
@@ -605,6 +782,30 @@
         "batch-b-skin-hydrocortisone"
       ],
       "path": "data/conditions/eczema.json",
+      "status": "editorial_draft"
+    },
+    {
+      "id": "epiglottitis",
+      "kind": "condition",
+      "names": {
+        "zh-CN": "急性会厌炎",
+        "en": "Acute epiglottitis"
+      },
+      "primary_domain": "ent_oral",
+      "source_ids": [
+        "epiglottitis-p0-03-aap",
+        "epiglottitis-p0-03-antibiotic-cdc",
+        "epiglottitis-p0-03-antibiotic-nhs",
+        "epiglottitis-p0-03-bc",
+        "epiglottitis-p0-03-cleveland",
+        "epiglottitis-p0-03-mayo-care",
+        "epiglottitis-p0-03-mayo-causes",
+        "epiglottitis-p0-03-msd",
+        "epiglottitis-p0-03-nhs",
+        "epiglottitis-p0-03-rch",
+        "epiglottitis-p0-03-staywell"
+      ],
+      "path": "data/conditions/epiglottitis.json",
       "status": "editorial_draft"
     },
     {
@@ -738,7 +939,16 @@
       "source_ids": [
         "batch-b-heat-niosh",
         "heatstroke-nhs",
-        "heatstroke-secondary"
+        "p003-heat-cleveland",
+        "p003-heat-mayo-causes",
+        "p003-heat-mayo-treatment",
+        "p003-heat-medicines",
+        "p003-heat-msd",
+        "p003-heat-nata",
+        "p003-heat-sccm",
+        "p003-heat-who",
+        "p003-heat-wms",
+        "p003-heat-yellow"
       ],
       "path": "data/conditions/heatstroke.json",
       "status": "editorial_draft"
@@ -900,6 +1110,33 @@
       "status": "editorial_draft"
     },
     {
+      "id": "intracerebral-hemorrhage",
+      "kind": "condition",
+      "names": {
+        "zh-CN": "脑内出血",
+        "en": "Intracerebral hemorrhage"
+      },
+      "primary_domain": "neurologic",
+      "source_ids": [
+        "neuro-aha-ich-2022",
+        "neuro-asa-brainstem",
+        "neuro-canada-ich-emergency",
+        "neuro-canada-ich-inpatient",
+        "neuro-canada-ich-prevention",
+        "neuro-canada-stroke-swallowing",
+        "neuro-eso-eans-ich-2025",
+        "neuro-hopkins-stroke-effects",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-sah-s",
+        "stroke-diagnosis-nhs",
+        "stroke-recovery-nhs",
+        "stroke-symptoms-nhs"
+      ],
+      "path": "data/conditions/intracerebral-hemorrhage.json",
+      "status": "editorial_draft"
+    },
+    {
       "id": "iron-deficiency-anemia",
       "kind": "condition",
       "names": {
@@ -1019,6 +1256,17 @@
         "meningitis-nih-cryptococcosis",
         "meningitis-nsw-enterovirus",
         "meningitis-nsw-meningococcal",
+        "meningitis-p0-03-cdc-adeno",
+        "meningitis-p0-03-cdc-gnathostoma",
+        "meningitis-p0-03-cdc-hsv",
+        "meningitis-p0-03-cdc-neurosyphilis",
+        "meningitis-p0-03-cdc-parasite",
+        "meningitis-p0-03-idsa",
+        "meningitis-p0-03-india-adeno",
+        "meningitis-p0-03-mahidol-neurognath",
+        "meningitis-p0-03-merck-recurrent",
+        "meningitis-p0-03-msd-chronic",
+        "meningitis-p0-03-msd-helminth",
         "meningitis-rch-clinical",
         "meningitis-rch-dehydration",
         "meningitis-ukhsa-contacts",
@@ -1077,6 +1325,7 @@
         "mi-mayo-treatment",
         "mi-mayo-vomiting-blood",
         "mi-merck-acs-medications",
+        "mi-msd-acute-2026",
         "mi-nhlbi-causes",
         "mi-nhlbi-diagnosis",
         "mi-nhlbi-food",
@@ -1104,6 +1353,7 @@
         "mi-rcuk-firstaid-2025",
         "mi-sja-cpr",
         "mi-sps-ace-monitoring",
+        "mi-udmi-2026",
         "mi-uhd-cardiac-medicines"
       ],
       "path": "data/conditions/myocardial-infarction.json",
@@ -1288,21 +1538,30 @@
       },
       "primary_domain": "pregnancy_puerperium",
       "source_ids": [
-        "b1-acute-pph-rcog",
-        "pph-cleveland",
-        "pph-cma-2023",
-        "pph-norfolk-postnatal-emergency",
-        "pph-cdc-maternal-warning-signs",
-        "pph-north-memorial",
         "b1-acute-pph-east-kent",
         "b1-acute-pph-nice-intrapartum",
-        "pph-who-2025-guideline",
-        "pph-ebcog-2025",
-        "pph-cochrane-txa-vaginal",
-        "pph-cochrane-txa-caesarean",
-        "pph-nice-asthma-guideline",
+        "b1-acute-pph-rcog",
+        "p003-aha-international-2020",
+        "p003-masac-265",
+        "p003-msf-obstructed-labour",
+        "p003-msf-uterine-rupture",
+        "p003-nhc-rare-aha-2025",
+        "p003-rcog-birth-after-caesarean",
+        "p003-rcog-inherited-bleeding-71",
+        "p003-who-obstetric-fistula",
+        "p003-who-obstructed-labour",
         "pph-carboprost-smpc",
-        "pph-nata-thromboprophylaxis"
+        "pph-cdc-maternal-warning-signs",
+        "pph-cleveland",
+        "pph-cma-2023",
+        "pph-cochrane-txa-caesarean",
+        "pph-cochrane-txa-vaginal",
+        "pph-ebcog-2025",
+        "pph-nata-thromboprophylaxis",
+        "pph-nice-asthma-guideline",
+        "pph-norfolk-postnatal-emergency",
+        "pph-north-memorial",
+        "pph-who-2025-guideline"
       ],
       "path": "data/conditions/postpartum-hemorrhage.json",
       "status": "editorial_draft"
@@ -1410,8 +1669,8 @@
       "id": "retinal-detachment",
       "kind": "condition",
       "names": {
-        "zh-CN": "视网膜脱离",
-        "en": "Retinal detachment"
+        "zh-CN": "视网膜脱离与裂孔",
+        "en": "Retinal detachment and breaks"
       },
       "primary_domain": "ophthalmic",
       "source_ids": [
@@ -1450,7 +1709,10 @@
         "b1-acute-retina-statpearls-exudative",
         "b1-acute-retina-surgery-nei",
         "b1-acute-retina-types-nei",
-        "b1-acute-retina-vitrectomy-nei"
+        "b1-acute-retina-vitrectomy-nei",
+        "p003-retina-asrs-tears",
+        "p003-retina-atrophic",
+        "p003-retina-moorfields-tears"
       ],
       "path": "data/conditions/retinal-detachment.json",
       "status": "editorial_draft"
@@ -1526,6 +1788,27 @@
       "status": "editorial_draft"
     },
     {
+      "id": "severe-dengue",
+      "kind": "condition",
+      "names": {
+        "zh-CN": "重症登革热",
+        "en": "Severe dengue"
+      },
+      "primary_domain": "hematologic_immune",
+      "source_ids": [
+        "severe-dengue-p0-03-cda",
+        "severe-dengue-p0-03-cdc-care",
+        "severe-dengue-p0-03-cdc-tests",
+        "severe-dengue-p0-03-hsajb",
+        "severe-dengue-p0-03-india2023",
+        "severe-dengue-p0-03-nhs",
+        "severe-dengue-p0-03-sg2026",
+        "severe-dengue-p0-03-who"
+      ],
+      "path": "data/conditions/severe-dengue.json",
+      "status": "editorial_draft"
+    },
+    {
       "id": "shingles",
       "kind": "condition",
       "names": {
@@ -1556,6 +1839,26 @@
         "ibuprofen-adult-safety-nhs"
       ],
       "path": "data/conditions/sinusitis.json",
+      "status": "editorial_draft"
+    },
+    {
+      "id": "sjs-ten",
+      "kind": "condition",
+      "names": {
+        "zh-CN": "Stevens–Johnson 综合征与中毒性表皮坏死松解症",
+        "en": "Stevens–Johnson syndrome and toxic epidermal necrolysis"
+      },
+      "primary_domain": "dermatologic",
+      "source_ids": [
+        "sjs-ten-p0-03-bad",
+        "sjs-ten-p0-03-dermnet",
+        "sjs-ten-p0-03-mayo-treatment",
+        "sjs-ten-p0-03-msd",
+        "sjs-ten-p0-03-nhs",
+        "sjs-ten-p0-03-rime",
+        "sjs-ten-p0-03-vumc"
+      ],
+      "path": "data/conditions/sjs-ten.json",
       "status": "editorial_draft"
     },
     {
@@ -1594,6 +1897,64 @@
         "stroke-eating-nhs"
       ],
       "path": "data/conditions/stroke.json",
+      "status": "editorial_draft"
+    },
+    {
+      "id": "sudden-hearing-loss",
+      "kind": "condition",
+      "names": {
+        "zh-CN": "突发性听力下降（特发性突聋）",
+        "en": "Sudden hearing loss (idiopathic SSNHL)"
+      },
+      "primary_domain": "ent_oral",
+      "source_ids": [
+        "batch-b-stroke-signs",
+        "sudden-hearing-loss-p0-03-aao-faq",
+        "sudden-hearing-loss-p0-03-aao-summary",
+        "sudden-hearing-loss-p0-03-ashp-prednisone",
+        "sudden-hearing-loss-p0-03-bumps",
+        "sudden-hearing-loss-p0-03-cochrane",
+        "sudden-hearing-loss-p0-03-hull",
+        "sudden-hearing-loss-p0-03-msd",
+        "sudden-hearing-loss-p0-03-nhs-hearing",
+        "sudden-hearing-loss-p0-03-nhs-pred-interactions",
+        "sudden-hearing-loss-p0-03-nhs-prednisolone",
+        "sudden-hearing-loss-p0-03-nhs-pregnancy",
+        "sudden-hearing-loss-p0-03-nidcd",
+        "sudden-hearing-loss-p0-03-nidcd-communication",
+        "sudden-hearing-loss-p0-03-racgp-2025"
+      ],
+      "path": "data/conditions/sudden-hearing-loss.json",
+      "status": "editorial_draft"
+    },
+    {
+      "id": "suicidal-ideation",
+      "kind": "symptom",
+      "names": {
+        "zh-CN": "自杀意念",
+        "en": "Suicidal ideation"
+      },
+      "primary_domain": "mental_sleep",
+      "source_ids": [
+        "p003-si-assessment",
+        "p003-si-bipolar",
+        "p003-si-china",
+        "p003-si-depression",
+        "p003-si-mayo-bipolar",
+        "p003-si-mayo-care",
+        "p003-si-mayo-causes",
+        "p003-si-meds",
+        "p003-si-nhs",
+        "p003-si-nhs-diet",
+        "p003-si-nhs-meds",
+        "p003-si-nice",
+        "p003-si-nimh",
+        "p003-si-perinatal",
+        "p003-si-postpartum",
+        "p003-si-steps",
+        "p003-si-who"
+      ],
+      "path": "data/conditions/suicidal-ideation.json",
       "status": "editorial_draft"
     },
     {

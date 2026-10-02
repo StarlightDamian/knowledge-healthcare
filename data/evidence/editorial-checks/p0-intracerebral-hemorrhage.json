@@ -1,0 +1,2996 @@
+[
+  {
+    "id": "p0-03-ich-summary",
+    "target": {
+      "kind": "condition",
+      "id": "intracerebral-hemorrhage",
+      "section": "summary"
+    },
+    "content_sha256": "0d1ea841af8043df5a0f2532ab36ad69b3ef39979bbe3c377c400a26a4b56224",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_independent_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-aha-ich-2022",
+        "source_metadata_sha256": "cd763d8c872bea38770c0458836997b9cc9f1b66a91bf6e81e77ae4a1cfc6d1b",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Public original PDF: pp 1-2 take-home; pp 6-8 pathophysiology/recognition; p 28 dysphagia; pp 35-36 hydrocephalus; p 42 cerebellar surgery; p 51 recurrence",
+        "source_version": "2022; Stroke 53:e282-e361",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-AHA-ASA",
+        "upstream_evidence": [
+          "AHA/ASA independent guideline group. Shares some authors including Cordonnier with ESO; overlapping trials with Canadian/ESO guidelines, not independent trial replication."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-canada-ich-emergency",
+        "source_metadata_sha256": "39941b36065e98253deaedfd6e601f0c26773020c5448eb744d12f02714d664a",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "1.1 assessment; 1.2 imaging; 1.3 blood pressure; 1.4 antithrombotics; 1.5 etiology; 1.6 surgical management",
+        "source_version": "2020 seventh edition",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "CA",
+        "independence_group": "CA-StrokeBestPractices",
+        "upstream_evidence": [
+          "Canadian guideline group; overlapping AHA/ESO trials. Older regional reversal-agent availability and exact cerebellar size threshold not generalized."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-ich-summary-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "脑内出血是血管破裂后，血液进入脑组织或脑室造成的急症。血肿和周围肿胀可压迫脑组织，需要尽快影像检查与专科处理。",
+          "en": "Intracerebral hemorrhage is an emergency involving bleeding into brain tissue or the ventricles. The hematoma and surrounding swelling can compress the brain, requiring rapid imaging and specialist care."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-aha-ich-2022",
+            "locator": "pp3,7: definition and mechanisms",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "Scope; emergency and surgical assessment",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-summary-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "部位名称描述出血在哪里：深部半球与脑叶位于大脑，脑干与小脑位于后颅窝；脑室是脑内脑脊液流经的腔隙。部位影响观察重点，但不能单凭名字预测个人结局。",
+          "en": "Location names describe where bleeding occurs: deep hemispheric and lobar bleeds involve the cerebrum; the brainstem and cerebellum lie in the posterior fossa. Ventricles are fluid-filled spaces. Location informs care but alone does not predict an individual outcome."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-aha-ich-2022",
+            "locator": "pp6-7 deep/lobar anatomy; pp35-42 surgery/IVH",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.2 imaging; 1.5 etiologic assessment; 1.6 surgery",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-summary-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "单纯脑室出血没有同时显示的脑实质出血；多部位出血可包括脑实质与脑室同时出血，要评估每处病灶及整体影响；“部位未定”表示仍需影像明确，不能据此认为较轻。",
+          "en": "Isolated ventricular bleeding has no accompanying parenchymal bleed on imaging. Multiple-site bleeding can include combined parenchymal and ventricular bleeding and requires assessment of all lesions and their combined effects. An unspecified site calls for imaging clarification, not an assumption of mild disease."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-aha-ich-2022",
+            "locator": "Diagnosis imaging; IVH and neurological assessment",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.2 location/extent; 1.6 hydrocephalus/IVH assessment",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-summary-4",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "脑内出血可来自小血管病，也可继发于凝血问题、血管畸形、肿瘤或脑梗死后的出血转化。后几类需要原病与出血共同评估，不能把普通自发性脑出血的所有方案直接套用；外伤及蛛网膜下腔出血另走相应路径。",
+          "en": "Intracerebral bleeding may arise from small-vessel disease or follow a coagulation disorder, vascular malformation, tumour or hemorrhagic transformation of an infarct. These secondary causes require assessment of both the underlying disease and bleeding, so not every primary-ICH recommendation applies unchanged. Trauma and subarachnoid hemorrhage follow their corresponding pathways."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.3 coagulation; 1.5.2 masses, hemorrhagic infarct, malformations",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          },
+          {
+            "source_id": "neuro-aha-ich-2022",
+            "locator": "1.4 scope; diagnostic pathogenesis assessment; 5.2 coagulation",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_independent_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "neuro-aha-ich-2022",
+        "neuro-asa-brainstem",
+        "neuro-canada-ich-emergency",
+        "neuro-canada-ich-inpatient",
+        "neuro-canada-ich-prevention",
+        "neuro-canada-stroke-swallowing",
+        "neuro-eso-eans-ich-2025",
+        "neuro-hopkins-stroke-effects",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-sah-s",
+        "stroke-diagnosis-nhs",
+        "stroke-recovery-nhs",
+        "stroke-symptoms-nhs"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "ICH-diet-support",
+          "status": "resolved",
+          "resolution": "NICE NG128 1.6.1-11 and1.8.1 plus Canadian6.1-6.2 directly support pre-oral screening, textures, tube feeding and nutrition reassessment."
+        },
+        {
+          "id": "ICH-brainstem-depth",
+          "status": "resolved",
+          "resolution": "Added bounded brainstem breathing/consciousness/swallow consequences and clinical support. ASA and StayWell-hosted Hopkins support anatomy; AHA/Canada support care."
+        },
+        {
+          "id": "ICH-medicine-depth",
+          "status": "resolved",
+          "resolution": "Warfarin PCC plus IV vitamin K and dabigatran idarucizumab differentiated; Xa pathway left locally determined; thrombosis balance explicit. AHA5.2.1 and Canada1.3 directly read."
+        },
+        {
+          "id": "ICH-action-types",
+          "status": "resolved",
+          "resolution": "Conditional treatment3-5 and medications2 now action; added treatment6 and medication4-5 also action."
+        },
+        {
+          "id": "ICH-source-provenance",
+          "status": "resolved",
+          "resolution": "ESO accurately relabeled author conference selected-recommendation slides, preserving prior actual slide reading."
+        },
+        {
+          "id": "ICH-leaf-scope",
+          "status": "resolved",
+          "resolution": "Secondary causes including hemorrhagic infarction now retained with cause-directed evaluation and no universal primary-ICH extrapolation; combined parenchymal/ventricular bleed explicit. Frozen WHO31519-31575 reread."
+        }
+      ],
+      "resolution": "Six findings resolved and search terms structurally present. Educational content acceptance; medical sign-off remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Separate guideline/patient authorship; same organization pages grouped together; shared authors and trials disclosed.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult spontaneous ICH guidance has regional agent availability and procedure selection differences; no universal Xa reversal agent, dose, operative rule or primary-ICH extrapolation to secondary lesions asserted."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json"
+  },
+  {
+    "id": "p0-03-ich-causes_risks",
+    "target": {
+      "kind": "condition",
+      "id": "intracerebral-hemorrhage",
+      "section": "causes_risks"
+    },
+    "content_sha256": "443a444b627d98bcb2072d6fda606691f86cd72d5f3dd840b9e19ecfda0d0753",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_independent_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-aha-ich-2022",
+        "source_metadata_sha256": "cd763d8c872bea38770c0458836997b9cc9f1b66a91bf6e81e77ae4a1cfc6d1b",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Public original PDF: pp 1-2 take-home; pp 6-8 pathophysiology/recognition; p 28 dysphagia; pp 35-36 hydrocephalus; p 42 cerebellar surgery; p 51 recurrence",
+        "source_version": "2022; Stroke 53:e282-e361",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-AHA-ASA",
+        "upstream_evidence": [
+          "AHA/ASA independent guideline group. Shares some authors including Cordonnier with ESO; overlapping trials with Canadian/ESO guidelines, not independent trial replication."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-canada-ich-emergency",
+        "source_metadata_sha256": "39941b36065e98253deaedfd6e601f0c26773020c5448eb744d12f02714d664a",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "1.1 assessment; 1.2 imaging; 1.3 blood pressure; 1.4 antithrombotics; 1.5 etiology; 1.6 surgical management",
+        "source_version": "2020 seventh edition",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "CA",
+        "independence_group": "CA-StrokeBestPractices",
+        "upstream_evidence": [
+          "Canadian guideline group; overlapping AHA/ESO trials. Older regional reversal-agent availability and exact cerebellar size threshold not generalized."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-canada-ich-prevention",
+        "source_metadata_sha256": "0724d82a9a2b7b8b594548ba655cb9f61bf4c5578d42f0b1747c0062b97545ec",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "3.1 assessment/recurrent risk; 3.2 lifestyle; 3.3 blood pressure; 3.4 antithrombotics; 3.5 statins; functional assessment",
+        "source_version": "2020 seventh edition",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "CA",
+        "independence_group": "CA-StrokeBestPractices",
+        "upstream_evidence": [
+          "Same Canadian authorship group; recommendations and trials overlap AHA/ESO."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-mayo-stroke-treatment",
+        "source_metadata_sha256": "f787d9e773c70fa01d8d4a2d09b1c8ec83a858413e8dfe6c90b10b355bde69a1",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+        "source_version": "Live page read 2026-10-03; exact review date not established",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-Mayo-Clinic",
+        "upstream_evidence": [
+          "Independent Mayo patient education; professional stroke-guideline literature shared. Broad hemorrhagic page also includes SAH; those aneurysm procedures not generalized to all ICH."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-ich-causes_risks-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "查清血管为什么破裂，有助于急性处理和防止再出血。",
+          "en": "Finding why a vessel ruptured informs both acute care and prevention of another bleed."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.5 etiology",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-aha-ich-2022",
+            "locator": "Take-home 3; pathogenesis",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-causes_risks-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "长期高血压可损伤脑内小血管，深部出血常见这一背景；脑叶出血尤其在年长者，还要考虑脑淀粉样血管病，即异常蛋白沉积使血管容易出血。部位是线索，不是病因证明。",
+          "en": "Chronic hypertension damages small brain vessels and commonly underlies deep bleeds. Lobar bleeding, particularly in older people, also raises concern for cerebral amyloid angiopathy, in which protein deposits make vessels prone to bleeding. Location is a clue, not proof."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-aha-ich-2022",
+            "locator": "2.1 small-vessel disease types",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-canada-ich-prevention",
+            "locator": "3.1 etiology, lobar versus nonlobar recurrence",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-causes_risks-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "抗凝药或凝血障碍可能使出血加重；血管畸形等结构异常也可能是原因。因此医生需要完整用药记录，并按情况进一步检查血管。",
+          "en": "Anticoagulants or clotting disorders can worsen bleeding; structural abnormalities such as vascular malformations may also cause it. Clinicians therefore need the medicine history and may investigate the vessels."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.1 history; 1.4 reversal; 1.5 causes",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-treatment",
+            "locator": "Hemorrhagic emergency measures; vessel abnormalities",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_independent_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "neuro-aha-ich-2022",
+        "neuro-asa-brainstem",
+        "neuro-canada-ich-emergency",
+        "neuro-canada-ich-inpatient",
+        "neuro-canada-ich-prevention",
+        "neuro-canada-stroke-swallowing",
+        "neuro-eso-eans-ich-2025",
+        "neuro-hopkins-stroke-effects",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-sah-s",
+        "stroke-diagnosis-nhs",
+        "stroke-recovery-nhs",
+        "stroke-symptoms-nhs"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "ICH-diet-support",
+          "status": "resolved",
+          "resolution": "NICE NG128 1.6.1-11 and1.8.1 plus Canadian6.1-6.2 directly support pre-oral screening, textures, tube feeding and nutrition reassessment."
+        },
+        {
+          "id": "ICH-brainstem-depth",
+          "status": "resolved",
+          "resolution": "Added bounded brainstem breathing/consciousness/swallow consequences and clinical support. ASA and StayWell-hosted Hopkins support anatomy; AHA/Canada support care."
+        },
+        {
+          "id": "ICH-medicine-depth",
+          "status": "resolved",
+          "resolution": "Warfarin PCC plus IV vitamin K and dabigatran idarucizumab differentiated; Xa pathway left locally determined; thrombosis balance explicit. AHA5.2.1 and Canada1.3 directly read."
+        },
+        {
+          "id": "ICH-action-types",
+          "status": "resolved",
+          "resolution": "Conditional treatment3-5 and medications2 now action; added treatment6 and medication4-5 also action."
+        },
+        {
+          "id": "ICH-source-provenance",
+          "status": "resolved",
+          "resolution": "ESO accurately relabeled author conference selected-recommendation slides, preserving prior actual slide reading."
+        },
+        {
+          "id": "ICH-leaf-scope",
+          "status": "resolved",
+          "resolution": "Secondary causes including hemorrhagic infarction now retained with cause-directed evaluation and no universal primary-ICH extrapolation; combined parenchymal/ventricular bleed explicit. Frozen WHO31519-31575 reread."
+        }
+      ],
+      "resolution": "Six findings resolved and search terms structurally present. Educational content acceptance; medical sign-off remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Separate guideline/patient authorship; same organization pages grouped together; shared authors and trials disclosed.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult spontaneous ICH guidance has regional agent availability and procedure selection differences; no universal Xa reversal agent, dose, operative rule or primary-ICH extrapolation to secondary lesions asserted."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json"
+  },
+  {
+    "id": "p0-03-ich-red_flags",
+    "target": {
+      "kind": "condition",
+      "id": "intracerebral-hemorrhage",
+      "section": "red_flags"
+    },
+    "content_sha256": "3836a53fc3d4e5f9c58b1498d6550959ea72f106083afeadb376e73793ffb9eb",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_independent_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-mayo-stroke-causes",
+        "source_metadata_sha256": "ab1348530b399f5588e57a72c116c993d9b6447cda624a0337becd5d002c24b4",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy",
+        "source_version": "Live page read 2026-10-03",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-Mayo-Clinic",
+        "upstream_evidence": [
+          "Independent editorial authorship; standard stroke evidence may overlap."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "stroke-symptoms-nhs",
+        "source_metadata_sha256": "e641c1201d2153038a7add74324a3a7ba8efd99ad71678fd551627b06d12492b",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Symptoms; immediate emergency action; no driving",
+        "source_version": "2024-09-12",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independent editorial authorship; standard stroke evidence may overlap."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-ich-red_flags-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "怀疑脑卒中就应立即联系当地急救服务。",
+          "en": "Suspected stroke requires immediate local emergency help."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-symptoms-nhs",
+            "locator": "Symptoms and emergency action",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-causes",
+            "locator": "Symptoms; when to seek emergency care",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-red_flags-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "让患者微笑、抬起双臂并说一句话，任何新发不对称、无力或言语异常都应警惕。",
+          "en": "Ask the person to smile, raise both arms and say a sentence; new asymmetry, weakness or speech change is concerning."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-symptoms-nhs",
+            "locator": "Symptoms and emergency action",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-causes",
+            "locator": "Symptoms; when to seek emergency care",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-red_flags-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "突然视力丧失、失去平衡或不明原因剧烈头痛，同样需要急救。",
+          "en": "Sudden vision loss, loss of balance or unexplained severe headache also warrants emergency help."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-symptoms-nhs",
+            "locator": "Symptoms and emergency action",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-causes",
+            "locator": "Symptoms; when to seek emergency care",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-red_flags-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "不要等待所有表现出现，也不要因为症状缓解而取消就医。",
+          "en": "Do not wait for every sign or cancel care because symptoms improve."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-symptoms-nhs",
+            "locator": "Symptoms and emergency action",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-causes",
+            "locator": "Symptoms; when to seek emergency care",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_independent_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "neuro-aha-ich-2022",
+        "neuro-asa-brainstem",
+        "neuro-canada-ich-emergency",
+        "neuro-canada-ich-inpatient",
+        "neuro-canada-ich-prevention",
+        "neuro-canada-stroke-swallowing",
+        "neuro-eso-eans-ich-2025",
+        "neuro-hopkins-stroke-effects",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-sah-s",
+        "stroke-diagnosis-nhs",
+        "stroke-recovery-nhs",
+        "stroke-symptoms-nhs"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "ICH-diet-support",
+          "status": "resolved",
+          "resolution": "NICE NG128 1.6.1-11 and1.8.1 plus Canadian6.1-6.2 directly support pre-oral screening, textures, tube feeding and nutrition reassessment."
+        },
+        {
+          "id": "ICH-brainstem-depth",
+          "status": "resolved",
+          "resolution": "Added bounded brainstem breathing/consciousness/swallow consequences and clinical support. ASA and StayWell-hosted Hopkins support anatomy; AHA/Canada support care."
+        },
+        {
+          "id": "ICH-medicine-depth",
+          "status": "resolved",
+          "resolution": "Warfarin PCC plus IV vitamin K and dabigatran idarucizumab differentiated; Xa pathway left locally determined; thrombosis balance explicit. AHA5.2.1 and Canada1.3 directly read."
+        },
+        {
+          "id": "ICH-action-types",
+          "status": "resolved",
+          "resolution": "Conditional treatment3-5 and medications2 now action; added treatment6 and medication4-5 also action."
+        },
+        {
+          "id": "ICH-source-provenance",
+          "status": "resolved",
+          "resolution": "ESO accurately relabeled author conference selected-recommendation slides, preserving prior actual slide reading."
+        },
+        {
+          "id": "ICH-leaf-scope",
+          "status": "resolved",
+          "resolution": "Secondary causes including hemorrhagic infarction now retained with cause-directed evaluation and no universal primary-ICH extrapolation; combined parenchymal/ventricular bleed explicit. Frozen WHO31519-31575 reread."
+        }
+      ],
+      "resolution": "Six findings resolved and search terms structurally present. Educational content acceptance; medical sign-off remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Separate guideline/patient authorship; same organization pages grouped together; shared authors and trials disclosed.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult spontaneous ICH guidance has regional agent availability and procedure selection differences; no universal Xa reversal agent, dose, operative rule or primary-ICH extrapolation to secondary lesions asserted."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json"
+  },
+  {
+    "id": "p0-03-ich-care",
+    "target": {
+      "kind": "condition",
+      "id": "intracerebral-hemorrhage",
+      "section": "care"
+    },
+    "content_sha256": "17618b602ab45aacd14f43c02cfab3c0936a91ecea2b98913faa01bdfdbe885d",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_independent_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-canada-ich-emergency",
+        "source_metadata_sha256": "39941b36065e98253deaedfd6e601f0c26773020c5448eb744d12f02714d664a",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "1.1 assessment; 1.2 imaging; 1.3 blood pressure; 1.4 antithrombotics; 1.5 etiology; 1.6 surgical management",
+        "source_version": "2020 seventh edition",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "CA",
+        "independence_group": "CA-StrokeBestPractices",
+        "upstream_evidence": [
+          "Canadian guideline group; overlapping AHA/ESO trials. Older regional reversal-agent availability and exact cerebellar size threshold not generalized."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "stroke-symptoms-nhs",
+        "source_metadata_sha256": "e641c1201d2153038a7add74324a3a7ba8efd99ad71678fd551627b06d12492b",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Symptoms; immediate emergency action; no driving",
+        "source_version": "2024-09-12",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independent editorial authorship; standard stroke evidence may overlap."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-ich-care-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "尽快进入急救流程会影响可选治疗。",
+          "en": "Rapid emergency care affects the treatments available."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-symptoms-nhs",
+            "locator": "Do not drive; emergency help",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.1 immediate assessment incl onset and medicines",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-care-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "呼叫救护车，不让患者自行开车。",
+          "en": "Call an ambulance and do not let the person drive."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-symptoms-nhs",
+            "locator": "Do not drive; emergency help",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.1 immediate assessment incl onset and medicines",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-care-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "记录症状最早出现的时间；若不清楚，如实告诉急救人员。",
+          "en": "Record when symptoms began and tell responders if the timing is uncertain."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-symptoms-nhs",
+            "locator": "Do not drive; emergency help",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.1 immediate assessment incl onset and medicines",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-care-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "准备既往病史和用药信息，尤其抗凝药，并遵循急救调度指引。",
+          "en": "Provide medical history and medicines, especially anticoagulants, and follow dispatcher instructions."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-symptoms-nhs",
+            "locator": "Do not drive; emergency help",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.1 immediate assessment incl onset and medicines",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_independent_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "neuro-aha-ich-2022",
+        "neuro-asa-brainstem",
+        "neuro-canada-ich-emergency",
+        "neuro-canada-ich-inpatient",
+        "neuro-canada-ich-prevention",
+        "neuro-canada-stroke-swallowing",
+        "neuro-eso-eans-ich-2025",
+        "neuro-hopkins-stroke-effects",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-sah-s",
+        "stroke-diagnosis-nhs",
+        "stroke-recovery-nhs",
+        "stroke-symptoms-nhs"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "ICH-diet-support",
+          "status": "resolved",
+          "resolution": "NICE NG128 1.6.1-11 and1.8.1 plus Canadian6.1-6.2 directly support pre-oral screening, textures, tube feeding and nutrition reassessment."
+        },
+        {
+          "id": "ICH-brainstem-depth",
+          "status": "resolved",
+          "resolution": "Added bounded brainstem breathing/consciousness/swallow consequences and clinical support. ASA and StayWell-hosted Hopkins support anatomy; AHA/Canada support care."
+        },
+        {
+          "id": "ICH-medicine-depth",
+          "status": "resolved",
+          "resolution": "Warfarin PCC plus IV vitamin K and dabigatran idarucizumab differentiated; Xa pathway left locally determined; thrombosis balance explicit. AHA5.2.1 and Canada1.3 directly read."
+        },
+        {
+          "id": "ICH-action-types",
+          "status": "resolved",
+          "resolution": "Conditional treatment3-5 and medications2 now action; added treatment6 and medication4-5 also action."
+        },
+        {
+          "id": "ICH-source-provenance",
+          "status": "resolved",
+          "resolution": "ESO accurately relabeled author conference selected-recommendation slides, preserving prior actual slide reading."
+        },
+        {
+          "id": "ICH-leaf-scope",
+          "status": "resolved",
+          "resolution": "Secondary causes including hemorrhagic infarction now retained with cause-directed evaluation and no universal primary-ICH extrapolation; combined parenchymal/ventricular bleed explicit. Frozen WHO31519-31575 reread."
+        }
+      ],
+      "resolution": "Six findings resolved and search terms structurally present. Educational content acceptance; medical sign-off remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Separate guideline/patient authorship; same organization pages grouped together; shared authors and trials disclosed.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult spontaneous ICH guidance has regional agent availability and procedure selection differences; no universal Xa reversal agent, dose, operative rule or primary-ICH extrapolation to secondary lesions asserted."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json"
+  },
+  {
+    "id": "p0-03-ich-diagnosis",
+    "target": {
+      "kind": "condition",
+      "id": "intracerebral-hemorrhage",
+      "section": "diagnosis"
+    },
+    "content_sha256": "063cb0e3a7eb9fb472ff20999317c78fe677e04729cf75f0dec32965c99f7e20",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_independent_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-aha-ich-2022",
+        "source_metadata_sha256": "cd763d8c872bea38770c0458836997b9cc9f1b66a91bf6e81e77ae4a1cfc6d1b",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Public original PDF: pp 1-2 take-home; pp 6-8 pathophysiology/recognition; p 28 dysphagia; pp 35-36 hydrocephalus; p 42 cerebellar surgery; p 51 recurrence",
+        "source_version": "2022; Stroke 53:e282-e361",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-AHA-ASA",
+        "upstream_evidence": [
+          "AHA/ASA independent guideline group. Shares some authors including Cordonnier with ESO; overlapping trials with Canadian/ESO guidelines, not independent trial replication."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-canada-ich-emergency",
+        "source_metadata_sha256": "39941b36065e98253deaedfd6e601f0c26773020c5448eb744d12f02714d664a",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "1.1 assessment; 1.2 imaging; 1.3 blood pressure; 1.4 antithrombotics; 1.5 etiology; 1.6 surgical management",
+        "source_version": "2020 seventh edition",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "CA",
+        "independence_group": "CA-StrokeBestPractices",
+        "upstream_evidence": [
+          "Canadian guideline group; overlapping AHA/ESO trials. Older regional reversal-agent availability and exact cerebellar size threshold not generalized."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-mayo-stroke-treatment",
+        "source_metadata_sha256": "f787d9e773c70fa01d8d4a2d09b1c8ec83a858413e8dfe6c90b10b355bde69a1",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+        "source_version": "Live page read 2026-10-03; exact review date not established",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-Mayo-Clinic",
+        "upstream_evidence": [
+          "Independent Mayo patient education; professional stroke-guideline literature shared. Broad hemorrhagic page also includes SAH; those aneurysm procedures not generalized to all ICH."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "stroke-diagnosis-nhs",
+        "source_metadata_sha256": "15ac90baaec5a7728eefd45af76007167167963893d861e97c1d34115d9dc37f",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "CT/MRI, blood tests, ECG and ultrasound",
+        "source_version": "2024-09-12",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independent editorial authorship; standard stroke evidence may overlap."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-ich-diagnosis-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "检查先确认出血的位置和程度，再寻找原因，并监测变化。",
+          "en": "Tests establish the site and extent of bleeding, investigate the cause and monitor changes."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.1-1.2 assessment and imaging",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "stroke-diagnosis-nhs",
+            "locator": "Tests after suspected stroke",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-diagnosis-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "CT能迅速看是否有急性出血、血肿位置、脑室积血或脑积水；需要时MRI补充脑组织和既往小出血等信息。症状相似的脑梗死不能只靠外观排除。",
+          "en": "CT rapidly identifies acute blood, its location, ventricular blood and hydrocephalus. MRI may add information about tissue and previous small bleeds. A similar-looking ischemic stroke cannot be excluded by appearance alone."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.2 CT/MRI; 1.5 MRI etiologic assessment",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-treatment",
+            "locator": "CT and MRI tests; treatment depends on stroke type",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-diagnosis-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "血管成像用于寻找动静脉畸形等原因；是否做CT血管成像、MR血管成像或导管造影，取决于影像、年龄和病史，而不是每个人都做同一套检查。",
+          "en": "Vessel imaging looks for causes such as malformations. CT angiography, MR angiography or catheter angiography is selected according to imaging, age and history, rather than one identical set for everyone."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.2 and 1.5 vascular imaging",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-aha-ich-2022",
+            "locator": "Diagnostic assessment for ICH pathogenesis",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-diagnosis-4",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "血常规、凝血、血糖等检查能提示出血风险和需同时处理的问题。意识或神经症状恶化时，团队可能复查影像，确认血肿扩大、肿胀或脑积水。",
+          "en": "Blood counts, clotting and glucose tests identify bleeding risks and concurrent problems. Worsening consciousness or neurological signs may prompt repeat imaging for expansion, swelling or hydrocephalus."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.1 laboratory assessment; repeat CT with deterioration",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-aha-ich-2022",
+            "locator": "Diagnostic imaging; hematoma expansion and clinical deterioration",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-diagnosis-5",
+        "kind": "action",
+        "text": {
+          "zh-CN": "如果影像提示梗死后出血、肿瘤或血管畸形，卒中与神经外科团队会按病因追加 MRI 或血管检查，并结合原病和用药重新决定处理。出血可暂时遮住病灶，因此部分患者还需复查影像。",
+          "en": "If imaging suggests hemorrhagic infarction, tumour or vascular malformation, stroke and neurosurgical teams use cause-directed MRI or vascular tests and reconsider management with the underlying disease and medicines. Bleeding can initially obscure a lesion, so some patients need repeat imaging."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.5.2 MRI and delayed repeat imaging",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          },
+          {
+            "source_id": "neuro-aha-ich-2022",
+            "locator": "4.2 diagnostic assessment for pathogenesis;1.4 separate secondary cause treatment scope",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_independent_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "neuro-aha-ich-2022",
+        "neuro-asa-brainstem",
+        "neuro-canada-ich-emergency",
+        "neuro-canada-ich-inpatient",
+        "neuro-canada-ich-prevention",
+        "neuro-canada-stroke-swallowing",
+        "neuro-eso-eans-ich-2025",
+        "neuro-hopkins-stroke-effects",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-sah-s",
+        "stroke-diagnosis-nhs",
+        "stroke-recovery-nhs",
+        "stroke-symptoms-nhs"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "ICH-diet-support",
+          "status": "resolved",
+          "resolution": "NICE NG128 1.6.1-11 and1.8.1 plus Canadian6.1-6.2 directly support pre-oral screening, textures, tube feeding and nutrition reassessment."
+        },
+        {
+          "id": "ICH-brainstem-depth",
+          "status": "resolved",
+          "resolution": "Added bounded brainstem breathing/consciousness/swallow consequences and clinical support. ASA and StayWell-hosted Hopkins support anatomy; AHA/Canada support care."
+        },
+        {
+          "id": "ICH-medicine-depth",
+          "status": "resolved",
+          "resolution": "Warfarin PCC plus IV vitamin K and dabigatran idarucizumab differentiated; Xa pathway left locally determined; thrombosis balance explicit. AHA5.2.1 and Canada1.3 directly read."
+        },
+        {
+          "id": "ICH-action-types",
+          "status": "resolved",
+          "resolution": "Conditional treatment3-5 and medications2 now action; added treatment6 and medication4-5 also action."
+        },
+        {
+          "id": "ICH-source-provenance",
+          "status": "resolved",
+          "resolution": "ESO accurately relabeled author conference selected-recommendation slides, preserving prior actual slide reading."
+        },
+        {
+          "id": "ICH-leaf-scope",
+          "status": "resolved",
+          "resolution": "Secondary causes including hemorrhagic infarction now retained with cause-directed evaluation and no universal primary-ICH extrapolation; combined parenchymal/ventricular bleed explicit. Frozen WHO31519-31575 reread."
+        }
+      ],
+      "resolution": "Six findings resolved and search terms structurally present. Educational content acceptance; medical sign-off remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Separate guideline/patient authorship; same organization pages grouped together; shared authors and trials disclosed.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult spontaneous ICH guidance has regional agent availability and procedure selection differences; no universal Xa reversal agent, dose, operative rule or primary-ICH extrapolation to secondary lesions asserted."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json"
+  },
+  {
+    "id": "p0-03-ich-differentials",
+    "target": {
+      "kind": "condition",
+      "id": "intracerebral-hemorrhage",
+      "section": "differentials"
+    },
+    "content_sha256": "e77651afcf0639bc58cf4e6d6eb64e64aed47930575344de91014e018a2a6604",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_independent_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-aha-ich-2022",
+        "source_metadata_sha256": "cd763d8c872bea38770c0458836997b9cc9f1b66a91bf6e81e77ae4a1cfc6d1b",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Public original PDF: pp 1-2 take-home; pp 6-8 pathophysiology/recognition; p 28 dysphagia; pp 35-36 hydrocephalus; p 42 cerebellar surgery; p 51 recurrence",
+        "source_version": "2022; Stroke 53:e282-e361",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-AHA-ASA",
+        "upstream_evidence": [
+          "AHA/ASA independent guideline group. Shares some authors including Cordonnier with ESO; overlapping trials with Canadian/ESO guidelines, not independent trial replication."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-canada-ich-emergency",
+        "source_metadata_sha256": "39941b36065e98253deaedfd6e601f0c26773020c5448eb744d12f02714d664a",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "1.1 assessment; 1.2 imaging; 1.3 blood pressure; 1.4 antithrombotics; 1.5 etiology; 1.6 surgical management",
+        "source_version": "2020 seventh edition",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "CA",
+        "independence_group": "CA-StrokeBestPractices",
+        "upstream_evidence": [
+          "Canadian guideline group; overlapping AHA/ESO trials. Older regional reversal-agent availability and exact cerebellar size threshold not generalized."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-mayo-stroke-causes",
+        "source_metadata_sha256": "ab1348530b399f5588e57a72c116c993d9b6447cda624a0337becd5d002c24b4",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy",
+        "source_version": "Live page read 2026-10-03",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-Mayo-Clinic",
+        "upstream_evidence": [
+          "Independent editorial authorship; standard stroke evidence may overlap."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "stroke-diagnosis-nhs",
+        "source_metadata_sha256": "15ac90baaec5a7728eefd45af76007167167963893d861e97c1d34115d9dc37f",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "CT/MRI, blood tests, ECG and ultrasound",
+        "source_version": "2024-09-12",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independent editorial authorship; standard stroke evidence may overlap."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-ich-differentials-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "突然的神经症状可以来自不同疾病，急诊需先排危险原因。",
+          "en": "Sudden neurological symptoms have several possible causes, and emergency assessment first excludes dangerous conditions."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-mayo-stroke-causes",
+            "locator": "When to seek help; stroke types",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "Immediate assessment and imaging",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-differentials-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "缺血性卒中是血管堵塞，脑内出血是血管破裂，两者都可偏瘫或语言不清；治疗差异很大，要靠脑影像区分。",
+          "en": "Ischemic stroke involves blockage and intracerebral hemorrhage involves rupture; both can cause weakness or speech difficulty. Their treatments differ substantially and brain imaging distinguishes them."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-mayo-stroke-causes",
+            "locator": "Ischemic and hemorrhagic stroke",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "stroke-diagnosis-nhs",
+            "locator": "Brain imaging to identify stroke type",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-differentials-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "蛛网膜下腔出血主要在脑表面的膜间隙，常以突发剧烈头痛表现；外伤性出血有不同诱因。是否同时存在几种出血，需要影像与病史判断。",
+          "en": "Subarachnoid bleeding is mainly in the spaces around the brain and often presents with a sudden severe headache. Traumatic hemorrhage has a different trigger. History and imaging determine whether bleeding patterns coexist."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-mayo-stroke-causes",
+            "locator": "Hemorrhagic causes and symptoms",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-aha-ich-2022",
+            "locator": "1.4 scope; diagnostic assessment",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_independent_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "neuro-aha-ich-2022",
+        "neuro-asa-brainstem",
+        "neuro-canada-ich-emergency",
+        "neuro-canada-ich-inpatient",
+        "neuro-canada-ich-prevention",
+        "neuro-canada-stroke-swallowing",
+        "neuro-eso-eans-ich-2025",
+        "neuro-hopkins-stroke-effects",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-sah-s",
+        "stroke-diagnosis-nhs",
+        "stroke-recovery-nhs",
+        "stroke-symptoms-nhs"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "ICH-diet-support",
+          "status": "resolved",
+          "resolution": "NICE NG128 1.6.1-11 and1.8.1 plus Canadian6.1-6.2 directly support pre-oral screening, textures, tube feeding and nutrition reassessment."
+        },
+        {
+          "id": "ICH-brainstem-depth",
+          "status": "resolved",
+          "resolution": "Added bounded brainstem breathing/consciousness/swallow consequences and clinical support. ASA and StayWell-hosted Hopkins support anatomy; AHA/Canada support care."
+        },
+        {
+          "id": "ICH-medicine-depth",
+          "status": "resolved",
+          "resolution": "Warfarin PCC plus IV vitamin K and dabigatran idarucizumab differentiated; Xa pathway left locally determined; thrombosis balance explicit. AHA5.2.1 and Canada1.3 directly read."
+        },
+        {
+          "id": "ICH-action-types",
+          "status": "resolved",
+          "resolution": "Conditional treatment3-5 and medications2 now action; added treatment6 and medication4-5 also action."
+        },
+        {
+          "id": "ICH-source-provenance",
+          "status": "resolved",
+          "resolution": "ESO accurately relabeled author conference selected-recommendation slides, preserving prior actual slide reading."
+        },
+        {
+          "id": "ICH-leaf-scope",
+          "status": "resolved",
+          "resolution": "Secondary causes including hemorrhagic infarction now retained with cause-directed evaluation and no universal primary-ICH extrapolation; combined parenchymal/ventricular bleed explicit. Frozen WHO31519-31575 reread."
+        }
+      ],
+      "resolution": "Six findings resolved and search terms structurally present. Educational content acceptance; medical sign-off remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Separate guideline/patient authorship; same organization pages grouped together; shared authors and trials disclosed.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult spontaneous ICH guidance has regional agent availability and procedure selection differences; no universal Xa reversal agent, dose, operative rule or primary-ICH extrapolation to secondary lesions asserted."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json"
+  },
+  {
+    "id": "p0-03-ich-treatment",
+    "target": {
+      "kind": "condition",
+      "id": "intracerebral-hemorrhage",
+      "section": "treatment"
+    },
+    "content_sha256": "0ebd440a0fe73a5b66139ea0605a8e04f45068e0fb08ef4c6adcb5e1114d52b0",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_independent_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-aha-ich-2022",
+        "source_metadata_sha256": "cd763d8c872bea38770c0458836997b9cc9f1b66a91bf6e81e77ae4a1cfc6d1b",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Public original PDF: pp 1-2 take-home; pp 6-8 pathophysiology/recognition; p 28 dysphagia; pp 35-36 hydrocephalus; p 42 cerebellar surgery; p 51 recurrence",
+        "source_version": "2022; Stroke 53:e282-e361",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-AHA-ASA",
+        "upstream_evidence": [
+          "AHA/ASA independent guideline group. Shares some authors including Cordonnier with ESO; overlapping trials with Canadian/ESO guidelines, not independent trial replication."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-canada-ich-emergency",
+        "source_metadata_sha256": "39941b36065e98253deaedfd6e601f0c26773020c5448eb744d12f02714d664a",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "1.1 assessment; 1.2 imaging; 1.3 blood pressure; 1.4 antithrombotics; 1.5 etiology; 1.6 surgical management",
+        "source_version": "2020 seventh edition",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "CA",
+        "independence_group": "CA-StrokeBestPractices",
+        "upstream_evidence": [
+          "Canadian guideline group; overlapping AHA/ESO trials. Older regional reversal-agent availability and exact cerebellar size threshold not generalized."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-eso-eans-ich-2025",
+        "source_metadata_sha256": "a649d7fc442f6e4a331abce467ea2582c54f4e2e486f176ce5278d78cfaad425",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Original 49-page PDF: pp 8,15-16,25,30,32,35,38,40-41,46; web PDF and in-memory pypdf text for pp 28-48",
+        "source_version": "2025-05-22 ESOC Helsinki official author summary slides, not journal full text",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "Europe",
+        "independence_group": "ESO-EANS",
+        "upstream_evidence": [
+          "Independent European guideline group, overlapping authors/trials with AHA and Canadian. 2025 lobar minimally-invasive evidence differs from older general uncertainty; no superiority/effect number generalized."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-mayo-stroke-treatment",
+        "source_metadata_sha256": "f787d9e773c70fa01d8d4a2d09b1c8ec83a858413e8dfe6c90b10b355bde69a1",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+        "source_version": "Live page read 2026-10-03; exact review date not established",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-Mayo-Clinic",
+        "upstream_evidence": [
+          "Independent Mayo patient education; professional stroke-guideline literature shared. Broad hemorrhagic page also includes SAH; those aneurysm procedures not generalized to all ICH."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-ich-treatment-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "治疗同时保护生命体征、控制继续出血并减轻脑受压；并不是所有脑内出血都适合开刀。",
+          "en": "Treatment supports vital functions, limits further bleeding and relieves pressure. Surgery is not appropriate for every intracerebral hemorrhage."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.1-1.6 emergency management",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-treatment",
+            "locator": "Hemorrhagic emergency measures and surgery",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-treatment-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "团队会在卒中单元或重症监护中观察意识、呼吸与血压，并按病情稳定控制血压。急性期的降压目标和速度需要监测，不能自行追加家中降压药。",
+          "en": "Teams monitor consciousness, breathing and blood pressure in a stroke unit or intensive care and control pressure according to the case. Acute targets and pace require monitoring, not extra home antihypertensives taken independently."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.1 and 1.3 blood pressure",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-eso-eans-ich-2025",
+            "locator": "pp8,15-16: stroke unit and qualified BP consensus",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-treatment-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "小脑出血若出现神经功能恶化、脑干受压或脑积水，常需紧急神经外科评估和清除血肿；不能等到固定小时数后再求助。",
+          "en": "Cerebellar bleeding with neurological deterioration, brainstem compression or hydrocephalus often needs urgent neurosurgical assessment and evacuation. A fixed number of hours is not a reason to delay help."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.6 cerebellar hemorrhage surgical evaluation",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-aha-ich-2022",
+            "locator": "p42 posterior fossa hemorrhage",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-treatment-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "脑室积血可能阻碍脑脊液流动。脑积水影响意识时，可能放置脑室外引流管排液、减压；单纯脑室出血也需评估这条路径，而不是只关注脑组织内血肿。",
+          "en": "Blood in the ventricles can obstruct cerebrospinal fluid flow. Hydrocephalus affecting consciousness may require an external ventricular drain to remove fluid and relieve pressure; isolated ventricular bleeding also needs this assessment."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.6 EVD when hydrocephalus contributes to impaired consciousness",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-aha-ich-2022",
+            "locator": "p35 ICH or IVH with hydrocephalus: ventricular drainage",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-treatment-5",
+        "kind": "action",
+        "text": {
+          "zh-CN": "深部或脑叶出血的清除手术需结合位置、体积、临床变化和手术风险选择。脑干出血也不能直接套用小脑清除血肿的建议，应由具备神经重症与神经外科能力的团队判断。",
+          "en": "Evacuation of deep or lobar bleeding depends on location, volume, clinical change and surgical risk. Cerebellar evacuation recommendations cannot simply be applied to brainstem hemorrhage; specialist neurocritical and neurosurgical assessment is needed."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.6 individualized surgical decision",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-eso-eans-ich-2025",
+            "locator": "pp30,32: surgery depends on location and procedure; deep versus lobar evidence",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-treatment-6",
+        "kind": "action",
+        "text": {
+          "zh-CN": "脑干受累时，团队尤其重视气道保护、呼吸和意识的连续评估，并按吞咽检查决定安全进食方式。需要时提供呼吸支持；是否手术须另按病灶和风险判断。",
+          "en": "With brainstem involvement, the team pays particular attention to airway protection and ongoing breathing and consciousness assessment, with intake guided by swallowing assessment. Respiratory support is provided when needed; surgery is a separate decision based on the lesion and risks."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.1 airway/level of consciousness;1.6 surgery",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          },
+          {
+            "source_id": "neuro-aha-ich-2022",
+            "locator": "Initial management/airway;5.3 dysphagia;6 surgical decisions",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_independent_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "neuro-aha-ich-2022",
+        "neuro-asa-brainstem",
+        "neuro-canada-ich-emergency",
+        "neuro-canada-ich-inpatient",
+        "neuro-canada-ich-prevention",
+        "neuro-canada-stroke-swallowing",
+        "neuro-eso-eans-ich-2025",
+        "neuro-hopkins-stroke-effects",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-sah-s",
+        "stroke-diagnosis-nhs",
+        "stroke-recovery-nhs",
+        "stroke-symptoms-nhs"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "ICH-diet-support",
+          "status": "resolved",
+          "resolution": "NICE NG128 1.6.1-11 and1.8.1 plus Canadian6.1-6.2 directly support pre-oral screening, textures, tube feeding and nutrition reassessment."
+        },
+        {
+          "id": "ICH-brainstem-depth",
+          "status": "resolved",
+          "resolution": "Added bounded brainstem breathing/consciousness/swallow consequences and clinical support. ASA and StayWell-hosted Hopkins support anatomy; AHA/Canada support care."
+        },
+        {
+          "id": "ICH-medicine-depth",
+          "status": "resolved",
+          "resolution": "Warfarin PCC plus IV vitamin K and dabigatran idarucizumab differentiated; Xa pathway left locally determined; thrombosis balance explicit. AHA5.2.1 and Canada1.3 directly read."
+        },
+        {
+          "id": "ICH-action-types",
+          "status": "resolved",
+          "resolution": "Conditional treatment3-5 and medications2 now action; added treatment6 and medication4-5 also action."
+        },
+        {
+          "id": "ICH-source-provenance",
+          "status": "resolved",
+          "resolution": "ESO accurately relabeled author conference selected-recommendation slides, preserving prior actual slide reading."
+        },
+        {
+          "id": "ICH-leaf-scope",
+          "status": "resolved",
+          "resolution": "Secondary causes including hemorrhagic infarction now retained with cause-directed evaluation and no universal primary-ICH extrapolation; combined parenchymal/ventricular bleed explicit. Frozen WHO31519-31575 reread."
+        }
+      ],
+      "resolution": "Six findings resolved and search terms structurally present. Educational content acceptance; medical sign-off remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Separate guideline/patient authorship; same organization pages grouped together; shared authors and trials disclosed.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult spontaneous ICH guidance has regional agent availability and procedure selection differences; no universal Xa reversal agent, dose, operative rule or primary-ICH extrapolation to secondary lesions asserted."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json"
+  },
+  {
+    "id": "p0-03-ich-medications",
+    "target": {
+      "kind": "condition",
+      "id": "intracerebral-hemorrhage",
+      "section": "medications"
+    },
+    "content_sha256": "08c054f9048a42a1611dcc9252fe194d455457827ef52b042d807a3b93a9884e",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_independent_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-aha-ich-2022",
+        "source_metadata_sha256": "cd763d8c872bea38770c0458836997b9cc9f1b66a91bf6e81e77ae4a1cfc6d1b",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Public original PDF: pp 1-2 take-home; pp 6-8 pathophysiology/recognition; p 28 dysphagia; pp 35-36 hydrocephalus; p 42 cerebellar surgery; p 51 recurrence",
+        "source_version": "2022; Stroke 53:e282-e361",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-AHA-ASA",
+        "upstream_evidence": [
+          "AHA/ASA independent guideline group. Shares some authors including Cordonnier with ESO; overlapping trials with Canadian/ESO guidelines, not independent trial replication."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-canada-ich-emergency",
+        "source_metadata_sha256": "39941b36065e98253deaedfd6e601f0c26773020c5448eb744d12f02714d664a",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "1.1 assessment; 1.2 imaging; 1.3 blood pressure; 1.4 antithrombotics; 1.5 etiology; 1.6 surgical management",
+        "source_version": "2020 seventh edition",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "CA",
+        "independence_group": "CA-StrokeBestPractices",
+        "upstream_evidence": [
+          "Canadian guideline group; overlapping AHA/ESO trials. Older regional reversal-agent availability and exact cerebellar size threshold not generalized."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-canada-ich-inpatient",
+        "source_metadata_sha256": "54412ea5b6ee1e1ab4d549ec93b2321644610e0da7605cc5579088b5950d08bd",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "2.1 stroke unit; 2.2 VTE; 2.3 seizures; 2.4 intracranial pressure; 2.5 rehabilitation",
+        "source_version": "2020 seventh edition",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "CA",
+        "independence_group": "CA-StrokeBestPractices",
+        "upstream_evidence": [
+          "Same Canadian group as emergency and prevention; never counted as independent from those pages."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-canada-ich-prevention",
+        "source_metadata_sha256": "0724d82a9a2b7b8b594548ba655cb9f61bf4c5578d42f0b1747c0062b97545ec",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "3.1 assessment/recurrent risk; 3.2 lifestyle; 3.3 blood pressure; 3.4 antithrombotics; 3.5 statins; functional assessment",
+        "source_version": "2020 seventh edition",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "CA",
+        "independence_group": "CA-StrokeBestPractices",
+        "upstream_evidence": [
+          "Same Canadian authorship group; recommendations and trials overlap AHA/ESO."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-eso-eans-ich-2025",
+        "source_metadata_sha256": "a649d7fc442f6e4a331abce467ea2582c54f4e2e486f176ce5278d78cfaad425",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Original 49-page PDF: pp 8,15-16,25,30,32,35,38,40-41,46; web PDF and in-memory pypdf text for pp 28-48",
+        "source_version": "2025-05-22 ESOC Helsinki official author summary slides, not journal full text",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "Europe",
+        "independence_group": "ESO-EANS",
+        "upstream_evidence": [
+          "Independent European guideline group, overlapping authors/trials with AHA and Canadian. 2025 lobar minimally-invasive evidence differs from older general uncertainty; no superiority/effect number generalized."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-mayo-stroke-treatment",
+        "source_metadata_sha256": "f787d9e773c70fa01d8d4a2d09b1c8ec83a858413e8dfe6c90b10b355bde69a1",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+        "source_version": "Live page read 2026-10-03; exact review date not established",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-Mayo-Clinic",
+        "upstream_evidence": [
+          "Independent Mayo patient education; professional stroke-guideline literature shared. Broad hemorrhagic page also includes SAH; those aneurysm procedures not generalized to all ICH."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-ich-medications-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "药物重点是控制继续出血和处理并发症，药物种类由原来服药及检查结果决定。",
+          "en": "Medicines focus on limiting further bleeding and treating complications, with choice guided by prior treatment and test results."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.3-1.4",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-treatment",
+            "locator": "Hemorrhagic emergency measures",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-medications-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "若出血与抗凝药有关，医院会考虑逆转抗凝作用；不同抗凝药需要不同处理。把药名与最后服用时间告诉团队很重要，不能把所有“稀血药”当成一种药。",
+          "en": "For anticoagulant-associated bleeding, the hospital considers reversal; different anticoagulants need different approaches. Give the team the medicine name and last dose time rather than treating all blood thinners as interchangeable."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.1 medication history;1.3 agent-specific reversal",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          },
+          {
+            "source_id": "neuro-aha-ich-2022",
+            "locator": "Table4 medication timing;5.2.1 agent-specific reversal",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-medications-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "抗发作药用于有发作等适当指征者，并非每位脑出血患者都要预防性长期使用。是否恢复抗血小板或抗凝药，要再次权衡血栓与出血风险。",
+          "en": "Antiseizure treatment is used for appropriate indications such as seizures, rather than routinely for everyone. Restarting an antiplatelet or anticoagulant requires renewed balancing of clotting and bleeding risks."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-inpatient",
+            "locator": "2.3 seizures: no routine prophylaxis",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-eso-eans-ich-2025",
+            "locator": "pp38 and46: seizure prophylaxis; secondary prevention",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-canada-ich-prevention",
+            "locator": "3.4 antithrombotic decisions",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-medications-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "例如华法林属于维生素 K 拮抗剂，相关脑出血常用凝血酶原复合物补充凝血因子，并配合静脉维生素 K。达比加群属于另一类抗凝药，其特异逆转药是依达赛珠单抗；不能相互替代。",
+          "en": "Warfarin is a vitamin K antagonist; associated ICH is commonly treated with prothrombin complex concentrate to replace clotting factors together with intravenous vitamin K. Dabigatran is a different anticoagulant with the specific reversal agent idarucizumab; these approaches are not interchangeable."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.3 recommendations3,6",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          },
+          {
+            "source_id": "neuro-aha-ich-2022",
+            "locator": "5.2.1 recommendations2–3,6 and synopsis",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-medications-5",
+        "kind": "action",
+        "text": {
+          "zh-CN": "阿哌沙班、利伐沙班等 Xa 因子抑制剂又有不同的逆转路径，需考虑最后服药、肾功能、当地可用药物及现行方案。逆转与之后恢复抗栓治疗都要平衡止血和血栓风险，不能自行停换后续长期药物。",
+          "en": "Factor Xa inhibitors such as apixaban or rivaroxaban have another reversal pathway, considering the last dose, renal function, local availability and current protocols. Reversal and later resumption of antithrombotic treatment require balancing bleeding and clotting risks; do not independently change subsequent long-term medicines."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.3 agent-specific management, renal clearance, availability; evidence summary hemostasis",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          },
+          {
+            "source_id": "neuro-aha-ich-2022",
+            "locator": "5.2.1 DOAC recommendations and thrombotic risk;9.1.3 antithrombotic resumption",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          },
+          {
+            "source_id": "neuro-canada-ich-prevention",
+            "locator": "3.4 individualized antithrombotics",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_independent_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "neuro-aha-ich-2022",
+        "neuro-asa-brainstem",
+        "neuro-canada-ich-emergency",
+        "neuro-canada-ich-inpatient",
+        "neuro-canada-ich-prevention",
+        "neuro-canada-stroke-swallowing",
+        "neuro-eso-eans-ich-2025",
+        "neuro-hopkins-stroke-effects",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-sah-s",
+        "stroke-diagnosis-nhs",
+        "stroke-recovery-nhs",
+        "stroke-symptoms-nhs"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "ICH-diet-support",
+          "status": "resolved",
+          "resolution": "NICE NG128 1.6.1-11 and1.8.1 plus Canadian6.1-6.2 directly support pre-oral screening, textures, tube feeding and nutrition reassessment."
+        },
+        {
+          "id": "ICH-brainstem-depth",
+          "status": "resolved",
+          "resolution": "Added bounded brainstem breathing/consciousness/swallow consequences and clinical support. ASA and StayWell-hosted Hopkins support anatomy; AHA/Canada support care."
+        },
+        {
+          "id": "ICH-medicine-depth",
+          "status": "resolved",
+          "resolution": "Warfarin PCC plus IV vitamin K and dabigatran idarucizumab differentiated; Xa pathway left locally determined; thrombosis balance explicit. AHA5.2.1 and Canada1.3 directly read."
+        },
+        {
+          "id": "ICH-action-types",
+          "status": "resolved",
+          "resolution": "Conditional treatment3-5 and medications2 now action; added treatment6 and medication4-5 also action."
+        },
+        {
+          "id": "ICH-source-provenance",
+          "status": "resolved",
+          "resolution": "ESO accurately relabeled author conference selected-recommendation slides, preserving prior actual slide reading."
+        },
+        {
+          "id": "ICH-leaf-scope",
+          "status": "resolved",
+          "resolution": "Secondary causes including hemorrhagic infarction now retained with cause-directed evaluation and no universal primary-ICH extrapolation; combined parenchymal/ventricular bleed explicit. Frozen WHO31519-31575 reread."
+        }
+      ],
+      "resolution": "Six findings resolved and search terms structurally present. Educational content acceptance; medical sign-off remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Separate guideline/patient authorship; same organization pages grouped together; shared authors and trials disclosed.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult spontaneous ICH guidance has regional agent availability and procedure selection differences; no universal Xa reversal agent, dose, operative rule or primary-ICH extrapolation to secondary lesions asserted."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json"
+  },
+  {
+    "id": "p0-03-ich-diet",
+    "target": {
+      "kind": "condition",
+      "id": "intracerebral-hemorrhage",
+      "section": "diet"
+    },
+    "content_sha256": "87efe91566a16beb85aa87bf186cb2af5b507c3c62f44f6acc337671c194911b",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_independent_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-canada-stroke-swallowing",
+        "source_metadata_sha256": "55674c18770399d38ec534b6a2f0f7454bc96a9fc12dacf14f698590d8efbb46",
+        "relation": "supports",
+        "assessment": "Author source read; independent claim verification pending.",
+        "locator": "6.1 swallowing and feeding; 6.2 nutrition; 6.3 oral health; rationale and evidence limitations",
+        "source_version": "2025 rehabilitation update",
+        "population": "People with stroke; general swallowing safety, not a SAH-specific trial",
+        "region": "CA",
+        "independence_group": "CA-StrokeBestPractices",
+        "upstream_evidence": [
+          "Independent Canadian guideline authors; overlapping dysphagia systematic reviews with NICE/AHA."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-sah-s",
+        "source_metadata_sha256": "66d700116201b862e7fc6cab479da2a60f74faf7528d2b88d324d7663737fad4",
+        "relation": "supports",
+        "assessment": "Author source read; independent claim verification pending.",
+        "locator": "1.6.1-1.6.11 swallowing/nutrition; 1.8.1 aspiration avoidance",
+        "source_version": "NG128; swallowing recommendations 2008, amended 2019",
+        "population": "Acute stroke over 16; shared swallowing safety",
+        "region": "GB",
+        "independence_group": "UK-NICE",
+        "upstream_evidence": [
+          "Separate editorial bodies, not independent trial replications. AHA/NICE overlap in clinical literature. Mayo cites AHA 2012, textbooks and UpToDate. OUH links NHS; CUH cites Flaherty 2005. UK trusts are distinct authors, with related NHS service context."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-ich-diet-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "急性期在首次吃喝或口服药前，先由受训人员筛查吞咽，不应等到呛咳才评估。",
+          "en": "In the acute phase, trained staff screen swallowing before the first food, drink or oral medicine; assessment should not wait for coughing."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-stroke-swallowing",
+            "locator": "6.1 screening before oral intake",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          },
+          {
+            "source_id": "neuro-sah-s",
+            "locator": "NG128 1.6.1 swallowing before oral food/fluid/medication",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-diet-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "卒中可能影响把食物安全送入食管的能力，导致食物或液体进入气道；筛查不通过时需要进一步吞咽评估。",
+          "en": "Stroke may impair the safe passage of food into the oesophagus, allowing food or fluids to enter the airway; an unsuccessful screen requires further swallowing assessment."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-stroke-swallowing",
+            "locator": "6.1 dysphagia and aspiration assessment",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          },
+          {
+            "source_id": "neuro-sah-s",
+            "locator": "NG128 1.6.2–1.6.4 specialist swallowing assessment",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-diet-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "按吞咽评估建议选择食物和饮料质地；不能安全或充分进食时，团队会评估管饲，不能强行喂水。",
+          "en": "Use the food and drink textures advised after swallowing assessment; when oral intake is unsafe or insufficient, the team assesses tube feeding rather than forcing fluids."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-stroke-swallowing",
+            "locator": "6.1 texture modification and enteral feeding",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          },
+          {
+            "source_id": "neuro-sah-s",
+            "locator": "NG128 1.6.4–1.6.11 modified intake, nutrition and enteral feeding",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-diet-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "团队还要评估营养不足与脱水，按需要请营养师调整摄入；吞咽方式和营养计划随恢复情况复评。",
+          "en": "The team also assesses malnutrition and dehydration, involving a dietitian to adjust intake when needed; swallowing and nutrition plans are reassessed during recovery."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-stroke-swallowing",
+            "locator": "6.1 reassessment;6.2 nutrition and hydration",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          },
+          {
+            "source_id": "neuro-sah-s",
+            "locator": "NG128 1.6 nutrition support and swallowing reassessment",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_independent_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "neuro-aha-ich-2022",
+        "neuro-asa-brainstem",
+        "neuro-canada-ich-emergency",
+        "neuro-canada-ich-inpatient",
+        "neuro-canada-ich-prevention",
+        "neuro-canada-stroke-swallowing",
+        "neuro-eso-eans-ich-2025",
+        "neuro-hopkins-stroke-effects",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-sah-s",
+        "stroke-diagnosis-nhs",
+        "stroke-recovery-nhs",
+        "stroke-symptoms-nhs"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "ICH-diet-support",
+          "status": "resolved",
+          "resolution": "NICE NG128 1.6.1-11 and1.8.1 plus Canadian6.1-6.2 directly support pre-oral screening, textures, tube feeding and nutrition reassessment."
+        },
+        {
+          "id": "ICH-brainstem-depth",
+          "status": "resolved",
+          "resolution": "Added bounded brainstem breathing/consciousness/swallow consequences and clinical support. ASA and StayWell-hosted Hopkins support anatomy; AHA/Canada support care."
+        },
+        {
+          "id": "ICH-medicine-depth",
+          "status": "resolved",
+          "resolution": "Warfarin PCC plus IV vitamin K and dabigatran idarucizumab differentiated; Xa pathway left locally determined; thrombosis balance explicit. AHA5.2.1 and Canada1.3 directly read."
+        },
+        {
+          "id": "ICH-action-types",
+          "status": "resolved",
+          "resolution": "Conditional treatment3-5 and medications2 now action; added treatment6 and medication4-5 also action."
+        },
+        {
+          "id": "ICH-source-provenance",
+          "status": "resolved",
+          "resolution": "ESO accurately relabeled author conference selected-recommendation slides, preserving prior actual slide reading."
+        },
+        {
+          "id": "ICH-leaf-scope",
+          "status": "resolved",
+          "resolution": "Secondary causes including hemorrhagic infarction now retained with cause-directed evaluation and no universal primary-ICH extrapolation; combined parenchymal/ventricular bleed explicit. Frozen WHO31519-31575 reread."
+        }
+      ],
+      "resolution": "Six findings resolved and search terms structurally present. Educational content acceptance; medical sign-off remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Separate guideline/patient authorship; same organization pages grouped together; shared authors and trials disclosed.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult spontaneous ICH guidance has regional agent availability and procedure selection differences; no universal Xa reversal agent, dose, operative rule or primary-ICH extrapolation to secondary lesions asserted."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json"
+  },
+  {
+    "id": "p0-03-ich-daily_care",
+    "target": {
+      "kind": "condition",
+      "id": "intracerebral-hemorrhage",
+      "section": "daily_care"
+    },
+    "content_sha256": "cd1f4eededae56fedc77bfc26ff6cdebf9fa23d626395bee0e885bf40760e2b5",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_independent_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-mayo-stroke-treatment",
+        "source_metadata_sha256": "f787d9e773c70fa01d8d4a2d09b1c8ec83a858413e8dfe6c90b10b355bde69a1",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+        "source_version": "Live page read 2026-10-03; exact review date not established",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-Mayo-Clinic",
+        "upstream_evidence": [
+          "Independent Mayo patient education; professional stroke-guideline literature shared. Broad hemorrhagic page also includes SAH; those aneurysm procedures not generalized to all ICH."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "stroke-recovery-nhs",
+        "source_metadata_sha256": "cd495b46cf419305ef22f577bd0a8aab18778f82450ac8c58b54393441967ebe",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Movement, cognition, speech, swallowing, mood, bladder/bowel, discharge support and reviews",
+        "source_version": "2024-09-12",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independent editorial authorship; standard stroke evidence may overlap."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-ich-daily_care-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "康复应围绕可做到的具体任务。",
+          "en": "Rehabilitation should use achievable everyday tasks."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-recovery-nhs",
+            "locator": "Rehabilitation: movement, speech, cognition, mood and home support",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-treatment",
+            "locator": "Stroke recovery and rehabilitation; coping and communication",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-daily_care-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "按团队安排练习移动、穿衣和日常活动，逐步调整目标。",
+          "en": "Practise movement, dressing and daily activities with goals adjusted by the team."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-recovery-nhs",
+            "locator": "Rehabilitation: movement, speech, cognition, mood and home support",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-treatment",
+            "locator": "Stroke recovery and rehabilitation; coping and communication",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-daily_care-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "言语、认知、情绪和疲劳问题也需要支持，并非只有肢体训练。",
+          "en": "Speech, thinking, mood and fatigue deserve support alongside limb exercises."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-recovery-nhs",
+            "locator": "Rehabilitation: movement, speech, cognition, mood and home support",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-treatment",
+            "locator": "Stroke recovery and rehabilitation; coping and communication",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-daily_care-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "根据功能安排家居辅助设备、照护和复工计划，避免独自承担全部困难。",
+          "en": "Plan home aids, care support and return to work according to function."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-recovery-nhs",
+            "locator": "Rehabilitation: movement, speech, cognition, mood and home support",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-treatment",
+            "locator": "Stroke recovery and rehabilitation; coping and communication",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_independent_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "neuro-aha-ich-2022",
+        "neuro-asa-brainstem",
+        "neuro-canada-ich-emergency",
+        "neuro-canada-ich-inpatient",
+        "neuro-canada-ich-prevention",
+        "neuro-canada-stroke-swallowing",
+        "neuro-eso-eans-ich-2025",
+        "neuro-hopkins-stroke-effects",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-sah-s",
+        "stroke-diagnosis-nhs",
+        "stroke-recovery-nhs",
+        "stroke-symptoms-nhs"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "ICH-diet-support",
+          "status": "resolved",
+          "resolution": "NICE NG128 1.6.1-11 and1.8.1 plus Canadian6.1-6.2 directly support pre-oral screening, textures, tube feeding and nutrition reassessment."
+        },
+        {
+          "id": "ICH-brainstem-depth",
+          "status": "resolved",
+          "resolution": "Added bounded brainstem breathing/consciousness/swallow consequences and clinical support. ASA and StayWell-hosted Hopkins support anatomy; AHA/Canada support care."
+        },
+        {
+          "id": "ICH-medicine-depth",
+          "status": "resolved",
+          "resolution": "Warfarin PCC plus IV vitamin K and dabigatran idarucizumab differentiated; Xa pathway left locally determined; thrombosis balance explicit. AHA5.2.1 and Canada1.3 directly read."
+        },
+        {
+          "id": "ICH-action-types",
+          "status": "resolved",
+          "resolution": "Conditional treatment3-5 and medications2 now action; added treatment6 and medication4-5 also action."
+        },
+        {
+          "id": "ICH-source-provenance",
+          "status": "resolved",
+          "resolution": "ESO accurately relabeled author conference selected-recommendation slides, preserving prior actual slide reading."
+        },
+        {
+          "id": "ICH-leaf-scope",
+          "status": "resolved",
+          "resolution": "Secondary causes including hemorrhagic infarction now retained with cause-directed evaluation and no universal primary-ICH extrapolation; combined parenchymal/ventricular bleed explicit. Frozen WHO31519-31575 reread."
+        }
+      ],
+      "resolution": "Six findings resolved and search terms structurally present. Educational content acceptance; medical sign-off remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Separate guideline/patient authorship; same organization pages grouped together; shared authors and trials disclosed.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult spontaneous ICH guidance has regional agent availability and procedure selection differences; no universal Xa reversal agent, dose, operative rule or primary-ICH extrapolation to secondary lesions asserted."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json"
+  },
+  {
+    "id": "p0-03-ich-special_populations",
+    "target": {
+      "kind": "condition",
+      "id": "intracerebral-hemorrhage",
+      "section": "special_populations"
+    },
+    "content_sha256": "bed7a7972d0cdbc55218f31e5bf02ae18d17b0e5abac94352f45da510ffaeb74",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_independent_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-aha-ich-2022",
+        "source_metadata_sha256": "cd763d8c872bea38770c0458836997b9cc9f1b66a91bf6e81e77ae4a1cfc6d1b",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Public original PDF: pp 1-2 take-home; pp 6-8 pathophysiology/recognition; p 28 dysphagia; pp 35-36 hydrocephalus; p 42 cerebellar surgery; p 51 recurrence",
+        "source_version": "2022; Stroke 53:e282-e361",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-AHA-ASA",
+        "upstream_evidence": [
+          "AHA/ASA independent guideline group. Shares some authors including Cordonnier with ESO; overlapping trials with Canadian/ESO guidelines, not independent trial replication."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-canada-ich-emergency",
+        "source_metadata_sha256": "39941b36065e98253deaedfd6e601f0c26773020c5448eb744d12f02714d664a",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "1.1 assessment; 1.2 imaging; 1.3 blood pressure; 1.4 antithrombotics; 1.5 etiology; 1.6 surgical management",
+        "source_version": "2020 seventh edition",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "CA",
+        "independence_group": "CA-StrokeBestPractices",
+        "upstream_evidence": [
+          "Canadian guideline group; overlapping AHA/ESO trials. Older regional reversal-agent availability and exact cerebellar size threshold not generalized."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-mayo-stroke-causes",
+        "source_metadata_sha256": "ab1348530b399f5588e57a72c116c993d9b6447cda624a0337becd5d002c24b4",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy",
+        "source_version": "Live page read 2026-10-03",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-Mayo-Clinic",
+        "upstream_evidence": [
+          "Independent editorial authorship; standard stroke evidence may overlap."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-ich-special_populations-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "既往健康、年龄与其他用药会改变检查和治疗选择，但不会降低急救的必要性。",
+          "en": "Prior health, age and other medicines influence investigations and treatment without removing the need for emergency care."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.1 and1.5 history/age",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-causes",
+            "locator": "Age and risk factors; emergency recognition",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-special_populations-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "年轻患者或没有典型高血压背景时，团队更需考虑血管结构等继发原因；年长者则可能同时有小血管病和抗凝治疗需求。不能仅以年龄决定是否继续积极治疗。",
+          "en": "In younger people or without a typical hypertension history, vascular and other secondary causes merit attention. Older people may have both small-vessel disease and a need for anticoagulation. Age alone should not determine whether active treatment continues."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-emergency",
+            "locator": "1.5 secondary causes and age; prognosis individualized",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-aha-ich-2022",
+            "locator": "Pathogenesis; treatment-limitation shared decisions",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_independent_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "neuro-aha-ich-2022",
+        "neuro-asa-brainstem",
+        "neuro-canada-ich-emergency",
+        "neuro-canada-ich-inpatient",
+        "neuro-canada-ich-prevention",
+        "neuro-canada-stroke-swallowing",
+        "neuro-eso-eans-ich-2025",
+        "neuro-hopkins-stroke-effects",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-sah-s",
+        "stroke-diagnosis-nhs",
+        "stroke-recovery-nhs",
+        "stroke-symptoms-nhs"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "ICH-diet-support",
+          "status": "resolved",
+          "resolution": "NICE NG128 1.6.1-11 and1.8.1 plus Canadian6.1-6.2 directly support pre-oral screening, textures, tube feeding and nutrition reassessment."
+        },
+        {
+          "id": "ICH-brainstem-depth",
+          "status": "resolved",
+          "resolution": "Added bounded brainstem breathing/consciousness/swallow consequences and clinical support. ASA and StayWell-hosted Hopkins support anatomy; AHA/Canada support care."
+        },
+        {
+          "id": "ICH-medicine-depth",
+          "status": "resolved",
+          "resolution": "Warfarin PCC plus IV vitamin K and dabigatran idarucizumab differentiated; Xa pathway left locally determined; thrombosis balance explicit. AHA5.2.1 and Canada1.3 directly read."
+        },
+        {
+          "id": "ICH-action-types",
+          "status": "resolved",
+          "resolution": "Conditional treatment3-5 and medications2 now action; added treatment6 and medication4-5 also action."
+        },
+        {
+          "id": "ICH-source-provenance",
+          "status": "resolved",
+          "resolution": "ESO accurately relabeled author conference selected-recommendation slides, preserving prior actual slide reading."
+        },
+        {
+          "id": "ICH-leaf-scope",
+          "status": "resolved",
+          "resolution": "Secondary causes including hemorrhagic infarction now retained with cause-directed evaluation and no universal primary-ICH extrapolation; combined parenchymal/ventricular bleed explicit. Frozen WHO31519-31575 reread."
+        }
+      ],
+      "resolution": "Six findings resolved and search terms structurally present. Educational content acceptance; medical sign-off remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Separate guideline/patient authorship; same organization pages grouped together; shared authors and trials disclosed.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult spontaneous ICH guidance has regional agent availability and procedure selection differences; no universal Xa reversal agent, dose, operative rule or primary-ICH extrapolation to secondary lesions asserted."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json"
+  },
+  {
+    "id": "p0-03-ich-prognosis_followup",
+    "target": {
+      "kind": "condition",
+      "id": "intracerebral-hemorrhage",
+      "section": "prognosis_followup"
+    },
+    "content_sha256": "a2fe937ce12af8a56dbba89a3ea7687fb8602921d7433ba731d3211b94c58107",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_independent_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-mayo-stroke-treatment",
+        "source_metadata_sha256": "f787d9e773c70fa01d8d4a2d09b1c8ec83a858413e8dfe6c90b10b355bde69a1",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+        "source_version": "Live page read 2026-10-03; exact review date not established",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-Mayo-Clinic",
+        "upstream_evidence": [
+          "Independent Mayo patient education; professional stroke-guideline literature shared. Broad hemorrhagic page also includes SAH; those aneurysm procedures not generalized to all ICH."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "stroke-recovery-nhs",
+        "source_metadata_sha256": "cd495b46cf419305ef22f577bd0a8aab18778f82450ac8c58b54393441967ebe",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Movement, cognition, speech, swallowing, mood, bladder/bowel, discharge support and reviews",
+        "source_version": "2024-09-12",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independent editorial authorship; standard stroke evidence may overlap."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-ich-prognosis_followup-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "恢复速度存在很大差异。",
+          "en": "Recovery rates vary greatly."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-recovery-nhs",
+            "locator": "Recovery and care-plan review",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-treatment",
+            "locator": "Recovery and rehabilitation",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-prognosis_followup-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "有人在数天或数周明显改善，也有人需要数月或数年支持。",
+          "en": "Some improve over days or weeks; others need months or years of support."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-recovery-nhs",
+            "locator": "Recovery and care-plan review",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-treatment",
+            "locator": "Recovery and rehabilitation",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-prognosis_followup-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "复诊检查血压、用药、复发风险和康复目标是否合适。",
+          "en": "Follow-up reviews blood pressure, medicines, recurrence risks and rehabilitation goals."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-recovery-nhs",
+            "locator": "Recovery and care-plan review",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-treatment",
+            "locator": "Recovery and rehabilitation",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-prognosis_followup-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "同时评估吞咽、情绪、认知和照护需求，持续困难仍可继续寻求帮助。",
+          "en": "Swallowing, mood, cognition and care needs also need reassessment; persistent difficulties still deserve help."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-recovery-nhs",
+            "locator": "Recovery and care-plan review",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-treatment",
+            "locator": "Recovery and rehabilitation",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_independent_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "neuro-aha-ich-2022",
+        "neuro-asa-brainstem",
+        "neuro-canada-ich-emergency",
+        "neuro-canada-ich-inpatient",
+        "neuro-canada-ich-prevention",
+        "neuro-canada-stroke-swallowing",
+        "neuro-eso-eans-ich-2025",
+        "neuro-hopkins-stroke-effects",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-sah-s",
+        "stroke-diagnosis-nhs",
+        "stroke-recovery-nhs",
+        "stroke-symptoms-nhs"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "ICH-diet-support",
+          "status": "resolved",
+          "resolution": "NICE NG128 1.6.1-11 and1.8.1 plus Canadian6.1-6.2 directly support pre-oral screening, textures, tube feeding and nutrition reassessment."
+        },
+        {
+          "id": "ICH-brainstem-depth",
+          "status": "resolved",
+          "resolution": "Added bounded brainstem breathing/consciousness/swallow consequences and clinical support. ASA and StayWell-hosted Hopkins support anatomy; AHA/Canada support care."
+        },
+        {
+          "id": "ICH-medicine-depth",
+          "status": "resolved",
+          "resolution": "Warfarin PCC plus IV vitamin K and dabigatran idarucizumab differentiated; Xa pathway left locally determined; thrombosis balance explicit. AHA5.2.1 and Canada1.3 directly read."
+        },
+        {
+          "id": "ICH-action-types",
+          "status": "resolved",
+          "resolution": "Conditional treatment3-5 and medications2 now action; added treatment6 and medication4-5 also action."
+        },
+        {
+          "id": "ICH-source-provenance",
+          "status": "resolved",
+          "resolution": "ESO accurately relabeled author conference selected-recommendation slides, preserving prior actual slide reading."
+        },
+        {
+          "id": "ICH-leaf-scope",
+          "status": "resolved",
+          "resolution": "Secondary causes including hemorrhagic infarction now retained with cause-directed evaluation and no universal primary-ICH extrapolation; combined parenchymal/ventricular bleed explicit. Frozen WHO31519-31575 reread."
+        }
+      ],
+      "resolution": "Six findings resolved and search terms structurally present. Educational content acceptance; medical sign-off remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Separate guideline/patient authorship; same organization pages grouped together; shared authors and trials disclosed.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult spontaneous ICH guidance has regional agent availability and procedure selection differences; no universal Xa reversal agent, dose, operative rule or primary-ICH extrapolation to secondary lesions asserted."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json"
+  },
+  {
+    "id": "p0-03-ich-complications",
+    "target": {
+      "kind": "condition",
+      "id": "intracerebral-hemorrhage",
+      "section": "complications"
+    },
+    "content_sha256": "18b5bc51ed270609c169e3dddfe28a0087b236ca83b8c143eb9421458bc25667",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_independent_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-asa-brainstem",
+        "locator": "Symptoms; consciousness/breathing; clot or hemorrhage",
+        "source_version": "2023-06-23",
+        "population": "Brainstem stroke, including ischemic and hemorrhagic; only shared anatomical consequences used.",
+        "region": "US",
+        "independence_group": "AHA-ASA",
+        "upstream_evidence": [
+          "Institutionally authored education; ASA and AHA count as one group; shared literature not asserted independent."
+        ],
+        "accessed_at": "2026-10-03",
+        "source_metadata_sha256": "65e31c84daf626118b91f02b2b688647a12f8ae70491f0c7104fcc47be2c5752",
+        "relation": "supports",
+        "assessment": "Actual read; scoped claim below, pending review."
+      },
+      {
+        "source_id": "neuro-hopkins-stroke-effects",
+        "locator": "Effects of a stroke in the brainstem",
+        "source_version": "Undated current original HTML",
+        "population": "Brainstem stroke, including ischemic and hemorrhagic; only shared anatomical consequences used.",
+        "region": "US",
+        "independence_group": "STAYWELL",
+        "upstream_evidence": [
+          "Syndicated StayWell patient education hosted by Johns Hopkins; identical content is not a second independent source. Independently edited from ASA material, no claim of separate underlying research."
+        ],
+        "accessed_at": "2026-10-03",
+        "source_metadata_sha256": "27529071245d6d43931737deefbcd75e6c5eb3435954ca850a39f13528bcea51",
+        "relation": "supports",
+        "assessment": "Actual read; scoped claim below, pending review."
+      },
+      {
+        "source_id": "neuro-mayo-stroke-treatment",
+        "source_metadata_sha256": "f787d9e773c70fa01d8d4a2d09b1c8ec83a858413e8dfe6c90b10b355bde69a1",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+        "source_version": "Live page read 2026-10-03; exact review date not established",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-Mayo-Clinic",
+        "upstream_evidence": [
+          "Independent Mayo patient education; professional stroke-guideline literature shared. Broad hemorrhagic page also includes SAH; those aneurysm procedures not generalized to all ICH."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "stroke-recovery-nhs",
+        "source_metadata_sha256": "cd495b46cf419305ef22f577bd0a8aab18778f82450ac8c58b54393441967ebe",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Movement, cognition, speech, swallowing, mood, bladder/bowel, discharge support and reviews",
+        "source_version": "2024-09-12",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independent editorial authorship; standard stroke evidence may overlap."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-ich-complications-1",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "后果取决于受损脑区和严重程度。",
+          "en": "Effects depend on the brain area and severity."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-recovery-nhs",
+            "locator": "Movement, swallowing, cognition, vision, bladder/bowel and mood",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-treatment",
+            "locator": "Recovery; location-dependent deficits; coping",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-complications-2",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "可能遗留无力、步行困难、言语或理解障碍。",
+          "en": "Weakness, walking difficulty and speech or understanding problems may persist."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-recovery-nhs",
+            "locator": "Movement, swallowing, cognition, vision, bladder/bowel and mood",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-treatment",
+            "locator": "Recovery; location-dependent deficits; coping",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-complications-3",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "吞咽、记忆、视力及大小便控制也可能受影响。",
+          "en": "Swallowing, memory, vision and bladder or bowel control can also be affected."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-recovery-nhs",
+            "locator": "Movement, swallowing, cognition, vision, bladder/bowel and mood",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-treatment",
+            "locator": "Recovery; location-dependent deficits; coping",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-complications-4",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "情绪低落和疲劳可能持续；这些问题需要针对性康复和支持。",
+          "en": "Low mood and fatigue may continue and need targeted rehabilitation and support."
+        },
+        "supports": [
+          {
+            "source_id": "stroke-recovery-nhs",
+            "locator": "Movement, swallowing, cognition, vision, bladder/bowel and mood",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-treatment",
+            "locator": "Recovery; location-dependent deficits; coping",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-complications-5",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "脑干参与呼吸、清醒程度及吞咽等重要功能。这里的出血可出现意识下降、呼吸或吞咽困难，即使没有典型的一侧无力，也不能据此认为危险较小。",
+          "en": "The brainstem contributes to breathing, alertness and swallowing. Bleeding here can cause reduced consciousness, breathing or swallowing difficulty; absence of typical one-sided weakness does not establish low risk."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-hopkins-stroke-effects",
+            "locator": "Brainstem effects: breathing, swallowing, coma",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          },
+          {
+            "source_id": "neuro-asa-brainstem",
+            "locator": "Complex symptoms without one-sided weakness; consciousness/breathing; hemorrhage",
+            "assessment": "Actual original supports scoped proposition; pending independent review."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_independent_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "neuro-aha-ich-2022",
+        "neuro-asa-brainstem",
+        "neuro-canada-ich-emergency",
+        "neuro-canada-ich-inpatient",
+        "neuro-canada-ich-prevention",
+        "neuro-canada-stroke-swallowing",
+        "neuro-eso-eans-ich-2025",
+        "neuro-hopkins-stroke-effects",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-sah-s",
+        "stroke-diagnosis-nhs",
+        "stroke-recovery-nhs",
+        "stroke-symptoms-nhs"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "ICH-diet-support",
+          "status": "resolved",
+          "resolution": "NICE NG128 1.6.1-11 and1.8.1 plus Canadian6.1-6.2 directly support pre-oral screening, textures, tube feeding and nutrition reassessment."
+        },
+        {
+          "id": "ICH-brainstem-depth",
+          "status": "resolved",
+          "resolution": "Added bounded brainstem breathing/consciousness/swallow consequences and clinical support. ASA and StayWell-hosted Hopkins support anatomy; AHA/Canada support care."
+        },
+        {
+          "id": "ICH-medicine-depth",
+          "status": "resolved",
+          "resolution": "Warfarin PCC plus IV vitamin K and dabigatran idarucizumab differentiated; Xa pathway left locally determined; thrombosis balance explicit. AHA5.2.1 and Canada1.3 directly read."
+        },
+        {
+          "id": "ICH-action-types",
+          "status": "resolved",
+          "resolution": "Conditional treatment3-5 and medications2 now action; added treatment6 and medication4-5 also action."
+        },
+        {
+          "id": "ICH-source-provenance",
+          "status": "resolved",
+          "resolution": "ESO accurately relabeled author conference selected-recommendation slides, preserving prior actual slide reading."
+        },
+        {
+          "id": "ICH-leaf-scope",
+          "status": "resolved",
+          "resolution": "Secondary causes including hemorrhagic infarction now retained with cause-directed evaluation and no universal primary-ICH extrapolation; combined parenchymal/ventricular bleed explicit. Frozen WHO31519-31575 reread."
+        }
+      ],
+      "resolution": "Six findings resolved and search terms structurally present. Educational content acceptance; medical sign-off remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Separate guideline/patient authorship; same organization pages grouped together; shared authors and trials disclosed.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult spontaneous ICH guidance has regional agent availability and procedure selection differences; no universal Xa reversal agent, dose, operative rule or primary-ICH extrapolation to secondary lesions asserted."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json"
+  },
+  {
+    "id": "p0-03-ich-prevention",
+    "target": {
+      "kind": "condition",
+      "id": "intracerebral-hemorrhage",
+      "section": "prevention"
+    },
+    "content_sha256": "87f11bfc810902d7fd2b0ac878a636e1d06b3533393a85ae9beb5358ce0b9592",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_independent_finish",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "neuro-canada-ich-prevention",
+        "source_metadata_sha256": "0724d82a9a2b7b8b594548ba655cb9f61bf4c5578d42f0b1747c0062b97545ec",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "3.1 assessment/recurrent risk; 3.2 lifestyle; 3.3 blood pressure; 3.4 antithrombotics; 3.5 statins; functional assessment",
+        "source_version": "2020 seventh edition",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "CA",
+        "independence_group": "CA-StrokeBestPractices",
+        "upstream_evidence": [
+          "Same Canadian authorship group; recommendations and trials overlap AHA/ESO."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-eso-eans-ich-2025",
+        "source_metadata_sha256": "a649d7fc442f6e4a331abce467ea2582c54f4e2e486f176ce5278d78cfaad425",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Original 49-page PDF: pp 8,15-16,25,30,32,35,38,40-41,46; web PDF and in-memory pypdf text for pp 28-48",
+        "source_version": "2025-05-22 ESOC Helsinki official author summary slides, not journal full text",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "Europe",
+        "independence_group": "ESO-EANS",
+        "upstream_evidence": [
+          "Independent European guideline group, overlapping authors/trials with AHA and Canadian. 2025 lobar minimally-invasive evidence differs from older general uncertainty; no superiority/effect number generalized."
+        ],
+        "accessed_at": "2026-10-03"
+      },
+      {
+        "source_id": "neuro-mayo-stroke-causes",
+        "source_metadata_sha256": "ab1348530b399f5588e57a72c116c993d9b6447cda624a0337becd5d002c24b4",
+        "relation": "supports",
+        "assessment": "Source scope and shared evidence recorded; not independent medical sign-off.",
+        "locator": "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy",
+        "source_version": "Live page read 2026-10-03",
+        "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+        "region": "US",
+        "independence_group": "US-Mayo-Clinic",
+        "upstream_evidence": [
+          "Independent editorial authorship; standard stroke evidence may overlap."
+        ],
+        "accessed_at": "2026-10-03"
+      }
+    ],
+    "claims": [
+      {
+        "id": "p0-03-ich-prevention-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "防止再出血要处理已经识别的病因，并持续管理血管风险。",
+          "en": "Preventing another bleed means addressing the identified cause and continuing vascular-risk management."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-prevention",
+            "locator": "3.1-3.3",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-mayo-stroke-causes",
+            "locator": "Prevention and risk factors",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-prevention-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "按团队计划监测和治疗高血压，戒烟，恢复适合自己的活动，并减少不健康饮酒。长期控制与急诊快速降压是不同阶段，不应自行套用急性期目标。",
+          "en": "Monitor and treat hypertension under the agreed plan, stop smoking, resume suitable activity and address unhealthy alcohol use. Long-term control and monitored acute lowering are different stages; do not copy acute targets yourself."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-prevention",
+            "locator": "3.2 lifestyle;3.3 BP",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-eso-eans-ich-2025",
+            "locator": "pp15-16 acute versus secondary BP; p46 secondary prevention",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-ich-prevention-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "复诊时核对是否仍需抗凝、抗血小板或调脂药；既不能因害怕出血全部停药，也不能因有心脑血管病自行恢复。应根据个人出血原因与缺血风险共同决策。",
+          "en": "Review the need for anticoagulants, antiplatelets and lipid treatment at follow-up. Neither stopping everything from fear of bleeding nor restarting independently for vascular disease is appropriate; decisions depend on the bleeding cause and ischemic risk."
+        },
+        "supports": [
+          {
+            "source_id": "neuro-canada-ich-prevention",
+            "locator": "3.4-3.5 individual antithrombotic/statin indication",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          },
+          {
+            "source_id": "neuro-eso-eans-ich-2025",
+            "locator": "p46 secondary prevention and individual risk-benefit",
+            "assessment": "Supports the scoped proposition; author binding pending independent verification."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_neurology",
+      "reviewer": "/root/astra_independent_finish",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "neuro-aha-ich-2022",
+        "neuro-asa-brainstem",
+        "neuro-canada-ich-emergency",
+        "neuro-canada-ich-inpatient",
+        "neuro-canada-ich-prevention",
+        "neuro-canada-stroke-swallowing",
+        "neuro-eso-eans-ich-2025",
+        "neuro-hopkins-stroke-effects",
+        "neuro-mayo-stroke-causes",
+        "neuro-mayo-stroke-treatment",
+        "neuro-sah-s",
+        "stroke-diagnosis-nhs",
+        "stroke-recovery-nhs",
+        "stroke-symptoms-nhs"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "id": "ICH-diet-support",
+          "status": "resolved",
+          "resolution": "NICE NG128 1.6.1-11 and1.8.1 plus Canadian6.1-6.2 directly support pre-oral screening, textures, tube feeding and nutrition reassessment."
+        },
+        {
+          "id": "ICH-brainstem-depth",
+          "status": "resolved",
+          "resolution": "Added bounded brainstem breathing/consciousness/swallow consequences and clinical support. ASA and StayWell-hosted Hopkins support anatomy; AHA/Canada support care."
+        },
+        {
+          "id": "ICH-medicine-depth",
+          "status": "resolved",
+          "resolution": "Warfarin PCC plus IV vitamin K and dabigatran idarucizumab differentiated; Xa pathway left locally determined; thrombosis balance explicit. AHA5.2.1 and Canada1.3 directly read."
+        },
+        {
+          "id": "ICH-action-types",
+          "status": "resolved",
+          "resolution": "Conditional treatment3-5 and medications2 now action; added treatment6 and medication4-5 also action."
+        },
+        {
+          "id": "ICH-source-provenance",
+          "status": "resolved",
+          "resolution": "ESO accurately relabeled author conference selected-recommendation slides, preserving prior actual slide reading."
+        },
+        {
+          "id": "ICH-leaf-scope",
+          "status": "resolved",
+          "resolution": "Secondary causes including hemorrhagic infarction now retained with cause-directed evaluation and no universal primary-ICH extrapolation; combined parenchymal/ventricular bleed explicit. Frozen WHO31519-31575 reread."
+        }
+      ],
+      "resolution": "Six findings resolved and search terms structurally present. Educational content acceptance; medical sign-off remains false. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Separate guideline/patient authorship; same organization pages grouped together; shared authors and trials disclosed.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult spontaneous ICH guidance has regional agent availability and procedure selection differences; no universal Xa reversal agent, dose, operative rule or primary-ICH extrapolation to secondary lesions asserted."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-intracerebral-hemorrhage-independent.json"
+  }
+]

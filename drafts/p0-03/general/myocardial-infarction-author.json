@@ -1,0 +1,97 @@
+{
+  "author": "/root",
+  "status": "awaiting_independent_review",
+  "medical_reviewed": false,
+  "checked_at": "2026-10-03",
+  "base_commit": "f2c5cd8d400b04ad97947b5fa4cfdd5989379283",
+  "topic": "myocardial-infarction",
+  "changed_sections": [
+    "diagnosis",
+    "summary"
+  ],
+  "claims_added": 3,
+  "source_reads": [
+    {
+      "source_id": "mi-udmi-2026",
+      "url": "https://academic.oup.com/eurheartj/advance-article/doi/10.1093/eurheartj/ehag101/8766309?login=false",
+      "accessed_at": "2026-10-03",
+      "locator": "16.1 Recurrent myocardial infarction",
+      "support": "Reassessment with serial findings and often angiography for recurrent MI, classified by mechanism.",
+      "read_scope": "16.1 Recurrent myocardial infarction;14.1 Cardiac troponin; not the entire guideline or cited studies."
+    },
+    {
+      "source_id": "mi-nhlbi-recovery",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/recovery",
+      "accessed_at": "2026-10-03",
+      "locator": "Take steps to prevent another heart attack; What kind of health problems",
+      "support": "Independent support for subsequent attacks and alternative post-MI complications; the first-month description is from the joint2026 consensus.",
+      "read_scope": "Updated 24 March 2022; Recovery."
+    },
+    {
+      "source_id": "mi-msd-acute-2026",
+      "url": "https://www.msdmanuals.com/professional/cardiovascular-disorders/coronary-artery-disease/acute-myocardial-infarction-mi",
+      "accessed_at": "2026-10-03",
+      "locator": "Diagnosis of Acute MI / ECG",
+      "support": "Current ECG distinguishes STEMI/NSTEMI and drives diagnostic/angiography pathway.",
+      "read_scope": "July2026 review; Diagnosis of Acute MI / ECG / cardiac troponin and treatment. Not each reference."
+    }
+  ],
+  "unresolved_questions": [],
+  "evidence_notes": "The August2026 joint UDMI recommends mechanism-based classification, including early recurrence, rather than a separate recurrent code. This clinical update is respected; the user-selected WHO2026-01 denominator remains frozen and its existing BA42 leaves are evaluated as historical classification targets, not claimed to be the latest clinical nomenclature. No28-day home-treatment cutoff or troponin percentage is prescribed.",
+  "candidate_codes": [
+    {
+      "code": "BA42.0",
+      "recommendation": "confirm_after_independent_scope_review",
+      "rationale": "The frozen2026-01 BA42 subtree comprises a subsequent infarction, with STEMI/NSTEMI or unspecified type. Existing fourteen sections apply to recurrent acute MI; the new first-month diagnostic branch explains residual abnormalities and reassessment rather than treating recurrent pain as confirmed infarction. Earlier BA41 mappings remain separate.",
+      "remaining": []
+    },
+    {
+      "code": "BA42.1",
+      "recommendation": "confirm_after_independent_scope_review",
+      "rationale": "The frozen2026-01 BA42 subtree comprises a subsequent infarction, with STEMI/NSTEMI or unspecified type. Existing fourteen sections apply to recurrent acute MI; the new first-month diagnostic branch explains residual abnormalities and reassessment rather than treating recurrent pain as confirmed infarction. Earlier BA41 mappings remain separate.",
+      "remaining": []
+    },
+    {
+      "code": "BA42.Z",
+      "recommendation": "confirm_after_independent_scope_review",
+      "rationale": "The frozen2026-01 BA42 subtree comprises a subsequent infarction, with STEMI/NSTEMI or unspecified type. Existing fourteen sections apply to recurrent acute MI; the new first-month diagnostic branch explains residual abnormalities and reassessment rather than treating recurrent pain as confirmed infarction. Earlier BA41 mappings remain separate.",
+      "remaining": []
+    }
+  ],
+  "inherited_sections": [
+    "causes_risks",
+    "red_flags",
+    "care",
+    "differentials",
+    "treatment",
+    "medications",
+    "diet",
+    "daily_care",
+    "special_populations",
+    "prognosis_followup",
+    "complications",
+    "prevention"
+  ],
+  "inherited_record_file": "data/evidence/editorial-checks/batch-01-mi.json",
+  "target": {
+    "body_canonical_sha256": "fbd6fea07dafabfc26e5cc87ce1a80c3023b267d2f490c6fd37e3f949b50641d",
+    "records_canonical_sha256": "41db1caf3147361df45c251e402dc607e88aeec611aa05590a018684858375a0",
+    "sources_canonical_sha256": "295afea6cd652392a5a79f1493b70081f6f0b88014736f2d8cf654818849208c"
+  },
+  "fourteen_dimension_applicability": {
+    "summary": "Existing verified explanation and conditions apply to the selected subtype; new branch appears here.",
+    "causes_risks": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash.",
+    "red_flags": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash.",
+    "care": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash.",
+    "diagnosis": "Existing verified explanation and conditions apply to the selected subtype; new branch appears here.",
+    "differentials": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash.",
+    "treatment": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash.",
+    "medications": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash.",
+    "diet": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash.",
+    "daily_care": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash.",
+    "special_populations": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash.",
+    "prognosis_followup": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash.",
+    "complications": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash.",
+    "prevention": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash."
+  }
+}

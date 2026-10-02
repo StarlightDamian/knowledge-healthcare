@@ -1,0 +1,103 @@
+{
+  "topic": "retinal-detachment",
+  "author": "/root",
+  "reviewer": "/root/astra_p0_allergy",
+  "checked_at": "2026-10-03",
+  "status": "accepted",
+  "medical_reviewed": false,
+  "target": {
+    "body_canonical_sha256": "e1bffe339004dcea83379e6ccb9d4bf613f69d316c72f434d414266577a29a58",
+    "records_canonical_sha256": "111870f253c88ada7ba7b0278cbd3c9382caf55b58f59354b4b956d6ba301d72",
+    "sources_canonical_sha256": "5deb5dd5111de0106c92cd88da6ff353bb4a78daeb943c6558542647080513fb"
+  },
+  "changed_sections": [
+    "care",
+    "causes_risks",
+    "daily_care",
+    "diagnosis",
+    "medications",
+    "prognosis_followup",
+    "summary",
+    "treatment"
+  ],
+  "claims_reviewed": 8,
+  "original_sources_reopened": [
+    "p003-retina-asrs-tears",
+    "p003-retina-atrophic",
+    "p003-retina-moorfields-tears",
+    "b1-acute-retina-nei-dilation"
+  ],
+  "source_reads": [
+    {
+      "source_id": "p003-retina-asrs-tears",
+      "url": "https://www.asrs.org/patients/retinal-diseases/26/retinal-tears",
+      "locator": "ASRS Retinal Tears clinical text: symptoms, peripheral examination, traction tear versus atrophic hole, laser/cryo or selected observation, future tears.",
+      "read_method": "Independent original webpage/PDF or explicitly limited original indexed passage read, 2026-10-03; scope stated per entry."
+    },
+    {
+      "source_id": "p003-retina-atrophic",
+      "url": "https://eyewiki.aao.org/Atrophic_Holes",
+      "locator": "AAO EyeWiki Atrophic Holes: definition/examination/management/prognosis; assigned update pending October2025; last edit July2026. Reference to older AAOPPP2008 retained as upstream limitation.",
+      "read_method": "Independent original webpage/PDF or explicitly limited original indexed passage read, 2026-10-03; scope stated per entry."
+    },
+    {
+      "source_id": "p003-retina-moorfields-tears",
+      "url": "https://www.moorfields.nhs.uk/private/eye-conditions-and-treatments/retinal-tear/diagnosis-and-treatment",
+      "locator": "Moorfields Retinal Tear diagnosis and treatment: dilation/local anaesthetic, laser, day-of-treatment driving, follow-up scar check and new warning symptoms. Broad laser wording not applied to all asymptomatic atrophic holes.",
+      "read_method": "Independent original webpage/PDF or explicitly limited original indexed passage read, 2026-10-03; scope stated per entry."
+    },
+    {
+      "source_id": "b1-acute-retina-nei-dilation",
+      "url": "https://www.nei.nih.gov/eye-health-information/healthy-vision/finding-eye-doctor/get-dilated-eye-exam",
+      "locator": "NEI What happens after dilated exam: temporary blur/light sensitivity and arrange another driver.",
+      "read_method": "Independent original webpage/PDF or explicitly limited original indexed passage read, 2026-10-03; scope stated per entry."
+    }
+  ],
+  "findings": [
+    {
+      "finding": "Follow-up and postoperative drop advice had explanation kind despite actions.",
+      "resolution": "Claims5/7 now action with two separately authored supports."
+    },
+    {
+      "finding": "Asymptomatic atrophic holes must not inherit blanket urgent laser or intraocular-gas restrictions.",
+      "resolution": "Body explicitly separates examination-based observation from treated traction tears and makes surgical/gas instructions conditional."
+    }
+  ],
+  "scope_decisions": [
+    {
+      "code": "9B73.4",
+      "recommendation": "confirmed",
+      "rationale": "FrozenWHO2026-01 parent groups detachments and breaks.9B73.4 is explicitly a break without detachment, so an added branch distinguishes traction tears/atrophic holes, low-risk observation, focal treatment and follow-up.9B73.Y/.Z retain the same condition family with mechanism assessment rather than inventing a specific cause. Existing general source-verified sections remain relevant; surgery/anaesthesia/gas instructions stay conditional on receiving that procedure. No mapping to macular hole, central serous chorioretinopathy, postoperative scar or peripheral degeneration without a break."
+    },
+    {
+      "code": "9B73.Y",
+      "recommendation": "confirmed",
+      "rationale": "FrozenWHO2026-01 parent groups detachments and breaks.9B73.4 is explicitly a break without detachment, so an added branch distinguishes traction tears/atrophic holes, low-risk observation, focal treatment and follow-up.9B73.Y/.Z retain the same condition family with mechanism assessment rather than inventing a specific cause. Existing general source-verified sections remain relevant; surgery/anaesthesia/gas instructions stay conditional on receiving that procedure. No mapping to macular hole, central serous chorioretinopathy, postoperative scar or peripheral degeneration without a break."
+    },
+    {
+      "code": "9B73.Z",
+      "recommendation": "confirmed",
+      "rationale": "FrozenWHO2026-01 parent groups detachments and breaks.9B73.4 is explicitly a break without detachment, so an added branch distinguishes traction tears/atrophic holes, low-risk observation, focal treatment and follow-up.9B73.Y/.Z retain the same condition family with mechanism assessment rather than inventing a specific cause. Existing general source-verified sections remain relevant; surgery/anaesthesia/gas instructions stay conditional on receiving that procedure. No mapping to macular hole, central serous chorioretinopathy, postoperative scar or peripheral degeneration without a break."
+    }
+  ],
+  "independence": "ASRS and AAO EyeWiki are distinct editorial products but share some authors and AAO upstream practice evidence; not fully independent research. Moorfields UK and NEI US separately authored patient education support procedural action safeguards.",
+  "remaining_issues": [],
+  "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed.",
+  "who_scope_read": {
+    "path": "C:/Users/Damian/AppData/Local/Temp/healthcare-private/p0-icd-2026-01-official.txt",
+    "official_pdf_sha256": "4baccc13c794dca36d8a79fe80a673e854fc51f13114db3ce76196f0a1eb6cab",
+    "actual_scope": "9B73 parent includes breaks;9B73.4 exclusions postoperative scars/peripheral degeneration withoutbreak;9B73.Y/.Z residual family, excludesRPEdetachment."
+  },
+  "inheritance": {
+    "sections": [
+      "red_flags",
+      "differentials",
+      "diet",
+      "special_populations",
+      "complications",
+      "prevention"
+    ],
+    "record_file": "data/evidence/editorial-checks/batch-01-retinal.json",
+    "verification": "Unchanged body sections AND complete accepted records exactly compared to production baseline; inherited medical evidence not reattested as newly read."
+  }
+}

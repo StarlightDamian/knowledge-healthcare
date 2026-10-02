@@ -1,0 +1,437 @@
+{
+  "status": "authored_pending_independent_review",
+  "author": "/root/astra_p0_neurology",
+  "model": "gpt-6-astra",
+  "checked_at": "2026-10-03",
+  "medical_reviewed": false,
+  "baseline_commit": "f2c5cd8",
+  "topic_id": "intracerebral-hemorrhage",
+  "coverage_credit": 0,
+  "production_modified": false,
+  "mece": "Retain stroke navigation; separate ICH from ischemic and SAH pathways. Seven anatomic leaves share core care with explicit branches.",
+  "target": {
+    "body_canonical_sha256": "69f4f640324ccbd69ecfa38080019266ea4bd38bf32f78d142d7e97f9ce8df47",
+    "records_canonical_sha256": "06a8ed943ef001697f1c1b7095bc26f1bb4e982293883309cdac064931f16345",
+    "sources_canonical_sha256": "7d221853a4cc5467d5dfaf7d613a87df6428eb623f0c5a6f664f5276121698f2"
+  },
+  "actual_source_reads": [
+    {
+      "source_id": "neuro-aha-ich-2022",
+      "url": "https://www.heart.org/en/-/media/CPR2-Files/Private/2022-Guideline-for-the-Management-of-Patients-With-Spontaneous-Intracerebral-Hemorrhage-1.pdf",
+      "method": "Original HTML or official PDF read; ESO later pages read in-memory using pypdf, no full text saved.",
+      "locator": "Public original PDF: pp 1-2 take-home; pp 6-8 pathophysiology/recognition; p 28 dysphagia; pp 35-36 hydrocephalus; p 42 cerebellar surgery; p 51 recurrence",
+      "source_version": "2022; Stroke 53:e282-e361",
+      "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+      "region": "US",
+      "independence_group": "US-AHA-ASA",
+      "upstream_evidence": [
+        "AHA/ASA independent guideline group. Shares some authors including Cordonnier with ESO; overlapping trials with Canadian/ESO guidelines, not independent trial replication."
+      ],
+      "accessed_at": "2026-10-03"
+    },
+    {
+      "source_id": "neuro-canada-ich-emergency",
+      "url": "https://www.strokebestpractices.ca/recommendations/management-of-intracerebral-hemorrhage/emergency-management-of-intracerebral-hemorrhage",
+      "method": "Original HTML or official PDF read; ESO later pages read in-memory using pypdf, no full text saved.",
+      "locator": "1.1 assessment; 1.2 imaging; 1.3 blood pressure; 1.4 antithrombotics; 1.5 etiology; 1.6 surgical management",
+      "source_version": "2020 seventh edition",
+      "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+      "region": "CA",
+      "independence_group": "CA-StrokeBestPractices",
+      "upstream_evidence": [
+        "Canadian guideline group; overlapping AHA/ESO trials. Older regional reversal-agent availability and exact cerebellar size threshold not generalized."
+      ],
+      "accessed_at": "2026-10-03"
+    },
+    {
+      "source_id": "neuro-canada-ich-inpatient",
+      "url": "https://www.strokebestpractices.ca/recommendations/management-of-intracerebral-hemorrhage/inpatient-care-following-intracerebral-hemorrhage",
+      "method": "Original HTML or official PDF read; ESO later pages read in-memory using pypdf, no full text saved.",
+      "locator": "2.1 stroke unit; 2.2 VTE; 2.3 seizures; 2.4 intracranial pressure; 2.5 rehabilitation",
+      "source_version": "2020 seventh edition",
+      "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+      "region": "CA",
+      "independence_group": "CA-StrokeBestPractices",
+      "upstream_evidence": [
+        "Same Canadian group as emergency and prevention; never counted as independent from those pages."
+      ],
+      "accessed_at": "2026-10-03"
+    },
+    {
+      "source_id": "neuro-canada-ich-prevention",
+      "url": "https://www.strokebestpractices.ca/recommendations/management-of-intracerebral-hemorrhage/secondary-stroke-prevention-in-an-individual-with-intracerebral-hemorrhage",
+      "method": "Original HTML or official PDF read; ESO later pages read in-memory using pypdf, no full text saved.",
+      "locator": "3.1 assessment/recurrent risk; 3.2 lifestyle; 3.3 blood pressure; 3.4 antithrombotics; 3.5 statins; functional assessment",
+      "source_version": "2020 seventh edition",
+      "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+      "region": "CA",
+      "independence_group": "CA-StrokeBestPractices",
+      "upstream_evidence": [
+        "Same Canadian authorship group; recommendations and trials overlap AHA/ESO."
+      ],
+      "accessed_at": "2026-10-03"
+    },
+    {
+      "source_id": "neuro-eso-eans-ich-2025",
+      "url": "https://eso-stroke.org/wp-content/uploads/2025-ESO-ICH-guideline-ESOC-Helsinki.pdf",
+      "method": "Original HTML or official PDF read; ESO later pages read in-memory using pypdf, no full text saved.",
+      "locator": "Original 49-page PDF: pp 8,15-16,25,30,32,35,38,40-41,46; web PDF and in-memory pypdf text for pp 28-48",
+      "source_version": "2025-05-22 ESOC Helsinki official author summary slides, not journal full text",
+      "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+      "region": "Europe",
+      "independence_group": "ESO-EANS",
+      "upstream_evidence": [
+        "Independent European guideline group, overlapping authors/trials with AHA and Canadian. 2025 lobar minimally-invasive evidence differs from older general uncertainty; no superiority/effect number generalized."
+      ],
+      "accessed_at": "2026-10-03",
+      "scope_limit": "49-slide presentation selects recommendations; underlying journal full text not claimed read."
+    },
+    {
+      "source_id": "stroke-symptoms-nhs",
+      "url": "https://www.nhs.uk/conditions/stroke/symptoms/",
+      "method": "Original HTML or official PDF read; ESO later pages read in-memory using pypdf, no full text saved.",
+      "locator": "Symptoms; immediate emergency action; no driving",
+      "source_version": "2024-09-12",
+      "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+      "region": "GB",
+      "independence_group": "UK-NHS",
+      "upstream_evidence": [
+        "Independent editorial authorship; standard stroke evidence may overlap."
+      ],
+      "accessed_at": "2026-10-03"
+    },
+    {
+      "source_id": "stroke-diagnosis-nhs",
+      "url": "https://www.nhs.uk/conditions/stroke/diagnosis/",
+      "method": "Original HTML or official PDF read; ESO later pages read in-memory using pypdf, no full text saved.",
+      "locator": "CT/MRI, blood tests, ECG and ultrasound",
+      "source_version": "2024-09-12",
+      "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+      "region": "GB",
+      "independence_group": "UK-NHS",
+      "upstream_evidence": [
+        "Independent editorial authorship; standard stroke evidence may overlap."
+      ],
+      "accessed_at": "2026-10-03"
+    },
+    {
+      "source_id": "stroke-recovery-nhs",
+      "url": "https://www.nhs.uk/conditions/stroke/recovery/",
+      "method": "Original HTML or official PDF read; ESO later pages read in-memory using pypdf, no full text saved.",
+      "locator": "Movement, cognition, speech, swallowing, mood, bladder/bowel, discharge support and reviews",
+      "source_version": "2024-09-12",
+      "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+      "region": "GB",
+      "independence_group": "UK-NHS",
+      "upstream_evidence": [
+        "Independent editorial authorship; standard stroke evidence may overlap."
+      ],
+      "accessed_at": "2026-10-03"
+    },
+    {
+      "source_id": "neuro-mayo-stroke-treatment",
+      "url": "https://www.mayoclinic.org/diseases-conditions/stroke/diagnosis-treatment/drc-20350119",
+      "method": "Original HTML or official PDF read; ESO later pages read in-memory using pypdf, no full text saved.",
+      "locator": "Tests; hemorrhagic emergency measures; surgery; recovery and rehabilitation; coping/support",
+      "source_version": "Live page read 2026-10-03; exact review date not established",
+      "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+      "region": "US",
+      "independence_group": "US-Mayo-Clinic",
+      "upstream_evidence": [
+        "Independent Mayo patient education; professional stroke-guideline literature shared. Broad hemorrhagic page also includes SAH; those aneurysm procedures not generalized to all ICH."
+      ],
+      "accessed_at": "2026-10-03"
+    },
+    {
+      "source_id": "neuro-mayo-stroke-causes",
+      "url": "https://www.mayoclinic.org/diseases-conditions/stroke/symptoms-causes/syc-20350113",
+      "method": "Original HTML or official PDF read; ESO later pages read in-memory using pypdf, no full text saved.",
+      "locator": "Recognition; immediate help; ischemic versus hemorrhagic causes; hypertension and cerebral amyloid angiopathy",
+      "source_version": "Live page read 2026-10-03",
+      "population": "Adults with spontaneous ICH; general stroke sources used for shared recognition and recovery education.",
+      "region": "US",
+      "independence_group": "US-Mayo-Clinic",
+      "upstream_evidence": [
+        "Independent editorial authorship; standard stroke evidence may overlap."
+      ],
+      "accessed_at": "2026-10-03"
+    },
+    {
+      "source_id": "neuro-sah-s",
+      "url": "https://www.nice.org.uk/guidance/ng128/chapter/recommendations",
+      "version": "NG128; swallowing recommendations 2008, amended 2019",
+      "locator": "1.6.1-1.6.11 swallowing/nutrition; 1.8.1 aspiration avoidance",
+      "accessed_at": "2026-10-03",
+      "method": "Original official page read through web; NICE original HTML through urllib after web access failed. ICH guideline original PDF previously read in memory.",
+      "scope": "Acute stroke over 16; shared swallowing safety",
+      "independence": "Separate editorial bodies, not independent trial replications. AHA/NICE overlap in clinical literature. Mayo cites AHA 2012, textbooks and UpToDate. OUH links NHS; CUH cites Flaherty 2005. UK trusts are distinct authors, with related NHS service context."
+    },
+    {
+      "source_id": "neuro-canada-stroke-swallowing",
+      "url": "https://www.strokebestpractices.ca/recommendations/stroke-rehabilitation-delivery/6-swallowing-nutrition-and-oral-care",
+      "locator": "6.1 swallowing and feeding; 6.2 nutrition; 6.3 oral health; rationale and evidence limitations",
+      "accessed_at": "2026-10-03",
+      "method": "Original official web page opened and read",
+      "independence": "Separate Canadian or Mayo authorship; shared research with other guidelines disclosed."
+    },
+    {
+      "source_id": "neuro-hopkins-stroke-effects",
+      "locator": "Effects of a stroke in the brainstem",
+      "source_version": "Undated current original HTML",
+      "population": "Brainstem stroke, including ischemic and hemorrhagic; only shared anatomical consequences used.",
+      "region": "US",
+      "independence_group": "STAYWELL",
+      "upstream_evidence": [
+        "Institutionally authored education; ASA and AHA count as one group; shared literature not asserted independent."
+      ],
+      "accessed_at": "2026-10-03",
+      "url": "https://www.hopkinsmedicine.org/health/conditions-and-diseases/stroke/effects-of-stroke",
+      "method": "web open original HTML",
+      "provenance": "Independent reviewer identified identical StayWell source https://johnshopkinsbmcib.staywellsolutionsonline.com/Bedside/85%2Cp00777; author actually read Hopkins-hosted page; attempted StayWell open403, not claimed read."
+    },
+    {
+      "source_id": "neuro-asa-brainstem",
+      "locator": "Symptoms; consciousness/breathing; clot or hemorrhage",
+      "source_version": "2023-06-23",
+      "population": "Brainstem stroke, including ischemic and hemorrhagic; only shared anatomical consequences used.",
+      "region": "US",
+      "independence_group": "AHA-ASA",
+      "upstream_evidence": [
+        "Institutionally authored education; ASA and AHA count as one group; shared literature not asserted independent."
+      ],
+      "accessed_at": "2026-10-03",
+      "url": "https://www.stroke.org/en/about-stroke/types-of-stroke/brain-stem-stroke",
+      "method": "web open original HTML"
+    }
+  ],
+  "category_decisions": [
+    {
+      "code": "8B00.0",
+      "status": "candidate_pending_review",
+      "difference": "Deep hemispheric: hypertension-related small-vessel clues; no automatic surgery; individual functional recovery and recurrence plan.",
+      "section_applicability": {
+        "summary": "Deep hemispheric: hypertension-related small-vessel clues; no automatic surgery; individual functional recovery and recurrence plan.",
+        "causes_risks": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "red_flags": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "care": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "diagnosis": "All sites: image location and cause; MRI/angiography can identify hemorrhagic infarction, mass or vascular malformation; further care follows both bleeding and underlying mechanism.",
+        "differentials": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "treatment": "Deep hemispheric: hypertension-related small-vessel clues; no automatic surgery; individual functional recovery and recurrence plan.",
+        "medications": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "diet": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "daily_care": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "special_populations": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "prognosis_followup": "Deep hemispheric: hypertension-related small-vessel clues; no automatic surgery; individual functional recovery and recurrence plan.",
+        "complications": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "prevention": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented."
+      },
+      "remaining": [
+        "Independent assessment of revised clinical core and bilingual claims; no automatic parent-code coverage."
+      ],
+      "exclusions_considered": [
+        "Traumatic hemorrhage and sequelae use separate ICD pathways; SAH is a separate anatomical topic. Secondary nontraumatic causes including hemorrhagic transformation remain in 8B00 scope; current article gives identification and cause-directed referral, not primary-ICH treatment extrapolation."
+      ]
+    },
+    {
+      "code": "8B00.1",
+      "status": "candidate_pending_review",
+      "difference": "Lobar: CAA and vascular causes considered; location-specific operative evidence differs from deep ICH; recurrence assessment.",
+      "section_applicability": {
+        "summary": "Lobar: CAA and vascular causes considered; location-specific operative evidence differs from deep ICH; recurrence assessment.",
+        "causes_risks": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "red_flags": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "care": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "diagnosis": "All sites: image location and cause; MRI/angiography can identify hemorrhagic infarction, mass or vascular malformation; further care follows both bleeding and underlying mechanism.",
+        "differentials": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "treatment": "Lobar: CAA and vascular causes considered; location-specific operative evidence differs from deep ICH; recurrence assessment.",
+        "medications": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "diet": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "daily_care": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "special_populations": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "prognosis_followup": "Lobar: CAA and vascular causes considered; location-specific operative evidence differs from deep ICH; recurrence assessment.",
+        "complications": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "prevention": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented."
+      },
+      "remaining": [
+        "Independent assessment of revised clinical core and bilingual claims; no automatic parent-code coverage."
+      ],
+      "exclusions_considered": [
+        "Traumatic hemorrhage and sequelae use separate ICD pathways; SAH is a separate anatomical topic. Secondary nontraumatic causes including hemorrhagic transformation remain in 8B00 scope; current article gives identification and cause-directed referral, not primary-ICH treatment extrapolation."
+      ]
+    },
+    {
+      "code": "8B00.2",
+      "status": "candidate_pending_review",
+      "difference": "Brainstem: posterior-fossa site needing specialist assessment; cerebellar surgery recommendation explicitly not extrapolated. Brainstem breathing, consciousness and swallowing consequences now explained; airway/respiratory monitoring and safe intake distinct from cerebellar evacuation.",
+      "section_applicability": {
+        "summary": "Brainstem: posterior-fossa site needing specialist assessment; cerebellar surgery recommendation explicitly not extrapolated.",
+        "causes_risks": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "red_flags": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "care": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "diagnosis": "All sites: image location and cause; MRI/angiography can identify hemorrhagic infarction, mass or vascular malformation; further care follows both bleeding and underlying mechanism.",
+        "differentials": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "treatment": "Brainstem: posterior-fossa site needing specialist assessment; cerebellar surgery recommendation explicitly not extrapolated.",
+        "medications": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "diet": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "daily_care": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "special_populations": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "prognosis_followup": "Brainstem: posterior-fossa site needing specialist assessment; cerebellar surgery recommendation explicitly not extrapolated.",
+        "complications": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "prevention": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented."
+      },
+      "remaining": [
+        "Independent assessment of revised clinical core and bilingual claims; no automatic parent-code coverage."
+      ],
+      "exclusions_considered": [
+        "Traumatic hemorrhage and sequelae use separate ICD pathways; SAH is a separate anatomical topic. Secondary nontraumatic causes including hemorrhagic transformation remain in 8B00 scope; current article gives identification and cause-directed referral, not primary-ICH treatment extrapolation."
+      ]
+    },
+    {
+      "code": "8B00.3",
+      "status": "candidate_pending_review",
+      "difference": "Cerebellar: deterioration, brainstem compression and hydrocephalus prompt urgent surgical assessment.",
+      "section_applicability": {
+        "summary": "Cerebellar: deterioration, brainstem compression and hydrocephalus prompt urgent surgical assessment.",
+        "causes_risks": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "red_flags": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "care": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "diagnosis": "All sites: image location and cause; MRI/angiography can identify hemorrhagic infarction, mass or vascular malformation; further care follows both bleeding and underlying mechanism.",
+        "differentials": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "treatment": "Cerebellar: deterioration, brainstem compression and hydrocephalus prompt urgent surgical assessment.",
+        "medications": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "diet": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "daily_care": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "special_populations": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "prognosis_followup": "Cerebellar: deterioration, brainstem compression and hydrocephalus prompt urgent surgical assessment.",
+        "complications": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "prevention": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented."
+      },
+      "remaining": [
+        "Independent assessment of revised clinical core and bilingual claims; no automatic parent-code coverage."
+      ],
+      "exclusions_considered": [
+        "Traumatic hemorrhage and sequelae use separate ICD pathways; SAH is a separate anatomical topic. Secondary nontraumatic causes including hemorrhagic transformation remain in 8B00 scope; current article gives identification and cause-directed referral, not primary-ICH treatment extrapolation."
+      ]
+    },
+    {
+      "code": "8B00.4",
+      "status": "candidate_pending_review",
+      "difference": "Isolated intraventricular: no parenchymal bleed; obstruction/hydrocephalus and drainage pathway explicitly addressed.",
+      "section_applicability": {
+        "summary": "Isolated intraventricular: no parenchymal bleed; obstruction/hydrocephalus and drainage pathway explicitly addressed.",
+        "causes_risks": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "red_flags": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "care": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "diagnosis": "All sites: image location and cause; MRI/angiography can identify hemorrhagic infarction, mass or vascular malformation; further care follows both bleeding and underlying mechanism.",
+        "differentials": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "treatment": "Isolated intraventricular: no parenchymal bleed; obstruction/hydrocephalus and drainage pathway explicitly addressed.",
+        "medications": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "diet": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "daily_care": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "special_populations": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "prognosis_followup": "Isolated intraventricular: no parenchymal bleed; obstruction/hydrocephalus and drainage pathway explicitly addressed.",
+        "complications": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "prevention": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented."
+      },
+      "remaining": [
+        "Independent assessment of revised clinical core and bilingual claims; no automatic parent-code coverage."
+      ],
+      "exclusions_considered": [
+        "Traumatic hemorrhage and sequelae use separate ICD pathways; SAH is a separate anatomical topic. Secondary nontraumatic causes including hemorrhagic transformation remain in 8B00 scope; current article gives identification and cause-directed referral, not primary-ICH treatment extrapolation."
+      ]
+    },
+    {
+      "code": "8B00.5",
+      "status": "candidate_pending_review",
+      "difference": "Multiple sites: assess each lesion and combined effect; cause, operative choices and outcome not inferred from count. Explicitly includes combined parenchymal and ventricular bleeding.",
+      "section_applicability": {
+        "summary": "Multiple sites: assess each lesion and combined effect; cause, operative choices and outcome not inferred from count.",
+        "causes_risks": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "red_flags": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "care": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "diagnosis": "All sites: image location and cause; MRI/angiography can identify hemorrhagic infarction, mass or vascular malformation; further care follows both bleeding and underlying mechanism.",
+        "differentials": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "treatment": "Multiple sites: assess each lesion and combined effect; cause, operative choices and outcome not inferred from count.",
+        "medications": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "diet": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "daily_care": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "special_populations": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "prognosis_followup": "Multiple sites: assess each lesion and combined effect; cause, operative choices and outcome not inferred from count.",
+        "complications": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "prevention": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented."
+      },
+      "remaining": [
+        "Independent assessment of revised clinical core and bilingual claims; no automatic parent-code coverage."
+      ],
+      "exclusions_considered": [
+        "Traumatic hemorrhage and sequelae use separate ICD pathways; SAH is a separate anatomical topic. Secondary nontraumatic causes including hemorrhagic transformation remain in 8B00 scope; current article gives identification and cause-directed referral, not primary-ICH treatment extrapolation."
+      ]
+    },
+    {
+      "code": "8B00.Z",
+      "status": "candidate_pending_review",
+      "difference": "Site unspecified: imaging clarification and emergency pathway, no presumption of a mild or known site.",
+      "section_applicability": {
+        "summary": "Site unspecified: imaging clarification and emergency pathway, no presumption of a mild or known site.",
+        "causes_risks": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "red_flags": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "care": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "diagnosis": "All sites: image location and cause; MRI/angiography can identify hemorrhagic infarction, mass or vascular malformation; further care follows both bleeding and underlying mechanism.",
+        "differentials": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "treatment": "Site unspecified: imaging clarification and emergency pathway, no presumption of a mild or known site.",
+        "medications": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "diet": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "daily_care": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "special_populations": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "prognosis_followup": "Site unspecified: imaging clarification and emergency pathway, no presumption of a mild or known site.",
+        "complications": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented.",
+        "prevention": "Shared spontaneous-ICH education applies with site-dependent function and adult evidence boundaries; no distinct unsupported numeric threshold invented."
+      },
+      "remaining": [
+        "Independent assessment of revised clinical core and bilingual claims; no automatic parent-code coverage."
+      ],
+      "exclusions_considered": [
+        "Traumatic hemorrhage and sequelae use separate ICD pathways; SAH is a separate anatomical topic. Secondary nontraumatic causes including hemorrhagic transformation remain in 8B00 scope; current article gives identification and cause-directed referral, not primary-ICH treatment extrapolation."
+      ]
+    }
+  ],
+  "inherited_sections": [],
+  "changed_sections": [
+    "summary",
+    "causes_risks",
+    "red_flags",
+    "care",
+    "diagnosis",
+    "differentials",
+    "treatment",
+    "medications",
+    "diet",
+    "daily_care",
+    "special_populations",
+    "prognosis_followup",
+    "complications",
+    "prevention"
+  ],
+  "reused_text": "Some generic recognition and rehabilitation wording retained from published stroke; new target hashes and pending records, no inherited cross-check claim.",
+  "unresolved_questions": [
+    "Independent review required for per-claim exact support, authoring depth and all seven leaf applicability.",
+    "Brainstem-specific clinical consequences and children/obstetric cases are not assigned numerical outcomes or adult treatment thresholds."
+  ],
+  "review_revision": {
+    "previous_target": {
+      "body_canonical_sha256": "16749ab504e4edf7f25008c71ac9959ddeb979fba0a4a98c654401648f9510a6",
+      "records_canonical_sha256": "c6dd4840d896691075b41929000aaaad347e25f8cb84d80a00c021276d0316f4",
+      "sources_canonical_sha256": "c3500a2889d24f9b8009c68dfd85bd4a634de76ffdcaf4d7a9326052cb1e8336"
+    },
+    "changed_sections": [
+      "summary",
+      "diagnosis",
+      "treatment",
+      "medications",
+      "diet",
+      "complications"
+    ],
+    "resolution": "Corrected secondary-cause scope and combined IVH; added brainstem function/support, drug-class reversal, exact swallow/feeding dual sources, action kinds; ESO metadata explicitly official conference summary slides. Pending independent review.",
+    "structural_fix": "Added search terms already present in red flags; no section content changed."
+  }
+}

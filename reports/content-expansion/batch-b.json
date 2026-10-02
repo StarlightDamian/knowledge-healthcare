@@ -3610,238 +3610,583 @@
     "condition_id": "heatstroke",
     "inspected_sources": [
       {
-        "source_id": "heatstroke-nhs",
-        "url": "https://www.nhs.uk/conditions/heat-exhaustion-heatstroke/",
-        "inspected_locators": [
-          "Symptoms",
-          "Cooling",
-          "Emergency action",
-          "Prevention"
-        ]
-      },
-      {
         "source_id": "batch-b-heat-niosh",
         "url": "https://www.cdc.gov/niosh/heat-stress/about/illnesses.html",
-        "inspected_locators": [
-          "Heat stroke",
-          "First aid",
-          "Heat exhaustion",
-          "Rhabdomyolysis"
-        ]
+        "locators": [
+          "Heatstroke symptoms and firstaid",
+          "Heatstroke symptoms/firstaid; Rhabdomyolysis signs; immediate care",
+          "Occupationalheatexhaustion evaluation; strokeemergency",
+          "Heatstroke/exhaustion/syncope",
+          "Firstaid",
+          "Avoidsalttablets",
+          "Staywithpatient;rapidcooling; Rhabdosymptoms needcare",
+          "Workertraining",
+          "Rhabdomyolysis",
+          "Symptomsdespitesweating; Workerandsupervisortraining"
+        ],
+        "retrieval_scope": "Relevant patient-information sections inspected during expanded drafting; see batch-b.json for section locators."
+      },
+      {
+        "source_id": "heatstroke-nhs",
+        "url": "https://www.nhs.uk/conditions/heat-exhaustion-heatstroke/",
+        "locators": [
+          "Heat exhaustion symptoms",
+          "Emergency signs; Waiting for help; recoveryposition/CPR",
+          "Cooling steps; urgentadvice; 30minconditionandemergency signs",
+          "Exhaustionfluidsteps; Avoidexcessalcohol",
+          "Waitingforhelp"
+        ],
+        "retrieval_scope": "Topic page or hub opened via browsing. Linked subpages/full claim support not comprehensively audited."
+      },
+      {
+        "source_id": "p003-heat-cleveland",
+        "url": "https://my.clevelandclinic.org/health/diseases/21812-heatstroke",
+        "locators": [
+          "Types; exertion in normal temperatures",
+          "Riskcategories",
+          "Complications",
+          "Emergencyhistory; No singlediagnostic test",
+          "Treatmentandorgancomplications",
+          "Medicationrisk;askprovider",
+          "Longtermeffects;tailoredcare",
+          "Pregnancyandhealthrisk;emergencyhelp",
+          "Outlookandlongtermeffects; Organfunctionandtailoredrecovery",
+          "Complications"
+        ],
+        "retrieval_scope": "Original fullpatient body read viaurllib: patterns including exertion in normal weather, risks, tests, organ complications, residual neurological difficulties, recovery and prevention. No outcome percentages reused."
+      },
+      {
+        "source_id": "p003-heat-mayo-causes",
+        "url": "https://www.mayoclinic.org/diseases-conditions/heat-stroke/symptoms-causes/syc-20353581",
+        "locators": [
+          "Heavy clothing/exertion; Risk factors; LackofAC; cars",
+          "Certainmedicines",
+          "Ageandhydration",
+          "Previousheatstroke risk",
+          "Prevention; Neverleaveanyoneinparkedcar"
+        ],
+        "retrieval_scope": "September12,2024 actual Causes/Risk factors/Complications/Prevention. Two patterns, hot vehicles, clothing, acclimation. CitesCDC and clinical textbooks; does not independently replicate trials."
+      },
+      {
+        "source_id": "p003-heat-mayo-treatment",
+        "url": "https://www.mayoclinic.org/diseases-conditions/heat-stroke/diagnosis-treatment/drc-20353587",
+        "locators": [
+          "Heatstroke emergency, nooralfluids",
+          "Homecareinsufficient",
+          "Rectalversusforehead measurement; Blood/urine/muscletests",
+          "Ruleoutothercauses",
+          "Evaporativecooling",
+          "Medicinesforshivering",
+          "Nooralfluidforheatstroke; Restrictedfluids/salt; Hydrationrestrictions;alcohol"
+        ],
+        "retrieval_scope": "September12,2024 actual diagnosis, immersion/evaporative cooling, drugs for shivering, firstaid, restricted fluid/salt. Drug forshivering onlyprofessionals; no prescribed doses."
+      },
+      {
+        "source_id": "p003-heat-medicines",
+        "url": "https://www.cdc.gov/heat-health/hcp/clinical-guidance/heat-and-medications-guidance-for-clinicians.html",
+        "locators": [
+          "Mechanismsandclinicalactionplan",
+          "Reviewfluidrestrictions",
+          "Cognitiveimpairmentandcontactperson"
+        ],
+        "retrieval_scope": "September18,2025 actual mechanisms and clinician action plan. Expert opinion, not a drug-effect trial. No independent instruction to discontinue/adjust medicine or fluids."
+      },
+      {
+        "source_id": "p003-heat-msd",
+        "url": "https://www.msdmanuals.com/professional/injuries-poisoning/heat-illness/heatstroke",
+        "locators": [
+          "Overview and CNS dysfunction",
+          "Sweatingpresentorabsent; treatment; Rhabdomyolysisandrenal testing",
+          "Transport/admissionandorganobservation",
+          "History/exam/coretemperature; Laboratorytesting; Differentialwhen<40C",
+          "Differentialdiagnosis;hypoglycaemia",
+          "Othermeasures;organ support",
+          "Antipyreticsnoeffectandorganharm; Otherresuscitativemeasures",
+          "Organinjuryandfluidmonitoring",
+          "Prognosis; Organfunctionmonitoring",
+          "Musclekidneyandelectrolyteinjury; MultiorgandysfunctionandDIC"
+        ],
+        "retrieval_scope": "ReviewedMay2025 updatedDecember2025. Original body read: two patterns, organ effects, differential, investigations, cooling/fluids, drug harm, prognosis. CitesWMS2024/SCCM2025/ACSM2023: shared upstream evidence."
+      },
+      {
+        "source_id": "p003-heat-nata",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4639891/",
+        "locators": [
+          "Recognitionandtemperature measurement",
+          "ReturntoActivity43–48",
+          "Preventionrecommendations",
+          "ReturntoActivity46–48; Returnprogressionandsymptommonitoring",
+          "Emergencyactionplan;prevention"
+        ],
+        "retrieval_scope": "Original authored statement onPMC, definition/recognition and recommendations43–48 Return to Activity read. Stilllisted byNATA; older consensus recommendations, no fixed7–21day clearance rule transferred to every patient. PMC is hosting not author."
+      },
+      {
+        "source_id": "p003-heat-sccm",
+        "url": "https://sccm.org/SCCM/media/SCCM/PDFs/HeatStroke-Infographic.pdf",
+        "locators": [
+          "Activeoverpassive cooling; Rapidimmersion;bothpatterns",
+          "Against dantrolene;avoidroutineantipyretics; Prophylaxisresearchstatement"
+        ],
+        "retrieval_scope": "Official one-page summary actually read: active cooling over passive, cold-water immersion, same strategy for classic/exertional, againstdantrolene/routineantipyretics and preventive antibiotics/antiseizure drugs outside research. Fulljournalarticle not claimed read. No diagram or temperature table copied."
+      },
+      {
+        "source_id": "p003-heat-who",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/climate-change-heat-and-health",
+        "locators": [
+          "Vulnerability; parkedvehicles",
+          "Vulnerability;checkothers; Vulnerability",
+          "Checkvulnerable;vehicles"
+        ],
+        "retrieval_scope": "Actual current fact sheet read: vulnerability, cool home/body, checking others and parked-vehicle prevention. Generic fluid quotas not applied to people with restriction. No population mortality data reused."
+      },
+      {
+        "source_id": "p003-heat-wms",
+        "url": "https://wms.org/magazine/1540/Heat-Illness-CPG/default.aspx",
+        "locators": [
+          "Definitions ofNEHS/EHS; Definitions; suddenheatstroke",
+          "Heat dissipation",
+          "Selectedfielddischarge versusclassictransfer",
+          "Temperaturemeasurement;empiriccooling",
+          "Definitions; HydrationandEAH; Reassessalternatives;empiriccooling",
+          "ABCandCWI",
+          "Individual/environmentalplanning",
+          "Thermoregulatoryadaptationafterheatstroke",
+          "Acclimatizationandplanning; Planningandheatload"
+        ],
+        "retrieval_scope": "Official society summary actually read: classifications, active cooling, temperature assessment, fluids and prevention. This is the society summary, not the entire journal guideline. Selected medically supervised field-discharge exception not generalized to lay care."
+      },
+      {
+        "source_id": "p003-heat-yellow",
+        "url": "https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/heat-and-cold-illness-in-travelers.html",
+        "locators": [
+          "Physiology; Risk andphysiology",
+          "Airwayandcooling",
+          "Moderateheatillness; oralfluids",
+          "Exercise-inducedhyponatraemia",
+          "Attendandholdpersoninwater; Severeillnesshospitalcare",
+          "Moderateillness oralfluids/snacks; Overdrinkingandhyponatraemia",
+          "ActivateEMSwithoutdelayingcooling",
+          "Chronicdiseaserisk; Acclimatizationandfitpeople",
+          "Delayedorgancomplications",
+          "Liver/kidneydamageandabnormalbleeding"
+        ],
+        "retrieval_scope": "April23,2025 original heat sections/box3.2.1: physiology, classic/exertional, hyponatraemia, evacuation, cooling, hydration, acclimatization. Literal41C/104F discrepancy not copied. Oral salt recipes, skin massage and narrow ice-pack advice not prescribed."
       }
     ],
     "sections": {
       "summary": {
         "source_ids": [
+          "batch-b-heat-niosh",
           "heatstroke-nhs",
-          "batch-b-heat-niosh"
+          "p003-heat-cleveland",
+          "p003-heat-msd",
+          "p003-heat-wms"
         ],
         "locators": {
-          "heatstroke-nhs": [
-            "Symptoms"
-          ],
           "batch-b-heat-niosh": [
-            "Heat stroke and exhaustion"
+            "Heatstroke symptoms and firstaid"
+          ],
+          "heatstroke-nhs": [
+            "Heat exhaustion symptoms"
+          ],
+          "p003-heat-cleveland": [
+            "Types; exertion in normal temperatures"
+          ],
+          "p003-heat-msd": [
+            "Overview and CNS dysfunction"
+          ],
+          "p003-heat-wms": [
+            "Definitions ofNEHS/EHS; Definitions; suddenheatstroke"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "causes_risks": {
         "source_ids": [
-          "heatstroke-nhs",
-          "batch-b-heat-niosh"
+          "p003-heat-cleveland",
+          "p003-heat-mayo-causes",
+          "p003-heat-who",
+          "p003-heat-wms",
+          "p003-heat-yellow"
         ],
         "locators": {
-          "heatstroke-nhs": [
-            "Prevention"
+          "p003-heat-cleveland": [
+            "Riskcategories"
           ],
-          "batch-b-heat-niosh": [
-            "Heat illness mechanisms"
+          "p003-heat-mayo-causes": [
+            "Heavy clothing/exertion; Risk factors; LackofAC; cars"
+          ],
+          "p003-heat-who": [
+            "Vulnerability; parkedvehicles"
+          ],
+          "p003-heat-wms": [
+            "Heat dissipation"
+          ],
+          "p003-heat-yellow": [
+            "Physiology; Risk andphysiology"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "red_flags": {
         "source_ids": [
+          "batch-b-heat-niosh",
           "heatstroke-nhs",
-          "batch-b-heat-niosh"
+          "p003-heat-cleveland",
+          "p003-heat-mayo-treatment",
+          "p003-heat-msd",
+          "p003-heat-yellow"
         ],
         "locators": {
-          "heatstroke-nhs": [
-            "Immediate action"
-          ],
           "batch-b-heat-niosh": [
-            "Heatstroke first aid"
+            "Heatstroke symptoms/firstaid; Rhabdomyolysis signs; immediate care"
+          ],
+          "heatstroke-nhs": [
+            "Emergency signs; Waiting for help; recoveryposition/CPR"
+          ],
+          "p003-heat-cleveland": [
+            "Complications"
+          ],
+          "p003-heat-mayo-treatment": [
+            "Heatstroke emergency, nooralfluids"
+          ],
+          "p003-heat-msd": [
+            "Sweatingpresentorabsent; treatment; Rhabdomyolysisandrenal testing"
+          ],
+          "p003-heat-yellow": [
+            "Airwayandcooling"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending.",
-        "applicability_override": "Triage advice applies to the symptoms and age groups stated in the body; emergency or rapid deterioration overrides routine observation intervals."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "care": {
         "source_ids": [
+          "batch-b-heat-niosh",
           "heatstroke-nhs",
-          "batch-b-heat-niosh"
+          "p003-heat-mayo-treatment",
+          "p003-heat-msd",
+          "p003-heat-wms",
+          "p003-heat-yellow"
         ],
         "locators": {
-          "heatstroke-nhs": [
-            "Cooling and 30-minute rule"
-          ],
           "batch-b-heat-niosh": [
-            "Heat exhaustion first aid"
+            "Occupationalheatexhaustion evaluation; strokeemergency"
+          ],
+          "heatstroke-nhs": [
+            "Cooling steps; urgentadvice; 30minconditionandemergency signs"
+          ],
+          "p003-heat-mayo-treatment": [
+            "Homecareinsufficient"
+          ],
+          "p003-heat-msd": [
+            "Transport/admissionandorganobservation"
+          ],
+          "p003-heat-wms": [
+            "Selectedfielddischarge versusclassictransfer"
+          ],
+          "p003-heat-yellow": [
+            "Moderateheatillness; oralfluids"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending.",
-        "applicability_override": "Triage advice applies to the symptoms and age groups stated in the body; emergency or rapid deterioration overrides routine observation intervals."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "diagnosis": {
         "source_ids": [
-          "batch-b-heat-niosh"
+          "p003-heat-cleveland",
+          "p003-heat-mayo-treatment",
+          "p003-heat-msd",
+          "p003-heat-nata",
+          "p003-heat-wms"
         ],
         "locators": {
-          "batch-b-heat-niosh": [
-            "Heat stroke",
-            "Rhabdomyolysis testing",
-            "emergency synthesis"
+          "p003-heat-cleveland": [
+            "Emergencyhistory; No singlediagnostic test"
+          ],
+          "p003-heat-mayo-treatment": [
+            "Rectalversusforehead measurement; Blood/urine/muscletests"
+          ],
+          "p003-heat-msd": [
+            "History/exam/coretemperature; Laboratorytesting; Differentialwhen<40C"
+          ],
+          "p003-heat-nata": [
+            "Recognitionandtemperature measurement"
+          ],
+          "p003-heat-wms": [
+            "Temperaturemeasurement;empiriccooling"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending. Some explanatory or safety synthesis extends beyond verbatim source wording: emergency synthesis"
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "differentials": {
         "source_ids": [
-          "heatstroke-nhs",
-          "batch-b-heat-niosh"
+          "batch-b-heat-niosh",
+          "p003-heat-mayo-treatment",
+          "p003-heat-msd",
+          "p003-heat-wms",
+          "p003-heat-yellow"
         ],
         "locators": {
-          "heatstroke-nhs": [
-            "Check for signs of heat exhaustion",
-            "Immediate action required for heatstroke"
-          ],
           "batch-b-heat-niosh": [
-            "Heat exhaustion, stroke and rhabdomyolysis"
+            "Heatstroke/exhaustion/syncope"
+          ],
+          "p003-heat-mayo-treatment": [
+            "Ruleoutothercauses"
+          ],
+          "p003-heat-msd": [
+            "Differentialdiagnosis;hypoglycaemia"
+          ],
+          "p003-heat-wms": [
+            "Definitions; HydrationandEAH; Reassessalternatives;empiriccooling"
+          ],
+          "p003-heat-yellow": [
+            "Exercise-inducedhyponatraemia"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "treatment": {
         "source_ids": [
-          "heatstroke-nhs",
-          "batch-b-heat-niosh"
+          "batch-b-heat-niosh",
+          "p003-heat-cleveland",
+          "p003-heat-mayo-treatment",
+          "p003-heat-msd",
+          "p003-heat-sccm",
+          "p003-heat-wms",
+          "p003-heat-yellow"
         ],
         "locators": {
-          "heatstroke-nhs": [
-            "Waiting for help"
-          ],
           "batch-b-heat-niosh": [
-            "Heatstroke first aid"
+            "Firstaid"
+          ],
+          "p003-heat-cleveland": [
+            "Treatmentandorgancomplications"
+          ],
+          "p003-heat-mayo-treatment": [
+            "Evaporativecooling"
+          ],
+          "p003-heat-msd": [
+            "Othermeasures;organ support"
+          ],
+          "p003-heat-sccm": [
+            "Activeoverpassive cooling; Rapidimmersion;bothpatterns"
+          ],
+          "p003-heat-wms": [
+            "ABCandCWI"
+          ],
+          "p003-heat-yellow": [
+            "Attendandholdpersoninwater; Severeillnesshospitalcare"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "medications": {
         "source_ids": [
-          "heatstroke-nhs",
-          "batch-b-heat-niosh"
+          "p003-heat-cleveland",
+          "p003-heat-mayo-causes",
+          "p003-heat-mayo-treatment",
+          "p003-heat-medicines",
+          "p003-heat-msd",
+          "p003-heat-sccm"
         ],
         "locators": {
-          "heatstroke-nhs": [
-            "Cooling-based emergency care"
+          "p003-heat-cleveland": [
+            "Medicationrisk;askprovider"
           ],
-          "batch-b-heat-niosh": [
-            "Avoid salt tablets",
-            "no antipyretic benefit claimed"
+          "p003-heat-mayo-causes": [
+            "Certainmedicines"
+          ],
+          "p003-heat-mayo-treatment": [
+            "Medicinesforshivering"
+          ],
+          "p003-heat-medicines": [
+            "Mechanismsandclinicalactionplan"
+          ],
+          "p003-heat-msd": [
+            "Antipyreticsnoeffectandorganharm; Otherresuscitativemeasures"
+          ],
+          "p003-heat-sccm": [
+            "Against dantrolene;avoidroutineantipyretics; Prophylaxisresearchstatement"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending.",
-        "applicability_override": "Medicine roles and key risks only. Named drugs are examples, not individual prescribing; ages, formulations, pregnancy rules and availability follow local product information."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "diet": {
         "source_ids": [
+          "batch-b-heat-niosh",
           "heatstroke-nhs",
-          "batch-b-heat-niosh"
+          "p003-heat-mayo-treatment",
+          "p003-heat-medicines",
+          "p003-heat-msd",
+          "p003-heat-yellow"
         ],
         "locators": {
-          "heatstroke-nhs": [
-            "Cooling and prevention"
-          ],
           "batch-b-heat-niosh": [
-            "First aid and salt restrictions"
+            "Avoidsalttablets"
+          ],
+          "heatstroke-nhs": [
+            "Exhaustionfluidsteps; Avoidexcessalcohol"
+          ],
+          "p003-heat-mayo-treatment": [
+            "Nooralfluidforheatstroke; Restrictedfluids/salt; Hydrationrestrictions;alcohol"
+          ],
+          "p003-heat-medicines": [
+            "Reviewfluidrestrictions"
+          ],
+          "p003-heat-msd": [
+            "Organinjuryandfluidmonitoring"
+          ],
+          "p003-heat-yellow": [
+            "Moderateillness oralfluids/snacks; Overdrinkingandhyponatraemia"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending.",
-        "applicability_override": "Applies to the condition and restrictions described; individualized fluid or nutrition restrictions from existing care take priority. No food or supplement is presented as a replacement for necessary treatment."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "daily_care": {
         "source_ids": [
+          "batch-b-heat-niosh",
           "heatstroke-nhs",
-          "batch-b-heat-niosh"
+          "p003-heat-cleveland",
+          "p003-heat-nata",
+          "p003-heat-yellow"
         ],
         "locators": {
-          "heatstroke-nhs": [
-            "Stay with person"
-          ],
           "batch-b-heat-niosh": [
-            "First aid"
+            "Staywithpatient;rapidcooling; Rhabdosymptoms needcare"
+          ],
+          "heatstroke-nhs": [
+            "Waitingforhelp"
+          ],
+          "p003-heat-cleveland": [
+            "Longtermeffects;tailoredcare"
+          ],
+          "p003-heat-nata": [
+            "ReturntoActivity43–48"
+          ],
+          "p003-heat-yellow": [
+            "ActivateEMSwithoutdelayingcooling"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "special_populations": {
         "source_ids": [
-          "heatstroke-nhs",
-          "batch-b-heat-niosh"
+          "batch-b-heat-niosh",
+          "p003-heat-cleveland",
+          "p003-heat-mayo-causes",
+          "p003-heat-medicines",
+          "p003-heat-nata",
+          "p003-heat-who",
+          "p003-heat-wms",
+          "p003-heat-yellow"
         ],
         "locators": {
-          "heatstroke-nhs": [
-            "Higher risk groups"
-          ],
           "batch-b-heat-niosh": [
-            "Workers and heat syncope"
+            "Workertraining"
+          ],
+          "p003-heat-cleveland": [
+            "Pregnancyandhealthrisk;emergencyhelp"
+          ],
+          "p003-heat-mayo-causes": [
+            "Ageandhydration"
+          ],
+          "p003-heat-medicines": [
+            "Cognitiveimpairmentandcontactperson"
+          ],
+          "p003-heat-nata": [
+            "Preventionrecommendations"
+          ],
+          "p003-heat-who": [
+            "Vulnerability;checkothers; Vulnerability"
+          ],
+          "p003-heat-wms": [
+            "Individual/environmentalplanning"
+          ],
+          "p003-heat-yellow": [
+            "Chronicdiseaserisk; Acclimatizationandfitpeople"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending.",
-        "applicability_override": "Only the populations explicitly described in this section; no paediatric, pregnancy or comorbidity dose algorithm is supplied."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "prognosis_followup": {
         "source_ids": [
-          "heatstroke-nhs",
-          "batch-b-heat-niosh"
+          "p003-heat-cleveland",
+          "p003-heat-mayo-causes",
+          "p003-heat-msd",
+          "p003-heat-nata",
+          "p003-heat-wms",
+          "p003-heat-yellow"
         ],
         "locators": {
-          "heatstroke-nhs": [
-            "Emergency care"
+          "p003-heat-cleveland": [
+            "Outlookandlongtermeffects; Organfunctionandtailoredrecovery"
           ],
-          "batch-b-heat-niosh": [
-            "Permanent disability risk and muscle injury"
+          "p003-heat-mayo-causes": [
+            "Previousheatstroke risk"
+          ],
+          "p003-heat-msd": [
+            "Prognosis; Organfunctionmonitoring"
+          ],
+          "p003-heat-nata": [
+            "ReturntoActivity46–48; Returnprogressionandsymptommonitoring"
+          ],
+          "p003-heat-wms": [
+            "Thermoregulatoryadaptationafterheatstroke"
+          ],
+          "p003-heat-yellow": [
+            "Delayedorgancomplications"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "complications": {
         "source_ids": [
-          "batch-b-heat-niosh"
+          "batch-b-heat-niosh",
+          "p003-heat-cleveland",
+          "p003-heat-msd",
+          "p003-heat-yellow"
         ],
         "locators": {
           "batch-b-heat-niosh": [
-            "Heatstroke consequences",
             "Rhabdomyolysis"
+          ],
+          "p003-heat-cleveland": [
+            "Complications"
+          ],
+          "p003-heat-msd": [
+            "Musclekidneyandelectrolyteinjury; MultiorgandysfunctionandDIC"
+          ],
+          "p003-heat-yellow": [
+            "Liver/kidneydamageandabnormalbleeding"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       },
       "prevention": {
         "source_ids": [
-          "heatstroke-nhs",
-          "batch-b-heat-niosh"
+          "batch-b-heat-niosh",
+          "p003-heat-mayo-causes",
+          "p003-heat-nata",
+          "p003-heat-who",
+          "p003-heat-wms"
         ],
         "locators": {
-          "heatstroke-nhs": [
-            "Prevention"
-          ],
           "batch-b-heat-niosh": [
-            "Heat illness recognition"
+            "Symptomsdespitesweating; Workerandsupervisortraining"
+          ],
+          "p003-heat-mayo-causes": [
+            "Prevention; Neverleaveanyoneinparkedcar"
+          ],
+          "p003-heat-nata": [
+            "Emergencyactionplan;prevention"
+          ],
+          "p003-heat-who": [
+            "Checkvulnerable;vehicles"
+          ],
+          "p003-heat-wms": [
+            "Acclimatizationandplanning; Planningandheatload"
           ]
         },
-        "uncertainty_boundary": "Educational synthesis; section-level reading completed, independent claim verification and clinical review pending."
+        "uncertainty_boundary": "Claim-level support, population and regional limits are recorded in the current evidence ledger and bound independent review. Clinical sign-off remains separate."
       }
     },
     "editorial_status": "expanded_editorial_draft",
@@ -3857,7 +4202,9 @@
     "remaining_checks": [
       "Independent bilingual claim verification remains pending.",
       "Qualified clinical review and country-specific care pathway confirmation remain pending."
-    ]
+    ],
+    "checked_at": "2026-10-03",
+    "independent_review": "reports/p0-03-heatstroke-independent.json"
   },
   {
     "condition_id": "hemorrhoids",

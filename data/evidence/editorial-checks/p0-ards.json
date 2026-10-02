@@ -1,0 +1,3550 @@
+[
+  {
+    "id": "p0-03-ards-summary",
+    "target": {
+      "kind": "condition",
+      "id": "ards",
+      "section": "summary"
+    },
+    "content_sha256": "fcfdd943fdeff0fdbcf36c793c3fe13d63c7e7d53344c951780edd178d1be6f7",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "id": "summary-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "ARDS是严重急性肺损伤引起的呼吸衰竭，通常需要医院重症支持。",
+          "en": "ARDS is respiratory failure from severe acute lung injury and usually requires intensive hospital support."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-ats-patient",
+            "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-nhs",
+            "locator": "Risk factors; symptoms; Immediate action; treatment; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "summary-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "肺泡像微小气囊，正常把氧送入血液；炎症损伤后液体渗入，肺变得难以张开，身体即使努力呼吸也可能缺氧。",
+          "en": "Alveoli are tiny air sacs that transfer oxygen into blood. Inflammatory leakage fills them with fluid and makes the lungs harder to expand, so oxygen may remain low despite strenuous breathing."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-causes",
+            "locator": "Alveolar injury; infection/inhalation/trauma/procedures; prevention",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-patient",
+            "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-esicm-2023",
+            "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "summary-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "ARDS不是单纯由心衰造成的肺积水，也不等同于早产儿因肺不成熟和表面活性物质不足出现的新生儿呼吸窘迫。",
+          "en": "ARDS is not simply fluid accumulation from heart failure, nor is it the same as newborn respiratory distress caused by immature lungs and surfactant deficiency."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-diagnosis",
+            "locator": "History; examination; arterial gases/oximetry/imaging; tests for other conditions",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-palicc-2",
+            "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-esicm-2023",
+            "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-nhlbi-newborn",
+            "locator": "What is; causes/lack of surfactant; treatment; only distinction from ARDS",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "ards-p0-03-nhlbi-causes",
+        "source_metadata_sha256": "920303d679e9a557e75ed019a757b6cbb3ae32caaa1c221ba2211ea80a889104",
+        "source_version": "2022-03-24",
+        "locator": "Alveolar injury; infection/inhalation/trauma/procedures; prevention",
+        "population": "全年龄；不复用其简化脓毒症/胰腺炎定义",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhlbi-diagnosis",
+        "source_metadata_sha256": "d64da4e5e11751f53d0e3f0c2792ac73a56c07cc5c20691bd513f028c21c2624",
+        "source_version": "2022-03-24",
+        "locator": "History; examination; arterial gases/oximetry/imaging; tests for other conditions",
+        "population": "全年龄；测试按年龄病情选择",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-esicm-2023",
+        "source_metadata_sha256": "556759a193b8e425eaafa43e451e14730472407a87d2ed7ddc94f53c662c5e95",
+        "source_version": "2023-06-16",
+        "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+        "population": "成人；COVID相关外推明确降级",
+        "region": "International",
+        "independence_group": "ESICM-2023",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhs",
+        "source_metadata_sha256": "22e7bac04489f1c8e35051bf668404791d8d2d8031c930c5b2db75f31ac0deb4",
+        "source_version": "live2026-10-03",
+        "locator": "Risk factors; symptoms; Immediate action; treatment; complications",
+        "population": "公众患者教育",
+        "region": "UK",
+        "independence_group": "UK-NHS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhlbi-newborn",
+        "source_metadata_sha256": "0ea6ae78a8202d6c8000e0044f124421f6a876a12e106abe582930be79de7cd5",
+        "source_version": "2022-03-24",
+        "locator": "What is; causes/lack of surfactant; treatment; only distinction from ARDS",
+        "population": "新生儿；仅鉴别边界",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-palicc-2",
+        "source_metadata_sha256": "5642fcb0f24ad56ec4e5890257ca778ae515029b3e7e619667aa6c03adf54ea3",
+        "source_version": "2023-02; PCCM24:143–168",
+        "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+        "population": "<18岁且非活动性围产肺病；新生儿另有定义衔接",
+        "region": "International",
+        "independence_group": "PALICC-2",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-ats-patient",
+        "source_metadata_sha256": "f65db26b0a3dea62a7cf213abf574636b744ed55ecb810c09d1000b67b6bfbea",
+        "source_version": "2024-02 review/update",
+        "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+        "population": "患者与家庭；未采用页面40%等个体预测数字",
+        "region": "US",
+        "independence_group": "ATS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult ATS2024/ESICM2023 NMBA differences include non-COVID versus COVID scope; steroid adult/pediatric recommendations remain distinct; no universal drug/dose/duration or guaranteed ECMO benefit."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "ards-p0-03-ashp-prednisone",
+        "ards-p0-03-ats-2017",
+        "ards-p0-03-ats-2024",
+        "ards-p0-03-ats-nutrition",
+        "ards-p0-03-ats-patient",
+        "ards-p0-03-esicm-2023",
+        "ards-p0-03-espen-nutrition",
+        "ards-p0-03-mayo-causes",
+        "ards-p0-03-mayo-treatment",
+        "ards-p0-03-nhlbi-causes",
+        "ards-p0-03-nhlbi-diagnosis",
+        "ards-p0-03-nhlbi-newborn",
+        "ards-p0-03-nhlbi-recovery",
+        "ards-p0-03-nhlbi-symptoms",
+        "ards-p0-03-nhlbi-treatment",
+        "ards-p0-03-nhs",
+        "ards-p0-03-nhs-pregnancy",
+        "ards-p0-03-nhs-steroids",
+        "ards-p0-03-palicc-2",
+        "ards-p0-03-sccm-steroids",
+        "ards-p0-03-uktis-steroids"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "ESICM recommendation against routine continuous NMBA omitted non-COVID adult scope.",
+          "resolution": "Final bilingual text limits this to moderate/severe non-COVID adult ARDS; COVID evidence does not support a recommendation either way. ATS early severe conditional guidance retained.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Seven treatment benefit/risk/action claims were mislabelled explanation.",
+          "resolution": "treatment3/4/5 and medications1/2/4/5 correctly classified; actual independent authoring-source support checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Earlier ATS2017 ECMO/recruitment and nonspecific education could be overgeneralised to present treatment.",
+          "resolution": "Only still-retained low-volume/pressure and prone portions used; current ATS2024/ESICM2023 define present regional differences. No oxygen, ventilator, steroid or nutrition self-prescription introduced.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Hospital worsening action initially cited two NHLBI pages from one authoring group.",
+          "resolution": "Added independently written NHS ARDS immediate-action/hospital-treatment support; inpatient alerting the existing team implements the same worsening-breathing emergency action.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accept exact candidate for evidence-based editorial integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "review_report": "reports/p0-03-ards-independent.json"
+  },
+  {
+    "id": "p0-03-ards-causes_risks",
+    "target": {
+      "kind": "condition",
+      "id": "ards",
+      "section": "causes_risks"
+    },
+    "content_sha256": "3b03aa668e5d1bf82426a371e4a787514731fcae352f7ff95cae04ed83705a34",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "id": "causes_risks-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "肺本身的损伤和身体其他部位的重病，都可能触发这场肺部炎症。",
+          "en": "Both direct lung injury and serious illness elsewhere can trigger the lung inflammation."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-causes",
+            "locator": "Alveolar injury; infection/inhalation/trauma/procedures; prevention",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-patient",
+            "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "causes_risks-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "严重肺炎、脓毒症和严重病毒性呼吸道感染是重要诱因；ARDS描述的是肺损伤状态，不是某一种固定病原体。",
+          "en": "Severe pneumonia, sepsis and severe viral respiratory infection are important triggers. ARDS describes the lung injury rather than one specific pathogen."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-causes",
+            "locator": "Alveolar injury; infection/inhalation/trauma/procedures; prevention",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-causes",
+            "locator": "Overview; symptoms; when to see; causes; risks; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "causes_risks-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "误吸呕吐物、吸入大量烟雾、溺水、严重创伤或烧伤，以及胰腺炎、部分输血相关反应，也可能引起ARDS。",
+          "en": "Aspiration of vomit, substantial smoke exposure, drowning, major trauma or burns, pancreatitis and some transfusion-related reactions can also cause ARDS."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-causes",
+            "locator": "Alveolar injury; infection/inhalation/trauma/procedures; prevention",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-causes",
+            "locator": "Overview; symptoms; when to see; causes; risks; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "causes_risks-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "吸烟、重度饮酒及既有疾病可能增加风险或影响恢复；以前健康的人同样可能发生，不能据此排除。",
+          "en": "Smoking, heavy alcohol use and existing illness can increase risk or affect recovery, but previously healthy people can also develop ARDS."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-causes",
+            "locator": "Alveolar injury; infection/inhalation/trauma/procedures; prevention",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-patient",
+            "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-causes",
+            "locator": "Overview; symptoms; when to see; causes; risks; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "ards-p0-03-nhlbi-causes",
+        "source_metadata_sha256": "920303d679e9a557e75ed019a757b6cbb3ae32caaa1c221ba2211ea80a889104",
+        "source_version": "2022-03-24",
+        "locator": "Alveolar injury; infection/inhalation/trauma/procedures; prevention",
+        "population": "全年龄；不复用其简化脓毒症/胰腺炎定义",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-ats-patient",
+        "source_metadata_sha256": "f65db26b0a3dea62a7cf213abf574636b744ed55ecb810c09d1000b67b6bfbea",
+        "source_version": "2024-02 review/update",
+        "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+        "population": "患者与家庭；未采用页面40%等个体预测数字",
+        "region": "US",
+        "independence_group": "ATS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-mayo-causes",
+        "source_metadata_sha256": "736ba113a9723dd2de795b751bc32d60787f9baff0a1f851ea726fcf6b2467cc",
+        "source_version": "2024-07-30",
+        "locator": "Overview; symptoms; when to see; causes; risks; complications",
+        "population": "主要成人患者教育",
+        "region": "US",
+        "independence_group": "Mayo-Clinic",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult ATS2024/ESICM2023 NMBA differences include non-COVID versus COVID scope; steroid adult/pediatric recommendations remain distinct; no universal drug/dose/duration or guaranteed ECMO benefit."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "ards-p0-03-ashp-prednisone",
+        "ards-p0-03-ats-2017",
+        "ards-p0-03-ats-2024",
+        "ards-p0-03-ats-nutrition",
+        "ards-p0-03-ats-patient",
+        "ards-p0-03-esicm-2023",
+        "ards-p0-03-espen-nutrition",
+        "ards-p0-03-mayo-causes",
+        "ards-p0-03-mayo-treatment",
+        "ards-p0-03-nhlbi-causes",
+        "ards-p0-03-nhlbi-diagnosis",
+        "ards-p0-03-nhlbi-newborn",
+        "ards-p0-03-nhlbi-recovery",
+        "ards-p0-03-nhlbi-symptoms",
+        "ards-p0-03-nhlbi-treatment",
+        "ards-p0-03-nhs",
+        "ards-p0-03-nhs-pregnancy",
+        "ards-p0-03-nhs-steroids",
+        "ards-p0-03-palicc-2",
+        "ards-p0-03-sccm-steroids",
+        "ards-p0-03-uktis-steroids"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "ESICM recommendation against routine continuous NMBA omitted non-COVID adult scope.",
+          "resolution": "Final bilingual text limits this to moderate/severe non-COVID adult ARDS; COVID evidence does not support a recommendation either way. ATS early severe conditional guidance retained.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Seven treatment benefit/risk/action claims were mislabelled explanation.",
+          "resolution": "treatment3/4/5 and medications1/2/4/5 correctly classified; actual independent authoring-source support checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Earlier ATS2017 ECMO/recruitment and nonspecific education could be overgeneralised to present treatment.",
+          "resolution": "Only still-retained low-volume/pressure and prone portions used; current ATS2024/ESICM2023 define present regional differences. No oxygen, ventilator, steroid or nutrition self-prescription introduced.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Hospital worsening action initially cited two NHLBI pages from one authoring group.",
+          "resolution": "Added independently written NHS ARDS immediate-action/hospital-treatment support; inpatient alerting the existing team implements the same worsening-breathing emergency action.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accept exact candidate for evidence-based editorial integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "review_report": "reports/p0-03-ards-independent.json"
+  },
+  {
+    "id": "p0-03-ards-red_flags",
+    "target": {
+      "kind": "condition",
+      "id": "ards",
+      "section": "red_flags"
+    },
+    "content_sha256": "01e355d884941c718a434adf01faf82fecd7343444277edfc09f8dd36b7c64c4",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "id": "red_flags-0",
+        "kind": "action",
+        "text": {
+          "zh-CN": "严重或快速加重的呼吸困难需要立即急救，不能在家等待确认是否ARDS。",
+          "en": "Severe or rapidly worsening breathlessness needs emergency care without waiting at home to confirm ARDS."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhs",
+            "locator": "Risk factors; symptoms; Immediate action; treatment; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-nhlbi-symptoms",
+            "locator": "Warning signs; call emergency services for trouble/severe shortness of breath",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "red_flags-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "喘得说不出完整的话、嘴唇发灰发蓝、明显混乱或极度疲乏，尤其发生在感染或严重损伤后，应立即呼叫当地急救。",
+          "en": "Call local emergency services for breathlessness preventing speech, grey or blue lips, marked confusion or profound exhaustion, especially after infection or major injury."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhs",
+            "locator": "Risk factors; symptoms; Immediate action; treatment; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-nhlbi-symptoms",
+            "locator": "Warning signs; call emergency services for trouble/severe shortness of breath",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-causes",
+            "locator": "Overview; symptoms; when to see; causes; risks; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "red_flags-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "突然严重气短伴胸痛或胸部紧压感，也可能是其他危急心肺病；同样立即求助，不自行归因于焦虑或普通肺炎。",
+          "en": "Sudden severe breathlessness with chest pain or pressure can indicate another cardiopulmonary emergency. Seek immediate help rather than assuming anxiety or ordinary pneumonia."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhs",
+            "locator": "Risk factors; symptoms; Immediate action; treatment; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-nhlbi-symptoms",
+            "locator": "Warning signs; call emergency services for trouble/severe shortness of breath",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "ards-p0-03-nhlbi-symptoms",
+        "source_metadata_sha256": "e2b3fc046daa516a052c4aa562fb96a969d8c7f9a87d433e0c84085ad560b32b",
+        "source_version": "2022-03-24",
+        "locator": "Warning signs; call emergency services for trouble/severe shortness of breath",
+        "population": "公众急救入口",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhs",
+        "source_metadata_sha256": "22e7bac04489f1c8e35051bf668404791d8d2d8031c930c5b2db75f31ac0deb4",
+        "source_version": "live2026-10-03",
+        "locator": "Risk factors; symptoms; Immediate action; treatment; complications",
+        "population": "公众患者教育",
+        "region": "UK",
+        "independence_group": "UK-NHS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-mayo-causes",
+        "source_metadata_sha256": "736ba113a9723dd2de795b751bc32d60787f9baff0a1f851ea726fcf6b2467cc",
+        "source_version": "2024-07-30",
+        "locator": "Overview; symptoms; when to see; causes; risks; complications",
+        "population": "主要成人患者教育",
+        "region": "US",
+        "independence_group": "Mayo-Clinic",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult ATS2024/ESICM2023 NMBA differences include non-COVID versus COVID scope; steroid adult/pediatric recommendations remain distinct; no universal drug/dose/duration or guaranteed ECMO benefit."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "ards-p0-03-ashp-prednisone",
+        "ards-p0-03-ats-2017",
+        "ards-p0-03-ats-2024",
+        "ards-p0-03-ats-nutrition",
+        "ards-p0-03-ats-patient",
+        "ards-p0-03-esicm-2023",
+        "ards-p0-03-espen-nutrition",
+        "ards-p0-03-mayo-causes",
+        "ards-p0-03-mayo-treatment",
+        "ards-p0-03-nhlbi-causes",
+        "ards-p0-03-nhlbi-diagnosis",
+        "ards-p0-03-nhlbi-newborn",
+        "ards-p0-03-nhlbi-recovery",
+        "ards-p0-03-nhlbi-symptoms",
+        "ards-p0-03-nhlbi-treatment",
+        "ards-p0-03-nhs",
+        "ards-p0-03-nhs-pregnancy",
+        "ards-p0-03-nhs-steroids",
+        "ards-p0-03-palicc-2",
+        "ards-p0-03-sccm-steroids",
+        "ards-p0-03-uktis-steroids"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "ESICM recommendation against routine continuous NMBA omitted non-COVID adult scope.",
+          "resolution": "Final bilingual text limits this to moderate/severe non-COVID adult ARDS; COVID evidence does not support a recommendation either way. ATS early severe conditional guidance retained.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Seven treatment benefit/risk/action claims were mislabelled explanation.",
+          "resolution": "treatment3/4/5 and medications1/2/4/5 correctly classified; actual independent authoring-source support checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Earlier ATS2017 ECMO/recruitment and nonspecific education could be overgeneralised to present treatment.",
+          "resolution": "Only still-retained low-volume/pressure and prone portions used; current ATS2024/ESICM2023 define present regional differences. No oxygen, ventilator, steroid or nutrition self-prescription introduced.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Hospital worsening action initially cited two NHLBI pages from one authoring group.",
+          "resolution": "Added independently written NHS ARDS immediate-action/hospital-treatment support; inpatient alerting the existing team implements the same worsening-breathing emergency action.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accept exact candidate for evidence-based editorial integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "review_report": "reports/p0-03-ards-independent.json"
+  },
+  {
+    "id": "p0-03-ards-care",
+    "target": {
+      "kind": "condition",
+      "id": "ards",
+      "section": "care"
+    },
+    "content_sha256": "6a01d6cac6fdd729218241d98c4ef9b1660dd2a7368c4c484436eff3c2ca5ecc",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "id": "care-0",
+        "kind": "action",
+        "text": {
+          "zh-CN": "救治重点是及时到具备呼吸支持能力的医院，并持续评估变化。",
+          "en": "Care requires timely access to hospital respiratory support and repeated assessment as the condition changes."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhs",
+            "locator": "Risk factors; symptoms; Immediate action; treatment; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-nhlbi-treatment",
+            "locator": "Oxygen; breathing support; Medicines; Other treatments: feeding, ECMO, fluids, proning, PT",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "care-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "已在医院者出现更喘、反应变慢或供氧下仍明显不适，立即告知护士或医生；不能等下一次查房。",
+          "en": "If already hospitalized, report worsening breathlessness, reduced responsiveness or distress despite oxygen immediately rather than waiting for the next ward round."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-symptoms",
+            "locator": "Warning signs; call emergency services for trouble/severe shortness of breath",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-nhlbi-recovery",
+            "locator": "Routine follow-up; monitoring; mental health; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-nhs",
+            "locator": "NHS ARDS Immediate action37–49; hospital/ICU treatment50–59; accessed2026-10-03",
+            "assessment": "Independent NHS guidance establishes urgent response to respiratory deterioration. Reporting immediately to the existing hospital team is the inpatient implementation of that urgency, without adding a treatment protocol."
+          }
+        ]
+      },
+      {
+        "id": "care-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "家属可准备近期感染、受伤、误吸、输血及用药经过，并记录希望询问的问题，帮助团队寻找诱因和沟通每天的治疗目标。",
+          "en": "Families can prepare the history of infection, injury, aspiration, transfusion and medicines, and write down questions to help identify triggers and discuss daily treatment goals."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-diagnosis",
+            "locator": "History; examination; arterial gases/oximetry/imaging; tests for other conditions",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-patient",
+            "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "care-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "是否需要转入重症监护或ECMO中心由团队根据持续低氧、治疗反应和当地资源判断；不能只凭一次家用血氧读数选择治疗。",
+          "en": "The team decides on intensive-care or ECMO-center transfer from persistent hypoxaemia, treatment response and local resources, not a single home oximeter reading."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-diagnosis",
+            "locator": "History; examination; arterial gases/oximetry/imaging; tests for other conditions",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-esicm-2023",
+            "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-palicc-2",
+            "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "ards-p0-03-nhlbi-symptoms",
+        "source_metadata_sha256": "e2b3fc046daa516a052c4aa562fb96a969d8c7f9a87d433e0c84085ad560b32b",
+        "source_version": "2022-03-24",
+        "locator": "Warning signs; call emergency services for trouble/severe shortness of breath",
+        "population": "公众急救入口",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhlbi-diagnosis",
+        "source_metadata_sha256": "d64da4e5e11751f53d0e3f0c2792ac73a56c07cc5c20691bd513f028c21c2624",
+        "source_version": "2022-03-24",
+        "locator": "History; examination; arterial gases/oximetry/imaging; tests for other conditions",
+        "population": "全年龄；测试按年龄病情选择",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-esicm-2023",
+        "source_metadata_sha256": "556759a193b8e425eaafa43e451e14730472407a87d2ed7ddc94f53c662c5e95",
+        "source_version": "2023-06-16",
+        "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+        "population": "成人；COVID相关外推明确降级",
+        "region": "International",
+        "independence_group": "ESICM-2023",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhs",
+        "source_metadata_sha256": "22e7bac04489f1c8e35051bf668404791d8d2d8031c930c5b2db75f31ac0deb4",
+        "source_version": "live2026-10-03",
+        "locator": "Risk factors; symptoms; Immediate action; treatment; complications",
+        "population": "公众患者教育",
+        "region": "UK",
+        "independence_group": "UK-NHS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhlbi-recovery",
+        "source_metadata_sha256": "864ac2c7f753afd9afe1e661c078a7e9cb3ad57a6fafc83a01acf9256e77fe41",
+        "source_version": "2022-03-24",
+        "locator": "Routine follow-up; monitoring; mental health; complications",
+        "population": "存活者与家庭；儿童时间表不由该页外推",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhlbi-treatment",
+        "source_metadata_sha256": "b84caf744fe1d9a4fc27b663dae866b8ede341331452d8caadd9894375ade4e4",
+        "source_version": "2022-03-24",
+        "locator": "Oxygen; breathing support; Medicines; Other treatments: feeding, ECMO, fluids, proning, PT",
+        "population": "成人/全年龄教育概述；具体年龄方案需儿科指南",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-palicc-2",
+        "source_metadata_sha256": "5642fcb0f24ad56ec4e5890257ca778ae515029b3e7e619667aa6c03adf54ea3",
+        "source_version": "2023-02; PCCM24:143–168",
+        "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+        "population": "<18岁且非活动性围产肺病；新生儿另有定义衔接",
+        "region": "International",
+        "independence_group": "PALICC-2",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-ats-patient",
+        "source_metadata_sha256": "f65db26b0a3dea62a7cf213abf574636b744ed55ecb810c09d1000b67b6bfbea",
+        "source_version": "2024-02 review/update",
+        "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+        "population": "患者与家庭；未采用页面40%等个体预测数字",
+        "region": "US",
+        "independence_group": "ATS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult ATS2024/ESICM2023 NMBA differences include non-COVID versus COVID scope; steroid adult/pediatric recommendations remain distinct; no universal drug/dose/duration or guaranteed ECMO benefit."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "ards-p0-03-ashp-prednisone",
+        "ards-p0-03-ats-2017",
+        "ards-p0-03-ats-2024",
+        "ards-p0-03-ats-nutrition",
+        "ards-p0-03-ats-patient",
+        "ards-p0-03-esicm-2023",
+        "ards-p0-03-espen-nutrition",
+        "ards-p0-03-mayo-causes",
+        "ards-p0-03-mayo-treatment",
+        "ards-p0-03-nhlbi-causes",
+        "ards-p0-03-nhlbi-diagnosis",
+        "ards-p0-03-nhlbi-newborn",
+        "ards-p0-03-nhlbi-recovery",
+        "ards-p0-03-nhlbi-symptoms",
+        "ards-p0-03-nhlbi-treatment",
+        "ards-p0-03-nhs",
+        "ards-p0-03-nhs-pregnancy",
+        "ards-p0-03-nhs-steroids",
+        "ards-p0-03-palicc-2",
+        "ards-p0-03-sccm-steroids",
+        "ards-p0-03-uktis-steroids"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "ESICM recommendation against routine continuous NMBA omitted non-COVID adult scope.",
+          "resolution": "Final bilingual text limits this to moderate/severe non-COVID adult ARDS; COVID evidence does not support a recommendation either way. ATS early severe conditional guidance retained.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Seven treatment benefit/risk/action claims were mislabelled explanation.",
+          "resolution": "treatment3/4/5 and medications1/2/4/5 correctly classified; actual independent authoring-source support checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Earlier ATS2017 ECMO/recruitment and nonspecific education could be overgeneralised to present treatment.",
+          "resolution": "Only still-retained low-volume/pressure and prone portions used; current ATS2024/ESICM2023 define present regional differences. No oxygen, ventilator, steroid or nutrition self-prescription introduced.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Hospital worsening action initially cited two NHLBI pages from one authoring group.",
+          "resolution": "Added independently written NHS ARDS immediate-action/hospital-treatment support; inpatient alerting the existing team implements the same worsening-breathing emergency action.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accept exact candidate for evidence-based editorial integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "review_report": "reports/p0-03-ards-independent.json"
+  },
+  {
+    "id": "p0-03-ards-diagnosis",
+    "target": {
+      "kind": "condition",
+      "id": "ards",
+      "section": "diagnosis"
+    },
+    "content_sha256": "f93caa794130e3198a419ba26d284e4968be9d0e200384a1848524ca532d64ab",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "id": "diagnosis-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "没有一项化验能单独确诊ARDS，医生综合起病经过、缺氧程度及肺部影像判断。",
+          "en": "No single test establishes ARDS; clinicians combine the course of illness, oxygenation and lung imaging."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-diagnosis",
+            "locator": "History; examination; arterial gases/oximetry/imaging; tests for other conditions",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-treatment",
+            "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "diagnosis-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "指夹血氧便于连续观察；动脉血气进一步测量血液气体。医生还要结合正在给予多少氧气，判断肺交换氧气的能力。",
+          "en": "Pulse oximetry allows ongoing observation, while arterial blood gases measure blood gases directly. Clinicians also consider the amount of oxygen being delivered when judging gas exchange."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-diagnosis",
+            "locator": "History; examination; arterial gases/oximetry/imaging; tests for other conditions",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-esicm-2023",
+            "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-palicc-2",
+            "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "diagnosis-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "胸片或CT寻找肺部浸润和其他异常；心电图与心脏超声可帮助判断心脏问题是否解释症状，并不是看到肺里有液体就等于ARDS。",
+          "en": "Chest X-ray or CT looks for pulmonary opacities and other abnormalities; ECG and echocardiography help assess cardiac explanations. Fluid in the lungs alone does not establish ARDS."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-diagnosis",
+            "locator": "History; examination; arterial gases/oximetry/imaging; tests for other conditions",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-treatment",
+            "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "diagnosis-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "血液和呼吸道标本可帮助寻找感染；某些病因不明者考虑支气管镜。是否检查及如何取样取决于病情，不是人人都要侵入性检查。",
+          "en": "Blood and respiratory samples help identify infection; bronchoscopy may be considered when the cause is unclear. Testing and sampling depend on the clinical situation rather than requiring invasive tests for everyone."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-diagnosis",
+            "locator": "History; examination; arterial gases/oximetry/imaging; tests for other conditions",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-treatment",
+            "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "ards-p0-03-nhlbi-diagnosis",
+        "source_metadata_sha256": "d64da4e5e11751f53d0e3f0c2792ac73a56c07cc5c20691bd513f028c21c2624",
+        "source_version": "2022-03-24",
+        "locator": "History; examination; arterial gases/oximetry/imaging; tests for other conditions",
+        "population": "全年龄；测试按年龄病情选择",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-esicm-2023",
+        "source_metadata_sha256": "556759a193b8e425eaafa43e451e14730472407a87d2ed7ddc94f53c662c5e95",
+        "source_version": "2023-06-16",
+        "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+        "population": "成人；COVID相关外推明确降级",
+        "region": "International",
+        "independence_group": "ESICM-2023",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-mayo-treatment",
+        "source_metadata_sha256": "4c505c02dea9d87106f1211970140474e3bf4c5e05c215879e0c181b108f2579",
+        "source_version": "2024-07-30",
+        "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+        "population": "主要成人患者教育",
+        "region": "US",
+        "independence_group": "Mayo-Clinic",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-palicc-2",
+        "source_metadata_sha256": "5642fcb0f24ad56ec4e5890257ca778ae515029b3e7e619667aa6c03adf54ea3",
+        "source_version": "2023-02; PCCM24:143–168",
+        "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+        "population": "<18岁且非活动性围产肺病；新生儿另有定义衔接",
+        "region": "International",
+        "independence_group": "PALICC-2",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult ATS2024/ESICM2023 NMBA differences include non-COVID versus COVID scope; steroid adult/pediatric recommendations remain distinct; no universal drug/dose/duration or guaranteed ECMO benefit."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "ards-p0-03-ashp-prednisone",
+        "ards-p0-03-ats-2017",
+        "ards-p0-03-ats-2024",
+        "ards-p0-03-ats-nutrition",
+        "ards-p0-03-ats-patient",
+        "ards-p0-03-esicm-2023",
+        "ards-p0-03-espen-nutrition",
+        "ards-p0-03-mayo-causes",
+        "ards-p0-03-mayo-treatment",
+        "ards-p0-03-nhlbi-causes",
+        "ards-p0-03-nhlbi-diagnosis",
+        "ards-p0-03-nhlbi-newborn",
+        "ards-p0-03-nhlbi-recovery",
+        "ards-p0-03-nhlbi-symptoms",
+        "ards-p0-03-nhlbi-treatment",
+        "ards-p0-03-nhs",
+        "ards-p0-03-nhs-pregnancy",
+        "ards-p0-03-nhs-steroids",
+        "ards-p0-03-palicc-2",
+        "ards-p0-03-sccm-steroids",
+        "ards-p0-03-uktis-steroids"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "ESICM recommendation against routine continuous NMBA omitted non-COVID adult scope.",
+          "resolution": "Final bilingual text limits this to moderate/severe non-COVID adult ARDS; COVID evidence does not support a recommendation either way. ATS early severe conditional guidance retained.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Seven treatment benefit/risk/action claims were mislabelled explanation.",
+          "resolution": "treatment3/4/5 and medications1/2/4/5 correctly classified; actual independent authoring-source support checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Earlier ATS2017 ECMO/recruitment and nonspecific education could be overgeneralised to present treatment.",
+          "resolution": "Only still-retained low-volume/pressure and prone portions used; current ATS2024/ESICM2023 define present regional differences. No oxygen, ventilator, steroid or nutrition self-prescription introduced.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Hospital worsening action initially cited two NHLBI pages from one authoring group.",
+          "resolution": "Added independently written NHS ARDS immediate-action/hospital-treatment support; inpatient alerting the existing team implements the same worsening-breathing emergency action.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accept exact candidate for evidence-based editorial integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "review_report": "reports/p0-03-ards-independent.json"
+  },
+  {
+    "id": "p0-03-ards-differentials",
+    "target": {
+      "kind": "condition",
+      "id": "ards",
+      "section": "differentials"
+    },
+    "content_sha256": "4c7103ed91f5e20c532e647cb120facdf4ec12a1b5ca6e2656d99dd8fb4e1a5e",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "id": "differentials-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "严重气短和低氧有多种原因，辨别病因直接影响治疗。",
+          "en": "Severe breathlessness and low oxygen have multiple causes, and distinguishing them affects treatment."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-diagnosis",
+            "locator": "History; examination; arterial gases/oximetry/imaging; tests for other conditions",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-treatment",
+            "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "differentials-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "心衰或液体过多也会造成肺水肿；医生通过病史、体液状态和心脏检查分辨。心脏病与ARDS也可同时存在，不能简单二选一。",
+          "en": "Heart failure or fluid overload can cause pulmonary oedema; history, fluid status and cardiac testing help distinguish them. Cardiac disease and ARDS can coexist rather than being mutually exclusive."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-diagnosis",
+            "locator": "History; examination; arterial gases/oximetry/imaging; tests for other conditions",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-treatment",
+            "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-palicc-2",
+            "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "differentials-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "肺炎既可能单独造成症状，也可能进一步诱发ARDS；出现ARDS后仍要针对感染治疗，不能只关注呼吸机。",
+          "en": "Pneumonia can cause symptoms on its own or trigger ARDS. When ARDS develops, treatment must still address infection rather than focusing only on the ventilator."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-causes",
+            "locator": "Alveolar injury; infection/inhalation/trauma/procedures; prevention",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-nhlbi-treatment",
+            "locator": "Oxygen; breathing support; Medicines; Other treatments: feeding, ECMO, fluids, proning, PT",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-patient",
+            "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "differentials-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "早产儿出生后的表面活性物质缺乏有独立的新生儿治疗路径；成人ARDS的激素、呼吸机或ECMO建议不能直接套用。",
+          "en": "Surfactant deficiency after premature birth follows a separate neonatal pathway; adult ARDS steroid, ventilation and ECMO recommendations cannot simply be copied."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-ats-2024",
+            "locator": "Abstract; Overview/Summary of Recommendations, lines294–360 in publisher response; other sections inaccessible on subsequent offset calls",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-palicc-2",
+            "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-nhlbi-newborn",
+            "locator": "What is; causes/lack of surfactant; treatment; only distinction from ARDS",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "ards-p0-03-ats-2024",
+        "source_metadata_sha256": "d33901b147175a5eb1bb1df1204e95abed56817c067db75a85ece7182add6f27",
+        "source_version": "2024-01-01",
+        "locator": "Abstract; Overview/Summary of Recommendations, lines294–360 in publisher response; other sections inaccessible on subsequent offset calls",
+        "population": "成人ARDS；不声称复读未成功返回的后续全文",
+        "region": "International",
+        "independence_group": "ATS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhlbi-causes",
+        "source_metadata_sha256": "920303d679e9a557e75ed019a757b6cbb3ae32caaa1c221ba2211ea80a889104",
+        "source_version": "2022-03-24",
+        "locator": "Alveolar injury; infection/inhalation/trauma/procedures; prevention",
+        "population": "全年龄；不复用其简化脓毒症/胰腺炎定义",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhlbi-diagnosis",
+        "source_metadata_sha256": "d64da4e5e11751f53d0e3f0c2792ac73a56c07cc5c20691bd513f028c21c2624",
+        "source_version": "2022-03-24",
+        "locator": "History; examination; arterial gases/oximetry/imaging; tests for other conditions",
+        "population": "全年龄；测试按年龄病情选择",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhlbi-newborn",
+        "source_metadata_sha256": "0ea6ae78a8202d6c8000e0044f124421f6a876a12e106abe582930be79de7cd5",
+        "source_version": "2022-03-24",
+        "locator": "What is; causes/lack of surfactant; treatment; only distinction from ARDS",
+        "population": "新生儿；仅鉴别边界",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-mayo-treatment",
+        "source_metadata_sha256": "4c505c02dea9d87106f1211970140474e3bf4c5e05c215879e0c181b108f2579",
+        "source_version": "2024-07-30",
+        "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+        "population": "主要成人患者教育",
+        "region": "US",
+        "independence_group": "Mayo-Clinic",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhlbi-treatment",
+        "source_metadata_sha256": "b84caf744fe1d9a4fc27b663dae866b8ede341331452d8caadd9894375ade4e4",
+        "source_version": "2022-03-24",
+        "locator": "Oxygen; breathing support; Medicines; Other treatments: feeding, ECMO, fluids, proning, PT",
+        "population": "成人/全年龄教育概述；具体年龄方案需儿科指南",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-palicc-2",
+        "source_metadata_sha256": "5642fcb0f24ad56ec4e5890257ca778ae515029b3e7e619667aa6c03adf54ea3",
+        "source_version": "2023-02; PCCM24:143–168",
+        "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+        "population": "<18岁且非活动性围产肺病；新生儿另有定义衔接",
+        "region": "International",
+        "independence_group": "PALICC-2",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-ats-patient",
+        "source_metadata_sha256": "f65db26b0a3dea62a7cf213abf574636b744ed55ecb810c09d1000b67b6bfbea",
+        "source_version": "2024-02 review/update",
+        "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+        "population": "患者与家庭；未采用页面40%等个体预测数字",
+        "region": "US",
+        "independence_group": "ATS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult ATS2024/ESICM2023 NMBA differences include non-COVID versus COVID scope; steroid adult/pediatric recommendations remain distinct; no universal drug/dose/duration or guaranteed ECMO benefit."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "ards-p0-03-ashp-prednisone",
+        "ards-p0-03-ats-2017",
+        "ards-p0-03-ats-2024",
+        "ards-p0-03-ats-nutrition",
+        "ards-p0-03-ats-patient",
+        "ards-p0-03-esicm-2023",
+        "ards-p0-03-espen-nutrition",
+        "ards-p0-03-mayo-causes",
+        "ards-p0-03-mayo-treatment",
+        "ards-p0-03-nhlbi-causes",
+        "ards-p0-03-nhlbi-diagnosis",
+        "ards-p0-03-nhlbi-newborn",
+        "ards-p0-03-nhlbi-recovery",
+        "ards-p0-03-nhlbi-symptoms",
+        "ards-p0-03-nhlbi-treatment",
+        "ards-p0-03-nhs",
+        "ards-p0-03-nhs-pregnancy",
+        "ards-p0-03-nhs-steroids",
+        "ards-p0-03-palicc-2",
+        "ards-p0-03-sccm-steroids",
+        "ards-p0-03-uktis-steroids"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "ESICM recommendation against routine continuous NMBA omitted non-COVID adult scope.",
+          "resolution": "Final bilingual text limits this to moderate/severe non-COVID adult ARDS; COVID evidence does not support a recommendation either way. ATS early severe conditional guidance retained.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Seven treatment benefit/risk/action claims were mislabelled explanation.",
+          "resolution": "treatment3/4/5 and medications1/2/4/5 correctly classified; actual independent authoring-source support checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Earlier ATS2017 ECMO/recruitment and nonspecific education could be overgeneralised to present treatment.",
+          "resolution": "Only still-retained low-volume/pressure and prone portions used; current ATS2024/ESICM2023 define present regional differences. No oxygen, ventilator, steroid or nutrition self-prescription introduced.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Hospital worsening action initially cited two NHLBI pages from one authoring group.",
+          "resolution": "Added independently written NHS ARDS immediate-action/hospital-treatment support; inpatient alerting the existing team implements the same worsening-breathing emergency action.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accept exact candidate for evidence-based editorial integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "review_report": "reports/p0-03-ards-independent.json"
+  },
+  {
+    "id": "p0-03-ards-treatment",
+    "target": {
+      "kind": "condition",
+      "id": "ards",
+      "section": "treatment"
+    },
+    "content_sha256": "be4209d261bf1cf4d98e70e17402aa5f94e62a161387ae3da05abd12f487564f",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "id": "treatment-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "治疗一边支持呼吸，一边处理诱因，并尽量减少支持设备造成的额外损伤。",
+          "en": "Treatment supports breathing, treats the trigger and limits additional injury from support itself."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-treatment",
+            "locator": "Oxygen; breathing support; Medicines; Other treatments: feeding, ECMO, fluids, proning, PT",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-patient",
+            "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-esicm-2023",
+            "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "treatment-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "可从氧疗或高流量鼻氧开始，根据需要使用面罩通气或气管插管后的呼吸机；是否升级取决于氧合和呼吸负担，不能把面罩支持当成必须坚持到底的步骤。",
+          "en": "Oxygen or high-flow nasal oxygen may be used, with mask ventilation or invasive ventilation as needed. Escalation depends on oxygenation and breathing effort; mask support is not a mandatory step to persist with indefinitely."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-treatment",
+            "locator": "Oxygen; breathing support; Medicines; Other treatments: feeding, ECMO, fluids, proning, PT",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-esicm-2023",
+            "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-palicc-2",
+            "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "treatment-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "肺保护通气采用较小的每次送气量并限制压力，避免把已经受伤的肺撑得过度；参数由重症团队按体型和肺部情况设定。",
+          "en": "Lung-protective ventilation uses smaller breaths and limits pressure to avoid overdistending injured lungs; the ICU team sets it according to body size and lung condition."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-esicm-2023",
+            "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-2017",
+            "locator": "Overview pp1–2 recommendations1a/1b: low tidal volume and prone positioning only; not obsolete ECMO/recruitment statements",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "treatment-3",
+        "kind": "benefit",
+        "text": {
+          "zh-CN": "部分中重度成人在有创通气时需要由团队协助较长时间俯卧，以改善氧合并提高生存机会；这不是在家趴着替代急救，也不表示所有儿童都有同等证据。",
+          "en": "Some adults with moderate-to-severe ARDS on invasive ventilation benefit from prolonged prone positioning by the care team. This can improve oxygenation and survival; lying prone at home is not a substitute for emergency care, and equivalent evidence does not apply to all children."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-esicm-2023",
+            "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-2017",
+            "locator": "Overview pp1–2 recommendations1a/1b: low tidal volume and prone positioning only; not obsolete ECMO/recruitment statements",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-palicc-2",
+            "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "treatment-4",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "呼气末正压帮助肺泡保持张开，但过高也可伤肺或影响循环；持续高压“强行打开肺”的操作并非越强越好，当前指南反对长时间高压肺复张。",
+          "en": "Positive end-expiratory pressure helps keep alveoli open, but excessive pressure can injure lungs or impair circulation. Prolonged high-pressure lung recruitment is not a more-is-better approach and is discouraged by current guidelines."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-ats-2024",
+            "locator": "Abstract; Overview/Summary of Recommendations, lines294–360 in publisher response; other sections inaccessible on subsequent offset calls",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-esicm-2023",
+            "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "treatment-5",
+        "kind": "action",
+        "text": {
+          "zh-CN": "ECMO让血液经过体外装置交换氧气和二氧化碳；适合经过严格筛选、常规支持仍不足的部分重症患者，由有经验中心评估，并不是所有低氧者都要使用。",
+          "en": "ECMO exchanges oxygen and carbon dioxide through an external blood circuit. Experienced centers assess selected severe cases with inadequate conventional support; it is not required for every person with low oxygen."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-ats-2024",
+            "locator": "Abstract; Overview/Summary of Recommendations, lines294–360 in publisher response; other sections inaccessible on subsequent offset calls",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-esicm-2023",
+            "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-treatment",
+            "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "treatment-6",
+        "kind": "action",
+        "text": {
+          "zh-CN": "液体过多可加重肺部积液，过少又可能影响器官供血；团队根据循环、尿量等调整输液及必要的排液治疗，家属不要自行限制或大量补水。",
+          "en": "Excess fluid can worsen lung oedema, while too little can impair organ perfusion. The team adjusts fluids and, when needed, fluid removal according to circulation and urine output; families should not independently restrict or load fluids."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-treatment",
+            "locator": "Oxygen; breathing support; Medicines; Other treatments: feeding, ECMO, fluids, proning, PT",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-treatment",
+            "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "ards-p0-03-ats-2024",
+        "source_metadata_sha256": "d33901b147175a5eb1bb1df1204e95abed56817c067db75a85ece7182add6f27",
+        "source_version": "2024-01-01",
+        "locator": "Abstract; Overview/Summary of Recommendations, lines294–360 in publisher response; other sections inaccessible on subsequent offset calls",
+        "population": "成人ARDS；不声称复读未成功返回的后续全文",
+        "region": "International",
+        "independence_group": "ATS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-esicm-2023",
+        "source_metadata_sha256": "556759a193b8e425eaafa43e451e14730472407a87d2ed7ddc94f53c662c5e95",
+        "source_version": "2023-06-16",
+        "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+        "population": "成人；COVID相关外推明确降级",
+        "region": "International",
+        "independence_group": "ESICM-2023",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-mayo-treatment",
+        "source_metadata_sha256": "4c505c02dea9d87106f1211970140474e3bf4c5e05c215879e0c181b108f2579",
+        "source_version": "2024-07-30",
+        "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+        "population": "主要成人患者教育",
+        "region": "US",
+        "independence_group": "Mayo-Clinic",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhlbi-treatment",
+        "source_metadata_sha256": "b84caf744fe1d9a4fc27b663dae866b8ede341331452d8caadd9894375ade4e4",
+        "source_version": "2022-03-24",
+        "locator": "Oxygen; breathing support; Medicines; Other treatments: feeding, ECMO, fluids, proning, PT",
+        "population": "成人/全年龄教育概述；具体年龄方案需儿科指南",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-palicc-2",
+        "source_metadata_sha256": "5642fcb0f24ad56ec4e5890257ca778ae515029b3e7e619667aa6c03adf54ea3",
+        "source_version": "2023-02; PCCM24:143–168",
+        "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+        "population": "<18岁且非活动性围产肺病；新生儿另有定义衔接",
+        "region": "International",
+        "independence_group": "PALICC-2",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-ats-patient",
+        "source_metadata_sha256": "f65db26b0a3dea62a7cf213abf574636b744ed55ecb810c09d1000b67b6bfbea",
+        "source_version": "2024-02 review/update",
+        "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+        "population": "患者与家庭；未采用页面40%等个体预测数字",
+        "region": "US",
+        "independence_group": "ATS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-ats-2017",
+        "source_metadata_sha256": "b5992bfd0b34d651b2987561c2e404ff58c8ed1f19008f3c0546b36fd93a09e3",
+        "source_version": "2017-05-01",
+        "locator": "Overview pp1–2 recommendations1a/1b: low tidal volume and prone positioning only; not obsolete ECMO/recruitment statements",
+        "population": "成人；仅沿用2024仍保留部分",
+        "region": "International",
+        "independence_group": "ATS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult ATS2024/ESICM2023 NMBA differences include non-COVID versus COVID scope; steroid adult/pediatric recommendations remain distinct; no universal drug/dose/duration or guaranteed ECMO benefit."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "ards-p0-03-ashp-prednisone",
+        "ards-p0-03-ats-2017",
+        "ards-p0-03-ats-2024",
+        "ards-p0-03-ats-nutrition",
+        "ards-p0-03-ats-patient",
+        "ards-p0-03-esicm-2023",
+        "ards-p0-03-espen-nutrition",
+        "ards-p0-03-mayo-causes",
+        "ards-p0-03-mayo-treatment",
+        "ards-p0-03-nhlbi-causes",
+        "ards-p0-03-nhlbi-diagnosis",
+        "ards-p0-03-nhlbi-newborn",
+        "ards-p0-03-nhlbi-recovery",
+        "ards-p0-03-nhlbi-symptoms",
+        "ards-p0-03-nhlbi-treatment",
+        "ards-p0-03-nhs",
+        "ards-p0-03-nhs-pregnancy",
+        "ards-p0-03-nhs-steroids",
+        "ards-p0-03-palicc-2",
+        "ards-p0-03-sccm-steroids",
+        "ards-p0-03-uktis-steroids"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "ESICM recommendation against routine continuous NMBA omitted non-COVID adult scope.",
+          "resolution": "Final bilingual text limits this to moderate/severe non-COVID adult ARDS; COVID evidence does not support a recommendation either way. ATS early severe conditional guidance retained.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Seven treatment benefit/risk/action claims were mislabelled explanation.",
+          "resolution": "treatment3/4/5 and medications1/2/4/5 correctly classified; actual independent authoring-source support checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Earlier ATS2017 ECMO/recruitment and nonspecific education could be overgeneralised to present treatment.",
+          "resolution": "Only still-retained low-volume/pressure and prone portions used; current ATS2024/ESICM2023 define present regional differences. No oxygen, ventilator, steroid or nutrition self-prescription introduced.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Hospital worsening action initially cited two NHLBI pages from one authoring group.",
+          "resolution": "Added independently written NHS ARDS immediate-action/hospital-treatment support; inpatient alerting the existing team implements the same worsening-breathing emergency action.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accept exact candidate for evidence-based editorial integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "review_report": "reports/p0-03-ards-independent.json"
+  },
+  {
+    "id": "p0-03-ards-medications",
+    "target": {
+      "kind": "condition",
+      "id": "ards",
+      "section": "medications"
+    },
+    "content_sha256": "900743032edca53d6296929b00ca52a077d85440fa01ca0160007aa4dec695b0",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "id": "medications-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "药物用于治疗诱因、控制炎症或减轻重症治疗负担，不能替代呼吸支持。",
+          "en": "Medicines treat triggers, inflammation or the burden of intensive care; they do not replace respiratory support."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-treatment",
+            "locator": "Oxygen; breathing support; Medicines; Other treatments: feeding, ECMO, fluids, proning, PT",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-treatment",
+            "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-2024",
+            "locator": "Abstract; Overview/Summary of Recommendations, lines294–360 in publisher response; other sections inaccessible on subsequent offset calls",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "medications-1",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "抗生素用于相应细菌感染；镇痛和镇静药减轻疼痛、焦虑并帮助耐受呼吸机。用药和镇静深度需要反复评估，过度或长时间镇静可能影响清醒及康复。",
+          "en": "Antibiotics treat relevant bacterial infection; analgesia and sedation relieve pain and anxiety and help ventilator tolerance. The need and depth are reassessed because excessive or prolonged sedation can affect wakefulness and recovery."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-treatment",
+            "locator": "Oxygen; breathing support; Medicines; Other treatments: feeding, ECMO, fluids, proning, PT",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-treatment",
+            "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-palicc-2",
+            "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "medications-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "成人ARDS的全身糖皮质激素是有条件推荐，并非人人同一处方；目前不能确定一套适合所有患者的药品、剂量和疗程。",
+          "en": "Systemic corticosteroids have a conditional recommendation in adult ARDS rather than one prescription for everyone; no single drug, dose and duration is established for all patients."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-ats-2024",
+            "locator": "Abstract; Overview/Summary of Recommendations, lines294–360 in publisher response; other sections inaccessible on subsequent offset calls",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-sccm-steroids",
+            "locator": "Results and recommendations: adult conditional ARDS; no pediatric recommendation; no specific molecule/dose/duration",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "medications-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "全身激素可能升高血糖、增加感染风险并影响情绪；风险受剂量和疗程影响。出院后如仍需服药，按处方和停减药计划执行，不自行延长或突然停药。",
+          "en": "Systemic steroids can raise glucose, increase infection risk and affect mood; risks depend on dose and duration. If continued after discharge, follow the prescription and stopping plan rather than extending or abruptly stopping treatment independently."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhs-steroids",
+            "locator": "Types; side effects; dose/duration risks; stopping",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ashp-prednisone",
+            "locator": "How used; precautions; infection/glucose/mood; pregnancy/lactation; do not stop independently",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "medications-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "肌松药可暂时减少呼吸肌与呼吸机对抗，但并非所有患者常规持续使用；美国指南对早期重症有条件支持。欧洲指南反对为了降低死亡率而对非COVID相关的中重度成人ARDS常规持续滴注；对COVID相关ARDS则因证据不足未作赞成或反对推荐。团队需权衡具体情况。",
+          "en": "Neuromuscular blockers can temporarily reduce patient–ventilator asynchrony but are not routine continuous treatment for everyone. ATS conditionally supports use in early severe ARDS. ESICM opposes routine continuous infusion to reduce mortality in adults with moderate-to-severe non-COVID ARDS; for COVID-related ARDS, insufficient evidence prevents a recommendation for or against. The team weighs the specific situation."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-ats-2024",
+            "locator": "Abstract; Overview/Summary of Recommendations, lines294–360 in publisher response; other sections inaccessible on subsequent offset calls",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-esicm-2023",
+            "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "medications-5",
+        "kind": "action",
+        "text": {
+          "zh-CN": "防血栓和减酸等药物是根据住院风险安排的辅助治疗；它们分别针对血栓或应激性胃肠问题，不是直接修复肺泡的药。",
+          "en": "Clot prevention and acid suppression are supportive treatments selected for hospital risks. They address thrombosis or stress-related gastrointestinal problems rather than directly repairing alveoli."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-treatment",
+            "locator": "Oxygen; breathing support; Medicines; Other treatments: feeding, ECMO, fluids, proning, PT",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-treatment",
+            "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "ards-p0-03-ats-2024",
+        "source_metadata_sha256": "d33901b147175a5eb1bb1df1204e95abed56817c067db75a85ece7182add6f27",
+        "source_version": "2024-01-01",
+        "locator": "Abstract; Overview/Summary of Recommendations, lines294–360 in publisher response; other sections inaccessible on subsequent offset calls",
+        "population": "成人ARDS；不声称复读未成功返回的后续全文",
+        "region": "International",
+        "independence_group": "ATS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-esicm-2023",
+        "source_metadata_sha256": "556759a193b8e425eaafa43e451e14730472407a87d2ed7ddc94f53c662c5e95",
+        "source_version": "2023-06-16",
+        "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+        "population": "成人；COVID相关外推明确降级",
+        "region": "International",
+        "independence_group": "ESICM-2023",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-mayo-treatment",
+        "source_metadata_sha256": "4c505c02dea9d87106f1211970140474e3bf4c5e05c215879e0c181b108f2579",
+        "source_version": "2024-07-30",
+        "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+        "population": "主要成人患者教育",
+        "region": "US",
+        "independence_group": "Mayo-Clinic",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhlbi-treatment",
+        "source_metadata_sha256": "b84caf744fe1d9a4fc27b663dae866b8ede341331452d8caadd9894375ade4e4",
+        "source_version": "2022-03-24",
+        "locator": "Oxygen; breathing support; Medicines; Other treatments: feeding, ECMO, fluids, proning, PT",
+        "population": "成人/全年龄教育概述；具体年龄方案需儿科指南",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-palicc-2",
+        "source_metadata_sha256": "5642fcb0f24ad56ec4e5890257ca778ae515029b3e7e619667aa6c03adf54ea3",
+        "source_version": "2023-02; PCCM24:143–168",
+        "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+        "population": "<18岁且非活动性围产肺病；新生儿另有定义衔接",
+        "region": "International",
+        "independence_group": "PALICC-2",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-sccm-steroids",
+        "source_metadata_sha256": "b69d69fdd175aec77b97f54a888d2b857df3dca67229f10902f83d620ea1d7a3",
+        "source_version": "2024; Crit Care Med52:e219–e233",
+        "locator": "Results and recommendations: adult conditional ARDS; no pediatric recommendation; no specific molecule/dose/duration",
+        "population": "住院成人ARDS；儿童不作推荐",
+        "region": "International",
+        "independence_group": "SCCM-steroid-panel",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhs-steroids",
+        "source_metadata_sha256": "e5aea2d4b16101923e41cb601e57c81ffb77f91e8af9be053f65a81d3b058b04",
+        "source_version": "2025-06-19",
+        "locator": "Types; side effects; dose/duration risks; stopping",
+        "population": "一般糖皮质激素安全；非ARDS疗效",
+        "region": "UK",
+        "independence_group": "UK-NHS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-ashp-prednisone",
+        "source_metadata_sha256": "4b8f633a88e5c1c01bba19040cfb32e162ed514ec95bc46f6d3eff9507fee183",
+        "source_version": "2024-06-20",
+        "locator": "How used; precautions; infection/glucose/mood; pregnancy/lactation; do not stop independently",
+        "population": "泼尼松处方者安全背景；不指定ARDS首选产品",
+        "region": "US",
+        "independence_group": "ASHP",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult ATS2024/ESICM2023 NMBA differences include non-COVID versus COVID scope; steroid adult/pediatric recommendations remain distinct; no universal drug/dose/duration or guaranteed ECMO benefit."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "ards-p0-03-ashp-prednisone",
+        "ards-p0-03-ats-2017",
+        "ards-p0-03-ats-2024",
+        "ards-p0-03-ats-nutrition",
+        "ards-p0-03-ats-patient",
+        "ards-p0-03-esicm-2023",
+        "ards-p0-03-espen-nutrition",
+        "ards-p0-03-mayo-causes",
+        "ards-p0-03-mayo-treatment",
+        "ards-p0-03-nhlbi-causes",
+        "ards-p0-03-nhlbi-diagnosis",
+        "ards-p0-03-nhlbi-newborn",
+        "ards-p0-03-nhlbi-recovery",
+        "ards-p0-03-nhlbi-symptoms",
+        "ards-p0-03-nhlbi-treatment",
+        "ards-p0-03-nhs",
+        "ards-p0-03-nhs-pregnancy",
+        "ards-p0-03-nhs-steroids",
+        "ards-p0-03-palicc-2",
+        "ards-p0-03-sccm-steroids",
+        "ards-p0-03-uktis-steroids"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "ESICM recommendation against routine continuous NMBA omitted non-COVID adult scope.",
+          "resolution": "Final bilingual text limits this to moderate/severe non-COVID adult ARDS; COVID evidence does not support a recommendation either way. ATS early severe conditional guidance retained.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Seven treatment benefit/risk/action claims were mislabelled explanation.",
+          "resolution": "treatment3/4/5 and medications1/2/4/5 correctly classified; actual independent authoring-source support checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Earlier ATS2017 ECMO/recruitment and nonspecific education could be overgeneralised to present treatment.",
+          "resolution": "Only still-retained low-volume/pressure and prone portions used; current ATS2024/ESICM2023 define present regional differences. No oxygen, ventilator, steroid or nutrition self-prescription introduced.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Hospital worsening action initially cited two NHLBI pages from one authoring group.",
+          "resolution": "Added independently written NHS ARDS immediate-action/hospital-treatment support; inpatient alerting the existing team implements the same worsening-breathing emergency action.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accept exact candidate for evidence-based editorial integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "review_report": "reports/p0-03-ards-independent.json"
+  },
+  {
+    "id": "p0-03-ards-diet",
+    "target": {
+      "kind": "condition",
+      "id": "ards",
+      "section": "diet"
+    },
+    "content_sha256": "a0c0227b3cd1eca496c07a1bf03f229a86dcd351eefb97ed3edb40d289e1f312",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "id": "diet-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "营养支持帮助重病期间维持身体需要，急性期的途径与份量由团队决定。",
+          "en": "Nutritional support meets needs during critical illness; the team determines the route and amount in the acute phase."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-treatment",
+            "locator": "Oxygen; breathing support; Medicines; Other treatments: feeding, ECMO, fluids, proning, PT",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-nutrition",
+            "locator": "Entire Nutrition section: inability to eat; tube feeds; dietitian; shock/instability; family questions",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-espen-nutrition",
+            "locator": "pp2–5 general assessment, oral/enteral routes, individual progression; R11 uncontrolled shock delay; nutrition support",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "diet-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "插管或无法安全进食时可通过喂养管提供营养；循环不稳定等情况下可能暂缓或逐步增加，不能把不能经口吃饭理解成没有提供营养。",
+          "en": "A feeding tube may provide nutrition when intubated or unable to eat safely. Instability may require temporary delay or gradual increases; inability to eat by mouth does not mean nutrition is being ignored."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-treatment",
+            "locator": "Oxygen; breathing support; Medicines; Other treatments: feeding, ECMO, fluids, proning, PT",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-nutrition",
+            "locator": "Entire Nutrition section: inability to eat; tube feeds; dietitian; shock/instability; family questions",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-espen-nutrition",
+            "locator": "pp2–5 general assessment, oral/enteral routes, individual progression; R11 uncontrolled shock delay; nutrition support",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "diet-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "向护士或营养师了解当天能否进食、营养目标及耐受情况；家属不要擅自喂食或把大量补品灌入管路。",
+          "en": "Ask the nurse or dietitian about oral intake, nutritional goals and tolerance; families should not independently feed the patient or put large quantities of supplements into tubes."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-ats-nutrition",
+            "locator": "Entire Nutrition section: inability to eat; tube feeds; dietitian; shock/instability; family questions",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-espen-nutrition",
+            "locator": "pp2–5 general assessment, oral/enteral routes, individual progression; R11 uncontrolled shock delay; nutrition support",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "diet-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "恢复期若食量不足、体重下降或吞咽不适，告诉团队以调整营养计划；儿童还需考虑生长发育，不能只套成人热量。",
+          "en": "Report poor intake, weight loss or swallowing difficulty during recovery so nutrition can be adjusted. Children also need support for growth rather than adult calorie targets copied directly."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-palicc-2",
+            "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-espen-nutrition",
+            "locator": "pp2–5 general assessment, oral/enteral routes, individual progression; R11 uncontrolled shock delay; nutrition support",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "ards-p0-03-ats-nutrition",
+        "source_metadata_sha256": "417cdba3e026efc420c9719fde9e0183352f24c8f25c28921cb4a75dd11c56dc",
+        "source_version": "live2026-10-03; ICU patient guide",
+        "locator": "Entire Nutrition section: inability to eat; tube feeds; dietitian; shock/instability; family questions",
+        "population": "ICU患者与家庭",
+        "region": "US",
+        "independence_group": "ATS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhlbi-treatment",
+        "source_metadata_sha256": "b84caf744fe1d9a4fc27b663dae866b8ede341331452d8caadd9894375ade4e4",
+        "source_version": "2022-03-24",
+        "locator": "Oxygen; breathing support; Medicines; Other treatments: feeding, ECMO, fluids, proning, PT",
+        "population": "成人/全年龄教育概述；具体年龄方案需儿科指南",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-palicc-2",
+        "source_metadata_sha256": "5642fcb0f24ad56ec4e5890257ca778ae515029b3e7e619667aa6c03adf54ea3",
+        "source_version": "2023-02; PCCM24:143–168",
+        "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+        "population": "<18岁且非活动性围产肺病；新生儿另有定义衔接",
+        "region": "International",
+        "independence_group": "PALICC-2",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-espen-nutrition",
+        "source_metadata_sha256": "59716c50c47a33b2c1ec7797fa9afb581a3afe09025b35dfff0a4e69e23b70e6",
+        "source_version": "2023-09; accepted2023-07-10",
+        "locator": "pp2–5 general assessment, oral/enteral routes, individual progression; R11 uncontrolled shock delay; nutrition support",
+        "population": "成人ICU；不外推成人热量到儿童",
+        "region": "Europe/International",
+        "independence_group": "ESPEN",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult ATS2024/ESICM2023 NMBA differences include non-COVID versus COVID scope; steroid adult/pediatric recommendations remain distinct; no universal drug/dose/duration or guaranteed ECMO benefit."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "ards-p0-03-ashp-prednisone",
+        "ards-p0-03-ats-2017",
+        "ards-p0-03-ats-2024",
+        "ards-p0-03-ats-nutrition",
+        "ards-p0-03-ats-patient",
+        "ards-p0-03-esicm-2023",
+        "ards-p0-03-espen-nutrition",
+        "ards-p0-03-mayo-causes",
+        "ards-p0-03-mayo-treatment",
+        "ards-p0-03-nhlbi-causes",
+        "ards-p0-03-nhlbi-diagnosis",
+        "ards-p0-03-nhlbi-newborn",
+        "ards-p0-03-nhlbi-recovery",
+        "ards-p0-03-nhlbi-symptoms",
+        "ards-p0-03-nhlbi-treatment",
+        "ards-p0-03-nhs",
+        "ards-p0-03-nhs-pregnancy",
+        "ards-p0-03-nhs-steroids",
+        "ards-p0-03-palicc-2",
+        "ards-p0-03-sccm-steroids",
+        "ards-p0-03-uktis-steroids"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "ESICM recommendation against routine continuous NMBA omitted non-COVID adult scope.",
+          "resolution": "Final bilingual text limits this to moderate/severe non-COVID adult ARDS; COVID evidence does not support a recommendation either way. ATS early severe conditional guidance retained.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Seven treatment benefit/risk/action claims were mislabelled explanation.",
+          "resolution": "treatment3/4/5 and medications1/2/4/5 correctly classified; actual independent authoring-source support checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Earlier ATS2017 ECMO/recruitment and nonspecific education could be overgeneralised to present treatment.",
+          "resolution": "Only still-retained low-volume/pressure and prone portions used; current ATS2024/ESICM2023 define present regional differences. No oxygen, ventilator, steroid or nutrition self-prescription introduced.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Hospital worsening action initially cited two NHLBI pages from one authoring group.",
+          "resolution": "Added independently written NHS ARDS immediate-action/hospital-treatment support; inpatient alerting the existing team implements the same worsening-breathing emergency action.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accept exact candidate for evidence-based editorial integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "review_report": "reports/p0-03-ards-independent.json"
+  },
+  {
+    "id": "p0-03-ards-daily_care",
+    "target": {
+      "kind": "condition",
+      "id": "ards",
+      "section": "daily_care"
+    },
+    "content_sha256": "781ea83558166b4888a6e42a8bfef80a3745d6ac1a3f2f609672e465258c18ab",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "id": "daily_care-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "康复不仅是撤掉呼吸机，还包括恢复活动、睡眠和心理状态。",
+          "en": "Recovery includes activity, sleep and psychological health as well as liberation from the ventilator."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-recovery",
+            "locator": "Routine follow-up; monitoring; mental health; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-patient",
+            "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "daily_care-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "在治疗师指导下逐步恢复活动，按能力分配日常任务；明显无力时接受家属协助，不急着一次恢复所有工作。",
+          "en": "Resume activity gradually with therapist guidance, pace daily tasks and accept help when weak rather than immediately returning to every responsibility."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-recovery",
+            "locator": "Routine follow-up; monitoring; mental health; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-treatment",
+            "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "daily_care-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "若出院仍用氧，按医嘱使用和复评，不自行调高或停用；居家需要何种设备及何时复诊要在出院前问清楚。",
+          "en": "If oxygen remains necessary after discharge, use it and attend reassessment as prescribed without independently increasing or stopping it; clarify equipment and follow-up before leaving hospital."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-recovery",
+            "locator": "Routine follow-up; monitoring; mental health; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-patient",
+            "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "daily_care-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "持续焦虑、低落、噩梦或记忆困难应告诉医护；心理支持与肺康复同样属于恢复计划，家属也可寻求支持。",
+          "en": "Report persistent anxiety, low mood, nightmares or memory difficulty. Psychological support belongs alongside pulmonary rehabilitation, and relatives may also seek support."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-recovery",
+            "locator": "Routine follow-up; monitoring; mental health; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-patient",
+            "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-treatment",
+            "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "ards-p0-03-nhlbi-recovery",
+        "source_metadata_sha256": "864ac2c7f753afd9afe1e661c078a7e9cb3ad57a6fafc83a01acf9256e77fe41",
+        "source_version": "2022-03-24",
+        "locator": "Routine follow-up; monitoring; mental health; complications",
+        "population": "存活者与家庭；儿童时间表不由该页外推",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-mayo-treatment",
+        "source_metadata_sha256": "4c505c02dea9d87106f1211970140474e3bf4c5e05c215879e0c181b108f2579",
+        "source_version": "2024-07-30",
+        "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+        "population": "主要成人患者教育",
+        "region": "US",
+        "independence_group": "Mayo-Clinic",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-ats-patient",
+        "source_metadata_sha256": "f65db26b0a3dea62a7cf213abf574636b744ed55ecb810c09d1000b67b6bfbea",
+        "source_version": "2024-02 review/update",
+        "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+        "population": "患者与家庭；未采用页面40%等个体预测数字",
+        "region": "US",
+        "independence_group": "ATS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult ATS2024/ESICM2023 NMBA differences include non-COVID versus COVID scope; steroid adult/pediatric recommendations remain distinct; no universal drug/dose/duration or guaranteed ECMO benefit."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "ards-p0-03-ashp-prednisone",
+        "ards-p0-03-ats-2017",
+        "ards-p0-03-ats-2024",
+        "ards-p0-03-ats-nutrition",
+        "ards-p0-03-ats-patient",
+        "ards-p0-03-esicm-2023",
+        "ards-p0-03-espen-nutrition",
+        "ards-p0-03-mayo-causes",
+        "ards-p0-03-mayo-treatment",
+        "ards-p0-03-nhlbi-causes",
+        "ards-p0-03-nhlbi-diagnosis",
+        "ards-p0-03-nhlbi-newborn",
+        "ards-p0-03-nhlbi-recovery",
+        "ards-p0-03-nhlbi-symptoms",
+        "ards-p0-03-nhlbi-treatment",
+        "ards-p0-03-nhs",
+        "ards-p0-03-nhs-pregnancy",
+        "ards-p0-03-nhs-steroids",
+        "ards-p0-03-palicc-2",
+        "ards-p0-03-sccm-steroids",
+        "ards-p0-03-uktis-steroids"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "ESICM recommendation against routine continuous NMBA omitted non-COVID adult scope.",
+          "resolution": "Final bilingual text limits this to moderate/severe non-COVID adult ARDS; COVID evidence does not support a recommendation either way. ATS early severe conditional guidance retained.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Seven treatment benefit/risk/action claims were mislabelled explanation.",
+          "resolution": "treatment3/4/5 and medications1/2/4/5 correctly classified; actual independent authoring-source support checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Earlier ATS2017 ECMO/recruitment and nonspecific education could be overgeneralised to present treatment.",
+          "resolution": "Only still-retained low-volume/pressure and prone portions used; current ATS2024/ESICM2023 define present regional differences. No oxygen, ventilator, steroid or nutrition self-prescription introduced.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Hospital worsening action initially cited two NHLBI pages from one authoring group.",
+          "resolution": "Added independently written NHS ARDS immediate-action/hospital-treatment support; inpatient alerting the existing team implements the same worsening-breathing emergency action.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accept exact candidate for evidence-based editorial integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "review_report": "reports/p0-03-ards-independent.json"
+  },
+  {
+    "id": "p0-03-ards-special_populations",
+    "target": {
+      "kind": "condition",
+      "id": "ards",
+      "section": "special_populations"
+    },
+    "content_sha256": "46cdf54485f105fe15bc61a4a29bf7045c672ddaaa4eafe925515f65a8aadda1",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "id": "special_populations-0",
+        "kind": "action",
+        "text": {
+          "zh-CN": "年龄、原有心肺疾病和妊娠会影响个体方案，不能照搬别人使用的设备或药量。",
+          "en": "Age, pre-existing heart or lung disease and pregnancy affect individual care; another patient’s equipment or dose is not a template."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-ats-2024",
+            "locator": "Abstract; Overview/Summary of Recommendations, lines294–360 in publisher response; other sections inaccessible on subsequent offset calls",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-palicc-2",
+            "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-uktis-steroids",
+            "locator": "Quick read; uses; risks; talk to prescriber",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "special_populations-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "儿童采用儿科ARDS评估和重症监护路径，呼吸支持、营养及复诊考虑体型和发育；成人激素建议不能直接照搬，儿童指南不支持把激素作为人人常规治疗。",
+          "en": "Children follow paediatric ARDS assessment and intensive-care pathways, with size and development informing respiratory support, nutrition and follow-up. Adult steroid recommendations cannot simply be copied; paediatric guidance does not support routine steroids for every child."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-palicc-2",
+            "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-sccm-steroids",
+            "locator": "Results and recommendations: adult conditional ARDS; no pediatric recommendation; no specific molecule/dose/duration",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "special_populations-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "怀孕或哺乳时把情况告诉团队；全身激素并非一概禁用，但用药选择需结合母体病情和母婴风险，不能因担忧而自行停掉必要处方。",
+          "en": "Tell the team about pregnancy or breastfeeding. Systemic steroids are not universally prohibited, but selection weighs maternal illness and maternal–infant risks; do not independently stop necessary prescribed treatment out of concern."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-uktis-steroids",
+            "locator": "Quick read; uses; risks; talk to prescriber",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-nhs-pregnancy",
+            "locator": "Pregnancy; breastfeeding; tell your doctor; UKTIS link",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ashp-prednisone",
+            "locator": "How used; precautions; infection/glucose/mood; pregnancy/lactation; do not stop independently",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "special_populations-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "本已有心肺病的人也可能在此基础上新发ARDS；医生比较原来的功能与这次急性变化，而不是把全部低氧都算成老毛病。",
+          "en": "People with existing cardiopulmonary disease can develop superimposed ARDS; clinicians compare baseline function with the new acute change rather than attributing all hypoxaemia to chronic disease."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-diagnosis",
+            "locator": "History; examination; arterial gases/oximetry/imaging; tests for other conditions",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-palicc-2",
+            "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "special_populations-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "不同地区的高流量氧疗和ECMO资源不同；无法在本院提供时，转诊由当前治疗团队与接收中心协调，不能暂停已有支持等待某项技术。",
+          "en": "Availability of high-flow oxygen and ECMO varies by region. The treating and receiving teams coordinate transfer when needed, without pausing existing support while waiting for a particular technology."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-esicm-2023",
+            "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-palicc-2",
+            "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "ards-p0-03-ats-2024",
+        "source_metadata_sha256": "d33901b147175a5eb1bb1df1204e95abed56817c067db75a85ece7182add6f27",
+        "source_version": "2024-01-01",
+        "locator": "Abstract; Overview/Summary of Recommendations, lines294–360 in publisher response; other sections inaccessible on subsequent offset calls",
+        "population": "成人ARDS；不声称复读未成功返回的后续全文",
+        "region": "International",
+        "independence_group": "ATS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhlbi-diagnosis",
+        "source_metadata_sha256": "d64da4e5e11751f53d0e3f0c2792ac73a56c07cc5c20691bd513f028c21c2624",
+        "source_version": "2022-03-24",
+        "locator": "History; examination; arterial gases/oximetry/imaging; tests for other conditions",
+        "population": "全年龄；测试按年龄病情选择",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-esicm-2023",
+        "source_metadata_sha256": "556759a193b8e425eaafa43e451e14730472407a87d2ed7ddc94f53c662c5e95",
+        "source_version": "2023-06-16",
+        "locator": "Introduction/definition; domains3–6; recommendations5.1,6.1–6.4,7.1–7.3,8.1,9.1–9.2 and adjacent rationale",
+        "population": "成人；COVID相关外推明确降级",
+        "region": "International",
+        "independence_group": "ESICM-2023",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhs-pregnancy",
+        "source_metadata_sha256": "a1b5cd97a49266a874017b046f01d7d68bb89755a1847a312263d6f605079766",
+        "source_version": "2022-02-24",
+        "locator": "Pregnancy; breastfeeding; tell your doctor; UKTIS link",
+        "population": "孕哺期药物安全；不证明ARDS母婴效果",
+        "region": "UK",
+        "independence_group": "UK-NHS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-palicc-2",
+        "source_metadata_sha256": "5642fcb0f24ad56ec4e5890257ca778ae515029b3e7e619667aa6c03adf54ea3",
+        "source_version": "2023-02; PCCM24:143–168",
+        "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+        "population": "<18岁且非活动性围产肺病；新生儿另有定义衔接",
+        "region": "International",
+        "independence_group": "PALICC-2",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-sccm-steroids",
+        "source_metadata_sha256": "b69d69fdd175aec77b97f54a888d2b857df3dca67229f10902f83d620ea1d7a3",
+        "source_version": "2024; Crit Care Med52:e219–e233",
+        "locator": "Results and recommendations: adult conditional ARDS; no pediatric recommendation; no specific molecule/dose/duration",
+        "population": "住院成人ARDS；儿童不作推荐",
+        "region": "International",
+        "independence_group": "SCCM-steroid-panel",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-uktis-steroids",
+        "source_metadata_sha256": "cf2df4878ca91cb71f10e8cd0390873e97aaaccc54ca2c79f15d73fb4b800c46",
+        "source_version": "2023-07 version2.0",
+        "locator": "Quick read; uses; risks; talk to prescriber",
+        "population": "孕期全身激素；非ARDS孕期疗效试验",
+        "region": "UK",
+        "independence_group": "UKTIS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-ashp-prednisone",
+        "source_metadata_sha256": "4b8f633a88e5c1c01bba19040cfb32e162ed514ec95bc46f6d3eff9507fee183",
+        "source_version": "2024-06-20",
+        "locator": "How used; precautions; infection/glucose/mood; pregnancy/lactation; do not stop independently",
+        "population": "泼尼松处方者安全背景；不指定ARDS首选产品",
+        "region": "US",
+        "independence_group": "ASHP",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult ATS2024/ESICM2023 NMBA differences include non-COVID versus COVID scope; steroid adult/pediatric recommendations remain distinct; no universal drug/dose/duration or guaranteed ECMO benefit."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "ards-p0-03-ashp-prednisone",
+        "ards-p0-03-ats-2017",
+        "ards-p0-03-ats-2024",
+        "ards-p0-03-ats-nutrition",
+        "ards-p0-03-ats-patient",
+        "ards-p0-03-esicm-2023",
+        "ards-p0-03-espen-nutrition",
+        "ards-p0-03-mayo-causes",
+        "ards-p0-03-mayo-treatment",
+        "ards-p0-03-nhlbi-causes",
+        "ards-p0-03-nhlbi-diagnosis",
+        "ards-p0-03-nhlbi-newborn",
+        "ards-p0-03-nhlbi-recovery",
+        "ards-p0-03-nhlbi-symptoms",
+        "ards-p0-03-nhlbi-treatment",
+        "ards-p0-03-nhs",
+        "ards-p0-03-nhs-pregnancy",
+        "ards-p0-03-nhs-steroids",
+        "ards-p0-03-palicc-2",
+        "ards-p0-03-sccm-steroids",
+        "ards-p0-03-uktis-steroids"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "ESICM recommendation against routine continuous NMBA omitted non-COVID adult scope.",
+          "resolution": "Final bilingual text limits this to moderate/severe non-COVID adult ARDS; COVID evidence does not support a recommendation either way. ATS early severe conditional guidance retained.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Seven treatment benefit/risk/action claims were mislabelled explanation.",
+          "resolution": "treatment3/4/5 and medications1/2/4/5 correctly classified; actual independent authoring-source support checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Earlier ATS2017 ECMO/recruitment and nonspecific education could be overgeneralised to present treatment.",
+          "resolution": "Only still-retained low-volume/pressure and prone portions used; current ATS2024/ESICM2023 define present regional differences. No oxygen, ventilator, steroid or nutrition self-prescription introduced.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Hospital worsening action initially cited two NHLBI pages from one authoring group.",
+          "resolution": "Added independently written NHS ARDS immediate-action/hospital-treatment support; inpatient alerting the existing team implements the same worsening-breathing emergency action.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accept exact candidate for evidence-based editorial integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "review_report": "reports/p0-03-ards-independent.json"
+  },
+  {
+    "id": "p0-03-ards-prognosis_followup",
+    "target": {
+      "kind": "condition",
+      "id": "ards",
+      "section": "prognosis_followup"
+    },
+    "content_sha256": "dee4651d5fc9afd8f7a5562e38b24c3623a4bee2115cf43717c9d31f55740b91",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "id": "prognosis_followup-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "ARDS可能致命，存活后的恢复也存在很大差异，不能按一个百分比预测个人结果。",
+          "en": "ARDS can be fatal and recovery among survivors varies greatly; a single percentage cannot predict an individual outcome."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhs",
+            "locator": "Risk factors; symptoms; Immediate action; treatment; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-patient",
+            "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "prognosis_followup-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "出院后按计划评估呼吸症状、肺功能、体力和情绪；需要时安排肺康复、物理治疗或专科复诊。",
+          "en": "After discharge, attend assessment of breathing, lung function, physical capacity and mood, with pulmonary rehabilitation, physiotherapy or specialist review when needed."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-recovery",
+            "locator": "Routine follow-up; monitoring; mental health; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-patient",
+            "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "prognosis_followup-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "恢复常需数周至数月，部分人仍有气短或无力；症状反而加重、新发发热或呼吸困难时应联系团队，严重气短按急症处理。",
+          "en": "Recovery often takes weeks to months, and breathlessness or weakness may persist. Contact the team for worsening or new symptoms such as fever or breathlessness; severe breathlessness is an emergency."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-recovery",
+            "locator": "Routine follow-up; monitoring; mental health; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-nhlbi-symptoms",
+            "locator": "Warning signs; call emergency services for trouble/severe shortness of breath",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-nhs",
+            "locator": "Risk factors; symptoms; Immediate action; treatment; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "prognosis_followup-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "儿童出院后除呼吸，还要关注活动、学习和情绪变化；有持续困难时由儿科团队协调进一步评估及康复。",
+          "en": "After paediatric discharge, monitor activity, learning and emotional changes as well as breathing; persistent difficulties warrant coordinated assessment and rehabilitation through the paediatric team."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-palicc-2",
+            "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-nhlbi-recovery",
+            "locator": "Routine follow-up; monitoring; mental health; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "ards-p0-03-nhlbi-symptoms",
+        "source_metadata_sha256": "e2b3fc046daa516a052c4aa562fb96a969d8c7f9a87d433e0c84085ad560b32b",
+        "source_version": "2022-03-24",
+        "locator": "Warning signs; call emergency services for trouble/severe shortness of breath",
+        "population": "公众急救入口",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhs",
+        "source_metadata_sha256": "22e7bac04489f1c8e35051bf668404791d8d2d8031c930c5b2db75f31ac0deb4",
+        "source_version": "live2026-10-03",
+        "locator": "Risk factors; symptoms; Immediate action; treatment; complications",
+        "population": "公众患者教育",
+        "region": "UK",
+        "independence_group": "UK-NHS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhlbi-recovery",
+        "source_metadata_sha256": "864ac2c7f753afd9afe1e661c078a7e9cb3ad57a6fafc83a01acf9256e77fe41",
+        "source_version": "2022-03-24",
+        "locator": "Routine follow-up; monitoring; mental health; complications",
+        "population": "存活者与家庭；儿童时间表不由该页外推",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-palicc-2",
+        "source_metadata_sha256": "5642fcb0f24ad56ec4e5890257ca778ae515029b3e7e619667aa6c03adf54ea3",
+        "source_version": "2023-02; PCCM24:143–168",
+        "locator": "PDFpp5,9–11,15,19–20;1.1/1.6 definitions;4.6 steroids;5.1/5.4 sedation/nutrition;8.1 ECMO;9.1–9.3 follow-up. Actual bytes read via urllib+pdftotext after web offset failure",
+        "population": "<18岁且非活动性围产肺病；新生儿另有定义衔接",
+        "region": "International",
+        "independence_group": "PALICC-2",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-ats-patient",
+        "source_metadata_sha256": "f65db26b0a3dea62a7cf213abf574636b744ed55ecb810c09d1000b67b6bfbea",
+        "source_version": "2024-02 review/update",
+        "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+        "population": "患者与家庭；未采用页面40%等个体预测数字",
+        "region": "US",
+        "independence_group": "ATS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult ATS2024/ESICM2023 NMBA differences include non-COVID versus COVID scope; steroid adult/pediatric recommendations remain distinct; no universal drug/dose/duration or guaranteed ECMO benefit."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "ards-p0-03-ashp-prednisone",
+        "ards-p0-03-ats-2017",
+        "ards-p0-03-ats-2024",
+        "ards-p0-03-ats-nutrition",
+        "ards-p0-03-ats-patient",
+        "ards-p0-03-esicm-2023",
+        "ards-p0-03-espen-nutrition",
+        "ards-p0-03-mayo-causes",
+        "ards-p0-03-mayo-treatment",
+        "ards-p0-03-nhlbi-causes",
+        "ards-p0-03-nhlbi-diagnosis",
+        "ards-p0-03-nhlbi-newborn",
+        "ards-p0-03-nhlbi-recovery",
+        "ards-p0-03-nhlbi-symptoms",
+        "ards-p0-03-nhlbi-treatment",
+        "ards-p0-03-nhs",
+        "ards-p0-03-nhs-pregnancy",
+        "ards-p0-03-nhs-steroids",
+        "ards-p0-03-palicc-2",
+        "ards-p0-03-sccm-steroids",
+        "ards-p0-03-uktis-steroids"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "ESICM recommendation against routine continuous NMBA omitted non-COVID adult scope.",
+          "resolution": "Final bilingual text limits this to moderate/severe non-COVID adult ARDS; COVID evidence does not support a recommendation either way. ATS early severe conditional guidance retained.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Seven treatment benefit/risk/action claims were mislabelled explanation.",
+          "resolution": "treatment3/4/5 and medications1/2/4/5 correctly classified; actual independent authoring-source support checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Earlier ATS2017 ECMO/recruitment and nonspecific education could be overgeneralised to present treatment.",
+          "resolution": "Only still-retained low-volume/pressure and prone portions used; current ATS2024/ESICM2023 define present regional differences. No oxygen, ventilator, steroid or nutrition self-prescription introduced.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Hospital worsening action initially cited two NHLBI pages from one authoring group.",
+          "resolution": "Added independently written NHS ARDS immediate-action/hospital-treatment support; inpatient alerting the existing team implements the same worsening-breathing emergency action.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accept exact candidate for evidence-based editorial integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "review_report": "reports/p0-03-ards-independent.json"
+  },
+  {
+    "id": "p0-03-ards-complications",
+    "target": {
+      "kind": "condition",
+      "id": "ards",
+      "section": "complications"
+    },
+    "content_sha256": "b7dca8df9872bd4b30a8ad490a4025bd74fb218a5b950b166d41c042632d5c06",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "id": "complications-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "并发症来自严重缺氧、原发病和重症治疗的共同影响。",
+          "en": "Complications can arise from oxygen deprivation, the underlying illness and intensive treatment."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-recovery",
+            "locator": "Routine follow-up; monitoring; mental health; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-patient",
+            "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "complications-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "可能出现肾脏等器官功能障碍、继发感染、血栓、气胸和肌无力；治疗团队会监测这些问题，并不表示每位患者都会发生。",
+          "en": "Organ dysfunction, secondary infection, blood clots, pneumothorax and muscle weakness can occur; the team monitors for them, but they are not inevitable in every patient."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-recovery",
+            "locator": "Routine follow-up; monitoring; mental health; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-patient",
+            "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-causes",
+            "locator": "Overview; symptoms; when to see; causes; risks; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "complications-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "部分人遗留肺部损伤、活动耐力下降或思维与情绪问题；这些症状值得随访，不能只以胸片好转作为全部恢复的标准。",
+          "en": "Some survivors have residual lung injury, reduced exercise tolerance or cognitive and emotional problems. These merit follow-up rather than judging complete recovery solely from an improved chest image."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-recovery",
+            "locator": "Routine follow-up; monitoring; mental health; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-ats-patient",
+            "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-causes",
+            "locator": "Overview; symptoms; when to see; causes; risks; complications",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "ards-p0-03-nhlbi-recovery",
+        "source_metadata_sha256": "864ac2c7f753afd9afe1e661c078a7e9cb3ad57a6fafc83a01acf9256e77fe41",
+        "source_version": "2022-03-24",
+        "locator": "Routine follow-up; monitoring; mental health; complications",
+        "population": "存活者与家庭；儿童时间表不由该页外推",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-ats-patient",
+        "source_metadata_sha256": "f65db26b0a3dea62a7cf213abf574636b744ed55ecb810c09d1000b67b6bfbea",
+        "source_version": "2024-02 review/update",
+        "locator": "What is; who gets; causes; symptoms; diagnosis; treatment; complications; recovery; key points",
+        "population": "患者与家庭；未采用页面40%等个体预测数字",
+        "region": "US",
+        "independence_group": "ATS",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-mayo-causes",
+        "source_metadata_sha256": "736ba113a9723dd2de795b751bc32d60787f9baff0a1f851ea726fcf6b2467cc",
+        "source_version": "2024-07-30",
+        "locator": "Overview; symptoms; when to see; causes; risks; complications",
+        "population": "主要成人患者教育",
+        "region": "US",
+        "independence_group": "Mayo-Clinic",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult ATS2024/ESICM2023 NMBA differences include non-COVID versus COVID scope; steroid adult/pediatric recommendations remain distinct; no universal drug/dose/duration or guaranteed ECMO benefit."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "ards-p0-03-ashp-prednisone",
+        "ards-p0-03-ats-2017",
+        "ards-p0-03-ats-2024",
+        "ards-p0-03-ats-nutrition",
+        "ards-p0-03-ats-patient",
+        "ards-p0-03-esicm-2023",
+        "ards-p0-03-espen-nutrition",
+        "ards-p0-03-mayo-causes",
+        "ards-p0-03-mayo-treatment",
+        "ards-p0-03-nhlbi-causes",
+        "ards-p0-03-nhlbi-diagnosis",
+        "ards-p0-03-nhlbi-newborn",
+        "ards-p0-03-nhlbi-recovery",
+        "ards-p0-03-nhlbi-symptoms",
+        "ards-p0-03-nhlbi-treatment",
+        "ards-p0-03-nhs",
+        "ards-p0-03-nhs-pregnancy",
+        "ards-p0-03-nhs-steroids",
+        "ards-p0-03-palicc-2",
+        "ards-p0-03-sccm-steroids",
+        "ards-p0-03-uktis-steroids"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "ESICM recommendation against routine continuous NMBA omitted non-COVID adult scope.",
+          "resolution": "Final bilingual text limits this to moderate/severe non-COVID adult ARDS; COVID evidence does not support a recommendation either way. ATS early severe conditional guidance retained.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Seven treatment benefit/risk/action claims were mislabelled explanation.",
+          "resolution": "treatment3/4/5 and medications1/2/4/5 correctly classified; actual independent authoring-source support checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Earlier ATS2017 ECMO/recruitment and nonspecific education could be overgeneralised to present treatment.",
+          "resolution": "Only still-retained low-volume/pressure and prone portions used; current ATS2024/ESICM2023 define present regional differences. No oxygen, ventilator, steroid or nutrition self-prescription introduced.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Hospital worsening action initially cited two NHLBI pages from one authoring group.",
+          "resolution": "Added independently written NHS ARDS immediate-action/hospital-treatment support; inpatient alerting the existing team implements the same worsening-breathing emergency action.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accept exact candidate for evidence-based editorial integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "review_report": "reports/p0-03-ards-independent.json"
+  },
+  {
+    "id": "p0-03-ards-prevention",
+    "target": {
+      "kind": "condition",
+      "id": "ards",
+      "section": "prevention"
+    },
+    "content_sha256": "191778d51ecb2c36c0073dad6c4fe90d8dd61b872ccc6d4b17a543e1099e04b8",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "id": "prevention-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "不能保证预防所有ARDS，但可减少部分感染和肺部暴露风险，并及时治疗重病。",
+          "en": "Not every case is preventable, but some infectious and inhalational risks can be reduced and serious illness treated promptly."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-causes",
+            "locator": "Alveolar injury; infection/inhalation/trauma/procedures; prevention",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-treatment",
+            "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "prevention-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "按当地年龄和风险建议接种流感、肺炎球菌等疫苗，减少相关感染风险；这是降低诱因风险，不是保证不会发生ARDS。",
+          "en": "Follow local age- and risk-based recommendations for influenza, pneumococcal and other relevant vaccines to reduce infection triggers; this does not guarantee prevention of ARDS."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-causes",
+            "locator": "Alveolar injury; infection/inhalation/trauma/procedures; prevention",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-treatment",
+            "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      },
+      {
+        "id": "prevention-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "戒烟并减少二手烟和有害烟雾暴露；感染后明显气短或重伤后的呼吸改变及时就医，不靠自行吃抗生素或激素来预防ARDS。",
+          "en": "Stop smoking and reduce secondhand smoke and harmful-fume exposure. Seek care for marked breathlessness after infection or respiratory changes after major injury rather than self-prescribing antibiotics or steroids to prevent ARDS."
+        },
+        "supports": [
+          {
+            "source_id": "ards-p0-03-nhlbi-causes",
+            "locator": "Alveolar injury; infection/inhalation/trauma/procedures; prevention",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-mayo-treatment",
+            "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          },
+          {
+            "source_id": "ards-p0-03-nhlbi-symptoms",
+            "locator": "Warning signs; call emergency services for trouble/severe shortness of breath",
+            "assessment": "限定人群和条件下支持；待独立复读"
+          }
+        ]
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "ards-p0-03-nhlbi-symptoms",
+        "source_metadata_sha256": "e2b3fc046daa516a052c4aa562fb96a969d8c7f9a87d433e0c84085ad560b32b",
+        "source_version": "2022-03-24",
+        "locator": "Warning signs; call emergency services for trouble/severe shortness of breath",
+        "population": "公众急救入口",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-nhlbi-causes",
+        "source_metadata_sha256": "920303d679e9a557e75ed019a757b6cbb3ae32caaa1c221ba2211ea80a889104",
+        "source_version": "2022-03-24",
+        "locator": "Alveolar injury; infection/inhalation/trauma/procedures; prevention",
+        "population": "全年龄；不复用其简化脓毒症/胰腺炎定义",
+        "region": "US",
+        "independence_group": "NIH-NHLBI",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      },
+      {
+        "source_id": "ards-p0-03-mayo-treatment",
+        "source_metadata_sha256": "4c505c02dea9d87106f1211970140474e3bf4c5e05c215879e0c181b108f2579",
+        "source_version": "2024-07-30",
+        "locator": "Diagnosis/imaging/labs/heart tests; oxygen/ECMO/prone/fluids/medicines; lifestyle; coping; references",
+        "population": "主要成人患者教育",
+        "region": "US",
+        "independence_group": "Mayo-Clinic",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。"
+        ],
+        "relation": "supports",
+        "assessment": "仅支持本节所列主张；共享上游不算独立试验"
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "ATS2024、ESICM2023是分别制定的成人指南但作者部分重叠，并共享ARDSNet/PROSEVA/EOLIA/CESAR及2017联合指南上游。ATS2017为ATS/ESICM/SCCM共同文件，不按三组织计数，只用于仍保留的低潮气量/俯卧位。SCCM2024激素指南与ATS2024有Chaudhuri/Rochwerg等作者及试验重叠。PALICC-2独立儿科国际共识，ACH网页仅承载原论文；不能把镜像算新作者。Mayo明确引用NHLBI、MSD、ALA、UpToDate，分别编写但共享上游。ATS患者资料与ATS指南同一组织保守一组；NHLBI多页一组；NHS孕期链接UKTIS，存在共同药物风险依据。ASHP为药物页作者，MedlinePlus为宿主。",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Adult ATS2024/ESICM2023 NMBA differences include non-COVID versus COVID scope; steroid adult/pediatric recommendations remain distinct; no universal drug/dose/duration or guaranteed ECMO benefit."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "ards-p0-03-ashp-prednisone",
+        "ards-p0-03-ats-2017",
+        "ards-p0-03-ats-2024",
+        "ards-p0-03-ats-nutrition",
+        "ards-p0-03-ats-patient",
+        "ards-p0-03-esicm-2023",
+        "ards-p0-03-espen-nutrition",
+        "ards-p0-03-mayo-causes",
+        "ards-p0-03-mayo-treatment",
+        "ards-p0-03-nhlbi-causes",
+        "ards-p0-03-nhlbi-diagnosis",
+        "ards-p0-03-nhlbi-newborn",
+        "ards-p0-03-nhlbi-recovery",
+        "ards-p0-03-nhlbi-symptoms",
+        "ards-p0-03-nhlbi-treatment",
+        "ards-p0-03-nhs",
+        "ards-p0-03-nhs-pregnancy",
+        "ards-p0-03-nhs-steroids",
+        "ards-p0-03-palicc-2",
+        "ards-p0-03-sccm-steroids",
+        "ards-p0-03-uktis-steroids"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "ESICM recommendation against routine continuous NMBA omitted non-COVID adult scope.",
+          "resolution": "Final bilingual text limits this to moderate/severe non-COVID adult ARDS; COVID evidence does not support a recommendation either way. ATS early severe conditional guidance retained.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Seven treatment benefit/risk/action claims were mislabelled explanation.",
+          "resolution": "treatment3/4/5 and medications1/2/4/5 correctly classified; actual independent authoring-source support checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Earlier ATS2017 ECMO/recruitment and nonspecific education could be overgeneralised to present treatment.",
+          "resolution": "Only still-retained low-volume/pressure and prone portions used; current ATS2024/ESICM2023 define present regional differences. No oxygen, ventilator, steroid or nutrition self-prescription introduced.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Hospital worsening action initially cited two NHLBI pages from one authoring group.",
+          "resolution": "Added independently written NHS ARDS immediate-action/hospital-treatment support; inpatient alerting the existing team implements the same worsening-breathing emergency action.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accept exact candidate for evidence-based editorial integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "review_report": "reports/p0-03-ards-independent.json"
+  }
+]

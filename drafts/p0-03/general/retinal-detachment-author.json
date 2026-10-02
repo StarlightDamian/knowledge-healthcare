@@ -1,0 +1,113 @@
+{
+  "author": "/root",
+  "status": "awaiting_independent_review",
+  "medical_reviewed": false,
+  "checked_at": "2026-10-03",
+  "base_commit": "f2c5cd8d400b04ad97947b5fa4cfdd5989379283",
+  "topic": "retinal-detachment",
+  "changed_sections": [
+    "care",
+    "causes_risks",
+    "daily_care",
+    "diagnosis",
+    "medications",
+    "prognosis_followup",
+    "summary",
+    "treatment"
+  ],
+  "claims_added": 8,
+  "source_reads": [
+    {
+      "source_id": "p003-retina-asrs-tears",
+      "url": "https://www.asrs.org/patients/retinal-diseases/26/retinal-tears",
+      "accessed_at": "2026-10-03",
+      "locator": "Treatment and prognosis",
+      "support": "Continued risk of additional separate tears and need for monitoring.",
+      "read_scope": "Original page read: symptoms, causes, retinal tears versus holes, diagnosis, treatment and prognosis. No absolute prevention estimate adopted."
+    },
+    {
+      "source_id": "p003-retina-atrophic",
+      "url": "https://eyewiki.aao.org/Atrophic_Holes",
+      "accessed_at": "2026-10-03",
+      "locator": "General treatment; Surgery",
+      "support": "Usually no mandatory atrophic-hole treatment; symptoms, fluid and fellow-eye detachment guide consideration.",
+      "read_scope": "Page last edited21July2026; editor status Update Pending25October2025. Actual disease, diagnosis and management sections read; older PPP references disclosed. Only original short paraphrases, not source prose, are stored."
+    },
+    {
+      "source_id": "p003-retina-moorfields-tears",
+      "url": "https://www.moorfields.nhs.uk/private/eye-conditions-and-treatments/retinal-tear/diagnosis-and-treatment",
+      "accessed_at": "2026-10-03",
+      "locator": "Recovery; follow-up; risk of detachment",
+      "support": "Existing floaters remain; seal may incomplete; follow-up and warning signs.",
+      "read_scope": "Original hospital page read: laser retinopexy, local anaesthesia, incomplete seal, driving, follow-up and new symptoms. Private-service fees and absolute no-infection wording not adopted."
+    },
+    {
+      "source_id": "b1-acute-retina-nei-dilation",
+      "url": "https://www.nei.nih.gov/eye-health-information/healthy-vision/finding-eye-doctor/get-dilated-eye-exam",
+      "accessed_at": "2026-10-03",
+      "locator": "After a dilated eye exam",
+      "support": "Independent NIH source for blurred vision and arrange another driver; existing metadata unchanged.",
+      "read_scope": "How dilation works; What happens after a dilated eye exam: temporary blur/light sensitivity and transport; exam frequency. Actual full page read."
+    },
+    {
+      "source_id": "who-icd-2026-01",
+      "locator": "Frozen official printed catalog page727 / lines35826–35832;9B73.4 excludes9D22/9B78.4; .Y/.Z no more scope text.",
+      "support": "Classification scope only, not medical-care evidence."
+    }
+  ],
+  "unresolved_questions": [],
+  "evidence_notes": "ASRS and EyeWiki have overlapping specialist authors and guideline references; counted as independent editorial syntheses, not independent trials. Moorfields treatment page broadly describes referred tears as high risk; the article preserves ASRS/EyeWiki distinction for asymptomatic low-risk atrophic holes and does not generalize the high-risk sentence to every hole. EyeWiki update-pending status and historical PPP citations retained.",
+  "candidate_codes": [
+    {
+      "code": "9B73.4",
+      "recommendation": "confirm_after_independent_scope_review",
+      "rationale": "FrozenWHO2026-01 parent groups detachments and breaks.9B73.4 is explicitly a break without detachment, so an added branch distinguishes traction tears/atrophic holes, low-risk observation, focal treatment and follow-up.9B73.Y/.Z retain the same condition family with mechanism assessment rather than inventing a specific cause. Existing general source-verified sections remain relevant; surgery/anaesthesia/gas instructions stay conditional on receiving that procedure. No mapping to macular hole, central serous chorioretinopathy, postoperative scar or peripheral degeneration without a break.",
+      "remaining": []
+    },
+    {
+      "code": "9B73.Y",
+      "recommendation": "confirm_after_independent_scope_review",
+      "rationale": "FrozenWHO2026-01 parent groups detachments and breaks.9B73.4 is explicitly a break without detachment, so an added branch distinguishes traction tears/atrophic holes, low-risk observation, focal treatment and follow-up.9B73.Y/.Z retain the same condition family with mechanism assessment rather than inventing a specific cause. Existing general source-verified sections remain relevant; surgery/anaesthesia/gas instructions stay conditional on receiving that procedure. No mapping to macular hole, central serous chorioretinopathy, postoperative scar or peripheral degeneration without a break.",
+      "remaining": []
+    },
+    {
+      "code": "9B73.Z",
+      "recommendation": "confirm_after_independent_scope_review",
+      "rationale": "FrozenWHO2026-01 parent groups detachments and breaks.9B73.4 is explicitly a break without detachment, so an added branch distinguishes traction tears/atrophic holes, low-risk observation, focal treatment and follow-up.9B73.Y/.Z retain the same condition family with mechanism assessment rather than inventing a specific cause. Existing general source-verified sections remain relevant; surgery/anaesthesia/gas instructions stay conditional on receiving that procedure. No mapping to macular hole, central serous chorioretinopathy, postoperative scar or peripheral degeneration without a break.",
+      "remaining": []
+    }
+  ],
+  "inherited_sections": [
+    "red_flags",
+    "differentials",
+    "diet",
+    "special_populations",
+    "complications",
+    "prevention"
+  ],
+  "inherited_record_file": "data/evidence/editorial-checks/batch-01-retinal.json",
+  "target": {
+    "body_canonical_sha256": "e1bffe339004dcea83379e6ccb9d4bf613f69d316c72f434d414266577a29a58",
+    "records_canonical_sha256": "111870f253c88ada7ba7b0278cbd3c9382caf55b58f59354b4b956d6ba301d72",
+    "sources_canonical_sha256": "5deb5dd5111de0106c92cd88da6ff353bb4a78daeb943c6558542647080513fb"
+  },
+  "fourteen_dimension_applicability": {
+    "summary": "Existing verified explanation and conditions apply to the selected subtype; new branch appears here.",
+    "causes_risks": "Existing verified explanation and conditions apply to the selected subtype; new branch appears here.",
+    "red_flags": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash.",
+    "care": "Existing verified explanation and conditions apply to the selected subtype; new branch appears here.",
+    "diagnosis": "Existing verified explanation and conditions apply to the selected subtype; new branch appears here.",
+    "differentials": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash.",
+    "treatment": "Existing verified explanation and conditions apply to the selected subtype; new branch appears here.",
+    "medications": "Existing verified explanation and conditions apply to the selected subtype; new branch appears here.",
+    "diet": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash.",
+    "daily_care": "Existing verified explanation and conditions apply to the selected subtype; new branch appears here.",
+    "special_populations": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash.",
+    "prognosis_followup": "Existing verified explanation and conditions apply to the selected subtype; new branch appears here.",
+    "complications": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash.",
+    "prevention": "Unchanged complete baseline section applies to this subtype and is inherited with its exact evidence hash."
+  },
+  "independent_review_resolutions": [
+    "2026-10-03: classified explicit clinical actions as action; appendicitis English emergency signs corrected to alternative triggers; aortic author source-reading scope corrected without mutating historical metadata."
+  ]
+}

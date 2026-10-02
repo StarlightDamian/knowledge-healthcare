@@ -6,11 +6,11 @@
       "id": "myocardial-infarction",
       "section": "summary"
     },
-    "content_sha256": "1fb9d77067c1cbe98c3aa1d145606ddb8299ee48ac495eb2cc5e309dfbe96364",
+    "content_sha256": "02a376549d5611ec10fb04d2ee98e425488513f9292c38277c1632fc614f36dd",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "Independent editorial reviews recorded in batch-01-mi-acceptance.json",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -64,6 +64,36 @@
         ],
         "relation": "supports",
         "assessment": "summary-0: NHLBI overview98–107 and NHS15 agree on muscle injury and immediate hospital treatment. Source-specific scope is bounded by the cited passage and the linked independent report. summary-2: NHLBI105 and NHS139–141 distinguish infarction from arrest. NHS describes lost consciousness; the present action is not a lay pulse-check algorithm. Source-specific scope is bounded by the cited passage and the linked independent report."
+      },
+      {
+        "source_id": "mi-udmi-2026",
+        "source_metadata_sha256": "95a7eba5b60edd2e6c0be880da9082cf5f0e5fa5739f53d40d8313851557940b",
+        "locator": "16.1 Recurrent myocardial infarction",
+        "source_version": "2026-08-28",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Myocardial infarction (heart attack); subtype conditions are in the claim.",
+        "region": "MULTI_REGION",
+        "independence_group": "JOINT-UDMI",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Explicit early recurrence and differential causes of recurrent symptoms."
+      },
+      {
+        "source_id": "mi-nhlbi-recovery",
+        "source_metadata_sha256": "8ea461c39ce5e54c9993e38df22148bce0075a6a5ac74b5cf6185f1bda5d9328",
+        "locator": "Take steps to prevent another heart attack; What kind of health problems",
+        "source_version": "2022-03-24",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Myocardial infarction (heart attack); subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "US-NIH",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Independent support for subsequent attacks and alternative post-MI complications; the first-month description is from the joint2026 consensus."
       }
     ],
     "claims": [
@@ -126,22 +156,42 @@
             "assessment": "NHLBI105 and NHS139–141 distinguish infarction from arrest. NHS describes lost consciousness; the present action is not a lay pulse-check algorithm. Source-specific scope is bounded by the cited passage and the linked independent report."
           }
         ]
+      },
+      {
+        "id": "p0-03-myocardial-infarction-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "心梗也可能在上一次发作后的头一个月内再次发生；再次出现不适既可能是新发缺血，也可能来自上次心梗后的其他并发症，需要重新判断。",
+          "en": "Another infarction can occur during the first month after the previous event. New symptoms may reflect further ischaemia or a different complication of the earlier infarction, so the cause needs reassessment."
+        },
+        "supports": [
+          {
+            "source_id": "mi-udmi-2026",
+            "locator": "16.1 Recurrent myocardial infarction",
+            "assessment": "Explicit early recurrence and differential causes of recurrent symptoms."
+          },
+          {
+            "source_id": "mi-nhlbi-recovery",
+            "locator": "Take steps to prevent another heart attack; What kind of health problems",
+            "assessment": "Independent support for subsequent attacks and alternative post-MI complications; the first-month description is from the joint2026 consensus."
+          }
+        ]
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Different writing institutions exist in this section, but each exact clause must meet its own support test. Shared hosting, NIH subdivisions, joint guidelines and institutional summaries are not counted as independent sources.",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "none",
-      "resolution": "No new material contradiction identified in the limited revision; precise support limitations remain below."
+      "status": "regional_difference",
+      "resolution": "The August2026 joint UDMI recommends mechanism-based classification, including early recurrence, rather than a separate recurrent code. This clinical update is respected; the user-selected WHO2026-01 denominator remains frozen and its existing BA42 leaves are evaluated as historical classification targets, not claimed to be the latest clinical nomenclature. No28-day home-treatment cutoff or troponin percentage is prescribed."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/emergency_content; revision /root/demand_content; precision integration /root",
-      "reviewer": "/root/mi_diagnosis_recheck; /root/mi_medicine_finish; /root (unchanged context claims only)",
-      "checked_at": "2026-10-02",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "mi-acs-2025",
         "mi-adam-activity",
@@ -166,6 +216,7 @@
         "mi-mayo-treatment",
         "mi-mayo-vomiting-blood",
         "mi-merck-acs-medications",
+        "mi-msd-acute-2026",
         "mi-nhlbi-causes",
         "mi-nhlbi-diagnosis",
         "mi-nhlbi-food",
@@ -193,34 +244,77 @@
         "mi-rcuk-firstaid-2025",
         "mi-sja-cpr",
         "mi-sps-ace-monitoring",
+        "mi-udmi-2026",
+        "mi-uhd-cardiac-medicines"
+      ],
+      "inherited_source_ids": [
+        "mi-acs-2025",
+        "mi-adam-activity",
+        "mi-aha-acs-summary",
+        "mi-aha-aspirin",
+        "mi-aha-bls-2025",
+        "mi-ashp-clopidogrel",
+        "mi-cuh-rehab-exercise",
+        "mi-diabetesuk-exercise",
+        "mi-diabetesuk-meal-lifestyle",
+        "mi-diabetesuk-meal-plan",
+        "mi-esc-pregnancy-2025",
+        "mi-fda-aspirin",
+        "mi-mayo-ace",
+        "mi-mayo-angina",
+        "mi-mayo-beta",
+        "mi-mayo-bleeding",
+        "mi-mayo-causes",
+        "mi-mayo-chest",
+        "mi-mayo-rehab",
+        "mi-mayo-statin-risks",
+        "mi-mayo-treatment",
+        "mi-mayo-vomiting-blood",
+        "mi-merck-acs-medications",
+        "mi-nhlbi-causes",
+        "mi-nhlbi-diagnosis",
+        "mi-nhlbi-food",
+        "mi-nhlbi-overview",
+        "mi-nhlbi-shock",
+        "mi-nhlbi-symptoms",
+        "mi-nhlbi-treatment",
+        "mi-nhlbi-women",
+        "mi-nhs",
+        "mi-nhs-angina",
+        "mi-nhs-beta-class",
+        "mi-nhs-bisoprolol",
+        "mi-nhs-chest",
+        "mi-nhs-clopidogrel",
+        "mi-nhs-ramipril",
+        "mi-nhs-statins",
+        "mi-nhs-wounds",
+        "mi-nice-cg95",
+        "mi-nice-ng185",
+        "mi-niddk-ckd-food",
+        "mi-niddk-diabetes-food",
+        "mi-nkf-ckd-food",
+        "mi-nlm-troponin",
+        "mi-rcuk-firstaid-2025",
+        "mi-sja-cpr",
+        "mi-sps-ace-monitoring",
         "mi-uhd-cardiac-medicines"
       ],
       "findings": [
         {
-          "id": "MI-T01",
-          "status": "resolved",
-          "resolution": "Explicit OR matches both CUH conditions and current English; this exact proposed text is already independently reviewed."
+          "finding": "New recurrent-MI descriptions must not turn a residual troponin elevation or previous ECG label into an automatic new diagnosis.",
+          "resolution": "Three added bilingual claims explicitly require reassessment, serial changes and current episode ECG/stability. Both UDMI and independent MSD editorial synthesis support this path; NHLBI independently supports new symptoms and alternative complications.",
+          "status": "resolved"
         },
         {
-          "id": "MI-T02",
-          "status": "resolved",
-          "resolution": "Body and Mayo binding are correct; two inherited assessment strings still state the resolved single-source limitation."
-        },
-        {
-          "id": "MI-T03",
-          "status": "resolved",
-          "resolution": "These two old CUH pages were not reread in the three frozen reports or this targeted recheck. Do not add them to original_sources_reopened. Already reviewed, now bound alternatives support every relevant subclaim."
-        },
-        {
-          "id": "MI-T04",
-          "status": "resolved",
-          "resolution": "This sentence explains why another patient’s return-to-driving timeline is not transferable: local regulations also govern eligibility. It states no legal waiting period, clearance criterion, assessment threshold, new clinical action or specific restriction. Its imperatives in Chinese express this applicability boundary; the existing English is directly explanatory. The preceding care-3b already carries the team-agreed return-to-work/activity action separately. Classification as explanation reflects the actual information role, not a relaxation of an uncorroborated clinical action."
+          "finding": "August2026 UDMI mechanism-based nomenclature differs from frozen January2026 classification.",
+          "resolution": "Mapping remains explicitly frozen to WHO2026-01; no public28-day treatment cutoff or outdated diagnostic instruction added.",
+          "status": "resolved"
         }
       ],
-      "resolution": "Frozen reviews cover unchanged claims; separately authored precision changes were rechecked against original materials. Exact hash lineage and source limits are in the acceptance record. No physician sign-off."
+      "resolution": "Accept exact candidate hashes for source-driven editorial and scope integration; not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/batch-01-mi-acceptance.json"
+    "review_report": "reports/p0-03-myocardial-infarction-independent.json"
   },
   {
     "id": "batch01-myocardial-infarction-causes_risks",
@@ -1160,11 +1254,11 @@
       "id": "myocardial-infarction",
       "section": "diagnosis"
     },
-    "content_sha256": "3b129b17f1d91ba2efe36735d021a1ced3ff59773cc404448459df3cf84925cd",
+    "content_sha256": "8694868c76c519aa05196bd03f2fded271fd0adc044de8a3f9cd4fbe31e157ed",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "Independent editorial reviews recorded in batch-01-mi-acceptance.json",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -1269,6 +1363,36 @@
         ],
         "relation": "supports",
         "assessment": "diagnosis-1b: NLM明确命名troponin；Mayo原段是蛋白/心脏标志物，不能称明确命名的第二段。 Limit: One direct named-troponin explanation; independent cardiac-marker paragraph partly supportive. diagnosis-2a: NLM明确早期结果，Mayo缓慢泄漏是机制支持。没有一次阴性即可居家排除的规则。 Limit: Exact early-normal-result phrase has NLM direct support; Mayo mechanism is indirect. diagnosis-3: 损伤不单独证明心梗及其他原因鉴别有独立支持，补足MI02真实解释缺口。"
+      },
+      {
+        "source_id": "mi-udmi-2026",
+        "source_metadata_sha256": "95a7eba5b60edd2e6c0be880da9082cf5f0e5fa5739f53d40d8313851557940b",
+        "locator": "16.1 Recurrent myocardial infarction",
+        "source_version": "2026-08-28",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Myocardial infarction (heart attack); subtype conditions are in the claim.",
+        "region": "MULTI_REGION",
+        "independence_group": "JOINT-UDMI",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Residual abnormalities and serial troponin after recent MI."
+      },
+      {
+        "source_id": "mi-msd-acute-2026",
+        "source_metadata_sha256": "ae4054bff563cbb4d4cb6415809a33cd536c864fd77f8913d77d01115e6c2fc5",
+        "locator": "Diagnosis / ECG / Cardiac troponin",
+        "source_version": "July2026 review",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Myocardial infarction (heart attack); subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "MSD-MANUALS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Evolving and persistent ECG abnormalities, serial testing and troponin interpretation; recent-event framing from UDMI."
       }
     ],
     "claims": [
@@ -1446,22 +1570,62 @@
             "assessment": "Mayo明确部分NSTEMI完全堵塞；当前严重堵塞/非轻病正确，不能改回只部分堵塞。 Limit: Exact severe/complete-obstruction detail has one directly bound writing source; preserve truth and state scope."
           }
         ]
+      },
+      {
+        "id": "p0-03-myocardial-infarction-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "刚发生过心梗时，心电图、抽血和影像可能还留有上次损伤的痕迹。医生比较前后变化，不能把一次仍偏高的肌钙蛋白直接当成又一次心梗。",
+          "en": "Soon after an infarction, the ECG, blood tests and imaging may still reflect the previous injury. Clinicians compare changes over time; a single troponin value that remains elevated does not establish another infarction."
+        },
+        "supports": [
+          {
+            "source_id": "mi-udmi-2026",
+            "locator": "16.1 Recurrent myocardial infarction",
+            "assessment": "Residual abnormalities and serial troponin after recent MI."
+          },
+          {
+            "source_id": "mi-msd-acute-2026",
+            "locator": "Diagnosis / ECG / Cardiac troponin",
+            "assessment": "Evolving and persistent ECG abnormalities, serial testing and troponin interpretation; recent-event framing from UDMI."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-myocardial-infarction-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "医生会按这次发作重新判断有无ST段抬高，并结合连续检查、病情稳定程度决定冠状动脉造影等评估。出院后的新症状不能只套用上一次“是哪型心梗”的结论。",
+          "en": "Clinicians assess ST-segment changes in the current episode and use serial tests and clinical stability to decide on coronary angiography and other assessment. The label from the previous infarction does not settle the cause or type of a new episode."
+        },
+        "supports": [
+          {
+            "source_id": "mi-msd-acute-2026",
+            "locator": "Diagnosis of Acute MI / ECG",
+            "assessment": "Current ECG distinguishes STEMI/NSTEMI and drives diagnostic/angiography pathway."
+          },
+          {
+            "source_id": "mi-udmi-2026",
+            "locator": "16.1 Recurrent myocardial infarction",
+            "assessment": "Reassessment with serial findings and often angiography for recurrent MI, classified by mechanism."
+          }
+        ]
       }
     ],
     "independence": {
       "status": "independent_editorial_sources",
-      "rationale": "Different writing institutions exist in this section, but each exact clause must meet its own support test. Shared hosting, NIH subdivisions, joint guidelines and institutional summaries are not counted as independent sources.",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
       "underlying_evidence": "overlap"
     },
     "dispute": {
       "status": "regional_difference",
-      "resolution": "Mayo/NHS aspirin instructions are attributed institutional public advice; differing guideline risk and treatment conditions are retained. No unified dosing, oxygen or repeat-test algorithm is inferred."
+      "resolution": "The August2026 joint UDMI recommends mechanism-based classification, including early recurrence, rather than a separate recurrent code. This clinical update is respected; the user-selected WHO2026-01 denominator remains frozen and its existing BA42 leaves are evaluated as historical classification targets, not claimed to be the latest clinical nomenclature. No28-day home-treatment cutoff or troponin percentage is prescribed."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/emergency_content; revision /root/demand_content; precision integration /root",
-      "reviewer": "/root/mi_diagnosis_recheck; /root/mi_medicine_finish; /root (unchanged context claims only)",
-      "checked_at": "2026-10-02",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "mi-acs-2025",
         "mi-adam-activity",
@@ -1486,6 +1650,7 @@
         "mi-mayo-treatment",
         "mi-mayo-vomiting-blood",
         "mi-merck-acs-medications",
+        "mi-msd-acute-2026",
         "mi-nhlbi-causes",
         "mi-nhlbi-diagnosis",
         "mi-nhlbi-food",
@@ -1513,34 +1678,77 @@
         "mi-rcuk-firstaid-2025",
         "mi-sja-cpr",
         "mi-sps-ace-monitoring",
+        "mi-udmi-2026",
+        "mi-uhd-cardiac-medicines"
+      ],
+      "inherited_source_ids": [
+        "mi-acs-2025",
+        "mi-adam-activity",
+        "mi-aha-acs-summary",
+        "mi-aha-aspirin",
+        "mi-aha-bls-2025",
+        "mi-ashp-clopidogrel",
+        "mi-cuh-rehab-exercise",
+        "mi-diabetesuk-exercise",
+        "mi-diabetesuk-meal-lifestyle",
+        "mi-diabetesuk-meal-plan",
+        "mi-esc-pregnancy-2025",
+        "mi-fda-aspirin",
+        "mi-mayo-ace",
+        "mi-mayo-angina",
+        "mi-mayo-beta",
+        "mi-mayo-bleeding",
+        "mi-mayo-causes",
+        "mi-mayo-chest",
+        "mi-mayo-rehab",
+        "mi-mayo-statin-risks",
+        "mi-mayo-treatment",
+        "mi-mayo-vomiting-blood",
+        "mi-merck-acs-medications",
+        "mi-nhlbi-causes",
+        "mi-nhlbi-diagnosis",
+        "mi-nhlbi-food",
+        "mi-nhlbi-overview",
+        "mi-nhlbi-shock",
+        "mi-nhlbi-symptoms",
+        "mi-nhlbi-treatment",
+        "mi-nhlbi-women",
+        "mi-nhs",
+        "mi-nhs-angina",
+        "mi-nhs-beta-class",
+        "mi-nhs-bisoprolol",
+        "mi-nhs-chest",
+        "mi-nhs-clopidogrel",
+        "mi-nhs-ramipril",
+        "mi-nhs-statins",
+        "mi-nhs-wounds",
+        "mi-nice-cg95",
+        "mi-nice-ng185",
+        "mi-niddk-ckd-food",
+        "mi-niddk-diabetes-food",
+        "mi-nkf-ckd-food",
+        "mi-nlm-troponin",
+        "mi-rcuk-firstaid-2025",
+        "mi-sja-cpr",
+        "mi-sps-ace-monitoring",
         "mi-uhd-cardiac-medicines"
       ],
       "findings": [
         {
-          "id": "MI-T01",
-          "status": "resolved",
-          "resolution": "Explicit OR matches both CUH conditions and current English; this exact proposed text is already independently reviewed."
+          "finding": "New recurrent-MI descriptions must not turn a residual troponin elevation or previous ECG label into an automatic new diagnosis.",
+          "resolution": "Three added bilingual claims explicitly require reassessment, serial changes and current episode ECG/stability. Both UDMI and independent MSD editorial synthesis support this path; NHLBI independently supports new symptoms and alternative complications.",
+          "status": "resolved"
         },
         {
-          "id": "MI-T02",
-          "status": "resolved",
-          "resolution": "Body and Mayo binding are correct; two inherited assessment strings still state the resolved single-source limitation."
-        },
-        {
-          "id": "MI-T03",
-          "status": "resolved",
-          "resolution": "These two old CUH pages were not reread in the three frozen reports or this targeted recheck. Do not add them to original_sources_reopened. Already reviewed, now bound alternatives support every relevant subclaim."
-        },
-        {
-          "id": "MI-T04",
-          "status": "resolved",
-          "resolution": "This sentence explains why another patient’s return-to-driving timeline is not transferable: local regulations also govern eligibility. It states no legal waiting period, clearance criterion, assessment threshold, new clinical action or specific restriction. Its imperatives in Chinese express this applicability boundary; the existing English is directly explanatory. The preceding care-3b already carries the team-agreed return-to-work/activity action separately. Classification as explanation reflects the actual information role, not a relaxation of an uncorroborated clinical action."
+          "finding": "August2026 UDMI mechanism-based nomenclature differs from frozen January2026 classification.",
+          "resolution": "Mapping remains explicitly frozen to WHO2026-01; no public28-day treatment cutoff or outdated diagnostic instruction added.",
+          "status": "resolved"
         }
       ],
-      "resolution": "Frozen reviews cover unchanged claims; separately authored precision changes were rechecked against original materials. Exact hash lineage and source limits are in the acceptance record. No physician sign-off."
+      "resolution": "Accept exact candidate hashes for source-driven editorial and scope integration; not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/batch-01-mi-acceptance.json"
+    "review_report": "reports/p0-03-myocardial-infarction-independent.json"
   },
   {
     "id": "batch01-myocardial-infarction-differentials",

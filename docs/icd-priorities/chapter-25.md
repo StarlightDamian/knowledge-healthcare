@@ -8,11 +8,11 @@ WHO官方英文章名：Codes for special purposes
 
 | 代码 | WHO官方中英名称 | 编辑归口 | 优先级 | 规则 | 覆盖与候选 | 顺序 / 工作包 |
 |---|---|---|---|---|---|---|
-| [RA01.0](http://id.who.int/icd/release/11/mms/1790791774) | COVID-19，病毒被标明<br>COVID-19, virus identified | 感染科／暴露后预防门诊 | P1 | [p1-covid](#rule-p1-covid) | missing | 118<br>WP-0006 |
-| [RA01.1](http://id.who.int/icd/release/11/mms/563410356) | COVID-19，病毒未标明<br>COVID-19, virus not identified | 感染科／暴露后预防门诊 | P1 | [p1-covid](#rule-p1-covid) | missing | 136<br>WP-0007 |
-| [RA00.0](http://id.who.int/icd/release/11/mms/1880731274) | 电子烟相关疾患<br>Vaping related disorder | 感染科／暴露后预防门诊 | P2 | [chapter:25](#rule-chapter%3A25) | missing | 3926<br>WP-0197 |
-| [RA02](http://id.who.int/icd/release/11/mms/2024855916) | COVID-19后期情况<br>Post COVID-19 condition | 感染科／暴露后预防门诊 | P2 | [chapter:25](#rule-chapter%3A25) | missing | 3947<br>WP-0198 |
-| [RA03](http://id.who.int/icd/release/11/mms/1195031154) | COVID-19相关性多系统炎症综合征<br>Multisystem inflammatory syndrome associated with COVID-19 | 感染科／暴露后预防门诊 | P2 | [chapter:25](#rule-chapter%3A25) | missing | 3968<br>WP-0199 |
+| [RA01.0](http://id.who.int/icd/release/11/mms/1790791774) | COVID-19，病毒被标明<br>COVID-19, virus identified | 感染科／暴露后预防门诊 | P1 | [p1-covid](#rule-p1-covid) | missing | 54<br>WP-0003 |
+| [RA01.1](http://id.who.int/icd/release/11/mms/563410356) | COVID-19，病毒未标明<br>COVID-19, virus not identified | 感染科／暴露后预防门诊 | P1 | [p1-covid](#rule-p1-covid) | missing | 72<br>WP-0004 |
+| [RA00.0](http://id.who.int/icd/release/11/mms/1880731274) | 电子烟相关疾患<br>Vaping related disorder | 感染科／暴露后预防门诊 | P2 | [chapter:25](#rule-chapter%3A25) | missing | 3862<br>WP-0194 |
+| [RA02](http://id.who.int/icd/release/11/mms/2024855916) | COVID-19后期情况<br>Post COVID-19 condition | 感染科／暴露后预防门诊 | P2 | [chapter:25](#rule-chapter%3A25) | missing | 3883<br>WP-0195 |
+| [RA03](http://id.who.int/icd/release/11/mms/1195031154) | COVID-19相关性多系统炎症综合征<br>Multisystem inflammatory syndrome associated with COVID-19 | 感染科／暴露后预防门诊 | P2 | [chapter:25](#rule-chapter%3A25) | missing | 3904<br>WP-0196 |
 
 ## 本章规则说明
 

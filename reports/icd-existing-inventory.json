@@ -1,6 +1,6 @@
 {
   "snapshot_sha256": "f1356588f40953a83e3af2b662deab47c5e269f944d1ea4ed0cfeb2007c7cd39",
-  "matching_method": "46 name proposals remain pending; 34 qualified leaf mappings across 11 articles; 28 partial scopes. P0-02 updates existing articles only.",
+  "matching_method": "P0-03 adds 11 canonical articles and expands 8; independent content-bound leaf adjudications are separate from pending name proposals and title-only discovery. planned-126 merged into sudden-hearing-loss; unrelated causes do not inherit coverage.",
   "items": [
     {
       "kind": "condition",
@@ -87,16 +87,67 @@
     },
     {
       "kind": "condition",
+      "id": "aortic-dissection",
+      "names": {
+        "zh-CN": "主动脉夹层",
+        "en": "Aortic dissection"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "BD50.00",
+        "BD50.01",
+        "BD50.0Z",
+        "BD50.10",
+        "BD50.11",
+        "BD50.1Z",
+        "BD50.20",
+        "BD50.21",
+        "BD50.2Y",
+        "BD50.2Z"
+      ],
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
       "id": "appendicitis",
       "names": {
         "zh-CN": "阑尾炎",
         "en": "Appendicitis"
       },
-      "state": "full_article_evidence_and_mapping_incomplete",
+      "state": "qualified_article_with_confirmed_leaf_scope",
       "candidate_codes": [
-        "DB10"
+        "DB10",
+        "DB10.00",
+        "DB10.01",
+        "DB10.02"
       ],
-      "counts_as_qualified_coverage": false
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
+      "id": "ards",
+      "names": {
+        "zh-CN": "急性呼吸窘迫综合征（ARDS）",
+        "en": "Acute respiratory distress syndrome (ARDS)"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "CB00"
+      ],
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
+      "id": "asphyxiation",
+      "names": {
+        "zh-CN": "窒息（机械性与环境性）",
+        "en": "Asphyxiation (mechanical and environmental)"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "NF05"
+      ],
+      "counts_as_qualified_coverage": true
     },
     {
       "kind": "condition",
@@ -156,6 +207,37 @@
       "state": "full_article_evidence_and_mapping_incomplete",
       "candidate_codes": [],
       "counts_as_qualified_coverage": false
+    },
+    {
+      "kind": "condition",
+      "id": "cardiac-arrest",
+      "names": {
+        "zh-CN": "心脏骤停",
+        "en": "Cardiac arrest"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "MC82.0",
+        "MC82.1",
+        "MC82.2",
+        "MC82.3",
+        "MC82.4",
+        "MC82.Z"
+      ],
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
+      "id": "cauda-equina-syndrome",
+      "names": {
+        "zh-CN": "马尾综合征",
+        "en": "Cauda equina syndrome"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "8B40"
+      ],
+      "counts_as_qualified_coverage": true
     },
     {
       "kind": "condition",
@@ -335,6 +417,20 @@
     },
     {
       "kind": "condition",
+      "id": "diabetic-ketoacidosis",
+      "names": {
+        "zh-CN": "糖尿病酮症酸中毒",
+        "en": "Diabetic ketoacidosis"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "5A22.0",
+        "5A22.3"
+      ],
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
       "id": "dizziness",
       "names": {
         "zh-CN": "头晕",
@@ -356,6 +452,22 @@
       "state": "full_article_evidence_and_mapping_incomplete",
       "candidate_codes": [],
       "counts_as_qualified_coverage": false
+    },
+    {
+      "kind": "condition",
+      "id": "eclampsia",
+      "names": {
+        "zh-CN": "子痫",
+        "en": "Eclampsia"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "JA25.0",
+        "JA25.1",
+        "JA25.2",
+        "JA25.3"
+      ],
+      "counts_as_qualified_coverage": true
     },
     {
       "kind": "condition",
@@ -383,6 +495,19 @@
         "EA80"
       ],
       "counts_as_qualified_coverage": false
+    },
+    {
+      "kind": "condition",
+      "id": "epiglottitis",
+      "names": {
+        "zh-CN": "急性会厌炎",
+        "en": "Acute epiglottitis"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "CA06.1"
+      ],
+      "counts_as_qualified_coverage": true
     },
     {
       "kind": "condition",
@@ -477,11 +602,12 @@
         "zh-CN": "热射病与热衰竭",
         "en": "Heatstroke and heat exhaustion"
       },
-      "state": "full_article_evidence_and_mapping_incomplete",
+      "state": "qualified_article_with_confirmed_leaf_scope",
       "candidate_codes": [
-        "NF01.0"
+        "NF01.0",
+        "NF06.0"
       ],
-      "counts_as_qualified_coverage": false
+      "counts_as_qualified_coverage": true
     },
     {
       "kind": "condition",
@@ -581,6 +707,25 @@
     },
     {
       "kind": "condition",
+      "id": "intracerebral-hemorrhage",
+      "names": {
+        "zh-CN": "脑内出血",
+        "en": "Intracerebral hemorrhage"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "8B00.0",
+        "8B00.1",
+        "8B00.2",
+        "8B00.3",
+        "8B00.4",
+        "8B00.5",
+        "8B00.Z"
+      ],
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
       "id": "iron-deficiency-anemia",
       "names": {
         "zh-CN": "缺铁性贫血",
@@ -631,6 +776,33 @@
     },
     {
       "kind": "condition",
+      "id": "meningitis",
+      "names": {
+        "zh-CN": "脑膜炎",
+        "en": "Meningitis"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "1B53",
+        "1B54",
+        "1C1C.0",
+        "1C8E.1",
+        "1C8E.2",
+        "1C8E.Y",
+        "1C8E.Z",
+        "1D01.00",
+        "1D01.0Y",
+        "1D01.0Z",
+        "1D01.1",
+        "1D01.2",
+        "1D01.3",
+        "1D01.Y",
+        "1D01.Z"
+      ],
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
       "id": "migraine",
       "names": {
         "zh-CN": "偏头痛",
@@ -641,6 +813,24 @@
         "8A80"
       ],
       "counts_as_qualified_coverage": false
+    },
+    {
+      "kind": "condition",
+      "id": "myocardial-infarction",
+      "names": {
+        "zh-CN": "心肌梗死（心脏病发作）",
+        "en": "Myocardial infarction (heart attack)"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "BA41.0",
+        "BA41.1",
+        "BA41.Z",
+        "BA42.0",
+        "BA42.1",
+        "BA42.Z"
+      ],
+      "counts_as_qualified_coverage": true
     },
     {
       "kind": "condition",
@@ -655,6 +845,19 @@
         "5B81"
       ],
       "counts_as_qualified_coverage": false
+    },
+    {
+      "kind": "condition",
+      "id": "obstructive-sleep-apnea",
+      "names": {
+        "zh-CN": "阻塞性睡眠呼吸暂停",
+        "en": "Obstructive sleep apnea"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "7A41"
+      ],
+      "counts_as_qualified_coverage": true
     },
     {
       "kind": "condition",
@@ -741,6 +944,26 @@
     },
     {
       "kind": "condition",
+      "id": "postpartum-hemorrhage",
+      "names": {
+        "zh-CN": "产后出血",
+        "en": "Postpartum hemorrhage"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "JA43.0",
+        "JA43.1",
+        "JA43.2",
+        "JA43.3",
+        "JA43.4",
+        "JA43.5",
+        "JA43.Y",
+        "JA43.Z"
+      ],
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
       "id": "preeclampsia",
       "names": {
         "zh-CN": "子痫前期",
@@ -776,6 +999,21 @@
     },
     {
       "kind": "condition",
+      "id": "pulmonary-embolism",
+      "names": {
+        "zh-CN": "肺栓塞（肺血栓栓塞）",
+        "en": "Pulmonary embolism"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "BB00.0",
+        "BB00.1",
+        "BB00.Z"
+      ],
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
       "id": "reflux",
       "names": {
         "zh-CN": "胃食管反流",
@@ -789,6 +1027,23 @@
     },
     {
       "kind": "condition",
+      "id": "retinal-detachment",
+      "names": {
+        "zh-CN": "视网膜脱离与裂孔",
+        "en": "Retinal detachment and breaks"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "9B73.0",
+        "9B73.3",
+        "9B73.4",
+        "9B73.Y",
+        "9B73.Z"
+      ],
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
       "id": "rheumatoid-arthritis",
       "names": {
         "zh-CN": "类风湿关节炎",
@@ -799,6 +1054,33 @@
         "FA20"
       ],
       "counts_as_qualified_coverage": false
+    },
+    {
+      "kind": "condition",
+      "id": "sepsis",
+      "names": {
+        "zh-CN": "脓毒症",
+        "en": "Sepsis"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "1G40",
+        "1G41"
+      ],
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
+      "id": "severe-dengue",
+      "names": {
+        "zh-CN": "重症登革热",
+        "en": "Severe dengue"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "1D22"
+      ],
+      "counts_as_qualified_coverage": true
     },
     {
       "kind": "condition",
@@ -826,6 +1108,24 @@
     },
     {
       "kind": "condition",
+      "id": "sjs-ten",
+      "names": {
+        "zh-CN": "Stevens–Johnson 综合征与中毒性表皮坏死松解症",
+        "en": "Stevens–Johnson syndrome and toxic epidermal necrolysis"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "EB13.0",
+        "EB13.1",
+        "EB13.2",
+        "EH63.0",
+        "EH63.1",
+        "EH63.2"
+      ],
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
       "id": "sore-throat",
       "names": {
         "zh-CN": "咽痛与咽炎",
@@ -848,6 +1148,32 @@
     },
     {
       "kind": "condition",
+      "id": "sudden-hearing-loss",
+      "names": {
+        "zh-CN": "突发性听力下降（特发性突聋）",
+        "en": "Sudden hearing loss (idiopathic SSNHL)"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "AB55"
+      ],
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
+      "id": "suicidal-ideation",
+      "names": {
+        "zh-CN": "自杀意念",
+        "en": "Suicidal ideation"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "MB26.A"
+      ],
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
       "id": "tension-headache",
       "names": {
         "zh-CN": "紧张型头痛",
@@ -858,6 +1184,19 @@
         "8A81"
       ],
       "counts_as_qualified_coverage": false
+    },
+    {
+      "kind": "condition",
+      "id": "testicular-torsion",
+      "names": {
+        "zh-CN": "睾丸扭转",
+        "en": "Testicular torsion"
+      },
+      "state": "qualified_article_with_confirmed_leaf_scope",
+      "candidate_codes": [
+        "GB01.0"
+      ],
+      "counts_as_qualified_coverage": true
     },
     {
       "kind": "condition",
@@ -891,23 +1230,6 @@
       "state": "full_article_evidence_and_mapping_incomplete",
       "candidate_codes": [],
       "counts_as_qualified_coverage": false
-    },
-    {
-      "kind": "condition",
-      "id": "obstructive-sleep-apnea",
-      "names": {
-        "zh-CN": "阻塞性睡眠呼吸暂停",
-        "en": "Obstructive sleep apnea"
-      },
-      "state": "qualified_article_with_confirmed_leaf_scope",
-      "candidate_codes": [
-        "7A41"
-      ],
-      "confirmed_codes": [
-        "7A41"
-      ],
-      "content_sha256": "18b33d26cb7b9a0e1755dfe94ce5ff2dfdd8fe6fce52ab09f8f93d8c3cc6d575",
-      "counts_as_qualified_coverage": true
     },
     {
       "kind": "backlog",
@@ -2294,17 +2616,6 @@
       "names": {
         "zh-CN": "耵聍栓塞",
         "en": "Earwax impaction"
-      },
-      "state": "title_only",
-      "candidate_codes": [],
-      "counts_as_qualified_coverage": false
-    },
-    {
-      "kind": "backlog",
-      "id": "planned-126",
-      "names": {
-        "zh-CN": "突发听力下降",
-        "en": "Sudden hearing loss"
       },
       "state": "title_only",
       "candidate_codes": [],
@@ -3837,163 +4148,6 @@
       "state": "map_or_shared_factor_not_standalone_article",
       "linked_condition_ids": [],
       "counts_as_qualified_coverage": false
-    },
-    {
-      "kind": "condition",
-      "id": "testicular-torsion",
-      "names": {
-        "zh-CN": "睾丸扭转",
-        "en": "Testicular torsion"
-      },
-      "state": "qualified_article_with_confirmed_leaf_scope",
-      "candidate_codes": [
-        "GB01.0"
-      ],
-      "counts_as_qualified_coverage": true
-    },
-    {
-      "kind": "condition",
-      "id": "myocardial-infarction",
-      "names": {
-        "zh-CN": "心肌梗死（心脏病发作）",
-        "en": "Myocardial infarction (heart attack)"
-      },
-      "state": "qualified_article_with_confirmed_leaf_scope",
-      "candidate_codes": [
-        "BA41.0",
-        "BA41.1",
-        "BA41.Z"
-      ],
-      "counts_as_qualified_coverage": true
-    },
-    {
-      "kind": "condition",
-      "id": "pulmonary-embolism",
-      "names": {
-        "zh-CN": "肺栓塞（肺血栓栓塞）",
-        "en": "Pulmonary embolism"
-      },
-      "candidate_codes": [
-        "BB00.0",
-        "BB00.1",
-        "BB00.Z"
-      ],
-      "counts_as_qualified_coverage": true,
-      "state": "qualified_article_with_confirmed_leaf_scope"
-    },
-    {
-      "kind": "condition",
-      "id": "retinal-detachment",
-      "names": {
-        "zh-CN": "视网膜脱离",
-        "en": "Retinal detachment"
-      },
-      "candidate_codes": [
-        "9B73.0",
-        "9B73.3",
-        "9B73.4",
-        "9B73.Y",
-        "9B73.Z"
-      ],
-      "counts_as_qualified_coverage": true,
-      "state": "qualified_article_with_confirmed_leaf_scope"
-    },
-    {
-      "kind": "condition",
-      "id": "aortic-dissection",
-      "names": {
-        "zh-CN": "主动脉夹层",
-        "en": "Aortic dissection"
-      },
-      "candidate_codes": [
-        "BD50.00",
-        "BD50.01",
-        "BD50.0Z",
-        "BD50.10",
-        "BD50.11",
-        "BD50.1Z",
-        "BD50.20",
-        "BD50.21",
-        "BD50.2Y",
-        "BD50.2Z"
-      ],
-      "counts_as_qualified_coverage": true,
-      "state": "qualified_article_with_confirmed_leaf_scope"
-    },
-    {
-      "kind": "condition",
-      "id": "diabetic-ketoacidosis",
-      "names": {
-        "zh-CN": "糖尿病酮症酸中毒",
-        "en": "Diabetic ketoacidosis"
-      },
-      "candidate_codes": [
-        "5A22.0",
-        "5A22.3"
-      ],
-      "counts_as_qualified_coverage": true,
-      "state": "qualified_article_with_confirmed_leaf_scope"
-    },
-    {
-      "kind": "condition",
-      "id": "meningitis",
-      "names": {
-        "zh-CN": "脑膜炎",
-        "en": "Meningitis"
-      },
-      "candidate_codes": [
-        "1B53",
-        "1B54",
-        "1C1C.0",
-        "1C8E.1",
-        "1C8E.2",
-        "1C8E.Y",
-        "1C8E.Z",
-        "1D01.00",
-        "1D01.0Y",
-        "1D01.0Z",
-        "1D01.1",
-        "1D01.2",
-        "1D01.3",
-        "1D01.Y",
-        "1D01.Z"
-      ],
-      "counts_as_qualified_coverage": true,
-      "state": "qualified_article_with_confirmed_leaf_scope"
-    },
-    {
-      "kind": "condition",
-      "id": "postpartum-hemorrhage",
-      "names": {
-        "zh-CN": "产后出血",
-        "en": "Postpartum hemorrhage"
-      },
-      "candidate_codes": [
-        "JA43.0",
-        "JA43.1",
-        "JA43.2",
-        "JA43.3",
-        "JA43.4",
-        "JA43.5",
-        "JA43.Y",
-        "JA43.Z"
-      ],
-      "counts_as_qualified_coverage": true,
-      "state": "qualified_article_with_confirmed_leaf_scope"
-    },
-    {
-      "kind": "condition",
-      "id": "sepsis",
-      "names": {
-        "zh-CN": "脓毒症",
-        "en": "Sepsis"
-      },
-      "candidate_codes": [
-        "1G40",
-        "1G41"
-      ],
-      "counts_as_qualified_coverage": true,
-      "state": "qualified_article_with_confirmed_leaf_scope"
     }
   ]
 }

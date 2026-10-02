@@ -1,0 +1,3216 @@
+[
+  {
+    "id": "p001-aortic-dissection-summary",
+    "target": {
+      "kind": "condition",
+      "id": "aortic-dissection",
+      "section": "summary"
+    },
+    "content_sha256": "dd061af040f2e20e32c5326b30709f39c05777d73338f6dbfc45aeccf0c065de",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "ad-mayo-symptoms",
+        "source_metadata_sha256": "4ffa5f980c1e23ed7de5157f1ebad0cd83f5760adcf4cb72cc8eea41e9b2ae49",
+        "locator": "Overview269–277 | Symptoms280–298; Complications333–339",
+        "source_version": "2025-09-20",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original Overview, Symptoms, When to see a doctor, Causes, Risk factors, Complications, Prevention and reference list read; web lines269–354,366–372. Adult/general aortic dissection education. Same Mayo authorship group as treatment and beta-blocker pages; references include UpToDate, AskMayoExpert2023 and Ferri2025.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "summary-0: Inner-wall tear and false channel definition. summary-1: Acute symptoms and fatal bleeding/organ injury; emergency call advice."
+      },
+      {
+        "source_id": "ad-cleveland",
+        "source_metadata_sha256": "428bd26e20094e4948551b2bcfe603af9257ae12ccd3a8f418ea2a12b03f548f",
+        "locator": "Overview55–71 | Overview60–61; Complications120–128 | Types67–71; Treatment149–161 | Overview55; FAQs213–216; Diagnosis133–144",
+        "source_version": "2024-09-26",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-CLEVELAND",
+        "upstream_evidence": [
+          "Original page read: Overview55–71; Symptoms/Causes75–128; Diagnosis133–144; Treatment149–161; Outlook175–178; Prevention182–191; Living With195–219; References246–255. Adult/general education. References AHA, StatPearls, Merck and observational studies; separate institutional writing, not independent trials.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "summary-0: Wall-layer separation and aortic anatomy. summary-1: Branch obstruction/rupture and emergency evaluation. summary-2: Stanford ascending involvement and practical management distinction. summary-3: Defines aneurysm/dissection/rupture and need for assessment beyond pain."
+      },
+      {
+        "source_id": "ad-mayo-treatment",
+        "source_metadata_sha256": "f93f3849557ea58534343694293b6ab73f6e445d979ee39271b6e58e02cfbc41",
+        "locator": "Treatment286–298",
+        "source_version": "2025-09-20",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original Diagnosis269–282 and Treatment286–298, reference list316–321 read. Adult acute A/B dissection and follow-up. Same Mayo editorial group; shares UpToDate/AskMayoExpert/Ferri upstream with symptom page.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "summary-2: Type-specific urgent operative versus medical management."
+      },
+      {
+        "source_id": "ad-msd-professional",
+        "source_metadata_sha256": "5b5ed7ba1ab950637edc94a5cbdf988db6465e6d85d343bb312ceb611ed704e5",
+        "locator": "Classification of aortic dissection; Surgical repair",
+        "source_version": "December2024 review",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Aortic dissection; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "MSD-MANUALS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "DeBakeyI/II/III location/extent and repair depends on anatomical nature."
+      }
+    ],
+    "claims": [
+      {
+        "id": "summary-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "主动脉是把血从心脏送往全身的大血管。主动脉夹层是血管内层撕开，血液钻入血管壁层间，把原本贴合的层分开。",
+          "en": "The aorta is the main artery carrying blood from the heart to the body. In a dissection, a tear in its inner lining lets blood split the layers of its wall."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "Overview269–277",
+            "assessment": "Inner-wall tear and false channel definition."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Overview55–71",
+            "assessment": "Wall-layer separation and aortic anatomy."
+          }
+        ]
+      },
+      {
+        "id": "summary-1",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "这既可能堵住给脑、肾或腿供血的分支，也可能向外破裂造成大出血。因此突发症状需要急救评估。",
+          "en": "A dissection can obstruct branches supplying the brain, kidneys or legs, or rupture outward and cause major bleeding. Sudden symptoms therefore require emergency assessment."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "Symptoms280–298; Complications333–339",
+            "assessment": "Acute symptoms and fatal bleeding/organ injury; emergency call advice."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Overview60–61; Complications120–128",
+            "assessment": "Branch obstruction/rupture and emergency evaluation."
+          }
+        ]
+      },
+      {
+        "id": "summary-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "A型累及从心脏向上走的升主动脉；B型不累及这一段，通常从胸部向下走的主动脉开始。分型直接影响是否立即手术。",
+          "en": "Type A involves the ascending aorta leaving the heart. Type B does not involve that segment and usually starts in the descending chest aorta. The type directly affects the need for immediate surgery."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-treatment",
+            "locator": "Treatment286–298",
+            "assessment": "Type-specific urgent operative versus medical management."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Types67–71; Treatment149–161",
+            "assessment": "Stanford ascending involvement and practical management distinction."
+          }
+        ]
+      },
+      {
+        "id": "summary-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "主动脉瘤指血管异常鼓起，夹层指壁内分层，两者可以同时存在。胸痛是症状入口，不能仅凭疼痛位置确定是哪一种疾病。",
+          "en": "An aneurysm is an abnormal bulge; a dissection is separation within the wall. They can coexist. Chest pain is a symptom, and its location alone cannot establish the cause."
+        },
+        "supports": [
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Overview55; FAQs213–216; Diagnosis133–144",
+            "assessment": "Defines aneurysm/dissection/rupture and need for assessment beyond pain."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-aortic-dissection-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "医生还会记录夹层是局限于升主动脉，还是越过主动脉弓向下延伸；从降主动脉起始的夹层也可能继续延伸到腹部。影像上的具体范围决定修复需要覆盖哪些部位。",
+          "en": "Clinicians also record whether a dissection stays within the ascending aorta or extends across the arch, and whether one beginning in the descending aorta continues into the abdomen. The actual extent on imaging determines which areas need repair."
+        },
+        "supports": [
+          {
+            "source_id": "ad-msd-professional",
+            "locator": "Classification of aortic dissection; Surgical repair",
+            "assessment": "DeBakeyI/II/III location/extent and repair depends on anatomical nature."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Surgery and endovascular treatment",
+            "assessment": "Graft extent, arch/branch involvement and hybrid repair according to extent."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "Guidelines and MSD share registry/upstream evidence. Independent editorial source groups are not independent clinical trials. No universal survival percentage, outpatient observation for rupture, or single repair technique is asserted; concrete anatomy and stability conditions retained."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p001-aortic-dissection-causes_risks",
+    "target": {
+      "kind": "condition",
+      "id": "aortic-dissection",
+      "section": "causes_risks"
+    },
+    "content_sha256": "b9bc28d63b21b770251441dacbf7c3582929d7b7fdf7831ac4b03ef788526ca6",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "ad-mayo-symptoms",
+        "source_metadata_sha256": "4ffa5f980c1e23ed7de5157f1ebad0cd83f5760adcf4cb72cc8eea41e9b2ae49",
+        "locator": "Causes302–306 | Risk factors313–328; Prevention344–354 | Risk factors313–328; Prevention350–354 | Risk factors313–328",
+        "source_version": "2025-09-20",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original Overview, Symptoms, When to see a doctor, Causes, Risk factors, Complications, Prevention and reference list read; web lines269–354,366–372. Adult/general aortic dissection education. Same Mayo authorship group as treatment and beta-blocker pages; references include UpToDate, AskMayoExpert2023 and Ferri2025.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "causes_risks-0: Wall weakness and splitting. causes_risks-1: Hypertension, smoking/atherosclerosis and modifiable prevention. causes_risks-2: Connective-tissue syndromes, BAV, family history and surveillance. causes_risks-3: Age, genetic conditions, stimulants, pregnancy and intense lifting."
+      },
+      {
+        "source_id": "ad-cleveland",
+        "source_metadata_sha256": "428bd26e20094e4948551b2bcfe603af9257ae12ccd3a8f418ea2a12b03f548f",
+        "locator": "Causes92–98 | Causes92–116; Prevention182–191 | Risk factors98–116; Prevention182–191 | Symptoms75; Risk factors98–116",
+        "source_version": "2024-09-26",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-CLEVELAND",
+        "upstream_evidence": [
+          "Original page read: Overview55–71; Symptoms/Causes75–128; Diagnosis133–144; Treatment149–161; Outlook175–178; Prevention182–191; Living With195–219; References246–255. Adult/general education. References AHA, StatPearls, Merck and observational studies; separate institutional writing, not independent trials.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "causes_risks-0: Pressure and wall vulnerability. causes_risks-1: Risk factors and BP/smoking management. causes_risks-2: Inherited/structural conditions and family screening. causes_risks-3: Can begin at rest; pregnancy/drug/lifting risk factors."
+      }
+    ],
+    "claims": [
+      {
+        "id": "causes_risks-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "夹层常发生在已经变脆弱的血管壁上；血流压力推动撕裂继续延伸。",
+          "en": "Dissection often develops in a weakened aortic wall, with blood pressure driving the split farther."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "Causes302–306",
+            "assessment": "Wall weakness and splitting."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Causes92–98",
+            "assessment": "Pressure and wall vulnerability."
+          }
+        ]
+      },
+      {
+        "id": "causes_risks-1",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "长期高血压会增加血管壁承受的负担，是可以管理的重要因素；吸烟和已有动脉粥样硬化也提示需要处理心血管风险。",
+          "en": "Long-standing high blood pressure increases stress on the wall and is an important treatable factor. Smoking and existing atherosclerosis also call for cardiovascular risk management."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "Risk factors313–328; Prevention344–354",
+            "assessment": "Hypertension, smoking/atherosclerosis and modifiable prevention."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Causes92–116; Prevention182–191",
+            "assessment": "Risk factors and BP/smoking management."
+          }
+        ]
+      },
+      {
+        "id": "causes_risks-2",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "马凡综合征、某些埃勒斯-当洛斯综合征及Loeys–Dietz综合征可影响结缔组织，也就是支撑血管的材料。主动脉瘤、二叶式主动脉瓣及家族史也会改变筛查和随访安排。",
+          "en": "Marfan syndrome, some forms of Ehlers–Danlos syndrome and Loeys–Dietz syndrome affect connective tissue, the material supporting blood vessels. An aneurysm, bicuspid aortic valve or family history also changes screening and follow-up."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "Risk factors313–328; Prevention350–354",
+            "assessment": "Connective-tissue syndromes, BAV, family history and surveillance."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Risk factors98–116; Prevention182–191",
+            "assessment": "Inherited/structural conditions and family screening."
+          }
+        ]
+      },
+      {
+        "id": "causes_risks-3",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "年龄增加、遗传背景不能靠生活方式消除；可改变的诱发因素包括未控制的血压和可卡因等刺激性毒品。部分病例发生于妊娠相关时期或强力负重时，也可在休息时发生。",
+          "en": "Age and inherited susceptibility cannot be removed by lifestyle changes. Modifiable triggers include uncontrolled blood pressure and stimulants such as cocaine. Some cases occur around pregnancy or intense lifting, while others begin at rest."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "Risk factors313–328",
+            "assessment": "Age, genetic conditions, stimulants, pregnancy and intense lifting."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Symptoms75; Risk factors98–116",
+            "assessment": "Can begin at rest; pregnancy/drug/lifting risk factors."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Critical actions, thresholds, benefits and risks have source-specific references from at least two distinct writing groups; ordinary explanations/information organization may use one. Same-institution or joint-guideline variants are not independent.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "US ACC/AHA and South England acute protocols differ in numeric treatment targets; none is turned into a home target or dose. Pregnancy recommendations retain US2022/ESC2025 provenance. Current local teams determine individual care."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/retinal_targeted",
+      "reviewer": "/root",
+      "checked_at": "2026-10-02",
+      "original_sources_reopened": [
+        "ad-acc-activity",
+        "ad-acc-family",
+        "ad-acc-guideline",
+        "ad-acc-medical-extract",
+        "ad-cleveland",
+        "ad-esc-pregnancy-2025",
+        "ad-gstt-recovery",
+        "ad-mayo-beta",
+        "ad-mayo-symptoms",
+        "ad-mayo-treatment",
+        "ad-nhlbi-food",
+        "ad-nhlbi-living",
+        "ad-nhs-beta",
+        "ad-niddk-ckd-food",
+        "ad-south-england-sop",
+        "ad-south-tees-beta"
+      ],
+      "findings": [
+        {
+          "id": "AD-shared-source-metadata",
+          "status": "resolved",
+          "resolution": "Renamed the new NHLBI read to ad-nhlbi-food; original mi-nhlbi-food and its existing medical evidence remain byte-equivalent."
+        },
+        {
+          "id": "AD-abrupt-withdrawal",
+          "status": "resolved",
+          "resolution": "Added directly read South Tees pharmacy instruction, independently corroborating the precise Mayo abrupt-beta-blocker-withdrawal caution; general NIH adherence text is no longer the only second component."
+        },
+        {
+          "id": "AD-medication-suitability",
+          "status": "resolved",
+          "resolution": "Added bilingual asthma/respiratory/slow-rate/conduction selection conditions, with NHS, Mayo and the precise ACC/AHA original indexed extract. Asthma is not labelled a blanket absolute prohibition."
+        }
+      ],
+      "resolution": "One independent full read of the initial58 claims and original material, followed by targeted acceptance of one added medication-condition claim and precise withdrawal/source-ID fixes. All14 sections are supported within their explicit populations and scopes. No clinician signature is implied."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-aortic-dissection-independent.json"
+  },
+  {
+    "id": "p001-aortic-dissection-red_flags",
+    "target": {
+      "kind": "condition",
+      "id": "aortic-dissection",
+      "section": "red_flags"
+    },
+    "content_sha256": "235516f26ee02736f5d4c4a465e9cc44c42c5fe36d0811333608d145d37e4bd4",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "ad-mayo-symptoms",
+        "source_metadata_sha256": "4ffa5f980c1e23ed7de5157f1ebad0cd83f5760adcf4cb72cc8eea41e9b2ae49",
+        "locator": "When to see a doctor294–298; Symptoms280–293 | Symptoms280–298",
+        "source_version": "2025-09-20",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original Overview, Symptoms, When to see a doctor, Causes, Risk factors, Complications, Prevention and reference list read; web lines269–354,366–372. Adult/general aortic dissection education. Same Mayo authorship group as treatment and beta-blocker pages; references include UpToDate, AskMayoExpert2023 and Ferri2025.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "red_flags-0: Emergency care for sudden severe pain without requiring tearing descriptor. red_flags-1: Syncope, dyspnea and stroke-like features are urgent."
+      },
+      {
+        "source_id": "ad-cleveland",
+        "source_metadata_sha256": "428bd26e20094e4948551b2bcfe603af9257ae12ccd3a8f418ea2a12b03f548f",
+        "locator": "Symptoms75–89 | Symptoms77–89",
+        "source_version": "2024-09-26",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-CLEVELAND",
+        "upstream_evidence": [
+          "Original page read: Overview55–71; Symptoms/Causes75–128; Diagnosis133–144; Treatment149–161; Outlook175–178; Prevention182–191; Living With195–219; References246–255. Adult/general education. References AHA, StatPearls, Merck and observational studies; separate institutional writing, not independent trials.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "red_flags-0: Sudden severe chest/back/abdominal pain and call emergency services. red_flags-1: Neurological/visual changes and emergency call action."
+      },
+      {
+        "source_id": "ad-south-england-sop",
+        "source_metadata_sha256": "c5ede37dce4ae78f7a10917da856acdcea3c00d14d23b6e8c9a43bf1620d9ed6",
+        "locator": "pp2–3 sudden pain worst at onset; diagnosis | p3 High Risk Conditions; p6 assessment261–263",
+        "source_version": "2024-03-01",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "GB",
+        "independence_group": "UK-SOUTH-ENGLAND-AORTIC-NETWORK",
+        "upstream_evidence": [
+          "Original PDF text read cover, pp1–6 and10: objectives; pain may have disappeared p3; risk assessment; anti-impulse therapy p4; CTA p5; urgent A/complicated B care p10. Review due2027-03-01. Regional adult hospital/transfer protocol, not a patient dosing recipe. Flowchart-layout screenshot retrieval was not usable; no branching score/transfer category or dosing algorithm reproduced.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "red_flags-0: Supports maximum-at-onset feature, not a self-scoring algorithm. red_flags-2: Onset/history are useful to clinicians; conveying existing facts is ordinary information organization, not a triage threshold."
+      }
+    ],
+    "claims": [
+      {
+        "id": "red_flags-0",
+        "kind": "action",
+        "text": {
+          "zh-CN": "突然出现剧烈胸痛、背痛或腹痛，尤其从一开始就很重，应立即呼叫当地急救。不要等到疼痛符合“撕裂样”才行动。",
+          "en": "Call local emergency services for sudden severe chest, back or abdominal pain, especially pain that is intense from the outset. Do not wait for it to feel specifically “tearing.”"
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "When to see a doctor294–298; Symptoms280–293",
+            "assessment": "Emergency care for sudden severe pain without requiring tearing descriptor."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Symptoms75–89",
+            "assessment": "Sudden severe chest/back/abdominal pain and call emergency services."
+          },
+          {
+            "source_id": "ad-south-england-sop",
+            "locator": "pp2–3 sudden pain worst at onset; diagnosis",
+            "assessment": "Supports maximum-at-onset feature, not a self-scoring algorithm."
+          }
+        ]
+      },
+      {
+        "id": "red_flags-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "疼痛伴晕倒、呼吸困难、突然说不清话、一侧无力或视力变化，更需要立即急救。部分人以这些表现为主。",
+          "en": "Pain with fainting, breathlessness, sudden speech difficulty, one-sided weakness or visual change is particularly urgent. These features may dominate the presentation."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "Symptoms280–298",
+            "assessment": "Syncope, dyspnea and stroke-like features are urgent."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Symptoms77–89",
+            "assessment": "Neurological/visual changes and emergency call action."
+          }
+        ]
+      },
+      {
+        "id": "red_flags-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "呼叫时说明症状开始时间以及已知的主动脉瘤、夹层或遗传性主动脉病史，让急救人员选择合适的评估路径。",
+          "en": "Tell emergency staff when symptoms began and about any known aneurysm, previous dissection or inherited aortic disease so they can choose the appropriate assessment pathway."
+        },
+        "supports": [
+          {
+            "source_id": "ad-south-england-sop",
+            "locator": "p3 High Risk Conditions; p6 assessment261–263",
+            "assessment": "Onset/history are useful to clinicians; conveying existing facts is ordinary information organization, not a triage threshold."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Critical actions, thresholds, benefits and risks have source-specific references from at least two distinct writing groups; ordinary explanations/information organization may use one. Same-institution or joint-guideline variants are not independent.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "US ACC/AHA and South England acute protocols differ in numeric treatment targets; none is turned into a home target or dose. Pregnancy recommendations retain US2022/ESC2025 provenance. Current local teams determine individual care."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/retinal_targeted",
+      "reviewer": "/root",
+      "checked_at": "2026-10-02",
+      "original_sources_reopened": [
+        "ad-acc-activity",
+        "ad-acc-family",
+        "ad-acc-guideline",
+        "ad-acc-medical-extract",
+        "ad-cleveland",
+        "ad-esc-pregnancy-2025",
+        "ad-gstt-recovery",
+        "ad-mayo-beta",
+        "ad-mayo-symptoms",
+        "ad-mayo-treatment",
+        "ad-nhlbi-food",
+        "ad-nhlbi-living",
+        "ad-nhs-beta",
+        "ad-niddk-ckd-food",
+        "ad-south-england-sop",
+        "ad-south-tees-beta"
+      ],
+      "findings": [
+        {
+          "id": "AD-shared-source-metadata",
+          "status": "resolved",
+          "resolution": "Renamed the new NHLBI read to ad-nhlbi-food; original mi-nhlbi-food and its existing medical evidence remain byte-equivalent."
+        },
+        {
+          "id": "AD-abrupt-withdrawal",
+          "status": "resolved",
+          "resolution": "Added directly read South Tees pharmacy instruction, independently corroborating the precise Mayo abrupt-beta-blocker-withdrawal caution; general NIH adherence text is no longer the only second component."
+        },
+        {
+          "id": "AD-medication-suitability",
+          "status": "resolved",
+          "resolution": "Added bilingual asthma/respiratory/slow-rate/conduction selection conditions, with NHS, Mayo and the precise ACC/AHA original indexed extract. Asthma is not labelled a blanket absolute prohibition."
+        }
+      ],
+      "resolution": "One independent full read of the initial58 claims and original material, followed by targeted acceptance of one added medication-condition claim and precise withdrawal/source-ID fixes. All14 sections are supported within their explicit populations and scopes. No clinician signature is implied."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-aortic-dissection-independent.json"
+  },
+  {
+    "id": "p001-aortic-dissection-care",
+    "target": {
+      "kind": "condition",
+      "id": "aortic-dissection",
+      "section": "care"
+    },
+    "content_sha256": "e3b30176239d9949b76fcee822982c127bbbf50fb60c4e04a31ae0bf3d270d47",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "ad-south-england-sop",
+        "source_metadata_sha256": "c5ede37dce4ae78f7a10917da856acdcea3c00d14d23b6e8c9a43bf1620d9ed6",
+        "locator": "p3 pain may have disappeared; pp1–2 urgent diagnosis",
+        "source_version": "2024-03-01",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "GB",
+        "independence_group": "UK-SOUTH-ENGLAND-AORTIC-NETWORK",
+        "upstream_evidence": [
+          "Original PDF text read cover, pp1–6 and10: objectives; pain may have disappeared p3; risk assessment; anti-impulse therapy p4; CTA p5; urgent A/complicated B care p10. Review due2027-03-01. Regional adult hospital/transfer protocol, not a patient dosing recipe. Flowchart-layout screenshot retrieval was not usable; no branching score/transfer category or dosing algorithm reproduced.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "care-0: Explicit pain resolution does not remove suspicion in hospital evaluation."
+      },
+      {
+        "source_id": "ad-cleveland",
+        "source_metadata_sha256": "428bd26e20094e4948551b2bcfe603af9257ae12ccd3a8f418ea2a12b03f548f",
+        "locator": "Overview61; chronic outlook177; Living With201 | Symptoms77–89; Outlook177; Living With201 | Prevention182–191 | Living With195–201; contacting provider189–191",
+        "source_version": "2024-09-26",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-CLEVELAND",
+        "upstream_evidence": [
+          "Original page read: Overview55–71; Symptoms/Causes75–128; Diagnosis133–144; Treatment149–161; Outlook175–178; Prevention182–191; Living With195–219; References246–255. Adult/general education. References AHA, StatPearls, Merck and observational studies; separate institutional writing, not independent trials.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "care-0: Emergency acute care and surveillance of chronic residual disease. care-1: New symptoms remain urgent despite previously treated/residual disease. care-2: Family/known aortic risk calls for specialist assessment and imaging. care-3: Lifelong BP treatment and follow-up, new changes merit discussion; no numeric self-adjustment target supplied."
+      },
+      {
+        "source_id": "ad-mayo-symptoms",
+        "source_metadata_sha256": "4ffa5f980c1e23ed7de5157f1ebad0cd83f5760adcf4cb72cc8eea41e9b2ae49",
+        "locator": "When to see a doctor294–298",
+        "source_version": "2025-09-20",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original Overview, Symptoms, When to see a doctor, Causes, Risk factors, Complications, Prevention and reference list read; web lines269–354,366–372. Adult/general aortic dissection education. Same Mayo authorship group as treatment and beta-blocker pages; references include UpToDate, AskMayoExpert2023 and Ferri2025.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "care-1: New sudden pain/stroke signs require emergency care."
+      },
+      {
+        "source_id": "ad-acc-family",
+        "source_metadata_sha256": "618268df324688189bae3c84c78a2cfff4bdabde682704351e2a6aa8889398d6",
+        "locator": "Point5 family history/genetic testing/relative imaging",
+        "source_version": "2022-11-02",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-ACC-AHA",
+        "upstream_evidence": [
+          "Original official summary read, points2–5: imaging reports, teams, shared decisions, family history, genetic testing and first-degree-relative imaging. Same joint guideline upstream as part2; not counted independently of it.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "care-2: Screening applies to family/structural/genetic risk and is distinct from acute attack care."
+      },
+      {
+        "source_id": "ad-nhs-beta",
+        "source_metadata_sha256": "b960f335f281496df03873bce6975bcc8cb20364ca44202d06465f31e2158fbf",
+        "locator": "Side effects54–68",
+        "source_version": "2026-09-04",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Original page read sections About15–28, Side effects54–68, suitability/pregnancy77–85, interactions88–98. Displayed last review2026-09-04. Medicine-class information, not aortic-specific efficacy; independently authored national NHS material.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "care-3: Persistent/bothersome dizziness merits clinical/pharmacy discussion."
+      },
+      {
+        "source_id": "ad-mayo-treatment",
+        "source_metadata_sha256": "f93f3849557ea58534343694293b6ab73f6e445d979ee39271b6e58e02cfbc41",
+        "locator": "After treatment298",
+        "source_version": "2025-09-20",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original Diagnosis269–282 and Treatment286–298, reference list316–321 read. Adult acute A/B dissection and follow-up. Same Mayo editorial group; shares UpToDate/AskMayoExpert/Ferri upstream with symptom page.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "care-3: Lifelong BP medicine and individualized imaging follow-up."
+      }
+    ],
+    "claims": [
+      {
+        "id": "care-0",
+        "kind": "action",
+        "text": {
+          "zh-CN": "怀疑急性夹层时，应立即在急诊和医院评估；疼痛自行缓解也不能排除。已确诊且长期稳定的夹层则按专科计划随访，不能把两种情况混为一谈。",
+          "en": "Suspected acute dissection requires immediate hospital assessment; pain that settles does not exclude it. A known, stable chronic dissection follows a specialist surveillance plan. These are different situations."
+        },
+        "supports": [
+          {
+            "source_id": "ad-south-england-sop",
+            "locator": "p3 pain may have disappeared; pp1–2 urgent diagnosis",
+            "assessment": "Explicit pain resolution does not remove suspicion in hospital evaluation."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Overview61; chronic outlook177; Living With201",
+            "assessment": "Emergency acute care and surveillance of chronic residual disease."
+          }
+        ]
+      },
+      {
+        "id": "care-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "出现上述突然剧痛或神经症状，应呼叫急救。以前接受过修复手术的人出现新的相同症状，也需要重新急诊评估。",
+          "en": "Call emergency services for the sudden severe pain or neurological symptoms described above. New similar symptoms after previous repair also require emergency reassessment."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "When to see a doctor294–298",
+            "assessment": "New sudden pain/stroke signs require emergency care."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Symptoms77–89; Outlook177; Living With201",
+            "assessment": "New symptoms remain urgent despite previously treated/residual disease."
+          }
+        ]
+      },
+      {
+        "id": "care-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "没有急性症状但已知主动脉瘤、遗传综合征或直系亲属主动脉病史时，可预约心血管专科，讨论影像、血压和家族筛查；这与急性发作的急救路径不同。",
+          "en": "Without acute symptoms, a known aneurysm, inherited syndrome or first-degree relative with aortic disease calls for a cardiovascular appointment to discuss imaging, blood pressure and family screening. This is a different pathway from emergency care during an acute attack."
+        },
+        "supports": [
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Prevention182–191",
+            "assessment": "Family/known aortic risk calls for specialist assessment and imaging."
+          },
+          {
+            "source_id": "ad-acc-family",
+            "locator": "Point5 family history/genetic testing/relative imaging",
+            "assessment": "Screening applies to family/structural/genetic risk and is distinct from acute attack care."
+          }
+        ]
+      },
+      {
+        "id": "care-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "出院后的常规复诊要按修复方式和剩余病变安排；发现血压持续高于医生设定的范围，或药物引起头晕等不适，应联系治疗团队调整。",
+          "en": "Routine follow-up after discharge depends on the repair and remaining disease. Contact the treatment team if blood pressure stays above the agreed range or medicines cause symptoms such as dizziness."
+        },
+        "supports": [
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Living With195–201; contacting provider189–191",
+            "assessment": "Lifelong BP treatment and follow-up, new changes merit discussion; no numeric self-adjustment target supplied."
+          },
+          {
+            "source_id": "ad-nhs-beta",
+            "locator": "Side effects54–68",
+            "assessment": "Persistent/bothersome dizziness merits clinical/pharmacy discussion."
+          },
+          {
+            "source_id": "ad-mayo-treatment",
+            "locator": "After treatment298",
+            "assessment": "Lifelong BP medicine and individualized imaging follow-up."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Critical actions, thresholds, benefits and risks have source-specific references from at least two distinct writing groups; ordinary explanations/information organization may use one. Same-institution or joint-guideline variants are not independent.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "US ACC/AHA and South England acute protocols differ in numeric treatment targets; none is turned into a home target or dose. Pregnancy recommendations retain US2022/ESC2025 provenance. Current local teams determine individual care."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/retinal_targeted",
+      "reviewer": "/root",
+      "checked_at": "2026-10-02",
+      "original_sources_reopened": [
+        "ad-acc-activity",
+        "ad-acc-family",
+        "ad-acc-guideline",
+        "ad-acc-medical-extract",
+        "ad-cleveland",
+        "ad-esc-pregnancy-2025",
+        "ad-gstt-recovery",
+        "ad-mayo-beta",
+        "ad-mayo-symptoms",
+        "ad-mayo-treatment",
+        "ad-nhlbi-food",
+        "ad-nhlbi-living",
+        "ad-nhs-beta",
+        "ad-niddk-ckd-food",
+        "ad-south-england-sop",
+        "ad-south-tees-beta"
+      ],
+      "findings": [
+        {
+          "id": "AD-shared-source-metadata",
+          "status": "resolved",
+          "resolution": "Renamed the new NHLBI read to ad-nhlbi-food; original mi-nhlbi-food and its existing medical evidence remain byte-equivalent."
+        },
+        {
+          "id": "AD-abrupt-withdrawal",
+          "status": "resolved",
+          "resolution": "Added directly read South Tees pharmacy instruction, independently corroborating the precise Mayo abrupt-beta-blocker-withdrawal caution; general NIH adherence text is no longer the only second component."
+        },
+        {
+          "id": "AD-medication-suitability",
+          "status": "resolved",
+          "resolution": "Added bilingual asthma/respiratory/slow-rate/conduction selection conditions, with NHS, Mayo and the precise ACC/AHA original indexed extract. Asthma is not labelled a blanket absolute prohibition."
+        }
+      ],
+      "resolution": "One independent full read of the initial58 claims and original material, followed by targeted acceptance of one added medication-condition claim and precise withdrawal/source-ID fixes. All14 sections are supported within their explicit populations and scopes. No clinician signature is implied."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-aortic-dissection-independent.json"
+  },
+  {
+    "id": "p001-aortic-dissection-diagnosis",
+    "target": {
+      "kind": "condition",
+      "id": "aortic-dissection",
+      "section": "diagnosis"
+    },
+    "content_sha256": "1ea19c420522a51f0a3e480dead0647044d4eef27464fd9aa5b7024e715d6ab1",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "ad-south-england-sop",
+        "source_metadata_sha256": "c5ede37dce4ae78f7a10917da856acdcea3c00d14d23b6e8c9a43bf1620d9ed6",
+        "locator": "p3 High Risk Conditions/Pain/Clinical Findings | p3 risk assessment and uncertain cases; p5 Making the Diagnosis | p5 Making the Diagnosis/CT protocol",
+        "source_version": "2024-03-01",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "GB",
+        "independence_group": "UK-SOUTH-ENGLAND-AORTIC-NETWORK",
+        "upstream_evidence": [
+          "Original PDF text read cover, pp1–6 and10: objectives; pain may have disappeared p3; risk assessment; anti-impulse therapy p4; CTA p5; urgent A/complicated B care p10. Review due2027-03-01. Regional adult hospital/transfer protocol, not a patient dosing recipe. Flowchart-layout screenshot retrieval was not usable; no branching score/transfer category or dosing algorithm reproduced.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "diagnosis-0: History, onset, family and neurovascular findings guide clinician assessment. diagnosis-1: Suspicion considers history/exam together and may still require CT without one finding. diagnosis-3: CT confirmation when suspected; chest film does not substitute."
+      },
+      {
+        "source_id": "ad-mayo-treatment",
+        "source_metadata_sha256": "f93f3849557ea58534343694293b6ab73f6e445d979ee39271b6e58e02cfbc41",
+        "locator": "Diagnosis269–278 | Diagnosis279–282 | Diagnosis269–282",
+        "source_version": "2025-09-20",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original Diagnosis269–282 and Treatment286–298, reference list316–321 read. Adult acute A/B dissection and follow-up. Same Mayo editorial group; shares UpToDate/AskMayoExpert/Ferri upstream with symptom page.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "diagnosis-1: Asymmetric pulse/BP is a possible clue, not a mandatory finding. diagnosis-2: CT and esophageal ultrasound explanations. diagnosis-3: Chest-film abnormality is a clue while definitive dedicated tests are listed."
+      },
+      {
+        "source_id": "ad-cleveland",
+        "source_metadata_sha256": "428bd26e20094e4948551b2bcfe603af9257ae12ccd3a8f418ea2a12b03f548f",
+        "locator": "Diagnosis141–144 | Diagnosis133–144",
+        "source_version": "2024-09-26",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-CLEVELAND",
+        "upstream_evidence": [
+          "Original page read: Overview55–71; Symptoms/Causes75–128; Diagnosis133–144; Treatment149–161; Outlook175–178; Prevention182–191; Living With195–219; References246–255. Adult/general education. References AHA, StatPearls, Merck and observational studies; separate institutional writing, not independent trials.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "diagnosis-2: Rapid CT; TEE probe and MRI descriptions. diagnosis-3: Imaging choice, MRI duration and need for aortic tests."
+      },
+      {
+        "source_id": "ad-esc-2024",
+        "source_metadata_sha256": "163f784238408baa4c47980d83eef4127db5e5667bf29b119d4b50c752da2e3a",
+        "locator": "9.3.1 classification; DISSECT discussion",
+        "source_version": "2024-08-30",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Aortic dissection; subtype conditions are in the claim.",
+        "region": "EU",
+        "independence_group": "ESC-GUIDELINES",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Duration, entry, size, segmental extent, clinical complications and false-lumen features guide decisions."
+      },
+      {
+        "source_id": "ad-msd-professional",
+        "source_metadata_sha256": "5b5ed7ba1ab950637edc94a5cbdf988db6465e6d85d343bb312ceb611ed704e5",
+        "locator": "Classification; Diagnosis; Surgical repair",
+        "source_version": "December2024 review",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Aortic dissection; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "MSD-MANUALS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Anatomy, extension, aortic regurgitation and major branch involvement inform repair."
+      }
+    ],
+    "claims": [
+      {
+        "id": "diagnosis-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "医生先了解发病是否突然、疼痛如何变化、有没有晕厥或神经症状，并询问血压、主动脉病和家族史。",
+          "en": "Clinicians ask about sudden onset, pain changes, fainting or neurological symptoms, and review blood pressure, aortic disease and family history."
+        },
+        "supports": [
+          {
+            "source_id": "ad-south-england-sop",
+            "locator": "p3 High Risk Conditions/Pain/Clinical Findings",
+            "assessment": "History, onset, family and neurovascular findings guide clinician assessment."
+          }
+        ]
+      },
+      {
+        "id": "diagnosis-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "查体可能比较两侧脉搏和血压，并观察器官供血。两侧不同可提供线索，但没有这种差异也不能单凭这一点排除夹层。",
+          "en": "Examination may compare pulses and blood pressure on both sides and look for impaired organ blood flow. A difference is a clue; its absence alone does not rule out dissection."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-treatment",
+            "locator": "Diagnosis269–278",
+            "assessment": "Asymmetric pulse/BP is a possible clue, not a mandatory finding."
+          },
+          {
+            "source_id": "ad-south-england-sop",
+            "locator": "p3 risk assessment and uncertain cases; p5 Making the Diagnosis",
+            "assessment": "Suspicion considers history/exam together and may still require CT without one finding."
+          }
+        ]
+      },
+      {
+        "id": "diagnosis-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "CT血管成像通常能迅速显示撕裂的位置、范围及受累分支。经食管超声把探头放入食管，从靠近心脏的位置观察主动脉，在特定急救或手术情形中有用。",
+          "en": "CT angiography can rapidly show the location, extent and affected branches. Transesophageal echocardiography places a probe in the esophagus to view the nearby aorta and can help in selected emergency or surgical settings."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-treatment",
+            "locator": "Diagnosis279–282",
+            "assessment": "CT and esophageal ultrasound explanations."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Diagnosis141–144",
+            "assessment": "Rapid CT; TEE probe and MRI descriptions."
+          }
+        ]
+      },
+      {
+        "id": "diagnosis-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "MRI也能显示主动脉，但检查时间和可及性限制其在部分急救场景的用途。胸片可以出现异常，却不能替代针对主动脉的影像检查。",
+          "en": "MRI can also show the aorta, but examination time and availability limit its use in some emergencies. A chest X-ray may be abnormal but does not replace dedicated aortic imaging."
+        },
+        "supports": [
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Diagnosis133–144",
+            "assessment": "Imaging choice, MRI duration and need for aortic tests."
+          },
+          {
+            "source_id": "ad-south-england-sop",
+            "locator": "p5 Making the Diagnosis/CT protocol",
+            "assessment": "CT confirmation when suspected; chest film does not substitute."
+          },
+          {
+            "source_id": "ad-mayo-treatment",
+            "locator": "Diagnosis269–282",
+            "assessment": "Chest-film abnormality is a clue while definitive dedicated tests are listed."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-aortic-dissection-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "报告中的“其他特指”说明形态已有描述，不能据此判断轻重。医生仍需逐一核对起始部位、延伸范围、有无血液外漏及分支供血受阻，才能选择治疗路径。",
+          "en": "An other-specified label indicates a described pattern, not its severity. The team still assesses the entry site, extent, leakage and blood flow to branch vessels to select the treatment pathway."
+        },
+        "supports": [
+          {
+            "source_id": "ad-esc-2024",
+            "locator": "9.3.1 classification; DISSECT discussion",
+            "assessment": "Duration, entry, size, segmental extent, clinical complications and false-lumen features guide decisions."
+          },
+          {
+            "source_id": "ad-msd-professional",
+            "locator": "Classification; Diagnosis; Surgical repair",
+            "assessment": "Anatomy, extension, aortic regurgitation and major branch involvement inform repair."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "Guidelines and MSD share registry/upstream evidence. Independent editorial source groups are not independent clinical trials. No universal survival percentage, outpatient observation for rupture, or single repair technique is asserted; concrete anatomy and stability conditions retained."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p001-aortic-dissection-differentials",
+    "target": {
+      "kind": "condition",
+      "id": "aortic-dissection",
+      "section": "differentials"
+    },
+    "content_sha256": "e0da92aecfe98a9ce67f825aeea55be033803dc6cff40a96d8c2a14b3092f3c1",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "ad-mayo-treatment",
+        "source_metadata_sha256": "f93f3849557ea58534343694293b6ab73f6e445d979ee39271b6e58e02cfbc41",
+        "locator": "Diagnosis269–282",
+        "source_version": "2025-09-20",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original Diagnosis269–282 and Treatment286–298, reference list316–321 read. Adult acute A/B dissection and follow-up. Same Mayo editorial group; shares UpToDate/AskMayoExpert/Ferri upstream with symptom page.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "differentials-0: Symptoms overlap other diseases and require tests."
+      },
+      {
+        "source_id": "ad-cleveland",
+        "source_metadata_sha256": "428bd26e20094e4948551b2bcfe603af9257ae12ccd3a8f418ea2a12b03f548f",
+        "locator": "Complications120–128; Diagnosis133–144 | FAQs213–216 | Symptoms77–89; Complications120–128",
+        "source_version": "2024-09-26",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-CLEVELAND",
+        "upstream_evidence": [
+          "Original page read: Overview55–71; Symptoms/Causes75–128; Diagnosis133–144; Treatment149–161; Outlook175–178; Prevention182–191; Living With195–219; References246–255. Adult/general education. References AHA, StatPearls, Merck and observational studies; separate institutional writing, not independent trials.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "differentials-1: Heart attack can result from dissection; imaging determines mechanism. differentials-2: Bulge, internal separation and full-wall rupture are distinct. differentials-3: Stroke-like presentation with dissection, not a lay diagnostic rule."
+      },
+      {
+        "source_id": "ad-mayo-symptoms",
+        "source_metadata_sha256": "4ffa5f980c1e23ed7de5157f1ebad0cd83f5760adcf4cb72cc8eea41e9b2ae49",
+        "locator": "Overview; Symptoms280–298 | Symptoms280–293; Complications333–339",
+        "source_version": "2025-09-20",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original Overview, Symptoms, When to see a doctor, Causes, Risk factors, Complications, Prevention and reference list read; web lines269–354,366–372. Adult/general aortic dissection education. Same Mayo authorship group as treatment and beta-blocker pages; references include UpToDate, AskMayoExpert2023 and Ferri2025.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "differentials-1: Dissection resembles infarction symptoms; prompt emergency assessment instead of symptom-only treatment. differentials-3: Neurological presentation and stroke complication."
+      },
+      {
+        "source_id": "ad-nhlbi-living",
+        "source_metadata_sha256": "2951be53878ed1aa8fbf8cc79634dde0945522c6d078671e687b9ae7a84bf182",
+        "locator": "Complications94–104",
+        "source_version": "2022-03-24",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-NIH",
+        "upstream_evidence": [
+          "Original Aortic Aneurysm—Living With page read, web94–113: surveillance, complications, medicines and lifting precautions. Applied only to shared aortic mechanisms and recovery precautions; not used as dissection-specific operative guidance. NIH subdivisions share one editorial group.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "differentials-2: Aneurysm complications can cause acute emergency."
+      }
+    ],
+    "claims": [
+      {
+        "id": "differentials-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "急性夹层与几种急症都可能引起胸痛，医生需要结合发病经过、心脏检查和影像区分。",
+          "en": "Dissection shares chest pain with several emergencies. Clinicians distinguish them using the onset, cardiac assessment and imaging."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-treatment",
+            "locator": "Diagnosis269–282",
+            "assessment": "Symptoms overlap other diseases and require tests."
+          }
+        ]
+      },
+      {
+        "id": "differentials-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "心肌梗死是心肌供血不足造成损伤，夹层是主动脉壁受损；夹层也可能影响冠状动脉供血。因此一次胸痛描述不能决定治疗。",
+          "en": "Myocardial infarction is injury from inadequate blood supply to heart muscle; dissection is injury within the aortic wall. Dissection can itself impair coronary flow, so the pain description alone cannot determine treatment."
+        },
+        "supports": [
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Complications120–128; Diagnosis133–144",
+            "assessment": "Heart attack can result from dissection; imaging determines mechanism."
+          },
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "Overview; Symptoms280–298",
+            "assessment": "Dissection resembles infarction symptoms; prompt emergency assessment instead of symptom-only treatment."
+          }
+        ]
+      },
+      {
+        "id": "differentials-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "主动脉瘤可能长期没有症状；瘤体破裂是血管壁被血液穿透。夹层、动脉瘤和破裂的定义不同，但都可能需要急诊血管评估。",
+          "en": "An aortic aneurysm may remain symptomless for a long time. Rupture means blood escapes through the vessel wall. Dissection, aneurysm and rupture are distinct but can all require emergency vascular assessment."
+        },
+        "supports": [
+          {
+            "source_id": "ad-cleveland",
+            "locator": "FAQs213–216",
+            "assessment": "Bulge, internal separation and full-wall rupture are distinct."
+          },
+          {
+            "source_id": "ad-nhlbi-living",
+            "locator": "Complications94–104",
+            "assessment": "Aneurysm complications can cause acute emergency."
+          }
+        ]
+      },
+      {
+        "id": "differentials-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "突然说话困难或一侧无力可表现得像脑卒中；若同时有突发胸背痛，医生还需考虑主动脉分支供血被夹层影响。",
+          "en": "Sudden speech difficulty or one-sided weakness may resemble a stroke. When sudden chest or back pain accompanies it, clinicians also consider impaired blood flow from an aortic dissection."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "Symptoms280–293; Complications333–339",
+            "assessment": "Neurological presentation and stroke complication."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Symptoms77–89; Complications120–128",
+            "assessment": "Stroke-like presentation with dissection, not a lay diagnostic rule."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Critical actions, thresholds, benefits and risks have source-specific references from at least two distinct writing groups; ordinary explanations/information organization may use one. Same-institution or joint-guideline variants are not independent.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "US ACC/AHA and South England acute protocols differ in numeric treatment targets; none is turned into a home target or dose. Pregnancy recommendations retain US2022/ESC2025 provenance. Current local teams determine individual care."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/retinal_targeted",
+      "reviewer": "/root",
+      "checked_at": "2026-10-02",
+      "original_sources_reopened": [
+        "ad-acc-activity",
+        "ad-acc-family",
+        "ad-acc-guideline",
+        "ad-acc-medical-extract",
+        "ad-cleveland",
+        "ad-esc-pregnancy-2025",
+        "ad-gstt-recovery",
+        "ad-mayo-beta",
+        "ad-mayo-symptoms",
+        "ad-mayo-treatment",
+        "ad-nhlbi-food",
+        "ad-nhlbi-living",
+        "ad-nhs-beta",
+        "ad-niddk-ckd-food",
+        "ad-south-england-sop",
+        "ad-south-tees-beta"
+      ],
+      "findings": [
+        {
+          "id": "AD-shared-source-metadata",
+          "status": "resolved",
+          "resolution": "Renamed the new NHLBI read to ad-nhlbi-food; original mi-nhlbi-food and its existing medical evidence remain byte-equivalent."
+        },
+        {
+          "id": "AD-abrupt-withdrawal",
+          "status": "resolved",
+          "resolution": "Added directly read South Tees pharmacy instruction, independently corroborating the precise Mayo abrupt-beta-blocker-withdrawal caution; general NIH adherence text is no longer the only second component."
+        },
+        {
+          "id": "AD-medication-suitability",
+          "status": "resolved",
+          "resolution": "Added bilingual asthma/respiratory/slow-rate/conduction selection conditions, with NHS, Mayo and the precise ACC/AHA original indexed extract. Asthma is not labelled a blanket absolute prohibition."
+        }
+      ],
+      "resolution": "One independent full read of the initial58 claims and original material, followed by targeted acceptance of one added medication-condition claim and precise withdrawal/source-ID fixes. All14 sections are supported within their explicit populations and scopes. No clinician signature is implied."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-aortic-dissection-independent.json"
+  },
+  {
+    "id": "p001-aortic-dissection-treatment",
+    "target": {
+      "kind": "condition",
+      "id": "aortic-dissection",
+      "section": "treatment"
+    },
+    "content_sha256": "62f7452bdabe7101abd82c7dacd6e79fa41eb32f5f9b9ac12b9d8418385b811e",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "ad-south-england-sop",
+        "source_metadata_sha256": "c5ede37dce4ae78f7a10917da856acdcea3c00d14d23b6e8c9a43bf1620d9ed6",
+        "locator": "p4 Principles of Anti-Impulse therapy202–221 | pp4 and10 complicated type B",
+        "source_version": "2024-03-01",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "GB",
+        "independence_group": "UK-SOUTH-ENGLAND-AORTIC-NETWORK",
+        "upstream_evidence": [
+          "Original PDF text read cover, pp1–6 and10: objectives; pain may have disappeared p3; risk assessment; anti-impulse therapy p4; CTA p5; urgent A/complicated B care p10. Review due2027-03-01. Regional adult hospital/transfer protocol, not a patient dosing recipe. Flowchart-layout screenshot retrieval was not usable; no branching score/transfer category or dosing algorithm reproduced.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "treatment-0: Reduce expansion/rupture while maintaining organ perfusion. treatment-2: UK regional protocol corroborates urgent rupture/malperfusion intervention; not claimed to enumerate every US indication."
+      },
+      {
+        "source_id": "ad-acc-guideline",
+        "source_metadata_sha256": "fc603113a88b455a66be846c60d9fcd4dc83355d9db972f881ce3d33e4748a2d",
+        "locator": "Point7 AAS medical/operative management | Point7 Type B acute dissection | Point7 Type B and long-term surveillance",
+        "source_version": "2022-11-02",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-ACC-AHA",
+        "upstream_evidence": [
+          "Original ACC official Key Perspectives Part2 summary read, paragraphs6–8, web161–202. Especially AAS acute management, surveillance and pregnancy. Summary only; full guideline was not attested read. Joint2022 ACC/AHA guideline; part1, part2 and guideline physical-activity extract are one editorial group.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "treatment-0: Type-dependent perfusion-preserving treatment. treatment-2: Uncomplicated B initially medical; rupture, malperfusion, pain and hypertension intervention indications. treatment-3: Anatomical suitability and remaining aortic disease after repair."
+      },
+      {
+        "source_id": "ad-mayo-treatment",
+        "source_metadata_sha256": "f93f3849557ea58534343694293b6ab73f6e445d979ee39271b6e58e02cfbc41",
+        "locator": "Treatment286–292",
+        "source_version": "2025-09-20",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original Diagnosis269–282 and Treatment286–298, reference list316–321 read. Adult acute A/B dissection and follow-up. Same Mayo editorial group; shares UpToDate/AskMayoExpert/Ferri upstream with symptom page.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "treatment-1: Type A emergency graft and possible valve repair/replacement."
+      },
+      {
+        "source_id": "ad-cleveland",
+        "source_metadata_sha256": "428bd26e20094e4948551b2bcfe603af9257ae12ccd3a8f418ea2a12b03f548f",
+        "locator": "Treatment149–158 | Treatment149–161 | Treatment159–161; Outlook177; Living With201",
+        "source_version": "2024-09-26",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-CLEVELAND",
+        "upstream_evidence": [
+          "Original page read: Overview55–71; Symptoms/Causes75–128; Diagnosis133–144; Treatment149–161; Outlook175–178; Prevention182–191; Living With195–219; References246–255. Adult/general education. References AHA, StatPearls, Merck and observational studies; separate institutional writing, not independent trials.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "treatment-1: Immediate A surgery with graft/valve decisions. treatment-2: Medical B versus urgent complicated B intervention. treatment-3: Endovascular repair and residual disease surveillance."
+      },
+      {
+        "source_id": "ad-esc-2024",
+        "source_metadata_sha256": "163f784238408baa4c47980d83eef4127db5e5667bf29b119d4b50c752da2e3a",
+        "locator": "9.3.1.4 Acute typeB interventional treatment",
+        "source_version": "2024-08-30",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Aortic dissection; subtype conditions are in the claim.",
+        "region": "EU",
+        "independence_group": "ESC-GUIDELINES",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Complicated rupture requires repair; selection by anatomy and procedural context."
+      }
+    ],
+    "claims": [
+      {
+        "id": "treatment-0",
+        "kind": "benefit",
+        "text": {
+          "zh-CN": "治疗目标是减小血流对主动脉壁的冲击、阻止破裂，并恢复重要器官的供血。不同分型的处理不同。",
+          "en": "Treatment aims to reduce stress on the aortic wall, prevent rupture and preserve blood flow to vital organs. Management differs by type."
+        },
+        "supports": [
+          {
+            "source_id": "ad-south-england-sop",
+            "locator": "p4 Principles of Anti-Impulse therapy202–221",
+            "assessment": "Reduce expansion/rupture while maintaining organ perfusion."
+          },
+          {
+            "source_id": "ad-acc-guideline",
+            "locator": "Point7 AAS medical/operative management",
+            "assessment": "Type-dependent perfusion-preserving treatment."
+          }
+        ]
+      },
+      {
+        "id": "treatment-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "A型通常需要紧急手术，用人工血管替换受损段；若主动脉瓣也受累，可能需要修复或更换瓣膜。",
+          "en": "Type A usually needs emergency surgery to replace the damaged segment with a graft. An affected aortic valve may also require repair or replacement."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-treatment",
+            "locator": "Treatment286–292",
+            "assessment": "Type A emergency graft and possible valve repair/replacement."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Treatment149–158",
+            "assessment": "Immediate A surgery with graft/valve decisions."
+          }
+        ]
+      },
+      {
+        "id": "treatment-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "无并发症的B型常先在严密监护下使用控制心率和血压的药物。若发生破裂、器官缺血、持续疼痛或血压难以控制等问题，可能需要介入或手术。",
+          "en": "Uncomplicated type B is often initially treated with medicines controlling heart rate and blood pressure under close monitoring. Rupture, impaired organ perfusion, persistent pain or uncontrolled blood pressure may require intervention or surgery."
+        },
+        "supports": [
+          {
+            "source_id": "ad-acc-guideline",
+            "locator": "Point7 Type B acute dissection",
+            "assessment": "Uncomplicated B initially medical; rupture, malperfusion, pain and hypertension intervention indications."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Treatment149–161",
+            "assessment": "Medical B versus urgent complicated B intervention."
+          },
+          {
+            "source_id": "ad-south-england-sop",
+            "locator": "pp4 and10 complicated type B",
+            "assessment": "UK regional protocol corroborates urgent rupture/malperfusion intervention; not claimed to enumerate every US indication."
+          }
+        ]
+      },
+      {
+        "id": "treatment-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "介入支架移植物可从血管内覆盖破口；是否适合取决于病变位置和血管形态。修复一段主动脉不等于其余主动脉今后不会变化。",
+          "en": "An endovascular stent graft can cover the tear from inside the vessel. Suitability depends on the location and anatomy. Repair of one segment does not prevent future changes elsewhere in the aorta."
+        },
+        "supports": [
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Treatment159–161; Outlook177; Living With201",
+            "assessment": "Endovascular repair and residual disease surveillance."
+          },
+          {
+            "source_id": "ad-acc-guideline",
+            "locator": "Point7 Type B and long-term surveillance",
+            "assessment": "Anatomical suitability and remaining aortic disease after repair."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-aortic-dissection-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "伴破裂的降主动脉夹层属于有并发症的B型，需要紧急处理；美国和欧洲指南均支持及时修复。血管形态合适时常选腔内支架移植物，形态不合适或其他病情复杂时由主动脉团队选择开放或联合手术。",
+          "en": "A descending dissection with rupture is complicated typeB disease requiring emergency management; US and European guidelines support prompt repair. A stent graft is often preferred when anatomy permits; an aortic team selects open or combined repair when anatomy or other complexities require it."
+        },
+        "supports": [
+          {
+            "source_id": "ad-acc-guideline",
+            "locator": "TypeB acute aortic dissection",
+            "assessment": "Intervention for rupture; endovascular preferred over open in suitable anatomy."
+          },
+          {
+            "source_id": "ad-esc-2024",
+            "locator": "9.3.1.4 Acute typeB interventional treatment",
+            "assessment": "Complicated rupture requires repair; selection by anatomy and procedural context."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "Guidelines and MSD share registry/upstream evidence. Independent editorial source groups are not independent clinical trials. No universal survival percentage, outpatient observation for rupture, or single repair technique is asserted; concrete anatomy and stability conditions retained."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p001-aortic-dissection-medications",
+    "target": {
+      "kind": "condition",
+      "id": "aortic-dissection",
+      "section": "medications"
+    },
+    "content_sha256": "18cebdfaeb8f020ac6e12f3019617d6d739f3986ea3514bf55bb8573fd8e7fa3",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "ad-mayo-beta",
+        "source_metadata_sha256": "51c64bd1ca2c7d0ce82e65c23b26939ab98f602d3c6749ca452282e6869712ff",
+        "locator": "How beta blockers work264–265 | Side effects and cautions292–310 | Side effects292–310 | Side effects/cautions305–310",
+        "source_version": "2025-03-27",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original How they work264–265, Side effects292–310 read: fatigue/cold extremities/dizziness and abrupt cessation warning. Same Mayo group as disease pages; no independent-pair credit between Mayo pages.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "medications-0: Slower, less forceful contraction reduces BP. medications-3: Explicit abrupt beta-blocker withdrawal warning. medications-tolerance: Same common adverse effects and discuss treatment rather than abrupt cessation; driving instruction specifically from NHS. medications-conditions: Asthma caution and discussion with care team; not all asthma treated as an absolute class contraindication."
+      },
+      {
+        "source_id": "ad-mayo-treatment",
+        "source_metadata_sha256": "f93f3849557ea58534343694293b6ab73f6e445d979ee39271b6e58e02cfbc41",
+        "locator": "Treatment286–298 | After treatment298",
+        "source_version": "2025-09-20",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original Diagnosis269–282 and Treatment286–298, reference list316–321 read. Adult acute A/B dissection and follow-up. Same Mayo editorial group; shares UpToDate/AskMayoExpert/Ferri upstream with symptom page.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "medications-0: Medical BP/HR reduction is distinguished from physical surgical repair. medications-2: Long-term BP medicine and follow-up."
+      },
+      {
+        "source_id": "ad-acc-guideline",
+        "source_metadata_sha256": "fc603113a88b455a66be846c60d9fcd4dc83355d9db972f881ce3d33e4748a2d",
+        "locator": "Point7 Medical therapy | Point8 Pregnancy in aortopathy",
+        "source_version": "2022-11-02",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-ACC-AHA",
+        "upstream_evidence": [
+          "Original ACC official Key Perspectives Part2 summary read, paragraphs6–8, web161–202. Especially AAS acute management, surveillance and pregnancy. Summary only; full guideline was not attested read. Joint2022 ACC/AHA guideline; part1, part2 and guideline physical-activity extract are one editorial group.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "medications-1: Monitored acute beta blockade with additional drugs and preserved organ perfusion. medications-pregnancy: Counselling, imaging and multidisciplinary treatment before/during/after pregnancy."
+      },
+      {
+        "source_id": "ad-south-england-sop",
+        "source_metadata_sha256": "c5ede37dce4ae78f7a10917da856acdcea3c00d14d23b6e8c9a43bf1620d9ed6",
+        "locator": "p4 Principles202–221",
+        "source_version": "2024-03-01",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "GB",
+        "independence_group": "UK-SOUTH-ENGLAND-AORTIC-NETWORK",
+        "upstream_evidence": [
+          "Original PDF text read cover, pp1–6 and10: objectives; pain may have disappeared p3; risk assessment; anti-impulse therapy p4; CTA p5; urgent A/complicated B care p10. Review due2027-03-01. Regional adult hospital/transfer protocol, not a patient dosing recipe. Flowchart-layout screenshot retrieval was not usable; no branching score/transfer category or dosing algorithm reproduced.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "medications-1: Independent regional protocol gives same acute principles; no dose/target transcribed."
+      },
+      {
+        "source_id": "ad-cleveland",
+        "source_metadata_sha256": "428bd26e20094e4948551b2bcfe603af9257ae12ccd3a8f418ea2a12b03f548f",
+        "locator": "Living With195–201",
+        "source_version": "2024-09-26",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-CLEVELAND",
+        "upstream_evidence": [
+          "Original page read: Overview55–71; Symptoms/Causes75–128; Diagnosis133–144; Treatment149–161; Outlook175–178; Prevention182–191; Living With195–219; References246–255. Adult/general education. References AHA, StatPearls, Merck and observational studies; separate institutional writing, not independent trials.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "medications-2: Lifelong BP/HR control; a medication/BP list is low-risk organization of that follow-up."
+      },
+      {
+        "source_id": "ad-nhlbi-living",
+        "source_metadata_sha256": "2951be53878ed1aa8fbf8cc79634dde0945522c6d078671e687b9ae7a84bf182",
+        "locator": "Living With110–113",
+        "source_version": "2022-03-24",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-NIH",
+        "upstream_evidence": [
+          "Original Aortic Aneurysm—Living With page read, web94–113: surveillance, complications, medicines and lifting precautions. Applied only to shared aortic mechanisms and recovery precautions; not used as dissection-specific operative guidance. NIH subdivisions share one editorial group.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "medications-3: Continue prescribed medicines after aortic repair."
+      },
+      {
+        "source_id": "ad-south-tees-beta",
+        "source_metadata_sha256": "bf9c1faad1d6f3ffadb89fccc6e9513a90d7a7a4511c93b2a0179278407037fe",
+        "locator": "What else should I know about this medicine? web283",
+        "source_version": "2024-01-09",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "GB",
+        "independence_group": "UK-SOUTH-TEES",
+        "upstream_evidence": [
+          "Original Pharmacy leaflet actually read: What else should I know about this medicine? (web283), explicit do not stop suddenly; source version2/ST0568, updated2024-01-09. Locally authored pharmacy material, distinct from national NHS medicines page; no independent-trial claim.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "medications-3: Explicit separate pharmacy instruction never stop suddenly; discuss with clinician."
+      },
+      {
+        "source_id": "ad-esc-pregnancy-2025",
+        "source_metadata_sha256": "25420705c8fab3c2b9b94852f1e7faa29172786b985839d0717a181bfd5a805c",
+        "locator": "8.6 management2862–2868; pre-pregnancy3978",
+        "source_version": "Original2025 guideline HTML sections8.1–8.4 and8.6 actually read (web2818–2868) and pre-pregnancy overview3978: risk after root repair, pregnancy/postpartum monitoring, aortic/Pregnancy Heart Team, pre-pregnancy whole-aorta imaging. No claim of reading every guideline section. Exact publication day not extracted. Independent ESC writing with overlapping studies/guidelines, not independent trial replication.",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "MULTI_REGION",
+        "independence_group": "EU-ESC",
+        "upstream_evidence": [
+          "Original2025 guideline HTML sections8.1–8.4 and8.6 actually read (web2818–2868) and pre-pregnancy overview3978: risk after root repair, pregnancy/postpartum monitoring, aortic/Pregnancy Heart Team, pre-pregnancy whole-aorta imaging. No claim of reading every guideline section. Exact publication day not extracted. Independent ESC writing with overlapping studies/guidelines, not independent trial replication.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "medications-pregnancy: Whole-aorta assessment, medication optimization and pregnancy/aortic team."
+      },
+      {
+        "source_id": "ad-nhs-beta",
+        "source_metadata_sha256": "b960f335f281496df03873bce6975bcc8cb20364ca44202d06465f31e2158fbf",
+        "locator": "Side effects54–68 | Who can and cannot take beta blockers77–85",
+        "source_version": "2026-09-04",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Original page read sections About15–28, Side effects54–68, suitability/pregnancy77–85, interactions88–98. Displayed last review2026-09-04. Medicine-class information, not aortic-specific efficacy; independently authored national NHS material.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "medications-tolerance: Fatigue/cold extremities/dizziness; ask doctor/pharmacist and avoid driving while dizzy. medications-conditions: Asthma/COPD, heart block and suitability are reasons to tell clinician; individualized selection."
+      },
+      {
+        "source_id": "ad-acc-medical-extract",
+        "source_metadata_sha256": "310b1a31835b1bf272fc5d91f2bfda5308ca4e3672e2b1524b8a80d0ac61326d",
+        "locator": "Section7.3.1 Recommendation-Specific Supportive Text item3",
+        "source_version": "2022-11-02",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-ACC-AHA",
+        "upstream_evidence": [
+          "Official JACC indexed section7.3.1 Initial Medical Management of AAS, Recommendation-Specific Supportive Text item3 actually read: beta-blocker cautions include acute aortic regurgitation, heart block and bradycardia; alternatives are clinician decisions. Retrieval limited to this official indexed passage; direct full article not attested. Same2022 ACC/AHA guideline and group as summaries/slide set, not independent of them.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "medications-conditions: Explicit heart block/bradycardia cautions independently corroborate NHS; the asthma branch is corroborated by Mayo."
+      }
+    ],
+    "claims": [
+      {
+        "id": "medications-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "药物主要减小心脏每次搏动对血管壁的压力；它们不能把已经形成的撕裂直接粘合。",
+          "en": "Medicines mainly reduce the force of each heartbeat against the wall; they do not directly seal an existing tear."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-beta",
+            "locator": "How beta blockers work264–265",
+            "assessment": "Slower, less forceful contraction reduces BP."
+          },
+          {
+            "source_id": "ad-mayo-treatment",
+            "locator": "Treatment286–298",
+            "assessment": "Medical BP/HR reduction is distinguished from physical surgical repair."
+          }
+        ]
+      },
+      {
+        "id": "medications-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "急性期常在监护下使用β受体阻滞剂等药物减慢心率并降低血压，需要时再增加其他降压药。具体速度和目标要兼顾脑、肾等器官供血。",
+          "en": "In acute care, medicines such as beta blockers slow the heart and lower blood pressure under monitoring, with additional blood-pressure medicines when needed. The rate and target must preserve blood flow to the brain, kidneys and other organs."
+        },
+        "supports": [
+          {
+            "source_id": "ad-acc-guideline",
+            "locator": "Point7 Medical therapy",
+            "assessment": "Monitored acute beta blockade with additional drugs and preserved organ perfusion."
+          },
+          {
+            "source_id": "ad-south-england-sop",
+            "locator": "p4 Principles202–221",
+            "assessment": "Independent regional protocol gives same acute principles; no dose/target transcribed."
+          }
+        ]
+      },
+      {
+        "id": "medications-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "出院后常需要长期降压治疗。把用药清单和家庭血压记录带到复诊，由医生评估控制效果、耐受性及是否调整。",
+          "en": "Long-term blood-pressure treatment is commonly needed after discharge. Bring a medication list and home blood-pressure record to follow-up so clinicians can assess control, tolerability and adjustments."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-treatment",
+            "locator": "After treatment298",
+            "assessment": "Long-term BP medicine and follow-up."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Living With195–201",
+            "assessment": "Lifelong BP/HR control; a medication/BP list is low-risk organization of that follow-up."
+          }
+        ]
+      },
+      {
+        "id": "medications-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "接受夹层手术不等于可以自行停药。β受体阻滞剂应按处方使用，不要突然停用。",
+          "en": "Repair does not mean medicines can be stopped on your own. Take beta blockers as prescribed and do not stop them abruptly."
+        },
+        "supports": [
+          {
+            "source_id": "ad-nhlbi-living",
+            "locator": "Living With110–113",
+            "assessment": "Continue prescribed medicines after aortic repair."
+          },
+          {
+            "source_id": "ad-mayo-beta",
+            "locator": "Side effects and cautions292–310",
+            "assessment": "Explicit abrupt beta-blocker withdrawal warning."
+          },
+          {
+            "source_id": "ad-south-tees-beta",
+            "locator": "What else should I know about this medicine? web283",
+            "assessment": "Explicit separate pharmacy instruction never stop suddenly; discuss with clinician."
+          }
+        ]
+      },
+      {
+        "id": "medications-pregnancy",
+        "kind": "action",
+        "text": {
+          "zh-CN": "准备怀孕时，应让心血管与产科团队提前复核现用药物和整条主动脉的状况；孕期及产后的用药和监测需要共同安排。",
+          "en": "Before pregnancy, have cardiovascular and obstetric teams review current medicines and the whole aorta; medication and monitoring during pregnancy and after delivery need a coordinated plan."
+        },
+        "supports": [
+          {
+            "source_id": "ad-acc-guideline",
+            "locator": "Point8 Pregnancy in aortopathy",
+            "assessment": "Counselling, imaging and multidisciplinary treatment before/during/after pregnancy."
+          },
+          {
+            "source_id": "ad-esc-pregnancy-2025",
+            "locator": "8.6 management2862–2868; pre-pregnancy3978",
+            "assessment": "Whole-aorta assessment, medication optimization and pregnancy/aortic team."
+          }
+        ]
+      },
+      {
+        "id": "medications-tolerance",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "β受体阻滞剂可能带来乏力、手脚发冷或头晕。如果不适持续或影响日常生活，应联系医生或药师讨论，而不是自行减量；头晕时不要驾驶。",
+          "en": "Beta blockers may cause tiredness, cold hands or feet, or dizziness. Discuss persistent or troublesome effects with a clinician or pharmacist rather than changing the dose yourself; do not drive while dizzy."
+        },
+        "supports": [
+          {
+            "source_id": "ad-nhs-beta",
+            "locator": "Side effects54–68",
+            "assessment": "Fatigue/cold extremities/dizziness; ask doctor/pharmacist and avoid driving while dizzy."
+          },
+          {
+            "source_id": "ad-mayo-beta",
+            "locator": "Side effects292–310",
+            "assessment": "Same common adverse effects and discuss treatment rather than abrupt cessation; driving instruction specifically from NHS."
+          }
+        ]
+      },
+      {
+        "id": "medications-conditions",
+        "kind": "action",
+        "text": {
+          "zh-CN": "有哮喘、慢性呼吸系统疾病、心率过慢或心脏传导问题时，应先告诉治疗团队，由医生判断β受体阻滞剂是否适合及如何选药；这不等于所有哮喘患者都绝对不能使用。",
+          "en": "Tell the treatment team about asthma, chronic respiratory disease, a slow heart rate or a heart-conduction problem so a clinician can assess suitability and select treatment. This does not mean every person with asthma is absolutely unable to take a beta blocker."
+        },
+        "supports": [
+          {
+            "source_id": "ad-nhs-beta",
+            "locator": "Who can and cannot take beta blockers77–85",
+            "assessment": "Asthma/COPD, heart block and suitability are reasons to tell clinician; individualized selection."
+          },
+          {
+            "source_id": "ad-mayo-beta",
+            "locator": "Side effects/cautions305–310",
+            "assessment": "Asthma caution and discussion with care team; not all asthma treated as an absolute class contraindication."
+          },
+          {
+            "source_id": "ad-acc-medical-extract",
+            "locator": "Section7.3.1 Recommendation-Specific Supportive Text item3",
+            "assessment": "Explicit heart block/bradycardia cautions independently corroborate NHS; the asthma branch is corroborated by Mayo."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Critical actions, thresholds, benefits and risks have source-specific references from at least two distinct writing groups; ordinary explanations/information organization may use one. Same-institution or joint-guideline variants are not independent.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "US ACC/AHA and South England acute protocols differ in numeric treatment targets; none is turned into a home target or dose. Pregnancy recommendations retain US2022/ESC2025 provenance. Current local teams determine individual care."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/retinal_targeted",
+      "reviewer": "/root",
+      "checked_at": "2026-10-02",
+      "original_sources_reopened": [
+        "ad-acc-activity",
+        "ad-acc-family",
+        "ad-acc-guideline",
+        "ad-acc-medical-extract",
+        "ad-cleveland",
+        "ad-esc-pregnancy-2025",
+        "ad-gstt-recovery",
+        "ad-mayo-beta",
+        "ad-mayo-symptoms",
+        "ad-mayo-treatment",
+        "ad-nhlbi-food",
+        "ad-nhlbi-living",
+        "ad-nhs-beta",
+        "ad-niddk-ckd-food",
+        "ad-south-england-sop",
+        "ad-south-tees-beta"
+      ],
+      "findings": [
+        {
+          "id": "AD-shared-source-metadata",
+          "status": "resolved",
+          "resolution": "Renamed the new NHLBI read to ad-nhlbi-food; original mi-nhlbi-food and its existing medical evidence remain byte-equivalent."
+        },
+        {
+          "id": "AD-abrupt-withdrawal",
+          "status": "resolved",
+          "resolution": "Added directly read South Tees pharmacy instruction, independently corroborating the precise Mayo abrupt-beta-blocker-withdrawal caution; general NIH adherence text is no longer the only second component."
+        },
+        {
+          "id": "AD-medication-suitability",
+          "status": "resolved",
+          "resolution": "Added bilingual asthma/respiratory/slow-rate/conduction selection conditions, with NHS, Mayo and the precise ACC/AHA original indexed extract. Asthma is not labelled a blanket absolute prohibition."
+        }
+      ],
+      "resolution": "One independent full read of the initial58 claims and original material, followed by targeted acceptance of one added medication-condition claim and precise withdrawal/source-ID fixes. All14 sections are supported within their explicit populations and scopes. No clinician signature is implied."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-aortic-dissection-independent.json"
+  },
+  {
+    "id": "p001-aortic-dissection-diet",
+    "target": {
+      "kind": "condition",
+      "id": "aortic-dissection",
+      "section": "diet"
+    },
+    "content_sha256": "dd1bbf1aaee9e3cf3313bbf9d2b6ab3244db66957b6f01199e68d20469e64b09",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "ad-mayo-treatment",
+        "source_metadata_sha256": "f93f3849557ea58534343694293b6ab73f6e445d979ee39271b6e58e02cfbc41",
+        "locator": "Treatment286–298",
+        "source_version": "2025-09-20",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original Diagnosis269–282 and Treatment286–298, reference list316–321 read. Adult acute A/B dissection and follow-up. Same Mayo editorial group; shares UpToDate/AskMayoExpert/Ferri upstream with symptom page.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "diet-0: Hospital drug/repair approach, no dietary repair therapy. diet-2: Food/supplements are not the repair/BP/surveillance treatment pathway."
+      },
+      {
+        "source_id": "ad-nhlbi-food",
+        "source_metadata_sha256": "08b5d7c54fcba45bf3c40d99f0de1e9d33a4c33f6ccca44e04385b0f8ee7485d",
+        "locator": "DASH99–100 | Healthy foods103–119; Sodium124–135",
+        "source_version": "2025-12-10",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-NIH",
+        "upstream_evidence": [
+          "Original Heart-Healthy Living—Choose Heart-Healthy Foods read: DASH99–100, food groups103–119, sodium124–135. General cardiovascular nutrition, not a dissection repair treatment or a universal renal diet. NIH subdivisions are one group.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "diet-0: Nutrition supports BP, not anatomical repair. diet-1: Food groups and sodium/BP relationship."
+      },
+      {
+        "source_id": "ad-mayo-symptoms",
+        "source_metadata_sha256": "4ffa5f980c1e23ed7de5157f1ebad0cd83f5760adcf4cb72cc8eea41e9b2ae49",
+        "locator": "Prevention344–354",
+        "source_version": "2025-09-20",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original Overview, Symptoms, When to see a doctor, Causes, Risk factors, Complications, Prevention and reference list read; web lines269–354,366–372. Adult/general aortic dissection education. Same Mayo authorship group as treatment and beta-blocker pages; references include UpToDate, AskMayoExpert2023 and Ferri2025.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "diet-1: Low-salt, fruit/vegetable/whole-grain cardiovascular diet."
+      },
+      {
+        "source_id": "ad-cleveland",
+        "source_metadata_sha256": "428bd26e20094e4948551b2bcfe603af9257ae12ccd3a8f418ea2a12b03f548f",
+        "locator": "Management149–161; Living With195–201",
+        "source_version": "2024-09-26",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-CLEVELAND",
+        "upstream_evidence": [
+          "Original page read: Overview55–71; Symptoms/Causes75–128; Diagnosis133–144; Treatment149–161; Outlook175–178; Prevention182–191; Living With195–219; References246–255. Adult/general education. References AHA, StatPearls, Merck and observational studies; separate institutional writing, not independent trials.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "diet-2: Supports bounded statement about these treatment sources, not a claim of a comprehensive supplement systematic review."
+      },
+      {
+        "source_id": "ad-niddk-ckd-food",
+        "source_metadata_sha256": "3514cff8b49dfc8e43684e7828ec85b4c06ebf3913383592ac3b9754214e82c6",
+        "locator": "Liquids144–146; Protein153–157; individualized plans164–170; Track liquids185–187",
+        "source_version": "Original Why healthy eating129–134, Liquids144–146, Protein153–157, individualized plan164–170, Track liquids185–187 and review date276 read. Last reviewed2025-01, exact day absent. Only people with coexisting chronic kidney disease; not extrapolated to all acute kidney injuries. Same NIH group as NHLBI.",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-NIH",
+        "upstream_evidence": [
+          "Original Why healthy eating129–134, Liquids144–146, Protein153–157, individualized plan164–170, Track liquids185–187 and review date276 read. Last reviewed2025-01, exact day absent. Only people with coexisting chronic kidney disease; not extrapolated to all acute kidney injuries. Same NIH group as NHLBI.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "diet-3: Specifically coexisting CKD; individual nutrition/fluid needs, no extrapolation to all dissections."
+      },
+      {
+        "source_id": "ad-gstt-recovery",
+        "source_metadata_sha256": "baeb08452b540b10d70cf8dfbe947fe7019566f1433c619f8705d52a7068fbcd",
+        "locator": "Eating and drinking156–167",
+        "source_version": "Original recovery/activity108–155 and Eating and drinking156–167 read. Resource5456/VER1, published2023-12, review2026-12; exact day not displayed. Applied only after open cardiac surgery for appetite, balanced food and existing special diets. Locally authored hospital material; national NHS medicine page is not treated as a separate trial. No sternotomy lifting-weight limits extrapolated to all dissections.",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "GB",
+        "independence_group": "UK-GSTT",
+        "upstream_evidence": [
+          "Original recovery/activity108–155 and Eating and drinking156–167 read. Resource5456/VER1, published2023-12, review2026-12; exact day not displayed. Applied only after open cardiac surgery for appetite, balanced food and existing special diets. Locally authored hospital material; national NHS medicine page is not treated as a separate trial. No sternotomy lifting-weight limits extrapolated to all dissections.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "diet-recovery: Post-open-heart-surgery appetite/taste, small meals and existing special diets. Ordinary recovery information, not a critical medical intervention."
+      }
+    ],
+    "claims": [
+      {
+        "id": "diet-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "饮食服务于血压和整体心血管风险管理，不能修补夹层；急性治疗以医院处理为主。",
+          "en": "Diet supports blood-pressure and overall cardiovascular risk management; it cannot repair a dissection. Acute treatment is hospital-based."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-treatment",
+            "locator": "Treatment286–298",
+            "assessment": "Hospital drug/repair approach, no dietary repair therapy."
+          },
+          {
+            "source_id": "ad-nhlbi-food",
+            "locator": "DASH99–100",
+            "assessment": "Nutrition supports BP, not anatomical repair."
+          }
+        ]
+      },
+      {
+        "id": "diet-1",
+        "kind": "benefit",
+        "text": {
+          "zh-CN": "恢复期可把蔬菜、水果、全谷物及适量瘦肉或其他蛋白质作为日常饮食基础，减少高盐加工食品；减少盐有助于血压管理。",
+          "en": "During recovery, build meals around vegetables, fruit, whole grains and appropriate lean protein, and reduce salty processed foods. Less sodium supports blood-pressure control."
+        },
+        "supports": [
+          {
+            "source_id": "ad-nhlbi-food",
+            "locator": "Healthy foods103–119; Sodium124–135",
+            "assessment": "Food groups and sodium/BP relationship."
+          },
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "Prevention344–354",
+            "assessment": "Low-salt, fruit/vegetable/whole-grain cardiovascular diet."
+          }
+        ]
+      },
+      {
+        "id": "diet-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "不要为了“补血管”大量服用补品。现有夹层治疗资料的核心是修复、血压控制和影像随访，没有把某种食物列为修复血管撕裂的治疗。",
+          "en": "Do not rely on supplements to “rebuild the artery.” The treatment sources focus on repair, blood-pressure control and imaging follow-up; they do not identify a food that heals the tear."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-treatment",
+            "locator": "Treatment286–298",
+            "assessment": "Food/supplements are not the repair/BP/surveillance treatment pathway."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Management149–161; Living With195–201",
+            "assessment": "Supports bounded statement about these treatment sources, not a claim of a comprehensive supplement systematic review."
+          }
+        ]
+      },
+      {
+        "id": "diet-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "合并慢性肾病时，饮水量、蛋白质和盐的安排取决于肾功能及营养状态，需要沿用或更新自己的肾病饮食计划；不能把限水食谱用于所有夹层患者。",
+          "en": "With coexisting chronic kidney disease, fluid, protein and salt plans depend on kidney function and nutritional status. Existing renal nutrition plans may need updating; fluid restriction is not a diet for everyone with dissection."
+        },
+        "supports": [
+          {
+            "source_id": "ad-niddk-ckd-food",
+            "locator": "Liquids144–146; Protein153–157; individualized plans164–170; Track liquids185–187",
+            "assessment": "Specifically coexisting CKD; individual nutrition/fluid needs, no extrapolation to all dissections."
+          }
+        ]
+      },
+      {
+        "id": "diet-recovery",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "接受开胸心脏手术后，短期食欲和味觉改变并不少见。恢复期可少量多餐，营养跟不上时请护理团队或营养师帮助；原本因其他疾病使用的特别饮食也要一并考虑。",
+          "en": "After open cardiac surgery, appetite and taste may change temporarily. Small, frequent meals can help during recovery; the nursing team or dietitian can help if intake is inadequate, taking existing diets for other conditions into account."
+        },
+        "supports": [
+          {
+            "source_id": "ad-gstt-recovery",
+            "locator": "Eating and drinking156–167",
+            "assessment": "Post-open-heart-surgery appetite/taste, small meals and existing special diets. Ordinary recovery information, not a critical medical intervention."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Critical actions, thresholds, benefits and risks have source-specific references from at least two distinct writing groups; ordinary explanations/information organization may use one. Same-institution or joint-guideline variants are not independent.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "US ACC/AHA and South England acute protocols differ in numeric treatment targets; none is turned into a home target or dose. Pregnancy recommendations retain US2022/ESC2025 provenance. Current local teams determine individual care."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/retinal_targeted",
+      "reviewer": "/root",
+      "checked_at": "2026-10-02",
+      "original_sources_reopened": [
+        "ad-acc-activity",
+        "ad-acc-family",
+        "ad-acc-guideline",
+        "ad-acc-medical-extract",
+        "ad-cleveland",
+        "ad-esc-pregnancy-2025",
+        "ad-gstt-recovery",
+        "ad-mayo-beta",
+        "ad-mayo-symptoms",
+        "ad-mayo-treatment",
+        "ad-nhlbi-food",
+        "ad-nhlbi-living",
+        "ad-nhs-beta",
+        "ad-niddk-ckd-food",
+        "ad-south-england-sop",
+        "ad-south-tees-beta"
+      ],
+      "findings": [
+        {
+          "id": "AD-shared-source-metadata",
+          "status": "resolved",
+          "resolution": "Renamed the new NHLBI read to ad-nhlbi-food; original mi-nhlbi-food and its existing medical evidence remain byte-equivalent."
+        },
+        {
+          "id": "AD-abrupt-withdrawal",
+          "status": "resolved",
+          "resolution": "Added directly read South Tees pharmacy instruction, independently corroborating the precise Mayo abrupt-beta-blocker-withdrawal caution; general NIH adherence text is no longer the only second component."
+        },
+        {
+          "id": "AD-medication-suitability",
+          "status": "resolved",
+          "resolution": "Added bilingual asthma/respiratory/slow-rate/conduction selection conditions, with NHS, Mayo and the precise ACC/AHA original indexed extract. Asthma is not labelled a blanket absolute prohibition."
+        }
+      ],
+      "resolution": "One independent full read of the initial58 claims and original material, followed by targeted acceptance of one added medication-condition claim and precise withdrawal/source-ID fixes. All14 sections are supported within their explicit populations and scopes. No clinician signature is implied."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-aortic-dissection-independent.json"
+  },
+  {
+    "id": "p001-aortic-dissection-daily_care",
+    "target": {
+      "kind": "condition",
+      "id": "aortic-dissection",
+      "section": "daily_care"
+    },
+    "content_sha256": "9c1c9683dc51a475ac89ac5ba53859e45f6d99d9206fe761af5be2a63fafa85d",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "ad-cleveland",
+        "source_metadata_sha256": "428bd26e20094e4948551b2bcfe603af9257ae12ccd3a8f418ea2a12b03f548f",
+        "locator": "Living With195–201 | Living With195–201; Prevention182–191 | Living With198–201 | Symptoms77–89; Living With219",
+        "source_version": "2024-09-26",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-CLEVELAND",
+        "upstream_evidence": [
+          "Original page read: Overview55–71; Symptoms/Causes75–128; Diagnosis133–144; Treatment149–161; Outlook175–178; Prevention182–191; Living With195–219; References246–255. Adult/general education. References AHA, StatPearls, Merck and observational studies; separate institutional writing, not independent trials.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "daily_care-0: BP, gradual activity and follow-up care. daily_care-1: BP treatment/follow-up underpin ordinary record organization; time/reading/symptom format is editorial convenience, not a prescribed clinical threshold. daily_care-2: Walking and other moderate activities; heavy weight avoidance, review plan. daily_care-3: Emergency care and retained follow-up information; documents are ordinary organization, not prerequisite to calling."
+      },
+      {
+        "source_id": "ad-acc-activity",
+        "source_metadata_sha256": "3da7fceea980857cda17903929f8b5298122106fe6990d8df1f446a9e331a292",
+        "locator": "Official slide set PDF pp214–215, recommendations1–4; indexed section10 supportive prose",
+        "source_version": "2022-11-02",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-ACC-AHA",
+        "upstream_evidence": [
+          "Official AHA-hosted guideline slide set actually read PDF pp214–215 (zero-based213–214), printed slides214–215: Physical Activity and Quality of Life recommendations1–4, lines2567–2592. Corroborating official JACC indexed supportive prose also read; direct JACC full article403 and PMC recaptcha are not full-read attestations. Same2022 ACC/AHA guideline group as summaries; no numerical exercise prescription imported.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "daily_care-2: Heavy isometric/Valsalva/burst/collision activity precautions directly read in official PDF. Individualized intensity described in official indexed supportive prose; no claim of full-article reading."
+      },
+      {
+        "source_id": "ad-nhlbi-living",
+        "source_metadata_sha256": "2951be53878ed1aa8fbf8cc79634dde0945522c6d078671e687b9ae7a84bf182",
+        "locator": "Living With112",
+        "source_version": "2022-03-24",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-NIH",
+        "upstream_evidence": [
+          "Original Aortic Aneurysm—Living With page read, web94–113: surveillance, complications, medicines and lifting precautions. Applied only to shared aortic mechanisms and recovery precautions; not used as dissection-specific operative guidance. NIH subdivisions share one editorial group.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "daily_care-2: Avoid heavy exertion/BP-raising strain; aneurysm-origin advice applied to shared wall-stress precaution."
+      },
+      {
+        "source_id": "ad-mayo-symptoms",
+        "source_metadata_sha256": "4ffa5f980c1e23ed7de5157f1ebad0cd83f5760adcf4cb72cc8eea41e9b2ae49",
+        "locator": "Symptoms/When to see a doctor280–298",
+        "source_version": "2025-09-20",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original Overview, Symptoms, When to see a doctor, Causes, Risk factors, Complications, Prevention and reference list read; web lines269–354,366–372. Adult/general aortic dissection education. Same Mayo authorship group as treatment and beta-blocker pages; references include UpToDate, AskMayoExpert2023 and Ferri2025.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "daily_care-3: Sudden severe pain, fainting or stroke features require emergency action."
+      }
+    ],
+    "claims": [
+      {
+        "id": "daily_care-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "恢复后的护理重点是稳定血压、逐步恢复活动，并及时识别新的急症。",
+          "en": "After the acute episode, care focuses on stable blood pressure, gradual activity and prompt recognition of new emergencies."
+        },
+        "supports": [
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Living With195–201",
+            "assessment": "BP, gradual activity and follow-up care."
+          }
+        ]
+      },
+      {
+        "id": "daily_care-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "与治疗团队确定家庭血压记录和复查安排，记录测量时间、读数及同时出现的不适，让复诊讨论有依据。",
+          "en": "Agree on home blood-pressure recording and follow-up with the care team. Record the time, reading and associated symptoms to support decisions at review."
+        },
+        "supports": [
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Living With195–201; Prevention182–191",
+            "assessment": "BP treatment/follow-up underpin ordinary record organization; time/reading/symptom format is editorial convenience, not a prescribed clinical threshold."
+          }
+        ]
+      },
+      {
+        "id": "daily_care-2",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "在获准后逐步进行步行等适量活动。重物搬举、憋气用力及高强度对抗活动可能使血压突然升高，恢复到哪种强度需要结合修复情况讨论。",
+          "en": "When cleared, build up moderate activity such as walking. Heavy lifting, straining with breath-holding and intense competitive activity can sharply raise blood pressure; discuss intensity in relation to the repair and remaining disease."
+        },
+        "supports": [
+          {
+            "source_id": "ad-acc-activity",
+            "locator": "Official slide set PDF pp214–215, recommendations1–4; indexed section10 supportive prose",
+            "assessment": "Heavy isometric/Valsalva/burst/collision activity precautions directly read in official PDF. Individualized intensity described in official indexed supportive prose; no claim of full-article reading."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Living With198–201",
+            "assessment": "Walking and other moderate activities; heavy weight avoidance, review plan."
+          },
+          {
+            "source_id": "ad-nhlbi-living",
+            "locator": "Living With112",
+            "assessment": "Avoid heavy exertion/BP-raising strain; aneurysm-origin advice applied to shared wall-stress precaution."
+          }
+        ]
+      },
+      {
+        "id": "daily_care-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "保留手术或支架信息、影像结果和药物清单。突发胸背腹剧痛、晕厥或卒中样表现时停止活动并呼叫急救，不用日常测压替代急诊。",
+          "en": "Keep repair or stent details, imaging results and the medication list available. Stop activity and call emergency services for sudden severe chest, back or abdominal pain, fainting or stroke-like symptoms; a home blood-pressure check is not a substitute for emergency care."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "Symptoms/When to see a doctor280–298",
+            "assessment": "Sudden severe pain, fainting or stroke features require emergency action."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Symptoms77–89; Living With219",
+            "assessment": "Emergency care and retained follow-up information; documents are ordinary organization, not prerequisite to calling."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Critical actions, thresholds, benefits and risks have source-specific references from at least two distinct writing groups; ordinary explanations/information organization may use one. Same-institution or joint-guideline variants are not independent.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "US ACC/AHA and South England acute protocols differ in numeric treatment targets; none is turned into a home target or dose. Pregnancy recommendations retain US2022/ESC2025 provenance. Current local teams determine individual care."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/retinal_targeted",
+      "reviewer": "/root",
+      "checked_at": "2026-10-02",
+      "original_sources_reopened": [
+        "ad-acc-activity",
+        "ad-acc-family",
+        "ad-acc-guideline",
+        "ad-acc-medical-extract",
+        "ad-cleveland",
+        "ad-esc-pregnancy-2025",
+        "ad-gstt-recovery",
+        "ad-mayo-beta",
+        "ad-mayo-symptoms",
+        "ad-mayo-treatment",
+        "ad-nhlbi-food",
+        "ad-nhlbi-living",
+        "ad-nhs-beta",
+        "ad-niddk-ckd-food",
+        "ad-south-england-sop",
+        "ad-south-tees-beta"
+      ],
+      "findings": [
+        {
+          "id": "AD-shared-source-metadata",
+          "status": "resolved",
+          "resolution": "Renamed the new NHLBI read to ad-nhlbi-food; original mi-nhlbi-food and its existing medical evidence remain byte-equivalent."
+        },
+        {
+          "id": "AD-abrupt-withdrawal",
+          "status": "resolved",
+          "resolution": "Added directly read South Tees pharmacy instruction, independently corroborating the precise Mayo abrupt-beta-blocker-withdrawal caution; general NIH adherence text is no longer the only second component."
+        },
+        {
+          "id": "AD-medication-suitability",
+          "status": "resolved",
+          "resolution": "Added bilingual asthma/respiratory/slow-rate/conduction selection conditions, with NHS, Mayo and the precise ACC/AHA original indexed extract. Asthma is not labelled a blanket absolute prohibition."
+        }
+      ],
+      "resolution": "One independent full read of the initial58 claims and original material, followed by targeted acceptance of one added medication-condition claim and precise withdrawal/source-ID fixes. All14 sections are supported within their explicit populations and scopes. No clinician signature is implied."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-aortic-dissection-independent.json"
+  },
+  {
+    "id": "p001-aortic-dissection-special_populations",
+    "target": {
+      "kind": "condition",
+      "id": "aortic-dissection",
+      "section": "special_populations"
+    },
+    "content_sha256": "07e60c5fb4dac760c56bfbb886eddf864e23c4b4ea1d848d8b5efa5c6b154029",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "ad-acc-guideline",
+        "source_metadata_sha256": "fc603113a88b455a66be846c60d9fcd4dc83355d9db972f881ce3d33e4748a2d",
+        "locator": "Points6 and8; surveillance point7 | Point8 pregnancy; surveillance point7 | Point7 Long-term surveillance after AAS",
+        "source_version": "2022-11-02",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-ACC-AHA",
+        "upstream_evidence": [
+          "Original ACC official Key Perspectives Part2 summary read, paragraphs6–8, web161–202. Especially AAS acute management, surveillance and pregnancy. Summary only; full guideline was not attested read. Joint2022 ACC/AHA guideline; part1, part2 and guideline physical-activity extract are one editorial group.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "special_populations-0: Genetic aortopathy/pregnancy/repair affect plans. special_populations-2: Aortic/obstetric multidisciplinary care and pregnancy/postpartum imaging. special_populations-3: Residual disease after repair and medical management requires surveillance."
+      },
+      {
+        "source_id": "ad-acc-family",
+        "source_metadata_sha256": "618268df324688189bae3c84c78a2cfff4bdabde682704351e2a6aa8889398d6",
+        "locator": "Point5 heritable disease, genetic testing and family imaging",
+        "source_version": "2022-11-02",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-ACC-AHA",
+        "upstream_evidence": [
+          "Original official summary read, points2–5: imaging reports, teams, shared decisions, family history, genetic testing and first-degree-relative imaging. Same joint guideline upstream as part2; not counted independently of it.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "special_populations-1: Age alone is insufficient; phenotype, genotype/family history and imaging."
+      },
+      {
+        "source_id": "ad-cleveland",
+        "source_metadata_sha256": "428bd26e20094e4948551b2bcfe603af9257ae12ccd3a8f418ea2a12b03f548f",
+        "locator": "Risk factors98–116; Prevention182–191 | Outlook177; Living With201",
+        "source_version": "2024-09-26",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-CLEVELAND",
+        "upstream_evidence": [
+          "Original page read: Overview55–71; Symptoms/Causes75–128; Diagnosis133–144; Treatment149–161; Outlook175–178; Prevention182–191; Living With195–219; References246–255. Adult/general education. References AHA, StatPearls, Merck and observational studies; separate institutional writing, not independent trials.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "special_populations-1: Heritable risk and family screening; no universal gene test mandate. special_populations-3: Future treatment for residual areas and routine imaging."
+      },
+      {
+        "source_id": "ad-esc-pregnancy-2025",
+        "source_metadata_sha256": "25420705c8fab3c2b9b94852f1e7faa29172786b985839d0717a181bfd5a805c",
+        "locator": "8.1 prior root repair2818; 8.6 management2862–2868",
+        "source_version": "Original2025 guideline HTML sections8.1–8.4 and8.6 actually read (web2818–2868) and pre-pregnancy overview3978: risk after root repair, pregnancy/postpartum monitoring, aortic/Pregnancy Heart Team, pre-pregnancy whole-aorta imaging. No claim of reading every guideline section. Exact publication day not extracted. Independent ESC writing with overlapping studies/guidelines, not independent trial replication.",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "MULTI_REGION",
+        "independence_group": "EU-ESC",
+        "upstream_evidence": [
+          "Original2025 guideline HTML sections8.1–8.4 and8.6 actually read (web2818–2868) and pre-pregnancy overview3978: risk after root repair, pregnancy/postpartum monitoring, aortic/Pregnancy Heart Team, pre-pregnancy whole-aorta imaging. No claim of reading every guideline section. Exact publication day not extracted. Independent ESC writing with overlapping studies/guidelines, not independent trial replication.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "special_populations-2: Risk after prior root repair and pregnancy/postpartum team management."
+      }
+    ],
+    "claims": [
+      {
+        "id": "special_populations-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "遗传性主动脉病、妊娠和既往修复会改变风险判断与长期安排。",
+          "en": "Inherited aortic disease, pregnancy and previous repair change risk assessment and long-term planning."
+        },
+        "supports": [
+          {
+            "source_id": "ad-acc-guideline",
+            "locator": "Points6 and8; surveillance point7",
+            "assessment": "Genetic aortopathy/pregnancy/repair affect plans."
+          }
+        ]
+      },
+      {
+        "id": "special_populations-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "有马凡等遗传综合征者可能较年轻就发病。专科会综合基因、家族史和主动脉影像，讨论本人及家人的监测，而非只按年龄判断风险。",
+          "en": "People with inherited conditions such as Marfan syndrome can be affected at younger ages. Specialists combine genetic findings, family history and imaging to plan monitoring for the person and relatives, rather than using age alone."
+        },
+        "supports": [
+          {
+            "source_id": "ad-acc-family",
+            "locator": "Point5 heritable disease, genetic testing and family imaging",
+            "assessment": "Age alone is insufficient; phenotype, genotype/family history and imaging."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Risk factors98–116; Prevention182–191",
+            "assessment": "Heritable risk and family screening; no universal gene test mandate."
+          }
+        ]
+      },
+      {
+        "id": "special_populations-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "已知主动脉病者准备怀孕时应提前咨询。美国ACC/AHA 2022及欧洲ESC 2025指南均强调，由有主动脉病经验的心血管与产科团队共同安排孕前评估、孕期和产后监测；以前修复过主动脉根部也不代表其余主动脉没有风险。",
+          "en": "People with known aortic disease should seek advice before pregnancy. US ACC/AHA2022 and European ESC2025 guidance both emphasize coordinated aortic and obstetric expertise for pre-pregnancy assessment and monitoring during pregnancy and after delivery. Previous aortic-root repair does not remove risk in the remaining aorta."
+        },
+        "supports": [
+          {
+            "source_id": "ad-acc-guideline",
+            "locator": "Point8 pregnancy; surveillance point7",
+            "assessment": "Aortic/obstetric multidisciplinary care and pregnancy/postpartum imaging."
+          },
+          {
+            "source_id": "ad-esc-pregnancy-2025",
+            "locator": "8.1 prior root repair2818; 8.6 management2862–2868",
+            "assessment": "Risk after prior root repair and pregnancy/postpartum team management."
+          }
+        ]
+      },
+      {
+        "id": "special_populations-3",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "既往夹层或修复患者仍可能在其他主动脉段发生变化；医生安排影像时会检查剩余病变，而不仅看手术伤口是否长好。",
+          "en": "After dissection or repair, other aortic segments can still change. Follow-up imaging assesses remaining disease, not simply whether the surgical wound has healed."
+        },
+        "supports": [
+          {
+            "source_id": "ad-acc-guideline",
+            "locator": "Point7 Long-term surveillance after AAS",
+            "assessment": "Residual disease after repair and medical management requires surveillance."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Outlook177; Living With201",
+            "assessment": "Future treatment for residual areas and routine imaging."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Critical actions, thresholds, benefits and risks have source-specific references from at least two distinct writing groups; ordinary explanations/information organization may use one. Same-institution or joint-guideline variants are not independent.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "US ACC/AHA and South England acute protocols differ in numeric treatment targets; none is turned into a home target or dose. Pregnancy recommendations retain US2022/ESC2025 provenance. Current local teams determine individual care."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/retinal_targeted",
+      "reviewer": "/root",
+      "checked_at": "2026-10-02",
+      "original_sources_reopened": [
+        "ad-acc-activity",
+        "ad-acc-family",
+        "ad-acc-guideline",
+        "ad-acc-medical-extract",
+        "ad-cleveland",
+        "ad-esc-pregnancy-2025",
+        "ad-gstt-recovery",
+        "ad-mayo-beta",
+        "ad-mayo-symptoms",
+        "ad-mayo-treatment",
+        "ad-nhlbi-food",
+        "ad-nhlbi-living",
+        "ad-nhs-beta",
+        "ad-niddk-ckd-food",
+        "ad-south-england-sop",
+        "ad-south-tees-beta"
+      ],
+      "findings": [
+        {
+          "id": "AD-shared-source-metadata",
+          "status": "resolved",
+          "resolution": "Renamed the new NHLBI read to ad-nhlbi-food; original mi-nhlbi-food and its existing medical evidence remain byte-equivalent."
+        },
+        {
+          "id": "AD-abrupt-withdrawal",
+          "status": "resolved",
+          "resolution": "Added directly read South Tees pharmacy instruction, independently corroborating the precise Mayo abrupt-beta-blocker-withdrawal caution; general NIH adherence text is no longer the only second component."
+        },
+        {
+          "id": "AD-medication-suitability",
+          "status": "resolved",
+          "resolution": "Added bilingual asthma/respiratory/slow-rate/conduction selection conditions, with NHS, Mayo and the precise ACC/AHA original indexed extract. Asthma is not labelled a blanket absolute prohibition."
+        }
+      ],
+      "resolution": "One independent full read of the initial58 claims and original material, followed by targeted acceptance of one added medication-condition claim and precise withdrawal/source-ID fixes. All14 sections are supported within their explicit populations and scopes. No clinician signature is implied."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-aortic-dissection-independent.json"
+  },
+  {
+    "id": "p001-aortic-dissection-prognosis_followup",
+    "target": {
+      "kind": "condition",
+      "id": "aortic-dissection",
+      "section": "prognosis_followup"
+    },
+    "content_sha256": "bee90b5e7c2368b4fb46f621bb4a91101ccfcd7f0a741214e83314a33d4c5a68",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "ad-mayo-symptoms",
+        "source_metadata_sha256": "4ffa5f980c1e23ed7de5157f1ebad0cd83f5760adcf4cb72cc8eea41e9b2ae49",
+        "locator": "Overview269–277 | When to see a doctor294–298",
+        "source_version": "2025-09-20",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original Overview, Symptoms, When to see a doctor, Causes, Risk factors, Complications, Prevention and reference list read; web lines269–354,366–372. Adult/general aortic dissection education. Same Mayo authorship group as treatment and beta-blocker pages; references include UpToDate, AskMayoExpert2023 and Ferri2025.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "prognosis_followup-0: Earlier recognition/treatment improves survival. prognosis_followup-3: Sudden severe pain, fainting/stroke features take emergency priority."
+      },
+      {
+        "source_id": "ad-cleveland",
+        "source_metadata_sha256": "428bd26e20094e4948551b2bcfe603af9257ae12ccd3a8f418ea2a12b03f548f",
+        "locator": "Outlook175–178; Living With195–201 | Living With201 | Living With201,219 | Prevention189–191; Living With195–201",
+        "source_version": "2024-09-26",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-CLEVELAND",
+        "upstream_evidence": [
+          "Original page read: Overview55–71; Symptoms/Causes75–128; Diagnosis133–144; Treatment149–161; Outlook175–178; Prevention182–191; Living With195–219; References246–255. Adult/general education. References AHA, StatPearls, Merck and observational studies; separate institutional writing, not independent trials.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "prognosis_followup-0: Outcome varies with type/organ damage; long-term medicine/imaging. prognosis_followup-1: Regular CT/MRI regardless of operation; not only when symptomatic. prognosis_followup-2: Regular scans and provider follow-up instructions; obtaining a discharge plan is low-risk organization. prognosis_followup-3: Discuss changed health/BP difficulty with provider; individualized follow-up."
+      },
+      {
+        "source_id": "ad-acc-guideline",
+        "source_metadata_sha256": "fc603113a88b455a66be846c60d9fcd4dc83355d9db972f881ce3d33e4748a2d",
+        "locator": "Point7 Long-term surveillance after AAS",
+        "source_version": "2022-11-02",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-ACC-AHA",
+        "upstream_evidence": [
+          "Original ACC official Key Perspectives Part2 summary read, paragraphs6–8, web161–202. Especially AAS acute management, surveillance and pregnancy. Summary only; full guideline was not attested read. Joint2022 ACC/AHA guideline; part1, part2 and guideline physical-activity extract are one editorial group.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "prognosis_followup-1: Routine cross-sectional imaging tracks residual dissection; not symptom-only follow-up. prognosis_followup-2: Repair and remaining disease determine follow-up."
+      },
+      {
+        "source_id": "ad-nhs-beta",
+        "source_metadata_sha256": "b960f335f281496df03873bce6975bcc8cb20364ca44202d06465f31e2158fbf",
+        "locator": "Side effects54–68",
+        "source_version": "2026-09-04",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Original page read sections About15–28, Side effects54–68, suitability/pregnancy77–85, interactions88–98. Displayed last review2026-09-04. Medicine-class information, not aortic-specific efficacy; independently authored national NHS material.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "prognosis_followup-3: Troublesome fatigue/dizziness warrants contact."
+      }
+    ],
+    "claims": [
+      {
+        "id": "prognosis_followup-0",
+        "kind": "benefit",
+        "text": {
+          "zh-CN": "及时治疗能改变急性期结局，但夹层通常需要终身随访。恢复速度取决于分型、器官损伤和手术范围。",
+          "en": "Prompt treatment changes the acute outlook, but dissection usually requires lifelong follow-up. Recovery depends on type, organ injury and the extent of repair."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "Overview269–277",
+            "assessment": "Earlier recognition/treatment improves survival."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Outlook175–178; Living With195–201",
+            "assessment": "Outcome varies with type/organ damage; long-term medicine/imaging."
+          }
+        ]
+      },
+      {
+        "id": "prognosis_followup-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "复查CT或MRI用于观察主动脉直径、剩余夹层和修复部位；没有疼痛也不能说明这些部位一定稳定。",
+          "en": "Repeat CT or MRI tracks aortic size, remaining dissection and repaired segments. Absence of pain does not establish that these areas are stable."
+        },
+        "supports": [
+          {
+            "source_id": "ad-acc-guideline",
+            "locator": "Point7 Long-term surveillance after AAS",
+            "assessment": "Routine cross-sectional imaging tracks residual dissection; not symptom-only follow-up."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Living With201",
+            "assessment": "Regular CT/MRI regardless of operation; not only when symptomatic."
+          }
+        ]
+      },
+      {
+        "id": "prognosis_followup-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "影像间隔由是否手术、是否仍有病变及既往变化决定。首次出院时应拿到明确的复查计划，而不是等再次疼痛才返回。",
+          "en": "Imaging intervals depend on repair, residual disease and prior changes. Obtain a clear follow-up plan at discharge rather than waiting for pain to return."
+        },
+        "supports": [
+          {
+            "source_id": "ad-acc-guideline",
+            "locator": "Point7 Long-term surveillance after AAS",
+            "assessment": "Repair and remaining disease determine follow-up."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Living With201,219",
+            "assessment": "Regular scans and provider follow-up instructions; obtaining a discharge plan is low-risk organization."
+          }
+        ]
+      },
+      {
+        "id": "prognosis_followup-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "若血压难以控制、活动耐力明显下降或出现新的不适，应提前联系治疗团队；突然剧痛、晕厥或神经症状则按急救处理。",
+          "en": "Contact the team earlier for difficult blood-pressure control, a marked fall in exercise tolerance or new symptoms. Sudden severe pain, fainting or neurological symptoms require emergency care."
+        },
+        "supports": [
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Prevention189–191; Living With195–201",
+            "assessment": "Discuss changed health/BP difficulty with provider; individualized follow-up."
+          },
+          {
+            "source_id": "ad-nhs-beta",
+            "locator": "Side effects54–68",
+            "assessment": "Troublesome fatigue/dizziness warrants contact."
+          },
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "When to see a doctor294–298",
+            "assessment": "Sudden severe pain, fainting/stroke features take emergency priority."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Critical actions, thresholds, benefits and risks have source-specific references from at least two distinct writing groups; ordinary explanations/information organization may use one. Same-institution or joint-guideline variants are not independent.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "US ACC/AHA and South England acute protocols differ in numeric treatment targets; none is turned into a home target or dose. Pregnancy recommendations retain US2022/ESC2025 provenance. Current local teams determine individual care."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/retinal_targeted",
+      "reviewer": "/root",
+      "checked_at": "2026-10-02",
+      "original_sources_reopened": [
+        "ad-acc-activity",
+        "ad-acc-family",
+        "ad-acc-guideline",
+        "ad-acc-medical-extract",
+        "ad-cleveland",
+        "ad-esc-pregnancy-2025",
+        "ad-gstt-recovery",
+        "ad-mayo-beta",
+        "ad-mayo-symptoms",
+        "ad-mayo-treatment",
+        "ad-nhlbi-food",
+        "ad-nhlbi-living",
+        "ad-nhs-beta",
+        "ad-niddk-ckd-food",
+        "ad-south-england-sop",
+        "ad-south-tees-beta"
+      ],
+      "findings": [
+        {
+          "id": "AD-shared-source-metadata",
+          "status": "resolved",
+          "resolution": "Renamed the new NHLBI read to ad-nhlbi-food; original mi-nhlbi-food and its existing medical evidence remain byte-equivalent."
+        },
+        {
+          "id": "AD-abrupt-withdrawal",
+          "status": "resolved",
+          "resolution": "Added directly read South Tees pharmacy instruction, independently corroborating the precise Mayo abrupt-beta-blocker-withdrawal caution; general NIH adherence text is no longer the only second component."
+        },
+        {
+          "id": "AD-medication-suitability",
+          "status": "resolved",
+          "resolution": "Added bilingual asthma/respiratory/slow-rate/conduction selection conditions, with NHS, Mayo and the precise ACC/AHA original indexed extract. Asthma is not labelled a blanket absolute prohibition."
+        }
+      ],
+      "resolution": "One independent full read of the initial58 claims and original material, followed by targeted acceptance of one added medication-condition claim and precise withdrawal/source-ID fixes. All14 sections are supported within their explicit populations and scopes. No clinician signature is implied."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-aortic-dissection-independent.json"
+  },
+  {
+    "id": "p001-aortic-dissection-complications",
+    "target": {
+      "kind": "condition",
+      "id": "aortic-dissection",
+      "section": "complications"
+    },
+    "content_sha256": "2f573714e9bfddd80b6402429318f8864d1c5dc88dfcd6e2fa7377894af2cdd7",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": null,
+    "checker": null,
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "ad-cleveland",
+        "source_metadata_sha256": "428bd26e20094e4948551b2bcfe603af9257ae12ccd3a8f418ea2a12b03f548f",
+        "locator": "Overview60; Complications120–128 | Symptoms77–89; Complications120–128; Treatment149–161 | Outlook177; Living With201",
+        "source_version": "2024-09-26",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-CLEVELAND",
+        "upstream_evidence": [
+          "Original page read: Overview55–71; Symptoms/Causes75–128; Diagnosis133–144; Treatment149–161; Outlook175–178; Prevention182–191; Living With195–219; References246–255. Adult/general education. References AHA, StatPearls, Merck and observational studies; separate institutional writing, not independent trials.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "complications-0: Rupture or impaired organ flow mechanisms, not universal occurrence. complications-2: Leg symptoms and malperfusion of bowel/kidney/limbs are complications needing urgent assessment. complications-3: Residual aortic changes and surveillance."
+      },
+      {
+        "source_id": "ad-mayo-symptoms",
+        "source_metadata_sha256": "4ffa5f980c1e23ed7de5157f1ebad0cd83f5760adcf4cb72cc8eea41e9b2ae49",
+        "locator": "Complications333–339 | Symptoms280–298; Complications333–339",
+        "source_version": "2025-09-20",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original Overview, Symptoms, When to see a doctor, Causes, Risk factors, Complications, Prevention and reference list read; web lines269–354,366–372. Adult/general aortic dissection education. Same Mayo authorship group as treatment and beta-blocker pages; references include UpToDate, AskMayoExpert2023 and Ferri2025.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "complications-1: Fatal bleeding/tamponade. complications-2: Brain/kidney/bowel problems and acute symptom emergency action. complications-3: Valve leakage."
+      },
+      {
+        "source_id": "ad-nhlbi-living",
+        "source_metadata_sha256": "2951be53878ed1aa8fbf8cc79634dde0945522c6d078671e687b9ae7a84bf182",
+        "locator": "Complications99–104 | Complications99",
+        "source_version": "2022-03-24",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-NIH",
+        "upstream_evidence": [
+          "Original Aortic Aneurysm—Living With page read, web94–113: surveillance, complications, medicines and lifting precautions. Applied only to shared aortic mechanisms and recovery precautions; not used as dissection-specific operative guidance. NIH subdivisions share one editorial group.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "complications-1: Blood around heart compresses it and impairs function; common aortic mechanism. complications-3: Backflow from aortic valve insufficiency."
+      },
+      {
+        "source_id": "ad-acc-guideline",
+        "source_metadata_sha256": "fc603113a88b455a66be846c60d9fcd4dc83355d9db972f881ce3d33e4748a2d",
+        "locator": "Point7 long-term surveillance",
+        "source_version": "2022-11-02",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-ACC-AHA",
+        "upstream_evidence": [
+          "Original ACC official Key Perspectives Part2 summary read, paragraphs6–8, web161–202. Especially AAS acute management, surveillance and pregnancy. Summary only; full guideline was not attested read. Joint2022 ACC/AHA guideline; part1, part2 and guideline physical-activity extract are one editorial group.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "complications-3: Residual disease imaging after acute phase."
+      },
+      {
+        "source_id": "ad-acc-medical-extract",
+        "source_metadata_sha256": "310b1a31835b1bf272fc5d91f2bfda5308ca4e3672e2b1524b8a80d0ac61326d",
+        "locator": "7.4.2 Table27: Aortic rupture",
+        "source_version": "2022-11-02",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Aortic dissection; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "US-ACC-AHA",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Free or contained rupture including periaortic/mediastinal hematoma and hemothorax; prompt response."
+      },
+      {
+        "source_id": "ad-msd-professional",
+        "source_metadata_sha256": "5b5ed7ba1ab950637edc94a5cbdf988db6465e6d85d343bb312ceb611ed704e5",
+        "locator": "Pathophysiology: fatal rupture through adventitia",
+        "source_version": "December2024 review",
+        "accessed_at": "2026-10-03",
+        "population": "Adults with suspected or confirmed Aortic dissection; subtype conditions are in the claim.",
+        "region": "US",
+        "independence_group": "MSD-MANUALS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. MSD cites professional guidelines; ACC and ESC may cite overlapping registries. UDMI is joint ESC/ACC/AHA/WHF authorship and not four sources."
+        ],
+        "relation": "supports",
+        "assessment": "Wall rupture into pericardium or pleural space; source distinguishes intramural dissection from external rupture."
+      }
+    ],
+    "claims": [
+      {
+        "id": "complications-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "并发症来自血管壁破裂，或来自分支血流被夹层阻断；不是每名患者都会出现所有问题。",
+          "en": "Complications result from rupture of the wall or obstruction of branch blood flow. Not every patient develops every complication."
+        },
+        "supports": [
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Overview60; Complications120–128",
+            "assessment": "Rupture or impaired organ flow mechanisms, not universal occurrence."
+          }
+        ]
+      },
+      {
+        "id": "complications-1",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "主动脉破裂可导致致命的大出血；血液积在心脏外的包膜内时，可能压住心脏，使其无法正常充血，这称为心脏压塞。",
+          "en": "Aortic rupture can cause fatal bleeding. Blood collecting inside the sac around the heart can compress it and prevent normal filling; this is called cardiac tamponade."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "Complications333–339",
+            "assessment": "Fatal bleeding/tamponade."
+          },
+          {
+            "source_id": "ad-nhlbi-living",
+            "locator": "Complications99–104",
+            "assessment": "Blood around heart compresses it and impairs function; common aortic mechanism."
+          }
+        ]
+      },
+      {
+        "id": "complications-2",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "脑、肾、肠道或腿的血流减少，可分别造成卒中、肾损伤、肠缺血或肢体缺血。新出现的神经症状、剧烈腹痛或腿部疼痛与无力需要紧急评估。",
+          "en": "Reduced blood flow to the brain, kidneys, bowel or legs can cause stroke, kidney injury, bowel ischemia or limb ischemia. New neurological symptoms, severe abdominal pain or leg pain and weakness require urgent assessment."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "Symptoms280–298; Complications333–339",
+            "assessment": "Brain/kidney/bowel problems and acute symptom emergency action."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Symptoms77–89; Complications120–128; Treatment149–161",
+            "assessment": "Leg symptoms and malperfusion of bowel/kidney/limbs are complications needing urgent assessment."
+          }
+        ]
+      },
+      {
+        "id": "complications-3",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "累及主动脉瓣可造成瓣膜关不严，血液向心脏回流。急性期之后，剩余主动脉还可能逐渐扩张，因此需要影像随访。",
+          "en": "Involvement of the aortic valve can stop it closing properly and allow blood to leak back toward the heart. Later, remaining aortic segments can enlarge, which is why imaging follow-up matters."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "Complications333–339",
+            "assessment": "Valve leakage."
+          },
+          {
+            "source_id": "ad-nhlbi-living",
+            "locator": "Complications99",
+            "assessment": "Backflow from aortic valve insufficiency."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Outlook177; Living With201",
+            "assessment": "Residual aortic changes and surveillance."
+          },
+          {
+            "source_id": "ad-acc-guideline",
+            "locator": "Point7 long-term surveillance",
+            "assessment": "Residual disease imaging after acute phase."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-aortic-dissection-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "“穿孔或破裂”是血管壁被突破、血液漏到血管外；有时血液暂被周围组织包住，并不等于出血已经安全停止。它与只有内层撕开、血液在壁内走的夹层不同。",
+          "en": "Perforation or rupture means that blood escapes through the vessel wall. Surrounding tissue may temporarily contain the leak without making it safe. This differs from a tear that allows blood to travel within the wall without escaping outside it."
+        },
+        "supports": [
+          {
+            "source_id": "ad-acc-medical-extract",
+            "locator": "7.4.2 Table27: Aortic rupture",
+            "assessment": "Free or contained rupture including periaortic/mediastinal hematoma and hemothorax; prompt response."
+          },
+          {
+            "source_id": "ad-msd-professional",
+            "locator": "Pathophysiology: fatal rupture through adventitia",
+            "assessment": "Wall rupture into pericardium or pleural space; source distinguishes intramural dissection from external rupture."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Source authoring organizations are recorded per support; existing evidence is preserved. Guideline/manual dependence is explicitly retained.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "Guidelines and MSD share registry/upstream evidence. Independent editorial source groups are not independent clinical trials. No universal survival percentage, outpatient observation for rupture, or single repair technique is asserted; concrete anatomy and stability conditions retained."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": []
+  },
+  {
+    "id": "p001-aortic-dissection-prevention",
+    "target": {
+      "kind": "condition",
+      "id": "aortic-dissection",
+      "section": "prevention"
+    },
+    "content_sha256": "7d9229b114f6fe154ff7b1bb1e24c9ec93e098a054368f13bc9a1be537ca4ec6",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "/root",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "ad-cleveland",
+        "source_metadata_sha256": "428bd26e20094e4948551b2bcfe603af9257ae12ccd3a8f418ea2a12b03f548f",
+        "locator": "Prevention182–191 | Living With195–201",
+        "source_version": "2024-09-26",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-CLEVELAND",
+        "upstream_evidence": [
+          "Original page read: Overview55–71; Symptoms/Causes75–128; Diagnosis133–144; Treatment149–161; Outlook175–178; Prevention182–191; Living With195–219; References246–255. Adult/general education. References AHA, StatPearls, Merck and observational studies; separate institutional writing, not independent trials.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "prevention-0: Some risks modifiable, others inherited/age related. prevention-1: BP, smoking and cardiovascular risk management. prevention-3: Medicines, suitable exercise and CT/MRI surveillance."
+      },
+      {
+        "source_id": "ad-mayo-symptoms",
+        "source_metadata_sha256": "4ffa5f980c1e23ed7de5157f1ebad0cd83f5760adcf4cb72cc8eea41e9b2ae49",
+        "locator": "Prevention344–354 | Prevention350–354",
+        "source_version": "2025-09-20",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-MAYO",
+        "upstream_evidence": [
+          "Original Overview, Symptoms, When to see a doctor, Causes, Risk factors, Complications, Prevention and reference list read; web lines269–354,366–372. Adult/general aortic dissection education. Same Mayo authorship group as treatment and beta-blocker pages; references include UpToDate, AskMayoExpert2023 and Ferri2025.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "prevention-1: BP, lipids/sugars, smoking and healthy lifestyle. prevention-2: Inform clinician about family/heritable disease and discuss evaluation."
+      },
+      {
+        "source_id": "ad-acc-family",
+        "source_metadata_sha256": "618268df324688189bae3c84c78a2cfff4bdabde682704351e2a6aa8889398d6",
+        "locator": "Point5 family history/genetic testing/relative imaging",
+        "source_version": "2022-11-02",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-ACC-AHA",
+        "upstream_evidence": [
+          "Original official summary read, points2–5: imaging reports, teams, shared decisions, family history, genetic testing and first-degree-relative imaging. Same joint guideline upstream as part2; not counted independently of it.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "prevention-2: Heritable risk and family screening."
+      },
+      {
+        "source_id": "ad-nhlbi-living",
+        "source_metadata_sha256": "2951be53878ed1aa8fbf8cc79634dde0945522c6d078671e687b9ae7a84bf182",
+        "locator": "Living With110–113",
+        "source_version": "2022-03-24",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-NIH",
+        "upstream_evidence": [
+          "Original Aortic Aneurysm—Living With page read, web94–113: surveillance, complications, medicines and lifting precautions. Applied only to shared aortic mechanisms and recovery precautions; not used as dissection-specific operative guidance. NIH subdivisions share one editorial group.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "prevention-3: Prescribed medicines and exertion precautions."
+      },
+      {
+        "source_id": "ad-acc-guideline",
+        "source_metadata_sha256": "fc603113a88b455a66be846c60d9fcd4dc83355d9db972f881ce3d33e4748a2d",
+        "locator": "Point7 long-term surveillance",
+        "source_version": "2022-11-02",
+        "accessed_at": "2026-10-02",
+        "population": "Adults/general aortic dissection unless the locator is specifically pregnancy, cardiac-surgery recovery or coexisting CKD; those restrictions are retained in the bilingual claim.",
+        "region": "US",
+        "independence_group": "US-ACC-AHA",
+        "upstream_evidence": [
+          "Original ACC official Key Perspectives Part2 summary read, paragraphs6–8, web161–202. Especially AAS acute management, surveillance and pregnancy. Summary only; full guideline was not attested read. Joint2022 ACC/AHA guideline; part1, part2 and guideline physical-activity extract are one editorial group.",
+          "Institutional educational writing is not independent clinical-trial replication. ACC/AHA summaries and activity section share one guideline; NIH subdivisions share one group; Mayo pages share one group."
+        ],
+        "relation": "supports",
+        "assessment": "prevention-3: Remaining aorta requires planned imaging."
+      }
+    ],
+    "claims": [
+      {
+        "id": "prevention-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "预防重点是降低主动脉承受的压力并发现已知风险；这些措施不能把风险降为零。",
+          "en": "Prevention focuses on reducing stress on the aorta and detecting known risks; these measures cannot remove all risk."
+        },
+        "supports": [
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Prevention182–191",
+            "assessment": "Some risks modifiable, others inherited/age related."
+          }
+        ]
+      },
+      {
+        "id": "prevention-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "管理高血压、停止吸烟，并按已有心血管问题处理血脂和生活方式，是可以持续执行的措施。",
+          "en": "Managing high blood pressure, stopping smoking and addressing lipids and lifestyle in the context of existing cardiovascular disease are continuing practical measures."
+        },
+        "supports": [
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "Prevention344–354",
+            "assessment": "BP, lipids/sugars, smoking and healthy lifestyle."
+          },
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Prevention182–191",
+            "assessment": "BP, smoking and cardiovascular risk management."
+          }
+        ]
+      },
+      {
+        "id": "prevention-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "有主动脉病或相关遗传病家族史时主动告诉医生，讨论影像或遗传咨询。家族筛查的目标是在发生急症前发现可以监测的异常。",
+          "en": "Tell a clinician about a family history of aortic or related inherited disease and discuss imaging or genetic counseling. Family screening aims to detect abnormalities that can be monitored before an emergency occurs."
+        },
+        "supports": [
+          {
+            "source_id": "ad-acc-family",
+            "locator": "Point5 family history/genetic testing/relative imaging",
+            "assessment": "Heritable risk and family screening."
+          },
+          {
+            "source_id": "ad-mayo-symptoms",
+            "locator": "Prevention350–354",
+            "assessment": "Inform clinician about family/heritable disease and discuss evaluation."
+          }
+        ]
+      },
+      {
+        "id": "prevention-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "已经发生夹层者的预防重点是按计划服药、避免不适合自己的强力负重并完成影像复查。修复成功后仍需照顾整条主动脉。",
+          "en": "After a dissection, prevention emphasizes prescribed medicines, avoiding unsuitable heavy exertion and completing imaging follow-up. The whole aorta needs attention even after a successful repair."
+        },
+        "supports": [
+          {
+            "source_id": "ad-cleveland",
+            "locator": "Living With195–201",
+            "assessment": "Medicines, suitable exercise and CT/MRI surveillance."
+          },
+          {
+            "source_id": "ad-nhlbi-living",
+            "locator": "Living With110–113",
+            "assessment": "Prescribed medicines and exertion precautions."
+          },
+          {
+            "source_id": "ad-acc-guideline",
+            "locator": "Point7 long-term surveillance",
+            "assessment": "Remaining aorta requires planned imaging."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Critical actions, thresholds, benefits and risks have source-specific references from at least two distinct writing groups; ordinary explanations/information organization may use one. Same-institution or joint-guideline variants are not independent.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "US ACC/AHA and South England acute protocols differ in numeric treatment targets; none is turned into a home target or dose. Pregnancy recommendations retain US2022/ESC2025 provenance. Current local teams determine individual care."
+    },
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root/retinal_targeted",
+      "reviewer": "/root",
+      "checked_at": "2026-10-02",
+      "original_sources_reopened": [
+        "ad-acc-activity",
+        "ad-acc-family",
+        "ad-acc-guideline",
+        "ad-acc-medical-extract",
+        "ad-cleveland",
+        "ad-esc-pregnancy-2025",
+        "ad-gstt-recovery",
+        "ad-mayo-beta",
+        "ad-mayo-symptoms",
+        "ad-mayo-treatment",
+        "ad-nhlbi-food",
+        "ad-nhlbi-living",
+        "ad-nhs-beta",
+        "ad-niddk-ckd-food",
+        "ad-south-england-sop",
+        "ad-south-tees-beta"
+      ],
+      "findings": [
+        {
+          "id": "AD-shared-source-metadata",
+          "status": "resolved",
+          "resolution": "Renamed the new NHLBI read to ad-nhlbi-food; original mi-nhlbi-food and its existing medical evidence remain byte-equivalent."
+        },
+        {
+          "id": "AD-abrupt-withdrawal",
+          "status": "resolved",
+          "resolution": "Added directly read South Tees pharmacy instruction, independently corroborating the precise Mayo abrupt-beta-blocker-withdrawal caution; general NIH adherence text is no longer the only second component."
+        },
+        {
+          "id": "AD-medication-suitability",
+          "status": "resolved",
+          "resolution": "Added bilingual asthma/respiratory/slow-rate/conduction selection conditions, with NHS, Mayo and the precise ACC/AHA original indexed extract. Asthma is not labelled a blanket absolute prohibition."
+        }
+      ],
+      "resolution": "One independent full read of the initial58 claims and original material, followed by targeted acceptance of one added medication-condition claim and precise withdrawal/source-ID fixes. All14 sections are supported within their explicit populations and scopes. No clinician signature is implied."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-aortic-dissection-independent.json"
+  }
+]

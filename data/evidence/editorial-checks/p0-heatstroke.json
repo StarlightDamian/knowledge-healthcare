@@ -1,0 +1,3108 @@
+[
+  {
+    "id": "p003-heatstroke-summary",
+    "target": {
+      "kind": "condition",
+      "id": "heatstroke",
+      "section": "summary"
+    },
+    "content_sha256": "9de884251840c131927a0edad91d12996d650771e8381f01e197cb792e1f1640",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "batch-b-heat-niosh",
+        "source_metadata_sha256": "2e7ae9fbc87cdd5c8393af41a317d2eec8c78b72ae678890915eba86a09dc351",
+        "locator": "Heatstroke symptoms and firstaid",
+        "source_version": "Relevant patient-information sections inspected during expanded drafting; see batch-b.json for section locators.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "heatstroke-nhs",
+        "source_metadata_sha256": "b6cdcc7b75afe8a4353bef6dc96a700e6ca895a11f6055f8630330a2876fe284",
+        "locator": "Heat exhaustion symptoms",
+        "source_version": "Topic page or hub opened via browsing. Linked subpages/full claim support not comprehensively audited.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-cleveland",
+        "source_metadata_sha256": "e000ffebbbcb33ea00184053aff9d4d2b4e0f65183e7cb5df9b9b5f41db88856",
+        "locator": "Types; exertion in normal temperatures",
+        "source_version": "Original fullpatient body read viaurllib: patterns including exertion in normal weather, risks, tests, organ complications, residual neurological difficulties, recovery and prevention. No outcome percentages reused.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CLEVELAND",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-msd",
+        "source_metadata_sha256": "d581d6cac046f57110fadbea60b32e79f663c004d737869e628d2fc5903fb55e",
+        "locator": "Overview and CNS dysfunction",
+        "source_version": "ReviewedMay2025 updatedDecember2025. Original body read: two patterns, organ effects, differential, investigations, cooling/fluids, drug harm, prognosis. CitesWMS2024/SCCM2025/ACSM2023: shared upstream evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MSD-MANUALS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-wms",
+        "source_metadata_sha256": "93c19f23872d4117436a796e54a620eea8477f05159d267d3b5d42f41015722b",
+        "locator": "Definitions ofNEHS/EHS; Definitions; suddenheatstroke",
+        "source_version": "Official society summary actually read: classifications, active cooling, temperature assessment, fluids and prevention. This is the society summary, not the entire journal guideline. Selected medically supervised field-discharge exception not generalized to lay care.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "WMS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      }
+    ],
+    "claims": [
+      {
+        "id": "p003-heatstroke-summary-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "热射病是身体积热过多、来不及散热，并出现脑功能异常的严重热相关疾病。高温或活动后突然说话含糊、行为反常、走不稳、抽搐或叫不醒，都应立即启动降温和急救。",
+          "en": "Heatstroke is severe heat illness in which accumulated heat overwhelms cooling and brain function becomes abnormal. Slurred speech, unusual behaviour, poor coordination, seizures or unresponsiveness after heat or exertion require immediate cooling and emergency help."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-msd",
+            "locator": "Overview and CNS dysfunction",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "batch-b-heat-niosh",
+            "locator": "Heatstroke symptoms and firstaid",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-summary-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "经典型常与炎热住处、热浪等环境暴露有关；劳力型来自运动或重体力劳动产生大量热，即使天气不算极热，健康年轻人也会发生。两类都可能危及生命。",
+          "en": "Classic heatstroke is linked to environmental exposure such as a hot home or heatwave. Exertional heatstroke follows heat generated during strenuous activity and can affect healthy young people even without extreme weather. Both can be life-threatening."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-wms",
+            "locator": "Definitions ofNEHS/EHS",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-cleveland",
+            "locator": "Types; exertion in normal temperatures",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-summary-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "热衰竭常表现为头晕、口渴、乏力、恶心和大量出汗，需停止活动、降温并评估。它可能进展为热射病，但热射病也可能突然发生，没有明显的轻症阶段。",
+          "en": "Heat exhaustion commonly causes dizziness, thirst, weakness, nausea and heavy sweating, requiring rest, cooling and assessment. It can progress to heatstroke, but heatstroke can also begin suddenly without an obvious mild phase."
+        },
+        "supports": [
+          {
+            "source_id": "heatstroke-nhs",
+            "locator": "Heat exhaustion symptoms",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-wms",
+            "locator": "Definitions; suddenheatstroke",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "batch-b-heat-niosh",
+        "heatstroke-nhs",
+        "p003-heat-cleveland",
+        "p003-heat-mayo-causes",
+        "p003-heat-mayo-treatment",
+        "p003-heat-medicines",
+        "p003-heat-msd",
+        "p003-heat-nata",
+        "p003-heat-sccm",
+        "p003-heat-who",
+        "p003-heat-wms",
+        "p003-heat-yellow"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "Seven claims contain actions despite explanation kind.",
+          "resolution": "Root reclassified all identified summary/care/diagnosis/diet/specialpopulation/followup claims; dualsupports checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Frozen classification uses temperature description; symptoms cannot wait for a number.",
+          "resolution": "Body explicitly prioritises neurological change/exposure and emergency cooling without waiting for readings.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Classic/exertional cooling and field disposition differ in older material.",
+          "resolution": "WMS2024 and SCCM2025 support supervised immersion for both when feasible; trained field exception not applied to layperson. NHS/NIOSH triage context kept separate.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Authoring groups separated; common or derivative upstream evidence retained in the source and author records.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidance and differences are explained in the article and author report; no patient-specific prescription."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-heatstroke-independent.json"
+  },
+  {
+    "id": "p003-heatstroke-causes_risks",
+    "target": {
+      "kind": "condition",
+      "id": "heatstroke",
+      "section": "causes_risks"
+    },
+    "content_sha256": "2ace333496a0f2da3a3c8ed69ffe8852ea6902b799747a9b641fef8e727c4358",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-heat-cleveland",
+        "source_metadata_sha256": "e000ffebbbcb33ea00184053aff9d4d2b4e0f65183e7cb5df9b9b5f41db88856",
+        "locator": "Riskcategories",
+        "source_version": "Original fullpatient body read viaurllib: patterns including exertion in normal weather, risks, tests, organ complications, residual neurological difficulties, recovery and prevention. No outcome percentages reused.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CLEVELAND",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-mayo-causes",
+        "source_metadata_sha256": "79c485c56c4b8e5d63c08a44132ef37f392b590770d76c3202d88e8ab64951cf",
+        "locator": "Heavy clothing/exertion; Risk factors; LackofAC; cars",
+        "source_version": "September12,2024 actual Causes/Risk factors/Complications/Prevention. Two patterns, hot vehicles, clothing, acclimation. CitesCDC and clinical textbooks; does not independently replicate trials.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MAYO",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-who",
+        "source_metadata_sha256": "cf920319067554b33f3330c0381e05c424659691fcd2463b02c1a02978fc0f7b",
+        "locator": "Vulnerability; parkedvehicles",
+        "source_version": "Actual current fact sheet read: vulnerability, cool home/body, checking others and parked-vehicle prevention. Generic fluid quotas not applied to people with restriction. No population mortality data reused.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-wms",
+        "source_metadata_sha256": "93c19f23872d4117436a796e54a620eea8477f05159d267d3b5d42f41015722b",
+        "locator": "Heat dissipation",
+        "source_version": "Official society summary actually read: classifications, active cooling, temperature assessment, fluids and prevention. This is the society summary, not the entire journal guideline. Selected medically supervised field-discharge exception not generalized to lay care.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "WMS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-yellow",
+        "source_metadata_sha256": "b0a86d470678d53a553f8cb70842148d895dffe2ff6808ed34d512acbb6af6c4",
+        "locator": "Physiology; Risk andphysiology",
+        "source_version": "April23,2025 original heat sections/box3.2.1: physiology, classic/exertional, hyponatraemia, evacuation, cooling, hydration, acclimatization. Literal41C/104F discrepancy not copied. Oral salt recipes, skin massage and narrow ice-pack advice not prescribed.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      }
+    ],
+    "claims": [
+      {
+        "id": "p003-heatstroke-causes_risks-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "汗液蒸发能带走热量；湿度高、衣物或防护装备不透气时，这条散热通道会受限。运动和重体力劳动不断产热，超过身体散热能力时就可能出问题。",
+          "en": "Evaporating sweat removes heat. High humidity and insulating clothes or protective equipment reduce heat loss, while exercise and heavy labour keep producing heat; illness occurs when these demands exceed cooling capacity."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-yellow",
+            "locator": "Physiology",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-mayo-causes",
+            "locator": "Heavy clothing/exertion",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-wms",
+            "locator": "Heat dissipation",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-causes_risks-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "脱水、尚未适应炎热环境、饮酒、近期生病和既往热射病会增加风险。能改变的因素包括工作强度、休息和降温条件；年龄、疾病或出汗能力差则需要额外保护，不能只靠意志坚持。",
+          "en": "Dehydration, lack of acclimatization, alcohol, recent illness and previous heatstroke increase risk. Work intensity, rest and access to cooling can be changed; age, disease or impaired sweating require additional protection rather than simply pushing through."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-mayo-causes",
+            "locator": "Risk factors",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-yellow",
+            "locator": "Risk andphysiology",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-cleveland",
+            "locator": "Riskcategories",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-causes_risks-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "独居、行动不便或没有凉爽住处的人可能难以及时离开热环境。热风险也来自室内和车内，不只来自暴晒；短时间留在闷热车中对儿童尤其危险。",
+          "en": "Living alone, limited mobility or lack of a cool place can prevent timely escape from heat. Indoor rooms and vehicles also pose risks; a hot parked car can quickly become dangerous for a child."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-who",
+            "locator": "Vulnerability; parkedvehicles",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-mayo-causes",
+            "locator": "LackofAC; cars",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "batch-b-heat-niosh",
+        "heatstroke-nhs",
+        "p003-heat-cleveland",
+        "p003-heat-mayo-causes",
+        "p003-heat-mayo-treatment",
+        "p003-heat-medicines",
+        "p003-heat-msd",
+        "p003-heat-nata",
+        "p003-heat-sccm",
+        "p003-heat-who",
+        "p003-heat-wms",
+        "p003-heat-yellow"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "Seven claims contain actions despite explanation kind.",
+          "resolution": "Root reclassified all identified summary/care/diagnosis/diet/specialpopulation/followup claims; dualsupports checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Frozen classification uses temperature description; symptoms cannot wait for a number.",
+          "resolution": "Body explicitly prioritises neurological change/exposure and emergency cooling without waiting for readings.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Classic/exertional cooling and field disposition differ in older material.",
+          "resolution": "WMS2024 and SCCM2025 support supervised immersion for both when feasible; trained field exception not applied to layperson. NHS/NIOSH triage context kept separate.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Authoring groups separated; common or derivative upstream evidence retained in the source and author records.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidance and differences are explained in the article and author report; no patient-specific prescription."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-heatstroke-independent.json"
+  },
+  {
+    "id": "p003-heatstroke-red_flags",
+    "target": {
+      "kind": "condition",
+      "id": "heatstroke",
+      "section": "red_flags"
+    },
+    "content_sha256": "914d7507175f9710d6278d4cab5ab925dbaa8577269db52fc3146a7731f71dc0",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "batch-b-heat-niosh",
+        "source_metadata_sha256": "2e7ae9fbc87cdd5c8393af41a317d2eec8c78b72ae678890915eba86a09dc351",
+        "locator": "Heatstroke symptoms/firstaid; Rhabdomyolysis signs; immediate care",
+        "source_version": "Relevant patient-information sections inspected during expanded drafting; see batch-b.json for section locators.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "heatstroke-nhs",
+        "source_metadata_sha256": "b6cdcc7b75afe8a4353bef6dc96a700e6ca895a11f6055f8630330a2876fe284",
+        "locator": "Emergency signs; Waiting for help; recoveryposition/CPR",
+        "source_version": "Topic page or hub opened via browsing. Linked subpages/full claim support not comprehensively audited.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-cleveland",
+        "source_metadata_sha256": "e000ffebbbcb33ea00184053aff9d4d2b4e0f65183e7cb5df9b9b5f41db88856",
+        "locator": "Complications",
+        "source_version": "Original fullpatient body read viaurllib: patterns including exertion in normal weather, risks, tests, organ complications, residual neurological difficulties, recovery and prevention. No outcome percentages reused.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CLEVELAND",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-mayo-treatment",
+        "source_metadata_sha256": "7565169358a786f5e1a7ad0d9f8f63478bd09b201c79c52c7b677dbe10302be8",
+        "locator": "Heatstroke emergency, nooralfluids",
+        "source_version": "September12,2024 actual diagnosis, immersion/evaporative cooling, drugs for shivering, firstaid, restricted fluid/salt. Drug forshivering onlyprofessionals; no prescribed doses.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MAYO",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-msd",
+        "source_metadata_sha256": "d581d6cac046f57110fadbea60b32e79f663c004d737869e628d2fc5903fb55e",
+        "locator": "Sweatingpresentorabsent; treatment; Rhabdomyolysisandrenal testing",
+        "source_version": "ReviewedMay2025 updatedDecember2025. Original body read: two patterns, organ effects, differential, investigations, cooling/fluids, drug harm, prognosis. CitesWMS2024/SCCM2025/ACSM2023: shared upstream evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MSD-MANUALS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-yellow",
+        "source_metadata_sha256": "b0a86d470678d53a553f8cb70842148d895dffe2ff6808ed34d512acbb6af6c4",
+        "locator": "Airwayandcooling",
+        "source_version": "April23,2025 original heat sections/box3.2.1: physiology, classic/exertional, hyponatraemia, evacuation, cooling, hydration, acclimatization. Literal41C/104F discrepancy not copied. Oral salt recipes, skin massage and narrow ice-pack advice not prescribed.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      }
+    ],
+    "claims": [
+      {
+        "id": "p003-heatstroke-red_flags-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "热暴露或活动后出现意识混乱、说话不清、走不稳、抽搐或昏迷，立即呼叫当地急救，同时开始降温。仍在出汗并不排除热射病，也不能当成安全信号。",
+          "en": "Call emergency services and start cooling for confusion, slurred speech, poor coordination, seizures or coma after heat or exertion. Continued sweating does not exclude heatstroke or establish safety."
+        },
+        "supports": [
+          {
+            "source_id": "batch-b-heat-niosh",
+            "locator": "Heatstroke symptoms/firstaid",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-msd",
+            "locator": "Sweatingpresentorabsent; treatment",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "heatstroke-nhs",
+            "locator": "Emergency signs",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-red_flags-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "失去反应时持续查看呼吸，按急救调度指导采取恢复体位或心肺复苏。意识不清、抽搐或无法安全吞咽时，不往嘴里灌水、食物或药物，避免误吸。",
+          "en": "If unresponsive, keep checking breathing and follow dispatch guidance for recovery positioning or CPR. Do not give food, drink or medicines by mouth when awareness or swallowing is impaired or during a seizure, to avoid aspiration."
+        },
+        "supports": [
+          {
+            "source_id": "heatstroke-nhs",
+            "locator": "Waiting for help; recoveryposition/CPR",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-mayo-treatment",
+            "locator": "Heatstroke emergency, nooralfluids",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-yellow",
+            "locator": "Airwayandcooling",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-red_flags-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "运动或高温后出现明显肌肉痛、异常乏力、茶色尿或尿量很少，也应及时就医。它们可能是肌肉或肾脏损伤的线索，不能仅按普通肌肉酸痛休息了事。",
+          "en": "Seek prompt care for marked muscle pain, unusual weakness, tea-coloured urine or very little urine after exertion or heat. These can indicate muscle or kidney injury rather than ordinary soreness."
+        },
+        "supports": [
+          {
+            "source_id": "batch-b-heat-niosh",
+            "locator": "Rhabdomyolysis signs; immediate care",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-msd",
+            "locator": "Rhabdomyolysisandrenal testing",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-cleveland",
+            "locator": "Complications",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "batch-b-heat-niosh",
+        "heatstroke-nhs",
+        "p003-heat-cleveland",
+        "p003-heat-mayo-causes",
+        "p003-heat-mayo-treatment",
+        "p003-heat-medicines",
+        "p003-heat-msd",
+        "p003-heat-nata",
+        "p003-heat-sccm",
+        "p003-heat-who",
+        "p003-heat-wms",
+        "p003-heat-yellow"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "Seven claims contain actions despite explanation kind.",
+          "resolution": "Root reclassified all identified summary/care/diagnosis/diet/specialpopulation/followup claims; dualsupports checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Frozen classification uses temperature description; symptoms cannot wait for a number.",
+          "resolution": "Body explicitly prioritises neurological change/exposure and emergency cooling without waiting for readings.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Classic/exertional cooling and field disposition differ in older material.",
+          "resolution": "WMS2024 and SCCM2025 support supervised immersion for both when feasible; trained field exception not applied to layperson. NHS/NIOSH triage context kept separate.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Authoring groups separated; common or derivative upstream evidence retained in the source and author records.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidance and differences are explained in the article and author report; no patient-specific prescription."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-heatstroke-independent.json"
+  },
+  {
+    "id": "p003-heatstroke-care",
+    "target": {
+      "kind": "condition",
+      "id": "heatstroke",
+      "section": "care"
+    },
+    "content_sha256": "1a8b0db7eaeaf0ecc072bc6e4596487e7ee7e6446e7d85b994967d55b452f469",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "batch-b-heat-niosh",
+        "source_metadata_sha256": "2e7ae9fbc87cdd5c8393af41a317d2eec8c78b72ae678890915eba86a09dc351",
+        "locator": "Occupationalheatexhaustion evaluation; strokeemergency",
+        "source_version": "Relevant patient-information sections inspected during expanded drafting; see batch-b.json for section locators.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "heatstroke-nhs",
+        "source_metadata_sha256": "b6cdcc7b75afe8a4353bef6dc96a700e6ca895a11f6055f8630330a2876fe284",
+        "locator": "Cooling steps; urgentadvice; 30minconditionandemergency signs",
+        "source_version": "Topic page or hub opened via browsing. Linked subpages/full claim support not comprehensively audited.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-mayo-treatment",
+        "source_metadata_sha256": "7565169358a786f5e1a7ad0d9f8f63478bd09b201c79c52c7b677dbe10302be8",
+        "locator": "Homecareinsufficient",
+        "source_version": "September12,2024 actual diagnosis, immersion/evaporative cooling, drugs for shivering, firstaid, restricted fluid/salt. Drug forshivering onlyprofessionals; no prescribed doses.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MAYO",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-msd",
+        "source_metadata_sha256": "d581d6cac046f57110fadbea60b32e79f663c004d737869e628d2fc5903fb55e",
+        "locator": "Transport/admissionandorganobservation",
+        "source_version": "ReviewedMay2025 updatedDecember2025. Original body read: two patterns, organ effects, differential, investigations, cooling/fluids, drug harm, prognosis. CitesWMS2024/SCCM2025/ACSM2023: shared upstream evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MSD-MANUALS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-wms",
+        "source_metadata_sha256": "93c19f23872d4117436a796e54a620eea8477f05159d267d3b5d42f41015722b",
+        "locator": "Selectedfielddischarge versusclassictransfer",
+        "source_version": "Official society summary actually read: classifications, active cooling, temperature assessment, fluids and prevention. This is the society summary, not the entire journal guideline. Selected medically supervised field-discharge exception not generalized to lay care.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "WMS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-yellow",
+        "source_metadata_sha256": "b0a86d470678d53a553f8cb70842148d895dffe2ff6808ed34d512acbb6af6c4",
+        "locator": "Moderateheatillness; oralfluids",
+        "source_version": "April23,2025 original heat sections/box3.2.1: physiology, classic/exertional, hyponatraemia, evacuation, cooling, hydration, acclimatization. Literal41C/104F discrepancy not copied. Oral salt recipes, skin massage and narrow ice-pack advice not prescribed.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      }
+    ],
+    "claims": [
+      {
+        "id": "p003-heatstroke-care-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "只有神志清楚、能安全饮水且没有危险信号的较轻热衰竭，才适合在有人陪伴下边降温边观察；停止活动、移到凉处、去掉多余衣物，小口补水。症状恶化或处理困难时及时求助。",
+          "en": "Only mild exhaustion with clear awareness, safe swallowing and no red flags is suitable for accompanied cooling and observation. Stop activity, move somewhere cool, remove excess clothes and sip fluids; seek help if worsening or difficult to manage."
+        },
+        "supports": [
+          {
+            "source_id": "heatstroke-nhs",
+            "locator": "Cooling steps; urgentadvice",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-yellow",
+            "locator": "Moderateheatillness; oralfluids",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-care-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "英国NHS对轻症提出：休息、降温和补液30分钟仍不适，应呼叫急救；美国NIOSH对职业性热衰竭建议及时到医疗机构评估。只要出现意识异常、抽搐或严重气短，就立即急救，不等待观察时限。",
+          "en": "For mild illness, UK NHS advises emergency help if still unwell after30minutes of rest, cooling and fluids; US NIOSH advises medical assessment for occupational heat exhaustion. Altered awareness, seizures or severe breathlessness require immediate help without waiting."
+        },
+        "supports": [
+          {
+            "source_id": "heatstroke-nhs",
+            "locator": "30minconditionandemergency signs",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "batch-b-heat-niosh",
+            "locator": "Occupationalheatexhaustion evaluation; strokeemergency",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-care-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "疑似热射病即使开始降温后醒来或感觉好转，也需要专业评估。运动场上受训医疗团队的现场观察与放行条件，不等于家属可以凭“退热了”自行结束处理。",
+          "en": "Suspected heatstroke still needs professional assessment after cooling restores alertness or comfort. Criteria used by a trained sports medical team for supervised observation and discharge are not a home decision based only on a falling temperature."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-msd",
+            "locator": "Transport/admissionandorganobservation",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-wms",
+            "locator": "Selectedfielddischarge versusclassictransfer",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-mayo-treatment",
+            "locator": "Homecareinsufficient",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "batch-b-heat-niosh",
+        "heatstroke-nhs",
+        "p003-heat-cleveland",
+        "p003-heat-mayo-causes",
+        "p003-heat-mayo-treatment",
+        "p003-heat-medicines",
+        "p003-heat-msd",
+        "p003-heat-nata",
+        "p003-heat-sccm",
+        "p003-heat-who",
+        "p003-heat-wms",
+        "p003-heat-yellow"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "Seven claims contain actions despite explanation kind.",
+          "resolution": "Root reclassified all identified summary/care/diagnosis/diet/specialpopulation/followup claims; dualsupports checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Frozen classification uses temperature description; symptoms cannot wait for a number.",
+          "resolution": "Body explicitly prioritises neurological change/exposure and emergency cooling without waiting for readings.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Classic/exertional cooling and field disposition differ in older material.",
+          "resolution": "WMS2024 and SCCM2025 support supervised immersion for both when feasible; trained field exception not applied to layperson. NHS/NIOSH triage context kept separate.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Authoring groups separated; common or derivative upstream evidence retained in the source and author records.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidance and differences are explained in the article and author report; no patient-specific prescription."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-heatstroke-independent.json"
+  },
+  {
+    "id": "p003-heatstroke-diagnosis",
+    "target": {
+      "kind": "condition",
+      "id": "heatstroke",
+      "section": "diagnosis"
+    },
+    "content_sha256": "47f1beb03200e5385ea4f9bdce5c1aa23be5830ca3ac459a1e3b754cb6a849c4",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-heat-cleveland",
+        "source_metadata_sha256": "e000ffebbbcb33ea00184053aff9d4d2b4e0f65183e7cb5df9b9b5f41db88856",
+        "locator": "Emergencyhistory; No singlediagnostic test",
+        "source_version": "Original fullpatient body read viaurllib: patterns including exertion in normal weather, risks, tests, organ complications, residual neurological difficulties, recovery and prevention. No outcome percentages reused.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CLEVELAND",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-mayo-treatment",
+        "source_metadata_sha256": "7565169358a786f5e1a7ad0d9f8f63478bd09b201c79c52c7b677dbe10302be8",
+        "locator": "Rectalversusforehead measurement; Blood/urine/muscletests",
+        "source_version": "September12,2024 actual diagnosis, immersion/evaporative cooling, drugs for shivering, firstaid, restricted fluid/salt. Drug forshivering onlyprofessionals; no prescribed doses.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MAYO",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-msd",
+        "source_metadata_sha256": "d581d6cac046f57110fadbea60b32e79f663c004d737869e628d2fc5903fb55e",
+        "locator": "History/exam/coretemperature; Laboratorytesting; Differentialwhen<40C",
+        "source_version": "ReviewedMay2025 updatedDecember2025. Original body read: two patterns, organ effects, differential, investigations, cooling/fluids, drug harm, prognosis. CitesWMS2024/SCCM2025/ACSM2023: shared upstream evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MSD-MANUALS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-nata",
+        "source_metadata_sha256": "f22bb0ea1eb711ff412b661cdea34056a54c7e3fff41a281d58e6eee00b8f2c7",
+        "locator": "Recognitionandtemperature measurement",
+        "source_version": "Original authored statement onPMC, definition/recognition and recommendations43–48 Return to Activity read. Stilllisted byNATA; older consensus recommendations, no fixed7–21day clearance rule transferred to every patient. PMC is hosting not author.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "NATA",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-wms",
+        "source_metadata_sha256": "93c19f23872d4117436a796e54a620eea8477f05159d267d3b5d42f41015722b",
+        "locator": "Temperaturemeasurement;empiriccooling",
+        "source_version": "Official society summary actually read: classifications, active cooling, temperature assessment, fluids and prevention. This is the society summary, not the entire journal guideline. Selected medically supervised field-discharge exception not generalized to lay care.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "WMS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      }
+    ],
+    "claims": [
+      {
+        "id": "p003-heatstroke-diagnosis-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "告诉急救人员是在跑步、劳作还是闷热室内发病，什么时候开始异常、何时开始降温，以及服过哪些药。医护会检查意识、呼吸、循环和体内核心温度，不只看额头温度。",
+          "en": "Tell responders whether illness began during exercise, work or indoor heat, when behaviour changed, when cooling began and which medicines were taken. Clinicians assess awareness, breathing, circulation and core temperature rather than relying only on forehead readings."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-msd",
+            "locator": "History/exam/coretemperature",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-mayo-treatment",
+            "locator": "Rectalversusforehead measurement",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-cleveland",
+            "locator": "Emergencyhistory",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-diagnosis-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "血液和尿液检查用于查看血盐、肾脏、肝脏、肌肉损伤及凝血情况。结果帮助发现需要补液、监护或器官支持的问题；单一化验并不能独立解释全部病情。",
+          "en": "Blood and urine testing assesses electrolytes, kidneys, liver, muscle injury and clotting. Findings guide fluids, monitoring and organ support; no single laboratory result explains the whole illness."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-msd",
+            "locator": "Laboratorytesting",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-mayo-treatment",
+            "locator": "Blood/urine/muscletests",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-cleveland",
+            "locator": "No singlediagnostic test",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-diagnosis-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "温度计不准确、测量部位不同或已经降温会影响读数。现场有热暴露加神经异常时，不应为等待仪器而拖延降温；温度不高或经过不典型时，医生也会积极寻找其他原因。",
+          "en": "Measurement site, inaccurate devices or cooling already started can alter the reading. Heat exposure with neurological abnormalities warrants prompt cooling while help is arranged; an atypical history or lower temperature also prompts evaluation for other causes."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-wms",
+            "locator": "Temperaturemeasurement;empiriccooling",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-msd",
+            "locator": "Differentialwhen<40C",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-nata",
+            "locator": "Recognitionandtemperature measurement",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "batch-b-heat-niosh",
+        "heatstroke-nhs",
+        "p003-heat-cleveland",
+        "p003-heat-mayo-causes",
+        "p003-heat-mayo-treatment",
+        "p003-heat-medicines",
+        "p003-heat-msd",
+        "p003-heat-nata",
+        "p003-heat-sccm",
+        "p003-heat-who",
+        "p003-heat-wms",
+        "p003-heat-yellow"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "Seven claims contain actions despite explanation kind.",
+          "resolution": "Root reclassified all identified summary/care/diagnosis/diet/specialpopulation/followup claims; dualsupports checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Frozen classification uses temperature description; symptoms cannot wait for a number.",
+          "resolution": "Body explicitly prioritises neurological change/exposure and emergency cooling without waiting for readings.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Classic/exertional cooling and field disposition differ in older material.",
+          "resolution": "WMS2024 and SCCM2025 support supervised immersion for both when feasible; trained field exception not applied to layperson. NHS/NIOSH triage context kept separate.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Authoring groups separated; common or derivative upstream evidence retained in the source and author records.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidance and differences are explained in the article and author report; no patient-specific prescription."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-heatstroke-independent.json"
+  },
+  {
+    "id": "p003-heatstroke-differentials",
+    "target": {
+      "kind": "condition",
+      "id": "heatstroke",
+      "section": "differentials"
+    },
+    "content_sha256": "f94d7b08dfa8b78aeed5012f6a1c8f1388a50c4ce7d8294b83722167539548b0",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "batch-b-heat-niosh",
+        "source_metadata_sha256": "2e7ae9fbc87cdd5c8393af41a317d2eec8c78b72ae678890915eba86a09dc351",
+        "locator": "Heatstroke/exhaustion/syncope",
+        "source_version": "Relevant patient-information sections inspected during expanded drafting; see batch-b.json for section locators.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-mayo-treatment",
+        "source_metadata_sha256": "7565169358a786f5e1a7ad0d9f8f63478bd09b201c79c52c7b677dbe10302be8",
+        "locator": "Ruleoutothercauses",
+        "source_version": "September12,2024 actual diagnosis, immersion/evaporative cooling, drugs for shivering, firstaid, restricted fluid/salt. Drug forshivering onlyprofessionals; no prescribed doses.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MAYO",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-msd",
+        "source_metadata_sha256": "d581d6cac046f57110fadbea60b32e79f663c004d737869e628d2fc5903fb55e",
+        "locator": "Differentialdiagnosis;hypoglycaemia",
+        "source_version": "ReviewedMay2025 updatedDecember2025. Original body read: two patterns, organ effects, differential, investigations, cooling/fluids, drug harm, prognosis. CitesWMS2024/SCCM2025/ACSM2023: shared upstream evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MSD-MANUALS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-wms",
+        "source_metadata_sha256": "93c19f23872d4117436a796e54a620eea8477f05159d267d3b5d42f41015722b",
+        "locator": "Definitions; HydrationandEAH; Reassessalternatives;empiriccooling",
+        "source_version": "Official society summary actually read: classifications, active cooling, temperature assessment, fluids and prevention. This is the society summary, not the entire journal guideline. Selected medically supervised field-discharge exception not generalized to lay care.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "WMS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-yellow",
+        "source_metadata_sha256": "b0a86d470678d53a553f8cb70842148d895dffe2ff6808ed34d512acbb6af6c4",
+        "locator": "Exercise-inducedhyponatraemia",
+        "source_version": "April23,2025 original heat sections/box3.2.1: physiology, classic/exertional, hyponatraemia, evacuation, cooling, hydration, acclimatization. Literal41C/104F discrepancy not copied. Oral salt recipes, skin massage and narrow ice-pack advice not prescribed.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      }
+    ],
+    "claims": [
+      {
+        "id": "p003-heatstroke-differentials-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "热衰竭多以全身乏力、头晕和出汗为主；热晕厥可在站立后短暂倒下。明显的行为或意识异常要优先排查热射病，不能只按“缺水”解释。",
+          "en": "Exhaustion often features weakness, dizziness and sweating; heat syncope can cause a brief faint after standing. Significant behaviour or awareness changes require urgent evaluation for heatstroke rather than being assumed to be simple dehydration."
+        },
+        "supports": [
+          {
+            "source_id": "batch-b-heat-niosh",
+            "locator": "Heatstroke/exhaustion/syncope",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-wms",
+            "locator": "Definitions",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-differentials-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "长时间运动中喝水过量，可能把血钠稀释得过低，出现头痛、呕吐、混乱甚至抽搐；继续强灌水可能加重。医生需结合饮水量和血液检查区分低钠与热损伤。",
+          "en": "Excessive drinking during prolonged exertion can dilute blood sodium, causing headache, vomiting, confusion or seizures. Forcing more water can worsen this; fluid history and blood testing help distinguish low sodium from heat injury."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-yellow",
+            "locator": "Exercise-inducedhyponatraemia",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-wms",
+            "locator": "HydrationandEAH",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-differentials-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "严重感染、低血糖、卒中、某些药物或物质导致的高热也可能影响意识。医生会结合病史、血糖及其他检查排查；这些可能性不会取消疑似热射病的即时降温和急救。",
+          "en": "Severe infection, low blood glucose, stroke and medicine- or substance-related overheating can also alter awareness. History, glucose and other tests help assess them while urgent cooling and resuscitation proceed when heatstroke is suspected."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-msd",
+            "locator": "Differentialdiagnosis;hypoglycaemia",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-wms",
+            "locator": "Reassessalternatives;empiriccooling",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-mayo-treatment",
+            "locator": "Ruleoutothercauses",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "batch-b-heat-niosh",
+        "heatstroke-nhs",
+        "p003-heat-cleveland",
+        "p003-heat-mayo-causes",
+        "p003-heat-mayo-treatment",
+        "p003-heat-medicines",
+        "p003-heat-msd",
+        "p003-heat-nata",
+        "p003-heat-sccm",
+        "p003-heat-who",
+        "p003-heat-wms",
+        "p003-heat-yellow"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "Seven claims contain actions despite explanation kind.",
+          "resolution": "Root reclassified all identified summary/care/diagnosis/diet/specialpopulation/followup claims; dualsupports checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Frozen classification uses temperature description; symptoms cannot wait for a number.",
+          "resolution": "Body explicitly prioritises neurological change/exposure and emergency cooling without waiting for readings.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Classic/exertional cooling and field disposition differ in older material.",
+          "resolution": "WMS2024 and SCCM2025 support supervised immersion for both when feasible; trained field exception not applied to layperson. NHS/NIOSH triage context kept separate.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Authoring groups separated; common or derivative upstream evidence retained in the source and author records.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidance and differences are explained in the article and author report; no patient-specific prescription."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-heatstroke-independent.json"
+  },
+  {
+    "id": "p003-heatstroke-treatment",
+    "target": {
+      "kind": "condition",
+      "id": "heatstroke",
+      "section": "treatment"
+    },
+    "content_sha256": "56094a287c418034944b95ae3b11207de5076bfb4945a8bcc0e27e42b4774730",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "batch-b-heat-niosh",
+        "source_metadata_sha256": "2e7ae9fbc87cdd5c8393af41a317d2eec8c78b72ae678890915eba86a09dc351",
+        "locator": "Firstaid",
+        "source_version": "Relevant patient-information sections inspected during expanded drafting; see batch-b.json for section locators.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-cleveland",
+        "source_metadata_sha256": "e000ffebbbcb33ea00184053aff9d4d2b4e0f65183e7cb5df9b9b5f41db88856",
+        "locator": "Treatmentandorgancomplications",
+        "source_version": "Original fullpatient body read viaurllib: patterns including exertion in normal weather, risks, tests, organ complications, residual neurological difficulties, recovery and prevention. No outcome percentages reused.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CLEVELAND",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-mayo-treatment",
+        "source_metadata_sha256": "7565169358a786f5e1a7ad0d9f8f63478bd09b201c79c52c7b677dbe10302be8",
+        "locator": "Evaporativecooling",
+        "source_version": "September12,2024 actual diagnosis, immersion/evaporative cooling, drugs for shivering, firstaid, restricted fluid/salt. Drug forshivering onlyprofessionals; no prescribed doses.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MAYO",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-msd",
+        "source_metadata_sha256": "d581d6cac046f57110fadbea60b32e79f663c004d737869e628d2fc5903fb55e",
+        "locator": "Othermeasures;organ support",
+        "source_version": "ReviewedMay2025 updatedDecember2025. Original body read: two patterns, organ effects, differential, investigations, cooling/fluids, drug harm, prognosis. CitesWMS2024/SCCM2025/ACSM2023: shared upstream evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MSD-MANUALS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-sccm",
+        "source_metadata_sha256": "c5d008b5ef90abe0249ca75d0f86776fe705c2ef2e095c8bb89fd64e5e5efac6",
+        "locator": "Activeoverpassive cooling; Rapidimmersion;bothpatterns",
+        "source_version": "Official one-page summary actually read: active cooling over passive, cold-water immersion, same strategy for classic/exertional, againstdantrolene/routineantipyretics and preventive antibiotics/antiseizure drugs outside research. Fulljournalarticle not claimed read. No diagram or temperature table copied.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "MULTI_REGION",
+        "independence_group": "SCCM",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-wms",
+        "source_metadata_sha256": "93c19f23872d4117436a796e54a620eea8477f05159d267d3b5d42f41015722b",
+        "locator": "ABCandCWI",
+        "source_version": "Official society summary actually read: classifications, active cooling, temperature assessment, fluids and prevention. This is the society summary, not the entire journal guideline. Selected medically supervised field-discharge exception not generalized to lay care.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "WMS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-yellow",
+        "source_metadata_sha256": "b0a86d470678d53a553f8cb70842148d895dffe2ff6808ed34d512acbb6af6c4",
+        "locator": "Attendandholdpersoninwater; Severeillnesshospitalcare",
+        "source_version": "April23,2025 original heat sections/box3.2.1: physiology, classic/exertional, hyponatraemia, evacuation, cooling, hydration, acclimatization. Literal41C/104F discrepancy not copied. Oral salt recipes, skin massage and narrow ice-pack advice not prescribed.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      }
+    ],
+    "claims": [
+      {
+        "id": "p003-heatstroke-treatment-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "先移到阴凉或空调处，脱去多余衣物，用冷水湿润较大面积皮肤并扇风；在等待急救时持续进行。仅把人搬进凉处然后等待，可能不足以快速降温。",
+          "en": "Move to shade or air conditioning, remove excess clothing, wet a large skin surface with cool water and fan while emergency help is coming. Moving to a cooler place alone may not remove heat quickly enough."
+        },
+        "supports": [
+          {
+            "source_id": "batch-b-heat-niosh",
+            "locator": "Firstaid",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-sccm",
+            "locator": "Activeoverpassive cooling",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-mayo-treatment",
+            "locator": "Evaporativecooling",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-treatment-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "有合适设施、人员能够持续保护气道和监护时，冷水或冰水浸泡是快速降温方法，劳力型和经典型都可采用。不要把意识不清的人独自留在水中；没有这些条件就立即使用可行的湿身扇风等方法。",
+          "en": "Where facilities and personnel can continuously protect the airway and monitor the patient, cold- or ice-water immersion rapidly cools both exertional and classic heatstroke. Never leave an impaired person alone in water; otherwise begin feasible wetting and fanning immediately."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-sccm",
+            "locator": "Rapidimmersion;bothpatterns",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-wms",
+            "locator": "ABCandCWI",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-yellow",
+            "locator": "Attendandholdpersoninwater",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-treatment-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "医院一边降温一边根据血压、尿量和血盐给予补液及监护。出现呼吸、肾脏或其他器官损伤时可能需要呼吸机、透析等支持；这与单纯“打一瓶点滴”不同。",
+          "en": "Hospital care combines cooling with fluids guided by blood pressure, urine output and electrolytes. Respiratory, kidney or other organ injury may require ventilation, dialysis or further support, beyond simply giving an IV infusion."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-msd",
+            "locator": "Othermeasures;organ support",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-cleveland",
+            "locator": "Treatmentandorgancomplications",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-yellow",
+            "locator": "Severeillnesshospitalcare",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "batch-b-heat-niosh",
+        "heatstroke-nhs",
+        "p003-heat-cleveland",
+        "p003-heat-mayo-causes",
+        "p003-heat-mayo-treatment",
+        "p003-heat-medicines",
+        "p003-heat-msd",
+        "p003-heat-nata",
+        "p003-heat-sccm",
+        "p003-heat-who",
+        "p003-heat-wms",
+        "p003-heat-yellow"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "Seven claims contain actions despite explanation kind.",
+          "resolution": "Root reclassified all identified summary/care/diagnosis/diet/specialpopulation/followup claims; dualsupports checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Frozen classification uses temperature description; symptoms cannot wait for a number.",
+          "resolution": "Body explicitly prioritises neurological change/exposure and emergency cooling without waiting for readings.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Classic/exertional cooling and field disposition differ in older material.",
+          "resolution": "WMS2024 and SCCM2025 support supervised immersion for both when feasible; trained field exception not applied to layperson. NHS/NIOSH triage context kept separate.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Authoring groups separated; common or derivative upstream evidence retained in the source and author records.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidance and differences are explained in the article and author report; no patient-specific prescription."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-heatstroke-independent.json"
+  },
+  {
+    "id": "p003-heatstroke-medications",
+    "target": {
+      "kind": "condition",
+      "id": "heatstroke",
+      "section": "medications"
+    },
+    "content_sha256": "7ae87df7924289da541e244bcb3212d2ed327ee0ee4ac77c2343c8604bcd4f91",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-heat-cleveland",
+        "source_metadata_sha256": "e000ffebbbcb33ea00184053aff9d4d2b4e0f65183e7cb5df9b9b5f41db88856",
+        "locator": "Medicationrisk;askprovider",
+        "source_version": "Original fullpatient body read viaurllib: patterns including exertion in normal weather, risks, tests, organ complications, residual neurological difficulties, recovery and prevention. No outcome percentages reused.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CLEVELAND",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-mayo-causes",
+        "source_metadata_sha256": "79c485c56c4b8e5d63c08a44132ef37f392b590770d76c3202d88e8ab64951cf",
+        "locator": "Certainmedicines",
+        "source_version": "September12,2024 actual Causes/Risk factors/Complications/Prevention. Two patterns, hot vehicles, clothing, acclimation. CitesCDC and clinical textbooks; does not independently replicate trials.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MAYO",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-mayo-treatment",
+        "source_metadata_sha256": "7565169358a786f5e1a7ad0d9f8f63478bd09b201c79c52c7b677dbe10302be8",
+        "locator": "Medicinesforshivering",
+        "source_version": "September12,2024 actual diagnosis, immersion/evaporative cooling, drugs for shivering, firstaid, restricted fluid/salt. Drug forshivering onlyprofessionals; no prescribed doses.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MAYO",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-medicines",
+        "source_metadata_sha256": "1be83888f14690e8923ab442c00d335bd87b65e1dd9d105e23bb5a9477dedb1f",
+        "locator": "Mechanismsandclinicalactionplan",
+        "source_version": "September18,2025 actual mechanisms and clinician action plan. Expert opinion, not a drug-effect trial. No independent instruction to discontinue/adjust medicine or fluids.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-msd",
+        "source_metadata_sha256": "d581d6cac046f57110fadbea60b32e79f663c004d737869e628d2fc5903fb55e",
+        "locator": "Antipyreticsnoeffectandorganharm; Otherresuscitativemeasures",
+        "source_version": "ReviewedMay2025 updatedDecember2025. Original body read: two patterns, organ effects, differential, investigations, cooling/fluids, drug harm, prognosis. CitesWMS2024/SCCM2025/ACSM2023: shared upstream evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MSD-MANUALS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-sccm",
+        "source_metadata_sha256": "c5d008b5ef90abe0249ca75d0f86776fe705c2ef2e095c8bb89fd64e5e5efac6",
+        "locator": "Against dantrolene;avoidroutineantipyretics; Prophylaxisresearchstatement",
+        "source_version": "Official one-page summary actually read: active cooling over passive, cold-water immersion, same strategy for classic/exertional, againstdantrolene/routineantipyretics and preventive antibiotics/antiseizure drugs outside research. Fulljournalarticle not claimed read. No diagram or temperature table copied.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "MULTI_REGION",
+        "independence_group": "SCCM",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      }
+    ],
+    "claims": [
+      {
+        "id": "p003-heatstroke-medications-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "对乙酰氨基酚、布洛芬等退热药不用于解决热射病的积热问题，可能增加肝肾负担。不要先吃药等待“退烧”；SCCM2025也不建议常规使用丹曲林等药物替代物理降温。",
+          "en": "Acetaminophen or ibuprofen does not correct the accumulated heat of heatstroke and may add liver or kidney risk. Do not wait for fever medicine to work; SCCM2025 also recommends against dantrolene as heatstroke treatment."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-msd",
+            "locator": "Antipyreticsnoeffectandorganharm",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-sccm",
+            "locator": "Against dantrolene;avoidroutineantipyretics",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-medications-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "医院可能用药控制抽搐、寒战或支持循环；是否需要由当时问题决定。预防性抗生素、抗癫痫药并不是所有热射病的常规方案，SCCM2025将这种预防用法限于研究场景。",
+          "en": "Clinicians may use medicines for seizures, shivering or circulatory problems according to the clinical need. Preventive antibiotics or antiseizure medicines are not routine for every heatstroke patient; SCCM2025 restricts that preventive use to research."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-sccm",
+            "locator": "Prophylaxisresearchstatement",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-mayo-treatment",
+            "locator": "Medicinesforshivering",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-msd",
+            "locator": "Otherresuscitativemeasures",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-medications-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "利尿药会增加水盐丢失，部分抗过敏或精神科药物会改变出汗、警觉性或体温调节。热天提前与医生核对药物和补液计划，不自行停药；把正在使用的药物清单交给急救人员。",
+          "en": "Diuretics increase fluid and salt losses, while some allergy or psychiatric medicines affect sweating, alertness or temperature regulation. Arrange a medicine and fluid plan with your clinician for hot days rather than stopping medicines yourself; give responders the current list."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-medicines",
+            "locator": "Mechanismsandclinicalactionplan",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-mayo-causes",
+            "locator": "Certainmedicines",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-cleveland",
+            "locator": "Medicationrisk;askprovider",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "batch-b-heat-niosh",
+        "heatstroke-nhs",
+        "p003-heat-cleveland",
+        "p003-heat-mayo-causes",
+        "p003-heat-mayo-treatment",
+        "p003-heat-medicines",
+        "p003-heat-msd",
+        "p003-heat-nata",
+        "p003-heat-sccm",
+        "p003-heat-who",
+        "p003-heat-wms",
+        "p003-heat-yellow"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "Seven claims contain actions despite explanation kind.",
+          "resolution": "Root reclassified all identified summary/care/diagnosis/diet/specialpopulation/followup claims; dualsupports checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Frozen classification uses temperature description; symptoms cannot wait for a number.",
+          "resolution": "Body explicitly prioritises neurological change/exposure and emergency cooling without waiting for readings.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Classic/exertional cooling and field disposition differ in older material.",
+          "resolution": "WMS2024 and SCCM2025 support supervised immersion for both when feasible; trained field exception not applied to layperson. NHS/NIOSH triage context kept separate.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Authoring groups separated; common or derivative upstream evidence retained in the source and author records.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidance and differences are explained in the article and author report; no patient-specific prescription."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-heatstroke-independent.json"
+  },
+  {
+    "id": "p003-heatstroke-diet",
+    "target": {
+      "kind": "condition",
+      "id": "heatstroke",
+      "section": "diet"
+    },
+    "content_sha256": "c6263db897ab6d7bb94954bd1d8e5970030fd86e270fc1c3cb770bfe358be14b",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "batch-b-heat-niosh",
+        "source_metadata_sha256": "2e7ae9fbc87cdd5c8393af41a317d2eec8c78b72ae678890915eba86a09dc351",
+        "locator": "Avoidsalttablets",
+        "source_version": "Relevant patient-information sections inspected during expanded drafting; see batch-b.json for section locators.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "heatstroke-nhs",
+        "source_metadata_sha256": "b6cdcc7b75afe8a4353bef6dc96a700e6ca895a11f6055f8630330a2876fe284",
+        "locator": "Exhaustionfluidsteps; Avoidexcessalcohol",
+        "source_version": "Topic page or hub opened via browsing. Linked subpages/full claim support not comprehensively audited.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-mayo-treatment",
+        "source_metadata_sha256": "7565169358a786f5e1a7ad0d9f8f63478bd09b201c79c52c7b677dbe10302be8",
+        "locator": "Nooralfluidforheatstroke; Restrictedfluids/salt; Hydrationrestrictions;alcohol",
+        "source_version": "September12,2024 actual diagnosis, immersion/evaporative cooling, drugs for shivering, firstaid, restricted fluid/salt. Drug forshivering onlyprofessionals; no prescribed doses.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MAYO",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-medicines",
+        "source_metadata_sha256": "1be83888f14690e8923ab442c00d335bd87b65e1dd9d105e23bb5a9477dedb1f",
+        "locator": "Reviewfluidrestrictions",
+        "source_version": "September18,2025 actual mechanisms and clinician action plan. Expert opinion, not a drug-effect trial. No independent instruction to discontinue/adjust medicine or fluids.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-msd",
+        "source_metadata_sha256": "d581d6cac046f57110fadbea60b32e79f663c004d737869e628d2fc5903fb55e",
+        "locator": "Organinjuryandfluidmonitoring",
+        "source_version": "ReviewedMay2025 updatedDecember2025. Original body read: two patterns, organ effects, differential, investigations, cooling/fluids, drug harm, prognosis. CitesWMS2024/SCCM2025/ACSM2023: shared upstream evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MSD-MANUALS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-yellow",
+        "source_metadata_sha256": "b0a86d470678d53a553f8cb70842148d895dffe2ff6808ed34d512acbb6af6c4",
+        "locator": "Moderateillness oralfluids/snacks; Overdrinkingandhyponatraemia",
+        "source_version": "April23,2025 original heat sections/box3.2.1: physiology, classic/exertional, hyponatraemia, evacuation, cooling, hydration, acclimatization. Literal41C/104F discrepancy not copied. Oral salt recipes, skin massage and narrow ice-pack advice not prescribed.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      }
+    ],
+    "claims": [
+      {
+        "id": "p003-heatstroke-diet-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "清醒能吞咽的轻症者可小口喝水；大量出汗后可按情况选择口服补液饮品或水配正常食物、少量咸味点心。热射病伴意识异常时不口服补液，由医护处理。",
+          "en": "An alert person with mild illness can sip water. After substantial sweating, appropriate rehydration drinks or water with ordinary food and a salty snack may replace losses. Do not give oral fluids with heatstroke-related impaired awareness; clinicians manage replacement."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-yellow",
+            "locator": "Moderateillness oralfluids/snacks",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "heatstroke-nhs",
+            "locator": "Exhaustionfluidsteps",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-mayo-treatment",
+            "locator": "Nooralfluidforheatstroke",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-diet-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "补液不是越多越好，也不等于自行吞盐片。耐力运动时强迫大量喝水会增加低钠风险；心衰、肾病或医嘱限液限盐的人，应先与医疗团队约定热天可用的量和饮品。",
+          "en": "More fluid is not always better, and replacement does not mean taking salt tablets. Forced excessive drinking during endurance activity increases low-sodium risk. People with heart failure, kidney disease or fluid/salt restrictions need a planned amount and drink choice."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-yellow",
+            "locator": "Overdrinkingandhyponatraemia",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "batch-b-heat-niosh",
+            "locator": "Avoidsalttablets",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-mayo-treatment",
+            "locator": "Restrictedfluids/salt",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-medicines",
+            "locator": "Reviewfluidrestrictions",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-diet-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "不要用酒精“解暑”。饮食能支持恢复，但没有食物能取代急性期降温；有肝肾损伤时的营养和补液安排应随检查结果调整，而不是套用统一的高盐或大量饮水方案。",
+          "en": "Do not use alcohol to cool down. Food can support recovery but cannot replace acute cooling. When liver or kidney injury is present, nutrition and fluids follow clinical assessment rather than a universal high-salt or high-fluid plan."
+        },
+        "supports": [
+          {
+            "source_id": "heatstroke-nhs",
+            "locator": "Avoidexcessalcohol",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-mayo-treatment",
+            "locator": "Hydrationrestrictions;alcohol",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-msd",
+            "locator": "Organinjuryandfluidmonitoring",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "batch-b-heat-niosh",
+        "heatstroke-nhs",
+        "p003-heat-cleveland",
+        "p003-heat-mayo-causes",
+        "p003-heat-mayo-treatment",
+        "p003-heat-medicines",
+        "p003-heat-msd",
+        "p003-heat-nata",
+        "p003-heat-sccm",
+        "p003-heat-who",
+        "p003-heat-wms",
+        "p003-heat-yellow"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "Seven claims contain actions despite explanation kind.",
+          "resolution": "Root reclassified all identified summary/care/diagnosis/diet/specialpopulation/followup claims; dualsupports checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Frozen classification uses temperature description; symptoms cannot wait for a number.",
+          "resolution": "Body explicitly prioritises neurological change/exposure and emergency cooling without waiting for readings.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Classic/exertional cooling and field disposition differ in older material.",
+          "resolution": "WMS2024 and SCCM2025 support supervised immersion for both when feasible; trained field exception not applied to layperson. NHS/NIOSH triage context kept separate.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Authoring groups separated; common or derivative upstream evidence retained in the source and author records.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidance and differences are explained in the article and author report; no patient-specific prescription."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-heatstroke-independent.json"
+  },
+  {
+    "id": "p003-heatstroke-daily_care",
+    "target": {
+      "kind": "condition",
+      "id": "heatstroke",
+      "section": "daily_care"
+    },
+    "content_sha256": "f7dc35c8ef9906af2d9955163531c0542e5b23f569a336c348fee971b3174342",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "batch-b-heat-niosh",
+        "source_metadata_sha256": "2e7ae9fbc87cdd5c8393af41a317d2eec8c78b72ae678890915eba86a09dc351",
+        "locator": "Staywithpatient;rapidcooling; Rhabdosymptoms needcare",
+        "source_version": "Relevant patient-information sections inspected during expanded drafting; see batch-b.json for section locators.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "heatstroke-nhs",
+        "source_metadata_sha256": "b6cdcc7b75afe8a4353bef6dc96a700e6ca895a11f6055f8630330a2876fe284",
+        "locator": "Waitingforhelp",
+        "source_version": "Topic page or hub opened via browsing. Linked subpages/full claim support not comprehensively audited.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-cleveland",
+        "source_metadata_sha256": "e000ffebbbcb33ea00184053aff9d4d2b4e0f65183e7cb5df9b9b5f41db88856",
+        "locator": "Longtermeffects;tailoredcare",
+        "source_version": "Original fullpatient body read viaurllib: patterns including exertion in normal weather, risks, tests, organ complications, residual neurological difficulties, recovery and prevention. No outcome percentages reused.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CLEVELAND",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-nata",
+        "source_metadata_sha256": "f22bb0ea1eb711ff412b661cdea34056a54c7e3fff41a281d58e6eee00b8f2c7",
+        "locator": "ReturntoActivity43–48",
+        "source_version": "Original authored statement onPMC, definition/recognition and recommendations43–48 Return to Activity read. Stilllisted byNATA; older consensus recommendations, no fixed7–21day clearance rule transferred to every patient. PMC is hosting not author.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "NATA",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-yellow",
+        "source_metadata_sha256": "b0a86d470678d53a553f8cb70842148d895dffe2ff6808ed34d512acbb6af6c4",
+        "locator": "ActivateEMSwithoutdelayingcooling",
+        "source_version": "April23,2025 original heat sections/box3.2.1: physiology, classic/exertional, hyponatraemia, evacuation, cooling, hydration, acclimatization. Literal41C/104F discrepancy not copied. Oral salt recipes, skin massage and narrow ice-pack advice not prescribed.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      }
+    ],
+    "claims": [
+      {
+        "id": "p003-heatstroke-daily_care-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "急性期不要让患者独处；持续观察说话、反应和呼吸，记录发病与降温时间并告知急救人员。降温与呼救同时进行，不为寻找“最好的设备”延误可立即做的处理。",
+          "en": "Stay with the person, observe speech, responsiveness and breathing, and tell responders when symptoms and cooling began. Arrange help while cooling; do not postpone available measures while searching for ideal equipment."
+        },
+        "supports": [
+          {
+            "source_id": "batch-b-heat-niosh",
+            "locator": "Staywithpatient;rapidcooling",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-yellow",
+            "locator": "ActivateEMSwithoutdelayingcooling",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "heatstroke-nhs",
+            "locator": "Waitingforhelp",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-daily_care-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "恢复后先暂停高温劳动和剧烈运动，记录疲乏、肌肉痛、尿量及注意力变化。再次出现神经异常、尿少或明显肌肉症状应提前复诊；返回训练或工作需逐步增加强度。",
+          "en": "Pause hot work and strenuous exercise during recovery, and track fatigue, muscle symptoms, urine output and concentration. New neurological problems, low urine output or marked muscle symptoms need earlier review; activity should increase gradually."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-nata",
+            "locator": "ReturntoActivity43–48",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "batch-b-heat-niosh",
+            "locator": "Rhabdosymptoms needcare",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-cleveland",
+            "locator": "Longtermeffects;tailoredcare",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "batch-b-heat-niosh",
+        "heatstroke-nhs",
+        "p003-heat-cleveland",
+        "p003-heat-mayo-causes",
+        "p003-heat-mayo-treatment",
+        "p003-heat-medicines",
+        "p003-heat-msd",
+        "p003-heat-nata",
+        "p003-heat-sccm",
+        "p003-heat-who",
+        "p003-heat-wms",
+        "p003-heat-yellow"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "Seven claims contain actions despite explanation kind.",
+          "resolution": "Root reclassified all identified summary/care/diagnosis/diet/specialpopulation/followup claims; dualsupports checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Frozen classification uses temperature description; symptoms cannot wait for a number.",
+          "resolution": "Body explicitly prioritises neurological change/exposure and emergency cooling without waiting for readings.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Classic/exertional cooling and field disposition differ in older material.",
+          "resolution": "WMS2024 and SCCM2025 support supervised immersion for both when feasible; trained field exception not applied to layperson. NHS/NIOSH triage context kept separate.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Authoring groups separated; common or derivative upstream evidence retained in the source and author records.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidance and differences are explained in the article and author report; no patient-specific prescription."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-heatstroke-independent.json"
+  },
+  {
+    "id": "p003-heatstroke-special_populations",
+    "target": {
+      "kind": "condition",
+      "id": "heatstroke",
+      "section": "special_populations"
+    },
+    "content_sha256": "445e03a9c6071e2b23b178d7a8945d950b33c7fbb682c8154acab7b9af5fce07",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "batch-b-heat-niosh",
+        "source_metadata_sha256": "2e7ae9fbc87cdd5c8393af41a317d2eec8c78b72ae678890915eba86a09dc351",
+        "locator": "Workertraining",
+        "source_version": "Relevant patient-information sections inspected during expanded drafting; see batch-b.json for section locators.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-cleveland",
+        "source_metadata_sha256": "e000ffebbbcb33ea00184053aff9d4d2b4e0f65183e7cb5df9b9b5f41db88856",
+        "locator": "Pregnancyandhealthrisk;emergencyhelp",
+        "source_version": "Original fullpatient body read viaurllib: patterns including exertion in normal weather, risks, tests, organ complications, residual neurological difficulties, recovery and prevention. No outcome percentages reused.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CLEVELAND",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-mayo-causes",
+        "source_metadata_sha256": "79c485c56c4b8e5d63c08a44132ef37f392b590770d76c3202d88e8ab64951cf",
+        "locator": "Ageandhydration",
+        "source_version": "September12,2024 actual Causes/Risk factors/Complications/Prevention. Two patterns, hot vehicles, clothing, acclimation. CitesCDC and clinical textbooks; does not independently replicate trials.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MAYO",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-medicines",
+        "source_metadata_sha256": "1be83888f14690e8923ab442c00d335bd87b65e1dd9d105e23bb5a9477dedb1f",
+        "locator": "Cognitiveimpairmentandcontactperson",
+        "source_version": "September18,2025 actual mechanisms and clinician action plan. Expert opinion, not a drug-effect trial. No independent instruction to discontinue/adjust medicine or fluids.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-nata",
+        "source_metadata_sha256": "f22bb0ea1eb711ff412b661cdea34056a54c7e3fff41a281d58e6eee00b8f2c7",
+        "locator": "Preventionrecommendations",
+        "source_version": "Original authored statement onPMC, definition/recognition and recommendations43–48 Return to Activity read. Stilllisted byNATA; older consensus recommendations, no fixed7–21day clearance rule transferred to every patient. PMC is hosting not author.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "NATA",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-who",
+        "source_metadata_sha256": "cf920319067554b33f3330c0381e05c424659691fcd2463b02c1a02978fc0f7b",
+        "locator": "Vulnerability;checkothers; Vulnerability",
+        "source_version": "Actual current fact sheet read: vulnerability, cool home/body, checking others and parked-vehicle prevention. Generic fluid quotas not applied to people with restriction. No population mortality data reused.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-wms",
+        "source_metadata_sha256": "93c19f23872d4117436a796e54a620eea8477f05159d267d3b5d42f41015722b",
+        "locator": "Individual/environmentalplanning",
+        "source_version": "Official society summary actually read: classifications, active cooling, temperature assessment, fluids and prevention. This is the society summary, not the entire journal guideline. Selected medically supervised field-discharge exception not generalized to lay care.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "WMS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-yellow",
+        "source_metadata_sha256": "b0a86d470678d53a553f8cb70842148d895dffe2ff6808ed34d512acbb6af6c4",
+        "locator": "Chronicdiseaserisk; Acclimatizationandfitpeople",
+        "source_version": "April23,2025 original heat sections/box3.2.1: physiology, classic/exertional, hyponatraemia, evacuation, cooling, hydration, acclimatization. Literal41C/104F discrepancy not copied. Oral salt recipes, skin massage and narrow ice-pack advice not prescribed.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      }
+    ],
+    "claims": [
+      {
+        "id": "p003-heatstroke-special_populations-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "儿童和老人调节体温、补水或主动离开热环境的能力可能较弱；行动不便或认知受损者还可能无法表达不适。安排家人主动查看、提供凉爽环境，比只提醒“口渴就喝水”更重要。",
+          "en": "Children and older adults may have reduced ability to regulate temperature, hydrate or leave the heat. Mobility or cognitive limitations can also prevent reporting symptoms; arrange active check-ins and a cool environment rather than relying only on thirst."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-who",
+            "locator": "Vulnerability;checkothers",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-mayo-causes",
+            "locator": "Ageandhydration",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-medicines",
+            "locator": "Cognitiveimpairmentandcontactperson",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-special_populations-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "心血管病、糖尿病、肾病和影响出汗的皮肤问题会限制耐热能力。孕期也需要更主动的避热和补液安排；有这些情况的人一旦不适，应更早联系医疗人员。",
+          "en": "Cardiovascular disease, diabetes, kidney disease and skin conditions limiting sweating reduce heat tolerance. Pregnancy also calls for careful heat avoidance and hydration planning; symptoms in these settings merit early clinical contact."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-yellow",
+            "locator": "Chronicdiseaserisk",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-cleveland",
+            "locator": "Pregnancyandhealthrisk;emergencyhelp",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-who",
+            "locator": "Vulnerability",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-special_populations-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "户外工人、消防员、军训者和运动员应分阶段适应热环境，安排休息、饮水和同伴观察。需要穿防护服时尤其要调整工作休息比例；身体强健也不能免除劳力型热射病风险。",
+          "en": "Outdoor workers, firefighters, trainees and athletes need gradual heat acclimatization, rest, fluids and buddy observation. Protective clothing makes work-rest adjustments especially important; physical fitness does not eliminate exertional heatstroke risk."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-wms",
+            "locator": "Individual/environmentalplanning",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-yellow",
+            "locator": "Acclimatizationandfitpeople",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "batch-b-heat-niosh",
+            "locator": "Workertraining",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-nata",
+            "locator": "Preventionrecommendations",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "batch-b-heat-niosh",
+        "heatstroke-nhs",
+        "p003-heat-cleveland",
+        "p003-heat-mayo-causes",
+        "p003-heat-mayo-treatment",
+        "p003-heat-medicines",
+        "p003-heat-msd",
+        "p003-heat-nata",
+        "p003-heat-sccm",
+        "p003-heat-who",
+        "p003-heat-wms",
+        "p003-heat-yellow"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "Seven claims contain actions despite explanation kind.",
+          "resolution": "Root reclassified all identified summary/care/diagnosis/diet/specialpopulation/followup claims; dualsupports checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Frozen classification uses temperature description; symptoms cannot wait for a number.",
+          "resolution": "Body explicitly prioritises neurological change/exposure and emergency cooling without waiting for readings.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Classic/exertional cooling and field disposition differ in older material.",
+          "resolution": "WMS2024 and SCCM2025 support supervised immersion for both when feasible; trained field exception not applied to layperson. NHS/NIOSH triage context kept separate.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Authoring groups separated; common or derivative upstream evidence retained in the source and author records.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidance and differences are explained in the article and author report; no patient-specific prescription."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-heatstroke-independent.json"
+  },
+  {
+    "id": "p003-heatstroke-prognosis_followup",
+    "target": {
+      "kind": "condition",
+      "id": "heatstroke",
+      "section": "prognosis_followup"
+    },
+    "content_sha256": "671eca002345884c014a02f82ef3ae300a961c3caf9a453dc224c3f606503584",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "p003-heat-cleveland",
+        "source_metadata_sha256": "e000ffebbbcb33ea00184053aff9d4d2b4e0f65183e7cb5df9b9b5f41db88856",
+        "locator": "Outlookandlongtermeffects; Organfunctionandtailoredrecovery",
+        "source_version": "Original fullpatient body read viaurllib: patterns including exertion in normal weather, risks, tests, organ complications, residual neurological difficulties, recovery and prevention. No outcome percentages reused.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CLEVELAND",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-mayo-causes",
+        "source_metadata_sha256": "79c485c56c4b8e5d63c08a44132ef37f392b590770d76c3202d88e8ab64951cf",
+        "locator": "Previousheatstroke risk",
+        "source_version": "September12,2024 actual Causes/Risk factors/Complications/Prevention. Two patterns, hot vehicles, clothing, acclimation. CitesCDC and clinical textbooks; does not independently replicate trials.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MAYO",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-msd",
+        "source_metadata_sha256": "d581d6cac046f57110fadbea60b32e79f663c004d737869e628d2fc5903fb55e",
+        "locator": "Prognosis; Organfunctionmonitoring",
+        "source_version": "ReviewedMay2025 updatedDecember2025. Original body read: two patterns, organ effects, differential, investigations, cooling/fluids, drug harm, prognosis. CitesWMS2024/SCCM2025/ACSM2023: shared upstream evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MSD-MANUALS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-nata",
+        "source_metadata_sha256": "f22bb0ea1eb711ff412b661cdea34056a54c7e3fff41a281d58e6eee00b8f2c7",
+        "locator": "ReturntoActivity46–48; Returnprogressionandsymptommonitoring",
+        "source_version": "Original authored statement onPMC, definition/recognition and recommendations43–48 Return to Activity read. Stilllisted byNATA; older consensus recommendations, no fixed7–21day clearance rule transferred to every patient. PMC is hosting not author.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "NATA",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-wms",
+        "source_metadata_sha256": "93c19f23872d4117436a796e54a620eea8477f05159d267d3b5d42f41015722b",
+        "locator": "Thermoregulatoryadaptationafterheatstroke",
+        "source_version": "Official society summary actually read: classifications, active cooling, temperature assessment, fluids and prevention. This is the society summary, not the entire journal guideline. Selected medically supervised field-discharge exception not generalized to lay care.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "WMS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-yellow",
+        "source_metadata_sha256": "b0a86d470678d53a553f8cb70842148d895dffe2ff6808ed34d512acbb6af6c4",
+        "locator": "Delayedorgancomplications",
+        "source_version": "April23,2025 original heat sections/box3.2.1: physiology, classic/exertional, hyponatraemia, evacuation, cooling, hydration, acclimatization. Literal41C/104F discrepancy not copied. Oral salt recipes, skin massage and narrow ice-pack advice not prescribed.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      }
+    ],
+    "claims": [
+      {
+        "id": "p003-heatstroke-prognosis_followup-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "结局与积热持续多久、救治是否及时及器官损伤程度有关。有人恢复良好，有人会遗留记忆、言语或协调问题；不能用一次体温正常说明所有器官都已恢复。",
+          "en": "Outcome depends on heat duration, prompt treatment and organ injury. Some recover well while others have persistent memory, speech or coordination problems; one normal temperature does not establish full recovery."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-msd",
+            "locator": "Prognosis",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-cleveland",
+            "locator": "Outlookandlongtermeffects",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-yellow",
+            "locator": "Delayedorgancomplications",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-prognosis_followup-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "热射病后复查通常关注肝肾功能、血盐和肌肉损伤指标，并结合症状调整活动。运动医学建议在症状和检查恢复后，由医生批准逐级返回训练；并非休息固定几天就自动合格。",
+          "en": "Follow-up considers liver and kidney function, electrolytes, muscle-injury markers and symptoms. Sports guidance calls for clinical clearance and graded activity after recovery rather than automatic clearance after a fixed number of rest days."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-nata",
+            "locator": "ReturntoActivity46–48",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-cleveland",
+            "locator": "Organfunctionandtailoredrecovery",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-msd",
+            "locator": "Organfunctionmonitoring",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-prognosis_followup-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "曾经热射病的人以后仍可能更易受热影响，需要重新建立耐热和工作计划。重新活动时出现不适应减慢、停止并复评；训练经验或以往一次恢复良好都不是保证。",
+          "en": "Previous heatstroke can increase vulnerability to later heat exposure, requiring a renewed activity and acclimatization plan. Symptoms during return should slow or stop progression and prompt reassessment; experience or one good recovery is no guarantee."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-wms",
+            "locator": "Thermoregulatoryadaptationafterheatstroke",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-nata",
+            "locator": "Returnprogressionandsymptommonitoring",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-mayo-causes",
+            "locator": "Previousheatstroke risk",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "batch-b-heat-niosh",
+        "heatstroke-nhs",
+        "p003-heat-cleveland",
+        "p003-heat-mayo-causes",
+        "p003-heat-mayo-treatment",
+        "p003-heat-medicines",
+        "p003-heat-msd",
+        "p003-heat-nata",
+        "p003-heat-sccm",
+        "p003-heat-who",
+        "p003-heat-wms",
+        "p003-heat-yellow"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "Seven claims contain actions despite explanation kind.",
+          "resolution": "Root reclassified all identified summary/care/diagnosis/diet/specialpopulation/followup claims; dualsupports checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Frozen classification uses temperature description; symptoms cannot wait for a number.",
+          "resolution": "Body explicitly prioritises neurological change/exposure and emergency cooling without waiting for readings.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Classic/exertional cooling and field disposition differ in older material.",
+          "resolution": "WMS2024 and SCCM2025 support supervised immersion for both when feasible; trained field exception not applied to layperson. NHS/NIOSH triage context kept separate.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Authoring groups separated; common or derivative upstream evidence retained in the source and author records.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidance and differences are explained in the article and author report; no patient-specific prescription."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-heatstroke-independent.json"
+  },
+  {
+    "id": "p003-heatstroke-complications",
+    "target": {
+      "kind": "condition",
+      "id": "heatstroke",
+      "section": "complications"
+    },
+    "content_sha256": "2d3110f033d6ee81d26f9da389e5727f5a4e3aa7e152e0e072e122edbf718b97",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "batch-b-heat-niosh",
+        "source_metadata_sha256": "2e7ae9fbc87cdd5c8393af41a317d2eec8c78b72ae678890915eba86a09dc351",
+        "locator": "Rhabdomyolysis",
+        "source_version": "Relevant patient-information sections inspected during expanded drafting; see batch-b.json for section locators.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-cleveland",
+        "source_metadata_sha256": "e000ffebbbcb33ea00184053aff9d4d2b4e0f65183e7cb5df9b9b5f41db88856",
+        "locator": "Complications",
+        "source_version": "Original fullpatient body read viaurllib: patterns including exertion in normal weather, risks, tests, organ complications, residual neurological difficulties, recovery and prevention. No outcome percentages reused.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CLEVELAND",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-msd",
+        "source_metadata_sha256": "d581d6cac046f57110fadbea60b32e79f663c004d737869e628d2fc5903fb55e",
+        "locator": "Musclekidneyandelectrolyteinjury; MultiorgandysfunctionandDIC",
+        "source_version": "ReviewedMay2025 updatedDecember2025. Original body read: two patterns, organ effects, differential, investigations, cooling/fluids, drug harm, prognosis. CitesWMS2024/SCCM2025/ACSM2023: shared upstream evidence.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MSD-MANUALS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-yellow",
+        "source_metadata_sha256": "b0a86d470678d53a553f8cb70842148d895dffe2ff6808ed34d512acbb6af6c4",
+        "locator": "Liver/kidneydamageandabnormalbleeding",
+        "source_version": "April23,2025 original heat sections/box3.2.1: physiology, classic/exertional, hyponatraemia, evacuation, cooling, hydration, acclimatization. Literal41C/104F discrepancy not copied. Oral salt recipes, skin massage and narrow ice-pack advice not prescribed.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      }
+    ],
+    "claims": [
+      {
+        "id": "p003-heatstroke-complications-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "横纹肌溶解是肌肉细胞受损后将蛋白和电解质释放到血液中，可能伤肾并扰乱心律；茶色尿、肌肉痛或异常乏力是需要报告的线索。",
+          "en": "Rhabdomyolysis means injured muscle releases proteins and electrolytes into the blood, potentially damaging kidneys and disturbing heart rhythm. Tea-coloured urine, muscle pain or unusual weakness are warning clues."
+        },
+        "supports": [
+          {
+            "source_id": "batch-b-heat-niosh",
+            "locator": "Rhabdomyolysis",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-msd",
+            "locator": "Musclekidneyandelectrolyteinjury",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-complications-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "严重病例可发生脑、肝、肾或肺损伤，甚至凝血系统失控，出现出血或微小血栓。医院反复检查意识、尿量、呼吸和血液指标，是为了及早发现这些变化，不是只等温度下降。",
+          "en": "Severe cases can injure the brain, liver, kidneys or lungs and disrupt clotting, causing bleeding or small clots. Repeated neurological, urine, respiratory and blood assessments look for these changes beyond lowering temperature."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-msd",
+            "locator": "MultiorgandysfunctionandDIC",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-yellow",
+            "locator": "Liver/kidneydamageandabnormalbleeding",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-cleveland",
+            "locator": "Complications",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "batch-b-heat-niosh",
+        "heatstroke-nhs",
+        "p003-heat-cleveland",
+        "p003-heat-mayo-causes",
+        "p003-heat-mayo-treatment",
+        "p003-heat-medicines",
+        "p003-heat-msd",
+        "p003-heat-nata",
+        "p003-heat-sccm",
+        "p003-heat-who",
+        "p003-heat-wms",
+        "p003-heat-yellow"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "Seven claims contain actions despite explanation kind.",
+          "resolution": "Root reclassified all identified summary/care/diagnosis/diet/specialpopulation/followup claims; dualsupports checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Frozen classification uses temperature description; symptoms cannot wait for a number.",
+          "resolution": "Body explicitly prioritises neurological change/exposure and emergency cooling without waiting for readings.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Classic/exertional cooling and field disposition differ in older material.",
+          "resolution": "WMS2024 and SCCM2025 support supervised immersion for both when feasible; trained field exception not applied to layperson. NHS/NIOSH triage context kept separate.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Authoring groups separated; common or derivative upstream evidence retained in the source and author records.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidance and differences are explained in the article and author report; no patient-specific prescription."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-heatstroke-independent.json"
+  },
+  {
+    "id": "p003-heatstroke-prevention",
+    "target": {
+      "kind": "condition",
+      "id": "heatstroke",
+      "section": "prevention"
+    },
+    "content_sha256": "d6711aa8e8d33189c1b0843c3683538e09d194acd038528f9fd29c4bfaaf8cb6",
+    "status": "cross_checked",
+    "scope": "full_section",
+    "checked_at": "2026-10-03",
+    "checker": "/root/astra_p0_allergy",
+    "medical_reviewed": false,
+    "supports": [
+      {
+        "source_id": "batch-b-heat-niosh",
+        "source_metadata_sha256": "2e7ae9fbc87cdd5c8393af41a317d2eec8c78b72ae678890915eba86a09dc351",
+        "locator": "Symptomsdespitesweating; Workerandsupervisortraining",
+        "source_version": "Relevant patient-information sections inspected during expanded drafting; see batch-b.json for section locators.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-mayo-causes",
+        "source_metadata_sha256": "79c485c56c4b8e5d63c08a44132ef37f392b590770d76c3202d88e8ab64951cf",
+        "locator": "Prevention; Neverleaveanyoneinparkedcar",
+        "source_version": "September12,2024 actual Causes/Risk factors/Complications/Prevention. Two patterns, hot vehicles, clothing, acclimation. CitesCDC and clinical textbooks; does not independently replicate trials.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "MAYO",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-nata",
+        "source_metadata_sha256": "f22bb0ea1eb711ff412b661cdea34056a54c7e3fff41a281d58e6eee00b8f2c7",
+        "locator": "Emergencyactionplan;prevention",
+        "source_version": "Original authored statement onPMC, definition/recognition and recommendations43–48 Return to Activity read. Stilllisted byNATA; older consensus recommendations, no fixed7–21day clearance rule transferred to every patient. PMC is hosting not author.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "NATA",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-who",
+        "source_metadata_sha256": "cf920319067554b33f3330c0381e05c424659691fcd2463b02c1a02978fc0f7b",
+        "locator": "Checkvulnerable;vehicles",
+        "source_version": "Actual current fact sheet read: vulnerability, cool home/body, checking others and parked-vehicle prevention. Generic fluid quotas not applied to people with restriction. No population mortality data reused.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "GLOBAL",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      },
+      {
+        "source_id": "p003-heat-wms",
+        "source_metadata_sha256": "93c19f23872d4117436a796e54a620eea8477f05159d267d3b5d42f41015722b",
+        "locator": "Acclimatizationandplanning; Planningandheatload",
+        "source_version": "Official society summary actually read: classifications, active cooling, temperature assessment, fluids and prevention. This is the society summary, not the entire journal guideline. Selected medically supervised field-discharge exception not generalized to lay care.",
+        "accessed_at": "2026-10-03",
+        "population": "Patients with the condition at the explicitly described stage; subgroup restrictions retained.",
+        "region": "US",
+        "independence_group": "WMS",
+        "upstream_evidence": [
+          "Independent editorial authorship is not independent trial replication. Derivative references and shared studies are disclosed in the author report."
+        ],
+        "relation": "supports",
+        "assessment": "Supports the explicitly located component of the matched bilingual claim; source scope and population limits retained."
+      }
+    ],
+    "claims": [
+      {
+        "id": "p003-heatstroke-prevention-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "把高强度活动安排在较凉时段，穿轻薄宽松衣物，逐步适应炎热；热天提前确定可休息的阴凉或空调处。不要把“能出汗”或“已经习惯”当成继续坚持的依据。",
+          "en": "Schedule exertion for cooler periods, wear light loose clothing and acclimatize gradually. Identify shaded or air-conditioned rest places in advance; sweating or familiarity with heat does not justify pushing through symptoms."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-mayo-causes",
+            "locator": "Prevention",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-wms",
+            "locator": "Acclimatizationandplanning",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "batch-b-heat-niosh",
+            "locator": "Symptomsdespitesweating",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-prevention-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "为独居或需要照护的人安排联系和探访，检查室内是否过热。儿童和需要帮助的成人不能留在停放车辆内；有窗缝或短暂离开也不能保证安全。",
+          "en": "Arrange contact and visits for people living alone or needing care and check indoor heat. Never leave children or dependent adults in parked vehicles; an open window or brief absence does not ensure safety."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-who",
+            "locator": "Checkvulnerable;vehicles",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-mayo-causes",
+            "locator": "Neverleaveanyoneinparkedcar",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      },
+      {
+        "id": "p003-heatstroke-prevention-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "工作场所和运动组织应明确谁识别异常、谁呼救、降温设备在哪里；一旦同伴行为反常，立即停下活动并启动应急安排。补水不能抵消无限增加的工作强度或高温暴露。",
+          "en": "Workplaces and sports groups should assign recognition and emergency-call roles and make cooling equipment accessible. Stop activity and use the plan for unusual behaviour; hydration cannot offset unlimited exertion or heat exposure."
+        },
+        "supports": [
+          {
+            "source_id": "p003-heat-nata",
+            "locator": "Emergencyactionplan;prevention",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "batch-b-heat-niosh",
+            "locator": "Workerandsupervisortraining",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          },
+          {
+            "source_id": "p003-heat-wms",
+            "locator": "Planningandheatload",
+            "assessment": "Supports the corresponding statement with its stated conditions; see section support for shared upstream evidence."
+          }
+        ]
+      }
+    ],
+    "claim_inventory": "all_medical_claims_in_section",
+    "adversarial_review": {
+      "status": "accepted",
+      "author": "/root",
+      "reviewer": "/root/astra_p0_allergy",
+      "checked_at": "2026-10-03",
+      "original_sources_reopened": [
+        "batch-b-heat-niosh",
+        "heatstroke-nhs",
+        "p003-heat-cleveland",
+        "p003-heat-mayo-causes",
+        "p003-heat-mayo-treatment",
+        "p003-heat-medicines",
+        "p003-heat-msd",
+        "p003-heat-nata",
+        "p003-heat-sccm",
+        "p003-heat-who",
+        "p003-heat-wms",
+        "p003-heat-yellow"
+      ],
+      "inherited_source_ids": [],
+      "findings": [
+        {
+          "finding": "Seven claims contain actions despite explanation kind.",
+          "resolution": "Root reclassified all identified summary/care/diagnosis/diet/specialpopulation/followup claims; dualsupports checked.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Frozen classification uses temperature description; symptoms cannot wait for a number.",
+          "resolution": "Body explicitly prioritises neurological change/exposure and emergency cooling without waiting for readings.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Classic/exertional cooling and field disposition differ in older material.",
+          "resolution": "WMS2024 and SCCM2025 support supervised immersion for both when feasible; trained field exception not applied to layperson. NHS/NIOSH triage context kept separate.",
+          "status": "resolved"
+        }
+      ],
+      "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
+    },
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Authoring groups separated; common or derivative upstream evidence retained in the source and author records.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Regional guidance and differences are explained in the article and author report; no patient-specific prescription."
+    },
+    "unresolved_questions": [],
+    "review_report": "reports/p0-03-heatstroke-independent.json"
+  }
+]

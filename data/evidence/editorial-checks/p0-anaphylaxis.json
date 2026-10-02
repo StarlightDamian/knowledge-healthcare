@@ -378,6 +378,46 @@
             "assessment": "Mast Cell Disorders and Anaphylaxis and MCAS sections distinguish underlying disorders, unprovoked episodes and attacks not meeting anaphylaxis definition."
           }
         ]
+      },
+      {
+        "id": "p0-03-causes_risks-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "接触途径也很重要：天然乳胶既可经皮肤或黏膜接触，也可随手套粉末进入空气而被吸入。不是所有接触后的皮疹或吸入后的喘都属于严重过敏；需结合本次全身表现。",
+          "en": "The exposure route matters: natural latex can contact skin or mucous membranes, or travel through the air on glove powder and be inhaled. Not every rash after contact or wheeze after inhalation is anaphylaxis; the overall episode must be assessed."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-03-latex-aaaai",
+            "locator": "Reactions to Latex; ASCIA Q4–5",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          },
+          {
+            "source_id": "anaphylaxis-p0-03-latex-ascia",
+            "locator": "Reactions to Latex; ASCIA Q4–5",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          }
+        ]
+      },
+      {
+        "id": "p0-03-causes_risks-3",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "消毒剂氯己定也可能引起严重过敏，尤其在医疗操作中经破损皮肤进入体内时；它可能藏在敷料、导管涂层或润滑剂中，不能只检查注射的药物。",
+          "en": "The antiseptic chlorhexidine can also cause anaphylaxis, particularly when it enters through broken skin during a procedure. It may be present in dressings, catheter coatings or lubricants, so injected medicines are not the only possible exposure."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-03-chlorhexidine-ascia",
+            "locator": "ASCIA Q1–3; MHRA Device/Problem",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          },
+          {
+            "source_id": "anaphylaxis-p0-03-chlorhexidine-mhra",
+            "locator": "ASCIA Q1–3; MHRA Device/Problem",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          }
+        ]
       }
     ],
     "supports": [
@@ -575,6 +615,66 @@
         ],
         "relation": "supports",
         "assessment": "Mast Cell Disorders and Anaphylaxis and MCAS sections distinguish underlying disorders, unprovoked episodes and attacks not meeting anaphylaxis definition."
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-latex-aaaai",
+        "source_metadata_sha256": "fe6fc821d6f7498ed0aaaa772e97d7e479ea83a10443a5d7e1a15cd70387c2dc",
+        "source_version": "2026-06-18",
+        "locator": "Reactions to Latex; Treating Latex Allergy; lines30–51",
+        "population": "乳胶过敏成人和儿童；特殊接触风险者",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "AAAAI 独立编写，未列逐项研究依据；与 ASCIA 可能共享国际过敏共识。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "限定支持新增主张；独立审核待完成。"
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-latex-ascia",
+        "source_metadata_sha256": "9c105e977df27bbca4e51c51c7ed9cf57e56d99791fefca0c702cd03c9df4912",
+        "source_version": "August2024",
+        "locator": "Q1–9, lines531–616",
+        "population": "乳胶过敏成人和儿童",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "ASCIA 独立编写；不是 AAAAI 转载，底层研究重叠未逐项评估。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "限定支持新增主张；独立审核待完成。"
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-chlorhexidine-ascia",
+        "source_metadata_sha256": "28f70e9a51f7fff27db4671c58689756482a1c11227f76448e1937f74011b8e8",
+        "source_version": "June2024",
+        "locator": "pp1–3 Q1–7",
+        "population": "氯己定过敏者及照护者",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "ASCIA 与 ANZAAG 共同编写算一个来源；可能共享监管病例，但未直接引用 MHRA 通报。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "限定支持新增主张；独立审核待完成。"
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-chlorhexidine-mhra",
+        "source_metadata_sha256": "801b31d0fee52fd036b38a8f30634fef75185fd039ff73a8554d221a1b3b0908",
+        "source_version": "Issued2012-10-25; published2014-12-17",
+        "locator": "Device; Problem; Action, lines86–106",
+        "population": "医疗环境使用含氯己定产品者",
+        "region": "GB",
+        "independence_group": "UK-MHRA",
+        "upstream_evidence": [
+          "英国监管报告包含收到的案例；独立于 ASCIA 编写，不能当作随机试验证据。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "限定支持新增主张；独立审核待完成。"
       }
     ],
     "independence": {
@@ -603,6 +703,16 @@
         "anaphylaxis-p0-02-mast-dgaki",
         "anaphylaxis-p0-02-mast-jtf2023",
         "anaphylaxis-p0-02-mast-orphan",
+        "anaphylaxis-p0-03-ascia-mast-cell-disorders-2025",
+        "anaphylaxis-p0-03-bad-urticaria-pigmentosa-2020",
+        "anaphylaxis-p0-03-chlorhexidine-ascia",
+        "anaphylaxis-p0-03-chlorhexidine-mhra",
+        "anaphylaxis-p0-03-hives-ascia",
+        "anaphylaxis-p0-03-latex-aaaai",
+        "anaphylaxis-p0-03-latex-ascia",
+        "anaphylaxis-p0-03-serum-rch",
+        "anaphylaxis-p0-03-serum-who",
+        "anaphylaxis-p0-03-spd-mastocytosis-2018",
         "anaphylaxis-p0-aaaai",
         "anaphylaxis-p0-acaai-test",
         "anaphylaxis-p0-adam",
@@ -615,42 +725,61 @@
         "anaphylaxis-p0-foodtest",
         "anaphylaxis-p0-intolerance",
         "anaphylaxis-p0-mcas",
+        "anaphylaxis-p0-ontario-bls",
         "anaphylaxis-p0-pregnancy",
         "anaphylaxis-p0-rcuk",
         "anaphylaxis-p0-venom",
-        "anaphylaxis-p0-wao"
+        "anaphylaxis-p0-wao",
+        "anaphylaxis-p0-wms"
+      ],
+      "inherited_source_ids": [
+        "anaphylaxis-nhs",
+        "anaphylaxis-p0-02-cold-aad",
+        "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
+        "anaphylaxis-p0-02-mast-jtf2023",
+        "anaphylaxis-p0-02-mast-orphan",
+        "anaphylaxis-p0-aaaai",
+        "anaphylaxis-p0-acaai-test",
+        "anaphylaxis-p0-adam",
+        "anaphylaxis-p0-drug",
+        "anaphylaxis-p0-exercise",
+        "anaphylaxis-p0-exercise-acaai",
+        "anaphylaxis-p0-fda-neffy",
+        "anaphylaxis-p0-food",
+        "anaphylaxis-p0-foodtest",
+        "anaphylaxis-p0-intolerance",
+        "anaphylaxis-p0-ontario-bls",
+        "anaphylaxis-p0-pregnancy",
+        "anaphylaxis-p0-rcuk",
+        "anaphylaxis-p0-venom",
+        "anaphylaxis-p0-wms"
       ],
       "findings": [
         {
-          "id": "diet-action",
-          "status": "resolved",
-          "finding": "Temperature diary instruction was classified as explanation.",
-          "resolution": "Author changed to action; AAD and SFD independently establish the temperature/history clue. Diary wording is a low-risk practical implementation of history taking, not a tested treatment outcome."
+          "finding": "Two explicit clinical actions were labelled explanation.",
+          "resolution": "physical-history and differentials-5 corrected to action with separate authoring-source support.",
+          "status": "resolved"
         },
         {
-          "id": "sfd-specific-url",
-          "status": "resolved",
-          "finding": "SFD link did not point directly to the perioperative advice.",
-          "resolution": "Exact associated-measures URL and metadata bindings corrected; In Case of Surgery independently reread."
+          "finding": "WHO snakebite locator conflated antivenom reaction care with storage and had off-by-one PDF pages.",
+          "resolution": "Correct6.7.5/6.7.5.4,printed131–135/PDF134–138; source metadata hashes rebound. Old non-relevant storage locator not treated as evidence.",
+          "status": "resolved"
         },
         {
-          "id": "unreadable-original-routes",
-          "status": "resolved",
-          "finding": "Dustri/SciELO and initial Orphan routes intermittently inaccessible during independent review.",
-          "resolution": "Same original DGAKI/SBA-ASBAI articles identified by DOI and reread through Europe PMC XML; Orphan original PDF retrieved from its official alternate route and relevant pages extracted. Mirrors do not count as new sources."
-        },
-        {
-          "id": "dispute-enum",
-          "status": "resolved",
-          "finding": "Author used resolved as dispute status, outside the data contract.",
-          "resolution": "Independent reviewer adjudicates regional_difference using the retained international conditions and explicitly differing VIT recommendations. Apply this review decision when accepting the records; do not alter medical text or weaken the validator."
+          "finding": "Physical-factor residual scope initially lacked clear distinction from local urticaria and concrete trigger investigation.",
+          "resolution": "BAD/ASCIA local-pattern differential combined with WAO systemic emergency pathway and individual trigger history/avoidance. No claim that every stimulus has separate proven therapy.",
+          "status": "resolved"
         }
       ],
-      "resolution": "All 11 added claims retain appropriate population, trigger and action scope in both languages. Added text does not change existing numeric rescue/observation/product thresholds. Shared upstream guidance is disclosed; independent editorial corroboration is not independent trial replication. Cold local hives are not anaphylaxis; anaphylaxis in an established mast-cell disorder is not all MCAS or all symptoms. No unsupported home testing, dosing or perioperative premedication added."
+      "resolution": "Accept exact candidate hashes for editorial evidence and mapped scope. No clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "content_sha256": "b62dc4bd389a8d90cec008779d72be8eba9c7cdc2e700799a2357d72a865171c",
-    "review_report": "reports/p0-02-anaphylaxis-independent.json"
+    "content_sha256": "12a1a999466fa00e0a1e422a612d81422c2f0a5cb0d32f7034ba15fe2112e105",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json"
   },
   {
     "id": "p0-01-anaphylaxis-red_flags",
@@ -1408,6 +1537,26 @@
             "assessment": "Triggering situations names cold air/water/ingestion; local medical challenge discussed; this source alone is not an acute rescue algorithm."
           }
         ]
+      },
+      {
+        "id": "p0-03-physical-history",
+        "kind": "action",
+        "text": {
+          "zh-CN": "受热、出汗、日晒或其他物理刺激后出现反应时，医生会把刺激与食物、药物、运动及症状时间线一起核对；单有风团与出现气道或循环问题的处理不同。尚不能确定具体刺激时，仍需按本次严重程度处理，再由专科继续查因。",
+          "en": "After heat, sweating, sunlight or another physical exposure, clinicians review the stimulus alongside food, medicines, exercise and symptom timing. Hives alone differ from airway or circulation involvement. An uncertain specific trigger does not change severity-based acute care; specialist investigation follows."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Table8 and long-term management; p11 mechanisms",
+            "assessment": "All-trigger severity-based care, cause investigation and individualized plan; no subtype-specific threshold claimed."
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-cold-bad",
+            "locator": "Self-care; Other urticarias",
+            "assessment": "Individual physical triggers/avoidance and local skin versus breathing/swallowing involvement; not an independent anaphylaxis protocol."
+          }
+        ]
       }
     ],
     "supports": [
@@ -1530,6 +1679,21 @@
         ],
         "relation": "supports",
         "assessment": "Triggering situations names cold air/water/ingestion; local medical challenge discussed; this source alone is not an acute rescue algorithm."
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-cold-bad",
+        "source_metadata_sha256": "373f20ee32080e2300afb294d527dffc862da6ecff8691a0d526029b5f562ef4",
+        "locator": "Other urticarias and Self-care; lines53–69",
+        "source_version": "June2020 PDF; current online page",
+        "accessed_at": "2026-10-03",
+        "population": "Physical trigger reactions; clinical severity determines route",
+        "region": "GB",
+        "independence_group": "UK-BAD",
+        "upstream_evidence": [
+          "WAO2020 shared international consensus; BAD independently edited physical-urticaria education; mirror not an independent author."
+        ],
+        "relation": "supports",
+        "assessment": "Physical-trigger clinical distinction and individualized avoidance/assessment."
       }
     ],
     "independence": {
@@ -1558,6 +1722,16 @@
         "anaphylaxis-p0-02-mast-dgaki",
         "anaphylaxis-p0-02-mast-jtf2023",
         "anaphylaxis-p0-02-mast-orphan",
+        "anaphylaxis-p0-03-ascia-mast-cell-disorders-2025",
+        "anaphylaxis-p0-03-bad-urticaria-pigmentosa-2020",
+        "anaphylaxis-p0-03-chlorhexidine-ascia",
+        "anaphylaxis-p0-03-chlorhexidine-mhra",
+        "anaphylaxis-p0-03-hives-ascia",
+        "anaphylaxis-p0-03-latex-aaaai",
+        "anaphylaxis-p0-03-latex-ascia",
+        "anaphylaxis-p0-03-serum-rch",
+        "anaphylaxis-p0-03-serum-who",
+        "anaphylaxis-p0-03-spd-mastocytosis-2018",
         "anaphylaxis-p0-aaaai",
         "anaphylaxis-p0-acaai-test",
         "anaphylaxis-p0-adam",
@@ -1570,42 +1744,61 @@
         "anaphylaxis-p0-foodtest",
         "anaphylaxis-p0-intolerance",
         "anaphylaxis-p0-mcas",
+        "anaphylaxis-p0-ontario-bls",
         "anaphylaxis-p0-pregnancy",
         "anaphylaxis-p0-rcuk",
         "anaphylaxis-p0-venom",
-        "anaphylaxis-p0-wao"
+        "anaphylaxis-p0-wao",
+        "anaphylaxis-p0-wms"
+      ],
+      "inherited_source_ids": [
+        "anaphylaxis-nhs",
+        "anaphylaxis-p0-02-cold-aad",
+        "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
+        "anaphylaxis-p0-02-mast-jtf2023",
+        "anaphylaxis-p0-02-mast-orphan",
+        "anaphylaxis-p0-aaaai",
+        "anaphylaxis-p0-acaai-test",
+        "anaphylaxis-p0-adam",
+        "anaphylaxis-p0-drug",
+        "anaphylaxis-p0-exercise",
+        "anaphylaxis-p0-exercise-acaai",
+        "anaphylaxis-p0-fda-neffy",
+        "anaphylaxis-p0-food",
+        "anaphylaxis-p0-foodtest",
+        "anaphylaxis-p0-intolerance",
+        "anaphylaxis-p0-ontario-bls",
+        "anaphylaxis-p0-pregnancy",
+        "anaphylaxis-p0-rcuk",
+        "anaphylaxis-p0-venom",
+        "anaphylaxis-p0-wms"
       ],
       "findings": [
         {
-          "id": "diet-action",
-          "status": "resolved",
-          "finding": "Temperature diary instruction was classified as explanation.",
-          "resolution": "Author changed to action; AAD and SFD independently establish the temperature/history clue. Diary wording is a low-risk practical implementation of history taking, not a tested treatment outcome."
+          "finding": "Two explicit clinical actions were labelled explanation.",
+          "resolution": "physical-history and differentials-5 corrected to action with separate authoring-source support.",
+          "status": "resolved"
         },
         {
-          "id": "sfd-specific-url",
-          "status": "resolved",
-          "finding": "SFD link did not point directly to the perioperative advice.",
-          "resolution": "Exact associated-measures URL and metadata bindings corrected; In Case of Surgery independently reread."
+          "finding": "WHO snakebite locator conflated antivenom reaction care with storage and had off-by-one PDF pages.",
+          "resolution": "Correct6.7.5/6.7.5.4,printed131–135/PDF134–138; source metadata hashes rebound. Old non-relevant storage locator not treated as evidence.",
+          "status": "resolved"
         },
         {
-          "id": "unreadable-original-routes",
-          "status": "resolved",
-          "finding": "Dustri/SciELO and initial Orphan routes intermittently inaccessible during independent review.",
-          "resolution": "Same original DGAKI/SBA-ASBAI articles identified by DOI and reread through Europe PMC XML; Orphan original PDF retrieved from its official alternate route and relevant pages extracted. Mirrors do not count as new sources."
-        },
-        {
-          "id": "dispute-enum",
-          "status": "resolved",
-          "finding": "Author used resolved as dispute status, outside the data contract.",
-          "resolution": "Independent reviewer adjudicates regional_difference using the retained international conditions and explicitly differing VIT recommendations. Apply this review decision when accepting the records; do not alter medical text or weaken the validator."
+          "finding": "Physical-factor residual scope initially lacked clear distinction from local urticaria and concrete trigger investigation.",
+          "resolution": "BAD/ASCIA local-pattern differential combined with WAO systemic emergency pathway and individual trigger history/avoidance. No claim that every stimulus has separate proven therapy.",
+          "status": "resolved"
         }
       ],
-      "resolution": "All 11 added claims retain appropriate population, trigger and action scope in both languages. Added text does not change existing numeric rescue/observation/product thresholds. Shared upstream guidance is disclosed; independent editorial corroboration is not independent trial replication. Cold local hives are not anaphylaxis; anaphylaxis in an established mast-cell disorder is not all MCAS or all symptoms. No unsupported home testing, dosing or perioperative premedication added."
+      "resolution": "Accept exact candidate hashes for editorial evidence and mapped scope. No clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "content_sha256": "35afec39d6333c2b69762c84e6433ba2f63dc9692b4b7b1ddef0f9dcd55dd088",
-    "review_report": "reports/p0-02-anaphylaxis-independent.json"
+    "content_sha256": "7ebf54163aae03caac4c576c820e166a7c3a82a47116cd8cec5576f576178bc6",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json"
   },
   {
     "id": "p0-01-anaphylaxis-differentials",
@@ -1748,6 +1941,46 @@
             "source_id": "anaphylaxis-p0-02-mast-jtf2023",
             "locator": "Printed pp36-39: Mast Cell Disorders and Anaphylaxis; Clinical Presentation; recommendation42; MCAS",
             "assessment": "Mast Cell Disorders and Anaphylaxis and MCAS sections distinguish underlying disorders, unprovoked episodes and attacks not meeting anaphylaxis definition."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-differentials-5",
+        "kind": "action",
+        "text": {
+          "zh-CN": "热、压力、摩擦或日光等物理刺激也可能引出风团。局部诱发性荨麻疹与全身严重过敏不是同一诊断；不能把所有物理刺激都归为寒冷，也不能因为诱因还未确定就忽略本页的呼吸、循环危险信号。",
+          "en": "Physical stimuli such as heat, pressure, friction or sunlight can also provoke wheals. Local inducible urticaria and anaphylaxis are different diagnoses. Not every physical trigger is cold, and uncertainty about the trigger must not obscure the breathing and circulation danger signs on this page."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-03-hives-ascia",
+            "locator": "ASCIA Q3–4; BAD Other urticarias/Self-care",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-cold-bad",
+            "locator": "ASCIA Q3–4; BAD Other urticarias/Self-care",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          }
+        ]
+      },
+      {
+        "id": "p0-03-serum-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "治疗用抗血清（如抗蛇毒血清）可引起急性严重过敏；这与数天后出现发热、皮疹及关节痛的迟发血清病不同，处理路径也不同。",
+          "en": "Therapeutic antiserum, such as snake antivenom, can cause acute anaphylaxis. This differs from delayed serum sickness with fever, rash and joint pain days later, which needs a different treatment approach."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-03-serum-who",
+            "locator": "Section6.7.5 antivenom reactions, including6.7.5.4 treatment; printed pp131–135 (PDF pages134–138); resuming antivenom after reaction control printed p135. Section6.7.6 is storage and is not cited for treatment.",
+            "assessment": "区分急性反应与迟发血清病；急救及随访教育。"
+          },
+          {
+            "source_id": "anaphylaxis-p0-03-serum-rch",
+            "locator": "Giving Antivenom; Other management considerations; Consider discharge, lines165–206",
+            "assessment": "区分急性反应与迟发血清病；急救及随访教育。"
           }
         ]
       }
@@ -1902,6 +2135,66 @@
         ],
         "relation": "supports",
         "assessment": "Mast Cell Disorders and Anaphylaxis and MCAS sections distinguish underlying disorders, unprovoked episodes and attacks not meeting anaphylaxis definition."
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-hives-ascia",
+        "source_metadata_sha256": "398f54645b1e37073927b70d01efeaf849f470fd9db26d8dd936d8d7c17e7897",
+        "source_version": "June2024",
+        "locator": "pp1–2 Q3–7",
+        "population": "荨麻疹患者；严重过敏需另按全身危急表现识别",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "ASCIA 原写 FAQ；与 BAD 为不同机构，基础共识可能相同。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "限定支持新增主张；独立审核待完成。"
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-cold-bad",
+        "source_metadata_sha256": "373f20ee32080e2300afb294d527dffc862da6ecff8691a0d526029b5f562ef4",
+        "source_version": "June2020 PDF; current online page",
+        "locator": "Other urticarias and Self-care; lines53–69",
+        "population": "诱发性荨麻疹各年龄",
+        "region": "GB",
+        "independence_group": "UK-BAD",
+        "upstream_evidence": [
+          "BAD 原写患者资料；与 ASCIA 可能共享研究。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "限定支持新增主张；独立审核待完成。"
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-serum-who",
+        "source_metadata_sha256": "806351d9c50c4fcd85e3f6e5c1f4a190b5b0bf3151f4e74ef03d8b0b5eb080b6",
+        "source_version": "Guidelines for management of snakebites, second edition2016",
+        "locator": "Section6.7.5 antivenom reactions, including6.7.5.4 treatment; printed pp131–135 (PDF pages134–138); resuming antivenom after reaction control printed p135. Section6.7.6 is storage and is not cited for treatment.",
+        "population": "接受抗蛇毒血清者",
+        "region": "South-East Asia",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "WHO 与 RCH 独立编写；共享蛇伤/抗血清药理研究，未证明底层证据完全独立。RCH地区蛇种、剂量及给药路径不外推。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "急性抗血清反应及迟发血清病"
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-serum-rch",
+        "source_metadata_sha256": "07e946802babe0826dadfd702ec1c2d368690dd7926533f685c203d87ad64ad3",
+        "source_version": "UpdatedJanuary2018",
+        "locator": "Giving Antivenom; Other management considerations; Consider discharge, lines165–206",
+        "population": "儿童；维多利亚蛇种治疗方案不得全球外推",
+        "region": "Victoria Australia",
+        "independence_group": "AU-RCH",
+        "upstream_evidence": [
+          "WHO 与 RCH 独立编写；共享蛇伤/抗血清药理研究，未证明底层证据完全独立。RCH地区蛇种、剂量及给药路径不外推。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "急性抗血清反应及迟发血清病"
       }
     ],
     "independence": {
@@ -1930,6 +2223,16 @@
         "anaphylaxis-p0-02-mast-dgaki",
         "anaphylaxis-p0-02-mast-jtf2023",
         "anaphylaxis-p0-02-mast-orphan",
+        "anaphylaxis-p0-03-ascia-mast-cell-disorders-2025",
+        "anaphylaxis-p0-03-bad-urticaria-pigmentosa-2020",
+        "anaphylaxis-p0-03-chlorhexidine-ascia",
+        "anaphylaxis-p0-03-chlorhexidine-mhra",
+        "anaphylaxis-p0-03-hives-ascia",
+        "anaphylaxis-p0-03-latex-aaaai",
+        "anaphylaxis-p0-03-latex-ascia",
+        "anaphylaxis-p0-03-serum-rch",
+        "anaphylaxis-p0-03-serum-who",
+        "anaphylaxis-p0-03-spd-mastocytosis-2018",
         "anaphylaxis-p0-aaaai",
         "anaphylaxis-p0-acaai-test",
         "anaphylaxis-p0-adam",
@@ -1942,42 +2245,61 @@
         "anaphylaxis-p0-foodtest",
         "anaphylaxis-p0-intolerance",
         "anaphylaxis-p0-mcas",
+        "anaphylaxis-p0-ontario-bls",
         "anaphylaxis-p0-pregnancy",
         "anaphylaxis-p0-rcuk",
         "anaphylaxis-p0-venom",
-        "anaphylaxis-p0-wao"
+        "anaphylaxis-p0-wao",
+        "anaphylaxis-p0-wms"
+      ],
+      "inherited_source_ids": [
+        "anaphylaxis-nhs",
+        "anaphylaxis-p0-02-cold-aad",
+        "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
+        "anaphylaxis-p0-02-mast-jtf2023",
+        "anaphylaxis-p0-02-mast-orphan",
+        "anaphylaxis-p0-aaaai",
+        "anaphylaxis-p0-acaai-test",
+        "anaphylaxis-p0-adam",
+        "anaphylaxis-p0-drug",
+        "anaphylaxis-p0-exercise",
+        "anaphylaxis-p0-exercise-acaai",
+        "anaphylaxis-p0-fda-neffy",
+        "anaphylaxis-p0-food",
+        "anaphylaxis-p0-foodtest",
+        "anaphylaxis-p0-intolerance",
+        "anaphylaxis-p0-ontario-bls",
+        "anaphylaxis-p0-pregnancy",
+        "anaphylaxis-p0-rcuk",
+        "anaphylaxis-p0-venom",
+        "anaphylaxis-p0-wms"
       ],
       "findings": [
         {
-          "id": "diet-action",
-          "status": "resolved",
-          "finding": "Temperature diary instruction was classified as explanation.",
-          "resolution": "Author changed to action; AAD and SFD independently establish the temperature/history clue. Diary wording is a low-risk practical implementation of history taking, not a tested treatment outcome."
+          "finding": "Two explicit clinical actions were labelled explanation.",
+          "resolution": "physical-history and differentials-5 corrected to action with separate authoring-source support.",
+          "status": "resolved"
         },
         {
-          "id": "sfd-specific-url",
-          "status": "resolved",
-          "finding": "SFD link did not point directly to the perioperative advice.",
-          "resolution": "Exact associated-measures URL and metadata bindings corrected; In Case of Surgery independently reread."
+          "finding": "WHO snakebite locator conflated antivenom reaction care with storage and had off-by-one PDF pages.",
+          "resolution": "Correct6.7.5/6.7.5.4,printed131–135/PDF134–138; source metadata hashes rebound. Old non-relevant storage locator not treated as evidence.",
+          "status": "resolved"
         },
         {
-          "id": "unreadable-original-routes",
-          "status": "resolved",
-          "finding": "Dustri/SciELO and initial Orphan routes intermittently inaccessible during independent review.",
-          "resolution": "Same original DGAKI/SBA-ASBAI articles identified by DOI and reread through Europe PMC XML; Orphan original PDF retrieved from its official alternate route and relevant pages extracted. Mirrors do not count as new sources."
-        },
-        {
-          "id": "dispute-enum",
-          "status": "resolved",
-          "finding": "Author used resolved as dispute status, outside the data contract.",
-          "resolution": "Independent reviewer adjudicates regional_difference using the retained international conditions and explicitly differing VIT recommendations. Apply this review decision when accepting the records; do not alter medical text or weaken the validator."
+          "finding": "Physical-factor residual scope initially lacked clear distinction from local urticaria and concrete trigger investigation.",
+          "resolution": "BAD/ASCIA local-pattern differential combined with WAO systemic emergency pathway and individual trigger history/avoidance. No claim that every stimulus has separate proven therapy.",
+          "status": "resolved"
         }
       ],
-      "resolution": "All 11 added claims retain appropriate population, trigger and action scope in both languages. Added text does not change existing numeric rescue/observation/product thresholds. Shared upstream guidance is disclosed; independent editorial corroboration is not independent trial replication. Cold local hives are not anaphylaxis; anaphylaxis in an established mast-cell disorder is not all MCAS or all symptoms. No unsupported home testing, dosing or perioperative premedication added."
+      "resolution": "Accept exact candidate hashes for editorial evidence and mapped scope. No clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "content_sha256": "f9881d8b4a32b88ecf7eeb6b40547b39b22d4dacc2f731f80a10b5626c24e84a",
-    "review_report": "reports/p0-02-anaphylaxis-independent.json"
+    "content_sha256": "0e8feb9bfec59dfb25dd3fe74961645e3fc0fa2a6b35f4d439ea0590d8f7376c",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json"
   },
   {
     "id": "p0-01-anaphylaxis-treatment",
@@ -1988,8 +2310,8 @@
     },
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/mi_icd_scope",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "claims": [
@@ -2097,6 +2419,26 @@
           }
         ],
         "id": "treatment-4"
+      },
+      {
+        "id": "p0-03-serum-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "接受抗血清时出现急性呼吸或循环异常，应立即呼叫现场医护，由团队按严重过敏流程急救，并评估是否暂时停止及何时继续抗血清；不能因害怕过敏而自行拒绝可能救命的治疗。",
+          "en": "During antiserum treatment, alert staff immediately to new breathing or circulatory problems. The team treats anaphylaxis and decides about pausing and resuming antiserum; fear of a reaction should not lead to an unaided decision to reject potentially lifesaving treatment."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-03-serum-who",
+            "locator": "Section6.7.5 antivenom reactions, including6.7.5.4 treatment; printed pp131–135 (PDF pages134–138); resuming antivenom after reaction control printed p135. Section6.7.6 is storage and is not cited for treatment.",
+            "assessment": "区分急性反应与迟发血清病；急救及随访教育。"
+          },
+          {
+            "source_id": "anaphylaxis-p0-03-serum-rch",
+            "locator": "Giving Antivenom; Other management considerations; Consider discharge, lines165–206",
+            "assessment": "区分急性反应与迟发血清病；急救及随访教育。"
+          }
+        ]
       }
     ],
     "supports": [
@@ -2189,6 +2531,36 @@
         ],
         "relation": "supports",
         "assessment": "Explicitly says not to induce vomiting while separating the person from a possible allergen. This corroborates only the no-vomiting clause; existing RCUK/WAO bind removal and no rescue delay. Other WMS positioning/dosing/expired-device recommendations are not adopted."
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-serum-who",
+        "source_metadata_sha256": "806351d9c50c4fcd85e3f6e5c1f4a190b5b0bf3151f4e74ef03d8b0b5eb080b6",
+        "source_version": "Guidelines for management of snakebites, second edition2016",
+        "locator": "Section6.7.5 antivenom reactions, including6.7.5.4 treatment; printed pp131–135 (PDF pages134–138); resuming antivenom after reaction control printed p135. Section6.7.6 is storage and is not cited for treatment.",
+        "population": "接受抗蛇毒血清者",
+        "region": "South-East Asia",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "WHO 与 RCH 独立编写；共享蛇伤/抗血清药理研究，未证明底层证据完全独立。RCH地区蛇种、剂量及给药路径不外推。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "急性抗血清反应及迟发血清病"
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-serum-rch",
+        "source_metadata_sha256": "07e946802babe0826dadfd702ec1c2d368690dd7926533f685c203d87ad64ad3",
+        "source_version": "UpdatedJanuary2018",
+        "locator": "Giving Antivenom; Other management considerations; Consider discharge, lines165–206",
+        "population": "儿童；维多利亚蛇种治疗方案不得全球外推",
+        "region": "Victoria Australia",
+        "independence_group": "AU-RCH",
+        "upstream_evidence": [
+          "WHO 与 RCH 独立编写；共享蛇伤/抗血清药理研究，未证明底层证据完全独立。RCH地区蛇种、剂量及给药路径不外推。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "急性抗血清反应及迟发血清病"
       }
     ],
     "independence": {
@@ -2202,11 +2574,31 @@
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/priority_medical_rules",
-      "reviewer": "/root/mi_icd_scope",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_allergy",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "anaphylaxis-nhs",
+        "anaphylaxis-p0-02-cold-aad",
+        "anaphylaxis-p0-02-cold-bad",
+        "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
+        "anaphylaxis-p0-02-mast-ascia",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
+        "anaphylaxis-p0-02-mast-jtf2023",
+        "anaphylaxis-p0-02-mast-orphan",
+        "anaphylaxis-p0-03-ascia-mast-cell-disorders-2025",
+        "anaphylaxis-p0-03-bad-urticaria-pigmentosa-2020",
+        "anaphylaxis-p0-03-chlorhexidine-ascia",
+        "anaphylaxis-p0-03-chlorhexidine-mhra",
+        "anaphylaxis-p0-03-hives-ascia",
+        "anaphylaxis-p0-03-latex-aaaai",
+        "anaphylaxis-p0-03-latex-ascia",
+        "anaphylaxis-p0-03-serum-rch",
+        "anaphylaxis-p0-03-serum-who",
+        "anaphylaxis-p0-03-spd-mastocytosis-2018",
         "anaphylaxis-p0-aaaai",
         "anaphylaxis-p0-acaai-test",
         "anaphylaxis-p0-adam",
@@ -2226,29 +2618,54 @@
         "anaphylaxis-p0-wao",
         "anaphylaxis-p0-wms"
       ],
+      "inherited_source_ids": [
+        "anaphylaxis-nhs",
+        "anaphylaxis-p0-02-cold-aad",
+        "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
+        "anaphylaxis-p0-02-mast-jtf2023",
+        "anaphylaxis-p0-02-mast-orphan",
+        "anaphylaxis-p0-aaaai",
+        "anaphylaxis-p0-acaai-test",
+        "anaphylaxis-p0-adam",
+        "anaphylaxis-p0-drug",
+        "anaphylaxis-p0-exercise",
+        "anaphylaxis-p0-exercise-acaai",
+        "anaphylaxis-p0-fda-neffy",
+        "anaphylaxis-p0-food",
+        "anaphylaxis-p0-foodtest",
+        "anaphylaxis-p0-intolerance",
+        "anaphylaxis-p0-ontario-bls",
+        "anaphylaxis-p0-pregnancy",
+        "anaphylaxis-p0-rcuk",
+        "anaphylaxis-p0-venom",
+        "anaphylaxis-p0-wms"
+      ],
       "findings": [
         {
-          "id": "P0-ANA-NO-VOMITING",
-          "status": "resolved",
-          "claim_ids": [
-            "treatment-3"
-          ],
-          "resolution": "Added independently written WMS official summary corroborating RCUK no-induced-vomiting clause. WAO is retained only for trigger removal and immediate rescue; no false clause attribution."
+          "finding": "Two explicit clinical actions were labelled explanation.",
+          "resolution": "physical-history and differentials-5 corrected to action with separate authoring-source support.",
+          "status": "resolved"
         },
         {
-          "id": "P0-ANA-ORAL-SAFETY",
-          "status": "resolved",
-          "claim_ids": [
-            "medications-2"
-          ],
-          "resolution": "Added Ontario professional Patient Management item9 as scoped corroboration of ADAM public breathing-difficulty instruction. Its BLS/ALS exceptions remain explicit; no universal oral ban is inferred."
+          "finding": "WHO snakebite locator conflated antivenom reaction care with storage and had off-by-one PDF pages.",
+          "resolution": "Correct6.7.5/6.7.5.4,printed131–135/PDF134–138; source metadata hashes rebound. Old non-relevant storage locator not treated as evidence.",
+          "status": "resolved"
+        },
+        {
+          "finding": "Physical-factor residual scope initially lacked clear distinction from local urticaria and concrete trigger investigation.",
+          "resolution": "BAD/ASCIA local-pattern differential combined with WAO systemic emergency pathway and individual trigger history/avoidance. No claim that every stimulus has separate proven therapy.",
+          "status": "resolved"
         }
       ],
-      "resolution": "All64 bilingual claims have adequate claim-specific support for a lay encyclopedia. The two precise safety-action bindings were completed then reviewed; the medical wording remained unchanged. No remaining substantive evidence or bilingual issue. ICD semantic mapping and clinical sign-off are outside this review."
+      "resolution": "Accept exact candidate hashes for editorial evidence and mapped scope. No clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "content_sha256": "c3b2b37ccbfaf11d6212853f46a84f65e6b96cf74aa08e35820d02b693e462f1",
-    "review_report": "reports/p0-anaphylaxis-independent.json"
+    "content_sha256": "a4fa4226ddfe5d48efe067f311ee0e36d709df39ef200ade949551df3f9d13c8",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json"
   },
   {
     "id": "p0-01-anaphylaxis-medications",
@@ -3443,6 +3860,31 @@
             "assessment": "General urgent anaphylaxis recognition/rescue, not proof of subtype-specific epidemiology."
           }
         ]
+      },
+      {
+        "id": "p0-03-special_populations-6",
+        "kind": "action",
+        "text": {
+          "zh-CN": "儿童已确诊皮肤肥大细胞增多症时，急救笔是否需要处方由医生按具体风险决定，不照搬成人安排；如果已处方，家庭和学校按本页已有的装置训练及行动计划衔接照护。",
+          "en": "For a child with diagnosed cutaneous mastocytosis, a clinician decides whether an auto-injector is needed according to individual risk; adult arrangements should not simply be copied. If prescribed, connect family and school care through the device training and action plan described on this page."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-03-spd-mastocytosis-2018",
+            "locator": "SPD p1 complications; BAD p4 childhood adrenaline; ASCIA anaphylaxis education",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          },
+          {
+            "source_id": "anaphylaxis-p0-03-bad-urticaria-pigmentosa-2020",
+            "locator": "SPD p1 complications; BAD p4 childhood adrenaline; ASCIA anaphylaxis education",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          },
+          {
+            "source_id": "anaphylaxis-p0-ascia",
+            "locator": "SPD p1 complications; BAD p4 childhood adrenaline; ASCIA anaphylaxis education",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          }
+        ]
       }
     ],
     "supports": [
@@ -3625,6 +4067,36 @@
         ],
         "relation": "supports",
         "assessment": "School/work/camp contacts and training."
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-spd-mastocytosis-2018",
+        "source_metadata_sha256": "e63e726f405073f1c634a5cb9778fbd9943890cadb690f7f1f334c16b833047e",
+        "source_version": "Pediatric Dermatology 35(4), 2018; handout #23",
+        "locator": "p1 ARE THERE ANY COMPLICATIONS OF MASTOCYTOSIS?; p2 CHECK-UPS WITH YOUR DOCTOR; p2 MANAGING MASTOCYTOSIS / POSSIBLE TRIGGERS",
+        "population": "儿童皮肤肥大细胞增多症；并非全部 MCAS",
+        "region": "美国",
+        "independence_group": "US-SPD",
+        "upstream_evidence": [
+          "SPD 署名作者、委员会及专家独立编写；Wiley 为原刊出版方，不另算独立来源。未列研究参考文献，无法证明与 BAD 完全没有共同上游。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "限定支持新增主张；独立审核待完成。"
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-bad-urticaria-pigmentosa-2020",
+        "source_metadata_sha256": "89b8f32b159e080082696f1265609c0c1cb99bc5ea01cbd969cba9862e9ed560",
+        "source_version": "Updated June 2020; lay reviewed May 2020; review due June 2023",
+        "locator": "p2 What are the symptoms of urticaria pigmentosa?; p4 Self care (What can I do?): adrenaline, new medicine and operation paragraphs",
+        "population": "色素性荨麻疹 / 皮肤肥大细胞增多症成人及儿童",
+        "region": "英国",
+        "independence_group": "UK-BAD",
+        "upstream_evidence": [
+          "BAD 独立患者教育资料，与 SPD 不同机构；没有逐项证据来源，共同基础研究关系不明。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "限定支持新增主张；独立审核待完成。"
       }
     ],
     "independence": {
@@ -3653,6 +4125,16 @@
         "anaphylaxis-p0-02-mast-dgaki",
         "anaphylaxis-p0-02-mast-jtf2023",
         "anaphylaxis-p0-02-mast-orphan",
+        "anaphylaxis-p0-03-ascia-mast-cell-disorders-2025",
+        "anaphylaxis-p0-03-bad-urticaria-pigmentosa-2020",
+        "anaphylaxis-p0-03-chlorhexidine-ascia",
+        "anaphylaxis-p0-03-chlorhexidine-mhra",
+        "anaphylaxis-p0-03-hives-ascia",
+        "anaphylaxis-p0-03-latex-aaaai",
+        "anaphylaxis-p0-03-latex-ascia",
+        "anaphylaxis-p0-03-serum-rch",
+        "anaphylaxis-p0-03-serum-who",
+        "anaphylaxis-p0-03-spd-mastocytosis-2018",
         "anaphylaxis-p0-aaaai",
         "anaphylaxis-p0-acaai-test",
         "anaphylaxis-p0-adam",
@@ -3665,42 +4147,61 @@
         "anaphylaxis-p0-foodtest",
         "anaphylaxis-p0-intolerance",
         "anaphylaxis-p0-mcas",
+        "anaphylaxis-p0-ontario-bls",
         "anaphylaxis-p0-pregnancy",
         "anaphylaxis-p0-rcuk",
         "anaphylaxis-p0-venom",
-        "anaphylaxis-p0-wao"
+        "anaphylaxis-p0-wao",
+        "anaphylaxis-p0-wms"
+      ],
+      "inherited_source_ids": [
+        "anaphylaxis-nhs",
+        "anaphylaxis-p0-02-cold-aad",
+        "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
+        "anaphylaxis-p0-02-mast-jtf2023",
+        "anaphylaxis-p0-02-mast-orphan",
+        "anaphylaxis-p0-aaaai",
+        "anaphylaxis-p0-acaai-test",
+        "anaphylaxis-p0-adam",
+        "anaphylaxis-p0-drug",
+        "anaphylaxis-p0-exercise",
+        "anaphylaxis-p0-exercise-acaai",
+        "anaphylaxis-p0-fda-neffy",
+        "anaphylaxis-p0-food",
+        "anaphylaxis-p0-foodtest",
+        "anaphylaxis-p0-intolerance",
+        "anaphylaxis-p0-ontario-bls",
+        "anaphylaxis-p0-pregnancy",
+        "anaphylaxis-p0-rcuk",
+        "anaphylaxis-p0-venom",
+        "anaphylaxis-p0-wms"
       ],
       "findings": [
         {
-          "id": "diet-action",
-          "status": "resolved",
-          "finding": "Temperature diary instruction was classified as explanation.",
-          "resolution": "Author changed to action; AAD and SFD independently establish the temperature/history clue. Diary wording is a low-risk practical implementation of history taking, not a tested treatment outcome."
+          "finding": "Two explicit clinical actions were labelled explanation.",
+          "resolution": "physical-history and differentials-5 corrected to action with separate authoring-source support.",
+          "status": "resolved"
         },
         {
-          "id": "sfd-specific-url",
-          "status": "resolved",
-          "finding": "SFD link did not point directly to the perioperative advice.",
-          "resolution": "Exact associated-measures URL and metadata bindings corrected; In Case of Surgery independently reread."
+          "finding": "WHO snakebite locator conflated antivenom reaction care with storage and had off-by-one PDF pages.",
+          "resolution": "Correct6.7.5/6.7.5.4,printed131–135/PDF134–138; source metadata hashes rebound. Old non-relevant storage locator not treated as evidence.",
+          "status": "resolved"
         },
         {
-          "id": "unreadable-original-routes",
-          "status": "resolved",
-          "finding": "Dustri/SciELO and initial Orphan routes intermittently inaccessible during independent review.",
-          "resolution": "Same original DGAKI/SBA-ASBAI articles identified by DOI and reread through Europe PMC XML; Orphan original PDF retrieved from its official alternate route and relevant pages extracted. Mirrors do not count as new sources."
-        },
-        {
-          "id": "dispute-enum",
-          "status": "resolved",
-          "finding": "Author used resolved as dispute status, outside the data contract.",
-          "resolution": "Independent reviewer adjudicates regional_difference using the retained international conditions and explicitly differing VIT recommendations. Apply this review decision when accepting the records; do not alter medical text or weaken the validator."
+          "finding": "Physical-factor residual scope initially lacked clear distinction from local urticaria and concrete trigger investigation.",
+          "resolution": "BAD/ASCIA local-pattern differential combined with WAO systemic emergency pathway and individual trigger history/avoidance. No claim that every stimulus has separate proven therapy.",
+          "status": "resolved"
         }
       ],
-      "resolution": "All 11 added claims retain appropriate population, trigger and action scope in both languages. Added text does not change existing numeric rescue/observation/product thresholds. Shared upstream guidance is disclosed; independent editorial corroboration is not independent trial replication. Cold local hives are not anaphylaxis; anaphylaxis in an established mast-cell disorder is not all MCAS or all symptoms. No unsupported home testing, dosing or perioperative premedication added."
+      "resolution": "Accept exact candidate hashes for editorial evidence and mapped scope. No clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "content_sha256": "4dc4bdf5ae8f5b451df3452cb9299f18a7f006174d242411c2a70b4378835bdb",
-    "review_report": "reports/p0-02-anaphylaxis-independent.json"
+    "content_sha256": "ed5f53063d4efb9562175529f479c0f60b4ec00073a214c2459672f241dcf17b",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json"
   },
   {
     "id": "p0-01-anaphylaxis-prognosis_followup",
@@ -3823,6 +4324,51 @@
             "source_id": "anaphylaxis-p0-02-mast-dgaki",
             "locator": "Publisher abstract line140: prolonged/permanent VIT",
             "assessment": "Publisher abstract explicitly allows prolonged/permanent VIT in mastocytosis; original guideline search text Box21 recommendation48 agrees. Not a universal duration."
+          }
+        ]
+      },
+      {
+        "id": "p0-03-prognosis_followup-8",
+        "kind": "action",
+        "text": {
+          "zh-CN": "对专科已经确诊的肥大细胞活化综合征（MCAS），复诊要评估再次发作、已知诱因和治疗后症状的变化。医生按病因和受累器官调整长期照护；有指征配备的严重过敏急救计划仍需执行。MCAS 不自动等同于系统性肥大细胞增多症。",
+          "en": "For specialist-confirmed mast cell activation syndrome (MCAS), follow-up should assess recurrent episodes, known triggers and symptom changes with treatment. Clinicians tailor continuing care to the cause and affected organs; an anaphylaxis plan provided when indicated remains necessary. MCAS does not automatically mean systemic mastocytosis."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-03-ascia-mast-cell-disorders-2025",
+            "locator": "ASCIA p9 Management; AAAAI Treatment/Diagnosis; ASCIA FAQ Q7",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          },
+          {
+            "source_id": "anaphylaxis-p0-mcas",
+            "locator": "ASCIA p9 Management; AAAAI Treatment/Diagnosis; ASCIA FAQ Q7",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-mast-ascia",
+            "locator": "ASCIA p9 Management; AAAAI Treatment/Diagnosis; ASCIA FAQ Q7",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          }
+        ]
+      },
+      {
+        "id": "p0-03-serum-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "使用抗血清后出院，要知道迟发血清病的表现；数天后新出现发热、皮疹、肌肉或关节痛，应联系医疗团队，并说明用过的产品和日期。出现呼吸困难或昏倒仍按急救处理。",
+          "en": "After antiserum treatment, learn the symptoms of delayed serum sickness. Contact the team for new fever, rash, muscle or joint pain in the following days, stating the product and date. Breathing difficulty or collapse still requires emergency action."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-03-serum-who",
+            "locator": "Section6.7.5 antivenom reactions, including6.7.5.4 treatment; printed pp131–135 (PDF pages134–138); resuming antivenom after reaction control printed p135. Section6.7.6 is storage and is not cited for treatment.",
+            "assessment": "区分急性反应与迟发血清病；急救及随访教育。"
+          },
+          {
+            "source_id": "anaphylaxis-p0-03-serum-rch",
+            "locator": "Giving Antivenom; Other management considerations; Consider discharge, lines165–206",
+            "assessment": "区分急性反应与迟发血清病；急救及随访教育。"
           }
         ]
       }
@@ -3962,6 +4508,81 @@
         ],
         "relation": "supports",
         "assessment": "Publisher abstract explicitly allows prolonged/permanent VIT in mastocytosis; original guideline search text Box21 recommendation48 agrees. Not a universal duration."
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-ascia-mast-cell-disorders-2025",
+        "source_metadata_sha256": "042997a7dca61faeac249c444c2717b1d4381769596d8b2f6693b83e2a64a730",
+        "source_version": "Updated December 2025",
+        "locator": "p2 definitions; p3 Table 1: Monoclonal mast cell activation syndromes (MMAS); p8 Table 3; p9 Management of MCAS, lines 375–409 in extracted PDF; p10 references, especially reference 11",
+        "population": "怀疑或确诊肥大细胞活化相关疾病者；需按病因/克隆性区分",
+        "region": "澳大利亚和新西兰",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "ASCIA 独立编写；参考文献 11 明确引用 Weiler 等 AAAAI 2019，另引国际共识。因此与 AAAAI 不是完全独立的底层证据链；ASCIA FAQ 同机构材料不另计独立来源。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "限定支持新增主张；独立审核待完成。"
+      },
+      {
+        "source_id": "anaphylaxis-p0-mcas",
+        "source_metadata_sha256": "b44d85e3a41ca44b87529c79681bc36a0be815baa1b05c029beaf9dedf718a08",
+        "source_version": "Page dated 8/27/2026",
+        "locator": "Symptoms and Diagnosis, lines 38–46; Treatment, lines 48–55; Diagnosis, lines 57–60",
+        "population": "MCAS 患者教育；未专门限定儿童或 MMAS",
+        "region": "美国",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "AAAAI 独立机构教育页；未列该网页逐条引用。ASCIA 明确采用 AAAAI 2019 委员会报告，二者可能共享共识基础，不能表述为两项独立试验。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "限定支持新增主张；独立审核待完成。"
+      },
+      {
+        "source_id": "anaphylaxis-p0-02-mast-ascia",
+        "source_metadata_sha256": "dca5b697f1067869168f21f13b2bf325afa55455f273718cef6e008e6db590ab",
+        "source_version": "Updated September 2025",
+        "locator": "p2 Q5–Q6; p2 Q7: How are mastocytosis and MCAS managed?",
+        "population": "mastocytosis 或 MCAS 患者及家庭",
+        "region": "澳大利亚和新西兰",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "与 ASCIA 专业文件同机构，不另计第二份独立材料。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "限定支持新增主张；独立审核待完成。"
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-serum-who",
+        "source_metadata_sha256": "806351d9c50c4fcd85e3f6e5c1f4a190b5b0bf3151f4e74ef03d8b0b5eb080b6",
+        "source_version": "Guidelines for management of snakebites, second edition2016",
+        "locator": "Section6.7.5 antivenom reactions, including6.7.5.4 treatment; printed pp131–135 (PDF pages134–138); resuming antivenom after reaction control printed p135. Section6.7.6 is storage and is not cited for treatment.",
+        "population": "接受抗蛇毒血清者",
+        "region": "South-East Asia",
+        "independence_group": "WHO",
+        "upstream_evidence": [
+          "WHO 与 RCH 独立编写；共享蛇伤/抗血清药理研究，未证明底层证据完全独立。RCH地区蛇种、剂量及给药路径不外推。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "急性抗血清反应及迟发血清病"
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-serum-rch",
+        "source_metadata_sha256": "07e946802babe0826dadfd702ec1c2d368690dd7926533f685c203d87ad64ad3",
+        "source_version": "UpdatedJanuary2018",
+        "locator": "Giving Antivenom; Other management considerations; Consider discharge, lines165–206",
+        "population": "儿童；维多利亚蛇种治疗方案不得全球外推",
+        "region": "Victoria Australia",
+        "independence_group": "AU-RCH",
+        "upstream_evidence": [
+          "WHO 与 RCH 独立编写；共享蛇伤/抗血清药理研究，未证明底层证据完全独立。RCH地区蛇种、剂量及给药路径不外推。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "急性抗血清反应及迟发血清病"
       }
     ],
     "independence": {
@@ -3990,6 +4611,16 @@
         "anaphylaxis-p0-02-mast-dgaki",
         "anaphylaxis-p0-02-mast-jtf2023",
         "anaphylaxis-p0-02-mast-orphan",
+        "anaphylaxis-p0-03-ascia-mast-cell-disorders-2025",
+        "anaphylaxis-p0-03-bad-urticaria-pigmentosa-2020",
+        "anaphylaxis-p0-03-chlorhexidine-ascia",
+        "anaphylaxis-p0-03-chlorhexidine-mhra",
+        "anaphylaxis-p0-03-hives-ascia",
+        "anaphylaxis-p0-03-latex-aaaai",
+        "anaphylaxis-p0-03-latex-ascia",
+        "anaphylaxis-p0-03-serum-rch",
+        "anaphylaxis-p0-03-serum-who",
+        "anaphylaxis-p0-03-spd-mastocytosis-2018",
         "anaphylaxis-p0-aaaai",
         "anaphylaxis-p0-acaai-test",
         "anaphylaxis-p0-adam",
@@ -4002,42 +4633,61 @@
         "anaphylaxis-p0-foodtest",
         "anaphylaxis-p0-intolerance",
         "anaphylaxis-p0-mcas",
+        "anaphylaxis-p0-ontario-bls",
         "anaphylaxis-p0-pregnancy",
         "anaphylaxis-p0-rcuk",
         "anaphylaxis-p0-venom",
-        "anaphylaxis-p0-wao"
+        "anaphylaxis-p0-wao",
+        "anaphylaxis-p0-wms"
+      ],
+      "inherited_source_ids": [
+        "anaphylaxis-nhs",
+        "anaphylaxis-p0-02-cold-aad",
+        "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
+        "anaphylaxis-p0-02-mast-jtf2023",
+        "anaphylaxis-p0-02-mast-orphan",
+        "anaphylaxis-p0-aaaai",
+        "anaphylaxis-p0-acaai-test",
+        "anaphylaxis-p0-adam",
+        "anaphylaxis-p0-drug",
+        "anaphylaxis-p0-exercise",
+        "anaphylaxis-p0-exercise-acaai",
+        "anaphylaxis-p0-fda-neffy",
+        "anaphylaxis-p0-food",
+        "anaphylaxis-p0-foodtest",
+        "anaphylaxis-p0-intolerance",
+        "anaphylaxis-p0-ontario-bls",
+        "anaphylaxis-p0-pregnancy",
+        "anaphylaxis-p0-rcuk",
+        "anaphylaxis-p0-venom",
+        "anaphylaxis-p0-wms"
       ],
       "findings": [
         {
-          "id": "diet-action",
-          "status": "resolved",
-          "finding": "Temperature diary instruction was classified as explanation.",
-          "resolution": "Author changed to action; AAD and SFD independently establish the temperature/history clue. Diary wording is a low-risk practical implementation of history taking, not a tested treatment outcome."
+          "finding": "Two explicit clinical actions were labelled explanation.",
+          "resolution": "physical-history and differentials-5 corrected to action with separate authoring-source support.",
+          "status": "resolved"
         },
         {
-          "id": "sfd-specific-url",
-          "status": "resolved",
-          "finding": "SFD link did not point directly to the perioperative advice.",
-          "resolution": "Exact associated-measures URL and metadata bindings corrected; In Case of Surgery independently reread."
+          "finding": "WHO snakebite locator conflated antivenom reaction care with storage and had off-by-one PDF pages.",
+          "resolution": "Correct6.7.5/6.7.5.4,printed131–135/PDF134–138; source metadata hashes rebound. Old non-relevant storage locator not treated as evidence.",
+          "status": "resolved"
         },
         {
-          "id": "unreadable-original-routes",
-          "status": "resolved",
-          "finding": "Dustri/SciELO and initial Orphan routes intermittently inaccessible during independent review.",
-          "resolution": "Same original DGAKI/SBA-ASBAI articles identified by DOI and reread through Europe PMC XML; Orphan original PDF retrieved from its official alternate route and relevant pages extracted. Mirrors do not count as new sources."
-        },
-        {
-          "id": "dispute-enum",
-          "status": "resolved",
-          "finding": "Author used resolved as dispute status, outside the data contract.",
-          "resolution": "Independent reviewer adjudicates regional_difference using the retained international conditions and explicitly differing VIT recommendations. Apply this review decision when accepting the records; do not alter medical text or weaken the validator."
+          "finding": "Physical-factor residual scope initially lacked clear distinction from local urticaria and concrete trigger investigation.",
+          "resolution": "BAD/ASCIA local-pattern differential combined with WAO systemic emergency pathway and individual trigger history/avoidance. No claim that every stimulus has separate proven therapy.",
+          "status": "resolved"
         }
       ],
-      "resolution": "All 11 added claims retain appropriate population, trigger and action scope in both languages. Added text does not change existing numeric rescue/observation/product thresholds. Shared upstream guidance is disclosed; independent editorial corroboration is not independent trial replication. Cold local hives are not anaphylaxis; anaphylaxis in an established mast-cell disorder is not all MCAS or all symptoms. No unsupported home testing, dosing or perioperative premedication added."
+      "resolution": "Accept exact candidate hashes for editorial evidence and mapped scope. No clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "content_sha256": "742583caf96b6b65f2180f260e408914f452de8dccaf7a3d8e0b5b61abb35703",
-    "review_report": "reports/p0-02-anaphylaxis-independent.json"
+    "content_sha256": "e81e319eaa35675d0575df285841ff0feea8a5f8a268987c588540af02aee4ed",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json"
   },
   {
     "id": "p0-01-anaphylaxis-complications",
@@ -4428,6 +5078,86 @@
             "assessment": "Individual plan considering previous events, medicines and perioperative care."
           }
         ]
+      },
+      {
+        "id": "p0-03-prevention-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "已确诊乳胶过敏者，应提前告知医疗、牙科及工作团队，使用适合的无乳胶替代用品，并控制周围含粉乳胶手套带来的空气暴露；有过严重反应者继续携带医生处方的急救药并执行原计划。",
+          "en": "People with confirmed latex allergy should inform medical, dental and workplace teams beforehand, use suitable latex-free alternatives and address airborne exposure from powdered latex gloves nearby. Those with previous severe reactions should continue carrying prescribed rescue medicine and following their plan."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-03-latex-aaaai",
+            "locator": "Treating Latex Allergy; ASCIA Q8–9",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          },
+          {
+            "source_id": "anaphylaxis-p0-03-latex-ascia",
+            "locator": "Treating Latex Allergy; ASCIA Q8–9",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          }
+        ]
+      },
+      {
+        "id": "p0-03-prevention-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "已确诊氯己定过敏时，把准确名称记录并提前告诉医护和牙科团队；用药或操作前检查产品和器材成分，不清楚时请药师或团队核实。",
+          "en": "With confirmed chlorhexidine allergy, record its exact name and inform medical and dental teams in advance. Check ingredients in products and devices before medicines or procedures, asking a pharmacist or the team when uncertain."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-03-chlorhexidine-ascia",
+            "locator": "ASCIA Q6–7; MHRA Action",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          },
+          {
+            "source_id": "anaphylaxis-p0-03-chlorhexidine-mhra",
+            "locator": "ASCIA Q6–7; MHRA Action",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          }
+        ]
+      },
+      {
+        "id": "p0-03-prevention-7",
+        "kind": "action",
+        "text": {
+          "zh-CN": "孩子已确诊皮肤肥大细胞增多症，手术或麻醉前也要告诉手术和麻醉团队诊断及既往反应，让团队制定个体化方案。",
+          "en": "If a child has diagnosed cutaneous mastocytosis, tell the surgical and anaesthesia teams about the diagnosis and previous reactions before a procedure so they can individualize care."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-03-spd-mastocytosis-2018",
+            "locator": "SPD p2 anaesthesia trigger; BAD p4 surgery",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          },
+          {
+            "source_id": "anaphylaxis-p0-03-bad-urticaria-pigmentosa-2020",
+            "locator": "SPD p2 anaesthesia trigger; BAD p4 surgery",
+            "assessment": "支持此句限定的人群、接触途径或行动；不外推全部 leaf。"
+          }
+        ]
+      },
+      {
+        "id": "p0-03-physical-plan",
+        "kind": "action",
+        "text": {
+          "zh-CN": "已有明确物理诱因时，与专科商定如何减少该刺激，并继续执行个体急救计划；只针对本人会发作的条件调整活动和环境，不把所有运动、日晒或温度变化一概禁止。诱因仍待明确时，复诊核对发作经过并更新计划。",
+          "en": "With an identified physical trigger, agree with the specialist how to reduce that exposure while retaining the individual emergency plan. Adapt activities and surroundings to personal triggers rather than banning all exercise, sunlight or temperature changes. If the trigger remains uncertain, review episodes and update the plan at follow-up."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Table8 and long-term management; p11 mechanisms",
+            "assessment": "All-trigger severity-based care, cause investigation and individualized plan; no subtype-specific threshold claimed."
+          },
+          {
+            "source_id": "anaphylaxis-p0-02-cold-bad",
+            "locator": "Self-care; Other urticarias",
+            "assessment": "Individual physical triggers/avoidance and local skin versus breathing/swallowing involvement; not an independent anaphylaxis protocol."
+          }
+        ]
       }
     ],
     "supports": [
@@ -4625,6 +5355,96 @@
         ],
         "relation": "supports",
         "assessment": "Individual plan considering previous events, medicines and perioperative care."
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-latex-aaaai",
+        "source_metadata_sha256": "fe6fc821d6f7498ed0aaaa772e97d7e479ea83a10443a5d7e1a15cd70387c2dc",
+        "source_version": "2026-06-18",
+        "locator": "Reactions to Latex; Treating Latex Allergy; lines30–51",
+        "population": "乳胶过敏成人和儿童；特殊接触风险者",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "AAAAI 独立编写，未列逐项研究依据；与 ASCIA 可能共享国际过敏共识。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "限定支持新增主张；独立审核待完成。"
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-latex-ascia",
+        "source_metadata_sha256": "9c105e977df27bbca4e51c51c7ed9cf57e56d99791fefca0c702cd03c9df4912",
+        "source_version": "August2024",
+        "locator": "Q1–9, lines531–616",
+        "population": "乳胶过敏成人和儿童",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "ASCIA 独立编写；不是 AAAAI 转载，底层研究重叠未逐项评估。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "限定支持新增主张；独立审核待完成。"
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-chlorhexidine-ascia",
+        "source_metadata_sha256": "28f70e9a51f7fff27db4671c58689756482a1c11227f76448e1937f74011b8e8",
+        "source_version": "June2024",
+        "locator": "pp1–3 Q1–7",
+        "population": "氯己定过敏者及照护者",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "ASCIA 与 ANZAAG 共同编写算一个来源；可能共享监管病例，但未直接引用 MHRA 通报。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "限定支持新增主张；独立审核待完成。"
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-chlorhexidine-mhra",
+        "source_metadata_sha256": "801b31d0fee52fd036b38a8f30634fef75185fd039ff73a8554d221a1b3b0908",
+        "source_version": "Issued2012-10-25; published2014-12-17",
+        "locator": "Device; Problem; Action, lines86–106",
+        "population": "医疗环境使用含氯己定产品者",
+        "region": "GB",
+        "independence_group": "UK-MHRA",
+        "upstream_evidence": [
+          "英国监管报告包含收到的案例；独立于 ASCIA 编写，不能当作随机试验证据。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "限定支持新增主张；独立审核待完成。"
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-spd-mastocytosis-2018",
+        "source_metadata_sha256": "e63e726f405073f1c634a5cb9778fbd9943890cadb690f7f1f334c16b833047e",
+        "source_version": "Pediatric Dermatology 35(4), 2018; handout #23",
+        "locator": "p1 ARE THERE ANY COMPLICATIONS OF MASTOCYTOSIS?; p2 CHECK-UPS WITH YOUR DOCTOR; p2 MANAGING MASTOCYTOSIS / POSSIBLE TRIGGERS",
+        "population": "儿童皮肤肥大细胞增多症；并非全部 MCAS",
+        "region": "美国",
+        "independence_group": "US-SPD",
+        "upstream_evidence": [
+          "SPD 署名作者、委员会及专家独立编写；Wiley 为原刊出版方，不另算独立来源。未列研究参考文献，无法证明与 BAD 完全没有共同上游。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "限定支持新增主张；独立审核待完成。"
+      },
+      {
+        "source_id": "anaphylaxis-p0-03-bad-urticaria-pigmentosa-2020",
+        "source_metadata_sha256": "89b8f32b159e080082696f1265609c0c1cb99bc5ea01cbd969cba9862e9ed560",
+        "source_version": "Updated June 2020; lay reviewed May 2020; review due June 2023",
+        "locator": "p2 What are the symptoms of urticaria pigmentosa?; p4 Self care (What can I do?): adrenaline, new medicine and operation paragraphs",
+        "population": "色素性荨麻疹 / 皮肤肥大细胞增多症成人及儿童",
+        "region": "英国",
+        "independence_group": "UK-BAD",
+        "upstream_evidence": [
+          "BAD 独立患者教育资料，与 SPD 不同机构；没有逐项证据来源，共同基础研究关系不明。"
+        ],
+        "accessed_at": "2026-10-03",
+        "relation": "supports",
+        "assessment": "限定支持新增主张；独立审核待完成。"
       }
     ],
     "independence": {
@@ -4653,6 +5473,16 @@
         "anaphylaxis-p0-02-mast-dgaki",
         "anaphylaxis-p0-02-mast-jtf2023",
         "anaphylaxis-p0-02-mast-orphan",
+        "anaphylaxis-p0-03-ascia-mast-cell-disorders-2025",
+        "anaphylaxis-p0-03-bad-urticaria-pigmentosa-2020",
+        "anaphylaxis-p0-03-chlorhexidine-ascia",
+        "anaphylaxis-p0-03-chlorhexidine-mhra",
+        "anaphylaxis-p0-03-hives-ascia",
+        "anaphylaxis-p0-03-latex-aaaai",
+        "anaphylaxis-p0-03-latex-ascia",
+        "anaphylaxis-p0-03-serum-rch",
+        "anaphylaxis-p0-03-serum-who",
+        "anaphylaxis-p0-03-spd-mastocytosis-2018",
         "anaphylaxis-p0-aaaai",
         "anaphylaxis-p0-acaai-test",
         "anaphylaxis-p0-adam",
@@ -4665,41 +5495,60 @@
         "anaphylaxis-p0-foodtest",
         "anaphylaxis-p0-intolerance",
         "anaphylaxis-p0-mcas",
+        "anaphylaxis-p0-ontario-bls",
         "anaphylaxis-p0-pregnancy",
         "anaphylaxis-p0-rcuk",
         "anaphylaxis-p0-venom",
-        "anaphylaxis-p0-wao"
+        "anaphylaxis-p0-wao",
+        "anaphylaxis-p0-wms"
+      ],
+      "inherited_source_ids": [
+        "anaphylaxis-nhs",
+        "anaphylaxis-p0-02-cold-aad",
+        "anaphylaxis-p0-02-cold-diagnosis",
+        "anaphylaxis-p0-02-cold-sfd",
+        "anaphylaxis-p0-02-mast-algorithm",
+        "anaphylaxis-p0-02-mast-brazil",
+        "anaphylaxis-p0-02-mast-dgaki",
+        "anaphylaxis-p0-02-mast-jtf2023",
+        "anaphylaxis-p0-02-mast-orphan",
+        "anaphylaxis-p0-aaaai",
+        "anaphylaxis-p0-acaai-test",
+        "anaphylaxis-p0-adam",
+        "anaphylaxis-p0-drug",
+        "anaphylaxis-p0-exercise",
+        "anaphylaxis-p0-exercise-acaai",
+        "anaphylaxis-p0-fda-neffy",
+        "anaphylaxis-p0-food",
+        "anaphylaxis-p0-foodtest",
+        "anaphylaxis-p0-intolerance",
+        "anaphylaxis-p0-ontario-bls",
+        "anaphylaxis-p0-pregnancy",
+        "anaphylaxis-p0-rcuk",
+        "anaphylaxis-p0-venom",
+        "anaphylaxis-p0-wms"
       ],
       "findings": [
         {
-          "id": "diet-action",
-          "status": "resolved",
-          "finding": "Temperature diary instruction was classified as explanation.",
-          "resolution": "Author changed to action; AAD and SFD independently establish the temperature/history clue. Diary wording is a low-risk practical implementation of history taking, not a tested treatment outcome."
+          "finding": "Two explicit clinical actions were labelled explanation.",
+          "resolution": "physical-history and differentials-5 corrected to action with separate authoring-source support.",
+          "status": "resolved"
         },
         {
-          "id": "sfd-specific-url",
-          "status": "resolved",
-          "finding": "SFD link did not point directly to the perioperative advice.",
-          "resolution": "Exact associated-measures URL and metadata bindings corrected; In Case of Surgery independently reread."
+          "finding": "WHO snakebite locator conflated antivenom reaction care with storage and had off-by-one PDF pages.",
+          "resolution": "Correct6.7.5/6.7.5.4,printed131–135/PDF134–138; source metadata hashes rebound. Old non-relevant storage locator not treated as evidence.",
+          "status": "resolved"
         },
         {
-          "id": "unreadable-original-routes",
-          "status": "resolved",
-          "finding": "Dustri/SciELO and initial Orphan routes intermittently inaccessible during independent review.",
-          "resolution": "Same original DGAKI/SBA-ASBAI articles identified by DOI and reread through Europe PMC XML; Orphan original PDF retrieved from its official alternate route and relevant pages extracted. Mirrors do not count as new sources."
-        },
-        {
-          "id": "dispute-enum",
-          "status": "resolved",
-          "finding": "Author used resolved as dispute status, outside the data contract.",
-          "resolution": "Independent reviewer adjudicates regional_difference using the retained international conditions and explicitly differing VIT recommendations. Apply this review decision when accepting the records; do not alter medical text or weaken the validator."
+          "finding": "Physical-factor residual scope initially lacked clear distinction from local urticaria and concrete trigger investigation.",
+          "resolution": "BAD/ASCIA local-pattern differential combined with WAO systemic emergency pathway and individual trigger history/avoidance. No claim that every stimulus has separate proven therapy.",
+          "status": "resolved"
         }
       ],
-      "resolution": "All 11 added claims retain appropriate population, trigger and action scope in both languages. Added text does not change existing numeric rescue/observation/product thresholds. Shared upstream guidance is disclosed; independent editorial corroboration is not independent trial replication. Cold local hives are not anaphylaxis; anaphylaxis in an established mast-cell disorder is not all MCAS or all symptoms. No unsupported home testing, dosing or perioperative premedication added."
+      "resolution": "Accept exact candidate hashes for editorial evidence and mapped scope. No clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "content_sha256": "c96464a19a285ec2c9c32c2ece407e7b9dcd6420fdf3e2fa2dbcc5e9e49e5627",
-    "review_report": "reports/p0-02-anaphylaxis-independent.json"
+    "content_sha256": "4c1112bb12881dfc8f9a67a79d00f98eed8142e5c305837ebf1e3580071049f9",
+    "review_report": "reports/p0-03-anaphylaxis-independent.json"
   }
 ]

@@ -1,24 +1,24 @@
 {
   "reviewed_at": "2026-10-03",
   "decision": "complete_coverage_target_not_passed",
-  "measured": 0.0025845686050931203,
+  "measured": 0.0074496389205625235,
   "target": 1.0,
   "classification": "ICD-11 MMS",
   "release": "2026-01",
   "denominator": 13155,
   "snapshot_status": "frozen_verified_official_bytes",
-  "mapping_status": "46_pending_34_confirmed_28_partial",
+  "mapping_status": "45_pending_98_confirmed_2_partial",
   "counts": {
-    "existing_topics": 82,
-    "condition_topics": 77,
-    "symptom_topics": 5,
-    "title_only_backlog": 189,
+    "existing_topics": 93,
+    "condition_topics": 87,
+    "symptom_topics": 6,
+    "title_only_backlog": 188,
     "topics_with_coding": 0,
-    "confirmed_category_mappings": 34,
+    "confirmed_category_mappings": 98,
     "clinically_reviewed_topics": 0,
-    "verified_sections": 154
+    "verified_sections": 336
   },
-  "scope": "当前82篇正文、189标题与56地图单元；正文、证据核验与ICD类别完整覆盖分别统计。",
+  "scope": "当前93篇正文、188标题与56地图单元；正文、证据核验与ICD类别完整覆盖分别统计。",
   "method": "逐项核对现有主题身份，列出缺少独立正文的已知病种；mentioned_in_topics 仅按所列术语检索中英 sections.text 的结果，不表示对应主题完整覆盖该病种。",
   "known_urgent_gaps": [
     {
@@ -34,6 +34,14 @@
         {
           "id": "aortic-dissection",
           "sections": [
+            "differentials"
+          ]
+        },
+        {
+          "id": "cardiac-arrest",
+          "sections": [
+            "causes_risks",
+            "red_flags",
             "differentials"
           ]
         },
@@ -93,7 +101,7 @@
         "myocardial infarction",
         "heart attack"
       ],
-      "conclusion": "90项双语主张已核验；BA41.0、BA41.1、BA41.Z逐类完整对应，旧梗死、再次梗死及特定并发症另列。"
+      "conclusion": "独立编辑核验正文确认代码BA41.0、BA41.1、BA41.Z、BA42.0、BA42.1、BA42.Z；仅这些叶类别计完整覆盖，医学签审另行统计。"
     },
     {
       "names": {
@@ -105,6 +113,13 @@
       ],
       "backlog_ids": [],
       "mentioned_in_topics": [
+        {
+          "id": "cardiac-arrest",
+          "sections": [
+            "causes_risks",
+            "diagnosis"
+          ]
+        },
         {
           "id": "chest-pain",
           "sections": [
@@ -150,7 +165,7 @@
         "肺栓塞",
         "pulmonary embolism"
       ],
-      "conclusion": "55项双语主张已核验；急性BB00.0完整对应，慢性BB00.1及未特指BB00.Z仍为部分覆盖。"
+      "conclusion": "独立编辑核验正文确认代码BB00.0；仅这些叶类别计完整覆盖，医学签审另行统计。"
     },
     {
       "names": {
@@ -165,7 +180,14 @@
         {
           "id": "appendicitis",
           "sections": [
+            "red_flags",
             "complications"
+          ]
+        },
+        {
+          "id": "ards",
+          "sections": [
+            "causes_risks"
           ]
         },
         {
@@ -186,7 +208,7 @@
         "脓毒症",
         "sepsis"
       ],
-      "conclusion": "62项双语主张通过独立编辑核验；确认代码1G40、1G41。其余候选逐类保留部分覆盖，无医学签审。"
+      "conclusion": "独立编辑核验正文确认代码1G40、1G41；仅这些叶类别计完整覆盖，医学签审另行统计。"
     },
     {
       "names": {
@@ -209,7 +231,7 @@
         "脑膜炎",
         "meningitis"
       ],
-      "conclusion": "现有正文经独立编辑核验；确认代码1C1C.0、1C8E.1、1C8E.Z、1D01.00、1D01.0Z、1D01.Z；其他候选保持部分覆盖，无医学签审。"
+      "conclusion": "独立编辑核验正文确认代码1B53、1B54、1C1C.0、1C8E.1、1C8E.2、1C8E.Y、1C8E.Z、1D01.00、1D01.0Y、1D01.0Z、1D01.1、1D01.2、1D01.3、1D01.Y、1D01.Z；仅这些叶类别计完整覆盖，医学签审另行统计。"
     },
     {
       "names": {
@@ -232,7 +254,7 @@
         "主动脉夹层",
         "aortic dissection"
       ],
-      "conclusion": "59项双语主张通过独立编辑核验；确认代码BD50.01、BD50.0Z、BD50.11、BD50.1Z、BD50.21、BD50.2Z。其余候选逐类保留部分覆盖，无医学签审。"
+      "conclusion": "独立编辑核验正文确认代码BD50.00、BD50.01、BD50.0Z、BD50.10、BD50.11、BD50.1Z、BD50.20、BD50.21、BD50.2Y、BD50.2Z；仅这些叶类别计完整覆盖，医学签审另行统计。"
     },
     {
       "names": {
@@ -248,7 +270,7 @@
         "糖尿病酮症酸中毒",
         "diabetic ketoacidosis"
       ],
-      "conclusion": "64项双语主张通过独立编辑核验；确认代码5A22.0、5A22.3。其余候选逐类保留部分覆盖，无医学签审。"
+      "conclusion": "独立编辑核验正文确认代码5A22.0、5A22.3；仅这些叶类别计完整覆盖，医学签审另行统计。"
     },
     {
       "names": {
@@ -265,7 +287,7 @@
         "视网膜剥离",
         "retinal detachment"
       ],
-      "conclusion": "68项双语主张已核验；9B73.0与9B73.3完整对应，孤立裂孔及残余类别仍按具体缺口补充。"
+      "conclusion": "独立编辑核验正文确认代码9B73.0、9B73.3、9B73.4、9B73.Y、9B73.Z；仅这些叶类别计完整覆盖，医学签审另行统计。"
     },
     {
       "names": {
@@ -281,7 +303,7 @@
         "睾丸扭转",
         "testicular torsion"
       ],
-      "conclusion": "独立正文已通过逐项编辑核验，仅GB01.0计完整覆盖；无执业医生签审。"
+      "conclusion": "独立编辑核验正文确认代码GB01.0；仅这些叶类别计完整覆盖，医学签审另行统计。"
     },
     {
       "names": {
@@ -298,7 +320,7 @@
         "postpartum haemorrhage",
         "postpartum hemorrhage"
       ],
-      "conclusion": "现有正文经独立编辑核验；确认代码JA43.0、JA43.1、JA43.2、JA43.Z；其他候选保持部分覆盖，无医学签审。"
+      "conclusion": "独立编辑核验正文确认代码JA43.0、JA43.1、JA43.2、JA43.3、JA43.4、JA43.5、JA43.Y、JA43.Z；仅这些叶类别计完整覆盖，医学签审另行统计。"
     },
     {
       "names": {
@@ -309,7 +331,14 @@
       "backlog_ids": [
         "planned-172"
       ],
-      "mentioned_in_topics": [],
+      "mentioned_in_topics": [
+        {
+          "id": "asphyxiation",
+          "sections": [
+            "summary"
+          ]
+        }
+      ],
       "matching_terms": [
         "一氧化碳中毒",
         "carbon monoxide poisoning"
@@ -317,7 +346,7 @@
       "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
     }
   ],
-  "remaining_list_status": "13,121个未完整类别保存于reports/icd-remaining-gaps.json.gz；本批仅扩写3篇既有正文，未新增主题或退役标题。",
+  "remaining_list_status": "13,057个未完整类别保存于reports/icd-remaining-gaps.json.gz；P0-03新增11篇、扩写8篇、合并1个标题待办。",
   "roadmap": "docs/coverage-audit-and-roadmap.md",
   "sources": [
     "https://icd.who.int/docs/icd-api/SupportedClassifications/",

@@ -1,0 +1,125 @@
+{
+  "checked_at": "2026-10-03",
+  "publication_status": "local_candidate_not_yet_live",
+  "summary": {
+    "topics": 93,
+    "backlog": 188,
+    "qualified_articles": 24,
+    "qualified_sections": 336,
+    "claims": 1358,
+    "sources": 838,
+    "covered": 98,
+    "remaining": 13057,
+    "mapping_states": {
+      "pending": 45,
+      "confirmed": 98,
+      "partial": 2
+    },
+    "p0": {
+      "total": 133,
+      "complete": 97,
+      "remaining": 36
+    }
+  },
+  "acceptance_record": "reports/p0-03-acceptance.json",
+  "data_sha256": "ed0147f77c552b15bd7b8e85bcb87e5954a5ab7a01a10fea9c0b4249dc69dee7",
+  "clinician_signoff": false,
+  "checks": {
+    "build": {
+      "status": "passed"
+    },
+    "python": {
+      "status": "passed",
+      "run": 127,
+      "passed": 112,
+      "skipped": 15,
+      "scope": "all local Python unit tests;15 require isolated PostgreSQL"
+    },
+    "node": {
+      "status": "passed",
+      "tests": 416
+    },
+    "clinical_gate": {
+      "status": "passed",
+      "expected_result": "clinical mode rejected for missing clinician sign-off; preserved by unit test"
+    },
+    "database": {
+      "passed": true,
+      "release_id": "rel-ec3691fcf5fafc36a6b278cdd413244d8853218925a291c3f9c41774cfb3bf2b",
+      "old_release_id": "rel-cc0d196d0b6c9b33ceac6d04b6aa0b208aaf0d07ad50f421b2774c17e77b958a",
+      "data_sha256": "ed0147f77c552b15bd7b8e85bcb87e5954a5ab7a01a10fea9c0b4249dc69dee7",
+      "topics": 93,
+      "source_count": 838,
+      "editorial_records": 336,
+      "qualified_topics": 24,
+      "covered_categories": 98,
+      "new_topics": [
+        "ards",
+        "asphyxiation",
+        "cardiac-arrest",
+        "cauda-equina-syndrome",
+        "eclampsia",
+        "epiglottitis",
+        "intracerebral-hemorrhage",
+        "severe-dengue",
+        "sjs-ten",
+        "sudden-hearing-loss",
+        "suicidal-ideation"
+      ],
+      "expanded_topics": [
+        "anaphylaxis",
+        "aortic-dissection",
+        "appendicitis",
+        "heatstroke",
+        "meningitis",
+        "myocardial-infarction",
+        "postpartum-hemorrhage",
+        "retinal-detachment"
+      ],
+      "unchanged_topics": 74,
+      "production_changed": false,
+      "production_before": "rel-cc0d196d0b6c9b33ceac6d04b6aa0b208aaf0d07ad50f421b2774c17e77b958a",
+      "production_after": "rel-cc0d196d0b6c9b33ceac6d04b6aa0b208aaf0d07ad50f421b2774c17e77b958a",
+      "git_commit": "f2c5cd8d400b04ad97947b5fa4cfdd5989379283",
+      "test_backup": "/home/user/.local/state/knowledge-healthcare/p0-03-test-before-20261002T212349877975Z.dump",
+      "test_backup_bytes": 10432019,
+      "isolated_http_origin": "http://127.0.0.1:56963/healthcare",
+      "checks": [
+        "existing isolated database preserved; no schema reset or migration",
+        "backup custom dump verified by pg_restore list",
+        "74 untouched article objects unchanged;11 new and8 existing topics revised",
+        "candidate hidden from DB reader and HTTP; duplicate import idempotent",
+        "old/new full snapshots include all sources and evidence records",
+        "test publish, rollback and reactivate; HTTP follows pointers",
+        "HTTP pinned old82/new93 catalogs and original/full expanded objects",
+        "336 qualified sections;24 qualified topics;98 covered categories;clinical signoff0",
+        "CN/EN93-row22-column CSV every section exact",
+        "production pointer unchanged"
+      ],
+      "checked_at": "2026-10-02T21:24:01.826951+00:00"
+    },
+    "browser_http": {
+      "status": "pending"
+    },
+    "github_ci": {
+      "status": "pending"
+    },
+    "public_https": {
+      "status": "pending"
+    },
+    "benchmark": {
+      "status": "passed",
+      "name_queries": 186,
+      "name_recall_at_10": 1.0,
+      "name_mrr_at_10": 1.0,
+      "example_queries": 9,
+      "example_recall_at_10": 1.0
+    },
+    "priority_outputs": {
+      "status": "passed",
+      "p0_complete": 97,
+      "p0_remaining": 36
+    }
+  },
+  "release_id": "rel-ec3691fcf5fafc36a6b278cdd413244d8853218925a291c3f9c41774cfb3bf2b"
+}

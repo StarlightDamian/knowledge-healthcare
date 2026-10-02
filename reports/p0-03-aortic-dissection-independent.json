@@ -1,0 +1,115 @@
+{
+  "topic": "aortic-dissection",
+  "author": "/root",
+  "reviewer": "/root/astra_p0_allergy",
+  "checked_at": "2026-10-03",
+  "status": "accepted",
+  "medical_reviewed": false,
+  "target": {
+    "body_canonical_sha256": "3990247b97bb4d1612878a1646b2f7afb71d63eed6fca60d2b5dd3a9c97a948b",
+    "records_canonical_sha256": "938684714fb2ede946a7c384da48e6f092a991f17ecdbf446cd50a26a9ea8f95",
+    "sources_canonical_sha256": "885b1c86e6685222f2f6e41c517863748b46682c11c27ff7623bb2974415c306"
+  },
+  "changed_sections": [
+    "complications",
+    "diagnosis",
+    "summary",
+    "treatment"
+  ],
+  "claims_reviewed": 4,
+  "original_sources_reopened": [
+    "ad-msd-professional",
+    "ad-cleveland",
+    "ad-acc-medical-extract",
+    "ad-acc-guideline",
+    "ad-esc-2024"
+  ],
+  "source_reads": [
+    {
+      "source_id": "ad-msd-professional",
+      "url": "https://www.msdmanuals.com/professional/cardiovascular-disorders/diseases-of-the-aorta-and-its-branches/aortic-dissection",
+      "locator": "Classification DeBakey I/II/III; pathophysiology of rupture and branch obstruction; diagnostic imaging. Original MSD HTML relevant sections.",
+      "read_method": "Independent original webpage/PDF or explicitly limited original indexed passage read, 2026-10-03; scope stated per entry."
+    },
+    {
+      "source_id": "ad-cleveland",
+      "url": "https://my.clevelandclinic.org/health/diseases/16743-aortic-dissection",
+      "locator": "Management/surgery: extent of graft repair including arch branches and hybrid repair. Original Cleveland Clinic HTML.",
+      "read_method": "Independent original webpage/PDF or explicitly limited original indexed passage read, 2026-10-03; scope stated per entry."
+    },
+    {
+      "source_id": "ad-acc-medical-extract",
+      "url": "https://www.jacc.org/doi/10.1016/j.jacc.2022.08.004",
+      "locator": "Table27 Consensus Features of Complicated Acute Type B Aortic Dissection: free or contained rupture, haemothorax/periaortic or mediastinal haematoma, prompt management. Actual publisher-indexed full Table27 passage; not an attestation to unread whole JACC guideline.",
+      "read_method": "Independent original webpage/PDF or explicitly limited original indexed passage read, 2026-10-03; scope stated per entry."
+    },
+    {
+      "source_id": "ad-acc-guideline",
+      "url": "https://www.acc.org/Latest-in-Cardiology/ten-points-to-remember/2022/11/01/12/21/2022-guideline-on-aortic-disease-2-gl-ad",
+      "locator": "ACC official summary Acute aortic syndromes: complicated typeB/rupture intervention, suitable-anatomy endovascular preference, imaging surveillance. ACC summary and full guideline are one author group.",
+      "read_method": "Independent original webpage/PDF or explicitly limited original indexed passage read, 2026-10-03; scope stated per entry."
+    },
+    {
+      "source_id": "ad-esc-2024",
+      "url": "https://academic.oup.com/eurheartj/article/45/36/3538/7738955",
+      "locator": "Original publisher-indexed sections9.3.1.2–9.3.1.4: complicatedTBAD, TEVAR favourable anatomy/open repair unsuitable; DISSECT variables. Direct open failed; indexed substantial original paragraphs read, not whole guideline.",
+      "read_method": "Independent original webpage/PDF or explicitly limited original indexed passage read, 2026-10-03; scope stated per entry."
+    }
+  ],
+  "findings": [
+    {
+      "finding": "Author reading log mislabelled Table27 evidence as beta-blocker section7.3.1.",
+      "resolution": "Root corrected author read_scope to Table27; independently read original publisher-indexed table. No historical source metadata rewritten."
+    },
+    {
+      "finding": "Perforation must not mean only an intimal entry tear; contained rupture is not safe.",
+      "resolution": "Bilingual complication text describes wall leakage and dangerous contained leak, distinct from inner-layer tear."
+    }
+  ],
+  "scope_decisions": [
+    {
+      "code": "BD50.00",
+      "recommendation": "confirmed",
+      "rationale": "Explicit rupture and extent branches cover ascending disease with/without arch extension and descending disease with rupture; the residual described descending pattern receives an anatomy/complication-based decision branch. Existing14 sections provide applicable emergency actions, recovery, medication, diet, surveillance and prevention, without implying all anatomies have identical procedures. Source-defined intramural haematoma/penetrating ulcer remain distinct; not used to expand unrelated ICD categories."
+    },
+    {
+      "code": "BD50.10",
+      "recommendation": "confirmed",
+      "rationale": "Explicit rupture and extent branches cover ascending disease with/without arch extension and descending disease with rupture; the residual described descending pattern receives an anatomy/complication-based decision branch. Existing14 sections provide applicable emergency actions, recovery, medication, diet, surveillance and prevention, without implying all anatomies have identical procedures. Source-defined intramural haematoma/penetrating ulcer remain distinct; not used to expand unrelated ICD categories."
+    },
+    {
+      "code": "BD50.20",
+      "recommendation": "confirmed",
+      "rationale": "Explicit rupture and extent branches cover ascending disease with/without arch extension and descending disease with rupture; the residual described descending pattern receives an anatomy/complication-based decision branch. Existing14 sections provide applicable emergency actions, recovery, medication, diet, surveillance and prevention, without implying all anatomies have identical procedures. Source-defined intramural haematoma/penetrating ulcer remain distinct; not used to expand unrelated ICD categories."
+    },
+    {
+      "code": "BD50.2Y",
+      "recommendation": "confirmed",
+      "rationale": "Explicit rupture and extent branches cover ascending disease with/without arch extension and descending disease with rupture; the residual described descending pattern receives an anatomy/complication-based decision branch. Existing14 sections provide applicable emergency actions, recovery, medication, diet, surveillance and prevention, without implying all anatomies have identical procedures. Source-defined intramural haematoma/penetrating ulcer remain distinct; not used to expand unrelated ICD categories."
+    }
+  ],
+  "independence": "ACC guideline and ACC summary are one source group. ESC separately authored but shares clinical trials and consensus literature; MSD/Cleveland are independently written summaries with cross-cited upstream guidance, not independent trials.",
+  "remaining_issues": [],
+  "resolution": "Accepted as source-bound independent editorial review after bilingual conditions/actions and14-dimensional content assessment; not clinical review or physician sign-off. Source access and shared-evidence limitations above remain disclosed.",
+  "who_scope_read": {
+    "path": "C:/Users/Damian/AppData/Local/Temp/healthcare-private/p0-icd-2026-01-official.txt",
+    "official_pdf_sha256": "4baccc13c794dca36d8a79fe80a673e854fc51f13114db3ce76196f0a1eb6cab",
+    "actual_scope": "BD50.00/.10/.20/.2Y descriptions; adjacent rupture categories not conflated with entrytear."
+  },
+  "inheritance": {
+    "sections": [
+      "causes_risks",
+      "red_flags",
+      "care",
+      "differentials",
+      "medications",
+      "diet",
+      "daily_care",
+      "special_populations",
+      "prognosis_followup",
+      "prevention"
+    ],
+    "record_file": "data/evidence/editorial-checks/p0-aortic-dissection.json",
+    "verification": "Unchanged body sections AND complete accepted records exactly compared to production baseline; inherited medical evidence not reattested as newly read."
+  }
+}

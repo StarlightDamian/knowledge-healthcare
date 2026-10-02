@@ -6,11 +6,11 @@
       "id": "meningitis",
       "section": "summary"
     },
-    "content_sha256": "bc75ec9284a63deba1bb78522f29273b25e559613097403f5377601815d8babc",
+    "content_sha256": "34a377c47434781b44c08ff66ea264298bcbe729d9e052bc5172265799b24c10",
     "status": "cross_checked",
     "scope": "full_section",
     "checked_at": "2026-10-03",
-    "checker": "/root/astra_p0_maternal",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -147,6 +147,21 @@
         ],
         "relation": "supports",
         "assessment": "Supports only the named additions identified in the claim inventory, not every statement in this section."
+      },
+      {
+        "source_id": "meningitis-p0-03-msd-chronic",
+        "source_metadata_sha256": "a9442e140c6d0f49ed5196d65913e4ffaef7a36dea86ecac7c66dd5d8ca64bc5",
+        "source_version": "2026-09",
+        "locator": "Major infectious causes table; Syphilitic meningitis; Fungal meningitis after epidural methylprednisolone; Other fungal meningitides; Diagnosis/Treatment",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "International",
+        "independence_group": "MSD",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "支持新分流/病因解释"
       }
     ],
     "claims": [
@@ -234,6 +249,26 @@
             "assessment": "Named virus and bacterial species scope; CDC distinguishes a-f and nontypeable strains. Explanation only, not a diagnosis or treatment claim."
           }
         ]
+      },
+      {
+        "id": "p0-03-specified",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "“其他特指”表示医生已指出某种病因，但不属于列表里单独列出的类型；它不是一种统一的病原体，也不同于尚未查明原因。处理仍按细菌、病毒、真菌、寄生虫及具体病原分流。",
+          "en": "Other specified denotes a cause identified by the clinician that is not a separately listed type. It is not one uniform organism and differs from an unknown cause. Care still follows the bacterial, viral, fungal, parasitic and organism-specific pathways."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-cdc-viral-meningitis",
+            "locator": "What it is; spread; prevention; treatment/recovery",
+            "assessment": "限定病原/场景的独立编写材料；待交叉复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-msd-chronic",
+            "locator": "Major infectious causes table; Syphilitic meningitis; Fungal meningitis after epidural methylprednisolone; Other fungal meningitides; Diagnosis/Treatment",
+            "assessment": "限定病原/场景的独立编写材料；待交叉复读"
+          }
+        ]
       }
     ],
     "independence": {
@@ -242,38 +277,98 @@
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "none",
-      "resolution": "No new contradictory recommendation asserted; diagnosis and treatment remain pathogen-conditional."
+      "status": "regional_difference",
+      "resolution": "Pathogen, age, post-neurosurgical device, immune status and local resistance guide treatment. Common uncertainty retained for neurognathostomiasis and injection-associated fungi; no old regional doses or generalized adenovirus antiviral regimen."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/astra_p0_neurology",
-      "reviewer": "/root/astra_p0_maternal",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
       "checked_at": "2026-10-03",
       "original_sources_reopened": [
+        "meningitis-adam-tb",
         "meningitis-cdc-bacterial-meningitis",
+        "meningitis-cdc-food-cold",
         "meningitis-cdc-fungal-meningitis",
         "meningitis-cdc-haemophilus",
         "meningitis-cdc-index",
         "meningitis-cdc-listeria",
         "meningitis-cdc-listeria-symptoms",
         "meningitis-cdc-surveillance",
+        "meningitis-cdc-tb-adverse",
         "meningitis-cdc-viral-meningitis",
         "meningitis-fda-listeria",
         "meningitis-healthdirect",
+        "meningitis-healthdirect-vomiting",
         "meningitis-lpt-viral-policy",
+        "meningitis-mayo-anaphylaxis",
         "meningitis-mayo-causes",
+        "meningitis-mayo-infant-feeding",
+        "meningitis-mayo-migraine",
         "meningitis-mayo-treatment",
         "meningitis-msd-acute",
         "meningitis-msd-tb",
         "meningitis-msd-viral",
         "meningitis-nhs",
+        "meningitis-nhs-antibiotics",
+        "meningitis-nhs-migraine",
+        "meningitis-nhs-sah",
+        "meningitis-nhs-vomiting",
+        "meningitis-nice-ng240",
+        "meningitis-nice-tb",
+        "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
+        "meningitis-nsw-meningococcal",
+        "meningitis-p0-03-cdc-adeno",
+        "meningitis-p0-03-cdc-gnathostoma",
+        "meningitis-p0-03-cdc-hsv",
+        "meningitis-p0-03-cdc-neurosyphilis",
+        "meningitis-p0-03-cdc-parasite",
+        "meningitis-p0-03-idsa",
+        "meningitis-p0-03-india-adeno",
+        "meningitis-p0-03-mahidol-neurognath",
+        "meningitis-p0-03-merck-recurrent",
+        "meningitis-p0-03-msd-chronic",
+        "meningitis-p0-03-msd-helminth",
+        "meningitis-rch-clinical",
+        "meningitis-rch-dehydration",
+        "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
+        "meningitis-who",
+        "meningitis-who-guideline"
+      ],
+      "inherited_source_ids": [
+        "meningitis-adam-tb",
+        "meningitis-cdc-bacterial-meningitis",
+        "meningitis-cdc-food-cold",
+        "meningitis-cdc-haemophilus",
+        "meningitis-cdc-index",
+        "meningitis-cdc-listeria",
+        "meningitis-cdc-listeria-symptoms",
+        "meningitis-cdc-surveillance",
+        "meningitis-cdc-tb-adverse",
+        "meningitis-fda-listeria",
+        "meningitis-healthdirect",
+        "meningitis-healthdirect-vomiting",
+        "meningitis-lpt-viral-policy",
+        "meningitis-mayo-anaphylaxis",
+        "meningitis-mayo-infant-feeding",
+        "meningitis-mayo-migraine",
+        "meningitis-mayo-treatment",
+        "meningitis-msd-tb",
+        "meningitis-msd-viral",
+        "meningitis-nhs",
+        "meningitis-nhs-antibiotics",
+        "meningitis-nhs-migraine",
+        "meningitis-nhs-sah",
+        "meningitis-nhs-vomiting",
         "meningitis-nice-ng240",
         "meningitis-nice-tb",
         "meningitis-nih-cryptococcosis",
         "meningitis-nsw-enterovirus",
         "meningitis-nsw-meningococcal",
         "meningitis-rch-clinical",
+        "meningitis-rch-dehydration",
         "meningitis-ukhsa-contacts",
         "meningitis-ukhsa-hib",
         "meningitis-who",
@@ -281,30 +376,25 @@
       ],
       "findings": [
         {
-          "id": "MEN-P002-01",
-          "status": "resolved",
-          "claim_id": "p0-02-treatment-haemophilus",
-          "finding": "原先应按急性细菌路径处理并按检测调整是行动，却标explanation且仅CDC菌种说明。",
-          "resolution": "作者删除行动部分，仅保留H.influenzae脑膜炎属于细菌性脑膜炎的分类解释；实际核对最终中英正文及claim均已删除，未通过降级标签绕过双源。既有细菌治疗主张及支持保持。"
+          "finding": "Seven new diagnosis, treatment and complication claims used explanation classification.",
+          "resolution": "Corrected critical action/risk kinds while preserving actual independent support; no dose added.",
+          "status": "resolved"
         },
         {
-          "id": "MEN-P002-02",
-          "status": "resolved",
-          "claim_id": "p0-02-prevention-6",
-          "finding": "新增Hib疫苗保护范围句按explanation单源支持，存在疗效边界分类不足。",
-          "resolution": "作者删除该新增句及claim；保留原已审核疫苗预防部分和菌种/b型范围解释，未宣称全种疫苗保护。最终正文与claims确认不存在该新增句。"
+          "finding": "NCDC cited URL was404 on reviewer retrieval.",
+          "resolution": "Resolved current official PDF URL via official bulletin listing/search; actual six-page document downloaded and reviewed, metadata hash rebound.",
+          "status": "resolved"
         },
         {
-          "id": "MEN-P002-03",
-          "status": "resolved",
-          "finding": "集成前完整model.validate发现article.source_ids遗漏3个section新来源。前次section-level审查未覆盖此article linkage不变量。",
-          "resolution": "作者仅以所有section来源排序并集重建article.source_ids；排除此字段后的canonical hash完全相同，records/sources哈希不变；隔离内存替换候选并加入新来源后model.validate通过。"
+          "finding": "Potential overgeneralisation from generic parasitic treatment to neurological Gnathostoma, and from genital HSV suppression to recurrent meningitis.",
+          "resolution": "CurrentCDC and original Mahidol/KhonKaen2011 review both retain uncertain CNS anthelmintic/steroid benefits and potential worsening. HSV CNS treatment is distinct, long-term prevention not promised; no skin/genital regimens copied.",
+          "status": "resolved"
         }
       ],
-      "resolution": "一轮独立复读发现两项主张分类/证据问题，作者已缩窄并删除相应新增内容，随后只对两项修正和最终绑定做定向复查。最终可接受为AI独立编辑核验；真实医师签审仍false。两末级类别的确认建议绑定本报告最终canonical哈希，由主线程按冻结分类核对后落映射；此报告本身不修改覆盖或部署。"
+      "resolution": "Accept exact candidate for editorial evidence and scoped ICD integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-02-meningitis-independent.json"
+    "review_report": "reports/p0-03-meningitis-independent.json"
   },
   {
     "id": "p0-01-meningitis-causes_risks",
@@ -313,11 +403,11 @@
       "id": "meningitis",
       "section": "causes_risks"
     },
-    "content_sha256": "48e8e52d14bc02681c723b32149660ad8ee7bae27f65bd5b5b38c9cb67072d0c",
+    "content_sha256": "940f487d7313222e556e1dba5cb7b54526a96d615832f2215ed9116fdbbc1b4f",
     "status": "cross_checked",
     "scope": "full_section",
     "checked_at": "2026-10-03",
-    "checker": "/root/astra_p0_maternal",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -539,6 +629,96 @@
           "NIH cryptococcosis panel includes CDC/IDSA representation and cites WHO/trials; label HIV cryptococcosis scope and shared upstream evidence. MSD TB cites ATS/CDC/IDSA; FDA/CDC food safety share upstream evidence. RCH uses published pediatric guidance.",
           "LPT policy is locally authored/ratified IPC guidance, not a second CDC URL; its review date has passed but expiry has not. Only its viral-contact distinction is used and checked against current CDC."
         ]
+      },
+      {
+        "source_id": "meningitis-msd-acute",
+        "source_metadata_sha256": "8e548aa2e6f875801b0ea1d01e30a2af22a34044d905f95027e4db82f865d468",
+        "source_version": "2026-09",
+        "locator": "Etiology: Age/Route/Immune status; Diagnosis; Treatment/Antibiotics",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "International",
+        "independence_group": "MSD-MERCK",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-idsa",
+        "source_metadata_sha256": "d5a14b8ed3d83025606a1f502abc530dd5e25892fa5a2b65097706bb5862667d",
+        "source_version": "2017",
+        "locator": "Recommendations 13–33, 37–54, 62–69; Introduction",
+        "population": "术后、分流管、外伤相关脑室炎/脑膜炎",
+        "region": "US",
+        "independence_group": "IDSA",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-cdc-adeno",
+        "source_metadata_sha256": "43a38f3a677932f27dc153293b072994b5241fc1d2af96c1dff82220106fe10b",
+        "source_version": "2025-12-16",
+        "locator": "Symptoms; How it spreads; Prevention; Treatment; vaccine",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-india-adeno",
+        "source_metadata_sha256": "7ff091b7b083eaa89da492311a1aef14b54ad04f01a7497403642ef889ada60b",
+        "source_version": "2023-03",
+        "locator": "pp1–4: epidemiology, CNS box, diagnosis, management; p5 prevention",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "IN",
+        "independence_group": "India-NCDC",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-msd-chronic",
+        "source_metadata_sha256": "a9442e140c6d0f49ed5196d65913e4ffaef7a36dea86ecac7c66dd5d8ca64bc5",
+        "source_version": "2026-09",
+        "locator": "Major infectious causes table; Syphilitic meningitis; Fungal meningitis after epidural methylprednisolone; Other fungal meningitides; Diagnosis/Treatment",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "International",
+        "independence_group": "MSD",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-cdc-parasite",
+        "source_metadata_sha256": "24b0d2a3b77ca77ac7f18055ec1b91435e268e6d37a73613abab736a2eb3a70b",
+        "source_version": "2025-09-09",
+        "locator": "Types; Risk factors; Spread; Testing; Treatment",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "支持新分流/病因解释"
       }
     ],
     "claims": [
@@ -681,6 +861,106 @@
             "assessment": "NSW specifies transmission and mostly mild/asymptomatic infection; CDC distinguishes infection of contacts from meningitis; MSD independently describes enterovirus stool transmission."
           }
         ]
+      },
+      {
+        "id": "p0-03-bacterial",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "链球菌不是单一细菌：B族链球菌更常见于新生儿，肺炎链球菌也可感染较大儿童和成人。葡萄球菌、部分革兰阴性菌则需结合头部外伤、神经外科手术、分流管或其他感染来源判断。",
+          "en": "Streptococci include different bacteria: group B organisms are prominent in newborns, while pneumococcus also affects older children and adults. Staphylococci and some gram-negative bacteria require attention to head injury, neurosurgery, shunts and other infection sources."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-msd-acute",
+            "locator": "Etiology: Age/Route/Immune status; Diagnosis; Treatment/Antibiotics",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-idsa",
+            "locator": "Recommendations 13–33, 37–54, 62–69; Introduction",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          }
+        ]
+      },
+      {
+        "id": "p0-03-adeno",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "腺病毒通常引起呼吸道、眼部或胃肠道感染，少数累及神经系统；免疫功能低下者更容易出现重症。不能因为同时流鼻涕或腹泻，就否认脑膜炎的可能。",
+          "en": "Adenovirus usually affects the respiratory tract, eyes or gut but can occasionally involve the nervous system; immunocompromised people face greater severity. Respiratory symptoms or diarrhoea do not rule out meningitis."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-p0-03-cdc-adeno",
+            "locator": "Symptoms; How it spreads; Prevention; Treatment; vaccine",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-india-adeno",
+            "locator": "pp1–4: epidemiology, CNS box, diagnosis, management; p5 prevention",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          }
+        ]
+      },
+      {
+        "id": "p0-03-fungal-procedure",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "真菌也可能通过受污染的脊柱注射或医疗操作进入体内，健康人同样可能受影响；症状可能缓慢出现。真菌种类和暴露地点影响检查与用药，不是所有病例都属于隐球菌感染。",
+          "en": "Fungi can rarely enter through contaminated spinal injections or procedures, including in otherwise healthy people. Symptoms may develop slowly. Species and exposure location affect investigation and treatment; not every case is cryptococcal."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-cdc-fungal-meningitis",
+            "locator": "What it is; procedures; symptoms; diagnosis; treatment/recovery",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-msd-chronic",
+            "locator": "Major infectious causes table; Syphilitic meningitis; Fungal meningitis after epidural methylprednisolone; Other fungal meningitides; Diagnosis/Treatment",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          }
+        ]
+      },
+      {
+        "id": "p0-03-other-virus",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "除肠道病毒和腺病毒外，疱疹病毒、西尼罗等虫媒病毒、流感或HIV等也可累及脑膜；传播方式不同，不能据“病毒性”就判断需要哪种接触者措施。",
+          "en": "Beyond enterovirus and adenovirus, herpesviruses, arboviruses such as West Nile, influenza and HIV can affect the meninges. Transmission differs, so the label viral alone does not determine contact precautions."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-cdc-viral-meningitis",
+            "locator": "What it is; spread; prevention; treatment/recovery",
+            "assessment": "限定病原/场景的独立编写材料；待交叉复读"
+          },
+          {
+            "source_id": "meningitis-mayo-causes",
+            "locator": "Viral meningitis; Parasitic meningitis; Other causes",
+            "assessment": "限定病原/场景的独立编写材料；待交叉复读"
+          }
+        ]
+      },
+      {
+        "id": "p0-03-parasitic-route",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "寄生虫性脑膜炎可与吃进被污染的食物或动物粪便有关，通常不在人与人之间传播；来源与旅行地区因虫种而异，不能把所有病例当作游泳水进入鼻子造成的阿米巴感染。",
+          "en": "Parasitic meningitis may follow ingestion of contaminated food or animal faeces and generally does not spread between people. Exposure and travel risks depend on the organism; not every case is amoebic infection from water entering the nose."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-p0-03-cdc-parasite",
+            "locator": "Types; Risk factors; Spread; Testing; Treatment",
+            "assessment": "限定病原/场景的独立编写材料；待交叉复读"
+          },
+          {
+            "source_id": "meningitis-mayo-causes",
+            "locator": "Viral meningitis; Parasitic meningitis; Other causes",
+            "assessment": "限定病原/场景的独立编写材料；待交叉复读"
+          }
+        ]
       }
     ],
     "independence": {
@@ -689,38 +969,98 @@
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "none",
-      "resolution": "No new contradictory recommendation asserted; diagnosis and treatment remain pathogen-conditional."
+      "status": "regional_difference",
+      "resolution": "Pathogen, age, post-neurosurgical device, immune status and local resistance guide treatment. Common uncertainty retained for neurognathostomiasis and injection-associated fungi; no old regional doses or generalized adenovirus antiviral regimen."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/astra_p0_neurology",
-      "reviewer": "/root/astra_p0_maternal",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
       "checked_at": "2026-10-03",
       "original_sources_reopened": [
+        "meningitis-adam-tb",
         "meningitis-cdc-bacterial-meningitis",
+        "meningitis-cdc-food-cold",
         "meningitis-cdc-fungal-meningitis",
         "meningitis-cdc-haemophilus",
         "meningitis-cdc-index",
         "meningitis-cdc-listeria",
         "meningitis-cdc-listeria-symptoms",
         "meningitis-cdc-surveillance",
+        "meningitis-cdc-tb-adverse",
         "meningitis-cdc-viral-meningitis",
         "meningitis-fda-listeria",
         "meningitis-healthdirect",
+        "meningitis-healthdirect-vomiting",
         "meningitis-lpt-viral-policy",
+        "meningitis-mayo-anaphylaxis",
         "meningitis-mayo-causes",
+        "meningitis-mayo-infant-feeding",
+        "meningitis-mayo-migraine",
         "meningitis-mayo-treatment",
         "meningitis-msd-acute",
         "meningitis-msd-tb",
         "meningitis-msd-viral",
         "meningitis-nhs",
+        "meningitis-nhs-antibiotics",
+        "meningitis-nhs-migraine",
+        "meningitis-nhs-sah",
+        "meningitis-nhs-vomiting",
+        "meningitis-nice-ng240",
+        "meningitis-nice-tb",
+        "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
+        "meningitis-nsw-meningococcal",
+        "meningitis-p0-03-cdc-adeno",
+        "meningitis-p0-03-cdc-gnathostoma",
+        "meningitis-p0-03-cdc-hsv",
+        "meningitis-p0-03-cdc-neurosyphilis",
+        "meningitis-p0-03-cdc-parasite",
+        "meningitis-p0-03-idsa",
+        "meningitis-p0-03-india-adeno",
+        "meningitis-p0-03-mahidol-neurognath",
+        "meningitis-p0-03-merck-recurrent",
+        "meningitis-p0-03-msd-chronic",
+        "meningitis-p0-03-msd-helminth",
+        "meningitis-rch-clinical",
+        "meningitis-rch-dehydration",
+        "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
+        "meningitis-who",
+        "meningitis-who-guideline"
+      ],
+      "inherited_source_ids": [
+        "meningitis-adam-tb",
+        "meningitis-cdc-bacterial-meningitis",
+        "meningitis-cdc-food-cold",
+        "meningitis-cdc-haemophilus",
+        "meningitis-cdc-index",
+        "meningitis-cdc-listeria",
+        "meningitis-cdc-listeria-symptoms",
+        "meningitis-cdc-surveillance",
+        "meningitis-cdc-tb-adverse",
+        "meningitis-fda-listeria",
+        "meningitis-healthdirect",
+        "meningitis-healthdirect-vomiting",
+        "meningitis-lpt-viral-policy",
+        "meningitis-mayo-anaphylaxis",
+        "meningitis-mayo-infant-feeding",
+        "meningitis-mayo-migraine",
+        "meningitis-mayo-treatment",
+        "meningitis-msd-tb",
+        "meningitis-msd-viral",
+        "meningitis-nhs",
+        "meningitis-nhs-antibiotics",
+        "meningitis-nhs-migraine",
+        "meningitis-nhs-sah",
+        "meningitis-nhs-vomiting",
         "meningitis-nice-ng240",
         "meningitis-nice-tb",
         "meningitis-nih-cryptococcosis",
         "meningitis-nsw-enterovirus",
         "meningitis-nsw-meningococcal",
         "meningitis-rch-clinical",
+        "meningitis-rch-dehydration",
         "meningitis-ukhsa-contacts",
         "meningitis-ukhsa-hib",
         "meningitis-who",
@@ -728,30 +1068,25 @@
       ],
       "findings": [
         {
-          "id": "MEN-P002-01",
-          "status": "resolved",
-          "claim_id": "p0-02-treatment-haemophilus",
-          "finding": "原先应按急性细菌路径处理并按检测调整是行动，却标explanation且仅CDC菌种说明。",
-          "resolution": "作者删除行动部分，仅保留H.influenzae脑膜炎属于细菌性脑膜炎的分类解释；实际核对最终中英正文及claim均已删除，未通过降级标签绕过双源。既有细菌治疗主张及支持保持。"
+          "finding": "Seven new diagnosis, treatment and complication claims used explanation classification.",
+          "resolution": "Corrected critical action/risk kinds while preserving actual independent support; no dose added.",
+          "status": "resolved"
         },
         {
-          "id": "MEN-P002-02",
-          "status": "resolved",
-          "claim_id": "p0-02-prevention-6",
-          "finding": "新增Hib疫苗保护范围句按explanation单源支持，存在疗效边界分类不足。",
-          "resolution": "作者删除该新增句及claim；保留原已审核疫苗预防部分和菌种/b型范围解释，未宣称全种疫苗保护。最终正文与claims确认不存在该新增句。"
+          "finding": "NCDC cited URL was404 on reviewer retrieval.",
+          "resolution": "Resolved current official PDF URL via official bulletin listing/search; actual six-page document downloaded and reviewed, metadata hash rebound.",
+          "status": "resolved"
         },
         {
-          "id": "MEN-P002-03",
-          "status": "resolved",
-          "finding": "集成前完整model.validate发现article.source_ids遗漏3个section新来源。前次section-level审查未覆盖此article linkage不变量。",
-          "resolution": "作者仅以所有section来源排序并集重建article.source_ids；排除此字段后的canonical hash完全相同，records/sources哈希不变；隔离内存替换候选并加入新来源后model.validate通过。"
+          "finding": "Potential overgeneralisation from generic parasitic treatment to neurological Gnathostoma, and from genital HSV suppression to recurrent meningitis.",
+          "resolution": "CurrentCDC and original Mahidol/KhonKaen2011 review both retain uncertain CNS anthelmintic/steroid benefits and potential worsening. HSV CNS treatment is distinct, long-term prevention not promised; no skin/genital regimens copied.",
+          "status": "resolved"
         }
       ],
-      "resolution": "一轮独立复读发现两项主张分类/证据问题，作者已缩窄并删除相应新增内容，随后只对两项修正和最终绑定做定向复查。最终可接受为AI独立编辑核验；真实医师签审仍false。两末级类别的确认建议绑定本报告最终canonical哈希，由主线程按冻结分类核对后落映射；此报告本身不修改覆盖或部署。"
+      "resolution": "Accept exact candidate for editorial evidence and scoped ICD integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-02-meningitis-independent.json"
+    "review_report": "reports/p0-03-meningitis-independent.json"
   },
   {
     "id": "p0-01-meningitis-red_flags",
@@ -1452,11 +1787,11 @@
       "id": "meningitis",
       "section": "diagnosis"
     },
-    "content_sha256": "a2a664e67d362dc4dfef0eae1b69497cec724edd0291dcb64cddae57f848db99",
+    "content_sha256": "dfd407b6032709939742d8e403f0b50b615f6fc591acc8996c477758ce197706",
     "status": "cross_checked",
     "scope": "full_section",
     "checked_at": "2026-10-03",
-    "checker": "/root/astra_p0_maternal",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -1608,6 +1943,66 @@
         ],
         "relation": "supports",
         "assessment": "Supports only the named additions identified in the claim inventory, not every statement in this section."
+      },
+      {
+        "source_id": "meningitis-p0-03-idsa",
+        "source_metadata_sha256": "d5a14b8ed3d83025606a1f502abc530dd5e25892fa5a2b65097706bb5862667d",
+        "source_version": "2017",
+        "locator": "Recommendations 13–33, 37–54, 62–69; Introduction",
+        "population": "术后、分流管、外伤相关脑室炎/脑膜炎",
+        "region": "US",
+        "independence_group": "IDSA",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-msd-chronic",
+        "source_metadata_sha256": "a9442e140c6d0f49ed5196d65913e4ffaef7a36dea86ecac7c66dd5d8ca64bc5",
+        "source_version": "2026-09",
+        "locator": "Major infectious causes table; Syphilitic meningitis; Fungal meningitis after epidural methylprednisolone; Other fungal meningitides; Diagnosis/Treatment",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "International",
+        "independence_group": "MSD",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-cdc-parasite",
+        "source_metadata_sha256": "24b0d2a3b77ca77ac7f18055ec1b91435e268e6d37a73613abab736a2eb3a70b",
+        "source_version": "2025-09-09",
+        "locator": "Types; Risk factors; Spread; Testing; Treatment",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-msd-helminth",
+        "source_metadata_sha256": "f1760409ac112c88b6dfa2f7d238a72eb48e691988a97b4ee0a633496106bf73",
+        "source_version": "2026-07",
+        "locator": "Other helminthic infections: Gnathostoma neurologic manifestations, returning traveller, neuroimaging/CSF",
+        "population": "成人及儿童；专病证据按主张限定",
+        "region": "International",
+        "independence_group": "MSD",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "Mayo、MSD及CDC分别独立编辑；MSD各页同组，CDC各页同组；指南引用/同上游不等于独立试验。"
+        ],
+        "relation": "supports",
+        "assessment": "Parasite diagnostic approach in Gnathostoma example"
       }
     ],
     "claims": [
@@ -1735,6 +2130,51 @@
             "assessment": "MSD explicitly identifies enterovirus PCR in CSF work-up; NSW lists CSF testing; CDC explains culture/PCR and public-health role of serotype."
           }
         ]
+      },
+      {
+        "id": "p0-03-repeat-tests",
+        "kind": "action",
+        "text": {
+          "zh-CN": "对术后、持续或反复的脑膜炎，医生可能需要复查脑脊液、培养和影像，寻找病原体、感染装置或结构问题。用过抗生素会降低部分检查检出率，单次阴性不能独自排除感染。",
+          "en": "After surgery or with persistent or recurrent meningitis, repeat CSF testing, cultures and imaging may identify organisms, infected devices or structural problems. Prior antibiotics can reduce detection; a single negative result does not exclude infection."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-p0-03-idsa",
+            "locator": "Recommendations 13–33, 37–54, 62–69; Introduction",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          },
+          {
+            "source_id": "meningitis-msd-acute",
+            "locator": "Etiology: Age/Route/Immune status; Diagnosis; Treatment/Antibiotics",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-msd-chronic",
+            "locator": "Major infectious causes table; Syphilitic meningitis; Fungal meningitis after epidural methylprednisolone; Other fungal meningitides; Diagnosis/Treatment",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          }
+        ]
+      },
+      {
+        "id": "p0-03-parasite",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "怀疑寄生虫时，旅行、吃过的生食和动物粪便接触很重要；脑脊液、影像等检查可提供线索，但直接找到寄生虫并不容易。不同寄生虫的检查不能互相替代。",
+          "en": "When parasites are suspected, travel, raw food and animal-faeces exposure matter. CSF and imaging can provide clues, but finding the organism can be difficult; tests for different parasites are not interchangeable."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-p0-03-cdc-parasite",
+            "locator": "Types; Risk factors; Spread; Testing; Treatment",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-msd-helminth",
+            "locator": "Other helminthic infections: Gnathostoma neurologic manifestations, returning traveller, neuroimaging/CSF",
+            "assessment": "Gnathostoma example independently supports travel, CSF and imaging; not every parasite-specific assay."
+          }
+        ]
       }
     ],
     "independence": {
@@ -1743,38 +2183,98 @@
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "none",
-      "resolution": "No new contradictory recommendation asserted; diagnosis and treatment remain pathogen-conditional."
+      "status": "regional_difference",
+      "resolution": "Pathogen, age, post-neurosurgical device, immune status and local resistance guide treatment. Common uncertainty retained for neurognathostomiasis and injection-associated fungi; no old regional doses or generalized adenovirus antiviral regimen."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/astra_p0_neurology",
-      "reviewer": "/root/astra_p0_maternal",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
       "checked_at": "2026-10-03",
       "original_sources_reopened": [
+        "meningitis-adam-tb",
         "meningitis-cdc-bacterial-meningitis",
+        "meningitis-cdc-food-cold",
         "meningitis-cdc-fungal-meningitis",
         "meningitis-cdc-haemophilus",
         "meningitis-cdc-index",
         "meningitis-cdc-listeria",
         "meningitis-cdc-listeria-symptoms",
         "meningitis-cdc-surveillance",
+        "meningitis-cdc-tb-adverse",
         "meningitis-cdc-viral-meningitis",
         "meningitis-fda-listeria",
         "meningitis-healthdirect",
+        "meningitis-healthdirect-vomiting",
         "meningitis-lpt-viral-policy",
+        "meningitis-mayo-anaphylaxis",
         "meningitis-mayo-causes",
+        "meningitis-mayo-infant-feeding",
+        "meningitis-mayo-migraine",
         "meningitis-mayo-treatment",
         "meningitis-msd-acute",
         "meningitis-msd-tb",
         "meningitis-msd-viral",
         "meningitis-nhs",
+        "meningitis-nhs-antibiotics",
+        "meningitis-nhs-migraine",
+        "meningitis-nhs-sah",
+        "meningitis-nhs-vomiting",
+        "meningitis-nice-ng240",
+        "meningitis-nice-tb",
+        "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
+        "meningitis-nsw-meningococcal",
+        "meningitis-p0-03-cdc-adeno",
+        "meningitis-p0-03-cdc-gnathostoma",
+        "meningitis-p0-03-cdc-hsv",
+        "meningitis-p0-03-cdc-neurosyphilis",
+        "meningitis-p0-03-cdc-parasite",
+        "meningitis-p0-03-idsa",
+        "meningitis-p0-03-india-adeno",
+        "meningitis-p0-03-mahidol-neurognath",
+        "meningitis-p0-03-merck-recurrent",
+        "meningitis-p0-03-msd-chronic",
+        "meningitis-p0-03-msd-helminth",
+        "meningitis-rch-clinical",
+        "meningitis-rch-dehydration",
+        "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
+        "meningitis-who",
+        "meningitis-who-guideline"
+      ],
+      "inherited_source_ids": [
+        "meningitis-adam-tb",
+        "meningitis-cdc-bacterial-meningitis",
+        "meningitis-cdc-food-cold",
+        "meningitis-cdc-haemophilus",
+        "meningitis-cdc-index",
+        "meningitis-cdc-listeria",
+        "meningitis-cdc-listeria-symptoms",
+        "meningitis-cdc-surveillance",
+        "meningitis-cdc-tb-adverse",
+        "meningitis-fda-listeria",
+        "meningitis-healthdirect",
+        "meningitis-healthdirect-vomiting",
+        "meningitis-lpt-viral-policy",
+        "meningitis-mayo-anaphylaxis",
+        "meningitis-mayo-infant-feeding",
+        "meningitis-mayo-migraine",
+        "meningitis-mayo-treatment",
+        "meningitis-msd-tb",
+        "meningitis-msd-viral",
+        "meningitis-nhs",
+        "meningitis-nhs-antibiotics",
+        "meningitis-nhs-migraine",
+        "meningitis-nhs-sah",
+        "meningitis-nhs-vomiting",
         "meningitis-nice-ng240",
         "meningitis-nice-tb",
         "meningitis-nih-cryptococcosis",
         "meningitis-nsw-enterovirus",
         "meningitis-nsw-meningococcal",
         "meningitis-rch-clinical",
+        "meningitis-rch-dehydration",
         "meningitis-ukhsa-contacts",
         "meningitis-ukhsa-hib",
         "meningitis-who",
@@ -1782,30 +2282,25 @@
       ],
       "findings": [
         {
-          "id": "MEN-P002-01",
-          "status": "resolved",
-          "claim_id": "p0-02-treatment-haemophilus",
-          "finding": "原先应按急性细菌路径处理并按检测调整是行动，却标explanation且仅CDC菌种说明。",
-          "resolution": "作者删除行动部分，仅保留H.influenzae脑膜炎属于细菌性脑膜炎的分类解释；实际核对最终中英正文及claim均已删除，未通过降级标签绕过双源。既有细菌治疗主张及支持保持。"
+          "finding": "Seven new diagnosis, treatment and complication claims used explanation classification.",
+          "resolution": "Corrected critical action/risk kinds while preserving actual independent support; no dose added.",
+          "status": "resolved"
         },
         {
-          "id": "MEN-P002-02",
-          "status": "resolved",
-          "claim_id": "p0-02-prevention-6",
-          "finding": "新增Hib疫苗保护范围句按explanation单源支持，存在疗效边界分类不足。",
-          "resolution": "作者删除该新增句及claim；保留原已审核疫苗预防部分和菌种/b型范围解释，未宣称全种疫苗保护。最终正文与claims确认不存在该新增句。"
+          "finding": "NCDC cited URL was404 on reviewer retrieval.",
+          "resolution": "Resolved current official PDF URL via official bulletin listing/search; actual six-page document downloaded and reviewed, metadata hash rebound.",
+          "status": "resolved"
         },
         {
-          "id": "MEN-P002-03",
-          "status": "resolved",
-          "finding": "集成前完整model.validate发现article.source_ids遗漏3个section新来源。前次section-level审查未覆盖此article linkage不变量。",
-          "resolution": "作者仅以所有section来源排序并集重建article.source_ids；排除此字段后的canonical hash完全相同，records/sources哈希不变；隔离内存替换候选并加入新来源后model.validate通过。"
+          "finding": "Potential overgeneralisation from generic parasitic treatment to neurological Gnathostoma, and from genital HSV suppression to recurrent meningitis.",
+          "resolution": "CurrentCDC and original Mahidol/KhonKaen2011 review both retain uncertain CNS anthelmintic/steroid benefits and potential worsening. HSV CNS treatment is distinct, long-term prevention not promised; no skin/genital regimens copied.",
+          "status": "resolved"
         }
       ],
-      "resolution": "一轮独立复读发现两项主张分类/证据问题，作者已缩窄并删除相应新增内容，随后只对两项修正和最终绑定做定向复查。最终可接受为AI独立编辑核验；真实医师签审仍false。两末级类别的确认建议绑定本报告最终canonical哈希，由主线程按冻结分类核对后落映射；此报告本身不修改覆盖或部署。"
+      "resolution": "Accept exact candidate for editorial evidence and scoped ICD integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-02-meningitis-independent.json"
+    "review_report": "reports/p0-03-meningitis-independent.json"
   },
   {
     "id": "p0-01-meningitis-differentials",
@@ -1814,11 +2309,11 @@
       "id": "meningitis",
       "section": "differentials"
     },
-    "content_sha256": "0ea1bb178fa550c1b3a913a1b98723beca8191ee3964940d6a2a8e1be65c6396",
+    "content_sha256": "70856c0b55c04a0a6a4787f248a197484aef098928b6c63ae2cde0ab564859f8",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/retinal_targeted",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -1957,6 +2452,36 @@
           "NIH cryptococcosis panel includes CDC/IDSA representation and cites WHO/trials; label HIV cryptococcosis scope and shared upstream evidence. MSD TB cites ATS/CDC/IDSA; FDA/CDC food safety share upstream evidence. RCH uses published pediatric guidance.",
           "LPT policy is locally authored/ratified IPC guidance, not a second CDC URL; its review date has passed but expiry has not. Only its viral-contact distinction is used and checked against current CDC."
         ]
+      },
+      {
+        "source_id": "meningitis-p0-03-merck-recurrent",
+        "source_metadata_sha256": "d246b4eff3f4e1c7278d75e89c737455a9c098494880ec193b5005b5dd3112b3",
+        "source_version": "2026-09",
+        "locator": "Recurrent viral; Recurrent acute bacterial; Other recurrent meningitides — actual full source text returned by web search, direct reopens timed out",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "International",
+        "independence_group": "MSD",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-msd-chronic",
+        "source_metadata_sha256": "a9442e140c6d0f49ed5196d65913e4ffaef7a36dea86ecac7c66dd5d8ca64bc5",
+        "source_version": "2026-09",
+        "locator": "Major infectious causes table; Syphilitic meningitis; Fungal meningitis after epidural methylprednisolone; Other fungal meningitides; Diagnosis/Treatment",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "International",
+        "independence_group": "MSD",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
       }
     ],
     "claims": [
@@ -2054,6 +2579,26 @@
             "assessment": "Meningococcal disease may cause meningitis and/or sepsis, independently supporting bloodstream disease without requiring meningitis. CDC specifies bacteremia; no longer falsely attribute this clause to Mayo’s Neisseria paragraph."
           }
         ]
+      },
+      {
+        "id": "p0-03-recurrence",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "“良性复发性脑膜炎”不是反复头痛的自我诊断。部分复发与HSV-2相关；反复细菌感染还可能涉及脑脊液漏或免疫问题，药物和非感染性疾病也会造成复发表现。",
+          "en": "Benign recurrent meningitis is not a self-diagnosis for repeated headaches. Some recurrences involve HSV-2; recurrent bacterial infection may reflect a CSF leak or immune problem, while medicines and noninfectious disease can also produce recurrent episodes."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-p0-03-merck-recurrent",
+            "locator": "Recurrent viral; Recurrent acute bacterial; Other recurrent meningitides — actual full source text returned by web search, direct reopens timed out",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-msd-chronic",
+            "locator": "Major infectious causes table; Syphilitic meningitis; Fungal meningitis after epidural methylprednisolone; Other fungal meningitides; Diagnosis/Treatment",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          }
+        ]
       }
     ],
     "independence": {
@@ -2062,19 +2607,20 @@
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "none",
-      "resolution": "Jurisdiction and guideline population retained; hearing timing anchors differ. Author candidate synthesis, pending independent review."
+      "status": "regional_difference",
+      "resolution": "Pathogen, age, post-neurosurgical device, immune status and local resistance guide treatment. Common uncertainty retained for neurognathostomiasis and injection-associated fungi; no old regional doses or generalized adenovirus antiviral regimen."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/mi_icd_scope",
-      "reviewer": "/root/retinal_targeted",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "meningitis-adam-tb",
         "meningitis-cdc-bacterial-meningitis",
         "meningitis-cdc-food-cold",
         "meningitis-cdc-fungal-meningitis",
+        "meningitis-cdc-haemophilus",
         "meningitis-cdc-index",
         "meningitis-cdc-listeria",
         "meningitis-cdc-listeria-symptoms",
@@ -2101,108 +2647,84 @@
         "meningitis-nice-ng240",
         "meningitis-nice-tb",
         "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
+        "meningitis-nsw-meningococcal",
+        "meningitis-p0-03-cdc-adeno",
+        "meningitis-p0-03-cdc-gnathostoma",
+        "meningitis-p0-03-cdc-hsv",
+        "meningitis-p0-03-cdc-neurosyphilis",
+        "meningitis-p0-03-cdc-parasite",
+        "meningitis-p0-03-idsa",
+        "meningitis-p0-03-india-adeno",
+        "meningitis-p0-03-mahidol-neurognath",
+        "meningitis-p0-03-merck-recurrent",
+        "meningitis-p0-03-msd-chronic",
+        "meningitis-p0-03-msd-helminth",
+        "meningitis-rch-clinical",
+        "meningitis-rch-dehydration",
+        "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
+        "meningitis-who",
+        "meningitis-who-guideline"
+      ],
+      "inherited_source_ids": [
+        "meningitis-adam-tb",
+        "meningitis-cdc-bacterial-meningitis",
+        "meningitis-cdc-food-cold",
+        "meningitis-cdc-haemophilus",
+        "meningitis-cdc-index",
+        "meningitis-cdc-listeria",
+        "meningitis-cdc-listeria-symptoms",
+        "meningitis-cdc-surveillance",
+        "meningitis-cdc-tb-adverse",
+        "meningitis-fda-listeria",
+        "meningitis-healthdirect",
+        "meningitis-healthdirect-vomiting",
+        "meningitis-lpt-viral-policy",
+        "meningitis-mayo-anaphylaxis",
+        "meningitis-mayo-infant-feeding",
+        "meningitis-mayo-migraine",
+        "meningitis-mayo-treatment",
+        "meningitis-msd-tb",
+        "meningitis-msd-viral",
+        "meningitis-nhs",
+        "meningitis-nhs-antibiotics",
+        "meningitis-nhs-migraine",
+        "meningitis-nhs-sah",
+        "meningitis-nhs-vomiting",
+        "meningitis-nice-ng240",
+        "meningitis-nice-tb",
+        "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
         "meningitis-nsw-meningococcal",
         "meningitis-rch-clinical",
         "meningitis-rch-dehydration",
         "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
         "meningitis-who",
         "meningitis-who-guideline"
       ],
       "findings": [
         {
-          "id": "M01",
-          "status": "resolved",
-          "resolution": "CDC and independently written LPT p9 corroborate virus acquisition versus meningitis; stale single-source assessment corrected."
+          "finding": "Seven new diagnosis, treatment and complication claims used explanation classification.",
+          "resolution": "Corrected critical action/risk kinds while preserving actual independent support; no dose added.",
+          "status": "resolved"
         },
         {
-          "id": "M02",
-          "status": "resolved",
-          "resolution": "Inherited emergency conclusions unchanged; neither rash nor complete symptom set required."
+          "finding": "NCDC cited URL was404 on reviewer retrieval.",
+          "resolution": "Resolved current official PDF URL via official bulletin listing/search; actual six-page document downloaded and reviewed, metadata hash rebound.",
+          "status": "resolved"
         },
         {
-          "id": "M03",
-          "status": "resolved",
-          "resolution": "Inherited removal of unsupported forced-neck maneuver remains intact."
-        },
-        {
-          "id": "M04",
-          "status": "resolved",
-          "resolution": "Practical communication checklist is not a validated diagnostic score; no mechanical second-source requirement."
-        },
-        {
-          "id": "M05",
-          "status": "resolved",
-          "resolution": "WHO A.3 negative blood-marker limit; A.1.1/A.4 stabilization and selective imaging corroborate NICE. No delay to antibiotics preserved."
-        },
-        {
-          "id": "M06",
-          "status": "resolved",
-          "resolution": "MSD TB independently corroborates distinct multidrug meningeal treatment; NIH HIV-specific cryptococcosis confirms immune-dependent duration. NICE specialist routing is bounded service guidance, not an unsupported efficacy threshold."
-        },
-        {
-          "id": "M07",
-          "status": "resolved",
-          "resolution": "NHS ordinary flu/gastroenteritis resemblance needs no duplicated wording. NHS SAH supports bleed example; NSW independently confirms meningitis and/or septicemia. Emergency actions remain corroborated."
-        },
-        {
-          "id": "M08",
-          "status": "resolved",
-          "resolution": "MSD/RCH/WHO give component-specific empiric selection and support-care evidence. NHS hospital fluids/oxygen and pediatric RCH seizure management read. CDC directly describes immune-risk viral hospital care; MSD offers complementary severe-illness/immune context, not fake exact second rule. Conditional hospital review is accepted within strongly corroborated emergency pathway."
-        },
-        {
-          "id": "M09",
-          "status": "resolved",
-          "resolution": "Revised infant-feeding wording checked against Mayo infant warning and NHS/RCH age-relevant illness assessment; adult Healthdirect limitation retained. Recordkeeping is practical support."
-        },
-        {
-          "id": "M10",
-          "status": "resolved",
-          "resolution": "CDC technical P8 supplies exact cold-growth mechanism, with FDA coauthorship/shared upstream disclosed. Distinct technical and patient writings are not represented as independent experiments."
-        },
-        {
-          "id": "M11",
-          "status": "resolved",
-          "resolution": "Chinese over-one-month boundary now matches English and WHO scope. WHO and NICE hearing clocks and strength remain explicitly attributed differences; no invented identical global deadline."
-        },
-        {
-          "id": "M12",
-          "status": "resolved",
-          "resolution": "Regional vaccination/prophylaxis scope stays bounded; UKHSA contact passage corroborates existing meningococcal contact action without exporting temporary Kent outbreak schedules."
-        },
-        {
-          "id": "P0-M13",
-          "status": "resolved",
-          "claims": [
-            "causes_risks-3"
-          ],
-          "resolution": "NSW functional spleen and NICE1.1.8/1.1.14 added precisely."
-        },
-        {
-          "id": "P0-M14",
-          "status": "resolved",
-          "claims": [
-            "special_populations-2"
-          ],
-          "resolution": "NHS chemotherapy and CDC post-transplant medicines explicitly bound, with Mayo mechanism complementary."
-        },
-        {
-          "id": "P0-M15",
-          "status": "resolved",
-          "claims": [
-            "special_populations-3"
-          ],
-          "resolution": "New actual-read CDC maternal symptoms passage supplies precise second writing alongside FDA; common upstream acknowledged."
-        },
-        {
-          "id": "P0-M16",
-          "status": "resolved",
-          "resolution": "Added the already reviewed CDC Listeria symptoms source to condition.source_ids; citation-list closure only. Section text and ledger/source hashes unchanged."
+          "finding": "Potential overgeneralisation from generic parasitic treatment to neurological Gnathostoma, and from genital HSV suppression to recurrent meningitis.",
+          "resolution": "CurrentCDC and original Mahidol/KhonKaen2011 review both retain uncertain CNS anthelmintic/steroid benefits and potential worsening. HSV CNS treatment is distinct, long-term prevention not promised; no skin/genital regimens copied.",
+          "status": "resolved"
         }
       ],
-      "resolution": "Accepted for the described bilingual overview and14 sections; earlier partial evidence gaps resolved with actual component-specific reads or accepted bounded ordinary/practical statements. No claim is downgraded to evade a dangerous-action requirement."
+      "resolution": "Accept exact candidate for editorial evidence and scoped ICD integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-meningitis-independent.json"
+    "review_report": "reports/p0-03-meningitis-independent.json"
   },
   {
     "id": "p0-01-meningitis-treatment",
@@ -2211,11 +2733,11 @@
       "id": "meningitis",
       "section": "treatment"
     },
-    "content_sha256": "37d7a02b8c192dbf72d2b0a4e71818d893654339e2a31568d96d39eaa7b17412",
+    "content_sha256": "8fd1d8527adf6981e8eb07892a43f04ed9f91257094075546b57bb45a893bcd9",
     "status": "cross_checked",
     "scope": "full_section",
     "checked_at": "2026-10-03",
-    "checker": "/root/astra_p0_maternal",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -2503,6 +3025,81 @@
         ],
         "relation": "supports",
         "assessment": "summary-1: Symptoms and infant differences."
+      },
+      {
+        "source_id": "meningitis-p0-03-idsa",
+        "source_metadata_sha256": "d5a14b8ed3d83025606a1f502abc530dd5e25892fa5a2b65097706bb5862667d",
+        "source_version": "2017",
+        "locator": "Recommendations 13–33, 37–54, 62–69; Introduction",
+        "population": "术后、分流管、外伤相关脑室炎/脑膜炎",
+        "region": "US",
+        "independence_group": "IDSA",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-cdc-adeno",
+        "source_metadata_sha256": "43a38f3a677932f27dc153293b072994b5241fc1d2af96c1dff82220106fe10b",
+        "source_version": "2025-12-16",
+        "locator": "Symptoms; How it spreads; Prevention; Treatment; vaccine",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-india-adeno",
+        "source_metadata_sha256": "7ff091b7b083eaa89da492311a1aef14b54ad04f01a7497403642ef889ada60b",
+        "source_version": "2023-03",
+        "locator": "pp1–4: epidemiology, CNS box, diagnosis, management; p5 prevention",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "IN",
+        "independence_group": "India-NCDC",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-cdc-neurosyphilis",
+        "source_metadata_sha256": "4b92ecbfede42c6d54dc2b0e4003c6bd5841d0fffd703d35cd0d2e39d1b889eb",
+        "source_version": "2021 STI guidelines",
+        "locator": "Treatment; Other Management Considerations; Follow-Up",
+        "population": "成人神经梅毒",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-msd-chronic",
+        "source_metadata_sha256": "a9442e140c6d0f49ed5196d65913e4ffaef7a36dea86ecac7c66dd5d8ca64bc5",
+        "source_version": "2026-09",
+        "locator": "Major infectious causes table; Syphilitic meningitis; Fungal meningitis after epidural methylprednisolone; Other fungal meningitides; Diagnosis/Treatment",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "International",
+        "independence_group": "MSD",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
       }
     ],
     "claims": [
@@ -2715,6 +3312,66 @@
             "assessment": "Bacterial identity and meningitis manifestation; unchanged general bacterial treatment pathway is supported by baseline treatment claims, not a new H. influenzae prescription."
           }
         ]
+      },
+      {
+        "id": "p0-03-postoperative",
+        "kind": "action",
+        "text": {
+          "zh-CN": "术后或分流管相关感染的抗生素选择与普通社区病例不同，需要考虑耐药菌和药物进入脑脊液的能力；确诊病原体后按药敏调整。感染装置可能还需由神经外科处理。",
+          "en": "Postoperative or shunt-associated infection requires different antibiotic choices from community cases, accounting for resistance and CSF penetration. Treatment is refined using susceptibility results; infected hardware may also require neurosurgical management."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-p0-03-idsa",
+            "locator": "Recommendations 13–33, 37–54, 62–69; Introduction",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          },
+          {
+            "source_id": "meningitis-msd-acute",
+            "locator": "Etiology: Age/Route/Immune status; Diagnosis; Treatment/Antibiotics",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          }
+        ]
+      },
+      {
+        "id": "p0-03-adeno-support",
+        "kind": "action",
+        "text": {
+          "zh-CN": "腺病毒性脑膜炎按神经系统病情接受监护和支持治疗，不能把普通腺病毒感冒的居家建议直接照搬。目前没有普遍适用的获批腺病毒特效药；重症或移植患者的特殊用药由专科决定。",
+          "en": "Adenoviral meningitis requires monitoring and support according to neurological severity; ordinary adenovirus cold advice cannot simply be applied at home. There is no generally applicable approved specific antiviral; specialists decide exceptional treatment in severe or transplant cases."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-p0-03-cdc-adeno",
+            "locator": "Symptoms; How it spreads; Prevention; Treatment; vaccine",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-india-adeno",
+            "locator": "pp1–4: epidemiology, CNS box, diagnosis, management; p5 prevention",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          }
+        ]
+      },
+      {
+        "id": "p0-03-syphilis",
+        "kind": "action",
+        "text": {
+          "zh-CN": "梅毒螺旋体也能累及脑膜，可能伴视力、听力或神经功能改变；需要神经梅毒方案，通常使用静脉青霉素，不能用一般病毒性脑膜炎的休息方案替代。",
+          "en": "Syphilis can involve the meninges with visual, hearing or neurological changes. It requires a neurosyphilis regimen, usually intravenous penicillin, rather than rest alone as for uncomplicated viral illness."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-p0-03-cdc-neurosyphilis",
+            "locator": "Treatment; Other Management Considerations; Follow-Up",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-msd-chronic",
+            "locator": "Major infectious causes table; Syphilitic meningitis; Fungal meningitis after epidural methylprednisolone; Other fungal meningitides; Diagnosis/Treatment",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          }
+        ]
       }
     ],
     "independence": {
@@ -2723,38 +3380,98 @@
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "none",
-      "resolution": "No new contradictory recommendation asserted; diagnosis and treatment remain pathogen-conditional."
+      "status": "regional_difference",
+      "resolution": "Pathogen, age, post-neurosurgical device, immune status and local resistance guide treatment. Common uncertainty retained for neurognathostomiasis and injection-associated fungi; no old regional doses or generalized adenovirus antiviral regimen."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/astra_p0_neurology",
-      "reviewer": "/root/astra_p0_maternal",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
       "checked_at": "2026-10-03",
       "original_sources_reopened": [
+        "meningitis-adam-tb",
         "meningitis-cdc-bacterial-meningitis",
+        "meningitis-cdc-food-cold",
         "meningitis-cdc-fungal-meningitis",
         "meningitis-cdc-haemophilus",
         "meningitis-cdc-index",
         "meningitis-cdc-listeria",
         "meningitis-cdc-listeria-symptoms",
         "meningitis-cdc-surveillance",
+        "meningitis-cdc-tb-adverse",
         "meningitis-cdc-viral-meningitis",
         "meningitis-fda-listeria",
         "meningitis-healthdirect",
+        "meningitis-healthdirect-vomiting",
         "meningitis-lpt-viral-policy",
+        "meningitis-mayo-anaphylaxis",
         "meningitis-mayo-causes",
+        "meningitis-mayo-infant-feeding",
+        "meningitis-mayo-migraine",
         "meningitis-mayo-treatment",
         "meningitis-msd-acute",
         "meningitis-msd-tb",
         "meningitis-msd-viral",
         "meningitis-nhs",
+        "meningitis-nhs-antibiotics",
+        "meningitis-nhs-migraine",
+        "meningitis-nhs-sah",
+        "meningitis-nhs-vomiting",
+        "meningitis-nice-ng240",
+        "meningitis-nice-tb",
+        "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
+        "meningitis-nsw-meningococcal",
+        "meningitis-p0-03-cdc-adeno",
+        "meningitis-p0-03-cdc-gnathostoma",
+        "meningitis-p0-03-cdc-hsv",
+        "meningitis-p0-03-cdc-neurosyphilis",
+        "meningitis-p0-03-cdc-parasite",
+        "meningitis-p0-03-idsa",
+        "meningitis-p0-03-india-adeno",
+        "meningitis-p0-03-mahidol-neurognath",
+        "meningitis-p0-03-merck-recurrent",
+        "meningitis-p0-03-msd-chronic",
+        "meningitis-p0-03-msd-helminth",
+        "meningitis-rch-clinical",
+        "meningitis-rch-dehydration",
+        "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
+        "meningitis-who",
+        "meningitis-who-guideline"
+      ],
+      "inherited_source_ids": [
+        "meningitis-adam-tb",
+        "meningitis-cdc-bacterial-meningitis",
+        "meningitis-cdc-food-cold",
+        "meningitis-cdc-haemophilus",
+        "meningitis-cdc-index",
+        "meningitis-cdc-listeria",
+        "meningitis-cdc-listeria-symptoms",
+        "meningitis-cdc-surveillance",
+        "meningitis-cdc-tb-adverse",
+        "meningitis-fda-listeria",
+        "meningitis-healthdirect",
+        "meningitis-healthdirect-vomiting",
+        "meningitis-lpt-viral-policy",
+        "meningitis-mayo-anaphylaxis",
+        "meningitis-mayo-infant-feeding",
+        "meningitis-mayo-migraine",
+        "meningitis-mayo-treatment",
+        "meningitis-msd-tb",
+        "meningitis-msd-viral",
+        "meningitis-nhs",
+        "meningitis-nhs-antibiotics",
+        "meningitis-nhs-migraine",
+        "meningitis-nhs-sah",
+        "meningitis-nhs-vomiting",
         "meningitis-nice-ng240",
         "meningitis-nice-tb",
         "meningitis-nih-cryptococcosis",
         "meningitis-nsw-enterovirus",
         "meningitis-nsw-meningococcal",
         "meningitis-rch-clinical",
+        "meningitis-rch-dehydration",
         "meningitis-ukhsa-contacts",
         "meningitis-ukhsa-hib",
         "meningitis-who",
@@ -2762,30 +3479,25 @@
       ],
       "findings": [
         {
-          "id": "MEN-P002-01",
-          "status": "resolved",
-          "claim_id": "p0-02-treatment-haemophilus",
-          "finding": "原先应按急性细菌路径处理并按检测调整是行动，却标explanation且仅CDC菌种说明。",
-          "resolution": "作者删除行动部分，仅保留H.influenzae脑膜炎属于细菌性脑膜炎的分类解释；实际核对最终中英正文及claim均已删除，未通过降级标签绕过双源。既有细菌治疗主张及支持保持。"
+          "finding": "Seven new diagnosis, treatment and complication claims used explanation classification.",
+          "resolution": "Corrected critical action/risk kinds while preserving actual independent support; no dose added.",
+          "status": "resolved"
         },
         {
-          "id": "MEN-P002-02",
-          "status": "resolved",
-          "claim_id": "p0-02-prevention-6",
-          "finding": "新增Hib疫苗保护范围句按explanation单源支持，存在疗效边界分类不足。",
-          "resolution": "作者删除该新增句及claim；保留原已审核疫苗预防部分和菌种/b型范围解释，未宣称全种疫苗保护。最终正文与claims确认不存在该新增句。"
+          "finding": "NCDC cited URL was404 on reviewer retrieval.",
+          "resolution": "Resolved current official PDF URL via official bulletin listing/search; actual six-page document downloaded and reviewed, metadata hash rebound.",
+          "status": "resolved"
         },
         {
-          "id": "MEN-P002-03",
-          "status": "resolved",
-          "finding": "集成前完整model.validate发现article.source_ids遗漏3个section新来源。前次section-level审查未覆盖此article linkage不变量。",
-          "resolution": "作者仅以所有section来源排序并集重建article.source_ids；排除此字段后的canonical hash完全相同，records/sources哈希不变；隔离内存替换候选并加入新来源后model.validate通过。"
+          "finding": "Potential overgeneralisation from generic parasitic treatment to neurological Gnathostoma, and from genital HSV suppression to recurrent meningitis.",
+          "resolution": "CurrentCDC and original Mahidol/KhonKaen2011 review both retain uncertain CNS anthelmintic/steroid benefits and potential worsening. HSV CNS treatment is distinct, long-term prevention not promised; no skin/genital regimens copied.",
+          "status": "resolved"
         }
       ],
-      "resolution": "一轮独立复读发现两项主张分类/证据问题，作者已缩窄并删除相应新增内容，随后只对两项修正和最终绑定做定向复查。最终可接受为AI独立编辑核验；真实医师签审仍false。两末级类别的确认建议绑定本报告最终canonical哈希，由主线程按冻结分类核对后落映射；此报告本身不修改覆盖或部署。"
+      "resolution": "Accept exact candidate for editorial evidence and scoped ICD integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-02-meningitis-independent.json"
+    "review_report": "reports/p0-03-meningitis-independent.json"
   },
   {
     "id": "p0-01-meningitis-medications",
@@ -2794,11 +3506,11 @@
       "id": "meningitis",
       "section": "medications"
     },
-    "content_sha256": "90aafc1550a3624288fa0a8add1a77efe9f0ba411bd3821f79bfb5dd3eb50c5a",
+    "content_sha256": "ee81bf6231f9ad467f46340e30d35380fc23e910b08a0ec52d37011e8ded9557",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/retinal_targeted",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -2988,6 +3700,112 @@
         ],
         "relation": "supports",
         "assessment": "medications-0: New indexed WHO paragraphs explicitly address immune risks, age, resistance and careful allergy assessment. No automatic exclusion of all beta-lactams or universal antibiotic choice stated."
+      },
+      {
+        "source_id": "meningitis-cdc-fungal-meningitis",
+        "source_metadata_sha256": "a19b020841bd2dc6c5fa783e7ea80804204e9035c070c01e38e236d570986a05",
+        "source_version": "2025-09-09",
+        "locator": "What it is; procedures; symptoms; diagnosis; treatment/recovery",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-msd-chronic",
+        "source_metadata_sha256": "a9442e140c6d0f49ed5196d65913e4ffaef7a36dea86ecac7c66dd5d8ca64bc5",
+        "source_version": "2026-09",
+        "locator": "Major infectious causes table; Syphilitic meningitis; Fungal meningitis after epidural methylprednisolone; Other fungal meningitides; Diagnosis/Treatment",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "International",
+        "independence_group": "MSD",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-idsa",
+        "source_metadata_sha256": "d5a14b8ed3d83025606a1f502abc530dd5e25892fa5a2b65097706bb5862667d",
+        "source_version": "2017",
+        "locator": "Recommendations 13–33, 37–54, 62–69; Introduction",
+        "population": "术后、分流管、外伤相关脑室炎/脑膜炎",
+        "region": "US",
+        "independence_group": "IDSA",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-cdc-hsv",
+        "source_metadata_sha256": "1c877e397bd8f6072f8d0089e7d038208bf2c0c81b73896feb75119061ff1a81",
+        "source_version": "2021 guideline; reviewed2022-09-21",
+        "locator": "Severe Disease: HSV-2 meningitis, recurrent episodes, suppressive trial, encephalitis, renal adjustment",
+        "population": "HSV CNS infection，成人为主；不将生殖器疱疹方案移植为脑膜炎疗程",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-merck-recurrent",
+        "source_metadata_sha256": "d246b4eff3f4e1c7278d75e89c737455a9c098494880ec193b5005b5dd3112b3",
+        "source_version": "2026-09",
+        "locator": "Recurrent viral; Recurrent acute bacterial; Other recurrent meningitides — actual full source text returned by web search, direct reopens timed out",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "International",
+        "independence_group": "MSD",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-cdc-gnathostoma",
+        "source_metadata_sha256": "984fab77c6c1ecab7b19d4ef5bf5a025071f0a3fa66f997d836ef319605a2576",
+        "source_version": "2024-02-20",
+        "locator": "Treatment options paragraphs4–6",
+        "population": "CNS/ocular Gnathostoma infection; distinction from cutaneous trials",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "Same CDC group as parasitic overview; compared with independently authored MSD neurologic review."
+        ],
+        "relation": "supports",
+        "assessment": "限定神经颚口线虫/相关寄生虫情境"
+      },
+      {
+        "source_id": "meningitis-p0-03-mahidol-neurognath",
+        "source_metadata_sha256": "b0f5bd173506317fb0c1fdb3f1ed5be569ea651f8299d075c53e509994a3dd4c",
+        "source_version": "2011-07; actual read2026-10-03",
+        "locator": "Authors/affiliations; Treatment paragraphs1–5; Conclusions paragraphs1–5",
+        "population": "Neurognathostomiasis cases and travellers; 248 published cases, not general skin disease",
+        "region": "Thailand and international travellers",
+        "independence_group": "Mahidol-KhonKaen-neurognath",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "Authors Katchanov/Nawa at Mahidol and Sawanyawisuth/Chotmongkol at Khon Kaen independently authored this review; CDC hosts/publishes EID but is not the institutional author.",
+          "CDC2024 and this2011 review share small historical series and uncertain-treatment evidence. Independent authorship is not a second trial. Old review describes frequently used albendazole/steroid regimens; CDC2024 declines recommending these for CNS. Only concordant uncertainty/individual specialist care used, never doses or efficacy."
+        ],
+        "relation": "supports",
+        "assessment": "限定神经颚口线虫/相关寄生虫情境"
       }
     ],
     "claims": [
@@ -3110,6 +3928,71 @@
             "assessment": "Independent authored patient list of jaundice/vision adverse effects and clinician contact; shared CDC/textbook basis."
           }
         ]
+      },
+      {
+        "id": "p0-03-antifungal",
+        "kind": "action",
+        "text": {
+          "zh-CN": "抗真菌治疗可用静脉药并衔接口服药，但具体种类和疗程差异很大；某些注射相关霉菌感染可能使用伏立康唑，证据和预后仍有不确定性。不能将一种真菌的药单用于另一种。",
+          "en": "Antifungal care may combine intravenous and later oral treatment, with substantial differences in agent and duration. Voriconazole may be used for certain injection-associated mould infections, with uncertainty in evidence and prognosis. Regimens cannot be transferred between fungal species."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-cdc-fungal-meningitis",
+            "locator": "What it is; procedures; symptoms; diagnosis; treatment/recovery",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-msd-chronic",
+            "locator": "Major infectious causes table; Syphilitic meningitis; Fungal meningitis after epidural methylprednisolone; Other fungal meningitides; Diagnosis/Treatment",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-idsa",
+            "locator": "Recommendations 13–33, 37–54, 62–69; Introduction",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          }
+        ]
+      },
+      {
+        "id": "p0-03-hsv-treatment",
+        "kind": "action",
+        "text": {
+          "zh-CN": "已确诊HSV相关脑膜炎可使用阿昔洛韦等抗病毒药；脑炎是脑组织受累，治疗路径可能更长。复发者是否口服、是否需要预防性长期用药，应结合既往病原证据和本次严重程度讨论，不能照抄生殖器疱疹处方。",
+          "en": "Confirmed HSV meningitis may be treated with antivirals such as acyclovir. Encephalitis involves brain tissue and can require longer treatment. Oral treatment and long-term prevention for recurrences depend on prior organism evidence and current severity, rather than copying genital-herpes prescriptions."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-p0-03-cdc-hsv",
+            "locator": "Severe Disease: HSV-2 meningitis, recurrent episodes, suppressive trial, encephalitis, renal adjustment",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-merck-recurrent",
+            "locator": "Recurrent viral; Recurrent acute bacterial; Other recurrent meningitides — actual full source text returned by web search, direct reopens timed out",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          }
+        ]
+      },
+      {
+        "id": "p0-03-parasite-treatment",
+        "kind": "action",
+        "text": {
+          "zh-CN": "寄生虫种类决定能否使用驱虫药或抗炎药，不能统一“驱虫加激素”。例如颚口线虫累及神经系统时，这些药的获益尚不确定，治疗还可能加重神经损伤；由感染与神经专科权衡，不能照皮肤寄生虫感染处方自行服药。",
+          "en": "Antiparasitic and anti-inflammatory treatment depends on the organism; deworming plus steroids is not universal. In neurological Gnathostoma infection, benefits remain uncertain and treatment may worsen neurological injury. Infectious-disease and neurological specialists weigh the options; skin-infection prescriptions are not for self-treatment."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-p0-03-cdc-gnathostoma",
+            "locator": "Treatment options paragraphs4–6",
+            "assessment": "实际读源；对不确定疗效不作推荐，待独立复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-mahidol-neurognath",
+            "locator": "Authors/affiliations; Treatment paragraphs1–5; Conclusions paragraphs1–5",
+            "assessment": "实际读源；对不确定疗效不作推荐，待独立复读"
+          }
+        ]
       }
     ],
     "independence": {
@@ -3119,18 +4002,19 @@
     },
     "dispute": {
       "status": "regional_difference",
-      "resolution": "Jurisdiction and guideline population retained; hearing timing anchors differ. Author candidate synthesis, pending independent review."
+      "resolution": "Pathogen, age, post-neurosurgical device, immune status and local resistance guide treatment. Common uncertainty retained for neurognathostomiasis and injection-associated fungi; no old regional doses or generalized adenovirus antiviral regimen."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/mi_icd_scope",
-      "reviewer": "/root/retinal_targeted",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "meningitis-adam-tb",
         "meningitis-cdc-bacterial-meningitis",
         "meningitis-cdc-food-cold",
         "meningitis-cdc-fungal-meningitis",
+        "meningitis-cdc-haemophilus",
         "meningitis-cdc-index",
         "meningitis-cdc-listeria",
         "meningitis-cdc-listeria-symptoms",
@@ -3157,108 +4041,84 @@
         "meningitis-nice-ng240",
         "meningitis-nice-tb",
         "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
+        "meningitis-nsw-meningococcal",
+        "meningitis-p0-03-cdc-adeno",
+        "meningitis-p0-03-cdc-gnathostoma",
+        "meningitis-p0-03-cdc-hsv",
+        "meningitis-p0-03-cdc-neurosyphilis",
+        "meningitis-p0-03-cdc-parasite",
+        "meningitis-p0-03-idsa",
+        "meningitis-p0-03-india-adeno",
+        "meningitis-p0-03-mahidol-neurognath",
+        "meningitis-p0-03-merck-recurrent",
+        "meningitis-p0-03-msd-chronic",
+        "meningitis-p0-03-msd-helminth",
+        "meningitis-rch-clinical",
+        "meningitis-rch-dehydration",
+        "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
+        "meningitis-who",
+        "meningitis-who-guideline"
+      ],
+      "inherited_source_ids": [
+        "meningitis-adam-tb",
+        "meningitis-cdc-bacterial-meningitis",
+        "meningitis-cdc-food-cold",
+        "meningitis-cdc-haemophilus",
+        "meningitis-cdc-index",
+        "meningitis-cdc-listeria",
+        "meningitis-cdc-listeria-symptoms",
+        "meningitis-cdc-surveillance",
+        "meningitis-cdc-tb-adverse",
+        "meningitis-fda-listeria",
+        "meningitis-healthdirect",
+        "meningitis-healthdirect-vomiting",
+        "meningitis-lpt-viral-policy",
+        "meningitis-mayo-anaphylaxis",
+        "meningitis-mayo-infant-feeding",
+        "meningitis-mayo-migraine",
+        "meningitis-mayo-treatment",
+        "meningitis-msd-tb",
+        "meningitis-msd-viral",
+        "meningitis-nhs",
+        "meningitis-nhs-antibiotics",
+        "meningitis-nhs-migraine",
+        "meningitis-nhs-sah",
+        "meningitis-nhs-vomiting",
+        "meningitis-nice-ng240",
+        "meningitis-nice-tb",
+        "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
         "meningitis-nsw-meningococcal",
         "meningitis-rch-clinical",
         "meningitis-rch-dehydration",
         "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
         "meningitis-who",
         "meningitis-who-guideline"
       ],
       "findings": [
         {
-          "id": "M01",
-          "status": "resolved",
-          "resolution": "CDC and independently written LPT p9 corroborate virus acquisition versus meningitis; stale single-source assessment corrected."
+          "finding": "Seven new diagnosis, treatment and complication claims used explanation classification.",
+          "resolution": "Corrected critical action/risk kinds while preserving actual independent support; no dose added.",
+          "status": "resolved"
         },
         {
-          "id": "M02",
-          "status": "resolved",
-          "resolution": "Inherited emergency conclusions unchanged; neither rash nor complete symptom set required."
+          "finding": "NCDC cited URL was404 on reviewer retrieval.",
+          "resolution": "Resolved current official PDF URL via official bulletin listing/search; actual six-page document downloaded and reviewed, metadata hash rebound.",
+          "status": "resolved"
         },
         {
-          "id": "M03",
-          "status": "resolved",
-          "resolution": "Inherited removal of unsupported forced-neck maneuver remains intact."
-        },
-        {
-          "id": "M04",
-          "status": "resolved",
-          "resolution": "Practical communication checklist is not a validated diagnostic score; no mechanical second-source requirement."
-        },
-        {
-          "id": "M05",
-          "status": "resolved",
-          "resolution": "WHO A.3 negative blood-marker limit; A.1.1/A.4 stabilization and selective imaging corroborate NICE. No delay to antibiotics preserved."
-        },
-        {
-          "id": "M06",
-          "status": "resolved",
-          "resolution": "MSD TB independently corroborates distinct multidrug meningeal treatment; NIH HIV-specific cryptococcosis confirms immune-dependent duration. NICE specialist routing is bounded service guidance, not an unsupported efficacy threshold."
-        },
-        {
-          "id": "M07",
-          "status": "resolved",
-          "resolution": "NHS ordinary flu/gastroenteritis resemblance needs no duplicated wording. NHS SAH supports bleed example; NSW independently confirms meningitis and/or septicemia. Emergency actions remain corroborated."
-        },
-        {
-          "id": "M08",
-          "status": "resolved",
-          "resolution": "MSD/RCH/WHO give component-specific empiric selection and support-care evidence. NHS hospital fluids/oxygen and pediatric RCH seizure management read. CDC directly describes immune-risk viral hospital care; MSD offers complementary severe-illness/immune context, not fake exact second rule. Conditional hospital review is accepted within strongly corroborated emergency pathway."
-        },
-        {
-          "id": "M09",
-          "status": "resolved",
-          "resolution": "Revised infant-feeding wording checked against Mayo infant warning and NHS/RCH age-relevant illness assessment; adult Healthdirect limitation retained. Recordkeeping is practical support."
-        },
-        {
-          "id": "M10",
-          "status": "resolved",
-          "resolution": "CDC technical P8 supplies exact cold-growth mechanism, with FDA coauthorship/shared upstream disclosed. Distinct technical and patient writings are not represented as independent experiments."
-        },
-        {
-          "id": "M11",
-          "status": "resolved",
-          "resolution": "Chinese over-one-month boundary now matches English and WHO scope. WHO and NICE hearing clocks and strength remain explicitly attributed differences; no invented identical global deadline."
-        },
-        {
-          "id": "M12",
-          "status": "resolved",
-          "resolution": "Regional vaccination/prophylaxis scope stays bounded; UKHSA contact passage corroborates existing meningococcal contact action without exporting temporary Kent outbreak schedules."
-        },
-        {
-          "id": "P0-M13",
-          "status": "resolved",
-          "claims": [
-            "causes_risks-3"
-          ],
-          "resolution": "NSW functional spleen and NICE1.1.8/1.1.14 added precisely."
-        },
-        {
-          "id": "P0-M14",
-          "status": "resolved",
-          "claims": [
-            "special_populations-2"
-          ],
-          "resolution": "NHS chemotherapy and CDC post-transplant medicines explicitly bound, with Mayo mechanism complementary."
-        },
-        {
-          "id": "P0-M15",
-          "status": "resolved",
-          "claims": [
-            "special_populations-3"
-          ],
-          "resolution": "New actual-read CDC maternal symptoms passage supplies precise second writing alongside FDA; common upstream acknowledged."
-        },
-        {
-          "id": "P0-M16",
-          "status": "resolved",
-          "resolution": "Added the already reviewed CDC Listeria symptoms source to condition.source_ids; citation-list closure only. Section text and ledger/source hashes unchanged."
+          "finding": "Potential overgeneralisation from generic parasitic treatment to neurological Gnathostoma, and from genital HSV suppression to recurrent meningitis.",
+          "resolution": "CurrentCDC and original Mahidol/KhonKaen2011 review both retain uncertain CNS anthelmintic/steroid benefits and potential worsening. HSV CNS treatment is distinct, long-term prevention not promised; no skin/genital regimens copied.",
+          "status": "resolved"
         }
       ],
-      "resolution": "Accepted for the described bilingual overview and14 sections; earlier partial evidence gaps resolved with actual component-specific reads or accepted bounded ordinary/practical statements. No claim is downgraded to evade a dangerous-action requirement."
+      "resolution": "Accept exact candidate for editorial evidence and scoped ICD integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-meningitis-independent.json"
+    "review_report": "reports/p0-03-meningitis-independent.json"
   },
   {
     "id": "p0-01-meningitis-diet",
@@ -3267,11 +4127,11 @@
       "id": "meningitis",
       "section": "diet"
     },
-    "content_sha256": "ad080606e93fa5f01eac590ab29ecca256c3c86f1ba933a146b262bcc4fce6ae",
+    "content_sha256": "fe85e1b253ce8aabf64ef5c86ca195de79d2c87e48995f3900111b23916ce7fb",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/retinal_targeted",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -3376,6 +4236,37 @@
         ],
         "relation": "supports",
         "assessment": "diet-1: Small sips, eat as able, inability to retain fluids requires urgent contact."
+      },
+      {
+        "source_id": "meningitis-p0-03-cdc-parasite",
+        "source_metadata_sha256": "24b0d2a3b77ca77ac7f18055ec1b91435e268e6d37a73613abab736a2eb3a70b",
+        "source_version": "2025-09-09",
+        "locator": "Types; Risk factors; Spread; Testing; Treatment",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "限定神经颚口线虫/相关寄生虫情境"
+      },
+      {
+        "source_id": "meningitis-p0-03-mahidol-neurognath",
+        "source_metadata_sha256": "b0f5bd173506317fb0c1fdb3f1ed5be569ea651f8299d075c53e509994a3dd4c",
+        "source_version": "2011-07; actual read2026-10-03",
+        "locator": "Authors/affiliations; Treatment paragraphs1–5; Conclusions paragraphs1–5",
+        "population": "Neurognathostomiasis cases and travellers; 248 published cases, not general skin disease",
+        "region": "Thailand and international travellers",
+        "independence_group": "Mahidol-KhonKaen-neurognath",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "Authors Katchanov/Nawa at Mahidol and Sawanyawisuth/Chotmongkol at Khon Kaen independently authored this review; CDC hosts/publishes EID but is not the institutional author.",
+          "CDC2024 and this2011 review share small historical series and uncertain-treatment evidence. Independent authorship is not a second trial. Old review describes frequently used albendazole/steroid regimens; CDC2024 declines recommending these for CNS. Only concordant uncertainty/individual specialist care used, never doses or efficacy."
+        ],
+        "relation": "supports",
+        "assessment": "限定神经颚口线虫/相关寄生虫情境"
       }
     ],
     "claims": [
@@ -3488,6 +4379,26 @@
             "assessment": "Direct CDC explanation that Listeria can multiply at ordinary refrigeration temperature; together with FDA supports the cold-storage risk clause. CDC food choices/FDA separately support steaming-hot reheating; no storage-day threshold added."
           }
         ]
+      },
+      {
+        "id": "p0-03-parasite-food",
+        "kind": "action",
+        "text": {
+          "zh-CN": "在相关流行地区或旅行时，避免生吃或未煮熟的淡水鱼、蛙类及禽肉，可减少颚口线虫等食源性寄生虫感染；进食史应告诉医生，但没有想起某次生食也不能独自排除感染。",
+          "en": "In relevant endemic areas or during travel, avoiding raw or undercooked freshwater fish, frogs and poultry reduces foodborne parasite exposure such as Gnathostoma. Tell the clinician about foods eaten; failure to recall one exposure alone does not rule out infection."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-p0-03-cdc-parasite",
+            "locator": "Types; Risk factors; Spread; Testing; Treatment",
+            "assessment": "实际读源；对不确定疗效不作推荐，待独立复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-mahidol-neurognath",
+            "locator": "Authors/affiliations; Treatment paragraphs1–5; Conclusions paragraphs1–5",
+            "assessment": "实际读源；对不确定疗效不作推荐，待独立复读"
+          }
+        ]
       }
     ],
     "independence": {
@@ -3496,19 +4407,20 @@
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "none",
-      "resolution": "Jurisdiction and guideline population retained; hearing timing anchors differ. Author candidate synthesis, pending independent review."
+      "status": "regional_difference",
+      "resolution": "Pathogen, age, post-neurosurgical device, immune status and local resistance guide treatment. Common uncertainty retained for neurognathostomiasis and injection-associated fungi; no old regional doses or generalized adenovirus antiviral regimen."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/mi_icd_scope",
-      "reviewer": "/root/retinal_targeted",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "meningitis-adam-tb",
         "meningitis-cdc-bacterial-meningitis",
         "meningitis-cdc-food-cold",
         "meningitis-cdc-fungal-meningitis",
+        "meningitis-cdc-haemophilus",
         "meningitis-cdc-index",
         "meningitis-cdc-listeria",
         "meningitis-cdc-listeria-symptoms",
@@ -3535,108 +4447,84 @@
         "meningitis-nice-ng240",
         "meningitis-nice-tb",
         "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
+        "meningitis-nsw-meningococcal",
+        "meningitis-p0-03-cdc-adeno",
+        "meningitis-p0-03-cdc-gnathostoma",
+        "meningitis-p0-03-cdc-hsv",
+        "meningitis-p0-03-cdc-neurosyphilis",
+        "meningitis-p0-03-cdc-parasite",
+        "meningitis-p0-03-idsa",
+        "meningitis-p0-03-india-adeno",
+        "meningitis-p0-03-mahidol-neurognath",
+        "meningitis-p0-03-merck-recurrent",
+        "meningitis-p0-03-msd-chronic",
+        "meningitis-p0-03-msd-helminth",
+        "meningitis-rch-clinical",
+        "meningitis-rch-dehydration",
+        "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
+        "meningitis-who",
+        "meningitis-who-guideline"
+      ],
+      "inherited_source_ids": [
+        "meningitis-adam-tb",
+        "meningitis-cdc-bacterial-meningitis",
+        "meningitis-cdc-food-cold",
+        "meningitis-cdc-haemophilus",
+        "meningitis-cdc-index",
+        "meningitis-cdc-listeria",
+        "meningitis-cdc-listeria-symptoms",
+        "meningitis-cdc-surveillance",
+        "meningitis-cdc-tb-adverse",
+        "meningitis-fda-listeria",
+        "meningitis-healthdirect",
+        "meningitis-healthdirect-vomiting",
+        "meningitis-lpt-viral-policy",
+        "meningitis-mayo-anaphylaxis",
+        "meningitis-mayo-infant-feeding",
+        "meningitis-mayo-migraine",
+        "meningitis-mayo-treatment",
+        "meningitis-msd-tb",
+        "meningitis-msd-viral",
+        "meningitis-nhs",
+        "meningitis-nhs-antibiotics",
+        "meningitis-nhs-migraine",
+        "meningitis-nhs-sah",
+        "meningitis-nhs-vomiting",
+        "meningitis-nice-ng240",
+        "meningitis-nice-tb",
+        "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
         "meningitis-nsw-meningococcal",
         "meningitis-rch-clinical",
         "meningitis-rch-dehydration",
         "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
         "meningitis-who",
         "meningitis-who-guideline"
       ],
       "findings": [
         {
-          "id": "M01",
-          "status": "resolved",
-          "resolution": "CDC and independently written LPT p9 corroborate virus acquisition versus meningitis; stale single-source assessment corrected."
+          "finding": "Seven new diagnosis, treatment and complication claims used explanation classification.",
+          "resolution": "Corrected critical action/risk kinds while preserving actual independent support; no dose added.",
+          "status": "resolved"
         },
         {
-          "id": "M02",
-          "status": "resolved",
-          "resolution": "Inherited emergency conclusions unchanged; neither rash nor complete symptom set required."
+          "finding": "NCDC cited URL was404 on reviewer retrieval.",
+          "resolution": "Resolved current official PDF URL via official bulletin listing/search; actual six-page document downloaded and reviewed, metadata hash rebound.",
+          "status": "resolved"
         },
         {
-          "id": "M03",
-          "status": "resolved",
-          "resolution": "Inherited removal of unsupported forced-neck maneuver remains intact."
-        },
-        {
-          "id": "M04",
-          "status": "resolved",
-          "resolution": "Practical communication checklist is not a validated diagnostic score; no mechanical second-source requirement."
-        },
-        {
-          "id": "M05",
-          "status": "resolved",
-          "resolution": "WHO A.3 negative blood-marker limit; A.1.1/A.4 stabilization and selective imaging corroborate NICE. No delay to antibiotics preserved."
-        },
-        {
-          "id": "M06",
-          "status": "resolved",
-          "resolution": "MSD TB independently corroborates distinct multidrug meningeal treatment; NIH HIV-specific cryptococcosis confirms immune-dependent duration. NICE specialist routing is bounded service guidance, not an unsupported efficacy threshold."
-        },
-        {
-          "id": "M07",
-          "status": "resolved",
-          "resolution": "NHS ordinary flu/gastroenteritis resemblance needs no duplicated wording. NHS SAH supports bleed example; NSW independently confirms meningitis and/or septicemia. Emergency actions remain corroborated."
-        },
-        {
-          "id": "M08",
-          "status": "resolved",
-          "resolution": "MSD/RCH/WHO give component-specific empiric selection and support-care evidence. NHS hospital fluids/oxygen and pediatric RCH seizure management read. CDC directly describes immune-risk viral hospital care; MSD offers complementary severe-illness/immune context, not fake exact second rule. Conditional hospital review is accepted within strongly corroborated emergency pathway."
-        },
-        {
-          "id": "M09",
-          "status": "resolved",
-          "resolution": "Revised infant-feeding wording checked against Mayo infant warning and NHS/RCH age-relevant illness assessment; adult Healthdirect limitation retained. Recordkeeping is practical support."
-        },
-        {
-          "id": "M10",
-          "status": "resolved",
-          "resolution": "CDC technical P8 supplies exact cold-growth mechanism, with FDA coauthorship/shared upstream disclosed. Distinct technical and patient writings are not represented as independent experiments."
-        },
-        {
-          "id": "M11",
-          "status": "resolved",
-          "resolution": "Chinese over-one-month boundary now matches English and WHO scope. WHO and NICE hearing clocks and strength remain explicitly attributed differences; no invented identical global deadline."
-        },
-        {
-          "id": "M12",
-          "status": "resolved",
-          "resolution": "Regional vaccination/prophylaxis scope stays bounded; UKHSA contact passage corroborates existing meningococcal contact action without exporting temporary Kent outbreak schedules."
-        },
-        {
-          "id": "P0-M13",
-          "status": "resolved",
-          "claims": [
-            "causes_risks-3"
-          ],
-          "resolution": "NSW functional spleen and NICE1.1.8/1.1.14 added precisely."
-        },
-        {
-          "id": "P0-M14",
-          "status": "resolved",
-          "claims": [
-            "special_populations-2"
-          ],
-          "resolution": "NHS chemotherapy and CDC post-transplant medicines explicitly bound, with Mayo mechanism complementary."
-        },
-        {
-          "id": "P0-M15",
-          "status": "resolved",
-          "claims": [
-            "special_populations-3"
-          ],
-          "resolution": "New actual-read CDC maternal symptoms passage supplies precise second writing alongside FDA; common upstream acknowledged."
-        },
-        {
-          "id": "P0-M16",
-          "status": "resolved",
-          "resolution": "Added the already reviewed CDC Listeria symptoms source to condition.source_ids; citation-list closure only. Section text and ledger/source hashes unchanged."
+          "finding": "Potential overgeneralisation from generic parasitic treatment to neurological Gnathostoma, and from genital HSV suppression to recurrent meningitis.",
+          "resolution": "CurrentCDC and original Mahidol/KhonKaen2011 review both retain uncertain CNS anthelmintic/steroid benefits and potential worsening. HSV CNS treatment is distinct, long-term prevention not promised; no skin/genital regimens copied.",
+          "status": "resolved"
         }
       ],
-      "resolution": "Accepted for the described bilingual overview and14 sections; earlier partial evidence gaps resolved with actual component-specific reads or accepted bounded ordinary/practical statements. No claim is downgraded to evade a dangerous-action requirement."
+      "resolution": "Accept exact candidate for editorial evidence and scoped ICD integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-meningitis-independent.json"
+    "review_report": "reports/p0-03-meningitis-independent.json"
   },
   {
     "id": "p0-01-meningitis-daily_care",
@@ -4452,11 +5340,11 @@
       "id": "meningitis",
       "section": "prognosis_followup"
     },
-    "content_sha256": "ca8f959d667a1f66122ccfaeaf25d7f0e8270633f884d3c0db52ebf8028240e9",
+    "content_sha256": "e8d2a3221cb22bf730767b6f2e8bb998f6a9c13e2bdc52887c72440f4358c34e",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/retinal_targeted",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -4646,6 +5534,67 @@
         ],
         "relation": "supports",
         "assessment": "prognosis_followup-2: Formal screening for acute meningitis; proactive scheduling. prognosis_followup-3: Only WHO population and discharge-based timing; not support for NICE anchor. prognosis_followup-4: Explicit very-low-certainty grade and absence of comparative studies."
+      },
+      {
+        "source_id": "meningitis-p0-03-merck-recurrent",
+        "source_metadata_sha256": "d246b4eff3f4e1c7278d75e89c737455a9c098494880ec193b5005b5dd3112b3",
+        "source_version": "2026-09",
+        "locator": "Recurrent viral; Recurrent acute bacterial; Other recurrent meningitides — actual full source text returned by web search, direct reopens timed out",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "International",
+        "independence_group": "MSD",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-idsa",
+        "source_metadata_sha256": "d5a14b8ed3d83025606a1f502abc530dd5e25892fa5a2b65097706bb5862667d",
+        "source_version": "2017",
+        "locator": "Recommendations 13–33, 37–54, 62–69; Introduction",
+        "population": "术后、分流管、外伤相关脑室炎/脑膜炎",
+        "region": "US",
+        "independence_group": "IDSA",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-cdc-gnathostoma",
+        "source_metadata_sha256": "984fab77c6c1ecab7b19d4ef5bf5a025071f0a3fa66f997d836ef319605a2576",
+        "source_version": "2024-02-20",
+        "locator": "Treatment options paragraphs4–6",
+        "population": "CNS/ocular Gnathostoma infection; distinction from cutaneous trials",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "Same CDC group as parasitic overview; compared with independently authored MSD neurologic review."
+        ],
+        "relation": "supports",
+        "assessment": "限定神经颚口线虫/相关寄生虫情境"
+      },
+      {
+        "source_id": "meningitis-p0-03-mahidol-neurognath",
+        "source_metadata_sha256": "b0f5bd173506317fb0c1fdb3f1ed5be569ea651f8299d075c53e509994a3dd4c",
+        "source_version": "2011-07; actual read2026-10-03",
+        "locator": "Authors/affiliations; Treatment paragraphs1–5; Conclusions paragraphs1–5",
+        "population": "Neurognathostomiasis cases and travellers; 248 published cases, not general skin disease",
+        "region": "Thailand and international travellers",
+        "independence_group": "Mahidol-KhonKaen-neurognath",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "Authors Katchanov/Nawa at Mahidol and Sawanyawisuth/Chotmongkol at Khon Kaen independently authored this review; CDC hosts/publishes EID but is not the institutional author.",
+          "CDC2024 and this2011 review share small historical series and uncertain-treatment evidence. Independent authorship is not a second trial. Old review describes frequently used albendazole/steroid regimens; CDC2024 declines recommending these for CNS. Only concordant uncertainty/individual specialist care used, never doses or efficacy."
+        ],
+        "relation": "supports",
+        "assessment": "限定神经颚口线虫/相关寄生虫情境"
       }
     ],
     "claims": [
@@ -4788,6 +5737,46 @@
             "assessment": "Recovery issues and immediate neurological danger."
           }
         ]
+      },
+      {
+        "id": "p0-03-recurrence-plan",
+        "kind": "action",
+        "text": {
+          "zh-CN": "复发后的随访重点是核对每次检查结果、是否同一病因以及是否存在结构或免疫问题；“上次自己好了”不能替代本次评估。重新出现本页危险信号仍按急救处理。",
+          "en": "Follow-up after recurrence reviews each episode’s results, whether the cause is the same, and possible structural or immune problems. Spontaneous recovery last time does not replace reassessment; new warning signs still require the emergency actions above."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-p0-03-merck-recurrent",
+            "locator": "Recurrent viral; Recurrent acute bacterial; Other recurrent meningitides — actual full source text returned by web search, direct reopens timed out",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-idsa",
+            "locator": "Recommendations 13–33, 37–54, 62–69; Introduction",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          }
+        ]
+      },
+      {
+        "id": "p0-03-parasite-recurrence",
+        "kind": "action",
+        "text": {
+          "zh-CN": "神经系统寄生虫感染可能留下功能损伤，也可能在治疗后复发；随访要报告重新出现的头痛、无力、皮肤游走肿块或其他神经变化，严重或突然变化按本页急救行动处理。",
+          "en": "Neurological parasitic infection can leave functional impairment or recur after treatment. Report returning headache, weakness, migratory skin swelling or other neurological changes at follow-up; severe or sudden changes require the emergency actions above."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-p0-03-cdc-gnathostoma",
+            "locator": "Treatment options paragraphs4–6",
+            "assessment": "实际读源；对不确定疗效不作推荐，待独立复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-mahidol-neurognath",
+            "locator": "Authors/affiliations; Treatment paragraphs1–5; Conclusions paragraphs1–5",
+            "assessment": "实际读源；对不确定疗效不作推荐，待独立复读"
+          }
+        ]
       }
     ],
     "independence": {
@@ -4797,18 +5786,19 @@
     },
     "dispute": {
       "status": "regional_difference",
-      "resolution": "Jurisdiction and guideline population retained; hearing timing anchors differ. Author candidate synthesis, pending independent review."
+      "resolution": "Pathogen, age, post-neurosurgical device, immune status and local resistance guide treatment. Common uncertainty retained for neurognathostomiasis and injection-associated fungi; no old regional doses or generalized adenovirus antiviral regimen."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/mi_icd_scope",
-      "reviewer": "/root/retinal_targeted",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "meningitis-adam-tb",
         "meningitis-cdc-bacterial-meningitis",
         "meningitis-cdc-food-cold",
         "meningitis-cdc-fungal-meningitis",
+        "meningitis-cdc-haemophilus",
         "meningitis-cdc-index",
         "meningitis-cdc-listeria",
         "meningitis-cdc-listeria-symptoms",
@@ -4835,108 +5825,84 @@
         "meningitis-nice-ng240",
         "meningitis-nice-tb",
         "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
+        "meningitis-nsw-meningococcal",
+        "meningitis-p0-03-cdc-adeno",
+        "meningitis-p0-03-cdc-gnathostoma",
+        "meningitis-p0-03-cdc-hsv",
+        "meningitis-p0-03-cdc-neurosyphilis",
+        "meningitis-p0-03-cdc-parasite",
+        "meningitis-p0-03-idsa",
+        "meningitis-p0-03-india-adeno",
+        "meningitis-p0-03-mahidol-neurognath",
+        "meningitis-p0-03-merck-recurrent",
+        "meningitis-p0-03-msd-chronic",
+        "meningitis-p0-03-msd-helminth",
+        "meningitis-rch-clinical",
+        "meningitis-rch-dehydration",
+        "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
+        "meningitis-who",
+        "meningitis-who-guideline"
+      ],
+      "inherited_source_ids": [
+        "meningitis-adam-tb",
+        "meningitis-cdc-bacterial-meningitis",
+        "meningitis-cdc-food-cold",
+        "meningitis-cdc-haemophilus",
+        "meningitis-cdc-index",
+        "meningitis-cdc-listeria",
+        "meningitis-cdc-listeria-symptoms",
+        "meningitis-cdc-surveillance",
+        "meningitis-cdc-tb-adverse",
+        "meningitis-fda-listeria",
+        "meningitis-healthdirect",
+        "meningitis-healthdirect-vomiting",
+        "meningitis-lpt-viral-policy",
+        "meningitis-mayo-anaphylaxis",
+        "meningitis-mayo-infant-feeding",
+        "meningitis-mayo-migraine",
+        "meningitis-mayo-treatment",
+        "meningitis-msd-tb",
+        "meningitis-msd-viral",
+        "meningitis-nhs",
+        "meningitis-nhs-antibiotics",
+        "meningitis-nhs-migraine",
+        "meningitis-nhs-sah",
+        "meningitis-nhs-vomiting",
+        "meningitis-nice-ng240",
+        "meningitis-nice-tb",
+        "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
         "meningitis-nsw-meningococcal",
         "meningitis-rch-clinical",
         "meningitis-rch-dehydration",
         "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
         "meningitis-who",
         "meningitis-who-guideline"
       ],
       "findings": [
         {
-          "id": "M01",
-          "status": "resolved",
-          "resolution": "CDC and independently written LPT p9 corroborate virus acquisition versus meningitis; stale single-source assessment corrected."
+          "finding": "Seven new diagnosis, treatment and complication claims used explanation classification.",
+          "resolution": "Corrected critical action/risk kinds while preserving actual independent support; no dose added.",
+          "status": "resolved"
         },
         {
-          "id": "M02",
-          "status": "resolved",
-          "resolution": "Inherited emergency conclusions unchanged; neither rash nor complete symptom set required."
+          "finding": "NCDC cited URL was404 on reviewer retrieval.",
+          "resolution": "Resolved current official PDF URL via official bulletin listing/search; actual six-page document downloaded and reviewed, metadata hash rebound.",
+          "status": "resolved"
         },
         {
-          "id": "M03",
-          "status": "resolved",
-          "resolution": "Inherited removal of unsupported forced-neck maneuver remains intact."
-        },
-        {
-          "id": "M04",
-          "status": "resolved",
-          "resolution": "Practical communication checklist is not a validated diagnostic score; no mechanical second-source requirement."
-        },
-        {
-          "id": "M05",
-          "status": "resolved",
-          "resolution": "WHO A.3 negative blood-marker limit; A.1.1/A.4 stabilization and selective imaging corroborate NICE. No delay to antibiotics preserved."
-        },
-        {
-          "id": "M06",
-          "status": "resolved",
-          "resolution": "MSD TB independently corroborates distinct multidrug meningeal treatment; NIH HIV-specific cryptococcosis confirms immune-dependent duration. NICE specialist routing is bounded service guidance, not an unsupported efficacy threshold."
-        },
-        {
-          "id": "M07",
-          "status": "resolved",
-          "resolution": "NHS ordinary flu/gastroenteritis resemblance needs no duplicated wording. NHS SAH supports bleed example; NSW independently confirms meningitis and/or septicemia. Emergency actions remain corroborated."
-        },
-        {
-          "id": "M08",
-          "status": "resolved",
-          "resolution": "MSD/RCH/WHO give component-specific empiric selection and support-care evidence. NHS hospital fluids/oxygen and pediatric RCH seizure management read. CDC directly describes immune-risk viral hospital care; MSD offers complementary severe-illness/immune context, not fake exact second rule. Conditional hospital review is accepted within strongly corroborated emergency pathway."
-        },
-        {
-          "id": "M09",
-          "status": "resolved",
-          "resolution": "Revised infant-feeding wording checked against Mayo infant warning and NHS/RCH age-relevant illness assessment; adult Healthdirect limitation retained. Recordkeeping is practical support."
-        },
-        {
-          "id": "M10",
-          "status": "resolved",
-          "resolution": "CDC technical P8 supplies exact cold-growth mechanism, with FDA coauthorship/shared upstream disclosed. Distinct technical and patient writings are not represented as independent experiments."
-        },
-        {
-          "id": "M11",
-          "status": "resolved",
-          "resolution": "Chinese over-one-month boundary now matches English and WHO scope. WHO and NICE hearing clocks and strength remain explicitly attributed differences; no invented identical global deadline."
-        },
-        {
-          "id": "M12",
-          "status": "resolved",
-          "resolution": "Regional vaccination/prophylaxis scope stays bounded; UKHSA contact passage corroborates existing meningococcal contact action without exporting temporary Kent outbreak schedules."
-        },
-        {
-          "id": "P0-M13",
-          "status": "resolved",
-          "claims": [
-            "causes_risks-3"
-          ],
-          "resolution": "NSW functional spleen and NICE1.1.8/1.1.14 added precisely."
-        },
-        {
-          "id": "P0-M14",
-          "status": "resolved",
-          "claims": [
-            "special_populations-2"
-          ],
-          "resolution": "NHS chemotherapy and CDC post-transplant medicines explicitly bound, with Mayo mechanism complementary."
-        },
-        {
-          "id": "P0-M15",
-          "status": "resolved",
-          "claims": [
-            "special_populations-3"
-          ],
-          "resolution": "New actual-read CDC maternal symptoms passage supplies precise second writing alongside FDA; common upstream acknowledged."
-        },
-        {
-          "id": "P0-M16",
-          "status": "resolved",
-          "resolution": "Added the already reviewed CDC Listeria symptoms source to condition.source_ids; citation-list closure only. Section text and ledger/source hashes unchanged."
+          "finding": "Potential overgeneralisation from generic parasitic treatment to neurological Gnathostoma, and from genital HSV suppression to recurrent meningitis.",
+          "resolution": "CurrentCDC and original Mahidol/KhonKaen2011 review both retain uncertain CNS anthelmintic/steroid benefits and potential worsening. HSV CNS treatment is distinct, long-term prevention not promised; no skin/genital regimens copied.",
+          "status": "resolved"
         }
       ],
-      "resolution": "Accepted for the described bilingual overview and14 sections; earlier partial evidence gaps resolved with actual component-specific reads or accepted bounded ordinary/practical statements. No claim is downgraded to evade a dangerous-action requirement."
+      "resolution": "Accept exact candidate for editorial evidence and scoped ICD integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-meningitis-independent.json"
+    "review_report": "reports/p0-03-meningitis-independent.json"
   },
   {
     "id": "p0-01-meningitis-complications",
@@ -4945,11 +5911,11 @@
       "id": "meningitis",
       "section": "complications"
     },
-    "content_sha256": "7c8b06f909b0e89630e88c10631e4a243b369c7c3744d35a939ca1828e1891ec",
+    "content_sha256": "f88a17a68c0a79eaa5b9ce56321e58072437c5e6bbaecda893fd210aa83a8e27",
     "status": "cross_checked",
     "scope": "full_section",
-    "checked_at": "2026-10-02",
-    "checker": "/root/retinal_targeted",
+    "checked_at": "2026-10-03",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -5020,6 +5986,51 @@
         ],
         "relation": "supports",
         "assessment": "complications-0: Acute and longer-term complications. complications-1: Acute complications and treatment importance. complications-2: Hearing/vision, cognitive and motor consequences."
+      },
+      {
+        "source_id": "meningitis-p0-03-msd-helminth",
+        "source_metadata_sha256": "f1760409ac112c88b6dfa2f7d238a72eb48e691988a97b4ee0a633496106bf73",
+        "source_version": "2026-07",
+        "locator": "Other helminthic infections: Gnathostoma neurologic manifestations, returning traveller, neuroimaging/CSF",
+        "population": "成人及儿童；专病证据按主张限定",
+        "region": "International",
+        "independence_group": "MSD",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "Mayo、MSD及CDC分别独立编辑；MSD各页同组，CDC各页同组；指南引用/同上游不等于独立试验。"
+        ],
+        "relation": "supports",
+        "assessment": "支持新分流/病因解释"
+      },
+      {
+        "source_id": "meningitis-p0-03-cdc-parasite",
+        "source_metadata_sha256": "24b0d2a3b77ca77ac7f18055ec1b91435e268e6d37a73613abab736a2eb3a70b",
+        "source_version": "2025-09-09",
+        "locator": "Types; Risk factors; Spread; Testing; Treatment",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "支持新分流/病因解释"
+      },
+      {
+        "source_id": "meningitis-p0-03-cdc-gnathostoma",
+        "source_metadata_sha256": "984fab77c6c1ecab7b19d4ef5bf5a025071f0a3fa66f997d836ef319605a2576",
+        "source_version": "2024-02-20",
+        "locator": "Treatment options paragraphs4–6",
+        "population": "CNS/ocular Gnathostoma infection; distinction from cutaneous trials",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "Same CDC group as parasitic overview; compared with independently authored MSD neurologic review."
+        ],
+        "relation": "supports",
+        "assessment": "CNS complication risk"
       }
     ],
     "claims": [
@@ -5092,6 +6103,31 @@
             "assessment": "Neurological sequelae."
           }
         ]
+      },
+      {
+        "id": "p0-03-gnathostoma",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "颚口线虫等寄生虫可同时损伤神经组织，造成无力、瘫痪或颅内出血；这与单纯皮肤游走肿块的治疗情境不同。",
+          "en": "Parasites such as Gnathostoma may injure nervous tissue, causing weakness, paralysis or intracranial bleeding. This differs from the treatment setting of migratory skin swelling alone."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-p0-03-msd-helminth",
+            "locator": "Other helminthic infections: Gnathostoma neurologic manifestations, returning traveller, neuroimaging/CSF",
+            "assessment": "限定病原/场景的独立编写材料；待交叉复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-cdc-parasite",
+            "locator": "Types; Risk factors; Spread; Testing; Treatment",
+            "assessment": "限定病原/场景的独立编写材料；待交叉复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-cdc-gnathostoma",
+            "locator": "Treatment options paragraphs4–6",
+            "assessment": "Directly supports CNS bleeding risk and distinction from cutaneous treatment."
+          }
+        ]
       }
     ],
     "independence": {
@@ -5100,19 +6136,20 @@
       "underlying_evidence": "overlap"
     },
     "dispute": {
-      "status": "none",
-      "resolution": "Jurisdiction and guideline population retained; hearing timing anchors differ. Author candidate synthesis, pending independent review."
+      "status": "regional_difference",
+      "resolution": "Pathogen, age, post-neurosurgical device, immune status and local resistance guide treatment. Common uncertainty retained for neurognathostomiasis and injection-associated fungi; no old regional doses or generalized adenovirus antiviral regimen."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/mi_icd_scope",
-      "reviewer": "/root/retinal_targeted",
-      "checked_at": "2026-10-02",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
+      "checked_at": "2026-10-03",
       "original_sources_reopened": [
         "meningitis-adam-tb",
         "meningitis-cdc-bacterial-meningitis",
         "meningitis-cdc-food-cold",
         "meningitis-cdc-fungal-meningitis",
+        "meningitis-cdc-haemophilus",
         "meningitis-cdc-index",
         "meningitis-cdc-listeria",
         "meningitis-cdc-listeria-symptoms",
@@ -5139,108 +6176,84 @@
         "meningitis-nice-ng240",
         "meningitis-nice-tb",
         "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
+        "meningitis-nsw-meningococcal",
+        "meningitis-p0-03-cdc-adeno",
+        "meningitis-p0-03-cdc-gnathostoma",
+        "meningitis-p0-03-cdc-hsv",
+        "meningitis-p0-03-cdc-neurosyphilis",
+        "meningitis-p0-03-cdc-parasite",
+        "meningitis-p0-03-idsa",
+        "meningitis-p0-03-india-adeno",
+        "meningitis-p0-03-mahidol-neurognath",
+        "meningitis-p0-03-merck-recurrent",
+        "meningitis-p0-03-msd-chronic",
+        "meningitis-p0-03-msd-helminth",
+        "meningitis-rch-clinical",
+        "meningitis-rch-dehydration",
+        "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
+        "meningitis-who",
+        "meningitis-who-guideline"
+      ],
+      "inherited_source_ids": [
+        "meningitis-adam-tb",
+        "meningitis-cdc-bacterial-meningitis",
+        "meningitis-cdc-food-cold",
+        "meningitis-cdc-haemophilus",
+        "meningitis-cdc-index",
+        "meningitis-cdc-listeria",
+        "meningitis-cdc-listeria-symptoms",
+        "meningitis-cdc-surveillance",
+        "meningitis-cdc-tb-adverse",
+        "meningitis-fda-listeria",
+        "meningitis-healthdirect",
+        "meningitis-healthdirect-vomiting",
+        "meningitis-lpt-viral-policy",
+        "meningitis-mayo-anaphylaxis",
+        "meningitis-mayo-infant-feeding",
+        "meningitis-mayo-migraine",
+        "meningitis-mayo-treatment",
+        "meningitis-msd-tb",
+        "meningitis-msd-viral",
+        "meningitis-nhs",
+        "meningitis-nhs-antibiotics",
+        "meningitis-nhs-migraine",
+        "meningitis-nhs-sah",
+        "meningitis-nhs-vomiting",
+        "meningitis-nice-ng240",
+        "meningitis-nice-tb",
+        "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
         "meningitis-nsw-meningococcal",
         "meningitis-rch-clinical",
         "meningitis-rch-dehydration",
         "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
         "meningitis-who",
         "meningitis-who-guideline"
       ],
       "findings": [
         {
-          "id": "M01",
-          "status": "resolved",
-          "resolution": "CDC and independently written LPT p9 corroborate virus acquisition versus meningitis; stale single-source assessment corrected."
+          "finding": "Seven new diagnosis, treatment and complication claims used explanation classification.",
+          "resolution": "Corrected critical action/risk kinds while preserving actual independent support; no dose added.",
+          "status": "resolved"
         },
         {
-          "id": "M02",
-          "status": "resolved",
-          "resolution": "Inherited emergency conclusions unchanged; neither rash nor complete symptom set required."
+          "finding": "NCDC cited URL was404 on reviewer retrieval.",
+          "resolution": "Resolved current official PDF URL via official bulletin listing/search; actual six-page document downloaded and reviewed, metadata hash rebound.",
+          "status": "resolved"
         },
         {
-          "id": "M03",
-          "status": "resolved",
-          "resolution": "Inherited removal of unsupported forced-neck maneuver remains intact."
-        },
-        {
-          "id": "M04",
-          "status": "resolved",
-          "resolution": "Practical communication checklist is not a validated diagnostic score; no mechanical second-source requirement."
-        },
-        {
-          "id": "M05",
-          "status": "resolved",
-          "resolution": "WHO A.3 negative blood-marker limit; A.1.1/A.4 stabilization and selective imaging corroborate NICE. No delay to antibiotics preserved."
-        },
-        {
-          "id": "M06",
-          "status": "resolved",
-          "resolution": "MSD TB independently corroborates distinct multidrug meningeal treatment; NIH HIV-specific cryptococcosis confirms immune-dependent duration. NICE specialist routing is bounded service guidance, not an unsupported efficacy threshold."
-        },
-        {
-          "id": "M07",
-          "status": "resolved",
-          "resolution": "NHS ordinary flu/gastroenteritis resemblance needs no duplicated wording. NHS SAH supports bleed example; NSW independently confirms meningitis and/or septicemia. Emergency actions remain corroborated."
-        },
-        {
-          "id": "M08",
-          "status": "resolved",
-          "resolution": "MSD/RCH/WHO give component-specific empiric selection and support-care evidence. NHS hospital fluids/oxygen and pediatric RCH seizure management read. CDC directly describes immune-risk viral hospital care; MSD offers complementary severe-illness/immune context, not fake exact second rule. Conditional hospital review is accepted within strongly corroborated emergency pathway."
-        },
-        {
-          "id": "M09",
-          "status": "resolved",
-          "resolution": "Revised infant-feeding wording checked against Mayo infant warning and NHS/RCH age-relevant illness assessment; adult Healthdirect limitation retained. Recordkeeping is practical support."
-        },
-        {
-          "id": "M10",
-          "status": "resolved",
-          "resolution": "CDC technical P8 supplies exact cold-growth mechanism, with FDA coauthorship/shared upstream disclosed. Distinct technical and patient writings are not represented as independent experiments."
-        },
-        {
-          "id": "M11",
-          "status": "resolved",
-          "resolution": "Chinese over-one-month boundary now matches English and WHO scope. WHO and NICE hearing clocks and strength remain explicitly attributed differences; no invented identical global deadline."
-        },
-        {
-          "id": "M12",
-          "status": "resolved",
-          "resolution": "Regional vaccination/prophylaxis scope stays bounded; UKHSA contact passage corroborates existing meningococcal contact action without exporting temporary Kent outbreak schedules."
-        },
-        {
-          "id": "P0-M13",
-          "status": "resolved",
-          "claims": [
-            "causes_risks-3"
-          ],
-          "resolution": "NSW functional spleen and NICE1.1.8/1.1.14 added precisely."
-        },
-        {
-          "id": "P0-M14",
-          "status": "resolved",
-          "claims": [
-            "special_populations-2"
-          ],
-          "resolution": "NHS chemotherapy and CDC post-transplant medicines explicitly bound, with Mayo mechanism complementary."
-        },
-        {
-          "id": "P0-M15",
-          "status": "resolved",
-          "claims": [
-            "special_populations-3"
-          ],
-          "resolution": "New actual-read CDC maternal symptoms passage supplies precise second writing alongside FDA; common upstream acknowledged."
-        },
-        {
-          "id": "P0-M16",
-          "status": "resolved",
-          "resolution": "Added the already reviewed CDC Listeria symptoms source to condition.source_ids; citation-list closure only. Section text and ledger/source hashes unchanged."
+          "finding": "Potential overgeneralisation from generic parasitic treatment to neurological Gnathostoma, and from genital HSV suppression to recurrent meningitis.",
+          "resolution": "CurrentCDC and original Mahidol/KhonKaen2011 review both retain uncertain CNS anthelmintic/steroid benefits and potential worsening. HSV CNS treatment is distinct, long-term prevention not promised; no skin/genital regimens copied.",
+          "status": "resolved"
         }
       ],
-      "resolution": "Accepted for the described bilingual overview and14 sections; earlier partial evidence gaps resolved with actual component-specific reads or accepted bounded ordinary/practical statements. No claim is downgraded to evade a dangerous-action requirement."
+      "resolution": "Accept exact candidate for editorial evidence and scoped ICD integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-meningitis-independent.json"
+    "review_report": "reports/p0-03-meningitis-independent.json"
   },
   {
     "id": "p0-01-meningitis-prevention",
@@ -5249,11 +6262,11 @@
       "id": "meningitis",
       "section": "prevention"
     },
-    "content_sha256": "cc8937f80f9276cead0ed552f16c0a727a216cde9591bf840f3114ae0f657acc",
+    "content_sha256": "950999a891c92e6af977ef2beb94aec3595751f7eae48e04713619a510451890",
     "status": "cross_checked",
     "scope": "full_section",
     "checked_at": "2026-10-03",
-    "checker": "/root/astra_p0_maternal",
+    "checker": "/root",
     "medical_reviewed": false,
     "claim_inventory": "all_medical_claims_in_section",
     "supports": [
@@ -5471,6 +6484,36 @@
         ],
         "relation": "supports",
         "assessment": "Supports only the named additions identified in the claim inventory, not every statement in this section."
+      },
+      {
+        "source_id": "meningitis-p0-03-cdc-adeno",
+        "source_metadata_sha256": "43a38f3a677932f27dc153293b072994b5241fc1d2af96c1dff82220106fe10b",
+        "source_version": "2025-12-16",
+        "locator": "Symptoms; How it spreads; Prevention; Treatment; vaccine",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "US",
+        "independence_group": "US-CDC",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
+      },
+      {
+        "source_id": "meningitis-p0-03-india-adeno",
+        "source_metadata_sha256": "7ff091b7b083eaa89da492311a1aef14b54ad04f01a7497403642ef889ada60b",
+        "source_version": "2023-03",
+        "locator": "pp1–4: epidemiology, CNS box, diagnosis, management; p5 prevention",
+        "population": "成人及儿童，特定场景以章节限定",
+        "region": "IN",
+        "independence_group": "India-NCDC",
+        "accessed_at": "2026-10-03",
+        "upstream_evidence": [
+          "独立编辑不等于独立试验。MSD各页同一组，CDC各页同一组；MSD术后方案引用IDSA2017，不能宣称该方案有独立原始试验重复验证；印度NCDC与CDC共享腺病毒基础知识。"
+        ],
+        "relation": "supports",
+        "assessment": "新增病因差异；不替代本节旧主张支持"
       }
     ],
     "claims": [
@@ -5633,6 +6676,26 @@
             "assessment": "CDC limits its recommendation to Hib contacts and refers to eligibility guidance; UKHSA 2024 summary recommends confirmed invasive Hib cases and household contacts. No universal contact threshold, regimen or non-b exclusion is prescribed."
           }
         ]
+      },
+      {
+        "id": "p0-03-adeno-hygiene",
+        "kind": "action",
+        "text": {
+          "zh-CN": "腺病毒可通过手、物品、咳嗽和粪便传播。照护时认真洗手，特别是换尿布之后；一般公众没有常规可用的腺病毒疫苗，不能把军队特定疫苗当成儿童接种项目。",
+          "en": "Adenovirus spreads through hands, objects, coughing and stool. Wash hands carefully during care, especially after diaper changes. There is no routinely available adenovirus vaccine for the general public; military-specific vaccines are not a childhood schedule."
+        },
+        "supports": [
+          {
+            "source_id": "meningitis-p0-03-cdc-adeno",
+            "locator": "Symptoms; How it spreads; Prevention; Treatment; vaccine",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          },
+          {
+            "source_id": "meningitis-p0-03-india-adeno",
+            "locator": "pp1–4: epidemiology, CNS box, diagnosis, management; p5 prevention",
+            "assessment": "支持本条限定场景；仍待不同作者复读"
+          }
+        ]
       }
     ],
     "independence": {
@@ -5642,37 +6705,97 @@
     },
     "dispute": {
       "status": "regional_difference",
-      "resolution": "Hib eligibility varies between UKHSA and CDC; only conditional local-team assessment is stated, no global regimen or contact threshold."
+      "resolution": "Pathogen, age, post-neurosurgical device, immune status and local resistance guide treatment. Common uncertainty retained for neurognathostomiasis and injection-associated fungi; no old regional doses or generalized adenovirus antiviral regimen."
     },
     "adversarial_review": {
       "status": "accepted",
-      "author": "/root/astra_p0_neurology",
-      "reviewer": "/root/astra_p0_maternal",
+      "author": "/root/astra_p0_allergy; /root/astra_immunology_finish (directed corrections)",
+      "reviewer": "/root",
       "checked_at": "2026-10-03",
       "original_sources_reopened": [
+        "meningitis-adam-tb",
         "meningitis-cdc-bacterial-meningitis",
+        "meningitis-cdc-food-cold",
         "meningitis-cdc-fungal-meningitis",
         "meningitis-cdc-haemophilus",
         "meningitis-cdc-index",
         "meningitis-cdc-listeria",
         "meningitis-cdc-listeria-symptoms",
         "meningitis-cdc-surveillance",
+        "meningitis-cdc-tb-adverse",
         "meningitis-cdc-viral-meningitis",
         "meningitis-fda-listeria",
         "meningitis-healthdirect",
+        "meningitis-healthdirect-vomiting",
         "meningitis-lpt-viral-policy",
+        "meningitis-mayo-anaphylaxis",
         "meningitis-mayo-causes",
+        "meningitis-mayo-infant-feeding",
+        "meningitis-mayo-migraine",
         "meningitis-mayo-treatment",
         "meningitis-msd-acute",
         "meningitis-msd-tb",
         "meningitis-msd-viral",
         "meningitis-nhs",
+        "meningitis-nhs-antibiotics",
+        "meningitis-nhs-migraine",
+        "meningitis-nhs-sah",
+        "meningitis-nhs-vomiting",
+        "meningitis-nice-ng240",
+        "meningitis-nice-tb",
+        "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-enterovirus",
+        "meningitis-nsw-meningococcal",
+        "meningitis-p0-03-cdc-adeno",
+        "meningitis-p0-03-cdc-gnathostoma",
+        "meningitis-p0-03-cdc-hsv",
+        "meningitis-p0-03-cdc-neurosyphilis",
+        "meningitis-p0-03-cdc-parasite",
+        "meningitis-p0-03-idsa",
+        "meningitis-p0-03-india-adeno",
+        "meningitis-p0-03-mahidol-neurognath",
+        "meningitis-p0-03-merck-recurrent",
+        "meningitis-p0-03-msd-chronic",
+        "meningitis-p0-03-msd-helminth",
+        "meningitis-rch-clinical",
+        "meningitis-rch-dehydration",
+        "meningitis-ukhsa-contacts",
+        "meningitis-ukhsa-hib",
+        "meningitis-who",
+        "meningitis-who-guideline"
+      ],
+      "inherited_source_ids": [
+        "meningitis-adam-tb",
+        "meningitis-cdc-bacterial-meningitis",
+        "meningitis-cdc-food-cold",
+        "meningitis-cdc-haemophilus",
+        "meningitis-cdc-index",
+        "meningitis-cdc-listeria",
+        "meningitis-cdc-listeria-symptoms",
+        "meningitis-cdc-surveillance",
+        "meningitis-cdc-tb-adverse",
+        "meningitis-fda-listeria",
+        "meningitis-healthdirect",
+        "meningitis-healthdirect-vomiting",
+        "meningitis-lpt-viral-policy",
+        "meningitis-mayo-anaphylaxis",
+        "meningitis-mayo-infant-feeding",
+        "meningitis-mayo-migraine",
+        "meningitis-mayo-treatment",
+        "meningitis-msd-tb",
+        "meningitis-msd-viral",
+        "meningitis-nhs",
+        "meningitis-nhs-antibiotics",
+        "meningitis-nhs-migraine",
+        "meningitis-nhs-sah",
+        "meningitis-nhs-vomiting",
         "meningitis-nice-ng240",
         "meningitis-nice-tb",
         "meningitis-nih-cryptococcosis",
         "meningitis-nsw-enterovirus",
         "meningitis-nsw-meningococcal",
         "meningitis-rch-clinical",
+        "meningitis-rch-dehydration",
         "meningitis-ukhsa-contacts",
         "meningitis-ukhsa-hib",
         "meningitis-who",
@@ -5680,29 +6803,24 @@
       ],
       "findings": [
         {
-          "id": "MEN-P002-01",
-          "status": "resolved",
-          "claim_id": "p0-02-treatment-haemophilus",
-          "finding": "原先应按急性细菌路径处理并按检测调整是行动，却标explanation且仅CDC菌种说明。",
-          "resolution": "作者删除行动部分，仅保留H.influenzae脑膜炎属于细菌性脑膜炎的分类解释；实际核对最终中英正文及claim均已删除，未通过降级标签绕过双源。既有细菌治疗主张及支持保持。"
+          "finding": "Seven new diagnosis, treatment and complication claims used explanation classification.",
+          "resolution": "Corrected critical action/risk kinds while preserving actual independent support; no dose added.",
+          "status": "resolved"
         },
         {
-          "id": "MEN-P002-02",
-          "status": "resolved",
-          "claim_id": "p0-02-prevention-6",
-          "finding": "新增Hib疫苗保护范围句按explanation单源支持，存在疗效边界分类不足。",
-          "resolution": "作者删除该新增句及claim；保留原已审核疫苗预防部分和菌种/b型范围解释，未宣称全种疫苗保护。最终正文与claims确认不存在该新增句。"
+          "finding": "NCDC cited URL was404 on reviewer retrieval.",
+          "resolution": "Resolved current official PDF URL via official bulletin listing/search; actual six-page document downloaded and reviewed, metadata hash rebound.",
+          "status": "resolved"
         },
         {
-          "id": "MEN-P002-03",
-          "status": "resolved",
-          "finding": "集成前完整model.validate发现article.source_ids遗漏3个section新来源。前次section-level审查未覆盖此article linkage不变量。",
-          "resolution": "作者仅以所有section来源排序并集重建article.source_ids；排除此字段后的canonical hash完全相同，records/sources哈希不变；隔离内存替换候选并加入新来源后model.validate通过。"
+          "finding": "Potential overgeneralisation from generic parasitic treatment to neurological Gnathostoma, and from genital HSV suppression to recurrent meningitis.",
+          "resolution": "CurrentCDC and original Mahidol/KhonKaen2011 review both retain uncertain CNS anthelmintic/steroid benefits and potential worsening. HSV CNS treatment is distinct, long-term prevention not promised; no skin/genital regimens copied.",
+          "status": "resolved"
         }
       ],
-      "resolution": "一轮独立复读发现两项主张分类/证据问题，作者已缩窄并删除相应新增内容，随后只对两项修正和最终绑定做定向复查。最终可接受为AI独立编辑核验；真实医师签审仍false。两末级类别的确认建议绑定本报告最终canonical哈希，由主线程按冻结分类核对后落映射；此报告本身不修改覆盖或部署。"
+      "resolution": "Accept exact candidate for editorial evidence and scoped ICD integration, not clinician sign-off. Unchanged claim/source evidence inherits previously accepted records; fresh and inherited sources are distinguished."
     },
     "unresolved_questions": [],
-    "review_report": "reports/p0-02-meningitis-independent.json"
+    "review_report": "reports/p0-03-meningitis-independent.json"
   }
 ]

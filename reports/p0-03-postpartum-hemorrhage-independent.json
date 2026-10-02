@@ -1,0 +1,127 @@
+{
+  "topic": "postpartum-hemorrhage",
+  "author": "/root/astra_p0_maternal",
+  "reviewer": "/root",
+  "checked_at": "2026-10-03",
+  "status": "accepted",
+  "medical_reviewed": false,
+  "target": {
+    "body_canonical_sha256": "2eba366ce196df7eaba99159c5cd98766c4f038c1120ea862ec18d522f525095",
+    "records_canonical_sha256": "5e19f868930cc087c23268dc9ecad2ec4156f7360fa7b7a389bc5102518fa190",
+    "sources_canonical_sha256": "bef50d1b9195bec83b4c5cf62dc92c23994048187bf0963ddee5eae84d72e2a9"
+  },
+  "review_scope": "Ten added bilingual claims across six changed sections reviewed independently. Exact unchanged claims and eight unchanged sections inherit previous P0-02 evidence. Frozen JA43.3/.4/.5/.Y definitions read; specific coagulation-defect, obstruction with/without rupture and residual mechanisms tied to full existing PPH assessment/treatment.",
+  "claims_reviewed": 10,
+  "changed_sections": [
+    "causes_risks",
+    "red_flags",
+    "diagnosis",
+    "treatment",
+    "special_populations",
+    "prognosis_followup"
+  ],
+  "original_sources_reopened": [
+    "p003-msf-uterine-rupture",
+    "p003-msf-obstructed-labour",
+    "p003-who-obstructed-labour",
+    "p003-rcog-birth-after-caesarean",
+    "p003-aha-international-2020",
+    "p003-nhc-rare-aha-2025",
+    "p003-masac-265",
+    "p003-rcog-inherited-bleeding-71",
+    "p003-who-obstetric-fistula",
+    "pph-cma-2023"
+  ],
+  "source_reads": [
+    {
+      "source_id": "p003-msf-uterine-rupture",
+      "url": "https://medicalguidelines.msf.org/en/viewport/ONC/english/3-3-uterine-rupture-51416296.html",
+      "locator": "2026-10-03 urllib official HTML actually read:3.3.1 risk/obstruction;3.3.2 intrapartum and postpartum recognition;3.3.3 surgery, resuscitation, future rupture. Web tool405 bypassed using official direct request; no figure interpretation. Figure adapted Primary Surgery; not a separate independent source.",
+      "method": "Original MSF HTML independently downloaded and parsed;3.3 diagnosis/management or7.2 complications/management/fistula read."
+    },
+    {
+      "source_id": "p003-msf-obstructed-labour",
+      "url": "https://medicalguidelines.msf.org/en/viewport/ONC/english/7-2-obstructed-labour-51417478.html",
+      "locator": "Official HTML actually read by urllib:7.2 definition;7.2.2 causes;7.2.3 complications;7.2.4 atony-related PPH;7.2.5 fistula. Shares WHO fistula guidance; counted with MSF3.3 as one origin. Does not import >24h definition as a waiting rule, fluid targets or procedures.",
+      "method": "Original MSF HTML independently downloaded and parsed;3.3 diagnosis/management or7.2 complications/management/fistula read."
+    },
+    {
+      "source_id": "p003-who-obstructed-labour",
+      "url": "https://cdn.who.int/media/docs/default-source/mca-documents/maternal-nb/midwifery/midwifery-education-module_3_managing-prolonged-and-obstructed-labour.pdf",
+      "locator": "Original WHO PDF web text actually read:physical pages33(rupture/haemorrhage),59(recognition),201(definition mechanical obstruction),204(PPH atony/trauma glossary); edition2 confirmed on physical page3. Historical education used only for mechanisms, not old partograph timings or PPH numerical thresholds. urllib403; web PDF succeeds. MSF/WHO share obstetric evidence; separate editorial origins, no independent-trial assertion.",
+      "method": "Original WHO2008 PDF independently downloaded and parsed; physical33,59,99–100,201,204 read. Historical mechanisms only; old labour timing and numerical PPH definitions not adopted."
+    },
+    {
+      "source_id": "p003-rcog-birth-after-caesarean",
+      "url": "https://www.rcog.org.uk/media/kpkjwd5h/gtg_45.pdf",
+      "locator": "October2015 edition2 (exact day unavailable), original PDF physical pages1–5 actually read. Page2 contraindication of planned VBAC with previous rupture and case-by-case senior assessment of complex scars. Historical guidance supports specialist future-birth discussion only; no timing or numeric recurrence estimate imported.",
+      "method": "Root independently read relevant original web/PDF passages for the ten new claims; unchanged claims retain earlier accepted evidence."
+    },
+    {
+      "source_id": "p003-aha-international-2020",
+      "url": "https://haematologica.org/article/view/9931",
+      "locator": "2020; accepted2020-04-07. Original full relevant HTML read:Introduction58–63;Diagnosis82–105;Hemostatic treatment109–126;Follow-up216–219;Pregnancy-associated AHA220–223;disclosures229. Consensus with EACH2/GTH registry evidence, editorial support funded by Novo Nordisk. Not independent trial replication.",
+      "method": "Root independently read relevant original web/PDF passages for the ten new claims; unchanged claims retain earlier accepted evidence."
+    },
+    {
+      "source_id": "p003-nhc-rare-aha-2025",
+      "url": "https://www.gov.cn/zhengce/zhengceku/202507/P020250710595668350272.pdf",
+      "locator": "2025 release, precise issue day not confirmed. Official PDF downloaded in memory, pdftotext physical pages9 and11–14 actually read:chapter2 overview/diagnostics;therapy;pregnancy/lactation;complication monitoring;references. Printed pages5,7–10. Independently formulated China guidance cites international2020, EACH2 and Chinese CARE/local studies, so underlying evidence overlaps. Treatment availability and pregnancy/lactation regimens differ; do not combine drug prescriptions.",
+      "method": "Original government PDF independently downloaded via curl; actual physical9–14 read with Poppler, including diagnosis, pregnancy and follow-up references."
+    },
+    {
+      "source_id": "p003-masac-265",
+      "url": "https://www.bleeding.org/healthcare-professionals/guidelines-on-care/masac-documents/masac-document-265-masac-guidelines-for-pregnancy-and-perinatal-management-of-women-with-inherited-bleeding-disorders-and-carriers-of-hemophilia-a-or-b",
+      "locator": "实际阅读官方HTML对应章节；urllib获取官方PDF并以pdftotext读取首面核日期; Preconception Diagnosis and Genetic Counseling, HTML lines 238–245; Pregnancy Management, lines 248–254; Labor and Delivery Management, lines 257–264; Postpartum Management to Prevent Bleeding, lines 289–292; References, lines 304–322; Approved2021-02-20; adopted2021-03-04. Original material was read in this agent session, not using preparation as a medical source.",
+      "method": "Root independently read relevant original web/PDF passages for the ten new claims; unchanged claims retain earlier accepted evidence."
+    },
+    {
+      "source_id": "p003-rcog-inherited-bleeding-71",
+      "url": "https://obgyn.onlinelibrary.wiley.com/doi/pdf/10.1111/1471-0528.14592",
+      "locator": "实际阅读RCOG官方落地页及其Wiley PDF链接返回的文字定位；只读下列范围，未声称通读71页。后续页获取超时、urllib 403，故未把未读VWD细节作为已核实证据。; RCOG landing Summary/Version history/Description, lines 120–127; PDF physical page 1: title and date; PDF physical page 3/e195: haemophilia prepregnancy management and genetic counselling; PDF physical page 4/e196: multidisciplinary antenatal care and factor monitoring; PDF physical page 6/e198: postpartum management, assay-guided management and post-discharge haemophilia-centre contact; April2017. UKHCDO prior guidance shared with MASAC; no independent study replication claimed.",
+      "method": "Root independently read relevant original web/PDF passages for the ten new claims; unchanged claims retain earlier accepted evidence."
+    },
+    {
+      "source_id": "p003-who-obstetric-fistula",
+      "url": "https://www.who.int/news-room/facts-in-pictures/detail/10-facts-on-obstetric-fistula",
+      "locator": "Official WHO HTML actually read 2026-10-03: introduction lines83–90, physical/mental suffering119–121, access to care140–149 and surgery155–157. Describes obstruction-related fistula and persistent incontinence; no numerical incidence, surgical success estimate or fixed catheter duration adopted. MSF separately authors practical management but cites WHO2006, so shared upstream basis is disclosed.",
+      "method": "Root independently read relevant original web/PDF passages for the ten new claims; unchanged claims retain earlier accepted evidence."
+    },
+    {
+      "source_id": "pph-cma-2023",
+      "url": "https://cspm.cma.org.cn/index/news?id=3474",
+      "locator": "处理(二)4 子宫破裂, original line145; parallel resuscitation and surgical repair/hysterectomy.",
+      "method": "Original official society HTML independently reopened and precise passage read."
+    }
+  ],
+  "findings": [],
+  "scope_decisions": [
+    {
+      "code": "JA43.3",
+      "recommendation": "confirmed",
+      "rationale": "既有/获得性凝血缺陷均在范围：病因检查、凝血成分支持和原发病联合处理；AHA及遗传病具体专科随访分流，不等同仅DIC，也不在本篇复制所有原发病诊疗。"
+    },
+    {
+      "code": "JA43.4",
+      "recommendation": "confirmed",
+      "rationale": "梗阻相关伴子宫破裂：腹内隐匿失血、紧急手术修补/切除、失血复苏、瘘与感染恢复、修补后未来妊娠风险完整分流。"
+    },
+    {
+      "code": "JA43.5",
+      "recommendation": "confirmed",
+      "rationale": "梗阻后出血且未提子宫破裂：机械梗阻与宫缩乏力、相应止血，膀胱/直肠损伤及感染随访；未提破裂不推断已经排除破裂，出现警示仍急救。"
+    },
+    {
+      "code": "JA43.Y",
+      "recommendation": "confirmed",
+      "rationale": "其他已特指产后出血：WHO残余类别没有额外定义；按已明确病因进入宫缩乏力/产道损伤/残留组织/凝血缺陷等因果处理，不将原因未明确的.Z或产前出血强行归入。本篇急救、病因辨别和恢复路径正向适用。"
+    }
+  ],
+  "dispute_adjudication": {
+    "status": "regional_difference",
+    "resolution": "Age, cause, pregnancy and local professional protocols retain their stated scope. Shared evidence and older sources are identified; no incompatible regional numeric treatment protocols combined."
+  },
+  "independence": "MSF and WHO use shared obstetric evidence; historical WHO supports mechanisms only. China2025 AHA guideline cites international2020/EACH2 and adds ChinaCARE/local evidence. MASAC/RCOG share UKHCDO upstream. Separate recommendations are not independent clinical trials.",
+  "remaining_issues": [],
+  "resolution": "Accept exact candidate for editorial cross-check and scoped ICD integration; no clinician sign-off."
+}

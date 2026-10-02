@@ -1,0 +1,138 @@
+{
+  "verdict": "accepted",
+  "author": "/root/astra_immunology_finish",
+  "reviewer": "/root/astra_independent_finish",
+  "medical_reviewed": false,
+  "checked_at": "2026-10-03",
+  "target": {
+    "body_canonical_sha256": "6ba5856a7aac0e6afc1af171a71d1b2e86ed1328c44ae26ac0a01f2de40ae687",
+    "records_canonical_sha256": "df7daf54615d3355e9c05be9445b4d7dbad54ca6c4422a42527fd588c9406b44",
+    "sources_canonical_sha256": "7646b81f68c3423fd48e33507e301d2b0f648ba5aab10da9aefa19827ef4b2ab"
+  },
+  "changed_sections": [
+    "summary",
+    "causes_risks",
+    "red_flags",
+    "care",
+    "diagnosis",
+    "differentials",
+    "treatment",
+    "medications",
+    "diet",
+    "daily_care",
+    "special_populations",
+    "prognosis_followup",
+    "complications",
+    "prevention"
+  ],
+  "inherited_sections": [],
+  "accepted_source_ids": [
+    "severe-dengue-p0-03-cdc-care",
+    "severe-dengue-p0-03-cdc-tests",
+    "severe-dengue-p0-03-who",
+    "severe-dengue-p0-03-nhs",
+    "severe-dengue-p0-03-sg2026",
+    "severe-dengue-p0-03-cda",
+    "severe-dengue-p0-03-india2023",
+    "severe-dengue-p0-03-hsajb"
+  ],
+  "actual_source_reads": [
+    {
+      "source_id": "severe-dengue-p0-03-cdc-care",
+      "url": "https://www.cdc.gov/dengue/hcp/clinical-care/index.html",
+      "locator": "Clinical27–157;15Apr2026:warning signs,GroupsA/B1/B2/C,fluids and transfusion.",
+      "method": "Actual original reading at specified range; no linked literature full-read claim."
+    },
+    {
+      "source_id": "severe-dengue-p0-03-cdc-tests",
+      "url": "https://www.cdc.gov/dengue/hcp/diagnosis-testing/index.html",
+      "locator": "Clinical27–105;26Aug2025:NAAT/NS1/IgM,illness timing,crossreactivity.",
+      "method": "Actual original reading at specified range; no linked literature full-read claim."
+    },
+    {
+      "source_id": "severe-dengue-p0-03-who",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue",
+      "locator": "Original fact sheet87–139,151–201;21Aug2025:classification,warnings,care,mosquito prevention,vaccine scope.",
+      "method": "Actual original reading at specified range; no linked literature full-read claim."
+    },
+    {
+      "source_id": "severe-dengue-p0-03-nhs",
+      "url": "https://www.nhs.uk/conditions/dengue/",
+      "locator": "Clinical15–145;13Aug2026:severe symptoms,risk groups,treatment and prevention.",
+      "method": "Actual original reading at specified range; no linked literature full-read claim."
+    },
+    {
+      "source_id": "severe-dengue-p0-03-sg2026",
+      "url": "https://isomer-user-content.by.gov.sg/68/d5527384-0c8a-44d5-8c20-71715ea784bc/Singapore%20National%20Dengue%20Clinical%20Guideline%20(Mar%202026)%20%5BPDF%5D.pdf",
+      "locator": "March2026 original PDFpp2–5 lines51–225;pp7–11 lines348–694;pp13–16 lines762–913. Clinical/special groups,testing/differentials,monitoring/fluids,discharge/followup,pregnancy,elderly meds,blood products.",
+      "method": "Actual original reading at specified range; no linked literature full-read claim."
+    },
+    {
+      "source_id": "severe-dengue-p0-03-cda",
+      "url": "https://www.cda.gov.sg/professionals/diseases/dengue-fever/",
+      "locator": "Original clinical39–128;4Sep2026:transmission,diagnosis,treatment,vaccine availability.",
+      "method": "Actual original reading at specified range; no linked literature full-read claim."
+    },
+    {
+      "source_id": "severe-dengue-p0-03-india2023",
+      "url": "https://ncvbdc.mohfw.gov.in/Doc/National%20Guidelines%20for%20Clinical%20Management%20of%20Dengue%20Fever%202023.pdf",
+      "locator": "OriginalPDF70/printed48 section8.1 coronary/heart disease antiplatelet-anticoagulant review;PDF82/printed60 Chapter13 recovery/discharge. Web timeout;urllib downloaded originalPDF and pdftotext extracted these exact pages;not full guideline read.",
+      "method": "Actual original reading at specified range; no linked literature full-read claim."
+    },
+    {
+      "source_id": "severe-dengue-p0-03-hsajb",
+      "url": "https://jknjohor.moh.gov.my/hsajb/index.php/warga-hsa1/muat-turun-borang/category/216-dengue-management?download=2085:hsajb-sop-and-contingency-plan-for-management-of-dengue-patients",
+      "locator": "Original2025SOP authors/editor PDF2–5;section6.3 PDF27–28/printed16–17 adultFBC/LFT and clinical followup;section7.5 PDF31/printed20 childclinical review/FBC ifneeded. Web range failed;urllib originalPDF+pdftotext exact pages.",
+      "method": "Actual original reading at specified range; no linked literature full-read claim."
+    }
+  ],
+  "independence_adjudication": "CDC care/tests one group; Singapore guideline/CDA one national group. WHO/NHS/India NCVBDC/Malaysia HSAJB separately authored. Clinical guidelines share WHO dengue classification and trials; no claim of disjoint primary evidence. India/Malaysia add independently authored local discharge/followup decisions.",
+  "classification_read": {
+    "path": "C:/Users/Damian/AppData/Local/Temp/healthcare-private/p0-icd-2026-01-official.txt",
+    "locator": "4284–4290;1D22",
+    "finding": "Severe plasma leakage causing shock/respiratory compromise, severe bleeding or organ involvement. 1D21 warning signs alone not credited as severe dengue."
+  },
+  "findings": [
+    {
+      "id": "dengue-discharge-evidence",
+      "status": "resolved",
+      "resolution": "India independent discharge criteria and HSAJB adult followup added; no universal regional thresholds or repeat-test timetable; children differentiated."
+    },
+    {
+      "id": "dengue-claim-kinds",
+      "status": "resolved",
+      "resolution": "medications-1 and diet-1 changed to action."
+    },
+    {
+      "id": "dengue-liver-medicine-scope",
+      "status": "resolved",
+      "resolution": "Unsupported liver-condition medication review removed; anticoagulant/antiplatelet clinical review supported by SG and India."
+    },
+    {
+      "id": "dengue-intro-support-binding",
+      "status": "resolved",
+      "resolution": "Intro now binds SG p9 and HSAJB adult/child followup directly; final editorial hash df7daf... verified."
+    }
+  ],
+  "unresolved_questions": [],
+  "dispute_adjudication": {
+    "status": "regional_difference",
+    "resolution": "Discharge thresholds/timelines and vaccine policies differ by region. Text uses clinician assessment and local vaccine eligibility; no universal numerical fluid/platelet/discharge protocol or vaccine entitlement. Severe dengue remains urgent, including after fever settles."
+  },
+  "resolution": "First independent reading of all14 bilingual sections and their stated source ranges plus one targeted revision verification. Medical clinical signoff remains false.",
+  "category_decisions": [
+    {
+      "code": "1D22",
+      "status": "confirmed",
+      "rationale": "Shared14 dimensions cover severe leak/shock,bleeding and organinjury; warning phase distinguished; emergency/supportive management with risk and followup.",
+      "exclusions_considered": [
+        "1D20 without warning",
+        "1D21 warning signs without established severe criteria"
+      ]
+    }
+  ],
+  "checks": {
+    "section_hashes_match": true,
+    "bilingual_review": "All14 dimensions read; conditional actions,risk groups and thresholds consistent; no content-length proxy."
+  }
+}
