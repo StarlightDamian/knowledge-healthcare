@@ -7,7 +7,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -40,6 +40,11 @@ def content_hash(condition: dict) -> str:
 
 def text_hash(section: dict) -> str:
     return canonical_hash(section['text'])
+
+def review_date() -> date:
+    """Date-only editorial records use UTC+08, independent of the runner's timezone."""
+    return datetime.now(timezone(timedelta(hours=8))).date()
+
 
 def valid_date(value: str) -> bool:
     try:
@@ -78,7 +83,7 @@ def bilingual(obj, label: str) -> None:
 
 def validate(data: dict, mode: str = 'preview', today: date | None = None) -> dict:
     from .knowledge import validate_knowledge
-    today=today or date.today()
+    today=today or review_date()
     require(mode in ('preview','clinical'), 'Unknown release mode')
     conditions=data['conditions']; sources=data['sources']
     require(bool(conditions),'No condition records')

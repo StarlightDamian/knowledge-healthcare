@@ -4,7 +4,7 @@ from __future__ import annotations
 from datetime import date
 from pathlib import Path
 
-from .model import ID_RE, bilingual, read_json, require, safe_url, valid_date
+from .model import ID_RE, bilingual, read_json, require, review_date, safe_url, valid_date
 
 MODULE_IDS = ('cancer', 'lifecycle')
 AGE_PARTITION = ((0, 4), (5, 17), (18, 39), (40, 64), (65, 84), (85, None))
@@ -47,7 +47,7 @@ def sections(value, source_ids: set, label: str) -> int:
 def validate_knowledge(knowledge: dict, condition_ids: set, today: date | None = None,
                        mode: str = 'preview') -> dict:
     """Validate module-local evidence, canonical factors and the inclusive age partition."""
-    today = today or date.today()
+    today = today or review_date()
     require(mode in ('preview', 'clinical'), 'Unknown knowledge release mode')
     require(isinstance(knowledge, dict) and set(knowledge) == set(MODULE_IDS),
             'Knowledge must contain cancer and lifecycle modules')

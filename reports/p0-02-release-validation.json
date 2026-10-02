@@ -38,14 +38,17 @@
     },
     "affected_python": {
       "status": "passed",
-      "unique_passed": 108,
-      "command": "python -m unittest tests.test_model tests.test_editorial tests.test_icd tests.test_priorities tests.test_content_audit tests.test_knowledge tests.test_clinical_gate"
+      "unique_passed": 110,
+      "command": "python -m unittest tests.test_review_dates tests.test_editorial tests.test_model tests.test_knowledge tests.test_icd tests.test_priorities tests.test_content_audit tests.test_clinical_gate"
     },
     "browser_http": {
       "status": "pending_public_browser_after_deployment"
     },
     "github_ci": {
-      "status": "pending"
+      "status": "pending_fixed_commit",
+      "previous_failed_run": "https://github.com/StarlightDamian/knowledge-healthcare/actions/runs/37037788202",
+      "root_cause": "Date-only review records used author UTC+08 while validation used host local date; UTC runner excluded 21 changed sections and regenerated different coverage/priority outputs.",
+      "resolution": "All three date validators now use the documented UTC+08 editorial calendar. Boundary tests retain future-date rejection and explicit historical date overrides."
     },
     "public_https": {
       "status": "pending"

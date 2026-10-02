@@ -3,7 +3,7 @@ from __future__ import annotations
 from collections import Counter
 from datetime import date
 from pathlib import Path
-from .model import ROOT, FIELDS, ValidationError, canonical_hash, load, read_json, safe_url, valid_date
+from .model import ROOT, FIELDS, ValidationError, canonical_hash, load, read_json, review_date, safe_url, valid_date
 
 
 def section_content_hash(target: dict, section: dict) -> str:
@@ -202,7 +202,7 @@ def editorial_audit(root: Path = ROOT, data: dict | None = None,
     root = Path(root)
     data = load(root) if data is None else data
     records = load_editorial_records(root) if records is None else records
-    today = today or date.today()
+    today = today or review_date()
     index = editorial_sections(data)
     issues, checked, seen_ids, seen_targets, qualified_sections = [], [], set(), set(), set()
     duplicate_targets = set()
