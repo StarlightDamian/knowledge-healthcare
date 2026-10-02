@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "batch-01-mi-maternal-action-followup",
+  "reviewer": "/root/mi_diagnosis_recheck — independent medical-content editor; not clinician sign-off",
+  "reviewed_at": "2026-10-02",
+  "medical_reviewed": false,
+  "scope": "仅special_populations-2b未解决的孕期/产后疑似心梗公众急救行动；不重审其他主张，不改作者稿、来源、编辑对象、原复核报告。",
+  "target": {
+    "path": "drafts/batch-01/emergency/myocardial-infarction.json",
+    "canonical_sha256": "491b41e0cf5aa8adf79a4011fd60986fba90272c838735337fb41604a63db27a",
+    "claim_id": "special_populations-2b",
+    "file_sha256": "0aa9ed2849362a48f2011a167b12c69706581573e77c3330b67464aef20f1fce",
+    "claim_text_sha256": "c05bfa29916bc25695fffa140ac2fd6e6c2921233e8e194021cf85cb7ddec68a",
+    "section_content_sha256": "da39bb824a6ef2a9d270e2a1b9448786e72c2d7f4594f09a3224d511ecc695c3"
+  },
+  "supersedes": {
+    "report": "reports/batch-01-mi-diagnosis-recheck.json",
+    "finding_id": "MI-DX-R04",
+    "previous_decision": "correct_key_action_direct_single_source",
+    "change_reason": "本轮找到并实际读到独立公众孕产妇急救材料；按相同危险行动的合理组合支持判断，不要求每份来源逐字重复整句。",
+    "original_report_preserved": true,
+    "overprecision_correction": "前报告把精确孕产妇公众原句的表达粒度设得过窄。一般疑似MI急救适用人群未排除孕产妇，结合专门母体风险/急救资料可支持；原文不存在已证实跨人群错误或不同的必要急救行动。"
+  },
+  "verdict": "KEY_ACTION_GAP_RESOLVABLE_WITH_BOUNDED_INDEPENDENT_PUBLIC_SUPPORT",
+  "decision": {
+    "can_reasonably_support_current_action": true,
+    "medical_error_found": false,
+    "body_revision_required": false,
+    "precise_basis": "一般疑似MI立即当地急救的Mayo公众指令没有排除孕产妇；NHLBI专门说明孕期/分娩后风险与立即急救，两份不同编写来源可形成公开说明的组合支持。新LAS及ACOG孕产妇材料进一步证明相应胸痛/呼吸危险表现不可降为正常孕产不适。",
+    "not_claimed": "NHS母婴资料未逐字写“所有孕期/产后疑似心肌梗死”；不把它们作为每种非胸痛表现或所有孕产不适的独立叫救护车规则。",
+    "practical_organization": "告知孕周或分娩时间不新增医疗阈值，不设双源门槛。",
+    "frozen_binding_status": "旧主张记录尚未直接绑入已有Mayo急救定位或新LAS，因此仍需作者做主张级绑定整理。实质行动已有独立组合支持，不应继续将第二材料没有逐字同时覆盖pregnancy和postpartum作为医学补证阻断。",
+    "cross_population_medical_counterexample_found": false,
+    "remaining_medical_action_gap": false
+  },
+  "new_original_source_reads": [
+    {
+      "candidate_source_id": "mi-las-maternal-emergency",
+      "title": "London Ambulance Service NHS Trust — Calling 999 if you are pregnant",
+      "url": "https://www.londonambulance.nhs.uk/our-services/emergency-care/emergency-care-advice/advice-if-you-are-due-to-give-birth/",
+      "organization": "London Ambulance Service NHS Trust",
+      "independence_group": "UK-NHS",
+      "jurisdiction": "GB",
+      "population": "Pregnant people and people after birth; public patients/families.",
+      "retrieval_status": "page_opened",
+      "accessed_at": "2026-10-02",
+      "publication_date": null,
+      "exact_locators": [
+        {
+          "heading": "Calling 999 during pregnancy → Feeling out of breath",
+          "web_lines": "57–65",
+          "scope": "孕期感觉气短并有胸痛、晕厥/头晕、心率异常等，明确Call999 or go toA&E。"
+        },
+        {
+          "heading": "Calling 999 after pregnancy",
+          "web_lines": "98–104",
+          "scope": "产后胸痛或严重呼吸问题明确Call999。"
+        },
+        {
+          "heading": "Other pregnancy or postnatal concerns",
+          "web_lines": "116–121",
+          "scope": "其他担忧联系产科服务/111；明确不把所有孕产不适都升级为999。"
+        }
+      ],
+      "direct_support": "直接、独立编写的公众孕期危险组合和产后胸痛急救行动支持。",
+      "limit": "孕期该段限定气短伴其他列举信号，且急救/急诊并列；不声称所有孕期单纯症状均必须救护车。",
+      "relationship_to_existing_sources": "独立于NHLBI/NIH；与既有NHS页面保守归同一NHS写作组，不另计两份NHS为两组。"
+    },
+    {
+      "candidate_source_id": "mi-acog-postpartum-emergency",
+      "title": "ACOG — Postpartum Pain Management",
+      "url": "https://www.acog.org/womens-health/faqs/postpartum-pain-management",
+      "organization": "American College of Obstetricians and Gynecologists",
+      "independence_group": "US-ACOG",
+      "jurisdiction": "US",
+      "population": "People postpartum; not a pregnancy-specific passage.",
+      "retrieval_status": "official_indexed_passages_only",
+      "accessed_at": "2026-10-02",
+      "publication_date": null,
+      "exact_locator": "When should I call my doctor or911? → Call911 or seek emergency help right away if you → Have chest pain / Are coughing or gasping for air",
+      "direct_support": "产后胸痛立即呼911或急救；实际核读官方ACOG索引该段。",
+      "limit": "直连返回402 Payment Required；未取得完整HTML。只支持产后，不冒充孕期第二段，不表明胸痛必由心梗导致。"
+    },
+    {
+      "candidate_source_id": "mi-healthier-together-pregnancy-chest",
+      "title": "Healthier Together NHS — Chest Pain / Concerns in Pregnancy",
+      "url": "https://www.healthiertogether.nhs.uk/pregnancy-and-birth/chest-pain",
+      "organization": "Healthier Together NHS",
+      "independence_group": "UK-NHS",
+      "jurisdiction": "GB",
+      "population": "Pregnancy chest-pain advice for the public.",
+      "retrieval_status": "official_indexed_passages_only",
+      "accessed_at": "2026-10-02",
+      "publication_date": null,
+      "exact_locator": "RED → If you have any of the following → You need urgent help → Call999",
+      "direct_support": "索引显示突发严重胸痛、向手臂/肩/背/下颌扩散、胸痛伴气短/晕厥等列入999红色路径。",
+      "limit": "直连403；只核读官方索引红色段，不采用其AMBER用药或等候路径。同一NHS组，不增加独立组数。"
+    }
+  ],
+  "existing_evidence_used_without_reopening": [
+    {
+      "source_id": "mi-nhlbi-women",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/women",
+      "independence_group": "US-NIH",
+      "locator": "Pregnancy and heart attacks120–126",
+      "read_evidence": "同一任务前一冻结复核实际打开；本次未重开。孕期或任何时候疑似心梗立即911。"
+    },
+    {
+      "source_id": "mi-mayo-causes",
+      "url": "https://www.mayoclinic.org/diseases-conditions/heart-attack/symptoms-causes/syc-20373106",
+      "independence_group": "US-MAYO",
+      "locator": "When to see a doctor302–308",
+      "read_evidence": "前一冻结复核实际打开；本次未重开。公众疑似心梗立即当地急救，现稿red_flags已归属。"
+    }
+  ],
+  "path_not_adopted": {
+    "source": "CDC Hear Her official indexed leaflet",
+    "url": "https://beta.cdc.gov/hearher/docs/pdf/CDC-Hear-Her-Womens-urgent-warning-signs-h.pdf",
+    "observed_scope": "索引显示胸痛/心率快等警示应立即获得医疗照护，并在问诊示例中问何时急诊/911。",
+    "reason": "没有把示例询问或立即医疗照护升级为不带条件的911指令；已有更直接的NHS/ACOG公众行动后停止追索。"
+  },
+  "evidence_combination": {
+    "available_independent_writing_groups": [
+      "US-NIH",
+      "UK-NHS",
+      "US-ACOG"
+    ],
+    "minimum_sufficient_pair": [
+      "mi-nhlbi-women",
+      "mi-mayo-causes"
+    ],
+    "pregnancy": "NHLBI给疑似MI的立即急救原则；LAS直接给孕期危险胸痛/呼吸组合的同级路径。既有red_flags提供疑似MI范围，不能凭孤立非危险不适扩大。",
+    "postpartum": "NHLBI涵盖分娩后可发生及任何时候疑似MI急救，LAS产后胸痛直接999；ACOG产后立即急救索引是额外独立支持。",
+    "regional_translation": "美国911/英国999只能按原机构所在地标注；现稿“当地急救”是合理地域化综合。",
+    "independence_limit": "NHS两个页面并非两独立组；ACOG和NIH可共享医学研究，但不同编写机构不等于不同试验重复。",
+    "new_direct_maternal_support": "mi-las-maternal-emergency；ACOG产后索引可作额外US-ACOG组支持。"
+  },
+  "minimum_author_handoff": [
+    "最小改动是将已存在mi-mayo-causes的When to see a doctor302–308补绑special_populations-2b，注明一般疑似MI公众急救加NHLBI孕产妇专门材料的组合支持；也可登记新LAS材料加强直接母体行动。",
+    "可用ACOG产后索引作附加支持，精确保留index-only/402访问限制；不要将其标为完整页面已读。",
+    "更新主张assessment为有界综合支持并重新计算受影响的来源/章节元数据绑定哈希；本报告不代改共享对象或批准整篇。"
+  ],
+  "stopping_condition": "已得到最小充分独立公众行动材料；不继续检索、不增加正文算法/药物剂量、不临床签审。",
+  "acceptance_boundary": [
+    "原报告和所有共享冻结对象只读。",
+    "仅本补证报告新增。",
+    "未改其他27项的原定向判断，不对整篇发布授权。",
+    "来源权利保留；自行事实归纳和精确链接定位，未转载全文。"
+  ],
+  "read_only_inputs": [
+    {
+      "path": "reports/batch-01-mi-diagnosis-recheck.json",
+      "file_sha256": "6ff0ca62090c183b715d217a71337be826f322a3e1e895365f6aeaa06eace20f"
+    },
+    {
+      "path": "drafts/batch-01/emergency-sources.json",
+      "file_sha256": "26bb27377af2890c812ef5ff9d2801e370bbc1ab652bc12eb4e05f4546db87e9"
+    },
+    {
+      "path": "drafts/batch-01/emergency-editorial.json",
+      "file_sha256": "1905a85bbe7e2c86a6b8682fdc2dbb95a3714962352be42dccfccf8673538d4d"
+    }
+  ],
+  "verification": {
+    "claim_and_draft_hash_match": true,
+    "original_report_and_shared_files_unchanged": true,
+    "only_one_followup_report_added": true,
+    "no_clinical_signoff_or_release": true
+  }
+}

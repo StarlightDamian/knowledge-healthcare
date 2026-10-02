@@ -1,0 +1,1085 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "batch-01-mi-diagnosis-recheck",
+  "reviewer": "/root/mi_diagnosis_recheck — independent medical-content editor; not a clinician sign-off",
+  "reviewed_at": "2026-10-02",
+  "medical_reviewed": false,
+  "target": {
+    "path": "drafts/batch-01/emergency/myocardial-infarction.json",
+    "canonical_sha256": "491b41e0cf5aa8adf79a4011fd60986fba90272c838735337fb41604a63db27a",
+    "sections": [
+      "red_flags",
+      "diagnosis",
+      "differentials",
+      "special_populations"
+    ],
+    "file_sha256": "0aa9ed2849362a48f2011a167b12c69706581573e77c3330b67464aef20f1fce",
+    "mi_source_array_canonical_sha256": "b4b97981374130b8709781762a80ceb035571d6858cea4d4101948b81e8a595b",
+    "mi_editorial_array_canonical_sha256": "440147d0b0278371d9190ee58ef5aae3ab53896304bcfc046c14482f10d3f4f6",
+    "sources_file_sha256": "26bb27377af2890c812ef5ff9d2801e370bbc1ab652bc12eb4e05f4546db87e9",
+    "editorial_file_sha256": "1905a85bbe7e2c86a6b8682fdc2dbb95a3714962352be42dccfccf8673538d4d",
+    "section_content_sha256": {
+      "red_flags": "6b255da43626934cd26a1ed30f002bfcef82438d14e8792f0f612506ec8b4f8b",
+      "diagnosis": "3b129b17f1d91ba2efe36735d021a1ced3ff59773cc404448459df3cf84925cd",
+      "differentials": "cfd2149f8d9a2c8cd54956ee6a2d1b89abac4b1bf250c0be8b1bd2ce094f131e",
+      "special_populations": "da39bb824a6ef2a9d270e2a1b9448786e72c2d7f4594f09a3224d511ecc695c3"
+    }
+  },
+  "scope": "一次定向复核新变化与旧真实缺口；care/treatment/medications及其他章节排除。冻结作者稿、MI来源和编辑对象均只读。",
+  "verdict": "NO_MEDICAL_ERROR_FOUND_WITH_PRECISE_SUPPORT_LIMITS",
+  "article_release_decision": "不代表整篇cross_checked或发布批准。孕期/产后精确公众急救行动仍缺第二份直接独立写作支持；普通解释的单源范围不自动阻断。",
+  "summary": "MI02损伤与病因诊断、条件式复查解释已补足；MI03危险鉴别范围已补足；MI06胎儿语境现在明确限孕期。NSTEMI严重堵塞事实正确，应保留。",
+  "standard": {
+    "critical_claims": "关键医疗行动、阈值、疗效、风险要求独立编写材料交叉支持；专业和公众路径、人群和地区范围不默默互换。",
+    "ordinary_explanations": "普通解剖、检查原理及情境整理可保留权威单源；不要求添加完整算法、剂量或统一复查时限。",
+    "independence": "NHLBI/NLM属同一NIH组；NHS不同页属一组；ESC期刊/图示/更正属同一指南来源。独立编写不等于独立试验重复。",
+    "absent_claim_boundary": "不把原稿没有的处方算法、NSTEMI仅部分堵塞、统一复查或产后胎儿监测当作当前错误。"
+  },
+  "source_reads": [
+    {
+      "source_id": "mi-nhlbi-symptoms",
+      "retrieval_status": "page_opened",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/symptoms",
+      "independence_group": "US-NIH",
+      "region": "US",
+      "locator": "Symptoms98–113; When to call9-1-1 114–125",
+      "actually_read_scope": "轻/波动及特定人群症状；及时急救/交通；稳定心绞痛区别。",
+      "accessed_at": "2026-10-02",
+      "frozen_source_metadata_sha256": "32c83f98e06abcffd5352f0c23e076353ecfcb7020ce8e5618ee449a23e6a472"
+    },
+    {
+      "source_id": "mi-nlm-troponin",
+      "retrieval_status": "page_opened",
+      "url": "https://medlineplus.gov/lab-tests/troponin-test/",
+      "independence_group": "US-NIH",
+      "region": "US",
+      "locator": "What is a troponin test44–50; What results mean83–103; References113–127",
+      "actually_read_scope": "损伤标志；早期正常可能；心肌炎等原因及综合判读。",
+      "accessed_at": "2026-10-02",
+      "frozen_source_metadata_sha256": "10359c951c082b4bed2c3a2fba85dbc1521c21af6e1dc8f5f72bc828c2d78439"
+    },
+    {
+      "source_id": "mi-nhlbi-women",
+      "retrieval_status": "page_opened",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/women",
+      "independence_group": "US-NIH",
+      "region": "US",
+      "locator": "Symptoms107–119; Pregnancy120–126",
+      "actually_read_scope": "女性表现；孕期/分娩后；立即急救；孕期胎儿及药物安全。",
+      "accessed_at": "2026-10-02",
+      "frozen_source_metadata_sha256": "d61eefa2408e4f3b85448216bac86cf8f0ab04a75856e42ad9173c3497aa7f49"
+    },
+    {
+      "source_id": "mi-mayo-causes",
+      "retrieval_status": "page_opened",
+      "url": "https://www.mayoclinic.org/diseases-conditions/heart-attack/symptoms-causes/syc-20373106",
+      "independence_group": "US-MAYO",
+      "region": "US",
+      "locator": "Symptoms283–299; When to see doctor302–308; Causes322–334",
+      "actually_read_scope": "疑似立即当地急救；症状差异；交通；部分NSTEMI完全堵塞。",
+      "accessed_at": "2026-10-02",
+      "frozen_source_metadata_sha256": "a84db049c24b946ef3295fccc3f19c01f97984f71203db437ba53fc53b1d8a6d"
+    },
+    {
+      "source_id": "mi-nhlbi-diagnosis",
+      "retrieval_status": "page_opened",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/diagnosis",
+      "independence_group": "US-NIH",
+      "region": "US",
+      "locator": "Initial ECG98–101; Blood tests102–106",
+      "actually_read_scope": "病史和ECG；血检常重复以比较变化。",
+      "accessed_at": "2026-10-02",
+      "frozen_source_metadata_sha256": "dcaa95ebd85e9ccd29a07da659de3f75ba05d2346a95c84d31f14993aedbb218"
+    },
+    {
+      "source_id": "mi-nhs",
+      "retrieval_status": "page_opened",
+      "url": "https://www.nhs.uk/conditions/heart-attack/",
+      "independence_group": "UK-NHS",
+      "region": "GB",
+      "locator": "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60",
+      "actually_read_scope": "急救红旗；不驾驶；坐下休息；检查和造影可同期治疗。",
+      "accessed_at": "2026-10-02",
+      "frozen_source_metadata_sha256": "f2fc20110ddc3f50946197bc6822eec853bb6d8a5f269cccea134308875afa68"
+    },
+    {
+      "source_id": "mi-mayo-treatment",
+      "retrieval_status": "page_opened",
+      "url": "https://www.mayoclinic.org/diseases-conditions/heart-attack/diagnosis-treatment/drc-20373112",
+      "independence_group": "US-MAYO",
+      "region": "US",
+      "locator": "Diagnosis269–283",
+      "actually_read_scope": "症状病史；ECG电活动；蛋白缓慢泄漏；超声及造影。",
+      "accessed_at": "2026-10-02",
+      "frozen_source_metadata_sha256": "4ff64462121fc8083ebd8125abd3c14529bdc9b17cc84479eba4266f649a0104"
+    },
+    {
+      "source_id": "mi-nice-cg95",
+      "retrieval_status": "official_indexed_passages_only",
+      "url": "https://www.nice.org.uk/guidance/CG95/chapter/recommendations",
+      "independence_group": "UK-NICE",
+      "region": "GB",
+      "locator": "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7",
+      "actually_read_scope": "急性分流；条件化检测；损伤非单独确诊；危险鉴别。",
+      "accessed_at": "2026-10-02",
+      "frozen_source_metadata_sha256": "4ff4a96bc48bb6d9d6fc0f2830b3b3849fc8049c5395dc5da1bb34195326b43e"
+    },
+    {
+      "source_id": "mi-aha-bls-2025",
+      "retrieval_status": "page_opened",
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support",
+      "independence_group": "US-AHA",
+      "region": "US",
+      "locator": "Part7 §6.1 recommendation1;§6.2 recommendations1–3 and synopsis138–166",
+      "actually_read_scope": "成人公众无反应/无或异常呼吸；立即CPR及调度协助。",
+      "accessed_at": "2026-10-02",
+      "frozen_source_metadata_sha256": "cc05957bc5a7bbc68e3d77516b31cecb146b044c16fa2454113e4de105f37c28"
+    },
+    {
+      "source_id": "mi-sja-cpr",
+      "retrieval_status": "page_opened",
+      "url": "https://www.sja.org.uk/first-aid-advice/cpr/",
+      "independence_group": "UK-STJOHN",
+      "region": "GB",
+      "locator": "What is CPR131–135; What to do140–170",
+      "actually_read_scope": "成人无正常呼吸识别、立即CPR、免提及调度指导。",
+      "accessed_at": "2026-10-02",
+      "frozen_source_metadata_sha256": "68610a6ca673c3cf35294b3fae6f5169ce059431312c0571f44e9b4bf14c7b29"
+    },
+    {
+      "source_id": "mi-nhs-angina",
+      "retrieval_status": "page_opened",
+      "url": "https://www.nhs.uk/conditions/angina/",
+      "independence_group": "UK-NHS",
+      "region": "GB",
+      "locator": "Angina attacks28; Treatment29–37; Call99938–49; NHS11150–55",
+      "actually_read_scope": "已诊断心绞痛用药范围；危险表现急救；恶化/波动即时医疗联系。",
+      "accessed_at": "2026-10-02",
+      "frozen_source_metadata_sha256": "05611e95797799415229bd35a96280363a4e1720e654cbc34f65a3167cdd8304"
+    },
+    {
+      "source_id": "mi-mayo-angina",
+      "retrieval_status": "page_opened",
+      "url": "https://www.mayoclinic.org/diseases-conditions/angina/symptoms-causes/syc-20369373",
+      "independence_group": "US-MAYO",
+      "region": "US",
+      "locator": "Types277–284; Symptoms307–309; When to see doctor333–337",
+      "actually_read_scope": "稳定与不稳定；新发/恶化症状及时评估。页面可见日期2026-09-11。",
+      "accessed_at": "2026-10-02",
+      "frozen_source_metadata_sha256": "5c5453e6d234267d6aea8d6201658ff9fa063c2d84afe9b926e10de4e9c1648c"
+    },
+    {
+      "source_id": "mi-nhs-chest",
+      "retrieval_status": "page_opened",
+      "url": "https://www.nhs.uk/symptoms/chest-pain/",
+      "independence_group": "UK-NHS",
+      "region": "GB",
+      "locator": "Common causes29–47",
+      "actually_read_scope": "反流/拉伤线索与不自行诊断。",
+      "accessed_at": "2026-10-02",
+      "frozen_source_metadata_sha256": "e2b1e440ee8cb3cf59ffc89e32a719a2a93b0c43ae1bc5f053b9eace5ae019c3"
+    },
+    {
+      "source_id": "mi-mayo-chest",
+      "retrieval_status": "page_opened",
+      "url": "https://www.mayoclinic.org/diseases-conditions/chest-pain/symptoms-causes/syc-20370838",
+      "independence_group": "US-MAYO",
+      "region": "US",
+      "locator": "When to see doctor310–314; Heart causes352; Lung causes360–363",
+      "actually_read_scope": "新发/无法解释胸痛立即急救；夹层层间分离和肺栓塞。",
+      "accessed_at": "2026-10-02",
+      "frozen_source_metadata_sha256": "97e407d1f6b82ccf6bee93b4d67cf9516fd73186e7f3de49ad6e29aa255cec44"
+    },
+    {
+      "source_id": "mi-esc-pregnancy-2025",
+      "retrieval_status": "official_indexed_passages_only",
+      "url": "https://academic.oup.com/eurheartj/article/46/43/4462/8234487",
+      "independence_group": "EU-ESC-PREGNANCY-2025",
+      "region": "EU",
+      "locator": "§12.1/Figure11;§12.2.1.1–2;§12.2.4;§4.3.5–4.3.5.3;§5.1",
+      "actually_read_scope": "孕期/产后ACS及评估；胎儿考虑；必要检查不得拒绝；药物变化。",
+      "accessed_at": "2026-10-02",
+      "frozen_source_metadata_sha256": "8fe1191de048f42498b1e4445721f20ed09c8e103775e10a7e64fd63f14ff750"
+    },
+    {
+      "source_id": "additional-esc-ehaf1011-correction",
+      "retrieval_status": "official_indexed_passages_only",
+      "url": "https://academic.oup.com/eurheartj/article/47/7/812/8400706",
+      "independence_group": "EU-ESC-PREGNANCY-2025",
+      "region": "EU",
+      "locator": "Correction ehaf1011 displayed items1–6",
+      "actually_read_scope": "六项可见更正：LA术语、4.3.5投照方向、产科药单位、LA直径、AR定义、Figure15剂量范围；当前四节未采用这些细节。",
+      "accessed_at": "2026-10-02"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "red_flags-0",
+      "decision": "verified_key_action_two_writing_groups",
+      "review_category": "critical_action",
+      "assessment": "疑似立即急救获两组直接支持；当地号码范围正确。",
+      "remaining_precision_limit": null,
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "7a0e48a9856d9f4e519ff08d593b0e161ebf507a84568196f3fe5e4dd444041d",
+      "recorded_kind": "action",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-symptoms",
+          "locator": "Symptoms98–113; When to call9-1-1 114–125",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-causes",
+          "locator": "Symptoms283–299; When to see doctor302–308; Causes322–334",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-1",
+      "decision": "verified_key_action_with_clause_limits",
+      "review_category": "critical_action",
+      "assessment": "组合症状和急救吻合；晕厥Mayo明确，NHS无反应急救补強。轻/波动没有成为等待许可。",
+      "remaining_precision_limit": null,
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "2dc4fc4908912be8ca192274cdb2634843bce2e516e8522b80247a4a6e79c543",
+      "recorded_kind": "action",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-symptoms",
+          "locator": "Symptoms98–113; When to call9-1-1 114–125",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-causes",
+          "locator": "Symptoms283–299; When to see doctor302–308; Causes322–334",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nhs",
+          "locator": "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": false
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-2a",
+      "decision": "verified_key_action_minor_context_single_source",
+      "review_category": "critical_transport_minor_rest",
+      "assessment": "不自行驾驶有独立支持。坐下休息NHS明确、Mayo该段未写坐姿；低风险等待安排不新增双源门槛。",
+      "remaining_precision_limit": "Seated rest is directly NHS-supported only; no body correction required.",
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "d0314cc11a604ac4f861dfda2f635a7a5da45151bf98b594c713a90b820ef6d8",
+      "recorded_kind": "action",
+      "source_checks": [
+        {
+          "source_id": "mi-nhs",
+          "locator": "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-causes",
+          "locator": "Symptoms283–299; When to see doctor302–308; Causes322–334",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nhlbi-symptoms",
+          "locator": "Symptoms98–113; When to call9-1-1 114–125",
+          "writing_group": "US-NIH",
+          "already_claim_bound": false
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-2b",
+      "decision": "verified_key_action_two_writing_groups",
+      "review_category": "critical_action",
+      "assessment": "公众成人识别及CPR/调度指导吻合；不存在摸脉搏或必须等待指令的正文门槛。",
+      "remaining_precision_limit": null,
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "994f7f0e01c6d6dd70831e64e5ee2dd322a07806e6147e7e8612d45ff5452547",
+      "recorded_kind": "action",
+      "source_checks": [
+        {
+          "source_id": "mi-aha-bls-2025",
+          "locator": "Part7 §6.1 recommendation1;§6.2 recommendations1–3 and synopsis138–166",
+          "writing_group": "US-AHA",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-sja-cpr",
+          "locator": "What is CPR131–135; What to do140–170",
+          "writing_group": "UK-STJOHN",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-0",
+      "decision": "supported_explanatory_synthesis",
+      "review_category": "ordinary_explanation",
+      "assessment": "症状经过、ECG、血检组合解释正确。",
+      "remaining_precision_limit": null,
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "b31b90abb4df589caa3da56f3615d0c060ebbb6145564a302f4278f808979b97",
+      "recorded_kind": "explanation",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-diagnosis",
+          "locator": "Initial ECG98–101; Blood tests102–106",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-treatment",
+          "locator": "Diagnosis269–283",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-1a",
+      "decision": "correct_direct_single_source",
+      "review_category": "ordinary_explanation",
+      "assessment": "电活动Mayo直接，缺血异常NICE专业ECG条文补强；没有为普通原理设双源门槛。",
+      "remaining_precision_limit": "Frozen claim binds Mayo only; NICE is supplementary clinical ECG context.",
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "ec20275524aa760c2cb0a5015a0c568713012b63abf31de94776ce72bc21830a",
+      "recorded_kind": "explanation",
+      "source_checks": [
+        {
+          "source_id": "mi-mayo-treatment",
+          "locator": "Diagnosis269–283",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nice-cg95",
+          "locator": "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7",
+          "writing_group": "UK-NICE",
+          "already_claim_bound": false
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-1b",
+      "decision": "correct_direct_with_partial_second",
+      "review_category": "ordinary_explanation",
+      "assessment": "NLM明确命名troponin；Mayo原段是蛋白/心脏标志物，不能称明确命名的第二段。",
+      "remaining_precision_limit": "One direct named-troponin explanation; independent cardiac-marker paragraph partly supportive.",
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "ba91eb5668391b838892d3d33798de1298983d1ed0d60a0c95f7e98bb1d4c56e",
+      "recorded_kind": "explanation",
+      "source_checks": [
+        {
+          "source_id": "mi-nlm-troponin",
+          "locator": "What is a troponin test44–50; What results mean83–103; References113–127",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-treatment",
+          "locator": "Diagnosis269–283",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-2a",
+      "decision": "correct_direct_single_source",
+      "review_category": "diagnostic_limit_explanation",
+      "assessment": "NLM明确早期结果，Mayo缓慢泄漏是机制支持。没有一次阴性即可居家排除的规则。",
+      "remaining_precision_limit": "Exact early-normal-result phrase has NLM direct support; Mayo mechanism is indirect.",
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "7164141b4446a487d8c37afbab6671ed22ca38b1a57c452d3ae7579cdec9771b",
+      "recorded_kind": "explanation",
+      "source_checks": [
+        {
+          "source_id": "mi-nlm-troponin",
+          "locator": "What is a troponin test44–50; What results mean83–103; References113–127",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-treatment",
+          "locator": "Diagnosis269–283",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": false
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-2b",
+      "decision": "verified_clinical_principle_two_writing_groups",
+      "review_category": "clinical_repeat_testing_decision",
+      "assessment": "复测比较与条件化检测形成有界综合；无全员复测/固定时限。检测、症状起点和风险细节来自NICE，不声称NHLBI逐字支持整句。",
+      "remaining_precision_limit": null,
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "198544e12be6e5ecdec98f195d8acc5f32c69043c982d731ef7e77006bc621e6",
+      "recorded_kind": "action",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-diagnosis",
+          "locator": "Initial ECG98–101; Blood tests102–106",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nice-cg95",
+          "locator": "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7",
+          "writing_group": "UK-NICE",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-3",
+      "decision": "verified_diagnostic_limit_two_writing_groups",
+      "review_category": "important_diagnostic_limit",
+      "assessment": "损伤不单独证明心梗及其他原因鉴别有独立支持，补足MI02真实解释缺口。",
+      "remaining_precision_limit": null,
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "55a1b47013a84cee10c8edc9ec6bf8070c4bf26e96c8c132e1f8e2edf3dcc69a",
+      "recorded_kind": "explanation",
+      "source_checks": [
+        {
+          "source_id": "mi-nlm-troponin",
+          "locator": "What is a troponin test44–50; What results mean83–103; References113–127",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nice-cg95",
+          "locator": "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7",
+          "writing_group": "UK-NICE",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-4a",
+      "decision": "supported_explanatory_synthesis",
+      "review_category": "ordinary_explanation",
+      "assessment": "受损影像/血液通过心脏和瓣膜支持功能解释。",
+      "remaining_precision_limit": null,
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "d0760ca9e8330319ce7e4958809481619daafd8f3fb4558a6bc37828b3230a01",
+      "recorded_kind": "explanation",
+      "source_checks": [
+        {
+          "source_id": "mi-nhs",
+          "locator": "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-treatment",
+          "locator": "Diagnosis269–283",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-4b",
+      "decision": "correct_direct_with_partial_second",
+      "review_category": "ordinary_procedure_explanation",
+      "assessment": "定位正确；同期治疗NHS明确，Mayo这段仅成像；不据链接数量伪称整句双源。",
+      "remaining_precision_limit": "Same-session intervention directly NHS-supported only in frozen bindings; no self-treatment eligibility added.",
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "db6d48f2b6f8869362257ab581486284bec1a578b47d0397bbc29627191d698c",
+      "recorded_kind": "explanation",
+      "source_checks": [
+        {
+          "source_id": "mi-nhs",
+          "locator": "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-treatment",
+          "locator": "Diagnosis269–283",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-5",
+      "decision": "correct_direct_single_source_preserve",
+      "review_category": "classification_severity_explanation",
+      "assessment": "Mayo明确部分NSTEMI完全堵塞；当前严重堵塞/非轻病正确，不能改回只部分堵塞。",
+      "remaining_precision_limit": "Exact severe/complete-obstruction detail has one directly bound writing source; preserve truth and state scope.",
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "27f0dcb9e2a5afc941d25fe890e9911f11feb3baceb417e52982170074af366b",
+      "recorded_kind": "explanation",
+      "source_checks": [
+        {
+          "source_id": "mi-mayo-causes",
+          "locator": "Symptoms283–299; When to see doctor302–308; Causes322–334",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-0",
+      "decision": "correct_direct_single_source",
+      "review_category": "ordinary_explanation",
+      "assessment": "症状与具体病因关系正确；无需双源硬门槛。",
+      "remaining_precision_limit": null,
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "cbe35e621bfdad5f98caf4017ea373d0a319c04bf6f8a2fe55bef06d8c78f5dd",
+      "recorded_kind": "explanation",
+      "source_checks": [
+        {
+          "source_id": "mi-nhs-chest",
+          "locator": "Common causes29–47",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-1",
+      "decision": "supported_explanation_same_group_and_context",
+      "review_category": "ordinary_explanation",
+      "assessment": "NHS两页一组；模式和心梗似消化不良有支持。Mayo烧心心/胃重叠补强，没有家庭排除试验。",
+      "remaining_precision_limit": "Meal/strain details directly NHS-supported; two NHS pages are one writing group.",
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "98dfebcfa40c18739ef3ebc1b3e9c11a6953faf4865823f4aa57dc812f7148b0",
+      "recorded_kind": "explanation",
+      "source_checks": [
+        {
+          "source_id": "mi-nhs-chest",
+          "locator": "Common causes29–47",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nhs",
+          "locator": "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-chest",
+          "locator": "When to see doctor310–314; Heart causes352; Lung causes360–363",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": false
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-2a",
+      "decision": "supported_explanation_two_writing_groups",
+      "review_category": "ordinary_angina_explanation",
+      "assessment": "稳定模式正确；NHS具体处置限已诊断患者，未搬入剂量或等待时限。",
+      "remaining_precision_limit": null,
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "c871324b36c0540e0b19e5ced93445a0c637981d3426852dc365ce4aa16cce57",
+      "recorded_kind": "explanation",
+      "source_checks": [
+        {
+          "source_id": "mi-mayo-angina",
+          "locator": "Types277–284; Symptoms307–309; When to see doctor333–337",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nhs-angina",
+          "locator": "Angina attacks28; Treatment29–37; Call99938–49; NHS11150–55",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nhlbi-symptoms",
+          "locator": "Symptoms98–113; When to call9-1-1 114–125",
+          "writing_group": "US-NIH",
+          "already_claim_bound": false
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-2b",
+      "decision": "verified_key_action_two_writing_groups",
+      "review_category": "critical_triage_action",
+      "assessment": "新发/恶化/静息症状即时联系有支持；相邻分句明确危险表现或疑似心梗急救，未变成等复诊。",
+      "remaining_precision_limit": null,
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "635049171b944ce72afdcd3091eb82f53a8aec416c5fbeae7ce7125a90a73a7e",
+      "recorded_kind": "action",
+      "source_checks": [
+        {
+          "source_id": "mi-mayo-angina",
+          "locator": "Types277–284; Symptoms307–309; When to see doctor333–337",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nhs-angina",
+          "locator": "Angina attacks28; Treatment29–37; Call99938–49; NHS11150–55",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nice-cg95",
+          "locator": "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7",
+          "writing_group": "UK-NICE",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-2c",
+      "decision": "verified_key_action_two_writing_groups",
+      "review_category": "critical_triage_action",
+      "assessment": "危险表现急救获独立支持；Mayo公众说明补强疑似心梗分句。",
+      "remaining_precision_limit": null,
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "02e6b50f4a40dc57c22424b63225c4156b7a5d8de3415a1307c48dc2730831cb",
+      "recorded_kind": "action",
+      "source_checks": [
+        {
+          "source_id": "mi-nhs-angina",
+          "locator": "Angina attacks28; Treatment29–37; Call99938–49; NHS11150–55",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nice-cg95",
+          "locator": "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7",
+          "writing_group": "UK-NICE",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-angina",
+          "locator": "Types277–284; Symptoms307–309; When to see doctor333–337",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": false
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-3a",
+      "decision": "verified_differential_anatomy_single_source",
+      "review_category": "important_differential_ordinary_anatomy",
+      "assessment": "危险替代原因专业鉴别有两组；解剖说明Mayo单源。补完整性，未造居家诊断方法。",
+      "remaining_precision_limit": "Anatomy directly Mayo-supported; ordinary explanation does not independently block.",
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "8832bcdc72f8f204f71ab5e3f2c7dd3b82dccbcf6532466917ec90af5b1ba6dd",
+      "recorded_kind": "explanation",
+      "source_checks": [
+        {
+          "source_id": "mi-mayo-chest",
+          "locator": "When to see doctor310–314; Heart causes352; Lung causes360–363",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nice-cg95",
+          "locator": "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7",
+          "writing_group": "UK-NICE",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-3b",
+      "decision": "correct_direct_single_source",
+      "review_category": "ordinary_explanation",
+      "assessment": "可引起胸痛有直接支持；无风险数值或家庭决策。",
+      "remaining_precision_limit": null,
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "f1eac0b0eadbe02049de2ce1eda569d66ac5afb792a59b20c2a0c5eacd2c15fe",
+      "recorded_kind": "explanation",
+      "source_checks": [
+        {
+          "source_id": "mi-mayo-chest",
+          "locator": "When to see doctor310–314; Heart causes352; Lung causes360–363",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-3c",
+      "decision": "verified_key_action_two_writing_groups",
+      "review_category": "critical_triage_action",
+      "assessment": "沿上文危险信号急诊区分原因有支持；不声称每个病的全部表现都双源。",
+      "remaining_precision_limit": null,
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "519e1385163367c2c21d15504dc2388d6fe88e6c6c0aa18fbca5a0e0bb32cce2",
+      "recorded_kind": "action",
+      "source_checks": [
+        {
+          "source_id": "mi-nice-cg95",
+          "locator": "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7",
+          "writing_group": "UK-NICE",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nhs",
+          "locator": "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-chest",
+          "locator": "When to see doctor310–314; Heart causes352; Lung causes360–363",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": false
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-0",
+      "decision": "supported_explanatory_synthesis",
+      "review_category": "ordinary_explanation",
+      "assessment": "人群变化总述正确；没有新增统一算法。",
+      "remaining_precision_limit": null,
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "c327ee0ccb84d86864f2f13cc5d4eff6fbd0c19332d471a7b1616534505e4533",
+      "recorded_kind": "explanation",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-women",
+          "locator": "Symptoms107–119; Pregnancy120–126",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-causes",
+          "locator": "Symptoms283–299; When to see doctor302–308; Causes322–334",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-esc-pregnancy-2025",
+          "locator": "§12.1/Figure11;§12.2.1.1–2;§12.2.4;§4.3.5–4.3.5.3;§5.1",
+          "writing_group": "EU-ESC-PREGNANCY-2025",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-1",
+      "decision": "verified_key_action_population_detail_limits",
+      "review_category": "important_population_risk_and_action",
+      "assessment": "不等剧痛独立支持；NHLBI详细支持女性与老人/糖尿病轻症，Mayo说明这些群体可不明显或短暂疼痛。原正确段未改。",
+      "remaining_precision_limit": "Older/diabetes silent or very mild symptoms are explicit in NIH; Mayo varied/brief presentation is partial, not identical detail.",
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "b08363362c483b0f87d76f889f83dc15789d89b84829773d6c01f9e879a7c4fa",
+      "recorded_kind": "action",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-symptoms",
+          "locator": "Symptoms98–113; When to call9-1-1 114–125",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nhlbi-women",
+          "locator": "Symptoms107–119; Pregnancy120–126",
+          "writing_group": "US-NIH",
+          "already_claim_bound": false
+        },
+        {
+          "source_id": "mi-mayo-causes",
+          "locator": "Symptoms283–299; When to see doctor302–308; Causes322–334",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-2a",
+      "decision": "verified_population_risk_two_writing_groups",
+      "review_category": "important_population_risk",
+      "assessment": "孕期/产后发生均支持；未把图示6个月当公众风险截止期。",
+      "remaining_precision_limit": null,
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "32d279b37e6950b9fb7fc3a379a04f1e5d2f88c5ec72258ad6140784420fc389",
+      "recorded_kind": "explanation",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-women",
+          "locator": "Symptoms107–119; Pregnancy120–126",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-esc-pregnancy-2025",
+          "locator": "§12.1/Figure11;§12.2.1.1–2;§12.2.4;§4.3.5–4.3.5.3;§5.1",
+          "writing_group": "EU-ESC-PREGNANCY-2025",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-2b",
+      "decision": "correct_key_action_direct_single_source",
+      "review_category": "critical_population_specific_public_action",
+      "assessment": "NHLBI公众立即急救明确，ESC专业评估不能充当第二公众呼叫原句。孕周/分娩时间告知仅情境整理。",
+      "remaining_precision_limit": "Exact population-specific public EMS action still has one directly bound source. Correct advice; corroborate or retain the limited-support label.",
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "c05bfa29916bc25695fffa140ac2fd6e6c2921233e8e194021cf85cb7ddec68a",
+      "recorded_kind": "action",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-women",
+          "locator": "Symptoms107–119; Pregnancy120–126",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-esc-pregnancy-2025",
+          "locator": "§12.1/Figure11;§12.2.1.1–2;§12.2.4;§4.3.5–4.3.5.3;§5.1",
+          "writing_group": "EU-ESC-PREGNANCY-2025",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-2c",
+      "decision": "verified_population_safety_two_writing_groups_limited_access",
+      "review_category": "important_population_safety",
+      "assessment": "中英都只在孕期谈胎儿，已消除产后混用；安全考虑两组支持，ESC只已读索引。",
+      "remaining_precision_limit": null,
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "c42a4801cba12a6cffab4558a8bda6fa5600c22c46dbe1b1beb45b4b65681499",
+      "recorded_kind": "risk",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-women",
+          "locator": "Symptoms107–119; Pregnancy120–126",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-esc-pregnancy-2025",
+          "locator": "§12.1/Figure11;§12.2.1.1–2;§12.2.4;§4.3.5–4.3.5.3;§5.1",
+          "writing_group": "EU-ESC-PREGNANCY-2025",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-2d",
+      "decision": "verified_no_delay_principle_two_writing_groups",
+      "review_category": "critical_no_delay_principle",
+      "assessment": "立即求救与专业必要检查不得拒绝/急性评估支持不推迟原则；无具体药、剂量或阈值。",
+      "remaining_precision_limit": null,
+      "medical_error_found": false,
+      "body_revision_required": false,
+      "bilingual_assessment": "CN/EN实质行动、人群、紧急程度对应，无新增数值阈值。",
+      "frozen_claim_text_sha256": "08a02db1bfb70e25d4af813a4b8bf4d9e91047ba7bf20190944713333db4a0f5",
+      "recorded_kind": "action",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-women",
+          "locator": "Symptoms107–119; Pregnancy120–126",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-esc-pregnancy-2025",
+          "locator": "§12.1/Figure11;§12.2.1.1–2;§12.2.4;§4.3.5–4.3.5.3;§5.1",
+          "writing_group": "EU-ESC-PREGNANCY-2025",
+          "already_claim_bound": true
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "MI-DX-R01",
+      "prior_finding": "MI02",
+      "decision": "resolved_core_gap",
+      "claims": [
+        "diagnosis-2b",
+        "diagnosis-3"
+      ],
+      "detail": "条件复测与损伤非病因已补足；NSTEMI事实保持正确。"
+    },
+    {
+      "id": "MI-DX-R02",
+      "prior_finding": "MI03",
+      "decision": "resolved_completeness_gap",
+      "claims": [
+        "differentials-2b",
+        "differentials-2c",
+        "differentials-3a",
+        "differentials-3c"
+      ],
+      "detail": "危险鉴别与急救相连；无需扩成完整胸痛算法。"
+    },
+    {
+      "id": "MI-DX-R03",
+      "prior_finding": "MI06",
+      "decision": "resolved_population_ambiguity",
+      "claims": [
+        "special_populations-2a",
+        "special_populations-2c"
+      ],
+      "detail": "胎儿条件明确限孕期。"
+    },
+    {
+      "id": "MI-DX-R04",
+      "decision": "precise_support_gap_not_error",
+      "claims": [
+        "special_populations-2b"
+      ],
+      "minimum_next_step": "补独立编写的同等公众急救支持，或诚实保留精确支持限制；不降低正确的急救行动。"
+    },
+    {
+      "id": "MI-DX-R05",
+      "decision": "new_correction_index_evidence",
+      "claims": [
+        "special_populations-2c",
+        "special_populations-2d"
+      ],
+      "detail": "ehaf1011本次官方索引六项已读；Published2025-12-22，issue2026-02-14。直接HTML仍失败。当前四节未采用更正的技术或剂量细节。",
+      "minimum_next_step": "作者可更新源retrieval_scope/未决说明并重绑元数据哈希；不以已显示更正要求修改正确概述。"
+    }
+  ],
+  "bilingual_assessment": {
+    "claim_count": 27,
+    "severity_or_action_mismatch_found": false,
+    "numeric_thresholds_in_scope": [],
+    "notes": [
+      "孕期和产后对象边界正确。",
+      "当地急救与英国NHS路径边界正确。",
+      "NLM示例小时与NICE专业分流时间未变成家庭等待标准。"
+    ]
+  },
+  "remaining_required_evidence": [
+    "special_populations-2b精确孕期/产后公众呼叫急救尚缺第二直接独立写作支持。"
+  ],
+  "access_summary": {
+    "relevant_page_reads": 13,
+    "official_indexed_source_reads": 3,
+    "direct_failures": [
+      "NICE CG95 recommendations HTML: Internal Error",
+      "ESC2025 HTML: Internal Error",
+      "ESC ehaf1011 correction HTML: Internal Error"
+    ],
+    "additional_final_index_read": "https://www.nice.org.uk/guidance/cg95/resources/recentonset-chest-pain-of-suspected-cardiac-origin-assessment-and-diagnosis-pdf-975751034821",
+    "unread_scope": [
+      "完整ESC HTML、Figure11像素",
+      "完整更正HTML",
+      "未显示的原材料段落"
+    ]
+  },
+  "decision_counts": {
+    "claims_reviewed": 27,
+    "medical_errors_found": 0,
+    "body_revisions_required": 0,
+    "precise_key_action_single_direct_support_gaps": 1,
+    "whole_article_approval": false
+  },
+  "acceptance_boundary": [
+    "独立编辑核读，非临床签审。",
+    "作者/source/editorial状态不变，冻结哈希为边界。",
+    "无生产数据/Git/部署写入。",
+    "未复制原文全文、图片或指南表格。"
+  ],
+  "memory_used": {
+    "path": "C:/Users/Damian/.codex/memories/MEMORY.md",
+    "lines": "322-355",
+    "use": "工作区边界与优先可访问权威原材料；所有医学判断本次实际重读。",
+    "rollout_id": "01a0ed0d-58cb-7db1-9d79-1e31b8846081"
+  },
+  "inputs": [
+    {
+      "path": "reports/batch-01-mi-revision-notes.md",
+      "file_sha256": "e1ef579fa0cc456619a1b5ba235687db106ef592f3bbc9875d4736bda23e669e"
+    },
+    {
+      "path": "reports/batch-01-mi-independent.json",
+      "file_sha256": "e9e778e524c749090f84b889b4b8afdcd9c3dfc2076263c54d4d3d5d2fb11029"
+    },
+    {
+      "path": "reports/batch-01-mi-review-challenge.json",
+      "file_sha256": "b8093845053e476df6f0e96846bc9c96875ec20b69def6668b5aff5253bbe5e1"
+    }
+  ],
+  "descriptive_limits_not_automatic_acceptance_blockers": [
+    "red_flags-2a",
+    "diagnosis-1a",
+    "diagnosis-1b",
+    "diagnosis-2a",
+    "diagnosis-4b",
+    "diagnosis-5",
+    "differentials-1",
+    "differentials-3a",
+    "special_populations-1"
+  ],
+  "verification": {
+    "frozen_hash_matches": true,
+    "scoped_claim_inventory_complete": true,
+    "scoped_content_hashes_match": true,
+    "author_pending_and_medical_false_preserved": true
+  }
+}

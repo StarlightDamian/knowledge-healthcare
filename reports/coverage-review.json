@@ -1,5 +1,5 @@
 {
-  "reviewed_at": "2026-09-30",
+  "reviewed_at": "2026-10-02",
   "decision": "95_percent_target_not_passed",
   "measured": 0.00015203344735841885,
   "target": 0.95,
@@ -7,18 +7,18 @@
   "release": "2026-01",
   "denominator": 13155,
   "snapshot_status": "frozen_verified_official_bytes",
-  "mapping_status": "2_confirmed_47_pending",
+  "mapping_status": "48_pending_2_confirmed_2_partial",
   "counts": {
-    "existing_topics": 74,
-    "condition_topics": 69,
+    "existing_topics": 75,
+    "condition_topics": 70,
     "symptom_topics": 5,
-    "title_only_backlog": 196,
+    "title_only_backlog": 195,
     "topics_with_coding": 0,
     "confirmed_category_mappings": 2,
     "clinically_reviewed_topics": 0,
-    "verified_sections": 28
+    "verified_sections": 42
   },
-  "scope": "当前74篇正文、196标题与56地图单元；仅已完成语义映射及逐项证据核验的病症进入分子。",
+  "scope": "当前75篇正文、195标题与56地图单元；正文、证据核验与ICD类别完整覆盖分别统计。",
   "method": "逐项核对现有主题身份，列出缺少独立正文的已知病种；mentioned_in_topics 仅按所列术语检索中英 sections.text 的结果，不表示对应主题完整覆盖该病种。",
   "known_urgent_gaps": [
     {
@@ -27,10 +27,10 @@
         "en": "Myocardial infarction"
       },
       "priority": "P1",
-      "dedicated_topic_ids": [],
-      "backlog_ids": [
-        "planned-023"
+      "dedicated_topic_ids": [
+        "myocardial-infarction"
       ],
+      "backlog_ids": [],
       "mentioned_in_topics": [
         {
           "id": "chest-pain",
@@ -76,7 +76,7 @@
         "myocardial infarction",
         "heart attack"
       ],
-      "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
+      "conclusion": "独立正文90项双语主张已完成编辑交叉核验；BA41叶类别范围未完整确认，不增加覆盖分子。"
     },
     {
       "names": {
@@ -287,7 +287,7 @@
       "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
     }
   ],
-  "remaining_list_status": "全量剩余13,153类别已保存于reports/icd-remaining-gaps.json.gz；九项已知急危重缺口仍未发布。",
+  "remaining_list_status": "13,153个未完整类别保存于reports/icd-remaining-gaps.json.gz；急危重原始清单已有睾丸扭转及心肌梗死正文，后者类别范围尚未完整确认。",
   "roadmap": "docs/coverage-audit-and-roadmap.md",
   "sources": [
     "https://icd.who.int/docs/icd-api/SupportedClassifications/",

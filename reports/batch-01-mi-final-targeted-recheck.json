@@ -1,0 +1,1343 @@
+{
+  "schema_version": 1,
+  "review_id": "batch-01-mi-final-targeted-recheck",
+  "reviewer": "/root/mi_medicine_finish",
+  "reviewed_at": "2026-10-02",
+  "independent_of_revision_author": true,
+  "medical_reviewed": false,
+  "target": {
+    "id": "myocardial-infarction",
+    "path": "drafts/batch-01/emergency/myocardial-infarction.json",
+    "file_sha256": "9bc66cc156aaf47ccaa3a8547a27412fbf01f6f0b23d7ed7acd2035c724bd0f5",
+    "canonical_sha256": "d0d23d652aebfe5eeac53f151427284eef6c015931b7b9dec390a90583e09a93",
+    "content_sha256": "47d265a0aff6a1d50bd6fb20ddacaecac2de2d8fa9f0258ec6ece113320b1b6d",
+    "editorial_ledger_path": "drafts/batch-01/emergency-editorial.json",
+    "editorial_ledger_file_sha256": "35022026e77d6fac94f3e264b6c1a1866e7ea3a6a806e1234f593e0a98cbd917",
+    "target_editorial_ledger_sha256": "c177ff39d579af3b2d8227eb0a46d2127a1744e6de876caa37da3214d6517945",
+    "sources_path": "drafts/batch-01/emergency-sources.json",
+    "source_catalog_file_sha256": "9cc1f5af9c624f5631fc7116b12000217f60d0b09c4dd23bad2fb4b60f18b031",
+    "target_source_metadata_sha256": "66fc2a7116e27c26be1cdd5afeaa4a1b03b2bd641defa7c8b16a2f2f315fd5c8"
+  },
+  "scope": {
+    "targeted_changed_claims": [
+      "daily_care-1b",
+      "prognosis_followup-1b",
+      "prognosis_followup-1c",
+      "complications-2",
+      "diet-2b"
+    ],
+    "unchanged_claims_inherited": 85,
+    "total_claim_inventory": 90,
+    "medicine_binding_updates_checked": 24,
+    "medicine_source_additions_checked": 6,
+    "shared_files_modified": false,
+    "production_or_git_actions": false,
+    "additional_metadata_classification_checked": "care-3c kind only; no90claim medical rereview"
+  },
+  "verdict": "accepted_subject_to_exact_nonclinical_patches_and_hash_rebinding",
+  "article_release_decision": "After the enumerated exact patches and mechanical hash/source-binding verification, this targeted report plus the three frozen reports and maternal followup support editorial cross-verification release. They do not confer clinical sign-off or completed ICD coverage.",
+  "summary": "Four changed claims are accepted as written. daily_care-1b is medically supported and needs the precise Chinese OR connector shown below. Maternal evidence is correctly added but two old limitations must be removed from assessment metadata. Two unused historical CUH supporting sources should be removed from current bindings instead of being falsely marked reread. No further substantive medical-text change or broad source re-review is requested.",
+  "claim_results": [
+    {
+      "decision": "accept_after_exact_bilingual_connector_patch",
+      "assessment": "CUH distinguishes normal deeper/faster exercise breathing from new/recurrent breathlessness and uncomfortable breathing. Stopping and contacting the team for chest pain or new OR uncomfortable breathlessness is supported; the following unchanged claim separately escalates suspected infarction or severe breathing difficulty to emergency services. The Chinese comma can read as an AND; use 或 to match the already correct English OR.",
+      "clinical_change_required": false,
+      "bilingual_precision_patch_required": true,
+      "claim_id": "daily_care-1b",
+      "before_sha256": "d65f78e66939f99c84337e5ba8f8ac753617bf640fc71122248781f94dd1d13e",
+      "reviewed_text_sha256": "7bd373f7d54fc837fa3f897f7f5269c14495cd586964d7f9b36dc53707109e5e",
+      "reviewed_text": {
+        "zh-CN": "活动时出现胸痛，或新出现、令人不适的气短，应停止活动并联系医疗团队；",
+        "en": "Stop activity and contact your care team for chest pain or new or uncomfortable breathlessness;"
+      },
+      "source_checks": [
+        {
+          "source_id": "mi-cuh-rehab-exercise",
+          "locator": "Exercise safety298–310; normal exertion327",
+          "source_metadata_sha256": "882af95fe582322e30ca0ed31476cef18b7db16d49c90c0e1a65d599891f5575"
+        },
+        {
+          "source_id": "mi-adam-activity",
+          "locator": "Household activities94; When to call97–113 (inherited context review, not reopened here)",
+          "source_metadata_sha256": "b1ae89d871ae5da80a34d9e3349142a6daf5b1fcced66479c92a335423e8e403"
+        }
+      ]
+    },
+    {
+      "decision": "accepted",
+      "assessment": "This change is punctuation only. NICE relates ventricular-function assessment to post-MI treatment choices; Mayo describes pre-rehabilitation testing of ability, limitations and complication risk to tailor recovery activity. No repeat-test timetable, ejection-fraction threshold or medication dose is introduced.",
+      "clinical_change_required": false,
+      "claim_id": "prognosis_followup-1b",
+      "before_sha256": "84e3c09666f50a8abb68c0b6c785a4f4f0d7a2e101a99cffc656379c889295ac",
+      "reviewed_text_sha256": "5a95e9eea5c5557770220a65221b1ac2de535f23d47dd96bc4c319a58ea34366",
+      "reviewed_text": {
+        "zh-CN": "心功能检查结果也帮助医生选择药物和安排恢复活动。",
+        "en": "Heart-function results also help guide medicines and recovery activity. "
+      },
+      "source_checks": [
+        {
+          "source_id": "mi-nice-ng185",
+          "locator": "Final1.4.29–33; official indexed recommendations",
+          "source_metadata_sha256": "b44b926f31c7caa427725440d7e947d7fee8eb3cda947a40ad271b6ffafbaeba"
+        },
+        {
+          "source_id": "mi-mayo-rehab",
+          "locator": "How you prepare315–317; tailored exercise/risk assessment310–312",
+          "source_metadata_sha256": "d73d009ca618d74c46d5d5d24627ba32d9d89078b6907e8e0294aa191c6536b1"
+        }
+      ]
+    },
+    {
+      "decision": "accepted",
+      "assessment": "NICE1.4.2 directly calls for a plan supplied to the person and GP, including drug titration and blood-pressure/renal monitoring.1.7.1–2 require investigation results, outstanding titration, future plans and a patient copy at discharge. This is care-coordination information with a direct authoritative recommendation; a second source is not mechanically required. The sentence does not mandate repeated heart-function testing or a universal follow-up interval.",
+      "clinical_change_required": false,
+      "claim_id": "prognosis_followup-1c",
+      "before_sha256": "38a2d9ee529a0db26a5dccd8fdf6dfc641f302b9e1b06017e85e635fd630dd2b",
+      "reviewed_text_sha256": "34256121228acad36db5cd1691c7551dea936e4a482f70ebbd941328b09db0f6",
+      "reviewed_text": {
+        "zh-CN": "出院时确认后续用药调整、血压和肾功能监测安排，并保留给自己和接诊医生的治疗计划。",
+        "en": "Before discharge, confirm plans for medicine adjustments, blood-pressure and kidney-function monitoring, and keep the management plan shared with you and your usual clinician."
+      },
+      "source_checks": [
+        {
+          "source_id": "mi-nice-ng185",
+          "locator": "Final1.4.2–3 and1.7.1–2; official indexed HTML/PDF passages",
+          "source_metadata_sha256": "b44b926f31c7caa427725440d7e947d7fee8eb3cda947a40ad271b6ffafbaeba"
+        }
+      ]
+    },
+    {
+      "decision": "accepted",
+      "assessment": "Mayo explicitly links post-infarction electrical disturbances to dangerous arrhythmias and cardiac arrest; NHS requires immediate emergency contact for unresponsiveness after collapse or severe breathing difficulty. The new combined collapse-with-unresponsiveness condition avoids treating every fully recovered faint as the same event. Both languages preserve the same OR emergency triggers.",
+      "clinical_change_required": false,
+      "claim_id": "complications-2",
+      "before_sha256": "3fbb82e0a9b3e79b3d117c482b4cccdf229c09334907b1a5156ffc6c3d089009",
+      "reviewed_text_sha256": "9c642d16b0fb279206bed71cf7497e64e39382eafbd512cdf60cde2ed7d88ef4",
+      "reviewed_text": {
+        "zh-CN": "心律失常是节律异常，有些能造成心脏骤停。突然倒地且失去反应，或严重呼吸困难，都需要立即急救。",
+        "en": "Arrhythmias are abnormal rhythms, some of which can cause cardiac arrest. Sudden collapse with loss of response, or severe breathing difficulty, requires immediate emergency care."
+      },
+      "source_checks": [
+        {
+          "source_id": "mi-mayo-causes",
+          "locator": "Complications358–363; emergency302–308",
+          "source_metadata_sha256": "a84db049c24b946ef3295fccc3f19c01f97984f71203db437ba53fc53b1d8a6d"
+        },
+        {
+          "source_id": "mi-nhs",
+          "locator": "Immediate action26–32; cardiac arrest139–141",
+          "source_metadata_sha256": "f2fc20110ddc3f50946197bc6822eec853bb6d8a5f269cccea134308875afa68"
+        }
+      ]
+    },
+    {
+      "decision": "accepted",
+      "assessment": "NIDDK meal planning explicitly depends on medicines, activity and other conditions and involves the health team. Independently written Diabetes UK advice joins meal/activity records, help from the diabetes team with meal/medicine timing, and activity/medicine planning. The revision clearly assigns coordination to the team and supplies no self-adjustment dose or universal diet.",
+      "clinical_change_required": false,
+      "claim_id": "diet-2b",
+      "before_sha256": "dde7b79dc7e6a5ddc5da8bed1e7da1e6bd9a08a8a73b8082b7bcd4d14a8bad2d",
+      "reviewed_text_sha256": "3f369a08f5643549a42c0a3dfa4a9e8ba0cf86ad1ef45f6637c857500148902d",
+      "reviewed_text": {
+        "zh-CN": "与医疗团队结合降糖药和活动来安排餐食，而不是套用统一食谱。",
+        "en": "planning meals with your care team around glucose-lowering medicines and activity instead of applying one meal plan to everyone."
+      },
+      "source_checks": [
+        {
+          "source_id": "mi-niddk-diabetes-food",
+          "locator": "Meal planning176–183; plan201; activity215",
+          "source_metadata_sha256": "2050cdae83fdecf19d21a63e0318ab3e18ef62c11a0c7bb6557c215d549a3cd2"
+        },
+        {
+          "source_id": "mi-diabetesuk-meal-lifestyle",
+          "locator": "Food/activity diary34; team help59; medication/team72",
+          "source_metadata_sha256": "67ca0b8f465b507c67f9cc86d85ab125d1b50314e8ca900129ca1bc60f65b870"
+        },
+        {
+          "source_id": "mi-diabetesuk-exercise",
+          "locator": "Activity records/team55–64; insulin/activity72–78",
+          "source_metadata_sha256": "da5ac9b442ab4edb39a8df4701d7f91a16420959375e683e27e39ff52fa74e72"
+        }
+      ]
+    }
+  ],
+  "source_reads": [
+    {
+      "source_id": "mi-cuh-rehab-exercise",
+      "url": "https://www.cuh.nhs.uk/patient-information/cardiac-rehabilitation-home-exercise-guidelines/",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Exercise safety298–310; exertion327",
+      "assessment": "New or recurrent breathlessness and chest pain need contact; uncomfortable breathing is a stopping signal. Normal conversational exercise can increase breathing.",
+      "source_metadata_sha256": "882af95fe582322e30ca0ed31476cef18b7db16d49c90c0e1a65d599891f5575"
+    },
+    {
+      "source_id": "mi-mayo-rehab",
+      "url": "https://www.mayoclinic.org/tests-procedures/cardiac-rehabilitation/about/pac-20385192",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "How you prepare315–317; risks310–312",
+      "assessment": "Pre-programme tests of abilities, limitations and complication risks inform the tailored rehabilitation programme.",
+      "source_metadata_sha256": "d73d009ca618d74c46d5d5d24627ba32d9d89078b6907e8e0294aa191c6536b1"
+    },
+    {
+      "source_id": "mi-nice-ng185",
+      "url": "https://www.nice.org.uk/guidance/NG185/chapter/recommendations",
+      "accessed_at": "2026-10-02",
+      "access_mode": "official_indexed_passages",
+      "locator": "Final1.4.2–3,1.4.29–33,1.7.1–2",
+      "assessment": "Actual official indexed recommendation passages; direct access previously403. No claim of full PDF access; consultation drafts and unrelated returned guidance excluded.",
+      "source_metadata_sha256": "b44b926f31c7caa427725440d7e947d7fee8eb3cda947a40ad271b6ffafbaeba"
+    },
+    {
+      "source_id": "mi-mayo-causes",
+      "url": "https://www.mayoclinic.org/diseases-conditions/heart-attack/symptoms-causes/syc-20373106",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Complications358–363; emergency302–308",
+      "assessment": "Arrhythmia, cardiac arrest and need for emergency help in suspected infarction.",
+      "source_metadata_sha256": "a84db049c24b946ef3295fccc3f19c01f97984f71203db437ba53fc53b1d8a6d"
+    },
+    {
+      "source_id": "mi-nhs",
+      "url": "https://www.nhs.uk/conditions/heart-attack/",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Immediate action26–32; cardiac arrest139–141",
+      "assessment": "Unresponsive collapse and severe breathing difficulty require emergency help.",
+      "source_metadata_sha256": "f2fc20110ddc3f50946197bc6822eec853bb6d8a5f269cccea134308875afa68"
+    },
+    {
+      "source_id": "mi-niddk-diabetes-food",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/healthy-living-with-diabetes",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Meal planning176–183; tailored plans188–201; activity215",
+      "assessment": "Meal timing and activity are coordinated with medicines and the care team.",
+      "source_metadata_sha256": "2050cdae83fdecf19d21a63e0318ab3e18ef62c11a0c7bb6557c215d549a3cd2"
+    },
+    {
+      "source_id": "mi-diabetesuk-meal-lifestyle",
+      "url": "https://www.diabetes.org.uk/living-with-diabetes/eating/your-lifestyle-diabetes-and-food",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Diary34; team59; medicines72",
+      "assessment": "Independently written patient information concerning food/activity and team coordination.",
+      "source_metadata_sha256": "67ca0b8f465b507c67f9cc86d85ab125d1b50314e8ca900129ca1bc60f65b870"
+    },
+    {
+      "source_id": "mi-diabetesuk-exercise",
+      "url": "https://www.diabetes.org.uk/living-with-diabetes/exercise/blood-sugar-levels",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Activity records and team55–64; insulin/activity72–78",
+      "assessment": "Coordinate activity and medication planning with the diabetes team; no numerical targets imported.",
+      "source_metadata_sha256": "da5ac9b442ab4edb39a8df4701d7f91a16420959375e683e27e39ff52fa74e72"
+    }
+  ],
+  "medicine_integration": {
+    "binding_updates": [
+      {
+        "claim_id": "care-0",
+        "source_id": "mi-nhs",
+        "locator": "Introduction15; recovery79–91",
+        "assessment_sha256": "775c9151b4a501839d854dfa87607e764937a4f46f300bc4b2fc0b82bf325b86",
+        "exact_match": true
+      },
+      {
+        "claim_id": "care-0",
+        "source_id": "mi-mayo-causes",
+        "locator": "When to see a doctor302–308",
+        "assessment_sha256": "a26b51e61babd3225205446aed9aa74538727dd28678b0bbfe458c84db25717d",
+        "exact_match": true
+      },
+      {
+        "claim_id": "care-0",
+        "source_id": "mi-nhlbi-recovery",
+        "locator": "Rehabilitation99–117; long-term medicines122–130",
+        "assessment_sha256": "fd0c8b2eddd567b77c522f9bafe3a98c98e66341884969ee54e07137d05254dc",
+        "exact_match": true
+      },
+      {
+        "claim_id": "care-1a",
+        "source_id": "mi-aha-aspirin",
+        "locator": "Should I take aspirin during a heart attack or stroke?45–48",
+        "assessment_sha256": "fe68aa86533a14bcc3ae7ee0ad3bd9e7f3f6300644ff62d1fe4a66b94a5b3277",
+        "exact_match": true
+      },
+      {
+        "claim_id": "care-1b",
+        "source_id": "mi-aha-aspirin",
+        "locator": "Should I take aspirin during a heart attack or stroke?45–48",
+        "assessment_sha256": "fe68aa86533a14bcc3ae7ee0ad3bd9e7f3f6300644ff62d1fe4a66b94a5b3277",
+        "exact_match": true
+      },
+      {
+        "claim_id": "care-1d",
+        "source_id": "mi-aha-aspirin",
+        "locator": "Should I take aspirin during a heart attack or stroke?45–48",
+        "assessment_sha256": "fe68aa86533a14bcc3ae7ee0ad3bd9e7f3f6300644ff62d1fe4a66b94a5b3277",
+        "exact_match": true
+      },
+      {
+        "claim_id": "care-1c",
+        "source_id": "mi-rcuk-firstaid-2025",
+        "locator": "Chest pain122–129",
+        "assessment_sha256": "16cca17b51e525db262fa82c748d9b38bcd829043314b8d1b77ca69be45b86f0",
+        "exact_match": true
+      },
+      {
+        "claim_id": "treatment-1",
+        "source_id": "mi-mayo-treatment",
+        "locator": "Surgical and other procedures301–307",
+        "assessment_sha256": "62fbb2fc97a57db8a9859750c5e66e9ffd359ce72019c84b8360727256063962",
+        "exact_match": true
+      },
+      {
+        "claim_id": "treatment-2c",
+        "source_id": "mi-merck-acs-medications",
+        "locator": "Fibrinolytics236–256, especially contraindications254–256",
+        "assessment_sha256": "7a16bc7e91f4f067571800ade8aaea2838f5e9a7f10d1bd53ea7f50632b63238",
+        "exact_match": true
+      },
+      {
+        "claim_id": "medications-1a",
+        "source_id": "mi-nhlbi-recovery",
+        "locator": "Medicines125–126",
+        "assessment_sha256": "69e97a2bf81d5585a2633bf9e5915528723e6aad198e5542ad548b1a0baa14bc",
+        "exact_match": true
+      },
+      {
+        "claim_id": "medications-1b",
+        "source_id": "mi-nice-ng185",
+        "locator": "Final NG1851.4.15–16 and1.4.21–24; official indexed passages",
+        "assessment_sha256": "fdace1912bc386fbbd7aff031c25522479636d6b906ef39a51e3107c6df47036",
+        "exact_match": true
+      },
+      {
+        "claim_id": "medications-3a",
+        "source_id": "mi-mayo-statin-risks",
+        "locator": "Introduction258–270",
+        "assessment_sha256": "252d8e3b1c29a20e4bd172e3369ae9f7461ce479c458381e20d27922daeda385",
+        "exact_match": true
+      },
+      {
+        "claim_id": "medications-3b",
+        "source_id": "mi-mayo-statin-risks",
+        "locator": "Introduction270; muscle symptoms272–277; assessment320–324",
+        "assessment_sha256": "62a955aaf95fe4abaf10584d262c155a31c67d33d1da4cce901043325472eb46",
+        "exact_match": true
+      },
+      {
+        "claim_id": "medications-3b",
+        "source_id": "mi-uhd-cardiac-medicines",
+        "locator": "Statins35–39",
+        "assessment_sha256": "1b34a585c2c0ae2d32f7a757789e1beb1402f232fd85490c00036d8d9abaefc4",
+        "exact_match": true
+      },
+      {
+        "claim_id": "medications-3c",
+        "source_id": "mi-mayo-statin-risks",
+        "locator": "Muscle pain and damage272–277; assessment320–324",
+        "assessment_sha256": "e2c40a5a29279bae836d251fb69b3fa365b9291f5d2dfb350496e8e0ccbf30f3",
+        "exact_match": true
+      },
+      {
+        "claim_id": "medications-4b",
+        "source_id": "mi-sps-ace-monitoring",
+        "locator": "Abnormal results342–344; bibliography385–395",
+        "assessment_sha256": "3284016c3103a546e49658b2acef711981a12a7a017d72199a60cf22abffac6f",
+        "exact_match": true
+      },
+      {
+        "claim_id": "medications-4c",
+        "source_id": "mi-nice-ng185",
+        "locator": "Final1.4.10; official indexed PDF page24",
+        "assessment_sha256": "54b310f5857ed75fed9d5336e93c911be2a8344b56b86b52b8fb3f28549e8ddc",
+        "exact_match": true
+      },
+      {
+        "claim_id": "medications-4c",
+        "source_id": "mi-sps-ace-monitoring",
+        "locator": "Post myocardial infarction301–310 and331–341",
+        "assessment_sha256": "e03cab98c43cbfa82a82bb45a4ce3ddad4e6787994a8b3a8a1dbf5d2bc785c37",
+        "exact_match": true
+      },
+      {
+        "claim_id": "medications-4c",
+        "source_id": "mi-uhd-cardiac-medicines",
+        "locator": "ACE inhibitors41–43",
+        "assessment_sha256": "3f7e62991096da6b7445abbbe390701650c4632f84c47e9d7b7d197be85a27d6",
+        "exact_match": true
+      },
+      {
+        "claim_id": "medications-4d",
+        "source_id": "mi-uhd-cardiac-medicines",
+        "locator": "ACE inhibitors44",
+        "assessment_sha256": "7601221aa33a30312a5a32999f4c1f672cef5086c3ad571838ec2dd9a63b73f5",
+        "exact_match": true
+      },
+      {
+        "claim_id": "medications-5a",
+        "source_id": "mi-mayo-beta",
+        "locator": "Mechanism264–265; uses283–287",
+        "assessment_sha256": "d344dbe4b5c7799fc3e8fc870e734728d8d65f117df71f6cd17d0e589da44528",
+        "exact_match": true
+      },
+      {
+        "claim_id": "medications-5b",
+        "source_id": "mi-nhs-beta-class",
+        "locator": "Side effects54–68",
+        "assessment_sha256": "ca50adde09487090eca273c9e45e1f79fac4e1e9bb815c004fb9640d3bf276cd",
+        "exact_match": true
+      },
+      {
+        "claim_id": "medications-5c",
+        "source_id": "mi-nhs-beta-class",
+        "locator": "Suitability77–85",
+        "assessment_sha256": "b58a3633087d3b4d49eb07c998e34872baa625cebd0e6870bd3b8917e744a411",
+        "exact_match": true
+      },
+      {
+        "claim_id": "medications-5d",
+        "source_id": "mi-uhd-cardiac-medicines",
+        "locator": "Beta blockers48–53",
+        "assessment_sha256": "aa3edcfe09bdd8ef56231e0fd7ecdcfce7f3bbf9d66883f7f9decf83af533c56",
+        "exact_match": true
+      }
+    ],
+    "source_additions": [
+      {
+        "source_id": "mi-mayo-statin-risks",
+        "exact_match": true,
+        "metadata_sha256": "0ac96554c873d6986dd008fdb885c717a2513dc4d92c6c38985dd96034ee0549",
+        "claim_verification": "pending"
+      },
+      {
+        "source_id": "mi-rcuk-firstaid-2025",
+        "exact_match": true,
+        "metadata_sha256": "c464ed77f90006c259de59f44580ca1f8ae2e3c48463058b4df5f8604971233e",
+        "claim_verification": "pending"
+      },
+      {
+        "source_id": "mi-sps-ace-monitoring",
+        "exact_match": true,
+        "metadata_sha256": "a0c747519804c9009221593b664826679fc864db441c9d67823822727c839889",
+        "claim_verification": "pending"
+      },
+      {
+        "source_id": "mi-uhd-cardiac-medicines",
+        "exact_match": true,
+        "metadata_sha256": "e92775bf68ed89db619835dcd27d5ae06b3354122224797b853733043e2ea125",
+        "claim_verification": "pending"
+      },
+      {
+        "source_id": "mi-nhs-beta-class",
+        "exact_match": true,
+        "metadata_sha256": "992106f39237945b2dd87e7acb9cc4be9e7795938c3d4dbe3aff258b24d46ffc",
+        "claim_verification": "pending"
+      },
+      {
+        "source_id": "mi-merck-acs-medications",
+        "exact_match": true,
+        "metadata_sha256": "4b425e20bf85b64d62225e71f380058b2d57f7631c88178152c5c980b886189a",
+        "claim_verification": "pending"
+      }
+    ],
+    "uhd_independence": "UK-UHD remains separately authored hospital cardiac-rehabilitation material, not syndicated national NHS ramipril text. NHS organizational affiliation alone does not establish shared authorship; shared guideline upstream is disclosed.",
+    "sps_independence": "UK-NHS-SPS independent professional synthesis with explicit NICE shared upstream, not independent trial replication.",
+    "result": "24of24bindings and6of6source records match the frozen medicine report exactly."
+  },
+  "diagnosis_and_maternal_consistency": {
+    "diagnosis_claim_checks": [
+      {
+        "claim_id": "red_flags-0",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "red_flags-1",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "red_flags-2a",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "red_flags-2b",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "diagnosis-0",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "diagnosis-1a",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "diagnosis-1b",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "diagnosis-2a",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "diagnosis-2b",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "diagnosis-3",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "diagnosis-4a",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "diagnosis-4b",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "diagnosis-5",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "differentials-0",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "differentials-1",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "differentials-2a",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "differentials-2b",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "differentials-2c",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "differentials-3a",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "differentials-3b",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "differentials-3c",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "special_populations-0",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "special_populations-1",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "special_populations-2a",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "special_populations-2b",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "special_populations-2c",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      },
+      {
+        "claim_id": "special_populations-2d",
+        "text_unchanged": true,
+        "all_reviewed_source_ids_bound": true
+      }
+    ],
+    "diagnosis_claims_unchanged": 27,
+    "all_frozen_diagnosis_source_checks_are_bound": true,
+    "esc_metadata_correction_consistent": true,
+    "esc_correction_scope": "ehaf1011 publication2025-12-22/issue2026-02-14; six official indexed corrections accurately retained. Current prose imports none of the corrected technical dose/measurement details.",
+    "maternal_claim_text_sha256": "c05bfa29916bc25695fffa140ac2fd6e6c2921233e8e194021cf85cb7ddec68a",
+    "maternal_followup_path": "reports/batch-01-mi-maternal-action-followup.json",
+    "maternal_followup_file_sha256": "42136aa5ebd353bda4fe46cbba9794d73ac8fa368737e6ac868ecba1fc82b650",
+    "mayo_emergency_support_present": true,
+    "medical_evidence_gap_remaining": false,
+    "metadata_gap": "The two old single-source assessments remain untilMI-T02; body text is unchanged and does not require further clinical rewrite."
+  },
+  "inheritance": {
+    "frozen_reports": [
+      {
+        "path": "reports/batch-01-mi-context-recheck.json",
+        "file_sha256": "2228d578758ee190c1f88990e857cdbe59de8a3af96a70bdc0e16f28700ec79d"
+      },
+      {
+        "path": "reports/batch-01-mi-diagnosis-recheck.json",
+        "file_sha256": "6ff0ca62090c183b715d217a71337be826f322a3e1e895365f6aeaa06eace20f"
+      },
+      {
+        "path": "reports/batch-01-mi-medicine-recheck.json",
+        "file_sha256": "30627e1f37e0bd0b3c37dd74cb0c3d7606a877819386ba17ba919339610a4ac4"
+      }
+    ],
+    "review_fixes_path": "reports/batch-01-mi-review-fixes.json",
+    "review_fixes_file_sha256": "889ee87572a3545443a150c11c73c57b22f5e453dbe7dbcbd31dabc9df67600d",
+    "exact_changed_claims": [
+      "diet-2b",
+      "daily_care-1b",
+      "prognosis_followup-1b",
+      "prognosis_followup-1c",
+      "complications-2"
+    ],
+    "unreported_changed_claims": [],
+    "unchanged_claims": [
+      {
+        "claim_id": "summary-0",
+        "bilingual_text_sha256": "dac53c3335d396598f10251dc1c5ac52a44cc1fb05bea50859ba228ccc3b220c",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "summary-1",
+        "bilingual_text_sha256": "369da8a4ebea912cd20e3196189e35050b2f13b64d716508924ac72e0fea023c",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "summary-2",
+        "bilingual_text_sha256": "fa1bef1be91c603d6dc95dbf532c4a6c41f056549bb819f7247d95b47038e362",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "causes_risks-0",
+        "bilingual_text_sha256": "bd90d09bf8fb375d6c02d153b41be1b63da1c11a2cea313168386a35f0e7dcab",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "causes_risks-1",
+        "bilingual_text_sha256": "8421fd8a8e30c61ecfddf40184d165ce7c84aefc58c525aa76b8cf2d6f3b30ba",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "causes_risks-2",
+        "bilingual_text_sha256": "660ac1bba304c18a8ada7401605c2193bc02a77321f6ae5974e4f5afc5580c9f",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "red_flags-0",
+        "bilingual_text_sha256": "7a0e48a9856d9f4e519ff08d593b0e161ebf507a84568196f3fe5e4dd444041d",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "red_flags-1",
+        "bilingual_text_sha256": "2dc4fc4908912be8ca192274cdb2634843bce2e516e8522b80247a4a6e79c543",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "red_flags-2a",
+        "bilingual_text_sha256": "d0314cc11a604ac4f861dfda2f635a7a5da45151bf98b594c713a90b820ef6d8",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "red_flags-2b",
+        "bilingual_text_sha256": "994f7f0e01c6d6dd70831e64e5ee2dd322a07806e6147e7e8612d45ff5452547",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "care-0",
+        "bilingual_text_sha256": "fc665116b096169523449830b21700a9440c82d4ebe94da8ccb79e376ef453eb",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "care-1a",
+        "bilingual_text_sha256": "90e96f650a0654384c07e02354095e850cd3a188055fa6219f6ccfeda459273f",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "care-1b",
+        "bilingual_text_sha256": "e195a8f7c69b28b3526d9803085da56b8c30fa895eb1b61e93b8a533076995c9",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "care-1c",
+        "bilingual_text_sha256": "17fbf77583b28e4063da7703e6141a91a1504d4fb7a3159edd93d7c462ca81e3",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "care-1d",
+        "bilingual_text_sha256": "5190cf5f94a137255892457ed4f58c6525ba6e3bfa583dacac675b2ac55ebcb2",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "care-2",
+        "bilingual_text_sha256": "52b9047d2842d5c45418d1abee07733b3dc0d6445405ef2c5540dc2b70e1851f",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "care-3a",
+        "bilingual_text_sha256": "5c3b302484529cbab6de866305e0312f1437b7bd9125a6b888864c3a5fd309fa",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "care-3b",
+        "bilingual_text_sha256": "0ca090445d5d4ce7667eaa5822726e6c633e0080970b4448348aa02f9e9bbae2",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "care-3c",
+        "bilingual_text_sha256": "878210881a4a73bf076f6e213d5f06cae11fa47d67a7f4367cc3bfbb15782f77",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "diagnosis-0",
+        "bilingual_text_sha256": "b31b90abb4df589caa3da56f3615d0c060ebbb6145564a302f4278f808979b97",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "diagnosis-1a",
+        "bilingual_text_sha256": "ec20275524aa760c2cb0a5015a0c568713012b63abf31de94776ce72bc21830a",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "diagnosis-1b",
+        "bilingual_text_sha256": "ba91eb5668391b838892d3d33798de1298983d1ed0d60a0c95f7e98bb1d4c56e",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "diagnosis-2a",
+        "bilingual_text_sha256": "7164141b4446a487d8c37afbab6671ed22ca38b1a57c452d3ae7579cdec9771b",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "diagnosis-2b",
+        "bilingual_text_sha256": "198544e12be6e5ecdec98f195d8acc5f32c69043c982d731ef7e77006bc621e6",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "diagnosis-3",
+        "bilingual_text_sha256": "55a1b47013a84cee10c8edc9ec6bf8070c4bf26e96c8c132e1f8e2edf3dcc69a",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "diagnosis-4a",
+        "bilingual_text_sha256": "d0760ca9e8330319ce7e4958809481619daafd8f3fb4558a6bc37828b3230a01",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "diagnosis-4b",
+        "bilingual_text_sha256": "db6d48f2b6f8869362257ab581486284bec1a578b47d0397bbc29627191d698c",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "diagnosis-5",
+        "bilingual_text_sha256": "27f0dcb9e2a5afc941d25fe890e9911f11feb3baceb417e52982170074af366b",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "differentials-0",
+        "bilingual_text_sha256": "cbe35e621bfdad5f98caf4017ea373d0a319c04bf6f8a2fe55bef06d8c78f5dd",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "differentials-1",
+        "bilingual_text_sha256": "98dfebcfa40c18739ef3ebc1b3e9c11a6953faf4865823f4aa57dc812f7148b0",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "differentials-2a",
+        "bilingual_text_sha256": "c871324b36c0540e0b19e5ced93445a0c637981d3426852dc365ce4aa16cce57",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "differentials-2b",
+        "bilingual_text_sha256": "635049171b944ce72afdcd3091eb82f53a8aec416c5fbeae7ce7125a90a73a7e",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "differentials-2c",
+        "bilingual_text_sha256": "02e6b50f4a40dc57c22424b63225c4156b7a5d8de3415a1307c48dc2730831cb",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "differentials-3a",
+        "bilingual_text_sha256": "8832bcdc72f8f204f71ab5e3f2c7dd3b82dccbcf6532466917ec90af5b1ba6dd",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "differentials-3b",
+        "bilingual_text_sha256": "f1eac0b0eadbe02049de2ce1eda569d66ac5afb792a59b20c2a0c5eacd2c15fe",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "differentials-3c",
+        "bilingual_text_sha256": "519e1385163367c2c21d15504dc2388d6fe88e6c6c0aa18fbca5a0e0bb32cce2",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "treatment-0",
+        "bilingual_text_sha256": "e725f64dfa9a7e410d1ff643dd7da68998194b56af24df9725a13d80ccd12046",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "treatment-1",
+        "bilingual_text_sha256": "ab550489560df353378f929032f784e128b25a152c8d95f8c4a1fdff823be1b6",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "treatment-2a",
+        "bilingual_text_sha256": "c79318cef6118860438fd61bbef714ce70b30d2d2885a8182f8f8fa1e709d93e",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "treatment-2b",
+        "bilingual_text_sha256": "a31d6d4456090fdd29d0246a3e5e20c8e73cd7a8b0ea4295098b404652f5ab38",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "treatment-2c",
+        "bilingual_text_sha256": "b8c3c2759d4be6f679dc16ad0b58946e1efaadea9aa6bcb8f455b8d78dc3ace6",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "treatment-3",
+        "bilingual_text_sha256": "253affd1b5491c625c4f7c87cd8801d510d638211f42ec2955fd57c4c7d351c2",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-0",
+        "bilingual_text_sha256": "35a0ce735caeb808aae2136d029d80ae5e23c6b011ef69bf691741ed44d8cbc3",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-1a",
+        "bilingual_text_sha256": "ead373d51c681937652dad395372908cb83480846ab68a92d054c1d44eee2cc9",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-1b",
+        "bilingual_text_sha256": "22f91b18737695a0129259a043215d17d62c331aef40eb7540c6a81d425bde8c",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-1c",
+        "bilingual_text_sha256": "55fef62cdf177dd4a59cbb2029c4b8eeb162bbddf637c05f86df672dea333a14",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-2a",
+        "bilingual_text_sha256": "aedb6afc09679a0683cd50e3c3f7ef73d81bf9f32c933a1a3c76ea1b5afa5ad9",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-2b",
+        "bilingual_text_sha256": "f273d3468fdd24ea059b28ca256764c3b8e758da8a71a7658799a94722967011",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-2c",
+        "bilingual_text_sha256": "01127a3afe85213179e2c2ca6501c1464eb4c7a49d03c4321cb0d4adae61b622",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-3a",
+        "bilingual_text_sha256": "3ae91e39094c2f476ec15f5f2194bed08fd5104a4097e9f6bc36aabf604c6493",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-3b",
+        "bilingual_text_sha256": "4906ce883c1570125607e452a7e55b1df9e352b9e006394a9310804ceb97ae58",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-3c",
+        "bilingual_text_sha256": "0520f3ef0b9b4db934a81ebf1e13e0492a0f958fecc795cbbe4ea3740cf367a1",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-4a",
+        "bilingual_text_sha256": "3da64a66b7ae944c17bbc674f4eea7ac390f13199bb9e0a5c05b82ef707a02ce",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-4b",
+        "bilingual_text_sha256": "b982558578d025dc223492fd15b09cf399049722e4a209f072ce491966a3a051",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-4c",
+        "bilingual_text_sha256": "3822aa1df287a87eba2f121ff6ed20a743d2b9fd29255773596fb4a51fe39596",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-4d",
+        "bilingual_text_sha256": "830f3a9142f5757f1e58c6938e030015f195c6a61619ec82818926268ee0f2c8",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-5a",
+        "bilingual_text_sha256": "13ede615c72d0b9af07b7cb800a58999372a9dd895265e4539ca10b7998cb1e8",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-5b",
+        "bilingual_text_sha256": "3f7158a5ce2849d4e64f43bd003b48f93d72a176a3c3662ca5ad74916781bf17",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-5c",
+        "bilingual_text_sha256": "556d99fcd16171e8eca85456d48aaa5f04e787dbc781c8aaa8dc059ae9a76386",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-5d",
+        "bilingual_text_sha256": "198679f57330dc67c80daaed5d9f56e3ad41ff4d17d01c57c562965cec741048",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "medications-6",
+        "bilingual_text_sha256": "c6a0cf1a58a8269ed7e64903d11c51cba2d59fd97086097ef3bc4471675bbdbd",
+        "report": "reports/batch-01-mi-medicine-recheck.json"
+      },
+      {
+        "claim_id": "diet-0",
+        "bilingual_text_sha256": "cb05f06c7639a4a8799666e4f5b213429386bc87d38271c64983c67b03336569",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "diet-1",
+        "bilingual_text_sha256": "d0386c52b5abe35d0d1c6cc33191e4723cbdca2302e592ef6080b0163d30f82f",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "diet-2a",
+        "bilingual_text_sha256": "5a8219b1286db26a47894aa056e01fbeb16faa205ead5c44364eee05836f162a",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "diet-3",
+        "bilingual_text_sha256": "f9ef20ec256520ee51a5487c79b925ec628765ccc391ddcb7a5c459682b0cfe3",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "diet-4",
+        "bilingual_text_sha256": "194cbecb07652b87970148bb29a4be3c5bacdd23bdee1378a45ece533863f6f0",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "daily_care-0",
+        "bilingual_text_sha256": "8495680b7c377126a6e3f387eab01a9ca79feba34d9ddcbbc8f252dd63d05b00",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "daily_care-1a",
+        "bilingual_text_sha256": "017955cf4c63cc03b530d8b8b6665058a889331c67d03960143edb4453290557",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "daily_care-1c",
+        "bilingual_text_sha256": "707a432b298b409542977fffe0097184afe11c3b0bb27d82d0ff093e3d169671",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "daily_care-2",
+        "bilingual_text_sha256": "1d92d042785437aba7c19c7f440b4c240ffc06440edf2d825956c100225b5faf",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "daily_care-3",
+        "bilingual_text_sha256": "5007d0f367d329159cd7301a2fd2d9eea2a62e4325d861a02693a0f0ed897c3d",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "special_populations-0",
+        "bilingual_text_sha256": "c327ee0ccb84d86864f2f13cc5d4eff6fbd0c19332d471a7b1616534505e4533",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "special_populations-1",
+        "bilingual_text_sha256": "b08363362c483b0f87d76f889f83dc15789d89b84829773d6c01f9e879a7c4fa",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "special_populations-2a",
+        "bilingual_text_sha256": "32d279b37e6950b9fb7fc3a379a04f1e5d2f88c5ec72258ad6140784420fc389",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "special_populations-2b",
+        "bilingual_text_sha256": "c05bfa29916bc25695fffa140ac2fd6e6c2921233e8e194021cf85cb7ddec68a",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "special_populations-2c",
+        "bilingual_text_sha256": "c42a4801cba12a6cffab4558a8bda6fa5600c22c46dbe1b1beb45b4b65681499",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "special_populations-2d",
+        "bilingual_text_sha256": "08a02db1bfb70e25d4af813a4b8bf4d9e91047ba7bf20190944713333db4a0f5",
+        "report": "reports/batch-01-mi-diagnosis-recheck.json"
+      },
+      {
+        "claim_id": "prognosis_followup-0",
+        "bilingual_text_sha256": "cfd1e2d701a9528459228bee3c4e5bea550afa7fd87c100598419866c172b766",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "prognosis_followup-1a",
+        "bilingual_text_sha256": "46756e53bdc85432dee9f5d411eb31fde9ff301d93ec9c90ae2b19d539e33d4e",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "prognosis_followup-2",
+        "bilingual_text_sha256": "1c9070c423af56be6f8e5c4bda1b59ae6f7262bf41ecf0c9d973dd7748b9a1ab",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "complications-0",
+        "bilingual_text_sha256": "1dc6384a047eadbac5120b12b71f3fd79429236281d174b48fc16d9c2dbdc658",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "complications-1",
+        "bilingual_text_sha256": "7da473b106a573e0f61117bbae46a07e95e5c10bc915169974a32384058fa8d9",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "prevention-0",
+        "bilingual_text_sha256": "6c37f3cce7c54a0e6fe1e2e1082b9fefa3c94de6aadb9f56269db4804e102965",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "prevention-1",
+        "bilingual_text_sha256": "4bc45bc5005fbc4ffc10bb5558bc7d41015657a8e3cb783fc793644380dc83af",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      },
+      {
+        "claim_id": "prevention-2",
+        "bilingual_text_sha256": "6c67b23f141f7532bb422237352ae7adba01c5c4e4292f07d63afac6fe2e08ca",
+        "report": "reports/batch-01-mi-context-recheck.json"
+      }
+    ],
+    "scope_limit": "The85claim texts were hash-compared, not medically rereviewed. Their decisions inherit the corresponding frozen report. Source-binding additions and the maternal superseding decision were checked separately."
+  },
+  "precise_implementation_patches": [
+    {
+      "id": "MI-T01",
+      "type": "bilingual_connector",
+      "claim_id": "daily_care-1b",
+      "field": "text.zh-CN",
+      "before": "活动时出现胸痛，或新出现、令人不适的气短，应停止活动并联系医疗团队；",
+      "after": "活动时出现胸痛，或新出现或令人不适的气短，应停止活动并联系医疗团队；",
+      "before_bilingual_sha256": "7bd373f7d54fc837fa3f897f7f5269c14495cd586964d7f9b36dc53707109e5e",
+      "approved_after_bilingual_sha256": "3dd9e6aa2c823743cd0df4f18957473f81e8d7415bf8567259dfad3fc9e529e4",
+      "reason": "Explicit OR matches both CUH conditions and current English; this exact proposed text is already independently reviewed.",
+      "apply_to": [
+        "condition section text",
+        "editorial claim text"
+      ],
+      "recheck_needed": "Mechanical exact-text, source-binding and hash-chain verification only; no repeat source review."
+    },
+    {
+      "id": "MI-T02",
+      "type": "superseded_assessment_cleanup",
+      "claim_id": "special_populations-2b",
+      "updates": [
+        {
+          "source_id": "mi-nhlbi-women",
+          "field": "assessment",
+          "before": "NHLBI公众立即急救明确，ESC专业评估不能充当第二公众呼叫原句。孕周/分娩时间告知仅情境整理。 Limit: Exact population-specific public EMS action still has one directly bound source. Correct advice; corroborate or retain the limited-support label.",
+          "after": "NHLBI supplies pregnancy/postpartum infarction context and immediate emergency action. Together with Mayo general suspected-infarction advice, the minimum sufficient independent pair is now bound; the previous single-source limitation is superseded by batch-01-mi-maternal-action-followup. Reporting gestation or delivery timing is practical context, not a diagnostic threshold."
+        },
+        {
+          "source_id": "mi-esc-pregnancy-2025",
+          "field": "assessment",
+          "before": "NHLBI公众立即急救明确，ESC专业评估不能充当第二公众呼叫原句。孕周/分娩时间告知仅情境整理。 Limit: Exact population-specific public EMS action still has one directly bound source. Correct advice; corroborate or retain the limited-support label.",
+          "after": "ESC supports specialist pregnancy-related assessment and care context; it is not counted as the second public emergency-call sentence. The action is cross-checked through NHLBI plus Mayo, as resolved in batch-01-mi-maternal-action-followup."
+        }
+      ],
+      "reason": "Body and Mayo binding are correct; two inherited assessment strings still state the resolved single-source limitation.",
+      "recheck_needed": "Exact assessment replacement and ledger hash verification only."
+    },
+    {
+      "id": "MI-T03",
+      "type": "remove_redundant_unreopened_supports",
+      "source_ids": [
+        "mi-cuh-ace",
+        "mi-cuh-statins"
+      ],
+      "claim_removals": [
+        {
+          "claim_id": "medications-3b",
+          "source_id": "mi-cuh-statins",
+          "remaining_supports": [
+            "mi-nhs-statins",
+            "mi-mayo-statin-risks",
+            "mi-uhd-cardiac-medicines"
+          ]
+        },
+        {
+          "claim_id": "medications-4b",
+          "source_id": "mi-cuh-ace",
+          "remaining_supports": [
+            "mi-mayo-ace",
+            "mi-nhs-ramipril",
+            "mi-sps-ace-monitoring"
+          ]
+        },
+        {
+          "claim_id": "medications-4c",
+          "source_id": "mi-cuh-ace",
+          "remaining_supports": [
+            "mi-nice-ng185",
+            "mi-sps-ace-monitoring",
+            "mi-uhd-cardiac-medicines"
+          ]
+        }
+      ],
+      "reason": "These two old CUH pages were not reread in the three frozen reports or this targeted recheck. Do not add them to original_sources_reopened. Already reviewed, now bound alternatives support every relevant subclaim.",
+      "apply_to": [
+        "MI claim supports",
+        "MI section supports/source_ids",
+        "MI overall source_ids"
+      ],
+      "historical_source_records": "May remain as historical metadata outside the current supporting set; no content or prior audit history must be deleted.",
+      "recheck_needed": "Verify removed links and recompute hashes; no additional medical-source review needed."
+    }
+  ],
+  "remaining_substantive_medical_issues": [],
+  "classification_appendix": {
+    "status": "partial_and_pending_mapping_not_counted_complete",
+    "official_snapshot": "2026-01",
+    "catalog_file_sha256": "3db9a09b98634b08caeb46119a1aec344341e3f2db8b2fc7997ed0e33b3ed15f",
+    "rules_file_sha256": "a6a81e7ad580b30bbbc9cac068d731ddf4f6d2726d45930d0b58abd88bc6d5a6",
+    "official_rows": [
+      {
+        "row": 6394,
+        "code": "BA41",
+        "title": "- - - Acute myocardial infarction",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "http://id.who.int/icd/entity/1334938734",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1334938734",
+        "parent_uri": "http://id.who.int/icd/entity/1829545371",
+        "is_leaf": false,
+        "is_residual": false,
+        "decision": "excluded",
+        "reason": "parent_category_not_counted_twice",
+        "release": "2026-01"
+      },
+      {
+        "row": 6395,
+        "code": "BA41.0",
+        "title": "- - - - Acute ST elevation myocardial infarction",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "http://id.who.int/icd/entity/391388807",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/391388807",
+        "parent_uri": "http://id.who.int/icd/entity/1334938734",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      {
+        "row": 6396,
+        "code": "BA41.1",
+        "title": "- - - - Acute non-ST elevation myocardial infarction",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "http://id.who.int/icd/entity/680129526",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/680129526",
+        "parent_uri": "http://id.who.int/icd/entity/1334938734",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      {
+        "row": 6397,
+        "code": "BA41.Z",
+        "title": "- - - - Acute myocardial infarction, unspecified",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1334938734/unspecified",
+        "parent_uri": "http://id.who.int/icd/entity/1334938734",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      {
+        "row": 6398,
+        "code": "BA42",
+        "title": "- - - Subsequent myocardial infarction",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "http://id.who.int/icd/entity/993844371",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/993844371",
+        "parent_uri": "http://id.who.int/icd/entity/1829545371",
+        "is_leaf": false,
+        "is_residual": false,
+        "decision": "excluded",
+        "reason": "parent_category_not_counted_twice",
+        "release": "2026-01"
+      },
+      {
+        "row": 6399,
+        "code": "BA42.0",
+        "title": "- - - - Subsequent myocardial infarction, ST elevation myocardial infarction",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "http://id.who.int/icd/entity/1401866267",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1401866267",
+        "parent_uri": "http://id.who.int/icd/entity/993844371",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      {
+        "row": 6400,
+        "code": "BA42.1",
+        "title": "- - - - Subsequent myocardial infarction, non-ST elevation myocardial infarction",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "http://id.who.int/icd/entity/2070501946",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/2070501946",
+        "parent_uri": "http://id.who.int/icd/entity/993844371",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      {
+        "row": 6401,
+        "code": "BA42.Z",
+        "title": "- - - - Subsequent myocardial infarction, unspecified",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/993844371/unspecified",
+        "parent_uri": "http://id.who.int/icd/entity/993844371",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      }
+    ],
+    "scope": "All14current sections were read for semantic applicability; this is a scoped classification assessment, not another medical-source review or a coding-rule lookup.",
+    "shared_section_assessment": {
+      "sections_read": [
+        "summary",
+        "causes_risks",
+        "red_flags",
+        "care",
+        "diagnosis",
+        "differentials",
+        "treatment",
+        "medications",
+        "diet",
+        "daily_care",
+        "special_populations",
+        "prognosis_followup",
+        "complications",
+        "prevention"
+      ],
+      "common_material": "Overview, risks, emergency actions, medicines, diet, rehabilitation, populations, follow-up, complications and prevention are shared MI education; they should remain shared rather than be duplicated into several articles.",
+      "type_specific_material": "Diagnosis names ECG-based STEMI/NSTEMI distinction and notes NSTEMI is not mild; treatment separates STEMI reperfusion/thrombolysis from risk-guided NSTEMI care. These are substantive partial coverage, not title-only mentions.",
+      "remaining_classification_work": "Explicitly assign the common and type-specific claims to each eligible acute category against its official semantic scope; current frozen title/leaf table alone does not establish full category applicability. No new clinical dose algorithm or separate duplicate article is required simply to complete that mapping."
+    },
+    "decisions": [
+      {
+        "code": "BA41",
+        "decision": "excluded_parent",
+        "complete": false,
+        "reason": "Official parent is excluded; must not count a parent review as a denominator member."
+      },
+      {
+        "code": "BA41.0",
+        "decision": "partial_mapping_pending",
+        "complete": false,
+        "reason": "Substantive STEMI diagnosis/treatment material with shared education exists. This review does not certify the entire category as complete from the umbrella title; retain pending category-level applicability assignment."
+      },
+      {
+        "code": "BA41.1",
+        "decision": "partial_mapping_pending",
+        "complete": false,
+        "reason": "Substantive NSTEMI distinctions exist. Shared14section material is useful, but complete category-level applicability has not been explicitly adjudicated."
+      },
+      {
+        "code": "BA41.Z",
+        "decision": "mapping_pending",
+        "complete": false,
+        "reason": "A generic MI title is not automatically the coding meaning of acute MI unspecified. No explicit residual-category scope or handling is currently assigned."
+      },
+      {
+        "code": "BA42.*",
+        "decision": "mention_only_not_complete",
+        "complete": false,
+        "reason": "Recurrence warnings and prevention do not constitute independently reviewed subsequent-MI leaf-category coverage. BA42 itself is a parent; its3leaves remain separate."
+      }
+    ],
+    "coverage_count_delta": 0,
+    "note": "Pending classification is separate from editorial release readiness; no evidence of a medical error is implied and no mapping file was edited."
+  },
+  "validation": {
+    "json_structure": "validated on generation",
+    "hash_inputs": "read from current repository files",
+    "five_changed_claims_match_review_fixes": true,
+    "inherited_claim_count": 85,
+    "read_only_shared_inputs": true,
+    "scope_stop": "One targeted report only. Parent may implement exactly specified patches and record hash chain without repeating the same review."
+  },
+  "rights": "Original audit paraphrases and precise source locations only; no source full text redistributed.",
+  "claim_kind_correction": {
+    "claim_id": "care-3c",
+    "reviewed_kind": "action",
+    "approved_kind": "explanation",
+    "text_unchanged": true,
+    "decision": "agree",
+    "assessment": "This sentence explains why another patient’s return-to-driving timeline is not transferable: local regulations also govern eligibility. It states no legal waiting period, clearance criterion, assessment threshold, new clinical action or specific restriction. Its imperatives in Chinese express this applicability boundary; the existing English is directly explanatory. The preceding care-3b already carries the team-agreed return-to-work/activity action separately. Classification as explanation reflects the actual information role, not a relaxation of an uncorroborated clinical action.",
+    "source_id": "mi-nhlbi-recovery",
+    "locator": "Returning to normal activities115–119; inherited medicines report actual reading",
+    "no_new_source_review_needed": true,
+    "implementation": "Change this ledger claim kind only; preserve both texts and its source binding, then recompute any affected ledger hashes."
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-02",
+  "verdict": "accepted_editorial_cross_check",
+  "medical_reviewed": false,
+  "target": {
+    "id": "myocardial-infarction",
+    "author_canonical_sha256": "5d96ccf540b698f0c520256d661e3e2fa46c94a0aa5a2c62b038f8452f2de9cc",
+    "prior_targeted_review_sha256": "d0d23d652aebfe5eeac53f151427284eef6c015931b7b9dec390a90583e09a93",
+    "editorial_ledger_sha256": "4839d24a8bb81053c296b4b176482a9c58cb9ba7b507a9c6247953efd31131b7"
+  },
+  "evidence_chain": [
+    {
+      "path": "reports/batch-01-mi-context-recheck.json",
+      "file_sha256": "2228d578758ee190c1f88990e857cdbe59de8a3af96a70bdc0e16f28700ec79d"
+    },
+    {
+      "path": "reports/batch-01-mi-diagnosis-recheck.json",
+      "file_sha256": "6ff0ca62090c183b715d217a71337be826f322a3e1e895365f6aeaa06eace20f"
+    },
+    {
+      "path": "reports/batch-01-mi-medicine-recheck.json",
+      "file_sha256": "30627e1f37e0bd0b3c37dd74cb0c3d7606a877819386ba17ba919339610a4ac4"
+    },
+    {
+      "path": "reports/batch-01-mi-maternal-action-followup.json",
+      "file_sha256": "42136aa5ebd353bda4fe46cbba9794d73ac8fa368737e6ac868ecba1fc82b650"
+    },
+    {
+      "path": "reports/batch-01-mi-review-fixes.json",
+      "file_sha256": "889ee87572a3545443a150c11c73c57b22f5e453dbe7dbcbd31dabc9df67600d"
+    },
+    {
+      "path": "reports/batch-01-mi-final-targeted-recheck.json",
+      "file_sha256": "c2dee241e691be02d4595d1e6f66c562d94877b0f6d633a445201154a714c62d"
+    }
+  ],
+  "scope": {
+    "sections": 14,
+    "claims": 90,
+    "unchanged_claims_inherited": 85,
+    "targeted_revised_claims": 5,
+    "sources": 51
+  },
+  "actually_read_source_ids": [
+    "mi-acs-2025",
+    "mi-adam-activity",
+    "mi-aha-acs-summary",
+    "mi-aha-aspirin",
+    "mi-aha-bls-2025",
+    "mi-ashp-clopidogrel",
+    "mi-cuh-rehab-exercise",
+    "mi-diabetesuk-exercise",
+    "mi-diabetesuk-meal-lifestyle",
+    "mi-diabetesuk-meal-plan",
+    "mi-esc-pregnancy-2025",
+    "mi-fda-aspirin",
+    "mi-mayo-ace",
+    "mi-mayo-angina",
+    "mi-mayo-beta",
+    "mi-mayo-bleeding",
+    "mi-mayo-causes",
+    "mi-mayo-chest",
+    "mi-mayo-rehab",
+    "mi-mayo-statin-risks",
+    "mi-mayo-treatment",
+    "mi-mayo-vomiting-blood",
+    "mi-merck-acs-medications",
+    "mi-nhlbi-causes",
+    "mi-nhlbi-diagnosis",
+    "mi-nhlbi-food",
+    "mi-nhlbi-overview",
+    "mi-nhlbi-recovery",
+    "mi-nhlbi-shock",
+    "mi-nhlbi-symptoms",
+    "mi-nhlbi-treatment",
+    "mi-nhlbi-women",
+    "mi-nhs",
+    "mi-nhs-angina",
+    "mi-nhs-beta-class",
+    "mi-nhs-bisoprolol",
+    "mi-nhs-chest",
+    "mi-nhs-clopidogrel",
+    "mi-nhs-ramipril",
+    "mi-nhs-statins",
+    "mi-nhs-wounds",
+    "mi-nice-cg95",
+    "mi-nice-ng185",
+    "mi-niddk-ckd-food",
+    "mi-niddk-diabetes-food",
+    "mi-nkf-ckd-food",
+    "mi-nlm-troponin",
+    "mi-rcuk-firstaid-2025",
+    "mi-sja-cpr",
+    "mi-sps-ace-monitoring",
+    "mi-uhd-cardiac-medicines"
+  ],
+  "resolved_findings": [
+    {
+      "id": "MI-T01",
+      "status": "resolved",
+      "resolution": "Explicit OR matches both CUH conditions and current English; this exact proposed text is already independently reviewed."
+    },
+    {
+      "id": "MI-T02",
+      "status": "resolved",
+      "resolution": "Body and Mayo binding are correct; two inherited assessment strings still state the resolved single-source limitation."
+    },
+    {
+      "id": "MI-T03",
+      "status": "resolved",
+      "resolution": "These two old CUH pages were not reread in the three frozen reports or this targeted recheck. Do not add them to original_sources_reopened. Already reviewed, now bound alternatives support every relevant subclaim."
+    },
+    {
+      "id": "MI-T04",
+      "status": "resolved",
+      "resolution": "This sentence explains why another patient’s return-to-driving timeline is not transferable: local regulations also govern eligibility. It states no legal waiting period, clearance criterion, assessment threshold, new clinical action or specific restriction. Its imperatives in Chinese express this applicability boundary; the existing English is directly explanatory. The preceding care-3b already carries the team-agreed return-to-work/activity action separately. Classification as explanation reflects the actual information role, not a relaxation of an uncorroborated clinical action."
+    }
+  ],
+  "precision_patch_verification": "Applied exact independently reviewed OR text, superseded maternal assessments, and removed two un-reopened redundant source links; verified all bilingual substrings, section/source hashes and independent groups. Editorial date updated to actual integration date, without changing clinical review.",
+  "classification_mappings": [
+    {
+      "code": "BA41.0",
+      "status": "partial",
+      "method": "semantic_scope_review",
+      "rationale": "Substantive STEMI diagnosis/treatment material with shared education exists. This review does not certify the entire category as complete from the umbrella title; retain pending category-level applicability assignment.",
+      "review_report": "reports/batch-01-mi-final-targeted-recheck.json"
+    },
+    {
+      "code": "BA41.1",
+      "status": "partial",
+      "method": "semantic_scope_review",
+      "rationale": "Substantive NSTEMI distinctions exist. Shared14section material is useful, but complete category-level applicability has not been explicitly adjudicated.",
+      "review_report": "reports/batch-01-mi-final-targeted-recheck.json"
+    },
+    {
+      "code": "BA41.Z",
+      "status": "pending",
+      "method": "semantic_scope_review",
+      "rationale": "A generic MI title is not automatically the coding meaning of acute MI unspecified. No explicit residual-category scope or handling is currently assigned.",
+      "review_report": "reports/batch-01-mi-final-targeted-recheck.json"
+    }
+  ],
+  "remaining": {
+    "clinical_signoff": false,
+    "coverage_count_delta": 0,
+    "category_work": "Explicitly assign the common and type-specific claims to each eligible acute category against its official semantic scope; current frozen title/leaf table alone does not establish full category applicability. No new clinical dose algorithm or separate duplicate article is required simply to complete that mapping."
+  },
+  "source_limits": "Official indexed-only guideline reading is recorded without full-text claims. Shared upstream evidence, source licensing and bounded reasoning remain in the claim ledgers and original reports."
+}

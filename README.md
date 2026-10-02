@@ -6,7 +6,7 @@
 
 [GitHub 仓库](https://github.com/StarlightDamian/knowledge-healthcare) · [个人主页入口](https://www.zengyuwei.cn/home/)
 
-[English](README.en.md) · [本地网页](index.html) · [正文标准](docs/content-depth-standard.md) · [覆盖审计与补充计划](docs/coverage-audit-and-roadmap.md) · [使用/部署](docs/deployment.md) · [证据政策](docs/evidence-policy.md) · [本批测试与上线证据](reports/batch-01-torsion-release-validation.json)
+[English](README.en.md) · [本地网页](index.html) · [正文标准](docs/content-depth-standard.md) · [覆盖审计与补充计划](docs/coverage-audit-and-roadmap.md) · [使用/部署](docs/deployment.md) · [证据政策](docs/evidence-policy.md) · [本批测试与上线证据](reports/batch-01-mi-release-validation.json)
 
 ## 已经可以做什么
 
@@ -20,10 +20,10 @@
 
 | 项目 | 本版本状态 |
 |---|---|
-| 健康主题 | **74** 个病症主题，包含69个疾病或健康问题及5个症状入口 |
+| 健康主题 | **75** 个病症主题，包含70个疾病或健康问题及5个症状入口 |
 | 分类 | **11** 个大科、**33** 个有内容的亚科；保留18个归档主目录及既有科室ID |
-| 医学正文 | 74篇中文、英文导读与分条知识，共 **1,036** 个双语字段块；卡片从概览首段自动提取 |
-| 参考资料 | 逐节来源定位与边界见 [扩写记录](reports/content-expansion/)；保留353条来源记录 |
+| 医学正文 | 75篇中文、英文导读与分条知识，共 **1,050** 个双语字段块；卡片从概览首段自动提取 |
+| 参考资料 | 逐节来源定位与边界见 [扩写记录](reports/content-expansion/)；保留404条来源记录 |
 | 论文卡 | 3 个原始随机试验的摘要级草稿；1 个仅书目元数据，未抽取治疗结论 |
 | 抽样交叉检查 | 普通感冒 5 条窄主张的双来源编辑核对，见 [记录](reports/claim-spot-checks.md) |
 | 国际化 | 12 种界面语言；仅中英有医学正文，其余明确回退英语，未完成地区医学本地化 |
@@ -32,13 +32,13 @@
 | 横向比较 | 每页50个主题；跨页多选；22列全文CSV；保留来源和状态 |
 | 癌症地图 | 36 个中英知识单元；癌症统计分组与病理、分期、分子标志物分开解释 |
 | 全生命周期 | 8 组、20 个中英健康因素；6 个年龄段与孕产附加情境引用共用因素 |
-| 扩充清单 | **196** 个仅标题待办，与完整正文分开统计 |
-| 医学签审 / 完成逐项编辑核验的主题 | **0 / 2**；睡眠呼吸暂停与睾丸扭转合计28节、108项中英主张通过来源核验和独立对抗审阅 |
-| 95% 全病种覆盖 | ICD-11 MMS 2026-01：冻结13,155个合格类别；完整证据核验覆盖2 / 13,155（约0.0152%），未达95%；2条语义映射确认，47条名称候选映射待裁定 |
+| 扩充清单 | **195** 个仅标题待办，与完整正文分开统计 |
+| 医学签审 / 完成逐项编辑核验的主题 | **0 / 3**；睡眠呼吸暂停、睾丸扭转与心肌梗死合计42节、198项中英主张通过来源核验和独立对抗审阅 |
+| 95% 全病种覆盖 | ICD-11 MMS 2026-01：冻结13,155个合格类别；完整证据核验覆盖2 / 13,155（约0.0152%），未达95%；2条语义映射确认，另有2条心梗部分映射、48条待裁定映射 |
 
 独立医学审阅、译文审核与危险提示规则的临床验证待完成。网页通过“内容与来源说明”和详情末尾的“来源与编辑信息”集中展示状态，每节保留参考链接。高级专业数据（如患病率、定量预后和地区药品批准）待整理，标为 `null / not_yet_curated`。
 
-首批20个主题已形成双语候选；睡眠呼吸暂停与睾丸扭转完成逐项核验，其余18个保留具体补证与修订任务，未计入完整覆盖。核验来源的共同依据和地区差异见 [独立审阅记录](reports/batch-01-osa-independent.json)。
+首批20个主题已形成双语候选；睡眠呼吸暂停、睾丸扭转与心肌梗死完成逐项核验，其余17个保留具体补证与修订任务，未计入完整覆盖。核验来源的共同依据和地区差异见 [独立审阅记录](reports/batch-01-osa-independent.json)。
 
 已保存 [文案审查记录](reports/anti-defensive-writing-audit.md) 和 [冻结目录覆盖数据](reports/icd-coverage.json)。新增病种按冻结目录、急危重症、常见病症、其余类别和95%复核的顺序推进。
 
@@ -90,10 +90,10 @@ src/web/benchmark.mjs     可重复的合成检索基准，不是临床验证
 tests/                    单元测试、检索/危险表达回归、浏览器测试
 schemas/                  JSON Schema 2020-12
 data/catalog/index.json   轻量索引：Agent 先读此文件，再读单个主题
-data/conditions/          74 个双语结构化主题
+data/conditions/          75 个双语结构化主题
 data/knowledge/           癌症地图、健康因素与年龄情境；通过ID复用正文
 data/evidence/            来源、论文卡、冲突、空审核者注册表
-data/catalog/backlog.json 196 个未完成标题，与正文分离
+data/catalog/backlog.json 195 个未完成标题，与正文分离
 templates/                新主题模板
 docs/                     架构、钢人论证、证据、覆盖率、本地化、贡献和部署
 reports/                  当前检查结果和审查记录

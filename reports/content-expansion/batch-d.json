@@ -2786,5 +2786,945 @@
         "uncertainty_boundary": "Exact bilingual claims, scope, independence and bounded inferences recorded in batch-01-torsion.json and its independent report; not clinician sign-off."
       }
     }
+  },
+  {
+    "condition_id": "myocardial-infarction",
+    "canonical_claim_records": "data/evidence/editorial-checks/batch-01-mi.json",
+    "checked_at": "2026-10-02",
+    "medical_reviewed": false,
+    "inspected_sources": [
+      {
+        "source_id": "mi-nhs",
+        "url": "https://www.nhs.uk/conditions/heart-attack/",
+        "locators": [
+          "Introduction; Heart attack is different to cardiac arrest",
+          "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60",
+          "Introduction15; recovery79–91; While waiting43–48; Immediate action26–37; Recovering/returning to normal activities",
+          "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60",
+          "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60",
+          "Treatments; Medicines after heart attack",
+          "Reducing your risk",
+          "Recovering; Support after a heart attack; Immediate action26–37; urgent advice38–42; Support after a heart attack",
+          "Recovering; Support after a heart attack; Symptoms; Immediate action required",
+          "Immediate action26–32; cardiac arrest139–141",
+          "Reducing your risk"
+        ],
+        "retrieval_scope": "Reviewed 31 March 2026; symptoms, emergency advice, tests, treatment, recovery and prevention."
+      },
+      {
+        "source_id": "mi-nhlbi-overview",
+        "url": "https://www.nhlbi.nih.gov/health/heart-attack",
+        "locators": [
+          "What is a heart attack?"
+        ],
+        "retrieval_scope": "Updated 24 March 2022; What is a heart attack?."
+      },
+      {
+        "source_id": "mi-nhlbi-symptoms",
+        "url": "https://www.nhlbi.nih.gov/health/heart-attack/symptoms",
+        "locators": [
+          "Symptoms98–113; When to call9-1-1 114–125",
+          "Symptoms98–113; When to call9-1-1 114–125",
+          "Symptoms98–113; When to call9-1-1 114–125"
+        ],
+        "retrieval_scope": "Updated 24 March 2022; Symptoms."
+      },
+      {
+        "source_id": "mi-nhlbi-diagnosis",
+        "url": "https://www.nhlbi.nih.gov/health/heart-attack/diagnosis",
+        "locators": [
+          "Initial ECG98–101; Blood tests102–106"
+        ],
+        "retrieval_scope": "Updated 24 March 2022; Diagnosis."
+      },
+      {
+        "source_id": "mi-nhlbi-causes",
+        "url": "https://www.nhlbi.nih.gov/health/heart-attack/causes",
+        "locators": [
+          "What causes a heart attack?; Other causes; Risk factors you can control; cannot control"
+        ],
+        "retrieval_scope": "Updated 24 March 2022; Causes and risk factors."
+      },
+      {
+        "source_id": "mi-nhlbi-treatment",
+        "url": "https://www.nhlbi.nih.gov/health/heart-attack/treatment",
+        "locators": [
+          "Emergency treatment; Procedures; Emergency treatments: thrombolytics",
+          "Medicines: after stent",
+          "Emergency treatment; Procedures"
+        ],
+        "retrieval_scope": "Updated 24 March 2022; Treatment."
+      },
+      {
+        "source_id": "mi-nhlbi-recovery",
+        "url": "https://www.nhlbi.nih.gov/health/heart-attack/recovery",
+        "locators": [
+          "Rehabilitation99–117; long-term medicines122–130; Returning to normal activities115–119; second attack144; Returning to normal activities115–119",
+          "Medicines123–130; Medicines125–126; Medicines129–130; Medicines124; Medicines128",
+          "Medicines130; lifestyle131–144",
+          "Cardiac rehabilitation; Returning to normal activities; Returning to activities117; recurrence144; Medicines130; mental health section",
+          "Cardiac rehabilitation; Returning to normal activities; Medicines; Cardiac rehabilitation; Take steps to prevent another heart attack",
+          "What kind of health problems can a heart attack cause?",
+          "Take steps to prevent another heart attack; Medicines130; Cardiac rehabilitation"
+        ],
+        "retrieval_scope": "Updated 24 March 2022; Recovery."
+      },
+      {
+        "source_id": "mi-nhlbi-women",
+        "url": "https://www.nhlbi.nih.gov/health/heart-attack/women",
+        "locators": [
+          "Symptoms107–119; Pregnancy120–126"
+        ],
+        "retrieval_scope": "Updated 24 March 2022; Heart attacks in women."
+      },
+      {
+        "source_id": "mi-mayo-causes",
+        "url": "https://www.mayoclinic.org/diseases-conditions/heart-attack/symptoms-causes/syc-20373106",
+        "locators": [
+          "Overview269–277; Symptoms283–298; Complications358–361",
+          "Causes; Risk factors",
+          "Symptoms283–299; When to see doctor302–308; Causes322–334",
+          "When to see a doctor302–308; When to see a doctor: aspirin advice299–306",
+          "Symptoms283–299; When to see doctor302–308; Causes322–334",
+          "Symptoms283–299; When to see doctor302–308; Causes322–334; When to see a doctor302–308",
+          "Complications; Complications: cardiogenic shock and heart failure; Complications358–363; emergency302–308",
+          "Prevention"
+        ],
+        "retrieval_scope": "Version 27 March 2026; medical review 14 January 2026; symptoms, causes, risks and complications."
+      },
+      {
+        "source_id": "mi-mayo-treatment",
+        "url": "https://www.mayoclinic.org/diseases-conditions/heart-attack/diagnosis-treatment/drc-20373112",
+        "locators": [
+          "Diagnosis269–283",
+          "Surgical and other procedures301–307",
+          "Medications290–298; Medications298; Lifestyle; Medications: ACE inhibitors297; Medications: beta blockers296",
+          "Self care321",
+          "Preparing for appointment: symptoms and medicine list"
+        ],
+        "retrieval_scope": "Version 27 March 2026; Diagnosis; Treatment; Medications; Procedures; Rehabilitation; appointment preparation."
+      },
+      {
+        "source_id": "mi-nhlbi-food",
+        "url": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods",
+        "locators": [
+          "Heart-healthy food groups; sodium and saturated fat"
+        ],
+        "retrieval_scope": "Read 30 September 2026; recommended food groups, sodium and saturated fat."
+      },
+      {
+        "source_id": "mi-nhs-chest",
+        "url": "https://www.nhs.uk/symptoms/chest-pain/",
+        "locators": [
+          "Common causes29–47"
+        ],
+        "retrieval_scope": "Read 30 September 2026; common causes table and emergency advice."
+      },
+      {
+        "source_id": "mi-nhs-clopidogrel",
+        "url": "https://www.nhs.uk/medicines/clopidogrel/side-effects-of-clopidogrel/",
+        "locators": [
+          "Serious side effects46–51; Immediate action52–62"
+        ],
+        "retrieval_scope": "Read 30 September 2026; bleeding and serious adverse effect actions."
+      },
+      {
+        "source_id": "mi-ashp-clopidogrel",
+        "url": "https://medlineplus.gov/druginfo/meds/a601040.html",
+        "locators": [
+          "Precautions65–73; Other information123",
+          "Why prescribed53; How used57; Serious side effects91–98; Precautions67–68; Other information123"
+        ],
+        "retrieval_scope": "Why prescribed; How used; Precautions; Serious side effects; Other information. ASHP authorship is explicit; NLM hosts it."
+      },
+      {
+        "source_id": "mi-mayo-vomiting-blood",
+        "url": "https://www.mayoclinic.org/symptoms/vomiting-blood/basics/causes/sym-20050732",
+        "locators": [
+          "When to see a doctor307–321"
+        ],
+        "retrieval_scope": "Definition; When to see a doctor: immediate emergency department; shock signs for calling EMS. Medical review 23 February 2022."
+      },
+      {
+        "source_id": "mi-nice-cg95",
+        "url": "https://www.nice.org.uk/guidance/CG95/chapter/recommendations",
+        "locators": [
+          "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7",
+          "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7"
+        ],
+        "retrieval_scope": "Final recommendations 1.2.1.3–8,1.2.2.8,1.2.3.4,1.2.4.2,1.2.5.2–7,1.2.6.1–2. Official indexed passages read; direct page 403. Draft versions excluded."
+      },
+      {
+        "source_id": "mi-nlm-troponin",
+        "url": "https://medlineplus.gov/lab-tests/troponin-test/",
+        "locators": [
+          "What is a troponin test44–50; What results mean83–103; References113–127"
+        ],
+        "retrieval_scope": "What is a troponin test; What results mean; References. NIH/NHLBI shared group; references include NHLBI, Cleveland, textbooks. Generic hour examples not adopted as universal algorithm."
+      },
+      {
+        "source_id": "mi-nhs-angina",
+        "url": "https://www.nhs.uk/conditions/angina/",
+        "locators": [
+          "Angina attacks28; Treatment29–37; Call99938–49; NHS11150–55"
+        ],
+        "retrieval_scope": "How to treat angina; Immediate call999 versus urgent111 conditions; symptoms and assessment. Page opened; review date not extracted."
+      },
+      {
+        "source_id": "mi-mayo-angina",
+        "url": "https://www.mayoclinic.org/diseases-conditions/angina/symptoms-causes/syc-20369373",
+        "locators": [
+          "Types277–284; Symptoms307–309; When to see doctor333–337"
+        ],
+        "retrieval_scope": "Types: stable and unstable angina; Symptoms; When to see doctor. Current page opened; no date inferred."
+      },
+      {
+        "source_id": "mi-mayo-chest",
+        "url": "https://www.mayoclinic.org/diseases-conditions/chest-pain/symptoms-causes/syc-20370838",
+        "locators": [
+          "When to see doctor310–314; Heart causes352; Lung causes360–363"
+        ],
+        "retrieval_scope": "Heart-related causes: aortic dissection; Lung-related causes: pulmonary embolism; urgent assessment. References cite vascular society/NHLBI/AHA and textbooks; not independent trials."
+      },
+      {
+        "source_id": "mi-nice-ng185",
+        "url": "https://www.nice.org.uk/guidance/NG185/chapter/recommendations",
+        "locators": [
+          "Final1.1.1–6,1.1.19; Final1.1.1–6;1.1.19; NSTE-ACS section1.2; official NSTEMI visual summary",
+          "Final NG1851.4.15–16 and1.4.21–24; official indexed passages; Final1.4.10; official indexed PDF page24",
+          "Final1.4.2–3;1.2.27–29; Final1.4.29–33; official indexed recommendations; Final1.4.2–3 and1.7.1–2; official indexed HTML/PDF passages"
+        ],
+        "retrieval_scope": "Final official indexed text 1.1.1–6,1.1.19,1.2.27–29,1.4.1–3 and visual NSTEMI summary. Recommendations include retained 2013 text; no whole-page access claimed."
+      },
+      {
+        "source_id": "mi-acs-2025",
+        "url": "https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009",
+        "locators": [
+          "§5.3.1 synopsis and Table14; §5.3.1 synopsis; Table14"
+        ],
+        "retrieval_scope": "Official indexed section5.3.1 synopsis/Table14 and section6; shared joint guideline, not independent from AHA summary. Full article fetch unavailable."
+      },
+      {
+        "source_id": "mi-aha-acs-summary",
+        "url": "https://professional.heart.org/en/science-news/2025-guideline-for-the-management-of-patients-with-acute-coronary-syndromes/top-things-to-know",
+        "locators": [
+          "Items1,4,6",
+          "Item2",
+          "Item9"
+        ],
+        "retrieval_scope": "Items2,4,9: conditional DAPT, NSTE-ACS risk, lipid reassessment. Same source origin as joint guideline; not a second independent guideline."
+      },
+      {
+        "source_id": "mi-aha-aspirin",
+        "url": "https://www.heart.org/en/health-topics/heart-attack/treatment-of-a-heart-attack/aspirin-and-heart-disease",
+        "locators": [
+          "Should I take aspirin during a heart attack or stroke?45–48; Know the risks24–35",
+          "Why aspirin?; DAPT overview; DAPT: Who needs it and for how long58–83",
+          "Recommendation18–23; Know risks24–35"
+        ],
+        "retrieval_scope": "Recommendation; Know the risks; DAPT medicines and duration. AHA writing shares organization and upstream guidelines with joint ACS material."
+      },
+      {
+        "source_id": "mi-fda-aspirin",
+        "url": "https://www.fda.gov/drugs/safe-use-aspirin/using-aspirin-lower-your-risk-heart-attack-or-stroke-what-you-should-know",
+        "locators": [
+          "Not Without Risks71–73",
+          "Not Without Risks72–73",
+          "Opening61; Not Without Risks71–73"
+        ],
+        "retrieval_scope": "Opening advice; Not Without Risks. FDA consumer writing, not manufacturer label. Page has no extracted publication date; no absolute ban on all primary prevention inferred."
+      },
+      {
+        "source_id": "mi-mayo-ace",
+        "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/in-depth/ace-inhibitors/art-20047480",
+        "locators": [
+          "Side effects303–316"
+        ],
+        "retrieval_scope": "Side effects: dry cough, low-BP dizziness, potassium, kidney function; questions to healthcare team. References include AHA hypertension guideline and textbooks."
+      },
+      {
+        "source_id": "mi-mayo-beta",
+        "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/in-depth/beta-blockers/art-20044522",
+        "locators": [
+          "Mechanism264–265; uses283–287; Side effects290–310"
+        ],
+        "retrieval_scope": "Side effects: fatigue/dizziness, asthma caution, do not stop suddenly. References include AHA hypertension guideline and textbooks."
+      },
+      {
+        "source_id": "mi-nhs-bisoprolol",
+        "url": "https://www.nhs.uk/medicines/bisoprolol/",
+        "locators": [
+          "How to take40; side effects68–83; suitability112–120"
+        ],
+        "retrieval_scope": "How to take: no abrupt stop; Side effects; Who can and cannot take: breathing problems. Specific bisoprolol information used within beta-blocker context, not all-agent contraindication."
+      },
+      {
+        "source_id": "mi-nhs-ramipril",
+        "url": "https://www.nhs.uk/medicines/ramipril/side-effects-of-ramipril/",
+        "locators": [
+          "Common effects22–31; Common adverse effects22–31"
+        ],
+        "retrieval_scope": "Common adverse effects: persistent dry cough and dizziness; contact prescriber for troublesome cough. Specific ramipril exemplar; no date inferred."
+      },
+      {
+        "source_id": "mi-nhs-statins",
+        "url": "https://www.nhs.uk/medicines/statins/",
+        "locators": [
+          "Side effects75–88"
+        ],
+        "retrieval_scope": "Current statin page opened; side-effect and consultation guidance. Old /conditions/statins/side-effects URL failed; no claim of reading that old page."
+      },
+      {
+        "source_id": "mi-nhs-wounds",
+        "url": "https://www.nhs.uk/conditions/cuts-and-grazes/",
+        "locators": [
+          "Immediate action55–66"
+        ],
+        "retrieval_scope": "Immediate action: uncontrolled wound bleeding, spurting/large/deep cut; do not drive. External wound scope only."
+      },
+      {
+        "source_id": "mi-mayo-bleeding",
+        "url": "https://www.mayoclinic.org/first-aid/first-aid-severe-bleeding/basics/art-20056661",
+        "locators": [
+          "Severe bleeding first aid262–266"
+        ],
+        "retrieval_scope": "Severe external bleeding; call local EMS for deep or uncertain severe wound; no GI-bleed classification borrowed."
+      },
+      {
+        "source_id": "mi-esc-pregnancy-2025",
+        "url": "https://academic.oup.com/eurheartj/article/46/43/4462/8234487",
+        "locators": [
+          "§12.1/Figure11;§12.2.1.1–2;§12.2.4;§4.3.5–4.3.5.3;§5.1"
+        ],
+        "retrieval_scope": "Official publisher indexed sections12.1, Figure11,5.1,12.3.3.2,2.2 and4.3.5–4.3.5.3 read; direct HTML/slides unavailable. Same ESC guideline across formats. Official indexed correction ehaf1011 (https://academic.oup.com/eurheartj/article/47/7/812/8400706), published2025-12-22, issue2026-02-14, six corrections actually read2October2026: LA term/projection, obstetric drug unit, LA diameter, AR definition and Figure15 dose. Current article uses none of those technical or dose details. Correction full HTML remains inaccessible; no full-text-read claim."
+      },
+      {
+        "source_id": "mi-aha-bls-2025",
+        "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support",
+        "locators": [
+          "Part7 §6.1 recommendation1;§6.2 recommendations1–3 and synopsis138–166"
+        ],
+        "retrieval_scope": "2025 Part7 sections6.1–6.2; unresponsive absent/abnormal breathing lay recognition, immediate CPR/dispatch. Shares ILCOR evidence, not independent trials."
+      },
+      {
+        "source_id": "mi-sja-cpr",
+        "url": "https://www.sja.org.uk/first-aid-advice/cpr/",
+        "locators": [
+          "What is CPR131–135; What to do140–170"
+        ],
+        "retrieval_scope": "Clinical reviewer Dr Lynn Thomas; adults unresponsive/not breathing normally; immediate CPR and ambulance-controller instructions. NHS CPR link redirects here; SJA is author."
+      },
+      {
+        "source_id": "mi-nhlbi-shock",
+        "url": "https://www.nhlbi.nih.gov/health/cardiogenic-shock",
+        "locators": [
+          "Overview94–97"
+        ],
+        "retrieval_scope": "Overview94–97: inadequate pump perfusion, serious heart attack and heart failure; same NIH group as other NHLBI pages."
+      },
+      {
+        "source_id": "mi-niddk-ckd-food",
+        "url": "https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/healthy-eating-adults-chronic-kidney-disease",
+        "locators": [
+          "Potassium200–213"
+        ],
+        "retrieval_scope": "Choose foods to keep potassium in goal range200–213; portions according to high potassium, medicines and blood tests. Adult CKD scope."
+      },
+      {
+        "source_id": "mi-nkf-ckd-food",
+        "url": "https://www.kidney.org/kidney-topics/nutrition-and-kidney-disease-stages-1-5-not-dialysis",
+        "locators": [
+          "Changes to diet40–44; nutrients57–73"
+        ],
+        "retrieval_scope": "Changes to diet; registered dietitians; nutrients57–73; no universal plan, kidney function, drugs and tests guide potassium. Excludes dialysis."
+      },
+      {
+        "source_id": "mi-niddk-diabetes-food",
+        "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/healthy-living-with-diabetes",
+        "locators": [
+          "Meal planning; Find best times176–182; Meal planning176–183; plan201; activity215"
+        ],
+        "retrieval_scope": "Meal plan and timing; timing depends on glucose medicines, activity and other disease. Does not create a post-MI dosing or meal formula."
+      },
+      {
+        "source_id": "mi-mayo-rehab",
+        "url": "https://www.mayoclinic.org/tests-procedures/cardiac-rehabilitation/about/pac-20385192",
+        "locators": [
+          "Preparation315–317; gradual exercise339–346",
+          "Nutrition347–351; Nutrition347–351; Medicine education352–356",
+          "During rehabilitation339–346",
+          "Preparation315–317; programme339–367; How you prepare315–317; tailored exercise/risk assessment310–312"
+        ],
+        "retrieval_scope": "Preparation315–317; during rehab339–364; follow-up367. Nutrition tailored to diabetes/BP/lipids; activity capability/risk assessment; clinical review9September2024."
+      },
+      {
+        "source_id": "mi-adam-activity",
+        "url": "https://medlineplus.gov/ency/patientinstructions/000093.htm",
+        "locators": [
+          "Household activities94; When to call97–113 (inherited context review, not reopened here)"
+        ],
+        "retrieval_scope": "Household activities94; When to call97–113. NLM hosts, ADAM writes/reviews; textbook references and copyright retained. Universal week-by-week progression not adopted."
+      },
+      {
+        "source_id": "mi-cuh-rehab-exercise",
+        "url": "https://www.cuh.nhs.uk/patient-information/cardiac-rehabilitation-home-exercise-guidelines/",
+        "locators": [
+          "Exercise safety298–310; normal exertion327"
+        ],
+        "retrieval_scope": "Document7260 version2; Exercise safety298–310 and usual comfortable exertion327 actually read. Stop/contact criteria after a cardiac event; no exercise schedule or RPE targets imported."
+      },
+      {
+        "source_id": "mi-diabetesuk-meal-plan",
+        "url": "https://www.diabetes.org.uk/living-with-diabetes/eating/meal-plans/meal-planning-for-diabetes",
+        "locators": [
+          "Who to talk to55–59; medication61–68"
+        ],
+        "retrieval_scope": "Dietitian55–59 and medicine/diet-change precautions61–68 actually read. No post-MI weight-loss programme, insulin dose or fixed meal schedule inferred. Institutional registered-clinical-team production process also read2October2026."
+      },
+      {
+        "source_id": "mi-diabetesuk-meal-lifestyle",
+        "url": "https://www.diabetes.org.uk/living-with-diabetes/eating/your-lifestyle-diabetes-and-food",
+        "locators": [
+          "Different needs26–34; shift-work team planning59; Food/activity diary34; team help59; medication/team72"
+        ],
+        "retrieval_scope": "Different needs26–34, team-guided meal timing59 and medicine/lifestyle72 actually read. No shift schedule or daily fluid target imported."
+      },
+      {
+        "source_id": "mi-diabetesuk-exercise",
+        "url": "https://www.diabetes.org.uk/living-with-diabetes/exercise/blood-sugar-levels",
+        "locators": [
+          "Activity records/team55–64; insulin/activity72–78"
+        ],
+        "retrieval_scope": "Activity/medicine coordination55–64,72–78; last reviewed1November2024, due1November2027. Only team-guided coordination is used; no glucose threshold, fixed monitoring interval or insulin formula."
+      },
+      {
+        "source_id": "mi-mayo-statin-risks",
+        "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/statin-side-effects/art-20046013",
+        "locators": [
+          "Introduction258–270; Introduction270; muscle symptoms272–277; assessment320–324; Muscle pain and damage272–277; assessment320–324"
+        ],
+        "retrieval_scope": "Role 258–270; muscle pain versus rare injury 272–277; other causes/assessment 320–324. Supports contacting team for symptoms and separates muscle pain from rare severe injury. No incidence number imported. Observed version/update: 2025-07-21."
+      },
+      {
+        "source_id": "mi-rcuk-firstaid-2025",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+        "locators": [
+          "Chest pain122–129"
+        ],
+        "retrieval_scope": "Key points 33; first aider actions 53–58; Chest pain 122–129. Adult suspected cardiac chest pain, call 999, aspirin while waiting except known allergy. NHS national text is separate writing; shared resuscitation evidence possible. No dose added to site. Observed version/update: 2025-10-27."
+      },
+      {
+        "source_id": "mi-sps-ace-monitoring",
+        "url": "https://sps.nhs.uk/monitorings/ace-inhibitors-and-angiotensin-ii-receptor-blockers-monitoring/",
+        "locators": [
+          "Abnormal results342–344; bibliography385–395; Post myocardial infarction301–310 and331–341"
+        ],
+        "retrieval_scope": "Post-MI 301–310,331–341; abnormal results 342–344; bibliography385–395. Independent professional synthesis explicitly cites NICE NG185/CKS and other references. Shared upstream evidence disclosed; not independent trial replication. Observed version/update: 2026-08-12."
+      },
+      {
+        "source_id": "mi-uhd-cardiac-medicines",
+        "url": "https://www.uhd.nhs.uk/services/cardiology/cardiac-rehabilitation/advice-and-education/medicines-for-the-heart",
+        "locators": [
+          "Statins35–39; ACE inhibitors41–43; ACE inhibitors44; Beta blockers48–53"
+        ],
+        "retrieval_scope": "ACE inhibitors 41–44; beta blockers 48–53; statins 35–39. Post-MI patient material directly supports renal testing and troublesome ACE cough review. Undated page; old dosing/other broad instructions elsewhere are not imported."
+      },
+      {
+        "source_id": "mi-nhs-beta-class",
+        "url": "https://www.nhs.uk/medicines/beta-blockers/",
+        "locators": [
+          "Side effects54–68; Suitability77–85"
+        ],
+        "retrieval_scope": "Class uses 15–27; adverse effects 54–68; suitability77–85. Class-level source avoids relying only on bisoprolol for class-wide dizziness/fatigue and respiratory suitability. Observed version/update: 2026-09-04."
+      },
+      {
+        "source_id": "mi-merck-acs-medications",
+        "url": "https://www.merckmanuals.com/professional/cardiovascular-disorders/coronary-artery-disease/medications-for-acute-coronary-syndromes",
+        "locators": [
+          "Fibrinolytics236–256, especially contraindications254–256"
+        ],
+        "retrieval_scope": "Scope/authorship 21–25; treatment 36–59; fibrinolysis 236–256; references257–263. Independently authored broad clinical explanation supports bleeding contraindication assessment. Joint US2025 guideline is shared upstream; reproduced contraindication table is not counted as a second origin. Observed version/update: 2026-07."
+      }
+    ],
+    "sections": {
+      "summary": {
+        "source_ids": [
+          "mi-mayo-causes",
+          "mi-nhlbi-overview",
+          "mi-nhs"
+        ],
+        "locators": {
+          "mi-mayo-causes": [
+            "Overview269–277; Symptoms283–298; Complications358–361"
+          ],
+          "mi-nhlbi-overview": [
+            "What is a heart attack?"
+          ],
+          "mi-nhs": [
+            "Introduction; Heart attack is different to cardiac arrest"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, source-specific scope and independent review are in the canonical ledger and acceptance record."
+      },
+      "causes_risks": {
+        "source_ids": [
+          "mi-mayo-causes",
+          "mi-nhlbi-causes"
+        ],
+        "locators": {
+          "mi-mayo-causes": [
+            "Causes; Risk factors"
+          ],
+          "mi-nhlbi-causes": [
+            "What causes a heart attack?; Other causes; Risk factors you can control; cannot control"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, source-specific scope and independent review are in the canonical ledger and acceptance record."
+      },
+      "red_flags": {
+        "source_ids": [
+          "mi-aha-bls-2025",
+          "mi-mayo-causes",
+          "mi-nhlbi-symptoms",
+          "mi-nhs",
+          "mi-sja-cpr"
+        ],
+        "locators": {
+          "mi-aha-bls-2025": [
+            "Part7 §6.1 recommendation1;§6.2 recommendations1–3 and synopsis138–166"
+          ],
+          "mi-mayo-causes": [
+            "Symptoms283–299; When to see doctor302–308; Causes322–334"
+          ],
+          "mi-nhlbi-symptoms": [
+            "Symptoms98–113; When to call9-1-1 114–125"
+          ],
+          "mi-nhs": [
+            "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60"
+          ],
+          "mi-sja-cpr": [
+            "What is CPR131–135; What to do140–170"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, source-specific scope and independent review are in the canonical ledger and acceptance record."
+      },
+      "care": {
+        "source_ids": [
+          "mi-aha-aspirin",
+          "mi-ashp-clopidogrel",
+          "mi-fda-aspirin",
+          "mi-mayo-causes",
+          "mi-mayo-rehab",
+          "mi-nhlbi-recovery",
+          "mi-nhs",
+          "mi-rcuk-firstaid-2025"
+        ],
+        "locators": {
+          "mi-aha-aspirin": [
+            "Should I take aspirin during a heart attack or stroke?45–48; Know the risks24–35"
+          ],
+          "mi-ashp-clopidogrel": [
+            "Precautions65–73; Other information123"
+          ],
+          "mi-fda-aspirin": [
+            "Not Without Risks71–73"
+          ],
+          "mi-mayo-causes": [
+            "When to see a doctor302–308; When to see a doctor: aspirin advice299–306"
+          ],
+          "mi-mayo-rehab": [
+            "Preparation315–317; gradual exercise339–346"
+          ],
+          "mi-nhlbi-recovery": [
+            "Rehabilitation99–117; long-term medicines122–130; Returning to normal activities115–119; second attack144; Returning to normal activities115–119"
+          ],
+          "mi-nhs": [
+            "Introduction15; recovery79–91; While waiting43–48; Immediate action26–37; Recovering/returning to normal activities"
+          ],
+          "mi-rcuk-firstaid-2025": [
+            "Chest pain122–129"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, source-specific scope and independent review are in the canonical ledger and acceptance record."
+      },
+      "diagnosis": {
+        "source_ids": [
+          "mi-mayo-causes",
+          "mi-mayo-treatment",
+          "mi-nhlbi-diagnosis",
+          "mi-nhs",
+          "mi-nice-cg95",
+          "mi-nlm-troponin"
+        ],
+        "locators": {
+          "mi-mayo-causes": [
+            "Symptoms283–299; When to see doctor302–308; Causes322–334"
+          ],
+          "mi-mayo-treatment": [
+            "Diagnosis269–283"
+          ],
+          "mi-nhlbi-diagnosis": [
+            "Initial ECG98–101; Blood tests102–106"
+          ],
+          "mi-nhs": [
+            "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60"
+          ],
+          "mi-nice-cg95": [
+            "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7"
+          ],
+          "mi-nlm-troponin": [
+            "What is a troponin test44–50; What results mean83–103; References113–127"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, source-specific scope and independent review are in the canonical ledger and acceptance record."
+      },
+      "differentials": {
+        "source_ids": [
+          "mi-mayo-angina",
+          "mi-mayo-chest",
+          "mi-nhlbi-symptoms",
+          "mi-nhs",
+          "mi-nhs-angina",
+          "mi-nhs-chest",
+          "mi-nice-cg95"
+        ],
+        "locators": {
+          "mi-mayo-angina": [
+            "Types277–284; Symptoms307–309; When to see doctor333–337"
+          ],
+          "mi-mayo-chest": [
+            "When to see doctor310–314; Heart causes352; Lung causes360–363"
+          ],
+          "mi-nhlbi-symptoms": [
+            "Symptoms98–113; When to call9-1-1 114–125"
+          ],
+          "mi-nhs": [
+            "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60"
+          ],
+          "mi-nhs-angina": [
+            "Angina attacks28; Treatment29–37; Call99938–49; NHS11150–55"
+          ],
+          "mi-nhs-chest": [
+            "Common causes29–47"
+          ],
+          "mi-nice-cg95": [
+            "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, source-specific scope and independent review are in the canonical ledger and acceptance record."
+      },
+      "treatment": {
+        "source_ids": [
+          "mi-acs-2025",
+          "mi-aha-acs-summary",
+          "mi-mayo-treatment",
+          "mi-merck-acs-medications",
+          "mi-nhlbi-treatment",
+          "mi-nhs",
+          "mi-nice-ng185"
+        ],
+        "locators": {
+          "mi-acs-2025": [
+            "§5.3.1 synopsis and Table14; §5.3.1 synopsis; Table14"
+          ],
+          "mi-aha-acs-summary": [
+            "Items1,4,6"
+          ],
+          "mi-mayo-treatment": [
+            "Surgical and other procedures301–307"
+          ],
+          "mi-merck-acs-medications": [
+            "Fibrinolytics236–256, especially contraindications254–256"
+          ],
+          "mi-nhlbi-treatment": [
+            "Emergency treatment; Procedures; Emergency treatments: thrombolytics"
+          ],
+          "mi-nhs": [
+            "Treatments; Medicines after heart attack"
+          ],
+          "mi-nice-ng185": [
+            "Final1.1.1–6,1.1.19; Final1.1.1–6;1.1.19; NSTE-ACS section1.2; official NSTEMI visual summary"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, source-specific scope and independent review are in the canonical ledger and acceptance record."
+      },
+      "medications": {
+        "source_ids": [
+          "mi-aha-acs-summary",
+          "mi-aha-aspirin",
+          "mi-ashp-clopidogrel",
+          "mi-fda-aspirin",
+          "mi-mayo-ace",
+          "mi-mayo-beta",
+          "mi-mayo-bleeding",
+          "mi-mayo-statin-risks",
+          "mi-mayo-treatment",
+          "mi-mayo-vomiting-blood",
+          "mi-nhlbi-recovery",
+          "mi-nhlbi-treatment",
+          "mi-nhs-beta-class",
+          "mi-nhs-bisoprolol",
+          "mi-nhs-clopidogrel",
+          "mi-nhs-ramipril",
+          "mi-nhs-statins",
+          "mi-nhs-wounds",
+          "mi-nice-ng185",
+          "mi-sps-ace-monitoring",
+          "mi-uhd-cardiac-medicines"
+        ],
+        "locators": {
+          "mi-aha-acs-summary": [
+            "Item2"
+          ],
+          "mi-aha-aspirin": [
+            "Why aspirin?; DAPT overview; DAPT: Who needs it and for how long58–83"
+          ],
+          "mi-ashp-clopidogrel": [
+            "Why prescribed53; How used57; Serious side effects91–98; Precautions67–68; Other information123"
+          ],
+          "mi-fda-aspirin": [
+            "Not Without Risks72–73"
+          ],
+          "mi-mayo-ace": [
+            "Side effects303–316"
+          ],
+          "mi-mayo-beta": [
+            "Mechanism264–265; uses283–287; Side effects290–310"
+          ],
+          "mi-mayo-bleeding": [
+            "Severe bleeding first aid262–266"
+          ],
+          "mi-mayo-statin-risks": [
+            "Introduction258–270; Introduction270; muscle symptoms272–277; assessment320–324; Muscle pain and damage272–277; assessment320–324"
+          ],
+          "mi-mayo-treatment": [
+            "Medications290–298; Medications298; Lifestyle; Medications: ACE inhibitors297; Medications: beta blockers296"
+          ],
+          "mi-mayo-vomiting-blood": [
+            "When to see a doctor307–321"
+          ],
+          "mi-nhlbi-recovery": [
+            "Medicines123–130; Medicines125–126; Medicines129–130; Medicines124; Medicines128"
+          ],
+          "mi-nhlbi-treatment": [
+            "Medicines: after stent"
+          ],
+          "mi-nhs-beta-class": [
+            "Side effects54–68; Suitability77–85"
+          ],
+          "mi-nhs-bisoprolol": [
+            "How to take40; side effects68–83; suitability112–120"
+          ],
+          "mi-nhs-clopidogrel": [
+            "Serious side effects46–51; Immediate action52–62"
+          ],
+          "mi-nhs-ramipril": [
+            "Common effects22–31; Common adverse effects22–31"
+          ],
+          "mi-nhs-statins": [
+            "Side effects75–88"
+          ],
+          "mi-nhs-wounds": [
+            "Immediate action55–66"
+          ],
+          "mi-nice-ng185": [
+            "Final NG1851.4.15–16 and1.4.21–24; official indexed passages; Final1.4.10; official indexed PDF page24"
+          ],
+          "mi-sps-ace-monitoring": [
+            "Abnormal results342–344; bibliography385–395; Post myocardial infarction301–310 and331–341"
+          ],
+          "mi-uhd-cardiac-medicines": [
+            "Statins35–39; ACE inhibitors41–43; ACE inhibitors44; Beta blockers48–53"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, source-specific scope and independent review are in the canonical ledger and acceptance record."
+      },
+      "diet": {
+        "source_ids": [
+          "mi-diabetesuk-exercise",
+          "mi-diabetesuk-meal-lifestyle",
+          "mi-diabetesuk-meal-plan",
+          "mi-mayo-rehab",
+          "mi-mayo-treatment",
+          "mi-nhlbi-food",
+          "mi-nhlbi-recovery",
+          "mi-nhlbi-treatment",
+          "mi-nhs",
+          "mi-niddk-ckd-food",
+          "mi-niddk-diabetes-food",
+          "mi-nkf-ckd-food"
+        ],
+        "locators": {
+          "mi-diabetesuk-exercise": [
+            "Activity records/team55–64; insulin/activity72–78"
+          ],
+          "mi-diabetesuk-meal-lifestyle": [
+            "Different needs26–34; shift-work team planning59; Food/activity diary34; team help59; medication/team72"
+          ],
+          "mi-diabetesuk-meal-plan": [
+            "Who to talk to55–59; medication61–68"
+          ],
+          "mi-mayo-rehab": [
+            "Nutrition347–351; Nutrition347–351; Medicine education352–356"
+          ],
+          "mi-mayo-treatment": [
+            "Self care321"
+          ],
+          "mi-nhlbi-food": [
+            "Heart-healthy food groups; sodium and saturated fat"
+          ],
+          "mi-nhlbi-recovery": [
+            "Medicines130; lifestyle131–144"
+          ],
+          "mi-nhlbi-treatment": [
+            "Emergency treatment; Procedures"
+          ],
+          "mi-nhs": [
+            "Reducing your risk"
+          ],
+          "mi-niddk-ckd-food": [
+            "Potassium200–213"
+          ],
+          "mi-niddk-diabetes-food": [
+            "Meal planning; Find best times176–182; Meal planning176–183; plan201; activity215"
+          ],
+          "mi-nkf-ckd-food": [
+            "Changes to diet40–44; nutrients57–73"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, source-specific scope and independent review are in the canonical ledger and acceptance record."
+      },
+      "daily_care": {
+        "source_ids": [
+          "mi-adam-activity",
+          "mi-cuh-rehab-exercise",
+          "mi-mayo-rehab",
+          "mi-mayo-treatment",
+          "mi-nhlbi-recovery",
+          "mi-nhs"
+        ],
+        "locators": {
+          "mi-adam-activity": [
+            "Household activities94; When to call97–113 (inherited context review, not reopened here)"
+          ],
+          "mi-cuh-rehab-exercise": [
+            "Exercise safety298–310; normal exertion327"
+          ],
+          "mi-mayo-rehab": [
+            "During rehabilitation339–346"
+          ],
+          "mi-mayo-treatment": [
+            "Preparing for appointment: symptoms and medicine list"
+          ],
+          "mi-nhlbi-recovery": [
+            "Cardiac rehabilitation; Returning to normal activities; Returning to activities117; recurrence144; Medicines130; mental health section"
+          ],
+          "mi-nhs": [
+            "Recovering; Support after a heart attack; Immediate action26–37; urgent advice38–42; Support after a heart attack"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, source-specific scope and independent review are in the canonical ledger and acceptance record."
+      },
+      "special_populations": {
+        "source_ids": [
+          "mi-esc-pregnancy-2025",
+          "mi-mayo-causes",
+          "mi-nhlbi-symptoms",
+          "mi-nhlbi-women"
+        ],
+        "locators": {
+          "mi-esc-pregnancy-2025": [
+            "§12.1/Figure11;§12.2.1.1–2;§12.2.4;§4.3.5–4.3.5.3;§5.1"
+          ],
+          "mi-mayo-causes": [
+            "Symptoms283–299; When to see doctor302–308; Causes322–334; When to see a doctor302–308"
+          ],
+          "mi-nhlbi-symptoms": [
+            "Symptoms98–113; When to call9-1-1 114–125"
+          ],
+          "mi-nhlbi-women": [
+            "Symptoms107–119; Pregnancy120–126"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, source-specific scope and independent review are in the canonical ledger and acceptance record."
+      },
+      "prognosis_followup": {
+        "source_ids": [
+          "mi-aha-acs-summary",
+          "mi-mayo-rehab",
+          "mi-nhlbi-recovery",
+          "mi-nhs",
+          "mi-nice-ng185"
+        ],
+        "locators": {
+          "mi-aha-acs-summary": [
+            "Item9"
+          ],
+          "mi-mayo-rehab": [
+            "Preparation315–317; programme339–367; How you prepare315–317; tailored exercise/risk assessment310–312"
+          ],
+          "mi-nhlbi-recovery": [
+            "Cardiac rehabilitation; Returning to normal activities; Medicines; Cardiac rehabilitation; Take steps to prevent another heart attack"
+          ],
+          "mi-nhs": [
+            "Recovering; Support after a heart attack; Symptoms; Immediate action required"
+          ],
+          "mi-nice-ng185": [
+            "Final1.4.2–3;1.2.27–29; Final1.4.29–33; official indexed recommendations; Final1.4.2–3 and1.7.1–2; official indexed HTML/PDF passages"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, source-specific scope and independent review are in the canonical ledger and acceptance record."
+      },
+      "complications": {
+        "source_ids": [
+          "mi-mayo-causes",
+          "mi-nhlbi-recovery",
+          "mi-nhlbi-shock",
+          "mi-nhs"
+        ],
+        "locators": {
+          "mi-mayo-causes": [
+            "Complications; Complications: cardiogenic shock and heart failure; Complications358–363; emergency302–308"
+          ],
+          "mi-nhlbi-recovery": [
+            "What kind of health problems can a heart attack cause?"
+          ],
+          "mi-nhlbi-shock": [
+            "Overview94–97"
+          ],
+          "mi-nhs": [
+            "Immediate action26–32; cardiac arrest139–141"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, source-specific scope and independent review are in the canonical ledger and acceptance record."
+      },
+      "prevention": {
+        "source_ids": [
+          "mi-aha-aspirin",
+          "mi-fda-aspirin",
+          "mi-mayo-causes",
+          "mi-nhlbi-recovery",
+          "mi-nhs"
+        ],
+        "locators": {
+          "mi-aha-aspirin": [
+            "Recommendation18–23; Know risks24–35"
+          ],
+          "mi-fda-aspirin": [
+            "Opening61; Not Without Risks71–73"
+          ],
+          "mi-mayo-causes": [
+            "Prevention"
+          ],
+          "mi-nhlbi-recovery": [
+            "Take steps to prevent another heart attack; Medicines130; Cardiac rehabilitation"
+          ],
+          "mi-nhs": [
+            "Reducing your risk"
+          ]
+        },
+        "uncertainty_boundary": "Exact bilingual claims, source-specific scope and independent review are in the canonical ledger and acceptance record."
+      }
+    }
   }
 ]

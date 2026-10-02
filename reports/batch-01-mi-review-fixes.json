@@ -1,0 +1,793 @@
+{
+  "schema_version": 1,
+  "review_id": "batch-01-mi-review-fixes",
+  "revised_at": "2026-10-02",
+  "author": "/root",
+  "medical_reviewed": false,
+  "status": "targeted_recheck_pending",
+  "input_content_sha256": "491b41e0cf5aa8adf79a4011fd60986fba90272c838735337fb41604a63db27a",
+  "output_content_sha256": "d0d23d652aebfe5eeac53f151427284eef6c015931b7b9dec390a90583e09a93",
+  "review_inputs": [
+    {
+      "path": "reports/batch-01-mi-context-recheck.json",
+      "file_sha256": "2228d578758ee190c1f88990e857cdbe59de8a3af96a70bdc0e16f28700ec79d"
+    },
+    {
+      "path": "reports/batch-01-mi-diagnosis-recheck.json",
+      "file_sha256": "6ff0ca62090c183b715d217a71337be826f322a3e1e895365f6aeaa06eace20f"
+    },
+    {
+      "path": "reports/batch-01-mi-medicine-recheck.json",
+      "file_sha256": "30627e1f37e0bd0b3c37dd74cb0c3d7606a877819386ba17ba919339610a4ac4"
+    },
+    {
+      "path": "reports/batch-01-mi-maternal-action-followup.json",
+      "file_sha256": "42136aa5ebd353bda4fe46cbba9794d73ac8fa368737e6ac868ecba1fc82b650"
+    }
+  ],
+  "bilingual_changes": [
+    {
+      "claim_id": "daily_care-1b",
+      "before_sha256": "d65f78e66939f99c84337e5ba8f8ac753617bf640fc71122248781f94dd1d13e",
+      "after_sha256": "7bd373f7d54fc837fa3f897f7f5269c14495cd586964d7f9b36dc53707109e5e",
+      "before": {
+        "zh-CN": "活动时出现胸痛或气短应停止活动并联系医疗团队；",
+        "en": "Stop activity and contact your care team if it causes chest pain or breathlessness;"
+      },
+      "after": {
+        "zh-CN": "活动时出现胸痛，或新出现、令人不适的气短，应停止活动并联系医疗团队；",
+        "en": "Stop activity and contact your care team for chest pain or new or uncomfortable breathlessness;"
+      }
+    },
+    {
+      "claim_id": "prognosis_followup-1b",
+      "before_sha256": "84e3c09666f50a8abb68c0b6c785a4f4f0d7a2e101a99cffc656379c889295ac",
+      "after_sha256": "5a95e9eea5c5557770220a65221b1ac2de535f23d47dd96bc4c319a58ea34366",
+      "before": {
+        "zh-CN": "心功能检查结果也帮助医生选择药物和安排恢复活动；",
+        "en": "Heart-function results also help guide medicines and recovery activity;"
+      },
+      "after": {
+        "zh-CN": "心功能检查结果也帮助医生选择药物和安排恢复活动。",
+        "en": "Heart-function results also help guide medicines and recovery activity. "
+      }
+    },
+    {
+      "claim_id": "prognosis_followup-1c",
+      "before_sha256": "38a2d9ee529a0db26a5dccd8fdf6dfc641f302b9e1b06017e85e635fd630dd2b",
+      "after_sha256": "34256121228acad36db5cd1691c7551dea936e4a482f70ebbd941328b09db0f6",
+      "before": {
+        "zh-CN": "是否再次检查取决于当前病情。",
+        "en": "whether to repeat testing depends on the current clinical situation."
+      },
+      "after": {
+        "zh-CN": "出院时确认后续用药调整、血压和肾功能监测安排，并保留给自己和接诊医生的治疗计划。",
+        "en": "Before discharge, confirm plans for medicine adjustments, blood-pressure and kidney-function monitoring, and keep the management plan shared with you and your usual clinician."
+      }
+    },
+    {
+      "claim_id": "complications-2",
+      "before_sha256": "3fbb82e0a9b3e79b3d117c482b4cccdf229c09334907b1a5156ffc6c3d089009",
+      "after_sha256": "9c642d16b0fb279206bed71cf7497e64e39382eafbd512cdf60cde2ed7d88ef4",
+      "before": {
+        "zh-CN": "心律失常是节律异常，有些能造成心脏骤停。新晕厥、失去反应或严重呼吸困难都需要立即急救。",
+        "en": "Arrhythmias are abnormal rhythms, some of which can cause cardiac arrest. New collapse, loss of response or severe breathing difficulty requires immediate emergency care."
+      },
+      "after": {
+        "zh-CN": "心律失常是节律异常，有些能造成心脏骤停。突然倒地且失去反应，或严重呼吸困难，都需要立即急救。",
+        "en": "Arrhythmias are abnormal rhythms, some of which can cause cardiac arrest. Sudden collapse with loss of response, or severe breathing difficulty, requires immediate emergency care."
+      }
+    },
+    {
+      "claim_id": "diet-2b",
+      "before_sha256": "dde7b79dc7e6a5ddc5da8bed1e7da1e6bd9a08a8a73b8082b7bcd4d14a8bad2d",
+      "after_sha256": "3f369a08f5643549a42c0a3dfa4a9e8ba0cf86ad1ef45f6637c857500148902d",
+      "before": {
+        "zh-CN": "结合降糖药和活动调整，而不是套用统一食谱。",
+        "en": "taking glucose-lowering medicines and activity into account instead of applying one meal plan to everyone."
+      },
+      "after": {
+        "zh-CN": "与医疗团队结合降糖药和活动来安排餐食，而不是套用统一食谱。",
+        "en": "planning meals with your care team around glucose-lowering medicines and activity instead of applying one meal plan to everyone."
+      }
+    }
+  ],
+  "medicine_binding_updates": [
+    {
+      "claim_id": "care-0",
+      "source_id": "mi-nhs",
+      "locator": "Introduction15; recovery79–91",
+      "assessment": "急诊评估及康复阶段分别支持；不是来源每句覆盖所有概括。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "care-0",
+      "source_id": "mi-mayo-causes",
+      "locator": "When to see a doctor302–308",
+      "assessment": "独立交叉核对怀疑心梗应立即急救。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "care-0",
+      "source_id": "mi-nhlbi-recovery",
+      "locator": "Rehabilitation99–117; long-term medicines122–130",
+      "assessment": "恢复期活动安排及长期治疗。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "care-1a",
+      "source_id": "mi-aha-aspirin",
+      "locator": "Should I take aspirin during a heart attack or stroke?45–48",
+      "assessment": "先呼叫急救；由调度/医护考虑是否用阿司匹林，不因服药推迟呼救。与Mayo独立编写，但不与AHA摘要重复计源。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "care-1b",
+      "source_id": "mi-aha-aspirin",
+      "locator": "Should I take aspirin during a heart attack or stroke?45–48",
+      "assessment": "先呼叫急救；由调度/医护考虑是否用阿司匹林，不因服药推迟呼救。与Mayo独立编写，但不与AHA摘要重复计源。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "care-1d",
+      "source_id": "mi-aha-aspirin",
+      "locator": "Should I take aspirin during a heart attack or stroke?45–48",
+      "assessment": "先呼叫急救；由调度/医护考虑是否用阿司匹林，不因服药推迟呼救。与Mayo独立编写，但不与AHA摘要重复计源。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "care-1c",
+      "source_id": "mi-rcuk-firstaid-2025",
+      "locator": "Chest pain122–129",
+      "assessment": "成人疑似心源性胸痛，先呼叫999，等待救援时协助自服阿司匹林，已知过敏除外。与NHS公众页面形成独立写作支持；剂量不导入本文。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "treatment-1",
+      "source_id": "mi-mayo-treatment",
+      "locator": "Surgical and other procedures301–307",
+      "assessment": "导管/球囊/支架与搭桥作用均直接解释。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "treatment-2c",
+      "source_id": "mi-merck-acs-medications",
+      "locator": "Fibrinolytics236–256, especially contraindications254–256",
+      "assessment": "自主编写临床概述支持评估活动性或可致命出血风险；US2025为共同上游，不能把禁忌表再当独立原始依据。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-1a",
+      "source_id": "mi-nhlbi-recovery",
+      "locator": "Medicines125–126",
+      "assessment": "同段直接列出阿司匹林、氯吡格雷减少血小板成团；补充两种代表药机制的共同支持。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-1b",
+      "source_id": "mi-nice-ng185",
+      "locator": "Final NG1851.4.15–16 and1.4.21–24; official indexed passages",
+      "assessment": "疗程按MI后阶段、再次事件风险、出血风险及PCI/合用抗凝情形决定；只支持本文条件化概括，不导入统一疗程。直接页面403，实际读取官方索引指定条文。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-3a",
+      "source_id": "mi-mayo-statin-risks",
+      "locator": "Introduction258–270",
+      "assessment": "降胆固醇及降低心梗/卒中风险直接陈述，与NHLBI恢复页独立写作。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-3b",
+      "source_id": "mi-mayo-statin-risks",
+      "locator": "Introduction270; muscle symptoms272–277; assessment320–324",
+      "assessment": "有怀疑副作用与团队讨论；肌痛/无力可由多种原因引起，评估而非直接诊断严重肌损伤。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-3b",
+      "source_id": "mi-uhd-cardiac-medicines",
+      "locator": "Statins35–39",
+      "assessment": "心康患者资料明确意外肌痛、压痛或无力应告知医生。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-3c",
+      "source_id": "mi-mayo-statin-risks",
+      "locator": "Muscle pain and damage272–277; assessment320–324",
+      "assessment": "明确区别常见肌痛投诉与极少见严重肌损伤；这里只解释不能用症状替代确诊，不加入风险数值。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-4b",
+      "source_id": "mi-sps-ace-monitoring",
+      "locator": "Abnormal results342–344; bibliography385–395",
+      "assessment": "ACEI/ARB开始或加量后可有肌酐及血钾变化，补类级证据；NICE/BNF等共同上游明确。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-4c",
+      "source_id": "mi-nice-ng185",
+      "locator": "Final1.4.10; official indexed PDF page24",
+      "assessment": "MI后ACEI/ARB用药前后测肾功能、电解质、血压；用本条替换原1.4.2的过宽定位。实际读取官方索引条文，未声称全文PDF访问。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-4c",
+      "source_id": "mi-sps-ace-monitoring",
+      "locator": "Post myocardial infarction301–310 and331–341",
+      "assessment": "MI专段直接列血压/肌酐或eGFR/钠/钾；独立专业综合但引用NICE共同依据，非独立试验。本文不采用统一复查间隔。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-4c",
+      "source_id": "mi-uhd-cardiac-medicines",
+      "locator": "ACE inhibitors41–43",
+      "assessment": "医院心康资料独立说明MI后ACE用药需肾功能抽血；支持抽血分句，不单独证明所有电解质项目。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-4d",
+      "source_id": "mi-uhd-cardiac-medicines",
+      "locator": "ACE inhibitors44",
+      "assessment": "ACE类药干咳变得困扰时联系医生，医生可改用另一类药；与NHS-national雷米普利26为不同作者材料。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-5a",
+      "source_id": "mi-mayo-beta",
+      "locator": "Mechanism264–265; uses283–287",
+      "assessment": "直接支持减慢心率、减负荷、心律问题及心绞痛，优于仅MI药物摘要296的窄定位。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-5b",
+      "source_id": "mi-nhs-beta-class",
+      "locator": "Side effects54–68",
+      "assessment": "beta类药疲劳与头晕的全国患者教育，与Mayo类级来源交叉支持。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-5c",
+      "source_id": "mi-nhs-beta-class",
+      "locator": "Suitability77–85",
+      "assessment": "呼吸疾病如哮喘/COPD可能影响适用性，用前告知医生；未说所有哮喘都绝对禁用。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-5d",
+      "source_id": "mi-uhd-cardiac-medicines",
+      "locator": "Beta blockers48–53",
+      "assessment": "医院心康资料类级说明不要突然停药，应和GP讨论；独立于Mayo写作。",
+      "operation": "add_or_correct_binding"
+    }
+  ],
+  "diagnostic_binding_updates": [
+    {
+      "claim_id": "red_flags-0",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-symptoms",
+          "locator": "Symptoms98–113; When to call9-1-1 114–125",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-causes",
+          "locator": "Symptoms283–299; When to see doctor302–308; Causes322–334",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-1",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-symptoms",
+          "locator": "Symptoms98–113; When to call9-1-1 114–125",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-causes",
+          "locator": "Symptoms283–299; When to see doctor302–308; Causes322–334",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nhs",
+          "locator": "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": false
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-2a",
+      "source_checks": [
+        {
+          "source_id": "mi-nhs",
+          "locator": "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-causes",
+          "locator": "Symptoms283–299; When to see doctor302–308; Causes322–334",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nhlbi-symptoms",
+          "locator": "Symptoms98–113; When to call9-1-1 114–125",
+          "writing_group": "US-NIH",
+          "already_claim_bound": false
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-2b",
+      "source_checks": [
+        {
+          "source_id": "mi-aha-bls-2025",
+          "locator": "Part7 §6.1 recommendation1;§6.2 recommendations1–3 and synopsis138–166",
+          "writing_group": "US-AHA",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-sja-cpr",
+          "locator": "What is CPR131–135; What to do140–170",
+          "writing_group": "UK-STJOHN",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-0",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-diagnosis",
+          "locator": "Initial ECG98–101; Blood tests102–106",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-treatment",
+          "locator": "Diagnosis269–283",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-1a",
+      "source_checks": [
+        {
+          "source_id": "mi-mayo-treatment",
+          "locator": "Diagnosis269–283",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nice-cg95",
+          "locator": "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7",
+          "writing_group": "UK-NICE",
+          "already_claim_bound": false
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-1b",
+      "source_checks": [
+        {
+          "source_id": "mi-nlm-troponin",
+          "locator": "What is a troponin test44–50; What results mean83–103; References113–127",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-treatment",
+          "locator": "Diagnosis269–283",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-2a",
+      "source_checks": [
+        {
+          "source_id": "mi-nlm-troponin",
+          "locator": "What is a troponin test44–50; What results mean83–103; References113–127",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-treatment",
+          "locator": "Diagnosis269–283",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": false
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-2b",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-diagnosis",
+          "locator": "Initial ECG98–101; Blood tests102–106",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nice-cg95",
+          "locator": "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7",
+          "writing_group": "UK-NICE",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-3",
+      "source_checks": [
+        {
+          "source_id": "mi-nlm-troponin",
+          "locator": "What is a troponin test44–50; What results mean83–103; References113–127",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nice-cg95",
+          "locator": "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7",
+          "writing_group": "UK-NICE",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-4a",
+      "source_checks": [
+        {
+          "source_id": "mi-nhs",
+          "locator": "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-treatment",
+          "locator": "Diagnosis269–283",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-4b",
+      "source_checks": [
+        {
+          "source_id": "mi-nhs",
+          "locator": "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-treatment",
+          "locator": "Diagnosis269–283",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-5",
+      "source_checks": [
+        {
+          "source_id": "mi-mayo-causes",
+          "locator": "Symptoms283–299; When to see doctor302–308; Causes322–334",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-0",
+      "source_checks": [
+        {
+          "source_id": "mi-nhs-chest",
+          "locator": "Common causes29–47",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-1",
+      "source_checks": [
+        {
+          "source_id": "mi-nhs-chest",
+          "locator": "Common causes29–47",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nhs",
+          "locator": "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-chest",
+          "locator": "When to see doctor310–314; Heart causes352; Lung causes360–363",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": false
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-2a",
+      "source_checks": [
+        {
+          "source_id": "mi-mayo-angina",
+          "locator": "Types277–284; Symptoms307–309; When to see doctor333–337",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nhs-angina",
+          "locator": "Angina attacks28; Treatment29–37; Call99938–49; NHS11150–55",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nhlbi-symptoms",
+          "locator": "Symptoms98–113; When to call9-1-1 114–125",
+          "writing_group": "US-NIH",
+          "already_claim_bound": false
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-2b",
+      "source_checks": [
+        {
+          "source_id": "mi-mayo-angina",
+          "locator": "Types277–284; Symptoms307–309; When to see doctor333–337",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nhs-angina",
+          "locator": "Angina attacks28; Treatment29–37; Call99938–49; NHS11150–55",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nice-cg95",
+          "locator": "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7",
+          "writing_group": "UK-NICE",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-2c",
+      "source_checks": [
+        {
+          "source_id": "mi-nhs-angina",
+          "locator": "Angina attacks28; Treatment29–37; Call99938–49; NHS11150–55",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nice-cg95",
+          "locator": "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7",
+          "writing_group": "UK-NICE",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-angina",
+          "locator": "Types277–284; Symptoms307–309; When to see doctor333–337",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": false
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-3a",
+      "source_checks": [
+        {
+          "source_id": "mi-mayo-chest",
+          "locator": "When to see doctor310–314; Heart causes352; Lung causes360–363",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nice-cg95",
+          "locator": "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7",
+          "writing_group": "UK-NICE",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-3b",
+      "source_checks": [
+        {
+          "source_id": "mi-mayo-chest",
+          "locator": "When to see doctor310–314; Heart causes352; Lung causes360–363",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-3c",
+      "source_checks": [
+        {
+          "source_id": "mi-nice-cg95",
+          "locator": "Final1.2.1.3,7–8;1.2.2.2–8;1.2.4.2;1.2.5.2–7;1.2.6.1–2,7",
+          "writing_group": "UK-NICE",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nhs",
+          "locator": "Symptoms16–25; Immediate26–37; Waiting43–50; Diagnosis52–60",
+          "writing_group": "UK-NHS",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-chest",
+          "locator": "When to see doctor310–314; Heart causes352; Lung causes360–363",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": false
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-0",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-women",
+          "locator": "Symptoms107–119; Pregnancy120–126",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-mayo-causes",
+          "locator": "Symptoms283–299; When to see doctor302–308; Causes322–334",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-esc-pregnancy-2025",
+          "locator": "§12.1/Figure11;§12.2.1.1–2;§12.2.4;§4.3.5–4.3.5.3;§5.1",
+          "writing_group": "EU-ESC-PREGNANCY-2025",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-1",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-symptoms",
+          "locator": "Symptoms98–113; When to call9-1-1 114–125",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-nhlbi-women",
+          "locator": "Symptoms107–119; Pregnancy120–126",
+          "writing_group": "US-NIH",
+          "already_claim_bound": false
+        },
+        {
+          "source_id": "mi-mayo-causes",
+          "locator": "Symptoms283–299; When to see doctor302–308; Causes322–334",
+          "writing_group": "US-MAYO",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-2a",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-women",
+          "locator": "Symptoms107–119; Pregnancy120–126",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-esc-pregnancy-2025",
+          "locator": "§12.1/Figure11;§12.2.1.1–2;§12.2.4;§4.3.5–4.3.5.3;§5.1",
+          "writing_group": "EU-ESC-PREGNANCY-2025",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-2b",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-women",
+          "locator": "Symptoms107–119; Pregnancy120–126",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-esc-pregnancy-2025",
+          "locator": "§12.1/Figure11;§12.2.1.1–2;§12.2.4;§4.3.5–4.3.5.3;§5.1",
+          "writing_group": "EU-ESC-PREGNANCY-2025",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-2c",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-women",
+          "locator": "Symptoms107–119; Pregnancy120–126",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-esc-pregnancy-2025",
+          "locator": "§12.1/Figure11;§12.2.1.1–2;§12.2.4;§4.3.5–4.3.5.3;§5.1",
+          "writing_group": "EU-ESC-PREGNANCY-2025",
+          "already_claim_bound": true
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-2d",
+      "source_checks": [
+        {
+          "source_id": "mi-nhlbi-women",
+          "locator": "Symptoms107–119; Pregnancy120–126",
+          "writing_group": "US-NIH",
+          "already_claim_bound": true
+        },
+        {
+          "source_id": "mi-esc-pregnancy-2025",
+          "locator": "§12.1/Figure11;§12.2.1.1–2;§12.2.4;§4.3.5–4.3.5.3;§5.1",
+          "writing_group": "EU-ESC-PREGNANCY-2025",
+          "already_claim_bound": true
+        }
+      ]
+    }
+  ],
+  "added_source_ids": [
+    "mi-cuh-rehab-exercise",
+    "mi-diabetesuk-exercise",
+    "mi-diabetesuk-meal-lifestyle",
+    "mi-diabetesuk-meal-plan",
+    "mi-mayo-statin-risks",
+    "mi-merck-acs-medications",
+    "mi-nhs-beta-class",
+    "mi-rcuk-firstaid-2025",
+    "mi-sps-ace-monitoring",
+    "mi-uhd-cardiac-medicines"
+  ],
+  "editorial_ledger_sha256": "c177ff39d579af3b2d8227eb0a46d2127a1744e6de876caa37da3214d6517945",
+  "section_count": 14,
+  "claim_count": 90,
+  "source_count": 53,
+  "source_production_process": {
+    "url": "https://www.diabetes.org.uk/about-us/about-the-charity/our-areas-of-work/producing-diabetes-information",
+    "accessed_at": "2026-10-02",
+    "locator": "44–55 registered clinical team;65–74 PIF TICK/process; reviewed2026-04-24",
+    "scope": "Source editorial process only; not physician sign-off of this website."
+  },
+  "validation": {
+    "all_bilingual_claims_bound": true,
+    "source_schema": "passed",
+    "non_mi_records_and_sources_unchanged": true
+  },
+  "remaining": [
+    "Independent targeted check of five changed claims and updated bindings before publication.",
+    "ICD leaf mapping remains separate; article acceptance does not auto-confirm BA41 candidates."
+  ]
+}

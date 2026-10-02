@@ -3,7 +3,7 @@
   "checked_at": "2026-09-30",
   "base_commit": "cc3e88b1414c1ede8737c9d78d40c3ca53b64f25",
   "icd_release": "2026-01",
-  "decision_scope": "20规范主题关系裁定；7A41睡眠呼吸暂停和GB01.0睾丸扭转完成逐项编辑核验与独立语义审核，其余候选保持待裁定。",
+  "decision_scope": "20规范主题；3篇完成逐项编辑核验，2个叶类别确认完整，其余类别按具体缺口推进。",
   "topics": [
     {
       "canonical_id": "myocardial-infarction",
@@ -20,29 +20,31 @@
           "title": "- - - - Acute ST elevation myocardial infarction",
           "uri": "http://id.who.int/icd/release/11/mms/391388807",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "partial"
         },
         {
           "code": "BA41.1",
           "title": "- - - - Acute non-ST elevation myocardial infarction",
           "uri": "http://id.who.int/icd/release/11/mms/680129526",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "partial"
         },
         {
           "code": "BA41.Z",
           "title": "- - - - Acute myocardial infarction, unspecified",
           "uri": "http://id.who.int/icd/release/11/mms/1334938734/unspecified",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "pending"
         }
       ],
-      "publication_status": "not_published",
+      "publication_status": "validated_candidate_not_yet_live",
       "qualified_coverage": false,
       "editorial_reviews": [
         "reports/batch-01-mi-independent.json",
         "reports/batch-01-mi-review-challenge.json"
-      ]
+      ],
+      "editorial_review": "reports/batch-01-mi-acceptance.json",
+      "content_sha256": "c25a6ae7a5cfed47a1416f6645124a332272134cd1d12f2899bda3fcd883054f"
     },
     {
       "canonical_id": "pulmonary-embolism",

@@ -1,0 +1,695 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "batch-01-mi-context-recheck",
+  "reviewer": "/root — independent editorial reviewer of drafts authored by /root/emergency_content and /root/demand_content; not clinician sign-off",
+  "reviewed_at": "2026-10-02",
+  "medical_reviewed": false,
+  "target": {
+    "id": "myocardial-infarction",
+    "path": "drafts/batch-01/emergency/myocardial-infarction.json",
+    "canonical_sha256": "491b41e0cf5aa8adf79a4011fd60986fba90272c838735337fb41604a63db27a",
+    "file_sha256": "0aa9ed2849362a48f2011a167b12c69706581573e77c3330b67464aef20f1fce",
+    "sections": [
+      "summary",
+      "causes_risks",
+      "diet",
+      "daily_care",
+      "prognosis_followup",
+      "complications",
+      "prevention"
+    ],
+    "mi_editorial_array_canonical_sha256": "440147d0b0278371d9190ee58ef5aae3ab53896304bcfc046c14482f10d3f4f6",
+    "section_content_sha256": {
+      "summary": "1fb9d77067c1cbe98c3aa1d145606ddb8299ee48ac495eb2cc5e309dfbe96364",
+      "causes_risks": "4a309319615b9076e96332b581df7b1800ded804f004c946911045522f21c941",
+      "diet": "6d1f8af0e583d5da6ac4217df0c06f4221f536c5559e5bc1d9647f7524e91259",
+      "daily_care": "aceec413c28cc0a59ea5defee0a0580737e06fd15faf6ff8938818d391f910dc",
+      "prognosis_followup": "358ef1b6166092748f08af0cd750a07872a4c2bfa04858aecdf52a39f36b5233",
+      "complications": "bbd2d0fbebf3110309da035f53dde46a3596908a60b413abfdf91d56f93ca407",
+      "prevention": "ac5a6ebd10d23f5361a899bdc490eb9861441e67c623c5e2fac6c33d87beb75a"
+    }
+  },
+  "verdict": "TARGETED_PRECISION_REPAIRS_AND_BINDING_UPDATES",
+  "article_release_decision": "This scoped report does not accept the whole article or modify pending/clinical states.",
+  "standard": {
+    "critical_claims": "Cross-check key medical actions, thresholds, benefits and risks against independently authored authoritative material; related-source combinations require explicit population and inference limits.",
+    "ordinary_information": "Do not impose a second medical source on notebook/date organisation, ordinary mechanisms or non-prescriptive contextual explanation.",
+    "source_independence": "NIH constituent agencies remain one origin; NICE outputs remain one origin. Mayo/NIDDK/DiabetesUK may share upstream standards, disclosed without claiming independently replicated trials."
+  },
+  "source_reads": [
+    {
+      "source_id": "mi-nhlbi-overview",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack",
+      "source_metadata_sha256": "24e859633401d452c1706521c85a0cf19aa9ee96846ccaff9b2afc612120a510",
+      "actual_read_locator": "What is a heart attack98–109",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "observed_version": "2022-03-24",
+      "independence_group": "US-NIH"
+    },
+    {
+      "source_id": "mi-nhs",
+      "url": "https://www.nhs.uk/conditions/heart-attack/",
+      "source_metadata_sha256": "f2fc20110ddc3f50946197bc6822eec853bb6d8a5f269cccea134308875afa68",
+      "actual_read_locator": "Emergency26–42; recovery79–91; prevention104–124; arrest139–145",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "observed_version": "2026-03-31",
+      "independence_group": "UK-NHS"
+    },
+    {
+      "source_id": "mi-mayo-causes",
+      "url": "https://www.mayoclinic.org/diseases-conditions/heart-attack/symptoms-causes/syc-20373106",
+      "source_metadata_sha256": "a84db049c24b946ef3295fccc3f19c01f97984f71203db437ba53fc53b1d8a6d",
+      "actual_read_locator": "Overview269–308; causes324–334; risks338–354; complications358–363; prevention367–370; references384–425",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "observed_version": "2026-03-27",
+      "independence_group": "US-MAYO"
+    },
+    {
+      "source_id": "mi-nhlbi-causes",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/causes",
+      "source_metadata_sha256": "56f2af4885d3831614b9fd190a4040b3961f6c69b190c58e1020c8b3a613c6a0",
+      "actual_read_locator": "Causes98–118; risk factors122–137",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "observed_version": "2022-03-24",
+      "independence_group": "US-NIH"
+    },
+    {
+      "source_id": "mi-nhlbi-food",
+      "url": "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods",
+      "source_metadata_sha256": "9affc9c47ebdea67303a365dd1f6951e6fe7febec210a691eb7a60858b7715ae",
+      "actual_read_locator": "Food groups99–124; salt shopping tips129–135; saturated fat144–151",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "observed_version": "2022-03-24",
+      "independence_group": "US-NIH"
+    },
+    {
+      "source_id": "mi-nhlbi-treatment",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/treatment",
+      "source_metadata_sha256": "b5b20a2b502102054072f7be349262c530f3bd716d5704a4d4e4d452210a7990",
+      "actual_read_locator": "Emergency treatment98–107 and PCI111–116",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "observed_version": "2022-03-24",
+      "independence_group": "US-NIH"
+    },
+    {
+      "source_id": "mi-nhlbi-recovery",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/recovery",
+      "source_metadata_sha256": "8ea461c39ce5e54c9993e38df22148bce0075a6a5ac74b5cf6185f1bda5d9328",
+      "actual_read_locator": "Rehab98–114; activities117; recurrence122/144; adherence130; complications147–155; mental health158–162",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "observed_version": "2022-03-24",
+      "independence_group": "US-NIH"
+    },
+    {
+      "source_id": "mi-niddk-diabetes-food",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/healthy-living-with-diabetes",
+      "source_metadata_sha256": "2050cdae83fdecf19d21a63e0318ab3e18ef62c11a0c7bb6557c215d549a3cd2",
+      "actual_read_locator": "Meal plan155–157; meal timing176–183; dietitian201; institutional review/acknowledgments",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "observed_version": "2023-10",
+      "independence_group": "US-NIH"
+    },
+    {
+      "source_id": "mi-niddk-ckd-food",
+      "url": "https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/healthy-eating-adults-chronic-kidney-disease",
+      "source_metadata_sha256": "000682d57afb44810de54301f501cd61a0a36c1d563e2cff1f4bd33c198dd577",
+      "actual_read_locator": "Adult CKD diet167–244; potassium200–213",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "observed_version": "publication day not established",
+      "independence_group": "US-NIH"
+    },
+    {
+      "source_id": "mi-nkf-ckd-food",
+      "url": "https://www.kidney.org/kidney-topics/nutrition-and-kidney-disease-stages-1-5-not-dialysis",
+      "source_metadata_sha256": "fd91acedaced852efda924abe54282d833810133ccd733b6cdfb5b5f09db09a6",
+      "actual_read_locator": "No universal diet40–44; dietitian47–53; potassium66–73; updated/reviewed metadata",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "observed_version": "2024-03-18",
+      "independence_group": "US-NKF"
+    },
+    {
+      "source_id": "mi-mayo-rehab",
+      "url": "https://www.mayoclinic.org/tests-procedures/cardiac-rehabilitation/about/pac-20385192",
+      "source_metadata_sha256": "d73d009ca618d74c46d5d5d24627ba32d9d89078b6907e8e0294aa191c6536b1",
+      "actual_read_locator": "Assessment315–317; gradual exercise339–346; nutrition347–351; medicines352–356; follow-up367; publication/review metadata",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "observed_version": "published2024-11-21; medical review2024-09-09",
+      "independence_group": "US-MAYO"
+    },
+    {
+      "source_id": "mi-adam-activity",
+      "url": "https://medlineplus.gov/ency/patientinstructions/000093.htm",
+      "source_metadata_sha256": "b1ae89d871ae5da80a34d9e3349142a6daf5b1fcced66479c92a335423e8e403",
+      "actual_read_locator": "Activity94; contact97–113; authors/review148–150; actual rights notice164–167",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "observed_version": "2024-08-05",
+      "independence_group": "US-ADAM"
+    },
+    {
+      "source_id": "mi-mayo-treatment",
+      "url": "https://www.mayoclinic.org/diseases-conditions/heart-attack/diagnosis-treatment/drc-20373112",
+      "source_metadata_sha256": "4ff64462121fc8083ebd8125abd3c14529bdc9b17cc84479eba4266f649a0104",
+      "actual_read_locator": "Rehabilitation308–311; diet321; clinical risk follow-up325–326; symptom/medicine list353–379; expert-review reference416",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "observed_version": "2026-03-27",
+      "independence_group": "US-MAYO"
+    },
+    {
+      "source_id": "mi-nhlbi-shock",
+      "url": "https://www.nhlbi.nih.gov/health/cardiogenic-shock",
+      "source_metadata_sha256": "b425169ac1bb766e91e873a61003ae9f1ad25e3245e0cccde31c986ceee5e01a",
+      "actual_read_locator": "Definition/cause/treatment94–97; date99",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "observed_version": "2022-03-24",
+      "independence_group": "US-NIH"
+    },
+    {
+      "source_id": "mi-aha-aspirin",
+      "url": "https://www.heart.org/en/health-topics/heart-attack/treatment-of-a-heart-attack/aspirin-and-heart-disease",
+      "source_metadata_sha256": "fba95227344f48d67d9acc83d00b6265a84a1548cb1ad169e2145d90cbfbdfc3",
+      "actual_read_locator": "Recommendations12–23; bleeding24–35; attribution/review94; emergency47–48",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "observed_version": "2025-02-28",
+      "independence_group": "US-AHA"
+    },
+    {
+      "source_id": "mi-fda-aspirin",
+      "url": "https://www.fda.gov/drugs/safe-use-aspirin/using-aspirin-lower-your-risk-heart-attack-or-stroke-what-you-should-know",
+      "source_metadata_sha256": "9acc1396e08074396e89737593921d401449249f2a0acd64aaf9b6f167c32b68",
+      "actual_read_locator": "Before daily use61; risks/interactions71–73; no blanket primary prevention rule imported",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "observed_version": "date not displayed",
+      "independence_group": "US-FDA-CONSUMER"
+    },
+    {
+      "source_id": "mi-nice-ng185",
+      "url": "https://www.nice.org.uk/guidance/NG185/chapter/recommendations",
+      "source_metadata_sha256": "b44b926f31c7caa427725440d7e947d7fee8eb3cda947a40ad271b6ffafbaeba",
+      "actual_read_locator": "Official indexed final1.2.27–29,1.4.2–3,1.4.29–33; no full HTML access claimed",
+      "read_at": "2026-10-02",
+      "retrieval_status": "search_text_retrieved",
+      "observed_version": "2020-11-18; retained recommendations2013/2020",
+      "independence_group": "UK-NICE"
+    }
+  ],
+  "additional_source_reads": [
+    {
+      "proposed_source_id": "mi-cuh-rehab-exercise",
+      "url": "https://www.cuh.nhs.uk/patient-information/cardiac-rehabilitation-home-exercise-guidelines/",
+      "actual_read_locator": "Document7260 version2 approved24May2024; exercise safety298–310; usual exertion327",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "independent_writer": "Cambridge University Hospitals cardiac rehabilitation service",
+      "scope": "After cardiac event; distinguish stop/contact criteria from normal exertional breathing; no RPE scale or exercise schedule imported."
+    },
+    {
+      "proposed_source_id": "mi-diabetesuk-meal-plan",
+      "url": "https://www.diabetes.org.uk/living-with-diabetes/eating/meal-plans/meal-planning-for-diabetes",
+      "actual_read_locator": "Dietitian55–59; medicines61–68",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "independent_writer": "Diabetes UK; date not displayed",
+      "scope": "Diet changes coordinated with the prescribing team; no weight-loss plan or dose is transferred to post-MI care."
+    },
+    {
+      "proposed_source_id": "mi-diabetesuk-meal-lifestyle",
+      "url": "https://www.diabetes.org.uk/living-with-diabetes/eating/your-lifestyle-diabetes-and-food",
+      "actual_read_locator": "Different meal needs26–34; team planning59; medicine/lifestyle72",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "independent_writer": "Diabetes UK; date not displayed",
+      "scope": "Eating pattern/medication/activity context; no daily fluid target or shift schedule imported."
+    },
+    {
+      "proposed_source_id": "mi-diabetesuk-exercise",
+      "url": "https://www.diabetes.org.uk/living-with-diabetes/exercise/blood-sugar-levels",
+      "actual_read_locator": "Coordination55–64,72–78; reviewed1November2024",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "independent_writer": "Diabetes UK",
+      "scope": "Team-guided activity/medication coordination only; no glucose range, monitoring duration or insulin adjustment formula imported."
+    },
+    {
+      "candidate_only": true,
+      "url": "https://diabetes.org/health-wellness/fitness/eating-tips-before-after-exercise",
+      "actual_read_locator": "Medication/meal/exercise57–64; provider attribution66",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "assessment": "ADA-hosted page explicitly says information provided by Beyond Type1. Do not label as independently written ADA guidance or import fasting/exercise/dosing instructions."
+    },
+    {
+      "candidate_only": true,
+      "url": "https://diabetes.org/food-nutrition/eating-for-diabetes-management",
+      "actual_read_locator": "No universal eating plan25–32",
+      "read_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "assessment": "General contextual support; not evidence for exact medication/activity meal timing."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "summary-0",
+      "section": "summary",
+      "kind": "explanation",
+      "bilingual_text_sha256": "dac53c3335d396598f10251dc1c5ac52a44cc1fb05bea50859ba228ccc3b220c",
+      "section_content_sha256": "1fb9d77067c1cbe98c3aa1d145606ddb8299ee48ac495eb2cc5e309dfbe96364",
+      "existing_source_ids": [
+        "mi-nhlbi-overview",
+        "mi-nhs"
+      ],
+      "decision": "supported",
+      "assessment": "NHLBI overview98–107 and NHS15 agree on muscle injury and immediate hospital treatment."
+    },
+    {
+      "claim_id": "summary-1",
+      "section": "summary",
+      "kind": "explanation",
+      "bilingual_text_sha256": "369da8a4ebea912cd20e3196189e35050b2f13b64d716508924ac72e0fea023c",
+      "section_content_sha256": "1fb9d77067c1cbe98c3aa1d145606ddb8299ee48ac495eb2cc5e309dfbe96364",
+      "existing_source_ids": [
+        "mi-nhlbi-overview",
+        "mi-mayo-causes"
+      ],
+      "decision": "support_binding_update",
+      "assessment": "NHLBI overview and Mayo overview/symptoms support coronary flow and symptoms. Mayo complications358–361 additionally explains impaired pumping; extend this source locator rather than treating overview alone as an explicit pumping explanation."
+    },
+    {
+      "claim_id": "summary-2",
+      "section": "summary",
+      "kind": "explanation",
+      "bilingual_text_sha256": "fa1bef1be91c603d6dc95dbf532c4a6c41f056549bb819f7247d95b47038e362",
+      "section_content_sha256": "1fb9d77067c1cbe98c3aa1d145606ddb8299ee48ac495eb2cc5e309dfbe96364",
+      "existing_source_ids": [
+        "mi-nhlbi-overview",
+        "mi-nhs"
+      ],
+      "decision": "supported",
+      "assessment": "NHLBI105 and NHS139–141 distinguish infarction from arrest. NHS describes lost consciousness; the present action is not a lay pulse-check algorithm."
+    },
+    {
+      "claim_id": "causes_risks-0",
+      "section": "causes_risks",
+      "kind": "explanation",
+      "bilingual_text_sha256": "bd90d09bf8fb375d6c02d153b41be1b63da1c11a2cea313168386a35f0e7dcab",
+      "section_content_sha256": "4a309319615b9076e96332b581df7b1800ded804f004c946911045522f21c941",
+      "existing_source_ids": [
+        "mi-nhlbi-causes",
+        "mi-mayo-causes"
+      ],
+      "decision": "supported",
+      "assessment": "NHLBI98–104 and Mayo324–326 support plaque rupture and clot obstruction. Chinese mentions platelets/clotting substances while English only says clot formation: a small explanatory translation improvement is possible, with no different clinical action."
+    },
+    {
+      "claim_id": "causes_risks-1",
+      "section": "causes_risks",
+      "kind": "risk",
+      "bilingual_text_sha256": "8421fd8a8e30c61ecfddf40184d165ce7c84aefc58c525aa76b8cf2d6f3b30ba",
+      "section_content_sha256": "4a309319615b9076e96332b581df7b1800ded804f004c946911045522f21c941",
+      "existing_source_ids": [
+        "mi-nhlbi-causes",
+        "mi-mayo-causes"
+      ],
+      "decision": "supported",
+      "assessment": "NHLBI122–137 and Mayo338–350 distinguish modifiable risks, age and family history. No numeric family-history age cutoff is imported."
+    },
+    {
+      "claim_id": "causes_risks-2",
+      "section": "causes_risks",
+      "kind": "explanation",
+      "bilingual_text_sha256": "660ac1bba304c18a8ada7401605c2193bc02a77321f6ae5974e4f5afc5580c9f",
+      "section_content_sha256": "4a309319615b9076e96332b581df7b1800ded804f004c946911045522f21c941",
+      "existing_source_ids": [
+        "mi-nhlbi-causes",
+        "mi-mayo-causes"
+      ],
+      "decision": "supported_bounded_editorial_inference",
+      "assessment": "NHLBI108–117 directly identifies younger people and spasm/dissection; Mayo331–334 supports those mechanisms. The warning against excluding MI solely by youth is a bounded inference, not a home diagnostic rule."
+    },
+    {
+      "claim_id": "diet-0",
+      "section": "diet",
+      "kind": "explanation",
+      "bilingual_text_sha256": "cb05f06c7639a4a8799666e4f5b213429386bc87d38271c64983c67b03336569",
+      "section_content_sha256": "6d1f8af0e583d5da6ac4217df0c06f4221f536c5559e5bc1d9647f7524e91259",
+      "existing_source_ids": [
+        "mi-nhlbi-food",
+        "mi-nhlbi-treatment"
+      ],
+      "decision": "supported_bounded_editorial_inference",
+      "assessment": "NHLBI food99–124 addresses long-term blood pressure/lipids; treatment98–116 requires medical reperfusion. Food not reopening acute obstruction is a bounded mechanism-based explanation, not a tested food efficacy claim."
+    },
+    {
+      "claim_id": "diet-1",
+      "section": "diet",
+      "kind": "action",
+      "bilingual_text_sha256": "d0386c52b5abe35d0d1c6cc33191e4723cbdca2302e592ef6080b0163d30f82f",
+      "section_content_sha256": "6d1f8af0e583d5da6ac4217df0c06f4221f536c5559e5bc1d9647f7524e91259",
+      "existing_source_ids": [
+        "mi-nhlbi-food",
+        "mi-nhs"
+      ],
+      "decision": "support_binding_update",
+      "assessment": "NHLBI103–149 and Mayo treatment321 provide the exact food examples; NHS104–122 supports sustained risk reduction and less salt/saturated fat. Add the already-read Mayo treatment locator to avoid implying NHS lists every food."
+    },
+    {
+      "claim_id": "diet-2a",
+      "section": "diet",
+      "kind": "action",
+      "bilingual_text_sha256": "5a8219b1286db26a47894aa056e01fbeb16faa205ead5c44364eee05836f162a",
+      "section_content_sha256": "6d1f8af0e583d5da6ac4217df0c06f4221f536c5559e5bc1d9647f7524e91259",
+      "existing_source_ids": [
+        "mi-niddk-diabetes-food",
+        "mi-mayo-rehab"
+      ],
+      "decision": "support_binding_update",
+      "assessment": "NIDDK meal planning155–183 and dietitian201 support portions/timing and dietitian help. Mayo rehabilitation347–351 supports tailored diabetes nutrition, but not the exact medicine/meal timing clause. Diabetes UK meal-planning55–68 and lifestyle26–34,59,72 provide a second independently authored context."
+    },
+    {
+      "claim_id": "diet-2b",
+      "section": "diet",
+      "kind": "action",
+      "bilingual_text_sha256": "dde7b79dc7e6a5ddc5da8bed1e7da1e6bd9a08a8a73b8082b7bcd4d14a8bad2d",
+      "section_content_sha256": "6d1f8af0e583d5da6ac4217df0c06f4221f536c5559e5bc1d9647f7524e91259",
+      "existing_source_ids": [
+        "mi-niddk-diabetes-food"
+      ],
+      "decision": "support_binding_update",
+      "assessment": "NIDDK176–183 directly links meal timing to medicines and activity. Diabetes UK meal-planning61–68, lifestyle34/59/72 and exercise55–78 independently explain food/medication/activity coordination with the team. Clarify that meals are planned with the team, not that readers self-adjust prescriptions; no doses or timing thresholds are added."
+    },
+    {
+      "claim_id": "diet-3",
+      "section": "diet",
+      "kind": "action",
+      "bilingual_text_sha256": "f9ef20ec256520ee51a5487c79b925ec628765ccc391ddcb7a5c459682b0cfe3",
+      "section_content_sha256": "6d1f8af0e583d5da6ac4217df0c06f4221f536c5559e5bc1d9647f7524e91259",
+      "existing_source_ids": [
+        "mi-niddk-ckd-food",
+        "mi-nkf-ckd-food"
+      ],
+      "decision": "supported",
+      "assessment": "NIDDK CKD200–213 and NKF40–44,47–53,66–73 support lab-, kidney-function- and medicine-dependent potassium portions. Adult CKD not on dialysis is the relevant scope; no universal fruit/bean ban, potassium target or dialysis plan is inferred."
+    },
+    {
+      "claim_id": "diet-4",
+      "section": "diet",
+      "kind": "action",
+      "bilingual_text_sha256": "194cbecb07652b87970148bb29a4be3c5bacdd23bdee1378a45ece533863f6f0",
+      "section_content_sha256": "6d1f8af0e583d5da6ac4217df0c06f4221f536c5559e5bc1d9647f7524e91259",
+      "existing_source_ids": [
+        "mi-nhlbi-recovery",
+        "mi-mayo-rehab"
+      ],
+      "decision": "supported",
+      "assessment": "NHLBI recovery130–144 and Mayo rehabilitation347–356 explicitly combine lifestyle with medicine adherence. No claim that diet substitutes for prescription treatment."
+    },
+    {
+      "claim_id": "daily_care-0",
+      "section": "daily_care",
+      "kind": "explanation",
+      "bilingual_text_sha256": "8495680b7c377126a6e3f387eab01a9ca79feba34d9ddcbbc8f252dd63d05b00",
+      "section_content_sha256": "aceec413c28cc0a59ea5defee0a0580737e06fd15faf6ff8938818d391f910dc",
+      "existing_source_ids": [
+        "mi-nhlbi-recovery",
+        "mi-nhs"
+      ],
+      "decision": "supported",
+      "assessment": "NHLBI recovery101–114, NHS85–91 and Mayo rehabilitation339–364 support exercise, education and emotional care. Generic rehabilitation statistics or schedules are not imported."
+    },
+    {
+      "claim_id": "daily_care-1a",
+      "section": "daily_care",
+      "kind": "action",
+      "bilingual_text_sha256": "017955cf4c63cc03b530d8b8b6665058a889331c67d03960143edb4453290557",
+      "section_content_sha256": "aceec413c28cc0a59ea5defee0a0580737e06fd15faf6ff8938818d391f910dc",
+      "existing_source_ids": [
+        "mi-nhlbi-recovery"
+      ],
+      "decision": "support_binding_update",
+      "assessment": "NHLBI recovery107/117 and Mayo rehabilitation339–346 support gradual activity according to assessed ability. Add Mayo to the current one-source binding; no universal week-by-week programme."
+    },
+    {
+      "claim_id": "daily_care-1b",
+      "section": "daily_care",
+      "kind": "action",
+      "bilingual_text_sha256": "d65f78e66939f99c84337e5ba8f8ac753617bf640fc71122248781f94dd1d13e",
+      "section_content_sha256": "aceec413c28cc0a59ea5defee0a0580737e06fd15faf6ff8938818d391f910dc",
+      "existing_source_ids": [
+        "mi-adam-activity"
+      ],
+      "decision": "support_binding_update",
+      "assessment": "ADAM activity94,97–113 supports stopping symptoms and contacting the provider. CUH exercise safety298–310 independently gives stop/contact criteria. CUH distinguishes comfortable increased breathing during exercise from uncomfortable breathing327; prefer new or uncomfortable breathlessness, not all normal exertional breathing."
+    },
+    {
+      "claim_id": "daily_care-1c",
+      "section": "daily_care",
+      "kind": "action",
+      "bilingual_text_sha256": "707a432b298b409542977fffe0097184afe11c3b0bb27d82d0ff093e3d169671",
+      "section_content_sha256": "aceec413c28cc0a59ea5defee0a0580737e06fd15faf6ff8938818d391f910dc",
+      "existing_source_ids": [
+        "mi-nhlbi-recovery",
+        "mi-nhs"
+      ],
+      "decision": "supported",
+      "assessment": "NHLBI recovery144 and NHS26–37 support immediate emergency action for suspected infarction or severe breathing problems. This takes priority over routine-team contact and booked follow-up."
+    },
+    {
+      "claim_id": "daily_care-2",
+      "section": "daily_care",
+      "kind": "explanation",
+      "bilingual_text_sha256": "1d92d042785437aba7c19c7f440b4c240ffc06440edf2d825956c100225b5faf",
+      "section_content_sha256": "aceec413c28cc0a59ea5defee0a0580737e06fd15faf6ff8938818d391f910dc",
+      "existing_source_ids": [
+        "mi-mayo-treatment"
+      ],
+      "decision": "supported_bounded_editorial_inference",
+      "assessment": "Mayo treatment353–379 supports symptom timing, medicines and triggers. The specific notebook arrangement is low-risk editorial organisation; not a diagnostic threshold requiring two medical instructions."
+    },
+    {
+      "claim_id": "daily_care-3",
+      "section": "daily_care",
+      "kind": "explanation",
+      "bilingual_text_sha256": "5007d0f367d329159cd7301a2fd2d9eea2a62e4325d861a02693a0f0ed897c3d",
+      "section_content_sha256": "aceec413c28cc0a59ea5defee0a0580737e06fd15faf6ff8938818d391f910dc",
+      "existing_source_ids": [
+        "mi-nhlbi-recovery",
+        "mi-nhs"
+      ],
+      "decision": "supported_bounded_editorial_inference",
+      "assessment": "NHLBI recovery130 and158–162 and NHS85–91 support medicine access, rehabilitation and emotional problems. Organising dates/medicine lists is practical editorial guidance, not a new clinical regimen."
+    },
+    {
+      "claim_id": "prognosis_followup-0",
+      "section": "prognosis_followup",
+      "kind": "explanation",
+      "bilingual_text_sha256": "cfd1e2d701a9528459228bee3c4e5bea550afa7fd87c100598419866c172b766",
+      "section_content_sha256": "358ef1b6166092748f08af0cd750a07872a4c2bfa04858aecdf52a39f36b5233",
+      "existing_source_ids": [
+        "mi-nhs",
+        "mi-nhlbi-recovery"
+      ],
+      "decision": "supported",
+      "assessment": "NHLBI recovery98/107/117 and NHS81–89 support variable recovery and treatment/damage context. No guaranteed recovery period is asserted."
+    },
+    {
+      "claim_id": "prognosis_followup-1a",
+      "section": "prognosis_followup",
+      "kind": "action",
+      "bilingual_text_sha256": "46756e53bdc85432dee9f5d411eb31fde9ff301d93ec9c90ae2b19d539e33d4e",
+      "section_content_sha256": "358ef1b6166092748f08af0cd750a07872a4c2bfa04858aecdf52a39f36b5233",
+      "existing_source_ids": [
+        "mi-mayo-rehab",
+        "mi-nice-ng185",
+        "mi-aha-acs-summary",
+        "mi-nhlbi-recovery"
+      ],
+      "decision": "supported",
+      "assessment": "Mayo rehabilitation315–317,339–367 and treatment325–326 plus NICE final1.4.2–3,1.2.27–29 support assessment, BP/renal/bleeding follow-up and function. Lipid review is also in the jointly authored ACS summary item9; that summary is not a separate source from its guideline."
+    },
+    {
+      "claim_id": "prognosis_followup-1b",
+      "section": "prognosis_followup",
+      "kind": "explanation",
+      "bilingual_text_sha256": "84e3c09666f50a8abb68c0b6c785a4f4f0d7a2e101a99cffc656379c889295ac",
+      "section_content_sha256": "358ef1b6166092748f08af0cd750a07872a4c2bfa04858aecdf52a39f36b5233",
+      "existing_source_ids": [
+        "mi-mayo-rehab",
+        "mi-nice-ng185"
+      ],
+      "decision": "support_binding_update",
+      "assessment": "NICE final1.2.27–29,1.4.29–33 relates ventricular function to treatment; Mayo rehabilitation315–317 relates evaluation to the programme. Locator should include1.4.29–33 rather than claiming the existing1.4.2 alone explains all function-based drug decisions."
+    },
+    {
+      "claim_id": "prognosis_followup-1c",
+      "section": "prognosis_followup",
+      "kind": "explanation",
+      "bilingual_text_sha256": "38a2d9ee529a0db26a5dccd8fdf6dfc641f302b9e1b06017e85e635fd630dd2b",
+      "section_content_sha256": "358ef1b6166092748f08af0cd750a07872a4c2bfa04858aecdf52a39f36b5233",
+      "existing_source_ids": [
+        "mi-nice-ng185"
+      ],
+      "decision": "wording_or_support_precision_repair",
+      "assessment": "The bound NICE text does not explicitly prescribe repeat heart-function testing in this sentence. Its individualized future-management plan supports the context, but not a specific repeat-test indication. Replace vague repeat-testing wording with the directly supported discharge management/monitoring plan; do not invent a mandatory interval."
+    },
+    {
+      "claim_id": "prognosis_followup-2",
+      "section": "prognosis_followup",
+      "kind": "action",
+      "bilingual_text_sha256": "1c9070c423af56be6f8e5c4bda1b59ae6f7262bf41ecf0c9d973dd7748b9a1ab",
+      "section_content_sha256": "358ef1b6166092748f08af0cd750a07872a4c2bfa04858aecdf52a39f36b5233",
+      "existing_source_ids": [
+        "mi-nhlbi-recovery",
+        "mi-nhs"
+      ],
+      "decision": "supported",
+      "assessment": "NHLBI recovery122/144 and NHS26–37 support increased recurrence risk, potentially different symptoms, and acting on warning signs rather than waiting."
+    },
+    {
+      "claim_id": "complications-0",
+      "section": "complications",
+      "kind": "explanation",
+      "bilingual_text_sha256": "1dc6384a047eadbac5120b12b71f3fd79429236281d174b48fc16d9c2dbdc658",
+      "section_content_sha256": "bbd2d0fbebf3110309da035f53dde46a3596908a60b413abfdf91d56f93ca407",
+      "existing_source_ids": [
+        "mi-nhlbi-recovery",
+        "mi-mayo-causes"
+      ],
+      "decision": "supported",
+      "assessment": "Mayo358–363 explains electrical/pump damage; NHLBI recovery147–155 lists complications. Potential events are not presented as inevitable or equally common."
+    },
+    {
+      "claim_id": "complications-1",
+      "section": "complications",
+      "kind": "explanation",
+      "bilingual_text_sha256": "7da473b106a573e0f61117bbae46a07e95e5c10bc915169974a32384058fa8d9",
+      "section_content_sha256": "bbd2d0fbebf3110309da035f53dde46a3596908a60b413abfdf91d56f93ca407",
+      "existing_source_ids": [
+        "mi-mayo-causes",
+        "mi-nhlbi-shock"
+      ],
+      "decision": "supported",
+      "assessment": "Mayo360–361 and NHLBI shock94–97 explain inadequate pump function and cardiogenic shock. The mechanism is now actually supported, unlike a link that only lists the diagnosis."
+    },
+    {
+      "claim_id": "complications-2",
+      "section": "complications",
+      "kind": "action",
+      "bilingual_text_sha256": "3fbb82e0a9b3e79b3d117c482b4cccdf229c09334907b1a5156ffc6c3d089009",
+      "section_content_sha256": "bbd2d0fbebf3110309da035f53dde46a3596908a60b413abfdf91d56f93ca407",
+      "existing_source_ids": [
+        "mi-mayo-causes",
+        "mi-nhs"
+      ],
+      "decision": "wording_or_support_precision_repair",
+      "assessment": "Mayo359/363 and NHS26–32 support abnormal rhythms, arrest and immediate action for collapse with abnormal response or severe breathing difficulty. NHS does not say every new faint followed by normal recovery requires an ambulance. Narrow the collapse wording in both languages; retain immediate action for unresponsiveness/severe breathing difficulty."
+    },
+    {
+      "claim_id": "prevention-0",
+      "section": "prevention",
+      "kind": "explanation",
+      "bilingual_text_sha256": "6c37f3cce7c54a0e6fe1e2e1082b9fefa3c94de6aadb9f56269db4804e102965",
+      "section_content_sha256": "ac5a6ebd10d23f5361a899bdc490eb9861441e67c623c5e2fac6c33d87beb75a",
+      "existing_source_ids": [
+        "mi-mayo-causes",
+        "mi-nhlbi-recovery"
+      ],
+      "decision": "supported",
+      "assessment": "Mayo367 and NHLBI recovery101/122 support first-event prevention and secondary prevention."
+    },
+    {
+      "claim_id": "prevention-1",
+      "section": "prevention",
+      "kind": "benefit",
+      "bilingual_text_sha256": "4bc45bc5005fbc4ffc10bb5558bc7d41015657a8e3cb783fc793644380dc83af",
+      "section_content_sha256": "ac5a6ebd10d23f5361a899bdc490eb9861441e67c623c5e2fac6c33d87beb75a",
+      "existing_source_ids": [
+        "mi-mayo-causes",
+        "mi-nhs"
+      ],
+      "decision": "supported",
+      "assessment": "Mayo368–370, NHS106–122 and Mayo treatment325–326 support smoking, BP, diabetes, cholesterol and appropriate activity. NHS106 explicitly states prevention cannot always succeed."
+    },
+    {
+      "claim_id": "prevention-2",
+      "section": "prevention",
+      "kind": "action",
+      "bilingual_text_sha256": "6c67b23f141f7532bb422237352ae7adba01c5c4e4292f07d63afac6fe2e08ca",
+      "section_content_sha256": "ac5a6ebd10d23f5361a899bdc490eb9861441e67c623c5e2fac6c33d87beb75a",
+      "existing_source_ids": [
+        "mi-nhlbi-recovery",
+        "mi-aha-aspirin",
+        "mi-fda-aspirin"
+      ],
+      "decision": "supported",
+      "assessment": "NHLBI recovery101/130, AHA12–35 and FDA61/71–73 support prescribed secondary prevention and clinician discussion before starting long-term aspirin, including bleeding. AHA permits selected primary prevention; the body does not impose an absolute ban."
+    }
+  ],
+  "decision_counts": {
+    "supported": 16,
+    "support_binding_update": 7,
+    "supported_bounded_editorial_inference": 4,
+    "wording_or_support_precision_repair": 2
+  },
+  "findings": [
+    {
+      "id": "MI-C01",
+      "claim_id": "complications-2",
+      "type": "action_precision",
+      "status": "open",
+      "assessment": "NHS emergency instruction applies to collapse with abnormal response, not every newly reported faint after normal recovery.",
+      "required_change": "Narrow bilingual collapse trigger to sudden collapse with lost/abnormal response; retain immediate action for severe breathing difficulty."
+    },
+    {
+      "id": "MI-C02",
+      "claim_id": "prognosis_followup-1c",
+      "type": "support_precision",
+      "status": "open",
+      "assessment": "NICE bound passage concerns initial function assessment and future management, not an explicit repeated-test rule.",
+      "required_change": "Use the directly supported discharge treatment/monitoring plan, including follow-up and BP/renal monitoring, without a fixed testing interval."
+    },
+    {
+      "id": "MI-C03",
+      "claim_id": "daily_care-1b",
+      "type": "beginner_precision",
+      "status": "open",
+      "assessment": "Normal exercise can increase breathing. CUH separately identifies uncomfortable or new breathlessness.",
+      "required_change": "Qualify breathlessness as new or uncomfortable; preserve the distinct emergency warning action."
+    }
+  ],
+  "bilingual_assessment": {
+    "clinical_numbers_added": false,
+    "new_individual_dose": false,
+    "action_urgency": "Equivalent except the shared overly broad new-faint trigger identified above.",
+    "minor_explanation": "English causes_risks-0 can expressly mention platelets/clotting substances for the Chinese detail."
+  },
+  "rights_record": {
+    "source_and_medical_status_separate": true,
+    "protected_full_text_saved": false,
+    "verbatim_source_output": false,
+    "adam_actual_notice": "Actual page164–167 includes noncommercial/automated-use restrictions. Record the observed notice and read scope; do not infer a new user permission or treat it as medical counterevidence. Source-page licensing is not a blanket license to republish its text. Original factual explanation, citation and protected wording remain separate."
+  },
+  "verification": {
+    "scoped_claims": 29,
+    "bilingual_excerpts_bound": true,
+    "section_hashes_match": true,
+    "source_metadata_hashes_match": true,
+    "drafts_modified": false,
+    "qualified_sections_added": 0,
+    "coverage_added": 0
+  }
+}

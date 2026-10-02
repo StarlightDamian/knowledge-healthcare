@@ -1,0 +1,1270 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "batch01-mi-medicine-recheck-2026-10-02",
+  "reviewer": "/root/mi_medicine_finish",
+  "author": "/root/emergency_content; revision /root/demand_content",
+  "reviewed_at": "2026-10-02",
+  "medical_reviewed": false,
+  "independent_of_author": true,
+  "target": {
+    "path": "drafts/batch-01/emergency/myocardial-infarction.json",
+    "canonical_sha256": "491b41e0cf5aa8adf79a4011fd60986fba90272c838735337fb41604a63db27a",
+    "content_sha256": "c3d450eb73f63902bb90662706968e2a96cff9ff65f8e649e8461d6844f3ee63",
+    "file_sha256": "0aa9ed2849362a48f2011a167b12c69706581573e77c3330b67464aef20f1fce",
+    "editorial_file_sha256": "1905a85bbe7e2c86a6b8682fdc2dbb95a3714962352be42dccfccf8673538d4d",
+    "sources_file_sha256": "26bb27377af2890c812ef5ff9d2801e370bbc1ab652bc12eb4e05f4546db87e9",
+    "reviewed_records_sha256": "668b862014838a3e0b0714601015a51fcf0ff67634521b89a6ada51ccbfef7e9"
+  },
+  "scope": {
+    "sections": [
+      "care",
+      "treatment",
+      "medications"
+    ],
+    "claims": 34,
+    "author_files_modified": false,
+    "other_sections_reviewed": false
+  },
+  "verdict": "supported_after_evidence_binding_updates",
+  "summary": "本范围34项分句的中英医学内容有支持；未发现必须改写正文的新增医学错误。若要升级交叉核验状态，须先将本次实际读取的来源、定位和共同依据补入对应证据记录。",
+  "decision_counts": {
+    "supported_with_binding_update": 19,
+    "supported": 15
+  },
+  "source_reads": [
+    {
+      "source_id": "mi-nhs",
+      "url": "https://www.nhs.uk/conditions/heart-attack/",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Introduction 15; emergency 26–48; treatments 61–78; recovery 79–91",
+      "editorial_origin": "NHS-national",
+      "version_observed": "2026-03-31",
+      "assessment": "Actual national patient page; acute and recovery actions are separate.",
+      "source_metadata_sha256": "f2fc20110ddc3f50946197bc6822eec853bb6d8a5f269cccea134308875afa68"
+    },
+    {
+      "source_id": "mi-nhlbi-treatment",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/treatment",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Early treatment 98; medicines 102–104; PCI 113–118; stent 135; CABG 138–140",
+      "editorial_origin": "NHLBI",
+      "version_observed": "2022-03-24",
+      "assessment": "Selected current claims only; old broad durations are not imported.",
+      "source_metadata_sha256": "b5b20a2b502102054072f7be349262c530f3bd716d5704a4d4e4d452210a7990"
+    },
+    {
+      "source_id": "mi-nhlbi-recovery",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/recovery",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Rehab 99–117; driving 119; medicines 122–130; recurrent symptoms 144",
+      "editorial_origin": "NHLBI",
+      "version_observed": "2022-03-24",
+      "assessment": "Driving is jurisdiction dependent. Drug categories and recurrence advice are directly stated.",
+      "source_metadata_sha256": "8ea461c39ce5e54c9993e38df22148bce0075a6a5ac74b5cf6185f1bda5d9328"
+    },
+    {
+      "source_id": "mi-mayo-causes",
+      "url": "https://www.mayoclinic.org/diseases-conditions/heart-attack/symptoms-causes/syc-20373106",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "When to see a doctor 302–308",
+      "editorial_origin": "Mayo Clinic",
+      "version_observed": null,
+      "assessment": "Call first; aspirin is conditional on professional/dispatcher advice.",
+      "source_metadata_sha256": "a84db049c24b946ef3295fccc3f19c01f97984f71203db437ba53fc53b1d8a6d"
+    },
+    {
+      "source_id": "mi-mayo-treatment",
+      "url": "https://www.mayoclinic.org/diseases-conditions/heart-attack/diagnosis-treatment/drc-20373112",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Medicines 290–298; procedures 301–307; rehabilitation 310–311",
+      "editorial_origin": "Mayo Clinic",
+      "version_observed": null,
+      "assessment": "Only the relevant category roles/procedures are used; its blanket oxygen sentence is not adopted.",
+      "source_metadata_sha256": "4ff64462121fc8083ebd8125abd3c14529bdc9b17cc84479eba4266f649a0104"
+    },
+    {
+      "source_id": "mi-aha-aspirin",
+      "url": "https://www.heart.org/en/health-topics/heart-attack/treatment-of-a-heart-attack/aspirin-and-heart-disease",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Acute aspirin 45–48; risks 24–35; DAPT 53–79; interactions 80–83",
+      "editorial_origin": "American Heart Association",
+      "version_observed": "2025-02-28",
+      "assessment": "Independent writing from Mayo/NHS, but not a second origin beside AHA ACS summary.",
+      "source_metadata_sha256": "fba95227344f48d67d9acc83d00b6265a84a1548cb1ad169e2145d90cbfbdfc3"
+    },
+    {
+      "source_id": "mi-ashp-clopidogrel",
+      "url": "https://medlineplus.gov/druginfo/meds/a601040.html",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Mechanism 53; discontinuation 57; precautions 66–73; bleeding 91–98; medicine list 123",
+      "editorial_origin": "ASHP",
+      "version_observed": "2026-08-15",
+      "assessment": "ASHP writes this NLM-hosted material; NLM hosting is not authorship. Copyright 2026 ASHP; no source body copied.",
+      "source_metadata_sha256": "f42377af292172c3dc2ab223b3eb294f47bee19e2e0f6c5e466ab43a51a2313f"
+    },
+    {
+      "source_id": "mi-nhs-clopidogrel",
+      "url": "https://www.nhs.uk/medicines/clopidogrel/side-effects-of-clopidogrel/",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Serious adverse effects 46–55; transport 61–62",
+      "editorial_origin": "NHS-national",
+      "version_observed": "2025-03-12",
+      "assessment": "Black tarry stool: immediate 111 contact. Bloody/coffee-ground vomit: emergency department now.",
+      "source_metadata_sha256": "bf2a7129073332824e596e17a62412c1b765aaaa1d67486c3fcc1854400df85d"
+    },
+    {
+      "source_id": "mi-mayo-vomiting-blood",
+      "url": "https://www.mayoclinic.org/symptoms/vomiting-blood/basics/causes/sym-20050732",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Definition 265–267; emergency assessment 307–321",
+      "editorial_origin": "Mayo Clinic",
+      "version_observed": "2023-12-07",
+      "assessment": "Coffee-ground appearance included. Emergency transport escalation for shock differs from immediate ED assessment.",
+      "source_metadata_sha256": "bbdc77376e6d9ff52866428a7631d5009d4b7e79f7701efb061b0bfec452b614"
+    },
+    {
+      "source_id": "mi-nhs-wounds",
+      "url": "https://www.nhs.uk/conditions/cuts-and-grazes/",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Emergency action 55–66",
+      "editorial_origin": "NHS-national",
+      "version_observed": "2026-04-02",
+      "assessment": "Uncontrolled external wound bleeding needs emergency care.",
+      "source_metadata_sha256": "e9322bef3fade0ef87d2009a107eaee8fe4e4f7a8e4b500b355ffd45a07c6cfd"
+    },
+    {
+      "source_id": "mi-mayo-bleeding",
+      "url": "https://www.mayoclinic.org/first-aid/first-aid-severe-bleeding/basics/art-20056661",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "First aid 262–277",
+      "editorial_origin": "Mayo Clinic",
+      "version_observed": "2024-10-16",
+      "assessment": "Severe bleeding requires emergency assistance or prompt ED care.",
+      "source_metadata_sha256": "6fcb7f72f2e8954335cbf7dad63a1dddd16aab407467c53c497cb5973948bdc9"
+    },
+    {
+      "source_id": "mi-nhs-statins",
+      "url": "https://www.nhs.uk/medicines/statins/",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Side effects 72–93",
+      "editorial_origin": "NHS-national",
+      "version_observed": "2026-05-05",
+      "assessment": "Muscle pain/weakness merits assessment; the page does not diagnose serious muscle injury from pain alone.",
+      "source_metadata_sha256": "f967ee7b249db8a50622fd361d826280c1b4e36a4f337693b1af8282ffaf5c08"
+    },
+    {
+      "source_id": "mi-mayo-ace",
+      "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/in-depth/ace-inhibitors/art-20047480",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "ACE role 263; use 282–290; adverse effects 303–316",
+      "editorial_origin": "Mayo Clinic",
+      "version_observed": "2025-03-27",
+      "assessment": "Dry cough, hypotension-related dizziness, potassium rise, and rare transient renal worsening are separate effects.",
+      "source_metadata_sha256": "74975eeedfc9e070d70f359c152ea54f77deec896d14996de993c96daaccbf4b"
+    },
+    {
+      "source_id": "mi-nhs-ramipril",
+      "url": "https://www.nhs.uk/medicines/ramipril/side-effects-of-ramipril/",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Dry troublesome cough 22–26; dizziness 27–31",
+      "editorial_origin": "NHS-national",
+      "version_observed": null,
+      "assessment": "Specific medicine page supports corresponding examples; not sole evidence for all ACE agents.",
+      "source_metadata_sha256": "02c9dbc8377e531a77f75fada692a46fc8561231cb6ca73daa9c85443531ccfb"
+    },
+    {
+      "source_id": "mi-mayo-beta",
+      "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/in-depth/beta-blockers/art-20044522",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Mechanism 264–265; uses 283–287; risks and withdrawal 290–310",
+      "editorial_origin": "Mayo Clinic",
+      "version_observed": "2025-03-27",
+      "assessment": "Class-level fatigue/dizziness, asthma caution and sudden-withdrawal risk.",
+      "source_metadata_sha256": "3d680871fe3ab6fef549e52b0667d0052be890f366e34b5fa3a55850e51ed393"
+    },
+    {
+      "source_id": "mi-nhs-bisoprolol",
+      "url": "https://www.nhs.uk/medicines/bisoprolol/",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Withdrawal 38–40; adverse effects 68–83; respiratory history 112–120",
+      "editorial_origin": "NHS-national",
+      "version_observed": null,
+      "assessment": "Specific medicine confirms role and selected risks; class source is also provided below.",
+      "source_metadata_sha256": "e07270c4e17d2d21e48f14f9beab1b6f98bb3739b2e4f9e79fce4b0085f3e677"
+    },
+    {
+      "source_id": "mi-fda-aspirin",
+      "url": "https://www.fda.gov/drugs/safe-use-aspirin/using-aspirin-lower-your-risk-heart-attack-or-stroke-what-you-should-know",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Risks and medication/supplement discussion 67–73",
+      "editorial_origin": "FDA",
+      "version_observed": null,
+      "assessment": "Supports medicine reconciliation, not a universal acute aspirin dose.",
+      "source_metadata_sha256": "9acc1396e08074396e89737593921d401449249f2a0acd64aaf9b6f167c32b68"
+    },
+    {
+      "source_id": "mi-nice-ng185",
+      "url": "https://www.nice.org.uk/guidance/NG185/chapter/recommendations",
+      "accessed_at": "2026-10-02",
+      "access_mode": "official_indexed_passages",
+      "locator": "Final NG185 1.1.19; 1.2.7–14,1.2.16,1.2.22–24;1.4.10;1.4.15–16,1.4.21–24",
+      "editorial_origin": "NICE",
+      "version_observed": "2025 official PDF revision; recommendations retain original dated recommendations",
+      "assessment": "HTML/PDF direct fetch returned 403. Actual official indexed recommendation text was read; not represented as full PDF access. Separate STEMI/NSTEMI pathways, monitoring and conditional DAPT.",
+      "source_metadata_sha256": "b44b926f31c7caa427725440d7e947d7fee8eb3cda947a40ad271b6ffafbaeba"
+    },
+    {
+      "source_id": "mi-acs-2025",
+      "url": "https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009",
+      "accessed_at": "2026-10-02",
+      "access_mode": "official_indexed_passages",
+      "locator": "5.3.1 synopsis and Table 14; 5.3 recommendation-specific text for non-ST elevation",
+      "editorial_origin": "ACC/AHA/ACEP/NAEMSP/SCAI",
+      "version_observed": "2025",
+      "assessment": "JACC direct fetch returned 403; official indexed complete relevant synopsis and contraindication passage read. AHA PDF mirror is same guideline, not independent.",
+      "source_metadata_sha256": "14a8ab2f9d15f5e9599e5f1f98c6f65caf19c726337d87bb1a6c8961c667b067"
+    },
+    {
+      "source_id": "mi-aha-acs-summary",
+      "url": "https://professional.heart.org/en/science-news/2025-guideline-for-the-management-of-patients-with-acute-coronary-syndromes/top-things-to-know",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Items 1,2,4,6",
+      "editorial_origin": "ACC/AHA/ACEP/NAEMSP/SCAI",
+      "version_observed": "2025-02-27",
+      "assessment": "Same origin as joint guideline; used only for relevant NSTE strategy and DAPT conditions.",
+      "source_metadata_sha256": "9f117a9ef5a894a3e355ead53770474e91e290db2247943e4bef174da80c9351"
+    },
+    {
+      "source_id": "mi-mayo-statin-risks",
+      "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/statin-side-effects/art-20046013",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Role 258–270; muscle pain versus rare injury 272–277; other causes/assessment 320–324",
+      "editorial_origin": "Mayo Clinic",
+      "version_observed": "2025-07-21",
+      "assessment": "Supports contacting team for symptoms and separates muscle pain from rare severe injury. No incidence number imported.",
+      "new_source_candidate": true
+    },
+    {
+      "source_id": "mi-rcuk-firstaid-2025",
+      "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Key points 33; first aider actions 53–58; Chest pain 122–129",
+      "editorial_origin": "Resuscitation Council UK/ERC",
+      "version_observed": "2025-10-27",
+      "assessment": "Adult suspected cardiac chest pain, call 999, aspirin while waiting except known allergy. NHS national text is separate writing; shared resuscitation evidence possible. No dose added to site.",
+      "new_source_candidate": true
+    },
+    {
+      "source_id": "mi-sps-ace-monitoring",
+      "url": "https://sps.nhs.uk/monitorings/ace-inhibitors-and-angiotensin-ii-receptor-blockers-monitoring/",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Post-MI 301–310,331–341; abnormal results 342–344; bibliography385–395",
+      "editorial_origin": "NHS Specialist Pharmacy Service",
+      "version_observed": "2026-08-12",
+      "assessment": "Independent professional synthesis explicitly cites NICE NG185/CKS and other references. Shared upstream evidence disclosed; not independent trial replication.",
+      "new_source_candidate": true
+    },
+    {
+      "source_id": "mi-uhd-cardiac-medicines",
+      "url": "https://www.uhd.nhs.uk/services/cardiology/cardiac-rehabilitation/advice-and-education/medicines-for-the-heart",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "ACE inhibitors 41–44; beta blockers 48–53; statins 35–39",
+      "editorial_origin": "University Hospitals Dorset cardiac rehabilitation",
+      "version_observed": null,
+      "assessment": "Post-MI patient material directly supports renal testing and troublesome ACE cough review. Undated page; old dosing/other broad instructions elsewhere are not imported.",
+      "new_source_candidate": true
+    },
+    {
+      "source_id": "mi-nhs-beta-class",
+      "url": "https://www.nhs.uk/medicines/beta-blockers/",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Class uses 15–27; adverse effects 54–68; suitability77–85",
+      "editorial_origin": "NHS-national",
+      "version_observed": "2026-09-04",
+      "assessment": "Class-level source avoids relying only on bisoprolol for class-wide dizziness/fatigue and respiratory suitability.",
+      "new_source_candidate": true
+    },
+    {
+      "source_id": "mi-merck-acs-medications",
+      "url": "https://www.merckmanuals.com/professional/cardiovascular-disorders/coronary-artery-disease/medications-for-acute-coronary-syndromes",
+      "accessed_at": "2026-10-02",
+      "access_mode": "full_page_relevant_passages",
+      "locator": "Scope/authorship 21–25; treatment 36–59; fibrinolysis 236–256; references257–263",
+      "editorial_origin": "Merck clinical authors Sweis/Jivan; peer reviewer Howlett",
+      "version_observed": "2026-07",
+      "assessment": "Independently authored broad clinical explanation supports bleeding contraindication assessment. Joint US2025 guideline is shared upstream; reproduced contraindication table is not counted as a second origin.",
+      "new_source_candidate": true
+    }
+  ],
+  "sections": [
+    {
+      "section": "care",
+      "section_content_sha256": "c8d9190cb9dc1a54460272db82a6266cf470d234605c8f4e99459dc5dd1cabac",
+      "editorial_record_sha256": "72b3b76879159582bdf93b19b45325e28b9e456243d3674283ad54aa2706e89d",
+      "claims": [
+        {
+          "claim_id": "care-0",
+          "claim_text_sha256": "fc665116b096169523449830b21700a9440c82d4ebe94da8ccb79e376ef453eb",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-nhs",
+            "mi-nhlbi-recovery",
+            "mi-mayo-causes"
+          ],
+          "assessment": "急诊行动与恢复安排分别核对；补Mayo急救位置，避免将NIH康复段误作急诊证据。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "care-1a",
+          "claim_text_sha256": "90e96f650a0654384c07e02354095e850cd3a188055fa6219f6ccfeda459273f",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-mayo-causes",
+            "mi-aha-aspirin"
+          ],
+          "assessment": "先呼叫急救的顺序两家直接一致；AHA 47–48可补入精确绑定。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "care-1b",
+          "claim_text_sha256": "e195a8f7c69b28b3526d9803085da56b8c30fa895eb1b61e93b8a533076995c9",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-mayo-causes",
+            "mi-aha-aspirin"
+          ],
+          "assessment": "Mayo归属真实；AHA 47–48独立支持调度/医护判断。不同机构公众说明不强行合并。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "care-1c",
+          "claim_text_sha256": "17fbf77583b28e4063da7703e6141a91a1504d4fb7a3159edd93d7c462ca81e3",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-nhs",
+            "mi-rcuk-firstaid-2025"
+          ],
+          "assessment": "NHS归属真实；RCUK Chest pain成人场景独立支持等待救援时用药及已知过敏例外。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "care-1d",
+          "claim_text_sha256": "5190cf5f94a137255892457ed4f58c6525ba6e3bfa583dacac675b2ac55ebcb2",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-mayo-causes",
+            "mi-aha-aspirin"
+          ],
+          "assessment": "两家均要求呼叫在先，不为药物推迟。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "care-2",
+          "claim_text_sha256": "52b9047d2842d5c45418d1abee07733b3dc0d6445405ef2c5540dc2b70e1851f",
+          "conclusion": "supported",
+          "source_ids": [
+            "mi-fda-aspirin",
+            "mi-ashp-clopidogrel",
+            "mi-aha-aspirin"
+          ],
+          "assessment": "向接诊者说明已有过敏、出血和药单是低风险信息整理；并未新建自行用药阈值。",
+          "requires_two_independent_materials": false,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "care-3a",
+          "claim_text_sha256": "5c3b302484529cbab6de866305e0312f1437b7bd9125a6b888864c3a5fd309fa",
+          "conclusion": "supported",
+          "source_ids": [
+            "mi-nhlbi-recovery",
+            "mi-nhs"
+          ],
+          "assessment": "再次疑似发作立即急救；不用等待复诊。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "care-3b",
+          "claim_text_sha256": "0ca090445d5d4ce7667eaa5822726e6c633e0080970b4448348aa02f9e9bbae2",
+          "conclusion": "supported",
+          "source_ids": [
+            "mi-nhlbi-recovery",
+            "mi-nhs"
+          ],
+          "assessment": "个体恢复/工作安排有依据；未写固定天数。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "care-3c",
+          "claim_text_sha256": "878210881a4a73bf076f6e213d5f06cae11fa47d67a7f4367cc3bfbb15782f77",
+          "conclusion": "supported",
+          "source_ids": [
+            "mi-nhlbi-recovery"
+          ],
+          "assessment": "119直接说明驾驶与辖区法规有关；无具体法律或恢复天数断言，不机械要求两套法规。",
+          "requires_two_independent_materials": false,
+          "body_change_required": false
+        }
+      ]
+    },
+    {
+      "section": "treatment",
+      "section_content_sha256": "cd821115b947f498aa762e2a15b3adc581d47d87179b71a1d88d5c6240144f50",
+      "editorial_record_sha256": "fc67d87cc40db01772767e612eafebf84c989cd414435f92825f2bd961cc6bce",
+      "claims": [
+        {
+          "claim_id": "treatment-0",
+          "claim_text_sha256": "e725f64dfa9a7e410d1ff643dd7da68998194b56af24df9725a13d80ccd12046",
+          "conclusion": "supported",
+          "source_ids": [
+            "mi-nhlbi-treatment",
+            "mi-nhs"
+          ],
+          "assessment": "急性恢复血流和后续预防复发两个目标均有直接支持。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "treatment-1",
+          "claim_text_sha256": "ab550489560df353378f929032f784e128b25a152c8d95f8c4a1fdff823be1b6",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-nhlbi-treatment",
+            "mi-mayo-treatment"
+          ],
+          "assessment": "两家直接解释导管/球囊/支架与搭桥；补Mayo 301–307绑定比NHS短摘要更精确。",
+          "requires_two_independent_materials": false,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "treatment-2a",
+          "claim_text_sha256": "c79318cef6118860438fd61bbef714ce70b30d2d2885a8182f8f8fa1e709d93e",
+          "conclusion": "supported",
+          "source_ids": [
+            "mi-nhlbi-treatment",
+            "mi-acs-2025"
+          ],
+          "assessment": "溶栓用途及出血风险直接支持；不导入统一剂量/时间算法。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "treatment-2b",
+          "claim_text_sha256": "a31d6d4456090fdd29d0246a3e5e20c8e73cd7a8b0ea4295098b404652f5ab38",
+          "conclusion": "supported",
+          "source_ids": [
+            "mi-acs-2025",
+            "mi-nice-ng185"
+          ],
+          "assessment": "已实际读到US5.3.1与UK1.1.19原始官方索引；符合条件STEMI且PCI不能及时实施。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "treatment-2c",
+          "claim_text_sha256": "b8c3c2759d4be6f679dc16ad0b58946e1efaadea9aa6bcb8f455b8d78dc3ace6",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-acs-2025",
+            "mi-nice-ng185",
+            "mi-merck-acs-medications"
+          ],
+          "assessment": "发病时间由US与UK支持；重大出血评估补Merck自主概述256。共同US指南上游须披露，禁忌表不另计。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "treatment-3",
+          "claim_text_sha256": "253affd1b5491c625c4f7c87cd8801d510d638211f42ec2955fd57c4c7d351c2",
+          "conclusion": "supported",
+          "source_ids": [
+            "mi-aha-acs-summary",
+            "mi-nice-ng185"
+          ],
+          "assessment": "US摘要1/4与UK1.2.7–14支持NSTE按风险用药和造影策略；UK溶栓章节限STEMI。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        }
+      ]
+    },
+    {
+      "section": "medications",
+      "section_content_sha256": "31935b6421cfd3c538ad94b81eed629740805e9779c0ac7ec3a7312dacbdbd83",
+      "editorial_record_sha256": "362a66bd6c6f6d013ec366a72d74f6eda16bb8c5dda0c3252e07c70a6ac4661b",
+      "claims": [
+        {
+          "claim_id": "medications-0",
+          "claim_text_sha256": "35a0ce735caeb808aae2136d029d80ae5e23c6b011ef69bf691741ed44d8cbc3",
+          "conclusion": "supported",
+          "source_ids": [
+            "mi-nhlbi-recovery",
+            "mi-mayo-treatment"
+          ],
+          "assessment": "药类分工是已解释作用的概括，不声称每人需全部药类。",
+          "requires_two_independent_materials": false,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-1a",
+          "claim_text_sha256": "ead373d51c681937652dad395372908cb83480846ab68a92d054c1d44eee2cc9",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-ashp-clopidogrel",
+            "mi-aha-aspirin",
+            "mi-nhlbi-recovery"
+          ],
+          "assessment": "补NIH125–126同时涵盖两种代表药的血小板机制；ASHP针对氯吡格雷，AHA针对阿司匹林。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-1b",
+          "claim_text_sha256": "22f91b18737695a0129259a043215d17d62c331aef40eb7540c6a81d425bde8c",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-aha-aspirin",
+            "mi-nice-ng185"
+          ],
+          "assessment": "补NICE1.4.15–16/1.4.21–24；疗程依适应场景、复发与出血风险。AHA摘要不另作第二来源。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-1c",
+          "claim_text_sha256": "55fef62cdf177dd4a59cbb2029c4b8eeb162bbddf637c05f86df672dea333a14",
+          "conclusion": "supported",
+          "source_ids": [
+            "mi-ashp-clopidogrel",
+            "mi-nhlbi-treatment",
+            "mi-aha-aspirin"
+          ],
+          "assessment": "ASHP57直接过早停药增加支架血栓；NIH118/135按处方预防血栓，AHA76–78延长保护与风险条件相符。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-2a",
+          "claim_text_sha256": "aedb6afc09679a0683cd50e3c3f7ef73d81bf9f32c933a1a3c76ea1b5afa5ad9",
+          "conclusion": "supported",
+          "source_ids": [
+            "mi-nhs-clopidogrel",
+            "mi-ashp-clopidogrel"
+          ],
+          "assessment": "黑便需即时医疗联系，保留NHS111地区路径；没有把所有黑便机械升级成叫救护车。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-2b",
+          "claim_text_sha256": "f273d3468fdd24ea059b28ca256764c3b8e758da8a71a7658799a94722967011",
+          "conclusion": "supported",
+          "source_ids": [
+            "mi-nhs-clopidogrel",
+            "mi-mayo-vomiting-blood"
+          ],
+          "assessment": "两家支持血性/咖啡渣样呕吐及时急诊；Mayo休克呼EMS的条件未被混用。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-2c",
+          "claim_text_sha256": "01127a3afe85213179e2c2ca6501c1464eb4c7a49d03c4321cb0d4adae61b622",
+          "conclusion": "supported",
+          "source_ids": [
+            "mi-nhs-wounds",
+            "mi-mayo-bleeding"
+          ],
+          "assessment": "两家支持大量或持续无法控制的外部伤口出血急诊处理。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-3a",
+          "claim_text_sha256": "3ae91e39094c2f476ec15f5f2194bed08fd5104a4097e9f6bc36aabf604c6493",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-nhlbi-recovery",
+            "mi-mayo-statin-risks"
+          ],
+          "assessment": "补Mayo258–270明确长期心梗/卒中风险获益，原MI治疗页298主要说明降脂。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-3b",
+          "claim_text_sha256": "4906ce883c1570125607e452a7e55b1df9e352b9e006394a9310804ceb97ae58",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-nhs-statins",
+            "mi-mayo-statin-risks",
+            "mi-uhd-cardiac-medicines"
+          ],
+          "assessment": "NHS88/Mayo270及UHD39支持评估肌痛无力；新Mayo避免只依两个NHS网页来推断独立性。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-3c",
+          "claim_text_sha256": "0520f3ef0b9b4db934a81ebf1e13e0492a0f958fecc795cbbe4ea3740cf367a1",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-mayo-statin-risks",
+            "mi-nhs-statins"
+          ],
+          "assessment": "Mayo272–277直接区别肌痛与极少见严重肌损伤；属于解释症状不等于确诊，未降级就医行动。",
+          "requires_two_independent_materials": false,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-4a",
+          "claim_text_sha256": "3da64a66b7ae944c17bbc674f4eea7ac390f13199bb9e0a5c05b82ef707a02ce",
+          "conclusion": "supported",
+          "source_ids": [
+            "mi-mayo-treatment",
+            "mi-nhlbi-recovery"
+          ],
+          "assessment": "两家支持降压/减少心脏负荷。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-4b",
+          "claim_text_sha256": "b982558578d025dc223492fd15b09cf399049722e4a209f072ce491966a3a051",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-mayo-ace",
+            "mi-nhs-ramipril",
+            "mi-sps-ace-monitoring"
+          ],
+          "assessment": "干咳/头晕已有Mayo+NHS；血钾/肾功能变化补SPS342–344类级证据，免将CUH肾病样本外推。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-4c",
+          "claim_text_sha256": "3822aa1df287a87eba2f121ff6ed20a743d2b9fd29255773596fb4a51fe39596",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-nice-ng185",
+            "mi-sps-ace-monitoring",
+            "mi-uhd-cardiac-medicines"
+          ],
+          "assessment": "现有NICE定位1.4.2不够，应改1.4.10；SPS有MI专段，UHD43独立心康材料支持肾功能抽血。均未导入统一复查间隔。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-4d",
+          "claim_text_sha256": "830f3a9142f5757f1e58c6938e030015f195c6a61619ec82818926268ee0f2c8",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-nhs-ramipril",
+            "mi-uhd-cardiac-medicines"
+          ],
+          "assessment": "NHS26与UHD44直接支持麻烦持续干咳联系医生调整；Mayo316只是泛咨询，不能冒充全部特定行动。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-5a",
+          "claim_text_sha256": "13ede615c72d0b9af07b7cb800a58999372a9dd895265e4539ca10b7998cb1e8",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-mayo-beta",
+            "mi-nhlbi-recovery"
+          ],
+          "assessment": "Mayo264–287完整类级心率/负荷/心律/心绞痛；NIH128支持心律及胸痛，可校准现有Mayo治疗页窄定位。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-5b",
+          "claim_text_sha256": "3f7158a5ce2849d4e64f43bd003b48f93d72a176a3c3662ca5ad74916781bf17",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-mayo-beta",
+            "mi-nhs-beta-class"
+          ],
+          "assessment": "类级NHS58–62与Mayo292–297覆盖疲劳头晕，补类级引用。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-5c",
+          "claim_text_sha256": "556d99fcd16171e8eca85456d48aaa5f04e787dbc781c8aaa8dc059ae9a76386",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-mayo-beta",
+            "mi-nhs-beta-class"
+          ],
+          "assessment": "类级呼吸病史咨询有直接支持；没有把所有哮喘患者绝对禁用所有beta药。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-5d",
+          "claim_text_sha256": "198679f57330dc67c80daaed5d9f56e3ad41ff4d17d01c57c562965cec741048",
+          "conclusion": "supported_with_binding_update",
+          "source_ids": [
+            "mi-mayo-beta",
+            "mi-uhd-cardiac-medicines",
+            "mi-nhs-bisoprolol"
+          ],
+          "assessment": "Mayo309/UHD53直接类级突然停药风险，NHS40为比索洛尔具体例子；补UHD类级绑定。",
+          "requires_two_independent_materials": true,
+          "body_change_required": false
+        },
+        {
+          "claim_id": "medications-6",
+          "claim_text_sha256": "c6a0cf1a58a8269ed7e64903d11c51cba2d59fd97086097ef3bc4471675bbdbd",
+          "conclusion": "supported",
+          "source_ids": [
+            "mi-ashp-clopidogrel",
+            "mi-fda-aspirin"
+          ],
+          "assessment": "处方/OTC/补充剂药单及核对相互作用属信息整理，支持成立。",
+          "requires_two_independent_materials": false,
+          "body_change_required": false
+        }
+      ]
+    }
+  ],
+  "required_binding_updates": [
+    {
+      "claim_id": "care-0",
+      "source_ids": [
+        "mi-nhs",
+        "mi-nhlbi-recovery",
+        "mi-mayo-causes"
+      ],
+      "action": "急诊行动与恢复安排分别核对；补Mayo急救位置，避免将NIH康复段误作急诊证据。"
+    },
+    {
+      "claim_id": "care-1a",
+      "source_ids": [
+        "mi-mayo-causes",
+        "mi-aha-aspirin"
+      ],
+      "action": "先呼叫急救的顺序两家直接一致；AHA 47–48可补入精确绑定。"
+    },
+    {
+      "claim_id": "care-1b",
+      "source_ids": [
+        "mi-mayo-causes",
+        "mi-aha-aspirin"
+      ],
+      "action": "Mayo归属真实；AHA 47–48独立支持调度/医护判断。不同机构公众说明不强行合并。"
+    },
+    {
+      "claim_id": "care-1c",
+      "source_ids": [
+        "mi-nhs",
+        "mi-rcuk-firstaid-2025"
+      ],
+      "action": "NHS归属真实；RCUK Chest pain成人场景独立支持等待救援时用药及已知过敏例外。"
+    },
+    {
+      "claim_id": "care-1d",
+      "source_ids": [
+        "mi-mayo-causes",
+        "mi-aha-aspirin"
+      ],
+      "action": "两家均要求呼叫在先，不为药物推迟。"
+    },
+    {
+      "claim_id": "treatment-1",
+      "source_ids": [
+        "mi-nhlbi-treatment",
+        "mi-mayo-treatment"
+      ],
+      "action": "两家直接解释导管/球囊/支架与搭桥；补Mayo 301–307绑定比NHS短摘要更精确。"
+    },
+    {
+      "claim_id": "treatment-2c",
+      "source_ids": [
+        "mi-acs-2025",
+        "mi-nice-ng185",
+        "mi-merck-acs-medications"
+      ],
+      "action": "发病时间由US与UK支持；重大出血评估补Merck自主概述256。共同US指南上游须披露，禁忌表不另计。"
+    },
+    {
+      "claim_id": "medications-1a",
+      "source_ids": [
+        "mi-ashp-clopidogrel",
+        "mi-aha-aspirin",
+        "mi-nhlbi-recovery"
+      ],
+      "action": "补NIH125–126同时涵盖两种代表药的血小板机制；ASHP针对氯吡格雷，AHA针对阿司匹林。"
+    },
+    {
+      "claim_id": "medications-1b",
+      "source_ids": [
+        "mi-aha-aspirin",
+        "mi-nice-ng185"
+      ],
+      "action": "补NICE1.4.15–16/1.4.21–24；疗程依适应场景、复发与出血风险。AHA摘要不另作第二来源。"
+    },
+    {
+      "claim_id": "medications-3a",
+      "source_ids": [
+        "mi-nhlbi-recovery",
+        "mi-mayo-statin-risks"
+      ],
+      "action": "补Mayo258–270明确长期心梗/卒中风险获益，原MI治疗页298主要说明降脂。"
+    },
+    {
+      "claim_id": "medications-3b",
+      "source_ids": [
+        "mi-nhs-statins",
+        "mi-mayo-statin-risks",
+        "mi-uhd-cardiac-medicines"
+      ],
+      "action": "NHS88/Mayo270及UHD39支持评估肌痛无力；新Mayo避免只依两个NHS网页来推断独立性。"
+    },
+    {
+      "claim_id": "medications-3c",
+      "source_ids": [
+        "mi-mayo-statin-risks",
+        "mi-nhs-statins"
+      ],
+      "action": "Mayo272–277直接区别肌痛与极少见严重肌损伤；属于解释症状不等于确诊，未降级就医行动。"
+    },
+    {
+      "claim_id": "medications-4b",
+      "source_ids": [
+        "mi-mayo-ace",
+        "mi-nhs-ramipril",
+        "mi-sps-ace-monitoring"
+      ],
+      "action": "干咳/头晕已有Mayo+NHS；血钾/肾功能变化补SPS342–344类级证据，免将CUH肾病样本外推。"
+    },
+    {
+      "claim_id": "medications-4c",
+      "source_ids": [
+        "mi-nice-ng185",
+        "mi-sps-ace-monitoring",
+        "mi-uhd-cardiac-medicines"
+      ],
+      "action": "现有NICE定位1.4.2不够，应改1.4.10；SPS有MI专段，UHD43独立心康材料支持肾功能抽血。均未导入统一复查间隔。"
+    },
+    {
+      "claim_id": "medications-4d",
+      "source_ids": [
+        "mi-nhs-ramipril",
+        "mi-uhd-cardiac-medicines"
+      ],
+      "action": "NHS26与UHD44直接支持麻烦持续干咳联系医生调整；Mayo316只是泛咨询，不能冒充全部特定行动。"
+    },
+    {
+      "claim_id": "medications-5a",
+      "source_ids": [
+        "mi-mayo-beta",
+        "mi-nhlbi-recovery"
+      ],
+      "action": "Mayo264–287完整类级心率/负荷/心律/心绞痛；NIH128支持心律及胸痛，可校准现有Mayo治疗页窄定位。"
+    },
+    {
+      "claim_id": "medications-5b",
+      "source_ids": [
+        "mi-mayo-beta",
+        "mi-nhs-beta-class"
+      ],
+      "action": "类级NHS58–62与Mayo292–297覆盖疲劳头晕，补类级引用。"
+    },
+    {
+      "claim_id": "medications-5c",
+      "source_ids": [
+        "mi-mayo-beta",
+        "mi-nhs-beta-class"
+      ],
+      "action": "类级呼吸病史咨询有直接支持；没有把所有哮喘患者绝对禁用所有beta药。"
+    },
+    {
+      "claim_id": "medications-5d",
+      "source_ids": [
+        "mi-mayo-beta",
+        "mi-uhd-cardiac-medicines",
+        "mi-nhs-bisoprolol"
+      ],
+      "action": "Mayo309/UHD53直接类级突然停药风险，NHS40为比索洛尔具体例子；补UHD类级绑定。"
+    }
+  ],
+  "unresolved_questions": [
+    {
+      "type": "evidence_binding",
+      "scope": "selected claims in required_binding_updates",
+      "question": "正文与现有证据记录尚未应用本报告的精确定位/新增来源，不应直接改为已交叉核验。",
+      "medical_content_error": false
+    },
+    {
+      "type": "access_extent",
+      "scope": "mi-nice-ng185; mi-acs-2025",
+      "question": "此次直接全文接口403；本报告仅核对实际返回的官方索引指定条文，不宣称完整指南复查。",
+      "medical_content_error": false
+    }
+  ],
+  "independence": {
+    "definition": "Independent authorship is distinguished from independent underlying trials. Named shared upstream guidance is disclosed, not silently counted twice.",
+    "relationships": [
+      "AHA patient and AHA joint-guideline summary belong to the AHA organizational origin; summary and joint guideline are not independent.",
+      "SPS is a professional editorial synthesis using NICE NG185/CKS, BNF and other references. NICE and SPS must disclose this relationship; no claim of independent trial replication.",
+      "Merck authors and peer reviewer provide independent clinical prose, while the contraindication table and algorithm use US2025 guidance and are not an independent second table.",
+      "NHS-national, University Hospitals Dorset and RCUK are distinct writing teams; same healthcare-system branding alone does not establish copying. RCUK identifies ERC2025 as upstream.",
+      "ASHP authorship is independent of the NIH host."
+    ],
+    "uhd_authorship_evidence": {
+      "url": "https://www.uhd.nhs.uk/services/cardiology/cardiac-rehabilitation/advice-and-education/medicines-for-the-heart",
+      "observation": "University Hospitals Dorset service-branded cardiac-rehabilitation patient material, embedded in its locally produced All Heart recovery education. ACE paragraph explains post-MI workload, kidney testing and ARB substitution in prose distinct from national NHS ramipril page; no national NHS syndication attribution is displayed.",
+      "classification": "independently_written_hospital_patient_education",
+      "independence_group": "UK-UHD",
+      "limits": "Named individual page author and exact publication date are not shown. Shared clinical guidance may underlie both sources; this is not a claim of independent primary research."
+    }
+  },
+  "bilingual_assessment": {
+    "actions_and_conditions_consistent": true,
+    "new_dose_or_threshold_added": false,
+    "retained_conditions": [
+      "US/Mayo versus UK/NHS attribution",
+      "aspirin allergy exception and emergency call priority",
+      "STEMI versus NSTEMI treatment scope",
+      "black stool versus bloody vomit urgency",
+      "bleeding and thrombosis tradeoff",
+      "asthma history and gradual clinician-directed drug changes"
+    ],
+    "scope_note": "This is adult-oriented education. No universal initiation, pregnancy prescribing or paediatric dose was inferred from the category explanation."
+  },
+  "license": {
+    "source_body_copied": false,
+    "method": "Original short audit notes and URLs/locators; existing article strings referenced by hash. ASHP source states copyright and commercial duplication restrictions. No full guideline tables or source paragraphs reproduced."
+  },
+  "coding_appendix": {
+    "counting_action": "none",
+    "basis": "Parent-provided frozen directory facts; no new coding search or mapping edit.",
+    "recommendations": [
+      {
+        "code": "BA41",
+        "status": "out_of_scope_parent",
+        "reason": "冻结表父级；文章标题及14节不能让汇总类别进入分母。"
+      },
+      {
+        "code": "BA41.0",
+        "status": "partial_candidate_pending_semantic_mapping",
+        "reason": "确有STEMI诊断/再灌注差别解释，但本次只审3节，不足以证明该末级类别的完整双语14维覆盖。不能因提及即计完整。"
+      },
+      {
+        "code": "BA41.1",
+        "status": "partial_candidate_pending_semantic_mapping",
+        "reason": "确有NSTEMI风险分流解释；仍须逐项判断共用正文对本类别全部维度的支持。"
+      },
+      {
+        "code": "BA41.Z",
+        "status": "mapping_pending",
+        "reason": "未特指MI是独立编码类别；通用MI综述是否真正承接该范围须明确映射语义，不能作为父级全文的自动计数替代。"
+      },
+      {
+        "code": "BA42",
+        "status": "mention_only_not_complete",
+        "reason": "仅有再次发作风险/急救提醒，不等于再次梗死独立类别完整正文。"
+      }
+    ]
+  },
+  "acceptance_boundary": "仅供独立编辑交叉核验整合；不升级医学签审、不直接发布、不改变ICD覆盖分子。补绑定后只需核对变更的来源元数据与哈希，无需无新证据地全篇重审。",
+  "validation": {
+    "target_hash_matched": true,
+    "all_34_claims_exact_substrings_in_both_languages": true,
+    "all_3_record_section_hashes_matched": true,
+    "all_current_support_metadata_hashes_matched": true
+  },
+  "proposed_source_additions": [
+    {
+      "id": "mi-mayo-statin-risks",
+      "title": "Mayo Clinic — Statin side effects: Weigh the benefits and risks",
+      "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/statin-side-effects/art-20046013",
+      "organization": "Mayo Clinic",
+      "independence_group": "US-MAYO",
+      "type": "public_health_information",
+      "jurisdiction": "US",
+      "publication_date": "2025-07-21",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "retrieval_scope": "Role 258–270; muscle pain versus rare injury 272–277; other causes/assessment 320–324. Supports contacting team for symptoms and separates muscle pain from rare severe injury. No incidence number imported. Observed version/update: 2025-07-21.",
+      "claim_verification": "pending",
+      "copyright": "Source rights retained. Original factual audit notes and links only; no source full text, images, tables or algorithms redistributed."
+    },
+    {
+      "id": "mi-rcuk-firstaid-2025",
+      "title": "Resuscitation Council UK — First Aid Guidelines 2025",
+      "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+      "organization": "Resuscitation Council UK",
+      "independence_group": "UK-RCUK-ERC",
+      "type": "clinical_guideline",
+      "jurisdiction": "GB",
+      "publication_date": "2025-10-27",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "retrieval_scope": "Key points 33; first aider actions 53–58; Chest pain 122–129. Adult suspected cardiac chest pain, call 999, aspirin while waiting except known allergy. NHS national text is separate writing; shared resuscitation evidence possible. No dose added to site. Observed version/update: 2025-10-27.",
+      "claim_verification": "pending",
+      "copyright": "Source rights retained. Original factual audit notes and links only; no source full text, images, tables or algorithms redistributed."
+    },
+    {
+      "id": "mi-sps-ace-monitoring",
+      "title": "NHS SPS — ACE inhibitors and angiotensin II receptor blockers monitoring",
+      "url": "https://sps.nhs.uk/monitorings/ace-inhibitors-and-angiotensin-ii-receptor-blockers-monitoring/",
+      "organization": "NHS Specialist Pharmacy Service",
+      "independence_group": "UK-NHS-SPS",
+      "type": "professional_medicines_information",
+      "jurisdiction": "GB",
+      "publication_date": "2025-04-23",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "retrieval_scope": "Post-MI 301–310,331–341; abnormal results 342–344; bibliography385–395. Independent professional synthesis explicitly cites NICE NG185/CKS and other references. Shared upstream evidence disclosed; not independent trial replication. Observed version/update: 2026-08-12.",
+      "claim_verification": "pending",
+      "copyright": "Source rights retained. Original factual audit notes and links only; no source full text, images, tables or algorithms redistributed."
+    },
+    {
+      "id": "mi-uhd-cardiac-medicines",
+      "title": "University Hospitals Dorset — Medicines for the Heart",
+      "url": "https://www.uhd.nhs.uk/services/cardiology/cardiac-rehabilitation/advice-and-education/medicines-for-the-heart",
+      "organization": "University Hospitals Dorset NHS Foundation Trust cardiac rehabilitation service",
+      "independence_group": "UK-UHD",
+      "type": "patient_education",
+      "jurisdiction": "GB",
+      "publication_date": null,
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "retrieval_scope": "ACE inhibitors 41–44; beta blockers 48–53; statins 35–39. Post-MI patient material directly supports renal testing and troublesome ACE cough review. Undated page; old dosing/other broad instructions elsewhere are not imported.",
+      "claim_verification": "pending",
+      "copyright": "Source rights retained. Original factual audit notes and links only; no source full text, images, tables or algorithms redistributed."
+    },
+    {
+      "id": "mi-nhs-beta-class",
+      "title": "NHS — Beta blockers",
+      "url": "https://www.nhs.uk/medicines/beta-blockers/",
+      "organization": "NHS",
+      "independence_group": "UK-NHS",
+      "type": "public_health_information",
+      "jurisdiction": "GB",
+      "publication_date": null,
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "retrieval_scope": "Class uses 15–27; adverse effects 54–68; suitability77–85. Class-level source avoids relying only on bisoprolol for class-wide dizziness/fatigue and respiratory suitability. Observed version/update: 2026-09-04.",
+      "claim_verification": "pending",
+      "copyright": "Source rights retained. Original factual audit notes and links only; no source full text, images, tables or algorithms redistributed."
+    },
+    {
+      "id": "mi-merck-acs-medications",
+      "title": "Merck Manual Professional — Medications for Acute Coronary Syndromes",
+      "url": "https://www.merckmanuals.com/professional/cardiovascular-disorders/coronary-artery-disease/medications-for-acute-coronary-syndromes",
+      "organization": "Merck Manual; Ranya N. Sweis and Arif Jivan; peer reviewer Jonathan G. Howlett",
+      "independence_group": "US-MERCK",
+      "type": "professional_medical_reference",
+      "jurisdiction": "US",
+      "publication_date": null,
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "retrieval_scope": "Scope/authorship 21–25; treatment 36–59; fibrinolysis 236–256; references257–263. Independently authored broad clinical explanation supports bleeding contraindication assessment. Joint US2025 guideline is shared upstream; reproduced contraindication table is not counted as a second origin. Observed version/update: 2026-07.",
+      "claim_verification": "pending",
+      "copyright": "Source rights retained. Original factual audit notes and links only; no source full text, images, tables or algorithms redistributed."
+    }
+  ],
+  "claim_binding_updates": [
+    {
+      "claim_id": "care-0",
+      "source_id": "mi-nhs",
+      "locator": "Introduction15; recovery79–91",
+      "assessment": "急诊评估及康复阶段分别支持；不是来源每句覆盖所有概括。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "care-0",
+      "source_id": "mi-mayo-causes",
+      "locator": "When to see a doctor302–308",
+      "assessment": "独立交叉核对怀疑心梗应立即急救。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "care-0",
+      "source_id": "mi-nhlbi-recovery",
+      "locator": "Rehabilitation99–117; long-term medicines122–130",
+      "assessment": "恢复期活动安排及长期治疗。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "care-1a",
+      "source_id": "mi-aha-aspirin",
+      "locator": "Should I take aspirin during a heart attack or stroke?45–48",
+      "assessment": "先呼叫急救；由调度/医护考虑是否用阿司匹林，不因服药推迟呼救。与Mayo独立编写，但不与AHA摘要重复计源。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "care-1b",
+      "source_id": "mi-aha-aspirin",
+      "locator": "Should I take aspirin during a heart attack or stroke?45–48",
+      "assessment": "先呼叫急救；由调度/医护考虑是否用阿司匹林，不因服药推迟呼救。与Mayo独立编写，但不与AHA摘要重复计源。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "care-1d",
+      "source_id": "mi-aha-aspirin",
+      "locator": "Should I take aspirin during a heart attack or stroke?45–48",
+      "assessment": "先呼叫急救；由调度/医护考虑是否用阿司匹林，不因服药推迟呼救。与Mayo独立编写，但不与AHA摘要重复计源。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "care-1c",
+      "source_id": "mi-rcuk-firstaid-2025",
+      "locator": "Chest pain122–129",
+      "assessment": "成人疑似心源性胸痛，先呼叫999，等待救援时协助自服阿司匹林，已知过敏除外。与NHS公众页面形成独立写作支持；剂量不导入本文。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "treatment-1",
+      "source_id": "mi-mayo-treatment",
+      "locator": "Surgical and other procedures301–307",
+      "assessment": "导管/球囊/支架与搭桥作用均直接解释。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "treatment-2c",
+      "source_id": "mi-merck-acs-medications",
+      "locator": "Fibrinolytics236–256, especially contraindications254–256",
+      "assessment": "自主编写临床概述支持评估活动性或可致命出血风险；US2025为共同上游，不能把禁忌表再当独立原始依据。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-1a",
+      "source_id": "mi-nhlbi-recovery",
+      "locator": "Medicines125–126",
+      "assessment": "同段直接列出阿司匹林、氯吡格雷减少血小板成团；补充两种代表药机制的共同支持。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-1b",
+      "source_id": "mi-nice-ng185",
+      "locator": "Final NG1851.4.15–16 and1.4.21–24; official indexed passages",
+      "assessment": "疗程按MI后阶段、再次事件风险、出血风险及PCI/合用抗凝情形决定；只支持本文条件化概括，不导入统一疗程。直接页面403，实际读取官方索引指定条文。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-3a",
+      "source_id": "mi-mayo-statin-risks",
+      "locator": "Introduction258–270",
+      "assessment": "降胆固醇及降低心梗/卒中风险直接陈述，与NHLBI恢复页独立写作。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-3b",
+      "source_id": "mi-mayo-statin-risks",
+      "locator": "Introduction270; muscle symptoms272–277; assessment320–324",
+      "assessment": "有怀疑副作用与团队讨论；肌痛/无力可由多种原因引起，评估而非直接诊断严重肌损伤。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-3b",
+      "source_id": "mi-uhd-cardiac-medicines",
+      "locator": "Statins35–39",
+      "assessment": "心康患者资料明确意外肌痛、压痛或无力应告知医生。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-3c",
+      "source_id": "mi-mayo-statin-risks",
+      "locator": "Muscle pain and damage272–277; assessment320–324",
+      "assessment": "明确区别常见肌痛投诉与极少见严重肌损伤；这里只解释不能用症状替代确诊，不加入风险数值。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-4b",
+      "source_id": "mi-sps-ace-monitoring",
+      "locator": "Abnormal results342–344; bibliography385–395",
+      "assessment": "ACEI/ARB开始或加量后可有肌酐及血钾变化，补类级证据；NICE/BNF等共同上游明确。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-4c",
+      "source_id": "mi-nice-ng185",
+      "locator": "Final1.4.10; official indexed PDF page24",
+      "assessment": "MI后ACEI/ARB用药前后测肾功能、电解质、血压；用本条替换原1.4.2的过宽定位。实际读取官方索引条文，未声称全文PDF访问。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-4c",
+      "source_id": "mi-sps-ace-monitoring",
+      "locator": "Post myocardial infarction301–310 and331–341",
+      "assessment": "MI专段直接列血压/肌酐或eGFR/钠/钾；独立专业综合但引用NICE共同依据，非独立试验。本文不采用统一复查间隔。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-4c",
+      "source_id": "mi-uhd-cardiac-medicines",
+      "locator": "ACE inhibitors41–43",
+      "assessment": "医院心康资料独立说明MI后ACE用药需肾功能抽血；支持抽血分句，不单独证明所有电解质项目。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-4d",
+      "source_id": "mi-uhd-cardiac-medicines",
+      "locator": "ACE inhibitors44",
+      "assessment": "ACE类药干咳变得困扰时联系医生，医生可改用另一类药；与NHS-national雷米普利26为不同作者材料。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-5a",
+      "source_id": "mi-mayo-beta",
+      "locator": "Mechanism264–265; uses283–287",
+      "assessment": "直接支持减慢心率、减负荷、心律问题及心绞痛，优于仅MI药物摘要296的窄定位。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-5b",
+      "source_id": "mi-nhs-beta-class",
+      "locator": "Side effects54–68",
+      "assessment": "beta类药疲劳与头晕的全国患者教育，与Mayo类级来源交叉支持。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-5c",
+      "source_id": "mi-nhs-beta-class",
+      "locator": "Suitability77–85",
+      "assessment": "呼吸疾病如哮喘/COPD可能影响适用性，用前告知医生；未说所有哮喘都绝对禁用。",
+      "operation": "add_or_correct_binding"
+    },
+    {
+      "claim_id": "medications-5d",
+      "source_id": "mi-uhd-cardiac-medicines",
+      "locator": "Beta blockers48–53",
+      "assessment": "医院心康资料类级说明不要突然停药，应和GP讨论；独立于Mayo写作。",
+      "operation": "add_or_correct_binding"
+    }
+  ]
+}
