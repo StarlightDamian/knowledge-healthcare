@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-10-03",
-  "publication_status": "local_candidate_not_yet_live",
+  "publication_status": "published_and_publicly_verified",
   "summary": {
     "topics": 82,
     "backlog": 189,
@@ -42,16 +42,59 @@
       "command": "python -m unittest tests.test_review_dates tests.test_editorial tests.test_model tests.test_knowledge tests.test_icd tests.test_priorities tests.test_content_audit tests.test_clinical_gate"
     },
     "browser_http": {
-      "status": "pending_public_browser_after_deployment"
+      "checked_at": "2026-10-03",
+      "url": "https://www.zengyuwei.cn/healthcare/",
+      "release_id": "rel-cc0d196d0b6c9b33ceac6d04b6aa0b208aaf0d07ad50f421b2774c17e77b958a",
+      "runtime_commit": "21ae42051cb088c9927e99d5000d22610822d968",
+      "topics": [
+        "meningitis",
+        "anaphylaxis",
+        "postpartum-hemorrhage"
+      ],
+      "content_hashes": {
+        "meningitis": "0b314a0daa410a47bc87ef4d919f5d32047ba1db807b3f3202301d611cab5ddc",
+        "anaphylaxis": "abd70256ab35074c102152005e116429ed925974a7c2f3164d9d07cba7d10ca6",
+        "postpartum-hemorrhage": "71a05d85f16070055bddd9659660b425021a370761d8065ccd56f829a31ff0a2"
+      },
+      "passed": 4,
+      "seconds": 42.375,
+      "checks": [
+        "All three canonical topics found through different second-level specialties;14 source-linked sections,danger first,chapter jumps and concentrated editorial panel",
+        "Three selections survive department/query changes;comparison expands full medication text and downloads exact22-column selected CSV",
+        "EN/Arabic preserve open detail,query,department and selection;English fallback,RTL,mobile long text and drawer work without horizontal overflow",
+        "Existing postpartum danger rule fires in CN/EN independently of eye filters and respects negation;search,age,temperature stay local;no off-origin request or browser error"
+      ],
+      "screenshots": [
+        "docs/screenshots/public-p0-02-desktop-zh.png",
+        "docs/screenshots/public-p0-02-mobile-ar.png"
+      ],
+      "coverage": 34,
+      "denominator": 13155,
+      "coverage_target_met": false,
+      "http_transport": "Chromium page and browser-context API request",
+      "transport_failures_this_run": [],
+      "visually_reviewed": true
     },
     "github_ci": {
-      "status": "pending_fixed_commit",
+      "status": "success",
       "previous_failed_run": "https://github.com/StarlightDamian/knowledge-healthcare/actions/runs/37037788202",
       "root_cause": "Date-only review records used author UTC+08 while validation used host local date; UTC runner excluded 21 changed sections and regenerated different coverage/priority outputs.",
-      "resolution": "All three date validators now use the documented UTC+08 editorial calendar. Boundary tests retain future-date rejection and explicit historical date overrides."
+      "resolution": "All three date validators now use the documented UTC+08 editorial calendar. Boundary tests retain future-date rejection and explicit historical date overrides.",
+      "run_id": 37038496933,
+      "url": "https://github.com/StarlightDamian/knowledge-healthcare/actions/runs/37038496933",
+      "head_sha": "21ae42051cb088c9927e99d5000d22610822d968"
     },
     "public_https": {
-      "status": "pending"
+      "release_id": "rel-cc0d196d0b6c9b33ceac6d04b6aa0b208aaf0d07ad50f421b2774c17e77b958a",
+      "runtime_commit": "21ae42051cb088c9927e99d5000d22610822d968",
+      "checked_at": "2026-10-03",
+      "checks": [
+        "82 topics,154 editorial sections,0 physician sign-offs;coverage and all three full articles/source records match;previous82-topic release remains pinned/readable",
+        "CN/EN82-row22-column CSV contains every article and all1,148 bilingual sections with exact line breaks"
+      ],
+      "passed": 2,
+      "network_location": "production host to public HTTPS domain; not loopback",
+      "transport_failures": []
     },
     "node": {
       "status": "passed",
@@ -84,8 +127,37 @@
     "environment_adjustments": [
       "Used Python zipfile after the system unzip misdecoded an existing Chinese filename; fresh candidate manifest passed.",
       "Verified separate test database and separate reader/importer roles; role names are intentionally shared across databases.",
-      "pg_dump connection passed through individual PG environment variables, matching existing deployment backup implementation."
-    ]
+      "pg_dump connection passed through individual PG environment variables, matching existing deployment backup implementation.",
+      "The final healthz verifier received HTTP403 with urllib default user-agent; using the same explicit healthcare-release-check user-agent as the accepted public API check returned the expected release. No route, security setting or release assertion changed."
+    ],
+    "production": {
+      "checked_at": "2026-10-03",
+      "production_release": "rel-cc0d196d0b6c9b33ceac6d04b6aa0b208aaf0d07ad50f421b2774c17e77b958a",
+      "old_release": "rel-3b466e9824bb2d8f731fc623b3d12d189418437629611f9009b3c0f61eb7348d",
+      "runtime_commit": "21ae42051cb088c9927e99d5000d22610822d968",
+      "published": true,
+      "topics": 82,
+      "editorial_records": 154,
+      "qualified_topics": 11,
+      "unchanged_topics": 79,
+      "public_verified": true,
+      "shared_static_comparison": {
+        "baseline": "/home/user/.local/state/knowledge-healthcare/p0-02-before.json",
+        "total": 17,
+        "matched": 17,
+        "drift": []
+      },
+      "services": [
+        "active",
+        "active",
+        "active"
+      ],
+      "backup_bytes": 8848657,
+      "backup_verified_by_pg_restore_list": true,
+      "reader_only_snapshot": true,
+      "data_sha256": "632de95b11f84ae2661426d8c1b8afa775e53d58a6c8ba5eac4a853f441c649f"
+    }
   },
-  "release_id": "rel-cc0d196d0b6c9b33ceac6d04b6aa0b208aaf0d07ad50f421b2774c17e77b958a"
+  "release_id": "rel-cc0d196d0b6c9b33ceac6d04b6aa0b208aaf0d07ad50f421b2774c17e77b958a",
+  "runtime_commit": "21ae42051cb088c9927e99d5000d22610822d968"
 }

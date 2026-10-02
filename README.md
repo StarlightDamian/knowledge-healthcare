@@ -6,7 +6,7 @@
 
 [GitHub 仓库](https://github.com/StarlightDamian/knowledge-healthcare) · [个人主页入口](https://www.zengyuwei.cn/home/)
 
-[English](README.en.md) · [本地网页](index.html) · [正文标准](docs/content-depth-standard.md) · [覆盖审计与补充计划](docs/coverage-audit-and-roadmap.md) · [使用/部署](docs/deployment.md) · [证据政策](docs/evidence-policy.md) · [本批验证与发布记录](reports/p0-batch-01-release-validation.json) · [全部病症优先清单](docs/icd-priorities/index.md)
+[English](README.en.md) · [本地网页](index.html) · [正文标准](docs/content-depth-standard.md) · [覆盖审计与补充计划](docs/coverage-audit-and-roadmap.md) · [使用/部署](docs/deployment.md) · [证据政策](docs/evidence-policy.md) · [本批验证与发布记录](reports/p0-02-release-validation.json) · [全部病症优先清单](docs/icd-priorities/index.md)
 
 ## 已经可以做什么
 
@@ -35,14 +35,14 @@
 | 癌症地图 | 36 个中英知识单元；癌症统计分组与病理、分期、分子标志物分开解释 |
 | 全生命周期 | 8 组、20 个中英健康因素；6 个年龄段与孕产附加情境引用共用因素 |
 | 扩充清单 | **189** 个仅标题待办，与完整正文分开统计 |
-| 医学签审 / 完成逐项编辑核验的主题 | **0 / 11**；合计154节、716项中英主张；P0-02扩写3篇既有正文，见 [本批验证记录](reports/p0-02-release-validation.json)；本地候选不代表已发布 |
+| 医学签审 / 完成逐项编辑核验的主题 | **0 / 11**；合计154节、716项中英主张；P0-02扩写3篇既有正文，见 [本批验证记录](reports/p0-02-release-validation.json)；已发布并通过公网验收 |
 | 全病种覆盖目标 | ICD-11 MMS 2026-01：冻结13,155个合格类别；完整核验覆盖34 / 13,155（约0.258457%），剩余13,121类；目标100%，95%为阶段里程碑；34条确认、28条部分、46条待裁定 |
 
 独立医学审阅、译文审核与危险提示规则的临床验证待完成。网页通过“内容与来源说明”和详情末尾的“来源与编辑信息”集中展示状态，每节保留参考链接。高级专业数据（如患病率、定量预后和地区药品批准）待整理，标为 `null / not_yet_curated`。
 
-最初20个主题中10篇已完成逐项核验，另外10篇保留具体补证与修订任务。本P0批次新增5篇、扩写既有严重过敏反应，共84节、370项双语主张；对应4个标题待办已合并移除。医学签审仍为0。
+最初20个主题中10篇已完成逐项核验，另外10篇保留具体补证与修订任务。P0-01新增5篇、扩写严重过敏反应；P0-02继续扩写脑膜炎、严重过敏反应和产后出血，新增25项双语主张、涉及21节，保留其余79篇原文。医学签审仍为0。
 
-本批49个候选叶类别逐条审查，22个确认完整、27个保留具体缺口，见 [P0类别裁定](reports/p0-batch-01-icd-scope-review.json)。全量P0共133个类别，29个已完整、104个继续待补；最初10项急危重正文缺口已补9项，一氧化碳中毒仍在后续清单。文章提及、父级名称或共同急救措施不自动算作完整覆盖。
+P0-02逐条审查6个候选叶类别，4个确认完整、2个保留具体缺口，见 [本批类别裁定](reports/p0-02-icd-scope-review.json)。全量P0共133个类别，33个已完整、100个继续待补；最初10项急危重正文缺口已补9项，一氧化碳中毒仍在后续清单。文章提及、父级名称或共同急救措施不自动算作完整覆盖。
 
 已保存 [文案审查记录](reports/anti-defensive-writing-audit.md) 和 [冻结目录覆盖数据](reports/icd-coverage.json)。新增病种按冻结目录、急危重症、常见病症、其余类别、95%阶段复核和100%终点验收的顺序推进。完整目录逐项列于[专业优先清单](docs/icd-priorities/index.md)，可[下载全量CSV](reports/icd-priorities.csv)。
 

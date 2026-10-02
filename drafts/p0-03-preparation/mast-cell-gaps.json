@@ -1,0 +1,239 @@
+{
+  "status": "preparation_not_qualified",
+  "medical_reviewed": false,
+  "prepared_at": "2026-10-03",
+  "scope": {
+    "icd_release": "ICD-11 MMS 2026-01",
+    "category_code": "4A84.6",
+    "topic_id": "anaphylaxis",
+    "gaps": [
+      "已确诊儿童的照护衔接",
+      "不符合系统性 mastocytosis 完整标准的确诊相关 MCAS 复发随访"
+    ],
+    "mapping_decision": "仍 partial；不自动把全部 MCAS 纳入此 leaf；本包不改变分类映射。"
+  },
+  "baseline": {
+    "path": "data/conditions/anaphylaxis.json",
+    "sha256": "8ff307de7115724313f157b7a260d5499be8252fb13f461731095d7e16aafa47",
+    "dedup_read_sections": [
+      "special_populations",
+      "prognosis_followup",
+      "daily_care",
+      "diagnosis",
+      "prevention"
+    ],
+    "already_present": [
+      "婴幼儿危急表现、儿童装置按处方和体重调整",
+      "家庭教师照护者训练与学校行动计划",
+      "复发后专科复诊、诱因记录、重新评估计划",
+      "反复不明原因发作的肥大细胞疾病评估；非特异慢性症状不等于 MCAS",
+      "成人系统性 mastocytosis 可无皮损、虫毒长期免疫治疗讨论、围术期沟通"
+    ]
+  },
+  "source_reading_method": "实际联网打开并阅读上述官方学会 PDF / 页面正文；未保存原始响应文件，未对网页原文生成本地内容哈希。页面定位以小节或 PDF 页为主，提取行号仅辅助。",
+  "sources": [
+    {
+      "id": "spd-mastocytosis-2018",
+      "url": "https://pedsderm.net/site/assets/files/1028/spd_mastocytosis_color_web.pdf",
+      "publisher": "Society for Pediatric Dermatology",
+      "version": "Pediatric Dermatology 35(4), 2018; handout #23",
+      "read_date": "2026-10-03",
+      "population": "儿童皮肤肥大细胞增多症；并非全部 MCAS",
+      "region": "美国",
+      "locators": [
+        "p1 ARE THERE ANY COMPLICATIONS OF MASTOCYTOSIS?",
+        "p2 CHECK-UPS WITH YOUR DOCTOR",
+        "p2 MANAGING MASTOCYTOSIS / POSSIBLE TRIGGERS"
+      ],
+      "read_findings": "多数儿童以局部皮肤症状为主；部分发生严重反应的儿童可能需要肾上腺素笔。确诊后可安排复查；术前告知麻醉医生诊断。",
+      "independence": "SPD 署名作者、委员会及专家独立编写；Wiley 为原刊出版方，不另算独立来源。未列研究参考文献，无法证明与 BAD 完全没有共同上游。",
+      "limits": "2018 年材料，未见更近更新；不据此制定固定复查频率、所有儿童统一处方或药物禁用表。"
+    },
+    {
+      "id": "bad-urticaria-pigmentosa-2020",
+      "url": "https://cdn.bad.org.uk/uploads/2021/12/29200249/Urticaria-Pigmentosa-Update-June-2020-lay-reviewed-May-2020.pdf",
+      "publisher": "British Association of Dermatologists",
+      "version": "Updated June 2020; lay reviewed May 2020; review due June 2023",
+      "read_date": "2026-10-03",
+      "population": "色素性荨麻疹 / 皮肤肥大细胞增多症成人及儿童",
+      "region": "英国",
+      "locators": [
+        "p2 What are the symptoms of urticaria pigmentosa?",
+        "p4 Self care (What can I do?): adrenaline, new medicine and operation paragraphs"
+      ],
+      "read_findings": "皮损摩擦后局部风团；儿童肾上腺素笔需求与过敏或广泛皮损等情况相关，不能直接照搬成人建议。新药和手术前应告知诊断；可能需要长期多学科复查。",
+      "independence": "BAD 独立患者教育资料，与 SPD 不同机构；没有逐项证据来源，共同基础研究关系不明。",
+      "limits": "已超过计划复审日期。仅作儿童个体化风险与告知诊断的补充印证；不沿用其中旧药物、全面禁药、统一成人处方建议。"
+    },
+    {
+      "id": "ascia-mast-cell-disorders-2025",
+      "url": "https://www.allergy.org.au/images/stories/pospapers/ASCIA_HP_Mast_Cell_Disorders_2025.pdf",
+      "publisher": "Australasian Society of Clinical Immunology and Allergy",
+      "version": "Updated December 2025",
+      "read_date": "2026-10-03",
+      "population": "怀疑或确诊肥大细胞活化相关疾病者；需按病因/克隆性区分",
+      "region": "澳大利亚和新西兰",
+      "locators": [
+        "p2 definitions",
+        "p3 Table 1: Monoclonal mast cell activation syndromes (MMAS)",
+        "p8 Table 3",
+        "p9 Management of MCAS, lines 375–409 in extracted PDF",
+        "p10 references, especially reference 11"
+      ],
+      "read_findings": "MCAS 不是所有慢性非特异症状的总称。MMAS 可有克隆性证据但不满足完整肥大细胞增多症标准。管理按病因、诱因及受累器官，专科指导并检查治疗反应；有指征才配急救笔和行动计划。",
+      "independence": "ASCIA 独立编写；参考文献 11 明确引用 Weiler 等 AAAAI 2019，另引国际共识。因此与 AAAAI 不是完全独立的底层证据链；ASCIA FAQ 同机构材料不另计独立来源。",
+      "limits": "不支持自动将所有原发、继发、特发 MCAS 映射到 4A84.6；其尿液介质检测态度与 AAAAI 公共页不同。"
+    },
+    {
+      "id": "aaaai-mcas-2026",
+      "existing_source_id": "anaphylaxis-p0-mcas",
+      "url": "https://www.aaaai.org/conditions-treatments/related-conditions/mcas",
+      "publisher": "American Academy of Allergy, Asthma & Immunology",
+      "version": "Page dated 8/27/2026",
+      "read_date": "2026-10-03",
+      "population": "MCAS 患者教育；未专门限定儿童或 MMAS",
+      "region": "美国",
+      "locators": [
+        "Symptoms and Diagnosis, lines 38–46",
+        "Treatment, lines 48–55",
+        "Diagnosis, lines 57–60"
+      ],
+      "read_findings": "反复发作累及多个系统、发作期介质变化与治疗反应共同参与诊断评估。管理重视症状缓解；急性发作按严重程度采用严重过敏反应处理。",
+      "independence": "AAAAI 独立机构教育页；未列该网页逐条引用。ASCIA 明确采用 AAAAI 2019 委员会报告，二者可能共享共识基础，不能表述为两项独立试验。",
+      "limits": "页面不是具体儿科 / MMAS 随访指南；尿液介质检测与 ASCIA 存在适用及验证程度差异，不据此增加采样套餐。"
+    },
+    {
+      "id": "ascia-patient-mastocytosis-2025",
+      "url": "https://www.allergy.org.au/images/pc/ASCIA_PC_Mastocytosis_FAQ_2025.pdf",
+      "publisher": "Australasian Society of Clinical Immunology and Allergy",
+      "version": "Updated September 2025",
+      "read_date": "2026-10-03",
+      "population": "mastocytosis 或 MCAS 患者及家庭",
+      "region": "澳大利亚和新西兰",
+      "locators": [
+        "p2 Q5–Q6",
+        "p2 Q7: How are mastocytosis and MCAS managed?"
+      ],
+      "read_findings": "频繁发作需要持续专科照护、定期随访、避免已知诱因；必要时处方肾上腺素。",
+      "independence": "与 ASCIA 专业文件同机构，不另计第二份独立材料。",
+      "limits": "未给儿童学校交接模板、固定频率或 MMAS 特有方案。"
+    }
+  ],
+  "proposed_claims": [
+    {
+      "id": "pediatric-individual-rescue",
+      "target_sections": [
+        "special_populations"
+      ],
+      "proposal": {
+        "zh-CN": "孩子已确诊皮肤肥大细胞增多症时，急救药物应由照护医生按孩子的反应史和风险决定，并非每个孩子都需要同一套处方。若已配肾上腺素急救笔，沿用本页的家庭、学校和照护者行动计划。",
+        "en": "For a child with diagnosed cutaneous mastocytosis, the treating clinician should individualize emergency medicines according to the child’s reaction history and risk. Not every child needs the same prescription. If an epinephrine auto-injector has been prescribed, use this page’s action-plan arrangements for family, school and other carers."
+      },
+      "kind": "action",
+      "supports": [
+        {
+          "source": "spd-mastocytosis-2018",
+          "locator": "p1 complications, last paragraph",
+          "scope": "部分儿童需急救笔，不支持一律配药。"
+        },
+        {
+          "source": "bad-urticaria-pigmentosa-2020",
+          "locator": "p4 Self care, childhood adrenaline paragraph",
+          "scope": "儿童适应情况个体化；原文条件不等同完整风险算法。"
+        }
+      ],
+      "dedup": "学校培训、携带装置和分享计划已在 daily_care/prevention；新增仅为确诊儿童的应用衔接，正式补写应链接原段落而非重复。",
+      "evidence_boundary": "后半句是复用既有教育流程，不是这两份资料提供的疾病特异学校方案；儿童资料年代较旧，尚需独立审查。"
+    },
+    {
+      "id": "pediatric-local-versus-systemic",
+      "target_sections": [
+        "special_populations"
+      ],
+      "proposal": {
+        "zh-CN": "皮肤肥大细胞增多症的皮损摩擦后可以局部发红、肿起或发痒；单独的局部皮肤变化不等于已经发生全身严重过敏反应。若出现本页列出的呼吸或循环危险信号，仍按已有急救计划处理。",
+        "en": "In cutaneous mastocytosis, rubbing a skin lesion can cause local redness, swelling or itching. An isolated local skin change does not by itself mean anaphylaxis has occurred. If the breathing or circulation danger signs described on this page occur, follow the existing emergency plan."
+      },
+      "kind": "explanation",
+      "supports": [
+        {
+          "source": "spd-mastocytosis-2018",
+          "locator": "p1 appearance and complications",
+          "scope": "局部皮肤表现与少见严重反应分开描述。"
+        },
+        {
+          "source": "bad-urticaria-pigmentosa-2020",
+          "locator": "p2 symptoms",
+          "scope": "局部摩擦反应与严重反应分开描述。"
+        }
+      ],
+      "dedup": "通用危急症状和立即救治已存在，不新增阈值或改变原有识别标准。",
+      "evidence_boundary": "不可反向推断有皮肤反应就安全，也不可要求同时有皮肤表现才启动急救。"
+    },
+    {
+      "id": "pediatric-procedure-handoff",
+      "target_sections": [
+        "prevention"
+      ],
+      "proposal": {
+        "zh-CN": "孩子已确诊皮肤肥大细胞增多症，手术或麻醉前也要主动告诉手术和麻醉团队诊断以及既往反应。不要自行按网上名单停药或预先加药。",
+        "en": "If a child has diagnosed cutaneous mastocytosis, tell the surgical and anaesthesia teams about the diagnosis and previous reactions before a procedure. Do not stop medicines or add premedication yourself based on an online list."
+      },
+      "kind": "action",
+      "supports": [
+        {
+          "source": "spd-mastocytosis-2018",
+          "locator": "p2 possible triggers, anaesthesia entry",
+          "scope": "术前麻醉团队需知道诊断。"
+        },
+        {
+          "source": "bad-urticaria-pigmentosa-2020",
+          "locator": "p4 Self care, surgery paragraph",
+          "scope": "告知外科和麻醉医生。"
+        }
+      ],
+      "dedup": "当前 prevention 已覆盖系统性 mastocytosis 的术前沟通；最小编辑是明确也适用于已确诊皮肤型儿童。",
+      "evidence_boundary": "最后一句属于防止误用的编辑建议，应复用原有专科个体化药物安排依据；两份儿科材料不支持具体预防用药方案。"
+    },
+    {
+      "id": "confirmed-mcas-recurrence-followup",
+      "target_sections": [
+        "prognosis_followup"
+      ],
+      "proposal": {
+        "zh-CN": "如果专科已经确诊肥大细胞活化综合征（MCAS），后续复诊应结合再次发作的表现、已知诱因和治疗后的变化，由医生调整照护。需要急救笔和严重过敏反应计划的人继续执行原计划；日常症状治疗不能代替急性严重过敏反应的急救。",
+        "en": "If a specialist has confirmed mast cell activation syndrome (MCAS), follow-up should review recurrent episodes, known triggers and changes with treatment so the clinician can adjust care. People who need an epinephrine auto-injector and an anaphylaxis plan should keep following that plan; treatment for day-to-day symptoms does not replace emergency treatment of anaphylaxis."
+      },
+      "kind": "action",
+      "supports": [
+        {
+          "source": "ascia-mast-cell-disorders-2025",
+          "locator": "p9 Management of MCAS",
+          "scope": "病因和器官针对性管理、诱因、治疗反应及有指征的急救计划。"
+        },
+        {
+          "source": "aaaai-mcas-2026",
+          "locator": "Treatment",
+          "scope": "治疗症状与疗效、急性发作按严重程度处理。"
+        },
+        {
+          "source": "ascia-patient-mastocytosis-2025",
+          "locator": "p2 Q7",
+          "scope": "直接写明持续专科管理与定期随访；同机构不另计独立。"
+        }
+      ],
+      "dedup": "原 prognosis_followup 已有一般复发随访；新增仅明确已确诊患者持续管理，区别于原 diagnosis 的怀疑病例诊断转介。",
+      "evidence_boundary": "广义 MCAS 管理证据不能自动证明本 leaf 内非系统 mastocytosis 亚型已完整覆盖；没有固定随访间隔或亚型专属疗效证据。"
+    }
+  ],
+  "minimum_change_recommendation": "优先以 2 个短段落连接已确诊儿童与现有急救/学校/围术期流程；以 1 个短段落说明专科确诊相关 MCAS 的持续随访。具体逐句取舍待独立医学内容审查；不新增主题、不重复全套急救步骤。",
+  "unresolved": [
+    "必须按冻结 WHO 2026-01 精确边界复核非系统性 mastocytosis 的哪些已确诊相关活化疾病可映射；ASCIA 的 MMAS 概念是候选桥梁，不是分类裁决。",
+    "MMAS 独立亚型的儿童/成人长期随访和并发风险仍无两套本次已读的独立特异指导，不能借广义 MCAS 管理宣称填满缺口。",
+    "儿童证据为 2018 SPD 与 2020 BAD，后者已超过计划复审时间；未找到并实际读到更新的独立儿童照护衔接指南。",
+    "ASCIA p8 对尿液介质检测不推荐 / 阈值未建立，与 AAAAI 页面的尿液检查说明不一致；不加入统一采样套餐、固定间隔或自助诊断步骤。",
+    "两机构文件可能共享国际共识与 AAAAI 2019 上游；独立编写不等于独立原始试验。",
+    "不增加儿童剂量、停药名单、常规术前预防用药、固定复诊频率、所有 MCAS 必配急救笔、限制性饮食或普遍 VIT 推荐。",
+    "本包尚未独立医学内容审查；更不构成医师签审。"
+  ]
+}

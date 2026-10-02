@@ -1,0 +1,166 @@
+{
+  "status": "preparation_not_qualified",
+  "medical_reviewed": false,
+  "prepared_at": "2026-10-03",
+  "author": "/root/astra_p0_maternal",
+  "category": "JA43.3",
+  "existing_article_id": "postpartum-hemorrhage",
+  "baseline": {
+    "path": "data/conditions/postpartum-hemorrhage.json",
+    "body_canonical_sha256": "a4f0a7f880f09c476e3c580d90e9dfcfd3e002b23be8e3db611cf660cf4b3e49"
+  },
+  "scope": "仅准备产后凝血障碍的专科随访及后续妊娠；不发布、不更新分类覆盖。JA43.3不能缩为DIC，遗传性出血病的材料也不能代表全部获得性凝血障碍。",
+  "duplication_audit": {
+    "already_present": [
+      "causes_risks:既有或失血中产生/加重的凝血缺陷",
+      "diagnosis/treatment/medications:急性凝血检查和成分补充",
+      "special_populations:既往凝血病的分娩场所及备血",
+      "prognosis_followup:贫血复诊、原因解释、再次妊娠风险",
+      "complications:止血后血栓预防个体权衡"
+    ],
+    "new_gap": "已知遗传性出血病在出院后的血液科联系、按病种和检测结果安排后续照护，以及孕前专科评估。"
+  },
+  "sources": [
+    {
+      "id": "prep-masac-265",
+      "title": "MASAC Document 265: Pregnancy and Perinatal Management of Women with Inherited Bleeding Disorders and Carriers of Hemophilia A or B",
+      "url": "https://www.bleeding.org/healthcare-professionals/guidelines-on-care/masac-documents/masac-document-265-masac-guidelines-for-pregnancy-and-perinatal-management-of-women-with-inherited-bleeding-disorders-and-carriers-of-hemophilia-a-or-b",
+      "pdf_url": "https://www.bleeding.org/sites/default/files/document/files/265_0.pdf",
+      "version": "MASAC approved 2021-02-20; NHF adopted 2021-03-04",
+      "region": "US",
+      "population": "遗传性出血病女性和血友病A/B携带者",
+      "read_at": "2026-10-03",
+      "method": "实际阅读官方HTML对应章节；urllib获取官方PDF并以pdftotext读取首面核日期",
+      "locators": [
+        "Preconception Diagnosis and Genetic Counseling, HTML lines 238–245",
+        "Pregnancy Management, lines 248–254",
+        "Labor and Delivery Management, lines 257–264",
+        "Postpartum Management to Prevent Bleeding, lines 289–292",
+        "References, lines 304–322"
+      ],
+      "supported_scope": "孕前诊断/遗传咨询、多学科妊娠管理、产后凝血因子监测；不支持所有获得性凝血障碍统一随访。",
+      "independence_group": "NHF/NBDF MASAC",
+      "relationship": "原始学会指导，非转载；引用UKHCDO 2006、NHLBI 2008和ASH/ISTH/NHF/WFH 2021，共同依据不可计作独立研究。"
+    },
+    {
+      "id": "prep-rcog-71",
+      "title": "Management of Inherited Bleeding Disorders in Pregnancy, Green-top Guideline No.71 (joint with UKHCDO)",
+      "url": "https://obgyn.onlinelibrary.wiley.com/doi/pdf/10.1111/1471-0528.14592",
+      "landing_url": "https://www.rcog.org.uk/guidance/browse-all-guidance/green-top-guidelines/management-of-inherited-bleeding-disorders-in-pregnancy-green-top-guideline-no-71/",
+      "version": "April 2017, first joint edition",
+      "region": "UK",
+      "population": "血友病A/B携带者、VWD及所列其他遗传性出血病",
+      "read_at": "2026-10-03",
+      "method": "实际阅读RCOG官方落地页及其Wiley PDF链接返回的文字定位；只读下列范围，未声称通读71页。后续页获取超时、urllib 403，故未把未读VWD细节作为已核实证据。",
+      "locators": [
+        "RCOG landing Summary/Version history/Description, lines 120–127",
+        "PDF physical page 1: title and date",
+        "PDF physical page 3/e195: haemophilia prepregnancy management and genetic counselling",
+        "PDF physical page 4/e196: multidisciplinary antenatal care and factor monitoring",
+        "PDF physical page 6/e198: postpartum management, assay-guided management and post-discharge haemophilia-centre contact"
+      ],
+      "supported_scope": "多病种个体化专科照护；已读具体产后联系条款仅适用于血友病携带者。",
+      "independence_group": "RCOG/UKHCDO",
+      "relationship": "英国独立组织编写的原始联合指南，非美国MASAC转载；两者均承接UKHCDO既往指导及有限罕见病证据，属两个指导制定主体，不宣称研究样本独立。"
+    },
+    {
+      "id": "prep-masac-286",
+      "title": "MASAC Document 286: Diagnosis and Management of Inherited Bleeding Disorders in Girls and Women with Personal and Family History of Bleeding",
+      "url": "https://www.bleeding.org/healthcare-professionals/guidelines-on-care/masac-documents/masac-document-286-masac-recommendations-regarding-diagnosis-and-management-of-inherited-bleeding-disorders-in-girls-and-women-with-personal-and-family-history-of-bleeding",
+      "version": "Document 286; exact adoption date not verified",
+      "region": "US",
+      "population": "有个人/家族出血史的女性和女孩",
+      "read_at": "2026-10-03",
+      "method": "实际阅读官方HTML指定段落",
+      "locators": [
+        "PPH multifactorial assessment, lines 262–264",
+        "Diagnostic evaluation, lines 289–303",
+        "Treatment, lines 307–319"
+      ],
+      "supported_scope": "选择性遗传病评估、检测时机及专业转诊，不是所有PPH常规遗传筛查。",
+      "independence_group": "NHF/NBDF MASAC",
+      "relationship": "与265同组织，不能用两份MASAC凑两个独立权威来源。"
+    }
+  ],
+  "candidate_additions": [
+    {
+      "id": "coag-followup-1",
+      "section": "prognosis_followup",
+      "kind": "action",
+      "condition": "发生过产后出血、已知为血友病A/B携带者，处于急性止血后阶段；不外推全部凝血障碍",
+      "text": {
+        "zh-CN": "如果已知是血友病A或B携带者，出院后仍应与血液科或出血病专科保持联系，由团队结合凝血因子检测安排后续照护。",
+        "en": "If you are a known carrier of hemophilia A or B, remain in contact with hematology or a bleeding-disorders service after discharge; the team uses clotting-factor tests to guide continuing care."
+      },
+      "supports": [
+        {
+          "source_id": "prep-masac-265",
+          "locator": "Postpartum Management to Prevent Bleeding: postpartum factor monitoring"
+        },
+        {
+          "source_id": "prep-rcog-71",
+          "locator": "PDF physical page 6/e198: postpartum management and contact after discharge"
+        }
+      ],
+      "publication_state": "待独立逐主张审核，未准入",
+      "nonduplication": "新增专病出院后交接；不同于既有贫血复诊。"
+    },
+    {
+      "id": "coag-pregnancy-2",
+      "section": "special_populations",
+      "kind": "action",
+      "condition": "已知遗传性出血病或血友病携带者，准备后续妊娠",
+      "text": {
+        "zh-CN": "已知有遗传性出血病时，再次计划怀孕应先与血液科及产科讨论病种所需的检查和照护；孕期需要两科共同制定方案。",
+        "en": "With a known inherited bleeding disorder, discuss condition-specific assessment and care with hematology and obstetrics when planning another pregnancy; pregnancy care needs a joint plan."
+      },
+      "supports": [
+        {
+          "source_id": "prep-masac-265",
+          "locator": "Preconception Diagnosis and Genetic Counseling; Pregnancy Management"
+        },
+        {
+          "source_id": "prep-rcog-71",
+          "locator": "landing Description; PDF physical pages 3–4/e195–e196 (detailed prepregnancy recommendations read for hemophilia carriers)"
+        }
+      ],
+      "publication_state": "广义孕前措辞需复读RCOG其他病种原文再准入；血友病携带者的已读范围更充分",
+      "nonduplication": "把已有的再次怀孕告知推进至孕前专科评估，不重复备血/分娩场所。"
+    },
+    {
+      "id": "coag-explanation-3",
+      "section": "prognosis_followup",
+      "kind": "explanation",
+      "condition": "VWD等部分遗传性出血病；不同病种变化不同",
+      "text": {
+        "zh-CN": "部分遗传性出血病的凝血因子在孕期升高，产后会下降；孕期一次较好的结果不能代替产后按病种安排的评估。",
+        "en": "In some inherited bleeding disorders, clotting-factor levels rise during pregnancy and fall after birth; a reassuring pregnancy result does not replace condition-specific postpartum assessment."
+      },
+      "supports": [
+        {
+          "source_id": "prep-masac-265",
+          "locator": "Labor and Delivery Management; Postpartum Management to Prevent Bleeding"
+        }
+      ],
+      "publication_state": "待补第二独立原文的VWD/病种定位，不能作为已双源的解释直接发布"
+    }
+  ],
+  "regional_and_evidence_limits": [
+    "美国使用HTC/出血病专科网络，英国使用haemophilia centre及多学科团队；中文宜按当地能力写血液科或出血病专科。",
+    "本包不移植英美凝血因子目标、替代治疗天数、遗传检测路径或药品剂量；不发明统一产后复查日期。",
+    "急性PPH静脉TXA出生后3小时时间窗与已知遗传性出血病产后专科方案不是同一适用情境；本包不新增用药句。",
+    "无中国独立原文对本次专病随访细节的复核；当前源以专家指导为主，未重新系统检索或形式化分级。"
+  ],
+  "unresolved_questions": [
+    "持续获得性凝血障碍的随访仍缺病因分层来源；需区分仍未纠正的消耗性问题、药物相关问题及其他获得性因子异常，不能统称DIC。",
+    "尚未获取RCOG VWD及其他遗传性病种具体产后段落；MASAC单源不能让其专病监测内容全部准入。",
+    "对无既往诊断但疑似出血病者，何种个人/家族出血史及恢复后复查触发条件需第二独立材料；不把所有产后出血都导向遗传病检测。",
+    "完整JA43.3的14维适用性仍需单独裁定；本包仅补随访/后续妊娠准备，不能升级confirmed。"
+  ],
+  "recommended_next_step": "只选择已双源且人群一致的最小段落交不同作者核写；宽泛病种候选继续补证。本文件不得作为医学来源或独立审核结果。",
+  "category_decision": {
+    "code": "JA43.3",
+    "status": "partial",
+    "reason": "新材料集中遗传性出血病，尚不能覆盖所有持续/获得性凝血障碍的随访。"
+  }
+}

@@ -1,0 +1,383 @@
+{
+  "schema_version": "1.0.0",
+  "topic_id": "carbon-monoxide-poisoning",
+  "status": "preparation_not_qualified",
+  "medical_reviewed": false,
+  "coverage_credit": 0,
+  "prepared_at": "2026-10-03",
+  "prepared_by": "/root/astra_p0_neurology",
+  "scope": "Authority-source refresh and MECE preparation only; not a completed article or independent editorial acceptance",
+  "duplicate_audit": {
+    "production_article_exists": false,
+    "reuse_body": "drafts/batch-01/emergency/carbon-monoxide-poisoning.json",
+    "reuse_sources": "drafts/batch-01/emergency-sources.json",
+    "reuse_editorial": "drafts/batch-01/emergency-editorial.json",
+    "body_file_sha256": "54e48d2332e28b08722427cdfb7310bae6e5e93a19347a14138974d1e00f34de",
+    "section_count": 14,
+    "editorial_records": 14,
+    "editorial_statuses": [
+      "pending"
+    ]
+  },
+  "icd": {
+    "queue_file": "reports/icd-priorities.json.gz",
+    "code": "NE61",
+    "title": "- - Harmful effects of or exposure to noxious substances, chiefly nonmedicinal as to source, not elsewhere classified",
+    "priority": "P1",
+    "coverage_state": "missing",
+    "official_row": 16002,
+    "foundation_uri": "http://id.who.int/icd/entity/1119330136",
+    "decision": "CO is an urgent editorial subtopic inside this broad category, not an exact P0 leaf in the current canonical priority file. Reuse the existing independent CO topic; leave NE61 broad-category coverage incomplete.",
+    "mapping_gap": "Specific CO extension/postcoordination not verified; do not invent a leaf code or promote NE61 to P0/complete."
+  },
+  "mece": {
+    "include": [
+      "Acute suspected/confirmed inhalational CO exposure, household/occupational/fire contexts",
+      "Initial safe escape and medical assessment; oxygen/HBOT explanation; delayed recovery; prevention"
+    ],
+    "exclude": [
+      "All other NE61 toxic substances",
+      "Generic unburned-gas leak, oxygen displacement, cyanide toxicity and smoke airway injury as complete separate diseases",
+      "Occupational permissible exposure limits; professional rescue concentration thresholds",
+      "Comprehensive chronic low-level exposure syndrome or individualized rehabilitation protocol"
+    ],
+    "reuse_decision": "Refresh and independently review batch-01 CO draft; do not create a second condition ID. Coexisting fire injuries remain differential/comorbidity signposts."
+  },
+  "actual_source_reads": [
+    {
+      "id": "co-cdc-clinical",
+      "institution": "US CDC / National Center for Environmental Health",
+      "url": "https://www.cdc.gov/carbon-monoxide/hcp/clinical-guidance/index.html",
+      "version": "Reviewed 2026-08-21; metadata published 2024-07-09, updated 2024-07-08",
+      "locator": "How to Recognize; Diagnosis; Management; At-risk populations; Confirmation; Common questions (lines 30–93)",
+      "population_region": "US clinical guidance, disaster/severe weather framing; pregnancy and infants explicitly included",
+      "independence_group": "CDC",
+      "limitations": "Clinician instructions, not home oxygen directions; pregnancy HBOT statement more affirmative than evidence-consensus discussion elsewhere.",
+      "accessed_at": "2026-10-03",
+      "access_status": "actual_read",
+      "method": "web open rendered original HTML; section-specific read",
+      "retained_content": "URL and paraphrased preparation notes only; no full text saved"
+    },
+    {
+      "id": "co-nhs",
+      "institution": "NHS",
+      "url": "https://www.nhs.uk/conditions/carbon-monoxide-poisoning/",
+      "version": "Reviewed 2025-12-16",
+      "locator": "What to do; Urgent advice; Immediate action; Treatments; Prevention (lines 46–97)",
+      "population_region": "UK public advice; 111/999 and alarm placement are regional",
+      "independence_group": "NHS",
+      "limitations": "Short patient page; no HBOT evidence appraisal or late-neurology schedule.",
+      "accessed_at": "2026-10-03",
+      "access_status": "actual_read",
+      "method": "web open rendered original HTML; section-specific read",
+      "retained_content": "URL and paraphrased preparation notes only; no full text saved"
+    },
+    {
+      "id": "co-ukhsa-general-preparation",
+      "institution": "UK Health Security Agency",
+      "url": "https://www.gov.uk/government/publications/carbon-monoxide-properties-incident-management-and-toxicology/carbon-monoxide-general-information",
+      "version": "Updated 2022-05-24",
+      "locator": "Vulnerable people; Pregnancy; Children; What to do; Protection (lines 106–140)",
+      "population_region": "UK public environmental-health guidance",
+      "independence_group": "UKHSA",
+      "limitations": "Links NHS; potentially shared national advice. Count as separately authored but do not treat NHS+UKHSA alone as fully independent rescue evidence.",
+      "accessed_at": "2026-10-03",
+      "access_status": "actual_read",
+      "method": "web open rendered original HTML; section-specific read",
+      "retained_content": "URL and paraphrased preparation notes only; no full text saved"
+    },
+    {
+      "id": "co-acep-policy-summary",
+      "institution": "American College of Emergency Physicians, official ACEP Now publication; Richard D. Shih",
+      "url": "https://www.acepnow.com/article/new-clinical-policy-for-adult-patients-with-acute-carbon-monoxide-poisoning/?singlepage=1&theme=print-friendly",
+      "version": "2025-05-07 summary; board approved policy 2025-01-22",
+      "locator": "Paragraphs on DNS and evidence review; CRITICAL QUESTION / Level A, B, C recommendations (lines 102–120)",
+      "population_region": "Adults with acute CO poisoning presenting to ED; not pediatric efficacy evidence",
+      "independence_group": "ACEP",
+      "limitations": "Official policy summary actually read; full policy PDF returned 404. Do not claim full policy exclusions or full reference list verified.",
+      "accessed_at": "2026-10-03",
+      "access_status": "actual_read",
+      "method": "web open rendered original HTML; section-specific read",
+      "retained_content": "URL and paraphrased preparation notes only; no full text saved"
+    },
+    {
+      "id": "co-divi-s2k-2021-preparation",
+      "institution": "DIVI-led German interdisciplinary guideline group / AWMF / GMS",
+      "url": "https://www.egms.de/static/en/journals/gms/2021-19/000300.shtml",
+      "version": "2021-11-04, GMS 19:Doc13, doi:10.3205/000300; estimated five-year validity, successor not verified",
+      "locator": "Sections 4.2–4.3, 5.1–5.2, 6, 8.1–8.2, 9 special votes, 10, 11.3; lines 296–378, 477–488, 531–546, 584–603, 653–662",
+      "population_region": "Germany; adult, pregnancy and pediatric guidance explicitly separated",
+      "independence_group": "DIVI-AWMF",
+      "limitations": "Consensus guideline, includes dissent on HBOT; approaching estimated update period. Do not present as newly issued 2026 guideline. Pediatric efficacy evidence insufficient.",
+      "accessed_at": "2026-10-03",
+      "access_status": "actual_read",
+      "method": "web open rendered original HTML; section-specific read",
+      "retained_content": "URL and paraphrased preparation notes only; no full text saved"
+    },
+    {
+      "id": "co-cdc-basics",
+      "institution": "US CDC",
+      "url": "https://www.cdc.gov/carbon-monoxide/about/index.html",
+      "version": "2026-01-12",
+      "locator": "Symptoms; Risk factors; CO detectors; household appliances; Portable generators (lines 33–94)",
+      "population_region": "US public prevention advice",
+      "independence_group": "CDC",
+      "limitations": "Same authoring family as CDC clinical, cannot supply its independent second source. US distances and detector positioning not universal building rules.",
+      "accessed_at": "2026-10-03",
+      "access_status": "actual_read",
+      "method": "web open rendered original HTML; section-specific read",
+      "retained_content": "URL and paraphrased preparation notes only; no full text saved"
+    }
+  ],
+  "failed_accesses": [
+    {
+      "url": "https://www.acep.org/siteassets/sites/acep/media/clinical-policies/final-cp-pdfs/carbonmonoxide2-cp.pdf",
+      "status": "web open 404; not read"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8607608/",
+      "status": "browser challenge; used original GMS HTML instead, same guideline not second evidence"
+    }
+  ],
+  "independence_notes": [
+    "CDC clinical and basics are one authoring group. ACEP summary and original policy are one group, not two sources.",
+    "NHS and UKHSA are separately authored but UKHSA links NHS; shared national emergency advice is disclosed. German rescue guideline supplies separate consensus authorship.",
+    "DIVI includes multiple societies but constitutes one consensus document; its special votes are not extra independent sources. GMS and PMC mirrors are the same document.",
+    "DIVI references prior ACEP 2017 policy, Weaver 2009, Hampson 2012 and CO/HBOT research. Thus authoring independence does not imply disjoint upstream trials. ACEP 2025 full references were not read; precise shared-trial inventory remains unknown.",
+    "CDC lists its 2024 archive rather than a full study-level bibliography; do not assert upstream trial independence."
+  ],
+  "sections": [
+    {
+      "section": "summary",
+      "current_status": "existing_bilingual_draft_pending",
+      "suggestion": {
+        "zh-CN": "保留现有概述；解释这是吸入暴露急症，并指向撤离与求助。",
+        "en": "Retain the overview; identify inhaled exposure as an emergency and signpost escape and help."
+      },
+      "source_ids": [
+        "co-nhs",
+        "co-cdc-clinical"
+      ],
+      "gap": "两份独立机构；需把急救指令作action核验。"
+    },
+    {
+      "section": "causes_risks",
+      "current_status": "existing_bilingual_draft_pending",
+      "suggestion": {
+        "zh-CN": "保留炉具、炭火、发动机暴露与共同发病线索；避免用闻不到气味保证安全。",
+        "en": "Retain appliance, charcoal and engine exposures and shared-illness clues; smell cannot establish safety."
+      },
+      "source_ids": [
+        "co-nhs",
+        "co-cdc-basics"
+      ],
+      "gap": "已有内容，待逐claim审查；睡眠/醉酒风险目前本轮仅CDC，需旧Mayo原文重读或删除细节。"
+    },
+    {
+      "section": "red_flags",
+      "current_status": "existing_bilingual_draft_pending",
+      "suggestion": {
+        "zh-CN": "明确先安全撤离；不要冒险进入或返回污染区救人，安全处呼叫急救并听从调度。",
+        "en": "Prioritize safe escape; do not enter or re-enter a contaminated area for rescue; call emergency services from safety and follow dispatch guidance."
+      },
+      "source_ids": [
+        "co-nhs",
+        "co-ukhsa-general-preparation",
+        "co-divi-s2k-2021-preparation"
+      ],
+      "gap": "现稿禁止返场仅举取物/找漏点，应补救援者安全；NHS与德指南形成独立对照。"
+    },
+    {
+      "section": "care",
+      "current_status": "existing_bilingual_draft_pending",
+      "suggestion": {
+        "zh-CN": "保留有症状暴露及时评估；严重呼吸、胸痛或意识变化用当地急救。",
+        "en": "Retain prompt assessment after symptomatic exposure; serious breathing, chest or consciousness changes warrant local emergency help."
+      },
+      "source_ids": [
+        "co-nhs",
+        "co-divi-s2k-2021-preparation"
+      ],
+      "gap": "111/999只是英国路径；若保留美国911须本轮外补官方原文，不把英国分诊移植全球。"
+    },
+    {
+      "section": "diagnosis",
+      "current_status": "existing_bilingual_draft_pending",
+      "suggestion": {
+        "zh-CN": "保留暴露史、COHb与普通血氧仪局限；低数值不能独立排除。",
+        "en": "Retain exposure history, COHb testing and standard oximeter limitations; a low value alone does not exclude poisoning."
+      },
+      "source_ids": [
+        "co-cdc-clinical",
+        "co-divi-s2k-2021-preparation"
+      ],
+      "gap": "双源支持原则，诊断切点有差异，公众版不新增数值阈值。"
+    },
+    {
+      "section": "differentials",
+      "current_status": "existing_bilingual_draft_pending",
+      "suggestion": {
+        "zh-CN": "保留感染、代谢/药物因素及火灾混合损伤；不要自诊排除。",
+        "en": "Retain infectious, metabolic/substance alternatives and mixed fire injury; avoid self-diagnosis rules."
+      },
+      "source_ids": [
+        "co-cdc-clinical",
+        "co-divi-s2k-2021-preparation"
+      ],
+      "gap": "具体低血糖例仅CDC本轮定位，必要时复读旧Merck；不新增氰化物诊断阈值。"
+    },
+    {
+      "section": "treatment",
+      "current_status": "existing_bilingual_draft_pending",
+      "suggestion": {
+        "zh-CN": "保留医护给氧；高压氧由团队结合病情与可及性权衡，长期获益尚不确定。",
+        "en": "Retain clinician-delivered oxygen; teams weigh hyperbaric treatment against severity and access, with uncertain long-term benefit."
+      },
+      "source_ids": [
+        "co-cdc-clinical",
+        "co-acep-policy-summary",
+        "co-divi-s2k-2021-preparation"
+      ],
+      "gap": "给氧双源CDC/DIVI；HBOT不确定性ACEP/DIVI。妊娠不得套成人疗效结论。"
+    },
+    {
+      "section": "medications",
+      "current_status": "existing_bilingual_draft_pending",
+      "suggestion": {
+        "zh-CN": "说明治疗重心是医用氧和并发症处理；不给家庭剂量或舱压方案。",
+        "en": "Explain medical oxygen and complication management; omit home doses or chamber protocols."
+      },
+      "source_ids": [
+        "co-cdc-clinical",
+        "co-divi-s2k-2021-preparation"
+      ],
+      "gap": "现稿耳压损伤仅本轮DIVI精确支持；旧Mayo须重读提供第二源，否则删该特定风险细节。"
+    },
+    {
+      "section": "diet",
+      "current_status": "existing_bilingual_draft_pending",
+      "suggestion": {
+        "zh-CN": "把饮食标为非特异护理边界，不声称已证实所有食物均无效。",
+        "en": "Treat diet as nonspecific supportive care, without claiming all foods have been tested and found ineffective."
+      },
+      "source_ids": [
+        "co-cdc-clinical",
+        "co-nhs"
+      ],
+      "gap": "指南未提出食疗≠研究证实无效；需审改现稿绝对措辞，勿凑不存在的疾病食谱。"
+    },
+    {
+      "section": "daily_care",
+      "current_status": "existing_bilingual_draft_pending",
+      "suggestion": {
+        "zh-CN": "返场服从专业安全指引；留意新出现的认知、情绪和运动变化。",
+        "en": "Follow professional clearance before returning; watch for new cognitive, mood or movement changes."
+      },
+      "source_ids": [
+        "co-nhs",
+        "co-ukhsa-general-preparation",
+        "co-acep-policy-summary",
+        "co-divi-s2k-2021-preparation"
+      ],
+      "gap": "环境安全NHS/UKHSA有共用国家建议，德救援安全补独立；迟发症状ACEP/DIVI。"
+    },
+    {
+      "section": "special_populations",
+      "current_status": "existing_bilingual_draft_pending",
+      "suggestion": {
+        "zh-CN": "保留孕妇、婴幼儿等风险；成人高压氧建议不能直接套儿童。",
+        "en": "Retain pregnancy and infant vulnerability; adult hyperbaric recommendations cannot be directly extended to children."
+      },
+      "source_ids": [
+        "co-cdc-clinical",
+        "co-ukhsa-general-preparation",
+        "co-divi-s2k-2021-preparation"
+      ],
+      "gap": "风险人群CDC/UKHSA双机构；儿科HBOT差异本轮只有德指南明确，不新增统一儿科方案，需独立儿科第二源。"
+    },
+    {
+      "section": "prognosis_followup",
+      "current_status": "existing_bilingual_draft_pending",
+      "suggestion": {
+        "zh-CN": "删“少数人”的未经核实频率，改“有些人”；安排复诊，新症状不等预约。",
+        "en": "Replace the unsupported rarity label with “some people”; arrange follow-up and seek earlier help for new symptoms."
+      },
+      "source_ids": [
+        "co-cdc-clinical",
+        "co-acep-policy-summary",
+        "co-divi-s2k-2021-preparation"
+      ],
+      "gap": "中文少数/英文some不等价。CDC两周与DIVI四至六周是不同评估建议，不合并为统一截止日。"
+    },
+    {
+      "section": "complications",
+      "current_status": "existing_bilingual_draft_pending",
+      "suggestion": {
+        "zh-CN": "保留脑、心脏和火灾合并损伤；不增加确定性长期病因或发生率。",
+        "en": "Retain brain, cardiac and combined fire injuries; avoid new causal long-term disease claims or rates."
+      },
+      "source_ids": [
+        "co-cdc-clinical",
+        "co-divi-s2k-2021-preparation"
+      ],
+      "gap": "可承接已有并发症教育，需审查严重程度条件与中英一致。"
+    },
+    {
+      "section": "prevention",
+      "current_status": "existing_bilingual_draft_pending",
+      "suggestion": {
+        "zh-CN": "保留报警器、维护和禁止室内燃烧设备；地区距离与布置规则单独标注。",
+        "en": "Retain alarms, maintenance and avoiding indoor combustion equipment; label regional spacing and placement rules."
+      },
+      "source_ids": [
+        "co-nhs",
+        "co-cdc-basics"
+      ],
+      "gap": "旧稿20英尺需重读CPSC独立第二源；本轮CDC单源不能qualify该数值。报警器非环境安全许可。"
+    }
+  ],
+  "threshold_register": [
+    {
+      "item": "Diagnostic COHb cutoffs",
+      "decision": "omit new public numeric rule",
+      "reason": "CDC nonsmoker 2% and smoker >9%; DIVI 3–4% abnormal / smoker up to10%; conditions differ."
+    },
+    {
+      "item": "HBOT COHb/time/pressure",
+      "decision": "retain specialist decision only",
+      "reason": "CDC >25–30% is consideration plus clinical exceptions; DIVI timing/protocol is national consensus with dissent. No universal lay threshold or safe waiting period."
+    },
+    {
+      "item": "Follow-up interval",
+      "decision": "retain team-arranged review; no universal numeric schedule",
+      "reason": "CDC two-week clinical/neuro review versus DIVI four–six-week cognitive assessment; symptoms prompt earlier care."
+    },
+    {
+      "item": "Generator distance",
+      "decision": "gap: re-read co-cpsc before retaining existing >20 feet detail",
+      "reason": "CDC actually read; independent second original source not re-read this preparation."
+    },
+    {
+      "item": "DNS frequency and age/risk thresholds",
+      "decision": "omit numeric rates and delete Chinese rarity implication",
+      "reason": "Study populations differ; source rates/risk cutoffs not suitable generalized prognosis."
+    },
+    {
+      "item": "CPR/AED algorithm",
+      "decision": "gap if expanded beyond calling dispatch from safety",
+      "reason": "No two primary resuscitation instruction sources read; do not improvise algorithm."
+    }
+  ],
+  "next_steps": [
+    "Reuse existing draft and metadata; perform focused revisions identified here without rewriting preserved paragraphs.",
+    "Read remaining old-source originals for any retained claim not covered by current source pairs, especially HBOT adverse effect and generator spacing.",
+    "Create exact bilingual claim/support bindings; actions, benefits and risks must retain their true types and two independent authoring groups.",
+    "Obtain independent editorial review, source metadata/content hashes and schema validation before qualification. No medical-signoff claim."
+  ],
+  "unresolved_questions": [
+    "Whether a newer S2k revision exists before final publication; current evidence packet identifies 2021 edition only.",
+    "Full ACEP policy access/exclusions and study-level overlap still unverified.",
+    "Exact ICD CO postcoordination beyond broad NE61 remains unverified.",
+    "Existing nine-source draft claims are not all re-audited here; all14 editorial records remain pending."
+  ]
+}
