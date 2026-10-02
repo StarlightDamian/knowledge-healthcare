@@ -76,17 +76,111 @@
       ]
     },
     "github_ci": {
-      "status": "pending"
+      "status": "passed",
+      "conclusion": "success",
+      "run_id": 37024907980,
+      "head_sha": "508bd85488f1e2a8d85947068cfb8b10726bad09",
+      "url": "https://github.com/StarlightDamian/knowledge-healthcare/actions/runs/37024907980",
+      "complete_pipeline": true
     },
     "public_https": {
-      "status": "pending"
+      "checked_at": "2026-10-02",
+      "url": "https://www.zengyuwei.cn/healthcare/",
+      "release_id": "rel-3b466e9824bb2d8f731fc623b3d12d189418437629611f9009b3c0f61eb7348d",
+      "runtime_commit": "508bd85488f1e2a8d85947068cfb8b10726bad09",
+      "topics": [
+        "meningitis",
+        "sepsis",
+        "diabetic-ketoacidosis",
+        "aortic-dissection",
+        "anaphylaxis",
+        "postpartum-hemorrhage"
+      ],
+      "content_hashes": {
+        "meningitis": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+        "sepsis": "33ce6e30f30c1b6aa465b5c0a45957e26fa0b3f907b681b0572c5a743ff60521",
+        "diabetic-ketoacidosis": "7efeaae8a2dfc3cf688543d77a67dcba862aa19712d011ce507892d8d3d8f075",
+        "aortic-dissection": "92920fe1fe517ebc2108b9568291be16372277371e7227cf0f9993f26a4bd06a",
+        "anaphylaxis": "83a253c6243803a1958a4c7618685d9bcd96d63ca45c35fb3dde71bba7557a52",
+        "postpartum-hemorrhage": "13298c6a96d60437d2d358b18fa5ebdc0f675caff57ff156897dd4e24a096ba5"
+      },
+      "passed": 6,
+      "checks": [
+        "82 topics,154 editorial sections,0 physician sign-offs;coverage and all six full articles/source records match;previous77-topic release remains pinned/readable",
+        "CN/EN82-row22-column CSV contains every article and all1,148 bilingual sections with exact line breaks",
+        "All six canonical topics found through different second-level specialties;14 source-linked sections,danger first,chapter jumps and concentrated editorial panel",
+        "Six selections survive department/query changes;comparison expands full medication text and downloads exact22-column selected CSV",
+        "EN/Arabic preserve open detail,query,department and selection;English fallback,RTL,mobile long text and drawer work without horizontal overflow",
+        "New postpartum danger rule fires in CN/EN independently of eye filters and respects negation;search,age,temperature stay local;no off-origin request or browser error"
+      ],
+      "screenshots": [
+        "public-p0-desktop-zh.png",
+        "public-p0-mobile-ar.png"
+      ],
+      "coverage": 30,
+      "denominator": 13155,
+      "coverage_target_met": false,
+      "http_transport": "Public HTTPS API and full CSV: curl on production host; real UI and selected CSV: Chromium on Windows",
+      "transport_failures_this_run": [],
+      "prior_incomplete_attempts": [
+        "urllib bootstrap IncompleteRead: 97725 of 101547 bytes",
+        "urllib condition request TLS unexpected EOF",
+        "curl CSV TLS handshake failure exit35 after all seven JSON requests passed",
+        "Bounded local curl run: bootstrap TLS failures twice, aortic-dissection connection timeout120s, anaphylaxis TLS failure; run interrupted before further retries"
+      ],
+      "transport_limitation": "Intermittent Windows command-line HTTPS transport failures were not fixed. Public API/CSV completed from the server over the public hostname and real browser checks completed from Windows; no product change or weakened assertion.",
+      "browser_seconds": 61.969,
+      "api_acceptance": {
+        "release_id": "rel-3b466e9824bb2d8f731fc623b3d12d189418437629611f9009b3c0f61eb7348d",
+        "checks": [
+          "82 topics,154 editorial sections,0 physician sign-offs;coverage and all six full articles/source records match;previous77-topic release remains pinned/readable",
+          "CN/EN82-row22-column CSV contains every article and all1,148 bilingual sections with exact line breaks"
+        ],
+        "passed": 2,
+        "network_location": "production host to public HTTPS domain; not loopback",
+        "transport_failures": []
+      }
     },
     "generated_inventory": {
       "command": "python -m src.guide priorities-icd --check",
       "status": "passed"
+    },
+    "production_readback": {
+      "production_release": "rel-3b466e9824bb2d8f731fc623b3d12d189418437629611f9009b3c0f61eb7348d",
+      "runtime_commit": "508bd85488f1e2a8d85947068cfb8b10726bad09",
+      "published": true,
+      "published_at": "2026-10-02T23:18:59.040111+08:00",
+      "topics": 82,
+      "sources": 608,
+      "editorial_records": 154,
+      "public_verified": true,
+      "shared_static_comparison": {
+        "historical_baseline": "postgres-migration-20260930/shared-static-before.json",
+        "total": 17,
+        "matched": 16,
+        "drift": [
+          {
+            "path": "home/index.html",
+            "old_sha256": "3f6d9a1cb07f90afb59f0d96592fde41f442b36580aa6ea0e56c3b2efc9535d4",
+            "current_sha256": "e3a0dd609f428a4b65a84be98e7d6751e36f8842e824a12a4479c82406969930",
+            "mtime_utc": "2026-10-02T13:55:23.520855+00:00"
+          }
+        ],
+        "drift_predates_this_publication": true,
+        "note": "Historical baseline was stale for home/index.html; do not claim 17 unchanged files. Healthcare deploy writes no shared static content."
+      },
+      "services": [
+        "active",
+        "active",
+        "active"
+      ],
+      "backup_bytes": 5716672,
+      "backup_path": "/home/user/.local/state/knowledge-healthcare/publication-508bd85488f1e2a8d85947068cfb8b10726bad09/before.dump",
+      "reader_only_snapshot": true,
+      "data_sha256": "12da6ff1f0b85159c48808a24285314d80d43ff969424a53e05bddb77a83b6f7"
     }
   },
-  "publication_status": "validated_candidate_not_yet_live",
+  "publication_status": "published_and_publicly_verified",
   "coverage_target_met": false,
   "previous_runtime_commit": "d3c9119dd6966bb39b9836f1ba469a3d5861f299",
   "previous_release_id": "rel-b49d8637135769e8f2e86a5d73afa6e4def994bb40477a3d1d4aa0a8450c5a7a",
@@ -107,5 +201,6 @@
       "all": 0,
       "pending": 0
     }
-  }
+  },
+  "screenshots_visually_checked": true
 }

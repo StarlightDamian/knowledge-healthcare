@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "prepared_at": "2026-10-02",
+  "prepared_by": "Codex AI-assisted editorial preparation /root/astra_p0_maternal",
+  "status": "preparation_only_not_accepted_content",
+  "medical_reviewed": false,
+  "scope": "为下一批补写准备两个明确 P0 末级类别；不修改正文、映射、覆盖分子或本次六主题发布。不是医师签审，也不证明整叶已覆盖。",
+  "repository_evidence": {
+    "instructions": "本任务提供的 AGENTS.md；工作目录及父级 knowledge、05_github 未发现额外 AGENTS.md",
+    "coverage_location_note": "data/coverage 不存在；实际使用 data/icd/mappings.json、reports/icd-priorities.csv 和 reports/p0-batch-01-icd-scope-review.json",
+    "priority_rule": "data/icd/priorities.json#p0-maternal-haemorrhage-eclampsia",
+    "classification_release": "ICD-11 MMS 2026-01",
+    "classification_scope": "两项均为 category、is_leaf=true、非残余、纳入分母；英文官方行和中文标题来自既有冻结目录及中英优先级 CSV。本次未重新下载 WHO 分类文件，不将继承的分类证据说成新联网核验。",
+    "existing_article": "data/conditions/postpartum-hemorrhage.json",
+    "inherited_mapping_content_sha256": "13298c6a96d60437d2d358b18fa5ebdc0f675caff57ff156897dd4e24a096ba5",
+    "observed_article_file_sha256": "965235354e6af8b1b116e00c0ff7956dcebecb1baec049db792dc13a2c69c9ef",
+    "hash_note": "映射content_sha256沿用仓库语义哈希；observed_article_file_sha256是本次Get-FileHash得到的原始文件字节哈希，不混用两者。",
+    "read_scope": "读取既有正文全部14维中文及关键急救/药物英文条件，逐维比较；不是全文双语独立验收。"
+  },
+  "sources_actually_read": [
+    {
+      "id": "CMA2023",
+      "title": "产后出血预防与处理指南(2023)",
+      "url": "https://cspm.cma.org.cn/index/news?id=3474",
+      "publisher": "中华医学会妇产科学分会产科学组、中华医学会围产医学分会",
+      "version_date": "2023-07-10官网发布；中华妇产科杂志2023;58(6):401–409，DOI 10.3760/cma.j.cn112141-20230223-00084",
+      "accessed_at": "2026-10-02",
+      "retrieval": "web open 成功读取学会原文 HTML；未读取图表图片，不引用其中数值",
+      "precise_locator": "预防二/积极处理第三产程（网页73–87）；处理一/四早原则（91–108）；处理二(三)胎盘因素（147–155）；处理二(四)凝血功能障碍（157–167）",
+      "population_region": "中国产科临床，阴道及剖宫产后的产后出血；胎盘滞留段须限定胎盘未娩出伴活动性出血",
+      "independence_group": "CN-CMA-guideline",
+      "relationship": "学会自行制定、GRADE及Delphi共识；引用 WHO/FIGO/英美加指南和共同研究，不能声称证据链完全独立。官网为作者组织原文，不计另一个转载来源。",
+      "supports": ["胎盘未娩出伴出血的原因处理", "出血控制与复苏并行", "动态凝血检查和针对性血液成分补充"]
+    },
+    {
+      "id": "NICE235",
+      "title": "Intrapartum care NG235",
+      "url": "https://www.nice.org.uk/guidance/ng235/chapter/Recommendations",
+      "publisher": "National Institute for Health and Care Excellence",
+      "version_date": "2023-09-29发布，官网显示2026-06-09更新；引用第三产程条款标记2014或2014 amended 2023",
+      "accessed_at": "2026-10-02",
+      "retrieval": "web open 403；PowerShell Invoke-WebRequest 对官方 URL 成功读取原始 HTML，剥离标签后实际阅读指定段落；同法读取指南首页更新日期",
+      "precise_locator": "1.10.2第三产程定义；1.10.20延长第三产程；1.10.21–1.10.28胎盘滞留、用药、转运与麻醉",
+      "population_region": "英国分娩照护；第三产程/胎盘滞留语境为婴儿出生至胎盘胎膜娩出，不能不加条件迁移成剖宫产手术等待规则",
+      "independence_group": "UK-NICE-NG235",
+      "relationship": "独立国家指南制定体系，不是 CMA 或 WHO 的转载；围产研究可能共用，不能把机构数当独立试验数。",
+      "supports": ["第三产程时间边界", "胎盘滞留伴过度出血与无出血的药物路径不同", "转产科单元和麻醉下操作"]
+    },
+    {
+      "id": "NATA2019",
+      "title": "Patient blood management in obstetrics: prevention and treatment of postpartum haemorrhage. A NATA consensus statement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6476742/",
+      "publisher": "NATA、FIGO、EBCOG、ESA联合共识；Blood Transfusion",
+      "version_date": "2019-02-06 online；17(2):112–136；DOI 10.2450/2019.0245-18",
+      "accessed_at": "2026-10-02",
+      "retrieval": "web open 遇到检查页；PowerShell Invoke-WebRequest 成功取得并阅读 PMC 原论文全文指定段落，非只读搜索摘要",
+      "precise_locator": "Assessment of haemostatic competence / recommendation35；Fibrinogen replacement therapy / recommendation36；Fresh frozen plasma / recommendations40–41；Thromboprophylaxis / recommendation50及前文",
+      "population_region": "国际多学科产科共识，重点严重持续出血/大量输血；须按资源、当地血液制品和临床流程适配，不是公众自用处方",
+      "independence_group": "NATA-FIGO-EBCOG-ESA-joint-2019",
+      "relationship": "PMC是原论文存档，和期刊版只计一份；四联合组织只计一个共识。与CMA存在共享指南/研究基础，属分别制定而非完全独立实验。2019较旧，本次仅采用与CMA一致的原则，不宣称最新药物许可结论。",
+      "supports": ["实验室或粘弹性监测引导止血成分", "不常规预先补纤维蛋白原", "控制出血后重新评估血栓预防"]
+    }
+  ],
+  "categories": [
+    {
+      "code": "JA43.0",
+      "title": {"zh-CN": "第三产程出血", "en": "Third-stage haemorrhage"},
+      "official_row": 10379,
+      "linearization_uri": "http://id.who.int/icd/release/11/mms/1040555026",
+      "priority": "P0",
+      "current_status": "partial",
+      "associated_condition_ids": ["postpartum-hemorrhage"],
+      "decision": "merge_into_existing",
+      "reason": "缺口是既有产后出血正文内的时相和处理条件，不需要重复14维新文章。只明确第三产程支路，不由胎盘未娩出推定一定出血。",
+      "source_ids": ["NICE235", "CMA2023"],
+      "mece_scope": "按出血发生时胎盘娩出是否完成定位第三产程；与胎盘完整娩出后的立即出血和24小时后的晚期出血分开。不据此覆盖JA43.4/.5梗阻性分娩出血或胎盘植入性疾病本身。时相与凝血机制可共存，正文允许交叉链接，覆盖计数仍逐代码独立审核。",
+      "dimension_gaps": {
+        "summary": "补第三产程起止与本支路；当前只有早/晚两类。",
+        "causes_risks": "将胎盘尚未娩出与娩出后组织残留分开；当前合并表述。",
+        "red_flags": "复用现有立即呼救，但明确胎盘未出时已大量出血同样立即升级，不等第三产程时钟。",
+        "care": "补非产科单元的胎盘滞留由团队安排转运；不向家属提供自行剥离/牵拉动作。",
+        "diagnosis": "记录胎盘是否完整娩出、循环状态及出血；30/60分钟只作英国临床定义，不能作出血等待许可。",
+        "differentials": "区分无出血胎盘滞留、胎盘未出伴出血、娩出后残留；不能仅以时间确定病因。",
+        "treatment": "补胎盘未出伴出血的专业评估/人工取出分支；与现有止血复苏并行，不给操作教程。",
+        "medications": "补胎盘滞留有无过度出血的促宫缩条件差别；保留既有TXA出生计时与禁忌限定。",
+        "diet": "复用麻醉期间听从团队进食安排，无特异食疗缺口，不机械增段。",
+        "daily_care": "复用恢复/出院警示；人工处理后发热、恶臭、再出血可链接既有晚期评估。",
+        "special_populations": "疑胎盘异常附着需有经验团队个体处理；不能把常规手取等同所有病例。进一步植入专病内容不在此包。",
+        "prognosis_followup": "出院说明原因、取胎盘情况和后续复查；目前仅泛称药物/手术解释，可微补，不给统一复查天数。",
+        "complications": "复用严重出血后果；特异侵入操作风险、发生率未双源完成，不新增数字。",
+        "prevention": "说明第三产程由受训团队管理；复用现有预防促宫缩与胎盘检查，不教家庭牵拉。"
+      },
+      "supported_claims": [
+        {"claim": "胎盘未娩出伴活动性/过度出血需要及时专业处理，不能等待预设时钟", "sources": ["CMA2023#处理二(三)1", "NICE235#1.10.24–28"], "support_boundary": "第三产程出血；等待时钟警示是将两份条件性建议作安全编辑组合，不是试验结论"},
+        {"claim": "手取胎盘是医护操作，需评估并处理镇痛/麻醉条件", "sources": ["NICE235#1.10.25–28", "CMA2023#处理二(三)1"], "support_boundary": "两者镇静与麻醉表述不同，不翻译成同一麻醉方案"}
+      ],
+      "bilingual_action_candidate": {
+        "zh-CN": "婴儿出生后、胎盘尚未完全娩出时若出现大量出血，应立即叫医护人员；不要等到某个分钟数再求助。医疗团队会同时止血、支持循环并评估胎盘处理，取出胎盘须由专业人员完成。",
+        "en": "If heavy bleeding occurs after the baby is born while the placenta has not fully delivered, summon clinical staff immediately; do not wait for a time threshold. The team controls bleeding, supports circulation and assesses placental management together. Placental removal is a professional procedure."
+      },
+      "unresolved_differences": ["NICE主动管理30分钟/生理管理60分钟界定延长第三产程，不是有出血者的等待标准；若保留数字，必须有英国语境与双语限定。", "CMA提及阴道分娩操作前镇静，NICE明确无麻醉不得进行宫腔探查/人工取胎盘；公众正文只说按团队麻醉/镇痛安排，不自行拼合处方。", "取胎盘后抗生素预防的新推荐尚未在本包获得第二份实际原文支持，暂不新增。"],
+      "minimum_next_edit": "在summary、causes_risks/diagnosis、treatment、medications增加或改写约4–6个短要点，其余复用；随后对所有14维及双语条件作一次当前哈希独立范围审核。"
+    },
+    {
+      "code": "JA43.3",
+      "title": {"zh-CN": "产后凝血缺陷", "en": "Postpartum coagulation defects"},
+      "official_row": 10382,
+      "linearization_uri": "http://id.who.int/icd/release/11/mms/1252576495",
+      "priority": "P0",
+      "current_status": "partial",
+      "associated_condition_ids": ["postpartum-hemorrhage"],
+      "decision": "merge_into_existing",
+      "reason": "已有凝血风险和输血泛述，可用机制、检查、成分治疗及病因随访分支补齐；本包不新建泛化DIC或遗传凝血病文章。",
+      "source_ids": ["CMA2023", "NATA2019"],
+      "mece_scope": "产后出血语境中的凝血障碍；可为原有问题或严重出血过程中出现，不能把所有PPH、所有DIC或所有遗传出血病覆盖合并。与JA43.0时间支路可能并存，但只按独立证据确认各叶。",
+      "dimension_gaps": {
+        "summary": "当前仅提凝血问题；补血液正常止血过程受损这一机制并说明并非所有产后出血都有凝血障碍。",
+        "causes_risks": "区分原有凝血问题与严重失血/复苏中继发异常；多原因可同时存在。",
+        "red_flags": "保留现有紧急出血行动；不能让患者凭血块外观排除凝血病。特异皮肤/针眼渗血描述待追加证据。",
+        "care": "补严重持续出血需产科、麻醉、输血/血液科协作；不能等凝血结果全部回报才启动急救。",
+        "diagnosis": "从泛称抽血补为血小板、凝血时间、纤维蛋白原等动态检查；粘弹性检测限定医院具备时。",
+        "differentials": "区分宫缩/创伤/胎盘与凝血原因但可共存；不能以子宫收缩好就确认凝血病。",
+        "treatment": "解释止住出血源和纠正凝血同时进行；红细胞与血浆/血小板/补纤维蛋白原的任务不同。",
+        "medications": "将TXA抗纤溶作用与补凝血成分分开；不照单给每人预先补纤维蛋白原，也不给公众剂量。",
+        "diet": "复用贫血恢复营养；不暗示食补可纠正急性凝血危象。",
+        "daily_care": "带出院与输血/检验记录复诊；是否继续或恢复抗凝按处方，不自行因曾出血停药。",
+        "special_populations": "原有出血病、抗凝治疗或血制品限制应提前规划；遗传性病种特异治疗未完成，不增加覆盖。",
+        "prognosis_followup": "现有仅血常规复诊；需说明是否仍有凝血异常、诱因和血液科复评由团队决定。固定检验日程尚未双源证实。",
+        "complications": "复用休克/器官损伤；保留控制出血且凝血问题纠正后的血栓风险复评，不能把出血经历解释为不会血栓。",
+        "prevention": "复用孕期说明病史/药物、备血和场所；不宣传对所有产妇预防性补凝血成分。"
+      },
+      "supported_claims": [
+        {"claim": "严重持续产后出血需要动态凝血评估并按结果/临床情况选择血液成分", "sources": ["CMA2023#处理一(二)(四)、处理二(四)", "NATA2019#recommendation35、40–41"], "support_boundary": "医院处置；不得转化成自我诊断或统一输血配比"},
+        {"claim": "低纤维蛋白原需要针对性考虑补充，不对所有患者预先补充", "sources": ["CMA2023#处理二(四)3–4", "NATA2019#recommendation36"], "support_boundary": "CMA在足量时通常不补冷沉淀；NATA明确反对预先补充。具体制品和剂量由当地临床决定。"}
+      ],
+      "bilingual_action_candidate": {
+        "zh-CN": "严重持续出血时，医疗团队会反复检查血小板、凝血时间和纤维蛋白原，并在控制出血源的同时按需要补充相应血液成分。检查用于指导治疗，不能成为延迟急救的理由；氨甲环酸也不能替代缺少的血小板或凝血因子。",
+        "en": "During severe ongoing bleeding, the team repeatedly checks platelets, clotting times and fibrinogen and replaces the needed blood components while controlling the bleeding source. Tests guide care and must not delay emergency treatment; tranexamic acid does not replace missing platelets or clotting factors."
+      },
+      "unresolved_differences": ["不同来源在无检验结果时启动血浆、血小板及大量输血配比的细节不同；仅准备共同原则，不拼出统一算法。", "NATA2019较旧，制品许可、具体阈值与2025/2026更新不能视为已核清；本包未成功取得WHO2025相关完整段落，不能用其搜索摘要增加来源数。", "病因特异随访、遗传病检验及凝血完全恢复时间尚缺双源；仅建议个体化复评，不承诺完整叶级覆盖。"],
+      "minimum_next_edit": "改写diagnosis、treatment、medications、prognosis_followup的约4个短要点，加causes_risks的原有/继发区分；复用其他维度。补齐病因随访依据后再独立审核，当前仍partial。"
+    }
+  ],
+  "deferred": [
+    {"code": "JA43.4", "reason": "梗阻性分娩合并子宫破裂有独立手术支路；此两叶准备不外推"},
+    {"code": "JA43.5", "reason": "未提子宫破裂不等于已排除破裂，需独立语义与来源工作"},
+    {"code": "JA43.Y", "reason": "需正向确定其他特指残余范围，不能以泛述确认"}
+  ],
+  "publication_gate": "准备包完成只证明有限调查和补写路线。任何后续正文变更须逐条来源支持、独立双语/临床条件编辑复核、当前内容哈希范围裁定及项目检查；medical_reviewed始终为false，除非真实有资质医师签审。"
+}

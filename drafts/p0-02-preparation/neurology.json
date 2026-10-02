@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "prepared_at": "2026-10-02",
+  "author_role": "gpt-6-astra independent research preparation; not clinician sign-off",
+  "status": "sources_read_preparation_only",
+  "medical_reviewed": false,
+  "coverage_change_authorized": false,
+  "scope": "Two exact pending P0 leaves. No production article, mapping, index or report modified. This package is not bilingual publication content and does not complete coverage.",
+  "baseline_files": [
+    "reports/icd-priorities.json.gz",
+    "reports/p0-batch-01-icd-scope-review.json",
+    "data/conditions/meningitis.json",
+    "data/conditions/stroke.json"
+  ],
+  "selection": {
+    "method": "Read pending P0 meningitis/stroke categories and all fourteen Chinese sections of existing canonical articles; confirm exact leaf metadata against batch scope review.",
+    "selected_codes": [
+      "1C8E.1",
+      "1D01.00"
+    ],
+    "deferred": "Stroke article is broad and its exact aetiological leaves remain missing. Do not infer coverage from a general stroke overview. This bounded package chooses two narrow meningitis gaps with identifiable additions instead of opening a third topic."
+  },
+  "sources": [
+    {
+      "id": "cdc-viral-2025",
+      "url": "https://www.cdc.gov/meningitis/about/viral-meningitis.html",
+      "institution": "US CDC / NCIRD",
+      "version": "2025-09-09",
+      "accessed_at": "2026-10-02",
+      "access_status": "opened; relevant article text read",
+      "locator": "What it is; Symptoms / When to seek emergency care; Risk factors; Prevention; Treatment and recovery (browser extraction lines 32-124)",
+      "population_region": "US general public; children, young infants, immunocompromised people explicitly discussed",
+      "supports": "Non-polio enteroviruses are common US causes; suspected meningitis needs prompt assessment; mild viral cases often recover, whereas severe/high-risk cases may need admission. Antiviral benefits described for selected other viruses must not be transferred to enterovirus.",
+      "limits": "A viral-meningitis overview, not a neonatal or enteroviral meningitis treatment guideline; its recovery interval is not permission to wait before assessment.",
+      "upstream": "No full primary-study bibliography shown in the inspected article. CDC family pages are not independent guideline groups."
+    },
+    {
+      "id": "nsw-enterovirus-2018",
+      "url": "https://www.health.nsw.gov.au/Infectious/factsheets/Pages/enteroviruses.aspx",
+      "institution": "NSW Health",
+      "version": "2018-05-23",
+      "accessed_at": "2026-10-02",
+      "access_status": "opened; full clinical factsheet text read",
+      "locator": "What are enteroviruses?; How is it spread?; Who is at risk?; How is it diagnosed?; How is it treated?; Signs of a serious infection; Outbreaks (lines 27-96)",
+      "population_region": "Australia/NSW; mainly children but adults can have enteroviral meningitis",
+      "supports": "Secretions, stool and contaminated hands/surfaces transmit enteroviruses; CSF and other samples may be tested; management is supportive. Young infants merit particular care. Deterioration warrants urgent reassessment even after earlier examination.",
+      "limits": "Old factsheet: vaccine availability and notification rules are local and time-sensitive. Do not export them worldwide. General enterovirus infection does not establish CNS infection.",
+      "upstream": "Separately authored state health factsheet; no study bibliography proving statistical independence. Its content is a stated upstream source for healthdirect."
+    },
+    {
+      "id": "healthdirect-enterovirus-2024-context",
+      "url": "https://www.healthdirect.gov.au/enterovirus-in-children",
+      "institution": "Healthdirect Australia",
+      "version": "Last reviewed September 2024",
+      "accessed_at": "2026-10-02",
+      "access_status": "opened; patient article and Sources read",
+      "locator": "Treatment; complications; prevention; Sources (lines 136-219)",
+      "population_region": "Australian children and caregivers",
+      "supports": "Patient-facing hydration, symptom relief and hygiene wording can inform style after meningitis-specific clinical review.",
+      "limits": "Not counted as a third independent corroborator: explicitly cites NSW Health and CDC. Its broad enterovirus page includes a parechovirus reference; do not transfer that taxonomy into this exact ICD leaf.",
+      "upstream": "NSW Health Enteroviruses fact sheet; CDC Non-Polio Enteroviruses, explicitly listed at Sources."
+    },
+    {
+      "id": "cdc-hi-2025",
+      "url": "https://www.cdc.gov/hi-disease/hcp/clinicians/index.html",
+      "institution": "US CDC / Division of Bacterial Diseases",
+      "version": "2025-09-22",
+      "accessed_at": "2026-10-02",
+      "access_status": "opened; clinical overview text and references read",
+      "locator": "Cause; Types; Risk factors; Prevention; Diagnosis; Complications (lines 31-124); references (141-143)",
+      "population_region": "US clinical/public-health audience; all ages",
+      "supports": "H. influenzae includes encapsulated a-f and nontypeable strains. Serotyping informs public-health action. Hib vaccination does not cover non-b disease. Secondary non-b transmission is possible, especially in vulnerable people.",
+      "limits": "Acute treatment is delegated to AAP Red Book, which was not opened. Therefore no antimicrobial regimen or dose is validated here.",
+      "upstream": "Oliver et al., MMWR 2023 secondary disease study; Blain et al., OFID 2014 older adult disease. Links to CDC ACIP are the same institution, not an independent author group."
+    },
+    {
+      "id": "ukhsa-hib-2024",
+      "url": "https://www.gov.uk/government/publications/haemophilus-influenzae-type-b-hib-revised-recommendations-for-the-prevention-of-secondary-cases/revised-recommendations-for-the-prevention-of-secondary-haemophilus-influenzae-type-b-hib-disease",
+      "institution": "UK Health Security Agency",
+      "version": "Updated 2024-09-04",
+      "accessed_at": "2026-10-02",
+      "access_status": "initial HTML open successful; summary, introduction and evidence sections through line 141 read; subsequent offset opens timed out",
+      "locator": "Summary of changes (81-86); Introduction (87-98); Risk of secondary cases (123-131); Eradication of carriage (132-141)",
+      "population_region": "UK confirmed invasive Hib cases and contacts; not all H. influenzae serotypes",
+      "supports": "2024 policy offers prophylaxis to confirmed invasive Hib cases and all household contacts. Policy changed from the prior vulnerable-household criterion. Contact evidence is heavily based on older pre-vaccine US studies; present-day UK epidemiology shaped the recommendation.",
+      "limits": "Detailed downstream regimen sections were not successfully read; do not infer drug dose, timing or exceptions from this package. UK policy is not a universal contact rule.",
+      "upstream": "Older US household transmission/carriage studies overlap the field informing ACIP; two independent institutions do not mean independent trials. Exact bibliography intersection not established."
+    },
+    {
+      "id": "cdc-acip-hib-2014",
+      "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/rr6301a1.htm",
+      "institution": "CDC / ACIP",
+      "version": "2014 MMWR Recommendations and Reports 63(RR-01); linked by 2025 CDC clinical overview",
+      "accessed_at": "2026-10-02",
+      "access_status": "opened; methods, background and chemoprophylaxis sections read",
+      "locator": "Methods (55-63); Background (64-77); Guidance for Chemoprophylaxis / Household Contacts / Child Care Contacts (177-188)",
+      "population_region": "US vaccination and public-health practice",
+      "supports": "US household prophylaxis criteria depend on underimmunized young children or immunocompromised minors in the household; these differ from UKHSA 2024. The page distinguishes disease treatment from carriage clearance.",
+      "limits": "The old assertion that non-b secondary transmission has not been documented is superseded by the 2025 CDC overview. Do not reproduce it. Vaccine products/schedules and professional regimens need current local verification.",
+      "upstream": "AAP Red Book 2012 cited for contact recommendations; systematic independence from UK evidence not established. Same CDC authoring family as cdc-hi-2025."
+    }
+  ],
+  "categories": [
+    {
+      "code": "1C8E.1",
+      "title": "Enteroviral meningitis",
+      "baseline_coverage": "partial",
+      "official_row": 481,
+      "foundation_uri": "http://id.who.int/icd/entity/62316737",
+      "mece": {
+        "decision": "extend_existing",
+        "target": "data/conditions/meningitis.json",
+        "reason": "Same syndrome recognition and emergency pathway; limited named-virus transmission, host and treatment additions fit existing sections. A new article would duplicate most fourteen dimensions.",
+        "exclusions": "Do not map generic enterovirus infection, hand-foot-mouth disease, encephalitis, parechovirus or separately classified neonatal disease to this leaf."
+      },
+      "source_ids": [
+        "cdc-viral-2025",
+        "nsw-enterovirus-2018",
+        "healthdirect-enterovirus-2024-context"
+      ],
+      "fourteen_dimension_gaps": {
+        "summary": "Add explicit named enterovirus branch; viral overview alone does not allocate this scope.",
+        "causes_risks": "Add stool/secretions/hand and surface transmission and age context.",
+        "red_flags": "Reuse canonical emergency signs; avoid making fever mandatory based on a childhood enterovirus checklist.",
+        "care": "Explain confirmed mild-case discharge versus suspected meningitis; deterioration after prior review still needs reassessment.",
+        "diagnosis": "Name enterovirus testing within CSF work-up; do not equate stool positivity with proved meningitis.",
+        "differentials": "Separate enteroviral meningitis from encephalitis and ordinary enterovirus illness; preserve bacterial exclusion pathway.",
+        "treatment": "Allocate supportive treatment to the confirmed enterovirus branch; retain admission for severe/high-risk illness.",
+        "medications": "Prevent readers from applying herpes antiviral language to enterovirus; no routine specific antiviral regimen validated here.",
+        "diet": "Reuse assessed-case hydration advice; no separate enterovirus diet claim needed.",
+        "daily_care": "Add nappy/toilet hygiene and contaminated-surface cleaning; no new home scoring scheme.",
+        "special_populations": "Allocate young infants/immunocompromised risk; exact neonatal treatment remains outside this leaf package.",
+        "prognosis_followup": "Avoid guaranteed recovery deadline; persistence/deterioration requires individual reassessment.",
+        "complications": "Keep CNS complications distinct from wider enterovirus manifestations; no frequency estimates validated.",
+        "prevention": "Target hand hygiene and reduced secretion/stool exposure; omit global no-vaccine assertion."
+      },
+      "minimum_additions": [
+        "One named-enterovirus explanation spanning summary, causes and diagnosis.",
+        "One conditional supportive-care paragraph separating assessed mild cases from serious illness.",
+        "One hygiene paragraph plus scope-specific host and follow-up qualifications; inherit existing applicable common sections without duplicating them."
+      ],
+      "high_risk_claim_gates": [
+        {
+          "claim": "Suspected meningitis urgent evaluation regardless of assumed viral cause",
+          "support": [
+            "cdc-viral-2025",
+            "existing canonical meningitis emergency sources"
+          ],
+          "status": "new source read; inherited sources must be bound to final revised text/hash"
+        },
+        {
+          "claim": "No routine specific enterovirus treatment; supportive management does not imply home eligibility",
+          "support": [
+            "nsw-enterovirus-2018",
+            "cdc-viral-2025"
+          ],
+          "status": "two independently authored authorities support cautious general wording; neither is an exact severe/neonatal regimen guideline"
+        },
+        {
+          "claim": "Numeric fever threshold or fixed 7-10-day recovery promise",
+          "support": [],
+          "status": "omit; no matched dual-source threshold validated"
+        }
+      ],
+      "remaining": "Write bilingual additions, independently check medical equivalence and exact claims, confirm common-section applicability, then renew mapping against final content hash. Coverage stays partial."
+    },
+    {
+      "code": "1D01.00",
+      "title": "Meningitis due to Haemophilus influenzae",
+      "baseline_coverage": "partial",
+      "official_row": 503,
+      "foundation_uri": "http://id.who.int/icd/entity/1005770900",
+      "mece": {
+        "decision": "extend_existing",
+        "target": "data/conditions/meningitis.json",
+        "reason": "Core bacterial meningitis pathway is already present. Add H. influenzae scope and a qualified Hib public-health branch, avoiding a duplicate general article.",
+        "exclusions": "This leaf is broader than Hib. Do not claim whole-leaf completion from b-serotype evidence alone; epiglottitis, bacteremia without meningitis and separate neonatal categories are outside this mapping."
+      },
+      "source_ids": [
+        "cdc-hi-2025",
+        "ukhsa-hib-2024",
+        "cdc-acip-hib-2014"
+      ],
+      "fourteen_dimension_gaps": {
+        "summary": "Explicitly separate H. influenzae species scope from Hib subset and influenza virus.",
+        "causes_risks": "Allocate respiratory transmission, carriage and host risk to the named pathogen; do not generalize Hib epidemiology to all strains.",
+        "red_flags": "Reuse canonical urgent bacterial-meningitis signs; no new pathogen-specific diagnostic symptom claimed.",
+        "care": "Add prompt contact with treating/public-health team after confirmed Hib; avoid telling every household to self-medicate.",
+        "diagnosis": "Explain culture/PCR and why serotype matters for public-health action.",
+        "differentials": "Distinguish b serotype from non-b/nontypeable disease and influenza virus; syndrome still requires clinical testing.",
+        "treatment": "Common urgent inpatient antibacterial pathway can be reused; pathogen-specific regimen remains unverified by this package.",
+        "medications": "Separate acute treatment from prophylaxis/carriage clearance; do not add rifampin dose or universal household instruction.",
+        "diet": "No distinct diet claim needed; common nutrition support applies conditionally.",
+        "daily_care": "Add contact assessment and vaccination-record preparation alongside existing discharge care.",
+        "special_populations": "Clarify underimmunized children and immunocompromised hosts; elderly non-b disease not erased by childhood Hib framing.",
+        "prognosis_followup": "Reuse bacterial hearing/neurodevelopment follow-up after applicability review; no new absolute risk percentage.",
+        "complications": "Existing hearing/neurologic complications apply but require claim allocation; no new numerical prognostic estimate.",
+        "prevention": "Add Hib-only vaccine scope; jurisdiction-dependent contact management, with non-b advice individualized."
+      },
+      "minimum_additions": [
+        "Add species-versus-serotype scope and serotyping explanation.",
+        "Replace potential implication that only meningococcal contacts merit assessment with separate, carefully qualified Hib contact branch.",
+        "State local public-health advice determines prophylaxis and vaccination; retain general acute bacterial care without unsupported drug detail."
+      ],
+      "high_risk_claim_gates": [
+        {
+          "claim": "Hib contacts may need prophylaxis",
+          "support": [
+            "cdc-acip-hib-2014",
+            "ukhsa-hib-2024"
+          ],
+          "status": "supported as conditional action; eligibility differs by jurisdiction, so no blended universal rule"
+        },
+        {
+          "claim": "All H. influenzae contacts need or never need prophylaxis",
+          "support": [],
+          "status": "reject; type-b scope and evolving non-b transmission evidence prevent either blanket rule"
+        },
+        {
+          "claim": "Specific antimicrobial dose, duration, steroid eligibility or numeric contact window",
+          "support": [],
+          "status": "not ready; NICE page open failed, CDC refers to unopened AAP Red Book, UKHSA detailed sections timed out; omit pending direct dual-source reading"
+        },
+        {
+          "claim": "Hib vaccine prevents all H. influenzae meningitis",
+          "support": [],
+          "status": "reject; vaccine protection is type-b specific"
+        }
+      ],
+      "remaining": "Need independent non-b clinical source if adding non-b treatment claims; write bilingual text and independent claim review; full fourteen-dimension allocation and final-hash mapping remain pending. Coverage stays partial."
+    }
+  ],
+  "failed_access": [
+    {
+      "url": "https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+      "status": "web open returned Internal Error; not counted as read or supporting evidence"
+    }
+  ],
+  "completion_gates": [
+    "No two URLs from one CDC authoring family count as two independent authorities.",
+    "Healthdirect is downstream of CDC and NSW and is not independent corroboration.",
+    "Two independent publishers may share upstream studies; this is guidance concordance, not independent clinical replication.",
+    "No full source text downloaded or stored; only bibliographic metadata and concise research notes.",
+    "No coverage update before complete bilingual content, independent review and current-hash scope allocation."
+  ],
+  "baseline_sha256": {
+    "reports/icd-priorities.json.gz": "31cbabf55a0827c2e71a5d4300f5a9d8e63be0ab7638d4c9b8dc7a772025ea9e",
+    "reports/p0-batch-01-icd-scope-review.json": "c40f89fb3976abb507eeee7826c140b989588bb7e4a685b441ee13bf433ed643",
+    "data/conditions/meningitis.json": "09e800db673eb77df2d3d487dd0e8305460416cf3210db6f1e3e11095425602f",
+    "data/conditions/stroke.json": "637883dcbe9b77ecb659d3e6a9a04b27abc2bcba5bd7d8f284295ccb47dbb507"
+  }
+}

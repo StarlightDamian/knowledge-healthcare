@@ -1,0 +1,36 @@
+{
+  "prepared_at": "2026-10-02",
+  "requested_model": "gpt-6-astra",
+  "simultaneous_subagents_verified": 3,
+  "active_execution_slots_including_coordinator": 4,
+  "concurrency_evidence": "All three explicit-model spawn calls succeeded; collaboration.list_agents returned coordinator plus allergy, maternal and neurology running together. This is the active session tool limit, not a general model or API limit.",
+  "status": "source_preparation_only",
+  "packages": [
+    {
+      "file": "drafts/p0-02-preparation/allergy.json",
+      "sha256": "0275fa25e13763aa690d95588354be702269b8098175fe3ae16d08304ff83028",
+      "codes": [
+        "4A84.31",
+        "4A84.6"
+      ]
+    },
+    {
+      "file": "drafts/p0-02-preparation/maternal.json",
+      "sha256": "3f4ac2b1e53b0bb7fb21168f9476a51576e8fdb50552b1876da9eb3d7f3ff602",
+      "codes": [
+        "JA43.0",
+        "JA43.3"
+      ]
+    },
+    {
+      "file": "drafts/p0-02-preparation/neurology.json",
+      "sha256": "16e93fcd47a930d843f0bd18ab278f499f958c975022648fd668a70828d9b1af",
+      "codes": [
+        "1C8E.1",
+        "1D01.00"
+      ]
+    }
+  ],
+  "coverage_change": 0,
+  "next_step": "Write bilingual additions into the three existing canonical articles, independently review actual claims and source relationships, then bind coverage decisions to revised content hashes. Do not count these preparation files as completed articles."
+}

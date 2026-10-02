@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "prepared_at": "2026-10-02",
+  "status": "preparation_only_not_publishable",
+  "scope": "下一批过敏科 P0 的有限 MECE 内容准备；不修改正文、映射、优先级、覆盖率或发布状态。",
+  "clinical_signoff": false,
+  "baseline": {
+    "instructions": "用户提供的 AGENTS.md；仓库根、上三级及 drafts 内未发现额外 AGENTS.md。",
+    "condition_path": "data/conditions/anaphylaxis.json",
+    "condition_sha256": "4b37abd34af32ae75ebc2cf85dcc67a62d1b247e1f9a6920cc5877a410649dce",
+    "scope_path": "reports/p0-batch-01-icd-scope-review.json",
+    "scope_sha256": "c40f89fb3976abb507eeee7826c140b989588bb7e4a685b441ee13bf433ed643",
+    "priority_path": "reports/icd-priorities.csv",
+    "priority_sha256": "b129daa0d4292a0ccf83b009ff8e698451a351741acac9c8de99f97827cc36b7",
+    "classification_basis": "当前仓库冻结 ICD-11 MMS 2026-01 official_row 的 category/is_leaf=true；本准备未重新获取 WHO 全表，临床网页不能证明 ICD 映射。",
+    "coverage_path_correction": "当前目录不存在 data/coverage；使用 data/icd 与上述 scope/priority 报告。"
+  },
+  "sources": [
+    {
+      "id": "cold-aad",
+      "title": "Welts on skin due to cold temperature could be hives",
+      "publisher": "American Academy of Dermatology",
+      "url": "https://www.aad.org/public/diseases/a-z/hives-cold-urticaria",
+      "version": "Last updated 2024-12-18",
+      "read_at": "2026-10-02",
+      "read_scope": "实际读取正文 How is cold urticaria diagnosed/treated、Does cold urticaria go away 及文末版本和参考文献；网页行 184–248、267–292。",
+      "population_region": "美国公众资料；寒冷性荨麻疹患者，含儿童例子，不是全部寒冷暴露者。",
+      "independence": "AAD 自行署名编写和审核；不是 BAD 或 SFD 转载。引用既有病例、队列和综述，不能视作独立临床试验。",
+      "supports": "专科病史与寒冷激发评估；阴性局部试验不能排除；冷食后喉肿需避免相关冷食；严重既往反应需评估救援肾上腺素；抗组胺用于风团控制。"
+    },
+    {
+      "id": "cold-bad",
+      "title": "Urticaria and angioedema",
+      "publisher": "British Association of Dermatologists",
+      "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+      "version": "关联官方 PDF 标示 June 2020；在线页本次未见更明确修订日期，不用爬取日期冒充版本。",
+      "read_at": "2026-10-02",
+      "read_scope": "实际读取 Other urticarias > Cold urticaria，网页行 59–69；同时读取前文以识别适用边界。",
+      "population_region": "英国公众；各型荨麻疹，寒冷小节适用于寒冷性荨麻疹。",
+      "independence": "BAD 原始公众页，与 AAD/SFD 分属不同编写机构；未证明底层研究完全独立。官方 PDF 与此页属同源，不计双源。",
+      "supports": "冷水游泳可发生广泛风团及晕厥，应避免；手术前告知以安排保温。",
+      "caution": "页面前部关于血管性水肿危险性的笼统表述不用于严重过敏急救主张。"
+    },
+    {
+      "id": "cold-sfd",
+      "title": "Guidelines cold urticaria: algorithm and associated measures",
+      "publisher": "Société Française de Dermatologie / Centre de Preuves",
+      "url": "https://reco.sfdermato.org/en/guidelines-cold-ulticaria/",
+      "companion_url": "https://reco.sfdermato.org/en/guidelines-cold-ulticaria/associated-measures",
+      "version": "Guidelines Updated Sep 24；associated-measures 页面 last updated 2026-01-19",
+      "read_at": "2026-10-02",
+      "read_scope": "实际读取算法 Diagnosis/Background treatment/Emergency Treatment，行 42–70；附加措施 Cold Desensitization、Therapeutic Education、In Case of Surgery、Professional Context，行 42–63。",
+      "population_region": "法国医疗体系；疑似或确诊寒冷性荨麻疹；急救装置分支限定既往严重反应或口咽/喉症状。",
+      "independence": "法国学会工作组指导，与 AAD/BAD 独立编辑；算法、附加措施和 2024 BJD 推荐是一个来源家族，不能计三份独立证据。打开的 bjd.pdf 只有文献书目信息，并未读到论文全文，不能用作已读正文证据。",
+      "supports": "既往严重寒冷反应/口咽喉症状时处方自注射肾上腺素；不推荐冷脱敏；围手术期温度管理、职业暴露咨询；长期皮肤症状控制与急救分开。"
+    },
+    {
+      "id": "mast-ascia",
+      "title": "Mastocytosis and Other Mast Cell Disorders: Frequently Asked Questions",
+      "publisher": "ASCIA",
+      "url": "https://www.allergy.org.au/images/pc/ASCIA_PC_Mastocytosis_FAQ_2025.pdf",
+      "version": "Content updated September 2025",
+      "read_at": "2026-10-02",
+      "read_scope": "实际读完 2 页 Q1–Q7；重点 p1 Q1–3 与 p2 Q4–7，网页提取行 7–70。",
+      "population_region": "澳大利亚/新西兰患者与照护者；肥大细胞疾病，儿童皮肤型和成人系统型分别说明。",
+      "independence": "ASCIA 原始 FAQ，与美国 JTF 独立编辑；无逐条书目，底层证据可能重叠，不能声称完全独立研究。",
+      "supports": "疾病与发作区分；触发因素个体不同；反复发作者应专科管理、必要救援处方和定期随访。"
+    },
+    {
+      "id": "mast-jtf2023",
+      "title": "Anaphylaxis: A 2023 practice parameter update",
+      "publisher": "AAAAI/ACAAI Joint Task Force; Annals of Allergy, Asthma & Immunology",
+      "url": "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Anaphylaxis-Practice-Paramaters-2023.pdf",
+      "version": "2023; 学会托管 53 页 ARTICLE IN PRESS 版本",
+      "read_at": "2026-10-02",
+      "read_scope": "实际读取印刷页 36–39（PDF 索引 35–38）Mast Cell Disorders and Anaphylaxis、建议 38–42、Clinical Presentation、MCAS 和特殊治疗；提取行 3042–3347。",
+      "population_region": "美国实践参数；系统性肥大细胞增多症、严重虫蜇及反复原因不明反应，部分依据来自欧洲人群。",
+      "independence": "AAAAI 与 ACAAI 联合文件算一个来源；托管 PDF 不是另一份独立资料。表 25 沿用 Valent 2021 共识；具体虫毒建议使用既有队列/指南，不是新试验。",
+      "supports": "无皮损不能排除；类胰蛋白酶不能单独诊断；虫毒免疫治疗长期安排；MCAS 需复合证据；特殊药物证据有限。"
+    },
+    {
+      "id": "shared-aaaai-public",
+      "title": "Anaphylaxis",
+      "publisher": "AAAAI",
+      "url": "https://www.aaaai.org/conditions-treatments/allergies/anaphylaxis",
+      "version": "网页标注 2026-08-13",
+      "read_at": "2026-10-02",
+      "read_scope": "实际读取 Overview、Symptoms & Diagnosis、Treatment & Management、Important Reminder；行 31–79。",
+      "population_region": "美国公众严重过敏通用路径；美国 911 不能原样推广到其他地区。",
+      "independence": "仅作急救共享路径支持；与 mast-jtf2023 同机构体系，不当成肥大细胞特异主张的第二独立来源。",
+      "supports": "怀疑严重过敏应立即用已配备救援肾上腺素并呼叫急救，不等待抗组胺起效；培训照护者并共享书面计划。"
+    }
+  ],
+  "categories": [
+    {
+      "code": "4A84.31",
+      "title": {"zh-CN": "寒冷诱发的全身过敏反应", "en": "Cold-induced anaphylaxis"},
+      "release": "2026-01",
+      "official_row": 2810,
+      "foundation_uri": "http://id.who.int/icd/entity/416451504",
+      "priority": "P0",
+      "current_status": "partial",
+      "existing_ids": ["anaphylaxis"],
+      "decision": "merge_into_existing",
+      "rationale": "核心急救与现有文章相同，只缺寒冷特异路径；无需再建重复急救文章。风团本身属于荨麻疹，不因冷诱发即计入全身严重过敏。",
+      "source_ids": ["cold-aad", "cold-bad", "cold-sfd", "shared-aaaai-public"],
+      "dimension_gaps": {
+        "summary": "现有定义可复用；补一句寒冷触发也可能出现系统反应，区分局部风团。",
+        "causes_risks": "现有运动分支不足；增加冷空气、冷水大面积暴露与个体接触史。",
+        "red_flags": "把冷暴露接到已有喉症状/呼吸/晕厥急救入口；不要要求先有食物、药物或虫蜇史。",
+        "care": "复用急救观察路径；恢复后增加寒冷触发专科评估，不编统一安全水温。",
+        "diagnosis": "补专科寒冷激发及阴性结果限制；不发布家庭冰块/冷水自测步骤。",
+        "differentials": "区分单纯寒冷性荨麻疹与系统发作；低温伤害/溺水鉴别若展开需另补证据。",
+        "treatment": "已有救援治疗复用；稳定期皮肤症状控制不能替代急救，冷脱敏不作自救建议。",
+        "medications": "分开长期抗组胺与救援肾上腺素；剂量升级、奥马珠单抗与地域批准尚需专门核对，暂不写剂量。",
+        "diet": "补冷食/冷饮引发口咽症状时的温度避让；不能推出食品成分过敏或统一忌口。",
+        "daily_care": "补冷水游泳暴露规划和救援装置可及性；不把吃药或有人陪同写成保证安全。",
+        "special_populations": "复用已有年龄/孕期急救条件；儿童水上活动和职业冷暴露单独交代，年龄特异风险数值未核对。",
+        "prognosis_followup": "病程存在差异；局部风团消退不自动证明再入冷水安全，不新增未经双源确认的缓解率。",
+        "complications": "低血压/意识丧失沿用系统并发症；水中失去意识的救援风险需说明但不扩展水上施救操作。",
+        "prevention": "补术前告知、保温及个体暴露方案；不做自行冷适应训练。"
+      },
+      "action_conditions": [
+        {"zh-CN": "若寒冷暴露后出现喉咙肿胀、呼吸困难或晕厥，立即按已制定计划使用已配备的肾上腺素并呼叫当地急救。", "en": "If cold exposure is followed by throat swelling, breathing difficulty or collapse, use the available prescribed adrenaline under the emergency plan and call local emergency services immediately.", "source_ids": ["cold-aad", "cold-sfd", "shared-aaaai-public"]},
+        {"zh-CN": "有寒冷诱发严重反应史者，应由专科评估救援装置和冷暴露安排；不要自行用冷水浸泡验证是否已经安全。", "en": "After a serious cold-triggered reaction, ask the specialist to review rescue medication and cold-exposure plans; do not use cold-water immersion to test whether exposure is now safe.", "source_ids": ["cold-aad", "cold-bad", "cold-sfd"]}
+      ],
+      "claim_support_and_limits": [
+        {"claim": "寒冷严重反应的救援处方评估", "support": ["cold-aad: treated", "cold-sfd: Emergency Treatment"], "limit": "适用于既往严重或口咽/喉症状，非所有受冷者统一处方。"},
+        {"claim": "冷水风险及手术前告知", "support": ["cold-bad: Cold urticaria", "cold-sfd: In Case of Surgery"], "limit": "两源共同支持术前告知；冷水具体风险主要由 BAD 支持，不把保温细节当成双源已全部核验。"}
+      ],
+      "unresolved_differences": ["BAD 建议避免冷水游泳；AAD 提到抗组胺可帮助儿童池中活动。对既往全身严重反应不能从皮肤症状改善推导游泳安全，保留专科评估条件。", "无本地批准、孕期剂量、统一安全水温或复发概率证据；不新增这些主张。"],
+      "minimum_edit": "在现有 causes_risks/red_flags/diagnosis/diet/daily_care/prevention 中各补必要短句，共享其他维度而不复制整篇；更新两种语言和逐主张来源后，重新独立审查并以最终正文 hash 重做 4A84.31 映射。"
+    },
+    {
+      "code": "4A84.6",
+      "title": {"zh-CN": "继发于肥大细胞疾病的全身过敏反应", "en": "Anaphylaxis secondary to mast cell disorder"},
+      "release": "2026-01",
+      "official_row": 2815,
+      "foundation_uri": "http://id.who.int/icd/entity/2023405973",
+      "priority": "P0",
+      "current_status": "partial",
+      "existing_ids": ["anaphylaxis"],
+      "decision": "merge_into_existing",
+      "rationale": "文章已提风险与检查，缺已知疾病患者的复发/预防路径；补该路径而不把所有肥大细胞疾病本身宣称覆盖。",
+      "source_ids": ["mast-ascia", "mast-jtf2023", "shared-aaaai-public"],
+      "dimension_gaps": {
+        "summary": "补已知肥大细胞疾病背景下的系统发作；疾病诊断和某次严重过敏不等同。",
+        "causes_risks": "不只写风险词；说明可能有已知触发，也可能无明确诱因，个人史决定避让。",
+        "red_flags": "突出突发低血压/晕厥可缺少明显皮肤表现；复用即时救援。",
+        "care": "增加既往已确诊者也需每次识别急症；稳定后由过敏专科与原疾病团队协调。",
+        "diagnosis": "现有急性/基线检测可复用；明确单个类胰蛋白酶值不能确诊或排除克隆性疾病。",
+        "differentials": "区分系统性肥大细胞增多症、MCAS、HAT 与普通慢性非特异症状；不列为互换诊断。",
+        "treatment": "已知疾病不改变急救优先；有虫毒严重反应者增加专科 VIT 评估分支。",
+        "medications": "复用肾上腺素急救；维持药和疾病靶向药不作急救替代；特殊药批准/剂量暂不扩写。",
+        "diet": "无需新增统一低组胺/广泛忌口表；若确有食物触发沿用食品分支，不能把疾病标签等同食物过敏。",
+        "daily_care": "补随身记录已知疾病及既往反应、个体触发和救援计划，供急救/操作团队读取。",
+        "special_populations": "儿童皮肤型与成人系统型不能共用成人风险数值；妊娠及心脏病沿用已证实急救原则。",
+        "prognosis_followup": "需要定期专科管理；长期 VIT 主张仅限合并虫毒严重反应者并说明建议强度。",
+        "complications": "共用气道/循环并发症；不把原疾病肿瘤预后混入急性严重过敏预后。",
+        "prevention": "补虫蜇预防及操作前沟通；围手术期预处理具体方案尚缺独立专门证据，不能承诺预服药完全预防。"
+      },
+      "action_conditions": [
+        {"zh-CN": "已知有肥大细胞疾病的人若突然晕厥或出现呼吸危险信号，即使没有明显风团，也应按严重过敏急救计划立即行动。", "en": "If a person with a known mast cell disorder suddenly collapses or develops breathing danger signs, act immediately under the anaphylaxis plan even without obvious hives.", "source_ids": ["mast-jtf2023", "shared-aaaai-public"]},
+        {"zh-CN": "如肥大细胞增多症同时有虫蜇严重过敏史，应由专科讨论虫毒免疫治疗及长期安排，不能因一般疗程结束自行停药。", "en": "When mastocytosis coexists with insect-sting anaphylaxis, discuss venom immunotherapy and its duration with the specialist rather than stopping automatically after a usual course.", "source_ids": ["mast-jtf2023"]}
+      ],
+      "claim_support_and_limits": [
+        {"claim": "已知疾病需个体触发管理及专科随访", "support": ["mast-ascia: Q7", "mast-jtf2023: Mast Cell Disorders and Anaphylaxis"], "limit": "机构独立，未证明底层研究独立；不是每名患者同一处方。"},
+        {"claim": "缺乏皮损不能排除；检测不能单值定论", "support": ["mast-jtf2023: recommendations 38–39 and Clinical Presentation"], "limit": "特异表述当前仅有一份完整明确来源，仍需第二权威直接支持。"},
+        {"claim": "合并虫毒严重反应者长期 VIT", "support": ["mast-jtf2023: recommendation 42"], "limit": "条件性建议、低确定性；本准备不把它称为双源完成。"}
+      ],
+      "unresolved_differences": ["ASCIA FAQ 对系统型类胰蛋白酶常升高的简写，与 JTF 不能单独排除的要求不是可互换表述；公众内容保留后者限制。", "JTF 对未发生系统虫蜇反应、仅致敏者的预防性 VIT 未形成共识，不延伸适应证。", "4A84.6 名称比系统性肥大细胞增多症广；MCAS/HAT 有临床叙述，不自动构成每种疾病与该代码的因果归属。", "围手术期处置、无皮损与长期 VIT 的特异主张需补第二份独立权威文件后才可宣称逐主张双源通过。"],
+      "minimum_edit": "扩展已知肥大细胞疾病患者的 red_flags、diagnosis、daily_care、prevention、prognosis_followup 分支；不新增原病肿瘤治疗或 MCAS 自诊标准；待特异缺口补证后独立审查及最终 hash 映射，当前继续 partial。"
+    }
+  ],
+  "mece_boundary": "本准备只选两个命名叶类别；4A84.3Y/3Z、4A84.4/5/Y 继续待编。急救共性在 anaphylaxis 单处维护；寒冷与肥大细胞病背景可临床重叠，不能据此强制患者互斥或重复计算文章；逐叶以真实范围分别审查。",
+  "next_acceptance": ["先补明确标识的单源特异主张或收窄拟写内容。", "保留双语 if/when、既往史、地区、处方/专科条件。", "实施后运行项目内容校验，并独立审核关键行动及最终 hash 范围；编辑审核不等于医生签审。", "准备完成不增加覆盖计数，不进入当前 6 主题发布批次。"]
+}
