@@ -1,0 +1,1919 @@
+{
+  "schema_version": 1,
+  "review_id": "p0-diabetic-ketoacidosis-independent",
+  "reviewer": "/root/retinal_targeted",
+  "author": "/root/mi_icd_scope",
+  "reviewed_at": "2026-10-02",
+  "medical_reviewed": false,
+  "verdict": "accepted",
+  "target": {
+    "path": "drafts/p0-01/diabetic-ketoacidosis.json",
+    "body_canonical_sha256": "f21d6da579b9aad00161ca37c2f5bcac95660fe398b0774abcd03c880434d7a8",
+    "records_canonical_sha256": "62b5f37b600f22dc8b7d7bf284f574bfd3c2ad305271581f93c66b59818ce3ef",
+    "sources_canonical_sha256": "b7ed873da223f846139dbe6d5c50eead22d633b93707f406fb4610526ca751be"
+  },
+  "scope": {
+    "sections": 14,
+    "bilingual_claims": 64,
+    "sources": 22,
+    "method": "One independent review of current claims and actual source passages, followed only by first-use medicine explanation and citation-list repair. No prior DKA independent acceptance assumed."
+  },
+  "actual_source_reads": [
+    {
+      "source_id": "dka-nhs",
+      "url": "https://www.nhs.uk/conditions/diabetic-ketoacidosis/",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Overview/symptoms15–32; ketone/action37–67; treatment70–79; prevention94–109",
+      "assessment": "UK home ketone escalation and emergency symptoms; insulin continuation even when not eating. Review2023-06-08, stated due2026-06-08 has passed; current advice independently checked, not silently dated as newly revised.",
+      "source_metadata_sha256": "1a6e33ee23ac2d6bc43d2daecbd3bf2a1280a952d48d74d05e8be07ce43314f3"
+    },
+    {
+      "source_id": "dka-cdc",
+      "url": "https://www.cdc.gov/diabetes/about/diabetic-ketoacidosis.html",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Overview/causes24–79; danger83–95; treatment98–103",
+      "assessment": "Illness, insulin deficiency, emergency symptoms and hospital fluid/electrolyte/insulin treatment; dated2024-05-15.",
+      "source_metadata_sha256": "d07da9fc93a5de545c765e62db56663f2f44255b7c93ff421fcb89ed8a1fd46f"
+    },
+    {
+      "source_id": "dka-ada-ketones",
+      "url": "https://diabetes.org/living-with-diabetes/managing-ketones",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Ketone action plan18–81",
+      "assessment": "Continue insulin; correction only under an agreed plan, pump inspection, severe symptoms or inability to obtain help warrant emergency care.",
+      "source_metadata_sha256": "42a8c1c784169b4632fa7afee92a3cd5f38e624463f6d5109f0b186a4ae47e9b"
+    },
+    {
+      "source_id": "dka-ada",
+      "url": "https://diabetes.org/living-with-diabetes/dka",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "DKA16–68; ketone action33",
+      "assessment": "US patient threshold is not identical to UK thresholds; actual ADA >=1.6 mmol/L immediate ER advice read. Same ADA family as ketone page and joint consensus, not three independent sources.",
+      "source_metadata_sha256": "654efb7be2701eac683be7a3741634fb58fbd5282222f390317f458c889e3256"
+    },
+    {
+      "source_id": "dka-diabetes-uk",
+      "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/complications/diabetic-ketoacidosis",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Symptoms/diagnosis23–99; treatment101–110; avoiding113–120",
+      "assessment": "UK >3 mmol/L action, blood realtime versus urine lag and professional treatment. Reviewed2024-11-08. Separately written charity material shares clinical upstream and links NHS.",
+      "source_metadata_sha256": "6d88a97e094b912417c6cc312d5fecfee33831b462208d78661b091daee54b00"
+    },
+    {
+      "source_id": "dka-cdc-sick",
+      "url": "https://www.cdc.gov/diabetes/living-with/managing-sick-days.html",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Illness/food35–58; emergency75–84",
+      "assessment": "Sick-day planning and hydration/food examples; blanket continue-pills statement is not imported over the SGLT2-specific exception. No mandatory waiting through severe symptoms.",
+      "source_metadata_sha256": "843ff4f43b3b3e297a466b94c0d262bc9c4cc4afd1fdd9a862c31165aca80fe8"
+    },
+    {
+      "source_id": "dka-mhra",
+      "url": "https://www.gov.uk/drug-safety-update/sglt2-inhibitors-updated-advice-on-the-risk-of-diabetic-ketoacidosis",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Advice73–78; reports85–93; risk factors",
+      "assessment": "Regulator2016-04-18: suspected/confirmed DKA requires immediate SGLT2 withdrawal; no restart unless another cause is identified/resolved. Named agents, modest glucose and dehydration/fasting risks. EMA shared upstream disclosed; not counted as separate EMA evidence.",
+      "source_metadata_sha256": "69c10e410bb85378104b26665abad4828dd948cebe560795d9aa700be300599b"
+    },
+    {
+      "source_id": "dka-rch",
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Diabetic_Ketoacidosis/",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Investigations145–148; monitoring/fluids173–210; insulin/glucose/potassium287–297; resolution337–348; cerebral injury362–392; infection423–427; pediatric resources444–462",
+      "assessment": "Original pediatric guideline, updatedJuly2025, actually read these passages. Clinical cerebral injury distinguished from frequent subclinical findings; child-specific care and warning scope retained. ISPAD/PECARN shared upstream, no dose algorithm imported.",
+      "source_metadata_sha256": "5beddef900da68d77fe7045e2ae2f33ae4b5c2b396b82827351766d596beba9a"
+    },
+    {
+      "source_id": "dka-consensus",
+      "url": "https://link.springer.com/article/10.1007/s00125-024-06183-8",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "article_retrieved",
+      "locator": "Original publisher HTML sections1,3,4,7; original publisher PDF printed1459 risk; Table3 printed1469/PDFp15; Table4 printed1470/PDFp16",
+      "assessment": "Joint2024 ADA/EASD/JBDS/AACE/DTS consensus. Actual HTML plus original PDF tables read, not blocked PMC mirror. Diagnosis, ketone versus urine resolution, hypokalemia/hypoglycemia, neurologic change, SGLT2 stop/admission and no routine restart, pregnancy and kidney/heart volume caution. One consensus authorship group, not five independent guidelines.",
+      "source_metadata_sha256": "18437b68ca2b039541a5aa5f1ff3be325f98dcc1a5f6425f1730fb0f07c5fd46"
+    },
+    {
+      "source_id": "dka-mayo-symptoms",
+      "url": "https://www.mayoclinic.org/diseases-conditions/diabetic-ketoacidosis/symptoms-causes/syc-20371551",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Symptoms/when to seek help269–311; causes328–334; complications352–356; prevention",
+      "assessment": "Reviewed2025-07-25: symptoms, insulin/pump problems, triggers, low potassium and child cerebral edema. Supports selected general risks alongside consensus/RCH.",
+      "source_metadata_sha256": "20a059ee7e07b060d359ea9c74e91589a3ebf00f69fe0c7655bdf0cb9fc45dcc"
+    },
+    {
+      "source_id": "dka-mayo-treatment",
+      "url": "https://www.mayoclinic.org/diseases-conditions/diabetic-ketoacidosis/diagnosis-treatment/drc-20371555",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Diagnosis270–289; treatment291–294; preparing/worsening300–342",
+      "assessment": "Blood ketones/acidity, ECG, fluids/electrolytes/insulin and bringing history. Shares CDC and clinical reference upstream but separately written Mayo patient material; not independent research.",
+      "source_metadata_sha256": "115d589bc4cce6c08584eb38eef9f049369d597185394341d11c65ea38383e6e"
+    },
+    {
+      "source_id": "dka-merck",
+      "url": "https://www.merckmanuals.com/professional/endocrine-and-metabolic-disorders/diabetes-mellitus-and-hypoglycemia/acute-complications-of-diabetes-mellitus",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Risk/pathophysiology81–98; diagnosis117–131; treatment174–191; prognosis206",
+      "assessment": "Current acute diabetes complications page reviewedDec2025/modifiedMay2026. Pregnancy/SGLT2 euglycemia, monitored treatment, urine lag and cardiac fluid caution. Older diagnostic cutoffs, urine-based resolution wording and unrelated brain-steroid treatment not adopted. ADA/JBDS/ISPAD citations share upstream.",
+      "source_metadata_sha256": "6b6660ae7016ae9622ba39fdb5b6f5cd2c28ef946b0d1cd09a2dcffff7961247"
+    },
+    {
+      "source_id": "dka-diabetes-uk-ketones",
+      "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/ketones-and-diabetes",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Ketones27–95, especially testing67",
+      "assessment": "Explains fasting/low-carbohydrate ketosis versus DKA requiring clinical assessment; blood and urine testing. No extra independent count from same Diabetes UK family.",
+      "source_metadata_sha256": "ff68f435fec52f095bee6b01df4bf7a542d35be4ad39fbef756bfdca9e9381de"
+    },
+    {
+      "source_id": "dka-duk-sick-food",
+      "url": "https://www.diabetes.org.uk/living-with-diabetes/eating/managing-other-medical-conditions/coughs-colds-diabetes",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Food and illness26–36",
+      "assessment": "Practical carbohydrate/food support, individualized plan. Blanket medication continuation and drinking despite inability to retain fluid are not adopted over stronger emergency/SGLT2 statements.",
+      "source_metadata_sha256": "46367cd12e536bb16963a30b6ae33abf112e7fe315640eae9961baf7337d15bd"
+    },
+    {
+      "source_id": "dka-chelwest-pump",
+      "url": "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/medicine-services/troubleshooting-continuous-subcutaneous-insulin-infusion-csii",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Pump troubleshooting29–77",
+      "assessment": "Local pump backup, set/site inspection, persistence/vomiting escalation. No dose chart or universal never-stop-device instruction exported.",
+      "source_metadata_sha256": "a0ef9fa7e7c3c7fcba7346a8a975d53d141477a3bb1f4d12f8d5f390ffb26139"
+    },
+    {
+      "source_id": "dka-cuh-pump",
+      "url": "https://www.cuh.nhs.uk/patient-information/tandem-tslim-x2-insulin-pump-handbook/",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Backup323–337; illness/pump failure817–873; travel/identification1022–1077",
+      "assessment": "Original device handbook approved2026-05-06, version2, document107308. General backup and identification arrangements only; model-specific doses and flowcharts not generalized.",
+      "source_metadata_sha256": "a75c0075ee6c3479cf544aae2ebc35bba8bdc4159b085c57e5adec032f3f826c"
+    },
+    {
+      "source_id": "dka-niddk",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Managing diabetes187–263, especially emotional help189, cost193–194, records207, low glucose225, plans251 and team260",
+      "assessment": "Ordinary practical/psychosocial support and individualized planning. Does not supply a quantified DKA reduction effect.",
+      "source_metadata_sha256": "9d668f09c35b3b3da789aa1134252430f61fc03a47d99d5991f6769c68b94536"
+    },
+    {
+      "source_id": "dka-nice-pregnancy",
+      "url": "https://www.nice.org.uk/guidance/ng3/chapter/recommendations",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "search_text_retrieved",
+      "locator": "Official original NG3 PDF indexed recommendations1.3.21–1.3.24",
+      "assessment": "Actual official text read: pregnancy ketones, urgent advice, suspected DKA admission with joint obstetric/medical care. Direct recommendations403; no full-page attestation. Other low-risk advance-contact planning remains bounded.",
+      "source_metadata_sha256": "be1b2d87b75140a45b56e506fee580f26cd6ba4568acede7ca6260e59705a78c"
+    },
+    {
+      "source_id": "dka-nice-child",
+      "url": "https://www.nice.org.uk/guidance/ng18/ifp/chapter/High-blood-glucose-hyperglycaemia",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "search_text_retrieved",
+      "locator": "Original NG18 patient page: Finding out whether you have DKA; treatment, complications and education; professional1.4.1–1.4.7",
+      "assessment": "Official indexed original actually read, direct403. Pediatric hospital diagnosis/treatment and education; patient page date2015-08-26 kept distinct from later professional guideline update.",
+      "source_metadata_sha256": "9daa95ec6020fe38b1786482050693ba1199347f09251e4763dec6a7925525e8"
+    },
+    {
+      "source_id": "dka-renal-review",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8070071/",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "search_text_retrieved",
+      "locator": "Official PMC original indexed Management in end-stage kidney disease and Conclusion",
+      "assessment": "Actual relevant original paragraphs read; directCAPTCHA not counted as full retrieval. Oman Medical Journal narrative review2021-03-31, DOI10.5001/omj.2021.16. Low urine output limits aggressive routine hydration; individualized volume management, not a trial or dose protocol.",
+      "source_metadata_sha256": "abd74c56b43ca04aa95f01e458747900257427494a1a8cf90ad7ba0e53da4cf8"
+    },
+    {
+      "source_id": "dka-em-text",
+      "url": "https://accessworldmed.mhmedical.com/content.aspx?bookid=3367&sectionid=281696618",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "search_text_retrieved",
+      "locator": "Original publisher indexed DIABETIC KETOACIDOSIS and CAVEATS",
+      "assessment": "Actual visible original text: abdominal pain persisting after acidosis resolves needs another-cause investigation; older/cardiac fluid overload; pregnancy/SGLT2 euglycemia. Full chapter gated, no unseen management attestation. Older thresholds and unrelated broad fever/sepsis wording not adopted.",
+      "source_metadata_sha256": "39e061df727622dad34ba507ed9b245b41bc218ce442753265eb2caabd709b0a"
+    },
+    {
+      "source_id": "dka-nhs-scotland-sglt2",
+      "url": "https://mydiabetesmyway.scot.nhs.uk/resources/internal/what-are-sglt2-inhibitors/",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "search_text_retrieved",
+      "locator": "Original indexed introduction; How do SGLT2 inhibitors work?",
+      "assessment": "Dated09-01-2026. Actual explanation that reduced renal glucose reabsorption increases urinary glucose loss and lowers blood glucose; bilingual first-use clarification accepted. This page is used only for mechanism, not its broad restart, safety or benefit statements.",
+      "source_metadata_sha256": "c70a1d00a2a6dfe312fd66f2b15ddb4e98370d5a2aef6f3cdc931a25b283f628"
+    }
+  ],
+  "accepted_source_ids": [
+    "dka-ada",
+    "dka-ada-ketones",
+    "dka-cdc",
+    "dka-cdc-sick",
+    "dka-chelwest-pump",
+    "dka-consensus",
+    "dka-cuh-pump",
+    "dka-diabetes-uk",
+    "dka-diabetes-uk-ketones",
+    "dka-duk-sick-food",
+    "dka-em-text",
+    "dka-mayo-symptoms",
+    "dka-mayo-treatment",
+    "dka-merck",
+    "dka-mhra",
+    "dka-nhs",
+    "dka-nhs-scotland-sglt2",
+    "dka-nice-child",
+    "dka-nice-pregnancy",
+    "dka-niddk",
+    "dka-rch",
+    "dka-renal-review"
+  ],
+  "findings": [
+    {
+      "id": "P0-DKA01",
+      "status": "resolved",
+      "claims": [
+        "causes_risks-3"
+      ],
+      "resolution": "First-use SGLT2 class now explains urinary glucose removal in both languages, with actual-read NHS Scotland mechanism support only."
+    },
+    {
+      "id": "P0-DKA02",
+      "status": "resolved",
+      "claims": [
+        "medications-3"
+      ],
+      "resolution": "Author repair before independent review correctly states suspected DKA stopping and urgent evaluation, with no self-restart. MHRA wording and independent joint consensus scope read."
+    },
+    {
+      "id": "P0-DKA03",
+      "status": "resolved",
+      "claims": [
+        "complications-3"
+      ],
+      "resolution": "Clinically significant cerebral edema is explicitly differentiated from subclinical swelling; adult consensus and pediatric RCH scopes read."
+    },
+    {
+      "id": "P0-DKA04",
+      "status": "resolved",
+      "resolution": "New mechanism source included in the condition top-level source list; this is citation closure only, with no new medical claim."
+    }
+  ],
+  "sections": [
+    {
+      "section": "summary",
+      "verdict": "accepted",
+      "assessment": "Insulin deficiency, ketones and acidosis distinguished; type1/type2 and first-presentation scope correct; coma is a possible severe manifestation, not necessary for emergency care.",
+      "claims": [
+        "summary-0",
+        "summary-1",
+        "summary-2",
+        "summary-3"
+      ]
+    },
+    {
+      "section": "causes_risks",
+      "verdict": "accepted",
+      "assessment": "Illness/insulin omission/pump interruption and SGLT2 risk retain source boundaries. First-use urinary-glucose mechanism now understandable and precisely sourced; lower glucose does not exclude DKA.",
+      "claims": [
+        "causes_risks-0",
+        "causes_risks-1",
+        "causes_risks-2",
+        "causes_risks-3",
+        "causes_risks-4"
+      ]
+    },
+    {
+      "section": "red_flags",
+      "verdict": "accepted",
+      "assessment": "Dangerous symptoms require prompt emergency evaluation; neither home testing nor very high glucose is prerequisite. Pregnancy/children and dehydration alter urgency; no home dose algorithm.",
+      "claims": [
+        "red_flags-0",
+        "red_flags-1",
+        "red_flags-2",
+        "red_flags-3"
+      ]
+    },
+    {
+      "section": "care",
+      "verdict": "accepted",
+      "assessment": "NHS/Diabetes UK >3 mmol/L is explicitly UK guidance, not diagnosis or a universal threshold. US ADA differs; early symptoms and agreed lower escalation thresholds override waiting. Cannot contact team/worsening requires emergency pathway.",
+      "claims": [
+        "care-0",
+        "care-1",
+        "care-2",
+        "care-3",
+        "care-4"
+      ]
+    },
+    {
+      "section": "diagnosis",
+      "verdict": "accepted",
+      "assessment": "Clinical blood acidity/ketones and electrolyte evaluation distinguished from glucose or home urine result alone; cause investigation and cautious recovery interpretation preserved.",
+      "claims": [
+        "diagnosis-0",
+        "diagnosis-1",
+        "diagnosis-2",
+        "diagnosis-3",
+        "diagnosis-4"
+      ]
+    },
+    {
+      "section": "differentials",
+      "verdict": "accepted",
+      "assessment": "Ordinary fasting ketosis, HHS, low glucose and other illness differentiated without encouraging self-exclusion. Persistent abdominal pain after acidosis resolves has original publisher and consensus/Merck context.",
+      "claims": [
+        "differentials-0",
+        "differentials-1",
+        "differentials-2",
+        "differentials-3",
+        "differentials-4"
+      ]
+    },
+    {
+      "section": "treatment",
+      "verdict": "accepted",
+      "assessment": "Monitored hospital insulin/fluids/electrolytes, trigger treatment and dextrose while clearing ketones explained; outcome benefit not guaranteed or quantified beyond source. Children and comorbid volume limits preserved.",
+      "claims": [
+        "treatment-0",
+        "treatment-1",
+        "treatment-2",
+        "treatment-3"
+      ]
+    },
+    {
+      "section": "medications",
+      "verdict": "accepted",
+      "assessment": "Insulin/potassium/dextrose roles and monitoring risks accurately paired. MHRA suspected-DKA stopping advice plus independently written consensus admission/no-routine-restart support no self-restart; no ordinary universal stop-insulin instruction.",
+      "claims": [
+        "medications-0",
+        "medications-1",
+        "medications-2",
+        "medications-3",
+        "medications-4"
+      ]
+    },
+    {
+      "section": "diet",
+      "verdict": "accepted",
+      "assessment": "Hydration and food choices tied to ability to retain intake and personal plan; vomiting/inability to drink invokes urgent care rather than prolonged home attempts. SGLT2 fasting/low-carb risk preserved, no universal food ban.",
+      "claims": [
+        "diet-0",
+        "diet-1",
+        "diet-2",
+        "diet-3"
+      ]
+    },
+    {
+      "section": "daily_care",
+      "verdict": "accepted",
+      "assessment": "Glucose/ketone recording, supply dates, pump backup and identification are ordinary practical organization. Device-specific doses are not generalized, and persistent signs require escalation.",
+      "claims": [
+        "daily_care-0",
+        "daily_care-1",
+        "daily_care-2",
+        "daily_care-3",
+        "daily_care-4"
+      ]
+    },
+    {
+      "section": "special_populations",
+      "verdict": "accepted",
+      "assessment": "Children, pregnancy, older/cardiac and advanced renal patients have explicitly different monitoring/volume concerns. NICE/RCH and adult consensus/renal review supply population-specific scope; no adult rates imported into children.",
+      "claims": [
+        "special_populations-0",
+        "special_populations-1",
+        "special_populations-2",
+        "special_populations-3",
+        "special_populations-4"
+      ]
+    },
+    {
+      "section": "prognosis_followup",
+      "verdict": "accepted",
+      "assessment": "Recovery depends on resolving acidosis/ketones and triggers rather than glucose alone. Recurrence prevention, access costs and psychological support are practical follow-up without a fabricated benefit percentage.",
+      "claims": [
+        "prognosis_followup-0",
+        "prognosis_followup-1",
+        "prognosis_followup-2",
+        "prognosis_followup-3"
+      ]
+    },
+    {
+      "section": "complications",
+      "verdict": "accepted",
+      "assessment": "Dehydration, electrolyte shifts, hypoglycemia and neurologic decline retain immediate-care implications. Clinically significant cerebral edema is distinguished from subclinical swelling; no claim that all cerebral swelling is rare in children.",
+      "claims": [
+        "complications-0",
+        "complications-1",
+        "complications-2",
+        "complications-3"
+      ]
+    },
+    {
+      "section": "prevention",
+      "verdict": "accepted",
+      "assessment": "Sick-day plans, prescribed insulin continuation, ketone access and pump backup remain component-specific. Broad sick-day pill statements do not override SGLT2 exceptions; practical plans are not represented as guaranteed prevention.",
+      "claims": [
+        "prevention-0",
+        "prevention-1",
+        "prevention-2",
+        "prevention-3",
+        "prevention-4"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "summary-0",
+      "section": "summary",
+      "section_content_sha256": "9e7d41901d12680191aa14512253b8f4aae3bd2ce068dcc86ee7389bacf2c275",
+      "bilingual_claim_sha256": "86c6ae50247cb5feabbb88605805b2beaf1930bcb1827dc35e4c68401c184299",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-cdc",
+          "locator": "Overview",
+          "assessment": "Insulin insufficiency, fat breakdown and ketone acids."
+        },
+        {
+          "source_id": "dka-consensus",
+          "locator": "Introduction; section 2 Pathogenesis",
+          "assessment": "Insulin deficit and ketogenesis."
+        }
+      ]
+    },
+    {
+      "claim_id": "summary-1",
+      "section": "summary",
+      "section_content_sha256": "9e7d41901d12680191aa14512253b8f4aae3bd2ce068dcc86ee7389bacf2c275",
+      "bilingual_claim_sha256": "a0733ee41d5ff3a3d6baa9916a75b9a354e6b0613430019e8fdbc40af299130d",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Sections 2 and 3 Clinical presentation",
+          "assessment": "Acidosis, osmotic fluid/mineral losses and progression."
+        },
+        {
+          "source_id": "dka-mayo-symptoms",
+          "locator": "Symptoms; Complications",
+          "assessment": "Thirst, vomiting, abdominal pain and confusion."
+        }
+      ]
+    },
+    {
+      "claim_id": "summary-2",
+      "section": "summary",
+      "section_content_sha256": "9e7d41901d12680191aa14512253b8f4aae3bd2ce068dcc86ee7389bacf2c275",
+      "bilingual_claim_sha256": "0f9998ffe38ff1578da550e444f15fce5e20cdf549ce832db5538c36cf6bc598",
+      "kind": "risk",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-cdc",
+          "locator": "Overview; Signs; Testing",
+          "assessment": "Type 1 common/type 2 possible; first presentation; urgent care."
+        },
+        {
+          "source_id": "dka-consensus",
+          "locator": "Introduction paragraphs 3–5",
+          "assessment": "All diabetes types affected; early treatment essential."
+        },
+        {
+          "source_id": "dka-nhs",
+          "locator": "Symptoms; Immediate action",
+          "assessment": "Undiagnosed children and urgent assessment."
+        }
+      ]
+    },
+    {
+      "claim_id": "summary-3",
+      "section": "summary",
+      "section_content_sha256": "9e7d41901d12680191aa14512253b8f4aae3bd2ce068dcc86ee7389bacf2c275",
+      "bilingual_claim_sha256": "abd44b047242546fc118062835cd7b8aac8b2ba44f09bdb0d8aabd6c2f3fe07e",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 3 Diagnostic criteria",
+          "assessment": "Three components; glucose alone not diagnosis. Topic linkage editorial."
+        },
+        {
+          "source_id": "dka-mayo-treatment",
+          "locator": "Diagnosis: Blood tests",
+          "assessment": "Glucose, ketones and acidity."
+        }
+      ]
+    },
+    {
+      "claim_id": "causes_risks-0",
+      "section": "causes_risks",
+      "section_content_sha256": "ada1e5fcb391ed062b7d3fe76bc75642cfb5756b3978dc34b5660a908dccad38",
+      "bilingual_claim_sha256": "4ffaaa54c2afb1a2de36f9f6f8872bff04f7cd25d7fe06fbef8ddf085c410d17",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-mayo-symptoms",
+          "locator": "Causes",
+          "assessment": "Insulin deficit and precipitating illness/interruption."
+        }
+      ]
+    },
+    {
+      "claim_id": "causes_risks-1",
+      "section": "causes_risks",
+      "section_content_sha256": "ada1e5fcb391ed062b7d3fe76bc75642cfb5756b3978dc34b5660a908dccad38",
+      "bilingual_claim_sha256": "c9f1a32185070965e7079f59db320c439438600f7918fb0d42e05b0ea6cd9381",
+      "kind": "risk",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-mayo-symptoms",
+          "locator": "Causes: An illness",
+          "assessment": "Stress hormones oppose insulin."
+        },
+        {
+          "source_id": "dka-cdc-sick",
+          "locator": "If you get sick",
+          "assessment": "Illness affects intake, glucose and insulin needs."
+        }
+      ]
+    },
+    {
+      "claim_id": "causes_risks-2",
+      "section": "causes_risks",
+      "section_content_sha256": "ada1e5fcb391ed062b7d3fe76bc75642cfb5756b3978dc34b5660a908dccad38",
+      "bilingual_claim_sha256": "dd00e0192d24c7d53aed31ea2ad8c3396839ded798e477830f5e24d25255a881",
+      "kind": "risk",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-cdc",
+          "locator": "Causes items 1–2",
+          "assessment": "Illness, missed insulin, clogged pump/wrong dose."
+        },
+        {
+          "source_id": "dka-cuh-pump",
+          "locator": "Sick day rules and DKA; Key points",
+          "assessment": "Illness and pump failure both causes; trained device plan."
+        }
+      ]
+    },
+    {
+      "claim_id": "causes_risks-3",
+      "section": "causes_risks",
+      "section_content_sha256": "ada1e5fcb391ed062b7d3fe76bc75642cfb5756b3978dc34b5660a908dccad38",
+      "bilingual_claim_sha256": "353a3b84948adaa21f2d2f03b985a40349b2b4b24ebef181a1cd487961542a1d",
+      "kind": "risk",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-mhra",
+          "locator": "Advice; Reports; Risk factors",
+          "assessment": "Named agents, atypical glucose, restricted intake/dehydration risk discussion."
+        },
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 1 Risk factors; table 4 SGLT2",
+          "assessment": "SGLT2 fasting/dehydration/euglycemia."
+        },
+        {
+          "source_id": "dka-nhs-scotland-sglt2",
+          "locator": "Introduction and How do SGLT2 inhibitors work?",
+          "assessment": "Plain-language definition of the medicine class and urinary-glucose mechanism only. DKA risk, euglycaemia and planning are separately supported by MHRA and the consensus."
+        }
+      ]
+    },
+    {
+      "claim_id": "causes_risks-4",
+      "section": "causes_risks",
+      "section_content_sha256": "ada1e5fcb391ed062b7d3fe76bc75642cfb5756b3978dc34b5660a908dccad38",
+      "bilingual_claim_sha256": "6c2fe24925ccc28015a367e904da8d1d4218ee7370416047bf5721f1ceda4e43",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 7 mental health, disadvantage and supplies",
+          "assessment": "Psychosocial/access barriers."
+        },
+        {
+          "source_id": "dka-niddk",
+          "locator": "Mental health; Medicines; Care team",
+          "assessment": "Support cost/stress/practical needs."
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-0",
+      "section": "red_flags",
+      "section_content_sha256": "1671b772cdc536a84f4bb8be01d72400c999a5844eb7e6ad0b4c3486f08f3adb",
+      "bilingual_claim_sha256": "b4bda6b4ead62a43e18abc8b5b50b11a003c9427613e9e4474faac4a4250fa65",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-cdc",
+          "locator": "Testing: emergency signs",
+          "assessment": "Vomiting unable to retain fluids, breathing difficulty, multiple DKA signs emergency."
+        },
+        {
+          "source_id": "dka-ada-ketones",
+          "locator": "What to Do If Ketones High",
+          "assessment": "Trouble drinking, confusion, heavy breathing and unavailable team warrant ER."
+        },
+        {
+          "source_id": "dka-cdc-sick",
+          "locator": "When to go to ER, final paragraph",
+          "assessment": "Impaired thinking requires help calling or transport."
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-1",
+      "section": "red_flags",
+      "section_content_sha256": "1671b772cdc536a84f4bb8be01d72400c999a5844eb7e6ad0b4c3486f08f3adb",
+      "bilingual_claim_sha256": "76d90d019e4d50f5f180ede71bdbeba6c327c9864b6834ac41e901e290587306",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-nhs",
+          "locator": "Immediate action; Symptoms",
+          "assessment": "No prior diagnosis still emergency, particularly children."
+        },
+        {
+          "source_id": "dka-diabetes-uk",
+          "locator": "Symptoms; Blood testing",
+          "assessment": "Undiagnosed/no equipment and DKA symptoms need immediate help."
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-2",
+      "section": "red_flags",
+      "section_content_sha256": "1671b772cdc536a84f4bb8be01d72400c999a5844eb7e6ad0b4c3486f08f3adb",
+      "bilingual_claim_sha256": "bab04805a43c925d6c12b583157a1e19c195f5e7293ffb654878aa58412a9898",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-ada-ketones",
+          "locator": "What to Do If Ketones High",
+          "assessment": "Worse ketones, severe symptoms or unreachable doctor ER."
+        },
+        {
+          "source_id": "dka-mayo-treatment",
+          "locator": "Preparing for appointment",
+          "assessment": "Worse/severe symptoms or unreachable clinician emergency number."
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-3",
+      "section": "red_flags",
+      "section_content_sha256": "1671b772cdc536a84f4bb8be01d72400c999a5844eb7e6ad0b4c3486f08f3adb",
+      "bilingual_claim_sha256": "7ca04a8a7eb38749c80adb5643021043022006a596d0e2ff383842528d315eb5",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-mhra",
+          "locator": "Opening; Advice; Reports",
+          "assessment": "Test despite near-normal glucose, immediate help for symptoms."
+        },
+        {
+          "source_id": "dka-merck",
+          "locator": "DKA overview pregnancy/SGLT2; Symptoms",
+          "assessment": "Euglycemic DKA and severe progression."
+        }
+      ]
+    },
+    {
+      "claim_id": "care-0",
+      "section": "care",
+      "section_content_sha256": "c86a6e0dbfc70c6e80882e3c63dbede48a08605e0b70fa14deff7c3c7d458006",
+      "bilingual_claim_sha256": "d9a29ef0f7d5780af2b438198d71779d9b7ffcb5d1d7dc5f908da36c6fe8d9d3",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-nhs",
+          "locator": "Checking; Immediate action; Urgent advice; Do",
+          "assessment": "Symptoms/ketones/treatment response determine urgency."
+        },
+        {
+          "source_id": "dka-ada-ketones",
+          "locator": "What to Do If Ketones High",
+          "assessment": "Individual plan and severe-symptom escalation."
+        }
+      ]
+    },
+    {
+      "claim_id": "care-1",
+      "section": "care",
+      "section_content_sha256": "c86a6e0dbfc70c6e80882e3c63dbede48a08605e0b70fa14deff7c3c7d458006",
+      "bilingual_claim_sha256": "37911c93c6d25b78a4b9fadcc8db3585acf6edf66aa27dd4531e5d33c25bed0c",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-nhs",
+          "locator": "Urgent advice; Immediate action",
+          "assessment": "High glucose despite insulin or ketones prompt contact; danger signs emergency."
+        },
+        {
+          "source_id": "dka-mayo-symptoms",
+          "locator": "When to see doctor",
+          "assessment": "Above target despite home treatment and ketones require contact."
+        }
+      ]
+    },
+    {
+      "claim_id": "care-2",
+      "section": "care",
+      "section_content_sha256": "c86a6e0dbfc70c6e80882e3c63dbede48a08605e0b70fa14deff7c3c7d458006",
+      "bilingual_claim_sha256": "e0ddffb154913618bd64ab9e1f97185beedbb6eb1b0e6967095b5c478fca3892",
+      "kind": "threshold",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-nhs",
+          "locator": "Checking; Important; Urgent advice",
+          "assessment": "UK >3 mmol/L emergency; lower results also warrant advice, guide not universal."
+        },
+        {
+          "source_id": "dka-diabetes-uk",
+          "locator": "Checking ketones: Blood testing",
+          "assessment": "UK >3 mmol/L immediate help; individual levels."
+        }
+      ]
+    },
+    {
+      "claim_id": "care-3",
+      "section": "care",
+      "section_content_sha256": "c86a6e0dbfc70c6e80882e3c63dbede48a08605e0b70fa14deff7c3c7d458006",
+      "bilingual_claim_sha256": "375276039fe0252b5a32917c49fa544722df185742525cc5b2d4c5cacd832dd8",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-nhs",
+          "locator": "Checking; Important",
+          "assessment": "UK triage guide and individual thresholds."
+        },
+        {
+          "source_id": "dka-ada",
+          "locator": "What You Need to Know",
+          "assessment": "US ADA >=1.6 mmol/L emergency differs from NHS."
+        },
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 3 Diagnostic criteria",
+          "assessment": "Hospital diagnosis additionally requires acidosis."
+        }
+      ]
+    },
+    {
+      "claim_id": "care-4",
+      "section": "care",
+      "section_content_sha256": "c86a6e0dbfc70c6e80882e3c63dbede48a08605e0b70fa14deff7c3c7d458006",
+      "bilingual_claim_sha256": "5a5a81229deae86289121c910c8f41fca629f34516ccf5038fe56b7949f82a2f",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-nhs",
+          "locator": "Treatment; Immediate action",
+          "assessment": "Discharge cause/prevention discussion and renewed danger symptoms urgent."
+        },
+        {
+          "source_id": "dka-diabetes-uk",
+          "locator": "Treatment; Avoiding DKA",
+          "assessment": "Recovery and sick-day follow-up; acute symptoms urgent."
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-0",
+      "section": "diagnosis",
+      "section_content_sha256": "1507256b7a231e14d855e486a42703f6f9300feb482ae468f96f4323b6f29ae2",
+      "bilingual_claim_sha256": "045665382f3d4a194db38b5f9548c0b13c8e4c01ec455ccec11b3236c385a92a",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 3 Diagnostic criteria",
+          "assessment": "Diabetes/elevated glucose plus ketones and acidosis."
+        },
+        {
+          "source_id": "dka-mayo-treatment",
+          "locator": "Diagnosis: Blood tests",
+          "assessment": "Glucose/ketones/acidity."
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-1",
+      "section": "diagnosis",
+      "section_content_sha256": "1507256b7a231e14d855e486a42703f6f9300feb482ae468f96f4323b6f29ae2",
+      "bilingual_claim_sha256": "39dc9795e694c20ee8bcfe00153c4cdc9845a38d9f4fcb4dcb78ab0a63941a1c",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 1 Risk factors; Section 3 Clinical presentation",
+          "assessment": "Insulin/illness/drug triggers, vital signs, awareness/hydration."
+        },
+        {
+          "source_id": "dka-mayo-treatment",
+          "locator": "Preparing: symptom/cause questions",
+          "assessment": "Intake, illness, treatment and breathing history."
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-2",
+      "section": "diagnosis",
+      "section_content_sha256": "1507256b7a231e14d855e486a42703f6f9300feb482ae468f96f4323b6f29ae2",
+      "bilingual_claim_sha256": "4a840d5211cff93e8afc866d39c84698660306d8f658c33ede73236303a48849",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-mayo-treatment",
+          "locator": "Blood tests; Other tests",
+          "assessment": "Electrolytes, ketones/acidity, ECG and urine."
+        },
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 3 Clinical presentation final paragraphs",
+          "assessment": "Blood gases and ECG for electrolyte effects/ischemia."
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-3",
+      "section": "diagnosis",
+      "section_content_sha256": "1507256b7a231e14d855e486a42703f6f9300feb482ae468f96f4323b6f29ae2",
+      "bilingual_claim_sha256": "1041b9f5ea91f5c6e5d84d999d01659e50fe152374b11c969f182214d2a72093",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 3 ketone measurement; Section 4 Criteria for resolution",
+          "assessment": "Urine early underestimate/later overestimate; not resolution criterion."
+        },
+        {
+          "source_id": "dka-diabetes-uk",
+          "locator": "Blood testing",
+          "assessment": "Blood real time, urine hours behind."
+        },
+        {
+          "source_id": "dka-merck",
+          "locator": "Diagnosis; Correction of hyperglycemia/acidosis",
+          "assessment": "Urine measures acetoacetate; recovery conversion makes clearance lag."
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-4",
+      "section": "diagnosis",
+      "section_content_sha256": "1507256b7a231e14d855e486a42703f6f9300feb482ae468f96f4323b6f29ae2",
+      "bilingual_claim_sha256": "77b3634cbdabc74d7cd83122b6cfa1efe833b8d57d66d4cb97e5c1479c8e2933",
+      "kind": "risk",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 3 euglycemic DKA",
+          "assessment": "Pregnancy/SGLT2 without marked high glucose."
+        },
+        {
+          "source_id": "dka-merck",
+          "locator": "Overview pregnancy/SGLT2; Diagnosis",
+          "assessment": "Both groups can have lower/normal glucose; ketones/acidity relevant."
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-0",
+      "section": "differentials",
+      "section_content_sha256": "e005f355ffde1e5820dd40d748cbd3ecae9213995c848524eddaf39de91fbd88",
+      "bilingual_claim_sha256": "d4b5e44422c1e5c7552f08f1f9c78b09426a1eff51d96800cfc5dacc821468d6",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 3 Clinical presentation and differential",
+          "assessment": "Broad symptoms require differentiation."
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-1",
+      "section": "differentials",
+      "section_content_sha256": "e005f355ffde1e5820dd40d748cbd3ecae9213995c848524eddaf39de91fbd88",
+      "bilingual_claim_sha256": "8213831667b81bc48a3723273ac76789b1bc438e05de4da66b417feece7cb2d2",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Introduction; Section 3 HHS/overlap",
+          "assessment": "Hyperosmolar dehydration and mixed presentations."
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-2",
+      "section": "differentials",
+      "section_content_sha256": "e005f355ffde1e5820dd40d748cbd3ecae9213995c848524eddaf39de91fbd88",
+      "bilingual_claim_sha256": "65d921cdfb1e2e42a7a0d38ed046877cfd626cd68c4baa72e18df72f531e7caf",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-niddk",
+          "locator": "Low blood glucose",
+          "assessment": "Severe low glucose confusion/fainting; different care."
+        },
+        {
+          "source_id": "dka-diabetes-uk",
+          "locator": "Symptoms: diabetic attack paragraph",
+          "assessment": "Phrase can refer to hypoglycemia."
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-3",
+      "section": "differentials",
+      "section_content_sha256": "e005f355ffde1e5820dd40d748cbd3ecae9213995c848524eddaf39de91fbd88",
+      "bilingual_claim_sha256": "1d2507b10b0d3993a95212f1db13b2703751f7ba5d466c42ee84cec5f06e8e7d",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-diabetes-uk-ketones",
+          "locator": "What are ketones; Ketogenic diet",
+          "assessment": "Fasting/low carbohydrate produces ketones; low levels physiological."
+        },
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 3 differential of elevated ketones",
+          "assessment": "Starvation/alcohol/pregnancy ketosis and acid-base/history."
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-4",
+      "section": "differentials",
+      "section_content_sha256": "e005f355ffde1e5820dd40d748cbd3ecae9213995c848524eddaf39de91fbd88",
+      "bilingual_claim_sha256": "fa769eb660a10b2e28e4899314da66c7aeac4c2904d2bbb2dce3e761283f0105",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 3 Clinical presentation: abdominal pain",
+          "assessment": "Further evaluate persistent pain after acidosis/dehydration correction."
+        },
+        {
+          "source_id": "dka-em-text",
+          "locator": "CAVEATS: GI complaints and persistent pain",
+          "assessment": "Explicitly investigate persistent pain after resolution."
+        },
+        {
+          "source_id": "dka-mayo-symptoms",
+          "locator": "Causes: Other things",
+          "assessment": "Pancreatitis trigger; not source for post-resolution rule."
+        }
+      ]
+    },
+    {
+      "claim_id": "treatment-0",
+      "section": "treatment",
+      "section_content_sha256": "a9db3e4fb01de3655488718a51e1d9b00875e5b8e99282d876de8599565b4be6",
+      "bilingual_claim_sha256": "8d9a7dae2d62b1beba57e245797b6f05eae480e2ef096986d24ea0a8c0236fc3",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-cdc",
+          "locator": "Treatment",
+          "assessment": "Fluids/minerals/insulin/trigger treatment."
+        },
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 4 intro; Criteria for resolution",
+          "assessment": "Resolution beyond glucose alone."
+        }
+      ]
+    },
+    {
+      "claim_id": "treatment-1",
+      "section": "treatment",
+      "section_content_sha256": "a9db3e4fb01de3655488718a51e1d9b00875e5b8e99282d876de8599565b4be6",
+      "bilingual_claim_sha256": "1dda19c56168c6b05c644177585a502fcdcc360a56e5707f802853896fb83a62",
+      "kind": "benefit",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 4 Fluid therapy; Insulin; monitoring",
+          "assessment": "Perfusion, ketone suppression, lab/clinical adjustments."
+        },
+        {
+          "source_id": "dka-merck",
+          "locator": "Treatment; Volume repletion; Pathophysiology",
+          "assessment": "Glomerular perfusion, insulin blocks ketogenesis, frequent lab/clinical review."
+        },
+        {
+          "source_id": "dka-rch",
+          "locator": "Supportive measures; Monitoring timeline",
+          "assessment": "Children: awareness, urine/fluid balance and lab monitoring."
+        }
+      ]
+    },
+    {
+      "claim_id": "treatment-2",
+      "section": "treatment",
+      "section_content_sha256": "a9db3e4fb01de3655488718a51e1d9b00875e5b8e99282d876de8599565b4be6",
+      "bilingual_claim_sha256": "a06e2a2c957e0c45c007c21fe4a208df09202f5478684632b863d77a5efb88e7",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 4 Fluid therapy before HHS",
+          "assessment": "Glucose falls first, dextrose allows insulin until ketonemia corrects."
+        },
+        {
+          "source_id": "dka-rch",
+          "locator": "Fluid adjustments Glucose; Insulin Practical points",
+          "assessment": "Adequate insulin to clear ketones while increasing glucose."
+        }
+      ]
+    },
+    {
+      "claim_id": "treatment-3",
+      "section": "treatment",
+      "section_content_sha256": "a9db3e4fb01de3655488718a51e1d9b00875e5b8e99282d876de8599565b4be6",
+      "bilingual_claim_sha256": "e2184114a72de6f29d5930bab994636d061333ab6319ef51ed9b29e040d9b4a4",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 4 level-of-care paragraphs",
+          "assessment": "Severe altered state/critical illness ICU; mild monitored ER/stepdown."
+        },
+        {
+          "source_id": "dka-merck",
+          "locator": "Treatment introduction",
+          "assessment": "Intensive monitoring; milder in stepdown/emergency room."
+        },
+        {
+          "source_id": "dka-rch",
+          "locator": "Consultation/Transfer",
+          "assessment": "Children with coma explicit ICU criterion."
+        }
+      ]
+    },
+    {
+      "claim_id": "medications-0",
+      "section": "medications",
+      "section_content_sha256": "1432955ca240716374c981fbe797e7121c0ff911fc44c923de6e0985fb952e6c",
+      "bilingual_claim_sha256": "aece062a011c7c9a5ec4d9f6d65f08828b35d38d4de25f277e6cf13a79d38a2e",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-mayo-treatment",
+          "locator": "Treatment",
+          "assessment": "Insulin/electrolytes hospital treatment."
+        },
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 4 Insulin/Potassium",
+          "assessment": "Adjust by measurements."
+        }
+      ]
+    },
+    {
+      "claim_id": "medications-1",
+      "section": "medications",
+      "section_content_sha256": "1432955ca240716374c981fbe797e7121c0ff911fc44c923de6e0985fb952e6c",
+      "bilingual_claim_sha256": "257982b0548b150b411ba02f8e8ffeffaca6fcb0c5bb94ee4aadbbff2186572c",
+      "kind": "risk",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-mayo-symptoms",
+          "locator": "Complications: Hypoglycemia/Hypokalemia",
+          "assessment": "Treatment risks and heart/muscle effects."
+        },
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 4 Potassium; table 3",
+          "assessment": "Potassium shifts and monitoring."
+        }
+      ]
+    },
+    {
+      "claim_id": "medications-2",
+      "section": "medications",
+      "section_content_sha256": "1432955ca240716374c981fbe797e7121c0ff911fc44c923de6e0985fb952e6c",
+      "bilingual_claim_sha256": "b7ebd302637a10068826288074851c2af1a9e0726fd7c4e11c8d809b60a4599b",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-cdc",
+          "locator": "Treatment: underlying illness",
+          "assessment": "Antibiotics for infectious trigger, insulin reverses DKA."
+        },
+        {
+          "source_id": "dka-rch",
+          "locator": "Identify and treat precipitating cause",
+          "assessment": "Antibiotics only if appropriate infection."
+        }
+      ]
+    },
+    {
+      "claim_id": "medications-3",
+      "section": "medications",
+      "section_content_sha256": "1432955ca240716374c981fbe797e7121c0ff911fc44c923de6e0985fb952e6c",
+      "bilingual_claim_sha256": "1cbdb0145e73824df81a9f0706e5330962c7a5409f489f31cec6f855e53809ca",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-mhra",
+          "locator": "Advice bullets 1,3,4; Reports",
+          "assessment": "Stop if suspected; no routine restart unless other cause identified/resolved; near-normal glucose."
+        },
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 6 table 4 SGLT2 (PMC mirror)",
+          "assessment": "Stop on admission; post-DKA initiation/continuation not routinely recommended."
+        }
+      ]
+    },
+    {
+      "claim_id": "medications-4",
+      "section": "medications",
+      "section_content_sha256": "1432955ca240716374c981fbe797e7121c0ff911fc44c923de6e0985fb952e6c",
+      "bilingual_claim_sha256": "4c98f4c1c69532c183f872f85858b804d3c282c8e747bf5fd613cc5fb99038ed",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-nhs",
+          "locator": "How to reduce risk: Do/Don’t",
+          "assessment": "Do not stop insulin if not eating; team plan/contact."
+        },
+        {
+          "source_id": "dka-ada-ketones",
+          "locator": "What to Do If Ketones High",
+          "assessment": "Continue as directed; correction only if planned."
+        }
+      ]
+    },
+    {
+      "claim_id": "diet-0",
+      "section": "diet",
+      "section_content_sha256": "9ab25d648ed05ad1f40db6244b695b58427ed4ab0156ca454fb6d520a5713c55",
+      "bilingual_claim_sha256": "d3fee04791c9bdbb81f0ed855b96ed349df68966dcc0ef77d4f5fcdf90ed8a5b",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-cdc",
+          "locator": "Treatment",
+          "assessment": "Confirmed DKA requires medical insulin/fluids/minerals."
+        },
+        {
+          "source_id": "dka-nhs",
+          "locator": "Treatment",
+          "assessment": "Urgent hospital, not food replacement."
+        }
+      ]
+    },
+    {
+      "claim_id": "diet-1",
+      "section": "diet",
+      "section_content_sha256": "9ab25d648ed05ad1f40db6244b695b58427ed4ab0156ca454fb6d520a5713c55",
+      "bilingual_claim_sha256": "a1bc50e4205af2190d23c9fbb9bfa4658142727e6a9218f3a21836142138c2e3",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-cdc-sick",
+          "locator": "Prepare now; If sick; More tips",
+          "assessment": "Carbohydrates, hydration and altered insulin needs; no fixed amount generalized."
+        },
+        {
+          "source_id": "dka-duk-sick-food",
+          "locator": "Eating well; Managing your health",
+          "assessment": "Carbohydrate substitutes and team medication changes, only if can drink safely."
+        }
+      ]
+    },
+    {
+      "claim_id": "diet-2",
+      "section": "diet",
+      "section_content_sha256": "9ab25d648ed05ad1f40db6244b695b58427ed4ab0156ca454fb6d520a5713c55",
+      "bilingual_claim_sha256": "aff03d153f7fa7841af82263b797640ba25de483d56345db7ffb806782fbc819",
+      "kind": "risk",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 1 SGLT2 Risk factors",
+          "assessment": "Very low carbohydrate, fasting and dehydration risk."
+        },
+        {
+          "source_id": "dka-mhra",
+          "locator": "Risk factors",
+          "assessment": "Restricted intake, dehydration and reduced insulin; discuss."
+        },
+        {
+          "source_id": "dka-diabetes-uk-ketones",
+          "locator": "What are ketones; Ketogenic diet",
+          "assessment": "Ordinary low ketosis distinction."
+        }
+      ]
+    },
+    {
+      "claim_id": "diet-3",
+      "section": "diet",
+      "section_content_sha256": "9ab25d648ed05ad1f40db6244b695b58427ed4ab0156ca454fb6d520a5713c55",
+      "bilingual_claim_sha256": "6955f7411b63bccbd8a5ac789e19662ed32820a6b6c0a23db4e2f80399de68c4",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-cdc",
+          "locator": "Testing emergency list",
+          "assessment": "Vomiting unable retain fluids emergency."
+        },
+        {
+          "source_id": "dka-ada-ketones",
+          "locator": "What to Do If Ketones High",
+          "assessment": "Vomiting/trouble drinking emergency."
+        },
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 4 Fluid therapy; table 4 ESKD",
+          "assessment": "Cardiac/renal fluid caution."
+        },
+        {
+          "source_id": "dka-merck",
+          "locator": "Volume repletion",
+          "assessment": "Heart failure/overload slower fluids."
+        },
+        {
+          "source_id": "dka-renal-review",
+          "locator": "Management in end-stage kidney disease",
+          "assessment": "Severe renal disease poor aggressive hydration tolerance."
+        }
+      ]
+    },
+    {
+      "claim_id": "daily_care-0",
+      "section": "daily_care",
+      "section_content_sha256": "d1eca936299bc78c8f05130b1638fef56eae012064adfac2a243acaac836f81c",
+      "bilingual_claim_sha256": "d16566261eb2ed52d1d25e88e4a1202f09b902f78596f6f0378c2905d7761a9c",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-nhs",
+          "locator": "How to reduce risk: Do",
+          "assessment": "Practical plan/contact."
+        },
+        {
+          "source_id": "dka-ada-ketones",
+          "locator": "What to Do If Ketones High",
+          "assessment": "Individual plan."
+        }
+      ]
+    },
+    {
+      "claim_id": "daily_care-1",
+      "section": "daily_care",
+      "section_content_sha256": "d1eca936299bc78c8f05130b1638fef56eae012064adfac2a243acaac836f81c",
+      "bilingual_claim_sha256": "03b4942e84a17fe5ed37372db91fe710d33ecb90f12700b8c8b342f8be0a0699",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-ada",
+          "locator": "What You Need to Know",
+          "assessment": "Unexpired ketone supplies."
+        },
+        {
+          "source_id": "dka-cuh-pump",
+          "locator": "Key points; Out and about; Travel",
+          "assessment": "In-date backup pens/strips and supplies away from home."
+        },
+        {
+          "source_id": "dka-niddk",
+          "locator": "Special situations",
+          "assessment": "Travel/illness planning."
+        }
+      ]
+    },
+    {
+      "claim_id": "daily_care-2",
+      "section": "daily_care",
+      "section_content_sha256": "d1eca936299bc78c8f05130b1638fef56eae012064adfac2a243acaac836f81c",
+      "bilingual_claim_sha256": "76a369e19fe4eb78b2a1931e68ad865e5143f89ba7d33ad9ff3c79c9bc1cf25c",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-niddk",
+          "locator": "Home glucose: recording paragraph",
+          "assessment": "Practical times/results/intake record to share, not validated score."
+        },
+        {
+          "source_id": "dka-mayo-treatment",
+          "locator": "Preparing for appointment",
+          "assessment": "Timeline, glucose/ketones, intake and treatment questions."
+        },
+        {
+          "source_id": "dka-ada-ketones",
+          "locator": "What to Do If Ketones High",
+          "assessment": "Repeat according to individual plan."
+        }
+      ]
+    },
+    {
+      "claim_id": "daily_care-3",
+      "section": "daily_care",
+      "section_content_sha256": "d1eca936299bc78c8f05130b1638fef56eae012064adfac2a243acaac836f81c",
+      "bilingual_claim_sha256": "827ccaf981a3713e8380954408f56b8a25708bae10277431ca27ef26c4cc43ec",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-ada-ketones",
+          "locator": "What to Do If Ketones High",
+          "assessment": "Check pump/site; corrections only in plan."
+        },
+        {
+          "source_id": "dka-cuh-pump",
+          "locator": "Key points",
+          "assessment": "Backup injections and team-calculated doses."
+        },
+        {
+          "source_id": "dka-chelwest-pump",
+          "locator": "Pump failure; Identifying causes",
+          "assessment": "Backup plan and site/tubing/leakage checks."
+        }
+      ]
+    },
+    {
+      "claim_id": "daily_care-4",
+      "section": "daily_care",
+      "section_content_sha256": "d1eca936299bc78c8f05130b1638fef56eae012064adfac2a243acaac836f81c",
+      "bilingual_claim_sha256": "77f677dcbd351285c8bfe7dca517596b2cc2b049c40d9d987136f2682cf7ed28",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-cdc",
+          "locator": "Testing: emergency signs",
+          "assessment": "Vomiting unable to retain fluids, breathing difficulty, multiple DKA signs emergency."
+        },
+        {
+          "source_id": "dka-ada-ketones",
+          "locator": "What to Do If Ketones High",
+          "assessment": "Trouble drinking, confusion, heavy breathing and unavailable team warrant ER."
+        },
+        {
+          "source_id": "dka-cdc-sick",
+          "locator": "When to go to ER, final paragraph",
+          "assessment": "Impaired thinking requires help calling or transport."
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-0",
+      "section": "special_populations",
+      "section_content_sha256": "98c6f0896c7a624b40f4efb333b5b8e8e824b46ced8c17630cfcefa2402423b6",
+      "bilingual_claim_sha256": "807117379bfb9835bf219a1bff098923b0500b0ee1c4cfe37f7359344cd530e9",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 6 table 4",
+          "assessment": "Special pregnancy/older/renal care."
+        },
+        {
+          "source_id": "dka-rch",
+          "locator": "Background; Management",
+          "assessment": "Child-specific protocol."
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-1",
+      "section": "special_populations",
+      "section_content_sha256": "98c6f0896c7a624b40f4efb333b5b8e8e824b46ced8c17630cfcefa2402423b6",
+      "bilingual_claim_sha256": "64f3f117baeb7a03a0b7908efc3b45af389247d47b59c207f5ef4d2a9bcdabf0",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-nhs",
+          "locator": "Symptoms; Immediate action",
+          "assessment": "First presentation children, danger symptoms emergency."
+        },
+        {
+          "source_id": "dka-diabetes-uk",
+          "locator": "Symptoms; Blood testing",
+          "assessment": "Children faster deterioration and immediate help."
+        },
+        {
+          "source_id": "dka-rch",
+          "locator": "Consultation/Transfer",
+          "assessment": "All children DKA require pediatric team/resources."
+        },
+        {
+          "source_id": "dka-nice-child",
+          "locator": "Finding out if DKA",
+          "assessment": "Hospital cares for children, no adult dosing transfer."
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-2",
+      "section": "special_populations",
+      "section_content_sha256": "98c6f0896c7a624b40f4efb333b5b8e8e824b46ced8c17630cfcefa2402423b6",
+      "bilingual_claim_sha256": "86c7e9749da61607bff278b12c7dc097a9a26b09c451e495443f29c32db1c227",
+      "kind": "risk",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 3 euglycemic DKA; table 4 Pregnancy",
+          "assessment": "Euglycemia and joint medical/obstetric plan."
+        },
+        {
+          "source_id": "dka-merck",
+          "locator": "Overview pregnancy/SGLT2",
+          "assessment": "Pregnancy lower/normal glucose possible."
+        },
+        {
+          "source_id": "dka-nice-pregnancy",
+          "locator": "1.1.8; 1.3.21–24",
+          "assessment": "Contacts, urgent advice unwell, joint care."
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-3",
+      "section": "special_populations",
+      "section_content_sha256": "98c6f0896c7a624b40f4efb333b5b8e8e824b46ced8c17630cfcefa2402423b6",
+      "bilingual_claim_sha256": "e03416425e72a96207618f3b98d9aa497a1596cb93afaefb1b370d089cca080f",
+      "kind": "risk",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 4 Fluid therapy; table 4 Older/ESKD",
+          "assessment": "Older, heart failure/severe renal fluid risk/reassessment."
+        },
+        {
+          "source_id": "dka-merck",
+          "locator": "Volume repletion",
+          "assessment": "Heart failure/overload slower infusion."
+        },
+        {
+          "source_id": "dka-em-text",
+          "locator": "CAVEATS: Over-rapid replacement",
+          "assessment": "Older/cardiac risk and monitoring."
+        },
+        {
+          "source_id": "dka-renal-review",
+          "locator": "Management in end-stage kidney disease",
+          "assessment": "Low urine limits aggressive fluids; individualized assessment."
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-4",
+      "section": "special_populations",
+      "section_content_sha256": "98c6f0896c7a624b40f4efb333b5b8e8e824b46ced8c17630cfcefa2402423b6",
+      "bilingual_claim_sha256": "f1d694429b22da1161f010c7098c58bf4d162c2caa1ffff387983a1f548bf99c",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 7 socioeconomic/mental health; table 4 frail adults",
+          "assessment": "Access and self-management capacity, supplies/social services."
+        },
+        {
+          "source_id": "dka-niddk",
+          "locator": "Medicines; Mental health; Care team",
+          "assessment": "Cost/stress/practical support; not standalone outcome intervention."
+        }
+      ]
+    },
+    {
+      "claim_id": "prognosis_followup-0",
+      "section": "prognosis_followup",
+      "section_content_sha256": "074a2c11f6638bb894dad0668ac344985cd702b60e069ccf8944eaece50b8748",
+      "bilingual_claim_sha256": "584572c92e80d742e4cf9e1e187940244914eeddaa724bc982352de448dcc819",
+      "kind": "benefit",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-nhs",
+          "locator": "Treatment",
+          "assessment": "Recovery and prevention advice."
+        },
+        {
+          "source_id": "dka-diabetes-uk",
+          "locator": "Treatment; Avoiding DKA",
+          "assessment": "Insulin/sick-day support reduces risk."
+        },
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 7",
+          "assessment": "Readmission and barriers."
+        }
+      ]
+    },
+    {
+      "claim_id": "prognosis_followup-1",
+      "section": "prognosis_followup",
+      "section_content_sha256": "074a2c11f6638bb894dad0668ac344985cd702b60e069ccf8944eaece50b8748",
+      "bilingual_claim_sha256": "cf7c04bb1cc52cb25ed2a7c49e4c35b3ed155e1bca252f603f57f25a8389c070",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 4 Resolution; Transition to maintenance",
+          "assessment": "Ketone/acidity and safe insulin transition."
+        },
+        {
+          "source_id": "dka-nhs",
+          "locator": "Treatment",
+          "assessment": "Safe ketones, normal eating/drinking."
+        },
+        {
+          "source_id": "dka-mayo-treatment",
+          "locator": "Treatment: Insulin",
+          "assessment": "Usual insulin after glucose and excess acidity improve."
+        }
+      ]
+    },
+    {
+      "claim_id": "prognosis_followup-2",
+      "section": "prognosis_followup",
+      "section_content_sha256": "074a2c11f6638bb894dad0668ac344985cd702b60e069ccf8944eaece50b8748",
+      "bilingual_claim_sha256": "eb5da34a725f969fb56bbf85521d3f04464cb6535e428b092d41229375f086af",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 7",
+          "assessment": "Trigger/technique/ketones/education/social-psychological review."
+        },
+        {
+          "source_id": "dka-niddk",
+          "locator": "Medicines; Mental health; Recording; Care team",
+          "assessment": "Practical support and sharing readings."
+        },
+        {
+          "source_id": "dka-cuh-pump",
+          "locator": "Key points; Troubleshooting",
+          "assessment": "Equipment/settings/dose training."
+        }
+      ]
+    },
+    {
+      "claim_id": "prognosis_followup-3",
+      "section": "prognosis_followup",
+      "section_content_sha256": "074a2c11f6638bb894dad0668ac344985cd702b60e069ccf8944eaece50b8748",
+      "bilingual_claim_sha256": "6fc00d3ccff72aaed7924eb74a50f124bdbfc8aa6ffd384971801548d75d9122",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-nhs",
+          "locator": "Urgent advice; Immediate action",
+          "assessment": "No response/ketones prompt help; severe symptoms emergency."
+        },
+        {
+          "source_id": "dka-ada-ketones",
+          "locator": "What to Do If Ketones High",
+          "assessment": "Worsening/no improvement contact; severe symptoms ER."
+        }
+      ]
+    },
+    {
+      "claim_id": "complications-0",
+      "section": "complications",
+      "section_content_sha256": "cbf18f8e64c2db3b0d6034069f68633474477e0755c5571c115343aaa3d67a2c",
+      "bilingual_claim_sha256": "5db3b57a4b615beb3d9e6c3476c95564aec81ff13c209ef08762232af1c3ec41",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Sections 4 and 5",
+          "assessment": "Physiology/treatment shifts affect organs."
+        }
+      ]
+    },
+    {
+      "claim_id": "complications-1",
+      "section": "complications",
+      "section_content_sha256": "cbf18f8e64c2db3b0d6034069f68633474477e0755c5571c115343aaa3d67a2c",
+      "bilingual_claim_sha256": "69482749526734502fc1b8662624452b657807354456564efa5692ba58708b89",
+      "kind": "risk",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-merck",
+          "locator": "Symptoms and Signs",
+          "assessment": "Deep breathing/drowsiness can progress to coma/death."
+        },
+        {
+          "source_id": "dka-cdc-sick",
+          "locator": "DKA; When to go to ER",
+          "assessment": "Coma/death risk, breathing difficulty emergency."
+        },
+        {
+          "source_id": "dka-mayo-symptoms",
+          "locator": "When to see doctor; Complications",
+          "assessment": "Confusion/multiple symptoms urgent; untreated loss of consciousness/death."
+        }
+      ]
+    },
+    {
+      "claim_id": "complications-2",
+      "section": "complications",
+      "section_content_sha256": "cbf18f8e64c2db3b0d6034069f68633474477e0755c5571c115343aaa3d67a2c",
+      "bilingual_claim_sha256": "ca152a2f5760e748566c51a3eaf5089efed4130283e07af0278b85e0c5322adf",
+      "kind": "risk",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-mayo-symptoms",
+          "locator": "Complications Hypoglycemia/Hypokalemia",
+          "assessment": "Risk and heart/muscle effects."
+        },
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 4 Potassium; table 3",
+          "assessment": "Monitoring prevents arrhythmia/respiratory muscle risk."
+        }
+      ]
+    },
+    {
+      "claim_id": "complications-3",
+      "section": "complications",
+      "section_content_sha256": "cbf18f8e64c2db3b0d6034069f68633474477e0755c5571c115343aaa3d67a2c",
+      "bilingual_claim_sha256": "1d189718b392f740b154c62d58865b09c7c40d964e78b74b2e68af97d0d9adae",
+      "kind": "risk",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-mayo-symptoms",
+          "locator": "Complications: Cerebral edema",
+          "assessment": "Brain swelling especially children."
+        },
+        {
+          "source_id": "dka-rch",
+          "locator": "Cerebral injury Signs/Treatment; Transfer",
+          "assessment": "Neurologic change prompt senior/ICU assessment, child scope."
+        },
+        {
+          "source_id": "dka-consensus",
+          "locator": "Table 3 Cerebral oedema",
+          "assessment": "Adults also alert to mental-state change; rare serious event."
+        }
+      ]
+    },
+    {
+      "claim_id": "prevention-0",
+      "section": "prevention",
+      "section_content_sha256": "b8c51a0cf96294bd179f4d8a6a52183d9e6306e284cdbd81b7889e9f1a5b134c",
+      "bilingual_claim_sha256": "49eec69c044fbd31492ff40a53ed456783af523de5386956d70d560c1478ef8f",
+      "kind": "explanation",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-cdc",
+          "locator": "Prevention; Signs",
+          "assessment": "Recognize first disease and illness/insulin needs."
+        },
+        {
+          "source_id": "dka-nhs",
+          "locator": "How to reduce risk",
+          "assessment": "Insulin/sick-day plan."
+        }
+      ]
+    },
+    {
+      "claim_id": "prevention-1",
+      "section": "prevention",
+      "section_content_sha256": "b8c51a0cf96294bd179f4d8a6a52183d9e6306e284cdbd81b7889e9f1a5b134c",
+      "bilingual_claim_sha256": "91c8e7362eef27f4f38cdcc801b3c159a4b67b21c631b5aa1432a923df218c90",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-diabetes-uk",
+          "locator": "Symptoms: 4Ts; Blood testing",
+          "assessment": "Thirst/urination/weight loss, acute DKA help."
+        },
+        {
+          "source_id": "dka-nhs",
+          "locator": "Symptoms; Immediate action",
+          "assessment": "Danger symptoms even undiagnosed emergency."
+        }
+      ]
+    },
+    {
+      "claim_id": "prevention-2",
+      "section": "prevention",
+      "section_content_sha256": "b8c51a0cf96294bd179f4d8a6a52183d9e6306e284cdbd81b7889e9f1a5b134c",
+      "bilingual_claim_sha256": "da5666c570817899c559a68c3bee419b3acc97a25e516372039ef4009eb88ea9",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 7 education/supplies",
+          "assessment": "Supplies and family education."
+        },
+        {
+          "source_id": "dka-cuh-pump",
+          "locator": "Key points; Out and about; Travel",
+          "assessment": "Backup insulin/equipment/emergency contacts."
+        },
+        {
+          "source_id": "dka-nhs",
+          "locator": "How to reduce risk",
+          "assessment": "Agreed insulin plan."
+        }
+      ]
+    },
+    {
+      "claim_id": "prevention-3",
+      "section": "prevention",
+      "section_content_sha256": "b8c51a0cf96294bd179f4d8a6a52183d9e6306e284cdbd81b7889e9f1a5b134c",
+      "bilingual_claim_sha256": "ac03d660ac97d8d96bdac2b652dab30c0064ac1af09f54b0cc5c319c4ab09468",
+      "kind": "action",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-mhra",
+          "locator": "Advice bullets 3–5; Risk factors",
+          "assessment": "Hospital surgery/serious illness pause/restart and fasting risk."
+        },
+        {
+          "source_id": "dka-consensus",
+          "locator": "Table 4 SGLT2",
+          "assessment": "Specific sick-day plan; stop acute DKA, no routine restart."
+        }
+      ]
+    },
+    {
+      "claim_id": "prevention-4",
+      "section": "prevention",
+      "section_content_sha256": "b8c51a0cf96294bd179f4d8a6a52183d9e6306e284cdbd81b7889e9f1a5b134c",
+      "bilingual_claim_sha256": "cb2a90d6f30c2e34e1f76ace801488468e259cfb453ff988a01807114267900d",
+      "kind": "benefit",
+      "verdict": "accepted",
+      "review_basis": "Current bilingual claim and bounded actual-read source support; no prior DKA independent acceptance inherited.",
+      "evidence": [
+        {
+          "source_id": "dka-consensus",
+          "locator": "Section 7 education and access",
+          "assessment": "Education/technique/barriers reduce recurrence."
+        },
+        {
+          "source_id": "dka-diabetes-uk",
+          "locator": "What can you do to avoid DKA",
+          "assessment": "Monitoring/personal plan, no guarantee."
+        }
+      ]
+    }
+  ],
+  "bilingual_assessment": "Current64 claims read as bilingual pairs; populations, qualifications, timing, actions and numerical units match. No extra English-only or Chinese-only permission to delay care or self-dose identified.",
+  "independence_assessment": "Same-institution pages are one source family; the joint consensus is one writing rather than five society sources. MHRA and EMA share upstream safety assessment. Mayo, Merck, Diabetes UK, RCH and pump handbooks disclose shared clinical references where relevant, and are not called independent experiments. UK/US threshold disagreement is attributed, not erased. Ordinary recordkeeping and low-risk information organization do not acquire fabricated second citations.",
+  "resolution": "Accepted for the14-section bilingual lay DKA overview. Source scope, date, retrieval limits and population boundaries retained; critical action/risk evidence checked at component level. No clinical sign-off or ICD category expansion follows from this editorial acceptance.",
+  "unresolved_questions": [],
+  "scope_limits": [
+    "No individualized insulin, fluid, potassium or home-correction doses.",
+    "Not a complete pediatric, obstetric or end-stage kidney failure treatment protocol.",
+    "Home ketone escalation is not an acid-base diagnostic definition; modest glucose does not exclude DKA.",
+    "Indexed-only sources and partial original publisher passages are explicitly labeled, not attested as full-document reads."
+  ],
+  "validation": {
+    "candidate_structure_issues": [],
+    "top_level_source_ids_match": true,
+    "hashes_verified_against_current_files": true,
+    "author_records_remain_pending": true,
+    "all_medical_reviewed_false": true,
+    "review_placeholder_handling": "Only the exact pending-independent-review placeholder was resolved in the in-memory candidate probe; original draft records remain pending."
+  }
+}

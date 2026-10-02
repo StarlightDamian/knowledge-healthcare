@@ -1,0 +1,342 @@
+{
+  "schema_version": 1,
+  "topic_id": "sepsis",
+  "author": "/root/priority_medical_rules",
+  "status": "author_complete_pending_independent_review",
+  "reviewed_at": "2026-10-02",
+  "medical_reviewed": false,
+  "publishable_as_complete_cross_checked_content": false,
+  "body_canonical_sha256": "4a2e961dc709f94a3bd4f31d496a965db548ce5952ec1e704303b91aeb1b2308",
+  "records_canonical_sha256": "be97c6bb2680c84c8f5099cce9bded4212ecfe9d5126a03c7193a305147348f8",
+  "sources_canonical_sha256": "cfbdc0a33c59ca3dcce99c4a23db8bc5d3eca0d800c7f17518cfb1f80d1bdd62",
+  "section_count": 14,
+  "claim_count": 62,
+  "source_count": 40,
+  "actual_source_reads": [
+    {
+      "source_id": "sepsis-ashp-azathioprine",
+      "url": "https://medlineplus.gov/druginfo/meds/a682167.html",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "observed_version": "Last revised 2023-12-15",
+      "locations_read": [
+        "IMPORTANT WARNING; Why is this medication prescribed?; How should this medicine be used?"
+      ],
+      "support_scope": "Azathioprine infection signs require immediate contact. Drug-specific, not a rule for all immunosuppressants.",
+      "independence_group": "US-ASHP"
+    },
+    {
+      "source_id": "sepsis-nhlbi-mi-diagnosis",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/diagnosis",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "observed_version": "Updated 2022-03-24",
+      "locations_read": [
+        "Electrocardiogram; Blood tests"
+      ],
+      "support_scope": "ECG and troponin in myocardial infarction work-up; does not independently establish sepsis-induced heart injury.",
+      "independence_group": "US-NIH"
+    },
+    {
+      "source_id": "sepsis-nice-recognition",
+      "url": "https://www.nice.org.uk/guidance/ng253/chapter/Could-this-be-sepsis",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "observed_version": "NG253 published 2025-11-19",
+      "locations_read": [
+        "1.1.2–1.1.5; 1.2.1"
+      ],
+      "support_scope": "Adults 16+ who are not pregnant or recently pregnant; absence of fever, usual behaviour and communication assessment. Actual page read using direct HTML after browser extraction returned 403.",
+      "independence_group": "UK-NICE"
+    },
+    {
+      "source_id": "sepsis-idsa-candida",
+      "url": "https://www.idsociety.org/practice-guideline/candidiasis/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "observed_version": "2016 guideline published 2015-12-16; listed CURRENT",
+      "locations_read": [
+        "Section V, recommendation 28 and evidence summary"
+      ],
+      "support_scope": "Risk-selected empirical antifungal treatment in critically ill non-neutropenic ICU patients. Narrower than SSC adult sepsis population; not proof of every SSC subgroup.",
+      "independence_group": "US-IDSA"
+    },
+    {
+      "source_id": "sepsis-nhs-cdiff",
+      "url": "https://www.nhs.uk/conditions/c-difficile/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "observed_version": "Reviewed 2025-07-24",
+      "locations_read": [
+        "Causes; Urgent advice"
+      ],
+      "support_scope": "Diarrhoea during or after antibiotics may reflect C. difficile; urgent clinical advice.",
+      "independence_group": "UK-NHS"
+    },
+    {
+      "source_id": "sepsis-ukhsa-review",
+      "url": "https://www.gov.uk/government/publications/antimicrobial-stewardship-start-smart-then-focus/start-smart-then-focus-antimicrobial-stewardship-toolkit-for-inpatient-care-settings",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "observed_version": "Updated 2023-09-12",
+      "locations_read": [
+        "Section 2: Then focus; Antimicrobial review outcomes; Cease"
+      ],
+      "support_scope": "Clinician review of diagnosis and antibiotic need, cessation when no infection. Actual HTML read after browser extraction timeout.",
+      "independence_group": "UK-UKHSA"
+    },
+    {
+      "source_id": "sepsis-healthdirect-general",
+      "url": "https://www.healthdirect.gov.au/sepsis-septicaemia",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "observed_version": "Last reviewed September 2024",
+      "locations_read": [
+        "Who is at risk?; How is sepsis diagnosed?; How is sepsis treated?"
+      ],
+      "support_scope": "Procedures/devices and chronic risk; examination, monitoring, treatment. Source lists shared background resources, not independent trials.",
+      "independence_group": "AU-HEALTHDIRECT"
+    },
+    {
+      "source_id": "sepsis-healthdirect-maternal",
+      "url": "https://www.pregnancybirthbaby.org.au/pregnancy/health-conditions-and-complications/sepsis-during-pregnancy-and-after-childbirth",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "observed_version": "Current page read 2026-10-02; exact publication date not displayed",
+      "locations_read": [
+        "Symptoms; When should I see my doctor?; opening urgent advice"
+      ],
+      "support_scope": "Pregnancy and recent postpartum infection signs, immediate doctor/midwife/hospital/emergency contact. Independently written from CDC/AIM, not a complete maternity sepsis protocol.",
+      "independence_group": "AU-HEALTHDIRECT"
+    },
+    {
+      "source_id": "sepsis-nlm-culture",
+      "url": "https://medlineplus.gov/lab-tests/bacteria-culture-test/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "observed_version": "Updated 2024-11-19",
+      "locations_read": [
+        "What is a bacteria culture test?; Blood culture; Results"
+      ],
+      "support_scope": "Culture grows organisms and can guide susceptibility testing. Its general negative-test discussion is not applied to exclude sepsis.",
+      "independence_group": "US-NIH"
+    },
+    {
+      "source_id": "sepsis-adam-catheter",
+      "url": "https://medlineplus.gov/ency/article/003981.htm",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "observed_version": "Review date 2025-01-01",
+      "locations_read": [
+        "DRAINAGE BAGS; CARING FOR YOUR INDWELLING CATHETER; WHEN TO CONTACT A MEDICAL PROFESSIONAL"
+      ],
+      "support_scope": "Home catheter hygiene, drainage positioning and infection/drainage contact triggers; not self-removal instructions.",
+      "independence_group": "US-ADAM"
+    },
+    {
+      "source_id": "sepsis-cdc-hospital-core",
+      "url": "https://www.cdc.gov/sepsis/hcp/core-elements/index.html",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "observed_version": "Updated 2026-09-21",
+      "locations_read": [
+        "Patient and family engagement; Discharge planning and care coordination"
+      ],
+      "support_scope": "Post-sepsis medication reconciliation, chronic conditions, family-supported transition and follow-up. Shared recovery evidence acknowledged.",
+      "independence_group": "US-CDC"
+    },
+    {
+      "source_id": "sepsis-asn-recovery",
+      "url": "https://www.australiansepsisnetwork.net.au/wp-content/uploads/2024/05/ASN-Life-After-Sepsis-v1.1-12102020.pdf",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "observed_version": "v1.1 filename 12 October 2020; hosted May 2024",
+      "locations_read": [
+        "Printed pages 3, 14–15, 17–18, 30"
+      ],
+      "support_scope": "Small frequent meals and recovery organisation. Page 3 explicitly acknowledges adapted material from sepsis organisations; not automatically a second independent evidence origin.",
+      "independence_group": "AU-ASN"
+    },
+    {
+      "source_id": "sepsis-nhs",
+      "url": "https://www.nhs.uk/conditions/sepsis/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locations_read": [
+        "Symptoms and emergency actions for under-5/adult groups; medicines to bring; recovery"
+      ],
+      "metadata_handling": "Existing source metadata unchanged; this read is recorded at author/section level."
+    },
+    {
+      "source_id": "sepsis-rch-child",
+      "url": "https://www.rch.org.au/kidsinfo/fact_sheets/Sepsis/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locations_read": [
+        "When to get help: babies less than six months; reduced fluids; FAQ no single test; contagion"
+      ],
+      "metadata_handling": "Existing source metadata unchanged; this read is recorded at author/section level."
+    },
+    {
+      "source_id": "sepsis-ssc-2026",
+      "url": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locations_read": [
+        "Single-test limits; ongoing assessment; empirical antifungals; alternative causes; cardiac dysfunction; mental-health follow-up"
+      ],
+      "metadata_handling": "Existing source metadata unchanged; this read is recorded at author/section level."
+    },
+    {
+      "source_id": "sepsis-nhs-azathioprine",
+      "url": "https://www.nhs.uk/medicines/azathioprine/about-azathioprine/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locations_read": [
+        "Key facts: urgent advice for infection"
+      ],
+      "metadata_handling": "Existing source metadata unchanged; this read is recorded at author/section level."
+    },
+    {
+      "source_id": "sepsis-cdc-maternal",
+      "url": "https://www.cdc.gov/hearher/maternal-warning-signs/index.html",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locations_read": [
+        "Pregnancy/postpartum warning signs: breathing, severe abdominal pain, fever, foul discharge; immediate help"
+      ],
+      "metadata_handling": "Existing source metadata unchanged; this read is recorded at author/section level."
+    },
+    {
+      "source_id": "sepsis-cdc-recovery",
+      "url": "https://www.cdc.gov/sepsis/living-with/index.html",
+      "accessed_at": "2026-10-02",
+      "access_status": "official_indexed_relevant_text_read",
+      "locations_read": [
+        "Recovery symptoms including nightmares, gradual activity and support; official indexed text accessed"
+      ],
+      "metadata_handling": "Existing source metadata unchanged; this read is recorded at author/section level."
+    },
+    {
+      "source_id": "sepsis-qld-sick-child",
+      "url": "https://www.qld.gov.au/health/condition/child-health/babies-and-toddlers/when-your-child-is-sick",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "observed_version": "Last updated 2017-11-07",
+      "locations_read": [
+        "Other signs / Poor feeding (weaker/shorter feeds)",
+        "When to see the doctor (prompt hospital or medical centre)",
+        "Acknowledgement (RCH and other shared upstream sources)"
+      ],
+      "support_scope": "Supports poor feeding including weaker or shorter sucking and prompt medical assessment at hospital or medical centre; complete feed refusal is not required. Does not reproduce the RCH under-6-month cutoff or prove immediate emergency transport. Queensland professional synthesis acknowledges RCH and other common upstream material; separate writing is not independent underlying evidence.",
+      "independence_group": "AU-QLD-HEALTH"
+    }
+  ],
+  "prior_reviews": [
+    {
+      "path": "reports/batch-01-sepsis-independent.json",
+      "file_sha256": "8c1d443cdbf7d4b2703568871e81a6b08833f9273dd71bb314ac3cee4197c001"
+    },
+    {
+      "path": "reports/batch-01-sepsis-recheck.json",
+      "file_sha256": "5b3dcf177b039ff39067f52678227df63c45d2ff7d81c8b5e73cf2512cb62084"
+    },
+    {
+      "path": "reports/batch-01-sepsis-final-followup.json",
+      "file_sha256": "618d8db3670a560d2b158c1e6781c4b921f73e2855338b3db54767162b765335"
+    }
+  ],
+  "unchanged_accepted_claims_reused": [
+    "summary-0",
+    "summary-1",
+    "summary-2",
+    "causes_risks-0",
+    "causes_risks-1",
+    "causes_risks-2",
+    "causes_risks-3",
+    "red_flags-0",
+    "red_flags-1",
+    "red_flags-2",
+    "care-0",
+    "care-2",
+    "diagnosis-0",
+    "diagnosis-2",
+    "diagnosis-4",
+    "differentials-0",
+    "differentials-1",
+    "treatment-0",
+    "treatment-1",
+    "treatment-2",
+    "treatment-3",
+    "medications-0",
+    "medications-1",
+    "medications-3",
+    "diet-0",
+    "daily_care-0",
+    "daily_care-1",
+    "special_populations-0",
+    "special_populations-3",
+    "prognosis_followup-0",
+    "prognosis_followup-1",
+    "prognosis_followup-2",
+    "complications-0",
+    "complications-1",
+    "complications-2",
+    "complications-3",
+    "prevention-0",
+    "prevention-1",
+    "prevention-4"
+  ],
+  "scope": "Targeted closure of remaining source/population findings. No full re-review of unchanged independently accepted claims. Shared sources retain original metadata. This is an author report, not clinical signoff.",
+  "targeted_resolutions": {
+    "S02": "Added independent Australian procedure/device risk source; preparation checklist remains practical communication, not efficacy.",
+    "S03": "Preserved separately attributed RCH and NHS age thresholds; added NICE adult communication and absent-fever assessment. Exact-age limitation remains explicit. Reviewer-requested Queensland poor-feeding action corroboration added; regional and shared-upstream limits retained, no body wording changed.",
+    "S04": "NLM culture definition and Healthdirect/SSC monitoring; no single-test interpretation is adult SSC and paediatric RCH scoped.",
+    "S05": "Added NHLBI ECG/troponin support and UKHSA cessation review; source roles separated.",
+    "S07": "Added IDSA risk-selected antifungal scope and NHS C. difficile; joint clinical evidence overlap acknowledged.",
+    "S08": "Adult CKD scope explicit; ASN recovery advice has adapted provenance; no claimed independent efficacy proof.",
+    "S09": "CDC hospital discharge/family guidance; SSC adult cognitive/emotional follow-up.",
+    "S10": "Removed indexed-only rheumatology generalisation; replaced with directly read ASHP drug-specific advice. Maternal paragraph uses CDC and independently written Australian patient source; not coded as a complete neonatal or puerperal topic.",
+    "S12": "Removed vague risk-reduction benefit; chronic-care/medication reconciliation and independent catheter advice bound."
+  },
+  "source_support_gaps": [
+    {
+      "claim_ids": [
+        "diet-1"
+      ],
+      "scope": "NHS small frequent meals corroborated by ASN, but ASN discloses adapted material and independent origin is not established.",
+      "handling": "Ordinary supportive recovery suggestion without quantified benefit; do not claim two wholly independent origins."
+    }
+  ],
+  "proposed_p0_leaf_scope": {
+    "candidates": [
+      "1G40",
+      "1G41"
+    ],
+    "mapping_status": "suggested_only_pending_root_semantic_mapping",
+    "excluded_from_automatic_coverage": [
+      "KA60",
+      "JB40.0"
+    ],
+    "reason": "Sepsis without and with shock are discussed; infection source separately classified. Special-population safety paragraphs do not constitute complete neonatal or puerperal disease topics."
+  },
+  "validation": {
+    "json_parse": true,
+    "sections": 14,
+    "bilingual_claim_substrings": true,
+    "source_metadata_hashes": true,
+    "section_content_hashes": true,
+    "independent_review": "pending",
+    "shared_source_metadata_conflicts": 0,
+    "in_memory_project_preview": {
+      "status": "blocked_by_concurrent_unintegrated_safety_source",
+      "message": "postpartum-heavy-bleeding: unknown safety source",
+      "scope": "Topic sections, bilingual substrings and source hashes passed; full project preview awaits root integrating newly added safety sources."
+    },
+    "targeted_infant_support_recheck": "Passed exact bindings, both section hashes and all source metadata hashes; reviewer acceptance pending."
+  },
+  "licensing": "Original concise bilingual synthesis; citations retained. No source full text copied.",
+  "regional_evidence_boundaries": [
+    "RCH specifies under 6 months and hospital; Queensland supports prompt assessment of poor feeding in infants/children without that exact age cutoff, and acknowledges shared RCH background. NHS separately uses under 5 with not feeding. These are attributed conditional regional recommendations, not one universally validated age threshold."
+  ]
+}

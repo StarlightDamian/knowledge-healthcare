@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "id": "p0-01-meningitis-author",
+  "author": "/root/mi_icd_scope",
+  "authored_at": "2026-10-02",
+  "status": "pending_independent_review",
+  "medical_reviewed": false,
+  "base": {
+    "path": "drafts/batch-01/emergency/meningitis.json",
+    "canonical_sha256": "af3aca1ebe97bd618ed231dd95a612cf21c323a917460be2f0ea800a0dd55ba8",
+    "independent_reports": [
+      "reports/batch-01-meningitis-independent.json",
+      "reports/batch-01-meningitis-recheck.json"
+    ]
+  },
+  "output": {
+    "path": "drafts/p0-01/meningitis.json",
+    "canonical_sha256": "2b6d6c35b662f6c09dd380494cee6a60cb62e2cf6782229e8faee35f54da5154",
+    "file_sha256": "218b5ec519822e78a3948a14ab48a7ac25c9d45e02a41dfb79cf55330295c098",
+    "sections": 14,
+    "bilingual_claims": 63,
+    "sources": 36,
+    "changed_claim_texts": [
+      "care-4",
+      "prognosis_followup-3"
+    ]
+  },
+  "approach": "Reuse unchanged previously read/rechecked claims. Target actual M01/M05/M06/M07/M08/M09/M10 residuals and precise binding corrections; do not repeat the earlier whole-source review or claim clinical sign-off.",
+  "download_evidence": {
+    "meningitis-lpt-viral-policy": {
+      "bytes": 410665,
+      "sha256": "9dce36d0e3053b1ea47f85b6ccd973470ebe04771a90cef8e7e2a16a51c25940",
+      "pages_read": [
+        1,
+        2,
+        9,
+        12,
+        13,
+        14
+      ]
+    }
+  },
+  "access_limits": [
+    "WHO/NCBI direct guideline returned captcha; NICE direct recommendations 403; BVS WHO mirror yielded title/ISBN/contents then later timeout. New WHO assertions are bound only to actual indexed original recommendation text, not to claimed full-PDF reading.",
+    "Unused searches/read material are not added as evidence. LPT old review deadline and several overbroad unrelated statements were identified; those statements were not adopted."
+  ],
+  "resolved_author_findings": {
+    "M01": "CDC plus locally authored LPT p9 contact distinction.",
+    "M04": "Communication checklist explicitly non-diagnostic; explanation kind, one-source practical guidance retained.",
+    "M05": "WHO A.3 negative-marker limitation, A.1 stabilization and A.4 imaging; MSD independent imaging/no-delay support; no invented thresholds.",
+    "M06": "MSD distinct multidrug meningeal TB course; NIH HIV/cryptococcosis example preserves immune/duration scope.",
+    "M07": "Corrected false Mayo bacteremia binding using NSW and CDC; NHS SAH identifies bleeding, existing NHS/Mayo sources support emergency action. Ordinary flu/gastroenteritis resemblance remains accurately NHS-sourced.",
+    "M08": "Corrected NICE 1.6.5/1.6.8; MSD/RCH/WHO complement exact antibiotic factors and support modalities.",
+    "M09": "Infant feeding branch now explicit and Mayo prompt help corroborates NHS; RCH covers worsening child hydration. Practical recording is not a validated score.",
+    "M10": "CDC P8 independently supports refrigerated growth; FDA/CDC food choices unchanged.",
+    "M11": "Chinese over-one-month boundary corrected; distinct WHO/NICE hearing clocks and evidence-grade attribution preserved.",
+    "M12": "UKHSA contacts corroborates vaccination-independent assessment; no unverified international vaccine schedules added."
+  },
+  "scope_and_remaining_boundaries": [
+    "Cause-based meningitis overview, not a full pathogen-specific or neonatal treatment manual. Exact drug doses, TB duration, antifungal immune thresholds and local vaccine schedules are not claimed complete.",
+    "Treatment-3 immune-risk admission detail is directly CDC-supported; MSD confirms normal-immunity recovery and severe-illness treatment, not a duplicate exact admission rule. The author does not assert two sources for that complete compound paragraph. Independent reviewer should assess this bounded explanatory detail separately from emergency actions.",
+    "NICE is the direct source for dedicated TB-specialist referral; MSD independently confirms multidrug and distinct meningeal treatment, not the exact referral wording.",
+    "WHO/NICE hearing timing and steroid eligibility are attributed recommendations with real differences, not two identical global rules or independent trials."
+  ],
+  "coding_recommendation": {
+    "status": "candidate_only_pending_semantic_review",
+    "candidate_scope": "Generic/unspecified meningitis leaf categories may be assessed against this overview; named bacterial/viral/fungal/TB/neonatal leaves are not automatically confirmed. Root holds frozen WHO definitions and will adjudicate exact codes.",
+    "automatic_coverage_changes": false
+  },
+  "validation": {
+    "status": "passed_structural_checks",
+    "checks": [
+      "condition/source JSON schemas",
+      "14 sections and editorial records",
+      "63 bilingual claim substring bindings",
+      "section/source metadata hashes",
+      "section and claim source membership",
+      "independent editorial group counts by claim kind",
+      "all editorial records pending and medical_reviewed false"
+    ],
+    "issues": [],
+    "medical_verification": "not implied by structural checks"
+  },
+  "body_canonical_sha256": "2b6d6c35b662f6c09dd380494cee6a60cb62e2cf6782229e8faee35f54da5154",
+  "records_canonical_sha256": "012ae2b6dbf1013cf74ed4fbb0de4e8272c258f475dc654e85b2c6c45d8a3714",
+  "sources_canonical_sha256": "b667c82d6b42b2fa11a4c342362202bc26a37a979ea58b3b1bb85f0726bcb77f",
+  "source_reads": [
+    {
+      "source_id": "meningitis-cdc-food-cold",
+      "url": "https://www.cdc.gov/restaurant-food-safety/php/investigations/proliferation-contributing-factors.html",
+      "source_metadata_sha256": "df940949c600f3f93308b4c3562aa05a8ca1c4783c2a2c2ed3d75f8017d8ce03",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Read P8: Listeria can multiply at ordinary refrigerator temperatures over sufficient time. Supports refrigeration not eliminating Listeria, not a new household storage-day instruction."
+    },
+    {
+      "source_id": "meningitis-lpt-viral-policy",
+      "url": "https://www.leicspart.nhs.uk/wp-content/uploads/2023/12/The-management-of-meningitis-policy-V10-Exp-Nov-26.pdf",
+      "source_metadata_sha256": "2e673135e3b4441f944d5261297507e087da162ce4ac9a007a385014006775a3",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "article_retrieved",
+      "scope": "PDF pp1–2,9,12–14 actually read. Section 3.2 p9: contacts may acquire the virus but are unlikely to develop viral meningitis. Ratified 5 Dec 2023; review date 1 May 2026 has passed; expiry 1 Nov 2026. Only the contact statement is used, corroborated by current CDC; the policy’s overbroad Gram-stain guarantee and reassurance on sequelae are not used."
+    },
+    {
+      "source_id": "meningitis-mayo-infant-feeding",
+      "url": "https://www.mayoclinic.org/diseases-conditions/common-cold-in-babies/symptoms-causes/syc-20351651",
+      "source_metadata_sha256": "28b09836c08923d1d450b45de57d3cef990337545108056e879213d1679981ec",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Read When to see a doctor: seek help right away if baby refuses nursing or fluids. Infant illness safety-net material, not evidence that meningitis is a cold; used with NHS vomiting/feeding advice. Exact edition day not established."
+    },
+    {
+      "source_id": "meningitis-msd-acute",
+      "url": "https://www.msdmanuals.com/professional/neurologic-disorders/meningitis/acute-bacterial-meningitis",
+      "source_metadata_sha256": "8e548aa2e6f875801b0ea1d01e30a2af22a34044d905f95027e4db82f865d468",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Full review/update September 2026. Read Diagnosis: lumbar puncture; Treatment: antibiotics, including age/immune status, culture/sensitivity adjustment and resistance. No day invented."
+    },
+    {
+      "source_id": "meningitis-msd-tb",
+      "url": "https://www.msdmanuals.com/professional/infectious-diseases/mycobacteria/extrapulmonary-tuberculosis-tb",
+      "source_metadata_sha256": "1fbcbd70473102148e4a7728ea892123c716c0d57edfc5d3e61b813eb08dc1de",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Full review/update February 2026. Read overview and Treatment of Extrapulmonary TB: combination therapy and longer meningeal treatment than most other sites. No day or universal regimen invented."
+    },
+    {
+      "source_id": "meningitis-msd-viral",
+      "url": "https://www.msdmanuals.com/home/brain-spinal-cord-and-nerve-disorders/meningitis/viral-meningitis",
+      "source_metadata_sha256": "23c20299f6d05145646aa68f5d7207ae29f17812770c8b37bea6e568740d0234",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Full review/update September 2026. Read Symptoms, Diagnosis, Treatment and Prognosis: immediate treatment if very ill, antiviral exceptions, recovery in people with normal immunity. No claim it independently gives CDC’s full immune-risk hospitalization rule."
+    },
+    {
+      "source_id": "meningitis-nhs-sah",
+      "url": "https://www.nhs.uk/conditions/subarachnoid-haemorrhage/",
+      "source_metadata_sha256": "eb2b68cc42b399738b138a20401cdddaf31d7d654e11095e483da794efaf51a6",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Read definition, symptoms and emergency advice: sudden severe headache can represent intracranial bleeding. Used as a differential example; no home diagnostic rule or exact threshold added."
+    },
+    {
+      "source_id": "meningitis-nih-cryptococcosis",
+      "url": "https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-opportunistic-infections/cryptococcosis",
+      "source_metadata_sha256": "89ff48a23001386845578f6adfe1dc40d5c1dcac085ae2ccddfc9e8881c4957d",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Updated 29 Oct 2024; reviewed 16 Mar 2026. Read Clinical manifestations and Treating CNS/disseminated disease, maintenance stopping/restarting criteria. Adults/adolescents with HIV and cryptococcosis only; immune recovery example, not a regimen for every fungus."
+    },
+    {
+      "source_id": "meningitis-nsw-meningococcal",
+      "url": "https://www.health.nsw.gov.au/Infectious/factsheets/Pages/meningococcal_disease.aspx",
+      "source_metadata_sha256": "14b64f8a308eae1c83a1ac9d45a35276f9c985750956daee4bc63debb208ad15",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Read What is meningococcal disease? (meningitis and/or sepsis), Symptoms including nonfeeding child and prompt review, and Public health response. Australian context retained; vaccine ages not imported."
+    },
+    {
+      "source_id": "meningitis-rch-clinical",
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Meningitis_encephalitis/",
+      "source_metadata_sha256": "886c57555c3722d0c48fb6fb62c24ed570d247bf45c9896aa8a8de56201f2f0e",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Read Investigations: urgent LP, blood, neuroimaging; Treatment, antibiotic table and ongoing management. Children only; no fluid doses or routine restriction copied into the lay overview. Relevant paragraphs actually opened."
+    },
+    {
+      "source_id": "meningitis-ukhsa-contacts",
+      "url": "https://www.gov.uk/guidance/outbreak-of-invasive-meningococcal-disease-south-east-england",
+      "source_metadata_sha256": "d119d94a7bfa36992ad1545fe4553afde9cca8abb6ed19bb2993af2cd0d907e1",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Read Management of contacts / Providing antibiotic chemoprophylaxis: identified close contacts of confirmed/probable cases need prophylaxis regardless of vaccination. Used only to corroborate contact assessment after vaccination; outbreak-specific population and timing are not globalized."
+    },
+    {
+      "source_id": "meningitis-who-guideline",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK614844/?report=classic",
+      "source_metadata_sha256": "bb2c07a80e7f5fd643961334374846bc7fc6ef2060c17d37b93d25c94f5e98fa",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "search_text_retrieved",
+      "scope": "Previously read/rechecked WHO 2025 scope and C.4 hearing recommendations retained. This round actually read indexed WHO-authored A.1 hemodynamic/respiratory compromise; A.3 peripheral blood tests cannot exclude; A.4 selective imaging; B.1 oxygen/hemodynamic support; B.2 allergy/resistance; B.5 fluid management. Direct NCBI CAPTCHA, WHO PDF error and BVS mirror timeout do not count as full guideline reading. BVS PDF title/ISBN/contents only were opened."
+    },
+    {
+      "source_id": "meningitis-cdc-listeria-symptoms",
+      "url": "https://www.cdc.gov/listeria/signs-symptoms/index.html",
+      "accessed_at": "2026-10-02",
+      "locator": "Severity of invasive illness, pregnant women",
+      "access_status": "original_page_read",
+      "purpose": "Five reviewer-requested binding corrections only"
+    },
+    {
+      "source_id": "meningitis-nsw-meningococcal",
+      "url": "https://www.health.nsw.gov.au/Infectious/factsheets/Pages/meningococcal_disease.aspx",
+      "accessed_at": "2026-10-02",
+      "locator": "Who is at risk",
+      "access_status": "original_page_read",
+      "purpose": "Five reviewer-requested binding corrections only"
+    },
+    {
+      "source_id": "meningitis-nhs",
+      "url": "https://www.nhs.uk/conditions/meningitis/",
+      "accessed_at": "2026-10-02",
+      "locator": "Causes of meningitis",
+      "access_status": "original_page_read",
+      "purpose": "Five reviewer-requested binding corrections only"
+    },
+    {
+      "source_id": "meningitis-cdc-fungal-meningitis",
+      "url": "https://www.cdc.gov/meningitis/about/fungal-meningitis.html",
+      "accessed_at": "2026-10-02",
+      "locator": "Risk factors",
+      "access_status": "original_page_read",
+      "purpose": "Five reviewer-requested binding corrections only"
+    },
+    {
+      "source_id": "meningitis-nice-ng240",
+      "url": "https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+      "accessed_at": "2026-10-02",
+      "locator": "1.1.8 and 1.1.14",
+      "access_status": "final_official_indexed_text_read",
+      "purpose": "Five reviewer-requested binding corrections only"
+    },
+    {
+      "source_id": "meningitis-cdc-food-cold",
+      "url": "https://www.cdc.gov/restaurant-food-safety/php/investigations/proliferation-contributing-factors.html",
+      "accessed_at": "2026-10-02",
+      "locator": "Background and P8",
+      "access_status": "original_html_read",
+      "purpose": "Five reviewer-requested binding corrections only"
+    }
+  ],
+  "targeted_independent_review_repairs": {
+    "status": "pending_targeted_recheck",
+    "body_text_changed": false,
+    "resolved": [
+      "Explicit impaired-spleen bindings to NSW and final NICE 1.1.8/1.1.14",
+      "Chemotherapy NHS and transplant-medicine CDC exact bindings",
+      "Added CDC maternal mild/asymptomatic Listeria source with FDA shared-epidemiology boundary",
+      "CDC food-cold CDC/FDA/state coauthorship recorded",
+      "Removed stale no-second-source statement for CDC/LPT viral contact pair"
+    ]
+  }
+}

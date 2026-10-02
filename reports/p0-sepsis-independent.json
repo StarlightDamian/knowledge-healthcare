@@ -1,0 +1,2000 @@
+{
+  "schema_version": 1,
+  "review_id": "p0-sepsis-independent",
+  "reviewer": "/root/mi_icd_scope",
+  "author": "/root/priority_medical_rules",
+  "reviewed_at": "2026-10-02",
+  "review_type": "one_independent_substantive_review_and_targeted_binding_recheck",
+  "verdict": "accepted",
+  "medical_reviewed": false,
+  "target": {
+    "path": "drafts/p0-01/sepsis.json",
+    "body_canonical_sha256": "4a2e961dc709f94a3bd4f31d496a965db548ce5952ec1e704303b91aeb1b2308",
+    "records_canonical_sha256": "be97c6bb2680c84c8f5099cce9bded4212ecfe9d5126a03c7193a305147348f8",
+    "sources_canonical_sha256": "cfbdc0a33c59ca3dcce99c4a23db8bc5d3eca0d800c7f17518cfb1f80d1bdd62"
+  },
+  "scope": {
+    "section_count": 14,
+    "claim_count": 62,
+    "source_count": 40,
+    "unchanged_claims_inherited": 39,
+    "claims_currently_rechecked": 23,
+    "sources_reopened_this_review": 27,
+    "no_draft_mutation": true
+  },
+  "actual_source_reads": [
+    {
+      "source_id": "sepsis-nhs",
+      "url": "https://www.nhs.uk/conditions/sepsis/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Symptoms; When and where to get medical help; recovery, including small frequent meals",
+      "source_metadata_sha256": "fdf8b575a16cc7891cfbd69057e962746ba683a1d6f5597428b559cf96921b7f",
+      "independence_group": "UK-NHS"
+    },
+    {
+      "source_id": "sepsis-rch-child",
+      "url": "https://www.rch.org.au/kidsinfo/fact_sheets/Sepsis/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Signs and symptoms; When to get help/Go to hospital; no single test FAQ (direct HTML read after web timeout)",
+      "source_metadata_sha256": "9b190845aa0e7e3da423073ef03cf85da2e871728583e9afd4609fc5bea02aae",
+      "independence_group": "AU-RCH"
+    },
+    {
+      "source_id": "sepsis-ssc-2026",
+      "url": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Screening; ongoing reassessment; antimicrobials/antifungals; alternative diagnosis; inotropes; nutrition; medication reconciliation; discharge and physical/cognitive/emotional follow-up",
+      "source_metadata_sha256": "141b1821d01aeec24aecc6ed5e3caa4094cb989b8bbef390df8800f374528255",
+      "independence_group": "SSC-SCCM-ESICM"
+    },
+    {
+      "source_id": "sepsis-healthdirect-general",
+      "url": "https://www.healthdirect.gov.au/sepsis-septicaemia",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Risk factors (recent surgery, tubes); assessment; hospital monitoring",
+      "source_metadata_sha256": "503d772526e961dea2d4be7df30e9a376d21b0c04d54ab16ddcadc5ae885073a",
+      "independence_group": "AU-HEALTHDIRECT"
+    },
+    {
+      "source_id": "sepsis-ashp-azathioprine",
+      "url": "https://medlineplus.gov/druginfo/meds/a682167.html",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "IMPORTANT WARNING",
+      "source_metadata_sha256": "392174a007a13ec3d215c1e816aef3b9d3ef80e34ce47bac9aeec15b04a8c85e",
+      "independence_group": "US-ASHP"
+    },
+    {
+      "source_id": "sepsis-healthdirect-maternal",
+      "url": "https://www.pregnancybirthbaby.org.au/pregnancy/health-conditions-and-complications/sepsis-during-pregnancy-and-after-childbirth",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Symptoms; when urgent help is needed; hospital treatment context",
+      "source_metadata_sha256": "e707333c0664433bf8ef94952d317bfaa8f49726c8805db89e440d4604799a79",
+      "independence_group": "AU-HEALTHDIRECT"
+    },
+    {
+      "source_id": "sepsis-nlm-culture",
+      "url": "https://medlineplus.gov/lab-tests/bacteria-culture-test/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "What is a bacteria culture test?; uses; blood culture; results and susceptibility",
+      "source_metadata_sha256": "98e3cefc1eff3c18165c3b5a9ec0cb3a296801542aaca957c10403f79e6badfd",
+      "independence_group": "US-NIH"
+    },
+    {
+      "source_id": "sepsis-nice-recognition",
+      "url": "https://www.nice.org.uk/guidance/ng253/chapter/Could-this-be-sepsis",
+      "accessed_at": "2026-10-02",
+      "access_status": "official_indexed_relevant_text_read",
+      "locator": "NG253 Could this be sepsis 1.1.2–1.1.4 final official indexed text; direct page denied",
+      "source_metadata_sha256": "b4693250be50db5717ad4a59521b86fa67b50c70a8b64d06ee205bac8c446973",
+      "independence_group": "UK-NICE"
+    },
+    {
+      "source_id": "sepsis-nhlbi-mi-diagnosis",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/diagnosis",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Electrocardiogram; blood tests/troponin",
+      "source_metadata_sha256": "4c86ee317413abec7e95d36c4f717a8bc27729134ebdb8aaa6e44cc38d778765",
+      "independence_group": "US-NIH"
+    },
+    {
+      "source_id": "sepsis-idsa-candida",
+      "url": "https://www.idsociety.org/practice-guideline/candidiasis/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Section V, recommendation28 and evidence summary; current-listed 2016 guideline",
+      "source_metadata_sha256": "ea380ae47dbbe4a198a106a6736d3134af9df87c29ca1577f9a7b36d0cb4c413",
+      "independence_group": "US-IDSA"
+    },
+    {
+      "source_id": "sepsis-nhs-cdiff",
+      "url": "https://www.nhs.uk/conditions/c-difficile/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "How you get infection; risk; urgent advice",
+      "source_metadata_sha256": "2c1a44146ff4de2d5251183ec66581e046e529c567dd8b7aeff15e215562dafb",
+      "independence_group": "UK-NHS"
+    },
+    {
+      "source_id": "sepsis-cdc-hospital-core",
+      "url": "https://www.cdc.gov/sepsis/hcp/core-elements/index.html",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Discharge/medication reconciliation; chronic care, follow-up and family involvement",
+      "source_metadata_sha256": "23275548772730c866cf872753608476032e879aced41fe7d6475d12ce24485c",
+      "independence_group": "US-CDC"
+    },
+    {
+      "source_id": "sepsis-nhs-dehydration",
+      "url": "https://www.nhs.uk/conditions/dehydration/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Symptoms; urgent GP/111 versus emergency advice",
+      "source_metadata_sha256": "0f63941c6b5a86afc4f467aa42c16177557f082ef0145f55fadb1c18bbb67f32",
+      "independence_group": "UK-NHS"
+    },
+    {
+      "source_id": "sepsis-nhs-azathioprine",
+      "url": "https://www.nhs.uk/medicines/azathioprine/about-azathioprine/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "About azathioprine; key facts on infections",
+      "source_metadata_sha256": "2054d4b713f26ac6d14bbc7a2958bc6f493a618ff4a008ccb0d386ab296b4598",
+      "independence_group": "UK-NHS"
+    },
+    {
+      "source_id": "sepsis-adam-catheter",
+      "url": "https://medlineplus.gov/ency/article/003981.htm",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Catheter care; preventing infection; when to contact professional (ADAM authorship)",
+      "source_metadata_sha256": "e3d3fb2380880fba49a38116e6e10bf28c944c39eec8d4b94db0065d44b3e08e",
+      "independence_group": "US-ADAM"
+    },
+    {
+      "source_id": "sepsis-ukhsa-review",
+      "url": "https://www.gov.uk/government/publications/antimicrobial-stewardship-start-smart-then-focus/start-smart-then-focus-antimicrobial-stewardship-toolkit-for-inpatient-care-settings",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Start Smart Then Focus: 48–72hour review and cease when infection absent; clinician context",
+      "source_metadata_sha256": "5f6a49c1f4aa0d1f6afdeb6644bfc17df03447ace52c92346b28f7389ef5423d",
+      "independence_group": "UK-UKHSA"
+    },
+    {
+      "source_id": "sepsis-cdc-maternal",
+      "url": "https://www.cdc.gov/hearher/maternal-warning-signs/index.html",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Urgent Maternal Warning Signs: fever, severe belly pain, breathing trouble, foul vaginal discharge; AIM authorship acknowledged",
+      "source_metadata_sha256": "0dc654b1f9605b6d24e9f531855f070fda2b6c8b63463532c9714c16a3f12d71",
+      "independence_group": "AIM-MATERNAL-WARNINGS"
+    },
+    {
+      "source_id": "sepsis-niddk-ckd-diet",
+      "url": "https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/healthy-eating-adults-chronic-kidney-disease",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Adults with CKD: individual protein and fluid guidance, dialysis distinctions",
+      "source_metadata_sha256": "980e4c14d60b9edbb80b1b4c37448859779bc933e1eb73b4b0716fdbc646826c",
+      "independence_group": "US-NIDDK"
+    },
+    {
+      "source_id": "sepsis-nkf-ckd-diet",
+      "url": "https://www.kidney.org/kidney-topics/nutrition-and-kidney-disease-stages-1-5-not-dialysis",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Nutrition in stages1–5 not dialysis: protein/fluid individualisation",
+      "source_metadata_sha256": "326b7c78b63078bcf1a7d8357f0480b3693afd9a8b378dbc85a435f2c58f456c",
+      "independence_group": "US-NKF"
+    },
+    {
+      "source_id": "sepsis-cdc-recovery",
+      "url": "https://www.cdc.gov/sepsis/living-with/index.html",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Living with sepsis: appetite, emotional/physical problems, nightmares and support",
+      "source_metadata_sha256": "7aacca46b9075eb933fd8592791643d871137c4bb4cbbc34333807f8096ae3d5",
+      "independence_group": "US-CDC"
+    },
+    {
+      "source_id": "sepsis-nhs-anaphylaxis",
+      "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Symptoms; immediate action; use adrenaline and emergency help",
+      "source_metadata_sha256": "f62df3e59c04810937aaad067e8019d1fdddd0b15c1e719401f2591eacbe86b8",
+      "independence_group": "UK-NHS"
+    },
+    {
+      "source_id": "sepsis-mayo-anaphylaxis",
+      "url": "https://www.mayoclinic.org/diseases-conditions/anaphylaxis/symptoms-causes/syc-20351468",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Symptoms; when to see doctor; triggers; medicine allergy prevention",
+      "source_metadata_sha256": "ca8478ca38bbdd04601481609c345698cc27bb3df2349360ef3b4f55983c7e88",
+      "independence_group": "US-MAYO"
+    },
+    {
+      "source_id": "sepsis-qld-sick-child",
+      "url": "https://www.qld.gov.au/health/condition/child-health/babies-and-toddlers/when-your-child-is-sick",
+      "accessed_at": "2026-10-02",
+      "access_status": "official_indexed_relevant_text_read",
+      "locator": "Official indexed full relevant text: Poor feeding and When to see doctor; direct requests timeout/403. Version2017; author-read acknowledgements retained conservatively as shared upstream.",
+      "source_metadata_sha256": "82ced427c8c37d85069de82a8d25b67ab831b13bd8b97643ce25518b50a84880",
+      "independence_group": "AU-QLD-HEALTH"
+    },
+    {
+      "source_id": "sepsis-nhs-antibiotics-effects",
+      "url": "https://www.nhs.uk/medicines/antibiotics/side-effects/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Side effects; allergic reactions; severe emergency signs. Review date2022 and due2025 noted; only stable diarrhoea context used.",
+      "source_metadata_sha256": "fd7b9eba7171b10c687a3ba9a168e95c9dee3da39ff3236b18cc534d49f7551a",
+      "independence_group": "UK-NHS"
+    },
+    {
+      "source_id": "sepsis-asn-recovery",
+      "url": "https://www.australiansepsisnetwork.net.au/wp-content/uploads/2024/05/ASN-Life-After-Sepsis-v1.1-12102020.pdf",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "PDF printed p3 Acknowledgement and p14 Self-care small meals; adapted international provenance",
+      "source_metadata_sha256": "e58eac870d7a771e4f039f952c938e01c28bc6ab72a64ee6042c1dfef26dfa5a",
+      "independence_group": "AU-ASN"
+    },
+    {
+      "source_id": "sepsis-nhs-cuts",
+      "url": "https://www.nhs.uk/conditions/cuts-and-grazes/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Treat/clean/dress cuts; urgent advice for infection signs",
+      "source_metadata_sha256": "39b7a9fdfbe52126161d78fc6848906ce72338b2c014b620345f289e3aed51a3",
+      "independence_group": "UK-NHS"
+    },
+    {
+      "source_id": "sepsis-nhs-catheter",
+      "url": "https://www.nhs.uk/tests-and-treatments/urinary-catheters/living-with/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_relevant_sections_read",
+      "locator": "Preventing infection/complications; when to get medical advice; reviewed2023 due2026, concordant current ADAM source",
+      "source_metadata_sha256": "a8135d6d51e8f8f65130e5f28c45d2236f44b8b170491c7be7c326d3005bddec",
+      "independence_group": "UK-NHS"
+    }
+  ],
+  "accepted_source_ids": [
+    "sepsis-acs-infections",
+    "sepsis-adam-catheter",
+    "sepsis-ashp-azathioprine",
+    "sepsis-asn-recovery",
+    "sepsis-cdc",
+    "sepsis-cdc-antibiotics",
+    "sepsis-cdc-catheter",
+    "sepsis-cdc-chemo-infection",
+    "sepsis-cdc-facts",
+    "sepsis-cdc-hospital-core",
+    "sepsis-cdc-maternal",
+    "sepsis-cdc-prevention",
+    "sepsis-cdc-recovery",
+    "sepsis-healthdirect-general",
+    "sepsis-healthdirect-maternal",
+    "sepsis-idsa-candida",
+    "sepsis-mayo-anaphylaxis",
+    "sepsis-mayo-antibiotics",
+    "sepsis-mayo-causes",
+    "sepsis-mayo-treatment",
+    "sepsis-msd-sepsis",
+    "sepsis-msd-shock",
+    "sepsis-nhlbi-mi-diagnosis",
+    "sepsis-nhs",
+    "sepsis-nhs-anaphylaxis",
+    "sepsis-nhs-antibiotics-effects",
+    "sepsis-nhs-azathioprine",
+    "sepsis-nhs-catheter",
+    "sepsis-nhs-cdiff",
+    "sepsis-nhs-cuts",
+    "sepsis-nhs-dehydration",
+    "sepsis-nice-recognition",
+    "sepsis-niddk-ckd-diet",
+    "sepsis-nkf-ckd-diet",
+    "sepsis-nlm-culture",
+    "sepsis-qld-sick-child",
+    "sepsis-rch-child",
+    "sepsis-ssc-2026",
+    "sepsis-ukhsa-review",
+    "sepsis-who"
+  ],
+  "inherited_evidence": {
+    "path": "reports/batch-01-sepsis-recheck.json",
+    "file_sha256": "5b3dcf177b039ff39067f52678227df63c45d2ff7d81c8b5e73cf2512cb62084",
+    "claim_ids": [
+      "care-0",
+      "care-2",
+      "causes_risks-0",
+      "causes_risks-1",
+      "causes_risks-2",
+      "causes_risks-3",
+      "complications-0",
+      "complications-1",
+      "complications-2",
+      "complications-3",
+      "daily_care-0",
+      "daily_care-1",
+      "diagnosis-0",
+      "diagnosis-2",
+      "diagnosis-4",
+      "diet-0",
+      "differentials-0",
+      "differentials-1",
+      "medications-0",
+      "medications-1",
+      "medications-3",
+      "prevention-0",
+      "prevention-1",
+      "prevention-4",
+      "prognosis_followup-0",
+      "prognosis_followup-1",
+      "prognosis_followup-2",
+      "red_flags-0",
+      "red_flags-1",
+      "red_flags-2",
+      "special_populations-0",
+      "special_populations-3",
+      "summary-0",
+      "summary-1",
+      "summary-2",
+      "treatment-0",
+      "treatment-1",
+      "treatment-2",
+      "treatment-3"
+    ],
+    "source_ids_not_reopened": [
+      "sepsis-acs-infections",
+      "sepsis-cdc",
+      "sepsis-cdc-antibiotics",
+      "sepsis-cdc-catheter",
+      "sepsis-cdc-chemo-infection",
+      "sepsis-cdc-facts",
+      "sepsis-cdc-prevention",
+      "sepsis-mayo-antibiotics",
+      "sepsis-mayo-causes",
+      "sepsis-mayo-treatment",
+      "sepsis-msd-sepsis",
+      "sepsis-msd-shock",
+      "sepsis-who"
+    ],
+    "prior_chain": "reports/batch-01-sepsis-independent.json -> reports/batch-01-sepsis-recheck.json. Author final-followup is not independent acceptance."
+  },
+  "claims": [
+    {
+      "claim_id": "summary-0",
+      "section": "summary",
+      "claim_text_sha256": "ba227d836636ce44e238c5979a42e78e4b10e75224035ef1813e084c81e2c828",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Overview"
+        },
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "What is sepsis?; Causes"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "summary-0",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "summary-1",
+      "section": "summary",
+      "claim_text_sha256": "d5ac26c56d20e078ffc3ca4c6d4770ffe7094f2c8e38490fad58a05412304d49",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "What is sepsis?; Causes"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Signs and symptoms"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "summary-1",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "summary-2",
+      "section": "summary",
+      "claim_text_sha256": "94bffb8a6b4152fd807d638b61d4dd45e441e7dddd3e2a8ca2047d300870d75f",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Overview"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Symptoms; Causes; Complications"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "summary-2",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "causes_risks-0",
+      "section": "causes_risks",
+      "claim_text_sha256": "e046e21fe08396e0919b81f05a71b9d08260b87626735fbaaa556ba8225095f5",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Overview"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Symptoms; Causes; Complications"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "causes_risks-0",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "causes_risks-1",
+      "section": "causes_risks",
+      "claim_text_sha256": "a0bf87310d7297b0e0584a9b7b69843ad228dd6b1082c8020d3c28520ff2e774",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Causes"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Overview"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "causes_risks-1",
+      "prior_status": "verified",
+      "prior_assessment": "CDC Causes and WHO Overview support bacterial, viral and fungal causes."
+    },
+    {
+      "claim_id": "causes_risks-2",
+      "section": "causes_risks",
+      "claim_text_sha256": "5de9f3ae9fc0837935ab41405be346806406bb06244aa71f79a65340982b6265",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-facts",
+          "locator": "PDF p1: Is sepsis contagious?"
+        },
+        {
+          "source_id": "sepsis-rch-child",
+          "locator": "Common questions / Is sepsis contagious?"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "causes_risks-2",
+      "prior_status": "verified",
+      "prior_assessment": "Contagion separated from pathogen list; CDC PDFp1 and RCH FAQ support distinction."
+    },
+    {
+      "claim_id": "causes_risks-3",
+      "section": "causes_risks",
+      "claim_text_sha256": "14d4b2957767d1cd394e8f085a56d67d3f6918fbfbc7f9ac9f542527bcb6767f",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Who is at risk?"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Who’s at risk of getting sepsis"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Risk factors"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "causes_risks-3",
+      "prior_status": "verified",
+      "prior_assessment": "Risk groups supported by WHO/NHS; kidney disease specifically WHO/Mayo. No universal65/75 cutoff."
+    },
+    {
+      "claim_id": "causes_risks-4",
+      "section": "causes_risks",
+      "claim_text_sha256": "42e0a21505e5cf1b383a17e498450cc14579f8c39f6e997df8ce5f47c96d6453",
+      "status": "accepted",
+      "assessment": "Healthdirect risks explicitly include recent surgery and tubes; existing CDC/Mayo risk context is retained. The added source resolves the old source-binding correction.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-facts",
+          "locator": "PDF p1: Who is at risk?"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Risk factors"
+        },
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Etiology of Sepsis and Septic Shock / recent surgery and postoperative infection; Risk factors / invasive devices and recent hospitalization"
+        },
+        {
+          "source_id": "sepsis-healthdirect-general",
+          "locator": "Who is at risk?"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "red_flags-0",
+      "section": "red_flags",
+      "claim_text_sha256": "3a0d5e0d4681dcd201d02484e9ad7560e5317ce78eac8d0d82eaa68190583914",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms; When and where to get medical help"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Signs and symptoms"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "red_flags-0",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "red_flags-1",
+      "section": "red_flags",
+      "claim_text_sha256": "4ee96b3086aab88213e067a9d13c44643b80c374a8f24bd39ee5ababbcdd03f6",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms in adults; When and where to get medical help"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Signs and symptoms; Treatment"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Symptoms of septic shock; When to see a doctor"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "red_flags-1",
+      "prior_status": "verified",
+      "prior_assessment": "Adult confusion/breathing urgent action in NHS/Mayo; Mayo severe sleepiness and NHS suspected-sepsis emergency pathway support hard-waking presentation. WHO child list not used as adult proof."
+    },
+    {
+      "claim_id": "red_flags-2",
+      "section": "red_flags",
+      "claim_text_sha256": "c4bf64cd7e37c7ed44e76598dd85d5e3b8c86c77f8c04fd5cdf40af3d7cb85b1",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms in children; Immediate action / child under 5"
+        },
+        {
+          "source_id": "sepsis-rch-child",
+          "locator": "When to get help / Call an ambulance; Signs and symptoms"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "red_flags-2",
+      "prior_status": "verified",
+      "prior_assessment": "RCH ambulance list and NHS child signs/emergency pathway support actions; baby no-high-fever scope appropriate."
+    },
+    {
+      "claim_id": "red_flags-3",
+      "section": "red_flags",
+      "claim_text_sha256": "8ed1b8cd603bc68ab117dc22709f6ecbc05a1366f0385ed1abb294362ed13296",
+      "status": "accepted",
+      "assessment": "RCH exact under-six-month poor-feeding/not-waking hospital advice is separately attributed from NHS under-five not-feeding emergency advice. Queensland explicitly includes weaker/shorter feeds and prompt assessment, not only total refusal. Its exact urgency, age and common RCH upstream are not overstated.",
+      "evidence": [
+        {
+          "source_id": "sepsis-rch-child",
+          "locator": "When to get help / Go to a hospital: baby under six months, not feeding properly or waking for feeds"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "When and where to get medical help / Immediate action required: baby or child under 5"
+        },
+        {
+          "source_id": "sepsis-qld-sick-child",
+          "locator": "Other signs to watch out for if your child is unwell / Poor feeding; When to see the doctor; Acknowledgement"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "red_flags-4",
+      "section": "red_flags",
+      "claim_text_sha256": "72238639f9fc83998611e2faf1c25ddbb278ed9e13d379e0de3516fad70bb0f0",
+      "status": "accepted",
+      "assessment": "RCH and NHS dehydration distinguish reduced intake/urine needing prompt assessment from marked lethargy or severe deterioration needing emergency care; no universal infant fluid prescription.",
+      "evidence": [
+        {
+          "source_id": "sepsis-rch-child",
+          "locator": "When to get help / See a doctor or health professional; Go to a hospital"
+        },
+        {
+          "source_id": "sepsis-nhs-dehydration",
+          "locator": "Urgent advice; Immediate action required"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "care-0",
+      "section": "care",
+      "claim_text_sha256": "a0ab89fbbdbb25c11a2d46a69f36ea68db9fb2b5379af8c0930e0ef691c0306a",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms; When and where to get medical help"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Signs and symptoms"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "care-0",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "care-1",
+      "section": "care",
+      "claim_text_sha256": "857dcfe300462318b535e69156f557ff980e9e293fe60f2d2ce889fe03ff6c6f",
+      "status": "accepted",
+      "assessment": "Communication of changes and bringing medicines/allergy information are practical preparation, supported by NHS and the underlying symptom sources; not a diagnostic score or outcome-benefit claim.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-prevention",
+          "locator": "Act fast; Know sepsis signs"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms; When and where to get medical help"
+        },
+        {
+          "source_id": "sepsis-mayo-anaphylaxis",
+          "locator": "Prevention"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "care-2",
+      "section": "care",
+      "claim_text_sha256": "1f75ca3e49a1e9c3f5fe66c419422bfbc13c8d522faf3299d855b99e2e46f58d",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Getting sepsis again"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Complications; Repeat infections"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms; When and where to get medical help"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "care-2",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "diagnosis-0",
+      "section": "diagnosis",
+      "claim_text_sha256": "8e8407800a4c6d70e23011053effc92f3972e8268c516b91f5e3f240d6a62e63",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Diagnosis"
+        },
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Diagnosis"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "diagnosis-0",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "diagnosis-1",
+      "section": "diagnosis",
+      "claim_text_sha256": "f2babbcf91c91d46086764af879f7402fe50e90bc96931567196ad6f214f5892",
+      "status": "accepted",
+      "assessment": "Healthdirect assessment/close hospital monitoring and SSC adult reassessment substantiate repeated observations. No home rule-out score is asserted.",
+      "evidence": [
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Symptoms and Signs; Diagnosis"
+        },
+        {
+          "source_id": "sepsis-msd-shock",
+          "locator": "Evaluation / Initial evaluation and diagnosis"
+        },
+        {
+          "source_id": "sepsis-healthdirect-general",
+          "locator": "How is sepsis diagnosed?; How is sepsis treated?"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Ongoing assessment of resuscitation; Oxygen targets"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "diagnosis-2",
+      "section": "diagnosis",
+      "claim_text_sha256": "b9e638bbf05bd5281e521592114a4b16820367fe6938b5e5e4f681d5c322a659",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Diagnosis / Blood tests; Other lab tests; Imaging tests"
+        },
+        {
+          "source_id": "sepsis-msd-shock",
+          "locator": "Initial evaluation / Initial laboratory tests"
+        },
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Diagnosis"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "diagnosis-2",
+      "prior_status": "verified_shared_upstream",
+      "prior_assessment": "Mayo diagnosis/MSD evaluation support test list and selection by suspected source. Independent compositions with shared Merck/clinical literature, not independent research replication."
+    },
+    {
+      "claim_id": "diagnosis-3",
+      "section": "diagnosis",
+      "claim_text_sha256": "fb929112808497813b8b162f86e3e8ec8ff3aeaee29b35df93274ae7e932e5bc",
+      "status": "accepted",
+      "assessment": "NLM defines culture and susceptibility testing; SSC adult and RCH child guidance explicitly reject a single definitive sepsis test. Cultures do not exclude sepsis alone.",
+      "evidence": [
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Biomarkers; Blood culture"
+        },
+        {
+          "source_id": "sepsis-rch-child",
+          "locator": "Common questions / How do doctors diagnose sepsis?"
+        },
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Diagnosis"
+        },
+        {
+          "source_id": "sepsis-nlm-culture",
+          "locator": "What is a bacteria culture test?; Blood culture"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "diagnosis-4",
+      "section": "diagnosis",
+      "claim_text_sha256": "76628a7895afd1edd0469fb82c695e0283c5cff50d0f60fc030217007bb6954b",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Fluid resuscitation / Good practice statement"
+        },
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Diagnosis; Treatment"
+        },
+        {
+          "source_id": "sepsis-rch-child",
+          "locator": "How to care for sepsis"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "diagnosis-4",
+      "prior_status": "verified",
+      "prior_assessment": "SSC/CDC immediate care; RCH pediatric hospital fluids/medicines. Adult attribution present; no adult dose extrapolated."
+    },
+    {
+      "claim_id": "differentials-0",
+      "section": "differentials",
+      "claim_text_sha256": "7a56e1163a3c9957894c82de75a469c2fe24cc28a15bf6fb75ec3cb821836e44",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Antimicrobial therapy / unconfirmed infection"
+        },
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Symptoms; Diagnosis"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "differentials-0",
+      "prior_status": "verified_shared_upstream",
+      "prior_assessment": "SSC alternative-cause review and MSD clinical differential support; shared Sepsis3/SSC literature acknowledged."
+    },
+    {
+      "claim_id": "differentials-1",
+      "section": "differentials",
+      "claim_text_sha256": "6cc6166ee30b24a75fb8881e3bdc3ffcf334d224fe6b0720d35d84c290344464",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs-dehydration",
+          "locator": "Symptoms; Causes; Urgent advice; Immediate action"
+        },
+        {
+          "source_id": "sepsis-msd-shock",
+          "locator": "Hypovolemic shock; Body Fluid Loss table; Evaluation"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "differentials-1",
+      "prior_status": "verified",
+      "prior_assessment": "NHS dehydration plus MSD hypovolemia/history support clues; text offers no home diagnosis rule."
+    },
+    {
+      "claim_id": "differentials-2",
+      "section": "differentials",
+      "claim_text_sha256": "e527f829d9fbbbb8cad120884ce47ac829f0c20d6e54b52d2b9e11fb4bf24844",
+      "status": "accepted",
+      "assessment": "NHS and Mayo directly support rapid allergy-associated airway/swelling/circulatory danger. This explanatory differential does not direct lay diagnostic exclusion.",
+      "evidence": [
+        {
+          "source_id": "sepsis-mayo-anaphylaxis",
+          "locator": "Overview; Symptoms; When to see a doctor; Causes"
+        },
+        {
+          "source_id": "sepsis-msd-shock",
+          "locator": "Distributive shock"
+        },
+        {
+          "source_id": "sepsis-nhs-anaphylaxis",
+          "locator": "Symptoms; Immediate action required; What to do if you have anaphylaxis; Causes"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "differentials-3",
+      "section": "differentials",
+      "claim_text_sha256": "9fe5f2f6ca5888700426cc62a3cd768df50ea22c4451de396a32c66a1ccaf861",
+      "status": "accepted",
+      "assessment": "NHLBI supports history, ECG and troponin evaluation of MI; SSC inotropes explicitly recognises septic shock with cardiac dysfunction. Neither is misrepresented as accuracy of one test; old MSD clinical distinction is retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Diagnosis / Other causes of shock"
+        },
+        {
+          "source_id": "sepsis-msd-shock",
+          "locator": "Cardiogenic shock; Evaluation"
+        },
+        {
+          "source_id": "sepsis-nhlbi-mi-diagnosis",
+          "locator": "Electrocardiogram; Blood tests"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Inotropes"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "differentials-4",
+      "section": "differentials",
+      "claim_text_sha256": "46adf660139ca18f89c00ff13d69fa3d0c4eff45e7ebd3f230e725f188047e28",
+      "status": "accepted",
+      "assessment": "SSC ongoing reassessment/alternative diagnosis and UKHSA Start Smart Then Focus support clinician review and antibiotic cessation where infection is ruled out. Not patient self-stopping advice.",
+      "evidence": [
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Antimicrobial therapy / unconfirmed infection"
+        },
+        {
+          "source_id": "sepsis-ukhsa-review",
+          "locator": "Section 2 Then focus: antimicrobial review outcomes, Cease"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "treatment-0",
+      "section": "treatment",
+      "claim_text_sha256": "b82a296fd54abab8130b275362ab151df8699e500920b9821672e6a2fe9ac347",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "sepsis-cdc",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Medications; Supportive care; Surgery"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "treatment-0",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "treatment-1",
+      "section": "treatment",
+      "claim_text_sha256": "404507c84c30155589b893bee14ca690cf141cc16106262e2db553b3dc60ca99",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Medications; Surgery"
+        },
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Infection source control"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Source control"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "treatment-1",
+      "prior_status": "verified_shared_upstream",
+      "prior_assessment": "Mayo surgery/MSD source control support abscess/dead tissue; SSC supports principle. MSD cites SSC2021; shared upstream disclosed."
+    },
+    {
+      "claim_id": "treatment-2",
+      "section": "treatment",
+      "claim_text_sha256": "0e3c9f7e250911972385dc8b4c8544cea340cc3a103c8e7a3a06fb2e553c6ccf",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-catheter",
+          "locator": "Treatment and recovery; Reducing risk / Patients"
+        },
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Infection source control"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "treatment-2",
+      "prior_status": "verified",
+      "prior_assessment": "CDC CAUTI clinician-directed removal/change and MSD urinary-catheter source control explicitly support new specific scope."
+    },
+    {
+      "claim_id": "treatment-3",
+      "section": "treatment",
+      "claim_text_sha256": "3792c17173d01608473349dba99919d34a39c7ad9fd5ccefb0fd73c219e1db5e",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Medications; Supportive care"
+        },
+        {
+          "source_id": "sepsis-who",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Fluid resuscitation; Vasopressors; Mechanical ventilation; Renal replacement therapy"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "treatment-3",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "medications-0",
+      "section": "medications",
+      "claim_text_sha256": "8c12d26cd9a8e6c9e45ddebf2fe99a36ce36ca2f4ed04a1eae2eb454e032dbf0",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Medications; Supportive care; Surgery"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "medications-0",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "medications-1",
+      "section": "medications",
+      "claim_text_sha256": "6be832e0e508a0664b7ed6038df27f4b07c90d4501d1585f6b8f35176f21f501",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Treatment for sepsis"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Antimicrobial de-escalation"
+        },
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Antibiotics"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "medications-1",
+      "prior_status": "verified_shared_upstream",
+      "prior_assessment": "NHS general-to-specific treatment, SSC/MSD culture-susceptibility narrowing support. MSD cites SSC2021; not three independent evidence bases."
+    },
+    {
+      "claim_id": "medications-2",
+      "section": "medications",
+      "claim_text_sha256": "d2ac85153370ea584eb0ba41c51bc90f49fdd2157a4de9b635d346bf2029fc75",
+      "status": "accepted",
+      "assessment": "SSC 2026 adult antifungal use is risk-selected, not routine. IDSA section V recommendation28 is narrower non-neutropenic ICU candidiasis guidance. Bacterial versus viral/fungal antimicrobial mechanisms retain prior support; no empiric universal antifungal prescription.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-antibiotics",
+          "locator": "Take antibiotics ONLY when needed / viruses"
+        },
+        {
+          "source_id": "sepsis-acs-infections",
+          "locator": "Treating infections in people with cancer"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Antifungal coverage"
+        },
+        {
+          "source_id": "sepsis-idsa-candida",
+          "locator": "Section V recommendation 28; evidence summary"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "medications-3",
+      "section": "medications",
+      "claim_text_sha256": "7c1b7fe4b11b5faa424e0fb026dd165ca614313aa4747af97537d3ce88a70780",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-antibiotics",
+          "locator": "Take antibiotics exactly as prescribed"
+        },
+        {
+          "source_id": "sepsis-mayo-antibiotics",
+          "locator": "Antibiotic stewardship bullets"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "medications-3",
+      "prior_status": "verified_shared_upstream",
+      "prior_assessment": "CDC and Mayo authored patient instructions support prescribed use/no leftover/other-person antibiotics. Mayo cites CDC do/dont; shared upstream retained, not independent trials."
+    },
+    {
+      "claim_id": "medications-4",
+      "section": "medications",
+      "claim_text_sha256": "e483ff839523d51d95f781e0ddeb1820b6f9d8839a2c6ce159c0d28e59a1ef44",
+      "status": "accepted",
+      "assessment": "NHS C. difficile directly supports diarrhoea during/recent antibiotic use requiring prompt clinical contact; general adverse-effect material is not substituted for this exact risk.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-antibiotics",
+          "locator": "Talk to provider about side effects"
+        },
+        {
+          "source_id": "sepsis-nhs-antibiotics-effects",
+          "locator": "Side effects"
+        },
+        {
+          "source_id": "sepsis-nhs-cdiff",
+          "locator": "Causes; Urgent advice"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "medications-5",
+      "section": "medications",
+      "claim_text_sha256": "3b9db64421afdd4542aede405d71240e30d58c37ce1fb3151af45bebc5d32c2c",
+      "status": "accepted",
+      "assessment": "NHS and Mayo anaphylaxis support the emergency airway/circulation signs after medicine exposure. No antihistamine-only response is advised.",
+      "evidence": [
+        {
+          "source_id": "sepsis-mayo-anaphylaxis",
+          "locator": "Symptoms; When to see a doctor; Causes"
+        },
+        {
+          "source_id": "sepsis-nhs-anaphylaxis",
+          "locator": "Symptoms; Immediate action required; What to do if you have anaphylaxis; Causes"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "diet-0",
+      "section": "diet",
+      "claim_text_sha256": "921d2190e7794f3cb865c6cbfefdedbf2176a8d852f4a2369f07bdeeeafb7354",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Treatment for sepsis"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Recovering from sepsis"
+        },
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "First steps; Home recovery tips"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "diet-0",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "diet-1",
+      "section": "diet",
+      "claim_text_sha256": "7d3206681f4801554482791013cf9e5b3d64646f0832a5a74d7ce46bcc0498ca",
+      "status": "accepted",
+      "assessment": "NHS explicitly gives small frequent meals during recovery; ASN p14 corroborates ordinary supportive practice but p3 discloses adapted international material. One clear authoritative source suffices for this unquantified low-risk recovery suggestion; no independent trial efficacy or wholly independent second origin claimed.",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Recovering from sepsis"
+        },
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "After you get home; Home recovery tips; Managing the effects"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Patient support; Post-hospital evaluation"
+        },
+        {
+          "source_id": "sepsis-asn-recovery",
+          "locator": "Printed pages 3, 14–15"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "diet-2",
+      "section": "diet",
+      "claim_text_sha256": "09d4e63c71d09ecdbe5532becc3af62512646eb5bc02287524b63bc758c9ee88",
+      "status": "accepted",
+      "assessment": "NIDDK and NKF adult kidney guidance supports individual fluid/protein needs; dialysis status matters. Article preserves adult scope and avoids indiscriminate restriction or high-protein advice.",
+      "evidence": [
+        {
+          "source_id": "sepsis-niddk-ckd-diet",
+          "locator": "Liquids; Protein; How can I eat healthy with CKD?"
+        },
+        {
+          "source_id": "sepsis-nkf-ckd-diet",
+          "locator": "Nutrients to manage; Protein; Fluids"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "diet-3",
+      "section": "diet",
+      "claim_text_sha256": "162a950b212bcb3a15b0ded860ebb89a6383099749eed0c6b31fb42988e99f1f",
+      "status": "accepted",
+      "assessment": "SSC distinguishes hospital nutrition support from treatment of sepsis. Ordinary explanation that diet cannot replace acute care is supported by the emergency treatment context, without a new nutrition regimen.",
+      "evidence": [
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Medications; Supportive care"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Enteral nutrition"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "daily_care-0",
+      "section": "daily_care",
+      "claim_text_sha256": "8699af1694a368e3941280b2b9424e38c065cd0a6b4d4ce239e1e47387c7d2ca",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "First steps; Home recovery tips"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Recovering from sepsis"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "daily_care-0",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "daily_care-1",
+      "section": "daily_care",
+      "claim_text_sha256": "efad30ca0976070f9f8c84e712ddd043c92337ac870220ea9f1dd248587e0120",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "First steps; Home recovery tips"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Recovering from sepsis"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "daily_care-1",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "daily_care-2",
+      "section": "daily_care",
+      "claim_text_sha256": "4b97ba848644acb2c06ad9745714c484248b765d1158f2b5fdb55462b876e84c",
+      "status": "accepted",
+      "assessment": "CDC hospital core elements and SSC discharge recommendations support family involvement, medication reconciliation and follow-up information. Record keeping is a practical aid, not an outcome guarantee.",
+      "evidence": [
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Medication reconciliation; Hospital discharge"
+        },
+        {
+          "source_id": "sepsis-cdc-hospital-core",
+          "locator": "Discharge planning and care coordination; patient and family engagement"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "daily_care-3",
+      "section": "daily_care",
+      "claim_text_sha256": "9299004db3651fc96f0edb1ce9d34a8a7b02413832fcafbad7cd06944ffcc854",
+      "status": "accepted",
+      "assessment": "CDC recovery and NHS describe nightmares and emotional/cognitive recovery problems; SSC recommends follow-up and support. No unsupported psychiatric diagnosis inferred.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "After you get home; Managing the effects"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Post-sepsis syndrome; Recovering"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Long-term outcomes: cognitive, physical and emotional assessment; mental health support"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "special_populations-0",
+      "section": "special_populations",
+      "claim_text_sha256": "44585d86090ab681b579629e99d6bd990ce2d3a52450a28ea16ce5f638f875a7",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Who is at risk?"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Who is at risk?"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "special_populations-0",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "special_populations-1",
+      "section": "special_populations",
+      "claim_text_sha256": "9716771f1911c05eb0b41c79fcac9c15d4f66bad22255647e1df571928968ac4",
+      "status": "accepted",
+      "assessment": "RCH infant feeding and responsiveness presentation and exact under-six-month hospital advice are retained; Queensland corroborates prompt assessment of feeding change with shared-upstream limits. NHS age/meaning differences remain explicit.",
+      "evidence": [
+        {
+          "source_id": "sepsis-rch-child",
+          "locator": "Signs and symptoms; When to get help / Go to a hospital: baby under six months"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms in children; Immediate action required / child under 5"
+        },
+        {
+          "source_id": "sepsis-qld-sick-child",
+          "locator": "Other signs to watch out for if your child is unwell / Poor feeding; When to see the doctor; Acknowledgement"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "special_populations-2",
+      "section": "special_populations",
+      "claim_text_sha256": "dede522e7c1f659ce3861f2191ad2fad4c7e62e59dddb3083419c5192f39b10e",
+      "status": "accepted",
+      "assessment": "NHS and NICE NG253 1.1.2–1.1.4 support absent fever in older adults and family descriptions of usual behaviour. Adult NICE guidance not presented as a neonatal protocol.",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms in adults; Noticing sepsis symptoms"
+        },
+        {
+          "source_id": "sepsis-msd-sepsis",
+          "locator": "Symptoms and Signs"
+        },
+        {
+          "source_id": "sepsis-nice-recognition",
+          "locator": "1.1.2–1.1.4"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "special_populations-3",
+      "section": "special_populations",
+      "claim_text_sha256": "06a3e0b0ab97a49c99bdc0119eca3d73d64494c64a95c29c1e5c10f8a99a3230",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-chemo-infection",
+          "locator": "What to know; Signs and symptoms"
+        },
+        {
+          "source_id": "sepsis-acs-infections",
+          "locator": "Signs and symptoms; When to get help"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "special_populations-3",
+      "prior_status": "verified",
+      "prior_assessment": "CDC chemotherapy and ACS/ASCO independently require immediate contact for stated infection signs in cancer-treatment/low-white-count context. No new temperature cutoff; ACS shock definition excluded."
+    },
+    {
+      "claim_id": "special_populations-4",
+      "section": "special_populations",
+      "claim_text_sha256": "82526590499e0046efc3cb7177488cc172d2a19476dfc324f5120841fae4c83d",
+      "status": "accepted",
+      "assessment": "Direct ASHP azathioprine warning and NHS azathioprine advice support urgent infection assessment for this named immunosuppressant. Earlier broad rheumatology generalisation has been removed.",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs-azathioprine",
+          "locator": "About azathioprine / Key facts: urgent advice if you get an infection"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "When and where to get medical help / Immediate action required"
+        },
+        {
+          "source_id": "sepsis-ashp-azathioprine",
+          "locator": "IMPORTANT WARNING"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "special_populations-5",
+      "section": "special_populations",
+      "claim_text_sha256": "c91114a9527e9cbc789b1ac64a87b7d01353bb3c73e4a17d63aadbfaa24e89cd",
+      "status": "accepted",
+      "assessment": "CDC Hear Her/AIM maternal warning list and Australian Pregnancy Birth Baby support urgent assessment during pregnancy/after childbirth, including fever, foul discharge, breathing trouble and severe abdominal pain. Does not constitute complete neonatal/puerperal sepsis coverage.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-maternal",
+          "locator": "Key points; Severe belly pain; Trouble breathing; Vaginal discharge"
+        },
+        {
+          "source_id": "sepsis-healthdirect-maternal",
+          "locator": "Symptoms; When should I see my doctor?; urgent opening advice"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "prognosis_followup-0",
+      "section": "prognosis_followup",
+      "claim_text_sha256": "2db971ee9002471b5b08d934969c4193d4deec680ead72cf9b717472cd0e1d0d",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Recovering from sepsis"
+        },
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Long-term effects; Managing effects"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "prognosis_followup-0",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "prognosis_followup-1",
+      "section": "prognosis_followup",
+      "claim_text_sha256": "7edf6209d419ffdf19470f9aa27e94b8e9764d3768fb8e72c7050a8f697d8096",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Long-term effects; Managing effects"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Complications; Repeat infections"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "prognosis_followup-1",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "prognosis_followup-2",
+      "section": "prognosis_followup",
+      "claim_text_sha256": "b6532dae53a83730708dbc08e2541874ccffb41d0d7277849ccac828e85c4e39",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Getting sepsis again"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Complications; Repeat infections"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "prognosis_followup-2",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "complications-0",
+      "section": "complications",
+      "claim_text_sha256": "05d86ceca54fc024273b27d855efd655049de1b72ee8e18ba80f19acbfc5c4f3",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Overview"
+        },
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Symptoms; Causes; Complications"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "complications-0",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "complications-1",
+      "section": "complications",
+      "claim_text_sha256": "f5ec91b37fdaadcf3b82ae49afa32def6efe74cb8f293797dfb36b7680a3938c",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-mayo-treatment",
+          "locator": "Supportive care"
+        },
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Long-term effects"
+        },
+        {
+          "source_id": "sepsis-rch-child",
+          "locator": "What is sepsis?; Follow up"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "complications-1",
+      "prior_status": "verified",
+      "prior_assessment": "Mayo oxygen/dialysis, RCH organs/supportive care, CDC/RCH long-term problems support simplified paragraph; pediatric and general populations recorded separately."
+    },
+    {
+      "claim_id": "complications-2",
+      "section": "complications",
+      "claim_text_sha256": "37f2d6cffa045a6a5b677074a2f68aab03c0a33130211283d653d870d007c247",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-mayo-causes",
+          "locator": "Complications"
+        },
+        {
+          "source_id": "sepsis-msd-shock",
+          "locator": "Distributive shock / septic shock microvascular obstruction"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "complications-2",
+      "prior_status": "verified_shared_upstream",
+      "prior_assessment": "Mayo Complications/MSD shock microvascular section support clotting/tissue damage. Mayo cites MSD sepsis upstream; no incidence or independent-trial claim."
+    },
+    {
+      "claim_id": "complications-3",
+      "section": "complications",
+      "claim_text_sha256": "4ecb501dc438887bd735aa199d340eefea57c2d5180ef5031bcdcaf190745cff",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Post-sepsis syndrome; Repeat infections"
+        },
+        {
+          "source_id": "sepsis-cdc-recovery",
+          "locator": "Long-term effects; Getting sepsis again"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "complications-3",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "prevention-0",
+      "section": "prevention",
+      "claim_text_sha256": "8762ede3dc9dbf71598af8919cd1817ef0e78adb14a5820f6f761b773a199996",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Prevention"
+        },
+        {
+          "source_id": "sepsis-cdc-prevention",
+          "locator": "Prevention strategies; People with cancer"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "prevention-0",
+      "prior_status": "inherited_verified",
+      "prior_assessment": "Unchanged bilingual claim; inherited prior independent verification, not author pending status."
+    },
+    {
+      "claim_id": "prevention-1",
+      "section": "prevention",
+      "claim_text_sha256": "306c6a4013bdcd007bfa36a8ce2e8ee051fd27f03f454e0c9dc9af8f7959604a",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-who",
+          "locator": "Prevention"
+        },
+        {
+          "source_id": "sepsis-cdc-prevention",
+          "locator": "Prevent infections; Practice good hygiene"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "prevention-1",
+      "prior_status": "verified",
+      "prior_assessment": "WHO local vaccination/CDC reduction of some infections support appropriate limit; no universal protection claimed."
+    },
+    {
+      "claim_id": "prevention-2",
+      "section": "prevention",
+      "claim_text_sha256": "f8bf7bf2c5c5e003650d879fa125c2ccaf8f4f7ae2790bacf95e9db30869c2db",
+      "status": "accepted",
+      "assessment": "NHS cuts supports cleaning/dressing and infection review; CDC hospital/SSC support chronic care and medication reconciliation. No quantified generic risk reduction asserted.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-prevention",
+          "locator": "Prevent infections; Practice good hygiene"
+        },
+        {
+          "source_id": "sepsis-nhs-cuts",
+          "locator": "How to treat; How to clean and dress a cut or graze"
+        },
+        {
+          "source_id": "sepsis-cdc-hospital-core",
+          "locator": "Discharge planning and care coordination"
+        },
+        {
+          "source_id": "sepsis-ssc-2026",
+          "locator": "Long-term outcomes: medication reconciliation; post-discharge follow-up"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "prevention-3",
+      "section": "prevention",
+      "claim_text_sha256": "7f313254cfe42362b4234ac80be0020c3d0b43edad69f48ffc67a85844fca4ec",
+      "status": "accepted",
+      "assessment": "NHS catheter guidance and ADAM catheter care support hand hygiene, avoiding kinks, bag below bladder and contacting staff for fever/obstruction. No autonomous catheter removal or universal fluid target.",
+      "evidence": [
+        {
+          "source_id": "sepsis-nhs-catheter",
+          "locator": "Opening; Preventing infections; When to get medical advice"
+        },
+        {
+          "source_id": "sepsis-cdc-catheter",
+          "locator": "Reducing risk / Patients"
+        },
+        {
+          "source_id": "sepsis-adam-catheter",
+          "locator": "Drainage bags; Caring for your indwelling catheter; When to contact a medical professional"
+        }
+      ],
+      "verification_mode": "current_claim_and_source_recheck"
+    },
+    {
+      "claim_id": "prevention-4",
+      "section": "prevention",
+      "claim_text_sha256": "2fd0cdbb3bb4188784dc5699bf55cf83461b5bdbf49831d92552876efd18ee80",
+      "status": "accepted",
+      "assessment": "Unchanged bilingual claim, exact text hash verified against prior independent recheck. Prior assessment and shared-upstream limits retained.",
+      "evidence": [
+        {
+          "source_id": "sepsis-cdc-prevention",
+          "locator": "Know sepsis signs; Act fast"
+        },
+        {
+          "source_id": "sepsis-nhs",
+          "locator": "Symptoms; When and where to get medical help"
+        }
+      ],
+      "verification_mode": "inherited_independent_verification",
+      "prior_report": "reports/batch-01-sepsis-recheck.json",
+      "prior_claim_id": "prevention-4",
+      "prior_status": "verified",
+      "prior_assessment": "CDC immediate help for worsening/non-improving infection and NHS awareness/breathing emergency path support action. Caregiver awareness is practical use."
+    }
+  ],
+  "sections": [
+    {
+      "section": "summary",
+      "content_sha256": "b50c6d4660a1afcbff1239cc2d8024dd7a55c827da6bf4f218303d9774b972b7",
+      "claim_ids": [
+        "summary-0",
+        "summary-1",
+        "summary-2"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English preserve the same population, regional attribution, conditions and actions."
+    },
+    {
+      "section": "causes_risks",
+      "content_sha256": "6c6f71374436c761970bde3586a6f3ac997019ed4fb3a552f06d394242e13414",
+      "claim_ids": [
+        "causes_risks-0",
+        "causes_risks-1",
+        "causes_risks-2",
+        "causes_risks-3",
+        "causes_risks-4"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English preserve the same population, regional attribution, conditions and actions."
+    },
+    {
+      "section": "red_flags",
+      "content_sha256": "6221635cede4f6a45a5af2e348add0ca5f4060fd9ecb3bbd68649429c8365099",
+      "claim_ids": [
+        "red_flags-0",
+        "red_flags-1",
+        "red_flags-2",
+        "red_flags-3",
+        "red_flags-4"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English preserve the same population, regional attribution, conditions and actions."
+    },
+    {
+      "section": "care",
+      "content_sha256": "4a132a75f41c0a2975fce99af0c54bc3fea2d0055bb0bda57a19c54021dab5ea",
+      "claim_ids": [
+        "care-0",
+        "care-1",
+        "care-2"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English preserve the same population, regional attribution, conditions and actions."
+    },
+    {
+      "section": "diagnosis",
+      "content_sha256": "5953fe163268548441930968510d30e2f25fe7344eeb08448f0ec0f694451109",
+      "claim_ids": [
+        "diagnosis-0",
+        "diagnosis-1",
+        "diagnosis-2",
+        "diagnosis-3",
+        "diagnosis-4"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English preserve the same population, regional attribution, conditions and actions."
+    },
+    {
+      "section": "differentials",
+      "content_sha256": "ab15fd5fdb48d5af4a8fc76bee084d9cc2a2b4270a44e82b0e668c138fd0b17f",
+      "claim_ids": [
+        "differentials-0",
+        "differentials-1",
+        "differentials-2",
+        "differentials-3",
+        "differentials-4"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English preserve the same population, regional attribution, conditions and actions."
+    },
+    {
+      "section": "treatment",
+      "content_sha256": "b75197d2a579b876985bc177195c65de7192272ee8395ae4ec4a9dd07d04f581",
+      "claim_ids": [
+        "treatment-0",
+        "treatment-1",
+        "treatment-2",
+        "treatment-3"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English preserve the same population, regional attribution, conditions and actions."
+    },
+    {
+      "section": "medications",
+      "content_sha256": "3840b9eae06eeba89fddaf9e6898f0bea1b61eeb3ebce0c269385336cc35bbf2",
+      "claim_ids": [
+        "medications-0",
+        "medications-1",
+        "medications-2",
+        "medications-3",
+        "medications-4",
+        "medications-5"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English preserve the same population, regional attribution, conditions and actions."
+    },
+    {
+      "section": "diet",
+      "content_sha256": "18c44200cd9c6320d805c0e83cd77be3cd9ab39159a702afa2aa27b15939c26a",
+      "claim_ids": [
+        "diet-0",
+        "diet-1",
+        "diet-2",
+        "diet-3"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English preserve the same population, regional attribution, conditions and actions."
+    },
+    {
+      "section": "daily_care",
+      "content_sha256": "4c68c2f871a2590b75d9c9c8bb7d24c5b88a91f8ea8ab8273f6519c275126bdd",
+      "claim_ids": [
+        "daily_care-0",
+        "daily_care-1",
+        "daily_care-2",
+        "daily_care-3"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English preserve the same population, regional attribution, conditions and actions."
+    },
+    {
+      "section": "special_populations",
+      "content_sha256": "9bc68aec68581132e3384f74b4b243968fa9a5ab74a0553093877fa8191fb1f3",
+      "claim_ids": [
+        "special_populations-0",
+        "special_populations-1",
+        "special_populations-2",
+        "special_populations-3",
+        "special_populations-4",
+        "special_populations-5"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English preserve the same population, regional attribution, conditions and actions."
+    },
+    {
+      "section": "prognosis_followup",
+      "content_sha256": "5aaf26859519cf6743f555b6658f0559209591663e3fbdd892aebbdca6bdcf73",
+      "claim_ids": [
+        "prognosis_followup-0",
+        "prognosis_followup-1",
+        "prognosis_followup-2"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English preserve the same population, regional attribution, conditions and actions."
+    },
+    {
+      "section": "complications",
+      "content_sha256": "b695f7980f3f9e4651ec383d527f33a9f0edc78afd0f56a46cb2c55dcae14592",
+      "claim_ids": [
+        "complications-0",
+        "complications-1",
+        "complications-2",
+        "complications-3"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English preserve the same population, regional attribution, conditions and actions."
+    },
+    {
+      "section": "prevention",
+      "content_sha256": "31c66a31af54d6d9a0157e73c31d5578620be1e9c45ee2da1aa739200791c418",
+      "claim_ids": [
+        "prevention-0",
+        "prevention-1",
+        "prevention-2",
+        "prevention-3",
+        "prevention-4"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English preserve the same population, regional attribution, conditions and actions."
+    }
+  ],
+  "findings": [
+    {
+      "id": "P0-SEPSIS-INFANT-BINDING",
+      "status": "resolved",
+      "claim_ids": [
+        "red_flags-3",
+        "special_populations-1"
+      ],
+      "resolution": "RCH exact under-six-month poor-feeding/not-waking hospital advice is separately attributed from NHS under-five not-feeding emergency advice. Queensland explicitly includes weaker/shorter feeds and prompt assessment, not only total refusal. Its exact urgency, age and common RCH upstream are not overstated."
+    },
+    {
+      "id": "P0-SEPSIS-DIET-PROVENANCE",
+      "status": "resolved",
+      "claim_ids": [
+        "diet-1"
+      ],
+      "resolution": "NHS explicitly gives small frequent meals during recovery; ASN p14 corroborates ordinary supportive practice but p3 discloses adapted international material. One clear authoritative source suffices for this unquantified low-risk recovery suggestion; no independent trial efficacy or wholly independent second origin claimed."
+    }
+  ],
+  "resolved_author_questions": [
+    {
+      "section": "diet",
+      "question": "Small frequent meals are low-risk supportive recovery advice; ASN acknowledges adapted provenance and is not asserted as a wholly independent second evidence origin. Independent review must preserve that distinction.",
+      "resolution": "This is an evidence-provenance boundary, not an unresolved medical support issue. Retain it in evidence_boundaries; root may clear the pending question when applying this accepted hash-bound review."
+    }
+  ],
+  "evidence_boundaries": [
+    "Independent editorial review is not clinician sign-off; all medical_reviewed flags remain false.",
+    "RCH exact under-six-month hospital advice is a named regional rule; Queensland corroborates prompt feeding-change assessment, not identical cutoff or emergency transport. Queensland acknowledges common RCH material; no independent research replication claimed.",
+    "NHS small frequent meals is direct ordinary recovery advice. ASN acknowledges adapted international material and is not a wholly independent underlying source.",
+    "IDSA antifungal guidance is selected non-neutropenic ICU candidiasis; SSC2026 is adult sepsis. Shared clinical literature is explicit; no universal child regimen.",
+    "Thirteen source objects retain the exact accepted-claim inheritance above; they were not all reopened in this review. Acceptance applies to the bounded uses, not all statements elsewhere on source websites."
+  ],
+  "unresolved_questions": [],
+  "resolution": "All62 bilingual claims are adequately supported at the lay encyclopedia standard. The single infant binding issue was repaired without changing wording, then rechecked. Current source/section/content hashes match; no remaining substantive medical or evidentiary issue. Pending author status can be resolved by root using this report. ICD scope and deployment are outside this review.",
+  "validation": {
+    "all_section_hashes_match": true,
+    "all_source_metadata_hashes_match": true,
+    "bilingual_claim_substrings_match": true,
+    "all39_inherited_text_hashes_match": true
+  }
+}

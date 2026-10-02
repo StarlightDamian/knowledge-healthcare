@@ -1,0 +1,3369 @@
+[
+  {
+    "id": "p0-01-anaphylaxis-summary",
+    "target": {
+      "kind": "condition",
+      "id": "anaphylaxis",
+      "section": "summary"
+    },
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading and synthesis by /root/priority_medical_rules",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "严重过敏反应是可能迅速影响呼吸或血液循环的全身过敏反应，也称 anaphylaxis。",
+          "en": "Anaphylaxis is a systemic allergic reaction that can rapidly threaten breathing or circulation."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-aaaai",
+            "locator": "Overview",
+            "assessment": "Defines rapid severe systemic allergic reaction."
+          },
+          {
+            "source_id": "anaphylaxis-p0-ascia",
+            "locator": "Definition",
+            "assessment": "Potentially life-threatening respiratory/circulatory compromise."
+          }
+        ],
+        "id": "summary-0"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "它不只是皮肤发痒：喉咙肿胀会妨碍空气进入，气道收缩会引起喘鸣，血压下降可导致头晕或倒下；有时还伴腹痛、呕吐。",
+          "en": "It is more than itching: throat swelling obstructs airflow, tightened airways cause wheezing, and falling blood pressure can cause dizziness or collapse; abdominal pain or vomiting may accompany it."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-adam",
+            "locator": "Causes; Symptoms",
+            "assessment": "Airway narrowing and multi-system symptoms."
+          },
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "Sections 2–3",
+            "assessment": "Airway/breathing/circulation manifestations."
+          }
+        ],
+        "id": "summary-1"
+      },
+      {
+        "kind": "risk",
+        "text": {
+          "zh-CN": "没有皮疹，或之前同样的接触只出现轻微反应，都不能排除这次发生严重反应。识别依据是当下的呼吸、意识和循环变化。",
+          "en": "An absent rash, or a previously mild reaction to the same exposure, does not exclude a severe reaction now. Recognition depends on current breathing, awareness and circulation changes."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-aaaai",
+            "locator": "Symptoms",
+            "assessment": "Severe reaction can lack skin symptoms."
+          },
+          {
+            "source_id": "anaphylaxis-p0-ascia",
+            "locator": "Recognition",
+            "assessment": "Mild signs need not precede anaphylaxis."
+          },
+          {
+            "source_id": "anaphylaxis-p0-foodtest",
+            "locator": "What is it used for?",
+            "assessment": "Progression from mild to severe cannot be predicted."
+          }
+        ],
+        "id": "summary-2"
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "anaphylaxis-p0-aaaai",
+        "source_metadata_sha256": "9c56777ec46db0d8646d6c494ed98403a194439f61e80a6354318d688cdc9806",
+        "locator": "Overview | Symptoms",
+        "source_version": "Updated 2026-08-13; Overview; Symptoms and diagnosis; Treatment and management",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Defines rapid severe systemic allergic reaction. | Severe reaction can lack skin symptoms."
+      },
+      {
+        "source_id": "anaphylaxis-p0-ascia",
+        "source_metadata_sha256": "882384c9ba6a67771682822f4ad4435409fd15fa46db659076e2763f03758e40",
+        "locator": "Definition | Recognition",
+        "source_version": "Content updated September 2026; Sections 1–3: diagnostic criteria, positioning, adrenaline, asthma, adjuncts, observation, referral",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Potentially life-threatening respiratory/circulatory compromise. | Mild signs need not precede anaphylaxis."
+      },
+      {
+        "source_id": "anaphylaxis-p0-adam",
+        "source_metadata_sha256": "fb1d1d23045f0eb1b947fc25220af926657c68dcba4caf362e2f8f3f327b00f5",
+        "locator": "Causes; Symptoms",
+        "source_version": "Reviewed 2026-01-20; Causes; Symptoms; Treatment; Possible complications; Prevention",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ADAM",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Airway narrowing and multi-system symptoms."
+      },
+      {
+        "source_id": "anaphylaxis-p0-rcuk",
+        "source_metadata_sha256": "507e97210170c5275454b4d233e577d083b532f07a057b10f40ee359381579af",
+        "locator": "Sections 2–3",
+        "source_version": "May 2021; official landing page still calls it most recent; stated May 2026 review date elapsed; Printed pp 20–33, 40–45; recognition, drugs, tryptase, observation and follow-up",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-RCUK",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Airway/breathing/circulation manifestations."
+      },
+      {
+        "source_id": "anaphylaxis-p0-foodtest",
+        "source_metadata_sha256": "42eab04e7caf11b95d559409f8a9f15296e10b5c0d9b6d9c65339f90d70823a6",
+        "locator": "What is it used for?",
+        "source_version": "Current page; cited references checked January 2026; What is it used for?; Test process; Risks; Results",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-NIH",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Progression from mild to severe cannot be predicted."
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/priority_medical_rules",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent source and bilingual review."
+    },
+    "unresolved_questions": [],
+    "content_sha256": "554238839778831648bec8758f667d6801a3d9b65299b8212ab9fe1e0646abf8"
+  },
+  {
+    "id": "p0-01-anaphylaxis-causes_risks",
+    "target": {
+      "kind": "condition",
+      "id": "anaphylaxis",
+      "section": "causes_risks"
+    },
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading and synthesis by /root/priority_medical_rules",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "免疫系统释放组胺等化学信号，使气道收紧、组织肿胀、血管扩张；触发物和加重条件因人而异。",
+          "en": "Immune chemicals such as histamine tighten airways, swell tissues and widen blood vessels; triggers and aggravating circumstances vary."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-adam",
+            "locator": "Causes",
+            "assessment": "Mediator release and airway effects."
+          },
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "Section 2",
+            "assessment": "Systemic vascular and airway effects."
+          }
+        ],
+        "id": "causes_risks-0"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "常见触发物包括某些食物、药物、蜂等昆虫的毒液和乳胶。食物例子有花生、坚果、奶、蛋、芝麻；药物包括部分抗生素和非甾体抗炎药，如布洛芬。并非这些物质对所有人都危险。",
+          "en": "Triggers include particular foods, medicines, insect venom and latex. Examples include peanuts, nuts, milk, egg and sesame, and some antibiotics or anti-inflammatory medicines such as ibuprofen. These substances are not dangerous to everyone."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-nhs",
+            "locator": "Causes",
+            "assessment": "Lists food/drug/sting/latex examples."
+          },
+          {
+            "source_id": "anaphylaxis-p0-drug",
+            "locator": "Overview",
+            "assessment": "Ibuprofen/NSAID and antibiotic examples."
+          }
+        ],
+        "id": "causes_risks-1"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "运动本身可参与诱发，也可能要与某种食物共同出现才发作，称食物依赖性运动诱发严重过敏反应。小麦是一个例子；酒精或某些止痛药也可能成为共同促发条件，不能据此认定所有运动后不适都是过敏。",
+          "en": "Exercise can be a trigger or act together with a food in food-dependent exercise-induced anaphylaxis. Wheat is one example; alcohol or certain pain medicines can also be cofactors. This does not mean every symptom after exercise is an allergy."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-exercise",
+            "locator": "FAQ 1–5",
+            "assessment": "Explains food/exercise/cofactor relationship."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Elicitors and cofactors",
+            "assessment": "Cofactors vary by person and trigger."
+          }
+        ],
+        "id": "causes_risks-2"
+      },
+      {
+        "kind": "risk",
+        "text": {
+          "zh-CN": "既往发生过严重反应的人仍可能再次发作。哮喘控制不佳、心血管疾病或某些肥大细胞疾病可增加处理难度；肥大细胞是能释放过敏化学信号的细胞。",
+          "en": "A previous episode can be followed by another. Poorly controlled asthma, cardiovascular disease or certain mast-cell disorders can complicate risk and management; mast cells release allergy-mediating chemicals."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Table 5; Table 8",
+            "assessment": "Comorbidity and mast-cell risk."
+          },
+          {
+            "source_id": "anaphylaxis-p0-ascia",
+            "locator": "Asthma; Observation",
+            "assessment": "Severe asthma, arrhythmia, mast-cell disorders affect management."
+          },
+          {
+            "source_id": "anaphylaxis-p0-mcas",
+            "locator": "Opening explanation",
+            "assessment": "Defines mast cells."
+          }
+        ],
+        "id": "causes_risks-3"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "有些发作经过检查仍找不到触发物，称特发性严重过敏反应。它与“没有发生过敏”不同；医生还会考虑不易发现的过敏原或肥大细胞异常。",
+          "en": "Some attacks remain unexplained after investigation and are called idiopathic anaphylaxis. That is different from no reaction having occurred; clinicians consider hidden allergens and mast-cell disorders."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Pathogenesis; Long-term management",
+            "assessment": "Idiopathic diagnosis after trigger search; mast-cell differential."
+          },
+          {
+            "source_id": "anaphylaxis-p0-mcas",
+            "locator": "Idiopathic MCAS; Summary",
+            "assessment": "Objective evaluation, not symptom-only diagnosis."
+          }
+        ],
+        "id": "causes_risks-4"
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "anaphylaxis-p0-adam",
+        "source_metadata_sha256": "fb1d1d23045f0eb1b947fc25220af926657c68dcba4caf362e2f8f3f327b00f5",
+        "locator": "Causes",
+        "source_version": "Reviewed 2026-01-20; Causes; Symptoms; Treatment; Possible complications; Prevention",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ADAM",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Mediator release and airway effects."
+      },
+      {
+        "source_id": "anaphylaxis-p0-rcuk",
+        "source_metadata_sha256": "507e97210170c5275454b4d233e577d083b532f07a057b10f40ee359381579af",
+        "locator": "Section 2",
+        "source_version": "May 2021; official landing page still calls it most recent; stated May 2026 review date elapsed; Printed pp 20–33, 40–45; recognition, drugs, tryptase, observation and follow-up",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-RCUK",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Systemic vascular and airway effects."
+      },
+      {
+        "source_id": "anaphylaxis-nhs",
+        "source_metadata_sha256": "019ece4f1e84a6bf880b4d382472891cdf4f6112280dc221ccb4675fedd46d62",
+        "locator": "Causes",
+        "source_version": "Topic page or hub opened via browsing. Linked subpages/full claim support not comprehensively audited.",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Lists food/drug/sting/latex examples."
+      },
+      {
+        "source_id": "anaphylaxis-p0-drug",
+        "source_metadata_sha256": "f0c3e834399ea10ce5ca6891e863158a8b1341af52cefebcebe8d20b7cd1842a",
+        "locator": "Overview",
+        "source_version": "Current page read 2026-10-02; Overview; Symptoms and diagnosis; Treatment and management",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Ibuprofen/NSAID and antibiotic examples."
+      },
+      {
+        "source_id": "anaphylaxis-p0-exercise",
+        "source_metadata_sha256": "1fdefc976fdc9d1f65189c1fa470ac5f2f72e627c86094d755ac81ffac6681e2",
+        "locator": "FAQ 1–5",
+        "source_version": "Updated November 2024; FAQ 1–5",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Explains food/exercise/cofactor relationship."
+      },
+      {
+        "source_id": "anaphylaxis-p0-wao",
+        "source_metadata_sha256": "43bc2b5908c7325b3f47f9f6a8c60259aea147d56fc867b22873c2f591682fbe",
+        "locator": "Elicitors and cofactors | Table 5; Table 8 | Pathogenesis; Long-term management",
+        "source_version": "2020 guidance; full official repository HTML read directly with ?pdf=1 after browser extraction failed; Definition/Table 3; Pathogenesis; Elicitors/cofactors; Acute treatment; Diagnostic tests; Long-term management/Table 8",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GLOBAL",
+        "independence_group": "WAO",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Cofactors vary by person and trigger. | Comorbidity and mast-cell risk. | Idiopathic diagnosis after trigger search; mast-cell differential."
+      },
+      {
+        "source_id": "anaphylaxis-p0-ascia",
+        "source_metadata_sha256": "882384c9ba6a67771682822f4ad4435409fd15fa46db659076e2763f03758e40",
+        "locator": "Asthma; Observation",
+        "source_version": "Content updated September 2026; Sections 1–3: diagnostic criteria, positioning, adrenaline, asthma, adjuncts, observation, referral",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Severe asthma, arrhythmia, mast-cell disorders affect management."
+      },
+      {
+        "source_id": "anaphylaxis-p0-mcas",
+        "source_metadata_sha256": "b44d85e3a41ca44b87529c79681bc36a0be815baa1b05c029beaf9dedf718a08",
+        "locator": "Opening explanation | Idiopathic MCAS; Summary",
+        "source_version": "Updated 2026-08-27; Mast cells; Idiopathic MCAS; Mediators; Summary",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Defines mast cells. | Objective evaluation, not symptom-only diagnosis."
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/priority_medical_rules",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent source and bilingual review."
+    },
+    "unresolved_questions": [],
+    "content_sha256": "e2109d5f056506d75987c2c8162d6c0a8a1f5802050d072d5d22dc5ea31625cd"
+  },
+  {
+    "id": "p0-01-anaphylaxis-red_flags",
+    "target": {
+      "kind": "condition",
+      "id": "anaphylaxis",
+      "section": "red_flags"
+    },
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading and synthesis by /root/priority_medical_rules",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "怀疑严重过敏反应时立即行动，不等待所有症状出现或检测结果。",
+          "en": "Act immediately when anaphylaxis is suspected; do not wait for all symptoms or test results."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-aaaai",
+            "locator": "Important reminder",
+            "assessment": "Immediate epinephrine/emergency call."
+          },
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "1.3 Key points",
+            "assessment": "Do not delay for definite diagnosis."
+          }
+        ],
+        "id": "red_flags-0"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "接触可疑食物、药物或虫蜇后，突然喉咙发紧、声音嘶哑、舌肿、喘不过气、持续头晕或倒下，立即按个人急救计划使用已配备的肾上腺素自动注射器，并呼叫当地急救。没有注射器也要马上呼救。",
+          "en": "After a possible food, medicine or sting exposure, sudden throat tightness, hoarseness, tongue swelling, breathing difficulty, persistent dizziness or collapse requires the available prescribed adrenaline injector under the emergency plan and an immediate local emergency call. Call immediately even without a device."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-nhs",
+            "locator": "Immediate action; What to do",
+            "assessment": "Signs and immediate injector/emergency sequence."
+          },
+          {
+            "source_id": "anaphylaxis-p0-aaaai",
+            "locator": "Symptoms; Important reminder",
+            "assessment": "Independent society emergency action."
+          }
+        ],
+        "id": "red_flags-1"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "平躺等待帮助，不站立、不走去救护车。若平躺使呼吸更困难，可在有人协助下缓慢抬高上身，双腿向前伸直；昏迷但仍正常呼吸或正在呕吐时侧卧。",
+          "en": "Lie down and do not stand or walk to the ambulance. If lying flat worsens breathing, slowly raise the upper body with help and keep the legs outstretched. Use a side-lying recovery position if unconscious but breathing normally or vomiting."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-ascia",
+            "locator": "Positioning",
+            "assessment": "No standing/walking; respiratory position, side positioning."
+          },
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "4.4 Positioning",
+            "assessment": "Respiratory comfort and unconscious normal-breathing recovery position."
+          },
+          {
+            "source_id": "anaphylaxis-nhs",
+            "locator": "What to do",
+            "assessment": "Lie down/slowly raise shoulders; no walking."
+          }
+        ],
+        "id": "red_flags-2"
+      },
+      {
+        "kind": "threshold",
+        "text": {
+          "zh-CN": "对于自动注射器，英国 NHS 和复苏委员会建议：注射后 5 分钟仍未改善，尤其呼吸或循环问题持续时，使用第二支，并继续等待急救；具体操作按所持装置和急救计划。不要拿口服抗过敏药代替。",
+          "en": "For auto-injectors, UK NHS and Resuscitation Council guidance advises a second device after 5 minutes without improvement, especially persistent breathing or circulation problems, while awaiting emergency help. Follow the device and emergency plan; oral allergy tablets are not a substitute."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-nhs",
+            "locator": "What to do, step 5",
+            "assessment": "Exact 5-minute auto-injector threshold."
+          },
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "5.1.1; 5.4",
+            "assessment": "5-minute IM repeat and no antihistamine substitution."
+          },
+          {
+            "source_id": "anaphylaxis-p0-aaaai",
+            "locator": "Important reminder",
+            "assessment": "Do not wait with antihistamines."
+          }
+        ],
+        "id": "red_flags-3"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "若人无反应且没有正常呼吸，呼叫急救并按接线员指导开始心肺复苏。此时不要为了寻找药物而耽误按压。",
+          "en": "If unresponsive and not breathing normally, call emergency services and begin CPR following dispatcher instructions. Do not delay compressions while searching for medicines."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "4.6 Cardiorespiratory arrest",
+            "assessment": "Immediate CPR; IM attempts must not distract from compressions."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Acute treatment",
+            "assessment": "CPR with continuous compressions where indicated."
+          },
+          {
+            "source_id": "anaphylaxis-p0-adam",
+            "locator": "Treatment",
+            "assessment": "Airway/breathing/circulation and rescue breathing/CPR."
+          }
+        ],
+        "id": "red_flags-4"
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "anaphylaxis-p0-aaaai",
+        "source_metadata_sha256": "9c56777ec46db0d8646d6c494ed98403a194439f61e80a6354318d688cdc9806",
+        "locator": "Important reminder | Symptoms; Important reminder",
+        "source_version": "Updated 2026-08-13; Overview; Symptoms and diagnosis; Treatment and management",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Immediate epinephrine/emergency call. | Independent society emergency action. | Do not wait with antihistamines."
+      },
+      {
+        "source_id": "anaphylaxis-p0-rcuk",
+        "source_metadata_sha256": "507e97210170c5275454b4d233e577d083b532f07a057b10f40ee359381579af",
+        "locator": "1.3 Key points | 4.4 Positioning | 5.1.1; 5.4 | 4.6 Cardiorespiratory arrest",
+        "source_version": "May 2021; official landing page still calls it most recent; stated May 2026 review date elapsed; Printed pp 20–33, 40–45; recognition, drugs, tryptase, observation and follow-up",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-RCUK",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Do not delay for definite diagnosis. | Respiratory comfort and unconscious normal-breathing recovery position. | 5-minute IM repeat and no antihistamine substitution. | Immediate CPR; IM attempts must not distract from compressions."
+      },
+      {
+        "source_id": "anaphylaxis-nhs",
+        "source_metadata_sha256": "019ece4f1e84a6bf880b4d382472891cdf4f6112280dc221ccb4675fedd46d62",
+        "locator": "Immediate action; What to do | What to do | What to do, step 5",
+        "source_version": "Topic page or hub opened via browsing. Linked subpages/full claim support not comprehensively audited.",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Signs and immediate injector/emergency sequence. | Lie down/slowly raise shoulders; no walking. | Exact 5-minute auto-injector threshold."
+      },
+      {
+        "source_id": "anaphylaxis-p0-ascia",
+        "source_metadata_sha256": "882384c9ba6a67771682822f4ad4435409fd15fa46db659076e2763f03758e40",
+        "locator": "Positioning",
+        "source_version": "Content updated September 2026; Sections 1–3: diagnostic criteria, positioning, adrenaline, asthma, adjuncts, observation, referral",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "No standing/walking; respiratory position, side positioning."
+      },
+      {
+        "source_id": "anaphylaxis-p0-wao",
+        "source_metadata_sha256": "43bc2b5908c7325b3f47f9f6a8c60259aea147d56fc867b22873c2f591682fbe",
+        "locator": "Acute treatment",
+        "source_version": "2020 guidance; full official repository HTML read directly with ?pdf=1 after browser extraction failed; Definition/Table 3; Pathogenesis; Elicitors/cofactors; Acute treatment; Diagnostic tests; Long-term management/Table 8",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GLOBAL",
+        "independence_group": "WAO",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "CPR with continuous compressions where indicated."
+      },
+      {
+        "source_id": "anaphylaxis-p0-adam",
+        "source_metadata_sha256": "fb1d1d23045f0eb1b947fc25220af926657c68dcba4caf362e2f8f3f327b00f5",
+        "locator": "Treatment",
+        "source_version": "Reviewed 2026-01-20; Causes; Symptoms; Treatment; Possible complications; Prevention",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ADAM",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Airway/breathing/circulation and rescue breathing/CPR."
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/priority_medical_rules",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent source and bilingual review."
+    },
+    "unresolved_questions": [],
+    "content_sha256": "c6f7499afb50fdf0219013b99ccf7de98648dcd767d5386abfb7d61edc1dcb24"
+  },
+  {
+    "id": "p0-01-anaphylaxis-care",
+    "target": {
+      "kind": "condition",
+      "id": "anaphylaxis",
+      "section": "care"
+    },
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading and synthesis by /root/priority_medical_rules",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "就医分为当下救命、症状好转后的观察，以及查清诱因后的长期安排。",
+          "en": "Care has three stages: immediate rescue, observation after improvement, and longer-term trigger assessment."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "Sections 4 and 8",
+            "assessment": "Emergency treatment then observation/follow-up."
+          }
+        ],
+        "id": "care-0"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "第一次发作、原因或严重程度不清、呼吸或循环症状持续或复发，都走急救路径。英国和澳新指南要求症状改善后仍接受医疗观察，因为反应可能再次出现。",
+          "en": "A first attack, uncertain cause or severity, or persistent or recurrent breathing/circulation symptoms needs emergency care. UK and Australasian guidance calls for medical observation even after improvement because symptoms can return."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-nhs",
+            "locator": "Treatment",
+            "assessment": "Immediate hospital treatment and observation."
+          },
+          {
+            "source_id": "anaphylaxis-p0-ascia",
+            "locator": "Observation",
+            "assessment": "Relapse/refractory/biphasic observation."
+          },
+          {
+            "source_id": "anaphylaxis-p0-aaaai",
+            "locator": "Important reminder",
+            "assessment": "Emergency assessment and monitoring."
+          }
+        ],
+        "id": "care-1"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "观察时长取决于反应严重程度、是否反复用肾上腺素、合并哮喘及回家后能否迅速获得帮助。各地区方案不同；美国一些材料允许由专科预先制定用药后何时求助的个人计划，这不适合临时自行判断首次或恶化的发作。",
+          "en": "Observation depends on severity, repeated adrenaline, asthma and access to help after discharge. Regional protocols differ; some US materials allow a pre-agreed specialist plan about seeking help after rescue medication. That does not provide a rule for improvising during a first or worsening attack."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-ascia",
+            "locator": "Observation",
+            "assessment": "Severity/repeated doses/asthma/access affect overnight care."
+          },
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "8.2",
+            "assessment": "Risk-stratified observation."
+          },
+          {
+            "source_id": "anaphylaxis-p0-acaai-test",
+            "locator": "Epinephrine safety notes",
+            "assessment": "US specialist individual emergency-help planning."
+          },
+          {
+            "source_id": "anaphylaxis-p0-fda-neffy",
+            "locator": "Patient information: allergic emergency",
+            "assessment": "Product-specific prior discussion of when emergency help is needed."
+          }
+        ],
+        "id": "care-2"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "仅有局部瘙痒或风团、呼吸和意识正常时，按已经制定的轻度过敏方案处理并观察变化；出现喉咙、呼吸、晕厥等变化就升级急救。恢复后预约过敏专科，更新触发物和救援药安排。",
+          "en": "For local itching or hives alone with normal breathing and awareness, follow the established mild-allergy plan and watch for change; throat, breathing or fainting symptoms require emergency escalation. After recovery, arrange allergy follow-up and update trigger and rescue-medication plans."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "3.3; 5.1; 8.7",
+            "assessment": "Skin-only reactions distinct; observe and refer anaphylaxis."
+          },
+          {
+            "source_id": "anaphylaxis-p0-ascia",
+            "locator": "Mild/moderate signs; severe signs; referral",
+            "assessment": "Differentiate signs and update plans."
+          },
+          {
+            "source_id": "anaphylaxis-p0-aaaai",
+            "locator": "Diagnosis; Management",
+            "assessment": "Specialist prevention plan."
+          }
+        ],
+        "id": "care-3"
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "anaphylaxis-p0-rcuk",
+        "source_metadata_sha256": "507e97210170c5275454b4d233e577d083b532f07a057b10f40ee359381579af",
+        "locator": "Sections 4 and 8 | 8.2 | 3.3; 5.1; 8.7",
+        "source_version": "May 2021; official landing page still calls it most recent; stated May 2026 review date elapsed; Printed pp 20–33, 40–45; recognition, drugs, tryptase, observation and follow-up",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-RCUK",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Emergency treatment then observation/follow-up. | Risk-stratified observation. | Skin-only reactions distinct; observe and refer anaphylaxis."
+      },
+      {
+        "source_id": "anaphylaxis-nhs",
+        "source_metadata_sha256": "019ece4f1e84a6bf880b4d382472891cdf4f6112280dc221ccb4675fedd46d62",
+        "locator": "Treatment",
+        "source_version": "Topic page or hub opened via browsing. Linked subpages/full claim support not comprehensively audited.",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Immediate hospital treatment and observation."
+      },
+      {
+        "source_id": "anaphylaxis-p0-ascia",
+        "source_metadata_sha256": "882384c9ba6a67771682822f4ad4435409fd15fa46db659076e2763f03758e40",
+        "locator": "Observation | Mild/moderate signs; severe signs; referral",
+        "source_version": "Content updated September 2026; Sections 1–3: diagnostic criteria, positioning, adrenaline, asthma, adjuncts, observation, referral",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Relapse/refractory/biphasic observation. | Severity/repeated doses/asthma/access affect overnight care. | Differentiate signs and update plans."
+      },
+      {
+        "source_id": "anaphylaxis-p0-aaaai",
+        "source_metadata_sha256": "9c56777ec46db0d8646d6c494ed98403a194439f61e80a6354318d688cdc9806",
+        "locator": "Important reminder | Diagnosis; Management",
+        "source_version": "Updated 2026-08-13; Overview; Symptoms and diagnosis; Treatment and management",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Emergency assessment and monitoring. | Specialist prevention plan."
+      },
+      {
+        "source_id": "anaphylaxis-p0-acaai-test",
+        "source_metadata_sha256": "61802bf076c57f42253e38c73dfad625dd83326198c83d6cc04c536ead2d91c5",
+        "locator": "Epinephrine safety notes",
+        "source_version": "Updated 2026-02-23; Elimination diet; Food allergy testing; Oral food challenge; Epinephrine; At-home tests",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ACAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "US specialist individual emergency-help planning."
+      },
+      {
+        "source_id": "anaphylaxis-p0-fda-neffy",
+        "source_metadata_sha256": "36d1f7b3ed5dbe47a14603b36649ac5028ca63f58bcb5516b306ce48622488f9",
+        "locator": "Patient information: allergic emergency",
+        "source_version": "2025 label, reference ID 5543248; Patient information pp 19–20; indications, device use and precautions",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-FDA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Product-specific prior discussion of when emergency help is needed."
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/priority_medical_rules",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent source and bilingual review."
+    },
+    "unresolved_questions": [],
+    "content_sha256": "e090c34971f4306377863de69fd73448343a3d0c22cec1aca73c108fc60a7153"
+  },
+  {
+    "id": "p0-01-anaphylaxis-diagnosis",
+    "target": {
+      "kind": "condition",
+      "id": "anaphylaxis",
+      "section": "diagnosis"
+    },
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading and synthesis by /root/priority_medical_rules",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "急性发作先根据表现识别并治疗，再用检查帮助确认原因。",
+          "en": "An acute attack is recognised and treated clinically before tests help establish its cause."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "1.3; 7.1",
+            "assessment": "Treatment must not await laboratory confirmation."
+          },
+          {
+            "source_id": "anaphylaxis-p0-adam",
+            "locator": "Exams and tests",
+            "assessment": "Trigger investigation follows treatment."
+          }
+        ],
+        "id": "diagnosis-0"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "医生会问进食、用药、虫蜇及运动的先后顺序，查看喉咙、呼吸、血压和意识；时间线比单独说“我过敏了”更能帮助定位原因。",
+          "en": "Clinicians ask about the sequence of food, medicines, stings and exercise and assess throat, breathing, blood pressure and awareness. A timeline helps identify causes more than an isolated allergy label."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Cofactors; Table 8",
+            "assessment": "Detailed exposure/cofactor history."
+          },
+          {
+            "source_id": "anaphylaxis-p0-drug",
+            "locator": "Diagnosis",
+            "assessment": "Time, duration, symptoms and other medicines."
+          }
+        ],
+        "id": "diagnosis-1"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "类胰蛋白酶是肥大细胞释放的一种蛋白，发作期和恢复期血样的变化可支持判断；采样时间很重要，正常结果不能排除严重过敏，尤其某些食物反应。抽血不能延误肾上腺素。",
+          "en": "Tryptase is a protein released by mast cells. Changes between attack and baseline blood samples can support assessment; timing matters, and normal results do not exclude anaphylaxis, particularly some food reactions. Sampling must not delay adrenaline."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "7.1–7.4",
+            "assessment": "Definition, serial samples, normal not exclusion, no treatment delay."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Diagnostic tests in acute anaphylaxis",
+            "assessment": "Independent guideline agrees on normal-level limits."
+          }
+        ],
+        "id": "diagnosis-2"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "皮肤点刺或特异性 IgE 血液检查寻找对某种物质的免疫反应，但阳性不等于吃下必定发作，也不能预言下次多严重。结果要结合真实接触史，避免按一张大范围化验单禁掉很多食物。",
+          "en": "Skin-prick or specific-IgE blood tests look for immune sensitivity to a substance. A positive result does not prove a reaction on eating it or predict the next attack’s severity. Interpretation needs exposure history, avoiding broad food restriction from a panel alone."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-acaai-test",
+            "locator": "Food allergy testing; At-home tests",
+            "assessment": "Neither standalone conclusive nor severity predictor; unnecessary avoidance."
+          },
+          {
+            "source_id": "anaphylaxis-p0-foodtest",
+            "locator": "What is it used for?; Results",
+            "assessment": "False positives and need for clinical history; cites ACAAI among its background sources."
+          }
+        ],
+        "id": "diagnosis-3"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "口服食物激发试验或药物激发是由专科在具备抢救条件时安排的受控检查，不是在家尝一小口验证。没有找到原因或反复发作时，医生可进一步检查肥大细胞疾病。",
+          "en": "Food or drug challenges are controlled specialist procedures with rescue capability, not home tasting experiments. Unexplained or recurrent attacks may prompt investigation for mast-cell disease."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-acaai-test",
+            "locator": "Elimination diet; Oral challenge",
+            "assessment": "No home food trial; medical setting."
+          },
+          {
+            "source_id": "anaphylaxis-p0-foodtest",
+            "locator": "Risks; Results",
+            "assessment": "Supervised challenge and emergency treatment."
+          },
+          {
+            "source_id": "anaphylaxis-p0-drug",
+            "locator": "Treatment and management",
+            "assessment": "Penicillin clinic challenge/desensitisation."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Long-term management",
+            "assessment": "Specialist drug assessment and mast-cell evaluation."
+          }
+        ],
+        "id": "diagnosis-4"
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "anaphylaxis-p0-rcuk",
+        "source_metadata_sha256": "507e97210170c5275454b4d233e577d083b532f07a057b10f40ee359381579af",
+        "locator": "1.3; 7.1 | 7.1–7.4",
+        "source_version": "May 2021; official landing page still calls it most recent; stated May 2026 review date elapsed; Printed pp 20–33, 40–45; recognition, drugs, tryptase, observation and follow-up",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-RCUK",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Treatment must not await laboratory confirmation. | Definition, serial samples, normal not exclusion, no treatment delay."
+      },
+      {
+        "source_id": "anaphylaxis-p0-adam",
+        "source_metadata_sha256": "fb1d1d23045f0eb1b947fc25220af926657c68dcba4caf362e2f8f3f327b00f5",
+        "locator": "Exams and tests",
+        "source_version": "Reviewed 2026-01-20; Causes; Symptoms; Treatment; Possible complications; Prevention",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ADAM",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Trigger investigation follows treatment."
+      },
+      {
+        "source_id": "anaphylaxis-p0-wao",
+        "source_metadata_sha256": "43bc2b5908c7325b3f47f9f6a8c60259aea147d56fc867b22873c2f591682fbe",
+        "locator": "Cofactors; Table 8 | Diagnostic tests in acute anaphylaxis | Long-term management",
+        "source_version": "2020 guidance; full official repository HTML read directly with ?pdf=1 after browser extraction failed; Definition/Table 3; Pathogenesis; Elicitors/cofactors; Acute treatment; Diagnostic tests; Long-term management/Table 8",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GLOBAL",
+        "independence_group": "WAO",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Detailed exposure/cofactor history. | Independent guideline agrees on normal-level limits. | Specialist drug assessment and mast-cell evaluation."
+      },
+      {
+        "source_id": "anaphylaxis-p0-drug",
+        "source_metadata_sha256": "f0c3e834399ea10ce5ca6891e863158a8b1341af52cefebcebe8d20b7cd1842a",
+        "locator": "Diagnosis | Treatment and management",
+        "source_version": "Current page read 2026-10-02; Overview; Symptoms and diagnosis; Treatment and management",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Time, duration, symptoms and other medicines. | Penicillin clinic challenge/desensitisation."
+      },
+      {
+        "source_id": "anaphylaxis-p0-acaai-test",
+        "source_metadata_sha256": "61802bf076c57f42253e38c73dfad625dd83326198c83d6cc04c536ead2d91c5",
+        "locator": "Food allergy testing; At-home tests | Elimination diet; Oral challenge",
+        "source_version": "Updated 2026-02-23; Elimination diet; Food allergy testing; Oral food challenge; Epinephrine; At-home tests",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ACAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Neither standalone conclusive nor severity predictor; unnecessary avoidance. | No home food trial; medical setting."
+      },
+      {
+        "source_id": "anaphylaxis-p0-foodtest",
+        "source_metadata_sha256": "42eab04e7caf11b95d559409f8a9f15296e10b5c0d9b6d9c65339f90d70823a6",
+        "locator": "What is it used for?; Results | Risks; Results",
+        "source_version": "Current page; cited references checked January 2026; What is it used for?; Test process; Risks; Results",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-NIH",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "False positives and need for clinical history; cites ACAAI among its background sources. | Supervised challenge and emergency treatment."
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/priority_medical_rules",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent source and bilingual review."
+    },
+    "unresolved_questions": [],
+    "content_sha256": "821980852cf43c3e092cf8d577aaf0d624581a838c61e527167e6b139c3daeff"
+  },
+  {
+    "id": "p0-01-anaphylaxis-differentials",
+    "target": {
+      "kind": "condition",
+      "id": "anaphylaxis",
+      "section": "differentials"
+    },
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading and synthesis by /root/priority_medical_rules",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "喘、晕和皮疹都可能有其他原因；判断线索不能变成延误急救的理由。",
+          "en": "Wheeze, faintness and rash have other possible causes; distinguishing clues must not delay emergency treatment."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "3.4 Differential diagnosis",
+            "assessment": "Differentials assessed with airway/breathing/circulation treatment."
+          }
+        ],
+        "id": "differentials-0"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "哮喘主要影响气道。已知有哮喘又对食物、昆虫或药物过敏的人，在可能接触过敏原后突然喘不过气，即使没有皮疹，也要按严重过敏急救计划先用肾上腺素，再按方案加用哮喘缓解药。",
+          "en": "Asthma chiefly affects airways. Someone with asthma and known food, insect or medicine allergy who develops sudden breathing difficulty after possible allergen exposure should follow the anaphylaxis plan with adrenaline first, then the asthma reliever as directed, even without a rash."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-ascia",
+            "locator": "Management in people with asthma; Action Plan statement",
+            "assessment": "Exact asthma plus known allergy plus possible exposure scope."
+          },
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "5.6 Bronchodilators",
+            "assessment": "Possible known allergen exposure and severe asthma-like presentation needs IM adrenaline; bronchodilator adjunct."
+          }
+        ],
+        "id": "differentials-1"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "晕针、惊恐发作、声带运动异常都可出现头晕或呼吸不适。药物引起的非过敏性血管性水肿也可能让舌喉肿胀，治疗路径不同；医生会同时评估气道危险与原因。",
+          "en": "Vasovagal fainting, panic or abnormal vocal-cord movement can cause faintness or breathing discomfort. Non-allergic drug-related angioedema can also swell the tongue or throat and needs a different treatment pathway; clinicians assess airway danger and cause together."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "3.4",
+            "assessment": "Vasovagal/panic/inducible laryngeal obstruction and ACE-inhibitor angioedema."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Table 3",
+            "assessment": "Differential diagnoses including nonallergic angioedema."
+          }
+        ],
+        "id": "differentials-2"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "乳糖不耐受常是奶中糖分消化不好引起腹胀腹泻，与奶蛋白过敏不同；食物误吸是食物进入气道，也不是食物过敏。仅凭吃完不舒服不能合并为同一个诊断。",
+          "en": "Lactose intolerance causes digestive symptoms from poorly digested milk sugar and differs from milk-protein allergy. Aspiration means food entering the airway, not food allergy. Symptoms after eating alone do not establish a shared diagnosis."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-intolerance",
+            "locator": "Causes",
+            "assessment": "Lactose digestion and immune-allergy distinction."
+          },
+          {
+            "source_id": "anaphylaxis-p0-food",
+            "locator": "Overview",
+            "assessment": "Immune protein response versus intolerance."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Table 3",
+            "assessment": "Aspiration/foreign body is a differential, not allergen classification."
+          }
+        ],
+        "id": "differentials-3"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "虫蜇部位的局部红肿，与全身严重过敏不同。吸入过敏原后的过敏性哮喘不自动等于全身严重过敏，重点仍是本次气道和循环表现。",
+          "en": "Local swelling at a sting differs from systemic anaphylaxis. Allergic asthma after inhaled exposure does not automatically mean systemic anaphylaxis; current airway and circulation findings remain central."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-venom",
+            "locator": "Symptoms",
+            "assessment": "Local versus systemic sting reaction."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Definition; Table 3",
+            "assessment": "Asthma differential and systemic criteria."
+          },
+          {
+            "source_id": "anaphylaxis-p0-adam",
+            "locator": "Causes",
+            "assessment": "Inhaled allergens rarely cause anaphylaxis."
+          }
+        ],
+        "id": "differentials-4"
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "anaphylaxis-p0-rcuk",
+        "source_metadata_sha256": "507e97210170c5275454b4d233e577d083b532f07a057b10f40ee359381579af",
+        "locator": "3.4 Differential diagnosis | 5.6 Bronchodilators | 3.4",
+        "source_version": "May 2021; official landing page still calls it most recent; stated May 2026 review date elapsed; Printed pp 20–33, 40–45; recognition, drugs, tryptase, observation and follow-up",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-RCUK",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Differentials assessed with airway/breathing/circulation treatment. | Possible known allergen exposure and severe asthma-like presentation needs IM adrenaline; bronchodilator adjunct. | Vasovagal/panic/inducible laryngeal obstruction and ACE-inhibitor angioedema."
+      },
+      {
+        "source_id": "anaphylaxis-p0-ascia",
+        "source_metadata_sha256": "882384c9ba6a67771682822f4ad4435409fd15fa46db659076e2763f03758e40",
+        "locator": "Management in people with asthma; Action Plan statement",
+        "source_version": "Content updated September 2026; Sections 1–3: diagnostic criteria, positioning, adrenaline, asthma, adjuncts, observation, referral",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Exact asthma plus known allergy plus possible exposure scope."
+      },
+      {
+        "source_id": "anaphylaxis-p0-wao",
+        "source_metadata_sha256": "43bc2b5908c7325b3f47f9f6a8c60259aea147d56fc867b22873c2f591682fbe",
+        "locator": "Table 3 | Definition; Table 3",
+        "source_version": "2020 guidance; full official repository HTML read directly with ?pdf=1 after browser extraction failed; Definition/Table 3; Pathogenesis; Elicitors/cofactors; Acute treatment; Diagnostic tests; Long-term management/Table 8",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GLOBAL",
+        "independence_group": "WAO",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Differential diagnoses including nonallergic angioedema. | Aspiration/foreign body is a differential, not allergen classification. | Asthma differential and systemic criteria."
+      },
+      {
+        "source_id": "anaphylaxis-p0-intolerance",
+        "source_metadata_sha256": "77b241c6a22b84306d9386ce587fafc3cd85a0a46830058ec6771842ee625df8",
+        "locator": "Causes",
+        "source_version": "Reviewed 2026-06-18; Causes; Tests; Treatment",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Lactose digestion and immune-allergy distinction."
+      },
+      {
+        "source_id": "anaphylaxis-p0-food",
+        "source_metadata_sha256": "feb8a13b05870316cb4a7a53d418b125d8c9e596de1be4d0e31944dd591a8de5",
+        "locator": "Overview",
+        "source_version": "Updated 2026-05-12; Overview; Symptoms and diagnosis; Treatment and management",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Immune protein response versus intolerance."
+      },
+      {
+        "source_id": "anaphylaxis-p0-venom",
+        "source_metadata_sha256": "eb539b85958921a5c3e7cd363794abd111a1d5c3f2adfbbaab62f70a8c09f76e",
+        "locator": "Symptoms",
+        "source_version": "Reviewed 2023-06-28; Symptoms; Management; Venom immunotherapy; Avoiding stings",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ACAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Local versus systemic sting reaction."
+      },
+      {
+        "source_id": "anaphylaxis-p0-adam",
+        "source_metadata_sha256": "fb1d1d23045f0eb1b947fc25220af926657c68dcba4caf362e2f8f3f327b00f5",
+        "locator": "Causes",
+        "source_version": "Reviewed 2026-01-20; Causes; Symptoms; Treatment; Possible complications; Prevention",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ADAM",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Inhaled allergens rarely cause anaphylaxis."
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/priority_medical_rules",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent source and bilingual review."
+    },
+    "unresolved_questions": [],
+    "content_sha256": "fb3687bb8a148541d72473841e7aa0a9831422725040e73e3f4fd89b6f503fa1"
+  },
+  {
+    "id": "p0-01-anaphylaxis-treatment",
+    "target": {
+      "kind": "condition",
+      "id": "anaphylaxis",
+      "section": "treatment"
+    },
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading and synthesis by /root/priority_medical_rules",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "治疗先恢复呼吸和供血，随后处理持续症状并减少再次暴露。",
+          "en": "Treatment restores breathing and blood flow, then addresses persistent symptoms and future exposure."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "Sections 4–5; 8",
+            "assessment": "Emergency priorities and follow-up."
+          }
+        ],
+        "id": "treatment-0"
+      },
+      {
+        "kind": "benefit",
+        "text": {
+          "zh-CN": "肌内肾上腺素是核心急救药：帮助气道打开、减轻肿胀并支持血压。医护通常选择大腿外侧肌肉注射；自行救援按已获处方和训练的装置操作，不临时计算剂量或改成静脉注射。",
+          "en": "Intramuscular adrenaline is central rescue treatment: it opens airways, reduces swelling and supports pressure. Clinicians generally use the outer thigh; self-rescue uses the prescribed, taught device rather than improvised dose calculation or intravenous injection."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "5.1–5.1.2",
+            "assessment": "Mechanism, thigh route, IV specialist risk."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Acute treatment",
+            "assessment": "IM first line and monitoring requirements for IV."
+          }
+        ],
+        "id": "treatment-1"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "医院可能提供氧气、静脉补液和气道支持；持续低血压或呼吸困难可能需要重症团队监测并调整治疗。这些措施针对器官功能，并不是等待抗过敏片起效。",
+          "en": "Hospital care may include oxygen, IV fluids and airway support; persistent low pressure or breathing difficulty can need critical-care monitoring and treatment adjustment. These measures support organs rather than waiting for an allergy tablet."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-nhs",
+            "locator": "Treatment",
+            "assessment": "Oxygen/IV fluids/adrenaline."
+          },
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "5.2–5.3; 6",
+            "assessment": "Organ support and refractory escalation."
+          }
+        ],
+        "id": "treatment-2"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "能安全停止的接触应尽快停止，例如由医护停止可疑输液；但不要为了寻找或清除过敏原耽误救援药和呼救，也不要催吐。",
+          "en": "Stop exposure when safely possible, for example having staff stop a suspected infusion. Do not delay rescue medication or the emergency call while searching for or removing the trigger, and do not induce vomiting."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "4.5 Remove the trigger",
+            "assessment": "Stop drug exposure, no vomiting, no delayed definitive treatment."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Acute treatment",
+            "assessment": "Trigger removal alongside immediate emergency treatment."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wms",
+            "locator": "Treatment, second paragraph (line24); references68–69; adapted WAO diagnostic graphic20",
+            "assessment": "Explicitly says not to induce vomiting while separating the person from a possible allergen. This corroborates only the no-vomiting clause; existing RCUK/WAO bind removal and no rescue delay. Other WMS positioning/dosing/expired-device recommendations are not adopted."
+          }
+        ],
+        "id": "treatment-3"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "稳定后才讨论诱因治疗：部分虫毒过敏可由专科评估免疫治疗；药物不可替代时可能考虑受控脱敏。食物、虫毒和药物方案各有条件，不能互相套用。",
+          "en": "After stabilisation, trigger-specific options may include specialist venom immunotherapy or controlled drug desensitisation when an essential medicine has no substitute. Food, venom and drug approaches have different indications."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-venom",
+            "locator": "Venom immunotherapy",
+            "assessment": "Specialist candidate selection."
+          },
+          {
+            "source_id": "anaphylaxis-p0-drug",
+            "locator": "Treatment and management",
+            "assessment": "Essential drug with no alternative may require desensitisation."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Long-term management",
+            "assessment": "Trigger-specific immunotherapy and drug desensitisation."
+          }
+        ],
+        "id": "treatment-4"
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "anaphylaxis-p0-rcuk",
+        "source_metadata_sha256": "507e97210170c5275454b4d233e577d083b532f07a057b10f40ee359381579af",
+        "locator": "Sections 4–5; 8 | 5.1–5.1.2 | 5.2–5.3; 6 | 4.5 Remove the trigger",
+        "source_version": "May 2021; official landing page still calls it most recent; stated May 2026 review date elapsed; Printed pp 20–33, 40–45; recognition, drugs, tryptase, observation and follow-up",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-RCUK",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Emergency priorities and follow-up. | Mechanism, thigh route, IV specialist risk. | Organ support and refractory escalation. | Stop drug exposure, no vomiting, no delayed definitive treatment."
+      },
+      {
+        "source_id": "anaphylaxis-p0-wao",
+        "source_metadata_sha256": "43bc2b5908c7325b3f47f9f6a8c60259aea147d56fc867b22873c2f591682fbe",
+        "locator": "Acute treatment | Long-term management",
+        "source_version": "2020 guidance; full official repository HTML read directly with ?pdf=1 after browser extraction failed; Definition/Table 3; Pathogenesis; Elicitors/cofactors; Acute treatment; Diagnostic tests; Long-term management/Table 8",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GLOBAL",
+        "independence_group": "WAO",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "IM first line and monitoring requirements for IV. | Trigger removal alongside immediate emergency treatment. | Trigger-specific immunotherapy and drug desensitisation."
+      },
+      {
+        "source_id": "anaphylaxis-nhs",
+        "source_metadata_sha256": "019ece4f1e84a6bf880b4d382472891cdf4f6112280dc221ccb4675fedd46d62",
+        "locator": "Treatment",
+        "source_version": "Topic page or hub opened via browsing. Linked subpages/full claim support not comprehensively audited.",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Oxygen/IV fluids/adrenaline."
+      },
+      {
+        "source_id": "anaphylaxis-p0-venom",
+        "source_metadata_sha256": "eb539b85958921a5c3e7cd363794abd111a1d5c3f2adfbbaab62f70a8c09f76e",
+        "locator": "Venom immunotherapy",
+        "source_version": "Reviewed 2023-06-28; Symptoms; Management; Venom immunotherapy; Avoiding stings",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ACAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Specialist candidate selection."
+      },
+      {
+        "source_id": "anaphylaxis-p0-drug",
+        "source_metadata_sha256": "f0c3e834399ea10ce5ca6891e863158a8b1341af52cefebcebe8d20b7cd1842a",
+        "locator": "Treatment and management",
+        "source_version": "Current page read 2026-10-02; Overview; Symptoms and diagnosis; Treatment and management",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Essential drug with no alternative may require desensitisation."
+      },
+      {
+        "source_id": "anaphylaxis-p0-wms",
+        "source_metadata_sha256": "881481da5b2326e8ddd6d8e35adefdbdc7c81997033561f76a9b65684145e13d",
+        "locator": "Treatment, second paragraph (line24); references68–69; adapted WAO diagnostic graphic20",
+        "source_version": "Official society summary of2022 WMS guideline; webpage date not displayed",
+        "accessed_at": "2026-10-02",
+        "population": "Anaphylaxis in field/prehospital settings; only no-induced-vomiting action used",
+        "region": "US",
+        "independence_group": "US-WMS",
+        "upstream_evidence": [
+          "WMS expert-panel guideline summary; diagnostic graphic explicitly adapted from WAO2020. Shared guideline literature does not establish independent underlying trials."
+        ],
+        "relation": "supports",
+        "assessment": "Explicitly says not to induce vomiting while separating the person from a possible allergen. This corroborates only the no-vomiting clause; existing RCUK/WAO bind removal and no rescue delay. Other WMS positioning/dosing/expired-device recommendations are not adopted."
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/priority_medical_rules",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent source and bilingual review."
+    },
+    "unresolved_questions": [],
+    "content_sha256": "c3b2b37ccbfaf11d6212853f46a84f65e6b96cf74aa08e35820d02b693e462f1"
+  },
+  {
+    "id": "p0-01-anaphylaxis-medications",
+    "target": {
+      "kind": "condition",
+      "id": "anaphylaxis",
+      "section": "medications"
+    },
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading and synthesis by /root/priority_medical_rules",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "肾上腺素、抗组胺药和哮喘药的作用不同，不能按“都是抗过敏药”互换。",
+          "en": "Adrenaline, antihistamines and asthma relievers have different roles and are not interchangeable allergy medicines."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-ascia",
+            "locator": "Adjunct medications",
+            "assessment": "Adjuncts cannot replace adrenaline."
+          }
+        ],
+        "id": "medications-0"
+      },
+      {
+        "kind": "risk",
+        "text": {
+          "zh-CN": "按正确方法肌内使用肾上腺素通常耐受良好；严重反应时，不能因为担心用药风险而拖延。静脉给药则有剂量错误和严重心律失常风险，只由有经验的团队在监测下实施。",
+          "en": "Correct intramuscular adrenaline is generally well tolerated; concern about medicine risk should not delay treatment of anaphylaxis. Intravenous use carries dosing-error and serious arrhythmia risks and is reserved for experienced teams with monitoring."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "5.1–5.1.2",
+            "assessment": "IM tolerability, prompt use, IV risks."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Acute treatment; Key points",
+            "assessment": "No absolute IM contraindication; IV arrhythmia risk."
+          }
+        ],
+        "id": "medications-1"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "抗组胺药可减轻瘙痒和风团，但不能治疗危险的气道肿胀、低血压或休克。需要时是在急救稳定后处理皮肤症状；呼吸困难时不要强行喂口服药。",
+          "en": "Antihistamines can ease itching and hives but cannot treat dangerous airway swelling, hypotension or shock. They may address skin symptoms after stabilisation; do not force oral medicines during breathing difficulty."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-ascia",
+            "locator": "Adjunct medications",
+            "assessment": "No respiratory/cardiovascular treatment role."
+          },
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "5.4",
+            "assessment": "Skin relief only after stabilisation."
+          },
+          {
+            "source_id": "anaphylaxis-p0-adam",
+            "locator": "Treatment: Do not",
+            "assessment": "No medicines/anything by mouth during breathing difficulty."
+          },
+          {
+            "source_id": "anaphylaxis-p0-ontario-bls",
+            "locator": "Patient Management Standard item9; Preamble professional scope; Allergic Reaction (Known or Suspected) Standard",
+            "assessment": "Paramedic standard gives nothing by mouth unless indicated by BLS/ALS standards, in an airway-focused professional care pathway. It corroborates avoiding forced oral administration; it is not presented as a universal ban overriding trained clinical protocols. A.D.A.M. directly supports the public breathing-difficulty condition; antihistamine roles remain ASCIA/RCUK."
+          }
+        ],
+        "id": "medications-2"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "支气管舒张药如沙丁胺醇可作为持续喘鸣的辅助药，不能替代肾上腺素。糖皮质激素也不是首救药；英国指南不建议常规用于严重过敏，合并持续哮喘或难治反应时由医生另行考虑。",
+          "en": "A bronchodilator such as salbutamol can be an adjunct for persistent wheeze, not a substitute for adrenaline. Corticosteroids are not initial rescue treatment; UK guidance advises against routine anaphylaxis use, with selected consideration for ongoing asthma or refractory reactions."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "5.5–5.6",
+            "assessment": "UK nonroutine steroid policy and asthma/refractory exceptions."
+          },
+          {
+            "source_id": "anaphylaxis-p0-ascia",
+            "locator": "Adjunct medications",
+            "assessment": "Bronchodilator limits; unproven anaphylaxis steroid benefit."
+          }
+        ],
+        "id": "medications-3"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "装置的获批类型和适用人群因地区而异。美国已有处方肾上腺素鼻喷剂，但它与自动注射器的操作不同；开药时应学会所持装置的步骤、再次给药和求助安排，不能把网页上的一种装置说明直接套到另一种。",
+          "en": "Approved devices and eligible populations vary by region. Prescription nasal adrenaline is available in the US, but its operation differs from an auto-injector. Learn the prescribed device’s steps, repeat-dose and help-seeking plan rather than transferring instructions between devices."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-fda-neffy",
+            "locator": "Indications; Patient information",
+            "assessment": "US nasal product and taught product-specific use."
+          },
+          {
+            "source_id": "anaphylaxis-p0-acaai-test",
+            "locator": "Epinephrine options and safety notes",
+            "assessment": "US device selection and individual training."
+          },
+          {
+            "source_id": "anaphylaxis-p0-aaaai",
+            "locator": "Management",
+            "assessment": "Thigh injection or nasal prescription options."
+          }
+        ],
+        "id": "medications-4"
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "anaphylaxis-p0-ascia",
+        "source_metadata_sha256": "882384c9ba6a67771682822f4ad4435409fd15fa46db659076e2763f03758e40",
+        "locator": "Adjunct medications",
+        "source_version": "Content updated September 2026; Sections 1–3: diagnostic criteria, positioning, adrenaline, asthma, adjuncts, observation, referral",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Adjuncts cannot replace adrenaline. | No respiratory/cardiovascular treatment role. | Bronchodilator limits; unproven anaphylaxis steroid benefit."
+      },
+      {
+        "source_id": "anaphylaxis-p0-rcuk",
+        "source_metadata_sha256": "507e97210170c5275454b4d233e577d083b532f07a057b10f40ee359381579af",
+        "locator": "5.1–5.1.2 | 5.4 | 5.5–5.6",
+        "source_version": "May 2021; official landing page still calls it most recent; stated May 2026 review date elapsed; Printed pp 20–33, 40–45; recognition, drugs, tryptase, observation and follow-up",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-RCUK",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "IM tolerability, prompt use, IV risks. | Skin relief only after stabilisation. | UK nonroutine steroid policy and asthma/refractory exceptions."
+      },
+      {
+        "source_id": "anaphylaxis-p0-wao",
+        "source_metadata_sha256": "43bc2b5908c7325b3f47f9f6a8c60259aea147d56fc867b22873c2f591682fbe",
+        "locator": "Acute treatment; Key points",
+        "source_version": "2020 guidance; full official repository HTML read directly with ?pdf=1 after browser extraction failed; Definition/Table 3; Pathogenesis; Elicitors/cofactors; Acute treatment; Diagnostic tests; Long-term management/Table 8",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GLOBAL",
+        "independence_group": "WAO",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "No absolute IM contraindication; IV arrhythmia risk."
+      },
+      {
+        "source_id": "anaphylaxis-p0-adam",
+        "source_metadata_sha256": "fb1d1d23045f0eb1b947fc25220af926657c68dcba4caf362e2f8f3f327b00f5",
+        "locator": "Treatment: Do not",
+        "source_version": "Reviewed 2026-01-20; Causes; Symptoms; Treatment; Possible complications; Prevention",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ADAM",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "No medicines/anything by mouth during breathing difficulty."
+      },
+      {
+        "source_id": "anaphylaxis-p0-fda-neffy",
+        "source_metadata_sha256": "36d1f7b3ed5dbe47a14603b36649ac5028ca63f58bcb5516b306ce48622488f9",
+        "locator": "Indications; Patient information",
+        "source_version": "2025 label, reference ID 5543248; Patient information pp 19–20; indications, device use and precautions",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-FDA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "US nasal product and taught product-specific use."
+      },
+      {
+        "source_id": "anaphylaxis-p0-acaai-test",
+        "source_metadata_sha256": "61802bf076c57f42253e38c73dfad625dd83326198c83d6cc04c536ead2d91c5",
+        "locator": "Epinephrine options and safety notes",
+        "source_version": "Updated 2026-02-23; Elimination diet; Food allergy testing; Oral food challenge; Epinephrine; At-home tests",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ACAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "US device selection and individual training."
+      },
+      {
+        "source_id": "anaphylaxis-p0-aaaai",
+        "source_metadata_sha256": "9c56777ec46db0d8646d6c494ed98403a194439f61e80a6354318d688cdc9806",
+        "locator": "Management",
+        "source_version": "Updated 2026-08-13; Overview; Symptoms and diagnosis; Treatment and management",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Thigh injection or nasal prescription options."
+      },
+      {
+        "source_id": "anaphylaxis-p0-ontario-bls",
+        "source_metadata_sha256": "359d7c857096aa69a26102bf6aeb88b157b5372c52dcfc1af632c6906b45cbee",
+        "locator": "Patient Management Standard item9; Preamble professional scope; Allergic Reaction (Known or Suspected) Standard",
+        "source_version": "BLS PCS v3.4 issued2023-03-01/effective2023-03-10; webpage updated2026-03-10",
+        "accessed_at": "2026-10-02",
+        "population": "Ontario paramedic prehospital care; public anaphylaxis breathing-difficulty application separately supported by A.D.A.M.",
+        "region": "CA-ON",
+        "independence_group": "CA-ONTARIO-MOH",
+        "upstream_evidence": [
+          "Ontario Ministry professional standards reference ALS protocols and Heart and Stroke guidance; no A.D.A.M. redistribution observed. Independent professional writing does not imply independent outcome trials."
+        ],
+        "relation": "supports",
+        "assessment": "Paramedic standard gives nothing by mouth unless indicated by BLS/ALS standards, in an airway-focused professional care pathway. It corroborates avoiding forced oral administration; it is not presented as a universal ban overriding trained clinical protocols. A.D.A.M. directly supports the public breathing-difficulty condition; antihistamine roles remain ASCIA/RCUK."
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/priority_medical_rules",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent source and bilingual review."
+    },
+    "unresolved_questions": [],
+    "content_sha256": "d67397b1d51fc286368140c12197ec33e4a2d6bca80f17355fe2c93a60b5e96e"
+  },
+  {
+    "id": "p0-01-anaphylaxis-diet",
+    "target": {
+      "kind": "condition",
+      "id": "anaphylaxis",
+      "section": "diet"
+    },
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading and synthesis by /root/priority_medical_rules",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "饮食管理围绕已确认或正在调查的食物触发物，不是给所有严重过敏者同一张忌口表。",
+          "en": "Dietary management targets confirmed or investigated food triggers rather than one exclusion list for everyone with anaphylaxis."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-food",
+            "locator": "Treatment and management",
+            "assessment": "Avoid the identified food."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Long-term management",
+            "assessment": "Individual trigger identification."
+          }
+        ],
+        "id": "diet-0"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "确认食物过敏后，查看配料和过敏原标识，餐馆就餐时说明具体过敏物，并询问备餐时是否可能混入。即使只尝少量也可能反应，不能用在家试吃检验安全。",
+          "en": "With confirmed food allergy, read ingredients and allergen labels, tell restaurants the specific allergy and ask about cross-contact during preparation. Even a small taste may trigger a reaction; home tasting is not a safety test."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-food",
+            "locator": "Overview; Management",
+            "assessment": "Tiny amounts, labels, restaurant disclosure."
+          },
+          {
+            "source_id": "anaphylaxis-p0-exercise",
+            "locator": "FAQ 5",
+            "assessment": "Food preparation cross-contamination."
+          },
+          {
+            "source_id": "anaphylaxis-p0-acaai-test",
+            "locator": "Elimination diet; Oral food challenge",
+            "assessment": "No tasting an anaphylaxis-risk food at home."
+          }
+        ],
+        "id": "diet-1"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "需要长期排除奶、蛋或多种主食时，与营养师选择替代食物，尤其关注儿童生长。不要单凭商业“食物敏感”大面板扩大忌口，结果可能只反映接触而非真正过敏。",
+          "en": "If avoiding milk, egg or several staple foods long term, work with a dietitian on substitutes, especially for growing children. Do not extend restrictions solely from commercial food-sensitivity panels, which may reflect exposure rather than true allergy."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Long-term management",
+            "assessment": "Dietitian follow-up when relevant."
+          },
+          {
+            "source_id": "anaphylaxis-p0-intolerance",
+            "locator": "Treatment",
+            "assessment": "Nutrient/growth consequences of unguided restriction."
+          },
+          {
+            "source_id": "anaphylaxis-p0-acaai-test",
+            "locator": "At-home food allergy tests",
+            "assessment": "IgG exposure versus allergy and unnecessary restriction."
+          }
+        ],
+        "id": "diet-2"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "食物依赖性运动反应需要专科确定食物、运动、酒精或止痛药的组合，并给出适合的间隔与避免方案；这与单纯小麦过敏、乳糜泻或所有人都要无麸质饮食不同。",
+          "en": "Food-dependent exercise reactions require a specialist plan for the relevant food, exercise, alcohol or pain-medicine combination and timing. This differs from ordinary wheat allergy or coeliac disease and does not imply that everyone needs a gluten-free diet."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-exercise",
+            "locator": "FAQ 1–5",
+            "assessment": "WDEIA differs from ordinary wheat allergy/coeliac disease; individual cofactors."
+          },
+          {
+            "source_id": "anaphylaxis-p0-exercise-acaai",
+            "locator": "Transcript",
+            "assessment": "Specialist assessment of food-dependent exercise reactions."
+          }
+        ],
+        "id": "diet-3"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "没有一种普通饮食能替代肾上腺素急救或触发物管理。现有食物过敏治疗也不是任意吃过敏食物的通行证，需继续按专科方案避免暴露。",
+          "en": "An ordinary diet does not replace adrenaline rescue or trigger management. Food-allergy treatment is not permission for unrestricted exposure; avoidance remains part of the specialist plan."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-food",
+            "locator": "Treatment and management",
+            "assessment": "Treatment with avoidance; no cure."
+          },
+          {
+            "source_id": "anaphylaxis-p0-aaaai",
+            "locator": "Important reminder; Management",
+            "assessment": "Emergency drug and avoidance remain necessary."
+          }
+        ],
+        "id": "diet-4"
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "anaphylaxis-p0-food",
+        "source_metadata_sha256": "feb8a13b05870316cb4a7a53d418b125d8c9e596de1be4d0e31944dd591a8de5",
+        "locator": "Treatment and management | Overview; Management",
+        "source_version": "Updated 2026-05-12; Overview; Symptoms and diagnosis; Treatment and management",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Avoid the identified food. | Tiny amounts, labels, restaurant disclosure. | Treatment with avoidance; no cure."
+      },
+      {
+        "source_id": "anaphylaxis-p0-wao",
+        "source_metadata_sha256": "43bc2b5908c7325b3f47f9f6a8c60259aea147d56fc867b22873c2f591682fbe",
+        "locator": "Long-term management",
+        "source_version": "2020 guidance; full official repository HTML read directly with ?pdf=1 after browser extraction failed; Definition/Table 3; Pathogenesis; Elicitors/cofactors; Acute treatment; Diagnostic tests; Long-term management/Table 8",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GLOBAL",
+        "independence_group": "WAO",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Individual trigger identification. | Dietitian follow-up when relevant."
+      },
+      {
+        "source_id": "anaphylaxis-p0-exercise",
+        "source_metadata_sha256": "1fdefc976fdc9d1f65189c1fa470ac5f2f72e627c86094d755ac81ffac6681e2",
+        "locator": "FAQ 5 | FAQ 1–5",
+        "source_version": "Updated November 2024; FAQ 1–5",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Food preparation cross-contamination. | WDEIA differs from ordinary wheat allergy/coeliac disease; individual cofactors."
+      },
+      {
+        "source_id": "anaphylaxis-p0-acaai-test",
+        "source_metadata_sha256": "61802bf076c57f42253e38c73dfad625dd83326198c83d6cc04c536ead2d91c5",
+        "locator": "Elimination diet; Oral food challenge | At-home food allergy tests",
+        "source_version": "Updated 2026-02-23; Elimination diet; Food allergy testing; Oral food challenge; Epinephrine; At-home tests",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ACAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "No tasting an anaphylaxis-risk food at home. | IgG exposure versus allergy and unnecessary restriction."
+      },
+      {
+        "source_id": "anaphylaxis-p0-intolerance",
+        "source_metadata_sha256": "77b241c6a22b84306d9386ce587fafc3cd85a0a46830058ec6771842ee625df8",
+        "locator": "Treatment",
+        "source_version": "Reviewed 2026-06-18; Causes; Tests; Treatment",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Nutrient/growth consequences of unguided restriction."
+      },
+      {
+        "source_id": "anaphylaxis-p0-exercise-acaai",
+        "source_metadata_sha256": "f03dda310910842e5e01100f3bc57fba0b0e4dec5b8ce8e645fcc4654fc2e912",
+        "locator": "Transcript",
+        "source_version": "2026-07-10; English transcript",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ACAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Specialist assessment of food-dependent exercise reactions."
+      },
+      {
+        "source_id": "anaphylaxis-p0-aaaai",
+        "source_metadata_sha256": "9c56777ec46db0d8646d6c494ed98403a194439f61e80a6354318d688cdc9806",
+        "locator": "Important reminder; Management",
+        "source_version": "Updated 2026-08-13; Overview; Symptoms and diagnosis; Treatment and management",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Emergency drug and avoidance remain necessary."
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/priority_medical_rules",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent source and bilingual review."
+    },
+    "unresolved_questions": [],
+    "content_sha256": "f045c3ec22ab25933a2af5e0f599e65a6e2212b2e2c2fdb51913e41c893f7339"
+  },
+  {
+    "id": "p0-01-anaphylaxis-daily_care",
+    "target": {
+      "kind": "condition",
+      "id": "anaphylaxis",
+      "section": "daily_care"
+    },
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading and synthesis by /root/priority_medical_rules",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "平时准备好药、操作和联系信息，发作时才不需要临时寻找。",
+          "en": "Prepare medicines, device skills and contact information before an attack."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-aaaai",
+            "locator": "Management",
+            "assessment": "Preparedness/action plan."
+          }
+        ],
+        "id": "daily_care-0"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "若已被开具自动注射器，随身带两支，定期看有效期，并按产品要求避免过热或过冷存放。是否需要长期配备、选哪种装置由暴露风险和当地供应决定。",
+          "en": "If prescribed auto-injectors, carry two, check expiry dates and avoid excessive heat or cold as directed. Long-term need and device choice depend on exposure risk and local availability."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-nhs",
+            "locator": "Prevention",
+            "assessment": "Two devices, expiry and temperature protection."
+          },
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "8.6",
+            "assessment": "Two devices when prescribed; drug-trigger exceptions."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Long-term management",
+            "assessment": "Availability varies internationally."
+          }
+        ],
+        "id": "daily_care-1"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "用不含针和药的训练器练习，让家人、同事、老师或照护者也学会，并知道药放在哪里。换品牌或装置时重新学习；把书面急救计划留在学校或工作场所。",
+          "en": "Practise with a needle-free, medicine-free trainer and teach family, colleagues, teachers or carers where the medicine is and how to use it. Relearn the steps after a device change and share the written plan with school or work."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-nhs",
+            "locator": "Prevention; Treatment",
+            "assessment": "Trainer, teach others and device differences."
+          },
+          {
+            "source_id": "anaphylaxis-p0-aaaai",
+            "locator": "Management",
+            "assessment": "Teach contacts; action plan at work/school/camp."
+          }
+        ],
+        "id": "daily_care-2"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "把触发物、药名和反应表现记在可随身查看的记录中，佩戴医疗提示饰物也是一种选择。复诊时带上发作时间、进食和用药记录，帮助医生核对原因。",
+          "en": "Keep an accessible record of triggers, medicine names and reaction features; medical-alert identification is an option. Bring the event timeline and food/medicine record to review to help assess causes."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Table 8",
+            "assessment": "Medical record/identification and detailed history."
+          },
+          {
+            "source_id": "anaphylaxis-p0-drug",
+            "locator": "Diagnosis",
+            "assessment": "Timeline and concurrent medicines."
+          },
+          {
+            "source_id": "anaphylaxis-p0-acaai-test",
+            "locator": "Elimination diet",
+            "assessment": "Diary includes food/medicines/symptoms."
+          }
+        ],
+        "id": "daily_care-3"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "已怀疑或确诊运动诱发反应者，与专科讨论恢复运动方案；运动时有人同行并随身携带救援药。出现突然皮疹伴呼吸或头晕等表现时，不继续坚持运动，按急救计划求助。",
+          "en": "For suspected or confirmed exercise-induced reactions, agree an exercise plan with the specialist; exercise with a companion and carry rescue medication. Sudden rash with breathing symptoms or dizziness calls for the emergency plan rather than continuing exercise."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-exercise-acaai",
+            "locator": "Transcript",
+            "assessment": "Exercise with companion and epinephrine."
+          },
+          {
+            "source_id": "anaphylaxis-p0-exercise",
+            "locator": "FAQ 5",
+            "assessment": "Specialist plan, device, consider not alone."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Acute treatment; Table 8",
+            "assessment": "Prompt treatment and exercise-related preparedness."
+          }
+        ],
+        "id": "daily_care-4"
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "anaphylaxis-p0-aaaai",
+        "source_metadata_sha256": "9c56777ec46db0d8646d6c494ed98403a194439f61e80a6354318d688cdc9806",
+        "locator": "Management",
+        "source_version": "Updated 2026-08-13; Overview; Symptoms and diagnosis; Treatment and management",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Preparedness/action plan. | Teach contacts; action plan at work/school/camp."
+      },
+      {
+        "source_id": "anaphylaxis-nhs",
+        "source_metadata_sha256": "019ece4f1e84a6bf880b4d382472891cdf4f6112280dc221ccb4675fedd46d62",
+        "locator": "Prevention | Prevention; Treatment",
+        "source_version": "Topic page or hub opened via browsing. Linked subpages/full claim support not comprehensively audited.",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Two devices, expiry and temperature protection. | Trainer, teach others and device differences."
+      },
+      {
+        "source_id": "anaphylaxis-p0-rcuk",
+        "source_metadata_sha256": "507e97210170c5275454b4d233e577d083b532f07a057b10f40ee359381579af",
+        "locator": "8.6",
+        "source_version": "May 2021; official landing page still calls it most recent; stated May 2026 review date elapsed; Printed pp 20–33, 40–45; recognition, drugs, tryptase, observation and follow-up",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-RCUK",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Two devices when prescribed; drug-trigger exceptions."
+      },
+      {
+        "source_id": "anaphylaxis-p0-wao",
+        "source_metadata_sha256": "43bc2b5908c7325b3f47f9f6a8c60259aea147d56fc867b22873c2f591682fbe",
+        "locator": "Long-term management | Table 8 | Acute treatment; Table 8",
+        "source_version": "2020 guidance; full official repository HTML read directly with ?pdf=1 after browser extraction failed; Definition/Table 3; Pathogenesis; Elicitors/cofactors; Acute treatment; Diagnostic tests; Long-term management/Table 8",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GLOBAL",
+        "independence_group": "WAO",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Availability varies internationally. | Medical record/identification and detailed history. | Prompt treatment and exercise-related preparedness."
+      },
+      {
+        "source_id": "anaphylaxis-p0-drug",
+        "source_metadata_sha256": "f0c3e834399ea10ce5ca6891e863158a8b1341af52cefebcebe8d20b7cd1842a",
+        "locator": "Diagnosis",
+        "source_version": "Current page read 2026-10-02; Overview; Symptoms and diagnosis; Treatment and management",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Timeline and concurrent medicines."
+      },
+      {
+        "source_id": "anaphylaxis-p0-acaai-test",
+        "source_metadata_sha256": "61802bf076c57f42253e38c73dfad625dd83326198c83d6cc04c536ead2d91c5",
+        "locator": "Elimination diet",
+        "source_version": "Updated 2026-02-23; Elimination diet; Food allergy testing; Oral food challenge; Epinephrine; At-home tests",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ACAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Diary includes food/medicines/symptoms."
+      },
+      {
+        "source_id": "anaphylaxis-p0-exercise-acaai",
+        "source_metadata_sha256": "f03dda310910842e5e01100f3bc57fba0b0e4dec5b8ce8e645fcc4654fc2e912",
+        "locator": "Transcript",
+        "source_version": "2026-07-10; English transcript",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ACAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Exercise with companion and epinephrine."
+      },
+      {
+        "source_id": "anaphylaxis-p0-exercise",
+        "source_metadata_sha256": "1fdefc976fdc9d1f65189c1fa470ac5f2f72e627c86094d755ac81ffac6681e2",
+        "locator": "FAQ 5",
+        "source_version": "Updated November 2024; FAQ 1–5",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Specialist plan, device, consider not alone."
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/priority_medical_rules",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent source and bilingual review."
+    },
+    "unresolved_questions": [],
+    "content_sha256": "5366108e452027778d175d673eb1018f67c1fb7459b36f00667464fbc6d1c622"
+  },
+  {
+    "id": "p0-01-anaphylaxis-special_populations",
+    "target": {
+      "kind": "condition",
+      "id": "anaphylaxis",
+      "section": "special_populations"
+    },
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading and synthesis by /root/priority_medical_rules",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "年龄、孕期、合并病和使用装置的能力，会改变识别和照护安排。",
+          "en": "Age, pregnancy, comorbidities and ability to use a device affect recognition and care."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Acute treatment",
+            "assessment": "Personalise education to age, comorbidity, medicines and triggers."
+          }
+        ],
+        "id": "special_populations-0"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "婴幼儿可能苍白、软绵绵、反应变差，不能等他们说“喉咙紧”。照护者按儿童处方装置和急救计划行动；等待救援时平抱或按呼吸需要支撑体位，不竖抱在肩上。",
+          "en": "Infants and young children may become pale, floppy or poorly responsive and cannot describe throat tightness. Carers use the child’s prescribed device and emergency plan; hold them flat or support breathing as directed rather than upright over a shoulder."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-nhs",
+            "locator": "Immediate action",
+            "assessment": "Limp/floppy child warning."
+          },
+          {
+            "source_id": "anaphylaxis-p0-ascia",
+            "locator": "Infants; Positioning",
+            "assessment": "Infant manifestations and no upright shoulder holding."
+          },
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "4.4; 8.6",
+            "assessment": "Position for breathing and caregiver training."
+          }
+        ],
+        "id": "special_populations-1"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "孕妇仍需及时肾上腺素；保护母亲的供血和呼吸也关系到胎儿供氧。通常左侧卧等待帮助，避免子宫压迫大血管；医护同时评估母胎情况。",
+          "en": "Pregnancy still requires prompt adrenaline; maternal circulation and breathing support fetal oxygen delivery. Usually lie on the left side to reduce uterine pressure on major vessels while staff assess mother and baby."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-pregnancy",
+            "locator": "Management",
+            "assessment": "Adrenaline not withheld; maternal BP/placental perfusion; left side and fetal monitoring."
+          },
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "4.7",
+            "assessment": "Pregnancy same treatment plus left side."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Acute treatment",
+            "assessment": "Pregnancy left-sided position; prompt epinephrine."
+          }
+        ],
+        "id": "special_populations-2"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "老人、心脏病患者或正在使用心血管药物的人，应把完整药单告诉医护；这些因素影响监测和后续用药，但不是自行延迟肾上腺素的理由。",
+          "en": "Older people, those with heart disease and those taking cardiovascular medicines should tell clinicians their full medication list. These factors affect monitoring and subsequent treatment, not a decision to delay adrenaline oneself."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Cofactors; Acute treatment; Key points",
+            "assessment": "Comorbidity/medication assessment; no absolute IM contraindication."
+          },
+          {
+            "source_id": "anaphylaxis-p0-adam",
+            "locator": "Prevention",
+            "assessment": "No epinephrine contraindication in severe reaction."
+          },
+          {
+            "source_id": "anaphylaxis-p0-fda-neffy",
+            "locator": "Patient information: tell provider",
+            "assessment": "Cardiovascular medicines and conditions should be disclosed."
+          }
+        ],
+        "id": "special_populations-3"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "反复不明原因发作者可能需要肥大细胞相关评估，结合急性与平时的化验、临床发作和必要的进一步检查。单凭长期疲乏、腹胀或一张异常化验单，不能确诊肥大细胞激活综合征。",
+          "en": "Recurrent unexplained attacks may need mast-cell evaluation using attack and baseline tests, clinical episodes and selected further investigation. Chronic fatigue, bloating or one abnormal laboratory result alone does not establish mast-cell activation syndrome."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-mcas",
+            "locator": "Idiopathic MCAS; Mediators; Summary",
+            "assessment": "Multiple diagnostic criteria and objective mediator changes."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Pathogenesis; Long-term management",
+            "assessment": "Mast-cell disorders in unexplained anaphylaxis."
+          }
+        ],
+        "id": "special_populations-4"
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "anaphylaxis-p0-wao",
+        "source_metadata_sha256": "43bc2b5908c7325b3f47f9f6a8c60259aea147d56fc867b22873c2f591682fbe",
+        "locator": "Acute treatment | Cofactors; Acute treatment; Key points | Pathogenesis; Long-term management",
+        "source_version": "2020 guidance; full official repository HTML read directly with ?pdf=1 after browser extraction failed; Definition/Table 3; Pathogenesis; Elicitors/cofactors; Acute treatment; Diagnostic tests; Long-term management/Table 8",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GLOBAL",
+        "independence_group": "WAO",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Personalise education to age, comorbidity, medicines and triggers. | Pregnancy left-sided position; prompt epinephrine. | Comorbidity/medication assessment; no absolute IM contraindication. | Mast-cell disorders in unexplained anaphylaxis."
+      },
+      {
+        "source_id": "anaphylaxis-nhs",
+        "source_metadata_sha256": "019ece4f1e84a6bf880b4d382472891cdf4f6112280dc221ccb4675fedd46d62",
+        "locator": "Immediate action",
+        "source_version": "Topic page or hub opened via browsing. Linked subpages/full claim support not comprehensively audited.",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Limp/floppy child warning."
+      },
+      {
+        "source_id": "anaphylaxis-p0-ascia",
+        "source_metadata_sha256": "882384c9ba6a67771682822f4ad4435409fd15fa46db659076e2763f03758e40",
+        "locator": "Infants; Positioning",
+        "source_version": "Content updated September 2026; Sections 1–3: diagnostic criteria, positioning, adrenaline, asthma, adjuncts, observation, referral",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Infant manifestations and no upright shoulder holding."
+      },
+      {
+        "source_id": "anaphylaxis-p0-rcuk",
+        "source_metadata_sha256": "507e97210170c5275454b4d233e577d083b532f07a057b10f40ee359381579af",
+        "locator": "4.4; 8.6 | 4.7",
+        "source_version": "May 2021; official landing page still calls it most recent; stated May 2026 review date elapsed; Printed pp 20–33, 40–45; recognition, drugs, tryptase, observation and follow-up",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-RCUK",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Position for breathing and caregiver training. | Pregnancy same treatment plus left side."
+      },
+      {
+        "source_id": "anaphylaxis-p0-pregnancy",
+        "source_metadata_sha256": "a6451c4cb16237d32ce57ba01036001cf5c9a5cc2ffc9d229d961e47f5c4ff92",
+        "locator": "Management",
+        "source_version": "2024 guideline; Management: adrenaline priority and left lateral positioning",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Adrenaline not withheld; maternal BP/placental perfusion; left side and fetal monitoring."
+      },
+      {
+        "source_id": "anaphylaxis-p0-adam",
+        "source_metadata_sha256": "fb1d1d23045f0eb1b947fc25220af926657c68dcba4caf362e2f8f3f327b00f5",
+        "locator": "Prevention",
+        "source_version": "Reviewed 2026-01-20; Causes; Symptoms; Treatment; Possible complications; Prevention",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ADAM",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "No epinephrine contraindication in severe reaction."
+      },
+      {
+        "source_id": "anaphylaxis-p0-fda-neffy",
+        "source_metadata_sha256": "36d1f7b3ed5dbe47a14603b36649ac5028ca63f58bcb5516b306ce48622488f9",
+        "locator": "Patient information: tell provider",
+        "source_version": "2025 label, reference ID 5543248; Patient information pp 19–20; indications, device use and precautions",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-FDA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Cardiovascular medicines and conditions should be disclosed."
+      },
+      {
+        "source_id": "anaphylaxis-p0-mcas",
+        "source_metadata_sha256": "b44d85e3a41ca44b87529c79681bc36a0be815baa1b05c029beaf9dedf718a08",
+        "locator": "Idiopathic MCAS; Mediators; Summary",
+        "source_version": "Updated 2026-08-27; Mast cells; Idiopathic MCAS; Mediators; Summary",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Multiple diagnostic criteria and objective mediator changes."
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/priority_medical_rules",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent source and bilingual review."
+    },
+    "unresolved_questions": [],
+    "content_sha256": "d1809a6a8f8794ecb2eb43903b678826c0153e0fdcf4ecd300852adee240a94f"
+  },
+  {
+    "id": "p0-01-anaphylaxis-prognosis_followup",
+    "target": {
+      "kind": "condition",
+      "id": "anaphylaxis",
+      "section": "prognosis_followup"
+    },
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading and synthesis by /root/priority_medical_rules",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "及时处理后许多人能恢复，但这次症状消失不等于以后不会再发作。",
+          "en": "Many recover with prompt treatment, but resolution of one episode does not establish freedom from future attacks."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-adam",
+            "locator": "Outlook",
+            "assessment": "Improvement with prompt therapy."
+          },
+          {
+            "source_id": "anaphylaxis-p0-aaaai",
+            "locator": "Overview",
+            "assessment": "Prior episode increases recurrence risk."
+          }
+        ],
+        "id": "prognosis_followup-0"
+      },
+      {
+        "kind": "risk",
+        "text": {
+          "zh-CN": "部分人在没有再次接触过敏原时，数小时后又出现症状，称双相反应。这是需要观察的原因之一；是否住院、观察多久由团队根据风险决定，没有一个时长能保证所有人绝不复发。",
+          "en": "Some develop symptoms again hours later without new exposure, called a biphasic reaction. This is one reason for observation; the team chooses admission and duration according to risk, and no single interval guarantees no recurrence."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "8.1–8.2",
+            "assessment": "Biphasic definition, uncertain optimal observation."
+          },
+          {
+            "source_id": "anaphylaxis-p0-ascia",
+            "locator": "Observation",
+            "assessment": "Recurrence and risk-selected overnight care."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Acute treatment; global gaps",
+            "assessment": "Observation important; duration lacks consensus."
+          }
+        ],
+        "id": "prognosis_followup-1"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "过敏专科随访应复核触发物、能否避免、装置操作和哮喘控制；再次反应、用药后仍有症状或急救药缺失，都应及时联系团队更新计划。新出现呼吸或晕厥危险信号时直接急救。",
+          "en": "Allergy follow-up reviews triggers, avoidance, device technique and asthma control. Contact the team promptly after another reaction, ongoing symptoms or loss of rescue medication to update the plan; new breathing or fainting warning signs need emergency help."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-ascia",
+            "locator": "Referral; device prescription",
+            "assessment": "Cause, comorbidity and plan updates."
+          },
+          {
+            "source_id": "anaphylaxis-p0-aaaai",
+            "locator": "Management; Important reminder",
+            "assessment": "Preparedness and recurrent emergency action."
+          },
+          {
+            "source_id": "anaphylaxis-nhs",
+            "locator": "Prevention",
+            "assessment": "Keep available in-date devices."
+          }
+        ],
+        "id": "prognosis_followup-2"
+      },
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "是否仍对某种食物或药物过敏，要用病史和专科复评判断；不能因几次没有反应就自行恢复接触。担心外出、进食或运动已明显影响生活时，也可在随访中讨论营养和心理支持。",
+          "en": "Whether a food or medicine allergy persists requires history and specialist reassessment, not re-exposure after a few symptom-free occasions. If fear of eating, travel or exercise limits life, discuss nutritional and psychological support during follow-up."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-acaai-test",
+            "locator": "Oral challenge; Elimination diet",
+            "assessment": "Reassessment/outgrowing and no home challenge."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Long-term management",
+            "assessment": "Restrictions, quality of life, dietitian/psychologist support."
+          }
+        ],
+        "id": "prognosis_followup-3"
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "anaphylaxis-p0-adam",
+        "source_metadata_sha256": "fb1d1d23045f0eb1b947fc25220af926657c68dcba4caf362e2f8f3f327b00f5",
+        "locator": "Outlook",
+        "source_version": "Reviewed 2026-01-20; Causes; Symptoms; Treatment; Possible complications; Prevention",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ADAM",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Improvement with prompt therapy."
+      },
+      {
+        "source_id": "anaphylaxis-p0-aaaai",
+        "source_metadata_sha256": "9c56777ec46db0d8646d6c494ed98403a194439f61e80a6354318d688cdc9806",
+        "locator": "Overview | Management; Important reminder",
+        "source_version": "Updated 2026-08-13; Overview; Symptoms and diagnosis; Treatment and management",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Prior episode increases recurrence risk. | Preparedness and recurrent emergency action."
+      },
+      {
+        "source_id": "anaphylaxis-p0-rcuk",
+        "source_metadata_sha256": "507e97210170c5275454b4d233e577d083b532f07a057b10f40ee359381579af",
+        "locator": "8.1–8.2",
+        "source_version": "May 2021; official landing page still calls it most recent; stated May 2026 review date elapsed; Printed pp 20–33, 40–45; recognition, drugs, tryptase, observation and follow-up",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-RCUK",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Biphasic definition, uncertain optimal observation."
+      },
+      {
+        "source_id": "anaphylaxis-p0-ascia",
+        "source_metadata_sha256": "882384c9ba6a67771682822f4ad4435409fd15fa46db659076e2763f03758e40",
+        "locator": "Observation | Referral; device prescription",
+        "source_version": "Content updated September 2026; Sections 1–3: diagnostic criteria, positioning, adrenaline, asthma, adjuncts, observation, referral",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Recurrence and risk-selected overnight care. | Cause, comorbidity and plan updates."
+      },
+      {
+        "source_id": "anaphylaxis-p0-wao",
+        "source_metadata_sha256": "43bc2b5908c7325b3f47f9f6a8c60259aea147d56fc867b22873c2f591682fbe",
+        "locator": "Acute treatment; global gaps | Long-term management",
+        "source_version": "2020 guidance; full official repository HTML read directly with ?pdf=1 after browser extraction failed; Definition/Table 3; Pathogenesis; Elicitors/cofactors; Acute treatment; Diagnostic tests; Long-term management/Table 8",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GLOBAL",
+        "independence_group": "WAO",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Observation important; duration lacks consensus. | Restrictions, quality of life, dietitian/psychologist support."
+      },
+      {
+        "source_id": "anaphylaxis-nhs",
+        "source_metadata_sha256": "019ece4f1e84a6bf880b4d382472891cdf4f6112280dc221ccb4675fedd46d62",
+        "locator": "Prevention",
+        "source_version": "Topic page or hub opened via browsing. Linked subpages/full claim support not comprehensively audited.",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Keep available in-date devices."
+      },
+      {
+        "source_id": "anaphylaxis-p0-acaai-test",
+        "source_metadata_sha256": "61802bf076c57f42253e38c73dfad625dd83326198c83d6cc04c536ead2d91c5",
+        "locator": "Oral challenge; Elimination diet",
+        "source_version": "Updated 2026-02-23; Elimination diet; Food allergy testing; Oral food challenge; Epinephrine; At-home tests",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ACAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Reassessment/outgrowing and no home challenge."
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/priority_medical_rules",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent source and bilingual review."
+    },
+    "unresolved_questions": [],
+    "content_sha256": "276ffcc9950d77bdccdbbe58eb3222e6f37e75c232773be29ecf99a57356f362"
+  },
+  {
+    "id": "p0-01-anaphylaxis-complications",
+    "target": {
+      "kind": "condition",
+      "id": "anaphylaxis",
+      "section": "complications"
+    },
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading and synthesis by /root/priority_medical_rules",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "严重后果主要来自空气进不去和器官供血不足，并非每次发作都会发生。",
+          "en": "Serious complications arise mainly from blocked airflow and inadequate organ blood flow; they do not occur in every episode."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-adam",
+            "locator": "Possible complications",
+            "assessment": "Airway block, shock, respiratory/cardiac arrest."
+          },
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "Definition; Recognition",
+            "assessment": "Potentially life-threatening rather than inevitable outcome."
+          }
+        ],
+        "id": "complications-0"
+      },
+      {
+        "kind": "risk",
+        "text": {
+          "zh-CN": "喉头肿胀或严重气道收缩可导致缺氧，表现为越来越难讲话或呼吸、嘴唇颜色异常、意识下降，需要立即急救。",
+          "en": "Laryngeal swelling or severe airway narrowing can cause oxygen deprivation, with worsening speech or breathing, abnormal lip colour or reduced awareness requiring immediate emergency help."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-nhs",
+            "locator": "Symptoms; Immediate action",
+            "assessment": "Speech/airway/colour/consciousness signs."
+          },
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "3.2 Airway and breathing",
+            "assessment": "Airway obstruction and hypoxaemia."
+          }
+        ],
+        "id": "complications-1"
+      },
+      {
+        "kind": "risk",
+        "text": {
+          "zh-CN": "血管扩张和液体从血管内移出可使血压骤降，称过敏性休克；脑、心脏等器官得不到足够血液，人会头晕、倒下或失去反应。",
+          "en": "Widened vessels and fluid moving out of the circulation can sharply lower pressure, causing anaphylactic shock. Inadequate blood flow to the brain and heart can cause dizziness, collapse or unresponsiveness."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "2; 5.3",
+            "assessment": "Vasodilation/extravasation and reduced venous return."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Acute treatment; definition",
+            "assessment": "Circulatory instability and organ support."
+          },
+          {
+            "source_id": "anaphylaxis-p0-adam",
+            "locator": "Symptoms; Complications",
+            "assessment": "Collapse/unconsciousness and shock."
+          }
+        ],
+        "id": "complications-2"
+      },
+      {
+        "kind": "risk",
+        "text": {
+          "zh-CN": "未经及时处理，可能进展到呼吸或心跳停止。另一种需要警惕的情况是症状持续或好转后再来，救援药一次有效也不能作为自行终止观察的依据。",
+          "en": "Without timely care, respiratory or cardiac arrest may occur. Persistent or returning symptoms are another concern; one effective rescue dose does not by itself justify ending observation."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-adam",
+            "locator": "Complications",
+            "assessment": "Respiratory/cardiac arrest."
+          },
+          {
+            "source_id": "anaphylaxis-p0-rcuk",
+            "locator": "4.6; 8.1–8.2",
+            "assessment": "Arrest and observed recovery."
+          },
+          {
+            "source_id": "anaphylaxis-p0-ascia",
+            "locator": "Observation",
+            "assessment": "Relapse/refractory/biphasic follow-up."
+          }
+        ],
+        "id": "complications-3"
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "anaphylaxis-p0-adam",
+        "source_metadata_sha256": "fb1d1d23045f0eb1b947fc25220af926657c68dcba4caf362e2f8f3f327b00f5",
+        "locator": "Possible complications | Symptoms; Complications | Complications",
+        "source_version": "Reviewed 2026-01-20; Causes; Symptoms; Treatment; Possible complications; Prevention",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ADAM",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Airway block, shock, respiratory/cardiac arrest. | Collapse/unconsciousness and shock. | Respiratory/cardiac arrest."
+      },
+      {
+        "source_id": "anaphylaxis-p0-rcuk",
+        "source_metadata_sha256": "507e97210170c5275454b4d233e577d083b532f07a057b10f40ee359381579af",
+        "locator": "Definition; Recognition | 3.2 Airway and breathing | 2; 5.3 | 4.6; 8.1–8.2",
+        "source_version": "May 2021; official landing page still calls it most recent; stated May 2026 review date elapsed; Printed pp 20–33, 40–45; recognition, drugs, tryptase, observation and follow-up",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-RCUK",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Potentially life-threatening rather than inevitable outcome. | Airway obstruction and hypoxaemia. | Vasodilation/extravasation and reduced venous return. | Arrest and observed recovery."
+      },
+      {
+        "source_id": "anaphylaxis-nhs",
+        "source_metadata_sha256": "019ece4f1e84a6bf880b4d382472891cdf4f6112280dc221ccb4675fedd46d62",
+        "locator": "Symptoms; Immediate action",
+        "source_version": "Topic page or hub opened via browsing. Linked subpages/full claim support not comprehensively audited.",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GB",
+        "independence_group": "UK-NHS",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Speech/airway/colour/consciousness signs."
+      },
+      {
+        "source_id": "anaphylaxis-p0-wao",
+        "source_metadata_sha256": "43bc2b5908c7325b3f47f9f6a8c60259aea147d56fc867b22873c2f591682fbe",
+        "locator": "Acute treatment; definition",
+        "source_version": "2020 guidance; full official repository HTML read directly with ?pdf=1 after browser extraction failed; Definition/Table 3; Pathogenesis; Elicitors/cofactors; Acute treatment; Diagnostic tests; Long-term management/Table 8",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GLOBAL",
+        "independence_group": "WAO",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Circulatory instability and organ support."
+      },
+      {
+        "source_id": "anaphylaxis-p0-ascia",
+        "source_metadata_sha256": "882384c9ba6a67771682822f4ad4435409fd15fa46db659076e2763f03758e40",
+        "locator": "Observation",
+        "source_version": "Content updated September 2026; Sections 1–3: diagnostic criteria, positioning, adrenaline, asthma, adjuncts, observation, referral",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Relapse/refractory/biphasic follow-up."
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/priority_medical_rules",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent source and bilingual review."
+    },
+    "unresolved_questions": [],
+    "content_sha256": "f5c69a2c34891bb0f10e0ee93e475d96dd9f010d3c3d8adc5bf9443b051d7128"
+  },
+  {
+    "id": "p0-01-anaphylaxis-prevention",
+    "target": {
+      "kind": "condition",
+      "id": "anaphylaxis",
+      "section": "prevention"
+    },
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading and synthesis by /root/priority_medical_rules",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "claims": [
+      {
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "预防分为减少触发物暴露、处理可以改变的风险，以及为意外再次发作做准备。",
+          "en": "Prevention combines reducing trigger exposure, addressing modifiable risk and preparing for accidental recurrence."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Table 8",
+            "assessment": "Avoidance, comorbidities, preparedness."
+          }
+        ],
+        "id": "prevention-0"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "把曾引起反应的具体药名、反应和时间告诉医生、药师及手术团队。普通副作用不自动等于过敏；确诊药物严重过敏后，由医生选择替代药，必要检查或脱敏在专科完成。",
+          "en": "Tell doctors, pharmacists and procedural teams the exact medicine, reaction and timing. An ordinary side effect is not automatically allergy; after confirmed drug anaphylaxis, clinicians choose alternatives and arrange specialist tests or desensitisation when necessary."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-drug",
+            "locator": "Overview; Diagnosis; Treatment",
+            "assessment": "Adverse effect distinction, timeline, alternative/challenge/desensitisation."
+          },
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Long-term management; Table 8",
+            "assessment": "Register culprit, safe substitutes and specialist procedures."
+          }
+        ],
+        "id": "prevention-1"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "食物过敏重在准确避开触发物和备餐交叉接触；虫毒过敏者可咨询专科是否适合免疫治疗。不要把一次治疗、脱敏或随身带药理解为以后可以不管暴露。",
+          "en": "Food prevention depends on accurate trigger and cross-contact avoidance; people with venom allergy can ask about specialist immunotherapy. Treatment, desensitisation or carrying medicine does not remove the need to manage exposure."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-food",
+            "locator": "Management",
+            "assessment": "Avoidance remains necessary with treatment."
+          },
+          {
+            "source_id": "anaphylaxis-p0-exercise",
+            "locator": "FAQ 5",
+            "assessment": "Cross-contact."
+          },
+          {
+            "source_id": "anaphylaxis-p0-venom",
+            "locator": "Immunotherapy; Avoiding stings",
+            "assessment": "Specialist selection plus avoidance."
+          },
+          {
+            "source_id": "anaphylaxis-p0-adam",
+            "locator": "Treatment: Do not",
+            "assessment": "Prior allergy shots do not guarantee complete protection."
+          }
+        ],
+        "id": "prevention-2"
+      },
+      {
+        "kind": "action",
+        "text": {
+          "zh-CN": "控制好合并哮喘，复诊时核对急救计划是否仍适合当前年龄、体重、装置和生活场景。儿童入学、外出旅行或开始新运动时，把计划交给相关照护者并确认他们能操作。",
+          "en": "Keep coexisting asthma controlled and review whether the plan fits current age, weight, device and daily setting. For school, travel or new exercise, share the plan with relevant carers and confirm they can use it."
+        },
+        "supports": [
+          {
+            "source_id": "anaphylaxis-p0-wao",
+            "locator": "Table 8; Long-term management",
+            "assessment": "Asthma/comorbidity control and age/device-related preparedness."
+          },
+          {
+            "source_id": "anaphylaxis-p0-ascia",
+            "locator": "Asthma; referral; device training",
+            "assessment": "Asthma review and updated plan."
+          },
+          {
+            "source_id": "anaphylaxis-p0-aaaai",
+            "locator": "Management",
+            "assessment": "School/work/camp contacts and training."
+          }
+        ],
+        "id": "prevention-3"
+      }
+    ],
+    "supports": [
+      {
+        "source_id": "anaphylaxis-p0-wao",
+        "source_metadata_sha256": "43bc2b5908c7325b3f47f9f6a8c60259aea147d56fc867b22873c2f591682fbe",
+        "locator": "Table 8 | Long-term management; Table 8 | Table 8; Long-term management",
+        "source_version": "2020 guidance; full official repository HTML read directly with ?pdf=1 after browser extraction failed; Definition/Table 3; Pathogenesis; Elicitors/cofactors; Acute treatment; Diagnostic tests; Long-term management/Table 8",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "GLOBAL",
+        "independence_group": "WAO",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Avoidance, comorbidities, preparedness. | Register culprit, safe substitutes and specialist procedures. | Asthma/comorbidity control and age/device-related preparedness."
+      },
+      {
+        "source_id": "anaphylaxis-p0-drug",
+        "source_metadata_sha256": "f0c3e834399ea10ce5ca6891e863158a8b1341af52cefebcebe8d20b7cd1842a",
+        "locator": "Overview; Diagnosis; Treatment",
+        "source_version": "Current page read 2026-10-02; Overview; Symptoms and diagnosis; Treatment and management",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Adverse effect distinction, timeline, alternative/challenge/desensitisation."
+      },
+      {
+        "source_id": "anaphylaxis-p0-food",
+        "source_metadata_sha256": "feb8a13b05870316cb4a7a53d418b125d8c9e596de1be4d0e31944dd591a8de5",
+        "locator": "Management",
+        "source_version": "Updated 2026-05-12; Overview; Symptoms and diagnosis; Treatment and management",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Avoidance remains necessary with treatment."
+      },
+      {
+        "source_id": "anaphylaxis-p0-exercise",
+        "source_metadata_sha256": "1fdefc976fdc9d1f65189c1fa470ac5f2f72e627c86094d755ac81ffac6681e2",
+        "locator": "FAQ 5",
+        "source_version": "Updated November 2024; FAQ 1–5",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Cross-contact."
+      },
+      {
+        "source_id": "anaphylaxis-p0-venom",
+        "source_metadata_sha256": "eb539b85958921a5c3e7cd363794abd111a1d5c3f2adfbbaab62f70a8c09f76e",
+        "locator": "Immunotherapy; Avoiding stings",
+        "source_version": "Reviewed 2023-06-28; Symptoms; Management; Venom immunotherapy; Avoiding stings",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ACAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Specialist selection plus avoidance."
+      },
+      {
+        "source_id": "anaphylaxis-p0-adam",
+        "source_metadata_sha256": "fb1d1d23045f0eb1b947fc25220af926657c68dcba4caf362e2f8f3f327b00f5",
+        "locator": "Treatment: Do not",
+        "source_version": "Reviewed 2026-01-20; Causes; Symptoms; Treatment; Possible complications; Prevention",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-ADAM",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Prior allergy shots do not guarantee complete protection."
+      },
+      {
+        "source_id": "anaphylaxis-p0-ascia",
+        "source_metadata_sha256": "882384c9ba6a67771682822f4ad4435409fd15fa46db659076e2763f03758e40",
+        "locator": "Asthma; referral; device training",
+        "source_version": "Content updated September 2026; Sections 1–3: diagnostic criteria, positioning, adrenaline, asthma, adjuncts, observation, referral",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "AU-NZ",
+        "independence_group": "AU-ASCIA",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "Asthma review and updated plan."
+      },
+      {
+        "source_id": "anaphylaxis-p0-aaaai",
+        "source_metadata_sha256": "9c56777ec46db0d8646d6c494ed98403a194439f61e80a6354318d688cdc9806",
+        "locator": "Management",
+        "source_version": "Updated 2026-08-13; Overview; Symptoms and diagnosis; Treatment and management",
+        "accessed_at": "2026-10-02",
+        "population": "Adults and children unless the claim explicitly specifies pregnancy, asthma plus allergy, a food/drug/venom subgroup or US device rules. No prescribed dose calculations.",
+        "region": "US",
+        "independence_group": "US-AAAAI",
+        "upstream_evidence": [
+          "Professional guidance shares international consensus and cited clinical literature. Distinct writing organisations do not imply independent trials."
+        ],
+        "relation": "supports",
+        "assessment": "School/work/camp contacts and training."
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Independent organisations write these materials; ASCIA, RCUK and WAO share international guidance and research. Multiple pages of one organisation count as one origin. NLM food-testing education cites ACAAI and is not independent primary evidence.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Population, device availability and observation/emergency-plan variation stated where relevant; no universal dosing or discharge threshold."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/priority_medical_rules",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": "Awaiting independent source and bilingual review."
+    },
+    "unresolved_questions": [],
+    "content_sha256": "2cf28a72d6d7922fd363ad50d97984115f8c99509398443ebbb0d40708b012b1"
+  }
+]

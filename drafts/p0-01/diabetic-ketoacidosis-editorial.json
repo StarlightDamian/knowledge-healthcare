@@ -1,0 +1,3397 @@
+[
+  {
+    "id": "p0-01-diabetic-ketoacidosis-summary",
+    "target": {
+      "kind": "condition",
+      "id": "diabetic-ketoacidosis",
+      "section": "summary"
+    },
+    "content_sha256": "9e7d41901d12680191aa14512253b8f4aae3bd2ce068dcc86ee7389bacf2c275",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading by /root/mi_icd_scope; independent review pending",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "dka-cdc",
+        "source_metadata_sha256": "d07da9fc93a5de545c765e62db56663f2f44255b7c93ff421fcb89ed8a1fd46f",
+        "locator": "Overview | Overview; Signs; Testing",
+        "source_version": "Overview, signs, causes, prevention, testing and treatment; CDC subject-matter-expert-reviewed patient education.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-cdc",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-consensus",
+        "source_metadata_sha256": "18437b68ca2b039541a5aa5f1ff3be325f98dcc1a5f6425f1730fb0f07c5fd46",
+        "locator": "Introduction; section 2 Pathogenesis | Sections 2 and 3 Clinical presentation | Introduction paragraphs 3–5 | Section 3 Diagnostic criteria",
+        "source_version": "2024 joint adult consensus: publisher sections 1–7 re-read; same article PMC11343900 tables 3 and 4 actually read this round. Table 4 gives SGLT2 stopping/nonroutine restart, pregnancy and kidney failure; one joint editorial source, not five independent sources. Adult doses are not pediatric protocol.",
+        "accessed_at": "2026-10-02",
+        "population": "Adult diabetes",
+        "region": "International: US, Europe, UK",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-mayo-symptoms",
+        "source_metadata_sha256": "20a059ee7e07b060d359ea9c74e91589a3ebf00f69fe0c7655bdf0cb9fc45dcc",
+        "locator": "Symptoms; Complications",
+        "source_version": "Overview, symptoms, when to see a doctor, causes, complications and prevention; references include CDC and independent clinical reviews.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "mayo-clinic",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-mayo-treatment",
+        "source_metadata_sha256": "115d589bc4cce6c08584eb38eef9f049369d597185394341d11c65ea38383e6e",
+        "locator": "Diagnosis: Blood tests",
+        "source_version": "Diagnosis, treatment, preparing for appointment; same Mayo editorial institution as symptoms page.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "mayo-clinic",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-nhs",
+        "source_metadata_sha256": "1a6e33ee23ac2d6bc43d2daecbd3bf2a1280a952d48d74d05e8be07ce43314f3",
+        "locator": "Symptoms; Immediate action",
+        "source_version": "Full patient page; review due June 8, 2026 has passed, current retrieval cross-compared with newer materials.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "nhs-national",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      }
+    ],
+    "claims": [
+      {
+        "id": "summary-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "糖尿病酮症酸中毒，简称DKA，是胰岛素不足引起的急性危象：身体难以利用血糖，转而大量分解脂肪，产生过多称为“酮体”的酸性物质。",
+          "en": "Diabetic ketoacidosis, or DKA, is an acute crisis caused by insufficient insulin. The body cannot use glucose effectively and breaks down large amounts of fat, producing excess acids called ketones."
+        },
+        "supports": [
+          {
+            "source_id": "dka-cdc",
+            "locator": "Overview",
+            "assessment": "Insulin insufficiency, fat breakdown and ketone acids."
+          },
+          {
+            "source_id": "dka-consensus",
+            "locator": "Introduction; section 2 Pathogenesis",
+            "assessment": "Insulin deficit and ketogenesis."
+          }
+        ]
+      },
+      {
+        "id": "summary-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "酮体使血液变酸，尿多和呕吐又会造成水分及矿物质丢失。人可能从口渴、疲倦发展到深快呼吸、腹痛和意识异常。",
+          "en": "Ketones make the blood acidic, while frequent urination and vomiting deplete water and minerals. Thirst and fatigue can progress to deep rapid breathing, abdominal pain and altered awareness."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Sections 2 and 3 Clinical presentation",
+            "assessment": "Acidosis, osmotic fluid/mineral losses and progression."
+          },
+          {
+            "source_id": "dka-mayo-symptoms",
+            "locator": "Symptoms; Complications",
+            "assessment": "Thirst, vomiting, abdominal pain and confusion."
+          }
+        ]
+      },
+      {
+        "id": "summary-2",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "DKA以1型糖尿病较常见，但2型及其他类型也会发生，也可能是尚未确诊糖尿病的首次表现。它需要迅速的医疗处理。",
+          "en": "DKA is more common in type 1 diabetes, but also occurs in type 2 and other types and can be the first sign of previously undiagnosed diabetes. It needs prompt medical care."
+        },
+        "supports": [
+          {
+            "source_id": "dka-cdc",
+            "locator": "Overview; Signs; Testing",
+            "assessment": "Type 1 common/type 2 possible; first presentation; urgent care."
+          },
+          {
+            "source_id": "dka-consensus",
+            "locator": "Introduction paragraphs 3–5",
+            "assessment": "All diabetes types affected; early treatment essential."
+          },
+          {
+            "source_id": "dka-nhs",
+            "locator": "Symptoms; Immediate action",
+            "assessment": "Undiagnosed children and urgent assessment."
+          }
+        ]
+      },
+      {
+        "id": "summary-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "这是糖尿病的一种急性并发症，本文说明识别和处理路径；长期糖尿病管理由相关主题承接。一次血糖偏高并不自动等于DKA。",
+          "en": "This is an acute diabetes complication. This topic explains recognition and care pathways, while the diabetes topic covers long-term management. One high glucose reading does not automatically mean DKA."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 3 Diagnostic criteria",
+            "assessment": "Three components; glucose alone not diagnosis. Topic linkage editorial."
+          },
+          {
+            "source_id": "dka-mayo-treatment",
+            "locator": "Diagnosis: Blood tests",
+            "assessment": "Glucose, ketones and acidity."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Different institutions author their own patient or professional guidance; pages from one institution remain one editorial source. Shared guideline evidence is not treated as independent research. Mayo explicitly cites CDC along with clinical reviews; Mayo and CDC are separately written but not independent underlying research.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "Scoped common principles only; pediatric/adult doses and local labels not generalized."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/mi_icd_scope",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": [
+      "Current bilingual text and claim evidence await independent review; no clinical sign-off."
+    ]
+  },
+  {
+    "id": "p0-01-diabetic-ketoacidosis-causes_risks",
+    "target": {
+      "kind": "condition",
+      "id": "diabetic-ketoacidosis",
+      "section": "causes_risks"
+    },
+    "content_sha256": "ada1e5fcb391ed062b7d3fe76bc75642cfb5756b3978dc34b5660a908dccad38",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading by /root/mi_icd_scope; independent review pending",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "dka-cdc",
+        "source_metadata_sha256": "d07da9fc93a5de545c765e62db56663f2f44255b7c93ff421fcb89ed8a1fd46f",
+        "locator": "Causes items 1–2",
+        "source_version": "Overview, signs, causes, prevention, testing and treatment; CDC subject-matter-expert-reviewed patient education.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-cdc",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-cdc-sick",
+        "source_metadata_sha256": "843ff4f43b3b3e297a466b94c0d262bc9c4cc4afd1fdd9a862c31165aca80fe8",
+        "locator": "If you get sick",
+        "source_version": "Subject-matter-expert reviewed; prepare, if sick, emergency signs. Blanket continue diabetes pills not copied because medication-specific sick-day exceptions exist.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-cdc",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-consensus",
+        "source_metadata_sha256": "18437b68ca2b039541a5aa5f1ff3be325f98dcc1a5f6425f1730fb0f07c5fd46",
+        "locator": "Section 1 Risk factors; table 4 SGLT2 | Section 7 mental health, disadvantage and supplies",
+        "source_version": "2024 joint adult consensus: publisher sections 1–7 re-read; same article PMC11343900 tables 3 and 4 actually read this round. Table 4 gives SGLT2 stopping/nonroutine restart, pregnancy and kidney failure; one joint editorial source, not five independent sources. Adult doses are not pediatric protocol.",
+        "accessed_at": "2026-10-02",
+        "population": "Adult diabetes",
+        "region": "International: US, Europe, UK",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-cuh-pump",
+        "source_metadata_sha256": "a75c0075ee6c3479cf544aae2ebc35bba8bdc4159b085c57e5adec032f3f826c",
+        "locator": "Sick day rules and DKA; Key points",
+        "source_version": "Version 2, document 107308, approved 6 May 2026. Read Key points, sick-day/DKA, out-and-about and travel: in-date backup pens, pump settings, individualized doses and supplies. Device settings and doses not generalized.",
+        "accessed_at": "2026-10-02",
+        "population": "Pump users; device doses not generalized",
+        "region": "GB",
+        "independence_group": "nhs-cuh",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-mayo-symptoms",
+        "source_metadata_sha256": "20a059ee7e07b060d359ea9c74e91589a3ebf00f69fe0c7655bdf0cb9fc45dcc",
+        "locator": "Causes | Causes: An illness",
+        "source_version": "Overview, symptoms, when to see a doctor, causes, complications and prevention; references include CDC and independent clinical reviews.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "mayo-clinic",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-mhra",
+        "source_metadata_sha256": "69c10e410bb85378104b26665abad4828dd948cebe560795d9aa700be300599b",
+        "locator": "Advice; Reports; Risk factors",
+        "source_version": "Actually reopened 2016 updated advice, Reports and Risk factors. Replaces 2015 preliminary source: stop if suspected, no routine restart after DKA unless another cause identified/resolved, interruption around hospital major surgery/serious illness; near-normal glucose warning. Historical UK alert, not current global indication list.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "uk-mhra",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-nhs-scotland-sglt2",
+        "source_metadata_sha256": "c70a1d00a2a6dfe312fd66f2b15ddb4e98370d5a2aef6f3cdc931a25b283f628",
+        "locator": "Introduction and How do SGLT2 inhibitors work?",
+        "source_version": "2026-01-09",
+        "accessed_at": "2026-10-02",
+        "population": "Read introductory drug family and How do SGLT2 inhibitors work? Only mechanism used: reduced renal glucose reabsorption increases urinary glucose loss and lowers blood glucose. Page displays 09-01-2026. Other efficacy claims, class-wide amputation explanation and restart advice are not used.",
+        "region": "UK",
+        "independence_group": "nhs-national",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "causes_risks-3: Plain-language definition of the medicine class and urinary-glucose mechanism only. DKA risk, euglycaemia and planning are separately supported by MHRA and the consensus."
+      },
+      {
+        "source_id": "dka-niddk",
+        "source_metadata_sha256": "9d668f09c35b3b3da789aa1134252430f61fc03a47d99d5991f6769c68b94536",
+        "locator": "Mental health; Medicines; Care team",
+        "source_version": "Actually read current Managing Diabetes: Healthy meal plan, Mental health, Medicines/cost, Home glucose, Low glucose, Checking urine ketones, Special situations and Care team. Low-glucose confusion is in its own subsection, not the ketone paragraph.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-nih-niddk",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      }
+    ],
+    "claims": [
+      {
+        "id": "causes_risks-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "直接问题是可用胰岛素不够，诱因则是把身体推向这种失衡的事件。",
+          "en": "The immediate problem is insufficient available insulin; a trigger is the event that pushes the body into that imbalance."
+        },
+        "supports": [
+          {
+            "source_id": "dka-mayo-symptoms",
+            "locator": "Causes",
+            "assessment": "Insulin deficit and precipitating illness/interruption."
+          }
+        ]
+      },
+      {
+        "id": "causes_risks-1",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "感染或其他急病会增加对抗胰岛素作用的应激激素，因此即使吃得少，身体也可能需要不同于平时的胰岛素安排。",
+          "en": "Infection or other acute illness increases stress hormones that oppose insulin. Insulin needs can therefore change even when a person eats less."
+        },
+        "supports": [
+          {
+            "source_id": "dka-mayo-symptoms",
+            "locator": "Causes: An illness",
+            "assessment": "Stress hormones oppose insulin."
+          },
+          {
+            "source_id": "dka-cdc-sick",
+            "locator": "If you get sick",
+            "assessment": "Illness affects intake, glucose and insulin needs."
+          }
+        ]
+      },
+      {
+        "id": "causes_risks-2",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "漏用胰岛素、剂量不足或泵的输注中断可造成胰岛素缺口。出现高血糖时既要检查设备，也要考虑感染等原因，而不是把所有问题都归咎于泵。",
+          "en": "Missed insulin, insufficient doses or interrupted pump delivery can create an insulin gap. High glucose calls for checking delivery as well as causes such as infection, rather than assuming every episode is a pump fault."
+        },
+        "supports": [
+          {
+            "source_id": "dka-cdc",
+            "locator": "Causes items 1–2",
+            "assessment": "Illness, missed insulin, clogged pump/wrong dose."
+          },
+          {
+            "source_id": "dka-cuh-pump",
+            "locator": "Sick day rules and DKA; Key points",
+            "assessment": "Illness and pump failure both causes; trained device plan."
+          }
+        ]
+      },
+      {
+        "id": "causes_risks-3",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "SGLT2抑制剂是通过增加尿糖排出来降低血糖的一类药，如达格列净和恩格列净。它们可在少数使用者中增加DKA风险；这时血糖未必特别高。禁食、脱水等情形需要提前讨论用药安排。",
+          "en": "SGLT2 inhibitors are a class of medicines that lower blood glucose by increasing glucose loss in urine. Examples include dapagliflozin and empagliflozin. They can increase DKA risk in some users, sometimes without very high glucose. Fasting and dehydration call for advance discussion of medication plans."
+        },
+        "supports": [
+          {
+            "source_id": "dka-mhra",
+            "locator": "Advice; Reports; Risk factors",
+            "assessment": "Named agents, atypical glucose, restricted intake/dehydration risk discussion."
+          },
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 1 Risk factors; table 4 SGLT2",
+            "assessment": "SGLT2 fasting/dehydration/euglycemia."
+          },
+          {
+            "source_id": "dka-nhs-scotland-sglt2",
+            "locator": "Introduction and How do SGLT2 inhibitors work?",
+            "assessment": "Plain-language definition of the medicine class and urinary-glucose mechanism only. DKA risk, euglycaemia and planning are separately supported by MHRA and the consensus."
+          }
+        ]
+      },
+      {
+        "id": "causes_risks-4",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "无法负担或获得胰岛素、情绪困扰以及照护支持不足也会影响治疗连续性。复发预防应解决这些实际困难，不只是重复提醒“按时用药”。",
+          "en": "Insulin cost or access, emotional distress and inadequate support can interrupt treatment. Preventing recurrence includes addressing these practical barriers, not simply repeating reminders to take medicines."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 7 mental health, disadvantage and supplies",
+            "assessment": "Psychosocial/access barriers."
+          },
+          {
+            "source_id": "dka-niddk",
+            "locator": "Mental health; Medicines; Care team",
+            "assessment": "Support cost/stress/practical needs."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Different institutions author their own patient or professional guidance; pages from one institution remain one editorial source. Shared guideline evidence is not treated as independent research. Mayo explicitly cites CDC along with clinical reviews; Mayo and CDC are separately written but not independent underlying research.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "Scoped common principles only; pediatric/adult doses and local labels not generalized."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/mi_icd_scope",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": [
+      "Current bilingual text and claim evidence await independent review; no clinical sign-off."
+    ]
+  },
+  {
+    "id": "p0-01-diabetic-ketoacidosis-red_flags",
+    "target": {
+      "kind": "condition",
+      "id": "diabetic-ketoacidosis",
+      "section": "red_flags"
+    },
+    "content_sha256": "1671b772cdc536a84f4bb8be01d72400c999a5844eb7e6ad0b4c3486f08f3adb",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading by /root/mi_icd_scope; independent review pending",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "dka-ada-ketones",
+        "source_metadata_sha256": "42a8c1c784169b4632fa7afee92a3cd5f38e624463f6d5109f0b186a4ae47e9b",
+        "locator": "What to Do If Ketones High",
+        "source_version": "Who is at risk; when/how to check; elevated ketone actions and emergency features.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-cdc",
+        "source_metadata_sha256": "d07da9fc93a5de545c765e62db56663f2f44255b7c93ff421fcb89ed8a1fd46f",
+        "locator": "Testing: emergency signs",
+        "source_version": "Overview, signs, causes, prevention, testing and treatment; CDC subject-matter-expert-reviewed patient education.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-cdc",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-cdc-sick",
+        "source_metadata_sha256": "843ff4f43b3b3e297a466b94c0d262bc9c4cc4afd1fdd9a862c31165aca80fe8",
+        "locator": "When to go to ER, final paragraph",
+        "source_version": "Subject-matter-expert reviewed; prepare, if sick, emergency signs. Blanket continue diabetes pills not copied because medication-specific sick-day exceptions exist.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-cdc",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-diabetes-uk",
+        "source_metadata_sha256": "6d88a97e094b912417c6cc312d5fecfee33831b462208d78661b091daee54b00",
+        "locator": "Symptoms; Blood testing",
+        "source_version": "Patient education: symptoms, blood/urine testing, treatment, avoiding DKA; current retrieved page.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "diabetes-uk",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-mayo-treatment",
+        "source_metadata_sha256": "115d589bc4cce6c08584eb38eef9f049369d597185394341d11c65ea38383e6e",
+        "locator": "Preparing for appointment",
+        "source_version": "Diagnosis, treatment, preparing for appointment; same Mayo editorial institution as symptoms page.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "mayo-clinic",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-merck",
+        "source_metadata_sha256": "6b6660ae7016ae9622ba39fdb5b6f5cd2c28ef946b0d1cd09a2dcffff7961247",
+        "locator": "DKA overview pregnancy/SGLT2; Symptoms",
+        "source_version": "Full review December 2025; updated May 2026, exact day unstated. Read DKA cause/euglycemia, Pathophysiology, Symptoms, Diagnosis, Treatment including volume repletion and ketone conversion. Same Merck/MSD group; not independent underlying trials.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "merck-manual",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-mhra",
+        "source_metadata_sha256": "69c10e410bb85378104b26665abad4828dd948cebe560795d9aa700be300599b",
+        "locator": "Opening; Advice; Reports",
+        "source_version": "Actually reopened 2016 updated advice, Reports and Risk factors. Replaces 2015 preliminary source: stop if suspected, no routine restart after DKA unless another cause identified/resolved, interruption around hospital major surgery/serious illness; near-normal glucose warning. Historical UK alert, not current global indication list.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "uk-mhra",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-nhs",
+        "source_metadata_sha256": "1a6e33ee23ac2d6bc43d2daecbd3bf2a1280a952d48d74d05e8be07ce43314f3",
+        "locator": "Immediate action; Symptoms",
+        "source_version": "Full patient page; review due June 8, 2026 has passed, current retrieval cross-compared with newer materials.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "nhs-national",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      }
+    ],
+    "claims": [
+      {
+        "id": "red_flags-0",
+        "kind": "action",
+        "text": {
+          "zh-CN": "糖尿病患者出现持续呕吐、喝下的水也留不住、深而急的呼吸、明显困倦或意识模糊，应立即急诊；严重呼吸或意识异常时呼叫急救。",
+          "en": "A person with diabetes needs emergency care for persistent vomiting, inability to keep fluids down, deep rapid breathing, marked drowsiness or confusion. Call emergency services for major breathing or awareness changes."
+        },
+        "supports": [
+          {
+            "source_id": "dka-cdc",
+            "locator": "Testing: emergency signs",
+            "assessment": "Vomiting unable to retain fluids, breathing difficulty, multiple DKA signs emergency."
+          },
+          {
+            "source_id": "dka-ada-ketones",
+            "locator": "What to Do If Ketones High",
+            "assessment": "Trouble drinking, confusion, heavy breathing and unavailable team warrant ER."
+          },
+          {
+            "source_id": "dka-cdc-sick",
+            "locator": "When to go to ER, final paragraph",
+            "assessment": "Impaired thinking requires help calling or transport."
+          }
+        ]
+      },
+      {
+        "id": "red_flags-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "即使没有糖尿病诊断，若新出现明显口渴、尿多，同时伴腹痛、呕吐、果味口气或困倦，也应立即求医，儿童尤其不能只当作肠胃不适。",
+          "en": "Even without a diabetes diagnosis, new marked thirst and frequent urination with abdominal pain, vomiting, fruity breath or drowsiness need immediate medical assessment. In children, do not assume this is only a stomach illness."
+        },
+        "supports": [
+          {
+            "source_id": "dka-nhs",
+            "locator": "Immediate action; Symptoms",
+            "assessment": "No prior diagnosis still emergency, particularly children."
+          },
+          {
+            "source_id": "dka-diabetes-uk",
+            "locator": "Symptoms; Blood testing",
+            "assessment": "Undiagnosed/no equipment and DKA symptoms need immediate help."
+          }
+        ]
+      },
+      {
+        "id": "red_flags-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "已有高酮体读数且症状加重，或无法联系治疗团队获得及时指导，应去急诊。不要为了等待再次测量而延误严重症状的处理。",
+          "en": "Go to emergency care if ketones are high and symptoms worsen, or if timely advice from the care team is unavailable. Do not delay treatment of severe symptoms while waiting for another measurement."
+        },
+        "supports": [
+          {
+            "source_id": "dka-ada-ketones",
+            "locator": "What to Do If Ketones High",
+            "assessment": "Worse ketones, severe symptoms or unreachable doctor ER."
+          },
+          {
+            "source_id": "dka-mayo-treatment",
+            "locator": "Preparing for appointment",
+            "assessment": "Worse/severe symptoms or unreachable clinician emergency number."
+          }
+        ]
+      },
+      {
+        "id": "red_flags-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "正在使用SGLT2抑制剂者有上述表现，也要按疑似DKA就医；接近目标范围的血糖不能把这种药物相关情况排除。",
+          "en": "People taking an SGLT2 inhibitor need assessment for possible DKA when these symptoms occur. Glucose near the target range does not exclude this medication-associated presentation."
+        },
+        "supports": [
+          {
+            "source_id": "dka-mhra",
+            "locator": "Opening; Advice; Reports",
+            "assessment": "Test despite near-normal glucose, immediate help for symptoms."
+          },
+          {
+            "source_id": "dka-merck",
+            "locator": "DKA overview pregnancy/SGLT2; Symptoms",
+            "assessment": "Euglycemic DKA and severe progression."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Different institutions author their own patient or professional guidance; pages from one institution remain one editorial source. Shared guideline evidence is not treated as independent research. Mayo explicitly cites CDC along with clinical reviews; Mayo and CDC are separately written but not independent underlying research.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "Scoped common principles only; pediatric/adult doses and local labels not generalized."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/mi_icd_scope",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": [
+      "Current bilingual text and claim evidence await independent review; no clinical sign-off."
+    ]
+  },
+  {
+    "id": "p0-01-diabetic-ketoacidosis-care",
+    "target": {
+      "kind": "condition",
+      "id": "diabetic-ketoacidosis",
+      "section": "care"
+    },
+    "content_sha256": "c86a6e0dbfc70c6e80882e3c63dbede48a08605e0b70fa14deff7c3c7d458006",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading by /root/mi_icd_scope; independent review pending",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "dka-ada",
+        "source_metadata_sha256": "654efb7be2701eac683be7a3741634fb58fbd5282222f390317f458c889e3256",
+        "locator": "What You Need to Know",
+        "source_version": "Current patient page actually read; differs from NHS in home blood-ketone emergency threshold; grouped conservatively with ADA-led consensus.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-ada-ketones",
+        "source_metadata_sha256": "42a8c1c784169b4632fa7afee92a3cd5f38e624463f6d5109f0b186a4ae47e9b",
+        "locator": "What to Do If Ketones High",
+        "source_version": "Who is at risk; when/how to check; elevated ketone actions and emergency features.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-consensus",
+        "source_metadata_sha256": "18437b68ca2b039541a5aa5f1ff3be325f98dcc1a5f6425f1730fb0f07c5fd46",
+        "locator": "Section 3 Diagnostic criteria",
+        "source_version": "2024 joint adult consensus: publisher sections 1–7 re-read; same article PMC11343900 tables 3 and 4 actually read this round. Table 4 gives SGLT2 stopping/nonroutine restart, pregnancy and kidney failure; one joint editorial source, not five independent sources. Adult doses are not pediatric protocol.",
+        "accessed_at": "2026-10-02",
+        "population": "Adult diabetes",
+        "region": "International: US, Europe, UK",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-diabetes-uk",
+        "source_metadata_sha256": "6d88a97e094b912417c6cc312d5fecfee33831b462208d78661b091daee54b00",
+        "locator": "Checking ketones: Blood testing | Treatment; Avoiding DKA",
+        "source_version": "Patient education: symptoms, blood/urine testing, treatment, avoiding DKA; current retrieved page.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "diabetes-uk",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-mayo-symptoms",
+        "source_metadata_sha256": "20a059ee7e07b060d359ea9c74e91589a3ebf00f69fe0c7655bdf0cb9fc45dcc",
+        "locator": "When to see doctor",
+        "source_version": "Overview, symptoms, when to see a doctor, causes, complications and prevention; references include CDC and independent clinical reviews.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "mayo-clinic",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-nhs",
+        "source_metadata_sha256": "1a6e33ee23ac2d6bc43d2daecbd3bf2a1280a952d48d74d05e8be07ce43314f3",
+        "locator": "Checking; Immediate action; Urgent advice; Do | Urgent advice; Immediate action | Checking; Important; Urgent advice | Checking; Important | Treatment; Immediate action",
+        "source_version": "Full patient page; review due June 8, 2026 has passed, current retrieval cross-compared with newer materials.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "nhs-national",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      }
+    ],
+    "claims": [
+      {
+        "id": "care-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "就医级别取决于症状、酮体、血糖变化及既定生病日计划，而不是只盯一个血糖数字。",
+          "en": "The care level depends on symptoms, ketones, glucose changes and the agreed sick-day plan, rather than on one glucose number alone."
+        },
+        "supports": [
+          {
+            "source_id": "dka-nhs",
+            "locator": "Checking; Immediate action; Urgent advice; Do",
+            "assessment": "Symptoms/ketones/treatment response determine urgency."
+          },
+          {
+            "source_id": "dka-ada-ketones",
+            "locator": "What to Do If Ketones High",
+            "assessment": "Individual plan and severe-symptom escalation."
+          }
+        ]
+      },
+      {
+        "id": "care-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "出现危险信号按急救处理；症状轻但血糖持续高于目标、按既定方案处理后仍不下降，或酮体升高时，应立即联系糖尿病团队。",
+          "en": "Use emergency care for danger signs. With milder symptoms, contact the diabetes team promptly if glucose stays above target despite the agreed plan or ketones rise."
+        },
+        "supports": [
+          {
+            "source_id": "dka-nhs",
+            "locator": "Urgent advice; Immediate action",
+            "assessment": "High glucose despite insulin or ketones prompt contact; danger signs emergency."
+          },
+          {
+            "source_id": "dka-mayo-symptoms",
+            "locator": "When to see doctor",
+            "assessment": "Above target despite home treatment and ketones require contact."
+          }
+        ]
+      },
+      {
+        "id": "care-2",
+        "kind": "threshold",
+        "text": {
+          "zh-CN": "在英国，NHS与Diabetes UK把血酮高于3 mmol/L列为需要立即医疗帮助的情况；个人计划可能在更低数值就要求行动，不能把3当成等待线。",
+          "en": "In the UK, NHS and Diabetes UK identify blood ketones above 3 mmol/L as requiring immediate medical help. An individual plan may require action at a lower level; 3 is not a threshold to wait for."
+        },
+        "supports": [
+          {
+            "source_id": "dka-nhs",
+            "locator": "Checking; Important; Urgent advice",
+            "assessment": "UK >3 mmol/L emergency; lower results also warrant advice, guide not universal."
+          },
+          {
+            "source_id": "dka-diabetes-uk",
+            "locator": "Checking ketones: Blood testing",
+            "assessment": "UK >3 mmol/L immediate help; individual levels."
+          }
+        ]
+      },
+      {
+        "id": "care-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "英国与美国患者资料的家庭分流阈值并不完全相同，且家庭预警不同于医院确诊。提前让团队写明测量方法、何时复测、何时联系和何时急诊。",
+          "en": "UK and US patient resources do not use identical home-triage thresholds, and a home warning is different from a hospital diagnosis. Have the team document how to test, when to repeat testing, when to call and when to seek emergency care."
+        },
+        "supports": [
+          {
+            "source_id": "dka-nhs",
+            "locator": "Checking; Important",
+            "assessment": "UK triage guide and individual thresholds."
+          },
+          {
+            "source_id": "dka-ada",
+            "locator": "What You Need to Know",
+            "assessment": "US ADA >=1.6 mmol/L emergency differs from NHS."
+          },
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 3 Diagnostic criteria",
+            "assessment": "Hospital diagnosis additionally requires acidosis."
+          }
+        ]
+      },
+      {
+        "id": "care-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "症状已缓解后仍需按出院计划复诊，回顾诱因及防止再次发作；再次出现呕吐、呼吸或意识异常不能等到预约日期。",
+          "en": "After symptoms resolve, follow the discharge plan to review triggers and prevent recurrence. New vomiting or breathing or awareness changes should not wait for the scheduled appointment."
+        },
+        "supports": [
+          {
+            "source_id": "dka-nhs",
+            "locator": "Treatment; Immediate action",
+            "assessment": "Discharge cause/prevention discussion and renewed danger symptoms urgent."
+          },
+          {
+            "source_id": "dka-diabetes-uk",
+            "locator": "Treatment; Avoiding DKA",
+            "assessment": "Recovery and sick-day follow-up; acute symptoms urgent."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Different institutions author their own patient or professional guidance; pages from one institution remain one editorial source. Shared guideline evidence is not treated as independent research. Mayo explicitly cites CDC along with clinical reviews; Mayo and CDC are separately written but not independent underlying research.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "regional_difference",
+      "resolution": "Home warning thresholds: NHS/Diabetes UK >3 mmol/L; ADA >=1.6 mmol/L. Individual plans can escalate earlier; not uniform diagnostic cutoffs."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/mi_icd_scope",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": [
+      "Current bilingual text and claim evidence await independent review; no clinical sign-off."
+    ]
+  },
+  {
+    "id": "p0-01-diabetic-ketoacidosis-diagnosis",
+    "target": {
+      "kind": "condition",
+      "id": "diabetic-ketoacidosis",
+      "section": "diagnosis"
+    },
+    "content_sha256": "1507256b7a231e14d855e486a42703f6f9300feb482ae468f96f4323b6f29ae2",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading by /root/mi_icd_scope; independent review pending",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "dka-consensus",
+        "source_metadata_sha256": "18437b68ca2b039541a5aa5f1ff3be325f98dcc1a5f6425f1730fb0f07c5fd46",
+        "locator": "Section 3 Diagnostic criteria | Section 1 Risk factors; Section 3 Clinical presentation | Section 3 Clinical presentation final paragraphs | Section 3 ketone measurement; Section 4 Criteria for resolution | Section 3 euglycemic DKA",
+        "source_version": "2024 joint adult consensus: publisher sections 1–7 re-read; same article PMC11343900 tables 3 and 4 actually read this round. Table 4 gives SGLT2 stopping/nonroutine restart, pregnancy and kidney failure; one joint editorial source, not five independent sources. Adult doses are not pediatric protocol.",
+        "accessed_at": "2026-10-02",
+        "population": "Adult diabetes",
+        "region": "International: US, Europe, UK",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-diabetes-uk",
+        "source_metadata_sha256": "6d88a97e094b912417c6cc312d5fecfee33831b462208d78661b091daee54b00",
+        "locator": "Blood testing",
+        "source_version": "Patient education: symptoms, blood/urine testing, treatment, avoiding DKA; current retrieved page.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "diabetes-uk",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-mayo-treatment",
+        "source_metadata_sha256": "115d589bc4cce6c08584eb38eef9f049369d597185394341d11c65ea38383e6e",
+        "locator": "Diagnosis: Blood tests | Preparing: symptom/cause questions | Blood tests; Other tests",
+        "source_version": "Diagnosis, treatment, preparing for appointment; same Mayo editorial institution as symptoms page.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "mayo-clinic",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-merck",
+        "source_metadata_sha256": "6b6660ae7016ae9622ba39fdb5b6f5cd2c28ef946b0d1cd09a2dcffff7961247",
+        "locator": "Diagnosis; Correction of hyperglycemia/acidosis | Overview pregnancy/SGLT2; Diagnosis",
+        "source_version": "Full review December 2025; updated May 2026, exact day unstated. Read DKA cause/euglycemia, Pathophysiology, Symptoms, Diagnosis, Treatment including volume repletion and ketone conversion. Same Merck/MSD group; not independent underlying trials.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "merck-manual",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      }
+    ],
+    "claims": [
+      {
+        "id": "diagnosis-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "诊断要把糖尿病背景或高血糖、酮体升高和血液酸度结合起来；家庭仪器主要帮助发现危险并及时求助。",
+          "en": "Diagnosis combines diabetes history or hyperglycemia, elevated ketones and blood acidity. Home devices mainly help identify danger and trigger timely help."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 3 Diagnostic criteria",
+            "assessment": "Diabetes/elevated glucose plus ketones and acidosis."
+          },
+          {
+            "source_id": "dka-mayo-treatment",
+            "locator": "Diagnosis: Blood tests",
+            "assessment": "Glucose/ketones/acidity."
+          }
+        ]
+      },
+      {
+        "id": "diagnosis-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "医生会询问胰岛素使用、泵是否工作、近期感染或手术、进食饮水和SGLT2等药物，并检查呼吸、意识与脱水程度。",
+          "en": "Clinicians ask about insulin use, pump delivery, infection or surgery, food and fluid intake and medicines such as SGLT2 inhibitors, and assess breathing, awareness and dehydration."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 1 Risk factors; Section 3 Clinical presentation",
+            "assessment": "Insulin/illness/drug triggers, vital signs, awareness/hydration."
+          },
+          {
+            "source_id": "dka-mayo-treatment",
+            "locator": "Preparing: symptom/cause questions",
+            "assessment": "Intake, illness, treatment and breathing history."
+          }
+        ]
+      },
+      {
+        "id": "diagnosis-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "抽血测血糖、酮体、电解质及血气可评估酸中毒和钾等矿物质变化。必要时通过心电图、尿液或其他检查寻找诱因和并发问题。",
+          "en": "Blood glucose, ketones, electrolytes and blood gases assess acidosis and changes in minerals such as potassium. ECG, urine tests or other investigations may identify triggers and complications."
+        },
+        "supports": [
+          {
+            "source_id": "dka-mayo-treatment",
+            "locator": "Blood tests; Other tests",
+            "assessment": "Electrolytes, ketones/acidity, ECG and urine."
+          },
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 3 Clinical presentation final paragraphs",
+            "assessment": "Blood gases and ECG for electrolyte effects/ischemia."
+          }
+        ]
+      },
+      {
+        "id": "diagnosis-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "血酮检测更接近当前状态；尿酮会滞后，恢复期还可能持续阳性。因此不能只按一次尿酮结果决定是否已经恢复。",
+          "en": "Blood ketone testing more closely reflects the current state. Urine ketones lag and may remain positive during recovery, so one urine result cannot determine whether DKA has resolved."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 3 ketone measurement; Section 4 Criteria for resolution",
+            "assessment": "Urine early underestimate/later overestimate; not resolution criterion."
+          },
+          {
+            "source_id": "dka-diabetes-uk",
+            "locator": "Blood testing",
+            "assessment": "Blood real time, urine hours behind."
+          },
+          {
+            "source_id": "dka-merck",
+            "locator": "Diagnosis; Correction of hyperglycemia/acidosis",
+            "assessment": "Urine measures acetoacetate; recovery conversion makes clearance lag."
+          }
+        ]
+      },
+      {
+        "id": "diagnosis-4",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "服用SGLT2药物或在妊娠等情况下，DKA可以伴随并不显著升高的血糖。医生仍需结合症状、酮体和酸度判断。",
+          "en": "With SGLT2 treatment or circumstances such as pregnancy, DKA can occur without marked hyperglycemia. Symptoms, ketones and acidity still need to be assessed together."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 3 euglycemic DKA",
+            "assessment": "Pregnancy/SGLT2 without marked high glucose."
+          },
+          {
+            "source_id": "dka-merck",
+            "locator": "Overview pregnancy/SGLT2; Diagnosis",
+            "assessment": "Both groups can have lower/normal glucose; ketones/acidity relevant."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Different institutions author their own patient or professional guidance; pages from one institution remain one editorial source. Shared guideline evidence is not treated as independent research. Mayo explicitly cites CDC along with clinical reviews; Mayo and CDC are separately written but not independent underlying research.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "Scoped common principles only; pediatric/adult doses and local labels not generalized."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/mi_icd_scope",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": [
+      "Current bilingual text and claim evidence await independent review; no clinical sign-off."
+    ]
+  },
+  {
+    "id": "p0-01-diabetic-ketoacidosis-differentials",
+    "target": {
+      "kind": "condition",
+      "id": "diabetic-ketoacidosis",
+      "section": "differentials"
+    },
+    "content_sha256": "e005f355ffde1e5820dd40d748cbd3ecae9213995c848524eddaf39de91fbd88",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading by /root/mi_icd_scope; independent review pending",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "dka-consensus",
+        "source_metadata_sha256": "18437b68ca2b039541a5aa5f1ff3be325f98dcc1a5f6425f1730fb0f07c5fd46",
+        "locator": "Section 3 Clinical presentation and differential | Introduction; Section 3 HHS/overlap | Section 3 differential of elevated ketones | Section 3 Clinical presentation: abdominal pain",
+        "source_version": "2024 joint adult consensus: publisher sections 1–7 re-read; same article PMC11343900 tables 3 and 4 actually read this round. Table 4 gives SGLT2 stopping/nonroutine restart, pregnancy and kidney failure; one joint editorial source, not five independent sources. Adult doses are not pediatric protocol.",
+        "accessed_at": "2026-10-02",
+        "population": "Adult diabetes",
+        "region": "International: US, Europe, UK",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-diabetes-uk",
+        "source_metadata_sha256": "6d88a97e094b912417c6cc312d5fecfee33831b462208d78661b091daee54b00",
+        "locator": "Symptoms: diabetic attack paragraph",
+        "source_version": "Patient education: symptoms, blood/urine testing, treatment, avoiding DKA; current retrieved page.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "diabetes-uk",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-diabetes-uk-ketones",
+        "source_metadata_sha256": "ff68f435fec52f095bee6b01df4bf7a542d35be4ad39fbef756bfdca9e9381de",
+        "locator": "What are ketones; Ketogenic diet",
+        "source_version": "Actually read What are ketones; When do ketones build up; Testing; What to do if high; Ketones in diet and weight loss. Corrected current page URL; no broad keto-diet efficacy claim copied.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "diabetes-uk",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-em-text",
+        "source_metadata_sha256": "39e061df727622dad34ba507ed9b245b41bc218ce442753265eb2caabd709b0a",
+        "locator": "CAVEATS: GI complaints and persistent pain",
+        "source_version": "2022 edition. Read visible DKA and CAVEATS only; full management is gated. Persistent abdominal pain, elderly/cardiac fluid overload, euglycemia in pregnancy/SGLT2 used. Older diagnosis cutoffs and overbroad fever/antibiotic statements not used.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "International; Singapore emergency-medicine authors",
+        "independence_group": "mcgraw-em-guide",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-mayo-symptoms",
+        "source_metadata_sha256": "20a059ee7e07b060d359ea9c74e91589a3ebf00f69fe0c7655bdf0cb9fc45dcc",
+        "locator": "Causes: Other things",
+        "source_version": "Overview, symptoms, when to see a doctor, causes, complications and prevention; references include CDC and independent clinical reviews.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "mayo-clinic",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-niddk",
+        "source_metadata_sha256": "9d668f09c35b3b3da789aa1134252430f61fc03a47d99d5991f6769c68b94536",
+        "locator": "Low blood glucose",
+        "source_version": "Actually read current Managing Diabetes: Healthy meal plan, Mental health, Medicines/cost, Home glucose, Low glucose, Checking urine ketones, Special situations and Care team. Low-glucose confusion is in its own subsection, not the ketone paragraph.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-nih-niddk",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      }
+    ],
+    "claims": [
+      {
+        "id": "differentials-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "呕吐、乏力和意识变化并不只见于DKA；区分原因会影响治疗。",
+          "en": "Vomiting, weakness and altered awareness are not unique to DKA. Distinguishing causes changes treatment."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 3 Clinical presentation and differential",
+            "assessment": "Broad symptoms require differentiation."
+          }
+        ]
+      },
+      {
+        "id": "differentials-1",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "高渗高血糖状态，简称HHS，主要是血糖很高、血液过度浓缩和脱水，通常没有同样明显的酮症酸中毒；两者也可能混合出现。",
+          "en": "Hyperosmolar hyperglycemic state, or HHS, mainly involves very high glucose, concentrated blood and dehydration, usually without the same marked ketoacidosis. DKA and HHS can overlap."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Introduction; Section 3 HHS/overlap",
+            "assessment": "Hyperosmolar dehydration and mixed presentations."
+          }
+        ]
+      },
+      {
+        "id": "differentials-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "低血糖也可导致意识模糊或昏迷，但需要不同处理。用血糖检测及医疗评估区分，比“糖尿病发作”这个笼统说法更有用。",
+          "en": "Low blood glucose can also cause confusion or unconsciousness but needs different treatment. Glucose testing and medical assessment are more useful than the vague label “diabetic attack.”"
+        },
+        "supports": [
+          {
+            "source_id": "dka-niddk",
+            "locator": "Low blood glucose",
+            "assessment": "Severe low glucose confusion/fainting; different care."
+          },
+          {
+            "source_id": "dka-diabetes-uk",
+            "locator": "Symptoms: diabetic attack paragraph",
+            "assessment": "Phrase can refer to hypoglycemia."
+          }
+        ]
+      },
+      {
+        "id": "differentials-3",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "禁食和极低碳水饮食可产生酮体，但有酮体不等于已经发生DKA；长期饮酒相关酸中毒等也需要鉴别。医生结合病史和酸度，而不是仅看“酮体阳性”。",
+          "en": "Fasting and very-low-carbohydrate diets can produce ketones, but ketones alone do not establish DKA. Alcohol-related ketoacidosis is another differential. Clinicians consider the history and acidity, not merely a positive ketone result."
+        },
+        "supports": [
+          {
+            "source_id": "dka-diabetes-uk-ketones",
+            "locator": "What are ketones; Ketogenic diet",
+            "assessment": "Fasting/low carbohydrate produces ketones; low levels physiological."
+          },
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 3 differential of elevated ketones",
+            "assessment": "Starvation/alcohol/pregnancy ketosis and acid-base/history."
+          }
+        ]
+      },
+      {
+        "id": "differentials-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "DKA可引起腹痛，也可能由胰腺炎等腹部疾病诱发。酸中毒纠正后腹痛仍不缓解时，需要继续查找原因。",
+          "en": "DKA can cause abdominal pain and can also be triggered by abdominal illness such as pancreatitis. Pain persisting after acidosis is corrected requires further investigation."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 3 Clinical presentation: abdominal pain",
+            "assessment": "Further evaluate persistent pain after acidosis/dehydration correction."
+          },
+          {
+            "source_id": "dka-em-text",
+            "locator": "CAVEATS: GI complaints and persistent pain",
+            "assessment": "Explicitly investigate persistent pain after resolution."
+          },
+          {
+            "source_id": "dka-mayo-symptoms",
+            "locator": "Causes: Other things",
+            "assessment": "Pancreatitis trigger; not source for post-resolution rule."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Different institutions author their own patient or professional guidance; pages from one institution remain one editorial source. Shared guideline evidence is not treated as independent research. Mayo explicitly cites CDC along with clinical reviews; Mayo and CDC are separately written but not independent underlying research.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "Scoped common principles only; pediatric/adult doses and local labels not generalized."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/mi_icd_scope",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": [
+      "Current bilingual text and claim evidence await independent review; no clinical sign-off."
+    ]
+  },
+  {
+    "id": "p0-01-diabetic-ketoacidosis-treatment",
+    "target": {
+      "kind": "condition",
+      "id": "diabetic-ketoacidosis",
+      "section": "treatment"
+    },
+    "content_sha256": "a9db3e4fb01de3655488718a51e1d9b00875e5b8e99282d876de8599565b4be6",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading by /root/mi_icd_scope; independent review pending",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "dka-cdc",
+        "source_metadata_sha256": "d07da9fc93a5de545c765e62db56663f2f44255b7c93ff421fcb89ed8a1fd46f",
+        "locator": "Treatment",
+        "source_version": "Overview, signs, causes, prevention, testing and treatment; CDC subject-matter-expert-reviewed patient education.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-cdc",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-consensus",
+        "source_metadata_sha256": "18437b68ca2b039541a5aa5f1ff3be325f98dcc1a5f6425f1730fb0f07c5fd46",
+        "locator": "Section 4 intro; Criteria for resolution | Section 4 Fluid therapy; Insulin; monitoring | Section 4 Fluid therapy before HHS | Section 4 level-of-care paragraphs",
+        "source_version": "2024 joint adult consensus: publisher sections 1–7 re-read; same article PMC11343900 tables 3 and 4 actually read this round. Table 4 gives SGLT2 stopping/nonroutine restart, pregnancy and kidney failure; one joint editorial source, not five independent sources. Adult doses are not pediatric protocol.",
+        "accessed_at": "2026-10-02",
+        "population": "Adult diabetes",
+        "region": "International: US, Europe, UK",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-merck",
+        "source_metadata_sha256": "6b6660ae7016ae9622ba39fdb5b6f5cd2c28ef946b0d1cd09a2dcffff7961247",
+        "locator": "Treatment; Volume repletion; Pathophysiology | Treatment introduction",
+        "source_version": "Full review December 2025; updated May 2026, exact day unstated. Read DKA cause/euglycemia, Pathophysiology, Symptoms, Diagnosis, Treatment including volume repletion and ketone conversion. Same Merck/MSD group; not independent underlying trials.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "merck-manual",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-rch",
+        "source_metadata_sha256": "5beddef900da68d77fe7045e2ae2f33ae4b5c2b396b82827351766d596beba9a",
+        "locator": "Supportive measures; Monitoring timeline | Fluid adjustments Glucose; Insulin Practical points | Consultation/Transfer",
+        "source_version": "July 2025 update, exact day unstated. Read Background, Assessment, Investigations, Goals, Supportive measures, Glucose/Potassium, Insulin, Cerebral injury and Consultation/Transfer. Children only; no doses or home treatment algorithm copied.",
+        "accessed_at": "2026-10-02",
+        "population": "Children only",
+        "region": "AU",
+        "independence_group": "au-rch",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      }
+    ],
+    "claims": [
+      {
+        "id": "treatment-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "医院治疗同时补回胰岛素、水和矿物质，并处理感染等诱因。单纯让血糖数字下降还不够。",
+          "en": "Hospital treatment replaces insulin, fluids and minerals and treats triggers such as infection. Lowering the glucose number alone is not enough."
+        },
+        "supports": [
+          {
+            "source_id": "dka-cdc",
+            "locator": "Treatment",
+            "assessment": "Fluids/minerals/insulin/trigger treatment."
+          },
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 4 intro; Criteria for resolution",
+            "assessment": "Resolution beyond glucose alone."
+          }
+        ]
+      },
+      {
+        "id": "treatment-1",
+        "kind": "benefit",
+        "text": {
+          "zh-CN": "补液恢复循环和肾脏供血；胰岛素抑制继续产生酮体。治疗时反复抽血和观察呼吸、意识及尿量，用结果调整方案。",
+          "en": "Fluids restore circulation and kidney perfusion; insulin stops further ketone production. Repeated blood tests and observation of breathing, awareness and urine output guide adjustments."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 4 Fluid therapy; Insulin; monitoring",
+            "assessment": "Perfusion, ketone suppression, lab/clinical adjustments."
+          },
+          {
+            "source_id": "dka-merck",
+            "locator": "Treatment; Volume repletion; Pathophysiology",
+            "assessment": "Glomerular perfusion, insulin blocks ketogenesis, frequent lab/clinical review."
+          },
+          {
+            "source_id": "dka-rch",
+            "locator": "Supportive measures; Monitoring timeline",
+            "assessment": "Children: awareness, urine/fluid balance and lab monitoring."
+          }
+        ]
+      },
+      {
+        "id": "treatment-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "血糖往往先下降，酮体和酸中毒稍后才纠正。医院有时一边补葡萄糖、一边继续胰岛素，目的是防止低血糖并继续清除酮体。",
+          "en": "Glucose often falls before ketones and acidosis resolve. Hospitals may therefore give glucose while continuing insulin, preventing hypoglycemia while ketones are cleared."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 4 Fluid therapy before HHS",
+            "assessment": "Glucose falls first, dextrose allows insulin until ketonemia corrects."
+          },
+          {
+            "source_id": "dka-rch",
+            "locator": "Fluid adjustments Glucose; Insulin Practical points",
+            "assessment": "Adequate insulin to clear ketones while increasing glucose."
+          }
+        ]
+      },
+      {
+        "id": "treatment-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "严重意识异常或合并其他危重疾病时可能需要重症监护。部分轻度病例可在具备密切监护条件的急诊或病房治疗，这不等于确诊后可以自行在家处理。",
+          "en": "Severe awareness changes or another critical illness may require intensive care. Some mild cases can be treated in an emergency or ward setting with close monitoring; this does not mean confirmed DKA should be self-treated at home."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 4 level-of-care paragraphs",
+            "assessment": "Severe altered state/critical illness ICU; mild monitored ER/stepdown."
+          },
+          {
+            "source_id": "dka-merck",
+            "locator": "Treatment introduction",
+            "assessment": "Intensive monitoring; milder in stepdown/emergency room."
+          },
+          {
+            "source_id": "dka-rch",
+            "locator": "Consultation/Transfer",
+            "assessment": "Children with coma explicit ICU criterion."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Different institutions author their own patient or professional guidance; pages from one institution remain one editorial source. Shared guideline evidence is not treated as independent research.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "Scoped common principles only; pediatric/adult doses and local labels not generalized."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/mi_icd_scope",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": [
+      "Current bilingual text and claim evidence await independent review; no clinical sign-off."
+    ]
+  },
+  {
+    "id": "p0-01-diabetic-ketoacidosis-medications",
+    "target": {
+      "kind": "condition",
+      "id": "diabetic-ketoacidosis",
+      "section": "medications"
+    },
+    "content_sha256": "1432955ca240716374c981fbe797e7121c0ff911fc44c923de6e0985fb952e6c",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading by /root/mi_icd_scope; independent review pending",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "dka-ada-ketones",
+        "source_metadata_sha256": "42a8c1c784169b4632fa7afee92a3cd5f38e624463f6d5109f0b186a4ae47e9b",
+        "locator": "What to Do If Ketones High",
+        "source_version": "Who is at risk; when/how to check; elevated ketone actions and emergency features.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-cdc",
+        "source_metadata_sha256": "d07da9fc93a5de545c765e62db56663f2f44255b7c93ff421fcb89ed8a1fd46f",
+        "locator": "Treatment: underlying illness",
+        "source_version": "Overview, signs, causes, prevention, testing and treatment; CDC subject-matter-expert-reviewed patient education.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-cdc",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-consensus",
+        "source_metadata_sha256": "18437b68ca2b039541a5aa5f1ff3be325f98dcc1a5f6425f1730fb0f07c5fd46",
+        "locator": "Section 4 Insulin/Potassium | Section 4 Potassium; table 3 | Section 6 table 4 SGLT2 (PMC mirror)",
+        "source_version": "2024 joint adult consensus: publisher sections 1–7 re-read; same article PMC11343900 tables 3 and 4 actually read this round. Table 4 gives SGLT2 stopping/nonroutine restart, pregnancy and kidney failure; one joint editorial source, not five independent sources. Adult doses are not pediatric protocol.",
+        "accessed_at": "2026-10-02",
+        "population": "Adult diabetes",
+        "region": "International: US, Europe, UK",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-mayo-symptoms",
+        "source_metadata_sha256": "20a059ee7e07b060d359ea9c74e91589a3ebf00f69fe0c7655bdf0cb9fc45dcc",
+        "locator": "Complications: Hypoglycemia/Hypokalemia",
+        "source_version": "Overview, symptoms, when to see a doctor, causes, complications and prevention; references include CDC and independent clinical reviews.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "mayo-clinic",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-mayo-treatment",
+        "source_metadata_sha256": "115d589bc4cce6c08584eb38eef9f049369d597185394341d11c65ea38383e6e",
+        "locator": "Treatment",
+        "source_version": "Diagnosis, treatment, preparing for appointment; same Mayo editorial institution as symptoms page.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "mayo-clinic",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-mhra",
+        "source_metadata_sha256": "69c10e410bb85378104b26665abad4828dd948cebe560795d9aa700be300599b",
+        "locator": "Advice bullets 1,3,4; Reports",
+        "source_version": "Actually reopened 2016 updated advice, Reports and Risk factors. Replaces 2015 preliminary source: stop if suspected, no routine restart after DKA unless another cause identified/resolved, interruption around hospital major surgery/serious illness; near-normal glucose warning. Historical UK alert, not current global indication list.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "uk-mhra",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-nhs",
+        "source_metadata_sha256": "1a6e33ee23ac2d6bc43d2daecbd3bf2a1280a952d48d74d05e8be07ce43314f3",
+        "locator": "How to reduce risk: Do/Don’t",
+        "source_version": "Full patient page; review due June 8, 2026 has passed, current retrieval cross-compared with newer materials.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "nhs-national",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-rch",
+        "source_metadata_sha256": "5beddef900da68d77fe7045e2ae2f33ae4b5c2b396b82827351766d596beba9a",
+        "locator": "Identify and treat precipitating cause",
+        "source_version": "July 2025 update, exact day unstated. Read Background, Assessment, Investigations, Goals, Supportive measures, Glucose/Potassium, Insulin, Cerebral injury and Consultation/Transfer. Children only; no doses or home treatment algorithm copied.",
+        "accessed_at": "2026-10-02",
+        "population": "Children only",
+        "region": "AU",
+        "independence_group": "au-rch",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      }
+    ],
+    "claims": [
+      {
+        "id": "medications-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "胰岛素是纠正DKA的核心药物，但其剂量和补钾必须结合实时检查安排。",
+          "en": "Insulin is central to reversing DKA, but its dose and potassium replacement depend on current test results."
+        },
+        "supports": [
+          {
+            "source_id": "dka-mayo-treatment",
+            "locator": "Treatment",
+            "assessment": "Insulin/electrolytes hospital treatment."
+          },
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 4 Insulin/Potassium",
+            "assessment": "Adjust by measurements."
+          }
+        ]
+      },
+      {
+        "id": "medications-1",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "胰岛素让血糖下降，也会使钾进入细胞。治疗中可能出现低血糖或低钾，后者影响心脏和肌肉，因此要反复监测并按结果补充。",
+          "en": "Insulin lowers glucose and moves potassium into cells. Treatment can cause hypoglycemia or low potassium, which affects the heart and muscles; repeated monitoring and appropriate replacement are therefore needed."
+        },
+        "supports": [
+          {
+            "source_id": "dka-mayo-symptoms",
+            "locator": "Complications: Hypoglycemia/Hypokalemia",
+            "assessment": "Treatment risks and heart/muscle effects."
+          },
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 4 Potassium; table 3",
+            "assessment": "Potassium shifts and monitoring."
+          }
+        ]
+      },
+      {
+        "id": "medications-2",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "若感染是诱因，医生还会处理感染；抗生素不是直接清除酮体的药，也不是每次DKA都需要。",
+          "en": "If infection is the trigger, it also needs treatment. Antibiotics do not directly clear ketones and are not required for every episode of DKA."
+        },
+        "supports": [
+          {
+            "source_id": "dka-cdc",
+            "locator": "Treatment: underlying illness",
+            "assessment": "Antibiotics for infectious trigger, insulin reverses DKA."
+          },
+          {
+            "source_id": "dka-rch",
+            "locator": "Identify and treat precipitating cause",
+            "assessment": "Antibiotics only if appropriate infection."
+          }
+        ]
+      },
+      {
+        "id": "medications-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "怀疑SGLT2相关DKA时，需要停用相关药物并立即就医；DKA恢复后不要自行重新服用，是否恢复须由医生复核诱因和获益风险。不要把“血糖不太高”当作继续服药的理由。",
+          "en": "If SGLT2-associated DKA is suspected, stop the implicated medicine and seek immediate medical care. Do not restart it yourself after DKA resolves; a clinician must review triggers and benefits and risks. Modest glucose is not a reason to dismiss the concern."
+        },
+        "supports": [
+          {
+            "source_id": "dka-mhra",
+            "locator": "Advice bullets 1,3,4; Reports",
+            "assessment": "Stop if suspected; no routine restart unless other cause identified/resolved; near-normal glucose."
+          },
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 6 table 4 SGLT2 (PMC mirror)",
+            "assessment": "Stop on admission; post-DKA initiation/continuation not routinely recommended."
+          }
+        ]
+      },
+      {
+        "id": "medications-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "生病时不要因为没吃饭就自行停掉维持所需的胰岛素；使用预先约定的生病日方案，剂量不明确时及时联系团队。",
+          "en": "Do not independently stop needed background insulin just because illness prevents eating. Follow the agreed sick-day plan and contact the team promptly when dose instructions are unclear."
+        },
+        "supports": [
+          {
+            "source_id": "dka-nhs",
+            "locator": "How to reduce risk: Do/Don’t",
+            "assessment": "Do not stop insulin if not eating; team plan/contact."
+          },
+          {
+            "source_id": "dka-ada-ketones",
+            "locator": "What to Do If Ketones High",
+            "assessment": "Continue as directed; correction only if planned."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Different institutions author their own patient or professional guidance; pages from one institution remain one editorial source. Shared guideline evidence is not treated as independent research. Mayo explicitly cites CDC along with clinical reviews; Mayo and CDC are separately written but not independent underlying research.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "Scoped common principles only; pediatric/adult doses and local labels not generalized."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/mi_icd_scope",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": [
+      "Current bilingual text and claim evidence await independent review; no clinical sign-off."
+    ]
+  },
+  {
+    "id": "p0-01-diabetic-ketoacidosis-diet",
+    "target": {
+      "kind": "condition",
+      "id": "diabetic-ketoacidosis",
+      "section": "diet"
+    },
+    "content_sha256": "9ab25d648ed05ad1f40db6244b695b58427ed4ab0156ca454fb6d520a5713c55",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading by /root/mi_icd_scope; independent review pending",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "dka-ada-ketones",
+        "source_metadata_sha256": "42a8c1c784169b4632fa7afee92a3cd5f38e624463f6d5109f0b186a4ae47e9b",
+        "locator": "What to Do If Ketones High",
+        "source_version": "Who is at risk; when/how to check; elevated ketone actions and emergency features.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-cdc",
+        "source_metadata_sha256": "d07da9fc93a5de545c765e62db56663f2f44255b7c93ff421fcb89ed8a1fd46f",
+        "locator": "Treatment | Testing emergency list",
+        "source_version": "Overview, signs, causes, prevention, testing and treatment; CDC subject-matter-expert-reviewed patient education.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-cdc",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-cdc-sick",
+        "source_metadata_sha256": "843ff4f43b3b3e297a466b94c0d262bc9c4cc4afd1fdd9a862c31165aca80fe8",
+        "locator": "Prepare now; If sick; More tips",
+        "source_version": "Subject-matter-expert reviewed; prepare, if sick, emergency signs. Blanket continue diabetes pills not copied because medication-specific sick-day exceptions exist.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-cdc",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-consensus",
+        "source_metadata_sha256": "18437b68ca2b039541a5aa5f1ff3be325f98dcc1a5f6425f1730fb0f07c5fd46",
+        "locator": "Section 1 SGLT2 Risk factors | Section 4 Fluid therapy; table 4 ESKD",
+        "source_version": "2024 joint adult consensus: publisher sections 1–7 re-read; same article PMC11343900 tables 3 and 4 actually read this round. Table 4 gives SGLT2 stopping/nonroutine restart, pregnancy and kidney failure; one joint editorial source, not five independent sources. Adult doses are not pediatric protocol.",
+        "accessed_at": "2026-10-02",
+        "population": "Adult diabetes",
+        "region": "International: US, Europe, UK",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-diabetes-uk-ketones",
+        "source_metadata_sha256": "ff68f435fec52f095bee6b01df4bf7a542d35be4ad39fbef756bfdca9e9381de",
+        "locator": "What are ketones; Ketogenic diet",
+        "source_version": "Actually read What are ketones; When do ketones build up; Testing; What to do if high; Ketones in diet and weight loss. Corrected current page URL; no broad keto-diet efficacy claim copied.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "diabetes-uk",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-duk-sick-food",
+        "source_metadata_sha256": "46367cd12e536bb16963a30b6ae33abf112e7fe315640eae9961baf7337d15bd",
+        "locator": "Eating well; Managing your health",
+        "source_version": "Read Eating well, Staying hydrated, Managing your health. Adequate carbohydrate and individualized medication changes. Generic continue-all-medication wording not copied because SGLT2 requires separate advice; persistent vomiting remains emergency.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "GB",
+        "independence_group": "diabetes-uk",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-merck",
+        "source_metadata_sha256": "6b6660ae7016ae9622ba39fdb5b6f5cd2c28ef946b0d1cd09a2dcffff7961247",
+        "locator": "Volume repletion",
+        "source_version": "Full review December 2025; updated May 2026, exact day unstated. Read DKA cause/euglycemia, Pathophysiology, Symptoms, Diagnosis, Treatment including volume repletion and ketone conversion. Same Merck/MSD group; not independent underlying trials.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "merck-manual",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-mhra",
+        "source_metadata_sha256": "69c10e410bb85378104b26665abad4828dd948cebe560795d9aa700be300599b",
+        "locator": "Risk factors",
+        "source_version": "Actually reopened 2016 updated advice, Reports and Risk factors. Replaces 2015 preliminary source: stop if suspected, no routine restart after DKA unless another cause identified/resolved, interruption around hospital major surgery/serious illness; near-normal glucose warning. Historical UK alert, not current global indication list.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "uk-mhra",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-nhs",
+        "source_metadata_sha256": "1a6e33ee23ac2d6bc43d2daecbd3bf2a1280a952d48d74d05e8be07ce43314f3",
+        "locator": "Treatment",
+        "source_version": "Full patient page; review due June 8, 2026 has passed, current retrieval cross-compared with newer materials.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "nhs-national",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-renal-review",
+        "source_metadata_sha256": "abd74c56b43ca04aa95f01e458747900257427494a1a8cf90ad7ba0e53da4cf8",
+        "locator": "Management in end-stage kidney disease",
+        "source_version": "Direct PMC CAPTCHA; indexed original full article read, specifically Pathophysiological changes in kidney disease and Management in end-stage kidney disease: low urine output, overload, poor aggressive hydration tolerance and individualized monitoring. Narrative review, not trial; no dose algorithm copied.",
+        "accessed_at": "2026-10-02",
+        "population": "Advanced/end-stage kidney disease",
+        "region": "Saudi Arabia; kidney failure population",
+        "independence_group": "oman-med-j-al-sadhan",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      }
+    ],
+    "claims": [
+      {
+        "id": "diet-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "进食和饮水要配合糖尿病治疗；已经出现DKA时，食物或饮料不能代替医院的胰岛素和补液。",
+          "en": "Food and fluids must fit the diabetes plan. Once DKA develops, foods or drinks cannot replace hospital insulin and fluid treatment."
+        },
+        "supports": [
+          {
+            "source_id": "dka-cdc",
+            "locator": "Treatment",
+            "assessment": "Confirmed DKA requires medical insulin/fluids/minerals."
+          },
+          {
+            "source_id": "dka-nhs",
+            "locator": "Treatment",
+            "assessment": "Urgent hospital, not food replacement."
+          }
+        ]
+      },
+      {
+        "id": "diet-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "生病但仍能安全饮水时，按计划补水；若不能正常吃饭，团队可能安排容易进食的含碳水食物或饮品，并同步调整胰岛素。不能一概改成完全不吃碳水。",
+          "en": "When ill but able to drink safely, maintain fluids according to the plan. If meals are difficult, the team may arrange easy-to-take carbohydrate foods or drinks alongside insulin adjustments. Eliminating all carbohydrate is not a universal sick-day solution."
+        },
+        "supports": [
+          {
+            "source_id": "dka-cdc-sick",
+            "locator": "Prepare now; If sick; More tips",
+            "assessment": "Carbohydrates, hydration and altered insulin needs; no fixed amount generalized."
+          },
+          {
+            "source_id": "dka-duk-sick-food",
+            "locator": "Eating well; Managing your health",
+            "assessment": "Carbohydrate substitutes and team medication changes, only if can drink safely."
+          }
+        ]
+      },
+      {
+        "id": "diet-2",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "普通低水平酮体与DKA不同，但服用SGLT2药物或胰岛素不足时，长时间禁食和极低碳水饮食会增加风险。准备明显改变饮食前先讨论用药和酮体监测。",
+          "en": "Low-level ketosis differs from DKA, but prolonged fasting and very-low-carbohydrate diets increase concern with SGLT2 use or insufficient insulin. Discuss medicines and ketone monitoring before a major dietary change."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 1 SGLT2 Risk factors",
+            "assessment": "Very low carbohydrate, fasting and dehydration risk."
+          },
+          {
+            "source_id": "dka-mhra",
+            "locator": "Risk factors",
+            "assessment": "Restricted intake, dehydration and reduced insulin; discuss."
+          },
+          {
+            "source_id": "dka-diabetes-uk-ketones",
+            "locator": "What are ketones; Ketogenic diet",
+            "assessment": "Ordinary low ketosis distinction."
+          }
+        ]
+      },
+      {
+        "id": "diet-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "持续呕吐、喝下的水也留不住时应急诊，不要反复尝试饮料而延误处理；合并心肾疾病者的补液量还需专门评估。",
+          "en": "Persistent vomiting with inability to keep fluids down calls for emergency care rather than repeated attempts with drinks. People with heart or kidney disease also need specific assessment of fluid replacement."
+        },
+        "supports": [
+          {
+            "source_id": "dka-cdc",
+            "locator": "Testing emergency list",
+            "assessment": "Vomiting unable retain fluids emergency."
+          },
+          {
+            "source_id": "dka-ada-ketones",
+            "locator": "What to Do If Ketones High",
+            "assessment": "Vomiting/trouble drinking emergency."
+          },
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 4 Fluid therapy; table 4 ESKD",
+            "assessment": "Cardiac/renal fluid caution."
+          },
+          {
+            "source_id": "dka-merck",
+            "locator": "Volume repletion",
+            "assessment": "Heart failure/overload slower fluids."
+          },
+          {
+            "source_id": "dka-renal-review",
+            "locator": "Management in end-stage kidney disease",
+            "assessment": "Severe renal disease poor aggressive hydration tolerance."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Different institutions author their own patient or professional guidance; pages from one institution remain one editorial source. Shared guideline evidence is not treated as independent research.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "Scoped common principles only; pediatric/adult doses and local labels not generalized."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/mi_icd_scope",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": [
+      "Current bilingual text and claim evidence await independent review; no clinical sign-off."
+    ]
+  },
+  {
+    "id": "p0-01-diabetic-ketoacidosis-daily_care",
+    "target": {
+      "kind": "condition",
+      "id": "diabetic-ketoacidosis",
+      "section": "daily_care"
+    },
+    "content_sha256": "d1eca936299bc78c8f05130b1638fef56eae012064adfac2a243acaac836f81c",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading by /root/mi_icd_scope; independent review pending",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "dka-ada",
+        "source_metadata_sha256": "654efb7be2701eac683be7a3741634fb58fbd5282222f390317f458c889e3256",
+        "locator": "What You Need to Know",
+        "source_version": "Current patient page actually read; differs from NHS in home blood-ketone emergency threshold; grouped conservatively with ADA-led consensus.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-ada-ketones",
+        "source_metadata_sha256": "42a8c1c784169b4632fa7afee92a3cd5f38e624463f6d5109f0b186a4ae47e9b",
+        "locator": "What to Do If Ketones High",
+        "source_version": "Who is at risk; when/how to check; elevated ketone actions and emergency features.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-cdc",
+        "source_metadata_sha256": "d07da9fc93a5de545c765e62db56663f2f44255b7c93ff421fcb89ed8a1fd46f",
+        "locator": "Testing: emergency signs",
+        "source_version": "Overview, signs, causes, prevention, testing and treatment; CDC subject-matter-expert-reviewed patient education.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-cdc",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-cdc-sick",
+        "source_metadata_sha256": "843ff4f43b3b3e297a466b94c0d262bc9c4cc4afd1fdd9a862c31165aca80fe8",
+        "locator": "When to go to ER, final paragraph",
+        "source_version": "Subject-matter-expert reviewed; prepare, if sick, emergency signs. Blanket continue diabetes pills not copied because medication-specific sick-day exceptions exist.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-cdc",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-chelwest-pump",
+        "source_metadata_sha256": "a0ef9fa7e7c3c7fcba7346a8a975d53d141477a3bb1f4d12f8d5f390ffb26139",
+        "locator": "Pump failure; Identifying causes",
+        "source_version": "Read Pump failure, Identifying causes to raised glucose, Sick day rules. Locally authored leaflet, no publication day shown. Backup plan, site/tubing checks and emergency escalation used; no doses or blanket pump prohibition copied.",
+        "accessed_at": "2026-10-02",
+        "population": "Pump users; device doses not generalized",
+        "region": "GB",
+        "independence_group": "nhs-chelwest",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-cuh-pump",
+        "source_metadata_sha256": "a75c0075ee6c3479cf544aae2ebc35bba8bdc4159b085c57e5adec032f3f826c",
+        "locator": "Key points; Out and about; Travel | Key points",
+        "source_version": "Version 2, document 107308, approved 6 May 2026. Read Key points, sick-day/DKA, out-and-about and travel: in-date backup pens, pump settings, individualized doses and supplies. Device settings and doses not generalized.",
+        "accessed_at": "2026-10-02",
+        "population": "Pump users; device doses not generalized",
+        "region": "GB",
+        "independence_group": "nhs-cuh",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-mayo-treatment",
+        "source_metadata_sha256": "115d589bc4cce6c08584eb38eef9f049369d597185394341d11c65ea38383e6e",
+        "locator": "Preparing for appointment",
+        "source_version": "Diagnosis, treatment, preparing for appointment; same Mayo editorial institution as symptoms page.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "mayo-clinic",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-nhs",
+        "source_metadata_sha256": "1a6e33ee23ac2d6bc43d2daecbd3bf2a1280a952d48d74d05e8be07ce43314f3",
+        "locator": "How to reduce risk: Do",
+        "source_version": "Full patient page; review due June 8, 2026 has passed, current retrieval cross-compared with newer materials.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "nhs-national",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-niddk",
+        "source_metadata_sha256": "9d668f09c35b3b3da789aa1134252430f61fc03a47d99d5991f6769c68b94536",
+        "locator": "Special situations | Home glucose: recording paragraph",
+        "source_version": "Actually read current Managing Diabetes: Healthy meal plan, Mental health, Medicines/cost, Home glucose, Low glucose, Checking urine ketones, Special situations and Care team. Low-glucose confusion is in its own subsection, not the ketone paragraph.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-nih-niddk",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      }
+    ],
+    "claims": [
+      {
+        "id": "daily_care-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "日常最有用的准备是一份能执行的生病日计划，写清监测、用药、联系方式和升级就医条件。",
+          "en": "The most useful preparation is a practical sick-day plan stating monitoring, medicine instructions, contact details and when to escalate care."
+        },
+        "supports": [
+          {
+            "source_id": "dka-nhs",
+            "locator": "How to reduce risk: Do",
+            "assessment": "Practical plan/contact."
+          },
+          {
+            "source_id": "dka-ada-ketones",
+            "locator": "What to Do If Ketones High",
+            "assessment": "Individual plan."
+          }
+        ]
+      },
+      {
+        "id": "daily_care-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "把血糖仪、血酮仪或尿酮试纸、胰岛素及所需耗材准备好，并检查有效期；外出或旅行也要考虑这些用品的连续供应。",
+          "en": "Keep glucose and ketone testing equipment, insulin and required supplies available, and check expiry dates. Plan uninterrupted access when away from home or traveling."
+        },
+        "supports": [
+          {
+            "source_id": "dka-ada",
+            "locator": "What You Need to Know",
+            "assessment": "Unexpired ketone supplies."
+          },
+          {
+            "source_id": "dka-cuh-pump",
+            "locator": "Key points; Out and about; Travel",
+            "assessment": "In-date backup pens/strips and supplies away from home."
+          },
+          {
+            "source_id": "dka-niddk",
+            "locator": "Special situations",
+            "assessment": "Travel/illness planning."
+          }
+        ]
+      },
+      {
+        "id": "daily_care-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "生病时记录血糖和酮体、已用胰岛素、进食饮水及呕吐情况，按个人计划复测；联系医生时把这些记录一起提供。",
+          "en": "During illness, record glucose and ketones, insulin taken, intake and vomiting, and repeat checks according to the individual plan. Share these records when seeking advice."
+        },
+        "supports": [
+          {
+            "source_id": "dka-niddk",
+            "locator": "Home glucose: recording paragraph",
+            "assessment": "Practical times/results/intake record to share, not validated score."
+          },
+          {
+            "source_id": "dka-mayo-treatment",
+            "locator": "Preparing for appointment",
+            "assessment": "Timeline, glucose/ketones, intake and treatment questions."
+          },
+          {
+            "source_id": "dka-ada-ketones",
+            "locator": "What to Do If Ketones High",
+            "assessment": "Repeat according to individual plan."
+          }
+        ]
+      },
+      {
+        "id": "daily_care-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "泵使用者按培训检查输注部位和管路，明确泵中断时的备用注射安排。不要在没有剂量指导时凭网页自行反复追加胰岛素。",
+          "en": "Pump users should check the infusion site and tubing as trained and know the backup injection plan for interrupted delivery. Do not repeatedly add insulin from a webpage without dose instructions."
+        },
+        "supports": [
+          {
+            "source_id": "dka-ada-ketones",
+            "locator": "What to Do If Ketones High",
+            "assessment": "Check pump/site; corrections only in plan."
+          },
+          {
+            "source_id": "dka-cuh-pump",
+            "locator": "Key points",
+            "assessment": "Backup injections and team-calculated doses."
+          },
+          {
+            "source_id": "dka-chelwest-pump",
+            "locator": "Pump failure; Identifying causes",
+            "assessment": "Backup plan and site/tubing/leakage checks."
+          }
+        ]
+      },
+      {
+        "id": "daily_care-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "出现呼吸困难、意识变化或无法留住液体时，停止只在家处理并进入急救路径；若自己思考不清，让身边人帮助联络医疗服务。",
+          "en": "Move from home care to emergency care for breathing difficulty, awareness changes or inability to keep fluids down. If thinking is impaired, ask someone nearby to help contact medical services."
+        },
+        "supports": [
+          {
+            "source_id": "dka-cdc",
+            "locator": "Testing: emergency signs",
+            "assessment": "Vomiting unable to retain fluids, breathing difficulty, multiple DKA signs emergency."
+          },
+          {
+            "source_id": "dka-ada-ketones",
+            "locator": "What to Do If Ketones High",
+            "assessment": "Trouble drinking, confusion, heavy breathing and unavailable team warrant ER."
+          },
+          {
+            "source_id": "dka-cdc-sick",
+            "locator": "When to go to ER, final paragraph",
+            "assessment": "Impaired thinking requires help calling or transport."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Different institutions author their own patient or professional guidance; pages from one institution remain one editorial source. Shared guideline evidence is not treated as independent research. Mayo explicitly cites CDC along with clinical reviews; Mayo and CDC are separately written but not independent underlying research.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "Scoped common principles only; pediatric/adult doses and local labels not generalized."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/mi_icd_scope",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": [
+      "Current bilingual text and claim evidence await independent review; no clinical sign-off."
+    ]
+  },
+  {
+    "id": "p0-01-diabetic-ketoacidosis-special_populations",
+    "target": {
+      "kind": "condition",
+      "id": "diabetic-ketoacidosis",
+      "section": "special_populations"
+    },
+    "content_sha256": "98c6f0896c7a624b40f4efb333b5b8e8e824b46ced8c17630cfcefa2402423b6",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading by /root/mi_icd_scope; independent review pending",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "dka-consensus",
+        "source_metadata_sha256": "18437b68ca2b039541a5aa5f1ff3be325f98dcc1a5f6425f1730fb0f07c5fd46",
+        "locator": "Section 6 table 4 | Section 3 euglycemic DKA; table 4 Pregnancy | Section 4 Fluid therapy; table 4 Older/ESKD | Section 7 socioeconomic/mental health; table 4 frail adults",
+        "source_version": "2024 joint adult consensus: publisher sections 1–7 re-read; same article PMC11343900 tables 3 and 4 actually read this round. Table 4 gives SGLT2 stopping/nonroutine restart, pregnancy and kidney failure; one joint editorial source, not five independent sources. Adult doses are not pediatric protocol.",
+        "accessed_at": "2026-10-02",
+        "population": "Adult diabetes",
+        "region": "International: US, Europe, UK",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-diabetes-uk",
+        "source_metadata_sha256": "6d88a97e094b912417c6cc312d5fecfee33831b462208d78661b091daee54b00",
+        "locator": "Symptoms; Blood testing",
+        "source_version": "Patient education: symptoms, blood/urine testing, treatment, avoiding DKA; current retrieved page.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "diabetes-uk",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-em-text",
+        "source_metadata_sha256": "39e061df727622dad34ba507ed9b245b41bc218ce442753265eb2caabd709b0a",
+        "locator": "CAVEATS: Over-rapid replacement",
+        "source_version": "2022 edition. Read visible DKA and CAVEATS only; full management is gated. Persistent abdominal pain, elderly/cardiac fluid overload, euglycemia in pregnancy/SGLT2 used. Older diagnosis cutoffs and overbroad fever/antibiotic statements not used.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "International; Singapore emergency-medicine authors",
+        "independence_group": "mcgraw-em-guide",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-merck",
+        "source_metadata_sha256": "6b6660ae7016ae9622ba39fdb5b6f5cd2c28ef946b0d1cd09a2dcffff7961247",
+        "locator": "Overview pregnancy/SGLT2 | Volume repletion",
+        "source_version": "Full review December 2025; updated May 2026, exact day unstated. Read DKA cause/euglycemia, Pathophysiology, Symptoms, Diagnosis, Treatment including volume repletion and ketone conversion. Same Merck/MSD group; not independent underlying trials.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "merck-manual",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-nhs",
+        "source_metadata_sha256": "1a6e33ee23ac2d6bc43d2daecbd3bf2a1280a952d48d74d05e8be07ce43314f3",
+        "locator": "Symptoms; Immediate action",
+        "source_version": "Full patient page; review due June 8, 2026 has passed, current retrieval cross-compared with newer materials.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "nhs-national",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-nice-child",
+        "source_metadata_sha256": "9daa95ec6020fe38b1786482050693ba1199347f09251e4763dec6a7925525e8",
+        "locator": "Finding out if DKA",
+        "source_version": "Direct page 403; indexed official text read: checking ketones and DKA, in-date strips, symptoms and hospital with pediatric facilities. Pediatric home threshold not generalized to adults.",
+        "accessed_at": "2026-10-02",
+        "population": "Children only",
+        "region": "GB",
+        "independence_group": "uk-nice",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-nice-pregnancy",
+        "source_metadata_sha256": "be1b2d87b75140a45b56e506fee580f26cd6ba4568acede7ca6260e59705a78c",
+        "locator": "1.1.8; 1.3.21–24",
+        "source_version": "Direct page 403; indexed original recommendations read: 1.1.8 emergency contacts, 1.3.21–24 ketone testing, urgent advice if unwell and medical/obstetric care for suspected DKA. Does not itself establish euglycemia mechanism.",
+        "accessed_at": "2026-10-02",
+        "population": "Pregnancy with diabetes",
+        "region": "GB",
+        "independence_group": "uk-nice",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-niddk",
+        "source_metadata_sha256": "9d668f09c35b3b3da789aa1134252430f61fc03a47d99d5991f6769c68b94536",
+        "locator": "Medicines; Mental health; Care team",
+        "source_version": "Actually read current Managing Diabetes: Healthy meal plan, Mental health, Medicines/cost, Home glucose, Low glucose, Checking urine ketones, Special situations and Care team. Low-glucose confusion is in its own subsection, not the ketone paragraph.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-nih-niddk",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-rch",
+        "source_metadata_sha256": "5beddef900da68d77fe7045e2ae2f33ae4b5c2b396b82827351766d596beba9a",
+        "locator": "Background; Management | Consultation/Transfer",
+        "source_version": "July 2025 update, exact day unstated. Read Background, Assessment, Investigations, Goals, Supportive measures, Glucose/Potassium, Insulin, Cerebral injury and Consultation/Transfer. Children only; no doses or home treatment algorithm copied.",
+        "accessed_at": "2026-10-02",
+        "population": "Children only",
+        "region": "AU",
+        "independence_group": "au-rch",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-renal-review",
+        "source_metadata_sha256": "abd74c56b43ca04aa95f01e458747900257427494a1a8cf90ad7ba0e53da4cf8",
+        "locator": "Management in end-stage kidney disease",
+        "source_version": "Direct PMC CAPTCHA; indexed original full article read, specifically Pathophysiological changes in kidney disease and Management in end-stage kidney disease: low urine output, overload, poor aggressive hydration tolerance and individualized monitoring. Narrative review, not trial; no dose algorithm copied.",
+        "accessed_at": "2026-10-02",
+        "population": "Advanced/end-stage kidney disease",
+        "region": "Saudi Arabia; kidney failure population",
+        "independence_group": "oman-med-j-al-sadhan",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      }
+    ],
+    "claims": [
+      {
+        "id": "special_populations-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "儿童、孕妇及合并心肾疾病的人，表现或治疗耐受性可能与一般成人不同。",
+          "en": "Children, pregnant people and those with heart or kidney disease can differ from other adults in presentation or treatment tolerance."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 6 table 4",
+            "assessment": "Special pregnancy/older/renal care."
+          },
+          {
+            "source_id": "dka-rch",
+            "locator": "Background; Management",
+            "assessment": "Child-specific protocol."
+          }
+        ]
+      },
+      {
+        "id": "special_populations-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "儿童可能尚未确诊糖尿病，发病又较快。出现口渴尿多后又有呕吐、呼吸异常或困倦，应立即评估；儿童治疗需儿童团队，不能照搬成人补液或胰岛素方案。",
+          "en": "Children may not yet have a diabetes diagnosis and can worsen quickly. Thirst and frequent urination followed by vomiting, abnormal breathing or drowsiness need prompt assessment. Pediatric teams use child-specific treatment, not copied adult fluid or insulin regimens."
+        },
+        "supports": [
+          {
+            "source_id": "dka-nhs",
+            "locator": "Symptoms; Immediate action",
+            "assessment": "First presentation children, danger symptoms emergency."
+          },
+          {
+            "source_id": "dka-diabetes-uk",
+            "locator": "Symptoms; Blood testing",
+            "assessment": "Children faster deterioration and immediate help."
+          },
+          {
+            "source_id": "dka-rch",
+            "locator": "Consultation/Transfer",
+            "assessment": "All children DKA require pediatric team/resources."
+          },
+          {
+            "source_id": "dka-nice-child",
+            "locator": "Finding out if DKA",
+            "assessment": "Hospital cares for children, no adult dosing transfer."
+          }
+        ]
+      },
+      {
+        "id": "special_populations-2",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "妊娠可增加酮症风险，并可能在血糖没有显著升高时出现DKA。已有糖尿病的孕妇应与糖尿病及产科团队明确生病、呕吐和酮体升高时的求助路径。",
+          "en": "Pregnancy can increase ketosis risk, and DKA may occur without marked hyperglycemia. Pregnant people with diabetes should agree on illness, vomiting and elevated-ketone care pathways with diabetes and obstetric teams."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 3 euglycemic DKA; table 4 Pregnancy",
+            "assessment": "Euglycemia and joint medical/obstetric plan."
+          },
+          {
+            "source_id": "dka-merck",
+            "locator": "Overview pregnancy/SGLT2",
+            "assessment": "Pregnancy lower/normal glucose possible."
+          },
+          {
+            "source_id": "dka-nice-pregnancy",
+            "locator": "1.1.8; 1.3.21–24",
+            "assessment": "Contacts, urgent advice unwell, joint care."
+          }
+        ]
+      },
+      {
+        "id": "special_populations-3",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "老人及心力衰竭、严重肾病患者可能不耐受快速大量补液，医院需要更频繁地评估循环和液体负担。不能把一般补水建议理解成强迫大量喝水。",
+          "en": "Older adults and people with heart failure or severe kidney disease may not tolerate rapid large fluid volumes. Hospitals assess circulation and fluid burden more frequently; general hydration advice does not mean forcing large drinks."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 4 Fluid therapy; table 4 Older/ESKD",
+            "assessment": "Older, heart failure/severe renal fluid risk/reassessment."
+          },
+          {
+            "source_id": "dka-merck",
+            "locator": "Volume repletion",
+            "assessment": "Heart failure/overload slower infusion."
+          },
+          {
+            "source_id": "dka-em-text",
+            "locator": "CAVEATS: Over-rapid replacement",
+            "assessment": "Older/cardiac risk and monitoring."
+          },
+          {
+            "source_id": "dka-renal-review",
+            "locator": "Management in end-stage kidney disease",
+            "assessment": "Low urine limits aggressive fluids; individualized assessment."
+          }
+        ]
+      },
+      {
+        "id": "special_populations-4",
+        "kind": "action",
+        "text": {
+          "zh-CN": "对买不到胰岛素、视力或操作能力受限、情绪压力很大的人，应安排实际的供药和照护支持。复发不应被简单解释为“不配合”。",
+          "en": "People without reliable insulin access, with visual or practical difficulties, or under major emotional strain need concrete supply and care support. Recurrence should not be reduced to “noncompliance.”"
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 7 socioeconomic/mental health; table 4 frail adults",
+            "assessment": "Access and self-management capacity, supplies/social services."
+          },
+          {
+            "source_id": "dka-niddk",
+            "locator": "Medicines; Mental health; Care team",
+            "assessment": "Cost/stress/practical support; not standalone outcome intervention."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Different institutions author their own patient or professional guidance; pages from one institution remain one editorial source. Shared guideline evidence is not treated as independent research. Mayo explicitly cites CDC along with clinical reviews; Mayo and CDC are separately written but not independent underlying research.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "Scoped common principles only; pediatric/adult doses and local labels not generalized."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/mi_icd_scope",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": [
+      "Current bilingual text and claim evidence await independent review; no clinical sign-off."
+    ]
+  },
+  {
+    "id": "p0-01-diabetic-ketoacidosis-prognosis_followup",
+    "target": {
+      "kind": "condition",
+      "id": "diabetic-ketoacidosis",
+      "section": "prognosis_followup"
+    },
+    "content_sha256": "074a2c11f6638bb894dad0668ac344985cd702b60e069ccf8944eaece50b8748",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading by /root/mi_icd_scope; independent review pending",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "dka-ada-ketones",
+        "source_metadata_sha256": "42a8c1c784169b4632fa7afee92a3cd5f38e624463f6d5109f0b186a4ae47e9b",
+        "locator": "What to Do If Ketones High",
+        "source_version": "Who is at risk; when/how to check; elevated ketone actions and emergency features.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-consensus",
+        "source_metadata_sha256": "18437b68ca2b039541a5aa5f1ff3be325f98dcc1a5f6425f1730fb0f07c5fd46",
+        "locator": "Section 7 | Section 4 Resolution; Transition to maintenance",
+        "source_version": "2024 joint adult consensus: publisher sections 1–7 re-read; same article PMC11343900 tables 3 and 4 actually read this round. Table 4 gives SGLT2 stopping/nonroutine restart, pregnancy and kidney failure; one joint editorial source, not five independent sources. Adult doses are not pediatric protocol.",
+        "accessed_at": "2026-10-02",
+        "population": "Adult diabetes",
+        "region": "International: US, Europe, UK",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-cuh-pump",
+        "source_metadata_sha256": "a75c0075ee6c3479cf544aae2ebc35bba8bdc4159b085c57e5adec032f3f826c",
+        "locator": "Key points; Troubleshooting",
+        "source_version": "Version 2, document 107308, approved 6 May 2026. Read Key points, sick-day/DKA, out-and-about and travel: in-date backup pens, pump settings, individualized doses and supplies. Device settings and doses not generalized.",
+        "accessed_at": "2026-10-02",
+        "population": "Pump users; device doses not generalized",
+        "region": "GB",
+        "independence_group": "nhs-cuh",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-diabetes-uk",
+        "source_metadata_sha256": "6d88a97e094b912417c6cc312d5fecfee33831b462208d78661b091daee54b00",
+        "locator": "Treatment; Avoiding DKA",
+        "source_version": "Patient education: symptoms, blood/urine testing, treatment, avoiding DKA; current retrieved page.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "diabetes-uk",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-mayo-treatment",
+        "source_metadata_sha256": "115d589bc4cce6c08584eb38eef9f049369d597185394341d11c65ea38383e6e",
+        "locator": "Treatment: Insulin",
+        "source_version": "Diagnosis, treatment, preparing for appointment; same Mayo editorial institution as symptoms page.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "mayo-clinic",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-nhs",
+        "source_metadata_sha256": "1a6e33ee23ac2d6bc43d2daecbd3bf2a1280a952d48d74d05e8be07ce43314f3",
+        "locator": "Treatment | Urgent advice; Immediate action",
+        "source_version": "Full patient page; review due June 8, 2026 has passed, current retrieval cross-compared with newer materials.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "nhs-national",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-niddk",
+        "source_metadata_sha256": "9d668f09c35b3b3da789aa1134252430f61fc03a47d99d5991f6769c68b94536",
+        "locator": "Medicines; Mental health; Recording; Care team",
+        "source_version": "Actually read current Managing Diabetes: Healthy meal plan, Mental health, Medicines/cost, Home glucose, Low glucose, Checking urine ketones, Special situations and Care team. Low-glucose confusion is in its own subsection, not the ketone paragraph.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-nih-niddk",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      }
+    ],
+    "claims": [
+      {
+        "id": "prognosis_followup-0",
+        "kind": "benefit",
+        "text": {
+          "zh-CN": "及时治疗后DKA可以纠正，但诱因未处理、用药中断或缺乏监测支持时仍可能复发。",
+          "en": "DKA can resolve with prompt treatment, but may recur when triggers, interrupted treatment or inadequate monitoring support remain."
+        },
+        "supports": [
+          {
+            "source_id": "dka-nhs",
+            "locator": "Treatment",
+            "assessment": "Recovery and prevention advice."
+          },
+          {
+            "source_id": "dka-diabetes-uk",
+            "locator": "Treatment; Avoiding DKA",
+            "assessment": "Insulin/sick-day support reduces risk."
+          },
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 7",
+            "assessment": "Readmission and barriers."
+          }
+        ]
+      },
+      {
+        "id": "prognosis_followup-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "出院前医生需要确认酮体和酸度改善、能够进食饮水，并安排住院治疗到日常胰岛素方案的衔接；单次血糖好看不是唯一出院依据。",
+          "en": "Before discharge, clinicians assess ketone and acidity improvement, ability to eat and drink, and transition to the regular insulin plan. One satisfactory glucose reading is not the sole discharge criterion."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 4 Resolution; Transition to maintenance",
+            "assessment": "Ketone/acidity and safe insulin transition."
+          },
+          {
+            "source_id": "dka-nhs",
+            "locator": "Treatment",
+            "assessment": "Safe ketones, normal eating/drinking."
+          },
+          {
+            "source_id": "dka-mayo-treatment",
+            "locator": "Treatment: Insulin",
+            "assessment": "Usual insulin after glucose and excess acidity improve."
+          }
+        ]
+      },
+      {
+        "id": "prognosis_followup-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "复诊要回顾这次因何发生、设备和注射操作是否可靠、测酮和生病日计划是否会用，以及有没有经济或心理困难。",
+          "en": "Follow-up reviews the trigger, reliability of device and injection technique, understanding of ketone checks and sick-day rules, and financial or psychological barriers."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 7",
+            "assessment": "Trigger/technique/ketones/education/social-psychological review."
+          },
+          {
+            "source_id": "dka-niddk",
+            "locator": "Medicines; Mental health; Recording; Care team",
+            "assessment": "Practical support and sharing readings."
+          },
+          {
+            "source_id": "dka-cuh-pump",
+            "locator": "Key points; Troubleshooting",
+            "assessment": "Equipment/settings/dose training."
+          }
+        ]
+      },
+      {
+        "id": "prognosis_followup-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "再次口渴尿多、酮体上升或血糖按计划处理仍不下降时，应提前联系团队；呕吐留不住水、呼吸或意识异常则立即急诊。",
+          "en": "Contact the team earlier for renewed thirst and frequent urination, rising ketones or glucose not responding to the plan. Inability to keep fluids down, abnormal breathing or awareness changes requires emergency care."
+        },
+        "supports": [
+          {
+            "source_id": "dka-nhs",
+            "locator": "Urgent advice; Immediate action",
+            "assessment": "No response/ketones prompt help; severe symptoms emergency."
+          },
+          {
+            "source_id": "dka-ada-ketones",
+            "locator": "What to Do If Ketones High",
+            "assessment": "Worsening/no improvement contact; severe symptoms ER."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Different institutions author their own patient or professional guidance; pages from one institution remain one editorial source. Shared guideline evidence is not treated as independent research.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "Scoped common principles only; pediatric/adult doses and local labels not generalized."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/mi_icd_scope",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": [
+      "Current bilingual text and claim evidence await independent review; no clinical sign-off."
+    ]
+  },
+  {
+    "id": "p0-01-diabetic-ketoacidosis-complications",
+    "target": {
+      "kind": "condition",
+      "id": "diabetic-ketoacidosis",
+      "section": "complications"
+    },
+    "content_sha256": "cbf18f8e64c2db3b0d6034069f68633474477e0755c5571c115343aaa3d67a2c",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading by /root/mi_icd_scope; independent review pending",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "dka-cdc-sick",
+        "source_metadata_sha256": "843ff4f43b3b3e297a466b94c0d262bc9c4cc4afd1fdd9a862c31165aca80fe8",
+        "locator": "DKA; When to go to ER",
+        "source_version": "Subject-matter-expert reviewed; prepare, if sick, emergency signs. Blanket continue diabetes pills not copied because medication-specific sick-day exceptions exist.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-cdc",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-consensus",
+        "source_metadata_sha256": "18437b68ca2b039541a5aa5f1ff3be325f98dcc1a5f6425f1730fb0f07c5fd46",
+        "locator": "Sections 4 and 5 | Section 4 Potassium; table 3 | Table 3 Cerebral oedema",
+        "source_version": "2024 joint adult consensus: publisher sections 1–7 re-read; same article PMC11343900 tables 3 and 4 actually read this round. Table 4 gives SGLT2 stopping/nonroutine restart, pregnancy and kidney failure; one joint editorial source, not five independent sources. Adult doses are not pediatric protocol.",
+        "accessed_at": "2026-10-02",
+        "population": "Adult diabetes",
+        "region": "International: US, Europe, UK",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-mayo-symptoms",
+        "source_metadata_sha256": "20a059ee7e07b060d359ea9c74e91589a3ebf00f69fe0c7655bdf0cb9fc45dcc",
+        "locator": "When to see doctor; Complications | Complications Hypoglycemia/Hypokalemia | Complications: Cerebral edema",
+        "source_version": "Overview, symptoms, when to see a doctor, causes, complications and prevention; references include CDC and independent clinical reviews.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "mayo-clinic",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-merck",
+        "source_metadata_sha256": "6b6660ae7016ae9622ba39fdb5b6f5cd2c28ef946b0d1cd09a2dcffff7961247",
+        "locator": "Symptoms and Signs",
+        "source_version": "Full review December 2025; updated May 2026, exact day unstated. Read DKA cause/euglycemia, Pathophysiology, Symptoms, Diagnosis, Treatment including volume repletion and ketone conversion. Same Merck/MSD group; not independent underlying trials.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "merck-manual",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-rch",
+        "source_metadata_sha256": "5beddef900da68d77fe7045e2ae2f33ae4b5c2b396b82827351766d596beba9a",
+        "locator": "Cerebral injury Signs/Treatment; Transfer",
+        "source_version": "July 2025 update, exact day unstated. Read Background, Assessment, Investigations, Goals, Supportive measures, Glucose/Potassium, Insulin, Cerebral injury and Consultation/Transfer. Children only; no doses or home treatment algorithm copied.",
+        "accessed_at": "2026-10-02",
+        "population": "Children only",
+        "region": "AU",
+        "independence_group": "au-rch",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      }
+    ],
+    "claims": [
+      {
+        "id": "complications-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "DKA本身的脱水和酸中毒，以及纠正过程中体内成分的变化，都可能影响重要器官。",
+          "en": "Both dehydration and acidosis from DKA and shifts during treatment can affect vital organs."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Sections 4 and 5",
+            "assessment": "Physiology/treatment shifts affect organs."
+          }
+        ]
+      },
+      {
+        "id": "complications-1",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "严重DKA可导致意识下降、昏迷甚至死亡，因此出现深快呼吸或明显困倦时需要尽快处理。",
+          "en": "Severe DKA can cause reduced awareness, coma and death, making deep rapid breathing or marked drowsiness urgent warning signs."
+        },
+        "supports": [
+          {
+            "source_id": "dka-merck",
+            "locator": "Symptoms and Signs",
+            "assessment": "Deep breathing/drowsiness can progress to coma/death."
+          },
+          {
+            "source_id": "dka-cdc-sick",
+            "locator": "DKA; When to go to ER",
+            "assessment": "Coma/death risk, breathing difficulty emergency."
+          },
+          {
+            "source_id": "dka-mayo-symptoms",
+            "locator": "When to see doctor; Complications",
+            "assessment": "Confusion/multiple symptoms urgent; untreated loss of consciousness/death."
+          }
+        ]
+      },
+      {
+        "id": "complications-2",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "治疗中的低血糖和低钾是需要主动监测的问题。低钾可能干扰心律及肌肉工作，医院会根据检查调整胰岛素、液体和补充量。",
+          "en": "Hypoglycemia and low potassium require active monitoring during treatment. Low potassium can disturb heart rhythm and muscle function, so insulin, fluids and replacement are adjusted to test results."
+        },
+        "supports": [
+          {
+            "source_id": "dka-mayo-symptoms",
+            "locator": "Complications Hypoglycemia/Hypokalemia",
+            "assessment": "Risk and heart/muscle effects."
+          },
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 4 Potassium; table 3",
+            "assessment": "Monitoring prevents arrhythmia/respiratory muscle risk."
+          }
+        ]
+      },
+      {
+        "id": "complications-3",
+        "kind": "risk",
+        "text": {
+          "zh-CN": "脑水肿指脑组织肿胀。有临床影响的脑水肿是严重并发症，但并非每人都会发生，儿童更需警惕。治疗中意识或神经状态变化需要立即告知医护。",
+          "en": "Cerebral edema means swelling of brain tissue. Clinically significant cerebral edema is a serious complication, but does not occur in everyone, and children warrant particular attention. Changes in awareness or neurological state during treatment must be reported immediately."
+        },
+        "supports": [
+          {
+            "source_id": "dka-mayo-symptoms",
+            "locator": "Complications: Cerebral edema",
+            "assessment": "Brain swelling especially children."
+          },
+          {
+            "source_id": "dka-rch",
+            "locator": "Cerebral injury Signs/Treatment; Transfer",
+            "assessment": "Neurologic change prompt senior/ICU assessment, child scope."
+          },
+          {
+            "source_id": "dka-consensus",
+            "locator": "Table 3 Cerebral oedema",
+            "assessment": "Adults also alert to mental-state change; rare serious event."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Different institutions author their own patient or professional guidance; pages from one institution remain one editorial source. Shared guideline evidence is not treated as independent research. Mayo explicitly cites CDC along with clinical reviews; Mayo and CDC are separately written but not independent underlying research.",
+      "underlying_evidence": "overlap"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "Scoped common principles only; pediatric/adult doses and local labels not generalized."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/mi_icd_scope",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": [
+      "Current bilingual text and claim evidence await independent review; no clinical sign-off."
+    ]
+  },
+  {
+    "id": "p0-01-diabetic-ketoacidosis-prevention",
+    "target": {
+      "kind": "condition",
+      "id": "diabetic-ketoacidosis",
+      "section": "prevention"
+    },
+    "content_sha256": "b8c51a0cf96294bd179f4d8a6a52183d9e6306e284cdbd81b7889e9f1a5b134c",
+    "status": "pending",
+    "scope": "full_section",
+    "checked_at": "2026-10-02",
+    "checker": "Author source reading by /root/mi_icd_scope; independent review pending",
+    "medical_reviewed": false,
+    "claim_inventory": "all_medical_claims_in_section",
+    "supports": [
+      {
+        "source_id": "dka-cdc",
+        "source_metadata_sha256": "d07da9fc93a5de545c765e62db56663f2f44255b7c93ff421fcb89ed8a1fd46f",
+        "locator": "Prevention; Signs",
+        "source_version": "Overview, signs, causes, prevention, testing and treatment; CDC subject-matter-expert-reviewed patient education.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "US",
+        "independence_group": "us-cdc",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-consensus",
+        "source_metadata_sha256": "18437b68ca2b039541a5aa5f1ff3be325f98dcc1a5f6425f1730fb0f07c5fd46",
+        "locator": "Section 7 education/supplies | Table 4 SGLT2 | Section 7 education and access",
+        "source_version": "2024 joint adult consensus: publisher sections 1–7 re-read; same article PMC11343900 tables 3 and 4 actually read this round. Table 4 gives SGLT2 stopping/nonroutine restart, pregnancy and kidney failure; one joint editorial source, not five independent sources. Adult doses are not pediatric protocol.",
+        "accessed_at": "2026-10-02",
+        "population": "Adult diabetes",
+        "region": "International: US, Europe, UK",
+        "independence_group": "ada-hyperglycemic-crisis-consensus",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-cuh-pump",
+        "source_metadata_sha256": "a75c0075ee6c3479cf544aae2ebc35bba8bdc4159b085c57e5adec032f3f826c",
+        "locator": "Key points; Out and about; Travel",
+        "source_version": "Version 2, document 107308, approved 6 May 2026. Read Key points, sick-day/DKA, out-and-about and travel: in-date backup pens, pump settings, individualized doses and supplies. Device settings and doses not generalized.",
+        "accessed_at": "2026-10-02",
+        "population": "Pump users; device doses not generalized",
+        "region": "GB",
+        "independence_group": "nhs-cuh",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-diabetes-uk",
+        "source_metadata_sha256": "6d88a97e094b912417c6cc312d5fecfee33831b462208d78661b091daee54b00",
+        "locator": "Symptoms: 4Ts; Blood testing | What can you do to avoid DKA",
+        "source_version": "Patient education: symptoms, blood/urine testing, treatment, avoiding DKA; current retrieved page.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "diabetes-uk",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-mhra",
+        "source_metadata_sha256": "69c10e410bb85378104b26665abad4828dd948cebe560795d9aa700be300599b",
+        "locator": "Advice bullets 3–5; Risk factors",
+        "source_version": "Actually reopened 2016 updated advice, Reports and Risk factors. Replaces 2015 preliminary source: stop if suspected, no routine restart after DKA unless another cause identified/resolved, interruption around hospital major surgery/serious illness; near-normal glucose warning. Historical UK alert, not current global indication list.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "uk-mhra",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      },
+      {
+        "source_id": "dka-nhs",
+        "source_metadata_sha256": "1a6e33ee23ac2d6bc43d2daecbd3bf2a1280a952d48d74d05e8be07ce43314f3",
+        "locator": "How to reduce risk | Symptoms; Immediate action",
+        "source_version": "Full patient page; review due June 8, 2026 has passed, current retrieval cross-compared with newer materials.",
+        "accessed_at": "2026-10-02",
+        "population": "Diabetes/possible new diabetes; exact scope in claim locator",
+        "region": "UK",
+        "independence_group": "nhs-national",
+        "upstream_evidence": [
+          "Shared guidelines/studies overlap. Editorial independence is not trial replication. ADA pages/joint consensus one group; NHS trusts locally authored."
+        ],
+        "relation": "supports",
+        "assessment": "Actually read specified portions; supports only parts explicitly assessed below. Independent review pending."
+      }
+    ],
+    "claims": [
+      {
+        "id": "prevention-0",
+        "kind": "explanation",
+        "text": {
+          "zh-CN": "预防可以分为及时识别首次糖尿病、避免胰岛素中断，以及在生病时及早处理失衡。",
+          "en": "Prevention includes recognizing new diabetes, avoiding interruption of insulin, and addressing imbalance early during illness."
+        },
+        "supports": [
+          {
+            "source_id": "dka-cdc",
+            "locator": "Prevention; Signs",
+            "assessment": "Recognize first disease and illness/insulin needs."
+          },
+          {
+            "source_id": "dka-nhs",
+            "locator": "How to reduce risk",
+            "assessment": "Insulin/sick-day plan."
+          }
+        ]
+      },
+      {
+        "id": "prevention-1",
+        "kind": "action",
+        "text": {
+          "zh-CN": "持续口渴、尿多或体重异常下降应接受糖尿病评估；已经伴呕吐、异常呼吸或困倦时直接按急症处理。",
+          "en": "Persistent thirst, frequent urination or unexplained weight loss calls for diabetes assessment. With vomiting, abnormal breathing or drowsiness, use the emergency pathway."
+        },
+        "supports": [
+          {
+            "source_id": "dka-diabetes-uk",
+            "locator": "Symptoms: 4Ts; Blood testing",
+            "assessment": "Thirst/urination/weight loss, acute DKA help."
+          },
+          {
+            "source_id": "dka-nhs",
+            "locator": "Symptoms; Immediate action",
+            "assessment": "Danger symptoms even undiagnosed emergency."
+          }
+        ]
+      },
+      {
+        "id": "prevention-2",
+        "kind": "action",
+        "text": {
+          "zh-CN": "按既定方案使用胰岛素，并提前解决旅行、设备故障或药物短缺的备用办法。把家属或照护者也纳入识别症状和联络安排。",
+          "en": "Use insulin according to the agreed plan and prepare for travel, equipment failure or supply shortages. Include relatives or carers in recognizing symptoms and making contact."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 7 education/supplies",
+            "assessment": "Supplies and family education."
+          },
+          {
+            "source_id": "dka-cuh-pump",
+            "locator": "Key points; Out and about; Travel",
+            "assessment": "Backup insulin/equipment/emergency contacts."
+          },
+          {
+            "source_id": "dka-nhs",
+            "locator": "How to reduce risk",
+            "assessment": "Agreed insulin plan."
+          }
+        ]
+      },
+      {
+        "id": "prevention-3",
+        "kind": "action",
+        "text": {
+          "zh-CN": "使用SGLT2药物者，在手术、禁食或严重急病前后要问清暂停和恢复规则；普通“生病照常吃药”的建议不能覆盖每一种降糖药。",
+          "en": "People taking an SGLT2 medicine need clear hold and restart instructions around surgery, fasting or serious illness. Generic advice to continue all medicines during illness does not fit every glucose-lowering drug."
+        },
+        "supports": [
+          {
+            "source_id": "dka-mhra",
+            "locator": "Advice bullets 3–5; Risk factors",
+            "assessment": "Hospital surgery/serious illness pause/restart and fasting risk."
+          },
+          {
+            "source_id": "dka-consensus",
+            "locator": "Table 4 SGLT2",
+            "assessment": "Specific sick-day plan; stop acute DKA, no routine restart."
+          }
+        ]
+      },
+      {
+        "id": "prevention-4",
+        "kind": "benefit",
+        "text": {
+          "zh-CN": "每次DKA之后都应补齐测酮、注射操作及生病日教育，并处理导致中断治疗的困难。这些措施能减少风险，不能保证今后绝不发生。",
+          "en": "After each DKA episode, reinforce ketone testing, injection skills and sick-day education and address barriers that interrupted treatment. These steps reduce risk without guaranteeing that DKA never recurs."
+        },
+        "supports": [
+          {
+            "source_id": "dka-consensus",
+            "locator": "Section 7 education and access",
+            "assessment": "Education/technique/barriers reduce recurrence."
+          },
+          {
+            "source_id": "dka-diabetes-uk",
+            "locator": "What can you do to avoid DKA",
+            "assessment": "Monitoring/personal plan, no guarantee."
+          }
+        ]
+      }
+    ],
+    "independence": {
+      "status": "independent_editorial_sources",
+      "rationale": "Different institutions author their own patient or professional guidance; pages from one institution remain one editorial source. Shared guideline evidence is not treated as independent research.",
+      "underlying_evidence": "not_assessed"
+    },
+    "dispute": {
+      "status": "none",
+      "resolution": "Scoped common principles only; pediatric/adult doses and local labels not generalized."
+    },
+    "adversarial_review": {
+      "status": "pending",
+      "author": "/root/mi_icd_scope",
+      "reviewer": null,
+      "checked_at": null,
+      "original_sources_reopened": [],
+      "findings": [],
+      "resolution": ""
+    },
+    "unresolved_questions": [
+      "Current bilingual text and claim evidence await independent review; no clinical sign-off."
+    ]
+  }
+]

@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "condition_id": "postpartum-hemorrhage",
+  "verdict": "accepted",
+  "author": "/root/retinal_targeted",
+  "reviewer": "/root/priority_medical_rules",
+  "checked_at": "2026-10-02",
+  "medical_reviewed": false,
+  "target": {
+    "body_canonical_sha256": "8dd96f1a8c978f82157463a266e9e963f7c80b0c11fd398a4cf4ad2e80c8c1eb",
+    "records_canonical_sha256": "790dcfed519f7474778c3b9318394c0131d43309ef4d7b91ecac065eb600e52e",
+    "sources_canonical_sha256": "90aecbbc82c8759317d8d246800f637bdbd50024938343a07d9aa9d653450953"
+  },
+  "review_scope": "14 bilingual sections,58 claim-level bindings,15 actual source reads; one full independent pass and only the two resulting targeted corrections rechecked. No coverage mapping or deployment attestation.",
+  "actual_source_reads": [
+    {
+      "source_id": "b1-acute-pph-rcog",
+      "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/heavy-bleeding-after-birth-postpartum-haemorrhage/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_html_read",
+      "locator": "Definitions; risk factors; management; afterwards; next birth; secondary PPH, page lines130–241; provenance266–271",
+      "support_scope": "Patient explanations, primary/secondary timing, anemia, breastfeeding, recovery, recurrence and clot risk. December2016 material explicitly under review; not sole support for current drug choices."
+    },
+    {
+      "source_id": "pph-cleveland",
+      "url": "https://my.clevelandclinic.org/health/diseases/22228-postpartum-hemorrhage",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_html_read",
+      "locator": "Overview/types/causes44–145; diagnosis150–160; treatment164–177; recovery180; outlook192; home care202–214; editorial date/references228–248",
+      "support_scope": "Medically reviewed November12,2024. Recognition, causes, evaluation, hospital treatments and recovery. US definition is not silently substituted for WHO or China."
+    },
+    {
+      "source_id": "pph-cma-2023",
+      "url": "https://cspm.cma.org.cn/index/news?id=3474",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_html_read",
+      "locator": "2023 guideline: causes41; definition47; measurement50–63; prevention71–87; assessment95–108; treatment115–176; blood-product decisions180–187",
+      "support_scope": "Chinese vaginal500/caesarean1000 OR hypovolemia signs/symptoms; team treatment, TXA birth3h, hypertension restriction, trauma/placenta/coagulation and organ-perfusion goals."
+    },
+    {
+      "source_id": "pph-norfolk-postnatal-emergency",
+      "url": "https://www.justonenorfolk.nhs.uk/pregnancy-early-days/new-baby/early-days/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_html_read",
+      "locator": "Early days / Vaginal bleeding240–256; NHS Trust identity",
+      "support_scope": "Suddenly heavier postpartum bleeding itself warrants999, with faintness/dizziness/pounding heart as additional triggers. Fever, offensive smell, pain and renewed loss need clinical contact. Its separate lochia-duration wording was not adopted."
+    },
+    {
+      "source_id": "pph-cdc-maternal-warning-signs",
+      "url": "https://www.cdc.gov/hearher/maternal-warning-signs/index.html",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_html_read",
+      "locator": "May15,2024: key points24–26; breathing/chest83–97; abdominal pain112–116; postpartum bleeding129–133; tell pregnancy152; AIM provenance153",
+      "support_scope": "Urgent recognition, at least one pad/hour, egg-sized clots/tissue, fever, breathing/chest symptoms. These are warning examples and do not require waiting for a measured threshold."
+    },
+    {
+      "source_id": "pph-north-memorial",
+      "url": "https://northmemorial.com/new-parent-resources/postpartum-care/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_html_read",
+      "locator": "Vaginal bleeding285–289; activity351–363; immediate maternity contact364–379; emergency actions380–385",
+      "support_scope": "Independently authored hospital advice corroborates pad/hour, egg clot and sudden increase contact actions. Actual plain-language action is preserved without calling every example an identical ambulance rule."
+    },
+    {
+      "source_id": "b1-acute-pph-east-kent",
+      "url": "https://leaflets.ekhuft.nhs.uk/life-after-postpartum-haemorrhage-pph/html/",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_html_read_from_local_original",
+      "locator": "Original pph-kent.html: iron/anemia; Eating for iron; breastfeeding; emotional recovery; VTE; follow-up; How to cope; references/footer",
+      "support_scope": "June2025 patient leaflet: nutrition, iron treatment, practical household support and emotional recovery. Reproduced Ontario Midwives material and cited RCOG are disclosed. No egg example appears in Eating for iron; it was removed."
+    },
+    {
+      "source_id": "b1-acute-pph-nice-intrapartum",
+      "url": "https://www.nice.org.uk/guidance/ng235/chapter/Recommendations",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_html_read_from_local_original",
+      "locator": "Original pph-nice.html: NG235 1.10.9–13;1.10.29–39 and table12",
+      "support_scope": "Uterotonic selection, severe hypertension/preeclampsia contraindications, joint first treatment, TXA, escalation and support. Direct web extraction403; the retrieved original NICE HTML was read."
+    },
+    {
+      "source_id": "pph-who-2025-guideline",
+      "url": "https://iris.who.int/server/api/core/bitstreams/88bf11a5-93b6-4d6b-bdaa-856b46c8ed3c/content",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_pdf_text_read",
+      "locator": "Original WHO2025 PDF: PDF50–52/printed32–34 rec14–15;57–58/39–40 rec22;60–65/42–47 rec24–30;74–78/56–60 blood/support/iron",
+      "support_scope": "Read selected recommendations, not entire volume.300mL+abnormal circulation OR500mL clinical trigger; predominantly vaginal evidence and limited CS data; TXA IV within3h from birth; prophylaxis/treatment separation; post-bleed support and iron indications."
+    },
+    {
+      "source_id": "pph-ebcog-2025",
+      "url": "https://ebcog.eu/wp-content/uploads/2025/11/WHO-Guidelines-on-PPH-and-EBCOG-Commentary-2025.pdf",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_pdf_text_read",
+      "locator": "Original two-page EBCOG commentary: page1 Comment on early trigger;page2 author roles/references; onlineOctober27,2025",
+      "support_scope": "Separate commentary supports300mL with abnormal signs and coordinated care; it comments on WHO guidance, not a second clinical trial. FIGO/EBCOG leadership overlap is disclosed."
+    },
+    {
+      "source_id": "pph-cochrane-txa-vaginal",
+      "url": "https://www.cochrane.org/evidence/CD007872_what-are-benefits-and-risks-tranexamic-acid-preventing-heavy-bleeding-after-vaginal-birth",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_html_read",
+      "locator": "January15,2025 summary: key messages43–50; results66–77; conclusions88–100",
+      "support_scope": "Routine preventive TXA differs from treatment; little/no blood-loss benefit and uncertain serious harms. WHO partial funding/common underlying trials acknowledged; no claim of independent replicated trial evidence."
+    },
+    {
+      "source_id": "pph-cochrane-txa-caesarean",
+      "url": "https://www.cochrane.org/evidence/CD016278_what-are-benefits-and-risks-tranexamic-acid-preventing-heavy-bleeding-after-caesarean-births",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_html_read",
+      "locator": "November13,2024 summary:39–70; conclusions84–96",
+      "support_scope": "Prevention results differ by measurement method; mostly low-risk trial population, uncertain rare harms. Shared authors with vaginal review count once; not used to prohibit all selected high-risk use."
+    },
+    {
+      "source_id": "pph-nice-asthma-guideline",
+      "url": "https://www.nice.org.uk/guidance/NG121/chapter/recommendations",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_html_read_from_local_original",
+      "locator": "Original pph-nice-asthma.html: NG121 1.4.2–1.4.4",
+      "support_scope": "NICE advises against carboprost in asthma due to bronchospasm. This guideline wording is distinguished from product-label caution."
+    },
+    {
+      "source_id": "pph-carboprost-smpc",
+      "url": "https://www.medicines.org.uk/emc/product/1084/smpc",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_html_read",
+      "locator": "Pfizer Hemabate SmPC May2022:4.3–4.4 lines249–274;4.8 respiratory adverse effects331–333;5.1",
+      "support_scope": "Manufacturer label warns of asthma/bronchoconstriction and medically trained obstetric administration. Label is a different source type, not a second trial or a universal self-treatment instruction."
+    },
+    {
+      "source_id": "pph-nata-thromboprophylaxis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6476742/",
+      "accessed_at": "2026-10-02",
+      "access_status": "official_indexed_original_section_read",
+      "locator": "2019 NATA consensus: Thromboprophylaxis complete indexed paragraph and recommendation50; official PMC search result",
+      "support_scope": "PPH/transfusion clot risk and prevention once bleeding is controlled and coagulopathy corrected. Direct PMC retrieval returned recaptcha; only actual indexed original passage accepted, not a fabricated full-article read. Joint NATA/FIGO/EBCOG/ESA authorship and shared references disclosed."
+    }
+  ],
+  "accepted_source_ids": [
+    "b1-acute-pph-rcog",
+    "pph-cleveland",
+    "pph-cma-2023",
+    "pph-norfolk-postnatal-emergency",
+    "pph-cdc-maternal-warning-signs",
+    "pph-north-memorial",
+    "b1-acute-pph-east-kent",
+    "b1-acute-pph-nice-intrapartum",
+    "pph-who-2025-guideline",
+    "pph-ebcog-2025",
+    "pph-cochrane-txa-vaginal",
+    "pph-cochrane-txa-caesarean",
+    "pph-nice-asthma-guideline",
+    "pph-carboprost-smpc",
+    "pph-nata-thromboprophylaxis"
+  ],
+  "findings": [
+    {
+      "id": "PPH-01",
+      "status": "resolved",
+      "claim_ids": [
+        "diagnosis-4"
+      ],
+      "finding": "CMA hypovolemia criterion was rendered as symptoms AND signs in both languages; original uses OR.",
+      "resolution": "Both languages now say symptoms OR signs, preserving the independent alternative to volume criteria. Confirmed against CMA definition47 and the claim/body binding."
+    },
+    {
+      "id": "PPH-02",
+      "status": "resolved",
+      "claim_ids": [
+        "diet-2"
+      ],
+      "finding": "The assigned East Kent Eating for iron passage did not list eggs despite the support assessment.",
+      "resolution": "Removed only eggs from both language examples and corresponding claim/section assessments. Meat, pulses and leafy vegetables remain supported; no unnecessary new source added."
+    }
+  ],
+  "resolution": "Accepted after one independent full claim/source pass and a targeted recheck of two minimal corrections. This is source-based editorial verification by a separate agent, not clinician certification. Clinical review remains false; ICD semantic mapping and release integration remain separate.",
+  "unresolved_questions": [],
+  "section_conclusions": [
+    {
+      "section": "summary",
+      "claim_ids": [
+        "summary-1",
+        "summary-2",
+        "summary-3",
+        "summary-4"
+      ],
+      "result": "accepted",
+      "assessment": "Definitions, normal-lochia distinction and timing match attributed UK/US patient material; no universal milliliter definition implied."
+    },
+    {
+      "section": "causes_risks",
+      "claim_ids": [
+        "causes_risks-1",
+        "causes_risks-2",
+        "causes_risks-3",
+        "causes_risks-4"
+      ],
+      "result": "accepted",
+      "assessment": "Atony, retained tissue, trauma, placenta and coagulation mechanisms and planning factors supported; no-risk history does not exclude PPH."
+    },
+    {
+      "section": "red_flags",
+      "claim_ids": [
+        "red_flags-1",
+        "red_flags-2",
+        "red_flags-3",
+        "red_flags-4"
+      ],
+      "result": "accepted",
+      "assessment": "Heavy bleeding independently triggers emergency help; pad/clot examples do not delay action. Safe accompaniment/transport is practical support, not an invented clinical numeric threshold."
+    },
+    {
+      "section": "care",
+      "claim_ids": [
+        "care-1",
+        "care-2",
+        "care-3",
+        "care-4"
+      ],
+      "result": "accepted",
+      "assessment": "Acute emergency, urgent delayed deterioration and planned recovery are separated. Recent birth should be reported; unavailable maternity team does not delay emergency assessment."
+    },
+    {
+      "section": "diagnosis",
+      "claim_ids": [
+        "diagnosis-1",
+        "diagnosis-2",
+        "diagnosis-3",
+        "diagnosis-4",
+        "diagnosis-scope"
+      ],
+      "result": "accepted",
+      "assessment": "WHO treatment trigger, Chinese traditional definition and older UK classification kept distinct. OR criterion corrected; vaginal-evidence and CS limitations explicit; numbers are not home waiting targets."
+    },
+    {
+      "section": "differentials",
+      "claim_ids": [
+        "differentials-1",
+        "differentials-2",
+        "differentials-3",
+        "differentials-4"
+      ],
+      "result": "accepted",
+      "assessment": "Normal lochia and delayed infection/retained tissue differentiated. New chest/breathing/fainting symptoms are not explained away as ordinary anemia or tiredness."
+    },
+    {
+      "section": "treatment",
+      "claim_ids": [
+        "treatment-1",
+        "treatment-2",
+        "treatment-3",
+        "treatment-4"
+      ],
+      "result": "accepted",
+      "assessment": "Coordinated first measures, cause-specific repair/removal and escalation supported without individualized drug or procedure instructions."
+    },
+    {
+      "section": "medications",
+      "claim_ids": [
+        "medications-1",
+        "medications-2",
+        "medications-3",
+        "medications-4",
+        "medications-txa-time"
+      ],
+      "result": "accepted",
+      "assessment": "Prevention versus active treatment and IV TXA birth-time3h window preserved. Hypertension and asthma conditions explicit; NICE avoidance and SmPC caution not conflated."
+    },
+    {
+      "section": "diet",
+      "claim_ids": [
+        "diet-1",
+        "diet-2",
+        "diet-3",
+        "diet-4"
+      ],
+      "result": "accepted",
+      "assessment": "Food after stabilization supports recovery; significant anemia may require iron therapy. Unsupported egg example removed. Team-cleared intake is a practical perioperative condition, not a new fasting prescription."
+    },
+    {
+      "section": "daily_care",
+      "claim_ids": [
+        "daily_care-1",
+        "daily_care-2",
+        "daily_care-3",
+        "daily_care-4"
+      ],
+      "result": "accepted",
+      "assessment": "Observation records, household assistance and gradual recovery are practical low-risk advice, not falsely quantified therapies. Breastfeeding support does not delay warning-sign care."
+    },
+    {
+      "section": "special_populations",
+      "claim_ids": [
+        "special_populations-1",
+        "special_populations-2",
+        "special_populations-3",
+        "special_populations-4"
+      ],
+      "result": "accepted",
+      "assessment": "Preexisting anemia, placental/coagulation issues, anticoagulants, transfusion preferences, asthma and hypertension appropriately affect preparation and choices."
+    },
+    {
+      "section": "prognosis_followup",
+      "claim_ids": [
+        "prognosis_followup-1",
+        "prognosis_followup-2",
+        "prognosis_followup-3",
+        "prognosis_followup-4"
+      ],
+      "result": "accepted",
+      "assessment": "Physical and emotional recovery, anemia follow-up and future-birth planning supported. Nightmares/difficulty coping are examples for asking support, not diagnostic criteria or incidence claims."
+    },
+    {
+      "section": "complications",
+      "claim_ids": [
+        "complications-1",
+        "complications-2",
+        "complications-3",
+        "complications-4"
+      ],
+      "result": "accepted",
+      "assessment": "Anemia and severe circulatory/organ injury distinguished. Clot-risk prevention specifically follows control of bleeding and correction of coagulopathy; no unsupervised anticoagulant adjustment."
+    },
+    {
+      "section": "prevention",
+      "claim_ids": [
+        "prevention-1",
+        "prevention-2",
+        "prevention-3",
+        "prevention-4"
+      ],
+      "result": "accepted",
+      "assessment": "Antenatal preparation, professional birth care and recognition presented without zero-risk promise or duplicating full rare-disease coverage."
+    }
+  ],
+  "evidence_boundaries": [
+    "Separate authoring groups do not prove separate underlying studies. EBCOG comments on WHO with FIGO role overlap; Cochrane summaries share authors and WHO funding; CMA uses international guidance.",
+    "East Kent discloses Ontario adaptation and RCOG references. Ordinary recovery advice can have one adequate source; it is not promoted into independent efficacy evidence.",
+    "RCOG2016 is under review. Current drug decisions are additionally bound to2023/2025 guidelines or the specific product label. NATA access is limited to the actual official indexed thromboprophylaxis passage.",
+    "Region-attributed definitions and institutional intervention thresholds are not patient self-diagnosis tools. Neonatal, placental and clotting subtypes do not automatically gain complete coverage from this overview."
+  ],
+  "validation": {
+    "json_parsed": true,
+    "sections": 14,
+    "claims": 58,
+    "sources": 15,
+    "bilingual_claim_bindings": true,
+    "section_hashes": true,
+    "source_metadata_hashes": true,
+    "candidate_editorial_gate_issues": {},
+    "targeted_change_isolation": "Reversing only the two requested bilingual edits and their support/hash updates exactly reconstructs prior body623971c95712e54d9f65a9f4b29957cdc7af807d6b7961945dfc5f4718d6b8b2 and recordsff14d598ac9ce83ad31f56949d67424a177831481c3a746efd0d4e5fd6d4ae08. Sources unchanged.",
+    "production_records_mutated": false
+  }
+}

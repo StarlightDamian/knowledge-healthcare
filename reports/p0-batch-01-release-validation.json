@@ -1,0 +1,111 @@
+{
+  "checked_at": "2026-10-02",
+  "topics": [
+    "anaphylaxis",
+    "aortic-dissection",
+    "diabetic-ketoacidosis",
+    "meningitis",
+    "postpartum-hemorrhage",
+    "sepsis"
+  ],
+  "candidate_topic_count": 82,
+  "candidate_source_count": 608,
+  "editorial": {
+    "new_sections": 84,
+    "new_claims": 370,
+    "qualified_sections_total": 154,
+    "qualified_claims_total": 691,
+    "qualified_articles_total": 11,
+    "clinician_signoff": false,
+    "independent_reviews": [
+      "reports/p0-anaphylaxis-independent.json",
+      "reports/p0-aortic-dissection-independent.json",
+      "reports/p0-diabetic-ketoacidosis-independent.json",
+      "reports/p0-meningitis-independent.json",
+      "reports/p0-postpartum-hemorrhage-independent.json",
+      "reports/p0-sepsis-independent.json"
+    ]
+  },
+  "content_sha256": {
+    "anaphylaxis": "83a253c6243803a1958a4c7618685d9bcd96d63ca45c35fb3dde71bba7557a52",
+    "aortic-dissection": "92920fe1fe517ebc2108b9568291be16372277371e7227cf0f9993f26a4bd06a",
+    "diabetic-ketoacidosis": "7efeaae8a2dfc3cf688543d77a67dcba862aa19712d011ce507892d8d3d8f075",
+    "meningitis": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+    "postpartum-hemorrhage": "13298c6a96d60437d2d358b18fa5ebdc0f675caff57ff156897dd4e24a096ba5",
+    "sepsis": "33ce6e30f30c1b6aa465b5c0a45957e26fa0b3f907b681b0572c5a743ff60521"
+  },
+  "data_sha256": "12da6ff1f0b85159c48808a24285314d80d43ff969424a53e05bddb77a83b6f7",
+  "checks": {
+    "node": {
+      "passed": 383,
+      "command": "npm test"
+    },
+    "affected_python": {
+      "unique_passed": 108,
+      "command": "python -m unittest tests.test_icd tests.test_priorities tests.test_model tests.test_editorial tests.test_content_audit tests.test_knowledge tests.test_clinical_gate"
+    },
+    "content_and_coverage": {
+      "issues": 0,
+      "covered_categories": 30,
+      "denominator": 13155,
+      "remaining_categories": 13125,
+      "mapping_states": {
+        "pending": 46,
+        "confirmed": 30,
+        "partial": 32
+      }
+    },
+    "server_postgresql_http": {
+      "passed": true,
+      "release_id": "rel-3b466e9824bb2d8f731fc623b3d12d189418437629611f9009b3c0f61eb7348d",
+      "old_release_id": "rel-b49d8637135769e8f2e86a5d73afa6e4def994bb40477a3d1d4aa0a8450c5a7a",
+      "data_sha256": "12da6ff1f0b85159c48808a24285314d80d43ff969424a53e05bddb77a83b6f7",
+      "topics": 82,
+      "source_count": 608,
+      "editorial_records": 154,
+      "production_changed": false,
+      "test_git_commit_is_synthetic": true,
+      "checks": [
+        "existing isolated database preserved; no schema reset",
+        "76 untouched article objects unchanged; five added and anaphylaxis revised",
+        "candidate hidden; duplicate import idempotent",
+        "old/new full snapshots with all sources and evidence records",
+        "publish, rollback and reactivate",
+        "HTTP pinned old77/new82 catalog and154 verified sections",
+        "CN/EN82-row22-column CSV every section exact"
+      ]
+    },
+    "github_ci": {
+      "status": "pending"
+    },
+    "public_https": {
+      "status": "pending"
+    },
+    "generated_inventory": {
+      "command": "python -m src.guide priorities-icd --check",
+      "status": "passed"
+    }
+  },
+  "publication_status": "validated_candidate_not_yet_live",
+  "coverage_target_met": false,
+  "previous_runtime_commit": "d3c9119dd6966bb39b9836f1ba469a3d5861f299",
+  "previous_release_id": "rel-b49d8637135769e8f2e86a5d73afa6e4def994bb40477a3d1d4aa0a8450c5a7a",
+  "priority_counts": {
+    "P0": {
+      "all": 133,
+      "pending": 104
+    },
+    "P1": {
+      "all": 3805,
+      "pending": 3805
+    },
+    "P2": {
+      "all": 9217,
+      "pending": 9216
+    },
+    "P3": {
+      "all": 0,
+      "pending": 0
+    }
+  }
+}

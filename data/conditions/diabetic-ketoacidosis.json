@@ -1,0 +1,332 @@
+{
+  "schema_version": "1.0.0",
+  "id": "diabetic-ketoacidosis",
+  "kind": "condition",
+  "primary_domain": "endocrine_metabolic",
+  "names": {
+    "zh-CN": "糖尿病酮症酸中毒",
+    "en": "Diabetic ketoacidosis"
+  },
+  "aliases": {
+    "zh-CN": [
+      "DKA"
+    ],
+    "en": [
+      "DKA"
+    ]
+  },
+  "symptom_terms": [
+    {
+      "zh-CN": "口渴和尿多",
+      "en": "Thirst and frequent urination"
+    },
+    {
+      "zh-CN": "呕吐腹痛",
+      "en": "Vomiting and abdominal pain"
+    },
+    {
+      "zh-CN": "深快呼吸",
+      "en": "Deep rapid breathing"
+    },
+    {
+      "zh-CN": "意识模糊",
+      "en": "Confusion"
+    }
+  ],
+  "departments": [
+    "emergency",
+    "endocrinology",
+    "pediatrics"
+  ],
+  "reference_urgency": "emergency",
+  "sections": {
+    "summary": {
+      "text": {
+        "zh-CN": "糖尿病酮症酸中毒，简称DKA，是胰岛素不足引起的急性危象：身体难以利用血糖，转而大量分解脂肪，产生过多称为“酮体”的酸性物质。\n\n- 酮体使血液变酸，尿多和呕吐又会造成水分及矿物质丢失。人可能从口渴、疲倦发展到深快呼吸、腹痛和意识异常。\n- DKA以1型糖尿病较常见，但2型及其他类型也会发生，也可能是尚未确诊糖尿病的首次表现。它需要迅速的医疗处理。\n- 这是糖尿病的一种急性并发症，本文说明识别和处理路径；长期糖尿病管理由相关主题承接。一次血糖偏高并不自动等于DKA。",
+        "en": "Diabetic ketoacidosis, or DKA, is an acute crisis caused by insufficient insulin. The body cannot use glucose effectively and breaks down large amounts of fat, producing excess acids called ketones.\n\n- Ketones make the blood acidic, while frequent urination and vomiting deplete water and minerals. Thirst and fatigue can progress to deep rapid breathing, abdominal pain and altered awareness.\n- DKA is more common in type 1 diabetes, but also occurs in type 2 and other types and can be the first sign of previously undiagnosed diabetes. It needs prompt medical care.\n- This is an acute diabetes complication. This topic explains recognition and care pathways, while the diabetes topic covers long-term management. One high glucose reading does not automatically mean DKA."
+      },
+      "source_ids": [
+        "dka-cdc",
+        "dka-consensus",
+        "dka-mayo-symptoms",
+        "dka-mayo-treatment",
+        "dka-nhs"
+      ],
+      "support_status": "verified"
+    },
+    "causes_risks": {
+      "text": {
+        "zh-CN": "直接问题是可用胰岛素不够，诱因则是把身体推向这种失衡的事件。\n\n- 感染或其他急病会增加对抗胰岛素作用的应激激素，因此即使吃得少，身体也可能需要不同于平时的胰岛素安排。\n- 漏用胰岛素、剂量不足或泵的输注中断可造成胰岛素缺口。出现高血糖时既要检查设备，也要考虑感染等原因，而不是把所有问题都归咎于泵。\n- SGLT2抑制剂是通过增加尿糖排出来降低血糖的一类药，如达格列净和恩格列净。它们可在少数使用者中增加DKA风险；这时血糖未必特别高。禁食、脱水等情形需要提前讨论用药安排。\n- 无法负担或获得胰岛素、情绪困扰以及照护支持不足也会影响治疗连续性。复发预防应解决这些实际困难，不只是重复提醒“按时用药”。",
+        "en": "The immediate problem is insufficient available insulin; a trigger is the event that pushes the body into that imbalance.\n\n- Infection or other acute illness increases stress hormones that oppose insulin. Insulin needs can therefore change even when a person eats less.\n- Missed insulin, insufficient doses or interrupted pump delivery can create an insulin gap. High glucose calls for checking delivery as well as causes such as infection, rather than assuming every episode is a pump fault.\n- SGLT2 inhibitors are a class of medicines that lower blood glucose by increasing glucose loss in urine. Examples include dapagliflozin and empagliflozin. They can increase DKA risk in some users, sometimes without very high glucose. Fasting and dehydration call for advance discussion of medication plans.\n- Insulin cost or access, emotional distress and inadequate support can interrupt treatment. Preventing recurrence includes addressing these practical barriers, not simply repeating reminders to take medicines."
+      },
+      "source_ids": [
+        "dka-cdc",
+        "dka-cdc-sick",
+        "dka-consensus",
+        "dka-cuh-pump",
+        "dka-mayo-symptoms",
+        "dka-mhra",
+        "dka-nhs-scotland-sglt2",
+        "dka-niddk"
+      ],
+      "support_status": "verified"
+    },
+    "red_flags": {
+      "text": {
+        "zh-CN": "糖尿病患者出现持续呕吐、喝下的水也留不住、深而急的呼吸、明显困倦或意识模糊，应立即急诊；严重呼吸或意识异常时呼叫急救。\n\n- 即使没有糖尿病诊断，若新出现明显口渴、尿多，同时伴腹痛、呕吐、果味口气或困倦，也应立即求医，儿童尤其不能只当作肠胃不适。\n- 已有高酮体读数且症状加重，或无法联系治疗团队获得及时指导，应去急诊。不要为了等待再次测量而延误严重症状的处理。\n- 正在使用SGLT2抑制剂者有上述表现，也要按疑似DKA就医；接近目标范围的血糖不能把这种药物相关情况排除。",
+        "en": "A person with diabetes needs emergency care for persistent vomiting, inability to keep fluids down, deep rapid breathing, marked drowsiness or confusion. Call emergency services for major breathing or awareness changes.\n\n- Even without a diabetes diagnosis, new marked thirst and frequent urination with abdominal pain, vomiting, fruity breath or drowsiness need immediate medical assessment. In children, do not assume this is only a stomach illness.\n- Go to emergency care if ketones are high and symptoms worsen, or if timely advice from the care team is unavailable. Do not delay treatment of severe symptoms while waiting for another measurement.\n- People taking an SGLT2 inhibitor need assessment for possible DKA when these symptoms occur. Glucose near the target range does not exclude this medication-associated presentation."
+      },
+      "source_ids": [
+        "dka-ada-ketones",
+        "dka-cdc",
+        "dka-cdc-sick",
+        "dka-diabetes-uk",
+        "dka-mayo-treatment",
+        "dka-merck",
+        "dka-mhra",
+        "dka-nhs"
+      ],
+      "support_status": "verified"
+    },
+    "care": {
+      "text": {
+        "zh-CN": "就医级别取决于症状、酮体、血糖变化及既定生病日计划，而不是只盯一个血糖数字。\n\n- 出现危险信号按急救处理；症状轻但血糖持续高于目标、按既定方案处理后仍不下降，或酮体升高时，应立即联系糖尿病团队。\n- 在英国，NHS与Diabetes UK把血酮高于3 mmol/L列为需要立即医疗帮助的情况；个人计划可能在更低数值就要求行动，不能把3当成等待线。\n- 英国与美国患者资料的家庭分流阈值并不完全相同，且家庭预警不同于医院确诊。提前让团队写明测量方法、何时复测、何时联系和何时急诊。\n- 症状已缓解后仍需按出院计划复诊，回顾诱因及防止再次发作；再次出现呕吐、呼吸或意识异常不能等到预约日期。",
+        "en": "The care level depends on symptoms, ketones, glucose changes and the agreed sick-day plan, rather than on one glucose number alone.\n\n- Use emergency care for danger signs. With milder symptoms, contact the diabetes team promptly if glucose stays above target despite the agreed plan or ketones rise.\n- In the UK, NHS and Diabetes UK identify blood ketones above 3 mmol/L as requiring immediate medical help. An individual plan may require action at a lower level; 3 is not a threshold to wait for.\n- UK and US patient resources do not use identical home-triage thresholds, and a home warning is different from a hospital diagnosis. Have the team document how to test, when to repeat testing, when to call and when to seek emergency care.\n- After symptoms resolve, follow the discharge plan to review triggers and prevent recurrence. New vomiting or breathing or awareness changes should not wait for the scheduled appointment."
+      },
+      "source_ids": [
+        "dka-ada",
+        "dka-ada-ketones",
+        "dka-consensus",
+        "dka-diabetes-uk",
+        "dka-mayo-symptoms",
+        "dka-nhs"
+      ],
+      "support_status": "verified"
+    },
+    "diagnosis": {
+      "text": {
+        "zh-CN": "诊断要把糖尿病背景或高血糖、酮体升高和血液酸度结合起来；家庭仪器主要帮助发现危险并及时求助。\n\n- 医生会询问胰岛素使用、泵是否工作、近期感染或手术、进食饮水和SGLT2等药物，并检查呼吸、意识与脱水程度。\n- 抽血测血糖、酮体、电解质及血气可评估酸中毒和钾等矿物质变化。必要时通过心电图、尿液或其他检查寻找诱因和并发问题。\n- 血酮检测更接近当前状态；尿酮会滞后，恢复期还可能持续阳性。因此不能只按一次尿酮结果决定是否已经恢复。\n- 服用SGLT2药物或在妊娠等情况下，DKA可以伴随并不显著升高的血糖。医生仍需结合症状、酮体和酸度判断。",
+        "en": "Diagnosis combines diabetes history or hyperglycemia, elevated ketones and blood acidity. Home devices mainly help identify danger and trigger timely help.\n\n- Clinicians ask about insulin use, pump delivery, infection or surgery, food and fluid intake and medicines such as SGLT2 inhibitors, and assess breathing, awareness and dehydration.\n- Blood glucose, ketones, electrolytes and blood gases assess acidosis and changes in minerals such as potassium. ECG, urine tests or other investigations may identify triggers and complications.\n- Blood ketone testing more closely reflects the current state. Urine ketones lag and may remain positive during recovery, so one urine result cannot determine whether DKA has resolved.\n- With SGLT2 treatment or circumstances such as pregnancy, DKA can occur without marked hyperglycemia. Symptoms, ketones and acidity still need to be assessed together."
+      },
+      "source_ids": [
+        "dka-consensus",
+        "dka-diabetes-uk",
+        "dka-mayo-treatment",
+        "dka-merck"
+      ],
+      "support_status": "verified"
+    },
+    "differentials": {
+      "text": {
+        "zh-CN": "呕吐、乏力和意识变化并不只见于DKA；区分原因会影响治疗。\n\n- 高渗高血糖状态，简称HHS，主要是血糖很高、血液过度浓缩和脱水，通常没有同样明显的酮症酸中毒；两者也可能混合出现。\n- 低血糖也可导致意识模糊或昏迷，但需要不同处理。用血糖检测及医疗评估区分，比“糖尿病发作”这个笼统说法更有用。\n- 禁食和极低碳水饮食可产生酮体，但有酮体不等于已经发生DKA；长期饮酒相关酸中毒等也需要鉴别。医生结合病史和酸度，而不是仅看“酮体阳性”。\n- DKA可引起腹痛，也可能由胰腺炎等腹部疾病诱发。酸中毒纠正后腹痛仍不缓解时，需要继续查找原因。",
+        "en": "Vomiting, weakness and altered awareness are not unique to DKA. Distinguishing causes changes treatment.\n\n- Hyperosmolar hyperglycemic state, or HHS, mainly involves very high glucose, concentrated blood and dehydration, usually without the same marked ketoacidosis. DKA and HHS can overlap.\n- Low blood glucose can also cause confusion or unconsciousness but needs different treatment. Glucose testing and medical assessment are more useful than the vague label “diabetic attack.”\n- Fasting and very-low-carbohydrate diets can produce ketones, but ketones alone do not establish DKA. Alcohol-related ketoacidosis is another differential. Clinicians consider the history and acidity, not merely a positive ketone result.\n- DKA can cause abdominal pain and can also be triggered by abdominal illness such as pancreatitis. Pain persisting after acidosis is corrected requires further investigation."
+      },
+      "source_ids": [
+        "dka-consensus",
+        "dka-diabetes-uk",
+        "dka-diabetes-uk-ketones",
+        "dka-em-text",
+        "dka-mayo-symptoms",
+        "dka-niddk"
+      ],
+      "support_status": "verified"
+    },
+    "treatment": {
+      "text": {
+        "zh-CN": "医院治疗同时补回胰岛素、水和矿物质，并处理感染等诱因。单纯让血糖数字下降还不够。\n\n- 补液恢复循环和肾脏供血；胰岛素抑制继续产生酮体。治疗时反复抽血和观察呼吸、意识及尿量，用结果调整方案。\n- 血糖往往先下降，酮体和酸中毒稍后才纠正。医院有时一边补葡萄糖、一边继续胰岛素，目的是防止低血糖并继续清除酮体。\n- 严重意识异常或合并其他危重疾病时可能需要重症监护。部分轻度病例可在具备密切监护条件的急诊或病房治疗，这不等于确诊后可以自行在家处理。",
+        "en": "Hospital treatment replaces insulin, fluids and minerals and treats triggers such as infection. Lowering the glucose number alone is not enough.\n\n- Fluids restore circulation and kidney perfusion; insulin stops further ketone production. Repeated blood tests and observation of breathing, awareness and urine output guide adjustments.\n- Glucose often falls before ketones and acidosis resolve. Hospitals may therefore give glucose while continuing insulin, preventing hypoglycemia while ketones are cleared.\n- Severe awareness changes or another critical illness may require intensive care. Some mild cases can be treated in an emergency or ward setting with close monitoring; this does not mean confirmed DKA should be self-treated at home."
+      },
+      "source_ids": [
+        "dka-cdc",
+        "dka-consensus",
+        "dka-merck",
+        "dka-rch"
+      ],
+      "support_status": "verified"
+    },
+    "medications": {
+      "text": {
+        "zh-CN": "胰岛素是纠正DKA的核心药物，但其剂量和补钾必须结合实时检查安排。\n\n- 胰岛素让血糖下降，也会使钾进入细胞。治疗中可能出现低血糖或低钾，后者影响心脏和肌肉，因此要反复监测并按结果补充。\n- 若感染是诱因，医生还会处理感染；抗生素不是直接清除酮体的药，也不是每次DKA都需要。\n- 怀疑SGLT2相关DKA时，需要停用相关药物并立即就医；DKA恢复后不要自行重新服用，是否恢复须由医生复核诱因和获益风险。不要把“血糖不太高”当作继续服药的理由。\n- 生病时不要因为没吃饭就自行停掉维持所需的胰岛素；使用预先约定的生病日方案，剂量不明确时及时联系团队。",
+        "en": "Insulin is central to reversing DKA, but its dose and potassium replacement depend on current test results.\n\n- Insulin lowers glucose and moves potassium into cells. Treatment can cause hypoglycemia or low potassium, which affects the heart and muscles; repeated monitoring and appropriate replacement are therefore needed.\n- If infection is the trigger, it also needs treatment. Antibiotics do not directly clear ketones and are not required for every episode of DKA.\n- If SGLT2-associated DKA is suspected, stop the implicated medicine and seek immediate medical care. Do not restart it yourself after DKA resolves; a clinician must review triggers and benefits and risks. Modest glucose is not a reason to dismiss the concern.\n- Do not independently stop needed background insulin just because illness prevents eating. Follow the agreed sick-day plan and contact the team promptly when dose instructions are unclear."
+      },
+      "source_ids": [
+        "dka-ada-ketones",
+        "dka-cdc",
+        "dka-consensus",
+        "dka-mayo-symptoms",
+        "dka-mayo-treatment",
+        "dka-mhra",
+        "dka-nhs",
+        "dka-rch"
+      ],
+      "support_status": "verified"
+    },
+    "diet": {
+      "text": {
+        "zh-CN": "进食和饮水要配合糖尿病治疗；已经出现DKA时，食物或饮料不能代替医院的胰岛素和补液。\n\n- 生病但仍能安全饮水时，按计划补水；若不能正常吃饭，团队可能安排容易进食的含碳水食物或饮品，并同步调整胰岛素。不能一概改成完全不吃碳水。\n- 普通低水平酮体与DKA不同，但服用SGLT2药物或胰岛素不足时，长时间禁食和极低碳水饮食会增加风险。准备明显改变饮食前先讨论用药和酮体监测。\n- 持续呕吐、喝下的水也留不住时应急诊，不要反复尝试饮料而延误处理；合并心肾疾病者的补液量还需专门评估。",
+        "en": "Food and fluids must fit the diabetes plan. Once DKA develops, foods or drinks cannot replace hospital insulin and fluid treatment.\n\n- When ill but able to drink safely, maintain fluids according to the plan. If meals are difficult, the team may arrange easy-to-take carbohydrate foods or drinks alongside insulin adjustments. Eliminating all carbohydrate is not a universal sick-day solution.\n- Low-level ketosis differs from DKA, but prolonged fasting and very-low-carbohydrate diets increase concern with SGLT2 use or insufficient insulin. Discuss medicines and ketone monitoring before a major dietary change.\n- Persistent vomiting with inability to keep fluids down calls for emergency care rather than repeated attempts with drinks. People with heart or kidney disease also need specific assessment of fluid replacement."
+      },
+      "source_ids": [
+        "dka-ada-ketones",
+        "dka-cdc",
+        "dka-cdc-sick",
+        "dka-consensus",
+        "dka-diabetes-uk-ketones",
+        "dka-duk-sick-food",
+        "dka-merck",
+        "dka-mhra",
+        "dka-nhs",
+        "dka-renal-review"
+      ],
+      "support_status": "verified"
+    },
+    "daily_care": {
+      "text": {
+        "zh-CN": "日常最有用的准备是一份能执行的生病日计划，写清监测、用药、联系方式和升级就医条件。\n\n- 把血糖仪、血酮仪或尿酮试纸、胰岛素及所需耗材准备好，并检查有效期；外出或旅行也要考虑这些用品的连续供应。\n- 生病时记录血糖和酮体、已用胰岛素、进食饮水及呕吐情况，按个人计划复测；联系医生时把这些记录一起提供。\n- 泵使用者按培训检查输注部位和管路，明确泵中断时的备用注射安排。不要在没有剂量指导时凭网页自行反复追加胰岛素。\n- 出现呼吸困难、意识变化或无法留住液体时，停止只在家处理并进入急救路径；若自己思考不清，让身边人帮助联络医疗服务。",
+        "en": "The most useful preparation is a practical sick-day plan stating monitoring, medicine instructions, contact details and when to escalate care.\n\n- Keep glucose and ketone testing equipment, insulin and required supplies available, and check expiry dates. Plan uninterrupted access when away from home or traveling.\n- During illness, record glucose and ketones, insulin taken, intake and vomiting, and repeat checks according to the individual plan. Share these records when seeking advice.\n- Pump users should check the infusion site and tubing as trained and know the backup injection plan for interrupted delivery. Do not repeatedly add insulin from a webpage without dose instructions.\n- Move from home care to emergency care for breathing difficulty, awareness changes or inability to keep fluids down. If thinking is impaired, ask someone nearby to help contact medical services."
+      },
+      "source_ids": [
+        "dka-ada",
+        "dka-ada-ketones",
+        "dka-cdc",
+        "dka-cdc-sick",
+        "dka-chelwest-pump",
+        "dka-cuh-pump",
+        "dka-mayo-treatment",
+        "dka-nhs",
+        "dka-niddk"
+      ],
+      "support_status": "verified"
+    },
+    "special_populations": {
+      "text": {
+        "zh-CN": "儿童、孕妇及合并心肾疾病的人，表现或治疗耐受性可能与一般成人不同。\n\n- 儿童可能尚未确诊糖尿病，发病又较快。出现口渴尿多后又有呕吐、呼吸异常或困倦，应立即评估；儿童治疗需儿童团队，不能照搬成人补液或胰岛素方案。\n- 妊娠可增加酮症风险，并可能在血糖没有显著升高时出现DKA。已有糖尿病的孕妇应与糖尿病及产科团队明确生病、呕吐和酮体升高时的求助路径。\n- 老人及心力衰竭、严重肾病患者可能不耐受快速大量补液，医院需要更频繁地评估循环和液体负担。不能把一般补水建议理解成强迫大量喝水。\n- 对买不到胰岛素、视力或操作能力受限、情绪压力很大的人，应安排实际的供药和照护支持。复发不应被简单解释为“不配合”。",
+        "en": "Children, pregnant people and those with heart or kidney disease can differ from other adults in presentation or treatment tolerance.\n\n- Children may not yet have a diabetes diagnosis and can worsen quickly. Thirst and frequent urination followed by vomiting, abnormal breathing or drowsiness need prompt assessment. Pediatric teams use child-specific treatment, not copied adult fluid or insulin regimens.\n- Pregnancy can increase ketosis risk, and DKA may occur without marked hyperglycemia. Pregnant people with diabetes should agree on illness, vomiting and elevated-ketone care pathways with diabetes and obstetric teams.\n- Older adults and people with heart failure or severe kidney disease may not tolerate rapid large fluid volumes. Hospitals assess circulation and fluid burden more frequently; general hydration advice does not mean forcing large drinks.\n- People without reliable insulin access, with visual or practical difficulties, or under major emotional strain need concrete supply and care support. Recurrence should not be reduced to “noncompliance.”"
+      },
+      "source_ids": [
+        "dka-consensus",
+        "dka-diabetes-uk",
+        "dka-em-text",
+        "dka-merck",
+        "dka-nhs",
+        "dka-nice-child",
+        "dka-nice-pregnancy",
+        "dka-niddk",
+        "dka-rch",
+        "dka-renal-review"
+      ],
+      "support_status": "verified"
+    },
+    "prognosis_followup": {
+      "text": {
+        "zh-CN": "及时治疗后DKA可以纠正，但诱因未处理、用药中断或缺乏监测支持时仍可能复发。\n\n- 出院前医生需要确认酮体和酸度改善、能够进食饮水，并安排住院治疗到日常胰岛素方案的衔接；单次血糖好看不是唯一出院依据。\n- 复诊要回顾这次因何发生、设备和注射操作是否可靠、测酮和生病日计划是否会用，以及有没有经济或心理困难。\n- 再次口渴尿多、酮体上升或血糖按计划处理仍不下降时，应提前联系团队；呕吐留不住水、呼吸或意识异常则立即急诊。",
+        "en": "DKA can resolve with prompt treatment, but may recur when triggers, interrupted treatment or inadequate monitoring support remain.\n\n- Before discharge, clinicians assess ketone and acidity improvement, ability to eat and drink, and transition to the regular insulin plan. One satisfactory glucose reading is not the sole discharge criterion.\n- Follow-up reviews the trigger, reliability of device and injection technique, understanding of ketone checks and sick-day rules, and financial or psychological barriers.\n- Contact the team earlier for renewed thirst and frequent urination, rising ketones or glucose not responding to the plan. Inability to keep fluids down, abnormal breathing or awareness changes requires emergency care."
+      },
+      "source_ids": [
+        "dka-ada-ketones",
+        "dka-consensus",
+        "dka-cuh-pump",
+        "dka-diabetes-uk",
+        "dka-mayo-treatment",
+        "dka-nhs",
+        "dka-niddk"
+      ],
+      "support_status": "verified"
+    },
+    "complications": {
+      "text": {
+        "zh-CN": "DKA本身的脱水和酸中毒，以及纠正过程中体内成分的变化，都可能影响重要器官。\n\n- 严重DKA可导致意识下降、昏迷甚至死亡，因此出现深快呼吸或明显困倦时需要尽快处理。\n- 治疗中的低血糖和低钾是需要主动监测的问题。低钾可能干扰心律及肌肉工作，医院会根据检查调整胰岛素、液体和补充量。\n- 脑水肿指脑组织肿胀。有临床影响的脑水肿是严重并发症，但并非每人都会发生，儿童更需警惕。治疗中意识或神经状态变化需要立即告知医护。",
+        "en": "Both dehydration and acidosis from DKA and shifts during treatment can affect vital organs.\n\n- Severe DKA can cause reduced awareness, coma and death, making deep rapid breathing or marked drowsiness urgent warning signs.\n- Hypoglycemia and low potassium require active monitoring during treatment. Low potassium can disturb heart rhythm and muscle function, so insulin, fluids and replacement are adjusted to test results.\n- Cerebral edema means swelling of brain tissue. Clinically significant cerebral edema is a serious complication, but does not occur in everyone, and children warrant particular attention. Changes in awareness or neurological state during treatment must be reported immediately."
+      },
+      "source_ids": [
+        "dka-cdc-sick",
+        "dka-consensus",
+        "dka-mayo-symptoms",
+        "dka-merck",
+        "dka-rch"
+      ],
+      "support_status": "verified"
+    },
+    "prevention": {
+      "text": {
+        "zh-CN": "预防可以分为及时识别首次糖尿病、避免胰岛素中断，以及在生病时及早处理失衡。\n\n- 持续口渴、尿多或体重异常下降应接受糖尿病评估；已经伴呕吐、异常呼吸或困倦时直接按急症处理。\n- 按既定方案使用胰岛素，并提前解决旅行、设备故障或药物短缺的备用办法。把家属或照护者也纳入识别症状和联络安排。\n- 使用SGLT2药物者，在手术、禁食或严重急病前后要问清暂停和恢复规则；普通“生病照常吃药”的建议不能覆盖每一种降糖药。\n- 每次DKA之后都应补齐测酮、注射操作及生病日教育，并处理导致中断治疗的困难。这些措施能减少风险，不能保证今后绝不发生。",
+        "en": "Prevention includes recognizing new diabetes, avoiding interruption of insulin, and addressing imbalance early during illness.\n\n- Persistent thirst, frequent urination or unexplained weight loss calls for diabetes assessment. With vomiting, abnormal breathing or drowsiness, use the emergency pathway.\n- Use insulin according to the agreed plan and prepare for travel, equipment failure or supply shortages. Include relatives or carers in recognizing symptoms and making contact.\n- People taking an SGLT2 medicine need clear hold and restart instructions around surgery, fasting or serious illness. Generic advice to continue all medicines during illness does not fit every glucose-lowering drug.\n- After each DKA episode, reinforce ketone testing, injection skills and sick-day education and address barriers that interrupted treatment. These steps reduce risk without guaranteeing that DKA never recurs."
+      },
+      "source_ids": [
+        "dka-cdc",
+        "dka-consensus",
+        "dka-cuh-pump",
+        "dka-diabetes-uk",
+        "dka-mhra",
+        "dka-nhs"
+      ],
+      "support_status": "verified"
+    }
+  },
+  "source_ids": [
+    "dka-ada",
+    "dka-ada-ketones",
+    "dka-cdc",
+    "dka-cdc-sick",
+    "dka-chelwest-pump",
+    "dka-consensus",
+    "dka-cuh-pump",
+    "dka-diabetes-uk",
+    "dka-diabetes-uk-ketones",
+    "dka-duk-sick-food",
+    "dka-em-text",
+    "dka-mayo-symptoms",
+    "dka-mayo-treatment",
+    "dka-merck",
+    "dka-mhra",
+    "dka-nhs",
+    "dka-nhs-scotland-sglt2",
+    "dka-nice-child",
+    "dka-nice-pregnancy",
+    "dka-niddk",
+    "dka-rch",
+    "dka-renal-review"
+  ],
+  "related_ids": [
+    "type-2-diabetes"
+  ],
+  "tags": [
+    "not_classified_as_infectious"
+  ],
+  "clinical_region": "MULTI_REGION",
+  "coding": [],
+  "review": {
+    "status": "editorial_draft",
+    "reviewers": [],
+    "medical_reviewed_at": null,
+    "editorial_updated_at": "2026-10-02",
+    "next_editorial_review_due": "2027-01-02"
+  },
+  "localizations": {
+    "zh-CN": {
+      "status": "draft",
+      "clinician_reviewed": false
+    },
+    "en": {
+      "status": "draft",
+      "clinician_reviewed": false
+    }
+  },
+  "evidence_certainty": "not_formally_graded",
+  "limitations": {
+    "zh-CN": "各节保留来源定位和地区条件；编辑证据记录中的未完成项见来源与编辑信息。",
+    "en": "Section sources and regional conditions are retained; unfinished evidence checks are recorded in editorial information."
+  },
+  "study_ids": [],
+  "advanced_fields": {
+    "prevalence_estimate": null,
+    "incidence_estimate": null,
+    "formal_diagnostic_criteria": null,
+    "quantitative_prognosis": null,
+    "transmission_details": null,
+    "screening_intervals": null,
+    "regional_drug_approval": null,
+    "procedure_indications": null
+  },
+  "advanced_fields_status": "not_yet_curated"
+}

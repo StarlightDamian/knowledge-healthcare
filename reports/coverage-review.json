@@ -1,24 +1,24 @@
 {
   "reviewed_at": "2026-10-02",
   "decision": "complete_coverage_target_not_passed",
-  "measured": 0.0006081337894336754,
+  "measured": 0.002280501710376283,
   "target": 1.0,
   "classification": "ICD-11 MMS",
   "release": "2026-01",
   "denominator": 13155,
   "snapshot_status": "frozen_verified_official_bytes",
-  "mapping_status": "47_pending_8_confirmed_5_partial",
+  "mapping_status": "46_pending_30_confirmed_32_partial",
   "counts": {
-    "existing_topics": 77,
-    "condition_topics": 72,
+    "existing_topics": 82,
+    "condition_topics": 77,
     "symptom_topics": 5,
-    "title_only_backlog": 193,
+    "title_only_backlog": 189,
     "topics_with_coding": 0,
-    "confirmed_category_mappings": 8,
+    "confirmed_category_mappings": 30,
     "clinically_reviewed_topics": 0,
-    "verified_sections": 70
+    "verified_sections": 154
   },
-  "scope": "当前77篇正文、193标题与56地图单元；正文、证据核验与ICD类别完整覆盖分别统计。",
+  "scope": "当前82篇正文、189标题与56地图单元；正文、证据核验与ICD类别完整覆盖分别统计。",
   "method": "逐项核对现有主题身份，列出缺少独立正文的已知病种；mentioned_in_topics 仅按所列术语检索中英 sections.text 的结果，不表示对应主题完整覆盖该病种。",
   "known_urgent_gaps": [
     {
@@ -31,6 +31,12 @@
       ],
       "backlog_ids": [],
       "mentioned_in_topics": [
+        {
+          "id": "aortic-dissection",
+          "sections": [
+            "differentials"
+          ]
+        },
         {
           "id": "chest-pain",
           "sections": [
@@ -70,6 +76,12 @@
         },
         {
           "id": "pulmonary-embolism",
+          "sections": [
+            "differentials"
+          ]
+        },
+        {
+          "id": "sepsis",
           "sections": [
             "differentials"
           ]
@@ -145,7 +157,9 @@
         "zh-CN": "脓毒症",
         "en": "Sepsis"
       },
-      "dedicated_topic_ids": [],
+      "dedicated_topic_ids": [
+        "sepsis"
+      ],
       "backlog_ids": [],
       "mentioned_in_topics": [
         {
@@ -159,23 +173,30 @@
           "sections": [
             "complications"
           ]
+        },
+        {
+          "id": "meningitis",
+          "sections": [
+            "differentials",
+            "complications"
+          ]
         }
       ],
       "matching_terms": [
         "脓毒症",
         "sepsis"
       ],
-      "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
+      "conclusion": "62项双语主张通过独立编辑核验；确认代码1G40、1G41。其余候选逐类保留部分覆盖，无医学签审。"
     },
     {
       "names": {
         "zh-CN": "脑膜炎",
         "en": "Meningitis"
       },
-      "dedicated_topic_ids": [],
-      "backlog_ids": [
-        "planned-058"
+      "dedicated_topic_ids": [
+        "meningitis"
       ],
+      "backlog_ids": [],
       "mentioned_in_topics": [
         {
           "id": "tension-headache",
@@ -188,17 +209,17 @@
         "脑膜炎",
         "meningitis"
       ],
-      "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
+      "conclusion": "63项双语主张通过独立编辑核验；确认代码1C1C.0、1C8E.Z、1D01.0Z、1D01.Z。其余候选逐类保留部分覆盖，无医学签审。"
     },
     {
       "names": {
         "zh-CN": "主动脉夹层",
         "en": "Aortic dissection"
       },
-      "dedicated_topic_ids": [],
-      "backlog_ids": [
-        "planned-031"
+      "dedicated_topic_ids": [
+        "aortic-dissection"
       ],
+      "backlog_ids": [],
       "mentioned_in_topics": [
         {
           "id": "myocardial-infarction",
@@ -211,23 +232,23 @@
         "主动脉夹层",
         "aortic dissection"
       ],
-      "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
+      "conclusion": "59项双语主张通过独立编辑核验；确认代码BD50.01、BD50.0Z、BD50.11、BD50.1Z、BD50.21、BD50.2Z。其余候选逐类保留部分覆盖，无医学签审。"
     },
     {
       "names": {
         "zh-CN": "糖尿病酮症酸中毒",
         "en": "Diabetic ketoacidosis"
       },
-      "dedicated_topic_ids": [],
-      "backlog_ids": [
-        "planned-074"
+      "dedicated_topic_ids": [
+        "diabetic-ketoacidosis"
       ],
+      "backlog_ids": [],
       "mentioned_in_topics": [],
       "matching_terms": [
         "糖尿病酮症酸中毒",
         "diabetic ketoacidosis"
       ],
-      "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
+      "conclusion": "64项双语主张通过独立编辑核验；确认代码5A22.0、5A22.3。其余候选逐类保留部分覆盖，无医学签审。"
     },
     {
       "names": {
@@ -267,17 +288,17 @@
         "zh-CN": "产后出血",
         "en": "Postpartum haemorrhage"
       },
-      "dedicated_topic_ids": [],
-      "backlog_ids": [
-        "planned-163"
+      "dedicated_topic_ids": [
+        "postpartum-hemorrhage"
       ],
+      "backlog_ids": [],
       "mentioned_in_topics": [],
       "matching_terms": [
         "产后出血",
         "postpartum haemorrhage",
         "postpartum hemorrhage"
       ],
-      "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
+      "conclusion": "58项双语主张通过独立编辑核验；确认代码JA43.1、JA43.2、JA43.Z。其余候选逐类保留部分覆盖，无医学签审。"
     },
     {
       "names": {
@@ -296,7 +317,7 @@
       "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
     }
   ],
-  "remaining_list_status": "13,147个未完整类别保存于reports/icd-remaining-gaps.json.gz；原10项急危重清单已有4篇独立核验正文，另外6篇继续补充。慢性肺栓塞与部分视网膜类别仍有明确知识或分类缺口。",
+  "remaining_list_status": "13,125个未完整类别保存于reports/icd-remaining-gaps.json.gz；最初10项急危重缺口已有9篇独立核验正文，一氧化碳中毒仍待补齐。具体亚型与残余类别按逐类记录保留缺口。",
   "roadmap": "docs/coverage-audit-and-roadmap.md",
   "sources": [
     "https://icd.who.int/docs/icd-api/SupportedClassifications/",

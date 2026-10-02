@@ -1,0 +1,1637 @@
+{
+  "schema_version": 1,
+  "review_id": "p0-anaphylaxis-independent",
+  "reviewer": "/root/mi_icd_scope",
+  "author": "/root/priority_medical_rules",
+  "reviewed_at": "2026-10-02",
+  "review_type": "one_independent_substantive_review_and_two_targeted_binding_rechecks",
+  "verdict": "accepted",
+  "medical_reviewed": false,
+  "target": {
+    "path": "drafts/p0-01/anaphylaxis.json",
+    "body_canonical_sha256": "af7fe2f5b8ed37d0e7204985daf8f6bc4d800794eea703baf0279f53c1e1077b",
+    "records_canonical_sha256": "d9b0a83e516b74dbb644e67e93738bbb45a91aa48922e8625abf79352f243a8a",
+    "sources_canonical_sha256": "5932dd0304a249e3e212716e555f268b2d6ba9acd94ae13fbb384e09d31861bb"
+  },
+  "scope": {
+    "section_count": 14,
+    "claim_count": 64,
+    "source_count": 19,
+    "inherited_claim_count": 0,
+    "all_bilingual_claims_read": true,
+    "no_draft_mutation": true
+  },
+  "actual_source_reads": [
+    {
+      "source_id": "anaphylaxis-nhs",
+      "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+      "accessed_at": "2026-10-02",
+      "locator": "Symptoms; immediate action; treatment/observation; prevention and injector preparation",
+      "source_metadata_sha256": "019ece4f1e84a6bf880b4d382472891cdf4f6112280dc221ccb4675fedd46d62",
+      "access_status": "original_relevant_sections_read",
+      "independence_group": "UK-NHS"
+    },
+    {
+      "source_id": "anaphylaxis-p0-aaaai",
+      "url": "https://www.aaaai.org/conditions-treatments/allergies/anaphylaxis",
+      "accessed_at": "2026-10-02",
+      "locator": "Symptoms; treatment and management; written plan, epinephrine and carers (updated2026-08-13)",
+      "source_metadata_sha256": "9c56777ec46db0d8646d6c494ed98403a194439f61e80a6354318d688cdc9806",
+      "access_status": "original_relevant_sections_read",
+      "independence_group": "US-AAAAI"
+    },
+    {
+      "source_id": "anaphylaxis-p0-ascia",
+      "url": "https://allergy.org.au/hp/anaphylaxis/acute-management-guidelines",
+      "accessed_at": "2026-10-02",
+      "locator": "Definition/recognition; patient positioning; pregnancy/infants/asthma; adjuncts; observation; discharge; references and footer Content updated September2026 (linked PDFs may say October)",
+      "source_metadata_sha256": "882384c9ba6a67771682822f4ad4435409fd15fa46db659076e2763f03758e40",
+      "access_status": "original_relevant_sections_read",
+      "independence_group": "AU-ASCIA"
+    },
+    {
+      "source_id": "anaphylaxis-p0-adam",
+      "url": "https://medlineplus.gov/ency/article/000844.htm",
+      "accessed_at": "2026-10-02",
+      "locator": "Symptoms; treatment and Do not; complications; reviewed2026-01-20, ADAM/Verimed authorship",
+      "source_metadata_sha256": "fb1d1d23045f0eb1b947fc25220af926657c68dcba4caf362e2f8f3f327b00f5",
+      "access_status": "original_relevant_sections_read",
+      "independence_group": "US-ADAM"
+    },
+    {
+      "source_id": "anaphylaxis-p0-rcuk",
+      "url": "https://www.resus.org.uk/sites/default/files/2021-05/Emergency%20Treatment%20of%20Anaphylaxis%20May%202021_0.pdf",
+      "accessed_at": "2026-10-02",
+      "locator": "May2021 PDF printedpp20–23 recognition/differential,26–34 trigger/CPR/pregnancy/drugs,41–45 tryptase and follow-up",
+      "source_metadata_sha256": "507e97210170c5275454b4d233e577d083b532f07a057b10f40ee359381579af",
+      "access_status": "original_relevant_sections_read",
+      "independence_group": "UK-RCUK"
+    },
+    {
+      "source_id": "anaphylaxis-p0-wao",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/",
+      "accessed_at": "2026-10-02",
+      "locator": "2020 guidance: definition; differentialTable3; pathogenesis; triggers/cofactorsTables4–5; acute treatment; tryptase; long-termTable8; society endorsement and shared evidence",
+      "source_metadata_sha256": "43bc2b5908c7325b3f47f9f6a8c60259aea147d56fc867b22873c2f591682fbe",
+      "access_status": "original_relevant_sections_read",
+      "independence_group": "WAO"
+    },
+    {
+      "source_id": "anaphylaxis-p0-drug",
+      "url": "https://www.aaaai.org/conditions-treatments/allergies/drug-allergy",
+      "accessed_at": "2026-10-02",
+      "locator": "Symptoms/diagnosis; treatment and management, penicillin clinic challenge/desensitisation, side-effects distinction (2026-07-08)",
+      "source_metadata_sha256": "f0c3e834399ea10ce5ca6891e863158a8b1341af52cefebcebe8d20b7cd1842a",
+      "access_status": "original_relevant_sections_read",
+      "independence_group": "US-AAAAI"
+    },
+    {
+      "source_id": "anaphylaxis-p0-food",
+      "url": "https://www.aaaai.org/conditions-treatments/allergies/food-allergy",
+      "accessed_at": "2026-10-02",
+      "locator": "Triggers; food allergy versus intolerance; diagnosis; management; OIT/omalizumab with continuing avoidance (2026-05-12)",
+      "source_metadata_sha256": "feb8a13b05870316cb4a7a53d418b125d8c9e596de1be4d0e31944dd591a8de5",
+      "access_status": "original_relevant_sections_read",
+      "independence_group": "US-AAAAI"
+    },
+    {
+      "source_id": "anaphylaxis-p0-mcas",
+      "url": "https://www.aaaai.org/conditions-treatments/related-conditions/mcas",
+      "accessed_at": "2026-10-02",
+      "locator": "Diagnosis: episodic symptoms, mediator rise and response; clonal evaluation (2026-08-27)",
+      "source_metadata_sha256": "b44d85e3a41ca44b87529c79681bc36a0be815baa1b05c029beaf9dedf718a08",
+      "access_status": "original_relevant_sections_read",
+      "independence_group": "US-AAAAI"
+    },
+    {
+      "source_id": "anaphylaxis-p0-acaai-test",
+      "url": "https://acaai.org/allergies/testing-diagnosis/food-allergy-testing-and-diagnosis/",
+      "accessed_at": "2026-10-02",
+      "locator": "History; testing limitations; supervised oral challenge; rescue equipment; false restriction; US individualized emergency plan (2026-02-23)",
+      "source_metadata_sha256": "61802bf076c57f42253e38c73dfad625dd83326198c83d6cc04c536ead2d91c5",
+      "access_status": "original_relevant_sections_read",
+      "independence_group": "US-ACAAI"
+    },
+    {
+      "source_id": "anaphylaxis-p0-foodtest",
+      "url": "https://medlineplus.gov/lab-tests/food-allergy-testing/",
+      "accessed_at": "2026-10-02",
+      "locator": "Uses; test procedures; risks and results; supervised emergency-ready challenge and inability to predict severity",
+      "source_metadata_sha256": "42eab04e7caf11b95d559409f8a9f15296e10b5c0d9b6d9c65339f90d70823a6",
+      "access_status": "original_relevant_sections_read",
+      "independence_group": "US-NIH"
+    },
+    {
+      "source_id": "anaphylaxis-p0-intolerance",
+      "url": "https://www.nhs.uk/conditions/food-intolerance/",
+      "accessed_at": "2026-10-02",
+      "locator": "Digestive intolerance versus allergy; avoiding child dietary restriction without dietitian advice (2026-06-18)",
+      "source_metadata_sha256": "77b241c6a22b84306d9386ce587fafc3cd85a0a46830058ec6771842ee625df8",
+      "access_status": "original_relevant_sections_read",
+      "independence_group": "UK-NHS"
+    },
+    {
+      "source_id": "anaphylaxis-p0-exercise",
+      "url": "https://www.allergy.org.au/patients/food-allergy/wheat-dependant-exercise-induced-anaphylaxis",
+      "accessed_at": "2026-10-02",
+      "locator": "Wheat-dependent exercise anaphylaxis FAQ1–5: exercise/food cofactors, alcohol/NSAIDs, individual diet, coeliac distinction, prevention (November2024)",
+      "source_metadata_sha256": "1fdefc976fdc9d1f65189c1fa470ac5f2f72e627c86094d755ac81ffac6681e2",
+      "access_status": "original_relevant_sections_read",
+      "independence_group": "AU-ASCIA"
+    },
+    {
+      "source_id": "anaphylaxis-p0-exercise-acaai",
+      "url": "https://acaai.org/resource/is-it-possible-to-get-anaphylaxis-from-exercising-too-hard/",
+      "accessed_at": "2026-10-02",
+      "locator": "Allergist video transcript: exercise symptoms, companion and rescue preparation (2026-07-10)",
+      "source_metadata_sha256": "f03dda310910842e5e01100f3bc57fba0b0e4dec5b8ce8e645fcc4654fc2e912",
+      "access_status": "original_relevant_sections_read",
+      "independence_group": "US-ACAAI"
+    },
+    {
+      "source_id": "anaphylaxis-p0-venom",
+      "url": "https://acaai.org/allergies/allergic-conditions/insect-sting-allergies/",
+      "accessed_at": "2026-10-02",
+      "locator": "Local versus systemic reactions; testing; emergency treatment; venom immunotherapy; prevention (reviewed2023-06-28)",
+      "source_metadata_sha256": "eb539b85958921a5c3e7cd363794abd111a1d5c3f2adfbbaab62f70a8c09f76e",
+      "access_status": "original_relevant_sections_read",
+      "independence_group": "US-ACAAI"
+    },
+    {
+      "source_id": "anaphylaxis-p0-pregnancy",
+      "url": "https://allergy.org.au/hp/anaphylaxis/acute-management-in-pregnancy-guidelines",
+      "accessed_at": "2026-10-02",
+      "locator": "Official indexed Management text; first-line/no withholding adrenaline; maternal perfusion; position; fetal monitoring; direct HTML403",
+      "source_metadata_sha256": "a6451c4cb16237d32ce57ba01036001cf5c9a5cc2ffc9d229d961e47f5c4ff92",
+      "access_status": "official_indexed_relevant_text_read",
+      "independence_group": "AU-ASCIA"
+    },
+    {
+      "source_id": "anaphylaxis-p0-fda-neffy",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/214697s001lbl.pdf",
+      "accessed_at": "2026-10-02",
+      "locator": "March2025 FDA-hosted ARS labeling: printedpp19–20 Patient Information; prescribed US product, training, repeat device and individualized help instructions",
+      "source_metadata_sha256": "36d1f7b3ed5dbe47a14603b36649ac5028ca63f58bcb5516b306ce48622488f9",
+      "access_status": "original_relevant_sections_read",
+      "independence_group": "US-FDA"
+    },
+    {
+      "source_id": "anaphylaxis-p0-wms",
+      "url": "https://wms.org/magazine/magazine/1356/anaphylaxis-clinical-practice-guidelines/default.aspx",
+      "accessed_at": "2026-10-02",
+      "locator": "Original web tool result L22–26 Treatment, specificallyL24; L20 WAO figure attribution; L68–69 Gaudio2022 reference",
+      "source_metadata_sha256": "881481da5b2326e8ddd6d8e35adefdbdc7c81997033561f76a9b65684145e13d",
+      "access_status": "same_session_original_web_tool_result_read",
+      "independence_group": "US-WMS",
+      "original_retrieved_at": "2026-10-02T14:46:48.626Z",
+      "reviewer_network_reopen": "timeout/403; original unmodified tool result read instead",
+      "capture": {
+        "tool_ref": "turn1134view0",
+        "log_path": "C:\\Users\\Damian\\.codex\\sessions\\2026\\10\\02\\rollout-2026-10-02T19-15-30-01a0fc53-8ff8-7671-98f8-2fe936386315.jsonl",
+        "line": 1230,
+        "call_id": "call_HeJRMxa6nn1ZZsqJOm8H5bEg",
+        "event_line_sha256": "20eb3964137ea26c261724ab18cd4f34255f15f45394f67c0bd953f9471bb27c",
+        "wms_result_block_sha256": "c7b3c674d4b57718d04acc83a088cb8431ae5ccdb0531d580fa73973c8be6624"
+      }
+    },
+    {
+      "source_id": "anaphylaxis-p0-ontario-bls",
+      "url": "https://www.ontario.ca/document/patient-care-documents-reference/basic-life-support-patient-care-standards",
+      "accessed_at": "2026-10-02",
+      "locator": "Original saved HTML: v3.4 document control/Preamble; Patient Management item9; Allergic Reaction Standard; webpageupdated2026-03-10",
+      "source_metadata_sha256": "359d7c857096aa69a26102bf6aeb88b157b5372c52dcfc1af632c6906b45cbee",
+      "access_status": "downloaded_original_html_relevant_sections_read",
+      "independence_group": "CA-ONTARIO-MOH",
+      "snapshot_file_sha256": "cf6f49b35417ea268bb80e5d12582df1638e3ba67fc198428d9e7430c0ad4603"
+    }
+  ],
+  "accepted_source_ids": [
+    "anaphylaxis-nhs",
+    "anaphylaxis-p0-aaaai",
+    "anaphylaxis-p0-acaai-test",
+    "anaphylaxis-p0-adam",
+    "anaphylaxis-p0-ascia",
+    "anaphylaxis-p0-drug",
+    "anaphylaxis-p0-exercise",
+    "anaphylaxis-p0-exercise-acaai",
+    "anaphylaxis-p0-fda-neffy",
+    "anaphylaxis-p0-food",
+    "anaphylaxis-p0-foodtest",
+    "anaphylaxis-p0-intolerance",
+    "anaphylaxis-p0-mcas",
+    "anaphylaxis-p0-ontario-bls",
+    "anaphylaxis-p0-pregnancy",
+    "anaphylaxis-p0-rcuk",
+    "anaphylaxis-p0-venom",
+    "anaphylaxis-p0-wao",
+    "anaphylaxis-p0-wms"
+  ],
+  "claims": [
+    {
+      "claim_id": "summary-0",
+      "section": "summary",
+      "claim_text_sha256": "72622317b6f8de22a0529d2f696b01b41f4eb4e34ea2191a7469be2a2c270b47",
+      "status": "accepted",
+      "assessment": "Life-threatening systemic definition matches NHS/AAAAI/WAO.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-aaaai",
+          "locator": "Overview"
+        },
+        {
+          "source_id": "anaphylaxis-p0-ascia",
+          "locator": "Definition"
+        }
+      ]
+    },
+    {
+      "claim_id": "summary-1",
+      "section": "summary",
+      "claim_text_sha256": "bd61b2c8b4b076577d21cb945e5139202f976c52e59b07b9083034d883b25ffb",
+      "status": "accepted",
+      "assessment": "Airway, circulatory and possible gastrointestinal manifestations are correctly distinguished.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-adam",
+          "locator": "Causes; Symptoms"
+        },
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "Sections 2–3"
+        }
+      ]
+    },
+    {
+      "claim_id": "summary-2",
+      "section": "summary",
+      "claim_text_sha256": "d2ce6f37960ab6a707d84a8a978ab8f76ec5294612d739ce439e8bd815885517",
+      "status": "accepted",
+      "assessment": "No-rash caveat supported by AAAAI/ASCIA; food-testing source supports unpredictability and ACAAI venom material independently confirms previous reactions do not ensure future safety.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-aaaai",
+          "locator": "Symptoms"
+        },
+        {
+          "source_id": "anaphylaxis-p0-ascia",
+          "locator": "Recognition"
+        },
+        {
+          "source_id": "anaphylaxis-p0-foodtest",
+          "locator": "What is it used for?"
+        }
+      ]
+    },
+    {
+      "claim_id": "causes_risks-0",
+      "section": "causes_risks",
+      "claim_text_sha256": "365adf5e33ec5d8e9702eae60d18891319ccf943d47def94ce1e3828a2ecbb3e",
+      "status": "accepted",
+      "assessment": "Mediator explanation is consistent with WAO pathogenesis and AAAAI patient teaching.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-adam",
+          "locator": "Causes"
+        },
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "Section 2"
+        }
+      ]
+    },
+    {
+      "claim_id": "causes_risks-1",
+      "section": "causes_risks",
+      "claim_text_sha256": "b9d87390b0bb65a85085d34a10964e810deb2f964c79b8082692fedec8fd96c3",
+      "status": "accepted",
+      "assessment": "Named trigger examples align with WAO Table4 and AAAAI food/drug sources; no universal allergen warning.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-nhs",
+          "locator": "Causes"
+        },
+        {
+          "source_id": "anaphylaxis-p0-drug",
+          "locator": "Overview"
+        }
+      ]
+    },
+    {
+      "claim_id": "causes_risks-2",
+      "section": "causes_risks",
+      "claim_text_sha256": "5285710b01ff251b0819b21cba6e1c274f800859e700a68f6dc3103b9a6da67c",
+      "status": "accepted",
+      "assessment": "ASCIA wheat-exercise FAQ explicitly explains combined cofactors, alcohol and NSAIDs; exercise alone is separately recognised.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-exercise",
+          "locator": "FAQ 1–5"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Elicitors and cofactors"
+        }
+      ]
+    },
+    {
+      "claim_id": "causes_risks-3",
+      "section": "causes_risks",
+      "claim_text_sha256": "5f8ef90dd80629e761263675319ca7a0572a3e09337b9bca4eac62905638df9d",
+      "status": "accepted",
+      "assessment": "WAO cofactors and AAAAI mast-cell source support risk modifiers without presenting them as certain causes.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Table 5; Table 8"
+        },
+        {
+          "source_id": "anaphylaxis-p0-ascia",
+          "locator": "Asthma; Observation"
+        },
+        {
+          "source_id": "anaphylaxis-p0-mcas",
+          "locator": "Opening explanation"
+        }
+      ]
+    },
+    {
+      "claim_id": "causes_risks-4",
+      "section": "causes_risks",
+      "claim_text_sha256": "5b126a6c2b60c80c6955f128fb6c9999643953b6ca51552b30f7b0d88451c215",
+      "status": "accepted",
+      "assessment": "WAO unexplained-reaction evaluation supports idiopathic disease and occult trigger/mast-cell investigation.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Pathogenesis; Long-term management"
+        },
+        {
+          "source_id": "anaphylaxis-p0-mcas",
+          "locator": "Idiopathic MCAS; Summary"
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-0",
+      "section": "red_flags",
+      "claim_text_sha256": "4362a4be123591822cb0336e8b6d6ee7d6f6dd3185e2844fb36317d89c1690c4",
+      "status": "accepted",
+      "assessment": "Clinical recognition precedes confirmatory testing; supported by emergency sources.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-aaaai",
+          "locator": "Important reminder"
+        },
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "1.3 Key points"
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-1",
+      "section": "red_flags",
+      "claim_text_sha256": "a062b9d4eb809101fb46dd82123cecbbf8fb9647eb068a73cd398e0ffc14c0e5",
+      "status": "accepted",
+      "assessment": "NHS/AAAAI/ASCIA agree on prompt prescribed-device use and emergency help.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-nhs",
+          "locator": "Immediate action; What to do"
+        },
+        {
+          "source_id": "anaphylaxis-p0-aaaai",
+          "locator": "Symptoms; Important reminder"
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-2",
+      "section": "red_flags",
+      "claim_text_sha256": "73d11a74faa8203c65fdea73160ddecf951e1355eb899dfd496ad7e236f512ef",
+      "status": "accepted",
+      "assessment": "Position is conditional on breathing/consciousness and concordant across NHS/ASCIA/WAO; no forced-flat breathing distress.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-ascia",
+          "locator": "Positioning"
+        },
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "4.4 Positioning"
+        },
+        {
+          "source_id": "anaphylaxis-nhs",
+          "locator": "What to do"
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-3",
+      "section": "red_flags",
+      "claim_text_sha256": "5c79c902e821c71ef3ea2dfb856cd67cf317c6b83af5b3538884ac60bf03c78f",
+      "status": "accepted",
+      "assessment": "UK 5-minute repeat is accurately attributed; WAO clinician5–15minute advice is not presented as a contradictory universal patient rule.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-nhs",
+          "locator": "What to do, step 5"
+        },
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "5.1.1; 5.4"
+        },
+        {
+          "source_id": "anaphylaxis-p0-aaaai",
+          "locator": "Important reminder"
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-4",
+      "section": "red_flags",
+      "claim_text_sha256": "827c4c0a92c34e9d839d38efe432467e16c072c570d1a40a753f91700b71088e",
+      "status": "accepted",
+      "assessment": "RCUK CPR priority and ADAM/WAO resuscitation advice support not delaying compressions for medicine.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "4.6 Cardiorespiratory arrest"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Acute treatment"
+        },
+        {
+          "source_id": "anaphylaxis-p0-adam",
+          "locator": "Treatment"
+        }
+      ]
+    },
+    {
+      "claim_id": "care-0",
+      "section": "care",
+      "claim_text_sha256": "bc66e197957148c4593272b31fe273453f4e5e80eb9a884f9e85951427dc7c2e",
+      "status": "accepted",
+      "assessment": "Practical ordering of emergency, observation and specialist care agrees with sources.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "Sections 4 and 8"
+        }
+      ]
+    },
+    {
+      "claim_id": "care-1",
+      "section": "care",
+      "claim_text_sha256": "e94903a1742fc8db7a58b13f07062654b27f9e9cf686b148adc19db922170bc2",
+      "status": "accepted",
+      "assessment": "Default emergency/observation advice matches NHS/RCUK/ASCIA, including recurrence.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-nhs",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "anaphylaxis-p0-ascia",
+          "locator": "Observation"
+        },
+        {
+          "source_id": "anaphylaxis-p0-aaaai",
+          "locator": "Important reminder"
+        }
+      ]
+    },
+    {
+      "claim_id": "care-2",
+      "section": "care",
+      "claim_text_sha256": "ccbc00a06f44bcbe289571784bbf858c95b47b8f0ab15235ad07b46f204a163f",
+      "status": "accepted",
+      "assessment": "Risk-based observation and preagreed US help plans are scoped; FDA patient labeling and ACAAI support individual instructions, not self-triage during a first or worsening episode.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-ascia",
+          "locator": "Observation"
+        },
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "8.2"
+        },
+        {
+          "source_id": "anaphylaxis-p0-acaai-test",
+          "locator": "Epinephrine safety notes"
+        },
+        {
+          "source_id": "anaphylaxis-p0-fda-neffy",
+          "locator": "Patient information: allergic emergency"
+        }
+      ]
+    },
+    {
+      "claim_id": "care-3",
+      "section": "care",
+      "claim_text_sha256": "f9f9a674fe40b5c3588ddf9893b8426fe1a2108146b65592c3db672afa545615",
+      "status": "accepted",
+      "assessment": "Isolated skin symptoms and progression warning are distinguished, without predicting that mild symptoms are safe forever.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "3.3; 5.1; 8.7"
+        },
+        {
+          "source_id": "anaphylaxis-p0-ascia",
+          "locator": "Mild/moderate signs; severe signs; referral"
+        },
+        {
+          "source_id": "anaphylaxis-p0-aaaai",
+          "locator": "Diagnosis; Management"
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-0",
+      "section": "diagnosis",
+      "claim_text_sha256": "c0611ba3789eeedf59cc8739c997c54b7a1d3c32f80ef1c688944c8b5d43749a",
+      "status": "accepted",
+      "assessment": "Clinical emergency recognition is prioritised over testing.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "1.3; 7.1"
+        },
+        {
+          "source_id": "anaphylaxis-p0-adam",
+          "locator": "Exams and tests"
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-1",
+      "section": "diagnosis",
+      "claim_text_sha256": "40df71bebb187b81bdef458452b36d4fbc732943c412ca33ffa6c16991921c30",
+      "status": "accepted",
+      "assessment": "RCUK record-keeping and allergy sources support exposure/timing history as a communication aid.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Cofactors; Table 8"
+        },
+        {
+          "source_id": "anaphylaxis-p0-drug",
+          "locator": "Diagnosis"
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-2",
+      "section": "diagnosis",
+      "claim_text_sha256": "9371fa7511f9391d0947494472852e5f756a834273b549504090a24de29bc7c4",
+      "status": "accepted",
+      "assessment": "WAO/RCUK explain acute/baseline tryptase, timing and normal-result limitation; sampling cannot postpone rescue.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "7.1–7.4"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Diagnostic tests in acute anaphylaxis"
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-3",
+      "section": "diagnosis",
+      "claim_text_sha256": "8142b95d6be828bef2cbac2fbeca6b5b877efa6dc2fe393e29d55545d45a9457",
+      "status": "accepted",
+      "assessment": "ACAAI/NLM support sensitisation-versus-clinical-allergy distinction and inability to predict severity from a panel.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-acaai-test",
+          "locator": "Food allergy testing; At-home tests"
+        },
+        {
+          "source_id": "anaphylaxis-p0-foodtest",
+          "locator": "What is it used for?; Results"
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-4",
+      "section": "diagnosis",
+      "claim_text_sha256": "4074280c3fdbc4fb43c271399858f3e2e4ba10a1d936fc01d226b74cab8ca688",
+      "status": "accepted",
+      "assessment": "ACAAI/NLM require supervised food challenge with rescue capability; AAAAI drug clinic and WAO specialist assessment support the drug/mast-cell portions. No home challenge.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-acaai-test",
+          "locator": "Elimination diet; Oral challenge"
+        },
+        {
+          "source_id": "anaphylaxis-p0-foodtest",
+          "locator": "Risks; Results"
+        },
+        {
+          "source_id": "anaphylaxis-p0-drug",
+          "locator": "Treatment and management"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Long-term management"
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-0",
+      "section": "differentials",
+      "claim_text_sha256": "e12d5e41a2dca5ef4ac7c1fffe1acc5c53042d5749fa542666ce935751130b9e",
+      "status": "accepted",
+      "assessment": "Differentials are educational; airway/circulation danger remains urgent.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "3.4 Differential diagnosis"
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-1",
+      "section": "differentials",
+      "claim_text_sha256": "41716d82a5ef8958ee532396e6059040d2a7d77133cb4be5ff1595319c7a8217",
+      "status": "accepted",
+      "assessment": "ASCIA known asthma/allergy clause and RCUK bronchodilator guidance support adrenaline before asthma reliever when anaphylaxis is possible.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-ascia",
+          "locator": "Management in people with asthma; Action Plan statement"
+        },
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "5.6 Bronchodilators"
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-2",
+      "section": "differentials",
+      "claim_text_sha256": "e38e24184b36341127e4efc6e0f2116b6abda0d5c65aca5ae266443dda77dd57",
+      "status": "accepted",
+      "assessment": "RCUK/WAO distinguish vasovagal/panic/ILO/ACE-inhibitor angioedema without lay diagnostic reassurance.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "3.4"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Table 3"
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-3",
+      "section": "differentials",
+      "claim_text_sha256": "98769ea3c88da1814f9c14fdcc021995f2239830a6ff32dd1fe410c3de70ed41",
+      "status": "accepted",
+      "assessment": "NHS intolerance and AAAAI food source explain digestive intolerance; WAO lists aspiration as differential.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-intolerance",
+          "locator": "Causes"
+        },
+        {
+          "source_id": "anaphylaxis-p0-food",
+          "locator": "Overview"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Table 3"
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-4",
+      "section": "differentials",
+      "claim_text_sha256": "6504b9ff7f31b561420cfda9d0af8408aa0d961c06ff2db72dfc2a70d63e9eb9",
+      "status": "accepted",
+      "assessment": "ACAAI venom local-reaction and WAO diagnostic criteria support boundaries. Earlier unsupported direct-venom-toxicity clause is absent from both languages.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-venom",
+          "locator": "Symptoms"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Definition; Table 3"
+        },
+        {
+          "source_id": "anaphylaxis-p0-adam",
+          "locator": "Causes"
+        }
+      ]
+    },
+    {
+      "claim_id": "treatment-0",
+      "section": "treatment",
+      "claim_text_sha256": "3a8524693a78646c07db9c1fd212552c7c131fdb43107b5b5601901ef83a9001",
+      "status": "accepted",
+      "assessment": "Emergency airway/perfusion priorities accurately summarise the professional guidelines.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "Sections 4–5; 8"
+        }
+      ]
+    },
+    {
+      "claim_id": "treatment-1",
+      "section": "treatment",
+      "claim_text_sha256": "2975e78e29cb232903024a18bccb208a030b01cf3f58d4a2233a5ed6eba4614d",
+      "status": "accepted",
+      "assessment": "RCUK/WAO support IM first-line route and thigh location; no personalised dose or unsupervised IV instruction.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "5.1–5.1.2"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Acute treatment"
+        }
+      ]
+    },
+    {
+      "claim_id": "treatment-2",
+      "section": "treatment",
+      "claim_text_sha256": "38cdb59f81a8543a8f37c958fa3e25310f974d1ae8b17d34aad0245e3d4f3fdb",
+      "status": "accepted",
+      "assessment": "RCUK/WAO support monitored hospital oxygen/fluids/airway and escalation, not antihistamine substitution.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-nhs",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "5.2–5.3; 6"
+        }
+      ]
+    },
+    {
+      "claim_id": "treatment-3",
+      "section": "treatment",
+      "claim_text_sha256": "552150566250dea8adf3bcbe9d83635215a96d11055d2fc4335f2e8669842ba3",
+      "status": "accepted",
+      "assessment": "RCUK/WAO support trigger removal without delay; WMS Treatment independently corroborates the specific no-induced-vomiting clause with shared literature acknowledged.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "4.5 Remove the trigger"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Acute treatment"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wms",
+          "locator": "Treatment, second paragraph (line24); references68–69; adapted WAO diagnostic graphic20"
+        }
+      ]
+    },
+    {
+      "claim_id": "treatment-4",
+      "section": "treatment",
+      "claim_text_sha256": "d8d85bac836744ee3020780d1736fed4f752f6296d6d13b807216d0b8b3bb68a",
+      "status": "accepted",
+      "assessment": "ACAAI venom and AAAAI drug guidance support distinct specialist immunotherapy/desensitisation pathways; conditions are not interchanged.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-venom",
+          "locator": "Venom immunotherapy"
+        },
+        {
+          "source_id": "anaphylaxis-p0-drug",
+          "locator": "Treatment and management"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Long-term management"
+        }
+      ]
+    },
+    {
+      "claim_id": "medications-0",
+      "section": "medications",
+      "claim_text_sha256": "e4f5bbf3ac2489b5e89257c86bfc2f502f6e4b19c29ff1281b001811982d9638",
+      "status": "accepted",
+      "assessment": "Drug roles are separated consistently with guidelines.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-ascia",
+          "locator": "Adjunct medications"
+        }
+      ]
+    },
+    {
+      "claim_id": "medications-1",
+      "section": "medications",
+      "claim_text_sha256": "82df381ed2330a90f1273ed762b2714d19549f33cc8866e5cae32b51022b1588",
+      "status": "accepted",
+      "assessment": "RCUK/WAO distinguish correctly administered IM rescue from monitored specialist IV risk.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "5.1–5.1.2"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Acute treatment; Key points"
+        }
+      ]
+    },
+    {
+      "claim_id": "medications-2",
+      "section": "medications",
+      "claim_text_sha256": "89095ff8fe272fb3e36cd8b9ebb312a28688e52a9653b8dea7c4d8625d29101f",
+      "status": "accepted",
+      "assessment": "ASCIA/RCUK restrict antihistamine role; ADAM directly supports no oral medicines during breathing difficulty and Ontario item9 provides scoped professional corroboration.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-ascia",
+          "locator": "Adjunct medications"
+        },
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "5.4"
+        },
+        {
+          "source_id": "anaphylaxis-p0-adam",
+          "locator": "Treatment: Do not"
+        },
+        {
+          "source_id": "anaphylaxis-p0-ontario-bls",
+          "locator": "Patient Management Standard item9; Preamble professional scope; Allergic Reaction (Known or Suspected) Standard"
+        }
+      ]
+    },
+    {
+      "claim_id": "medications-3",
+      "section": "medications",
+      "claim_text_sha256": "7a69113cc50edfb09005eb6d13c19be73befe3b69f760609340c070c2261a140",
+      "status": "accepted",
+      "assessment": "RCUK5.5/5.6 and ASCIA adjuncts support no routine first-line steroids/bronchodilator substitution, with UK attribution and clinical exceptions.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "5.5–5.6"
+        },
+        {
+          "source_id": "anaphylaxis-p0-ascia",
+          "locator": "Adjunct medications"
+        }
+      ]
+    },
+    {
+      "claim_id": "medications-4",
+      "section": "medications",
+      "claim_text_sha256": "6f18083d6778e5a9529e953392eec35d4018f60740d3823840b836d604d29424",
+      "status": "accepted",
+      "assessment": "FDA March2025 labeling verifies US prescribed intranasal device and different instructions; no dose or availability claim extrapolated to other jurisdictions.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-fda-neffy",
+          "locator": "Indications; Patient information"
+        },
+        {
+          "source_id": "anaphylaxis-p0-acaai-test",
+          "locator": "Epinephrine options and safety notes"
+        },
+        {
+          "source_id": "anaphylaxis-p0-aaaai",
+          "locator": "Management"
+        }
+      ]
+    },
+    {
+      "claim_id": "diet-0",
+      "section": "diet",
+      "claim_text_sha256": "098fc2f5ae169b0b3ad992242f82a4391f3885d3aa042f7ef7b681923608ef4f",
+      "status": "accepted",
+      "assessment": "Individual trigger-directed restriction matches allergy-testing guidance.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-food",
+          "locator": "Treatment and management"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Long-term management"
+        }
+      ]
+    },
+    {
+      "claim_id": "diet-1",
+      "section": "diet",
+      "claim_text_sha256": "bfda62ddfd03071af0b8cff13cb0be9efadea24a7970aff74664db19d42de82f",
+      "status": "accepted",
+      "assessment": "AAAAI food, NLM testing and ASCIA exercise FAQ support tiny exposure risk, labels/restaurant communication and no home trial.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-food",
+          "locator": "Overview; Management"
+        },
+        {
+          "source_id": "anaphylaxis-p0-exercise",
+          "locator": "FAQ 5"
+        },
+        {
+          "source_id": "anaphylaxis-p0-acaai-test",
+          "locator": "Elimination diet; Oral food challenge"
+        }
+      ]
+    },
+    {
+      "claim_id": "diet-2",
+      "section": "diet",
+      "claim_text_sha256": "576d6123e18f18559cbcc65d7ef91ad74236757f0890230437af90c2ce456655",
+      "status": "accepted",
+      "assessment": "NHS intolerance source is used only for child nutrition restriction/dietitian principle; ACAAI supports avoiding unvalidated panel-driven restriction.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Long-term management"
+        },
+        {
+          "source_id": "anaphylaxis-p0-intolerance",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "anaphylaxis-p0-acaai-test",
+          "locator": "At-home food allergy tests"
+        }
+      ]
+    },
+    {
+      "claim_id": "diet-3",
+      "section": "diet",
+      "claim_text_sha256": "ac598314bb67c1ba12bd1ddd74a2b508702f1bf61e18285e56d48e28cd10236a",
+      "status": "accepted",
+      "assessment": "ASCIA wheat-exercise FAQ and ACAAI exercise explanation preserve combination-trigger and coeliac distinctions.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-exercise",
+          "locator": "FAQ 1–5"
+        },
+        {
+          "source_id": "anaphylaxis-p0-exercise-acaai",
+          "locator": "Transcript"
+        }
+      ]
+    },
+    {
+      "claim_id": "diet-4",
+      "section": "diet",
+      "claim_text_sha256": "20e5ea5f5a30cf7b97cd2c5fdf28b7c134151f2ab0a53b2fd6bc1b717db2ecb5",
+      "status": "accepted",
+      "assessment": "AAAAI current food therapy source retains avoidance alongside therapy; no diet-as-rescue claim.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-food",
+          "locator": "Treatment and management"
+        },
+        {
+          "source_id": "anaphylaxis-p0-aaaai",
+          "locator": "Important reminder; Management"
+        }
+      ]
+    },
+    {
+      "claim_id": "daily_care-0",
+      "section": "daily_care",
+      "claim_text_sha256": "8ef0655c5fc88e00e1e5a0e1fae96f0f82352cd41bc30f68b1e932c6408fd6ee",
+      "status": "accepted",
+      "assessment": "Preparation is practical care organisation, not a quantified prevention claim.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-aaaai",
+          "locator": "Management"
+        }
+      ]
+    },
+    {
+      "claim_id": "daily_care-1",
+      "section": "daily_care",
+      "claim_text_sha256": "78c881a9fbadbcd00b3bd904fa8a245e3d6aabc58c999be32f8542eac1163efa",
+      "status": "accepted",
+      "assessment": "NHS/AAAAI/RCUK/FDA support prescribed devices, replacement and device-specific storage; ongoing prescription individualised.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-nhs",
+          "locator": "Prevention"
+        },
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "8.6"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Long-term management"
+        }
+      ]
+    },
+    {
+      "claim_id": "daily_care-2",
+      "section": "daily_care",
+      "claim_text_sha256": "ce94a6f7b1c25d7bb9d0ae0778887fc23a54008be7e6bca6849942b94daecf61",
+      "status": "accepted",
+      "assessment": "NHS/AAAAI/WAO support training and written plans for relevant carers; no brand technique generalisation.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-nhs",
+          "locator": "Prevention; Treatment"
+        },
+        {
+          "source_id": "anaphylaxis-p0-aaaai",
+          "locator": "Management"
+        }
+      ]
+    },
+    {
+      "claim_id": "daily_care-3",
+      "section": "daily_care",
+      "claim_text_sha256": "d75834fe16af386b37236fe400d7c5b0d545d45210c10d3fd641adc843425f69",
+      "status": "accepted",
+      "assessment": "NHS/AAAAI and RCUK records support medical identifiers and event/medicine history as practical aids.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Table 8"
+        },
+        {
+          "source_id": "anaphylaxis-p0-drug",
+          "locator": "Diagnosis"
+        },
+        {
+          "source_id": "anaphylaxis-p0-acaai-test",
+          "locator": "Elimination diet"
+        }
+      ]
+    },
+    {
+      "claim_id": "daily_care-4",
+      "section": "daily_care",
+      "claim_text_sha256": "3c0e0d27ccd3345ffcfd44c08c6f554412e85ee2a6d7242455b8ce305da5d784",
+      "status": "accepted",
+      "assessment": "ASCIA exercise FAQ and ACAAI specialist explanation support planned exercise with companion/rescue access and escalation when symptoms occur.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-exercise-acaai",
+          "locator": "Transcript"
+        },
+        {
+          "source_id": "anaphylaxis-p0-exercise",
+          "locator": "FAQ 5"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Acute treatment; Table 8"
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-0",
+      "section": "special_populations",
+      "claim_text_sha256": "31f17491df2c2f6ec76b96f8e68a396811746651466ad3f17bb4ddec4d1ea72f",
+      "status": "accepted",
+      "assessment": "Age and comorbidity qualifications remain descriptive.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Acute treatment"
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-1",
+      "section": "special_populations",
+      "claim_text_sha256": "dd35675f4abc2bf36257a518169fb42d89d1d09b66be8838a0378688796f15d4",
+      "status": "accepted",
+      "assessment": "ASCIA infant recognition/positioning and broader NHS/RCUK safety support flat/supportive holding; no caregiver dosing calculation.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-nhs",
+          "locator": "Immediate action"
+        },
+        {
+          "source_id": "anaphylaxis-p0-ascia",
+          "locator": "Infants; Positioning"
+        },
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "4.4; 8.6"
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-2",
+      "section": "special_populations",
+      "claim_text_sha256": "32dcaaabaf31f5a1b7b5ebd232e5ba236baea76cfbb24023a475d7efae72857f",
+      "status": "accepted",
+      "assessment": "ASCIA pregnancy, general ASCIA and RCUK/WAO support prompt rescue, left-sided position and maternal/fetal assessment.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-pregnancy",
+          "locator": "Management"
+        },
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "4.7"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Acute treatment"
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-3",
+      "section": "special_populations",
+      "claim_text_sha256": "dd05f545732cf5cec6115fa829251611484ee39d6111a2ead5686315089834f2",
+      "status": "accepted",
+      "assessment": "WAO cofactors and FDA patient advice support medicine/comorbidity disclosure without withholding prescribed rescue.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Cofactors; Acute treatment; Key points"
+        },
+        {
+          "source_id": "anaphylaxis-p0-adam",
+          "locator": "Prevention"
+        },
+        {
+          "source_id": "anaphylaxis-p0-fda-neffy",
+          "locator": "Patient information: tell provider"
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-4",
+      "section": "special_populations",
+      "claim_text_sha256": "1c9724c8edf46ff17fce0390f2d125d06d3f26f8962e2af094058a9d54e909ea",
+      "status": "accepted",
+      "assessment": "AAAAI MCAS diagnostic combination and WAO unexplained-attack assessment support avoiding diagnosis from nonspecific symptoms or one result alone.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-mcas",
+          "locator": "Idiopathic MCAS; Mediators; Summary"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Pathogenesis; Long-term management"
+        }
+      ]
+    },
+    {
+      "claim_id": "prognosis_followup-0",
+      "section": "prognosis_followup",
+      "claim_text_sha256": "190a21d4157e764e10f9ba9d02114882c4c22a2a25e1f459e32246e8ddf1867a",
+      "status": "accepted",
+      "assessment": "NHS/WAO recovery and recurrence context supports cautious prognosis.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-adam",
+          "locator": "Outlook"
+        },
+        {
+          "source_id": "anaphylaxis-p0-aaaai",
+          "locator": "Overview"
+        }
+      ]
+    },
+    {
+      "claim_id": "prognosis_followup-1",
+      "section": "prognosis_followup",
+      "claim_text_sha256": "a923671e081c606edfbb07087e51556243f499eade8da11955b64f2bf312dae2",
+      "status": "accepted",
+      "assessment": "RCUK/WAO support biphasic risk and individual observation; no duration guarantees absence of recurrence.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "8.1–8.2"
+        },
+        {
+          "source_id": "anaphylaxis-p0-ascia",
+          "locator": "Observation"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Acute treatment; global gaps"
+        }
+      ]
+    },
+    {
+      "claim_id": "prognosis_followup-2",
+      "section": "prognosis_followup",
+      "claim_text_sha256": "16ef9f4a22dd470b96702cd5415c69b17c73da7e75668419e2504193e1f02214",
+      "status": "accepted",
+      "assessment": "ASCIA/WAO follow-up and NHS emergency criteria support plan/asthma/device review and recurrent danger escalation.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-ascia",
+          "locator": "Referral; device prescription"
+        },
+        {
+          "source_id": "anaphylaxis-p0-aaaai",
+          "locator": "Management; Important reminder"
+        },
+        {
+          "source_id": "anaphylaxis-nhs",
+          "locator": "Prevention"
+        }
+      ]
+    },
+    {
+      "claim_id": "prognosis_followup-3",
+      "section": "prognosis_followup",
+      "claim_text_sha256": "fccf31216e87d0048d788708f938014eea43ff356e62a8dbb1fb1d46899ec795",
+      "status": "accepted",
+      "assessment": "Specialist reassessment and WAO dietetic/psychological follow-up support the stated practical advice.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-acaai-test",
+          "locator": "Oral challenge; Elimination diet"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Long-term management"
+        }
+      ]
+    },
+    {
+      "claim_id": "complications-0",
+      "section": "complications",
+      "claim_text_sha256": "c622024f9ae1fa61a916ae42e0925de7df29b321abe08321e7bba26b7ae0eb5b",
+      "status": "accepted",
+      "assessment": "RCUK/ADAM airway/perfusion mechanisms support the overview without inevitability.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-adam",
+          "locator": "Possible complications"
+        },
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "Definition; Recognition"
+        }
+      ]
+    },
+    {
+      "claim_id": "complications-1",
+      "section": "complications",
+      "claim_text_sha256": "5d1ee1d3dac9d411bc8c2d0d93756ac006074caded532055808ba7af057114e6",
+      "status": "accepted",
+      "assessment": "NHS/RCUK danger signs support immediate help for worsening airway/hypoxia signs.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-nhs",
+          "locator": "Symptoms; Immediate action"
+        },
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "3.2 Airway and breathing"
+        }
+      ]
+    },
+    {
+      "claim_id": "complications-2",
+      "section": "complications",
+      "claim_text_sha256": "4997f0366deef7e8cdd0d6603699254e566de6673ae840ad946b9d41a7c6798e",
+      "status": "accepted",
+      "assessment": "RCUK circulation and ADAM shock explain vascular/fluid effects and impaired organ perfusion.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "2; 5.3"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Acute treatment; definition"
+        },
+        {
+          "source_id": "anaphylaxis-p0-adam",
+          "locator": "Symptoms; Complications"
+        }
+      ]
+    },
+    {
+      "claim_id": "complications-3",
+      "section": "complications",
+      "claim_text_sha256": "f7ca2911e8bfe8d94a4b70855c2e4d2913bb1657ef42e63df921ece3ebb1b828",
+      "status": "accepted",
+      "assessment": "ADAM arrest complications and RCUK recurrence/refractory management support continuing indicated observation.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-adam",
+          "locator": "Complications"
+        },
+        {
+          "source_id": "anaphylaxis-p0-rcuk",
+          "locator": "4.6; 8.1–8.2"
+        },
+        {
+          "source_id": "anaphylaxis-p0-ascia",
+          "locator": "Observation"
+        }
+      ]
+    },
+    {
+      "claim_id": "prevention-0",
+      "section": "prevention",
+      "claim_text_sha256": "753800fdd49654ee287118fee4ef026315788f84a1ba85e1c0c12d941c0ffd99",
+      "status": "accepted",
+      "assessment": "Trigger avoidance and preparedness correctly summarise WAO long-term management.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Table 8"
+        }
+      ]
+    },
+    {
+      "claim_id": "prevention-1",
+      "section": "prevention",
+      "claim_text_sha256": "5ebc74624beb715f34fa8d8f93f44d941b9d4457c1daa726539b3d5c8c5f2c66",
+      "status": "accepted",
+      "assessment": "AAAAI drug guidance distinguishes ordinary side effects and specialist drug allergy management.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-drug",
+          "locator": "Overview; Diagnosis; Treatment"
+        },
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Long-term management; Table 8"
+        }
+      ]
+    },
+    {
+      "claim_id": "prevention-2",
+      "section": "prevention",
+      "claim_text_sha256": "13a51009418b94d58192b503587b727a1369a6b3e8b5cc9ba2d55ddc1cfecbec",
+      "status": "accepted",
+      "assessment": "AAAAI food/ASCIA exercise and ACAAI venom support avoiding exposure despite specialist therapies.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-food",
+          "locator": "Management"
+        },
+        {
+          "source_id": "anaphylaxis-p0-exercise",
+          "locator": "FAQ 5"
+        },
+        {
+          "source_id": "anaphylaxis-p0-venom",
+          "locator": "Immunotherapy; Avoiding stings"
+        },
+        {
+          "source_id": "anaphylaxis-p0-adam",
+          "locator": "Treatment: Do not"
+        }
+      ]
+    },
+    {
+      "claim_id": "prevention-3",
+      "section": "prevention",
+      "claim_text_sha256": "7959d376be4786b175590e494f95e8384dd43a2e9e8b01f408e48337afe908b5",
+      "status": "accepted",
+      "assessment": "WAO/ASCIA plans and AAAAI carer teaching support asthma control and updated setting-specific arrangements.",
+      "evidence": [
+        {
+          "source_id": "anaphylaxis-p0-wao",
+          "locator": "Table 8; Long-term management"
+        },
+        {
+          "source_id": "anaphylaxis-p0-ascia",
+          "locator": "Asthma; referral; device training"
+        },
+        {
+          "source_id": "anaphylaxis-p0-aaaai",
+          "locator": "Management"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section": "summary",
+      "content_sha256": "554238839778831648bec8758f667d6801a3d9b65299b8212ab9fe1e0646abf8",
+      "claim_ids": [
+        "summary-0",
+        "summary-1",
+        "summary-2"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English retain equivalent conditions, actions and regional/device boundaries."
+    },
+    {
+      "section": "causes_risks",
+      "content_sha256": "e2109d5f056506d75987c2c8162d6c0a8a1f5802050d072d5d22dc5ea31625cd",
+      "claim_ids": [
+        "causes_risks-0",
+        "causes_risks-1",
+        "causes_risks-2",
+        "causes_risks-3",
+        "causes_risks-4"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English retain equivalent conditions, actions and regional/device boundaries."
+    },
+    {
+      "section": "red_flags",
+      "content_sha256": "c6f7499afb50fdf0219013b99ccf7de98648dcd767d5386abfb7d61edc1dcb24",
+      "claim_ids": [
+        "red_flags-0",
+        "red_flags-1",
+        "red_flags-2",
+        "red_flags-3",
+        "red_flags-4"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English retain equivalent conditions, actions and regional/device boundaries."
+    },
+    {
+      "section": "care",
+      "content_sha256": "e090c34971f4306377863de69fd73448343a3d0c22cec1aca73c108fc60a7153",
+      "claim_ids": [
+        "care-0",
+        "care-1",
+        "care-2",
+        "care-3"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English retain equivalent conditions, actions and regional/device boundaries."
+    },
+    {
+      "section": "diagnosis",
+      "content_sha256": "821980852cf43c3e092cf8d577aaf0d624581a838c61e527167e6b139c3daeff",
+      "claim_ids": [
+        "diagnosis-0",
+        "diagnosis-1",
+        "diagnosis-2",
+        "diagnosis-3",
+        "diagnosis-4"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English retain equivalent conditions, actions and regional/device boundaries."
+    },
+    {
+      "section": "differentials",
+      "content_sha256": "fb3687bb8a148541d72473841e7aa0a9831422725040e73e3f4fd89b6f503fa1",
+      "claim_ids": [
+        "differentials-0",
+        "differentials-1",
+        "differentials-2",
+        "differentials-3",
+        "differentials-4"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English retain equivalent conditions, actions and regional/device boundaries."
+    },
+    {
+      "section": "treatment",
+      "content_sha256": "c3b2b37ccbfaf11d6212853f46a84f65e6b96cf74aa08e35820d02b693e462f1",
+      "claim_ids": [
+        "treatment-0",
+        "treatment-1",
+        "treatment-2",
+        "treatment-3",
+        "treatment-4"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English retain equivalent conditions, actions and regional/device boundaries."
+    },
+    {
+      "section": "medications",
+      "content_sha256": "d67397b1d51fc286368140c12197ec33e4a2d6bca80f17355fe2c93a60b5e96e",
+      "claim_ids": [
+        "medications-0",
+        "medications-1",
+        "medications-2",
+        "medications-3",
+        "medications-4"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English retain equivalent conditions, actions and regional/device boundaries."
+    },
+    {
+      "section": "diet",
+      "content_sha256": "f045c3ec22ab25933a2af5e0f599e65a6e2212b2e2c2fdb51913e41c893f7339",
+      "claim_ids": [
+        "diet-0",
+        "diet-1",
+        "diet-2",
+        "diet-3",
+        "diet-4"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English retain equivalent conditions, actions and regional/device boundaries."
+    },
+    {
+      "section": "daily_care",
+      "content_sha256": "5366108e452027778d175d673eb1018f67c1fb7459b36f00667464fbc6d1c622",
+      "claim_ids": [
+        "daily_care-0",
+        "daily_care-1",
+        "daily_care-2",
+        "daily_care-3",
+        "daily_care-4"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English retain equivalent conditions, actions and regional/device boundaries."
+    },
+    {
+      "section": "special_populations",
+      "content_sha256": "d1809a6a8f8794ecb2eb43903b678826c0153e0fdcf4ecd300852adee240a94f",
+      "claim_ids": [
+        "special_populations-0",
+        "special_populations-1",
+        "special_populations-2",
+        "special_populations-3",
+        "special_populations-4"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English retain equivalent conditions, actions and regional/device boundaries."
+    },
+    {
+      "section": "prognosis_followup",
+      "content_sha256": "276ffcc9950d77bdccdbbe58eb3222e6f37e75c232773be29ecf99a57356f362",
+      "claim_ids": [
+        "prognosis_followup-0",
+        "prognosis_followup-1",
+        "prognosis_followup-2",
+        "prognosis_followup-3"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English retain equivalent conditions, actions and regional/device boundaries."
+    },
+    {
+      "section": "complications",
+      "content_sha256": "f5c69a2c34891bb0f10e0ee93e475d96dd9f010d3c3d8adc5bf9443b051d7128",
+      "claim_ids": [
+        "complications-0",
+        "complications-1",
+        "complications-2",
+        "complications-3"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English retain equivalent conditions, actions and regional/device boundaries."
+    },
+    {
+      "section": "prevention",
+      "content_sha256": "2cf28a72d6d7922fd363ad50d97984115f8c99509398443ebbb0d40708b012b1",
+      "claim_ids": [
+        "prevention-0",
+        "prevention-1",
+        "prevention-2",
+        "prevention-3"
+      ],
+      "status": "accepted",
+      "bilingual_assessment": "Chinese and English retain equivalent conditions, actions and regional/device boundaries."
+    }
+  ],
+  "findings": [
+    {
+      "id": "P0-ANA-NO-VOMITING",
+      "status": "resolved",
+      "claim_ids": [
+        "treatment-3"
+      ],
+      "resolution": "Added independently written WMS official summary corroborating RCUK no-induced-vomiting clause. WAO is retained only for trigger removal and immediate rescue; no false clause attribution."
+    },
+    {
+      "id": "P0-ANA-ORAL-SAFETY",
+      "status": "resolved",
+      "claim_ids": [
+        "medications-2"
+      ],
+      "resolution": "Added Ontario professional Patient Management item9 as scoped corroboration of ADAM public breathing-difficulty instruction. Its BLS/ALS exceptions remain explicit; no universal oral ban is inferred."
+    }
+  ],
+  "evidence_boundaries": [
+    "Independent editorial review is not clinician sign-off; medical_reviewed remains false.",
+    "RCUK, WAO, ASCIA and US allergy societies share clinical literature and endorsement pathways; distinct editorial authorship is not independent clinical trial replication.",
+    "UK five-minute injector repeat is explicitly attributed. US preagreed seek-help plans do not replace default emergency response for first, unclear, persistent or worsening episodes.",
+    "FDA-hosted label is manufacturer ARS labeling approved by the US regulator, not an independently authored clinical guideline; product instructions are used only within US prescribed-device scope.",
+    "Ontario evidence is a paramedic standard with protocol exceptions; ADAM supplies the public breathing-difficulty condition. WMS is a society summary, not a claimed full journal-guideline read.",
+    "Observation duration remains individualized. Low-risk record keeping and explanatory comparisons are not required to manufacture two independent efficacy sources.",
+    "WMS source was independently read from the same-session unmodified original web-tool capture after the source subsequently timed out/denied requests. This is not a claimed successful fresh network reopen or full journal-guideline read."
+  ],
+  "resolved_author_questions": [],
+  "unresolved_questions": [],
+  "resolution": "All64 bilingual claims have adequate claim-specific support for a lay encyclopedia. The two precise safety-action bindings were completed then reviewed; the medical wording remained unchanged. No remaining substantive evidence or bilingual issue. ICD semantic mapping and clinical sign-off are outside this review.",
+  "validation": {
+    "all_section_hashes_match": true,
+    "all_source_metadata_hashes_match": true,
+    "all_bilingual_claim_substrings_match": true,
+    "all_section_sources_in_top_level": true
+  }
+}

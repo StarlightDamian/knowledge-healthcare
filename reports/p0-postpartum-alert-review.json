@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-02",
+  "rule_id": "postpartum-heavy-bleeding",
+  "reviewer": "/root",
+  "medical_reviewed": false,
+  "finding": "Before this change, both 产后大量出血 and postpartum sudden heavy bleeding returned no alert. Pregnancy bleeding required pregnancy wording, and the general bleeding rule required an additional circulatory sign or persistent bleeding.",
+  "resolution": "Add one finite phrase rule requiring postpartum context plus heavy or suddenly increased bleeding. Emergency action does not wait for fainting or a home estimate of blood volume. Existing bilingual emergency-contact instructions are reused.",
+  "actual_source_reads": [
+    {
+      "source_id": "pph-cdc-maternal-warning-signs",
+      "url": "https://www.cdc.gov/hearher/maternal-warning-signs/index.html",
+      "version": "2024-05-15",
+      "locator": "Key points; Vaginal bleeding or fluid leaking after pregnancy",
+      "supports": "Heavy postpartum bleeding is an urgent maternal warning sign; seek immediate medical care. CDC describes soaking one or more pads per hour, rather than requiring fainting.",
+      "boundary": "CDC credits AIM. CDC and AIM are one underlying warning-sign lineage, not two independent sources. No numerical pad-count parser is added."
+    },
+    {
+      "source_id": "pph-norfolk-postnatal-emergency",
+      "url": "https://www.justonenorfolk.nhs.uk/pregnancy-early-days/new-baby/early-days/",
+      "version": "Undated page read 2026-10-02",
+      "locator": "Vaginal bleeding; postpartum haemorrhage; Call 999 if the following apply to your postnatal bleeding",
+      "supports": "The independently listed trigger bleeding suddenly gets heavier warrants emergency ambulance contact; faintness, dizziness and a pounding heart are a separate additional trigger.",
+      "boundary": "UK 999 is localized through the existing emergency UI. The rule does not infer a cause or diagnose postpartum haemorrhage."
+    }
+  ],
+  "independence": "CDC/AIM and the UK NHS postnatal-care page are separately authored public-health and maternity-care materials; clinical knowledge may overlap.",
+  "validation": {
+    "command": "node --test tests/safety.test.mjs",
+    "passed": 80,
+    "failed": 0,
+    "new_positive_cases": 4,
+    "new_negative_cases": 4,
+    "negative_scope": "Ordinary light lochia, explicitly negated heavy bleeding, and bleeding without postpartum context do not match this rule."
+  },
+  "clinical_validation": "draft",
+  "clinical_boundary": "This is a phrase-triggered educational prompt, not validated triage. Absence of a match provides no reassurance."
+}

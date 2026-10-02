@@ -1,0 +1,2034 @@
+{
+  "schema_version": 1,
+  "review_id": "p0-meningitis-independent",
+  "reviewer": "/root/retinal_targeted",
+  "author": "/root/mi_icd_scope",
+  "reviewed_at": "2026-10-02",
+  "medical_reviewed": false,
+  "verdict": "accepted",
+  "target": {
+    "path": "drafts/p0-01/meningitis.json",
+    "body_canonical_sha256": "2b6d6c35b662f6c09dd380494cee6a60cb62e2cf6782229e8faee35f54da5154",
+    "records_canonical_sha256": "012ae2b6dbf1013cf74ed4fbb0de4e8272c258f475dc654e85b2c6c45d8a3714",
+    "sources_canonical_sha256": "b667c82d6b42b2fa11a4c342362202bc26a37a979ea58b3b1bb85f0726bcb77f"
+  },
+  "scope": {
+    "sections": 14,
+    "bilingual_claims": 63,
+    "sources": 36,
+    "method": "One targeted review against prior independently read chain plus new evidence; no full-repeat review or clinical signoff. Final five metadata/source repairs only rechecked."
+  },
+  "prior_review_chain": [
+    {
+      "path": "reports/batch-01-meningitis-independent.json",
+      "canonical_sha256": "36ad79f5ec37f4ca3cb789f266401d0bae9b511432fdb79713f3dff866a9fd8d",
+      "file_sha256": "b48578a09924408a5ca314431c10f3082b482c0eef8991c6027556cce377eaac"
+    },
+    {
+      "path": "reports/batch-01-meningitis-recheck.json",
+      "canonical_sha256": "273277056a40e251d9d385c642813c6c784f59ffba34262a5c57078604d60790",
+      "file_sha256": "d537e6f165bdb4a62c83bb68e2d46af865b4b77a66ecf4bf6e59c361088c0084"
+    }
+  ],
+  "actual_source_reads": [
+    {
+      "source_id": "meningitis-cdc-fungal-meningitis",
+      "url": "https://www.cdc.gov/meningitis/about/fungal-meningitis.html",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Risk factors lines67–76; Treatment137–139",
+      "assessment": "Immune-risk examples and antifungal duration; transplant drugs exact; chemotherapy separately NHS.",
+      "source_metadata_sha256": "a19b020841bd2dc6c5fa783e7ea80804204e9035c070c01e38e236d570986a05"
+    },
+    {
+      "source_id": "meningitis-cdc-listeria-symptoms",
+      "url": "https://www.cdc.gov/listeria/signs-symptoms/index.html",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Severity of invasive illness / pregnant women; lines60–67",
+      "assessment": "Mild or absent maternal symptoms can coexist with severe fetal/newborn consequences.",
+      "source_metadata_sha256": "3b8d7142834a92b3a1737fb44a2b70da59e16c2c76859877d6470683636640de"
+    },
+    {
+      "source_id": "meningitis-msd-acute",
+      "url": "https://www.msdmanuals.com/professional/neurologic-disorders/meningitis/acute-bacterial-meningitis",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Diagnosis215–264; treatment333–363",
+      "assessment": "Selective imaging/LP, immediate antibiotics, age and immunity, culture adjustment; local resistance passage includes post-neurosurgical context.",
+      "source_metadata_sha256": "8e548aa2e6f875801b0ea1d01e30a2af22a34044d905f95027e4db82f865d468"
+    },
+    {
+      "source_id": "meningitis-msd-viral",
+      "url": "https://www.msdmanuals.com/home/brain-spinal-cord-and-nerve-disorders/meningitis/viral-meningitis",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Treatment119–134",
+      "assessment": "Severe illness treated immediately; specific antivirals; normal-immunity recovery. Does not independently state the exact immunocompromised-admission rule.",
+      "source_metadata_sha256": "23c20299f6d05145646aa68f5d7207ae29f17812770c8b37bea6e568740d0234"
+    },
+    {
+      "source_id": "meningitis-msd-tb",
+      "url": "https://www.msdmanuals.com/professional/infectious-diseases/mycobacteria/extrapulmonary-tuberculosis-tb",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Treatment200–240, especially208/240",
+      "assessment": "Distinct meningeal TB course and multidrug therapy. Specialty referral wording remains NICE, not falsely attributed to MSD.",
+      "source_metadata_sha256": "1fbcbd70473102148e4a7728ea892123c716c0d57edfc5d3e61b813eb08dc1de"
+    },
+    {
+      "source_id": "meningitis-nhs",
+      "url": "https://www.nhs.uk/conditions/meningitis/",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Symptoms56–83; Causes97; Treatment129–136",
+      "assessment": "Emergency signs, chemotherapy/HIV, and hospital IV antibiotics/fluids/oxygen; reviewed2026-06-12.",
+      "source_metadata_sha256": "9e7db2cc187b04dc247f31968f3b2dad7413f9e0245e3b57f522cb6adf847d06"
+    },
+    {
+      "source_id": "meningitis-rch-clinical",
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Meningitis_encephalitis/",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Investigations147–168; Treatment174–213",
+      "assessment": "Pediatric LP/imaging safety, local resistance/allergy, seizure and fluid support. Child scope retained, no dose exported.",
+      "source_metadata_sha256": "886c57555c3722d0c48fb6fb62c24ed570d247bf45c9896aa8a8de56201f2f0e"
+    },
+    {
+      "source_id": "meningitis-nih-cryptococcosis",
+      "url": "https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-opportunistic-infections/cryptococcosis",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Treating Disease; induction/consolidation/maintenance65–104",
+      "assessment": "HIV adults/adolescents; immune response affects duration. Not all fungi or all ages.",
+      "source_metadata_sha256": "89ff48a23001386845578f6adfe1dc40d5c1dcac085ae2ccddfc9e8881c4957d"
+    },
+    {
+      "source_id": "meningitis-who-guideline",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK614844/?report=classic",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "search_text_retrieved",
+      "locator": "Official Bookshelf Recommendations A.1.1, A.3, A.4, B.1, B.2; Executive summary NBK614846",
+      "assessment": "Actual original indexed sections: stabilize before LP, negative blood-test limits, selective imaging/no delay, supportive critical care, empiric risks and adjustment. Direct Bookshelf/IRIS challenge not counted as full read; B.5 not newly read; unchanged hearing recommendation inherited.",
+      "source_metadata_sha256": "bb2c07a80e7f5fd643961334374846bc7fc6ef2060c17d37b93d25c94f5e98fa"
+    },
+    {
+      "source_id": "meningitis-cdc-food-cold",
+      "url": "https://www.cdc.gov/restaurant-food-safety/php/investigations/proliferation-contributing-factors.html",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Background32; P8 lines77–80",
+      "assessment": "Refrigerator-temperature proliferation explanation. CDC/FDA/state contributor relationship now disclosed; not a new storage-duration rule.",
+      "source_metadata_sha256": "d0b8e865715d163e1d1379f6b69a5fb20b7bb16cbfa7349e62ee1c4bb9cfe2da"
+    },
+    {
+      "source_id": "meningitis-mayo-infant-feeding",
+      "url": "https://www.mayoclinic.org/diseases-conditions/common-cold-in-babies/symptoms-causes/syc-20351651",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "When to see a doctor300–320, especially314–315",
+      "assessment": "Infants refusing nursing or fluids need immediate medical help; general infant illness resource, not meningitis diagnosis.",
+      "source_metadata_sha256": "28b09836c08923d1d450b45de57d3cef990337545108056e879213d1679981ec"
+    },
+    {
+      "source_id": "meningitis-nsw-meningococcal",
+      "url": "https://www.health.nsw.gov.au/Infectious/factsheets/Pages/meningococcal_disease.aspx",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "What is meningococcal disease33–37; Who is at risk72",
+      "assessment": "Meningitis and/or septicemia; absent working spleen. Supports functional as well as anatomic asplenia.",
+      "source_metadata_sha256": "a45de10982f95a4bc05e86bd11aa53feb9bd38a7c7cb8a698098c487addcea42"
+    },
+    {
+      "source_id": "meningitis-ukhsa-contacts",
+      "url": "https://www.gov.uk/guidance/outbreak-of-invasive-meningococcal-disease-south-east-england",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Antibiotics122–140, especially124",
+      "assessment": "Close confirmed/probable contacts prophylaxis regardless of vaccine; local outbreak-specific contact extensions not generalized.",
+      "source_metadata_sha256": "d119d94a7bfa36992ad1545fe4553afde9cca8abb6ed19bb2993af2cd0d907e1"
+    },
+    {
+      "source_id": "meningitis-nhs-sah",
+      "url": "https://www.nhs.uk/conditions/subarachnoid-haemorrhage/",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "locator": "Overview and Immediate action15–38",
+      "assessment": "Brain bleed/thunderclap emergency as a differential example.",
+      "source_metadata_sha256": "eb2b68cc42b399738b138a20401cdddaf31d7d654e11095e483da794efaf51a6"
+    },
+    {
+      "source_id": "meningitis-nice-ng240",
+      "url": "https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "search_text_retrieved",
+      "locator": "Recommendations1.1.8/1.1.14 risk factors;1.1.17;1.4.5–8;1.6;1.8;1.12.7",
+      "assessment": "Official indexed recommendations actually read; corrected spleen locator1.1.8, not1.1.5. Other previously accepted guideline conditions retained.",
+      "source_metadata_sha256": "3301c30fd9ad9ce3d037a302242a64d8be18de26dce687ad66d5e29b823f9c9f"
+    },
+    {
+      "source_id": "meningitis-lpt-viral-policy",
+      "url": "https://www.leicspart.nhs.uk/wp-content/uploads/2023/12/The-management-of-meningitis-policy-V10-Exp-Nov-26.pdf",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "article_retrieved",
+      "locator": "Original PDF p1 and p9 section3.2",
+      "assessment": "Downloaded original SHA256 9dce36d0e3053b1ea47f85b6ccd973470ebe04771a90cef8e7e2a16a51c25940. Ratified2023-12-05; review2026-05-01 passed, expiry2026-11-01. Viral-contact passage only; unrelated reassurance/diagnostic wording not adopted.",
+      "source_metadata_sha256": "2e673135e3b4441f944d5261297507e087da162ce4ac9a007a385014006775a3"
+    }
+  ],
+  "inherited_source_reads": [
+    {
+      "source_id": "meningitis-adam-tb",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-cdc-bacterial-meningitis",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-cdc-index",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-cdc-listeria",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-cdc-surveillance",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-cdc-tb-adverse",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-cdc-viral-meningitis",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-fda-listeria",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-healthdirect",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-healthdirect-vomiting",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-mayo-anaphylaxis",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-mayo-causes",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-mayo-migraine",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-mayo-treatment",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-nhs-antibiotics",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-nhs-migraine",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-nhs-vomiting",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-nice-tb",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-rch-dehydration",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    },
+    {
+      "source_id": "meningitis-who",
+      "basis": "reports/batch-01-meningitis-recheck.json",
+      "scope": "Only actual prior read/claim finding coverage, not a new full-page attestation."
+    }
+  ],
+  "accepted_source_ids": [
+    "meningitis-adam-tb",
+    "meningitis-cdc-bacterial-meningitis",
+    "meningitis-cdc-food-cold",
+    "meningitis-cdc-fungal-meningitis",
+    "meningitis-cdc-index",
+    "meningitis-cdc-listeria",
+    "meningitis-cdc-listeria-symptoms",
+    "meningitis-cdc-surveillance",
+    "meningitis-cdc-tb-adverse",
+    "meningitis-cdc-viral-meningitis",
+    "meningitis-fda-listeria",
+    "meningitis-healthdirect",
+    "meningitis-healthdirect-vomiting",
+    "meningitis-lpt-viral-policy",
+    "meningitis-mayo-anaphylaxis",
+    "meningitis-mayo-causes",
+    "meningitis-mayo-infant-feeding",
+    "meningitis-mayo-migraine",
+    "meningitis-mayo-treatment",
+    "meningitis-msd-acute",
+    "meningitis-msd-tb",
+    "meningitis-msd-viral",
+    "meningitis-nhs",
+    "meningitis-nhs-antibiotics",
+    "meningitis-nhs-migraine",
+    "meningitis-nhs-sah",
+    "meningitis-nhs-vomiting",
+    "meningitis-nice-ng240",
+    "meningitis-nice-tb",
+    "meningitis-nih-cryptococcosis",
+    "meningitis-nsw-meningococcal",
+    "meningitis-rch-clinical",
+    "meningitis-rch-dehydration",
+    "meningitis-ukhsa-contacts",
+    "meningitis-who",
+    "meningitis-who-guideline"
+  ],
+  "findings": [
+    {
+      "id": "M01",
+      "status": "resolved",
+      "resolution": "CDC and independently written LPT p9 corroborate virus acquisition versus meningitis; stale single-source assessment corrected."
+    },
+    {
+      "id": "M02",
+      "status": "resolved",
+      "resolution": "Inherited emergency conclusions unchanged; neither rash nor complete symptom set required."
+    },
+    {
+      "id": "M03",
+      "status": "resolved",
+      "resolution": "Inherited removal of unsupported forced-neck maneuver remains intact."
+    },
+    {
+      "id": "M04",
+      "status": "resolved",
+      "resolution": "Practical communication checklist is not a validated diagnostic score; no mechanical second-source requirement."
+    },
+    {
+      "id": "M05",
+      "status": "resolved",
+      "resolution": "WHO A.3 negative blood-marker limit; A.1.1/A.4 stabilization and selective imaging corroborate NICE. No delay to antibiotics preserved."
+    },
+    {
+      "id": "M06",
+      "status": "resolved",
+      "resolution": "MSD TB independently corroborates distinct multidrug meningeal treatment; NIH HIV-specific cryptococcosis confirms immune-dependent duration. NICE specialist routing is bounded service guidance, not an unsupported efficacy threshold."
+    },
+    {
+      "id": "M07",
+      "status": "resolved",
+      "resolution": "NHS ordinary flu/gastroenteritis resemblance needs no duplicated wording. NHS SAH supports bleed example; NSW independently confirms meningitis and/or septicemia. Emergency actions remain corroborated."
+    },
+    {
+      "id": "M08",
+      "status": "resolved",
+      "resolution": "MSD/RCH/WHO give component-specific empiric selection and support-care evidence. NHS hospital fluids/oxygen and pediatric RCH seizure management read. CDC directly describes immune-risk viral hospital care; MSD offers complementary severe-illness/immune context, not fake exact second rule. Conditional hospital review is accepted within strongly corroborated emergency pathway."
+    },
+    {
+      "id": "M09",
+      "status": "resolved",
+      "resolution": "Revised infant-feeding wording checked against Mayo infant warning and NHS/RCH age-relevant illness assessment; adult Healthdirect limitation retained. Recordkeeping is practical support."
+    },
+    {
+      "id": "M10",
+      "status": "resolved",
+      "resolution": "CDC technical P8 supplies exact cold-growth mechanism, with FDA coauthorship/shared upstream disclosed. Distinct technical and patient writings are not represented as independent experiments."
+    },
+    {
+      "id": "M11",
+      "status": "resolved",
+      "resolution": "Chinese over-one-month boundary now matches English and WHO scope. WHO and NICE hearing clocks and strength remain explicitly attributed differences; no invented identical global deadline."
+    },
+    {
+      "id": "M12",
+      "status": "resolved",
+      "resolution": "Regional vaccination/prophylaxis scope stays bounded; UKHSA contact passage corroborates existing meningococcal contact action without exporting temporary Kent outbreak schedules."
+    },
+    {
+      "id": "P0-M13",
+      "status": "resolved",
+      "claims": [
+        "causes_risks-3"
+      ],
+      "resolution": "NSW functional spleen and NICE1.1.8/1.1.14 added precisely."
+    },
+    {
+      "id": "P0-M14",
+      "status": "resolved",
+      "claims": [
+        "special_populations-2"
+      ],
+      "resolution": "NHS chemotherapy and CDC post-transplant medicines explicitly bound, with Mayo mechanism complementary."
+    },
+    {
+      "id": "P0-M15",
+      "status": "resolved",
+      "claims": [
+        "special_populations-3"
+      ],
+      "resolution": "New actual-read CDC maternal symptoms passage supplies precise second writing alongside FDA; common upstream acknowledged."
+    },
+    {
+      "id": "P0-M16",
+      "status": "resolved",
+      "resolution": "Added the already reviewed CDC Listeria symptoms source to condition.source_ids; citation-list closure only. Section text and ledger/source hashes unchanged."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "summary-0",
+      "section": "summary",
+      "section_content_sha256": "20541354a8fb8f1d8c46f08305ccbc8a64327b8ab2dd6585989beed0ce1f1ca4",
+      "bilingual_claim_sha256": "5cd67066104b309af1545e6a997bb87e85952f1c8d09a34fef5f2e0a4ee99c45",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "inherited_verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-index",
+          "locator": "What it is; Causes"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Overview"
+        }
+      ]
+    },
+    {
+      "claim_id": "summary-1",
+      "section": "summary",
+      "section_content_sha256": "20541354a8fb8f1d8c46f08305ccbc8a64327b8ab2dd6585989beed0ce1f1ca4",
+      "bilingual_claim_sha256": "06796b9531a0ceea9bf470599b85f671ef48420f49c7176610a60bb94db8fd7d",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "inherited_verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Signs and symptoms"
+        },
+        {
+          "source_id": "meningitis-cdc-index",
+          "locator": "Symptoms"
+        }
+      ]
+    },
+    {
+      "claim_id": "summary-2",
+      "section": "summary",
+      "section_content_sha256": "20541354a8fb8f1d8c46f08305ccbc8a64327b8ab2dd6585989beed0ce1f1ca4",
+      "bilingual_claim_sha256": "28fb13fe5e12c16833df045381e27bb5771cca187a46927e7a35931188f8d08d",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M06"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Treatment: Bacterial; Viral; Other types"
+        },
+        {
+          "source_id": "meningitis-nice-tb",
+          "locator": "1.3.7.1–1.3.7.3"
+        },
+        {
+          "source_id": "meningitis-healthdirect",
+          "locator": "What is meningitis?; How is meningitis diagnosed?"
+        }
+      ]
+    },
+    {
+      "claim_id": "causes_risks-0",
+      "section": "causes_risks",
+      "section_content_sha256": "c486967ecbc99134215d1422bee1ab5a367abd760dc62fd0e0a0b8941632a46f",
+      "bilingual_claim_sha256": "9daa505dbdb6690335d57dd7d42f833a67c2db3150916e470e4947587e211d67",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "supported_reviewer_binding_needed",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Causes: Other meningitis causes"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Treatment: Other types"
+        },
+        {
+          "source_id": "meningitis-healthdirect",
+          "locator": "Non-infectious meningitis; lines133–140"
+        }
+      ]
+    },
+    {
+      "claim_id": "causes_risks-1",
+      "section": "causes_risks",
+      "section_content_sha256": "c486967ecbc99134215d1422bee1ab5a367abd760dc62fd0e0a0b8941632a46f",
+      "bilingual_claim_sha256": "14ad5f9eb3b9dc199de0b99f0ea6cba0866fa2d8776ba75018456eb02393ce08",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M01"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Transmission"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "How meningitis spreads"
+        }
+      ]
+    },
+    {
+      "claim_id": "causes_risks-2",
+      "section": "causes_risks",
+      "section_content_sha256": "c486967ecbc99134215d1422bee1ab5a367abd760dc62fd0e0a0b8941632a46f",
+      "bilingual_claim_sha256": "03b0cc0c09284be80dbb725332bf42cb5023f5c489f74352be90a38dba4f800e",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "single_origin_supported",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M01"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-viral-meningitis",
+          "locator": "Risk factors: Close contacts are not likely to develop meningitis"
+        },
+        {
+          "source_id": "meningitis-lpt-viral-policy",
+          "locator": "PDF p9, section3.2 Viral meningitis"
+        }
+      ]
+    },
+    {
+      "claim_id": "causes_risks-3",
+      "section": "causes_risks",
+      "section_content_sha256": "c486967ecbc99134215d1422bee1ab5a367abd760dc62fd0e0a0b8941632a46f",
+      "bilingual_claim_sha256": "36870a47248443558e8ef15acd682b546f9c5ae533ff25f28b73ce0b8b09fb72",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "partial_support",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "P0-M13"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-bacterial-meningitis",
+          "locator": "Risk factors"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Risk factors"
+        },
+        {
+          "source_id": "meningitis-nsw-meningococcal",
+          "locator": "Who is at risk; asplenia/hyposplenia vaccine-risk lists"
+        },
+        {
+          "source_id": "meningitis-nice-ng240",
+          "locator": "1.1.8; 1.1.14 Risk factors"
+        }
+      ]
+    },
+    {
+      "claim_id": "causes_risks-4",
+      "section": "causes_risks",
+      "section_content_sha256": "c486967ecbc99134215d1422bee1ab5a367abd760dc62fd0e0a0b8941632a46f",
+      "bilingual_claim_sha256": "f9161c46ae51b706d5b6168a8fcae978544f3c4290e7e7c31a8b01dc82dc345c",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-fungal-meningitis",
+          "locator": "Risk factors; How it does not spread"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Causes: Fungal meningitis"
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-0",
+      "section": "red_flags",
+      "section_content_sha256": "6a16ec53e69055e556abf324bf876dc7325821eb91a98a177920bb9a7bc52062",
+      "bilingual_claim_sha256": "855c8dc4c4eebbebe855e47fb1dc1664c0f2ce96afa9327b16751d51e812fd0f",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M02"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "When and where to get help; You may not have all symptoms"
+        },
+        {
+          "source_id": "meningitis-healthdirect",
+          "locator": "What is meningitis?; When should I see my doctor?"
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-1",
+      "section": "red_flags",
+      "section_content_sha256": "6a16ec53e69055e556abf324bf876dc7325821eb91a98a177920bb9a7bc52062",
+      "bilingual_claim_sha256": "c7c9fd669769ce8456dd6a4580d36d6dbc7ee00fad0d9754733b985888148562",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M02"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "When and where to get help: emergency symptom bullets"
+        },
+        {
+          "source_id": "meningitis-healthdirect",
+          "locator": "Symptoms; When should I see my doctor?"
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-2",
+      "section": "red_flags",
+      "section_content_sha256": "6a16ec53e69055e556abf324bf876dc7325821eb91a98a177920bb9a7bc52062",
+      "bilingual_claim_sha256": "3c252fe632394587fcb301a6a73937673d9989e2ecf9522175f34f6e07e0fddd",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M02",
+        "M03"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "When and where to get help; Rash"
+        },
+        {
+          "source_id": "meningitis-healthdirect",
+          "locator": "Symptoms; When should I see my doctor?"
+        }
+      ]
+    },
+    {
+      "claim_id": "red_flags-3",
+      "section": "red_flags",
+      "section_content_sha256": "6a16ec53e69055e556abf324bf876dc7325821eb91a98a177920bb9a7bc52062",
+      "bilingual_claim_sha256": "f00aabf948933b3d5a25aabf3d364f12865e1283dbe740fbf2979c28ee1dcabc",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M02",
+        "M03"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Symptoms in babies/under 5; emergency advice for under 5"
+        },
+        {
+          "source_id": "meningitis-healthdirect",
+          "locator": "Symptoms in young children and babies; When should I see my doctor?"
+        }
+      ]
+    },
+    {
+      "claim_id": "care-0",
+      "section": "care",
+      "section_content_sha256": "1b3462c211e56dc09bddbf52c9a1c21e9645848c9d23d3fff2e8bc2c1a07845f",
+      "bilingual_claim_sha256": "5d581cbaf47925f9bfce9b4490cb630a208caed975e38f919cbb682bf9c35a4b",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "When and where to get help"
+        },
+        {
+          "source_id": "meningitis-healthdirect",
+          "locator": "When should I see my doctor?"
+        }
+      ]
+    },
+    {
+      "claim_id": "care-1",
+      "section": "care",
+      "section_content_sha256": "1b3462c211e56dc09bddbf52c9a1c21e9645848c9d23d3fff2e8bc2c1a07845f",
+      "bilingual_claim_sha256": "e28112b1ccdf2282473c93d2038add7f41ba6e5b4280499cd45096944960b4cf",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "editorial_practical_guidance",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M04"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Preparing for your appointment: What you can do; What to expect"
+        }
+      ]
+    },
+    {
+      "claim_id": "care-2",
+      "section": "care",
+      "section_content_sha256": "1b3462c211e56dc09bddbf52c9a1c21e9645848c9d23d3fff2e8bc2c1a07845f",
+      "bilingual_claim_sha256": "75c6708e1e3eb9d791140f5061e3797c2f3e72a247d3d4dacb8505eeb5efaa3b",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "meningitis-cdc-viral-meningitis",
+          "locator": "When to seek emergency care; Treatment and recovery"
+        }
+      ]
+    },
+    {
+      "claim_id": "care-3",
+      "section": "care",
+      "section_content_sha256": "1b3462c211e56dc09bddbf52c9a1c21e9645848c9d23d3fff2e8bc2c1a07845f",
+      "bilingual_claim_sha256": "1f33218ebc8a133e454765f2d0e24bf56ca7e4d79f36e231f9243b90e565d201",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "partial_population_support",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M09"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs-vomiting",
+          "locator": "Call 111 now; Call 999 or A&E"
+        },
+        {
+          "source_id": "meningitis-healthdirect-vomiting",
+          "locator": "When to seek urgent care"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "When and where to get help"
+        }
+      ]
+    },
+    {
+      "claim_id": "care-4",
+      "section": "care",
+      "section_content_sha256": "1b3462c211e56dc09bddbf52c9a1c21e9645848c9d23d3fff2e8bc2c1a07845f",
+      "bilingual_claim_sha256": "d09aefce45e64210fac60b9860aa797a7c3573d6dee56216032519d0720cf5f0",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "partial_support",
+      "prior_text_unchanged": false,
+      "resolution_ids": [
+        "M09"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-rch-dehydration",
+          "locator": "Key points; When to get help"
+        },
+        {
+          "source_id": "meningitis-nhs-vomiting",
+          "locator": "Call 111 now"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Emergency advice for under 5"
+        },
+        {
+          "source_id": "meningitis-mayo-infant-feeding",
+          "locator": "When to see a doctor: Get medical help right away; lines314–320"
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-0",
+      "section": "diagnosis",
+      "section_content_sha256": "57145b1be87ba60b57e5dff815c28ca5baa186c218a2413ef9371c7eba251aa3",
+      "bilingual_claim_sha256": "3029f667e94f61b7e2579e32ccb7b1f2aa454712370ac3e01e56e00f341585df",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M05"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Diagnosis"
+        },
+        {
+          "source_id": "meningitis-nice-ng240",
+          "locator": "1.4.2"
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-1",
+      "section": "diagnosis",
+      "section_content_sha256": "57145b1be87ba60b57e5dff815c28ca5baa186c218a2413ef9371c7eba251aa3",
+      "bilingual_claim_sha256": "3fe8af67b35e69254c2b2150a7c84d3671f565aa84c9957f32cb3f7f7f75d2ea",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M05"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Diagnosis: Spinal tap"
+        },
+        {
+          "source_id": "meningitis-nice-ng240",
+          "locator": "1.4.14"
+        },
+        {
+          "source_id": "meningitis-healthdirect",
+          "locator": "How is meningitis diagnosed?"
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-2",
+      "section": "diagnosis",
+      "section_content_sha256": "57145b1be87ba60b57e5dff815c28ca5baa186c218a2413ef9371c7eba251aa3",
+      "bilingual_claim_sha256": "cef53a0f510132ebc6292cd611b1002639163270fa663c37ff4f38d854bba3b7",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "partial_support",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M05"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Diagnosis: Blood cultures; Spinal tap"
+        },
+        {
+          "source_id": "meningitis-nice-ng240",
+          "locator": "1.4.4–1.4.5"
+        },
+        {
+          "source_id": "meningitis-who-guideline",
+          "locator": "A.3 Blood investigations / blood markers: peripheral tests cannot confirm or exclude bacterial meningitis"
+        }
+      ]
+    },
+    {
+      "claim_id": "diagnosis-3",
+      "section": "diagnosis",
+      "section_content_sha256": "57145b1be87ba60b57e5dff815c28ca5baa186c218a2413ef9371c7eba251aa3",
+      "bilingual_claim_sha256": "c7e095e9f6cf6bb1ea1a8a4282096302df8ae00eed346f8f06ca16020e6d8e1f",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "partial_support",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M05"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-nice-ng240",
+          "locator": "1.4.1; 1.4.6–1.4.12"
+        },
+        {
+          "source_id": "meningitis-who",
+          "locator": "Diagnosis; Treatment"
+        },
+        {
+          "source_id": "meningitis-who-guideline",
+          "locator": "A.1 contraindications/reasons for deferral; A.4 Cranial imaging; executive summary p xiii / recommendations p28"
+        },
+        {
+          "source_id": "meningitis-msd-acute",
+          "locator": "Diagnosis: lumbar puncture; lines250–262,539"
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-0",
+      "section": "differentials",
+      "section_content_sha256": "0ea1bb178fa550c1b3a913a1b98723beca8191ee3964940d6a2a8e1be65c6396",
+      "bilingual_claim_sha256": "0af9d815ccaab460e9f65ac0a5afdac079835ad1c7dbebac67126bb6ceac3b39",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "single_origin_supported",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M07"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Symptoms: early symptoms can be like flu, a stomach bug or a hangover"
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-1",
+      "section": "differentials",
+      "section_content_sha256": "0ea1bb178fa550c1b3a913a1b98723beca8191ee3964940d6a2a8e1be65c6396",
+      "bilingual_claim_sha256": "1d02573ca64351aa4babbcf57fd3e8b5876aad31b09e3f5dc53f5264230f089e",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M07"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-migraine",
+          "locator": "Symptoms: Prodrome; Attack"
+        },
+        {
+          "source_id": "meningitis-nhs-migraine",
+          "locator": "Symptoms of migraine"
+        },
+        {
+          "source_id": "meningitis-healthdirect",
+          "locator": "Symptoms; Diagnosis"
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-2",
+      "section": "differentials",
+      "section_content_sha256": "0ea1bb178fa550c1b3a913a1b98723beca8191ee3964940d6a2a8e1be65c6396",
+      "bilingual_claim_sha256": "c318a2d4d54aa2bee1e60c3c1da270dac20e614464cad67a87f595b638e393b7",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "verified_action_partial_explanation",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M07"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs-migraine",
+          "locator": "Immediate action required"
+        },
+        {
+          "source_id": "meningitis-mayo-migraine",
+          "locator": "When to see a doctor"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "When and where to get help"
+        },
+        {
+          "source_id": "meningitis-nhs-sah",
+          "locator": "Definition; emergency advice; Symptoms"
+        }
+      ]
+    },
+    {
+      "claim_id": "differentials-3",
+      "section": "differentials",
+      "section_content_sha256": "0ea1bb178fa550c1b3a913a1b98723beca8191ee3964940d6a2a8e1be65c6396",
+      "bilingual_claim_sha256": "6d9abeccc1750c11f3741e96bc7ec9f5f6b85552e116eb5dff0c974fd15c8ad1",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "single_origin_supported",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M07"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-index",
+          "locator": "Causes; Myths and misconceptions"
+        },
+        {
+          "source_id": "meningitis-cdc-surveillance",
+          "locator": "Disease description; Clinical characteristics"
+        },
+        {
+          "source_id": "meningitis-nsw-meningococcal",
+          "locator": "What is meningococcal disease? first bullet, lines33–37"
+        }
+      ]
+    },
+    {
+      "claim_id": "treatment-0",
+      "section": "treatment",
+      "section_content_sha256": "7d0bffe2e1e5461abcee9eeaf4bc08dd6661bde89f5aaf5edaac9081882723bb",
+      "bilingual_claim_sha256": "655648983014ff08941af0051f58b370860cf6954e514f15d7f52ed047f04fd3",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "meningitis-healthdirect",
+          "locator": "How is meningitis treated?"
+        }
+      ]
+    },
+    {
+      "claim_id": "treatment-1",
+      "section": "treatment",
+      "section_content_sha256": "7d0bffe2e1e5461abcee9eeaf4bc08dd6661bde89f5aaf5edaac9081882723bb",
+      "bilingual_claim_sha256": "1ec875e49407a942936ec0722f6671d3131f8d3d5e50d4a4f078dbde7ef2ded0",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "supported_reviewer_binding_needed",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M08"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Bacterial meningitis"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "meningitis-nice-ng240",
+          "locator": "1.4.1; 1.6.5; 1.6.8"
+        },
+        {
+          "source_id": "meningitis-msd-acute",
+          "locator": "Treatment: Antibiotics, lines344–360"
+        }
+      ]
+    },
+    {
+      "claim_id": "treatment-2",
+      "section": "treatment",
+      "section_content_sha256": "7d0bffe2e1e5461abcee9eeaf4bc08dd6661bde89f5aaf5edaac9081882723bb",
+      "bilingual_claim_sha256": "8e4c805f0a44fb1508421610143b287ed52e9f28dedaa09e618681184cf14dc3",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "partial_support",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M08"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Bacterial meningitis"
+        },
+        {
+          "source_id": "meningitis-nice-ng240",
+          "locator": "1.4.8; 1.4.11"
+        },
+        {
+          "source_id": "meningitis-who-guideline",
+          "locator": "B.1 General management; B.5 Fluid management / executive-summary Fluid management remarks"
+        },
+        {
+          "source_id": "meningitis-rch-clinical",
+          "locator": "Ongoing management, lines206–213"
+        }
+      ]
+    },
+    {
+      "claim_id": "treatment-3",
+      "section": "treatment",
+      "section_content_sha256": "7d0bffe2e1e5461abcee9eeaf4bc08dd6661bde89f5aaf5edaac9081882723bb",
+      "bilingual_claim_sha256": "0e6cdf63e5c72a90f9aaafd26326a475fbcceafec7f5ec8686969f21ae0f6029",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "partial_support",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M08"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Viral meningitis"
+        },
+        {
+          "source_id": "meningitis-cdc-viral-meningitis",
+          "locator": "Risk factors; Treatment and recovery"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "meningitis-msd-viral",
+          "locator": "Treatment, lines119–134"
+        }
+      ]
+    },
+    {
+      "claim_id": "treatment-4",
+      "section": "treatment",
+      "section_content_sha256": "7d0bffe2e1e5461abcee9eeaf4bc08dd6661bde89f5aaf5edaac9081882723bb",
+      "bilingual_claim_sha256": "76590a668763e4efcc8d6f180635d1c935da14e19420af03ac67a5ba6e7b79cd",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "partial_support",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M08"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-fungal-meningitis",
+          "locator": "Treatment and recovery"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Other types"
+        },
+        {
+          "source_id": "meningitis-healthdirect",
+          "locator": "Fungal meningitis: treatment"
+        },
+        {
+          "source_id": "meningitis-nih-cryptococcosis",
+          "locator": "Treating CNS/disseminated disease; maintenance stopping/restarting criteria, lines65–104"
+        }
+      ]
+    },
+    {
+      "claim_id": "treatment-5",
+      "section": "treatment",
+      "section_content_sha256": "7d0bffe2e1e5461abcee9eeaf4bc08dd6661bde89f5aaf5edaac9081882723bb",
+      "bilingual_claim_sha256": "cf10144c6e7d19f3a06f69100211c9bf08b4028d4a1f0788c4ab4997994e23a8",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "partial_support",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M06"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-nice-tb",
+          "locator": "1.3.7.1–1.3.7.3; 1.4.2.2"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Other types"
+        },
+        {
+          "source_id": "meningitis-who-guideline",
+          "locator": "Introduction 1.7 at https://www.ncbi.nlm.nih.gov/books/NBK614833/"
+        },
+        {
+          "source_id": "meningitis-msd-tb",
+          "locator": "Treatment of Extrapulmonary TB, lines208–211; Key points240"
+        }
+      ]
+    },
+    {
+      "claim_id": "medications-0",
+      "section": "medications",
+      "section_content_sha256": "90aafc1550a3624288fa0a8add1a77efe9f0ba411bd3821f79bfb5dd3eb50c5a",
+      "bilingual_claim_sha256": "0b4c62b27b4dbb05fcdbd07bbb083892bee21055d820e91541817fe27c831662",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "partial_support",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M08"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Bacterial meningitis; What to expect from your doctor"
+        },
+        {
+          "source_id": "meningitis-msd-acute",
+          "locator": "Etiology; Treatment: Antibiotics, lines352–363"
+        },
+        {
+          "source_id": "meningitis-rch-clinical",
+          "locator": "Treatment174; suggested age-specific regimen178–191; Directed treatment223–236"
+        },
+        {
+          "source_id": "meningitis-who-guideline",
+          "locator": "B.2 Empiric antimicrobial therapy: risk factors, local pneumococcal resistance and beta-lactam allergy remarks"
+        }
+      ]
+    },
+    {
+      "claim_id": "medications-1",
+      "section": "medications",
+      "section_content_sha256": "90aafc1550a3624288fa0a8add1a77efe9f0ba411bd3821f79bfb5dd3eb50c5a",
+      "bilingual_claim_sha256": "ed967c37c278a2f067841357f36b5aa901dccfd2f04f8da89a3b00b063be1eda",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M08"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Bacterial meningitis; Viral meningitis"
+        },
+        {
+          "source_id": "meningitis-cdc-viral-meningitis",
+          "locator": "Treatment and recovery: Antiviral medicines"
+        }
+      ]
+    },
+    {
+      "claim_id": "medications-2",
+      "section": "medications",
+      "section_content_sha256": "90aafc1550a3624288fa0a8add1a77efe9f0ba411bd3821f79bfb5dd3eb50c5a",
+      "bilingual_claim_sha256": "9835ab543fea96184fc7b7bdc22ad942f9fa36852e891357a47b7904ff605733",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified_attributed_guideline_conditions",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M08"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "meningitis-nice-ng240",
+          "locator": "1.8.1–1.8.5"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Bacterial meningitis"
+        }
+      ]
+    },
+    {
+      "claim_id": "medications-3",
+      "section": "medications",
+      "section_content_sha256": "90aafc1550a3624288fa0a8add1a77efe9f0ba411bd3821f79bfb5dd3eb50c5a",
+      "bilingual_claim_sha256": "010126881189f7b3576593497f984ad93bd08fdec8e694bc2799e560c39627b8",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M08"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs-antibiotics",
+          "locator": "Antibiotic allergic reactions: Call 999/A&E now"
+        },
+        {
+          "source_id": "meningitis-mayo-anaphylaxis",
+          "locator": "Symptoms; When to see a doctor; Causes"
+        }
+      ]
+    },
+    {
+      "claim_id": "medications-4",
+      "section": "medications",
+      "section_content_sha256": "90aafc1550a3624288fa0a8add1a77efe9f0ba411bd3821f79bfb5dd3eb50c5a",
+      "bilingual_claim_sha256": "d0ba3fee8be5625e9fd720fc11b783745233a6656495c8763565c0624d9a6b7c",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified_shared_upstream",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M06",
+        "M08"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-tb-adverse",
+          "locator": "Patient education; Possible adverse effects"
+        },
+        {
+          "source_id": "meningitis-adam-tb",
+          "locator": "Side Effects and Other Problems; When to Call the Doctor"
+        }
+      ]
+    },
+    {
+      "claim_id": "diet-0",
+      "section": "diet",
+      "section_content_sha256": "ad080606e93fa5f01eac590ab29ecca256c3c86f1ba933a146b262bcc4fce6ae",
+      "bilingual_claim_sha256": "a4708738845c6373947249162bfcd29f6e2d4af153a4297b577199d4325c484a",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Treatment: Bacterial; Viral; Other types"
+        },
+        {
+          "source_id": "meningitis-cdc-listeria",
+          "locator": "Choose safer foods"
+        }
+      ]
+    },
+    {
+      "claim_id": "diet-1",
+      "section": "diet",
+      "section_content_sha256": "ad080606e93fa5f01eac590ab29ecca256c3c86f1ba933a146b262bcc4fce6ae",
+      "bilingual_claim_sha256": "459a04e407873235309799525101e52f6990324db8bbbfc68ade82b412897c47",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "partial_population_support",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M09"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Viral meningitis"
+        },
+        {
+          "source_id": "meningitis-nhs-vomiting",
+          "locator": "How to treat vomiting; Call 111 now"
+        },
+        {
+          "source_id": "meningitis-healthdirect-vomiting",
+          "locator": "When to seek urgent care; Self-care at home"
+        }
+      ]
+    },
+    {
+      "claim_id": "diet-2",
+      "section": "diet",
+      "section_content_sha256": "ad080606e93fa5f01eac590ab29ecca256c3c86f1ba933a146b262bcc4fce6ae",
+      "bilingual_claim_sha256": "61c06ee890dddd0f1d76959360462902a6b8d0e04426b29749391b548d8eb050",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified_shared_upstream",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M10"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-listeria",
+          "locator": "Who is at risk; Choose safer foods: dairy"
+        },
+        {
+          "source_id": "meningitis-fda-listeria",
+          "locator": "FAQ How could I get listeriosis; To Eat or Not to Eat"
+        }
+      ]
+    },
+    {
+      "claim_id": "diet-3",
+      "section": "diet",
+      "section_content_sha256": "ad080606e93fa5f01eac590ab29ecca256c3c86f1ba933a146b262bcc4fce6ae",
+      "bilingual_claim_sha256": "093b01dcf272e43bf7844b46d18fc31ce4c57e1c8ace567987d674fb861b7ba2",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified_shared_upstream",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M10"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-listeria",
+          "locator": "Choose safer foods: unheated queso fresco-type cheeses; safer pasteurized hard cheeses"
+        },
+        {
+          "source_id": "meningitis-fda-listeria",
+          "locator": "To Eat or Not to Eat: Avoid; It is okay to eat"
+        }
+      ]
+    },
+    {
+      "claim_id": "diet-4",
+      "section": "diet",
+      "section_content_sha256": "ad080606e93fa5f01eac590ab29ecca256c3c86f1ba933a146b262bcc4fce6ae",
+      "bilingual_claim_sha256": "e383b8620b0949193c966760d248bdd410796ad400f28ad34d437b27255be3ad",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "partial_support",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M10"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-listeria",
+          "locator": "Choose safer foods: deli meats, cold cuts and hot dogs"
+        },
+        {
+          "source_id": "meningitis-fda-listeria",
+          "locator": "FAQ What is Listeria; To Eat or Not to Eat"
+        },
+        {
+          "source_id": "meningitis-cdc-food-cold",
+          "locator": "P8 Extended refrigeration; lines77–80"
+        }
+      ]
+    },
+    {
+      "claim_id": "daily_care-0",
+      "section": "daily_care",
+      "section_content_sha256": "a83fb0e6ecae458274544c9d23ae2d32561f4cf94e90854b81d1187cb27bc55d",
+      "bilingual_claim_sha256": "dfe664ea9bee803853659199013b1e3a31493c1614a04c6468f4a7709292693c",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Treatment; When and where to get help"
+        },
+        {
+          "source_id": "meningitis-healthdirect",
+          "locator": "How is meningitis treated?; When should I see my doctor?"
+        }
+      ]
+    },
+    {
+      "claim_id": "daily_care-1",
+      "section": "daily_care",
+      "section_content_sha256": "a83fb0e6ecae458274544c9d23ae2d32561f4cf94e90854b81d1187cb27bc55d",
+      "bilingual_claim_sha256": "19442c70e988fe01f3eb05be1d74e6fb22e4accdd38bc8237c3050a0ee955082",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "editorial_practical_guidance",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M09"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Viral meningitis; Preparing for your appointment"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Treatment; When and where to get help"
+        }
+      ]
+    },
+    {
+      "claim_id": "daily_care-2",
+      "section": "daily_care",
+      "section_content_sha256": "a83fb0e6ecae458274544c9d23ae2d32561f4cf94e90854b81d1187cb27bc55d",
+      "bilingual_claim_sha256": "bf962267c7358fbffd6065babaef232a41766225924677865b5afa3db5193172",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Prevention: close contact advice"
+        },
+        {
+          "source_id": "meningitis-healthdirect",
+          "locator": "Can meningitis be prevented?"
+        }
+      ]
+    },
+    {
+      "claim_id": "daily_care-3",
+      "section": "daily_care",
+      "section_content_sha256": "a83fb0e6ecae458274544c9d23ae2d32561f4cf94e90854b81d1187cb27bc55d",
+      "bilingual_claim_sha256": "c5625ff8c4f65283cadda0fb8b86dbeb0e7f3bc7196c05e6391808b16fd9f78e",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified_action_with_practical_planning",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M09"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-nice-ng240",
+          "locator": "1.12.7; 1.12.9–1.12.12"
+        },
+        {
+          "source_id": "meningitis-who-guideline",
+          "locator": "C.4 Hearing loss: Implementation considerations"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "When and where to get help"
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-0",
+      "section": "special_populations",
+      "section_content_sha256": "ae52be2f1076ff26a35657bcbdf30fda7a366091756e6926201ce4d31047b807",
+      "bilingual_claim_sha256": "9d0247e739939d73f30d7f40fc1450481f4c394d81ca4452722d63adcff82bc1",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Who is at risk; Signs and symptoms; Treatment"
+        },
+        {
+          "source_id": "meningitis-cdc-bacterial-meningitis",
+          "locator": "Risk factors"
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-1",
+      "section": "special_populations",
+      "section_content_sha256": "ae52be2f1076ff26a35657bcbdf30fda7a366091756e6926201ce4d31047b807",
+      "bilingual_claim_sha256": "b9046bb679a0e967bd886a714c72cf8b5aae82f66806d617ce7495ac7e030ee7",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "supported_reviewer_binding_needed",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-index",
+          "locator": "Symptoms in babies"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Signs in newborns"
+        },
+        {
+          "source_id": "meningitis-who-guideline",
+          "locator": "Introduction 1.7: scope"
+        },
+        {
+          "source_id": "meningitis-nice-ng240",
+          "locator": "Introduction / 1.4.13 neonatal infection cross-reference"
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-2",
+      "section": "special_populations",
+      "section_content_sha256": "ae52be2f1076ff26a35657bcbdf30fda7a366091756e6926201ce4d31047b807",
+      "bilingual_claim_sha256": "d0e1b958d45cbb0eb222893ffeba9617ab41deabf7a0d91b06596672bed910e0",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "partial_support",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "P0-M14"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-fungal-meningitis",
+          "locator": "Risk factors"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Risk factors: Compromised immune system; Fungal meningitis"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "What to expect from your doctor"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Causes of meningitis: higher-risk groups"
+        }
+      ]
+    },
+    {
+      "claim_id": "special_populations-3",
+      "section": "special_populations",
+      "section_content_sha256": "ae52be2f1076ff26a35657bcbdf30fda7a366091756e6926201ce4d31047b807",
+      "bilingual_claim_sha256": "4474f42fefcfd421a79b9a220b51600b2eb802b78be0c1ade164815f4c8af7e3",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "partial_support",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "P0-M15"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Risk factors: Pregnancy; Bacterial meningitis: Listeria"
+        },
+        {
+          "source_id": "meningitis-fda-listeria",
+          "locator": "FAQ How could listeriosis affect me / my baby"
+        },
+        {
+          "source_id": "meningitis-cdc-listeria",
+          "locator": "Who is at risk; Choose safer foods"
+        },
+        {
+          "source_id": "meningitis-cdc-listeria-symptoms",
+          "locator": "Severity of invasive illness: Women who are pregnant; Symptoms of invasive illness"
+        }
+      ]
+    },
+    {
+      "claim_id": "prognosis_followup-0",
+      "section": "prognosis_followup",
+      "section_content_sha256": "ca8f959d667a1f66122ccfaeaf25d7f0e8270633f884d3c0db52ebf8028240e9",
+      "bilingual_claim_sha256": "a5b9acabdfbb606c04f09ae5cf6df1ff42ac73e7614bd724dc32749e8e4052bd",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "inherited_verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Complications and sequelae; Treatment"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Complications"
+        }
+      ]
+    },
+    {
+      "claim_id": "prognosis_followup-1",
+      "section": "prognosis_followup",
+      "section_content_sha256": "ca8f959d667a1f66122ccfaeaf25d7f0e8270633f884d3c0db52ebf8028240e9",
+      "bilingual_claim_sha256": "48f7e516bf7f591ae1dc2afed043babb569cdc14fe7543e1c0aa7fea52824ed8",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "partial_support",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M06"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-viral-meningitis",
+          "locator": "Treatment and recovery"
+        },
+        {
+          "source_id": "meningitis-cdc-fungal-meningitis",
+          "locator": "Treatment and recovery"
+        },
+        {
+          "source_id": "meningitis-nice-tb",
+          "locator": "1.3.7.1–1.3.7.3"
+        },
+        {
+          "source_id": "meningitis-mayo-treatment",
+          "locator": "Treatment"
+        },
+        {
+          "source_id": "meningitis-msd-tb",
+          "locator": "Treatment of Extrapulmonary TB, lines208–211"
+        },
+        {
+          "source_id": "meningitis-nih-cryptococcosis",
+          "locator": "Maintenance therapy; stopping/restarting criteria, lines93–104"
+        }
+      ]
+    },
+    {
+      "claim_id": "prognosis_followup-2",
+      "section": "prognosis_followup",
+      "section_content_sha256": "ca8f959d667a1f66122ccfaeaf25d7f0e8270633f884d3c0db52ebf8028240e9",
+      "bilingual_claim_sha256": "05fbd2d3eb3de78f55d71d12b2c42d8583b21a06522d65ab8149a903d4a4bf05",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M11"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-who-guideline",
+          "locator": "C.4 Hearing loss: recommendation and implementation"
+        },
+        {
+          "source_id": "meningitis-nice-ng240",
+          "locator": "1.12.7"
+        }
+      ]
+    },
+    {
+      "claim_id": "prognosis_followup-3",
+      "section": "prognosis_followup",
+      "section_content_sha256": "ca8f959d667a1f66122ccfaeaf25d7f0e8270633f884d3c0db52ebf8028240e9",
+      "bilingual_claim_sha256": "8bb148b9bcd05430fa2da7488a9e2d865d7d64ec8825d9bc9568e9f34376db64",
+      "verdict": "accepted",
+      "review_basis": "targeted_resolution_of_prior_gap_or_changed_text",
+      "prior_status": "verified_attributed_guideline_difference",
+      "prior_text_unchanged": false,
+      "resolution_ids": [
+        "M11"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-who-guideline",
+          "locator": "Introduction 1.7; C.4 Hearing loss"
+        },
+        {
+          "source_id": "meningitis-nice-ng240",
+          "locator": "1.12.7; 1.12.9"
+        }
+      ]
+    },
+    {
+      "claim_id": "prognosis_followup-4",
+      "section": "prognosis_followup",
+      "section_content_sha256": "ca8f959d667a1f66122ccfaeaf25d7f0e8270633f884d3c0db52ebf8028240e9",
+      "bilingual_claim_sha256": "e0321ea2f37a2943d0f0f0f001feb41f6601dc51d27d4195dfa7c3210917462e",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified_attributed_evidence_grade",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M11"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-who-guideline",
+          "locator": "C.4 Hearing loss: Strong recommendation; Justification"
+        }
+      ]
+    },
+    {
+      "claim_id": "prognosis_followup-5",
+      "section": "prognosis_followup",
+      "section_content_sha256": "ca8f959d667a1f66122ccfaeaf25d7f0e8270633f884d3c0db52ebf8028240e9",
+      "bilingual_claim_sha256": "d17fda83060c8c37044b395db8e83152d7c5f913898ade828af3e0b5aee628fc",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-nice-ng240",
+          "locator": "1.12.9–1.12.15; 1.13.1"
+        },
+        {
+          "source_id": "meningitis-who",
+          "locator": "Complications and sequelae; Treatment"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Recovering; When and where to get help"
+        }
+      ]
+    },
+    {
+      "claim_id": "complications-0",
+      "section": "complications",
+      "section_content_sha256": "7c8b06f909b0e89630e88c10631e4a243b369c7c3744d35a939ca1828e1891ec",
+      "bilingual_claim_sha256": "ca35b9a625c32e99aaaaf335bee4f2d4a18978b326153a31531a1f147bfea15a",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "inherited_verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Complications and sequelae"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Complications"
+        }
+      ]
+    },
+    {
+      "claim_id": "complications-1",
+      "section": "complications",
+      "section_content_sha256": "7c8b06f909b0e89630e88c10631e4a243b369c7c3744d35a939ca1828e1891ec",
+      "bilingual_claim_sha256": "eacab25552b536228633120ca281962e79a8c9e356f64904f72eca2b294f1cfb",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "inherited_verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-bacterial-meningitis",
+          "locator": "Complications; Treatment"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Complications"
+        },
+        {
+          "source_id": "meningitis-who",
+          "locator": "Complications and sequelae; Treatment"
+        }
+      ]
+    },
+    {
+      "claim_id": "complications-2",
+      "section": "complications",
+      "section_content_sha256": "7c8b06f909b0e89630e88c10631e4a243b369c7c3744d35a939ca1828e1891ec",
+      "bilingual_claim_sha256": "8e7d4f2c58825b59a63722495a274106de7cc531f8dfd4eba53b5b1751b04ed6",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "inherited_verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Complications and sequelae"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "Recovering"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Complications"
+        }
+      ]
+    },
+    {
+      "claim_id": "prevention-0",
+      "section": "prevention",
+      "section_content_sha256": "0cb1b2bc921587c36e45bb1eab22848bfb16e32d51fe6fd77deee22bebdf3939",
+      "bilingual_claim_sha256": "cac12e666b2a2294ff548ab6a8a8edd90d9e8ede9065b9bc930afc71e6ad9043",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "inherited_verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [],
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Prevention: Vaccination"
+        },
+        {
+          "source_id": "meningitis-cdc-index",
+          "locator": "Prevention"
+        }
+      ]
+    },
+    {
+      "claim_id": "prevention-1",
+      "section": "prevention",
+      "section_content_sha256": "0cb1b2bc921587c36e45bb1eab22848bfb16e32d51fe6fd77deee22bebdf3939",
+      "bilingual_claim_sha256": "723ad80ac2ba48dca284e5ef0617f83ab2d9fcd9ee53b0acf334aa4e47385214",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M12"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Causes; Prevention: Vaccination"
+        },
+        {
+          "source_id": "meningitis-cdc-bacterial-meningitis",
+          "locator": "Causes; Prevention: Vaccination"
+        }
+      ]
+    },
+    {
+      "claim_id": "prevention-2",
+      "section": "prevention",
+      "section_content_sha256": "0cb1b2bc921587c36e45bb1eab22848bfb16e32d51fe6fd77deee22bebdf3939",
+      "bilingual_claim_sha256": "3ef912c5aea6c56d1cbdfed482a7c816ccdbca315cc24edf951b4cc4b6321f1c",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified_scope_statement",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M12"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-who",
+          "locator": "Prevention: Vaccination"
+        },
+        {
+          "source_id": "meningitis-nhs",
+          "locator": "How to reduce risk: Vaccination"
+        },
+        {
+          "source_id": "meningitis-cdc-bacterial-meningitis",
+          "locator": "Prevention: Vaccination"
+        }
+      ]
+    },
+    {
+      "claim_id": "prevention-3",
+      "section": "prevention",
+      "section_content_sha256": "0cb1b2bc921587c36e45bb1eab22848bfb16e32d51fe6fd77deee22bebdf3939",
+      "bilingual_claim_sha256": "5357056c970b17436e19ce8bf73f7bacbf626f2f4d9d4273225b6af531ddf2b4",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M12"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-surveillance",
+          "locator": "Chemoprophylaxis: opening paragraph"
+        },
+        {
+          "source_id": "meningitis-mayo-causes",
+          "locator": "Causes: Bacterial meningitis: Neisseria meningitidis"
+        },
+        {
+          "source_id": "meningitis-who",
+          "locator": "Prevention: Chemoprophylaxis"
+        },
+        {
+          "source_id": "meningitis-ukhsa-contacts",
+          "locator": "Management of contacts / Providing antibiotic chemoprophylaxis, lines122–124"
+        }
+      ]
+    },
+    {
+      "claim_id": "prevention-4",
+      "section": "prevention",
+      "section_content_sha256": "0cb1b2bc921587c36e45bb1eab22848bfb16e32d51fe6fd77deee22bebdf3939",
+      "bilingual_claim_sha256": "587c33e86608a9bf66c9d6610c472709bce06c9b1b732a895271fd7e61a599c0",
+      "verdict": "accepted",
+      "review_basis": "unchanged_prior_verified_text_with_current_binding",
+      "prior_status": "verified",
+      "prior_text_unchanged": true,
+      "resolution_ids": [
+        "M12"
+      ],
+      "evidence": [
+        {
+          "source_id": "meningitis-cdc-viral-meningitis",
+          "locator": "Risk factors: Close contacts; Prevention"
+        },
+        {
+          "source_id": "meningitis-cdc-fungal-meningitis",
+          "locator": "How it does not spread"
+        },
+        {
+          "source_id": "meningitis-healthdirect",
+          "locator": "Can meningitis be prevented?"
+        }
+      ]
+    }
+  ],
+  "bilingual_assessment": "All current63 bilingual claims checked for matching population, condition, timing and action. Only infant-feeding and Chinese over-one-month text changed versus previous recheck; final evidence repairs changed links/ledger only.",
+  "independence_assessment": "Same-organizational pages grouped; WHO Bookshelf is the same guideline, MSD pages one editorial family. LPT local writing with age of policy disclosed. CDC/FDA food-safety shared contributors and epidemiology remain visible; no independent-trial assertion. Critical actions use independently written guidance, exact attributed regional recommendations retain their disagreement.",
+  "resolution": "Accepted for the described bilingual overview and14 sections; earlier partial evidence gaps resolved with actual component-specific reads or accepted bounded ordinary/practical statements. No claim is downgraded to evade a dangerous-action requirement.",
+  "unresolved_questions": [],
+  "scope_limits": [
+    "Not a complete neonatal or pathogen-specific dose/duration manual.",
+    "WHO acute guidance does not supply TB/fungal treatment; local vaccination programs outside stated jurisdictions remain outside this overview.",
+    "Conditional viral admission and TB referral detail are transparently attributed; not asserted as identical two-guideline criteria.",
+    "No coding/coverage or clinical review upgrade implied."
+  ],
+  "validation": {
+    "candidate_structure_issues": [],
+    "hashes_verified_against_current_files": true,
+    "author_records_remain_pending": true,
+    "all_medical_reviewed_false": true,
+    "review_placeholder_handling": "Only the exact independent-review-pending placeholder was resolved in the in-memory candidate probe; source drafts were left pending. No genuine source question was excluded.",
+    "top_level_source_ids_match": true
+  }
+}

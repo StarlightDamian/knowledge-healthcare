@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "id": "p0-diabetic-ketoacidosis-author",
+  "author": "/root/mi_icd_scope",
+  "authored_at": "2026-10-02",
+  "status": "pending_independent_review",
+  "medical_reviewed": false,
+  "base": {
+    "path": "drafts/batch-01/emergency/diabetic-ketoacidosis.json",
+    "body_canonical_sha256": "d0c168335ff6ee5424c77a024697e46358089f1776edfcc9a79e55288b159642"
+  },
+  "body_canonical_sha256": "f21d6da579b9aad00161ca37c2f5bcac95660fe398b0774abcd03c880434d7a8",
+  "records_canonical_sha256": "62b5f37b600f22dc8b7d7bf284f574bfd3c2ad305271581f93c66b59818ce3ef",
+  "sources_canonical_sha256": "b7ed873da223f846139dbe6d5c50eead22d633b93707f406fb4610526ca751be",
+  "output": {
+    "path": "drafts/p0-01/diabetic-ketoacidosis.json",
+    "sections": 14,
+    "bilingual_claims": 64,
+    "sources": 22,
+    "changed_claim_texts": [
+      "medications-3",
+      "complications-3"
+    ],
+    "canonical_sha256": "f21d6da579b9aad00161ca37c2f5bcac95660fe398b0774abcd03c880434d7a8",
+    "file_sha256": "e234392c429e17e8a0f5d207efaef15185b41001408ead5a3bf853c1f0180b92"
+  },
+  "source_reads": [
+    {
+      "source_id": "dka-ada",
+      "url": "https://diabetes.org/living-with-diabetes/dka",
+      "source_metadata_sha256": "654efb7be2701eac683be7a3741634fb58fbd5282222f390317f458c889e3256",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Current patient page actually read; differs from NHS in home blood-ketone emergency threshold; grouped conservatively with ADA-led consensus."
+    },
+    {
+      "source_id": "dka-ada-ketones",
+      "url": "https://diabetes.org/living-with-diabetes/managing-ketones",
+      "source_metadata_sha256": "42a8c1c784169b4632fa7afee92a3cd5f38e624463f6d5109f0b186a4ae47e9b",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Who is at risk; when/how to check; elevated ketone actions and emergency features."
+    },
+    {
+      "source_id": "dka-cdc",
+      "url": "https://www.cdc.gov/diabetes/about/diabetic-ketoacidosis.html",
+      "source_metadata_sha256": "d07da9fc93a5de545c765e62db56663f2f44255b7c93ff421fcb89ed8a1fd46f",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Overview, signs, causes, prevention, testing and treatment; CDC subject-matter-expert-reviewed patient education."
+    },
+    {
+      "source_id": "dka-cdc-sick",
+      "url": "https://www.cdc.gov/diabetes/living-with/managing-sick-days.html",
+      "source_metadata_sha256": "843ff4f43b3b3e297a466b94c0d262bc9c4cc4afd1fdd9a862c31165aca80fe8",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Subject-matter-expert reviewed; prepare, if sick, emergency signs. Blanket continue diabetes pills not copied because medication-specific sick-day exceptions exist."
+    },
+    {
+      "source_id": "dka-chelwest-pump",
+      "url": "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/medicine-services/troubleshooting-continuous-subcutaneous-insulin-infusion-csii",
+      "source_metadata_sha256": "a0ef9fa7e7c3c7fcba7346a8a975d53d141477a3bb1f4d12f8d5f390ffb26139",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Read Pump failure, Identifying causes to raised glucose, Sick day rules. Locally authored leaflet, no publication day shown. Backup plan, site/tubing checks and emergency escalation used; no doses or blanket pump prohibition copied."
+    },
+    {
+      "source_id": "dka-consensus",
+      "url": "https://link.springer.com/article/10.1007/s00125-024-06183-8",
+      "source_metadata_sha256": "18437b68ca2b039541a5aa5f1ff3be325f98dcc1a5f6425f1730fb0f07c5fd46",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "2024 joint adult consensus: publisher sections 1–7 re-read; same article PMC11343900 tables 3 and 4 actually read this round. Table 4 gives SGLT2 stopping/nonroutine restart, pregnancy and kidney failure; one joint editorial source, not five independent sources. Adult doses are not pediatric protocol."
+    },
+    {
+      "source_id": "dka-cuh-pump",
+      "url": "https://www.cuh.nhs.uk/patient-information/tandem-tslim-x2-insulin-pump-handbook/",
+      "source_metadata_sha256": "a75c0075ee6c3479cf544aae2ebc35bba8bdc4159b085c57e5adec032f3f826c",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Version 2, document 107308, approved 6 May 2026. Read Key points, sick-day/DKA, out-and-about and travel: in-date backup pens, pump settings, individualized doses and supplies. Device settings and doses not generalized."
+    },
+    {
+      "source_id": "dka-diabetes-uk",
+      "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/complications/diabetic-ketoacidosis",
+      "source_metadata_sha256": "6d88a97e094b912417c6cc312d5fecfee33831b462208d78661b091daee54b00",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Patient education: symptoms, blood/urine testing, treatment, avoiding DKA; current retrieved page."
+    },
+    {
+      "source_id": "dka-diabetes-uk-ketones",
+      "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/ketones-and-diabetes",
+      "source_metadata_sha256": "ff68f435fec52f095bee6b01df4bf7a542d35be4ad39fbef756bfdca9e9381de",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Actually read What are ketones; When do ketones build up; Testing; What to do if high; Ketones in diet and weight loss. Corrected current page URL; no broad keto-diet efficacy claim copied."
+    },
+    {
+      "source_id": "dka-duk-sick-food",
+      "url": "https://www.diabetes.org.uk/living-with-diabetes/eating/managing-other-medical-conditions/coughs-colds-diabetes",
+      "source_metadata_sha256": "46367cd12e536bb16963a30b6ae33abf112e7fe315640eae9961baf7337d15bd",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Read Eating well, Staying hydrated, Managing your health. Adequate carbohydrate and individualized medication changes. Generic continue-all-medication wording not copied because SGLT2 requires separate advice; persistent vomiting remains emergency."
+    },
+    {
+      "source_id": "dka-em-text",
+      "url": "https://accessworldmed.mhmedical.com/content.aspx?bookid=3367&sectionid=281696618",
+      "source_metadata_sha256": "39e061df727622dad34ba507ed9b245b41bc218ce442753265eb2caabd709b0a",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "2022 edition. Read visible DKA and CAVEATS only; full management is gated. Persistent abdominal pain, elderly/cardiac fluid overload, euglycemia in pregnancy/SGLT2 used. Older diagnosis cutoffs and overbroad fever/antibiotic statements not used."
+    },
+    {
+      "source_id": "dka-mayo-symptoms",
+      "url": "https://www.mayoclinic.org/diseases-conditions/diabetic-ketoacidosis/symptoms-causes/syc-20371551",
+      "source_metadata_sha256": "20a059ee7e07b060d359ea9c74e91589a3ebf00f69fe0c7655bdf0cb9fc45dcc",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Overview, symptoms, when to see a doctor, causes, complications and prevention; references include CDC and independent clinical reviews."
+    },
+    {
+      "source_id": "dka-mayo-treatment",
+      "url": "https://www.mayoclinic.org/diseases-conditions/diabetic-ketoacidosis/diagnosis-treatment/drc-20371555",
+      "source_metadata_sha256": "115d589bc4cce6c08584eb38eef9f049369d597185394341d11c65ea38383e6e",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Diagnosis, treatment, preparing for appointment; same Mayo editorial institution as symptoms page."
+    },
+    {
+      "source_id": "dka-merck",
+      "url": "https://www.merckmanuals.com/professional/endocrine-and-metabolic-disorders/diabetes-mellitus-and-hypoglycemia/acute-complications-of-diabetes-mellitus",
+      "source_metadata_sha256": "6b6660ae7016ae9622ba39fdb5b6f5cd2c28ef946b0d1cd09a2dcffff7961247",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Full review December 2025; updated May 2026, exact day unstated. Read DKA cause/euglycemia, Pathophysiology, Symptoms, Diagnosis, Treatment including volume repletion and ketone conversion. Same Merck/MSD group; not independent underlying trials."
+    },
+    {
+      "source_id": "dka-mhra",
+      "url": "https://www.gov.uk/drug-safety-update/sglt2-inhibitors-updated-advice-on-the-risk-of-diabetic-ketoacidosis",
+      "source_metadata_sha256": "69c10e410bb85378104b26665abad4828dd948cebe560795d9aa700be300599b",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Actually reopened 2016 updated advice, Reports and Risk factors. Replaces 2015 preliminary source: stop if suspected, no routine restart after DKA unless another cause identified/resolved, interruption around hospital major surgery/serious illness; near-normal glucose warning. Historical UK alert, not current global indication list."
+    },
+    {
+      "source_id": "dka-nhs",
+      "url": "https://www.nhs.uk/conditions/diabetic-ketoacidosis/",
+      "source_metadata_sha256": "1a6e33ee23ac2d6bc43d2daecbd3bf2a1280a952d48d74d05e8be07ce43314f3",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Full patient page; review due June 8, 2026 has passed, current retrieval cross-compared with newer materials."
+    },
+    {
+      "source_id": "dka-nice-child",
+      "url": "https://www.nice.org.uk/guidance/ng18/ifp/chapter/High-blood-glucose-hyperglycaemia",
+      "source_metadata_sha256": "9daa95ec6020fe38b1786482050693ba1199347f09251e4763dec6a7925525e8",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "search_text_retrieved",
+      "scope": "Direct page 403; indexed official text read: checking ketones and DKA, in-date strips, symptoms and hospital with pediatric facilities. Pediatric home threshold not generalized to adults."
+    },
+    {
+      "source_id": "dka-nice-pregnancy",
+      "url": "https://www.nice.org.uk/guidance/ng3/chapter/recommendations",
+      "source_metadata_sha256": "be1b2d87b75140a45b56e506fee580f26cd6ba4568acede7ca6260e59705a78c",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "search_text_retrieved",
+      "scope": "Direct page 403; indexed original recommendations read: 1.1.8 emergency contacts, 1.3.21–24 ketone testing, urgent advice if unwell and medical/obstetric care for suspected DKA. Does not itself establish euglycemia mechanism."
+    },
+    {
+      "source_id": "dka-niddk",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes",
+      "source_metadata_sha256": "9d668f09c35b3b3da789aa1134252430f61fc03a47d99d5991f6769c68b94536",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "Actually read current Managing Diabetes: Healthy meal plan, Mental health, Medicines/cost, Home glucose, Low glucose, Checking urine ketones, Special situations and Care team. Low-glucose confusion is in its own subsection, not the ketone paragraph."
+    },
+    {
+      "source_id": "dka-rch",
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Diabetic_Ketoacidosis/",
+      "source_metadata_sha256": "5beddef900da68d77fe7045e2ae2f33ae4b5c2b396b82827351766d596beba9a",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_opened",
+      "scope": "July 2025 update, exact day unstated. Read Background, Assessment, Investigations, Goals, Supportive measures, Glucose/Potassium, Insulin, Cerebral injury and Consultation/Transfer. Children only; no doses or home treatment algorithm copied."
+    },
+    {
+      "source_id": "dka-renal-review",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8070071/",
+      "source_metadata_sha256": "abd74c56b43ca04aa95f01e458747900257427494a1a8cf90ad7ba0e53da4cf8",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "search_text_retrieved",
+      "scope": "Direct PMC CAPTCHA; indexed original full article read, specifically Pathophysiological changes in kidney disease and Management in end-stage kidney disease: low urine output, overload, poor aggressive hydration tolerance and individualized monitoring. Narrative review, not trial; no dose algorithm copied."
+    },
+    {
+      "source_id": "dka-nhs-scotland-sglt2",
+      "url": "https://mydiabetesmyway.scot.nhs.uk/resources/internal/what-are-sglt2-inhibitors/",
+      "accessed_at": "2026-10-02",
+      "locator": "Introduction and How do SGLT2 inhibitors work?",
+      "access_status": "original_page_read",
+      "support_scope": "Read introductory drug family and How do SGLT2 inhibitors work? Only mechanism used: reduced renal glucose reabsorption increases urinary glucose loss and lowers blood glucose. Page displays 09-01-2026. Other efficacy claims, class-wide amputation explanation and restart advice are not used."
+    }
+  ],
+  "actual_read_mirrors": {
+    "dka-consensus": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11343900/"
+  },
+  "resolved_author_findings": [
+    "Updated preliminary MHRA source and read consensus table 4; explicitly no self-restart.",
+    "Corrected current Diabetes UK ketones URL; UK/US thresholds kept distinct.",
+    "Urine lag/recovery conversion now precisely bound to consensus/Merck/Diabetes UK.",
+    "Added RCH/NICE pediatric scope, monitoring and neurologic warnings.",
+    "Added visible McGraw Caveats for persistent abdominal pain and elderly/cardiac overload.",
+    "Added kidney-failure review volume caution; no dose algorithm copied.",
+    "Added locally authored pump handbooks for backup/site checks.",
+    "Clinically significant cerebral edema distinguished from subclinical swelling."
+  ],
+  "access_limits": [
+    "NICE NG3/NG18 direct 403: actual indexed original text used.",
+    "Renal review direct CAPTCHA: actual indexed original relevant paragraphs read.",
+    "Old MSD URL timeout: current Merck page successfully read.",
+    "Endotext shares Dhatariya authorship with consensus and is not counted separately.",
+    "FDA legacy page/PDF 404 not included.",
+    "McGraw full management gated; visible DKA/Caveats only used."
+  ],
+  "scope_boundaries": [
+    "Lay DKA overview with/without coma; child/pregnancy/renal differences stated. No individual dose or fluid rate.",
+    "Coma is severe manifestation requiring urgent monitored/ICU care; not universal.",
+    "Home ketone guides are not acid-base diagnosis; modest glucose does not exclude SGLT2/pregnancy DKA.",
+    "Sources share underlying guidance; not independent trials or medical sign-off."
+  ],
+  "coding_recommendation": {
+    "status": "candidate_only_pending_root_semantic_review",
+    "candidate_codes": [
+      "5A22.0",
+      "5A22.3"
+    ],
+    "excluded_sibling_codes": [
+      "5A22.1",
+      "5A22.2"
+    ],
+    "rationale": "14-section common DKA explanation, explicit coma/awareness warnings, monitored hospital treatment and follow-up support review of without/with coma. Lactic/metabolic acidosis siblings not DKA. Frozen WHO definitions remain root semantic gate.",
+    "automatic_coverage_changes": false
+  },
+  "validation": {
+    "status": "passed_structural_checks",
+    "checks": [
+      "JSON condition/source schemas",
+      "14 sections and 64 bilingual claim bindings",
+      "source and section hashes",
+      "claim source membership and independence group counts",
+      "all editorial records pending, medical_reviewed false"
+    ],
+    "issues": [],
+    "medical_verification": "Not implied by structural checks"
+  },
+  "targeted_independent_review_repair": {
+    "claim_id": "causes_risks-3",
+    "change": "Added first-use SGLT2 medicine-class explanation in both languages; source NHS Scotland exact mechanism. No DKA action or threshold changed.",
+    "status": "pending_targeted_recheck"
+  }
+}

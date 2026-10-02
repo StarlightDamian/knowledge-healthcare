@@ -1,6 +1,6 @@
 {
   "snapshot_sha256": "f1356588f40953a83e3af2b662deab47c5e269f944d1ea4ed0cfeb2007c7cd39",
-  "matching_method": "47 normalized-name proposals remain pending; 8 leaf mappings are semantically confirmed and editorially qualified across 5 articles; 5 mapped scopes remain explicitly partial. Shared text is allocated by category, never counted through a parent title.",
+  "matching_method": "46 normalized-name proposals remain pending; 30 leaf mappings are semantically confirmed and editorially qualified across 11 articles; 32 mapped scopes remain partial. Shared conditional knowledge is allocated per leaf, never through a parent title.",
   "items": [
     {
       "kind": "condition",
@@ -35,11 +35,22 @@
         "zh-CN": "严重过敏反应",
         "en": "Anaphylaxis"
       },
-      "state": "full_article_evidence_and_mapping_incomplete",
+      "state": "qualified_article_with_confirmed_leaf_scope",
       "candidate_codes": [
-        "4A84"
+        "4A84.0",
+        "4A84.1",
+        "4A84.2",
+        "4A84.30",
+        "4A84.31",
+        "4A84.3Y",
+        "4A84.3Z",
+        "4A84.4",
+        "4A84.5",
+        "4A84.6",
+        "4A84.Y",
+        "4A84.Z"
       ],
-      "counts_as_qualified_coverage": false
+      "counts_as_qualified_coverage": true
     },
     {
       "kind": "condition",
@@ -1215,17 +1226,6 @@
     },
     {
       "kind": "backlog",
-      "id": "planned-031",
-      "names": {
-        "zh-CN": "主动脉夹层",
-        "en": "Aortic dissection"
-      },
-      "state": "title_only",
-      "candidate_codes": [],
-      "counts_as_qualified_coverage": false
-    },
-    {
-      "kind": "backlog",
       "id": "planned-032",
       "names": {
         "zh-CN": "幽门螺杆菌感染",
@@ -1540,17 +1540,6 @@
     },
     {
       "kind": "backlog",
-      "id": "planned-058",
-      "names": {
-        "zh-CN": "脑膜炎",
-        "en": "Meningitis"
-      },
-      "state": "title_only",
-      "candidate_codes": [],
-      "counts_as_qualified_coverage": false
-    },
-    {
-      "kind": "backlog",
       "id": "planned-059",
       "names": {
         "zh-CN": "脑炎",
@@ -1721,17 +1710,6 @@
       "names": {
         "zh-CN": "低血糖",
         "en": "Hypoglycemia"
-      },
-      "state": "title_only",
-      "candidate_codes": [],
-      "counts_as_qualified_coverage": false
-    },
-    {
-      "kind": "backlog",
-      "id": "planned-074",
-      "names": {
-        "zh-CN": "糖尿病酮症酸中毒",
-        "en": "Diabetic ketoacidosis"
       },
       "state": "title_only",
       "candidate_codes": [],
@@ -2728,17 +2706,6 @@
       "names": {
         "zh-CN": "早产",
         "en": "Preterm labor"
-      },
-      "state": "title_only",
-      "candidate_codes": [],
-      "counts_as_qualified_coverage": false
-    },
-    {
-      "kind": "backlog",
-      "id": "planned-163",
-      "names": {
-        "zh-CN": "产后出血",
-        "en": "Postpartum hemorrhage"
       },
       "state": "title_only",
       "candidate_codes": [],
@@ -3927,6 +3894,103 @@
         "9B73.4",
         "9B73.Y",
         "9B73.Z"
+      ],
+      "counts_as_qualified_coverage": true,
+      "state": "qualified_article_with_confirmed_leaf_scope"
+    },
+    {
+      "kind": "condition",
+      "id": "aortic-dissection",
+      "names": {
+        "zh-CN": "主动脉夹层",
+        "en": "Aortic dissection"
+      },
+      "candidate_codes": [
+        "BD50.00",
+        "BD50.01",
+        "BD50.0Z",
+        "BD50.10",
+        "BD50.11",
+        "BD50.1Z",
+        "BD50.20",
+        "BD50.21",
+        "BD50.2Y",
+        "BD50.2Z"
+      ],
+      "counts_as_qualified_coverage": true,
+      "state": "qualified_article_with_confirmed_leaf_scope"
+    },
+    {
+      "kind": "condition",
+      "id": "diabetic-ketoacidosis",
+      "names": {
+        "zh-CN": "糖尿病酮症酸中毒",
+        "en": "Diabetic ketoacidosis"
+      },
+      "candidate_codes": [
+        "5A22.0",
+        "5A22.3"
+      ],
+      "counts_as_qualified_coverage": true,
+      "state": "qualified_article_with_confirmed_leaf_scope"
+    },
+    {
+      "kind": "condition",
+      "id": "meningitis",
+      "names": {
+        "zh-CN": "脑膜炎",
+        "en": "Meningitis"
+      },
+      "candidate_codes": [
+        "1B53",
+        "1B54",
+        "1C1C.0",
+        "1C8E.1",
+        "1C8E.2",
+        "1C8E.Y",
+        "1C8E.Z",
+        "1D01.00",
+        "1D01.0Y",
+        "1D01.0Z",
+        "1D01.1",
+        "1D01.2",
+        "1D01.3",
+        "1D01.Y",
+        "1D01.Z"
+      ],
+      "counts_as_qualified_coverage": true,
+      "state": "qualified_article_with_confirmed_leaf_scope"
+    },
+    {
+      "kind": "condition",
+      "id": "postpartum-hemorrhage",
+      "names": {
+        "zh-CN": "产后出血",
+        "en": "Postpartum hemorrhage"
+      },
+      "candidate_codes": [
+        "JA43.0",
+        "JA43.1",
+        "JA43.2",
+        "JA43.3",
+        "JA43.4",
+        "JA43.5",
+        "JA43.Y",
+        "JA43.Z"
+      ],
+      "counts_as_qualified_coverage": true,
+      "state": "qualified_article_with_confirmed_leaf_scope"
+    },
+    {
+      "kind": "condition",
+      "id": "sepsis",
+      "names": {
+        "zh-CN": "脓毒症",
+        "en": "Sepsis"
+      },
+      "candidate_codes": [
+        "1G40",
+        "1G41"
       ],
       "counts_as_qualified_coverage": true,
       "state": "qualified_article_with_confirmed_leaf_scope"

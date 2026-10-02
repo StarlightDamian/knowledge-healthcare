@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0.0",
+  "condition_id": "postpartum-hemorrhage",
+  "status": "author_complete_pending_independent_review",
+  "author": "/root/retinal_targeted",
+  "date": "2026-10-02",
+  "medical_reviewed": false,
+  "input_draft_sha256": "107e20c2619be95e89b9ea334aee3586ec27101a3f7726796886ff2b52ba4c9f",
+  "output_hashes": {
+    "drafts/p0-01/postpartum-hemorrhage.json": {
+      "sha256": "7a0e6663d9391eac9fe20c5868d2e1f3af9e56da1049f49c72fcc59fd767f083",
+      "canonical_sha256": "8dd96f1a8c978f82157463a266e9e963f7c80b0c11fd398a4cf4ad2e80c8c1eb"
+    },
+    "drafts/p0-01/postpartum-hemorrhage-sources.json": {
+      "sha256": "70423839a204e7eaf731f2a0dec2cc2174c70ad278fe2e2b1d5a10596ce72253",
+      "canonical_sha256": "90aecbbc82c8759317d8d246800f637bdbd50024938343a07d9aa9d653450953"
+    },
+    "drafts/p0-01/postpartum-hemorrhage-editorial.json": {
+      "sha256": "e17fcf6291b177097cedcf6f83f0adc603d7fbb19c1c37279f8af8679ecb4cc9",
+      "canonical_sha256": "790dcfed519f7474778c3b9318394c0131d43309ef4d7b91ecac065eb600e52e"
+    }
+  },
+  "sections": 14,
+  "claims": 58,
+  "sources": 15,
+  "writing_groups": 13,
+  "source_reads": [
+    {
+      "source_id": "b1-acute-pph-rcog",
+      "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/heavy-bleeding-after-birth-postpartum-haemorrhage/",
+      "actual_read_scope": "Actual original patient page read: definitions141–160; risks163–177; prevention182–193; immediate care197–220; recovery225–231; future births234–235; secondary PPH237–241. Published December2016, exact day unavailable; explicitly under review at access, based on Green-top52. Used for stable patient-care explanations alongside newer WHO2025/CMA2023 material, not presented as current global diagnostic consensus. Same RCOG upstream appears in East Kent; their pairing alone is not used to establish critical independence.",
+      "retrieval_status": "page_opened"
+    },
+    {
+      "source_id": "pph-cleveland",
+      "url": "https://my.clevelandclinic.org/health/diseases/22228-postpartum-hemorrhage",
+      "actual_read_scope": "Original page actually read: overview44–65(time/shock); symptoms70–80; mechanisms84–94; diagnosis150–160; treatment164–177; recovery180; recurrence192; prevention197; home care202–214; reference list243–248. Independent US institutional education citing ACOG/NEJM/AAFP/Merck among others. Its>1L-or-hypovolemia framing differs from WHO therapeutic trigger; no universal numeric definition inferred.",
+      "retrieval_status": "page_opened"
+    },
+    {
+      "source_id": "pph-cma-2023",
+      "url": "https://cspm.cma.org.cn/index/news?id=3474",
+      "actual_read_scope": "Original full HTML prose actually read, web36–175: definitions47; measured loss50–63; risk/preparation41,71; third-stage prevention75–87; assessment95–104; uterotonics115–119; TXA121–123; procedural care124–155; coagulation157–169; shock175. Posted2023-07-10; journal2023 June58(6):401–409, DOI10.3760/cma.j.cn112141-20230223-00084. Chinese expert guideline independently written with GRADE/Delphi, citing WHO/FIGO and other regional guidelines; shared upstream is disclosed. Image tables/algorithms were not read and are not cited.",
+      "retrieval_status": "page_opened"
+    },
+    {
+      "source_id": "pph-norfolk-postnatal-emergency",
+      "url": "https://www.justonenorfolk.nhs.uk/pregnancy-early-days/new-baby/early-days/",
+      "actual_read_scope": "Original page actually read: Vaginal Bleeding240–256, explicitly call999 for postnatal bleeding suddenly getting heavier or faint/dizzy/pounding heart; 391,414 identify current Trust. Page references national NHS; separate UK service writing, not CDC/AIM reproduction. No publication/review date displayed. UK999 is localized to the reader’s emergency number. Normal-lochia duration elsewhere on this page is not used.",
+      "retrieval_status": "page_opened"
+    },
+    {
+      "source_id": "pph-cdc-maternal-warning-signs",
+      "url": "https://www.cdc.gov/hearher/maternal-warning-signs/index.html",
+      "actual_read_scope": "Original page actually read, key points24–26 and urgent warning subsections; postpartum heavy bleeding129–133 includes≥1pad/hour, clots larger than egg/tissue;152 disclosure of pregnancy during prior year;153 attributes warning signs to AIM. CDC-hosted AIM material is one group, not two. General pregnancy/year-after-birth safety resource; the one-year warning window is not the definition of secondary PPH.",
+      "retrieval_status": "page_opened"
+    },
+    {
+      "source_id": "pph-north-memorial",
+      "url": "https://northmemorial.com/new-parent-resources/postpartum-care/",
+      "actual_read_scope": "Original institutional recovery page actually read: Vaginal bleeding285–289 (pad/hour, clot larger than egg, sudden increase); Activity351–363; immediate OB warning364–385; support394–401. No publication date or external attribution displayed; independent institutional text as retrieved, underlying warning-standard overlap possible and not asserted absent. Supports urgent contact examples, not by itself an ambulance threshold for every small clot. Timing of normal lochia and unrelated activity limits not imported.",
+      "retrieval_status": "page_opened"
+    },
+    {
+      "source_id": "b1-acute-pph-east-kent",
+      "url": "https://leaflets.ekhuft.nhs.uk/life-after-postpartum-haemorrhage-pph/html/",
+      "actual_read_scope": "Original HTML fetched with system TLS and actual extracted text read: definition37–43; risks45–62; signs67–77; acute care78–90; recovery93–124; nutrition137–154; breastfeeding155–161; emotions163–184; thrombosis185–186; follow-up188–199; family/next birth201–219; contacts222. Web571 first published2024-11, last reviewed2025-06, next review2028-03; exact day absent. Explicit permission adaptation from Association of Ontario Midwives and references to RCOG2016/Green-top52 at226–235. Not counted as an unqualified independent RCOG corroboration; used primarily for practical recovery information.",
+      "retrieval_status": "page_opened"
+    },
+    {
+      "source_id": "b1-acute-pph-nice-intrapartum",
+      "url": "https://www.nice.org.uk/guidance/ng235/chapter/Recommendations",
+      "actual_read_scope": "Original recommendation HTML fetched with system TLS and actual text read:1.10.9 uterotonic adverse effects/ergometrine contraindications;1.10.11/13 prevention;1.10.29–32 PPH risks and care planning;1.10.33 urgent response; table12 treatment options;1.10.35 TXA;1.10.36 explanation/support;1.10.37 persistent bleeding assessment/repair/balloon/surgery. Recommendation years2023 and table2024 retained; exact latest page date not extracted. National intrapartum guidance, not a home dosing protocol. Same NICE group as NG121.",
+      "retrieval_status": "page_opened"
+    },
+    {
+      "source_id": "pph-who-2025-guideline",
+      "url": "https://iris.who.int/server/api/core/bitstreams/88bf11a5-93b6-4d6b-bdaa-856b46c8ed3c/content",
+      "actual_read_scope": "Official WHO IRIS PDF downloaded and actual text read: PDF50–52/printed32–34 (recommendations14–15 TXA prophylaxis), PDF57–58/printed39–40 (recommendation22 therapeutic early trigger, vaginal-predominant evidence and limited caesarean data), PDF60–65/printed42–47 (recommendations24–30 drugs/massage/TXA/fluids/bundle/retained placenta), PDF74–78/printed56–60 (transfusion/supportive care/iron). Only these passages attested; no image algorithm reproduced. Joint WHO/FIGO/ICM writing is one group; news pages, Bookshelf copies and society reposts are not additional independent evidence. EBCOG commentary discusses this guideline; Cochrane reviews partly WHO funded and contribute common upstream trials.",
+      "retrieval_status": "article_retrieved"
+    },
+    {
+      "source_id": "pph-ebcog-2025",
+      "url": "https://ebcog.eu/wp-content/uploads/2025/11/WHO-Guidelines-on-PPH-and-EBCOG-Commentary-2025.pdf",
+      "actual_read_scope": "Official EBCOG-hosted two-page commentary PDF downloaded and prose/authors/references actually read. Page1 Comment first paragraph explicitly discusses measured loss≥300mL with abnormal vital signs for earlier action; page1 also comments on team readiness, training and debrief. DOI10.1016/j.ejogrb.2025.114798, online2025-10-27, journal316 January2026. Independent commentary writing by Zaigham/Louwen/Mukhopadhyay/Mahmood, not a separate trial or second evidence base. Louwen also FIGO president; shared institutional role and WHO upstream disclosed. It does not independently state every branch of WHO recommendation22.",
+      "retrieval_status": "article_retrieved"
+    },
+    {
+      "source_id": "pph-cochrane-txa-vaginal",
+      "url": "https://www.cochrane.org/evidence/CD007872_what-are-benefits-and-risks-tranexamic-acid-preventing-heavy-bleeding-after-vaginal-birth",
+      "actual_read_scope": "Original Cochrane plain-language summary and full abstract actually read(web43–120), DOI10.1002/14651858.CD007872.pub4: three trials18,974, little/no prophylactic blood-loss benefit, rare serious harms uncertain. Search to2024-09-06; WHO partially funded review. Same review-team group as caesarean review; common trials with WHO guidance, not independent trial replication.",
+      "retrieval_status": "abstract_retrieved"
+    },
+    {
+      "source_id": "pph-cochrane-txa-caesarean",
+      "url": "https://www.cochrane.org/evidence/CD016278_what-are-benefits-and-risks-tranexamic-acid-preventing-heavy-bleeding-after-caesarean-births",
+      "actual_read_scope": "Original plain-language summary/abstract actually read: six trials15,981 mostly low-risk participants; little/no measured or estimated≥1000mL reduction, slight calculated-loss benefit; serious rare harms uncertain. Evidence through2024-02-20. WHO partly funded; same review team as vaginal review, shared studies informing WHO2025. Not presented as evidence that every possible high-risk subgroup lacks benefit.",
+      "retrieval_status": "abstract_retrieved"
+    },
+    {
+      "source_id": "pph-nice-asthma-guideline",
+      "url": "https://www.nice.org.uk/guidance/NG121/chapter/recommendations",
+      "actual_read_scope": "Actual official HTML fetched and read recommendation1.4.2: do not offer prostaglandinF2alpha(carboprost) to women with asthma because of bronchospasm.2019 recommendation, exact latest page date not extracted. Bounded asthma/drug selection passage only, not full evidence review or all guidance. Same NICE editorial group as NG235; UK asthma recommendation is stronger than product-label caution.",
+      "retrieval_status": "page_opened"
+    },
+    {
+      "source_id": "pph-carboprost-smpc",
+      "url": "https://www.medicines.org.uk/emc/product/1084/smpc",
+      "actual_read_scope": "Original SmPC actual sections4.4(web265–269) history of asthma and bronchoconstriction caution;4.8(331–334) respiratory adverse effects;5.1(364) uterine action; section10 revision05/2022 (no exact day). Manufacturer-authored regulatory label, distinct writing from NICE. Caution in label is not falsely equated to NICE avoid-in-asthma recommendation. No dose/route recipe reproduced.",
+      "retrieval_status": "page_opened"
+    },
+    {
+      "source_id": "pph-nata-thromboprophylaxis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6476742/",
+      "actual_read_scope": "Original article’s indexed Thromboprophylaxis section and recommendation50 actually read, DOI10.2450/2019.0245-18: PPH/transfusion increase postpartum VTE risk; severe/massive PPH requires individualized prophylaxis after bleeding controlled and coagulopathy corrected. Author/methods abstract also read; full direct PMC page returned recaptcha, not attested as full article. Cites observational studies151–152 and other guidelines; joint institutional overlap with later WHO/EBCOG acknowledged. Independent NATA writing corroborates RCOG; not separate trial replication.",
+      "retrieval_status": "search_text_retrieved"
+    }
+  ],
+  "changes": [
+    "Retained14 bilingual layperson sections and original acute/latePPH,4Ts, blood/operations, drug precautions, diet/recovery, feeding, follow-up and future-birth content.",
+    "Explicit sudden or continuing heavy bleeding is an emergency without requiring faintness; CDC/AIM and Norfolk sources match root safety-rule IDs.",
+    "WHO2025 actual guidelinePDF replaces cloned news/Bookshelf references; therapeutic300+abnormal/500 trigger distinguished from CN/UK definitions and coding criteria.",
+    "Bound TXA birth-based3hour treatment window and current universal-prophylaxis distinction; medicine-specific asthma/hypertension boundaries retained.",
+    "Added independent NATA clot-risk/prophylaxis corroboration; EastKent/RCOG upstream overlap and Cochrane funding/joint-guideline overlap disclosed."
+  ],
+  "validation": {
+    "repository_preview": {
+      "conditions": 78,
+      "sources": 476,
+      "domains": 18,
+      "ui_locales": 12,
+      "clinically_reviewed": 0,
+      "verified_sections": 70,
+      "total_sections": 1092,
+      "warnings": [],
+      "mode": "preview",
+      "daily_need_coverage": null,
+      "coverage_note": "No representative, adjudicated target-population denominator supplied.",
+      "knowledge": {
+        "modules": 2,
+        "entries": 56,
+        "sections": 243,
+        "stages": 7,
+        "by_module": {
+          "cancer": {
+            "entries": 36,
+            "groups": 36,
+            "sections": 148,
+            "sources": 67,
+            "stages": 0
+          },
+          "lifecycle": {
+            "entries": 20,
+            "groups": 8,
+            "sections": 95,
+            "sources": 39,
+            "stages": 7
+          }
+        }
+      }
+    },
+    "candidate_evidence_structure_issues_excluding_required_independent_review": [],
+    "critical_claim_independent_writing_groups_checked": true,
+    "bilingual_exact_binding_checked": true
+  },
+  "remaining_gaps": [
+    {
+      "kind": "review",
+      "detail": "Independent targeted evidence/content review pending; all14 records remain pending and medical_reviewed false."
+    },
+    {
+      "kind": "evidence_boundary",
+      "detail": "WHO early300mL trigger corroborated by independently written EBCOG commentary on the same guideline, with FIGO institutional role overlap. It is not a separate evidence base. CN/UK/WHO numeric definitions are explicitly attributed, not presented as agreement."
+    },
+    {
+      "kind": "retrieval",
+      "detail": "NATA only indexed original Thromboprophylaxis section/rec50 actually read; direct PMC recaptcha not counted as full reading. RCOG2016 under-review status is retained; newer treatment decisions use2023/2025 sources."
+    }
+  ],
+  "suggested_p0_leaf_scope": {
+    "status": "suggestion_only_not_confirmed",
+    "concepts": [
+      "Immediate/primary postpartum bleeding recognition and care",
+      "Delayed/secondary bleeding24hours–12weeks with retainedtissue/infection assessment"
+    ],
+    "classification_boundary": "JA43.1 officialICD2026 definition retains24hours and vaginal>500/CS>1000 classification thresholds; WHO2025 clinical early trigger is not substituted into coding. JA43.2 delayed24hours–12weeks is explained. Mapping owner must check leaf wording and exclusions.",
+    "not_established": [
+      "Detailed complete management of each obstetric coagulation disorder",
+      "Obstructed-labour uterine rupture/other rupture-specific categories",
+      "Every retained-placenta, accreta or other obstetric leaf merely because mentioned as a cause"
+    ],
+    "coding_changed": false
+  },
+  "publication_authorized": false,
+  "independent_review_fixes": [
+    {
+      "claim_id": "diagnosis-4",
+      "change": "Chinese 症状或体征 / English symptoms or signs preserves CMA OR condition; higher thresholds still never delay emergency care."
+    },
+    {
+      "claim_id": "diet-2",
+      "change": "Removed egg example and matching assessment because East Kent nutrition passage does not list eggs."
+    }
+  ]
+}

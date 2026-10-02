@@ -1,0 +1,244 @@
+{
+  "batch": "p0-01",
+  "started_at": "2026-10-02",
+  "base_commit": "dfa20606549834aa4c9f5b10a7323ea848708a8b",
+  "icd_release": "2026-01",
+  "scope": "First P0 content batch: five existing unpublished emergency drafts and one existing article. Reuse canonical IDs, complete specific unresolved evidence, then independently review and map actual leaf scope.",
+  "baseline": {
+    "topics": 77,
+    "covered_categories": 8,
+    "p0_categories": 133,
+    "p0_complete": 7,
+    "p0_pending": 126
+  },
+  "selection_reason": "Reuse existing substantial P0 drafts and prior independent findings to finish urgent content; same-priority scheduling is editorial, not patient triage. Carbon-monoxide poisoning stays outside this batch because its broader mixed ICD category is not currently P0.",
+  "topics": [
+    {
+      "canonical_id": "meningitis",
+      "operation": "new_condition_from_existing_draft",
+      "priority": "P0",
+      "draft_path": "drafts/p0-01/meningitis.json",
+      "candidate_codes": [
+        "1B53",
+        "1B54",
+        "1C1C.0",
+        "1C8E.1",
+        "1C8E.2",
+        "1C8E.Y",
+        "1C8E.Z",
+        "1D01.00",
+        "1D01.0Y",
+        "1D01.0Z",
+        "1D01.1",
+        "1D01.2",
+        "1D01.3",
+        "1D01.Y",
+        "1D01.Z"
+      ],
+      "candidate_scope_status": "reviewed_per_leaf",
+      "editorial_status": "independently_accepted",
+      "publication_status": "validated_candidate_not_yet_live",
+      "qualified_coverage": true,
+      "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+      "claims": 63,
+      "independent_review": "reports/p0-meningitis-independent.json",
+      "confirmed_codes": [
+        "1C1C.0",
+        "1C8E.Z",
+        "1D01.0Z",
+        "1D01.Z"
+      ],
+      "partial_codes": [
+        "1B53",
+        "1B54",
+        "1C8E.1",
+        "1C8E.2",
+        "1C8E.Y",
+        "1D01.00",
+        "1D01.0Y",
+        "1D01.1",
+        "1D01.2",
+        "1D01.3",
+        "1D01.Y"
+      ]
+    },
+    {
+      "canonical_id": "sepsis",
+      "operation": "new_condition_from_existing_draft",
+      "priority": "P0",
+      "draft_path": "drafts/p0-01/sepsis.json",
+      "candidate_codes": [
+        "1G40",
+        "1G41"
+      ],
+      "candidate_scope_status": "reviewed_per_leaf",
+      "editorial_status": "independently_accepted",
+      "publication_status": "validated_candidate_not_yet_live",
+      "qualified_coverage": true,
+      "content_sha256": "33ce6e30f30c1b6aa465b5c0a45957e26fa0b3f907b681b0572c5a743ff60521",
+      "claims": 62,
+      "independent_review": "reports/p0-sepsis-independent.json",
+      "confirmed_codes": [
+        "1G40",
+        "1G41"
+      ],
+      "partial_codes": []
+    },
+    {
+      "canonical_id": "diabetic-ketoacidosis",
+      "operation": "new_condition_from_existing_draft",
+      "priority": "P0",
+      "draft_path": "drafts/p0-01/diabetic-ketoacidosis.json",
+      "candidate_codes": [
+        "5A22.0",
+        "5A22.3"
+      ],
+      "candidate_scope_status": "reviewed_per_leaf",
+      "editorial_status": "independently_accepted",
+      "publication_status": "validated_candidate_not_yet_live",
+      "qualified_coverage": true,
+      "content_sha256": "7efeaae8a2dfc3cf688543d77a67dcba862aa19712d011ce507892d8d3d8f075",
+      "claims": 64,
+      "independent_review": "reports/p0-diabetic-ketoacidosis-independent.json",
+      "confirmed_codes": [
+        "5A22.0",
+        "5A22.3"
+      ],
+      "partial_codes": []
+    },
+    {
+      "canonical_id": "aortic-dissection",
+      "operation": "new_condition_from_existing_draft",
+      "priority": "P0",
+      "draft_path": "drafts/p0-01/aortic-dissection.json",
+      "candidate_codes": [
+        "BD50.00",
+        "BD50.01",
+        "BD50.0Z",
+        "BD50.10",
+        "BD50.11",
+        "BD50.1Z",
+        "BD50.20",
+        "BD50.21",
+        "BD50.2Y",
+        "BD50.2Z"
+      ],
+      "candidate_scope_status": "reviewed_per_leaf",
+      "editorial_status": "independently_accepted",
+      "publication_status": "validated_candidate_not_yet_live",
+      "qualified_coverage": true,
+      "content_sha256": "92920fe1fe517ebc2108b9568291be16372277371e7227cf0f9993f26a4bd06a",
+      "claims": 59,
+      "independent_review": "reports/p0-aortic-dissection-independent.json",
+      "confirmed_codes": [
+        "BD50.01",
+        "BD50.0Z",
+        "BD50.11",
+        "BD50.1Z",
+        "BD50.21",
+        "BD50.2Z"
+      ],
+      "partial_codes": [
+        "BD50.00",
+        "BD50.10",
+        "BD50.20",
+        "BD50.2Y"
+      ]
+    },
+    {
+      "canonical_id": "postpartum-hemorrhage",
+      "operation": "new_condition_from_existing_draft",
+      "priority": "P0",
+      "draft_path": "drafts/p0-01/postpartum-hemorrhage.json",
+      "candidate_codes": [
+        "JA43.0",
+        "JA43.1",
+        "JA43.2",
+        "JA43.3",
+        "JA43.4",
+        "JA43.5",
+        "JA43.Y",
+        "JA43.Z"
+      ],
+      "candidate_scope_status": "reviewed_per_leaf",
+      "editorial_status": "independently_accepted",
+      "publication_status": "validated_candidate_not_yet_live",
+      "qualified_coverage": true,
+      "content_sha256": "13298c6a96d60437d2d358b18fa5ebdc0f675caff57ff156897dd4e24a096ba5",
+      "claims": 58,
+      "independent_review": "reports/p0-postpartum-hemorrhage-independent.json",
+      "confirmed_codes": [
+        "JA43.1",
+        "JA43.2",
+        "JA43.Z"
+      ],
+      "partial_codes": [
+        "JA43.0",
+        "JA43.3",
+        "JA43.4",
+        "JA43.5",
+        "JA43.Y"
+      ]
+    },
+    {
+      "canonical_id": "anaphylaxis",
+      "operation": "expand_existing",
+      "priority": "P0",
+      "draft_path": "drafts/p0-01/anaphylaxis.json",
+      "candidate_codes": [
+        "4A84.0",
+        "4A84.1",
+        "4A84.2",
+        "4A84.30",
+        "4A84.31",
+        "4A84.3Y",
+        "4A84.3Z",
+        "4A84.4",
+        "4A84.5",
+        "4A84.6",
+        "4A84.Y",
+        "4A84.Z"
+      ],
+      "candidate_scope_status": "reviewed_per_leaf",
+      "editorial_status": "independently_accepted",
+      "publication_status": "validated_candidate_not_yet_live",
+      "qualified_coverage": true,
+      "content_sha256": "83a253c6243803a1958a4c7618685d9bcd96d63ca45c35fb3dde71bba7557a52",
+      "claims": 64,
+      "independent_review": "reports/p0-anaphylaxis-independent.json",
+      "confirmed_codes": [
+        "4A84.0",
+        "4A84.1",
+        "4A84.2",
+        "4A84.30",
+        "4A84.Z"
+      ],
+      "partial_codes": [
+        "4A84.31",
+        "4A84.3Y",
+        "4A84.3Z",
+        "4A84.4",
+        "4A84.5",
+        "4A84.6",
+        "4A84.Y"
+      ]
+    }
+  ],
+  "maximum_canonical_topics": 20,
+  "all_p0_inventory": "docs/icd-priorities/index.md",
+  "remaining_queue": "reports/icd-priorities.csv",
+  "completion_rule": "A category leaves the P0 pending queue only after actual full bilingual article evidence qualification and confirmed current-hash semantic mapping. Shared emergency actions or source mentions do not suffice.",
+  "medical_reviewed": false,
+  "publication_status": "validated_candidate_not_yet_live",
+  "new_articles": 5,
+  "expanded_articles": 1,
+  "retired_title_ids": [
+    "planned-031",
+    "planned-058",
+    "planned-074",
+    "planned-163"
+  ],
+  "new_verified_sections": 84,
+  "new_verified_claims": 370,
+  "classification_review": "reports/p0-batch-01-icd-scope-review.json"
+}

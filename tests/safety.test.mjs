@@ -9,6 +9,7 @@ const positives=[
  ['突然剧烈头痛','sudden-headache'],['thunderclap headache','sudden-headache'],['worst headache of my life','sudden-headache'],
  ['想伤害自己','immediate-self-harm'],['我想自杀','immediate-self-harm'],['want to kill myself','immediate-self-harm'],
  ['怀孕 腹痛 出血','pregnancy-bleeding'],['pregnant and bleeding','pregnancy-bleeding'],['pregnancy severe pain','pregnancy-bleeding'],
+ ['产后大量出血','postpartum-heavy-bleeding'],['生完孩子出血突然增多','postpartum-heavy-bleeding'],['postpartum sudden heavy bleeding','postpartum-heavy-bleeding'],['after giving birth bleeding suddenly gets heavier','postpartum-heavy-bleeding'],
  ['腰痛 会阴麻木','back-neurologic'],['back pain urinary retention','back-neurologic'],['背痛 尿不出','back-neurologic'],
  ['高温 意识混乱','heat-confusion'],['heat and confusion','heat-confusion'],['hot environment collapse','heat-confusion'],
  ['大量出血 晕厥','major-bleeding'],['heavy bleeding will not stop','major-bleeding'],['vomiting blood and fainting','major-bleeding'],
@@ -28,3 +29,5 @@ test('empty query is not a clinical all-clear',()=>assert.equal(evaluateSafety('
 test('rules honestly disclose draft state',()=>assert.equal(evaluateSafety('',rules).clinicalValidation,'draft'));
 for(const q of ['没有睾丸疼痛，突然头晕','no testicular pain but sudden dizziness','sudden shoulder pain','mild testicle pain'])
   test('scrotal alert requires non-negated organ and severity/'+q,()=>assert.ok(!evaluateSafety(q,rules).alerts.some(r=>r.id==='acute-scrotal-pain')));
+for(const q of ['产后少量恶露','产后没有大量出血','postpartum no heavy bleeding','heavy bleeding from a cut'])
+  test('postpartum alert requires context and non-negated heavy bleeding/'+q,()=>assert.ok(!evaluateSafety(q,rules).alerts.some(r=>r.id==='postpartum-heavy-bleeding')));

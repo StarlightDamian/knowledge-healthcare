@@ -41,9 +41,25 @@
       },
       "primary_domain": "hematologic_immune",
       "source_ids": [
+        "anaphylaxis-p0-aaaai",
+        "anaphylaxis-p0-ascia",
+        "anaphylaxis-p0-adam",
+        "anaphylaxis-p0-rcuk",
+        "anaphylaxis-p0-foodtest",
         "anaphylaxis-nhs",
-        "anaphylaxis-secondary",
-        "anaphylaxis-medline-ency"
+        "anaphylaxis-p0-drug",
+        "anaphylaxis-p0-exercise",
+        "anaphylaxis-p0-wao",
+        "anaphylaxis-p0-mcas",
+        "anaphylaxis-p0-acaai-test",
+        "anaphylaxis-p0-fda-neffy",
+        "anaphylaxis-p0-intolerance",
+        "anaphylaxis-p0-food",
+        "anaphylaxis-p0-venom",
+        "anaphylaxis-p0-exercise-acaai",
+        "anaphylaxis-p0-pregnancy",
+        "anaphylaxis-p0-wms",
+        "anaphylaxis-p0-ontario-bls"
       ],
       "path": "data/conditions/anaphylaxis.json",
       "status": "editorial_draft"
@@ -92,6 +108,35 @@
         "anxiety-secondary"
       ],
       "path": "data/conditions/anxiety.json",
+      "status": "editorial_draft"
+    },
+    {
+      "id": "aortic-dissection",
+      "kind": "condition",
+      "names": {
+        "zh-CN": "主动脉夹层",
+        "en": "Aortic dissection"
+      },
+      "primary_domain": "cardiovascular",
+      "source_ids": [
+        "ad-mayo-symptoms",
+        "ad-cleveland",
+        "ad-mayo-treatment",
+        "ad-south-england-sop",
+        "ad-acc-family",
+        "ad-nhs-beta",
+        "ad-nhlbi-living",
+        "ad-acc-guideline",
+        "ad-mayo-beta",
+        "ad-south-tees-beta",
+        "ad-esc-pregnancy-2025",
+        "ad-acc-medical-extract",
+        "ad-nhlbi-food",
+        "ad-niddk-ckd-food",
+        "ad-gstt-recovery",
+        "ad-acc-activity"
+      ],
+      "path": "data/conditions/aortic-dissection.json",
       "status": "editorial_draft"
     },
     {
@@ -450,6 +495,41 @@
         "batch-b-antidepressants"
       ],
       "path": "data/conditions/depression.json",
+      "status": "editorial_draft"
+    },
+    {
+      "id": "diabetic-ketoacidosis",
+      "kind": "condition",
+      "names": {
+        "zh-CN": "糖尿病酮症酸中毒",
+        "en": "Diabetic ketoacidosis"
+      },
+      "primary_domain": "endocrine_metabolic",
+      "source_ids": [
+        "dka-ada",
+        "dka-ada-ketones",
+        "dka-cdc",
+        "dka-cdc-sick",
+        "dka-chelwest-pump",
+        "dka-consensus",
+        "dka-cuh-pump",
+        "dka-diabetes-uk",
+        "dka-diabetes-uk-ketones",
+        "dka-duk-sick-food",
+        "dka-em-text",
+        "dka-mayo-symptoms",
+        "dka-mayo-treatment",
+        "dka-merck",
+        "dka-mhra",
+        "dka-nhs",
+        "dka-nhs-scotland-sglt2",
+        "dka-nice-child",
+        "dka-nice-pregnancy",
+        "dka-niddk",
+        "dka-rch",
+        "dka-renal-review"
+      ],
+      "path": "data/conditions/diabetic-ketoacidosis.json",
       "status": "editorial_draft"
     },
     {
@@ -888,6 +968,55 @@
       "status": "editorial_draft"
     },
     {
+      "id": "meningitis",
+      "kind": "condition",
+      "names": {
+        "zh-CN": "脑膜炎",
+        "en": "Meningitis"
+      },
+      "primary_domain": "neurologic",
+      "source_ids": [
+        "meningitis-adam-tb",
+        "meningitis-cdc-bacterial-meningitis",
+        "meningitis-cdc-food-cold",
+        "meningitis-cdc-fungal-meningitis",
+        "meningitis-cdc-index",
+        "meningitis-cdc-listeria",
+        "meningitis-cdc-listeria-symptoms",
+        "meningitis-cdc-surveillance",
+        "meningitis-cdc-tb-adverse",
+        "meningitis-cdc-viral-meningitis",
+        "meningitis-fda-listeria",
+        "meningitis-healthdirect",
+        "meningitis-healthdirect-vomiting",
+        "meningitis-lpt-viral-policy",
+        "meningitis-mayo-anaphylaxis",
+        "meningitis-mayo-causes",
+        "meningitis-mayo-infant-feeding",
+        "meningitis-mayo-migraine",
+        "meningitis-mayo-treatment",
+        "meningitis-msd-acute",
+        "meningitis-msd-tb",
+        "meningitis-msd-viral",
+        "meningitis-nhs",
+        "meningitis-nhs-antibiotics",
+        "meningitis-nhs-migraine",
+        "meningitis-nhs-sah",
+        "meningitis-nhs-vomiting",
+        "meningitis-nice-ng240",
+        "meningitis-nice-tb",
+        "meningitis-nih-cryptococcosis",
+        "meningitis-nsw-meningococcal",
+        "meningitis-rch-clinical",
+        "meningitis-rch-dehydration",
+        "meningitis-ukhsa-contacts",
+        "meningitis-who",
+        "meningitis-who-guideline"
+      ],
+      "path": "data/conditions/meningitis.json",
+      "status": "editorial_draft"
+    },
+    {
       "id": "migraine",
       "kind": "condition",
       "names": {
@@ -1138,6 +1267,34 @@
       "status": "editorial_draft"
     },
     {
+      "id": "postpartum-hemorrhage",
+      "kind": "condition",
+      "names": {
+        "zh-CN": "产后出血",
+        "en": "Postpartum hemorrhage"
+      },
+      "primary_domain": "pregnancy_puerperium",
+      "source_ids": [
+        "b1-acute-pph-rcog",
+        "pph-cleveland",
+        "pph-cma-2023",
+        "pph-norfolk-postnatal-emergency",
+        "pph-cdc-maternal-warning-signs",
+        "pph-north-memorial",
+        "b1-acute-pph-east-kent",
+        "b1-acute-pph-nice-intrapartum",
+        "pph-who-2025-guideline",
+        "pph-ebcog-2025",
+        "pph-cochrane-txa-vaginal",
+        "pph-cochrane-txa-caesarean",
+        "pph-nice-asthma-guideline",
+        "pph-carboprost-smpc",
+        "pph-nata-thromboprophylaxis"
+      ],
+      "path": "data/conditions/postpartum-hemorrhage.json",
+      "status": "editorial_draft"
+    },
+    {
       "id": "preeclampsia",
       "kind": "condition",
       "names": {
@@ -1300,6 +1457,59 @@
         "rheumatoid-arthritis-diagnosis-nhs"
       ],
       "path": "data/conditions/rheumatoid-arthritis.json",
+      "status": "editorial_draft"
+    },
+    {
+      "id": "sepsis",
+      "kind": "condition",
+      "names": {
+        "zh-CN": "脓毒症",
+        "en": "Sepsis"
+      },
+      "primary_domain": "general",
+      "source_ids": [
+        "sepsis-who",
+        "sepsis-cdc",
+        "sepsis-mayo-causes",
+        "sepsis-cdc-facts",
+        "sepsis-rch-child",
+        "sepsis-nhs",
+        "sepsis-msd-sepsis",
+        "sepsis-healthdirect-general",
+        "sepsis-nhs-dehydration",
+        "sepsis-cdc-prevention",
+        "sepsis-mayo-anaphylaxis",
+        "sepsis-cdc-recovery",
+        "sepsis-mayo-treatment",
+        "sepsis-msd-shock",
+        "sepsis-ssc-2026",
+        "sepsis-nlm-culture",
+        "sepsis-nhs-anaphylaxis",
+        "sepsis-nhlbi-mi-diagnosis",
+        "sepsis-ukhsa-review",
+        "sepsis-cdc-catheter",
+        "sepsis-cdc-antibiotics",
+        "sepsis-acs-infections",
+        "sepsis-idsa-candida",
+        "sepsis-mayo-antibiotics",
+        "sepsis-nhs-antibiotics-effects",
+        "sepsis-nhs-cdiff",
+        "sepsis-asn-recovery",
+        "sepsis-niddk-ckd-diet",
+        "sepsis-nkf-ckd-diet",
+        "sepsis-cdc-hospital-core",
+        "sepsis-nice-recognition",
+        "sepsis-cdc-chemo-infection",
+        "sepsis-nhs-azathioprine",
+        "sepsis-ashp-azathioprine",
+        "sepsis-cdc-maternal",
+        "sepsis-healthdirect-maternal",
+        "sepsis-nhs-cuts",
+        "sepsis-nhs-catheter",
+        "sepsis-adam-catheter",
+        "sepsis-qld-sick-child"
+      ],
+      "path": "data/conditions/sepsis.json",
       "status": "editorial_draft"
     },
     {

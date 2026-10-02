@@ -3,7 +3,7 @@
   "checked_at": "2026-09-30",
   "base_commit": "cc3e88b1414c1ede8737c9d78d40c3ca53b64f25",
   "icd_release": "2026-01",
-  "decision_scope": "20规范主题；5篇完成逐项编辑核验，8个叶类别确认完整，5个部分范围保留具体补证和修订任务；其余15篇继续补充。",
+  "decision_scope": "20规范主题中10篇完成逐项编辑核验；P0本批另外扩写既有严重过敏反应。合格正文与已确认叶类别分别计数，未完成的专门范围继续保留。",
   "topics": [
     {
       "canonical_id": "myocardial-infarction",
@@ -98,150 +98,307 @@
     {
       "canonical_id": "sepsis",
       "backlog_id": null,
-      "decision": "independent_disease",
+      "decision": "conditional_disease_article",
       "related_existing_ids": [
         "fever"
       ],
-      "rationale": "感染与脓毒症不能合并；休克、产褥和新生儿类别需分别判断。",
+      "rationale": "按病因、时间或分型解释诊疗；共同知识复用同一规范正文，完整叶类别逐条确认，提及和部分分支不自动增加分子。",
       "icd_candidates": [
         {
           "code": "1G40",
           "title": "- - Sepsis without septic shock",
           "uri": "http://id.who.int/icd/release/11/mms/622600769",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "confirmed"
         },
         {
           "code": "1G41",
           "title": "- - Sepsis with septic shock",
           "uri": "http://id.who.int/icd/release/11/mms/1683090852",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
-        },
-        {
-          "code": "JB40.0",
-          "title": "- - - Puerperal sepsis",
-          "uri": "http://id.who.int/icd/release/11/mms/325070079",
-          "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
-        },
-        {
-          "code": "KA60",
-          "title": "- - Sepsis of fetus or newborn",
-          "uri": "http://id.who.int/icd/release/11/mms/381388700",
-          "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "confirmed"
         }
       ],
-      "publication_status": "not_published",
-      "qualified_coverage": false,
+      "publication_status": "validated_candidate_not_yet_live",
+      "qualified_coverage": true,
       "editorial_reviews": [
         "reports/batch-01-sepsis-independent.json",
         "reports/batch-01-sepsis-recheck.json",
         "reports/batch-01-sepsis-final-followup.json"
       ],
-      "latest_followup_scope": "Author-only four-claim correction check; independent qualification remains unresolved."
+      "latest_followup_scope": "Author-only four-claim correction check; independent qualification remains unresolved.",
+      "content_sha256": "33ce6e30f30c1b6aa465b5c0a45957e26fa0b3f907b681b0572c5a743ff60521",
+      "confirmed_covered_codes": [
+        "1G40",
+        "1G41"
+      ],
+      "classification_review": "reports/p0-batch-01-icd-scope-review.json",
+      "editorial_review": "reports/p0-sepsis-independent.json",
+      "publication_evidence": "reports/p0-batch-01-release-validation.json"
     },
     {
       "canonical_id": "meningitis",
       "backlog_id": "planned-058",
-      "decision": "parent_overview",
+      "decision": "conditional_disease_article",
       "related_existing_ids": [
         "fever",
         "tension-headache"
       ],
-      "rationale": "按病因分流；泛脑膜炎文章不能因提及病原体而自动覆盖具体感染。",
+      "rationale": "按病因、时间或分型解释诊疗；共同知识复用同一规范正文，完整叶类别逐条确认，提及和部分分支不自动增加分子。",
       "icd_candidates": [
         {
-          "code": "1D01.0Z",
-          "title": "- - - - Bacterial meningitis, unspecified",
-          "uri": "http://id.who.int/icd/release/11/mms/684930313/unspecified",
+          "code": "1B53",
+          "title": "- - Meningitis due to Streptococcus",
+          "uri": "http://id.who.int/icd/release/11/mms/705971711",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "partial"
         },
         {
-          "code": "1C8E.Z",
-          "title": "- - - Viral meningitis, unspecified",
-          "uri": "http://id.who.int/icd/release/11/mms/1358604969/unspecified",
+          "code": "1B54",
+          "title": "- - Meningitis due to Staphylococcus",
+          "uri": "http://id.who.int/icd/release/11/mms/1331660907",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "partial"
         },
         {
           "code": "1C1C.0",
           "title": "- - - Meningococcal meningitis",
           "uri": "http://id.who.int/icd/release/11/mms/516585689",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "confirmed"
+        },
+        {
+          "code": "1C8E.1",
+          "title": "- - - Enteroviral meningitis",
+          "uri": "http://id.who.int/icd/release/11/mms/62316737",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
+        {
+          "code": "1C8E.2",
+          "title": "- - - Meningitis due to adenovirus",
+          "uri": "http://id.who.int/icd/release/11/mms/1727868245",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
+        {
+          "code": "1C8E.Y",
+          "title": "- - - Other specified viral meningitis, not elsewhere classified",
+          "uri": "http://id.who.int/icd/release/11/mms/1358604969/other",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
+        {
+          "code": "1C8E.Z",
+          "title": "- - - Viral meningitis, unspecified",
+          "uri": "http://id.who.int/icd/release/11/mms/1358604969/unspecified",
+          "denominator_eligible": true,
+          "mapping_status": "confirmed"
+        },
+        {
+          "code": "1D01.00",
+          "title": "- - - - Meningitis due to Haemophilus influenzae",
+          "uri": "http://id.who.int/icd/release/11/mms/1005770900",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
+        {
+          "code": "1D01.0Y",
+          "title": "- - - - Other specified bacterial meningitis",
+          "uri": "http://id.who.int/icd/release/11/mms/684930313/other",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
+        {
+          "code": "1D01.0Z",
+          "title": "- - - - Bacterial meningitis, unspecified",
+          "uri": "http://id.who.int/icd/release/11/mms/684930313/unspecified",
+          "denominator_eligible": true,
+          "mapping_status": "confirmed"
+        },
+        {
+          "code": "1D01.1",
+          "title": "- - - Fungal meningitis",
+          "uri": "http://id.who.int/icd/release/11/mms/1137081791",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
+        {
+          "code": "1D01.2",
+          "title": "- - - Parasitic or protozoal meningitis",
+          "uri": "http://id.who.int/icd/release/11/mms/181304776",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
+        {
+          "code": "1D01.3",
+          "title": "- - - Benign recurrent meningitis",
+          "uri": "http://id.who.int/icd/release/11/mms/731112897",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
+        {
+          "code": "1D01.Y",
+          "title": "- - - Other specified infectious meningitis, not elsewhere classified",
+          "uri": "http://id.who.int/icd/release/11/mms/121670633/other",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
+        {
+          "code": "1D01.Z",
+          "title": "- - - Infectious meningitis, unspecified",
+          "uri": "http://id.who.int/icd/release/11/mms/121670633/unspecified",
+          "denominator_eligible": true,
+          "mapping_status": "confirmed"
         }
       ],
-      "publication_status": "not_published",
-      "qualified_coverage": false,
+      "publication_status": "validated_candidate_not_yet_live",
+      "qualified_coverage": true,
       "editorial_reviews": [
         "reports/batch-01-meningitis-independent.json",
         "reports/batch-01-meningitis-recheck.json"
-      ]
+      ],
+      "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+      "confirmed_covered_codes": [
+        "1C1C.0",
+        "1C8E.Z",
+        "1D01.0Z",
+        "1D01.Z"
+      ],
+      "classification_review": "reports/p0-batch-01-icd-scope-review.json",
+      "editorial_review": "reports/p0-meningitis-independent.json",
+      "publication_evidence": "reports/p0-batch-01-release-validation.json"
     },
     {
       "canonical_id": "aortic-dissection",
       "backlog_id": "planned-031",
-      "decision": "independent_disease",
+      "decision": "conditional_disease_article",
       "related_existing_ids": [
         "chest-pain"
       ],
-      "rationale": "夹层、动脉瘤与心肌梗死分别处理；部位和破裂条件不能忽略。",
+      "rationale": "按病因、时间或分型解释诊疗；共同知识复用同一规范正文，完整叶类别逐条确认，提及和部分分支不自动增加分子。",
       "icd_candidates": [
         {
           "code": "BD50.00",
           "title": "- - - - Thoracic aortic dissection, ascending aorta dissection and propagation beyond arch with perforation",
           "uri": "http://id.who.int/icd/release/11/mms/2021533373",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "partial"
         },
         {
           "code": "BD50.01",
           "title": "- - - - Thoracic aortic dissection, ascending aorta dissection and propagation beyond arch with rupture",
           "uri": "http://id.who.int/icd/release/11/mms/1756675851",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "confirmed"
         },
         {
           "code": "BD50.0Z",
           "title": "- - - - Thoracic aortic dissection, ascending aorta dissection and propagation beyond arch, without mention of perforation or rupture",
           "uri": "http://id.who.int/icd/release/11/mms/1938903985/unspecified",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "confirmed"
+        },
+        {
+          "code": "BD50.10",
+          "title": "- - - - Ascending aorta dissection not beyond arch with perforation",
+          "uri": "http://id.who.int/icd/release/11/mms/645367486",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
+        {
+          "code": "BD50.11",
+          "title": "- - - - Ascending aorta dissection not beyond arch with rupture",
+          "uri": "http://id.who.int/icd/release/11/mms/1022152488",
+          "denominator_eligible": true,
+          "mapping_status": "confirmed"
+        },
+        {
+          "code": "BD50.1Z",
+          "title": "- - - - Ascending aorta dissection not beyond arch, without mention of perforation or rupture",
+          "uri": "http://id.who.int/icd/release/11/mms/1360167380/unspecified",
+          "denominator_eligible": true,
+          "mapping_status": "confirmed"
+        },
+        {
+          "code": "BD50.20",
+          "title": "- - - - Descending aorta dissection and distal propagation with perforation",
+          "uri": "http://id.who.int/icd/release/11/mms/1018070982",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
+        {
+          "code": "BD50.21",
+          "title": "- - - - Descending aorta dissection and distal propagation with rupture",
+          "uri": "http://id.who.int/icd/release/11/mms/1942832477",
+          "denominator_eligible": true,
+          "mapping_status": "confirmed"
+        },
+        {
+          "code": "BD50.2Y",
+          "title": "- - - - Other specified descending aorta dissection and distal propagation",
+          "uri": "http://id.who.int/icd/release/11/mms/1719771306/other",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
+        {
+          "code": "BD50.2Z",
+          "title": "- - - - Descending aorta dissection and distal propagation, unspecified",
+          "uri": "http://id.who.int/icd/release/11/mms/1719771306/unspecified",
+          "denominator_eligible": true,
+          "mapping_status": "confirmed"
         }
       ],
-      "publication_status": "not_published",
-      "qualified_coverage": false
+      "publication_status": "validated_candidate_not_yet_live",
+      "qualified_coverage": true,
+      "content_sha256": "92920fe1fe517ebc2108b9568291be16372277371e7227cf0f9993f26a4bd06a",
+      "confirmed_covered_codes": [
+        "BD50.01",
+        "BD50.0Z",
+        "BD50.11",
+        "BD50.1Z",
+        "BD50.21",
+        "BD50.2Z"
+      ],
+      "classification_review": "reports/p0-batch-01-icd-scope-review.json",
+      "editorial_review": "reports/p0-aortic-dissection-independent.json",
+      "publication_evidence": "reports/p0-batch-01-release-validation.json"
     },
     {
       "canonical_id": "diabetic-ketoacidosis",
       "backlog_id": "planned-074",
-      "decision": "independent_complication",
+      "decision": "conditional_disease_article",
       "related_existing_ids": [
         "type-2-diabetes",
         "dehydration"
       ],
-      "rationale": "糖尿病日常管理与急性酮症救治分别承接；不能只挂在2型糖尿病中计数。",
+      "rationale": "按病因、时间或分型解释诊疗；共同知识复用同一规范正文，完整叶类别逐条确认，提及和部分分支不自动增加分子。",
       "icd_candidates": [
         {
           "code": "5A22.0",
           "title": "- - - - - Diabetic ketoacidosis without coma",
           "uri": "http://id.who.int/icd/release/11/mms/540530695",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "confirmed"
         },
         {
           "code": "5A22.3",
           "title": "- - - - - Diabetic ketoacidosis with coma",
           "uri": "http://id.who.int/icd/release/11/mms/939674472",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "confirmed"
         }
       ],
-      "publication_status": "not_published",
-      "qualified_coverage": false
+      "publication_status": "validated_candidate_not_yet_live",
+      "qualified_coverage": true,
+      "content_sha256": "7efeaae8a2dfc3cf688543d77a67dcba862aa19712d011ce507892d8d3d8f075",
+      "confirmed_covered_codes": [
+        "5A22.0",
+        "5A22.3"
+      ],
+      "classification_review": "reports/p0-batch-01-icd-scope-review.json",
+      "editorial_review": "reports/p0-diabetic-ketoacidosis-independent.json",
+      "publication_evidence": "reports/p0-batch-01-release-validation.json"
     },
     {
       "canonical_id": "retinal-detachment",
@@ -320,30 +477,81 @@
     },
     {
       "canonical_id": "postpartum-hemorrhage",
-      "backlog_id": null,
-      "decision": "independent_complication",
+      "backlog_id": "planned-163",
+      "decision": "conditional_disease_article",
       "related_existing_ids": [
         "preeclampsia"
       ],
-      "rationale": "产后失血与正常恶露、产后感染区分；按病因解释治疗。",
+      "rationale": "按病因、时间或分型解释诊疗；共同知识复用同一规范正文，完整叶类别逐条确认，提及和部分分支不自动增加分子。",
       "icd_candidates": [
+        {
+          "code": "JA43.0",
+          "title": "- - - Third-stage haemorrhage",
+          "uri": "http://id.who.int/icd/release/11/mms/1040555026",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
+        {
+          "code": "JA43.1",
+          "title": "- - - Other immediate postpartum haemorrhage",
+          "uri": "http://id.who.int/icd/release/11/mms/1531859332",
+          "denominator_eligible": true,
+          "mapping_status": "confirmed"
+        },
+        {
+          "code": "JA43.2",
+          "title": "- - - Delayed or secondary postpartum haemorrhage",
+          "uri": "http://id.who.int/icd/release/11/mms/803406203",
+          "denominator_eligible": true,
+          "mapping_status": "confirmed"
+        },
+        {
+          "code": "JA43.3",
+          "title": "- - - Postpartum coagulation defects",
+          "uri": "http://id.who.int/icd/release/11/mms/1252576495",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
+        {
+          "code": "JA43.4",
+          "title": "- - - Postpartum haemorrhage following obstructed labour with uterine rupture",
+          "uri": "http://id.who.int/icd/release/11/mms/1388318842",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
+        {
+          "code": "JA43.5",
+          "title": "- - - Postpartum haemorrhage following obstructed labour without mention of uterine rupture",
+          "uri": "http://id.who.int/icd/release/11/mms/1811689101",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
         {
           "code": "JA43.Y",
           "title": "- - - Other specified postpartum haemorrhage",
           "uri": "http://id.who.int/icd/release/11/mms/820245648/other",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "partial"
         },
         {
           "code": "JA43.Z",
           "title": "- - - Postpartum haemorrhage, unspecified",
           "uri": "http://id.who.int/icd/release/11/mms/820245648/unspecified",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "confirmed"
         }
       ],
-      "publication_status": "not_published",
-      "qualified_coverage": false
+      "publication_status": "validated_candidate_not_yet_live",
+      "qualified_coverage": true,
+      "content_sha256": "13298c6a96d60437d2d358b18fa5ebdc0f675caff57ff156897dd4e24a096ba5",
+      "confirmed_covered_codes": [
+        "JA43.1",
+        "JA43.2",
+        "JA43.Z"
+      ],
+      "classification_review": "reports/p0-batch-01-icd-scope-review.json",
+      "editorial_review": "reports/p0-postpartum-hemorrhage-independent.json",
+      "publication_evidence": "reports/p0-batch-01-release-validation.json"
     },
     {
       "canonical_id": "carbon-monoxide-poisoning",

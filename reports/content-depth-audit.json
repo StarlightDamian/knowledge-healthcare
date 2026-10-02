@@ -1,7 +1,7 @@
 {
   "purpose": "Existing-topic content expansion and source-locator screening; not a medical validation or coverage estimate.",
   "classification_target": {
-    "target": 0.95,
+    "target": 1.0,
     "measured": 0.0,
     "denominator": 13155,
     "classification": "ICD-11 MMS",
@@ -9,12 +9,13 @@
     "unit": "Independent eligible condition category",
     "content_requirement": "Confirmed category mapping, complete bilingual beginner-readable content, claim-level authoritative cross-checks and independent editorial review. Clinical sign-off is tracked separately.",
     "snapshot_status": "frozen",
-    "mapping_status": "in_progress"
+    "mapping_status": "in_progress",
+    "milestone": 0.95
   },
-  "topics": 77,
+  "topics": 82,
   "dimensions_per_topic": 14,
-  "bilingual_fields": 2156,
-  "editorial_records": 77,
+  "bilingual_fields": 2296,
+  "editorial_records": 82,
   "clinically_reviewed": 0,
   "icd_mapped_topics": 0,
   "all_condition_coverage": null,
@@ -51,12 +52,12 @@
       "id": "anaphylaxis",
       "kind": "condition",
       "review_status": "editorial_draft",
-      "content_sha256": "cc1e1dd2d59e7abb03c2baa1880d206bc1c8ebd6aedcd39a042d84f7421a1041",
-      "sources_sha256": "317a7adc5238b9cb639f06ba9387b2d0eb81d25cd19b0bd574f4fea93ca70b97",
-      "editorial_record_sha256": "92b2204651616ad1d272e897380012b77d97157e63e43c68872898b543a9ae8d",
+      "content_sha256": "83a253c6243803a1958a4c7618685d9bcd96d63ca45c35fb3dde71bba7557a52",
+      "sources_sha256": "cc9f9e61b92608e9f17a441755662c01968f80f9d8f63af9eede1828c9c8d1e5",
+      "editorial_record_sha256": "36a331e6fe85661519bc56965d6e250e91e606dcb386c74d53b564dc3e1d7b0d",
       "bilingual_fields_with_lists": 28,
-      "chinese_characters": 1403,
-      "english_words": 607
+      "chinese_characters": 4145,
+      "english_words": 1928
     },
     {
       "id": "animal-bite",
@@ -90,6 +91,17 @@
       "bilingual_fields_with_lists": 28,
       "chinese_characters": 1303,
       "english_words": 556
+    },
+    {
+      "id": "aortic-dissection",
+      "kind": "condition",
+      "review_status": "editorial_draft",
+      "content_sha256": "92920fe1fe517ebc2108b9568291be16372277371e7227cf0f9993f26a4bd06a",
+      "sources_sha256": "b8c30f2e76d574f6a06086630e88e90a22e7bc8bc714de1ce1f53a5dcb61ad6e",
+      "editorial_record_sha256": "a6fd4740e6322b84f07392931d52eedba0c6b0742356c67bb4648471d7516198",
+      "bilingual_fields_with_lists": 28,
+      "chinese_characters": 3291,
+      "english_words": 1674
     },
     {
       "id": "appendicitis",
@@ -310,6 +322,17 @@
       "bilingual_fields_with_lists": 28,
       "chinese_characters": 1737,
       "english_words": 786
+    },
+    {
+      "id": "diabetic-ketoacidosis",
+      "kind": "condition",
+      "review_status": "editorial_draft",
+      "content_sha256": "7efeaae8a2dfc3cf688543d77a67dcba862aa19712d011ce507892d8d3d8f075",
+      "sources_sha256": "b7ed873da223f846139dbe6d5c50eead22d633b93707f406fb4610526ca751be",
+      "editorial_record_sha256": "89c57041e667eb220d7613eba17481e56e7ffa0f5de7b62636cf4ebfcd3b935d",
+      "bilingual_fields_with_lists": 28,
+      "chinese_characters": 3593,
+      "english_words": 1803
     },
     {
       "id": "dizziness",
@@ -576,6 +599,17 @@
       "english_words": 608
     },
     {
+      "id": "meningitis",
+      "kind": "condition",
+      "review_status": "editorial_draft",
+      "content_sha256": "d149abd31278c9968a93401bb953b2ceb33d110230aa0f2929a45fcaeb824d34",
+      "sources_sha256": "b667c82d6b42b2fa11a4c342362202bc26a37a979ea58b3b1bb85f0726bcb77f",
+      "editorial_record_sha256": "90eea50856ead35f14ef0258126c12dc21ca8d3f220529b21d8044a5b50868aa",
+      "bilingual_fields_with_lists": 28,
+      "chinese_characters": 3574,
+      "english_words": 1772
+    },
+    {
       "id": "migraine",
       "kind": "condition",
       "review_status": "editorial_draft",
@@ -697,6 +731,17 @@
       "english_words": 583
     },
     {
+      "id": "postpartum-hemorrhage",
+      "kind": "condition",
+      "review_status": "editorial_draft",
+      "content_sha256": "13298c6a96d60437d2d358b18fa5ebdc0f675caff57ff156897dd4e24a096ba5",
+      "sources_sha256": "7e3da551d592797aac41e6566dafac672be2362eaa4044d7f0df15bcce52c813",
+      "editorial_record_sha256": "491e48786c8a4dacd7b0e7ebbb740cac6c67ded172affd44c10b28ee1e9b2af8",
+      "bilingual_fields_with_lists": 28,
+      "chinese_characters": 3065,
+      "english_words": 1427
+    },
+    {
       "id": "preeclampsia",
       "kind": "condition",
       "review_status": "editorial_draft",
@@ -772,6 +817,17 @@
       "bilingual_fields_with_lists": 28,
       "chinese_characters": 1368,
       "english_words": 578
+    },
+    {
+      "id": "sepsis",
+      "kind": "condition",
+      "review_status": "editorial_draft",
+      "content_sha256": "33ce6e30f30c1b6aa465b5c0a45957e26fa0b3f907b681b0572c5a743ff60521",
+      "sources_sha256": "9cfc54b6a8fc2b304f6f45dbada58cccc1b9ccf5374023fbc45b5a4b8fe66d88",
+      "editorial_record_sha256": "254f8ff118fd61ea571351df87e53475989b794e13442d3837210cfc4ad3e389",
+      "bilingual_fields_with_lists": 28,
+      "chinese_characters": 3547,
+      "english_words": 1854
     },
     {
       "id": "shingles",

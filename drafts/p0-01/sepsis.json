@@ -1,0 +1,346 @@
+{
+  "schema_version": "1.0.0",
+  "id": "sepsis",
+  "kind": "condition",
+  "primary_domain": "general",
+  "names": {
+    "zh-CN": "脓毒症",
+    "en": "Sepsis"
+  },
+  "aliases": {
+    "zh-CN": [
+      "感染引起的器官功能障碍"
+    ],
+    "en": []
+  },
+  "symptom_terms": [
+    {
+      "zh-CN": "感染后意识混乱",
+      "en": "confusion with infection"
+    },
+    {
+      "zh-CN": "呼吸急促",
+      "en": "rapid breathing"
+    },
+    {
+      "zh-CN": "尿量明显减少",
+      "en": "markedly reduced urine"
+    }
+  ],
+  "departments": [
+    "emergency",
+    "infectious-diseases"
+  ],
+  "reference_urgency": "emergency",
+  "sections": {
+    "summary": {
+      "text": {
+        "zh-CN": "脓毒症是感染引发身体反应失调，并损伤器官功能的危急情况。\n\n- 肺、尿路、皮肤或腹部感染都可能成为起点。它不只是“发烧很高”，还可能影响意识、呼吸、血压和尿量。\n- 脓毒性休克是更严重的循环问题，低血压和供血不足会进一步威胁器官；并不是所有脓毒症起初就有休克。",
+        "en": "Sepsis is a dangerous, dysregulated response to infection that injures organ function.\n\n- Lung, urinary, skin or abdominal infection may be the starting point. It is more than a high fever and can affect awareness, breathing, pressure and urine output.\n- Septic shock is a more severe circulatory problem where low pressure and inadequate blood flow further endanger organs; not all sepsis initially includes shock."
+      },
+      "source_ids": [
+        "sepsis-who",
+        "sepsis-cdc",
+        "sepsis-mayo-causes"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "causes_risks": {
+      "text": {
+        "zh-CN": "感染是起点，器官受损来自病原体与身体异常反应共同作用。\n\n- 细菌是常见起因，病毒或真菌感染也可能引发脓毒症。\n- 脓毒症是身体对感染的失调反应，本身不会在人之间传播；引起它的某些细菌或病毒感染却可以传染。\n- 婴儿、老人、孕产妇、免疫功能受抑制者，以及有肾病等慢性病的人更容易发生脓毒症。\n- 近期住院、手术以及体内导管等医疗装置，也是医生评估风险时需要了解的背景。",
+        "en": "Infection starts the process, while pathogens and a disordered host response contribute to organ injury.\n\n- Bacteria are common causes; viral or fungal infections can also trigger sepsis.\n- Sepsis is a disordered response to infection and is not itself passed between people; some underlying bacterial or viral infections can spread.\n- Infants, older adults, pregnant or postpartum people, those with weakened immunity and those with chronic illness such as kidney disease are more vulnerable to sepsis.\n- Recent admission, surgery and devices such as catheters are also relevant to risk assessment."
+      },
+      "source_ids": [
+        "sepsis-who",
+        "sepsis-mayo-causes",
+        "sepsis-cdc",
+        "sepsis-cdc-facts",
+        "sepsis-rch-child",
+        "sepsis-nhs",
+        "sepsis-msd-sepsis",
+        "sepsis-healthdirect-general"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "red_flags": {
+      "text": {
+        "zh-CN": "感染期间突然明显变差，要警惕脓毒症，不必等所有症状齐全。\n\n- 成年人感染时出现新的意识混乱、呼吸明显困难或难以唤醒，应立即呼叫当地急救；这些表现可能提示器官正在受影响。\n- 儿童呼吸费力、皮肤或嘴唇明显发青发灰、不能正常回应或难以唤醒、抽搐，应立即急救。婴儿病得很重时也可能不发高烧。\n- 6月龄以下婴儿吃奶不正常或不醒来吃奶，应立即去医院，不必等到完全拒食；这是澳大利亚皇家儿童医院的就医建议。英国NHS建议，5岁以下孩子不进食或不吃奶、不能正常回应、比平时嗜睡或难以唤醒时，呼叫急救或直接急诊。\n- 除上述婴幼儿和急救情形外，儿童饮水减少、呕吐后难以补充液体、湿尿布或排尿减少，应立即联系儿科或当地紧急医疗咨询评估。若明显萎靡、迅速变差或出现上述危险信号，直接去急诊。",
+        "en": "Sudden marked deterioration with infection raises concern for sepsis; do not wait for every sign to appear.\n\n- New confusion, marked breathing difficulty or difficulty waking during an adult infection requires immediate local emergency help; these can indicate organ involvement.\n- A child struggling to breathe, with clearly blue/grey skin or lips, not responding normally or difficult to wake, or having a seizure needs immediate emergency help. A very ill baby may not have a high fever.\n- A baby under 6 months who is feeding poorly or not waking for feeds should go to hospital immediately, without waiting for complete refusal; this is the Australian Royal Children’s Hospital advice. UK NHS advice is to call emergency services or go to emergency care when a child under 5 is not feeding, not responding normally, sleepier than usual or difficult to wake.\n- Outside the infant and emergency situations above, a child drinking less, struggling to replace fluids after vomiting, or having fewer wet nappies/less urine needs prompt pediatric or local urgent medical advice. Marked lethargy, rapid deterioration or any of the warning signs above requires emergency assessment."
+      },
+      "source_ids": [
+        "sepsis-nhs",
+        "sepsis-who",
+        "sepsis-mayo-causes",
+        "sepsis-rch-child",
+        "sepsis-nhs-dehydration",
+        "sepsis-qld-sick-child"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "care": {
+      "text": {
+        "zh-CN": "疑似脓毒症应立即去急诊，不能只在家退烧后继续观察。\n\n- 求助时直接说明“有感染，而且整体情况在变差”，并描述意识、呼吸、排尿等新变化。带上正在用的药，告诉医护以前有哪些药物过敏反应。\n- 恢复后若又出现感染且加重，应立即联系医疗服务；若再次意识异常或呼吸困难，直接急救，不等常规复诊。",
+        "en": "Suspected sepsis needs immediate emergency assessment rather than continued home observation after fever treatment.\n\n- When seeking help, say that an infection is accompanied by overall deterioration and describe new changes in awareness, breathing or urination. Bring current medicines and tell staff about previous medication allergies.\n- After recovery, obtain immediate advice for a new worsening infection; recurrent altered awareness or breathing difficulty needs emergency care rather than a routine appointment."
+      },
+      "source_ids": [
+        "sepsis-nhs",
+        "sepsis-who",
+        "sepsis-cdc-prevention",
+        "sepsis-mayo-anaphylaxis",
+        "sepsis-cdc-recovery"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diagnosis": {
+      "text": {
+        "zh-CN": "诊断同时寻找感染来源及器官是否受损。\n\n- 医生会反复观察意识、血压、呼吸、血氧和排尿，判断供血和器官功能是否在变差；一次看起来正常，不代表之后不会变化。\n- 血液检查可评估感染反应、肝肾功能、凝血和氧供；尿液、伤口样本或胸腹部影像按症状和怀疑的感染部位选择，并非每个人都做同一套检查。\n- 血培养是把血样中的病原体培养出来，帮助选择药物。单次指标或一次检测不能单独确诊或排除脓毒症，医生要结合查体、病程和后续变化。\n- 疑似脓毒症的评估和治疗要同步推进。2026国际成人指南要求立即开始救治；儿童同样需要紧急评估，但补液和药物方案由儿科团队制定。",
+        "en": "Assessment seeks both the infection source and evidence of organ injury.\n\n- Clinicians repeatedly assess awareness, blood pressure, breathing, oxygen and urine output to see whether circulation or organ function is worsening; an initially normal observation does not guarantee a stable course.\n- Blood tests assess the infection response, liver/kidney function, clotting and oxygen delivery. Urine or wound samples and chest/abdominal imaging are chosen for symptoms and suspected infection sites rather than using one identical test panel for everyone.\n- Blood culture attempts to grow pathogens from a blood sample to help select medicines. A single marker or test cannot by itself confirm or exclude sepsis; examination, illness course and reassessment matter.\n- Evaluation and treatment of suspected sepsis proceed together. The 2026 international adult guideline calls for immediate treatment; children also need urgent assessment, with pediatric teams determining their fluid and medicine plan."
+      },
+      "source_ids": [
+        "sepsis-cdc",
+        "sepsis-mayo-treatment",
+        "sepsis-msd-sepsis",
+        "sepsis-msd-shock",
+        "sepsis-healthdirect-general",
+        "sepsis-ssc-2026",
+        "sepsis-rch-child",
+        "sepsis-nlm-culture"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "differentials": {
+      "text": {
+        "zh-CN": "意识混乱、心跳快、气短或低血压也可能来自非感染问题。医生会一边处理危险，一边核对感染来源和其他原因。\n\n- 严重脱水：大量呕吐、腹泻或饮水不足后，可能出现少尿、头晕、心跳快；严重时也会意识异常和休克。医生结合失水经过和检查判断，感染与脱水也可能同时存在。\n- 严重过敏反应：用药或接触过敏原后突然出现喉舌肿胀、喘鸣、呼吸困难或晕厥，是不同于感染的急症。发生这些表现立即急救，不等它自行消退。\n- 心肌梗死等心脏问题也会造成供血不足。医生可能结合胸痛等经过、心电图和心肌损伤血液指标区分；脓毒症本身也能影响心脏，不能只凭一个异常结果判定原因。\n- 如果后续证据显示不是感染，团队会重新判断是否继续抗感染药；这也是反复查体、复查结果和调整治疗的原因。",
+        "en": "Confusion, a fast pulse, breathlessness or low blood pressure can also have noninfectious causes. Clinicians address immediate danger while checking infection sources and alternatives.\n\n- Severe dehydration can follow heavy vomiting, diarrhoea or inadequate intake, causing reduced urine, dizziness and a fast pulse; severe cases can cause altered awareness and shock. Fluid-loss history and examination help assessment, and infection and dehydration may coexist.\n- Anaphylaxis is a different emergency: tongue/throat swelling, wheezing, breathing difficulty or fainting can occur suddenly after medicine or allergen exposure. Seek emergency help immediately rather than waiting for symptoms to settle.\n- Heart problems such as myocardial infarction can also reduce blood flow. History including chest pain, an ECG and blood markers of heart injury may help distinguish causes; sepsis can itself affect the heart, so one abnormal result does not establish the cause.\n- If later evidence points away from infection, the team reconsiders whether antimicrobials are still needed; this is why examination, results and treatment are reviewed repeatedly."
+      },
+      "source_ids": [
+        "sepsis-ssc-2026",
+        "sepsis-msd-sepsis",
+        "sepsis-nhs-dehydration",
+        "sepsis-msd-shock",
+        "sepsis-mayo-anaphylaxis",
+        "sepsis-nhs-anaphylaxis",
+        "sepsis-nhlbi-mi-diagnosis",
+        "sepsis-ukhsa-review"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "treatment": {
+      "text": {
+        "zh-CN": "治疗同时控制感染、维持器官供血并支持受损器官。\n\n- 抗感染药需要及时使用。脓肿（积聚的脓液）或坏死组织有时还要引流或手术清除，这叫“感染源控制”：仅靠药物可能不能处理持续释放病原体的部位。\n- 若导尿管相关感染成为感染来源，医生可能需要拔除或更换导管，同时选择合适药物。由团队判断装置是否仍有必要及如何安全处理。\n- 静脉补液帮助恢复循环，仍低血压时可能用升压药。严重呼吸或肾功能问题可能需要呼吸机或透析，治疗强度由器官受损程度决定。",
+        "en": "Care controls infection, maintains organ blood flow and supports failing organs.\n\n- Antimicrobials are given promptly. A pus collection (abscess) or dead tissue may also need drainage or surgical removal, called source control, because medicines alone may not resolve an ongoing infection source.\n- If a urinary-catheter infection is the source, clinicians may remove or replace the catheter and choose suitable medicines. The team determines whether the device is still needed and how to manage it safely.\n- IV fluids support circulation and vasopressors may be needed for persistent low pressure. Severe respiratory or kidney dysfunction may require ventilation or dialysis, according to organ impairment."
+      },
+      "source_ids": [
+        "sepsis-who",
+        "sepsis-cdc",
+        "sepsis-mayo-treatment",
+        "sepsis-msd-sepsis",
+        "sepsis-ssc-2026",
+        "sepsis-cdc-catheter"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "medications": {
+      "text": {
+        "zh-CN": "抗感染药针对病原体，补液和升压药则帮助循环，作用不同。\n\n- 起初可能使用覆盖多种细菌的抗生素，待感染来源、培养和药敏结果清楚后缩小范围；“药敏”是在检查中判断病原体对哪些药物敏感。\n- 抗细菌药不能杀灭病毒；抗病毒和抗真菌药针对不同病原体，医生根据感染证据选择。对成人脓毒症，2026国际指南不主张人人经验性加用抗真菌药，而是在免疫抑制、长期用抗生素或腹腔感染等真菌感染风险下逐例考虑；IDSA念珠菌指南也要求结合相应风险和临床证据。\n- 不要用上次剩下的抗生素或别人的药自行处理这次感染；药物可能不对路，还会耽误适当治疗。出院处方按医嘱使用，有疑问联系医生或药师。\n- 抗生素可能引起腹泻、恶心或皮疹。出现新的不良反应应联系治疗团队；严重腹泻尤其需要评估，因为有时与抗生素相关的肠道感染有关。\n- 用药后出现明显呼吸困难、喉咙或舌头肿胀、喘鸣或晕倒，可能是严重过敏反应：立即求助急救。住院时立刻呼叫医护，院外呼叫当地急救，不等下一次服药或常规复诊。",
+        "en": "Antimicrobials target pathogens, while fluids and vasopressors support circulation; their roles differ.\n\n- Initial antibiotics may cover several bacteria; the range can be narrowed when the source, cultures and susceptibility results are clear. Susceptibility testing checks which medicines the pathogen responds to.\n- Antibacterial medicines do not kill viruses; antiviral and antifungal medicines target different organisms and are selected using infection evidence. For adult sepsis, the 2026 international guideline does not favor empirical antifungal treatment for everyone; it is considered case by case with fungal risk factors such as immunosuppression, prolonged antibiotics or an abdominal source. The IDSA Candida guideline also requires relevant risk factors and clinical evidence.\n- Do not self-treat this infection with leftover or another person’s antibiotics: the medicine may be inappropriate and delay suitable care. Follow the discharge prescription and ask a doctor or pharmacist about uncertainties.\n- Antibiotics can cause diarrhoea, nausea or rash. Contact the treating team about new adverse effects; severe diarrhoea particularly needs assessment because it may reflect an antibiotic-associated bowel infection.\n- Marked breathing difficulty, throat/tongue swelling, wheezing or collapse after medication may be anaphylaxis: get emergency help immediately. In hospital alert staff at once; outside hospital call the local emergency service, without waiting for the next dose or routine review."
+      },
+      "source_ids": [
+        "sepsis-who",
+        "sepsis-mayo-treatment",
+        "sepsis-nhs",
+        "sepsis-ssc-2026",
+        "sepsis-msd-sepsis",
+        "sepsis-cdc-antibiotics",
+        "sepsis-acs-infections",
+        "sepsis-idsa-candida",
+        "sepsis-mayo-antibiotics",
+        "sepsis-nhs-antibiotics-effects",
+        "sepsis-nhs-cdiff",
+        "sepsis-mayo-anaphylaxis",
+        "sepsis-nhs-anaphylaxis"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "diet": {
+      "text": {
+        "zh-CN": "急性脓毒症靠医院治疗控制，饮食主要支持恢复和营养摄入。\n\n- 出院后以均衡饮食支持恢复；胃口差时，可尝试少量多餐。持续吃不下或体重下降要向随访团队提出，讨论营养支持。\n- 合并慢性肾病时，液体和蛋白质等营养素的安排取决于肾功能和检查结果，并非人人都要限水，也不适合统一套用“多吃高蛋白”的恢复食谱。与肾病团队或营养师确定适合的量。这里引用的是成人慢性肾病资料，儿童、透析者或急性肾损伤者需要相应团队另行安排。\n- 饮食不能替代抗感染治疗、补液或器官支持。急性期怎样补充营养，由住院团队根据能否经胃肠道进食等实际情况安排。",
+        "en": "Acute sepsis requires hospital treatment; food mainly supports recovery and adequate nutrition.\n\n- After discharge, balanced eating supports recovery; smaller, more frequent meals may help with poor appetite. Tell the follow-up team about persistent poor intake or weight loss and discuss nutrition support.\n- With coexisting chronic kidney disease, fluids and nutrients such as protein depend on kidney function and test results. Not everyone needs fluid restriction, and a blanket high-protein recovery diet is unsuitable. Agree appropriate amounts with the kidney team or dietitian. These sources address adult chronic kidney disease; children, people on dialysis or those with acute kidney injury need their own team’s plan.\n- Food does not replace antimicrobial treatment, fluids or organ support. During acute illness the hospital team plans nutrition according to factors such as whether feeding through the digestive tract is feasible."
+      },
+      "source_ids": [
+        "sepsis-nhs",
+        "sepsis-cdc-recovery",
+        "sepsis-ssc-2026",
+        "sepsis-asn-recovery",
+        "sepsis-niddk-ckd-diet",
+        "sepsis-nkf-ckd-diet",
+        "sepsis-mayo-treatment"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "daily_care": {
+      "text": {
+        "zh-CN": "出院后的目标是逐步恢复生活能力，不是立即达到生病前的活动量。\n\n- 从坐起、短距离走动、洗漱等小任务开始，与康复团队确认合适强度，疲劳时休息。记录睡眠、活动和症状，帮助比较进步。\n- 出院前与团队确认正在用哪些药、后续复诊和康复安排。一个实用办法是请家人协助保存药单和预约信息，帮助执行已经商定的计划。\n- 出现记忆空白、噩梦、焦虑或持续低落时，向医生或康复团队说明。脓毒症后的恢复也包括心理和认知支持。",
+        "en": "After discharge, rebuild daily functioning gradually rather than immediately returning to pre-illness activity levels.\n\n- Start with small tasks such as sitting up, short walks and washing, agree intensity with rehabilitation staff, and rest when tired. Track sleep, activity and symptoms to make progress visible.\n- Before discharge, confirm medicines, follow-up and rehabilitation arrangements with the team. One practical option is to ask family to help keep the medicine list and appointment information so the agreed plan is easier to follow.\n- Tell a clinician or rehabilitation team about memory gaps, nightmares, anxiety or persistent low mood. Recovery after sepsis also includes psychological and cognitive support."
+      },
+      "source_ids": [
+        "sepsis-cdc-recovery",
+        "sepsis-nhs",
+        "sepsis-ssc-2026",
+        "sepsis-cdc-hospital-core"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "special_populations": {
+      "text": {
+        "zh-CN": "婴幼儿、孕产妇和免疫功能低下者需要结合特定背景识别感染。\n\n- 婴幼儿可能以喂养变差、反应减弱为主要表现，且不一定发高烧。尤其是6月龄以下婴儿，吃奶不正常或不醒来吃奶就应去医院；其他年龄与危险信号的行动见前面的分级说明。\n- 老人出现严重感染时可能没有明显高烧。痴呆或沟通困难者不容易表达不适，陪同者可以说明意识、活动和日常反应与平时有什么不同。\n- 化疗期间或因癌症治疗白细胞降低时，发热、寒战、新咳嗽、尿痛、伤口红肿等感染征象都要立即联系治疗团队或其值班服务；不要等到下一次门诊或等危险信号凑齐。\n- 其他免疫抑制治疗的处理取决于具体药物。例如，服用硫唑嘌呤期间出现发热、寒战、咽痛或其他感染征象，应立即联系开药团队或紧急医疗服务。出现呼吸困难、意识异常等危险信号，直接急救。\n- 孕期或分娩后出现发热、持续或加重的剧烈腹痛、有异味的阴道分泌物，或呼吸困难，应立即联系产科或紧急医疗服务。这些信号可能是感染，也可能是其他孕产期急症；联系不上团队时直接去急诊，不等下一次产检。明确告知医护正在怀孕或近期分娩。",
+        "en": "Infants, pregnant or postpartum people and those with weakened immunity need assessment that accounts for their circumstances.\n\n- Babies and young children may mainly show feeding or responsiveness changes and may not have a high fever. In particular, a baby under 6 months who is feeding poorly or not waking for feeds should go to hospital; see the earlier age-specific warning-sign actions for other situations.\n- Older people with serious infection may not have a prominent fever. People with dementia or communication difficulties may struggle to describe illness; companions can explain how awareness, activity and usual responses have changed.\n- During chemotherapy or low white-cell counts from cancer treatment, fever, chills, new cough, painful urination or wound redness/swelling require immediate contact with the treating team or its on-call service. Do not wait for a routine visit or for all warning signs to appear.\n- Infection advice during other immunosuppressive treatment depends on the medicine. For example, fever, chills, sore throat or other signs of infection while taking azathioprine require immediate contact with the prescribing team or urgent medical service. Breathing difficulty, altered awareness or other emergency signs require emergency help directly.\n- During pregnancy or after birth, fever, persistent or worsening severe abdominal pain, foul-smelling vaginal discharge or breathing difficulty requires immediate contact with maternity or urgent medical services. These signs may reflect infection or another maternity emergency; go to an emergency department if the team cannot be reached rather than waiting for the next visit. Tell staff that you are pregnant or recently gave birth."
+      },
+      "source_ids": [
+        "sepsis-who",
+        "sepsis-nhs",
+        "sepsis-rch-child",
+        "sepsis-msd-sepsis",
+        "sepsis-nice-recognition",
+        "sepsis-cdc-chemo-infection",
+        "sepsis-acs-infections",
+        "sepsis-nhs-azathioprine",
+        "sepsis-ashp-azathioprine",
+        "sepsis-cdc-maternal",
+        "sepsis-healthdirect-maternal",
+        "sepsis-qld-sick-child"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prognosis_followup": {
+      "text": {
+        "zh-CN": "恢复可持续数周或数月，有些人需要更长期帮助，不能只用出院与否衡量恢复。\n\n- 复诊要说明乏力、气短、体重变化、睡眠、记忆和情绪问题，让团队判断是否需要康复、器官复查或心理服务。\n- 脓毒症幸存者再次感染和脓毒症风险更高。新的感染持续加重时及时就医，不把所有不适都当作恢复期疲劳。",
+        "en": "Recovery can take weeks or months, and some need longer-term help; discharge alone does not mean full recovery.\n\n- Report fatigue, breathlessness, weight change, sleep, memory and mood at review so the team can decide on rehabilitation, organ reassessment or mental-health support.\n- Survivors have increased risk of future infections and sepsis. Seek care promptly for a worsening new infection rather than attributing every symptom to recovery fatigue."
+      },
+      "source_ids": [
+        "sepsis-nhs",
+        "sepsis-cdc-recovery"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "complications": {
+      "text": {
+        "zh-CN": "严重感染和异常循环会同时伤害多个器官，但后果因严重程度而异。\n\n- 肺、肾、心脏或脑功能受损可能需要支持治疗；部分患者出院后仍有长期功能问题。\n- 严重脓毒症可扰乱凝血，小血管里的微小血栓会妨碍组织供血，造成进一步组织损伤。不是每个人都会发生这类并发症。\n- 脓毒症后综合征指持续乏力、睡眠、记忆或情绪等问题，不是再次脓毒症的同义词。症状需要按实际原因继续处理。",
+        "en": "Severe infection and abnormal circulation can injure several organs, with consequences varying by severity.\n\n- Injury to the lungs, kidneys, heart or brain may require supportive treatment; some people continue to have functional problems after discharge.\n- Severe sepsis can disturb clotting; tiny clots in small vessels can obstruct tissue blood flow and add to tissue injury. This complication does not occur in everyone.\n- Post-sepsis syndrome describes persistent problems such as fatigue, disturbed sleep, memory or mood; it is not another name for recurrent sepsis. Symptoms need assessment and treatment on their own merits."
+      },
+      "source_ids": [
+        "sepsis-who",
+        "sepsis-mayo-causes",
+        "sepsis-mayo-treatment",
+        "sepsis-cdc-recovery",
+        "sepsis-rch-child",
+        "sepsis-msd-shock",
+        "sepsis-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    },
+    "prevention": {
+      "text": {
+        "zh-CN": "预防重点是减少感染、及时处理感染，以及避免恢复后再次恶化。\n\n- 按当地年龄和疾病条件接种推荐疫苗，勤洗手，可以减少某些感染及其严重后果；疫苗不能预防所有引起脓毒症的病原体。\n- 小伤口清洗后保持清洁并覆盖，直到愈合。糖尿病、肾病等慢性病继续按既定方案管理；出院后若药物或饮食安排有变化，与团队确认，不自行恢复以前的方案。\n- 带导尿管回家时，按护士教的方法护理；接触装置前后洗手，保持尿袋低于膀胱、管道不扭折。出现感染或引流问题及时联系团队。\n- 让共同照护的人也了解危险信号。感染一直不改善或正在加重时，及时求助；意识或呼吸异常时按危险信号急救。",
+        "en": "Prevention focuses on reducing infection, treating it promptly and avoiding deterioration after recovery.\n\n- Recommended vaccines suited to local age and health conditions, and regular handwashing, reduce some infections and their severe consequences; vaccines do not prevent every pathogen that can cause sepsis.\n- Clean minor wounds and keep them covered until healed. Continue agreed care for chronic conditions such as diabetes or kidney disease. Confirm any medicine or diet changes after discharge with the team instead of automatically returning to the old plan.\n- With a urinary catheter at home, follow the nurse’s care instructions; clean hands before and after handling it, keep the bag below the bladder and avoid kinks. Contact the team promptly for infection or drainage problems.\n- Make sure others involved in care know the warning signs. Seek help for an infection that is not improving or is worsening, and use emergency care for abnormal awareness or breathing."
+      },
+      "source_ids": [
+        "sepsis-who",
+        "sepsis-cdc-prevention",
+        "sepsis-nhs-cuts",
+        "sepsis-cdc-hospital-core",
+        "sepsis-ssc-2026",
+        "sepsis-nhs-catheter",
+        "sepsis-cdc-catheter",
+        "sepsis-adam-catheter",
+        "sepsis-nhs"
+      ],
+      "support_status": "pending_claim_verification"
+    }
+  },
+  "source_ids": [
+    "sepsis-who",
+    "sepsis-cdc",
+    "sepsis-mayo-causes",
+    "sepsis-cdc-facts",
+    "sepsis-rch-child",
+    "sepsis-nhs",
+    "sepsis-msd-sepsis",
+    "sepsis-healthdirect-general",
+    "sepsis-nhs-dehydration",
+    "sepsis-cdc-prevention",
+    "sepsis-mayo-anaphylaxis",
+    "sepsis-cdc-recovery",
+    "sepsis-mayo-treatment",
+    "sepsis-msd-shock",
+    "sepsis-ssc-2026",
+    "sepsis-nlm-culture",
+    "sepsis-nhs-anaphylaxis",
+    "sepsis-nhlbi-mi-diagnosis",
+    "sepsis-ukhsa-review",
+    "sepsis-cdc-catheter",
+    "sepsis-cdc-antibiotics",
+    "sepsis-acs-infections",
+    "sepsis-idsa-candida",
+    "sepsis-mayo-antibiotics",
+    "sepsis-nhs-antibiotics-effects",
+    "sepsis-nhs-cdiff",
+    "sepsis-asn-recovery",
+    "sepsis-niddk-ckd-diet",
+    "sepsis-nkf-ckd-diet",
+    "sepsis-cdc-hospital-core",
+    "sepsis-nice-recognition",
+    "sepsis-cdc-chemo-infection",
+    "sepsis-nhs-azathioprine",
+    "sepsis-ashp-azathioprine",
+    "sepsis-cdc-maternal",
+    "sepsis-healthdirect-maternal",
+    "sepsis-nhs-cuts",
+    "sepsis-nhs-catheter",
+    "sepsis-adam-catheter",
+    "sepsis-qld-sick-child"
+  ],
+  "related_ids": [
+    "pneumonia",
+    "lower-uti"
+  ],
+  "tags": [
+    "course_context_dependent"
+  ],
+  "clinical_region": "MULTI_REGION",
+  "coding": [],
+  "review": {
+    "status": "editorial_draft",
+    "reviewers": [],
+    "medical_reviewed_at": null,
+    "editorial_updated_at": "2026-10-02",
+    "next_editorial_review_due": "2027-01-01"
+  },
+  "localizations": {
+    "zh-CN": {
+      "status": "draft",
+      "clinician_reviewed": false
+    },
+    "en": {
+      "status": "draft",
+      "clinician_reviewed": false
+    }
+  },
+  "evidence_certainty": "not_formally_graded",
+  "limitations": {
+    "zh-CN": "各节保留来源定位和地区条件；编辑证据记录中的未完成项见来源与编辑信息。",
+    "en": "Section sources and regional conditions are retained; unfinished evidence checks are recorded in editorial information."
+  },
+  "study_ids": [],
+  "advanced_fields": {
+    "prevalence_estimate": null,
+    "incidence_estimate": null,
+    "formal_diagnostic_criteria": null,
+    "quantitative_prognosis": null,
+    "transmission_details": null,
+    "screening_intervals": null,
+    "regional_drug_approval": null,
+    "procedure_indications": null
+  },
+  "advanced_fields_status": "not_yet_curated"
+}
