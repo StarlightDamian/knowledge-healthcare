@@ -2,7 +2,7 @@ import copy
 import unittest
 from unittest.mock import patch
 from src.guide.icd import (OFFICIAL_SHA256, classify_rows, coverage_icd, load_icd,
-                           propose_mappings)
+                           propose_mappings, load_chinese_titles)
 from src.guide.model import ValidationError, content_hash
 from tests.test_editorial import fixture
 
@@ -19,6 +19,14 @@ class ICDTests(unittest.TestCase):
         self.assertEqual(manifest['eligible_categories'], 13155)
         self.assertEqual(manifest['row_kinds']['category'], 35664)
         self.assertTrue(all(row['reason'] and row['release'] == '2026-01' for row in self.snapshot['rows']))
+
+    def test_chinese_names_align_without_changing_frozen_structure(self):
+        names = load_chinese_titles(snapshot=self.snapshot)
+        self.assertEqual(names['manifest']['eligible_titles'], 13155)
+        self.assertEqual(names['manifest']['category_count'], 35664)
+        self.assertIn('急性ST段抬高型心肌梗死', names['titles']['BA41.0'])
+        self.assertEqual(len(names['manifest']['parent_discrepancy_codes']), 19)
+        self.assertEqual(self.snapshot['manifest']['snapshot_sha256'], OFFICIAL_SHA256)
 
     def test_special_conditions_included_placeholders_excluded(self):
         rows = {r['code']: r for r in self.snapshot['rows'] if r['class_kind'] == 'category'}
@@ -47,6 +55,7 @@ class ICDTests(unittest.TestCase):
         self.assertEqual(proposals[0]['code'], '1A00')
 
     def report(self, data, mappings, qualified=()):
+        data = dict(data, project={'coverage_target': {'target': 1.0, 'milestone': 0.95}})
         with patch('src.guide.icd.load_icd', return_value=self.snapshot):
             return coverage_icd(data, mappings=mappings, editorial={'qualified_condition_ids': list(qualified)})
 
@@ -81,6 +90,25 @@ class ICDTests(unittest.TestCase):
         self.assertEqual(len(result['gaps']), 13155)
         self.assertEqual({r['state'] for r in result['category_states']}, {'missing', 'out_of_scope'})
         self.assertEqual(result['fraction'], 0)
+
+    def test_95_percent_is_a_milestone_not_completion(self):
+        data, _ = fixture()
+        rows = [r for r in self.snapshot['rows'] if r['decision'] == 'included'][:20]
+        snapshot = dict(self.snapshot, rows=rows)
+        conditions, mappings = [], []
+        for i, row in enumerate(rows[:19]):
+            condition = copy.deepcopy(data['conditions'][0]); condition['id'] = f'topic-{i}'
+            conditions.append(condition)
+            mapping = self.mapping({'conditions': [condition]})
+            mapping.update(condition_id=condition['id'], code=row['code'])
+            mappings.append(mapping)
+        data.update(conditions=conditions, project={'coverage_target': {'target': 1.0, 'milestone': 0.95}})
+        with patch('src.guide.icd.load_icd', return_value=snapshot):
+            result = coverage_icd(data, mappings=mappings, editorial={'qualified_condition_ids': [c['id'] for c in conditions]})
+        self.assertEqual(result['fraction'], 0.95)
+        self.assertTrue(result['milestone_met'])
+        self.assertFalse(result['target_met'])
+        self.assertEqual(result['target'], 1.0)
 
     def test_duplicate_mapping_rejected(self):
         data, _ = fixture(); mapping = self.mapping(data)

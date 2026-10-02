@@ -1,0 +1,82 @@
+{
+  "checked_at": "2026-10-02",
+  "scope": "Complete editorial priority inventory for every frozen eligible ICD category; final target changed to100%,95% retained as milestone. No clinical content or sign-off upgraded.",
+  "classification": "ICD-11 MMS2026-01",
+  "catalog_categories": 13155,
+  "catalog_chapters": 23,
+  "priority_counts": {
+    "P0": {
+      "all": 133,
+      "pending": 126
+    },
+    "P1": {
+      "all": 3805,
+      "pending": 3805
+    },
+    "P2": {
+      "all": 9217,
+      "pending": 9216
+    },
+    "P3": {
+      "all": 0,
+      "pending": 0
+    }
+  },
+  "covered_categories": 8,
+  "remaining_categories": 13147,
+  "work_packages": 658,
+  "sources_actually_read": 44,
+  "medical_dimensions": 6,
+  "rules": 62,
+  "final_target": 1.0,
+  "milestone": 0.95,
+  "coverage_target_met": false,
+  "data_sha256": "d818ff8bfec30b7601353b74e02a2bc07956b31ddb8084eed5e6d9c16bbe3415",
+  "review": "reports/icd-priority-adversarial-review.json",
+  "source_review": "reports/priority-source-review.json",
+  "chinese_names": "reports/icd-chinese-title-import.json",
+  "checks": {
+    "node": {
+      "passed": 360,
+      "command": "npm test"
+    },
+    "affected_python": {
+      "unique_passed": 108,
+      "command": "python -m unittest tests.test_icd tests.test_priorities tests.test_model tests.test_editorial tests.test_content_audit tests.test_knowledge tests.test_clinical_gate"
+    },
+    "generated_inventory": {
+      "passed": true,
+      "command": "python -m src.guide priorities-icd --check",
+      "categories_unique": 13155,
+      "official_chinese_titles": 13155,
+      "qualified_count_unchanged": 8
+    },
+    "server_postgresql_http": {
+      "passed": true,
+      "release_id": "rel-b49d8637135769e8f2e86a5d73afa6e4def994bb40477a3d1d4aa0a8450c5a7a",
+      "old_release_id": "rel-722f8d1e35afc7ef16946b31922c7fec980df1e267c4af70a7fe73f244204b89",
+      "data_sha256": "d818ff8bfec30b7601353b74e02a2bc07956b31ddb8084eed5e6d9c16bbe3415",
+      "topics": 77,
+      "source_count": 461,
+      "editorial_records": 70,
+      "production_changed": false,
+      "test_git_commit_is_synthetic": true,
+      "checks": [
+        "existing isolated database preserved; no schema reset",
+        "77 article/source/map content unchanged; only coverage project policy changed",
+        "candidate hidden; duplicate import idempotent",
+        "old/new full snapshots and pinned coverage policies",
+        "publish, rollback and reactivate",
+        "HTTP bootstrap final100/milestone95 and8 qualified categories",
+        "CN/EN77-row22-column CSV every section exact"
+      ]
+    },
+    "github_ci": {
+      "status": "pending"
+    },
+    "public_https": {
+      "status": "pending"
+    }
+  },
+  "publication_status": "validated_candidate_not_yet_live"
+}

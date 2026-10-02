@@ -1,0 +1,786 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-02",
+  "status": "accepted_after_targeted_corrections",
+  "reviewer": {
+    "role": "independent_ai_editorial_adversarial_reviewer",
+    "medical_reviewed": false,
+    "clinician_attestation": false
+  },
+  "scope": "全量 ICD 编辑优先规则与生成器的一次定向独立审查；两项问题修复后只复核受影响范围。未重新审阅已发布医学正文。",
+  "classification_status": "rule_based_editorial_priority",
+  "input_binding": {
+    "data/icd/priorities.json": "d44d7418aa6a898e297365b0372aefcc8bd44da1e1069b0f78f84a42c2c8103e",
+    "reports/priority-source-review.json": "accb1dc55754301ed9773989ab24f1449a5aaa57dd5d577e4204b02f222dd29e",
+    "src/guide/priorities.py": "5d3482115ee0421cc7cd6fe68e3fc5cea4f7cdc7599785714ce1bb0067793b54",
+    "tests/test_priorities.py": "64112b15c89eb5fa4afb8eb366df4bbfd10b496cfbb1932987f33e738b663a42",
+    "src/guide/icd.py": "2d939f43f577aba175bb30553fb05c7673f47efc6b99effa916e1996467ffa28",
+    "src/guide/__main__.py": "cf6246c7d5268340c052227a1fed4273bab4a2f5feea9e291339ec9c4ecf75e9",
+    "data/project.json": "4d53c8f09976ecf09d30560f61dffc34e7b088d19f6cba58966b6854bdff5188",
+    "data/icd/manifest.json": "2818b81cfb606dfcd1ad6d1463feb42bd026076ae72d01a3dc28953f5f16d8f4",
+    "data/icd/mappings.json": "62c5c39463fae7ebc3367177e7d88102e719e54943f530c29d93c82ffc370967",
+    "data/departments.json": "9ca4e3e655ac0b3865dd45d75fef66f2688dfeae3f2ebec4f80f1b73f7935eff",
+    "reports/icd-existing-inventory.json": "137a68735e2781c469486fa90cfad1c1602a4b5a835bd6a71f2b00ec317bffa2",
+    "reports/batch-01-mece.json": "bec552c9d1e87b743946201657014b3d321aacf28c218ae94a9808218dcd002a",
+    "reports/icd-chinese-title-import.json": "802acabe8ba3e87bb02321946d6e0c821801a615ac38ec35546f8e62eec88d81"
+  },
+  "source_review_evidence_canonical_sha256": "b18da08b0918549738e7ba6bd7badacdae669cd54e63738ce06fb954b957b2dc",
+  "binding_note": "input_binding 保存本次实际读取版本。source_review_evidence_canonical_sha256 明确仅排除审查完成后可添加的 independent_review 回链，不排除来源、规则范围或观察内容。",
+  "initial_review_input": {
+    "priorities_file_sha256": "71406f7e62ec7dd16d623cbf138215016210550da64550fb4a0bd9e1b081637e",
+    "source_review_file_sha256": "b1c5fdc1aa6463e343b908cb3795dcbe25c628440979005d7a99e9e2c35beaa8"
+  },
+  "resolved_findings": [
+    {
+      "id": "IPR-01",
+      "severity": "material_scope",
+      "rules": [
+        "p1-cns-neoplasms",
+        "p1-haematological-neoplasms"
+      ],
+      "before": "WHO Cancer 与 ICD 结构被用于整个混合肿瘤父级 P1，包含明确良性 2A02.3/.4 及皮肤肥大细胞增多症 2A21.10 等；免责声明不能替代具体范围依据。",
+      "required_change": "缩到实际核对且有已读依据的明确恶性/白血病/淋巴瘤节点；其余保留清单，P2/null 待逐类裁定。",
+      "resolution": "作者已缩窄选择器；独立核对实际后代集合及上述反例，未凭标题前缀匹配。",
+      "status": "resolved"
+    },
+    {
+      "id": "IPR-02",
+      "severity": "material_omission",
+      "rules": [
+        "p0-retinal-detachment"
+      ],
+      "before": "仅 9B73.0/.3 已覆盖两叶为 P0，9B73.4/.Y/.Z 仍基线 P2；裂孔与残余脱离类别需要先补新发危险识别及性质鉴别，优先级不能受当前正文覆盖驱动。",
+      "required_change": "依据 NEI 与 ASRS 补入三叶，并明确无症状低危稳定裂孔可观察；不扩散到劈裂/囊肿兄弟。",
+      "resolution": "作者已补入 .4/.Y/.Z；三叶仍为 partial 且进入待办，.0/.3 仍 complete 无队列位；劈裂/囊肿保持 P2。",
+      "status": "resolved"
+    }
+  ],
+  "accepted_method_boundaries": [
+    "13,155 项均有规范行、解释和队列处置，指完整编辑清单，不代表 13,155 项经过个别临床认证。",
+    "P2 基线包含尚未逐类判断的类别；不解释为低风险。资料未知保留 null，不伪造零负担，也不因罕见或残余标签排除。",
+    "P0 是先编写时间敏感识别的知识专题。主动脉夹层旧稳定病例、自杀意念、异位妊娠和突发听力下降均保留条件，不由名称决定个体分诊或一律呼叫救护车。",
+    "家族负担保留家族层措辞，未生成逐叶发病率、死亡率、DALY 或加权精确分数。",
+    "妇幼、围产及发育异常 P1 为公平、适龄识别、支持和连续照护的编辑顺序；不是全章急症或全类同等可治疗。",
+    "来源按实际作者已读范围登记；多个 WHO 网页不自动视为相互独立的临床交叉证据。本报告只独立读取下列框架和风险边界，未冒称重读全部来源。",
+    "科室字段为编辑归口，同级按章轮转及官方顺序为调度规则；均非患者科室分诊或临床严重程度排名。",
+    "合格残余叶全部保留主清单；传统医学 26 章单独公开，未混入主分母或丢失。",
+    "既有正文/标题/草稿按精确 code 关联，不能继承正文完整、分类覆盖或医学签审状态。",
+    "最终目标 100%；95% 仅阶段里程碑。77 篇正文、8 个完整类别和 0 医学签审没有因排序升级。"
+  ],
+  "independent_actual_source_reads": [
+    {
+      "id": "who-fair-choices-2014",
+      "url": "https://www.who.int/publications-detail-redirect/9789241507158",
+      "title": "Making fair choices on the path to universal health coverage",
+      "published": "2014-04-30",
+      "locator": "WHO publication overview, service/population/financial-protection dimensions and priority classes (lines 83–93)",
+      "read_scope": "实际读取出版页概述；未声称读取完整报告。",
+      "assessment": "支持透明、情境相关的多维优先考虑及弱势人群保护；不构成 WHO 对 ICD 叶类别的排名。"
+    },
+    {
+      "id": "who-health-benefit-packages-2021",
+      "url": "https://www.who.int/publications/i/item/9789240020689",
+      "title": "Principles of health benefit packages",
+      "published": "2021-03-07",
+      "locator": "WHO publication overview, systematic evidence-based transparent decisions (lines 79–101)",
+      "read_scope": "实际读取出版页概述；IRIS 完整 PDF 返回 403，未计为全文已读。",
+      "assessment": "用于方法透明和证据边界；未虚列完整八项原则内容。"
+    },
+    {
+      "id": "gps-health-original-2014",
+      "url": "https://link.springer.com/article/10.1186/1478-7547-12-18",
+      "title": "Guidance on priority setting in health care (GPS-Health): the inclusion of equity criteria not captured by cost-effectiveness analysis",
+      "published": "2014-08-29",
+      "locator": "Abstract; Guiding principles and target groups; Appendix, life-threatening disease / age / rare diseases (lines 59–63, 83–107, 174–187)",
+      "read_scope": "实际读取原始出版商文章相关全文；PMC 验证页不作为已读正文。",
+      "assessment": "WHO 发起专家清单的原始论文，不冒充 WHO 逐病分级标准。严重性需与获益结合；年龄与罕见程度本身不足以决定高低优先。"
+    },
+    {
+      "id": "who-emergency",
+      "url": "https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency--critical-and-operative-care",
+      "title": "Emergency, critical and operative care",
+      "published": null,
+      "locator": "Overview and integrated continuum (lines 83–94)",
+      "read_scope": "实际读取 WHO 网页相应段落。",
+      "assessment": "支持急性识别和急救/重症/手术/产科连续照护的编辑维度；不生成统一小时阈值。"
+    },
+    {
+      "id": "who-rmnch-2012",
+      "url": "https://www.who.int/publications/i/item/essential-interventions-commodities-and-guidelines-for-reproductive-maternal-newborn-and-child-health",
+      "title": "Essential interventions, commodities and guidelines for reproductive, maternal, newborn and child health",
+      "published": "2012-01-18",
+      "locator": "Publication overview, effective interventions and local packages (lines 72–83)",
+      "read_scope": "实际读取出版页概述，未声称读取完整 28 页材料。",
+      "assessment": "支持有效干预、妇幼公平和当地需求；不支持按年龄将全章归为急症。"
+    },
+    {
+      "id": "who-cancer",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/cancer",
+      "title": "Cancer",
+      "published": "2026-07-03",
+      "locator": "Overview (line 93); Early detection and Treatment (lines 144–174)",
+      "read_scope": "实际读取 WHO 当前页面定义和对应段落。",
+      "assessment": "支撑恶性肿瘤家族编辑优先，早诊/筛查/治疗存在类型差异；不能单凭此页为整个含良性肿瘤的父级赋级。"
+    },
+    {
+      "id": "nei-retina",
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/retinal-detachment",
+      "title": "Retinal Detachment",
+      "published": "2025-11-05",
+      "locator": "Symptoms and urgent assessment (lines 34–49, 75–85); types (lines 64–68)",
+      "read_scope": "实际读取 NIH NEI 网页对应段落。",
+      "assessment": "支持新发危险信号和脱离专题的先补顺序；类型和病程需区分。"
+    },
+    {
+      "id": "asrs-retinal-tears",
+      "url": "https://www.asrs.org/patients/retinal-diseases/26/retinal-tears",
+      "title": "Retinal Tears",
+      "published": null,
+      "locator": "Symptoms (lines 35–36); diagnostic testing (line 62); treatment and prognosis (lines 67–69)",
+      "read_scope": "实际读取 ASRS 网页对应段落；页面未见明确发布日期，不将页脚版权年当更新日期。",
+      "assessment": "裂孔及时识别、脱离前干预有价值；无症状低危裂孔可以观察。支持 9B73.4/.Y/.Z 先补识别和鉴别，不支持全部立即手术。"
+    },
+    {
+      "id": "nci-cns",
+      "url": "https://www.cancer.gov/types/brain/patient/adult-brain-treatment-pdq",
+      "title": "Adult Central Nervous System Tumors Treatment (PDQ), Patient Version",
+      "published": null,
+      "locator": "General information (lines 38–47); grades (69–75); astrocytic tumors (84–85); medulloblastoma (101–105); meningeal tumors (113–118)",
+      "read_scope": "实际读取 NCI 成人患者版相应段落，未据页面内容自行设定更新日期。",
+      "assessment": "确认良恶性和组织类型边界、列明恶性病例编辑价值；成人治疗不得外推儿童。不把 WHO 肿瘤级别当本站 P 级。"
+    },
+    {
+      "id": "who-icd-2026",
+      "url": "https://icdcdn.who.int/static/releasefiles/2026-01/SimpleTabulation-ICD-11-MMS-en.zip",
+      "title": "WHO ICD-11 MMS 2026-01 official frozen tabulation",
+      "published": "2026-01",
+      "locator": "data/icd/catalog.json.gz; actual parent_uri edges and selected leaf titles; manifest catalog hash",
+      "read_scope": "实际读取当前冻结官方数据；以 children 方向独立展开全部选择器，对照生成器 upward 遍历结果。",
+      "assessment": "只支持分类身份、祖先边界和纳入集合，不提供编辑优先级或疾病负担。"
+    }
+  ],
+  "author_source_read_ledger": {
+    "path": "reports/priority-source-review.json",
+    "source_count": 44,
+    "binding_check": "全部 config.sources id 与作者 source_reads 一一对应；同机构网页不按网址数量计算独立临床支持。",
+    "not_claimed_as_independently_reread": [
+      "nhs-aki",
+      "nhs-anaphylaxis",
+      "nhs-aorta",
+      "nhs-appendicitis",
+      "nhs-ards",
+      "nhs-cauda",
+      "nhs-co",
+      "nhs-dka",
+      "nhs-ectopic",
+      "nhs-epiglottitis",
+      "nhs-epilepsy",
+      "nhs-heatstroke",
+      "nhs-mi",
+      "nhs-pe",
+      "nhs-sjs",
+      "nhs-stroke",
+      "nhs-sudden-hearing",
+      "nhs-torsion",
+      "sja-first-aid",
+      "who-congenital",
+      "who-dengue",
+      "who-ghe",
+      "who-hearing",
+      "who-immunization",
+      "who-infection-programmes",
+      "who-malaria",
+      "who-malnutrition",
+      "who-maternal",
+      "who-meningitis",
+      "who-mental",
+      "who-msk",
+      "who-ncd",
+      "who-newborn",
+      "who-oral",
+      "who-sepsis",
+      "who-suicide",
+      "who-tb",
+      "who-vision"
+    ]
+  },
+  "verification": {
+    "contract_tests": {
+      "command": "C:/Users/Damian/AppData/Local/Programs/Python/Python312/python.exe -m unittest tests.test_priorities -v",
+      "result": "8 passed before the subsequent Markdown presentation-only change",
+      "run_count": 1
+    },
+    "affected_render_test": {
+      "command": "C:/Users/Damian/AppData/Local/Programs/Python/Python312/python.exe -m unittest tests.test_priorities.PriorityTests.test_markdown_rules_are_shared_linked_and_names_escape_html -v",
+      "result": "1 passed after the presentation change"
+    },
+    "independent_probe": {
+      "result": "passed",
+      "method": "当前真实输入纯构造；从祖先向 children 反向展开全部规则，对比每条命中集合及作者计数；临时目录写出并只读 check，CSV/23章 Markdown 每叶恰好一次；无仓库生成物写入。",
+      "evidence": {
+        "input_sha256": {
+          "data/icd/priorities.json": "d44d7418aa6a898e297365b0372aefcc8bd44da1e1069b0f78f84a42c2c8103e",
+          "reports/priority-source-review.json": "accb1dc55754301ed9773989ab24f1449a5aaa57dd5d577e4204b02f222dd29e",
+          "src/guide/priorities.py": "5d3482115ee0421cc7cd6fe68e3fc5cea4f7cdc7599785714ce1bb0067793b54",
+          "tests/test_priorities.py": "64112b15c89eb5fa4afb8eb366df4bbfd10b496cfbb1932987f33e738b663a42",
+          "src/guide/icd.py": "2d939f43f577aba175bb30553fb05c7673f47efc6b99effa916e1996467ffa28",
+          "src/guide/__main__.py": "cf6246c7d5268340c052227a1fed4273bab4a2f5feea9e291339ec9c4ecf75e9",
+          "data/project.json": "4d53c8f09976ecf09d30560f61dffc34e7b088d19f6cba58966b6854bdff5188",
+          "data/icd/manifest.json": "2818b81cfb606dfcd1ad6d1463feb42bd026076ae72d01a3dc28953f5f16d8f4",
+          "data/icd/mappings.json": "62c5c39463fae7ebc3367177e7d88102e719e54943f530c29d93c82ffc370967",
+          "data/departments.json": "9ca4e3e655ac0b3865dd45d75fef66f2688dfeae3f2ebec4f80f1b73f7935eff",
+          "reports/icd-existing-inventory.json": "137a68735e2781c469486fa90cfad1c1602a4b5a835bd6a71f2b00ec317bffa2",
+          "reports/batch-01-mece.json": "bec552c9d1e87b743946201657014b3d321aacf28c218ae94a9808218dcd002a",
+          "reports/icd-chinese-title-import.json": "802acabe8ba3e87bb02321946d6e0c821801a615ac38ec35546f8e62eec88d81"
+        },
+        "priority_rules_canonical_sha256": "173d327d537fb706fdea8fbea3283c416ddf544cbf0d3ced2be26562d8c8a711",
+        "coverage_dispositions_canonical_sha256": "6a13907744af65587b5c55325b82110cd9c6155f43e8d5c3d55e85d95f0db47d",
+        "content_and_evidence_canonical_sha256": "d818ff8bfec30b7601353b74e02a2bc07956b31ddb8084eed5e6d9c16bbe3415",
+        "catalog_canonical_sha256": "1bff7e6149dc9ca34f4f00346d63304d9e0311080b902ebfae723d5f5162a57c",
+        "catalog_compressed_file_sha256": "3db9a09b98634b08caeb46119a1aec344341e3f2db8b2fc7997ed0e33b3ed15f",
+        "summary": {
+          "release": "2026-01",
+          "priority_assessment": "rule_based_editorial_priority",
+          "completion_target": 1.0,
+          "reviewed_at": "2026-10-02",
+          "denominator": 13155,
+          "covered_categories": 8,
+          "pending_categories": 13147,
+          "coverage_fraction": 0.0006081337894336754,
+          "work_packages": 658,
+          "priorities": {
+            "P0": {
+              "all": 133,
+              "pending": 126
+            },
+            "P1": {
+              "all": 3805,
+              "pending": 3805
+            },
+            "P2": {
+              "all": 9217,
+              "pending": 9216
+            },
+            "P3": {
+              "all": 0,
+              "pending": 0
+            }
+          },
+          "default_priority_categories": 8528,
+          "chapters": {
+            "01": {
+              "title": "Certain infectious or parasitic diseases",
+              "categories": 876,
+              "complete": 0,
+              "pending": 876,
+              "priorities": {
+                "P0": 18,
+                "P1": 176,
+                "P2": 682,
+                "P3": 0
+              }
+            },
+            "02": {
+              "title": "Neoplasms",
+              "categories": 1043,
+              "complete": 0,
+              "pending": 1043,
+              "priorities": {
+                "P0": 0,
+                "P1": 669,
+                "P2": 374,
+                "P3": 0
+              }
+            },
+            "03": {
+              "title": "Diseases of the blood or blood-forming organs",
+              "categories": 220,
+              "complete": 0,
+              "pending": 220,
+              "priorities": {
+                "P0": 0,
+                "P1": 0,
+                "P2": 220,
+                "P3": 0
+              }
+            },
+            "04": {
+              "title": "Diseases of the immune system",
+              "categories": 214,
+              "complete": 0,
+              "pending": 214,
+              "priorities": {
+                "P0": 12,
+                "P1": 0,
+                "P2": 202,
+                "P3": 0
+              }
+            },
+            "05": {
+              "title": "Endocrine, nutritional or metabolic diseases",
+              "categories": 539,
+              "complete": 0,
+              "pending": 539,
+              "priorities": {
+                "P0": 2,
+                "P1": 98,
+                "P2": 439,
+                "P3": 0
+              }
+            },
+            "06": {
+              "title": "Mental, behavioural or neurodevelopmental disorders",
+              "categories": 720,
+              "complete": 0,
+              "pending": 720,
+              "priorities": {
+                "P0": 0,
+                "P1": 463,
+                "P2": 257,
+                "P3": 0
+              }
+            },
+            "07": {
+              "title": "Sleep-wake disorders",
+              "categories": 73,
+              "complete": 1,
+              "pending": 72,
+              "priorities": {
+                "P0": 0,
+                "P1": 0,
+                "P2": 73,
+                "P3": 0
+              }
+            },
+            "08": {
+              "title": "Diseases of the nervous system",
+              "categories": 717,
+              "complete": 0,
+              "pending": 717,
+              "priorities": {
+                "P0": 34,
+                "P1": 68,
+                "P2": 615,
+                "P3": 0
+              }
+            },
+            "09": {
+              "title": "Diseases of the visual system",
+              "categories": 608,
+              "complete": 2,
+              "pending": 606,
+              "priorities": {
+                "P0": 5,
+                "P1": 85,
+                "P2": 518,
+                "P3": 0
+              }
+            },
+            "10": {
+              "title": "Diseases of the ear or mastoid process",
+              "categories": 136,
+              "complete": 0,
+              "pending": 136,
+              "priorities": {
+                "P0": 1,
+                "P1": 13,
+                "P2": 122,
+                "P3": 0
+              }
+            },
+            "11": {
+              "title": "Diseases of the circulatory system",
+              "categories": 489,
+              "complete": 4,
+              "pending": 485,
+              "priorities": {
+                "P0": 17,
+                "P1": 44,
+                "P2": 428,
+                "P3": 0
+              }
+            },
+            "12": {
+              "title": "Diseases of the respiratory system",
+              "categories": 288,
+              "complete": 0,
+              "pending": 288,
+              "priorities": {
+                "P0": 2,
+                "P1": 37,
+                "P2": 249,
+                "P3": 0
+              }
+            },
+            "13": {
+              "title": "Diseases of the digestive system",
+              "categories": 812,
+              "complete": 0,
+              "pending": 812,
+              "priorities": {
+                "P0": 3,
+                "P1": 12,
+                "P2": 797,
+                "P3": 0
+              }
+            },
+            "14": {
+              "title": "Diseases of the skin",
+              "categories": 657,
+              "complete": 0,
+              "pending": 657,
+              "priorities": {
+                "P0": 6,
+                "P1": 0,
+                "P2": 651,
+                "P3": 0
+              }
+            },
+            "15": {
+              "title": "Diseases of the musculoskeletal system or connective tissue",
+              "categories": 361,
+              "complete": 0,
+              "pending": 361,
+              "priorities": {
+                "P0": 0,
+                "P1": 29,
+                "P2": 332,
+                "P3": 0
+              }
+            },
+            "16": {
+              "title": "Diseases of the genitourinary system",
+              "categories": 461,
+              "complete": 1,
+              "pending": 460,
+              "priorities": {
+                "P0": 1,
+                "P1": 12,
+                "P2": 448,
+                "P3": 0
+              }
+            },
+            "17": {
+              "title": "Conditions related to sexual health",
+              "categories": 57,
+              "complete": 0,
+              "pending": 57,
+              "priorities": {
+                "P0": 0,
+                "P1": 0,
+                "P2": 57,
+                "P3": 0
+              }
+            },
+            "18": {
+              "title": "Pregnancy, childbirth or the puerperium",
+              "categories": 451,
+              "complete": 0,
+              "pending": 451,
+              "priorities": {
+                "P0": 18,
+                "P1": 433,
+                "P2": 0,
+                "P3": 0
+              }
+            },
+            "19": {
+              "title": "Certain conditions originating in the perinatal period",
+              "categories": 536,
+              "complete": 0,
+              "pending": 536,
+              "priorities": {
+                "P0": 4,
+                "P1": 529,
+                "P2": 3,
+                "P3": 0
+              }
+            },
+            "20": {
+              "title": "Developmental anomalies",
+              "categories": 1129,
+              "complete": 0,
+              "pending": 1129,
+              "priorities": {
+                "P0": 0,
+                "P1": 1129,
+                "P2": 0,
+                "P3": 0
+              }
+            },
+            "21": {
+              "title": "Symptoms, signs or clinical findings, not elsewhere classified",
+              "categories": 1086,
+              "complete": 0,
+              "pending": 1086,
+              "priorities": {
+                "P0": 7,
+                "P1": 3,
+                "P2": 1076,
+                "P3": 0
+              }
+            },
+            "22": {
+              "title": "Injury, poisoning or certain other consequences of external causes",
+              "categories": 1677,
+              "complete": 0,
+              "pending": 1677,
+              "priorities": {
+                "P0": 3,
+                "P1": 3,
+                "P2": 1671,
+                "P3": 0
+              }
+            },
+            "25": {
+              "title": "Codes for special purposes",
+              "categories": 5,
+              "complete": 0,
+              "pending": 5,
+              "priorities": {
+                "P0": 0,
+                "P1": 2,
+                "P2": 3,
+                "P3": 0
+              }
+            }
+          },
+          "coverage_issues": []
+        },
+        "coverage_target": 1.0,
+        "coverage_milestone": 0.95,
+        "medical_reviewed_conditions": 0,
+        "existing_condition_files": 77,
+        "eligible_residual_categories_retained": 4643,
+        "supplementary_chapter_26_rows": 1246,
+        "supplementary_chapter_26_categories": 1120,
+        "source_read_binding_count": 44,
+        "rule_match_counts": {
+          "p0-acute-myocardial-infarction": 6,
+          "p0-acute-stroke": 27,
+          "p0-sepsis": 2,
+          "p0-meningitis": 15,
+          "p0-anaphylaxis": 12,
+          "p0-acute-pe": 1,
+          "p0-aortic-dissection": 10,
+          "p0-status-epilepticus": 6,
+          "p0-dka": 2,
+          "p0-retinal-detachment": 5,
+          "p0-testicular-torsion": 1,
+          "p0-maternal-haemorrhage-eclampsia": 12,
+          "p0-puerperal-sepsis": 1,
+          "p0-neonatal-sepsis-asphyxia": 4,
+          "p0-ards": 1,
+          "p0-epiglottitis": 1,
+          "p0-acute-appendicitis": 3,
+          "p0-heatstroke": 2,
+          "p0-cardiac-arrest": 6,
+          "p0-asphyxiation": 1,
+          "p0-severe-dengue": 1,
+          "p0-suicidal-ideation": 1,
+          "p1-cancer-malignant": 559,
+          "p1-haematological-neoplasms": 104,
+          "p1-cns-neoplasms": 6,
+          "p1-hypertension": 13,
+          "p1-ischaemic-heart": 37,
+          "p1-diabetes": 28,
+          "p1-chronic-respiratory": 15,
+          "p1-pneumonia": 22,
+          "p1-kidney-disease": 12,
+          "p1-dementia": 4,
+          "p1-mental-health": 459,
+          "p1-epilepsy": 74,
+          "p1-musculoskeletal": 29,
+          "p1-low-back-pain": 3,
+          "p1-oral-health": 12,
+          "p1-vision": 85,
+          "p1-hearing": 14,
+          "p1-nutrition": 72,
+          "p1-tuberculosis": 30,
+          "p1-hiv-hepatitis-sti": 100,
+          "p1-vaccine-preventable": 30,
+          "p1-vector-borne": 17,
+          "p1-covid": 2,
+          "p1-maternity": 451,
+          "p1-perinatal": 533,
+          "p1-developmental": 1129,
+          "p1-harmful-substances": 3,
+          "p0-ectopic-pregnancy": 5,
+          "p0-sjs-ten": 6,
+          "p0-sudden-hearing": 1,
+          "p0-cauda-equina": 1,
+          "routing-female-genital": 196,
+          "routing-breast": 15,
+          "routing-kidney": 54,
+          "routing-dentistry": 163,
+          "routing-colorectal": 34,
+          "routing-nutrition": 95,
+          "routing-genetic-metabolism": 159,
+          "routing-burns": 67,
+          "routing-allergy": 2
+        },
+        "selected_examples": [
+          {
+            "code": "9B73.4",
+            "title": "- - - - Retinal breaks without detachment",
+            "priority": "P0",
+            "rule_id": "p0-retinal-detachment",
+            "coverage_state": "partial",
+            "queue_rank": 5
+          },
+          {
+            "code": "AB55",
+            "title": "- - Sudden idiopathic hearing loss",
+            "priority": "P0",
+            "rule_id": "p0-sudden-hearing",
+            "coverage_state": "missing",
+            "queue_rank": 6
+          },
+          {
+            "code": "9B73.Y",
+            "title": "- - - - Other specified retinal detachments or breaks",
+            "priority": "P0",
+            "rule_id": "p0-retinal-detachment",
+            "coverage_state": "partial",
+            "queue_rank": 19
+          },
+          {
+            "code": "9B73.Z",
+            "title": "- - - - Retinal detachments or breaks, unspecified",
+            "priority": "P0",
+            "rule_id": "p0-retinal-detachment",
+            "coverage_state": "partial",
+            "queue_rank": 31
+          },
+          {
+            "code": "9B73.0",
+            "title": "- - - - Retinal detachment with retinal break",
+            "priority": "P0",
+            "rule_id": "p0-retinal-detachment",
+            "coverage_state": "complete",
+            "queue_rank": null
+          },
+          {
+            "code": "9B73.3",
+            "title": "- - - - Serous retinal detachment",
+            "priority": "P0",
+            "rule_id": "p0-retinal-detachment",
+            "coverage_state": "complete",
+            "queue_rank": null
+          },
+          {
+            "code": "2A02.3",
+            "title": "- - - Benign neoplasm of cranial nerves",
+            "priority": "P2",
+            "rule_id": "chapter:02",
+            "coverage_state": "missing",
+            "queue_rank": 4376
+          },
+          {
+            "code": "2A02.4",
+            "title": "- - - Benign neoplasm of spinal cord",
+            "priority": "P2",
+            "rule_id": "chapter:02",
+            "coverage_state": "missing",
+            "queue_rank": 4395
+          },
+          {
+            "code": "2A21.10",
+            "title": "- - - - - Urticaria pigmentosa",
+            "priority": "P2",
+            "rule_id": "chapter:02",
+            "coverage_state": "missing",
+            "queue_rank": 4585
+          },
+          {
+            "code": "2A80.5",
+            "title": "- - - - Follicular lymphoma in situ",
+            "priority": "P2",
+            "rule_id": "chapter:02",
+            "coverage_state": "missing",
+            "queue_rank": 5309
+          },
+          {
+            "code": "9B73.10",
+            "title": "- - - - - Adult retinoschisis",
+            "priority": "P2",
+            "rule_id": "chapter:09",
+            "coverage_state": "missing",
+            "queue_rank": 8553
+          },
+          {
+            "code": "9B73.11",
+            "title": "- - - - - Juvenile retinoschisis",
+            "priority": "P2",
+            "rule_id": "chapter:09",
+            "coverage_state": "missing",
+            "queue_rank": 8565
+          },
+          {
+            "code": "9B73.1Y",
+            "title": "- - - - - Other specified retinoschisis",
+            "priority": "P2",
+            "rule_id": "chapter:09",
+            "coverage_state": "missing",
+            "queue_rank": 8577
+          },
+          {
+            "code": "9B73.1Z",
+            "title": "- - - - - Retinoschisis, unspecified",
+            "priority": "P2",
+            "rule_id": "chapter:09",
+            "coverage_state": "missing",
+            "queue_rank": 8589
+          },
+          {
+            "code": "9B73.2",
+            "title": "- - - - Retinal cysts",
+            "priority": "P2",
+            "rule_id": "chapter:09",
+            "coverage_state": "missing",
+            "queue_rank": 8601
+          }
+        ],
+        "isolated_output_file_sha256": {
+          "reports/icd-priorities.csv": "f66ed01a647d7cfb53fab652ccf830e7e5fe7e15ae3bd1165b40381c49fcb424",
+          "reports/icd-priorities.json.gz": "5446b0082ec14bf404fe78bea2464fe2e0110c2986eb2cbd90fd0d6b2b2c84b5",
+          "reports/icd-priority-summary.json": "dcb39881f67aee4936d1a0b8d827a7365dd0c27031921e1efa31ee9322ec680f",
+          "docs/icd-priorities/chapter-01.md": "8344cbd55e7dd319497de08fc5a32a473db0afe81631ab4046fa420d8821b37e",
+          "docs/icd-priorities/chapter-02.md": "8e5951aeb7888715911a461484d94f9137427b5acfb23cc7e38d12210dab8b9a",
+          "docs/icd-priorities/chapter-03.md": "a377a70e032da3f563b6eed6b9ca0aa3449791cb680f906ef5c4389aa8dcdc51",
+          "docs/icd-priorities/chapter-04.md": "c3862154efe0411c7f31e722f7a133c42273658a34c39efcd8c020ebecba2ef5",
+          "docs/icd-priorities/chapter-05.md": "41ccf53944a4423c5819e03b4bb267b5b3bf814ea3e703f6df47f7b184223c29",
+          "docs/icd-priorities/chapter-06.md": "110a95faac1a10643943d7c9e2b84ba148258a9bcbbed922f07697bfdbf632ec",
+          "docs/icd-priorities/chapter-07.md": "874c3560068b385036263aa9e06855ffcb7a9494893b189f14a25119527f500d",
+          "docs/icd-priorities/chapter-08.md": "224fba92dba09feaa4b3364a2fa9a09862399ca94fd2712e5c96f8fa6256c661",
+          "docs/icd-priorities/chapter-09.md": "1c9c789ab62d4f5d9529e59f32d8b1cd9192430bcc6c9a829b81c2348332c236",
+          "docs/icd-priorities/chapter-10.md": "0641ede5b258ad6ac35bf9321c57becd1ebe261e8fa95f266e401d793f22f3c9",
+          "docs/icd-priorities/chapter-11.md": "a24618b4f85a8be8a74105e7081c7391a037cdc202db8d613b19c1491cab2136",
+          "docs/icd-priorities/chapter-12.md": "f7c1e9537ad9450b75d3dc094db0b12498f4b8ffd57b9d81d729274dad046a22",
+          "docs/icd-priorities/chapter-13.md": "2c608289040004e078e7f4244ec037c3d07d35a4a1c20b0aa79742cc8910297e",
+          "docs/icd-priorities/chapter-14.md": "83da188298af83bec8f95736b939580a00ab8800aed1ec8417c9e910a18c27c2",
+          "docs/icd-priorities/chapter-15.md": "fa245d2eb685f64ae659d8543ae392ab7e5517a4261bf82e035d3e836fdbc855",
+          "docs/icd-priorities/chapter-16.md": "f64d23461e9a57c002ab1b9342dc29af0c7f00c9726ce0f8c5a00dabc8df90f1",
+          "docs/icd-priorities/chapter-17.md": "00699dd0afea2aa380a435f290d65bb34a98fd91b148daa09855a3f32b8b9f5d",
+          "docs/icd-priorities/chapter-18.md": "2c61f2bba824f73c856fb1c763fbd89f8b49ef7d07666fea86f613527c20fe86",
+          "docs/icd-priorities/chapter-19.md": "e344bb9432dffd382449898a7725f03c7bed8789acbe4227ed65a3a7bf022d80",
+          "docs/icd-priorities/chapter-20.md": "de54b9b08d6a06b7835b0248fdcf12535873deebcb652c3f1e6bd073c6ac15f8",
+          "docs/icd-priorities/chapter-21.md": "3092bdb0c6dafcda0810d57ad18acb5288fbb6576d9da32724cb605a5a654f75",
+          "docs/icd-priorities/chapter-22.md": "a72099bb2c87e6f797b5aefd2ae1f8fa5cdebf3a170643dfaa9dedb1ebedd71b",
+          "docs/icd-priorities/chapter-25.md": "107b74111280b203c5cd978278f71a2362ad7939732d9862d89d0f26b4bcb183",
+          "docs/icd-priorities/index.md": "8e7bdd1d31824ffc827a3de2a3bb4bc801d678f5a3674f5bd3cf43c8675a7719"
+        },
+        "production_files_written_by_probe": []
+      }
+    }
+  },
+  "open_findings": [],
+  "limits": [
+    "规则式编辑排序仍需随逐类实际资料修订，不能宣称所有叶已有独立专业判断。",
+    "本报告不认证临床安全、执业医生签审或 100% 医学正文完成；医学正文仍走既有逐主张与分类语义门禁。",
+    "部署、公网和 CI 由主任务核验，不属于本独立审查证明。"
+  ],
+  "production_data_or_code_edits": [],
+  "new_medical_content_review": false,
+  "stop_condition": "一次定向审查和两项必要修订的受影响复核完成；无剩余实质问题，不再启动全篇重复审查。"
+}

@@ -1,0 +1,2307 @@
+{
+  "schema_version": 1,
+  "release": "2026-01",
+  "reviewed_at": "2026-10-02",
+  "classification_status": "rule_based_editorial_priority",
+  "purpose": "为全部合格独立ICD类别生成可追溯的知识编写顺序，最终完整覆盖；P0–P3是项目编辑等级，不是WHO排名、临床分诊或执业医师逐病签审。",
+  "selection_policy": "按真实parent_uri祖先链（含自身）命中；选择数值最小的P级，同级按规则id排序确定唯一归口，并保留全部命中规则。已完整覆盖类别仍保留优先级，退出待编写集合。",
+  "unknown_policy": "未获逐叶资料的轴为null。稀有、残余、资料难搜、低社交热度不构成排除或降级理由。家族汇总负担不填成叶级定量负担。P2表示系统扩充基线或待逐类裁定，不能解释为低风险。",
+  "department_policy": "department为本站编辑工作归口，不是患者科室分诊；多学科复核可协作但每个类别在计划中只出现一次。",
+  "dimensions": {
+    "time_sensitivity": {
+      "label": "延误敏感性",
+      "description": "是否需要优先解释时间敏感的识别与行动；只记录已核对的范围和条件，不推算统一急救时限。"
+    },
+    "preventable_harm": {
+      "label": "可避免的死亡或功能损害",
+      "description": "早发现、适当治疗、预防或康复可能改变的结局；不得把家族中一个亚型的疗效推广到全部类别。"
+    },
+    "burden": {
+      "label": "疾病负担",
+      "description": "区分家族汇总资料与逐叶数据；未获得可比叶级患病率、死亡率或DALY时不编造数值。"
+    },
+    "public_health": {
+      "label": "传播与公共卫生",
+      "description": "记录传播控制、免疫或暴露预防的选题依据；不将所有感染病等同为可人传人或需隔离。"
+    },
+    "vulnerable_population": {
+      "label": "特殊人群与公平可及",
+      "description": "记录母婴、儿童、老人或功能受损者的具体知识需求；年龄和罕见本身不作为降低价值的理由。"
+    },
+    "evidence_gap": {
+      "label": "证据缺口",
+      "description": "仅记录已经确认的证据不足；未逐类检索时为null，不等于没有证据。"
+    }
+  },
+  "levels": {
+    "P0": {
+      "label": "时间敏感与器官保护先补",
+      "description": "优先编写新发或急性情形的关键识别与行动；不由类别名推断患者当前严重性。"
+    },
+    "P1": {
+      "label": "早诊早治与重点人群先补",
+      "description": "按可干预风险、群体负担、公共卫生或母婴及功能保护需求系统推进；只用有依据的范围。"
+    },
+    "P2": {
+      "label": "全专科系统补齐／待逐类裁定",
+      "description": "其余所有类别均进入完整队列，未判为低风险；在实际检索发现更高优先依据时更新规则。"
+    },
+    "P3": {
+      "label": "有依据的稳定管理专题",
+      "description": "仅在有明确个别依据时采用；本版不强制分配。"
+    }
+  },
+  "sources": [
+    {
+      "id": "who-icd-2026",
+      "title": "WHO ICD-11 MMS 2026-01 official tabulation",
+      "url": "https://icdcdn.who.int/static/releasefiles/2026-01/SimpleTabulation-ICD-11-MMS-en.zip",
+      "locator": "本地冻结catalog.json.gz；chapter/class_kind/code/foundation_uri/parent_uri/is_leaf；manifest.json中的官方ZIP哈希",
+      "accessed_at": "2026-10-02",
+      "support_scope": "分类结构与精确选择器依据；不提供本站编写优先等级。"
+    },
+    {
+      "id": "who-emergency",
+      "title": "WHO Emergency and critical care",
+      "url": "https://www.who.int/health-topics/emergency-care",
+      "locator": "Overview；Impact（网页行86–95）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "急性病和损伤早识别、时间敏感照护的原则；具体P级为项目编辑决策，不是WHO分类排名。"
+    },
+    {
+      "id": "who-ghe",
+      "title": "WHO The top 10 causes of death",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death",
+      "locator": "2026-10-02版；Leading causes of death globally；收入组差异；Editor’s note（行83–143）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "2023年汇总死因资料支持心血管、慢阻肺、下呼吸道感染、糖尿病、痴呆、肾病家族的选题顺序；不支持每个ICD叶类别的死亡负担。"
+    },
+    {
+      "id": "who-ncd",
+      "title": "WHO Noncommunicable diseases",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/noncommunicable-diseases",
+      "locator": "2025-09-25；Key facts；Prevention and control（行83–101、131–136）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "心血管、癌症、慢性呼吸疾病、糖尿病的检测、预防和管理价值；家族层证据。"
+    },
+    {
+      "id": "who-cancer",
+      "title": "WHO Cancer",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/cancer",
+      "locator": "2026-07-03；Early detection；Treatment（行144–174）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "恶性肿瘤早诊、分型及及时适当治疗；筛查并非对所有癌症有效，不将此依据用于把良性肿瘤定义成癌症。"
+    },
+    {
+      "id": "who-maternal",
+      "title": "WHO Maternal mortality",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/maternal-mortality",
+      "locator": "2025-04-07；Why do women die?；How can women’s lives be saved?（行100–114）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "妊娠、分娩及产后连续照护；出血、感染、子痫特异急症优先；不声称所有产科类别同等严重。"
+    },
+    {
+      "id": "who-newborn",
+      "title": "WHO Newborn mortality",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/newborn-mortality",
+      "locator": "2024-03-14；Key facts；Causes；Priority strategies（行87–105）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "围产期家族保护与及时照护；窒息、感染等具体死亡原因；不把新生儿所有问题一律定为急症。"
+    },
+    {
+      "id": "who-immunization",
+      "title": "WHO Immunization and vaccine-preventable communicable diseases",
+      "url": "https://www.who.int/data/gho/data/themes/immunization",
+      "locator": "Immunization coverage estimates；Vaccine-preventable diseases（行110–155）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "可疫苗预防病种的公共卫生价值与疾病列表；各地接种方案需要另行核对。"
+    },
+    {
+      "id": "who-infection-programmes",
+      "title": "WHO HIV, tuberculosis, hepatitis and STI guidelines",
+      "url": "https://www.who.int/teams/global-hiv-hepatitis-and-stis-programmes/guidelines",
+      "locator": "部门目标；Guidelines（行78–88）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "上述四个感染领域的预防、诊断、治疗与人群公平可及优先；本次只读总览，不声称已阅读链接内所有指南。"
+    },
+    {
+      "id": "who-tb",
+      "title": "WHO Tuberculosis",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/tuberculosis",
+      "locator": "2026-03-24；Overview；Prevention（行94–114、128–142）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "结核家族早诊及传播预防；明确感染与活动性疾病、部位及传染性不同。"
+    },
+    {
+      "id": "who-malaria",
+      "title": "WHO Malaria",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/malaria",
+      "locator": "2025-12-04；Overview；Symptoms（行95–125）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "疟疾家族可预防可治疗；严重症状需迅速处理，儿童和孕产妇有特定风险；不推算各虫种负担。"
+    },
+    {
+      "id": "who-dengue",
+      "title": "WHO Dengue",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue",
+      "locator": "2025-08-21；Key facts；Symptoms（行87–131）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "登革热媒介控制与严重登革热的迅速处理；多数病例轻症，未将全登革热父级定P0。"
+    },
+    {
+      "id": "who-sepsis",
+      "title": "WHO Sepsis",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/sepsis",
+      "locator": "2024-05-03；Overview；Signs and symptoms；Treatment（行94–120、155–164）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "脓毒症为医学急症；感染相关器官损害与及时处理；含母婴相关风险。"
+    },
+    {
+      "id": "who-meningitis",
+      "title": "WHO Meningitis",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/meningitis",
+      "locator": "2026-09-29；Diagnosis；Treatment；Prevention（行133–164）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "脑膜炎迅速识别及细菌病因及时治疗；不同病原、传播、年龄及免疫状态的差异。"
+    },
+    {
+      "id": "who-mental",
+      "title": "WHO Mental health",
+      "url": "https://www.who.int/health-topics/mental-health",
+      "locator": "Overview；Impact；WHO Response（行83–103）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "精神健康家族功能损害、治疗缺口和有效照护；非每个亚型的定量负担或危险性。"
+    },
+    {
+      "id": "who-suicide",
+      "title": "WHO Suicide",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/suicide",
+      "locator": "Prevention and control（行98–127）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "及时识别、评估、管理和随访自杀相关行为；自杀意念条目用于危机识别知识，不能据此判定每位读者均处于即刻危险。"
+    },
+    {
+      "id": "who-msk",
+      "title": "WHO Musculoskeletal health",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/musculoskeletal-conditions",
+      "locator": "2022-07-14；Key facts；Scope（行82–97）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "肌肉骨骼家族的功能和参与受限；列明骨关节炎、类风湿、腰痛、骨质疏松等；不外推每个罕见亚型患病率。"
+    },
+    {
+      "id": "who-oral",
+      "title": "WHO Oral health",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/oral-health",
+      "locator": "2025-03-17；Key facts；Overview；Dental caries；Periodontal disease（行86–102）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "龋病和牙周病的预防、早期治疗及口腔功能；不以口腔总体人数作为单个子类人数。"
+    },
+    {
+      "id": "who-vision",
+      "title": "WHO Blindness and vision impairment",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment",
+      "locator": "Overview；Causes（行94–114）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "白内障、屈光问题、糖尿病视网膜病、青光眼和老年黄斑变性的功能损害与及时照护；各病治疗和筛查仍分别核对。"
+    },
+    {
+      "id": "who-hearing",
+      "title": "WHO Deafness and hearing loss",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss",
+      "locator": "Identification and management；Rehabilitation（行165–185）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "听力障碍早识别及沟通康复；不把全部听力障碍判为急性耳科急症。"
+    },
+    {
+      "id": "who-malnutrition",
+      "title": "WHO Malnutrition",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/malnutrition",
+      "locator": "2024-03-01；Key facts；Overview；Undernutrition（行82–105）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "营养不足和肥胖相关的家族负担及儿童发展影响；不将所有微量元素亚型断言为常见。"
+    },
+    {
+      "id": "who-congenital",
+      "title": "WHO Congenital disorders",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/birth-defects",
+      "locator": "Screening, treatment and care（行131–154）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "先天异常早发现、转诊和支持的家族层理由；只有部分疾病有特异可治疗干预，各国筛查不同。"
+    },
+    {
+      "id": "nhs-mi",
+      "title": "NHS Heart attack",
+      "url": "https://www.nhs.uk/conditions/heart-attack/",
+      "locator": "定义、Symptoms与Immediate action required（行13–32）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "心肌梗死紧急识别；不覆盖稳定冠心病为急症。"
+    },
+    {
+      "id": "nhs-stroke",
+      "title": "NHS Symptoms of a stroke",
+      "url": "https://www.nhs.uk/conditions/stroke/symptoms/",
+      "locator": "Check for signs；Immediate action required（行14–46）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "新发卒中症状的时间敏感识别；不把卒中后遗症或无急性症状血管异常继承为P0。"
+    },
+    {
+      "id": "nhs-pe",
+      "title": "NHS Pulmonary embolism",
+      "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+      "locator": "定义、症状、Urgent及Immediate action（行13–38）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "急性肺栓塞延误风险与按症状紧急程度处理；不支持慢性PE自动继承。"
+    },
+    {
+      "id": "nhs-anaphylaxis",
+      "title": "NHS Anaphylaxis",
+      "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+      "locator": "定义、Symptoms、Immediate action（行13–42）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "严重过敏反应快速起病且可危及生命；不推广至全部过敏疾病。"
+    },
+    {
+      "id": "nhs-dka",
+      "title": "NHS Diabetic ketoacidosis",
+      "url": "https://www.nhs.uk/conditions/diabetic-ketoacidosis/",
+      "locator": "定义、症状及Treatment（行13–32、70–76）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "DKA需要及时住院处理；本规则不新增酮体阈值或家庭用药方案。"
+    },
+    {
+      "id": "nhs-torsion",
+      "title": "NHS Testicle pain",
+      "url": "https://www.nhs.uk/symptoms/testicle-pain/",
+      "locator": "Immediate action；Causes（行16–22、40–44）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "睾丸扭转的器官损害及快速处理；未推至附睾或睾丸附件扭转所有子类。"
+    },
+    {
+      "id": "nei-retina",
+      "title": "NEI Retinal Detachment",
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/retinal-detachment",
+      "locator": "症状及急症说明、类型（行34–49、64–68）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "视网膜脱离需及时评估以保护视力；不用于将视网膜囊肿、劈裂的父级兄弟类全判急症。"
+    },
+    {
+      "id": "nhs-epilepsy",
+      "title": "NHS Epilepsy",
+      "url": "https://www.nhs.uk/conditions/epilepsy/",
+      "locator": "How epilepsy affects your life；Risks of epilepsy（行166–178）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "癫痫持续状态应及时处理；其他癫痫需治疗和支持但严重程度不同。"
+    },
+    {
+      "id": "nhs-appendicitis",
+      "title": "NHS Appendicitis",
+      "url": "https://www.nhs.uk/conditions/appendicitis/",
+      "locator": "定义、症状与Risks of a burst appendix（行13–30、157–167）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "急性阑尾炎延误可穿孔及感染，症状有年龄和孕期差异；不覆盖慢性阑尾炎。"
+    },
+    {
+      "id": "nhs-ards",
+      "title": "NHS Acute respiratory distress syndrome",
+      "url": "https://www.nhs.uk/conditions/acute-respiratory-distress-syndrome/",
+      "locator": "定义、Immediate action、Treatment（行13–43、50–61）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "ARDS危及生命及呼吸支持；页面复核到期不作为新治疗方案依据，仅支持稳定急症识别原则。"
+    },
+    {
+      "id": "nhs-epiglottitis",
+      "title": "NHS Epiglottitis",
+      "url": "https://www.nhs.uk/conditions/epiglottitis/",
+      "locator": "定义与Immediate action（行13–38）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "会厌炎可阻塞气道，应及时处理；不推广至所有喉炎。"
+    },
+    {
+      "id": "nhs-heatstroke",
+      "title": "NHS Heat exhaustion and heatstroke",
+      "url": "https://www.nhs.uk/conditions/heat-exhaustion-heatstroke/",
+      "locator": "2026-05-28版；Symptoms of heatstroke（行34–45）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "区分热衰竭与需紧急处理的热射病；不将所有热相关疾病P0。"
+    },
+    {
+      "id": "nhs-aki",
+      "title": "NHS Acute kidney injury",
+      "url": "https://www.nhs.uk/conditions/acute-kidney-injury/",
+      "locator": "2026-03-11；定义、Treatment及Complications（行13–15、68–90）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "急性肾损伤及早处理价值；严重性不同，不把所有AKI直接判作患者急诊等级。"
+    },
+    {
+      "id": "nhs-aorta",
+      "title": "NHS England South England acute aortic dissection SOP",
+      "url": "https://www.england.nhs.uk/wp-content/uploads/sites/6/2024/02/South-England-Supra-regional-SOP-on-the-Acute-Management-of-Aortic-Dissections-v1.0-FINAL-1.pdf",
+      "locator": "2024-03；PDF印刷第3页 ED Guidelines for Suspected Acute Aortic Syndrome",
+      "accessed_at": "2026-10-02",
+      "support_scope": "急性主动脉夹层识别与专科转诊；ICD夹层类别中既往稳定随访情况不能按标题判断现在需要急救。"
+    },
+    {
+      "id": "sja-first-aid",
+      "title": "St John Ambulance First aid advice",
+      "url": "https://www.sja.org.uk/first-aid-advice/",
+      "locator": "Advice categories；How to do CPR；Choking；Severe bleeding（网页行124–173）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "心搏停止与窒息识别的急救教育；NHS原first-aid链接已重定向至SJA，不计作两个独立来源。"
+    },
+    {
+      "id": "nhs-co",
+      "title": "NHS Carbon monoxide poisoning",
+      "url": "https://www.nhs.uk/conditions/carbon-monoxide-poisoning/",
+      "locator": "What to do；Immediate action；Treatments（行46–77）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "CO暴露及时离开危险环境及获得帮助；其ICD归入宽泛NE61，不能由CO子题把该混合类别全部判P0。"
+    },
+    {
+      "id": "nhs-ectopic",
+      "title": "NHS Ectopic pregnancy",
+      "url": "https://www.nhs.uk/conditions/ectopic-pregnancy/",
+      "locator": "When to get medical advice；When to get emergency help；Treatment（行36–63）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "异位妊娠及时诊断、破裂急救与稳定病例监测的区别；只用于稳定识别原则，不据过期复核日期页面更新用药方案。"
+    },
+    {
+      "id": "nhs-sjs",
+      "title": "NHS Stevens-Johnson syndrome",
+      "url": "https://www.nhs.uk/conditions/stevens-johnson-syndrome/",
+      "locator": "2026-03-04；定义、Immediate action与Treatment（行13–17、74–95）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "SJS/TEN严重皮肤反应需及时医院处理；不把普通皮疹或所有药物不良反应升级。"
+    },
+    {
+      "id": "nhs-sudden-hearing",
+      "title": "NHS Hearing loss",
+      "url": "https://www.nhs.uk/conditions/hearing-loss/",
+      "locator": "2025-05-30；Urgent advice（行55–63）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "突发听力下降需及时评估可能可治疗的病因；不宣称所有听力下降必须叫救护车。"
+    },
+    {
+      "id": "nhs-cauda",
+      "title": "Royal Free London Cauda equina syndrome",
+      "url": "https://www.royalfree.nhs.uk/patients-and-visitors/patient-information-leaflets/cauda-equina-syndrome/submit/43795",
+      "locator": "RFL1148 v1，批准2025-01-22；What is CES?与What to do（行16–46）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "马尾综合征功能损害及新发相关症状及时就医；不是所有腰痛等同马尾综合征。"
+    },
+    {
+      "id": "asrs-retinal-tears",
+      "title": "American Society of Retina Specialists Retinal Tears",
+      "url": "https://www.asrs.org/patients/retinal-diseases/26/retinal-tears",
+      "locator": "Symptoms（行35–36）；Diagnostic testing（行62）；Treatment and prognosis（行67–69）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "及时识别裂孔可在脱离前干预；部分无症状低风险裂孔可观察。仅用于编辑优先及条件，未建立全文治疗交叉核验。"
+    },
+    {
+      "id": "nci-cns",
+      "title": "NCI Adult Central Nervous System Tumors Treatment (PDQ), Patient Version",
+      "url": "https://www.cancer.gov/types/brain/patient/adult-brain-treatment-pdq",
+      "locator": "General information（行38–47）；Grades（行69–75）；Astrocytic tumors（行84–85）；Embryonal tumors（行101–105）；Meningeal tumors（行113–118）",
+      "accessed_at": "2026-10-02",
+      "support_scope": "区分良恶性及组织类型；支持胶质母细胞瘤、髓母细胞瘤和明确恶性类别的编辑优先。儿童有独立治疗资料，不把成人治疗套给儿童；未将全部中枢肿瘤父级赋级。"
+    }
+  ],
+  "chapter_defaults": {
+    "01": {
+      "priority": "P2",
+      "department": "infectious-diseases",
+      "label": "感染与寄生虫病",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "02": {
+      "priority": "P2",
+      "department": "oncology",
+      "label": "肿瘤",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "03": {
+      "priority": "P2",
+      "department": "hematology",
+      "label": "血液及造血器官",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "04": {
+      "priority": "P2",
+      "department": "rheumatology",
+      "label": "免疫系统",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "05": {
+      "priority": "P2",
+      "department": "endocrinology",
+      "label": "内分泌、营养与代谢",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "06": {
+      "priority": "P2",
+      "department": "psychiatry",
+      "label": "精神、行为与神经发育",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "07": {
+      "priority": "P2",
+      "department": "sleep-medicine",
+      "label": "睡眠觉醒",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "08": {
+      "priority": "P2",
+      "department": "neurology",
+      "label": "神经系统",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "09": {
+      "priority": "P2",
+      "department": "ophthalmology",
+      "label": "视觉系统",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "10": {
+      "priority": "P2",
+      "department": "ent",
+      "label": "耳与乳突",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "11": {
+      "priority": "P2",
+      "department": "cardiology",
+      "label": "循环系统",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "12": {
+      "priority": "P2",
+      "department": "respiratory",
+      "label": "呼吸系统",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "13": {
+      "priority": "P2",
+      "department": "gastroenterology",
+      "label": "消化系统",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "14": {
+      "priority": "P2",
+      "department": "dermatology",
+      "label": "皮肤",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "15": {
+      "priority": "P2",
+      "department": "orthopedics",
+      "label": "肌肉骨骼与结缔组织",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "16": {
+      "priority": "P2",
+      "department": "urology",
+      "label": "泌尿生殖系统",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "17": {
+      "priority": "P2",
+      "department": "primary-care",
+      "label": "性健康相关",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "18": {
+      "priority": "P2",
+      "department": "obstetrics",
+      "label": "妊娠、分娩及产褥",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "19": {
+      "priority": "P2",
+      "department": "pediatrics",
+      "label": "围产期相关",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "20": {
+      "priority": "P2",
+      "department": "genetics",
+      "label": "发育异常",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "21": {
+      "priority": "P2",
+      "department": "primary-care",
+      "label": "症状、体征和临床发现",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "22": {
+      "priority": "P2",
+      "department": "emergency",
+      "label": "损伤、中毒及外因后果",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    },
+    "25": {
+      "priority": "P2",
+      "department": "infectious-diseases",
+      "label": "特殊用途中的合格病症",
+      "reason": "全专科系统补齐基线；尚未逐类完成专业排序，不表示低风险、低负担或没有可干预措施。编辑归口用于分工，写作前按实际病种复核。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "p0-acute-myocardial-infarction",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1334938734",
+          "http://id.who.int/icd/release/11/mms/993844371"
+        ]
+      },
+      "priority": "P0",
+      "reason": "急性和随后再发心肌梗死需优先解释急性识别，稳定旧梗死不在此选择器。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "急性心肌缺血的及时医疗处理关系生命及心功能。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nhs-mi",
+        "who-emergency"
+      ],
+      "department": "cardiology"
+    },
+    {
+      "id": "p0-acute-stroke",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/873092535",
+          "http://id.who.int/icd/release/11/mms/1363253283",
+          "http://id.who.int/icd/release/11/mms/636274910",
+          "http://id.who.int/icd/release/11/mms/1442995018"
+        ]
+      },
+      "priority": "P0",
+      "reason": "选择出血性、缺血性及未分型卒中节点，不选择整个脑血管病父级。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "新发卒中识别延误可能增加死亡及功能损失。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nhs-stroke",
+        "who-emergency"
+      ],
+      "department": "neurology"
+    },
+    {
+      "id": "p0-sepsis",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/293771399"
+        ]
+      },
+      "priority": "P0",
+      "reason": "脓毒症（含有无休克）的器官功能损害使及时识别成为首先编写的知识。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "感染相关器官损害、休克和多器官衰竭。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": "新生儿、孕产妇、老人及免疫功能低下者需要具体差异说明。",
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-sepsis"
+      ],
+      "department": "emergency"
+    },
+    {
+      "id": "p0-meningitis",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/705971711",
+          "http://id.who.int/icd/release/11/mms/1331660907",
+          "http://id.who.int/icd/release/11/mms/516585689",
+          "http://id.who.int/icd/release/11/mms/121670633",
+          "http://id.who.int/icd/release/11/mms/1358604969"
+        ]
+      },
+      "priority": "P0",
+      "reason": "优先解释感染性脑膜炎识别和细菌病因时间敏感处理；不把全部中枢感染后遗症当急症。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "病原不同，急性识别可减少死亡或神经系统损害；各病原疗法分别核对。",
+        "burden": null,
+        "public_health": "部分病原涉及疫苗、接触者管理或聚集性疫情；不是所有脑膜炎都需相同措施。",
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-meningitis"
+      ],
+      "department": "infectious-diseases"
+    },
+    {
+      "id": "p0-anaphylaxis",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1868068711"
+        ]
+      },
+      "priority": "P0",
+      "reason": "严重过敏反应快速影响气道或循环；与一般过敏病分开排序。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "及时识别气道或循环受损。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nhs-anaphylaxis"
+      ],
+      "department": "allergy"
+    },
+    {
+      "id": "p0-acute-pe",
+      "selector": {
+        "codes": [
+          "BB00.0"
+        ]
+      },
+      "priority": "P0",
+      "reason": "仅急性肺血栓栓塞进入该规则；慢性和急慢未注明类别另行排程。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "急性肺血管阻塞可危及生命。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nhs-pe"
+      ],
+      "department": "respiratory"
+    },
+    {
+      "id": "p0-aortic-dissection",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1938903985",
+          "http://id.who.int/icd/release/11/mms/1360167380",
+          "http://id.who.int/icd/release/11/mms/1719771306"
+        ]
+      },
+      "priority": "P0",
+      "reason": "主动脉夹层专题先补急性发作识别；不包含单纯稳定主动脉瘤兄弟类。类别可含稳定既往病例，正文须区分急性与随访。",
+      "dimensions": {
+        "time_sensitivity": "针对急性新发或急剧恶化的夹层表现；并不声称每个既往夹层患者都须立即急救。",
+        "preventable_harm": "急性夹层可能破裂或造成重要器官灌注不足。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nhs-aorta"
+      ],
+      "department": "vascular"
+    },
+    {
+      "id": "p0-status-epilepticus",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/906174792"
+        ]
+      },
+      "priority": "P0",
+      "reason": "持续或反复且未恢复的癫痫发作优先，普通癫痫家族另设P1。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "持续发作需要及时处理以避免脑损害。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nhs-epilepsy"
+      ],
+      "department": "neurology"
+    },
+    {
+      "id": "p0-dka",
+      "selector": {
+        "codes": [
+          "5A22.0",
+          "5A22.3"
+        ]
+      },
+      "priority": "P0",
+      "reason": "精确选择有昏迷和无昏迷的DKA；不是所有糖尿病或血糖偏高都属于DKA。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "需要及时住院处理的代谢失衡。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": "儿童初发糖尿病和不同糖尿病类型的表现须分别解释。",
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nhs-dka"
+      ],
+      "department": "endocrinology"
+    },
+    {
+      "id": "p0-retinal-detachment",
+      "selector": {
+        "codes": [
+          "9B73.0",
+          "9B73.3",
+          "9B73.4",
+          "9B73.Y",
+          "9B73.Z"
+        ]
+      },
+      "priority": "P0",
+      "reason": "先补脱离、裂孔及该混合家族残余类别的警讯识别与及时鉴别；视网膜囊肿和劈裂兄弟类不继承。并非所有稳定低风险无症状裂孔都需急诊或治疗。",
+      "dimensions": {
+        "time_sensitivity": "新发闪光、飞蚊明显增多、幕帘或视力缺损需及时眼科评估；已经评估的无症状低风险裂孔可由医生安排观察，残余类别先明确类型。",
+        "preventable_harm": "及时识别裂孔与脱离有保护视力的价值；不同类型和风险的治疗需求分别判断。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nei-retina",
+        "asrs-retinal-tears"
+      ],
+      "department": "ophthalmology"
+    },
+    {
+      "id": "p0-testicular-torsion",
+      "selector": {
+        "codes": [
+          "GB01.0"
+        ]
+      },
+      "priority": "P0",
+      "reason": "只选择睾丸扭转，不把睾丸附件扭转等兄弟类别自动升级。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "血供受损可能导致睾丸丢失。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nhs-torsion"
+      ],
+      "department": "urology"
+    },
+    {
+      "id": "p0-maternal-haemorrhage-eclampsia",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/820245648",
+          "http://id.who.int/icd/release/11/mms/1759760659"
+        ]
+      },
+      "priority": "P0",
+      "reason": "优先编写产后出血及子痫；不将全部妊娠、分娩或高血压类别定为P0。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "及时处理严重出血或子痫关系孕产妇生命。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": "妊娠、分娩后人群；孕周及产后阶段需写清。",
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-maternal"
+      ],
+      "department": "obstetrics"
+    },
+    {
+      "id": "p0-puerperal-sepsis",
+      "selector": {
+        "codes": [
+          "JB40.0"
+        ]
+      },
+      "priority": "P0",
+      "reason": "产褥脓毒症需要在普通脓毒症知识外说明产后差异。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "产后感染相关器官损害。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": "近期分娩者。",
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-sepsis",
+        "who-maternal"
+      ],
+      "department": "obstetrics"
+    },
+    {
+      "id": "p0-neonatal-sepsis-asphyxia",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/381388700",
+          "http://id.who.int/icd/release/11/mms/848321559"
+        ]
+      },
+      "priority": "P0",
+      "reason": "选择新生儿脓毒症和出生窒息，不将围产期全部类别升级。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "感染或氧供中断会影响生存和发育。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": "胎儿、新生儿的识别信号及照护路径不同于成人。",
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-newborn",
+        "who-sepsis"
+      ],
+      "department": "pediatrics"
+    },
+    {
+      "id": "p0-ards",
+      "selector": {
+        "codes": [
+          "CB00"
+        ]
+      },
+      "priority": "P0",
+      "reason": "ARDS为严重呼吸功能受损；不将所有呼吸疾病或慢性呼吸衰竭升级。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "低氧和严重肺损伤需要医院支持。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nhs-ards"
+      ],
+      "department": "respiratory"
+    },
+    {
+      "id": "p0-epiglottitis",
+      "selector": {
+        "codes": [
+          "CA06.1"
+        ]
+      },
+      "priority": "P0",
+      "reason": "仅选择急性会厌炎，不将全部喉炎升级。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "会厌肿胀可阻塞气道。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": "儿童与成人表现需分别说明。",
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nhs-epiglottitis"
+      ],
+      "department": "ent"
+    },
+    {
+      "id": "p0-acute-appendicitis",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/40398753"
+        ]
+      },
+      "priority": "P0",
+      "reason": "选择急性阑尾炎及其急性并发类型；慢性阑尾炎不继承此级。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "穿孔、腹膜炎、脓毒症等延误后果。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": "儿童、孕妇和老人可有非典型表现。",
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nhs-appendicitis"
+      ],
+      "department": "general-surgery"
+    },
+    {
+      "id": "p0-heatstroke",
+      "selector": {
+        "codes": [
+          "NF01.0",
+          "NF06.0"
+        ]
+      },
+      "priority": "P0",
+      "reason": "热射病和劳力性热射病优先；热衰竭、热疹另行判断。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "严重热病迅速识别和医疗帮助。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nhs-heatstroke"
+      ],
+      "department": "emergency"
+    },
+    {
+      "id": "p0-cardiac-arrest",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/395422191"
+        ]
+      },
+      "priority": "P0",
+      "reason": "心搏停止知识应先解释识别和启动急救；代码不是患者自诊工具。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "无正常呼吸和反应时需要迅速识别。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "sja-first-aid",
+        "who-emergency"
+      ],
+      "department": "emergency"
+    },
+    {
+      "id": "p0-asphyxiation",
+      "selector": {
+        "codes": [
+          "NF05"
+        ]
+      },
+      "priority": "P0",
+      "reason": "窒息危险直接影响通气；保留不同年龄和原因的处置差异。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "通气受阻可导致严重缺氧。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "sja-first-aid",
+        "who-emergency"
+      ],
+      "department": "emergency"
+    },
+    {
+      "id": "p0-severe-dengue",
+      "selector": {
+        "codes": [
+          "1D22"
+        ]
+      },
+      "priority": "P0",
+      "reason": "严重登革热单独优先，不把无警告信号的登革热归为同等急症。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "出现严重表现后及时照护可降低死亡风险。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-dengue"
+      ],
+      "department": "infectious-diseases"
+    },
+    {
+      "id": "p0-suicidal-ideation",
+      "selector": {
+        "codes": [
+          "MB26.A"
+        ]
+      },
+      "priority": "P0",
+      "reason": "优先提供危机识别、支持及求助知识；自杀意念本身不等于每位患者即刻危险，正文需区分计划、意图与安全状态。",
+      "dimensions": {
+        "time_sensitivity": "危机、有计划或近期危险情境应迅速识别与支持；不从标题自动给个人分诊。",
+        "preventable_harm": "及时识别、评估及持续支持有预防价值。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-suicide"
+      ],
+      "department": "psychiatry"
+    },
+    {
+      "id": "p1-cancer-malignant",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/2009008947"
+        ]
+      },
+      "priority": "P1",
+      "reason": "明确恶性肿瘤家族先补早诊、分型、分期及治疗边界；良性、原位及性质未定类不由此自动赋级。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": "家族层：多数有症状癌症早诊有价值；不承诺每种癌症都有筛查或可治愈。",
+        "burden": "癌症家族总体负担；本次无逐叶可比数值。",
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-cancer"
+      ],
+      "department": "oncology"
+    },
+    {
+      "id": "p1-haematological-neoplasms",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1735009745",
+          "http://id.who.int/icd/release/11/mms/426734182",
+          "http://id.who.int/icd/release/11/mms/1901756287",
+          "http://id.who.int/icd/release/11/mms/1359806843",
+          "http://id.who.int/icd/release/11/mms/2073226578",
+          "http://id.who.int/icd/release/11/mms/331838766",
+          "http://id.who.int/icd/release/11/mms/1786015803",
+          "http://id.who.int/icd/release/11/mms/1430965006",
+          "http://id.who.int/icd/release/11/mms/1235412948",
+          "http://id.who.int/icd/release/11/mms/1611980611",
+          "http://id.who.int/icd/release/11/mms/1267231647",
+          "http://id.who.int/icd/release/11/mms/1062906118",
+          "http://id.who.int/icd/release/11/mms/1099674056",
+          "http://id.who.int/icd/release/11/mms/305908598",
+          "http://id.who.int/icd/release/11/mms/2003830496",
+          "http://id.who.int/icd/release/11/mms/64837151",
+          "http://id.who.int/icd/release/11/mms/77501812",
+          "http://id.who.int/icd/release/11/mms/293282687",
+          "http://id.who.int/icd/release/11/mms/1792850491",
+          "http://id.who.int/icd/release/11/mms/797822185/other",
+          "http://id.who.int/icd/release/11/mms/797822185/unspecified",
+          "http://id.who.int/icd/release/11/mms/950282079",
+          "http://id.who.int/icd/release/11/mms/952730197",
+          "http://id.who.int/icd/release/11/mms/803046659",
+          "http://id.who.int/icd/release/11/mms/257833622",
+          "http://id.who.int/icd/release/11/mms/1029172881",
+          "http://id.who.int/icd/release/11/mms/407807101",
+          "http://id.who.int/icd/release/11/mms/42599396",
+          "http://id.who.int/icd/release/11/mms/2077559619",
+          "http://id.who.int/icd/release/11/mms/697911710",
+          "http://id.who.int/icd/release/11/mms/1418101362",
+          "http://id.who.int/icd/release/11/mms/1946973604/other",
+          "http://id.who.int/icd/release/11/mms/1946973604/unspecified",
+          "http://id.who.int/icd/release/11/mms/1239211846",
+          "http://id.who.int/icd/release/11/mms/1997215876",
+          "http://id.who.int/icd/release/11/mms/82152208",
+          "http://id.who.int/icd/release/11/mms/1475987117",
+          "http://id.who.int/icd/release/11/mms/2048216430",
+          "http://id.who.int/icd/release/11/mms/702525006/other",
+          "http://id.who.int/icd/release/11/mms/1720785883",
+          "http://id.who.int/icd/release/11/mms/1168698390",
+          "http://id.who.int/icd/release/11/mms/745285555",
+          "http://id.who.int/icd/release/11/mms/964482216",
+          "http://id.who.int/icd/release/11/mms/2058944823",
+          "http://id.who.int/icd/release/11/mms/1804127841",
+          "http://id.who.int/icd/release/11/mms/2100138081",
+          "http://id.who.int/icd/release/11/mms/1592172566",
+          "http://id.who.int/icd/release/11/mms/352523899",
+          "http://id.who.int/icd/release/11/mms/83430037",
+          "http://id.who.int/icd/release/11/mms/153957345",
+          "http://id.who.int/icd/release/11/mms/1052643999",
+          "http://id.who.int/icd/release/11/mms/1638811270",
+          "http://id.who.int/icd/release/11/mms/684005900",
+          "http://id.who.int/icd/release/11/mms/958629729",
+          "http://id.who.int/icd/release/11/mms/1301206942",
+          "http://id.who.int/icd/release/11/mms/1254954229",
+          "http://id.who.int/icd/release/11/mms/589245621",
+          "http://id.who.int/icd/release/11/mms/1179967777",
+          "http://id.who.int/icd/release/11/mms/855224800",
+          "http://id.who.int/icd/release/11/mms/1550338805",
+          "http://id.who.int/icd/release/11/mms/1972636482",
+          "http://id.who.int/icd/release/11/mms/1998421548/unspecified",
+          "http://id.who.int/icd/release/11/mms/1528863768",
+          "http://id.who.int/icd/release/11/mms/1510618119"
+        ]
+      },
+      "priority": "P1",
+      "reason": "精确选择已核对的白血病、淋巴瘤及明确恶性造血类别；未以混合肿瘤父级把良性、原位、反应性和性质待定类别自动赋P1，其余仍在P2待逐类裁定。含缓解期类别的知识重点是随访，不能据名称推断当前急迫性。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": "选定恶性家族的诊断、分型和适当治疗有编辑优先价值；观察与治疗、初诊与缓解期需求按具体病种核对。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-cancer",
+        "who-icd-2026"
+      ],
+      "department": "hematology"
+    },
+    {
+      "id": "p1-cns-neoplasms",
+      "selector": {
+        "codes": [
+          "2A00.00",
+          "2A00.10",
+          "2A01.00",
+          "2A02.00",
+          "2A02.10",
+          "2A02.12"
+        ]
+      },
+      "priority": "P1",
+      "reason": "只选择胶质母细胞瘤、髓母细胞瘤及明确恶性的列明类别；不将WHO癌症原则用于全部中枢及周围神经良性、性质未定肿瘤。其余类别保留P2待逐类裁定。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": "所列类别优先解释病理类型、位置、诊断和治疗边界；不声称全部可筛查、可治愈或采用相同疗法。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-cancer",
+        "nci-cns",
+        "who-icd-2026"
+      ],
+      "department": "oncology"
+    },
+    {
+      "id": "p1-hypertension",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/924915526"
+        ]
+      },
+      "priority": "P1",
+      "reason": "高血压家族优先解释发现、长期风险控制和随访；急性危象条件写清。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": "家族层：发现和控制血压相关风险有预防价值。",
+        "burden": "WHO心血管/高血压相关家族资料；不将其等同为每个叶类别负担。",
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-ncd"
+      ],
+      "department": "cardiology"
+    },
+    {
+      "id": "p1-ischaemic-heart",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1964269418"
+        ]
+      },
+      "priority": "P1",
+      "reason": "缺血性心脏病家族系统补齐；急性心肌梗死更高优先。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": "预防、长期管理和及早识别变化；按实际病种区分。",
+        "burden": "WHO GHE 2023缺血性心脏病汇总死因，不是叶级排序。",
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-ghe",
+        "who-ncd"
+      ],
+      "department": "cardiology"
+    },
+    {
+      "id": "p1-diabetes",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/465177735"
+        ]
+      },
+      "priority": "P1",
+      "reason": "糖尿病家族优先解释类型差异、治疗目标及并发症预防，DKA由独立P0规则处理。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": "检测、管理和长期并发症预防。",
+        "burden": "糖尿病家族汇总；没有各遗传或其他亚型同等常见的假定。",
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-ghe",
+        "who-ncd"
+      ],
+      "department": "endocrinology"
+    },
+    {
+      "id": "p1-chronic-respiratory",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/133207228",
+          "http://id.who.int/icd/release/11/mms/1656445230"
+        ]
+      },
+      "priority": "P1",
+      "reason": "慢阻肺及哮喘按不同病因和控制目标补齐，不能把慢病名称等同急性危重发作。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": "长期控制、识别恶化与降低可改变风险。",
+        "burden": "慢性呼吸疾病家族资料；无逐叶发生率。",
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-ghe",
+        "who-ncd"
+      ],
+      "department": "respiratory"
+    },
+    {
+      "id": "p1-pneumonia",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/142052508"
+        ]
+      },
+      "priority": "P1",
+      "reason": "肺炎家族兼顾早诊、病因差异和严重表现识别。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": "WHO GHE下呼吸道感染汇总负担；不等于每个罕见病原均常见。",
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-ghe"
+      ],
+      "department": "respiratory"
+    },
+    {
+      "id": "p1-kidney-disease",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/476391827",
+          "http://id.who.int/icd/release/11/mms/412389819"
+        ]
+      },
+      "priority": "P1",
+      "reason": "急性肾损伤与慢性肾病均优先补齐，分别说明急性变化和长期保护。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": "及时识别肾功能变化及减少进一步损害；住院需求依严重性而异。",
+        "burden": "GHE肾病汇总；不提供逐病因负担值。",
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-ghe",
+        "nhs-aki"
+      ],
+      "department": "nephrology"
+    },
+    {
+      "id": "p1-dementia",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/546689346"
+        ]
+      },
+      "priority": "P1",
+      "reason": "痴呆家族优先补鉴别、支持、照护与随访，不将突然意识改变误写成普通痴呆。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": "痴呆家族汇总负担；不外推每个病因的人数。",
+        "public_health": null,
+        "vulnerable_population": "需解释患者与照护者支持及沟通。",
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-ghe",
+        "who-mental"
+      ],
+      "department": "neurology"
+    },
+    {
+      "id": "p1-mental-health",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/76398729",
+          "http://id.who.int/icd/release/11/mms/1336943699",
+          "http://id.who.int/icd/release/11/mms/405565289",
+          "http://id.who.int/icd/release/11/mms/590211325"
+        ]
+      },
+      "priority": "P1",
+      "reason": "心境、焦虑、原发精神病及物质使用问题优先补可获得的帮助和功能恢复，不能以诊断标签推定危险性。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": "家族层存在有效照护与服务缺口；具体疗效逐类核验。",
+        "burden": "精神健康整体功能损害资料，叶级负担未知。",
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-mental"
+      ],
+      "department": "psychiatry"
+    },
+    {
+      "id": "p1-epilepsy",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1397288146"
+        ]
+      },
+      "priority": "P1",
+      "reason": "癫痫及发作家族优先解释识别、治疗、生活支持和特殊情形；持续状态另列P0。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": "按发作类型核对治疗与避免相关伤害。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nhs-epilepsy"
+      ],
+      "department": "neurology"
+    },
+    {
+      "id": "p1-musculoskeletal",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/558562409",
+          "http://id.who.int/icd/release/11/mms/576319925",
+          "http://id.who.int/icd/release/11/mms/2113001430"
+        ]
+      },
+      "priority": "P1",
+      "reason": "常见肌肉骨骼家族按关节、骨及功能问题补齐；罕见类型不冒用常见类型的负担数。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": "减少功能受限，治疗与康复按病种区分。",
+        "burden": "WHO列明的骨关节炎、类风湿、骨质疏松家族；各叶负担未知。",
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-msk"
+      ],
+      "department": "orthopedics"
+    },
+    {
+      "id": "p1-low-back-pain",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1815305992"
+        ]
+      },
+      "priority": "P1",
+      "reason": "腰痛作为症状入口按病因分流，先区分需排除的危险原因与常见原因。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": "按病因解释功能恢复与行动，避免统一治疗。",
+        "burden": "腰痛整体功能负担；不是单一确诊疾病。",
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-msk"
+      ],
+      "department": "rehabilitation"
+    },
+    {
+      "id": "p1-oral-health",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1983306720",
+          "http://id.who.int/icd/release/11/mms/1171555810"
+        ]
+      },
+      "priority": "P1",
+      "reason": "龋病、牙周病优先补预防、早期治疗及口腔功能保护。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": "家族层可预防及可早治的问题；个别类型须专门核对。",
+        "burden": "WHO口腔病及龋病/牙周病家族资料，不等于每种细分类型的人数。",
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-oral"
+      ],
+      "department": "dentistry"
+    },
+    {
+      "id": "p1-vision",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/109841337",
+          "http://id.who.int/icd/release/11/mms/1006882070",
+          "http://id.who.int/icd/release/11/mms/1514301548",
+          "http://id.who.int/icd/release/11/mms/499924848",
+          "http://id.who.int/icd/release/11/mms/1266833063"
+        ]
+      },
+      "priority": "P1",
+      "reason": "常见致视力损害家族优先补；新发危险症状与长期管理分别解释。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": "家族层及时眼科照护可减少或应对部分功能损害。",
+        "burden": "WHO所列视觉损害主要病因家族；逐叶负担未知。",
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-vision"
+      ],
+      "department": "ophthalmology"
+    },
+    {
+      "id": "p1-hearing",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1154032108",
+          "http://id.who.int/icd/release/11/mms/500439897",
+          "http://id.who.int/icd/release/11/mms/947280473",
+          "http://id.who.int/icd/release/11/mms/953801031",
+          "http://id.who.int/icd/release/11/mms/692012078",
+          "http://id.who.int/icd/release/11/mms/703718321"
+        ]
+      },
+      "priority": "P1",
+      "reason": "先天与后天听力受损优先补早识别和沟通支持；突然变化的就医条件单独核对。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": "及时发现、合适干预和康复可减少沟通影响。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": "婴幼儿、学龄儿童、噪声/耳毒性药物暴露者和老人有不同评估需求。",
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-hearing"
+      ],
+      "department": "ent"
+    },
+    {
+      "id": "p1-nutrition",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1517885800",
+          "http://id.who.int/icd/release/11/mms/149403041"
+        ]
+      },
+      "priority": "P1",
+      "reason": "营养不足和肥胖优先补具体评估及干预边界；不根据体形标签判断个人健康。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": "营养不足与肥胖家族资料；没有逐微量元素或罕见病因的可比数值。",
+        "public_health": null,
+        "vulnerable_population": "儿童生长发育及妊娠相关营养需求需区别。",
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-malnutrition"
+      ],
+      "department": "nutrition"
+    },
+    {
+      "id": "p1-tuberculosis",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/2072728114"
+        ]
+      },
+      "priority": "P1",
+      "reason": "结核家族早诊、治疗和传播预防优先；不同部位和感染状态不采用统一传染性描述。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": "合适的发现、预防和治疗有价值。",
+        "burden": null,
+        "public_health": "活动性结核与潜伏感染、肺外结核分开解释。",
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-tb"
+      ],
+      "department": "infectious-diseases"
+    },
+    {
+      "id": "p1-hiv-hepatitis-sti",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1000704511",
+          "http://id.who.int/icd/release/11/mms/985510409",
+          "http://id.who.int/icd/release/11/mms/1904876434"
+        ]
+      },
+      "priority": "P1",
+      "reason": "HIV、病毒性肝炎及性传播感染优先补检测、治疗、预防及隐私友好就医知识。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": "家族公共卫生项目优先；病原、传播路径和治疗分别核对。",
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-infection-programmes"
+      ],
+      "department": "infectious-diseases"
+    },
+    {
+      "id": "p1-vaccine-preventable",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/2064398473",
+          "http://id.who.int/icd/release/11/mms/1793762788",
+          "http://id.who.int/icd/release/11/mms/2085616610",
+          "http://id.who.int/icd/release/11/mms/508032285",
+          "http://id.who.int/icd/release/11/mms/588527933",
+          "http://id.who.int/icd/release/11/mms/961032639",
+          "http://id.who.int/icd/release/11/mms/1208294714",
+          "http://id.who.int/icd/release/11/mms/410022648",
+          "http://id.who.int/icd/release/11/mms/1826431497"
+        ]
+      },
+      "priority": "P1",
+      "reason": "列明疫苗可预防疾病优先补预防与症状识别；接种人群、程序和地区差异逐病核验。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": "WHO列明的疫苗可预防病；不代表任何年龄或地区使用相同疫苗方案。",
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-immunization"
+      ],
+      "department": "infectious-diseases"
+    },
+    {
+      "id": "p1-vector-borne",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1439886552",
+          "http://id.who.int/icd/release/11/mms/1959883044"
+        ]
+      },
+      "priority": "P1",
+      "reason": "疟疾与登革热家族优先补旅行、暴露、媒介控制与严重表现识别；严重登革热另列P0。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": "与媒介、地区和旅行有关；不是一般日常接触即传播。",
+        "vulnerable_population": "疟疾中的儿童、孕产妇及旅行者需专门说明。",
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-malaria",
+        "who-dengue"
+      ],
+      "department": "infectious-diseases"
+    },
+    {
+      "id": "p1-covid",
+      "selector": {
+        "codes": [
+          "RA01.0",
+          "RA01.1"
+        ]
+      },
+      "priority": "P1",
+      "reason": "保留COVID-19作为有传播与群体负担背景的独立疾病选题，不能因汇总排名下降移出计划。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": "GHE明确2023年的全球负担与地区差异；不沿用旧2021排名。",
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-ghe"
+      ],
+      "department": "infectious-diseases"
+    },
+    {
+      "id": "p1-maternity",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/714000734"
+        ]
+      },
+      "priority": "P1",
+      "reason": "妊娠、分娩及产后章节按连续照护需求优先系统补齐，不把全章设为急症。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": "阶段、孕周、合并疾病及地区照护路径影响内容。",
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-maternal"
+      ],
+      "department": "obstetrics"
+    },
+    {
+      "id": "p1-perinatal",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1306203631"
+        ]
+      },
+      "priority": "P1",
+      "reason": "围产期章节按早期识别、照护和发育需求优先；并非每项都会危及生命。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": "胎儿和新生儿的表现、喂养及监护需求需专项解释。",
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-newborn"
+      ],
+      "department": "pediatrics"
+    },
+    {
+      "id": "p1-developmental",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/223744320"
+        ]
+      },
+      "priority": "P1",
+      "reason": "发育异常章节优先补适龄发现、诊断及支持路径；可干预性依具体类别，不能统一承诺可预防或治愈。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": "家族层：部分疾病有早发现或及时干预价值；逐叶疗效尚需核验。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": "儿童发展、家庭支持及跨生命周期随访需求。",
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-congenital"
+      ],
+      "department": "genetics"
+    },
+    {
+      "id": "p1-harmful-substances",
+      "selector": {
+        "codes": [
+          "NE60",
+          "NE61",
+          "NE6Z"
+        ]
+      },
+      "priority": "P1",
+      "reason": "药物和非药物有害暴露是宽泛混合类别，优先拆清急性中毒、慢性暴露及药物不良反应；不能用CO一例把整类判成P0。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": "缺少各原因完整展开的逐类证据；急性CO等高优先子题在该规范类别内单独排写。"
+      },
+      "source_ids": [
+        "nhs-co",
+        "who-icd-2026"
+      ],
+      "department": "emergency"
+    },
+    {
+      "id": "p0-ectopic-pregnancy",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1563334645"
+        ]
+      },
+      "priority": "P0",
+      "reason": "先补异位妊娠的及时评估及破裂识别；稳定已确诊病例可由医生监测，不应被正文误写成一律急诊手术。",
+      "dimensions": {
+        "time_sensitivity": "疑似情况及时评估；突发剧痛、晕厥等破裂表现属紧急情形。",
+        "preventable_harm": "破裂及出血风险；处理方式根据症状和检查决定。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": "可能怀孕及已妊娠者，包括尚未验出阳性者。",
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nhs-ectopic"
+      ],
+      "department": "obstetrics"
+    },
+    {
+      "id": "p0-sjs-ten",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/195467267",
+          "http://id.who.int/icd/release/11/mms/1322710779"
+        ]
+      },
+      "priority": "P0",
+      "reason": "精确选择SJS/TEN及药物相关分支，不以一般皮疹、药物不良反应或全皮肤病替代。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "严重皮肤黏膜及器官损伤需要及时医疗处理。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nhs-sjs"
+      ],
+      "department": "dermatology"
+    },
+    {
+      "id": "p0-sudden-hearing",
+      "selector": {
+        "codes": [
+          "AB55"
+        ]
+      },
+      "priority": "P0",
+      "reason": "突发特发性听力下降先补时间敏感的识别和评估知识；不把慢性听力损失全类升级。",
+      "dimensions": {
+        "time_sensitivity": "突然出现的听力下降需要及时评估；此编写等级不等于人人呼叫救护车。",
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nhs-sudden-hearing"
+      ],
+      "department": "ent"
+    },
+    {
+      "id": "p0-cauda-equina",
+      "selector": {
+        "codes": [
+          "8B40"
+        ]
+      },
+      "priority": "P0",
+      "reason": "马尾综合征先补新发膀胱、肠道、鞍区感觉或肢体变化及就医条件；不推广至全部腰痛或椎间盘疾病。",
+      "dimensions": {
+        "time_sensitivity": "写作优先说明新发或急性表现的识别、行动与延误后果；不以编辑等级判断某位患者当前分诊。",
+        "preventable_harm": "早处理可减少永久膀胱、肠道、性功能或下肢损害。",
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "nhs-cauda"
+      ],
+      "department": "orthopedics"
+    },
+    {
+      "id": "routing-female-genital",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/585064432"
+        ]
+      },
+      "priority": "P2",
+      "reason": "按冻结目录结构分配编辑归口；此规则不声明严重程度，尚无专门优先证据时仍按系统补齐基线。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ],
+      "department": "gynecology"
+    },
+    {
+      "id": "routing-breast",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1433201931"
+        ]
+      },
+      "priority": "P2",
+      "reason": "按冻结目录结构分配编辑归口；此规则不声明严重程度，尚无专门优先证据时仍按系统补齐基线。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ],
+      "department": "breast-surgery"
+    },
+    {
+      "id": "routing-kidney",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/658360080",
+          "http://id.who.int/icd/release/11/mms/1210263011",
+          "http://id.who.int/icd/release/11/mms/761526554",
+          "http://id.who.int/icd/release/11/mms/854539401"
+        ]
+      },
+      "priority": "P2",
+      "reason": "按冻结目录结构分配编辑归口；此规则不声明严重程度，尚无专门优先证据时仍按系统补齐基线。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ],
+      "department": "nephrology"
+    },
+    {
+      "id": "routing-dentistry",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1167594753"
+        ]
+      },
+      "priority": "P2",
+      "reason": "按冻结目录结构分配编辑归口；此规则不声明严重程度，尚无专门优先证据时仍按系统补齐基线。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ],
+      "department": "dentistry"
+    },
+    {
+      "id": "routing-colorectal",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1305923085"
+        ]
+      },
+      "priority": "P2",
+      "reason": "按冻结目录结构分配编辑归口；此规则不声明严重程度，尚无专门优先证据时仍按系统补齐基线。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ],
+      "department": "colorectal-surgery"
+    },
+    {
+      "id": "routing-nutrition",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/1671987290"
+        ]
+      },
+      "priority": "P2",
+      "reason": "按冻结目录结构分配编辑归口；此规则不声明严重程度，尚无专门优先证据时仍按系统补齐基线。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ],
+      "department": "nutrition"
+    },
+    {
+      "id": "routing-genetic-metabolism",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/733825440"
+        ]
+      },
+      "priority": "P2",
+      "reason": "按冻结目录结构分配编辑归口；此规则不声明严重程度，尚无专门优先证据时仍按系统补齐基线。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ],
+      "department": "genetics"
+    },
+    {
+      "id": "routing-burns",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/163532889"
+        ]
+      },
+      "priority": "P2",
+      "reason": "按冻结目录结构分配编辑归口；此规则不声明严重程度，尚无专门优先证据时仍按系统补齐基线。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ],
+      "department": "burns"
+    },
+    {
+      "id": "routing-allergy",
+      "selector": {
+        "ancestors": [
+          "http://id.who.int/icd/release/11/mms/642618805/other",
+          "http://id.who.int/icd/release/11/mms/642618805/unspecified"
+        ]
+      },
+      "priority": "P2",
+      "reason": "按冻结目录结构分配编辑归口；此规则不声明严重程度，尚无专门优先证据时仍按系统补齐基线。",
+      "dimensions": {
+        "time_sensitivity": null,
+        "preventable_harm": null,
+        "burden": null,
+        "public_health": null,
+        "vulnerable_population": null,
+        "evidence_gap": null
+      },
+      "source_ids": [
+        "who-icd-2026"
+      ],
+      "department": "allergy"
+    }
+  ]
+}

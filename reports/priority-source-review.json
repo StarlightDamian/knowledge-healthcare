@@ -1,0 +1,1697 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-02",
+  "status": "author_source_review_complete",
+  "classification_status": "rule_based_editorial_priority",
+  "catalog_release": "2026-01",
+  "catalog_sha256": "3db9a09b98634b08caeb46119a1aec344341e3f2db8b2fc7997ed0e33b3ed15f",
+  "priority_rules_sha256": "d44d7418aa6a898e297365b0372aefcc8bd44da1e1069b0f78f84a42c2c8103e",
+  "source_read_count": 44,
+  "source_reads": [
+    {
+      "source_id": "who-icd-2026",
+      "read_status": "read_frozen_official_snapshot",
+      "locator": "本地冻结catalog.json.gz；chapter/class_kind/code/foundation_uri/parent_uri/is_leaf；manifest.json中的官方ZIP哈希",
+      "supports": "分类结构与精确选择器依据；不提供本站编写优先等级。"
+    },
+    {
+      "source_id": "who-emergency",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "Overview；Impact（网页行86–95）",
+      "supports": "急性病和损伤早识别、时间敏感照护的原则；具体P级为项目编辑决策，不是WHO分类排名。"
+    },
+    {
+      "source_id": "who-ghe",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2026-10-02版；Leading causes of death globally；收入组差异；Editor’s note（行83–143）",
+      "supports": "2023年汇总死因资料支持心血管、慢阻肺、下呼吸道感染、糖尿病、痴呆、肾病家族的选题顺序；不支持每个ICD叶类别的死亡负担。"
+    },
+    {
+      "source_id": "who-ncd",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2025-09-25；Key facts；Prevention and control（行83–101、131–136）",
+      "supports": "心血管、癌症、慢性呼吸疾病、糖尿病的检测、预防和管理价值；家族层证据。"
+    },
+    {
+      "source_id": "who-cancer",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2026-07-03；Early detection；Treatment（行144–174）",
+      "supports": "恶性肿瘤早诊、分型及及时适当治疗；筛查并非对所有癌症有效，不将此依据用于把良性肿瘤定义成癌症。"
+    },
+    {
+      "source_id": "who-maternal",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2025-04-07；Why do women die?；How can women’s lives be saved?（行100–114）",
+      "supports": "妊娠、分娩及产后连续照护；出血、感染、子痫特异急症优先；不声称所有产科类别同等严重。"
+    },
+    {
+      "source_id": "who-newborn",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2024-03-14；Key facts；Causes；Priority strategies（行87–105）",
+      "supports": "围产期家族保护与及时照护；窒息、感染等具体死亡原因；不把新生儿所有问题一律定为急症。"
+    },
+    {
+      "source_id": "who-immunization",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "Immunization coverage estimates；Vaccine-preventable diseases（行110–155）",
+      "supports": "可疫苗预防病种的公共卫生价值与疾病列表；各地接种方案需要另行核对。"
+    },
+    {
+      "source_id": "who-infection-programmes",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "部门目标；Guidelines（行78–88）",
+      "supports": "上述四个感染领域的预防、诊断、治疗与人群公平可及优先；本次只读总览，不声称已阅读链接内所有指南。"
+    },
+    {
+      "source_id": "who-tb",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2026-03-24；Overview；Prevention（行94–114、128–142）",
+      "supports": "结核家族早诊及传播预防；明确感染与活动性疾病、部位及传染性不同。"
+    },
+    {
+      "source_id": "who-malaria",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2025-12-04；Overview；Symptoms（行95–125）",
+      "supports": "疟疾家族可预防可治疗；严重症状需迅速处理，儿童和孕产妇有特定风险；不推算各虫种负担。"
+    },
+    {
+      "source_id": "who-dengue",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2025-08-21；Key facts；Symptoms（行87–131）",
+      "supports": "登革热媒介控制与严重登革热的迅速处理；多数病例轻症，未将全登革热父级定P0。"
+    },
+    {
+      "source_id": "who-sepsis",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2024-05-03；Overview；Signs and symptoms；Treatment（行94–120、155–164）",
+      "supports": "脓毒症为医学急症；感染相关器官损害与及时处理；含母婴相关风险。"
+    },
+    {
+      "source_id": "who-meningitis",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2026-09-29；Diagnosis；Treatment；Prevention（行133–164）",
+      "supports": "脑膜炎迅速识别及细菌病因及时治疗；不同病原、传播、年龄及免疫状态的差异。"
+    },
+    {
+      "source_id": "who-mental",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "Overview；Impact；WHO Response（行83–103）",
+      "supports": "精神健康家族功能损害、治疗缺口和有效照护；非每个亚型的定量负担或危险性。"
+    },
+    {
+      "source_id": "who-suicide",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "Prevention and control（行98–127）",
+      "supports": "及时识别、评估、管理和随访自杀相关行为；自杀意念条目用于危机识别知识，不能据此判定每位读者均处于即刻危险。"
+    },
+    {
+      "source_id": "who-msk",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2022-07-14；Key facts；Scope（行82–97）",
+      "supports": "肌肉骨骼家族的功能和参与受限；列明骨关节炎、类风湿、腰痛、骨质疏松等；不外推每个罕见亚型患病率。"
+    },
+    {
+      "source_id": "who-oral",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2025-03-17；Key facts；Overview；Dental caries；Periodontal disease（行86–102）",
+      "supports": "龋病和牙周病的预防、早期治疗及口腔功能；不以口腔总体人数作为单个子类人数。"
+    },
+    {
+      "source_id": "who-vision",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "Overview；Causes（行94–114）",
+      "supports": "白内障、屈光问题、糖尿病视网膜病、青光眼和老年黄斑变性的功能损害与及时照护；各病治疗和筛查仍分别核对。"
+    },
+    {
+      "source_id": "who-hearing",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "Identification and management；Rehabilitation（行165–185）",
+      "supports": "听力障碍早识别及沟通康复；不把全部听力障碍判为急性耳科急症。"
+    },
+    {
+      "source_id": "who-malnutrition",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2024-03-01；Key facts；Overview；Undernutrition（行82–105）",
+      "supports": "营养不足和肥胖相关的家族负担及儿童发展影响；不将所有微量元素亚型断言为常见。"
+    },
+    {
+      "source_id": "who-congenital",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "Screening, treatment and care（行131–154）",
+      "supports": "先天异常早发现、转诊和支持的家族层理由；只有部分疾病有特异可治疗干预，各国筛查不同。"
+    },
+    {
+      "source_id": "nhs-mi",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "定义、Symptoms与Immediate action required（行13–32）",
+      "supports": "心肌梗死紧急识别；不覆盖稳定冠心病为急症。"
+    },
+    {
+      "source_id": "nhs-stroke",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "Check for signs；Immediate action required（行14–46）",
+      "supports": "新发卒中症状的时间敏感识别；不把卒中后遗症或无急性症状血管异常继承为P0。"
+    },
+    {
+      "source_id": "nhs-pe",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "定义、症状、Urgent及Immediate action（行13–38）",
+      "supports": "急性肺栓塞延误风险与按症状紧急程度处理；不支持慢性PE自动继承。"
+    },
+    {
+      "source_id": "nhs-anaphylaxis",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "定义、Symptoms、Immediate action（行13–42）",
+      "supports": "严重过敏反应快速起病且可危及生命；不推广至全部过敏疾病。"
+    },
+    {
+      "source_id": "nhs-dka",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "定义、症状及Treatment（行13–32、70–76）",
+      "supports": "DKA需要及时住院处理；本规则不新增酮体阈值或家庭用药方案。"
+    },
+    {
+      "source_id": "nhs-torsion",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "Immediate action；Causes（行16–22、40–44）",
+      "supports": "睾丸扭转的器官损害及快速处理；未推至附睾或睾丸附件扭转所有子类。"
+    },
+    {
+      "source_id": "nei-retina",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "症状及急症说明、类型（行34–49、64–68）",
+      "supports": "视网膜脱离需及时评估以保护视力；不用于将视网膜囊肿、劈裂的父级兄弟类全判急症。"
+    },
+    {
+      "source_id": "nhs-epilepsy",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "How epilepsy affects your life；Risks of epilepsy（行166–178）",
+      "supports": "癫痫持续状态应及时处理；其他癫痫需治疗和支持但严重程度不同。"
+    },
+    {
+      "source_id": "nhs-appendicitis",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "定义、症状与Risks of a burst appendix（行13–30、157–167）",
+      "supports": "急性阑尾炎延误可穿孔及感染，症状有年龄和孕期差异；不覆盖慢性阑尾炎。"
+    },
+    {
+      "source_id": "nhs-ards",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "定义、Immediate action、Treatment（行13–43、50–61）",
+      "supports": "ARDS危及生命及呼吸支持；页面复核到期不作为新治疗方案依据，仅支持稳定急症识别原则。"
+    },
+    {
+      "source_id": "nhs-epiglottitis",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "定义与Immediate action（行13–38）",
+      "supports": "会厌炎可阻塞气道，应及时处理；不推广至所有喉炎。"
+    },
+    {
+      "source_id": "nhs-heatstroke",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2026-05-28版；Symptoms of heatstroke（行34–45）",
+      "supports": "区分热衰竭与需紧急处理的热射病；不将所有热相关疾病P0。"
+    },
+    {
+      "source_id": "nhs-aki",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2026-03-11；定义、Treatment及Complications（行13–15、68–90）",
+      "supports": "急性肾损伤及早处理价值；严重性不同，不把所有AKI直接判作患者急诊等级。"
+    },
+    {
+      "source_id": "nhs-aorta",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2024-03；PDF印刷第3页 ED Guidelines for Suspected Acute Aortic Syndrome",
+      "supports": "急性主动脉夹层识别与专科转诊；ICD夹层类别中既往稳定随访情况不能按标题判断现在需要急救。"
+    },
+    {
+      "source_id": "sja-first-aid",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "Advice categories；How to do CPR；Choking；Severe bleeding（网页行124–173）",
+      "supports": "心搏停止与窒息识别的急救教育；NHS原first-aid链接已重定向至SJA，不计作两个独立来源。"
+    },
+    {
+      "source_id": "nhs-co",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "What to do；Immediate action；Treatments（行46–77）",
+      "supports": "CO暴露及时离开危险环境及获得帮助；其ICD归入宽泛NE61，不能由CO子题把该混合类别全部判P0。"
+    },
+    {
+      "source_id": "nhs-ectopic",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "When to get medical advice；When to get emergency help；Treatment（行36–63）",
+      "supports": "异位妊娠及时诊断、破裂急救与稳定病例监测的区别；只用于稳定识别原则，不据过期复核日期页面更新用药方案。"
+    },
+    {
+      "source_id": "nhs-sjs",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2026-03-04；定义、Immediate action与Treatment（行13–17、74–95）",
+      "supports": "SJS/TEN严重皮肤反应需及时医院处理；不把普通皮疹或所有药物不良反应升级。"
+    },
+    {
+      "source_id": "nhs-sudden-hearing",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "2025-05-30；Urgent advice（行55–63）",
+      "supports": "突发听力下降需及时评估可能可治疗的病因；不宣称所有听力下降必须叫救护车。"
+    },
+    {
+      "source_id": "nhs-cauda",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "RFL1148 v1，批准2025-01-22；What is CES?与What to do（行16–46）",
+      "supports": "马尾综合征功能损害及新发相关症状及时就医；不是所有腰痛等同马尾综合征。"
+    },
+    {
+      "source_id": "asrs-retinal-tears",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "Symptoms（行35–36）；Diagnostic testing（行62）；Treatment and prognosis（行67–69）",
+      "supports": "及时识别裂孔可在脱离前干预；部分无症状低风险裂孔可观察。仅用于编辑优先及条件，未建立全文治疗交叉核验。"
+    },
+    {
+      "source_id": "nci-cns",
+      "read_status": "official_page_or_pdf_opened_and_relevant_passage_read",
+      "locator": "General information（行38–47）；Grades（行69–75）；Astrocytic tumors（行84–85）；Embryonal tumors（行101–105）；Meningeal tumors（行113–118）",
+      "supports": "区分良恶性及组织类型；支持胶质母细胞瘤、髓母细胞瘤和明确恶性类别的编辑优先。儿童有独立治疗资料，不把成人治疗套给儿童；未将全部中枢肿瘤父级赋级。"
+    }
+  ],
+  "observations": [
+    {
+      "id": "ghe-search-stale",
+      "finding": "搜索摘要显示2021旧版，实际页面2026-10-02更新为2023汇总；规则采用实际页面并保存日期。"
+    },
+    {
+      "id": "family-not-leaf-burden",
+      "finding": "未进行GHE与所有ICD叶的一对一负担映射；无叶级患病率、死亡率或DALY分值。"
+    },
+    {
+      "id": "clinical-gate-preserved",
+      "finding": "排序没有改正文、类别映射、内容交叉审核或临床签审状态。"
+    },
+    {
+      "id": "mixed-toxic-category",
+      "finding": "NE61包括多种非药物有害暴露，CO急救知识不能把整类定P0；列为P1并保留展开缺口。"
+    },
+    {
+      "id": "neoplasms-boundary",
+      "finding": "独立审查后取消中枢及血液混合父级P1继承，缩为明确核对的恶性、白血病/淋巴瘤节点；良性、原位、反应性及尚未核实类别留在P2/null等待专门依据，非低风险结论。"
+    },
+    {
+      "id": "arsd-page-review-date",
+      "finding": "NHS ARDS页面显示下次复核2026-07；仅采用稳定急症识别说明并与WHO急救原则对照，不据此发布新治疗细节。"
+    },
+    {
+      "id": "repeated-source-not-crosscheck",
+      "finding": "多个WHO网页并非自动独立临床证据；本次建立编辑顺序的来源支持，不升级为全文逐主张交叉核验。"
+    }
+  ],
+  "structural_validation": {
+    "eligible_categories": 13155,
+    "chapter_defaults": 23,
+    "rule_count": 62,
+    "all_selectors_resolve": true,
+    "all_rules_match_eligible_categories": true,
+    "existing_department_ids_only": true,
+    "no_weighted_sum_or_leaf_burden_fabricated": true,
+    "p3_assigned_by_rule": false
+  },
+  "rule_scope_review": [
+    {
+      "rule_id": "p0-acute-myocardial-infarction",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "BA41",
+          "title": "Acute myocardial infarction",
+          "uri": "http://id.who.int/icd/release/11/mms/1334938734"
+        },
+        {
+          "code": "BA42",
+          "title": "Subsequent myocardial infarction",
+          "uri": "http://id.who.int/icd/release/11/mms/993844371"
+        }
+      ],
+      "eligible_matches": 6
+    },
+    {
+      "rule_id": "p0-acute-stroke",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "8B00",
+          "title": "Intracerebral haemorrhage",
+          "uri": "http://id.who.int/icd/release/11/mms/873092535"
+        },
+        {
+          "code": "8B01",
+          "title": "Subarachnoid haemorrhage",
+          "uri": "http://id.who.int/icd/release/11/mms/1363253283"
+        },
+        {
+          "code": "8B11",
+          "title": "Cerebral ischaemic stroke",
+          "uri": "http://id.who.int/icd/release/11/mms/636274910"
+        },
+        {
+          "code": "8B20",
+          "title": "Stroke not known if ischaemic or haemorrhagic",
+          "uri": "http://id.who.int/icd/release/11/mms/1442995018"
+        }
+      ],
+      "eligible_matches": 27
+    },
+    {
+      "rule_id": "p0-sepsis",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Sepsis",
+          "uri": "http://id.who.int/icd/release/11/mms/293771399"
+        }
+      ],
+      "eligible_matches": 2
+    },
+    {
+      "rule_id": "p0-meningitis",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "1B53",
+          "title": "Meningitis due to Streptococcus",
+          "uri": "http://id.who.int/icd/release/11/mms/705971711"
+        },
+        {
+          "code": "1B54",
+          "title": "Meningitis due to Staphylococcus",
+          "uri": "http://id.who.int/icd/release/11/mms/1331660907"
+        },
+        {
+          "code": "1C1C.0",
+          "title": "Meningococcal meningitis",
+          "uri": "http://id.who.int/icd/release/11/mms/516585689"
+        },
+        {
+          "code": "1D01",
+          "title": "Infectious meningitis, not elsewhere classified",
+          "uri": "http://id.who.int/icd/release/11/mms/121670633"
+        },
+        {
+          "code": "1C8E",
+          "title": "Viral meningitis, not elsewhere classified",
+          "uri": "http://id.who.int/icd/release/11/mms/1358604969"
+        }
+      ],
+      "eligible_matches": 15
+    },
+    {
+      "rule_id": "p0-anaphylaxis",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "4A84",
+          "title": "Anaphylaxis",
+          "uri": "http://id.who.int/icd/release/11/mms/1868068711"
+        }
+      ],
+      "eligible_matches": 12
+    },
+    {
+      "rule_id": "p0-acute-pe",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "BB00.0",
+          "title": "Acute pulmonary thromboembolism",
+          "uri": "http://id.who.int/icd/release/11/mms/74279006"
+        }
+      ],
+      "eligible_matches": 1
+    },
+    {
+      "rule_id": "p0-aortic-dissection",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "BD50.0",
+          "title": "Thoracic aortic dissection, ascending aorta dissection and propagation beyond arch",
+          "uri": "http://id.who.int/icd/release/11/mms/1938903985"
+        },
+        {
+          "code": "BD50.1",
+          "title": "Ascending aorta dissection not beyond arch",
+          "uri": "http://id.who.int/icd/release/11/mms/1360167380"
+        },
+        {
+          "code": "BD50.2",
+          "title": "Descending aorta dissection and distal propagation",
+          "uri": "http://id.who.int/icd/release/11/mms/1719771306"
+        }
+      ],
+      "eligible_matches": 10
+    },
+    {
+      "rule_id": "p0-status-epilepticus",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "8A66",
+          "title": "Status epilepticus",
+          "uri": "http://id.who.int/icd/release/11/mms/906174792"
+        }
+      ],
+      "eligible_matches": 6
+    },
+    {
+      "rule_id": "p0-dka",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "5A22.0",
+          "title": "Diabetic ketoacidosis without coma",
+          "uri": "http://id.who.int/icd/release/11/mms/540530695"
+        },
+        {
+          "code": "5A22.3",
+          "title": "Diabetic ketoacidosis with coma",
+          "uri": "http://id.who.int/icd/release/11/mms/939674472"
+        }
+      ],
+      "eligible_matches": 2
+    },
+    {
+      "rule_id": "p0-retinal-detachment",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "9B73.0",
+          "title": "Retinal detachment with retinal break",
+          "uri": "http://id.who.int/icd/release/11/mms/2059145710"
+        },
+        {
+          "code": "9B73.3",
+          "title": "Serous retinal detachment",
+          "uri": "http://id.who.int/icd/release/11/mms/1801096327"
+        },
+        {
+          "code": "9B73.4",
+          "title": "Retinal breaks without detachment",
+          "uri": "http://id.who.int/icd/release/11/mms/236011795"
+        },
+        {
+          "code": "9B73.Y",
+          "title": "Other specified retinal detachments or breaks",
+          "uri": "http://id.who.int/icd/release/11/mms/357208479/other"
+        },
+        {
+          "code": "9B73.Z",
+          "title": "Retinal detachments or breaks, unspecified",
+          "uri": "http://id.who.int/icd/release/11/mms/357208479/unspecified"
+        }
+      ],
+      "eligible_matches": 5
+    },
+    {
+      "rule_id": "p0-testicular-torsion",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "GB01.0",
+          "title": "Torsion of testis",
+          "uri": "http://id.who.int/icd/release/11/mms/2141360941"
+        }
+      ],
+      "eligible_matches": 1
+    },
+    {
+      "rule_id": "p0-maternal-haemorrhage-eclampsia",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "JA43",
+          "title": "Postpartum haemorrhage",
+          "uri": "http://id.who.int/icd/release/11/mms/820245648"
+        },
+        {
+          "code": "JA25",
+          "title": "Eclampsia",
+          "uri": "http://id.who.int/icd/release/11/mms/1759760659"
+        }
+      ],
+      "eligible_matches": 12
+    },
+    {
+      "rule_id": "p0-puerperal-sepsis",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "JB40.0",
+          "title": "Puerperal sepsis",
+          "uri": "http://id.who.int/icd/release/11/mms/325070079"
+        }
+      ],
+      "eligible_matches": 1
+    },
+    {
+      "rule_id": "p0-neonatal-sepsis-asphyxia",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "KA60",
+          "title": "Sepsis of fetus or newborn",
+          "uri": "http://id.who.int/icd/release/11/mms/381388700"
+        },
+        {
+          "code": "KB21",
+          "title": "Birth asphyxia",
+          "uri": "http://id.who.int/icd/release/11/mms/848321559"
+        }
+      ],
+      "eligible_matches": 4
+    },
+    {
+      "rule_id": "p0-ards",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "CB00",
+          "title": "Acute respiratory distress syndrome",
+          "uri": "http://id.who.int/icd/release/11/mms/1189702844"
+        }
+      ],
+      "eligible_matches": 1
+    },
+    {
+      "rule_id": "p0-epiglottitis",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "CA06.1",
+          "title": "Acute epiglottitis",
+          "uri": "http://id.who.int/icd/release/11/mms/1070805666"
+        }
+      ],
+      "eligible_matches": 1
+    },
+    {
+      "rule_id": "p0-acute-appendicitis",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "DB10.0",
+          "title": "Acute appendicitis",
+          "uri": "http://id.who.int/icd/release/11/mms/40398753"
+        }
+      ],
+      "eligible_matches": 3
+    },
+    {
+      "rule_id": "p0-heatstroke",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "NF01.0",
+          "title": "Heat stroke",
+          "uri": "http://id.who.int/icd/release/11/mms/965393145"
+        },
+        {
+          "code": "NF06.0",
+          "title": "Exertional heat stroke",
+          "uri": "http://id.who.int/icd/release/11/mms/833004294"
+        }
+      ],
+      "eligible_matches": 2
+    },
+    {
+      "rule_id": "p0-cardiac-arrest",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "MC82",
+          "title": "Cardiac arrest",
+          "uri": "http://id.who.int/icd/release/11/mms/395422191"
+        }
+      ],
+      "eligible_matches": 6
+    },
+    {
+      "rule_id": "p0-asphyxiation",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "NF05",
+          "title": "Asphyxiation",
+          "uri": "http://id.who.int/icd/release/11/mms/607132843"
+        }
+      ],
+      "eligible_matches": 1
+    },
+    {
+      "rule_id": "p0-severe-dengue",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "1D22",
+          "title": "Severe dengue",
+          "uri": "http://id.who.int/icd/release/11/mms/56575149"
+        }
+      ],
+      "eligible_matches": 1
+    },
+    {
+      "rule_id": "p0-suicidal-ideation",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "MB26.A",
+          "title": "Suicidal ideation",
+          "uri": "http://id.who.int/icd/release/11/mms/778734771"
+        }
+      ],
+      "eligible_matches": 1
+    },
+    {
+      "rule_id": "p1-cancer-malignant",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Malignant neoplasms, except primary neoplasms of lymphoid, haematopoietic, central nervous system or related tissues",
+          "uri": "http://id.who.int/icd/release/11/mms/2009008947"
+        }
+      ],
+      "eligible_matches": 559
+    },
+    {
+      "rule_id": "p1-haematological-neoplasms",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": "2A20.0",
+          "title": "Chronic myelogenous leukaemia, BCR-ABL1-positive",
+          "uri": "http://id.who.int/icd/release/11/mms/1735009745"
+        },
+        {
+          "code": "2A20.1",
+          "title": "Chronic neutrophilic leukaemia",
+          "uri": "http://id.who.int/icd/release/11/mms/426734182"
+        },
+        {
+          "code": "2A20.3",
+          "title": "Chronic eosinophilic leukaemia, not elsewhere classified",
+          "uri": "http://id.who.int/icd/release/11/mms/1901756287"
+        },
+        {
+          "code": "2A21.00",
+          "title": "Mast cell leukaemia",
+          "uri": "http://id.who.int/icd/release/11/mms/1359806843"
+        },
+        {
+          "code": "2A40",
+          "title": "Chronic myelomonocytic leukaemia",
+          "uri": "http://id.who.int/icd/release/11/mms/2073226578"
+        },
+        {
+          "code": "2A41",
+          "title": "Atypical chronic myeloid leukaemia, BCR-ABL1-negative",
+          "uri": "http://id.who.int/icd/release/11/mms/331838766"
+        },
+        {
+          "code": "2A42",
+          "title": "Juvenile myelomonocytic leukaemia",
+          "uri": "http://id.who.int/icd/release/11/mms/1786015803"
+        },
+        {
+          "code": "2A60.0",
+          "title": "Acute myeloid leukaemia with recurrent genetic abnormalities",
+          "uri": "http://id.who.int/icd/release/11/mms/1430965006"
+        },
+        {
+          "code": "2A60.1",
+          "title": "Acute myeloid leukaemia with myelodysplasia-related changes",
+          "uri": "http://id.who.int/icd/release/11/mms/1235412948"
+        },
+        {
+          "code": "2A60.3",
+          "title": "Acute myeloid leukaemia, not elsewhere classified by criteria of other types",
+          "uri": "http://id.who.int/icd/release/11/mms/1611980611"
+        },
+        {
+          "code": "2A60.41",
+          "title": "Myeloid leukaemia associated with Down syndrome",
+          "uri": "http://id.who.int/icd/release/11/mms/1267231647"
+        },
+        {
+          "code": "2A61",
+          "title": "Acute leukaemias of ambiguous lineage",
+          "uri": "http://id.who.int/icd/release/11/mms/1062906118"
+        },
+        {
+          "code": "2A70",
+          "title": "Precursor B-lymphoblastic neoplasms",
+          "uri": "http://id.who.int/icd/release/11/mms/1099674056"
+        },
+        {
+          "code": "2A80.0",
+          "title": "Follicular lymphoma grade 1",
+          "uri": "http://id.who.int/icd/release/11/mms/305908598"
+        },
+        {
+          "code": "2A80.1",
+          "title": "Follicular lymphoma grade 2",
+          "uri": "http://id.who.int/icd/release/11/mms/2003830496"
+        },
+        {
+          "code": "2A80.2",
+          "title": "Follicular lymphoma grade 3",
+          "uri": "http://id.who.int/icd/release/11/mms/64837151"
+        },
+        {
+          "code": "2A80.3",
+          "title": "Primary cutaneous follicle centre lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/77501812"
+        },
+        {
+          "code": "2A80.4",
+          "title": "Paediatric type follicular lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/293282687"
+        },
+        {
+          "code": "2A80.6",
+          "title": "Follicular lymphoma of small intestine",
+          "uri": "http://id.who.int/icd/release/11/mms/1792850491"
+        },
+        {
+          "code": "2A80.Y",
+          "title": "Other specified follicular lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/797822185/other"
+        },
+        {
+          "code": "2A80.Z",
+          "title": "Follicular lymphoma, unspecified",
+          "uri": "http://id.who.int/icd/release/11/mms/797822185/unspecified"
+        },
+        {
+          "code": "2A81.0",
+          "title": "Primary mediastinal large B-cell lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/950282079"
+        },
+        {
+          "code": "2A81.1",
+          "title": "Intravascular large B-cell lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/952730197"
+        },
+        {
+          "code": "2A81.2",
+          "title": "Plasmablastic lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/803046659"
+        },
+        {
+          "code": "2A81.4",
+          "title": "T-cell/histiocyte rich large B-cell lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/257833622"
+        },
+        {
+          "code": "2A81.5",
+          "title": "Primary diffuse large B-cell lymphoma of central nervous system",
+          "uri": "http://id.who.int/icd/release/11/mms/1029172881"
+        },
+        {
+          "code": "2A81.6",
+          "title": "Epstein-Barr Virus-positive diffuse large B-cell lymphoma of the elderly",
+          "uri": "http://id.who.int/icd/release/11/mms/407807101"
+        },
+        {
+          "code": "2A81.7",
+          "title": "Diffuse large B-cell lymphoma associated with chronic inflammation",
+          "uri": "http://id.who.int/icd/release/11/mms/42599396"
+        },
+        {
+          "code": "2A81.8",
+          "title": "ALK-positive large B-cell lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/2077559619"
+        },
+        {
+          "code": "2A81.9",
+          "title": "Primary effusion lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/697911710"
+        },
+        {
+          "code": "2A81.A",
+          "title": "Primary cutaneous diffuse large B-cell lymphoma, leg type",
+          "uri": "http://id.who.int/icd/release/11/mms/1418101362"
+        },
+        {
+          "code": "2A81.Y",
+          "title": "Other specified diffuse large B-cell lymphomas",
+          "uri": "http://id.who.int/icd/release/11/mms/1946973604/other"
+        },
+        {
+          "code": "2A81.Z",
+          "title": "Diffuse large B-cell lymphoma, not otherwise specified",
+          "uri": "http://id.who.int/icd/release/11/mms/1946973604/unspecified"
+        },
+        {
+          "code": "2A82.0",
+          "title": "Chronic lymphocytic leukaemia or small lymphocytic lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/1239211846"
+        },
+        {
+          "code": "2A82.1",
+          "title": "B-cell prolymphocytic leukaemia",
+          "uri": "http://id.who.int/icd/release/11/mms/1997215876"
+        },
+        {
+          "code": "2A82.2",
+          "title": "Hairy-cell leukaemia",
+          "uri": "http://id.who.int/icd/release/11/mms/82152208"
+        },
+        {
+          "code": "2A82.3",
+          "title": "Splenic B-cell lymphoma or leukaemia, unclassifiable",
+          "uri": "http://id.who.int/icd/release/11/mms/1475987117"
+        },
+        {
+          "code": "2A83.4",
+          "title": "Plasma cell leukaemia",
+          "uri": "http://id.who.int/icd/release/11/mms/2048216430"
+        },
+        {
+          "code": "2A84.Y",
+          "title": "Other specified malignant immunoproliferative diseases",
+          "uri": "http://id.who.int/icd/release/11/mms/702525006/other"
+        },
+        {
+          "code": "2A85.0",
+          "title": "Nodal marginal zone lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/1720785883"
+        },
+        {
+          "code": "2A85.1",
+          "title": "Extranodal marginal zone B-cell lymphoma of mucosa-associated lymphoid tissue of stomach",
+          "uri": "http://id.who.int/icd/release/11/mms/1168698390"
+        },
+        {
+          "code": "2A85.2",
+          "title": "Extranodal marginal zone B-cell lymphoma, primary site skin",
+          "uri": "http://id.who.int/icd/release/11/mms/745285555"
+        },
+        {
+          "code": "2A85.3",
+          "title": "Extranodal marginal zone B-cell lymphoma, primary site excluding stomach or skin",
+          "uri": "http://id.who.int/icd/release/11/mms/964482216"
+        },
+        {
+          "code": "2A85.4",
+          "title": "Lymphoplasmacytic lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/2058944823"
+        },
+        {
+          "code": "2A85.5",
+          "title": "Mantle cell lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/1804127841"
+        },
+        {
+          "code": "2A85.6",
+          "title": "Burkitt lymphoma including Burkitt leukaemia",
+          "uri": "http://id.who.int/icd/release/11/mms/2100138081"
+        },
+        {
+          "code": "2A86",
+          "title": "B-cell lymphoma, mixed features",
+          "uri": "http://id.who.int/icd/release/11/mms/1592172566"
+        },
+        {
+          "code": "2A90.0",
+          "title": "T-cell prolymphocytic leukaemia",
+          "uri": "http://id.who.int/icd/release/11/mms/352523899"
+        },
+        {
+          "code": "2A90.1",
+          "title": "T-cell large granular lymphocytic leukaemia",
+          "uri": "http://id.who.int/icd/release/11/mms/83430037"
+        },
+        {
+          "code": "2A90.3",
+          "title": "Aggressive NK cell leukaemia",
+          "uri": "http://id.who.int/icd/release/11/mms/153957345"
+        },
+        {
+          "code": "2A90.4",
+          "title": "Systemic Epstein-Barr Virus-positive T-cell lymphoma of childhood",
+          "uri": "http://id.who.int/icd/release/11/mms/1052643999"
+        },
+        {
+          "code": "2A90.5",
+          "title": "Adult T-cell lymphoma or leukaemia, human T-cell lymphotropic virus type 1-associated",
+          "uri": "http://id.who.int/icd/release/11/mms/1638811270"
+        },
+        {
+          "code": "2A90.6",
+          "title": "Extranodal NK/T-cell lymphoma, nasal type",
+          "uri": "http://id.who.int/icd/release/11/mms/684005900"
+        },
+        {
+          "code": "2A90.7",
+          "title": "Enteropathy associated T-cell lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/958629729"
+        },
+        {
+          "code": "2A90.8",
+          "title": "Hepatosplenic T-cell lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/1301206942"
+        },
+        {
+          "code": "2A90.9",
+          "title": "Angioimmunoblastic T-cell lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/1254954229"
+        },
+        {
+          "code": "2A90.A",
+          "title": "Anaplastic large cell lymphoma, ALK-positive",
+          "uri": "http://id.who.int/icd/release/11/mms/589245621"
+        },
+        {
+          "code": "2A90.B",
+          "title": "Anaplastic large cell lymphoma, ALK-negative",
+          "uri": "http://id.who.int/icd/release/11/mms/1179967777"
+        },
+        {
+          "code": "2A90.C",
+          "title": "Peripheral T-cell lymphoma, not otherwise specified",
+          "uri": "http://id.who.int/icd/release/11/mms/855224800"
+        },
+        {
+          "code": "2B00",
+          "title": "Subcutaneous panniculitis-like T-cell lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/1550338805"
+        },
+        {
+          "code": "2B03.0",
+          "title": "Primary cutaneous CD30-positive anaplastic large cell lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/1972636482"
+        },
+        {
+          "code": "2B0Z",
+          "title": "Primary cutaneous T-cell lymphoma of undetermined or unspecified type",
+          "uri": "http://id.who.int/icd/release/11/mms/1998421548/unspecified"
+        },
+        {
+          "code": "2B30",
+          "title": "Hodgkin lymphoma",
+          "uri": "http://id.who.int/icd/release/11/mms/1528863768"
+        },
+        {
+          "code": "2B33",
+          "title": "Malignant haematopoietic neoplasms without further specification",
+          "uri": "http://id.who.int/icd/release/11/mms/1510618119"
+        }
+      ],
+      "eligible_matches": 104
+    },
+    {
+      "rule_id": "p1-cns-neoplasms",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": "2A00.00",
+          "title": "Glioblastoma of brain",
+          "uri": "http://id.who.int/icd/release/11/mms/650534447"
+        },
+        {
+          "code": "2A00.10",
+          "title": "Medulloblastoma of brain",
+          "uri": "http://id.who.int/icd/release/11/mms/290815825"
+        },
+        {
+          "code": "2A01.00",
+          "title": "Primary malignant meningioma",
+          "uri": "http://id.who.int/icd/release/11/mms/1478862889"
+        },
+        {
+          "code": "2A02.00",
+          "title": "Glioblastoma of spinal cord, cranial or paraspinal nerves",
+          "uri": "http://id.who.int/icd/release/11/mms/536502490"
+        },
+        {
+          "code": "2A02.10",
+          "title": "Malignant peripheral nerve sheath tumour of cranial or paraspinal nerves",
+          "uri": "http://id.who.int/icd/release/11/mms/71413945"
+        },
+        {
+          "code": "2A02.12",
+          "title": "Malignant neoplasm of the optic nerve",
+          "uri": "http://id.who.int/icd/release/11/mms/1830847427"
+        }
+      ],
+      "eligible_matches": 6
+    },
+    {
+      "rule_id": "p1-hypertension",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Hypertensive diseases",
+          "uri": "http://id.who.int/icd/release/11/mms/924915526"
+        }
+      ],
+      "eligible_matches": 13
+    },
+    {
+      "rule_id": "p1-ischaemic-heart",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Ischaemic heart diseases",
+          "uri": "http://id.who.int/icd/release/11/mms/1964269418"
+        }
+      ],
+      "eligible_matches": 37
+    },
+    {
+      "rule_id": "p1-diabetes",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Diabetes mellitus",
+          "uri": "http://id.who.int/icd/release/11/mms/465177735"
+        }
+      ],
+      "eligible_matches": 28
+    },
+    {
+      "rule_id": "p1-chronic-respiratory",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": "CA22",
+          "title": "Chronic obstructive pulmonary disease",
+          "uri": "http://id.who.int/icd/release/11/mms/133207228"
+        },
+        {
+          "code": "CA23",
+          "title": "Asthma",
+          "uri": "http://id.who.int/icd/release/11/mms/1656445230"
+        }
+      ],
+      "eligible_matches": 15
+    },
+    {
+      "rule_id": "p1-pneumonia",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": "CA40",
+          "title": "Pneumonia",
+          "uri": "http://id.who.int/icd/release/11/mms/142052508"
+        }
+      ],
+      "eligible_matches": 22
+    },
+    {
+      "rule_id": "p1-kidney-disease",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": "GB60",
+          "title": "Acute kidney failure",
+          "uri": "http://id.who.int/icd/release/11/mms/476391827"
+        },
+        {
+          "code": "GB61",
+          "title": "Chronic kidney disease",
+          "uri": "http://id.who.int/icd/release/11/mms/412389819"
+        }
+      ],
+      "eligible_matches": 12
+    },
+    {
+      "rule_id": "p1-dementia",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Dementia",
+          "uri": "http://id.who.int/icd/release/11/mms/546689346"
+        }
+      ],
+      "eligible_matches": 4
+    },
+    {
+      "rule_id": "p1-mental-health",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Mood disorders",
+          "uri": "http://id.who.int/icd/release/11/mms/76398729"
+        },
+        {
+          "code": null,
+          "title": "Anxiety or fear-related disorders",
+          "uri": "http://id.who.int/icd/release/11/mms/1336943699"
+        },
+        {
+          "code": null,
+          "title": "Schizophrenia or other primary psychotic disorders",
+          "uri": "http://id.who.int/icd/release/11/mms/405565289"
+        },
+        {
+          "code": null,
+          "title": "Disorders due to substance use",
+          "uri": "http://id.who.int/icd/release/11/mms/590211325"
+        }
+      ],
+      "eligible_matches": 459
+    },
+    {
+      "rule_id": "p1-epilepsy",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Epilepsy or seizures",
+          "uri": "http://id.who.int/icd/release/11/mms/1397288146"
+        }
+      ],
+      "eligible_matches": 74
+    },
+    {
+      "rule_id": "p1-musculoskeletal",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Osteoarthritis",
+          "uri": "http://id.who.int/icd/release/11/mms/558562409"
+        },
+        {
+          "code": "FA20",
+          "title": "Rheumatoid arthritis",
+          "uri": "http://id.who.int/icd/release/11/mms/576319925"
+        },
+        {
+          "code": "FB83.1",
+          "title": "Osteoporosis",
+          "uri": "http://id.who.int/icd/release/11/mms/2113001430"
+        }
+      ],
+      "eligible_matches": 29
+    },
+    {
+      "rule_id": "p1-low-back-pain",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": "ME84.2",
+          "title": "Low back pain",
+          "uri": "http://id.who.int/icd/release/11/mms/1815305992"
+        }
+      ],
+      "eligible_matches": 3
+    },
+    {
+      "rule_id": "p1-oral-health",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": "DA08.0",
+          "title": "Dental caries",
+          "uri": "http://id.who.int/icd/release/11/mms/1983306720"
+        },
+        {
+          "code": "DA0C",
+          "title": "Periodontal disease",
+          "uri": "http://id.who.int/icd/release/11/mms/1171555810"
+        }
+      ],
+      "eligible_matches": 12
+    },
+    {
+      "rule_id": "p1-vision",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": "9B10",
+          "title": "Cataract",
+          "uri": "http://id.who.int/icd/release/11/mms/109841337"
+        },
+        {
+          "code": "9B71.0",
+          "title": "Diabetic retinopathy",
+          "uri": "http://id.who.int/icd/release/11/mms/1006882070"
+        },
+        {
+          "code": "9B75.0",
+          "title": "Age-related macular degeneration",
+          "uri": "http://id.who.int/icd/release/11/mms/1514301548"
+        },
+        {
+          "code": "9C61",
+          "title": "Glaucoma",
+          "uri": "http://id.who.int/icd/release/11/mms/499924848"
+        },
+        {
+          "code": null,
+          "title": "Disorders of refraction or accommodation",
+          "uri": "http://id.who.int/icd/release/11/mms/1266833063"
+        }
+      ],
+      "eligible_matches": 85
+    },
+    {
+      "rule_id": "p1-hearing",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": "AB50",
+          "title": "Congenital hearing impairment",
+          "uri": "http://id.who.int/icd/release/11/mms/1154032108"
+        },
+        {
+          "code": "AB51",
+          "title": "Acquired hearing impairment",
+          "uri": "http://id.who.int/icd/release/11/mms/500439897"
+        },
+        {
+          "code": "AB52",
+          "title": "Deafness not otherwise specified",
+          "uri": "http://id.who.int/icd/release/11/mms/947280473"
+        },
+        {
+          "code": "AB53",
+          "title": "Ototoxic hearing loss",
+          "uri": "http://id.who.int/icd/release/11/mms/953801031"
+        },
+        {
+          "code": "AB55",
+          "title": "Sudden idiopathic hearing loss",
+          "uri": "http://id.who.int/icd/release/11/mms/692012078"
+        },
+        {
+          "code": "AB56",
+          "title": "Hereditary hearing loss",
+          "uri": "http://id.who.int/icd/release/11/mms/703718321"
+        }
+      ],
+      "eligible_matches": 14
+    },
+    {
+      "rule_id": "p1-nutrition",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Undernutrition",
+          "uri": "http://id.who.int/icd/release/11/mms/1517885800"
+        },
+        {
+          "code": "5B81",
+          "title": "Obesity",
+          "uri": "http://id.who.int/icd/release/11/mms/149403041"
+        }
+      ],
+      "eligible_matches": 72
+    },
+    {
+      "rule_id": "p1-tuberculosis",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Tuberculosis",
+          "uri": "http://id.who.int/icd/release/11/mms/2072728114"
+        }
+      ],
+      "eligible_matches": 30
+    },
+    {
+      "rule_id": "p1-hiv-hepatitis-sti",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Human immunodeficiency virus disease",
+          "uri": "http://id.who.int/icd/release/11/mms/1000704511"
+        },
+        {
+          "code": null,
+          "title": "Viral hepatitis",
+          "uri": "http://id.who.int/icd/release/11/mms/985510409"
+        },
+        {
+          "code": null,
+          "title": "Predominantly sexually transmitted infections",
+          "uri": "http://id.who.int/icd/release/11/mms/1904876434"
+        }
+      ],
+      "eligible_matches": 100
+    },
+    {
+      "rule_id": "p1-vaccine-preventable",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": "1C12",
+          "title": "Whooping cough",
+          "uri": "http://id.who.int/icd/release/11/mms/2064398473"
+        },
+        {
+          "code": "1C13",
+          "title": "Tetanus",
+          "uri": "http://id.who.int/icd/release/11/mms/1793762788"
+        },
+        {
+          "code": "1C15",
+          "title": "Tetanus neonatorum",
+          "uri": "http://id.who.int/icd/release/11/mms/2085616610"
+        },
+        {
+          "code": "1C17",
+          "title": "Diphtheria",
+          "uri": "http://id.who.int/icd/release/11/mms/508032285"
+        },
+        {
+          "code": "1C81",
+          "title": "Acute poliomyelitis",
+          "uri": "http://id.who.int/icd/release/11/mms/588527933"
+        },
+        {
+          "code": "1C85",
+          "title": "Japanese encephalitis",
+          "uri": "http://id.who.int/icd/release/11/mms/961032639"
+        },
+        {
+          "code": "1D80",
+          "title": "Mumps",
+          "uri": "http://id.who.int/icd/release/11/mms/1208294714"
+        },
+        {
+          "code": "1F02",
+          "title": "Rubella",
+          "uri": "http://id.who.int/icd/release/11/mms/410022648"
+        },
+        {
+          "code": "1F03",
+          "title": "Measles",
+          "uri": "http://id.who.int/icd/release/11/mms/1826431497"
+        }
+      ],
+      "eligible_matches": 30
+    },
+    {
+      "rule_id": "p1-vector-borne",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Malaria",
+          "uri": "http://id.who.int/icd/release/11/mms/1439886552"
+        },
+        {
+          "code": null,
+          "title": "Dengue",
+          "uri": "http://id.who.int/icd/release/11/mms/1959883044"
+        }
+      ],
+      "eligible_matches": 17
+    },
+    {
+      "rule_id": "p1-covid",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": "RA01.0",
+          "title": "COVID-19, virus identified",
+          "uri": "http://id.who.int/icd/release/11/mms/1790791774"
+        },
+        {
+          "code": "RA01.1",
+          "title": "COVID-19, virus not identified",
+          "uri": "http://id.who.int/icd/release/11/mms/563410356"
+        }
+      ],
+      "eligible_matches": 2
+    },
+    {
+      "rule_id": "p1-maternity",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Pregnancy, childbirth or the puerperium",
+          "uri": "http://id.who.int/icd/release/11/mms/714000734"
+        }
+      ],
+      "eligible_matches": 451
+    },
+    {
+      "rule_id": "p1-perinatal",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Certain conditions originating in the perinatal period",
+          "uri": "http://id.who.int/icd/release/11/mms/1306203631"
+        }
+      ],
+      "eligible_matches": 533
+    },
+    {
+      "rule_id": "p1-developmental",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Developmental anomalies",
+          "uri": "http://id.who.int/icd/release/11/mms/223744320"
+        }
+      ],
+      "eligible_matches": 1129
+    },
+    {
+      "rule_id": "p1-harmful-substances",
+      "priority": "P1",
+      "selector_nodes": [
+        {
+          "code": "NE60",
+          "title": "Harmful effects of drugs, medicaments or biological substances, not elsewhere classified",
+          "uri": "http://id.who.int/icd/release/11/mms/1868408442"
+        },
+        {
+          "code": "NE61",
+          "title": "Harmful effects of or exposure to noxious substances, chiefly nonmedicinal as to source, not elsewhere classified",
+          "uri": "http://id.who.int/icd/release/11/mms/1119330136"
+        },
+        {
+          "code": "NE6Z",
+          "title": "Harmful effects of unspecified substance",
+          "uri": "http://id.who.int/icd/release/11/mms/1236563202/unspecified"
+        }
+      ],
+      "eligible_matches": 3
+    },
+    {
+      "rule_id": "p0-ectopic-pregnancy",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "JA01",
+          "title": "Ectopic pregnancy",
+          "uri": "http://id.who.int/icd/release/11/mms/1563334645"
+        }
+      ],
+      "eligible_matches": 5
+    },
+    {
+      "rule_id": "p0-sjs-ten",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "EB13",
+          "title": "Stevens-Johnson syndrome or toxic epidermal necrolysis",
+          "uri": "http://id.who.int/icd/release/11/mms/195467267"
+        },
+        {
+          "code": "EH63",
+          "title": "Stevens-Johnson syndrome or toxic epidermal necrolysis due to drug",
+          "uri": "http://id.who.int/icd/release/11/mms/1322710779"
+        }
+      ],
+      "eligible_matches": 6
+    },
+    {
+      "rule_id": "p0-sudden-hearing",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "AB55",
+          "title": "Sudden idiopathic hearing loss",
+          "uri": "http://id.who.int/icd/release/11/mms/692012078"
+        }
+      ],
+      "eligible_matches": 1
+    },
+    {
+      "rule_id": "p0-cauda-equina",
+      "priority": "P0",
+      "selector_nodes": [
+        {
+          "code": "8B40",
+          "title": "Cauda equina syndrome",
+          "uri": "http://id.who.int/icd/release/11/mms/1490265028"
+        }
+      ],
+      "eligible_matches": 1
+    },
+    {
+      "rule_id": "routing-female-genital",
+      "priority": "P2",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Diseases of the female genital system",
+          "uri": "http://id.who.int/icd/release/11/mms/585064432"
+        }
+      ],
+      "eligible_matches": 196
+    },
+    {
+      "rule_id": "routing-breast",
+      "priority": "P2",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Disorders of breast",
+          "uri": "http://id.who.int/icd/release/11/mms/1433201931"
+        }
+      ],
+      "eligible_matches": 15
+    },
+    {
+      "rule_id": "routing-kidney",
+      "priority": "P2",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Glomerular diseases",
+          "uri": "http://id.who.int/icd/release/11/mms/658360080"
+        },
+        {
+          "code": null,
+          "title": "Renal tubulo-interstitial diseases",
+          "uri": "http://id.who.int/icd/release/11/mms/1210263011"
+        },
+        {
+          "code": null,
+          "title": "Kidney failure",
+          "uri": "http://id.who.int/icd/release/11/mms/761526554"
+        },
+        {
+          "code": null,
+          "title": "Cystic or dysplastic kidney disease",
+          "uri": "http://id.who.int/icd/release/11/mms/854539401"
+        }
+      ],
+      "eligible_matches": 54
+    },
+    {
+      "rule_id": "routing-dentistry",
+      "priority": "P2",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Diseases or disorders of orofacial complex",
+          "uri": "http://id.who.int/icd/release/11/mms/1167594753"
+        }
+      ],
+      "eligible_matches": 163
+    },
+    {
+      "rule_id": "routing-colorectal",
+      "priority": "P2",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Diseases of anal canal",
+          "uri": "http://id.who.int/icd/release/11/mms/1305923085"
+        }
+      ],
+      "eligible_matches": 34
+    },
+    {
+      "rule_id": "routing-nutrition",
+      "priority": "P2",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Nutritional disorders",
+          "uri": "http://id.who.int/icd/release/11/mms/1671987290"
+        }
+      ],
+      "eligible_matches": 95
+    },
+    {
+      "rule_id": "routing-genetic-metabolism",
+      "priority": "P2",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Inborn errors of metabolism",
+          "uri": "http://id.who.int/icd/release/11/mms/733825440"
+        }
+      ],
+      "eligible_matches": 159
+    },
+    {
+      "rule_id": "routing-burns",
+      "priority": "P2",
+      "selector_nodes": [
+        {
+          "code": null,
+          "title": "Burns",
+          "uri": "http://id.who.int/icd/release/11/mms/163532889"
+        }
+      ],
+      "eligible_matches": 67
+    },
+    {
+      "rule_id": "routing-allergy",
+      "priority": "P2",
+      "selector_nodes": [
+        {
+          "code": "4A8Y",
+          "title": "Allergic or hypersensitivity conditions of other specified type",
+          "uri": "http://id.who.int/icd/release/11/mms/642618805/other"
+        },
+        {
+          "code": "4A8Z",
+          "title": "Allergic or hypersensitivity conditions of unspecified type",
+          "uri": "http://id.who.int/icd/release/11/mms/642618805/unspecified"
+        }
+      ],
+      "eligible_matches": 2
+    }
+  ],
+  "independent_review": {
+    "status": "passed_after_targeted_fixes",
+    "reviewer": "/root/retinal_targeted",
+    "report": "reports/icd-priority-adversarial-review.json",
+    "reviewed_initial_rules_sha256": "71406f7e62ec7dd16d623cbf138215016210550da64550fb4a0bd9e1b081637e",
+    "targeted_changes": [
+      "取消中枢和血液混合父级P1继承，保留已核对恶性/白血病/淋巴瘤节点。",
+      "补9B73.4/.Y/.Z警讯鉴别编辑P0，保留稳定低危裂孔可观察条件；9B73.1/.2未升级。"
+    ],
+    "report_sha256": "c66a65f74e1dedb3276ec9f2255ed22409de326ad5d58c40fb7eca40213bab5b",
+    "rules_sha256": "d44d7418aa6a898e297365b0372aefcc8bd44da1e1069b0f78f84a42c2c8103e",
+    "open_findings": 0
+  },
+  "access_limitations": [
+    {
+      "url": "https://www.nice.org.uk/guidance/cg100/chapter/Recommendations",
+      "status": "403",
+      "consequence": "未作为已读证据，不新增严重酒精戒断专门P0规则。"
+    }
+  ]
+}

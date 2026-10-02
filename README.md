@@ -6,7 +6,7 @@
 
 [GitHub 仓库](https://github.com/StarlightDamian/knowledge-healthcare) · [个人主页入口](https://www.zengyuwei.cn/home/)
 
-[English](README.en.md) · [本地网页](index.html) · [正文标准](docs/content-depth-standard.md) · [覆盖审计与补充计划](docs/coverage-audit-and-roadmap.md) · [使用/部署](docs/deployment.md) · [证据政策](docs/evidence-policy.md) · [本批验证与发布记录](reports/batch-01-pe-retinal-release-validation.json)
+[English](README.en.md) · [本地网页](index.html) · [正文标准](docs/content-depth-standard.md) · [覆盖审计与补充计划](docs/coverage-audit-and-roadmap.md) · [使用/部署](docs/deployment.md) · [证据政策](docs/evidence-policy.md) · [本批验证与发布记录](reports/batch-01-pe-retinal-release-validation.json) · [全部病症优先清单](docs/icd-priorities/index.md)
 
 ## 已经可以做什么
 
@@ -36,7 +36,7 @@
 | 全生命周期 | 8 组、20 个中英健康因素；6 个年龄段与孕产附加情境引用共用因素 |
 | 扩充清单 | **193** 个仅标题待办，与完整正文分开统计 |
 | 医学签审 / 完成逐项编辑核验的主题 | **0 / 5**；睡眠呼吸暂停、睾丸扭转、心肌梗死、肺栓塞与视网膜脱离合计70节、321项中英主张通过来源核验和独立对抗审阅 |
-| 95% 全病种覆盖 | ICD-11 MMS 2026-01：冻结13,155个合格类别；完整证据核验覆盖8 / 13,155（约0.060813%），剩余13,147类，未达95%；8条语义映射确认、5条部分映射、47条待裁定映射 |
+| 全病种覆盖目标 | ICD-11 MMS 2026-01：冻结13,155个合格类别；完整证据核验覆盖8 / 13,155（约0.060813%），剩余13,147类；最终目标100%，95%为阶段里程碑；8条语义映射确认、5条部分映射、47条待裁定映射 |
 
 独立医学审阅、译文审核与危险提示规则的临床验证待完成。网页通过“内容与来源说明”和详情末尾的“来源与编辑信息”集中展示状态，每节保留参考链接。高级专业数据（如患病率、定量预后和地区药品批准）待整理，标为 `null / not_yet_curated`。
 
@@ -44,9 +44,9 @@
 
 新增确认的叶类别为心肌梗死 BA41.0／BA41.1／BA41.Z、肺栓塞 BB00.0、视网膜脱离 9B73.0／9B73.3。其余范围及具体缺口见 [心梗分类裁定](reports/batch-01-mi-icd-scope-review.json) 和 [肺栓塞／视网膜脱离分类裁定](reports/batch-01-pe-retinal-icd-scope-review.json)；原10项急危重优先清单仍缺6篇通过核验的独立正文。核验来源的共同依据和地区差异见 [独立审阅记录](reports/batch-01-osa-independent.json)。
 
-已保存 [文案审查记录](reports/anti-defensive-writing-audit.md) 和 [冻结目录覆盖数据](reports/icd-coverage.json)。新增病种按冻结目录、急危重症、常见病症、其余类别和95%复核的顺序推进。
+已保存 [文案审查记录](reports/anti-defensive-writing-audit.md) 和 [冻结目录覆盖数据](reports/icd-coverage.json)。新增病种按冻结目录、急危重症、常见病症、其余类别、95%阶段复核和100%终点验收的顺序推进。完整目录逐项列于[专业优先清单](docs/icd-priorities/index.md)，可[下载全量CSV](reports/icd-priorities.csv)。
 
-两份研究报告的整理与重新核对见 [癌症导入记录](reports/research-cancer-import.md) 和 [生命周期导入记录](reports/research-lifecycle-import.md)。新增地图单元单独统计，不作为新增完整病症或ICD映射计入95%覆盖率。来源逐节定位，统计数值保留年份、地区和适用范围。
+两份研究报告的整理与重新核对见 [癌症导入记录](reports/research-cancer-import.md) 和 [生命周期导入记录](reports/research-lifecycle-import.md)。新增地图单元单独统计，不作为新增完整病症或ICD映射计入病种覆盖率。来源逐节定位，统计数值保留年份、地区和适用范围。
 
 ## 使用
 
@@ -61,6 +61,7 @@ python -m pip install -r requirements-runtime.txt -r requirements-dev.txt
 python -m src.guide validate
 python -m src.guide editorial-audit
 python -m src.guide coverage-icd
+python -m src.guide priorities-icd
 npm test
 python -m unittest discover -s tests -p "test_*.py"
 python -m src.guide content-audit

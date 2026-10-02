@@ -66,6 +66,9 @@ class BrowserTests(unittest.TestCase):
   self.page.click('#content-info-link')
   self.assertTrue(self.page.locator('#evidence-summary').is_visible())
   self.assertIn('0 个主题完成临床签审',self.page.locator('#evidence-summary').inner_text())
+  self.assertIn('最终目标为 100%',self.page.locator('#evidence-summary').inner_text())
+  self.assertIn('95% 为阶段里程碑',self.page.locator('#evidence-summary').inner_text())
+  expect(self.page.locator('#evidence-summary a[href$="/docs/icd-priorities/index.md"]')).to_be_visible()
  def test_database_failure_shows_error_and_keeps_emergency_rules(self):
   self.page.route('**/api/v1/**',lambda route:route.fulfill(status=503,json={'error':'unavailable'}))
   self.page.reload();self.page.wait_for_selector('#result-view[data-catalog-status="error"]')

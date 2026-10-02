@@ -7,8 +7,8 @@ MECE 在本项目是归档规则，不是声称疾病在生物学上互斥。优
 | 主目录 ID | 中文 | 当前条目 |
 |---|---|---:|
 | general | 全身与症状入口 | 5 |
-| respiratory | 呼吸系统 | 6 |
-| cardiovascular | 心血管 | 5 |
+| respiratory | 呼吸系统 | 8 |
+| cardiovascular | 心血管 | 6 |
 | gastrointestinal | 消化与肝胆胰 | 8 |
 | neurologic | 神经系统 | 5 |
 | mental_sleep | 精神心理与睡眠 | 3 |
@@ -16,18 +16,18 @@ MECE 在本项目是归档规则，不是声称疾病在生物学上互斥。优
 | hematologic_immune | 血液与系统性免疫 | 2 |
 | musculoskeletal | 肌骨与风湿 | 4 |
 | dermatologic | 皮肤毛发与甲 | 5 |
-| ophthalmic | 眼科 | 2 |
+| ophthalmic | 眼科 | 3 |
 | ent_oral | 耳鼻喉与口腔 | 5 |
-| renal_urinary | 肾脏与泌尿 | 4 |
+| renal_urinary | 肾脏与泌尿 | 5 |
 | reproductive_sexual | 生殖与性健康 | 3 |
 | pregnancy_puerperium | 妊娠与产后 | 3 |
 | injury_toxicology | 损伤中毒与环境 | 4 |
 | neoplastic | 肿瘤 | 2 |
 | other_rare_congenital | 先天遗传与其他 | 1 |
 
-## 本次 95% 的分母
+## 最终完整覆盖的分母
 
-本次目标采用 **ICD-11 MMS 2026-01 独立病症类别**，不是就诊量或人口需求权重。尚未取得完整冻结目录、纳入表与逐类映射，分母及实际覆盖率保持 `null`。同义词、跨科室归属、198 个待办标题都不能充当新增覆盖。正文进入分子需满足双语 14 维度内容标准、来源支持与有效类别映射；医学签审覆盖另行计算。纳入排除规则、风险及补充顺序见[覆盖审计与补充计划](coverage-audit-and-roadmap.md)。
+最终目标采用 **ICD-11 MMS 2026-01 全部13,155个合格独立病症类别**，达到100%才完成；95%是阶段里程碑。完整目录与纳入规则已经冻结，当前逐项核验覆盖8类，剩余13,147类。每类优先顺序见[完整清单](icd-priorities/index.md)。同义词、跨科室归属和193个待办标题不能充当新增覆盖。正文进入分子需满足双语 14 维度内容标准、来源支持与有效类别映射；医学签审覆盖另行计算。纳入排除规则、风险及补充顺序见[覆盖审计与补充计划](coverage-audit-and-roadmap.md)。
 
 页面按[大科与亚科配置](../data/department-groups.json)导航；下面保留的 18 个主目录是唯一归档维度，不等于左侧菜单层级。
 
@@ -35,7 +35,7 @@ MECE 在本项目是归档规则，不是声称疾病在生物学上互斥。优
 
 需求覆盖研究需要明确地区、人群、时间和场景下的真实信息需求。由独立人员裁定主题匹配及最低可用信息；高质量覆盖率为已审合格条目所覆盖的加权需求 / 全部合格抽样需求。这与本次 ICD 类别目标不同。
 
-疾病标题计数、ICD 实体计数、搜索 Top-10 命中、全部合成题通过，都不能证明人口需求95%覆盖。当前72正文与198待办独立记录，实际覆盖值为空。
+疾病标题计数、ICD 实体计数、搜索 Top-10 命中、全部合成题通过，都不能证明人口需求95%覆盖。当前77篇正文与193个标题待办独立记录；人口需求覆盖率仍未测定。
 
 CSV 输入字段为 `condition_id,weight,group,adjudicated,dataset_kind`。`dataset_kind=representative` 只能由实际采样方法证明，不能靠改字符串获得真实性。所有映射需 adjudicated=true，权重必须正且有限。未知主题留在分母；不允许丢弃难题来抬高分数。
 

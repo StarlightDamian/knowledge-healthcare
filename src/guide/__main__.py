@@ -24,6 +24,7 @@ def main(argv=None)->int:
     sub.add_parser('content-audit')
     sub.add_parser('editorial-audit')
     sub.add_parser('coverage-icd')
+    q=sub.add_parser('priorities-icd');q.add_argument('--check',action='store_true')
     sub.add_parser('db-migrate')
     q=sub.add_parser('db-import');q.add_argument('--git-commit',required=True);q.add_argument('--initial-baseline',action='store_true')
     for name in ('db-publish','db-rollback'):
@@ -53,6 +54,9 @@ def main(argv=None)->int:
         elif a.command=='coverage-icd':
             from .icd import coverage_icd
             result=coverage_icd(load(a.root),root=a.root)
+        elif a.command=='priorities-icd':
+            from .priorities import priorities_icd
+            result=priorities_icd(a.root,check=a.check)
         elif a.command=='verify':
             from .package import verify
             verify(a.root);result={'integrity':'passed','signature':'not_signed'}

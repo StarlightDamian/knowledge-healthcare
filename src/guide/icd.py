@@ -120,6 +120,38 @@ def load_icd(root: Path = ROOT) -> dict:
     return {'manifest': manifest, 'rules': rules, 'rows': rows}
 
 
+def load_chinese_titles(root: Path = ROOT, snapshot: dict | None = None) -> dict:
+    """Attach official same-release names only; never replace the frozen English tree."""
+    snapshot = load_icd(root) if snapshot is None else snapshot
+    filename = 'SimpleTabulation-ICD-11-MMS-zh-2026-01.zip'
+    blob = (Path(root) / 'data/icd' / filename).read_bytes()
+    digest = '8cb750a5c6feaabe9f1d6cf705aa5727b5867990ca48c1c85b20444ff0e370da'
+    if hashlib.sha256(blob).hexdigest() != digest:
+        raise ValidationError('Official Chinese ICD snapshot hash mismatch')
+    chinese_rows = [r for r in parse_tabulation(blob) if r['class_kind'] == 'category']
+    chinese = {r['code']: r for r in chinese_rows}
+    english = {r['code']: r for r in snapshot['rows'] if r['class_kind'] == 'category'}
+    if len(chinese) != len(chinese_rows) or set(chinese) != set(english):
+        raise ValidationError('Chinese and English ICD category inventories differ')
+    identity = ('foundation_uri', 'linearization_uri', 'chapter', 'is_leaf', 'is_residual')
+    for code, row in english.items():
+        if (row['decision'] == 'included' and not chinese[code]['title'].strip()) or any(chinese[code][k] != row[k] for k in identity):
+            raise ValidationError('Chinese ICD identity mismatch: ' + code)
+    parent_differences = [code for code in english if english[code]['parent_uri'] != chinese[code]['parent_uri']]
+    return {'titles': {code: row['title'] for code, row in chinese.items()},
+            'manifest': {'release': RELEASE, 'language': 'zh',
+                         'source_url': 'https://icdcdn.who.int/static/releasefiles/2026-01/SimpleTabulation-ICD-11-MMS-zh.zip',
+                         'download_page': 'https://icd.who.int/browse/2026-01/mms/zh',
+                         'source_link_label': '电子表格文件', 'accessed_at': '2026-10-02',
+                         'snapshot_file': filename, 'snapshot_sha256': digest, 'snapshot_bytes': len(blob),
+                         'category_count': len(chinese),
+                         'eligible_titles': sum(r['decision'] == 'included' for r in snapshot['rows']),
+                         'parent_discrepancy_codes': parent_differences,
+                         'alignment': 'Exact code, Foundation URI, MMS URI, chapter, leaf and residual flags; titles copied without translation.',
+                         'hierarchy': 'The existing frozen English tree alone defines inclusion and priority inheritance; Chinese parent differences do not change it.',
+                         'license_url': 'https://icd.who.int/en/docs/ICD11-license.pdf'}}
+
+
 def freeze_icd(root: Path = ROOT) -> dict:
     """Reproduce the frozen catalog from the checked official bytes and explicit rules."""
     folder = Path(root) / 'data/icd'
@@ -238,10 +270,16 @@ def coverage_icd(data: dict, root: Path = ROOT, mappings: list[dict] | None = No
     for chapter in chapters.values():
         chapter['fraction'] = chapter['covered'] / chapter['eligible']
     denominator = len(eligible)
+    policy = data['project']['coverage_target']
+    target, milestone = policy['target'], policy.get('milestone', policy['target'])
+    if not 0 < milestone <= target <= 1:
+        raise ValidationError('Invalid coverage target or milestone')
+    fraction = len(covered) / denominator
     return {'release': RELEASE, 'snapshot_sha256': snapshot['manifest']['snapshot_sha256'],
             'rules_sha256': snapshot['manifest']['rules_sha256'], 'denominator_frozen': True,
             'denominator': denominator, 'confirmed_categories': len(confirmed), 'covered_categories': len(covered),
-            'fraction': len(covered) / denominator, 'target': 0.95, 'target_met': len(covered) / denominator >= 0.95,
+            'fraction': fraction, 'target': target, 'target_met': fraction >= target,
+            'milestone': milestone, 'milestone_met': fraction >= milestone,
             'mapping_records': len(mappings), 'mapping_states': dict(Counter(m['status'] for m in mappings)),
             'chapters': chapters, 'catalog_decisions': dict(Counter(r['decision'] for r in rows)),
             'supplementary_chapter_26': dict(Counter(r['class_kind'] for r in rows if r['chapter'] == '26')),

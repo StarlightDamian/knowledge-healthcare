@@ -11,3 +11,7 @@
 版权与许可：International Classification of Diseases, Eleventh Revision (ICD-11), World Health Organization (WHO) 2019. [ICD-11](https://icd.who.int/browse11). Licensed under [CC BY-ND 3.0 IGO](https://creativecommons.org/licenses/by-nd/3.0/igo/). [WHO 数字版许可](https://icd.who.int/en/docs/ICD11-license.pdf)规定软件集成保留代码、标题和 URI，添加的字段须清楚标识；另行制作跨分类对照或翻译有单独许可要求。本项目不声称 WHO 认可本站。
 
 重现：调用 `guide.icd.freeze_icd()` 从已保存的官方 ZIP 和明确的规则重新生成目录；`load_icd()` 将重新解析 ZIP，核对原文件、规则、完整目录哈希及压缩目录内容，不能用手改数字替代目录。
+
+`SimpleTabulation-ICD-11-MMS-zh-2026-01.zip` 来自同版WHO中文浏览器“电子表格文件”链接；SHA-256为 `8cb750a5c6feaabe9f1d6cf705aa5727b5867990ca48c1c85b20444ff0e370da`。中文表的35,664个类别与英文表逐代码、Foundation URI、MMS URI、章节及叶级/残余属性一致，提供全部13,155个纳入项的官方中文名称。两份表有19个父级字段不同，仅附加中文名称，冻结英文树及分母保持不变。`load_chinese_titles()`每次重新验证原件及身份字段；详见[语言对齐记录](../../reports/icd-chinese-title-import.json)。
+
+`priorities.json` 是本站编辑优先规则和来源范围，不是WHO分类字段或临床分诊级别。`python -m src.guide priorities-icd`生成全量中英CSV、23章清单及执行队列，`--check`验证生成物与当前输入一致。每个合格类别均列出，已完整覆盖的类别退出待补队列；未知的专业判断保留未知。最终目标100%，95%为里程碑，正文资格仍由原有证据和语义映射门禁判断。
