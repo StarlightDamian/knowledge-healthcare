@@ -1,24 +1,24 @@
 {
   "reviewed_at": "2026-10-02",
   "decision": "95_percent_target_not_passed",
-  "measured": 0.00015203344735841885,
+  "measured": 0.0006081337894336754,
   "target": 0.95,
   "classification": "ICD-11 MMS",
   "release": "2026-01",
   "denominator": 13155,
   "snapshot_status": "frozen_verified_official_bytes",
-  "mapping_status": "48_pending_2_confirmed_2_partial",
+  "mapping_status": "47_pending_8_confirmed_5_partial",
   "counts": {
-    "existing_topics": 75,
-    "condition_topics": 70,
+    "existing_topics": 77,
+    "condition_topics": 72,
     "symptom_topics": 5,
-    "title_only_backlog": 195,
+    "title_only_backlog": 193,
     "topics_with_coding": 0,
-    "confirmed_category_mappings": 2,
+    "confirmed_category_mappings": 8,
     "clinically_reviewed_topics": 0,
-    "verified_sections": 42
+    "verified_sections": 70
   },
-  "scope": "当前75篇正文、195标题与56地图单元；正文、证据核验与ICD类别完整覆盖分别统计。",
+  "scope": "当前77篇正文、193标题与56地图单元；正文、证据核验与ICD类别完整覆盖分别统计。",
   "method": "逐项核对现有主题身份，列出缺少独立正文的已知病种；mentioned_in_topics 仅按所列术语检索中英 sections.text 的结果，不表示对应主题完整覆盖该病种。",
   "known_urgent_gaps": [
     {
@@ -68,6 +68,12 @@
           "sections": [
             "complications"
           ]
+        },
+        {
+          "id": "pulmonary-embolism",
+          "sections": [
+            "differentials"
+          ]
         }
       ],
       "matching_terms": [
@@ -76,7 +82,7 @@
         "myocardial infarction",
         "heart attack"
       ],
-      "conclusion": "独立正文90项双语主张已完成编辑交叉核验；BA41叶类别范围未完整确认，不增加覆盖分子。"
+      "conclusion": "90项双语主张已核验；BA41.0、BA41.1、BA41.Z逐类完整对应，旧梗死、再次梗死及特定并发症另列。"
     },
     {
       "names": {
@@ -84,10 +90,10 @@
         "en": "Pulmonary embolism"
       },
       "priority": "P1",
-      "dedicated_topic_ids": [],
-      "backlog_ids": [
-        "planned-019"
+      "dedicated_topic_ids": [
+        "pulmonary-embolism"
       ],
+      "backlog_ids": [],
       "mentioned_in_topics": [
         {
           "id": "chest-pain",
@@ -122,13 +128,19 @@
             "treatment",
             "complications"
           ]
+        },
+        {
+          "id": "myocardial-infarction",
+          "sections": [
+            "differentials"
+          ]
         }
       ],
       "matching_terms": [
         "肺栓塞",
         "pulmonary embolism"
       ],
-      "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
+      "conclusion": "55项双语主张已核验；急性BB00.0完整对应，慢性BB00.1及未特指BB00.Z仍为部分覆盖。"
     },
     {
       "names": {
@@ -192,7 +204,14 @@
       "backlog_ids": [
         "planned-031"
       ],
-      "mentioned_in_topics": [],
+      "mentioned_in_topics": [
+        {
+          "id": "myocardial-infarction",
+          "sections": [
+            "differentials"
+          ]
+        }
+      ],
       "matching_terms": [
         "主动脉夹层",
         "aortic dissection"
@@ -222,17 +241,17 @@
         "en": "Retinal detachment"
       },
       "priority": "P1",
-      "dedicated_topic_ids": [],
-      "backlog_ids": [
-        "planned-119"
+      "dedicated_topic_ids": [
+        "retinal-detachment"
       ],
+      "backlog_ids": [],
       "mentioned_in_topics": [],
       "matching_terms": [
         "视网膜脱离",
         "视网膜剥离",
         "retinal detachment"
       ],
-      "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
+      "conclusion": "68项双语主张已核验；9B73.0与9B73.3完整对应，孤立裂孔及残余类别仍按具体缺口补充。"
     },
     {
       "names": {
@@ -287,7 +306,7 @@
       "conclusion": "缺少通过核验的独立正文；其他主题提及与未发布草稿不计完整病种覆盖。"
     }
   ],
-  "remaining_list_status": "13,153个未完整类别保存于reports/icd-remaining-gaps.json.gz；急危重原始清单已有睾丸扭转及心肌梗死正文，后者类别范围尚未完整确认。",
+  "remaining_list_status": "13,147个未完整类别保存于reports/icd-remaining-gaps.json.gz；原10项急危重清单已有4篇独立核验正文，另外6篇继续补充。慢性肺栓塞与部分视网膜类别仍有明确知识或分类缺口。",
   "roadmap": "docs/coverage-audit-and-roadmap.md",
   "sources": [
     "https://icd.who.int/docs/icd-api/SupportedClassifications/",

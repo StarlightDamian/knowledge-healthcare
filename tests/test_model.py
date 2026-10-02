@@ -16,7 +16,7 @@ class ModelTests(unittest.TestCase):
  def setUpClass(cls):cls.data=load()
  def altered(self):return copy.deepcopy(self.data)
  def test_actual_counts(self):
-  r=validate(self.data,today=date(2026,10,2));self.assertEqual((r['conditions'],r['clinically_reviewed'],r['verified_sections']),(75,0,42));self.assertIsNone(r['daily_need_coverage'])
+  r=validate(self.data,today=date(2026,10,2));self.assertEqual((r['conditions'],r['clinically_reviewed'],r['verified_sections']),(77,0,70));self.assertIsNone(r['daily_need_coverage'])
  def test_clinical_build_blocked(self):
   with self.assertRaisesRegex(ValidationError,'clinical sign-off'):validate(self.data,'clinical')
  def test_duplicate_topic(self):
@@ -58,7 +58,7 @@ class ModelTests(unittest.TestCase):
  def test_rename_status_is_not_signoff(self):
   d=self.altered();c=d['conditions'][0];c['review']['status']='medically_reviewed';c['review']['medical_reviewed_at']='2026-09-29';c['clinical_region']='CN';self.assertRaises(ValidationError,validate,d)
  def test_overdue_drafts_warn(self):
-  r=validate(self.data,today=date(2027,1,1));self.assertEqual(len(r['warnings']),75)
+  r=validate(self.data,today=date(2027,1,1));self.assertEqual(len(r['warnings']),77)
  def test_missing_locale_key(self):
   d=self.altered();del d['locales']['fr']['strings']['sourceInfo'];self.assertRaises(ValidationError,validate,d)
  def test_script_json_escaping(self):
@@ -80,7 +80,7 @@ class ModelTests(unittest.TestCase):
   for x in ['2026-2-2','2026-02-30',None]:self.assertFalse(valid_date(x))
   self.assertTrue(valid_date('2026-02-02'))
  def test_backlog_not_implemented(self):
-  self.assertEqual(len(self.data['backlog']),195);self.assertTrue(all(not c['include_in_search'] and not c['include_in_coverage'] for c in self.data['backlog']))
+  self.assertEqual(len(self.data['backlog']),193);self.assertTrue(all(not c['include_in_search'] and not c['include_in_coverage'] for c in self.data['backlog']))
  def test_stable_hash(self):self.assertEqual(canonical_hash({'a':1,'b':2}),canonical_hash({'b':2,'a':1}))
  def test_medical_review_hash_tracks_content(self):
   c=copy.deepcopy(self.data['conditions'][0]);h=content_hash(c);c['sections']['diet']['text']['en']='Edited';self.assertNotEqual(content_hash(c),h)

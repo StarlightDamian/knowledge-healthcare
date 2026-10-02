@@ -1,0 +1,561 @@
+{
+  "schema_version": "1.0.0",
+  "report_id": "batch-01-retinal-review-fixes",
+  "role": "targeted_revision_author",
+  "author": "/root/retinal_finish",
+  "created_at": "2026-10-02",
+  "medical_reviewed": false,
+  "independent_acceptance": false,
+  "basis": {
+    "report": "reports\\batch-01-retinal-recheck.json",
+    "sha256": "24a345b0f3e2ee036cb680cf4818fab8c068674b52562c561da07cad5272bd4a",
+    "finding_ids": [
+      "RR01",
+      "RR02",
+      "RR03",
+      "RR04"
+    ]
+  },
+  "target": {
+    "id": "retinal-detachment",
+    "path": "drafts\\batch-01\\acute-symptom\\retinal-detachment.json",
+    "old_canonical_sha256": "8ec0d2376c5377d40ca7d749b47d5fae293c7f58929e0395b2ab45725a2325a8",
+    "new_canonical_sha256": "753bbceceadcee9a73466e46e412e39c52f88291012937fb63530c9ffb511d9f"
+  },
+  "finding_dispositions": [
+    {
+      "id": "RR01",
+      "author_action": "Added drug-class roles and separate pressure/cataract, infection and monitoring claims; no dose or universal course.",
+      "status": "implemented_pending_independent_check"
+    },
+    {
+      "id": "RR02",
+      "author_action": "Rebound six compound claims by actually-read components; changed detachment duration wording to prompt treatment.",
+      "status": "implemented_pending_independent_check"
+    },
+    {
+      "id": "RR03",
+      "author_action": "Added independent StatPearls cause-specific treatment; clarified noninfectious inflammation and immune-suppression term.",
+      "status": "implemented_pending_independent_check"
+    },
+    {
+      "id": "RR04",
+      "author_action": "Added ASRS sports authorship and AOA precise periodic-dilation passage plus modern RANZCO follow-up. Historical AOA adequacy explicitly remains for reviewer.",
+      "status": "implemented_with_disclosed_version_limit"
+    }
+  ],
+  "claim_changes": [
+    {
+      "id": "red_flags-3",
+      "section": "red_flags",
+      "change": "classification_or_binding",
+      "kind": "action",
+      "old_claim_sha256": "d03384d59daf9abd5ea2b74078b1f12a8b9a88eac573372d6a23974267a883f3",
+      "new_claim_sha256": "6262b202ff0c53122e29dd880df6bfd5427ac7b3bbe9dafcd41f7dcebe9ed8e3",
+      "bilingual_exact_substrings": true,
+      "components": [
+        {
+          "source_id": "b1-acute-retina-nhs",
+          "locator": "Recovery / Important: increasing pain, redness or blurriness after surgery (line62)",
+          "scope": "Direct retinal-operation warning and hospital/A&E action."
+        },
+        {
+          "source_id": "b1-acute-retina-moorfields-macular-gas",
+          "locator": "When to contact us immediately after surgery (lines129-137): worsening pain, sudden loss of vision, increasing redness",
+          "scope": "Shared postoperative vitrectomy warning context only. No macular-hole treatment efficacy, recovery duration or posture transferred."
+        }
+      ]
+    },
+    {
+      "id": "differentials-2",
+      "section": "differentials",
+      "change": "classification_or_binding",
+      "kind": "action",
+      "old_claim_sha256": "6f1debbe480c2d302cfab35379d821afadc67ccf6a0a94b3b43181640d14d2ac",
+      "new_claim_sha256": "a7aa192d8452521c4951c694ab820704f3125a263b73b6ce26c9e6b5d7fac120",
+      "bilingual_exact_substrings": true,
+      "components": [
+        {
+          "source_id": "b1-acute-retina-mayo-treatment",
+          "locator": "Diagnosis: delayed tear and new symptoms",
+          "scope": "Supports only the specific matched component at this locator; independent re-review remains pending."
+        },
+        {
+          "source_id": "b1-acute-retina-moorfields-floaters",
+          "locator": "Treatment: new onset floaters with flashes urgent assessment",
+          "scope": "Supports only the specific matched component at this locator; independent re-review remains pending."
+        },
+        {
+          "source_id": "b1-acute-retina-types-nei",
+          "locator": "Rhegmatogenous detachment: aging vitreous shrinkage, PVD and tears (line33)",
+          "scope": "Supports gel separation and age/tear mechanism; original Mayo/Moorfields sources cover examination action."
+        },
+        {
+          "source_id": "b1-acute-retina-nhs-floaters",
+          "locator": "Causes of floaters and flashes (line55)",
+          "scope": "Supports age-related gel/PVD explanation; urgent advice supports new symptoms. Does not itself describe every tear mechanism."
+        }
+      ]
+    },
+    {
+      "id": "differentials-4",
+      "section": "differentials",
+      "change": "classification_or_binding",
+      "kind": "explanation",
+      "old_claim_sha256": "c9608b77a4cf3bbbbaa5113993a1f26288bf9eeed32bd362983835da22ca5c92",
+      "new_claim_sha256": "64195fbfaa12df5dcac06d7c76835efca89198504bb7bc6fabf039e9ae7a1253",
+      "bilingual_exact_substrings": true,
+      "components": [
+        {
+          "source_id": "b1-acute-retina-nei-diabetes",
+          "locator": "What are the symptoms? paragraph2; Other problems: tractional detachment",
+          "scope": "Direct mechanism explanation; prior independent recheck classified this as explanation, without a new action, threshold or efficacy claim."
+        }
+      ]
+    },
+    {
+      "id": "treatment-3",
+      "section": "treatment",
+      "change": "classification_or_binding",
+      "kind": "benefit",
+      "old_claim_sha256": "4f7592e66d4d69f1d9d51cdb425c01893c004da4d0acac9420012574679e894b",
+      "new_claim_sha256": "4a73b357b575bb869c206af601cd92b386dc90a8ed086f2b2b875fc0a2dfac39",
+      "bilingual_exact_substrings": true,
+      "components": [
+        {
+          "source_id": "b1-acute-retina-surgery-nei",
+          "locator": "Pneumatic retinopexy and scleral buckle (lines32-52); vitrectomy details on linked dedicated page",
+          "scope": "Supports gas-repair and external-buckle components, not silicone oil."
+        },
+        {
+          "source_id": "b1-acute-retina-cuh-repair",
+          "locator": "Varieties of splint: External (line303) and Internal (line305)",
+          "scope": "External buckle and vitrectomy/internal gas or silicone-oil support; does not supply a universal operation choice."
+        },
+        {
+          "source_id": "b1-acute-retina-asrs",
+          "locator": "Treatment and prognosis: three procedures",
+          "scope": "Supports only the specific matched component at this locator; independent re-review remains pending."
+        },
+        {
+          "source_id": "b1-acute-retina-vitrectomy-nei",
+          "locator": "What happens during vitrectomy? (lines26-31)",
+          "scope": "Explicit gel removal and gas/air/oil substitution. CUH Internal splint independently supports gas/silicone-oil component."
+        }
+      ]
+    },
+    {
+      "id": "treatment-nontear",
+      "section": "treatment",
+      "change": "classification_or_binding",
+      "kind": "benefit",
+      "old_claim_sha256": "bcad52a46ae69cba53c48e24890093996355062f2317d78bd263e4b78a9b2431",
+      "new_claim_sha256": "643b9969dc9c8567cc94b651df8cc397e22119543812a2e0c353787feda5618e",
+      "bilingual_exact_substrings": true,
+      "components": [
+        {
+          "source_id": "b1-acute-retina-msd",
+          "locator": "Treatment: final nonrhegmatogenous paragraph",
+          "scope": "Supports only the specific matched component at this locator; independent re-review remains pending."
+        },
+        {
+          "source_id": "b1-acute-retina-nei-diabetes",
+          "locator": "Treatment: vitrectomy for bleeding/scars and diabetes control",
+          "scope": "Supports only the specific matched component at this locator; independent re-review remains pending."
+        },
+        {
+          "source_id": "b1-acute-retina-statpearls-exudative",
+          "locator": "Treatment/Management lines359-361,387-400 and Pearls lines445-453",
+          "scope": "Independent exudative therapy by cause: inflammation, abnormal vessels and tumors; not tractional treatment. MSD and NEI diabetic-retinopathy treatment cover tractional component."
+        }
+      ]
+    },
+    {
+      "id": "medications-3",
+      "section": "medications",
+      "change": "text_and_binding",
+      "kind": "action",
+      "old_claim_sha256": "c4a1596b2adcc132d36dc48db3f8e378a276b4317a1d88410eab59a03e26373c",
+      "new_claim_sha256": "ee482a773fd153e6a45a02addc4ee103fee38f1a474b012eebef25a93a68ddc0",
+      "bilingual_exact_substrings": true,
+      "components": [
+        {
+          "source_id": "b1-acute-retina-moorfields-macular-gas",
+          "locator": "After surgery: prescribed antibiotics and anti-inflammatory drops (line97)",
+          "scope": "Supports distinct postoperative roles in shared vitrectomy care; not a named steroid choice."
+        },
+        {
+          "source_id": "b1-acute-retina-nhs-dex-common",
+          "locator": "How do the drops work? lines14-18; combined antibiotic drops lines36-41",
+          "scope": "Supports steroid class and dexamethasone example, combined preparations, and infection prevention while healing after surgery."
+        },
+        {
+          "source_id": "b1-acute-retina-puradex-smpc",
+          "locator": "4.1 indications;5.1 pharmacodynamic class",
+          "scope": "Independent named-drug/class and anti-inflammatory role; no universal postoperative product indication inferred."
+        },
+        {
+          "source_id": "b1-acute-retina-cuh-repair",
+          "locator": "Eye drops / outpatient appointment (line325)",
+          "scope": "Team sets continuing drops and adjustments; no universal duration."
+        }
+      ]
+    },
+    {
+      "id": "medications-steroid-pressure",
+      "section": "medications",
+      "change": "added",
+      "kind": "risk",
+      "old_claim_sha256": null,
+      "new_claim_sha256": "79ae048e8f4abbeb55188e99537b7fa457b5ae2cd0fcbd8b89bfb002152b4785",
+      "bilingual_exact_substrings": true,
+      "components": [
+        {
+          "source_id": "b1-acute-retina-puradex-smpc",
+          "locator": "4.4 and4.8: pressure and cataract",
+          "scope": "Supports pressure risk and prolonged-use cataract; no incidence or fixed safe course."
+        },
+        {
+          "source_id": "b1-acute-retina-nhs-dex-risks",
+          "locator": "Serious side effects: pressure/glaucoma and cataract",
+          "scope": "Independent public information corroborates risk categories; duration qualifier comes from SmPC."
+        }
+      ]
+    },
+    {
+      "id": "medications-steroid-infection",
+      "section": "medications",
+      "change": "added",
+      "kind": "risk",
+      "old_claim_sha256": null,
+      "new_claim_sha256": "7572d5b73a825db5269d4d910c94be1c0b95865ecab570ca4d75917672b5de7e",
+      "bilingual_exact_substrings": true,
+      "components": [
+        {
+          "source_id": "b1-acute-retina-puradex-smpc",
+          "locator": "4.4: undiagnosed red eye and opportunistic infections (lines295-298)",
+          "scope": "Direct infection/aggravation risk and clinician assessment before use."
+        },
+        {
+          "source_id": "b1-acute-retina-moorfields-steroid-infection",
+          "locator": "Can steroid drops cause any complications?",
+          "scope": "Independent example of delayed clearing of an ocular infection; supports some-infections boundary, not all infections or retinal-detachment causation."
+        },
+        {
+          "source_id": "b1-acute-retina-ranzco-choosing-wisely",
+          "locator": "Recommendation9 (lines411-417)",
+          "scope": "Independent board-approved no-steroid-for-undiagnosed-red-eye action."
+        }
+      ]
+    },
+    {
+      "id": "medications-steroid-review",
+      "section": "medications",
+      "change": "added",
+      "kind": "action",
+      "old_claim_sha256": null,
+      "new_claim_sha256": "19658ab3472c2ed147e56f1de82b834f21f1eb430c1e7a5a1ae946765b62f2ea",
+      "bilingual_exact_substrings": true,
+      "components": [
+        {
+          "source_id": "b1-acute-retina-nhs-dex-use",
+          "locator": "How long to use eye drops: check-ups for pressure and infection",
+          "scope": "Direct monitoring purposes; no universal review interval."
+        },
+        {
+          "source_id": "b1-acute-retina-puradex-smpc",
+          "locator": "4.4: regular monitoring and infection precautions",
+          "scope": "Independent monitoring support; redness-alone clause explains why checks are needed."
+        }
+      ]
+    },
+    {
+      "id": "medications-exudative",
+      "section": "medications",
+      "change": "text_and_binding",
+      "kind": "benefit",
+      "old_claim_sha256": "460a2e8bddc8fa3ae56e1e9846911d8e0b0c58140c34a835bacf403bb177e20e",
+      "new_claim_sha256": "d5b9a51a054501d40c515647594773df64ca85bdc85c2ee54cd685274210eadb",
+      "bilingual_exact_substrings": true,
+      "components": [
+        {
+          "source_id": "b1-acute-retina-msd",
+          "locator": "Treatment: nonrhegmatogenous detachment from uveitis, systemic/local corticosteroid or systemic immunosuppression",
+          "scope": "Supports cause-specific inflammation treatment, not a regimen for all detachments."
+        },
+        {
+          "source_id": "b1-acute-retina-statpearls-exudative",
+          "locator": "Treatment/Management lines359-361: inflammatory VKH and posterior scleritis; immune suppression",
+          "scope": "Independent treatment and immune-response rationale. Narrowed to some noninfectious inflammation; infection-related cases require separate cause-specific care, not steroid self-treatment."
+        }
+      ]
+    },
+    {
+      "id": "prognosis_followup-1",
+      "section": "prognosis_followup",
+      "change": "text_and_binding",
+      "kind": "risk",
+      "old_claim_sha256": "c8c41b9479c4300be336cb1c4d193e1c982010448b0267c28a7d97423d9aaecd",
+      "new_claim_sha256": "356e98f3620ad560c73fb95c5733e69a0b8031050cb8edf42ac98b2a1de9d787",
+      "bilingual_exact_substrings": true,
+      "components": [
+        {
+          "source_id": "b1-acute-retina-asrs",
+          "locator": "Treatment and prognosis: macula and preoperative vision",
+          "scope": "Supports macular/preoperative vision components, not duration."
+        },
+        {
+          "source_id": "b1-acute-retina-moorfields",
+          "locator": "Further surgery (lines111-112, PVR/re-detachment/poorer result); Your vision after surgery (lines134-136)",
+          "scope": "Direct scarring-related poorer result plus baseline central vision and recovery limits; not a timing threshold."
+        },
+        {
+          "source_id": "b1-acute-retina-cleveland",
+          "locator": "Outlook / Prognosis: how soon treatment, initial vision and complications",
+          "scope": "Corroborates timing and preoperative vision, not every scar-specific detail."
+        },
+        {
+          "source_id": "b1-acute-retina-asrs-complex",
+          "locator": "Causes (lines50-54): scar contraction and PVR repair failure",
+          "scope": "Corroborates scar-related anatomical failure; does not quantify final acuity. General outcome wording covers both repair and sight."
+        }
+      ]
+    },
+    {
+      "id": "prognosis_followup-4",
+      "section": "prognosis_followup",
+      "change": "classification_or_binding",
+      "kind": "action",
+      "old_claim_sha256": "c2414952529effb32ed4c41a70f4f8ccfd590296c1a29a0c29f8e8648f8db269",
+      "new_claim_sha256": "4b1c8298496cfc38da00d54f5fb8c90b44ab8b835ed83db0287eb66b47320206",
+      "bilingual_exact_substrings": true,
+      "components": [
+        {
+          "source_id": "b1-acute-retina-vitrectomy-nei",
+          "locator": "How long does it take to recover? check vision/recovery",
+          "scope": "Supports only the specific matched component at this locator; independent re-review remains pending."
+        },
+        {
+          "source_id": "b1-acute-retina-cuh-repair",
+          "locator": "Eye drops / outpatient appointment",
+          "scope": "Supports only the specific matched component at this locator; independent re-review remains pending."
+        },
+        {
+          "source_id": "b1-acute-retina-nhs",
+          "locator": "Recovery / Important: increasing pain, redness or blurriness after surgery (line62)",
+          "scope": "Direct retinal-operation warning and hospital/A&E action."
+        },
+        {
+          "source_id": "b1-acute-retina-moorfields-macular-gas",
+          "locator": "When to contact us immediately after surgery (lines129-137): worsening pain, sudden loss of vision, increasing redness",
+          "scope": "Shared postoperative vitrectomy warning context only. No macular-hole treatment efficacy, recovery duration or posture transferred."
+        }
+      ]
+    },
+    {
+      "id": "complications-4",
+      "section": "complications",
+      "change": "classification_or_binding",
+      "kind": "action",
+      "old_claim_sha256": "ff1da67c5acee9b351a7ac8fccb73e4969a0bcde93cf1357a1c9d3a8b4c98073",
+      "new_claim_sha256": "e79f43baafc3f37157b08532f750e26c514dd4554765cb3184eea363e987b942",
+      "bilingual_exact_substrings": true,
+      "components": [
+        {
+          "source_id": "b1-acute-retina-nhs",
+          "locator": "Recovery / Important: increasing pain, redness or blurriness after surgery (line62)",
+          "scope": "Direct retinal-operation warning and hospital/A&E action."
+        },
+        {
+          "source_id": "b1-acute-retina-moorfields-macular-gas",
+          "locator": "When to contact us immediately after surgery (lines129-137): worsening pain, sudden loss of vision, increasing redness",
+          "scope": "Shared postoperative vitrectomy warning context only. No macular-hole treatment efficacy, recovery duration or posture transferred."
+        }
+      ]
+    },
+    {
+      "id": "prevention-1",
+      "section": "prevention",
+      "change": "classification_or_binding",
+      "kind": "explanation",
+      "old_claim_sha256": "1b0d06e834915f34abd9cc8516fe523b5b4f412719e2b7c72b53076f57f2d473",
+      "new_claim_sha256": "e3a8c76380af4bebd8c9dd58c96e0b948517974a240ab0d4f052dbd8114c57e0",
+      "bilingual_exact_substrings": true,
+      "components": [
+        {
+          "source_id": "b1-acute-retina-nei",
+          "locator": "Can I prevent retinal detachment?",
+          "scope": "Supports only the specific matched component at this locator; independent re-review remains pending."
+        }
+      ]
+    },
+    {
+      "id": "prevention-2",
+      "section": "prevention",
+      "change": "classification_or_binding",
+      "kind": "action",
+      "old_claim_sha256": "94dfba8cf05c106c3c6d0fc57970a3250cd6c3cf598eba2792d7c8748a4fe713",
+      "new_claim_sha256": "dff7c3199f02710a5637796f4e28d31590b23067d713f3b49132e867ca03ebe7",
+      "bilingual_exact_substrings": true,
+      "components": [
+        {
+          "source_id": "b1-acute-retina-nei",
+          "locator": "Can I prevent retinal detachment? (line73); Am I at risk? severe myopia",
+          "scope": "Direct sports protective-eyewear advice. High-myopia emphasis is a bounded application to an identified higher-risk group, not a measured greater protective effect."
+        },
+        {
+          "source_id": "b1-acute-retina-asrs-sports",
+          "locator": "PDF page2: reducing sports-related retinal injury risk, first two bullets",
+          "scope": "Independent sports protective-eyewear action; suitable equipment is a paraphrase of fit and shatterproof material. No myopia subgroup efficacy claim."
+        },
+        {
+          "source_id": "b1-acute-retina-asrs",
+          "locator": "Risk factors (line48): severe myopia",
+          "scope": "Independent support for high-myopia risk component only."
+        }
+      ]
+    },
+    {
+      "id": "prevention-3",
+      "section": "prevention",
+      "change": "classification_or_binding",
+      "kind": "action",
+      "old_claim_sha256": "2f550a2600d6bf0c08e87609765bd004995a1b6a15213f4b563adbfdf474c824",
+      "new_claim_sha256": "ea5d299bc22f12ca8bcf5e33a0374424aae706463faa32112d7df392c91c9149",
+      "bilingual_exact_substrings": true,
+      "components": [
+        {
+          "source_id": "b1-acute-retina-nei",
+          "locator": "Can I prevent retinal detachment? (line76); risk section past detachment/other eye disease",
+          "scope": "Direct regular dilated-exam principle and risk groups."
+        },
+        {
+          "source_id": "b1-acute-retina-nei-dilation",
+          "locator": "How often? (line25)",
+          "scope": "Frequency follows risks/findings; same NEI editorial group, not independent duplication."
+        },
+        {
+          "source_id": "b1-acute-retina-aoa-retinal-guideline",
+          "locator": "Printedpage27 / Early Detection and Prevention: at-risk patients, periodic dilated fundus examinations",
+          "scope": "Independent historical consensus supports periodic risk-related dilation. Reviewed2004, no numerical frequency or modern treatment rule imported."
+        },
+        {
+          "source_id": "b1-acute-retina-ranzco-choosing-wisely",
+          "locator": "Recommendation5 (lines377-390): at-risk counselling/follow-up",
+          "scope": "Modern specialist consensus corroborates follow-up principle; does not specify dilation frequency. AAO2014/shared literature disclosed."
+        }
+      ]
+    }
+  ],
+  "new_source_reads": [
+    {
+      "source_id": "b1-acute-retina-nhs-dex-common",
+      "url": "https://www.nhs.uk/medicines/dexamethasone-eye-drops/common-questions-about-dexamethasone-eye-drops/",
+      "read_status": "page_opened",
+      "location_and_limit": "How do the drops work? lines14-18; combined antibiotic drops lines36-41. Last reviewed2022-07-21, next review2025-07-21 is overdue. Used only for classes and postoperative prevention role; no dose or universal course."
+    },
+    {
+      "source_id": "b1-acute-retina-nhs-dex-use",
+      "url": "https://www.nhs.uk/medicines/dexamethasone-eye-drops/how-and-when-to-use-dexamethasone-eye-drops/",
+      "read_status": "page_opened",
+      "location_and_limit": "How long to use eye drops: check-ups for pressure and infection, clinician-directed adjustment. Last reviewed2022-07-21, next review2025-07-21 is overdue. Dosages and time intervals not imported."
+    },
+    {
+      "source_id": "b1-acute-retina-nhs-dex-risks",
+      "url": "https://www.nhs.uk/medicines/dexamethasone-eye-drops/side-effects-of-dexamethasone-eye-drops/",
+      "read_status": "page_opened",
+      "location_and_limit": "Serious side effects: increased eye pressure/glaucoma and cataract; common irritation and blur. Last reviewed2022-07-21, next review2025-07-21 is overdue. No risk frequency or patient-specific stopping instruction imported."
+    },
+    {
+      "source_id": "b1-acute-retina-puradex-smpc",
+      "url": "https://www.medicines.org.uk/emc/product/14753/smpc",
+      "read_status": "page_opened",
+      "location_and_limit": "SmPC4.1 noninfectious anterior inflammation;4.4 monitoring, undiagnosed red eye, pressure/cataract and infection;5.1 corticosteroid action. Text revised2024-08-16, emc2024-09-02. General class explanation only; no worldwide approval, formulation-specific frequency, dose, course, pediatric or pregnancy regimen inferred."
+    },
+    {
+      "source_id": "b1-acute-retina-statpearls-exudative",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK589701/",
+      "read_status": "page_opened",
+      "location_and_limit": "Treatment/Management lines357-403: cause-specific care; inflammatory disease immunosuppression; abnormal vessels and tumors. Read author/update metadata. NCBI hosts this independently authored review, not an NIH guideline. /books path showed captcha; public /sites/books path returned article. No doses or disputed disease-specific regimens imported."
+    },
+    {
+      "source_id": "b1-acute-retina-asrs-sports",
+      "url": "https://www.asrs.org/content/documents/sports-safety-for-retina-health-patient-guide-final.pdf",
+      "read_status": "search_text_retrieved",
+      "location_and_limit": "Official indexed PDF page2 of2: protective eyewear, suitable fit/shatterproof material; retinal injury types and named authors. Direct PDF open failed in web tool, actual indexed page read. No verified publication date or comparative benefit for high myopia supplied."
+    },
+    {
+      "source_id": "b1-acute-retina-aoa-retinal-guideline",
+      "url": "https://www.aoa.org/AOA/Documents/Practice%20Management/Clinical%20Guidelines/Consensus-based%20guidelines/Care%20of%20Patient%20with%20Retinal%20Detachment%20and%20Peripheral%20Vitreotretinal%20Disease.pdf",
+      "read_status": "search_text_retrieved",
+      "location_and_limit": "Official indexed PDF printedpage27 Early Detection and Prevention: periodic dilated fundus exams in at-risk patients. Title page and current AOA listing confirm1995/revised1999/reviewed2004. Direct PDF open failed; exact indexed passage read. Historical corroboration only, alongside NEI current advice and RANZCO2026 follow-up principle; no numeric exam schedule imported."
+    },
+    {
+      "source_id": "b1-acute-retina-ranzco-choosing-wisely",
+      "url": "https://ranzco.edu/home/community-engagement/choosing-wisely/",
+      "read_status": "page_opened",
+      "location_and_limit": "Recommendation9 lines411-417: undiagnosed red eye and topical steroids; recommendation5 lines377-390: at-risk counselling/follow-up and limits of prophylactic treatment. Underlying literature includes AAO2014 and ophthalmology studies; not an independent trial. No new laser rule or efficacy estimate imported."
+    },
+    {
+      "source_id": "b1-acute-retina-moorfields-steroid-infection",
+      "url": "https://www.moorfields.nhs.uk/eye-conditions/acanthamoeba-keratitis/diagnosis-and-treatment",
+      "read_status": "search_text_retrieved",
+      "location_and_limit": "Eye drops and other medicines / Can steroid drops cause any complications?: delayed infection clearing, cataract and pressure; treatment section describes careful specialist use. Only corroborates that steroids can aggravate some ocular infections; AK regimen, outcomes and old licensing statements are not transferred. Actual official indexed article read."
+    }
+  ],
+  "classification_notes": [
+    "New medication risk and review sentences have separate risk/action claims; class roles remain benefit context.",
+    "treatment-nontear retains a compound paragraph with separate tractional MSD/NEI and exudative MSD/StatPearls bindings.",
+    "differentials-4 is an ordinary mechanism explanation per prior independent recheck; no action or threshold reclassified to evade a gate.",
+    "High-myopia protection is bounded application of sports protection to an independently supported risk group, not a subgroup effect estimate.",
+    "Earlier OCT/history/practical-help/same-gas-context gaps were closed by the immutable recheck; no repeat literature audit or self-acceptance."
+  ],
+  "licence_and_evidence": [
+    "No restricted source full text copied. EyeWiki/ADAM licence/access issues remain separate from medical support; no new readings claimed for them.",
+    "Source schema unchanged. NHS medicines review dates overdue; corroborated with product label and college/hospital evidence.",
+    "AOA2004 is not presented as a current guideline. Direct PDF failure and indexed exact-page access are distinguished.",
+    "ASRS sports page is independently authored; NCBI hosting does not turn StatPearls into NIH guidance."
+  ],
+  "unresolved_items": [
+    {
+      "id": "prevention-3-source-age",
+      "detail": "Author supplied historical AOA2004 exact periodic-dilation support plus current NEI and RANZCO principles; independent reviewer decides adequacy. No fixed frequency is supplied."
+    },
+    {
+      "id": "red_flags-4-regional-action",
+      "detail": "Single direct NHS transport instruction retained transparently as prior review allowed; two-source automated action gate remains unqualified."
+    },
+    {
+      "id": "independent-check",
+      "detail": "Changed claims require parent independent verification; this author does not sign own revision or increase coverage."
+    }
+  ],
+  "validation": {
+    "sections": 14,
+    "claims": 68,
+    "condition_sources": 37,
+    "new_sources": 9,
+    "editorial_audit_issues": [],
+    "all_records_pending": true,
+    "all_medical_reviewed_false": true,
+    "all_bilingual_claims_exact_substrings": true,
+    "all_content_and_source_hashes_match": true,
+    "source_schema_unchanged": true,
+    "unrelated_raw_objects_preserved": {
+      "drafts\\batch-01\\acute-symptom-sources.json": 86,
+      "drafts\\batch-01\\acute-symptom-editorial.json": 70
+    },
+    "prior_report_unchanged": true,
+    "condition_identity_and_review_unchanged": true,
+    "no_crcrlf": true,
+    "git_diff_check": "Passed with core.whitespace=cr-at-eol for the repository-preserved CRLF files; plain git diff --check reports CR line endings as whitespace.",
+    "minimal_editorial_revision": "Preserved pre-existing support metadata unless source or locator changed; cleared only obsolete questions resolved by immutable independent recheck or this author revision."
+  },
+  "next_step": "Parent reviews only changed text and evidence bindings; no production, Git or deployment action performed.",
+  "modified_existing_sources": [
+    {
+      "source_id": "b1-acute-retina-moorfields-macular-gas",
+      "change": "Expanded actual retrieval scope to already-read postoperative drop roles and immediate-contact warnings; retained shared-procedure boundary."
+    }
+  ]
+}

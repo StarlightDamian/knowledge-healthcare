@@ -1,0 +1,402 @@
+{
+  "schema_version": 1,
+  "condition_id": "pulmonary-embolism",
+  "author": "/root/pe_review",
+  "revised_at": "2026-10-02",
+  "status": "targeted_revision_complete_pending_independent_review",
+  "medical_reviewed": false,
+  "input": {
+    "body_path": "drafts/batch-01/emergency/pulmonary-embolism.json",
+    "condition_sha256": "95a46f8ca4a1336e6424a98a020fee777fc0f73f26b922c5e0acd17cbf016ffb",
+    "file_sha256": "129cc409647593d86c722fa9f905553bafb9975c94b73b98fd99fb44eb922c42",
+    "editorial_records_sha256": "77130e2d70b11247c41ef15fa925a5e9e83b2363948a5e670c764a21102b8be3",
+    "source_metadata_sha256": "3386c7ea60b8709113caa9058a211655e4d3c41a5b64649c3188a61ff5c5d9a8"
+  },
+  "output": {
+    "condition_sha256": "00d97a597cc309645163b6f2c06a07dc206f31c2217d658b4028bd91f44b47cf",
+    "file_sha256": "25c8451b5c3912c001b7523994d53b62095707967750eaf619a3a34aa4485c6d",
+    "editorial_records_sha256": "39ef65a369a601f96ac85eea21cdd31b6441dc92e035c6d85cb646ed889742aa",
+    "used_source_metadata_sha256": "dac017bd794ce8568c0a3585354f9226f8b49ae7f09e4a82ebbec7cc54e0cd33",
+    "revision_payload_file_sha256": "c114896749107edd3c7bd930b3810f889872bd5b03f9fef4ba0660087b24b18a"
+  },
+  "prior_review": {
+    "path": "reports/batch-01-pulmonary-embolism-independent.json",
+    "file_sha256": "ff366cc87236318d6dd128512ae9dda66889a1dfe407fad38c61b2c1968e7cfd",
+    "unchanged": true,
+    "applies_to_new_draft": false
+  },
+  "fixes": [
+    {
+      "id": "PE01",
+      "status": "fixed_in_draft",
+      "sections": [
+        "care",
+        "prognosis_followup"
+      ],
+      "change": "新发晕厥、明显新胸痛、严重呼吸困难从常规提前复诊移到立即急救；稳定持续气短/耐力下降保持提前联系。严重出血另行急诊。",
+      "evidence": [
+        "pe-nhs",
+        "pe-aha-patient",
+        "pe-nhlbi-recovery",
+        "pe-aha-2026",
+        "pe-tc-patient"
+      ]
+    },
+    {
+      "id": "PE02",
+      "status": "fixed_in_draft",
+      "sections": [
+        "diagnosis",
+        "differentials"
+      ],
+      "change": "解释造影剂过敏/肾功能与V/Q选择、正常胸片的局限；加入肺炎影像重叠、心肌缺血及心电图局限、气胸区别。保持PE与DVT部位及胸痛入口边界。",
+      "evidence": [
+        "pe-msd",
+        "pe-aha-patient",
+        "pe-mayo",
+        "pe-msd-pneumothorax",
+        "pe-cdc"
+      ]
+    },
+    {
+      "id": "PE03",
+      "status": "fixed_in_draft",
+      "sections": [
+        "medications",
+        "special_populations",
+        "prognosis_followup"
+      ],
+      "change": "成人药物/疗程范围明确；儿童说明年龄和基础病差异而不复制成人方案；孕期、产后和哺乳期分开，华法林孕期风险不套用哺乳期。",
+      "evidence": [
+        "pe-nice-ng158",
+        "pe-ash-pediatric",
+        "pe-nhs-considerations",
+        "pe-tc-pregnancy"
+      ]
+    },
+    {
+      "id": "PE04",
+      "status": "author_support_added_pending_review",
+      "sections": [
+        "medications",
+        "diet",
+        "special_populations"
+      ],
+      "change": "补TC独立编写/改编的实际原始材料，支持NSAID/阿司匹林与草药相互作用、DOAC不套华法林维生素K规则、孕期选药及哺乳期区别；不同TC页仅算一个机构组。",
+      "evidence": [
+        "pe-tc-patient",
+        "pe-tc-pregnancy",
+        "pe-nhs-considerations"
+      ]
+    },
+    {
+      "id": "PE05",
+      "status": "fixed_in_draft",
+      "sections": [
+        "care"
+      ],
+      "change": "中文腿部发热明确为皮肤局部发热（摸起来热），与英文locally warm skin一致，不误读为全身发烧。",
+      "evidence": [
+        "pe-cdc",
+        "pe-nhs"
+      ]
+    },
+    {
+      "id": "PE06",
+      "status": "author_bindings_rebuilt_pending_review",
+      "sections": [
+        "summary",
+        "causes_risks",
+        "red_flags",
+        "care",
+        "diagnosis",
+        "differentials",
+        "treatment",
+        "medications",
+        "diet",
+        "daily_care",
+        "special_populations",
+        "prognosis_followup",
+        "complications",
+        "prevention"
+      ],
+      "change": "重建14节逐段主张及精确定位、来源范围和来源元数据哈希；拆分原复合段落；更正Mayo发布日期/专家审订日期，保留NHS过期复核日期及未采用的一律注射5天限制。",
+      "evidence": [
+        "pe-nhlbi",
+        "pe-cdc",
+        "pe-nhlbi-causes",
+        "pe-msd",
+        "pe-nhlbi-women",
+        "pe-nhs",
+        "pe-aha-patient",
+        "pe-nhlbi-diagnosis",
+        "pe-nhlbi-recovery",
+        "pe-nice-ng158",
+        "pe-aha-2026",
+        "pe-nhs-side-effects",
+        "pe-tc-patient",
+        "pe-mayo",
+        "pe-msd-pneumothorax",
+        "pe-nhlbi-treatment",
+        "pe-nhs-considerations",
+        "pe-ahrq-anticoagulant",
+        "pe-tc-pregnancy",
+        "pe-ash-pediatric"
+      ]
+    }
+  ],
+  "retained_boundaries": [
+    "All medical review and localization review states remain draft/pending; noMD.",
+    "No self-diagnosis from symptoms, D-dimer, chest X-ray or ECG; no numeric diagnostic algorithm or individualized dose.",
+    "Thrombotic PE only; DVT and chest-pain entry are related but not duplicate PE cases. No ICD denominator/count changes.",
+    "Original NHS universal five-day injection lead-in and TC blanket no-food-interaction sentence are not adopted.",
+    "No claim of Chinese or WHO-specific drug approval/pathway equivalence; newly explicit adult duration is UK/US educational scope."
+  ],
+  "unresolved_items": [
+    {
+      "type": "independent_review",
+      "detail": "The former independent reviewer authored this revision and cannot independently sign off the changed text; all14 new records remain pending for another reviewer."
+    },
+    {
+      "type": "source_access_scope",
+      "detail": "NICE and AHRQ support is the original official indexed text actually read, with direct-page errors documented; AHA is the official 2026 summary/patient page, not an assertion that the full guideline was read."
+    },
+    {
+      "type": "release_scope",
+      "detail": "This scoped revision does not confer clinical signature, ICD mapping or complete project coverage; none of those is claimed."
+    }
+  ],
+  "validation": {
+    "condition_and_source_json_schema": "passed",
+    "section_count": 14,
+    "editorial_record_count": 14,
+    "claim_count": 55,
+    "source_count": 20,
+    "source_updates_count": 10,
+    "source_update_ids": [
+      "pe-nice-ng158",
+      "pe-aha-2026",
+      "pe-ash-pediatric",
+      "pe-msd",
+      "pe-aha-patient",
+      "pe-ahrq-anticoagulant",
+      "pe-tc-patient",
+      "pe-tc-pregnancy",
+      "pe-msd-pneumothorax",
+      "pe-mayo"
+    ],
+    "bilingual_paragraph_alignment": "passed",
+    "claim_excerpt_and_hash_binding": "passed",
+    "key_claim_independence_group_count": "passed_structural_not_medical_attestation",
+    "target_editorial_audit": {
+      "purpose": "Validate recorded editorial evidence and content binding, not actual medical support.",
+      "conditions": 1,
+      "knowledge_entries": 0,
+      "required_sections": 14,
+      "recorded_checks": 14,
+      "qualified_sections": 0,
+      "qualified_condition_ids": [],
+      "clinical_reviewed_conditions": 0,
+      "legacy_spot_checks": {
+        "count": 5,
+        "scope": "selected_claims",
+        "promoted_to_section_verification": 0,
+        "content_binding": "not_recorded_in_legacy_format"
+      },
+      "states": {
+        "pending": 14
+      },
+      "issues": [],
+      "targets": [
+        {
+          "target": {
+            "kind": "condition",
+            "id": "pulmonary-embolism"
+          },
+          "required_sections": [
+            "summary",
+            "causes_risks",
+            "red_flags",
+            "care",
+            "diagnosis",
+            "differentials",
+            "treatment",
+            "medications",
+            "diet",
+            "daily_care",
+            "special_populations",
+            "prognosis_followup",
+            "complications",
+            "prevention"
+          ],
+          "qualified_sections": [],
+          "qualified": false
+        }
+      ],
+      "records": [
+        {
+          "id": "batch01-pulmonary-embolism-summary",
+          "target": {
+            "kind": "condition",
+            "id": "pulmonary-embolism",
+            "section": "summary"
+          },
+          "state": "pending",
+          "issues": []
+        },
+        {
+          "id": "batch01-pulmonary-embolism-causes_risks",
+          "target": {
+            "kind": "condition",
+            "id": "pulmonary-embolism",
+            "section": "causes_risks"
+          },
+          "state": "pending",
+          "issues": []
+        },
+        {
+          "id": "batch01-pulmonary-embolism-red_flags",
+          "target": {
+            "kind": "condition",
+            "id": "pulmonary-embolism",
+            "section": "red_flags"
+          },
+          "state": "pending",
+          "issues": []
+        },
+        {
+          "id": "batch01-pulmonary-embolism-care",
+          "target": {
+            "kind": "condition",
+            "id": "pulmonary-embolism",
+            "section": "care"
+          },
+          "state": "pending",
+          "issues": []
+        },
+        {
+          "id": "batch01-pulmonary-embolism-diagnosis",
+          "target": {
+            "kind": "condition",
+            "id": "pulmonary-embolism",
+            "section": "diagnosis"
+          },
+          "state": "pending",
+          "issues": []
+        },
+        {
+          "id": "batch01-pulmonary-embolism-differentials",
+          "target": {
+            "kind": "condition",
+            "id": "pulmonary-embolism",
+            "section": "differentials"
+          },
+          "state": "pending",
+          "issues": []
+        },
+        {
+          "id": "batch01-pulmonary-embolism-treatment",
+          "target": {
+            "kind": "condition",
+            "id": "pulmonary-embolism",
+            "section": "treatment"
+          },
+          "state": "pending",
+          "issues": []
+        },
+        {
+          "id": "batch01-pulmonary-embolism-medications",
+          "target": {
+            "kind": "condition",
+            "id": "pulmonary-embolism",
+            "section": "medications"
+          },
+          "state": "pending",
+          "issues": []
+        },
+        {
+          "id": "batch01-pulmonary-embolism-diet",
+          "target": {
+            "kind": "condition",
+            "id": "pulmonary-embolism",
+            "section": "diet"
+          },
+          "state": "pending",
+          "issues": []
+        },
+        {
+          "id": "batch01-pulmonary-embolism-daily_care",
+          "target": {
+            "kind": "condition",
+            "id": "pulmonary-embolism",
+            "section": "daily_care"
+          },
+          "state": "pending",
+          "issues": []
+        },
+        {
+          "id": "batch01-pulmonary-embolism-special_populations",
+          "target": {
+            "kind": "condition",
+            "id": "pulmonary-embolism",
+            "section": "special_populations"
+          },
+          "state": "pending",
+          "issues": []
+        },
+        {
+          "id": "batch01-pulmonary-embolism-prognosis_followup",
+          "target": {
+            "kind": "condition",
+            "id": "pulmonary-embolism",
+            "section": "prognosis_followup"
+          },
+          "state": "pending",
+          "issues": []
+        },
+        {
+          "id": "batch01-pulmonary-embolism-complications",
+          "target": {
+            "kind": "condition",
+            "id": "pulmonary-embolism",
+            "section": "complications"
+          },
+          "state": "pending",
+          "issues": []
+        },
+        {
+          "id": "batch01-pulmonary-embolism-prevention",
+          "target": {
+            "kind": "condition",
+            "id": "pulmonary-embolism",
+            "section": "prevention"
+          },
+          "state": "pending",
+          "issues": []
+        }
+      ],
+      "limitations": [
+        "A syntactically valid record is not proof that a source supports its text.",
+        "Different organizations may share underlying studies or republish the same text.",
+        "Editorial comparison is not clinician sign-off or clinical release authorization."
+      ]
+    },
+    "old_report_file_hash": "unchanged",
+    "shared_pe_source_and_editorial_subsets": "unchanged_at_write",
+    "git_diff_check": {
+      "status": "passed",
+      "command": "git -c core.whitespace=cr-at-eol diff --check -- drafts/batch-01/emergency/pulmonary-embolism.json reports/batch-01-pe-revision-payload.json reports/batch-01-pe-review-fixes.json",
+      "line_ending_basis": "HEAD already contains CRLF on all273 lines; current file preserves CRLF on all303 lines. Plain git diff --check treats CR bytes on added lines as trailing whitespace; cr-at-eol accepts the existing file convention without changing whitespace rules otherwise."
+    },
+    "saved_file_readback": "passed: body, payload, record and immutable original-report hashes match saved output"
+  },
+  "outputs": [
+    "drafts/batch-01/emergency/pulmonary-embolism.json",
+    "reports/batch-01-pe-revision-payload.json",
+    "reports/batch-01-pe-review-fixes.json"
+  ],
+  "merge_required": true,
+  "committed": false,
+  "pushed": false,
+  "deployed": false
+}

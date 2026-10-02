@@ -1,0 +1,2018 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-02",
+  "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope",
+  "medical_reviewed": false,
+  "verdict": "three_confirmed_leaf_proposals_and_five_explicit_partial_scopes",
+  "scope": "Single evidence-bearing category semantic review for the accepted pulmonary-embolism and retinal-detachment articles; accepted medical claim evidence is inherited, not reread. Only this report is written.",
+  "articles": [
+    {
+      "id": "pulmonary-embolism",
+      "path": "data/conditions/pulmonary-embolism.json",
+      "content_sha256": "283430290caab956eaaa1e89168e116801d545e734f962b7ed449f99f3db6c98",
+      "canonical_sha256": "ae90c60840c2461c1a5080ea212b49c65f2132be4882cefe88ece5f08abeb93d",
+      "sections": 14,
+      "claims": 55,
+      "sources": 21,
+      "editorially_qualified": true
+    },
+    {
+      "id": "retinal-detachment",
+      "path": "data/conditions/retinal-detachment.json",
+      "content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
+      "canonical_sha256": "ad82b2d27909e517b90089835457b171009e432abb6e9027807da9f6a15cadd1",
+      "sections": 14,
+      "claims": 68,
+      "sources": 36,
+      "editorially_qualified": true
+    }
+  ],
+  "input_hashes": [
+    {
+      "path": "data/icd/catalog.json.gz",
+      "file_sha256": "3db9a09b98634b08caeb46119a1aec344341e3f2db8b2fc7997ed0e33b3ed15f"
+    },
+    {
+      "path": "data/icd/rules.json",
+      "file_sha256": "a6a81e7ad580b30bbbc9cac068d731ddf4f6d2726d45930d0b58abd88bc6d5a6"
+    },
+    {
+      "path": "data/icd/manifest.json",
+      "file_sha256": "2818b81cfb606dfcd1ad6d1463feb42bd026076ae72d01a3dc28953f5f16d8f4"
+    },
+    {
+      "path": "docs/content-depth-standard.md",
+      "file_sha256": "2ab1fed4a53dbf01323a370781d5fe5cb8d21e3aa550fb58b6c58d818c81efee"
+    },
+    {
+      "path": "data/icd/README.md",
+      "file_sha256": "669cbaff033c21d100839a9ee4fc5f6415b790d3bd15b8e7e96953ed4c1bab59"
+    },
+    {
+      "path": "data/conditions/pulmonary-embolism.json",
+      "file_sha256": "0fd7e75957f5f2528bd4b278d1792f276689d5c723ebd0d1877dd9344d139660"
+    },
+    {
+      "path": "data/conditions/retinal-detachment.json",
+      "file_sha256": "c9569eaffbd73328c74ff235013075245fdea5ceab2d67ce756da17ab15c6ef1"
+    },
+    {
+      "path": "data/evidence/editorial-checks/batch-01-pe.json",
+      "file_sha256": "b76bfeef9193d51a4717eff95a7b5f10556ab6ba4e6a2fff6e9cae306b851512"
+    },
+    {
+      "path": "data/evidence/editorial-checks/batch-01-retinal.json",
+      "file_sha256": "adb9b8284beacd8f68ddbd9f6649c0044cd95f0722d7995dcad5a1a2bd3f99b0"
+    },
+    {
+      "path": "reports/batch-01-pe-acceptance.json",
+      "file_sha256": "029cb2b14ca36fc86fbf7edc67ca8d3d5b080ae386459d9154f31e15313cf1fd"
+    },
+    {
+      "path": "reports/batch-01-pe-final-targeted-recheck.json",
+      "file_sha256": "d98c5aab16af0e5b8c4bf8b7b6a5c08645cd35a889451fed38b32f960dddf5d8"
+    },
+    {
+      "path": "reports/batch-01-retinal-acceptance.json",
+      "file_sha256": "3a5931900bdb2aad0bbfe8134e9f532279cd73a2afe63b90b0a8442a0e7386fa"
+    },
+    {
+      "path": "reports/batch-01-retinal-final-targeted-recheck.json",
+      "file_sha256": "5f1a6487506623f2424234560ddf79e0282abeba0999b066c2ce65b6b701df6d"
+    }
+  ],
+  "official_sources_actually_read": [
+    {
+      "url": "https://icdcdn.who.int/static/releasefiles/2026-01/print-ICD-11-MMS-en.zip",
+      "release": "2026-01",
+      "accessed_at": "2026-10-02",
+      "reused_same_day_download": true,
+      "zip_sha256": "a1163e0faec8dbe062f1b7a34c0c1d2b77e0cf0746ad79ca8f420c9390bfc204",
+      "member": "ICD-11-MMS-en.pdf",
+      "member_sha256": "4baccc13c794dca36d8a79fe80a673e854fc51f13114db3ce76196f0a1eb6cab",
+      "read_locations": [
+        {
+          "pdf_page": 702,
+          "printed_page": 700,
+          "purpose": "Chapter 09 inherited exclusions/coded elsewhere"
+        },
+        {
+          "pdf_page": 724,
+          "printed_page": 722,
+          "purpose": "Posterior eye parent block"
+        },
+        {
+          "pdf_page": 729,
+          "printed_page": 727,
+          "purpose": "9B73 parent, all named children and residual headings; code-also/exclusion notes"
+        },
+        {
+          "pdf_page": 731,
+          "printed_page": 729,
+          "purpose": "9B78.2 exclusion explicitly redirects PVR with detachment to 9B73.Y"
+        },
+        {
+          "pdf_page": 732,
+          "printed_page": 730,
+          "purpose": "Retinal pigment epithelium separation boundary and PVD sibling"
+        },
+        {
+          "pdf_page": 768,
+          "printed_page": 766,
+          "purpose": "Chapter 11 inherited exclusions; already actually read in this same-day MI review"
+        },
+        {
+          "pdf_page": 777,
+          "printed_page": 775,
+          "purpose": "BB00 parent exclusions"
+        },
+        {
+          "pdf_page": 778,
+          "printed_page": 776,
+          "purpose": "Acute/chronic/unspecified PE and BB01.3 coded-elsewhere chronic consequence"
+        }
+      ],
+      "paraphrase": "Acute PE includes partial/complete pulmonary arterial occlusion and can be symptom-free. Chronic PE has a separate persistent-obstruction/pressure definition after treatment and points CTEPH to BB01.3. Retinal detachment with a break includes rhegmatogenous detachment; serous detachment is fluid beneath the retina without a hole/tear/break. Both have a causing-condition coding note. No title-only residual assumption was used."
+    },
+    {
+      "url": "https://icdcdn.who.int/icd11referenceguide/en/html/02.07_icd11-conventions.html",
+      "accessed_at": "2026-10-02",
+      "reused_same_day_actual_read": true,
+      "body_sha256": "5d60f5d8cfc5d99f96f9bd144a365a19d3a26a3f1ec28e4a5d13417d34db9978",
+      "locators": [
+        "2.7.1 Inclusions",
+        "2.7.2 Exclusions",
+        "2.7.3.2 NOS",
+        "2.7.5 Other/Unspecified"
+      ],
+      "paraphrase": "Unspecified reflects insufficient documented detail for more specific assignment; other specified requires a specific documented condition without its own suitable named category. Inclusions are not exhaustive and chapter/parent exclusions matter. These are classification conventions, not a new clinical diagnosis or treatment rule."
+    }
+  ],
+  "content_standard": {
+    "path": "docs/content-depth-standard.md",
+    "principle": "An entire leaf is educational scope, not a universal treatment instruction or exhaustive clinician guideline. Shared knowledge and conditional subtype/therapy branches can satisfy dimensions without duplicating articles. Counterexample gaps below are limited to material applicability differences.",
+    "acceptance_boundaries": [
+      "PE acceptance confirms 14 sections/55 claims/21 sources with no substantive medical issue.",
+      "Retinal acceptance confirms 14 sections/68 claims/36 sources after the precisely identified evidence-link changes.",
+      "Clinician sign-off remains false for both.",
+      "WHO frozen definition wording, including chronic pressure wording, is recorded for classification scope only and is not inserted into clinical advice."
+    ]
+  },
+  "confirmed_category_reviews": [
+    {
+      "condition_id": "pulmonary-embolism",
+      "code": "BB00.0",
+      "status": "confirmed",
+      "scope": "entire_leaf_category",
+      "official_row": {
+        "row": 6451,
+        "code": "BB00.0",
+        "title": "- - - Acute pulmonary thromboembolism",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "http://id.who.int/icd/entity/74279006",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/74279006",
+        "parent_uri": "http://id.who.int/icd/entity/1014964218",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "official_locator": "WHO 2026-01 print PDF page 778 (printed 776), BB00.0; page 777 BB00 exclusions; page 768 Chapter 11.",
+      "rationale": "Current bilingual article gives explanatory acute clot-related PE education across all 14 dimensions: thrombus mechanism and risks, urgent signs and assessment, diagnostic-test roles/limits, severity-selected treatment, anticoagulant risks, recovery and recurrence prevention. Conditional adult, pediatric and maternal material preserves applicability. Frozen definition includes asymptomatic events; the article uses non-exclusive symptom language and never makes a symptom mandatory for PE. No full clinical decision algorithm is required by the public-education standard.",
+      "exclusions_considered": "WHO BB00 excludes JB64.4 (circulatory disease complicating pregnancy/childbirth/puerperium) and JA05 (complications following abortion/ectopic/molar pregnancy); inherited Chapter 11 exclusions remain. Pregnancy/infant context and non-thrombotic emboli are not additional categories covered. BB00.1 is a separate chronic leaf and BB01.3 CTEPH is coded elsewhere. Parent BB00 is not a denominator member.",
+      "section_matrix": [
+        {
+          "section": "summary",
+          "text_sha256": "2d9a48853e83bfe50685e98fa2cbc90083ea6abbf4d7fcdac1f6e8511ac57c35",
+          "claim_ids": [
+            "summary-0",
+            "summary-1",
+            "summary-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "血块阻塞肺血管、供氧影响、来自深静脉及与DVT的区别直接解释血栓性PE。症状用may而不是必须出现，不排斥官方定义中的无症状急性事件。"
+        },
+        {
+          "section": "causes_risks",
+          "text_sha256": "1261194f86d823d7037e967601edb87fb09b29223b7557a9c06821d2e0250202",
+          "claim_ids": [
+            "causes_risks-0",
+            "causes_risks-1",
+            "causes_risks-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "血流慢、血管损伤、凝血倾向和手术/不活动/癌症等风险适用于急性血栓事件；危险因素不是确诊条件。孕产风险提示是相关语境，不认领孕产分类。"
+        },
+        {
+          "section": "red_flags",
+          "text_sha256": "837d47e91813b4129015685f317a302c85016004884f6ef312692a7bde1b4032",
+          "claim_ids": [
+            "red_flags-0",
+            "red_flags-1",
+            "red_flags-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "突然气短、胸痛、咯血、晕厥及严重呼吸/循环变化分层处理；服抗凝药仍需回应新症状。"
+        },
+        {
+          "section": "care",
+          "text_sha256": "23271ac2dd7ed05ef9368daafa030ae9e7f7456d3170323d24c63d3d98ff1c60",
+          "claim_ids": [
+            "care-0",
+            "care-1",
+            "care-2",
+            "care-3",
+            "care-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "疑似急性事件当天评估、严重者急救；家庭治疗须稳定并有用药复诊条件。康复期稳定气短与新发严重表现分开，不把所有持续气短当复发。"
+        },
+        {
+          "section": "diagnosis",
+          "text_sha256": "db5200db62b1d4aae86e47bb4c9b2a820c1903f1be0ebd6532ff1a4a9dcca781",
+          "claim_ids": [
+            "diagnosis-0",
+            "diagnosis-1",
+            "diagnosis-2",
+            "diagnosis-3",
+            "diagnosis-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "病史、概率与D-二聚体局限、CT造影、替代V/Q、胸片不能排除组成实际诊断过程；满足公众解释，不要求完整概率评分或成套处方算法。"
+        },
+        {
+          "section": "differentials",
+          "text_sha256": "5cb6116f4036d5b9b53f0f9bb0f0b96c8eac2a8bed1759e67d88055d1d0fdaf2",
+          "claim_ids": [
+            "differentials-0",
+            "differentials-1",
+            "differentials-2",
+            "differentials-3",
+            "differentials-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "肺炎、心肌缺血/梗死、气胸与DVT的部位差异和检查目的清楚；正文明确clot-related PE，未覆盖脂肪、空气、羊水等非血栓栓塞。"
+        },
+        {
+          "section": "treatment",
+          "text_sha256": "d5a73d91f0b690fd41a8c0ae2046cf0fe28326b19d0008fb738430dbac314ebb",
+          "claim_ids": [
+            "treatment-0",
+            "treatment-1",
+            "treatment-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "抗凝防止扩大/再形成，身体处理已有血块，低氧/循环不稳及危及生命时的溶栓/导管/手术；未将影像血块一律等同于溶栓。"
+        },
+        {
+          "section": "medications",
+          "text_sha256": "8ed528283d8eeeb0ac6962397fa647834093f7565117944c42fb2706775a06d5",
+          "claim_ids": [
+            "medications-0",
+            "medications-1",
+            "medications-2",
+            "medications-3",
+            "medications-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "成人肝素、华法林、DOAC途径与起始差异、出血、相互作用、操作前告知及不能擅停/加量构成适用的药物解释；儿童与孕产另有明确边界。"
+        },
+        {
+          "section": "diet",
+          "text_sha256": "aac1f74e44da181dd79480c962f64fab3c54b5f559837887bf9023381f7c0caf",
+          "claim_ids": [
+            "diet-0",
+            "diet-1",
+            "diet-2",
+            "diet-3"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "以实际所用抗凝药分支解释维生素K、酒精/补充剂与无化栓食物，未把华法林条件外推到DOAC。"
+        },
+        {
+          "section": "daily_care",
+          "text_sha256": "8bf216fa7c6e07174c757df8ddaa7e05a05b27a59f9b380ab96ad7c05b2bd679",
+          "claim_ids": [
+            "daily_care-0",
+            "daily_care-1",
+            "daily_care-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "活动计划、可靠用药、症状/出血记录与头部撞击等升级行动共用；不是全程卧床或无限制活动。"
+        },
+        {
+          "section": "special_populations",
+          "text_sha256": "26619e0d8bb190f88d2f1e4ade67a10bdd6bf5a2629c9f143a7133cee3fbfe8b",
+          "claim_ids": [
+            "special_populations-0",
+            "special_populations-1",
+            "special_populations-2",
+            "special_populations-3",
+            "special_populations-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "癌症、肾病、老人、儿童给出风险/清除/评估差异；孕产和哺乳建议作为独立条件语境，不能据此将JB64.4或JA05计入BB00覆盖。",
+          "claim_roles": {
+            "direct_or_shared": [
+              "special_populations-0",
+              "special_populations-3",
+              "special_populations-4"
+            ],
+            "pregnancy_puerperal_context_not_independent_coverage": [
+              "special_populations-1",
+              "special_populations-2"
+            ]
+          }
+        },
+        {
+          "section": "prognosis_followup",
+          "text_sha256": "3483e2f0211af1d084d0920139d67fa03fab087ba628d4e64888b3b2517fea40",
+          "claim_ids": [
+            "prognosis_followup-0",
+            "prognosis_followup-1",
+            "prognosis_followup-2",
+            "prognosis_followup-3",
+            "prognosis_followup-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "急性治疗后恢复、成人至少三个月这一有地区/人群条件的起点、延期因素、药物监测与持续气短随访充分；不是三月自动停药。"
+        },
+        {
+          "section": "complications",
+          "text_sha256": "13de01195af0a8e0d311d49845125c506057fe1d72e611c0279a0ac4061b2688",
+          "claim_ids": [
+            "complications-0",
+            "complications-1",
+            "complications-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "休克/死亡与残余阻塞相关肺动脉高压是急性事件可能后果；CTEPH说明只为并发症识别，未据此确认BB00.1或BB01.3。"
+        },
+        {
+          "section": "prevention",
+          "text_sha256": "8e6c7f63c47f5fdcdbfb0f1ff28fd14c17e1a859ad709e669c54ee2594b6d313",
+          "claim_ids": [
+            "prevention-0",
+            "prevention-1",
+            "prevention-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "降低DVT和复发风险、住院/手术预防讨论、旅行活动与按风险选择措施，说明不能消除全部风险。"
+        }
+      ],
+      "actual_content_gaps": [],
+      "definition_evidence_gaps": []
+    },
+    {
+      "condition_id": "retinal-detachment",
+      "code": "9B73.0",
+      "status": "confirmed",
+      "scope": "entire_leaf_category",
+      "official_row": {
+        "row": 5842,
+        "code": "9B73.0",
+        "title": "- - - - Retinal detachment with retinal break",
+        "class_kind": "category",
+        "chapter": "09",
+        "foundation_uri": "http://id.who.int/icd/entity/2059145710",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/2059145710",
+        "parent_uri": "http://id.who.int/icd/entity/357208479",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "official_locator": "WHO 2026-01 print PDF page 729 (printed 727), 9B73.0 and 9B73 parent; page 702 Chapter 09.",
+      "rationale": "The article explicitly explains the tear-fluid mechanism and supplies targeted break-sealing and detachment-repair education, while all other dimensions address the affected retina and the actual conditional care process. Shared warnings, examination, medication safety, recovery and prevention apply across the frozen leaf; non-tear mechanisms are comparative context, not merged into this code. The causing-condition coding note and parent exclusions were considered.",
+      "exclusions_considered": "WHO 9B73 excludes retinal pigment epithelium detachment (9B78.6), and Chapter 09 exclusions/coded-elsewhere entries remain. 9B73.0 is detachment with a retinal break, not isolated breaks (9B73.4), retinoschisis, cysts or all parent descendants. 9B73.3 is serous detachment without a retinal hole/tear/break and excludes central serous chorioretinopathy (9B75.2). Both 9B73.0 and 9B73.3 say code also the causing condition; an educational article mapping is not patient coding and does not count the causing condition as covered. Traumatic, infectious, neoplastic, metabolic and other causal contexts are not silently converted into covered independent diseases.",
+      "section_matrix": [
+        {
+          "section": "summary",
+          "text_sha256": "a5efdb9b59a0fb94fc6e234555c61bb30f6321444bd87681adaea91c1ecd8173",
+          "claim_ids": [
+            "summary-1",
+            "summary-2",
+            "summary-3",
+            "summary-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "解释感光视网膜、脱离与永久损害，区分小范围可无症状、视野及黄斑中央视力变化；适用于相应脱离机制，不把裂孔作为所有脱离的必要条件。"
+        },
+        {
+          "section": "causes_risks",
+          "text_sha256": "7d401c2b13a5fb6af0bb242751d3556fc7c9f2f46e6d5125352cb9b7bdf8faae",
+          "claim_ids": [
+            "causes_risks-1",
+            "causes_risks-2",
+            "causes_risks-3",
+            "causes_risks-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "裂孔、牵拉和渗出三个机制明确分开；裂孔液体通过开口与渗出无裂口的差别已在treatment-nontear补足，风险因素不是每种机制必须具备。",
+          "branch_assignment": "causes_risks-2 directly supplies the tear mechanism; causes_risks-3 compares non-tear mechanisms."
+        },
+        {
+          "section": "red_flags",
+          "text_sha256": "69f79c916e57660cca7775bcec79063afcdecf50a99774a405f8e67795a20990",
+          "claim_ids": [
+            "red_flags-1",
+            "red_flags-2",
+            "red_flags-3",
+            "red_flags-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "突发视野/视力变化需立即眼科评估；术后恶化条件单独说明，气泡/手术并非每位读者都必有。"
+        },
+        {
+          "section": "care",
+          "text_sha256": "f91c774367e1b830dc8fae4dcd29569d7e19e4187e84e6ddc3da15ad13c5d4ce",
+          "claim_ids": [
+            "care-1",
+            "care-2",
+            "care-3",
+            "care-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "急性改变立即同日评估，长期未变飞蚊有条件区别，初次无裂孔后新变化仍重新评估；实际复诊/返工/驾驶由病情及治疗决定。"
+        },
+        {
+          "section": "diagnosis",
+          "text_sha256": "4dfaef70b96e769042dd4491255d59e59c3f7653edfb7f891d0bd06619eb1239",
+          "claim_ids": [
+            "diagnosis-1",
+            "diagnosis-2",
+            "diagnosis-3",
+            "diagnosis-4",
+            "diagnosis-oct"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "散瞳检查、被遮挡时超声、OCT横断面/黄斑积液的不同目的适用于找出是否及如何脱离；无裂孔型也不能只靠验光判断。"
+        },
+        {
+          "section": "differentials",
+          "text_sha256": "f937a66cc8ceab6ef6cb74ae194114b9a8d2e9c71e282ad20557dff5858f7a16",
+          "claim_ids": [
+            "differentials-1",
+            "differentials-2",
+            "differentials-3",
+            "differentials-4",
+            "differentials-sudden-loss"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "PVD、尚未脱离的裂孔、糖尿病玻璃体出血及牵拉区别提供相似表现的具体来源；它们作为鉴别内容不自动另计覆盖。"
+        },
+        {
+          "section": "treatment",
+          "text_sha256": "09e3f7ff27bd43ac98795b5d19af00c46ab523c85e63b16d8151796055165e80",
+          "claim_ids": [
+            "treatment-1",
+            "treatment-2",
+            "treatment-3",
+            "treatment-4",
+            "treatment-nontear"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "目标为保视力，修补方案按机制。封孔/气体/扣带等明确主要用于裂孔型；非裂孔段分别讲牵拉解除和渗出病因治疗，避免把同一修补手术推广给所有类型。",
+          "branch_assignment": "treatment-1/2/3/4 provide break sealing and detachment repair with selection conditions; treatment-nontear is a comparison."
+        },
+        {
+          "section": "medications",
+          "text_sha256": "ba87e1feb5f390541fd396dd1599824a12532fa3570aac4062d2a6ae249705ee",
+          "claim_ids": [
+            "medications-1",
+            "medications-2",
+            "medications-3",
+            "medications-steroid-pressure",
+            "medications-steroid-infection",
+            "medications-steroid-review",
+            "medications-4",
+            "medications-drop-safety",
+            "medications-exudative"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "麻醉、术后抗感染/抗炎、激素眼压/白内障/感染风险及随访为有相应操作或用药者的条件教育；非感染性炎症所致渗出另有抗炎/免疫抑制作用解释，并非所有脱离统一给药。",
+          "branch_assignment": "Postoperative medication/anesthesia roles and risks apply when used; medications-exudative is a cause-specific comparison."
+        },
+        {
+          "section": "diet",
+          "text_sha256": "d12c4576dfc4ad9b05ac0ad84aad53cb25c6ca3ebf3bd012aae968c7015e861a",
+          "claim_ids": [
+            "diet-1",
+            "diet-2",
+            "diet-3",
+            "diet-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "没有让视网膜复位的食谱；手术禁食仅在麻醉/镇静条件下、糖尿病协调仅在相应共病下适用。保留条件足以避免给非手术渗出型强加禁食。"
+        },
+        {
+          "section": "daily_care",
+          "text_sha256": "d5b7ac8fbfa68438aff2f596809eeb01de7a211ce3ed5b97930fa61e38b83d92",
+          "claim_ids": [
+            "daily_care-1",
+            "daily_care-2",
+            "daily_care-3",
+            "daily_care-4",
+            "daily_care-5",
+            "daily_care-gas-warning",
+            "daily_care-gas-disclosure",
+            "daily_care-dental"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "每天观察视野/疼痛并升级求助是共用；滴药/遮眼/头位/飞行/海拔/笑气/牙科告知全部保留术后或存在眼内气泡条件，不能分配为渗出型的默认手术护理。",
+          "branch_assignment": "daily_care-5 is directly shared. Other claims require their explicit eye-drop, operation or intraocular-gas conditions; lack of surgery does not activate these restrictions."
+        },
+        {
+          "section": "special_populations",
+          "text_sha256": "ac8970848fd309b53f5bfd0972e1b4ef16acc33f8f10e25e3b799bcea3e471fa",
+          "claim_ids": [
+            "special_populations-1",
+            "special_populations-2",
+            "special_populations-3",
+            "special_populations-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "糖尿病牵拉与高度近视/既往手术是有指明机制的相关风险；一般健康、行动/视力障碍对滴药和安排协助的影响共用，不宣称每种风险都导致每个亚型。"
+        },
+        {
+          "section": "prognosis_followup",
+          "text_sha256": "464d4cf8b79d6b1365c0c8d56bc7105ecef3d732d5d09dd9141a61a7c54f00a1",
+          "claim_ids": [
+            "prognosis_followup-1",
+            "prognosis_followup-2",
+            "prognosis_followup-3",
+            "prognosis_followup-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "黄斑受累、治疗前视力、时机和损伤影响视功能，解剖位置恢复不等于视力恢复；术后气泡/恢复模糊仅属于已接受相应手术者。"
+        },
+        {
+          "section": "complications",
+          "text_sha256": "86f641bf03b95f2e6eec72c8f382255d8e8c166b62e4869bc2b014484aba3854",
+          "claim_ids": [
+            "complications-1",
+            "complications-2",
+            "complications-3",
+            "complications-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "永久视力损害及恶化需评估适用于脱离；PVR和修补失败是指明的并发情境，不声称所有渗出型都会产生PVR或全部需要再次手术。"
+        },
+        {
+          "section": "prevention",
+          "text_sha256": "6f9bb847c22c4afba148f1ca1a613b937d081d733f731fe825b7c2ec2edd80fe",
+          "claim_ids": [
+            "prevention-1",
+            "prevention-2",
+            "prevention-3",
+            "prevention-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "可避免外伤、按风险眼底检查、回应新症状，不能消除全部风险；不同病因的管理已放在病因/治疗而非发明统一防脱离方案。"
+        }
+      ],
+      "actual_content_gaps": [],
+      "definition_evidence_gaps": []
+    },
+    {
+      "condition_id": "retinal-detachment",
+      "code": "9B73.3",
+      "status": "confirmed",
+      "scope": "entire_leaf_category",
+      "official_row": {
+        "row": 5849,
+        "code": "9B73.3",
+        "title": "- - - - Serous retinal detachment",
+        "class_kind": "category",
+        "chapter": "09",
+        "foundation_uri": "http://id.who.int/icd/entity/1801096327",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1801096327",
+        "parent_uri": "http://id.who.int/icd/entity/357208479",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "official_locator": "WHO 2026-01 print PDF page 729 (printed 727), 9B73.3 and 9B73 parent; page 702 Chapter 09.",
+      "rationale": "The article independently explains exudative fluid accumulation without a break, cause-directed treatment for inflammatory/vascular/tumour mechanisms, and the conditional noninfectious-inflammatory medication branch. The other dimensions provide applicable visual-risk, retinal-assessment, monitoring, follow-up and care education. Tear-sealing, postoperative care and gas restrictions retain explicit conditions and are not assumed for every serous detachment. The public standard does not require separate full oncology, uveitis or vascular-treatment guidelines. Central serous chorioretinopathy and pigment-epithelium detachment are excluded from this leaf assessment.",
+      "exclusions_considered": "WHO 9B73 excludes retinal pigment epithelium detachment (9B78.6), and Chapter 09 exclusions/coded-elsewhere entries remain. 9B73.0 is detachment with a retinal break, not isolated breaks (9B73.4), retinoschisis, cysts or all parent descendants. 9B73.3 is serous detachment without a retinal hole/tear/break and excludes central serous chorioretinopathy (9B75.2). Both 9B73.0 and 9B73.3 say code also the causing condition; an educational article mapping is not patient coding and does not count the causing condition as covered. Traumatic, infectious, neoplastic, metabolic and other causal contexts are not silently converted into covered independent diseases.",
+      "section_matrix": [
+        {
+          "section": "summary",
+          "text_sha256": "a5efdb9b59a0fb94fc6e234555c61bb30f6321444bd87681adaea91c1ecd8173",
+          "claim_ids": [
+            "summary-1",
+            "summary-2",
+            "summary-3",
+            "summary-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "解释感光视网膜、脱离与永久损害，区分小范围可无症状、视野及黄斑中央视力变化；适用于相应脱离机制，不把裂孔作为所有脱离的必要条件。"
+        },
+        {
+          "section": "causes_risks",
+          "text_sha256": "7d401c2b13a5fb6af0bb242751d3556fc7c9f2f46e6d5125352cb9b7bdf8faae",
+          "claim_ids": [
+            "causes_risks-1",
+            "causes_risks-2",
+            "causes_risks-3",
+            "causes_risks-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "裂孔、牵拉和渗出三个机制明确分开；裂孔液体通过开口与渗出无裂口的差别已在treatment-nontear补足，风险因素不是每种机制必须具备。",
+          "branch_assignment": "Exudative clause of causes_risks-3 supplies fluid accumulation; causes_risks-2 and tractional clause are comparisons, not defining mechanisms."
+        },
+        {
+          "section": "red_flags",
+          "text_sha256": "69f79c916e57660cca7775bcec79063afcdecf50a99774a405f8e67795a20990",
+          "claim_ids": [
+            "red_flags-1",
+            "red_flags-2",
+            "red_flags-3",
+            "red_flags-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "突发视野/视力变化需立即眼科评估；术后恶化条件单独说明，气泡/手术并非每位读者都必有。"
+        },
+        {
+          "section": "care",
+          "text_sha256": "f91c774367e1b830dc8fae4dcd29569d7e19e4187e84e6ddc3da15ad13c5d4ce",
+          "claim_ids": [
+            "care-1",
+            "care-2",
+            "care-3",
+            "care-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "急性改变立即同日评估，长期未变飞蚊有条件区别，初次无裂孔后新变化仍重新评估；实际复诊/返工/驾驶由病情及治疗决定。"
+        },
+        {
+          "section": "diagnosis",
+          "text_sha256": "4dfaef70b96e769042dd4491255d59e59c3f7653edfb7f891d0bd06619eb1239",
+          "claim_ids": [
+            "diagnosis-1",
+            "diagnosis-2",
+            "diagnosis-3",
+            "diagnosis-4",
+            "diagnosis-oct"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "散瞳检查、被遮挡时超声、OCT横断面/黄斑积液的不同目的适用于找出是否及如何脱离；无裂孔型也不能只靠验光判断。"
+        },
+        {
+          "section": "differentials",
+          "text_sha256": "f937a66cc8ceab6ef6cb74ae194114b9a8d2e9c71e282ad20557dff5858f7a16",
+          "claim_ids": [
+            "differentials-1",
+            "differentials-2",
+            "differentials-3",
+            "differentials-4",
+            "differentials-sudden-loss"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "PVD、尚未脱离的裂孔、糖尿病玻璃体出血及牵拉区别提供相似表现的具体来源；它们作为鉴别内容不自动另计覆盖。"
+        },
+        {
+          "section": "treatment",
+          "text_sha256": "09e3f7ff27bd43ac98795b5d19af00c46ab523c85e63b16d8151796055165e80",
+          "claim_ids": [
+            "treatment-1",
+            "treatment-2",
+            "treatment-3",
+            "treatment-4",
+            "treatment-nontear"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "目标为保视力，修补方案按机制。封孔/气体/扣带等明确主要用于裂孔型；非裂孔段分别讲牵拉解除和渗出病因治疗，避免把同一修补手术推广给所有类型。",
+          "branch_assignment": "Exudative clause of treatment-nontear directly supplies no-break and cause-directed treatment (inflammatory, vascular or tumour causes). treatment-1 expressly limits the preceding repair list mainly to tear-related disease; these procedures are not default serous treatment."
+        },
+        {
+          "section": "medications",
+          "text_sha256": "ba87e1feb5f390541fd396dd1599824a12532fa3570aac4062d2a6ae249705ee",
+          "claim_ids": [
+            "medications-1",
+            "medications-2",
+            "medications-3",
+            "medications-steroid-pressure",
+            "medications-steroid-infection",
+            "medications-steroid-review",
+            "medications-4",
+            "medications-drop-safety",
+            "medications-exudative"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "麻醉、术后抗感染/抗炎、激素眼压/白内障/感染风险及随访为有相应操作或用药者的条件教育；非感染性炎症所致渗出另有抗炎/免疫抑制作用解释，并非所有脱离统一给药。",
+          "branch_assignment": "medications-exudative gives the noninfectious inflammatory branch, including its mechanism and limitation; medications-1 frames cause/stage dependence. Anesthesia/postoperative drops and their risks apply only if those treatments are actually selected, never as mandatory serous therapy."
+        },
+        {
+          "section": "diet",
+          "text_sha256": "d12c4576dfc4ad9b05ac0ad84aad53cb25c6ca3ebf3bd012aae968c7015e861a",
+          "claim_ids": [
+            "diet-1",
+            "diet-2",
+            "diet-3",
+            "diet-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "没有让视网膜复位的食谱；手术禁食仅在麻醉/镇静条件下、糖尿病协调仅在相应共病下适用。保留条件足以避免给非手术渗出型强加禁食。"
+        },
+        {
+          "section": "daily_care",
+          "text_sha256": "d5b7ac8fbfa68438aff2f596809eeb01de7a211ce3ed5b97930fa61e38b83d92",
+          "claim_ids": [
+            "daily_care-1",
+            "daily_care-2",
+            "daily_care-3",
+            "daily_care-4",
+            "daily_care-5",
+            "daily_care-gas-warning",
+            "daily_care-gas-disclosure",
+            "daily_care-dental"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "每天观察视野/疼痛并升级求助是共用；滴药/遮眼/头位/飞行/海拔/笑气/牙科告知全部保留术后或存在眼内气泡条件，不能分配为渗出型的默认手术护理。",
+          "branch_assignment": "daily_care-5 is directly shared. Other claims require their explicit eye-drop, operation or intraocular-gas conditions; lack of surgery does not activate these restrictions."
+        },
+        {
+          "section": "special_populations",
+          "text_sha256": "ac8970848fd309b53f5bfd0972e1b4ef16acc33f8f10e25e3b799bcea3e471fa",
+          "claim_ids": [
+            "special_populations-1",
+            "special_populations-2",
+            "special_populations-3",
+            "special_populations-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "糖尿病牵拉与高度近视/既往手术是有指明机制的相关风险；一般健康、行动/视力障碍对滴药和安排协助的影响共用，不宣称每种风险都导致每个亚型。"
+        },
+        {
+          "section": "prognosis_followup",
+          "text_sha256": "464d4cf8b79d6b1365c0c8d56bc7105ecef3d732d5d09dd9141a61a7c54f00a1",
+          "claim_ids": [
+            "prognosis_followup-1",
+            "prognosis_followup-2",
+            "prognosis_followup-3",
+            "prognosis_followup-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "黄斑受累、治疗前视力、时机和损伤影响视功能，解剖位置恢复不等于视力恢复；术后气泡/恢复模糊仅属于已接受相应手术者。"
+        },
+        {
+          "section": "complications",
+          "text_sha256": "86f641bf03b95f2e6eec72c8f382255d8e8c166b62e4869bc2b014484aba3854",
+          "claim_ids": [
+            "complications-1",
+            "complications-2",
+            "complications-3",
+            "complications-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "永久视力损害及恶化需评估适用于脱离；PVR和修补失败是指明的并发情境，不声称所有渗出型都会产生PVR或全部需要再次手术。"
+        },
+        {
+          "section": "prevention",
+          "text_sha256": "6f9bb847c22c4afba148f1ca1a613b937d081d733f731fe825b7c2ec2edd80fe",
+          "claim_ids": [
+            "prevention-1",
+            "prevention-2",
+            "prevention-3",
+            "prevention-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_stated_conditions",
+          "assessment": "可避免外伤、按风险眼底检查、回应新症状，不能消除全部风险；不同病因的管理已放在病因/治疗而非发明统一防脱离方案。"
+        }
+      ],
+      "actual_content_gaps": [],
+      "definition_evidence_gaps": []
+    }
+  ],
+  "partial_category_reviews": [
+    {
+      "condition_id": "pulmonary-embolism",
+      "code": "BB00.1",
+      "status": "partial",
+      "scope": "documented_partial_leaf_only",
+      "official_row": {
+        "row": 6452,
+        "code": "BB00.1",
+        "title": "- - - Chronic pulmonary thromboembolism",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "http://id.who.int/icd/entity/653179449",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/653179449",
+        "parent_uri": "http://id.who.int/icd/entity/1014964218",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "rationale": "Chronic pulmonary thromboembolism is a separate frozen category, not merely prolonged acute recovery. The article mentions CTEPH/residual obstruction as complications but supplies no independent chronic-disease assessment or management branch. WHO additionally marks BB01.3 CTEPH as coded elsewhere; the complication sentence cannot certify BB00.1.",
+      "actual_gaps": {
+        "summary": "No distinct persistent/organized obstruction explanation; current overview is generic clot PE.",
+        "diagnosis": "No explanation of how clinicians investigate persistent chronic vascular obstruction/pressure effects after treatment rather than repeat the acute suspicion pathway.",
+        "treatment": "Only acute anticoagulation/stabilization and life-threatening reperfusion are explained; the chronic-treatment objective and specialist assessment of persistent obstruction are absent.",
+        "prognosis_followup": "Acute post-treatment follow-up and an adult minimum-course discussion do not explain established chronic disease follow-up."
+      },
+      "completion_condition": "Add a concise, source-supported chronic-obstruction description, why persistent limitations need a different assessment, and the goals/major options of that specialist treatment and follow-up. Reuse shared anticoagulant safety, diet and warning signs. No detailed haemodynamic algorithm or duplicate full article is necessary.",
+      "section_assignment": [
+        {
+          "section": "summary",
+          "text_sha256": "2d9a48853e83bfe50685e98fa2cbc90083ea6abbf4d7fcdac1f6e8511ac57c35",
+          "claim_ids": [
+            "summary-0",
+            "summary-1",
+            "summary-2"
+          ],
+          "status": "specific_gap",
+          "scope_limitation": "No distinct persistent/organized obstruction explanation; current overview is generic clot PE."
+        },
+        {
+          "section": "causes_risks",
+          "text_sha256": "1261194f86d823d7037e967601edb87fb09b29223b7557a9c06821d2e0250202",
+          "claim_ids": [
+            "causes_risks-0",
+            "causes_risks-1",
+            "causes_risks-2"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "red_flags",
+          "text_sha256": "837d47e91813b4129015685f317a302c85016004884f6ef312692a7bde1b4032",
+          "claim_ids": [
+            "red_flags-0",
+            "red_flags-1",
+            "red_flags-2"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "care",
+          "text_sha256": "23271ac2dd7ed05ef9368daafa030ae9e7f7456d3170323d24c63d3d98ff1c60",
+          "claim_ids": [
+            "care-0",
+            "care-1",
+            "care-2",
+            "care-3",
+            "care-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "diagnosis",
+          "text_sha256": "db5200db62b1d4aae86e47bb4c9b2a820c1903f1be0ebd6532ff1a4a9dcca781",
+          "claim_ids": [
+            "diagnosis-0",
+            "diagnosis-1",
+            "diagnosis-2",
+            "diagnosis-3",
+            "diagnosis-4"
+          ],
+          "status": "specific_gap",
+          "scope_limitation": "No explanation of how clinicians investigate persistent chronic vascular obstruction/pressure effects after treatment rather than repeat the acute suspicion pathway."
+        },
+        {
+          "section": "differentials",
+          "text_sha256": "5cb6116f4036d5b9b53f0f9bb0f0b96c8eac2a8bed1759e67d88055d1d0fdaf2",
+          "claim_ids": [
+            "differentials-0",
+            "differentials-1",
+            "differentials-2",
+            "differentials-3",
+            "differentials-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "treatment",
+          "text_sha256": "d5a73d91f0b690fd41a8c0ae2046cf0fe28326b19d0008fb738430dbac314ebb",
+          "claim_ids": [
+            "treatment-0",
+            "treatment-1",
+            "treatment-2"
+          ],
+          "status": "specific_gap",
+          "scope_limitation": "Only acute anticoagulation/stabilization and life-threatening reperfusion are explained; the chronic-treatment objective and specialist assessment of persistent obstruction are absent."
+        },
+        {
+          "section": "medications",
+          "text_sha256": "8ed528283d8eeeb0ac6962397fa647834093f7565117944c42fb2706775a06d5",
+          "claim_ids": [
+            "medications-0",
+            "medications-1",
+            "medications-2",
+            "medications-3",
+            "medications-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "diet",
+          "text_sha256": "aac1f74e44da181dd79480c962f64fab3c54b5f559837887bf9023381f7c0caf",
+          "claim_ids": [
+            "diet-0",
+            "diet-1",
+            "diet-2",
+            "diet-3"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "daily_care",
+          "text_sha256": "8bf216fa7c6e07174c757df8ddaa7e05a05b27a59f9b380ab96ad7c05b2bd679",
+          "claim_ids": [
+            "daily_care-0",
+            "daily_care-1",
+            "daily_care-2"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "special_populations",
+          "text_sha256": "26619e0d8bb190f88d2f1e4ade67a10bdd6bf5a2629c9f143a7133cee3fbfe8b",
+          "claim_ids": [
+            "special_populations-0",
+            "special_populations-1",
+            "special_populations-2",
+            "special_populations-3",
+            "special_populations-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "prognosis_followup",
+          "text_sha256": "3483e2f0211af1d084d0920139d67fa03fab087ba628d4e64888b3b2517fea40",
+          "claim_ids": [
+            "prognosis_followup-0",
+            "prognosis_followup-1",
+            "prognosis_followup-2",
+            "prognosis_followup-3",
+            "prognosis_followup-4"
+          ],
+          "status": "specific_gap",
+          "scope_limitation": "Acute post-treatment follow-up and an adult minimum-course discussion do not explain established chronic disease follow-up."
+        },
+        {
+          "section": "complications",
+          "text_sha256": "13de01195af0a8e0d311d49845125c506057fe1d72e611c0279a0ac4061b2688",
+          "claim_ids": [
+            "complications-0",
+            "complications-1",
+            "complications-2"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "prevention",
+          "text_sha256": "8e6c7f63c47f5fdcdbfb0f1ff28fd14c17e1a859ad709e669c54ee2594b6d313",
+          "claim_ids": [
+            "prevention-0",
+            "prevention-1",
+            "prevention-2"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        }
+      ]
+    },
+    {
+      "condition_id": "pulmonary-embolism",
+      "code": "BB00.Z",
+      "status": "partial",
+      "scope": "documented_partial_leaf_only",
+      "official_row": {
+        "row": 6453,
+        "code": "BB00.Z",
+        "title": "- - - Pulmonary thromboembolism, unspecified",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1014964218/unspecified",
+        "parent_uri": "http://id.who.int/icd/entity/1014964218",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "rationale": "Unspecified means documented pulmonary thromboembolism without sufficient acute/chronic detail; it does not mean an unconfirmed PE. Unlike MI unspecified ST type, the present article does not supply both materially different temporal care branches. It therefore provides substantial generic education but cannot yet be adjudicated as applicable across this entire residual leaf.",
+      "actual_gaps": {
+        "diagnosis": "The unrecorded acute/chronic distinction is not addressed; acute suspicion testing cannot be silently treated as the only assessment for every unspecified record.",
+        "treatment": "No chronic-obstruction treatment branch or explicit limitation of acute reperfusion to the acute clinical context.",
+        "prognosis_followup": "The acute-course duration and recovery explanation lacks the established chronic condition branch."
+      },
+      "completion_condition": "Make acute versus established chronic disease applicability explicit in the existing diagnosis/treatment/follow-up dimensions, using the concise chronic branch above. Then bind shared claims without assuming the missing temporal detail. A standalone coding paragraph or broad title alone is neither required nor sufficient.",
+      "section_assignment": [
+        {
+          "section": "summary",
+          "text_sha256": "2d9a48853e83bfe50685e98fa2cbc90083ea6abbf4d7fcdac1f6e8511ac57c35",
+          "claim_ids": [
+            "summary-0",
+            "summary-1",
+            "summary-2"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "causes_risks",
+          "text_sha256": "1261194f86d823d7037e967601edb87fb09b29223b7557a9c06821d2e0250202",
+          "claim_ids": [
+            "causes_risks-0",
+            "causes_risks-1",
+            "causes_risks-2"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "red_flags",
+          "text_sha256": "837d47e91813b4129015685f317a302c85016004884f6ef312692a7bde1b4032",
+          "claim_ids": [
+            "red_flags-0",
+            "red_flags-1",
+            "red_flags-2"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "care",
+          "text_sha256": "23271ac2dd7ed05ef9368daafa030ae9e7f7456d3170323d24c63d3d98ff1c60",
+          "claim_ids": [
+            "care-0",
+            "care-1",
+            "care-2",
+            "care-3",
+            "care-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "diagnosis",
+          "text_sha256": "db5200db62b1d4aae86e47bb4c9b2a820c1903f1be0ebd6532ff1a4a9dcca781",
+          "claim_ids": [
+            "diagnosis-0",
+            "diagnosis-1",
+            "diagnosis-2",
+            "diagnosis-3",
+            "diagnosis-4"
+          ],
+          "status": "specific_gap",
+          "scope_limitation": "The unrecorded acute/chronic distinction is not addressed; acute suspicion testing cannot be silently treated as the only assessment for every unspecified record."
+        },
+        {
+          "section": "differentials",
+          "text_sha256": "5cb6116f4036d5b9b53f0f9bb0f0b96c8eac2a8bed1759e67d88055d1d0fdaf2",
+          "claim_ids": [
+            "differentials-0",
+            "differentials-1",
+            "differentials-2",
+            "differentials-3",
+            "differentials-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "treatment",
+          "text_sha256": "d5a73d91f0b690fd41a8c0ae2046cf0fe28326b19d0008fb738430dbac314ebb",
+          "claim_ids": [
+            "treatment-0",
+            "treatment-1",
+            "treatment-2"
+          ],
+          "status": "specific_gap",
+          "scope_limitation": "No chronic-obstruction treatment branch or explicit limitation of acute reperfusion to the acute clinical context."
+        },
+        {
+          "section": "medications",
+          "text_sha256": "8ed528283d8eeeb0ac6962397fa647834093f7565117944c42fb2706775a06d5",
+          "claim_ids": [
+            "medications-0",
+            "medications-1",
+            "medications-2",
+            "medications-3",
+            "medications-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "diet",
+          "text_sha256": "aac1f74e44da181dd79480c962f64fab3c54b5f559837887bf9023381f7c0caf",
+          "claim_ids": [
+            "diet-0",
+            "diet-1",
+            "diet-2",
+            "diet-3"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "daily_care",
+          "text_sha256": "8bf216fa7c6e07174c757df8ddaa7e05a05b27a59f9b380ab96ad7c05b2bd679",
+          "claim_ids": [
+            "daily_care-0",
+            "daily_care-1",
+            "daily_care-2"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "special_populations",
+          "text_sha256": "26619e0d8bb190f88d2f1e4ade67a10bdd6bf5a2629c9f143a7133cee3fbfe8b",
+          "claim_ids": [
+            "special_populations-0",
+            "special_populations-1",
+            "special_populations-2",
+            "special_populations-3",
+            "special_populations-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "prognosis_followup",
+          "text_sha256": "3483e2f0211af1d084d0920139d67fa03fab087ba628d4e64888b3b2517fea40",
+          "claim_ids": [
+            "prognosis_followup-0",
+            "prognosis_followup-1",
+            "prognosis_followup-2",
+            "prognosis_followup-3",
+            "prognosis_followup-4"
+          ],
+          "status": "specific_gap",
+          "scope_limitation": "The acute-course duration and recovery explanation lacks the established chronic condition branch."
+        },
+        {
+          "section": "complications",
+          "text_sha256": "13de01195af0a8e0d311d49845125c506057fe1d72e611c0279a0ac4061b2688",
+          "claim_ids": [
+            "complications-0",
+            "complications-1",
+            "complications-2"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "prevention",
+          "text_sha256": "8e6c7f63c47f5fdcdbfb0f1ff28fd14c17e1a859ad709e669c54ee2594b6d313",
+          "claim_ids": [
+            "prevention-0",
+            "prevention-1",
+            "prevention-2"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        }
+      ]
+    },
+    {
+      "condition_id": "retinal-detachment",
+      "code": "9B73.4",
+      "status": "partial",
+      "scope": "documented_partial_leaf_only",
+      "official_row": {
+        "row": 5850,
+        "code": "9B73.4",
+        "title": "- - - - Retinal breaks without detachment",
+        "class_kind": "category",
+        "chapter": "09",
+        "foundation_uri": "http://id.who.int/icd/entity/236011795",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/236011795",
+        "parent_uri": "http://id.who.int/icd/entity/357208479",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "rationale": "A break without detachment is explained as a precursor and a suitable laser/freezing target, but the principal course/repair discussion is established detachment. This is substantive partial coverage of the separate isolated-break category, not a complete direct assignment.",
+      "actual_gaps": {
+        "care": "No distinct explanation of the review pathway for an already diagnosed break that has not detached, including why care can differ from an acute established detachment.",
+        "treatment": "Suitable tear sealing is present, but selection between preventive treatment and monitored care for isolated breaks is not explained.",
+        "prognosis_followup": "No direct account of the course and continuing detachment risk/review after a break alone; the detailed prognosis is macular detachment and surgical reattachment."
+      },
+      "completion_condition": "Add a short supported isolated-break care/monitoring and treatment-selection explanation with its own follow-up/progression boundary. Most diagnostic, symptom and prevention material can remain shared. This does not require duplicated postoperative gas instructions or a laser protocol.",
+      "section_assignment": [
+        {
+          "section": "summary",
+          "text_sha256": "a5efdb9b59a0fb94fc6e234555c61bb30f6321444bd87681adaea91c1ecd8173",
+          "claim_ids": [
+            "summary-1",
+            "summary-2",
+            "summary-3",
+            "summary-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "causes_risks",
+          "text_sha256": "7d401c2b13a5fb6af0bb242751d3556fc7c9f2f46e6d5125352cb9b7bdf8faae",
+          "claim_ids": [
+            "causes_risks-1",
+            "causes_risks-2",
+            "causes_risks-3",
+            "causes_risks-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "red_flags",
+          "text_sha256": "69f79c916e57660cca7775bcec79063afcdecf50a99774a405f8e67795a20990",
+          "claim_ids": [
+            "red_flags-1",
+            "red_flags-2",
+            "red_flags-3",
+            "red_flags-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "care",
+          "text_sha256": "f91c774367e1b830dc8fae4dcd29569d7e19e4187e84e6ddc3da15ad13c5d4ce",
+          "claim_ids": [
+            "care-1",
+            "care-2",
+            "care-3",
+            "care-4"
+          ],
+          "status": "specific_gap",
+          "scope_limitation": "No distinct explanation of the review pathway for an already diagnosed break that has not detached, including why care can differ from an acute established detachment."
+        },
+        {
+          "section": "diagnosis",
+          "text_sha256": "4dfaef70b96e769042dd4491255d59e59c3f7653edfb7f891d0bd06619eb1239",
+          "claim_ids": [
+            "diagnosis-1",
+            "diagnosis-2",
+            "diagnosis-3",
+            "diagnosis-4",
+            "diagnosis-oct"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "differentials",
+          "text_sha256": "f937a66cc8ceab6ef6cb74ae194114b9a8d2e9c71e282ad20557dff5858f7a16",
+          "claim_ids": [
+            "differentials-1",
+            "differentials-2",
+            "differentials-3",
+            "differentials-4",
+            "differentials-sudden-loss"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "treatment",
+          "text_sha256": "09e3f7ff27bd43ac98795b5d19af00c46ab523c85e63b16d8151796055165e80",
+          "claim_ids": [
+            "treatment-1",
+            "treatment-2",
+            "treatment-3",
+            "treatment-4",
+            "treatment-nontear"
+          ],
+          "status": "specific_gap",
+          "scope_limitation": "Suitable tear sealing is present, but selection between preventive treatment and monitored care for isolated breaks is not explained."
+        },
+        {
+          "section": "medications",
+          "text_sha256": "ba87e1feb5f390541fd396dd1599824a12532fa3570aac4062d2a6ae249705ee",
+          "claim_ids": [
+            "medications-1",
+            "medications-2",
+            "medications-3",
+            "medications-steroid-pressure",
+            "medications-steroid-infection",
+            "medications-steroid-review",
+            "medications-4",
+            "medications-drop-safety",
+            "medications-exudative"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "diet",
+          "text_sha256": "d12c4576dfc4ad9b05ac0ad84aad53cb25c6ca3ebf3bd012aae968c7015e861a",
+          "claim_ids": [
+            "diet-1",
+            "diet-2",
+            "diet-3",
+            "diet-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "daily_care",
+          "text_sha256": "d5b7ac8fbfa68438aff2f596809eeb01de7a211ce3ed5b97930fa61e38b83d92",
+          "claim_ids": [
+            "daily_care-1",
+            "daily_care-2",
+            "daily_care-3",
+            "daily_care-4",
+            "daily_care-5",
+            "daily_care-gas-warning",
+            "daily_care-gas-disclosure",
+            "daily_care-dental"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "special_populations",
+          "text_sha256": "ac8970848fd309b53f5bfd0972e1b4ef16acc33f8f10e25e3b799bcea3e471fa",
+          "claim_ids": [
+            "special_populations-1",
+            "special_populations-2",
+            "special_populations-3",
+            "special_populations-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "prognosis_followup",
+          "text_sha256": "464d4cf8b79d6b1365c0c8d56bc7105ecef3d732d5d09dd9141a61a7c54f00a1",
+          "claim_ids": [
+            "prognosis_followup-1",
+            "prognosis_followup-2",
+            "prognosis_followup-3",
+            "prognosis_followup-4"
+          ],
+          "status": "specific_gap",
+          "scope_limitation": "No direct account of the course and continuing detachment risk/review after a break alone; the detailed prognosis is macular detachment and surgical reattachment."
+        },
+        {
+          "section": "complications",
+          "text_sha256": "86f641bf03b95f2e6eec72c8f382255d8e8c166b62e4869bc2b014484aba3854",
+          "claim_ids": [
+            "complications-1",
+            "complications-2",
+            "complications-3",
+            "complications-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "prevention",
+          "text_sha256": "6f9bb847c22c4afba148f1ca1a613b937d081d733f731fe825b7c2ec2edd80fe",
+          "claim_ids": [
+            "prevention-1",
+            "prevention-2",
+            "prevention-3",
+            "prevention-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        }
+      ]
+    },
+    {
+      "condition_id": "retinal-detachment",
+      "code": "9B73.Y",
+      "status": "partial",
+      "scope": "documented_partial_leaf_only",
+      "official_row": {
+        "row": 5851,
+        "code": "9B73.Y",
+        "title": "- - - - Other specified retinal detachments or breaks",
+        "class_kind": "category",
+        "chapter": "09",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/357208479/other",
+        "parent_uri": "http://id.who.int/icd/entity/357208479",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "rationale": "Tractional detachment and PVR are materially explained, but neither is automatically the entire other-specified residual. The official print explicitly redirects PVR with detachment from 9B78.2 to 9B73.Y; it does not enumerate the full residual membership or independently place every tractional variant.",
+      "actual_gaps": {
+        "official_semantic_scope": "The exact other-specified residual membership is not established from the printed heading alone; the observed PVR redirect proves a subset, not all residual forms.",
+        "prognosis_followup": "Current PVR is an identified complication with possible further surgery, without an independently assigned course/follow-up for the complete residual scope."
+      },
+      "completion_condition": "Read the official release-matched index/coding-tool membership for 9B73.Y, explicitly resolve traction/PVR and any additional distinct retained forms against the named siblings/exclusions, then assign the already-written mechanism-specific and shared material. Add only knowledge revealed to be missing by that concrete scope. Do not infer full residual coverage from one PVR mention.",
+      "section_assignment": [
+        {
+          "section": "summary",
+          "text_sha256": "a5efdb9b59a0fb94fc6e234555c61bb30f6321444bd87681adaea91c1ecd8173",
+          "claim_ids": [
+            "summary-1",
+            "summary-2",
+            "summary-3",
+            "summary-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "causes_risks",
+          "text_sha256": "7d401c2b13a5fb6af0bb242751d3556fc7c9f2f46e6d5125352cb9b7bdf8faae",
+          "claim_ids": [
+            "causes_risks-1",
+            "causes_risks-2",
+            "causes_risks-3",
+            "causes_risks-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "red_flags",
+          "text_sha256": "69f79c916e57660cca7775bcec79063afcdecf50a99774a405f8e67795a20990",
+          "claim_ids": [
+            "red_flags-1",
+            "red_flags-2",
+            "red_flags-3",
+            "red_flags-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "care",
+          "text_sha256": "f91c774367e1b830dc8fae4dcd29569d7e19e4187e84e6ddc3da15ad13c5d4ce",
+          "claim_ids": [
+            "care-1",
+            "care-2",
+            "care-3",
+            "care-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "diagnosis",
+          "text_sha256": "4dfaef70b96e769042dd4491255d59e59c3f7653edfb7f891d0bd06619eb1239",
+          "claim_ids": [
+            "diagnosis-1",
+            "diagnosis-2",
+            "diagnosis-3",
+            "diagnosis-4",
+            "diagnosis-oct"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "differentials",
+          "text_sha256": "f937a66cc8ceab6ef6cb74ae194114b9a8d2e9c71e282ad20557dff5858f7a16",
+          "claim_ids": [
+            "differentials-1",
+            "differentials-2",
+            "differentials-3",
+            "differentials-4",
+            "differentials-sudden-loss"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "treatment",
+          "text_sha256": "09e3f7ff27bd43ac98795b5d19af00c46ab523c85e63b16d8151796055165e80",
+          "claim_ids": [
+            "treatment-1",
+            "treatment-2",
+            "treatment-3",
+            "treatment-4",
+            "treatment-nontear"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "medications",
+          "text_sha256": "ba87e1feb5f390541fd396dd1599824a12532fa3570aac4062d2a6ae249705ee",
+          "claim_ids": [
+            "medications-1",
+            "medications-2",
+            "medications-3",
+            "medications-steroid-pressure",
+            "medications-steroid-infection",
+            "medications-steroid-review",
+            "medications-4",
+            "medications-drop-safety",
+            "medications-exudative"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "diet",
+          "text_sha256": "d12c4576dfc4ad9b05ac0ad84aad53cb25c6ca3ebf3bd012aae968c7015e861a",
+          "claim_ids": [
+            "diet-1",
+            "diet-2",
+            "diet-3",
+            "diet-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "daily_care",
+          "text_sha256": "d5b7ac8fbfa68438aff2f596809eeb01de7a211ce3ed5b97930fa61e38b83d92",
+          "claim_ids": [
+            "daily_care-1",
+            "daily_care-2",
+            "daily_care-3",
+            "daily_care-4",
+            "daily_care-5",
+            "daily_care-gas-warning",
+            "daily_care-gas-disclosure",
+            "daily_care-dental"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "special_populations",
+          "text_sha256": "ac8970848fd309b53f5bfd0972e1b4ef16acc33f8f10e25e3b799bcea3e471fa",
+          "claim_ids": [
+            "special_populations-1",
+            "special_populations-2",
+            "special_populations-3",
+            "special_populations-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "prognosis_followup",
+          "text_sha256": "464d4cf8b79d6b1365c0c8d56bc7105ecef3d732d5d09dd9141a61a7c54f00a1",
+          "claim_ids": [
+            "prognosis_followup-1",
+            "prognosis_followup-2",
+            "prognosis_followup-3",
+            "prognosis_followup-4"
+          ],
+          "status": "specific_gap",
+          "scope_limitation": "Current PVR is an identified complication with possible further surgery, without an independently assigned course/follow-up for the complete residual scope."
+        },
+        {
+          "section": "complications",
+          "text_sha256": "86f641bf03b95f2e6eec72c8f382255d8e8c166b62e4869bc2b014484aba3854",
+          "claim_ids": [
+            "complications-1",
+            "complications-2",
+            "complications-3",
+            "complications-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "prevention",
+          "text_sha256": "6f9bb847c22c4afba148f1ca1a613b937d081d733f731fe825b7c2ec2edd80fe",
+          "claim_ids": [
+            "prevention-1",
+            "prevention-2",
+            "prevention-3",
+            "prevention-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        }
+      ]
+    },
+    {
+      "condition_id": "retinal-detachment",
+      "code": "9B73.Z",
+      "status": "partial",
+      "scope": "documented_partial_leaf_only",
+      "official_row": {
+        "row": 5852,
+        "code": "9B73.Z",
+        "title": "- - - - Retinal detachments or breaks, unspecified",
+        "class_kind": "category",
+        "chapter": "09",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/357208479/unspecified",
+        "parent_uri": "http://id.who.int/icd/entity/357208479",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "rationale": "The residual explicitly includes unspecified retinal detachments or breaks, not only a detachment whose mechanism is missing. The article supplies broad detachment education and tear comparison, but the isolated-break pathway remains partial; a general retinal-detachment title is not enough to close this broader residual.",
+      "actual_gaps": {
+        "care": "Need explicit applicable handling when records do not establish whether an isolated break or established detachment is meant; no assumption that every case already needs a reattachment operation.",
+        "treatment": "The missing isolated-break monitored-care versus treatment distinction also affects this residual.",
+        "prognosis_followup": "The residual cannot receive the established-detachment months-to-recovery narrative as its universal course; the break-alone branch needs direct assignment."
+      },
+      "completion_condition": "Resolve the isolated-break care/course gap described for 9B73.4, retain the existing mechanism-selected detachment branches, and then explicitly assign the residual without inventing undocumented detachment or subtype. Do not broaden it to every 9B73 descendant.",
+      "section_assignment": [
+        {
+          "section": "summary",
+          "text_sha256": "a5efdb9b59a0fb94fc6e234555c61bb30f6321444bd87681adaea91c1ecd8173",
+          "claim_ids": [
+            "summary-1",
+            "summary-2",
+            "summary-3",
+            "summary-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "causes_risks",
+          "text_sha256": "7d401c2b13a5fb6af0bb242751d3556fc7c9f2f46e6d5125352cb9b7bdf8faae",
+          "claim_ids": [
+            "causes_risks-1",
+            "causes_risks-2",
+            "causes_risks-3",
+            "causes_risks-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "red_flags",
+          "text_sha256": "69f79c916e57660cca7775bcec79063afcdecf50a99774a405f8e67795a20990",
+          "claim_ids": [
+            "red_flags-1",
+            "red_flags-2",
+            "red_flags-3",
+            "red_flags-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "care",
+          "text_sha256": "f91c774367e1b830dc8fae4dcd29569d7e19e4187e84e6ddc3da15ad13c5d4ce",
+          "claim_ids": [
+            "care-1",
+            "care-2",
+            "care-3",
+            "care-4"
+          ],
+          "status": "specific_gap",
+          "scope_limitation": "Need explicit applicable handling when records do not establish whether an isolated break or established detachment is meant; no assumption that every case already needs a reattachment operation."
+        },
+        {
+          "section": "diagnosis",
+          "text_sha256": "4dfaef70b96e769042dd4491255d59e59c3f7653edfb7f891d0bd06619eb1239",
+          "claim_ids": [
+            "diagnosis-1",
+            "diagnosis-2",
+            "diagnosis-3",
+            "diagnosis-4",
+            "diagnosis-oct"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "differentials",
+          "text_sha256": "f937a66cc8ceab6ef6cb74ae194114b9a8d2e9c71e282ad20557dff5858f7a16",
+          "claim_ids": [
+            "differentials-1",
+            "differentials-2",
+            "differentials-3",
+            "differentials-4",
+            "differentials-sudden-loss"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "treatment",
+          "text_sha256": "09e3f7ff27bd43ac98795b5d19af00c46ab523c85e63b16d8151796055165e80",
+          "claim_ids": [
+            "treatment-1",
+            "treatment-2",
+            "treatment-3",
+            "treatment-4",
+            "treatment-nontear"
+          ],
+          "status": "specific_gap",
+          "scope_limitation": "The missing isolated-break monitored-care versus treatment distinction also affects this residual."
+        },
+        {
+          "section": "medications",
+          "text_sha256": "ba87e1feb5f390541fd396dd1599824a12532fa3570aac4062d2a6ae249705ee",
+          "claim_ids": [
+            "medications-1",
+            "medications-2",
+            "medications-3",
+            "medications-steroid-pressure",
+            "medications-steroid-infection",
+            "medications-steroid-review",
+            "medications-4",
+            "medications-drop-safety",
+            "medications-exudative"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "diet",
+          "text_sha256": "d12c4576dfc4ad9b05ac0ad84aad53cb25c6ca3ebf3bd012aae968c7015e861a",
+          "claim_ids": [
+            "diet-1",
+            "diet-2",
+            "diet-3",
+            "diet-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "daily_care",
+          "text_sha256": "d5b7ac8fbfa68438aff2f596809eeb01de7a211ce3ed5b97930fa61e38b83d92",
+          "claim_ids": [
+            "daily_care-1",
+            "daily_care-2",
+            "daily_care-3",
+            "daily_care-4",
+            "daily_care-5",
+            "daily_care-gas-warning",
+            "daily_care-gas-disclosure",
+            "daily_care-dental"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "special_populations",
+          "text_sha256": "ac8970848fd309b53f5bfd0972e1b4ef16acc33f8f10e25e3b799bcea3e471fa",
+          "claim_ids": [
+            "special_populations-1",
+            "special_populations-2",
+            "special_populations-3",
+            "special_populations-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "prognosis_followup",
+          "text_sha256": "464d4cf8b79d6b1365c0c8d56bc7105ecef3d732d5d09dd9141a61a7c54f00a1",
+          "claim_ids": [
+            "prognosis_followup-1",
+            "prognosis_followup-2",
+            "prognosis_followup-3",
+            "prognosis_followup-4"
+          ],
+          "status": "specific_gap",
+          "scope_limitation": "The residual cannot receive the established-detachment months-to-recovery narrative as its universal course; the break-alone branch needs direct assignment."
+        },
+        {
+          "section": "complications",
+          "text_sha256": "86f641bf03b95f2e6eec72c8f382255d8e8c166b62e4869bc2b014484aba3854",
+          "claim_ids": [
+            "complications-1",
+            "complications-2",
+            "complications-3",
+            "complications-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        },
+        {
+          "section": "prevention",
+          "text_sha256": "6f9bb847c22c4afba148f1ca1a613b937d081d733f731fe825b7c2ec2edd80fe",
+          "claim_ids": [
+            "prevention-1",
+            "prevention-2",
+            "prevention-3",
+            "prevention-4"
+          ],
+          "status": "shared_or_conditional_material_only",
+          "scope_limitation": "Useful shared or comparison material remains; this row does not independently certify the complete leaf while the listed category-specific gaps remain."
+        }
+      ]
+    }
+  ],
+  "mapping_proposals": [
+    {
+      "condition_id": "pulmonary-embolism",
+      "code": "BB00.0",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "283430290caab956eaaa1e89168e116801d545e734f962b7ed449f99f3db6c98",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "Current bilingual article gives explanatory acute clot-related PE education across all 14 dimensions: thrombus mechanism and risks, urgent signs and assessment, diagnostic-test roles/limits, severity-selected treatment, anticoagulant risks, recovery and recurrence prevention. Conditional adult, pediatric and maternal material preserves applicability. Frozen definition includes asymptomatic events; the article uses non-exclusive symptom language and never makes a symptom mandatory for PE. No full clinical decision algorithm is required by the public-education standard.",
+        "exclusions_considered": "WHO BB00 excludes JB64.4 (circulatory disease complicating pregnancy/childbirth/puerperium) and JA05 (complications following abortion/ectopic/molar pregnancy); inherited Chapter 11 exclusions remain. Pregnancy/infant context and non-thrombotic emboli are not additional categories covered. BB00.1 is a separate chronic leaf and BB01.3 CTEPH is coded elsewhere. Parent BB00 is not a denominator member."
+      },
+      "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+    },
+    {
+      "condition_id": "retinal-detachment",
+      "code": "9B73.0",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "The article explicitly explains the tear-fluid mechanism and supplies targeted break-sealing and detachment-repair education, while all other dimensions address the affected retina and the actual conditional care process. Shared warnings, examination, medication safety, recovery and prevention apply across the frozen leaf; non-tear mechanisms are comparative context, not merged into this code. The causing-condition coding note and parent exclusions were considered.",
+        "exclusions_considered": "WHO 9B73 excludes retinal pigment epithelium detachment (9B78.6), and Chapter 09 exclusions/coded-elsewhere entries remain. 9B73.0 is detachment with a retinal break, not isolated breaks (9B73.4), retinoschisis, cysts or all parent descendants. 9B73.3 is serous detachment without a retinal hole/tear/break and excludes central serous chorioretinopathy (9B75.2). Both 9B73.0 and 9B73.3 say code also the causing condition; an educational article mapping is not patient coding and does not count the causing condition as covered. Traumatic, infectious, neoplastic, metabolic and other causal contexts are not silently converted into covered independent diseases."
+      },
+      "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+    },
+    {
+      "condition_id": "retinal-detachment",
+      "code": "9B73.3",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "The article independently explains exudative fluid accumulation without a break, cause-directed treatment for inflammatory/vascular/tumour mechanisms, and the conditional noninfectious-inflammatory medication branch. The other dimensions provide applicable visual-risk, retinal-assessment, monitoring, follow-up and care education. Tear-sealing, postoperative care and gas restrictions retain explicit conditions and are not assumed for every serous detachment. The public standard does not require separate full oncology, uveitis or vascular-treatment guidelines. Central serous chorioretinopathy and pigment-epithelium detachment are excluded from this leaf assessment.",
+        "exclusions_considered": "WHO 9B73 excludes retinal pigment epithelium detachment (9B78.6), and Chapter 09 exclusions/coded-elsewhere entries remain. 9B73.0 is detachment with a retinal break, not isolated breaks (9B73.4), retinoschisis, cysts or all parent descendants. 9B73.3 is serous detachment without a retinal hole/tear/break and excludes central serous chorioretinopathy (9B75.2). Both 9B73.0 and 9B73.3 say code also the causing condition; an educational article mapping is not patient coding and does not count the causing condition as covered. Traumatic, infectious, neoplastic, metabolic and other causal contexts are not silently converted into covered independent diseases."
+      },
+      "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+    },
+    {
+      "condition_id": "pulmonary-embolism",
+      "code": "BB00.1",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "283430290caab956eaaa1e89168e116801d545e734f962b7ed449f99f3db6c98",
+      "method": "semantic_scope_review",
+      "rationale": "Chronic pulmonary thromboembolism is a separate frozen category, not merely prolonged acute recovery. The article mentions CTEPH/residual obstruction as complications but supplies no independent chronic-disease assessment or management branch. WHO additionally marks BB01.3 CTEPH as coded elsewhere; the complication sentence cannot certify BB00.1. Completion: Add a concise, source-supported chronic-obstruction description, why persistent limitations need a different assessment, and the goals/major options of that specialist treatment and follow-up. Reuse shared anticoagulant safety, diet and warning signs. No detailed haemodynamic algorithm or duplicate full article is necessary.",
+      "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+    },
+    {
+      "condition_id": "pulmonary-embolism",
+      "code": "BB00.Z",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "283430290caab956eaaa1e89168e116801d545e734f962b7ed449f99f3db6c98",
+      "method": "semantic_scope_review",
+      "rationale": "Unspecified means documented pulmonary thromboembolism without sufficient acute/chronic detail; it does not mean an unconfirmed PE. Unlike MI unspecified ST type, the present article does not supply both materially different temporal care branches. It therefore provides substantial generic education but cannot yet be adjudicated as applicable across this entire residual leaf. Completion: Make acute versus established chronic disease applicability explicit in the existing diagnosis/treatment/follow-up dimensions, using the concise chronic branch above. Then bind shared claims without assuming the missing temporal detail. A standalone coding paragraph or broad title alone is neither required nor sufficient.",
+      "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+    },
+    {
+      "condition_id": "retinal-detachment",
+      "code": "9B73.4",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
+      "method": "semantic_scope_review",
+      "rationale": "A break without detachment is explained as a precursor and a suitable laser/freezing target, but the principal course/repair discussion is established detachment. This is substantive partial coverage of the separate isolated-break category, not a complete direct assignment. Completion: Add a short supported isolated-break care/monitoring and treatment-selection explanation with its own follow-up/progression boundary. Most diagnostic, symptom and prevention material can remain shared. This does not require duplicated postoperative gas instructions or a laser protocol.",
+      "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+    },
+    {
+      "condition_id": "retinal-detachment",
+      "code": "9B73.Y",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
+      "method": "semantic_scope_review",
+      "rationale": "Tractional detachment and PVR are materially explained, but neither is automatically the entire other-specified residual. The official print explicitly redirects PVR with detachment from 9B78.2 to 9B73.Y; it does not enumerate the full residual membership or independently place every tractional variant. Completion: Read the official release-matched index/coding-tool membership for 9B73.Y, explicitly resolve traction/PVR and any additional distinct retained forms against the named siblings/exclusions, then assign the already-written mechanism-specific and shared material. Add only knowledge revealed to be missing by that concrete scope. Do not infer full residual coverage from one PVR mention.",
+      "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+    },
+    {
+      "condition_id": "retinal-detachment",
+      "code": "9B73.Z",
+      "release": "2026-01",
+      "status": "partial",
+      "content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
+      "method": "semantic_scope_review",
+      "rationale": "The residual explicitly includes unspecified retinal detachments or breaks, not only a detachment whose mechanism is missing. The article supplies broad detachment education and tear comparison, but the isolated-break pathway remains partial; a general retinal-detachment title is not enough to close this broader residual. Completion: Resolve the isolated-break care/course gap described for 9B73.4, retain the existing mechanism-selected detachment branches, and then explicitly assign the residual without inventing undocumented detachment or subtype. Do not broaden it to every 9B73 descendant.",
+      "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+    }
+  ],
+  "other_categories_not_claimed": [
+    {
+      "codes": [
+        "BB00",
+        "9B73",
+        "9B73.1"
+      ],
+      "status": "excluded_parent",
+      "reason": "Official is_leaf=false; no parent or prefix coverage is counted."
+    },
+    {
+      "codes": [
+        "9B73.10",
+        "9B73.11",
+        "9B73.1Y",
+        "9B73.1Z"
+      ],
+      "status": "not_covered",
+      "reason": "Retinoschisis is splitting of retinal neural layers, which is not explained as an independent condition. The present separation from support tissue description cannot be reused as its defining mechanism. No need to create spurious rejected mappings for these absent candidates."
+    },
+    {
+      "codes": [
+        "9B73.2"
+      ],
+      "status": "not_covered",
+      "reason": "Retinal cyst is a distinct sac/cavity category without a corresponding explanatory condition pathway in this article."
+    },
+    {
+      "codes": [
+        "BB01.3",
+        "9B75.2",
+        "9B78.6",
+        "JB64.4",
+        "JA05"
+      ],
+      "status": "not_claimed",
+      "reason": "A mentioned complication, coded-elsewhere condition, excluded diagnosis or cause is not independently covered."
+    }
+  ],
+  "validation": {
+    "snapshot": "load_icd re-parsed/validated the frozen WHO ZIP, rules and catalog.",
+    "article_hashes_match_acceptance": true,
+    "confirmed_section_matrices": 42,
+    "confirmed_claim_references": 191,
+    "partial_section_assignments": 70,
+    "proposal_check": "coverage_icd evaluated replaced/added proposals in memory only; generated reports and mappings were not written.",
+    "covered_categories_at_read": 5,
+    "covered_categories_if_integrated": 8,
+    "prospective_coverage_count_delta": 3,
+    "actual_persisted_coverage_count_delta": 0,
+    "denominator": 13155,
+    "prospective_issues": [],
+    "shared_files_modified": false
+  },
+  "parent_integration": "Import the three confirmed records and five partial records as desired, replacing a matching condition_id/code pair rather than duplicating it. New partial candidates add no coverage count. Validate the current article hashes and editorial/ICD consistency before reporting an increased numerator; retain medical_reviewed=false. The semantic report does not require another unchanged-source review.",
+  "rights": "Official titles/codes/URIs retained verbatim; all applicability decisions are project additions. Only original paraphrases and precise official locators are included, not source full text. WHO attribution/license remains in data/icd/README.md.",
+  "stop": "This is one new-evidence classification adjudication. Further review is warranted only for the specific missing content or official residual membership identified here, not repetition of already accepted medical claims."
+}

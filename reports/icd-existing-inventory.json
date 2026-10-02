@@ -1,6 +1,6 @@
 {
   "snapshot_sha256": "f1356588f40953a83e3af2b662deab47c5e269f944d1ea4ed0cfeb2007c7cd39",
-  "matching_method": "47 normalized name proposals pending; OSA7A41 and torsionGB01.0 confirmed. MI article independently cross-checked, with leaf-specific scope gaps recorded separately.",
+  "matching_method": "47 normalized-name proposals remain pending; 8 leaf mappings are semantically confirmed and editorially qualified across 5 articles; 5 mapped scopes remain explicitly partial. Shared text is allocated by category, never counted through a parent title.",
   "items": [
     {
       "kind": "condition",
@@ -256,8 +256,8 @@
       "state": "full_article_evidence_and_mapping_incomplete",
       "candidate_codes": [
         "RA01",
-        "XN83D",
-        "XN109"
+        "XN109",
+        "XN83D"
       ],
       "counts_as_qualified_coverage": false
     },
@@ -888,7 +888,7 @@
         "zh-CN": "阻塞性睡眠呼吸暂停",
         "en": "Obstructive sleep apnea"
       },
-      "state": "qualified_article_and_semantic_mapping",
+      "state": "qualified_article_with_confirmed_leaf_scope",
       "candidate_codes": [
         "7A41"
       ],
@@ -1104,17 +1104,6 @@
       "candidate_codes": [
         "CA24"
       ],
-      "counts_as_qualified_coverage": false
-    },
-    {
-      "kind": "backlog",
-      "id": "planned-019",
-      "names": {
-        "zh-CN": "肺栓塞",
-        "en": "Pulmonary embolism"
-      },
-      "state": "title_only",
-      "candidate_codes": [],
       "counts_as_qualified_coverage": false
     },
     {
@@ -2260,17 +2249,6 @@
       "candidate_codes": [
         "9C61"
       ],
-      "counts_as_qualified_coverage": false
-    },
-    {
-      "kind": "backlog",
-      "id": "planned-119",
-      "names": {
-        "zh-CN": "视网膜脱离",
-        "en": "Retinal detachment"
-      },
-      "state": "title_only",
-      "candidate_codes": [],
       "counts_as_qualified_coverage": false
     },
     {
@@ -3900,7 +3878,7 @@
         "zh-CN": "睾丸扭转",
         "en": "Testicular torsion"
       },
-      "state": "qualified_article_and_semantic_mapping",
+      "state": "qualified_article_with_confirmed_leaf_scope",
       "candidate_codes": [
         "GB01.0"
       ],
@@ -3913,13 +3891,45 @@
         "zh-CN": "心肌梗死（心脏病发作）",
         "en": "Myocardial infarction (heart attack)"
       },
-      "state": "qualified_article_mapping_incomplete",
+      "state": "qualified_article_with_confirmed_leaf_scope",
       "candidate_codes": [
         "BA41.0",
         "BA41.1",
         "BA41.Z"
       ],
-      "counts_as_qualified_coverage": false
+      "counts_as_qualified_coverage": true
+    },
+    {
+      "kind": "condition",
+      "id": "pulmonary-embolism",
+      "names": {
+        "zh-CN": "肺栓塞（肺血栓栓塞）",
+        "en": "Pulmonary embolism"
+      },
+      "candidate_codes": [
+        "BB00.0",
+        "BB00.1",
+        "BB00.Z"
+      ],
+      "counts_as_qualified_coverage": true,
+      "state": "qualified_article_with_confirmed_leaf_scope"
+    },
+    {
+      "kind": "condition",
+      "id": "retinal-detachment",
+      "names": {
+        "zh-CN": "视网膜脱离",
+        "en": "Retinal detachment"
+      },
+      "candidate_codes": [
+        "9B73.0",
+        "9B73.3",
+        "9B73.4",
+        "9B73.Y",
+        "9B73.Z"
+      ],
+      "counts_as_qualified_coverage": true,
+      "state": "qualified_article_with_confirmed_leaf_scope"
     }
   ]
 }

@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-02",
+  "verdict": "accepted_editorial_cross_check",
+  "medical_reviewed": false,
+  "target": {
+    "id": "pulmonary-embolism",
+    "author_canonical_sha256": "f55b167519e4d8ddf1947ecd9e494e5d0a4eae9236538d9871adeafa960be0a9",
+    "publication_content_sha256": "283430290caab956eaaa1e89168e116801d545e734f962b7ed449f99f3db6c98",
+    "input_canonical_sha256": "00d97a597cc309645163b6f2c06a07dc206f31c2217d658b4028bd91f44b47cf"
+  },
+  "scope": {
+    "sections": 14,
+    "claims": 55,
+    "sources": 21,
+    "changed_claims_reviewed": 32,
+    "unchanged_claims_inherited": 23
+  },
+  "evidence_chain": [
+    {
+      "path": "reports/batch-01-pulmonary-embolism-independent.json",
+      "file_sha256": "ff366cc87236318d6dd128512ae9dda66889a1dfe407fad38c61b2c1968e7cfd"
+    },
+    {
+      "path": "reports/batch-01-pe-review-fixes.json",
+      "file_sha256": "e69ffe08b1b92d4ac3ab553df7786046cfa7ab301c9904516b298a926999b05f"
+    },
+    {
+      "path": "reports/batch-01-pe-revision-payload.json",
+      "file_sha256": "c114896749107edd3c7bd930b3810f889872bd5b03f9fef4ba0660087b24b18a"
+    },
+    {
+      "path": "reports/batch-01-pe-final-targeted-recheck.json",
+      "file_sha256": "d98c5aab16af0e5b8c4bf8b7b6a5c08645cd35a889451fed38b32f960dddf5d8"
+    }
+  ],
+  "patches": [
+    {
+      "claim_id": "diagnosis-1",
+      "source_id": "pe-bsps-d-dimer",
+      "operation": "add_support",
+      "locator": "Clinical Indication29–31; Record last updated52–54",
+      "assessment": "Directly supports infection as an example of raised D-dimer and probability-based interpretation. Mayo and MSD independently support nonspecific positivity; no numeric cutoff imported."
+    },
+    {
+      "claim_id": "diagnosis-1",
+      "source_id": "pe-msd",
+      "operation": "replace_support_locator_assessment",
+      "locator": "Clinical probability222–238; Diagnostic testing281–283",
+      "assessment": "Supports clinical probability and nonspecific D-dimer positivity. Does not itself explicitly give infection as the example; that detail is supported by pe-bsps-d-dimer. No numerical rule-out thresholds imported."
+    },
+    {
+      "claim_id": "medications-4",
+      "source_id": "pe-tc-patient",
+      "operation": "replace_support_locator_assessment",
+      "locator": "Printedpp6,21,23(PDFpp7,22,24): prescribed use; missed-dose449–452; surgery514–520",
+      "assessment": "Follow prescribed use and seek medicine-specific advice instead of independently increasing a missed dose. Discuss procedural stopping with the team. Does not adopt a universal missed-dose algorithm or interruption time."
+    },
+    {
+      "claim_id": "special_populations-1",
+      "source_id": "pe-tc-patient",
+      "operation": "replace_support_locator_assessment",
+      "locator": "Printedpp6,23,27(PDFpp7,24,28): prescribed use; no self-stopping514–520; pregnancy planning/discovery583–590",
+      "assessment": "Prompt contact on pregnancy discovery/planning, oral-drug fetal concerns and clinician-selected LMWH. Prescribed-use paragraphs support no unilateral stopping. No fetal-risk number or dose added."
+    },
+    {
+      "claim_id": "special_populations-2",
+      "source_id": "pe-tc-pregnancy",
+      "operation": "replace_support_locator_assessment",
+      "locator": "Printedp3 Breastfeeding38–42; printedp4 Postpartum anticoagulation86–94",
+      "assessment": "UFH, LMWH and warfarin can be breastfeeding options; postpartum treatment considers bleeding and feeding status. No restart timing or blanket DOAC lactation claim imported."
+    }
+  ],
+  "source_metadata_updates": [
+    {
+      "source_id": "pe-tc-pregnancy",
+      "before_metadata_sha256": "46fc4872ab975e8273b15c357a7c2cec2035307ab57935456e08fa99451bf089",
+      "after": {
+        "id": "pe-tc-pregnancy",
+        "title": "Thrombosis Canada — Pregnancy: Venous Thromboembolism Treatment",
+        "url": "https://thrombosiscanada.ca/clinical_guides/pdfs/TREATMENTOFDEEPVEINTHROMBOSISP_50.pdf",
+        "organization": "Thrombosis Canada",
+        "independence_group": "CA-THROMBOSIS-CANADA",
+        "type": "clinical_guidance",
+        "jurisdiction": "CA",
+        "publication_date": "2025-05-01",
+        "accessed_at": "2026-10-02",
+        "retrieval_status": "article_retrieved",
+        "retrieval_scope": "Version 01May2025, footer p.6. Original PDF text read pp.1–3 and references/version p.6. Pregnancy/postpartum VTE; limited trial evidence and observational/expert basis acknowledged. No doses or delivery stop/restart timings imported. Independent targeted recheck on2026-10-02 additionally read postpartum anticoagulation onp4(lines86–94); breastfeedingp3(lines38–42); version01May2025 confirmedp6(line151). No dose or restart interval imported.",
+        "claim_verification": "pending",
+        "copyright": "Source rights retained. Original bilingual synthesis and links only; no full-text or images redistributed."
+      }
+    }
+  ],
+  "actual_source_ids": [
+    "pe-aha-2026",
+    "pe-aha-patient",
+    "pe-ahrq-anticoagulant",
+    "pe-ash-pediatric",
+    "pe-bsps-d-dimer",
+    "pe-cdc",
+    "pe-mayo",
+    "pe-msd",
+    "pe-msd-pneumothorax",
+    "pe-nhlbi",
+    "pe-nhlbi-causes",
+    "pe-nhlbi-diagnosis",
+    "pe-nhlbi-recovery",
+    "pe-nhlbi-treatment",
+    "pe-nhlbi-women",
+    "pe-nhs",
+    "pe-nhs-considerations",
+    "pe-nhs-side-effects",
+    "pe-nice-ng158",
+    "pe-tc-patient",
+    "pe-tc-pregnancy"
+  ],
+  "classification": {
+    "status": "pending_separate_category_mapping",
+    "does_not_block_editorial_release": true,
+    "coverage_count_delta": 0,
+    "decisions": [
+      {
+        "code": "BB00",
+        "status": "excluded_parent",
+        "reason": "Frozen official category is parent, not eligible leaf."
+      },
+      {
+        "code": "BB00.0",
+        "status": "substantive_partial_mapping_pending",
+        "reason": "Main article provides acute thrombotic PE education. This targeted revision review does not certify official category-level completeness."
+      },
+      {
+        "code": "BB00.1",
+        "status": "mention_only_not_complete",
+        "reason": "Chronic thromboembolic consequences are complications here, not full separate chronic-PE diagnosis/treatment."
+      },
+      {
+        "code": "BB00.Z",
+        "status": "mapping_pending",
+        "reason": "Generic title is not automatically a confirmed unspecified-category mapping."
+      }
+    ],
+    "catalog_release": "2026-01",
+    "catalog_file_sha256": "3db9a09b98634b08caeb46119a1aec344341e3f2db8b2fc7997ed0e33b3ed15f",
+    "official_rows": [
+      {
+        "row": 6450,
+        "code": "BB00",
+        "title": "- - Pulmonary thromboembolism",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "http://id.who.int/icd/entity/1014964218",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1014964218",
+        "parent_uri": "http://id.who.int/icd/entity/1703442464",
+        "is_leaf": false,
+        "is_residual": false,
+        "decision": "excluded",
+        "reason": "parent_category_not_counted_twice",
+        "release": "2026-01"
+      },
+      {
+        "row": 6451,
+        "code": "BB00.0",
+        "title": "- - - Acute pulmonary thromboembolism",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "http://id.who.int/icd/entity/74279006",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/74279006",
+        "parent_uri": "http://id.who.int/icd/entity/1014964218",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      {
+        "row": 6452,
+        "code": "BB00.1",
+        "title": "- - - Chronic pulmonary thromboembolism",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "http://id.who.int/icd/entity/653179449",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/653179449",
+        "parent_uri": "http://id.who.int/icd/entity/1014964218",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      {
+        "row": 6453,
+        "code": "BB00.Z",
+        "title": "- - - Pulmonary thromboembolism, unspecified",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1014964218/unspecified",
+        "parent_uri": "http://id.who.int/icd/entity/1014964218",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      }
+    ]
+  },
+  "validation": "Exact unchanged body, precise claim links, source metadata and section hashes verified; no substantive medical issue remains."
+}

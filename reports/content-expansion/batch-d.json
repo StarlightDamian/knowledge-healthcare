@@ -3726,5 +3726,1485 @@
         "uncertainty_boundary": "Exact bilingual claims, source-specific scope and independent review are in the canonical ledger and acceptance record."
       }
     }
+  },
+  {
+    "condition_id": "retinal-detachment",
+    "canonical_claim_records": "data/evidence/editorial-checks/batch-01-retinal.json",
+    "checked_at": "2026-10-02",
+    "medical_reviewed": false,
+    "inspected_sources": [
+      {
+        "source_id": "b1-acute-retina-aoa-retinal-guideline",
+        "url": "https://www.aoa.org/AOA/Documents/Practice%20Management/Clinical%20Guidelines/Consensus-based%20guidelines/Care%20of%20Patient%20with%20Retinal%20Detachment%20and%20Peripheral%20Vitreotretinal%20Disease.pdf",
+        "locators": [
+          "Printedpage27 / Early Detection and Prevention: at-risk patients, periodic dilated fundus examinations"
+        ],
+        "retrieval_scope": "Official indexed PDF printedpage27 Early Detection and Prevention: periodic dilated fundus exams in at-risk patients. Title page and current AOA listing confirm1995/revised1999/reviewed2004. Direct PDF open failed; exact indexed passage read. Historical corroboration only, alongside NEI current advice and RANZCO2026 follow-up principle; no numeric exam schedule imported."
+      },
+      {
+        "source_id": "b1-acute-retina-asrs",
+        "url": "https://www.asrs.org/patients/retinal-diseases/6/retinal-detachment",
+        "locators": [
+          "Symptoms in detail",
+          "Causes: rhegmatogenous; Causes: tractional/exudative; Risk factors",
+          "Diagnostic testing, ultrasound; Diagnostic testing, OCT",
+          "Causes / Treatment and prognosis; Treatment and prognosis: three procedures; Treatment and prognosis: final two paragraphs",
+          "Causes: tractional detachment; Risk factors",
+          "Treatment and prognosis: macula and preoperative vision; Treatment and prognosis: final paragraph",
+          "Risk factors (line48): severe myopia"
+        ],
+        "retrieval_scope": "Official full indexed page actually read: Symptoms, Causes, Risk factors, Diagnostic testing, Treatment and prognosis. OCT versus ultrasound and macular visual prognosis."
+      },
+      {
+        "source_id": "b1-acute-retina-asrs-complex",
+        "url": "https://www.asrs.org/patients/retinal-diseases/34/complex-retinal-detachment",
+        "locators": [
+          "Diagnostic testing, OCT",
+          "Treatment and prognosis",
+          "Causes (lines50-54): scar contraction and PVR repair failure",
+          "Causes / Treatment and prognosis"
+        ],
+        "retrieval_scope": "Full page read: Causes and Treatment and prognosis, PVR membrane contraction and additional surgery. Same ASRS origin as general page."
+      },
+      {
+        "source_id": "b1-acute-retina-asrs-diabetes-guideline",
+        "url": "https://www.asrs.org/content/documents/managementnonproliferativeproliferativedrwithoutdiabeticmacularedema.pdf",
+        "locators": [
+          "Systemic risk factors: glycemic/blood-pressure/lipid optimization"
+        ],
+        "retrieval_scope": "Official indexed abstract/systemic-risk sections read: glycemic, blood-pressure and lipid optimization; no numeric targets or treatment regimen imported. Shares ADA/DRS/ETDRS underlying evidence."
+      },
+      {
+        "source_id": "b1-acute-retina-asrs-imaging",
+        "url": "https://www.asrs.org/patients/advanced-retinal-imaging",
+        "locators": [
+          "Dilated retina exam / final paragraph: accompaniment and drive home; Ophthalmic ultrasound"
+        ],
+        "retrieval_scope": "Official indexed imaging definitions and last paragraph on dilation and accompanied transport actually read. Same ASRS editorial group."
+      },
+      {
+        "source_id": "b1-acute-retina-asrs-sports",
+        "url": "https://www.asrs.org/content/documents/sports-safety-for-retina-health-patient-guide-final.pdf",
+        "locators": [
+          "PDF page2: reducing sports-related retinal injury risk, first two bullets"
+        ],
+        "retrieval_scope": "Official indexed PDF page2 of2: protective eyewear, suitable fit/shatterproof material; retinal injury types and named authors. Direct PDF open failed in web tool, actual indexed page read. No verified publication date or comparative benefit for high myopia supplied."
+      },
+      {
+        "source_id": "b1-acute-retina-cleveland",
+        "url": "https://my.clevelandclinic.org/health/diseases/10705-retinal-detachment",
+        "locators": [
+          "Outlook / Prognosis: how soon treatment, initial vision and complications"
+        ],
+        "retrieval_scope": "Official indexed full clinical text actually read, medically reviewed16July2026: Outlook includes treatment timing, initial vision and postoperative complications. Does not provide an all-patient percentage."
+      },
+      {
+        "source_id": "b1-acute-retina-cuh-repair",
+        "url": "https://www.cuh.nhs.uk/patient-information/surgical-repair-of-retinal-detachment/",
+        "locators": [
+          "Varieties of splint: External (line303) and Internal (line305)",
+          "Eye drops / outpatient appointment (line325); Eye drops",
+          "Recovery of vision; Eye drops / outpatient appointment"
+        ],
+        "retrieval_scope": "Document2965 version8. Full surgical repair, splints, posturing, recovery of vision and eye drops read. Hospital-specific intervals not universalized."
+      },
+      {
+        "source_id": "b1-acute-retina-diabetes-surgery-sussex",
+        "url": "https://www.uhsussex.nhs.uk/resources/your-diabetes-and-your-surgery-2/",
+        "locators": [
+          "What to expect / After operation"
+        ],
+        "retrieval_scope": "Official indexed What to expect / After operation text read: fasting changes glucose plan and postoperative checks. Direct open returned page shell; indexed text used; no blanket nil-by-mouth timing or dose advice imported."
+      },
+      {
+        "source_id": "b1-acute-retina-glos-drops",
+        "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/eye-drops-ghpi0067/",
+        "locators": [
+          "Remember: no sharing and stop only if instructed",
+          "How to use: wash hands"
+        ],
+        "retrieval_scope": "Official indexed patient text read: wash hands, no sharing, do not stop unless professional instructs. Direct reopen timed out; indexed text only counted."
+      },
+      {
+        "source_id": "b1-acute-retina-kgh-emergency-transport",
+        "url": "https://www.kgh.nhs.uk/eye-casualty-department/",
+        "locators": [
+          "What is an eye emergency, line35; Vision assessment, line90; alternative transport, line65"
+        ],
+        "retrieval_scope": "Actually read What is an eye emergency (line35: sudden loss of vision); Vision assessment (line90: do not drive to hospital; dilation can blur vision); alternative transport at line65. Independent hospital service instructions, not a copy of NHS national vision-loss article. Supports no-self-driving in urgent eye attendance; no universal referral process, opening hours, dilation duration or ambulance threshold. No publication date shown."
+      },
+      {
+        "source_id": "b1-acute-retina-leeds-anaesthetic",
+        "url": "https://www.leedsth.nhs.uk/patients/resources/you-and-your-anaesthetic/",
+        "locators": [
+          "Types of anaesthesia / Meeting your anaesthetist",
+          "On the day of your operation; On the day of your operation: Diabetes",
+          "Meeting your anaesthetist; Before coming to hospital: plan recovery and help"
+        ],
+        "retrieval_scope": "Information Collected, Before hospital, On day of operation, Diabetes, Meeting anaesthetist, Getting ready: fasting/medication plans, history, last intake; planned-surgery context. Not a reason to delay urgent eye assessment."
+      },
+      {
+        "source_id": "b1-acute-retina-leeds-drops",
+        "url": "https://www.leedsth.nhs.uk/wp-content/uploads/2024/04/Eye-drop-diary.pdf",
+        "locators": [
+          "Items3 and6, no sharing/end of treatment"
+        ],
+        "retrieval_scope": "One-page PDF actually read: hand washing, no sharing, names/eye/frequency diary. No generic28day discard rule imported because product-specific instructions vary."
+      },
+      {
+        "source_id": "b1-acute-retina-leeds-postop",
+        "url": "https://www.leedsth.nhs.uk/patients/resources/vitrectomy-post-operative-advice/",
+        "locators": [
+          "Morning after operation / You are advised"
+        ],
+        "retrieval_scope": "LN005058 edition003 version1. Morning after surgery, You are advised, Contact us: hand washing, drops/shield, no rubbing, worsening vision/pain/discharge. No fixed recovery intervals imported."
+      },
+      {
+        "source_id": "b1-acute-retina-mayo-treatment",
+        "url": "https://www.mayoclinic.org/diseases-conditions/retinal-detachment/diagnosis-treatment/drc-20351348",
+        "locators": [
+          "Diagnosis: repeat examination and new symptoms",
+          "Diagnosis / What to expect from your doctor, questions1/4/5/7/8",
+          "Diagnosis: delayed tear and new symptoms; Treatment / Retinal tears",
+          "Retinal tears / Retinal detachment; Retinal detachment: procedure selection and final prognosis paragraph",
+          "Retinal detachment: final prognosis paragraph"
+        ],
+        "retrieval_scope": "Official indexed Diagnosis, Treatment/Retinal tears/Retinal detachment read. Repeat exam after initially negative assessment, blood-obscured ultrasound, procedures and incomplete visual recovery. Subsequent actual page text read: Coping and support, Preparing for appointment, What to expect from doctor (timing, injuries, surgery, diabetes), and displayed27September2024date."
+      },
+      {
+        "source_id": "b1-acute-retina-moorfields",
+        "url": "https://www.moorfields.nhs.uk/eye-conditions/retinal-detachment/diagnosis-and-treatment",
+        "locators": [
+          "After operation; follow-up; recovery",
+          "After your operation; Anaesthesia for your operation; Recovery: worsening symptoms",
+          "Anaesthesia; reattachment procedures",
+          "Posturing; gas type; After your operation: no rubbing / eye shield; Posturing tailored by surgeon; Recovery: worsening pain/vision",
+          "Posturing instructions",
+          "Further surgery (lines111-112, PVR/re-detachment/poorer result); Your vision after surgery (lines134-136); Posturing; gas line; blurred vision",
+          "Risks; Proliferative vitreoretinopathy / further surgery"
+        ],
+        "retrieval_scope": "Actually opened full treatment and recovery page: anesthesia, surgery, gas flight/nitrous oxide warning, recurrence, drops, posturing, recovery and follow-up. Local service intervals are not universal."
+      },
+      {
+        "source_id": "b1-acute-retina-moorfields-floaters",
+        "url": "https://www.moorfields.nhs.uk/eye-conditions/flashes-and-floaters/diagnosis-and-treatment",
+        "locators": [
+          "Treatment for flashes and floaters",
+          "Treatment: new onset floaters with flashes urgent assessment"
+        ],
+        "retrieval_scope": "Official full indexed treatment text: unchanged longstanding few floaters versus sudden new floaters/flashes urgent specialist review; treatment if vision affected."
+      },
+      {
+        "source_id": "b1-acute-retina-moorfields-macular-gas",
+        "url": "https://moorfields.nhs.uk/eye-conditions/macular-hole/diagnosis-and-treatment",
+        "locators": [
+          "When to contact us immediately after surgery (lines129-137): worsening pain, sudden loss of vision, increasing redness",
+          "After surgery: prescribed antibiotics and anti-inflammatory drops (line97)",
+          "Before your surgery / Fasting",
+          "Important warnings about the gas bubble; Important warnings: Nitrous Oxide; Nitrous Oxide warning: surgery, A&E and childbirth; Nitrous Oxide warning: dental work",
+          "When to contact us immediately after surgery (lines129-137): worsening pain, sudden loss of vision, increasing redness",
+          "When to contact us immediately after surgery (lines129-137): worsening pain, sudden loss of vision, increasing redness"
+        ],
+        "retrieval_scope": "Actually read After surgery (antibiotic/anti-inflammatory drops), The Gas Bubble / Important warnings (flying, high altitude, nitrous oxide and disclosure), and When to contact us immediately (postoperative pain, vision loss, increasing redness). Applies shared vitrectomy postoperative warnings and intraocular-gas physics only; not macular-hole efficacy, fixed posture or recovery times."
+      },
+      {
+        "source_id": "b1-acute-retina-moorfields-steroid-infection",
+        "url": "https://www.moorfields.nhs.uk/eye-conditions/acanthamoeba-keratitis/diagnosis-and-treatment",
+        "locators": [
+          "Can steroid drops cause any complications?"
+        ],
+        "retrieval_scope": "Eye drops and other medicines / Can steroid drops cause any complications?: delayed infection clearing, cataract and pressure; treatment section describes careful specialist use. Only corroborates that steroids can aggravate some ocular infections; AK regimen, outcomes and old licensing statements are not transferred. Actual official indexed article read."
+      },
+      {
+        "source_id": "b1-acute-retina-msd",
+        "url": "https://www.msdmanuals.com/professional/eye-disorders/retinal-disorders/retinal-detachment",
+        "locators": [
+          "Etiology",
+          "Symptoms and Signs: obscured retina and B-scan",
+          "Treatment: tears without detachment can be sealed",
+          "Treatment: rhegmatogenous versus nonrhegmatogenous; Treatment: sealing tears and detachment surgery; Treatment: final nonrhegmatogenous paragraph",
+          "Treatment: exudative inflammatory causes; Treatment: nonrhegmatogenous detachment from uveitis, systemic/local corticosteroid or systemic immunosuppression",
+          "Treatment / urgent examination",
+          "Etiology / Treatment by cause",
+          "Treatment / urgent ophthalmoscopy"
+        ],
+        "retrieval_scope": "Official full indexed article read, full review June2026: Etiology, Symptoms and Signs, Treatment; vitreoretinal traction and exudative uveitis treatment differentiated. Day of month not supplied."
+      },
+      {
+        "source_id": "b1-acute-retina-nei",
+        "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/retinal-detachment",
+        "locators": [
+          "What is retinal detachment; Symptoms; What are the symptoms?; Medical emergency / What are the symptoms?",
+          "Am I at risk?",
+          "Medical emergency; Symptoms",
+          "Diagnosis; urgent assessment; Medical emergency",
+          "Dilated eye exam",
+          "Symptoms and diagnosis; Symptoms and medical emergency",
+          "Treatment and medical emergency",
+          "Am I at risk? / emergency symptoms",
+          "Permanent vision loss; Symptoms; untreated detachment",
+          "Can I prevent retinal detachment?; Can I prevent retinal detachment? (line73); Am I at risk? severe myopia; Can I prevent retinal detachment? (line76); risk section past detachment/other eye disease; Medical emergency / Prevention"
+        ],
+        "retrieval_scope": "Actually opened: symptoms; risk factors; prevention; dilated eye examination; laser and surgery. The current-page update date needs independent recheck."
+      },
+      {
+        "source_id": "b1-acute-retina-nei-diabetes",
+        "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/diabetic-retinopathy",
+        "locators": [
+          "What are the symptoms? paragraph2; Other problems: tractional detachment",
+          "Treatment: vitrectomy for bleeding/scars and diabetes control",
+          "Other problems / Prevention / Treatment"
+        ],
+        "retrieval_scope": "Symptoms paragraph2: bleeding into vitreous and dark floaters; Other problems: tractional detachment; Prevention and Treatment, including vitrectomy for blood/scars. Full relevant text read."
+      },
+      {
+        "source_id": "b1-acute-retina-nei-dilation",
+        "url": "https://www.nei.nih.gov/eye-health-information/healthy-vision/finding-eye-doctor/get-dilated-eye-exam",
+        "locators": [
+          "How does dilation work? / What happens after a dilated eye exam?",
+          "How often? (line25)"
+        ],
+        "retrieval_scope": "How dilation works; What happens after a dilated eye exam: temporary blur/light sensitivity and transport; exam frequency. Actual full page read."
+      },
+      {
+        "source_id": "b1-acute-retina-nhs",
+        "url": "https://www.nhs.uk/conditions/detached-retina-retinal-detachment/",
+        "locators": [
+          "Overview; Urgent symptoms; Urgent advice",
+          "Urgent action; Recovery / Important: increasing pain, redness or blurriness after surgery (line62)",
+          "Urgent symptoms; 111 urgent route; Recovery",
+          "After surgery",
+          "After surgery warning symptoms",
+          "Urgent advice",
+          "Recovery / Important: increasing pain, redness or blurriness after surgery (line62)",
+          "Overview; Recovery / Important: increasing pain, redness or blurriness after surgery (line62)",
+          "Urgent advice"
+        ],
+        "retrieval_scope": "Actually read symptoms, urgent NHS 111 route, surgery, postoperative deterioration and recurrence. Review date is metadata, not automatic invalidity."
+      },
+      {
+        "source_id": "b1-acute-retina-nhs-dex-common",
+        "url": "https://www.nhs.uk/medicines/dexamethasone-eye-drops/common-questions-about-dexamethasone-eye-drops/",
+        "locators": [
+          "How do the drops work? lines14-18; combined antibiotic drops lines36-41"
+        ],
+        "retrieval_scope": "How do the drops work? lines14-18; combined antibiotic drops lines36-41. Last reviewed2022-07-21, next review2025-07-21 is overdue. Used only for classes and postoperative prevention role; no dose or universal course."
+      },
+      {
+        "source_id": "b1-acute-retina-nhs-dex-risks",
+        "url": "https://www.nhs.uk/medicines/dexamethasone-eye-drops/side-effects-of-dexamethasone-eye-drops/",
+        "locators": [
+          "Serious side effects: pressure/glaucoma and cataract"
+        ],
+        "retrieval_scope": "Serious side effects: increased eye pressure/glaucoma and cataract; common irritation and blur. Last reviewed2022-07-21, next review2025-07-21 is overdue. No risk frequency or patient-specific stopping instruction imported."
+      },
+      {
+        "source_id": "b1-acute-retina-nhs-dex-use",
+        "url": "https://www.nhs.uk/medicines/dexamethasone-eye-drops/how-and-when-to-use-dexamethasone-eye-drops/",
+        "locators": [
+          "How long to use eye drops: check-ups for pressure and infection"
+        ],
+        "retrieval_scope": "How long to use eye drops: check-ups for pressure and infection, clinician-directed adjustment. Last reviewed2022-07-21, next review2025-07-21 is overdue. Dosages and time intervals not imported."
+      },
+      {
+        "source_id": "b1-acute-retina-nhs-floaters",
+        "url": "https://www.nhs.uk/symptoms/floaters-and-flashes-in-the-eyes/",
+        "locators": [
+          "Symptoms / Urgent advice",
+          "Causes of floaters and flashes (line55)"
+        ],
+        "retrieval_scope": "Official full indexed text: longstanding/not worsening/no vision effect conditions; urgent first/new/increased floaters, curtain, blur, postoperative/trauma symptoms."
+      },
+      {
+        "source_id": "b1-acute-retina-nhs-vision",
+        "url": "https://www.nhs.uk/conditions/vision-loss/",
+        "locators": [
+          "Immediate action required / Information: do not drive to A&E",
+          "Immediate action required"
+        ],
+        "retrieval_scope": "Official indexed Immediate action required: sudden inability to see; do not drive to A&E, have someone drive or ambulance. Distinct acute transport context."
+      },
+      {
+        "source_id": "b1-acute-retina-puradex-smpc",
+        "url": "https://www.medicines.org.uk/emc/product/14753/smpc",
+        "locators": [
+          "4.1 indications;5.1 pharmacodynamic class; 4.4 and4.8: pressure and cataract; 4.4: undiagnosed red eye and opportunistic infections (lines295-298); 4.4: regular monitoring and infection precautions"
+        ],
+        "retrieval_scope": "SmPC4.1 noninfectious anterior inflammation;4.4 monitoring, undiagnosed red eye, pressure/cataract and infection;5.1 corticosteroid action. Text revised2024-08-16, emc2024-09-02. General class explanation only; no worldwide approval, formulation-specific frequency, dose, course, pediatric or pregnancy regimen inferred."
+      },
+      {
+        "source_id": "b1-acute-retina-ranzco-choosing-wisely",
+        "url": "https://ranzco.edu/home/community-engagement/choosing-wisely/",
+        "locators": [
+          "Recommendation9 (lines411-417)",
+          "Recommendation5 (lines377-390): at-risk counselling/follow-up"
+        ],
+        "retrieval_scope": "Recommendation9 lines411-417: undiagnosed red eye and topical steroids; recommendation5 lines377-390: at-risk counselling/follow-up and limits of prophylactic treatment. Underlying literature includes AAO2014 and ophthalmology studies; not an independent trial. No new laser rule or efficacy estimate imported."
+      },
+      {
+        "source_id": "b1-acute-retina-rcophth-gas",
+        "url": "https://curriculum.rcophth.ac.uk/2018/12/ophthalmic-safety-alert-use-of-nitrous-oxide-when-there-is-gas-in-an-operated-eye/",
+        "locators": [
+          "Warning: air travel and high altitude; Mechanism and Recommendations; Recommendations: Entonox/Equanox, emergency and maternity settings, alert information"
+        ],
+        "retrieval_scope": "Actually opened alert: mechanism of nitrous oxide diffusion, bubble expansion and retinal ischemia; advise ambulance/maternity/emergency teams; clinical cases and British Dental Journal evidence cited."
+      },
+      {
+        "source_id": "b1-acute-retina-statpearls-exudative",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK589701/",
+        "locators": [
+          "Treatment/Management lines359-361,387-400 and Pearls lines445-453",
+          "Treatment/Management lines359-361: inflammatory VKH and posterior scleritis; immune suppression"
+        ],
+        "retrieval_scope": "Treatment/Management lines357-403: cause-specific care; inflammatory disease immunosuppression; abnormal vessels and tumors. Read author/update metadata. NCBI hosts this independently authored review, not an NIH guideline. /books path showed captcha; public /sites/books path returned article. No doses or disputed disease-specific regimens imported."
+      },
+      {
+        "source_id": "b1-acute-retina-surgery-nei",
+        "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/retinal-detachment/surgery-retinal-detachment",
+        "locators": [
+          "Pneumatic retinopexy and scleral buckle (lines32-52); vitrectomy details on linked dedicated page"
+        ],
+        "retrieval_scope": "Official indexed full text read: pneumatic retinopexy, scleral buckle, vitrectomy and postoperative advice. Same NEI editorial origin as overview."
+      },
+      {
+        "source_id": "b1-acute-retina-types-nei",
+        "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/retinal-detachment/types-and-causes-retinal-detachment",
+        "locators": [
+          "Three types; Rhegmatogenous detachment; Tractional / Exudative",
+          "Vitreous changes; tears; Rhegmatogenous detachment: aging vitreous shrinkage, PVD and tears (line33)"
+        ],
+        "retrieval_scope": "Actually opened: rhegmatogenous, tractional and exudative mechanisms; diabetic retinopathy; prevention."
+      },
+      {
+        "source_id": "b1-acute-retina-vitrectomy-nei",
+        "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/retinal-detachment/vitrectomy",
+        "locators": [
+          "What happens during vitrectomy? (lines26-31)",
+          "How long does it take to recover?",
+          "Recovery; How long does it take to recover? After surgery: wear an eye patch; Face positioning; How long does it take to recover? air travel/high altitude",
+          "After vitrectomy; How long does it take to recover? check vision/recovery"
+        ],
+        "retrieval_scope": "Official indexed full text read: surgery, anesthetic choices, drops, gas positioning, altitude, activity, silicone removal."
+      }
+    ],
+    "sections": {
+      "summary": {
+        "source_ids": [
+          "b1-acute-retina-asrs",
+          "b1-acute-retina-nei",
+          "b1-acute-retina-nhs"
+        ],
+        "locators": {
+          "b1-acute-retina-asrs": [
+            "Symptoms in detail"
+          ],
+          "b1-acute-retina-nei": [
+            "What is retinal detachment; Symptoms; What are the symptoms?; Medical emergency / What are the symptoms?"
+          ],
+          "b1-acute-retina-nhs": [
+            "Overview; Urgent symptoms; Urgent advice"
+          ]
+        },
+        "uncertainty_boundary": "Original and changed-claim reports preserve source-specific scope, older guidance limits and shared postoperative context."
+      },
+      "causes_risks": {
+        "source_ids": [
+          "b1-acute-retina-asrs",
+          "b1-acute-retina-msd",
+          "b1-acute-retina-nei",
+          "b1-acute-retina-types-nei"
+        ],
+        "locators": {
+          "b1-acute-retina-asrs": [
+            "Causes: rhegmatogenous; Causes: tractional/exudative; Risk factors"
+          ],
+          "b1-acute-retina-msd": [
+            "Etiology"
+          ],
+          "b1-acute-retina-nei": [
+            "Am I at risk?"
+          ],
+          "b1-acute-retina-types-nei": [
+            "Three types; Rhegmatogenous detachment; Tractional / Exudative"
+          ]
+        },
+        "uncertainty_boundary": "Original and changed-claim reports preserve source-specific scope, older guidance limits and shared postoperative context."
+      },
+      "red_flags": {
+        "source_ids": [
+          "b1-acute-retina-kgh-emergency-transport",
+          "b1-acute-retina-moorfields-macular-gas",
+          "b1-acute-retina-nei",
+          "b1-acute-retina-nhs",
+          "b1-acute-retina-nhs-vision"
+        ],
+        "locators": {
+          "b1-acute-retina-kgh-emergency-transport": [
+            "What is an eye emergency, line35; Vision assessment, line90; alternative transport, line65"
+          ],
+          "b1-acute-retina-moorfields-macular-gas": [
+            "When to contact us immediately after surgery (lines129-137): worsening pain, sudden loss of vision, increasing redness"
+          ],
+          "b1-acute-retina-nei": [
+            "Medical emergency; Symptoms"
+          ],
+          "b1-acute-retina-nhs": [
+            "Urgent action; Recovery / Important: increasing pain, redness or blurriness after surgery (line62)"
+          ],
+          "b1-acute-retina-nhs-vision": [
+            "Immediate action required / Information: do not drive to A&E"
+          ]
+        },
+        "uncertainty_boundary": "Original and changed-claim reports preserve source-specific scope, older guidance limits and shared postoperative context."
+      },
+      "care": {
+        "source_ids": [
+          "b1-acute-retina-mayo-treatment",
+          "b1-acute-retina-moorfields",
+          "b1-acute-retina-moorfields-floaters",
+          "b1-acute-retina-nei",
+          "b1-acute-retina-nhs",
+          "b1-acute-retina-nhs-floaters"
+        ],
+        "locators": {
+          "b1-acute-retina-mayo-treatment": [
+            "Diagnosis: repeat examination and new symptoms"
+          ],
+          "b1-acute-retina-moorfields": [
+            "After operation; follow-up; recovery"
+          ],
+          "b1-acute-retina-moorfields-floaters": [
+            "Treatment for flashes and floaters"
+          ],
+          "b1-acute-retina-nei": [
+            "Diagnosis; urgent assessment; Medical emergency"
+          ],
+          "b1-acute-retina-nhs": [
+            "Urgent symptoms; 111 urgent route; Recovery"
+          ],
+          "b1-acute-retina-nhs-floaters": [
+            "Symptoms / Urgent advice"
+          ]
+        },
+        "uncertainty_boundary": "Original and changed-claim reports preserve source-specific scope, older guidance limits and shared postoperative context."
+      },
+      "diagnosis": {
+        "source_ids": [
+          "b1-acute-retina-asrs",
+          "b1-acute-retina-asrs-complex",
+          "b1-acute-retina-asrs-imaging",
+          "b1-acute-retina-mayo-treatment",
+          "b1-acute-retina-msd",
+          "b1-acute-retina-nei",
+          "b1-acute-retina-nei-dilation"
+        ],
+        "locators": {
+          "b1-acute-retina-asrs": [
+            "Diagnostic testing, ultrasound; Diagnostic testing, OCT"
+          ],
+          "b1-acute-retina-asrs-complex": [
+            "Diagnostic testing, OCT"
+          ],
+          "b1-acute-retina-asrs-imaging": [
+            "Dilated retina exam / final paragraph: accompaniment and drive home; Ophthalmic ultrasound"
+          ],
+          "b1-acute-retina-mayo-treatment": [
+            "Diagnosis / What to expect from your doctor, questions1/4/5/7/8"
+          ],
+          "b1-acute-retina-msd": [
+            "Symptoms and Signs: obscured retina and B-scan"
+          ],
+          "b1-acute-retina-nei": [
+            "Dilated eye exam"
+          ],
+          "b1-acute-retina-nei-dilation": [
+            "How does dilation work? / What happens after a dilated eye exam?"
+          ]
+        },
+        "uncertainty_boundary": "Original and changed-claim reports preserve source-specific scope, older guidance limits and shared postoperative context."
+      },
+      "differentials": {
+        "source_ids": [
+          "b1-acute-retina-mayo-treatment",
+          "b1-acute-retina-moorfields-floaters",
+          "b1-acute-retina-msd",
+          "b1-acute-retina-nei",
+          "b1-acute-retina-nei-diabetes",
+          "b1-acute-retina-nhs-floaters",
+          "b1-acute-retina-nhs-vision",
+          "b1-acute-retina-types-nei"
+        ],
+        "locators": {
+          "b1-acute-retina-mayo-treatment": [
+            "Diagnosis: delayed tear and new symptoms; Treatment / Retinal tears"
+          ],
+          "b1-acute-retina-moorfields-floaters": [
+            "Treatment: new onset floaters with flashes urgent assessment"
+          ],
+          "b1-acute-retina-msd": [
+            "Treatment: tears without detachment can be sealed"
+          ],
+          "b1-acute-retina-nei": [
+            "Symptoms and diagnosis; Symptoms and medical emergency"
+          ],
+          "b1-acute-retina-nei-diabetes": [
+            "What are the symptoms? paragraph2; Other problems: tractional detachment"
+          ],
+          "b1-acute-retina-nhs-floaters": [
+            "Causes of floaters and flashes (line55)"
+          ],
+          "b1-acute-retina-nhs-vision": [
+            "Immediate action required"
+          ],
+          "b1-acute-retina-types-nei": [
+            "Vitreous changes; tears; Rhegmatogenous detachment: aging vitreous shrinkage, PVD and tears (line33)"
+          ]
+        },
+        "uncertainty_boundary": "Original and changed-claim reports preserve source-specific scope, older guidance limits and shared postoperative context."
+      },
+      "treatment": {
+        "source_ids": [
+          "b1-acute-retina-asrs",
+          "b1-acute-retina-asrs-complex",
+          "b1-acute-retina-cuh-repair",
+          "b1-acute-retina-mayo-treatment",
+          "b1-acute-retina-msd",
+          "b1-acute-retina-nei-diabetes",
+          "b1-acute-retina-statpearls-exudative",
+          "b1-acute-retina-surgery-nei",
+          "b1-acute-retina-vitrectomy-nei"
+        ],
+        "locators": {
+          "b1-acute-retina-asrs": [
+            "Causes / Treatment and prognosis; Treatment and prognosis: three procedures; Treatment and prognosis: final two paragraphs"
+          ],
+          "b1-acute-retina-asrs-complex": [
+            "Treatment and prognosis"
+          ],
+          "b1-acute-retina-cuh-repair": [
+            "Varieties of splint: External (line303) and Internal (line305)"
+          ],
+          "b1-acute-retina-mayo-treatment": [
+            "Retinal tears / Retinal detachment; Retinal detachment: procedure selection and final prognosis paragraph"
+          ],
+          "b1-acute-retina-msd": [
+            "Treatment: rhegmatogenous versus nonrhegmatogenous; Treatment: sealing tears and detachment surgery; Treatment: final nonrhegmatogenous paragraph"
+          ],
+          "b1-acute-retina-nei-diabetes": [
+            "Treatment: vitrectomy for bleeding/scars and diabetes control"
+          ],
+          "b1-acute-retina-statpearls-exudative": [
+            "Treatment/Management lines359-361,387-400 and Pearls lines445-453"
+          ],
+          "b1-acute-retina-surgery-nei": [
+            "Pneumatic retinopexy and scleral buckle (lines32-52); vitrectomy details on linked dedicated page"
+          ],
+          "b1-acute-retina-vitrectomy-nei": [
+            "What happens during vitrectomy? (lines26-31)"
+          ]
+        },
+        "uncertainty_boundary": "Original and changed-claim reports preserve source-specific scope, older guidance limits and shared postoperative context."
+      },
+      "medications": {
+        "source_ids": [
+          "b1-acute-retina-cuh-repair",
+          "b1-acute-retina-glos-drops",
+          "b1-acute-retina-leeds-anaesthetic",
+          "b1-acute-retina-leeds-drops",
+          "b1-acute-retina-moorfields",
+          "b1-acute-retina-moorfields-macular-gas",
+          "b1-acute-retina-moorfields-steroid-infection",
+          "b1-acute-retina-msd",
+          "b1-acute-retina-nhs",
+          "b1-acute-retina-nhs-dex-common",
+          "b1-acute-retina-nhs-dex-risks",
+          "b1-acute-retina-nhs-dex-use",
+          "b1-acute-retina-puradex-smpc",
+          "b1-acute-retina-ranzco-choosing-wisely",
+          "b1-acute-retina-statpearls-exudative",
+          "b1-acute-retina-vitrectomy-nei"
+        ],
+        "locators": {
+          "b1-acute-retina-cuh-repair": [
+            "Eye drops / outpatient appointment (line325); Eye drops"
+          ],
+          "b1-acute-retina-glos-drops": [
+            "Remember: no sharing and stop only if instructed"
+          ],
+          "b1-acute-retina-leeds-anaesthetic": [
+            "Types of anaesthesia / Meeting your anaesthetist"
+          ],
+          "b1-acute-retina-leeds-drops": [
+            "Items3 and6, no sharing/end of treatment"
+          ],
+          "b1-acute-retina-moorfields": [
+            "After your operation; Anaesthesia for your operation; Recovery: worsening symptoms"
+          ],
+          "b1-acute-retina-moorfields-macular-gas": [
+            "After surgery: prescribed antibiotics and anti-inflammatory drops (line97)"
+          ],
+          "b1-acute-retina-moorfields-steroid-infection": [
+            "Can steroid drops cause any complications?"
+          ],
+          "b1-acute-retina-msd": [
+            "Treatment: exudative inflammatory causes; Treatment: nonrhegmatogenous detachment from uveitis, systemic/local corticosteroid or systemic immunosuppression"
+          ],
+          "b1-acute-retina-nhs": [
+            "After surgery"
+          ],
+          "b1-acute-retina-nhs-dex-common": [
+            "How do the drops work? lines14-18; combined antibiotic drops lines36-41"
+          ],
+          "b1-acute-retina-nhs-dex-risks": [
+            "Serious side effects: pressure/glaucoma and cataract"
+          ],
+          "b1-acute-retina-nhs-dex-use": [
+            "How long to use eye drops: check-ups for pressure and infection"
+          ],
+          "b1-acute-retina-puradex-smpc": [
+            "4.1 indications;5.1 pharmacodynamic class; 4.4 and4.8: pressure and cataract; 4.4: undiagnosed red eye and opportunistic infections (lines295-298); 4.4: regular monitoring and infection precautions"
+          ],
+          "b1-acute-retina-ranzco-choosing-wisely": [
+            "Recommendation9 (lines411-417)"
+          ],
+          "b1-acute-retina-statpearls-exudative": [
+            "Treatment/Management lines359-361: inflammatory VKH and posterior scleritis; immune suppression"
+          ],
+          "b1-acute-retina-vitrectomy-nei": [
+            "How long does it take to recover?"
+          ]
+        },
+        "uncertainty_boundary": "Original and changed-claim reports preserve source-specific scope, older guidance limits and shared postoperative context."
+      },
+      "diet": {
+        "source_ids": [
+          "b1-acute-retina-diabetes-surgery-sussex",
+          "b1-acute-retina-leeds-anaesthetic",
+          "b1-acute-retina-moorfields",
+          "b1-acute-retina-moorfields-macular-gas",
+          "b1-acute-retina-msd",
+          "b1-acute-retina-nei"
+        ],
+        "locators": {
+          "b1-acute-retina-diabetes-surgery-sussex": [
+            "What to expect / After operation"
+          ],
+          "b1-acute-retina-leeds-anaesthetic": [
+            "On the day of your operation; On the day of your operation: Diabetes"
+          ],
+          "b1-acute-retina-moorfields": [
+            "Anaesthesia; reattachment procedures"
+          ],
+          "b1-acute-retina-moorfields-macular-gas": [
+            "Before your surgery / Fasting"
+          ],
+          "b1-acute-retina-msd": [
+            "Treatment / urgent examination"
+          ],
+          "b1-acute-retina-nei": [
+            "Treatment and medical emergency"
+          ]
+        },
+        "uncertainty_boundary": "Original and changed-claim reports preserve source-specific scope, older guidance limits and shared postoperative context."
+      },
+      "daily_care": {
+        "source_ids": [
+          "b1-acute-retina-glos-drops",
+          "b1-acute-retina-leeds-postop",
+          "b1-acute-retina-moorfields",
+          "b1-acute-retina-moorfields-macular-gas",
+          "b1-acute-retina-nhs",
+          "b1-acute-retina-rcophth-gas",
+          "b1-acute-retina-vitrectomy-nei"
+        ],
+        "locators": {
+          "b1-acute-retina-glos-drops": [
+            "How to use: wash hands"
+          ],
+          "b1-acute-retina-leeds-postop": [
+            "Morning after operation / You are advised"
+          ],
+          "b1-acute-retina-moorfields": [
+            "Posturing; gas type; After your operation: no rubbing / eye shield; Posturing tailored by surgeon; Recovery: worsening pain/vision"
+          ],
+          "b1-acute-retina-moorfields-macular-gas": [
+            "Important warnings about the gas bubble; Important warnings: Nitrous Oxide; Nitrous Oxide warning: surgery, A&E and childbirth; Nitrous Oxide warning: dental work"
+          ],
+          "b1-acute-retina-nhs": [
+            "After surgery warning symptoms"
+          ],
+          "b1-acute-retina-rcophth-gas": [
+            "Warning: air travel and high altitude; Mechanism and Recommendations; Recommendations: Entonox/Equanox, emergency and maternity settings, alert information"
+          ],
+          "b1-acute-retina-vitrectomy-nei": [
+            "Recovery; How long does it take to recover? After surgery: wear an eye patch; Face positioning; How long does it take to recover? air travel/high altitude"
+          ]
+        },
+        "uncertainty_boundary": "Original and changed-claim reports preserve source-specific scope, older guidance limits and shared postoperative context."
+      },
+      "special_populations": {
+        "source_ids": [
+          "b1-acute-retina-asrs",
+          "b1-acute-retina-asrs-diabetes-guideline",
+          "b1-acute-retina-leeds-anaesthetic",
+          "b1-acute-retina-moorfields",
+          "b1-acute-retina-msd",
+          "b1-acute-retina-nei",
+          "b1-acute-retina-nei-diabetes",
+          "b1-acute-retina-nhs"
+        ],
+        "locators": {
+          "b1-acute-retina-asrs": [
+            "Causes: tractional detachment; Risk factors"
+          ],
+          "b1-acute-retina-asrs-diabetes-guideline": [
+            "Systemic risk factors: glycemic/blood-pressure/lipid optimization"
+          ],
+          "b1-acute-retina-leeds-anaesthetic": [
+            "Meeting your anaesthetist; Before coming to hospital: plan recovery and help"
+          ],
+          "b1-acute-retina-moorfields": [
+            "Posturing instructions"
+          ],
+          "b1-acute-retina-msd": [
+            "Etiology / Treatment by cause"
+          ],
+          "b1-acute-retina-nei": [
+            "Am I at risk? / emergency symptoms"
+          ],
+          "b1-acute-retina-nei-diabetes": [
+            "Other problems / Prevention / Treatment"
+          ],
+          "b1-acute-retina-nhs": [
+            "Urgent advice"
+          ]
+        },
+        "uncertainty_boundary": "Original and changed-claim reports preserve source-specific scope, older guidance limits and shared postoperative context."
+      },
+      "prognosis_followup": {
+        "source_ids": [
+          "b1-acute-retina-asrs",
+          "b1-acute-retina-asrs-complex",
+          "b1-acute-retina-cleveland",
+          "b1-acute-retina-cuh-repair",
+          "b1-acute-retina-mayo-treatment",
+          "b1-acute-retina-moorfields",
+          "b1-acute-retina-moorfields-macular-gas",
+          "b1-acute-retina-nhs",
+          "b1-acute-retina-vitrectomy-nei"
+        ],
+        "locators": {
+          "b1-acute-retina-asrs": [
+            "Treatment and prognosis: macula and preoperative vision; Treatment and prognosis: final paragraph"
+          ],
+          "b1-acute-retina-asrs-complex": [
+            "Causes (lines50-54): scar contraction and PVR repair failure"
+          ],
+          "b1-acute-retina-cleveland": [
+            "Outlook / Prognosis: how soon treatment, initial vision and complications"
+          ],
+          "b1-acute-retina-cuh-repair": [
+            "Recovery of vision; Eye drops / outpatient appointment"
+          ],
+          "b1-acute-retina-mayo-treatment": [
+            "Retinal detachment: final prognosis paragraph"
+          ],
+          "b1-acute-retina-moorfields": [
+            "Further surgery (lines111-112, PVR/re-detachment/poorer result); Your vision after surgery (lines134-136); Posturing; gas line; blurred vision"
+          ],
+          "b1-acute-retina-moorfields-macular-gas": [
+            "When to contact us immediately after surgery (lines129-137): worsening pain, sudden loss of vision, increasing redness"
+          ],
+          "b1-acute-retina-nhs": [
+            "Recovery / Important: increasing pain, redness or blurriness after surgery (line62)"
+          ],
+          "b1-acute-retina-vitrectomy-nei": [
+            "After vitrectomy; How long does it take to recover? check vision/recovery"
+          ]
+        },
+        "uncertainty_boundary": "Original and changed-claim reports preserve source-specific scope, older guidance limits and shared postoperative context."
+      },
+      "complications": {
+        "source_ids": [
+          "b1-acute-retina-asrs-complex",
+          "b1-acute-retina-moorfields",
+          "b1-acute-retina-moorfields-macular-gas",
+          "b1-acute-retina-nei",
+          "b1-acute-retina-nhs"
+        ],
+        "locators": {
+          "b1-acute-retina-asrs-complex": [
+            "Causes / Treatment and prognosis"
+          ],
+          "b1-acute-retina-moorfields": [
+            "Risks; Proliferative vitreoretinopathy / further surgery"
+          ],
+          "b1-acute-retina-moorfields-macular-gas": [
+            "When to contact us immediately after surgery (lines129-137): worsening pain, sudden loss of vision, increasing redness"
+          ],
+          "b1-acute-retina-nei": [
+            "Permanent vision loss; Symptoms; untreated detachment"
+          ],
+          "b1-acute-retina-nhs": [
+            "Overview; Recovery / Important: increasing pain, redness or blurriness after surgery (line62)"
+          ]
+        },
+        "uncertainty_boundary": "Original and changed-claim reports preserve source-specific scope, older guidance limits and shared postoperative context."
+      },
+      "prevention": {
+        "source_ids": [
+          "b1-acute-retina-aoa-retinal-guideline",
+          "b1-acute-retina-asrs",
+          "b1-acute-retina-asrs-sports",
+          "b1-acute-retina-msd",
+          "b1-acute-retina-nei",
+          "b1-acute-retina-nei-dilation",
+          "b1-acute-retina-nhs",
+          "b1-acute-retina-ranzco-choosing-wisely"
+        ],
+        "locators": {
+          "b1-acute-retina-aoa-retinal-guideline": [
+            "Printedpage27 / Early Detection and Prevention: at-risk patients, periodic dilated fundus examinations"
+          ],
+          "b1-acute-retina-asrs": [
+            "Risk factors (line48): severe myopia"
+          ],
+          "b1-acute-retina-asrs-sports": [
+            "PDF page2: reducing sports-related retinal injury risk, first two bullets"
+          ],
+          "b1-acute-retina-msd": [
+            "Treatment / urgent ophthalmoscopy"
+          ],
+          "b1-acute-retina-nei": [
+            "Can I prevent retinal detachment?; Can I prevent retinal detachment? (line73); Am I at risk? severe myopia; Can I prevent retinal detachment? (line76); risk section past detachment/other eye disease; Medical emergency / Prevention"
+          ],
+          "b1-acute-retina-nei-dilation": [
+            "How often? (line25)"
+          ],
+          "b1-acute-retina-nhs": [
+            "Urgent advice"
+          ],
+          "b1-acute-retina-ranzco-choosing-wisely": [
+            "Recommendation5 (lines377-390): at-risk counselling/follow-up"
+          ]
+        },
+        "uncertainty_boundary": "Original and changed-claim reports preserve source-specific scope, older guidance limits and shared postoperative context."
+      }
+    }
+  },
+  {
+    "condition_id": "pulmonary-embolism",
+    "canonical_claim_records": "data/evidence/editorial-checks/batch-01-pe.json",
+    "checked_at": "2026-10-02",
+    "medical_reviewed": false,
+    "inspected_sources": [
+      {
+        "source_id": "pe-aha-2026",
+        "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-evaluation-and-management-of-acute-pulmonary-embolism-in-adults/top-things-to-know",
+        "locators": [
+          "Top Things to Know 2–5; Top Things to Know 10",
+          "Top Things to Know 2–5",
+          "Top Things to Know 10",
+          "Top Things to Know 10"
+        ],
+        "retrieval_scope": "2026-02-19; original_official_summary_read; Top Things to Know 1–10, citation. 成人联合指南官方摘要已读，指南全文未读；其 AHA 患者页不是另一独立证据组。"
+      },
+      {
+        "source_id": "pe-aha-patient",
+        "url": "https://www.heart.org/en/health-topics/pulmonary-embolism",
+        "locators": [
+          "Warning signs and symptoms",
+          "Warning signs and symptoms",
+          "Diagnosis — imaging tests / CTPA and V/Q",
+          "Warning signs and symptoms",
+          "Complications; Treatment"
+        ],
+        "retrieval_scope": "2026-02-19; relevant_original_page_sections_read; Warning signs, causes, complications, diagnosis, treatment, recurrence. 与 AHA 2026 摘要共用联合指南，不独立重复计数。"
+      },
+      {
+        "source_id": "pe-ahrq-anticoagulant",
+        "url": "https://www.ahrq.gov/patients-consumers/diagnosis-treatment/treatments/btpills/stayactive-tr.html",
+        "locators": [
+          "Stay active transcript — other medicines; drinking alcohol (official indexed paragraphs)",
+          "Stay active transcript — injury; medication alert card (official indexed paragraphs)"
+        ],
+        "retrieval_scope": "2015-09; official_indexed_relevant_transcript_read_followup_open_timed_out; Activity/injury, medication schedule, other medicines, alert card, alcohol. 官方索引中实际阅读了相关完整段落；直接后续页定位超时。旧版口服抗凝教育不外推所有药的 INR 监测或饮食规则。"
+      },
+      {
+        "source_id": "pe-ash-pediatric",
+        "url": "https://www.hematology.org/education/clinicians/guidelines-and-quality-care/clinical-practice-guidelines/venous-thromboembolism-guidelines/pediatrics/treatment-of-vte-in-pediatric-patients",
+        "locators": [
+          "Introduction; 2025 guideline update population"
+        ],
+        "retrieval_scope": "2025 update; landing page date not displayed; original_official_page_read; Introduction, 2025 implementation resources. 儿科与成人风险收益不同的来源；未据此编造儿童剂量或照抄成人疗程。"
+      },
+      {
+        "source_id": "pe-bsps-d-dimer",
+        "url": "https://www.berkshireandsurreypathologyservices.nhs.uk/tests/a-z-directory/d-dimer",
+        "locators": [
+          "Clinical Indication29–31; Record last updated52–54"
+        ],
+        "retrieval_scope": "Clinical Indication29–31 and Record last updated52–54 actually read. Infection/inflammation/pregnancy can raise D-dimer; interpret with clinical probability. No numerical rule, turnaround target or sample instructions imported. Displayed date is laboratory record update."
+      },
+      {
+        "source_id": "pe-cdc",
+        "url": "https://www.cdc.gov/blood-clots/about/index.html",
+        "locators": [
+          "Overview; Signs and symptoms — DVT / PE",
+          "Risk factors",
+          "Signs and symptoms — DVT / PE",
+          "Signs and symptoms — DVT / PE",
+          "Overview; Signs and symptoms — DVT / PE",
+          "Prevention",
+          "Complications of PE",
+          "Prevention"
+        ],
+        "retrieval_scope": "Dated 5 March 2025; DVT versus PE, signs, risks, complications, prevention and treatment."
+      },
+      {
+        "source_id": "pe-mayo",
+        "url": "https://www.mayoclinic.org/diseases-conditions/pulmonary-embolism/diagnosis-treatment/drc-20354653",
+        "locators": [
+          "Diagnosis — Blood tests; CT pulmonary angiography; V/Q scan; Diagnosis — Chest X-ray",
+          "Treatment — Medicines; Surgical and other procedures",
+          "Treatment — Medicines; Surgical and other procedures",
+          "Treatment — Medicines; Surgical and other procedures; Treatment — Ongoing care"
+        ],
+        "retrieval_scope": "Published 1 December 2022; expert medical review 29 August 2022. Original Diagnosis (Blood tests; Chest X-ray; CT pulmonary angiography; V/Q), Treatment (Medicines; Procedures; Ongoing care), and Preparing for your appointment sections reopened. Page publication and expert review dates are distinct; neither is this website clinical sign-off."
+      },
+      {
+        "source_id": "pe-msd",
+        "url": "https://www.msdmanuals.com/professional/pulmonary-disorders/pulmonary-embolism/pulmonary-embolism-pe",
+        "locators": [
+          "Etiology; risk factors for DVT and PE",
+          "Treatment — General treatment / outpatient management",
+          "Clinical probability222–238; Diagnostic testing281–283; Diagnostic testing — CT angiography versus V/Q; Diagnosis — differential list and initial evaluation paragraphs",
+          "Diagnosis — differential list and initial evaluation paragraphs",
+          "Treatment — General treatment; Treatment — General treatment / outpatient management",
+          "Treatment — oral anticoagulation, kidney impairment; Bleeding complications",
+          "Prevention of acute VTE — introductory risk and device/medicine choice paragraphs"
+        ],
+        "retrieval_scope": "Full review 2024-11; updated 2026-01; relevant_original_page_sections_read; Etiology, pathophysiology, Diagnosis, Clinical probability, Diagnostic testing, General treatment, anticoagulation risks. 作者 Todd Bull / Peter Hountras，同行审订 M. Patricia Rivera；Merck/MSD 镜像不重复计数；未把专业阈值或剂量写入正文。 Targeted revision also read Diagnosis paragraphs on differentials/ECG/X-ray and Prevention of acute VTE (risks and medication/device choice); no numeric prevention tables imported."
+      },
+      {
+        "source_id": "pe-msd-pneumothorax",
+        "url": "https://www.msdmanuals.com/professional/pulmonary-disorders/mediastinal-and-pleural-disorders/pneumothorax",
+        "locators": [
+          "Definition; Symptoms and Signs; Diagnosis"
+        ],
+        "retrieval_scope": "Full review / modified July 2025, exact day not shown. Original definition, Symptoms and Signs, and Diagnosis sections read. Author Najib Rahman; peer review M. Patricia Rivera. No invasive procedure instructions copied."
+      },
+      {
+        "source_id": "pe-nhlbi",
+        "url": "https://www.nhlbi.nih.gov/health/pulmonary-embolism",
+        "locators": [
+          "What is pulmonary embolism?; symptoms",
+          "What is pulmonary embolism?; symptoms",
+          "Treatment",
+          "Complications"
+        ],
+        "retrieval_scope": "Updated 19 September 2022; overview, symptoms, diagnosis, treatment and pulmonary hypertension."
+      },
+      {
+        "source_id": "pe-nhlbi-causes",
+        "url": "https://www.nhlbi.nih.gov/health/venous-thromboembolism/causes",
+        "locators": [
+          "What raises the risk of VTE? — injury, lack of movement, medical conditions, age, family history",
+          "What raises the risk of VTE? — injury, lack of movement, medical conditions, age, family history"
+        ],
+        "retrieval_scope": "Updated 2022-09-19; causes; relevant headings read in full."
+      },
+      {
+        "source_id": "pe-nhlbi-diagnosis",
+        "url": "https://www.nhlbi.nih.gov/health/venous-thromboembolism/diagnosis",
+        "locators": [
+          "Medical history; Physical exam; Diagnostic tests",
+          "Medical history; Physical exam; Diagnostic tests"
+        ],
+        "retrieval_scope": "Updated 2022-09-19; diagnosis; relevant headings read in full."
+      },
+      {
+        "source_id": "pe-nhlbi-recovery",
+        "url": "https://www.nhlbi.nih.gov/health/venous-thromboembolism/recovery",
+        "locators": [
+          "Monitor your condition; Receive routine follow-up care",
+          "Receive routine follow-up care; How can VTE affect health?",
+          "Healthy lifestyle changes — warfarin and vitamin K",
+          "Receive routine follow-up care; Healthy lifestyle changes",
+          "Receive routine follow-up care; Receive routine follow-up care — medicine and blood tests; Receive routine follow-up care; How can VTE affect health?",
+          "Receive routine follow-up care; How can VTE affect health?",
+          "Monitor your condition; Receive routine follow-up care"
+        ],
+        "retrieval_scope": "Updated 2022-09-20; recovery; relevant headings read in full."
+      },
+      {
+        "source_id": "pe-nhlbi-treatment",
+        "url": "https://www.nhlbi.nih.gov/health/venous-thromboembolism/treatment",
+        "locators": [
+          "Medicines — blood thinners; Procedures — thrombolytics / catheter / surgery",
+          "Medicines — blood thinners; Procedures — thrombolytics / catheter / surgery",
+          "Medicines — blood thinners; Procedures — thrombolytics / catheter / surgery"
+        ],
+        "retrieval_scope": "Updated 2022-09-20; treatment; relevant headings read in full."
+      },
+      {
+        "source_id": "pe-nhlbi-women",
+        "url": "https://www.nhlbi.nih.gov/health/venous-thromboembolism/women",
+        "locators": [
+          "Hormonal birth control; Pregnancy and giving birth",
+          "Hormonal birth control; Pregnancy and giving birth"
+        ],
+        "retrieval_scope": "Updated 2022-09-20; women; relevant headings read in full."
+      },
+      {
+        "source_id": "pe-nhs",
+        "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+        "locators": [
+          "Symptoms; Urgent advice; Immediate action",
+          "Symptoms; Urgent advice; Immediate action",
+          "Treating a pulmonary embolism; Symptoms; Urgent advice; Immediate action",
+          "Reduce your risk of pulmonary embolism — travel"
+        ],
+        "retrieval_scope": "Reviewed 25 May 2023, next review due 25 May 2026 (overdue at access); symptoms, care, treatment and travel prevention. Universal five-day injection wording not adopted."
+      },
+      {
+        "source_id": "pe-nhs-considerations",
+        "url": "https://www.nhs.uk/medicines/anticoagulants/considerations/",
+        "locators": [
+          "Taking other medicines; Food and drink; Having surgery",
+          "Food and drink; Taking other medicines; Food and drink",
+          "Pregnancy; Breastfeeding"
+        ],
+        "retrieval_scope": "Reviewed 9 September 2024; considerations; pregnancy, procedures, interactions, vitamin K or bleeding actions as applicable."
+      },
+      {
+        "source_id": "pe-nhs-side-effects",
+        "url": "https://www.nhs.uk/medicines/anticoagulants/side-effects/",
+        "locators": [
+          "Excessive bleeding",
+          "Excessive bleeding",
+          "Excessive bleeding — severe head blow, major accident, inability to stop bleeding"
+        ],
+        "retrieval_scope": "Reviewed 9 September 2024; side-effects; pregnancy, procedures, interactions, vitamin K or bleeding actions as applicable."
+      },
+      {
+        "source_id": "pe-nice-ng158",
+        "url": "https://www.nice.org.uk/guidance/ng158/chapter/Recommendations",
+        "locators": [
+          "Recommendations 1.2.1–1.2.4 (official indexed text)",
+          "Recommendations 1.3.4–1.3.9 (official indexed text)",
+          "Recommendations 1.3.7–1.3.9; 1.4.1–1.4.8 (official indexed text)",
+          "Recommendations 1.3.5; 1.4.1–1.4.8 (official indexed text)"
+        ],
+        "retrieval_scope": "2020-03-26; updated 2023-08-02; official_indexed_recommendations_read_direct_page_403; 1.1.15–1.1.17, 1.2.1–1.2.4, 1.3.4–1.3.9, 1.4.1–1.4.8. 实际读到正式索引建议；不是宣称下载全文。成人英国路径，不套给孕妇或儿童。"
+      },
+      {
+        "source_id": "pe-tc-patient",
+        "url": "https://thrombosiscanada.ca/uploads/patients%20%26%20caregivers/Patient_Materials/TC_New_Patient_Guide_ONLINE_ENG_13Feb2025.pdf",
+        "locators": [
+          "Printed pp.7, 22: Side effects; major bleeding (PDF pp.8, 23)",
+          "Printed pp.7, 22: Side effects; major bleeding (PDF pp.8, 23); Printed pp.22–23, 25: interactions, procedures, OTC pain relievers (PDF pp.23–24, 26); Printedpp6,21,23(PDFpp7,22,24): prescribed use; missed-dose449–452; surgery514–520",
+          "Printed p.21: Do I need to change my diet? (PDF p.22)",
+          "Printedpp6,23,27(PDFpp7,24,28): prescribed use; no self-stopping514–520; pregnancy planning/discovery583–590"
+        ],
+        "retrieval_scope": "PDF filename version 13Feb2025; exact publication date not displayed. Extracted original PDF text read: printed pp.6–7, 21–23, 25, 27 (PDF pp.7–8, 22–24, 26, 28). NBCA original adapted for Canada; not counted separately from NBCA or other TC materials. No graphical interpretation used."
+      },
+      {
+        "source_id": "pe-tc-pregnancy",
+        "url": "https://thrombosiscanada.ca/clinical_guides/pdfs/TREATMENTOFDEEPVEINTHROMBOSISP_50.pdf",
+        "locators": [
+          "pp.1–2 — Treatment; oral anticoagulants in pregnancy; Printedp3 Breastfeeding38–42; printedp4 Postpartum anticoagulation86–94"
+        ],
+        "retrieval_scope": "Version 01May2025, footer p.6. Original PDF text read pp.1–3 and references/version p.6. Pregnancy/postpartum VTE; limited trial evidence and observational/expert basis acknowledged. No doses or delivery stop/restart timings imported. Independent targeted recheck on2026-10-02 additionally read postpartum anticoagulation onp4(lines86–94); breastfeedingp3(lines38–42); version01May2025 confirmedp6(line151). No dose or restart interval imported."
+      }
+    ],
+    "sections": {
+      "summary": {
+        "source_ids": [
+          "pe-cdc",
+          "pe-nhlbi"
+        ],
+        "locators": {
+          "pe-cdc": [
+            "Overview; Signs and symptoms — DVT / PE"
+          ],
+          "pe-nhlbi": [
+            "What is pulmonary embolism?; symptoms"
+          ]
+        },
+        "uncertainty_boundary": "Independent reviews retain claim-specific regions, source independence, populations and exact material actually read."
+      },
+      "causes_risks": {
+        "source_ids": [
+          "pe-cdc",
+          "pe-msd",
+          "pe-nhlbi-causes",
+          "pe-nhlbi-women"
+        ],
+        "locators": {
+          "pe-cdc": [
+            "Risk factors"
+          ],
+          "pe-msd": [
+            "Etiology; risk factors for DVT and PE"
+          ],
+          "pe-nhlbi-causes": [
+            "What raises the risk of VTE? — injury, lack of movement, medical conditions, age, family history"
+          ],
+          "pe-nhlbi-women": [
+            "Hormonal birth control; Pregnancy and giving birth"
+          ]
+        },
+        "uncertainty_boundary": "Independent reviews retain claim-specific regions, source independence, populations and exact material actually read."
+      },
+      "red_flags": {
+        "source_ids": [
+          "pe-aha-patient",
+          "pe-cdc",
+          "pe-nhlbi-diagnosis",
+          "pe-nhlbi-recovery",
+          "pe-nhs"
+        ],
+        "locators": {
+          "pe-aha-patient": [
+            "Warning signs and symptoms"
+          ],
+          "pe-cdc": [
+            "Signs and symptoms — DVT / PE"
+          ],
+          "pe-nhlbi-diagnosis": [
+            "Medical history; Physical exam; Diagnostic tests"
+          ],
+          "pe-nhlbi-recovery": [
+            "Monitor your condition; Receive routine follow-up care"
+          ],
+          "pe-nhs": [
+            "Symptoms; Urgent advice; Immediate action"
+          ]
+        },
+        "uncertainty_boundary": "Independent reviews retain claim-specific regions, source independence, populations and exact material actually read."
+      },
+      "care": {
+        "source_ids": [
+          "pe-aha-2026",
+          "pe-aha-patient",
+          "pe-cdc",
+          "pe-msd",
+          "pe-nhlbi-recovery",
+          "pe-nhs",
+          "pe-nhs-side-effects",
+          "pe-nice-ng158",
+          "pe-tc-patient"
+        ],
+        "locators": {
+          "pe-aha-2026": [
+            "Top Things to Know 2–5; Top Things to Know 10"
+          ],
+          "pe-aha-patient": [
+            "Warning signs and symptoms"
+          ],
+          "pe-cdc": [
+            "Signs and symptoms — DVT / PE"
+          ],
+          "pe-msd": [
+            "Treatment — General treatment / outpatient management"
+          ],
+          "pe-nhlbi-recovery": [
+            "Receive routine follow-up care; How can VTE affect health?"
+          ],
+          "pe-nhs": [
+            "Symptoms; Urgent advice; Immediate action"
+          ],
+          "pe-nhs-side-effects": [
+            "Excessive bleeding"
+          ],
+          "pe-nice-ng158": [
+            "Recommendations 1.2.1–1.2.4 (official indexed text)"
+          ],
+          "pe-tc-patient": [
+            "Printed pp.7, 22: Side effects; major bleeding (PDF pp.8, 23)"
+          ]
+        },
+        "uncertainty_boundary": "Independent reviews retain claim-specific regions, source independence, populations and exact material actually read."
+      },
+      "diagnosis": {
+        "source_ids": [
+          "pe-aha-patient",
+          "pe-bsps-d-dimer",
+          "pe-mayo",
+          "pe-msd",
+          "pe-nhlbi-diagnosis"
+        ],
+        "locators": {
+          "pe-aha-patient": [
+            "Diagnosis — imaging tests / CTPA and V/Q"
+          ],
+          "pe-bsps-d-dimer": [
+            "Clinical Indication29–31; Record last updated52–54"
+          ],
+          "pe-mayo": [
+            "Diagnosis — Blood tests; CT pulmonary angiography; V/Q scan; Diagnosis — Chest X-ray"
+          ],
+          "pe-msd": [
+            "Clinical probability222–238; Diagnostic testing281–283; Diagnostic testing — CT angiography versus V/Q; Diagnosis — differential list and initial evaluation paragraphs"
+          ],
+          "pe-nhlbi-diagnosis": [
+            "Medical history; Physical exam; Diagnostic tests"
+          ]
+        },
+        "uncertainty_boundary": "Independent reviews retain claim-specific regions, source independence, populations and exact material actually read."
+      },
+      "differentials": {
+        "source_ids": [
+          "pe-cdc",
+          "pe-msd",
+          "pe-msd-pneumothorax",
+          "pe-nhlbi"
+        ],
+        "locators": {
+          "pe-cdc": [
+            "Overview; Signs and symptoms — DVT / PE"
+          ],
+          "pe-msd": [
+            "Diagnosis — differential list and initial evaluation paragraphs"
+          ],
+          "pe-msd-pneumothorax": [
+            "Definition; Symptoms and Signs; Diagnosis"
+          ],
+          "pe-nhlbi": [
+            "What is pulmonary embolism?; symptoms"
+          ]
+        },
+        "uncertainty_boundary": "Independent reviews retain claim-specific regions, source independence, populations and exact material actually read."
+      },
+      "treatment": {
+        "source_ids": [
+          "pe-aha-2026",
+          "pe-mayo",
+          "pe-msd",
+          "pe-nhlbi",
+          "pe-nhlbi-treatment"
+        ],
+        "locators": {
+          "pe-aha-2026": [
+            "Top Things to Know 2–5"
+          ],
+          "pe-mayo": [
+            "Treatment — Medicines; Surgical and other procedures"
+          ],
+          "pe-msd": [
+            "Treatment — General treatment; Treatment — General treatment / outpatient management"
+          ],
+          "pe-nhlbi": [
+            "Treatment"
+          ],
+          "pe-nhlbi-treatment": [
+            "Medicines — blood thinners; Procedures — thrombolytics / catheter / surgery"
+          ]
+        },
+        "uncertainty_boundary": "Independent reviews retain claim-specific regions, source independence, populations and exact material actually read."
+      },
+      "medications": {
+        "source_ids": [
+          "pe-mayo",
+          "pe-nhlbi-treatment",
+          "pe-nhs-considerations",
+          "pe-nhs-side-effects",
+          "pe-nice-ng158",
+          "pe-tc-patient"
+        ],
+        "locators": {
+          "pe-mayo": [
+            "Treatment — Medicines; Surgical and other procedures"
+          ],
+          "pe-nhlbi-treatment": [
+            "Medicines — blood thinners; Procedures — thrombolytics / catheter / surgery"
+          ],
+          "pe-nhs-considerations": [
+            "Taking other medicines; Food and drink; Having surgery"
+          ],
+          "pe-nhs-side-effects": [
+            "Excessive bleeding"
+          ],
+          "pe-nice-ng158": [
+            "Recommendations 1.3.4–1.3.9 (official indexed text)"
+          ],
+          "pe-tc-patient": [
+            "Printed pp.7, 22: Side effects; major bleeding (PDF pp.8, 23); Printed pp.22–23, 25: interactions, procedures, OTC pain relievers (PDF pp.23–24, 26); Printedpp6,21,23(PDFpp7,22,24): prescribed use; missed-dose449–452; surgery514–520"
+          ]
+        },
+        "uncertainty_boundary": "Independent reviews retain claim-specific regions, source independence, populations and exact material actually read."
+      },
+      "diet": {
+        "source_ids": [
+          "pe-ahrq-anticoagulant",
+          "pe-nhlbi-recovery",
+          "pe-nhlbi-treatment",
+          "pe-nhs-considerations",
+          "pe-tc-patient"
+        ],
+        "locators": {
+          "pe-ahrq-anticoagulant": [
+            "Stay active transcript — other medicines; drinking alcohol (official indexed paragraphs)"
+          ],
+          "pe-nhlbi-recovery": [
+            "Healthy lifestyle changes — warfarin and vitamin K"
+          ],
+          "pe-nhlbi-treatment": [
+            "Medicines — blood thinners; Procedures — thrombolytics / catheter / surgery"
+          ],
+          "pe-nhs-considerations": [
+            "Food and drink; Taking other medicines; Food and drink"
+          ],
+          "pe-tc-patient": [
+            "Printed p.21: Do I need to change my diet? (PDF p.22)"
+          ]
+        },
+        "uncertainty_boundary": "Independent reviews retain claim-specific regions, source independence, populations and exact material actually read."
+      },
+      "daily_care": {
+        "source_ids": [
+          "pe-ahrq-anticoagulant",
+          "pe-cdc",
+          "pe-nhlbi-recovery",
+          "pe-nhs-side-effects"
+        ],
+        "locators": {
+          "pe-ahrq-anticoagulant": [
+            "Stay active transcript — injury; medication alert card (official indexed paragraphs)"
+          ],
+          "pe-cdc": [
+            "Prevention"
+          ],
+          "pe-nhlbi-recovery": [
+            "Receive routine follow-up care; Healthy lifestyle changes"
+          ],
+          "pe-nhs-side-effects": [
+            "Excessive bleeding — severe head blow, major accident, inability to stop bleeding"
+          ]
+        },
+        "uncertainty_boundary": "Independent reviews retain claim-specific regions, source independence, populations and exact material actually read."
+      },
+      "special_populations": {
+        "source_ids": [
+          "pe-ash-pediatric",
+          "pe-msd",
+          "pe-nhlbi-causes",
+          "pe-nhlbi-women",
+          "pe-nhs-considerations",
+          "pe-nice-ng158",
+          "pe-tc-patient",
+          "pe-tc-pregnancy"
+        ],
+        "locators": {
+          "pe-ash-pediatric": [
+            "Introduction; 2025 guideline update population"
+          ],
+          "pe-msd": [
+            "Treatment — oral anticoagulation, kidney impairment; Bleeding complications"
+          ],
+          "pe-nhlbi-causes": [
+            "What raises the risk of VTE? — injury, lack of movement, medical conditions, age, family history"
+          ],
+          "pe-nhlbi-women": [
+            "Hormonal birth control; Pregnancy and giving birth"
+          ],
+          "pe-nhs-considerations": [
+            "Pregnancy; Breastfeeding"
+          ],
+          "pe-nice-ng158": [
+            "Recommendations 1.3.7–1.3.9; 1.4.1–1.4.8 (official indexed text)"
+          ],
+          "pe-tc-patient": [
+            "Printedpp6,23,27(PDFpp7,24,28): prescribed use; no self-stopping514–520; pregnancy planning/discovery583–590"
+          ],
+          "pe-tc-pregnancy": [
+            "pp.1–2 — Treatment; oral anticoagulants in pregnancy; Printedp3 Breastfeeding38–42; printedp4 Postpartum anticoagulation86–94"
+          ]
+        },
+        "uncertainty_boundary": "Independent reviews retain claim-specific regions, source independence, populations and exact material actually read."
+      },
+      "prognosis_followup": {
+        "source_ids": [
+          "pe-aha-2026",
+          "pe-aha-patient",
+          "pe-mayo",
+          "pe-nhlbi-recovery",
+          "pe-nhs",
+          "pe-nice-ng158"
+        ],
+        "locators": {
+          "pe-aha-2026": [
+            "Top Things to Know 10"
+          ],
+          "pe-aha-patient": [
+            "Warning signs and symptoms"
+          ],
+          "pe-mayo": [
+            "Treatment — Medicines; Surgical and other procedures; Treatment — Ongoing care"
+          ],
+          "pe-nhlbi-recovery": [
+            "Receive routine follow-up care; Receive routine follow-up care — medicine and blood tests; Receive routine follow-up care; How can VTE affect health?"
+          ],
+          "pe-nhs": [
+            "Treating a pulmonary embolism; Symptoms; Urgent advice; Immediate action"
+          ],
+          "pe-nice-ng158": [
+            "Recommendations 1.3.5; 1.4.1–1.4.8 (official indexed text)"
+          ]
+        },
+        "uncertainty_boundary": "Independent reviews retain claim-specific regions, source independence, populations and exact material actually read."
+      },
+      "complications": {
+        "source_ids": [
+          "pe-aha-2026",
+          "pe-aha-patient",
+          "pe-cdc",
+          "pe-nhlbi",
+          "pe-nhlbi-recovery"
+        ],
+        "locators": {
+          "pe-aha-2026": [
+            "Top Things to Know 10"
+          ],
+          "pe-aha-patient": [
+            "Complications; Treatment"
+          ],
+          "pe-cdc": [
+            "Complications of PE"
+          ],
+          "pe-nhlbi": [
+            "Complications"
+          ],
+          "pe-nhlbi-recovery": [
+            "Receive routine follow-up care; How can VTE affect health?"
+          ]
+        },
+        "uncertainty_boundary": "Independent reviews retain claim-specific regions, source independence, populations and exact material actually read."
+      },
+      "prevention": {
+        "source_ids": [
+          "pe-cdc",
+          "pe-msd",
+          "pe-nhlbi-recovery",
+          "pe-nhs"
+        ],
+        "locators": {
+          "pe-cdc": [
+            "Prevention"
+          ],
+          "pe-msd": [
+            "Prevention of acute VTE — introductory risk and device/medicine choice paragraphs"
+          ],
+          "pe-nhlbi-recovery": [
+            "Monitor your condition; Receive routine follow-up care"
+          ],
+          "pe-nhs": [
+            "Reduce your risk of pulmonary embolism — travel"
+          ]
+        },
+        "uncertainty_boundary": "Independent reviews retain claim-specific regions, source independence, populations and exact material actually read."
+      }
+    }
   }
 ]

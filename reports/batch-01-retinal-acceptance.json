@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-02",
+  "verdict": "accepted_editorial_cross_check",
+  "medical_reviewed": false,
+  "target": {
+    "id": "retinal-detachment",
+    "author_canonical_sha256": "850a29f4b206af0bbe10fbb2f409a5ce425fdcc030b8f010e0d3c222fa3c24e2",
+    "publication_content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
+    "input_canonical_sha256": "753bbceceadcee9a73466e46e412e39c52f88291012937fb63530c9ffb511d9f"
+  },
+  "scope": {
+    "sections": 14,
+    "claims": 68,
+    "sources": 36,
+    "unchanged_claims_inherited": 52,
+    "changed_claims_independently_reviewed": 16
+  },
+  "evidence_chain": [
+    {
+      "path": "reports/batch-01-retinal-recheck.json",
+      "file_sha256": "24a345b0f3e2ee036cb680cf4818fab8c068674b52562c561da07cad5272bd4a"
+    },
+    {
+      "path": "reports/batch-01-retinal-review-fixes.json",
+      "file_sha256": "22882bd723774d2723692b8487d7059b4886aea6a84cd8a8b146d1ceeffd9567"
+    },
+    {
+      "path": "reports/batch-01-retinal-final-targeted-recheck.json",
+      "file_sha256": "5f1a6487506623f2424234560ddf79e0282abeba0999b066c2ce65b6b701df6d"
+    }
+  ],
+  "patches": [
+    {
+      "operation": "add",
+      "claim_id": "red_flags-4",
+      "source_id": "b1-acute-retina-kgh-emergency-transport",
+      "locator": "What is an eye emergency, line35; Vision assessment, line90; alternative transport, line65",
+      "assessment": "Independent hospital urgent-eye service includes sudden vision loss and explicitly says not to drive to hospital. Corroborates the safety action; NHS national source supplies local ambulance/accompaniment routing. No fixed phone number or Kettering referral rule generalized."
+    },
+    {
+      "operation": "remove",
+      "claim_id": "diagnosis-2",
+      "source_id": "b1-acute-retina-aao-wiki",
+      "locator": "Diagnosis / History",
+      "assessment": "Prior recheck recovered metadata then timed out; its medical body was not independently confirmed. This ordinary history/examination explanation is already accepted on direct Mayo support. Remove redundant link; do not falsely list EyeWiki among reopened originals."
+    },
+    {
+      "operation": "remove",
+      "claim_id": "diet-3",
+      "source_id": "b1-acute-retina-diabetes-surgery-medline",
+      "locator": "Before / During / After Surgery",
+      "assessment": "Prior recheck recorded A.D.A.M. license restriction, not usable medical-body confirmation. Existing Sussex and Leeds independently support bounded personal perioperative coordination; remove redundant link without changing the action."
+    },
+    {
+      "operation": "add",
+      "claim_id": "daily_care-dental",
+      "source_id": "b1-acute-retina-rcophth-gas",
+      "locator": "Recommendations: alert information/gas card for all treating professionals; Entonox/Equanox and emergency/maternity examples",
+      "assessment": "Previously independently accepted bounded application in batch-01-retinal-recheck: RCOphth establishes the gas contraindication and disclosure to treating staff; Moorfields explicitly supplies the dental setting. The same contraindication applies to dental sedation. RCOphth is not claimed to contain a separate verbatim dental instruction.",
+      "basis": "Existing immutable original review daily_care-dental supported_bounded_application, not a new clinical inference."
+    }
+  ],
+  "actual_source_ids": [
+    "b1-acute-retina-aoa-retinal-guideline",
+    "b1-acute-retina-asrs",
+    "b1-acute-retina-asrs-complex",
+    "b1-acute-retina-asrs-diabetes-guideline",
+    "b1-acute-retina-asrs-imaging",
+    "b1-acute-retina-asrs-sports",
+    "b1-acute-retina-cleveland",
+    "b1-acute-retina-cuh-repair",
+    "b1-acute-retina-diabetes-surgery-sussex",
+    "b1-acute-retina-glos-drops",
+    "b1-acute-retina-kgh-emergency-transport",
+    "b1-acute-retina-leeds-anaesthetic",
+    "b1-acute-retina-leeds-drops",
+    "b1-acute-retina-leeds-postop",
+    "b1-acute-retina-mayo-treatment",
+    "b1-acute-retina-moorfields",
+    "b1-acute-retina-moorfields-floaters",
+    "b1-acute-retina-moorfields-macular-gas",
+    "b1-acute-retina-moorfields-steroid-infection",
+    "b1-acute-retina-msd",
+    "b1-acute-retina-nei",
+    "b1-acute-retina-nei-diabetes",
+    "b1-acute-retina-nei-dilation",
+    "b1-acute-retina-nhs",
+    "b1-acute-retina-nhs-dex-common",
+    "b1-acute-retina-nhs-dex-risks",
+    "b1-acute-retina-nhs-dex-use",
+    "b1-acute-retina-nhs-floaters",
+    "b1-acute-retina-nhs-vision",
+    "b1-acute-retina-puradex-smpc",
+    "b1-acute-retina-ranzco-choosing-wisely",
+    "b1-acute-retina-rcophth-gas",
+    "b1-acute-retina-statpearls-exudative",
+    "b1-acute-retina-surgery-nei",
+    "b1-acute-retina-types-nei",
+    "b1-acute-retina-vitrectomy-nei"
+  ],
+  "remaining": [
+    "ICD category applicability needs separate semantic adjudication; no category is counted automatically."
+  ],
+  "canonical_editorial_records_sha256": "33d1f84402f5c81cd0c036df485aaf931e5c8180cc7df22711580ea402087245"
+}

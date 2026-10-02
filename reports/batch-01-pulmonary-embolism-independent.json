@@ -1,0 +1,1530 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "batch01-pulmonary-embolism-independent-2026-10-02",
+  "reviewer": "/root/pe_review",
+  "author": "/root/emergency_content",
+  "reviewed_at": "2026-10-02",
+  "review_type": "independent_original_source_editorial_adversarial_review",
+  "medical_reviewed": false,
+  "target": {
+    "path": "drafts/batch-01/emergency/pulmonary-embolism.json",
+    "id": "pulmonary-embolism",
+    "canonical_sha256": "95a46f8ca4a1336e6424a98a020fee777fc0f73f26b922c5e0acd17cbf016ffb",
+    "file_sha256": "129cc409647593d86c722fa9f905553bafb9975c94b73b98fd99fb44eb922c42",
+    "editorial_subset_sha256": "77130e2d70b11247c41ef15fa925a5e9e83b2363948a5e670c764a21102b8be3",
+    "source_subset_sha256": "d6ac226c8d06cbd794a479be8296a2c094fc212ce6cc23bc268be8776aaeac6a"
+  },
+  "prior_independent_review": null,
+  "verdict": "needs_revision",
+  "release_recommendation": "do_not_count_as_cross_checked_complete_content",
+  "scope": {
+    "sections": 14,
+    "paragraph_claims": 42,
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "existing_sources_read": 11,
+    "additional_sources_read": 9,
+    "author_files_modified": false,
+    "production_or_global_files_modified": false,
+    "no_individual_dose_or_diagnostic_calculator_added": true
+  },
+  "summary": "肺血栓栓塞主干成立。新发晕厥的行动级别需统一，检查选择与鉴别解释要补，儿童/哺乳适用边界和三组药物子项证据仍未完整。来源不足不当作医学事实已被证伪。",
+  "independence_assessment": {
+    "reviewer_did_not_author_target": true,
+    "same_group_not_double_counted": true,
+    "groups": [
+      "US-NIH",
+      "US-CDC",
+      "UK-NHS",
+      "US-MAYO",
+      "UK-NICE",
+      "US-AHA-ACC-JOINT",
+      "ASH-ISTH",
+      "UK-RCOG",
+      "MSD-MANUAL",
+      "US-AHRQ"
+    ],
+    "upstream_relationships": [
+      "所有 NHLBI 页面同一来源组；所有国家 NHS 页面同组。",
+      "AHA 成人指南摘要、患者页和 vascular 页面共享 AHA/2026 联合指南，不作三个独立来源。",
+      "ASH 儿科网页和单页视觉摘要均来自同一联合指南。",
+      "Mayo 列出 CHEST 2021、AHRQ 和医学教材；NICE/MSD 可能依赖相同试验。独立编写核对不等于独立试验复现。",
+      "RCOG 患者页由其委员会编写，基于 2015 Green-top；NHS 公众页与其可能共享临床依据，应披露。"
+    ],
+    "threshold_rule": "关键行动、诊断决策、疗效及风险逐项核查独立支持；一般解释、记录安排和明确有界的逻辑归纳不机械要求两个网址。"
+  },
+  "original_source_reads": [
+    {
+      "source_id": "pe-nhs",
+      "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+      "source_metadata_sha256": "ea1196bcc2ab112bc91f8001a075d5370fdf083f734ffb9d8e9e098e8d20e84d",
+      "independence_group": "UK-NHS",
+      "accessed_at": "2026-10-02",
+      "access_status": "relevant_original_page_sections_read",
+      "observed_version": "2023-05-25; review due 2026-05-25",
+      "locations_read": [
+        "Symptoms",
+        "Urgent advice",
+        "Immediate action",
+        "Treating",
+        "Reduce risk"
+      ],
+      "assessment": "复核到期不等于医学结论错误；第 55 行通用先注射 5 天与现行分药方案不一致，原稿已正确避开。"
+    },
+    {
+      "source_id": "pe-nhlbi",
+      "url": "https://www.nhlbi.nih.gov/health/pulmonary-embolism",
+      "source_metadata_sha256": "d914b2d4a74e13982ef6b6da1a84cb5eeb23a68f565e7cf38ffe07143b5aaaf0",
+      "independence_group": "US-NIH",
+      "accessed_at": "2026-10-02",
+      "access_status": "relevant_original_page_sections_read",
+      "observed_version": "2022-09-19",
+      "locations_read": [
+        "Overview",
+        "Symptoms",
+        "Diagnosis",
+        "Causes",
+        "Treatment",
+        "Recovery"
+      ],
+      "assessment": "正文主干可支持；同一 NIH 各页只算一个编写来源。"
+    },
+    {
+      "source_id": "pe-nhlbi-diagnosis",
+      "url": "https://www.nhlbi.nih.gov/health/venous-thromboembolism/diagnosis",
+      "source_metadata_sha256": "02be386217995dd02ca7e1dc73166a544d82ddbf76d229dcfc5e1186eabaa265",
+      "independence_group": "US-NIH",
+      "accessed_at": "2026-10-02",
+      "access_status": "relevant_original_page_sections_read",
+      "observed_version": "2022-09-19",
+      "locations_read": [
+        "Medical history and physical exam",
+        "Diagnostic tests and procedures"
+      ],
+      "assessment": "不能把单项检查介绍扩成完整排除算法。"
+    },
+    {
+      "source_id": "pe-nhlbi-treatment",
+      "url": "https://www.nhlbi.nih.gov/health/venous-thromboembolism/treatment",
+      "source_metadata_sha256": "423530b32af80a26abe667ceaf115d9b5498ff6d222346cc6407e9f7e69a3040",
+      "independence_group": "US-NIH",
+      "accessed_at": "2026-10-02",
+      "access_status": "relevant_original_page_sections_read",
+      "observed_version": "2022-09-20",
+      "locations_read": [
+        "Blood thinners",
+        "Thrombolytics",
+        "Catheter-assisted removal",
+        "Vena cava filter"
+      ],
+      "assessment": "滤器说明不等于住院机械加压预防依据。"
+    },
+    {
+      "source_id": "pe-nhlbi-recovery",
+      "url": "https://www.nhlbi.nih.gov/health/venous-thromboembolism/recovery",
+      "source_metadata_sha256": "88327a60850b7742a330c38a7b0ecd16089c520fc1de64f87d364f10817599cb",
+      "independence_group": "US-NIH",
+      "accessed_at": "2026-10-02",
+      "access_status": "relevant_original_page_sections_read",
+      "observed_version": "2022-09-20",
+      "locations_read": [
+        "Complications",
+        "Repeat VTE",
+        "Follow-up",
+        "Mental health",
+        "Healthy lifestyle"
+      ],
+      "assessment": "原文的肺高压症状列举不能单独支持晕厥只提前复诊。"
+    },
+    {
+      "source_id": "pe-nhlbi-causes",
+      "url": "https://www.nhlbi.nih.gov/health/venous-thromboembolism/causes",
+      "source_metadata_sha256": "0a6668980094ba5b6ec9e8a58d120fd8155af64a61d84d7d9d792f0661b7ac1e",
+      "independence_group": "US-NIH",
+      "accessed_at": "2026-10-02",
+      "access_status": "relevant_original_page_sections_read",
+      "observed_version": "2022-09-19",
+      "locations_read": [
+        "Mechanism",
+        "Immobility",
+        "Medical conditions",
+        "Age",
+        "Family history",
+        "Sex"
+      ],
+      "assessment": "风险项目逐项实际阅读。"
+    },
+    {
+      "source_id": "pe-nhlbi-women",
+      "url": "https://www.nhlbi.nih.gov/health/venous-thromboembolism/women",
+      "source_metadata_sha256": "d12d5fb52a02165ad81b955a26befa7b7a3b8d1e44ac760076f3e89ce764b250",
+      "independence_group": "US-NIH",
+      "accessed_at": "2026-10-02",
+      "access_status": "relevant_original_page_sections_read",
+      "observed_version": "2022-09-20",
+      "locations_read": [
+        "Hormonal birth control",
+        "Pregnancy and giving birth"
+      ],
+      "assessment": "只笼统提示部分抗凝药孕期不安全，没有逐一支持各药选择。"
+    },
+    {
+      "source_id": "pe-mayo",
+      "url": "https://www.mayoclinic.org/diseases-conditions/pulmonary-embolism/diagnosis-treatment/drc-20354653",
+      "source_metadata_sha256": "7adf4fa4669368a21b4e2ef5a2af44ec1a1ab4e1abbaf1e2ad5996fbdb092ec2",
+      "independence_group": "US-MAYO",
+      "accessed_at": "2026-10-02",
+      "access_status": "relevant_original_page_sections_read",
+      "observed_version": "2022-12-01; expert review 2022-08-29",
+      "locations_read": [
+        "Diagnosis",
+        "Blood tests",
+        "Chest X-ray",
+        "CT",
+        "V/Q",
+        "Medicines",
+        "Procedures",
+        "Ongoing care",
+        "Appointment",
+        "References"
+      ],
+      "assessment": "正式发布日可补入元数据；成人 AskMayoExpert/CHEST 2021 为上游之一，非独立试验。"
+    },
+    {
+      "source_id": "pe-cdc",
+      "url": "https://www.cdc.gov/blood-clots/about/index.html",
+      "source_metadata_sha256": "ddf5f862a665bdd2c14a49f7767e690aea9e3c318b881929bfec3f9746410ec6",
+      "independence_group": "US-CDC",
+      "accessed_at": "2026-10-02",
+      "access_status": "relevant_original_page_sections_read",
+      "observed_version": "2025-03-05",
+      "locations_read": [
+        "Overview",
+        "DVT/PE symptoms",
+        "Risk factors",
+        "Complications",
+        "Prevention",
+        "Testing",
+        "Treatment"
+      ],
+      "assessment": "风险详目链接未假装已读；当前正文的风险定位应从 Overview/Signs 改为相应栏目或新增来源。"
+    },
+    {
+      "source_id": "pe-nhs-considerations",
+      "url": "https://www.nhs.uk/medicines/anticoagulants/considerations/",
+      "source_metadata_sha256": "446aaa7da447884f0a66b816e2b1b4fe710e56894b8e5eccb79cb72f7669830b",
+      "independence_group": "UK-NHS",
+      "accessed_at": "2026-10-02",
+      "access_status": "relevant_original_page_sections_read",
+      "observed_version": "2024-09-09",
+      "locations_read": [
+        "Surgery",
+        "Pregnancy",
+        "Breastfeeding",
+        "Injury",
+        "Other remedies",
+        "Food and drink"
+      ],
+      "assessment": "与 NHS side-effects 同源；不是第二份独立材料。"
+    },
+    {
+      "source_id": "pe-nhs-side-effects",
+      "url": "https://www.nhs.uk/medicines/anticoagulants/side-effects/",
+      "source_metadata_sha256": "1e764375375caf51331e4332d627b91894b985246dde2fb9c874285438ec5da0",
+      "independence_group": "UK-NHS",
+      "accessed_at": "2026-10-02",
+      "access_status": "relevant_original_page_sections_read",
+      "observed_version": "2024-09-09",
+      "locations_read": [
+        "Excessive bleeding",
+        "injury triggers",
+        "medicine-specific effects"
+      ],
+      "assessment": "严重或反复出血、头部明显撞击的急诊条件直接存在。"
+    },
+    {
+      "source_id": "review-pe-nice-ng158",
+      "url": "https://www.nice.org.uk/guidance/ng158/chapter/Recommendations",
+      "source_metadata_sha256": null,
+      "independence_group": "UK-NICE",
+      "accessed_at": "2026-10-02",
+      "access_status": "official_indexed_recommendations_read_direct_page_403",
+      "observed_version": "2020-03-26; updated 2023-08-02",
+      "locations_read": [
+        "1.1.15–1.1.17",
+        "1.2.1–1.2.4",
+        "1.3.4–1.3.9",
+        "1.4.1–1.4.8"
+      ],
+      "assessment": "实际读到正式索引建议；不是宣称下载全文。成人英国路径，不套给孕妇或儿童。",
+      "not_yet_in_author_catalog": true
+    },
+    {
+      "source_id": "review-pe-aha-2026",
+      "url": "https://professional.heart.org/en/science-news/2026-guideline-for-the-evaluation-and-management-of-acute-pulmonary-embolism-in-adults/top-things-to-know",
+      "source_metadata_sha256": null,
+      "independence_group": "US-AHA-ACC-JOINT",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_official_summary_read",
+      "observed_version": "2026-02-19",
+      "locations_read": [
+        "Top Things to Know 1–10",
+        "citation"
+      ],
+      "assessment": "成人联合指南官方摘要已读，指南全文未读；其 AHA 患者页不是另一独立证据组。",
+      "not_yet_in_author_catalog": true
+    },
+    {
+      "source_id": "review-pe-ash-pediatric",
+      "url": "https://www.hematology.org/education/clinicians/guidelines-and-quality-care/clinical-practice-guidelines/venous-thromboembolism-guidelines/pediatrics/treatment-of-vte-in-pediatric-patients",
+      "source_metadata_sha256": null,
+      "independence_group": "ASH-ISTH",
+      "accessed_at": "2026-10-02",
+      "access_status": "original_official_page_read",
+      "observed_version": "2025 update; landing page date not displayed",
+      "locations_read": [
+        "Introduction",
+        "2025 implementation resources"
+      ],
+      "assessment": "儿科与成人风险收益不同的来源；未据此编造儿童剂量或照抄成人疗程。",
+      "not_yet_in_author_catalog": true
+    },
+    {
+      "source_id": "review-pe-ash-pediatric-visual",
+      "url": "https://www.hematology.org/-/media/hematology/files/clinicians/guidelines/ash-guidelines-update-2025/ash-cpg-vte-peds-visual-summary_final.pdf",
+      "source_metadata_sha256": null,
+      "independence_group": "ASH-ISTH",
+      "accessed_at": "2026-10-02",
+      "access_status": "official_pdf_text_read_visual_not_confirmed",
+      "observed_version": "2025",
+      "locations_read": [
+        "Page 1 extracted text: population",
+        "duration exclusions",
+        "DOAC caution"
+      ],
+      "assessment": "截图调用仅返回引用，未看到像素，图表位置不作为本报告结论依据；不作第二独立 ASH 来源。",
+      "not_yet_in_author_catalog": true
+    },
+    {
+      "source_id": "review-pe-rcog",
+      "url": "https://www.rcog.org.uk/for-the-public/browse-our-patient-information/diagnosis-and-treatment-of-venous-thrombosis-in-pregnancy-and-after-birth/",
+      "source_metadata_sha256": null,
+      "independence_group": "UK-RCOG",
+      "accessed_at": "2026-10-02",
+      "access_status": "relevant_original_page_sections_read",
+      "observed_version": "2015-08; review in progress",
+      "locations_read": [
+        "Symptoms",
+        "tests and risks",
+        "heparin",
+        "after birth",
+        "breastfeeding",
+        "Sources"
+      ],
+      "assessment": "专业委员会患者资料，上游 Green-top 2015；过期细节如分娩停药小时数不引入，只用于边界审核。",
+      "not_yet_in_author_catalog": true
+    },
+    {
+      "source_id": "review-pe-msd",
+      "url": "https://www.msdmanuals.com/professional/pulmonary-disorders/pulmonary-embolism/pulmonary-embolism-pe",
+      "source_metadata_sha256": null,
+      "independence_group": "MSD-MANUAL",
+      "accessed_at": "2026-10-02",
+      "access_status": "relevant_original_page_sections_read",
+      "observed_version": "Full review 2024-11; updated 2026-01",
+      "locations_read": [
+        "Etiology",
+        "pathophysiology",
+        "Diagnosis",
+        "Clinical probability",
+        "Diagnostic testing",
+        "General treatment",
+        "anticoagulation risks"
+      ],
+      "assessment": "作者 Todd Bull / Peter Hountras，同行审订 M. Patricia Rivera；Merck/MSD 镜像不重复计数；未把专业阈值或剂量写入正文。",
+      "not_yet_in_author_catalog": true
+    },
+    {
+      "source_id": "review-pe-aha-vascular",
+      "url": "https://www.heart.org/en/health-topics/vascular-health",
+      "source_metadata_sha256": null,
+      "independence_group": "US-AHA-ACC-JOINT",
+      "accessed_at": "2026-10-02",
+      "access_status": "relevant_original_page_sections_read",
+      "observed_version": "page-specific date not displayed",
+      "locations_read": [
+        "What Is a Pulmonary Embolism?",
+        "emergency call paragraph",
+        "PE diagnosis/treatment"
+      ],
+      "assessment": "明确 PE 症状急救路径；只阅读相关节，不把动脉粥样硬化建议套给 PE。",
+      "not_yet_in_author_catalog": true
+    },
+    {
+      "source_id": "review-pe-aha-patient",
+      "url": "https://www.heart.org/en/health-topics/pulmonary-embolism",
+      "source_metadata_sha256": null,
+      "independence_group": "US-AHA-ACC-JOINT",
+      "accessed_at": "2026-10-02",
+      "access_status": "relevant_original_page_sections_read",
+      "observed_version": "2026-02-19",
+      "locations_read": [
+        "Warning signs",
+        "causes",
+        "complications",
+        "diagnosis",
+        "treatment",
+        "recurrence"
+      ],
+      "assessment": "与 AHA 2026 摘要共用联合指南，不独立重复计数。",
+      "not_yet_in_author_catalog": true
+    },
+    {
+      "source_id": "review-pe-ahrq-anticoagulant",
+      "url": "https://www.ahrq.gov/patients-consumers/diagnosis-treatment/treatments/btpills/stayactive-tr.html",
+      "source_metadata_sha256": null,
+      "independence_group": "US-AHRQ",
+      "accessed_at": "2026-10-02",
+      "access_status": "official_indexed_relevant_transcript_read_followup_open_timed_out",
+      "observed_version": "2015-09",
+      "locations_read": [
+        "Activity/injury",
+        "medication schedule",
+        "other medicines",
+        "alert card",
+        "alcohol"
+      ],
+      "assessment": "官方索引中实际阅读了相关完整段落；直接后续页定位超时。旧版口服抗凝教育不外推所有药的 INR 监测或饮食规则。",
+      "not_yet_in_author_catalog": true
+    }
+  ],
+  "claim_result_counts": {
+    "supported": 19,
+    "supported_with_binding_fix": 14,
+    "wording_revision": 1,
+    "action_revision": 2,
+    "content_expansion_needed": 2,
+    "partially_supported": 3,
+    "supported_bounded_synthesis": 1
+  },
+  "claim_checks": [
+    {
+      "section": "summary",
+      "claim_id": "summary-0",
+      "claim_sha256": "2880ea990c97ad9c62db898b7f93d5bdf89bb8009ef6059c4b7931dcedd1317f",
+      "claim_text_sha256": "06a2b7a3c72b4515026c370d8ae7c5f9762e1f09f87ac2345740abe4d36f0e05",
+      "section_content_sha256": "0cbd6b3434a4b639252a9d4cde7471808352ddc99d770356467fa0e88fc16a2c",
+      "claim_kind_in_author_record": "explanation",
+      "status": "supported",
+      "assessment": "现有定义无自我确诊或饮食治疗暗示。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi",
+          "locator": "What is pulmonary embolism?; symptoms"
+        },
+        {
+          "source_id": "pe-cdc",
+          "locator": "Overview; Signs and symptoms"
+        }
+      ],
+      "additional_source_ids": []
+    },
+    {
+      "section": "summary",
+      "claim_id": "summary-1",
+      "claim_sha256": "0c3de254d2eb5ccbf30b09979d4370c8524e765b483b7d1339dc736f97f26578",
+      "claim_text_sha256": "be767ce897940dd06279c6ba0749ad35e4f2ffeb76fcebc0e388b44bb73fcb55",
+      "section_content_sha256": "0cbd6b3434a4b639252a9d4cde7471808352ddc99d770356467fa0e88fc16a2c",
+      "claim_kind_in_author_record": "explanation",
+      "status": "supported",
+      "assessment": "DVT 与 PE 部位区分正确；盆腔出处可精确绑定 CDC Overview。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi",
+          "locator": "What is pulmonary embolism?; symptoms"
+        },
+        {
+          "source_id": "pe-cdc",
+          "locator": "Overview; Signs and symptoms"
+        }
+      ],
+      "additional_source_ids": []
+    },
+    {
+      "section": "summary",
+      "claim_id": "summary-2",
+      "claim_sha256": "f23c37d0a1b8f0efca44f59f42ce099a40556e6c3ae68bfbe1e2f95d7872aed6",
+      "claim_text_sha256": "c16e98a248086edc5f623aabcff7f981d99b7b4381ee5b75e37c9488564f5eac",
+      "section_content_sha256": "0cbd6b3434a4b639252a9d4cde7471808352ddc99d770356467fa0e88fc16a2c",
+      "claim_kind_in_author_record": "explanation",
+      "status": "supported",
+      "assessment": "缓慢起病及无腿症状各有明确出处；不是所有 PE 都突然发作。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi",
+          "locator": "What is pulmonary embolism?; symptoms"
+        },
+        {
+          "source_id": "pe-cdc",
+          "locator": "Overview; Signs and symptoms"
+        }
+      ],
+      "additional_source_ids": []
+    },
+    {
+      "section": "causes_risks",
+      "claim_id": "causes_risks-0",
+      "claim_sha256": "4c00bd431571e03a6de6469f519dcc2b9ce7a4da09773804f18f19f0a4ab159c",
+      "claim_text_sha256": "8651084669b1addf1003d67b40b426bdbb873d32ddda3cee0102750c1e0f4889",
+      "section_content_sha256": "42cd45b1f5af0e8b00143672c9b3feeddb3a2782143a69b391626c2eccfdaaa2",
+      "claim_kind_in_author_record": "explanation",
+      "status": "supported",
+      "assessment": "基础机制说明成立。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-causes",
+          "locator": "What raises likelihood of VTE?"
+        },
+        {
+          "source_id": "pe-cdc",
+          "locator": "Overview; Signs and symptoms"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-msd"
+      ]
+    },
+    {
+      "section": "causes_risks",
+      "claim_id": "causes_risks-1",
+      "claim_sha256": "f998f3d831f7a42b76ab1d2c32191ace2c0417369ab33b596cc1f9c300c97e7c",
+      "claim_text_sha256": "a0c9c4f666e68de996968b4648e60fc0be2ccf013cb2c354cfb740a2ee460648",
+      "section_content_sha256": "42cd45b1f5af0e8b00143672c9b3feeddb3a2782143a69b391626c2eccfdaaa2",
+      "claim_kind_in_author_record": "risk",
+      "status": "supported_with_binding_fix",
+      "assessment": "风险主干成立；CDC 旧 locator 不覆盖所有列举，补 MSD Etiology 的逐项对应。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-causes",
+          "locator": "What raises likelihood of VTE?"
+        },
+        {
+          "source_id": "pe-cdc",
+          "locator": "Overview; Signs and symptoms"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-msd"
+      ]
+    },
+    {
+      "section": "causes_risks",
+      "claim_id": "causes_risks-2",
+      "claim_sha256": "82c0185c009ca39370fcbdcaad655e232d0371c7e69e5b8bcc8192e887085dbe",
+      "claim_text_sha256": "fc1d46c9846b39533a0c0b80394ed95234392ba218cc38f8fa33b39b0471892b",
+      "section_content_sha256": "42cd45b1f5af0e8b00143672c9b3feeddb3a2782143a69b391626c2eccfdaaa2",
+      "claim_kind_in_author_record": "risk",
+      "status": "supported",
+      "assessment": "未把全部激素产品等同；个体药物讨论属于合理适用说明。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-women",
+          "locator": "Hormonal birth control; Pregnancy and giving birth"
+        },
+        {
+          "source_id": "pe-cdc",
+          "locator": "Overview; Signs and symptoms"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-msd"
+      ]
+    },
+    {
+      "section": "red_flags",
+      "claim_id": "red_flags-0",
+      "claim_sha256": "20084885ff8a45cad86731f8f7b842964359b80024813812e33ca54f35612215",
+      "claim_text_sha256": "fbf0b508dd02449c0ed2282c5320233815eea481566e61dc3ba75f18690828b1",
+      "section_content_sha256": "011d7a54224efa422900c9e5dccc3bbbb047cd22cb441334e04196b5a70301b3",
+      "claim_kind_in_author_record": "action",
+      "status": "supported",
+      "assessment": "立即评估与来源一致，无要求等待全部症状齐全。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhs",
+          "locator": "Symptoms; Urgent and immediate action"
+        },
+        {
+          "source_id": "pe-cdc",
+          "locator": "Overview; Signs and symptoms"
+        }
+      ],
+      "additional_source_ids": []
+    },
+    {
+      "section": "red_flags",
+      "claim_id": "red_flags-1",
+      "claim_sha256": "d8cb7f6081769477fa57af0b5adc02bc554ea0dabd88e6d32f9dcd197a2cfa11",
+      "claim_text_sha256": "7bb03adbbf3a16eb98519feb4c5767c0c12332e90c9d21fee8741738bc311580",
+      "section_content_sha256": "011d7a54224efa422900c9e5dccc3bbbb047cd22cb441334e04196b5a70301b3",
+      "claim_kind_in_author_record": "action",
+      "status": "supported_with_binding_fix",
+      "assessment": "急救行动得到 NHS 和 AHA 相互核对；不自驾直接来自 NHS，属于同一急诊行动的实施方式。病史列表是沟通安排。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhs",
+          "locator": "Symptoms; Urgent and immediate action"
+        },
+        {
+          "source_id": "pe-nhlbi-diagnosis",
+          "locator": "Medical history; Diagnostic tests"
+        },
+        {
+          "source_id": "pe-cdc",
+          "locator": "Overview; Signs and symptoms"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-aha-vascular"
+      ]
+    },
+    {
+      "section": "red_flags",
+      "claim_id": "red_flags-2",
+      "claim_sha256": "636a94dbe3442a744a46d7947e586cfc1abba773daa680a49a382a20c55bf23d",
+      "claim_text_sha256": "3708cdb6a99692ce97abb2a589b7eac16718491c629c6aeb41fe286ba4f29781",
+      "section_content_sha256": "011d7a54224efa422900c9e5dccc3bbbb047cd22cb441334e04196b5a70301b3",
+      "claim_kind_in_author_record": "action",
+      "status": "supported",
+      "assessment": "NIH 复发段与 CDC 急症处理可组合支持；服药不提供排除保证。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-recovery",
+          "locator": "Receive routine follow-up care"
+        },
+        {
+          "source_id": "pe-cdc",
+          "locator": "Overview; Signs and symptoms"
+        }
+      ],
+      "additional_source_ids": []
+    },
+    {
+      "section": "care",
+      "claim_id": "care-0",
+      "claim_sha256": "c6676472ecdcdee30764fddd1ddd933e18ca6e5176d981f651db424e61dccecd",
+      "claim_text_sha256": "23c7ea32fe91f3137cf7bbedc6230cf123fc0dbc879b4738eabd388f45cfdfa5",
+      "section_content_sha256": "2a74a8095d78e7b02602062247be1231db92cef1b560cc2001baa817c1ce2be2",
+      "claim_kind_in_author_record": "action",
+      "status": "supported_with_binding_fix",
+      "assessment": "原两源未完整解释院外照护条件；NICE/MSD 的低风险及随访安排补足判断依据。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhs",
+          "locator": "Symptoms; Urgent and immediate action"
+        },
+        {
+          "source_id": "pe-nhlbi",
+          "locator": "What is pulmonary embolism?; symptoms"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-nice-ng158",
+        "review-pe-msd",
+        "review-pe-aha-2026"
+      ]
+    },
+    {
+      "section": "care",
+      "claim_id": "care-1",
+      "claim_sha256": "2f59411489601b2dc1137298f63bd34af3f8454e8e18ee88adec7c1cc8b6c2f2",
+      "claim_text_sha256": "a5edd66d270f358e98d7055be9fc4e41263adfde3796acb21f4d459f4e2f3c6d",
+      "section_content_sha256": "2a74a8095d78e7b02602062247be1231db92cef1b560cc2001baa817c1ce2be2",
+      "claim_kind_in_author_record": "action",
+      "status": "wording_revision",
+      "assessment": "中文“发热”应写腿部皮肤局部发热，与英文 warmth 对齐。不是要求出现全身发烧。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-cdc",
+          "locator": "Overview; Signs and symptoms"
+        },
+        {
+          "source_id": "pe-nhs",
+          "locator": "Symptoms; Urgent and immediate action"
+        }
+      ],
+      "additional_source_ids": []
+    },
+    {
+      "section": "care",
+      "claim_id": "care-2",
+      "claim_sha256": "915f108a954241435c8d69f185cbb9662b79393924a201b530fd8b7a054ba71a",
+      "claim_text_sha256": "5d16f1d169be7d53902e1a10967049f24625eeee9a96133031f8551aabda7c20",
+      "section_content_sha256": "2a74a8095d78e7b02602062247be1231db92cef1b560cc2001baa817c1ce2be2",
+      "claim_kind_in_author_record": "action",
+      "status": "action_revision",
+      "assessment": "晕厥被放入提前联系团队，和 red_flags 急救相冲突；分开新发/急性晕厥与稳定恢复期症状。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-recovery",
+          "locator": "Receive routine follow-up care"
+        },
+        {
+          "source_id": "pe-nhlbi-recovery",
+          "locator": "How can VTE affect health?"
+        },
+        {
+          "source_id": "pe-nhs-side-effects",
+          "locator": "Excessive bleeding"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-aha-vascular"
+      ]
+    },
+    {
+      "section": "diagnosis",
+      "claim_id": "diagnosis-0",
+      "claim_sha256": "bf2f0667316959c79b1493ac7e97e7cd7bbc2e619527509c721aff7ba6166642",
+      "claim_text_sha256": "cd8ffcb98b4eec0ef0044c12c65227ab65aa7875274e5cdeb98ddb34f25ad675",
+      "section_content_sha256": "908316ba6c83cd91fbad87452cae73acd4a6628b66d40ee28d313c551cf86afa",
+      "claim_kind_in_author_record": "explanation",
+      "status": "supported",
+      "assessment": "检查前问诊/风险评估说明成立。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-diagnosis",
+          "locator": "Medical history; Diagnostic tests"
+        },
+        {
+          "source_id": "pe-mayo",
+          "locator": "Diagnosis: Blood tests; Chest X-ray; CT; V/Q"
+        }
+      ],
+      "additional_source_ids": []
+    },
+    {
+      "section": "diagnosis",
+      "claim_id": "diagnosis-1",
+      "claim_sha256": "78363114dd6b75cb36ecc0aa2032343d73780142fe09ec217a8a1a7a65d005b2",
+      "claim_text_sha256": "6bb1f39be250555f04ebca6be12288ff93e3f92abb9df2738909f0c0822972f6",
+      "section_content_sha256": "908316ba6c83cd91fbad87452cae73acd4a6628b66d40ee28d313c551cf86afa",
+      "claim_kind_in_author_record": "explanation",
+      "status": "supported_with_binding_fix",
+      "assessment": "单阳性不确诊成立；原单个 Mayo 支持不含完整临床概率用途，补 NICE/MSD 精确对应。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-mayo",
+          "locator": "Diagnosis: Blood tests; Chest X-ray; CT; V/Q"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-nice-ng158",
+        "review-pe-msd"
+      ]
+    },
+    {
+      "section": "diagnosis",
+      "claim_id": "diagnosis-2",
+      "claim_sha256": "941c9b12ce874fbfecd7db42c0613e5fe846caa75beb84a8d5ecf1d5064b0c29",
+      "claim_text_sha256": "268ebf7351491294bd3c307308758b4417a035ad89b75a82c42a691d99277355",
+      "section_content_sha256": "908316ba6c83cd91fbad87452cae73acd4a6628b66d40ee28d313c551cf86afa",
+      "claim_kind_in_author_record": "explanation",
+      "status": "content_expansion_needed",
+      "assessment": "各检查描述正确，但“部分人”未解释为什么选择 V/Q；补造影剂过敏或肾功能条件。正常胸片不排除有 Mayo/MSD 支持。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-diagnosis",
+          "locator": "Medical history; Diagnostic tests"
+        },
+        {
+          "source_id": "pe-mayo",
+          "locator": "Diagnosis: Blood tests; Chest X-ray; CT; V/Q"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-msd",
+        "review-pe-aha-patient"
+      ]
+    },
+    {
+      "section": "differentials",
+      "claim_id": "differentials-0",
+      "claim_sha256": "24b86e39d1a6be983e0baf1bdbae354fbd9febd926f44e908e64d69f11829869",
+      "claim_text_sha256": "10b2f461d5a017d5d23f20fe3ed892911d61e56bd9782bfe4bc6fefceb3d46f8",
+      "section_content_sha256": "9ff64d259e83949d1a064f54002ce4438640252804edf2a741ad3f5b024923c8",
+      "claim_kind_in_author_record": "explanation",
+      "status": "supported",
+      "assessment": "主干成立但下文未兑现具体分辨线索。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-mayo",
+          "locator": "Diagnosis: Blood tests; Chest X-ray; CT; V/Q"
+        },
+        {
+          "source_id": "pe-nhs",
+          "locator": "Symptoms; Urgent and immediate action"
+        }
+      ],
+      "additional_source_ids": []
+    },
+    {
+      "section": "differentials",
+      "claim_id": "differentials-1",
+      "claim_sha256": "2362ef7ef5e7ba1877e4af897a9b00ccb80e16f3ac4c092205d686222261c8c5",
+      "claim_text_sha256": "ecd77ddbd93aaed9fc6834d42ef23c6a79a4e52f5321c333eacedc95eb01ce7d",
+      "section_content_sha256": "9ff64d259e83949d1a064f54002ce4438640252804edf2a741ad3f5b024923c8",
+      "claim_kind_in_author_record": "explanation",
+      "status": "content_expansion_needed",
+      "assessment": "只罗列肺炎/心脏/肺病而无具体区别，未达到用户逐条解释标准；补医生借助的线索和危险替代病因。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-mayo",
+          "locator": "Diagnosis: Blood tests; Chest X-ray; CT; V/Q"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-msd"
+      ]
+    },
+    {
+      "section": "differentials",
+      "claim_id": "differentials-2",
+      "claim_sha256": "f4445a0295e03dd45e628f0cccb4614f328bcaeb247202676825e948bcf16827",
+      "claim_text_sha256": "e6a65ab9955442b02336910b302769f960d48f5fb4944a17ccd1026c0d17a9eb",
+      "section_content_sha256": "9ff64d259e83949d1a064f54002ce4438640252804edf2a741ad3f5b024923c8",
+      "claim_kind_in_author_record": "explanation",
+      "status": "supported",
+      "assessment": "DVT 与 PE 可并存，未误合并规范病种。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-cdc",
+          "locator": "Overview; Signs and symptoms"
+        },
+        {
+          "source_id": "pe-nhlbi",
+          "locator": "What is pulmonary embolism?; symptoms"
+        }
+      ],
+      "additional_source_ids": []
+    },
+    {
+      "section": "treatment",
+      "claim_id": "treatment-0",
+      "claim_sha256": "b9a57ec9931166d57026641d9b7293aa0205dff34ac3757019d8f6c6dc565820",
+      "claim_text_sha256": "586d9ae63a891f05194c86a9ae5dba95c4b61f13ce6c7bcf793b29e729b17479",
+      "section_content_sha256": "bc411236b805608603e17df9dd93cd337cd1683457739ae46a23f4d18f83e79d",
+      "claim_kind_in_author_record": "explanation",
+      "status": "supported_with_binding_fix",
+      "assessment": "低氧及循环支持为治疗目标无错；原所引两节只直接支持抗凝主干，新增专业 General treatment 可定位。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-treatment",
+          "locator": "Blood thinners; thrombolytics; clot removal; filter"
+        },
+        {
+          "source_id": "pe-mayo",
+          "locator": "Treatment: Medicines; Procedures; Ongoing care"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-msd",
+        "review-pe-aha-2026"
+      ]
+    },
+    {
+      "section": "treatment",
+      "claim_id": "treatment-1",
+      "claim_sha256": "648a5ce1a385e1708b01f4aadd0fce9c1e0f21df6ba14f408074e3d86a2cdaa6",
+      "claim_text_sha256": "fce1b466adfebe140556b847f227bca352b6cbc9ea8d4b38ffd2376b4e4385eb",
+      "section_content_sha256": "bc411236b805608603e17df9dd93cd337cd1683457739ae46a23f4d18f83e79d",
+      "claim_kind_in_author_record": "action",
+      "status": "supported_with_binding_fix",
+      "assessment": "经选择才院外治疗正确；补 AHA/MSD 的低风险条款，未给读者自行评风险算法。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi",
+          "locator": "What is pulmonary embolism?; symptoms"
+        },
+        {
+          "source_id": "pe-mayo",
+          "locator": "Treatment: Medicines; Procedures; Ongoing care"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-aha-2026",
+        "review-pe-msd"
+      ]
+    },
+    {
+      "section": "treatment",
+      "claim_id": "treatment-2",
+      "claim_sha256": "853fd1d9072b4325714ad0964d609550899904184b0a6bdaee979b8d4ecbd1f0",
+      "claim_text_sha256": "32d545bae24917492aaa1895ad727ff6c2f539900ba01675eff2578246b8ec25",
+      "section_content_sha256": "bc411236b805608603e17df9dd93cd337cd1683457739ae46a23f4d18f83e79d",
+      "claim_kind_in_author_record": "risk",
+      "status": "supported",
+      "assessment": "溶栓适用范围和大出血风险交叉支持；未要求所有影像血块溶栓。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-treatment",
+          "locator": "Blood thinners; thrombolytics; clot removal; filter"
+        },
+        {
+          "source_id": "pe-mayo",
+          "locator": "Treatment: Medicines; Procedures; Ongoing care"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-aha-2026"
+      ]
+    },
+    {
+      "section": "medications",
+      "claim_id": "medications-0",
+      "claim_sha256": "4ed704df0b7e5122d1915571c0c8493c1f1b4b2ec687ff951891650d19f670d3",
+      "claim_text_sha256": "dce7ed48b25a539043f2f51188801711da38cd5f1e06bf5aa3cd829cf519f532",
+      "section_content_sha256": "8cdeda0bd0611161a109e6b8983e0db4888322753dd4a58a85bb5c49ee78ea10",
+      "claim_kind_in_author_record": "explanation",
+      "status": "supported",
+      "assessment": "对 blood thinner 的白话澄清符合机制，无声称立即溶栓。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-treatment",
+          "locator": "Blood thinners; thrombolytics; clot removal; filter"
+        },
+        {
+          "source_id": "pe-mayo",
+          "locator": "Treatment: Medicines; Procedures; Ongoing care"
+        }
+      ],
+      "additional_source_ids": []
+    },
+    {
+      "section": "medications",
+      "claim_id": "medications-1",
+      "claim_sha256": "1c05ca1f2ec7d2a3608fb45455797274e6717b61bd38a5bff47fb6558f438d8e",
+      "claim_text_sha256": "35de6b2420cf42de6ae3c7461fe37227260340b6386488c0fc8cc5f8c326b0d8",
+      "section_content_sha256": "8cdeda0bd0611161a109e6b8983e0db4888322753dd4a58a85bb5c49ee78ea10",
+      "claim_kind_in_author_record": "explanation",
+      "status": "supported_with_binding_fix",
+      "assessment": "不同起始方式正确；Mayo 与 NICE/MSD 可交叉，不照抄 NHS 通用五天注射。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-treatment",
+          "locator": "Blood thinners; thrombolytics; clot removal; filter"
+        },
+        {
+          "source_id": "pe-mayo",
+          "locator": "Treatment: Medicines; Procedures; Ongoing care"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-nice-ng158",
+        "review-pe-msd"
+      ]
+    },
+    {
+      "section": "medications",
+      "claim_id": "medications-2",
+      "claim_sha256": "39740c466cb8351be23368625bb027f0a34e05f1d27f1fb578da34c794ff457f",
+      "claim_text_sha256": "ea77c6e8de7af2925b9970a586870185177b5707ec55948d29078c006915691c",
+      "section_content_sha256": "8cdeda0bd0611161a109e6b8983e0db4888322753dd4a58a85bb5c49ee78ea10",
+      "claim_kind_in_author_record": "action",
+      "status": "partially_supported",
+      "assessment": "出血/不自停/告知其他用药有交叉；布洛芬、草药及侵入操作的完整组合目前 NHS 明确，需补另一独立药物资料对应具体项。AHRQ 索引仅补通用药物/阿司匹林，未声称逐项覆盖。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-treatment",
+          "locator": "Blood thinners; thrombolytics; clot removal; filter"
+        },
+        {
+          "source_id": "pe-nhs-considerations",
+          "locator": "Pregnancy; Other medicines; Food and drink; Having surgery"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-ahrq-anticoagulant"
+      ]
+    },
+    {
+      "section": "diet",
+      "claim_id": "diet-0",
+      "claim_sha256": "12c3150f0f5f81c7e46f4a87d6e1656af53830016adfae03bb2443ac86343643",
+      "claim_text_sha256": "be9f18532963e0c56f279ec5c3c436f96d1005f49e2a3168154964160da3a33b",
+      "section_content_sha256": "1e9136396403bf76342db3920de4848d8d40c26fbd5765362122d877a5c3cb36",
+      "claim_kind_in_author_record": "explanation",
+      "status": "supported_bounded_synthesis",
+      "assessment": "饮食不能替代所需抗凝，是已读治疗和饮食资料的边界归纳；不宣称完成所有食物疗效的系统综述。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-treatment",
+          "locator": "Blood thinners; thrombolytics; clot removal; filter"
+        },
+        {
+          "source_id": "pe-nhlbi-recovery",
+          "locator": "Healthy lifestyle changes"
+        },
+        {
+          "source_id": "pe-nhs-considerations",
+          "locator": "Pregnancy; Other medicines; Food and drink; Having surgery"
+        }
+      ],
+      "additional_source_ids": []
+    },
+    {
+      "section": "diet",
+      "claim_id": "diet-1",
+      "claim_sha256": "1873f026a810b2b98acec4dca6749d0bd463aa7abc410c92c660290ba14e42f6",
+      "claim_text_sha256": "9ab5adfe6a27f68ffb18e49741f3d41517804ce69a06b11dee645456f14fe7d2",
+      "section_content_sha256": "1e9136396403bf76342db3920de4848d8d40c26fbd5765362122d877a5c3cb36",
+      "claim_kind_in_author_record": "action",
+      "status": "supported",
+      "assessment": "华法林维生素 K 稳定摄入得到独立两源支持。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-recovery",
+          "locator": "Healthy lifestyle changes"
+        },
+        {
+          "source_id": "pe-nhs-considerations",
+          "locator": "Pregnancy; Other medicines; Food and drink; Having surgery"
+        }
+      ],
+      "additional_source_ids": []
+    },
+    {
+      "section": "diet",
+      "claim_id": "diet-2",
+      "claim_sha256": "46e8ab9ffae309b3d08068a1e9ef4d3445440f276c8b1707ecb0494465a01393",
+      "claim_text_sha256": "be3353aaf7595eacb75ccd3eec50f040163096f1e7ce93d6c57ee59847c2f5a3",
+      "section_content_sha256": "1e9136396403bf76342db3920de4848d8d40c26fbd5765362122d877a5c3cb36",
+      "claim_kind_in_author_record": "action",
+      "status": "partially_supported",
+      "assessment": "不要套用华法林限制的直接 DOAC 句目前只有 NHS；NIH 的华法林句不能当作 DOAC 第二份依据。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhs-considerations",
+          "locator": "Pregnancy; Other medicines; Food and drink; Having surgery"
+        },
+        {
+          "source_id": "pe-nhlbi-recovery",
+          "locator": "Healthy lifestyle changes"
+        }
+      ],
+      "additional_source_ids": []
+    },
+    {
+      "section": "daily_care",
+      "claim_id": "daily_care-0",
+      "claim_sha256": "ac4bce9c53902469954cf49d5ad02198eada3ef378d4468445a3af66c1793e9d",
+      "claim_text_sha256": "b62d6154a93b64b5a332b27795481d37f6d91770c9f375a76da6683d27bca7aa",
+      "section_content_sha256": "ba6cf1154867550c981977546214017673eab37b016bb817c859c81ba6ab3446",
+      "claim_kind_in_author_record": "explanation",
+      "status": "supported",
+      "assessment": "护理导读为后续安排概括，不强制每个常识词双源。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-recovery",
+          "locator": "Receive routine follow-up care"
+        },
+        {
+          "source_id": "pe-nhlbi-recovery",
+          "locator": "Healthy lifestyle changes"
+        },
+        {
+          "source_id": "pe-nhs-considerations",
+          "locator": "Pregnancy; Other medicines; Food and drink; Having surgery"
+        }
+      ],
+      "additional_source_ids": []
+    },
+    {
+      "section": "daily_care",
+      "claim_id": "daily_care-1",
+      "claim_sha256": "8f89a05040be6a7a2590597bc232da7bdedaa60493a1b41a667fb8b545e25010",
+      "claim_text_sha256": "1606a8a5b03abcb0ccbe4c42c1a5c064f933aa7adfb85cace5be319bee1f3aee",
+      "section_content_sha256": "ba6cf1154867550c981977546214017673eab37b016bb817c859c81ba6ab3446",
+      "claim_kind_in_author_record": "action",
+      "status": "supported",
+      "assessment": "活动/观察有直接支持；记录变化是低风险落实方式，无新运动阈值。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-recovery",
+          "locator": "Receive routine follow-up care"
+        },
+        {
+          "source_id": "pe-nhlbi-recovery",
+          "locator": "Healthy lifestyle changes"
+        },
+        {
+          "source_id": "pe-cdc",
+          "locator": "Prevention"
+        }
+      ],
+      "additional_source_ids": []
+    },
+    {
+      "section": "daily_care",
+      "claim_id": "daily_care-2",
+      "claim_sha256": "8edf5fe1d13c93c5bd78fb6b3ca4cb2a122388c1c740a08d5d1d4c4736ddfba0",
+      "claim_text_sha256": "d129a4e6e053e3658924730f5137eb7269f91a9040969c014cd7df80234c7195",
+      "section_content_sha256": "ba6cf1154867550c981977546214017673eab37b016bb817c859c81ba6ab3446",
+      "claim_kind_in_author_record": "action",
+      "status": "supported_with_binding_fix",
+      "assessment": "头撞击即时联系和携卡已由 NHS 与 AHRQ 索引交叉；严重出血另有 NIH/NHS。两 NHS 页面本身不算双源。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhs-considerations",
+          "locator": "Pregnancy; Other medicines; Food and drink; Having surgery"
+        },
+        {
+          "source_id": "pe-nhs-side-effects",
+          "locator": "Excessive bleeding"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-ahrq-anticoagulant"
+      ]
+    },
+    {
+      "section": "special_populations",
+      "claim_id": "special_populations-0",
+      "claim_sha256": "f40a0cccccf71c86164b0f0bb018564a90c14c9ee0c48ace92d86d0830676515",
+      "claim_text_sha256": "9fba1a2af76738cc7660c44235a62c3ad7fe1583da30e74974a8465e3f8cb225",
+      "section_content_sha256": "ce06e79f99a1059f3ffcb7077dfc75a6f9d5fa15527805a458b6308f1490dcba",
+      "claim_kind_in_author_record": "explanation",
+      "status": "supported_with_binding_fix",
+      "assessment": "适用因素概括合理；肾病/既往出血对选药的精确对应补 NICE 1.3.7 与 MSD 出血风险。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-causes",
+          "locator": "What raises likelihood of VTE?"
+        },
+        {
+          "source_id": "pe-nhlbi-women",
+          "locator": "Hormonal birth control; Pregnancy and giving birth"
+        },
+        {
+          "source_id": "pe-mayo",
+          "locator": "Diagnosis: Blood tests; Chest X-ray; CT; V/Q"
+        },
+        {
+          "source_id": "pe-nhs-considerations",
+          "locator": "Pregnancy; Other medicines; Food and drink; Having surgery"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-nice-ng158",
+        "review-pe-msd"
+      ]
+    },
+    {
+      "section": "special_populations",
+      "claim_id": "special_populations-1",
+      "claim_sha256": "c60c9e8f7629fb9903c5026960c42140f7e150a932f41ab58279d86ed297312a",
+      "claim_text_sha256": "57aa57db74e617e11987bcf59b28b85dd74883bb76a6d3a3220536bcf2da7251",
+      "section_content_sha256": "ce06e79f99a1059f3ffcb7077dfc75a6f9d5fa15527805a458b6308f1490dcba",
+      "claim_kind_in_author_record": "action",
+      "status": "partially_supported",
+      "assessment": "孕期需改评药物主干正确；具体口服类别目前 NHS 明确，NIH 仅笼统，RCOG 补肝素/产后选择。未发现把产后写成胎儿风险。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhs-considerations",
+          "locator": "Pregnancy; Other medicines; Food and drink; Having surgery"
+        },
+        {
+          "source_id": "pe-nhlbi-women",
+          "locator": "Hormonal birth control; Pregnancy and giving birth"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-rcog"
+      ]
+    },
+    {
+      "section": "special_populations",
+      "claim_id": "special_populations-2",
+      "claim_sha256": "4b6e28981d330eec5a9efac557adfdc987fb5c4d1c70543a8ef16212a1e913fe",
+      "claim_text_sha256": "1ab4894efb63bb65030bd0ac3b7ee3718910c12276b25289fd085bab10653f7c",
+      "section_content_sha256": "ce06e79f99a1059f3ffcb7077dfc75a6f9d5fa15527805a458b6308f1490dcba",
+      "claim_kind_in_author_record": "action",
+      "status": "supported_with_binding_fix",
+      "assessment": "风险持续及不只凭年龄停药为综合评价的有界归纳；补具体肾功能/出血来源，未建议所有老人长期用药。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-causes",
+          "locator": "What raises likelihood of VTE?"
+        },
+        {
+          "source_id": "pe-nhlbi-recovery",
+          "locator": "Receive routine follow-up care"
+        },
+        {
+          "source_id": "pe-nhlbi-treatment",
+          "locator": "Blood thinners; thrombolytics; clot removal; filter"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-nice-ng158",
+        "review-pe-msd"
+      ]
+    },
+    {
+      "section": "prognosis_followup",
+      "claim_id": "prognosis_followup-0",
+      "claim_sha256": "46c5e02adb528fe8a025fb0a1f594ae8e704e9fec64889b5ec94b6867a583091",
+      "claim_text_sha256": "3afa4456dcb6b1a743bbaf2a115f4d99a3aede8a0a3789908fa410b8a312c0e7",
+      "section_content_sha256": "c3dc04a13259a76a631ea8e5764189627ce1316a1b0d10dac207766caf93e821",
+      "claim_kind_in_author_record": "benefit",
+      "status": "supported",
+      "assessment": "没有保证每位病人完全恢复或固定恢复时间。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhs",
+          "locator": "Treating a pulmonary embolism"
+        },
+        {
+          "source_id": "pe-mayo",
+          "locator": "Treatment: Medicines; Procedures; Ongoing care"
+        }
+      ],
+      "additional_source_ids": []
+    },
+    {
+      "section": "prognosis_followup",
+      "claim_id": "prognosis_followup-1",
+      "claim_sha256": "45904dc08e5123469a118006f8fbd373f3927659516417f6b23777fbc493ced8",
+      "claim_text_sha256": "4d0e709bffff381bd2f548d5b7b9deed8ec520298ad94f96e618db45a4285172",
+      "section_content_sha256": "c3dc04a13259a76a631ea8e5764189627ce1316a1b0d10dac207766caf93e821",
+      "claim_kind_in_author_record": "action",
+      "status": "supported_with_binding_fix",
+      "assessment": "至少 3 个月主干可核对；继续治疗取决于复发/出血，NICE 与 AHA 2026 提供地区范围。并非 3 个月自动停药。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-recovery",
+          "locator": "Receive routine follow-up care"
+        },
+        {
+          "source_id": "pe-nhs",
+          "locator": "Treating a pulmonary embolism"
+        },
+        {
+          "source_id": "pe-mayo",
+          "locator": "Treatment: Medicines; Procedures; Ongoing care"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-nice-ng158",
+        "review-pe-aha-2026"
+      ]
+    },
+    {
+      "section": "prognosis_followup",
+      "claim_id": "prognosis_followup-2",
+      "claim_sha256": "8fdd2e55b7817f062b410b019492c32bd06e1fa59a3ca8343fac8b7f84a82d3c",
+      "claim_text_sha256": "8903d1b862db159c7169359cdf1fbccc2f01cc0a99689037e1a8ace192a6105c",
+      "section_content_sha256": "c3dc04a13259a76a631ea8e5764189627ce1316a1b0d10dac207766caf93e821",
+      "claim_kind_in_author_record": "action",
+      "status": "action_revision",
+      "assessment": "监测内容主干有来源；新发晕厥不能只提前复诊。残余肺血管疾病只是持续气短的一种解释。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-recovery",
+          "locator": "Receive routine follow-up care"
+        },
+        {
+          "source_id": "pe-nhlbi-recovery",
+          "locator": "How can VTE affect health?"
+        },
+        {
+          "source_id": "pe-mayo",
+          "locator": "Treatment: Medicines; Procedures; Ongoing care"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-aha-vascular",
+        "review-pe-aha-2026"
+      ]
+    },
+    {
+      "section": "complications",
+      "claim_id": "complications-0",
+      "claim_sha256": "ebc3fde68391d195555ed42ecce762f90be0afc80db6e8602a483822dd82b0a2",
+      "claim_text_sha256": "aa1bc8e0c70c0223ac6bfe4c50114558818f32c3c065318a817ca55fddd5f8a5",
+      "section_content_sha256": "8f47625675a61e7f99818c4957463fcd1edc8f12a28903d23dc6554ba8c0775b",
+      "claim_kind_in_author_record": "explanation",
+      "status": "supported",
+      "assessment": "当前两 NIH 页同源；此为机制解释，无数字风险或独立治疗行动，足以支持，AHA 病人页亦吻合。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi",
+          "locator": "What is pulmonary embolism?; symptoms"
+        },
+        {
+          "source_id": "pe-nhlbi-recovery",
+          "locator": "How can VTE affect health?"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-aha-patient"
+      ]
+    },
+    {
+      "section": "complications",
+      "claim_id": "complications-1",
+      "claim_sha256": "77bb159d6bbbb79c0b33866dd1058d239ff6382ba2da8055c018b469d1ba6b44",
+      "claim_text_sha256": "aa5653779b06818a81f262b503230b21103f0b924a97a792d945943631d61585",
+      "section_content_sha256": "8f47625675a61e7f99818c4957463fcd1edc8f12a28903d23dc6554ba8c0775b",
+      "claim_kind_in_author_record": "risk",
+      "status": "supported_with_binding_fix",
+      "assessment": "休克/死亡与及时处理方向成立；Mayo 不直接解释休克，补 AHA/MSD 适用段。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi",
+          "locator": "What is pulmonary embolism?; symptoms"
+        },
+        {
+          "source_id": "pe-mayo",
+          "locator": "Treatment: Medicines; Procedures; Ongoing care"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-aha-patient",
+        "review-pe-msd"
+      ]
+    },
+    {
+      "section": "complications",
+      "claim_id": "complications-2",
+      "claim_sha256": "bf82d7046824892bf1f08d1038cac054bb1508e97f989462d683a6d8fcf93894",
+      "claim_text_sha256": "db7605cc30f0211ccc3c6bd4ad7778aef474f9b2b055d6edd694690f8b8b4744",
+      "section_content_sha256": "8f47625675a61e7f99818c4957463fcd1edc8f12a28903d23dc6554ba8c0775b",
+      "claim_kind_in_author_record": "action",
+      "status": "supported_with_binding_fix",
+      "assessment": "CTEPH 并发症与复诊方向成立；改精确 locator，并与 2026 成人功能症状随访建议核对。未夸成多数患者。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-nhlbi-recovery",
+          "locator": "How can VTE affect health?"
+        },
+        {
+          "source_id": "pe-cdc",
+          "locator": "Complications"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-aha-2026"
+      ]
+    },
+    {
+      "section": "prevention",
+      "claim_id": "prevention-0",
+      "claim_sha256": "575ab2a4c2e3afff330ffd26f42ba762ee4d3205bd15a4e72247e3a55fbf09c9",
+      "claim_text_sha256": "adff92584ffeb6ee37488a7d305ad699d646c3c17b659cb40781ffb36a6c8de1",
+      "section_content_sha256": "b70544ab6e0dbffdb03295d06ad343f6deea12a0cdbbe538d330f9e22b829246",
+      "claim_kind_in_author_record": "explanation",
+      "status": "supported",
+      "assessment": "预防不保证零风险的边界合理，不需要为普通限定另凑材料。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-cdc",
+          "locator": "Prevention"
+        },
+        {
+          "source_id": "pe-nhlbi-recovery",
+          "locator": "Receive routine follow-up care"
+        }
+      ],
+      "additional_source_ids": []
+    },
+    {
+      "section": "prevention",
+      "claim_id": "prevention-1",
+      "claim_sha256": "9fb8d8a3d7c4902db9b6fb3b9048059063c655d02824ba9f389c8b424aed2328",
+      "claim_text_sha256": "e6356fb846287b2aba524dd7dd0e1ab1ca3028347559110729f215132eec2444",
+      "section_content_sha256": "b70544ab6e0dbffdb03295d06ad343f6deea12a0cdbbe538d330f9e22b829246",
+      "claim_kind_in_author_record": "action",
+      "status": "supported_with_binding_fix",
+      "assessment": "CDC 可支持抗凝/压迫预防；原 NIH 滤器位置不能代替压迫措施，MSD 病因/预防概述可补。不要借药是处方用途边界。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-cdc",
+          "locator": "Prevention"
+        },
+        {
+          "source_id": "pe-nhlbi-treatment",
+          "locator": "Blood thinners; thrombolytics; clot removal; filter"
+        }
+      ],
+      "additional_source_ids": [
+        "review-pe-msd"
+      ]
+    },
+    {
+      "section": "prevention",
+      "claim_id": "prevention-2",
+      "claim_sha256": "8ffe077b14024441a35ec73178760d4282078dddd520b3a9397ef27cd0bde80e",
+      "claim_text_sha256": "d008e2104fc32dabaea2b70f62ca1341214526ad2137578bdcbb448a09b1f26f",
+      "section_content_sha256": "b70544ab6e0dbffdb03295d06ad343f6deea12a0cdbbe538d330f9e22b829246",
+      "claim_kind_in_author_record": "action",
+      "status": "supported",
+      "assessment": "不设所有人统一袜/药方案；未硬搬 NHS/CDC 不同活动间隔。",
+      "author_supports_read": [
+        {
+          "source_id": "pe-cdc",
+          "locator": "Prevention"
+        },
+        {
+          "source_id": "pe-nhs",
+          "locator": "Reduce your pulmonary embolism risk"
+        }
+      ],
+      "additional_source_ids": []
+    }
+  ],
+  "findings": [
+    {
+      "id": "PE01",
+      "priority": "P1",
+      "type": "conflicting_medical_action",
+      "claims": [
+        "care-2",
+        "prognosis_followup-2"
+      ],
+      "finding": "恢复/随访把晕厥与稳定的持续气短、腿肿并列为提前联系/复诊，弱于危险信号的立即急救。",
+      "minimum_fix": "两种语言将新发晕厥、明显新胸痛或严重呼吸困难单独指向急救；持续且稳定的活动后气短、耐力下降进入提前复诊，不规定无来源等待天数。",
+      "evidence": [
+        "pe-nhs: Immediate action",
+        "pe-cdc: PE signs/action",
+        "review-pe-aha-vascular: What Is a PE emergency paragraph"
+      ]
+    },
+    {
+      "id": "PE02",
+      "priority": "P2",
+      "type": "beginner_completeness",
+      "claims": [
+        "diagnosis-2",
+        "differentials-1"
+      ],
+      "finding": "V/Q 的“部分人”没有适用原因；鉴别只有泛称而没有可理解的区分线索。",
+      "minimum_fix": "补 CT 造影剂/肾功能条件与替代检查的用途；分条解释如肺炎、急性心脏缺血、气胸的相似处及医生用哪些检查区分，不给读者自排除规则。",
+      "evidence": [
+        "review-pe-aha-patient: Diagnosis",
+        "review-pe-msd: Diagnosis / Diagnostic testing",
+        "pe-mayo: Diagnosis"
+      ]
+    },
+    {
+      "id": "PE03",
+      "priority": "P2",
+      "type": "population_scope_completeness",
+      "claims": [
+        "special_populations-0",
+        "special_populations-1",
+        "special_populations-2",
+        "prognosis_followup-1"
+      ],
+      "finding": "正文未说明主要治疗资料为成人，也未解释哺乳期与孕期的用药规则不同；完全没有儿童适用说明。当前未写错误儿童剂量，属于范围缺口。",
+      "minimum_fix": "在特殊人群说明成人资料不能直接决定儿童药物/疗程；用简短、来源支持的文字说明儿童常伴基础病需儿科团队评估。补产后哺乳需再核对药物，不能把孕期华法林条件一概延续到哺乳。无需新增儿科剂量表或分娩停药小时表。",
+      "evidence": [
+        "review-pe-ash-pediatric: Introduction",
+        "pe-nhs-considerations: Pregnancy / Breastfeeding",
+        "review-pe-rcog: after birth / Can I breastfeed"
+      ]
+    },
+    {
+      "id": "PE04",
+      "priority": "P2",
+      "type": "source_support_and_binding",
+      "claims": [
+        "medications-2",
+        "diet-2",
+        "special_populations-1"
+      ],
+      "finding": "三段的关键药物风险/适用条件仍缺部分独立逐项支持；同源多网页和笼统上一句不能支持整段。",
+      "minimum_fix": "只拆实际独立医学主张，补药物相互作用、DOAC 饮食边界、孕期具体药类的第二份独立编写资料；无法补齐的子项保留 pending，不能全段宣称交叉核验。",
+      "evidence": [
+        "pe-nhs-considerations",
+        "pe-nhlbi-women",
+        "pe-nhlbi-recovery",
+        "review-pe-ahrq-anticoagulant"
+      ]
+    },
+    {
+      "id": "PE05",
+      "priority": "P2",
+      "type": "bilingual_precision",
+      "claims": [
+        "care-1"
+      ],
+      "finding": "局部 warmth 的中文是“发热”，小白可能误解为全身发烧。",
+      "minimum_fix": "改成“腿部皮肤局部发热/摸起来比另一侧热”，英文保留局部 warmth，不新增体温阈值。",
+      "evidence": [
+        "pe-cdc: DVT symptoms",
+        "review-pe-rcog: DVT symptoms"
+      ]
+    },
+    {
+      "id": "PE06",
+      "priority": "P2",
+      "type": "editorial_record_accuracy",
+      "claims": [
+        "causes_risks-1",
+        "red_flags-1",
+        "care-0",
+        "diagnosis-1",
+        "treatment-0",
+        "treatment-1",
+        "medications-1",
+        "daily_care-2",
+        "special_populations-0",
+        "special_populations-2",
+        "prognosis_followup-1",
+        "complications-1",
+        "complications-2",
+        "prevention-1"
+      ],
+      "finding": "多条 locator 是整个大节或落错栏目，新增主张尚未挂入实际支持它的来源；来源日期需要补实。",
+      "minimum_fix": "按本报告逐段对应更新 ledger 与来源目录，拆分关键复合句；Mayo 记为 2022-12-01/专家审阅 2022-08-29。NHS 2023 页复核逾期与其五天注射差异单列。保留所有草稿和医学签审状态。",
+      "evidence": [
+        "original_source_reads",
+        "claim_checks"
+      ]
+    }
+  ],
+  "mece_review": {
+    "condition_vs_symptom": "独立 PE 治疗正文正确关联 chest-pain；胸痛只作为症状入口，不应直接计为 PE 全文。",
+    "dvt_boundary": "当前区分 DVT 与 PE 部位且允许并存，正确；没有把 DVT 整篇内容复制进来。",
+    "thrombotic_scope": "标题括注肺血栓栓塞，正文属于 thrombotic PE；空气/脂肪/羊水等非血栓性栓塞不得按此正文映射覆盖。",
+    "coding": "coding 为空，尚未确认 ICD 末级类别映射；报告不增加覆盖分子。",
+    "shared_prevention": "共用活动等生活因素只保留 PE 特异条件；不因来源中的心血管生活方式表而要求补整套重复内容。"
+  },
+  "bilingual_review": {
+    "numbers": "正文唯一固定疗程 3 个月中英一致，使用 commonly/常 与至少，未写症状好转即停药。",
+    "actions": "PE01 为双语同样存在的级别冲突；PE05 是局部 warmth 翻译精度问题。",
+    "pregnancy": "medications-2 中文妊娠、英文 pregnancy planning 可在修订时明确“怀孕或计划怀孕”，与 special_populations-1 一致。",
+    "non_errors": [
+      "没有规定每人必须先肝素 5 天。",
+      "没有把 D-dimer 阳性等同确诊。",
+      "没有把全部激素药、全部抗凝药或所有病人的疗程等同。",
+      "没有强推华法林维生素 K 规则给所有 DOAC。"
+    ]
+  },
+  "regional_review": {
+    "current_material": "美国/英国来源为主；AHA 2026 成人初始阶段 3–6 月，NICE 至少 3 月，两者不支持固定 3 月自动停药。",
+    "required_recording": "新增建议保留地区与成人范围；不声称已逐条核对中国或 WHO 专项 PE 路径。",
+    "emergency_numbers": "正文使用当地急救，没有把 999/911 当全球号码。"
+  },
+  "limitations": [
+    "NICE 正式建议实际通过官方索引阅读；直接页 403。",
+    "AHRQ 定向段落通过官方索引阅读，随后直接定位超时；不宣称全文重新读取。",
+    "ASH PDF 仅取得文字，截图未显示像素，未依据图表视觉关系做药物/疗程推断。",
+    "AHA 2026 联合指南全文未读，只读官方 10 条摘要与患者页；不声称完成全指南系统审评。"
+  ],
+  "license_and_reuse": "记录链接、版本、短定位和原创审查判断；未复制完整受限原文或图片，不把机构医学审订写为本站临床签审。",
+  "next_action": "单一作者修复 PE01/02/03/05 与 PE04/06 对应记录后，只定向核对变更及未解决项；未改且已支持内容可继承本报告绑定。"
+}

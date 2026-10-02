@@ -3,7 +3,7 @@
   "checked_at": "2026-09-30",
   "base_commit": "cc3e88b1414c1ede8737c9d78d40c3ca53b64f25",
   "icd_release": "2026-01",
-  "decision_scope": "20规范主题；3篇完成逐项编辑核验，2个叶类别确认完整，其余类别按具体缺口推进。",
+  "decision_scope": "20规范主题；5篇完成逐项编辑核验，8个叶类别确认完整，5个部分范围保留具体补证和修订任务；其余15篇继续补充。",
   "topics": [
     {
       "canonical_id": "myocardial-infarction",
@@ -20,31 +20,38 @@
           "title": "- - - - Acute ST elevation myocardial infarction",
           "uri": "http://id.who.int/icd/release/11/mms/391388807",
           "denominator_eligible": true,
-          "mapping_status": "partial"
+          "mapping_status": "confirmed"
         },
         {
           "code": "BA41.1",
           "title": "- - - - Acute non-ST elevation myocardial infarction",
           "uri": "http://id.who.int/icd/release/11/mms/680129526",
           "denominator_eligible": true,
-          "mapping_status": "partial"
+          "mapping_status": "confirmed"
         },
         {
           "code": "BA41.Z",
           "title": "- - - - Acute myocardial infarction, unspecified",
           "uri": "http://id.who.int/icd/release/11/mms/1334938734/unspecified",
           "denominator_eligible": true,
-          "mapping_status": "pending"
+          "mapping_status": "confirmed"
         }
       ],
-      "publication_status": "validated_candidate_not_yet_live",
-      "qualified_coverage": false,
+      "publication_status": "published_and_publicly_verified",
+      "qualified_coverage": true,
       "editorial_reviews": [
         "reports/batch-01-mi-independent.json",
         "reports/batch-01-mi-review-challenge.json"
       ],
       "editorial_review": "reports/batch-01-mi-acceptance.json",
-      "content_sha256": "c25a6ae7a5cfed47a1416f6645124a332272134cd1d12f2899bda3fcd883054f"
+      "content_sha256": "c25a6ae7a5cfed47a1416f6645124a332272134cd1d12f2899bda3fcd883054f",
+      "publication_evidence": "reports/batch-01-mi-release-validation.json",
+      "confirmed_covered_codes": [
+        "BA41.0",
+        "BA41.1",
+        "BA41.Z"
+      ],
+      "classification_review": "reports/batch-01-mi-icd-scope-review.json"
     },
     {
       "canonical_id": "pulmonary-embolism",
@@ -61,25 +68,32 @@
           "title": "- - - Acute pulmonary thromboembolism",
           "uri": "http://id.who.int/icd/release/11/mms/74279006",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "confirmed"
         },
         {
           "code": "BB00.1",
           "title": "- - - Chronic pulmonary thromboembolism",
           "uri": "http://id.who.int/icd/release/11/mms/653179449",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "partial"
         },
         {
           "code": "BB00.Z",
           "title": "- - - Pulmonary thromboembolism, unspecified",
           "uri": "http://id.who.int/icd/release/11/mms/1014964218/unspecified",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "partial"
         }
       ],
-      "publication_status": "not_published",
-      "qualified_coverage": false
+      "publication_status": "validated_candidate_not_yet_live",
+      "qualified_coverage": true,
+      "content_sha256": "283430290caab956eaaa1e89168e116801d545e734f962b7ed449f99f3db6c98",
+      "confirmed_covered_codes": [
+        "BB00.0"
+      ],
+      "classification_review": "reports/batch-01-pe-retinal-icd-scope-review.json",
+      "editorial_review": "reports/batch-01-pe-acceptance.json",
+      "publication_evidence": "reports/batch-01-pe-retinal-release-validation.json"
     },
     {
       "canonical_id": "sepsis",
@@ -232,20 +246,56 @@
     {
       "canonical_id": "retinal-detachment",
       "backlog_id": "planned-119",
-      "decision": "parent_overview",
+      "decision": "mechanism_specific_disease_article",
       "related_existing_ids": [],
-      "rationale": "脱离、裂孔和玻璃体后脱离区分；各种脱离类型按范围审核。",
+      "rationale": "脱离、孤立裂孔和玻璃体后脱离分别解释；裂孔性与浆液性两类通过逐类完整审核，共用知识保留同一正文，其余范围未自动覆盖。",
       "icd_candidates": [
         {
           "code": "9B73.0",
           "title": "- - - - Retinal detachment with retinal break",
           "uri": "http://id.who.int/icd/release/11/mms/2059145710",
           "denominator_eligible": true,
-          "mapping_status": "pending_semantic_scope_review"
+          "mapping_status": "confirmed"
+        },
+        {
+          "code": "9B73.3",
+          "title": "- - - - Serous retinal detachment",
+          "uri": "http://id.who.int/icd/release/11/mms/1801096327",
+          "denominator_eligible": true,
+          "mapping_status": "confirmed"
+        },
+        {
+          "code": "9B73.4",
+          "title": "- - - - Retinal breaks without detachment",
+          "uri": "http://id.who.int/icd/release/11/mms/236011795",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
+        {
+          "code": "9B73.Y",
+          "title": "- - - - Other specified retinal detachments or breaks",
+          "uri": "http://id.who.int/icd/release/11/mms/357208479/other",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
+        },
+        {
+          "code": "9B73.Z",
+          "title": "- - - - Retinal detachments or breaks, unspecified",
+          "uri": "http://id.who.int/icd/release/11/mms/357208479/unspecified",
+          "denominator_eligible": true,
+          "mapping_status": "partial"
         }
       ],
-      "publication_status": "not_published",
-      "qualified_coverage": false
+      "publication_status": "validated_candidate_not_yet_live",
+      "qualified_coverage": true,
+      "content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
+      "confirmed_covered_codes": [
+        "9B73.0",
+        "9B73.3"
+      ],
+      "classification_review": "reports/batch-01-pe-retinal-icd-scope-review.json",
+      "editorial_review": "reports/batch-01-retinal-acceptance.json",
+      "publication_evidence": "reports/batch-01-pe-retinal-release-validation.json"
     },
     {
       "canonical_id": "testicular-torsion",
@@ -635,7 +685,7 @@
   ],
   "topic_count": 20,
   "existing_titles_to_reconcile": 18,
-  "new_topics_published": 0,
+  "new_topics_published": 3,
   "shared_factor_rule": "共用饮食、活动和暴露知识引用生命周期因素；疾病正文仅保留疾病相关条件。癌症总览按地图导航，不重复复制诊療正文。",
   "remaining_rule": "未通过来源交叉核验和独立审核的主题继续保存草稿与缺口；完整剩余ICD清单见icd-remaining-gaps.json.gz。"
 }

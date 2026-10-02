@@ -1,0 +1,1093 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-02",
+  "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope",
+  "medical_reviewed": false,
+  "scope": "One semantic classification review of the current MI article against the frozen WHO ICD-11 MMS 2026-01 denominator; no new medical fact review, no production writes and no duplicated content.",
+  "verdict": "three_acute_leaf_mappings_ready_for_confirmation",
+  "article": {
+    "path": "data/conditions/myocardial-infarction.json",
+    "content_sha256": "c25a6ae7a5cfed47a1416f6645124a332272134cd1d12f2899bda3fcd883054f",
+    "canonical_sha256": "7c89676f2bf7d8f331218298edffa126f388626328d2baa9fa1e94c3884ae6a1",
+    "section_count": 14,
+    "claim_count": 90,
+    "editorial_qualification_currently_valid": true
+  },
+  "input_hashes": [
+    {
+      "path": "data/conditions/myocardial-infarction.json",
+      "file_sha256": "560449dfdcbdda9bef612d94f580a8c1c75234722d914bb8d49cb309e6255efd"
+    },
+    {
+      "path": "data/icd/SimpleTabulation-ICD-11-MMS-en-2026-01.zip",
+      "file_sha256": "f1356588f40953a83e3af2b662deab47c5e269f944d1ea4ed0cfeb2007c7cd39"
+    },
+    {
+      "path": "data/icd/catalog.json.gz",
+      "file_sha256": "3db9a09b98634b08caeb46119a1aec344341e3f2db8b2fc7997ed0e33b3ed15f"
+    },
+    {
+      "path": "data/icd/rules.json",
+      "file_sha256": "a6a81e7ad580b30bbbc9cac068d731ddf4f6d2726d45930d0b58abd88bc6d5a6"
+    },
+    {
+      "path": "data/icd/manifest.json",
+      "file_sha256": "2818b81cfb606dfcd1ad6d1463feb42bd026076ae72d01a3dc28953f5f16d8f4"
+    },
+    {
+      "path": "data/icd/mappings.json",
+      "file_sha256": "69ec633286d79d7519762e8a23d315dcf0e1eeb754b027e82654faafe26806cf"
+    },
+    {
+      "path": "data/evidence/editorial-checks/batch-01-mi.json",
+      "file_sha256": "05cd4611a196daae592afda51d5c9cbc2c0b00a233a8b34f895c51eba1a419a8"
+    },
+    {
+      "path": "reports/batch-01-mi-acceptance.json",
+      "file_sha256": "a4e0a585e066ac6339844ef0803057c86d35465a65082806a7ebe2170672d741"
+    },
+    {
+      "path": "reports/batch-01-mi-final-targeted-recheck.json",
+      "file_sha256": "c2dee241e691be02d4595d1e6f66c562d94877b0f6d633a445201154a714c62d"
+    },
+    {
+      "path": "docs/content-depth-standard.md",
+      "file_sha256": "2ab1fed4a53dbf01323a370781d5fe5cb8d21e3aa550fb58b6c58d818c81efee"
+    }
+  ],
+  "official_sources_actually_read": [
+    {
+      "id": "who-2026-01-print",
+      "url": "https://icdcdn.who.int/static/releasefiles/2026-01/print-ICD-11-MMS-en.zip",
+      "accessed_at": "2026-10-02",
+      "release": "2026-01",
+      "zip_bytes": 10395906,
+      "zip_sha256": "a1163e0faec8dbe062f1b7a34c0c1d2b77e0cf0746ad79ca8f420c9390bfc204",
+      "member": "ICD-11-MMS-en.pdf",
+      "member_bytes": 13897713,
+      "member_sha256": "4baccc13c794dca36d8a79fe80a673e854fc51f13114db3ce76196f0a1eb6cab",
+      "read_locations": [
+        {
+          "pdf_page": 768,
+          "printed_page": 766,
+          "purpose": "Chapter 11 inherited exclusions and coded-elsewhere entries"
+        },
+        {
+          "pdf_page": 771,
+          "printed_page": 769,
+          "purpose": "Ischaemic/acute ischaemic parent blocks; acute coronary syndrome inclusion and angina siblings"
+        },
+        {
+          "pdf_page": 772,
+          "printed_page": 770,
+          "purpose": "BA41 parent definition/exclusions, all three BA41 children, BA42 definition/inclusions/exclusion and BA42.0"
+        },
+        {
+          "pdf_page": 773,
+          "printed_page": 771,
+          "purpose": "BA42.1/BA42.Z, BA43 and BA50 boundary"
+        },
+        {
+          "pdf_page": 774,
+          "printed_page": 772,
+          "purpose": "BA60 complications boundary"
+        },
+        {
+          "pdf_page": 775,
+          "printed_page": 773,
+          "purpose": "BA60.0 and named current complications"
+        },
+        {
+          "pdf_page": 776,
+          "printed_page": 774,
+          "purpose": "BA60.7/8/9/Y/Z scope"
+        }
+      ],
+      "findings": "BA41.0 supplies an ECG/ST-elevation definition; BA41.1 and BA41.Z have no additional printed definition or separate inclusion/exclusion list on the page and inherit BA41/Chapter 11 context. Printed BA41 explicitly excludes BA42, BA50, BA60 and post-MI syndrome. BA42 describes extension/recurrent infarction within 28 days and has its own three leaf categories. No BA41.Y leaf exists in the frozen table."
+    },
+    {
+      "id": "who-reference-conventions",
+      "url": "https://icdcdn.who.int/icd11referenceguide/en/html/02.07_icd11-conventions.html",
+      "accessed_at": "2026-10-02",
+      "body_bytes": 10273,
+      "body_sha256": "5d60f5d8cfc5d99f96f9bd144a365a19d3a26a3f1ec28e4a5d13417d34db9978",
+      "release_note": "Current official web Reference Guide; conventions corroborate residual semantics, while category membership remains pinned to the 2026-01 snapshot.",
+      "read_locations": [
+        "2.7.1 Inclusions",
+        "2.7.2 Exclusions",
+        "2.7.3.2 NOS",
+        "2.7.5 Residual categories - Other and Unspecified"
+      ],
+      "findings": "Exclusions mark categories classified elsewhere and may be inherited from a chapter/group. Inclusion terms are not an exhaustive subclassification. Unspecified applies when source documentation lacks the necessary more specific information; it is not the same as uncertain diagnosis or a general educational heading."
+    }
+  ],
+  "official_text_caveat": {
+    "locator": "WHO 2026-01 print PDF page 772, BA41 last descriptive sentence before Exclusions",
+    "observation": "The BA41 description also contains a sentence about infarction within 28 days of a previous infarction, overlapping the adjacent BA42 definition, while the explicit BA41 exclusion directs subsequent MI to BA42.",
+    "handling": "Preserved as an observed classification-text inconsistency; no silent correction or clinical coding instruction is invented. This educational mapping obeys the explicit exclusion and never counts BA42 through BA41. Patient-level recurrent-event coding is outside this review."
+  },
+  "method": {
+    "standard": "docs/content-depth-standard.md and data/icd/README.md",
+    "rule": "Assess explanatory public education across each eligible leaf, using shared content plus genuinely type-specific conditions. Entire leaf means applicable education for the classified condition, not every patient receiving every drug or an exhaustive clinical practice guideline.",
+    "shared_content": "One canonical article can serve multiple leaf categories after explicit semantic assignment; absence of duplicate pages is not a content gap.",
+    "residual_handling": "BA41.Z is assessed independently from its title. The common claims require no ST assignment, and the diagnosis/treatment passages explain why specific branches depend on additional findings. This report explicitly supplies the formerly missing category-to-claim assignment.",
+    "inherited_medical_evidence": "The 14-section/90-claim accepted ledger is inherited and hash-bound; no unsupported claim is upgraded and clinician sign-off remains false.",
+    "official_browser_attempt": "web.open returned only the WHO browser shell and direct ICD API returned HTTP 401; the official versioned print ZIP and official reference HTML were then fetched and actually read. Third-party search results were not used for a classification decision."
+  },
+  "category_reviews": [
+    {
+      "code": "BA41.0",
+      "scope": "Acute myocardial infarction with ST elevation, interpreted within BA41 parent and Chapter 11 exclusions.",
+      "decision": "confirmed_entire_leaf_category",
+      "entire_leaf_category": true,
+      "official_row": {
+        "row": 6395,
+        "code": "BA41.0",
+        "title": "- - - - Acute ST elevation myocardial infarction",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "http://id.who.int/icd/entity/391388807",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/391388807",
+        "parent_uri": "http://id.who.int/icd/entity/1334938734",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "official_locator": "WHO 2026-01 print PDF page 772 (printed page 770), BA41.0; BA41 parent definition/exclusions; Chapter 11 page 768 (printed page 766).",
+      "rationale": "Current bilingual article explicitly explains ST-elevation versus non-ST-elevation diagnosis and eligible STEMI reperfusion/thrombolysis, and the adjudicated shared sections supply all 14 public-education dimensions. Common causes are not asserted as exclusive and treatment remains conditional. The entire frozen acute-STEMI leaf can be served by this combined article; no duplicate article or specialist ECG/dose protocol is required by the content standard.",
+      "section_matrix": [
+        {
+          "section": "summary",
+          "section_text_sha256": "8b141cb8db3e0ed93c7f0fea0890fe44436ae064220a8b0cf88d2e3fcf91b14c",
+          "claim_ids": [
+            "summary-0",
+            "summary-1",
+            "summary-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "定义缺血导致的心肌损伤/坏死、冠状动脉供血、表现及与骤停的关系；未把某一ECG分型或某一病因说成全部心梗。"
+        },
+        {
+          "section": "causes_risks",
+          "section_text_sha256": "db36aa2e6590cc7b5dda7a1da1f2bae889a270730f60d876a8bdc04c73390bdd",
+          "claim_ids": [
+            "causes_risks-0",
+            "causes_risks-1",
+            "causes_risks-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "斑块血栓被明确写为常见机制，同时列出痉挛、血管壁撕裂；可改变/不可改变风险与年轻、无传统风险仍可能发作的边界均可用于三类。无需将所有较少见病因逐个写成专科指南才满足公众病因维度。"
+        },
+        {
+          "section": "red_flags",
+          "section_text_sha256": "19405a5cd3d2910248c0b80fe97cce831cc85dceb394b6524eab10a5f80fc89f",
+          "claim_ids": [
+            "red_flags-0",
+            "red_flags-1",
+            "red_flags-2a",
+            "red_flags-2b"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "急救触发来自可识别的症状及失去反应/异常呼吸，不依赖读者已知ST分型；症状轻或波动也报告，适用于三类。"
+        },
+        {
+          "section": "care",
+          "section_text_sha256": "10d10025245a72d9d96b4c618aba4c71ba1ed15c24f1b9076154176c58f3dfa5",
+          "claim_ids": [
+            "care-0",
+            "care-1a",
+            "care-1b",
+            "care-1c",
+            "care-1d",
+            "care-2",
+            "care-3a",
+            "care-3b",
+            "care-3c"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "急性疑似事件与恢复期复诊分开；地区化阿司匹林条件、药物/出血告知及活动恢复属于共用就医过程。再发症状的急救提示只是一条升级行动，不据此认领BA42。"
+        },
+        {
+          "section": "diagnosis",
+          "section_text_sha256": "ca41b18a9610233cf0c4c56b06b70fa87904a720cdfa893fa3f5290d5bcda091",
+          "claim_ids": [
+            "diagnosis-0",
+            "diagnosis-1a",
+            "diagnosis-1b",
+            "diagnosis-2a",
+            "diagnosis-2b",
+            "diagnosis-3",
+            "diagnosis-4a",
+            "diagnosis-4b",
+            "diagnosis-5"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_diagnosis_with_subtype_explanation",
+          "assessment": "症状、ECG、肌钙蛋白及其局限、重复检测、超声和造影构成共用诊断解释；diagnosis-5提供分型关系与NSTEMI不等于轻症的具体区分。现行公众标准不要求列出导联、电压或99百分位诊断算法。",
+          "claim_roles": {
+            "shared": [
+              "diagnosis-0",
+              "diagnosis-1a",
+              "diagnosis-1b",
+              "diagnosis-2a",
+              "diagnosis-2b",
+              "diagnosis-3",
+              "diagnosis-4a",
+              "diagnosis-4b"
+            ],
+            "diagnosis-5": "Direct subtype identification plus comparison with NSTEMI; no lay ECG self-diagnosis."
+          }
+        },
+        {
+          "section": "differentials",
+          "section_text_sha256": "d17151aa2890cc8768a4b6767bf57c1352c7719814893d3c08055ffab24ac950",
+          "claim_ids": [
+            "differentials-0",
+            "differentials-1",
+            "differentials-2a",
+            "differentials-2b",
+            "differentials-2c",
+            "differentials-3a",
+            "differentials-3b",
+            "differentials-3c"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "反流/胸壁问题、稳定/不稳定心绞痛、夹层及肺栓塞解释相似处和急诊排除边界；任何ECG分型都不能凭症状自行排除，未将这些鉴别诊断计入MI覆盖。"
+        },
+        {
+          "section": "treatment",
+          "section_text_sha256": "a8300ecff69a3a461705f4bf9c5c4453186578fe9b7f0a89a432c41b475f064e",
+          "claim_ids": [
+            "treatment-0",
+            "treatment-1",
+            "treatment-2a",
+            "treatment-2b",
+            "treatment-2c",
+            "treatment-3"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_goals_plus_explicit_conditional_branches",
+          "assessment": "目标、PCI/支架及搭桥机制共用；STEMI溶栓严格附适应条件与出血风险，NSTEMI另有抗栓、风险导向造影/介入分支。条件分支保留，无一条要求所有类别都接受同一治疗。",
+          "claim_roles": {
+            "shared": [
+              "treatment-0",
+              "treatment-1",
+              "treatment-2a"
+            ],
+            "STEMI_branch": [
+              "treatment-2b",
+              "treatment-2c"
+            ],
+            "NSTEMI_branch": [
+              "treatment-3"
+            ],
+            "branch_assignment": "STEMI branch applies only to eligible cases; NSTEMI branch is contrastive education."
+          }
+        },
+        {
+          "section": "medications",
+          "section_text_sha256": "c6cb356225f4ddaac606c527592107495e48cefe88670f0ecf782b389b06fbc7",
+          "claim_ids": [
+            "medications-0",
+            "medications-1a",
+            "medications-1b",
+            "medications-1c",
+            "medications-2a",
+            "medications-2b",
+            "medications-2c",
+            "medications-3a",
+            "medications-3b",
+            "medications-3c",
+            "medications-4a",
+            "medications-4b",
+            "medications-4c",
+            "medications-4d",
+            "medications-5a",
+            "medications-5b",
+            "medications-5c",
+            "medications-5d",
+            "medications-6"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "药物类别的作用、代表药、出血/肌痛/咳嗽/肾功能/呼吸风险及监测是共用教育；联合治疗、疗程、支架和已开药等适用条件保留，不声称每位读者都应使用每一种药。"
+        },
+        {
+          "section": "diet",
+          "section_text_sha256": "1237a9b0c4f9291375cfdde7ee897f63ebddb425c0eeeb2e06d9eda25bd653fc",
+          "claim_ids": [
+            "diet-0",
+            "diet-1",
+            "diet-2a",
+            "diet-2b",
+            "diet-3",
+            "diet-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "康复期风险管理及食物不能处理急性堵塞的界线共用；糖尿病和肾病建议仅在合并疾病时适用，不由ST分型决定。"
+        },
+        {
+          "section": "daily_care",
+          "section_text_sha256": "a6ee42efebf7759418e1204e55669b7507a980a75efaf0305c41c9fcfd4debe5",
+          "claim_ids": [
+            "daily_care-0",
+            "daily_care-1a",
+            "daily_care-1b",
+            "daily_care-1c",
+            "daily_care-2",
+            "daily_care-3"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "按康复计划活动、停止活动/升级急救的界线、症状记录、药单与可执行性属于心梗后共用护理，不以已知ST分型作为前提。"
+        },
+        {
+          "section": "special_populations",
+          "section_text_sha256": "669353c3fbe2f8e996eb5df44279d9fca21aa599be2f50241a9b1740fb59efb2",
+          "claim_ids": [
+            "special_populations-0",
+            "special_populations-1",
+            "special_populations-2a",
+            "special_populations-2b",
+            "special_populations-2c",
+            "special_populations-2d"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "年龄、性别、糖尿病的表现差异共用；妊娠/产后句属于相关人群教育，因Chapter 11将孕产并发疾病另置Chapter 18/JB64.4，不用这些句子证明新增孕产分类覆盖。",
+          "claim_roles": {
+            "shared": [
+              "special_populations-0",
+              "special_populations-1"
+            ],
+            "related_context_not_counted": [
+              "special_populations-2a",
+              "special_populations-2b",
+              "special_populations-2c",
+              "special_populations-2d"
+            ]
+          }
+        },
+        {
+          "section": "prognosis_followup",
+          "section_text_sha256": "9bca1673907adbba5674bf8013992499108c16ae1af17efde8754c71814dc3e1",
+          "claim_ids": [
+            "prognosis_followup-0",
+            "prognosis_followup-1a",
+            "prognosis_followup-1b",
+            "prognosis_followup-1c",
+            "prognosis_followup-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "心肌损伤、治疗时机及原有健康影响恢复，复诊关注功能/症状/血压/血脂/用药与肾功能，适用于三类。再发风险告知不是BA42的独立介绍。"
+        },
+        {
+          "section": "complications",
+          "section_text_sha256": "f083f93fc26e8aae9b923e93b97e2c55304d9421d5879faec2b28d6243aaeb95",
+          "claim_ids": [
+            "complications-0",
+            "complications-1",
+            "complications-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "泵血、电活动、心衰、休克及心律失常作为原病的风险与升级行动解释；不等于对BA60及其叶类、心衰或骤停完成独立14维覆盖。"
+        },
+        {
+          "section": "prevention",
+          "section_text_sha256": "1d618d83e9b10870d6c70380ba7070415ee78ec33ee3302ca4f0520ba15b9890",
+          "claim_ids": [
+            "prevention-0",
+            "prevention-1",
+            "prevention-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "首次预防与心梗后防复发分开，风险管理和避免自行长期阿司匹林的界线共用；不能保证不发作，亦不把防复发段当作再次梗死类别文章。"
+        }
+      ],
+      "actual_content_gaps": [],
+      "definition_evidence_gaps": []
+    },
+    {
+      "code": "BA41.1",
+      "scope": "Acute myocardial infarction classified as non-ST elevation, interpreted within BA41 parent and Chapter 11 exclusions.",
+      "decision": "confirmed_entire_leaf_category",
+      "entire_leaf_category": true,
+      "official_row": {
+        "row": 6396,
+        "code": "BA41.1",
+        "title": "- - - - Acute non-ST elevation myocardial infarction",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "http://id.who.int/icd/entity/680129526",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/680129526",
+        "parent_uri": "http://id.who.int/icd/entity/1334938734",
+        "is_leaf": true,
+        "is_residual": false,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "official_locator": "WHO 2026-01 print PDF page 772 (printed page 770), BA41.1; BA41 parent definition/exclusions; Chapter 11 page 768 (printed page 766).",
+      "rationale": "Current bilingual article explicitly explains non-ST-elevation MI, rejects the false inference that it is mild, and provides antithrombotic/risk-guided angiography or intervention while withholding blanket thrombolysis. Shared sections supply the remaining public-education dimensions across the entire frozen acute-NSTEMI leaf.",
+      "section_matrix": [
+        {
+          "section": "summary",
+          "section_text_sha256": "8b141cb8db3e0ed93c7f0fea0890fe44436ae064220a8b0cf88d2e3fcf91b14c",
+          "claim_ids": [
+            "summary-0",
+            "summary-1",
+            "summary-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "定义缺血导致的心肌损伤/坏死、冠状动脉供血、表现及与骤停的关系；未把某一ECG分型或某一病因说成全部心梗。"
+        },
+        {
+          "section": "causes_risks",
+          "section_text_sha256": "db36aa2e6590cc7b5dda7a1da1f2bae889a270730f60d876a8bdc04c73390bdd",
+          "claim_ids": [
+            "causes_risks-0",
+            "causes_risks-1",
+            "causes_risks-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "斑块血栓被明确写为常见机制，同时列出痉挛、血管壁撕裂；可改变/不可改变风险与年轻、无传统风险仍可能发作的边界均可用于三类。无需将所有较少见病因逐个写成专科指南才满足公众病因维度。"
+        },
+        {
+          "section": "red_flags",
+          "section_text_sha256": "19405a5cd3d2910248c0b80fe97cce831cc85dceb394b6524eab10a5f80fc89f",
+          "claim_ids": [
+            "red_flags-0",
+            "red_flags-1",
+            "red_flags-2a",
+            "red_flags-2b"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "急救触发来自可识别的症状及失去反应/异常呼吸，不依赖读者已知ST分型；症状轻或波动也报告，适用于三类。"
+        },
+        {
+          "section": "care",
+          "section_text_sha256": "10d10025245a72d9d96b4c618aba4c71ba1ed15c24f1b9076154176c58f3dfa5",
+          "claim_ids": [
+            "care-0",
+            "care-1a",
+            "care-1b",
+            "care-1c",
+            "care-1d",
+            "care-2",
+            "care-3a",
+            "care-3b",
+            "care-3c"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "急性疑似事件与恢复期复诊分开；地区化阿司匹林条件、药物/出血告知及活动恢复属于共用就医过程。再发症状的急救提示只是一条升级行动，不据此认领BA42。"
+        },
+        {
+          "section": "diagnosis",
+          "section_text_sha256": "ca41b18a9610233cf0c4c56b06b70fa87904a720cdfa893fa3f5290d5bcda091",
+          "claim_ids": [
+            "diagnosis-0",
+            "diagnosis-1a",
+            "diagnosis-1b",
+            "diagnosis-2a",
+            "diagnosis-2b",
+            "diagnosis-3",
+            "diagnosis-4a",
+            "diagnosis-4b",
+            "diagnosis-5"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_diagnosis_with_subtype_explanation",
+          "assessment": "症状、ECG、肌钙蛋白及其局限、重复检测、超声和造影构成共用诊断解释；diagnosis-5提供分型关系与NSTEMI不等于轻症的具体区分。现行公众标准不要求列出导联、电压或99百分位诊断算法。",
+          "claim_roles": {
+            "shared": [
+              "diagnosis-0",
+              "diagnosis-1a",
+              "diagnosis-1b",
+              "diagnosis-2a",
+              "diagnosis-2b",
+              "diagnosis-3",
+              "diagnosis-4a",
+              "diagnosis-4b"
+            ],
+            "diagnosis-5": "Direct subtype identification and specific warning that NSTEMI can be severe."
+          }
+        },
+        {
+          "section": "differentials",
+          "section_text_sha256": "d17151aa2890cc8768a4b6767bf57c1352c7719814893d3c08055ffab24ac950",
+          "claim_ids": [
+            "differentials-0",
+            "differentials-1",
+            "differentials-2a",
+            "differentials-2b",
+            "differentials-2c",
+            "differentials-3a",
+            "differentials-3b",
+            "differentials-3c"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "反流/胸壁问题、稳定/不稳定心绞痛、夹层及肺栓塞解释相似处和急诊排除边界；任何ECG分型都不能凭症状自行排除，未将这些鉴别诊断计入MI覆盖。"
+        },
+        {
+          "section": "treatment",
+          "section_text_sha256": "a8300ecff69a3a461705f4bf9c5c4453186578fe9b7f0a89a432c41b475f064e",
+          "claim_ids": [
+            "treatment-0",
+            "treatment-1",
+            "treatment-2a",
+            "treatment-2b",
+            "treatment-2c",
+            "treatment-3"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_goals_plus_explicit_conditional_branches",
+          "assessment": "目标、PCI/支架及搭桥机制共用；STEMI溶栓严格附适应条件与出血风险，NSTEMI另有抗栓、风险导向造影/介入分支。条件分支保留，无一条要求所有类别都接受同一治疗。",
+          "claim_roles": {
+            "shared": [
+              "treatment-0",
+              "treatment-1",
+              "treatment-2a"
+            ],
+            "STEMI_branch": [
+              "treatment-2b",
+              "treatment-2c"
+            ],
+            "NSTEMI_branch": [
+              "treatment-3"
+            ],
+            "branch_assignment": "NSTEMI branch applies; STEMI thrombolysis is comparison and must not be assigned as NSTEMI treatment."
+          }
+        },
+        {
+          "section": "medications",
+          "section_text_sha256": "c6cb356225f4ddaac606c527592107495e48cefe88670f0ecf782b389b06fbc7",
+          "claim_ids": [
+            "medications-0",
+            "medications-1a",
+            "medications-1b",
+            "medications-1c",
+            "medications-2a",
+            "medications-2b",
+            "medications-2c",
+            "medications-3a",
+            "medications-3b",
+            "medications-3c",
+            "medications-4a",
+            "medications-4b",
+            "medications-4c",
+            "medications-4d",
+            "medications-5a",
+            "medications-5b",
+            "medications-5c",
+            "medications-5d",
+            "medications-6"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "药物类别的作用、代表药、出血/肌痛/咳嗽/肾功能/呼吸风险及监测是共用教育；联合治疗、疗程、支架和已开药等适用条件保留，不声称每位读者都应使用每一种药。"
+        },
+        {
+          "section": "diet",
+          "section_text_sha256": "1237a9b0c4f9291375cfdde7ee897f63ebddb425c0eeeb2e06d9eda25bd653fc",
+          "claim_ids": [
+            "diet-0",
+            "diet-1",
+            "diet-2a",
+            "diet-2b",
+            "diet-3",
+            "diet-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "康复期风险管理及食物不能处理急性堵塞的界线共用；糖尿病和肾病建议仅在合并疾病时适用，不由ST分型决定。"
+        },
+        {
+          "section": "daily_care",
+          "section_text_sha256": "a6ee42efebf7759418e1204e55669b7507a980a75efaf0305c41c9fcfd4debe5",
+          "claim_ids": [
+            "daily_care-0",
+            "daily_care-1a",
+            "daily_care-1b",
+            "daily_care-1c",
+            "daily_care-2",
+            "daily_care-3"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "按康复计划活动、停止活动/升级急救的界线、症状记录、药单与可执行性属于心梗后共用护理，不以已知ST分型作为前提。"
+        },
+        {
+          "section": "special_populations",
+          "section_text_sha256": "669353c3fbe2f8e996eb5df44279d9fca21aa599be2f50241a9b1740fb59efb2",
+          "claim_ids": [
+            "special_populations-0",
+            "special_populations-1",
+            "special_populations-2a",
+            "special_populations-2b",
+            "special_populations-2c",
+            "special_populations-2d"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "年龄、性别、糖尿病的表现差异共用；妊娠/产后句属于相关人群教育，因Chapter 11将孕产并发疾病另置Chapter 18/JB64.4，不用这些句子证明新增孕产分类覆盖。",
+          "claim_roles": {
+            "shared": [
+              "special_populations-0",
+              "special_populations-1"
+            ],
+            "related_context_not_counted": [
+              "special_populations-2a",
+              "special_populations-2b",
+              "special_populations-2c",
+              "special_populations-2d"
+            ]
+          }
+        },
+        {
+          "section": "prognosis_followup",
+          "section_text_sha256": "9bca1673907adbba5674bf8013992499108c16ae1af17efde8754c71814dc3e1",
+          "claim_ids": [
+            "prognosis_followup-0",
+            "prognosis_followup-1a",
+            "prognosis_followup-1b",
+            "prognosis_followup-1c",
+            "prognosis_followup-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "心肌损伤、治疗时机及原有健康影响恢复，复诊关注功能/症状/血压/血脂/用药与肾功能，适用于三类。再发风险告知不是BA42的独立介绍。"
+        },
+        {
+          "section": "complications",
+          "section_text_sha256": "f083f93fc26e8aae9b923e93b97e2c55304d9421d5879faec2b28d6243aaeb95",
+          "claim_ids": [
+            "complications-0",
+            "complications-1",
+            "complications-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "泵血、电活动、心衰、休克及心律失常作为原病的风险与升级行动解释；不等于对BA60及其叶类、心衰或骤停完成独立14维覆盖。"
+        },
+        {
+          "section": "prevention",
+          "section_text_sha256": "1d618d83e9b10870d6c70380ba7070415ee78ec33ee3302ca4f0520ba15b9890",
+          "claim_ids": [
+            "prevention-0",
+            "prevention-1",
+            "prevention-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "首次预防与心梗后防复发分开，风险管理和避免自行长期阿司匹林的界线共用；不能保证不发作，亦不把防复发段当作再次梗死类别文章。"
+        }
+      ],
+      "actual_content_gaps": [],
+      "definition_evidence_gaps": []
+    },
+    {
+      "code": "BA41.Z",
+      "scope": "Acute myocardial infarction established as the condition, with insufficient source-record detail to select the STEMI or NSTEMI child; not a generic chest-pain/suspected-MI category, and not a collective label for all MI.",
+      "decision": "confirmed_entire_leaf_category",
+      "entire_leaf_category": true,
+      "official_row": {
+        "row": 6397,
+        "code": "BA41.Z",
+        "title": "- - - - Acute myocardial infarction, unspecified",
+        "class_kind": "category",
+        "chapter": "11",
+        "foundation_uri": "",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1334938734/unspecified",
+        "parent_uri": "http://id.who.int/icd/entity/1334938734",
+        "is_leaf": true,
+        "is_residual": true,
+        "decision": "included",
+        "reason": "eligible_leaf_including_residual",
+        "release": "2026-01"
+      },
+      "official_locator": "WHO 2026-01 print PDF page 772 (printed page 770), BA41.Z; BA41 parent definition/exclusions; Chapter 11 page 768 (printed page 766). WHO Reference Guide 2.7.3.2 and 2.7.5 determine residual meaning.",
+      "rationale": "The reviewed residual scope is established acute MI without sufficient documented ST-subtype detail, as distinguished from unconfirmed disease. All common MI education remains applicable without assuming a subtype; diagnosis-5 explains the distinction and treatment-2b/2c/3 remain conditional comparisons instead of a universal regimen. This is an explicit claim-level residual-scope adjudication, not an inference from the umbrella title. Under the existing public-education standard no separate code-definition paragraph or duplicate article is required to make the educational content applicable.",
+      "section_matrix": [
+        {
+          "section": "summary",
+          "section_text_sha256": "8b141cb8db3e0ed93c7f0fea0890fe44436ae064220a8b0cf88d2e3fcf91b14c",
+          "claim_ids": [
+            "summary-0",
+            "summary-1",
+            "summary-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "定义缺血导致的心肌损伤/坏死、冠状动脉供血、表现及与骤停的关系；未把某一ECG分型或某一病因说成全部心梗。"
+        },
+        {
+          "section": "causes_risks",
+          "section_text_sha256": "db36aa2e6590cc7b5dda7a1da1f2bae889a270730f60d876a8bdc04c73390bdd",
+          "claim_ids": [
+            "causes_risks-0",
+            "causes_risks-1",
+            "causes_risks-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "斑块血栓被明确写为常见机制，同时列出痉挛、血管壁撕裂；可改变/不可改变风险与年轻、无传统风险仍可能发作的边界均可用于三类。无需将所有较少见病因逐个写成专科指南才满足公众病因维度。"
+        },
+        {
+          "section": "red_flags",
+          "section_text_sha256": "19405a5cd3d2910248c0b80fe97cce831cc85dceb394b6524eab10a5f80fc89f",
+          "claim_ids": [
+            "red_flags-0",
+            "red_flags-1",
+            "red_flags-2a",
+            "red_flags-2b"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "急救触发来自可识别的症状及失去反应/异常呼吸，不依赖读者已知ST分型；症状轻或波动也报告，适用于三类。"
+        },
+        {
+          "section": "care",
+          "section_text_sha256": "10d10025245a72d9d96b4c618aba4c71ba1ed15c24f1b9076154176c58f3dfa5",
+          "claim_ids": [
+            "care-0",
+            "care-1a",
+            "care-1b",
+            "care-1c",
+            "care-1d",
+            "care-2",
+            "care-3a",
+            "care-3b",
+            "care-3c"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "急性疑似事件与恢复期复诊分开；地区化阿司匹林条件、药物/出血告知及活动恢复属于共用就医过程。再发症状的急救提示只是一条升级行动，不据此认领BA42。"
+        },
+        {
+          "section": "diagnosis",
+          "section_text_sha256": "ca41b18a9610233cf0c4c56b06b70fa87904a720cdfa893fa3f5290d5bcda091",
+          "claim_ids": [
+            "diagnosis-0",
+            "diagnosis-1a",
+            "diagnosis-1b",
+            "diagnosis-2a",
+            "diagnosis-2b",
+            "diagnosis-3",
+            "diagnosis-4a",
+            "diagnosis-4b",
+            "diagnosis-5"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_diagnosis_with_subtype_explanation",
+          "assessment": "症状、ECG、肌钙蛋白及其局限、重复检测、超声和造影构成共用诊断解释；diagnosis-5提供分型关系与NSTEMI不等于轻症的具体区分。现行公众标准不要求列出导联、电压或99百分位诊断算法。",
+          "claim_roles": {
+            "shared": [
+              "diagnosis-0",
+              "diagnosis-1a",
+              "diagnosis-1b",
+              "diagnosis-2a",
+              "diagnosis-2b",
+              "diagnosis-3",
+              "diagnosis-4a",
+              "diagnosis-4b"
+            ],
+            "diagnosis-5": "Explains what information distinguishes specific types without assigning a missing type; unspecified is not equated with suspected MI."
+          }
+        },
+        {
+          "section": "differentials",
+          "section_text_sha256": "d17151aa2890cc8768a4b6767bf57c1352c7719814893d3c08055ffab24ac950",
+          "claim_ids": [
+            "differentials-0",
+            "differentials-1",
+            "differentials-2a",
+            "differentials-2b",
+            "differentials-2c",
+            "differentials-3a",
+            "differentials-3b",
+            "differentials-3c"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "反流/胸壁问题、稳定/不稳定心绞痛、夹层及肺栓塞解释相似处和急诊排除边界；任何ECG分型都不能凭症状自行排除，未将这些鉴别诊断计入MI覆盖。"
+        },
+        {
+          "section": "treatment",
+          "section_text_sha256": "a8300ecff69a3a461705f4bf9c5c4453186578fe9b7f0a89a432c41b475f064e",
+          "claim_ids": [
+            "treatment-0",
+            "treatment-1",
+            "treatment-2a",
+            "treatment-2b",
+            "treatment-2c",
+            "treatment-3"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_goals_plus_explicit_conditional_branches",
+          "assessment": "目标、PCI/支架及搭桥机制共用；STEMI溶栓严格附适应条件与出血风险，NSTEMI另有抗栓、风险导向造影/介入分支。条件分支保留，无一条要求所有类别都接受同一治疗。",
+          "claim_roles": {
+            "shared": [
+              "treatment-0",
+              "treatment-1",
+              "treatment-2a"
+            ],
+            "STEMI_branch": [
+              "treatment-2b",
+              "treatment-2c"
+            ],
+            "NSTEMI_branch": [
+              "treatment-3"
+            ],
+            "branch_assignment": "Both branches are conditional information pending documented type and clinical eligibility; neither branch is a default treatment for unspecified MI."
+          }
+        },
+        {
+          "section": "medications",
+          "section_text_sha256": "c6cb356225f4ddaac606c527592107495e48cefe88670f0ecf782b389b06fbc7",
+          "claim_ids": [
+            "medications-0",
+            "medications-1a",
+            "medications-1b",
+            "medications-1c",
+            "medications-2a",
+            "medications-2b",
+            "medications-2c",
+            "medications-3a",
+            "medications-3b",
+            "medications-3c",
+            "medications-4a",
+            "medications-4b",
+            "medications-4c",
+            "medications-4d",
+            "medications-5a",
+            "medications-5b",
+            "medications-5c",
+            "medications-5d",
+            "medications-6"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "药物类别的作用、代表药、出血/肌痛/咳嗽/肾功能/呼吸风险及监测是共用教育；联合治疗、疗程、支架和已开药等适用条件保留，不声称每位读者都应使用每一种药。"
+        },
+        {
+          "section": "diet",
+          "section_text_sha256": "1237a9b0c4f9291375cfdde7ee897f63ebddb425c0eeeb2e06d9eda25bd653fc",
+          "claim_ids": [
+            "diet-0",
+            "diet-1",
+            "diet-2a",
+            "diet-2b",
+            "diet-3",
+            "diet-4"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "康复期风险管理及食物不能处理急性堵塞的界线共用；糖尿病和肾病建议仅在合并疾病时适用，不由ST分型决定。"
+        },
+        {
+          "section": "daily_care",
+          "section_text_sha256": "a6ee42efebf7759418e1204e55669b7507a980a75efaf0305c41c9fcfd4debe5",
+          "claim_ids": [
+            "daily_care-0",
+            "daily_care-1a",
+            "daily_care-1b",
+            "daily_care-1c",
+            "daily_care-2",
+            "daily_care-3"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "按康复计划活动、停止活动/升级急救的界线、症状记录、药单与可执行性属于心梗后共用护理，不以已知ST分型作为前提。"
+        },
+        {
+          "section": "special_populations",
+          "section_text_sha256": "669353c3fbe2f8e996eb5df44279d9fca21aa599be2f50241a9b1740fb59efb2",
+          "claim_ids": [
+            "special_populations-0",
+            "special_populations-1",
+            "special_populations-2a",
+            "special_populations-2b",
+            "special_populations-2c",
+            "special_populations-2d"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "年龄、性别、糖尿病的表现差异共用；妊娠/产后句属于相关人群教育，因Chapter 11将孕产并发疾病另置Chapter 18/JB64.4，不用这些句子证明新增孕产分类覆盖。",
+          "claim_roles": {
+            "shared": [
+              "special_populations-0",
+              "special_populations-1"
+            ],
+            "related_context_not_counted": [
+              "special_populations-2a",
+              "special_populations-2b",
+              "special_populations-2c",
+              "special_populations-2d"
+            ]
+          }
+        },
+        {
+          "section": "prognosis_followup",
+          "section_text_sha256": "9bca1673907adbba5674bf8013992499108c16ae1af17efde8754c71814dc3e1",
+          "claim_ids": [
+            "prognosis_followup-0",
+            "prognosis_followup-1a",
+            "prognosis_followup-1b",
+            "prognosis_followup-1c",
+            "prognosis_followup-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "心肌损伤、治疗时机及原有健康影响恢复，复诊关注功能/症状/血压/血脂/用药与肾功能，适用于三类。再发风险告知不是BA42的独立介绍。"
+        },
+        {
+          "section": "complications",
+          "section_text_sha256": "f083f93fc26e8aae9b923e93b97e2c55304d9421d5879faec2b28d6243aaeb95",
+          "claim_ids": [
+            "complications-0",
+            "complications-1",
+            "complications-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "泵血、电活动、心衰、休克及心律失常作为原病的风险与升级行动解释；不等于对BA60及其叶类、心衰或骤停完成独立14维覆盖。"
+        },
+        {
+          "section": "prevention",
+          "section_text_sha256": "1d618d83e9b10870d6c70380ba7070415ee78ec33ee3302ca4f0520ba15b9890",
+          "claim_ids": [
+            "prevention-0",
+            "prevention-1",
+            "prevention-2"
+          ],
+          "adequate_for_public_education": true,
+          "applicability": "shared_with_existing_conditions",
+          "assessment": "首次预防与心梗后防复发分开，风险管理和避免自行长期阿司匹林的界线共用；不能保证不发作，亦不把防复发段当作再次梗死类别文章。"
+        }
+      ],
+      "actual_content_gaps": [],
+      "definition_evidence_gaps": []
+    }
+  ],
+  "confirmed_mapping_proposals": [
+    {
+      "condition_id": "myocardial-infarction",
+      "code": "BA41.0",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "c25a6ae7a5cfed47a1416f6645124a332272134cd1d12f2899bda3fcd883054f",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "Current bilingual article explicitly explains ST-elevation versus non-ST-elevation diagnosis and eligible STEMI reperfusion/thrombolysis, and the adjudicated shared sections supply all 14 public-education dimensions. Common causes are not asserted as exclusive and treatment remains conditional. The entire frozen acute-STEMI leaf can be served by this combined article; no duplicate article or specialist ECG/dose protocol is required by the content standard.",
+        "exclusions_considered": "WHO 2026-01 BA41 excludes BA42 subsequent MI, BA50 old MI, BA60 current post-MI complications and BA60.0 post-MI syndrome. Chapter 11 exclusions/coded-elsewhere notes include perinatal, infectious, pregnancy/puerperal (including JB64.4), developmental, endocrine/metabolic, injury and other separately classified conditions. Article recurrence warnings, long-term prevention, complication discussion and pregnancy context do not claim those categories. STEMI/NSTEMI comparisons do not make either subtype the other; BA41.Z means insufficient type documentation, not unconfirmed MI. No parent, sibling, exclusion, extension code or future-release subdivision is counted."
+      },
+      "review_report": "reports/batch-01-mi-icd-scope-review.json"
+    },
+    {
+      "condition_id": "myocardial-infarction",
+      "code": "BA41.1",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "c25a6ae7a5cfed47a1416f6645124a332272134cd1d12f2899bda3fcd883054f",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "Current bilingual article explicitly explains non-ST-elevation MI, rejects the false inference that it is mild, and provides antithrombotic/risk-guided angiography or intervention while withholding blanket thrombolysis. Shared sections supply the remaining public-education dimensions across the entire frozen acute-NSTEMI leaf.",
+        "exclusions_considered": "WHO 2026-01 BA41 excludes BA42 subsequent MI, BA50 old MI, BA60 current post-MI complications and BA60.0 post-MI syndrome. Chapter 11 exclusions/coded-elsewhere notes include perinatal, infectious, pregnancy/puerperal (including JB64.4), developmental, endocrine/metabolic, injury and other separately classified conditions. Article recurrence warnings, long-term prevention, complication discussion and pregnancy context do not claim those categories. STEMI/NSTEMI comparisons do not make either subtype the other; BA41.Z means insufficient type documentation, not unconfirmed MI. No parent, sibling, exclusion, extension code or future-release subdivision is counted."
+      },
+      "review_report": "reports/batch-01-mi-icd-scope-review.json"
+    },
+    {
+      "condition_id": "myocardial-infarction",
+      "code": "BA41.Z",
+      "release": "2026-01",
+      "status": "confirmed",
+      "content_sha256": "c25a6ae7a5cfed47a1416f6645124a332272134cd1d12f2899bda3fcd883054f",
+      "adjudication": {
+        "method": "semantic_scope_review",
+        "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope; not clinician sign-off",
+        "checked_at": "2026-10-02",
+        "scope": "entire_leaf_category",
+        "rationale": "The reviewed residual scope is established acute MI without sufficient documented ST-subtype detail, as distinguished from unconfirmed disease. All common MI education remains applicable without assuming a subtype; diagnosis-5 explains the distinction and treatment-2b/2c/3 remain conditional comparisons instead of a universal regimen. This is an explicit claim-level residual-scope adjudication, not an inference from the umbrella title. Under the existing public-education standard no separate code-definition paragraph or duplicate article is required to make the educational content applicable.",
+        "exclusions_considered": "WHO 2026-01 BA41 excludes BA42 subsequent MI, BA50 old MI, BA60 current post-MI complications and BA60.0 post-MI syndrome. Chapter 11 exclusions/coded-elsewhere notes include perinatal, infectious, pregnancy/puerperal (including JB64.4), developmental, endocrine/metabolic, injury and other separately classified conditions. Article recurrence warnings, long-term prevention, complication discussion and pregnancy context do not claim those categories. STEMI/NSTEMI comparisons do not make either subtype the other; BA41.Z means insufficient type documentation, not unconfirmed MI. No parent, sibling, exclusion, extension code or future-release subdivision is counted."
+      },
+      "review_report": "reports/batch-01-mi-icd-scope-review.json"
+    }
+  ],
+  "not_covered_by_this_article_review": [
+    {
+      "codes": [
+        "BA41",
+        "BA42"
+      ],
+      "decision": "excluded_parent_not_denominator",
+      "reason": "Official is_leaf=false. Reviewing an umbrella does not add a denominator member."
+    },
+    {
+      "codes": [
+        "BA42.0",
+        "BA42.1",
+        "BA42.Z"
+      ],
+      "decision": "not_confirmed",
+      "reason": "The article warns about recurrence and prevention but does not explain the defining extension/recurrent event within 28 days or the assessment of a new event in the context of recent MI. This is an actual category-specific knowledge gap, not another pending-label loop.",
+      "completion_condition": "Add a concise, supported subsequent-MI explanation of its distinct recent-event context and how recurrence is assessed after a prior infarction, keep STEMI/NSTEMI/unspecified branches explicit, then assign existing shared dimensions with independently checked claim evidence. A separate duplicate 14-section article is not inherently required."
+    },
+    {
+      "codes": [
+        "BA50",
+        "BA60",
+        "BA60.*",
+        "BA60.0",
+        "JB64.4"
+      ],
+      "decision": "not_claimed",
+      "reason": "Follow-up, complication and pregnancy passages provide context within the acute article; they do not constitute independent category coverage."
+    }
+  ],
+  "completion_conditions": {
+    "acute_leaf_classification": "This report supplies the required semantic adjudications for BA41.0, BA41.1 and BA41.Z. No new article text or clinical-source pass is required for these three at the current public-education standard.",
+    "integration": "Replace only the current three MI partial/pending mapping records with the provided hash-bound confirmed proposals, then run the existing ICD/editorial consistency checks. Do not change medical-review state.",
+    "invalidation": "Any change to content_hash, the frozen release/leaf set, relevant exclusion semantics, or failed editorial qualification requires the affected mapping/evidence to be reconsidered."
+  },
+  "validation": {
+    "frozen_snapshot": "load_icd re-parsed and validated official ZIP, rules and complete catalog",
+    "section_matrices": {
+      "categories": 3,
+      "sections_each": 14,
+      "claims_each": 90,
+      "missing_sections": []
+    },
+    "proposal_check": "Ran coverage_icd with proposals in memory; did not edit mappings or write generated coverage outputs.",
+    "covered_categories_before": 2,
+    "covered_categories_if_integrated": 5,
+    "prospective_coverage_count_delta": 3,
+    "actual_persisted_coverage_count_delta": 0,
+    "denominator": 13155,
+    "candidate_issues": [],
+    "shared_files_modified": false
+  },
+  "rights": "Official titles, codes, URIs and source hashes are retained; assessments are clearly identified project additions. The report uses original paraphrases and precise locations, without redistributing source full text. WHO ICD-11 attribution and CC BY-ND 3.0 IGO remain in data/icd/README.md.",
+  "stop": "One evidence-bearing classification review complete. No serial rereview is requested; parent may integrate the concrete proposals and verify consistency."
+}

@@ -416,32 +416,148 @@
   },
   {
     "condition_id": "myocardial-infarction",
-    "release": "2026-01",
-    "content_sha256": "c25a6ae7a5cfed47a1416f6645124a332272134cd1d12f2899bda3fcd883054f",
     "code": "BA41.0",
-    "status": "partial",
-    "method": "semantic_scope_review",
-    "rationale": "Substantive STEMI diagnosis/treatment material with shared education exists. This review does not certify the entire category as complete from the umbrella title; retain pending category-level applicability assignment.",
-    "review_report": "reports/batch-01-mi-final-targeted-recheck.json"
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "c25a6ae7a5cfed47a1416f6645124a332272134cd1d12f2899bda3fcd883054f",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope; not clinician sign-off",
+      "checked_at": "2026-10-02",
+      "scope": "entire_leaf_category",
+      "rationale": "Current bilingual article explicitly explains ST-elevation versus non-ST-elevation diagnosis and eligible STEMI reperfusion/thrombolysis, and the adjudicated shared sections supply all 14 public-education dimensions. Common causes are not asserted as exclusive and treatment remains conditional. The entire frozen acute-STEMI leaf can be served by this combined article; no duplicate article or specialist ECG/dose protocol is required by the content standard.",
+      "exclusions_considered": "WHO 2026-01 BA41 excludes BA42 subsequent MI, BA50 old MI, BA60 current post-MI complications and BA60.0 post-MI syndrome. Chapter 11 exclusions/coded-elsewhere notes include perinatal, infectious, pregnancy/puerperal (including JB64.4), developmental, endocrine/metabolic, injury and other separately classified conditions. Article recurrence warnings, long-term prevention, complication discussion and pregnancy context do not claim those categories. STEMI/NSTEMI comparisons do not make either subtype the other; BA41.Z means insufficient type documentation, not unconfirmed MI. No parent, sibling, exclusion, extension code or future-release subdivision is counted."
+    },
+    "review_report": "reports/batch-01-mi-icd-scope-review.json"
   },
   {
     "condition_id": "myocardial-infarction",
-    "release": "2026-01",
-    "content_sha256": "c25a6ae7a5cfed47a1416f6645124a332272134cd1d12f2899bda3fcd883054f",
     "code": "BA41.1",
-    "status": "partial",
-    "method": "semantic_scope_review",
-    "rationale": "Substantive NSTEMI distinctions exist. Shared14section material is useful, but complete category-level applicability has not been explicitly adjudicated.",
-    "review_report": "reports/batch-01-mi-final-targeted-recheck.json"
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "c25a6ae7a5cfed47a1416f6645124a332272134cd1d12f2899bda3fcd883054f",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope; not clinician sign-off",
+      "checked_at": "2026-10-02",
+      "scope": "entire_leaf_category",
+      "rationale": "Current bilingual article explicitly explains non-ST-elevation MI, rejects the false inference that it is mild, and provides antithrombotic/risk-guided angiography or intervention while withholding blanket thrombolysis. Shared sections supply the remaining public-education dimensions across the entire frozen acute-NSTEMI leaf.",
+      "exclusions_considered": "WHO 2026-01 BA41 excludes BA42 subsequent MI, BA50 old MI, BA60 current post-MI complications and BA60.0 post-MI syndrome. Chapter 11 exclusions/coded-elsewhere notes include perinatal, infectious, pregnancy/puerperal (including JB64.4), developmental, endocrine/metabolic, injury and other separately classified conditions. Article recurrence warnings, long-term prevention, complication discussion and pregnancy context do not claim those categories. STEMI/NSTEMI comparisons do not make either subtype the other; BA41.Z means insufficient type documentation, not unconfirmed MI. No parent, sibling, exclusion, extension code or future-release subdivision is counted."
+    },
+    "review_report": "reports/batch-01-mi-icd-scope-review.json"
   },
   {
     "condition_id": "myocardial-infarction",
-    "release": "2026-01",
-    "content_sha256": "c25a6ae7a5cfed47a1416f6645124a332272134cd1d12f2899bda3fcd883054f",
     "code": "BA41.Z",
-    "status": "pending",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "c25a6ae7a5cfed47a1416f6645124a332272134cd1d12f2899bda3fcd883054f",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope; not clinician sign-off",
+      "checked_at": "2026-10-02",
+      "scope": "entire_leaf_category",
+      "rationale": "The reviewed residual scope is established acute MI without sufficient documented ST-subtype detail, as distinguished from unconfirmed disease. All common MI education remains applicable without assuming a subtype; diagnosis-5 explains the distinction and treatment-2b/2c/3 remain conditional comparisons instead of a universal regimen. This is an explicit claim-level residual-scope adjudication, not an inference from the umbrella title. Under the existing public-education standard no separate code-definition paragraph or duplicate article is required to make the educational content applicable.",
+      "exclusions_considered": "WHO 2026-01 BA41 excludes BA42 subsequent MI, BA50 old MI, BA60 current post-MI complications and BA60.0 post-MI syndrome. Chapter 11 exclusions/coded-elsewhere notes include perinatal, infectious, pregnancy/puerperal (including JB64.4), developmental, endocrine/metabolic, injury and other separately classified conditions. Article recurrence warnings, long-term prevention, complication discussion and pregnancy context do not claim those categories. STEMI/NSTEMI comparisons do not make either subtype the other; BA41.Z means insufficient type documentation, not unconfirmed MI. No parent, sibling, exclusion, extension code or future-release subdivision is counted."
+    },
+    "review_report": "reports/batch-01-mi-icd-scope-review.json"
+  },
+  {
+    "condition_id": "pulmonary-embolism",
+    "code": "BB00.0",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "283430290caab956eaaa1e89168e116801d545e734f962b7ed449f99f3db6c98",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope; not clinician sign-off",
+      "checked_at": "2026-10-02",
+      "scope": "entire_leaf_category",
+      "rationale": "Current bilingual article gives explanatory acute clot-related PE education across all 14 dimensions: thrombus mechanism and risks, urgent signs and assessment, diagnostic-test roles/limits, severity-selected treatment, anticoagulant risks, recovery and recurrence prevention. Conditional adult, pediatric and maternal material preserves applicability. Frozen definition includes asymptomatic events; the article uses non-exclusive symptom language and never makes a symptom mandatory for PE. No full clinical decision algorithm is required by the public-education standard.",
+      "exclusions_considered": "WHO BB00 excludes JB64.4 (circulatory disease complicating pregnancy/childbirth/puerperium) and JA05 (complications following abortion/ectopic/molar pregnancy); inherited Chapter 11 exclusions remain. Pregnancy/infant context and non-thrombotic emboli are not additional categories covered. BB00.1 is a separate chronic leaf and BB01.3 CTEPH is coded elsewhere. Parent BB00 is not a denominator member."
+    },
+    "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+  },
+  {
+    "condition_id": "retinal-detachment",
+    "code": "9B73.0",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope; not clinician sign-off",
+      "checked_at": "2026-10-02",
+      "scope": "entire_leaf_category",
+      "rationale": "The article explicitly explains the tear-fluid mechanism and supplies targeted break-sealing and detachment-repair education, while all other dimensions address the affected retina and the actual conditional care process. Shared warnings, examination, medication safety, recovery and prevention apply across the frozen leaf; non-tear mechanisms are comparative context, not merged into this code. The causing-condition coding note and parent exclusions were considered.",
+      "exclusions_considered": "WHO 9B73 excludes retinal pigment epithelium detachment (9B78.6), and Chapter 09 exclusions/coded-elsewhere entries remain. 9B73.0 is detachment with a retinal break, not isolated breaks (9B73.4), retinoschisis, cysts or all parent descendants. 9B73.3 is serous detachment without a retinal hole/tear/break and excludes central serous chorioretinopathy (9B75.2). Both 9B73.0 and 9B73.3 say code also the causing condition; an educational article mapping is not patient coding and does not count the causing condition as covered. Traumatic, infectious, neoplastic, metabolic and other causal contexts are not silently converted into covered independent diseases."
+    },
+    "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+  },
+  {
+    "condition_id": "retinal-detachment",
+    "code": "9B73.3",
+    "release": "2026-01",
+    "status": "confirmed",
+    "content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
+    "adjudication": {
+      "method": "semantic_scope_review",
+      "reviewer": "Codex AI-assisted editorial classification reviewer /root/mi_icd_scope; not clinician sign-off",
+      "checked_at": "2026-10-02",
+      "scope": "entire_leaf_category",
+      "rationale": "The article independently explains exudative fluid accumulation without a break, cause-directed treatment for inflammatory/vascular/tumour mechanisms, and the conditional noninfectious-inflammatory medication branch. The other dimensions provide applicable visual-risk, retinal-assessment, monitoring, follow-up and care education. Tear-sealing, postoperative care and gas restrictions retain explicit conditions and are not assumed for every serous detachment. The public standard does not require separate full oncology, uveitis or vascular-treatment guidelines. Central serous chorioretinopathy and pigment-epithelium detachment are excluded from this leaf assessment.",
+      "exclusions_considered": "WHO 9B73 excludes retinal pigment epithelium detachment (9B78.6), and Chapter 09 exclusions/coded-elsewhere entries remain. 9B73.0 is detachment with a retinal break, not isolated breaks (9B73.4), retinoschisis, cysts or all parent descendants. 9B73.3 is serous detachment without a retinal hole/tear/break and excludes central serous chorioretinopathy (9B75.2). Both 9B73.0 and 9B73.3 say code also the causing condition; an educational article mapping is not patient coding and does not count the causing condition as covered. Traumatic, infectious, neoplastic, metabolic and other causal contexts are not silently converted into covered independent diseases."
+    },
+    "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+  },
+  {
+    "condition_id": "pulmonary-embolism",
+    "code": "BB00.1",
+    "release": "2026-01",
+    "status": "partial",
+    "content_sha256": "283430290caab956eaaa1e89168e116801d545e734f962b7ed449f99f3db6c98",
     "method": "semantic_scope_review",
-    "rationale": "A generic MI title is not automatically the coding meaning of acute MI unspecified. No explicit residual-category scope or handling is currently assigned.",
-    "review_report": "reports/batch-01-mi-final-targeted-recheck.json"
+    "rationale": "Chronic pulmonary thromboembolism is a separate frozen category, not merely prolonged acute recovery. The article mentions CTEPH/residual obstruction as complications but supplies no independent chronic-disease assessment or management branch. WHO additionally marks BB01.3 CTEPH as coded elsewhere; the complication sentence cannot certify BB00.1. Completion: Add a concise, source-supported chronic-obstruction description, why persistent limitations need a different assessment, and the goals/major options of that specialist treatment and follow-up. Reuse shared anticoagulant safety, diet and warning signs. No detailed haemodynamic algorithm or duplicate full article is necessary.",
+    "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+  },
+  {
+    "condition_id": "pulmonary-embolism",
+    "code": "BB00.Z",
+    "release": "2026-01",
+    "status": "partial",
+    "content_sha256": "283430290caab956eaaa1e89168e116801d545e734f962b7ed449f99f3db6c98",
+    "method": "semantic_scope_review",
+    "rationale": "Unspecified means documented pulmonary thromboembolism without sufficient acute/chronic detail; it does not mean an unconfirmed PE. Unlike MI unspecified ST type, the present article does not supply both materially different temporal care branches. It therefore provides substantial generic education but cannot yet be adjudicated as applicable across this entire residual leaf. Completion: Make acute versus established chronic disease applicability explicit in the existing diagnosis/treatment/follow-up dimensions, using the concise chronic branch above. Then bind shared claims without assuming the missing temporal detail. A standalone coding paragraph or broad title alone is neither required nor sufficient.",
+    "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+  },
+  {
+    "condition_id": "retinal-detachment",
+    "code": "9B73.4",
+    "release": "2026-01",
+    "status": "partial",
+    "content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
+    "method": "semantic_scope_review",
+    "rationale": "A break without detachment is explained as a precursor and a suitable laser/freezing target, but the principal course/repair discussion is established detachment. This is substantive partial coverage of the separate isolated-break category, not a complete direct assignment. Completion: Add a short supported isolated-break care/monitoring and treatment-selection explanation with its own follow-up/progression boundary. Most diagnostic, symptom and prevention material can remain shared. This does not require duplicated postoperative gas instructions or a laser protocol.",
+    "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+  },
+  {
+    "condition_id": "retinal-detachment",
+    "code": "9B73.Y",
+    "release": "2026-01",
+    "status": "partial",
+    "content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
+    "method": "semantic_scope_review",
+    "rationale": "Tractional detachment and PVR are materially explained, but neither is automatically the entire other-specified residual. The official print explicitly redirects PVR with detachment from 9B78.2 to 9B73.Y; it does not enumerate the full residual membership or independently place every tractional variant. Completion: Read the official release-matched index/coding-tool membership for 9B73.Y, explicitly resolve traction/PVR and any additional distinct retained forms against the named siblings/exclusions, then assign the already-written mechanism-specific and shared material. Add only knowledge revealed to be missing by that concrete scope. Do not infer full residual coverage from one PVR mention.",
+    "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
+  },
+  {
+    "condition_id": "retinal-detachment",
+    "code": "9B73.Z",
+    "release": "2026-01",
+    "status": "partial",
+    "content_sha256": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee",
+    "method": "semantic_scope_review",
+    "rationale": "The residual explicitly includes unspecified retinal detachments or breaks, not only a detachment whose mechanism is missing. The article supplies broad detachment education and tear comparison, but the isolated-break pathway remains partial; a general retinal-detachment title is not enough to close this broader residual. Completion: Resolve the isolated-break care/course gap described for 9B73.4, retain the existing mechanism-selected detachment branches, and then explicitly assign the residual without inventing undocumented detachment or subtype. Do not broaden it to every 9B73 descendant.",
+    "review_report": "reports/batch-01-pe-retinal-icd-scope-review.json"
   }
 ]

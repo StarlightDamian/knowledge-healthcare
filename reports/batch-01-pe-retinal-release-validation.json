@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-02",
+  "topics": [
+    "pulmonary-embolism",
+    "retinal-detachment"
+  ],
+  "candidate_topic_count": 77,
+  "candidate_source_count": 461,
+  "candidate_populated_specialties": 33,
+  "editorial": {
+    "new_sections": 28,
+    "new_claims": 123,
+    "qualified_sections_total": 70,
+    "qualified_claims_total": 321,
+    "clinician_signoff": false,
+    "independent_reviews": [
+      "reports/batch-01-pe-acceptance.json",
+      "reports/batch-01-retinal-acceptance.json"
+    ],
+    "classification_reviews": [
+      "reports/batch-01-mi-icd-scope-review.json",
+      "reports/batch-01-pe-retinal-icd-scope-review.json"
+    ]
+  },
+  "content_sha256": {
+    "pulmonary-embolism": "283430290caab956eaaa1e89168e116801d545e734f962b7ed449f99f3db6c98",
+    "retinal-detachment": "2415d7429c49269cdd88f029720699a43974c4312376b94b73e1ef28fb39f9ee"
+  },
+  "checks": {
+    "node": {
+      "passed": 360,
+      "command": "npm test"
+    },
+    "affected_python": {
+      "unique_passed": 81,
+      "command": "python -m unittest tests.test_model tests.test_editorial tests.test_icd tests.test_content_audit tests.test_clinical_gate"
+    },
+    "content_and_coverage": {
+      "issues": 0,
+      "covered_categories": 8,
+      "denominator": 13155,
+      "remaining_categories": 13147,
+      "mapping_states": {
+        "pending": 47,
+        "confirmed": 8,
+        "partial": 5
+      },
+      "final_mapping_regression": {
+        "passed": 9,
+        "included_in_affected_python_total": true
+      }
+    },
+    "server_postgresql_http": {
+      "passed": true,
+      "candidate_root": "/home/user/.local/state/knowledge-healthcare/healthcare-pe-retinal-20261002",
+      "old_release_id": "rel-b4d9b12ec2744718ec202f287930e17e692c7470fc6f2d80713a8dbc2991cef7",
+      "release_id": "rel-722f8d1e35afc7ef16946b31922c7fec980df1e267c4af70a7fe73f244204b89",
+      "old_topics": 75,
+      "new_topics": 77,
+      "data_sha256": "88a262008102721a26037893ec525f250505ff5f127081dfa755474c15fb7a00",
+      "checks": [
+        "75→77 paired-root import, pending hidden, duplicate import",
+        "full old/new snapshot hashes and42→70 evidence records",
+        "publish, rollback and reactivate isolated test database",
+        "actual HTTP pinned75/77 catalogs and new PE and retinal article/source details",
+        "CN/EN77-row22-column CSV with all28 new sections exact"
+      ],
+      "production_changed": false,
+      "test_git_commit_is_synthetic": true
+    },
+    "github_ci": {
+      "status": "pending"
+    },
+    "public_https": {
+      "status": "pending"
+    }
+  },
+  "publication_status": "validated_candidate_not_yet_live",
+  "coverage_target_met": false
+}

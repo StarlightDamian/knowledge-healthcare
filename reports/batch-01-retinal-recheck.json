@@ -1,0 +1,1167 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "batch01-retinal-recheck-2026-10-02",
+  "reviewer": "/root/retinal_finish",
+  "author": "/root/acute_symptom_content",
+  "reviewed_at": "2026-10-02",
+  "review_type": "targeted_independent_original_source_recheck",
+  "medical_reviewed": false,
+  "target": {
+    "id": "retinal-detachment",
+    "path": "drafts/batch-01/acute-symptom/retinal-detachment.json",
+    "canonical_sha256": "8ec0d2376c5377d40ca7d749b47d5fae293c7f58929e0395b2ab45725a2325a8",
+    "file_sha256": "0729ab6b852b360a3f246e8ea6f0df53dab380aca7c3d8b2f697b95e54de802b"
+  },
+  "prior_report": {
+    "path": "reports/batch-01-retinal-independent.json",
+    "file_sha256": "b4e894488d2a40f24e999f579e4b4a3ddc5b9d3de3a262922a918c3cd7a6fd6c",
+    "preserved": true
+  },
+  "verdict": "needs_revision",
+  "release_recommendation": "do_not_count_as_cross_checked_complete_content",
+  "scope": {
+    "sections": 14,
+    "claims": 65,
+    "source_records_bound": 28,
+    "source_bodies_read_for_medical_support": 26,
+    "additional_original_sources_read": 4,
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "author_files_modified": false,
+    "production_files_modified": false,
+    "clinical_signoff": false
+  },
+  "summary": "新稿已修正超声/OCT混写、按破口统一治疗、糖尿病出血机制错绑、笼统气泡警示和把食谱缺失说成疗效定论。剩余四组最小修订为用药风险深度、部分定位绑定、非裂孔性治疗交叉支持和特异预防行动支持。本报告不把普通解释、行政求助或已验证风险的具体场景机械变成双源缺口。",
+  "decision_counts": {
+    "supported_cross_checked": 36,
+    "supported_explanation": 10,
+    "needs_binding_revision": 6,
+    "supported_regional_action_single_source": 1,
+    "partial_single_source_treatment": 2,
+    "supported_action_with_editorial_link": 1,
+    "supported_bounded_editorial_statement": 3,
+    "supported_action_with_scope_note": 1,
+    "supported_bounded_application": 2,
+    "supported_practical_editorial_advice": 1,
+    "partial_prevention_support": 2
+  },
+  "bilingual_check": {
+    "all_65_claim_texts_are_exact_substrings": true,
+    "numeric_threshold_mismatch_found": false,
+    "dose_or_calculator_added": false,
+    "assessment": "逐项读取当前中英文本；急诊动作、气泡条件及术后恶化条件对应。全文没有新剂量计算或统一禁食时数。"
+  },
+  "source_independence": {
+    "rule": "Different independently authored institutions can share NHS affiliation; that alone is not republication. NEI pages remain one group, ASRS pages remain one group. Same-author pages do not produce another independent writer.",
+    "shared_upstream": [
+      "Mayo explicitly cites NEI, ASRS and AAO plus textbooks.",
+      "Cleveland explicitly cites NEI, ASRS, AAO and StatPearls.",
+      "MSD cites AAO 2020 PPP. ASRS diabetes guideline cites ADA and shared trials."
+    ],
+    "interpretation": "Independent editorial corroboration is not independent experimental replication; no trial count or certainty upgrade is inferred."
+  },
+  "source_reads": [
+    {
+      "source_id": "b1-acute-retina-nei",
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/retinal-detachment",
+      "source_metadata_sha256": "e7ef47d8b4ba5e3b2e1ab49474bb2f61b2ed758c7bd60c1b0b632e35a71c41e1",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2025-11-05",
+      "locator": "Symptoms; risk; prevention; dilated examination; treatment",
+      "scope_note": "Core presentation and urgency checked. No outcome percentage transferred."
+    },
+    {
+      "source_id": "b1-acute-retina-nhs",
+      "url": "https://www.nhs.uk/conditions/detached-retina-retinal-detachment/",
+      "source_metadata_sha256": "cdc343acd81115ff89ca2b4122ee5a3d06084b88af8d27fd30f190823a9d3696",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2023-08-04; review due 2026-08-04",
+      "locator": "Urgent advice; surgery; recovery Important; causes",
+      "scope_note": "Review-due date has passed. Current page remains available; its key urgent actions agree with independent sources."
+    },
+    {
+      "source_id": "b1-acute-retina-moorfields",
+      "url": "https://www.moorfields.nhs.uk/eye-conditions/retinal-detachment/diagnosis-and-treatment",
+      "source_metadata_sha256": "684ac683a28b4fc797fa55113feb45ab037d5c3a2833d580a71351faa64cc727",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": null,
+      "locator": "Anaesthesia; operation; Further surgery; Recovery; After operation; Posturing; Your vision after surgery",
+      "scope_note": "Retinal repair and recovery material actually read. Its worsening-symptom sentence mentions pain/blur, not worsening redness."
+    },
+    {
+      "source_id": "b1-acute-retina-moorfields-macular-gas",
+      "url": "https://moorfields.nhs.uk/eye-conditions/macular-hole/diagnosis-and-treatment",
+      "source_metadata_sha256": "1bc1b63a7d7077d58fe1cabf4368e44700b1448beb002b0566a92b1b6bcafc91",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": null,
+      "locator": "Before surgery/Fasting; After surgery/drops; Important warnings; When to contact Moorfields immediately",
+      "scope_note": "Shared intraocular gas and postoperative warning context only; no macular-hole success rates, posture durations or visual outcome transferred."
+    },
+    {
+      "source_id": "b1-acute-retina-cuh-repair",
+      "url": "https://www.cuh.nhs.uk/patient-information/surgical-repair-of-retinal-detachment/",
+      "source_metadata_sha256": "6fb83ac63dca47e3b572c6d9f4e76e3ed637a43fcb6fd0e6f8cacfa2e309a017",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2026-04-21; version 8; document 2965",
+      "locator": "Background; Surgical repair; Varieties of splint; Posturing; Recovery of vision; Eye drops",
+      "scope_note": "Current leaflet body read. At first web find returned no match; full page at body location recovered it."
+    },
+    {
+      "source_id": "b1-acute-retina-leeds-postop",
+      "url": "https://www.leedsth.nhs.uk/patients/resources/vitrectomy-post-operative-advice/",
+      "source_metadata_sha256": "ef6bd0d0340850ea3e886a088701893972c909140d7c15dc64b0a91e8f587500",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2026-01-27; edition 003 version 1",
+      "locator": "Morning after; You are advised; Contact us if",
+      "scope_note": "Author Louise Ramsaha, Ophthalmic Day Unit. Severe pain and deteriorating vision supported; redness is absent from its contact list."
+    },
+    {
+      "source_id": "b1-acute-retina-rcophth-gas",
+      "url": "https://curriculum.rcophth.ac.uk/2018/12/ophthalmic-safety-alert-use-of-nitrous-oxide-when-there-is-gas-in-an-operated-eye/",
+      "source_metadata_sha256": "547b50e11dbf718248b94d213325003b830cee59a63a08e6b397b047bc88010c",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2018-12-18",
+      "locator": "Intraocular gas and interaction with nitrous oxide; Advice and recommendations 1-2",
+      "scope_note": "Safety alert actually read; shared gas mechanism applies to retinal detachment and macular hole. No gas duration, ischemia-minute or concentration threshold imported."
+    },
+    {
+      "source_id": "b1-acute-retina-asrs",
+      "url": "https://www.asrs.org/patients/retinal-diseases/6/retinal-detachment",
+      "source_metadata_sha256": "51a8f7b1eae50b5a2c79a15743b755925cbb0a14a26ca42ef7d956b127d1d8b5",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": null,
+      "locator": "Symptoms; Causes; Risk factors; Diagnostic testing; Treatment and prognosis",
+      "scope_note": "Authored Retina Health Series, editor John T. Thompson MD; no detached-retina outcome rate copied."
+    },
+    {
+      "source_id": "b1-acute-retina-asrs-complex",
+      "url": "https://www.asrs.org/patients/retinal-diseases/34/complex-retinal-detachment",
+      "source_metadata_sha256": "38d5d0050cd45700e3186751b2926dcb6fc5e90777527f4a8fed6afe891f9dd3",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": null,
+      "locator": "Causes; Diagnostic testing; Treatment and prognosis",
+      "scope_note": "PVR mechanism and repair failure corroborate Moorfields. Same ASRS writing group as general ASRS page."
+    },
+    {
+      "source_id": "b1-acute-retina-msd",
+      "url": "https://www.msdmanuals.com/professional/eye-disorders/retinal-disorders/retinal-detachment",
+      "source_metadata_sha256": "50e8a8840f9fb027df238988f1cff4c721bacf65e89b4555db796de193c65e26",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2026-06 full review/update",
+      "locator": "Etiology; Diagnosis; Treatment, final nonrhegmatogenous paragraphs",
+      "scope_note": "Sonia Mehta MD; peer review Sunir Garg MD. Cites AAO 2020 Preferred Practice Pattern as upstream; current page is independent explanatory writing, not independent trial evidence."
+    },
+    {
+      "source_id": "b1-acute-retina-glos-drops",
+      "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/eye-drops-ghpi0067/",
+      "source_metadata_sha256": "d42aca984f2f81d04414ce011110d72da61d8b2c4e8393cf8865127b4b21adbd",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": null,
+      "locator": "Before using; Remember",
+      "scope_note": "No-sharing, wash-hands, prescribed-course and possible irritation/allergy read. Do not generalize this leaflet into a command to continue a medicine despite a serious adverse reaction."
+    },
+    {
+      "source_id": "b1-acute-retina-leeds-anaesthetic",
+      "url": "https://www.leedsth.nhs.uk/patients/resources/you-and-your-anaesthetic/",
+      "source_metadata_sha256": "865ea0b8c6936f80af0e585e8528db72cb6bbf6868f38ee1e60e135d03551299",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": null,
+      "locator": "Types; Before coming; On the day/Diabetes/Medication; Meeting your anaesthetist",
+      "scope_note": "Surgical planning, fasting and medication coordination read. No universal fasting hours, preoperative weight loss or delay of urgent retinal surgery imported."
+    },
+    {
+      "source_id": "b1-acute-retina-mayo-treatment",
+      "url": "https://www.mayoclinic.org/diseases-conditions/retinal-detachment/diagnosis-treatment/drc-20351348",
+      "source_metadata_sha256": "434fd8aaa3ae1399b3a240a0d723b3b1423cff45327fa237433c7925f02680e7",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2024-09-27",
+      "locator": "Diagnosis; Retinal tears; Retinal detachment; Preparing appointment; What to expect",
+      "scope_note": "Independent Mayo Clinic editorial text cites NEI, ASRS, AAO and textbooks. Shared upstream acknowledged, no false claim of independent experimental replication."
+    },
+    {
+      "source_id": "b1-acute-retina-nhs-floaters",
+      "url": "https://www.nhs.uk/symptoms/floaters-and-flashes-in-the-eyes/",
+      "source_metadata_sha256": "f28b46b5a0e1127b0072d47c975e0fcbfdbfe9e860789649545923c75ce80f1f",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2023-06-20; review due 2026-06-20",
+      "locator": "Symptoms; Urgent advice; What happens",
+      "scope_note": "Stable uncomplicated floaters versus new changes distinguished. Review overdue, not inferred withdrawn."
+    },
+    {
+      "source_id": "b1-acute-retina-moorfields-floaters",
+      "url": "https://www.moorfields.nhs.uk/eye-conditions/flashes-and-floaters/diagnosis-and-treatment",
+      "source_metadata_sha256": "02cc35c59021a207ec3c99121d000b002162ef255e456eb138c1afa2fd40e2ce",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": null,
+      "locator": "Treatment for flashes and floaters",
+      "scope_note": "Stable one/two longstanding floaters and new-onset urgent assessment read; no symptom-based diagnosis asserted."
+    },
+    {
+      "source_id": "b1-acute-retina-diabetes-surgery-sussex",
+      "url": "https://www.uhsussex.nhs.uk/resources/your-diabetes-and-your-surgery-2/",
+      "source_metadata_sha256": "43967231303f8594137c15f3e16fb90c0a7735db98d58a60494899fb3e11b5dc",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2023-07-13",
+      "locator": "What to expect; After operation; Plan for surgery",
+      "scope_note": "Local Brighton/Hove and Haywards Heath patient leaflet. Only coordinated fasting/medicines/glucose checks retained. Specific drug-stop schedules not transferred."
+    },
+    {
+      "source_id": "b1-acute-retina-vitrectomy-nei",
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/retinal-detachment/vitrectomy",
+      "source_metadata_sha256": "e6262dd76355eeee43823a67a5c8e5e2727dac28d26b95a9292206c7372bd5a9",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2024-12-06",
+      "locator": "What happens; How long to recover",
+      "scope_note": "Eye drops purpose, review, activity consultation, gas posture/flight/altitude read."
+    },
+    {
+      "source_id": "b1-acute-retina-asrs-imaging",
+      "url": "https://www.asrs.org/patients/advanced-retinal-imaging",
+      "source_metadata_sha256": "727f653d48de4d6734c3274f8602ef567df849c9b835cbeecf803bb2f3ef78d1",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": null,
+      "locator": "Dilated retina exam; OCT; Ophthalmic ultrasound; final accompaniment paragraph",
+      "scope_note": "Ordinary test explanation and postdilation accompaniment directly supported. No test sensitivity or standalone diagnostic threshold claimed."
+    },
+    {
+      "source_id": "b1-acute-retina-nei-dilation",
+      "url": "https://www.nei.nih.gov/eye-health-information/healthy-vision/finding-eye-doctor/get-dilated-eye-exam",
+      "source_metadata_sha256": "6cca6504c41cc96b5ba19bb41af2c79fe2ad0e53981a18dbd389b235bb50d5d5",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2025-11-26",
+      "locator": "How often; How dilation works; What happens after",
+      "scope_note": "Blur/light sensitivity and ride home supported. No population-specific screening interval copied."
+    },
+    {
+      "source_id": "b1-acute-retina-nei-diabetes",
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/diabetic-retinopathy",
+      "source_metadata_sha256": "e96d395f19454a5087ab60d497cdfa4e366fcd0ce3b92f7cfe327571e77302f7",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": null,
+      "locator": "Symptoms; Other problems; Prevention; Treatment",
+      "scope_note": "Bleeding into vitreous versus scar traction, systemic care alongside eye care read; numeric frequency/risk claims not transferred."
+    },
+    {
+      "source_id": "b1-acute-retina-cleveland",
+      "url": "https://my.clevelandclinic.org/health/diseases/10705-retinal-detachment",
+      "source_metadata_sha256": "b5301814961bea03fba401d6c5b70b3aa4f396696b37705b04bdce98a33d25c4",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2026-07-16 medically reviewed",
+      "locator": "Symptoms; causes; urgent contact; Outlook/Prognosis; References",
+      "scope_note": "Timing before treatment, starting vision and complications supported; cites NEI, ASRS, AAO and StatPearls as common upstream."
+    },
+    {
+      "source_id": "b1-acute-retina-nhs-vision",
+      "url": "https://www.nhs.uk/conditions/vision-loss/",
+      "source_metadata_sha256": "274722a33f61d897e7d7cc3c559e5928133c0260efd69827c0e6e72cfcb968fd",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2025-08-28",
+      "locator": "Immediate action; Information after immediate action",
+      "scope_note": "Sudden visual loss emergency route and no self-driving directly read; UK transport number is regional operational detail."
+    },
+    {
+      "source_id": "b1-acute-retina-asrs-diabetes-guideline",
+      "url": "https://www.asrs.org/content/documents/managementnonproliferativeproliferativedrwithoutdiabeticmacularedema.pdf",
+      "source_metadata_sha256": "8b191f8c6860e4dc7f80a336f1ab305ce6be190e2b75d564fddfbd42199dfd41",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2020; DOI 10.1177/2474126419893829",
+      "locator": "PDF page 1 Systemic Optimization; page 2 Glycemic Goals/Blood Pressure Targets",
+      "scope_note": "Yonekawa et al. independent guideline narrative cites ADA and DCCT/UKPDS. Only continuing systemic care is assessed; dated numeric goals are not imported."
+    },
+    {
+      "source_id": "b1-acute-retina-leeds-drops",
+      "url": "https://www.leedsth.nhs.uk/wp-content/uploads/2024/04/Eye-drop-diary.pdf",
+      "source_metadata_sha256": "2ff44bcbd5a41dafc28b6a4e737064e66830130e85188ba463372ba8a2a1cbb1",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": null,
+      "locator": "One-page PDF items 1-8 and appointment field",
+      "scope_note": "Hygiene/no-sharing read; its generic bottle lifetime is not made universal."
+    },
+    {
+      "source_id": "b1-acute-retina-types-nei",
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/retinal-detachment/types-and-causes-retinal-detachment",
+      "source_metadata_sha256": "ef2fcc2c5739cb8c4b79ae2aa81eb35001359dbdffda9e7163f2736826c71b40",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2024-12-06",
+      "locator": "All three type sections",
+      "scope_note": "Mechanisms and disease scope actually read; same NEI group."
+    },
+    {
+      "source_id": "b1-acute-retina-surgery-nei",
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/retinal-detachment/surgery-retinal-detachment",
+      "source_metadata_sha256": "58d02a2a84e972bb03c62702288a8c6cb66fb58cd013d0ace9b54800869f96be",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2024-12-06",
+      "locator": "Three surgery types; pneumatic retinopexy; buckle; vitrectomy link",
+      "scope_note": "Core surgery choice explained. The short vitrectomy paragraph itself does not describe silicone oil; that detail is in the linked NEI vitrectomy page."
+    },
+    {
+      "source_id": "b1-acute-retina-aao-wiki",
+      "url": "https://eyewiki.aao.org/Retinal_Detachment",
+      "source_metadata_sha256": "51f67f91b3536775fc388a527fb38fd7f4d30440c0e11d35a1ae70398246a1ff",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "initial_metadata_only_then_timeout",
+      "locator": null,
+      "scope_note": "Initial open reported 313 lines but did not return the body. Subsequent find/open returned internal error or timeout. No medical support is independently confirmed from this source in this report. Prior interrupted reviewer reported an AI-use notice; that notice was not recovered here, so it is not falsely recorded as newly read."
+    },
+    {
+      "source_id": "b1-acute-retina-diabetes-surgery-medline",
+      "url": "https://medlineplus.gov/ency/patientinstructions/000702.htm",
+      "source_metadata_sha256": "67c82efe53b9e5c6e391dc00fd5c1d10fc030138fb3fd6797d6254dd43e58617",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "page_retrieved_license_notice_recorded",
+      "observed_version": "2025-04-24",
+      "locator": "Copyright and use terms, page footer",
+      "scope_note": "A.D.A.M., not NIH-authored content. Footer specifies restrictions on automated extraction and AI use. No page body is copied into this report; medical truth and source reuse permissions are distinct. Sussex/Leeds already support the bounded perioperative coordination wording."
+    }
+  ],
+  "new_source_reads": [
+    {
+      "url": "https://www.nhs.uk/medicines/dexamethasone-eye-drops/side-effects-of-dexamethasone-eye-drops/",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2022-07-21; due 2025-07-21",
+      "locator": "Common/serious side effects",
+      "scope_note": "Possible drug-related persistent visual change and pressure risk; current NHS page overdue review, checked against product label. No dose or frequency copied."
+    },
+    {
+      "url": "https://www.nhs.uk/medicines/dexamethasone-eye-drops/how-and-when-to-use-dexamethasone-eye-drops/",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "2022-07-21; due 2025-07-21",
+      "locator": "How long to use eye drops",
+      "scope_note": "For prolonged use, doctor may inspect pressure and infection and control taper. Not a universal follow-up interval."
+    },
+    {
+      "url": "https://www.medicines.org.uk/emc/product/14753/smpc",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "text 2024-08-16; emc 2024-09-02",
+      "locator": "4.1;4.4;4.8",
+      "scope_note": "UK Puradex/dexamethasone SmPC, RAFARM marketing authorization/Aspire supplied label: anti-inflammatory role, pressure/infection warnings. Not a worldwide approved-drug recommendation, not a dose instruction, not an independent trial from NHS."
+    },
+    {
+      "url": "https://www.moorfields.nhs.uk/for-patients/information-hub/how-to-use-your-eye-drops",
+      "accessed_at": "2026-10-02",
+      "retrieval_status": "actual_primary_passages_read",
+      "observed_version": "approved 2018-01; review date 2020-01",
+      "locator": "Intro; symptoms paragraph; Top tips; authors",
+      "scope_note": "Sarah Thomas/Fiona Chiu pharmacy guidance: no sharing, trouble administering and worsening symptoms consultation; no fixed bottle life transferred."
+    }
+  ],
+  "source_conflicts_and_limits": [
+    {
+      "topic": "Silicone oil and flight",
+      "finding": "CUH says flying with silicone oil is safe; Moorfields detachment page gives a two-week restriction unless consultant clears. Current text restricts only intraocular gas, so it does not synthesize these local oil instructions into a universal rule."
+    },
+    {
+      "topic": "License and access",
+      "finding": "A.D.A.M. footer restrictions are recorded independently of medical support. EyeWiki follow-up retrieval failed in this pass; prior reviewer license observation is not relabeled as a new verified read. No source body was copied into the report."
+    },
+    {
+      "topic": "Currency",
+      "finding": "NHS retinal/floaters and dexamethasone pages display passed review-due dates. These dates are recorded; core statements were corroborated, and no current dosing/approval claim is inferred."
+    }
+  ],
+  "section_reviews": [
+    {
+      "section": "summary",
+      "content_sha256": "a2c7eb4ceff14e3fa41174f7c564a98fb65221c6d244bbdb173f598b81d3da88",
+      "editorial_record_sha256": "60b32fbedf8a81307c4d5c8154c3cef2afa694c18a9f91eb895b03b571ebd25f",
+      "claim_reviews": [
+        {
+          "id": "summary-1",
+          "text_sha256": "1d1563d6e4a2d6f82eac1ecae42eb290268bbc2c533936b384fc623f9aae226a",
+          "author_claim_sha256": "73fe6ca7c6013809225cf2535564318b23e34bcd6ad5f2805de718aed879f925",
+          "author_kind": "risk",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers."
+        },
+        {
+          "id": "summary-2",
+          "text_sha256": "93411439a62b09b27faf9fe9eac3efd18dab9770a4d345fd12a3c7928bf71253",
+          "author_claim_sha256": "acbb29bbbf9e9f5f21680c345eaa9c72e1116338afb67b40aefc2cb8f75c8245",
+          "author_kind": "risk",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers."
+        },
+        {
+          "id": "summary-3",
+          "text_sha256": "519e84ca764e0d15805cff7fda68f4f6977177b5bf2498e756e4cb6cb27bf209",
+          "author_claim_sha256": "8010592fc477e1b13e3493890d17ae3e80f9ee63ba0db8c56306aafdc0971f61",
+          "author_kind": "risk",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers."
+        },
+        {
+          "id": "summary-4",
+          "text_sha256": "95c33b87a752a7ce0d5f00957b56a4c5d60af8c1c5bb02a602b5e013a8cc0617",
+          "author_claim_sha256": "3fec39a82973e0253a747f11c3275b10e017144220c044061e73c9d897d81680",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers."
+        }
+      ]
+    },
+    {
+      "section": "causes_risks",
+      "content_sha256": "0e96adf7742b375e78711689673b8b22d2fac8f48d1d3613382163be858e5fd0",
+      "editorial_record_sha256": "b298894cffec994d18eb2dafb9acadda28ac52a526c1db1fb3901eea8b284c90",
+      "claim_reviews": [
+        {
+          "id": "causes_risks-1",
+          "text_sha256": "37359bb94c6ca789199b445e74eea167424eed18ff401b16fad9671ec016e8e4",
+          "author_claim_sha256": "398ef7ca0a34022bc697e21556c833d6906d7150ac1da48f664ddae35aa95162",
+          "author_kind": "explanation",
+          "decision": "supported_explanation",
+          "finding_ids": [],
+          "assessment": "Direct primary support for an ordinary explanation; no numeric diagnostic threshold, treatment recommendation or claimed test performance needs a second writer. Diagnosis history and diabetic bleeding are no longer treated as unsupported solely because one source states the detail."
+        },
+        {
+          "id": "causes_risks-2",
+          "text_sha256": "d7e70538289cb761df63d5fcde2ba43b4ce028d46441a88606d518eb58b7bce8",
+          "author_claim_sha256": "6e4c46d0bcc6ecbea0230fea26b84610100837cae1a2d4e17ed234b4e867e0de",
+          "author_kind": "explanation",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers."
+        },
+        {
+          "id": "causes_risks-3",
+          "text_sha256": "b1b6983de54347bfeb511096bbe6428e7f2d2c389cce45a6bcb25ff0f6606143",
+          "author_claim_sha256": "9a5709e888e05ba9771e335f0d58f42a4b681eecd9e6ea217c2e30ba44766839",
+          "author_kind": "explanation",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers."
+        },
+        {
+          "id": "causes_risks-4",
+          "text_sha256": "48ce8ef996880a49b18a3fc411328498ff9f158e74df3b2984ac3bd6d5eaad48",
+          "author_claim_sha256": "f3eef0ffb2317fb03a8572a3db6fa84a1c27372d6788647d5586f315517c7589",
+          "author_kind": "risk",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers."
+        }
+      ]
+    },
+    {
+      "section": "red_flags",
+      "content_sha256": "24ce4626383e5bfd6a1e54ad71c534d484a3bccf8714a4d7da890d594feb58d5",
+      "editorial_record_sha256": "8788e69b8b7484d606769bf938c31fa147ac506c27779714b9f8236496115cc5",
+      "claim_reviews": [
+        {
+          "id": "red_flags-1",
+          "text_sha256": "2f31b1a1ba7dce911b487eee8428e6691b6f31dc66c5af21ace202d944ceb33e",
+          "author_claim_sha256": "c966732720ffb15b1e04f8acb9b9ed0d78ad1224c7baf4fc626d2b3832d38ec6",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers."
+        },
+        {
+          "id": "red_flags-2",
+          "text_sha256": "faa86cbc51c38e026c17657ca09b3dd63d1df3918b51cc14f0abc1ecdb994069",
+          "author_claim_sha256": "ee4a05591132776002b9946205e9c242d51d497defe990dc5a02b8e8f7cf7d8d",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers."
+        },
+        {
+          "id": "red_flags-3",
+          "text_sha256": "6bc064aade270c2820487b2ef42ae46a5c2969ab9aba6b13c9440c07d4faae16",
+          "author_claim_sha256": "d03384d59daf9abd5ea2b74078b1f12a8b9a88eac573372d6a23974267a883f3",
+          "author_kind": "action",
+          "decision": "needs_binding_revision",
+          "finding_ids": [
+            "RR02"
+          ],
+          "assessment": "The worsening-redness component is in NHS detached-retina Important, and Moorfields macular-hole immediate-contact list after surgery; it is absent from Leeds Contact us if and the Moorfields detached-retina worsening sentence. The acute action is reasonable, but the current full-claim locator pairing is inaccurate. See RR02."
+        },
+        {
+          "id": "red_flags-4",
+          "text_sha256": "eaec0d5687fd5037acbf449610550991f3e734a713f4e88a9c27aa528fcd524a",
+          "author_claim_sha256": "f5a54d9f58ff5eee454ddf8b531b5b52caf6e8b039ce242f6c37eafb68bc68e8",
+          "author_kind": "action",
+          "decision": "supported_regional_action_single_source",
+          "finding_ids": [],
+          "assessment": "NHS vision-loss Immediate action/Information directly supports the complete transport advice. It is operational regional advice, not an invented medical threshold; attribute the NHS context or retain a single-source designation. This report does not claim a second direct transport source."
+        }
+      ]
+    },
+    {
+      "section": "care",
+      "content_sha256": "12ca9699e2c11ff51ecb419a6aacb008d9f000964a9c9cd772bb488dcf25f6b3",
+      "editorial_record_sha256": "48efb446667d3d8eee0ba4e8535247ac24744d5d4362045e28b7bb1349e2b6e2",
+      "claim_reviews": [
+        {
+          "id": "care-1",
+          "text_sha256": "5ed4567e2c967904f394d24a8702fccc5834ce6786f2b75519b1a7e7e539c2eb",
+          "author_claim_sha256": "c32b17aed62149c09eaa3b692ef4bc2277d0e5795b8661437ed8df93843bfae9",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers."
+        },
+        {
+          "id": "care-2",
+          "text_sha256": "557ceded5ff20d4877ddac5bff9e10271d666b78f8071e176b1576616a9af790",
+          "author_claim_sha256": "b0dc55d9abe46660011deb9881b2f68a13df21ecdc6101f1bd4cd9fdaaece53b",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers."
+        },
+        {
+          "id": "care-3",
+          "text_sha256": "9173fd9b1f0de8d5ac5f61cc9266d2315a33f7a4ce6f6845363c7a302176179e",
+          "author_claim_sha256": "b1ade8b9fb3d355337ca4701d19ea961314aa4b5f7c4d9b33f4e69c35ebd4922",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers."
+        },
+        {
+          "id": "care-4",
+          "text_sha256": "b133cc146003ea66407c91306190a8bd4c0ef4ae455fed10f2fb753878ecf0bf",
+          "author_claim_sha256": "b923aedb88ca9da2a39d3b21886dc97619fdef118273561b1e9ac1f2868f7631",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Current primary passages support the medical content and stated conditions. Regional service examples are attributed rather than treated as worldwide service numbers."
+        }
+      ]
+    },
+    {
+      "section": "diagnosis",
+      "content_sha256": "1447ba31271468c794c3f4bbd3f8ca31ac2a6fe29f7ff6732e8876b6c73b6f62",
+      "editorial_record_sha256": "cd2eda4dbbd41cbba0181d75cc1351d2a4daec5894064b57dd6289502cd376c5",
+      "claim_reviews": [
+        {
+          "id": "diagnosis-1",
+          "text_sha256": "69ec3c88c2f9baed2f66fcf04224b602d414a3a08c7c3f78b4b769aa1c9d19da",
+          "author_claim_sha256": "a4d449dc5f8514d9492c4e3b2a8e1babda8bfd38542d776b54338b4ddde006b8",
+          "author_kind": "explanation",
+          "decision": "supported_explanation",
+          "finding_ids": [],
+          "assessment": "Direct primary support for an ordinary explanation; no numeric diagnostic threshold, treatment recommendation or claimed test performance needs a second writer. Diagnosis history and diabetic bleeding are no longer treated as unsupported solely because one source states the detail."
+        },
+        {
+          "id": "diagnosis-2",
+          "text_sha256": "5cdeaa20fbcb5c8e7fb986c82f84fc2dfc2e8e281e770ac25a2c2405a2ce8ee4",
+          "author_claim_sha256": "686a571564b277a523e6bfc788cde9c0b7f69610ea2e3e79ee094a39933f6a2e",
+          "author_kind": "explanation",
+          "decision": "supported_explanation",
+          "finding_ids": [],
+          "assessment": "Direct primary support for an ordinary explanation; no numeric diagnostic threshold, treatment recommendation or claimed test performance needs a second writer. Diagnosis history and diabetic bleeding are no longer treated as unsupported solely because one source states the detail."
+        },
+        {
+          "id": "diagnosis-3",
+          "text_sha256": "83a8fc3b9a01e5bfbe86c459eb304cdc86aca613eb70069a602682a94909dad2",
+          "author_claim_sha256": "bd6d582f735915142aa65b530d848f2e837f26d21357ce594dce70e3b5d95f64",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "diagnosis-4",
+          "text_sha256": "09a8687dec5920f49f0a5b9e49094cf9f301e9cb91dbd67bef7630a70bdb2364",
+          "author_claim_sha256": "febbb81d43c37673ea0909a720a241114343d6bee56675b8c2bc9fd2b869e401",
+          "author_kind": "explanation",
+          "decision": "supported_explanation",
+          "finding_ids": [],
+          "assessment": "Direct primary support for an ordinary explanation; no numeric diagnostic threshold, treatment recommendation or claimed test performance needs a second writer. Diagnosis history and diabetic bleeding are no longer treated as unsupported solely because one source states the detail."
+        },
+        {
+          "id": "diagnosis-oct",
+          "text_sha256": "41a6b4ea0471fa2fdeadc47b251dc3c0795df83500c1fe1981f93192c44f2b5f",
+          "author_claim_sha256": "4d4096d815a29c9122500de38c724a67e6eb4c4f73088c2376b02c7f8fa4921e",
+          "author_kind": "explanation",
+          "decision": "supported_explanation",
+          "finding_ids": [],
+          "assessment": "Direct primary support for an ordinary explanation; no numeric diagnostic threshold, treatment recommendation or claimed test performance needs a second writer. Diagnosis history and diabetic bleeding are no longer treated as unsupported solely because one source states the detail."
+        }
+      ]
+    },
+    {
+      "section": "differentials",
+      "content_sha256": "8e0b086cc744acc5f6050792d297fd4c3f01d8f2ee214f0b3af6d9576fa1c8cb",
+      "editorial_record_sha256": "25e2c166a45a1d3324a0fb503059acf38615f3cda0404b11e69afda1894dd936",
+      "claim_reviews": [
+        {
+          "id": "differentials-1",
+          "text_sha256": "0f8d0d32b5045ed7b2ad5885eb7ea1a799bc387ea3b346419c6e5d8b22169b2c",
+          "author_claim_sha256": "6b50b73018ea39c9a5b605e03963ff13d78f2bdacb44bb093d389c5804fc2da4",
+          "author_kind": "explanation",
+          "decision": "supported_explanation",
+          "finding_ids": [],
+          "assessment": "Direct primary support for an ordinary explanation; no numeric diagnostic threshold, treatment recommendation or claimed test performance needs a second writer. Diagnosis history and diabetic bleeding are no longer treated as unsupported solely because one source states the detail."
+        },
+        {
+          "id": "differentials-2",
+          "text_sha256": "b782e6c35196e16f7cb7d331619b90116309454179239cad6179ee5eba89e6b7",
+          "author_claim_sha256": "6f1debbe480c2d302cfab35379d821afadc67ccf6a0a94b3b43181640d14d2ac",
+          "author_kind": "action",
+          "decision": "needs_binding_revision",
+          "finding_ids": [
+            "RR02"
+          ],
+          "assessment": "Urgent reassessment is cross-supported by Mayo/Moorfields. Add the already-read NEI Types/Rhegmatogenous aging-vitreous paragraph or NHS Causes to the definition/mechanism component; the current two locators primarily cover urgency."
+        },
+        {
+          "id": "differentials-3",
+          "text_sha256": "7b39ec71dd90a29cbef5a6e272d17cb446ac2b23ee0c3345c71a2728675a347c",
+          "author_claim_sha256": "2bc7879b417c01c96a084c6826dcea0d2d6aa9febd0e3d9e15d6dde2cc1c8f5f",
+          "author_kind": "benefit",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "differentials-4",
+          "text_sha256": "f023bcdff8bf00eedc442a9e5101f20b56b35b9842ea3975c7f0fd3da43a1319",
+          "author_claim_sha256": "c9608b77a4cf3bbbbaa5113993a1f26288bf9eeed32bd362983835da22ca5c92",
+          "author_kind": "risk",
+          "decision": "supported_explanation",
+          "finding_ids": [],
+          "assessment": "Direct primary support for an ordinary explanation; no numeric diagnostic threshold, treatment recommendation or claimed test performance needs a second writer. Diagnosis history and diabetic bleeding are no longer treated as unsupported solely because one source states the detail."
+        },
+        {
+          "id": "differentials-sudden-loss",
+          "text_sha256": "35856a823f7f1a8b92cfe51e02937e874be456c3d8e409b1e12d7dedc26aa723",
+          "author_claim_sha256": "91457148b3469a2de3c7fa18b970e1a0f04621720279c2c3a7506b206014ba91",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        }
+      ]
+    },
+    {
+      "section": "treatment",
+      "content_sha256": "9477f614ff19b1aeb75225319aa7d805e4fc24a1f00c097f1e8094d9ea8cb33d",
+      "editorial_record_sha256": "bf45991f6da2a90b8e5fd254dccd167440d30bd236b65022645c1fc437c5e9e5",
+      "claim_reviews": [
+        {
+          "id": "treatment-1",
+          "text_sha256": "410d0f32ecb0a128f4f925507d558bde42378b43433df1ac0bc2371c87086f65",
+          "author_claim_sha256": "194c295be80a28cdd697d882d4d4663b628884317e9318e216607f3124f780a2",
+          "author_kind": "benefit",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "treatment-2",
+          "text_sha256": "194c5add2f5490a5d926f0f721f6761e02781150731dccf35c549b852cd7dc64",
+          "author_claim_sha256": "2009f98b3c689d907c55e54dba15ab551be00918abc8cc0c0e8363047b1e91ae",
+          "author_kind": "benefit",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "treatment-3",
+          "text_sha256": "aae47b0ef84313c7c781471119d1fdae855a047ad28f536ba4555c870e9be110",
+          "author_claim_sha256": "4f7592e66d4d69f1d9d51cdb425c01893c004da4d0acac9420012574679e894b",
+          "author_kind": "benefit",
+          "decision": "needs_binding_revision",
+          "finding_ids": [
+            "RR02"
+          ],
+          "assessment": "Silicone-oil use is directly in CUH internal splint and NEI Vitrectomy What happens, not in the currently bound short NEI Surgery vitrectomy-link paragraph. Bind the existing vitrectomy page or Mayo Retinal detachment/vitrectomy to that component."
+        },
+        {
+          "id": "treatment-4",
+          "text_sha256": "d00eaeb2ceef4d85b1f774e59812036f32c6bf9dd6d3c78736eb465c1f8d7fbb",
+          "author_claim_sha256": "93696b4ee4e5476529a139d8061b300632d284b7b679f75b23ce8adff7aab674",
+          "author_kind": "risk",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "treatment-nontear",
+          "text_sha256": "affb3536c8effeda46d898901ca70b10c6ccc484767a09ba0abbd0fe06473253",
+          "author_claim_sha256": "bcad52a46ae69cba53c48e24890093996355062f2317d78bd263e4b78a9b2431",
+          "author_kind": "benefit",
+          "decision": "partial_single_source_treatment",
+          "finding_ids": [
+            "RR03"
+          ],
+          "assessment": "MSD Treatment directly supports subtype-specific inflammatory/nontear treatment. EyeWiki medical body could not be independently retrieved in this pass. Etiology pages do not substitute for a second independently authored treatment source."
+        }
+      ]
+    },
+    {
+      "section": "medications",
+      "content_sha256": "6a9e6faf4a0fc708253f9abb969225f5686e3e28fd7eebf252dc1cfbc34edb10",
+      "editorial_record_sha256": "f46a46586ade94e115bb09a097b2376f03c7570a10d9787ecf2aaac666b261d9",
+      "claim_reviews": [
+        {
+          "id": "medications-1",
+          "text_sha256": "32f7f612991ff1a8c47e4a596ff569bf8cd3113d2017f545bad8837042791487",
+          "author_claim_sha256": "8db0e460d1eaae411ed4d66ec0329652496175698e9842d6fe0394f9ecf73505",
+          "author_kind": "explanation",
+          "decision": "supported_explanation",
+          "finding_ids": [],
+          "assessment": "The explanatory boundary is consistent with actual sources; it does not establish an individual treatment plan."
+        },
+        {
+          "id": "medications-2",
+          "text_sha256": "d22dff506cf25c0be30d3deda8fafb2d8bebcf1c560203118b3e2c4778c8fbb2",
+          "author_claim_sha256": "baa521a0fbeecb9e61fe88766a9ed58a6886d02b5669af4f36452cbfa09cf456",
+          "author_kind": "explanation",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "medications-3",
+          "text_sha256": "10787ddeacb72c908872b99ab08845011296cc26470f2286498b4281ea562c96",
+          "author_claim_sha256": "c4a1596b2adcc132d36dc48db3f8e378a276b4317a1d88410eab59a03e26373c",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "medications-4",
+          "text_sha256": "a60569083cca7ec07001a5add41e74200524a2a35eb5668dc376f6531d981321",
+          "author_claim_sha256": "872908a41c04bd6c2816e8d4a2555c62b6ab9b3dec53f59e64da5cb2f95a1026",
+          "author_kind": "action",
+          "decision": "supported_action_with_editorial_link",
+          "finding_ids": [],
+          "assessment": "Hospital reassessment for worsening symptoms is cross-supported. Not self-escalating drops is a bounded editorial link, not a claim that all medicines share a fixed escalation rule; the explicit key drug-risk omission is separate RR01."
+        },
+        {
+          "id": "medications-drop-safety",
+          "text_sha256": "594f2e4e4a608197f55fd328a5104e9a1611c18153f2bce2838cc0090253c933",
+          "author_claim_sha256": "cdeabe039dc9130b9f9689a64354c77499d1fc906ba85e6132126f9323ad6ceb",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "No-sharing is directly stated by Gloucestershire and Leeds; CUH independently supports following the postoperative course until review. The wording still-required avoids claiming that a drug must be continued after a severe adverse reaction; the section needs the actual risk explanation in RR01."
+        },
+        {
+          "id": "medications-exudative",
+          "text_sha256": "e41ed62f7ec8e5ee138003759607bc12b6b451425019e20772823ab0d4c222e6",
+          "author_claim_sha256": "460a2e8bddc8fa3ae56e1e9846911d8e0b0c58140c34a835bacf403bb177e20e",
+          "author_kind": "benefit",
+          "decision": "partial_single_source_treatment",
+          "finding_ids": [
+            "RR03"
+          ],
+          "assessment": "MSD Treatment directly supports subtype-specific inflammatory/nontear treatment. EyeWiki medical body could not be independently retrieved in this pass. Etiology pages do not substitute for a second independently authored treatment source."
+        }
+      ]
+    },
+    {
+      "section": "diet",
+      "content_sha256": "e16f8c21b68ed2dfb855f79d2b5f3cf0dee8db4a0a607f207b6b5808fe3bff44",
+      "editorial_record_sha256": "336554bb75f7ae02d59cc14b12f3bddcd817d6c5c242e06b7ed4c1ee934a8635",
+      "claim_reviews": [
+        {
+          "id": "diet-1",
+          "text_sha256": "b45ec430c80ee1f71116c75965d41d106f6d258f0112b2e02c69f9a9b9385f17",
+          "author_claim_sha256": "928932d7fd5d9ffacaea3f8daca08a34d4115201777247ab782167e92f184f83",
+          "author_kind": "explanation",
+          "decision": "supported_bounded_editorial_statement",
+          "finding_ids": [],
+          "assessment": "The cited sources describe surgery and perioperative care. The wording describes that source scope, not a systematic trial finding disproving every diet. Emergency action is independently supported."
+        },
+        {
+          "id": "diet-2",
+          "text_sha256": "5368190e1684fde939f4dd2baa91102dbd6f6c2dbd65cca292ccee6afcfe4690",
+          "author_claim_sha256": "a8d1b0f489d8caef87882801ebac70559980527cbb908ca2e86eac22aa20d336",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Moorfields specifies general anesthesia or sedation; Leeds gives case-specific surgical eating/drinking instructions. The common anesthesia preparation condition transfers; no macular-hole treatment outcome or universal fasting time transfers."
+        },
+        {
+          "id": "diet-3",
+          "text_sha256": "a3684450889c8af7c4bf22060d0bd041e21ce51583ab165ae60e3fb8f735e744",
+          "author_claim_sha256": "fba085aa20c5f7ab866e2a595a73a0322a068acc9c49642828732bf474b0d638",
+          "author_kind": "action",
+          "decision": "supported_action_with_scope_note",
+          "finding_ids": [],
+          "assessment": "Sussex and Leeds directly support coordinating personal fasting and diabetes medication plans. Sussex adds glucose checks. Asking the team to coordinate checks adds no testing interval or glucose threshold; two writers are not required for every administrative fragment. Restricted ADAM body need not be reused."
+        },
+        {
+          "id": "diet-4",
+          "text_sha256": "55ecfbe979886208bcf71cb06eb8d40ba1918bb7694e1f25f976283a0cc0dff3",
+          "author_claim_sha256": "2507be042a481726149ec9e66253a8c447a1668edc8c48fd4f8b340b5070f64a",
+          "author_kind": "action",
+          "decision": "supported_bounded_editorial_statement",
+          "finding_ids": [],
+          "assessment": "The cited sources describe surgery and perioperative care. The wording describes that source scope, not a systematic trial finding disproving every diet. Emergency action is independently supported."
+        }
+      ]
+    },
+    {
+      "section": "daily_care",
+      "content_sha256": "54b8fb06c12698725e2be0ec197aae5e999ddbed7abb8449ba76a1350624b555",
+      "editorial_record_sha256": "7d2571be8fb25ad4e193b25bf5efed5a5f8ebee6bbb2abd12f120182171a3810",
+      "claim_reviews": [
+        {
+          "id": "daily_care-1",
+          "text_sha256": "a2fe4b3842724f45b3c8093ee4d7f9575b70c539eddc51438b2770d36e05a193",
+          "author_claim_sha256": "aaf331b1684175810f1797e73793828d2744a00564448fe2ed5ef14146fbcbbc",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "daily_care-2",
+          "text_sha256": "5a312a3efa99e78de51444397eec20691261cf7af1e3bda0fde19d47941ee093",
+          "author_claim_sha256": "5d5475716914a86f372ed095dc64e8f0d551ff41170066a0262881fa606af714",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "daily_care-3",
+          "text_sha256": "e825d075ff37ea1469512daf83e8449b891419ea0f40c968d2f4022cea8a9ea1",
+          "author_claim_sha256": "0f36a69cbff4d01246bf9ad5e11e2de1081793687eca6d9b56c2aa6b855fddef",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "daily_care-4",
+          "text_sha256": "238e0dc8edb9696399394e0319b720e3e3bbcfb252283cf84487a39ada90f29d",
+          "author_claim_sha256": "45846c2d33b07b7bcbee6e8a2cd5c748c6b61f04c284e087c6cbccd1d328c8ae",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "daily_care-5",
+          "text_sha256": "abf7cecc26ab337e316d92657878330b3a81c5f23f34de79abe8fd9039ed92f2",
+          "author_claim_sha256": "96a928900d0e6985ef0702bb459c57fced74263fe70c37fc88603874bee5544d",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "daily_care-gas-warning",
+          "text_sha256": "ae3288c519b38581d98c17f4a9cec7fd747c0f6841c402201c3706b3e28524d3",
+          "author_claim_sha256": "70024a982cdb1a3bfde4b3242aab9699b35cc8aba600ed3d97abd455bf162158",
+          "author_kind": "risk",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "daily_care-gas-disclosure",
+          "text_sha256": "5ffefc42c2b3d625a22dbae83ab6504acecf25032a5f73d3f31c554f33524d7c",
+          "author_claim_sha256": "7837590cf23c5a21b7c392f2177c9d0993e2393d1e486453ecede5f5d436f7d3",
+          "author_kind": "action",
+          "decision": "supported_bounded_application",
+          "finding_ids": [],
+          "assessment": "RCOphth and Moorfields independently support avoiding nitrous oxide while intraocular gas remains. RCOphth explicitly includes ambulance/maternity/emergency staff and all treating staff; Moorfields explicitly includes dental work. Applying the same verified gas contraindication to those named settings is not a separate new clinical threshold. No dental procedure efficacy is inferred."
+        },
+        {
+          "id": "daily_care-dental",
+          "text_sha256": "0e5a9559227fc674bcd0cf2401d412b0049b484d7764b759269c71cbe103ebc9",
+          "author_claim_sha256": "808091c7c4a3dc8eb86f2f8482d2fd7aed96faa890fb4a8f71092029a90fb12c",
+          "author_kind": "action",
+          "decision": "supported_bounded_application",
+          "finding_ids": [],
+          "assessment": "RCOphth and Moorfields independently support avoiding nitrous oxide while intraocular gas remains. RCOphth explicitly includes ambulance/maternity/emergency staff and all treating staff; Moorfields explicitly includes dental work. Applying the same verified gas contraindication to those named settings is not a separate new clinical threshold. No dental procedure efficacy is inferred."
+        }
+      ]
+    },
+    {
+      "section": "special_populations",
+      "content_sha256": "f7e3bae008b0bea30365d12e4f18eff9da4894bbf2cefd37bfd52f6181a9df88",
+      "editorial_record_sha256": "c3c500760c6f6c0f8ee18614150a90807743159a2447bcadd1a409ae9eb76e56",
+      "claim_reviews": [
+        {
+          "id": "special_populations-1",
+          "text_sha256": "66f306ceea068838c8421990c237c9b3819c316353d3ccdb228e58a88d583fe4",
+          "author_claim_sha256": "d8c8a22d951e94512724e89157b529a0fcf4ffd3f18aa698dc28f4e439388a45",
+          "author_kind": "explanation",
+          "decision": "supported_explanation",
+          "finding_ids": [],
+          "assessment": "The explanatory boundary is consistent with actual sources; it does not establish an individual treatment plan."
+        },
+        {
+          "id": "special_populations-2",
+          "text_sha256": "3a58b63fbab831c3a3f88ca67e90e1e238d091ae811440f62a3b2e8ea2dd4637",
+          "author_claim_sha256": "66f2a08a60fd15791d4c10c2fc77cf04fadc8f3d30fcf6a4047b89796ffae5df",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "special_populations-3",
+          "text_sha256": "cb6313f0f23be63d1fbdb8f72b043791828ddb2846c69ad3b084be7c683358dc",
+          "author_claim_sha256": "4a9eb888c0b113abf04702fff1be1d989b028f25adb4437556e96735b05b9249",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "special_populations-4",
+          "text_sha256": "3c899ef5f6d44de9d24a38b6c310af756542c8b22bd568ce84dcecb7eaca036b",
+          "author_claim_sha256": "1a0f85c05ea87e39ed0aa43b9fff32f9e361d1b10c4a686e84fd9a5f772a3ab1",
+          "author_kind": "action",
+          "decision": "supported_practical_editorial_advice",
+          "finding_ids": [],
+          "assessment": "Asking the team for feasible help when administration or positioning is difficult is an ordinary care-coordination suggestion. Leeds recovery planning and Moorfields individualized posture support its basis; no new medical regimen is supplied."
+        }
+      ]
+    },
+    {
+      "section": "prognosis_followup",
+      "content_sha256": "f374ff0ebe1936cfea450de7b620247e5f4f6e1fe22caeff2160158bcc38b405",
+      "editorial_record_sha256": "3da94793f001010bd0129c0aa77742b0ad5252b85767536386a0552998175ebf",
+      "claim_reviews": [
+        {
+          "id": "prognosis_followup-1",
+          "text_sha256": "eb4bdace8161008c55e88fbed026462062955043bd6a139f80254b9c3196667a",
+          "author_claim_sha256": "c8c41b9479c4300be336cb1c4d193e1c982010448b0267c28a7d97423d9aaecd",
+          "author_kind": "risk",
+          "decision": "needs_binding_revision",
+          "finding_ids": [
+            "RR02"
+          ],
+          "assessment": "Macular involvement/starting vision are supported by ASRS/Moorfields, treatment delay by Cleveland. Scarring is supported by already-read Moorfields Further surgery and ASRS Complex Causes, but those locators must be bound here. Current EyeWiki duration/PVR locator was not re-read; use actual component locators or phrase time factor as time before treatment."
+        },
+        {
+          "id": "prognosis_followup-2",
+          "text_sha256": "eeb3b7615ebd8ad907e914b22cbc89c3873004043da05d9005b81f8de55c84e2",
+          "author_claim_sha256": "ca2fc19ab465a1537c24e7c039922d75d9772d7b38789a30c7757f4aab5af334",
+          "author_kind": "explanation",
+          "decision": "supported_explanation",
+          "finding_ids": [],
+          "assessment": "The explanatory boundary is consistent with actual sources; it does not establish an individual treatment plan."
+        },
+        {
+          "id": "prognosis_followup-3",
+          "text_sha256": "29947eddb50f1c89d168b4e69ad8e39f28c14f656afa9ae1b2b86a8833105127",
+          "author_claim_sha256": "e627cf4b142faa977f62dd64a95c5b51f997efa611ff540b28998ce8dda6cd2b",
+          "author_kind": "risk",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "prognosis_followup-4",
+          "text_sha256": "3354382c900eb63970dc40bd0dc8e27f70a54fd020db494fcff560d35c72a8e6",
+          "author_claim_sha256": "c2414952529effb32ed4c41a70f4f8ccfd590296c1a29a0c29f8e8648f8db269",
+          "author_kind": "action",
+          "decision": "needs_binding_revision",
+          "finding_ids": [
+            "RR02"
+          ],
+          "assessment": "The worsening-redness component is in NHS detached-retina Important, and Moorfields macular-hole immediate-contact list after surgery; it is absent from Leeds Contact us if and the Moorfields detached-retina worsening sentence. The acute action is reasonable, but the current full-claim locator pairing is inaccurate. See RR02."
+        }
+      ]
+    },
+    {
+      "section": "complications",
+      "content_sha256": "eeca270d2eefc9a73d66f19d400bee1739762c7c61a194e0f360413bda23a3a3",
+      "editorial_record_sha256": "1d40713dd851114466e245dec8104d56d1819a32bc58f135b8aa7ba0e4659d7c",
+      "claim_reviews": [
+        {
+          "id": "complications-1",
+          "text_sha256": "0cdc2c9ad88c28781bacd68a830c16cd5d341b1209c182e1f4319c2112f53b68",
+          "author_claim_sha256": "9338469b1423dcc32f3972a97a5d601b930930060087de835599c1a5545f6193",
+          "author_kind": "risk",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "complications-2",
+          "text_sha256": "a8ad109240c62f781da847df4b76b4b211970ded274cc1873ecc7b84dc9b9b41",
+          "author_claim_sha256": "b946f1ea5587c0c77255002d466a561665769845f5c3fc8f01e1c77795e11275",
+          "author_kind": "risk",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "complications-3",
+          "text_sha256": "3f12c4ba91a38fcb7323ad619a58620fcd242a27852fe7c1fc43fd2267034ed2",
+          "author_claim_sha256": "9c7474ae7ad659fd89c9038ccf1fcc363d7f5d36e3f7c7a734c59879a36e65ba",
+          "author_kind": "risk",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        },
+        {
+          "id": "complications-4",
+          "text_sha256": "251dba3f4bd9559ac7b28ddbb244cfdeba6008775fb8df2ec384b1965be7f84a",
+          "author_claim_sha256": "ff1da67c5acee9b351a7ac8fccb73e4969a0bcde93cf1357a1c9d3a8b4c98073",
+          "author_kind": "action",
+          "decision": "needs_binding_revision",
+          "finding_ids": [
+            "RR02"
+          ],
+          "assessment": "The worsening-redness component is in NHS detached-retina Important, and Moorfields macular-hole immediate-contact list after surgery; it is absent from Leeds Contact us if and the Moorfields detached-retina worsening sentence. The acute action is reasonable, but the current full-claim locator pairing is inaccurate. See RR02."
+        }
+      ]
+    },
+    {
+      "section": "prevention",
+      "content_sha256": "60a61f9919036e7c99c6c16b5dfb7cad8776b7363c892cd0512b99371facb7e7",
+      "editorial_record_sha256": "45b3c82a7afee63188c16bf2487e318d1d5ecea305055d878b11ce7873e90c1e",
+      "claim_reviews": [
+        {
+          "id": "prevention-1",
+          "text_sha256": "b9a04bfeb8e3db9e3f4baa573b57d4a50ef4f56896bceff488b5c18d73286150",
+          "author_claim_sha256": "1b0d06e834915f34abd9cc8516fe523b5b4f412719e2b7c72b53076f57f2d473",
+          "author_kind": "explanation",
+          "decision": "supported_bounded_editorial_statement",
+          "finding_ids": [],
+          "assessment": "NEI directly explains limits of preventing age-related detachment; urgent response is already cross-supported. No claim of a quantified preventive effect is made."
+        },
+        {
+          "id": "prevention-2",
+          "text_sha256": "2a84de7af1ac1722a0000a36f060b91df0b53ca775550645bb7f34868cece32b",
+          "author_claim_sha256": "94dfba8cf05c106c3c6d0fc57970a3250cd6c3cf598eba2792d7c8748a4fe713",
+          "author_kind": "action",
+          "decision": "partial_prevention_support",
+          "finding_ids": [
+            "RR04"
+          ],
+          "assessment": "NEI supports protective eyewear and regular dilated exams. EyeWiki was not independently readable here; high-myopia emphasis and exact serial-surveillance wording cannot be counted as newly cross-checked solely on its author locator."
+        },
+        {
+          "id": "prevention-3",
+          "text_sha256": "ed8ff274b802ae2b6367df39dba0cff1a391f997efd05fe0d7d703a6228ad170",
+          "author_claim_sha256": "2f550a2600d6bf0c08e87609765bd004995a1b6a15213f4b563adbfdf474c824",
+          "author_kind": "action",
+          "decision": "partial_prevention_support",
+          "finding_ids": [
+            "RR04"
+          ],
+          "assessment": "NEI supports protective eyewear and regular dilated exams. EyeWiki was not independently readable here; high-myopia emphasis and exact serial-surveillance wording cannot be counted as newly cross-checked solely on its author locator."
+        },
+        {
+          "id": "prevention-4",
+          "text_sha256": "6b8c2bb1cbe7e8a2250ea7fc4121665e1afecf8b54b180f4f1d954e0b02b0ad0",
+          "author_claim_sha256": "49af9fcb4a479f721b1948520596e7d51bad7d266e7489c09c9e45e6c1378023",
+          "author_kind": "action",
+          "decision": "supported_cross_checked",
+          "finding_ids": [],
+          "assessment": "Matched sources support the key action, mechanism or risk. Component-specific limits and shared upstream are recorded in source reads; no outcome rate, dosage or universal recovery duration is added."
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "RR01",
+      "priority": "P2",
+      "type": "missing_required_beginner_knowledge",
+      "sections": [
+        "medications"
+      ],
+      "issue": "用药节解释了术后眼药的用途和使用纪律，但没有区分常用类别，也未说明关键药物风险。",
+      "required_change": "用简短中文/英文解释抗炎激素眼药与抗感染药的不同作用；补充实际适用时的眼压升高、感染被掩盖或加重等关键风险，以及为何需要眼科复查。可用本报告新读的 NHS 地塞米松资料与英国 SmPC 交叉支持；不把英国某一制剂的剂量、批准人群或疗程套用到所有地区。保留恶化时联系医院的动作。",
+      "status": "open"
+    },
+    {
+      "id": "RR02",
+      "priority": "P2",
+      "type": "component_locator_mismatch",
+      "claim_ids": [
+        "red_flags-3",
+        "differentials-2",
+        "treatment-3",
+        "prognosis_followup-1",
+        "prognosis_followup-4",
+        "complications-4"
+      ],
+      "issue": "部分复合句已有可用原文，但绑定页面或定位没有覆盖该分句。",
+      "required_change": "按各 claim 的 assessment 修正已存在来源的精确定位；红眼警讯注明共用术后情境，气泡页不能带入黄斑裂孔疗效或固定头位。这个问题主要是证据绑定，不等于正文医学事实错误。",
+      "status": "open"
+    },
+    {
+      "id": "RR03",
+      "priority": "P2",
+      "type": "key_treatment_cross_check_gap",
+      "claim_ids": [
+        "treatment-nontear",
+        "medications-exudative"
+      ],
+      "issue": "渗出性炎症相关治疗本次仅由 MSD 实际确认；不能把病因介绍当作第二份治疗支持。",
+      "required_change": "补一份实际读取、独立编写且支持该治疗适用范围的专业材料，或收窄相应句子并如实保留单源缺口。不能为了通过删除非裂孔性病种的知识责任。",
+      "status": "open"
+    },
+    {
+      "id": "RR04",
+      "priority": "P2",
+      "type": "key_prevention_cross_check_gap",
+      "claim_ids": [
+        "prevention-2",
+        "prevention-3"
+      ],
+      "issue": "护目装备与风险相关复查的现有第二来源 EyeWiki 未能在本次复核中读到正文。",
+      "required_change": "对确实保留的预防行动补可读取的独立支持，或只保留有直接支持的范围并继续标记单源；不要求凭空增加检查频率或儿童/孕妇统一规则。",
+      "status": "open"
+    }
+  ],
+  "prior_findings_disposition": {
+    "R01": "Fixed the unsupported routine complication checklist by narrowing text; redness component binding still RR02.",
+    "R02": "Resolved: ultrasound and OCT purposes separated.",
+    "R03": "Mechanism scope corrected; second-source therapy gap remains RR03.",
+    "R04": "Core gas hazard resolved with RCOphth and Moorfields. Dental/ambulance are bounded contexts of same verified hazard.",
+    "R05": "Claim types now identify key actions/risks. Ordinary explanations do not require two writers automatically.",
+    "R06": "Stable-floater and dilation clauses supported. Acute transport has direct NHS regional support, accurately single-source.",
+    "R07": "Resolved: NEI diabetic symptoms, not traction locator, supports vitreous bleeding.",
+    "R08": "Concrete hygiene and no-sharing source passages available; assistance request is low-risk coordination. Drug-risk depth remains RR01.",
+    "R09": "Bounded perioperative coordination supported; no fixed fasting time or unsupported dietary efficacy claim.",
+    "R10": "Diabetes systemic care and PVR now have independent support; specific preventive-action gap remains RR04.",
+    "R11": "Recovery limits supported. Component locators for prognosis factors need RR02 correction.",
+    "R12": "Resolved by narrower symptom and source-scope language."
+  },
+  "next_step": "作者完成四组具体修订后，仅复核新增文本和改绑范围。保持 draft、非临床签审；不得以此报告直接增加 ICD 完整覆盖。"
+}
