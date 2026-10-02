@@ -6,7 +6,7 @@
 
 [GitHub 仓库](https://github.com/StarlightDamian/knowledge-healthcare) · [个人主页入口](https://www.zengyuwei.cn/home/)
 
-[English](README.en.md) · [本地网页](index.html) · [正文标准](docs/content-depth-standard.md) · [覆盖审计与补充计划](docs/coverage-audit-and-roadmap.md) · [使用/部署](docs/deployment.md) · [证据政策](docs/evidence-policy.md) · [本批候选验证记录](reports/p0-04-release-validation.json) · [最近公网记录](reports/p0-03-release-validation.json) · [全部病症优先清单](docs/icd-priorities/index.md)
+[English](README.en.md) · [本地网页](index.html) · [正文标准](docs/content-depth-standard.md) · [覆盖审计与补充计划](docs/coverage-audit-and-roadmap.md) · [使用/部署](docs/deployment.md) · [证据政策](docs/evidence-policy.md) · [本批验证与发布记录](reports/p0-04-release-validation.json) · [历史P0-03记录](reports/p0-03-release-validation.json) · [全部病症优先清单](docs/icd-priorities/index.md)
 
 ## 已经可以做什么
 
@@ -18,7 +18,7 @@
 
 ## 内容与来源状态
 
-以下为当前仓库计量；P0-04为本地候选，公网状态以 [P0-03实际发布记录](reports/p0-03-release-validation.json) 为准。
+以下为当前仓库计量；P0-04已发布并通过公网验收，见 [实际发布记录](reports/p0-04-release-validation.json)。
 
 | 项目 | 当前仓库状态 |
 |---|---|
@@ -35,7 +35,7 @@
 | 癌症地图 | 36 个中英知识单元；癌症统计分组与病理、分期、分子标志物分开解释 |
 | 全生命周期 | 8 组、20 个中英健康因素；6 个年龄段与孕产附加情境引用共用因素 |
 | 扩充清单 | **188** 个仅标题待办，与完整正文分开统计 |
-| 医学签审 / 完成逐项编辑核验的主题 | **0 / 31**；合计434节、1677项中英主张；P0-04新增5篇、扩写2篇，见 [候选验证记录](reports/p0-04-release-validation.json)；尚未证明公网发布 |
+| 医学签审 / 完成逐项编辑核验的主题 | **0 / 31**；合计434节、1677项中英主张；P0-04新增5篇、扩写2篇，见 [公网验收记录](reports/p0-04-release-validation.json)；已发布并通过公网验收 |
 | 全病种覆盖目标 | ICD-11 MMS 2026-01：冻结13,155个合格类别；完整核验覆盖131 / 13,155（约0.995819%），剩余13,024类；目标100%，95%为阶段里程碑；131条确认、2条部分、44条待裁定 |
 
 独立医学审阅、译文审核与危险提示规则的临床验证待完成。网页通过“内容与来源说明”和详情末尾的“来源与编辑信息”集中展示状态，每节保留参考链接。高级专业数据（如患病率、定量预后和地区药品批准）待整理，标为 `null / not_yet_curated`。
@@ -44,7 +44,7 @@
 
 历史P0-03批次：P0-03完成19个规范主题的独立编辑审核，保留原ID并逐叶裁定，见 [本批接受记录](reports/p0-03-acceptance.json)。全量P0共133个类别，97个已完整、36个继续待补；最初10项急危重正文缺口已补9项，一氧化碳中毒仍在后续清单。文章提及、父级名称或共同急救措施不自动算作完整覆盖。
 
-P0-04当前本地候选完成7个规范主题（新增5、扩写2），见 [接受记录](reports/p0-04-acceptance.json)。P0已完整130/133，剩余3个SAH类别（8B01.0、8B01.1、8B01.2）被阻断，未宣称全部完成；医学签审仍为0。
+P0-04已发布并通过公网验收，完成7个规范主题（新增5、扩写2），见 [接受记录](reports/p0-04-acceptance.json)。P0已完整130/133，剩余3个SAH类别（8B01.0、8B01.1、8B01.2）被阻断，未宣称全部完成；医学签审仍为0。
 
 已保存 [文案审查记录](reports/anti-defensive-writing-audit.md) 和 [冻结目录覆盖数据](reports/icd-coverage.json)。新增病种按冻结目录、急危重症、常见病症、其余类别、95%阶段复核和100%终点验收的顺序推进。完整目录逐项列于[专业优先清单](docs/icd-priorities/index.md)，可[下载全量CSV](reports/icd-priorities.csv)。
 

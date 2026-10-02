@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-10-03",
-  "publication_status": "local_candidate_not_yet_live",
+  "publication_status": "published_and_publicly_verified",
   "acceptance_record": "reports/p0-04-acceptance.json",
   "clinician_signoff": false,
   "checks": {
@@ -66,13 +66,111 @@
       "checked_at": "2026-10-02T21:46:37.602208+00:00"
     },
     "browser_http": {
-      "status": "pending"
+      "checked_at": "2026-10-03",
+      "url": "https://www.zengyuwei.cn/healthcare/",
+      "release_id": "rel-b31bceca0f479aeb9f469c132a2a9be6e9865eed3755625b494f69565df42ce7",
+      "runtime_commit": "95d3b1c50f1edeacd1416ff48df37775b5c68ac4",
+      "topics": [
+        "ischemic-stroke",
+        "neonatal-sepsis",
+        "ectopic-pregnancy"
+      ],
+      "content_hashes": {
+        "ischemic-stroke": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+        "neonatal-sepsis": "8415835412e41d21b6de4133aeffff35827d8f61337e60235c6aaff0fc82958f",
+        "ectopic-pregnancy": "ecc120da86779ad37409277012640c94bec04f48e298c8daaa1d49cc388eb94c"
+      },
+      "passed": 4,
+      "seconds": 17.906,
+      "checks": [
+        "All three canonical topics found through different second-level specialties;14 source-linked sections,danger first,chapter jumps and concentrated editorial panel",
+        "Three selections survive department/query changes;CN/EN comparison renders all14 complete fields and downloads exact22-column selected CSV",
+        "EN/Arabic preserve open detail,query,department and selection;English fallback,RTL,mobile long text and drawer work without horizontal overflow",
+        "Existing postpartum danger rule fires in CN/EN independently of eye filters and respects negation;search,age,temperature stay local;no off-origin request or browser error"
+      ],
+      "screenshots": [
+        "docs/screenshots/public-p0-04-desktop-zh.png",
+        "docs/screenshots/public-p0-04-desktop-en.png",
+        "docs/screenshots/public-p0-04-mobile-ar.png"
+      ],
+      "coverage": 131,
+      "denominator": 13155,
+      "coverage_target_met": false,
+      "http_transport": "Chromium page and browser-context API request",
+      "transport_failures_this_run": [],
+      "visually_reviewed": true
     },
     "github_ci": {
-      "status": "pending"
+      "status": "success",
+      "run_id": 37069008038,
+      "head_sha": "95d3b1c50f1edeacd1416ff48df37775b5c68ac4",
+      "url": "https://github.com/StarlightDamian/knowledge-healthcare/actions/runs/37069008038"
     },
     "public_https": {
-      "status": "pending"
+      "release_id": "rel-b31bceca0f479aeb9f469c132a2a9be6e9865eed3755625b494f69565df42ce7",
+      "runtime_commit": "95d3b1c50f1edeacd1416ff48df37775b5c68ac4",
+      "topics": [
+        "ectopic-pregnancy",
+        "puerperal-sepsis",
+        "neonatal-sepsis",
+        "birth-asphyxia",
+        "status-epilepticus",
+        "ischemic-stroke",
+        "stroke"
+      ],
+      "content_hashes": {
+        "ectopic-pregnancy": "ecc120da86779ad37409277012640c94bec04f48e298c8daaa1d49cc388eb94c",
+        "puerperal-sepsis": "3fc204049def0433d1f29d704d190cf5e40858e757f840de3e83a94077f5b977",
+        "neonatal-sepsis": "8415835412e41d21b6de4133aeffff35827d8f61337e60235c6aaff0fc82958f",
+        "birth-asphyxia": "5d45b7f03a210db32c70fc6a1a88e1707a045b6a8ca52d8375ec18b820e22e6e",
+        "status-epilepticus": "d1c23b9ebe61d4b8a86731e0d247616053054b2898b6ff3fd3e35706f157d692",
+        "ischemic-stroke": "435d414e8453007fdec7b5fa95a8ea273823b3912e69903fabea78fd8959d0de",
+        "stroke": "d7123771faa67b4d0b7d5511f8d0c4ae01fbd0808635b15aee3a5e7da732c36b"
+      },
+      "stats": {
+        "mode": "preview",
+        "domains": 18,
+        "sources": 929,
+        "knowledge": {
+          "stages": 7,
+          "entries": 56,
+          "modules": 2,
+          "sections": 243,
+          "by_module": {
+            "cancer": {
+              "groups": 36,
+              "stages": 0,
+              "entries": 36,
+              "sources": 67,
+              "sections": 148
+            },
+            "lifecycle": {
+              "groups": 8,
+              "stages": 7,
+              "entries": 20,
+              "sources": 39,
+              "sections": 95
+            }
+          }
+        },
+        "conditions": 98,
+        "ui_locales": 12,
+        "coverage_note": "No representative, adjudicated target-population denominator supplied.",
+        "total_sections": 1372,
+        "verified_sections": 434,
+        "clinically_reviewed": 0,
+        "daily_need_coverage": null
+      },
+      "qualified_conditions": 31,
+      "coverage": 131,
+      "checked_at": "2026-10-03",
+      "checks": [
+        "98 topics,434 editorial sections,31 qualified topics,929 sources,131 covered leaves,0 physician sign-offs;all7 batch full articles and source records match;previous93-topic release remains pinned/readable",
+        "CN/EN98-row22-column CSV matches all metadata,source URLs and1,372 sections per language with exact line breaks"
+      ],
+      "passed": 2,
+      "network_location": "executing client to public HTTPS domain; not loopback",
+      "transport_failures": []
     },
     "search": {
       "status": "passed",
@@ -85,6 +183,49 @@
     "priorities": {
       "status": "passed",
       "scope": "Frozen catalog and generated priority artifacts match current content and evidence."
+    },
+    "production": {
+      "checked_at": "2026-10-02T21:57:21.930839+00:00",
+      "production_release": "rel-b31bceca0f479aeb9f469c132a2a9be6e9865eed3755625b494f69565df42ce7",
+      "old_release": "rel-ec3691fcf5fafc36a6b278cdd413244d8853218925a291c3f9c41774cfb3bf2b",
+      "runtime_commit": "95d3b1c50f1edeacd1416ff48df37775b5c68ac4",
+      "published": true,
+      "topics": 98,
+      "editorial_records": 434,
+      "qualified_topics": 31,
+      "source_count": 929,
+      "covered_categories": 131,
+      "new_topics": [
+        "birth-asphyxia",
+        "ischemic-stroke",
+        "neonatal-sepsis",
+        "puerperal-sepsis",
+        "status-epilepticus"
+      ],
+      "expanded_topics": [
+        "ectopic-pregnancy",
+        "stroke"
+      ],
+      "unchanged_topics": 91,
+      "public_verified": true,
+      "public_api_checks": 2,
+      "public_ui_checks": 4,
+      "shared_static_comparison": {
+        "baseline": "/home/user/.local/state/knowledge-healthcare/p0-04-before.json",
+        "baseline_sha256": "160e902e2f17fe3abdfa798550c41db1cab533e3b659585e97c31c4f743c7612",
+        "total": 17,
+        "matched": 17,
+        "drift": []
+      },
+      "services": [
+        "active",
+        "active",
+        "active"
+      ],
+      "backup_bytes": 17375655,
+      "backup_verified_by_pg_restore_list": true,
+      "reader_only_snapshot": true,
+      "data_sha256": "fd318524861343bbddc5a26228a37fc290b0286669fd49d582730a3ca63b4766"
     }
   },
   "summary": {
@@ -111,6 +252,7 @@
     "clinical_signoffs": 0
   },
   "data_sha256": "fd318524861343bbddc5a26228a37fc290b0286669fd49d582730a3ca63b4766",
-  "current_public_record": "reports/p0-03-release-validation.json",
-  "release_id": "rel-b31bceca0f479aeb9f469c132a2a9be6e9865eed3755625b494f69565df42ce7"
+  "current_public_record": "reports/p0-04-release-validation.json",
+  "release_id": "rel-b31bceca0f479aeb9f469c132a2a9be6e9865eed3755625b494f69565df42ce7",
+  "runtime_commit": "95d3b1c50f1edeacd1416ff48df37775b5c68ac4"
 }
